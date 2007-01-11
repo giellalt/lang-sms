@@ -1,0 +1,227 @@
+! Pronouns
+! ========
+
+! Pointing to all the pronominal subgroups
+LEXICON Pronoun
+Personal ;
+Demonstrative ;
+Reflexive ;
+! Reciprocal ;
+Interrogative ;
+! Relative ;
+! Indefinite ;
+
+
+! Personal pronouns
+! -----------------
+
+LEXICON Personal
+mon+Pron+Pers:m perspron ;
+ton+Pron+Pers:t perspron ;
+son+Pron+Pers:s perspron ;
+
+LEXICON perspron
+:u	    perspronoblsg ;
+:u‰n	    persprondu ;
+:Ân	    persprondu ;
+:i	    perspronpl ;
++Nom+Sg:on	K ;
++Nom+Du:ÂÂna	K ;
++Loc+Pl:ee`st	K ;
+
+LEXICON perspronoblsg 
++Gen+Sg:u	      K ;
++Acc+Sg:u	      K ;
++Ill+Sg:`nne	      K ;
++Loc+Sg:`st	      K ;
++Com+Sg:`in	      K ;
++Abe+Sg:ut‰‰	      K ;
++Ess+Sg:u`nen	      K ;
++Par+Sg:u`d1ed	      K ;
+
+LEXICON persprondu
++Nom+Du:a		K ;
++Gen+Du:nai	      K ;
++Acc+Du:naid	      K ;
++Ill+Du:naid	      K ;
++Loc+Du:nast	      K ;
++Com+Du:nain	      K ;
++Abe+Du:nait‰‰	      K ;
++Ess+Du:nan	      K ;
+
+LEXICON perspronpl
++Nom+Pl:j		K ;
++Gen+Pl:`j	      K ;
++Acc+Pl:`jjid	      K ;
++Ill+Pl:`jjid	      K ;
++Loc+Pl:`jjst	      K ;
++Com+Pl:`jjivui`m     K ;
++Abe+Pl:`jjit‰‰	      K ;
+
+
+
+
+! Demonstrative pronouns
+! ----------------------
+
+LEXICON Demonstrative
+t‰t+Pron+Dem:t‰		SHORTDEM ;
+tut+Pron+Dem:tu		SHORTDEM ;
+tıt+Pron+Dem:tı		SHORTDEM ;
+t‰t+Pron+Dem:t‰‰	LONGDEM ;
+tut+Pron+Dem:tuu	LONGDEM ;
+tıt+Pron+Dem:t		TOTDEM ;
+tiet-aa:tie		TIET-AA ;
+
+LEXICON SHORTDEM
++Nom+Sg:t	K ;
++Acc+Sg:n	K ;
++Gen+Sg:n	K ;
++Loc+Sg:`st	K ;
++Com+Sg:in	K ;
++Abe+Sg:nt‰‰	K ;
++Nom+Pl:k	K ;
++Acc+Pl:id	K ;
++Gen+Pl:i	K ;
++Ill+Pl:id	K ;
++Loc+Pl:in	K ;
++Com+Pl:ivuim	K ;
++Abe+Pl:it‰‰	K ;
+
+LEXICON LONGDEM
++Ill+Sg:zz	K ;
++Ess+Sg:`d1en	K ;
++Par+Sg:d1	K ;
++Par+Sg:`d1ed	K ;
+
+LEXICON TOTDEM
++Ill+Sg:ıızz	K ;
++Ess+Sg:‚‚`d1en	K ;
++Par+Sg:‚‚`d1	K ;
++Par+Sg:‚‚`d1ed	K ;
++Nom+Pl:ıık	K ;
++Loc+Pl:‚in	K ;
+
+LEXICON TIET-AA
++Nom+Sg:t	-AA ;
++Acc+Sg:n	-AA ;
++Gen+Sg:n	-AA ;
++Ill+Sg:zz	-AA ;
++Loc+Sg:`st	-AA ;
++Com+Sg:in	-AA ;
++Nom+Pl:k	-AA ;
++Acc+Pl:id	-AA ;
++Gen+Pl:i	-AA ;
++Ill+Pl:id	-AA ;
++Com+Pl:i-aavuim    K ;
+
+LEXICON -AA
+:-aa K ;
+
+
+
+! Reflexive pronouns
+! ------------------
+
+LEXICON Reflexive
+jiıc1c1+Pron+Refl+Gen+Sg3:jiijj‚s	K ;
+jiıc1c1+Pron+Refl+Acc+Sg3:jiijj‚s	K ;
+jiıc1c1+Pron+Refl+Gen+Pl1:jie`c1c1en	K ;
+jiıc1c1+Pron+Refl+Acc+Pl1:jie`c1c1en	K ;
+jiıc1c1+Pron+Refl+Gen:jiıc1c1		GA-I ;
+jiıc1c1+Pron+Refl+Acc:jiıc1c1		GA-I ;
+jiıc1c1+Pron+Refl+Gen:jiic1c1		GA-I ;
+jiıc1c1+Pron+Refl+Acc:jiic1c1		GA-I ;
+jiıc1c1+Pron+Refl+Gen:jiijj		GA-II ;
+jiıc1c1+Pron+Refl+Acc:jiijj		GA-II ;
+jiıc1c1+Pron+Refl+Gen:jii`jj		GA-II ;
+jiıc1c1+Pron+Refl+Acc:jii`jj		GA-II ;
+jiıc1c1+Pron+Refl+Ill:jiıccs		ILEPX ;
+jiıc1c1+Pron+Refl+Ill:jiccs		ILEPX ;
+jiıc1c1+Pron+Refl+Loc:jijst		ILEPX ;
+jiıc1c1+Pron+Refl+Loc:jiijst		LOCPX ;
+jiıc1c1+Pron+Refl+Ess:jiıc1c1n		ILEPX ;
+jiıc1c1+Pron+Refl+Com:jijj		COMPX ;
+
+
+LEXICON GA-I
++Sg1:an K ;
++Pl1:‚n K ;
+
+LEXICON GA-II
++Sg2:ad K ;
++Pl1:‚n K ;
++Pl2:‚d K ;
++Pl3:‚z K ;
+
+LEXICON ILEPX
+ROBLSGPX ;
+ROBLPLPX ;
+
+LEXICON LOCPX
++Sg1:an	K ;
+ROBLPLPX ;
+
+LEXICON COMPX
+ROBLSGPX ;
+RCOMPLPX ;
+
+LEXICON ROBLSGPX
++Sg1:an K ;
++Sg2:ad K ;
++Sg3:es K ;
+
+LEXICON ROBLPLPX !RPBLPLPX
++Pl1:een K ;
++Pl2:eed K ;
++Pl3:eez K ;
+
+LEXICON RCOMPLPX
++Pl1:eenvuim K ;
++Pl2:eedvuim K ;
++Pl3:eezvuim K ;
+
+
+
+
+! Interrogative pronouns
+! ----------------------
+
+LEXICON Interrogative
+mii+Pron+Interr:m	MK ;
+k1ii+Pron+Interr:k1	MK ;
+mii+Pron+Interr:mıı	MK-long ;
+k1ii+Pron+Interr:k1e‰	MK-long ;
+mii+Pron+Interr:mı	MK-short ;
+k1ii+Pron+Interr:k1e‰	MK-short ;
+mii+Pron+Interr:m‚‚	MK-low ;
+k1ii+Pron+Interr:k1e‰	MK-low ;
+
+LEXICON MK
++Nom+Sg:ii	K ;
+
+LEXICON MK-long
++Acc+Sg:n	K ;
++Gen+Sg:n	K ;
++Ill+Sg:zz	K ;
++Nom+Pl:k	K ;
+
+LEXICON MK-short
++Com+Sg:`in	K ;
++Abe+Sg:nt‰‰	K ;
+
+LEXICON MK-low
++Ess+Sg:`d1en	K ;
++Par+Sg:`d1	K ;
++Par+Sg:`d1ed	K ;
++Com+Pl:ivui`m	K ;
++Abe+Pl:it‰‰	K ;
+
+
+
+
+
+
+
+
+
