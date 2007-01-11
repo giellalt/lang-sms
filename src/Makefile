@@ -17,7 +17,7 @@ isms.fst: ../bin/isms.fst
 	invert net \n\
 	save stack ../bin/isms.fst \n\
 	quit \n" > ../../tmp/isms-fst-script
-	@xfst < ../../tmp/isms-fst-script
+	@xfst -utf8 < ../../tmp/isms-fst-script
 	@rm -f ../../tmp/isms-fst-script
 
 
@@ -32,7 +32,7 @@ sms.fst: ../bin/sms.fst
 	[@\"../bin/caseconv.fst\"]] ; \n\
 	save stack ../bin/sms.fst \n\
 	quit \n" > ../../tmp/sms-fst-script
-	@xfst < ../../tmp/sms-fst-script
+	@xfst -utf8 < ../../tmp/sms-fst-script
 	@rm -f ../../tmp/sms-fst-script
 
 
@@ -47,7 +47,7 @@ caseconv.fst: ../bin/caseconv.fst
 	@printf "read regex < case.regex \n\
 	save stack ../bin/caseconv.fst \n\
 	quit \n" > ../../tmp/caseconv-script
-	@xfst < ../../tmp/caseconv-script
+	@xfst -utf8 < ../../tmp/caseconv-script
 	@rm -f ../../tmp/caseconv-script
 
 
@@ -61,7 +61,7 @@ tok.fst: ../bin/tok.fst
 	@printf "source tok.txt \n\
 	save stack ../bin/tok.fst \n\
 	quit \n" > ../../tmp/tok-script
-	@xfst < ../../tmp/tok-script
+	@xfst -utf8 < ../../tmp/tok-script
 	@rm -f ../../tmp/tok-script
 
 
@@ -74,7 +74,7 @@ sms.save: ../bin/sms.save
 	[@\"../bin/xfst-sms.bin\"]] ; \n\
 	save stack ../bin/sms.save \n\
 	quit \n" > ../../tmp/sms-save-script
-	@xfst < ../../tmp/sms-save-script
+	@xfst -utf8 < ../../tmp/sms-save-script
 	@rm -f ../../tmp/sms-save-script
 
 # The first goal is to build sms-lex.save
@@ -92,7 +92,7 @@ sms-lex.save: ../bin/sms-lex.save
 	adv-sms-lex.txt pp-sms-lex.txt punct-sms-lex.txt \n\
 	save-source ../bin/sms-lex.save \n\
 	quit \n" > ../../tmp/sms-lex-save-script
-	@lexc < ../../tmp/sms-lex-save-script
+	@lexc -utf8 < ../../tmp/sms-lex-save-script
 	rm -f ../../tmp/sms-lex-save-script
 
 # The second goal is to build xfst-sms.bin
@@ -106,7 +106,7 @@ xfst-sms.bin: ../bin/xfst-sms.bin
 	@printf "source xfst-sms.txt \n\
 	save stack ../bin/xfst-sms.bin \n\
 	quit \n" > ../../tmp/xfst-sms-script
-	@xfst < ../../tmp/xfst-sms-script
+	@xfst -utf8 < ../../tmp/xfst-sms-script
 	@rm -f ../../tmp/xfst-sms-script
 
 clean:
