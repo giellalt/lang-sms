@@ -1,4 +1,3 @@
-
 !  This file is a script for the Xerox xfst interface.
 
 clear stack
@@ -6,10 +5,10 @@ echo << THE DEFININTIONS >>
 
 echo << defining Vow >>
 
-define Vow [ a | · | e | i | o | u | y | Ê | ‰ | ¯ | ˆ | Â |
-  È | Û | ˙ | Ì | ‡ | Ë | Ú | ˘ | Ï | Î | ¸ | Ô |
-  ‚ | Í | Ù | ˚ | Ó | „ | ˝ |
-  A | ¡ | ¬ | ≈ | E | I | O | ’ | ∆ | ÿ | ÷ ] ;
+define Vow [ a | √° | e | i | o | u | y | √¶ | √§ | √∏ | √∂ | √• |
+  √© | √≥ | √∫ | √≠ | √† | √® | √≤ | √π | √¨ | √´ | √º | √Ø |
+  √¢ | √™ | √¥ | √ª | √Æ | √£ | √Ω |
+  A | √Å | √Ç | √Ö | E | I | O | √ï | √Ü | √ò | √ñ ] ;
 
 echo << defining Cns >>
 
@@ -33,7 +32,7 @@ define WeG [ X2 | X3 | Q1 | Q2 | Q3 ] ;
 echo << defining StemCns >>
 
 define StemCns [ b | b3 | d | d3
- | g | g2 | g3 | h | h2 | h3 | j | l | m | m2 | m3 | n | n2 | Ò | r | s ] ;
+ | g | g2 | g3 | h | h2 | h3 | j | l | m | m2 | m3 | n | n2 | √± | r | s ] ;
 
 
 
@@ -50,14 +49,14 @@ define StemCns [ b | b3 | d | d3
 echo << THE VOWEL SHIFT RULES >>
 echo << defining the LongVowel-Lowering rule >>
 
-define LongVowelLowering i i -> e e , ı ı-> ‚ ‚ , u u -> o o , 
-a a -> ‰ ‰ , o u -> Â u , i ı -> e ‚ , i ‚ -> e ‰ , 
-u ı -> u ‚ , u Â -> u ‰ || Cns _ Cns+ *? %^P3 ;
+define LongVowelLowering i i -> e e , √µ √µ-> √¢ √¢ , u u -> o o , 
+a a -> √§ √§ , o u -> √• u , i √µ -> e √¢ , i √¢ -> e √§ , 
+u √µ -> u √¢ , u √• -> u √§ || Cns _ Cns+ *? %^P3 ;
 
 echo << defining the ShortVowel-Lowering rule >>
 
-define ShortVowelLowering i -> e , ı -> ‚ , 
-u -> o , a -> ‰ || Cns _ Cns+ *? %^P3 ;
+define ShortVowelLowering i -> e , √µ -> √¢ , 
+u -> o , a -> √§ || Cns _ Cns+ *? %^P3 ;
 
 
 ! Stem vowel alternations
