@@ -12,27 +12,27 @@ define Vow [ a | á | e | i | o | u | y | æ | ä | ø | ö | å |
 
 echo << defining Cns >>
 
-define Cns [ b | c | c1 | d | d1 | f | g | g1 | g2 | h | j | k |
- k1 | l | m | n | p | q | q1 | q2 | r | s | s1 | t | t1 
-| v | w | x | z | z1 |
- B | C | C1 | D | D1 | F | G | G1 | G2 | H | J | K 
-| K1 | L | M | N | P | Q | Q1 | Q2 | R | S | S1 | 
-T | T1 | V | W | X | Z | Z1 ] ;
+define Cns [ b | c | č | d | đ | f | g | ǧ | ǥ | h | j | k |
+ ǩ | l | m | n | p | q | ǯ | ʒ | r | s | š | t | ŧ 
+| v | w | x | z | ž |
+ B | C | Č | D | Đ | F | G | Ǧ | Ǥ | H | J | K 
+| Ǩ | L | M | N | P | Q | Ǯ | Ʒ | R | S | Š | 
+T | Ŧ | V | W | X | Z | Ž ] ;
 
 echo << defining Dummy >>
 
 define Dummy [ X1 | X2 | X3 | X4 | X5 | X6 | X7 | X8 | 
-X9 | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Q9 |  Y1 | 
+X9 | Ǯ | Ʒ | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Q9 |  Y1 | 
 Y2 | Y3 | Y4 | Y5 | Y6 | Y7 | Y8 | %^P3 ] ;
 
 echo << defining WeG >>
 
-define WeG [ X2 | X3 | Q1 | Q2 | Q3 ] ;
+define WeG [ X2 | X3 | Ǯ | Ʒ | Q3 ] ;
 
 echo << defining StemCns >>
 
 define StemCns [ b | b3 | d | d3
- | g | g2 | g3 | h | h2 | h3 | j | l | m | m2 | m3 | n | n2 | ñ | r | s ] ;
+ | g | ǥ | g3 | h | h2 | h3 | j | l | m | m2 | m3 | n | n2 | ñ | r | s ] ;
 
 
 
@@ -103,7 +103,7 @@ echo << defining t Deletion >>
 
 define tDeletion [ t -> 0 || Vow t _ Vow WeG ] ;
 
-!define tDeletion t -> 0 || Vow t:d1 _ Vow WeG ;
+!define tDeletion t -> 0 || Vow t:đ _ Vow WeG ;
 
 ! Change rules
 ! - - - - - - 
