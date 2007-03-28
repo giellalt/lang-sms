@@ -82,14 +82,16 @@ sms.save: ../bin/sms.save
 
 sms-lex.save: ../bin/sms-lex.save
 ../bin/sms-lex.save: sms-lex.txt noun-sms-lex.txt adj-sms-lex.txt \
-	adv-sms-lex.txt verb-sms-lex.txt closed-sms-lex.txt punct-sms-lex.txt \
-	pp-sms-lex.txt
+	adv-sms-lex.txt verb-sms-lex.txt pronoun-sms-lex.txt interjection-sms-lex.txt \
+	conjunction-sms-lex.txt subjunction-sms-lex.txt numeral-sms-lex.txt \
+	punct-sms-lex.txt particle-sms-lex.txt pp-sms-lex.txt
 	@echo
 	@echo "*** Building sms-lex.save ***" ;
 	@echo
-	printf "compile-source sms-lex.txt noun-sms-lex.txt \
-	adj-sms-lex.txt verb-sms-lex.txt closed-sms-lex.txt \
-	adv-sms-lex.txt pp-sms-lex.txt punct-sms-lex.txt \n\
+	printf "compile-source sms-lex.txt noun-sms-lex.txt adv-sms-lex.txt \
+	adj-sms-lex.txt verb-sms-lex.txt pronoun-sms-lex.txt interjection-sms-lex.txt \
+	conjunction-sms-lex.txt subjunction-sms-lex.txt numeral-sms-lex.txt \
+	punct-sms-lex.txt particle-sms-lex.txt pp-sms-lex.txt \n\
 	save-source ../bin/sms-lex.save \n\
 	quit \n" > ../../tmp/sms-lex-save-script
 	@lexc -utf8 < ../../tmp/sms-lex-save-script
