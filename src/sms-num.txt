@@ -1,0 +1,250 @@
+! 
+! Warning!
+!
+
+! This shall be a skolt sami numeral file, 
+! but it is still just a placeholder.
+
+
+LEXICON Root
+HUNDREDSM ;		! 200M
+tjuetie:1 HUNDREDM ;	! 100M
+TENSM ;			! 20-99M
+TEENSM ;		! 10-19M
+ONESM ;			! 1-9M
+HUNDREDST ;		! 200000-999999
+tjuetie:1 HUNDREDT ;	! 100000-100999
+TENST ;			! 20000-99999,10000-10999
+TEENST ;		! 11000-19999
+ONEST ;			! 2000-9999
+tåvsene:1 THOUSAND ;	! 1000-1999
+UNDERTHOUSAND ;		! 100-999
+TENS ;			! 20-99
+TEENS ;			! 10-19
+ONES ;			! 1-9
+
+LEXICON HUNDREDSM
+göökte:2  CUODIM ;
+golme:3 CUODIM ;
+njieljie:4 CUODIM ;
+vijhte:5 CUODIM ;
+govhte:6 CUODIM ;
+tjijhtje:7 CUODIM ;
+gaektsie:8 CUODIM ;
+uktsie:9 CUODIM ;
+
+LEXICON CUODIM
+tjuetie: HUNDREDM ;
+
+LEXICON HUNDREDM
+TENSM ;
+TEENSM ;
+:%0 ONESM ;
+:%0%0 MILJON ;
+
+LEXICON TEENSM
+luhkie:1 TEENM ;
+
+LEXICON TEENM
+akte:1 LOHKAIM ;
+göökte:2 LOHKAIM ;
+golme:3 LOHKAIM ;
+njieljie:4 LOHKAIM ;
+vijhte:5 LOHKAIM ;
+govhte:6 LOHKAIM ;
+tjijhtje:7 LOHKAIM ;
+gaektsie:8 LOHKAIM ;
+uktsie:9 LOHKAIM ;
+
+LEXICON LOHKAIM
+MILJON ;
+
+LEXICON TENSM
+luhkie:1%0 MILJON ;
+göökte:2 LUHKIEM ;
+golme:3 LUHKIEM ;
+njieljie:4 LUHKIEM ;
+vijhte:5 LUHKIEM ;
+govhte:6 LUHKIEM ;
+tjijhtje:7 LUHKIEM ;
+gaektsie:8 LUHKIEM ;
+uktsie:9 LUHKIEM ;
+
+LEXICON LUHKIEM
+luhkie:%0 MILJON ;
+luhkie: ONESM ;
+
+LEXICON ONESM
+akte% miljon% :1 OVERTHOUSANDS ;
+göökte:2 MILJON ;
+golme:3 MILJON ;
+njieljie:4 MILJON ;
+vijhte:5 MILJON ;
+govhte:6 MILJON ;
+tjijhtje:7 MILJON ;
+gaektsie:8 MILJON ;
+uktsie:9 MILJON ; 
+
+LEXICON MILJON
+% miljona% : OVERTHOUSANDS ;
+
+! =================
+! Under the million
+! =================
+
+LEXICON OVERTHOUSANDS
+HUNDREDST ;		! x00.000.000
+tjuetie:1 HUNDREDT ;	! 100.000.000
+:%0 TENST ;		!  20.000.000
+:%0 TEENST ;		!  10.000.000
+:%0%0 ONEST ;		!   2.000.000
+tåvsene:%0%01 THOUSAND ;	!   1.000.000
+:%0%0%0 UNDERTHOUSAND ;	
+:%0%0%0%0 TENS ;
+:%0%0%0%0 TEENS ;
+:%0%0%0%0%0 ONES ;
+:%0%0%0%0%0%0 # ;	!  x000000
+
+LEXICON HUNDREDST
+göökte:2  CUODIT ;	! 200000-299999
+golme:3 CUODIT ;	! 300000-399999
+njieljie:4 CUODIT ;	! 400000-499999
+vijhte:5 CUODIT ;	! 500000-599999
+govhte:6 CUODIT ;	! 600000-699999
+tjijhtje:7 CUODIT ;	! 700000-799999
+gaektsie:8 CUODIT ;	! 800000-899999
+uktsie:9 CUODIT ;	! 900000-999999
+
+LEXICON CUODIT
+tjuetie: HUNDREDT ;	! 100000-199999
+
+LEXICON HUNDREDT	! X = 1-9, Y = 0-9
+TENST ;			! X2XYYY, X10YYY
+TEENST ;		! X1XYYY
+akte:%01 THOUSANDS ;
+:%0 ONEST ;		! XX0YYY
+:%0%0 THOUSANDS ;	! X00YYY
+
+LEXICON TEENST
+luhkie:1 TEENT ;
+luhkie:1%0 THOUSANDS ;
+
+LEXICON TEENT
+akte:1 LOHKAIT ;
+göökte:2 LOHKAIT ;
+golme:3 LOHKAIT ;
+njieljie:4 LOHKAIT ;
+vijhte:5 LOHKAIT ;
+govhte:6 LOHKAIT ;
+tjijhtje:7 LOHKAIT ;
+gaektsie:8 LOHKAIT ;
+uktsie:9 LOHKAIT ;
+
+LEXICON LOHKAIT
+THOUSANDS ;
+
+LEXICON TENST
+göökteluhkie:2 LUHKIET ;
+golmeluhkie:3 LUHKIET ;
+njieljieluhkie:4 LUHKIET ;
+vijhteluhkie:5 LUHKIET ;
+govhteluhkie:6 LUHKIET ;
+tjijhtjeluhkie:7 LUHKIET ;
+gaektsieluhkie:8 LUHKIET ;
+uktsieluhkie:9 LUHKIET ;
+
+LEXICON LUHKIET
+:%0 THOUSANDS ;
+akte:1 THOUSANDS ;
+ONEST ;
+
+LEXICON ONEST
+göökte:2 THOUSANDS ;
+golme:3 THOUSANDS ;
+njieljie:4 THOUSANDS ;
+vijhte:5 THOUSANDS ;
+govhte:6 THOUSANDS ;
+tjijhtje:7 THOUSANDS ;
+gaektsie:8 THOUSANDS ;
+uktsie:9 THOUSANDS ;
+
+LEXICON THOUSANDS      ! x > 1
+tåvsene: THOUSAND ;
+
+LEXICON THOUSAND
+UNDERTHOUSAND ;	   ! 1100-1999
+:%0 TENS ;	   ! 1020-1099
+:%0 TEENS ;	   ! 1010-1019
+:%0%0 ONES ;	   ! 1001-1009
+:%0%0%0 # ;	   ! 1000
+
+!===========================
+!Here starts the 999 numbers
+!===========================
+
+LEXICON UNDERTHOUSAND
+HUNDREDS ;
+tjuetie:1 HUNDRED ;
+
+LEXICON HUNDREDS
+göökte:2  CUODI ;
+golme:3 CUODI ;
+njieljie:4 CUODI ;
+vijhte:5 CUODI ;
+govhte:6 CUODI ;
+tjijhtje:7 CUODI ;
+gaektsie:8 CUODI ;
+uktsie:9 CUODI ;
+
+LEXICON CUODI
+tjuetie: HUNDRED ;
+
+LEXICON HUNDRED
+TENS ;
+TEENS ;
+:%0 ONES ;
+:%0%0 # ;
+
+LEXICON TEENS
+luhkie:1 TEEN ;
+
+LEXICON TEEN
+akte:1 LOHKAI ;
+göökte:2 LOHKAI ;
+golme:3 LOHKAI ;
+njieljie:4 LOHKAI ;
+vijhte:5 LOHKAI ;
+govhte:6 LOHKAI ;
+tjijhtje:7 LOHKAI ;
+gaektsie:8 LOHKAI ;
+uktsie:9 LOHKAI ;
+
+LEXICON LOHKAI
+ # ;
+
+LEXICON TENS
+luhkie:1%0 # ;
+göökte:2 LUHKIE ;
+golme:3 LUHKIE ;
+njieljie:4 LUHKIE ;
+vijhte:5 LUHKIE ;
+govhte:6 LUHKIE ;
+tjijhtje:7 LUHKIE ;
+gaektsie:8 LUHKIE ;
+uktsie:9 LUHKIE ;
+
+LEXICON LUHKIE
+luhkie:%0 # ;
+luhkie: ONES ;
+
+LEXICON ONES
+akte:1 # ;
+göökte:2 # ;
+golme:3 # ;
+njieljie:4 # ;
+vijhte:5 # ;
+govhte:6 # ;
+tjijhtje:7 # ;
+gaektsie:8 # ;
+uktsie:9 # ;
+
