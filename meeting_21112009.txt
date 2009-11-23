@@ -1,0 +1,125 @@
+Meeting 
+Date: 21.11.2009
+11:30 - 18:00 (with an interruption for lunch)
+
+
+Micha, Lena, Josh, Ciprian
+
+Topics: data for SJD (Micha), SMS (Lena+Micha), SJE (Josh)  
+
+Some basic commands for svn:
+Checkout: svn co PATH-TO-SVN-server LOCAL-DIR - once a lifetime (in theory)
+Update command: svn up
+Checkin command: svn ci -m "...write some log notes here..."
+Status command: svn stat (compare local data with data in the svn repository)
+
+1. Admin:
+
+working with svn:
+ out: Josh, Lena, Micha
+ in: Micha, Josh
+ 
+ TODO: checkin permissions for Lena (__CIP__)
+
+conventions for files to be saved in /inc:
+filenames: asci, no kapitals, no spaces
+readme file: 00_readme_filename.txt for comments/explanations of raw files
+
+location of original data (this, possibly raw files are untouchable and have to be kept in its original state!!):
+ gt/sjd/inc
+ gt/sje/inc
+ gt/sms/inc
+ 
+location of working files (in xml format):
+ gt/sjd/src
+ gt/sje/src
+ gt/sms/src
+
+2. Data inventory: copyright, description
+
+SJD:
+ - originally XML generated from FileMaker (?)
+ - then partially structured by Ciprian (this version is in the
+ dictionary directory (sjd:rus))
+ - then checked and edited by Micha (this is the version checked in by
+ Micha in inc today)
+
+ TODO:
+  - move the file(s) from sjd:rus-dir to sjd/inc (__Ciprian__)
+  - compare the last version of Cip's transformations to Micha's
+    (__Ciprian__)
+  - work further at the transformation towards the final version
+    (__Ciprian__)
+
+
+SMS:
+ Skolt Sami in FileMake format in inc
+
+DESCRIPTION:
+ ID =unique index
+ ID_Audio =index for matching of audiofiles
+ Lemma group: Skolt (=Lemma in Skolt orthography), Skolt_Cyr (=Lemma in Cyrillic transliteration), GramInfo_Skolt (=grammatical info [not very systematic] in Latin), GramInfo_SkoltCyr (=grammatical info [not very systematic] in Cyrillic transliteration), PoS_Skolt (=Part-of-speech in Latin), PoS_SkoltCyr (=Part-of-speech in Russian translation [this could actually be updated with help of a script which translates the PoS_Skolt entries)
+ Meaning group Kildin: Kildin (=Kildin Saami translation of Lemma), Kildin_Lat (=Latin transliteration of Kildin Saami translation)
+Norwegian (=Norwegian translation of Lemma)
+Finnish (=Finnish translation of Lemma)
+English (=English translation of Lemma)
+German (=German translation of Lemma)
+Russian (=Russian translation of Lemma)
+North Saami (=North Saami translation of Lemma)
+Inari Saami (=Inari Saami translation of Lemma)
+Note group [different notes of collaborators; those are needed during further editing of the dictionary entries; these notes are related to different meaning groups!)
+Espen group [indices and notes related to Espen's audiofiles; these elements belong under "ID_Audio"]
+Sampling group [indices which Micha needs in order to compile word lists, these elements belong under "ID_Audio"]
+
+Copyright: free
+
+ TODO: 
+  - to be exported to XML (__Ciprian__)
+  - to be transformed into a giellatekno-kompatile XML format (__Ciprian__)
+  - ask for permission to use the Skolt data from Kimberly Maranainen
+     (__Ciprian__)
+  - merge data from Kimberly with the data from Micha (__Ciprian__)
+
+SJE:
+
+DESCRIPTION:
+preliminary wordlist/dictionary xml file created from original filemaker database using only a poor sample of words NOT originating from Pite wordlist project (insamling av pitesamiska ord).
+A list of field names and their intentions:
+record number JW = unique record number from original FileMaker database
+Pite Saami = sje lemma
+English translation* = English translation of Pite Saami lemma 
+Swedish translation* = Swedish translation of Pite Saami lemma 
+part of speech = part of speech (individual values in Swedish!)
+consonant gradation pattern = abstracted form of consonant gradation pattern (ex: bm-m)
+umlaut pattern = abstracted form of umlaut pattern
+stem extension = full form of possible stem extension (ex.: "bednaga" the stem extention form of lemma "bena" dog)
+purely grammatical gloss = if relevant, this shows any grammatical information in individual lemma which may be relevant and deviates from elicitation form (ex: if noun is not in NOM.SG)
+notes = notes from/for wordlist project
+notes JW = notes specifically for joshua wilbur
+original wordlist comments = original entry from original wordlist form wordlist project, if relevant
+source = person(s) who entered lemma originally
+*unfortunately no convention is followed concerning differentiating between synonyms or meaning groups etc.
+!!Lehtiranta 
+
+Copyright: free (unfortunately, the big collection of data is not
+                 (yet) free)
+
+TODO:
+ - to transform sje-data into gt-format (__Ciprian__)
+ - to collect a balanced (wrt both pos and initial letter) sample of
+ 50-100 words (possibly with audio files and (static) morphology) in
+ order to compile demo dictionaries (Mac and StarDict) (collecting:
+ __Josh__; transforming: __Ciprian__)
+
+--------------------------------------------------------------
+
+DONE:
+ - Micha, Lena, Josh (re-)learned how to use svn
+ - Micha, Lena, Josh learned how to compile dictionary on their own on
+    the mac
+
+TODO:
+ - check the mac make-dict pipeline with all possible special
+    characters in sjd, sms, sje (perhaps, here there is no problem):
+    keyword "dog ps" in Kildin (__Ciprian__)
+
