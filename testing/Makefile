@@ -427,7 +427,7 @@ prop-paradigm: prop-para.ptest savefile
 
 # Make sure there is an available smX.save in the parent directory:
 savefile:
-	@cd $(SRCDIR)/ && $(MAKE) ifst TARGET=sms
+	@cd $(SRCDIR)/ && $(MAKE) $(notdir $(SAVEFILE)) TARGET=sms
 
 # Word form generation:
 # ---------------------
