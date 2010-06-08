@@ -37,6 +37,7 @@ UNDERTHOUSAND ;		 ! 100-999
 TENS ;			     ! 20-99
 TEENS ;			     ! 10-19
 ONES ;			     ! 1-9
+noll:%0 COMMA ;      ! 0
 
 LEXICON ONESG
 õhtt% :   1GIGA ;
@@ -86,22 +87,18 @@ LEXICON TEENSM
 :1 TEENM ;
 
 LEXICON TEENM
-õhtt:1     LOHKAIM ;
-
-kue´htt:2     LOHKAIM ;
-koumm’:3   LOHKAIM ;
-nellj:4  LOHKAIM ;
-
+õt:1     LOHKAIM ;
+kuât:2     LOHKAIM ;
+kon:3   LOHKAIM ;
+nenj:4  LOHKAIM ;
 vitt:5   LOHKAIM ;
 kutt:6   LOHKAIM ;
 čiččâm:7   LOHKAIM ;
-
-
-kääu´c:8   LOHKAIM ;
-ååu´c:9    LOHKAIM ;
+käc:8   LOHKAIM ;
+åc:9    LOHKAIM ;
 
 LEXICON LOHKAIM
-mlo: MILJON ;
+mlååi: MILJON ;
 
 LEXICON TENSM
 lååi:1%0 MILJON ;
@@ -195,7 +192,7 @@ kääu´c:8  CUODIT ;	! 800000-899999
 ååu´c:9   CUODIT ;	! 900000-999999
 
 LEXICON CUODIT
-čue´đ: HUNDREDT ;	! 200000-199999
+čue´tt: HUNDREDT ;	! 200000-199999
 
 LEXICON HUNDREDT	     ! X = 1-9, Y = 0-9
 TENST ;			     ! X2XYYY, X10YYY
@@ -208,41 +205,35 @@ LEXICON TEENST
 :1 TEENT ;
 
 LEXICON TEENT
-lo:%0 THOUSANDS ;
-õhtt:1 LOHKAIT ;
+lååi:%0 THOUSANDS ;
 
-kue´htt:2 LOHKAIT ;
-koumm’:3 LOHKAIT ;
-nellj:4 LOHKAIT ;
-
+õt:1 LOHKAIT ;
+kuât:2 LOHKAIT ;
+kon:3 LOHKAIT ;
+nenj:4 LOHKAIT ;
 vitt:5 LOHKAIT ;
 kutt:6 LOHKAIT ;
 čiččâm:7 LOHKAIT ;
-
-
-kääu´c:8 LOHKAIT ;
-ååu´c:9 LOHKAIT ;
+käc:8 LOHKAIT ;
+åc:9 LOHKAIT ;
 
 LEXICON LOHKAIT
 mlo: THOUSANDS ;
 
 LEXICON TENST
 
-kue´htt:2 LÅGEVT ;
+kuâhtt:2 LÅGEVT ;
 koumm:3 LÅGEVT ;
 nellj:4 LÅGEVT ;
-
 vitt:5 LÅGEVT ;
 kutt:6 LÅGEVT ;
-čiččâm:7 LÅGEVT ;
-
-
-kääu´c:8 LÅGEVT ;
-ååu´c:9 LÅGEVT ;
+čim:7 LÅGEVT ;
+kä´hcc:8 LÅGEVT ;
+å´hcc:9 LÅGEVT ;
 
 LEXICON LÅGEVT
-lååi:%0 THOUSANDS ;
-lååi#õhtt#dohat:1 THOUSAND ;
+lo:%0 THOUSANDS ; !XXX lååi?
+lo#õhtt#dohat:1 THOUSAND ; !XXX lååi?
 lo: ONEST ;
 
 LEXICON ONEST
@@ -250,12 +241,9 @@ LEXICON ONEST
 kue´htt:2 THOUSANDS ;
 koumm:3 THOUSANDS ;
 nellj:4 THOUSANDS ;
-
 vitt:5 THOUSANDS ;
 kutt:6 THOUSANDS ;
 čiččâm:7 THOUSANDS ;
-
-
 kääu´c:8 THOUSANDS ;
 ååu´c:9 THOUSANDS ;
 
@@ -295,7 +283,7 @@ kääu´c:8 CUODI ;
 ååu´c:9 CUODI ;
 
 LEXICON CUODI
-čue´đ: HUNDRED ;
+čue´tt: HUNDRED ;
 
 tjuodát: CUODAAT ;
 
@@ -314,34 +302,15 @@ LEXICON TEENS
 !mlo:1 TEEN2 ; ! Not for sms
 
 LEXICON TEEN
-õhtt:1 LOHKAI ;
-
-kue´htt:2 LOHKAI ;
-koumm’:3 LOHKAI ;
-nellj:4 LOHKAI ;
-
+õt:1 LOHKAI ;
+kuât:2 LOHKAI ;
+kon:3 LOHKAI ;
+nenj:4 LOHKAI ;
 vitt:5 LOHKAI ;
 kutt:6 LOHKAI ;
-čiččâm:7 LOHKAI ;
-
-
-kääu´c:8 LOHKAI ;
-ååu´c:9 LOHKAI ;
-
-! LEXICON TEEN2	    ! not sms (?)
-! õhtt:1 COMMA ;    ! not sms (?)
-! 				    ! not sms (?)
-! kue´htt:2 COMMA ; ! not sms (?)
-! koumm:3 COMMA ;   ! not sms (?)
-! nellj:4 COMMA ;   ! not sms (?)
-! 				    ! not sms (?)
-! vitt:5 COMMA ;    ! not sms (?)
-! kutt:6 COMMA ;    ! not sms (?)
-! čiččâm:7 COMMA ;  ! not sms (?)
-! 				    ! not sms (?)
-! 				    ! not sms (?)
-! kääu´c:8 COMMA ;  ! not sms (?)
-! ååu´c:9 COMMA ;   ! not sms (?)
+čin:7 LOHKAI ;
+käc:8 LOHKAI ;
+åc:9 LOHKAI ;
 
 LEXICON LOHKAI
 mlo: COMMA ;
@@ -352,19 +321,16 @@ lågåt: COMMA ;
 
 
 LEXICON TENS
-lo:1%0 COMMA ;
+lååi:1%0 COMMA ; 
 
-kue´htt:2 LÅGEV ;
+kuâhtt:2 LÅGEV ;
 koumm:3 LÅGEV ;
 nellj:4 LÅGEV ;
-
 vitt:5 LÅGEV ;
 kutt:6 LÅGEV ;
-čiččâm:7 LÅGEV ;
-
-
-kääu´c:8 LÅGEV ;
-ååu´c:9 LÅGEV ;
+čim:7 LÅGEV ;
+kä´hcc:8 LÅGEV ;
+å´hcc:9 LÅGEV ;
 
 LEXICON LÅGEV
 !lååi:%0 COMMA ;
