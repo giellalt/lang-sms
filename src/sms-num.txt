@@ -23,7 +23,8 @@ HUNDREDSM ;		     ! 200M
 TENSM ;		         ! 20-99M
 TEENSM ;	         ! 10-19M
 1MILJON ;            ! 1M
-ONESM ;		         ! 1-9M
+ONEM ;		         ! 1M
+ONESM ;		         ! 2-9M
 1GIGA ;            	 ! 1G
 ONESG ;		         ! 1-9G
 HUNDREDST ;	         ! 200000-999999
@@ -36,7 +37,7 @@ dohat:1 THOUSAND ; ! 1000-1999
 UNDERTHOUSAND ;		 ! 100-999
 TENS ;			     ! 20-99
 TEENS ;			     ! 10-19
-ONES ;			     ! 1-9
+INITIALCARDINAL ;			     ! 1-9
 noll:%0 COMMA ;      ! 0
 
 LEXICON ONESG
@@ -118,19 +119,18 @@ kääu´c:8  LÅGEVM ;
 LEXICON LÅGEVM
 lååi:%0 MILJON ;
 lo:     ONESM ;
+lo%-õhtt% :   1MILJON ;
+
+LEXICON ONEM
+õhtt% : 1MILJON ;
 
 LEXICON ONESM
-õhtt% :   1MILJON ;
-
 kue´htt:2    MILJON ;
 koumm:3  MILJON ;
 nellj:4 MILJON ;
-
 vitt:5  MILJON ;
 kutt:6  MILJON ;
 čiččâm:7  MILJON ;
-
-
 kääu´c:8  MILJON ;
 ååu´c:9   MILJON ; 
 
@@ -233,7 +233,7 @@ kä´hcc:8 LÅGEVT ;
 
 LEXICON LÅGEVT
 lo:%0 THOUSANDS ; !XXX lååi?
-lo#õhtt#dohat:1 THOUSAND ; !XXX lååi?
+lo%-õhttdohat:1 THOUSAND ; !XXX lååi?
 lo: ONEST ;
 
 LEXICON ONEST
@@ -253,10 +253,23 @@ dohat: THOUSAND ;
 
 LEXICON THOUSAND
 UNDERTHOUSAND ;	   ! 1100-1999
-:%0 TENS ;	   ! 1020-1099
+:%0 THOUSANDTENS ;	   ! 1020-1099
 :%0 TEENS ;	   ! 1010-1019
-:%0%0 ONES ;	   ! 1001-1009
+:%0%0 INITIALCARDINAL ;	   ! 1001-1009
 :%0%0%0 COMMA ;	   ! 1000
+
+
+LEXICON THOUSANDTENS
+lååi:1%0 COMMA ; 
+kuâhtt:2 LÅGEV ;
+koumm:3 LÅGEV ;
+nellj:4 LÅGEV ;
+vitt:5 LÅGEV ;
+kutt:6 LÅGEV ;
+čim:7 LÅGEV ; ! this one different from TENS
+kä´hcc:8 LÅGEV ;
+å´hcc:9 LÅGEV ;
+
 
 !===========================
 !Here starts the 999 numbers
@@ -265,11 +278,9 @@ UNDERTHOUSAND ;	   ! 1100-1999
 LEXICON UNDERTHOUSAND
 HUNDREDS ;
 čue´tt:1 HUNDRED ;
-
 tjuodát:1 CUODAAT ;
 
 LEXICON HUNDREDS
-
 kue´htt:2 CUODI ;
 koumm:3 CUODI ;
 nellj:4 CUODI ;
@@ -279,8 +290,8 @@ kutt:6 CUODI ;
 čiččâm:7 CUODI ;
 
 
-kääu´c:8 CUODI ;
-ååu´c:9 CUODI ;
+kääu´c%-:8 CUODI ;
+ååu´c%-:9 CUODI ;
 
 LEXICON CUODI
 čue´đ: HUNDRED ;
@@ -288,10 +299,23 @@ LEXICON CUODI
 tjuodát: CUODAAT ;
 
 LEXICON HUNDRED
-TENS ;
+HUNDREDTENS ;
 TEENS ;
-:%0 ONES ;
+:%0 INITIALCARDINAL ;
 :%0%0 COMMA ;
+
+LEXICON HUNDREDTENS
+lååi:1%0 COMMA ; 
+kuâhtt:2 LÅGEV ;
+koumm:3 LÅGEV ;
+nellj:4 LÅGEV ;
+vitt:5 LÅGEV ;
+kutt:6 LÅGEV ;
+čim:7 LÅGEV ; ! this one different from TENS
+kä´hcc:8 LÅGEV ;
+å´hcc:9 LÅGEV ;
+
+
 
 LEXICON CUODAAT
 :%0%0%.    COMMA ;
@@ -322,28 +346,35 @@ lågåt: COMMA ;
 
 LEXICON TENS
 lååi:1%0 COMMA ; 
-
 kuâhtt:2 LÅGEV ;
 koumm:3 LÅGEV ;
 nellj:4 LÅGEV ;
 vitt:5 LÅGEV ;
 kutt:6 LÅGEV ;
-čim:7 LÅGEV ;
+čičm:7 LÅGEV ;
 kä´hcc:8 LÅGEV ;
 å´hcc:9 LÅGEV ;
 
 LEXICON LÅGEV
 !lååi:%0 COMMA ;
 lo:%0 COMMA ;
-lo: ONES ;
+lo: NONINITIALCARDINAL ;
 
 
 LEXICON ONES
 CARDINAL ;
-ORDINAL ;
+
+LEXICON INITIALCARDINAL
+õhtt:1    COMMA ;
+CARDINAL ;
+!ORDINAL ;
+
+LEXICON NONINITIALCARDINAL
+%-õhtt:1    COMMA ;
+CARDINAL ;
+!ORDINAL ;
 
 LEXICON CARDINAL
-õhtt:1    COMMA ;
 
 kue´htt:2    COMMA ;
 koumm:3  COMMA ;
@@ -357,7 +388,7 @@ kutt:6  COMMA ;
 kääu´c:8  COMMA ;
 ååu´c:9   COMMA ;
 
-LEXICON ORDINAL
+LEXICON ORDINAL ! Ordinal is still sme, and not done for sms.
 vuosttasj:1%.     COMMA ;
 nuppát:2%.   COMMA ;
 goalmát:3%.   COMMA ;
