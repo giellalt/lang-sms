@@ -1,24 +1,27 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V2.0//EN" "http://forrest.apache.org/dtd/document-v20.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V2.0//EN"
+"http://forrest.apache.org/dtd/document-v20.dtd">
 <document xml:lang="en">
-  <header>
-    <title>Documentation on Skolt Saami</title>
-    <authors>
-      <person email="trond.trosterud@hum.uit.no" name="Trond Trosterud" />
-    </authors>
-  </header>
-  <body>
-    <section>
+   <header>
       <title>Documentation on Skolt Saami</title>
-<p>The files referred to below all are stored in the gt/sms/src/ directory. Skolt Saami is not in our focus, and does not compile at the moment (summer 2011).</p>
-      <ul>
-        <li>
-          <a href="docu-sms-background.html" >State of the art</a>
-        </li>
-         <li><strong><a href="docu-sms-xfst.html">Documentation</a></strong> of the <a href="https://victorio.uit.no/langtech/trunk/gt/sms/src/xfst-sma.txt"><code>xfst-sma.txt</code></a></li>
-        <li><a href="docu-sms-lex.html" >Documentation of the lexicon files</a></li>
-	 </ul>
-      <p>Initially the Skolt Saami transducer differed from the other languages in not using <em>twolc</em>, but rather <em>xfst</em> as the rule formalism for the morphophonology. Skolt Saami  also used a different make file than the other languages, in the sms/src directory (command: <em>make</em>).</p>
-    </section>
-  </body>
+      <authors>
+         <person email="trond.trosterud@hum.uit.no" name="Trond Trosterud"/>
+      </authors>
+   </header>
+   <body>
+      <section>
+         <title>Documentation on Skolt Saami</title>
+         <p>The files referred to below all are stored in the gt/sms/src/ directory. Skolt Saami is not in our focus,
+         but at least it now compiles.</p>
+         <ul>
+            <li><a href="docu-sms-background.html">State of the art</a></li>
+            <li><strong><a href="docu-sms-twolc.html">Documentation</a></strong> of the <a
+            href="https://victorio.uit.no/langtech/trunk/gt/sms/src/twol-sms.txt"><code>twolc-sms.txt</code></a></li>
+            <li><a href="docu-sms-lex.html">Documentation of the lexicon files</a></li>
+         </ul>
+         <p>Initially the Skolt Saami transducer differed from the other languages in not using <em>twolc</em>, but
+         rather <em>xfst</em> as the rule formalism for the morphophonology. Now, the code is brough into line with the
+         other languages.</p>
+      </section>
+   </body>
 </document>
