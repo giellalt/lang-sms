@@ -1,26 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <hfstspeller dtdversion="1.0" hfstversion="3">
   <info>
-    <locale>sma</locale>
-    <title>Saemie (Divvun)</title>
-    <title xml:lang="fi">Inarisaamen oikaisuluin (Divvun)</title>
-    <title xml:lang="sv">Enaresamisk stavningskontrol (Divvun)</title>
-    <title xml:lang="en">Inari Sámi spell-checking (Divvun)</title>
+    <locale>sms</locale>
+    <title>Skolt Sami (Divvun)</title>
     <description>
-        Inarisaamen demo-oikaisuluku, joka perustuu HFST-tekniikaan ja
+        Koltansaamen demo-oikaisuluku, joka perustuu HFST-tekniikaan ja
         Divvun kielimalleihin.
-    </description>
-    <description xml:lang="fi">
-        Inarisaamen kielen demo-oikaisuluku, joka perustuu
-        HFST-tekniikaan ja Divvun kielimalleihin.
-    </description>
-    <description xml:lang="sv">
-        En enaresamisk demonstrasjonsstavningskontroll som änvänder
-        HFST-teknologi och Divvun-ressurser.
-    </description>
-    <description xml:lang="en">
-        A Demo Inari Sámi spelling checker using HFST technology and resources
-        from Divvun.
     </description>
     <version vcsrev="@PACKAGE_REVISION@">20110901</version>
     <date>20110901</date>
@@ -29,32 +14,15 @@
         website="http://www.divvun.no/"/>
   </info>
   <acceptor type="general" id="acceptor.default.hfst">
-    <title>Saemien baakoeh</title>
-    <title xml:lang="fi">Inarisaamen demosanakirja</title>
-    <title xml:lang="sv">Enaresamiskt demoleksikon</title>
-    <title xml:lang="en">Demonstrational Inari Sámi morphological lexicon</title>
+    <title>Skolt Sámi lexicon</title>
     <description>
         Sanasto description goes here.
-    </description>
-    <description xml:lang="sv">
-        En enaresamisk leksikon med några ord.
-    </description>
-    <description xml:lang="en">
-        Inari Sámi dictionary, with only a few entries and limited morphology.
     </description>
   </acceptor>
   <errmodel id="errmodel.default.hfst">
     <title>Levenstein 2 transduktori homogeenisellä painotuksella</title>
-    <title xml:lang="sv">Levenstein 2 transducer</title>
-    <title xml:lang="en">Levenstein 2 transducer</title>
     <description>
         Virheenkorjausmalli, joka osaa ehjätä enintään kaksi näppäilyvirhettä.
-    </description>
-    <description xml:lang="sv">
-        Korrigering som kan rätta nästan 2 skrivningsfel pr ord.
-    </description>
-    <description xml:lang="en">
-        Correction model for keyboard misstrokes, at most 2 per word.
     </description>
         <type type="default"/>
         <model>errormodel.default.hfst</model>
