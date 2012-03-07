@@ -29,7 +29,24 @@ Alphabet
   %´:0 
   %,:%´
   %^1VOW:0 %^2VOW:0 %^3VOW:0 %^4VOW:0 %^5VOW:0 %^VOWSH:0
-  X3:0 ;
+  X3:0
+
+! Literal quotes and angles must be escaped (cf morpheme boundaries below):
+ »7     ! »
+ «7     ! «
+ %[%>%] ! >
+ %[%<%] ! <
+
+! Morpheme boundaries:
+ «  ! Derivational prefix
+ »  ! Derivational suffix
+ %< ! Inflectional prefx
+ %> ! Inflectional suffix
+ #  ! Word boundary for both lexicalised and dynamic compounds
+ %^ ! (exceptional) soft hyphenation point
+
+! End of alphabet definitions
+  ;
 
 Sets
 ! Letter =

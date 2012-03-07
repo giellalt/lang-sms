@@ -13,17 +13,66 @@
 ! giellatekno@hum.uit.no or divvun@samediggi.no
 
 LEXICON Punctuation
-+CLB:%,   # ;
-+CLB:%.   # ;
-+CLB:%:   # ;
-+CLB:%;	  # ;
-+CLB:%!	  # ;
-+CLB:%?	  # ;
-+PUNCT:%-  # ;
-+HYPH:%" # ;
-+HYPH:%« # ;
-+HYPH:%» # ;
-+PAR:%[ # ;
-+PAR:%] # ;
-+PAR:%( # ;
-+PAR:%) # ;
+
+! Clause boundary symbols:
+    %,+CLB:%,     # ;
+    %.+CLB:%.     # ;
+  %.%.+CLB:%.%.   # ;
+%.%.%.+CLB:%.%.%. # ;
+    %:+CLB:%:     # ;
+    %;+CLB:%;     # ;
+ ^excl+CLB:%!     # ;
+ ^pipe+CLB:%|     # ;
+    %?+CLB:%?     # ; ! Question mark
+     …+CLB:…      # ;
+     ¿+CLB:¿      # ; ! Only seen as noise.
+     ¶+CLB:¶      # ; ! This sign is for titles, it is introduced by the
+                      ! catxml script, and may be changed if it interferes 
+                      ! with real pilcrow signs.
+
+! Single punctuation marks
+
+  •+PUNCT:•   # ;
+  ●+PUNCT:●   # ;
+  ·+PUNCT:·   # ;
+   ּ+PUNCT:ּ    # ;
+  ·+PUNCT:·   # ;
+  -+PUNCT:-   # ; ! hyphen
+ --+PUNCT:--  # ; ! double hyphen
+  –+PUNCT:–   # ; ! endash
+  —+PUNCT:—   # ; ! emdash
+  ―+PUNCT:―   # ; ! horizontal bar
+  =+PUNCT:=   # ;
+  ≈+PUNCT:≈   # ;
+ %%+PUNCT:%%  # ;
+  &+PUNCT:&   # ;
+ %"+PUNCT:%"  # ;
+  '+PUNCT:'7  # ; ! We use "'7" to avoid the CG symbol of ái'gi etc.
+ %*+PUNCT:%*  # ;
+  ++PUNCT:+   # ;
+  ±+PUNCT:±   # ;
+  `+PUNCT:`   # ;
+  ´+PUNCT:´   # ;
+  /+PUNCT:/   # ; 
++/-+PUNCT:+/- # ;
+ %~+PUNCT:%~  # ;
+
+! Paired punctuation marks
+
+  «+PUNCT+LEFT:«7     # ;
+  »+PUNCT+RIGHT:»7    # ;
+ %“+PUNCT+LEFT:%“     # ;
+ %”+PUNCT+RIGHT:%”    # ;
+ %‘+PUNCT+LEFT:%‘     # ;
+ %’+PUNCT+RIGHT:%’    # ;
+ %„+PUNCT+LEFT:%„     # ;
+ %‹+PUNCT+LEFT:%‹     # ;
+ %›+PUNCT+RIGHT:%›    # ;
+ %(+PUNCT+LEFT:%(     # ;
+ %)+PUNCT+RIGHT:%)    # ;
+ %[+PUNCT+LEFT:%[     # ;
+ %]+PUNCT+RIGHT:%]    # ;
+ %{+PUNCT+LEFT:%{     # ;
+ %}+PUNCT+RIGHT:%}    # ;
+ %<+PUNCT+LEFT:%[%<%] # ;
+ %>+PUNCT+LEFT:%[%>%] # ;
