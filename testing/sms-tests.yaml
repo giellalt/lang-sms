@@ -1,0 +1,34 @@
+Config:
+  hfst:
+    Gen: ../bin/sms-gen.hfstol
+    Morph: ../bin/sms.hfstol
+  xerox:
+    Gen: ../bin/isms.fst
+    Morph: ../bin/sms.fst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Verb - mõõnnâd: # Verb 'to go' - full paradigm
+     mõõnnâd+V+Ind+Prs+1Sg: mõõnâm
+     mõõnnâd+V+Ind+Prs+2sg: mõõnak
+     mõõnnâd+V+Ind+Prs+3sg: mâânn
+     mõõnnâd+V+Ind+Prs+1pl: mõõnnâp
+     mõõnnâd+V+Ind+Prs+2pl: mõõnnve´ted
+     mõõnnâd+V+Ind+Prs+3pl: mâ´nne
+     mõõnnâd+V+Ind+Prs+4: mõõnât # (epämääräinen persoona)
+     mõõnnâd+V+Ind+Prs+ConNeg: mõõn
+     mõõnnâd+V+Ind+Prt+Sg1: mõ´nnem
+     mõõnnâd+V+Ind+Prt+Sg2: mõ´nniǩ
+     mõõnnâd+V+Ind+Prt+Sg3: mõõni
+     mõõnnâd+V+Ind+Prt+Pl1: mõõnim
+     mõõnnâd+V+Ind+Prt+Pl2: mõõnid
+     mõõnnâd+V+Ind+Prt+Pl3: mõ´nne
+     mõõnnâd+V+Ind+Prt+4: mõ´nneš # (epämääräinen persoona)
+     mõõnnâd +V+PrfPrc: mõõnnâm
+
