@@ -67,10 +67,10 @@ Rules
 
 
 "Even syllabic verbs I, vowel shortening"
- Vx:0 <=> Vy: _ (´) C:+ (X3:) [ %^VOWSH: | %^2VOW: | %^3VOW: | %^4VOW: ] ;
- 		where Vx in (â e å õ u i o a)
- 			  Vy in (â e å õ u i o a)
- 		matched ;
+ Vx:0 <=> Vx: _ (´) C:+ (X3:) [ %^VOWSH: | %^2VOW: | %^3VOW: | %^4VOW: ] ;
+ 		where Vx in (â e å õ u i o a) ;
+!! 			  Vy in (â e å õ u i o a)
+!! 		matched ;
 
 
 "Even syllabic verbs I, vowel position I > II-III"
@@ -128,17 +128,27 @@ Rules
  â:ä <=> (C:+) [i: | u:] _ ´: C:+ (X3:) [ %^1VOW: | %^4VOW: ] ;
 
 "Even syllabic verbs I, diftong position V > II & III e:õ"
- e:õ <=> (C:+) [i: | u:] _ ´: C:+ (X3:) [ %^2VOW: | %^3VOW: ] ;
+ e:õ <=> (C:+) [ i: | u: ] _ ´: C:+ (X3:) [ %^2VOW: | %^3VOW: ] ;
 
 "Even syllabic verbs I, diftong position V > II & III â:a"
- â:a <=> (C:+) [ i: | u: ] _ ´: C:+ (X3:) %^2VOW: ;
+ â:a <=> (C:+) [ i: | u: ] _ ´: C:+ (X3:)   %^2VOW: ;
 
 "Even syllabic verbs I, diftong position V > II & III â:e"
  â:e <=> (C:+) [ i: | u: ] _ ´ C:+ (X3:) %^3VOW: ;
 
 
 
+! Consonant grad rules
 
 "Even syllabic verbs I, cg"
  Cx:0 <=> C:+ _ X3: ;
  		where Cx in (đ l r) ;
+
+
+"xx:x rule"
+ Cx:0 <=> V ( ´: ) Cx _ V X3:0 ;
+! to be refined…
+
+! goal:
+! mõõnnâd:mõõ´nn	POORRÂD ;
+! 
