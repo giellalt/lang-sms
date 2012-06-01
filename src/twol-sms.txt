@@ -24,8 +24,10 @@ Alphabet
   Å Ä Ö Ø Æ Á
   Á É Ó Ú Í À È Ò Ù Ì Ë Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð
   á é ó ú í à è ò ù ì ë ü ï â ê ô û î ã ý þ ñ ð ß ª ß ç
-  č ǩ ǯ ǧ ž đ ð ŋ ǥ
+  č ǩ ǯ ǧ ž đ ǥ ʒ š
+  Č Ǩ Ǯ Ǧ Ž Đ Ǥ Ʒ Š
   õ â
+  Õ Â
   %´:0 
   %,:%´
   %^1VOW:0 %^2VOW:0 %^3VOW:0 %^4VOW:0 %^5VOW:0 %^VOWSH:0
@@ -87,7 +89,8 @@ Rules
  			  Vy in (â o e å ä)
  		matched ;
 
-
+! 2012-06-01 This appears to depart from a vowel with "´"
+! so it must be III > IV
 "Even syllabic verbs I, vowel position II > IV"
  Vx:Vy <=> (C:+) _ V:0 ´ C:+ %^4VOW: ;
  		where Vx in (õ u i o a)
@@ -130,11 +133,20 @@ Rules
 "Even syllabic verbs I, diftong position V > II & III e:õ"
  e:õ <=> (C:+) [ i: | u: ] _ ´: C:+ (X3:) [ %^2VOW: | %^3VOW: ] ;
 
-"Even syllabic verbs I, diftong position V > II & III â:a"
- â:a <=> (C:+) [ i: | u: ] _ ´: C:+ (X3:)   %^2VOW: ;
-
-"Even syllabic verbs I, diftong position V > II & III â:e"
- â:e <=> (C:+) [ i: | u: ] _ ´ C:+ (X3:) %^3VOW: ;
+!! 2012-06-01 Unresolved <= conflict with respect to 'â:õ' vs. 'â:a'
+!! between "Even syllabic verbs I, diftong position I > II â:õ"
+!! and "Even syllabic verbs I, diftong position V > II & III â:a"
+!TEMPORARY REMOVAL
+!"Even syllabic verbs I, diftong position V > II & III â:a"
+! â:a <=> (C:+) [ i: | u: ] _ ´: C:+ (X3:)   %^2VOW: ;
+!!
+!!2012-06-01
+!! Warning: Unresolved <= conflict with respect to 'â:õ' vs. 'â:e'
+!!    between "Even syllabic verbs I, diftong position I > II â:õ"
+!!        and "Even syllabic verbs I, diftong position V > II & III â:e"
+!! TEMPORARY REMOVAL
+!"Even syllabic verbs I, diftong position V > II & III â:e"
+! â:e <=> (C:+) [ i: | u: ] _ ´ C:+ (X3:) %^3VOW: ;
 
 
 
@@ -144,6 +156,22 @@ Rules
  Cx:0 <=> C:+ _ X3: ;
  		where Cx in (đ l r) ;
 
+"Even syllabic verbs I, Voicing" ! ss:zz,
+ Cx:Cy <=> Cx: _ X3: ;
+           _ Cx: X3: ;
+                where Cx in (s š c k)
+                      Cy in (z ž ʒ ǥ)
+                matched ;
+
+!! 2009: 20
+"Even-syllabic nouns, In gg or ǧǧ"
+ Cx:Cy <=> V: [ (´:) [ d: | l | r ]| [ u: | i: ] (´:) ] _ X3: ;
+              where Cx in (ǧ g)
+                    Cy in (j ǥ)
+              matched ;
+
+! ǩeä´dǧǧ: ǩie´đjest
+! ǩeä´dǧǧ: ǩeäđǥaž
 
 "xx:x rule"
  Cx:0 <=> V ( ´: ) Cx _ V X3:0 ;
