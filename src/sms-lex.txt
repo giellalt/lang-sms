@@ -21,11 +21,11 @@ Multichar_Symbols
  +Pron +CS +CC +Adp +Po +Pr +Interj +Pcle
  +Pers +Dem +Interr +Refl +Recipr +Rel +Indef
  +Sg +Pl +Nom +Gen +Acc +Ill +Ine +Ela +Com +Ess +Par +Abe
- +PxSg1 +PxSg2 +PxSg3 +PxDu1 +PxDu2 +PxDu3 +PxPl1 +PxPl2 +PxPl3
+ +PxSg1 +PxSg2 +PxSg3 +PxPl1 +PxPl2 +PxPl3
  +Comp +Superl +Actor
  +Clt
  +Pass +Ind +Prs +Prt +Pot +Cond +Imprt +ImprtII +Sup
- +Sg1 +Sg2 +Sg3 +Du1 +Du2 +Du3 +Pl1 +Pl2 +Pl3
+ +Sg1 +Sg2 +Sg3 +Pl1 +Pl2 +Pl3
  +4 ! ??? fourth person, look into..
  +Inf +Act +Ger +GerII +ConNeg +Neg +PrsPrc +PrfPrc +VGen +VAbess
  +Prop +Ani +Mal +Fem +Sur +Plc +Org +Obj ! Semantic properties of names
@@ -34,7 +34,9 @@ Multichar_Symbols
  č đ ǧ ǩ n1 ŧ š ǯ ž
  ǥ m2 n2 h2
  b3 d3 g3 m3 h3
- ^P3 ! elaine-type diacritic
+ %^P3 ! elaine-type diacritic
+ %^DIADEL ! deleting diacritic
+ %^DIAINS ! inserting diacritic
  %^VOWSH %^1VOW %^2VOW %^3VOW %^4VOW %^5VOW !vowel position and length
  X1 X2 X3 X4 X5 X6 X7 X8 X9
  Ǯ Ʒ Q3 Q4 Q5 Q6 Q7 Q8 Q9
@@ -159,6 +161,7 @@ LEXICON TEEVVAD
 LEXICON POORRÂD
 +V+Ind+Prs:		VSUF-IÂ-PRS ;
 +V+Ind+Prt:		VSUF-IÂ-PRT ;
++V+Ind+Prs+ConNeg:X3 # ;
 +V+Imp:			VSUF-IÂ-IMP ;
 +V:X3				VSUF-I-POTKOND ; !WG
 +V+Pot+Sg3:X3âž	FINAL1 ; !WG
@@ -198,10 +201,10 @@ LEXICON TIETTED
 LEXICON VS-I
 +Sg1:am # ;
 +Sg2:ak # ;
-+Sg3:^P3 # ;
++Sg3:%^P3 # ;
 +Pl1:‚p # ;
 +Pl2:ve`ted # ;
-+Pl3:e^P3 # ;
++Pl3:e%^P3 # ;
 
 ! Present tense
 ! - - - - - - - -
@@ -211,15 +214,18 @@ LEXICON VSUF-IA-PRS
  +Sg2:X3ak			FINAL1	; !WG
  +Sg3:				FINAL1	;
  +Pl1:ap			FINAL1	;
+ +Pl1:ap			FINAL1	;
  +Pl2:ve,ted		FINAL1	;
  +Pl3:%^VOWSHa		FINAL1	;
  ! epämääräinen pers.			!WG
 
 LEXICON VSUF-IÂ-PRS
- +Sg1:X3am			FINAL1	; !WG
+ +Sg1:X3âm			FINAL1	; !WG
  +Sg2:X3ak			FINAL1	; !WG
- +Sg3:%^1VOW			FINAL1	;
+! +Sg3:%^1VOW			FINAL1	;
+ +Sg3:			FINAL1	;
  +Pl1:âp			FINAL1	;
+ +Pl1:%^DIAINSâp			FINAL1	;
  +Pl2:ve,ted		FINAL1	;
  +Pl3:%^4VOWe		FINAL1	;
  ! epämääräinen pers.			!WG
