@@ -169,7 +169,7 @@ Rules
 ! ǩeä´dǧǧ: ǩeäđǥaž
 
 "xx:x rule"
- Cx:0 <=> V ( ´ ) Cx _ (V:) X3:0 ;
+ Cx:0 <=> V: ( :´ ) Cx _ (V:) X3:0 ;
  	where Cx in ( m n l ) ;
 ! to be refined…
 
@@ -178,7 +178,13 @@ Rules
 
 
 "Inserting ´ in Pl3"
- 0:´ <=> V _ C C %^DIAINS: ;
+ 0:´ <=> V: _ C C [ %^DIAINS: | %^VOWSH: ] ;
+
+"Vowel Shortening before ´"
+ Vx:0 <=> Vx _ :´ C C %^VOWSH: ;
+      where Vx in ( õ ) ;
 
 !"Deleting ´ in infinitives"
 ! ´:0 <=> _ C* %^DIADEL ;
+
+
