@@ -108,6 +108,8 @@ define tDeletion [ t -> 0 || Vow t _ Vow WeG ] ;
 
 !define tDeletion t -> 0 || Vow t:đ _ Vow WeG ;
 
+define GradCnsDeletion [ n -> 0 || Vow ( ´ ) n _ WeG ] ;
+
 ! Change rules
 ! - - - - - - 
 
@@ -126,6 +128,8 @@ LongVowelLowering
 ShortVowelLowering
 .o.
 tDeletion
+.o.
+GradCnsDeletion
 .o.
 DummyDeletion ] ;
 
