@@ -8,14 +8,14 @@
 ! The verb _viǯǯâd_ arrive in form _viǯǯ_
 LEXICON VIQQAD
 +V+Inf:%>âd # ;
-+V+Ind+Prs: VS-I ;
-+V+Ind+Prt: VS-I-Prt ;
-+V+Imp: VS-I-Imp ;
++V+Ind+Prs: VIQQAD-Prs ;
++V+Ind+Prt: VIQQAD-Prt ;
++V+Imp: VIQQAD-Imp ;
 +V:%^VOWL VSUF-I-POTKOND ; !WG
 +V+ActEss:%>men FINAL1 ;
 +V+GerTemp:%^VOWL%>een FINAL1 ;
 +V+GerInstr:%^VOWL%>ee´l FINAL1 ;
-+V+Act:%>âm # ;
++V+Action:%>âm # ;
 +V+PrfPrc:%>âm # ;
 +V+VAbess:%^VOWL%>kâni # ;		!WG
 +V+VAbess:%^VOWL%>kani # ;		!WG
@@ -25,32 +25,32 @@ LEXICON VIQQAD
 
 ! The verb _teevvad_ arrive in form _teevv_
 LEXICON TEEVVAD
-+V+Ind+Prs:		VSUF-IA-PRS ;
-+V+Ind+Prt:		VSUF-IA-PRT ;
-+V+Imp:			VSUF-IA-IMP ;
++V+Ind+Prs:		TEEVVAD-PRS ;
++V+Ind+Prt:		TEEVVAD-PRT ;
++V+Imp:			TEEVVAD-IMP ;
 +V:%^VOWL VSUF-I-POTKOND ; !WG
 +V+Pot+Sg3:%^VOWL%>až	FINAL1 ; !WG
 +V+Inf:%>ad # ;
 +V+ActEss:%>men # ;
 +V+GerTemp:%^VOWL%>een FINAL1 ;
 +V+GerInstr:%^VOWL%>ee´l FINAL1 ;
-+V+Act:%>am # ;
++V+Action:%>am # ;
 +V+VAbess:%^VOWL%>kâni # ;		!WG
 +V+VAbess:%^VOWL%>kani # ;		!WG
 +V+VAbess:%^VOWL%>ǩeânai # ;		!WG
 
 ! The verb _tie´tted_ arrive in form _tiõtt_
 LEXICON TIETTED
-+V+Ind+Prs:		VSUF-IE-PRS ;
-+V+Ind+Prt:		VSUF-IE-PRT ;
-+V+Imp:			VSUF-IE-IMP ;
++V+Ind+Prs:		TIETTED-PRS ;
++V+Ind+Prt:		TIETTED-PRT ;
++V+Imp:			TIETTED-IMP ;
 +V:%^VOWL		VSUF-I-POTKOND ; !WG
 +V+Pot+Sg3:%^VOWL%>ež	FINAL1 ; !WG
 +V+Inf:%^VOWFront%^PAL%>ed # ;
 +V+ActEss:%>men # ;
 +V+GerTemp:%^VOWL%>een FINAL1 ;
 +V+GerInstr:%^VOWL%>ee´l FINAL1 ;
-+V+Act:%>em # ;
++V+Action:%>em # ;
 +V+VAbess:%^VOWL%>kâni # ;			!WG
 +V+VAbess:%^VOWL%>kani # ;		!WG
 +V+VAbess:%^VOWL%>ǩeânai # ;		!WG
@@ -59,6 +59,24 @@ LEXICON TIETTED
 ! ------------------
 ! Contracted stems
 ! ----------------
+
+LEXICON TEEMEED
++V+Ind+Prs:		TEEMEED-PRS ;
++V+Ind+Prt:		TEEMEED-PRT ;
++V+Imp:			TEEMEED-IMP ;
++V:%>e´		VSUF-I-POTKOND ; !WG
++V+Pot+Sg3:%>eež	FINAL1 ; !WG
++V+Inf:%>eed # ;
++V+ActEss:%>e´men # ;
++V+GerTemp:%>een FINAL1 ;
++V+GerInstr:%>ee´l FINAL1 ;
++V+Action:%>eem # ;
++V+PrsPrc:%>eei # ;
++V+PrfPrc:%>ääm # ;
++V+Pass+PrfPrc:%>ummu # ;
++V+Pass+PrfPrc:%>uum # ;
++V+VAbess:%>eǩâni # ;		!WG
++V+Imp+ConNeg:%>ukku FINAL1 ;
 
 
 ! Intermediate suffix lexica
@@ -72,7 +90,7 @@ LEXICON TIETTED
 ! - - - - - - - -
 
 ! assuming stem _viǯǯ_
-LEXICON VS-I
+LEXICON VIQQAD-Prs
 +Sg1:%^VOWL%>am # ; ! _viǯǯam_
 +Sg2:%^VOWL%>ak # ; ! _viǯǯak_
 !+Sg3:^P3 # ; ! _veǯǯ_
@@ -83,16 +101,17 @@ LEXICON VS-I
 +4:%^VOWL%>ât # ;
 +ConNeg:%^VOWL # ;
 
-LEXICON VS-I-Prt
+LEXICON VIQQAD-Prt
 +Sg1:%^VOWSH%^PAL%>em # ; ! _ka´ǧǧem_
 +Sg2:%^VOWSH%^PAL%>iǩ # ; ! _ka´ǧǧiǩ_
 +Sg3:%^VOWL%>i # ; ! _kaaggi_
 +Pl1:%^VOWL%>im # ; ! _kaaggim_
++Pl1:%^VOWL%>in # ; ! _kaaggin_ is this sub?
 +Pl2:%^VOWL%>id # ; ! _kaaggid_
 +Pl3:%^VOWSH%^PAL%>e # ; ! _vi´ǯǯe_ _kuõ´sǩǩe_ _ka'ǧǧe_
 +4:%^VOWSH%^PAL%>eš # ;
 
-LEXICON VS-I-Imp
+LEXICON VIQQAD-Imp
 +Sg2:%^VOWL # ; ! _kaagg_
 +Sg3:%^VOWL%^VOWLower%>as FINAL1 ;
 +Pl1:%>âp FINAL1 ;
@@ -103,7 +122,7 @@ LEXICON VS-I-Imp
 ! - - - - - - - -
 
 ! assuming stem _teevv_
-LEXICON VSUF-IA-PRS
+LEXICON TEEVVAD-PRS
  +Sg1:%^VOWL%>am		FINAL1	; !WG !_teevam_ _lääulam_
  +Sg2:%^VOWL%>ak			FINAL1	; !WG _teevak_ _lääulak_
  +Sg3:			FINAL1	; !_teevv_ _läull_
@@ -113,7 +132,7 @@ LEXICON VSUF-IA-PRS
  ! epämääräinen pers.			!WG
 
 ! assuming stem _tie´tt_
-LEXICON VSUF-IE-PRS
+LEXICON TIETTED-PRS
  +Sg1:%^VOWL%^VOWLower%>am		FINAL1	; !WG _teâđam_ 
  +Sg2:%^VOWL%^VOWLower%>ak		FINAL1	; !WG ! _teâđak_
  +Sg3:%^VOWLower%^PALNo FINAL1	; ! _teâtt_
@@ -125,10 +144,21 @@ LEXICON VSUF-IE-PRS
  +4:%^VOWL%^VOWFront%^PAL%>et FINAL1 ; ! vue´ljet
  +ConNeg:%^VOWL%^VOWFront%^PAL # ;
 
+! assuming stem _ää´v_ _tee´m_
+LEXICON TEEMEED-PRS
+ +Sg1:%>ääm		FINAL1	; !WG _ää´vääm_ 
+ +Sg2:%>ääk		FINAL1	; !WG ! _ää´vääk_
+ +Sg3:%>ad FINAL1	; ! _ää´vad_
+ +Pl1:%>eep		FINAL1	; ! _ää´veep_ _tie´ttep_
+ +Pl2:%>ve´ted		FINAL1	; ! _ää´vve´ted_
+ +Pl3:%>ee		FINAL1	; ! _ää´vee_
+ +4:%>eet FINAL1 ; ! ää´veet
+ +ConNeg:%>ed # ; ! ää´ved
+
 ! Past tense
 ! - - - - - - - -
 
-LEXICON VSUF-IA-PRT
+LEXICON TEEVVAD-PRT
  +Sg1:%^VOWRaise%>um		FINAL1	; !đđ>dd ! _laullum_
  +Sg2:%^VOWRaise%>uk		FINAL1	; !đđ>dd ! _laulluk_
  +Sg3:%^VOWL%>ai			FINAL1	; !WG ! _lääulai_
@@ -137,7 +167,7 @@ LEXICON VSUF-IA-PRT
  +Pl3:%^VOWSH%^VOWRaise%>u		FINAL1	; ! _laullu_
  ! epämääräinen pers.
 
-LEXICON VSUF-IE-PRT
+LEXICON TIETTED-PRT
  +Sg1:%^PAL%>em		FINAL1	; ! _tiõ´ttem_
  +Sg2:%^PAL%>iǩ		FINAL1	; ! _tiõ´ttiǩ_
  +Sg3:%^VOWL%^PAL%>i		FINAL1	; !WG ! _tiõ´đi_
@@ -145,25 +175,44 @@ LEXICON VSUF-IE-PRT
  +Pl2:%^VOWL%^PAL%>id		FINAL1	; !WG ! _tiõ´đid_
  +Pl3:%^VOWSH%^PAL%>e		FINAL1	; ! _tie´tte, tiõ´tte_
  +4:%^VOWL%^VOWFront%^PAL%>eš FINAL1 ; ! vue´lješ
- ! epämääräinen pers.
+
+LEXICON TEEMEED-PRT
+ +Sg1:%>eem		FINAL1	; ! _ää´veem_
+ +Sg2:%>iiǩ		FINAL1	; ! _ää´viiǩ_
+ +Sg3:%>ii		FINAL1	; !WG ! _ää´vii_
+ +Pl1:%>iim		FINAL1	; !WG ! _ää´viim_
+ +Pl1:%>iin		FINAL1	; !WG ! _ää´viin_ ! sub??
+ +Pl2:%>iid		FINAL1	; !WG ! _ää´viid_
+ +Pl3:%>ee		FINAL1	; ! _ää´vee_
+ +4:%>eeš FINAL1 ; ! ää´veeš
+
 
 
 ! Imperative
 ! - - - - - - -
 ! teevvad
-LEXICON VSUF-IA-IMP
+LEXICON TEEVVAD-IMP
  +Sg2:%^VOWL FINAL1	; !WG
  +Sg3:X3as			FINAL1	; !WG
  +Pl1:ap			FINAL1	;
  +Pl2:ad			FINAL1	;
  +Pl3:%^VOWSHaz		FINAL1	;
 
-LEXICON VSUF-IE-IMP
+! tie´tted
+LEXICON TIETTED-IMP
  +Sg2:%^VOWL%^VOWFront%^PAL FINAL1	; !WG
  +Sg3:%^VOWL%>as		FINAL1	; !WG
  +Pl1:ep			FINAL1	;
  +Pl2:ed			FINAL1	;
  +Pl3:%^1VOWaz		FINAL1	;
+
+! tee´meed
+LEXICON TEEMEED-IMP
+ +Sg2:%>ed FINAL1	; !WG
+ +Sg3:%>ââǥǥas		FINAL1	; !WG
+ +Pl1:%>âkap			FINAL1	;
+ +Pl2:%>e´ǩed		FINAL1	;
+ +Pl3:%>âkaz		FINAL1	;
 
 
 ! Potentialis & Konditionalis
@@ -173,14 +222,18 @@ LEXICON VSUF-IE-IMP
 LEXICON VSUF-I-POTKOND
  +Pot+Sg1:%>žem FINAL1	;
  +Pot+Sg2:%>žiǩ FINAL1	;
- +Pot+Pl1:%>žep FINAL1	;
+ +Pot+Pl1:%>žep FINAL1	; ! How are these related?
+ +Pot+Pl1:%>žim FINAL1	; ! Are there sub standards?
+ +Pot+Pl1:%>žin FINAL1	; !
  +Pot+Pl2:%>žid FINAL1	;
  +Pot+Pl3:%>že FINAL1	;
  +Pot+4:%>žet FINAL1 ;
  +Cond+Sg1:%>čem FINAL1	;
  +Cond+Sg2:%>čiǩ FINAL1	;
  +Cond+Sg3:%>či FINAL1	;
- +Cond+Pl1:%>čep FINAL1	;
+ +Cond+Pl1:%>čep FINAL1	; ! How are these related?
+ +Cond+Pl1:%>čim FINAL1	; ! Are there substandards?
+ +Cond+Pl1:%>čin FINAL1	; !
  +Cond+Pl2:%>čid FINAL1	;
  +Cond+Pl3:%>če FINAL1	;
  +Cond+4:%>češ FINAL1 ;
