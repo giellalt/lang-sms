@@ -85,7 +85,8 @@ sms.save: ../bin/sms.save
 
 sms-lex.save: ../bin/sms-lex.save
 ../bin/sms-lex.save: sms-lex.txt noun-sms-lex.txt adj-sms-lex.txt \
-	adv-sms-lex.txt verb-sms-lex.txt pronoun-sms-lex.txt interjection-sms-lex.txt \
+	noun-sms-morph.txt adv-sms-lex.txt verb-sms-lex.txt verb-sms-morph.txt \
+        pronoun-sms-lex.txt interjection-sms-lex.txt \
 	conjunction-sms-lex.txt subjunction-sms-lex.txt numeral-sms-lex.txt \
 	propernoun-sms-lex.txt propernoun-sms-morph.txt \
 	punct-sms-lex.txt particle-sms-lex.txt pp-sms-lex.txt
@@ -93,7 +94,8 @@ sms-lex.save: ../bin/sms-lex.save
 	@echo "*** Building sms-lex.save ***" ;
 	@echo
 	printf "compile-source sms-lex.txt noun-sms-lex.txt adv-sms-lex.txt \
-	adj-sms-lex.txt verb-sms-lex.txt pronoun-sms-lex.txt interjection-sms-lex.txt \
+        noun-sms-morph.txt adj-sms-lex.txt verb-sms-lex.txt verb-sms-morph.txt \
+        pronoun-sms-lex.txt interjection-sms-lex.txt \
 	conjunction-sms-lex.txt subjunction-sms-lex.txt numeral-sms-lex.txt \
 	propernoun-sms-lex.txt propernoun-sms-morph.txt \
 	punct-sms-lex.txt particle-sms-lex.txt pp-sms-lex.txt \n\
