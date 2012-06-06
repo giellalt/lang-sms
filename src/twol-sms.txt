@@ -63,9 +63,10 @@ Alphabet
 
 Sets
 ! Letter =
- C		= b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ;
- V		= a e i o u å ä â õ ;
+ C	= b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ;
+ V	= a e i o u å ä â õ ;
 
+ CNoJV        = b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ;
 
 Definitions
 
@@ -136,6 +137,8 @@ Rules
  Vx:Vy <=> _ Vx: (%´: | 0:%´) [ C:+ | C:+ %': C:+ ] ( %^VOWSH: %^CLong: | %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
            Vx: _ (%´: | 0:%´) [ C:+ | C:+ %': C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
            [#: | C: ] _ (%´: | 0:%´) [ C:+ | C:+ %': C:+ ] ( %^VOWSH: %^CLong: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
+           [#: | C: ] _ 0:Vy (%´: | 0:%´) [ C:+ | C:+ %': C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
+! ju´rdded > joordam
           [ #: | C ] _ ( u: | i: ) (%´: | 0:%´) [ C:+ | C:+ %': C:+ ] ( %^VOWL: %^CShort: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
           [ #: | C ] _ ((%´: | 0:%´) ( v:u | j:i )) (%´: | 0:%´) [ C:+ | C:+ %': C:+ ] ( %^VOWSH: %^CLong: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
               where Vx in (õ u i o a)
@@ -196,8 +199,9 @@ Rules
 
 ! used for declension of nouns kunn > kuun
 "Even syllabic nouns, relative vowel extra lengthening u not followed by v"
- 0:u <=> [ C: | #: ] u: _ (%´: | 0:%´) Cx: Cx: %^VOWXL: ;
-             where Cx in (s n) ; ! This might be extended
+ 0:u <=> [ C: | #: ] u: _ (%´: | 0:%´) [[ s: s: | n n: ] %^VOWXL: | CNoJV C:+ %^VOWL: %^CShort: ] ;
+         
+
 
 ! used for conjugation of ce´pcced > cii´pcež
 ! simultaneous lengthening and raising !!!hmm: xfst ordering might be easier
@@ -205,6 +209,15 @@ Rules
  0:Vy <=> [ C: | #: ] Vx:Vy _ (%´: | 0:%´) C:+ %^VOWL: %^CShort: %^VOWRaise: %^PAL: %>: e ;
              where Vx in (e â å ä o)
                    Vy in (i õ o a u)
+             matched ;
+
+
+! ju´rdded > joordam ju´rdded+V+Ind+Prs+Sg1
+! simultaneous lengthening and lowering
+"Even syllabic verbs I, relative vowel lengthening and lowering"
+ 0:Vy <=> [ C: | #: ] Vx:Vy _ (%´: | 0:%´) C:+ %^VOWL: %^CShort: %^VOWLower:  ;
+             where Vx in (i õ o a u)
+                   Vy in (e â å ä o)
              matched ;
 
 
@@ -350,6 +363,8 @@ Rules
 ! sijdd > siid
 "Even syllabic nouns I, with extra lengthening of vowel ij>ii/uv>uu and dd>d"
  Cx:0 <=> [ u: (%´: ) v: | i: (%´: ) j: ] ( 0:%´) Cx _ %^VOWXL: ;
+ ! ju´rdded > joordam
+          [ V: | :V ] (%´: | 0:%´) CNoJV Cx _ (%^VOWL: ) %^CShort: ;
                 where Cx in (d) ;
 
 
