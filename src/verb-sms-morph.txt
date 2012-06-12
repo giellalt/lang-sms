@@ -12,6 +12,7 @@ LEXICON VIQQAD
 +V+Ind+Prt: VIQQAD-Prt ;
 +V+Imp: VIQQAD-Imp ;
 +V:%^VOWL%^CShort VSUF-I-POTKOND ; !WG
++V+Pot+Sg3:%^VOWL%^CShort%>âž	FINAL1 ; !WG
 +V+ActEss:%>men FINAL1 ;
 +V+GerTemp:%^VOWL%^CShort%>een FINAL1 ;
 +V+GerInstr:%^VOWL%^CShort%>eeˊl FINAL1 ;
@@ -31,9 +32,12 @@ LEXICON TEEVVAD
 +V+Ind+Prt:		TEEVVAD-PRT ;
 +V+Imp:			TEEVVAD-IMP ;
 +V:%^VOWL%^CShort VSUF-I-POTKOND ; !WG
-+V+Pot+Sg3:%^VOWL%^CShort%>až	FINAL1 ; !WG
++V+Pot+Sg3:%^VOWL%^CShort%>ež	FINAL1 ; !WG
 +V+Inf:%>ad FINAL1 ;
++V+PrsPrc:%>ai FINAL1 ;
++V+PrfPrc:%>am FINAL1 ;
 +V+ActEss:%>men FINAL1 ;
++V+Pass+PrfPrc:%^VOWSH%^CLong%^VOWRaise%>um FINAL1 ;
 +V+GerTemp:%^VOWL%^CShort%>een FINAL1 ;
 +V+GerInstr:%^VOWL%^CShort%>eeˊl FINAL1 ;
 +V+Action:%>am FINAL1 ;
@@ -70,20 +74,22 @@ LEXICON JURDDED
 +V+Ind+Prs:             JURDDED-PRS ;
 +V+Ind+Prt:             JURDDED-PRT ;
 +V+Imp:                 JURDDED-IMP ;
-+V:%^VOWL%^CShort               VSUF-I-POTKOND ; !WG
++V:%^VOWL%^CShort%^PAL       POTENTIAL ; !
++V:%^VOWL%^CShort%^VOWLower    CONDITIONAL ; !
 +V+Pot+Sg3:%^VOWL%^CShort%^VOWRaise%^PAL%>ež    FINAL1 ; !WG
 +V+Inf:%^VOWFront%^PAL%>ed FINAL1 ;
-+V+ActEss:%>men FINAL1 ;
++V+Action:%>em FINAL1 ;
++V+ActEss:%^PAL%>men FINAL1 ;
 +V+GerTemp:%^VOWL%^CShort%^PAL%>een FINAL1 ;
 +V+GerInstr:%^VOWL%^CShort%^PAL%>eeˊl FINAL1 ;
 +V+Action:%^PAL%>em FINAL1 ;
 +V+PrsPrc:%^PAL%>i FINAL1 ;
-+V+PrfPrc:%>am FINAL1 ;
++V+PrfPrc:%^VOWLower%>am FINAL1 ;
 +V+Pass+PrfPrc:%>um FINAL1 ;
-!+V+Imp+ConNeg:%>ukku FINAL1 ;
-+V+VAbess:%^VOWL%^CShort%>kâni FINAL1 ;                 !WG
-+V+VAbess:%^VOWL%^CShort%>kani FINAL1 ;         !WG
-+V+VAbess:%^VOWL%^CShort%>ǩeânai FINAL1 ;               !WG
++V+Imp+ConNeg:%>u FINAL1 ;
++V+VAbess:%^VOWL%^CShort%^PAL%>kâni FINAL1 ;                 !WG
++V+VAbess:%^VOWL%^CShort%^PAL%>kani FINAL1 ;         !WG
++V+VAbess:%^VOWL%^CShort%^PAL%>ǩeânai FINAL1 ;               !WG
 
 
 ! The verb _tieˊtted_ arrives in form _tiõtt_
@@ -219,7 +225,7 @@ LEXICON TEEVVAD-PRS
  +Pl1:%>ap			FINAL1	; !_teevvap_ _läullap_
  +Pl2:%>veˊted		FINAL1	; !_teevvve'ted_ _läullve'ted_
  +Pl3:%^VOWSH%^CLong%>a		FINAL1	; !_tevva_ _läulla_
- ! epämääräinen pers.			!WG
+ +4:%^VOWL%^CShort%>at FINAL1  ; !WG
 
 ! assuming stem _kâlmm_
 LEXICON KALMMED-PRS
@@ -276,9 +282,10 @@ LEXICON TEEVVAD-PRT
  +Sg2:%^VOWRaise%>uk		FINAL1	; !đđ>dd ! _laulluk_
  +Sg3:%^VOWL%^CShort%>ai			FINAL1	; !WG ! _lääulai_
  +Pl1:%^VOWL%^CShort%>aim			FINAL1	; !WG ! _lääulaim_
+ +Pl1:%^VOWL%^CShort%>ain			FINAL1	; !WG ! _lääulain_
  +Pl2:%^VOWL%^CShort%>aid			FINAL1	; !WG ! _lääulaid_
  +Pl3:%^VOWSH%^CLong%^VOWRaise%>u		FINAL1	; ! _laullu_
- ! epämääräinen pers.
+ +4:%^VOWRaise%>uš FINAL1 ;
 
 LEXICON KALMMED-PRT
  +Sg1:%^PAL%>em		FINAL1	; ! _kâˊlmmem_
@@ -293,10 +300,11 @@ LEXICON JURDDED-PRT
  +Sg1:%^PAL%>em         FINAL1  ; ! _juˊrddem_
  +Sg2:%^PAL%>iǩ         FINAL1  ; ! _juˊrddiǩ_
  +Sg3:%^VOWL%^CShort%^PAL%>i FINAL1     ; !WG ! _juuˊrdi_
- +Pl1:%^VOWL%^CShort%^PAL%>im FINAL1    ; !WG ! _tiõˊđim_
+ +Pl1:%^VOWL%^CShort%^PAL%>im FINAL1    ; !WG ! _juu´rdim_
+ +Pl1:%^VOWL%^CShort%^PAL%>in FINAL1    ; !WG ! _juu´rdin_
  +Pl2:%^VOWL%^CShort%^PAL%>id FINAL1    ; !WG ! _tiõˊđid_
  +Pl3:%^VOWSH%^CLong%^VOWRaise%^PAL%>e FINAL1   ; ! _kõˊlmme_
- +4:%^VOWL%^CShort%^VOWFront%^PAL%>eš FINAL1 ; ! vueˊlješ
+ +4:%^VOWSH%^CLong%^VOWFront%^PAL%>eš FINAL1 ; ! ju´rddeš
 
 LEXICON TIETTED-PRT
  +Sg1:%^PAL%>em		FINAL1	; ! _tiõˊttem_
@@ -324,11 +332,11 @@ LEXICON TEEMEED-PRT
 ! teevvad
 LEXICON TEEVVAD-IMP
  +Sg2:%^VOWL%^CShort FINAL1	; !WG
- +Sg3:X3as			FINAL1	; !WG
+ +Sg3:%^VOWL%^CShort%>as			FINAL1	; !WG
  +Pl1:%>ap			FINAL1	;
  +Pl2:%>ad			FINAL1	;
  +Pl3:%^VOWSH%^CLong%>az		FINAL1	;
-
+ +ConNeg:%^VOWRaise%>u FINAL1  ;
 ! 
 LEXICON KALMMED-IMP
  +Sg2:%^VOWL%^CShort%^PAL FINAL1	; !WG
@@ -367,6 +375,10 @@ LEXICON TEEMEED-IMP
 ! - - - - - - - - - - - - - -
 
 LEXICON VSUF-I-POTKOND
+ POTENTIAL ;
+ CONDITIONAL ;
+
+LEXICON POTENTIAL
  +Pot+Sg1:%>žem FINAL1	;
  +Pot+Sg2:%>žiǩ FINAL1	;
  +Pot+Pl1:%>žep FINAL1	; ! How are these related?
@@ -376,6 +388,8 @@ LEXICON VSUF-I-POTKOND
  +Pot+Pl3:%>že FINAL1	;
  +Pot+4:%>žet FINAL1 ;
  +Pot+ConNeg:%>že FINAL1 ;
+
+LEXICON CONDITIONAL
  +Cond+Sg1:%>čem FINAL1	;
  +Cond+Sg2:%>čiǩ FINAL1	;
  +Cond+Sg3:%>či FINAL1	;

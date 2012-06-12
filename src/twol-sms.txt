@@ -229,7 +229,7 @@ Rules
 
 ! _uvdd > ouˊdde_ 
 "Even syllabic verbs,  for v>u"
- v:u <=> [ C: | #: ] u: (0:%ˊ) _ (%ˊ: | 0:%ˊ) d d: [ %^VOWL: %^CShort: | %^VOWXL: | %^VOWLower: | %^VOWSH: %^CLong:  %^VOWLower: (%^VOWFront: ) %^PAL: ];
+ v:u <=> [ C: | #: ] u: ( 0:u | 0:o ) (0:%ˊ) _ (%ˊ: | 0:%ˊ) d d: [ %^VOWL: %^CShort: | %^VOWXL: | %^VOWLower: | %^VOWSH: %^CLong:  %^VOWLower: (%^VOWFront: ) %^PAL: ];
 
 
 
@@ -362,7 +362,7 @@ Rules
 ! used with  +N+Sg+Nom > +N+Sg+Gen
 ! sijdd > siid
 "Even syllabic nouns I, with extra lengthening of vowel ij>ii/uv>uu and dd>d"
- Cx:0 <=> [ u: (%ˊ: ) v: | i: (%ˊ: ) j: ] ( 0:%ˊ) Cx _ %^VOWXL: ;
+ Cx:0 <=> [ u: (0:u | 0:o ) (%ˊ: ) v: | i: (%ˊ: ) j: ] ( 0:%ˊ) Cx _ %^VOWXL: ;
  ! juˊrdded > joordam
           [ V: | :V ] (%ˊ: | 0:%ˊ) CNoJV Cx _ (%^VOWL: ) %^CShort: ;
                 where Cx in (d) ;
@@ -390,8 +390,9 @@ Rules
 ! double consonants following vowel and "i" at coda that become
 ! single consonants in gradation
 ! njeiddad > njeeid
+! 2012-06-12 _v:u_ allows for u´vdded
 "Even syllabic verbs I, third consonant loss idd:id" ! idd:id
- d:0 <=> V: (0:V) i (%ˊ: | 0:%ˊ) d: _ %^VOWL: %^CShort: ;
+ d:0 <=> V: (0:V) [ i | v:u ] (%ˊ: | 0:%ˊ) d: _ %^VOWL: %^CShort: ;
 
 
 "Even syllabic verbs I, t>đ" ! tt:đ
