@@ -43,6 +43,11 @@ Alphabet
 %^VOWFront:0
 %^PAL:0 %^PALNo:0
   X3:0 ! causes weak grade
+ QE1:0 ! used with "kåˊmrded" 'to bow'
+ %^IMPSG2:0
+ %^INDPRSSG3:0
+
+
 
 ! Literal quotes and angles must be escaped (cf morpheme boundaries below):
  »7     ! »
@@ -220,6 +225,18 @@ Rules
                    Vy in (e â å ä o)
              matched ;
 
+! kååˊmmerd 
+"Vowel lengthening in INDPRSSG3 and IMPSG2"
+ 0:Vx <=> Vx _ ( %ˊ ) :C+ [ QE1: ] C:+ [ %^IMPSG2: | %^INDPRSSG3: ] ;
+        where Vx in (å) ;
+
+!! VOWEL DUMMY LOSS
+
+! QE1
+"Vowel dummy loss when not INDPRSSG3 and IMPSG2"
+ Vx:0 <=> _ C:+ %>: ;
+       where Vx in (QE1) ;
+
 
 !! SEMI VOWELS
 
@@ -231,7 +248,21 @@ Rules
 "Even syllabic verbs,  for v>u"
  v:u <=> [ C: | #: ] u: ( 0:u | 0:o ) (0:%ˊ) _ (%ˊ: | 0:%ˊ) d d: [ %^VOWL: %^CShort: | %^VOWXL: | %^VOWLower: | %^VOWSH: %^CLong:  %^VOWLower: (%^VOWFront: ) %^PAL: ];
 
+!! VOWEL and ZERO ALTERNATION
 
+! _kåˊmrded_ 
+"Realization for QE1 in e " !
+ Vx:Vy <=> _ C:+ %^IMPSG2: ;
+         where Vx in (QE1)
+               Vy in (e)
+         matched ;
+
+"Realization for QE1 in a"!
+ Vx:Vy <=> _ C:+ %^INDPRSSG3: ;
+         where Vx in (QE1)
+               Vy in (a)
+         matched ;
+         
 
 !! PALATALIZATION
 
@@ -416,6 +447,13 @@ Rules
 ! %^CLong is generally used in conjunction with a preceding %^VOWSH
 ! In verbs this will be observed in finite forms
 ! In derivational morphology, e.g. -škuetted, this is not the case
+
+
+! kååˊmmerd 
+"Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2"
+ 0:Cx <=> V: ( :V ) ( %ˊ ) :C* Cx _ [ QE1: ] C:+ [ %^IMPSG2: | %^INDPRSSG3: ] ;
+            where Cx in (m) ;
+
 
 
 !! 
