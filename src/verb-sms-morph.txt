@@ -11,7 +11,7 @@ LEXICON VIQQAD
 +V+Ind+Prs: VIQQAD-Prs ;
 +V+Ind+Prt: VIQQAD-Prt ;
 +V+Imp: VIQQAD-Imp ;
-+V:%^VOWL%^CShort VSUF-I-POTKOND ; !WG
++V:%^VOWL%^CShort%> VSUF-I-POTKOND ; !WG
 +V+Pot+Sg3:%^VOWL%^CShort%>âž	FINAL1 ; !WG
 +V+ActEss:%>men FINAL1 ;
 +V+GerTemp:%^VOWL%^CShort%>een FINAL1 ;
@@ -31,7 +31,7 @@ LEXICON TEEVVAD
 +V+Ind+Prs:		TEEVVAD-PRS ;
 +V+Ind+Prt:		TEEVVAD-PRT ;
 +V+Imp:			TEEVVAD-IMP ;
-+V:%^VOWL%^CShort VSUF-I-POTKOND ; !WG
++V:%^VOWL%^CShort%> VSUF-I-POTKOND ; !WG
 +V+Pot+Sg3:%^VOWL%^CShort%>ež	FINAL1 ; !WG
 +V+Inf:%>ad FINAL1 ;
 +V+PrsPrc:%>ai FINAL1 ;
@@ -52,7 +52,7 @@ LEXICON KALMMED
 +V+Ind+Prs:		KALMMED-PRS ;
 +V+Ind+Prt:		KALMMED-PRT ;
 +V+Imp:			KALMMED-IMP ;
-+V:%^VOWL%^CShort		VSUF-I-POTKOND ; !WG
++V:%^VOWL%^CShort%>		VSUF-I-POTKOND ; !WG
 +V+Pot+Sg3:%^VOWL%^CShort%^VOWRaise%^PAL%>ež	FINAL1 ; !WG
 +V+Inf:%^VOWFront%^PAL%>ed FINAL1 ;
 +V+ActEss:%>men FINAL1 ;
@@ -97,7 +97,7 @@ LEXICON TIETTED
 +V+Ind+Prs:		TIETTED-PRS ;
 +V+Ind+Prt:		TIETTED-PRT ;
 +V+Imp:			TIETTED-IMP ;
-+V:%^VOWL%^CShort		VSUF-I-POTKOND ; !WG
++V:%^VOWL%^CShort%>	VSUF-I-POTKOND ; !WG
 +V+Pot+Sg3:%^VOWL%^CShort%>ež	FINAL1 ; !WG
 +V+Inf:%^VOWFront%^PAL%>ed FINAL1 ;
 +V+ActEss:%>men FINAL1 ;
@@ -173,6 +173,46 @@ LEXICON TEEMEED
 +V+Pass+PrfPrc:%>uum FINAL1 ;
 +V+VAbess:%>eǩâni FINAL1 ;		!WG
 +V+Imp+ConNeg:%>ukku FINAL1 ;
+
+! vuejted
+LEXICON VUEJTED
+ KAMRDED ; ! The distinction is taken care of in twol and stem formulation
+
+! mainsted
+LEXICON MAINSTED
++V+Ind+Prs:		MAINSTED-PRS ;
++V+Ind+Prt:		MAINSTED-PRT ;
++V+Imp:			MAINSTED-IMP ;
++V+Ind+Prs:%^VOWL	MAINSTED-PRS ;
++V+Ind+Prt:%^VOWL	MAINSTED-PRT ;
++V+Imp:%^VOWL		MAINSTED-IMP ;
++V+Imp+Sg2:%^IMPSG2	FINAL1 ;
++V+Imp+ConNeg:%>uku FINAL1 ;
++V:%>eˊ		VSUF-I-POTKOND ; !WG
++V+Pot+Sg3:%>ež	FINAL1 ; !WG
++V+Inf:%>ed FINAL1 ;
++V+ActEss:%>eˊmen FINAL1 ;
++V+Action:%>am FINAL1 ;
++V+PrsPrc:%>eei FINAL1 ;
++V+PrfPrc:%>am FINAL1 ;
++V+Pass+PrfPrc:%>ummu FINAL1 ;
++V+Pass+PrfPrc:%>uum FINAL1 ;
++V+VAbess:%>eǩâni FINAL1 ;
++V+GerTemp:%>een FINAL1 ;
++V+GerInstr:%>eeˊl FINAL1 ;
++V+Imp+ConNeg:%^VOWL%>uku FINAL1 ;
++V:%^VOWL%>eˊ	VSUF-I-POTKOND ; !WG
++V+Pot+Sg3:%^VOWL%>eˊž	FINAL1 ; !WG
++V+Inf:%^VOWL%>ed FINAL1 ;
++V+ActEss:%^VOWL%>eˊmen FINAL1 ;
++V+Action:%^VOWL%>am FINAL1 ;
++V+PrsPrc:%^VOWL%>eei FINAL1 ;
++V+PrfPrc:%^VOWL%>am FINAL1 ;
++V+Pass+PrfPrc:%^VOWL%>ummu FINAL1 ;
++V+Pass+PrfPrc:%^VOWL%>uum FINAL1 ;
++V+VAbess:%^VOWL%>eǩâni FINAL1 ;
++V+GerTemp:%^VOWL%>een FINAL1 ;
++V+GerInstr:%^VOWL%>eeˊl FINAL1 ;
 
 ! kåˊmrded
 LEXICON KAMRDED
@@ -320,6 +360,16 @@ LEXICON TEEMEED-PRS
  +4:%>eet FINAL1 ; ! ääˊveet
  +ConNeg:%>ed FINAL1 ; ! ääˊved
 
+LEXICON MAINSTED-PRS
+ +Sg1:%>am              FINAL1  ; !WG __
+ +Sg2:%>ak              FINAL1  ; !WG ! __
+ +Sg3:%^INDPRSSG3 FINAL1        ; ! __
+ +Pl1:%>ep      FINAL1  ; ! __
+ +Pl2:%>eˊped           FINAL1  ; ! __
+ +Pl3:%>e               FINAL1  ; ! __
+ +4:%>et FINAL1 ; !
+ +ConNeg:%^IMPSG2 FINAL1 ; ! kååˊmmerd
+
 ! assuming stem _kåˊmQE1rded_
 LEXICON KAMRDED-PRS
  +Sg1:%>am		FINAL1	; !WG __ 
@@ -342,7 +392,7 @@ LEXICON LEED-PRS
  +Pl3:%>iâ		FINAL1	; ! __
  +Pl3:%>ee		FINAL1	; ! __
  +4:%>eät FINAL1 ; ! 
- +ConNeg:eäk FINAL1 ; ! 
+ +ConNeg:eäk'ku FINAL1 ; ! 
 
 ! Past tense
 ! - - - - - - - -
@@ -395,6 +445,20 @@ LEXICON TEEMEED-PRT
  +Pl3:%>ee		FINAL1	; ! _ääˊvee_
  +4:%>eeš FINAL1 ; ! ääˊveeš
 
+LEXICON MAINSTED-PRT
+ +Sg1:%>em             FINAL1  ; ! kåˊmrdem
+ +Sg2:%>iǩ             FINAL1  ; ! kåˊmrdiǩ
+ +Sg3:%>i              FINAL1  ; !WG ! kåˊmrdi
+ +Pl1:%>im             FINAL1  ; !WG ! kåˊmrdim
+ +Pl1:%>in             FINAL1  ; !WG ! kåˊmrdin
+ +Pl1:%>iim             FINAL1  ; !WG ! kåˊmrdiim
+ +Pl1:%>iin             FINAL1  ; !WG ! kåˊmrdiin
+ +Pl2:%>id             FINAL1  ; !WG ! kåˊmrdid
+ +Pl2:%>iid             FINAL1  ; !WG ! kåˊmrdiid
+ +Pl3:%>e              FINAL1  ; ! kåˊmrde
+ +4:%>eš FINAL1 ; ! kåˊmrdeš
+
+
 ! assuming stem _kåˊmQE1rd_
 LEXICON KAMRDED-PRT
  +Sg1:%>em             FINAL1  ; ! kåˊmrdem
@@ -402,7 +466,10 @@ LEXICON KAMRDED-PRT
  +Sg3:%>i              FINAL1  ; !WG ! kåˊmrdi
  +Pl1:%>im             FINAL1  ; !WG ! kåˊmrdim
  +Pl1:%>in             FINAL1  ; !WG ! kåˊmrdin
+ +Pl1:%>iim             FINAL1  ; !WG ! kåˊmrdiim
+ +Pl1:%>iin             FINAL1  ; !WG ! kåˊmrdiin
  +Pl2:%>id             FINAL1  ; !WG ! kåˊmrdid
+ +Pl2:%>id             FINAL1  ; !WG ! kåˊmrdiid
  +Pl3:%>e              FINAL1  ; ! kåˊmrde
  +4:%>eš FINAL1 ; ! kåˊmrdeš
 
@@ -416,7 +483,9 @@ LEXICON LEED-PRT
  +Pl2:%>eeid             FINAL1  ; !
  +Pl3:%>eˊjje              FINAL1  ; !
  +4:%>eˊjješ FINAL1 ; ! 
-
+ +ConNeg:eäm'maž FINAL1 ; !
+ +ConNeg:eäm'ma FINAL1 ; !
+ +ConNeg:eäm FINAL1 ; !
 
 
 ! Imperative
@@ -461,6 +530,13 @@ LEXICON TEEMEED-IMP
  +Pl2:%>eˊǩed		FINAL1	;
  +Pl3:%>âkaz		FINAL1	;
 
+LEXICON MAINSTED-IMP
+ +Sg3:%>ââǥǥas          FINAL1  ; !WG
+ +Pl1:%>âkap                    FINAL1  ;
+ +Pl2:%>eˊǩed           FINAL1  ;
+ +Pl3:%>âkaz            FINAL1  ;
+
+
 LEXICON KAMRDED-IMP
  +Sg3:%>ââǥǥas          FINAL1  ; !WG
  +Pl1:%>âkap                    FINAL1  ;
@@ -485,27 +561,27 @@ LEXICON VSUF-I-POTKOND
  CONDITIONAL ;
 
 LEXICON POTENTIAL
- +Pot+Sg1:%>žem FINAL1	;
- +Pot+Sg2:%>žiǩ FINAL1	;
- +Pot+Pl1:%>žep FINAL1	; ! How are these related?
- +Pot+Pl1:%>žim FINAL1	; ! Are there sub standards?
- +Pot+Pl1:%>žin FINAL1	; !
- +Pot+Pl2:%>žid FINAL1	;
- +Pot+Pl3:%>že FINAL1	;
- +Pot+4:%>žet FINAL1 ;
- +Pot+ConNeg:%>že FINAL1 ;
+ +Pot+Sg1:žem FINAL1	;
+ +Pot+Sg2:žiǩ FINAL1	;
+ +Pot+Pl1:žep FINAL1	; ! How are these related?
+ +Pot+Pl1:žim FINAL1	; ! Are there sub standards?
+ +Pot+Pl1:žin FINAL1	; !
+ +Pot+Pl2:žid FINAL1	;
+ +Pot+Pl3:že FINAL1	;
+ +Pot+4:žet FINAL1 ;
+ +Pot+ConNeg:že FINAL1 ;
 
 LEXICON CONDITIONAL
- +Cond+Sg1:%>čem FINAL1	;
- +Cond+Sg2:%>čiǩ FINAL1	;
- +Cond+Sg3:%>či FINAL1	;
- +Cond+Pl1:%>čep FINAL1	; ! How are these related?
- +Cond+Pl1:%>čim FINAL1	; ! Are there substandards?
- +Cond+Pl1:%>čin FINAL1	; !
- +Cond+Pl2:%>čid FINAL1	;
- +Cond+Pl3:%>če FINAL1	;
- +Cond+4:%>češ FINAL1 ;
- +Cond+ConNeg:%>če FINAL1 ;
+ +Cond+Sg1:čem FINAL1	;
+ +Cond+Sg2:čiǩ FINAL1	;
+ +Cond+Sg3:či FINAL1	;
+ +Cond+Pl1:čep FINAL1	; ! How are these related?
+ +Cond+Pl1:čim FINAL1	; ! Are there substandards?
+ +Cond+Pl1:čin FINAL1	; !
+ +Cond+Pl2:čid FINAL1	;
+ +Cond+Pl3:če FINAL1	;
+ +Cond+4:češ FINAL1 ;
+ +Cond+ConNeg:če FINAL1 ;
 
 
 ! Suffix series II
