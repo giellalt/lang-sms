@@ -43,6 +43,8 @@ Alphabet
 %^VOWFront:0
 %^PAL:0 %^PALNo:0
   X3:0 ! causes weak grade
+ QÂ1:0 ! used with "mainsted" 'to tell (a story)'
+ QA1:0 ! used with "vuejted" 'to drive (causative)'
  QE1:0 ! used with "kåˊmrded" 'to bow'
  %^IMPSG2:0
  %^INDPRSSG3:0
@@ -194,6 +196,7 @@ Rules
 ! used for deriving +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Imp+Sg2
 "Even syllabic verbs I, relative vowel lengthening"
  0:Vx <=> C: Vx: _ [( u: | i: ) (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ] %^VOWL: %^CShort: ;
+      C: Vx: _ ( u: | i: ) (%ˊ: | 0:%ˊ)  C: [ QÂ1: ] C:+   %^VOWL:  ;
              where Vx in (â e å õ o a ä) ; 
 ! 2012-06-05 removing "i" and "u" because viikkâd renders viiiǥǥam
 
@@ -225,10 +228,10 @@ Rules
                    Vy in (e â å ä o)
              matched ;
 
-! kååˊmmerd 
+! kååˊmmerd, maainâst
 "Vowel lengthening in INDPRSSG3 and IMPSG2"
- 0:Vx <=> Vx _ ( %ˊ ) :C+ [ QE1: ] C:+ [ %^IMPSG2: | %^INDPRSSG3: ] ;
-        where Vx in (å) ;
+ 0:Vx <=> Vx _ (i) ( %ˊ ) :C+ [ QE1: | QA1: | QÂ1: ] C:+ [ %^IMPSG2: | %^INDPRSSG3: ] ;
+        where Vx in (a å ä) ;
 
 !! VOWEL DUMMY LOSS
 
@@ -250,17 +253,17 @@ Rules
 
 !! VOWEL and ZERO ALTERNATION
 
-! _kåˊmrded_ 
+! _kåˊmrded_ _vuejat_  _maainâst_
 "Realization for QE1 in e " !
- Vx:Vy <=> _ C:+ %^IMPSG2: ;
-         where Vx in (QE1)
-               Vy in (e)
+ Vx:Vy <=> _ ( %ˊ ) C:+ %^IMPSG2: ;
+         where Vx in (QE1 QA1 QÂ1)
+               Vy in (e a â)
          matched ;
 
 "Realization for QE1 in a"!
- Vx:Vy <=> _ C:+ %^INDPRSSG3: ;
-         where Vx in (QE1)
-               Vy in (a)
+ Vx:Vy <=> _ ( %ˊ ) C:+ %^INDPRSSG3: ;
+         where Vx in (QE1 QA1 QÂ1)
+               Vy in (a a a)
          matched ;
          
 
