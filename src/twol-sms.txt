@@ -29,6 +29,7 @@ Alphabet
   õ â
   Õ Â
  %':0 ! long consonant marker that does not appear in writing 
+ ’ ! Syllable marker that appears in writing _võˊll’jed_
   %ˊ ! :0 
 !  %,:%ˊ
   %^1VOW:0 %^2VOW:0 %^3VOW:0 %^4VOW:0 %^5VOW:0
@@ -251,6 +252,11 @@ Rules
 "Even syllabic verbs,  for v>u"
  v:u <=> [ C: | #: ] u: ( 0:u | 0:o ) (0:%ˊ) _ (%ˊ: | 0:%ˊ) d d: [ %^VOWL: %^CShort: | %^VOWXL: | %^VOWLower: | %^VOWSH: %^CLong:  %^VOWLower: (%^VOWFront: ) %^PAL: ];
 
+! i > j
+"trisyllabic verbs and doer derivations, i>j"
+ i:j <=> _ %> V ;
+
+
 !! VOWEL and ZERO ALTERNATION
 
 ! _kåˊmrded_ _vuejat_  _maainâst_
@@ -261,11 +267,17 @@ Rules
          matched ;
 
 "Realization for QE1 in a"!
- Vx:Vy <=> _ ( %ˊ ) C:+ %^INDPRSSG3: ;
+ Vx:Vy <=> _ ( %ˊ | ’: ) [ i | C:+ ] %^INDPRSSG3: ;
          where Vx in (QE1 QA1 QÂ1)
                Vy in (a a a)
          matched ;
          
+!! THE NON-ORTHOGRAPHIC SYLLABLE 
+
+! This is a temporary solution to  "’" in võˊll’jed
+"Loss of _’_ when preceded by vowel"
+ ’:0 <=> :V _  ; 
+
 
 !! PALATALIZATION
 
