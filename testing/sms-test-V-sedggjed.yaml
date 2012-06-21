@@ -1,0 +1,70 @@
+Config:
+  hfst:
+    Gen: sms/bin/sms-gen.hfstol
+    Morph: sms/bin/sms.hfstol
+  xerox:
+    Gen: sms/bin/isms.fst
+    Morph: sms/bin/sms.fst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Verb - sedggjed: # Verb 'to loom' - full paradigm
+     sedggjed+V+Ind+Prs+Sg1: sedggjam
+     sedggjed+V+Ind+Prs+Sg2: sedggjak
+     sedggjed+V+Ind+Prs+Sg3: sedggai
+     sedggjed+V+Ind+Prs+Pl1: sedggjep
+     sedggjed+V+Ind+Prs+Pl2: sedggjeˊped
+     sedggjed+V+Ind+Prs+Pl3: sedggje 
+     sedggjed+V+Ind+Prs+4: sedggjet 
+
+     sedggjed+V+Ind+Prt+Sg1: sedggjem
+     sedggjed+V+Ind+Prt+Sg2: sedggjiǩ
+     sedggjed+V+Ind+Prt+Sg3: sedggji
+     sedggjed+V+Ind+Prt+Pl1: [sedggjim,sedggjin,sedggjiim,sedggjiin]
+     sedggjed+V+Ind+Prt+Pl2: [sedggjid, sedggjiid]
+     sedggjed+V+Ind+Prt+Pl3: sedggje
+     sedggjed+V+Ind+Prt+4: sedggješ
+
+     sedggjed+V+Pot+Sg1: sedggjeˊžem
+     sedggjed+V+Pot+Sg2: sedggjeˊžiǩ
+     sedggjed+V+Pot+Sg3: sedggjež
+     sedggjed+V+Pot+Pl1: [sedggjeˊžep, sedggjeˊžim]
+     sedggjed+V+Pot+Pl2: sedggjeˊžid 
+     sedggjed+V+Pot+Pl3: sedggjeˊže
+     sedggjed+V+Pot+4: sedggjeˊžet
+     sedggjed+V+Pot+ConNeg: sedggjeˊže
+
+     sedggjed+V+Cond+Sg1: sedggjeˊčem
+     sedggjed+V+Cond+Sg2: sedggjeˊčiǩ
+     sedggjed+V+Cond+Sg3: sedggjeˊči
+     sedggjed+V+Cond+Pl1: [sedggjeˊčim, sedggjeˊčep]
+     sedggjed+V+Cond+Pl2: sedggjeˊčid
+     sedggjed+V+Cond+Pl3: sedggjeˊče
+     sedggjed+V+Cond+4: sedggjeˊčeš
+     sedggjed+V+Cond+ConNeg: sedggjeˊče
+
+     sedggjed+V+Imp+Sg2: sidggu
+     sedggjed+V+Imp+Sg3: sedggjââǥǥas
+     sedggjed+V+Imp+Pl1: sedggjâkap
+     sedggjed+V+Imp+Pl2: sedggjeˊǩed
+     sedggjed+V+Imp+Pl3: sedggjâkaz
+     sedggjed+V+Imp+ConNeg+Sg2: sidggu
+
+     sedggjed+V+Imp+ConNeg: sedggjuku
+
+     sedggjed+V+Inf: sedggjed    
+     sedggjed+V+ActEss: sedggjeˊmen
+     sedggjed+V+Action: sedggjam
+     sedggjed+V+PrsPrc: sedggjeei
+     sedggjed+V+PrfPrc: sedggjam
+     sedggjed+V+Pass+PrfPrc: [sedggjummu,sedggjum]
+     sedggjed+V+VAbess: [sedggjeǩâni, sedggjeǩeânai]
+     sedggjed+V+GerTemp: sedggjeen
+     sedggjed+V+GerInstr: sedggjeeˊl
+
