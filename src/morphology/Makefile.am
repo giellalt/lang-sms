@@ -20,25 +20,24 @@ GT_LEXC_ROOT=root.lexc
 
 # Set this to the names of all other source lexc files
 GT_LEXC_SRCS=\
-			 stems/abbr.lexc \
-			 stems/acro.lexc \
-			 stems/adj.lexc \
-			 stems/adv.lexc \
-			 stems/cc.lexc \
-			 stems/cs.lexc \
-			 stems/det.lexc \
-			 stems/interj.lexc \
-			 stems/noun.lexc \
-			 stems/numeral.lexc \
-			 stems/pp.lexc \
-			 stems/pron.lexc \
-			 stems/propernoun.lexc \
-			 stems/punct.lexc \
-			 stems/verb.lexc \
-			 affixes/adjectives.lexc \
-			 affixes/nouns.lexc \
-			 affixes/propernouns.lexc \
-			 affixes/verbs.lexc
+				root.lexc \
+				stems/adjectives.lexc \
+				stems/adpositions.lexc \
+				stems/adverbs.lexc \
+				stems/conjunctions.lexc \
+				stems/interjections.lexc \
+				stems/nouns.lexc \
+				stems/numerals.lexc \
+				stems/particles.lexc \
+				stems/pronouns.lexc \
+				stems/punctuation.lexc \
+				stems/sms-propernouns.lexc \
+				stems/subjunctions.lexc \
+				stems/verbs.lexc \
+				affixes/nouns.lexc \
+				affixes/propernouns.lexc \
+				affixes/verbs.lexc \
+				clitics.lexc
 
 # Set this to the names of all generated lexc files, if any
 GENERATED_LEXC_SRCS=
