@@ -1,0 +1,66 @@
+Config:
+  hfst:
+    Gen: sms/bin/sms-gen.hfstol
+    Morph: sms/bin/sms.hfstol
+  xerox:
+    Gen: sms/bin/isms.fst
+    Morph: sms/bin/sms.fst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Verb - kåˊmrded: # Verb 'to bow / kumartaa' - full paradigm
+     kåˊmrded+V+Ind+Prs+Sg1: kåˊmrdam
+     kåˊmrded+V+Ind+Prs+Sg2: kåˊmrdak
+     kåˊmrded+V+Ind+Prs+Sg3: kååˊmmard
+     kåˊmrded+V+Ind+Prs+Pl1: kåˊmrdep
+     kåˊmrded+V+Ind+Prs+Pl2: kåˊmrdeˊped
+     kåˊmrded+V+Ind+Prs+Pl3: kåˊmrde 
+     kåˊmrded+V+Ind+Prs+4: kåˊmrdet
+
+     kåˊmrded+V+Ind+Prt+Sg1: kåˊmrdem
+     kåˊmrded+V+Ind+Prt+Sg2: kåˊmrdiǩ
+     kåˊmrded+V+Ind+Prt+Sg3: kåˊmrdi
+     kåˊmrded+V+Ind+Prt+Pl1: [kåˊmrdim, kåˊmrdin]
+     kåˊmrded+V+Ind+Prt+Pl2: kåˊmrdid
+     kåˊmrded+V+Ind+Prt+Pl3: kåˊmrde
+     kåˊmrded+V+Ind+Prt+4: kåˊmrdeš
+
+     kåˊmrded+V+Pot+Sg1: kåˊmrdeˊžem
+     kåˊmrded+V+Pot+Sg2: kåˊmrdeˊžiǩ
+     kåˊmrded+V+Pot+Sg3: kåˊmrdež
+     kåˊmrded+V+Pot+Pl1: [kåˊmrdeˊžep, kåˊmrdeˊžim]
+     kåˊmrded+V+Pot+Pl2: kåˊmrdeˊžid 
+     kåˊmrded+V+Pot+Pl3: kåˊmrdeˊže
+     kåˊmrded+V+Pot+4: kåˊmrdeˊžet
+     kåˊmrded+V+Pot+ConNeg: kåˊmrdeˊže
+
+     kåˊmrded+V+Cond+Sg1: kåˊmrdeˊčem
+     kåˊmrded+V+Cond+Sg2: kåˊmrdeˊčiǩ
+     kåˊmrded+V+Cond+Sg3: kåˊmrdeˊči
+     kåˊmrded+V+Cond+Pl1: [kåˊmrdeˊčim, kåˊmrdeˊčep]
+     kåˊmrded+V+Cond+Pl2: kåˊmrdeˊčid
+     kåˊmrded+V+Cond+Pl3: kåˊmrdeˊče
+     kåˊmrded+V+Cond+4: kåˊmrdeˊčeš
+     kåˊmrded+V+Cond+ConNeg: kåˊmrdeˊče
+
+     kåˊmrded+V+Imp+Sg2: kååˊmmerd 
+     kåˊmrded+V+Imp+Sg3: kåˊmrdââǥǥas
+     kåˊmrded+V+Imp+Pl1: kåˊmrdâkap
+     kåˊmrded+V+Imp+Pl2: kåˊmrdeˊǩed
+     kåˊmrded+V+Imp+Pl3: kåˊmrdâkaz
+     kåˊmrded+V+Imp+ConNeg: kåˊmrduku
+     kåˊmrded+V+ActEss: kåˊmrdeˊmen
+     kåˊmrded+V+Action: kåˊmrdam
+     kåˊmrded+V+PrsPrc: kåˊmrdeei
+     kåˊmrded+V+PrfPrc: [kåˊmrdam, kåˊmrdâmma]
+     kåˊmrded+V+Pass+PrfPrc: [kåˊmrdummu, kåˊmrdum]
+     kåˊmrded+V+VAbess: [kåˊmrdeǩâni, kåˊmrdeǩeânai]
+     kåˊmrded+V+GerTemp: kåˊmrdeen
+     kåˊmrded+V+GerInstr: kåˊmrdeeˊl
+

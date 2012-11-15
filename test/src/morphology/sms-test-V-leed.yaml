@@ -1,0 +1,69 @@
+Config:
+  hfst:
+    Gen: sms/bin/sms-gen.hfstol
+    Morph: sms/bin/sms.hfstol
+  xerox:
+    Gen: sms/bin/isms.fst
+    Morph: sms/bin/sms.fst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Verb - leeˊd: # Verb 'to be' - full paradigm
+     leeˊd+V+Ind+Prs+Sg1: leäm
+     leeˊd+V+Ind+Prs+Sg2: leäk
+     leeˊd+V+Ind+Prs+Sg3: lij
+     leeˊd+V+Ind+Prs+Pl1: leäˊp
+     leeˊd+V+Ind+Prs+Pl2: [leäˊped, leˊped]
+     leeˊd+V+Ind+Prs+Pl3: [lie, liâ, lee] 
+     leeˊd+V+Ind+Prs+4: leät
+
+     leeˊd+V+Ind+Prt+Sg1: leˊjjem
+     leeˊd+V+Ind+Prt+Sg2: leˊjjiǩ
+     leeˊd+V+Ind+Prt+Sg3: [leäi, leei, läi]
+     leeˊd+V+Ind+Prt+Pl1: leeim
+     leeˊd+V+Ind+Prt+Pl2: leeid
+     leeˊd+V+Ind+Prt+Pl3: leˊjje
+     leeˊd+V+Ind+Prt+4: leˊjješ
+
+     leeˊd+V+Pot+Sg1: leˊžžem
+     leeˊd+V+Pot+Sg2: leˊžžiǩ
+     leeˊd+V+Pot+Sg3: [leežž, leež]
+     leeˊd+V+Pot+Pl1: [leˊžžep, leˊžžim]
+     leeˊd+V+Pot+Pl2: leˊžžveˊted
+     leeˊd+V+Pot+Pl3: leˊžže
+     leeˊd+V+Pot+4: leˊžžet
+     leeˊd+V+Pot+ConNeg: leˊžže
+
+     leeˊd+V+Cond+Sg1: leˊččem
+     leeˊd+V+Cond+Sg2: leˊččiǩ
+     leeˊd+V+Cond+Sg3: leˊčči
+     leeˊd+V+Cond+Pl1: [leˊččim, leˊččep]
+     leeˊd+V+Cond+Pl2: leˊččid
+     leeˊd+V+Cond+Pl3: leˊčče
+     leeˊd+V+Cond+4: leˊččeš
+     leeˊd+V+Cond+ConNeg: leˊčče
+
+     leeˊd+V+Imp+Sg2: leäkku
+     leeˊd+V+Imp+Sg3: leäǥǥas
+     leeˊd+V+Imp+Pl1: leäkkap
+     leeˊd+V+Imp+Pl2: [leäkku, leäkkveˊted]
+     leeˊd+V+Imp+Pl3: leäkkaz
+     leeˊd+V+Imp+ConNeg: leäkku
+     leeˊd+V+PrsPrc: leˊddi
+     leeˊd+V+PrfPrc: [leämmaž, leämma, leäm]
+
+#     leeˊd+V+Imp+ConNeg: i′lleäkku
+#     leeˊd+V+ActEss: åårmen
+#     leeˊd+V+Action: åårram
+#     leeˊd+V+PrfPrc: [i′lleäm, i′llääm, jeä′lääm]
+#     leeˊd+V+Pass+PrfPrc:
+#     leeˊd+V+VAbess: åårǩâni
+#     leeˊd+V+GerTemp:
+#     leeˊd+V+GerInstr: 
+

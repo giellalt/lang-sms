@@ -1,0 +1,66 @@
+Config:
+  hfst:
+    Gen: sms/bin/sms-gen.hfstol
+    Morph: sms/bin/sms.hfstol
+  xerox:
+    Gen: sms/bin/isms.fst
+    Morph: sms/bin/sms.fst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Verb - äˊnsted: # Verb 'to steal' - full paradigm
+     äˊnsted+V+Ind+Prs+Sg1: äˊnstam
+     äˊnsted+V+Ind+Prs+Sg2: äˊnstak
+     äˊnsted+V+Ind+Prs+Sg3: ääˊnast
+     äˊnsted+V+Ind+Prs+Pl1: äˊnstep
+     äˊnsted+V+Ind+Prs+Pl2: äˊnsteˊped
+     äˊnsted+V+Ind+Prs+Pl3: äˊnste 
+     äˊnsted+V+Ind+Prs+4: äˊnstet
+
+     äˊnsted+V+Ind+Prt+Sg1: äˊnstem
+     äˊnsted+V+Ind+Prt+Sg2: äˊnstiǩ
+     äˊnsted+V+Ind+Prt+Sg3: äˊnsti
+     äˊnsted+V+Ind+Prt+Pl1: [äˊnstim, äˊnstin]
+     äˊnsted+V+Ind+Prt+Pl2: äˊnstid
+     äˊnsted+V+Ind+Prt+Pl3: äˊnste
+     äˊnsted+V+Ind+Prt+4: äˊnsteš
+
+     äˊnsted+V+Pot+Sg1: äˊnsteˊžem
+     äˊnsted+V+Pot+Sg2: äˊnsteˊžiǩ
+     äˊnsted+V+Pot+Sg3: äˊnstež
+     äˊnsted+V+Pot+Pl1: [äˊnsteˊžep, äˊnsteˊžim]
+     äˊnsted+V+Pot+Pl2: äˊnsteˊžid 
+     äˊnsted+V+Pot+Pl3: äˊnsteˊže
+     äˊnsted+V+Pot+4: äˊnsteˊžet
+     äˊnsted+V+Pot+ConNeg: äˊnsteˊže
+
+     äˊnsted+V+Cond+Sg1: äˊnsteˊčem
+     äˊnsted+V+Cond+Sg2: äˊnsteˊčiǩ
+     äˊnsted+V+Cond+Sg3: äˊnsteˊči
+     äˊnsted+V+Cond+Pl1: [äˊnsteˊčim, äˊnsteˊčep]
+     äˊnsted+V+Cond+Pl2: äˊnsteˊčid
+     äˊnsted+V+Cond+Pl3: äˊnsteˊče
+     äˊnsted+V+Cond+4: äˊnsteˊčeš
+     äˊnsted+V+Cond+ConNeg: äˊnsteˊče
+
+     äˊnsted+V+Imp+Sg2: ääˊnest
+     äˊnsted+V+Imp+Sg3: äˊnstââǥǥas
+     äˊnsted+V+Imp+Pl1: äˊnstâkap
+     äˊnsted+V+Imp+Pl2: äˊnsteˊǩed
+     äˊnsted+V+Imp+Pl3: äˊnstâkaz
+     äˊnsted+V+Imp+ConNeg: äˊnstuku
+     äˊnsted+V+ActEss: äˊnsteˊmen
+     äˊnsted+V+Action: äˊnstam
+     äˊnsted+V+PrsPrc: äˊnsteei
+     äˊnsted+V+PrfPrc: äˊnstam
+     äˊnsted+V+Pass+PrfPrc: [äˊnstummu, äˊnstuum]
+     äˊnsted+V+VAbess: äˊnsteǩâni
+     äˊnsted+V+GerTemp: äˊnsteen
+     äˊnsted+V+GerInstr: äˊnsteeˊl
+
