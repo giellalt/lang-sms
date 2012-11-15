@@ -1,0 +1,492 @@
+! Divvun & Giellatekno - open source grammars for Sámi and other languages
+! Copyright © 2000-2010 The University of Tromsø & the Norwegian Sámi Parliament
+! http://giellatekno.uit.no & http://divvun.no
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version. The GNU General Public License
+! is found at http://www.gnu.org/licenses/gpl.html. It is
+! also available in the file $GTHOME/LICENSE.txt.
+!
+! Other licensing options are available upon request, please contact
+! giellatekno@hum.uit.no or divvun@samediggi.no
+
+! Skolt Sámi TWOLC file
+!
+! $Id$
+!
+!
+
+Alphabet
+  a b c d e f g h i ï j k l m n o p q r s t u v w x y z æ ä ø ö å
+  á é í
+  Å Ä Ö Ø Æ Á
+  Á É Ó Ú Í À È Ò Ù Ì Ë Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð
+  á é ó ú í à è ò ù ì ë ü ï â ê ô û î ã ý þ ñ ð ß ª ß ç
+  č ǩ ǯ ǧ ž đ ǥ ʒ š ŋ
+  Č Ǩ Ǯ Ǧ Ž Đ Ǥ Ʒ Š Ŋ
+  õ â
+  Õ Â
+ %':0 ! long consonant marker that does not appear in writing 
+ ’ ! Syllable marker that appears in writing _võˊll’jed_
+  %ˊ ! :0 
+!  %,:%ˊ
+  %^1VOW:0 %^2VOW:0 %^3VOW:0 %^4VOW:0 %^5VOW:0
+
+%^VOWLower:0 ! i>e, õ>â, â>ä, u>o, o>å
+%^VOWRaise:0 ! e>i, ä>e 
+ %^VOWSH:0
+ %^VOWL:0 ! Lengthens vowel in relation to consonant
+ %^VOWXL:0 ! Extra lengthens vowel in relation to consonant
+! in nouns, for example
+ %^CXLong:0 %^CLong:0 %^CShort:0
+%^VOWFront:0
+%^PAL:0 %^PALNo:0
+  X3:0 ! causes weak grade
+ QÂ1:0 ! used with "mainsted" 'to tell (a story)'
+ QA1:0 ! used with "vuejted" 'to drive (causative)'
+ QE1:0 ! used with "kåˊmrded" 'to bow'
+ %^IMPSG2:0
+ %^INDPRSSG3:0
+
+
+
+! Literal quotes and angles must be escaped (cf morpheme boundaries below):
+ »7     ! »
+ «7     ! «
+ %[%>%] ! >
+ %[%<%] ! <
+
+! Morpheme boundaries:
+ «  ! Derivational prefix
+ »  ! Derivational suffix
+ %< ! Inflectional prefx
+ %>:0 ! Inflectional suffix
+ #  ! Word boundary for both lexicalised and dynamic compounds
+ %^ ! (exceptional) soft hyphenation point
+
+! End of alphabet definitions
+  ;
+
+Sets
+! Letter =
+ C	= b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ;
+ V	= a e i o u å ä â õ ;
+
+ CNoJV        = b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ;
+
+Definitions
+
+LongC = [ k: k: | s: s: | š: š: | c: c: | č: č: | m m: | v v: | đ đ: | n n: | l l: | r r: ] ;
+!;
+
+Rules
+
+!"ˊ:0 rule"
+! %ˊ:0 <=> V: _ C:+ (X3:) [ %^VOWSH: | %^1VOW: | %^2VOW: ] ;
+
+!! "Even syllabic verbs I, ˊ:0 blocking"
+!! %ˊ:0 /<= V: _ C:+ (X3:) [ %^3VOW: | %^4VOW: | %^5VOW: ] ;
+
+! used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+"Even syllabic verbs I, vowel shortening"
+ Vx:0 <=> Vx: _ (%ˊ: | 0:%ˊ) LongC %^VOWSH: %^CLong: (%^VOWLower: |%^VOWRaise: ) (%^VOWFront: ) (X3:) (%^PAL: |%^PALNo: ) [ %>:0 | #:0 ]  ;
+!! 2012-06-01 Vx: _ (%ˊ) C:+ (X3:) [ %^VOWSH: | %^2VOW: | %^3VOW: | %^4VOW: ] ;
+ 		where Vx in (â e å õ u i o a ä) ;
+!! 		      Vy in (â e å õ u i o a)
+!! 		matched ;
+
+!! VOWEL SHIFT,
+
+!! RAISING
+! used for deriving +Ind+Prt+Sg1, +Ind+Prt+Sg2 +Ind+Prt+Pl3 in teevvad
+"Even syllabic verbs I, vowel raising"
+ Vx:Vy <=> _ Vx:  (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: %>:0 [ e | u ]  ; ! Adding +Prt+Pl3 for ed verbs
+           _ Vx:0 (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: (%^PAL: ) %>:0 [ e | u ] ;
+           _ 0:Vy (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ]  (%^VOWL: %^CShort: ) %^VOWRaise: %^PAL: %>:0 [ e | u ] ;
+          [ C | #: ] _ ( u: ) (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ]  (%^VOWSH: %^CLong: | %^VOWL: ) %^VOWRaise: (%^PAL: ) %>:0 [ e | u ]  ;
+! Removing ( u: | i: ) second element due to njeiddad njeiddu
+              where Vx in (â o e å ä)
+                    Vy in (õ u i o a)
+              matched ;
+
+
+! used for deriving +Ind+Prt+Pl3 in kuâs'sad > kuõs'su
+! kuärŋŋad kuårŋŋu
+"Even syllabic verbs I, diphthong raising beginning with u"
+ Vx:Vy <=> u  _ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWSH: %^CLong: ) %^VOWRaise: %>:0 u ;
+          where Vx in (â ä)
+                Vy in (õ å)
+          matched ;
+
+! used for deriving +Ind+Prt+Pl3 in reäkkad > riâkku
+! veârrad > viõrru
+"Even syllabic verbs I, diphthong raising beginning with e:i"
+ Vx:Vy <=> e:  _ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: %>:0 u ;
+          where Vx in (â ä)
+                Vy in (õ â)
+          matched ;
+
+! used for deriving +Ind+Prt+Pl3 in reäkkad > riâkku
+! veârrad > viõrru
+"Even syllabic verbs I, diphthong raising with e:i at onset"
+ e:i <=>  _ [ â:õ | ä:â ] (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: %>:0 u ;
+
+
+
+!! LOWERING 
+! Where: VIGGAD +Ind+Prs+Sg3, +Ind+Prs+Pl3
+!        TIETTED 
+! long and single vowels
+
+! used for deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
+"Even syllabic verbs I, vowel lowering"
+ Vx:Vy <=> _ Vx: (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWSH: %^CLong: | %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
+           Vx: _ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
+           [#: | C: ] _ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWSH: %^CLong: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
+           [#: | C: ] _ 0:Vy (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
+! juˊrdded > joordam
+          [ #: | C ] _ ( u: | i: ) (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWL: %^CShort: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
+          [ #: | C ] _ ((%ˊ: | 0:%ˊ) ( v:u | j:i )) (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWSH: %^CLong: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
+              where Vx in (õ u i o a)
+                    Vy in (â o e å ä)
+              matched ;
+! diphthongs
+
+! used for deriving +Ind+Prs+Sg3, in kuõskkâd kueˊsǩǩe
+"Even syllabic verbs I, diphthong opening after u"
+ Vx:Vy <=> u _ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
+             where Vx in (õ å)
+                   Vy in (â ä)
+             matched ;
+
+! used for deriving +Ind+Prs+Sg3, in čiõkkâd
+"Even syllabic verbs I, diphthong opening after i:e"
+ Vx:Vy <=> i: _ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
+             where Vx in (õ â õ e)
+                   Vy in (â ä ä ä)
+             matched ;
+
+! used in conjunction with diphthong opening
+"Even syllabic verbs I, diphthong opening i:e before õ:, å:"
+ i:e <=> _ [õ:â | õ:ä | â:ä | e:ä ] (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
+
+
+
+!! SECONDARY FRONTING
+
+! used for deriving +Ind+Prs+Pl3 in VIQQAD: kuõskkâd >kueˊsǩǩe
+! 
+"Even syllabic verbs I, secondary vowel fronting with PAL u õ:e"
+ õ:e <=> u _ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ]  (%^VOWSH: %^CLong: | %^VOWL: %^CShort: ) (%^VOWLower: ) %^VOWFront: (X3:) %^PAL: [ %>:0 | #:0 ] ; ! deriving +V+Inf in vueˊlǧǧed
+! used for deriving +V+Inf in TIETTED: _tiõtt_ > tieˊtted
+         i _ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] %^VOWFront: %^PAL: %>:0 ;
+ 
+
+! used for deriving +Ind+Prs+Pl3 in VIQQAD: čiõkkâd >čeäˊǩ'ǩe
+"Even syllabic verbs I, secondary vowel fronting with PAL"
+ õ:ä <=> i:e _ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ]  %^VOWSH: %^CLong: %^VOWLower: %^VOWFront: (X3:) %^PAL: [ %>:0 | #:0 ] ;
+
+!! ! used for deriving +V+Inf in TIETTED: _uudd_ >uˊvdded
+!! "Even syllabic verbs I, secondary u > v PAL"
+!! u:v <=> u _ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] %^VOWFront: %^PAL: %>:0 ;
+
+!! RELATIVE VOWEL LENGTHENING
+! vowel lengthening and consonant shortening, %^VOWL and %^CShort 
+! used for deriving +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Imp+Sg2
+"Even syllabic verbs I, relative vowel lengthening"
+ 0:Vx <=> C: Vx: _ [( u: | i: ) (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ] %^VOWL: %^CShort: ;
+      C: Vx: _ ( u: | i: ) (%ˊ: | 0:%ˊ)  C: [ QÂ1: ] C:+   %^VOWL:  ;
+             where Vx in (â e å õ o a ä) ; 
+! 2012-06-05 removing "i" and "u" because viikkâd renders viiiǥǥam
+
+! used for declension of nouns võrr > võõr
+"Even syllabic nouns, relative vowel extra lengthening"
+ 0:Vx <=> [ C: | #: ] Vx: _ [ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ] %^VOWXL: ;
+             where Vx in (â e å õ o a ä) ;
+
+! used for declension of nouns kunn > kuun
+"Even syllabic nouns, relative vowel extra lengthening u not followed by v"
+ 0:u <=> [ C: | #: ] u: _ (%ˊ: | 0:%ˊ) [[ s: s: | n n: ] %^VOWXL: | CNoJV C:+ %^VOWL: %^CShort: ] ;
+         
+
+
+! used for conjugation of ceˊpcced > ciiˊpcež
+! simultaneous lengthening and raising !!!hmm: xfst ordering might be easier
+"Even syllabic verbs I, relative vowel lengthening and raising"
+ 0:Vy <=> [ C: | #: ] Vx:Vy _ (%ˊ: | 0:%ˊ) C:+ %^VOWL: %^CShort: %^VOWRaise: %^PAL: %>: e ;
+             where Vx in (e â å ä o)
+                   Vy in (i õ o a u)
+             matched ;
+
+
+! juˊrdded > joordam juˊrdded+V+Ind+Prs+Sg1
+! simultaneous lengthening and lowering
+"Even syllabic verbs I, relative vowel lengthening and lowering"
+ 0:Vy <=> [ C: | #: ] Vx:Vy _ (%ˊ: | 0:%ˊ) C:+ %^VOWL: %^CShort: %^VOWLower:  ;
+             where Vx in (i õ o a u)
+                   Vy in (e â å ä o)
+             matched ;
+
+! kååˊmmerd, maainâst
+"Vowel lengthening in INDPRSSG3 and IMPSG2"
+ 0:Vx <=> Vx _ (i) ( %ˊ ) :C+ [ QE1: | QA1: | QÂ1: ] C:+ [ %^IMPSG2: | %^INDPRSSG3: ] ;
+        where Vx in (a å ä) ;
+
+!! VOWEL DUMMY LOSS
+
+! QE1
+"Vowel dummy loss when not INDPRSSG3 and IMPSG2"
+ Vx:0 <=> _ C:+ %>: ;
+       where Vx in (QE1) ;
+
+
+!! SEMI VOWELS
+
+! _sijdd > siid_ This will need a special extra-lengthening rule
+"Even syllabic nouns, for j>i"
+ j:i <=> [ C: | #: ] i: (0:%ˊ) _ (%ˊ: | 0:%ˊ) d d: [ %^VOWL: %^CShort: | %^VOWXL: | %^VOWLower: | %^VOWSH: %^CLong:  %^VOWLower: %^PAL: ];
+
+! _uvdd > ouˊdde_ 
+"Even syllabic verbs,  for v>u"
+ v:u <=> [ C: | #: ] u: ( 0:u | 0:o ) (0:%ˊ) _ (%ˊ: | 0:%ˊ) d d: [ %^VOWL: %^CShort: | %^VOWXL: | %^VOWLower: | %^VOWSH: %^CLong:  %^VOWLower: (%^VOWFront: ) %^PAL: ];
+
+! i > j
+"trisyllabic verbs and doer derivations, i>j"
+ i:j <=> _ %> V ;
+
+
+!! VOWEL and ZERO ALTERNATION
+
+! _kåˊmrded_ _vuejat_  _maainâst_
+"Realization for QE1 in e " !
+ Vx:Vy <=> _ ( %ˊ ) C:+ %^IMPSG2: ;
+         where Vx in (QE1 QA1 QÂ1)
+               Vy in (e a â)
+         matched ;
+
+"Realization for QE1 in a"!
+ Vx:Vy <=> _ ( %ˊ | ’: ) [ i | C:+ ] %^INDPRSSG3: ;
+         where Vx in (QE1 QA1 QÂ1)
+               Vy in (a a a)
+         matched ;
+         
+!! THE NON-ORTHOGRAPHIC SYLLABLE 
+
+! This is a temporary solution to  "’" in võˊll’jed
+"Loss of _’_ when preceded by vowel"
+ ’:0 <=> :V _  ; 
+
+
+!! PALATALIZATION
+
+! used +Ind+Prs+Pl3, +Ind+Prt+Pl3
+! The left context allows for:
+! Vowel shortening, and j/v > V 
+"Even-syllabic verbs I, Palatalization mark between V and C"
+ 0:%ˊ <=> [ V:0 | :V ] _ [ C:+ | C:+ %': C:+ ] ( %^VOWSH: %^CLong: |%^VOWL: %^CShort: ) ( %^VOWLower: | %^VOWRaise: ) (%^VOWFront: ) (X3:) %^PAL: [ %>:0 | #:0 ] ;
+
+! 
+"Even-syllabic verbs I, Palatalization of gg and kk"
+ Cx:Cy <=> V: (%ˊ: | 0:%ˊ) (C:) _ Cx: ( %^VOWSH: %^CLong: ) ( %^VOWLower: | %^VOWRaise: ) (%^VOWFront: ) (X3:) %^PAL: [ %>:0 | #:0 ] ;
+            V: (%ˊ: | 0:%ˊ) (C:) Cx: _ ( %^VOWSH: %^CLong: ) ( %^VOWLower: | %^VOWRaise: ) (%^VOWFront: ) (X3:) %^PAL: [ %>:0 | #:0 ] ;
+                where Cx in (g k)
+                      Cy in (ǧ ǩ)
+                matched ;
+
+
+!! ! removing palatalization Prs+Sg3
+!!  "Even-syllabic verbs I, removing palatalization in -ed verbs"
+!!   %ˊ:0 <=> V: _ [ C:+ | C:+ %': C:+ ] ( %^VOWSH: %^CLong: | %^VOWL: %^CShort: ) ( %^VOWLower: | %^VOWRaise: ) (%^VOWFront: ) (X3:) %^PALNo: [ %>:0 | #:0 ] ;
+
+
+!
+!! "Even syllabic verbs I, vowel position I > II-III"
+!!  Vx:Vy <=> (C:+) _ V: (ˊ:) C:+ (X3:) [ %^2VOW: | %^3VOW: ] ;
+!!  		where Vx in (â o e å ä)
+!!  			  Vy in (õ u i o a)
+!!  		matched ;
+!! 
+!! "Even syllabic verbs I, vowel position II > I"
+!!  Vx:Vy <=> (C:+) _ V: ˊ:0 C:+ (X3:) %^1VOW: ;
+!!  		   (C:+) V: _ ˊ:0 C:+ (X3:) %^1VOW: ;
+!!  		   (C:+) _ ˊ:0 C:+ %^1VOW: ;
+!!  		where Vx in (õ u i o a)
+!!  			  Vy in (â o e å ä)
+!!  		matched ;
+!! 
+!! ! 2012-06-01 This appears to depart from a vowel with "ˊ"
+!! ! so it must be III > IV
+!! "Even syllabic verbs I, vowel position II > IV"
+!!  Vx:Vy <=> (C:+) _ V:0 ˊ C:+ %^4VOW: ;
+!!  		where Vx in (õ u i o a)
+!!  			  Vy in (â o e å ä)
+!!  		matched ;
+!! 
+!! "Even syllabic verbs I, diftong position I > II â:õ"
+!!  â:õ <=> (C:+) [ e: | u: ] _ (ˊ:) C:+ (X3:) [ %^2VOW: | %^3VOW: ] ;
+!! 
+!! "Even syllabic verbs I, diftong position I > II ä:a"
+!!  ä:a <=> (C:+) [ e: | u: ] _ (ˊ:) C:+ (X3:) %^2VOW: ;
+!! 
+!! "Even syllabic verbs I, diftong position I > II ä:e"
+!!  ä:e <=> (C:+) [ e: | u: ] _ (ˊ:) C:+ (X3:) %^3VOW: ;
+!! 
+!! 
+!! "Even syllabic verbs I, diftong position II > I & IV i:e"
+!!  i:e <=> (C:+) _ [ õ:â | a:ä ] (ˊ) C:+ (X3:) [ %^1VOW: | %^4VOW: ] ;
+!! 
+!! "Even syllabic verbs I, diftong position II > I & IV õ:â"
+!!  Vx:Vy <=> (C:+) [ i:e | u: ] _ (ˊ) C:+ (X3:) [ %^1VOW: | %^4VOW: ] ;
+!!  		where Vx in (õ a)
+!!  			  Vy in (â ä)
+!!  		matched ;
+!! 
+!! "Even syllabic verbs I, diftong position II > III a:e"
+!!  a:e <=> (C:+) [ i: | u: ] _ (ˊ) C:+ (X3:) [ %^3VOW: ] ;
+!! 
+!! 
+!! !e:â e:õ
+!! "Even syllabic verbs I, diftong position V > I & IV i:e"
+!!  i:e <=> (C:+) _ [e: | â:] ˊ: C:+ (X3:) [ %^1VOW: | %^4VOW: ] ;
+!! 
+!! "Even syllabic verbs I, diftong position V > I & IV e:â"
+!!  e:â <=> (C:+) [i: | u:] _ ˊ: C:+ (X3:) [ %^1VOW: | %^4VOW: ] ;
+!! 
+!! "Even syllabic verbs I, diftong position V > I & IV â:ä"
+!!  â:ä <=> (C:+) [i: | u:] _ ˊ: C:+ (X3:) [ %^1VOW: | %^4VOW: ] ;
+!! 
+!! "Even syllabic verbs I, diftong position V > II & III e:õ"
+!!  e:õ <=> (C:+) [ i: | u: ] _ ˊ: C:+ (X3:) [ %^2VOW: | %^3VOW: ] ;
+!! 
+!! !! 2012-06-01 Unresolved <= conflict with respect to 'â:õ' vs. 'â:a'
+!! !! between "Even syllabic verbs I, diftong position I > II â:õ"
+!! !! and "Even syllabic verbs I, diftong position V > II & III â:a"
+!! !TEMPORARY REMOVAL
+!! !"Even syllabic verbs I, diftong position V > II & III â:a"
+!! ! â:a <=> (C:+) [ i: | u: ] _ ˊ: C:+ (X3:)   %^2VOW: ;
+!! !!
+!! !!2012-06-01
+!! !! Warning: Unresolved <= conflict with respect to 'â:õ' vs. 'â:e'
+!! !!    between "Even syllabic verbs I, diftong position I > II â:õ"
+!! !!        and "Even syllabic verbs I, diftong position V > II & III â:e"
+!! !! TEMPORARY REMOVAL
+!! !"Even syllabic verbs I, diftong position V > II & III â:e"
+!! ! â:e <=> (C:+) [ i: | u: ] _ ˊ C:+ (X3:) %^3VOW: ;
+!! 
+!! 
+!! 
+! Consonant grad rules
+
+!! Weakening Consonant Cluster
+
+!dealing with relative length changes
+! mõõnnâd : mõˊnne : mõõn 
+!"Even syllabic verbs I, cg in relation to Vowel length"
+
+! V Cx Cx:0 
+! used with  +Imp+Sg2, +Ind+Prs+ConNeg
+! teevvad > teev
+"Even syllabic verbs I, cg"
+ Cx:0 <=> :V (%ˊ: | 0:%ˊ) Cx _ (%^VOWL: ) %^CShort: ;
+          V: 0:V (%ˊ: | 0:%ˊ) Cx _ %^VOWXL: ;    
+ 		where Cx in (đ l r m n v) ;
+
+!! "Even syllabic verbs I, cg vv:v"
+!! v:0 <=> :V (%ˊ: | 0:%ˊ) v _ (%^VOWL: ) %^CShort: ; 
+
+! used with  +N+Sg+Nom > +N+Sg+Gen
+! kuss > kuuzz
+"Even syllabic nouns I, with extra lengthening of vowel V>VV and SS>ZZ"
+ Cx:Cy <=> [#: | C: ] V: (0:V) (%ˊ: | 0:%ˊ) Cx: _ %^VOWXL: ;
+          [#: | C: ] V: (0:V) (%ˊ: | 0:%ˊ) _ Cx: %^VOWXL: ;
+                where Cx in (k s)
+                      Cy in (ǥ z)
+                matched ;
+
+! used with  +N+Sg+Nom > +N+Sg+Gen
+! sijdd > siid
+"Even syllabic nouns I, with extra lengthening of vowel ij>ii/uv>uu and dd>d"
+ Cx:0 <=> [ u: (0:u | 0:o ) (%ˊ: ) v: | i: (%ˊ: ) j: ] ( 0:%ˊ) Cx _ %^VOWXL: ;
+ ! juˊrdded > joordam
+          [ V: | :V ] (%ˊ: | 0:%ˊ) CNoJV Cx _ (%^VOWL: ) %^CShort: ;
+                where Cx in (d) ;
+
+
+
+! This is used with +Imp+Sg2, +Ind+Prs+ConNeg 
+! double consonants at coda that become voiced in gradation
+"Even syllabic verbs I, Voicing" ! ss:zz,
+ Cx:Cy <=> V: (%ˊ: | 0:%ˊ) Cx: _ %^VOWL: %^CShort: ;
+           V: (%ˊ: | 0:%ˊ) _ Cx: %^VOWL: %^CShort: ; !This was X3
+                where Cx in (s š c č k)
+                      Cy in (z ž ʒ j ǥ)
+                matched ;
+
+! V Ca Cx Cx:0
+! This is used with +Imp+Sg2, +Ind+Prs+ConNeg
+! double consonants following consonant at coda that become 
+! single consonants in gradation
+"Even syllabic verbs I, third consonant loss" ! lgg:lǥ
+ Cx:0 <=> [ V: | :V ] (%ˊ: | 0:%ˊ)  [ s | r | l | p | d: ] Cx:  _ %^VOWL: %^CShort: ;
+                where Cx in (k ǩ g ǧ ŋ t č c s m n) ;
+
+! This is used with +Imp+Sg2, +Ind+Prs+ConNeg
+! double consonants following vowel and "i" at coda that become
+! single consonants in gradation
+! njeiddad > njeeid
+! 2012-06-12 _v:u_ allows for uˊvdded
+"Even syllabic verbs I, third consonant loss idd:id" ! idd:id
+ d:0 <=> V: (0:V) [ i | v:u ] (%ˊ: | 0:%ˊ) d: _ %^VOWL: %^CShort: ;
+
+
+"Even syllabic verbs I, t>đ" ! tt:đ
+ t:đ  <=> V: (%ˊ: | 0:%ˊ) _ t:0 %^VOWL: %^CShort: ;
+
+"Even syllabic verbs I, second consonant loss"
+ Cx:0 <=> V: (%ˊ: | 0:%ˊ) Cx: _ %^VOWL: %^CShort: ;
+                where Cx in (t) ; ! Extend
+
+! vueˊlǧǧed+V+Ind+Prs+Sg2 => vuâlǥak
+"Even syllabic verbs I, lgg>lǥ" ! lgg:lǥ
+ g:ǥ  <=> V: (%ˊ:0 ) [ l | r | d: ]  _ g:0 %^VOWL: %^CShort: ;
+
+!vueˊlǧǧed+V+Ind+Prt+Pl1 => vuõˊljim
+"Even syllabic verbs I, 'lǧǧ>'lj" ! 
+ g:j  <=> V:  :%ˊ [ l | r | d: ]  _ g:0 %^VOWL: %^CShort: ( %^VOWLower: | %^VOWRaise: ) (%^VOWFront: ) (X3:) %^PAL: ;
+
+
+!! Strengthening Consonant Cluster
+! V shortening and C lengthening 
+! %^CLong is generally used in conjunction with a preceding %^VOWSH
+! In verbs this will be observed in finite forms
+! In derivational morphology, e.g. -škuetted, this is not the case
+
+
+! kååˊmmerd 
+"Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2"
+ 0:Cx <=> V: ( :V ) ( %ˊ ) :C* Cx _ [ QE1: ] C:+ [ %^IMPSG2: | %^INDPRSSG3: ] ;
+            where Cx in (m) ;
+
+
+
+!! 
+!! !! 2009: 20
+!! "Even-syllabic nouns, In gg or ǧǧ"
+!!  Cx:Cy <=> V: [ (ˊ:) [ d: | l | r ]| [ u: | i: ] (ˊ:) ] _ X3: ;
+!!               where Cx in (ǧ g)
+!!                     Cy in (j ǥ)
+!!               matched ;
+!! 
+!! ! ǩeäˊdǧǧ: ǩieˊđjest
+!! ! ǩeäˊdǧǧ: ǩeäđǥaž
+!! 
+!! "xx:x rule"
+!!  Cx:0 <=> V ( ˊ: ) Cx _ V X3:0 ;
+!! ! to be refined…
+!! 
+!! ! goal:
+!! ! mõõnnâd:mõõˊnn	POORRÂD ;
+!! ! 
+!! 
