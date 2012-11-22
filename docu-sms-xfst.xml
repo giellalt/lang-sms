@@ -2,30 +2,30 @@
 <!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V2.0//EN" "http://forrest.apache.org/dtd/document-v20.dtd">
 <document xml:lang="en">
   <header>
-    <title>Skolt Sami Rule File</title>
+    <title>Skolt Saami Rule File</title>
     <authors>
       <person email="trond.trosterud@hum.uit.no" name="Trond Trosterud" />
     </authors>
   </header>
   <body>
     <section>
-      <title>Documenting the Skolt Sami Rule file</title>
+      <title>Documenting the Skolt Saami Rule file</title>
       <section>
         <title>Introduction</title>
         <section>
           <title>xfst vs. twolc</title>
-          <p>The Skolt Sami rule file differs from the other languages in being an xfst file, rather than a twolc file (each format have different chapters in the pdf version of the Xerox book). The differences between thesew two formats may be summarised as follows:</p>
+          <p>The Skolt Saami rule file differs from the other languages in being an xfst file, rather than a twolc file (each format have different chapters in the pdf version of the Xerox book). The differences between thesew two formats may be summarised as follows:</p>
           <ul>
             <li>xfst rules are ordered, whereas twolc rules apply simultaneously</li>
             <li>xfst rules stand in a feeding-bleeding relation to each other, whereas twolc rules do not</li>
             <li>xfst rules are good at doing many-to-many replacement operations (also of different-size strings), whereas in twolc one must have one rule for each pair of members in equal-length strings</li>
             <li>xfst cannot generalise over ordered sets of pairs, thus the Cx:Cy replacement of members of ordered sets Cx and Cy that is found in twolc must be done in a more clumsy way in xfst.</li>
           </ul>
-          <p>The reason why xfst is chosen for Skolt Sami (and in the future also for Inari Sami(?)) is that there are several cases of many-to-many replacements in the Skolt Sami grammar.</p>
+          <p>The reason why xfst is chosen for Skolt Saami (and in the future also for Inari Sami(?)) is that there are several cases of many-to-many replacements in the Skolt Saami grammar.</p>
         </section>
         <section>
           <title>The structure of the rule file itself</title>
-          <p>The rule file for Skolt Sami is divided into 5 main types:</p>
+          <p>The rule file for Skolt Saami is divided into 5 main types:</p>
           <ol>
             <li>Definitions</li>
             <li>Consonant shift rules (tbw)</li>
