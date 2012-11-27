@@ -100,7 +100,7 @@ Rules
 !! VOWEL SHIFT,
 
 !! RAISING
-! used for deriving +Ind+Prt+Sg1, +Ind+Prt+Sg2 +Ind+Prt+Pl3 in teevvad
+! used for deriving +Ind+Prt+Sg1, +Ind+Prt+Sg2 +Ind+Prt+Pl3 in teevvad:tivvu
 "Even syllabic verbs I, vowel raising"
  Vx:Vy <=> _ Vx:  (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: %>:0 [ e | u ]  ; ! Adding +Prt+Pl3 for ed verbs
            _ Vx:0 (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: (%^PAL: ) %>:0 [ e | u ] ;
@@ -180,14 +180,16 @@ Rules
 ! used for deriving +Ind+Prs+Pl3 in VIQQAD: kuõskkâd >kueˊsǩǩe
 ! 
 "Even syllabic verbs I, secondary vowel fronting with PAL u õ:e"
- õ:e <=> u _ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ]  (%^VOWSH: %^CLong: | %^VOWL: %^CShort: ) (%^VOWLower: ) %^VOWFront: (X3:) %^PAL: [ %>:0 | #:0 ] ; ! deriving +V+Inf in vueˊlǧǧed
+ õ:e <=> u _ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ]  (%^VOWSH: %^CLong: | %^VOWL: %^CShort: )  %^VOWFront: (X3:) %^PAL: [ %>:0 | #:0 ] ; ! deriving +V+Inf in vueˊlǧǧed
+! u _ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ]  (%^VOWSH: %^CLong: | %^VOWL: %^CShort: ) (%^VOWLower: ) %^VOWFront: (X3:) %^PAL: [ %>:0 | #:0 ] ; ! deriving +V+Inf in vueˊlǧǧed
 ! used for deriving +V+Inf in TIETTED: _tiõtt_ > tieˊtted
          i _ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] %^VOWFront: %^PAL: %>:0 ;
  
 
 ! used for deriving +Ind+Prs+Pl3 in VIQQAD: čiõkkâd >čeäˊǩ'ǩe
+! also TIETTED vueˊlǧǧed+V+Ind+Prs+Pl3: vuäˊlǧǧe
 "Even syllabic verbs I, secondary vowel fronting with PAL"
- õ:ä <=> i:e _ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ]  %^VOWSH: %^CLong: %^VOWLower: %^VOWFront: (X3:) %^PAL: [ %>:0 | #:0 ] ;
+ õ:ä <=> [ i:e | u ] _ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ]  %^VOWSH: %^CLong: %^VOWLower: %^VOWFront: (X3:) %^PAL: [ %>:0 | #:0 ] ;
 
 !! ! used for deriving +V+Inf in TIETTED: _uudd_ >uˊvdded
 !! "Even syllabic verbs I, secondary u > v PAL"
