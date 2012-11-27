@@ -49,7 +49,7 @@ Alphabet
  QE1:0 ! used with "kåˊmrded" 'to bow'
  %^IMPSG2:0
  %^INDPRSSG3:0
-
+ %^FRICG:0
 
 
 ! Literal quotes and angles must be escaped (cf morpheme boundaries below):
@@ -157,7 +157,7 @@ Rules
 
 ! used for deriving +Ind+Prs+Sg3, in kuõskkâd kueˊsǩǩe
 "Even syllabic verbs I, diphthong opening after u"
- Vx:Vy <=> u _ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
+ Vx:Vy <=> u _ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWL: ( %^FRICG:0 ) %^CShort: )  %^VOWLower: (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
              where Vx in (õ å)
                    Vy in (â ä)
              matched ;
@@ -189,7 +189,7 @@ Rules
 ! used for deriving +Ind+Prs+Pl3 in VIQQAD: čiõkkâd >čeäˊǩ'ǩe
 ! also TIETTED vueˊlǧǧed+V+Ind+Prs+Pl3: vuäˊlǧǧe
 "Even syllabic verbs I, secondary vowel fronting with PAL"
- õ:ä <=> [ i:e | u ] _ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ]  %^VOWSH: %^CLong: %^VOWLower: %^VOWFront: (X3:) %^PAL: [ %>:0 | #:0 ] ;
+ õ:ä <=> [ i:e | u ] _ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ]  %^VOWSH: ( %^FRICG:0 ) %^CLong: %^VOWLower: %^VOWFront: (X3:) %^PAL: [ %>:0 | #:0 ] ;
 
 !! ! used for deriving +V+Inf in TIETTED: _uudd_ >uˊvdded
 !! "Even syllabic verbs I, secondary u > v PAL"
@@ -453,7 +453,12 @@ Rules
 
 ! vueˊlǧǧed+V+Ind+Prs+Sg2 => vuâlǥak
 "Even syllabic verbs I, lgg>lǥ" ! lgg:lǥ
- g:ǥ  <=> V: (%ˊ:0 ) [ l | r | d: ]  _ g:0 %^VOWL: %^CShort: ;
+ g:ǥ  <=> V: (%ˊ:0 ) [ l | r | d: ]  _ g: %^VOWL:  %^CShort: ;
+ V: (%ˊ:0 ) [ l | r | d: ]  _ g: %^VOWL: ( %^FRICG:0 ) %^CShort: ;
+          V: (%ˊ:0 ) [ l | r | d: ]  g: _ %^VOWL: %^FRICG:0 %^CShort: ;
+!vueˊlǧǧed+V+Imp+Pl3: vuâlǥǥaz
+!"Even syllabic verbs I, lgg>lǥǥ" ! lgg:lǥǥ
+
 
 !vueˊlǧǧed+V+Ind+Prt+Pl1 => vuõˊljim
 "Even syllabic verbs I, 'lǧǧ>'lj" ! 
