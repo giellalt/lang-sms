@@ -50,7 +50,7 @@ Alphabet
  %^IMPSG2:0
  %^INDPRSSG3:0
  %^FRICG:0
-
+ %^VOWTense:0
 
 ! Literal quotes and angles must be escaped (cf morpheme boundaries below):
  »7     ! »
@@ -259,6 +259,10 @@ Rules
 "trisyllabic verbs and doer derivations, i>j"
  i:j <=> _ %> V ;
 
+!! VOWELS TENSE vs LAX 2012-11-28
+! miârr:mieˊrre
+"Even-syllabic nouns, for â:e"
+ â:e <=> i _ ( %ˊ | 0:%ˊ ) C:+ %^VOWTense:0 ;
 
 !! VOWEL and ZERO ALTERNATION
 
@@ -288,7 +292,7 @@ Rules
 ! The left context allows for:
 ! Vowel shortening, and j/v > V 
 "Even-syllabic verbs I, Palatalization mark between V and C"
- 0:%ˊ <=> [ V:0 | :V ] _ [ C:+ | C:+ %': C:+ ] ( %^VOWSH: %^CLong: | %^VOWL: %^CShort: ) ( %^VOWLower: | %^VOWRaise: ) ( %^VOWFront: ) (X3:) %^PAL: [ %>:0 | #:0 ] ;
+ 0:%ˊ <=> [ V:0 | :V ] _ [ C:+ | C:+ %': C:+ ] ( %^VOWSH: %^CLong: | %^VOWL: %^CShort: ) ( %^VOWLower: | %^VOWRaise: ) ( %^VOWFront: | %^VOWTense:0 ) (X3:) %^PAL: [ %>:0 | #:0 ] ;
 
 ! 
 "Even-syllabic verbs I, Palatalization of gg and kk"
@@ -298,10 +302,15 @@ Rules
                       Cy in (ǧ ǩ)
                 matched ;
 
+! removing palatalization in +Sg+Ill
+! pieˊss:peässa
+"Even-syllabic nouns, removing palatalization in -est +Loc nouns"
+   %ˊ:0 <=> V: _ [ C:+ | C:+ %': C:+ ] ( %^VOWSH: %^CLong: | %^VOWL: %^CShort: ) ( %^VOWLower: | %^VOWRaise: ) (%^VOWFront: ) (X3:) %^PALNo: [ %>:0 | #:0 ] ;
 
 !! ! removing palatalization Prs+Sg3
 !!  "Even-syllabic verbs I, removing palatalization in -ed verbs"
 !!   %ˊ:0 <=> V: _ [ C:+ | C:+ %': C:+ ] ( %^VOWSH: %^CLong: | %^VOWL: %^CShort: ) ( %^VOWLower: | %^VOWRaise: ) (%^VOWFront: ) (X3:) %^PALNo: [ %>:0 | #:0 ] ;
+
 
 
 !
@@ -393,7 +402,8 @@ Rules
 ! teevvad > teev
 "Even syllabic verbs I, cg"
  Cx:0 <=> :V (%ˊ: | 0:%ˊ) Cx _ (%^VOWL: ) %^CShort: ;
-          V: 0:V (%ˊ: | 0:%ˊ) Cx _ %^VOWXL: ;    
+           V: :V  (%ˊ: | 0:%ˊ) Cx _ %^VOWXL: ; 
+!jiõnn:jiõn
  		where Cx in (đ l r m n v) ;
 
 !! "Even syllabic verbs I, cg vv:v"
@@ -402,8 +412,8 @@ Rules
 ! used with  +N+Sg+Nom > +N+Sg+Gen
 ! kuss > kuuzz
 "Even syllabic nouns I, with extra lengthening of vowel V>VV and SS>ZZ"
- Cx:Cy <=> [#: | C: ] V: (0:V) (%ˊ: | 0:%ˊ) Cx: _ %^VOWXL: ;
-          [#: | C: ] V: (0:V) (%ˊ: | 0:%ˊ) _ Cx: %^VOWXL: ;
+ Cx:Cy <=> [#: | C: ] V: (:V) (%ˊ: | 0:%ˊ) Cx: _ %^VOWXL: ;
+          [#: | C: ] V: (:V) (%ˊ: | 0:%ˊ) _ Cx: %^VOWXL: ;
                 where Cx in (k s)
                       Cy in (ǥ z)
                 matched ;
