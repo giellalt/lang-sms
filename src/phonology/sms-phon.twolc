@@ -256,6 +256,8 @@ Rules
  v:u <=> [ C: | #: ] u: ( 0:u | 0:o ) (0:%ˊ) _ (%ˊ: | 0:%ˊ) d d: [ %^VOWL: %^CShort: | %^VOWXL: | %^VOWLower: | %^VOWSH: %^CLong:  %^VOWLower: (%^VOWFront: ) %^PAL: ];
 
 !luhtt [ s s: | š š: | t t: | c c: | č č: ]
+ "Even syllabic nouns, for h>u"
+ h:u <=> V: (0:%ˊ) _ (%ˊ: | 0:%ˊ) [ s s: | š š: | t t: | c c: | č č: ] [ %^VOWL: %^CShort: | %^VOWXL: | %^VOWSH: %^CLong:  %^VOWLower: %^PAL: ] ;
 
 ! i > j
 "trisyllabic verbs and doer derivations, i>j"
@@ -445,6 +447,7 @@ Rules
 ! single consonants in gradation
 "Even syllabic verbs I, third consonant loss" ! lgg:lǥ
  Cx:0 <=> [ V: | :V ] (%ˊ: | 0:%ˊ)  [ s | r | l | p | d: ] Cx:  _ %^VOWL: %^CShort: ;
+          V: (0:%ˊ) h: (%ˊ: | 0:%ˊ) Cx: _ %^VOWXL: ;
                 where Cx in (k ǩ g ǧ ŋ t č c s m n) ;
 
 ! This is used with +Imp+Sg2, +Ind+Prs+ConNeg
