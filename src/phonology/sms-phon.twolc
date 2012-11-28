@@ -199,14 +199,14 @@ Rules
 ! vowel lengthening and consonant shortening, %^VOWL and %^CShort 
 ! used for deriving +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Imp+Sg2
 "Even syllabic verbs I, relative vowel lengthening"
- 0:Vx <=> C: Vx: _ [( u: | i: ) (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ] %^VOWL: %^CShort: ;
+ 0:Vx <=> C: Vx: _ [( u: | i: ) (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ] %^VOWL: (%^CShort:) ;
       C: Vx: _ ( u: | i: ) (%ˊ: | 0:%ˊ)  C: [ QÂ1: ] C:+   %^VOWL:  ;
              where Vx in (â e å õ o a ä) ; 
 ! 2012-06-05 removing "i" and "u" because viikkâd renders viiiǥǥam
 
 ! used for declension of nouns võrr > võõr
 "Even syllabic nouns, relative vowel extra lengthening"
- 0:Vx <=> [ C: | #: ] Vx: _ [ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ] %^VOWXL: ;
+ 0:Vx <=> [ C: | #: ] Vx: _ [ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ] %^VOWXL:  ;
              where Vx in (â e å õ o a ä) ;
 
 ! used for declension of nouns kunn > kuun
@@ -254,6 +254,8 @@ Rules
 ! _uvdd > ouˊdde_ 
 "Even syllabic verbs,  for v>u"
  v:u <=> [ C: | #: ] u: ( 0:u | 0:o ) (0:%ˊ) _ (%ˊ: | 0:%ˊ) d d: [ %^VOWL: %^CShort: | %^VOWXL: | %^VOWLower: | %^VOWSH: %^CLong:  %^VOWLower: (%^VOWFront: ) %^PAL: ];
+
+!luhtt [ s s: | š š: | t t: | c c: | č č: ]
 
 ! i > j
 "trisyllabic verbs and doer derivations, i>j"
@@ -431,8 +433,8 @@ Rules
 ! This is used with +Imp+Sg2, +Ind+Prs+ConNeg 
 ! double consonants at coda that become voiced in gradation
 "Even syllabic verbs I, Voicing" ! ss:zz,
- Cx:Cy <=> V: (%ˊ: | 0:%ˊ) Cx: _ %^VOWL: %^CShort: ;
-           V: (%ˊ: | 0:%ˊ) _ Cx: %^VOWL: %^CShort: ; !This was X3
+ Cx:Cy <=> V: (%ˊ: | 0:%ˊ) Cx: _ (%^VOWL:) %^CShort: ;
+           V: (%ˊ: | 0:%ˊ) _ Cx: (%^VOWL:) %^CShort: ; !This was X3
                 where Cx in (s š c č k)
                       Cy in (z ž ʒ j ǥ)
                 matched ;
