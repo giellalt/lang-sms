@@ -71,7 +71,7 @@ Skolt Saami noun morphology
 
 
 
-Introduction
+!!!Introduction
 The rule file for Skolt Saami is divided into 5 main types:
 
 # Definitions
@@ -157,15 +157,28 @@ PALATALIZATION
 
 
 
-Consonant grad rules
 
-! Weakening Consonant Cluster
+
+!!Consonant grad rules
+
+!Weakening Consonant Cluster
 
 dealing with relative length changes
 mõõnnâd : mõˊnne : mõõn 
 
 
-"Even syllabic verbs I, cg vv:v"
+
+
+__Even syllabic nouns I, with extra lengthening of vowel V>VV and SS>ZZ__ -
+used with  +N+Sg+Nom > +N+Sg+Gen for cases like
+{{kuss > kuuzz}}.
+{{{
+ Cx:Cy <=> [#: | C: ] V: (:V) (%ˊ: | 0:%ˊ) Cx: _ %^VOWXL: ; 
+           [#: | C: ] V: (:V) (%ˊ: | 0:%ˊ) _ Cx: %^VOWXL: ; 
+                 where Cx in (k s)                          
+                       Cy in (ǥ z)                          
+                 matched ;                                  
+}}}
 
 
 
@@ -180,12 +193,11 @@ mõõnnâd : mõˊnne : mõõn
 
 
 
-
-Strengthening Consonant Cluster
-V shortening and C lengthening 
-%^CLong is generally used in conjunction with a preceding %^VOWSH
-In verbs this will be observed in finite forms
-In derivational morphology, e.g. -škuetted, this is not the case
+* Strengthening Consonant Cluster
+* V shortening and C lengthening 
+* %^CLong is generally used in conjunction with a preceding %^VOWSH
+* In verbs this will be observed in finite forms
+* In derivational morphology, e.g. -škuetted, this is not the case
 
 
 
