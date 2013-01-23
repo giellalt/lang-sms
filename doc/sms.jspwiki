@@ -1,0 +1,300 @@
+!!!Free and Open source Skolt Sámi analyser gtsvn-sms
+
+;Authors: Divvun and Giellatekno teams, community members
+;Software version: 2012
+;Documentation license: GNU GFDL
+;SVN Revision: $Revision: 68217 $
+;SVN Date: $Date: 2013-01-16 11:31:33 +0200 (Wed, 16 Jan 2013) $
+
+!!!GTSVN-sms
+
+This is free and open source Skolt Sámi morphology.
+
+              !!!Skolt Sámi morphological analyser                      !
+
+
+ !!!Multichar_Symbols definitions
+
+
+
+
+
+
+Postposition ;
+Preposition ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+! ======================
+! Sublexica for NounRoot
+! ======================
+
+! Temporary lexicon for the oahpa words
+
+LEXICON n
++N+Sg+Nom: K ;
+
+
+! Even-syllable stems
+! -------------------
+
+! 2syll stems
+! - - - - - -
+
+! 4syll stems
+! - - - - - -
+
+
+! Nominal substems
+! - - - - - - - -
+
+! Odd-syllable stems
+! ------------------
+
+! Odd-syllable stems, sublexica
+! - - - - - - - - - - - - - - -
+
+! Contracted stems
+! ----------------
+
+
+
+! ======================
+! Sublexica for VerbRoot
+! ======================
+
+! Even-syllable stems
+! -------------------
+
+LEXICON VIQQAD
++V+Inf:‚d # ;
++V+Ind+Prs: VS-I ;
+
+LEXICON TEEVVAD
++V+Ind+Prs:		VSUF-IA-PRS ;
++V+Ind+Prt:		VSUF-IA-PRT ;
++V+Imprt:			VSUF-IA-IMP ;
++V:X3			VSUF-I-POTKOND ; !WG
++V+Pot+Sg3:X3až	FINAL1 ; !WG
++V+Inf:ad # ;
++V+Ger:men # ;
++V+Aktio:am # ;
++V+VAbess:X3kâni # ;		!WG
+
+
+LEXICON POORRÂD
++V+Ind+Prs:		VSUF-IÂ-PRS ;
++V+Ind+Prt:		VSUF-IÂ-PRT ;
++V+Ind+Prs+ConNeg:X3 # ;
++V+Imprt:			VSUF-IÂ-IMP ;
++V:X3				VSUF-I-POTKOND ; !WG
++V+Pot+Sg3:X3âž	FINAL1 ; !WG
++V+Inf:âd # ;
++V+PrfPrc:âm # ;
++V+Ger:men # ;
++V+Aktio:âm # ;
++V+VAbess:X3kâni # ;			!WG
+
+LEXICON TIETTED
++V+Ind+Prs:		VSUF-IE-PRS ;
++V+Ind+Prt:		VSUF-IE-PRT ;
++V+Imprt:			VSUF-IE-IMP ;
++V:X3				VSUF-I-POTKOND ; !WG
++V+Pot+Sg3:X3ež	FINAL1 ; !WG
++V+Inf:%^5VOWed # ;
++V+Ger:men # ;
++V+Aktio:em # ;
++V+VAbess:X3kâni # ;			!WG
+
+
+! Odd-syllable stems
+! ------------------
+! Contracted stems
+! ----------------
+
+
+! Intermediate suffix lexica
+! --------------------------
+
+
+! Final suffix lexica
+! -------------------
+
+! Suffix series I
+! - - - - - - - -
+
+LEXICON VS-I
++Sg1:am # ;
++Sg2:ak # ;
++Sg3:%^P3 # ;
++Pl1:‚p # ;
++Pl2:ve`ted # ;
++Pl3:e%^P3 # ;
+
+! Present tense
+! - - - - - - - -
+
+LEXICON VSUF-IA-PRS
+ +Sg1:X3am			FINAL1	; !WG
+ +Sg2:X3ak			FINAL1	; !WG
+ +Sg3:				FINAL1	;
+ +Pl1:ap			FINAL1	;
+ +Pl1:ap			FINAL1	;
+ +Pl2:ve,ted		FINAL1	;
+ +Pl3:%^VOWSHa		FINAL1	;
+ ! epämääräinen pers.			!WG
+
+LEXICON VSUF-IÂ-PRS
+ +Sg1:X3âm			FINAL1	; !WG
+ +Sg2:X3ak			FINAL1	; !WG
+! +Sg3:%^1VOW			FINAL1	;
+ +Sg3:			FINAL1	;
+ +Pl1:âp			FINAL1	;
+ +Pl1:%^DIAINSâp			FINAL1	;
+ +Pl2:ve,ted		FINAL1	;
+ +Pl3:%^4VOWe		FINAL1	;
+ ! epämääräinen pers.			!WG
+
+LEXICON VSUF-IE-PRS
+ +Sg1:X3%^1VOWam		FINAL1	; !WG
+ +Sg2:X3%^1VOWak		FINAL1	; !WG
+ +Sg3:%^1VOW			FINAL1	;
+ +Pl1:ep			FINAL1	;
+ +Pl2:ve,ted		FINAL1	;
+ +Pl3:%^4VOWe		FINAL1	;
+ ! epämääräinen pers.			!WG
+
+
+! Past tense
+! - - - - - - - -
+
+LEXICON VSUF-IA-PRT
+ +Sg1:%^2VOWum		FINAL1	; !đđ>dd
+ +Sg2:%^2VOWuk		FINAL1	; !đđ>dd
+ +Sg3:X3ai			FINAL1	; !WG
+ +Pl1:X3aim			FINAL1	; !WG
+ +Pl2:X3aid			FINAL1	; !WG
+ +Pl3:%^2VOWu		FINAL1	;
+ ! epämääräinen pers.
+
+LEXICON VSUF-IÂ-PRT
+ +Sg1:%^VOWSHem			FINAL1	; 
+ +Sg2:%^VOWSHiǩ			FINAL1	; 
+! +Sg1:%^3VOWem		FINAL1	;
+! +Sg2:%^3VOWiǩ		FINAL1	;
+ +Sg3:X3i				FINAL1	; !WG
+ +Pl1:X3im			FINAL1	; !WG
+ +Pl2:X3id			FINAL1	; !WG
+ +Pl3:%^3VOWe		FINAL1	;
+ ! epämääräinen pers.
+
+LEXICON VSUF-IE-PRT
+ +Sg1:%^3VOWem		FINAL1	;
+ +Sg2:%^3VOWiǩ		FINAL1	;
+ +Sg3:X3%^3VOWi		FINAL1	; !WG
+ +Pl1:X3%^3VOWim		FINAL1	; !WG
+ +Pl2:X3id		FINAL1	; !WG
+ +Pl3:%e		FINAL1	;
+ ! epämääräinen pers.
+
+
+! Imperative
+! - - - - - - -
+
+LEXICON VSUF-IA-IMP
+ +Sg2:X3				FINAL1	; !WG
+ +Sg3:X3as			FINAL1	; !WG
+ +Pl1:ap			FINAL1	;
+ +Pl2:ad			FINAL1	;
+ +Pl3:%^VOWSHaz		FINAL1	;
+
+LEXICON VSUF-IÂ-IMP
+ +Sg2:X3				FINAL1	; !WG
+ +Sg3:X3%^1VOWas		FINAL1	; !WG
+ +Pl1:âp			FINAL1	;
+ +Pl2:âd			FINAL1	;
+ +Pl3:%^1VOWaz		FINAL1	; !%^VOWSH also ??
+
+LEXICON VSUF-IE-IMP
+ +Sg2:X3				FINAL1	; !WG
+ +Sg3:X3%^1VOWas		FINAL1	; !WG
+ +Pl1:ep			FINAL1	;
+ +Pl2:ed			FINAL1	;
+ +Pl3:%^1VOWaz		FINAL1	;
+
+
+! Potentialis & Konditionalis
+! not including +Pot+Sg3
+! - - - - - - - - - - - - - -
+
+LEXICON VSUF-I-POTKOND
+ +Pot+Sg1:žem		FINAL1	;
+ +Pot+Sg2:žiǩ		FINAL1	;
+ +Pot+Pl1:žep		FINAL1	;
+ +Pot+Pl2:žid		FINAL1	;
+ +Pot+Pl3:že		FINAL1	;
+ ! epäm. pot.
+ +Cond+Sg1:čem		FINAL1	;
+ +Cond+Sg2:čiǩ		FINAL1	;
+ +Cond+Sg3:či		FINAL1	;
+ +Cond+Pl1:čep		FINAL1	;
+ +Cond+Pl2:čid		FINAL1	;
+ +Cond+Pl3:če		FINAL1	;
+ ! epäm. cond.
+
+
+! Suffix series II
+! - - - - - - - -
+
+! Other series
+! - - - - - -
+
+
+! Auxiliary verbs
+! ---------------
+
+
+
+
+
+
+
+
+Skolt Saami noun morphology 
+
+
+ LEXICON n  is a dummy lexicon containing N Sg Nom only
+
+
+
+
+ LEXICON N-toll  for Nouns with -âst Loc
+
+
+ LEXICON N-miarr  with -âst Loc but ense Ill
+
+
+
+
+ LEXICON N-pess  Nouns with -ast Loc
+
+
+
+
+ LEXICON N-piess  Nouns with -est +Loc 
+* There are several stem types
+* pieˊss:pieˊss
+
+
+
+
