@@ -1,0 +1,129 @@
+
+
+Introduction
+The rule file for Skolt Saami is divided into 5 main types:
+
+# Definitions
+# Consonant shift rules (tbw)
+# Vowel alternation rules
+# Consonant gradaton rules
+# Rules for cleaning up and composing end result
+
+
+
+
+
+
+
+
+
+
+
+
+
+"Even syllabic verbs I, ˊ:0 blocking"
+%ˊ:0 /<= V: _ C:+ (X3:) [ %^3VOW: | %^4VOW: | %^5VOW: ] ;
+
+2012-06-01 Vx: _ (%ˊ) C:+ (X3:) [ %^VOWSH: | %^2VOW: | %^3VOW: | %^4VOW: ] ;
+		      Vy in (â e å õ u i o a)
+		matched ;
+
+VOWEL SHIFT,
+
+RAISING
+
+
+
+
+
+
+
+LOWERING 
+
+
+
+
+
+
+
+SECONDARY FRONTING
+
+
+
+
+! used for deriving +V+Inf in TIETTED: _uudd_ >uˊvdded
+"Even syllabic verbs I, secondary u > v PAL"
+u:v <=> u _ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] %^VOWFront: %^PAL: %>:0 ;
+
+RELATIVE VOWEL LENGTHENING
+
+
+
+
+
+
+
+
+
+VOWEL DUMMY LOSS
+
+
+
+SEMI VOWELS
+
+
+
+
+
+VOWELS TENSE vs LAX 2012-11-28
+
+VOWEL and ZERO ALTERNATION
+
+
+
+THE NON-ORTHOGRAPHIC SYLLABLE 
+
+
+
+PALATALIZATION
+
+
+
+
+! removing palatalization Prs+Sg3
+ "Even-syllabic verbs I, removing palatalization in -ed verbs"
+  %ˊ:0 <=> V: _ [ C:+ | C:+ %': C:+ ] ( %^VOWSH: %^CLong: | %^VOWL: %^CShort: ) ( %^VOWLower: | %^VOWRaise: ) (%^VOWFront: ) (X3:) %^PALNo: [ %>:0 | #:0 ] ;
+
+
+
+
+Consonant grad rules
+
+! Weakening Consonant Cluster
+
+dealing with relative length changes
+mõõnnâd : mõˊnne : mõõn 
+
+
+"Even syllabic verbs I, cg vv:v"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Strengthening Consonant Cluster
+
+
+
+
+
