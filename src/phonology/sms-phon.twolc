@@ -18,6 +18,16 @@
 !
 !
 
+!! !!! Introduction
+!! The rule file for Skolt Saami is divided into 5 main types:
+!! 
+!! # Definitions
+!! # Consonant shift rules (tbw)
+!! # Vowel alternation rules
+!! # Consonant gradaton rules
+!! # Rules for cleaning up and composing end result
+
+
 Alphabet
   a b c d e f g h i ï j k l m n o p q r s t u v w x y z æ ä ø ö å
   á é í
@@ -317,88 +327,88 @@ Rules
 
 
 
-!
-!! "Even syllabic verbs I, vowel position I > II-III"
-!!  Vx:Vy <=> (C:+) _ V: (ˊ:) C:+ (X3:) [ %^2VOW: | %^3VOW: ] ;
-!!  		where Vx in (â o e å ä)
-!!  			  Vy in (õ u i o a)
-!!  		matched ;
-!! 
-!! "Even syllabic verbs I, vowel position II > I"
-!!  Vx:Vy <=> (C:+) _ V: ˊ:0 C:+ (X3:) %^1VOW: ;
-!!  		   (C:+) V: _ ˊ:0 C:+ (X3:) %^1VOW: ;
-!!  		   (C:+) _ ˊ:0 C:+ %^1VOW: ;
-!!  		where Vx in (õ u i o a)
-!!  			  Vy in (â o e å ä)
-!!  		matched ;
-!! 
-!! ! 2012-06-01 This appears to depart from a vowel with "ˊ"
-!! ! so it must be III > IV
-!! "Even syllabic verbs I, vowel position II > IV"
-!!  Vx:Vy <=> (C:+) _ V:0 ˊ C:+ %^4VOW: ;
-!!  		where Vx in (õ u i o a)
-!!  			  Vy in (â o e å ä)
-!!  		matched ;
-!! 
-!! "Even syllabic verbs I, diftong position I > II â:õ"
-!!  â:õ <=> (C:+) [ e: | u: ] _ (ˊ:) C:+ (X3:) [ %^2VOW: | %^3VOW: ] ;
-!! 
-!! "Even syllabic verbs I, diftong position I > II ä:a"
-!!  ä:a <=> (C:+) [ e: | u: ] _ (ˊ:) C:+ (X3:) %^2VOW: ;
-!! 
-!! "Even syllabic verbs I, diftong position I > II ä:e"
-!!  ä:e <=> (C:+) [ e: | u: ] _ (ˊ:) C:+ (X3:) %^3VOW: ;
-!! 
-!! 
-!! "Even syllabic verbs I, diftong position II > I & IV i:e"
-!!  i:e <=> (C:+) _ [ õ:â | a:ä ] (ˊ) C:+ (X3:) [ %^1VOW: | %^4VOW: ] ;
-!! 
-!! "Even syllabic verbs I, diftong position II > I & IV õ:â"
-!!  Vx:Vy <=> (C:+) [ i:e | u: ] _ (ˊ) C:+ (X3:) [ %^1VOW: | %^4VOW: ] ;
-!!  		where Vx in (õ a)
-!!  			  Vy in (â ä)
-!!  		matched ;
-!! 
-!! "Even syllabic verbs I, diftong position II > III a:e"
-!!  a:e <=> (C:+) [ i: | u: ] _ (ˊ) C:+ (X3:) [ %^3VOW: ] ;
-!! 
-!! 
-!! !e:â e:õ
-!! "Even syllabic verbs I, diftong position V > I & IV i:e"
-!!  i:e <=> (C:+) _ [e: | â:] ˊ: C:+ (X3:) [ %^1VOW: | %^4VOW: ] ;
-!! 
-!! "Even syllabic verbs I, diftong position V > I & IV e:â"
-!!  e:â <=> (C:+) [i: | u:] _ ˊ: C:+ (X3:) [ %^1VOW: | %^4VOW: ] ;
-!! 
-!! "Even syllabic verbs I, diftong position V > I & IV â:ä"
-!!  â:ä <=> (C:+) [i: | u:] _ ˊ: C:+ (X3:) [ %^1VOW: | %^4VOW: ] ;
-!! 
-!! "Even syllabic verbs I, diftong position V > II & III e:õ"
-!!  e:õ <=> (C:+) [ i: | u: ] _ ˊ: C:+ (X3:) [ %^2VOW: | %^3VOW: ] ;
-!! 
-!! !! 2012-06-01 Unresolved <= conflict with respect to 'â:õ' vs. 'â:a'
-!! !! between "Even syllabic verbs I, diftong position I > II â:õ"
-!! !! and "Even syllabic verbs I, diftong position V > II & III â:a"
-!! !TEMPORARY REMOVAL
-!! !"Even syllabic verbs I, diftong position V > II & III â:a"
-!! ! â:a <=> (C:+) [ i: | u: ] _ ˊ: C:+ (X3:)   %^2VOW: ;
-!! !!
-!! !!2012-06-01
-!! !! Warning: Unresolved <= conflict with respect to 'â:õ' vs. 'â:e'
-!! !!    between "Even syllabic verbs I, diftong position I > II â:õ"
-!! !!        and "Even syllabic verbs I, diftong position V > II & III â:e"
-!! !! TEMPORARY REMOVAL
-!! !"Even syllabic verbs I, diftong position V > II & III â:e"
-!! ! â:e <=> (C:+) [ i: | u: ] _ ˊ C:+ (X3:) %^3VOW: ;
-!! 
-!! 
-!! 
-! Consonant grad rules
 
-!! Weakening Consonant Cluster
+! "Even syllabic verbs I, vowel position I > II-III"
+!  Vx:Vy <=> (C:+) _ V: (ˊ:) C:+ (X3:) [ %^2VOW: | %^3VOW: ] ;
+!  		where Vx in (â o e å ä)
+!  			  Vy in (õ u i o a)
+!  		matched ;
+! 
+! "Even syllabic verbs I, vowel position II > I"
+!  Vx:Vy <=> (C:+) _ V: ˊ:0 C:+ (X3:) %^1VOW: ;
+!  		   (C:+) V: _ ˊ:0 C:+ (X3:) %^1VOW: ;
+!  		   (C:+) _ ˊ:0 C:+ %^1VOW: ;
+!  		where Vx in (õ u i o a)
+!  			  Vy in (â o e å ä)
+!  		matched ;
+! 
+! ! 2012-06-01 This appears to depart from a vowel with "ˊ"
+! ! so it must be III > IV
+! "Even syllabic verbs I, vowel position II > IV"
+!  Vx:Vy <=> (C:+) _ V:0 ˊ C:+ %^4VOW: ;
+!  		where Vx in (õ u i o a)
+!  			  Vy in (â o e å ä)
+!  		matched ;
+! 
+! "Even syllabic verbs I, diftong position I > II â:õ"
+!  â:õ <=> (C:+) [ e: | u: ] _ (ˊ:) C:+ (X3:) [ %^2VOW: | %^3VOW: ] ;
+! 
+! "Even syllabic verbs I, diftong position I > II ä:a"
+!  ä:a <=> (C:+) [ e: | u: ] _ (ˊ:) C:+ (X3:) %^2VOW: ;
+! 
+! "Even syllabic verbs I, diftong position I > II ä:e"
+!  ä:e <=> (C:+) [ e: | u: ] _ (ˊ:) C:+ (X3:) %^3VOW: ;
+! 
+! 
+! "Even syllabic verbs I, diftong position II > I & IV i:e"
+!  i:e <=> (C:+) _ [ õ:â | a:ä ] (ˊ) C:+ (X3:) [ %^1VOW: | %^4VOW: ] ;
+! 
+! "Even syllabic verbs I, diftong position II > I & IV õ:â"
+!  Vx:Vy <=> (C:+) [ i:e | u: ] _ (ˊ) C:+ (X3:) [ %^1VOW: | %^4VOW: ] ;
+!  		where Vx in (õ a)
+!  			  Vy in (â ä)
+!  		matched ;
+! 
+! "Even syllabic verbs I, diftong position II > III a:e"
+!  a:e <=> (C:+) [ i: | u: ] _ (ˊ) C:+ (X3:) [ %^3VOW: ] ;
+! 
+! 
+! !e:â e:õ
+! "Even syllabic verbs I, diftong position V > I & IV i:e"
+!  i:e <=> (C:+) _ [e: | â:] ˊ: C:+ (X3:) [ %^1VOW: | %^4VOW: ] ;
+! 
+! "Even syllabic verbs I, diftong position V > I & IV e:â"
+!  e:â <=> (C:+) [i: | u:] _ ˊ: C:+ (X3:) [ %^1VOW: | %^4VOW: ] ;
+! 
+! "Even syllabic verbs I, diftong position V > I & IV â:ä"
+!  â:ä <=> (C:+) [i: | u:] _ ˊ: C:+ (X3:) [ %^1VOW: | %^4VOW: ] ;
+! 
+! "Even syllabic verbs I, diftong position V > II & III e:õ"
+!  e:õ <=> (C:+) [ i: | u: ] _ ˊ: C:+ (X3:) [ %^2VOW: | %^3VOW: ] ;
+! 
+! ! 2012-06-01 Unresolved <= conflict with respect to 'â:õ' vs. 'â:a'
+! ! between "Even syllabic verbs I, diftong position I > II â:õ"
+! ! and "Even syllabic verbs I, diftong position V > II & III â:a"
+! !TEMPORARY REMOVAL
+! !"Even syllabic verbs I, diftong position V > II & III â:a"
+! ! â:a <=> (C:+) [ i: | u: ] _ ˊ: C:+ (X3:)   %^2VOW: ;
+! !
+! !2012-06-01
+! ! Warning: Unresolved <= conflict with respect to 'â:õ' vs. 'â:e'
+! !    between "Even syllabic verbs I, diftong position I > II â:õ"
+! !        and "Even syllabic verbs I, diftong position V > II & III â:e"
+! ! TEMPORARY REMOVAL
+! !"Even syllabic verbs I, diftong position V > II & III â:e"
+! ! â:e <=> (C:+) [ i: | u: ] _ ˊ C:+ (X3:) %^3VOW: ;
+! 
+! 
+! 
+!! !! Consonant grad rules
 
-!dealing with relative length changes
-! mõõnnâd : mõˊnne : mõõn 
+!! ! Weakening Consonant Cluster
+
+!! dealing with relative length changes
+!! mõõnnâd : mõˊnne : mõõn 
 !"Even syllabic verbs I, cg in relation to Vowel length"
 
 ! V Cx Cx:0 
@@ -411,7 +421,7 @@ Rules
  		where Cx in (đ l r m n v) ;
 
 !! "Even syllabic verbs I, cg vv:v"
-!! v:0 <=> :V (%ˊ: | 0:%ˊ) v _ (%^VOWL: ) %^CShort: ; 
+! v:0 <=> :V (%ˊ: | 0:%ˊ) v _ (%^VOWL: ) %^CShort: ; 
 
 ! used with  +N+Sg+Nom > +N+Sg+Gen
 ! kuss > kuuzz
@@ -494,22 +504,22 @@ Rules
 
 
 
-!! 
-!! !! 2009: 20
-!! "Even-syllabic nouns, In gg or ǧǧ"
-!!  Cx:Cy <=> V: [ (ˊ:) [ d: | l | r ]| [ u: | i: ] (ˊ:) ] _ X3: ;
-!!               where Cx in (ǧ g)
-!!                     Cy in (j ǥ)
-!!               matched ;
-!! 
-!! ! ǩeäˊdǧǧ: ǩieˊđjest
-!! ! ǩeäˊdǧǧ: ǩeäđǥaž
-!! 
-!! "xx:x rule"
-!!  Cx:0 <=> V ( ˊ: ) Cx _ V X3:0 ;
-!! ! to be refined…
-!! 
-!! ! goal:
-!! ! mõõnnâd:mõõˊnn	POORRÂD ;
-!! ! 
-!! 
+! 
+! ! 2009: 20
+! "Even-syllabic nouns, In gg or ǧǧ"
+!  Cx:Cy <=> V: [ (ˊ:) [ d: | l | r ]| [ u: | i: ] (ˊ:) ] _ X3: ;
+!               where Cx in (ǧ g)
+!                     Cy in (j ǥ)
+!               matched ;
+! 
+! ! ǩeäˊdǧǧ: ǩieˊđjest
+! ! ǩeäˊdǧǧ: ǩeäđǥaž
+! 
+! "xx:x rule"
+!  Cx:0 <=> V ( ˊ: ) Cx _ V X3:0 ;
+! ! to be refined…
+! 
+! ! goal:
+! ! mõõnnâd:mõõˊnn	POORRÂD ;
+! ! 
+! 
