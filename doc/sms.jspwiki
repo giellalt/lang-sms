@@ -81,85 +81,170 @@ The rule file for Skolt Saami is divided into 5 main types:
 # Rules for cleaning up and composing end result
 
 
+ !! Alphabet 
+Alphabet 
 
 
 
 
 
+ !! Sets 
+Sets 
 
 
 
+ !! Definitions 
+Definitions 
 
 
+ !!! Rules 
+Rules 
 
+Consonant shift rules 
+(tbw)
 
 
-VOWEL SHIFT,
 
-RAISING
 
 
+__Even syllabic verbs I, vowel shortening__ -
 
 
+!!Vowel alternation rules
 
+!VOWEL SHIFT
 
+!RAISING
+deriving +Ind+Prt+Sg1, +Ind+Prt+Sg2 +Ind+Prt+Pl3 in teevvad:tivvu
 
-LOWERING 
+__Even syllabic verbs I, vowel raising__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
 
 
 
 
+__Even syllabic verbs I, diphthong raising beginning with u__ - deriving +Ind+Prt+Pl3 in kuâs'sad > kuõs'su, kuärŋŋad kuårŋŋu
 
 
+__Even syllabic verbs I, diphthong raising beginning with e:i__ - deriving +Ind+Prt+Pl3 in reäkkad > riâkku, veârrad > viõrru
 
-SECONDARY FRONTING
 
+__Even syllabic verbs I, diphthong raising with e:i at onset__ - deriving +Ind+Prt+Pl3 in reäkkad > riâkku, veârrad > viõrru
 
 
 
+!LOWERING 
 
-RELATIVE VOWEL LENGTHENING
 
 
+__Even syllabic verbs I, vowel lowering__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
 
+__Even syllabic verbs I, diphthong opening after u__ - deriving +Ind+Prs+Sg3, in kuõskkâd kueˊsǩǩe
 
+__Even syllabic verbs I, diphthong opening after i:e__ - deriving +Ind+Prs+Sg3, in čiõkkâd
 
+__Even syllabic verbs I, diphthong opening i:e before õ:, å:__ - used in conjunction with diphthong opening
 
 
 
+!SECONDARY FRONTING
 
-VOWEL DUMMY LOSS
 
 
+__Even syllabic verbs I, secondary vowel fronting with PAL u õ:e__ - deriving +Ind+Prs+Pl3 in VIQQAD: kuõskkâd >kueˊsǩǩe
 
-SEMI VOWELS
 
 
+__Even syllabic verbs I, secondary vowel fronting with PAL__ - deriving +Ind+Prs+Pl3 in VIQQAD: čiõkkâd >čeäˊǩ'ǩe, also TIETTED vueˊlǧǧed+V+Ind+Prs+Pl3: vuäˊlǧǧe
 
 
 
-VOWELS TENSE vs LAX 2012-11-28
+!RELATIVE VOWEL LENGTHENING
 
-VOWEL and ZERO ALTERNATION
+vowel lengthening and consonant shortening, %^VOWL and %^CShort 
 
 
+__Even syllabic verbs I, relative vowel lengthening__ - deriving +V+Inf in TIETTED: uudd > uˊvdded
+2012-06-05 removing "i" and "u" because viikkâd renders viiiǥǥam
 
-THE NON-ORTHOGRAPHIC SYLLABLE 
 
+__Even syllabic nouns, relative vowel extra lengthening__ - deriving +V+Inf in TIETTED: uudd >uˊvdded
 
 
-PALATALIZATION
+__Even syllabic nouns, relative vowel extra lengthening u not followed by v__ - declension of nouns kunn > kuun
 
 
 
 
+simultaneous lengthening and raising, hmm: xfst ordering might be easier
 
+__Even syllabic verbs I, relative vowel lengthening and raising__ - conjugation of ceˊpcced > ciiˊpcež
 
 
 
+__Even syllabic verbs I, relative vowel lengthening and lowering__ -  juˊrdded > joordam juˊrdded+V+Ind+Prs+Sg1
 
 
-!!Consonant grad rules
+__Vowel lengthening in INDPRSSG3 and IMPSG2__ - kååˊmmerd, maainâst
+
+!VOWEL DUMMY LOSS
+
+
+__Vowel dummy loss when not INDPRSSG3 and IMPSG2__ - QE1
+
+
+!SEMI VOWELS
+
+
+__Even syllabic nouns, for j>i__ - sijdd > siid This will need a special extra-lengthening rule
+
+
+__Even syllabic verbs,  for v>u__ - uvdd > ouˊdde
+
+
+__Even syllabic verbs,  for v>u__ - luhtt  s s: ...
+
+
+__trisyllabic verbs and doer derivations, i>j__ -
+
+!VOWELS TENSE vs LAX 2012-11-28
+
+
+__Even-syllabic nouns, for â:e__ - miârr:mieˊrre
+
+!VOWEL and ZERO ALTERNATION
+
+
+__Realization for QE1 in e  __ - kåˊmrded, vuejat, maainâst
+
+__Realization for QE1 in a __ - 
+
+!THE NON-ORTHOGRAPHIC SYLLABLE 
+
+
+__Loss of _’_ when preceded by vowel__ - This is a temporary solution to  "’" in võˊll’jed
+
+
+!PALATALIZATION
+
+
+__Even-syllabic verbs I, Palatalization mark between V and C__ - used +Ind+Prs+Pl3, +Ind+Prt+Pl3
+The left context allows for:
+Vowel shortening, and j/v > V 
+
+
+__Even-syllabic verbs I, Palatalization of gg and kk__ -
+
+
+__Even-syllabic nouns, removing palatalization in -est +Loc nouns__ - removing palatalization in +Sg+Ill,  pieˊss:peässa
+
+
+
+
+
+
+
+
+!!Consonant gradaton rules
 
 !Weakening Consonant Cluster
 
@@ -169,7 +254,11 @@ mõõnnâd : mõˊnne : mõõn
 
 
 
-__Even syllabic nouns I, with extra lengthening of vowel V>VV and SS>ZZ__ -
+__Even syllabic verbs I, cg__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, teevvad > teev, jiõnn:jiõn
+
+
+__Even syllabic nouns I, with extra lengthening of vowel V>VV and SS>ZZ__ 
+__Even syllabic nouns I, with extra lengthening of vowel V>VV and SS>ZZ__ 
 used with  +N+Sg+Nom > +N+Sg+Gen for cases like
 {{kuss > kuuzz}}.
 {{{
@@ -181,17 +270,32 @@ used with  +N+Sg+Nom > +N+Sg+Gen for cases like
 }}}
 
 
+__Even syllabic nouns I, with extra lengthening of vowel ij>ii/uv>uu and dd>d__ - used with  +N+Sg+Nom > +N+Sg+Gen, sijdd > siid
 
 
 
 
+__Even syllabic verbs I, Voicing __ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
+
+
+__Even syllabic verbs I, third consonant loss __ - lgg:lǥ, V Ca Cx Cx:0, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants following consonant at coda that become single consonants in gradation
+
+__Even syllabic verbs I, third consonant loss idd:id __ - idd:id, +Imp+Sg2, +Ind+Prs+ConNeg double consonants following vowel and "i" at coda that become single consonants in gradation
+
+
+__Even syllabic verbs I, t>đ __ - tt:đ
+
+__Even syllabic verbs I, second consonant loss__ -
+
+__Even syllabic verbs I, lgg>lǥ __ - vueˊlǧǧed+V+Ind+Prs+Sg2 => vuâlǥak
 
 
 
 
+__Even syllabic verbs I, 'lǧǧ>'lj __ - vueˊlǧǧed+V+Ind+Prt+Pl1 => vuõˊljim
 
 
-
+!!Rules for cleaning up and composing end result
 
 * Strengthening Consonant Cluster
 * V shortening and C lengthening 
@@ -201,5 +305,9 @@ used with  +N+Sg+Nom > +N+Sg+Gen for cases like
 
 
 
+__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2__ - kååˊmmerd 
 
 
+
+__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2__ -
+__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2__ -
