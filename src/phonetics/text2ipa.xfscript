@@ -13,7 +13,7 @@
 ! giellatekno@hum.uit.no or divvun@samediggi.no
 
 ! ===================================== !
-! Phonological converter for North Sámi !
+! Phonological converter for Skolt Sámi !
 ! ===================================== !
 
 ! To eventual curious readers
@@ -22,24 +22,24 @@
 ! different formats: SAMPA, Fenno-Ugric transcription or Finnish
 ! orthography.
 
-! Usage: Compile sme as usual:
-! make GTLANG=sme
+! Usage: Compile sms as usual:
+! make GTLANG=sms
 ! Pipe text through the analyser:
-! cat text | preprocess | lookup -flags mbTT bin/phon-sme.fst | ..
+! cat text | preprocess | lookup -flags mbTT bin/phon-sms.fst | ..
 
 !We may also add POS tagging:
-! cat corp/pedkorpus.txt | preprocess | lookup -flags mbTT -utf8 bin/pos-sme.fst | tr '\t' '+' | cut -d"+" -f1,3 | uniq | lookup -flags mbTT -utf8 bin/phon-sme.fst | cut -f2 | l
+! cat corp/pedkorpus.txt | preprocess | lookup -flags mbTT -utf8 bin/pos-sms.fst | tr '\t' '+' | cut -d"+" -f1,3 | uniq | lookup -flags mbTT -utf8 bin/phon-sms.fst | cut -f2 | l
 
 ! In order to make this better we should uniq the closed POS before giving them
 ! to the phonological analyser (TODO: Check whether output is ok).
 
 ! We might also add syllable boundaries. Here the simple version:
-!cat corp/pedkorpus.txt | preprocess | lookup -flags mbTT -utf8 bin/hyphrules-sme.fst | cut -f2 | lookup -flags mbTT -utf8 bin/phon-sme.fst | cut -f2 | tr '\n' ' '  | see
+!cat corp/pedkorpus.txt | preprocess | lookup -flags mbTT -utf8 bin/hyphrules-sms.fst | cut -f2 | lookup -flags mbTT -utf8 bin/phon-sms.fst | cut -f2 | tr '\n' ' '  | see
 
 ! echo "dat lea 123" | preprocess | 
-! lookup -flags mbTT -utf8 bin/sme-num.fst | cut -f2 |
-! lookup -flags mbTT -utf8 bin/hyphrules-sme.fst | cut -f2 | 
-! lookup -flags mbTT -utf8 bin/phon-sme.fst | cut -f2 | tr '\n' ' ' | l
+! lookup -flags mbTT -utf8 bin/sms-num.fst | cut -f2 |
+! lookup -flags mbTT -utf8 bin/hyphrules-sms.fst | cut -f2 | 
+! lookup -flags mbTT -utf8 bin/phon-sms.fst | cut -f2 | tr '\n' ' ' | l
 
 
 !echo <<defining POS tags...>>
