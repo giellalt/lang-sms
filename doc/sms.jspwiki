@@ -70,6 +70,7 @@ Skolt Saami noun morphology
 
 
 
+!!!Skolt Sámi TWOLC file
 
 !!!Introduction
 The rule file for Skolt Saami is divided into 5 main types:
@@ -81,20 +82,66 @@ The rule file for Skolt Saami is divided into 5 main types:
 # Rules for cleaning up and composing end result
 
 
- !! Alphabet 
-Alphabet 
+Alphabets, sets and definitions
+
+Alphabet
+
+ *   a b c d e f g h i ï j k l m n o p q r s t u v w x y z 
+ *   æ ä ø ö å á é í										
+ *   Å Ä Ö Ø Æ Á											
+ *   Á É Ó Ú Í À È Ò Ù Ì Ë Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð			
+ *   á é ó ú í à è ò ù ì ë ü ï â ê ô û î ã ý þ ñ ð ß ª ß ç	
+ *   č ǩ ǯ ǧ ž đ ǥ ʒ š ŋ									
+ *   Č Ǩ Ǯ Ǧ Ž Đ Ǥ Ʒ Š Ŋ									
+ *   õ â													
+ *   Õ Â													
+
+* Vertical hyphen: as long consonant marker that does not appear in writing 
+* Upper right single quotation mark: Syllable marker that appears in writing 
+* Acute accent
+
+Trigger symbols
+
+ *  %^1VOW:0 %^2VOW:0 %^3VOW:0 %^4VOW:0 %^5VOW:0  Vow triggers
+
+ *  %^VOWLower:0  i>e, õ>â, â>ä, u>o, o>å
+ *  %^VOWRaise:0  e>i, ä>e 
+ *  %^VOWSH:0	  
+ *  %^VOWL:0      Lengthens vowel in relation to consonant
+ *  %^VOWXL:0     Extra lengthens vowel in relation to consonant in nouns, for example
+ *  %^CXLong:0 %^CLong:0 %^CShort:0  Lengthening, shortening
+ *  %^VOWFront:0	      Fronting
+ *  %^PAL:0 %^PALNo:0    Palatalisation
+ *  X3:0   causes weak grade
+ *  QÂ1:0  used with "mainsted" to tell (a story)
+ *  QA1:0  used with "vuejted" to drive (causative)
+ *  QE1:0  used with "kåˊmrded" to bow
+ *  %^IMPSG2:0	     
+ *  %^INDPRSSG3:0   
+ *  %^FRICG:0	     
+ *  %^VOWTense:0    
+
+Literal quotes and angles must be escaped (cf morpheme boundaries below):
+
+* »
+* «
+* >
+* <
 
 
 
 
+!!Sets
 
- !! Sets 
-Sets 
+ *  C	= b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ; 
+ *  V	= a e i o u å ä â õ ;										    
+
+ *  CNoJV        = b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ;    
 
 
+Definitions
 
- !! Definitions 
-Definitions 
+
 
 
  !!! Rules 
@@ -107,7 +154,8 @@ Consonant shift rules
 
 
 
-__Even syllabic verbs I, vowel shortening__ -
+
+__Even syllabic verbs I, vowel shortening__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
 
 
 !!Vowel alternation rules
@@ -115,6 +163,7 @@ __Even syllabic verbs I, vowel shortening__ -
 !VOWEL SHIFT
 
 !RAISING
+
 deriving +Ind+Prt+Sg1, +Ind+Prt+Sg2 +Ind+Prt+Pl3 in teevvad:tivvu
 
 __Even syllabic verbs I, vowel raising__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
@@ -138,9 +187,11 @@ __Even syllabic verbs I, diphthong raising with e:i at onset__ - deriving +Ind+P
 
 __Even syllabic verbs I, vowel lowering__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
 
+
 __Even syllabic verbs I, diphthong opening after u__ - deriving +Ind+Prs+Sg3, in kuõskkâd kueˊsǩǩe
 
 __Even syllabic verbs I, diphthong opening after i:e__ - deriving +Ind+Prs+Sg3, in čiõkkâd
+
 
 __Even syllabic verbs I, diphthong opening i:e before õ:, å:__ - used in conjunction with diphthong opening
 
@@ -164,6 +215,7 @@ vowel lengthening and consonant shortening, %^VOWL and %^CShort
 
 
 __Even syllabic verbs I, relative vowel lengthening__ - deriving +V+Inf in TIETTED: uudd > uˊvdded
+
 2012-06-05 removing "i" and "u" because viikkâd renders viiiǥǥam
 
 
@@ -228,6 +280,7 @@ __Loss of _’_ when preceded by vowel__ - This is a temporary solution to  "’
 
 
 __Even-syllabic verbs I, Palatalization mark between V and C__ - used +Ind+Prs+Pl3, +Ind+Prt+Pl3
+
 The left context allows for:
 Vowel shortening, and j/v > V 
 
@@ -236,6 +289,8 @@ __Even-syllabic verbs I, Palatalization of gg and kk__ -
 
 
 __Even-syllabic nouns, removing palatalization in -est +Loc nouns__ - removing palatalization in +Sg+Ill,  pieˊss:peässa
+
+
 
 
 
@@ -253,11 +308,9 @@ mõõnnâd : mõˊnne : mõõn
 
 
 
-
 __Even syllabic verbs I, cg__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, teevvad > teev, jiõnn:jiõn
 
 
-__Even syllabic nouns I, with extra lengthening of vowel V>VV and SS>ZZ__ 
 __Even syllabic nouns I, with extra lengthening of vowel V>VV and SS>ZZ__ 
 used with  +N+Sg+Nom > +N+Sg+Gen for cases like
 {{kuss > kuuzz}}.
@@ -309,5 +362,3 @@ __Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2__ - kååˊmmerd
 
 
 
-__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2__ -
-__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2__ -
