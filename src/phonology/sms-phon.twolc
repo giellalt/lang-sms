@@ -12,7 +12,7 @@
 ! Other licensing options are available upon request, please contact
 ! giellatekno@hum.uit.no or divvun@samediggi.no
 
-! Skolt Sámi TWOLC file
+!! !!!Skolt Sámi TWOLC file
 !
 ! $Id$
 !
@@ -28,45 +28,52 @@
 !! # Rules for cleaning up and composing end result
 
 
-Alphabet !!= !! @CODE@
-  a b c d e f g h i ï j k l m n o p q r s t u v w x y z æ ä ø ö å
-  á é í
-  Å Ä Ö Ø Æ Á
-  Á É Ó Ú Í À È Ò Ù Ì Ë Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð
-  á é ó ú í à è ò ù ì ë ü ï â ê ô û î ã ý þ ñ ð ß ª ß ç
-  č ǩ ǯ ǧ ž đ ǥ ʒ š ŋ
-  Č Ǩ Ǯ Ǧ Ž Đ Ǥ Ʒ Š Ŋ
-  õ â
-  Õ Â
- %':0 ! long consonant marker that does not appear in writing 
- ’ ! Syllable marker that appears in writing _võˊll’jed_
-  %ˊ ! :0 
-!  %,:%ˊ
-  %^1VOW:0 %^2VOW:0 %^3VOW:0 %^4VOW:0 %^5VOW:0
+!! !!! Alphabets, sets and definitions
 
-%^VOWLower:0 ! i>e, õ>â, â>ä, u>o, o>å
-%^VOWRaise:0 ! e>i, ä>e 
- %^VOWSH:0
- %^VOWL:0 ! Lengthens vowel in relation to consonant
- %^VOWXL:0 ! Extra lengthens vowel in relation to consonant
-! in nouns, for example
- %^CXLong:0 %^CLong:0 %^CShort:0
-%^VOWFront:0
-%^PAL:0 %^PALNo:0
-  X3:0 ! causes weak grade
- QÂ1:0 ! used with "mainsted" 'to tell (a story)'
- QA1:0 ! used with "vuejted" 'to drive (causative)'
- QE1:0 ! used with "kåˊmrded" 'to bow'
- %^IMPSG2:0
- %^INDPRSSG3:0
- %^FRICG:0
- %^VOWTense:0
+!! !! Alphabet
 
-! Literal quotes and angles must be escaped (cf morpheme boundaries below):
- »7     ! »
- «7     ! «
- %[%>%] ! >
- %[%<%] ! <
+Alphabet 
+  a b c d e f g h i ï j k l m n o p q r s t u v w x y z !!= * @CODE@
+  æ ä ø ö å á é í										!!= * @CODE@
+  Å Ä Ö Ø Æ Á											!!= * @CODE@
+  Á É Ó Ú Í À È Ò Ù Ì Ë Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð			!!= * @CODE@
+  á é ó ú í à è ò ù ì ë ü ï â ê ô û î ã ý þ ñ ð ß ª ß ç	!!= * @CODE@
+  č ǩ ǯ ǧ ž đ ǥ ʒ š ŋ									!!= * @CODE@
+  Č Ǩ Ǯ Ǧ Ž Đ Ǥ Ʒ Š Ŋ									!!= * @CODE@
+  õ â													!!= * @CODE@
+  Õ Â													!!= * @CODE@
+
+ %':0 !! * Vertical hyphen: as long consonant marker that does not appear in writing 
+ ’    !! * Upper right single quotation mark: Syllable marker that appears in writing 
+ %ˊ  !! * Acute accent
+
+!! !! Trigger symbols
+  
+ %^1VOW:0 %^2VOW:0 %^3VOW:0 %^4VOW:0 %^5VOW:0 !!= * @CODE@ Vow triggers
+
+ %^VOWLower:0 !!= * @CODE@ i>e, õ>â, â>ä, u>o, o>å
+ %^VOWRaise:0 !!= * @CODE@ e>i, ä>e 
+ %^VOWSH:0	  !!= * @CODE@
+ %^VOWL:0     !!= * @CODE@ Lengthens vowel in relation to consonant
+ %^VOWXL:0    !!= * @CODE@ Extra lengthens vowel in relation to consonant in nouns, for example
+ %^CXLong:0 %^CLong:0 %^CShort:0 !!= * @CODE@ Lengthening, shortening
+ %^VOWFront:0	     !!= * @CODE@ Fronting
+ %^PAL:0 %^PALNo:0   !!= * @CODE@ Palatalisation
+ X3:0  !!= * @CODE@ causes weak grade
+ QÂ1:0 !!= * @CODE@ used with "mainsted" to tell (a story)
+ QA1:0 !!= * @CODE@ used with "vuejted" to drive (causative)
+ QE1:0 !!= * @CODE@ used with "kåˊmrded" to bow
+ %^IMPSG2:0	    !!= * @CODE@ 
+ %^INDPRSSG3:0  !!= * @CODE@ 
+ %^FRICG:0	    !!= * @CODE@ 
+ %^VOWTense:0   !!= * @CODE@ 
+
+!! Literal quotes and angles must be escaped (cf morpheme boundaries below):
+
+ »7     !! * »
+ «7     !! * «
+ %[%>%] !! * >
+ %[%<%] !! * <
 
 ! Morpheme boundaries:
  «  ! Derivational prefix
@@ -79,18 +86,23 @@ Alphabet !!= !! @CODE@
 ! End of alphabet definitions
   ;
 
-Sets !!= !! @CODE@
+
+!! !!Sets
+Sets 
 
 ! Letter =
- C	= b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ;
- V	= a e i o u å ä â õ ;
+ C	= b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ; !!= * @CODE@
+ V	= a e i o u å ä â õ ;										    !!= * @CODE@
 
- CNoJV        = b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ;
+ CNoJV        = b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ;    !!= * @CODE@
 
-Definitions !!= !! @CODE@
+
+!! !! Definitions
+
+Definitions 
 
 LongC = [ k: k: | s: s: | š: š: | c: c: | č: č: | m m: | v v: | đ đ: | n n: | l l: | r r: ] ;
-!;
+
 
 Rules !!= !!! @CODE@
 
@@ -105,9 +117,9 @@ Rules !!= !!! @CODE@
 ! "Even syllabic verbs I, ˊ:0 blocking"
 ! %ˊ:0 /<= V: _ C:+ (X3:) [ %^3VOW: | %^4VOW: | %^5VOW: ] ;
 
-! used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+
 "Even syllabic verbs I, vowel shortening"
-!! __@RULENAME@__ -
+!! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
  Vx:0 <=> Vx: _ (%ˊ: | 0:%ˊ) LongC %^VOWSH: %^CLong: (%^VOWLower: |%^VOWRaise: ) (%^VOWFront: ) (X3:) (%^PAL: |%^PALNo: ) [ %>:0 | #:0 ]  ;
 ! 2012-06-01 Vx: _ (%ˊ) C:+ (X3:) [ %^VOWSH: | %^2VOW: | %^3VOW: | %^4VOW: ] ;
  		where Vx in (â e å õ u i o a ä) ;
@@ -118,6 +130,7 @@ Rules !!= !!! @CODE@
 !! !VOWEL SHIFT
 
 !! !RAISING
+
 !! deriving +Ind+Prt+Sg1, +Ind+Prt+Sg2 +Ind+Prt+Pl3 in teevvad:tivvu
 
 "Even syllabic verbs I, vowel raising"
@@ -164,17 +177,18 @@ Rules !!= !!! @CODE@
 
 "Even syllabic verbs I, vowel lowering"
 !! __@RULENAME@__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
- Vx:Vy <=> _ Vx: (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWSH: %^CLong: | %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
-           Vx: _ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
-           [#: | C: ] _ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWSH: %^CLong: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
+ Vx:Vy <=>  _ Vx: (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWSH: %^CLong: | %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
+        Vx: _     (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWL: %^CShort: )                      %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
+ [#: | C: ] _     (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWSH: %^CLong: )                      %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
 ! juˊrdded+V+Cond+Sg1: joordčem
-           [#: | C: ] _ 0:Vy (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
+ [#: | C: ] _ 0:Vy (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
 ! juˊrdded > joordam
-          [ #: | C ] _ ( u: | i: ) (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWL: %^CShort: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
-          [ #: | C ] _ ((%ˊ: | 0:%ˊ) ( v:u | j:i )) (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWSH: %^CLong: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
+ [ #: | C ] _ ( u: | i: ) (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWL: %^CShort: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
+ [ #: | C ] _ ((%ˊ: | 0:%ˊ) ( v:u | j:i )) (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWSH: %^CLong: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
               where Vx in (õ u i o a)
                     Vy in (â o e å ä)
               matched ;
+
 ! diphthongs
 
 "Even syllabic verbs I, diphthong opening after u"
@@ -184,7 +198,6 @@ Rules !!= !!! @CODE@
                    Vy in (â ä)
              matched ;
 
-! 
 "Even syllabic verbs I, diphthong opening after i:e"
 !! __@RULENAME@__ - deriving +Ind+Prs+Sg3, in čiõkkâd
  Vx:Vy <=> i: _ (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
@@ -192,7 +205,7 @@ Rules !!= !!! @CODE@
                    Vy in (â ä ä ä)
              matched ;
 
-! 
+
 "Even syllabic verbs I, diphthong opening i:e before õ:, å:"
 !! __@RULENAME@__ - used in conjunction with diphthong opening
  i:e <=> _ [õ:â | õ:ä | â:ä | e:ä ] (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (X3:) (%^PALNo: | %^PAL:) [ %>:0 | #:0 ] ;
@@ -229,6 +242,7 @@ Rules !!= !!! @CODE@
  0:Vx <=> C: Vx: _ [( u: | i: ) (%ˊ: | 0:%ˊ) [ C:+ | C:+ %': C:+ ] ] %^VOWL: (%^CShort:) ;
       C: Vx: _ ( u: | i: ) (%ˊ: | 0:%ˊ)  C: [ QÂ1: ] C:+   %^VOWL:  ;
              where Vx in (â e å õ o a ä) ; 
+             
 !! 2012-06-05 removing "i" and "u" because viikkâd renders viiiǥǥam
 
 
@@ -256,9 +270,9 @@ Rules !!= !!! @CODE@
 
 
 
-! simultaneous lengthening and lowering
+
 "Even syllabic verbs I, relative vowel lengthening and lowering"
-!! __@RULENAME@__ -  juˊrdded > joordam juˊrdded+V+Ind+Prs+Sg1
+!! __@RULENAME@__ -  simultaneous lengthening and lowering: juˊrdded > joordam juˊrdded+V+Ind+Prs+Sg1
  0:Vy <=> [ C: | #: ] Vx:Vy _ (%ˊ: | 0:%ˊ) C:+ %^VOWL: %^CShort: %^VOWLower:  ;
              where Vx in (i õ o a u)
                    Vy in (e â å ä o)
@@ -339,6 +353,7 @@ Rules !!= !!! @CODE@
 "Even-syllabic verbs I, Palatalization mark between V and C"
 !! __@RULENAME@__ - used +Ind+Prs+Pl3, +Ind+Prt+Pl3
  0:%ˊ <=> [ V:0 | :V ] _ [ C:+ | C:+ %': C:+ ] ( %^VOWSH: %^CLong: | %^VOWL: %^CShort: ) ( %^VOWLower: | %^VOWRaise: ) ( %^VOWFront: | %^VOWTense:0 ) (X3:) %^PAL: [ %>:0 | #:0 ] ;
+
 !! The left context allows for:
 !! Vowel shortening, and j/v > V 
 
@@ -377,9 +392,10 @@ Rules !!= !!! @CODE@
 !  		where Vx in (õ u i o a)
 !  			  Vy in (â o e å ä)
 !  		matched ;
-! 
-! ! 2012-06-01 This appears to depart from a vowel with "ˊ"
-! ! so it must be III > IV
+
+
+!  2012-06-01 This appears to depart from a vowel with "ˊ"
+!  so it must be III > IV
 ! "Even syllabic verbs I, vowel position II > IV"
 !  Vx:Vy <=> (C:+) _ V:0 ˊ C:+ %^4VOW: ;
 !  		where Vx in (õ u i o a)
@@ -446,7 +462,6 @@ Rules !!= !!! @CODE@
 !! mõõnnâd : mõˊnne : mõõn 
 
 !"Even syllabic verbs I, cg in relation to Vowel length"
-
 ! V Cx Cx:0 
 
 
@@ -460,7 +475,6 @@ Rules !!= !!! @CODE@
 ! v:0 <=> :V (%ˊ: | 0:%ˊ) v _ (%^VOWL: ) %^CShort: ; 
 
 "Even syllabic nouns I, with extra lengthening of vowel V>VV and SS>ZZ"
-!! __@RULENAME@__ 
 !! __@RULENAME@__ 
 !! used with  +N+Sg+Nom > +N+Sg+Gen for cases like
 !! {{kuss > kuuzz}}.
@@ -552,7 +566,7 @@ Cx:Cy <=> [#: | C: ] V: (:V) (%ˊ: | 0:%ˊ) Cx: _ %^VOWXL: ; !!= @CODE@
 ! 
 ! ! 2009: 20
 ! "Even-syllabic nouns, In gg or ǧǧ"
-!! __@RULENAME@__ -
+! __@RULENAME@__ -
 !  Cx:Cy <=> V: [ (ˊ:) [ d: | l | r ]| [ u: | i: ] (ˊ:) ] _ X3: ;
 !               where Cx in (ǧ g)
 !                     Cy in (j ǥ)
@@ -562,7 +576,7 @@ Cx:Cy <=> [#: | C: ] V: (:V) (%ˊ: | 0:%ˊ) Cx: _ %^VOWXL: ; !!= @CODE@
 ! ! ǩeäˊdǧǧ: ǩeäđǥaž
 ! 
 ! "xx:x rule"
-!! __@RULENAME@__ -
+! __@RULENAME@__ -
 !  Cx:0 <=> V ( ˊ: ) Cx _ V X3:0 ;
 ! ! to be refined…
 ! 
