@@ -12,11 +12,12 @@
 ! Other licensing options are available upon request, please contact
 ! giellatekno@hum.uit.no or divvun@samediggi.no
 
-! Pronouns
-! ========
+!! !!!Pronouns
 
-! Pointing to all the pronominal subgroups
-LEXICON Pronoun
+
+!! Pointing to all the pronominal subgroups
+
+LEXICON Pronoun !!= * @CODE@
 Personal ;
 Demonstrative ;
 Reflexive ;
@@ -26,13 +27,14 @@ Interrogative ;
 ! Indefinite ;
 
 
-! Personal pronouns
-! -----------------
+!! !!Personal pronouns
 
-LEXICON Personal
-mon+Pron+Pers:m perspron ;
-ton+Pron+Pers:t perspron ;
-son+Pron+Pers:s perspron ;
+!! Splitting according to person.
+
+LEXICON Personal           !!= * @CODE@
+mon+Pron+Pers:m perspron ; !!= * @CODE@
+ton+Pron+Pers:t perspron ; !!= * @CODE@
+son+Pron+Pers:s perspron ; !!= * @CODE@
 
 LEXICON perspron
 :u	    perspronoblsg ;
@@ -77,10 +79,10 @@ LEXICON perspronpl
 
 
 
-! Demonstrative pronouns
-! ----------------------
+!! !!Demonstrative pronouns
 
-LEXICON Demonstrative
+
+LEXICON Demonstrative !!= * @CODE@
 tät+Pron+Dem:tä		SHORTDEM ;
 tut+Pron+Dem:tu		SHORTDEM ;
 tõt+Pron+Dem:tõ		SHORTDEM ;
@@ -89,7 +91,7 @@ tut+Pron+Dem:tuu	LONGDEM ;
 tõt+Pron+Dem:t		TOTDEM ;
 tiet-aa:tie		TIET-AA ;
 
-LEXICON SHORTDEM
+LEXICON SHORTDEM !!= * @CODE@
 +Nom+Sg:t	K ;
 +Acc+Sg:n	K ;
 +Gen+Sg:n	K ;
@@ -104,13 +106,13 @@ LEXICON SHORTDEM
 +Com+Pl:ivuim	K ;
 +Abe+Pl:itää	K ;
 
-LEXICON LONGDEM
+LEXICON LONGDEM !!= * @CODE@
 +Ill+Sg:zz	K ;
 +Ess+Sg:ˊđen	K ;
 +Par+Sg:đ	K ;
 +Par+Sg:ˊđed	K ;
 
-LEXICON TOTDEM
+LEXICON TOTDEM  !!= * @CODE@
 +Ill+Sg:õõzz	K ;
 +Ess+Sg:ââˊđen	K ;
 +Par+Sg:ââˊđ	K ;
@@ -118,7 +120,7 @@ LEXICON TOTDEM
 +Nom+Pl:õõk	K ;
 +Loc+Pl:âin	K ;
 
-LEXICON TIET-AA
+LEXICON TIET-AA !!= * @CODE@
 +Nom+Sg:t	-AA ;
 +Acc+Sg:n	-AA ;
 +Gen+Sg:n	-AA ;
@@ -131,15 +133,15 @@ LEXICON TIET-AA
 +Ill+Pl:id	-AA ;
 +Com+Pl:i-aavuim    K ;
 
-LEXICON -AA
+LEXICON -AA !!= * @CODE@
 :-aa K ;
 
 
 
-! Reflexive pronouns
-! ------------------
+!! !!Reflexive pronouns
 
-LEXICON Reflexive
+
+LEXICON Reflexive !!= * @CODE@
 jiõčč+Pron+Refl+Gen+Sg3:jiijjâs	K ;
 jiõčč+Pron+Refl+Acc+Sg3:jiijjâs	K ;
 jiõčč+Pron+Refl+Gen+Pl1:jieˊččen	K ;
@@ -160,39 +162,39 @@ jiõčč+Pron+Refl+Ess:jiõččn		ILEPX ;
 jiõčč+Pron+Refl+Com:jijj		COMPX ;
 
 
-LEXICON GA-I
+LEXICON GA-I !!= * @CODE@
 +Sǧ:an K ;
 +Pl1:ân K ;
 
-LEXICON GA-II
+LEXICON GA-II !!= * @CODE@
 +Sǥ:ad K ;
 +Pl1:ân K ;
 +Pl2:âd K ;
 +Pl3:âz K ;
 
-LEXICON ILEPX
+LEXICON ILEPX !!= * @CODE@
 ROBLSGPX ;
 ROBLPLPX ;
 
-LEXICON LOCPX
+LEXICON LOCPX !!= * @CODE@
 +Sg1:an	K ;
 ROBLPLPX ;
 
-LEXICON COMPX
+LEXICON COMPX !!= * @CODE@
 ROBLSGPX ;
 RCOMPLPX ;
 
-LEXICON ROBLSGPX
+LEXICON ROBLSGPX !!= * @CODE@
 +Sg1:an K ;
 +Sg2:ad K ;
 +Sg3:es K ;
 
-LEXICON ROBLPLPX !RPBLPLPX
+LEXICON ROBLPLPX !!= * @CODE@ RPBLPLPX
 +Pl1:een K ;
 +Pl2:eed K ;
 +Pl3:eez K ;
 
-LEXICON RCOMPLPX
+LEXICON RCOMPLPX !!= * @CODE@
 +Pl1:eenvuim K ;
 +Pl2:eedvuim K ;
 +Pl3:eezvuim K ;
@@ -200,12 +202,12 @@ LEXICON RCOMPLPX
 
 
 
-! Interrogative pronouns
-! ----------------------
+!! !!Interrogative pronouns
 
-LEXICON Interrogative
-mii+Pron+Interr:m	MK ;
-ǩii+Pron+Interr:ǩ	MK ;
+
+LEXICON Interrogative !!= * @CODE@
+mii+Pron+Interr:m	MK ; !!= * @CODE@
+ǩii+Pron+Interr:ǩ	MK ; !!= * @CODE@
 mii+Pron+Interr:mõõ	MK-long ;
 ǩii+Pron+Interr:ǩeä	MK-long ;
 mii+Pron+Interr:mõ	MK-short ;
@@ -213,20 +215,20 @@ mii+Pron+Interr:mõ	MK-short ;
 mii+Pron+Interr:mââ	MK-low ;
 ǩii+Pron+Interr:ǩeä	MK-low ;
 
-LEXICON MK
+LEXICON MK !!= * @CODE@
 +Nom+Sg:ii	K ;
 
-LEXICON MK-long
+LEXICON MK-long !!= * @CODE@
 +Acc+Sg:n	K ;
 +Gen+Sg:n	K ;
 +Ill+Sg:zz	K ;
 +Nom+Pl:k	K ;
 
-LEXICON MK-short
+LEXICON MK-short !!= * @CODE@
 +Com+Sg:ˊin	K ;
 +Abe+Sg:ntää	K ;
 
-LEXICON MK-low
+LEXICON MK-low !!= * @CODE@
 +Ess+Sg:ˊđen	K ;
 +Par+Sg:ˊđ	K ;
 +Par+Sg:ˊđed	K ;
