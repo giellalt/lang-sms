@@ -1,30 +1,261 @@
 
-              !!!Skolt Sámi morphological analyser                      !
 
+              !!!Skolt Sámi morphological analyser                      
+
+This file contains all definitions of symbols written by
+more than one character, and it contains the initial __Root__ lexicon.
 
  !!!Multichar_Symbols definitions
 
 
+!!Grammatical tags
+
+!Parts of speech
+
+ * +A	      
+ * +V	      
+ * +N	      
+ * +Adv      
+ * +Pron     
+ * +CS	      
+ * +CC	      
+ * +Adp      
+ * +Po	      
+ * +Pr	      
+ * +Interj   
+ * +Pcle     
+
+!Subtypes
+
+ * +Prop     
+ * +Pred     
+ * +Attr     
+ * +Pers     
+ * +Dem      
+ * +Interr   
+ * +Refl     
+ * +Recipr   
+ * +Rel      
+ * +Indef    
+
+!Number
+ * +Sg	      
+ * +Pl	      
+
+!Case
+ * +Nom      
+ * +Gen      
+ * +Acc      
+ * +Ill      
+ * +Ine      
+ * +Ela      
+ * +Com      
+ * +Ess      
+ * +Par      
+ * +Abe      
+
+!Possessive suffix
+ * +PxSg1    
+ * +PxSg2    
+ * +PxSg3    
+ * +PxPl1    
+ * +PxPl2    
+ * +PxPl3    
+
+!Adjective declension
+ * +Comp     
+ * +Superl   
+
+!Verb forms
+ * +Actor    
+ * +Action    <========= hmm Actio?
+ * +ActEss    -men
+ * +AktEss    fix!
+ * +NegConv2  fix!
+
+ * +Act	      
+ * +Pass	      
+ * +Ind	      
+ * +Prs	      
+ * +Prt	      
+ * +Pot	      
+ * +Cond	      
+ * +Imprt	      
+ * +ImprtII      
+ * +Sup	      
+
+ * +Inf		 
+ * +GerTemp      -een  
+ * +GerInstr     -eel 
+ * +ConNeg		 
+ * +Neg		 
+ * +PrsPrc		 
+ * +PrfPrc		 
+ * +VGen		 
+ * +VAbess		 
+
+
+!Person-number
+ * +Sg1	      
+ * +Sg2	      
+ * +Sg3	      
+ * +Pl1	      
+ * +Pl2	      
+ * +Pl3	      
+ * +4     impersonal fourth person, look into..
 
 
 
+!Semantic properties of names
+ * +Ani      
+ * +Mal      
+ * +Fem      
+ * +Sur      
+ * +Plc      
+ * +Org      
+ * +Obj      
+
+!Clitic
+ * +Clt      
+* NB! +Foc is missing
+
+!Punctuation
+ * +CLB   
+ * +PUNCT 
+ * +HYPH  
+ * +PAR   
+
+!!Letters
+
+!Skolt Saami letters
+These definitions are probably not needed
+ * č  
+ * đ  
+ * š  
+ * ŧ  
+ * ž  
+ * Ʒ  
+ * ǥ  
+ * ǧ  
+ * ǩ  
+ * Ǯ  
+
+!Archiphonemes
+
+These are for letters with special behaviour.
+Say that all m-s change to n in a given context,
+but not this m, because it is m2.
+In twolc these are then defined m2:m, etc, i.e.
+the m2 is an m, although it is a different m.
+
+ * n1  Check this one. It could be an old ŋ
+ * m2 
+ * n2 
+ * h2 
+ * b3 
+ * d3 
+ * g3 
+ * m3 
+ * h3 
+
+!!Diacritic marks
+These symbol govern the way the morphophonological rules treat the affix string.
+
+This project started out using arbitrary names, X1, X2..., but since they were
+hard to remember, we changed to (a bit) more transparent names (^DIADEL, ...).
+On the TODO-list: Change all X1, X2, ... to easy-to-remember names.
+
+!Diacritic with mnemonic names
+
+ * %^1VOW	  vowel position and length
+ * %^2VOW	 
+ * %^3VOW	 
+ * %^4VOW	 
+ * %^5VOW   
+ * %^CLong		
+ * %^CShort	
+ * %^CXLong	
+ * %^DIADEL  deleting diacritic
+ * %^DIAINS  inserting diacritic
+ * %^FRICG      for causing fricative ǥ vueˊlǧǧed+V+Imp+Pl3: vuâlǥǥaz
+ * %^IMPSG2	
+ * %^INDPRSSG3 
+ * %^P3      ... means what?
+ * %^PAL        for placing palatalization mark __ˊ__
+ * %^PALNo      This is to facilitate +Sg+Nom lemma:stem equivalence
+ * %^VOWFront   for fronting
+ * %^VOWL       for lengthening
+ * %^VOWLower   for lowering
+ * %^VOWRaise   for raising
+ * %^VOWSH 	
+ * %^VOWTense   for tense vowel miârr:mieˊrre
+ * %^VOWXL      for extralengthening
+ * QA1          used with vuejted
+ * QE1          used with kåˊmrded
+ * QÂ1          used with mainsted
+
+
+!Diacritic symbols without mnemonic names
+ * X1 
+ * X2 
+ * X3 
+ * X4 
+ * X5 
+ * X6 
+ * X7 
+ * X8 
+ * X9 
+
+ * Q3 
+ * Q4 
+ * Q5 
+ * Q6 
+ * Q7 
+ * Q8 
+ * Q9 
+
+ * Y1 
+ * Y2 
+ * Y3 
+ * Y4 
+ * Y5 
+ * Y6 
+ * Y7 
+ * Y8 
+ * Y9 
+
+
+!!Escaped symbols
+
+Symbols that need to be escaped on the lower side (towards twolc):
+* »
+* «
+* >
+* <
 
 
 
+!!!Basic lexica, pointing to the other lexicon files
 
 
+ * LEXICON Root 	  
+ *  AdjectiveRoot ;  
+ *  NounRoot ;		  
+ *  ProperNoun ;	  
+ *  VerbRoot ;		  
+ *  Adverb ;		  
+ *  Subjunction ;	  
+ *  Conjunction ;	  
+ *  Interjection ;	  
+ *  Pronoun ;		  
+ *  Numeral ;		  
+ *  Punctuation ;	  
 
+-----
 
-
-
-
-
-
-
-
-
-
-
-
+* Particle ;	   is still not included
+* Adposition ;   is still not included
+* Postposition ; is still not included
+* Preposition ;  is still not included
 
 
