@@ -1,16 +1,17 @@
-!!!!!!!!!!!
-!! Verbs !!
-!!!!!!!!!!!
+
+!! !!!Skolt Saami verb morphology
 
 
-! Irregular verbs
-! ---------------
+
+!! !!Irregular verbs
+
 
 LEXICON IJ
+!! The lexicon ''@LEXNAME@''
 
-+Ind+Sg1:jiõm	   K ;
-+Ind+Sg1:jim	   K ;
-+Ind+Sg2:jiõk	   K ;
++Ind+Sg1:jiõm	   K ; !!= * @CODE@
++Ind+Sg1:jim	   K ; !!= * @CODE@
++Ind+Sg2:jiõk	   K ; !!= * @CODE@
 +Ind+Sg2:jik	   K ;
 +Ind+Sg3:ij		   K ;
 +Ind+4:jeäˊt	   K ;
@@ -35,12 +36,41 @@ LEXICON IJ
 +Opt+Pl2:jeˊlled   K ;			
 +Opt+Pl3:jeällaz   K ;
 
+! leeˊd
+LEXICON LEED
+!! The lexicon ''@LEXNAME@'' for the copula
 
-! Even-syllable stems
-! -------------------
++V+Ind+Prs:		LEED-PRS ;
++V+Ind+Prt:		LEED-PRT ;
++V+Imp:			LEED-IMP ;
++V+Imp+Sg2:eäk'ku	FINAL1 ;
++V+Imp+ConNeg:%>eäk'ku FINAL1 ;
++V:%>eˊč		CONDITIONAL ; !
++V+Pot+Sg1:%>eˊžžem FINAL1	;
++V+Pot+Sg2:%>eˊžžiǩ FINAL1	;
++V+Pot+Sg3:%>eežž	FINAL1 ; !WG
++V+Pot+Sg3:%>eež	FINAL1 ; !
++V+Pot+Pl1:%>eˊžžep FINAL1	; !
++V+Pot+Pl1:%>eˊžžim FINAL1	; !
++V+Pot+Pl1:%>eˊžžin FINAL1	; !Does this exist
++V+Pot+Pl2:%>eˊžžveˊted FINAL1	;
++V+Pot+Pl3:%>eˊžže FINAL1	;
++V+Pot+4:%>eˊžžet FINAL1 ;
++V+Pot+ConNeg:%>eˊžže FINAL1 ;
++V+Inf:%>eeˊd FINAL1 ;
++V+PrsPrc:%>eˊddi FINAL1 ;
++V+PrfPrc:%>eäm'maž FINAL1 ;
++V+PrfPrc:%>eäm'ma FINAL1 ;
++V+PrfPrc:%>eäm FINAL1 ;
 
-! The verb _viǯǯâd_ arrive in form _viǯǯ_
+
+
+!! !!Even-syllable stems
+
+
 LEXICON VIQQAD
+!! Lexicon ''@LEXNAME@'' is for verbs like
+!!  __viǯǯâd__ , with lexc stem __viǯǯ__
 +V+Inf:%>âd FINAL1 ;
 +V+Ind+Prs: VIQQAD-Prs ;
 +V+Ind+Prt: VIQQAD-Prt ;
@@ -60,8 +90,9 @@ LEXICON VIQQAD
 
 
 
-! The verb _teevvad_ arrive in form _teevv_
+
 LEXICON TEEVVAD
+!! In the lexicon ''@LEXNAME@'' the verb __teevvad__ has the lexc stem __teevv__
 +V+Ind+Prs:		TEEVVAD-PRS ;
 +V+Ind+Prt:		TEEVVAD-PRT ;
 +V+Imp:			TEEVVAD-IMP ;
@@ -79,10 +110,13 @@ LEXICON TEEVVAD
 +V+VAbess:%^VOWL%^CShort%>kani FINAL1 ;		!WG
 +V+VAbess:%^VOWL%^CShort%>ǩeânai FINAL1 ;		!WG
 
-! The verb _kâˊlmmed_ arrives in form _kâlmm_
-! raising in +Ind+Prt+Pl3, Pot
-! lengthening in 
+ 
+ 
+ 
 LEXICON KALMMED
+!! In the lexicon ''@LEXNAME@'' the verb __kâˊlmmed__ has the lexc stem
+!! __kâlmm__. It raises in +Ind+Prt+Pl3, Pot and has lengthening in 
+!! hmm, yes, where?
 +V+Ind+Prs:		KALMMED-PRS ;
 +V+Ind+Prt:		KALMMED-PRT ;
 +V+Imp:			KALMMED-IMP ;
@@ -101,10 +135,10 @@ LEXICON KALMMED
 +V+VAbess:%^VOWL%^CShort%>kani FINAL1 ;		!WG
 +V+VAbess:%^VOWL%^CShort%>ǩeânai FINAL1 ;		!WG
 
-! The verb _kâˊlmmed_ arrives in form _kâlmm_
-! raising in +Ind+Prt+Pl3, Pot
-! lengthening in
 LEXICON JURDDED
+!! In the lexicon ''@LEXNAME@'' the verb __kâˊlmmed__ has the lexc stem
+!! __kâlmm__. It raises in +Ind+Prt+Pl3, Pot, and has lengthening.
+
 +V+Ind+Prs:             JURDDED-PRS ;
 +V+Ind+Prt:             JURDDED-PRT ;
 +V+Imp:                 JURDDED-IMP ;
@@ -126,8 +160,8 @@ LEXICON JURDDED
 +V+VAbess:%^VOWL%^CShort%^PAL%>ǩeânai FINAL1 ;               !WG
 
 
-! The verb _tieˊtted_ arrives in form _tiõtt_
 LEXICON TIETTED
+!! In the lexicon ''@LEXNAME@'' the verb __tieˊtted__ has the form __tiõtt__
 +V+Ind+Prs:		TIETTED-PRS ;
 +V+Ind+Prt:		TIETTED-PRT ;
 +V+Imp:			TIETTED-IMP ;
@@ -151,12 +185,15 @@ LEXICON TIETTED
 +V+VAbess:%^VOWL%^CShort%^VOWFront%^PAL%>kani FINAL1 ;		!WG
 +V+VAbess:%^VOWL%^CShort%^VOWFront%^PAL%>ǩeännai FINAL1 ;		!WG
 
-! Odd-syllable stems
-! ------------------
-! Contracted stems
-! ----------------
+!! !!Odd-syllable stems
+
+!! Not yet written
+
+!! !!Contracted stems
+
 
 LEXICON SILTTEED
+!! lexicon ''@LEXNAME@'' 
 +V+Ind+Prs:		TEEMEED-PRS ;
 +V+Ind+Prt:		TEEMEED-PRT ;
 +V+Imp:			TEEMEED-IMP ;
@@ -176,6 +213,7 @@ LEXICON SILTTEED
 +V+Imp+ConNeg:%>ukku FINAL1 ;
 
 LEXICON SOLLEED
+!! lexicon ''@LEXNAME@'' 
 +V+Ind+Prs:		TEEMEED-PRS ;
 +V+Ind+Prt:		TEEMEED-PRT ;
 +V+Imp:			TEEMEED-IMP ;
@@ -195,6 +233,7 @@ LEXICON SOLLEED
 +V+Imp+ConNeg:%>ukku FINAL1 ;
 
 LEXICON TEEMEED
+!! lexicon ''@LEXNAME@'' 
 +V+Ind+Prs:		TEEMEED-PRS ;
 +V+Ind+Prt:		TEEMEED-PRT ;
 +V+Imp:			TEEMEED-IMP ;
@@ -213,12 +252,15 @@ LEXICON TEEMEED
 +V+VAbess:%>eǩâni FINAL1 ;		!WG
 +V+Imp+ConNeg:%>ukku FINAL1 ;
 
-! vuejted
+
+
 LEXICON VUEJTED
+!! lexicon ''@LEXNAME@'' 
  KAMRDED ; ! The distinction is taken care of in twol and stem formulation
 
-! mainsted
+
 LEXICON MAINSTED
+!! lexicon ''@LEXNAME@'' 
 +V+Ind+Prs:		MAINSTED-PRS ;
 +V+Ind+Prt:		MAINSTED-PRT ;
 +V+Imp:			MAINSTED-IMP ;
@@ -253,8 +295,10 @@ LEXICON MAINSTED
 +V+GerTemp:%^VOWL%>een FINAL1 ;
 +V+GerInstr:%^VOWL%>eeˊl FINAL1 ;
 
-! kåˊmrded
+
 LEXICON KAMRDED
+!! The lexicon ''@LEXNAME@'' is for verbs like  __kåˊmrded__
+
  KAMRDED-01 ;
 +V+Imp+Sg2:%^IMPSG2	FINAL1 ;
 +V+Imp+ConNeg+Sg2:%>uku FINAL1 ;
@@ -294,31 +338,6 @@ LEXICON VOLLJED
 +V+Imp+ConNeg+Sg2:%>e FINAL1 ;
 
 
-! leeˊd
-LEXICON LEED
-+V+Ind+Prs:		LEED-PRS ;
-+V+Ind+Prt:		LEED-PRT ;
-+V+Imp:			LEED-IMP ;
-+V+Imp+Sg2:eäk'ku	FINAL1 ;
-+V+Imp+ConNeg:%>eäk'ku FINAL1 ;
-+V:%>eˊč		CONDITIONAL ; !
-+V+Pot+Sg1:%>eˊžžem FINAL1	;
-+V+Pot+Sg2:%>eˊžžiǩ FINAL1	;
-+V+Pot+Sg3:%>eežž	FINAL1 ; !WG
-+V+Pot+Sg3:%>eež	FINAL1 ; !
-+V+Pot+Pl1:%>eˊžžep FINAL1	; !
-+V+Pot+Pl1:%>eˊžžim FINAL1	; !
-+V+Pot+Pl1:%>eˊžžin FINAL1	; !Does this exist
-+V+Pot+Pl2:%>eˊžžveˊted FINAL1	;
-+V+Pot+Pl3:%>eˊžže FINAL1	;
-+V+Pot+4:%>eˊžžet FINAL1 ;
-+V+Pot+ConNeg:%>eˊžže FINAL1 ;
-+V+Inf:%>eeˊd FINAL1 ;
-+V+PrsPrc:%>eˊddi FINAL1 ;
-+V+PrfPrc:%>eäm'maž FINAL1 ;
-+V+PrfPrc:%>eäm'ma FINAL1 ;
-+V+PrfPrc:%>eäm FINAL1 ;
-
 
 
 ! Intermediate suffix lexica
@@ -331,7 +350,7 @@ LEXICON LEED
 ! Suffix series I
 ! - - - - - - - -
 
-! assuming stem _viǯǯ_
+! assuming stem __viǯǯ__
 LEXICON VIQQAD-Prs
 +Sg1:%^VOWL%^CShort%>am FINAL1 ; ! _viǯǯam_
 +Sg2:%^VOWL%^CShort%>ak FINAL1 ; ! _viǯǯak_
@@ -360,6 +379,8 @@ LEXICON VIQQAD-Imp
 +Pl2:%>âd FINAL1 ;
 +Pl3:%^VOWSH%^CLong%^VOWLower%>az FINAL1 ;
 +ConNeg:%^VOWSH%^CLong%>u FINAL1 ;
+
+
 ! Present tense
 ! - - - - - - - -
 
@@ -653,14 +674,11 @@ LEXICON CONDITIONAL
  +Cond+ConNeg:če FINAL1 ;
 
 
-! Suffix series II
-! - - - - - - - -
+!! !!Suffix series II
+
+!! Not written
 
 ! Other series
 ! - - - - - -
-
-
-! Auxiliary verbs
-! ---------------
 
 
