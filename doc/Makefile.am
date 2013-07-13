@@ -10,33 +10,29 @@
 if CAN_DOCC
 
 JSP_PAGES=root-morphology.jspwiki \
+		  adjectives-affixes.jspwiki       \
+		  adjectives-stems.jspwiki         \
+		  adpositions-stems.jspwiki        \
+		  adverbs-stems.jspwiki            \
+		  conjunctions-stems.jspwiki \
+		  interjections-stems.jspwiki \
 		  nouns-affixes.jspwiki \
+		  nouns-stems.jspwiki \
+		  numerals-stems.jspwiki           \
+		  particles-stems.jspwiki \
+		  pronouns-stems.jspwiki \
+		  propernouns-affixes.jspwiki      \
+		  punctuation-stems.jspwiki        \
+		  sms-propernouns-stems.jspwiki        \
+		  subjunctions-stems.jspwiki       \
+		  verbs-affixes.jspwiki \
+		  verbs-stems.jspwiki \
 		  sms-phon-phonology.jspwiki
 # clitics-morphology.jspwiki       \
 # compounding-morphology.jspwiki   \
 # abbreviations-stems.jspwiki      \
 # acronyms-stems.jspwiki           \
-# adjectives-oahpa-stems.jspwiki   \
-# adjectives-stems.jspwiki         \
-# adpositions-stems.jspwiki        \
-# adverbs-stems.jspwiki            \
-# conjunctions-stems.jspwiki       \
-# interjections-stems.jspwiki      \
-# nouns-oahpa-stems.jspwiki        \
-# nouns-stems.jspwiki              \
-# numerals-stems.jspwiki           \
-# particles-stems.jspwiki          \
-# pronouns-stems.jspwiki           \
-# propernouns-stems.jspwiki        \
-# punctuation-stems.jspwiki        \
 # smi-propernouns-stems.jspwiki    \
-# subjunctions-stems.jspwiki       \
-# verbs-stems.jspwiki              \
-# adjectives-oahpa-affixes.jspwiki \
-# adjectives-affixes.jspwiki       \
-# propernouns-affixes.jspwiki      \
-# verbs-affixes.jspwiki
-
 ALLINONE_JSP_PAGE=$(GTLANG).jspwiki
 
 LINKS=Links.jspwiki
