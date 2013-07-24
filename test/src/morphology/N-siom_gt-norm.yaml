@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Noun - siõm a-stem: # Noun 'rifle' - full paradigm
+     siõm+N+Sg+Nom: siõm
+     siõm+N+Sg+Gen: siõmmân
+     siõm+N+Sg+Acc: siõmmân
+     siõm+N+Sg+Ill: siõmmna
+     siõm+N+Sg+Loc: siõmmnest
+     siõm+N+Sg+Com: siõmmnin
+     siõm+N+Ess: siõmmnen
+     siõm+N+Par: siõmmned
+     siõm+N+Sg+Abe: siõmmântää
+     siõm+N+Pl+Nom: siõmmân
+     siõm+N+Pl+Gen: siõmmni
+     siõm+N+Pl+Acc: siõmmnid
+     siõm+N+Pl+Ill: siõmmnid
+     siõm+N+Pl+Loc: siõmmnin
+     siõm+N+Pl+Com: siõmmnivuiˊm
+     siõm+N+Pl+Abe: siõmmnitää
