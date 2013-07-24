@@ -3,12 +3,15 @@
 !! !!! Skolt Saami noun morphology 
 
 
+!! !!Unclassified
+
 LEXICON n 
 !! The lexicon ''@LEXNAME@'' is a dummy lexicon containing N Sg Nom only
-+N+Sg+Nom: K ;
+!! We give these words the tag +Guess and treat them as â-stems
 
++Guess: N-toll ;
 
-
+!! !!â-stems
 
 LEXICON N-toll !!= @CODE@ for Nouns with -âst Loc
 +N+Sg+Nom: K ;
@@ -49,6 +52,7 @@ LEXICON N-miarr !!= @CODE@ with -âst Loc but ense Ill
 +N+Pl+Abe:%^VOWXL%>itää K ;
 
 
+!! !!a-stems
 
 LEXICON N-pess !!= @CODE@ Nouns with -ast Loc
 +N+Sg+Nom: K ;
@@ -71,13 +75,18 @@ LEXICON N-pess !!= @CODE@ Nouns with -ast Loc
 
 
 
+!! !!e-stems
+
 LEXICON N-piess !!= @CODE@ Nouns with -est +Loc 
 !! * There are several stem types
 !! * pieˊss:pieˊss
++N+Sg+Ill:%^VOWLower%^PALNo%>a K ;
+COMMON_E_A_STEM ;
+
+LEXICON COMMON_E_A_STEM
 +N+Sg+Nom:%^PAL K ;
 +N+Sg+Gen:%^VOWL%^CShort K ;
 +N+Sg+Acc:%^VOWL%^CShort K ;
-+N+Sg+Ill:%^VOWLower%^PALNo%>a K ;
 +N+Sg+Loc:%^VOWL%^CShort%>est K ;
 +N+Sg+Com:%^VOWL%^CShort%>in K ;
 +N+Ess:%>en K ; ! ess and prt without
@@ -93,4 +102,59 @@ LEXICON N-piess !!= @CODE@ Nouns with -est +Loc
 +N+Pl+Abe:%^VOWL%^CShort%>itää K ;
 
 
+!! !!e-a-stems
+
+LEXICON N-ress !!= @CODE@ Nouns with -est Loc and -a Ill without ˊ
++N+Sg+Ill:%^VOWLower%>a K ; !!= @CODE@ as piess but without ^PALNo
+COMMON_E_A_STEM ;
+
+
+!! !!m-stems
+LEXICON N-laajj
++N+Sg+Nom:%^WG K ;
++N+Sg+Gen:âm K ;
++N+Sg+Acc:âm K ;
++N+Sg+Ill:m%>a K ;
++N+Sg+Loc:m%>est K ;
++N+Sg+Com:m%>in K ;
++N+Ess:m%>en K ; ! ess and prt without
++N+Par:m%>ed K ;
++N+Sg+Abe:âm%>tää K ;
+
++N+Pl+Nom:âm K ;
++N+Pl+Gen:m%>i K ;
++N+Pl+Acc:m%>id K ;
++N+Pl+Ill:m%>id K ;
++N+Pl+Loc:m%>in K ;
++N+Pl+Com:m%>ivuiˊm K ;
++N+Pl+Abe:m%>itää K ;
+
+
+!! !!n-stems
+LEXICON N-kuolban
++N+Sg+Nom: K ;
++N: N_OBL ;
+
+LEXICON N-siom
++N+Sg+Nom: K ;
++N:ân N_OBL ;
+
+
+LEXICON N_OBL
++N+Sg+Gen: K ;
++N+Sg+Acc: K ;
++N+Sg+Ill:%>a K ;
++N+Sg+Loc:%>est K ;
++N+Sg+Com:%>in K ;
++N+Ess:%>en K ; ! ess and prt without
++N+Par:%>ed K ;
++N+Sg+Abe:%>tää K ;
+
++N+Pl+Nom: K ;
++N+Pl+Gen:%>i K ;
++N+Pl+Acc:%>id K ;
++N+Pl+Ill:%>id K ;
++N+Pl+Loc:%>in K ;
++N+Pl+Com:%>ivuiˊm K ;
++N+Pl+Abe:%>itää K ;
 
