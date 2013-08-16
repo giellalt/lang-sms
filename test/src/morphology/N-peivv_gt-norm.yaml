@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Noun - peiˊvv a-stem päivä: # Noun - full paradigm
+     peiˊvv+N+Sg+Nom: peiˊvv
+     peiˊvv+N+Sg+Gen: peeiˊv
+     peiˊvv+N+Sg+Acc: peeiˊv
+     peiˊvv+N+Sg+Ill: peivva
+     peiˊvv+N+Sg+Loc: peeiˊvest
+     peiˊvv+N+Sg+Com: peeiˊvin
+     peiˊvv+N+Ess: peiˊvven
+     peiˊvv+N+Par: peiˊvved
+     peiˊvv+N+Sg+Abe: peeiˊvtää
+     peiˊvv+N+Pl+Nom: peeiˊv
+     peiˊvv+N+Pl+Gen: peeiˊvi
+     peiˊvv+N+Pl+Acc: peeiˊvid
+     peiˊvv+N+Pl+Ill: peeiˊvid
+     peiˊvv+N+Pl+Loc: peeiˊvin
+     peiˊvv+N+Pl+Com: peeiˊvivuiˊm
+     peiˊvv+N+Pl+Abe: peeiˊvitää

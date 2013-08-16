@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Noun - maadd â-stem: # Noun 'kaulaliina' - full paradigm
+     maadd+N+Sg+Nom: maadd
+     maadd+N+Sg+Gen: maddi
+     maadd+N+Sg+Acc: maddi
+     maadd+N+Sg+Ill: maddja
+     maadd+N+Sg+Loc: maddjest
+     maadd+N+Sg+Com: maddjin
+     maadd+N+Ess: maddjen
+     maadd+N+Par: madded
+     maadd+N+Sg+Abe: madditää
+     maadd+N+Pl+Nom: maddi
+     maadd+N+Pl+Gen: maddji
+     maadd+N+Pl+Acc: maddjid
+     maadd+N+Pl+Ill: maddjid
+     maadd+N+Pl+Loc: maddjin
+     maadd+N+Pl+Com: maddjivuiˊm
+     maadd+N+Pl+Abe: maddjitää

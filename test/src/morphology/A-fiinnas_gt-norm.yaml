@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Noun - fiinâs â-stem: # Noun 'kaulaliina' - full paradigm
+     fiinâs+A+Sg+Nom: fiinâs
+     fiinâs+A+Sg+Gen: fijnnâz
+     fiinâs+A+Sg+Acc: fijnnâz
+     fiinâs+A+Sg+Ill: fijnnsa
+     fiinâs+A+Sg+Loc: fijnnsest
+     fiinâs+A+Sg+Com: fijnnsin
+     fiinâs+A+Ess: fijnnsen
+     fiinâs+A+Par: fijnnsed
+     fiinâs+A+Sg+Abe: fijnnâztää
+     fiinâs+A+Pl+Nom: fijnnâz
+     fiinâs+A+Pl+Gen: fijnnsi
+     fiinâs+A+Pl+Acc: fijnnsid
+     fiinâs+A+Pl+Ill: fijnnsid
+     fiinâs+A+Pl+Loc: fijnnsin
+     fiinâs+A+Pl+Com: fijnnsivuiˊm
+     fiinâs+A+Pl+Abe: fijnnsitää

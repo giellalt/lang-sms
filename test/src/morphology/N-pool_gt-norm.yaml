@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Noun - põõˊl e-stem pöly: # Noun - full paradigm
+     põõˊl+N+Sg+Nom: põõˊl
+     põõˊl+N+Sg+Gen: põõˊl
+     põõˊl+N+Sg+Acc: põõˊl
+     põõˊl+N+Sg+Ill: põõˊle
+     põõˊl+N+Sg+Loc: põõˊlest
+     põõˊl+N+Sg+Com: põõˊlin
+     põõˊl+N+Ess: põõˊlen
+     põõˊl+N+Par: põõˊled
+     põõˊl+N+Sg+Abe: põõˊltää
+     põõˊl+N+Pl+Nom: põõˊl
+     põõˊl+N+Pl+Gen: põõˊli
+     põõˊl+N+Pl+Acc: põõˊlid
+     põõˊl+N+Pl+Ill: põõˊlid
+     põõˊl+N+Pl+Loc: põõˊlin
+     põõˊl+N+Pl+Com: põõˊlivuiˊm
+     põõˊl+N+Pl+Abe: põõˊlitää

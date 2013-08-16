@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Noun - steehl u-stem lasi: # Noun - full paradigm
+     steehl+N+Sg+Nom: steehl
+     steehl+N+Sg+Gen: steehl
+     steehl+N+Sg+Acc: steehl
+     steehl+N+Sg+Ill: steehlu
+     steehl+N+Sg+Loc: steehlast
+     steehl+N+Sg+Com: steehlain
+     steehl+N+Ess: steehlan
+     steehl+N+Par: steehlad
+     steehl+N+Sg+Abe: steehltää
+     steehl+N+Pl+Nom: steehl
+     steehl+N+Pl+Gen: steehlai
+     steehl+N+Pl+Acc: steehlaid
+     steehl+N+Pl+Ill: steehlaid
+     steehl+N+Pl+Loc: steehlain
+     steehl+N+Pl+Com: steehlaivui′m
+     steehl+N+Pl+Abe: steehlaitää
