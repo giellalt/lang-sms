@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Adjective - sloohman e-stem pöly: # Noun - full paradigm
+     sloohman+A+Sg+Nom: sloohman
+     sloohman+A+Sg+Gen: sloohman
+     sloohman+A+Sg+Acc: sloohman
+     sloohman+A+Sg+Ill: sloohmna
+     sloohman+A+Sg+Loc: sloohmnest
+     sloohman+A+Sg+Com: sloohmnin
+     sloohman+A+Ess: sloohmnen
+     sloohman+A+Par: sloohmned
+     sloohman+A+Sg+Abe: sloohmantää
+     sloohman+A+Pl+Nom: sloohman
+     sloohman+A+Pl+Gen: sloohmni
+     sloohman+A+Pl+Acc: sloohmnid
+     sloohman+A+Pl+Ill: sloohmnid
+     sloohman+A+Pl+Loc: sloohmnin
+     sloohman+A+Pl+Com: sloohmnivuiˊm
+     sloohman+A+Pl+Abe: sloohmnitää

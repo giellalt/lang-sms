@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Adjective - särnnai e-stem pöly: # Noun - full paradigm
+     särnnai+A+Sg+Nom: särnnai
+     särnnai+A+Sg+Gen: säärnai
+     särnnai+A+Sg+Acc: säärnai
+     särnnai+A+Sg+Ill: särnnʼja
+     särnnai+A+Sg+Loc: särnnʼjest
+     särnnai+A+Sg+Com: säärnain
+     särnnai+A+Ess: säärnˈjen
+     särnnai+A+Par: säärnˈjed
+     särnnai+A+Sg+Abe: säärnaitää
+     särnnai+A+Pl+Nom: säärnai
+     särnnai+A+Pl+Gen: säärnʼji
+     särnnai+A+Pl+Acc: säärnʼjid
+     särnnai+A+Pl+Ill: säärnʼjid
+     särnnai+A+Pl+Loc: säärnʼjin
+     särnnai+A+Pl+Com: säärnʼjivuiˊm
+     särnnai+A+Pl+Abe: säärnʼjitää

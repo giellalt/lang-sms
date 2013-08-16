@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Noun - peäˊss u-stem lasi: # Noun - full paradigm
+     peäˊss+N+Sg+Nom: peäˊss
+     peäˊss+N+Sg+Gen: pieˊss
+     peäˊss+N+Sg+Acc: pieˊss
+     peäˊss+N+Sg+Ill: peässa
+     peäˊss+N+Sg+Loc: pieˊssest
+     peäˊss+N+Sg+Com: pieˊssin
+     peäˊss+N+Ess: peäˊssen
+     peäˊss+N+Par: peäˊssed
+     peäˊss+N+Sg+Abe: pieˊsstää
+     peäˊss+N+Pl+Nom: pieˊss
+     peäˊss+N+Pl+Gen: pieˊssi
+     peäˊss+N+Pl+Acc: pieˊssid
+     peäˊss+N+Pl+Ill: pieˊssid
+     peäˊss+N+Pl+Loc: pieˊssin
+     peäˊss+N+Pl+Com: pieˊssivuiˊm
+     peäˊss+N+Pl+Abe: pieˊssitää

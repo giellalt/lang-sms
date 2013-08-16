@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Noun - juurd contract stem ajatus: # Noun - full paradigm
+     juurd+N+Sg+Nom: juurd
+     juurd+N+Sg+Gen: jurddi
+     juurd+N+Sg+Acc: jurddi
+     juurd+N+Sg+Ill: jurddja
+     juurd+N+Sg+Loc: jurddjest
+     juurd+N+Sg+Com: jurddjin
+     juurd+N+Ess: jurddjen
+     juurd+N+Par: jurdded
+     juurd+N+Sg+Abe: jurdditää
+     juurd+N+Pl+Nom: jurddi
+     juurd+N+Pl+Gen: jurddji
+     juurd+N+Pl+Acc: jurddjid
+     juurd+N+Pl+Ill: jurddjid
+     juurd+N+Pl+Loc: jurddjin
+     juurd+N+Pl+Com: jurddjivuiˊm
+     juurd+N+Pl+Abe: jurddjitää

@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Noun - pååˊles e-stem poliisi: # Noun - full paradigm
+     pååˊles+N+Sg+Nom: pååˊles
+     pååˊles+N+Sg+Gen: pååˊles
+     pååˊles+N+Sg+Acc: pååˊles
+     pååˊles+N+Sg+Ill: pååˊlsa
+     pååˊles+N+Sg+Loc: pååˊlsest
+     pååˊles+N+Sg+Com: pååˊlsin
+     pååˊles+N+Ess: pååˊlsen
+     pååˊles+N+Par: pååˊlsed
+     pååˊles+N+Sg+Abe: pååˊlestää
+     pååˊles+N+Pl+Nom: pååˊles
+     pååˊles+N+Pl+Gen: pååˊlsi
+     pååˊles+N+Pl+Acc: pååˊlsid
+     pååˊles+N+Pl+Ill: pååˊlsid
+     pååˊles+N+Pl+Loc: pååˊlsin
+     pååˊles+N+Pl+Com: pååˊlsivuiˊm
+     pååˊles+N+Pl+Abe: pååˊlsitää

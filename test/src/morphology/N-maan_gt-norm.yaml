@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Noun - mään â-stem: # Noun 'kaulaliina' - full paradigm
+     mään+N+Sg+Nom: mään
+     mään+N+Sg+Gen: mannu
+     mään+N+Sg+Acc: mannu
+     mään+N+Sg+Ill: männǥa
+     mään+N+Sg+Loc: mannust
+     mään+N+Sg+Com: mannuin
+     mään+N+Ess: männ'jen
+     mään+N+Par: mannud
+     mään+N+Sg+Abe: mannutää
+     mään+N+Pl+Nom: mannu
+     mään+N+Pl+Gen: mannui
+     mään+N+Pl+Acc: mannuid
+     mään+N+Pl+Ill: mannuid
+     mään+N+Pl+Loc: mannuin
+     mään+N+Pl+Com: mannuivuiˊm
+     mään+N+Pl+Abe: mannuitää

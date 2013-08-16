@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Adjective - čeäppat e-stem pöly: # Noun - full paradigm
+     čeäppat+A+Sg+Nom: čeäppat
+     čeäppat+A+Sg+Gen: čeäppat
+     čeäppat+A+Sg+Acc: čeäppat
+     čeäppat+A+Sg+Ill: čeäppta
+     čeäppat+A+Sg+Loc: čeäpptest
+     čeäppat+A+Sg+Com: čeäpptin
+     čeäppat+A+Ess: čeäppten
+     čeäppat+A+Par: čeäppted
+     čeäppat+A+Sg+Abe: čeäppat-tää
+     čeäppat+A+Pl+Nom: čeäppat
+     čeäppat+A+Pl+Gen: čeäppti
+     čeäppat+A+Pl+Acc: čeäpptid
+     čeäppat+A+Pl+Ill: čeäpptid
+     čeäppat+A+Pl+Loc: čeäpptin
+     čeäppat+A+Pl+Com: čeäpptivuiˊm
+     čeäppat+A+Pl+Abe: čeäpptitää
