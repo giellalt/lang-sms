@@ -1,0 +1,21 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+  Adjective - jõll class A1â: # Adjective 'unwise' - full paradigm
+    jõll+A+Pred+Sg: jõll
+    jõll+A+Pred+Pl: jõõll
+    jõll+A+Attr: jõõllâs
+    jõll+A+Comp: jõõllab
+    jõll+A+Superl: jõõllmõs
