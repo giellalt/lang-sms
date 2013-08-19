@@ -1,19 +1,21 @@
 
 
-!! !!! Skolt Saami noun morphology 
+!! !!!Skolt Saami noun morphology 
 
+!! This file documents the Skolt Saami noun morphology, lexicon by lexicon.
 
-!! !!Unclassified
+!! !!Unclassified words
 
-LEXICON n 
-!! The lexicon ''@LEXNAME@'' is a dummy lexicon containing N Sg Nom only
-!! We resend it to N-toll while waiting for a better analysis.
+LEXICON n !!= * __@CODE@__ for (still) unclassified nouns.
+
+!! The lexicon __@LEXNAME@__ is a dummy lexicon containing N Sg Nom only.
+!! We resend it to __N-toll__ (â-stem) while waiting for a better analysis.
 
 N-toll ;
 
 !! !!â-stems
 
-LEXICON N-toll !!= @CODE@ for Nouns with -âst Loc
+LEXICON N-toll !!= * __@CODE@__ is for Nouns with -âst Loc
 +N+Sg+Nom: K ;
 +N+Sg+Gen:%^VOWXL K ;
 +N+Sg+Acc:%^VOWXL K ;
@@ -23,7 +25,6 @@ LEXICON N-toll !!= @CODE@ for Nouns with -âst Loc
 +N+Ess:%>ân K ; ! ess and prt without
 +N+Par:%>âd K ;
 +N+Sg+Abe:%^VOWXL%>tää K ;
-
 +N+Pl+Nom:%^VOWXL K ;
 +N+Pl+Gen:%^VOWXL%>i K ;
 +N+Pl+Acc:%^VOWXL%>id K ;
@@ -32,7 +33,7 @@ LEXICON N-toll !!= @CODE@ for Nouns with -âst Loc
 +N+Pl+Com:%^VOWXL%>ivuiˊm K ;
 +N+Pl+Abe:%^VOWXL%>itää K ;
 
-LEXICON N-miarr !!= @CODE@ with -âst Loc but ense Ill
+LEXICON N-miarr !!= * __@CODE@__ is for words with ''-âst'' Loc but ''-ense'' Ill
 +N+Sg+Nom: K ;
 +N+Sg+Gen:%^VOWXL K ;
 +N+Sg+Acc:%^VOWXL K ;
@@ -42,7 +43,6 @@ LEXICON N-miarr !!= @CODE@ with -âst Loc but ense Ill
 +N+Ess:%>ân K ; ! ess and prt without
 +N+Par:%>âd K ;
 +N+Sg+Abe:%^VOWXL%>tää K ;
-
 +N+Pl+Nom:%^VOWXL K ;
 +N+Pl+Gen:%^VOWXL%>i K ;
 +N+Pl+Acc:%^VOWXL%>id K ;
@@ -54,7 +54,7 @@ LEXICON N-miarr !!= @CODE@ with -âst Loc but ense Ill
 
 !! !!a-stems
 
-LEXICON N-pess !!= @CODE@ Nouns with -ast Loc
+LEXICON N-pess !!= * __@CODE@__ Is for nouns with ''-ast'' Loc
 +N+Sg+Nom: K ;
 +N+Sg+Gen:%^VOWL%^CShort K ;
 +N+Sg+Acc:%^VOWL%^CShort K ;
@@ -64,7 +64,6 @@ LEXICON N-pess !!= @CODE@ Nouns with -ast Loc
 +N+Ess:%>an K ; ! ess and prt without
 +N+Par:%>ad K ;
 +N+Sg+Abe:%^VOWL%^CShort%>tää K ;
-
 +N+Pl+Nom:%^VOWL%^CShort K ;
 +N+Pl+Gen:%^VOWL%^CShort%>ai K ;
 +N+Pl+Acc:%^VOWL%^CShort%>aid K ;
@@ -77,10 +76,11 @@ LEXICON N-pess !!= @CODE@ Nouns with -ast Loc
 
 !! !!e-stems
 
-LEXICON N-piess !!= @CODE@ Nouns with -est +Loc 
+LEXICON N-piess !!= * __@CODE@__ is for nouns with ''-est'' +Loc 
 !! * There are several stem types
 !! * pieˊss:pieˊss
 +N+Sg+Ill:%^VOWLower%^PALNo%>a K ;
+
 !+N:%^X3 DenominalAdjsCShort ;
 +N:%^VOWL%^CShort DenominalAdjsCShort ;
 !+N:%^PAL DenominalAdjsCShort ;
@@ -107,13 +107,14 @@ LEXICON COMMON_E_A_STEM
 
 !! !!e-a-stems
 
-LEXICON N-ress !!= @CODE@ Nouns with -est Loc and -a Ill without ˊ
-+N+Sg+Ill:%^VOWLower%>a K ; !!= @CODE@ as piess but without ^PALNo
+LEXICON N-ress !!= * __@CODE@__ Nouns with -est Loc and -a Ill without ˊ
++N+Sg+Ill:%^VOWLower%>a K ; 
 COMMON_E_A_STEM ;
 
 
 !! !!m-stems
-LEXICON N-laajj
+
+LEXICON N-laajj !!= * __@CODE@__ = stemtype m-stem
 +N+Sg+Nom:%^WG K ;
 +N+Sg+Gen:âm K ;
 +N+Sg+Acc:âm K ;
@@ -123,7 +124,6 @@ LEXICON N-laajj
 +N+Ess:m%>en K ; ! ess and prt without
 +N+Par:m%>ed K ;
 +N+Sg+Abe:âm%>tää K ;
-
 +N+Pl+Nom:âm K ;
 +N+Pl+Gen:m%>i K ;
 +N+Pl+Acc:m%>id K ;
@@ -134,7 +134,9 @@ LEXICON N-laajj
 
 
 !! !!n-stems
-LEXICON N-kuolban
+
+LEXICON N-kuolban !!= * __@CODE@__ = stemtype n-stem
+
 +N+Sg+Nom: K ;
 +N: N_OBL ;
 
@@ -163,115 +165,123 @@ LEXICON N_OBL
 
 
 
-! From the grammar
+!! !!Stem types from the grammar
 
+!! These are still not fixed.
 
-LEXICON 21	  !!= * @CODE@ II 1
+LEXICON a	  !!= * __@CODE@__ = Koulukielioppi stemtype a-stem
+N-pess ;      !!= ** Redirecting to __@CODE@__
+
+LEXICON c	  !!= * __@CODE@__ = Koulukielioppi stemtype contract
 +N+Sg+Nom: # ;
 
-LEXICON 210	  !!= * @CODE@ II 10
+LEXICON ci	  !!= * __@CODE@__ = Koulukielioppi stemtype contract i stem
 +N+Sg+Nom: # ;
 
-LEXICON 211	  !!= * @CODE@ II 11
+LEXICON e	  !!= * __@CODE@__ = Koulukielioppi stemtype e stem
+N-piess ;     !!= ** Redirecting to __@CODE@__
+
+LEXICON ea	  !!= * __@CODE@__ = Koulukielioppi stemtype e~a stem
+N-ress ;      !!= ** Redirecting to __@CODE@__
+
+!! !Consonant stems
+
+LEXICON m	  !!= * __@CODE@__ = Koulukielioppi stemtype m stem
+N-laajj ;     !!= ** Redirecting to __@CODE@__
+
+LEXICON nst	  !!= * __@CODE@__ = Koulukielioppi stemtype nst stem
+N-kuolban ;     !!= ** Redirecting to __@CODE@__
+
+!! !Stems Koulukielioppi class II
+
+LEXICON 21	  !!= * __@CODE@__ = Koulukielioppi stemtype II 1
 +N+Sg+Nom: # ;
 
-LEXICON 212	  !!= * @CODE@ II 12
+LEXICON 23	  !!= * __@CODE@__ = Koulukielioppi stemtype II 3
 +N+Sg+Nom: # ;
 
-LEXICON 213	  !!= * @CODE@ II 13
+LEXICON 24	  !!= * __@CODE@__ = Koulukielioppi stemtype II 4
 +N+Sg+Nom: # ;
 
-LEXICON 214	  !!= * @CODE@ II 14
+LEXICON 25	  !!= * __@CODE@__ = Koulukielioppi stemtype II 5
 +N+Sg+Nom: # ;
 
-LEXICON 215	  !!= * @CODE@ II 15
+LEXICON 26	  !!= * __@CODE@__ = Koulukielioppi stemtype II 6
 +N+Sg+Nom: # ;
 
-LEXICON 216	  !!= * @CODE@ II 16
+LEXICON 27	  !!= * __@CODE@__ = Koulukielioppi stemtype II 7
 +N+Sg+Nom: # ;
 
-LEXICON 217	  !!= * @CODE@ II 17
+LEXICON 28	  !!= * __@CODE@__ = Koulukielioppi stemtype II 8
 +N+Sg+Nom: # ;
 
-LEXICON 217ca !!= * @CODE@ II 17 contract a vow
+LEXICON 29	  !!= * __@CODE@__ = Koulukielioppi stemtype II 9
 +N+Sg+Nom: # ;
 
-LEXICON 217cu !!= * @CODE@ II 17 contract u vow
+LEXICON 210	  !!= * __@CODE@__ = Koulukielioppi stemtype II 10
 +N+Sg+Nom: # ;
 
-LEXICON 218	  !!= * @CODE@ II 18
+LEXICON 211	  !!= * __@CODE@__ = Koulukielioppi stemtype II 11
 +N+Sg+Nom: # ;
 
-LEXICON 219	  !!= * @CODE@ II 19
+LEXICON 212	  !!= * __@CODE@__ = Koulukielioppi stemtype II 12
 +N+Sg+Nom: # ;
 
-LEXICON 220	  !!= * @CODE@ II 20
+LEXICON 213	  !!= * __@CODE@__ = Koulukielioppi stemtype II 13
 +N+Sg+Nom: # ;
 
-LEXICON 221	  !!= * @CODE@ II 21
+LEXICON 214	  !!= * __@CODE@__ = Koulukielioppi stemtype II 14
 +N+Sg+Nom: # ;
 
-LEXICON 22mos !!= * @CODE@ II 22 moš
+LEXICON 215	  !!= * __@CODE@__ = Koulukielioppi stemtype II 15
 +N+Sg+Nom: # ;
 
-LEXICON 22mus !!= * @CODE@ II 22 muš
+LEXICON 216	  !!= * __@CODE@__ = Koulukielioppi stemtype II 16
 +N+Sg+Nom: # ;
 
-LEXICON 23	  !!= * @CODE@ II 23
+LEXICON 217	  !!= * __@CODE@__ = Koulukielioppi stemtype II 17
 +N+Sg+Nom: # ;
 
-LEXICON 24	  !!= * @CODE@ II 24
+LEXICON 217ca !!= * __@CODE@__ = Koulukielioppi stemtype II 17 contract a vow
 +N+Sg+Nom: # ;
 
-LEXICON 25	  !!= * @CODE@ II 25
+LEXICON 217cu !!= * __@CODE@__ = Koulukielioppi stemtype II 17 contract u vow
 +N+Sg+Nom: # ;
 
-LEXICON 26	  !!= * @CODE@ II 26
+LEXICON 218	  !!= * __@CODE@__ = Koulukielioppi stemtype II 18
 +N+Sg+Nom: # ;
 
-LEXICON 27	  !!= * @CODE@ II 27
+LEXICON 219	  !!= * __@CODE@__ = Koulukielioppi stemtype II 19
 +N+Sg+Nom: # ;
 
-LEXICON 28	  !!= * @CODE@ II 28
+LEXICON 220	  !!= * __@CODE@__ = Koulukielioppi stemtype II 20
 +N+Sg+Nom: # ;
 
-LEXICON 29	  !!= * @CODE@ II 29
+LEXICON 221	  !!= * __@CODE@__ = Koulukielioppi stemtype II 21
 +N+Sg+Nom: # ;
 
-LEXICON a	  !!= * @CODE@ a-stem
+LEXICON 22mos !!= * __@CODE@__ = Koulukielioppi stemtype II 22 moš
 +N+Sg+Nom: # ;
 
-LEXICON a217  !!= * @CODE@ II 17 adj
+LEXICON 22mus !!= * __@CODE@__ = Koulukielioppi stemtype II 22 muš
 +N+Sg+Nom: # ;
 
-LEXICON a22	  !!= * @CODE@ II 22 adj
-+N+Sg+Nom: # ;
+!! !!Adjectives -- to be moved
 
-LEXICON a23	  !!= * @CODE@ II 23 adj
-+N+Sg+Nom: # ;
+LEXICON a217  !!= * __@CODE@__ = Koulukielioppi stemtype II 17 adj
++A+Sg+Nom: # ;
 
-LEXICON a24	  !!= * @CODE@ II 24 adj
-+N+Sg+Nom: # ;
+LEXICON a22	  !!= * __@CODE@__ = Koulukielioppi stemtype II 22 adj
++A+Sg+Nom: # ;
 
-LEXICON a27	  !!= * @CODE@ II 27 adj
-+N+Sg+Nom: # ;
+LEXICON a23	  !!= * __@CODE@__ = Koulukielioppi stemtype II 23 adj
++A+Sg+Nom: # ;
 
-LEXICON c	  !!= * @CODE@ contract
-+N+Sg+Nom: # ;
+LEXICON a24	  !!= * __@CODE@__ = Koulukielioppi stemtype II 24 adj
++A+Sg+Nom: # ;
 
-LEXICON ci	  !!= * @CODE@ contract i stem
-+N+Sg+Nom: # ;
+LEXICON a27	  !!= * __@CODE@__ = Koulukielioppi stemtype II 27 adj
++A+Sg+Nom: # ;
 
-LEXICON e	  !!= * @CODE@ e stem
-+N+Sg+Nom: # ;
-
-LEXICON ea	  !!= * @CODE@ e~a stem
-+N+Sg+Nom: # ;
-
-LEXICON m	  !!= * @CODE@ m stem
-+N+Sg+Nom: # ;
-
-LEXICON nst	  !!= * @CODE@ nst stem
-+N+Sg+Nom: # ;
 
 
