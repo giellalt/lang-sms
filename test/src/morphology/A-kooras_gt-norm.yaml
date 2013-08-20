@@ -1,0 +1,22 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+  Adjective - kõõrâs class A4â: # Adjective 'hard' - full paradigm
+    kõõrâs+A+Pred+Sg: kõõrâs
+    kõõrâs+A+Pred+Pl: kõõrâs
+    kõõrâs+A+Attr: kõrr
+    kõõrâs+A+Comp: kõrrsab
+    kõõrâs+A+Superl: kõrrsumus
+    
