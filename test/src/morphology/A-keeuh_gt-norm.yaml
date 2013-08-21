@@ -1,0 +1,21 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+  Adjective - ǩeeuˊh class A40e: # Adjective 'poor/köyhä' - full paradigm
+    ǩeeuˊh+A+Pred+Sg: ǩeeuˊh
+    ǩeeuˊh+A+Pred+Pl: ǩeeuˊh
+    ǩeeuˊh+A+Attr: ǩeeuˊhes
+    ǩeeuˊh+A+Comp: ǩeeuˊhab
+    ǩeeuˊh+A+Superl: ǩeeuˊhmõs
