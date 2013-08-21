@@ -4,37 +4,51 @@
 LEXICON A1a 
 !+A+Pred+Sg:%^VOWL%^CXLong # ; 
 +A+Pred+Pl: # ; 
-+A+Attr:%>as # ; 
-+A+Comp:»ab # ; 
-+A+Superl:»mõs # ; 
++A: AdjAttr-as ; 
++A: AdjDerComp ; 
++A: AdjDerSuperl-mos ; 
+
+LEXICON A40a
++A+Pred+Sg: # ; 
++A+Pred+Pl: # ; 
++A: AdjAttr-as ; 
++A: AdjDerComp ; 
++A: AdjDerSuperl-mos ; 
 
 LEXICON A1â 
 +A+Pred+Sg:%^VOWSH%^CLong # ; 
 +A+Pred+Pl: # ; 
-+A+Attr:âs # ; 
-+A+Comp:»ab # ; 
-+A+Superl:»mõs # ; 
++A: AdjAttr-âs ; 
++A: AdjDerComp ; 
++A: AdjDerSuperl-mos ; 
 
 LEXICON A1e 
 +A+Pred+Sg:%^VOWSH%^CLong # ;
 +A+Pred+Pl: # ; 
-+A+Attr:%>es # ; 
-+A+Comp:»ab # ; 
-+A+Superl:»mõs # ; 
++A: AdjAttr-es ; 
++A: AdjDerComp ; 
++A: AdjDerSuperl-mos ; 
+
+LEXICON A40e
++A+Pred+Sg: # ; 
++A+Pred+Pl: # ; 
++A: AdjAttr-es ; 
++A: AdjDerComp ; 
++A: AdjDerSuperl-mos ; 
 
 LEXICON A4a
-!+A+Pred+Sg:as # ; !!WK stem grade
-!+A+Pred+Pl:as # ; !!WK stem grade
-+A+Attr: # ; 
-+A+Comp:%^s»ab # ; 
-+A+Superl:%^s»umus # ; 
+!+A+Pred+Sg:%^as # ; !!WK stem grade
+!+A+Pred+Pl:%^as # ; !!WK stem grade
++A: AdjAttr-Ø ; 
++A:%^s AdjDerComp ; 
++A:%^su AdjDerSuperl-mus ; 
 
 LEXICON A4â
 +A+Pred+Sg:%^VOWXL%^CShort%^âs # ; 
 +A+Pred+Pl:%^VOWXL%^CShort%^âs # ; 
-+A+Attr: # ; 
-+A+Comp:%^s»ab # ; 
-+A+Superl:%^s»umus # ; 
++A: AdjAttr-Ø ; 
++A:%^s AdjDerComp ; 
++A:%^su AdjDerSuperl-mus ; 
 
 LEXICON A4e
 !+A+Pred+Sg:%^VOWL%^CShort # ; !!WK stem grade
@@ -43,10 +57,10 @@ LEXICON A4e
 !+A+Comp:%^VOWL%^PALNo%^CLong%^s»ab # ; !!NPAL
 !+A+Superl:%^s»umus # ; !!NPAL
 
-LEXICON A8
-+A+Attr:%^lõs # ; !!VDEL
-+A+Comp:%^l»ab # ; !!NPAL
-+A+Superl:%^l»umus # ; !!NPAL
+LEXICON A8 ?does not work at all
+!+A: AdjAttr-os ; !!VDEL
+!+A+Comp:%^l»ab # ; !!NPAL
+!+A+Superl:%^l»umus # ; !!NPAL
 
 LEXICON A11
 +A+Pred:âd # ; 
@@ -55,7 +69,7 @@ LEXICON A11
 +A+Superl:»umus # ; 
 
 LEXICON A20
-!+A: # ; same form
++A+Pred+Pl: # ; 
 +A+Comp:»ab # ; 
 +A+Superl:»mõs # ; 
 
@@ -64,33 +78,34 @@ LEXICON A30
 +A+Comp:»ab # ; !!NPAL
 +A+Superl:»umus # ; !!NPAL
 
-LEXICON A40a
-!+A+Pred: # ; same form
-+A+Attr:%>as # ; 
-+A+Comp:»ab # ; 
-+A+Superl:»mõs # ; 
-
-LEXICON A40a
-!+A+Pred: # ; same form
-+A+Attr:%>as # ; 
-+A+Comp:»ab # ; 
-+A+Superl:»mõs # ; 
-
-LEXICON A40â
-!+A+Pred: # ; same form
-+A+Attr:%>âs # ; 
-+A+Comp:»ab # ; 
-+A+Superl:»mõs # ; 
-
-LEXICON A40e
-!+A+Pred: # ; same form
-+A+Attr:%>es # ; 
-+A+Comp:»ab # ; 
-+A+Superl:»mõs # ; 
-
 LEXICON DenominalAdjsCShort
 +Der/A+Pred+Sg:»teˊm # ;
 +Der/A+Pred+Pl:»teˊm # ;
-+Der/A+Attr:»teˊm%>es	 # ;
-+Der/A+Comp:»t»ab	 # ;
-+Der/A+Superl:»t»umus # ;
++Der/A+Attr:»teˊm AdjAttr-es ;
++Der/A+Comp:»t AdjDerComp ;
++Der/A+Superl:»t AdjDerSuperl-mos ;
+
+LEXICON AdjAttr-Ø
++Attr:%^ # ;
+
+LEXICON AdjAttr-as
++Attr:%>as # ; 
+
+LEXICON AdjAttr-âs
++Attr:%>âs # ; 
+
+LEXICON AdjAttr-es
++Attr:%>es # ; 
+
+LEXICON AdjAttr-os
++Attr:%>õs # ; 
+
+LEXICON AdjDerComp
++Comp:»ab # ; 
+
+LEXICON AdjDerSuperl-mos
++Superl:»mõs # ; 
+
+LEXICON AdjDerSuperl-mus
++Superl:»mus # ; 
+
