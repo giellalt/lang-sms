@@ -1,0 +1,21 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+  Adjective - hääˊsǩ class A40e: # Adjective 'fun/hauska' - full paradigm
+    hääˊsǩ+A+Pred+Sg: hääˊsǩ
+    hääˊsǩ+A+Pred+Pl: hääˊsǩ
+    hääˊsǩ+A+Attr: hääˊsǩes
+    hääˊsǩ+A+Comp: hääˊsǩab
+    hääˊsǩ+A+Superl: hääˊsǩmõs
