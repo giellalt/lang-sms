@@ -45,6 +45,7 @@ Trigger symbols
  *  QÂ1:0  used with "mainsted" to tell (a story)
  *  QA1:0  used with "vuejted" to drive (causative)
  *  QE1:0  used with "kåˊmrded" to bow
+ *  %{%ˊ%}:0  archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one.
  *  %^IMPSG2:0	     
  *  %^INDPRSSG3:0   
  *  %^FRICG:0	     
@@ -98,15 +99,20 @@ deriving +Ind+Prt+Sg1, +Ind+Prt+Sg2 +Ind+Prt+Pl3 in teevvad:tivvu
 __Even syllabic verbs I, vowel raising__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
 
 
+__Even syllabic verbs I, vowel raising__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
+diphthong raising with e:i at onset - deriving +Ind+Prt+Pl3 in reäkkad > riâkku, veârrad > viõrru
 
 
-__Even syllabic verbs I, diphthong raising beginning with u__ - deriving +Ind+Prt+Pl3 in kuâs'sad > kuõs'su, kuärŋŋad kuårŋŋu
+
+__Even syllabic verbs I, vowel raising â:õ __ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
 
 
-__Even syllabic verbs I, diphthong raising beginning with e:i__ - deriving +Ind+Prt+Pl3 in reäkkad > riâkku, veârrad > viõrru
+
+__Even syllabic verbs I, diphthong raising beginning with u ä:å__ - deriving +Ind+Prt+Pl3 in kuâs'sad > kuõs'su, kuärŋŋad kuårŋŋu
 
 
-__Even syllabic verbs I, diphthong raising with e:i at onset__ - deriving +Ind+Prt+Pl3 in reäkkad > riâkku, veârrad > viõrru
+__Even syllabic verbs I, diphthong raising beginning with e:i ä:â__ - deriving +Ind+Prt+Pl3 in reäkkad > riâkku, veârrad > viõrru
+
 
 
 
@@ -116,10 +122,20 @@ __Even syllabic verbs I, diphthong raising with e:i at onset__ - deriving +Ind+P
 
 __Even syllabic verbs I, vowel lowering__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
 
+__Even syllabic verbs I, vowel lowering õ:â __ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
+diphthong opening after u
+- deriving +Ind+Prs+Sg3, in kuõskkâd kueˊsǩǩe
+diphthong opening õ:â after i:e
+- deriving +Ind+Prs+Sg3, in čiõkkâd
 
-__Even syllabic verbs I, diphthong opening after u__ - deriving +Ind+Prs+Sg3, in kuõskkâd kueˊsǩǩe
+
+__Even syllabic verbs I, diphthong opening after u__ - deriving +Ind+Prs+Sg3, in kuåccâd kuäˊcce
+
 
 __Even syllabic verbs I, diphthong opening after i:e__ - deriving +Ind+Prs+Sg3, in čiõkkâd
+
+
+__Even syllabic verbs I, diphthong opening õ:ä after i:e__ - deriving +Ind+Prs+Sg3, in čiõkkâd
 
 
 __Even syllabic verbs I, diphthong opening i:e before õ:, å:__ - used in conjunction with diphthong opening
@@ -164,6 +180,8 @@ __Even syllabic verbs I, relative vowel lengthening and raising__ - conjugation 
 
 
 __Even syllabic verbs I, relative vowel lengthening and lowering__ -  simultaneous lengthening and lowering: juˊrdded > joordam juˊrdded+V+Ind+Prs+Sg1
+
+__Even syllabic verbs I, relative vowel lengthening and lowering u:o 0:o__ -  simultaneous lengthening and lowering: juˊrdded > joordam juˊrdded+V+Ind+Prs+Sg1
 
 
 __Vowel lengthening in INDPRSSG3 and IMPSG2__ - kååˊmmerd, maainâst
@@ -211,6 +229,7 @@ __Loss of _’_ when preceded by vowel__ - This is a temporary solution to  "’
 
 __Even-syllabic verbs I, Palatalization mark between V and C__ - used +Ind+Prs+Pl3, +Ind+Prt+Pl3
 
+
 The left context allows for:
 Vowel shortening, and j/v > V 
 
@@ -238,15 +257,20 @@ mõõnnâd : mõˊnne : mõõn
 
 
 
-__Even syllabic verbs I, cg__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, teevvad > teev, jiõnn:jiõn
+__Even syllabic verbs I, cg__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, teevvad > teev
+
+__Even syllabic verbs I, cg m:0__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, 
+
+__Even syllabic verbs I, cg n:0__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, jiõnn:jiõn
+
 
 
 __Even syllabic nouns I, with extra lengthening of vowel V>VV and SS>ZZ__ 
 used with  +N+Sg+Nom > +N+Sg+Gen for cases like
 {{kuss > kuuzz}}.
 {{{
- Cx:Cy <=> [#: | C: ] V: (:V) (%ˊ: | 0:%ˊ) Cx: _ %^VOWXL: ; 
-           [#: | C: ] V: (:V) (%ˊ: | 0:%ˊ) _ Cx: %^VOWXL: ; 
+ Cx:Cy <=> [#: | C: ] V: ( 0:V | V:V ) (%ˊ: | %{%ˊ%}:%ˊ) Cx: _ %^VOWXL: ; 
+           [#: | C: ] V: ( 0:V | V:V ) (%ˊ: | %{%ˊ%}:%ˊ) _ Cx: %^VOWXL: ; 
                  where Cx in (k s)                          
                        Cy in (ǥ z)                          
                  matched ;                                  
