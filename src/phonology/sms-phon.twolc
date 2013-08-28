@@ -128,8 +128,8 @@ Rules !!= !!! @CODE@
 ! 2013-08-29
 "Even syllabic verbs I, diphthong shortening consonant lengthening"
 !! __@RULENAME@__ - used in +N+Sg+Ill __jeäll:jiâlˈlu, __
- 0:%ˈ <=> [ e: ä: ] (%ˊ: | %{%ˊ%}: ) l _ l %^VOWSH: %^CLong: (%^VOWLower: |%^VOWRaise: ) (%^VOWFront: ) (X3:) (%^PAL: |%^PALNo: ) [ %>: | #: ]  ;
-
+ 0:%ˈ <=> [ e: ä: | e: â: | i: â: | i: e: | u: â: | u: e: ] (%ˊ: | %{%ˊ%}: ) Cx: _ Cx: [ %^VOWSH: %^CLong: | %^VOWTense: ] (%^VOWLower: |%^VOWRaise: ) (%^VOWFront: ) (X3:) (%^PAL: |%^PALNo: ) [ %>: | #: ]  ;
+                where Cx in (đ k ǩ l p r s t) ;
 
 
 
@@ -181,7 +181,7 @@ Rules !!= !!! @CODE@
 
 "Even syllabic verbs I, diphthong raising beginning with e:i ä:â"
 !! __@RULENAME@__ - deriving +Ind+Prt+Pl3 in reäkkad > riâkku, veârrad > viõrru
- ä:â <=> e:  _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ]  ( %^VOWSH: %^CLong: ) %^VOWRaise: %>: u ;
+ ä:â <=> e:  _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ | C:+ 0:%ˈ C:+ ]  ( %^VOWSH: %^CLong: ) %^VOWRaise: %>: u ;
 
 
 
@@ -378,7 +378,8 @@ i: _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower
 
 "Even-syllabic nouns, for â:e"
 !! __@RULENAME@__ - miârr:mieˊrre
- â:e <=> i _ ( %ˊ | %{%ˊ%}:  ) C:+ %^VOWTense:0 ;
+ â:e <=> i _ ( %ˊ | %{%ˊ%}:  ) [ C:+ | C:+ 0:%ˈ C:+ ] %^VOWTense:0 ;
+        
 
 !! !VOWEL and ZERO ALTERNATION
 
@@ -410,7 +411,7 @@ i: _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower
 
 "Even-syllabic verbs I, Palatalization mark between V and C"
 !! __@RULENAME@__ - used +Ind+Prs+Pl3, +Ind+Prt+Pl3
- %{%ˊ%}:%ˊ <=> [ #: | C: ] V:V ( V:0 | :V ) _ [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: ( %^CLong: ) | %^VOWL: %^CShort: ) ( %^VOWLower: | %^VOWRaise: ) ( %^VOWFront: | %^VOWTense:0 ) (X3:) %^PAL: [ %>: | #: ] ;
+ %{%ˊ%}:%ˊ <=> [ #: | C: ] V:V ( V:0 | :V ) _ [ C:+ | C:+ %ˈ: C:+ | C:+ 0:%ˈ C:+ ] ( %^VOWSH: ( %^CLong: ) | %^VOWTense: | %^VOWL: %^CShort: ) ( %^VOWLower: | %^VOWRaise: ) ( %^VOWFront: | %^VOWTense:0 ) (X3:) %^PAL: [ %>: | #: ] ;
 
 
 !! The left context allows for:
@@ -524,7 +525,7 @@ i: _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower
 ! ! â:e <=> (C:+) [ i: | u: ] _ ˊ C:+ (X3:) %^3VOW: ;
 
 
-!! !!Consonant gradaton rules
+!! !!Consonant gradation rules
 
 !! !Weakening Consonant Cluster
 
@@ -607,12 +608,16 @@ Cx:Cy <=> [#: | C: ] V: ( 0:V | V:V ) (%ˊ: | %{%ˊ%}: ) Cx: _ %^VOWXL: ; !!= @C
 
 "Even syllabic verbs I, t>đ" 
 !! __@RULENAME@__ - tt:đ
- t:đ  <=> V: (%ˊ: | %{%ˊ%}: ) _ t:0 %^VOWL: %^CShort: ;
+ t:đ  <=> V: (%ˊ: | %{%ˊ%}: ) _ t:0 [ %^VOWL: %^CShort: | %^VOWXL: ]  ;
+
+"Even syllabic nouns I, p>v" 
+!! __@RULENAME@__ - pp:v
+ p:v  <=> V: (%ˊ: | %{%ˊ%}: ) _ p:0 [ %^VOWL: %^CShort: | %^VOWXL: ]  ;
 
 "Even syllabic verbs I, second consonant loss"
 !! __@RULENAME@__ -
- Cx:0 <=> V: (%ˊ: | %{%ˊ%}: ) Cx: _ %^VOWL: %^CShort: ;
-                where Cx in (t) ; ! Extend
+ Cx:0 <=> V: (%ˊ: | %{%ˊ%}: ) Cx: _ [ %^VOWL: %^CShort: | %^VOWXL: ] ;
+                where Cx in (p t) ; ! Extend
 
 ! 
 "Even syllabic verbs I, lgg>lǥ" 
