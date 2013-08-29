@@ -1,0 +1,22 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+  Adjective - jõõskâs class A4â: # Adjective 'quiet' - full paradigm
+#    jõõskâs+A+Pred+Sg: jõõskâs
+#    jõõskâs+A+Pred+Pl: jõõskâs
+    jõõskâs+A+Attr: jõskk
+    jõõskâs+A+Comp: jõskksab
+    jõõskâs+A+Superl: jõskksumus
+
