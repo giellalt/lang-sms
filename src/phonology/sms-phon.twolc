@@ -205,9 +205,21 @@ Rules !!= !!! @CODE@
 ! juˊrdded > joordam
  [ #: | C ] _ ( u: | i: ) (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
  [ #: | C ] _ ((%ˊ: | %{%ˊ%}: ) ( v:u | j:i )) (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
-              where Vx in (u i o a)
-                    Vy in (o e å ä)
+              where Vx in (i o a)
+                    Vy in (e å ä)
               matched ;
+
+"Even syllabic verbs I, vowel lowering"
+!! __@RULENAME@__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in uˊvdded
+ u:o <=>  _ u: (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: | %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+        u: _     (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )                      %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+ [#: | C: ] _     (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: )                      %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+! juˊrdded+V+Cond+Sg1: joordčem
+ [#: | C: ] _ 0:o (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+! juˊrdded > joordam
+ [ #: | C ] _ ( u: | i: ) (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+ [ #: | C ] _ ( 0:o ) ((%ˊ: | %{%ˊ%}: ) ( v:u  (%ˊ: | %{%ˊ%}: | 0:%ˊ ))) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+
 
 "Even syllabic verbs I, vowel lowering õ:â "
 !! __@RULENAME@__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
@@ -336,7 +348,7 @@ i: _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower
 
 "Even syllabic verbs I, relative vowel lengthening and lowering u:o 0:o"
 !! __@RULENAME@__ -  simultaneous lengthening and lowering: juˊrdded > joordam juˊrdded+V+Ind+Prs+Sg1
- 0:o <=> [ C: | #: ] u:o _ (%ˊ: | %{%ˊ%}: ) C:+ %^VOWL: %^CShort: %^VOWLower:  ;
+ 0:o <=> [ C: | #: ] u:o _ (%ˊ: | %{%ˊ%}: ) ( v: (%ˊ: | %{%ˊ%}: | %ˊ ) ) C:+ %^VOWL: %^CShort: %^VOWLower:  ;
 
 
 "Vowel lengthening in INDPRSSG3 and IMPSG2"
@@ -363,7 +375,7 @@ i: _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower
 
 "Even syllabic verbs,  for v>u"
 !! __@RULENAME@__ - uvdd > ouˊdde
- v:u <=> [ C: | #: ] u: ( 0:u | 0:o ) (%{%ˊ%}: ) _ (%ˊ: | %{%ˊ%}: ) d d: [ %^VOWL: %^CShort: | %^VOWXL: | %^VOWLower: | %^VOWSH: %^CLong:  %^VOWLower: (%^VOWFront: ) %^PAL: ];
+ v:u <=> [ C: | #: ] u: ( 0:u | 0:o ) ( %{%ˊ%}: ) _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) d d: [ %^VOWL: %^CShort: | %^VOWXL: | %^VOWLower: | %^VOWSH: %^CLong:  ( %^VOWLower: ) (%^VOWFront: ) %^PAL: ];
 
 
  "Even syllabic nouns, for h>u"
@@ -416,7 +428,12 @@ QA1:’ <=> [ l l ] _ i: %>: V: ;
 
 "Even-syllabic verbs I, Palatalization mark between V and C"
 !! __@RULENAME@__ - used +Ind+Prs+Pl3, +Ind+Prt+Pl3
- %{%ˊ%}:%ˊ <=> [ #: | C: ] V:V ( V:0 | :V ) _ [ C:+ | C:+ %ˈ: C:+ | C:+ 0:%ˈ C:+ ] ( %^VOWSH: ( %^CLong: ) | %^VOWTense: | %^VOWL: %^CShort: ) ( %^VOWLower: | %^VOWRaise: ) ( %^VOWFront: | %^VOWTense:0 ) (X3:) %^PAL: [ %>: | #: ] ;
+ %{%ˊ%}:%ˊ <=> [ #: | C: ] V:V ( V:0 | :V ) _ [ C:C+ | C:C+ %ˈ: C:C+ | C:C+ 0:%ˈ C:C+ ] ( %^VOWSH: ( %^CLong: ) | %^VOWTense: | %^VOWL: %^CShort: ) ( %^VOWLower: | %^VOWRaise: ) ( %^VOWFront: | %^VOWTense:0 ) (X3:) %^PAL: [ %>: | #: ] ;
+
+"0:%ˊ as transfer from left of v:u"
+!! __@RULENAME@__ - used +Ind+Prs+Pl3, uˊvdded+V+Ind+Prs+Pl3: ouˊdde
+0:%ˊ <=> %{%ˊ%}:0 [ v:u | h:u ] _ d:+  [ %^VOWSH: %^CLong: ( %^VOWLower: ) ( %^VOWFront: )| %^VOWL: %^CShort: ( %^VOWRaise: ) ]  %^PAL: ;
+
 
 
 !! The left context allows for:
@@ -608,7 +625,7 @@ Cx:Cy <=> [#: | C: ] V: ( 0:V | V:V ) (%ˊ: | %{%ˊ%}: ) Cx: _ %^VOWXL: ; !!= @C
 ! 2012-06-12 _v:u_ allows for uˊvdded
 "Even syllabic verbs I, third consonant loss idd:id" 
 !! __@RULENAME@__ - idd:id, +Imp+Sg2, +Ind+Prs+ConNeg double consonants following vowel and "i" at coda that become single consonants in gradation
- d:0 <=> V: (0:V) [ i | v:u ] (%ˊ: | %{%ˊ%}: ) d: _ %^VOWL: %^CShort: ;
+ d:0 <=> V: (0:V) [ i | (%ˊ: | %{%ˊ%}: ) v:u ] (%ˊ: | %{%ˊ%}: | :%ˊ ) d: _ %^VOWL: %^CShort: ;
 
 
 "Even syllabic verbs I, t>đ" 
