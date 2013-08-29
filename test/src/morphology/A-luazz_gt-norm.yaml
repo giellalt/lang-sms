@@ -1,0 +1,22 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+  Adjective - luäǯ'ǯ class A1a: # Adjective 'loose' - full paradigm
+#    luäǯ'ǯ+A+Pred+Sg: luäǯ'ǯ
+    luäǯ'ǯ+A+Pred+Pl: luäǯǯ
+    luäǯ'ǯ+A+Attr: luäǯǯas
+    luäǯ'ǯ+A+Comp: luäǯǯab
+    luäǯ'ǯ+A+Superl: luäǯǯmõs
+
