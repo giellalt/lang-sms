@@ -1,0 +1,39 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+
+
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Verb - mõõnnâd: # Verb 'to go' - full paradigm
+     mõõnnâd+V+Inf: mõõnnâd
+     mõõnnâd+V+Ind+Prs+Sg1: mõõnam
+     mõõnnâd+V+Ind+Prs+Sg2: mõõnak
+     mõõnnâd+V+Ind+Prs+Sg3: mâânn
+     mõõnnâd+V+Ind+Prs+Pl1: mõõnnâp
+     mõõnnâd+V+Ind+Prs+Pl2: mõõnnveˊted
+     mõõnnâd+V+Ind+Prs+Pl3: mâˊnne
+     mõõnnâd+V+Ind+Prs+4: mõõnât
+     mõõnnâd+V+Ind+Prs+ConNeg: mõõn
+     mõõnnâd+V+Ind+Prt+Sg1: mõˊnnem
+     mõõnnâd+V+Ind+Prt+Sg2: mõˊnniǩ
+     mõõnnâd+V+Ind+Prt+Sg3: mõõni
+     mõõnnâd+V+Ind+Prt+Pl1: mõõnim
+     mõõnnâd+V+Ind+Prt+Pl2: mõõnid
+     mõõnnâd+V+Ind+Prt+Pl3: mõˊnne
+     mõõnnâd+V+Ind+Prt+4: mõˊnneš
+     mõõnnâd+V+PrfPrc: mõõnnâm
+
+
