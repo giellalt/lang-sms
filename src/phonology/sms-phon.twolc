@@ -368,9 +368,9 @@ i: _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower
 !! !SEMI VOWELS
 
  
-"Even syllabic nouns, for j>i"
+!"Even syllabic nouns, for j>i"
 !! __@RULENAME@__ - sijdd > siid This will need a special extra-lengthening rule
- j:i <=> [ C: | #: ] i: (%{%ˊ%}: ) _ (%ˊ: | %{%ˊ%}: ) d d: [ %^VOWL: %^CShort: | %^VOWXL: | %^VOWLower: | %^VOWSH: %^CLong:  %^VOWLower: %^PAL: ];
+! j:i <=> [ C: | #: ] i: (%{%ˊ%}: ) _ (%ˊ: | %{%ˊ%}: ) d d: [ %^VOWL: %^CShort: | %^VOWXL: | %^VOWLower: | %^VOWSH: %^CLong:  %^VOWLower: %^PAL: ];
 
 
 "Even syllabic verbs,  for v>u"
@@ -603,6 +603,24 @@ Cx:Cy <=> [#: | C: ] V: ( 0:V | V:V ) (%ˊ: | %{%ˊ%}: ) Cx: _ %^VOWXL: ; !!= @C
                 where Cx in (d) ;
 
 
+"jdd to id rule"
+j:i <=> [ C | .#. ] i _ d d:0 %^VOWXL:0 ;
+
+"vdd to ud rule"
+v:u <=> [ C | .#. ] u _ d d:0 %^VOWXL:0 ;
+
+!Vx:Cx <=> [ C | .#. ] Vx _ d d:0 %^VOWXL:0 ;
+!	where Vx in ( i u )
+!		  Cx in ( j v )
+!	matched ;
+
+!"jdd to id rule 2"
+!d:0 <=> [ C | .#. ] i j:i _ d %^VOWXL: ;
+
+
+
+
+
 
 
 "Even syllabic verbs I, Voicing" 
@@ -658,6 +676,13 @@ Cx:Cy <=> [#: | C: ] V: ( 0:V | V:V ) (%ˊ: | %{%ˊ%}: ) Cx: _ %^VOWXL: ; !!= @C
  g:j  <=> V:  :%ˊ [ l | r | d: ]  _ g:0 %^VOWL: %^CShort: ( %^VOWLower: | %^VOWRaise: ) (%^VOWFront: ) (X3:) %^PAL: ;
 
 
+
+
+
+
+
+
+
 !! !!Rules for cleaning up and composing end result
 
 !! * Strengthening Consonant Cluster
@@ -696,3 +721,12 @@ Cx:Cy <=> [#: | C: ] V: ( 0:V | V:V ) (%ˊ: | %{%ˊ%}: ) Cx: _ %^VOWXL: ; !!= @C
 ! ! mõõnnâd:mõõˊnn	POORRÂD ;
 ! ! 
 ! 
+
+!! !!Vowel change rules
+
+!! !Illative
+
+"Illative root vowel shortening in even stems"
+Vx:0 <=> Vx _ (%{%ˊ%}:) C:* %^VOWSH:0 ;
+	where Vx in ( a e i o u å ä â õ ) ;
+
