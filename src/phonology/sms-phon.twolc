@@ -93,6 +93,8 @@ Sets
 
 ! Letter =
  C	= b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ; !!= * @CODE@
+
+ CNoJ	= b c d f g h k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ; !!= * @CODE@
  V	= a e i o u å ä â õ ;										    !!= * @CODE@
 
  CNoJV        = b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ;    !!= * @CODE@
@@ -306,8 +308,8 @@ i: _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower
 
 "Even syllabic nouns I, relative vowel lengthening i"
 !! __@RULENAME@__ - ǩiđđ:ǩiiđ
- 0:i <=> C: i: _ [(%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ] [ %^VOWL: | %^VOWXL: ] (%^CShort:) [ %>: | #: | %^PAL: ] ;
-    C: i: _ ( %ˊ: | %{%ˊ%}: )  C: [ QÂ1: ] C:+  [ %^VOWL: | %^VOWXL: ] [ %>: | #: | %^PAL: ] ;
+ 0:i <=> C: i: _ [(%ˊ: | %{%ˊ%}: ) [ CNoJ:+ | CNoJ:+ %ˈ: C:+ ] ] [ %^VOWL: | %^VOWXL: ] (%^CShort:) [ %>: | #: | %^PAL: ] ;
+    C: i: _ ( %ˊ: | %{%ˊ%}: )  CNoJ: [ QÂ1: ] C:+  [ %^VOWL: | %^VOWXL: ] [ %>: | #: | %^PAL: ] ;
 
 
 
@@ -368,9 +370,9 @@ i: _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower
 !! !SEMI VOWELS
 
  
-!"Even syllabic nouns, for j>i"
+"Even syllabic nouns, for j>i"
 !! __@RULENAME@__ - sijdd > siid This will need a special extra-lengthening rule
-! j:i <=> [ C: | #: ] i: (%{%ˊ%}: ) _ (%ˊ: | %{%ˊ%}: ) d d: [ %^VOWL: %^CShort: | %^VOWXL: | %^VOWLower: | %^VOWSH: %^CLong:  %^VOWLower: %^PAL: ];
+ j:i <=> [ C: | #: ] i: ( %{%ˊ%}: ) _ ( %ˊ: | %{%ˊ%}: ) d d: [ %^VOWL: %^CShort: | %^VOWXL: | %^VOWLower: | %^VOWSH: %^CLong: %^VOWLower: %^PAL: ] ;
 
 
 "Even syllabic verbs,  for v>u"
@@ -603,19 +605,22 @@ Cx:Cy <=> [#: | C: ] V: ( 0:V | V:V ) (%ˊ: | %{%ˊ%}: ) Cx: _ %^VOWXL: ; !!= @C
                 where Cx in (d) ;
 
 
-"jdd to id rule"
-j:i <=> [ C | .#. ] i _ d d:0 %^VOWXL:0 ;
+!"jdd to id rule" Commenting out 2013-09-05
+!j:i <=> [ C | #: ] i _ d d:0 %^VOWXL:0 ;
+![ C | .#. ] i _ d d:0 %^VOWXL:0 ;
 
-"vdd to ud rule"
-v:u <=> [ C | .#. ] u _ d d:0 %^VOWXL:0 ;
+!"vdd to ud rule" Commenting out 2013-09-05
+!v:u <=>  [ C | .#. ] u _ d d:0 %^VOWXL:0 ;
 
-!Vx:Cx <=> [ C | .#. ] Vx _ d d:0 %^VOWXL:0 ;
+!Vx:Cx <=> [ C | #: ] Vx _ d d:0 %^VOWXL:0 ;
+! [ C | .#. ] Vx _ d d:0 %^VOWXL:0 ;
 !	where Vx in ( i u )
 !		  Cx in ( j v )
 !	matched ;
 
 !"jdd to id rule 2"
-!d:0 <=> [ C | .#. ] i j:i _ d %^VOWXL: ;
+!d:0 <=> [ C | #: ] i j:i _ d %^VOWXL: ;
+! [ C | .#. ] i j:i _ d %^VOWXL: ;
 
 
 
@@ -726,7 +731,7 @@ v:u <=> [ C | .#. ] u _ d d:0 %^VOWXL:0 ;
 
 !! !Illative
 
-"Illative root vowel shortening in even stems"
-Vx:0 <=> Vx _ (%{%ˊ%}:) C:* %^VOWSH:0 ;
-	where Vx in ( a e i o u å ä â õ ) ;
+!"Illative root vowel shortening in even stems" Commenting out 2013-09-05
+!Vx:0 <=> Vx _ (%{%ˊ%}:) C:* %^VOWSH:0 ;
+!	where Vx in ( a e i o u å ä â õ ) ;
 
