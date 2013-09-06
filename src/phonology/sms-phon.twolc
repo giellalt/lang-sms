@@ -381,7 +381,7 @@ i: _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower
 
 "Even syllabic verbs,  for v>u"
 !! __@RULENAME@__ - uvdd > ouˊdde
- v:u <=> [ C: | #: ] u: ( 0:o ) ( %ˊ:0 | %{%ˊ%}:0 ) _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) d d: [ %^VOWL: %^CShort: | %^VOWXL: | %^VOWLower: | %^VOWSH: %^CLong:  ( %^VOWLower: ) (%^VOWFront: ) ( %^PAL: ) ];
+ v:u <=> [ C: | #: ] u: ( 0:o ) ( %ˊ:0 | %{%ˊ%}:0 ) _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ d d: | l l: ] [ %^VOWL: %^CShort: | %^VOWXL: | %^VOWLower: | %^VOWSH: %^CLong:  ( %^VOWLower: ) (%^VOWFront: ) ( %^PAL: ) ];
 
 
  "Even syllabic nouns, for h>u"
@@ -438,8 +438,8 @@ QA1:’ <=> [ l l ] _ i: %>: V: ;
 
 "0:%ˊ as transfer from left of v:u"
 !! __@RULENAME@__ - used +Ind+Prs+Pl3, uˊvdded+V+Ind+Prs+Pl3: ouˊdde
-0:%ˊ <=> %{%ˊ%}:0  [ v:u | h:u ] _ d:+  [ %^VOWSH: %^CLong: ( %^VOWLower: ) ( %^VOWFront: )| %^VOWL: %^CShort: ( %^VOWRaise: ) ]   %^PAL:  ;
-  %ˊ:0 [ v:u | h:u ] _ d:+  [ %^VOWSH: %^CLong: ( %^VOWLower: ) ( %^VOWFront: )| %^VOWL: %^CShort: ( %^VOWRaise: ) ]  ( %^PAL: ) ;
+0:%ˊ <=> %{%ˊ%}:0  [ v:u | h:u ] _ [ d:+ | l:+ ] [ %^VOWSH: %^CLong: ( %^VOWLower: ) ( %^VOWFront: )| %^VOWL: %^CShort: ( %^VOWRaise: ) ]   %^PAL:  ;
+  %ˊ:0 [ v:u | h:u ] _ [ d:+ | l:+ ]  [ %^VOWSH: %^CLong: ( %^VOWLower: ) ( %^VOWFront: )| %^VOWL: %^CShort: ( %^VOWRaise: ) ]  ( %^PAL: ) ;
 
 
 
@@ -470,7 +470,7 @@ QA1:’ <=> [ l l ] _ i: %>: V: ;
 "Even-syllabic nouns, removing palatalization in -est +Loc nouns"
 !! __@RULENAME@__ - removing palatalization in +Sg+Ill,  pieˊss:peässa
    %ˊ:0 <=> V: _ [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: | %^VOWL: %^CShort: ) ( %^VOWLower: | %^VOWRaise: ) (%^VOWFront: ) (X3:) %^PALNo: [ %>: | #: ] ;
-         _ v:u (%ˊ: | %{%ˊ%}: | 0:%ˊ ) d d: [ %^VOWL: %^CShort: | %^VOWXL: | %^VOWLower: | %^VOWSH: %^CLong:  ( %^VOWLower: ) (%^VOWFront: ) ( %^PAL: ) ] ;
+         _ v:u (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ d d: | l l: ] [ %^VOWL: %^CShort: | %^VOWXL: | %^VOWLower: | %^VOWSH: %^CLong:  ( %^VOWLower: ) (%^VOWFront: ) ( %^PAL: ) ] ;
 
 !  "Even-syllabic verbs I, removing palatalization in -ed verbs"
 ! __@RULENAME@__ - removing palatalization Prs+Sg3
@@ -569,7 +569,14 @@ QA1:’ <=> [ l l ] _ i: %>: V: ;
 !! __@RULENAME@__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, teevvad > teev
  Cx:0 <=> :V (%ˊ: | %{%ˊ%}: ) Cx _ (%^VOWL: ) %^CShort: ;
            V: :V  (%ˊ: | %{%ˊ%}: ) Cx _ %^VOWXL: ; 
- 		where Cx in (đ l r v) ;
+ 		where Cx in (đ r v) ;
+
+"Even syllabic verbs I, cg for l"
+!! __@RULENAME@__ - used with  vuvll
+ l:0 <=> :V (%ˊ: | %{%ˊ%}: ) l _ (%^VOWL: ) %^CShort: ;
+           V: :V  (%ˊ: | %{%ˊ%}: ) l _ %^VOWXL: ; 
+ V: (0:V) (%ˊ: | %{%ˊ%}: ) v:u  ( :%ˊ ) l: _ %^VOWL: %^CShort: ;
+
 
 "Even syllabic verbs I, cg m:0"
 !! __@RULENAME@__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, 
