@@ -64,6 +64,7 @@ Alphabet
  QA1:0 !!= * @CODE@ used with "vuejted" to drive (causative)
  QE1:0 !!= * @CODE@ used with "kåˊmrded" to bow
  %{%ˊ%}:0 !!= * @CODE@ archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one.
+ %{EÂ%}:e !!= * @CODE@ archiform for ie:eâ variation
  %^IMPSG2:0	    !!= * @CODE@ 
  %^INDPRSSG3:0  !!= * @CODE@ 
  %^FRICG:0	    !!= * @CODE@ 
@@ -98,7 +99,7 @@ Sets
  CNoJ	= b c d f g h k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ; !!= * @CODE@
  V	= a e i o u å ä â õ ;										    !!= * @CODE@
 
- CNoJV        = b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ;    !!= * @CODE@
+ CNoJV  = b c d f g h k l m n p q r s t w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ;    !!= * @CODE@
 
 
 !! !! Definitions
@@ -122,16 +123,48 @@ Rules !!= !!! @CODE@
 ! %ˊ:0 /<= V: _ C:+ (X3:) [ %^3VOW: | %^4VOW: | %^5VOW: ] ;
 
 
-"Even syllabic verbs I, vowel shortening"
+"Even syllabic verbs I, vowel shortening â:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
- Vx:0 <=> Vx: _ (%ˊ: | %{%ˊ%}: ) LongC %^VOWSH: %^CLong: (%^VOWLower: |%^VOWRaise: ) (%^VOWFront: ) (X3:) (%^PAL: |%^PALNo: ) [ %>: | #: ]  ;
-! 2012-06-01 Vx: _ (%ˊ) C:+ (X3:) [ %^VOWSH: | %^2VOW: | %^3VOW: | %^4VOW: ] ;
- 		where Vx in (â e å õ u i o a ä) ;
+ â:0 <=> [ C | #: ] _ â: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ LongC | C: :C* ] %^VOWSH: ( %^CLong: ) (%^VOWLower: |%^VOWRaise: ) (%^VOWFront: ) (X3:) ( %^PAL: | %^PALNo: ) [ %>: | #: ]  ;
+! 2012-06-01 â: _ (%ˊ) C:+ (X3:) [ %^VOWSH: | %^2VOW: | %^3VOW: | %^4VOW: ] ;
+
+"Even syllabic verbs I, vowel shortening e:0"
+!! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+ e:0 <=> [ C | #: ] _ e: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ LongC | C: :C* ] %^VOWSH: ( %^CLong: ) (%^VOWLower: |%^VOWRaise: ) (%^VOWFront: ) (X3:) ( %^PAL: | %^PALNo: ) [ %>: | #: ]  ;
+
+"Even syllabic verbs I, vowel shortening å:0"
+!! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+ å:0 <=> [ C | #: ] _ å: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ LongC | C: :C* ] %^VOWSH: ( %^CLong: ) (%^VOWLower: |%^VOWRaise: ) (%^VOWFront: ) (X3:) ( %^PAL: | %^PALNo: ) [ %>: | #: ]  ;
+
+"Even syllabic verbs I, vowel shortening õ:0"
+!! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+ õ:0 <=> [ C | #: ] _ õ: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ LongC | C: :C* ] %^VOWSH: ( %^CLong: ) (%^VOWLower: |%^VOWRaise: ) (%^VOWFront: ) (X3:) ( %^PAL: | %^PALNo: ) [ %>: | #: ]  ;
+
+"Even syllabic verbs I, vowel shortening u:0"
+!! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+ u:0 <=> [ C | #: ] _ u: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ LongC | C: :C* ] %^VOWSH: ( %^CLong: ) (%^VOWLower: |%^VOWRaise: ) (%^VOWFront: ) (X3:) ( %^PAL: | %^PALNo: ) [ %>: | #: ]  ;
+
+"Even syllabic verbs I, vowel shortening i:0"
+!! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+ i:0 <=> [ C | #: ] _ i: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ LongC | C: :C* ] %^VOWSH: ( %^CLong: ) (%^VOWLower: |%^VOWRaise: ) (%^VOWFront: ) (X3:) ( %^PAL: | %^PALNo: ) [ %>: | #: ]  ;
+
+"Even syllabic verbs I, vowel shortening o:0"
+!! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+ o:0 <=> [ C | #: ] _ o: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ LongC | C: :C* ] %^VOWSH: ( %^CLong: ) ( %^VOWLower: | %^VOWRaise: ) (%^VOWFront: ) (X3:) ( %^PAL: | %^PALNo: ) [ %>: | #: ]  ;
+
+"Even syllabic verbs I, vowel shortening a:0"
+!! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+ a:0 <=> [ C | #: ] _ a: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ LongC | C: :C* ] %^VOWSH: ( %^CLong: ) (%^VOWLower: |%^VOWRaise: ) (%^VOWFront: ) (X3:) ( %^PAL: | %^PALNo: ) [ %>: | #: ]  ;
+
+"Even syllabic verbs I, vowel shortening ä:0"
+!! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+ ä:0 <=> [ C | #: ] _ ä: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ LongC | C: :C* ] %^VOWSH: ( %^CLong: ) (%^VOWLower: |%^VOWRaise: ) (%^VOWFront: ) (X3:) ( %^PAL: | %^PALNo: ) [ %>: | #: ]  ;
+
 
 ! 2013-08-29
 "Even syllabic verbs I, diphthong shortening consonant lengthening"
 !! __@RULENAME@__ - used in +N+Sg+Ill __jeäll:jiâlˈlu, __
- 0:%ˈ <=> [ e: ä: | e: â: | i: â: | i: e: | u: â: | u: e: ] (%ˊ: | %{%ˊ%}: ) Cx: _ Cx: ( j ) [ %^VOWSH: %^CLong: | %^VOWTense: ] (%^VOWLower: |%^VOWRaise: ) (%^VOWFront: ) (X3:) (%^PAL: |%^PALNo: ) [ %>: | #: ]  ;
+ 0:%ˈ <=> [ e: ä: | e: â: | i: â: | i: e: | u: â: | u: e: ] (%ˊ: | %{%ˊ%}: | 0:%ˊ ) Cx: _ Cx: ( j ) [ %^VOWSH: %^CLong: | %^VOWTense: %^CLong: ] (%^VOWLower: |%^VOWRaise: ) (%^VOWFront: ) (X3:) (%^PAL: |%^PALNo: ) [ %>: | #: ]  ;
                 where Cx in (c đ k ǩ l m n p r s t v) ;
 
 
@@ -146,47 +179,59 @@ Rules !!= !!! @CODE@
 
 !! deriving +Ind+Prt+Sg1, +Ind+Prt+Sg2 +Ind+Prt+Pl3 in teevvad:tivvu
 
-"Even syllabic verbs I, vowel raising"
+"Even syllabic verbs I, vowel raising o:u"
 !! __@RULENAME@__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
- Vx:Vy <=>   _ Vx:  (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: %>: [ e | u ]  ; 
-             _ Vx:0 (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: (%^PAL: ) %>: [ e | u ] ;
-             _ 0:Vy (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWL: %^CShort: ) %^VOWRaise: %^PAL: %>: [ e | u ] ;
-  [ C | #: ] _ ( u: ) (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: | %^VOWL: ) %^VOWRaise: (%^PAL: ) %>: [ e | u ]  ;
+ o:u <=>  [ C | #: ]  o: _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: %>: [ e | u ]  ; 
+          [ C | #: ] o:0 _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: (%^PAL: ) %>: [ e | u ] ;
+          [ C | #: ] 0:u _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWL: %^CShort: ) %^VOWRaise: %^PAL: %>: [ e | u ] ;
+  [ C | #: ] _ ( u: ) (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: | %^VOWL: ) %^VOWRaise: (%^PAL: ) %>: [ e | u ]  ;
 
-              where Vx in (o å ä)
-                    Vy in (u o a)
-              matched ;
 
-"Even syllabic verbs I, vowel raising"
+"Even syllabic verbs I, vowel raising å:o"
 !! __@RULENAME@__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
- e:i <=>   _ e:  (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: %>: [ e | u ]  ; 
-             _ e:0 (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: (%^PAL: ) %>: [ e | u ] ;
-             _ 0:i (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWL: %^CShort: ) %^VOWRaise: %^PAL: %>: [ e | u ] ;
-  [ C | #: ] _ ( u: ) (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: | %^VOWL: ) %^VOWRaise: (%^PAL: ) %>: [ e | u ]  ;
+ å:o <=>  [ C | #: ] å: _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: %>: [ e | u ]  ; 
+          [ C | #: ] å:0 _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: (%^PAL: ) %>: [ e | u ] ;
+          [ C | #: ] 0:o _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWL: %^CShort: ) %^VOWRaise: %^PAL: %>: [ e | u ] ;
+          [ C | #: ] _ ( u: ) (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: | %^VOWL: ) %^VOWRaise: (%^PAL: ) %>: [ e | u ]  ;
+
+"Even syllabic verbs I, vowel raising a:ä"
+!! __@RULENAME@__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
+ a:ä <=> [ C | #: ] a: _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: %>: [ e | u ]  ; 
+         [ C | #: ] a:0 _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: (%^PAL: ) %>: [ e | u ] ;
+         [ C | #: ] 0:ä _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWL: %^CShort: ) %^VOWRaise: %^PAL: %>: [ e | u ] ;
+  [ C | #: ] _ ( u: ) (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: | %^VOWL: ) %^VOWRaise: (%^PAL: ) %>: [ e | u ]  ;
+
+
+"Even syllabic verbs I, vowel raising e:i"
+!! __@RULENAME@__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
+ e:i <=>   e: _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: %>: [ e | u ]  ; 
+           e:0 _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: (%^PAL: ) %>: [ e | u ] ;
+           0:i _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWL: %^CShort: ) %^VOWRaise: %^PAL: %>: [ e | u ] ;
+  [ C | #: ] _ ( u: ) (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: | %^VOWL: ) %^VOWRaise: (%^PAL: ) %>: [ e | u ]  ;
 !! diphthong raising with e:i at onset - deriving +Ind+Prt+Pl3 in reäkkad > riâkku, veârrad > viõrru
-  _ [ ä:â | â:õ  ] (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ | C:+ 0:%ˈ C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: %>: u ;
+  _ [ ä:â | â:õ  ] (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ | C:+ 0:%ˈ C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: %>: u ;
 
 
 
 "Even syllabic verbs I, vowel raising â:õ" 
 !! __@RULENAME@__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
- â:õ <=>   _ â:  (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: %>: [ e | u ]  ; 
-             _ â:0 (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: (%^PAL: ) %>: [ e | u ] ;
-             _ 0:õ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWL: %^CShort: ) %^VOWRaise: %^PAL: %>: [ e | u ] ;
-  [ C | #: ] _ ( u: ) (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: | %^VOWL: ) %^VOWRaise: (%^PAL: ) %>: [ e | u ]  ;
- u  _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ | C:+ :%ˈ C:+ ] ( %^VOWSH: %^CLong: ) %^VOWRaise: %>: u ;
- e:  _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ | C:+ 0:%ˈ C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: %>: u ;
+ â:õ <=>   â: _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: %>: [ e | u ]  ; 
+           â:0 _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: (%^PAL: ) %>: [ e | u ] ;
+           0:õ _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWL: %^CShort: ) %^VOWRaise: %^PAL: %>: [ e | u ] ;
+  [ C | #: ] _ ( u: ) (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: | %^VOWL: ) %^VOWRaise: (%^PAL: ) %>: [ e | u ]  ;
+           u  _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ | C:+ :%ˈ C:+ ] ( %^VOWSH: %^CLong: ) %^VOWRaise: %>: u ;
+           e:  _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ | C:+ 0:%ˈ C:+ ]  (%^VOWSH: %^CLong: ) %^VOWRaise: %>: u ;
 
 
 
 "Even syllabic verbs I, diphthong raising beginning with u ä:å"
 !! __@RULENAME@__ - deriving +Ind+Prt+Pl3 in kuâs'sad > kuõs'su, kuärŋŋad kuårŋŋu
- ä:å <=> u  _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: ) %^VOWRaise: %>: u ;
+ ä:å <=> u  _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: ) %^VOWRaise: %>: u ;
 
 
 "Even syllabic verbs I, diphthong raising beginning with e:i ä:â"
 !! __@RULENAME@__ - deriving +Ind+Prt+Pl3 in reäkkad > riâkku, veârrad > viõrru
- ä:â <=> e:  _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ | C:+ 0:%ˈ C:+ ]  ( %^VOWSH: %^CLong: ) %^VOWRaise: %>: u ;
+ ä:â <=> e:  _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ | C:+ 0:%ˈ C:+ ]  ( %^VOWSH: %^CLong: ) %^VOWRaise: %>: u ;
 
 
 
@@ -198,81 +243,108 @@ Rules !!= !!! @CODE@
 ! long and single vowels
 
 
-"Even syllabic verbs I, vowel lowering"
-!! __@RULENAME@__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
- Vx:Vy <=>  _ Vx: (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: | %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
-        Vx: _     (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )                      %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
- [#: | C: ] _     (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: )                      %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
-! juˊrdded+V+Cond+Sg1: joordčem
- [#: | C: ] _ 0:Vy (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
-! juˊrdded > joordam
- [ #: | C ] _ ( u: | i: ) (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
- [ #: | C ] _ ((%ˊ: | %{%ˊ%}: ) ( v:u | j:i )) (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
-              where Vx in (i o a)
-                    Vy in (e å ä)
-              matched ;
 
-"Even syllabic verbs I, vowel lowering"
-!! __@RULENAME@__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in uˊvdded
- u:o <=>  _ u: (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: | %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
-        u: _     (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )                      %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
- [#: | C: ] _     (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: )                      %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
-! uˊvdded+V+Ind+Pl3: ouˊdde 
- [#: | C: ] _     (%ˊ: | %{%ˊ%}: ) [ v: ( 0:%ˊ ) C:+ | v: ( 0:%ˊ ) C:+ %ˈ: C:+ ]  %^VOWSH: %^CLong:  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+"Even syllabic verbs I, vowel lowering o:å"
+!! __@RULENAME@__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in poorrâd
+ o:å <=> [#: | C: ] _ o:å (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+           [#: | C: ] o: _   (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: | %^VOWL: %^CShort: )                      %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+           [#: | C: ] _   (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: )                      %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
 ! juˊrdded+V+Cond+Sg1: joordčem
- [#: | C: ] _ 0:o (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+           [#: | C: ] 0:å _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
 ! juˊrdded > joordam
- [ #: | C ] _ ( u: | i: ) (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
- [ #: | C ] _ ( 0:o ) ((%ˊ: | %{%ˊ%}: ) ( v:u  (%ˊ: | %{%ˊ%}: | 0:%ˊ ))) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
-! [ #: | C ] _ ( 0:o ) ((%ˊ: | %{%ˊ%}: ) ( v:u  (%ˊ: | %{%ˊ%}: | 0:%ˊ ))) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+           [ #: | C ] _ ( u: | i: ) (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+           [ #: | C ] _ ((%ˊ: | %{%ˊ%}: ) ( v:u | j:i )) (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+!
+
+"Even syllabic verbs I, vowel lowering i:e"
+!! __@RULENAME@__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
+ i:e <=> [#: | C: ] _ i:e (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+           [#: | C: ] i: _   (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: |  %^VOWL: %^CShort: )                      %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+           [#: | C: ] _   (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: )                      %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+! juˊrdded+V+Cond+Sg1: joordčem
+           [#: | C: ] 0:e _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+! juˊrdded > joordam
+           [ #: | C ] _ ( u: | i: ) (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+           [ #: | C ] _ ((%ˊ: | %{%ˊ%}: ) ( v:u | j:i )) (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+!
+
+"Even syllabic verbs I, vowel lowering a:ä"
+!! __@RULENAME@__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
+ a:ä <=> [#: | C: ] _ a:ä (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+           [#: | C: ] a: _   (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: | %^VOWL: %^CShort: )                      %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+           [#: | C: ] _   (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: )                      %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+! juˊrdded+V+Cond+Sg1: joordčem
+           [#: | C: ] 0:ä _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+! juˊrdded > joordam
+           [ #: | C ] _ ( u: | i: ) (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+           [ #: | C ] _ ((%ˊ: | %{%ˊ%}: ) ( v:u | j:i )) (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+
+
+"Even syllabic verbs I, vowel lowering u:o"
+!! __@RULENAME@__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in uˊvdded
+ u:o <=>  _ u: (%ˊ: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+        u: _     (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: | %^VOWL: %^CShort: )                      %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+       [#: | C: ] _  ( %ˊ: |  0:%ˊ ) [ CNoV: C:* | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: )                      %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+! uˊvdded+V+Ind+Pl3: ouˊdde 
+ [#: | C: ] (0:o) _  (%ˊ: | 0:%ˊ ) v: ( 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] [ %^VOWL: %^CShort: | %^VOWXL: %^CShort: ]  %^VOWLower: ;
+
+! juˊrdded+V+Cond+Sg1: joordčem
+ [#: | C: ] 0:o _ ( %ˊ: | 0:%ˊ ) [ CNoV: C:* | C:+ %ˈ: C:+ ]  %^VOWL: %^CShort:   %^VOWLower: ;
+! juˊrdded > joordam
+!2013-09-08 [ #: | C ] _ ( u: | i: ) (%ˊ: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+ [ #: | C ] ( 0:o ) _ (%ˊ: ) [ CNoV: C:* | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: | %^VOWXL: %^CShort: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+ [ #: | C ] ( 0:o ) _ (%ˊ: )  v:u (%ˊ: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: | %^VOWXL: %^CShort: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+
 
 
 "Even syllabic verbs I, vowel lowering õ:â "
 !! __@RULENAME@__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
- õ:â <=>  _ õ: (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: | %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
-        õ: _     (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )                      %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
- [#: | C: ] _     (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: )                      %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+ õ:â <=>  _ õ: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+        õ: _     (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: | %^VOWL: %^CShort: )                      %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+ [#: | C: ] _     (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: )                      %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
 ! juˊrdded+V+Cond+Sg1: joordčem
- [#: | C: ] _ 0:â (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+ [#: | C: ] _ 0:â (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (%^VOWFront:) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
 ! juˊrdded > joordam
- [ #: | C ] _ ( u: | i: ) (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
- [ #: | C ] _ ((%ˊ: | %{%ˊ%}: ) ( v:u | j:i )) (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+ [ #: | C ] _ ( u: | i: ) (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+ [ #: | C ] _ ((%ˊ: | %{%ˊ%}: ) ( v:u | j:i )) (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: ) %^VOWLower: (%^VOWFront: ) (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
 !! diphthong opening after u
 !! - deriving +Ind+Prs+Sg3, in kuõskkâd kueˊsǩǩe
- u _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: ( %^FRICG:0 ) %^CShort: )  %^VOWLower: (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+ u _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: ( %^FRICG:0 ) %^CShort: )  %^VOWLower: (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
 !! diphthong opening õ:â after i:e
 !! - deriving +Ind+Prs+Sg3, in čiõkkâd
-i: _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (X3:)  %^PALNo: [ %>: | #: ] ;
+i: _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (X3:)  %^PALNo: [ %>: | #: ] ;
 
 ! diphthongs
 
 "Even syllabic verbs I, diphthong opening after u"
 !! __@RULENAME@__ - deriving +Ind+Prs+Sg3, in kuåccâd kuäˊcce
- å:ä <=> u _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: ( %^FRICG:0 ) %^CShort: )  %^VOWLower: (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+ å:ä <=> u _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: ( %^FRICG:0 ) %^CShort: )  %^VOWLower: (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
 
 
 "Even syllabic verbs I, diphthong opening after i:e"
 !! __@RULENAME@__ - deriving +Ind+Prs+Sg3, in čiõkkâd
- Vx:Vy <=> i: _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (X3:) (%^PALNo: | %^PAL: ) [ %>: | #: ] ;
-! i: _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+ Vx:Vy <=> i: _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (X3:) (%^PALNo: | %^PAL: ) [ %>: | #: ] ;
+! i: _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
              where Vx in (â e)
                    Vy in (ä ä)
              matched ;
 
+
+
 "Even syllabic verbs I, diphthong opening after i:e e:â"
-!! __@RULENAME@__ - deriving +Ind+Prs+Sg3, in pieˊǩǩ:peâkka
- e:â <=> i: _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (X3:) %^PALNo:  [ %>: | #: ] ;
+!! __@RULENAME@__ - deriving +Ind+Prs+Sg3, in pi%{EÂ%}ˊǩǩ:peâkka
+ %{EÂ%}:â <=> i: _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (X3:) %^PALNo:  [ %>: | #: ] ;
 
 
 
 "Even syllabic verbs I, diphthong opening õ:ä after i:e"
 !! __@RULENAME@__ - deriving +Ind+Prs+Sg3, in čiõkkâd
- õ:ä <=> i: _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (X3:)  %^PAL: [ %>: | #: ] ;
+ õ:ä <=> i: _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (X3:)  %^PAL: [ %>: | #: ] ;
 
 
 "Even syllabic verbs I, diphthong opening i:e before õ:, å:, e:"
 !! __@RULENAME@__ - used in conjunction with diphthong opening
- i:e <=> _ [õ:â | õ:ä | â:ä | e:ä | e:â ] (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
+ i:e <=> _ [õ:â | õ:ä | â:ä | e:ä | e:â ] (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (X3:) (%^PALNo: | %^PAL:) [ %>: | #: ] ;
 
 
 
@@ -282,19 +354,19 @@ i: _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower
  
 "Even syllabic verbs I, secondary vowel fronting with PAL u õ:e"
 !! __@RULENAME@__ - deriving +Ind+Prs+Pl3 in VIQQAD: kuõskkâd >kueˊsǩǩe
- õ:e <=> u _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: | %^VOWL: %^CShort: )  %^VOWFront: (X3:) %^PAL: [ %>: | #: ] ; ! deriving +V+Inf in vueˊlǧǧed
-         i _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] %^VOWFront: %^PAL: %>: ;
+ õ:e <=> u _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ]  (%^VOWSH: %^CLong: | %^VOWL: %^CShort: )  %^VOWFront: (X3:) %^PAL: [ %>: | #: ] ; ! deriving +V+Inf in vueˊlǧǧed
+         i _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] %^VOWFront: %^PAL: %>: ;
  
 
 
 "Even syllabic verbs I, secondary vowel fronting with PAL"
 !! __@RULENAME@__ - deriving +Ind+Prs+Pl3 in VIQQAD: čiõkkâd >čeäˊǩ'ǩe, also TIETTED vueˊlǧǧed+V+Ind+Prs+Pl3: vuäˊlǧǧe
- õ:ä <=> [ i:e | u ] _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ]  %^VOWSH: ( %^FRICG:0 ) %^CLong: %^VOWLower: %^VOWFront: (X3:) %^PAL: [ %>: | #: ] ;
+ õ:ä <=> [ i:e | u ] _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ]  %^VOWSH: ( %^FRICG:0 ) %^CLong: %^VOWLower: %^VOWFront: (X3:) %^PAL: [ %>: | #: ] ;
 
 
 ! "Even syllabic verbs I, secondary u > v PAL"
 ! __@RULENAME@__ - deriving +V+Inf in TIETTED: _uudd_ >uˊvdded
-! u:v <=> u _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] %^VOWFront: %^PAL: %>: ;
+! u:v <=> u _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] %^VOWFront: %^PAL: %>: ;
 
 !! !RELATIVE VOWEL LENGTHENING
 
@@ -303,32 +375,41 @@ i: _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower
 
 "Even syllabic verbs I, relative vowel lengthening"
 !! __@RULENAME@__ - deriving +V+Inf in TIETTED: uudd > uˊvdded
- 0:Vx <=> C: Vx: _ [( u: | i: ) (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ] %^VOWL: (%^CShort:) [ %>: | #: | %^PAL: ] ;
-      C: Vx: _ ( u: | i: ) (%ˊ: | %{%ˊ%}: )  C: [ QÂ1: ] C:+   %^VOWL: [ %>: | #: | %^PAL: ] ;
-             where Vx in (â e å õ o a ä) ; 
-             
+ 0:Vx <=> C: _ Vx [( u: | i: ) (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ]  %^VOWL: (%^CShort:) [ %>: | #: | %^PAL: ] ;
+!Distinguishing mainstam and maainstam
+      C: _ Vx ( u: | i: ) ( %ˊ: | 0:%ˊ )  C: QÂ1: C:+  %^VOWL: ;
+             where Vx in (â e å õ ä) ; 
+
+"Even syllabic verbs I, relative vowel lengthening 0:a"
+!! __@RULENAME@__ - deriving +V+Inf in MAINSTED: maainstam, mainstam
+ 0:a <=> C: _ a ( u: | i: ) (%ˊ: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ]  %^VOWL: ;
+!Distinguishing mainstam and maainstam
+         C: _ a  i  ( %ˊ: | 0:%ˊ ) C: QÂ1: C:+  %^VOWL: ;
+         C: _ a  i  C: QÂ1: C:+  %^VOWL: ;
+
+
 !! 2012-06-05 removing "i" and "u" because viikkâd renders viiiǥǥam
 
 
 "Even syllabic nouns I, relative vowel lengthening i"
 !! __@RULENAME@__ - ǩiđđ:ǩiiđ
- 0:i <=> C: i: _ [(%ˊ: | %{%ˊ%}: ) [ CNoJ:+ | CNoJ:+ %ˈ: C:+ ] ] [ %^VOWL: | %^VOWXL: ] (%^CShort:) [ %>: | #: | %^PAL: ] ;
-    C: i: _ ( %ˊ: | %{%ˊ%}: )  CNoJ: [ QÂ1: ] C:+  [ %^VOWL: | %^VOWXL: ] [ %>: | #: | %^PAL: ] ;
+ 0:i <=> C: _ i: [(%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ CNoJ:+ | CNoJ:+ %ˈ: C:+ ] ] [ %^VOWL: | %^VOWXL: ] (%^CShort:) [ %>: | #: | %^PAL: ] ;
+    C: _ i:  ( %ˊ: | %{%ˊ%}: )  CNoJ:  QÂ1:  C:+  [ %^VOWL: | %^VOWXL: ] [ %>: | #: | %^PAL: ] ;
 
 
 
 "Even syllabic nouns, relative vowel extra lengthening"
 !! __@RULENAME@__ - deriving +V+Inf in TIETTED: uudd >uˊvdded
- 0:Vx <=> [ C: | #: ] Vx: _ [ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ] %^VOWXL: [ %>: | #: ]  ;
-             where Vx in (â e å õ o a ä) ;
+ 0:Vx <=> [ C: | #: ] _ Vx: [ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C: :C* | C:+ %ˈ: C:+ ] ]  %^VOWXL:  [ %>: | #: ]  ;
+             where Vx in (â e å õ o ä) ;
 
 
 "Even syllabic nouns, relative vowel extra lengthening u not followed by v"
 !! __@RULENAME@__ - declension of nouns kunn > kuun
- 0:u <=> [ C: | #: ] u: _ (%ˊ: | %{%ˊ%}: ) [ [ s: s: | n n: ] %^VOWXL: | CNoV: C:+ %^VOWL: %^CShort: ] [ %>: | #: ] ;
+ 0:u <=> [ C: | #: ] _ u: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ [ s: s: | n n: ] %^VOWXL: | CNoV: C:+ %^VOWL: %^CShort: ] [ %>: | #: ] ;
 !! relative lengthening of u
-          C: u: _ [ (%ˊ: | %{%ˊ%}: ) [ CNoV:+ | CNoV:+ %ˈ: C:+ ] ] [ %^VOWL: | %^VOWXL: ] ( %^CShort: ) [ %>: | #: | ( %^VOWRaise: ) %^PAL: ] ;
-      C: u: _ (%ˊ: | %{%ˊ%}: )  CNoV: [ QÂ1: ] C:+   %^VOWL: [ %>: | #: | %^PAL: ] ;
+          C: _ u: [ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ CNoV:+ | CNoV:+ %ˈ: C:+ ] ] [ %^VOWL: | %^VOWXL: ] ( %^CShort: ) [ %>: | #: | ( %^VOWRaise: ) %^PAL: ] ;
+      C: _ u: (%ˊ: | %{%ˊ%}: | 0:%ˊ )  CNoV: QÂ1: C:+   %^VOWL: [ %>: | #: | %^PAL: ] ;
 
 
 
@@ -337,7 +418,7 @@ i: _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower
 
 "Even syllabic verbs I, relative vowel lengthening and raising"
 !! __@RULENAME@__ - conjugation of ceˊpcced > ciiˊpcež
- 0:Vy <=> [ #: | C: ] Vx:Vy _ (%ˊ: | %{%ˊ%}: ) C:+ %^VOWL: %^CShort: %^VOWRaise: %^PAL: %>: e ;
+ 0:Vy <=> [ #: | C: ] _ Vx:Vy (%ˊ: | %{%ˊ%}: | 0:%ˊ ) C:+ %^VOWL: %^CShort: %^VOWRaise: %^PAL: %>: e ;
              where Vx in (e â å ä o)
                    Vy in (i õ o a u)
              matched ;
@@ -347,20 +428,23 @@ i: _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower
 
 "Even syllabic verbs I, relative vowel lengthening and lowering"
 !! __@RULENAME@__ -  simultaneous lengthening and lowering: juˊrdded > joordam juˊrdded+V+Ind+Prs+Sg1
- 0:Vy <=> [ C: | #: ] Vx:Vy _ (%ˊ: | %{%ˊ%}: ) C:+ %^VOWL: %^CShort: %^VOWLower:  ;
+ 0:Vy <=> [ C: | #: ] _ Vx:Vy (%ˊ: | %{%ˊ%}: | 0:%ˊ ) C:+ %^VOWL: %^CShort: %^VOWLower:  ;
              where Vx in (i õ o a)
                    Vy in (e â å ä)
              matched ;
 
 "Even syllabic verbs I, relative vowel lengthening and lowering u:o 0:o"
 !! __@RULENAME@__ -  simultaneous lengthening and lowering: juˊrdded > joordam juˊrdded+V+Ind+Prs+Sg1
- 0:o <=> [ C: | #: ] u:o _ (%ˊ: | %{%ˊ%}: ) ( v: (%ˊ: | %{%ˊ%}: | %ˊ ) ) C:+ %^VOWL: %^CShort: %^VOWLower:  ;
-
+ 0:o <=> [ C: | #: ] _ u:o ( %ˊ: | 0:%ˊ )  CNoV: C:* [ %^VOWL: %^CShort: | %^VOWXL: ( %^CShort: ) ] %^VOWLower:  ;
+         [ C: | #: ] _ u:o (%ˊ: | 0:%ˊ ) v:u (%ˊ: | 0:%ˊ ) C:+ %^VOWXL: %^CShort: %^VOWLower:  ;
+!! Even syllabic verbs I, relative vowel lengthening of o
+      C: _ o: [( u: | i: ) (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ C:+ | C:+ %ˈ: C:+ ] ]  %^VOWL: (%^CShort:) [ %>: | #: | %^PAL: ] ;
+      C: _ o: ( u: | i: ) (%ˊ: | %{%ˊ%}: | 0:%ˊ )  C: QÂ1: C:+   %^VOWL: [ %>: | #: | %^PAL: ] ;
 
 "Vowel lengthening in INDPRSSG3 and IMPSG2"
 !! __@RULENAME@__ - kååˊmmerd, maainâst
- 0:Vx <=> Vx _ (i) ( %ˊ ) :C+ [ QE1: | QA1: | QÂ1: ] C:+ [ %^IMPSG2: | %^INDPRSSG3: ] ;
-        where Vx in (a å ä) ;
+ 0:Vx <=> _ Vx (i) ( %ˊ: | 0:%ˊ ) :C+ [ QE1: | QA1: | QÂ1: ] C:+ [ %^IMPSG2: | %^INDPRSSG3: ] ;
+        where Vx in (å ä) ;
 
 !! !VOWEL DUMMY LOSS
 
@@ -381,12 +465,12 @@ i: _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower
 
 "Even syllabic verbs,  for v>u"
 !! __@RULENAME@__ - uvdd > ouˊdde
- v:u <=> [ C: | #: ] u: ( 0:o ) ( %ˊ:0 | %{%ˊ%}:0 ) _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ d d: | l l: ] [ %^VOWL: %^CShort: | %^VOWXL: | %^VOWLower: | %^VOWSH: %^CLong:  ( %^VOWLower: ) (%^VOWFront: ) ( %^PAL: ) ];
+ v:u <=> [ C: | #: ] ( 0:o ) u: ( %ˊ: ) _ ( %ˊ: | 0:%ˊ ) [ d d: | l l: ] [ %^VOWL: %^CShort: | %^VOWXL: %^CShort: ]  ;
 
 
  "Even syllabic nouns, for h>u"
 !! __@RULENAME@__ - luhtt  s s: ...
- h:u <=> V: (%{%ˊ%}: ) _ (%ˊ: | %{%ˊ%}: ) [ s s: | š š: | t t: | c c: | č č: ] [ %^VOWL: %^CShort: | %^VOWXL: | %^VOWSH: %^CLong:  %^VOWLower: %^PAL: ] ;
+ h:u <=> V: (%{%ˊ%}: ) _ (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ s s: | š š: | t t: | c c: | č č: ] [ %^VOWL: %^CShort: | %^VOWXL: | %^VOWSH: %^CLong:  %^VOWLower: %^PAL: ] ;
 
 
 "trisyllabic verbs and doer derivations, i>j"
@@ -397,8 +481,8 @@ i: _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower
 
 
 "Even-syllabic nouns, for â:e"
-!! __@RULENAME@__ - miârr:mieˊrre
- â:e <=> i _ ( %ˊ | %{%ˊ%}:  ) [ C:+ | C:+ 0:%ˈ C:+ ] %^VOWTense:0 ;
+!! __@RULENAME@__ - miârr:mieˊrre; ǩiâpp:ǩieˊpˈpe
+ â:e <=> i _ ( %ˊ: | %{%ˊ%}:  | 0:%ˊ ) [ C:+ | C:+ 0:%ˈ C:+ ] %^VOWTense:0 ;
         
 
 !! !VOWEL and ZERO ALTERNATION
@@ -406,14 +490,14 @@ i: _ (%ˊ: | %{%ˊ%}: ) [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWL: %^CShort: )  %^VOWLower
 
 "Realization for QE1 in e " 
 !! __@RULENAME@__ - kåˊmrded, vuejat, maainâst
- Vx:Vy <=> _ ( %ˊ ) C:+ %^IMPSG2: ;
+ Vx:Vy <=> _ ( %ˊ: | 0:%ˊ ) C:+ %^IMPSG2: ;
          where Vx in (QE1 QA1 QÂ1)
                Vy in (e a â)
          matched ;
 
 "Realization for QE1 in a" 
 !! __@RULENAME@__ - 
- Vx:Vy <=> _ ( %ˊ | ’: ) [ i | C:+ ] %^INDPRSSG3: ;
+ Vx:Vy <=> _ ( %ˊ: | 0:%ˊ | ’: ) [ i | C:+ ] %^INDPRSSG3: ;
          where Vx in (QE1 QA1 QÂ1)
                Vy in (a a a)
          matched ;
@@ -434,13 +518,13 @@ QA1:’ <=> [ l l ] _ i: %>: V: ;
 
 "Even-syllabic verbs I, Palatalization mark between V and C"
 !! __@RULENAME@__ - used +Ind+Prs+Pl3, +Ind+Prt+Pl3
- %{%ˊ%}:%ˊ <=> [ #: | C: ] V:V ( V:0 | :V ) _ [ C:C C:* | C:C+ %ˈ: C:+ | C:C+ 0:%ˈ C:+ ] ( %^VOWSH: ( %^CLong: ) | %^VOWTense: | %^VOWL: %^CShort: ) ( %^VOWLower: | %^VOWRaise: ) ( %^VOWFront: | %^VOWTense:0 ) (X3:) %^PAL: [ %>: | #: ] ;
+ %{%ˊ%}:%ˊ <=> [ #: | C: ] ( V:0 | :V ) V:V _ [ C:C C:* | C:C+ %ˈ: C:+ | C:C+ 0:%ˈ C:+ ] ( %^VOWSH: ( %^CLong: ) | %^VOWTense: | %^VOWL: %^CShort: ) ( %^VOWLower: | %^VOWRaise: ) ( %^VOWFront: | %^VOWTense:0 ) (X3:) %^PAL: [ %>: | #: ] ;
 
 "0:%ˊ as transfer from left of v:u"
 !! __@RULENAME@__ - used +Ind+Prs+Pl3, uˊvdded+V+Ind+Prs+Pl3: ouˊdde
-0:%ˊ <=> %{%ˊ%}:0  [ v:u | h:u ] _ [ d:+ | l:+ ] [ %^VOWSH: %^CLong: ( %^VOWLower: ) ( %^VOWFront: )| %^VOWL: %^CShort: ( %^VOWRaise: ) ]   %^PAL:  ;
-  %ˊ:0 [ v:u | h:u ] _ [ d:+ | l:+ ]  [ %^VOWSH: %^CLong: ( %^VOWLower: ) ( %^VOWFront: )| %^VOWL: %^CShort: ( %^VOWRaise: ) ]  ( %^PAL: ) ;
-
+0:%ˊ <=> ( %ˊ: ) [ v:u | h:u ] _ [ d:+ | l:+ ] [ %^VOWSH: %^CLong: ( %^VOWLower: ) ( %^VOWFront: )| %^VOWL: %^CShort: ( %^VOWLower: | %^VOWRaise: ) ]   %^PAL:  ;
+  V: _ [ C:+ | :C+ ] ( %^VOWSH: | %^VOWTense: ) ( %^CLong: ) ( %^VOWLower: | %^VOWRaise: ) ( %^VOWFront: ) %^PAL: %>: ;
+!  %ˊ:0 [ v:u | h:u ] _ [ d:+ | l:+ ]  [ %^VOWSH: %^CLong: ( %^VOWLower: ) ( %^VOWFront: )| %^VOWL: %^CShort: ( %^VOWLower: | %^VOWRaise: ) ]  ( %^PAL: ) ;
 
 
 !! The left context allows for:
@@ -451,26 +535,31 @@ QA1:’ <=> [ l l ] _ i: %>: V: ;
  
 "Even-syllabic verbs I, Palatalization of gg and kk"
 !! __@RULENAME@__ -
- Cx:Cy <=> V: (%ˊ: | %{%ˊ%}: ) (C:)     _ Cx: ( %^VOWSH: (%^CLong: ) ) ( %^VOWLower: | %^VOWRaise: ) (%^VOWFront: ) (X3:) %^PAL: [ %>: | #: ] ;
-           V: (%ˊ: | %{%ˊ%}: ) (C:) Cx: _     ( %^VOWSH: (%^CLong: ) ) ( %^VOWLower: | %^VOWRaise: ) (%^VOWFront: ) (X3:) %^PAL: [ %>: | #: ] ;
+ Cx:Cy <=> V: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) (C:)     _ Cx: ( %^VOWSH: (%^CLong: ) ) ( %^VOWLower: | %^VOWRaise: ) (%^VOWFront: ) (X3:) %^PAL: [ %>: | #: ] ;
+           V: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) (C:) Cx: _     ( %^VOWSH: (%^CLong: ) ) ( %^VOWLower: | %^VOWRaise: ) (%^VOWFront: ) (X3:) %^PAL: [ %>: | #: ] ;
+!with insertion of palatal before
+ V: (%ˊ: | 0:%ˊ ) (C:)     _ Cx: ( %^VOWSH: (%^CLong: ) ) ( %^VOWLower: | %^VOWRaise: ) (%^VOWFront: ) (X3:) %^PAL: [ %>: | #: ] ;
+           V: (%ˊ: | 0:%ˊ ) (C:) Cx: _     ( %^VOWSH: (%^CLong: ) ) ( %^VOWLower: | %^VOWRaise: ) (%^VOWFront: ) (X3:) %^PAL: [ %>: | #: ] ;
+
                 where Cx in (g k)
                       Cy in (ǧ ǩ)
                 matched ;
 
 "Even-syllabic nouns I, Depalatalization of ǧǧ and ǩǩ"
 !! __@RULENAME@__ -
- Cx:Cy <=> V: (%ˊ: | %{%ˊ%}: ) (C:)     _ (%ˈ: ) Cx: ( %^VOWSH: (%^CLong: ) ) ( %^VOWLower: | %^VOWRaise: ) (X3:) %^PALNo: [ %>: | #: ] ;
-           V: (%ˊ: | %{%ˊ%}: ) (C:) Cx: (%ˈ: ) _     ( %^VOWSH: (%^CLong: ) ) ( %^VOWLower: | %^VOWRaise: ) (X3:) %^PALNo: [ %>: | #: ] ;
+ Cx:Cy <=> V: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) (C:)     _ (%ˈ: ) Cx: ( %^VOWSH: (%^CLong: ) ) ( %^VOWLower: | %^VOWRaise: ) (X3:) %^PALNo: [ %>: | #: ] ;
+           V: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) (C:) Cx: (%ˈ: ) _     ( %^VOWSH: (%^CLong: ) ) ( %^VOWLower: | %^VOWRaise: ) (X3:) %^PALNo: [ %>: | #: ] ;
                 where Cx in (ǧ ǩ)
                       Cy in (g k)
                 matched ;
 
 
-
 "Even-syllabic nouns, removing palatalization in -est +Loc nouns"
 !! __@RULENAME@__ - removing palatalization in +Sg+Ill,  pieˊss:peässa
-   %ˊ:0 <=> V: _ [ C:+ | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: | %^VOWL: %^CShort: ) ( %^VOWLower: | %^VOWRaise: ) (%^VOWFront: ) (X3:) %^PALNo: [ %>: | #: ] ;
-         _ v:u (%ˊ: | %{%ˊ%}: | 0:%ˊ ) [ d d: | l l: ] [ %^VOWL: %^CShort: | %^VOWXL: | %^VOWLower: | %^VOWSH: %^CLong:  ( %^VOWLower: ) (%^VOWFront: ) ( %^PAL: ) ] ;
+   %ˊ:0 <=>  V: _ [ :C :C+ | C: :C* | C:+ %ˈ: C:+ ] ( %^VOWSH: %^CLong: | %^VOWL: %^CShort: ) ( %^VOWLower: | %^VOWRaise: ) (%^VOWFront: ) (X3:) %^PALNo: [ %>: | #: ] ;
+!jurdded
+       V: _ CNoV: C:+ ( %^VOWL: %^CShort: %^VOWLower: ) %^PALNo:  ; 
+         _ v:u ( %ˊ: | %{%ˊ%}: | 0:%ˊ ) [ d d: | l l: ] [ %^VOWL: %^CShort: | %^VOWXL: ( %^CShort: ) | %^VOWSH: %^CLong: ] ( %^VOWLower: ) (%^VOWFront: ) ( %^PAL: | %^PALNo: )  ;
 
 !  "Even-syllabic verbs I, removing palatalization in -ed verbs"
 ! __@RULENAME@__ - removing palatalization Prs+Sg3
@@ -567,42 +656,42 @@ QA1:’ <=> [ l l ] _ i: %>: V: ;
 
 "Even syllabic verbs I, cg"
 !! __@RULENAME@__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, teevvad > teev
- Cx:0 <=> :V (%ˊ: | %{%ˊ%}: ) Cx _ (%^VOWL: ) %^CShort: ;
-           V: :V  (%ˊ: | %{%ˊ%}: ) Cx _ %^VOWXL: ; 
+ Cx:0 <=> :V (%ˊ: | %{%ˊ%}: | 0:%ˊ ) Cx _ (%^VOWL: ) %^CShort: ;
+           :V V: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) Cx _ %^VOWXL: ; 
  		where Cx in (đ r v) ;
 
 "Even syllabic verbs I, cg for l"
 !! __@RULENAME@__ - used with  vuvll
- l:0 <=> :V (%ˊ: | %{%ˊ%}: ) l _ (%^VOWL: ) %^CShort: ;
-           V: :V  (%ˊ: | %{%ˊ%}: ) l _ %^VOWXL: ; 
- V: (0:V) (%ˊ: | %{%ˊ%}: ) v:u  ( :%ˊ ) l: _ %^VOWL: %^CShort: ;
+ l:0 <=> :V (%ˊ: | %{%ˊ%}: | 0:%ˊ ) l _ (%^VOWL: ) %^CShort: ;
+           :V V:  (%ˊ: | %{%ˊ%}: | 0:%ˊ ) l _ %^VOWXL: ; 
+ ( 0:V ) V: (%ˊ: | %{%ˊ%}: ) v:u  ( :%ˊ ) l: _ %^VOWL: %^CShort: ;
 
 
 "Even syllabic verbs I, cg m:0"
 !! __@RULENAME@__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, 
- m:0 <=> :V (%ˊ: | %{%ˊ%}: ) m _ (%^VOWL: ) %^CShort: ;
-           V: :V  (%ˊ: | %{%ˊ%}: ) m _ %^VOWXL: ; 
-          [ V: | :V ] (%ˊ: | %{%ˊ%}: )  [ s | r | l | p | d: ] m:  _ %^VOWL: %^CShort: ;
-          V: (%{%ˊ%}: ) h: (%ˊ: | %{%ˊ%}: ) m: _ %^VOWXL: ;
+ m:0 <=> :V (%ˊ: | %{%ˊ%}: | 0:%ˊ ) m _ (%^VOWL: ) %^CShort: ;
+         :V V: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) m _ %^VOWXL: ; 
+         V: (%ˊ: | %{%ˊ%}: | 0:%ˊ )  [ s | r | l | p | d: ] m:  _ %^VOWL: %^CShort: ;
+         V: (%{%ˊ%}: ) h: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) m: _ %^VOWXL: ;
           
 "Even syllabic verbs I, cg n:0"
 !! __@RULENAME@__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, jiõnn:jiõn
- n:0 <=> :V (%ˊ: | %{%ˊ%}: ) n _ (%^VOWL: ) %^CShort: ;
-           V: :V  (%ˊ: | %{%ˊ%}: ) n _ %^VOWXL: ; 
-          [ V: | :V ] (%ˊ: | %{%ˊ%}: )  [ s | r | l | p | d: ] n:  _ %^VOWL: %^CShort: ;
-          V: (%{%ˊ%}: ) h: (%ˊ: | %{%ˊ%}: ) n: _ %^VOWXL: ;
+ n:0 <=> V: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) n _ (%^VOWL: ) %^CShort: ;
+         :V  V:  (%ˊ: | %{%ˊ%}: | 0:%ˊ ) n _ %^VOWXL: ; 
+         V: (%ˊ: | %{%ˊ%}: | 0:%ˊ )  [ s | r | l | p | d: ] n:  _ %^VOWL: %^CShort: ;
+         V: (%{%ˊ%}: ) h: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) n: _ %^VOWXL: ;
           
 
 ! "Even syllabic verbs I, cg vv:v"
-! v:0 <=> :V (%ˊ: | %{%ˊ%}: ) v _ (%^VOWL: ) %^CShort: ; 
+! v:0 <=> :V (%ˊ: | %{%ˊ%}: | 0:%ˊ ) v _ (%^VOWL: ) %^CShort: ; 
 
 "Even syllabic nouns I, with extra lengthening of vowel V>VV and SS>ZZ"
 !! __@RULENAME@__ 
 !! used with  +N+Sg+Nom > +N+Sg+Gen for cases like
 !! {{kuss > kuuzz}}.
 !! {{{
-Cx:Cy <=> [#: | C: ] V: ( 0:V | V:V ) (%ˊ: | %{%ˊ%}: ) Cx: _ %^VOWXL: ; !!= @CODE@
-          [#: | C: ] V: ( 0:V | V:V ) (%ˊ: | %{%ˊ%}: ) _ Cx: %^VOWXL: ; !!= @CODE@
+Cx:Cy <=> [#: | C: ] V: ( 0:V | V:V ) (%ˊ: | %{%ˊ%}: | 0:%ˊ ) Cx: _ %^VOWXL: ; !!= @CODE@
+          [#: | C: ] V: ( 0:V | V:V ) (%ˊ: | %{%ˊ%}: | 0:%ˊ ) _ Cx: %^VOWXL: ; !!= @CODE@
                 where Cx in (k s)                          !!= @CODE@
                       Cy in (ǥ z)                          !!= @CODE@
                 matched ;                                  !!= @CODE@
@@ -611,10 +700,13 @@ Cx:Cy <=> [#: | C: ] V: ( 0:V | V:V ) (%ˊ: | %{%ˊ%}: ) Cx: _ %^VOWXL: ; !!= @C
 
 "Even syllabic nouns I, with extra lengthening of vowel ij>ii/uv>uu and dd>d"
 !! __@RULENAME@__ - used with  +N+Sg+Nom > +N+Sg+Gen, sijdd > siid
- Cx:0 <=> [ u: (0:u | 0:o ) (%ˊ: ) v: | i: (%ˊ: ) j: ] ( %{%ˊ%}: ) Cx _ %^VOWXL: ;
+ d:0 <=> [ (0:u | 0:o ) u: ( %ˊ: ) v: | i: (%ˊ: ) j: ] ( 0:%ˊ ) d _ [ %^VOWXL: %^CShort: | %^VOWL: %^CShort: ] ;
  ! juˊrdded > joordam
-          [ V: | :V ] (%ˊ: | %{%ˊ%}: ) CNoJV Cx _ (%^VOWL: ) %^CShort: ;
-                where Cx in (d) ;
+          V: ( %ˊ: | 0:%ˊ ) CNoJV d _ ( %^VOWL: | %^VOWXL: ) %^CShort: ;
+! njeiddad > njeeid
+! 2012-06-12 _v:u_ allows for uˊvdded
+!! - idd:id, +Imp+Sg2, +Ind+Prs+ConNeg double consonants following vowel and "i" at coda that become single consonants in gradation
+
 
 
 !"jdd to id rule" Commenting out 2013-09-05
@@ -642,8 +734,8 @@ Cx:Cy <=> [#: | C: ] V: ( 0:V | V:V ) (%ˊ: | %{%ˊ%}: ) Cx: _ %^VOWXL: ; !!= @C
 
 "Even syllabic verbs I, Voicing" 
 !! __@RULENAME@__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
- Cx:Cy <=> V: (%ˊ: | %{%ˊ%}: ) Cx: _ (%^VOWL:) %^CShort: ;
-           V: (%ˊ: | %{%ˊ%}: ) _ Cx: (%^VOWL:) %^CShort: ; !This was X3
+ Cx:Cy <=> V: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) Cx: _ (%^VOWL:) %^CShort: ;
+           V: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) _ Cx: (%^VOWL:) %^CShort: ; !This was X3
                 where Cx in (s š c č k)
                       Cy in (z ž ʒ j ǥ)
                 matched ;
@@ -651,30 +743,27 @@ Cx:Cy <=> [#: | C: ] V: ( 0:V | V:V ) (%ˊ: | %{%ˊ%}: ) Cx: _ %^VOWXL: ; !!= @C
 
 "Even syllabic verbs I, third consonant loss" 
 !! __@RULENAME@__ - lgg:lǥ, V Ca Cx Cx:0, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants following consonant at coda that become single consonants in gradation
- Cx:0 <=> [ V: | :V ] (%ˊ: | %{%ˊ%}: )  [ s | r | l | p | d: ] Cx:  _ %^VOWL: %^CShort: ;
-          V: (%{%ˊ%}: ) h: (%ˊ: | %{%ˊ%}: ) Cx: _ %^VOWXL: ;
+ Cx:0 <=> V: (%ˊ: | %{%ˊ%}: | 0:%ˊ )  [ s | r | l | p | d: ] Cx:  _ %^VOWL: %^CShort: ;
+          V: (%{%ˊ%}: ) h: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) Cx: _ %^VOWXL: ;
                 where Cx in (k ǩ g ǧ ŋ t č c s) ;
-
-! 
-! njeiddad > njeeid
-! 2012-06-12 _v:u_ allows for uˊvdded
-"Even syllabic verbs I, third consonant loss idd:id" 
-!! __@RULENAME@__ - idd:id, +Imp+Sg2, +Ind+Prs+ConNeg double consonants following vowel and "i" at coda that become single consonants in gradation
- d:0 <=> V: (0:V) [ i | (%ˊ: | %{%ˊ%}: ) v:u ] (%ˊ: | %{%ˊ%}: | :%ˊ ) d: _ %^VOWL: %^CShort: ;
 
 
 "Even syllabic verbs I, t>đ" 
 !! __@RULENAME@__ - tt:đ
- t:đ  <=> V: (%ˊ: | %{%ˊ%}: ) _ t:0 [ %^VOWL: %^CShort: | %^VOWXL: ]  ;
+ t:đ  <=> V: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) _ t:0 [ %^VOWL: %^CShort: | %^VOWXL: ]  ;
 
 "Even syllabic nouns I, p>v" 
 !! __@RULENAME@__ - pp:v
- p:v  <=> V: (%ˊ: | %{%ˊ%}: ) _ p:0 [ %^VOWL: %^CShort: | %^VOWXL: ]  ;
+ p:v  <=> V: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) _ p:0 [ %^VOWL: %^CShort: | %^VOWXL: ]  ;
 
-"Even syllabic verbs I, second consonant loss"
+"Even syllabic verbs I, second consonant loss t:0"
 !! __@RULENAME@__ -
- Cx:0 <=> V: (%ˊ: | %{%ˊ%}: ) Cx: _ [ %^VOWL: %^CShort: | %^VOWXL: ] ;
-                where Cx in (p t) ; ! Extend
+ t:0 <=> V: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) t: _ [ %^VOWL: %^CShort: | %^VOWXL: ] ;
+
+"Even syllabic verbs I, second consonant loss p:0"
+!! __@RULENAME@__ -
+ p:0 <=> V: (%ˊ: | %{%ˊ%}: | 0:%ˊ ) ( C: ) p: _ [ %^VOWL: %^CShort: | %^VOWXL: ] ;
+
 
 ! 
 "Even syllabic verbs I, lgg>lǥ" 
@@ -712,9 +801,12 @@ Cx:Cy <=> [#: | C: ] V: ( 0:V | V:V ) (%ˊ: | %{%ˊ%}: ) Cx: _ %^VOWXL: ; !!= @C
 
 "Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2"
 !! __@RULENAME@__ - kååˊmmerd 
- 0:Cx <=> V: ( :V ) ( %ˊ ) :C* Cx _ [ QE1: ] C:+ [ %^IMPSG2: | %^INDPRSSG3: ] ;
+ 0:Cx <=> ( :V ) V: ( %ˊ: | 0:%ˊ ) :C* Cx _ [ QE1: ] C:+ [ %^IMPSG2: | %^INDPRSSG3: ] ;
             where Cx in (m) ;
 
+"Consonant lengthening 0:đ"
+!! __@RULENAME@__ - čââˊđ+N+Sg+Gen => Missing results: čâđđam
+ 0:đ <=>  V:  ( %ˊ: ) C:*  đ _  ( %^VOWSH: ) %^CLong: ;
 
 
 ! 

@@ -17,73 +17,159 @@ N-toll ;
 
 LEXICON N-toll !!= * __@CODE@__ toll:to%{%ˊ%}ll is for nouns with -âst Loc.
 !! ** Yaml: __vorr, saakk, muorr, kidd, toll, sijdd, paarr, kiapp, saarf, luukk__
-+N+Sg+Nom: K ;
-+N+Sg+Gen:%^VOWXL K ;
-+N+Sg+Acc:%^VOWXL K ;
-+N+Sg+Ill:%^VOWSH%^PAL%>e K ;
-+N+Sg+Loc:%^VOWXL%>âst K ;
-+N+Sg+Com:%^VOWXL%>in K ;
-+N+Ess:%>ân K ; ! ess and prt without
-+N+Par:%>âd K ;
-+N+Sg+Abe:%^VOWXL%>tää K ;
-+N+Pl+Nom:%^VOWXL K ;
-+N+Pl+Gen:%^VOWXL%>i K ;
-+N+Pl+Acc:%^VOWXL%>id K ;
-+N+Pl+Ill:%^VOWXL%>id K ;
-+N+Pl+Loc:%^VOWXL%>in K ;
-+N+Pl+Com:%^VOWXL%>ivuiˊm K ;
-+N+Pl+Abe:%^VOWXL%>itää K ;
++N: SG-NOM ;
++N:%^VOWXL SG-GEN ;
++N:%^VOWXL SG-ACC ;
++N:%^VOWSH%^PAL%>e SG-ILL ;
++N:%^VOWXL%>â SG-LOC ;
++N:%^VOWXL SG-COM ;
++N:%>â ESS ; ! ess and prt without
++N:%>â PAR ;
++N:%^VOWXL SG-ABE ;
++N:%^VOWXL PL-NOM ;
++N:%^VOWXL PL-GEN ;
++N:%^VOWXL PL-ACC ;
++N:%^VOWXL PL-ILL ;
++N:%^VOWXL PL-LOC ;
++N:%^VOWXL PL-COM ;
++N:%^VOWXL PL-ABE ;
+
+
+LEXICON N_LUUKK !!= * __@CODE@__ luukk:luukk is for nouns with -âst Loc and no gradation.
+!! ** Yaml: __saarf, luukk__
++N: SG-NOM ;
++N: SG-GEN ;
++N: SG-ACC ;
++N:%^PAL%>e SG-ILL ;
++N:%>â SG-LOC ;
++N: SG-COM ;
++N:%>â ESS ; ! ess and prt without
++N:%>â PAR ;
++N: SG-ABE ;
++N: PL-NOM ;
++N: PL-GEN ;
++N: PL-ACC ;
++N: PL-ILL ;
++N: PL-LOC ;
++N: PL-COM ;
++N: PL-ABE ;
+
 
 LEXICON N-miarr !!= * __@CODE@__ is for words with ''-âst'' Loc but ''-ense'' Ill
 !! ** Yaml: __jokk, miarr__
-+N+Sg+Nom: K ;
-+N+Sg+Gen:%^VOWXL K ;
-+N+Sg+Acc:%^VOWXL K ;
-+N+Sg+Ill:%^VOWTense%^PAL%>e K ;
-+N+Sg+Loc:%^VOWXL%>âst K ;
-+N+Sg+Com:%^VOWXL%>in K ;
-+N+Ess:%>ân K ; ! ess and prt without
-+N+Par:%>âd K ;
-+N+Sg+Abe:%^VOWXL%>tää K ;
-+N+Pl+Nom:%^VOWXL K ;
-+N+Pl+Gen:%^VOWXL%>i K ;
-+N+Pl+Acc:%^VOWXL%>id K ;
-+N+Pl+Ill:%^VOWXL%>id K ;
-+N+Pl+Loc:%^VOWXL%>in K ;
-+N+Pl+Com:%^VOWXL%>ivuiˊm K ;
-+N+Pl+Abe:%^VOWXL%>itää K ;
++N: SG-NOM ;
++N:%^VOWXL SG-GEN ;
++N:%^VOWXL SG-ACC ;
++N:%^VOWTense%^PAL%>e SG-ILL ;
++N:%^VOWXL%>â SG-LOC ;
++N:%^VOWXL SG-COM ;
++N:%>â ESS ; ! ess and prt without
++N:%>â PAR ;
++N:%^VOWXL SG-ABE ;
++N:%^VOWXL PL-NOM ;
++N:%^VOWXL PL-GEN ;
++N:%^VOWXL PL-ACC ;
++N:%^VOWXL PL-ILL ;
++N:%^VOWXL PL-LOC ;
++N:%^VOWXL PL-COM ;
++N:%^VOWXL PL-ABE ;
+
+
+LEXICON N_PUÅVV !!= * __@CODE@__ is for words with ''-âst'' Loc but ''-ense'' Ill 3rd grade
+!! ** Yaml: __kiâpp, puåvv__
+
++N: SG-NOM ;
++N:%^VOWXL SG-GEN ;
++N:%^VOWXL SG-ACC ;
++N:%^VOWTense%^CLong%^PAL%>e SG-ILL ;
++N:%^VOWXL%>â SG-LOC ;
++N:%^VOWXL SG-COM ;
++N:%>â ESS ; ! ess and prt without
++N:%>â PAR ;
++N:%^VOWXL SG-ABE ;
++N:%^VOWXL PL-NOM ;
++N:%^VOWXL PL-GEN ;
++N:%^VOWXL PL-ACC ;
++N:%^VOWXL PL-ILL ;
++N:%^VOWXL PL-LOC ;
++N:%^VOWXL PL-COM ;
++N:%^VOWXL PL-ABE ;
+
 
 
 !! !!a-stems
 
 LEXICON N-pess !!= * __@CODE@__ Is for nouns with ''-ast'' Loc
 !! ** Yaml: __pess, pall, ruakk__
-+N+Sg+Nom: K ;
-+N+Sg+Gen:%^VOWL%^CShort K ;
-+N+Sg+Acc:%^VOWL%^CShort K ;
-+N+Sg+Ill:%^VOWSH%^CLong%^VOWRaise%>u K ;
-+N+Sg+Loc:%^VOWL%^CShort%>ast K ;
-+N+Sg+Com:%^VOWL%^CShort%>ain K ;
-+N+Ess:%>an K ; ! ess and prt without
-+N+Par:%>ad K ;
-+N+Sg+Abe:%^VOWL%^CShort%>tää K ;
-+N+Pl+Nom:%^VOWL%^CShort K ;
-+N+Pl+Gen:%^VOWL%^CShort%>ai K ;
-+N+Pl+Acc:%^VOWL%^CShort%>aid K ;
-+N+Pl+Ill:%^VOWL%^CShort%>aid K ;
-+N+Pl+Loc:%^VOWL%^CShort%>ain K ;
-+N+Pl+Com:%^VOWL%^CShort%>aivuiˊm K ;
-+N+Pl+Abe:%^VOWL%^CShort%>aitää K ;
++N: SG-NOM ;
++N:%^VOWL%^CShort SG-GEN ;
++N:%^VOWL%^CShort SG-ACC ;
++N:%^VOWSH%^CLong%^VOWRaise%>u SG-ILL ;
++N:%^VOWL%^CShort%>a SG-LOC ;
++N:%^VOWL%^CShort%>a SG-COM ;
++N:%>a ESS ; ! ess and prt without
++N:%>a PAR ;
++N:%^VOWL%^CShort SG-ABE ;
++N:%^VOWL%^CShort PL-NOM ;
++N:%^VOWL%^CShort%>a PL-GEN ;
++N:%^VOWL%^CShort%>a PL-ACC ;
++N:%^VOWL%^CShort%>a PL-ILL ;
++N:%^VOWL%^CShort%>a PL-LOC ;
++N:%^VOWL%^CShort%>a PL-COM ;
++N:%^VOWL%^CShort%>a PL-ABE ;
 
 
 
 !! !!e-stems
+LEXICON N_KUˊMPP !!= * __@CODE@__ is for nouns with ''-est'' +Loc
+!! ** Yaml: __kumpp__
+!! * There are several stem types
+!! * kuˊmpp:kuˊmpp
++N:%^PAL SG-NOM ;
++N:%^VOWL%^CShort SG-GEN ;
++N:%^VOWL%^CShort SG-ACC ;
++N:%^PAL%>e SG-ILL ;
++N:%^VOWL%^CShort%>e SG-LOC ;
++N:%^VOWL%^CShort SG-COM ;
++N:%>e ESS ; ! ess and prt without
++N:%>e PAR ;
++N:%^VOWL%^CShort SG-ABE ;
++N:%^VOWL%^CShort PL-NOM ;
++N:%^VOWL%^CShort PL-GEN ;
++N:%^VOWL%^CShort PL-ACC ;
++N:%^VOWL%^CShort PL-ILL ;
++N:%^VOWL%^CShort PL-LOC ;
++N:%^VOWL%^CShort PL-COM ;
++N:%^VOWL%^CShort PL-ABE ;
+
+LEXICON N_ČÄÄˊCC !!= * __@CODE@__ is for nouns with ''-a'' ill ''-est'' +Loc, 
+!! ** Yaml: __caacc__
+!! * There are several stem types
+!! * čääˊcc:čääˊcc
++N: SG-NOM ;
++N:%^VOWL%^CShort SG-GEN ;
++N:%^VOWL%^CShort SG-ACC ;
++N:%^VOWSH%^CLong%^PALNo%>a SG-ILL ;
++N:%^VOWL%^CShort%>e SG-LOC ;
++N:%^VOWL%^CShort SG-COM ;
++N:%>e ESS ; ! ess and prt without
++N:%>e PAR ;
++N:%^VOWL%^CShort SG-ABE ;
++N:%^VOWL%^CShort PL-NOM ;
++N:%^VOWL%^CShort PL-GEN ;
++N:%^VOWL%^CShort PL-ACC ;
++N:%^VOWL%^CShort PL-ILL ;
++N:%^VOWL%^CShort PL-LOC ;
++N:%^VOWL%^CShort PL-COM ;
++N:%^VOWL%^CShort PL-ABE ;
+
+
 
 LEXICON N-piess !!= * __@CODE@__ is for nouns with ''-est'' +Loc 
 !! ** Yaml: __piess__
 !! * There are several stem types
 !! * pieˊss:pieˊss
-+N+Sg+Ill:%^VOWLower%^PALNo%>a K ;
++N:%^VOWLower%^PALNo%>a SG-ILL ;
 
 !+N:%^X3 DenominalAdjsCShort ;
 +N:%^VOWL%^CShort DenominalAdjsCShort ;
@@ -91,22 +177,22 @@ LEXICON N-piess !!= * __@CODE@__ is for nouns with ''-est'' +Loc
 COMMON_E_A_STEM ;
 
 LEXICON COMMON_E_A_STEM
-+N+Sg+Nom:%^PAL K ;
-+N+Sg+Gen:%^VOWL%^CShort K ;
-+N+Sg+Acc:%^VOWL%^CShort K ;
-+N+Sg+Loc:%^VOWL%^CShort%>est K ;
-+N+Sg+Com:%^VOWL%^CShort%>in K ;
-+N+Ess:%>en K ; ! ess and prt without
-+N+Par:%>ed K ;
-+N+Sg+Abe:%^VOWL%^CShort%>tää K ;
++N:%^PAL SG-NOM ;
++N:%^VOWL%^CShort SG-GEN ;
++N:%^VOWL%^CShort SG-ACC ;
++N:%^VOWL%^CShort%>e SG-LOC ;
++N:%^VOWL%^CShort SG-COM ;
++N:%>e ESS ; ! ess and prt without
++N:%>e PAR ;
++N:%^VOWL%^CShort SG-ABE ;
 
-+N+Pl+Nom:%^VOWL%^CShort K ;
-+N+Pl+Gen:%^VOWL%^CShort%>i K ;
-+N+Pl+Acc:%^VOWL%^CShort%>id K ;
-+N+Pl+Ill:%^VOWL%^CShort%>id K ;
-+N+Pl+Loc:%^VOWL%^CShort%>in K ;
-+N+Pl+Com:%^VOWL%^CShort%>ivuiˊm K ;
-+N+Pl+Abe:%^VOWL%^CShort%>itää K ;
++N:%^VOWL%^CShort PL-NOM ;
++N:%^VOWL%^CShort PL-GEN ;
++N:%^VOWL%^CShort PL-ACC ;
++N:%^VOWL%^CShort PL-ILL ;
++N:%^VOWL%^CShort PL-LOC ;
++N:%^VOWL%^CShort PL-COM ;
++N:%^VOWL%^CShort PL-ABE ;
 
 
 !! !!e-a-stems
@@ -124,24 +210,45 @@ COMMON_E_A_STEM ;
 
 !! !!m-stems
 
-LEXICON N-laajj !!= * __@CODE@__ = stemtype m-stem
+LEXICON N-laajj !!= * __@CODE@__ = stemtype Âm-stem
 !! ** Yaml:
-+N+Sg+Nom:%^WG K ;
-+N+Sg+Gen:âm K ;
-+N+Sg+Acc:âm K ;
-+N+Sg+Ill:m%>a K ;
-+N+Sg+Loc:m%>est K ;
-+N+Sg+Com:m%>in K ;
-+N+Ess:m%>en K ; ! ess and prt without
-+N+Par:m%>ed K ;
-+N+Sg+Abe:âm%>tää K ;
-+N+Pl+Nom:âm K ;
-+N+Pl+Gen:m%>i K ;
-+N+Pl+Acc:m%>id K ;
-+N+Pl+Ill:m%>id K ;
-+N+Pl+Loc:m%>in K ;
-+N+Pl+Com:m%>ivuiˊm K ;
-+N+Pl+Abe:m%>itää K ;
++N:%^WG SG-NOM ;
++N:âm SG-GEN ;
++N:âm SG-ACC ;
++N:m%>a SG-ILL ;
++N:m%>e SG-LOC ;
++N:m%> SG-COM ;
++N:m%>e ESS ; ! ess and prt without
++N:m%>e PAR ;
++N:âm SG-ABE ;
++N:âm PL-NOM ;
++N:m PL-GEN ;
++N:m PL-ACC ;
++N:m PL-ILL ;
++N:m PL-LOC ;
++N:m PL-COM ;
++N:m PL-ABE ;
+
+LEXICON N_ČÂÂˊĐ !!= * __@CODE@__ = stemtype Am-stem without ''m'' in ess
+!! ** Yaml: caad
+!! ** čââˊđ:čââˊđ
++N: SG-NOM ;
++N:%^PALNo%>am SG-GEN ;
++N:%^VOWSH%^CLong%^PALNo%>am SG-ACC ;
++N:%^PALNom%>a SG-ILL ;
++N:%^PALNom%>e SG-LOC ;
++N:%^PALNom%> SG-COM ;
++N:%>e ESS ; ! ess and prt without
++N:%>e PAR ;
++N:%^PALNo%>am SG-ABE ;
++N:%^PALNo%>am PL-NOM ;
++N:%^PALNo%>m PL-GEN ;
++N:%^PALNo%>m PL-ACC ;
++N:%^PALNo%>m PL-ILL ;
++N:%^PALNo%>m PL-LOC ;
++N:%^PALNo%>m PL-COM ;
++N:%^PALNo%>m PL-ABE ;
+
 
 
 !! !!n-stems
@@ -280,6 +387,40 @@ LEXICON 22mos !!= * __@CODE@__ = Koulukielioppi stemtype II 22 moš
 
 LEXICON 22mus !!= * __@CODE@__ = Koulukielioppi stemtype II 22 muš
 +N+Sg+Nom: # ;
+
+LEXICON SG-NOM
++Sg+Nom: K ;
+LEXICON SG-GEN
++Sg+Gen: K ;
+LEXICON SG-ACC
++Sg+Acc: K ;
+LEXICON SG-ILL
++Sg+Ill: K ;
+LEXICON SG-LOC
++Sg+Loc:st K ;
+LEXICON SG-COM
++Sg+Com:%>in K ;
+LEXICON SG-ABE
++Sg+Abe:%>tää K ;
+LEXICON ESS
++Ess:n K ;
+LEXICON PAR
++Par:d K ;
+
+LEXICON PL-NOM
++Pl+Nom: K ;
+LEXICON PL-GEN
++Pl+Gen:%>i K ;
+LEXICON PL-ACC
++Pl+Acc:%>id K ;
+LEXICON PL-ILL
++Pl+Ill:%>id K ;
+LEXICON PL-LOC
++Pl+Loc:%>in K ;
+LEXICON PL-COM
++Pl+Com:%>ivuiˊm K ;
+LEXICON PL-ABE
++Pl+Abe:%>itää K ;
 
 !! !!Adjectives -- to be moved
 
