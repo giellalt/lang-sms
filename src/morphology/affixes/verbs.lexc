@@ -145,13 +145,38 @@ LEXICON KALMMED
 +V+VAbess:%^VOWL%^CShort%>ǩeânai FINAL1 ;		!WG
 
 LEXICON JURDDED
-!! juˊrdded:ju%{%ˊ%}rdd
+!! juˊrdded:juˊrdd
 !! In the lexicon ''@LEXNAME@'' the verb __kâˊlmmed__ has the lexc stem
 !! __kâlmm__. It raises in +Ind+Prt+Pl3, Pot, and has lengthening.
 
 +V+Ind+Prs:             JURDDED-PRS ;
 +V+Ind+Prt:             JURDDED-PRT ;
 +V+Imp:                 JURDDED-IMP ;
++V:%^VOWL%^CShort%^PAL%>       POTENTIAL ; !
++V:%^VOWL%^CShort%^VOWLower%^PALNo%>    CONDITIONAL ; !
++V+Pot+Sg3:%^VOWL%^CShort%^VOWRaise%^PAL%>ež    FINAL1 ; !WG
++V+Inf:%^VOWFront%^PAL%>ed FINAL1 ;
++V+Action:%>em FINAL1 ;
++V+ActEss:%^PAL%>men FINAL1 ;
++V+GerTemp:%^VOWL%^CShort%^PAL%>een FINAL1 ;
++V+GerInstr:%^VOWL%^CShort%^PAL%>eeˊl FINAL1 ;
++V+Action:%^PAL%>em FINAL1 ;
++V+PrsPrc:%^PAL%>i FINAL1 ;
++V+PrfPrc:%^VOWLower%^PALNo%>am FINAL1 ;
++V+Pass+PrfPrc:%^PALNo%>um FINAL1 ;
++V+Imp+ConNeg:%^PALNo%>u FINAL1 ;
++V+VAbess:%^VOWL%^CShort%^PAL%>kâni FINAL1 ;                 !WG
++V+VAbess:%^VOWL%^CShort%^PAL%>kani FINAL1 ;         !WG
++V+VAbess:%^VOWL%^CShort%^PAL%>ǩeânai FINAL1 ;               !WG
+
+LEXICON V_UˊVDDED
+!! uˊvdded:uˊvdd
+!! In the lexicon ''@LEXNAME@'' the verb __uˊvdded__ has the lexc stem
+!! __uˊvdded__. It raises in +Ind+Prt+Pl3, Pot, and has lengthening.
+
++V+Ind+Prs:             V_UˊVDDED-PRS ;
++V+Ind+Prt:             V_UˊVDDED-PRT ;
++V+Imp:                 V_UˊVDDED-IMP ;
 +V:%^VOWL%^CShort%^PAL%>       POTENTIAL ; !
 +V:%^VOWL%^CShort%^VOWLower%>    CONDITIONAL ; !
 +V+Pot+Sg3:%^VOWL%^CShort%^VOWRaise%^PAL%>ež    FINAL1 ; !WG
@@ -162,9 +187,9 @@ LEXICON JURDDED
 +V+GerInstr:%^VOWL%^CShort%^PAL%>eeˊl FINAL1 ;
 +V+Action:%^PAL%>em FINAL1 ;
 +V+PrsPrc:%^PAL%>i FINAL1 ;
-+V+PrfPrc:%^VOWLower%>am FINAL1 ;
-+V+Pass+PrfPrc:%>um FINAL1 ;
-+V+Imp+ConNeg:%>u FINAL1 ;
++V+PrfPrc:%^VOWLower%^PALNo%>am FINAL1 ;
++V+Pass+PrfPrc:%^PALNo%>um FINAL1 ;
++V+Imp+ConNeg:%^PALNo%>u FINAL1 ;
 +V+VAbess:%^VOWL%^CShort%^PAL%>kâni FINAL1 ;                 !WG
 +V+VAbess:%^VOWL%^CShort%^PAL%>kani FINAL1 ;         !WG
 +V+VAbess:%^VOWL%^CShort%^PAL%>ǩeânai FINAL1 ;               !WG
@@ -417,14 +442,26 @@ LEXICON KALMMED-PRS
  +4:%^VOWL%^CShort%^VOWFront%^PAL%>et FINAL1 ; ! vueˊljet
  +ConNeg:%^VOWL%^CShort%^VOWFront%^PAL FINAL1 ;
 
-! assuming stem _jurdd_
+! assuming stem _juˊrdd_
 LEXICON JURDDED-PRS
- +Sg1:%^VOWL%^CShort%^VOWLower%>am		FINAL1	; !WG _joordam_ 
- +Sg2:%^VOWL%^CShort%^VOWLower%>ak		FINAL1	; !WG ! _joordak_
- +Sg3:%^VOWLower FINAL1	; ! _jordd_
+ +Sg1:%^VOWL%^CShort%^VOWLower%^PALNo%>am		FINAL1	; !WG _joordam_ 
+ +Sg2:%^VOWL%^CShort%^VOWLower%^PALNo%>ak		FINAL1	; !WG ! _joordak_
+ +Sg3:%^VOWLower%^PALNo FINAL1	; ! _jordd_
  +Pl1:%^PAL%>ep		FINAL1	; ! _äˊlǧǧep_ _tieˊttep_
  +Pl2:%^PAL%>veˊted		FINAL1	; ! _tieˊttveˊted_
  +Pl3:%^VOWSH%^CLong%^VOWLower%^PAL%>e		FINAL1	; ! _joˊrdde_
+ +Pl3:%^VOWSH%^CLong%^VOWLower%^VOWFront%^PAL%>e		FINAL1	; ! _teäˊtte_
+ +4:%^VOWL%^CShort%^PAL%>et FINAL1 ; ! juˊrddet
+ +ConNeg:%^VOWL%^CShort%^VOWFront%^PAL FINAL1 ;
+
+! assuming stem _uˊvdd_
+LEXICON V_UˊVDDED-PRS
+ +Sg1:%^VOWXL%^CShort%^VOWLower%^PALNo%>am		FINAL1	; !WG _ooudam_ 
+ +Sg2:%^VOWXL%^CShort%^VOWLower%^PALNo%>ak		FINAL1	; !WG ! _ooudak_
+ +Sg3:%^VOWL%^CShort%^VOWLower%^PALNo FINAL1	; ! _oudd_
+ +Pl1:%^PAL%>ep		FINAL1	; ! _uˊvddep_
+ +Pl2:%^PAL%>veˊted		FINAL1	; ! _uˊvddveˊted_
+ +Pl3:%^VOWSH%^CLong%^VOWLower%^PAL%>e		FINAL1	; ! _ouˊdde_
  +Pl3:%^VOWSH%^CLong%^VOWLower%^VOWFront%^PAL%>e		FINAL1	; ! _teäˊtte_
  +4:%^VOWL%^CShort%^PAL%>et FINAL1 ; ! juˊrddet
  +ConNeg:%^VOWL%^CShort%^VOWFront%^PAL FINAL1 ;
@@ -455,7 +492,7 @@ LEXICON TEEMEED-PRS
  +ConNeg:%>ed FINAL1 ; ! ääˊved
 
 LEXICON MAINSTED-PRS
- +Sg1:%>am              FINAL1  ; !WG __
+ +Sg1:%>am              FINAL1  ; !WG _mainstam_
  +Sg2:%>ak              FINAL1  ; !WG ! __
  +Sg3:%^INDPRSSG3 FINAL1        ; ! __
  +Pl1:%>ep      FINAL1  ; ! __
@@ -513,6 +550,18 @@ LEXICON KALMMED-PRT
  +ConNeg:%>am FINAL1 ;
 
 LEXICON JURDDED-PRT
+ +Sg1:%^PAL%>em         FINAL1  ; ! _juˊrddem_
+ +Sg2:%^PAL%>iǩ         FINAL1  ; ! _juˊrddiǩ_
+ +Sg3:%^VOWL%^CShort%^PAL%>i FINAL1     ; !WG ! _juuˊrdi_
+ +Pl1:%^VOWL%^CShort%^PAL%>im FINAL1    ; !WG ! _juuˊrdim_
+ +Pl1:%^VOWL%^CShort%^PAL%>in FINAL1    ; !WG ! _juuˊrdin_
+ +Pl2:%^VOWL%^CShort%^PAL%>id FINAL1    ; !WG ! _tiõˊđid_
+ +Pl3:%^VOWSH%^CLong%^VOWRaise%^PAL%>e FINAL1   ; ! _kõˊlmme_
+ +4:%^VOWFront%^PAL%>eš FINAL1 ; ! juˊrddeš
+!2013-08-29 +4:%^VOWSH%^CLong%^VOWFront%^PAL%>eš FINAL1 ; ! juˊrddeš
+ +ConNeg:%>am FINAL1 ;
+
+LEXICON V_UˊVDDED-PRT
  +Sg1:%^PAL%>em         FINAL1  ; ! _juˊrddem_
  +Sg2:%^PAL%>iǩ         FINAL1  ; ! _juˊrddiǩ_
  +Sg3:%^VOWL%^CShort%^PAL%>i FINAL1     ; !WG ! _juuˊrdi_
@@ -614,6 +663,14 @@ LEXICON KALMMED-IMP
 
 !
 LEXICON JURDDED-IMP
+ +Sg2:%^VOWL%^CShort%^PAL FINAL1        ; !WG
+ +Sg3:%^VOWL%^CShort%^VOWLower%^PALNo%>as                FINAL1  ; !WG
+ +Pl1:%^PAL%>ep                      FINAL1  ;
+ +Pl2:%^PAL%>ed                      FINAL1  ;
+ +Pl3:%^VOWLower%^PALNo%>az          FINAL1  ;
+
+!
+LEXICON V_UˊVDDED-IMP
  +Sg2:%^VOWL%^CShort%^PAL FINAL1        ; !WG
  +Sg3:%^VOWL%^CShort%^VOWLower%>as                FINAL1  ; !WG
  +Pl1:%^PAL%>ep                      FINAL1  ;
