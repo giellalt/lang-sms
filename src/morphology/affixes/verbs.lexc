@@ -200,25 +200,25 @@ LEXICON TIETTED
 +V+Ind+Prs:		TIETTED-PRS ;
 +V+Ind+Prt:		TIETTED-PRT ;
 +V+Imp:			TIETTED-IMP ;
-+V:%^VOWL%^CShort%^PAL%>	POTENTIAL ; !WG PAL for vuõˊljžem
-+V:%^VOWL%^CShort%^VOWFront%^PAL%>	POTENTIAL ; !WG PAL for vueˊljžem
-+V:%^VOWL%^CShort%^VOWLower%>	CONDITIONAL ; !WG vowel lowering to cope with
++V:%^VOWL%^CShort%^VOWBack%^PAL%>	POTENTIAL ; !WG PAL for vuõˊljžem
++V:%^VOWL%^CShort%^PAL%>	POTENTIAL ; !WG PAL for vueˊljžem
++V:%^VOWL%^CShort%^VOWLower%^VOWBack%^PALNo%>	CONDITIONAL ; !WG vowel lowering to cope with
 ! vuâlǥas this would mean there is a form teâđas 2012-11-27
-+V+Pot+Sg3:%^VOWL%^CShort%^VOWFront%^PAL%>ež	FINAL1 ; !WG vueˊljež
-+V+Pot+Sg3:%^VOWL%^CShort%^PAL%>ež	FINAL1 ; !WG vuõˊljež
++V+Pot+Sg3:%^VOWL%^CShort%^PAL%>ež	FINAL1 ; !WG vueˊljež
++V+Pot+Sg3:%^VOWL%^CShort%^VOWBack%^PAL%>ež	FINAL1 ; !WG vuõˊljež
 +V+Inf:%^VOWFront%^PAL%>ed FINAL1 ;
-+V+ActEss:%^VOWFront%^PAL%>men FINAL1 ;
-+V+GerTemp:%^VOWL%^CShort%^VOWFront%^PAL%>een FINAL1 ;
-+V+GerInstr:%^VOWL%^CShort%^VOWFront%^PAL%>eeˊl FINAL1 ;
-+V+Action:%^VOWFront%^PAL%>em FINAL1 ;
-+V+PrsPrc:%^PAL%>i FINAL1 ; !vuõˊlǧǧi
-+V+PrsPrc:%^VOWFront%^PAL%>i FINAL1 ; !vueˊlǧǧi
-+V+PrfPrc:%^VOWLower%>am FINAL1 ;
-+V+Pass+PrfPrc:%>um FINAL1 ;
-+V+Imp+ConNeg:%>u FINAL1 ;
++V+ActEss:%^PAL%>men FINAL1 ;
++V+GerTemp:%^VOWL%^CShort%^PAL%>een FINAL1 ;
++V+GerInstr:%^VOWL%^CShort%^PAL%>eeˊl FINAL1 ;
++V+Action:%^PAL%>em FINAL1 ;
++V+PrsPrc:%^VOWBack%^PAL%>i FINAL1 ; !vuõˊlǧǧi
++V+PrsPrc:%^PAL%>i FINAL1 ; !vueˊlǧǧi
++V+PrfPrc:%^VOWLower%^VOWBack%^PALNo%>am FINAL1 ;
++V+Pass+PrfPrc:%^VOWBack%^PALNo%>um FINAL1 ;
++V+Imp+ConNeg:%^VOWBack%^PALNo%>u FINAL1 ;
 !+V+VAbess:%^VOWL%^CShort%>kâni FINAL1 ;			!WG
-+V+VAbess:%^VOWL%^CShort%^VOWFront%^PAL%>kani FINAL1 ;		!WG
-+V+VAbess:%^VOWL%^CShort%^VOWFront%^PAL%>ǩeännai FINAL1 ;		!WG
++V+VAbess:%^VOWL%^CShort%^PAL%>kani FINAL1 ;		!WG
++V+VAbess:%^VOWL%^CShort%^PAL%>ǩeännai FINAL1 ;		!WG
 
 !! !!Odd-syllable stems
 
@@ -362,13 +362,13 @@ LEXICON KAMRDED-01
 
 LEXICON SEDGGJED
 !! sedggjed:
-:QA1i KAMRDED-01 ;
+:%{A1%}i KAMRDED-01 ;
 +V+Imp+Sg2:%^VOWRaise%>u	FINAL1 ;
 +V+Imp+ConNeg+Sg2:%^VOWRaise%>u FINAL1 ;
 
 LEXICON VOLLJED
 !! võˊll’jed:võˊll
-:QA1i KAMRDED-01 ;
+:%{A1%}i KAMRDED-01 ;
 +V+Imp+Sg2:%>e        FINAL1 ;
 +V+Imp+ConNeg+Sg2:%>e FINAL1 ;
 
@@ -468,17 +468,17 @@ LEXICON V_UˊVDDED-PRS
 
 ! assuming stem _tieˊtt_
 LEXICON TIETTED-PRS
- +Sg1:%^VOWL%^CShort%^VOWLower%^PALNo%>am		FINAL1	; !WG _teâđam_ 
- +Sg2:%^VOWL%^CShort%^VOWLower%^PALNo%>ak		FINAL1	; !WG ! _teâđak_
- +Sg3:%^VOWLower FINAL1	; ! _teâtt_
+ +Sg1:%^VOWL%^CShort%^VOWLower%^VOWBack%^PALNo%>am		FINAL1	; !WG _teâđam_ 
+ +Sg2:%^VOWL%^CShort%^VOWLower%^VOWBack%^PALNo%>ak		FINAL1	; !WG ! _teâđak_
+ +Sg3:%^VOWLower%^VOWBack%^PALNo FINAL1	; ! _teâtt_
  +Pl1:%^VOWFront%^PAL%>ep		FINAL1	; ! _äˊlǧǧep_ _tieˊttep_
  +Pl2:%^VOWFront%^PAL%>veˊted		FINAL1	; ! _tieˊttveˊted_
- +Pl3:%^VOWLower%^PAL%>e		FINAL1	; ! _teâˊtte_ vuâˊlǧǧe
- +Pl3:%^VOWSH%^CLong%^VOWLower%^VOWFront%^PAL%>e		FINAL1	; ! _teäˊtte_ vuäˊlǧǧe
- +Pl3:%^VOWSH%^CLong%^VOWLower%^VOWFront%^PAL%>a		FINAL1	; !  vuäˊlǧǧa
+ +Pl3:%^VOWLower%^VOWBack%^PAL%>e		FINAL1	; ! _teâˊtte_ vuâˊlǧǧe
+ +Pl3:%^VOWLower%^PAL%>e		FINAL1	; ! _teäˊtte_ vuäˊlǧǧe
+ +Pl3:%^VOWLower%^PAL%>a		FINAL1	; !  vuäˊlǧǧa
  +Pl3:%^VOWFront%^PAL%>e                FINAL1  ; !vueˊlǧǧe
- +4:%^VOWL%^CShort%^VOWFront%^PAL%>et FINAL1 ; ! vueˊljet
- +ConNeg:%^VOWL%^CShort%^VOWFront%^PAL FINAL1 ;
+ +4:%^VOWL%^CShort%^PAL%>et FINAL1 ; ! vueˊljet
+ +ConNeg:%^VOWL%^CShort%^PAL FINAL1 ;
 
 ! assuming stem _ääˊv_ _teeˊm_
 LEXICON TEEMEED-PRS
@@ -501,7 +501,7 @@ LEXICON MAINSTED-PRS
  +4:%>et FINAL1 ; !
  +ConNeg:%^IMPSG2 FINAL1 ; ! kååˊmmerd
 
-! assuming stem _kåˊmQE1rded_
+! assuming stem _kåˊm%{E1%}rded_
 LEXICON KAMRDED-PRS
  +Sg1:%>am		FINAL1	; !WG __ 
  +Sg2:%>ak		FINAL1	; !WG ! __
@@ -574,20 +574,20 @@ LEXICON V_UˊVDDED-PRT
  +ConNeg:%>am FINAL1 ;
 
 LEXICON TIETTED-PRT
- +Sg1:%^PAL%>em		FINAL1	; ! _tiõˊttem_
- +Sg2:%^PAL%>iǩ		FINAL1	; ! _tiõˊttiǩ_
- +Sg3:%^VOWL%^CShort%^PAL%>i		FINAL1	; !WG ! _tiõˊđi_ vuõˊlji
- +Sg3:%^VOWL%^CShort%^VOWFront%^PAL%>i		FINAL1	; !WG ! vueˊlji
- +Pl1:%^VOWL%^CShort%^PAL%>im		FINAL1	; !WG ! _tiõˊđim_
- +Pl1:%^VOWL%^CShort%^PAL%>in		FINAL1	; !WG ! _tiõˊđin_
- +Pl1:%^VOWL%^CShort%^VOWFront%^PAL%>im		FINAL1	; !WG ! _vueˊljim_
- +Pl1:%^VOWL%^CShort%^VOWFront%^PAL%>in		FINAL1	; !WG ! _vueˊljin_
- +Pl2:%^VOWL%^CShort%^PAL%>id		FINAL1	; !WG ! _tiõˊđid_
- +Pl2:%^VOWL%^CShort%^VOWFront%^PAL%>id		FINAL1	; !WG ! _tieˊđid_
- +Pl3:%^VOWSH%^CLong%^PAL%>e		FINAL1	; ! _tiõˊtte_ 
- +Pl3:%^VOWSH%^CLong%^VOWFront%^PAL%>e		FINAL1	; ! _tieˊtte_
- +4:%^PAL%>eš FINAL1 ; ! vuõˊlǧǧeš
- +ConNeg:%^VOWLower%>am FINAL1 ; !
+ +Sg1:%^VOWBack%^PAL%>em		FINAL1	; ! _tiõˊttem_
+ +Sg2:%^VOWBack%^PAL%>iǩ		FINAL1	; ! _tiõˊttiǩ_
+ +Sg3:%^VOWL%^CShort%^VOWBack%^PAL%>i		FINAL1	; !WG ! _tiõˊđi_ vuõˊlji
+ +Sg3:%^VOWL%^CShort%^PAL%>i		FINAL1	; !WG ! vueˊlji
+ +Pl1:%^VOWL%^CShort%^VOWBack%^PAL%>im		FINAL1	; !WG ! _tiõˊđim_
+ +Pl1:%^VOWL%^CShort%^VOWBack%^PAL%>in		FINAL1	; !WG ! _tiõˊđin_
+ +Pl1:%^VOWL%^CShort%^PAL%>im		FINAL1	; !WG ! _vueˊljim_
+ +Pl1:%^VOWL%^CShort%^PAL%>in		FINAL1	; !WG ! _vueˊljin_
+ +Pl2:%^VOWL%^CShort%^VOWBack%^PAL%>id		FINAL1	; !WG ! _tiõˊđid_
+ +Pl2:%^VOWL%^CShort%^PAL%>id		FINAL1	; !WG ! _tieˊđid_
+ +Pl3:%^VOWSH%^CLong%^VOWBack%^PAL%>e		FINAL1	; ! _tiõˊtte_ 
+ +Pl3:%^VOWSH%^CLong%^PAL%>e		FINAL1	; ! _tieˊtte_
+ +4:%^VOWBack%^PAL%>eš FINAL1 ; ! vuõˊlǧǧeš
+ +ConNeg:%^VOWLower%^VOWBack%^PALNo%>am FINAL1 ; !
 
 LEXICON TEEMEED-PRT
  +Sg1:%>eem		FINAL1	; ! _ääˊveem_
@@ -614,7 +614,7 @@ LEXICON MAINSTED-PRT
  +4:%>eš FINAL1 ; ! kåˊmrdeš
 
 
-! assuming stem _kåˊmQE1rd_
+! assuming stem _kåˊm%{E1%}rd_
 LEXICON KAMRDED-PRT
  +Sg1:%>em             FINAL1  ; ! kåˊmrdem
  +Sg2:%>iǩ             FINAL1  ; ! kåˊmrdiǩ
@@ -680,11 +680,11 @@ LEXICON V_UˊVDDED-IMP
 
 ! tieˊtted
 LEXICON TIETTED-IMP
- +Sg2:%^VOWL%^CShort%^VOWFront%^PAL FINAL1	; !WG
- +Sg3:%^VOWL%^CShort%^VOWLower%>as		FINAL1	; !WG vuâlǥas
+ +Sg2:%^VOWL%^CShort%^PAL FINAL1	; !WG
+ +Sg3:%^VOWL%^CShort%^VOWLower%^VOWBack%^PALNo%>as		FINAL1	; !WG vuâlǥas
  +Pl1:%^VOWFront%^PAL%>ep 		FINAL1	;
  +Pl2:%^VOWFront%^PAL%>ed 		FINAL1	;
- +Pl3:%^VOWL%^FRICG%^CShort%^VOWLower%>az		FINAL1	; !vuâlǥǥaz
+ +Pl3:%^VOWL%^FRICG%^CShort%^VOWLower%^VOWBack%^PALNo%>az		FINAL1	; !vuâlǥǥaz
 
 ! teeˊmeed
 LEXICON TEEMEED-IMP
