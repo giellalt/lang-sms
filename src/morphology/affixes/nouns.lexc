@@ -209,17 +209,17 @@ LEXICON N_ČÄÄˊCC !!= * __@CODE@__ is for nouns with ''-a'' ill ''-est'' +Loc
 +N:%^VOWL%^CShort SG-ACC ;
 +N:%^VOWSH%^CLong%^PALNo%>a SG-ILL ;
 +N:%^VOWL%^CShort%>e SG-LOC ;
-+N:%^VOWL%^CShort SG-COM ;
++N:%^VOWL%^CShort%^VOWBack SG-COM ;
 +N:%>e ESS ; ! ess and prt without
-+N:%>e PAR ;
++N:%^VOWL%^CShort%>e PAR ;
 +N:%^VOWL%^CShort SG-ABE ;
 +N:%^VOWL%^CShort PL-NOM ;
-+N:%^VOWL%^CShort PL-GEN ;
-+N:%^VOWL%^CShort PL-ACC ;
-+N:%^VOWL%^CShort PL-ILL ;
-+N:%^VOWL%^CShort PL-LOC ;
-+N:%^VOWL%^CShort PL-COM ;
-+N:%^VOWL%^CShort PL-ABE ;
++N:%^VOWL%^CShort%^VOWBack PL-GEN ;
++N:%^VOWL%^CShort%^VOWBack PL-ACC ;
++N:%^VOWL%^CShort%^VOWBack PL-ILL ;
++N:%^VOWL%^CShort%^VOWBack PL-LOC ;
++N:%^VOWL%^CShort%^VOWBack PL-COM ;
++N:%^VOWL%^CShort%^VOWBack PL-ABE ;
 
 
 
@@ -288,13 +288,34 @@ LEXICON N_HÕˊPPI !!= * __@CODE@__ is for nouns with ''-est'' +Loc
 +N: PL-COM ;
 +N: PL-ABE ;
 
+LEXICON N_LOOKKI !!= * __@CODE@__ is for nouns with ''-est'' +Loc
+!! ** Yaml: __lookki__
+!! * There are several stem types
+!! * lookki:lookki
++N: SG-NOM ;
++N:%^VOWL%^CShort SG-GEN ;
++N:%^VOWL%^CShort SG-ACC ;
++N:%>a SG-ILL ;
++N:%>e SG-LOC ;
++N:%^VOWL%^CShort SG-COM ;
++N:%>e ESS ; ! ess and prt without
++N:%>e PAR ;
++N:%^VOWL%^CShort SG-ABE ;
++N:%^VOWL%^CShort PL-NOM ;
++N:%^VOWL%^CShort PL-GEN ;
++N:%^VOWL%^CShort PL-ACC ;
++N:%^VOWL%^CShort PL-ILL ;
++N:%^VOWL%^CShort PL-LOC ;
++N:%^VOWL%^CShort PL-COM ;
++N:%^VOWL%^CShort PL-ABE ;
+
 !! !!u-stems
 LEXICON N_MÄÄN !!= * __@CODE@__ is for nouns with ''-est'' +Loc
 !! ** Yaml: __maan__
 !! * There are several stem types
 !! * mään:mään
 +N: SG-NOM ;
-+N:%^VOWXSH%^VOWRaise%>u SG-GEN ;
++N:%^VOWXSH%^CLong%^VOWBack%^PALNo%>u SG-GEN ;
 +N: SG-ACC ;
 +N:%^VOWXSH%>ǥa SG-ILL ;
 +N:%^VOWXSH%^VOWRaise%>u SG-LOC ;
@@ -309,6 +330,46 @@ LEXICON N_MÄÄN !!= * __@CODE@__ is for nouns with ''-est'' +Loc
 +N:%^VOWXSH%^VOWRaise%>u PL-LOC ;
 +N:%^VOWXSH%^VOWRaise%>u PL-COM ;
 +N:%^VOWXSH%^VOWRaise%>u PL-ABE ;
+
+!! !!k-stems
+
+LEXICON N_ČÂUSTÕK !!= * __@CODE@__ = stemtype 
+!! ** Yaml: caustok
++N: SG-NOM ;
++N:k%^VOWXL%^CShort SG-GEN ;
++N:k%^VOWXL%^CShort SG-ACC ;
++N:k%^VOWSH%^CLong%^PAL%>e SG-ILL ;
++N:k%^VOWXL%^CShort%>â SG-LOC ;
++N:k%^VOWXL%^CShort%> SG-COM ;
++N:k%>â ESS ; ! ess and prt without
++N:k%>â PAR ;
++N:k%^VOWXL%^CShort SG-ABE ;
++N:k%^VOWXL%^CShort PL-NOM ;
++N:k%^VOWXL%^CShort PL-GEN ;
++N:k%^VOWXL%^CShort PL-ACC ;
++N:k%^VOWXL%^CShort PL-ILL ;
++N:k%^VOWXL%^CShort PL-LOC ;
++N:k%^VOWXL%^CShort PL-COM ;
++N:k%^VOWXL%^CShort PL-ABE ;
+
+LEXICON N_DURAK !!= * __@CODE@__ = stemtype 
+!! ** Yaml: durak
++N: SG-NOM ;
++N:%^VOWL SG-GEN ;
++N:%^VOWL SG-ACC ;
++N:k%>a SG-ILL ;
++N:%^VOWL%>a SG-LOC ;
++N:%^VOWL%> SG-COM ;
++N:%^VOWL%>e ESS ; ! ess and prt without
++N:%^VOWL%>e PAR ;
++N:%^VOWL SG-ABE ;
++N:%^VOWL PL-NOM ;
++N:%^VOWL PL-GEN ;
++N:%^VOWL PL-ACC ;
++N:%^VOWL PL-ILL ;
++N:%^VOWL PL-LOC ;
++N:%^VOWL PL-COM ;
++N:%^VOWL PL-ABE ;
 
 !! !!m-stems
 
@@ -335,7 +396,7 @@ LEXICON N_ČÂÂˊĐ !!= * __@CODE@__ = stemtype Am-stem without ''m'' in ess
 !! ** Yaml: caad
 !! ** čââˊđ:čââˊđ
 +N: SG-NOM ;
-+N:%^PALNo%>am SG-GEN ;
++N:%^VOWXSH%^CLong%^PALNo%>am SG-GEN ;
 +N:%^VOWSH%^CLong%^PALNo%>am SG-ACC ;
 +N:%^PALNom%>a SG-ILL ;
 +N:%^PALNom%>e SG-LOC ;
@@ -355,10 +416,25 @@ LEXICON N_ČÂÂˊĐ !!= * __@CODE@__ = stemtype Am-stem without ''m'' in ess
 
 !! !!n-stems
 
-LEXICON N-kuolban !!= * __@CODE@__ = stemtype n-stem
+LEXICON N-kuolban !!= * __@CODE@__ = stemtype n-stem kuõlbân:kuõlbb
 !! ** Yaml: __kuolban__
-+N+Sg+Nom: K ;
-+N: N_OBL ;
++N:%^VOWL%^CShort%>ân SG-NOM ;
++N:%^VOWSH%^CLong%^PALNo%>ân SG-GEN ;
++N:%^VOWSH%^CLong%^PALNo%>ân SG-ACC ;
++N:%>na SG-ILL ;
++N:%>ne SG-LOC ;
++N:%>n SG-COM ;
++N:%^VOWL%^CShort%>âna ESS ; ! ess and prt without
++N:%^VOWL%^CShort%>âna PAR ;
++N:%^VOWSH%^CLong%>n SG-ABE ;
++N:%>ân PL-NOM ;
++N:%^VOWSH%^CLong%>n PL-GEN ;
++N:%^VOWSH%^CLong%>n PL-ACC ;
++N:%^VOWSH%^CLong%>n PL-ILL ;
++N:%^VOWSH%^CLong%>n PL-LOC ;
++N:%^VOWSH%^CLong%>n PL-COM ;
++N:%^VOWSH%^CLong%>nâ PL-ABE ; ! 2013-09-10 Is this correct?
+
 
 LEXICON N-siom  !!= * __@CODE@__ = stemtype n-stem
 !! ** Yaml: __siom__
