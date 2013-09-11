@@ -49,7 +49,8 @@ Alphabet
  ˊ  !! * MODIFIER LETTER ACUTE ACCENT: suprasegmental palatalization
 
 !! !! Trigger symbols
-  
+
+ %^RmVow:0 !!= * @CODE@ for removing vowels e, â, a in second syllable before consonant  
  %^1VOW:0 %^2VOW:0 %^3VOW:0 %^4VOW:0 %^5VOW:0 !!= * @CODE@ Vow triggers
 
  %^VOWLower:0 !!= * @CODE@ i>e, õ>â, â>ä, u>o, o>å
@@ -72,7 +73,7 @@ Alphabet
  %^INDPRSSG3:0  !!= * @CODE@ 
  %^FRICG:0	    !!= * @CODE@ 
  %^VOWTense:0   !!= * @CODE@ â:e
- %^VOWLimp:0   !!= * @CODE@ e:â 
+ %^VOWLax:0   !!= * @CODE@ e:â 
 
 !! Literal quotes and angles must be escaped (cf morpheme boundaries below):
 
@@ -147,10 +148,12 @@ Rules !!= !!! @CODE@
 "Even syllabic verbs I, vowel shortening â:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
  â:0 <=> OnSetC _ â: ( %ˊ: | 0:%ˊ ) [ LongC | C:+ ] [ %^VOWSH: | %^VOWXSH: ] ( %^CLong: ) ;
+         C _ C %^RmVow: ;
 
 "Even syllabic verbs I, vowel shortening e:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
  e:0 <=> OnSetC _ e: (%ˊ: | 0:%ˊ ) [ LongC | C: :C* ] %^VOWSH: ( %^CLong: ) ( %^VOWLower: |%^VOWRaise: ) ( %^VOWFront: | %^VOWBack: ) (X3: ) ( %^PAL: | %^PALNo: ) RBound  ;
+         C _ C %^RmVow: ;
 
 "Even syllabic verbs I, vowel shortening å:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
@@ -171,11 +174,14 @@ Rules !!= !!! @CODE@
 "Even syllabic verbs I, vowel shortening o:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
  o:0 <=> OnSetC _ o: (%ˊ: | 0:%ˊ ) [ LongC | C: :C* ] %^VOWSH: ( %^CLong: ) ( %^VOWLower: | %^VOWRaise: ) ( %^VOWFront: | %^VOWBack: ) (X3: ) ( %^PAL: | %^PALNo: ) RBound  ;
+         C _ C %^RmVow: ;
 
 "Even syllabic verbs I, vowel shortening a:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+!!{{{
  a:0 <=> OnSetC _ a: (%ˊ: | 0:%ˊ ) [ LongC | C: :C* ] %^VOWSH: ( %^CLong: ) ( %^VOWLower: |%^VOWRaise: ) ( %^VOWFront: | %^VOWBack: ) (X3: ) ( %^PAL: | %^PALNo: ) RBound  ;
-
+         C _ [ C | i: ] %^RmVow: ;
+!!}}}
 "Even syllabic verbs I, vowel shortening ä:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
  ä:0 <=> OnSetC _ ä: ( %ˊ: | 0:%ˊ ) [ LongC | C: :C* ] %^VOWSH: %^CLong: ;
