@@ -373,7 +373,7 @@ LEXICON N_DURAK !!= * __@CODE@__ = stemtype
 
 !! !!l-stems
 LEXICON N_NJUÄˊMMEL !!= * __@CODE@__ = stemtype l-stem njuäˊmmel:njuäˊmmel
-!! ** Yaml: __njuammel, njuunnjel, __ !see koltan kouluk. 254 njuˊnnjel
+!! ** Yaml: __njuammel, njuunnjel, __ 
 +N: SG-NOM ;
 +N:%^VOWSH SG-GEN ;
 +N:%^VOWSH SG-ACC ;
@@ -390,6 +390,26 @@ LEXICON N_NJUÄˊMMEL !!= * __@CODE@__ = stemtype l-stem njuäˊmmel:njuäˊmmel
 +N:%^RmVow PL-LOC ;
 +N:%^RmVow PL-COM ;
 +N:%^RmVow PL-ABE ; 
+
+LEXICON N_ǨEÂLǤAL !!= * __@CODE@__ = stemtype n-stem ǩeâlǥal:ǩeâlǥal
+!! ** Yaml: __kealgal__
++N: SG-NOM ;
++N:%^VOWSH%^CLong SG-GEN ;
++N:%^VOWSH%^CLong SG-ACC ;
++N:%^VOWSH%^CLong%^RmVow%>a SG-ILL ;
++N:%^VOWSH%^CLong%^RmVow%>e SG-LOC ;
++N:%^VOWSH%^CLong%^RmVow SG-COM ;
++N:%^VOWSH%^CLong%^RmVow%>e ESS ; ! ess and prt without
++N:%^VOWSH%^CLong%^RmVow%>e PAR ;
++N:%^VOWSH%^CLong SG-ABE ;
++N:%^VOWSH%^CLong PL-NOM ;
++N:%^VOWSH%^CLong%^RmVow PL-GEN ;
++N:%^VOWSH%^CLong%^RmVow PL-ACC ;
++N:%^VOWSH%^CLong%^RmVow PL-ILL ;
++N:%^VOWSH%^CLong%^RmVow PL-LOC ;
++N:%^VOWSH%^CLong%^RmVow PL-COM ;
++N:%^VOWSH%^CLong%^RmVow PL-ABE ; 
+
 
 !! !!m-stems
 
@@ -481,6 +501,27 @@ LEXICON N_OBL
 +N+Pl+Com:%>ivuiˊm K ;
 +N+Pl+Abe:%>itää K ;
 
+!! !!s:z-stem type
+LEXICON N_ǨEˊRRES !!= * __@CODE@__ = stemtype l-stem ǩeˊrres:ǩeˊrres
+!!= * __@CODE@__ = Koulukielioppi stemtype II 8 (28)
+!! ** Yaml: __kerres __
++N: SG-NOM ;
++N:%^VC SG-GEN ;
++N:%^VC SG-ACC ;
++N:%^RmVow%>a SG-ILL ;
++N:%^RmVow%>e SG-LOC ;
++N:%^RmVow%> SG-COM ;
++N:%^RmVow%>e ESS ; ! ess and prt without
++N:%^RmVow%>e PAR ;
++N:%^VC SG-ABE ;
++N:%^VC PL-NOM ;
++N:%^RmVow PL-GEN ;
++N:%^RmVow PL-ACC ;
++N:%^RmVow PL-ILL ;
++N:%^RmVow PL-LOC ;
++N:%^RmVow PL-COM ;
++N:%^RmVow PL-ABE ; 
+
 
 
 !! !!Stem types from the grammar
@@ -532,7 +573,7 @@ LEXICON 26	  !!= * __@CODE@__ = Koulukielioppi stemtype II 6
 LEXICON 27	  !!= * __@CODE@__ = Koulukielioppi stemtype II 7 N_NJUÄˊMMEL
 +N+Sg+Nom: # ;
 
-LEXICON 28	  !!= * __@CODE@__ = Koulukielioppi stemtype II 8
+LEXICON 28	  !!= * __@CODE@__ = Koulukielioppi stemtype II 8 N_ǨEˊRRES
 +N+Sg+Nom: # ;
 
 LEXICON 29	  !!= * __@CODE@__ = Koulukielioppi stemtype II 9
