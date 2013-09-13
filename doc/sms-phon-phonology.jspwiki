@@ -32,6 +32,7 @@ Alphabet
 
 Trigger symbols
 
+ *  %^RmVow:0  for removing vowels e, â, a in second syllable before consonant  
  *  %^1VOW:0 %^2VOW:0 %^3VOW:0 %^4VOW:0 %^5VOW:0  Vow triggers
 
  *  %^VOWLower:0  i>e, õ>â, â>ä, u>o, o>å
@@ -44,6 +45,7 @@ Trigger symbols
  *  %^VOWBack:0	      Backing e>õ, e>â
  *  %^VOWFront:0	      Fronting
  *  %^PAL:0 %^PALNo:0    Palatalisation
+ *  %^VC:0          Voicing s:z š:ž
  *  X3:0   causes weak grade
  *  %{Â1%}:0  used with "mainsted" to tell (a story)
  *  %{A1%}:0  used with "vuejted" to drive (causative)
@@ -54,7 +56,7 @@ Trigger symbols
  *  %^INDPRSSG3:0   
  *  %^FRICG:0	     
  *  %^VOWTense:0    â:e
- *  %^VOWLimp:0    e:â 
+ *  %^VOWLax:0    e:â 
 
 Literal quotes and angles must be escaped (cf morpheme boundaries below):
 
@@ -68,7 +70,7 @@ Literal quotes and angles must be escaped (cf morpheme boundaries below):
 
 !!Sets
 
- *  C	= b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ; 
+ *  Cns	= b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ; 
  *  CNoV	= b c d f g h j k l m n p q r s t w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ; 
 
  *  CNoJ	= b c d f g h k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ; 
@@ -79,13 +81,54 @@ Literal quotes and angles must be escaped (cf morpheme boundaries below):
 
 Definitions
 
+{{{
+}}}
+
+{{{
+}}}
+
+{{{
+}}}
+
+{{{
+}}}
+
+{{{
+}}}
+
+{{{
+}}}
+
+{{{
+}}}
+
+{{{
+}}}
 
 
+preceded by two vowels
+{{{
+}}}
 
+Onset consonant or word boundary
+{{{
+}}}
 
+following morpheme or word boundary
+{{{
+}}}
 
+possible triggers befor VOWLower and VOWRaise
+{{{
+}}}
 
+possible triggers before PALNo and PAL
+{{{
+}}}
 
+neutral to vowel height and backness
+{{{
+}}}
 
  !!! Rules 
 Rules 
@@ -96,25 +139,44 @@ Consonant shift rules
 
 
 __Even syllabic verbs I, vowel shortening â:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+{{{
+}}}
 
 __Even syllabic verbs I, vowel shortening e:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+{{{
+}}}
 
 __Even syllabic verbs I, vowel shortening å:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+{{{
+}}}
 
 __Even syllabic verbs I, vowel shortening õ:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+{{{
+}}}
 
 __Even syllabic verbs I, vowel shortening u:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+{{{
+}}}
 
 __Even syllabic verbs I, vowel shortening i:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+{{{
+}}}
 
 __Even syllabic verbs I, vowel shortening o:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+{{{
+}}}
 
 __Even syllabic verbs I, vowel shortening a:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+{{{
+}}}
 
 __Even syllabic verbs I, vowel shortening ä:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+{{{
+}}}
 
 __Even syllabic verbs I, diphthong shortening consonant lengthening__ - used in +N+Sg+Ill __jeäll:jiâlˈlu, __
-
+{{{
+}}}
 
 
 
@@ -128,26 +190,39 @@ __Even syllabic verbs I, diphthong shortening consonant lengthening__ - used in 
 deriving +Ind+Prt+Sg1, +Ind+Prt+Sg2 +Ind+Prt+Pl3 in teevvad:tivvu
 
 __Even syllabic verbs I, vowel raising o:u__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
-
+{{{
+}}}
 
 __Even syllabic verbs I, vowel raising å:o__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
-
+{{{
+}}}
 
 __Even syllabic verbs I, vowel raising e:i__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
-
+{{{
+}}}
 
 
 __Even syllabic verbs I, vowel raising â:õ __ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
-
+{{{
+}}}
 
 
 __Even syllabic verbs I, diphthong raising beginning with u ä:å__ - deriving +Ind+Prt+Pl3 in kuâs'sad > kuõs'su, kuärŋŋad kuårŋŋu
-
+{{{
+}}}
 
 __Even syllabic verbs I, diphthong raising beginning with e:i ä:â__ - deriving +Ind+Prt+Pl3 in reäkkad > riâkku, veârrad > viõrru
+{{{
+}}}
+
+
+__Even syllabic verbs I, diphthong raising beginning with e:i ä:e__ - deriving 
+{{{
+}}}
 
 __Even syllabic verbs I, diphthong raising beginning with ä:a u__ - deriving läullad > laullum
-
+{{{
+}}}
 
 
 !LOWERING 
@@ -156,45 +231,61 @@ __Even syllabic verbs I, diphthong raising beginning with ä:a u__ - deriving l�
 
 
 __Even syllabic verbs I, vowel lowering o:å__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in poorrâd
+{{{
+}}}
 
 __Even syllabic verbs I, vowel lowering i:e__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
+{{{
+}}}
 
 __Even syllabic verbs I, vowel lowering a:ä__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
+{{{
+}}}
 
 __Even syllabic verbs I, vowel lowering a:ä__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
 
 
 
 __Even syllabic verbs I, vowel lowering u:o__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in uˊvdded
+{{{
 
-
+}}}
 
 
 __Even syllabic verbs I, vowel lowering õ:â __ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
+{{{
+}}}
 
 
 __Even syllabic verbs I, diphthong opening after u__ - deriving +Ind+Prs+Sg3, in kuåccâd kuäˊcce
-
+{{{
+}}}
 
 __Even syllabic verbs I, diphthong opening after i:e _e:ä___ - deriving +Ind+Prs+Sg3, in čiõkkâd
-
+{{{
+}}}        
 
 __Even syllabic verbs I, diphthong opening i:e _â:ä___ - deriving +Ind+Prs+Sg3, in čiõkkâd
-
+{{{
+}}}
 
 
 __Even syllabic verbs I, diphthong opening after i:e e:â__ - deriving +Ind+Prs+Sg3, in pi%{EÂ%}ˊǩǩ:peâkka
+{{{
+}}}
 
 __Even syllabic verbs I, diphthong opening after u e:â__ - deriving vueˊlǧǧed+V+Ind+Prs+Pl3: vuâˊlǧǧe
+{{{
+}}}
 
 __Even syllabic verbs I, diphthong opening after u e:õ__ - deriving vueˊlǧǧed+V+Ind+Prt+Sg1: vuõˊlǧǧem
+{{{
+}}}
 
 
-
-__Even syllabic verbs I, diphthong opening õ:ä after i:e__ - deriving +Ind+Prs+Sg3, in čiõkkâd
-
-
-__Even syllabic verbs I, diphthong opening i:e before õ:, å:, e:__ - used in conjunction with diphthong opening
+__Even syllabic verbs I, diphthong opening _õ:ä_ after i:e__ - deriving +Ind+Prs+Sg3, in čiõkkâd
+{{{
+}}}
 
 
 
@@ -203,10 +294,9 @@ __Even syllabic verbs I, diphthong opening i:e before õ:, å:, e:__ - used in c
 
 
 __Even syllabic verbs I, secondary vowel fronting with PAL u õ:e__ - deriving +Ind+Prs+Pl3 in VIQQAD: kuõskkâd >kueˊsǩǩe
+{{{
+}}} 
 
-
-
-__Even syllabic verbs I, secondary vowel fronting with PAL__ - deriving +Ind+Prs+Pl3 in VIQQAD: čiõkkâd >čeäˊǩ'ǩe, also TIETTED vueˊlǧǧed+V+Ind+Prs+Pl3: vuäˊlǧǧe
 
 
 
@@ -216,23 +306,32 @@ vowel lengthening and consonant shortening, %^VOWL and %^CShort
 
 
 __Even syllabic verbs I, relative vowel lengthening 0:â__ - deriving +V+Inf in TIETTED: uudd > uˊvdded
-
+{{{
+}}}
 
 __Even syllabic verbs I, relative vowel lengthening 0:e__ - deriving +V+Inf in TIETTED: uudd > uˊvdded
+{{{
+}}}
 
 __Even syllabic verbs I, relative vowel lengthening 0:å__ - deriving +V+Inf in TIETTED: uudd > uˊvdded
+{{{
 
+}}}
 
 __Even syllabic verbs I, relative vowel lengthening 0:õ__ - deriving +V+Inf in TIETTED: uudd > uˊvdded
+{{{
 
+}}}
 
 __Even syllabic verbs I, relative vowel lengthening 0:ä__ - deriving +V+Inf in TIETTED: uudd > uˊvdded
-
+{{{
+}}}
 
 
 
 __Even syllabic verbs I, relative vowel lengthening 0:a__ - deriving +V+Inf in MAINSTED: maainstam, mainstam
-
+{{{
+}}}
 
 
 
@@ -240,26 +339,22 @@ __Even syllabic verbs I, relative vowel lengthening 0:a__ - deriving +V+Inf in M
 
 
 __Even syllabic nouns I, relative vowel lengthening i__ - ǩiđđ:ǩiiđ
-
+{{{
+}}}
 
 
 
 __Even syllabic nouns, relative vowel extra lengthening u not followed by v__ - declension of nouns kunn > kuun
-
-
+{{{
+}}}
 
 
 simultaneous lengthening and raising, hmm: xfst ordering might be easier
 
-__Even syllabic verbs I, relative vowel lengthening and raising__ - conjugation of ceˊpcced > ciiˊpcež
-
-
-
-
-
 
 __Even syllabic verbs I, relative vowel lengthening and lowering u:o _0:o___ -  simultaneous lengthening and lowering: juˊrdded > joordam juˊrdded+V+Ind+Prs+Sg1
-
+{{{
+}}}
 
 !VOWEL DUMMY LOSS
 
@@ -268,13 +363,16 @@ __Even syllabic verbs I, relative vowel lengthening and lowering u:o _0:o___ -  
 
 
 __Even syllabic nouns, for j>i__ - sijdd > siid This will need a special extra-lengthening rule
-
+{{{
+}}}
 
 __Even syllabic verbs,  for v>u__ - uvdd > ouˊdde
-
+{{{
+}}}
 
 __Even syllabic verbs,  for v>u__ - luhtt  s s: ...
-
+{{{
+}}}
 
 __trisyllabic verbs and doer derivations, i>j__ -
 
@@ -282,7 +380,8 @@ __trisyllabic verbs and doer derivations, i>j__ -
 
 
 __Even-syllabic nouns, for â:e__ - miârr:mieˊrre; ǩiâpp:ǩieˊpˈpe
-
+{{{
+}}}  
 
 !VOWEL and ZERO ALTERNATION
 
@@ -290,29 +389,41 @@ __Even-syllabic nouns, for â:e__ - miârr:mieˊrre; ǩiâpp:ǩieˊpˈpe
 __Realization for %{E1%} in e __ - kååˊmmerd
 
 __Realization for %{A1%} in a  __ - kåˊmrded, vuejat, maainâst
+{{{
+}}}
 
 __Realization for %{Â1%} in â  __ - kåˊmrded, vuejat, maainâst
 
 
 __Realization for %{E1%} in a __ - 
+{{{
+}}}
+
+__Realization for %{Â1%} in a __ - 
+{{{
+}}}
 
 !THE NON-ORTHOGRAPHIC SYLLABLE 
 
 
-__Loss of _’_ when preceded by vowel__ - This is a temporary solution to  "’" in võˊll’jed
+__Loss of _ʼ_ when preceded by vowel__ - This is a temporary solution to  "ʼ" in võˊllʼjed
 
-__%{A1%}:’ when subseqent syllable has vowel v__ - This is a temporary solution to  "’" in võˊll’jed 2013-08-29
+__%{A1%}:ʼ when subseqent syllable has vowel v__ - This is a temporary solution to  "ʼ" in võˊllʼjed 2013-08-29
+{{{
+}}}
 
 !PALATALIZATION
 
 
-__Even-syllabic verbs I, Palatalization mark between V and C__ - used +Ind+Prs+Pl3, +Ind+Prt+Pl3
+__%{A1%}:ʼ when subseqent syllable has vowel v__ - used +Ind+Prs+Pl3, +Ind+Prt+Pl3
+
 
 __0:%ˊ as transfer from left of v:u__ - used +Ind+Prs+Pl3, uˊvdded+V+Ind+Prs+Pl3: ouˊdde
-
+{{{
+}}}
 
 The left context allows for:
-Vowel shortening, and j/v > V 
+Vowel shortening, and j/v > Vow 
 
 
 
@@ -321,17 +432,22 @@ __Even-syllabic verbs I, Palatalization of gg and kk__ -
 
 
 __Even-syllabic nouns I, Depalatalization of ǧ and weakening of grade to ǥ__ - vueˊlǧǧed+V+Ind+Prs+Sg1: vuâlǥam
+
 __Even-syllabic nouns I,  ǧ and weakening of grade to j__ - vueˊlǧǧed+V+Ind+Prs+4: vueˊljet  âˊlǧǧ+N+Sg+Gen: ââˊlj
+{{{
+}}}
 
 __Even-syllabic nouns I, Depalatalization of ǧǧ__ - vueˊlǧǧed+V+Ind+Prs+Sg3: vuâlgg
-
+{{{
+}}}
 
 __Even-syllabic nouns I, Depalatalization of ǧǧ and ǩǩ__ -
-
-
+{{{
+}}}
 
 __Even-syllabic nouns, removing palatalization in -est +Loc nouns__ - removing palatalization in +Sg+Ill,  pieˊss:peässa
-
+{{{
+}}}
 
 
 !!Consonant gradation rules
@@ -347,61 +463,99 @@ __Even syllabic verbs I, cg__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, teevvad > 
 
 __Even syllabic verbs I, cg for ǧ__ - used with  vueˊlǧǧed+V+Ind+Prs+Sg1: vuâlǥam
 
-__Even syllabic verbs I, cg for l__ - used with  vuˊvll+N+Sg+Gen: vuuˊl
-
+__Even syllabic verbs I, cg for b__ - used with  neiˊbb+N+Sg+Gen: neeiˊb
+{{{
+}}}
 
 __Even syllabic verbs I, cg m:0__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, 
 
+__Even syllabic nouns I, with extra lengthening of vowel ij>ii/uv>uu and dd>d__ - used with  +N+Sg+Nom > +N+Sg+Gen, sijdd > siid
+{{{
+- idd:id, +Imp+Sg2, +Ind+Prs+ConNeg double consonants following vowel and "i" at coda that become single consonants in gradation
+}}}
+
 __Even syllabic verbs I, cg n:0__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, jiõnn:jiõn
+
+__Even syllabic verbs I, cg for ʒ__ - used with  pääˊʒʒelm+N+Sg+Ill: päˊʒlma
+{{{
+}}}
+
+__Even syllabic verbs I, cg for đ __ - used with  ǩiđđ:ǩiiđ
+
+
+__Even syllabic verbs I, cg for l__ - used with  vuˊvll+N+Sg+Gen: vuuˊl
+{{{
+}}}
+
+__Even syllabic verbs I, cg for g__ - used with  cõõggâlm+N+Sg+Ill: cõglma
+{{{
+}}}
 
 
 
 __Even syllabic nouns I, with extra lengthening of vowel V>VV and KK>ǤǤ__ 
 used with  +N+Sg+Nom > +N+Sg+Gen for cases like
-{{kuss > kuuzz}}.
+{{lookki > looǥǥi}}.
 {{{
+  k:ǥ <=> OnSetC 2LongVow (%ˊ: | 0:%ˊ ) k: _  ( %^VOWL: | %^VOWXL: )  %^CShort: ; 
+          OnSetC 2LongVow (%ˊ: | 0:%ˊ ) _ k:  ( %^VOWL: | %^VOWXL: )  %^CShort: ; 
 }}}
-
-
-__Even syllabic nouns I, with extra lengthening of vowel ij>ii/uv>uu and dd>d__ - used with  +N+Sg+Nom > +N+Sg+Gen, sijdd > siid
-- idd:id, +Imp+Sg2, +Ind+Prs+ConNeg double consonants following vowel and "i" at coda that become single consonants in gradation
-
-
-
 
 
 
 
 __Even syllabic verbs I, Voicing š:ž __ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
 
-
 __Even syllabic verbs I, Voicing c:ʒ__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
+{{{
+}}}
 
 __Even syllabic verbs I, Voicing č:j__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
-
+  č:j <=> OnSetC  2LongVow  (%ˊ: | 0:%ˊ ) č: _ ( %^VOWL: | %^VOWXL: ) %^CShort: ; 
+          OnSetC 2LongVow  (%ˊ: | 0:%ˊ ) _ č: ( %^VOWL: | %^VOWXL: ) %^CShort:  ; 
 
 __Even syllabic verbs I, Voicing after long vowel or diphthong s:z s:z __ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
+  s:z <=> OnSetC 2LongVow  (%ˊ: | 0:%ˊ ) s: _ ( %^VOWL: | %^VOWXL: ) %^CShort: %^VC: ; 
+          OnSetC 2LongVow  (%ˊ: | 0:%ˊ ) _ s: ( %^VOWL: | %^VOWXL: ) %^CShort: %^VC: ; 
 
 
-__Even syllabic verbs I, third consonant loss __ - lgg:lǥ, V Ca Cx Cx:0, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants following consonant at coda that become single consonants in gradation
-
+__Even syllabic verbs I, third consonant loss __ - lgg:lǥ, Vow Ca Cx Cx:0, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants following consonant at coda that become single consonants in gradation
+{{{
+}}}
 
 __Even syllabic verbs I, t>đ __ - tt:đ
 
 __Even syllabic nouns I, p>v __ - pp:v
 
 __Even syllabic verbs I, second consonant loss t:0__ -
+{{{
+}}}
 
 __Even syllabic verbs I, second consonant loss p:0__ -
+{{{
+}}}
+
+__Even syllabic verbs I, second consonant loss k:0__ -
+{{{
+}}}
+
+__Even syllabic verbs I, second consonant loss ǩ:0__ -
+{{{
+}}}
 
 
 __Even syllabic verbs I, lgg>lǥ __ - vueˊlǧǧed+V+Ind+Prs+Sg2 => vuâlǥak
+{{{
+}}}
 
 
-
+__Odd syllabic nouns I, lǥ>lg__ - ǩeâlǥal+N+Sg+Gen: ǩeâlggal
+{{{
+}}}
 
 __Even syllabic verbs I, 'lǧǧ>'lj __ - vueˊlǧǧed+V+Ind+Prt+Pl1 => vuõˊljim
-
+{{{
+}}}
 
 
 
@@ -421,12 +575,20 @@ __Even syllabic verbs I, 'lǧǧ>'lj __ - vueˊlǧǧed+V+Ind+Prt+Pl1 => vuõˊlji
 
 
 __Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m__ - kåˊmrded+V+Imp+Sg2: kååˊmmerd 
+{{{
+}}}
 
 __Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:n__ - mään > mannu
+{{{
+}}}
 
+__Consonant lengthening 0:đ__ - čââˊđ+N+Sg+Gen: čâđđam
+{{{
+}}}
 
-__Consonant lengthening 0:đ__ - čââˊđ+N+Sg+Gen => Missing results: čâđđam
-
+__Consonant lengthening 0:g__ - ǩeâlǥal+N+Sg+Gen: ǩeâlggal
+{{{
+}}}
 
 
 !!Vowel change rules
