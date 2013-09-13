@@ -167,8 +167,8 @@ V2VVwithCC =  [ b b | p p | m m | v v |  d d | t t | đ đ | n n | l l | r r | s
 ! | ǧ:j ǧ:0 | ǧ:ǥ ǧ:0 
 
 !! extra long vowel( d | l | r | u | i )
-V2VVwithCC2C = [ l [ ǧ:j ǧ:0 | ǧ:ǥ ǧ:0 | m m:0 | t t:0 ] | p c c: | r d d:0 | s [ k: k:0 | ǩ: ǩ:0 | t t:0 ] | u ( %ˊ: | 0:%ˊ ) [ l l:0 | n n:0 ] ] ;
-
+V2VVwithCC2C = [ l [ ǧ:j ǧ:0 | ǧ:ǥ ǧ:0 | m m:0 | t t:0 ] | p c c: | r d d:0 | s [ k: k:0 | ǩ: ǩ:0 | t t:0 ] | u ( %ˊ: | 0:%ˊ ) [ l l:0 | r r:0 | n n:0 ] ] ;
+!
 
 !! Onset consonant or word boundary
 !! {{{
@@ -305,7 +305,7 @@ Rules !!= !!! @CODE@
 !! {{{
  å:o <=>  OnSetC å: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ]  ( %^VOWSH: %^CLong: ) %^VOWRaise: %>: [ e | u ]  ; 
           OnSetC å:0 _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ]  ( %^VOWSH: %^CLong: ) %^VOWRaise: ( %^PAL: ) %>: [ e | u ] ;
-          OnSetC 0:o _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ]  ( %^VOWL: %^CShort: ) %^VOWRaise: %^PAL: %>: [ e | u ] ;
+          OnSetC 0:o _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] NeutrGrade %^VOWRaise: ;
           OnSetC _ ( u: ) (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ]  ( %^VOWSH: %^CLong: | %^VOWL: ) %^VOWRaise: ( %^PAL: ) %>: [ e | u ]  ;
 !! }}}
 
@@ -325,7 +325,7 @@ Rules !!= !!! @CODE@
 !! {{{
  â:õ <=>   â: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ]  ( %^VOWSH: %^CLong: ) %^VOWRaise:   ; 
            â:0 _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ]  ( %^VOWSH: %^CLong: ) %^VOWRaise: ( %^PAL: ) ;
-           0:õ _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ]  [ %^VOWL: | %^VOWXL: ] (%^CShort: ) %^VOWRaise: ;
+           0:õ _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ]  NeutrGrade %^VOWRaise: ;
   OnSetC _ ( u: ) (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ]  ( %^VOWSH: %^CLong: | %^VOWL: ) %^VOWRaise: ( %^PAL: ) ;
            u  _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ | Cns:+ :%ˈ Cns:+ ] ( %^VOWSH: %^CLong: ) %^VOWRaise: ;
            e:  _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ | Cns:+ 0:%ˈ Cns:+ ]  ( %^VOWSH: %^CLong: ) %^VOWRaise:  ;
@@ -575,7 +575,7 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 !! {{{
  0:å <=>
 !! - deriving påll+N+Sg+Gen: pååll
-   Cns: _ å [ V2VVwithCC  %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) ] ;
+   Cns: _ å ( %ˊ: | 0:%ˊ ) [ V2VVwithCC  %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) ] ;
 !     Cns: _ å [( u: | i: ) (%ˊ: | 0:%ˊ ) [ u l l: | Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ]  %^VOWL:  %^CShort:  [ %>: | #: | %^PAL: ] ;
 !Distinguishing mainstam and maainstam
 !Vowel lengthening in INDPRSSG3 and IMPSG2 0:å kååˊmmerd, maainâst
@@ -591,10 +591,9 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 !! {{{
  0:õ <=>
 !!
-     OnSetC _ õ [ V2VVwithCC  %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) ] ;
+     OnSetC _ :õ ( %ˊ: | 0:%ˊ ) [ V2VVwithCC  %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) ] ;
 !      OnSetC _ õ [ (%ˊ: | 0:%ˊ ) [ u l l: | Cns: :Cns* | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ]  %^VOWXL:  ;
-     OnSetC _ :õ [( u: | i: ) (%ˊ: | 0:%ˊ ) [ u l l: | Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ]  [ %^VOWL: | %^VOWXL: ] ( %^CShort: ) ;
-
+!     OnSetC _ :õ [( u: | i: ) (%ˊ: | 0:%ˊ ) [ u l l: | Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ]  [ %^VOWL: | %^VOWXL: ] ( %^CShort: ) ;
 !Distinguishing mainstam and maainstam
       Cns: _ õ ( u: | i: ) ( %ˊ: | 0:%ˊ )  Cns: %{Â1%}: Cns:+  %^VOWL: ;
 !! }}}
@@ -631,7 +630,7 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
  0:o <=>
 !!
 !! - deriving toll+N+Sg+Gen: tool
-   Cns: _ o [ V2VVwithCC  %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) ] ;
+   Cns: _ o ( %ˊ: | 0:%ˊ ) [ V2VVwithCC  %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) ] ;
 !2013-09-13!      OnSetC _ o ( u: | i: ) (%ˊ: | 0:%ˊ ) [[ Cns:+ | Cns:+ ( ( %ˈ: | :%ˈ ) | :%ˈ ) Cns:+ ] | Cns: %{Â1%}: Cns:+ ] [ %^VOWL: | %^VOWXL: ]  ;
           OnSetC _ u:o ( u: | i: ) ( %ˊ: | 0:%ˊ )  CNoV: Cns:* [ %^VOWL: %^CShort: | %^VOWXL: ( %^CShort: ) ] %^VOWLower:  ;
 !         OnSetC _ u:o (%ˊ: | 0:%ˊ ) v:u (%ˊ: | 0:%ˊ ) Cns:+ %^VOWXL: %^CShort: %^VOWLower:  ;
@@ -684,7 +683,7 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 "Even syllabic verbs,  for v>u"
 !! __@RULENAME@__ - uvdd > ouˊdde
 !! {{{
- v:u <=> OnSetC ( 0:o ) u: ( %ˊ: ) _ ( %ˊ: | 0:%ˊ ) [ d d: | l l: ] [ %^VOWL: %^CShort: | %^VOWXL: %^CShort: ]  ;
+ v:u <=> OnSetC ( 0:o ) u: ( %ˊ: ) _ ( %ˊ: | 0:%ˊ ) [ d d: | l l: | r r: ] [ %^VOWL: %^CShort: | %^VOWXL: %^CShort: ]  ;
 !! }}}
 
  "Even syllabic nouns, for h>u"
@@ -762,7 +761,8 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 "0:%ˊ as transfer from left of v:u"
 !! __@RULENAME@__ - used +Ind+Prs+Pl3, uˊvdded+V+Ind+Prs+Pl3: ouˊdde
 !! {{{
-0:%ˊ <=> ( %ˊ: ) [ v:u | h:u ] _ [ d:+ | l:+ ] PrecedePALNo  %^PAL:  ;
+0:%ˊ <=> v:u _ [ d d: | l l: | r r: ] PrecedePALNo  %^PAL:  ;
+         h:u _ [ c c: | č č: |s s: | š š: | t t: ] PrecedePALNo  %^PAL:  ;
          Vow: _ [ Cns:+ | :Cns+ ] PrecedePALNo  %^PAL:  ;
 !! }}}
 
@@ -818,7 +818,7 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 !jurdded
        Vow: _ CNoV: Cns:+ PrecedePALNo %^PALNo:  ; 
        _ v:u ;
-!         _ v:u ( %ˊ: | 0:%ˊ ) [ d d: | l l: ] [[ %^VOWL: | %^VOWXL: ] ( %^CShort: ) | [ %^VOWSH: ( %^CLong: ) ] ] NeutrHighBack ( %^PAL: | %^PALNo: )  ;
+!         _ v:u ( %ˊ: | 0:%ˊ ) [ d d: | l l: | r r: ] [[ %^VOWL: | %^VOWXL: ] ( %^CShort: ) | [ %^VOWSH: ( %^CLong: ) ] ] NeutrHighBack ( %^PAL: | %^PALNo: )  ;
 !! }}}
 
 
