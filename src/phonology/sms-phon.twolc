@@ -159,7 +159,7 @@ DiphthwithCC = [ k:ǥ k:ǥ | s:z s:z | š:ž š:ž | c:ʒ c:ʒ | č:j č:j | m m
 
 !! preceded by two vowels
 !! {{{
-LongC2SH = [ k:ǥ k:ǥ | s:z s:z | š:ž š:ž | c:ʒ c:ʒ | č:j č:j | m m:0 | v v:0 | đ đ:0 | n n:0 | l l:0 | r r:0 ] ;
+LongC2SH = [ k:ǥ k:ǥ | ǩ:j ǩ:j | s:z s:z | š:ž š:ž | c:ʒ c:ʒ | č:j č:j | m m:0 | v v:0 | đ đ:0 | n n:0 | l l:0 | r r:0 ] ;
 !! }}}
 
 !! preceded by one vowel Vx=>VxVx påll=>pååll
@@ -187,7 +187,7 @@ PrecedeVOWLowerRaise = [( [ %^VOWSH: | %^VOWXSH: ] %^CLong: | [ %^VOWL: | %^VOWX
 
 !! possible triggers before PALNo and PAL
 !! {{{
-PrecedePALNo = [( [ %^VOWSH: | %^VOWXSH: ] %^CLong: | [ %^VOWL: | %^VOWXL: ] ( %^FRICG: )  %^CShort: ) ( %^VOWLower: | %^VOWRaise: ) ( %^VOWFront: | %^VOWBack: ) (X3: ) ] ;
+PrecedePALNo = [( [ %^VOWSH: | %^VOWXSH: ] ( %^CLong: ) | [ %^VOWL: | %^VOWXL: ] ( %^FRICG: )  %^CShort: ) ( %^VOWLower: | %^VOWRaise: ) ( %^VOWFront: | %^VOWBack: ) (X3: ) ] ;
 !! }}}
 
 !! neutral to vowel height and backness
@@ -575,7 +575,7 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 !! {{{
  0:å <=>
 !! - deriving påll+N+Sg+Gen: pååll
-   Cns: _ å V2VVwithCC  %^VOWL: %^CShort: ;
+   Cns: _ å [ V2VVwithCC  %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) ] ;
 !     Cns: _ å [( u: | i: ) (%ˊ: | 0:%ˊ ) [ u l l: | Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ]  %^VOWL:  %^CShort:  [ %>: | #: | %^PAL: ] ;
 !Distinguishing mainstam and maainstam
 !Vowel lengthening in INDPRSSG3 and IMPSG2 0:å kååˊmmerd, maainâst
@@ -625,10 +625,13 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 "Even syllabic verbs I, relative vowel lengthening _0:o_"
 !! __@RULENAME@__ -  simultaneous lengthening and lowering: juˊrdded > joordam juˊrdded+V+Ind+Prs+Sg1
 !! {{{
- 0:o <=> OnSetC _ :o ( u: | i: ) ( %ˊ: | 0:%ˊ )  CNoV: Cns:* [ %^VOWL: %^CShort: | %^VOWXL: ( %^CShort: ) ] %^VOWLower:  ;
+ 0:o <=>
+!!
+!! - deriving toll+N+Sg+Gen: tool
+   Cns: _ o [ V2VVwithCC  %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) ] ;
+!2013-09-13!      OnSetC _ o ( u: | i: ) (%ˊ: | 0:%ˊ ) [[ Cns:+ | Cns:+ ( ( %ˈ: | :%ˈ ) | :%ˈ ) Cns:+ ] | Cns: %{Â1%}: Cns:+ ] [ %^VOWL: | %^VOWXL: ]  ;
+          OnSetC _ u:o ( u: | i: ) ( %ˊ: | 0:%ˊ )  CNoV: Cns:* [ %^VOWL: %^CShort: | %^VOWXL: ( %^CShort: ) ] %^VOWLower:  ;
 !         OnSetC _ u:o (%ˊ: | 0:%ˊ ) v:u (%ˊ: | 0:%ˊ ) Cns:+ %^VOWXL: %^CShort: %^VOWLower:  ;
-! Even syllabic verbs I, relative vowel lengthening of o
-      OnSetC _ o ( u: | i: ) (%ˊ: | 0:%ˊ ) [[ Cns:+ | Cns:+ ( ( %ˈ: | :%ˈ ) | :%ˈ ) Cns:+ ] | Cns: %{Â1%}: Cns:+ ] [ %^VOWL: | %^VOWXL: ]  ;
       OnSetC _ å:o (%ˊ: | 0:%ˊ ) Cns:+ %^VOWL: %^CShort: %^VOWRaise:  ;
 !! }}}
 
@@ -757,7 +760,7 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 !! __@RULENAME@__ - used +Ind+Prs+Pl3, uˊvdded+V+Ind+Prs+Pl3: ouˊdde
 !! {{{
 0:%ˊ <=> ( %ˊ: ) [ v:u | h:u ] _ [ d:+ | l:+ ] PrecedePALNo  %^PAL:  ;
-  Vow: _ [ Cns:+ | :Cns+ ] PrecedePALNo  %^PAL:  ;
+         Vow: _ [ Cns:+ | :Cns+ ] PrecedePALNo  %^PAL:  ;
 !! }}}
 
 !! The left context allows for:
@@ -884,7 +887,7 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 !! {{{
  l:0 <=>
 !!  - deriving påll+N+Sg+Gen: pååll
-    [  DbVow ]  [( %ˊ: | 0:%ˊ ) | ( %ˊ: ) v:u  ( :%ˊ ) | u  ( :%ˊ )] l _ %^VOWXL: ( %^CShort: ) ;
+    [  DbVow | 2DbVow ]  [( %ˊ: | 0:%ˊ ) | ( %ˊ: ) v:u  ( :%ˊ ) | u  ( :%ˊ )] l _ %^VOWXL: ( %^CShort: ) ;
 ! SurfLongVow  [( %ˊ: | 0:%ˊ ) | ( %ˊ: ) v:u  ( :%ˊ ) | u  ( :%ˊ )] l _ ( %^VOWL: | %^VOWXL: ) %^CShort: ;
 !! }}}
 
