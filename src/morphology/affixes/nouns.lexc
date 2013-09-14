@@ -498,6 +498,29 @@ LEXICON N_LOOKKI !!= * __@CODE@__ is for nouns with ''-est'' +Loc
 +N:%^VOWL%^CShort PL-COM ;
 +N:%^VOWL%^CShort PL-ABE ;
 
+LEXICON N_JUURD !!= * __@CODE@__ is for nouns with stem ''i'' + ''-est'' +Sg+Loc; all stem other than the +Sg+Nom are X3; the ''i'' does not occur in +Par 
+!! ** Yaml: __juurd__
+!! * There are several stem types 
+!! * juurd:juurd
+
++N: SG-NOM ;
++N:%^VOWSH%^CLong%>i SG-GEN ;
++N:%^VOWSH%^CLong%>i SG-ACC ;
++N:%^VOWSH%^CLong%>i%>a SG-ILL ;
++N:%^VOWSH%^CLong%>i%>e SG-LOC ;
++N:%^VOWSH%^CLong%>i SG-COM ;
++N:%^VOWSH%^CLong%>i%>e ESS ;
++N:%^VOWSH%^CLong%>e PAR ;
++N:%^VOWSH%^CLong%>i SG-ABE ;
+
++N:%^VOWSH%^CLong%>i PL-NOM ;
++N:%^VOWSH%^CLong%>i PL-GEN ;
++N:%^VOWSH%^CLong%>i PL-ACC ;
++N:%^VOWSH%^CLong%>i PL-ILL ;
++N:%^VOWSH%^CLong%>i PL-LOC ;
++N:%^VOWSH%^CLong%>i PL-COM ;
++N:%^VOWSH%^CLong%>i PL-ABE ;
+
 !! !!u-stems
 LEXICON N_MÄÄN !!= * __@CODE@__ is for nouns with ''-est'' +Loc
 !! ** Yaml: __maan__
@@ -744,7 +767,8 @@ LEXICON c	  !!= * __@CODE@__ = Koulukielioppi stemtype contract
 +N+Sg+Nom: # ;
 
 LEXICON ci	  !!= * __@CODE@__ = Koulukielioppi stemtype contract i stem
-+N+Sg+Nom: # ;
+ N_JUURD ;
+
 
 LEXICON e	  !!= * __@CODE@__ = Koulukielioppi stemtype e stem
 N-piess ;     !!= ** Redirecting to __@CODE@__
