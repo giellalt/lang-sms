@@ -166,16 +166,22 @@ LongC2SH = [ k:ǥ k:ǥ | ǩ:j ǩ:j | s:z s:z | š:ž š:ž | c:ʒ c:ʒ | č:j č
 V2VVwithCC =  [ b b | p p | m m | v v |  d d | t t | đ đ | n n | l l | r r | s s | š š | c c | č č |  k k | ǩ ǩ | g g | ǧ ǧ | ǧ:g ǧ:g | ǧ:ǥ ǧ:ǥ  ] ;
 ! | ǧ:j ǧ:0 | ǧ:ǥ ǧ:0 
 
-V2VVwithCC2CinI = [  i ( %ˊ: | 0:%ˊ ) [ b b:0 | ʒ ʒ:0 | d d:0 | g g:0 | k k:0 | ǩ ǩ:0 | l l:0 | m m:0 | n n:0 | p p:0 | r r:0 | t t:0 | v v:0 ] ] ;
+CC2CafterV2VVinI = [  i ( %ˊ: | 0:%ˊ ) [ b b:0 | ʒ ʒ:0 | d d:0 | g g:0 | k k:0 | ǩ ǩ:0 | l l:0 | m m:0 | n n:0 | p p:0 | r r:0 | t t:0 | v v:0 ] ] ;
 
-V2VVwithCC2CinU = [  u ( %ˊ: | 0:%ˊ ) [ ʒ ʒ:0 | d d:0 | g g:0 | k k:0 | ǩ ǩ:0 | l l:0 | m m:0 | n n:0 | p p:0 | r r:0 | t t:0 ] ] ;
+CC2CafterV2VVinU = [  u ( %ˊ: | 0:%ˊ ) [ ʒ ʒ:0 | d d:0 | g g:0 | k k:0 | ǩ ǩ:0 | l l:0 | m m:0 | n n:0 | p p:0 | r r:0 | t t:0 ] ] ;
 
 !! extra long vowel( u | i )
-V2VVwithCC2CandUI = [ V2VVwithCC2CinU | V2VVwithCC2CinI ] ;
+CC2CafterV2VVandUI = [ CC2CafterV2VVinU | CC2CafterV2VVinI ] ;
 
 !! extra long vowel( d | l | r )
-V2VVwithCC2C = [ l [ b b:0 | ǧ:j ǧ:0 | ǧ:ǥ ǧ:0 | m m:0 | t t:0 ] | m p p:0 | p c c:0 | r d d:0 | s [ k: k:0 | ǩ: ǩ:0 | t t:0 ] ] ;
+CC2CafterV2VV = [ l [ b b:0 | ǧ:j ǧ:0 | ǧ:ǥ ǧ:0 | m m:0 | t t:0 ] | m p p:0 | p c c:0 | r d d:0 | s [ k: k:0 | ǩ: ǩ:0 | t t:0 ] ] ;
 !
+
+!! extra long consonant ( d | l | r )
+!! {{{
+C2CCafterVV2V = [ l [ b 0:b | j:ǧ 0:ǧ | ǥ:ǧ 0:ǧ | m 0:m | t 0:t ] | m p 0:p | p c 0:c | r d 0:d | s [ :k 0:k | :ǩ 0:ǩ | t 0:t ] ] ;
+!! }}}
+
 
 !! Onset consonant or word boundary
 !! {{{
@@ -189,15 +195,15 @@ RBound = [ # | %> ] ;
 
 !! relative lengthening of vowel right context following vowel:vowel
 !! _0:õ <=> OnSetC _ :õ RelVowLengthening_ 
-RelVowLengthening = [ ( %ˊ: | 0:%ˊ ) [ V2VVwithCC  %^VOWL: %^CShort: | V2VVwithCC2C %^VOWL: %^CShort: | V2VVwithCC2CandUI %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) ] ] ;
+RelVowLengthening = [ ( %ˊ: | 0:%ˊ ) [ V2VVwithCC  %^VOWL: %^CShort: | CC2CafterV2VV %^VOWL: %^CShort: | CC2CafterV2VVandUI %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) ] ] ;
 
 !! relative lengthening of vowel right context following vowel:vowel
 !! _0:i <=> OnSetC _ :i RelVowLengtheningNOTi_ 
-RelVowLengtheningNOTi = [ ( %ˊ: | 0:%ˊ ) [ V2VVwithCC  %^VOWL: %^CShort: | V2VVwithCC2CinU %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) ] ] ;
+RelVowLengtheningNOTi = [ ( %ˊ: | 0:%ˊ ) [ V2VVwithCC  %^VOWL: %^CShort: | CC2CafterV2VVinU %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) ] ] ;
 
 !! relative lengthening of vowel right context following vowel:vowel
 !! _0:u <=> OnSetC _ :u RelVowLengtheningNOTu_ 
-RelVowLengtheningNOTu = [ ( %ˊ: | 0:%ˊ ) [ V2VVwithCC  %^VOWL: %^CShort: | V2VVwithCC2CinI %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) ] ] ;
+RelVowLengtheningNOTu = [ ( %ˊ: | 0:%ˊ ) [ V2VVwithCC  %^VOWL: %^CShort: | CC2CafterV2VVinI %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) ] ] ;
 
 !! possible triggers before VOWLower and VOWRaise
 !! {{{
@@ -269,7 +275,7 @@ Rules !!= !!! @CODE@
 "Even syllabic verbs I, vowel shortening u:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
 !! {{{
- u:0 <=> OnSetC _ u: (%ˊ: | 0:%ˊ ) [ LongC | Cns: :Cns* ] [ %^VOWSH: | %^VOWXSH: ] ;
+ u:0 <=> OnSetC _ u: (%ˊ: | 0:%ˊ ) [ C2CCafterVV2V | Cns: :Cns* ] [ %^VOWSH: | %^VOWXSH: ] ;
          OnSetC _ u: (%ˊ: | 0:%ˊ ) Cns:+ Vow: Cns [ %^VOWSH: | %^RmVow: ] ;
 !! }}}
 
@@ -1068,10 +1074,40 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
  0:m <=> SurfLongVow ( %ˊ: | 0:%ˊ )  m _ [ %{E1%}: ] Cns:+ [ %^IMPSG2: | %^INDPRSSG3: ] ;
 !! }}}
 
+"Consonant lengthening 0:b"
+!! __@RULENAME@__ - 
+!! {{{
+ 0:b <=>  2ShortVow  ( %ˊ: | 0:%ˊ ) [ l ] b _ Vow: Cns ( %^VOWSH: | %^VOWXSH: ) %^CLong: ( %^PALNo: ) ;
+!! }}}
+
+"Consonant lengthening 0:p"
+!! __@RULENAME@__ - 
+!! {{{
+ 0:p <=>  2ShortVow  ( %ˊ: | 0:%ˊ ) [ m | l ] p _ Vow: Cns ( %^VOWSH: | %^VOWXSH: ) %^CLong: ( %^PALNo: ) ;
+!! }}}
+
 "Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:n"
 !! __@RULENAME@__ - mään > mannu
 !! {{{
  0:n <=> OnSetC  2ShortVow ( %ˊ: | 0:%ˊ ) n _ ( %^VOWSH: | %^VOWXSH: ) %^CLong: ;
+!! }}}
+
+"Consonant lengthening 0:d"
+!! __@RULENAME@__ - juurd+N+Sg+Gen: jurddi
+!! {{{
+ 0:d <=> 2ShortVow ( %ˊ: ) ( r ) d _  ( %^VOWSH: | %^VOWXSH: ) %^CLong: ;
+!! }}}
+
+"Consonant lengthening 0:t"
+!! __@RULENAME@__ - 
+!! {{{
+ 0:t <=> 2ShortVow ( %ˊ: ) ( s ) :t _  ( %^VOWSH: | %^VOWXSH: ) %^CLong: ;
+!! }}}
+
+"Consonant lengthening 0:c"
+!! __@RULENAME@__ - 
+!! {{{
+ 0:c <=>  2ShortVow  ( %ˊ: | :%ˊ ) p c  _  ( %^VOWSH: | %^VOWXSH: ) %^CLong: ;
 !! }}}
 
 "Consonant lengthening 0:đ"
@@ -1083,8 +1119,27 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 "Consonant lengthening 0:g"
 !! __@RULENAME@__ - ǩeâlǥal+N+Sg+Gen: ǩeâlggal
 !! {{{
- 0:g <=>  2ShortVow  ( %ˊ: )  l ǥ: _ Vow: Cns ( %^VOWSH: | %^VOWXSH: ) %^CLong: ;
+ 0:g <=>  2ShortVow   l ǥ: _ Vow: Cns ( %^VOWSH: | %^VOWXSH: ) %^CLong: ;
 !! }}}
+
+"Consonant lengthening 0:ǧ"
+!! __@RULENAME@__ - 
+!! {{{
+ 0:ǧ <=>  2ShortVow  :%ˊ  l ǥ: _ Vow: Cns ( %^VOWSH: | %^VOWXSH: ) %^CLong: ( %^PAL: ) ;
+!! }}}
+
+"Consonant lengthening 0:ǩ"
+!! __@RULENAME@__ - 
+!! {{{
+ 0:ǩ <=>  2ShortVow  :%ˊ  l ǩ _ Vow: Cns ( %^VOWSH: | %^VOWXSH: ) %^CLong: ( %^PAL: ) ;
+!! }}}
+
+"Consonant lengthening 0:k"
+!! __@RULENAME@__ - 
+!! {{{
+ 0:k <=>  2ShortVow  ( %ˊ: ) [ l | s | š ] :k _ Vow: Cns ( %^VOWSH: | %^VOWXSH: ) %^CLong: ( %^PALNo: ) ;
+!! }}}
+
 
 
 !! !Pedagogical X3 length mark after diphthongs in vertical line _%ˈ_ 
