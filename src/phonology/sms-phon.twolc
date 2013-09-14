@@ -166,7 +166,7 @@ LongC2SH = [ k:ǥ k:ǥ | ǩ:j ǩ:j | s:z s:z | š:ž š:ž | c:ʒ c:ʒ | č:j č
 V2VVwithCC =  [ b b | p p | m m | v v |  d d | t t | đ đ | n n | l l | r r | s s | š š | c c | č č |  k k | ǩ ǩ | g g | ǧ ǧ | ǧ:g ǧ:g | ǧ:ǥ ǧ:ǥ  ] ;
 ! | ǧ:j ǧ:0 | ǧ:ǥ ǧ:0 
 
-V2VVwithCC2CinI = [  i ( %ˊ: | 0:%ˊ ) [ b b:0 | ʒ ʒ:0 | d d:0 | g g:0 | k k:0 | ǩ ǩ:0 | l l:0 | m m:0 | n n:0 | p p:0 | r r:0 | t t:0 ] ] ;
+V2VVwithCC2CinI = [  i ( %ˊ: | 0:%ˊ ) [ b b:0 | ʒ ʒ:0 | d d:0 | g g:0 | k k:0 | ǩ ǩ:0 | l l:0 | m m:0 | n n:0 | p p:0 | r r:0 | t t:0 | v v:0 ] ] ;
 
 V2VVwithCC2CinU = [  u ( %ˊ: | 0:%ˊ ) [ ʒ ʒ:0 | d d:0 | g g:0 | k k:0 | ǩ ǩ:0 | l l:0 | m m:0 | n n:0 | p p:0 | r r:0 | t t:0 ] ] ;
 
@@ -174,7 +174,7 @@ V2VVwithCC2CinU = [  u ( %ˊ: | 0:%ˊ ) [ ʒ ʒ:0 | d d:0 | g g:0 | k k:0 | ǩ �
 V2VVwithCC2CandUI = [ V2VVwithCC2CinU | V2VVwithCC2CinI ] ;
 
 !! extra long vowel( d | l | r )
-V2VVwithCC2C = [ l [ ǧ:j ǧ:0 | ǧ:ǥ ǧ:0 | m m:0 | t t:0 ] | p c c: | r d d:0 | s [ k: k:0 | ǩ: ǩ:0 | t t:0 ] ] ;
+V2VVwithCC2C = [ l [ b b:0 | ǧ:j ǧ:0 | ǧ:ǥ ǧ:0 | m m:0 | t t:0 ] | m p p:0 | p c c:0 | r d d:0 | s [ k: k:0 | ǩ: ǩ:0 | t t:0 ] ] ;
 !
 
 !! Onset consonant or word boundary
@@ -199,7 +199,7 @@ RelVowLengtheningNOTi = [ ( %ˊ: | 0:%ˊ ) [ V2VVwithCC  %^VOWL: %^CShort: | V2V
 !! _0:u <=> OnSetC _ :u RelVowLengtheningNOTu_ 
 RelVowLengtheningNOTu = [ ( %ˊ: | 0:%ˊ ) [ V2VVwithCC  %^VOWL: %^CShort: | V2VVwithCC2CinI %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) ] ] ;
 
-!! possible triggers befor VOWLower and VOWRaise
+!! possible triggers before VOWLower and VOWRaise
 !! {{{
 PrecedeVOWLowerRaise = [( [ %^VOWSH: | %^VOWXSH: ] %^CLong: | [ %^VOWL: | %^VOWXL: ] %^CShort: )] ;
 !! }}}
@@ -207,6 +207,11 @@ PrecedeVOWLowerRaise = [( [ %^VOWSH: | %^VOWXSH: ] %^CLong: | [ %^VOWL: | %^VOWX
 !! possible triggers before PALNo and PAL
 !! {{{
 PrecedePALNo = [( [ %^VOWSH: | %^VOWXSH: ] ( %^CLong: ) | [ %^VOWL: | %^VOWXL: ] ( %^FRICG: )  %^CShort: ) ( %^VOWLower: | %^VOWRaise: ) ( %^VOWFront: | %^VOWBack: ) ( %^VOWTense: | %^VOWLax: ) (X3: ) ] ;
+!! }}}
+
+!! possible triggers between VowHeight and word end
+!! {{{
+BetweenVowHeightAndMorph = [( %^VOWFront: | %^VOWBack: ) ( %^VOWTense: | %^VOWLax: ) (X3: ) ( %^PAL: | %^PALNo: ) ] ;
 !! }}}
 
 !! neutral to vowel height and backness
@@ -335,7 +340,7 @@ Rules !!= !!! @CODE@
  e:i <=>   [ e: | e:0 | 0:i ] _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ]  PrecedeVOWLowerRaise %^VOWRaise: ;
   OnSetC _ ( u: ) (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] PrecedeVOWLowerRaise %^VOWRaise: ;
 ! diphthong raising with e:i at onset - deriving +Ind+Prt+Pl3 in reäkkad > riâkku, veârrad > viõrru
-  _ [ ä:â | â:õ  ] (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ | Cns:+ 0:%ˈ Cns:+ ]  PrecedeVOWLowerRaise  %^VOWRaise:  %>: u ;
+  _ [ ä: | â:  ] (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ | Cns:+ 0:%ˈ Cns:+ ]  PrecedeVOWLowerRaise  %^VOWRaise:  %>: u ;
 !! }}}
 
 
@@ -361,7 +366,7 @@ Rules !!= !!! @CODE@
 "Even syllabic verbs I, diphthong raising beginning with e:i ä:â"
 !! __@RULENAME@__ - deriving +Ind+Prt+Pl3 in reäkkad > riâkku, veârrad > viõrru
 !! {{{
- ä:â <=> e:  _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ | Cns:+ 0:%ˈ Cns:+ ]  PrecedeVOWLowerRaise %^VOWBack: %>: u ;
+ ä:â <=> e:  _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ | Cns:+ 0:%ˈ Cns:+ ]  PrecedeVOWLowerRaise %^VOWRaise: %>: u ;
 !! }}}
 
 
@@ -369,7 +374,7 @@ Rules !!= !!! @CODE@
 "Even syllabic verbs I, diphthong raising beginning with e:i ä:e"
 !! __@RULENAME@__ - deriving 
 !! {{{
- ä:e <=> [ u | e:i ]  _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ | Cns:+ 0:%ˈ Cns:+ ]  PrecedeVOWLowerRaise %^VOWRaise: ;
+ ä:e <=> [ u | e:i ]  _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ | Cns:+ 0:%ˈ Cns:+ ]  PrecedeVOWLowerRaise %^VOWRaise: BetweenVowHeightAndMorph [ #: | %>: [ Cns: | a | â | e | i: ] ];
 !! }}}
 
 "Even syllabic verbs I, diphthong raising beginning with ä:a u"
@@ -582,7 +587,7 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 !! {{{
  0:e <=> OnSetC _ :e RelVowLengthening ;
 !Distinguishing mainstam and maainstam
-      Cns: _ e ( u: | i: ) ( %ˊ: | 0:%ˊ )  Cns: %{Â1%}: Cns:+  %^VOWL: ;
+      Cns: _ e ( u: | i: ) ( %ˊ: | 0:%ˊ )  Cns:+ %{Â1%}: Cns:+  %^VOWL: ;
 !! }}}
 
 
@@ -855,7 +860,7 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
           
 "Even syllabic verbs I, cg v:0"
 !! __@RULENAME@__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, teevvad > teev
- v:0 <=> SurfLongVow (%ˊ: | 0:%ˊ ) v: _ ( %^VOWL: | %^VOWXL: ) %^CShort: ;
+ v:0 <=> SurfLongVow (i) (%ˊ: | 0:%ˊ ) v: _ ( %^VOWL: | %^VOWXL: ) %^CShort: ;
 
 "Even syllabic nouns I, with extra lengthening of vowel ij>ii/uv>uu and dd>d"
 !! __@RULENAME@__ - used with  +N+Sg+Nom > +N+Sg+Gen, sijdd > siid
