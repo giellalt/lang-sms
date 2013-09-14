@@ -105,10 +105,25 @@ Definitions
 {{{
 }}}
 
+{{{
+}}}
+
+
+{{{
+}}}
+
 
 preceded by two vowels
 {{{
 }}}
+
+preceded by one vowel Vx=>VxVx påll=>pååll
+
+
+
+extra long vowel( u | i )
+
+extra long vowel( d | l | r )
 
 Onset consonant or word boundary
 {{{
@@ -117,6 +132,15 @@ Onset consonant or word boundary
 following morpheme or word boundary
 {{{
 }}}
+
+relative lengthening of vowel right context following vowel:vowel
+_0:õ <=> OnSetC _ :õ RelVowLengthening_ 
+
+relative lengthening of vowel right context following vowel:vowel
+_0:i <=> OnSetC _ :i RelVowLengtheningNOTi_ 
+
+relative lengthening of vowel right context following vowel:vowel
+_0:u <=> OnSetC _ :u RelVowLengtheningNOTu_ 
 
 possible triggers befor VOWLower and VOWRaise
 {{{
@@ -129,6 +153,17 @@ possible triggers before PALNo and PAL
 neutral to vowel height and backness
 {{{
 }}}
+
+neutral to vowel and consonant length
+{{{
+
+}}}
+
+
+
+X3 = C Vx Cx Cx     C Vx Vy Cx ' Cx
+X2 = C Vx Vx Cx Cx  C Vx Vy Cx Cx
+X1 = C Vx Vx Cx     C Vx Vy Cx
 
  !!! Rules 
 Rules 
@@ -174,10 +209,6 @@ __Even syllabic verbs I, vowel shortening ä:0__ - used in +Ind+Prs+Pl3, +Ind+Pr
 {{{
 }}}
 
-__Even syllabic verbs I, diphthong shortening consonant lengthening__ - used in +N+Sg+Ill __jeäll:jiâlˈlu, __
-{{{
-}}}
-
 
 
 
@@ -193,9 +224,11 @@ __Even syllabic verbs I, vowel raising o:u__ - Adding +Prt+Pl3 for ed verbs, Rem
 {{{
 }}}
 
+
 __Even syllabic verbs I, vowel raising å:o__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
 {{{
 }}}
+
 
 __Even syllabic verbs I, vowel raising e:i__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
 {{{
@@ -211,9 +244,11 @@ __Even syllabic verbs I, diphthong raising beginning with u ä:å__ - deriving +
 {{{
 }}}
 
+
 __Even syllabic verbs I, diphthong raising beginning with e:i ä:â__ - deriving +Ind+Prt+Pl3 in reäkkad > riâkku, veârrad > viõrru
 {{{
 }}}
+
 
 
 __Even syllabic verbs I, diphthong raising beginning with e:i ä:e__ - deriving 
@@ -234,13 +269,16 @@ __Even syllabic verbs I, vowel lowering o:å__ - deriving +Ind+Prs+Sg3, +Ind+Prs
 {{{
 }}}
 
+
 __Even syllabic verbs I, vowel lowering i:e__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
 {{{
 }}}
 
+
 __Even syllabic verbs I, vowel lowering a:ä__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
 {{{
 }}}
+
 
 __Even syllabic verbs I, vowel lowering a:ä__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
 
@@ -248,8 +286,8 @@ __Even syllabic verbs I, vowel lowering a:ä__ - Adding +Prt+Pl3 for ed verbs, R
 
 __Even syllabic verbs I, vowel lowering u:o__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in uˊvdded
 {{{
-
 }}}
+
 
 
 __Even syllabic verbs I, vowel lowering õ:â __ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
@@ -257,7 +295,8 @@ __Even syllabic verbs I, vowel lowering õ:â __ - deriving +Ind+Prs+Sg3, +Ind+P
 }}}
 
 
-__Even syllabic verbs I, diphthong opening after u__ - deriving +Ind+Prs+Sg3, in kuåccâd kuäˊcce
+__Even syllabic verbs I, diphthong opening after u _å:ä___ - deriving +Ind+Prs+Sg3, in kuåccâd kuäˊcce
+= a>ä lowering _clockwise_
 {{{
 }}}
 
@@ -278,10 +317,20 @@ __Even syllabic verbs I, diphthong opening after u e:â__ - deriving vueˊlǧǧe
 {{{
 }}}
 
+!Vowel backing
+
 __Even syllabic verbs I, diphthong opening after u e:õ__ - deriving vueˊlǧǧed+V+Ind+Prt+Sg1: vuõˊlǧǧem
 {{{
 }}}
 
+!Vowel Raising and Fronting
+__Even syllabic verbs I, diphthong opening after u _å:e___ - deriving 
+= a>ä lowering _clockwise_
+{{{
+}}}
+
+
+!Vowel Lowering and Fronting
 
 __Even syllabic verbs I, diphthong opening _õ:ä_ after i:e__ - deriving +Ind+Prs+Sg3, in čiõkkâd
 {{{
@@ -300,6 +349,7 @@ __Even syllabic verbs I, secondary vowel fronting with PAL u õ:e__ - deriving +
 
 
 
+
 !RELATIVE VOWEL LENGTHENING
 
 vowel lengthening and consonant shortening, %^VOWL and %^CShort 
@@ -313,15 +363,16 @@ __Even syllabic verbs I, relative vowel lengthening 0:e__ - deriving +V+Inf in T
 {{{
 }}}
 
-__Even syllabic verbs I, relative vowel lengthening 0:å__ - deriving +V+Inf in TIETTED: uudd > uˊvdded
-{{{
 
+__Even syllabic verbs I, relative vowel lengthening 0:å__ - deriving
+{{{
+- deriving påll+N+Sg+Gen: pååll
 }}}
 
 __Even syllabic verbs I, relative vowel lengthening 0:õ__ - deriving +V+Inf in TIETTED: uudd > uˊvdded
 {{{
-
 }}}
+
 
 __Even syllabic verbs I, relative vowel lengthening 0:ä__ - deriving +V+Inf in TIETTED: uudd > uˊvdded
 {{{
@@ -335,7 +386,10 @@ __Even syllabic verbs I, relative vowel lengthening 0:a__ - deriving +V+Inf in M
 
 
 
-2012-06-05 removing "i" and "u" because viikkâd renders viiiǥǥam
+__Even syllabic verbs I, relative vowel lengthening _0:o___ -  simultaneous lengthening and lowering: juˊrdded > joordam juˊrdded+V+Ind+Prs+Sg1
+{{{
+- deriving toll+N+Sg+Gen: tool
+}}}
 
 
 __Even syllabic nouns I, relative vowel lengthening i__ - ǩiđđ:ǩiiđ
@@ -352,9 +406,6 @@ __Even syllabic nouns, relative vowel extra lengthening u not followed by v__ - 
 simultaneous lengthening and raising, hmm: xfst ordering might be easier
 
 
-__Even syllabic verbs I, relative vowel lengthening and lowering u:o _0:o___ -  simultaneous lengthening and lowering: juˊrdded > joordam juˊrdded+V+Ind+Prs+Sg1
-{{{
-}}}
 
 !VOWEL DUMMY LOSS
 
@@ -418,6 +469,7 @@ __%{A1%}:ʼ when subseqent syllable has vowel v__ - This is a temporary solution
 __%{A1%}:ʼ when subseqent syllable has vowel v__ - used +Ind+Prs+Pl3, +Ind+Prt+Pl3
 
 
+
 __0:%ˊ as transfer from left of v:u__ - used +Ind+Prs+Pl3, uˊvdded+V+Ind+Prs+Pl3: ouˊdde
 {{{
 }}}
@@ -432,6 +484,7 @@ __Even-syllabic verbs I, Palatalization of gg and kk__ -
 
 
 __Even-syllabic nouns I, Depalatalization of ǧ and weakening of grade to ǥ__ - vueˊlǧǧed+V+Ind+Prs+Sg1: vuâlǥam
+derive vueˊlǧǧed+V+Imp+Pl3: vuâlǥǥaz
 
 __Even-syllabic nouns I,  ǧ and weakening of grade to j__ - vueˊlǧǧed+V+Ind+Prs+4: vueˊljet  âˊlǧǧ+N+Sg+Gen: ââˊlj
 {{{
@@ -441,7 +494,8 @@ __Even-syllabic nouns I, Depalatalization of ǧǧ__ - vueˊlǧǧed+V+Ind+Prs+Sg3
 {{{
 }}}
 
-__Even-syllabic nouns I, Depalatalization of ǧǧ and ǩǩ__ -
+
+__Even-syllabic nouns I, Depalatalization of ǩ:k__ -
 {{{
 }}}
 
@@ -457,9 +511,7 @@ __Even-syllabic nouns, removing palatalization in -est +Loc nouns__ - removing p
 dealing with relative length changes
 mõõnnâd : mõˊnne : mõõn 
 
-
-
-__Even syllabic verbs I, cg__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, teevvad > teev
+!Vow Cx Cx:0 
 
 __Even syllabic verbs I, cg for ǧ__ - used with  vueˊlǧǧed+V+Ind+Prs+Sg1: vuâlǥam
 
@@ -468,6 +520,8 @@ __Even syllabic verbs I, cg for b__ - used with  neiˊbb+N+Sg+Gen: neeiˊb
 }}}
 
 __Even syllabic verbs I, cg m:0__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, 
+
+__Even syllabic verbs I, cg v:0__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, teevvad > teev
 
 __Even syllabic nouns I, with extra lengthening of vowel ij>ii/uv>uu and dd>d__ - used with  +N+Sg+Nom > +N+Sg+Gen, sijdd > siid
 {{{
@@ -481,10 +535,17 @@ __Even syllabic verbs I, cg for ʒ__ - used with  pääˊʒʒelm+N+Sg+Ill: päˊ
 }}}
 
 __Even syllabic verbs I, cg for đ __ - used with  ǩiđđ:ǩiiđ
+{{{
+}}}
 
+__Even syllabic verbs I, cg for r __ - used with  võrr:võõr
+{{{
+}}}
 
 __Even syllabic verbs I, cg for l__ - used with  vuˊvll+N+Sg+Gen: vuuˊl
 {{{
+deriving 
+deriving påll+N+Sg+Gen: pååll
 }}}
 
 __Even syllabic verbs I, cg for g__ - used with  cõõggâlm+N+Sg+Ill: cõglma
@@ -497,8 +558,20 @@ __Even syllabic nouns I, with extra lengthening of vowel V>VV and KK>ǤǤ__
 used with  +N+Sg+Nom > +N+Sg+Gen for cases like
 {{lookki > looǥǥi}}.
 {{{
-  k:ǥ <=> OnSetC 2LongVow (%ˊ: | 0:%ˊ ) k: _  ( %^VOWL: | %^VOWXL: )  %^CShort: ; 
-          OnSetC 2LongVow (%ˊ: | 0:%ˊ ) _ k:  ( %^VOWL: | %^VOWXL: )  %^CShort: ; 
+   OnSetC [ DbVow | Diphth ] (%ˊ: | 0:%ˊ ) k: _  %^VOWL:  %^CShort:  ; 
+   OnSetC [ DbVow | Diphth ] (%ˊ: | 0:%ˊ ) _ k:  %^VOWL:  %^CShort:  ; 
+   OnSetC SurfLongVow (%ˊ: | 0:%ˊ ) k: _  %^VOWXL: ( %^CShort: ) ; 
+   OnSetC SurfLongVow (%ˊ: | 0:%ˊ ) _ k:  %^VOWXL: ( %^CShort: ) ; 
+}}}
+
+__Even syllabic nouns I, with extra lengthening of vowel V>VV and ǩ:j__ 
+used with
+{{ > }}.
+{{{
+   OnSetC [ DbVow | Diphth ] (%ˊ: | 0:%ˊ ) ǩ: _  %^VOWL:  %^CShort:  ; 
+   OnSetC [ DbVow | Diphth ] (%ˊ: | 0:%ˊ ) _ ǩ:  %^VOWL:  %^CShort:  ; 
+   OnSetC SurfLongVow (%ˊ: | 0:%ˊ ) ǩ: ( %ˈ: ) _  %^VOWXL: ( %^CShort: ) ; 
+   OnSetC SurfLongVow (%ˊ: | 0:%ˊ ) _ ( %ˈ: ) ǩ:  %^VOWXL: ( %^CShort: ) ; 
 }}}
 
 
@@ -511,12 +584,12 @@ __Even syllabic verbs I, Voicing c:ʒ__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, doub
 }}}
 
 __Even syllabic verbs I, Voicing č:j__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
-  č:j <=> OnSetC  2LongVow  (%ˊ: | 0:%ˊ ) č: _ ( %^VOWL: | %^VOWXL: ) %^CShort: ; 
-          OnSetC 2LongVow  (%ˊ: | 0:%ˊ ) _ č: ( %^VOWL: | %^VOWXL: ) %^CShort:  ; 
+  č:j <=> OnSetC  SurfLongVow  (%ˊ: | 0:%ˊ ) č: _ ( %^VOWL: | %^VOWXL: ) %^CShort: ; 
+          OnSetC SurfLongVow  (%ˊ: | 0:%ˊ ) _ č: ( %^VOWL: | %^VOWXL: ) %^CShort:  ; 
 
 __Even syllabic verbs I, Voicing after long vowel or diphthong s:z s:z __ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
-  s:z <=> OnSetC 2LongVow  (%ˊ: | 0:%ˊ ) s: _ ( %^VOWL: | %^VOWXL: ) %^CShort: %^VC: ; 
-          OnSetC 2LongVow  (%ˊ: | 0:%ˊ ) _ s: ( %^VOWL: | %^VOWXL: ) %^CShort: %^VC: ; 
+  s:z <=> OnSetC SurfLongVow  (%ˊ: | 0:%ˊ ) s: _ ( %^VOWL: | %^VOWXL: ) %^CShort: %^VC: ; 
+          OnSetC SurfLongVow  (%ˊ: | 0:%ˊ ) _ s: ( %^VOWL: | %^VOWXL: ) %^CShort: %^VC: ; 
 
 
 __Even syllabic verbs I, third consonant loss __ - lgg:lǥ, Vow Ca Cx Cx:0, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants following consonant at coda that become single consonants in gradation
@@ -591,7 +664,21 @@ __Consonant lengthening 0:g__ - ǩeâlǥal+N+Sg+Gen: ǩeâlggal
 }}}
 
 
-!!Vowel change rules
+!Pedagogical X3 length mark after diphthongs in vertical line _%ˈ_ 
 
-!Illative
+!Adding X3 length mark
+__Consonant X3 lengthening after diphthong in vertical line _%ˈ_ __ - used in +N+Sg+Ill __jeäll:jiâlˈlu, __
+{{{
+}}}
+
+!Removing X3 length mark
+__Removing Consonant X3 length mark after diphthong in vertical line _%ˈ_ LEFT ARROW__ - deriving 
+{{{
+}}}
+
+__Removing Consonant X3 length mark after diphthong in vertical line _%ˈ_ RIGHT ARROW__ - deriving 
+{{{
+2013-09-13 for looser voikko X3 marker vertical can disappear everywhere
+}}}
+
 

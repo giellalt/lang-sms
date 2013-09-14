@@ -166,8 +166,12 @@ LongC2SH = [ k:ǥ k:ǥ | ǩ:j ǩ:j | s:z s:z | š:ž š:ž | c:ʒ c:ʒ | č:j č
 V2VVwithCC =  [ b b | p p | m m | v v |  d d | t t | đ đ | n n | l l | r r | s s | š š | c c | č č |  k k | ǩ ǩ | g g | ǧ ǧ | ǧ:g ǧ:g | ǧ:ǥ ǧ:ǥ  ] ;
 ! | ǧ:j ǧ:0 | ǧ:ǥ ǧ:0 
 
+V2VVwithCC2CinI = [  i ( %ˊ: | 0:%ˊ ) [ b b:0 | ʒ ʒ:0 | d d:0 | g g:0 | k k:0 | ǩ ǩ:0 | l l:0 | m m:0 | n n:0 | p p:0 | r r:0 | t t:0 ] ] ;
+
+V2VVwithCC2CinU = [  u ( %ˊ: | 0:%ˊ ) [ ʒ ʒ:0 | d d:0 | g g:0 | k k:0 | ǩ ǩ:0 | l l:0 | m m:0 | n n:0 | p p:0 | r r:0 | t t:0 ] ] ;
+
 !! extra long vowel( u | i )
-V2VVwithCC2CandUI = [  u ( %ˊ: | 0:%ˊ ) [ ʒ ʒ:0 | d d:0 | g g:0 | k k:0 | ǩ ǩ:0 | l l:0 | m m:0 | n n:0 | p p:0 | r r:0 | t t:0 ] ] ;
+V2VVwithCC2CandUI = [ V2VVwithCC2CinU | V2VVwithCC2CinI ] ;
 
 !! extra long vowel( d | l | r )
 V2VVwithCC2C = [ l [ ǧ:j ǧ:0 | ǧ:ǥ ǧ:0 | m m:0 | t t:0 ] | p c c: | r d d:0 | s [ k: k:0 | ǩ: ǩ:0 | t t:0 ] ] ;
@@ -188,8 +192,12 @@ RBound = [ # | %> ] ;
 RelVowLengthening = [ ( %ˊ: | 0:%ˊ ) [ V2VVwithCC  %^VOWL: %^CShort: | V2VVwithCC2C %^VOWL: %^CShort: | V2VVwithCC2CandUI %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) ] ] ;
 
 !! relative lengthening of vowel right context following vowel:vowel
+!! _0:i <=> OnSetC _ :i RelVowLengtheningNOTi_ 
+RelVowLengtheningNOTi = [ ( %ˊ: | 0:%ˊ ) [ V2VVwithCC  %^VOWL: %^CShort: | V2VVwithCC2CinU %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) ] ] ;
+
+!! relative lengthening of vowel right context following vowel:vowel
 !! _0:u <=> OnSetC _ :u RelVowLengtheningNOTu_ 
-RelVowLengtheningNOTu = [ ( %ˊ: | 0:%ˊ ) [ V2VVwithCC  %^VOWL: %^CShort: | V2VVwithCC2CandUI %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) ] ] ;
+RelVowLengtheningNOTu = [ ( %ˊ: | 0:%ˊ ) [ V2VVwithCC  %^VOWL: %^CShort: | V2VVwithCC2CinI %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) ] ] ;
 
 !! possible triggers befor VOWLower and VOWRaise
 !! {{{
