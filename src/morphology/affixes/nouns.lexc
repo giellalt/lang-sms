@@ -160,7 +160,7 @@ LEXICON N-pess !!= * __@CODE@__ Is for nouns with ''-ast'' Loc
 +N:%^VOWL%^CShort%>a PL-ABE ;
 
 LEXICON N_MEER !!= * __@CODE@__ Is for nouns with ''-ast'' Loc, No gradation
-!! ** Yaml: __meer__
+!! ** Yaml: __meer, steehl__
 +N: SG-NOM ;
 +N: SG-GEN ;
 +N: SG-ACC ;
@@ -181,6 +181,7 @@ LEXICON N_MEER !!= * __@CODE@__ Is for nouns with ''-ast'' Loc, No gradation
 
 
 !! !!e-stems
+
 LEXICON N_KUˊMPP !!= * __@CODE@__ is for nouns with ''-est'' +Loc
 !! ** Yaml: __kumpp__
 !! * There are several stem types
@@ -189,6 +190,27 @@ LEXICON N_KUˊMPP !!= * __@CODE@__ is for nouns with ''-est'' +Loc
 +N:%^VOWL%^CShort SG-GEN ;
 +N:%^VOWL%^CShort SG-ACC ;
 +N:%^PAL%>e SG-ILL ;
++N:%^VOWL%^CShort%>e SG-LOC ;
++N:%^VOWL%^CShort SG-COM ;
++N:%>e ESS ; ! ess and prt without
++N:%>e PAR ;
++N:%^VOWL%^CShort SG-ABE ;
++N:%^VOWL%^CShort PL-NOM ;
++N:%^VOWL%^CShort PL-GEN ;
++N:%^VOWL%^CShort PL-ACC ;
++N:%^VOWL%^CShort PL-ILL ;
++N:%^VOWL%^CShort PL-LOC ;
++N:%^VOWL%^CShort PL-COM ;
++N:%^VOWL%^CShort PL-ABE ;
+
+LEXICON N_PEIˊVV !!= * __@CODE@__ is for nouns with ''-est'' +Sg+Loc; +Sg+Gen stem is weak grade and it is shared by all plural forms; ''a'' +Sg+Ill has no palatalization; ''en'' +Ess and ''ed'' +Par share +Sg+Nom stem
+!! ** Yaml: __peivv__
+!! * There are several stem types
+!! * peiˊvv:peiˊvv
++N: SG-NOM ;
++N:%^VOWL%^CShort SG-GEN ;
++N:%^VOWL%^CShort SG-ACC ;
++N:%^PALNo%>a SG-ILL ;
 +N:%^VOWL%^CShort%>e SG-LOC ;
 +N:%^VOWL%^CShort SG-COM ;
 +N:%>e ESS ; ! ess and prt without
@@ -274,6 +296,54 @@ LEXICON N_KÅˊLL !!= * __@CODE@__ is for nouns with ''-est'' +Loc,
 +N:%^VOWL%^CShort%^VOWRaise PL-LOC ;
 +N:%^VOWL%^CShort%^VOWRaise PL-COM ;
 +N:%^VOWL%^CShort%^VOWRaise PL-ABE ;
+
+LEXICON N_STUUˊL !!= * __@CODE@__ is for nouns with ''-est'' +Loc, 
+!! ** Yaml: __stuul__
+!! * There are several stem types 
+!! * stuuˊl:stuuˊl
+
+
++N: SG-NOM ;
++N: SG-GEN ;
++N: SG-ACC ;
++N:%^VOWL%^CShort%^VOWLower%^PALNo%>a SG-ILL ; ! %^VOWLower%^PALNo should suffice
++N:%>e SG-LOC ;
++N: SG-COM ;
++N:%>e ESS ; ! ess and prt without
++N:%>e PAR ;
++N: SG-ABE ;
+
++N: PL-NOM ;
++N: PL-GEN ;
++N: PL-ACC ;
++N: PL-ILL ;
++N: PL-LOC ;
++N: PL-COM ;
++N: PL-ABE ;
+
+LEXICON N_SǨEEˊRM !!= * __@CODE@__ is for nouns with ''-est'' +Loc, 
+!! ** Yaml: __skeerm__
+!! * There are several stem types 
+!! * sǩeeˊrm:sǩeeˊrm
+
+
++N: SG-NOM ;
++N: SG-GEN ;
++N: SG-ACC ;
++N:%^PALNo%>a SG-ILL ;
++N:%>e SG-LOC ;
++N: SG-COM ;
++N:%>e ESS ;
++N:%>e PAR ;
++N: SG-ABE ;
+
++N: PL-NOM ;
++N: PL-GEN ;
++N: PL-ACC ;
++N: PL-ILL ;
++N: PL-LOC ;
++N: PL-COM ;
++N: PL-ABE ;
 
 
 LEXICON COMMON_E_A_STEM
