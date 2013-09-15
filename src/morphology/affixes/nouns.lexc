@@ -124,7 +124,7 @@ LEXICON N_ÂˊLǦǦ !!= * __@CODE@__ Is for nouns with ''-est'' Loc, Extra long 
 +N:%^VOWL%^CShort SG-ACC ;
 +N:%^PALNo%>a SG-ILL ;
 +N:%^VOWL%^CShort%>e SG-LOC ;
-+N:%^VOWL%^CShort%^VOWRaise%> SG-COM ;
++N:%^VOWL%^CShort%^VOWRaise SG-COM ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
 +N:%^VOWL%^CShort SG-ABE ;
@@ -272,6 +272,33 @@ LEXICON N-piess !!= * __@CODE@__ is for nouns with ''-est'' +Loc, voicing of ''s
 +N:%^VOWL%^CShort%^VC PL-LOC ;
 +N:%^VOWL%^CShort%^VC PL-COM ;
 +N:%^VOWL%^CShort%^VC PL-ABE ;
+
+LEXICON N_KLAAˊDD !!= * __@CODE@__ is for nouns with ''-est'' +Sg+Loc; ''e'' +Sg+Ill; X2 no gradation; no lowering no raising
+!! ** Yaml: __klaadd__
+!! * There are several stem types 
+!! * klaaˊdd:klaaˊdd
+
+!+N:%^VOWL%^CShort%^VC DenominalAdjsCShort ;
+
++N: SG-NOM ;
++N: SG-GEN ;
++N: SG-ACC ;
++N: SG-ILL_E ;
++N: SG-LOC_E ;
++N: SG-COM ;
++N: ESS_E ;
++N: PAR_E ;
++N: SG-ABE ;
+
++N: PL-NOM ;
++N: PL-GEN ;
++N: PL-ACC ;
++N: PL-ILL ;
++N: PL-LOC ;
++N: PL-COM ;
++N: PL-ABE ;
+
+
 
 LEXICON N_KÅˊLL !!= * __@CODE@__ is for nouns with ''-est'' +Loc, 
 !! ** Yaml: __kall__
@@ -918,6 +945,9 @@ LEXICON NMN_SG-COM_VOWXL-CSHORT
 LEXICON NMN_SG-GEN_VOWXL-CSHORT
 :%^VOWXL%^CShort SG-GEN ;
 
+LEXICON NMN_SG-ILL_E
+:%>e SG-ILL ;
+
 LEXICON NMN_SG-ILL_PAL_E
 :%^PAL%>e SG-ILL ;
 
@@ -929,6 +959,9 @@ LEXICON NMN_SG-ILL_VOWSH-RMVOW_A
 
 LEXICON NMN_SG-LOC_Â
 :%>â SG-LOC ;
+
+LEXICON NMN_SG-LOC_E
+:%>e SG-LOC ;
 
 LEXICON NMN_SG-LOC_VOWSH-RMVOW_E
 :%^VOWSH%^RmVow%>e SG-LOC ;
@@ -942,11 +975,17 @@ LEXICON NMN_SG-NOM
 LEXICON NMN_ESS_Â
 :%>â ESS ;
 
+LEXICON NMN_ESS_E
+:%>e ESS ;
+
 LEXICON NMN_ESS_VOWSH-RMVOW_E
 :%^VOWSH%^RmVow%>e ESS ;
 
 LEXICON NMN_PAR_Â
 :%>â PAR ;
+
+LEXICON NMN_PAR_E
+:%>e PAR ;
 
 LEXICON NMN_PAR_VOWSH-RMVOW_E
 :%^VOWSH%^RmVow%>e PAR ;
