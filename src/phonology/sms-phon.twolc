@@ -353,26 +353,26 @@ Rules !!= !!! @CODE@
 "Even syllabic verbs I, vowel raising â:õ" 
 !! __@RULENAME@__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
 !! {{{
- â:õ <=>   â: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ]  ( %^VOWSH: %^CLong: ) %^VOWRaise:   ; 
-           â:0 _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ]  ( %^VOWSH: %^CLong: ) %^VOWRaise: ( %^PAL: ) ;
+ â:õ <=>  OnSetC  â: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ]  ( %^VOWSH: %^CLong: ) %^VOWRaise:   ; 
+          OnSetC  â:0 _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ]  ( %^VOWSH: %^CLong: ) %^VOWRaise: ( %^PAL: ) ;
    0:õ _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ]  NeutrGrade %^VOWRaise: ;
   OnSetC _ ( u: ) (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ]  ( %^VOWSH: %^CLong: | %^VOWL: ) %^VOWRaise: ( %^PAL: ) ;
-           u  _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ | Cns:+ :%ˈ Cns:+ ] ( %^VOWSH: %^CLong: ) %^VOWRaise: ;
-           e:  _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ | Cns:+ 0:%ˈ Cns:+ ]  ( %^VOWSH: %^CLong: ) %^VOWRaise:  ;
+          OnSetC  u  _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ | Cns:+ :%ˈ Cns:+ ] ( %^VOWSH: %^CLong: ) %^VOWRaise: ;
+          OnSetC  e:  _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ | Cns:+ 0:%ˈ Cns:+ ]  ( %^VOWSH: %^CLong: ) %^VOWRaise:  ;
 !! }}}
 
 
 "Even syllabic verbs I, diphthong raising beginning with u ä:å"
 !! __@RULENAME@__ - deriving +Ind+Prt+Pl3 in kuâs'sad > kuõs'su, kuärŋŋad kuårŋŋu
 !! {{{
- ä:å <=> u  _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWSH: %^CLong: ) %^VOWBack: ;
+ ä:å <=> OnSetC u  _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWSH: %^CLong: ) %^VOWRaise: %>: u ;
 !! }}}
 
 
 "Even syllabic verbs I, diphthong raising beginning with e:i ä:â"
 !! __@RULENAME@__ - deriving +Ind+Prt+Pl3 in reäkkad > riâkku, veârrad > viõrru
 !! {{{
- ä:â <=> e:  _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ | Cns:+ 0:%ˈ Cns:+ ]  PrecedeVOWLowerRaise %^VOWRaise: %>: u ;
+ ä:â <=> OnSetC e:  _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ | Cns:+ 0:%ˈ Cns:+ ]  PrecedeVOWLowerRaise %^VOWRaise: %>: u ;
 !! }}}
 
 
@@ -380,7 +380,7 @@ Rules !!= !!! @CODE@
 "Even syllabic verbs I, diphthong raising beginning with e:i ä:e"
 !! __@RULENAME@__ - deriving 
 !! {{{
- ä:e <=> [ u | e:i ]  _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ | Cns:+ 0:%ˈ Cns:+ ]  PrecedeVOWLowerRaise %^VOWRaise: BetweenVowHeightAndMorph [ #: | %>: [ Cns: | a | â | e | i: ] ];
+ ä:e <=> OnSetC [ u | e:i ]  _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ | Cns:+ 0:%ˈ Cns:+ ]  PrecedeVOWLowerRaise %^VOWRaise: BetweenVowHeightAndMorph [ #: | %>: [ Cns: | a | â | e | i: ] ];
 !! }}}
 
 "Even syllabic verbs I, diphthong raising beginning with ä:a u"
