@@ -22,7 +22,7 @@ LEXICON N-toll !!= * __@CODE@__ toll:toll is for nouns with -âst Loc.
 +N: NMN_SG-ACC_VOWXL-CSHORT ;
 +N: NMN_SG-ILL_VOWSH-PAL_E ;
 +N: NMN_SG-LOC_VOWXL-CSHORT_Â ;
-+N: NMN_SG-COM_VOWXL-CSHORT ;
++N: NMN_SG-COM_VOWXL-CSHORT_IN ;
 +N: NMN_ESS_Â ; 
 +N: NMN_PAR_Â ;
 +N: NMN_SG-ABE_VOWXL-CSHORT ;
@@ -35,6 +35,25 @@ LEXICON N-toll !!= * __@CODE@__ toll:toll is for nouns with -âst Loc.
 +N: NMN_PL-ILL_VOWXL-CSHORT ;
 +N: NMN_PL-LOC_VOWXL-CSHORT ;
 
+LEXICON N_SAAKK !!= * __@CODE@__ toll:toll is for nouns with -âst Loc.
+!! ** Yaml: __saakk, paarr__
++N: SG-NOM ;
++N: NMN_SG-GEN_VOWL-CSHORT ;
++N: NMN_SG-ACC_VOWL-CSHORT ;
++N: NMN_SG-ILL_PAL_E ;
++N: NMN_SG-LOC_VOWL-CSHORT_Â ;
++N: NMN_SG-COM_VOWL-CSHORT_IN ;
++N: NMN_ESS_Â ; 
++N: NMN_PAR_Â ;
++N: NMN_SG-ABE_VOWL-CSHORT ;
++N: NMN_PL-NOM_VOWL-CSHORT ;
++N: NMN_PL-ABE_VOWL-CSHORT ;
++N: NMN_PL-ACC_VOWL-CSHORT ;
++N: NMN_PL-COM_VOWL-CSHORT ;
++N: NMN_PL-GEN_VOWL-CSHORT ;
++N: NMN_PL-ILL_VOWL-CSHORT ;
++N: NMN_PL-LOC_VOWL-CSHORT ;
+
 
 
 LEXICON N_LUUKK !!= * __@CODE@__ luukk:luukk is for nouns with -âst Loc and no gradation.
@@ -44,7 +63,7 @@ LEXICON N_LUUKK !!= * __@CODE@__ luukk:luukk is for nouns with -âst Loc and no 
 +N: SG-ACC ;
 +N: NMN_SG-ILL_PAL_E ;
 +N: NMN_SG-LOC_Â ;
-+N: SG-COM ;
++N: NMN_SG-COM_IN ;
 +N: NMN_ESS_Â ; ! ess and prt without
 +N: NMN_PAR_Â ;
 +N: SG-ABE ;
@@ -58,23 +77,24 @@ LEXICON N_LUUKK !!= * __@CODE@__ luukk:luukk is for nouns with -âst Loc and no 
 
 
 LEXICON N-miarr !!= * __@CODE@__ is for words with ''-âst'' Loc but ''-ense'' Ill
+!! lemma and stem are in 2nd grade
 !! ** Yaml: __jokk, miarr__
 +N: SG-NOM ;
-+N:%^VOWXL SG-GEN ;
-+N:%^VOWXL SG-ACC ;
++N:%^VOWL%^CShort SG-GEN ;
++N:%^VOWL%^CShort SG-ACC ;
 +N:%^VOWTense%^PAL%>e SG-ILL ;
-+N:%^VOWXL%>â SG-LOC ;
-+N:%^VOWXL SG-COM ;
++N:%^VOWL%^CShort%>â SG-LOC ;
++N:%^VOWL%^CShort NMN_SG-COM_IN ;
 +N:%>â ESS ; ! ess and prt without
 +N:%>â PAR ;
-+N:%^VOWXL SG-ABE ;
-+N:%^VOWXL PL-NOM ;
-+N:%^VOWXL PL-GEN ;
-+N:%^VOWXL PL-ACC ;
-+N:%^VOWXL PL-ILL ;
-+N:%^VOWXL PL-LOC ;
-+N:%^VOWXL PL-COM ;
-+N:%^VOWXL PL-ABE ;
++N:%^VOWL%^CShort SG-ABE ;
++N:%^VOWL%^CShort PL-NOM ;
++N:%^VOWL%^CShort PL-GEN ;
++N:%^VOWL%^CShort PL-ACC ;
++N:%^VOWL%^CShort PL-ILL ;
++N:%^VOWL%^CShort PL-LOC ;
++N:%^VOWL%^CShort PL-COM ;
++N:%^VOWL%^CShort PL-ABE ;
 
 
 LEXICON N_JARPLAN !!= * __@CODE@__ is for words with ''-âst'' Loc 
@@ -84,7 +104,7 @@ LEXICON N_JARPLAN !!= * __@CODE@__ is for words with ''-âst'' Loc
 +N:%^VOWL SG-ACC ;
 +N:%^VOWL%^PAL%>e SG-ILL ;
 +N:%^VOWL%>â SG-LOC ;
-+N:%^VOWL SG-COM ;
++N:%^VOWL NMN_SG-COM_IN ;
 +N:%^VOWL%>e ESS ; ! ess and prt without
 +N:%^VOWL%>e PAR ;
 +N:%^VOWL SG-ABE ;
@@ -105,7 +125,7 @@ LEXICON N_PUÅVV !!= * __@CODE@__ is for words with ''-âst'' Loc but ''-ense'' 
 +N:%^VOWXL SG-ACC ;
 +N:%^VOWTense%^CLong%^PAL%>e SG-ILL ;
 +N:%^VOWXL%>â SG-LOC ;
-+N:%^VOWXL SG-COM ;
++N:%^VOWXL NMN_SG-COM_IN ;
 +N:%>â ESS ; ! ess and prt without
 +N:%>â PAR ;
 +N:%^VOWXL SG-ABE ;
@@ -124,7 +144,7 @@ LEXICON N_ÂˊLǦǦ !!= * __@CODE@__ Is for nouns with ''-est'' Loc, Extra long 
 +N:%^VOWL%^CShort SG-ACC ;
 +N:%^PALNo%>a SG-ILL ;
 +N:%^VOWL%^CShort%>e SG-LOC ;
-+N:%^VOWL%^CShort%^VOWRaise SG-COM ;
++N:%^VOWL%^CShort%^VOWRaise NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
 +N:%^VOWL%^CShort SG-ABE ;
@@ -147,7 +167,7 @@ LEXICON N-pess !!= * __@CODE@__ Is for nouns with ''-ast'' Loc
 +N:%^VOWL%^CShort SG-ACC ;
 +N:%^VOWSH%^CLong%^VOWRaise%>u SG-ILL ;
 +N:%^VOWL%^CShort%>a SG-LOC ;
-+N:%^VOWL%^CShort%>a SG-COM ;
++N:%^VOWL%^CShort%>a NMN_SG-COM_IN ;
 +N:%>a ESS ; ! ess and prt without
 +N:%>a PAR ;
 +N:%^VOWL%^CShort SG-ABE ;
@@ -166,7 +186,7 @@ LEXICON N_MEER !!= * __@CODE@__ Is for nouns with ''-ast'' Loc, No gradation
 +N: SG-ACC ;
 +N:%>u SG-ILL ;
 +N:%>a SG-LOC ;
-+N:%>a SG-COM ;
++N:%>a NMN_SG-COM_IN ;
 +N:%>a ESS ; ! ess and prt without
 +N:%>a PAR ;
 +N: SG-ABE ;
@@ -191,7 +211,7 @@ LEXICON N_KUˊMPP !!= * __@CODE@__ is for nouns with ''-est'' +Loc
 +N:%^VOWL%^CShort SG-ACC ;
 +N:%^PAL%>e SG-ILL ;
 +N:%^VOWL%^CShort%>e SG-LOC ;
-+N:%^VOWL%^CShort SG-COM ;
++N:%^VOWL%^CShort NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
 +N:%^VOWL%^CShort SG-ABE ;
@@ -212,7 +232,7 @@ LEXICON N_PEIˊVV !!= * __@CODE@__ is for nouns with ''-est'' +Sg+Loc; +Sg+Gen s
 +N:%^VOWL%^CShort SG-ACC ;
 +N:%^PALNo%>a SG-ILL ;
 +N:%^VOWL%^CShort%>e SG-LOC ;
-+N:%^VOWL%^CShort SG-COM ;
++N:%^VOWL%^CShort NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
 +N:%^VOWL%^CShort SG-ABE ;
@@ -233,7 +253,7 @@ LEXICON N_ČÄÄˊCC !!= * __@CODE@__ is for nouns with ''-a'' ill ''-est'' +Loc
 +N:%^VOWL%^CShort SG-ACC ;
 +N:%^VOWSH%^CLong%^PALNo%>a SG-ILL ;
 +N:%^VOWL%^CShort%>e SG-LOC ;
-+N:%^VOWL%^CShort%^VOWBack SG-COM ;
++N:%^VOWL%^CShort%^VOWBack NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
 +N:%^VOWL%^CShort%>e PAR ;
 +N:%^VOWL%^CShort SG-ABE ;
@@ -260,7 +280,7 @@ LEXICON N-piess !!= * __@CODE@__ is for nouns with ''-est'' +Loc, voicing of ''s
 +N:%^VOWL%^CShort%^VC SG-GEN ;
 +N:%^VOWL%^CShort%^VC SG-ACC ;
 +N:%^VOWL%^CShort%^VC%>e SG-LOC ;
-+N:%^VOWL%^CShort%^VC SG-COM ;
++N:%^VOWL%^CShort%^VC NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
 +N:%^VOWL%^CShort%^VC SG-ABE ;
@@ -283,11 +303,11 @@ LEXICON N_KLAAˊDD !!= * __@CODE@__ is for nouns with ''-est'' +Sg+Loc; ''e'' +S
 +N: SG-NOM ;
 +N: SG-GEN ;
 +N: SG-ACC ;
-+N: SG-ILL_E ;
-+N: SG-LOC_E ;
-+N: SG-COM ;
-+N: ESS_E ;
-+N: PAR_E ;
++N: NMN_SG-ILL_E ;
++N: NMN_SG-LOC_E ;
++N: NMN_SG-COM_IN ;
++N: NMN_ESS_E ;
++N: NMN_PAR_E ;
 +N: SG-ABE ;
 
 +N: PL-NOM ;
@@ -311,7 +331,7 @@ LEXICON N_KÅˊLL !!= * __@CODE@__ is for nouns with ''-est'' +Loc,
 +N:%^VOWL%^CShort SG-ACC ;
 +N:%^PALNo%>a SG-ILL ;
 +N:%^VOWL%^CShort%>e SG-LOC ;
-+N:%^VOWL%^CShort%^VOWRaise SG-COM ;
++N:%^VOWL%^CShort%^VOWRaise NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
 +N:%^VOWL%^CShort SG-ABE ;
@@ -335,7 +355,7 @@ LEXICON N_STUUˊL !!= * __@CODE@__ is for nouns with ''-est'' +Loc,
 +N: SG-ACC ;
 +N:%^VOWL%^CShort%^VOWLower%^PALNo%>a SG-ILL ; ! %^VOWLower%^PALNo should suffice
 +N:%>e SG-LOC ;
-+N: SG-COM ;
++N: NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
 +N: SG-ABE ;
@@ -359,7 +379,7 @@ LEXICON N_SǨEEˊRM !!= * __@CODE@__ is for nouns with ''-est'' +Loc,
 +N: SG-ACC ;
 +N:%^PALNo%>a SG-ILL ;
 +N:%>e SG-LOC ;
-+N: SG-COM ;
++N: NMN_SG-COM_IN ;
 +N:%>e ESS ;
 +N:%>e PAR ;
 +N: SG-ABE ;
@@ -378,7 +398,7 @@ LEXICON COMMON_E_A_STEM
 +N:%^VOWL%^CShort%^PAL SG-GEN ;
 +N:%^VOWL%^CShort%^PAL SG-ACC ;
 +N:%^VOWL%^CShort%>e SG-LOC ;
-+N:%^VOWL%^CShort SG-COM ;
++N:%^VOWL%^CShort NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
 +N:%^VOWL%^CShort SG-ABE ;
@@ -401,7 +421,7 @@ LEXICON N-ress !!= * __@CODE@__ Nouns with -est Loc and -a Ill without ˊ
 +N:%^VOWL%^CShort%^PAL SG-GEN ;
 +N:%^VOWL%^CShort%^PAL SG-ACC ;
 +N:%^VOWL%^CShort%>e SG-LOC ;
-+N:%^VOWL%^CShort%^VOWRaise SG-COM ;
++N:%^VOWL%^CShort%^VOWRaise NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
 +N:%^VOWL%^CShort SG-ABE ;
@@ -421,7 +441,7 @@ LEXICON N_NEIˊBB !!= * __@CODE@__ Nouns with -est Loc and -a Ill without ˊ
 +N:%^VOWL%^CShort%^PAL SG-GEN ;
 +N:%^VOWL%^CShort%^PAL SG-ACC ;
 +N:%^VOWL%^CShort%>e SG-LOC ;
-+N:%^VOWL%^CShort SG-COM ;
++N:%^VOWL%^CShort NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
 +N:%^VOWL%^CShort SG-ABE ;
@@ -441,7 +461,7 @@ LEXICON N_MIEˊRR !!= * __@CODE@__ Nouns with -est Loc and -a Ill without ˊ
 +N:%^VOWL%^CShort%^VOWLower%^PAL SG-ACC ;
 +N:%^VOWLower%^PALNo%>a SG-ILL ; 
 +N:%^VOWL%^CShort%^VOWLower%>e SG-LOC ;
-+N:%^VOWL%^CShort%^VOWLower SG-COM ;
++N:%^VOWL%^CShort%^VOWLower NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
 +N:%^VOWL%^CShort%^VOWLower SG-ABE ;
@@ -461,7 +481,7 @@ LEXICON N_MIEˊLǨǨ !!= * __@CODE@__ Nouns with -est Loc and -a Ill without ˊ
 +N:%^VOWL%^CShort%^PAL SG-ACC ;
 +N:%^VOWLower%^VOWBack%^PALNo%>a SG-ILL ; 
 +N:%^VOWL%^CShort%>e SG-LOC ;
-+N:%^VOWL%^CShort SG-COM ;
++N:%^VOWL%^CShort NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
 +N:%^VOWL%^CShort SG-ABE ;
@@ -492,7 +512,7 @@ LEXICON N_HÕˊPPI !!= * __@CODE@__ is for nouns with ''-est'' +Loc
 +N:%>a SG-ILL ;
 +N:%>ǥa SG-ILL ;
 +N:%>e SG-LOC ;
-+N: SG-COM ;
++N: NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
 +N:%> SG-ABE ;
@@ -513,7 +533,7 @@ LEXICON N_LOOKKI !!= * __@CODE@__ is for nouns with ''-est'' +Loc
 +N:%^VOWL%^CShort SG-ACC ;
 +N:%>a SG-ILL ;
 +N:%>e SG-LOC ;
-+N:%^VOWL%^CShort SG-COM ;
++N:%^VOWL%^CShort SG-COM_N ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
 +N:%^VOWL%^CShort SG-ABE ;
@@ -535,7 +555,7 @@ LEXICON N_JUURD !!= * __@CODE@__ is for nouns with stem ''i'' + ''-est'' +Sg+Loc
 +N:%^VOWSH%^CLong%>i SG-ACC ;
 +N:%^VOWSH%^CLong%>i%>a SG-ILL ;
 +N:%^VOWSH%^CLong%>i%>e SG-LOC ;
-+N:%^VOWSH%^CLong%>i SG-COM ;
++N:%^VOWSH%^CLong%>i NMN_SG-COM_IN ;
 +N:%^VOWSH%^CLong%>i%>e ESS ;
 +N:%^VOWSH%^CLong%>e PAR ;
 +N:%^VOWSH%^CLong%>i SG-ABE ;
@@ -558,7 +578,7 @@ LEXICON N_MÄÄN !!= * __@CODE@__ is for nouns with ''-est'' +Loc
 +N: SG-ACC ;
 +N:%^VOWXSH%^CLong%>ǥa SG-ILL ;
 +N:%^VOWXSH%^VOWRaise%>u SG-LOC ;
-+N:%^VOWXSH%^VOWRaise%>u SG-COM ;
++N:%^VOWXSH%^VOWRaise%>u NMN_SG-COM_IN ;
 +N:%^VOWXSH%>%ˈje ESS ; ! ess and prt without
 +N:%^VOWXSH%^VOWRaise%>u PAR ;
 +N:%^VOWXSH%^VOWRaise%>u SG-ABE ;
@@ -579,7 +599,7 @@ LEXICON N_ČÂUSTÕK !!= * __@CODE@__ = stemtype
 +N:k%^VOWXL%^CShort SG-ACC ;
 +N:k%^VOWSH%^CLong%^PAL%>e SG-ILL ;
 +N:k%^VOWXL%^CShort%>â SG-LOC ;
-+N:k%^VOWXL%^CShort%> SG-COM ;
++N:k%^VOWXL%^CShort%> NMN_SG-COM_IN ;
 +N:k%>â ESS ; ! ess and prt without
 +N:k%>â PAR ;
 +N:k%^VOWXL%^CShort SG-ABE ;
@@ -598,7 +618,7 @@ LEXICON N_DURAK !!= * __@CODE@__ = stemtype
 +N:%^VOWL SG-ACC ;
 +N:k%>a SG-ILL ;
 +N:%^VOWL%>a SG-LOC ;
-+N:%^VOWL%> SG-COM ;
++N:%^VOWL%> NMN_SG-COM_IN ;
 +N:%^VOWL%>e ESS ; ! ess and prt without
 +N:%^VOWL%>e PAR ;
 +N:%^VOWL SG-ABE ;
@@ -618,7 +638,7 @@ LEXICON N_NJUÄˊMMEL !!= * __@CODE@__ = stemtype l-stem njuäˊmmel:njuäˊmmel
 +N:%^VOWSH SG-ACC ;
 +N:%^RmVow%>a SG-ILL ;
 +N:%^RmVow%>e SG-LOC ;
-+N:%^RmVow%> SG-COM ;
++N:%^RmVow%> NMN_SG-COM_IN ;
 +N:%^RmVow%>e ESS ; ! ess and prt without
 +N:%^RmVow%>e PAR ;
 +N:%^VOWSH SG-ABE ;
@@ -637,7 +657,7 @@ LEXICON N_ǨEÂLǤAL !!= * __@CODE@__ = stemtype n-stem ǩeâlǥal:ǩeâlǥal
 +N:%^VOWSH%^CLong SG-ACC ;
 +N:%^VOWSH%^CLong%^RmVow%>a SG-ILL ;
 +N:%^VOWSH%^CLong%^RmVow%>e SG-LOC ;
-+N:%^VOWSH%^CLong%^RmVow SG-COM ;
++N:%^VOWSH%^CLong%^RmVow NMN_SG-COM_IN ;
 +N:%^VOWSH%^CLong%^RmVow%>e ESS ; ! ess and prt without
 +N:%^VOWSH%^CLong%^RmVow%>e PAR ;
 +N:%^VOWSH%^CLong SG-ABE ;
@@ -658,7 +678,7 @@ LEXICON N_CÕÕGGÂLM !!= * __@CODE@__ = stemtype l-stem cõõggâlm:cõõggâlm
 +N: SG-ACC ;
 +N: NMN_SG-ILL_VOWSH-RMVOW_A ;
 +N: NMN_SG-LOC_VOWSH-RMVOW_E ;
-+N: NMN_SG-COM_VOWSH-RMVOW ;
++N: NMN_SG-COM_VOWSH-RMVOW_IN ;
 +N: NMN_ESS_VOWSH-RMVOW_E ;
 +N: NMN_PAR_VOWSH-RMVOW_E ;
 +N: SG-ABE ;
@@ -679,7 +699,7 @@ LEXICON N-laajj !!= * __@CODE@__ = stemtype Âm-stem
 +N:âm SG-ACC ;
 +N:m%>a SG-ILL ;
 +N:m%>e SG-LOC ;
-+N:m%> SG-COM ;
++N:m%> NMN_SG-COM_IN ;
 +N:m%>e ESS ; ! ess and prt without
 +N:m%>e PAR ;
 +N:âm SG-ABE ;
@@ -699,7 +719,7 @@ LEXICON N_ČÂÂˊĐ !!= * __@CODE@__ = stemtype Am-stem without ''m'' in ess
 +N:%^VOWSH%^CLong%^PALNo%>am SG-ACC ;
 +N:%^PALNom%>a SG-ILL ;
 +N:%^PALNom%>e SG-LOC ;
-+N:%^PALNom%> SG-COM ;
++N:%^PALNom%> NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
 +N:%^PALNo%>am SG-ABE ;
@@ -722,7 +742,7 @@ LEXICON N-kuolban !!= * __@CODE@__ = stemtype n-stem kuõlbân:kuõlbb
 +N:%^VOWSH%^CLong%^PALNo%>ân SG-ACC ;
 +N:%>na SG-ILL ;
 +N:%>ne SG-LOC ;
-+N:%>n SG-COM ;
++N:%>n NMN_SG-COM_IN ;
 +N:%^VOWL%^CShort%>âna ESS ; ! ess and prt without
 +N:%^VOWL%^CShort%>âna PAR ;
 +N:%^VOWSH%^CLong%>n SG-ABE ;
@@ -769,7 +789,7 @@ LEXICON N_ǨEˊRRES !!= * __@CODE@__ = stemtype l-stem ǩeˊrres:ǩeˊrres
 +N:%^VC SG-ACC ;
 +N:%^RmVow%>a SG-ILL ;
 +N:%^RmVow%>e SG-LOC ;
-+N:%^RmVow%> SG-COM ;
++N:%^RmVow%> NMN_SG-COM_IN ;
 +N:%^RmVow%>e ESS ; ! ess and prt without
 +N:%^RmVow%>e PAR ;
 +N:%^VC SG-ABE ;
@@ -892,11 +912,17 @@ LEXICON 22mus !!= * __@CODE@__ = Koulukielioppi stemtype II 22 muš
 LEXICON NMN_PL-ABE_VOWSH-RMVOW
 :%^VOWSH%^RmVow PL-ABE ;
 
+LEXICON NMN_PL-ABE_VOWL-CSHORT
+:%^VOWL%^CShort PL-ABE ;
+
 LEXICON NMN_PL-ABE_VOWXL-CSHORT
 :%^VOWXL%^CShort PL-ABE ;
 
 LEXICON NMN_PL-ACC_VOWSH-RMVOW
 :%^VOWSH%^RmVow PL-ACC ;
+
+LEXICON NMN_PL-ACC_VOWL-CSHORT
+:%^VOWL%^CShort PL-ACC ;
 
 LEXICON NMN_PL-ACC_VOWXL-CSHORT
 :%^VOWXL%^CShort PL-ACC ;
@@ -904,11 +930,17 @@ LEXICON NMN_PL-ACC_VOWXL-CSHORT
 LEXICON NMN_PL-COM_VOWSH-RMVOW
 :%^VOWSH%^RmVow PL-COM ;
 
+LEXICON NMN_PL-COM_VOWL-CSHORT
+:%^VOWL%^CShort PL-COM ;
+
 LEXICON NMN_PL-COM_VOWXL-CSHORT
 :%^VOWXL%^CShort PL-COM ;
 
 LEXICON NMN_PL-GEN_VOWSH-RMVOW
 :%^VOWSH%^RmVow PL-GEN ;
+
+LEXICON NMN_PL-GEN_VOWL-CSHORT
+:%^VOWL%^CShort PL-GEN ;
 
 LEXICON NMN_PL-GEN_VOWXL-CSHORT
 :%^VOWXL%^CShort PL-GEN ;
@@ -916,31 +948,55 @@ LEXICON NMN_PL-GEN_VOWXL-CSHORT
 LEXICON NMN_PL-ILL_VOWSH-RMVOW
 :%^VOWSH%^RmVow PL-ILL ;
 
+LEXICON NMN_PL-ILL_VOWL-CSHORT
+:%^VOWL%^CShort PL-ILL ;
+
 LEXICON NMN_PL-ILL_VOWXL-CSHORT
 :%^VOWXL%^CShort PL-ILL ;
 
 LEXICON NMN_PL-LOC_VOWSH-RMVOW
 :%^VOWSH%^RmVow PL-LOC ;
 
+LEXICON NMN_PL-LOC_VOWL-CSHORT
+:%^VOWL%^CShort PL-LOC ;
+
 LEXICON NMN_PL-LOC_VOWXL-CSHORT
 :%^VOWXL%^CShort PL-LOC ;
+
+LEXICON NMN_PL-NOM_VOWL-CSHORT
+:%^VOWL%^CShort PL-NOM ;
 
 LEXICON NMN_PL-NOM_VOWXL-CSHORT
 :%^VOWXL%^CShort PL-NOM ;
 
 !! !Sg
 
+LEXICON NMN_SG-ABE_VOWL-CSHORT
+:%^VOWL%^CShort SG-ABE ;
+
 LEXICON NMN_SG-ABE_VOWXL-CSHORT
 :%^VOWXL%^CShort SG-ABE ;
+
+LEXICON NMN_SG-ACC_VOWL-CSHORT
+:%^VOWL%^CShort SG-ACC ;
 
 LEXICON NMN_SG-ACC_VOWXL-CSHORT
 :%^VOWXL%^CShort SG-ACC ;
 
-LEXICON NMN_SG-COM_VOWSH-RMVOW
-:%^VOWSH%^RmVow SG-COM ;
+LEXICON NMN_SG-COM_IN
+ SG-COM_IN ;
 
-LEXICON NMN_SG-COM_VOWXL-CSHORT
-:%^VOWXL%^CShort SG-COM ;
+LEXICON NMN_SG-COM_VOWSH-RMVOW_IN
+:%^VOWSH%^RmVow SG-COM_IN ;
+
+LEXICON NMN_SG-COM_VOWL-CSHORT_IN
+:%^VOWL%^CShort SG-COM_IN ;
+
+LEXICON NMN_SG-COM_VOWXL-CSHORT_IN
+:%^VOWXL%^CShort SG-COM_IN ;
+
+LEXICON NMN_SG-GEN_VOWL-CSHORT
+:%^VOWL%^CShort SG-GEN ;
 
 LEXICON NMN_SG-GEN_VOWXL-CSHORT
 :%^VOWXL%^CShort SG-GEN ;
@@ -965,6 +1021,9 @@ LEXICON NMN_SG-LOC_E
 
 LEXICON NMN_SG-LOC_VOWSH-RMVOW_E
 :%^VOWSH%^RmVow%>e SG-LOC ;
+
+LEXICON NMN_SG-LOC_VOWL-CSHORT_Â
+:%^VOWL%^CShort%>â SG-LOC ;
 
 LEXICON NMN_SG-LOC_VOWXL-CSHORT_Â
 :%^VOWXL%^CShort%>â SG-LOC ;
@@ -998,7 +1057,10 @@ LEXICON SG-ABE
 LEXICON SG-ACC
 +Sg+Acc: K ;
 
-LEXICON SG-COM
+LEXICON SG-COM_N
++Sg+Com:%>n K ;
+
+LEXICON SG-COM_IN
 +Sg+Com:%>in K ;
 
 LEXICON SG-GEN
@@ -1014,6 +1076,7 @@ LEXICON SG-NOM
 
 LEXICON ESS
 +Ess:n K ;
+
 LEXICON PAR
 +Par:d K ;
 

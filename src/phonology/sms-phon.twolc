@@ -761,7 +761,7 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 "%{A1%}:ʼ when subseqent syllable has vowel v"
 !! __@RULENAME@__ - This is a temporary solution to  "ʼ" in võˊllʼjed 2013-08-29
 !! {{{
-%{A1%}:ʼ <=> [ l l ] _ i: %>: V: ; 
+%{A1%}:ʼ <=> [ l l | n n ] _ i: %>: Vow: ; 
 !! }}}
 
 !! !PALATALIZATION
@@ -778,7 +778,7 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 !! {{{
 0:%ˊ <=> v:u _ [ d d: | l l: | r r: ] PrecedePALNo  %^PAL:  ;
          h:u _ [ c c: | č č: |s s: | š š: | t t: ] PrecedePALNo  %^PAL:  ;
-         Vow: _ [ Cns:+ | :Cns+ ] PrecedePALNo  %^PAL:  ;
+         Vow: _ [ Cns:+ | :Cns+ ] ( i: ) PrecedePALNo  %^PAL:  ;
 !! }}}
 
 !! The left context allows for:
@@ -787,7 +787,7 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 
 
  
-"Even-syllabic verbs I, Palatalization of gg and kk"
+"Even-syllabic verbs I, Palatalization of g:ǧ and k:ǩ"
 !! __@RULENAME@__ -
  Cx:Cy <=> Vow: (%ˊ: | 0:%ˊ ) (Cns: )     _ Cx: ( %^VOWSH: ( %^CLong: ) ) NeutrHighBack (X3: ) %^PAL: RBound ;
            Vow: (%ˊ: | 0:%ˊ ) (Cns: ) Cx: _     ( %^VOWSH: ( %^CLong: ) ) NeutrHighBack (X3: ) %^PAL: RBound ;
@@ -934,10 +934,10 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 !! {{lookki > looǥǥi}}.
 !! {{{
  k:ǥ <=>
-  OnSetC [ DbVow | Diphth ] (%ˊ: | 0:%ˊ ) k: _  %^VOWL:  %^CShort:  ; !!= @CODE@
-  OnSetC [ DbVow | Diphth ] (%ˊ: | 0:%ˊ ) _ k:  %^VOWL:  %^CShort:  ; !!= @CODE@
-  OnSetC SurfLongVow (%ˊ: | 0:%ˊ ) k: _  %^VOWXL: ( %^CShort: ) ; !!= @CODE@
-  OnSetC SurfLongVow (%ˊ: | 0:%ˊ ) _ k:  %^VOWXL: ( %^CShort: ) ; !!= @CODE@
+  OnSetC [ DbVow | Diphth ] (%ˊ: | 0:%ˊ ) k: _ ( i: ) %^VOWL:  %^CShort:  ; !!= @CODE@
+  OnSetC [ DbVow | Diphth ] (%ˊ: | 0:%ˊ ) _ k: ( i: ) %^VOWL:  %^CShort:  ; !!= @CODE@
+  OnSetC SurfLongVow (%ˊ: | 0:%ˊ ) k: _  %^VOWXL: ( i: ) ( %^CShort: ) ; !!= @CODE@
+  OnSetC SurfLongVow (%ˊ: | 0:%ˊ ) _ k:  %^VOWXL: ( i: ) ( %^CShort: ) ; !!= @CODE@
 !! }}}
 
 "Even syllabic nouns I, with extra lengthening of vowel V>VV and ǩ:j"
