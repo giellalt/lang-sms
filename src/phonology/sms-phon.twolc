@@ -195,7 +195,7 @@ RBound = [ # | %> ] ;
 
 !! relative lengthening of vowel right context following vowel:vowel
 !! _0:õ <=> OnSetC _ :õ RelVowLengthening_ 
-RelVowLengthening = [ ( %ˊ: | 0:%ˊ ) [ V2VVwithCC  %^VOWL: %^CShort: | CC2CafterV2VV %^VOWL: %^CShort: | CC2CafterV2VVandUI %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) ] | [ k | n ] %^VOWL:  ] ;
+RelVowLengthening = [ ( %ˊ: | 0:%ˊ ) [ V2VVwithCC  %^VOWL: %^CShort: | CC2CafterV2VV %^VOWL: %^CShort: | CC2CafterV2VVandUI %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) | [ k | n ] %^VOWL: ] ] ;
 
 !! relative lengthening of vowel right context following vowel:vowel
 !! _0:i <=> OnSetC _ :i RelVowLengtheningNOTi_ 
@@ -212,7 +212,7 @@ PrecedeVOWLowerRaise = [( [ %^VOWSH: | %^VOWXSH: ] %^CLong: | [ %^VOWL: | %^VOWX
 
 !! possible triggers before PALNo and PAL
 !! {{{
-PrecedePALNo = [( [ %^VOWSH: | %^VOWXSH: ] ( %^CLong: ) | [ %^VOWL: | %^VOWXL: ] ( %^FRICG: )  %^CShort: ) ( %^VOWLower: | %^VOWRaise: ) ( %^VOWFront: | %^VOWBack: ) ( %^VOWTense: | %^VOWLax: ) (X3: ) ] ;
+PrecedePALNo = [( [ %^VOWSH: | %^VOWXSH: ] ( %^CLong: ) | [ %^VOWL: | %^VOWXL: ] ( %^FRICG: ) ( %^CShort: ) ) ( %^VOWLower: | %^VOWRaise: ) ( %^VOWFront: | %^VOWBack: ) ( %^VOWTense: | %^VOWLax: ) (X3: ) ] ;
 !! }}}
 
 !! possible triggers between VowHeight and word end
@@ -1138,6 +1138,12 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 !! __@RULENAME@__ - 
 !! {{{
  0:k <=>  2ShortVow  ( %ˊ: ) [ l | s | š ] :k _ Vow: Cns ( %^VOWSH: | %^VOWXSH: ) %^CLong: ( %^PALNo: ) ;
+!! }}}
+
+"Consonant lengthening j:ǧ"
+!! __@RULENAME@__ - 
+!! {{{
+ j:ǧ <=>  2ShortVow  :%ˊ  l _ 0: Vow: Cns ( %^VOWSH: | %^VOWXSH: ) %^CLong: ( %^PAL: ) ;
 !! }}}
 
 
