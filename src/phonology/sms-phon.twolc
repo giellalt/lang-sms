@@ -125,11 +125,11 @@ Diphth = [ e â | e:i â:õ | e ä | e:i ä:â | e:i ä:e | i â | i:e â:ä | i
 !! }}}
 
 !! {{{
-DbVow = [ a a | a:ä a:ä | i i | i:e i:e | o o | o:å o:å | õ õ | õ:â õ:â | u u | u:o u:o | â â | â:õ â:õ | e e | e:i e:i | å å | å:o å:o | ä ä | ä:a ä:a ] ;
+DbVow = [ a a | a:ä a:ä | i i | i:e i:e | o o | o:å o:å | õ õ | õ:â õ:â | u u | u:o u:o | â â | â:õ â:õ | e e | e e:ä | e ä:e | e:i e:i | å å | å:o å:o | ä ä | ä:a ä:a ] ;
 !! }}}
 
 !! {{{
-2DbVow = [ 0:a a | 0:i i | 0:o o | 0:õ õ | 0:u u | 0:â â | 0:õ â:õ | 0:e e | 0:i e:i | 0:å å | 0:o å:o | 0:ä ä | 0:a ä:a ] ;
+2DbVow = [ 0:a a | 0:a ä:a | 0:i i | 0:i e:i | 0:o o | 0:o u:o | 0:o å:o | 0:õ õ | 0:õ â:õ | 0:u u | 0:u o:u | 0:â â | 0:e e | 0:å å | 0:å o:å | 0:ä ä ] ;
 !! }}}
 
 !! {{{
@@ -456,18 +456,19 @@ Rules !!= !!! @CODE@
 "Even syllabic verbs I, vowel lowering u:o"
 !! __@RULENAME@__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in uˊvdded
 !! {{{
- u:o <=>  OnSetC _ u: (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: ( %^VOWFront: | %^VOWBack: ) (X3: ) ( %^PALNo: | %^PAL: ) RBound ;
-        OnSetC u: _     (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWSH: %^CLong: | %^VOWL: %^CShort: )                      %^VOWLower: ( %^VOWFront: | %^VOWBack: ) (X3: ) ( %^PALNo: | %^PAL: ) RBound ;
-       OnSetC _  ( %ˊ: |  0:%ˊ ) [ CNoV: Cns:* | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWSH: %^CLong: )                      %^VOWLower: ( %^VOWFront: | %^VOWBack: ) (X3: ) ( %^PALNo: | %^PAL: ) RBound ;
+ u:o <=>  OnSetC _ u:o (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: ( %^VOWFront: | %^VOWBack: ) (X3: ) ( %^PALNo: | %^PAL: ) RBound ;
+        OnSetC u: _     (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] NeutrGrade    %^VOWLower: ( %^VOWFront: | %^VOWBack: ) (X3: ) ( %^PALNo: | %^PAL: ) RBound ;
+       OnSetC ( 0:o ) _  ( %ˊ: |  0:%ˊ ) [ CNoV: Cns:* | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] NeutrGrade %^VOWLower: ( %^VOWFront: | %^VOWBack: ) (X3: ) ( %^PALNo: | %^PAL: ) RBound ;
 ! uˊvdded+V+Ind+Pl3: ouˊdde 
- OnSetC (0:o) _ [ (%ˊ: | 0:%ˊ ) v: ( 0:%ˊ ) [ d:+ | l:+ | r:+ | ʒ:+ ] | u (%ˊ: | 0:%ˊ ) [ d:+ | l:+ | r:+ | ʒ:+ ]] [ %^VOWL: | %^VOWXL: ] (%^CShort: )  %^VOWLower: ;
+ OnSetC (0:o) _ [ (%ˊ: | 0:%ˊ ) v: ( 0:%ˊ ) [ d:+ | l:+ | r:+ | ʒ:+ ] | u (%ˊ: | 0:%ˊ ) [ d:+ | l:+ | r:+ | ʒ:+ ]] ( %^VOWL: %^CShort: | %^VOWXL: ( %^CShort: ))  %^VOWLower: ;
+ OnSetC ( 0:o ) _ (%ˊ: ) [ CNoV: Cns:* | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] NeutrGrade %^VOWLower: ( %^VOWFront: | %^VOWBack: ) (X3: ) ( %^PALNo: | %^PAL: ) RBound ;
+ OnSetC ( 0:o ) _ (%ˊ: )  v:u (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] NeutrGrade %^VOWLower: ( %^VOWFront: | %^VOWBack: ) (X3: ) ( %^PALNo: | %^PAL: ) RBound ;
+
  OnSetC 0:o _ [  u (%ˊ: | 0:%ˊ ) [ d | l | r | ʒ ]]  %^VOWLower: ;
 ! juˊrdded+V+Cond+Sg1: joordčem
- OnSetC 0:o _ ( %ˊ: | 0:%ˊ ) [ CNoV: Cns:* | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ]  %^VOWL: ( %^CShort: )   %^VOWLower: ;
+ OnSetC 0:o _ ( %ˊ: | 0:%ˊ ) [ CNoV: Cns:* | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ]  %^VOWL:  %^CShort:    %^VOWLower: ;
 ! juˊrdded > joordam
 !2013-09-08 OnSetC _ ( u: | i: ) (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort: ) %^VOWLower: ( %^VOWFront: | %^VOWBack: ) (X3: ) ( %^PALNo: | %^PAL: ) RBound ;
- OnSetC ( 0:o ) _ (%ˊ: ) [ CNoV: Cns:* | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( [ %^VOWL: | %^VOWXL: ] ( %^CShort: )) %^VOWLower: ( %^VOWFront: | %^VOWBack: ) (X3: ) ( %^PALNo: | %^PAL: ) RBound ;
- OnSetC ( 0:o ) _ (%ˊ: )  v:u (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort: | %^VOWXL: %^CShort: ) %^VOWLower: ( %^VOWFront: | %^VOWBack: ) (X3: ) ( %^PALNo: | %^PAL: ) RBound ;
 !! }}}
 
 
@@ -874,7 +875,7 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 !! {{{
  d:0 <=> [ ( 0:o ) u: ( %ˊ: ) v: | i: (%ˊ: ) j: ] ( 0:%ˊ ) d _ ( %^VOWXL: | %^VOWL: ) %^CShort:  ;
  ! juˊrdded > joordam
-          SurfLongVow ( %ˊ: | 0:%ˊ ) CNoJV d _ ( %^VOWL: | %^VOWXL: ) %^CShort: ;
+          SurfLongVow ( %ˊ: | 0:%ˊ ) CNoJV d _ [ %^VOWL: %^CShort: | %^VOWXL: ( %^CShort: )] ;
 ! njeiddad > njeeid
 ! 2012-06-12 _v:u_ allows for uˊvdded
 !! - idd:id, +Imp+Sg2, +Ind+Prs+ConNeg double consonants following vowel and "i" at coda that become single consonants in gradation
