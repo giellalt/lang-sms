@@ -113,7 +113,7 @@ Sets
 
 Definitions 
 !! {{{
-ShortV2XL = [ 0:a a | 0:ä a:ä ] ;
+ShortV2XL = [ 0:a a | 0:ä a:ä ] ; 
 !! }}}
 
 !! {{{
@@ -194,15 +194,15 @@ RBound = [ # | %> ] ;
 !! }}}
 
 !! relative lengthening of vowel right context following vowel:vowel
-!! _0:õ <=> OnSetC _ :õ RelVowLengthening_ 
+!! 0:õ <=> OnSetC _ :õ RelVowLengthening
 RelVowLengthening = [ ( %ˊ: | 0:%ˊ ) [ V2VVwithCC  %^VOWL: %^CShort: | CC2CafterV2VV %^VOWL: %^CShort: | CC2CafterV2VVandUI %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) | [ k | n ] %^VOWL: ]  ] ;
 
 !! relative lengthening of vowel right context following vowel:vowel
-!! _0:i <=> OnSetC _ :i RelVowLengtheningNOTi_ 
+!! 0:i <=> OnSetC _ :i RelVowLengtheningNOTi
 RelVowLengtheningNOTi = [ ( %ˊ: | 0:%ˊ ) [ V2VVwithCC  %^VOWL: %^CShort: | [ CC2CafterV2VV | CC2CafterV2VVinU ] %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) ] ] ;
 
 !! relative lengthening of vowel right context following vowel:vowel
-!! _0:u <=> OnSetC _ :u RelVowLengtheningNOTu_ 
+!! 0:u <=> OnSetC _ :u RelVowLengtheningNOTu
 RelVowLengtheningNOTu = [ ( %ˊ: | 0:%ˊ ) [ V2VVwithCC  %^VOWL: %^CShort: | [ CC2CafterV2VVinI | CC2CafterV2VV ] %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) ] ] ;
 
 !! possible triggers before VOWLower and VOWRaise
@@ -494,21 +494,21 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 
 ! diphthongs
 
-"Even syllabic verbs I, diphthong opening after u _å:ä_"
+"Even syllabic verbs I, diphthong opening after u å:ä"
 !! __@RULENAME@__ - deriving +Ind+Prs+Sg3, in kuåccâd kuäˊcce
-!! = a>ä lowering _clockwise_
+!! = a>ä lowering clockwise
 !! {{{
  å:ä <=> u _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: ( %^FRICG:0 ) %^CShort: )  %^VOWLower: (X3: ) ( %^PALNo: | %^PAL: ) RBound ;
 !! }}}
 
-"Even syllabic verbs I, diphthong opening after i:e _e:ä_"
+"Even syllabic verbs I, diphthong opening after i:e e:ä"
 !! __@RULENAME@__ - deriving +Ind+Prs+Sg3, in čiõkkâd
 !! {{{
  e:ä <=> [ i: | u ] _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (X3: ) ( %^PALNo: | %^PAL: ) RBound ;
 ! vueˊlǧǧed+V+Ind+Prs+Pl3: vuäˊlǧǧa
 !! }}}        
 
-"Even syllabic verbs I, diphthong opening i:e _â:ä_"
+"Even syllabic verbs I, diphthong opening i:e â:ä"
 !! __@RULENAME@__ - deriving +Ind+Prs+Sg3, in čiõkkâd
 !! {{{
  â:ä <=> i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort: )  %^VOWLower: (X3: ) ( %^PALNo: | %^PAL: ) RBound ;
@@ -536,9 +536,9 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 !! }}}
 
 !! !Vowel Raising and Fronting
-"Even syllabic verbs I, diphthong opening after u _å:e_"
+"Even syllabic verbs I, diphthong opening after u å:e"
 !! __@RULENAME@__ - deriving 
-!! = a>ä lowering _clockwise_
+!! = a>ä lowering clockwise
 !! {{{
  å:e <=> u _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] NeutrGrade  %^VOWRaise: %^VOWFront: ;
 !! }}}
@@ -546,7 +546,7 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 
 !! !Vowel Lowering and Fronting
 
-"Even syllabic verbs I, diphthong opening _õ:ä_ after i:e"
+"Even syllabic verbs I, diphthong opening õ:ä after i:e"
 !! __@RULENAME@__ - deriving +Ind+Prs+Sg3, in čiõkkâd
 !! {{{
  õ:ä <=> [ i:e | u ] _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ]  (%^VOWSH: ( %^FRICG:0 ) %^CLong: | %^VOWL: %^CShort: ) %^VOWLower: %^VOWFront: ;
@@ -568,7 +568,7 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 
 
 ! "Even syllabic verbs I, secondary u > v PAL"
-! __@RULENAME@__ - deriving +V+Inf in TIETTED: _uudd_ >uˊvdded
+! __@RULENAME@__ - deriving +V+Inf in TIETTED: uudd >uˊvdded
 ! u:v <=> u _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] %^VOWFront: %^PAL: %>: ;
 
 
@@ -646,7 +646,7 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 
 
 
-"Even syllabic verbs I, relative vowel lengthening _0:o_"
+"Even syllabic verbs I, relative vowel lengthening 0:o"
 !! __@RULENAME@__ -  simultaneous lengthening and lowering: juˊrdded > joordam juˊrdded+V+Ind+Prs+Sg1
 !! {{{
  0:o <=>
@@ -756,7 +756,7 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 !! !THE NON-ORTHOGRAPHIC SYLLABLE 
 
 
-"Loss of _ʼ_ when preceded by vowel"
+"Loss of ʼ when preceded by vowel"
 !! __@RULENAME@__ - This is a temporary solution to  "ʼ" in võˊllʼjed
  ʼ:0 <=> :Vow _  ; 
 
@@ -877,7 +877,7 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
  ! juˊrdded > joordam
           SurfLongVow ( %ˊ: | 0:%ˊ ) CNoJV d _ [ %^VOWL: %^CShort: | %^VOWXL: ( %^CShort: )] ;
 ! njeiddad > njeeid
-! 2012-06-12 _v:u_ allows for uˊvdded
+! 2012-06-12 v:u allows for uˊvdded
 !! - idd:id, +Imp+Sg2, +Ind+Prs+ConNeg double consonants following vowel and "i" at coda that become single consonants in gradation
         2SgVow (%ˊ: | 0:%ˊ ) d _ Vow: [ Cns | n j | l m | s ǩ: | s t | š ǩ: | š m ]  %^VOWSH: %^CLong: %^RmVow: ;
 !! }}}
@@ -973,16 +973,16 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 
 "Even syllabic verbs I, Voicing č:j"
 !! __@RULENAME@__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
- č:j <=> OnSetC  SurfLongVow  (%ˊ: | 0:%ˊ ) č: _ ( %^VOWL: | %^VOWXL: ) %^CShort: ; !!= @CODE@
-         OnSetC SurfLongVow  (%ˊ: | 0:%ˊ ) _ č: ( %^VOWL: | %^VOWXL: ) %^CShort:  ; !!= @CODE@
+ č:j <=> OnSetC  SurfLongVow  (%ˊ: | 0:%ˊ ) č: _ ( %^VOWL: | %^VOWXL: ) %^CShort: ;
+         OnSetC SurfLongVow  (%ˊ: | 0:%ˊ ) _ č: ( %^VOWL: | %^VOWXL: ) %^CShort:  ;
          _ %^VC: ;
 
 "Even syllabic verbs I, Voicing after long vowel or diphthong s:z s:z" 
 !! __@RULENAME@__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
- s:z <=> OnSetC SurfLongVow  (%ˊ: | 0:%ˊ ) s: _ %^VOWL:  %^CShort:  ; !!= @CODE@
-         OnSetC SurfLongVow  (%ˊ: | 0:%ˊ ) _ s: %^VOWL:  %^CShort:  ; !!= @CODE@
-         OnSetC Diphth  (%ˊ: | 0:%ˊ ) s: %ˈ: _  %^VOWXL: ( %^CShort: ) ; !!= @CODE@
-         OnSetC Diphth  (%ˊ: | 0:%ˊ ) _ %ˈ: s:  %^VOWXL: ( %^CShort: ) ; !!= @CODE@
+ s:z <=> OnSetC SurfLongVow  (%ˊ: | 0:%ˊ ) s: _ %^VOWL:  %^CShort:  ; 
+         OnSetC SurfLongVow  (%ˊ: | 0:%ˊ ) _ s: %^VOWL:  %^CShort:  ; 
+         OnSetC Diphth  (%ˊ: | 0:%ˊ ) s: %ˈ: _  %^VOWXL: ( %^CShort: ) ; 
+         OnSetC Diphth  (%ˊ: | 0:%ˊ ) _ %ˈ: s:  %^VOWXL: ( %^CShort: ) ; 
 
 
 
@@ -1152,10 +1152,10 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 
 
 
-!! !Pedagogical X3 length mark after diphthongs in vertical line _%ˈ_ 
+!! !Pedagogical X3 length mark after diphthongs in vertical line %ˈ 
 
 !! !Adding X3 length mark
-"Consonant X3 lengthening after diphthong in vertical line _%ˈ_ "
+"Consonant X3 lengthening after diphthong in vertical line %ˈ "
 !! __@RULENAME@__ - used in +N+Sg+Ill __jeäll:jiâlˈlu, __
 !!b c č ǯ d đ g ǧ k ǩ l m n p r s š t v also htˈt nˈnj
 !! {{{
@@ -1181,7 +1181,7 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 !! }}}
 
 !! !Removing X3 length mark
-"Removing Consonant X3 length mark after diphthong in vertical line _%ˈ_ LEFT ARROW"
+"Removing Consonant X3 length mark after diphthong in vertical line %ˈ LEFT ARROW"
 !! __@RULENAME@__ - deriving 
 !!b c č ǯ d đ g ǧ k ǩ l m n p r s š t v also htˈt nˈnj
 !! {{{
@@ -1206,7 +1206,7 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
           Diphth (%ˊ: | 0:%ˊ ) v _ v [ [ %^VOWL: | %^VOWXL: ] %^CShort: ] ;
 !! }}}
 
-"Removing Consonant X3 length mark after diphthong in vertical line _%ˈ_ RIGHT ARROW"
+"Removing Consonant X3 length mark after diphthong in vertical line %ˈ RIGHT ARROW"
 !! __@RULENAME@__ - deriving 
 !!b c č ǯ d đ g ǧ k ǩ l m n p r s š t v also htˈt nˈnj
 !! {{{
