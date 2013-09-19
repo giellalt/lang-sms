@@ -461,8 +461,10 @@ Rules !!= !!! @CODE@
        OnSetC ( 0:o ) _  ( %ˊ: |  0:%ˊ ) [ CNoV: Cns:* | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] NeutrGrade %^VOWLower: ( %^VOWFront: | %^VOWBack: ) (X3: ) ( %^PALNo: | %^PAL: ) RBound ;
 ! uˊvdded+V+Ind+Pl3: ouˊdde 
  OnSetC (0:o) _ [ (%ˊ: | 0:%ˊ ) v: ( 0:%ˊ ) [ d:+ | l:+ | r:+ | ʒ:+ ] | u (%ˊ: | 0:%ˊ ) [ d:+ | l:+ | r:+ | ʒ:+ ]] ( %^VOWL: %^CShort: | %^VOWXL: ( %^CShort: ))  %^VOWLower: ;
+ OnSetC ( 0:o ) _ (%ˊ: )  v:u (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort: | %^VOWXL: ( %^CShort: )) %^VOWLower: ( %^VOWFront: | %^VOWBack: ) (X3: ) ( %^PALNo: | %^PAL: ) RBound ;
+!! vuˊvll+N+Sg+Ill: voulla
+ OnSetC  _ (%ˊ: )  v:u ( 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort: ) %^VOWLower: ( %^VOWFront: | %^VOWBack: ) (X3: ) ( %^PALNo: | %^PAL: ) RBound ;
  OnSetC ( 0:o ) _ (%ˊ: ) [ CNoV: Cns:* | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] NeutrGrade %^VOWLower: ( %^VOWFront: | %^VOWBack: ) (X3: ) ( %^PALNo: | %^PAL: ) RBound ;
- OnSetC ( 0:o ) _ (%ˊ: )  v:u (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] NeutrGrade %^VOWLower: ( %^VOWFront: | %^VOWBack: ) (X3: ) ( %^PALNo: | %^PAL: ) RBound ;
 
  OnSetC 0:o _ [  u (%ˊ: | 0:%ˊ ) [ d | l | r | ʒ ]]  %^VOWLower: ;
 ! juˊrdded+V+Cond+Sg1: joordčem
@@ -700,7 +702,7 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 "Even syllabic verbs,  for v>u"
 !! __@RULENAME@__ - uvdd > ouˊdde
 !! {{{
- v:u <=> OnSetC ( 0:o ) u: ( %ˊ: ) _ ( %ˊ: | 0:%ˊ ) [ d d: | l l: | r r: ] [ %^VOWL: %^CShort: | %^VOWXL: %^CShort: ]  ;
+ v:u <=> OnSetC ( 0:o ) u: ( %ˊ: ) _ ( 0:%ˊ ) [ ʒ ʒ: | d d: | l l: | r r: ] [ %^VOWL: %^CShort: | %^VOWXL: %^CShort: ]  ;
 !! }}}
 
  "Even syllabic nouns, for h>u"
@@ -778,7 +780,8 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 "0:%ˊ as transfer from left of v:u"
 !! __@RULENAME@__ - used +Ind+Prs+Pl3, uˊvdded+V+Ind+Prs+Pl3: ouˊdde
 !! {{{
-0:%ˊ <=> v:u _ [ d d: | l l: | r r: ] PrecedePALNo  %^PAL:  ;
+0:%ˊ <=> v:u _ [ ʒ ʒ: | d d: | l l: | r r: ] PrecedePALNo  %^PAL:  ;
+         %ˊ:0 v:u _ [ ʒ ʒ: | d d: | l l: | r r: ] PrecedePALNo  ( %^PAL: ) RBound  ;
          h:u _ [ c c: | č č: |s s: | š š: | t t: ] PrecedePALNo  %^PAL:  ;
          Vow: _ [ Cns:+ | :Cns+ | Cns:Cns+ ( %ˈ: | 0:%ˈ ) Cns:+ ] ( i: ) PrecedePALNo  %^PAL:  ;
 !! }}}
@@ -837,7 +840,6 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 !jurdded
        Vow: _ CNoV: Cns:+ PrecedePALNo %^PALNo:  ; 
        _ v:u ;
-!         _ v:u ( %ˊ: | 0:%ˊ ) [ d d: | l l: | r r: ] [[ %^VOWL: | %^VOWXL: ] ( %^CShort: ) | [ %^VOWSH: ( %^CLong: ) ] ] NeutrHighBack ( %^PAL: | %^PALNo: )  ;
 !! }}}
 
 
@@ -875,7 +877,8 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 !! {{{
  d:0 <=> [ ( 0:o ) u: ( %ˊ: ) v: | i: (%ˊ: ) j: ] ( 0:%ˊ ) d _ ( %^VOWXL: | %^VOWL: ) %^CShort:  ;
  ! juˊrdded > joordam
-          SurfLongVow ( %ˊ: | 0:%ˊ ) CNoJV d _ [ %^VOWL: %^CShort: | %^VOWXL: ( %^CShort: )] ;
+          SurfLongVow ( %ˊ: | 0:%ˊ ) CNoJV  d _ [ %^VOWL: %^CShort: | %^VOWXL: ( %^CShort: )] ;
+         u: ( %ˊ: ) v:u ( 0:%ˊ ) d _  %^VOWXL: ( %^CShort: ) ;
 ! njeiddad > njeeid
 ! 2012-06-12 v:u allows for uˊvdded
 !! - idd:id, +Imp+Sg2, +Ind+Prs+ConNeg double consonants following vowel and "i" at coda that become single consonants in gradation
@@ -890,7 +893,10 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 "Even syllabic verbs I, cg for ʒ"
 !! __@RULENAME@__ - used with  pääˊʒʒelm+N+Sg+Ill: päˊʒlma
 !! {{{
- ʒ:0 <=>  2SgVow (%ˊ: | 0:%ˊ ) ʒ _ Vow: [ Cns | n j | l m | s ǩ: | s t | š ǩ: | š m ]  %^VOWSH:  %^CLong: %^RmVow: ;
+ ʒ:0 <=>
+!2013-09-19    SurfLongVow (%ˊ: | 0:%ˊ ) ʒ _ %^VOWXL: ( %^CShort: ) ;
+      u: ( %ˊ: ) v:u ( 0:%ˊ ) ʒ _  %^VOWXL: ( %^CShort: ) ;
+  2SgVow (%ˊ: | 0:%ˊ ) ʒ _ Vow: [ Cns | n j | l m | s ǩ: | s t | š ǩ: | š m ]  %^VOWSH:  %^CLong: %^RmVow: ;
 !! }}}
 
 "Even syllabic verbs I, cg for đ" 
@@ -905,7 +911,7 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 !! __@RULENAME@__ - used with  võrr:võõr
 !! {{{
  r:0 <=>
- SurfLongVow (%ˊ: | 0:%ˊ ) r: _  %^VOWXL: ( %^CShort: ) ;
+ [ SurfLongVow (%ˊ: | 0:%ˊ ) | u: ( %ˊ: ) v:u ( 0:%ˊ )] r: _  %^VOWXL: ( %^CShort: ) ;
  [ DbVow | Diphth ] (%ˊ: | 0:%ˊ ) r: _  %^VOWL: %^CShort: ;
 !! }}}
 
@@ -914,7 +920,7 @@ i: _ (%ˊ: | 0:%ˊ ) [ Cns:+ | Cns:+ ( %ˈ: | :%ˈ ) Cns:+ ] ( %^VOWL: %^CShort:
 !! {{{
  l:0 <=>
 !! deriving 
- SurfLongVow (%ˊ: | 0:%ˊ ) l: _  %^VOWXL: ( %^CShort: ) ;
+ [ SurfLongVow (%ˊ: | 0:%ˊ ) | u: ( %ˊ: ) v:u ( 0:%ˊ )] l: _  %^VOWXL: ( %^CShort: ) ;
 !! deriving påll+N+Sg+Gen: pååll
  [ DbVow | Diphth ] (%ˊ: | 0:%ˊ ) l: _  %^VOWL: %^CShort: ;
 !! }}}
