@@ -15,8 +15,14 @@
 
 !! !!!Skolt Saami number <-> letter transducer
 
+Multichar_Symbols
+
+  +Use/NG    ! Do not generate, for isme-ped.fst and apertium
+  +String    ! Tag to denote non-numeric strings
+  +NumNum    ! Tag to denote real numbers in one form or another
+
 LEXICON Root
-< [a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|q|y|z|æ|ø|å|ä|ö|á|č|đ|ŋ|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|Æ|Ø|Å|Ä|Ö|Á|Č|Đ|Ŋ|Š|Ŧ|Ž]* > COMMA ; ! This first line is to allow all letter strings.
+< %+String [a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|q|y|z|æ|ø|å|ä|ö|á|č|đ|ŋ|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|Æ|Ø|Å|Ä|Ö|Á|Č|Đ|Ŋ|Š|Ŧ|Ž]* > COMMA ; ! This first line is to allow all letter strings.
 NUMBERSECTION ;
 COMMASECTION ;
 
@@ -128,18 +134,17 @@ LEXICON ONEM
 õhtt% : 1MILJON ;
 
 LEXICON ONESM
-kueˊhtt:2    MILJON ;
-koumm:3  MILJON ;
-nellj:4 MILJON ;
-vitt:5  MILJON ;
-kutt:6  MILJON ;
-čiččâm:7  MILJON ;
-kääuˊc:8  MILJON ;
-ååuˊc:9   MILJON ; 
+kueˊhtt:2 MILJON ;
+  koumm:3 MILJON ;
+  nellj:4 MILJON ;
+   vitt:5 MILJON ;
+   kutt:6 MILJON ;
+ čiččâm:7 MILJON ;
+ kääuˊc:8 MILJON ;
+  ååuˊc:9 MILJON ; 
 
 LEXICON 1MILJON
 miljon% :1 OVERTHOUSANDS ;
-miljon% :1  OVERTHOUSANDS ;
 
 LEXICON MILJON
 % miljon% : OVERTHOUSANDS ;
@@ -149,129 +154,122 @@ LEXICON MILJON
 ! =================
 
 LEXICON OVERMILLIONS
-                    HUNDREDSM ;
-čueˊđ:1           HUNDREDM ;
-:%0                 TENSM ;
-:%0                 TEENSM ;
-:%0%0               1MILJON ;
-:%0%0               ONESM ;
-:%0%0%0             HUNDREDST ;		        ! x00.000.000
-čueˊđ:%0%0%01     HUNDREDT ;    ! 100.000.000
-:%0%0%0%0           TENST ;		        !  20.000.000
-:%0%0%0%0           TEENST ;		    !  10.000.000
-:%0%0%0%0%0         ONEST ;		    !   2.000.000
-dohat:%0%0%0%0%01  THOUSAND ;	!   1.000.000
-:%0%0%0%0%0%0       UNDERTHOUSAND ;	
-:%0%0%0%0%0%0%0     TENS ;
-:%0%0%0%0%0%0%0     TEENS ;
-:%0%0%0%0%0%0%0%0   ONES ;
-:%0%0%0%0%0%0%0%0%0 COMMA ;	     !  x000000
+                         HUNDREDSM ;
+čueˊđ:1                  HUNDREDM  ;
+     :%0                 TENSM     ;
+     :%0                 TEENSM    ;
+     :%0%0               1MILJON   ;
+     :%0%0               ONESM ;
+     :%0%0%0             HUNDREDST ;		        ! x00.000.000
+čueˊđ:%0%0%01            HUNDREDT ;    ! 100.000.000
+     :%0%0%0%0           TENST ;		        !  20.000.000
+     :%0%0%0%0           TEENST ;		    !  10.000.000
+     :%0%0%0%0%0         ONEST ;		    !   2.000.000
+dohat:%0%0%0%0%01        THOUSAND ;	!   1.000.000
+     :%0%0%0%0%0%0       UNDERTHOUSAND ;	
+     :%0%0%0%0%0%0%0     TENS ;
+     :%0%0%0%0%0%0%0     TEENS ;
+     :%0%0%0%0%0%0%0%0   ONES ;
+     :%0%0%0%0%0%0%0%0%0 COMMA ;	     !  x000000
 
 LEXICON OVERTHOUSANDS
-HUNDREDST ;		        ! x00.000.000
-čueˊđ:1 HUNDREDT ;    ! 100.000.000
-:%0 TENST ;		        !  20.000.000
-:%0 TEENST ;		    !  10.000.000
-:%0%0 ONEST ;		    !   2.000.000
-dohat:%0%01 THOUSAND ;	!   1.000.000
-:%0%0%0 UNDERTHOUSAND ;	
-:%0%0%0%0 TENS ;
-:%0%0%0%0 TEENS ;
-:%0%0%0%0%0 ONES ;
-:%0%0%0%0%0%0 COMMA ;	     !  x000000
+                   HUNDREDST     ; ! x00.000.000
+čueˊđ:1            HUNDREDT      ; ! 100.000.000
+     :%0           TENST         ; !  20.000.000
+     :%0           TEENST        ; !  10.000.000
+     :%0%0         ONEST         ; !   2.000.000
+dohat:%0%01        THOUSAND      ; !   1.000.000
+     :%0%0%0       UNDERTHOUSAND ;
+     :%0%0%0%0     TENS          ;
+     :%0%0%0%0     TEENS         ;
+     :%0%0%0%0%0   ONES          ;
+     :%0%0%0%0%0%0 COMMA         ; !  x000000
 
 LEXICON HUNDREDST
-
-kueˊhtt:2    CUODIT ;
-koumm:3  CUODIT ;	! 300000-399999
-nellj:4 CUODIT ;	! 400000-499999
-
-vitt:5  CUODIT ;	! 500000-599999
-kutt:6  CUODIT ;	! 600000-699999
-čiččâm:7  CUODIT ;
-
-
-kääuˊc:8  CUODIT ;	! 800000-899999
-ååuˊc:9   CUODIT ;	! 900000-999999
+kueˊhtt:2 CUODIT ;
+  koumm:3 CUODIT ; ! 300000-399999
+  nellj:4 CUODIT ; ! 400000-499999
+   vitt:5 CUODIT ; ! 500000-599999
+   kutt:6 CUODIT ; ! 600000-699999
+ čiččâm:7 CUODIT ;
+ kääuˊc:8 CUODIT ; ! 800000-899999
+  ååuˊc:9 CUODIT ; ! 900000-999999
 
 LEXICON CUODIT
 čueˊđ: HUNDREDT ;	! 200000-199999
 
-LEXICON HUNDREDT	     ! X = 1-9, Y = 0-9
-TENST ;			     ! X2XYYY, X10YYY
-TEENST ;		     ! X1XYYY
-õhtt:%01 THOUSANDS ;
-:%0 ONEST ;		     ! XX0YYY
-:%0%0 THOUSANDS ;	 ! X00YYY
+LEXICON HUNDREDT      ! X = 1-9, Y = 0-9
+          TENST     ; ! X2XYYY, X10YYY
+          TEENST    ; ! X1XYYY
+õhtt:%01  THOUSANDS ;
+    :%0   ONEST     ; ! XX0YYY
+    :%0%0 THOUSANDS ; ! X00YYY
 
 LEXICON TEENST
 :1 TEENT ;
 
 LEXICON TEENT
-lååi:%0 THOUSANDS ;
-
-õt:1 LOHKAIT ;
-kuât:2 LOHKAIT ;
-kon:3 LOHKAIT ;
-nenj:4 LOHKAIT ;
-vitt:5 LOHKAIT ;
-kutt:6 LOHKAIT ;
-čiččâm:7 LOHKAIT ;
-käc:8 LOHKAIT ;
-åc:9 LOHKAIT ;
+   lååi:%0 THOUSANDS ;
+    õt:1   LOHKAIT ;
+  kuât:2   LOHKAIT ;
+   kon:3   LOHKAIT ;
+  nenj:4   LOHKAIT ;
+  vitt:5   LOHKAIT ;
+  kutt:6   LOHKAIT ;
+čiččâm:7   LOHKAIT ;
+   käc:8   LOHKAIT ;
+    åc:9   LOHKAIT ;
 
 LEXICON LOHKAIT
 mlo: THOUSANDS ;
 
 LEXICON TENST
-
 kuâhtt:2 LÅGEVT ;
-koumm:3 LÅGEVT ;
-nellj:4 LÅGEVT ;
-vitt:5 LÅGEVT ;
-kutt:6 LÅGEVT ;
-čim:7 LÅGEVT ;
+ koumm:3 LÅGEVT ;
+ nellj:4 LÅGEVT ;
+  vitt:5 LÅGEVT ;
+  kutt:6 LÅGEVT ;
+   čim:7 LÅGEVT ;
 käˊhcc:8 LÅGEVT ;
-åˊhcc:9 LÅGEVT ;
+ åˊhcc:9 LÅGEVT ;
 
 LEXICON LÅGEVT
-lo:%0 THOUSANDS ; !XXX lååi?
-lo%-õhttdohat:1 THOUSAND ; !XXX lååi?
-lo: ONEST ;
+           lo:%0 THOUSANDS ; !XXX lååi?
+lo%-õhttdohat:1  THOUSAND  ; !XXX lååi?
+           lo:   ONEST     ;
 
 LEXICON ONEST
-
 kueˊhtt:2 THOUSANDS ;
-koumm:3 THOUSANDS ;
-nellj:4 THOUSANDS ;
-vitt:5 THOUSANDS ;
-kutt:6 THOUSANDS ;
-čiččâm:7 THOUSANDS ;
-kääuˊc:8 THOUSANDS ;
-ååuˊc:9 THOUSANDS ;
+  koumm:3 THOUSANDS ;
+  nellj:4 THOUSANDS ;
+   vitt:5 THOUSANDS ;
+   kutt:6 THOUSANDS ;
+ čiččâm:7 THOUSANDS ;
+ kääuˊc:8 THOUSANDS ;
+  ååuˊc:9 THOUSANDS ;
 
 LEXICON THOUSANDS      ! x > 1
 dohat: THOUSAND ;
 
 
 LEXICON THOUSAND
-UNDERTHOUSAND ;	   ! 1100-1999
-:%0 THOUSANDTENS ;	   ! 1020-1099
-:%0 TEENS ;	   ! 1010-1019
-:%0%0 INITIALCARDINAL ;	   ! 1001-1009
-:%0%0%0 COMMA ;	   ! 1000
+        UNDERTHOUSAND ;   ! 1100-1999
+:%0     THOUSANDTENS ;    ! 1020-1099
+:%0     TEENS ;           ! 1010-1019
+:%0%0   INITIALCARDINAL ; ! 1001-1009
+:%0%0%0 COMMA ;           ! 1000
 
 
 LEXICON THOUSANDTENS
-lååi:1%0 COMMA ; 
-kuâhtt:2 LÅGEV ;
-koumm:3 LÅGEV ;
-nellj:4 LÅGEV ;
-vitt:5 LÅGEV ;
-kutt:6 LÅGEV ;
-čim:7 LÅGEV ; ! this one different from TENS
-käˊhcc:8 LÅGEV ;
-åˊhcc:9 LÅGEV ;
+  lååi:1%0 COMMA ; 
+kuâhtt:2   LÅGEV ;
+ koumm:3   LÅGEV ;
+ nellj:4   LÅGEV ;
+  vitt:5   LÅGEV ;
+  kutt:6   LÅGEV ;
+   čim:7   LÅGEV ; ! this one different from TENS
+käˊhcc:8   LÅGEV ;
+ åˊhcc:9   LÅGEV ;
 
 
 !===========================
@@ -280,43 +278,39 @@ käˊhcc:8 LÅGEV ;
 
 LEXICON UNDERTHOUSAND
 HUNDREDS ;
-čueˊtt:1 HUNDRED ;
+ čueˊtt:1 HUNDRED ;
 tjuodát:1 CUODAAT ;
 
 LEXICON HUNDREDS
-kueˊhtt:2 CUODI ;
-koumm:3 CUODI ;
-nellj:4 CUODI ;
-
-vitt:5 CUODI ;
-kutt:6 CUODI ;
-čiččâm:7 CUODI ;
-
-
+ kueˊhtt:2 CUODI ;
+   koumm:3 CUODI ;
+   nellj:4 CUODI ;
+    vitt:5 CUODI ;
+    kutt:6 CUODI ;
+  čiččâm:7 CUODI ;
 kääuˊc%-:8 CUODI ;
-ååuˊc%-:9 CUODI ;
+ ååuˊc%-:9 CUODI ;
 
 LEXICON CUODI
-čueˊđ: HUNDRED ;
-
+  čueˊđ: HUNDRED ;
 tjuodát: CUODAAT ;
 
 LEXICON HUNDRED
-HUNDREDTENS ;
-TEENS ;
-:%0 INITIALCARDINAL ;
-:%0%0 COMMA ;
+      HUNDREDTENS     ;
+      TEENS           ;
+:%0   INITIALCARDINAL ;
+:%0%0 COMMA           ;
 
 LEXICON HUNDREDTENS
-lååi:1%0 COMMA ; 
+  lååi:1%0 COMMA ; 
 kuâhtt:2 LÅGEV ;
-koumm:3 LÅGEV ;
-nellj:4 LÅGEV ;
-vitt:5 LÅGEV ;
-kutt:6 LÅGEV ;
-čim:7 LÅGEV ; ! this one different from TENS
+ koumm:3 LÅGEV ;
+ nellj:4 LÅGEV ;
+  vitt:5 LÅGEV ;
+  kutt:6 LÅGEV ;
+   čim:7 LÅGEV ; ! this one different from TENS
 käˊhcc:8 LÅGEV ;
-åˊhcc:9 LÅGEV ;
+ åˊhcc:9 LÅGEV ;
 
 
 
@@ -329,39 +323,39 @@ LEXICON TEENS
 !mlo:1 TEEN2 ; ! Not for sms
 
 LEXICON TEEN
-õt:1 LOHKAI ;
+  õt:1 LOHKAI ;
 kuât:2 LOHKAI ;
-kon:3 LOHKAI ;
+ kon:3 LOHKAI ;
 nenj:4 LOHKAI ;
 vitt:5 LOHKAI ;
 kutt:6 LOHKAI ;
-čin:7 LOHKAI ;
-käc:8 LOHKAI ;
-åc:9 LOHKAI ;
+ čin:7 LOHKAI ;
+ käc:8 LOHKAI ;
+  åc:9 LOHKAI ;
 
 LEXICON LOHKAI
-mlo: COMMA ;
-:%.      LOGAAT ;
+mlo:   COMMA  ;
+   :%. LOGAAT ;
 
 LEXICON LOGAAT
 lågåt: COMMA ;
 
 
 LEXICON TENS
-lååi:1%0 COMMA ; 
-kuâhtt:2 LÅGEV ;
-koumm:3 LÅGEV ;
-nellj:4 LÅGEV ;
-vitt:5 LÅGEV ;
-kutt:6 LÅGEV ;
-čičm:7 LÅGEV ;
-käˊhcc:8 LÅGEV ;
-åˊhcc:9 LÅGEV ;
+  lååi:1%0 COMMA ; 
+kuâhtt:2   LÅGEV ;
+ koumm:3   LÅGEV ;
+ nellj:4   LÅGEV ;
+  vitt:5   LÅGEV ;
+  kutt:6   LÅGEV ;
+  čičm:7   LÅGEV ;
+käˊhcc:8   LÅGEV ;
+ åˊhcc:9   LÅGEV ;
 
 LEXICON LÅGEV
 !lååi:%0 COMMA ;
-lo:%0 COMMA ;
-lo: NONINITIALCARDINAL ;
+   lo:%0 COMMA ;
+   lo:   NONINITIALCARDINAL ;
 
 
 LEXICON ONES
@@ -379,28 +373,25 @@ CARDINAL ;
 
 LEXICON CARDINAL
 
-kueˊhtt:2    COMMA ;
-koumm:3  COMMA ;
-nellj:4 COMMA ;
-
-vitt:5  COMMA ;
-kutt:6  COMMA ;
-čiččâm:7  COMMA ;
-
-
-kääuˊc:8  COMMA ;
-ååuˊc:9   COMMA ;
+kueˊhtt:2 COMMA ;
+  koumm:3 COMMA ;
+  nellj:4 COMMA ;
+   vitt:5 COMMA ;
+   kutt:6 COMMA ;
+ čiččâm:7 COMMA ;
+ kääuˊc:8 COMMA ;
+  ååuˊc:9 COMMA ;
 
 LEXICON ORDINAL ! Ordinal is still sme, and not done for sms.
-vuosttasj:1%.     COMMA ;
-nuppát:2%.   COMMA ;
-goalmát:3%.   COMMA ;
-nælját:4%. COMMA ;
-viđát:5%.   COMMA ;
-gudát:6%.   COMMA ;
-giehttjit:7%.    COMMA ;
-gávtsát:8%.   COMMA ;
-avtsát:9%.    COMMA ;
+vuosttasj:1%. COMMA ;
+   nuppát:2%. COMMA ;
+  goalmát:3%. COMMA ;
+   nælját:4%. COMMA ;
+    viđát:5%. COMMA ;
+    gudát:6%. COMMA ;
+giehttjit:7%. COMMA ;
+  gávtsát:8%. COMMA ;
+   avtsát:9%. COMMA ;
 
 LEXICON COMMA
  ENDLEX ;
