@@ -261,17 +261,17 @@ LEXICON N_ČÄÄˊCC !!= * __@CODE@__ is for nouns with ''-a'' ill ''-est'' +Loc
 +N:%^VOWL%^CShort SG-ACC ;
 +N:%^VOWSH%^CLong%^PALNo%>a SG-ILL ;
 +N:%^VOWL%^CShort%>e SG-LOC ;
-+N:%^VOWL%^CShort%^VOWBack NMN_SG-COM_IN ;
++N:%^VOWL%^CShort%^VOWRaise NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
 +N:%^VOWL%^CShort%>e PAR ;
 +N:%^VOWL%^CShort SG-ABE ;
 +N:%^VOWL%^CShort PL-NOM ;
-+N:%^VOWL%^CShort%^VOWBack PL-GEN ;
-+N:%^VOWL%^CShort%^VOWBack PL-ACC ;
-+N:%^VOWL%^CShort%^VOWBack PL-ILL ;
-+N:%^VOWL%^CShort%^VOWBack PL-LOC ;
-+N:%^VOWL%^CShort%^VOWBack PL-COM ;
-+N:%^VOWL%^CShort%^VOWBack PL-ABE ;
++N:%^VOWL%^CShort%^VOWRaise PL-GEN ;
++N:%^VOWL%^CShort%^VOWRaise PL-ACC ;
++N:%^VOWL%^CShort%^VOWRaise PL-ILL ;
++N:%^VOWL%^CShort%^VOWRaise PL-LOC ;
++N:%^VOWL%^CShort%^VOWRaise PL-COM ;
++N:%^VOWL%^CShort%^VOWRaise PL-ABE ;
 
 
 
@@ -382,7 +382,7 @@ LEXICON N_PIEˊǨˈǨ !!= * __@CODE@__ is for nouns with ''-est'' +Loc, ''a'' +I
 
 LEXICON N_E-ALowerNoPal1-11 !!= * __@CODE@__ is for nouns with ''-est'' +Loc, 
 !! N_E-ALowerNoPal1-11
-!! ** Yaml: __stuul__
+!! ** Yaml: __skuul, stuul__
 !! * There are several stem types 
 !! * stuuˊl:stuuˊl
 
@@ -476,7 +476,7 @@ LEXICON N_VUˊVLL !!= * __@CODE@__ Nouns with -est Loc and -a Ill without ˊ
 !! N_E-ALower2-31
 !! ** Yaml: __vuvll, vuvdd__
 !! * __vuˊvll:vuˊvll__
-+N:%^VOWL%^CShort%^PALNo%>a SG-ILL ; 
++N:%^VOWL%^CShort%^VOWLower%^PALNo%>a SG-ILL ; 
 +N: SG-NOM ;
 +N:%^VOWXL%^CShort SG-GEN ;
 +N:%^VOWXL%^CShort%^PAL SG-ACC ;
@@ -649,27 +649,28 @@ LEXICON N_LOOKKI !!= * __@CODE@__ is for nouns with ''-est'' +Loc
 +N:%^VOWL%^CShort PL-ABE ;
 
 LEXICON N_JUURD !!= * __@CODE@__ is for nouns with stem ''i'' + ''-est'' +Sg+Loc; all stem other than the +Sg+Nom are X3; the ''i'' does not occur in +Par 
+!! N_GEN2I-ILLAX3-LOCEX3-NOM1X1
 !! ** Yaml: __juurd__
 !! * There are several stem types 
 !! * juurd:juurd
 
 +N: SG-NOM ;
-+N:%^VOWSH%^CLong%>i SG-GEN ;
-+N:%^VOWSH%^CLong%>i SG-ACC ;
-+N:%^VOWSH%^CLong%>i%>a SG-ILL ;
-+N:%^VOWSH%^CLong%>i%>e SG-LOC ;
-+N:%^VOWSH%^CLong%>i NMN_SG-COM_IN ;
-+N:%^VOWSH%^CLong%>i%>e ESS ;
++N:i%^VOWSH%^CLong SG-GEN ;
++N:i%^VOWSH%^CLong SG-ACC ;
++N:i%^VOWSH%^CLong%>a SG-ILL ;
++N:i%^VOWSH%^CLong%>e SG-LOC ;
++N:i%^VOWSH%^CLong NMN_SG-COM_IN ;
++N:i%^VOWSH%^CLong%>e ESS ;
 +N:%^VOWSH%^CLong%>e PAR ;
-+N:%^VOWSH%^CLong%>i SG-ABE ;
++N:i%^VOWSH%^CLong SG-ABE ;
 
-+N:%^VOWSH%^CLong%>i PL-NOM ;
-+N:%^VOWSH%^CLong%>i PL-GEN ;
-+N:%^VOWSH%^CLong%>i PL-ACC ;
-+N:%^VOWSH%^CLong%>i PL-ILL ;
-+N:%^VOWSH%^CLong%>i PL-LOC ;
-+N:%^VOWSH%^CLong%>i PL-COM ;
-+N:%^VOWSH%^CLong%>i PL-ABE ;
++N:i%^VOWSH%^CLong PL-NOM ;
++N:i%^VOWSH%^CLong PL-GEN ;
++N:i%^VOWSH%^CLong PL-ACC ;
++N:i%^VOWSH%^CLong PL-ILL ;
++N:i%^VOWSH%^CLong PL-LOC ;
++N:i%^VOWSH%^CLong PL-COM ;
++N:i%^VOWSH%^CLong PL-ABE ;
 
 !! !!u-stems
 LEXICON N_MÄÄN !!= * __@CODE@__ is for nouns with ''-est'' +Loc
@@ -677,7 +678,7 @@ LEXICON N_MÄÄN !!= * __@CODE@__ is for nouns with ''-est'' +Loc
 !! * There are several stem types
 !! * mään:mään
 +N: SG-NOM ;
-+N:%^VOWXSH%^CLong%^VOWBack%^PALNo%>u SG-GEN ;
++N:%^VOWXSH%^CLong%^VOWRaise%>u SG-GEN ;
 +N: SG-ACC ;
 +N:%^VOWXSH%^CLong%>ǥa SG-ILL ;
 +N:%^VOWXSH%^VOWRaise%>u SG-LOC ;
@@ -839,20 +840,20 @@ LEXICON N_ČÂÂˊĐ !!= * __@CODE@__ = stemtype Am-stem without ''m'' in ess
 !! ** čââˊđ:čââˊđ
 +N: SG-NOM ;
 +N:%^VOWXSH%^CLong%^PALNo%>am SG-GEN ;
-+N:%^VOWSH%^CLong%^PALNo%>am SG-ACC ;
-+N:%^PALNom%>a SG-ILL ;
-+N:%^PALNom%>e SG-LOC ;
-+N:%^PALNom%> NMN_SG-COM_IN ;
++N:%^VOWSXH%^CLong%^PALNo%>am SG-ACC ;
++N:%^VOWXSH%^CLong%^PALNo%>ma SG-ILL ;
++N:%^VOWXSH%^CLong%^PALNo%>me SG-LOC ;
++N:%^VOWXSH%^CLong%^PALNo%>m NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
-+N:%^PALNo%>am SG-ABE ;
-+N:%^PALNo%>am PL-NOM ;
-+N:%^PALNo%>m PL-GEN ;
-+N:%^PALNo%>m PL-ACC ;
-+N:%^PALNo%>m PL-ILL ;
-+N:%^PALNo%>m PL-LOC ;
-+N:%^PALNo%>m PL-COM ;
-+N:%^PALNo%>m PL-ABE ;
++N:%^VOWXSH%^CLong%^PALNo%>am SG-ABE ;
++N:%^VOWXSH%^CLong%^PALNo%>am PL-NOM ;
++N:%^VOWXSH%^CLong%^PALNo%>m PL-GEN ;
++N:%^VOWXSH%^CLong%^PALNo%>m PL-ACC ;
++N:%^VOWXSH%^CLong%^PALNo%>m PL-ILL ;
++N:%^VOWXSH%^CLong%^PALNo%>m PL-LOC ;
++N:%^VOWXSH%^CLong%^PALNo%>m PL-COM ;
++N:%^VOWXSH%^CLong%^PALNo%>m PL-ABE ;
 
 
 
