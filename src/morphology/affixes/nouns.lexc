@@ -16,7 +16,8 @@ N-toll ;
 !! !!â-stems
 
 LEXICON N-toll !!= * __@CODE@__ toll:toll is for nouns with -âst Loc. N_Â-EPal3-31
-!! ** Yaml: __vorr, kidd, toll, soll, sijdd, jokk; saakk, muorr, paarr, kiapp__
+!! N_GENX1-ILLEPalX3-LOCÂ-NOM1X3
+!! ** Yaml: __vorr, kidd, toll, soll, sijdd, jokk; muorr, kiapp__
 +N: SG-NOM ;
 +N: NMN_SG-GEN_VOWXL-CSHORT ;
 +N: NMN_SG-ACC_VOWXL-CSHORT ;
@@ -36,7 +37,8 @@ LEXICON N-toll !!= * __@CODE@__ toll:toll is for nouns with -âst Loc. N_Â-EPal
 +N: NMN_PL-LOC_VOWXL-CSHORT ;
 
 LEXICON N_SAAKK !!= * __@CODE@__ saakk:saakk is for nouns with -âst Loc. N_Â-EPal2-21
-!! ** Yaml: __saakk, paarr__
+!! N_GENX1-ILLEPalX2-LOCÂ-NOM1X2
+!! ** Yaml: __saakk__
 +N: SG-NOM ;
 +N: NMN_SG-GEN_VOWL-CSHORT ;
 +N: NMN_SG-ACC_VOWL-CSHORT ;
@@ -54,9 +56,30 @@ LEXICON N_SAAKK !!= * __@CODE@__ saakk:saakk is for nouns with -âst Loc. N_Â-E
 +N: NMN_PL-ILL_VOWL-CSHORT ;
 +N: NMN_PL-LOC_VOWL-CSHORT ;
 
+LEXICON N_PAARR !!= * __@CODE@__ saakk:saakk is for nouns with -âst Loc. N_Â-EPal2-21
+!! N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
+!! ** Yaml: __paarr__
++N: SG-NOM ;
++N: NMN_SG-GEN_VOWL-CSHORT ;
++N: NMN_SG-ACC_VOWL-CSHORT ;
++N: NMN_SG-ILL_VOWSH-CLONG-PAL_E ;
++N: NMN_SG-LOC_VOWL-CSHORT_Â ;
++N: NMN_SG-COM_VOWL-CSHORT_IN ;
++N: NMN_ESS_Â ; 
++N: NMN_PAR_Â ;
++N: NMN_SG-ABE_VOWL-CSHORT ;
++N: NMN_PL-NOM_VOWL-CSHORT ;
++N: NMN_PL-ABE_VOWL-CSHORT ;
++N: NMN_PL-ACC_VOWL-CSHORT ;
++N: NMN_PL-COM_VOWL-CSHORT ;
++N: NMN_PL-GEN_VOWL-CSHORT ;
++N: NMN_PL-ILL_VOWL-CSHORT ;
++N: NMN_PL-LOC_VOWL-CSHORT ;
+
 
 
 LEXICON N_LUUKK !!= * __@CODE@__ luukk:luukk is for nouns with -âst Loc and no gradation. N_Â-EPal1-11, N_Â-EPal2-22
+!! N_GENX1-ILLEPalX1-LOCÂ-NOM1X1
 !! ** Yaml: __saarf, luukk__
 +N: SG-NOM ;
 +N: SG-GEN ;
@@ -303,7 +326,7 @@ LEXICON N-piess !!= * __@CODE@__ is for nouns with ''-est'' +Loc, voicing of ''s
 +N:%^VOWL%^CShort PL-ABE ;
 
 LEXICON N_KLAAˊDD !!= * __@CODE@__ is for nouns with ''-est'' +Sg+Loc; ''e'' +Sg+Ill; X2 no gradation; no lowering no raising
-!! N_E-E2-22
+!! N_GEN1-ILLEX1-LOCE-NOM1X1
 !! ** Yaml: __klaadd__
 !! * There are several stem types 
 !! * klaaˊdd:klaaˊdd
@@ -453,8 +476,9 @@ LEXICON COMMON_E_A_STEM
 !! !!e-a-stems
 
 LEXICON N-ress !!= * __@CODE@__ Nouns with -est Loc and -a Ill without ˊ
+!! N_E-ANoPal3-32
 !! ** Yaml: __ress__
-+N+Sg+Ill:%^PALNo%>a K ; 
++N:%^PALNo%>a SG-ILL ; 
 +N: SG-NOM ;
 +N:%^VOWL%^CShort SG-GEN ;
 +N:%^VOWL%^CShort%^PAL SG-ACC ;
@@ -648,6 +672,27 @@ LEXICON N_LOOKKI !!= * __@CODE@__ is for nouns with ''-est'' +Loc
 +N:%^VOWL%^CShort PL-COM ;
 +N:%^VOWL%^CShort PL-ABE ;
 
+LEXICON N_SÄRNNAI !!= * __@CODE@__ is for nouns with ''-est'' +Loc
+!! ** Yaml: __sarnnai__
+!! * There are several stem types
+!! * särnnai:särnnai
++N: SG-NOM ;
++N:%^VOWL%^CShort SG-GEN ;
++N:%^VOWL%^CShort SG-ACC ;
++N:%>a SG-ILL ;
++N:%>e SG-LOC ;
++N:%^VOWL%^CShort SG-COM_N ;
++N:%>e ESS ; ! ess and prt without
++N:%>e PAR ;
++N:%^VOWL%^CShort SG-ABE ;
++N:%^VOWL%^CShort PL-NOM ;
++N:%^VOWL%^CShort PL-GEN ;
++N:%^VOWL%^CShort PL-ACC ;
++N:%^VOWL%^CShort PL-ILL ;
++N:%^VOWL%^CShort PL-LOC ;
++N:%^VOWL%^CShort PL-COM ;
++N:%^VOWL%^CShort PL-ABE ;
+
 LEXICON N_JUURD !!= * __@CODE@__ is for nouns with stem ''i'' + ''-est'' +Sg+Loc; all stem other than the +Sg+Nom are X3; the ''i'' does not occur in +Par 
 !! N_GEN2I-ILLAX3-LOCEX3-NOM1X1
 !! ** Yaml: __juurd__
@@ -775,6 +820,7 @@ LEXICON N_ǨEÂLǤAL !!= * __@CODE@__ = stemtype n-stem ǩeâlǥal:ǩeâlǥal
 
 
 LEXICON N_KÕÕNJÂL !!= * __@CODE@__ = stemtype n-stem kõõnjâl:kõõnjâl
+!! N_GEN2X3-NOM2X1
 !! ** Yaml: __koonjal__
 +N: SG-NOM ;
 +N:%^VOWXSH%^CLong SG-GEN ;
@@ -965,8 +1011,24 @@ LEXICON 21	  !!= * __@CODE@__ = Koulukielioppi stemtype II 1
 LEXICON 23	  !!= * __@CODE@__ = Koulukielioppi stemtype II 3
 +N+Sg+Nom: # ;
 
-LEXICON 24	  !!= * __@CODE@__ = Koulukielioppi stemtype II 4
-+N+Sg+Nom: # ;
+LEXICON 24	  !!= * __@CODE@__ = Koulukielioppi stemtype II 4 (cieˊǩǩes)
+!! ** Yaml: __ciekkes__
++N: SG-NOM ;
++N:%^VOWSH%^CLong%^VOWLower%^PALNo%^VC SG-GEN ;
++N:%^VOWSH%^CLong%^VOWLower%^PALNo%^VC SG-ACC ;
++N:%^VOWSH%^CLong%^VOWLower%^PALNo%^RmVow%>a SG-ILL ;
++N:%^VOWSH%^CLong%^VOWLower%^PALNo%^RmVow%>e SG-LOC ;
++N:%^VOWSH%^CLong%^VOWLower%^PALNo%^RmVow SG-COM_IN ;
++N:%^VOWSH%^CLong%^VOWLower%^PALNo%^RmVow%>e ESS ;
++N:%^VOWSH%^CLong%^VOWLower%^PALNo%^RmVow%>e PAR ;
++N:%^VOWSH%^CLong%^VOWLower%^PALNo%^VC SG-ABE ;
++N:%^VOWSH%^CLong%^VOWLower%^PALNo%^VC PL-NOM ;
++N:%^VOWSH%^CLong%^VOWLower%^PALNo%^RmVow PL-GEN ;
++N:%^VOWSH%^CLong%^VOWLower%^PALNo%^RmVow PL-ACC ;
++N:%^VOWSH%^CLong%^VOWLower%^PALNo%^RmVow PL-ILL ;
++N:%^VOWSH%^CLong%^VOWLower%^PALNo%^RmVow PL-LOC ;
++N:%^VOWSH%^CLong%^VOWLower%^PALNo%^RmVow PL-COM ;
++N:%^VOWSH%^CLong%^VOWLower%^PALNo%^RmVow PL-ABE ;
 
 LEXICON 25	  !!= * __@CODE@__ = Koulukielioppi stemtype II 5 N_NJUÄˊMMEL
 +N+Sg+Nom: # ;
@@ -1154,6 +1216,9 @@ LEXICON NMN_SG-ILL_PAL_E
 
 LEXICON NMN_SG-ILL_VOWSH-PAL_E
 :%^VOWSH%^PAL%>e SG-ILL ;
+
+LEXICON NMN_SG-ILL_VOWSH-CLONG-PAL_E
+:%^VOWSH%^CLong%^PAL%>e SG-ILL ;
 
 LEXICON NMN_SG-ILL_VOWSH-CLONG-RMVOW_A
 :%^VOWSH%^CLong%^RmVow%>a SG-ILL ;
