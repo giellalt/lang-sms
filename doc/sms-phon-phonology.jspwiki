@@ -11,20 +11,20 @@ The rule file for Skolt Saami is divided into 5 main types:
 # Rules for cleaning up and composing end result
 
 
-Alphabets, sets and definitions
+!!!Alphabets, sets and definitions
 
-Alphabet
+!!Alphabet
 
  *   a b c d e f g h i ï j k l m n o p q r s t u v w x y z 
  *   A B C D E F G H I Ï J K L M N O P Q R S T U V W X Y Z 
- *   æ ä ø ö å á é í										
- *   Å Ä Ö Ø Æ Á											
- *   Á É Ó Ú Í À È Ò Ù Ì Ë Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð			
+ *   æ ä ø ö å á é í					
+ *   Å Ä Ö Ø Æ Á						
+ *   Á É Ó Ú Í À È Ò Ù Ì Ë Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð		
  *   á é ó ú í à è ò ù ì ë ü ï â ê ô û î ã ý þ ñ ð ß ª ß ç	
- *   č ǩ ǯ ǧ ž đ ǥ ʒ š ŋ									
- *   Č Ǩ Ǯ Ǧ Ž Đ Ǥ Ʒ Š Ŋ									
- *   õ â													
- *   Õ Â													
+ *   č ǩ ǯ ǧ ž đ ǥ ʒ š ŋ					
+ *   Č Ǩ Ǯ Ǧ Ž Đ Ǥ Ʒ Š Ŋ					
+ *   õ â							
+ *   Õ Â							
 
 * Vertical line: as overlong consonant marker that does not appear in writing 
 * Upper right single quotation mark: Syllable marker that appears in writing 
@@ -53,11 +53,11 @@ Trigger symbols
  *  %{E1%}:0  used with "kåˊmrded" to bow
  *  %{%ˊ%}:0  archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one.
  *  %{EÂ%}:e  archiform for ie:eâ variation
- *  %^IMPSG2:0	     
+ *  %^IMPSG2:0	 
  *  %^INDPRSSG3:0   
- *  %^FRICG:0	     
+ *  %^FRICG:0	 
  *  %^VOWTense:0    â:e
- *  %^VOWLax:0    e:â 
+ *  %^VOWLax:0      e:â 
 
 Literal quotes and angles must be escaped (cf morpheme boundaries below):
 
@@ -66,65 +66,55 @@ Literal quotes and angles must be escaped (cf morpheme boundaries below):
 * >
 * <
 
+Morpheme boundaries:
 
+End of alphabet definitions
 
 
 !!Sets
 
  *  Cns	= b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ; 
- *  CNoV	= b c d f g h j k l m n p q r s t w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ; 
+ *  CNoV	= b c d f g h j k l m n p q r s t w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ;   
 
- *  CNoJ	= b c d f g h k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ; 
- *           A E I O U Å Ä Â Õ ;	    
+ *  CNoJ	= b c d f g h k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ;   
+ *  Vow	= a e i o u å ä â õ           	      	      	      	        
+ *           A E I O U Å Ä Â Õ ;	    				        
 
- *  CNoJV  = b c d f g h k l m n p q r s t w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ;    
+ *  CNoJV  = b c d f g h k l m n p q r s t w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž ;     
+ *  CNoDLRZ = b c f g h j k m n p q s t v w x z đ ǯ č ŋ ǩ ǧ ǥ š ž ;        
 
- *  CNoDLRZ = b c f g h j k m n p q s t v w x z đ ǯ č ŋ ǩ ǧ ǥ š ž ; 
 
-
-Definitions
+!!Definitions
 
 {{{
  * ShortV2XL = [ 0:a a | 0:ä a:ä ] ;  
-}}}
 
-{{{
  * LongV2SH = [ a:0 a | â:0 â | ä:0 ä | e:0 e | i:0 i | å:0 å | o:0 o | u:0 u | õ:0 õ | a:0 a:ä | â:0 â:õ | ä:0 ä:a | ä:0 ä:a | e:0 e:i | i:0 i:e | å:0 å:o | o:0 o:u | u:0 u:o | õ:0 õ:â ] ;  
-}}}
 
-{{{
  * Diphth = [ e â | e:i â:õ | e ä | e:i ä:â | e:i ä:e | i â | i:e â:ä | i â:e | i e | i:e e:â | i:e e:ä | i e:õ | i õ | i:e õ:â | i:e õ:ä | u â | u â:õ | u e | u e:â | u e:õ | u e:ä | u õ | u õ:â | u õ:e | u å | u å:ä | u å:e | u ä | u ä:å | u ä:e ] ;  
-}}}
 
-{{{
  * DbVow = [ a a | a:ä a:ä | i i | i:e i:e | o o | o:å o:å | õ õ | õ:â õ:â | u u | u:o u:o | â â | â:õ â:õ | e e | e e:ä | e ä:e | e:i e:i | å å | å:o å:o | ä ä | ä:a ä:a ] ;  
-}}}
 
-{{{
  * 2DbVow = [ 0:a a | 0:a ä:a | 0:i i | 0:i e:i | 0:o o | 0:o u:o | 0:o å:o | 0:õ õ | 0:õ â:õ | 0:u u | 0:u o:u | 0:â â | 0:e e | 0:å å | 0:å o:å | 0:ä ä ] ;  
-}}}
 
-{{{
  * AllDbVow = [ DbVow | 2DbVow ] ;  
-}}}
 
-{{{
  * 2SgVow = [ a:0 a | a:0 a:ä | i:0 i | i:0 i:e | o:0 o | o:0 o:å | õ:0 õ | õ:0 õ:â | u:0 u | u:0 u:o | â:0 â | â:0 â:õ | e:0 e | e:0 e:i | å:0 å | å:0 å:o |  ä:0 ä | ä:0 ä:a ] ;  
-}}}
 
-{{{
  * SurfLongVow = [ Diphth | AllDbVow ] ;  
-}}}
 
-{{{
  * 2ShortVow = [ Diphth | 2SgVow ] ;  
-}}}
 
 
-{{{
+ * CC = [ b b | c c | č č | ǯ ǯ | d d | đ đ | g g | ǧ ǧ | k k | ǩ ǩ | l l | m m | n n | p p | r r | s s | š š | t t | v v | h t t | n n j ] ; 
+
  * LongC = [ k: k: | s: s: | š: š: | c: c: | č: č: | m m: | v v: | đ đ: | n n: | l l: | r r: ] ;  
 }}}
 
+preceded by two vowels VxVx, VxVy
+{{{
+ * DiphthwithCC = [ k:ǥ k:ǥ | s:z s:z | š:ž š:ž | c:ʒ c:ʒ | č:j č:j | m m:0 | v v:0 | đ đ:0 | n n:0 | l l:0 | r r:0 ] ; 
+}}}
 
 preceded by two vowels
 {{{
@@ -134,24 +124,23 @@ preceded by two vowels
 preceded by one vowel Vx=>VxVx påll=>pååll
 {{{
  * V2VVwithCC =  [ b b | p p | m m | v v |  d d | t t | đ đ | n n | l l | r r | s s | š š | c c | č č |  k k | ǩ ǩ | g g | ǧ ǧ | ǧ:g ǧ:g | ǧ:ǥ ǧ:ǥ  ] ;  
-}}}
 
-{{{
  * CC2CafterV2VVinI = [  i ( %ˊ: | 0:%ˊ ) [ b b:0 | ʒ ʒ:0 | d d:0 | g g:0 | k k:0 | ǩ ǩ:0 | l l:0 | m m:0 | n n:0 | p p:0 | r r:0 | t t:0 | v v:0 ] ] ;  
+
  * CC2CafterV2VVinU = [  [ u | %{VU%}:u ] ( %ˊ: | 0:%ˊ ) [ ʒ ʒ:0 | d d:0 | g g:0 | k k:0 | ǩ ǩ:0 | l l:0 | m m:0 | n n:0 | p p:0 | r r:0 | t t:0 ] ] ;  
 }}}
 
-extra long vowel( u | i )
+extra long vowel ( u or i )
 {{{
  * CC2CafterV2VVandUI = [ CC2CafterV2VVinU | CC2CafterV2VVinI ] ;   
 }}}
 
-extra long vowel( d | l | r )
+extra long vowel ( d or l or r )
 {{{
  * CC2CafterV2VV = [ l [ b b:0 | ǧ:j ǧ:0 | ǧ:ǥ ǧ:0 | m m:0 | t t:0 ] | m p p:0 | p c c:0 | r [ d d:0 | n n:0 ] | s [ k: k:0 | ǩ: ǩ:0 | t t:0 ] ] ;  
 }}}
 
-extra long consonant ( d | l | r )
+extra long consonant ( d or l or r )
 {{{
  * C2CCafterVV2V = [ l [ b 0:b | j:ǧ 0:ǧ | ǥ:ǧ 0:ǧ | m 0:m | t 0:t ] | m p 0:p | p c 0:c | r d 0:d | s [ :k 0:k | :ǩ 0:ǩ | t 0:t ] ] ;  
 }}}
@@ -169,12 +158,26 @@ following morpheme or word boundary
 
 relative lengthening of vowel right context following vowel:vowel
 0:õ <=> OnSetC _ :õ RelVowLengthening
+{{{
+ * RelVowLengthening = [ ( %ˊ: | 0:%ˊ ) [ V2VVwithCC  %^VOWL: %^CShort: | CC2CafterV2VV ( a: i: ) %^VOWL: %^CShort: | CC2CafterV2VVandUI %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) | [ k | n ] %^VOWL: ]  ] ; 
+}}}
 
 relative lengthening of vowel right context following vowel:vowel
 0:i <=> OnSetC _ :i RelVowLengtheningNOTi
+{{{
+ * RelVowLengtheningNOTi = [ ( %ˊ: | 0:%ˊ ) [ V2VVwithCC  %^VOWL: %^CShort: | [ CC2CafterV2VV | CC2CafterV2VVinU ] %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) ] ] ; 
+}}}
+
+
+
+
 
 relative lengthening of vowel right context following vowel:vowel
 0:u <=> OnSetC _ :u RelVowLengtheningNOTu
+{{{
+ * RelVowLengtheningNOTu = [ ( %ˊ: | 0:%ˊ ) [ V2VVwithCC  %^VOWL: %^CShort: | [ CC2CafterV2VVinI | CC2CafterV2VV ] %^VOWL: %^CShort: | LongC2SH %^VOWXL: ( %^CShort: ) ] ] ; 
+}}}
+
 
 possible triggers before VOWLower and VOWRaise
 {{{
@@ -198,20 +201,19 @@ neutral to vowel height and backness
 
 neutral to vowel and consonant length
 {{{
-
  * NeutrGrade = [( [ %^VOWL: | %^VOWXL: ] ( %^FRICG:0 ) ( %^CShort: ) | [ %^VOWSH:  | %^VOWXSH: ] ( %^CLong: ) )] ;  
 }}}
 
 
 
-X3 = C Vx Cx Cx     C Vx Vy Cx ' Cx
-X2 = C Vx Vx Cx Cx  C Vx Vy Cx Cx
-X1 = C Vx Vx Cx     C Vx Vy Cx
+* X3 = C Vx Cx Cx     C Vx Vy Cx ' Cx
+* X2 = C Vx Vx Cx Cx  C Vx Vy Cx Cx
+* X1 = C Vx Vx Cx     C Vx Vy Cx
 
- !!! Rules 
-Rules 
 
-Vowel shortening rules 
+!!!Rules
+
+!!Vowel shortening rules 
 (tbw)
 
 
