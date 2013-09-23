@@ -261,8 +261,8 @@ Rules
  e:0 <=> OnSetC _ e: (%ˊ:|0:%ˊ) [LongC|Cns: :Cns*] [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ; !!= @CODE@
          [Cns:+|:Cns+] _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] (%^VOWSH: (%^CLong:)|%^VC:) %^RmVow: ; !!= @CODE@
          OnSetC _ e: (%ˊ:|0:%ˊ) Cns:+ Vow: Cns %^VOWSH: ; !!= @CODE@
-!! deriving +N+Sg+Ill: ceäkˈksa
-  OnSetC :Vow+ (%ˊ:|0:%ˊ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] _  s: [%^VOWSH: %^CLong:| %^VOWXSH: %^CLong:]  %^VOWLower: (X3:) (%^PALNo:|%^PAL:)  %^RmVow: ; !!= @CODE@
+!! deriving cieˊǩǩes+N+Sg+Ill: ceäkˈksa
+  OnSetC :Vow+ (%ˊ:|0:%ˊ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] _  s: [%^VOWSH: %^CLong:| %^VOWXSH: %^CLong:]  %^VOWLower: (%^VOWBack:) (X3:) (%^PALNo:|%^PAL:)  %^RmVow: ; !!= @CODE@
 !! }}}
 
 "Even syllabic verbs I, vowel shortening å:0"
@@ -317,6 +317,14 @@ Rules
 !! }}}
 
 
+"ZERO to syllable mark 0:ʼ"
+!! __@RULENAME@__ - used in zeeˊtt+N+Sg+Abe: zeeˊttʼtää
+!! {{{
+ 0:ʼ <=> OnSetC :Vow+ (%ˊ:|0:%ˊ)  Cns:* Cx Cx %>:  _ Cx ; !!= @CODE@
+         where Cx in (t) ;
+!! }}}
+
+
 
 "Even syllabic verbs I, vowel shortening ä:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
@@ -358,7 +366,9 @@ Rules
 "Even syllabic verbs I, vowel raising e:i"
 !! __@RULENAME@__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
 !! {{{
- e:i <=>   [e:|e:0|0:i] _ (%ˊ:|0:%ˊ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  PrecedeVOWLowerRaise %^VOWRaise: ; !!= @CODE@
+ e:i <=>
+!!
+  OnSetC  [e:|e:0|0:i] _ (%ˊ:|0:%ˊ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  PrecedeVOWLowerRaise %^VOWRaise: ; !!= @CODE@
   OnSetC _ (u:) (%ˊ:|0:%ˊ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] PrecedeVOWLowerRaise %^VOWRaise: ; !!= @CODE@
 ! diphthong raising with e:i at onset - deriving +Ind+Prt+Pl3 in reäkkad > riâkku, veârrad > viõrru
   _ [ä:|â: ] (%ˊ:|0:%ˊ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  PrecedeVOWLowerRaise  %^VOWRaise: ; !!= @CODE@
@@ -526,7 +536,7 @@ Rules
 "Vowel in second syllable e:a"
 !! __@RULENAME@__ - deriving cieˊǩǩes+N+Sg+Gen: ceäkˈkaz
 !! {{{
- e:a <=> OnSetC :Vow+ (%ˊ:|0:%ˊ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] _ s: [%^VOWSH: %^CLong:|%^VOWXSH: %^CLong:] %^VOWLower: (X3:) (%^PALNo:|%^PAL:) %^VC: ; !!= @CODE@
+ e:a <=> OnSetC :Vow+ (%ˊ:|0:%ˊ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] _ s: [%^VOWSH: %^CLong:|%^VOWXSH: %^CLong:] %^VOWLower: (%^VOWBack:) (X3:) (%^PALNo:|%^PAL:) %^VC: ; !!= @CODE@
 !! }}}        
 
 "Even syllabic verbs I, diphthong opening i:e â:ä"
@@ -545,7 +555,7 @@ Rules
 "Even syllabic verbs I, diphthong opening after u e:â"
 !! __@RULENAME@__ - deriving vueˊlǧǧed+V+Ind+Prs+Pl3: vuâˊlǧǧe
 !! {{{
- e:â <=> [u|i:] _ (%ˊ:|0:%ˊ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^VOWL: (%^FRICG:) %^CShort:|%^VOWSH: (%^CLong:)) %^VOWLower: %^VOWBack: ; !!= @CODE@
+ e:â <=> [u|i:] _ (%ˊ:|0:%ˊ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (e: s:) (%^VOWL: (%^FRICG:) %^CShort:|%^VOWSH: (%^CLong:)) %^VOWLower: %^VOWBack: ; !!= @CODE@
 !! }}}
 
 !! !Vowel backing
@@ -955,9 +965,9 @@ Rules
 !! {{{
  l:0 <=>
 !! deriving 
- [SurfLongVow (%ˊ:|0:%ˊ)|u: (%ˊ:) v:u (0:%ˊ)] l: _  %^VOWXL: (%^CShort:) ; !!= @CODE@
+ [SurfLongVow (%ˊ:|0:%ˊ) |u: (%ˊ:) v:u (0:%ˊ)] l: _  %^VOWXL: (%^CShort:) ; !!= @CODE@
 !! deriving påll+N+Sg+Gen: pååll
- [DbVow|Diphth] (%ˊ:|0:%ˊ) l: _  %^VOWL: %^CShort: ; !!= @CODE@
+ [[DbVow|Diphth]|SurfLongVow u](%ˊ:|0:%ˊ) l: _  %^VOWL: %^CShort: ; !!= @CODE@
 !! }}}
 
 "Even syllabic verbs I, cg for g"
@@ -1181,7 +1191,7 @@ Rules
 "Consonant lengthening 0:l"
 !! __@RULENAME@__ - 
 !! {{{
- 0:l <=>  2ShortVow  (%ˊ:)  l _ [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ; !!= @CODE@
+ 0:l <=>  2ShortVow  (%ˊ:)  l _ (e: s:) [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ; !!= @CODE@
 !! }}}
 
 "Consonant lengthening 0:g"
