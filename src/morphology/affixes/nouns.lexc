@@ -700,7 +700,7 @@ LEXICON N_JUURD !!= * __@CODE@__ is for nouns with stem ''i'' + ''-est'' +Sg+Loc
 !! * juurd:juurd
 
 +N: SG-NOM ;
-+N:i%^VOWSH%^CLong SG-GEN ;
++N:%^VOWXSH%^CLong%>i SG-GEN ;
 +N:i%^VOWSH%^CLong SG-ACC ;
 +N:i%^VOWSH%^CLong%>a SG-ILL ;
 +N:i%^VOWSH%^CLong%>e SG-LOC ;
@@ -716,6 +716,30 @@ LEXICON N_JUURD !!= * __@CODE@__ is for nouns with stem ''i'' + ''-est'' +Sg+Loc
 +N:i%^VOWSH%^CLong PL-LOC ;
 +N:i%^VOWSH%^CLong PL-COM ;
 +N:i%^VOWSH%^CLong PL-ABE ;
+
+LEXICON N_MUUƷ !!= * __@CODE@__ is for nouns with stem ''i'' + ''-est'' +Sg+Loc; all stem other than the +Sg+Nom are X3; the ''i'' does not occur in +Par 
+!! N_GENIX3-ILLǤAX3-LOCEX3-NOM1X1
+!! ** Yaml: __muuz__
+!! * There are several stem types 
+!! * muuʒ:muvʒʒi
+
++N: SG-NOM ;
++N:%^VOWXSH%^CLong%>i SG-GEN ;
++N:%^VOWSH%^CLong%>i SG-ACC ;
++N:%^VOWSH%^CLong%>ǥa SG-ILL ;
++N:%^VOWSH%^CLong%>e SG-LOC ;
++N:%^VOWSH%^CLong NMN_SG-COM_IN ;
++N:%^VOWSH%^CLong%>e ESS ;
++N:%^VOWSH%^CLong%>e PAR ;
++N:%^VOWSH%^CLong%>i SG-ABE ;
+
++N:i%^VOWSH%^CLong PL-NOM ;
++N:i%^VOWSH%^CLong PL-GEN ;
++N:i%^VOWSH%^CLong PL-ACC ;
++N:i%^VOWSH%^CLong PL-ILL ;
++N:i%^VOWSH%^CLong PL-LOC ;
++N:i%^VOWSH%^CLong PL-COM ;
++N:%^VOWXSH%^CLong%>i PL-ABE ;
 
 !! !!u-stems
 LEXICON N_MÄÄN !!= * __@CODE@__ is for nouns with ''-est'' +Loc
@@ -874,6 +898,25 @@ LEXICON N-laajj !!= * __@CODE@__ = stemtype Âm-stem
 +N:%>e PAR ; ! ess and prt without m?
 +N:âm SG-ABE ;
 +N:âm PL-NOM ;
++N:m PL-GEN ;
++N:m PL-ACC ;
++N:m PL-ILL ;
++N:m PL-LOC ;
++N:m PL-COM ;
++N:m PL-ABE ;
+
+LEXICON N_VUEˊN !!= * __@CODE@__ = stemtype Am-stem
+!! ** Yaml: __vuen__
++N: SG-NOM ; ! 
++N:%^VOWXSH%^CLong%^VOWLower%^VOWBack%^PALNo%>am SG-GEN ;
++N:am SG-ACC ;
++N:m%>a SG-ILL ;
++N:m%>e SG-LOC ;
++N:m%> NMN_SG-COM_IN ;
++N:%>e ESS ; ! ess and prt without m?
++N:%>e PAR ; ! ess and prt without m?
++N:am SG-ABE ;
++N:am PL-NOM ;
 +N:m PL-GEN ;
 +N:m PL-ACC ;
 +N:m PL-ILL ;
