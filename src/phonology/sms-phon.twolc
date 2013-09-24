@@ -777,7 +777,7 @@ Rules
 "Realization for %{E1%} in a" 
 !! __@RULENAME@__ - 
 !! {{{
- %{E1%}:a <=> _ (ˊ:|0:ˊ|ʼ:) [i|Cns:+] (%^VOWL:) %^INDPRSSG3: ; !!= @CODE@
+ %{E1%}:a <=> _ (ˊ:|0:ˊ) [i|Cns:+] (%^VOWL:) %^INDPRSSG3: ; !!= @CODE@
 !! }}}
 
 "Realization for %{Â1%} in a" 
@@ -1011,16 +1011,21 @@ Rules
 "Even syllabic verbs I, Voicing š:ž" 
 !! __@RULENAME@__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
 !! {{{
- š:ž <=> SurfLongVow (ˊ:|0:ˊ) š: _ (%^VOWL:|%^VOWXL:) %^CShort: ; !!= @CODE@
-         SurfLongVow (ˊ:|0:ˊ) _ š: (%^VOWL:|%^VOWXL:) %^CShort: ; !!= @CODE@
-         _ %^VC: ; !!= @CODE@
+ š:ž <=> 
+ OnSetC [Diphth|DbVow] (ˊ:|0:ˊ) š:       _          %^VOWL:   %^CShort: ; !!= @CODE@ 
+         OnSetC [Diphth|DbVow] (ˊ:|0:ˊ)          _       š: %^VOWL:   %^CShort: ; !!= @CODE@ 
+         OnSetC   Diphth       (ˊ:|0:ˊ) š:  %ˈ:  _          %^VOWXL: (%^CShort:) ; !!= @CODE@ 
+         OnSetC   Diphth       (ˊ:|0:ˊ)          _ %ˈ:   š: %^VOWXL: (%^CShort:) ; !!= @CODE@ 
+         OnSetC   AllDbVow     (ˊ:|0:ˊ) š: (%ˈ:) _          %^VOWXL: (%^CShort:) ; !!= @CODE@ 
+         OnSetC   AllDbVow     (ˊ:|0:ˊ)          _ (%ˈ:) š: %^VOWXL: (%^CShort:) ; !!= @CODE@ 
+!         _ %^VC: ; !!= @CODE@
 !! }}}
 
 "Even syllabic verbs I, Voicing c:ʒ"
 !! __@RULENAME@__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
 !! {{{
  c:ʒ <=> SurfLongVow (ˊ:|0:ˊ) c: _    (%^VOWL:|%^VOWXL:) %^CShort: ; !!= @CODE@
-         SurfLongVow (ˊ:|0:ˊ)    _ c: (%^VOWL:|%^VOWXL:) %^CShort: ; !!= @CODE@ 
+         SurfLongVow (ˊ:|0:ˊ)    _ c: (%^VOWL:|%^VOWXL:) %^CShort: ; !!= @CODE@
                                    _ %^VC: ; !!= @CODE@
 !! }}}
 

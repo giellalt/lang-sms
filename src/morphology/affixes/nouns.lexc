@@ -351,6 +351,16 @@ LEXICON N_KLAAˊDD !!= * __@CODE@__ is for nouns with ''-est'' +Sg+Loc; ''e'' +S
 +N: PL-COM ;
 +N: PL-ABE ;
 
+LEXICON N_X-MÕŠ
++N: NMN_X-MÕŠ ;
+
+LEXICON NMN_X-MÕŠ
+!! this allows for deverbal nouns porrmõš and also -umuš
+ SG-NOM ;
+:%>â ESS ;
+:%>â PAR ;
+:š NMN_OBL-ČÂUSTÕK ;
+
 LEXICON N_X-EEI !!= * __@CODE@__ is for nouns with ''-est'' +Sg+Loc; ''e'' +Sg+Ill; X2 no gradation; no lowering no raising
 !! N_XX-1_GEN1-ILLAX1-LOCE-NOM1X1
 !! ** Yaml: ____
@@ -793,21 +803,25 @@ LEXICON N_MÄÄN !!= * __@CODE@__ is for nouns with ''-est'' +Loc
 LEXICON N_ČÂUSTÕK !!= * __@CODE@__ = stemtype 
 !! ** Yaml: caustok
 +N: SG-NOM ;
-+N:k%^VOWXL%^CShort SG-GEN ;
-+N:k%^VOWXL%^CShort SG-ACC ;
-+N:k%^VOWSH%^CLong%^PAL%>e SG-ILL ;
-+N:k%^VOWXL%^CShort%>â SG-LOC ;
-+N:k%^VOWXL%^CShort%> NMN_SG-COM_IN ;
-+N:k%>â ESS ; ! ess and prt without
++N:k%>â ESS ; 
 +N:k%>â PAR ;
-+N:k%^VOWXL%^CShort SG-ABE ;
-+N:k%^VOWXL%^CShort PL-NOM ;
-+N:k%^VOWXL%^CShort PL-GEN ;
-+N:k%^VOWXL%^CShort PL-ACC ;
-+N:k%^VOWXL%^CShort PL-ILL ;
-+N:k%^VOWXL%^CShort PL-LOC ;
-+N:k%^VOWXL%^CShort PL-COM ;
-+N:k%^VOWXL%^CShort PL-ABE ;
++N:k NMN_OBL-ČÂUSTÕK ;
+
+LEXICON NMN_OBL-ČÂUSTÕK
+!! čâustõk+N+Sg+Gen:čâustõõǥǥ
+:%^VOWXL%^CShort SG-GEN ;
+:%^VOWXL%^CShort SG-ACC ;
+:%^VOWSH%^CLong%^PAL%>e SG-ILL ;
+:%^VOWXL%^CShort%>â SG-LOC ;
+:%^VOWXL%^CShort%> NMN_SG-COM_IN ;
+:%^VOWXL%^CShort SG-ABE ;
+:%^VOWXL%^CShort PL-NOM ;
+:%^VOWXL%^CShort PL-GEN ;
+:%^VOWXL%^CShort PL-ACC ;
+:%^VOWXL%^CShort PL-ILL ;
+:%^VOWXL%^CShort PL-LOC ;
+:%^VOWXL%^CShort PL-COM ;
+:%^VOWXL%^CShort PL-ABE ;
 
 LEXICON N_DURAK !!= * __@CODE@__ = stemtype 
 !! ** Yaml: durak
