@@ -511,7 +511,7 @@ Rules
    OnSetC _ ((ˊ:) (v:u|j:i)) (ˊ:|0:ˊ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^VOWSH: %^CLong:) %^VOWLower: (%^VOWFront:|%^VOWBack:) (X3:) (%^PALNo:|%^PAL:) RBound ; !!= @CODE@
 ! diphthong opening after u
 ! - deriving +Ind+Prs+Sg3, in kuõskkâd kueˊsǩǩe
-        u _ (ˊ:|0:ˊ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^VOWL: (%^FRICG:0) %^CShort:)  %^VOWLower: (X3:) (%^PALNo:|%^PAL:) RBound ; !!= @CODE@
+        u _ (ˊ:|0:ˊ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^VOWL: (%^FRICG:0) %^CShort:)  %^VOWLower: (X3:) (%^PALNo:) RBound ; !!= @CODE@
 ! diphthong opening õ:â after i:e
 ! - deriving +Ind+Prs+Sg3, in čiõkkâd
        i: _ (ˊ:|0:ˊ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^VOWL: %^CShort:)  %^VOWLower: (X3:)  %^PALNo: RBound ; !!= @CODE@
@@ -580,7 +580,9 @@ Rules
 "Even syllabic verbs I, diphthong opening õ:ä after i:e"
 !! __@RULENAME@__ - deriving +Ind+Prs+Sg3, in čiõkkâd
 !! {{{
- õ:ä <=> [i:e|u] _ (ˊ:|0:ˊ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  (%^VOWSH: (%^FRICG:0) %^CLong:|%^VOWL: %^CShort:) %^VOWLower: %^VOWFront: ; !!= @CODE@
+ õ:ä <=>
+ i:e _ (ˊ:|0:ˊ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  (%^VOWSH: (%^FRICG:0) %^CLong:|%^VOWL: %^CShort:) %^VOWLower: %^PAL: ; !!= @CODE@
+ u _ (ˊ:|0:ˊ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  (%^VOWSH: (%^FRICG:0) %^CLong:|%^VOWL: %^CShort:) %^VOWLower: %^VOWFront: ; !!= @CODE@
 !! }}}
 
 
@@ -592,8 +594,9 @@ Rules
 "Even syllabic verbs I, secondary vowel fronting with PAL u õ:e"
 !! __@RULENAME@__ - deriving +Ind+Prs+Pl3 in VIQQAD: kuõskkâd >kueˊsǩǩe
 !! {{{
- õ:e <=> u _ (%ˊ:|0:%ˊ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^VOWSH: %^CLong:|%^VOWL: %^CShort:)  %^VOWFront: (X3:) %^PAL: RBound ; !!= @CODE@ ! deriving +V+Inf in vueˊlǧǧed
-         i _ (%ˊ:|0:%ˊ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]                                        %^VOWFront:       %^PAL: %> ; !!= @CODE@
+ õ:e <=> u _ (%ˊ:|0:%ˊ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^VOWSH: %^CLong:|%^VOWL: %^CShort:)  %^VOWLower: (X3:) %^PAL: RBound ; !!= @CODE@ ! deriving +V+Inf in vueˊlǧǧed
+! u _ (%ˊ:|0:%ˊ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^VOWSH: %^CLong:|%^VOWL: %^CShort:)  %^VOWFront: (X3:) %^PAL: RBound ; !!= @CODE@ ! deriving +V+Inf in vueˊlǧǧed
+!         i _ (%ˊ:|0:%ˊ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]                                        %^VOWFront:       %^PAL: %> ; !!= @CODE@
 !! }}} 
 
 
@@ -740,7 +743,7 @@ Rules
 "trisyllabic verbs and doer derivations, i>j"
 !! __@RULENAME@__ -
 !! {{{
- i:j <=> _ %> Vow: ; !!= @CODE@
+ i:j <=> _ %> Vow ; !!= @CODE@
 !! }}}
 
 !! !VOWELS TENSE vs LAX 2012-11-28
@@ -749,7 +752,7 @@ Rules
 "Even-syllabic nouns, for â:e"
 !! __@RULENAME@__ - miârr:mieˊrre; ǩiâpp:ǩieˊpˈpe
 !! {{{
- â:e <=> i _ (ˊ: |0:ˊ) [Cns:+|Cns:+ 0:%ˈ Cns:+] PrecedeVOWLowerRaise %^VOWTense:0 ; !!= @CODE@
+ â:e <=> i _ (ˊ: |0:ˊ) [Cns:+|Cns:+ 0:%ˈ Cns:+] PrecedeVOWLowerRaise %^PAL:0 ; !!= @CODE@
 !! }}}  
 
 !! !VOWEL and ZERO ALTERNATION
@@ -816,7 +819,7 @@ Rules
 0:ˊ <=>      v:u _ [ʒ ʒ:|d d:|l l:|r r:]       PrecedePALNo  %^PAL: ; !!= @CODE@
          ˊ:0 v:u _ [ʒ ʒ:|d d:|l l:|r r:]       PrecedePALNo  (%^PAL:) RBound ; !!= @CODE@
               h:u _ [c c:|č č:|s s:|š š:|t t:]  PrecedePALNo  %^PAL: ; !!= @CODE@
-             Vow: _ [Cns:+|:Cns+|Cns: Cns+ (%ˈ:|0:%ˈ) Cns:+] (i:) PrecedePALNo  %^PAL: ; !!= @CODE@
+             Vow: _ [Cns:+|:Cns+|Cns:+ (%ˈ:|0:%ˈ) Cns:+] (i:) PrecedePALNo  %^PAL: ; !!= @CODE@
 !! }}}
 
 !! The left context allows for:
