@@ -33,9 +33,9 @@ JSP_PAGES=root-morphology.jspwiki \
 # abbreviations-stems.jspwiki      \
 # acronyms-stems.jspwiki           \
 # smi-propernouns-stems.jspwiki    \
-ALLINONE_JSP_PAGE=$(GTLANG).jspwiki
+ALLINONE_JSP_PAGE=$(srcdir)/$(GTLANG).jspwiki
 
-LINKS=Links.jspwiki
+LINKS=$(srcdir)/Links.jspwiki
 
 endif # CAN_DOCC
 
