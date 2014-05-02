@@ -111,13 +111,13 @@ GENERATED_REGEXES=remove-semantic-tags.regex \
 # Add the target of local additions here:
 # HFST targets here:
 if CAN_HFST
-GT_FILTER_TARGETS+=
+GT_FILTER_TARGETS+=remove-rel_focus-strings.hfst
 
 endif
 
 # And Xerox targets here:
 if CAN_XFST
-GT_FILTER_TARGETS+=
+GT_FILTER_TARGETS+=remove-rel_focus-strings.hfst
 
 endif
 
