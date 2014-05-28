@@ -117,7 +117,7 @@ endif
 
 # And Xerox targets here:
 if CAN_XFST
-GT_FILTER_TARGETS+=remove-rel_focus-strings.hfst
+GT_FILTER_TARGETS+=remove-rel_focus-strings.xfst
 
 endif
 
