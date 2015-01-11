@@ -319,10 +319,10 @@ Rules
 
 "ZERO to syllable mark 0:ʼ"
 !! __@RULENAME@__ - used in zeeʹtt+N+Sg+Abe: zeeʹttʼtää
-!! {{{
- 0:ʼ <=> OnSetC :Vow+ (%ʹ:|0:%ʹ)  Cns:* Cx Cx %>  _ Cx ; !!= @CODE@
-         where Cx in (t) ;
-!! }}}
+ 0:ʼ <=> OnSetC :Vow+ (%ʹ:|0:%ʹ)  Cns:* Cx Cx %>  _ Cx ; 
+         where Cx in (s t) ;
+!€# ijss%>0sa
+!€# ijss0ʼsa
 
 
 
@@ -734,9 +734,10 @@ Rules
  
 "Even syllabic nouns, for j>i"
 !! __@RULENAME@__ - sijdd > siid This will need a special extra-lengthening rule
-!! {{{
- j:i <=> OnSetC i: (%{ʹ%}:) _ (ʹ:) d d: [%^VOWL: %^CShort:|%^VOWXL:|%^VOWLower:|%^VOWSH: %^CLong: %^VOWLower: %^PAL:] ; !!= @CODE@
-!! }}}
+ j:i <=> OnSetC i: (%{ʹ%}:) _ (ʹ:) [ d d:|s s:] [%^VOWL: %^CShort:|%^VOWXL:|%^VOWLower:|%^VOWSH: %^CLong: %^VOWLower: %^PAL:] ;
+!€# ijss%^VOWXL%^CShort%>âs
+!€0 iis0000âs
+
 
 "Even syllabic verbs,  for v>u"
 !! __@RULENAME@__ - uvdd > ouʹdde
@@ -905,12 +906,6 @@ Rules
 !"Even syllabic verbs I, cg in relation to Vowel length"
 !! !Vow Cx Cx:0 
 
-"Even syllabic verbs I, cg for ǧ"
-!! __@RULENAME@__ - used with  vueʹlǧǧed+V+Ind+Prs+Sg1: vuâlǥam
-!! {{{
- ǧ:0 <=> SurfLongVow (ʹ:|0:ʹ) l [ǧ:j|ǧ:] _ [%^VOWL: %^CShort:|%^VOWXL: (%^CShort:)] NeutrHighBack (%^PALNo:|%^PAL:) RBound ; !!= @CODE@
-!! }}}
-
 "Even syllabic verbs I, cg for b"
 !! __@RULENAME@__ - used with  neiʹbb+N+Sg+Gen: neeiʹb
 !! {{{
@@ -961,6 +956,12 @@ Rules
         2SgVow (ʹ:|0:ʹ) ʒ _ Vow: [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^VOWSH:  %^CLong: %^RmVow: ; !!= @CODE@
 !! }}}
 
+"Even syllabic verbs I, cg for s"
+!! __@RULENAME@__ 
+ s:0 <=>  i: j:i (ʹ:|0:ʹ) s _ %^VOWXL: %^CShort: ; !!= @CODE@
+!€# ijss%^VOWXL%^CShort%>âs
+!€0 iis0000âs
+
 "Even syllabic verbs I, cg for đ" 
 !! __@RULENAME@__ - used with  ǩiđđ:ǩiiđ
  đ:0 <=>  Vow: (ʹ:|0:ʹ) đ: _ %^VOWXL: %^CShort: ; !!= @CODE@
@@ -993,6 +994,12 @@ Rules
 !! {{{
  g:0 <=>  2SgVow (ʹ:|0:ʹ) g _ Vow: [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^VOWSH: %^CLong:  %^RmVow: ; !!= @CODE@
           SurfLongVow  (ʹ:|0:ʹ)  [r|l|d:] g:  _ (%^VOWL:|%^VOWXL:) %^CShort: ; !!= @CODE@
+!! }}}
+
+"Even syllabic verbs I, cg for ǧ"
+!! __@RULENAME@__ - used with  vueʹlǧǧed+V+Ind+Prs+Sg1: vuâlǥam
+!! {{{
+ ǧ:0 <=> SurfLongVow (ʹ:|0:ʹ) l [ǧ:j|ǧ:] _ [%^VOWL: %^CShort:|%^VOWXL: (%^CShort:)] NeutrHighBack (%^PALNo:|%^PAL:) RBound ; !!= @CODE@
 !! }}}
 
 
