@@ -120,6 +120,26 @@ LEXICON N-miarr !!= * __@CODE@__ is for words with ''-âst'' Loc but ''-ense'' I
 +N:%^VOWL%^CShort PL-COM ;
 +N:%^VOWL%^CShort PL-ABE ;
 
+LEXICON N_ǨIÕTT !!= * __@CODE@__ is for words with ''-âst'' Loc but ''ǩiõʹtte'' Ill
+!! N_Â-EPal
+!! ** Yaml: __kiott__
++N: SG-NOM ;
++N:%^VOWL%^CShort SG-GEN ;
++N:%^VOWL%^CShort SG-ACC ;
++N:%^PAL%>e SG-ILL ;
++N:%^VOWL%^CShort%>â SG-LOC ;
++N:%^VOWL%^CShort NMN_SG-COM_IN ;
++N:%>â ESS ; ! ess and prt without
++N:%>â PAR ;
++N:%^VOWL%^CShort SG-ABE ;
++N:%^VOWL%^CShort PL-NOM ;
++N:%^VOWL%^CShort PL-GEN ;
++N:%^VOWL%^CShort PL-ACC ;
++N:%^VOWL%^CShort PL-ILL ;
++N:%^VOWL%^CShort PL-LOC ;
++N:%^VOWL%^CShort PL-COM ;
++N:%^VOWL%^CShort PL-ABE ;
+
 
 LEXICON N_JARPLAN !!= * __@CODE@__ is for words with ''-âst'' Loc 
 !! N_Â-EPal1-B31
@@ -277,9 +297,11 @@ LEXICON N_PEIʹVV !!= * __@CODE@__ is for nouns with ''-est'' +Sg+Loc; +Sg+Gen s
 
 LEXICON N_ČÄÄʹCC !!= * __@CODE@__ is for nouns with ''-a'' ill ''-est'' +Loc, 
 !! N_E-ANoPal3-21
+!! page 204 (Eino: 1.113)
 !! ** Yaml: __caacc__
 !! * There are several stem types
 !! * čääʹcc:čääʹcc
+!!
 +N: SG-NOM ;
 +N:%^VOWL%^CShort SG-GEN ;
 +N:%^VOWL%^CShort SG-ACC ;
@@ -878,6 +900,31 @@ LEXICON N_DURAK !!= * __@CODE@__ = stemtype
 +N:%^VOWL PL-COM ;
 +N:%^VOWL PL-ABE ;
 
+!! !!ǩ-stems
+LEXICON N_KAAĐNEǨ !!= * __@CODE@__ = stemtype 
+!! ** Yaml: caustok
++N: SG-NOM ;
++N:ǩ%^PAL%>e ESS ; 
++N:ǩ%^PAL%>e PAR ;
++N:ǩ NMN_OBL-KAAĐNEǨ ;
+
+LEXICON NMN_OBL-KAAĐNEǨ
+!! kaađneǩ+N+Sg+Gen: kaađneeʹǩǩ
+:%^VOWL%^PAL SG-GEN ;
+:%^VOWL%^PAL SG-ACC ;
+:%^PALNo%>a SG-ILL ;
+:%^VOWL%^PAL%>e SG-LOC ;
+:%^VOWL%^PAL%> NMN_SG-COM_IN ;
+:%^VOWL%^PAL SG-ABE ;
+:%^VOWL%^PAL PL-NOM ;
+:%^VOWL%^PAL PL-GEN ;
+:%^VOWL%^PAL PL-ACC ;
+:%^VOWL%^PAL PL-ILL ;
+:%^VOWL%^PAL PL-LOC ;
+:%^VOWL%^PAL PL-COM ;
+:%^VOWL%^PAL PL-ABE ;
+
+
 !! !!l-stems
 LEXICON N_NJUÄʹMMEL !!= * __@CODE@__ = stemtype l-stem njuäʹmmel:njuäʹmmel
 !! ** Yaml: __njuammel, njuunnjel, aappal__ 
@@ -1258,6 +1305,12 @@ LEXICON N_LOOKKMÕŠ
 +N:š%>â ESS ;
 +N:š%>â PAR ;
 +N:š NMN_OBL-ČÂUSTÕK ;
+
+LEXICON N_ČÅRRÕS
++N: SG-NOM ;
++N:s%>â ESS ;
++N:s%>â PAR ;
++N:s NMN_OBL-ČÂUSTÕK ;
 
 
 !! !Noun phrase heads
