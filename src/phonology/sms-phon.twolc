@@ -296,10 +296,12 @@ Rules
 
 "Even syllabic verbs I, vowel shortening o:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
-!! {{{
- o:0 <=> OnSetC _ o: (ʹ:|0:ʹ) [LongC|Cns: :Cns*] [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ; !!= @CODE@
-         [Cns:+|:Cns+] _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] (%^VOWSH: (%^CLong:)|%^VC:) %^RmVow: ; !!= @CODE@
-!! }}}
+ o:0 <=> OnSetC _ o: (ʹ:|0:ʹ) [u m:+ |LongC|Cns: :Cns*] [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ;
+!€# ooum0%^VOWSH%^CLongu
+!€0 0oumm00u
+
+         [Cns:+|:Cns+] _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] (%^VOWSH: (%^CLong:)|%^VC:) %^RmVow: ; 
+
 
 "Even syllabic verbs I, vowel shortening a:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
@@ -1172,9 +1174,12 @@ Rules
 
 "Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m"
 !! __@RULENAME@__ - kåʹmrded+V+Imp+Sg2: kååʹmmerd 
-!! {{{
  0:m <=> SurfLongVow (ʹ:|0:ʹ)  m _ [%{E1%}:] Cns:+ [%^IMPSG2:|%^INDPRSSG3:] ; !!= @CODE@
-!! }}}
+        m _ %^VOWSH: %^CLong: ;
+
+!€# ooum0%^VOWSH%^CLongu
+!€0 0oumm00u
+
 
 "Consonant lengthening 0:b"
 !! __@RULENAME@__ - 
