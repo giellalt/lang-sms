@@ -22,25 +22,26 @@ GT_LEXC_ROOT=root.lexc
 GT_LEXC_SRCS_L1_L2=\
 				root.lexc \
 				stems/nouns_newwords.lexc \
-				stems/adjectives.lexc \
-				stems/adpositions.lexc \
-				stems/adverbs.lexc \
-				stems/conjunctions.lexc \
 				stems/exceptions.lexc \
-				stems/interjections.lexc \
-				stems/nouns.lexc \
-				stems/numerals.lexc \
-				stems/particles.lexc \
-				stems/pronouns.lexc \
 				stems/punctuation.lexc \
-				stems/sms-propernouns.lexc \
-				stems/subjunctions.lexc \
-				stems/verbs.lexc \
 				affixes/adjectives.lexc \
 				affixes/nouns.lexc \
 				affixes/propernouns.lexc \
 				affixes/verbs.lexc \
 				clitics.lexc
+
+#				stems/adjectives.lexc \
+#				stems/adpositions.lexc \
+#				stems/adverbs.lexc \
+#				stems/conjunctions.lexc \
+#				stems/interjections.lexc \
+#				stems/nouns.lexc \
+#				stems/numerals.lexc \
+#				stems/particles.lexc \
+#				stems/pronouns.lexc \
+# 				stems/sms-propernouns.lexc \
+#				stems/subjunctions.lexc \
+#				stems/verbs.lexc 
 
 # If you are building an error-detecting L2 analyser, specify the lexc files
 # that differ between the regular L1 and the L2 analysers below, in L1 and
