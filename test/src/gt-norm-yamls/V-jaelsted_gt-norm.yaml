@@ -1,0 +1,128 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Verb - jälsted: # Verb 'to dwell/asua' - full paradigm
+     jälsted+V+Ind+Prs+Sg1: jälstam
+     jälsted+V+Ind+Prs+Sg2: jälstak
+     jälsted+V+Ind+Prs+Sg3: jäälast
+     jälsted+V+Ind+Prs+Pl1: jälstep
+     jälsted+V+Ind+Prs+Pl2: jälsteʹped
+     jälsted+V+Ind+Prs+Pl3: jälste
+     jälsted+V+Ind+Prs+4: jälstet
+     jälsted+V+Ind+Prs+ConNeg: jäälast
+
+     jälsted+V+Ind+Prt+Sg1: jälstem
+     jälsted+V+Ind+Prt+Sg2: jälstiǩ
+     jälsted+V+Ind+Prt+Sg3: jälsti
+     jälsted+V+Ind+Prt+Pl1: jälstim
+     jälsted+V+Ind+Prt+Pl2: jälstid
+     jälsted+V+Ind+Prt+Pl3: jälste
+     jälsted+V+Ind+Prt+4: jälsteš
+     jälsted+V+Ind+Prt+ConNeg: [jälstam, jäälstam]
+
+     jälsted+V+Pot+Sg1: jälsteʹžem
+     jälsted+V+Pot+Sg2: jälsteʹžiǩ
+     jälsted+V+Pot+Sg3: jälstež
+     jälsted+V+Pot+Pl1: jälsteʹžep
+     jälsted+V+Pot+Pl2: jälsteʹžid
+     jälsted+V+Pot+Pl3: jälsteʹže
+     jälsted+V+Pot+4: [jälsteʹžet, jäälsteʹžet]
+     jälsted+V+Pot+ConNeg: [jälsteʹže, jäälsteʹže]
+
+     jälsted+V+Cond+Sg1: [jälsteʹčem, jäälsteʹčem]
+     jälsted+V+Cond+Sg2: [jälsteʹčiǩ, jäälsteʹčiǩ]
+     jälsted+V+Cond+Sg3: [jälsteʹči, jäälsteʹči]
+     jälsted+V+Cond+Pl1: [jälsteʹčim, jäälsteʹčim, jälsteʹčep, jäälsteʹčep]
+     jälsted+V+Cond+Pl2: [jälsteʹčid, jäälsteʹčid]
+     jälsted+V+Cond+Pl3: [jälsteʹče, jäälsteʹče]
+     jälsted+V+Cond+4: [jälsteʹčeš, jäälsteʹčeš]
+
+     jälsted+V+Cond+ConNeg: [jälsteʹče, jäälsteʹče]
+
+     jälsted+V+Imprt+Sg2: jäälast
+     jälsted+V+Imprt+Sg3: [jälstââǥǥas, jäälstââǥǥas]
+     jälsted+V+Imprt+Pl1: [jälstâkap, jäälstâkap]
+     jälsted+V+Imprt+Pl2: [jälsteʹǩed, jäälsteʹǩed]
+     jälsted+V+Imprt+Pl3: [jälstâkaz, jäälstâkaz]
+     jälsted+V+Imprt+2+ConNeg: jäälast
+     jälsted+V+Imprt+13+ConNeg: [jälstuku, jäälstuku]
+     jälsted+V+ActEss: [jälsteʹmen, jäälsteʹmen]
+     jälsted+V+Action: [jälstam, jäälstam]
+     jälsted+V+PrsPrc: [jälsteei, jäälsteei]
+     jälsted+V+PrfPrc: [jälstam, jäälstam]
+     jälsted+V+Pass+PrfPrc: [jälstummu, jäälstummu, jälstuum, jäälstuum]
+     jälsted+V+VAbess: [jälsteǩâni, jäälsteǩâni]
+
+     jälsted+V+GerTemp: [jälsteen, jäälsteen]
+     jälsted+V+GerInstr: [jälsteeʹl, jäälsteeʹl]
+
+
+
+
+#     jälsted+V+Ind+Prs+Sg1: [jälstam, jäälstam]
+#     jälsted+V+Ind+Prs+Sg2: [jälstak, jäälstak]
+#     jälsted+V+Ind+Prs+Sg3: maainast
+#     jälsted+V+Ind+Prs+Pl1: [jälstep, jäälstep]
+#     jälsted+V+Ind+Prs+Pl2: [jälsteʹped, jäälsteʹped]
+#     jälsted+V+Ind+Prs+Pl3: [jälste, jäälste] 
+#     jälsted+V+Ind+Prs+4: [jälstet, jäälstet]
+#
+#     jälsted+V+Ind+Prt+Sg1: [jälstem, jäälstem]
+#     jälsted+V+Ind+Prt+Sg2: [jälstiǩ, jäälstiǩ]
+#     jälsted+V+Ind+Prt+Sg3: [jälsti, jäälsti]
+#     jälsted+V+Ind+Prt+Pl1: [jälstim, jäälstim, jälstin, jäälstin, jälstiim, jäälstiim, jälstiin, jäälstiin]
+#     jälsted+V+Ind+Prt+Pl2: [jälstid, jäälstid, jälstiid, jäälstiid]
+#     jälsted+V+Ind+Prt+Pl3: [jälste, jäälste]
+#     jälsted+V+Ind+Prt+4: [jälsteš, jäälsteš]
+#
+#     jälsted+V+Pot+Sg1: [jälsteʹžem, jäälsteʹžem]
+#
+#     jälsted+V+Pot+Sg2: [jälsteʹžiǩ, jäälsteʹžiǩ]
+#
+#     jälsted+V+Pot+Sg3: [jälstež, jäälsteʹž]
+#
+#     jälsted+V+Pot+Pl1: [jälsteʹžep, jäälsteʹžep, jälsteʹžim, jäälsteʹžim, jälsteʹžin, jäälsteʹžin]
+#     jälsted+V+Pot+Pl2: [jälsteʹžid, jäälsteʹžid]
+#     jälsted+V+Pot+Pl3: [jälsteʹže, jäälsteʹže]
+#     jälsted+V+Pot+4: [jälsteʹžet, jäälsteʹžet]
+#     jälsted+V+Pot+ConNeg: [jälsteʹže, jäälsteʹže]
+#
+#     jälsted+V+Cond+Sg1: [jälsteʹčem, jäälsteʹčem]
+#     jälsted+V+Cond+Sg2: [jälsteʹčiǩ, jäälsteʹčiǩ]
+#     jälsted+V+Cond+Sg3: [jälsteʹči, jäälsteʹči]
+#     jälsted+V+Cond+Pl1: [jälsteʹčim, jäälsteʹčim, jälsteʹčep, jäälsteʹčep]
+#     jälsted+V+Cond+Pl2: [jälsteʹčid, jäälsteʹčid]
+#     jälsted+V+Cond+Pl3: [jälsteʹče, jäälsteʹče]
+#     jälsted+V+Cond+4: [jälsteʹčeš, jäälsteʹčeš]
+#
+#     jälsted+V+Cond+ConNeg: [jälsteʹče, jäälsteʹče]
+#
+#     jälsted+V+Imprt+Sg2: maainâst
+#     jälsted+V+Imprt+Sg3: [jälstââǥǥas, jäälstââǥǥas]
+#     jälsted+V+Imprt+Pl1: [jälstâkap, jäälstâkap]
+#     jälsted+V+Imprt+Pl2: [jälsteʹǩed, jäälsteʹǩed]
+#     jälsted+V+Imprt+Pl3: [jälstâkaz, jäälstâkaz]
+#     jälsted+V+Imprt+ConNeg: [jälstuku, jäälstuku]
+#     jälsted+V+ActEss: [jälsteʹmen, jäälsteʹmen]
+#     jälsted+V+Action: [jälstam, jäälstam]
+#     jälsted+V+PrsPrc: [jälsteei, jäälsteei]
+#     jälsted+V+PrfPrc: [jälstam, jäälstam]
+#     jälsted+V+Pass+PrfPrc: [jälstummu, jäälstummu, jälstuum, jäälstuum]
+#     jälsted+V+VAbess: [jälsteǩâni, jäälsteǩâni]
+#
+#     jälsted+V+GerTemp: [jälsteen, jäälsteen]
+#     jälsted+V+GerInstr: [jälsteeʹl, jäälsteeʹl]
+

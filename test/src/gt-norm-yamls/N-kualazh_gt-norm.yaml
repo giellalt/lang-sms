@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Noun - kuâlaž a-stem little fish/pikku kala: # Noun - full paradigm
+     kuâlaž+N+Sg+Nom: kuâlaž
+     kuâlaž+N+Sg+Gen: kuâla
+     kuâlaž+N+Sg+Acc: kuâla
+     kuâlaž+N+Sg+Ill: kuâlže
+     kuâlaž+N+Sg+Loc: kuâlast
+     kuâlaž+N+Sg+Com: kuâlain
+     kuâlaž+N+Ess: kuâlžen
+     kuâlaž+N+Par: kuâlžed
+     kuâlaž+N+Sg+Abe: kuâlaʼtää
+     kuâlaž+N+Pl+Nom: kuâla
+     kuâlaž+N+Pl+Gen: kuâlai
+     kuâlaž+N+Pl+Acc: kuâlaid
+     kuâlaž+N+Pl+Ill: kuâlaid
+     kuâlaž+N+Pl+Loc: kuâlain
+     kuâlaž+N+Pl+Com: kuâlaivuiʹm
+     kuâlaž+N+Pl+Abe: kuâlaitää
