@@ -28,7 +28,6 @@ The rule file for Skolt Saami is divided into 5 main types:
 
 * Vertical line: as overlong consonant marker that does not appear in writing 
 * Upper right single quotation mark: Syllable marker that appears in writing 
-* MODIFIER LETTER ACUTE ACCENT: suprasegmental palatalization
 * MODIFIER LETTER PRIME: U+02B9 suprasegmental palatization
 Trigger symbols
 
@@ -46,6 +45,8 @@ Trigger symbols
  *  %^VOWFront:0	      Fronting
  *  %^PAL:0 %^PALNo:0    Palatalisation
  *  %^VC:0          Voicing s:z š:ž
+ *  %^Â:0		 Indicates placement of â in stem
+
  *  X3:0   causes weak grade
  *  %{VU%}:u          used with stuuʹl
  *  %{Â1%}:0  used with "mainsted" to tell (a story)
@@ -148,7 +149,7 @@ extra long consonant (d or l or r)
 
 Onset consonant or word boundary
 {{{
- * OnSetC = [Cns|#] ;  
+ * OnSetC = [# Cns*|#] ;  
 }}}
 
 following morpheme or word boundary
@@ -515,6 +516,7 @@ __Even syllabic verbs I, relative vowel lengthening 0:â__ - deriving +V+Inf in 
        Cns: _ â (u:|i:) (ʹ:|0:ʹ)  Cns: %{Â1%}: Cns:+  %^VOWL: ; 
 }}}
 
+
 __Even syllabic verbs I, relative vowel lengthening 0:e__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
 
 __Even syllabic verbs I, relative vowel lengthening 0:å__ - deriving
@@ -538,12 +540,8 @@ __Even syllabic verbs I, relative vowel lengthening 0:ä__ - deriving +V+Inf in 
 
 
 __Even syllabic verbs I, relative vowel lengthening 0:a__ - deriving +V+Inf in MAINSTED: maainstam, mainstam
-{{{
-  OnSetC _ :a [RelVowLengthening] ; 
-    Cns: _ a  i  (ʹ:|0:ʹ) Cns: %{Â1%}: Cns:+  %^VOWL: ; 
-    Cns: _ a  i  Cns: %{Â1%}: Cns:+  %^VOWL: ; 
-    Cns: _ a (u:|i:) (ʹ:|0:ʹ)  Cns:+ [%{Â1%}:|%{A1%}:|%{E1%}:] Cns:+  [%^VOWL:|%^IMPSG2:|%^INDPRSSG3:] ; 
-}}}
+
+
 
 
 
@@ -618,10 +616,9 @@ __Realization for %{A1%} in a  __ - kåʹmrded, vuejat, maainâst
                _ (ʹ:|0:ʹ|ʼ:) [i|Cns:+] (%^VOWL:) %^INDPRSSG3: ; 
 }}}
 
-__Realization for %{Â1%} in â  __ - kåʹmrded, vuejat, maainâst
-{{{
-  %{Â1%}:â <=> _ (ʹ:|0:ʹ) Cns:+ (%^VOWL:) %^IMPSG2: ; 
-}}}
+__Realization for %{Â1%} in â  __ - maainâst
+
+
 
 __Realization for %{E1%} in a __ - 
 {{{
@@ -629,9 +626,6 @@ __Realization for %{E1%} in a __ -
 }}}
 
 __Realization for %{Â1%} in a __ - 
-{{{
-  %{Â1%}:a <=> _ (ʹ:|0:ʹ|ʼ:) [i|Cns:+] (%^VOWL:) %^INDPRSSG3: ; 
-}}}
 
 !THE NON-ORTHOGRAPHIC SYLLABLE 
 

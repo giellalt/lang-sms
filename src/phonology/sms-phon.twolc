@@ -46,7 +46,6 @@ Alphabet
 
  %ˈ !! * Vertical line: as overlong consonant marker that does not appear in writing 
  ʼ    !! * Upper right single quotation mark: Syllable marker that appears in writing 
-!! ˊ  !! * MODIFIER LETTER ACUTE ACCENT: suprasegmental palatalization
  ʹ  !! * MODIFIER LETTER PRIME: U+02B9 suprasegmental palatization
 !! !! Trigger symbols
 
@@ -64,6 +63,8 @@ Alphabet
  %^VOWFront:0	     !!= * @CODE@ Fronting
  %^PAL:0 %^PALNo:0   !!= * @CODE@ Palatalisation
  %^VC:0         !!= * @CODE@ Voicing s:z š:ž
+ %^Â:0		!!= * @CODE@ Indicates placement of â in stem
+
  X3:0  !!= * @CODE@ causes weak grade
  %{VU%}:u         !!= * @CODE@ used with stuuʹl
  %{Â1%}:0 !!= * @CODE@ used with "mainsted" to tell (a story)
@@ -177,7 +178,7 @@ C2CCafterVV2V = [l [b 0:b|j:ǧ 0:ǧ|ǥ:ǧ 0:ǧ|m 0:m|t 0:t]|m p 0:p|p c 0:c|r d 
 
 !! Onset consonant or word boundary
 !! {{{
-OnSetC = [Cns|#] ; !!= * @CODE@ 
+OnSetC = [# Cns*|#] ; !!= * @CODE@ 
 !! }}}
 
 !! following morpheme or word boundary
@@ -627,6 +628,7 @@ Rules
 !   OnSetC _ õ:â (ʹ:|0:ʹ) Cns:+ %^VOWL: %^CShort: %^VOWLower: ;
 !! }}}
 
+
 "Even syllabic verbs I, relative vowel lengthening 0:e"
 !! __@RULENAME@__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
  0:e <=> OnSetC _ :e RelVowLengthening ;
@@ -675,14 +677,19 @@ Rules
 
 "Even syllabic verbs I, relative vowel lengthening 0:a"
 !! __@RULENAME@__ - deriving +V+Inf in MAINSTED: maainstam, mainstam
-!! {{{
  0:a <=>
- OnSetC _ :a [RelVowLengthening] ; !!= @CODE@
+ OnSetC _ :a [RelVowLengthening] ;
 !Distinguishing mainstam and maainstam
-   Cns: _ a  i  (ʹ:|0:ʹ) Cns: %{Â1%}: Cns:+  %^VOWL: ; !!= @CODE@
-   Cns: _ a  i  Cns: %{Â1%}: Cns:+  %^VOWL: ; !!= @CODE@
-   Cns: _ a (u:|i:) (ʹ:|0:ʹ)  Cns:+ [%{Â1%}:|%{A1%}:|%{E1%}:] Cns:+  [%^VOWL:|%^IMPSG2:|%^INDPRSSG3:] ; !!= @CODE@
-!! }}}
+  OnSetC _ a  i  (ʹ:|0:ʹ) Cns: %{Â1%}: Cns:+  %^VOWL: ;
+!€# m0ain%{Â1%}st%^VOWL%^IMPSG2
+!€0 maainâst0
+!   [ b | ʒ | (ǯ) ǯ | (g) g | i b | i n |(k) k |l|m |(n) n | n v|r g|r| r t | u d|u l| u n | u ŋ | u r] _ s t (%^VOWL:) %^IMPSG2: ;
+!   [ ʹ đ đ | ʹ ǩ |ʹ l|ʹ l ǩ |ʹ m m |ʹ p] _ s t %^IMPSG2: ;
+
+   Cns: _ a  i  (ʹ:|0:ʹ) Cns: %{Â1%}: Cns:+  %^VOWL: ; 
+   Cns: _ a  i  Cns: %{Â1%}: Cns:+  %^VOWL: ;
+   Cns: _ a (u:|i:) (ʹ:|0:ʹ)  Cns:+ [%{Â1%}:|%{A1%}:|%{E1%}:] Cns:+  [%^VOWL:|%^IMPSG2:|%^INDPRSSG3:] ; 
+
 
 
 
@@ -785,10 +792,12 @@ Rules
 !! }}}
 
 "Realization for %{Â1%} in â " 
-!! __@RULENAME@__ - kåʹmrded, vuejat, maainâst
-!! {{{
- %{Â1%}:â <=> _ (ʹ:|0:ʹ) Cns:+ (%^VOWL:) %^IMPSG2: ; !!= @CODE@
-!! }}}
+!! __@RULENAME@__ - maainâst
+ %{Â1%}:â <=> Cns _ Cns:+ (%^VOWL:) %^IMPSG2: ;
+!€# m0ain%{Â1%}st%^VOWL%^IMPSG2
+!€0 maainâst00
+
+
 
 "Realization for %{E1%} in a" 
 !! __@RULENAME@__ - 
@@ -798,9 +807,9 @@ Rules
 
 "Realization for %{Â1%} in a" 
 !! __@RULENAME@__ - 
-!! {{{
- %{Â1%}:a <=> _ (ʹ:|0:ʹ|ʼ:) [i|Cns:+] (%^VOWL:) %^INDPRSSG3: ; !!= @CODE@
-!! }}}
+ %{Â1%}:a <=> _ (ʹ:|0:ʹ|ʼ:) [i|Cns:+] (%^VOWL:) %^INDPRSSG3: ;
+!€# m0ain%{Â1%}st%^VOWL%^INDPRSSG3
+!€0 maainast00
          
 !! !THE NON-ORTHOGRAPHIC SYLLABLE 
 
