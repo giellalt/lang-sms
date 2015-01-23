@@ -289,20 +289,21 @@ jokk:jokk N_TOLL "river/joki" ;
 
 luhtt:luhtt N_TOLL " bay/lahti" ;
 papp:papp N_TOLL "priest/pappi" ;
-muõrr:muõrr N_TOLL "tree/puu" ;
 võrr:võrr N_TOLL "blood/veri" ;
 ǩiđđ:ǩiđđ N_TOLL "spring/kevät" ;
 sõll:sõll N_TOLL "lap; embrace/syli" ;
 kunn:kunn N_TOLL "ash/tuhka" ;
 
 paarr:paarr N_PAARR " couple/pari" ;
-saakk:saakk N_SAAKK "message/viesti" ;
+saakk:saakk N_PAARR "message/viesti" ;
 
 šaarf:šaarf N_LUUKK " scrarf/kaulaliina" ;
 luukk:luukk N_LUUKK " onion/sipuli" ;
 staan:staan N_LUUKK " safety/turva" ;
 kaarc:kaarc N_LUUKK " stench/katku" ;
 voozz:voozz N_LUUKK " load/kuorma" ;
+
+muõrr:muõrr N_MUÕRR "tree/puu" ;
 
 
 !! !N-miarr: -âst Loc and -ense Ill mieʹrre
@@ -1246,230 +1247,6 @@ ges pcle ; !!= @CODE@
 
 !! !!unclear whether these are really particles
 joo pcle ; !!from a song
-
-!! !!!Pronouns
-
-
-!! Pointing to all the pronominal subgroups
-
-LEXICON Pronoun !!= * @CODE@
-Personal ;      !!= * @CODE@
-Demonstrative ; !!= * @CODE@
-Reflexive ;     !!= * @CODE@
-Interrogative ; !!= * @CODE@
-! Reciprocal ;
-! Relative ;
-! Indefinite ;
-
-
-!! !!Personal pronouns
-
-
-!! Splitting according to person
-
-LEXICON Personal           !!= * @CODE@
-mon+Pron+Pers:m perspron ; !!= * @CODE@
-ton+Pron+Pers:t perspron ; !!= * @CODE@
-son+Pron+Pers:s perspron ; !!= * @CODE@
-
-LEXICON perspron
-:u	    perspronoblsg ;
-:uän    persprondu ;
-:ån	    persprondu ;
-:i	    perspronpl ;
-+Nom+Sg:on	K ;
-+Nom+Du:ååna	K ;
-+Loc+Pl:eeʹst	K ;
-
-LEXICON perspronoblsg 
-+Gen+Sg:u	      K ;
-+Acc+Sg:u	      K ;
-+Ill+Sg:ʹnne	      K ;
-+Loc+Sg:ʹst	      K ;
-+Com+Sg:ʹin	      K ;
-+Abe+Sg:utää	      K ;
-+Ess+Sg:uʹnen	      K ;
-+Par+Sg:uʹđed	      K ;
-
-
-
-LEXICON persprondu
-+Nom+Du:a		K ;
-+Gen+Du:nai	      K ;
-+Acc+Du:naid	      K ;
-+Ill+Du:naid	      K ;
-+Loc+Du:nast	      K ;
-+Com+Du:nain	      K ;
-+Abe+Du:naitää	      K ;
-+Ess+Du:nan	      K ;
-
-LEXICON perspronpl
-+Nom+Pl:j		K ;
-+Gen+Pl:ʹj	      K ;
-+Acc+Pl:ʹjjid	      K ;
-+Ill+Pl:ʹjjid	      K ;
-+Loc+Pl:ʹjjst	      K ;
-+Com+Pl:ʹjjivuiʹm     K ;
-+Abe+Pl:ʹjjitää	      K ;
-
-
-
-
-!! !!Demonstrative pronouns
-
-
-LEXICON Demonstrative !!= * @CODE@
-tät+Pron+Dem:tä		SHORTDEM ;
-tut+Pron+Dem:tu		SHORTDEM ;
-tõt+Pron+Dem:tõ		SHORTDEM ;
-tät+Pron+Dem:tää	LONGDEM ;
-tut+Pron+Dem:tuu	LONGDEM ;
-tõt+Pron+Dem:t		TOTDEM ;
-tiet-aa:tie		TIET-AA ;
-
-LEXICON SHORTDEM !!= * @CODE@
-+Nom+Sg:t	K ;
-+Acc+Sg:n	K ;
-+Gen+Sg:n	K ;
-+Loc+Sg:ʹst	K ;
-+Com+Sg:in	K ;
-+Abe+Sg:ntää	K ;
-+Nom+Pl:k	K ;
-+Acc+Pl:id	K ;
-+Gen+Pl:i	K ;
-+Ill+Pl:id	K ;
-+Loc+Pl:in	K ;
-+Com+Pl:ivuim	K ;
-+Abe+Pl:itää	K ;
-
-LEXICON LONGDEM !!= * @CODE@
-+Ill+Sg:zz	K ;
-+Ess+Sg:ʹđen	K ;
-+Par+Sg:đ	K ;
-+Par+Sg:ʹđed	K ;
-
-LEXICON TOTDEM  !!= * @CODE@
-+Ill+Sg:õõzz	K ;
-+Ess+Sg:ââʹđen	K ;
-+Par+Sg:ââʹđ	K ;
-+Par+Sg:ââʹđed	K ;
-+Nom+Pl:õõk	K ;
-+Loc+Pl:âin	K ;
-
-LEXICON TIET-AA !!= * @CODE@
-+Nom+Sg:t	-AA ;
-+Acc+Sg:n	-AA ;
-+Gen+Sg:n	-AA ;
-+Ill+Sg:zz	-AA ;
-+Loc+Sg:ʹst	-AA ;
-+Com+Sg:in	-AA ;
-+Nom+Pl:k	-AA ;
-+Acc+Pl:id	-AA ;
-+Gen+Pl:i	-AA ;
-+Ill+Pl:id	-AA ;
-+Com+Pl:i-aavuim    K ;
-
-LEXICON -AA !!= * @CODE@
-:-aa K ;
-
-
-
-!! !!Reflexive pronouns
-
-
-LEXICON Reflexive !!= * @CODE@
-jiõčč+Pron+Refl+Gen+Sg3:jiijjâs	K ;
-jiõčč+Pron+Refl+Acc+Sg3:jiijjâs	K ;
-jiõčč+Pron+Refl+Gen+Pl1:jieʹččen	K ;
-jiõčč+Pron+Refl+Acc+Pl1:jieʹččen	K ;
-jiõčč+Pron+Refl+Gen:jiõčč		GA-I ;
-jiõčč+Pron+Refl+Acc:jiõčč		GA-I ;
-jiõčč+Pron+Refl+Gen:jiičč		GA-I ;
-jiõčč+Pron+Refl+Acc:jiičč		GA-I ;
-jiõčč+Pron+Refl+Gen:jiijj		GA-II ;
-jiõčč+Pron+Refl+Acc:jiijj		GA-II ;
-jiõčč+Pron+Refl+Gen:jiiʹjj		GA-II ;
-jiõčč+Pron+Refl+Acc:jiiʹjj		GA-II ;
-jiõčč+Pron+Refl+Ill:jiõccs		ILEPX ;
-jiõčč+Pron+Refl+Ill:jiccs		ILEPX ;
-jiõčč+Pron+Refl+Loc:jijst		ILEPX ;
-jiõčč+Pron+Refl+Loc:jiijst		LOCPX ;
-jiõčč+Pron+Refl+Ess:jiõččn		ILEPX ;
-jiõčč+Pron+Refl+Com:jijj		COMPX ;
-
-
-LEXICON GA-I !!= * @CODE@
-+Sǧ:an K ;
-+Pl1:ân K ;
-
-LEXICON GA-II !!= * @CODE@
-+Sǥ:ad K ;
-+Pl1:ân K ;
-+Pl2:âd K ;
-+Pl3:âz K ;
-
-LEXICON ILEPX !!= * @CODE@
-ROBLSGPX ;
-ROBLPLPX ;
-
-LEXICON LOCPX !!= * @CODE@
-+Sg1:an	K ;
-ROBLPLPX ;
-
-LEXICON COMPX !!= * @CODE@
-ROBLSGPX ;
-RCOMPLPX ;
-
-LEXICON ROBLSGPX !!= * @CODE@
-+Sg1:an K ;
-+Sg2:ad K ;
-+Sg3:es K ;
-
-LEXICON ROBLPLPX !!= * @CODE@
-+Pl1:een K ;
-+Pl2:eed K ;
-+Pl3:eez K ;
-
-LEXICON RCOMPLPX !!= * @CODE@
-+Pl1:eenvuim K ;
-+Pl2:eedvuim K ;
-+Pl3:eezvuim K ;
-
-
-
-
-!! !!Interrogative pronouns
-
-
-LEXICON Interrogative !!= * @CODE@
-mii+Pron+Interr:m	MK ; !!= * @CODE@
-ǩii+Pron+Interr:ǩ	MK ; !!= * @CODE@
-mii+Pron+Interr:mõõ	MK-long ;
-ǩii+Pron+Interr:ǩeä	MK-long ;
-mii+Pron+Interr:mõ	MK-short ;
-ǩii+Pron+Interr:ǩeä	MK-short ;
-mii+Pron+Interr:mââ	MK-low ;
-ǩii+Pron+Interr:ǩeä	MK-low ;
-
-LEXICON MK !!= * @CODE@
-+Nom+Sg:ii	K ;
-
-LEXICON MK-long !!= * @CODE@
-+Acc+Sg:n	K ;
-+Gen+Sg:n	K ;
-+Ill+Sg:zz	K ;
-+Nom+Pl:k	K ;
-
-LEXICON MK-short !!= * @CODE@
-+Com+Sg:ʹin	K ;
-+Abe+Sg:ntää	K ;
-
-LEXICON MK-low !!= * @CODE@
-+Ess+Sg:ʹđen	K ;
-+Par+Sg:ʹđ	K ;
-+Par+Sg:ʹđed	K ;
-+Com+Pl:ivuiʹm	K ;
-+Abe+Pl:itää	K ;
 
 
 !! !!!Propernoun lexicon, Skolt Sámi specific names 

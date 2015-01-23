@@ -1,0 +1,247 @@
+! Divvun & Giellatekno - open source grammars for Sámi and other languages
+! Copyright © 2000-2010 The University of Tromsø & the Norwegian Sámi Parliament
+! http://giellatekno.uit.no & http://divvun.no
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version. The GNU General Public License
+! is found at http://www.gnu.org/licenses/gpl.html. It is
+! also available in the file $GTHOME/LICENSE.txt.
+!
+! Other licensing options are available upon request, please contact
+! giellatekno@hum.uit.no or divvun@samediggi.no
+
+!! !!!Skolt Saami Pronoun Morphology 
+
+LEXICON PRON_
+!! The lexicon ''@LEXNAME@'' assigns the tag __+Pron__
++Pron: # ;
+
+
+!! !!!Pronouns
+
+
+!! Pointing to all the pronominal subgroups
+
+LEXICON Pronoun !!= * @CODE@
+Personal ;      !!= * @CODE@
+Demonstrative ; !!= * @CODE@
+Reflexive ;     !!= * @CODE@
+Interrogative ; !!= * @CODE@
+! Reciprocal ;
+! Relative ;
+! Indefinite ;
+
+
+!! !!Personal pronouns
+
+
+!! Splitting according to person
+
+LEXICON Personal           !!= * @CODE@
+mon+Pron+Pers:m perspron ; !!= * @CODE@
+ton+Pron+Pers:t perspron ; !!= * @CODE@
+son+Pron+Pers:s perspron ; !!= * @CODE@
+
+LEXICON perspron
+:u	    perspronoblsg ;
+:uän    persprondu ;
+:ån	    persprondu ;
+:i	    perspronpl ;
++Sg+Nom:on	K ;
++Du+Nom:ååna	K ;
++Pl+Loc:eeʹst	K ;
+
+LEXICON perspronoblsg 
++Sg+Gen:u	      K ;
++Sg+Acc:u	      K ;
++Sg+Ill:ʹnne	      K ;
++Sg+Loc:ʹst	      K ;
++Sg+Com:ʹin	      K ;
++Sg+Abe:utää	      K ;
++Ess:uʹnen	      K ;
++Par:uʹđed	      K ;
+
+
+
+LEXICON persprondu
++Du+Nom:a		K ;
++Du+Gen:nai	      K ;
++Du+Acc:naid	      K ;
++Du+Ill:naid	      K ;
++Du+Loc:nast	      K ;
++Du+Com:nain	      K ;
++Du+Abe:naitää	      K ;
++Du+Ess:nan	      K ;
+
+LEXICON perspronpl
++Pl+Nom:j		K ;
++Pl+Gen:ʹj	      K ;
++Pl+Acc:ʹjjid	      K ;
++Pl+Ill:ʹjjid	      K ;
++Pl+Loc:ʹjjst	      K ;
++Pl+Com:ʹjjivuiʹm     K ;
++Pl+Abe:ʹjjitää	      K ;
+
+
+
+
+!! !!Demonstrative pronouns
+
+
+LEXICON Demonstrative !!= * @CODE@
+tät+Pron+Dem:tä		SHORTDEM ;
+tut+Pron+Dem:tu		SHORTDEM ;
+tõt+Pron+Dem:tõ		SHORTDEM ;
+tät+Pron+Dem:tää	LONGDEM ;
+tut+Pron+Dem:tuu	LONGDEM ;
+tõt+Pron+Dem:t		TOTDEM ;
+tiet-aa:tie		TIET-AA ;
+
+LEXICON SHORTDEM !!= * @CODE@
++Sg+Nom:t	K ;
++Sg+Acc:n	K ;
++Sg+Gen:n	K ;
++Sg+Loc:ʹst	K ;
++Sg+Com:in	K ;
++Sg+Abe:ntää	K ;
++Pl+Nom:k	K ;
++Pl+Acc:id	K ;
++Pl+Gen:i	K ;
++Pl+Ill:id	K ;
++Pl+Loc:in	K ;
++Pl+Com:ivuim	K ;
++Pl+Abe:itää	K ;
+
+LEXICON LONGDEM !!= * @CODE@
++Sg+Ill:zz	K ;
++Ess:ʹđen	K ;
++Par:đ	K ;
++Par:ʹđed	K ;
+
+LEXICON TOTDEM  !!= * @CODE@
++Sg+Ill:õõzz	K ;
++Ess:ââʹđen	K ;
++Par:ââʹđ	K ;
++Par:ââʹđed	K ;
++Pl+Nom:õõk	K ;
++Pl+Loc:âin	K ;
+
+LEXICON TIET-AA !!= * @CODE@
++Sg+Nom:t	-AA ;
++Sg+Acc:n	-AA ;
++Sg+Gen:n	-AA ;
++Sg+Ill:zz	-AA ;
++Sg+Loc:ʹst	-AA ;
++Sg+Com:in	-AA ;
++Pl+Nom:k	-AA ;
++Pl+Acc:id	-AA ;
++Pl+Gen:i	-AA ;
++Pl+Ill:id	-AA ;
++Pl+Com:i-aavuiʹm    K ;
+
+LEXICON -AA !!= * @CODE@
+:-aa K ;
+
+
+
+!! !!Reflexive pronouns
+
+
+LEXICON Reflexive !!= * @CODE@
+jiõčč+Pron+Refl+Gen+Sg3:jiijjâs	K ;
+jiõčč+Pron+Refl+Acc+Sg3:jiijjâs	K ;
+jiõčč+Pron+Refl+Gen+Pl1:jieʹččen	K ;
+jiõčč+Pron+Refl+Acc+Pl1:jieʹččen	K ;
+jiõčč+Pron+Refl+Gen:jiõčč		GA-I ;
+jiõčč+Pron+Refl+Acc:jiõčč		GA-I ;
+jiõčč+Pron+Refl+Gen:jiičč		GA-I ;
+jiõčč+Pron+Refl+Acc:jiičč		GA-I ;
+jiõčč+Pron+Refl+Gen:jiijj		GA-II ;
+jiõčč+Pron+Refl+Acc:jiijj		GA-II ;
+jiõčč+Pron+Refl+Gen:jiiʹjj		GA-II ;
+jiõčč+Pron+Refl+Acc:jiiʹjj		GA-II ;
+jiõčč+Pron+Refl+Ill:jiõccs		ILEPX ;
+jiõčč+Pron+Refl+Ill:jiccs		ILEPX ;
+jiõčč+Pron+Refl+Loc:jijst		ILEPX ;
+jiõčč+Pron+Refl+Loc:jiijst		LOCPX ;
+jiõčč+Pron+Refl+Ess:jiõččn		ILEPX ;
+jiõčč+Pron+Refl+Com:jijj		COMPX ;
+
+
+LEXICON GA-I !!= * @CODE@
++Sg1:an K ;
++Pl1:ân K ;
+
+LEXICON GA-II !!= * @CODE@
++Sg2:ad K ;
++Pl1:ân K ;
++Pl2:âd K ;
++Pl3:âz K ;
+
+LEXICON ILEPX !!= * @CODE@
+ROBLSGPX ;
+ROBLPLPX ;
+
+LEXICON LOCPX !!= * @CODE@
++Sg1:an	K ;
+ROBLPLPX ;
+
+LEXICON COMPX !!= * @CODE@
+ROBLSGPX ;
+RCOMPLPX ;
+
+LEXICON ROBLSGPX !!= * @CODE@
++Sg1:an K ;
++Sg2:ad K ;
++Sg3:es K ;
+
+LEXICON ROBLPLPX !!= * @CODE@
++Pl1:een K ;
++Pl2:eed K ;
++Pl3:eez K ;
+
+LEXICON RCOMPLPX !!= * @CODE@
++Pl1:eenvuiʹm K ;
++Pl2:eedvuiʹm K ;
++Pl3:eezvuiʹm K ;
+
+
+
+
+!! !!Interrogative pronouns
+
+
+LEXICON Interrogative !!= * @CODE@
+mii+Pron+Interr:m	MK ; !!= * @CODE@
+ǩii+Pron+Interr:ǩ	MK ; !!= * @CODE@
+mii+Pron+Interr:mõõ	MK-long ;
+ǩii+Pron+Interr:ǩeä	MK-long ;
+mii+Pron+Interr:mõ	MK-short ;
+ǩii+Pron+Interr:ǩeä	MK-short ;
+mii+Pron+Interr:mââ	MK-low ;
+ǩii+Pron+Interr:ǩeä	MK-low ;
+
+LEXICON MK !!= * @CODE@
++Sg+Nom:ii	K ;
+
+LEXICON MK-long !!= * @CODE@
++Sg+Acc:n	K ;
++Sg+Gen:n	K ;
++Sg+Ill:zz	K ;
++Pl+Nom:k	K ;
+
+LEXICON MK-short !!= * @CODE@
++Sg+Com:ʹin	K ;
++Sg+Abe:ntää	K ;
+
+LEXICON MK-low !!= * @CODE@
++Ess:ʹđen	K ;
++Par:ʹđ	K ;
++Par:ʹđed	K ;
++Pl+Com:ivuiʹm	K ;
++Pl+Abe:itää	K ;
+
+
+
