@@ -36,16 +36,26 @@ Trigger symbols
 
  *  %^VOWLower:0  i>e, õ>â, â>ä, u>o, o>å
  *  %^VOWRaise:0  e>i, ä>e 
- *  %^VOWSH:0	  
- *  %^VOWXSH:0	   Extra shortens vowel in relation to consonant
- *  %^VOWL:0      Lengthens vowel in relation to consonant
- *  %^VOWXL:0     Extra lengthens vowel in relation to consonant in nouns, for example
- *  %^CXLong:0 %^CLong:0 %^CShort:0  Lengthening, shortening
  *  %^VOWBack:0	      Backing e>õ, e>â
  *  %^VOWFront:0	      Fronting
  *  %^PAL:0 %^PALNo:0    Palatalisation
  *  %^VC:0          Voicing s:z š:ž
  *  %^Â:0		 Indicates placement of â in stem
+
+Gradation triggers 2015.01.23
+ *  %^XSt2St:0	 Causes weakening from extra strong to strong
+ *  %^XSt2W:0	 Causes weakening from extra strong to weak
+ *  %^St2W:0	 Causes weakening from strong to weak
+ *  %^W2St:0	 Causes strengthening from weak to strong
+ *  %^W2XSt:0	 Causes strengthening from weak to extra strong
+ *  %^St2XSt:0	 Causes strengthening from strong to extra strong
+
+Other vowel length and consonant length will be phased out
+ *  %^VOWSH:0	  
+ *  %^VOWXSH:0	   Extra shortens vowel in relation to consonant
+ *  %^VOWL:0      Lengthens vowel in relation to consonant
+ *  %^VOWXL:0     Extra lengthens vowel in relation to consonant in nouns, for example
+ *  %^CXLong:0 %^CLong:0 %^CShort:0  Lengthening, shortening
 
  *  X3:0   causes weak grade
  *  %{VU%}:u          used with stuuʹl
@@ -146,10 +156,13 @@ extra long consonant (d or l or r)
  * C2CCafterVV2V = [l [b 0:b|j:ǧ 0:ǧ|ǥ:ǧ 0:ǧ|m 0:m|t 0:t]|m p 0:p|p c 0:c|r d 0:d|s [:k 0:k|:ǩ 0:ǩ|t 0:t]] ;  
 }}}
 
+Long consonant cluster
+Short consonant cluster
+
 
 Onset consonant or word boundary
 {{{
- * OnSetC = [# Cns*|#] ;  
+ * OnSetC = [# Cns:*|#] ;  
 }}}
 
 following morpheme or word boundary
@@ -187,7 +200,7 @@ possible triggers before VOWLower and VOWRaise
 
 possible triggers before PALNo and PAL
 {{{
- * PrecedePALNo = [([%^VOWSH:|%^VOWXSH:] (%^CLong:)|[%^VOWL:|%^VOWXL:] (%^FRICG:) (%^CShort:)) (%^VOWLower:|%^VOWRaise:) (%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) (X3:)] ;  
+ * PrecedePALNo = [([%^St2XSt:|%^St2W:|%^XSt2St:|%^XSt2W:|%^W2St:|%^W2XSt:]|[%^VOWSH:|%^VOWXSH:] (%^CLong:)|[%^VOWL:|%^VOWXL:] (%^FRICG:) (%^CShort:)) (%^VOWLower:|%^VOWRaise:) (%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) (X3:)] ;  
 }}}
 
 possible triggers between VowHeight and word end
@@ -264,12 +277,7 @@ __Even syllabic verbs I, vowel shortening o:0__ - used in +Ind+Prs+Pl3, +Ind+Prt
 
 
 __Even syllabic verbs I, vowel shortening a:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
-{{{
-  a:0 <=> OnSetC _ a: (ʹ:|0:ʹ) [LongC|Cns: :Cns*] [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ; 
-          [Cns:+|:Cns+] _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] (%^VOWSH: (%^CLong:)|%^VC:) %^RmVow: ; 
-          OnSetC _ a: (%ʹ:|0:%ʹ) Cns:+ Vow: [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^VOWSH: ;  ! 
-    OnSetC :Vow+ (%ʹ:|0:%ʹ) [LongC|Cns:+ - [Cns:* [l|n]]] _ i: %> Vow: ; 
-}}}
+
 
 __vowel to syllable mark a:ʼ__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
 {{{
@@ -655,6 +663,7 @@ __0:ʹ as transfer from left of v:u__ - used +Ind+Prs+Pl3, uʹvdded+V+Ind+Prs+Pl
               Vow: _ [Cns:+|:Cns+|Cns:+ (%ˈ:|0:%ˈ) Cns:+] (i:) PrecedePALNo  %^PAL: ; 
 }}}
 
+
 The left context allows for:
 Vowel shortening, and j/v > Vow 
 
@@ -662,13 +671,7 @@ Vowel shortening, and j/v > Vow
 
 
 __Even-syllabic verbs I, Palatalization of g:ǧ and k:ǩ__ -
-{{{
-  Cx:Cy <=> Vow: (ʹ:|0:ʹ) (Cns:)     _ Cx: (%^VOWSH: (%^CLong:)) NeutrHighBack (X3:) %^PAL: RBound ; 
-            Vow: (ʹ:|0:ʹ) (Cns:) Cx: _     (%^VOWSH: (%^CLong:)) NeutrHighBack (X3:) %^PAL: RBound ; 
-            Vow: (ʹ:|0:ʹ) (Cns:)     _ Cx: (%^VOWSH: (%^CLong:)) NeutrHighBack (X3:) %^PAL: RBound ; 
-            Vow: (ʹ:|0:ʹ) (Cns:) Cx: _     (%^VOWSH: (%^CLong:)) NeutrHighBack (X3:) %^PAL: RBound ; 
 
-}}}
 
 __Even-syllabic nouns I, Depalatalization of ǧ and weakening of grade to ǥ__ - vueʹlǧǧed+V+Ind+Prs+Sg1: vuâlǥam
 {{{
@@ -757,11 +760,12 @@ __Even syllabic verbs I, cg for s__
   s:0 <=>  i: j:i (ʹ:|0:ʹ) s _ %^VOWXL: %^CShort: ; 
 
 __Even syllabic verbs I, cg for đ __ - used with  ǩiđđ:ǩiiđ
-  đ:0 <=>  Vow: (ʹ:|0:ʹ) đ: _ %^VOWXL: %^CShort: ; 
-      	  [DbVow|Diphth] (ʹ:|0:ʹ) đ: _ %^VOWL: %^CShort: ; 
+ !  Vow: (ʹ:|0:ʹ) đ: _ [%^XSt2W:|%^VOWXL: %^CShort:] ; 
+      	  [|DbVow|Diphth] (ʹ:|0:ʹ) đ: _ %^VOWL: %^CShort: ; 
 
 
 __Even syllabic verbs I, cg for r __ - used with  võrr:võõr
+
 
 __Even syllabic verbs I, cg for l__ - used with  vuʹvll+N+Sg+Gen: vuuʹl
 deriving 
@@ -785,24 +789,12 @@ __Even syllabic verbs I, cg for ǧ__ - used with  vueʹlǧǧed+V+Ind+Prs+Sg1: vu
 __Even syllabic nouns I, with extra lengthening of vowel V>VV and KK>ǤǤ__ 
 used with  +N+Sg+Nom > +N+Sg+Gen for cases like
 {{lookki > looǥǥi}}.
-{{{
-  k:ǥ <=>                                                              
-   OnSetC [DbVow|Diphth] (ʹ:|0:ʹ) k: _    (i:) %^VOWL:  %^CShort: ; 
-   OnSetC [DbVow|Diphth] (ʹ:|0:ʹ)    _ k: (i:) %^VOWL:  %^CShort: ; 
-   OnSetC SurfLongVow    (ʹ:|0:ʹ) k: _    (i:) %^VOWXL: (%^CShort:) ; 
-   OnSetC SurfLongVow    (ʹ:|0:ʹ)    _ k: (i:) %^VOWXL: (%^CShort:) ; 
-}}}
+
 
 __Even syllabic nouns I, with extra lengthening of vowel V>VV and ǩ:j__ 
 used with
 {{ > }}.
-{{{
-  ǩ:j <=>                                                                     
-   OnSetC [DbVow|Diphth] (ʹ:|0:ʹ) ǩ:       _          %^VOWL:   %^CShort: ; 
-   OnSetC [DbVow|Diphth] (ʹ:|0:ʹ)          _       ǩ: %^VOWL:   %^CShort: ; 
-   OnSetC  SurfLongVow   (ʹ:|0:ʹ) ǩ: (%ˈ:) _          %^VOWXL: (%^CShort:) ; 
-   OnSetC  SurfLongVow   (ʹ:|0:ʹ)          _ (%ˈ:) ǩ: %^VOWXL: (%^CShort:) ; 
-}}}
+
 
 
 
