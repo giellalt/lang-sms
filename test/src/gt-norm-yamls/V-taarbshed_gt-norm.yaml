@@ -1,0 +1,71 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Verb - taarbšed: # Verb 'to need/tarvita' - full paradigm
+     taarbšed+V+Ind+Prs+Sg1: taarbšam
+     taarbšed+V+Ind+Prs+Sg2: taarbšak
+     taarbšed+V+Ind+Prs+Sg3: taarbaš
+     taarbšed+V+Ind+Prs+Pl1: taarbšep
+     taarbšed+V+Ind+Prs+Pl2: taarbšeʹped
+     taarbšed+V+Ind+Prs+Pl3: taarbše
+     taarbšed+V+Ind+Prs+4: taarbšet
+     taarbšed+V+Ind+Prs+ConNeg: taarbâž
+
+     taarbšed+V+Ind+Prt+Sg1: taarbšem
+     taarbšed+V+Ind+Prt+Sg2: taarbšiǩ
+     taarbšed+V+Ind+Prt+Sg3: taarbši
+     taarbšed+V+Ind+Prt+Pl1: taarbšim
+     taarbšed+V+Ind+Prt+Pl2: taarbšid
+     taarbšed+V+Ind+Prt+Pl3: taarbše
+     taarbšed+V+Ind+Prt+4: taarbšeš
+     taarbšed+V+Ind+Prt+ConNeg: taarbšam
+
+     taarbšed+V+Pot+Sg1: taarbšeʹžem
+     taarbšed+V+Pot+Sg2: taarbšeʹžiǩ
+     taarbšed+V+Pot+Sg3: taarbšež
+     taarbšed+V+Pot+Pl1: taarbšeʹžep
+     taarbšed+V+Pot+Pl2: taarbšeʹžid
+     taarbšed+V+Pot+Pl3: taarbšeʹže
+     taarbšed+V+Pot+4: taarbšeʹžet
+     taarbšed+V+Pot+ConNeg: taarbšeʹže
+
+     taarbšed+V+Cond+Sg1: taarbšeʹčem
+     taarbšed+V+Cond+Sg2: taarbšeʹčiǩ
+     taarbšed+V+Cond+Sg3: taarbšeʹči
+     taarbšed+V+Cond+Pl1: [taarbšeʹčim, taarbšeʹčin, taarbšeʹčep]
+     taarbšed+V+Cond+Pl2: taarbšeʹčid
+     taarbšed+V+Cond+Pl3: taarbšeʹče
+     taarbšed+V+Cond+4: taarbšeʹčeš
+     taarbšed+V+Cond+ConNeg: taarbšeʹče
+
+     taarbšed+V+Imprt+Sg2: taarbâž
+     taarbšed+V+Imprt+Sg3: taarbšââǥǥas
+     taarbšed+V+Imprt+Pl1: taarbšâkap
+     taarbšed+V+Imprt+Pl2: taarbšeʹǩed
+     taarbšed+V+Imprt+Pl3: taarbšâkaz
+     taarbšed+V+Imprt+2+ConNeg: taarbâž
+     taarbšed+V+Imprt+13+ConNeg: taarbšuku
+     taarbšed+V+ActEss: taarbšeʹmen
+     taarbšed+V+Action: taarbšam
+     taarbšed+V+PrsPrc: taarbšeei
+     taarbšed+V+PrfPrc: taarbšam
+     taarbšed+V+Pass+PrfPrc: [taarbšummu, taarbšuum]
+     taarbšed+V+VAbess: taarbšeǩâni
+
+     taarbšed+V+GerTemp: taarbšeen
+     taarbšed+V+GerInstr: taarbšeeʹl
+
+
