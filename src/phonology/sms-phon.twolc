@@ -192,7 +192,7 @@ LongCluster = [l [g g|ǧ ǧ|m m|t t]|m p p|p c c|r d d |s [k k|ǩ ǩ|t t]] ;
 
 !! Onset consonant or word boundary
 !! {{{
-OnSetC = [# Cns:*|#] ; !!= * @CODE@ 
+OnSetC = [Cns:|#] ; !!= * @CODE@ 
 !! }}}
 
 !! following morpheme or word boundary
@@ -944,10 +944,11 @@ Rules
 
 "Even syllabic verbs I, cg m:0"
 !! __@RULENAME@__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, 
-!! {{{
- m:0 <=> SurfLongVow (ʹ:|0:ʹ)  (s|r|l|p|d:) m: _ (%^VOWL:|%^VOWXL:) %^CShort: ; !!= @CODE@
-         SurfLongVow (ʹ:) h: (ʹ:|0:ʹ)      m: _ (%^VOWL:|%^VOWXL:) %^CShort: ; !!= @CODE@
-!! }}}
+ m:0 <=> SurfLongVow (ʹ:|0:ʹ)  (s|r|l|p|d:) m: _ (%^VOWL:|%^VOWXL:) %^CShort: ;
+         SurfLongVow (ʹ:|0:ʹ)  m _ %^St2W: ;
+!€# sääʹmm%^VOWL%^CShort 
+!€0 sääʹm000
+         SurfLongVow (ʹ:) h: (ʹ:|0:ʹ)      m: _ (%^VOWL:|%^VOWXL:) %^CShort: ; 
           
 "Even syllabic verbs I, cg v:0"
 !! __@RULENAME@__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, teevvad > teev
@@ -1071,24 +1072,24 @@ Rules
 
 "Even syllabic verbs I, Voicing š:ž" 
 !! __@RULENAME@__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
-!! {{{
  š:ž <=> 
- OnSetC [Diphth|DbVow] (ʹ:|0:ʹ) š:       _          %^VOWL:   %^CShort: ; !!= @CODE@ 
-         OnSetC [Diphth|DbVow] (ʹ:|0:ʹ)          _       š: %^VOWL:   %^CShort: ; !!= @CODE@ 
-         OnSetC   Diphth       (ʹ:|0:ʹ) š:  %ˈ:  _          %^VOWXL: (%^CShort:) ; !!= @CODE@ 
-         OnSetC   Diphth       (ʹ:|0:ʹ)          _ %ˈ:   š: %^VOWXL: (%^CShort:) ; !!= @CODE@ 
-         OnSetC   AllDbVow     (ʹ:|0:ʹ) š: (%ˈ:) _          %^VOWXL: (%^CShort:) ; !!= @CODE@ 
-         OnSetC   AllDbVow     (ʹ:|0:ʹ)          _ (%ˈ:) š: %^VOWXL: (%^CShort:) ; !!= @CODE@ 
-!         _ %^VC: ; !!= @CODE@
-!! }}}
+ OnSetC [Diphth|DbVow] (ʹ:|0:ʹ) š:       _          %^VOWL:   %^CShort: ;
+         OnSetC [Diphth|DbVow] (ʹ:|0:ʹ)          _       š: %^VOWL:   %^CShort: ; 
+         OnSetC   Diphth       (ʹ:|0:ʹ) š:  %ˈ:  _          %^VOWXL: (%^CShort:) ;
+         OnSetC   Diphth       (ʹ:|0:ʹ)          _ %ˈ:   š: %^VOWXL: (%^CShort:) ;
+         OnSetC   AllDbVow     (ʹ:|0:ʹ) š: (%ˈ:) _          %^VOWXL: (%^CShort:) ;
+         OnSetC   AllDbVow     (ʹ:|0:ʹ)          _ (%ˈ:) š: %^VOWXL: (%^CShort:) ;
+!€# kõõččm0õšš%^VOWXL%^CShort
+!€0 kõõččmõõžž00
+!         _ %^VC: ;
 
 "Even syllabic verbs I, Voicing c:ʒ"
-!! __@RULENAME@__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
-!! {{{
- c:ʒ <=> SurfLongVow (ʹ:|0:ʹ) c: _    (%^VOWL:|%^VOWXL:) %^CShort: ; !!= @CODE@
-         SurfLongVow (ʹ:|0:ʹ)    _ c: (%^VOWL:|%^VOWXL:) %^CShort: ; !!= @CODE@
-                                   _ %^VC: ; !!= @CODE@
-!! }}}
+!! __@RULENAME@__ - cc:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
+ c:ʒ <=> SurfLongVow (ʹ:|0:ʹ) c: _    (%^VOWL:|%^VOWXL:) %^CShort: ;
+         SurfLongVow (ʹ:|0:ʹ)    _ c: (%^VOWL:|%^VOWXL:) %^CShort: ;
+!€# čääʹcc%^VOWL%^CShort
+!€0 čääʹʒʒ00
+                                   _ %^VC: ; 
 
 "Even syllabic verbs I, Voicing č:j"
 !! __@RULENAME@__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
