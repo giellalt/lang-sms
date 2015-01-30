@@ -6,6 +6,9 @@
 
 !! !!Unclassified words
 
+LEXICON N_ !!= * __@CODE@__ FOR (STILL) UNCLASSIFIED INCOMING NOUNS.
++N+WORK: #;
+
 LEXICON n !!= * __@CODE@__ for (still) unclassified nouns.
 
 !! The lexicon __@LEXNAME@__ is a dummy lexicon containing N Sg Nom only.
@@ -15,13 +18,13 @@ N_TOLL ;
 
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
 !! !!1.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
-!! !!1.1.1 Sg.Ill in ʹ-e
-!! !!1.1.1.1 Has Gradation
-!! !!1.1.1.1.1 Monophthong
-!! !!1.1.1.1.1.1 Homogenous Consonant
-!! !!1.1.1.1.1.1.2 Sg.Nom Strong Grade
-!! !!1.1.1.1.1.1.2.1.Sg.Gen Weak Grade
-!! !!1.1.1.1.1.1.2.1.3 Sg.Ill Extra Strong Grade
+!! !!1.1.3 Sg.Ill in palatalization and -e
+!! !!1.1.3.1 Has Gradation
+!! !!1.1.3.1.1 Monophthong
+!! !!1.1.3.1.1.1 Consonant Geminate
+!! !!1.1.3.1.1.1.2 Sg.Nom Strong Grade
+!! !!1.1.3.1.1.1.2.1.Sg.Gen Weak Grade
+!! !!1.1.3.1.1.1.2.1.3 Sg.Ill Extra Strong Grade
 LEXICON N_PAARR !!= * __@CODE@__ paarr:paarr
 !! ** Yaml: __N-paarr, N-saakk__
 !! is for nouns with -âst Loc. N_Â-EPal2-21
@@ -422,6 +425,15 @@ LEXICON N_PEIʹVV !!= * __@CODE@__ is for nouns with ''-est'' +Sg+Loc; +Sg+Gen s
 +N:%^VOWL%^CShort PL-ABE ;
 
 LEXICON N_ČÄÄʹCC !!= * __@CODE@__ is for nouns with ''-a'' ill ''-est'' +Loc, 
+!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+!! !!1.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
+!! !!1.3.2 Sg.Ill in depalatalization and -a
+!! !!1.3.2.1 Has Gradation
+!! !!1.3.2.1.1 Monophthong
+!! !!1.3.2.1.1.1 Consonant Geminate
+!! !!1.3.2.1.1.1.2 Sg.Nom Strong Grade
+!! !!1.3.2.1.1.1.2.1.Sg.Gen Weak Grade
+!! !!1.3.2.1.1.1.2.1.3 Sg.Ill Extra Strong Grade
 !! N_E-ANoPal3-21
 !! page 204 (Eino: 1.113)
 !! ** Yaml: __caacc__
@@ -429,7 +441,7 @@ LEXICON N_ČÄÄʹCC !!= * __@CODE@__ is for nouns with ''-a'' ill ''-est'' +Loc
 !! * čääʹcc:čääʹcc
 !!
 +N: SG-NOM ;
-+N:%^VOWL%^CShort SG-GEN ;
++N:%^St2W SG-GEN ;
 +N:%^VOWL%^CShort SG-ACC ;
 +N:%^VOWSH%^CLong%^PALNo%>a SG-ILL ;
 +N:%^VOWL%^CShort%>e SG-LOC ;
@@ -499,6 +511,27 @@ LEXICON N_KLAAʹDD !!= * __@CODE@__ is for nouns with ''-est'' +Sg+Loc; ''e'' +S
 +N: PL-LOC ;
 +N: PL-COM ;
 +N: PL-ABE ;
+
+LEXICON N_SÄʹMMLAŽ
+!! säʹmmlaž:säʹmml
++N+Sg+Nom:až K ;
++N+Sg+Gen:a K ;
++N+Sg+Acc:a K ;
++N+Sg+Ill:iʹžže K ;
++N+Sg+Loc:ast K ;
++N+Sg+Com:ain K ;
++N+Ess:iʹžžen K ;
++N+Par:iʹžžed K ;
++N+Sg+Abe:atää K ;
++N+Pl+Nom:a K ;
++N+Pl+Gen:ai K ;
++N+Pl+Acc:aid K ;
++N+Pl+Ill:aid K ;
++N+Pl+Loc:ain K ;
++N+Pl+Com:aivuiʹm K ;
++N+Pl+Abe:aitää K ;
+
+
 
 LEXICON N_KUÂLAŽ
 !! * kuâlaž:kuâl
