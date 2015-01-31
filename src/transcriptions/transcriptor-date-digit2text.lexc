@@ -16,7 +16,7 @@
 !! !!! The Skolt Sámi dates !
 ! ========================= !
 !4.12 rosttovmannu neelljad
-!Rosttovmannu 4. peei'v tai 4. peei'v rostto vmannust
+!Rosttovmannu 4. peeiʹv tai 4. peeiʹv rostto vmannust
 !! This is still a dummy version, containing South Saami.
 
 !! __To be corrected!!__
@@ -43,15 +43,15 @@ Multichar_Symbols
 @U.MONTH.12@ 
 
 +Use/NG
-@U.MONTHFIRST.YES@
-@R.MONTHFIRST.YES@
-@D.MONTHFIRST.YES@
+
 
 LEXICON Root
-@U.MONTHFIRST.YES@ MONTH-FIRST ;
- 31DAYS ;
- 30DAYS ;
- 29DAYS ;
+
+ MONTH-FIRST ;
+
+ 31DAYS-FIRST ;
+ 30DAYS-FIRST ;
+ 29DAYS-FIRST ;
 
 LEXICON MONTH-FIRST
 
@@ -146,9 +146,50 @@ LEXICON 31DAYS
 31:koummlovuõssmõs B ;
 30DAYS ;
 
+LEXICON 29DAYS-FIRST
+1:vuõssmõs B-FIRST ;
+2:nuʹbb B-FIRST ;
+3:kuälmad B-FIRST ;
+4:neelljad B-FIRST ;
+5:viiđad B-FIRST ;
+6:kuuđad B-FIRST ;
+7:čiiččad B-FIRST ;
+8:kääucad B-FIRST ;
+9:ååucad B-FIRST ;
+1%0:lååǥǥad B-FIRST ;
+11:õtmlååǥǥad B-FIRST ;
+12:kuâtmlååǥǥad B-FIRST ;
+13:konmlååǥǥad B-FIRST ;
+14:nenjmlååǥǥad B-FIRST ;
+15:vittmlååǥǥad B-FIRST ;
+16:kuttmlååǥǥad B-FIRST ;
+17:činmlååǥǥad B-FIRST ;
+18:käcmlååǥǥad B-FIRST ;
+19:åcmlååǥǥad B-FIRST ;
+2%0:kuâhttlååǥǥad B-FIRST ;
+21:kuâhttlovuõssmõs B-FIRST ;
+22:kuâhttlonuʹbb B-FIRST ;
+23:kuâhttlokuälmad B-FIRST ;
+24:kuâhttloneelljad B-FIRST ;
+25:kuâhttloviiđad B-FIRST ;
+26:kuâhttlokuuđad B-FIRST ;
+27:kuâhttločiiččad B-FIRST ;
+28:kuâhttlokääucad B-FIRST ;
+29:kuâhttloååucad B-FIRST ;
+
+LEXICON 30DAYS-FIRST
+3%0:koummlååǥǥad B-FIRST ;
+29DAYS-FIRST ;
+
+LEXICON 31DAYS-FIRST
+31:koummlovuõssmõs B-FIRST ;
+30DAYS-FIRST ;
+
 LEXICON B
-%.@R.MONTHFIRST.YES@:% peei'v+Use/NG% @R.MONTHFIRST.YES@ MONTH ;
-%.@D.MONTHFIRST.YES@:% peei'v% @D.MONTHFIRST.YES@ MONTH-SECOND ;
+%.:% peeiʹv+Use/NG  MONTH ;
+
+LEXICON B-FIRST
+%.:% peeiʹv%  MONTH-SECOND ;
 
 LEXICON MONTH
 1@U.MONTH.1@:@U.MONTH.1@ X ;
@@ -219,5 +260,5 @@ LEXICON MONTH-SECOND
 
 
 LEXICON X
-%.: # ;
+%.:  # ;
 ! # ; ! sloppy punctuation
