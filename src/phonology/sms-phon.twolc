@@ -728,7 +728,7 @@ Rules
  0:i <=> OnSetC _ :i RelVowLengthening ; !!= @CODE@
          OnSetC _ i  (ʹ:)  CNoJ:  %{Â1%}:  Cns:+  [%^VOWL:|%^VOWXL:] ; !!= @CODE@
 
-   # Cns:* _ i Cns:+ %^VOWXL: %^CShort: ;
+   # Cns:* _ i Cns:+ [%^VOWXL: %^CShort:|%^XSt2W:] ;
 !€# ǩ0iđđ%^VOWXL%^CShort
 !€0 ǩiiđ000
 
@@ -989,17 +989,17 @@ Rules
 
 "Even syllabic verbs I, cg for s"
 !! __@RULENAME@__ 
- s:0 <=>  i: j:i (ʹ:|0:ʹ) s _ %^VOWXL: %^CShort: ; !!= @CODE@
+ s:0 <=>  i: j:i (ʹ:|0:ʹ) s _ %^VOWXL: %^CShort: ;
 !€# ijss%^VOWXL%^CShort%>âs
 !€0 iis0000âs
 
 "Even syllabic verbs I, cg for đ" 
 !! __@RULENAME@__ - used with  ǩiđđ:ǩiiđ
  đ:0 <=> đ: _ %^XSt2W: ;
-!  Vow: (ʹ:|0:ʹ) đ: _ [%^XSt2W:|%^VOWXL: %^CShort:] ; !!= @CODE@
+!  Vow: (ʹ:|0:ʹ) đ: _ [%^XSt2W:|%^VOWXL: %^CShort:] ;
 !€# ǩ0iđđ%^XSt2W
 !€0 ǩiiđ00
-     	  [|DbVow|Diphth] (ʹ:|0:ʹ) đ: _ %^VOWL: %^CShort: ; !!= @CODE@
+     	  [DbVow|Diphth] (ʹ:|0:ʹ) đ: _ %^VOWL: %^CShort: ;
 
 
 "Even syllabic verbs I, cg for r" 
