@@ -715,7 +715,7 @@ Rules
 !!
    OnSetC _ [:o  RelVowLengthening | u:o [%{VU%}:u|(ʹ:) v:] (ʹ:|0:ʹ) [d|l|r|ʒ] (%^VOWL: %^CShort:|%^VOWXL: (%^CShort:)) %^VOWLower:|u:o  (ʹ:) v:  (0:ʹ) [d d:|l l:|r r:|ʒ ʒ:] (%^VOWXL: (%^CShort:)) %^VOWLower:];
 
-   OnSetC _ o Cns:+ [%^XSt2W:|%^VOWXL: %^CShort:] ; 
+   OnSetC _ o Cns:+ [ %^XSt2W: |%^VOWXL: %^CShort:] ; 
 !! - deriving toll+N+Sg+Gen: tool
 !€# t0oll%^XSt2W
 !€0 tool000
@@ -729,15 +729,16 @@ Rules
          OnSetC _ i  (ʹ:)  CNoJ:  %{Â1%}:  Cns:+  [%^VOWL:|%^VOWXL:] ; !!= @CODE@
 
    # Cns:* _ i Cns:+ [%^VOWXL: %^CShort:|%^XSt2W:] ;
-!€# ǩ0iđđ%^VOWXL%^CShort
-!€0 ǩiiđ000
+!€# ǩ0iđđ%^XSt2W
+!€0 ǩiiđ00
 
 
 
 "Even syllabic nouns, relative vowel extra lengthening u not followed by v"
 !! __@RULENAME@__ - declension of nouns kunn > kuun
 !! {{{
- 0:u <=> OnSetC _ [o:u|u] RelVowLengtheningNOTu ; !!= @CODE@
+ 0:u <=> OnSetC _ [o:u|u] Cns: Cns:* %^XSt2W: ;
+ OnSetC _ [o:u|u] RelVowLengtheningNOTu ; !!= @CODE@
 ! (ʹ:|0:ʹ) [[s: s:|n n:] %^VOWXL:|CNoV: Cns:+ %^VOWL: %^CShort:] RBound ;
 ! relative lengthening of u
 !  Cns: _ u: [(%ʹ:|0:%ʹ) [CNoV:+|CNoV:+ (%ˈ:|:%ˈ) Cns:+]] [%^VOWL:|%^VOWXL:] (%^CShort:) [%>|#|(%^VOWRaise:) %^PAL:] ;
@@ -1054,7 +1055,10 @@ Rules
   OnSetC [DbVow|Diphth] (ʹ:|0:ʹ)    _ k: (i:) [%^St2W:|%^VOWL:  %^CShort:] ;
   OnSetC SurfLongVow    (ʹ:|0:ʹ) k: _    (i:) %^VOWXL: (%^CShort:) ;
   OnSetC SurfLongVow    (ʹ:|0:ʹ)    _ k: (i:) %^VOWXL: (%^CShort:) ;
-
+  :Vow (ʹ:|0:ʹ) k: _ %^XSt2W: ;
+  :Vow (ʹ:|0:ʹ) _ k: %^XSt2W: ;
+!€# j0okk%^XSt2W
+!€0 jooǥǥ0
 
 "Even syllabic nouns I, with extra lengthening of vowel V>VV and ǩ:j"
 !! __@RULENAME@__ 
