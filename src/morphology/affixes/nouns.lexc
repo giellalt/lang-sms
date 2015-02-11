@@ -337,7 +337,17 @@ LEXICON N_ÂʹLǦǦ !!= * __@CODE@__ Is for nouns with ''-est'' Loc, Extra long 
 
 !! !!a-stems
 
-LEXICON N-pess !!= * __@CODE@__ Is for nouns with ''-ast'' Loc
+LEXICON N_PESS !!= * __@CODE@__ Is for nouns with ''-ast'' Loc
+!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+!! !!1.2 Sg.Loc in -ast. a-stems (Sg.Loc, Ess, Par).
+!! !!1.2.3 Sg.Ill in raised vowel and -u
+!! !!1.2.3.1 Has Gradation
+!! !!1.2.3.1.1 Monophthong
+!! !!1.2.3.1.1.1 Consonant Geminate
+!! !!1.2.3.1.1.1.3 Sg.Nom Extra Strong Grade
+!! !!1.2.3.1.1.1.3.2.Sg.Gen Strong Grade
+!! !!1.2.3.1.1.1.3.2.3 Sg.Ill Extra Strong Grade
+!NumContLex="1.1120000000000001"
 !! N_A-URaise3-32
 !! ** Yaml: __pess, pall, ruakk__
 +N: SG-NOM ;
@@ -402,6 +412,35 @@ LEXICON N_KUʹMPP !!= * __@CODE@__ is for nouns with ''-est'' +Loc
 +N:%^VOWL%^CShort PL-LOC ;
 +N:%^VOWL%^CShort PL-COM ;
 +N:%^VOWL%^CShort PL-ABE ;
+
+LEXICON N_ǨEÂLKK
+!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+!! !!1.2 Sg.Loc in -ast. a-stems (Sg.Loc, Ess, Par).
+!! !!1.2.3 Sg.Ill in raised vowel and -u
+!! !!1.2.3.1 Has Gradation
+!! !!1.2.3.1.2 Diphthong
+!! !!1.2.3.1.2.2 Consonant Cluster
+!! !!1.2.3.1.2.2.2 Sg.Nom Strong Grade
+!! !!1.2.3.1.2.2.2.1.Sg.Gen Weak Grade
+!! !!1.2.3.1.2.2.2.1.2 Sg.Ill Strong Grade
+!NumContLex="1.1120000000000001"
++N:%^VOWL%^CShort%>a PL-ABE ;
++N:%^VOWL%^CShort%>a PL-ACC ;
++N:%^VOWL%^CShort%>a PL-COM ;
++N:%^VOWL%^CShort%>a PL-GEN ;
++N:%^VOWL%^CShort%>a PL-ILL ;
++N:%^VOWL%^CShort%>a PL-LOC ;
++N:%^VOWL%^CShort PL-NOM ;
++N:%>a ESS ; ! ess and prt without
++N:%>a PAR ;
++N:%^VOWL%^CShort SG-ABE ;
++N:%^VOWL%^CShort SG-ACC ;
++N:%^VOWL%^CShort SG-GEN ;
++N:%^VOWSH%^CLong%^VOWRaise%>u SG-ILL ;
++N:%^VOWL%^CShort%>a SG-LOC ;
++N:%^VOWL%^CShort%>a NMN_SG-COM_IN ;
++N: SG-NOM ;
+
 
 LEXICON N_PEIʹVV !!= * __@CODE@__ is for nouns with ''-est'' +Sg+Loc; +Sg+Gen stem is weak grade and it is shared by all plural forms; ''a'' +Sg+Ill has no palatalization; ''en'' +Ess and ''ed'' +Par share +Sg+Nom stem
 !! N_E-ANoPal3-31
@@ -515,7 +554,7 @@ LEXICON N_KLAAʹDD !!= * __@CODE@__ is for nouns with ''-est'' +Sg+Loc; ''e'' +S
 
 LEXICON N_SÄʹMMLAŽ
 !! * Yaml: __A-saemmlazh__
-!! säʹmmlaž:säʹmml
+!! säʹmmlaž:säʹmmlaž
 +N+Sg+Nom:až K ;
 +N+Sg+Gen:a K ;
 +N+Sg+Acc:a K ;
@@ -1422,7 +1461,7 @@ LEXICON N_MUEʹLES
 !! ''These are still not fixed.''
 
 LEXICON a	  !!= * __@CODE@__ = Koulukielioppi stemtype a-stem
-N-pess ;      !!= ** Redirecting to __@CODE@__
+N_PESS ;      !!= ** Redirecting to __@CODE@__
 
 LEXICON c	  !!= * __@CODE@__ = Koulukielioppi stemtype contract
 +N+Sg+Nom: # ;
