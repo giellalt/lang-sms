@@ -214,7 +214,7 @@ RBound = [#|%>] ; !!= * @CODE@
 !! relative lengthening of vowel right context following vowel:vowel
 !! 0:õ <=> OnSetC _ :õ RelVowLengthening
 !! {{{
-RelVowLengthening = [(ʹ:|0:ʹ) [V2VVwithCC  %^VOWL: %^CShort:|CC2CafterV2VV (a: i:) %^VOWL: %^CShort:|CC2CafterV2VVandUI %^VOWL: %^CShort:|LongC2SH %^VOWXL: (%^CShort:)|[k|n] %^VOWL:] ] ; !!= * @CODE@
+RelVowLengthening = [(ʹ:|0:ʹ) [V2VVwithCC  %^VOWL: %^CShort:|CC2CafterV2VV (a: i:) %^VOWL: %^CShort:|CC2CafterV2VVandUI %^VOWL: %^CShort:|LongC2SH %^VOWXL: (%^CShort:)|[k|m|n] %^VOWL:] ] ; !!= * @CODE@
 !! }}}
 
 !! relative lengthening of vowel right context following vowel:vowel
@@ -663,6 +663,8 @@ Rules
 "Even syllabic verbs I, relative vowel lengthening 0:e"
 !! __@RULENAME@__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
  0:e <=> OnSetC _ :e RelVowLengthening ;
+!€# čââʹlmteʹm%^VOWL
+!€0 čââʹlmte0m0
 !Distinguishing mainstam and maainstam
       Cns: _ e (u:|i:) (ʹ:|0:ʹ)  Cns:+ %{Â1%}: Cns:+  %^VOWL: ; 
       [ n | š ] _ e (ʹ:|0:ʹ) ǩ ǩ ;
@@ -934,12 +936,14 @@ Rules
 
 "Even-syllabic nouns, removing palatalization in -est +Loc nouns"
 !! __@RULENAME@__ - removing palatalization in +Sg+Ill,  pieʹss:peässa
-!! {{{
-   ʹ:0 <=>  [Vow:|:Vow] _ [:Cns :Cns+|Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (e: s:) PrecedePALNo %^PALNo: [RBound|%^RmVow:|%^VC:] ; !!= @CODE@
+   ʹ:0 <=>  [Vow:|:Vow] _ [:Cns :Cns+|Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (e: s:) PrecedePALNo %^PALNo: [RBound|%^RmVow:|%^VC:] ;
+!€# čââʹlmteʹm%{XC%}%^CLong%^PALNo%>a
+!€0 čââʹlmte0mm000a
+
 !jurdded
-                    Vow: _ CNoV: Cns:+ PrecedePALNo %^PALNo: ; !!= @CODE@ 
-                         _ v:u ; !!= @CODE@
-!! }}}
+                    Vow: _ CNoV: Cns:+ PrecedePALNo %^PALNo: ; 
+                         _ v:u ; 
+
 
 
 !! !!Consonant QUANTITY CHANGE gradation rules
@@ -1226,7 +1230,9 @@ Rules
 
 "Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:m"
 !! __@RULENAME@__
- %{XC%}:m <=>  Vow: (ʹ:|0:ʹ) m _ %^W2XSt: ;
+ %{XC%}:m <=>  Vow: (ʹ:|0:ʹ) m _ [%^W2XSt:|%^CLong:] %^PALNo: ;
+!€# čââʹlmteʹm%{XC%}%^CLong%^PALNo%>a
+!€0 čââʹlmte0mm000a
 
 "Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:v"
 !! __@RULENAME@__
