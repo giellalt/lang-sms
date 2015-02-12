@@ -44,9 +44,21 @@ Alphabet
   õ â							!!= * @CODE@
   Õ Â							!!= * @CODE@
 
- %ˈ !! * Vertical line: as overlong consonant marker that does not appear in writing 
- ʼ    !! * Upper right single quotation mark: Syllable marker that appears in writing 
  ʹ  !! * MODIFIER LETTER PRIME: U+02B9 suprasegmental palatization
+ ʼ  !! * MODIFIER LETTER APOSTROPHE: U+02BC Syllable marker that appears in writing 
+ %ˈ !! * MODIFIER LETTER VERTICAL LINE: U+02C8 as overlong consonant marker that does not appear in writing 
+
+!  for consonant lengthening
+%{XC%}:m
+%{XC%}:v
+
+%{XC%}:n
+%{XC%}:r
+%{XC%}:l
+
+%{XC%}:k
+
+
 !! !! Trigger symbols
 
  %^RmVow:0 !!= * @CODE@ for removing vowels e, â, a in second syllable before consonant  
@@ -191,9 +203,8 @@ LongCluster = [l [g g|ǧ ǧ|m m|t t]|m p p|p c c|r d d |s [k k|ǩ ǩ|t t]] ;
 
 
 !! Onset consonant or word boundary
-!! {{{
-OnSetC = [Cns:|#] ; !!= * @CODE@ 
-!! }}}
+OnSetC = [Cns|#] ;
+
 
 !! following morpheme or word boundary
 !! {{{
@@ -347,10 +358,12 @@ Rules
 
 "Even syllabic verbs I, vowel shortening ä:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
-!! {{{
- ä:0 <=> OnSetC _ ä: (ʹ:|0:ʹ) [LongC|Cns: :Cns*|Cns:+] [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ; !!= @CODE@
-         OnSetC _ ä: (ʹ:|0:ʹ) Cns:+ Vow: [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] %^VOWSH: %^CLong: ; !!= @CODE@
-!! }}}
+ ä:0 <=> OnSetC _ ä: Cns: %{XC%}: %^W2XSt: ;
+!€# mään%{XC%}%^W2XSt%^VOWRaise%>u
+!€0 m0ann000u
+   OnSetC _ ä: (ʹ:|0:ʹ) [LongC|Cns: :Cns*|Cns:+] [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ;
+         OnSetC _ ä: (ʹ:|0:ʹ) Cns:+ Vow: [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] %^VOWSH: %^CLong: ;
+
 
 
 
@@ -429,11 +442,13 @@ Rules
 
 "Even syllabic verbs I, diphthong raising beginning with ä:a u"
 !! __@RULENAME@__ - deriving läullad > laullum
-!! {{{
- ä:a <=> OnSetC (0:a)  _ u  (%ʹ:|0:%ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+] (%^VOWSH: %^CLong:) %^VOWRaise: %>  u ; !!= @CODE@
-         OnSetC  ä:    _    (%ʹ:|0:%ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+] %^VOWSH: %^CLong:  %>  a ; !!= @CODE@
-         OnSetC  ä:    _    (%ʹ:|0:%ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+] (%^VOWXSH: (%^CLong:)|%^VOWL: (%^CShort:)) %^VOWRaise: ; !!= @CODE@
-         OnSetC        _ ä: (%ʹ:|0:%ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+] (%^VOWL:   (%^CShort:)) %^VOWRaise: ; !!= @CODE@
+ ä:a <=> ä: _ Cns: %{XC%}: (%^W2XSt:) %^VOWRaise: ;
+!€# mään%{XC%}%^W2XSt%^VOWRaise%>u
+!€0 m0ann000u
+  OnSetC (0:a)  _ u  (%ʹ:|0:%ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+] (%^VOWSH: %^CLong:) %^VOWRaise: %>  u ;
+         OnSetC  ä:    _    (%ʹ:|0:%ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+] %^VOWSH: %^CLong:  %>  a ; 
+         OnSetC  ä:    _    (%ʹ:|0:%ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+] (%^VOWXSH: (%^CLong:)|%^VOWL: (%^CShort:)) %^VOWRaise: ;
+         OnSetC        _ ä: (%ʹ:|0:%ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+] (%^VOWL:   (%^CShort:)) %^VOWRaise: ; 
 !! }}}
 
 
@@ -927,7 +942,7 @@ Rules
 !! }}}
 
 
-!! !!Consonant gradation rules
+!! !!Consonant QUANTITY CHANGE gradation rules
 
 !! !Weakening Consonant Cluster
 
@@ -1209,6 +1224,38 @@ Rules
 !! * In verbs this will be observed in finite forms
 !! * In derivational morphology, e.g. -škuetted, this is not the case
 
+"Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:m"
+!! __@RULENAME@__
+ %{XC%}:m <=>  Vow: (ʹ:|0:ʹ) m _ %^W2XSt: ;
+
+"Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:v"
+!! __@RULENAME@__
+ %{XC%}:v <=>  Vow: (ʹ:|0:ʹ) v _ %^W2XSt: ;
+
+
+"Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:n"
+!! __@RULENAME@__
+ %{XC%}:n <=>  Vow: (ʹ:|0:ʹ) n _ %^W2XSt: ;
+!€# mään%{XC%}%^W2XSt%^VOWRaise%>u
+!€0 m0ann000u
+
+"Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:r"
+!! __@RULENAME@__
+ %{XC%}:r <=>  Vow: (ʹ:|0:ʹ) r _ %^W2XSt: ;
+!€# puär0%{XC%}%^W2XSt%^VOWRaise%>u
+!€0 puårˈr000u
+
+"Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:l"
+!! __@RULENAME@__
+ %{XC%}:l <=>  Vow: (ʹ:|0:ʹ) l _ %^W2XSt: ;
+!€# suâl0%{XC%}%^W2XSt%^VOWRaise%>u
+!€0 suõlˈl000u
+
+"Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:k"
+!! __@RULENAME@__
+ %{XC%}:k <=>  Vow: (ʹ:|0:ʹ) k _ %^W2XSt: ;
+
+
 
 
 "Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m"
@@ -1233,10 +1280,12 @@ Rules
 !! }}}
 
 "Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:n"
-!! __@RULENAME@__ - mään > mannu
-!! {{{
- 0:n <=> OnSetC  2ShortVow (ʹ:|0:ʹ) n _ (j â: l) [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ; !!= @CODE@
-!! }}}
+!! __@RULENAME@__
+ 0:n <=>  Vow: (ʹ:|0:ʹ) n _ %^W2XSt: ;
+!€# mään0%^W2XSt%^VOWRaise%>u
+!€0 m0ann000u
+ OnSetC  2ShortVow (ʹ:|0:ʹ) n _ (j â: l) [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ; 
+
 
 "Consonant lengthening 0:d"
 !! __@RULENAME@__ - juurd+N+Sg+Gen: jurddi
@@ -1292,11 +1341,16 @@ Rules
  0:k <=>  2ShortVow  (ʹ:) [l|s|š] :k _ Vow: Cns [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] (%^PALNo:) ; !!= @CODE@
 !! }}}
 
-"Consonant lengthening j:ǧ"
+!! !!CONSONANT QUALITY CHANGE
+
+"Consonant quality change j:ǧ"
 !! __@RULENAME@__ - 
-!! {{{
- j:ǧ <=>  2ShortVow  :ʹ  l _ 0: Vow: Cns [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] (%^PAL:) ; !!= @CODE@
-!! }}}
+ j:ǧ <=>  2ShortVow  :ʹ  l _ 0: Vow: Cns [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] (%^PAL:) ;
+
+"Consonant quality change ǥ:ǧ"
+!! __@RULENAME@__ 
+ ǥ:ǧ <=>  2ShortVow  :ʹ  l _ 0: Vow: Cns [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] %^PAL: ;
+!Dummy
 
 
 
