@@ -16,6 +16,7 @@ LEXICON n !!= * __@CODE@__ for (still) unclassified nouns.
 
 N_TOLL ;
 
+LEXICON N_PAARR
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
 !! !!1.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
 !! !!1.1.3 Sg.Ill in palatalization and -e
@@ -25,7 +26,7 @@ N_TOLL ;
 !! !!1.1.3.1.1.1.2 Sg.Nom Strong Grade
 !! !!1.1.3.1.1.1.2.1.Sg.Gen Weak Grade
 !! !!1.1.3.1.1.1.2.1.3 Sg.Ill Extra Strong Grade
-LEXICON N_PAARR !!= * __@CODE@__ paarr:paarr
+!! paarr:paarr
 !! ** Yaml: __N-paarr, N-saakk__
 !! is for nouns with -âst Loc. N_Â-EPal2-21
 !! N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
@@ -48,11 +49,18 @@ LEXICON N_PAARR !!= * __@CODE@__ paarr:paarr
 
 
 
-
-
-!! !!1.1.1.1.1.1.3 Sg.Nom Extra Strong
-!! !!1.1.1.1.1.1.3.1.Sg.Gen Weak 
-LEXICON N_TOLL !!= * __@CODE@__ toll:toll
+ 
+LEXICON N_TOLL
+!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+!! !!1.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
+!! !!1.1.3 Sg.Ill in palatalization and -e
+!! !!1.1.3.1 Has Gradation
+!! !!1.1.3.1.1 Monophthong
+!! !!1.1.3.1.1.1 Consonant Geminate
+!! !!1.1.3.1.1.1.3 Sg.Nom Extra Strong Grade
+!! !!1.1.3.1.1.1.3.1.Sg.Gen Weak Grade
+!! !!1.1.3.1.1.1.2.1.3 Sg.Ill Extra Strong Grade
+!! toll:toll
 !! ** Yaml: __N-jokk, N-kidd, N-soll, N-toll, N-vorr__
 !! 
 !! 
@@ -78,12 +86,17 @@ LEXICON N_TOLL !!= * __@CODE@__ toll:toll
 
 
 
-!! !!1.1.1.1.2 Diphthong
-!! !!1.1.1.1.2.1 Homogenous Consonant
-!! !!1.1.1.1.2.1.2 Sg.Nom Strong Grade
-!! !!1.1.1.1.2.1.2.1.Sg.Gen Weak Grade
-!! !!1.1.1.1.2.1.2.1.3 Sg.Ill Extra Strong Grade
-LEXICON N_MUÕRR !!= * __@CODE@__ muõrr:muõrr
+LEXICON N_MUÕRR
+!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+!! !!1.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
+!! !!1.1.3 Sg.Ill in palatalization and -e
+!! !!1.1.3.1 Has Gradation
+!! !!1.1.3.1.2 Diphthong
+!! !!1.1.3.1.2.1 Consonant Geminate
+!! !!1.1.3.1.2.1.2 Sg.Nom Strong Grade
+!! !!1.1.3.1.2.1.2.1.Sg.Gen Weak Grade
+!! !!1.1.3.1.1.1.2.1.3 Sg.Ill Extra Strong Grade
+!! muõrr:muõrr
 !! ** Yaml: __N-muorr__
 +N: SG-NOM ;
 +N:%^VOWL%^CShort SG-GEN ;
@@ -229,7 +242,16 @@ LEXICON N-miarr !!= * __@CODE@__ is for words with ''-âst'' Loc but ''-ense'' I
 +N:%^VOWL%^CShort PL-ABE ;
 
 LEXICON N_ǨIÕTT
-!! is for words with -âst Loc but ǩiõʹtte Ill
+!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+!! !!1.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
+!! !!1.1.3 Sg.Ill in palatalization and -e
+!! !!1.1.3.1 Has Gradation
+!! !!1.1.3.1.1 Dihthong
+!! !!1.1.3.1.1.1 Consonant Geminate
+!! !!1.1.3.1.1.1.2 Sg.Nom Strong Grade
+!! !!1.1.3.1.1.1.2.1.Sg.Gen Weak Grade
+!! !!1.1.3.1.1.1.2.1.3 Sg.Ill Extra Strong Grade
+!! is for words with -âst Loc but ǩiõʹtˈte Ill
 !! N_Â-EPal
 !! ** Yaml: __kiott__
 +N: SG-NOM ;
@@ -248,49 +270,6 @@ LEXICON N_ǨIÕTT
 +N:%^VOWL%^CShort PL-LOC ;
 +N:%^VOWL%^CShort PL-COM ;
 +N:%^VOWL%^CShort PL-ABE ;
-
-!! !!1.1.1.2 Lacks Gradation
-LEXICON N_LUUKK !!= * __@CODE@__ luukk:luukk is for nouns with -âst Loc and no gradation. N_Â-EPal1-11, N_Â-EPal2-22
-!! N_GENX1-ILLEPalX1-LOCÂ-NOM1X1
-!! ** Yaml: __saarf, luukk__
-+N: SG-NOM ;
-+N: SG-GEN ;
-+N: SG-ACC ;
-+N: NMN_SG-ILL_PAL_E ;
-+N: NMN_SG-LOC_Â ;
-+N: NMN_SG-COM_IN ;
-+N: NMN_ESS_Â ; ! ess and prt without
-+N: NMN_PAR_Â ;
-+N: SG-ABE ;
-+N: PL-NOM ;
-+N: PL-GEN ;
-+N: PL-ACC ;
-+N: PL-ILL ;
-+N: PL-LOC ;
-+N: PL-COM ;
-+N: PL-ABE ;
-
-
-LEXICON N_JARPLAN !!= * __@CODE@__ is for words with ''-âst'' Loc 
-!! N_Â-EPal1-B31
-!! ** Yaml: __jarplan__
-+N: SG-NOM ;
-+N:%^VOWL SG-GEN ;
-+N:%^VOWL SG-ACC ;
-+N:%^VOWL%^PAL%>e SG-ILL ;
-+N:%^VOWL%>â SG-LOC ;
-+N:%^VOWL NMN_SG-COM_IN ;
-+N:%^VOWL%>e ESS ; ! ess and prt without
-+N:%^VOWL%>e PAR ;
-+N:%^VOWL SG-ABE ;
-+N:%^VOWL PL-NOM ;
-+N:%^VOWL PL-GEN ;
-+N:%^VOWL PL-ACC ;
-+N:%^VOWL PL-ILL ;
-+N:%^VOWL PL-LOC ;
-+N:%^VOWL PL-COM ;
-+N:%^VOWL PL-ABE ;
-
 
 LEXICON N_PUÅVV !!= * __@CODE@__ is for words with ''-âst'' Loc but ''-ense'' Ill 3rd grade
 !! N_Â-EPal3-21
@@ -312,27 +291,6 @@ LEXICON N_PUÅVV !!= * __@CODE@__ is for words with ''-âst'' Loc but ''-ense'' 
 +N:%^VOWL%^CShort PL-LOC ;
 +N:%^VOWL%^CShort PL-COM ;
 +N:%^VOWL%^CShort PL-ABE ;
-
-LEXICON N_ÂʹLǦǦ !!= * __@CODE@__ Is for nouns with ''-est'' Loc, Extra long vowel
-!! N_E-ANoPal3-31
-!! ** Yaml: __algg__
-+N: SG-NOM ;
-+N:%^VOWL%^CShort SG-GEN ;
-+N:%^VOWL%^CShort SG-ACC ;
-+N:%^PALNo%>a SG-ILL ;
-+N:%^VOWL%^CShort%>e SG-LOC ;
-+N:%^VOWL%^CShort%^VOWRaise NMN_SG-COM_IN ;
-+N:%>e ESS ; ! ess and prt without
-+N:%>e PAR ;
-+N:%^VOWL%^CShort SG-ABE ;
-+N:%^VOWL%^CShort PL-NOM ;
-+N:%^VOWL%^CShort%^VOWRaise%> PL-GEN ;
-+N:%^VOWL%^CShort%^VOWRaise%> PL-ACC ;
-+N:%^VOWL%^CShort%^VOWRaise%> PL-ILL ;
-+N:%^VOWL%^CShort%^VOWRaise%> PL-LOC ;
-+N:%^VOWL%^CShort%^VOWRaise%> PL-COM ;
-+N:%^VOWL%^CShort%^VOWRaise%> PL-ABE ;
-
 
 
 !! !!a-stems
@@ -386,6 +344,38 @@ LEXICON N_MEER !!= * __@CODE@__ Is for nouns with ''-ast'' Loc, No gradation
 +N:%>a PL-LOC ;
 +N:%>a PL-COM ;
 +N:%>a PL-ABE ;
+
+
+LEXICON N_ÂʹLǦǦ
+!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+!! !!1.2 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
+!! !!1.2.3 Sg.Ill depalatalized and -a
+!! !!1.2.3.1 Has Gradation
+!! !!1.2.3.1.1 Monophthong
+!! !!1.2.3.1.1.1 Consonant Cluster
+!! !!1.2.3.1.1.1.3 Sg.Nom Extra Strong Grade
+!! !!1.2.3.1.1.1.3.2.Sg.Gen Strong Grade
+!! !!1.2.3.1.1.1.3.2.3 Sg.Ill Extra Strong Grade
+!! !!1.2.3.1.1.1.3.2.3.2 Vowel raising in Sg.Com; Pl.Obl
+!! NumContLex="1.113"
+!! Is for nouns with ''-est'' Loc, Extra long vowel
+!! ** Yaml: __N-algg__
++N: SG-NOM ;
++N:%^VOWL%^CShort SG-GEN ;
++N:%^VOWL%^CShort SG-ACC ;
++N:%^PALNo%>a SG-ILL ;
++N:%^VOWL%^CShort%>e SG-LOC ;
++N:%^VOWL%^CShort%^VOWRaise NMN_SG-COM_IN ;
++N:%>e ESS ; ! ess and prt without
++N:%>e PAR ;
++N:%^VOWL%^CShort SG-ABE ;
++N:%^VOWL%^CShort PL-NOM ;
++N:%^VOWL%^CShort%^VOWRaise%> PL-GEN ;
++N:%^VOWL%^CShort%^VOWRaise%> PL-ACC ;
++N:%^VOWL%^CShort%^VOWRaise%> PL-ILL ;
++N:%^VOWL%^CShort%^VOWRaise%> PL-LOC ;
++N:%^VOWL%^CShort%^VOWRaise%> PL-COM ;
++N:%^VOWL%^CShort%^VOWRaise%> PL-ABE ;
 
 
 
@@ -552,6 +542,70 @@ LEXICON N_KLAAʹDD !!= * __@CODE@__ is for nouns with ''-est'' +Sg+Loc; ''e'' +S
 +N: PL-COM ;
 +N: PL-ABE ;
 
+
+
+LEXICON N_LUUKK
+!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+!! !!1.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
+!! !!1.1.3 Sg.Ill in palatalization and -e
+!! !!1.1.3.2 LACKS Gradation
+!! !!1.1.3.2.1 Monophthong
+!! !!1.1.3.2.1.1 Consonant Geminate
+!! !!1.1.3.2.1.1.2 Sg.Nom Strong Grade
+!! !!1.1.3.2.1.1.2.2.Sg.Gen Strong Grade
+!! !!1.1.3.2.1.1.2.2.2 Sg.Ill Strong Grade
+!! luukk:luukk is for nouns with -âst Loc and no gradation. N_Â-EPal1-11, N_Â-EPal2-22
+!! ** Yaml: __saarf, luukk__
++N: SG-NOM ;
++N: SG-GEN ;
++N: SG-ACC ;
++N: NMN_SG-ILL_PAL_E ;
++N: NMN_SG-LOC_Â ;
++N: NMN_SG-COM_IN ;
++N: NMN_ESS_Â ; ! ess and prt without
++N: NMN_PAR_Â ;
++N: SG-ABE ;
++N: PL-NOM ;
++N: PL-GEN ;
++N: PL-ACC ;
++N: PL-ILL ;
++N: PL-LOC ;
++N: PL-COM ;
++N: PL-ABE ;
+
+
+LEXICON N_JARPLAN
+!! !!2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
+!! !!2.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
+!! !!2.1.3 Sg.Ill in palatalization and -e
+!! !!2.1.3.3 Has Gradation in last syllable
+!! !!2.1.3.3.1 Monophthong
+!! !!2.1.3.3.1.3 Consonant always short
+!! !!2.1.3.3.1.3.4 Sg.Nom Short vowel AND Short consonant
+!! !!2.1.3.3.1.3.4.1.Sg.Gen Weak Grade
+!! !!2.1.3.3.1.3.4.1.3 Sg.Ill Weak Grade
+!! jarplan:jarplan
+!! ** Yaml: __N-jarplan__
++N: SG-NOM ;
++N:%^VOWL SG-GEN ;
++N:%^VOWL SG-ACC ;
++N:%^VOWL%^PAL%>e SG-ILL ;
++N:%^VOWL%>â SG-LOC ;
++N:%^VOWL NMN_SG-COM_IN ;
++N:%^VOWL%>e ESS ; ! ess and prt without
++N:%^VOWL%>e PAR ;
++N:%^VOWL SG-ABE ;
++N:%^VOWL PL-NOM ;
++N:%^VOWL PL-GEN ;
++N:%^VOWL PL-ACC ;
++N:%^VOWL PL-ILL ;
++N:%^VOWL PL-LOC ;
++N:%^VOWL PL-COM ;
++N:%^VOWL PL-ABE ;
+
+
+
+
 LEXICON N_SÄʹMMLAŽ
 !! * Yaml: __A-saemmlazh__
 !! säʹmmlaž:säʹmmlaž
@@ -586,7 +640,7 @@ LEXICON N_KUÂLAŽ
 +N:a NMN_SG-COM_IN ;
 +N:ž NMN_ESS_E ;
 +N:ž NMN_PAR_E ;
-+N:a SG-ABE ;
++N:a SG-ABE_ʹtää ;
 
 +N:a PL-NOM ;
 +N:a PL-GEN ;
@@ -1052,29 +1106,44 @@ LEXICON N_MUUƷ !!= * __@CODE@__ is for nouns with stem ''i'' + ''-est'' +Sg+Loc
 +N:%^VOWXSH%^CLong%>i PL-ABE ;
 
 !! !!u-stems
-LEXICON N_MÄÄN !!= * __@CODE@__ is for nouns with ''-est'' +Loc
-!! ** Yaml: __maan__
+LEXICON N_MÄÄN
+!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 228)
+!! !!1.2 Sg.Loc in -ust. u-stems (Sg.Loc, Ess, Par).
+!! !!1.2.3 Sg.Ill in raised vowel and -u
+!! !!1.2.3.1 Has Gradation
+!! !!1.2.3.1.1 Monophthong
+!! !!1.2.3.1.1.1 Consonant Geminate (W2XSt)
+!! !!1.2.3.1.1.1.1 Sg.Nom Weak Grade
+!! !!1.2.3.1.1.1.1.3.Sg.Gen Extra Strong Grade
+!! !!1.2.3.1.1.1.1.3.3 Sg.Ill Extra Strong Grade
+!! !!1.2.3.1.1.1.1.3.3.Q All but Sg.Nom are raised vowels
+!NumContLex="1.1299999999999999"
+!! mään:mään
+!! ** Yaml: __N-maan__
 !! * There are several stem types
 !! * mään:mään
 +N: SG-NOM ;
-+N:%^VOWXSH%^CLong%^VOWRaise%>u SG-GEN ;
-+N: SG-ACC ;
-+N:%^VOWXSH%^CLong%>ǥa SG-ILL ;
-+N:%^VOWXSH%^VOWRaise%>u SG-LOC ;
-+N:%^VOWXSH%^VOWRaise%>u NMN_SG-COM_IN ;
-+N:%^VOWXSH%>%ˈje ESS ; ! ess and prt without
-+N:%^VOWXSH%^VOWRaise%>u PAR ;
-+N:%^VOWXSH%^VOWRaise%>u SG-ABE ;
-+N:%^VOWXSH%^VOWRaise%>u PL-NOM ;
-+N:%^VOWXSH%^VOWRaise%>u PL-GEN ;
-+N:%^VOWXSH%^VOWRaise%>u PL-ACC ;
-+N:%^VOWXSH%^VOWRaise%>u PL-ILL ;
-+N:%^VOWXSH%^VOWRaise%>u PL-LOC ;
-+N:%^VOWXSH%^VOWRaise%>u PL-COM ;
-+N:%^VOWXSH%^VOWRaise%>u PL-ABE ;
++N:%{XC%}%^W2XSt%^VOWRaise%>u SG-GEN ;
++N:%{XC%}%^W2XSt%^VOWRaise%>u SG-ACC ;
++N:%{XC%}%^W2XSt%>ǥa SG-ILL ;
++N:%{XC%}%^W2XSt%>ʼja SG-ILL ;
++N:%{XC%}%^W2XSt%^VOWRaise%>u SG-LOC ;
++N:%{XC%}%^W2XSt%>ʼje SG-LOC ;
++N:%{XC%}%^W2XSt%^VOWRaise%>u NMN_SG-COM_IN ;
++N:%{XC%}%^W2XSt%>ʼj NMN_SG-COM_IN ;
++N:%{XC%}%^W2XSt%>ʼje ESS ; ! ess and prt without
++N:%{XC%}%^W2XSt%^VOWRaise%>u PAR ;
++N:%{XC%}%^W2XSt%^VOWRaise%>u SG-ABE ;
++N:%{XC%}%^W2XSt%^VOWRaise%>u PL-NOM ;
++N:%{XC%}%^W2XSt%^VOWRaise%>u PL-GEN ;
++N:%{XC%}%^W2XSt%^VOWRaise%>u PL-ACC ;
++N:%{XC%}%^W2XSt%^VOWRaise%>u PL-ILL ;
++N:%{XC%}%^W2XSt%^VOWRaise%>u PL-LOC ;
++N:%{XC%}%^W2XSt%^VOWRaise%>u PL-COM ;
++N:%{XC%}%^W2XSt%^VOWRaise%>u PL-ABE ;
 
 LEXICON N_SUÂL !!= * __@CODE@__ is for nouns with ''-est'' +Loc
-!! ** Yaml: __sual__
+!! ** Yaml: __N-sual__
 !! * There are several stem types
 !! * suâl:suâl
 +N: SG-NOM ;
@@ -1850,10 +1919,15 @@ LEXICON NMN_PAR_VOWSH-CLONG-RMVOW_E
 LEXICON SG-ABE
 +Sg+Abe:%>tää K ;
 
+LEXICON SG-ABE_ʹtää
+!! Has palatalization preceding
++Sg+Abe:%>ʹtää K ;
+
 LEXICON SG-ACC
 +Sg+Acc: K ;
 
 LEXICON SG-COM_N
+!! 
 +Sg+Com:%>n K ;
 
 LEXICON SG-COM_IN
