@@ -26,9 +26,14 @@ The rule file for Skolt Saami is divided into 5 main types:
  *   õ â							
  *   Õ Â							
 
-* Vertical line: as overlong consonant marker that does not appear in writing 
-* Upper right single quotation mark: Syllable marker that appears in writing 
 * MODIFIER LETTER PRIME: U+02B9 suprasegmental palatization
+* MODIFIER LETTER APOSTROPHE: U+02BC Syllable marker that appears in writing 
+* MODIFIER LETTER VERTICAL LINE: U+02C8 as overlong consonant marker that does not appear in writing 
+
+
+
+
+
 Trigger symbols
 
  *  %^RmVow:0  for removing vowels e, â, a in second syllable before consonant  
@@ -161,9 +166,7 @@ Short consonant cluster
 
 
 Onset consonant or word boundary
-{{{
- * OnSetC = [Cns:|#] ;  
-}}}
+
 
 following morpheme or word boundary
 {{{
@@ -173,7 +176,7 @@ following morpheme or word boundary
 relative lengthening of vowel right context following vowel:vowel
 0:õ <=> OnSetC _ :õ RelVowLengthening
 {{{
- * RelVowLengthening = [(ʹ:|0:ʹ) [V2VVwithCC  %^VOWL: %^CShort:|CC2CafterV2VV (a: i:) %^VOWL: %^CShort:|CC2CafterV2VVandUI %^VOWL: %^CShort:|LongC2SH %^VOWXL: (%^CShort:)|[k|n] %^VOWL:] ] ; 
+ * RelVowLengthening = [(ʹ:|0:ʹ) [V2VVwithCC  %^VOWL: %^CShort:|CC2CafterV2VV (a: i:) %^VOWL: %^CShort:|CC2CafterV2VVandUI %^VOWL: %^CShort:|LongC2SH %^VOWXL: (%^CShort:)|[k|m|n] %^VOWL:] ] ; 
 }}}
 
 relative lengthening of vowel right context following vowel:vowel
@@ -290,10 +293,7 @@ __ZERO to syllable mark 0:ʼ__ - used in zeeʹtt+N+Sg+Abe: zeeʹttʼtää
 
 
 __Even syllabic verbs I, vowel shortening ä:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
-{{{
-  ä:0 <=> OnSetC _ ä: (ʹ:|0:ʹ) [LongC|Cns: :Cns*|Cns:+] [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ; 
-          OnSetC _ ä: (ʹ:|0:ʹ) Cns:+ Vow: [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] %^VOWSH: %^CLong: ; 
-}}}
+
 
 
 
@@ -361,11 +361,6 @@ __Even syllabic verbs I, diphthong raising beginning with e:i ä:e__ - deriving
 }}}
 
 __Even syllabic verbs I, diphthong raising beginning with ä:a u__ - deriving läullad > laullum
-{{{
-  ä:a <=> OnSetC (0:a)  _ u  (%ʹ:|0:%ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+] (%^VOWSH: %^CLong:) %^VOWRaise: %>  u ; 
-          OnSetC  ä:    _    (%ʹ:|0:%ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+] %^VOWSH: %^CLong:  %>  a ; 
-          OnSetC  ä:    _    (%ʹ:|0:%ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+] (%^VOWXSH: (%^CLong:)|%^VOWL: (%^CShort:)) %^VOWRaise: ; 
-          OnSetC        _ ä: (%ʹ:|0:%ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+] (%^VOWL:   (%^CShort:)) %^VOWRaise: ; 
 }}}
 
 
@@ -568,7 +563,7 @@ __Even syllabic nouns I, relative vowel lengthening i__ - ǩiđđ:ǩiiđ
 
 __Even syllabic nouns, relative vowel extra lengthening u not followed by v__ - declension of nouns kunn > kuun
 {{{
-  0:u <=> OnSetC _ [o:u|u] RelVowLengtheningNOTu ; 
+  OnSetC _ [o:u|u] RelVowLengtheningNOTu ; 
             Cns: _  :u (%ʹ:|0:%ʹ)  CNoV: %{Â1%}: Cns:+   %^VOWL: [%>|#|%^PAL:] ; 
 }}}
 
@@ -700,14 +695,11 @@ __Even-syllabic nouns I, Depalatalization of ǩ:k__ -
 }}}
 
 __Even-syllabic nouns, removing palatalization in -est +Loc nouns__ - removing palatalization in +Sg+Ill,  pieʹss:peässa
-{{{
-    ʹ:0 <=>  [Vow:|:Vow] _ [:Cns :Cns+|Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (e: s:) PrecedePALNo %^PALNo: [RBound|%^RmVow:|%^VC:] ; 
-                     Vow: _ CNoV: Cns:+ PrecedePALNo %^PALNo: ;  
-                          _ v:u ; 
-}}}
 
 
-!!Consonant gradation rules
+
+
+!!Consonant QUANTITY CHANGE gradation rules
 
 !Weakening Consonant Cluster
 
@@ -781,7 +773,6 @@ __Even syllabic verbs I, cg for ǧ__ - used with  vueʹlǧǧed+V+Ind+Prs+Sg1: vu
 __Even syllabic nouns I, with extra lengthening of vowel V>VV and KK>ǤǤ__ 
 used with  +N+Sg+Nom > +N+Sg+Gen for cases like
 {{lookki > looǥǥi}}.
-
 
 __Even syllabic nouns I, with extra lengthening of vowel V>VV and ǩ:j__ 
 used with
@@ -892,6 +883,20 @@ __Even syllabic verbs I, 'lǧǧ>'lj __ - vueʹlǧǧed+V+Ind+Prt+Pl1 => vuõʹlji
 * In verbs this will be observed in finite forms
 * In derivational morphology, e.g. -škuetted, this is not the case
 
+__Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:m__
+
+__Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:v__
+
+
+__Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:n__
+
+__Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:r__
+
+__Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:l__
+
+__Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:k__
+
+
 
 
 __Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m__ - kåʹmrded+V+Imp+Sg2: kååʹmmerd 
@@ -909,10 +914,8 @@ __Consonant lengthening 0:p__ -
   0:p <=>  2ShortVow  (ʹ:|0:ʹ) [m|l] p _ Vow: Cns [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] (%^PALNo:) ; 
 }}}
 
-__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:n__ - mään > mannu
-{{{
-  0:n <=> OnSetC  2ShortVow (ʹ:|0:ʹ) n _ (j â: l) [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ; 
-}}}
+__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:n__
+
 
 __Consonant lengthening 0:d__ - juurd+N+Sg+Gen: jurddi
 {{{
@@ -959,10 +962,11 @@ __Consonant lengthening 0:k__ -
   0:k <=>  2ShortVow  (ʹ:) [l|s|š] :k _ Vow: Cns [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] (%^PALNo:) ; 
 }}}
 
-__Consonant lengthening j:ǧ__ - 
-{{{
-  j:ǧ <=>  2ShortVow  :ʹ  l _ 0: Vow: Cns [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] (%^PAL:) ; 
-}}}
+!!CONSONANT QUALITY CHANGE
+
+__Consonant quality change j:ǧ__ - 
+
+__Consonant quality change ǥ:ǧ__ 
 
 
 
