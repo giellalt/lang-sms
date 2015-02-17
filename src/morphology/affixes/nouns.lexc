@@ -46,18 +46,18 @@ LEXICON N_PAARR
 !! ** Yaml: __N-paarr, N-saakk__
 !! is for nouns with -âst Loc. N_Â-EPal2-21
 !! N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
-+N: NMN_SG-ABE_ST2W ;
-+N: NMN_SG-ACC_ST2W ;
-+N: NMN_SG-COM_ST2W_IN ;
-+N: NMN_SG-GEN_ST2W ;
-+N: NMN_SG-ILL_ST2XST-PAL_E ;
++N:%^CC2C SG-ABE ;
++N:%^CC2C SG-ACC ;
++N:%^CC2C SG-COM_IN ;
++N:%^CC2C SG-GEN ;
++N:%^VV2V%^PAL%>e SG-ILL ;
 +N: SG-NOM ;
-+N: NMN_SG-LOC_ST2W_Â ;
-+N: NMN_ESS_Â ; 
-+N: NMN_PAR_Â ;
-+N: NMN_PL-NOM_ST2W ;
-+N: NMN_PL-OBL_ST2W ;
-+N+Der/Dim:%^St2W N_MUÕRÂŽ ;
++N:%^CC2C%>â SG-LOC ;
++N:â ESS ; 
++N:â PAR ;
++N:%^CC2C PL-NOM ;
++N:%^CC2C PL-OBL ;
++N+Der/Dim:%^CC2C N_MUÕRÂŽ ;
 
 
  
@@ -90,22 +90,18 @@ LEXICON N_TOLL
 !! toll:toll
 !! ** Yaml: __N-jokk, N-kidd, N-soll, N-toll, N-vorr__
 !! 
-!! 
-!! ** Yaml: __vorr, kidd, toll, soll, sijdd, jokk; muorr, kiapp__
-!! 
 +N: SG-NOM ;
-+N: NMN_SG-GEN_XST2W ;
-+N: NMN_SG-ACC_XST2W ;
-+N: NMN_SG-ILL_PAL_E ;
-+N: NMN_SG-LOC_XST2W_Â ;
-+N: NMN_SG-COM_XST2W_IN ;
-+N: NMN_ESS_Â ; 
-+N: NMN_PAR_Â ;
-+N: NMN_SG-ABE_XST2W ;
-+N: NMN_PL-NOM_XST2W ;
-
-+N: NMN_PL-OBL_XST2W ;
-+N+Der/Dim:%^XSt2W N_MUÕRÂŽ ;
++N:%^V2VV%^CC2C SG-GEN ;
++N:%^V2VV%^CC2C SG-ACC ;
++N:%^PAL%>e SG-ILL ;
++N:%^V2VV%^CC2C%>â SG-LOC ;
++N:%^V2VV%^CC2C SG-COM_IN ;
++N:%>â ESS ; 
++N:%>â PAR ;
++N:%^V2VV%^CC2C SG-ABE ;
++N:%^V2VV%^CC2C PL-NOM ;
++N:%^V2VV%^CC2C PL-OBL ;
++N+Der/Dim:%^V2VV%^CC2C N_MUÕRÂŽ ;
 
 
 LEXICON N_MUÕRR
@@ -137,17 +133,17 @@ LEXICON N_MUÕRR
 !! muõrr:muõrr
 !! ** Yaml: __N-muorr__
 +N: SG-NOM ;
-+N:%^VOWL%^CShort SG-GEN ;
-+N:%^VOWL%^CShort SG-ACC ;
-+N:%^VOWTense%^PAL%>e SG-ILL ;
-+N:%^VOWL%^CShort%>â SG-LOC ;
-+N:%^VOWL%^CShort NMN_SG-COM_IN ;
++N:%^CC2C SG-GEN ;
++N:%^CC2C SG-ACC ;
++N:%^PAL%^CC2CCC%>e SG-ILL ;
++N:%^CC2C%>â SG-LOC ;
++N:%^CC2C NMN_SG-COM_IN ;
 +N:%>â ESS ; ! ess and prt without
 +N:%>â PAR ;
-+N:%^VOWL%^CShort SG-ABE ;
-+N:%^VOWL%^CShort PL-NOM ;
-+N:%^VOWL%^CShort PL-OBL ;
-+N+Der/Dim:%^VOWL%^CShort N_MUÕRÂŽ ;
++N:%^CC2C SG-ABE ;
++N:%^CC2C PL-NOM ;
++N:%^CC2C PL-OBL ;
++N+Der/Dim:%^CC2C N_MUÕRÂŽ ;
 
 ! Adapted from Feist (2010: 175)
 +N+Sg+Nom+PxSg1:%>am K ;
@@ -260,18 +256,19 @@ LEXICON N-miarr !!= * __@CODE@__ is for words with ''-âst'' Loc but ''-ense'' I
 !! This is the same as N_MUÕRR
 !! N_Â-EPal2-21 
 !! ** Yaml: __miarr__
+!! ** Yaml: __ sijdd; kiapp__
  N_MUÕRR ;
 !+N: SG-NOM ;
-!+N:%^VOWL%^CShort SG-GEN ;
-!+N:%^VOWL%^CShort SG-ACC ;
-!+N:%^VOWTense%^PAL%>e SG-ILL ;
-!+N:%^VOWL%^CShort%>â SG-LOC ;
-!+N:%^VOWL%^CShort NMN_SG-COM_IN ;
+!+N:%^CC2C SG-GEN ;
+!+N:%^CC2C SG-ACC ;
+!+N:%^VOWTense%^PALE%^PAL%>e SG-ILL ;
+!+N:%^CC2C%>â SG-LOC ;
+!+N:%^CC2C NMN_SG-COM_IN ;
 !+N:%>â ESS ; ! ess and prt without
 !+N:%>â PAR ;
-!+N:%^VOWL%^CShort SG-ABE ;
-!+N:%^VOWL%^CShort PL-NOM ;
-!+N:%^VOWL%^CShort PL-OBL ;
+!+N:%^CC2C SG-ABE ;
+!+N:%^CC2C PL-NOM ;
+!+N:%^CC2C PL-OBL ;
 
 
 LEXICON N_ǨIÕTT
@@ -279,35 +276,61 @@ LEXICON N_ǨIÕTT
 !! ** Yaml: __kiott__
  N_MUÕRR ;
 !+N: SG-NOM ;
-!+N:%^VOWL%^CShort SG-GEN ;
-!+N:%^VOWL%^CShort SG-ACC ;
+!+N:%^CC2C SG-GEN ;
+!+N:%^CC2C SG-ACC ;
 !+N:%^PAL%>e SG-ILL ;
-!+N:%^VOWL%^CShort%>â SG-LOC ;
-!+N:%^VOWL%^CShort NMN_SG-COM_IN ;
+!+N:%^CC2C%>â SG-LOC ;
+!+N:%^CC2C NMN_SG-COM_IN ;
 !+N:%>â ESS ; ! ess and prt without
 !+N:%>â PAR ;
-!+N:%^VOWL%^CShort SG-ABE ;
-!+N:%^VOWL%^CShort PL-NOM ;
-!+N:%^VOWL%^CShort PL-OBL ;
+!+N:%^CC2C SG-ABE ;
+!+N:%^CC2C PL-NOM ;
+!+N:%^CC2C PL-OBL ;
 
 
 LEXICON N_PUÅVV !!= * __@CODE@__ is for words with ''-âst'' Loc but ''-ense'' Ill 3rd grade
-!! THIS is the same as N_MUÕRR
-!! N_Â-EPal3-21
+!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+!! !!1.1 Sg.Loc in -âst (no vowel shift, all raised)
+!! !!  â-stems (Sg.Loc, Ess, Par).
+!! !!1.1.1 Sg.Ill vowel	-e
+!! !!1.1.1.1 Has Palatalization
+!! !!1.1.1.1[1] (Palatalization pattern)
+!! !!  Palatalized: Sg.Ill
+!! !!  Not Palatalized: ELSE
+!! !!    Sg.Ill in palatalization and -e
+!! !!  Has Allophonic palatalization
+!! !!1.1.1.1[1].2 Has Specifically Pedagogical Gradation
+!! !!1.1.1.1[1].2.1 Has Orthographic Gradation
+!! !!1.1.1.1[1].2.1[] (Diphthong + Consonant and Consonant Geminate alternation)
+!! !!  Strong grade: Sg.Nom, Ess, Par
+!! !!  Extra strong grade: Sg.Ill
+!! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+!! !!FORMS
+!! !!(1) Sg.Nom: puåvv
+!! !!(2) Pl.Nom: puåv
+!! !!(3) Sg.Ill: pueʹvˈve
+!! !!(4) Sg.Loc: puåvâst
+!! !!(5) Sg.Com: puåvin
+!! !!(6) Ess: puåvvân
+!! !!(7) Par: puåvvâd
+!! !!(8) Pl.Acc: puåvid
+!! !!(9) Der/Dim.N.Sg.Nom: puåvâž
+!! puåvv:puåvv
 !! ** Yaml: __kiapp, puavv__
- N_MUÕRR ;
-!+N: SG-NOM ;
-!+N:%^VOWL%^CShort SG-GEN ;
-!+N:%^VOWL%^CShort SG-ACC ;
-!+N:%^VOWSH%^CLong%^PAL%>e SG-ILL ;
-!+N:%^VOWL%^CShort%>â SG-LOC ;
-!+N:%^VOWL%^CShort NMN_SG-COM_IN ;
-!+N:%>â ESS ; ! ess and prt without
-!+N:%>â PAR ;
-!+N:%^VOWL%^CShort SG-ABE ;
-!+N:%^VOWL%^CShort PL-NOM ;
-!+N:%^VOWL%^CShort PL-OBL ;
 
+!! ** Yaml: __ sijdd__
++N: SG-NOM ;
++N:%^CC2C SG-GEN ;
++N:%^CC2C SG-ACC ;
++N:%^PALE%^PAL%^CC2CCC%>e SG-ILL ;
++N:%^CC2C%>â SG-LOC ;
++N:%^CC2C NMN_SG-COM_IN ;
++N:%>â ESS ; ! ess and prt without
++N:%>â PAR ;
++N:%^CC2C SG-ABE ;
++N:%^CC2C PL-NOM ;
++N:%^CC2C PL-OBL ;
++N+Der/Dim:%^CC2C N_MUÕRÂŽ ;
 
 !! !!a-stems
 
@@ -337,7 +360,7 @@ LEXICON N_PESS !!= * __@CODE@__ Is for nouns with ''-ast'' Loc
 !! !!(9) Dim.N.Sg.Nom: piissuž (2009: 310)
 !NumContLex="1.1120000000000001"
 !! N_A-URaise3-32
-!! ** Yaml: __pess, pall, ruakk__
+!! ** Yaml: __N-pess, N-pall__
 +N: SG-NOM ;
 +N:%^V2VV SG-GEN ;
 +N:%^V2VV SG-ACC ;
@@ -430,6 +453,47 @@ LEXICON N_MEER !!= * __@CODE@__ Is for nouns with ''-ast'' Loc, No gradation
 +N:%>a PL-OBL ;
 +N+Der/Dim: N_PIISSUŽ ;
 
+LEXICON N_RUÂKK
+!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+!! !!1.2 Sg.Loc in -ast (vowel shift)
+!! !!  Raised: Sg.Ill
+!! !!  Lowered: ELSE
+!! !!  a-stems (Sg.Loc, Ess, Par).
+!! !!1.2.2 Sg.Ill vowel	-u
+!! !!1.2.2.2 Lacks Palatalization
+!! !!1.2.2.2.2 Has Specifically Pedagogical Gradation
+!! !!1.2.2.2.1.1 Has Orthographic Gradation
+!! !!1.2.2.2.1.1[] (Diphthong + Consonant Geminate alternation)
+!! !!  Strong grade: Sg.Nom, Ess, Par
+!! !!  Extra strong grade: Sg.Ill
+!! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+!! !!FORMS
+!! !!(1) Sg.Nom: ruâkk
+!! !!(2) Pl.Nom: ruâǥǥ
+!! !!(3) Sg.Ill: ruõkˈku
+!! !!(4) Sg.Loc: ruâǥǥast
+!! !!(5) Sg.Com: ruâǥǥain
+!! !!(6) Ess: ruâkkan
+!! !!(7) Par: ruâkkad
+!! !!(8) Pl.Acc: ruâǥǥaid
+!! !!(9) Dim.N.Sg.Nom: ruõǥǥuž (2009: 310)
+!NumContLex="1.1120000000000001"
+!! N_A-URaise3-32
+!! ** Yaml: __N-ruakk__
++N: SG-NOM ;
++N:%^CC2C SG-GEN ;
++N:%^CC2C SG-ACC ;
++N:%^VOWRaise%^CC2CCC%>u SG-ILL ;
++N:%^CC2C%>a SG-LOC ;
++N:%^CC2C%>a NMN_SG-COM_IN ;
++N:%>a ESS ; ! ess and prt without
++N:%>a PAR ;
++N:%^CC2C SG-ABE ;
++N:%^CC2C PL-NOM ;
++N:%^CC2C%>a PL-OBL ;
++N+Der/Dim:%^VOWRaise%^CC2C%> N_PIISSUŽ ;
+
+
 LEXICON N_ǨEÂLKK
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 !! !!1.2 Sg.Loc in -ast (vowel shift)
@@ -455,18 +519,18 @@ LEXICON N_ǨEÂLKK
 !! !!(8) Pl.Acc: ǩeâlkaid
 !! !!(9) Der/Dim.N.Sg.Nom: ǩiõlkuž (2009: 312-313)
 !NumContLex="1.1120000000000001"
-+N:%^VOWL%^CShort%>a PL-OBL ;
-+N:%^VOWL%^CShort PL-NOM ;
++N:%^CC2C%>a PL-OBL ;
++N:%^CC2C PL-NOM ;
 +N:%>a ESS ; ! ess and prt without
 +N:%>a PAR ;
-+N:%^VOWL%^CShort SG-ABE ;
-+N:%^VOWL%^CShort SG-ACC ;
-+N:%^VOWL%^CShort SG-GEN ;
++N:%^CC2C SG-ABE ;
++N:%^CC2C SG-ACC ;
++N:%^CC2C SG-GEN ;
 +N:%^VOWSH%^CLong%^VOWRaise%>u SG-ILL ;
-+N:%^VOWL%^CShort%>a SG-LOC ;
-+N:%^VOWL%^CShort%>a NMN_SG-COM_IN ;
++N:%^CC2C%>a SG-LOC ;
++N:%^CC2C%>a NMN_SG-COM_IN ;
 +N: SG-NOM ;
-+N:%^VOWL%^CShort%^VOWRaise N_PIISSUŽ ;
++N:%^CC2C%^VOWRaise N_PIISSUŽ ;
 
 
 !! !!e-stems
@@ -504,17 +568,17 @@ LEXICON N_ČÄÄʹCC
 !!
 +N: SG-NOM ;
 +N:%^St2W SG-GEN ;
-+N:%^VOWL%^CShort SG-ACC ;
++N:%^CC2C SG-ACC ;
 +N:%^VOWSH%^CLong%^PALNo%>a SG-ILL ;
-+N:%^VOWL%^CShort%>e SG-LOC ;
-+N:%^VOWL%^CShort%^VOWRaise NMN_SG-COM_IN ;
++N:%^CC2C%>e SG-LOC ;
++N:%^CC2C%^VOWRaise NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
-!2009: 204 +N:%^VOWL%^CShort%>e PAR ;
-+N:%^VOWL%^CShort SG-ABE ;
-+N:%^VOWL%^CShort PL-NOM ;
-+N:%^VOWL%^CShort%^VOWRaise PL-OBL ;
-+N+Der/Dim:%^VOWL%^CShort%^PALNo%> N_KUÂLAŽ ;
+!2009: 204 +N:%^CC2C%>e PAR ;
++N:%^CC2C SG-ABE ;
++N:%^CC2C PL-NOM ;
++N:%^CC2C%^VOWRaise PL-OBL ;
++N+Der/Dim:%^CC2C%^PALNo%> N_KUÂLAŽ ;
 
 LEXICON N_EʹČČ
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204, 329)
@@ -547,17 +611,17 @@ LEXICON N_EʹČČ
 !!
 +N: SG-NOM ;
 +N:%^St2W SG-GEN ;
-+N:%^VOWL%^CShort SG-ACC ;
++N:%^V2VV%^CC2C SG-ACC ;
 +N:%^VOWSH%^CLong%^PALNo%>a SG-ILL ;
-+N:%^VOWL%^CShort%>e SG-LOC ;
-+N:%^VOWL%^CShort%^VOWRaise NMN_SG-COM_IN ;
++N:%^V2VV%^CC2C%>e SG-LOC ;
++N:%^V2VV%^CC2C%^VOWRaise NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
-!2009: 204 +N:%^VOWL%^CShort%>e PAR ;
-+N:%^VOWL%^CShort SG-ABE ;
-+N:%^VOWL%^CShort PL-NOM ;
-+N:%^VOWL%^CShort%^VOWRaise PL-OBL ;
-+N+Der/Dim:%^VOWL%^CShort%^PALNo%> N_KUÂLAŽ ;
+!2009: 204 +N:%^V2VV%^CC2C%>e PAR ;
++N:%^V2VV%^CC2C SG-ABE ;
++N:%^V2VV%^CC2C PL-NOM ;
++N:%^V2VV%^CC2C%^VOWRaise PL-OBL ;
++N+Der/Dim:%^V2VV%^CC2C%^PALNo%> N_KUÂLAŽ ;
 
 
 LEXICON N_ÂʹLǦǦ
@@ -590,17 +654,17 @@ LEXICON N_ÂʹLǦǦ
 !! Is for nouns with ''-est'' Loc, Extra long vowel
 !! ** Yaml: __N-algg__
 +N: SG-NOM ;
-+N:%^VOWL%^CShort SG-GEN ;
-+N:%^VOWL%^CShort SG-ACC ;
++N:%^V2VV%^CC2C SG-GEN ;
++N:%^V2VV%^CC2C SG-ACC ;
 +N:%^PALNo%>a SG-ILL ;
-+N:%^VOWL%^CShort%>e SG-LOC ;
-+N:%^VOWL%^CShort%^VOWRaise NMN_SG-COM_IN ;
++N:%^V2VV%^CC2C%>e SG-LOC ;
++N:%^V2VV%^CC2C%^VOWRaise NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
-+N:%^VOWL%^CShort SG-ABE ;
-+N:%^VOWL%^CShort PL-NOM ;
-+N:%^VOWL%^CShort%^VOWRaise%> PL-OBL ;
-+N+Der/Dim:%^VOWL%^CShort%^PALNo%> N_KUÂLAŽ ;
++N:%^V2VV%^CC2C SG-ABE ;
++N:%^V2VV%^CC2C PL-NOM ;
++N:%^V2VV%^CC2C%^VOWRaise%> PL-OBL ;
++N+Der/Dim:%^V2VV%^CC2C%^PALNo%> N_KUÂLAŽ ;
 
 LEXICON N_PEIʹVV
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -630,17 +694,17 @@ LEXICON N_PEIʹVV
 !! * There are several stem types
 !! * peiʹvv:peiʹvv
 +N: SG-NOM ;
-+N:%^VOWL%^CShort SG-GEN ;
-+N:%^VOWL%^CShort SG-ACC ;
++N:%^V2VV%^CC2C SG-GEN ;
++N:%^V2VV%^CC2C SG-ACC ;
 +N:%^PALNo%>a SG-ILL ;
-+N:%^VOWL%^CShort%>e SG-LOC ;
-+N:%^VOWL%^CShort NMN_SG-COM_IN ;
++N:%^V2VV%^CC2C%>e SG-LOC ;
++N:%^V2VV%^CC2C NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
-+N:%^VOWL%^CShort SG-ABE ;
-+N:%^VOWL%^CShort PL-NOM ;
-+N:%^VOWL%^CShort PL-OBL ;
-+N+Der/Dim:%^VOWL%^CShort%^PALNo%> N_KUÂLAŽ ;
++N:%^V2VV%^CC2C SG-ABE ;
++N:%^V2VV%^CC2C PL-NOM ;
++N:%^V2VV%^CC2C PL-OBL ;
++N+Der/Dim:%^V2VV%^CC2C%^PALNo%> N_KUÂLAŽ ;
 
 LEXICON N-piess
 N_PIEʹSS ;
@@ -675,20 +739,20 @@ LEXICON N_PIEʹSS
 !! * pieʹss:piâss
 +N:%^VOWLower%>a SG-ILL ;
 
-+N:%^VOWL%^CShort%^PAL DenominalAdjsCShort ;
++N:%^CC2C%^PALE%^PAL DenominalAdjsCShort ;
 
-+N:%^PAL SG-NOM ;
-+N:%^VOWL%^CShort%^PAL SG-GEN ;
-+N:%^VOWL%^CShort%^PAL SG-ACC ;
-+N:%^VOWL%^CShort%^PAL%>e SG-LOC ;
-+N:%^VOWL%^CShort%^PAL NMN_SG-COM_IN ;
-+N:%^PAL%>e ESS ; ! ess and prt without
-+N:%^PAL%>e PAR ;
-+N:%^VOWL%^CShort%^PAL SG-ABE ;
++N:%^PALE%^PAL SG-NOM ;
++N:%^CC2C%^PALE%^PAL SG-GEN ;
++N:%^CC2C%^PALE%^PAL SG-ACC ;
++N:%^CC2C%^PALE%^PAL%>e SG-LOC ;
++N:%^CC2C%^PALE%^PAL NMN_SG-COM_IN ;
++N:%^PALE%^PAL%>e ESS ; ! ess and prt without
++N:%^PALE%^PAL%>e PAR ;
++N:%^CC2C%^PALE%^PAL SG-ABE ;
 
-+N:%^VOWL%^CShort%^PAL PL-NOM ;
-+N:%^VOWL%^CShort%^PAL PL-OBL ;
-+N+Der/Dim:%^VOWL%^CShort%^VOWLower%> N_KUÂLAŽ ;
++N:%^CC2C%^PALE%^PAL PL-NOM ;
++N:%^CC2C%^PALE%^PAL PL-OBL ;
++N+Der/Dim:%^CC2C%^VOWLower%> N_KUÂLAŽ ;
 
 LEXICON N_KUEʹLL
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
@@ -719,20 +783,20 @@ LEXICON N_KUEʹLL
 !! * kueʹll:kuâll
 +N:%^St2XSt%>a SG-ILL ;
 
-+N:%^VOWL%^CShort%^PAL DenominalAdjsCShort ;
++N:%^CC2C%^PALE%^PAL DenominalAdjsCShort ;
 
-+N:%^PAL SG-NOM ;
-+N:%^VOWL%^CShort%^PAL SG-GEN ;
-+N:%^VOWL%^CShort%^PAL SG-ACC ;
-+N:%^VOWL%^CShort%^PAL%>e SG-LOC ;
-+N:%^VOWL%^CShort%^PAL NMN_SG-COM_IN ;
-+N:%^PAL%>e ESS ; ! ess and prt without
-+N:%^PAL%>e PAR ;
-+N:%^VOWL%^CShort%^PAL SG-ABE ;
++N:%^PALE%^PAL SG-NOM ;
++N:%^CC2C%^PALE%^PAL SG-GEN ;
++N:%^CC2C%^PALE%^PAL SG-ACC ;
++N:%^CC2C%^PALE%^PAL%>e SG-LOC ;
++N:%^CC2C%^PALE%^PAL NMN_SG-COM_IN ;
++N:%^PALE%^PAL%>e ESS ; ! ess and prt without
++N:%^PALE%^PAL%>e PAR ;
++N:%^CC2C%^PALE%^PAL SG-ABE ;
 
-+N:%^VOWL%^CShort%^PAL PL-NOM ;
-+N:%^VOWL%^CShort%^PAL PL-OBL ;
-+N+Der/Dim:%^VOWL%^CShort%^VOWLower%> N_KUÂLAŽ ;
++N:%^CC2C%^PALE%^PAL PL-NOM ;
++N:%^CC2C%^PALE%^PAL PL-OBL ;
++N+Der/Dim:%^CC2C%^VOWLower%> N_KUÂLAŽ ;
 
 
 
@@ -764,17 +828,17 @@ LEXICON N_KUʹMPP
 !! * kuʹmpp:kuʹmpp
 !! NumContLex="1.1140000000000001"
 +N:%^PAL SG-NOM ;
-+N:%^VOWL%^CShort SG-GEN ;
-+N:%^VOWL%^CShort SG-ACC ;
++N:%^V2VV%^CC2C SG-GEN ;
++N:%^V2VV%^CC2C SG-ACC ;
 +N:%^PAL%>e SG-ILL ;
-+N:%^VOWL%^CShort%>e SG-LOC ;
-+N:%^VOWL%^CShort NMN_SG-COM_IN ;
++N:%^V2VV%^CC2C%>e SG-LOC ;
++N:%^V2VV%^CC2C NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
-+N:%^VOWL%^CShort SG-ABE ;
-+N:%^VOWL%^CShort PL-NOM ;
-+N:%^VOWL%^CShort PL-OBL ;
-+N+Der/Dim:%^VOWL%^CShort%> N_KUUʹMPEŽ ;
++N:%^V2VV%^CC2C SG-ABE ;
++N:%^V2VV%^CC2C PL-NOM ;
++N:%^V2VV%^CC2C PL-OBL ;
++N+Der/Dim:%^V2VV%^CC2C%> N_KUUʹMPEŽ ;
 
 
 
@@ -1143,16 +1207,16 @@ LEXICON N_E-ANoPal3-21 !!= * __@CODE@__ Nouns with -est Loc and -a Ill without �
 !! ** Yaml: __kaapp__
 +N+Sg+Ill:%^VOWSH%^CLong%^PALNo%>a K ; 
 +N: SG-NOM ;
-+N:%^VOWL%^CShort SG-GEN ;
-+N:%^VOWL%^CShort%^PAL SG-ACC ;
-+N:%^VOWL%^CShort%>e SG-LOC ;
-+N:%^VOWL%^CShort%^VOWRaise NMN_SG-COM_IN ;
++N:%^CC2C SG-GEN ;
++N:%^CC2C%^PAL SG-ACC ;
++N:%^CC2C%>e SG-LOC ;
++N:%^CC2C%^VOWRaise NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
-+N:%^VOWL%^CShort SG-ABE ;
++N:%^CC2C SG-ABE ;
 
-+N:%^VOWL%^CShort PL-NOM ;
-+N:%^VOWL%^CShort%^VOWRaise PL-OBL ;
++N:%^CC2C PL-NOM ;
++N:%^CC2C%^VOWRaise PL-OBL ;
 
 
 LEXICON N_PEÄʹSˈS !!= * __@CODE@__ Nouns with -est Loc and -a Ill without ʹ
@@ -1177,41 +1241,41 @@ LEXICON N_NEIʹBB !!= * __@CODE@__ Nouns with -est Loc and -a Ill without ʹ
 !! ** Yaml: __neibb__
 +N:%^PALNo%>a SG-ILL ; 
 +N: SG-NOM ;
-+N:%^VOWL%^CShort SG-GEN ;
-+N:%^VOWL%^CShort SG-ACC ;
-+N:%^VOWL%^CShort%>e SG-LOC ;
-+N:%^VOWL%^CShort NMN_SG-COM_IN ;
++N:%^V2VV%^CC2C SG-GEN ;
++N:%^V2VV%^CC2C SG-ACC ;
++N:%^V2VV%^CC2C%>e SG-LOC ;
++N:%^V2VV%^CC2C NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
-+N:%^VOWL%^CShort SG-ABE ;
++N:%^V2VV%^CC2C SG-ABE ;
 
-+N:%^VOWL%^CShort PL-NOM ;
-+N:%^VOWL%^CShort PL-OBL ;
++N:%^V2VV%^CC2C PL-NOM ;
++N:%^V2VV%^CC2C PL-OBL ;
 
 
 LEXICON N_MIEʹRR !!= * __@CODE@__ Nouns with -est Loc and -a Ill without ʹ
 !! ** Yaml: __mierr__
 +N:%^PAL SG-NOM ;
-+N:%^VOWL%^CShort%^VOWLower%^PAL SG-GEN ;
-+N:%^VOWL%^CShort%^VOWLower%^PAL SG-ACC ;
++N:%^CC2C%^VOWLower%^PAL SG-GEN ;
++N:%^CC2C%^VOWLower%^PAL SG-ACC ;
 +N:%^VOWLower%^PALNo%>a SG-ILL ; 
-+N:%^VOWL%^CShort%^VOWLower%>e SG-LOC ;
-+N:%^VOWL%^CShort%^VOWLower NMN_SG-COM_IN ;
++N:%^CC2C%^VOWLower%>e SG-LOC ;
++N:%^CC2C%^VOWLower NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
-+N:%^VOWL%^CShort%^VOWLower SG-ABE ;
++N:%^CC2C%^VOWLower SG-ABE ;
 
-+N:%^VOWL%^CShort%^VOWLower PL-NOM ;
-+N:%^VOWL%^CShort%^VOWLower PL-OBL ;
++N:%^CC2C%^VOWLower PL-NOM ;
++N:%^CC2C%^VOWLower PL-OBL ;
 
 
 LEXICON N_MIEʹLǨǨ
 !! __@CODE@__ Nouns with -est Loc and -a Ill without ʹ
 !! ** Yaml: __mielkk__
-+N:%^PAL SG-NOM ;
-+N:%^VOWL%^CShort%^PAL SG-GEN ;
-+N:%^VOWL%^CShort%^PAL SG-ACC ;
-+N:%^VOWLower%^VOWBack%^PALNo%>a SG-ILL ; 
++N:%^PALE%^PAL SG-NOM ;
++N:%^VOWL%^CShort%^PALE%^PAL SG-GEN ;
++N:%^VOWL%^CShort%^PALE%^PAL SG-ACC ;
++N:%^VOWLower%^VOWBack%^PALE%^PALNo%>a SG-ILL ; 
 +N:%^VOWL%^CShort%>e SG-LOC ;
 +N:%^VOWL%^CShort NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
@@ -1252,16 +1316,16 @@ LEXICON N_LOOKKI !!= * __@CODE@__ is for nouns with ''-est'' +Loc
 !! * There are several stem types
 !! * lookki:lookki
 +N: SG-NOM ;
-+N:%^VOWL%^CShort SG-GEN ;
-+N:%^VOWL%^CShort SG-ACC ;
++N:%^CC2C SG-GEN ;
++N:%^CC2C SG-ACC ;
 +N:%>a SG-ILL ;
 +N:%>e SG-LOC ;
-+N:%^VOWL%^CShort SG-COM_N ;
++N:%^CC2C SG-COM_N ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
-+N:%^VOWL%^CShort SG-ABE ;
-+N:%^VOWL%^CShort PL-NOM ;
-+N:%^VOWL%^CShort PL-OBL ;
++N:%^CC2C SG-ABE ;
++N:%^CC2C PL-NOM ;
++N:%^CC2C PL-OBL ;
 
 
 LEXICON N_SÄRNNAI !!= * __@CODE@__ is for nouns with ''-est'' +Loc
