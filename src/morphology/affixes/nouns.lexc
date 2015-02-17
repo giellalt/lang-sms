@@ -40,8 +40,8 @@ LEXICON N_PAARR
 !! !!(5) Sg.Com: paarin
 !! !!(6) Ess: paarrân
 !! !!(7) Par: paarrâd
-!! !!(8) Pl.Acc:  
-!! !!(9)
+!! !!(8) Pl.Acc: paarid
+!! !!(9) Der/Dim.N.Sg.Nom: paarâž
 !! paarr:paarr
 !! ** Yaml: __N-paarr, N-saakk__
 !! is for nouns with -âst Loc. N_Â-EPal2-21
@@ -57,7 +57,7 @@ LEXICON N_PAARR
 +N: NMN_PAR_Â ;
 +N: NMN_PL-NOM_ST2W ;
 +N: NMN_PL-OBL_ST2W ;
-
++N+Der/Dim:%^St2W N_MUÕRÂŽ ;
 
 
  
@@ -85,8 +85,8 @@ LEXICON N_TOLL
 !! !!(5) Sg.Com: toolin
 !! !!(6) Ess: tollân
 !! !!(7) Par: tollâd
-!! !!(8) Pl.Acc: 
-!! !!(9)
+!! !!(8) Pl.Acc: toolid 
+!! !!(9) Der/Dim.N.Sg.Nom: toolâž
 !! toll:toll
 !! ** Yaml: __N-jokk, N-kidd, N-soll, N-toll, N-vorr__
 !! 
@@ -105,7 +105,7 @@ LEXICON N_TOLL
 +N: NMN_PL-NOM_XST2W ;
 
 +N: NMN_PL-OBL_XST2W ;
-
++N+Der/Dim:%^XSt2W N_MUÕRÂŽ ;
 
 
 LEXICON N_MUÕRR
@@ -260,51 +260,53 @@ LEXICON N-miarr !!= * __@CODE@__ is for words with ''-âst'' Loc but ''-ense'' I
 !! This is the same as N_MUÕRR
 !! N_Â-EPal2-21 
 !! ** Yaml: __miarr__
-+N: SG-NOM ;
-+N:%^VOWL%^CShort SG-GEN ;
-+N:%^VOWL%^CShort SG-ACC ;
-+N:%^VOWTense%^PAL%>e SG-ILL ;
-+N:%^VOWL%^CShort%>â SG-LOC ;
-+N:%^VOWL%^CShort NMN_SG-COM_IN ;
-+N:%>â ESS ; ! ess and prt without
-+N:%>â PAR ;
-+N:%^VOWL%^CShort SG-ABE ;
-+N:%^VOWL%^CShort PL-NOM ;
-+N:%^VOWL%^CShort PL-OBL ;
+ N_MUÕRR ;
+!+N: SG-NOM ;
+!+N:%^VOWL%^CShort SG-GEN ;
+!+N:%^VOWL%^CShort SG-ACC ;
+!+N:%^VOWTense%^PAL%>e SG-ILL ;
+!+N:%^VOWL%^CShort%>â SG-LOC ;
+!+N:%^VOWL%^CShort NMN_SG-COM_IN ;
+!+N:%>â ESS ; ! ess and prt without
+!+N:%>â PAR ;
+!+N:%^VOWL%^CShort SG-ABE ;
+!+N:%^VOWL%^CShort PL-NOM ;
+!+N:%^VOWL%^CShort PL-OBL ;
 
 
 LEXICON N_ǨIÕTT
 !! THIS IS THE SAME AS N_MUÕRR
 !! ** Yaml: __kiott__
-+N: SG-NOM ;
-+N:%^VOWL%^CShort SG-GEN ;
-+N:%^VOWL%^CShort SG-ACC ;
-+N:%^PAL%>e SG-ILL ;
-+N:%^VOWL%^CShort%>â SG-LOC ;
-+N:%^VOWL%^CShort NMN_SG-COM_IN ;
-+N:%>â ESS ; ! ess and prt without
-+N:%>â PAR ;
-+N:%^VOWL%^CShort SG-ABE ;
-+N:%^VOWL%^CShort PL-NOM ;
-+N:%^VOWL%^CShort PL-OBL ;
+ N_MUÕRR ;
+!+N: SG-NOM ;
+!+N:%^VOWL%^CShort SG-GEN ;
+!+N:%^VOWL%^CShort SG-ACC ;
+!+N:%^PAL%>e SG-ILL ;
+!+N:%^VOWL%^CShort%>â SG-LOC ;
+!+N:%^VOWL%^CShort NMN_SG-COM_IN ;
+!+N:%>â ESS ; ! ess and prt without
+!+N:%>â PAR ;
+!+N:%^VOWL%^CShort SG-ABE ;
+!+N:%^VOWL%^CShort PL-NOM ;
+!+N:%^VOWL%^CShort PL-OBL ;
 
 
 LEXICON N_PUÅVV !!= * __@CODE@__ is for words with ''-âst'' Loc but ''-ense'' Ill 3rd grade
 !! THIS is the same as N_MUÕRR
 !! N_Â-EPal3-21
 !! ** Yaml: __kiapp, puavv__
-
-+N: SG-NOM ;
-+N:%^VOWL%^CShort SG-GEN ;
-+N:%^VOWL%^CShort SG-ACC ;
-+N:%^VOWSH%^CLong%^PAL%>e SG-ILL ;
-+N:%^VOWL%^CShort%>â SG-LOC ;
-+N:%^VOWL%^CShort NMN_SG-COM_IN ;
-+N:%>â ESS ; ! ess and prt without
-+N:%>â PAR ;
-+N:%^VOWL%^CShort SG-ABE ;
-+N:%^VOWL%^CShort PL-NOM ;
-+N:%^VOWL%^CShort PL-OBL ;
+ N_MUÕRR ;
+!+N: SG-NOM ;
+!+N:%^VOWL%^CShort SG-GEN ;
+!+N:%^VOWL%^CShort SG-ACC ;
+!+N:%^VOWSH%^CLong%^PAL%>e SG-ILL ;
+!+N:%^VOWL%^CShort%>â SG-LOC ;
+!+N:%^VOWL%^CShort NMN_SG-COM_IN ;
+!+N:%>â ESS ; ! ess and prt without
+!+N:%>â PAR ;
+!+N:%^VOWL%^CShort SG-ABE ;
+!+N:%^VOWL%^CShort PL-NOM ;
+!+N:%^VOWL%^CShort PL-OBL ;
 
 
 !! !!a-stems
@@ -331,7 +333,7 @@ LEXICON N_PESS !!= * __@CODE@__ Is for nouns with ''-ast'' Loc
 !! !!(5) Sg.Com: peessain
 !! !!(6) Ess: pessan
 !! !!(7) Par: pessad
-!! !!(8) Pl.Acc: 
+!! !!(8) Pl.Acc: peessaid
 !! !!(9) Dim.N.Sg.Nom: piissuž (2009: 310)
 !NumContLex="1.1120000000000001"
 !! N_A-URaise3-32
@@ -371,8 +373,8 @@ LEXICON N_MEER !!= * __@CODE@__ Is for nouns with ''-ast'' Loc, No gradation
 !! !!(5) Sg.Com: meerain
 !! !!(6) Ess: meeran
 !! !!(7) Par: meerad
-!! !!(8) Pl.Acc: 
-!! !!(9)
+!! !!(8) Pl.Acc: meeraid
+!! !!(9) Der/Dim.N.Sg.Nom: meeruž
 !! ** Yaml: __meer, steehl__
 +N: SG-NOM ;
 +N: SG-GEN ;
@@ -385,6 +387,7 @@ LEXICON N_MEER !!= * __@CODE@__ Is for nouns with ''-ast'' Loc, No gradation
 +N: SG-ABE ;
 +N: PL-NOM ;
 +N:%>a PL-OBL ;
++N+Der/Dim: N_PIISSUŽ ;
 
 LEXICON N_ǨEÂLKK
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -540,8 +543,8 @@ LEXICON N_ÂʹLǦǦ
 !! !!(5) Sg.Com: õõʹljin
 !! !!(6) Ess: âʹlǧǧen
 !! !!(7) Par: âʹlǧǧed
-!! !!(8) Pl.Acc: 
-!! !!(9)
+!! !!(8) Pl.Acc: õõʹljid
+!! !!(9) Der/Dim.N.Sg.Nom: ââlǥaž
 !! NumContLex="1.113"
 !! Is for nouns with ''-est'' Loc, Extra long vowel
 !! ** Yaml: __N-algg__
@@ -556,7 +559,7 @@ LEXICON N_ÂʹLǦǦ
 +N:%^VOWL%^CShort SG-ABE ;
 +N:%^VOWL%^CShort PL-NOM ;
 +N:%^VOWL%^CShort%^VOWRaise%> PL-OBL ;
-
++N+Der/Dim:%^VOWL%^CShort%^PALNo%> N_KUÂLAŽ ;
 
 LEXICON N_PEIʹVV
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -580,8 +583,8 @@ LEXICON N_PEIʹVV
 !! !!(5) Sg.Com: peeiʹvin
 !! !!(6) Ess: peiʹvven
 !! !!(7) Par: peiʹvved
-!! !!(8) Pl.Acc: 
-!! !!(9)
+!! !!(8) Pl.Acc: peeiʹvid
+!! !!(9) Der/Dim.N.Sg.Nom: peeivaž
 !! ** Yaml: __N-peivv__
 !! * There are several stem types
 !! * peiʹvv:peiʹvv
@@ -596,7 +599,7 @@ LEXICON N_PEIʹVV
 +N:%^VOWL%^CShort SG-ABE ;
 +N:%^VOWL%^CShort PL-NOM ;
 +N:%^VOWL%^CShort PL-OBL ;
-
++N+Der/Dim:%^VOWL%^CShort%^PALNo%> N_KUÂLAŽ ;
 
 LEXICON N-piess
 N_PIEʹSS ;
@@ -714,7 +717,7 @@ LEXICON N_KUʹMPP
 !! !!(6) Ess: kuʹmppen
 !! !!(7) Par: kuʹmpped
 !! !!(8) Pl.Acc: kuuʹmpid
-!! !!(9)
+!! !!(9) Der/Dim.N.Sg.Nom: kuumpež
 !! ** Yaml: __N-kumpp__
 !! ???* There are several stem types
 !! * kuʹmpp:kuʹmpp
@@ -730,7 +733,7 @@ LEXICON N_KUʹMPP
 +N:%^VOWL%^CShort SG-ABE ;
 +N:%^VOWL%^CShort PL-NOM ;
 +N:%^VOWL%^CShort PL-OBL ;
-
++N+Der/Dim:%^VOWL%^CShort%> N_KUUʹMPEŽ ;
 
 
 
@@ -829,6 +832,8 @@ LEXICON N_SÄʹMMLAŽ
 +N+Pl+Com:aivuiʹm K ;
 +N+Pl+Abe:aitää K ;
 
+!! Diminutive derivations
+
 LEXICON N_MUÕRÂŽ
 
 !! (2009: 306)
@@ -885,6 +890,21 @@ LEXICON N_KUÂLAŽ
 +N:a PL-NOM ;
 +N:a PL-OBL ;
 
+LEXICON N_KUUʹMPEŽ
+!! * kuuʹmpež:kuuʹmp
+!! * Yaml: __N-kuumpezh__
+!! 
++N:ež SG-NOM ;
++N:e SG-GEN ;
++N:e SG-ACC ;
++N:ž NMN_SG-ILL_E ;
++N:e NMN_SG-LOC_ZERO ;
++N: NMN_SG-COM_IN ;
++N:ž NMN_ESS_E ;
++N:ž NMN_PAR_E ;
++N:e SG-ABE_ʹtää ;
++N:e PL-NOM ;
++N:i PL-OBL ;
 
 LEXICON N_OOUMAŽ !!= * __@CODE@__ is for nouns with ''-ust'' +Sg+Loc; ''e'' +Sg+Ill; X2 no gradation; no lowering no raising
 !! N_GEN1-ILLEX1-LOCE-NOM1X1
@@ -952,13 +972,13 @@ LEXICON N_KÅʹLL !!= * __@CODE@__ is for nouns with ''-est'' +Loc,
 +N:%^VOWL%^CShort SG-ACC ;
 +N:%^PALNo%>a SG-ILL ;
 +N:%^VOWL%^CShort%>e SG-LOC ;
-+N:%^VOWL%^CShort%^VOWRaise NMN_SG-COM_IN ;
++N:%^XSt2St%^VOWRaise NMN_SG-COM_IN ;
 +N:%>e ESS ; ! ess and prt without
 +N:%>e PAR ;
 +N:%^VOWL%^CShort SG-ABE ;
 
 +N:%^VOWL%^CShort PL-NOM ;
-+N:%^VOWL%^CShort%^VOWRaise PL-OBL ;
++N:%^XSt2St%^VOWRaise PL-OBL ;
 
 LEXICON N_PIEʹǨˈǨ
 !! is for nouns with -est +Loc, a +Ill 
@@ -1261,7 +1281,7 @@ LEXICON N_MUUƷ
 !! !!(6) Ess: muvʒʒen
 !! !!(7) Par: muvʒʒed
 !! !!(8) Pl.Acc: muvʒʒjid
-!! !!(9)
+!! !!(9) Der/Dim.N.Sg.Nom:
 !! ** Yaml: __N-muuz__
 !! * There are several stem types 
 !! * muuʒ:muvʒʒi
