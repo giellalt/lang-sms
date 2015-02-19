@@ -736,12 +736,14 @@ Rules
 
 "Even syllabic verbs I, relative vowel lengthening 0:ä"
 !! __@RULENAME@__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
-!! {{{
- 0:ä <=> OnSetC _ :ä RelVowLengthening ; !!= @CODE@
+ 0:ä <=> OnSetC _ ä (ʹ:|0:ʹ) Cns:+ %^V2VV: (%^CC2C:) RBound ;
+!€# 0äldd%^V2VV%^CC2C
+!€0 ääld000
+ OnSetC _ :ä RelVowLengthening ; 
 !Distinguishing mainstam and maainstam
 !- kååʹmmerd, maainâst Vowel lengthening in INDPRSSG3 and IMPSG2
-     _ ä (i) (ʹ:|0:ʹ) Cns:+ [%{E1%}:|%{A1%}:|%{Â1%}:] Cns:+ [%^VOWL:|%^IMPSG2:|%^INDPRSSG3:] ; !!= @CODE@
-!! }}}
+     _ ä (i) (ʹ:|0:ʹ) Cns:+ [%{E1%}:|%{A1%}:|%{Â1%}:] Cns:+ [%^VOWL:|%^IMPSG2:|%^INDPRSSG3:] ;
+
 
 
 
@@ -1023,18 +1025,20 @@ Rules
 
 "Even syllabic nouns I, with extra lengthening of vowel ij>ii/uv>uu and dd>d"
 !! __@RULENAME@__ - used with  +N+Sg+Nom > +N+Sg+Gen, sijdd > siid
-!! {{{
- d:0 <=> [(0:o) u: (ʹ:) v:|i: (ʹ:) j:] (0:ʹ) d _  %^VOWXL:  %^CShort: ; !!= @CODE@
+
+ d:0 <=> d _ (%^V2VV:) %^CC2C: ;
+!€# 0äldd%^V2VV%^CC2C
+!€0 ääld000
+ [(0:o) u: (ʹ:) v:|i: (ʹ:) j:] (0:ʹ) d _  %^VOWXL:  %^CShort: ;
  ! juʹrdded > joordam
-          SurfLongVow (ʹ:|0:ʹ) CNoJV  d _ [%^VOWL: %^CShort:|%^VOWXL: (%^CShort:)] ; !!= @CODE@
-                    u: (ʹ:) v:u (0:ʹ) d _  %^VOWXL: (%^CShort:) ; !!= @CODE@
+          SurfLongVow (ʹ:|0:ʹ) CNoJV  d _ [%^VOWL: %^CShort:|%^VOWXL: (%^CShort:)] ;
+                    u: (ʹ:) v:u (0:ʹ) d _  %^VOWXL: (%^CShort:) ; 
 !! uʹvdded+V+Ind+Prs+4: uuʹdet
-                     u (ʹ:) v:u (0:ʹ) d _  %^VOWL:  %^CShort: ; !!= @CODE@
+                     u (ʹ:) v:u (0:ʹ) d _  %^VOWL:  %^CShort: ; 
 ! njeiddad > njeeid
 ! 2012-06-12 v:u allows for uʹvdded
 !! - idd:id, +Imp+Sg2, +Ind+Prs+ConNeg double consonants following vowel and "i" at coda that become single consonants in gradation
-        2SgVow (ʹ:|0:ʹ) d _ Vow: [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^VOWSH: %^CLong: %^RmVow: ; !!= @CODE@
-!! }}}
+        2SgVow (ʹ:|0:ʹ) d _ Vow: [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^VOWSH: %^CLong: %^RmVow: ; 
 
 "Even syllabic verbs I, cg n:0"
 !! __@RULENAME@__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, jiõnn:jiõn
