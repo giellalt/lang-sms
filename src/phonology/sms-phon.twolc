@@ -150,7 +150,9 @@ Sets
 
 !! !!Definitions
 
-Definitions 
+Definitions
+ DummiesBeforeConsLength = [%^V2VV: |%^VV2V: |%^VOWRaise:| %^VOWLower:| %^PAL: | %^PALNo: | %^PALE: | %^PALÄ: ] ;
+ 
 !! {{{
 ShortV2XL = [0:a a|0:ä a:ä] ;  !!= * @CODE@
 
@@ -212,7 +214,12 @@ C2CCafterVV2V = [l [b 0:b|j:ǧ 0:ǧ|ǥ:ǧ 0:ǧ|m 0:m|t 0:t]|m p 0:p|p c 0:c|r d 
 !! }}}
 
 !! Long consonant cluster
-LongCluster = [l [g g|ǧ ǧ|m m|t t]|m p p|p c c|r d d |s [k k|ǩ ǩ|t t]] ;
+LongCluster = [l [d d |g g|ǧ ǧ|m m|t t]|m p p|p c c|r d d |s [k k|ǩ ǩ|t t]] ;
+
+!! Shortening consonant cluster
+XYY2XYCluster = [l [m m:|b b:|p p:| d d:|t t:|g g:|ǧ: ǧ:|k: k:|ǩ: ǩ:]|m [p p:| j j: ]|p c c:|r [d d:|g: g:|ǧ: ǧ:|k: k:|ǩ: ǩ:|č: č:|t t: | j j: ] |s [k k:|ǩ ǩ:|t t:]] ;
+
+
 !! Short consonant cluster
 
 
@@ -228,7 +235,7 @@ RBound = [#|%>] ; !!= * @CODE@
 !! relative lengthening of vowel right context following vowel:vowel
 !! 0:õ <=> OnSetC _ :õ RelVowLengthening
 !! {{{
-RelVowLengthening = [(ʹ:|0:ʹ) [CCforPrecedingV2VV  %^V2VV: (%^CC2C:)|CC2CforPrecedingV2VV (a: i:) %^V2VV: %^CC2C:|CC2CafterV2VVandUI %^V2VV: %^CC2C:|CC2CforPrecedingVV %^CC2C:|[k|m|n] %^VOWL:] ] ; !!= * @CODE@
+RelVowLengthening = [(ʹ:|0:ʹ) [CCforPrecedingV2VV  %^V2VV:|CC2CforPrecedingV2VV (a: i:) %^V2VV: |CC2CafterV2VVandUI %^V2VV: |XYY2XYCluster %^V2VV:] ] ; !!= * @CODE@
 !! }}}
 
 !! relative lengthening of vowel right context following vowel:vowel
@@ -483,7 +490,7 @@ Rules
 !€0 m0ann000u
 !€# äldd%^VOWRaise%>u
 !€0 aldd00u
-!€# 0äldd%^V2VV%^VOWRaise%>u
+!€# 0äldd%^V2VV%^VOWRaise%^C2CC%>u
 !€0 aald0000u
 
 
@@ -762,7 +769,7 @@ Rules
 "Even syllabic verbs I, relative vowel lengthening 0:a"
 !! __@RULENAME@__ - deriving +V+Inf in MAINSTED: maainstam, mainstam
  0:a <=>
- OnSetC _ :a [RelVowLengthening] ;
+ OnSetC _ ä:a [RelVowLengthening] %^VOWRaise: ;
 !€# 0äldd%^V2VV%^VOWRaise%>už
 !€0 aald0000už
 
@@ -1041,7 +1048,7 @@ Rules
 "Even syllabic nouns I, with extra lengthening of vowel ij>ii/uv>uu and dd>d"
 !! __@RULENAME@__ - used with  +N+Sg+Nom > +N+Sg+Gen, sijdd > siid
 
- d:0 <=> d _ (%^V2VV:) %^CC2C: ;
+ d:0 <=> d _ DummiesBeforeConsLength* %^CC2C: ;
 !€# 0äldd%^V2VV%^CC2C
 !€0 ääld000
  [(0:o) u: (ʹ:) v:|i: (ʹ:) j:] (0:ʹ) d _  %^VOWXL:  %^CShort: ;
