@@ -152,7 +152,8 @@ Sets
 
 Definitions
  DummiesBeforeConsLength = [%^V2VV: |%^VV2V: |%^VOWRaise:| %^VOWLower:| %^PAL: | %^PALNo: | %^PALE: | %^PALÄ: ] ;
- 
+ DummiesBeforeVowelHeight = [( %^V2VV: |%^VV2V: )] ; 
+
 !! {{{
 ShortV2XL = [0:a a|0:ä a:ä] ;  !!= * @CODE@
 
@@ -235,7 +236,7 @@ RBound = [#|%>] ; !!= * @CODE@
 !! relative lengthening of vowel right context following vowel:vowel
 !! 0:õ <=> OnSetC _ :õ RelVowLengthening
 !! {{{
-RelVowLengthening = [(ʹ:|0:ʹ) [CCforPrecedingV2VV  %^V2VV:|CC2CforPrecedingV2VV (a: i:) %^V2VV: |CC2CafterV2VVandUI %^V2VV: |XYY2XYCluster %^V2VV:] ] ; !!= * @CODE@
+RelVowLengthening = [(ʹ:|0:ʹ) [CCforPrecedingV2VV  %^V2VV:|Cns: %{XC%}: %^V2VV:|CC2CforPrecedingV2VV (a: i:) %^V2VV: |CC2CafterV2VVandUI %^V2VV: |XYY2XYCluster %^V2VV:] ] ; !!= * @CODE@
 !! }}}
 
 !! relative lengthening of vowel right context following vowel:vowel
@@ -311,13 +312,16 @@ Rules
 
 "Even syllabic verbs I, vowel shortening e:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
-!! {{{
- e:0 <=> OnSetC _ e: (ʹ:|0:ʹ) [LongC|Cns: :Cns*] [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ; !!= @CODE@
-         [Cns:+|:Cns+] _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] (%^VOWSH: (%^CLong:)|%^VC:) %^RmVow: ; !!= @CODE@
-         OnSetC _ e: (ʹ:|0:ʹ) Cns:+ Vow: Cns %^VOWSH: ; !!= @CODE@
+ e:0 <=>
+   OnSetC _ e: (ʹ:|0:ʹ) [LongC|Cns: :Cns*] %^VV2V:  ;
+!€# teevv%^VV2V%^VOWRaise%>uš
+!€0 t0ivv000uš
+ OnSetC _ e: (ʹ:|0:ʹ) [LongC|Cns: :Cns*] [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ;
+         [Cns:+|:Cns+] _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] (%^VOWSH: (%^CLong:)|%^VC:) %^RmVow: ; 
+         OnSetC _ e: (ʹ:|0:ʹ) Cns:+ Vow: Cns %^VOWSH: ; 
 !! deriving cieʹǩǩes+N+Sg+Ill: ceäkˈksa
-  OnSetC :Vow+ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] _  s: [%^VOWSH: %^CLong:| %^VOWXSH: %^CLong:]  %^VOWLower: (%^VOWBack:) (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:) %^PAL:)  %^RmVow: ; !!= @CODE@
-!! }}}
+  OnSetC :Vow+ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] _  s: [%^VOWSH: %^CLong:| %^VOWXSH: %^CLong:]  %^VOWLower: (%^VOWBack:) (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:) %^PAL:)  %^RmVow: ; 
+
 
 "Even syllabic verbs I, vowel shortening å:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
@@ -440,6 +444,9 @@ Rules
   OnSetC [0:i] _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] %^V2VV: %^VOWRaise: ;
 !€# p0ess%^V2VV%^VOWRaise%>už
 !€0 piiss000už
+  OnSetC :0 _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] %^VV2V: %^VOWRaise: ;
+!€# teevv%^VV2V%^VOWRaise%>uš
+!€0 t0ivv000uš
   OnSetC  [e:|e:0|0:i] _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  PrecedeVOWLowerRaise %^VOWRaise: ;
   OnSetC _ (u:) (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] PrecedeVOWLowerRaise %^VOWRaise: ;
 ! diphthong raising with e:i at onset - deriving +Ind+Prt+Pl3 in reäkkad > riâkku, veârrad > viõrru
@@ -492,8 +499,10 @@ Rules
 !€0 aldd00u
 !€# 0äldd%^V2VV%^VOWRaise%^C2CC%>u
 !€0 aald0000u
-
-
+ [ ä: | OnSetC (0:) ] _ (%ʹ:|0:%ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+] DummiesBeforeVowelHeight %^VOWRaise: ;
+ OnSetC _ ä: (%ʹ:|0:%ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+] DummiesBeforeVowelHeight %^VOWRaise: ;
+!€# čääʹcc%^VOWRaise%^CC2C%>id
+!€0 čaaʹʒʒ000id
   OnSetC (0:a)  _ u  (%ʹ:|0:%ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+] (%^VOWSH: %^CLong:) %^VOWRaise: %>  u ;
          OnSetC  ä:    _    (%ʹ:|0:%ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+] %^VOWSH: %^CLong:  %>  a ; 
          OnSetC  ä:    _    (%ʹ:|0:%ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+] (%^VOWXSH: (%^CLong:)|%^VOWL: (%^CShort:)) %^VOWRaise: ;
@@ -1028,22 +1037,27 @@ Rules
 "Even syllabic verbs I, cg for b"
 !! __@RULENAME@__ - used with  neiʹbb+N+Sg+Gen: neeiʹb
 !! {{{
- b:0 <=> SurfLongVow  [i (ʹ:|0:ʹ)|(ʹ:|0:ʹ) l] b _ (%^VOWL:|%^VOWXL:) %^CShort: ; !!= @CODE@
-!! }}}
+ b:0 <=> SurfLongVow  [i (ʹ:|0:ʹ)|(ʹ:|0:ʹ) l] b _   (%^V2VV:) (%^VOWRaise:|%^VOWLower:) (%^PALNo:|%^PAL:|%^PALE:|%^PALÄ:) %^CC2C: ;
+
 
 "Even syllabic verbs I, cg m:0"
 !! __@RULENAME@__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, 
  m:0 <=> SurfLongVow (ʹ:|0:ʹ)  (s|r|l|p|d:) m: _ (%^VOWL:|%^VOWXL:) %^CShort: ;
-         SurfLongVow (ʹ:|0:ʹ)  m _ %^CC2C: ;
+ SurfLongVow (ʹ:|0:ʹ) m: _    (%^V2VV:) (%^VOWRaise:|%^VOWLower:) (%^PALNo:|%^PAL:|%^PALE:|%^PALÄ:) %^CC2C: ;
 !€# sääʹmm%^CC2C
-!€0 sääʹm000
+!€0 sääʹm00
          SurfLongVow (ʹ:) h: (ʹ:|0:ʹ)      m: _ (%^VOWL:|%^VOWXL:) %^CShort: ; 
           
+
+
+
 "Even syllabic verbs I, cg v:0"
 !! __@RULENAME@__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, teevvad > teev
-!! {{{
- v:0 <=> SurfLongVow (i) (ʹ:|0:ʹ) v: _ (%^VOWL:|%^VOWXL:) %^CShort: ; !!= @CODE@
-!! }}}
+
+ v:0 <=>
+ SurfLongVow (ʹ:|0:ʹ) v: _    (%^V2VV:) (%^VOWRaise:|%^VOWLower:) (%^PALNo:|%^PAL:|%^PALE:|%^PALÄ:) %^CC2C: ;
+
+! SurfLongVow (i) (ʹ:|0:ʹ) v: _ (%^VOWL:|%^VOWXL:) %^CShort: ;
 
 "Even syllabic nouns I, with extra lengthening of vowel ij>ii/uv>uu and dd>d"
 !! __@RULENAME@__ - used with  +N+Sg+Nom > +N+Sg+Gen, sijdd > siid
@@ -1051,6 +1065,7 @@ Rules
  d:0 <=> d _ DummiesBeforeConsLength* %^CC2C: ;
 !€# 0äldd%^V2VV%^CC2C
 !€0 ääld000
+ SurfLongVow (ʹ:|0:ʹ) d: _    (%^V2VV:) (%^VOWRaise:|%^VOWLower:) (%^PALNo:|%^PAL:|%^PALE:|%^PALÄ:) %^CC2C: ;
  [(0:o) u: (ʹ:) v:|i: (ʹ:) j:] (0:ʹ) d _  %^VOWXL:  %^CShort: ;
  ! juʹrdded > joordam
           SurfLongVow (ʹ:|0:ʹ) CNoJV  d _ [%^VOWL: %^CShort:|%^VOWXL: (%^CShort:)] ;
@@ -1064,10 +1079,10 @@ Rules
 
 "Even syllabic verbs I, cg n:0"
 !! __@RULENAME@__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, jiõnn:jiõn
-!! {{{
- n:0 <=> SurfLongVow  (ʹ:|0:ʹ)  (s|r|l|p|d:) n:  _ (a: i:) (%^VOWL:|%^VOWXL:) %^CShort: ; !!= @CODE@
-         SurfLongVow  (ʹ:) h: (ʹ:|0:ʹ) n: _ (%^VOWXL:) %^CShort: ; !!= @CODE@
-!! }}}
+ n:0 <=> 
+ SurfLongVow (ʹ:|0:ʹ) n: _    (%^V2VV:) (%^VOWRaise:|%^VOWLower:) (%^PALNo:|%^PAL:|%^PALE:|%^PALÄ:) %^CC2C: ;
+      SurfLongVow  (ʹ:|0:ʹ)  (s|r|l|p|d:) n:  _ (a: i:) (%^VOWL:|%^VOWXL:) %^CShort: ;
+         SurfLongVow  (ʹ:) h: (ʹ:|0:ʹ) n: _ (%^VOWXL:) %^CShort: ; 
           
 "Even syllabic verbs I, cg for ʒ"
 !! __@RULENAME@__ - used with  pääʹʒʒelm+N+Sg+Ill: päʹʒlma
@@ -1086,7 +1101,9 @@ Rules
 
 "Even syllabic verbs I, cg for đ" 
 !! __@RULENAME@__ - used with  ǩiđđ:ǩiiđ
- đ:0 <=> đ: _ %^V2VV: %^CC2C: ;
+ đ:0 <=>
+ SurfLongVow (ʹ:|0:ʹ) đ: _    (%^V2VV:) (%^VOWRaise:|%^VOWLower:) (%^PALNo:|%^PAL:|%^PALE:|%^PALÄ:) %^CC2C: ;
+
 !  Vow: (ʹ:|0:ʹ) đ: _ [%^V2VV: %^CC2C:|%^VOWXL: %^CShort:] ;
 !€# ǩ0iđđ%^V2VV%^CC2C
 !€0 ǩiiđ00
@@ -1095,7 +1112,8 @@ Rules
 
 "Even syllabic verbs I, cg for r" 
 !! __@RULENAME@__ - used with  võrr:võõr
- r:0 <=> r: _ (%^V2VV:) %^CC2C: ;
+ r:0 <=>
+ SurfLongVow (ʹ:|0:ʹ) r: _    (%^V2VV:) (%^VOWRaise:|%^VOWLower:) (%^PALNo:|%^PAL:|%^PALE:|%^PALÄ:) %^CC2C: ;
 !  [SurfLongVow (ʹ:|0:ʹ)|u: (ʹ:) v:u (0:ʹ)] r: _  [%^V2VV: %^CC2C:|%^VOWXL: %^CShort:] ;
 !€# v0õrr%^V2VV%^CC2C
 !€0 võõr000
@@ -1107,8 +1125,8 @@ Rules
 "Even syllabic verbs I, cg for l"
 !! __@RULENAME@__ - used with  vuʹvll+N+Sg+Gen: vuuʹl
  l:0 <=>
+ SurfLongVow (ʹ:|0:ʹ) l: _    (%^V2VV:) (%^VOWRaise:|%^VOWLower:) (%^PALNo:|%^PAL:|%^PALE:|%^PALÄ:) %^CC2C: ;
 !! deriving 
-        l _ %^V2VV: %^CC2C: ;
 !           SurfLongVow (ʹ:|0:ʹ) l: _  [%^V2VV: %^CC2C:|%^VOWXL: %^CShort:] ;
 !€# t0oll%^V2VV%^CC2C
 !€0 tool00
@@ -1124,16 +1142,12 @@ Rules
 
 "Even syllabic verbs I, cg for g"
 !! __@RULENAME@__ - used with  cõõggâlm+N+Sg+Ill: cõglma
-!! {{{
- g:0 <=>  2SgVow (ʹ:|0:ʹ) g _ Vow: [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^VOWSH: %^CLong:  %^RmVow: ; !!= @CODE@
-          SurfLongVow  (ʹ:|0:ʹ)  [r|l|d:] g:  _ (%^VOWL:|%^VOWXL:) %^CShort: ; !!= @CODE@
-!! }}}
+ g:0 <=>  2SgVow (ʹ:|0:ʹ) g _ Vow: [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^VOWSH: %^CLong:  %^RmVow: ;
+          SurfLongVow  (ʹ:|0:ʹ)  [r|l|d:] g: _    (%^V2VV:) (%^VOWRaise:|%^VOWLower:) (%^PALNo:|%^PAL:|%^PALE:|%^PALÄ:) %^CC2C: ;
 
 "Even syllabic verbs I, cg for ǧ"
 !! __@RULENAME@__ - used with  vueʹlǧǧed+V+Ind+Prs+Sg1: vuâlǥam
-!! {{{
- ǧ:0 <=> SurfLongVow (ʹ:|0:ʹ) l [ǧ:j|ǧ:] _ [%^VOWL: %^CShort:|%^VOWXL: (%^CShort:)] NeutrHighBack (%^PALNo:|(%^PALE:|%^PALÄ:) %^PAL:) RBound ; !!= @CODE@
-!! }}}
+ ǧ:0 <=> SurfLongVow (ʹ:|0:ʹ) l [ǧ:j|ǧ:] _    (%^V2VV:) (%^VOWRaise:|%^VOWLower:) (%^PALNo:|%^PAL:|%^PALE:|%^PALÄ:) %^CC2C: ;
 
 
 ! "Even syllabic verbs I, cg vv:v"
@@ -1143,7 +1157,10 @@ Rules
 !! __@RULENAME@__ 
 !! used with  +N+Sg+Nom > +N+Sg+Gen for cases like
 !! {{lookki > looǥǥi}}.
- k:ǥ <=>                                                          
+ k:ǥ <=>
+ SurfLongVow  k: _   (%^V2VV:) (%^VOWRaise:|%^VOWLower:) (%^PALNo:|%^PAL:|%^PALE:|%^PALÄ:) %^CC2C: ;
+         SurfLongVow   _ k: (%^V2VV:) (%^VOWRaise:|%^VOWLower:) (%^PALNo:|%^PAL:|%^PALE:|%^PALÄ:) %^CC2C: ;
+
   OnSetC [DbVow|Diphth] (ʹ:) k: _ (i:) (%^VOWRaise:) [%^CC2C:|%^VOWL:  %^CShort:] ;
   OnSetC [DbVow|Diphth] (ʹ:) _  k: (i:) (%^VOWRaise:) [%^CC2C:|%^VOWL:  %^CShort:] ;
   OnSetC SurfLongVow    (ʹ:) k: _    (i:) %^VOWXL: (%^CShort:) ;
@@ -1158,6 +1175,9 @@ Rules
 !! used with
 !! {{ > }}.
  ǩ:j <=>   
+ SurfLongVow (ʹ:|0:ʹ) ǩ: _    (%^V2VV:) (%^VOWRaise:|%^VOWLower:) (%^PALNo:|%^PAL:|%^PALE:|%^PALÄ:) %^CC2C: ;
+         SurfLongVow (ʹ:|0:ʹ)    _ ǩ: (%^V2VV:) (%^VOWRaise:|%^VOWLower:) (%^PALNo:|%^PAL:|%^PALE:|%^PALÄ:) %^CC2C: ;
+
   OnSetC [DbVow|Diphth] (ʹ:|0:ʹ) ǩ:   _  [%^St2W:|%^VOWL: %^CShort:] ;
   OnSetC [DbVow|Diphth] (ʹ:|0:ʹ)  _  ǩ: [%^St2W:|%^VOWL:   %^CShort:] ; 
 
@@ -1170,6 +1190,8 @@ Rules
 "Even syllabic verbs I, Voicing š:ž" 
 !! __@RULENAME@__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
  š:ž <=> 
+ SurfLongVow (ʹ:|0:ʹ) š: _    (%^V2VV:) (%^VOWRaise:|%^VOWLower:) (%^PALNo:|%^PAL:|%^PALE:|%^PALÄ:) %^CC2C: ;
+         SurfLongVow (ʹ:|0:ʹ)    _ š: (%^V2VV:) (%^VOWRaise:|%^VOWLower:) (%^PALNo:|%^PAL:|%^PALE:|%^PALÄ:) %^CC2C: ;
  OnSetC [Diphth|DbVow] (ʹ:|0:ʹ) š:       _          %^VOWL:   %^CShort: ;
          OnSetC [Diphth|DbVow] (ʹ:|0:ʹ)          _       š: %^VOWL:   %^CShort: ; 
          OnSetC   Diphth       (ʹ:|0:ʹ) š:  %ˈ:  _          %^VOWXL: (%^CShort:) ;
@@ -1182,9 +1204,9 @@ Rules
 
 "Even syllabic verbs I, Voicing c:ʒ"
 !! __@RULENAME@__ - cc:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
- c:ʒ <=> SurfLongVow (ʹ:|0:ʹ) c: _    (%^VOWL:|%^VOWXL:) %^CShort: ;
-         SurfLongVow (ʹ:|0:ʹ)    _ c: (%^VOWL:|%^VOWXL:) %^CShort: ;
-!€# čääʹcc%^VOWL%^CShort
+ c:ʒ <=> SurfLongVow (ʹ:|0:ʹ) c: _    (%^V2VV:) (%^VOWRaise:|%^VOWLower:) (%^PALNo:|%^PAL:|%^PALE:|%^PALÄ:) %^CC2C: ;
+         SurfLongVow (ʹ:|0:ʹ)    _ c: (%^V2VV:) (%^VOWRaise:|%^VOWLower:) (%^PALNo:|%^PAL:|%^PALE:|%^PALÄ:) %^CC2C: ;
+!€# čääʹcc%^CC2C
 !€0 čääʹʒʒ00
                                    _ %^VC: ; 
 
