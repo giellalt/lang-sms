@@ -1,0 +1,62 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Verb - teevvad: # Verb 'to fix/korjata' - full paradigm
+     teevvad+V+Ind+Prs+Sg1: teevam
+     teevvad+V+Ind+Prs+Sg2: teevak
+     teevvad+V+Ind+Prs+Sg3: teevv
+     teevvad+V+Ind+Prs+Pl1: teevvap
+     teevvad+V+Ind+Prs+Pl2: teevvveʹted
+     teevvad+V+Ind+Prs+Pl3: teevva
+     teevvad+V+Ind+Prs+4: teevat
+     teevvad+V+Ind+Prt+Sg1: tivvum
+     teevvad+V+Ind+Prt+Sg2: tivvuk
+     teevvad+V+Ind+Prt+Sg3: teevai
+     teevvad+V+Ind+Prt+Pl1: [teevaim, teevain]
+     teevvad+V+Ind+Prt+Pl2: teevaid
+     teevvad+V+Ind+Prt+Pl3: tivvu
+     teevvad+V+Ind+Prt+4: tivvuš
+     teevvad+V+Pot+Sg1: teevžem
+     teevvad+V+Pot+Sg2: teevžiǩ
+     teevvad+V+Pot+Sg3: teevež
+     teevvad+V+Pot+Pl1: [teevžep, teevžim, teevžin]
+     teevvad+V+Pot+Pl2: teevžid 
+     teevvad+V+Pot+Pl3: teevže
+     teevvad+V+Pot+4: teevžet
+     teevvad+V+Pot+ConNeg: teevže
+     teevvad+V+Cond+Sg1: teevčem
+     teevvad+V+Cond+Sg2: teevčiǩ
+     teevvad+V+Cond+Sg3: teevči
+     teevvad+V+Cond+Pl1: [teevčim, teevčin, teevčep]
+     teevvad+V+Cond+Pl2: teevčid
+     teevvad+V+Cond+Pl3: teevče
+     teevvad+V+Cond+4: teevčeš
+     teevvad+V+Cond+ConNeg: teevče
+     teevvad+V+Imprt+Sg2: teev
+     teevvad+V+Imprt+Sg3: teevas
+     teevvad+V+Imprt+Pl1: teevvap
+     teevvad+V+Imprt+Pl2: teevvad
+     teevvad+V+Imprt+Pl3: teevvaz
+     teevvad+V+Imprt+2+ConNeg: teev
+     teevvad+V+Imprt+13+ConNeg: tivvu
+     teevvad+V+ActEss: teevvmen
+     teevvad+V+Actio: teevvam
+     teevvad+V+PrsPrc: teevvai
+     teevvad+V+PrfPrc: teevvam
+     teevvad+V+Pass+PrfPrc: tivvum
+     teevvad+V+VAbess: teevkani
+     teevvad+V+GerTemp: teeveen
+     teevvad+V+GerInstr: teeveeʹl
