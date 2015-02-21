@@ -137,9 +137,15 @@ LEXICON V_VIǮǮÂD
 !! !!(3)  Ind.Prs.Pl3: veʹǯǯe
 !! !!(4)  Ind.Prt.Pl3: viʹǯǯe
 !! !!(5)  Ind.Imprt.Sg2: viiǯǯ
+!! !!  Ind.Prs.Sg1-Sg2-4-ConNeg
+!! !!  Ind.Prt.Sg3-Pl1-Pl2
+!! !!  Imprt.2.ConNeg
+!! !!  VAbe, GerTemp, GerInstr
+!! !!  Cond-Pot
 !! !!(6)  Ind.Pot.Sg3: viiǯǯâž
 !! !!(7)  Ind.Imprt.Sg3: veeǯǯ
-!! !!  
+!! !!(8)  Imprt.13.ConNeg: viǯǯu
+!! !!   Pass.PrfPrc
 !! * Yaml: __V-vizzad__
 !! viǯǯâd:viǯǯ
 !! Extra strong grade in penultimate syllable
@@ -147,7 +153,7 @@ LEXICON V_VIǮǮÂD
 +V+Ind+Prs: VIQQAD-Prs ;
 +V+Ind+Prt: VIQQAD-Prt ;
 +V+Imprt: VIQQAD-Imp ;
-+V:%^VOWL%^CShort%> VSUF-I-POTKOND ; !WG
++V:%^V2VV%> VSUF-I-POTKOND ; 
 +V+Pot+Sg3:%^VOWL%^CShort%>âž	FINAL1 ; !WG
 +V+ActEss:%>men FINAL1 ;
 +V+GerTemp:%^VOWL%^CShort%>een FINAL1 ;
@@ -272,9 +278,9 @@ LEXICON V_AIBBÂD
 !! !!(2)  Ind.Prs.Sg3: äibb
 !! !!(3)  Ind.Prs.Pl3: äiʹbbe
 !! !!(4)  Ind.Prt.Pl3: aiʹbbe
-!! !!(5)  Ind.Imprt.Sg2: aaib
-!! !!(6)  Ind.Pot.Sg3: aaibâž
-!! !!(7)  Ind.Imprt.Sg3: ääib
+!! !!(5)  Imprt.Sg2: aaib
+!! !!(6)  Pot.Sg3: aaibâž
+!! !!(7)  Imprt.Sg3: ääibas
 !! !!  
 !! * Yaml: ____
 !!  aibbâd:aibb
@@ -437,22 +443,28 @@ LEXICON V_TEEVVAD
 !! 1.2.1.1 Monophthong 
 !! Stem is strong
 !! one vowel
-+V+Ind+Prs:		TEEVVAD-PRS ;
-+V+Ind+Prt:		TEEVVAD-PRT ;
-+V+Imprt:			TEEVVAD-IMPRT ;
-+V:%^VOWL%^CShort%> VSUF-I-POTKOND ; !WG
-+V+Pot+Sg3:%^VOWL%^CShort%>ež	FINAL1 ; !WG
-+V+Inf:%>ad FINAL1 ;
-+V+PrsPrc:%>ai FINAL1 ;
-+V+PrfPrc:%>am FINAL1 ;
-+V+ActEss:%>men FINAL1 ;
-+V+Pass+PrfPrc:%^VOWSH%^CLong%^VOWRaise%>um FINAL1 ;
-+V+GerTemp:%^VOWL%^CShort%>een FINAL1 ;
-+V+GerInstr:%^VOWL%^CShort%>eeʹl FINAL1 ;
-+V+Actio:%>am FINAL1 ;
-+V+VAbess:%^VOWL%^CShort%>kâni FINAL1 ;		!WG
-+V+VAbess:%^VOWL%^CShort%>kani FINAL1 ;		!WG
-+V+VAbess:%^VOWL%^CShort%>ǩeânai FINAL1 ;		!WG
++V+Inf:%>ad FINAL1 ; !1
++V: VSUF-IND-PRS-SG3_AD ; !2
++V+Ind+Prs+Pl3:%>a FINAL1 ; !3 
++V:%^VV2V%^VOWRaise%> VSUF-IND-PRT-PL3_AD ; !4
++V:%^CC2C%> VSUF-I-POTKOND_AD ; !5
++V+Pot+Sg3:%^CC2C%>ež	FINAL1 ; !6
++V+Imprt+Sg3:%^CC2C%>as FINAL1 ; !7
++V:%^VV2V%^VOWRaise VSUF-IMPRT-13-CONNEG_AD ; !8
+
+!+V+Ind+Prs:		TEEVVAD-PRS ;
+!+V+Ind+Prt:		TEEVVAD-PRT ;
+!+V+Imprt:			TEEVVAD-IMPRT ;
+!+V+PrsPrc:%>ai FINAL1 ;
+!+V+PrfPrc:%>am FINAL1 ;
+!+V+ActEss:%>men FINAL1 ;
+!+V+Pass+PrfPrc:%^VOWSH%^CLong%^VOWRaise%>um FINAL1 ;
+!+V+GerTemp:%^VOWL%^CShort%>een FINAL1 ;
+!+V+GerInstr:%^VOWL%^CShort%>eeʹl FINAL1 ;
+!+V+Actio:%>am FINAL1 ;
+!+V+VAbess:%^VOWL%^CShort%>kâni FINAL1 ;		!WG
+!+V+VAbess:%^VOWL%^CShort%>kani FINAL1 ;		!WG
+!+V+VAbess:%^VOWL%^CShort%>ǩeânai FINAL1 ;		!WG
 
 LEXICON V_TÄTTAD
 !! tättad:tätt
@@ -469,22 +481,50 @@ LEXICON V_TÄTTAD
 !! XSt == XSt
 !! Monophthong
 !! Raising 
-+V+Ind+Prs:		TEEVVAD-PRS ;
-+V+Ind+Prt:		TEEVVAD-PRT ;
-+V+Imprt:			TEEVVAD-IMPRT ;
-+V:%^VOWL%^CShort%> VSUF-I-POTKOND ; !WG
-+V+Pot+Sg3:%^VOWL%^CShort%>ež	FINAL1 ; !WG
-+V+Inf:%>ad FINAL1 ;
-+V+PrsPrc:%>ai FINAL1 ;
-+V+PrfPrc:%>am FINAL1 ;
-+V+ActEss:%>men FINAL1 ;
-+V+Pass+PrfPrc:%^VOWSH%^CLong%^VOWRaise%>um FINAL1 ;
-+V+GerTemp:%^VOWL%^CShort%>een FINAL1 ;
-+V+GerInstr:%^VOWL%^CShort%>eeʹl FINAL1 ;
-+V+Actio:%>am FINAL1 ;
-+V+VAbess:%^VOWL%^CShort%>kâni FINAL1 ;		!WG
-+V+VAbess:%^VOWL%^CShort%>kani FINAL1 ;		!WG
-+V+VAbess:%^VOWL%^CShort%>ǩeânai FINAL1 ;		!WG
+!! FORMS
+!! !!(1) +V+Inf: tättad
+!! !!(2) +V+Ind+Prs+Sg3: tätt
+!! !!  Ind.Prs.Pl1-Pl2, Ind.Prt.ConNeg
+!! !!  Imprt.Pl1-Pl2-Pl3, ActEss, Actio, PrsPrc, PrfPrc
+!! !!(3) +V+Ind+Prs+Pl3: tätta
+!! !!(4) +V+Ind+Prt+Pl3: tattu
+!! !!  Ind.Prt.Sg1-Sg2-4
+!! !!(5) +V+Imprt+Sg2: täätt
+!! !!  Ind.Prs.Sg1-Sg2-4-ConNeg
+!! !!  Ind.Prt.Sg3-Pl1-Pl2
+!! !!  Imprt.2.ConNeg
+!! !!  VAbe, GerTemp, GerInstr
+!! !!  Cond-Pot
+!! !!(6) +V+Pot+Sg3: täättež
+!! !!(7) +V+Imprt+Sg3: täättas
+!! !!(8) +V+Imprt+13+ConNeg: tattu
+!! !!   Pass.PrfPrc
++V+Inf:%>ad FINAL1 ; !1
++V: VSUF-IND-PRS-SG3_AD ; !2
++V+Ind+Prs+Pl3:%>a FINAL1 ; !3
++V:%^VOWRaise%> VSUF-IND-PRT-PL3_AD ; !4
++V:%^V2VV%> VSUF-I-POTKOND_AD ; !5
++V+Pot+Sg3:%^V2VV%>ež   FINAL1 ; !6
++V+Imprt+Sg3:%^V2VV%>as FINAL1 ; !7
++V:%^VOWRaise VSUF-IMPRT-13-CONNEG_AD ; !8
+
+
+!+V+Ind+Prs:		TEEVVAD-PRS ;
+!+V+Ind+Prt:		TEEVVAD-PRT ;
+!+V+Imprt:			TEEVVAD-IMPRT ;
+!+V:%^V2VV%> VSUF-I-POTKOND_AD ; !WG
+!+V+Pot+Sg3:%^V2VV%>ež	FINAL1 ; !WG
+!+V+Inf:%>ad FINAL1 ;
+!+V+PrsPrc:%>ai FINAL1 ;
+!+V+PrfPrc:%>am FINAL1 ;
+!+V+ActEss:%>men FINAL1 ;
+!+V+Pass+PrfPrc:%^VOWRaise%>um FINAL1 ;
+!+V+GerTemp:%^V2VV%>een FINAL1 ;
+!+V+GerInstr:%^V2VV%>eeʹl FINAL1 ;
+!+V+Actio:%>am FINAL1 ;
+!+V+VAbess:%^V2VV%>kâni FINAL1 ;		!WG
+!+V+VAbess:%^V2VV%>kani FINAL1 ;		!WG
+!+V+VAbess:%^V2VV%>ǩeânai FINAL1 ;		!WG
 
 
 LEXICON V_REÄKKAD
@@ -1119,7 +1159,7 @@ LEXICON VIQQAD-Prt
 +Pl1:%^VOWL%^CShort%>im FINAL1 ; ! _kaaggim_
 +Pl1:%^VOWL%^CShort%>in FINAL1 ; ! _kaaggin_ is this sub?
 +Pl2:%^VOWL%^CShort%>id FINAL1 ; ! _kaaggid_
-+Pl3:%^VOWSH%^CLong%^PAL%>e FINAL1 ; ! _viʹǯǯe_ _kuõʹsǩǩe_ _ka'ǧǧe_
++Pl3:%^VOWSH%^CLong%^PAL%>e FINAL1 ; ! _viʹǯǯe_ _kuõʹsǩǩe_ _kaʹǧǧe_
 +4:%^VOWSH%^CLong%^PAL%>eš FINAL1 ;
 +ConNeg:%>âm FINAL1 ;
 
@@ -1138,13 +1178,14 @@ LEXICON VIQQAD-Imp
 
 ! assuming stem _teevv_
 LEXICON TEEVVAD-PRS
- +Sg1:%^VOWL%^CShort%>am		FINAL1	; !WG !_teevam_ _lääulam_
- +Sg2:%^VOWL%^CShort%>ak			FINAL1	; !WG _teevak_ _lääulak_
+ +Sg1:%^V2VV%>am		FINAL1	; !WG !_teevam_ _lääulam_
+ +Sg2:%^V2VV%>ak			FINAL1	; !WG _teevak_ _lääulak_
  +Sg3:			FINAL1	; !_teevv_ _läull_
  +Pl1:%>ap			FINAL1	; !_teevvap_ _läullap_
- +Pl2:%>veʹted		FINAL1	; !_teevvve'ted_ _läullve'ted_
- +Pl3:%^VOWSH%^CLong%>a		FINAL1	; !_tevva_ _läulla_
- +4:%^VOWL%^CShort%>at FINAL1  ; !WG
+ +Pl2:%>veʹted		FINAL1	; !_teevvveʹted_ _läullveʹted_
+ +Pl3:%>a		FINAL1	; !_tevva_ _läulla_
+ +4:%^V2VV%>at FINAL1  ; !WG
+ +ConNeg:%^V2VV FINAL1 ;
 
 ! assuming stem _kâlmm_
 LEXICON KALMMED-PRS
@@ -1247,11 +1288,11 @@ LEXICON LEED-PRS
 LEXICON TEEVVAD-PRT
  +Sg1:%^VOWRaise%>um		FINAL1	; !đđ>dd ! _laullum_
  +Sg2:%^VOWRaise%>uk		FINAL1	; !đđ>dd ! _laulluk_
- +Sg3:%^VOWL%^CShort%>ai			FINAL1	; !WG ! _lääulai_
- +Pl1:%^VOWL%^CShort%>aim			FINAL1	; !WG ! _lääulaim_
- +Pl1:%^VOWL%^CShort%>ain			FINAL1	; !WG ! _lääulain_
- +Pl2:%^VOWL%^CShort%>aid			FINAL1	; !WG ! _lääulaid_
- +Pl3:%^VOWSH%^CLong%^VOWRaise%>u		FINAL1	; ! _laullu_
+ +Sg3:%^V2VV%>ai			FINAL1	; !WG ! _lääulai_
+ +Pl1:%^V2VV%>aim			FINAL1	; !WG ! _lääulaim_
+ +Pl1:%^V2VV%>ain			FINAL1	; !WG ! _lääulain_
+ +Pl2:%^V2VV%>aid			FINAL1	; !WG ! _lääulaid_
+ +Pl3:%^VOWRaise%>u		FINAL1	; ! _laullu_
  +4:%^VOWRaise%>uš FINAL1 ;
  +ConNeg:%>am FINAL1 ;
 
@@ -1363,12 +1404,13 @@ LEXICON LEED-PRT
 ! - - - - - - -
 ! teevvad
 LEXICON TEEVVAD-IMPRT
- +Sg2:%^VOWL%^CShort FINAL1	; !WG
- +Sg3:%^VOWL%^CShort%>as			FINAL1	; !WG
+ +Sg2:%^V2VV FINAL1	; !WG
+ +Sg3:%^V2VV%>as			FINAL1	; !WG
  +Pl1:%>ap			FINAL1	;
  +Pl2:%>ad			FINAL1	;
- +Pl3:%^VOWSH%^CLong%>az		FINAL1	;
- +ConNeg:%^VOWRaise%>u FINAL1  ;
+ +Pl3:%>az		FINAL1	;
+ +2+ConNeg:%^V2VV FINAL1	; !WG
+ +13+ConNeg:%^VOWRaise%>u FINAL1  ;
 ! 
 LEXICON KALMMED-IMPRT
  +Sg2:%^VOWL%^CShort%^PAL FINAL1	; !WG
@@ -1432,9 +1474,81 @@ LEXICON LEED-IMPRT
 
 
 
+
 ! Potentialis & Konditionalis
 ! not including +Pot+Sg3
 ! - - - - - - - - - - - - - -
+LEXICON VSUF-IND-PRS-SG3_AD
++Ind+Prs+Sg3: FINAL1 ;
++Ind+Prs+Pl1:%>ap FINAL1 ;
++Ind+Prs+Pl2:%>veʹted FINAL1 ;
++Ind+Prt+ConNeg:%>am FINAL1 ;
++Imprt+Pl1:%>ap FINAL1 ;
++Imprt+Pl2:%>ad FINAL1 ;
++Imprt+Pl3:%>az FINAL1 ;
++ActEss:%>men FINAL1 ;
++Actio:%>am FINAL1 ;
++PrsPrc:%>ai FINAL1 ;
++PrfPrc:%>am FINAL1 ;
+!!
+LEXICON VSUF-IND-PRT-PL3_AD
++Ind+Prt+Sg1:%>um FINAL1 ;
++Ind+Prt+Sg2:%>uk FINAL1 ;
++Ind+Prt+Pl3:%>u FINAL1 ;
++Ind+Prt+4:%>uš FINAL1 ;
+!!
+LEXICON VSUF-I-POTKOND_ÂD
++Ind+Prs+Sg1:%>am FINAL1 ;
++Ind+Prs+Sg2:%>ak FINAL1 ;
++Ind+Prs+4:%>ât FINAL1 ;
++Ind+Prs+ConNeg: FINAL1 ;
++Ind+Prt+Sg3:%>i FINAL1 ;
++Ind+Prt+Pl1:%>im FINAL1 ;
++Ind+Prt+Pl1:%>in FINAL1 ;
++Ind+Prt+Pl2:%>id FINAL1 ;
++Imprt+2+ConNeg: FINAL1 ;
++VAbess:%>kani FINAL1 ;
++VAbess:%>ǩeânai FINAL1 ;
++VAbess:%>ǩâni FINAL1 ;
++GerInstr:%>eeʹl FINAL1 ;
++GerTemp:%>een FINAL1 ;
+ VSUF-I-POTKOND ;
+
+LEXICON VSUF-I-POTKOND_AD
++Ind+Prs+Sg1:%>am FINAL1 ;
++Ind+Prs+Sg2:%>ak FINAL1 ;
++Ind+Prs+4:%>at FINAL1 ;
++Ind+Prs+ConNeg: FINAL1 ;
++Ind+Prt+Sg3:%>ai FINAL1 ;
++Ind+Prt+Pl1:%>aim FINAL1 ;
++Ind+Prt+Pl1:%>ain FINAL1 ;
++Ind+Prt+Pl2:%>aid FINAL1 ;
++Imprt+Sg2: FINAL1 ;
++Imprt+2+ConNeg: FINAL1 ;
++VAbess:%>kani FINAL1 ;
++VAbess:%>ǩeânai FINAL1 ;
++VAbess:%>ǩâni FINAL1 ;
++GerInstr:%>eeʹl FINAL1 ;
++GerTemp:%>een FINAL1 ;
+ VSUF-I-POTKOND ;
+
+LEXICON VSUF-I-POTKOND_ED
++Ind+Prs+Sg1:%>am FINAL1 ;
++Ind+Prs+Sg2:%>ak FINAL1 ;
++Ind+Prs+4:%>ât FINAL1 ;
++Ind+Prs+ConNeg: FINAL1 ;
++Ind+Prt+Sg3:%>i FINAL1 ;
++Ind+Prt+Pl1:%>im FINAL1 ;
++Ind+Prt+Pl1:%>in FINAL1 ;
++Ind+Prt+Pl2:%>id FINAL1 ;
++Imprt+2+ConNeg: FINAL1 ;
++VAbess:%>kani FINAL1 ;
++VAbess:%>ǩeânai FINAL1 ;
++VAbess:%>ǩâni FINAL1 ;
++GerInstr:%>eeʹl FINAL1 ;
++GerTemp:%>een FINAL1 ;
+ VSUF-I-POTKOND ;
+
 
 LEXICON VSUF-I-POTKOND
  POTENTIAL ;
@@ -1463,6 +1577,10 @@ LEXICON CONDITIONAL
  +Cond+4:češ FINAL1 ;
  +Cond+ConNeg:če FINAL1 ;
 
+
+LEXICON VSUF-IMPRT-13-CONNEG_AD
++Imprt+13+ConNeg:%>u FINAL1 ;
++Pass+PrfPrc:%>um FINAL1 ;
 
 !! !!Suffix series II
 
