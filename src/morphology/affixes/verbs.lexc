@@ -616,8 +616,36 @@ LEXICON V_LÄULLAD
 +V+VAbess:%^VOWL%^CShort%>ǩeânai FINAL1 ;		!WG
 
 
+LEXICON V_JÅÅʹTTED
+!! FORMS
+!! !!(1) +V+Inf: jååʹtted
+!! !!  Ind.Prs.Pl1-Pl2, Ind.Prt.ConNeg
+!! !!  Imprt.Pl1-Pl2-Pl3, ActEss, Actio, PrsPrc, PrfPrc
+!! !!(2) +V+Ind+Prs+Sg3: jååʹtt
+!! !!(3) +V+Ind+Prs+Pl3: tätta
+!! !!(4) +V+Ind+Prt+Pl3: tattu
+!! !!  Ind.Prt.Sg1-Sg2-4
+!! !!(5) +V+Imprt+Sg2: täätt
+!! !!  Ind.Prs.Sg1-Sg2-4-ConNeg
+!! !!  Ind.Prt.Sg3-Pl1-Pl2
+!! !!  Imprt.2.ConNeg
+!! !!  VAbe, GerTemp, GerInstr
+!! !!  Cond-Pot
+!! !!(6) +V+Pot+Sg3: täättež
+!! !!(7) +V+Imprt+Sg3: täättas
+!! !!(8) +V+Imprt+13+ConNeg: tattu
+!! !!   Pass.PrfPrc
 
- 
+!! !!jååʹtted:jåått
++V: VSUF-INF_ED ; !1
++V: VSUF-IND-PRS-SG3_ED ; !2
++V+Ind+Prs+Pl3:%>a FINAL1 ; !3
++V:%^VOWRaise%> VSUF-IND-PRT-PL3_ED ; !4
++V:%^V2VV%^PAL%> VSUF-I-POTKOND_AD ; !5
++V+Pot+Sg3:%^V2VV%>ež   FINAL1 ; !6
++V+Imprt+Sg3:%^V2VV%>as FINAL1 ; !7
++V:%^VOWRaise VSUF-IMPRT-13-CONNEG_ED ; !8
+
  
  
 LEXICON KALMMED
@@ -727,6 +755,38 @@ LEXICON TIETTED
 !+V+VAbess:%^VOWL%^CShort%>kâni FINAL1 ;			!WG
 +V+VAbess:%^VOWL%^CShort%^PAL%>kani FINAL1 ;		!WG
 +V+VAbess:%^VOWL%^CShort%^PAL%>ǩeännai FINAL1 ;		!WG
+
+LEXICON V_VUEʹLǦǦED
+!! FORMS
+!! !!(1) +V+Inf: vueʹlǧǧed
+!! !!  Ind.Prs.Pl1-Pl2, Ind.Prt.ConNeg
+!! !!  Imprt.Pl1-Pl2-Pl3, ActEss, Actio, PrsPrc, PrfPrc
+!! !!(2) +V+Ind+Prs+Sg3: vuâlgg
+!! !!(3) +V+Ind+Prs+Pl3: vueʹlǧǧe
+!! !!(4) +V+Ind+Prt+Pl3: vuõʹlǧǧe
+!! !!  Ind.Prt.Sg1-Sg2-4
+!! !!(5) +V+Imprt+Sg2: vueʹlj
+!! !!  Ind.Prs.Sg1-Sg2-4-ConNeg
+!! !!  Ind.Prt.Sg3-Pl1-Pl2
+!! !!  Imprt.2.ConNeg
+!! !!  VAbe, GerTemp, GerInstr
+!! !!  Cond-Pot
+!! !!(6) +V+Pot+Sg3: vuõʹljež
+!! !!(7) +V+Imprt+Sg3: vuâlǥas
+!! !!(8) +V+Imprt+13+ConNeg: vuõlggu
+!! !!   Pass.PrfPrc
+!! vueʹlǧǧed:vuâlgg
++V:%^PALE%^PAL VSUF-INF_ED ; !1
++V: VSUF-IND-PRS-SG3_ED ; !2
++V+Ind+Prs+Pl3:%^PALE%^PAL%>e FINAL1 ; !3
++V:%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ; !4
++V:%^VOWRaise%^PAL%^CC2C%> VSUF-POTENTIAL_ED ; !5
++V:%^PALE%^PAL%^CC2C%> VSUF-POTENTIAL_ED ; !5
++V:%^CC2C%> VSUF-CONDITIONAL_ED ; !5 ?2 ?7
++V+Pot+Sg3:%^VOWRaise%^PAL%^CC2C%>ež   FINAL1 ; !6
++V+Imprt+Sg3:%^CC2C%>as FINAL1 ; !7
++V:%^VOWRaise VSUF-IMPRT-13-CONNEG_ED ; !8
+
 
 
 !! !! -jed -ted
@@ -1521,9 +1581,23 @@ LEXICON VSUF-INF_AD
 +Imprt+Pl2:%>ad FINAL1 ;
 +ActEss:%>men FINAL1 ;
 +Actio:%>am FINAL1 ;
-+PrsPrc:%>ai FINAL1 ;
+ VSUF-PRSPRC_AD ;
 +PrfPrc:%>am FINAL1 ;
 LEXICON VSUF-IND-PRS-SG3_AD
++Ind+Prs+Sg3: FINAL1 ;
++Imprt+Pl3:%>az FINAL1 ;
+LEXICON VSUF-INF_ED
++Inf:%>ed FINAL1 ;
++Ind+Prs+Pl1:%>ep FINAL1 ;
++Ind+Prs+Pl2:%>veʹted FINAL1 ;
++Ind+Prt+ConNeg:%>am FINAL1 ;
++Imprt+Pl1:%>ep FINAL1 ;
++Imprt+Pl2:%>ed FINAL1 ;
++ActEss:%>men FINAL1 ;
++Actio:%>em FINAL1 ;
+ VSUF-PRSPRC_ED ;
++PrfPrc:%>am FINAL1 ;
+LEXICON VSUF-IND-PRS-SG3_ED
 +Ind+Prs+Sg3: FINAL1 ;
 +Imprt+Pl3:%>az FINAL1 ;
 !!
@@ -1576,15 +1650,15 @@ LEXICON VSUF-I-POTKOND_AD
 +GerTemp:%>een FINAL1 ;
  VSUF-I-POTKOND ;
 
-LEXICON VSUF-I-POTKOND_ED
-+Ind+Prs+Sg1:%>am FINAL1 ;
-+Ind+Prs+Sg2:%>ak FINAL1 ;
-+Ind+Prs+4:%>ât FINAL1 ;
-+Ind+Prs+ConNeg: FINAL1 ;
+LEXICON VSUF-POTENTIAL_ED
 +Ind+Prt+Sg3:%>i FINAL1 ;
 +Ind+Prt+Pl1:%>im FINAL1 ;
 +Ind+Prt+Pl1:%>in FINAL1 ;
 +Ind+Prt+Pl2:%>id FINAL1 ;
+ POTENTIAL ;
+
++Ind+Prs+4:%>et FINAL1 ;
++Ind+Prs+ConNeg: FINAL1 ;
 +Imprt+2+ConNeg: FINAL1 ;
 +VAbess:%>kani FINAL1 ;
 +VAbess:%>ǩeânai FINAL1 ;
@@ -1592,7 +1666,11 @@ LEXICON VSUF-I-POTKOND_ED
 +VAbess:%>ǩani FINAL1 ;
 +GerInstr:%>eeʹl FINAL1 ;
 +GerTemp:%>een FINAL1 ;
- VSUF-I-POTKOND ;
+
+LEXICON VSUF-CONDITIONAL_ED
++Ind+Prs+Sg1:%>am FINAL1 ;
++Ind+Prs+Sg2:%>ak FINAL1 ;
+ CONDITIONAL ;
 
 
 LEXICON VSUF-I-POTKOND
@@ -1629,6 +1707,9 @@ LEXICON VSUF-IMPRT-13-CONNEG_ÂD
 LEXICON VSUF-IMPRT-13-CONNEG_AD
 +Imprt+13+ConNeg:%>u FINAL1 ;
 +Pass+PrfPrc:%>um FINAL1 ;
+LEXICON VSUF-IMPRT-13-CONNEG_ED
++Imprt+13+ConNeg:%>u FINAL1 ;
++Pass+PrfPrc:%>um FINAL1 ;
 
 !! !!Suffix series II
 
@@ -1637,4 +1718,17 @@ LEXICON VSUF-IMPRT-13-CONNEG_AD
 ! Other series
 ! - - - - - -
 
+LEXICON VSUF-PRSPRC_AD
++PrsPrc:ai FINAL1 ;
++PrsPrc+Sg+Nom:ai FINAL1 ;
++PrsPrc+Pl+Nom:%^CC2C%>ai FINAL1 ;
++PrsPrc+Pl+Nom:ai FINAL1 ;
++PrsPrc+Der/MWN: N_PÅÅSSAI ;
+
+LEXICON VSUF-PRSPRC_ED
++PrsPrc:i FINAL1 ;
++PrsPrc+Sg+Nom:i FINAL1 ;
++PrsPrc+Pl+Nom:%^CC2C%>i FINAL1 ;
++PrsPrc+Pl+Nom:i FINAL1 ;
++PrsPrc+Der/MWN: N_JOOʹTTI ;
 
