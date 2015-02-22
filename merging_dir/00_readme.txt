@@ -148,6 +148,8 @@ cleanup of sms-sjd2X data before merging
 ~ in <c name="Skolt"> bedeutet "Variant lemma"
 Skopus ist das Lemma
 
+ ==> TODO
+
 ~ in <c name="Skolt_Cyr"> bedeutet "Variant der kyrillischen Transliteration des Lemmas"
 Jedes Lemma mit Varianten müsste eine ebensolche Anzahl von Varianten in der Transliteration haben
 
@@ -162,7 +164,7 @@ in  <c name="Skolt_Cyr"> ist das dann auch wieder gespiegelt
 
 z.B. <c name="Skolt">loonna|n,-d</c>
       <c name="Skolt_Cyr">ло̄ннa|н,-д</c>
-
+ ==> DONE for <c name="Skolt"></c>
 bedeutet
 
 <c name="Skolt">loonnan</c>
@@ -184,7 +186,7 @@ bedeutet
 Ich kann es in der Quelldatei korrigieren.
 
 , (Komma) in allen anderen Felder kann ignoriert werden. Es gibt hier keine Regeln.
-
+ ==> DONE
 ===
 
 4. für ( oder ) (Klammern) in <c name="Skolt"> gibt es nur sehr wenige Instanzen. Am einfachsten wäre das manuell in der Quelldatei zu korrigieren.
@@ -199,12 +201,5 @@ wobei die nicht eingeklammerte Form wie folgt in die GramInfo verschoben werden 
 
 <c name="Skolt">čââʹlmteʹm</c>
 <c name="GramInfo_Skolt">čââʹlmteʹm(es)</c>
-
-===
-
-5. . (Punk) in <c name="Skolt"> hat nur eine Instanz:
-
-<c name="Skolt">dno.</c>
-
-Das Lemma ist eine Abkürzung und soll so bleiben.
+ ==> DONE
 
