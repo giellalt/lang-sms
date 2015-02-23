@@ -148,7 +148,7 @@ cleanup of sms-sjd2X data before merging
 ~ in <c name="Skolt"> bedeutet "Variant lemma"
 Skopus ist das Lemma
 
- ==> TODO
+ ==> DONE
 
 ~ in <c name="Skolt_Cyr"> bedeutet "Variant der kyrillischen Transliteration des Lemmas"
 Jedes Lemma mit Varianten müsste eine ebensolche Anzahl von Varianten in der Transliteration haben
@@ -202,4 +202,15 @@ wobei die nicht eingeklammerte Form wie folgt in die GramInfo verschoben werden 
 <c name="Skolt">čââʹlmteʹm</c>
 <c name="GramInfo_Skolt">čââʹlmteʹm(es)</c>
  ==> DONE
+
+=======
+merging
+=======
+
+1. check overlap between sms-sjd2X and sms2X_src
+   ==> merge
+
+2. check the overlap between Michael's and Jack's data
+   ==> merge the intersection set
+
 
