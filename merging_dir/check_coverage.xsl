@@ -30,7 +30,7 @@
   
   <xsl:param name="inDir" select="'sms2X_src'"/>
   <xsl:param name="paraDir" select="'sms-sjd2X_src'"/>
-  <xsl:param name="cIndex" select="'03'"/>
+  <xsl:param name="cIndex" select="'04'"/>
   <xsl:param name="outDir" select="concat('_merged_stuff_', $cIndex)"/>
   <xsl:param name="this" select="base-uri(document(''))"/>
   <xsl:variable name="this_name" select="(tokenize($this, '/'))[last()]"/>
@@ -93,9 +93,18 @@
 	    </xsl:variable>
 
 	    <xsl:for-each select="$para_e/e">
-	      <l_p id="{./@id}">
+	      <xsl:variable name="c_id" select="./@id"/>
+	      <l_p id="{$c_id}">
 		<xsl:value-of select="./lg/l"/>
 	      </l_p>
+	      <xsl:for-each select="./lg/variants/*">
+		<xsl:element name="{./local-name()}">
+		  <xsl:attribute name="id">
+		    <xsl:value-of select="$c_id"/>
+		  </xsl:attribute>
+		  <xsl:value-of select="."/>
+		</xsl:element>
+	      </xsl:for-each>
 	    </xsl:for-each>
 	  </e>
 	</xsl:for-each>
