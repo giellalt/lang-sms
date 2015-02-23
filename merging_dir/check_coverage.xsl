@@ -30,7 +30,7 @@
   
   <xsl:param name="inDir" select="'sms2X_src'"/>
   <xsl:param name="paraDir" select="'sms-sjd2X_src'"/>
-  <xsl:param name="cIndex" select="'04'"/>
+  <xsl:param name="cIndex" select="'07'"/>
   <xsl:param name="outDir" select="concat('_merged_stuff_', $cIndex)"/>
   <xsl:param name="this" select="base-uri(document(''))"/>
   <xsl:variable name="this_name" select="(tokenize($this, '/'))[last()]"/>
@@ -84,14 +84,19 @@
 
 	  <e>
 	    <l id="{./@id}">
-	      <xsl:copy-of copy-namespaces="no" select="./lg/l/@*"/>
+	      <xsl:copy-of copy-namespaces="no" select="./lg/l/@pos"/>
 	      <xsl:value-of select="normalize-space(./lg/l)"/>
 	    </l>
 	    
 	    <xsl:variable name="para_e">
 	      <xsl:copy-of select="$parallelDir//e[lg/l[. = $current_l]]"/>
+	      <xsl:copy-of select="$parallelDir//e[lg/variants/*[. = $current_l]]"/>
 	    </xsl:variable>
 
+	    <!--variants_overlap>
+	      <xsl:copy-of select="$parallelDir//e[lg/variants/*[. = $current_l]]"/>
+	    </variants_overlap-->
+	    
 	    <xsl:for-each select="$para_e/e">
 	      <xsl:variable name="c_id" select="./@id"/>
 	      <l_p id="{$c_id}">
