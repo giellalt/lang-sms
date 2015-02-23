@@ -72,6 +72,8 @@
 		  <xsl:value-of select="./c[@name='Skolt']"/>
 		</l>
 
+		<!-- take into account these issues: strings to be
+		     used for overlap calculation -->
 		<!-- var= -->
 		<!-- attr= -->
 		<!-- var="šoorab ~ šõõrab" -->
