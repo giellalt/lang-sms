@@ -71,13 +71,28 @@
 		<l>
 		  <xsl:value-of select="./c[@name='Skolt']"/>
 		</l>
-
 		<!-- take into account these issues: strings to be
 		     used for overlap calculation -->
 		<!-- var= -->
-		<!-- attr= -->
 		<!-- var="šoorab ~ šõõrab" -->
+		<!-- attr= -->
+		<!-- pipe= -->
 
+		<xsl:variable name="all_vars">
+		  <variants>
+		    <xsl:for-each
+			select="tokenize(./c[@name='Skolt']/@var, '~')">
+		      <l_var>
+			<xsl:value-of select="normalize-space(.)"/>
+		      </l_var>
+		    </xsl:for-each>
+		  </variants>
+		</xsl:variable>
+		
+		<xsl:if test="$all_vars/variants/*">
+		  <xsl:copy-of select="$all_vars/variants"/>
+		</xsl:if>
+		
 	      </lg>
 	      <mg>
 		<tg xml:lang="fin">
