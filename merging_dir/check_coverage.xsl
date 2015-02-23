@@ -28,9 +28,9 @@
   <xsl:output method="text" name="txt"
 	      encoding="UTF-8"/>
   
-  <xsl:param name="inDir" select="'cut_ta'"/>
-  <xsl:param name="paraDir" select="'cut_ai'"/>
-  <xsl:param name="cIndex" select="'01'"/>
+  <xsl:param name="inDir" select="'sms2X_src'"/>
+  <xsl:param name="paraDir" select="'sms-sjd2X_src'"/>
+  <xsl:param name="cIndex" select="'03'"/>
   <xsl:param name="outDir" select="concat('_merged_stuff_', $cIndex)"/>
   <xsl:param name="this" select="base-uri(document(''))"/>
   <xsl:variable name="this_name" select="(tokenize($this, '/'))[last()]"/>
@@ -53,7 +53,7 @@
 	  <xsl:with-param name="name" select="$current_file"/>
 	  <xsl:with-param name="ie" select="'xml'"/>
 	  <xsl:with-param name="relPath" select="$current_location"/>
-	  <xsl:with-param name="parallelDir" select="document(concat($paraDir, '/', $current_file, '.xml'))"/>
+	  <xsl:with-param name="parallelDir" select="document(concat($paraDir, '/', 'sms2fin-eng.xml'))"/>
 	</xsl:call-template>
       </xsl:for-each>
     
@@ -83,17 +83,20 @@
 	  </xsl:message> 
 
 	  <e>
-	    <xsl:copy-of select="./@*"/>
-	    <lg>
-	      <l>
-		<xsl:copy-of copy-namespaces="no" select="./lg/l/@*"/>
-		<xsl:value-of select="normalize-space(./lg/l)"/>
-	      </l>
-	      <pl>
-	      <xsl:copy-of copy-namespaces="no" select="$parallelDir//e/lg/l[. = $current_l]"/>
-	      </pl>
-	      <xsl:copy-of copy-namespaces="no" select="./lg/*[not(local-name() = 'l')]"/>
-	    </lg>
+	    <l id="{./@id}">
+	      <xsl:copy-of copy-namespaces="no" select="./lg/l/@*"/>
+	      <xsl:value-of select="normalize-space(./lg/l)"/>
+	    </l>
+	    
+	    <xsl:variable name="para_e">
+	      <xsl:copy-of select="$parallelDir//e[lg/l[. = $current_l]]"/>
+	    </xsl:variable>
+
+	    <xsl:for-each select="$para_e/e">
+	      <l_p id="{./@id}">
+		<xsl:value-of select="./lg/l"/>
+	      </l_p>
+	    </xsl:for-each>
 	  </e>
 	</xsl:for-each>
       </r>
