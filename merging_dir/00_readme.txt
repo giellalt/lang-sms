@@ -203,20 +203,6 @@ wobei die nicht eingeklammerte Form wie folgt in die GramInfo verschoben werden 
 <c name="GramInfo_Skolt">čââʹlmteʹm(es)</c>
  ==> DONE
 
-
-Check that:
-merging_dir>g '?' 0_pure_sms/sms2fin-eng.txt 
-kâʹll?
-ǩii?
-koʹst?
-koʹst?
-kuäʹss?
-kuus?
-määʹnn?
-måkam?
-mii?
-
-
 =======
 merging
 =======
