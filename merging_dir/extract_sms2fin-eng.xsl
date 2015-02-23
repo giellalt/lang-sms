@@ -103,7 +103,11 @@
 			</l_pipe>
 		      </xsl:for-each>
 		    </xsl:if>
-		    
+		    <xsl:if test="./c[@name='Skolt']/@attr">
+		      <l_attr>
+			<xsl:value-of select="./c[@name='Skolt']/@attr"/>
+		      </l_attr>
+		    </xsl:if>
 		  </variants>
 		</xsl:variable>
 		
