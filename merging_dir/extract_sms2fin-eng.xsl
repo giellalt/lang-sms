@@ -71,6 +71,11 @@
 		<l>
 		  <xsl:value-of select="./c[@name='Skolt']"/>
 		</l>
+
+		<!-- var= -->
+		<!-- attr= -->
+		<!-- var="šoorab ~ šõõrab" -->
+
 	      </lg>
 	      <mg>
 		<tg xml:lang="fin">
