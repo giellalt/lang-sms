@@ -86,6 +86,24 @@
 			<xsl:value-of select="normalize-space(.)"/>
 		      </l_var>
 		    </xsl:for-each>
+		    <xsl:if test="./c[@name='Skolt']/@pipe">
+		      <xsl:variable name="current_pipe" select="./c[@name='Skolt']/@pipe"/>
+		      <xsl:variable name="right"
+				    select="normalize-space(substring-before($current_pipe,
+					    '|'))"/>
+		      <xsl:variable name="left_seq"
+				    select="substring-after($current_pipe,
+					    ',')"/>
+		      <xsl:for-each
+			  select="tokenize($left_seq, ',')">
+			<l_pipe>
+			  <xsl:value-of select="concat($right,
+						normalize-space(translate(.,
+						'-', '')))"/>
+			</l_pipe>
+		      </xsl:for-each>
+		    </xsl:if>
+		    
 		  </variants>
 		</xsl:variable>
 		
