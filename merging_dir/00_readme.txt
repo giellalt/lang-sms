@@ -204,13 +204,13 @@ wobei die nicht eingeklammerte Form wie folgt in die GramInfo verschoben werden 
  ==> DONE
 
 =======
-merging
+merging: later, when the overlapping has been done
 =======
 
 1. check overlap between sms-sjd2X and sms2X_src
-   ==> merge
+   ==> DONE 
 
 2. check the overlap between Michael's and Jack's data
-   ==> merge the intersection set
+   ==> TODO
 
 
