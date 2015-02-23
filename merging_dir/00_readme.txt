@@ -206,8 +206,17 @@ wobei die nicht eingeklammerte Form wie folgt in die GramInfo verschoben werden 
 
 Check that:
 <c name="Skolt" var="jõkkläbǯǯ ~ -läʹbǯǯ"
-<c name="Skolt" pipe="luâđjiäʹllem|vueʹǩǩ, ~ -ǩeäinn"
-<c name="Skolt" comma="jiijjad,-s"
+
+merging_dir>g '?' 0_pure_sms/sms2fin-eng.txt 
+kâʹll?
+ǩii?
+koʹst?
+koʹst?
+kuäʹss?
+kuus?
+määʹnn?
+måkam?
+mii?
 
 
 =======
