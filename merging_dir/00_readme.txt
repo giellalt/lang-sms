@@ -203,6 +203,13 @@ wobei die nicht eingeklammerte Form wie folgt in die GramInfo verschoben werden 
 <c name="GramInfo_Skolt">čââʹlmteʹm(es)</c>
  ==> DONE
 
+
+Check that:
+<c name="Skolt" var="jõkkläbǯǯ ~ -läʹbǯǯ"
+<c name="Skolt" pipe="luâđjiäʹllem|vueʹǩǩ, ~ -ǩeäinn"
+<c name="Skolt" comma="jiijjad,-s"
+
+
 =======
 merging
 =======
