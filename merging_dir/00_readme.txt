@@ -215,12 +215,12 @@ merging: later, when the overlapping has been done
 
 ID legend for the current sms data:
 
-(a) first data set used at Giellatekno: gt_part-of-speech_NUMBER
+(a) first data set used at Giellatekno: gt_POS_NUMBER
     <e id="gt_A_70">
 
-(b) Michael's data in Filemakes format
+(b) Michael's data in Filemakes format: fm_NUMBER
     <e id="fm_28">
 
-(c) Jack's data from Satu Moshnikoff list
+(c) Jack's data from Satu Moshnikoff list: sml_NUMBER
     <e id="sml_34083">
 
