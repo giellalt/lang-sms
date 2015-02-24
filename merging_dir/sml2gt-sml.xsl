@@ -35,7 +35,7 @@
               indent="no"/>      
   
   <xsl:param name="inDir" select="'mnk_data_inc'"/>
-  <xsl:param name="cIndex" select="'02'"/>
+  <xsl:param name="cIndex" select="'06'"/>
   <xsl:param name="outDir" select="concat('_mnk-gt_', $cIndex)"/>
   <xsl:variable name="of" select="'xml'"/>
   <xsl:variable name="e" select="$of"/>
@@ -73,21 +73,72 @@
 		<l>
 		  <xsl:value-of select="./p[./@id='6']"/>
 		</l>
-		<xsl:variable name="c_pv">
-		  <pv>
-		    <xsl:copy-of
-			select="./p[./@id='6']/@*[not(contains($exclude_flags, concat('__',local-name(),'__')))]"/>
-		  </pv>
+
+		<xsl:variable name="all_variants">
+		  <xsl:variable name="c_pv">
+		    <pv>
+		      <xsl:copy-of
+			  select="./p[./@id='6']/@*[not(contains($exclude_flags, concat('__',local-name(),'__')))]"/>
+		    </pv>
+		  </xsl:variable>
+		  <xsl:copy-of select="$c_pv"/>
+
+		  <xsl:variable name="mixed_variants">
+		    <xsl:for-each select="$c_pv/pv/@*">
+		      <xsl:element name="{concat('l_', local-name())}">
+			<xsl:value-of select="."/>
+		      </xsl:element>
+		    </xsl:for-each>
+		  </xsl:variable>
+
+		  <xsl:for-each select="$mixed_variants/*">
+		    <xsl:if test="local-name() = 'l_var'">
+		      <xsl:for-each select="tokenize(., '~')">
+			<l_var>
+			  <xsl:value-of select="normalize-space(.)"/>
+			</l_var>
+		      </xsl:for-each>
+		    </xsl:if>
+		    <xsl:if test="local-name() = 'l_syn'">
+		      <xsl:for-each select="tokenize(., ',')">
+			<xsl:for-each select="tokenize(., '~')">
+			  <xsl:for-each select="(tokenize(., ' \('))[1]">
+			    <xsl:if test="contains(.,'(')">
+			      <l_syn>
+				<xsl:value-of select="normalize-space(translate(translate(.,'(',''),')',''))"/>
+			      </l_syn>
+			      <l_syn>
+				<xsl:value-of select="normalize-space(concat(substring-before(.,'('),substring-after(.,')')))"/>
+			      </l_syn>
+			    </xsl:if>
+			    
+			    <xsl:if test="not(contains(.,'('))">
+			      <xsl:if test="not(contains(.,')'))">
+				<l_syn>
+				  <xsl:value-of select="normalize-space(.)"/>
+				</l_syn>
+			      </xsl:if>
+			    </xsl:if>
+			  </xsl:for-each>
+			</xsl:for-each>
+		      </xsl:for-each>
+		    </xsl:if>
+		    
+
+		  </xsl:for-each>
+		  
 		</xsl:variable>
 		
-		<xsl:if test="count($c_pv/pv/@*) &gt; 0">
+		<xsl:if test="count($all_variants/*[starts-with(local-name(),'l')]) &gt; 0">
 		  <variants>
-		    <attr>
+		    <xsl:copy-of select="$all_variants"/>
+		    
+		    <!--attributes>
 		      <xsl:for-each select="$c_pv/pv/@*">
 			<xsl:element name="{concat('xyz_', local-name())}"/>
 		      </xsl:for-each>
-		    </attr>
-		    <xsl:copy-of select="$c_pv/pv"/>
+		    </attributes-->
+
 		  </variants>
 		</xsl:if>
 	      </lg>
