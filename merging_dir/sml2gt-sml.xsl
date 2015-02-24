@@ -35,7 +35,7 @@
               indent="no"/>      
   
   <xsl:param name="inDir" select="'mnk_data_inc'"/>
-  <xsl:param name="cIndex" select="'01'"/>
+  <xsl:param name="cIndex" select="'03'"/>
   <xsl:param name="outDir" select="concat('_mnk-gt_', $cIndex)"/>
   <xsl:variable name="of" select="'xml'"/>
   <xsl:variable name="e" select="$of"/>
@@ -74,7 +74,10 @@
 		</l>
 		<xsl:if test="count(./p[./@id='6']/@*) &gt; 1">
 		  <variants>
-		    <xsl:copy-of select="./p[./@id='6']"/>
+		    <pv>
+		      <xsl:copy-of select="./p[./@id='6']/@*[not(local-name()='id')]"/>
+		      <!--xsl:value-of select="./p[./@id='6']"/-->
+		    </pv>
 		  </variants>
 		</xsl:if>
 	      </lg>
