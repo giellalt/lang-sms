@@ -213,4 +213,14 @@ merging: later, when the overlapping has been done
 2. check the overlap between Michael's and Jack's data
    ==> TODO
 
+ID legend for the current sms data:
+
+(a) first data set used at Giellatekno: gt_part-of-speech_NUMBER
+    <e id="gt_A_70">
+
+(b) Michael's data in Filemakes format
+    <e id="fm_28">
+
+(c) Jack's data from Satu Moshnikoff list
+    <e id="sml_34083">
 
