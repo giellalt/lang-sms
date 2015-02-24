@@ -73,14 +73,15 @@
 		<l>
 		  <xsl:value-of select="./p[./@id='6']"/>
 		</l>
-		<xsl:if test="count(./p[./@id='6']/@*) &gt; 1">
+		<xsl:variable name="c_pv">
+		  <pv>
+		    <xsl:copy-of
+			select="./p[./@id='6']/@*[not(contains($exclude_flags, concat('__',local-name(),'__')))]"/>
+		  </pv>
+		</xsl:variable>
+		
+		<xsl:if test="count($c_pv/pv/@*) &gt; 0">
 		  <variants>
-		    <xsl:variable name="c_pv">
-		      <pv>
-			<xsl:copy-of
-			    select="./p[./@id='6']/@*[not(contains($exclude_flags, local-name()))]"/>
-		      </pv>
-		    </xsl:variable>
 		    <attr>
 		      <xsl:for-each select="$c_pv/pv/@*">
 			<xsl:element name="{concat('xyz_', local-name())}"/>
