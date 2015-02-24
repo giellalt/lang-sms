@@ -35,7 +35,7 @@
               indent="no"/>      
   
   <xsl:param name="inDir" select="'mnk_data_inc'"/>
-  <xsl:param name="cIndex" select="'04'"/>
+  <xsl:param name="cIndex" select="'02'"/>
   <xsl:param name="outDir" select="concat('_mnk-gt_', $cIndex)"/>
   <xsl:variable name="of" select="'xml'"/>
   <xsl:variable name="e" select="$of"/>
@@ -44,6 +44,7 @@
   <xsl:variable name="sr" select="'\*'"/>
   <xsl:variable name="rarrow" select="'▸'"/>
   <xsl:variable name="tb" select="'&#009;'"/>
+  <xsl:variable name="exclude_flags" select="'__id__b_info__nr___b_info_left__pl_form__nr_form__nr_case_form__case__'"/>
   
   <xsl:template match="/" name="main">
 
@@ -76,7 +77,8 @@
 		  <variants>
 		    <xsl:variable name="c_pv">
 		      <pv>
-			<xsl:copy-of select="./p[./@id='6']/@*[not(local-name()='id')]"/>
+			<xsl:copy-of
+			    select="./p[./@id='6']/@*[not(contains($exclude_flags, local-name()))]"/>
 		      </pv>
 		    </xsl:variable>
 		    <attr>
