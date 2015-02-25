@@ -203,6 +203,13 @@ wobei die nicht eingeklammerte Form wie folgt in die GramInfo verschoben werden 
 <c name="GramInfo_Skolt">čââʹlmteʹm(es)</c>
  ==> DONE
 
+=====================
+ - TODO:
+  1. systematic check of synonyms and variants vs. lemma
+     if sORv ends or starts with DASH and lemma not
+     ==> filter and send to Jack for manual correction 
+
+
 =======
 merging: later, when the overlapping has been done
 =======
@@ -223,4 +230,6 @@ ID legend for the current sms data:
 
 (c) Jack's data from Satu Moshnikoff list: sml_NUMBER
     <e id="sml_34083">
+
+
 
