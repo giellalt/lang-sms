@@ -35,7 +35,7 @@
               indent="no"/>      
   
   <xsl:param name="inDir" select="'mnk_data_inc'"/>
-  <xsl:param name="cIndex" select="'06'"/>
+  <xsl:param name="cIndex" select="'07'"/>
   <xsl:param name="outDir" select="concat('_mnk-gt_', $cIndex)"/>
   <xsl:variable name="of" select="'xml'"/>
   <xsl:variable name="e" select="$of"/>
@@ -94,9 +94,11 @@
 		  <xsl:for-each select="$mixed_variants/*">
 		    <xsl:if test="local-name() = 'l_var'">
 		      <xsl:for-each select="tokenize(., '~')">
-			<l_var>
-			  <xsl:value-of select="normalize-space(.)"/>
-			</l_var>
+			<xsl:for-each select="(tokenize(., ' \('))[1]">
+			  <l_var>
+			    <xsl:value-of select="normalize-space(.)"/>
+			  </l_var>
+			</xsl:for-each>
 		      </xsl:for-each>
 		    </xsl:if>
 		    <xsl:if test="local-name() = 'l_syn'">
