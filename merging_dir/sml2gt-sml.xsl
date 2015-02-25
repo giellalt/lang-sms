@@ -35,7 +35,7 @@
               indent="no"/>      
   
   <xsl:param name="inDir" select="'mnk_data_inc'"/>
-  <xsl:param name="cIndex" select="'02'"/>
+  <xsl:param name="cIndex" select="'01'"/>
   <xsl:param name="outDir" select="concat('_mnk-gt_', $cIndex)"/>
   <xsl:variable name="of" select="'xml'"/>
   <xsl:variable name="e" select="$of"/>
@@ -81,7 +81,7 @@
 			  select="./p[./@id='6']/@*[not(contains($exclude_flags, concat('__',local-name(),'__')))]"/>
 		    </pv>
 		  </xsl:variable>
-		  <xsl:copy-of select="$c_pv"/>
+		  <!--xsl:copy-of select="$c_pv"/-->
 
 		  <xsl:variable name="mixed_variants">
 		    <xsl:for-each select="$c_pv/pv/@*">
@@ -95,12 +95,24 @@
 		    <xsl:if test="local-name() = 'l_var'">
 		      <xsl:for-each select="tokenize(., '~')">
 			<xsl:for-each select="(tokenize(., ' \('))[1]">
-			  <l_var>
-			    <xsl:value-of select="normalize-space(.)"/>
-			  </l_var>
+			  <xsl:if test="contains(.,'|')">
+			    <xsl:variable name="head" select="substring-before(.,'|')"/>
+			    <xsl:variable name="tail" select="substring-after(.,'|')"/>
+			    <xsl:for-each select="tokenize($tail, ',')">
+			      <l_var_pipe>
+				<xsl:value-of select="normalize-space(concat(normalize-space($head),normalize-space(translate(.,'-',''))))"/>
+			      </l_var_pipe>
+			    </xsl:for-each>
+			  </xsl:if>
+			  <xsl:if test="not(contains(.,'|'))">
+			    <l_var>
+			      <xsl:value-of select="normalize-space(.)"/>
+			    </l_var>
+			  </xsl:if>
 			</xsl:for-each>
 		      </xsl:for-each>
 		    </xsl:if>
+
 		    <xsl:if test="local-name() = 'l_syn'">
 		      <xsl:for-each select="tokenize(., ',')">
 			<xsl:for-each select="tokenize(., '~')">
@@ -138,7 +150,17 @@
 		      </l_d_form>
 		    </xsl:if>
 		    
+		    <xsl:if test="local-name() = 'l_right_part'">
+		      <l_right_part>
+			<xsl:value-of select="normalize-space(.)"/>
+		      </l_right_part>
+		    </xsl:if>
 		    
+		    <xsl:if test="local-name() = 'l_abbr'">
+		      <l_abbr>
+			<xsl:value-of select="normalize-space(translate(translate(.,'[',''),']',''))"/>
+		      </l_abbr>
+		    </xsl:if>
 		    
 		  </xsl:for-each>
 		  
