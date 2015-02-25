@@ -357,3 +357,27 @@ Todo: manual check by Jack
       <p id="17">1.2</p>
    </e>
 
+4. What about this string 'juʹna - leʹbe'?
+
+   <e id="sml_11636">
+      <p id="1">5012</p>
+      <p id="2">joko - tai</p>
+      <p id="3"/>
+      <p id="4"/>
+      <p id="5">ebʹel</p>
+      <p id="6" syn="juʹna - leʹbe">leʹbe - avi</p>
+      <p id="7"/>
+      <p id="8"/>
+      <p id="9"/>
+      <p id="10"/>
+      <p id="11"/>
+      <p id="12"/>
+      <p id="13"/>
+      <p id="14"/>
+      <p id="15"/>
+      <p id="16"/>
+      <p id="17">1000</p>
+   </e>
+
+
+
