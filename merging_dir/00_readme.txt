@@ -209,6 +209,8 @@ wobei die nicht eingeklammerte Form wie folgt in die GramInfo verschoben werden 
      if sORv ends or starts with DASH and lemma not
      ==> filter and send to Jack for manual correction 
 
+  2. systematic check of the inconsistent attr-marking:
+     sometimes as "(#STRING)", sometimes as "STRING (attr.)"
 
 =======
 merging: later, when the overlapping has been done
@@ -230,6 +232,4 @@ ID legend for the current sms data:
 
 (c) Jack's data from Satu Moshnikoff list: sml_NUMBER
     <e id="sml_34083">
-
-
 
