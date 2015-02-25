@@ -233,3 +233,127 @@ ID legend for the current sms data:
 (c) Jack's data from Satu Moshnikoff list: sml_NUMBER
     <e id="sml_34083">
 
+
+===================================
+Todo: manual check by Jack
+ - please correct them or provide the information needed in this file
+===================================
+1. Why kind of separator is ';'?
+
+1.1
+<l_syn>čiõlǥeed; seʹlvted</l_syn>
+
+   <e id="sml_1968">
+      <p id="1">21761</p>
+      <p id="2">selvittää</p>
+      <p id="3"/>
+      <p id="4"/>
+      <p id="5">deegglõič</p>
+      <p id="6" syn="čiõʹlǧǧeed, čiõlǥeed; seʹlvted, seʹlvveed ~ seʹlvvjed">čiõlggeed</p>
+      <p id="7"/>
+      <p id="8"/>
+      <p id="9"/>
+      <p id="10"/>
+      <p id="11"/>
+      <p id="12"/>
+      <p id="13">verbi</p>
+      <p id="14"/>
+      <p id="15"/>
+      <p id="16"/>
+      <p id="17">800</p>
+   </e>
+
+1.2
+<l_syn>čiõlǥumuš; seʹlvtumuš</l_syn>
+
+   <e id="sml_1979">
+      <p id="1">21759</p>
+      <p id="2">selvittäminen</p>
+      <p id="3"/>
+      <p id="4"/>
+      <p id="5">šumugglõič</p>
+      <p id="6" syn="čiõlǥumuš; seʹlvtumuš">čiõlggumuš</p>
+      <p id="7"/>
+      <p id="8">#NAME?</p>
+      <p id="9">#NAME?</p>
+      <p id="10"/>
+      <p id="11"/>
+      <p id="12"/>
+      <p id="13"/>
+      <p id="14"/>
+      <p id="15"/>
+      <p id="16"/>
+      <p id="17">400</p>
+   </e>
+
+1.3
+<l_syn>mâʹmmet; di mâʹmmet di mâʹmmet</l_syn>
+
+   <e id="sml_27100">
+      <p id="1">27993</p>
+      <p id="2">verran: sen ja sen verran</p>
+      <p id="3"/>
+      <p id="4"/>
+      <p id="5">temmʹât</p>
+      <p id="6" syn="mâʹmmet; di mâʹmmet di mâʹmmet">tâʹmmet tâʹmmet</p>
+      <p id="7"/>
+      <p id="8"/>
+      <p id="9"/>
+      <p id="10"/>
+      <p id="11"/>
+      <p id="12"/>
+      <p id="13"/>
+      <p id="14"/>
+      <p id="15"/>
+      <p id="16"/>
+      <p id="17">1000</p>
+   </e>
+
+2. What is the role of the question mark here?
+<l_syn>kåʹllruõss ?</l_syn>
+
+   <e id="sml_15295">
+      <p id="1">20983</p>
+      <p id="2">rätvänä</p>
+      <p id="3"/>
+      <p id="4">Potentilla erecta</p>
+      <p id="5">ssʹäärmmrõusttsõljllen</p>
+      <p id="6" b_info="(-rääʹzz, -rässa)" syn="kåʹllruõss ?">nelljlõsttsuõrmmrääʹss</p>
+      <p id="7"/>
+      <p id="8"/>
+      <p id="9"/>
+      <p id="10"/>
+      <p id="11"/>
+      <p id="12"/>
+      <p id="13">kasvi</p>
+      <p id="14"/>
+      <p id="15"/>
+      <p id="16"/>
+      <p id="17">1.113</p>
+   </e>
+
+3. What is the role of '- ' here?
+<l_syn>čiõkkâm- hautautua</l_syn>
+
+   <e id="sml_33898">
+      <p id="1">2708</p>
+      <p id="2">hautaustoimisto</p>
+      <p id="3"/>
+      <p id="4"/>
+      <p id="5">râtnookmeeddʹuä</p>
+      <p id="6"
+         b_info="(-konttâr, -konttra)"
+         syn="čiõkkâm- hautautua (esine)">äuʹddeemkoontâr</p>
+      <p id="7"/>
+      <p id="8"/>
+      <p id="9"/>
+      <p id="10"/>
+      <p id="11"/>
+      <p id="12">teâddjed</p>
+      <p id="13"/>
+      <p id="14"/>
+      <p id="15"/>
+      <p id="16"/>
+      <p id="17">1.2</p>
+   </e>
+
