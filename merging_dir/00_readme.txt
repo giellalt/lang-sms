@@ -310,6 +310,7 @@ Todo: manual check by Jack
    </e>
 
 2. What is the role of the question mark here?
+2.1
 <l_syn>kåʹllruõss ?</l_syn>
 
    <e id="sml_15295">
@@ -330,6 +331,29 @@ Todo: manual check by Jack
       <p id="15"/>
       <p id="16"/>
       <p id="17">1.113</p>
+   </e>
+
+2.2
+nõđđad ?
+
+   <e id="sml_16386">
+      <p id="1">27600</p>
+      <p id="2">varttaa</p>
+      <p id="3">kirves, puukko tms.</p>
+      <p id="4"/>
+      <p id="5">deeđđõn</p>
+      <p id="6" var="nõđđad ?">nõđđeed</p>
+      <p id="7"/>
+      <p id="8"/>
+      <p id="9"/>
+      <p id="10"/>
+      <p id="11"/>
+      <p id="12"/>
+      <p id="13">verbi</p>
+      <p id="14"/>
+      <p id="15"/>
+      <p id="16"/>
+      <p id="17">800</p>
    </e>
 
 3. What is the role of '- ' here?
