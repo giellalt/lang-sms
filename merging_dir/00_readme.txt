@@ -227,6 +227,12 @@ merging: later, when the overlapping has been done
 3. split Jack's data into open and closed based on the overlap check
    ==> DONE
 
+4. unified data: put together data set in different formats for the
+   ease of merging work
+   ==> DONE
+ 
+5. merging: semi-manually 
+  ==> TODO
 
 ID legend for the current sms data:
 
@@ -241,7 +247,7 @@ ID legend for the current sms data:
 
 
 ===================================
-Todo: manual check by Jack
+Todo: manual check by Jack (still waiting for clarification)
  - please correct them or provide the information needed in this file
 ===================================
 1. Why kind of separator is ';'?
@@ -408,6 +414,3 @@ nõđđad ?
       <p id="16"/>
       <p id="17">1000</p>
    </e>
-
-
-
