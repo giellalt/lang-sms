@@ -225,7 +225,7 @@ merging: later, when the overlapping has been done
    - there are 8416 entries in the fin2ms part that can be merged with the free data set
 
 3. split Jack's data into open and closed based on the overlap check
-   ==> TODO
+   ==> DONE
 
 
 ID legend for the current sms data:
