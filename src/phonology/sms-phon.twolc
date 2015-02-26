@@ -186,7 +186,7 @@ DiphthwithCC = [k:ǥ k:ǥ|s:z s:z|š:ž š:ž|c:ʒ c:ʒ|č:j č:j|m m:0|v v:0|đ
 
 !! preceded by two vowels
 !! {{{
-CC2CforPrecedingVV = [k:ǥ k:ǥ|ǩ:j ǩ:j|s:z s:z|š:ž š:ž|c:ʒ c:ʒ|č:j č:j|m m:0|v v:0|đ đ:0|n n:0|l l:0|p:v p:0|t:đ t:0|r r:0] ; !!= * @CODE@ 
+CC2CforPrecedingVV = [k:ǥ k:ǥ|k:j k:j|ǩ:j ǩ:j|ǩ:ǥ ǩ:ǥ|s:z s:z|š:ž š:ž|c:ʒ c:ʒ|č:j č:j|m m:0|v v:0|đ đ:0|n n:0|l l:0|p:v p:0|t:đ t:0|r r:0] ; !!= * @CODE@ 
 !! }}}
 
 !! preceded by one vowel Vx=>VxVx påll=>pååll
@@ -267,7 +267,7 @@ BetweenStemAndPALNo = [( %^VV2V: |%^V2VV:) (%^VOWLower:|%^VOWRaise:) (%^PALÄ:|%
 ! [([%^St2XSt:|%^St2W:|%^XSt2St:|%^XSt2W:|%^W2St:|%^W2XSt:]|[%^VOWSH:|%^VOWXSH:] (%^CLong:)|[%^VOWL:|%^VOWXL:] (%^FRICG:) (%^CShort:)) (%^VOWLower:|%^VOWRaise:) (%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) (X3:)] ;
 
 !! possible triggers before PALE PALÄ
-PrecedePALAllo = [( %^VV2V: )] ;
+BetweenStemAndPALAllo = [( %^VV2V: )] ;
 ![([%^St2XSt:|%^St2W:|%^XSt2St:|%^XSt2W:|%^W2St:|%^W2XSt:]|[%^VOWSH:|%^VOWXSH:] (%^CLong:)|[%^VOWL:|%^VOWXL:] (%^FRICG:) (%^CShort:)) ] ; 
 
 !! possible triggers between VowHeight and word end
@@ -683,7 +683,7 @@ Rules
 !! !Vowel Palatalization
 "diphthong allophonic realization in palatalization u å:e"
 !! __@RULENAME@__ - deriving 
- å:e <=> u _ :ʹ  [Cns:+|Cns:+ 0:%ˈ Cns:+] PrecedePALAllo %^PALE: %^PAL: ;
+ å:e <=> u _ :ʹ  [Cns:+|Cns:+ 0:%ˈ Cns:+] BetweenStemAndPALAllo %^PALE: %^PAL: ;
 !€# puå0v0v%^St2XSt%^PALE%^PAL%>e
 !€# pueʹvˈv0000e
 
@@ -906,13 +906,13 @@ Rules
 
 "Even-syllabic nouns, for â:e"
 !! __@RULENAME@__ -  ǩiâpp:ǩieʹpˈpe
- â:e <=> i _ :ʹ [Cns:+|Cns:+ 0:%ˈ Cns:+] PrecedePALAllo %^PALE: %^PAL: ;
+ â:e <=> i _ :ʹ [Cns:+|Cns:+ 0:%ˈ Cns:+] BetweenStemAndPALAllo %^PALE: %^PAL: ;
 !! +N+Sg+Ill
 !€# miâ0rr%^PALE%^PAL%>e
 !€0 mieʹrr000e
 !€# piâ0ss%^PALE%^PAL
 !€0 pieʹss00
-      u _ (:ʹ) [Cns:+|Cns:+ 0:%ˈ Cns:+] PrecedePALAllo %^PALE: %^PAL: ;
+      u _ (:ʹ) [Cns:+|Cns:+ 0:%ˈ Cns:+] BetweenStemAndPALAllo %^PALE: %^PAL: ;
 !€# kuâ0ll%^PALE%^PAL
 !€0 kueʹll00
 
@@ -1208,6 +1208,20 @@ Rules
   :Vow (ʹ:) _ k: (%^V2VV:) %^CC2C:: ;
 !€# j0okk%^V2VV%^CC2C
 !€0 jooǥǥ00
+
+"Even syllabic nouns I, with extra lengthening of vowel V>VV and k:j"
+!! __@RULENAME@__ 
+!! used with
+!!  > .
+ k:j <=>   
+ SurfLongVow :ʹ k: _  BetweenStemAndPALAllo (%^PALE:|%^PALÄ:) %^PAL: %^CC2C: ;
+         SurfLongVow :ʹ    _ k: BetweenStemAndPALAllo (%^PALE:|%^PALÄ:) %^PAL: %^CC2C: ;
+
+  OnSetC [DbVow|Diphth] :ʹ k:   _ BetweenStemAndPALAllo (%^PALE:|%^PALÄ:) %^PAL: %^CC2C: ;
+  OnSetC [DbVow|Diphth] :ʹ  _  k: BetweenStemAndPALAllo (%^PALE:|%^PALÄ:) %^PAL: %^CC2C: ; 
+
+  OnSetC  SurfLongVow   :ʹ k: (%ˈ:) _          %^VOWXL: (%^CShort:) ; 
+  OnSetC  SurfLongVow   :ʹ          _ (%ˈ:) k: %^VOWXL: (%^CShort:) ; 
 
 "Even syllabic nouns I, with extra lengthening of vowel V>VV and ǩ:j"
 !! __@RULENAME@__ 
