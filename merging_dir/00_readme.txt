@@ -222,6 +222,10 @@ merging: later, when the overlapping has been done
 2. check the overlap between Michael's and Jack's data
    ==> TODO
 
+3. split Jack's data into open and closed based on the overlap check
+   ==> TODO
+
+
 ID legend for the current sms data:
 
 (a) first data set used at Giellatekno: gt_POS_NUMBER
