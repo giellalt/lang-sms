@@ -220,7 +220,9 @@ merging: later, when the overlapping has been done
    ==> DONE 
 
 2. check the overlap between Michael's and Jack's data
-   ==> TODO
+   ==> DONE
+   - there are 6514 entries in the free part
+   - there are 8416 entries in the fin2ms part that can be merged with the free data set
 
 3. split Jack's data into open and closed based on the overlap check
    ==> TODO
