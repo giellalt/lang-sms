@@ -513,3 +513,7 @@ Here, there are three types of type in a singel entry:
       </mg>
    </e>
 
+Question:
+ - What does 't_type="sr"' mean? Is is a t_type at all?
+
+
