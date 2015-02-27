@@ -493,6 +493,7 @@ l pos="Pron" type="Refl">ieš</l>
 <t pos="N" type="Prop" sem_type="Org">Høyre</t>
 <t pos="N" type="Prop" sem_type="Plc" country="Finland">Enaresjøen</t>
 <l pos="N" type="Coll">golmmas</l> (this is not quite correct with "Colloquial form" as value of type)
+JR. "Collective" 'trio', three musketteers
 <l pos="Num" type="ord">kymmenes</l>
 
 2. subtype of translation (translation_type explanation, not really translation)
