@@ -453,6 +453,13 @@ As you can see, I also show how to model in an appropriate way the pos value of 
 Unfortunately, I didn't have time to change it for, say, sme lexical material in a systematic way,
 but I would really appreciate if you would heed my advice on mwe modeling.
 
+By the way, this abbr modeling makes Michael's 
+         <mg>
+            <lexicon xml:lang="sms">da nuʹtt ooudâs</lexicon>
+		.................
+         </mg>
+for such entries superfluous.
+
  2. The second has to do with attribute names. For use in the NDS proper nouns have the following attributes pos=_N_ type=_Prop_. Michael has already used the the attribute name _type_ for specifications _place_, _person_ etc. What shall we do here? I suggest Michael_s type attribute be renamed some how. Are there any suggestions.
 
 
