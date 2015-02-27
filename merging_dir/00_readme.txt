@@ -462,5 +462,54 @@ for such entries superfluous.
 
  2. The second has to do with attribute names. For use in the NDS proper nouns have the following attributes pos=_N_ type=_Prop_. Michael has already used the the attribute name _type_ for specifications _place_, _person_ etc. What shall we do here? I suggest Michael_s type attribute be renamed some how. Are there any suggestions.
 
+Well, everything can be a type label, so is pos: pos is a lemma type. In order to differentiate,
+between the different types of type, you have either to have specific names for them (such as 'pos'
+for lemma type) or to prefix/suffix them to make them unambiguous. Here is a non-exhaustive list
+of the types of type (sic!) used in GT lexical data:
 
+1. type as a subtype of pos
+<l pos="A" type="NomAg">buohcci</l>
+<l pos="N" type="G3">álgoálbmotášši</l>
+<l pos="N" type="NomAg">iskkadeaddji</l>
+<l nr="Sg" pos="Pron" type="Dem">dat</l>
+<l pos="Pron" type="Indef" nr="Pl">
+<l pos="Pron" type="Pers">mon</l>
+<l pos="Pron" type="Recipr">
+l pos="Pron" type="Refl">ieš</l>
+<l pos="Pron" type="Rel">mii</l>
+<l type="Actio" pos="V">leahkin</l>
+<l type="PrfPrc" pos="V">leamaš</l>
+<l mod="Cond" type="ConNeg" pos="V">livčče</l>
+<l pos="V" type="PrsPrc" pg="no">badjelgeahčči</l>
+<l nr="Sg" pos="Pron" type="Interr">makkár</l>
+<l pos="N" type="Prop" sem_type="Fem">Aagot</l>
+<l pos="N" type="Prop" nr="Pl" sem_type="Obj">Gállábártnit</l>
+<l pos="N" type="Prop" nr="Pl" sem_type="Plc">Iččát</l>
+<t pos="N" type="Prop" sem_type="Plc" reg="Troms">Reinøya</t>
+<t pos="N" type="Prop" sem_type="Org">Høyre</t>
+<t pos="N" type="Prop" sem_type="Plc" country="Finland">Enaresjøen</t>
+<l pos="N" type="Coll">golmmas</l> (this is not quite correct with "Colloquial form" as value of type)
+<l pos="Num" type="ord">kymmenes</l>
+
+2. subtype of translation (translation_type explanation, not really translation)
+<t t_type="expl">kvinnenavn</t>
+<t t_type="expl">framhevende i negative utsagn</t>
+<t t_type="expl">den side som vender mot boaššu, det vil si den innerste delen av telt, gamme eller hus</t>
+<t t_type="expl">continuative of âi’git</t>
+<t gen="m" pos="N" t_type="Pers">St. Hans</t> (this is even wrong attribute-value pair)
+
+Here, there are three types of type in a singel entry:
+ type="Prop" ==> subtype of pos
+ sem_type="Fem" ==> semantic type
+ t_type="expl" ==> type of translation
+   <e usage="vd">
+      <lg>
+          <l pos="N" type="Prop" sem_type="Fem">Aagot</l>
+      </lg>
+      <mg>
+         <tg xml:lang="nob">
+            <t t_type="expl">kvinnenavn</t>
+         </tg>
+      </mg>
+   </e>
 
