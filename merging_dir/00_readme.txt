@@ -251,7 +251,7 @@ Todo: manual check by Jack (still waiting for clarification)
  - please correct them or provide the information needed in this file
 ===================================
 1. Why kind of separator is ';'?
-
+JR. The first reaction I got for this word pair separated by a semicolon, was that the ones on the right of the semicolon were clearly Finnish loan words.
 1.1
 <l_syn>čiõlǥeed; seʹlvted</l_syn>
 
@@ -276,6 +276,7 @@ Todo: manual check by Jack (still waiting for clarification)
    </e>
 
 1.2
+JR. Derivations of the previous verbs
 <l_syn>čiõlǥumuš; seʹlvtumuš</l_syn>
 
    <e id="sml_1979">
@@ -299,6 +300,7 @@ Todo: manual check by Jack (still waiting for clarification)
    </e>
 
 1.3
+
 <l_syn>mâʹmmet; di mâʹmmet di mâʹmmet</l_syn>
 
    <e id="sml_27100">
@@ -323,6 +325,7 @@ Todo: manual check by Jack (still waiting for clarification)
 
 2. What is the role of the question mark here?
 2.1
+JR. Here the question mark indicates that the word must still be confirmed.
 <l_syn>kåʹllruõss ?</l_syn>
 
    <e id="sml_15295">
@@ -347,7 +350,7 @@ Todo: manual check by Jack (still waiting for clarification)
 
 2.2
 nõđđad ?
-
+JR. Word form has to be checked
    <e id="sml_16386">
       <p id="1">27600</p>
       <p id="2">varttaa</p>
@@ -369,6 +372,7 @@ nõđđad ?
    </e>
 
 3. What is the role of '- ' here?
+JR. This appear to be another issue for correction. čiõkkâm- combines with koontâr, but this does not explain the presence of a Finnish word.
 <l_syn>čiõkkâm- hautautua</l_syn>
 
    <e id="sml_33898">
@@ -394,7 +398,7 @@ nõđđad ?
    </e>
 
 4. What about this string 'juʹna - leʹbe'?
-
+JR. This is syntactic. The bar indicates intermittent text.
    <e id="sml_11636">
       <p id="1">5012</p>
       <p id="2">joko - tai</p>
