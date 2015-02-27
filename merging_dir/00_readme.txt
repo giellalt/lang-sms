@@ -416,12 +416,44 @@ nõđđad ?
    </e>
 
 Comment from __Jack__ (as svn log r108375):
-The pos values have been capitalized. 
 There are two issues that have not been dealt with yet: 
  1. What would be an abbreviation for _long form_, i.e. Abbr is to Abbreviation what Xxx is to Long form. 
 
- 2. The second has to do with attribute names. For use in the NDS proper nouns have the following attributes pos=_N_ type=_Prop_. Michael has already used the the attribute name _type_ for specifications _place_, _person_ etc. What shall we do here? I suggest Michael_s type attribute be renamed some how. Are there any suggestions.
+_Ciprian_:
+ - abbr is not a pos 
+ - there are many ways to code the relation between a normal (=long) form and its abbreviation(s)
+ - I propose this one (which I partially changed in the data):
 
+         <lg>
+            <l pos="Conj::Adv::Adv" abbr="dno">da nuʹtt ooudâs</l>
+         </lg> 
+            <tg xml:lang="deu">
+               <t pos="Conj::Adv::Adv" abbr="usw.">und so weiter</t>
+            </tg>
+
+         <lg>
+            <l pos="N" abbr="mn">mn_LONG-FORM</l>
+         </lg> 
+            <tg xml:lang="fin">
+               <t pos="N" abbr="ov">opintoviikko</t>
+            </tg>
+
+         <lg>
+            <l pos="N" abbr="mâ">mâ_LONG-FORM</l>
+         </lg>
+            <tg xml:lang="fin">
+               <t pos="N" abbr="ti">tiistai</t>
+            </tg>
+
+         <lg>
+            <l pos="N" abbr="č">čiâss</l>
+         </lg>
+
+As you can see, I also show how to model in an appropriate way the pos value of multiword expressions.
+Unfortunately, I didn't have time to change it for, say, sme lexical material in a systematic way,
+but I would really appreciate if you would heed my advice on mwe modeling.
+
+ 2. The second has to do with attribute names. For use in the NDS proper nouns have the following attributes pos=_N_ type=_Prop_. Michael has already used the the attribute name _type_ for specifications _place_, _person_ etc. What shall we do here? I suggest Michael_s type attribute be renamed some how. Are there any suggestions.
 
 
 
