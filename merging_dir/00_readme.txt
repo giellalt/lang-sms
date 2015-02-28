@@ -573,3 +573,6 @@ TODO:
  - harmonize the pos values with the GT-values used in FSTs as much as possible
  - start working on pos for the non-GT-entries
 
+Hey, Ciprian, can you move the <rev-sort_key/> element so that it follows the stg/st elements. It will make my work with continuation lexica much easier, because I like to use the final part of <l/> text content in search replace. JR
+
+
