@@ -1032,20 +1032,20 @@ Rules
 
 "Even-syllabic nouns I, Depalatalization of ǧǧ"
 !! __@RULENAME@__ - vueʹlǧǧed+V+Ind+Prs+Sg3: vuâlgg
-!! {{{
- ǧ:g <=> Vow: (ʹ:|0:ʹ) (Cns:)          _ (%ˈ:) ǧ: (%^VOWSH: (%^CLong:)) NeutrHighBack       %^PALNo: ;
-         Vow: (ʹ:|0:ʹ) (Cns:) ǧ: (%ˈ:) _          (%^VOWSH: (%^CLong:)) NeutrHighBack (X3:) %^PALNo: ;
-!! }}}
-
+ ǧ:g <=> Vow: (ʹ:|0:ʹ) (Cns:)          _ (%ˈ:) ǧ: BetweenStemAndPALNo  %^PALNo: RBound ;
+         Vow: (ʹ:|0:ʹ) (Cns:) ǧ: (%ˈ:) _        BetweenStemAndPALNo %^PALNo: RBound ;
+!€# vueʹlǧǧ%^PALNo
+!Maybe this isn't needed
 
 "Even-syllabic nouns I, Depalatalization of ǩ:k"
 !! __@RULENAME@__ -
-!! {{{
- ǩ:k <=>																												    !!= * @CODE@
-  Vow: (%ʹ:|0:%ʹ) (l)              _ (%ˈ:|:%ˈ) ǩ: (e: s:) ([%^VOWSH:|%^VOWXSH:] (%^CLong:)) NeutrHighBack       %^PALNo: ;  !!= * @CODE@
-  Vow: (%ʹ:|0:%ʹ) (l) ǩ: (%ˈ:|:%ˈ) _              (e: s:) ([%^VOWSH:|%^VOWXSH:] (%^CLong:)) NeutrHighBack (X3:) %^PALNo: ;  !!= * @CODE@
-  Vow:0           (s|š)            _                       (%^VOWSH: %^CLong:)  %^RmVow: %> a ;						    !!= * @CODE@
-!! }}}
+ ǩ:k <=>   !!= * @CODE@
+  Vow: (%ʹ:|0:%ʹ)  _ (%ˈ:|:%ˈ) ǩ: (e: s:) BetweenStemAndPALNo    %^PALNo: RBound ;
+  Vow: (%ʹ:|0:%ʹ) ǩ: (%ˈ:|:%ˈ) _    (e: s:) BetweenStemAndPALNo %^PALNo: RBound ;
+  Vow:0                     _                       (%^VOWSH: %^CLong:)  %^RmVow: %> a ;	
+  Vow: (%ʹ:|0:%ʹ) l   _ (%ˈ:|:%ˈ) ǩ: (e: s:) BetweenStemAndPALNo    %^PALNo: RBound ;
+  Vow: (%ʹ:|0:%ʹ) l ǩ: (%ˈ:|:%ˈ) _    (e: s:) BetweenStemAndPALNo %^PALNo: RBound ;
+  Vow:0           [s|š]            _                       (%^VOWSH: %^CLong:)  %^RmVow: %> a ;	
 
 "Even-syllabic nouns, removing palatalization in -est +Loc nouns"
 !! __@RULENAME@__ - removing palatalization in +Sg+Ill,  pieʹss:peässa
@@ -1201,12 +1201,12 @@ Rules
  SurfLongVow  k: _   BetweenStemAndConsGrade %^CC2C: ;
          SurfLongVow   _ k: BetweenStemAndConsGrade %^CC2C: ;
 
-  OnSetC [DbVow|Diphth] (ʹ:) k: _ (i:) (%^VOWRaise:) [%^CC2C:|%^VOWL:  %^CShort:] ;
-  OnSetC [DbVow|Diphth] (ʹ:) _  k: (i:) (%^VOWRaise:) [%^CC2C:|%^VOWL:  %^CShort:] ;
-  OnSetC SurfLongVow    (ʹ:) k: _    (i:) %^VOWXL: (%^CShort:) ;
-  OnSetC SurfLongVow    (ʹ:)    _ k: (i:) %^VOWXL: (%^CShort:) ;
-  :Vow (ʹ:) k: _ (%^V2VV:) %^CC2C: ;
-  :Vow (ʹ:) _ k: (%^V2VV:) %^CC2C:: ;
+  OnSetC [DbVow|Diphth]  k: _ (i:) BetweenStemAndPALNo %^CC2C: ;
+  OnSetC [DbVow|Diphth]  _  k: (i:) BetweenStemAndPALNo %^CC2C: ;
+  OnSetC SurfLongVow    k: _    (i:) %^VOWXL: (%^CShort:) ;
+  OnSetC SurfLongVow       _ k: (i:) %^VOWXL: (%^CShort:) ;
+  :Vow  k: _ (%^V2VV:) %^CC2C: ;
+  :Vow  _ k: (%^V2VV:) %^CC2C: ;
 !€# j0okk%^V2VV%^CC2C
 !€0 jooǥǥ00
 
