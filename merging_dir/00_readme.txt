@@ -522,3 +522,19 @@ Question:
  - What does 't_type="sr"' mean? Is is a t_type at all?
 
 
+JR: The nested elements stg/st have been introduced. The <st/> element text content consists of the stem form, which will be used in the transducer. The form of the stem will correlate to the requirements set forth in the affixes/POS.lexc LEXICON documentation indicated by the value of the st@Contlex="VALUE".
+In order to arrive at a workable @Contlex value, a second attribute "inflexId" has been introduced in the <st/> element drawing on @pos and @class attribute values in the stg::sibling <l/> element, and the text content of the first <p id="17"/> element.
+
+   <e_u id="sms_bag_1">
+      <map stamp="gt_A_1:fm_2201:sml_27091:sml_27092:sml_27093"/>
+      <e id="gt_A_1" meta="03">
+         <lg>
+            <l pos="Adv">tâʹlles</l>
+            <stg>
+               <st Contlex="ADV_" inflexId="::::1000">tâʹlles</st>
+            </stg>
+         </lg>
+.... 
+   </e_u>
+
+Since the <st/> element text content is a direct copy from the preceeding <l/> text content. pedagogic extra strong marking of geminates and e with underlying dot will standardized in the <l/> element content and their reproduction will be insured by the <st/> text content and @Contlex value combination. Let me do this. JR
