@@ -538,3 +538,38 @@ In order to arrive at a workable @Contlex value, a second attribute "inflexId" h
    </e_u>
 
 Since the <st/> element text content is a direct copy from the preceeding <l/> text content. pedagogic extra strong marking of geminates and e with underlying dot will standardized in the <l/> element content and their reproduction will be insured by the <st/> text content and @Contlex value combination. Let me do this. JR
+
+=================
+split the unified file:
+1. split
+ a. e_u-elements having at least one gt-entry
+ b. e_u-elements with no gt-entry
+
+2. split
+ - gt-entries by the former pos values in order to ease the work
+   with the bag entries
+
+_split_by_pos_out>g '<l pos=' *|cut -d '"' -f1-2|t
+ 525 N_sms2x.xml:            <l pos="N
+ 212 V_sms2x.xml:            <l pos="V
+  91 Adp_sms2x.xml:            <l pos="Adv
+  32 Prop_sms2x.xml:            <l pos="N
+  32 Adp_sms2x.xml:            <l pos="Adp
+  28 Num_sms2x.xml:            <l pos="Num
+  12 A_sms2x.xml:            <l pos="A
+  11 Pro_sms2x.xml:            <l pos="Pron
+  11 Cc_sms2x.xml:            <l pos="CC
+   9 Pcle_sms2x.xml:            <l pos="Pcle
+   9 Det_sms2x.xml:            <l pos="Det
+   7 Cs_sms2x.xml:            <l pos="CS
+   4 I_sms2x.xml:            <l pos="Interj
+   3 A_sms2x.xml:            <l pos="Adv
+   1 Cs_sms2x.xml:            <l pos="Pron
+
+TODO:
+ - check the pos values of the former gt_entries
+ - DON'T change the value of the id!
+ - a new splitting will be done automatically
+ - harmonize the pos values with the GT-values used in FSTs as much as possible
+ - start working on pos for the non-GT-entries
+
