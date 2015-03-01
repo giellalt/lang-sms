@@ -582,7 +582,6 @@ Answer for Jack: I guess not that difficult.
 
 Questions about lexicographic structure
 
-================
 ==="variants"===
       <lg>
         <l>krååʹma</l>
@@ -599,5 +598,16 @@ _-tää_ and _väjjaǥ_ are "variants" of the lemma _krååʹma_ only in the sen
 2) The inlectional suffix _-tää_ is not a lemma and cannot (and does not need to) be pointed to, I would say.
 
 If we already have this information (because it was found in some printed dictionary we used as the source of our data) and want to keep it for whatever reason, I would rather create the fields "synonyme", "antonyme", "hyperonyme" or else under <mg/>. However, covering all kinds of semantic relations between lemmas systematically would require a separate project.
-=================
+================
+
+===inflectional morpheme as a lemma===
+Example
+      <lg>
+        <l>-tää</l>
+      </lg>
+
+1) This is a case suffix, do we want to list it as a lemma?
+
+2) If we do, what POS tag should we use?
+=======================================
 
