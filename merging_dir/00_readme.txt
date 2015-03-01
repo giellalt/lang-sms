@@ -577,3 +577,27 @@ Hey, Ciprian, can you move the <rev-sort_key/> element so that it follows the st
 
 Question for Ciprian: With the new naming of the xml file Prop_sms2x.xml => N_Prop_sms2x.xml we will have to alter the xsl transformation script which has been used in the AKU languages for generating stems/...lexc files. That is simple isn't it? (see main/gtcore//scripts/xsl/generate_lex-fileVM.xsl)
 Answer for Jack: I guess not that difficult.
+
+===
+
+Questions about lexicographic structure
+
+================
+==="variants"===
+      <lg>
+        <l>krååʹma</l>
+        <variants>
+          <l_syn>-tää</l_syn>
+          <l_syn>väjjaǥ</l_syn>
+        </variants>
+      </lg>
+
+_-tää_ and _väjjaǥ_ are "variants" of the lemma _krååʹma_ only in the sense that  they have the same meaning. _krååʹma_ and _väjjaǥ_ are synonyms. _-tää_ is a case suffix expressing a similar meaning.
+
+1) Do we need this information about synonyms, i.e. do we need a pointer between synonym lemmas? 
+
+2) The inlectional suffix _-tää_ is not a lemma and cannot (and does not need to) be pointed to, I would say.
+
+If we already have this information (because it was found in some printed dictionary we used as the source of our data) and want to keep it for whatever reason, I would rather create the fields "synonyme", "antonyme", "hyperonyme" or else under <mg/>. However, covering all kinds of semantic relations between lemmas systematically would require a separate project.
+=================
+
