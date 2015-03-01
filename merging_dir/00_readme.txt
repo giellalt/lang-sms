@@ -5,9 +5,6 @@ This file is mostly for communicating current todos and questions; proper docume
 TODO MR
 update documentation at http://giellatekno.uit.no/doc/dicts/SkoltSaami2X.html
 
-TODO MR 
-check imprf-prf values in Russian translations
-
 ===
 
 OLD
@@ -78,6 +75,8 @@ I think, perhaps, I have only "played" with the lexicon-field here. "to live" is
 
 For now I would just leave the lexicon-content as it is (except such obvious corrections as in 1.1. above) and think more about a better integration during the continuing work with the database. We do not need the lexicon-data now and can simply ignore it.
 
+However, what the lexicon-data could be usefull for in the future is to serve as a pattern for monolingual Skolt Saami lexicon, if Skolt Saami writers themselves are interested to create one.
+
 QEUSTION
 2. 
 ANOTHER ELEMENT:
@@ -104,18 +103,6 @@ ANSWER MR
 The info in <infl> will become completely obsolete once we have worked more on the FST. I had the info there because it helped me learning more about Skolt Saami morphology. I would suggest deleting it for all lemmas which have already complete paradigms produced by the FST.
 
 QUESTION JR
-3.
-AN INTERESTING ATTRIBUTE and VALUE combination
-         <tg xml:lang="rus">
-            <t pos="v" impf="сделать">делать</t>
-         </tg>
-Here I assume that attribute name ”impf” indicates ”Imperfect”, where the attribute content provides the ”PERFECT” verb ”сделать” correlating to the ”IMPERFECT” text content ”делать”.
-Is this your intent? Wouldn’t it be more to the point to call the attribute ”perf”?
-
-ANSWER MR
-Yes, you are right, this is a mistake. it should be the other way round. I will correct it later. Bytheway, I have not worked with the Russian FST yet, but perhaps later we can get the aspect pairs from there automatically? In this case, we would have obsolete information here as well. But let us discuss this later.
-
-QUESTION JR
 4.
 I talked to Heli about the feed for ped. 
 What shall we do when there are more than 1 <t/> elements present:
@@ -136,7 +123,7 @@ What shall we do when there are more than 1 <t/> elements present:
          </tg>
 
 ANSWER MR
-Ciprian needs to help here. If I recall it right, we did not want to use state="pref", but only state="dispref" (or something). I am completely open to your (and Ciprian's, Heli's) suggestions how to do this better in the future.
+Ciprian needs to help here. If I recall it right, we did not want to use state="pref", but only state="dispref" (or something) if one those forms is indeed disprefered. But I am completely open to your (and Ciprian's and Heli's) suggestions how to do this better in the future.
 
 
 ========================================
@@ -578,9 +565,9 @@ Hey, Ciprian, can you move the <rev-sort_key/> element so that it follows the st
 Question for Ciprian: With the new naming of the xml file Prop_sms2x.xml => N_Prop_sms2x.xml we will have to alter the xsl transformation script which has been used in the AKU languages for generating stems/...lexc files. That is simple isn't it? (see main/gtcore//scripts/xsl/generate_lex-fileVM.xsl)
 Answer for Jack: I guess not that difficult.
 
-===
-
+=======================================
 Questions about lexicographic structure
+=======================================
 
 ==="variants"===
       <lg>
@@ -610,4 +597,21 @@ Example
 
 2) If we do, what POS tag should we use?
 =======================================
+
+===============================
+Questions about the actual data
+===============================
+
+===QUESTION JR: AN INTERESTING ATTRIBUTE and VALUE combination===
+         <tg xml:lang="rus">
+            <t pos="v" impf="сделать">делать</t>
+         </tg>
+Here I assume that attribute name ”impf” indicates ”Imperfect”, where the attribute content provides the ”PERFECT” verb ”сделать” correlating to the ”IMPERFECT” text content ”делать”.
+Is this your intent? Wouldn’t it be more to the point to call the attribute ”perf”?
+
+ANSWER MR
+Yes, you are right, this is a mistake. it should be the other way round. I will correct it later. Bytheway, I have not worked with the Russian FST yet, but perhaps later we can get the aspect pairs from there automatically? In this case, we would have obsolete information here as well. But let us discuss this later.
+
+TODO MR 
+check imprf-prf values in Russian translations
 
