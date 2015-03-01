@@ -575,4 +575,5 @@ TODO:
 
 Hey, Ciprian, can you move the <rev-sort_key/> element so that it follows the stg/st elements. It will make my work with continuation lexica much easier, because I like to use the final part of <l/> text content in search replace. JR
 
-Question for Ciprian: With the new naming of the xml file Prop_sms2x.xml => N_Prop_sms2x.xml we will have to alter the xsltransformation script which has been used in the AKU languages for generating stems/...lexc files. That is simple isn't it? (see main/gtcore//scripts/xsl/generate_lex-fileVM.xsl)
+Question for Ciprian: With the new naming of the xml file Prop_sms2x.xml => N_Prop_sms2x.xml we will have to alter the xsl transformation script which has been used in the AKU languages for generating stems/...lexc files. That is simple isn't it? (see main/gtcore//scripts/xsl/generate_lex-fileVM.xsl)
+Answer for Jack: I guess not that difficult.
