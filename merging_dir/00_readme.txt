@@ -406,6 +406,8 @@ JR. This is syntactic. The bar indicates intermittent text.
       <p id="17">1000</p>
    </e>
 
+========================
+===PoS tagging in MWE===
 Comment from __Jack__ (as svn log r108375):
 There are two issues that have not been dealt with yet: 
  1. What would be an abbreviation for _long form_, i.e. Abbr is to Abbreviation what Xxx is to Long form. 
@@ -450,6 +452,13 @@ By the way, this abbr modeling makes Michael's
 		.................
          </mg>
 for such entries superfluous.
+
+MR: I would like to suggest one improvement in the PoS tagging of multiword expressions. Ciprians model accounts only for the single parts of speech in the multiword expression, but it does not tell what kind of syntactic constituent the whole expression represents:
+<l pos="Adv::A">very good</l> (Ciprian)
+vs.
+<l pos="A(Adv::A)">very good</l> (Micha)
+Actually, the tag "A" for the whole complex constituent I find even more important than the tags for the single simple constituents, because "A" is what the whole multiword expression stands for in syntactic structure. (In principle, once our FST/CG automata work better, we can let them analyze the single simple constituents automatically.)
+========================
 
  2. The second has to do with attribute names. For use in the NDS proper nouns have the following attributes pos=_N_ type=_Prop_. Michael has already used the the attribute name _type_ for specifications _place_, _person_ etc. What shall we do here? I suggest Michael_s type attribute be renamed some how. Are there any suggestions.
 
