@@ -483,6 +483,9 @@ level every clause, every sentence, even paragraphs, or whole chapters
 are multiword expressions. Hence, just putting this tag on a sequence of
 words doesn't say too much.
 
+As for Michael's "(In principle, once our FST/CG automata work better, we can let them analyze the single simple constituents automatically.)", this was and still is my plan for sme, yet unless Michael, I am aware of the problems of using this method, problems
+that can be subsumed under the label "lack of contex results in wrong pos-labeling".
+
 ========================
 
  2. The second has to do with attribute names. For use in the NDS proper nouns have the following attributes pos=_N_ type=_Prop_. Michael has already used the the attribute name _type_ for specifications _place_, _person_ etc. What shall we do here? I suggest Michael_s type attribute be renamed some how. Are there any suggestions.
