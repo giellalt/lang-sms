@@ -560,6 +560,34 @@ TODO:
  - harmonize the pos values with the GT-values used in FSTs as much as possible
  - start working on pos for the non-GT-entries
 
+TODO: (Ciprian)
+The following fields (if they are not empty) from the inc-file 
+sms-sjd2X_inc/simplified_SkoltKildEnDeNoRu.xml
+need to be merged as well. I will need this info later. If it is possible, they should be grouped like the following:
+
+<inc-transl>
+<c name="German"/>
+<c name="Russian"/>
+<c name="Norwegian"/>
+<c name="Kildin"/>
+<c name="Finnish"/>
+<c name="English"/>
+</inc-transl>
+
+<inc-sampling>
+<c name="LWT"/>
+<c name="Swadesh100"/>
+<c name="Swadesh200"/>
+</inc-sampling>
+
+<inc-audio>
+<c name="ID_Audio"/>
+<c name="Reader"/>
+<c name="Recording"/>
+<c name="included"/>
+</inc-audio>
+
+================================
 Question for Ciprian: With the new naming of the xml file Prop_sms2x.xml => N_Prop_sms2x.xml we will have to alter the xsl transformation script which has been used in the AKU languages for generating stems/...lexc files. That is simple isn't it? (see main/gtcore//scripts/xsl/generate_lex-fileVM.xsl)
 Answer for Jack: I guess not that difficult.
 ================================
