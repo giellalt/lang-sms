@@ -603,6 +603,7 @@ Questions about the actual data
 ===============================
 
 ===QUESTION JR: AN INTERESTING ATTRIBUTE and VALUE combination===
+===DONE===
          <tg xml:lang="rus">
             <t pos="v" impf="сделать">делать</t>
          </tg>
@@ -611,7 +612,3 @@ Is this your intent? Wouldn’t it be more to the point to call the attribute �
 
 ANSWER MR
 Yes, you are right, this is a mistake. it should be the other way round. I will correct it later. Bytheway, I have not worked with the Russian FST yet, but perhaps later we can get the aspect pairs from there automatically? In this case, we would have obsolete information here as well. But let us discuss this later.
-
-TODO MR 
-check imprf-prf values in Russian translations
-
