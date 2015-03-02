@@ -467,6 +467,22 @@ this string as MWE):
 for instance:
 <l pos="Coord_Last(CC::Adv::Adv)" abbr="dno">da nuʹtt ooudâs</l>
 
+Moreover, this is also a uniform solution for pseudo-pos values
+"S", which are used by Michael to mark whole sentences such in
+the sjd2X.xml file
+<t type="idiom" pos="S">Горькое житьё, да надо дальше жить.</t>
+
+The pattern for a sentence or a clause is
+<l pos="SENT(POS_1::POS_2::POS_3::PUNCT)">Word_1 word_2 word_3.</l>
+
+And it goes without saying that a subcategorization of the sentence as idiom
+is not problem at all.
+
+My argumentation aganst a simple 'mwe' or 'phrase' is that on an abstract
+level every clause, every sentence, even paragraphs, or whole chapters
+are multiword expressions. Hence, just putting this tag on a sequence of
+words doesn't say too much.
+
 ========================
 
  2. The second has to do with attribute names. For use in the NDS proper nouns have the following attributes pos=_N_ type=_Prop_. Michael has already used the the attribute name _type_ for specifications _place_, _person_ etc. What shall we do here? I suggest Michael_s type attribute be renamed some how. Are there any suggestions.
