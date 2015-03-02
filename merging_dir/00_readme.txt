@@ -588,14 +588,8 @@ If we already have this information (because it was found in some printed dictio
 ================
 
 ===inflectional morpheme as a lemma===
-Example
-      <lg>
-        <l>-tää</l>
-      </lg>
-
-1) This is a case suffix, do we want to list it as a lemma?
-
-2) If we do, what POS tag should we use?
+===AGREED===
+We have several derivational and inflectional suffixes which we want to list as lemmas. They are labeled pos="Suf".
 =======================================
 
 ===============================
