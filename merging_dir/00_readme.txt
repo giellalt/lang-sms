@@ -458,6 +458,15 @@ MR: I would like to suggest one improvement in the PoS tagging of multiword expr
 vs.
 <l pos="A(Adv::A)">very good</l> (Micha)
 Actually, the tag "A" for the whole complex constituent I find even more important than the tags for the single simple constituents, because "A" is what the whole multiword expression stands for in syntactic structure. (In principle, once our FST/CG automata work better, we can let them analyze the single simple constituents automatically.)
+CG: No, this is not 'more important', both have their importance on different levels.
+The abstract form of the pos-values for MWE is then (I just 
+wanted to use 'very good' as example but I realized that I wouldn't count
+this string as MWE):
+<l pos="SYNTACTIC-FUNCTION-AS-A-WHOLE(POS-1::POS-2::POS-3)">STRING_1 STRING_2 STRING_3</l>
+
+for instance:
+<l pos="Coord_Last(CC::Adv::Adv)" abbr="dno">da nuʹtt ooudâs</l>
+
 ========================
 
  2. The second has to do with attribute names. For use in the NDS proper nouns have the following attributes pos=_N_ type=_Prop_. Michael has already used the the attribute name _type_ for specifications _place_, _person_ etc. What shall we do here? I suggest Michael_s type attribute be renamed some how. Are there any suggestions.
