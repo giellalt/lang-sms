@@ -629,6 +629,50 @@ Question for Ciprian: With the new naming of the xml file Prop_sms2x.xml => N_Pr
 Answer for Jack: I guess not that difficult.
 ================================
 
+===================================
+Answers for Ciprian about <p id="6"> tag content:
+(1)
+<p id="6" syn="vuõss (attr.)" var="õõuʹdmõs">oouʹdmõs</p>
+=> <variants>
+....
+<l_syn inflexion="(attr.)">vuõss</l_syn>
+....</variants>
+LIKEWISE:
+<p id="6" syn="šorrsaž ~ šõrrsaž, šoora (pr:vi)" var="šõõraž">šooraž</p>
+<p id="6" syn="mäiʹvv" var="riâppâs (riâppâz, riâppsa)">riâvâs</p>
+pr:vi = predicative
+attr = attribute
+(riâppâz, riâppsa) <= (Pl.Nom, Sg.Ill)
+
+(2)
+<p id="6" nr="(mon.)" syn="tiõrvvʼvuõđ (mon.)">tiõrv</p>
+            <variants>
+               <l_syn nr="(mon.)">tiõrvvʼvuõđ</l_syn>
+            </variants>
+(3)
+<p id="6" syn="ooudbeäʹl ~ õõudbeäʹl, ooudbeäʹlnn ~ õõudpeäʹlnn" var="õuʹddel">ouddâl</p>
+In this instance syn content is interesting from a morphological point of view; two pairs of variants.
+This might mean:
+        <variants>
+          <l_var>õuʹddel</l_var>
+          <l_syn>ooudbeäʹl</l_syn>
+          <l_syn>õõudbeäʹl</l_syn>
+          <l_syn>ooudbeäʹlnn</l_syn>
+          <l_syn>õõudpeäʹlnn</l_syn>
+        </variants>
+==>
+        <variants>
+          <l_var>õuʹddel</l_var>
+          <l_syn var="õõudbeäʹl">ooudbeäʹl</l_syn>
+          <l_syn var="ooudbeäʹl">õõudbeäʹl</l_syn>
+          <l_syn var="õõudpeäʹlnn">ooudbeäʹlnn</l_syn>
+          <l_syn var="ooudbeäʹlnn">õõudpeäʹlnn</l_syn>
+	  </variants>
+
+Jack
+===================================
+
+
 
 =======================================
 Questions about lexicographic structure
