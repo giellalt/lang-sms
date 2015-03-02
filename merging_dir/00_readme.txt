@@ -597,7 +597,7 @@ TODO:
  - harmonize the pos values with the GT-values used in FSTs as much as possible
  - start working on pos for the non-GT-entries
 
-TODO: (Ciprian)
+DONE: (Ciprian)
 The following fields (if they are not empty) from the inc-file 
 sms-sjd2X_inc/simplified_SkoltKildEnDeNoRu.xml
 need to be merged as well. I will need this info later. If it is possible, they should be grouped like the following:
