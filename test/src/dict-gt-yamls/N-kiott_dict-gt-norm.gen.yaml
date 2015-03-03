@@ -1,24 +1,21 @@
 Config:
   hfst:
-    Gen: ../../../src/generator-gt-norm.hfst
-    Morph: ../../../src/analyser-gt-norm.hfst
+    Gen: ../../../src/generator-dict-gt-norm.hfst
+    Morph: ../../../src/analyser-dict-gt-norm.hfst
   xerox:
-    Gen: ../../../src/generator-gt-norm.xfst
-    Morph: ../../../src/analyser-gt-norm.xfst
+    Gen: ../../../src/generator-dict-gt-norm.xfst
+    Morph: ../../../src/analyser-dict-gt-norm.xfst
     App: lookup
 
 Tests:
 
-# todo:
-# Proofread the gold standard (below)
-# Then: run analyser, then correct. 
 
 
-  Noun - ǩiõtt: # Noun e-stem "hand, arm/käsi" - full paradigm
+  Noun - ǩiõtt: # e-stem  "hand, arm/käsi" Noun - full paradigm
      ǩiõtt+N+Sg+Nom: ǩiõtt
      ǩiõtt+N+Sg+Gen: ǩiõđ
      ǩiõtt+N+Sg+Acc: ǩiõđ
-     ǩiõtt+N+Sg+Ill: ǩiõʹtte
+     ǩiõtt+N+Sg+Ill: ǩiõʹtˈte
      ǩiõtt+N+Sg+Loc: ǩiõđâst
      ǩiõtt+N+Sg+Com: ǩiõđin
      ǩiõtt+N+Ess: ǩiõttân
@@ -31,3 +28,5 @@ Tests:
      ǩiõtt+N+Pl+Loc: ǩiõđin
      ǩiõtt+N+Pl+Com: ǩiõđivuiʹm
      ǩiõtt+N+Pl+Abe: ǩiõđitää
+
+    

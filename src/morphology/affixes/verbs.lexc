@@ -677,6 +677,63 @@ LEXICON KALMMED
 +V+VAbess:%^VOWL%^CShort%>kani FINAL1 ;		!WG
 +V+VAbess:%^VOWL%^CShort%>ǩeânai FINAL1 ;		!WG
 
+LEXICON V_PIEʹǨǨED
+!! pieʹǩǩed:peäkk
+! Like JURDDED
+! 1. VERBS WITH SINGLE-SYLLABLE Ind.Prs.Sg3 (2009: ???)
+! 1.3 Inf in palatalization + ed (vowel shift)
+!   Raised: Inf, Ind.Prt.Pl3, Imprt.Sg2, Pot.Sg3
+!   Lowered: Ind.Prs.Sg3, Ind.Prs.Pl3, Imprt.Sg3
+! 1.3.1 Has Palatalization
+! 1.3.1[1] (Palatalization pattern)
+!   Palatalized: Inf, Ind.Prs.Pl3, Ind.Prt.Pl3, Pot.Sg3
+!   Not Palatalized: Ind.Prs.Sg3, Imprt.Sg2, Imprt.Sg3
+! 1.3.1[1].1 Lacks Specifically Pedagogical Gradation
+! 1.3.1[1].1.1 Has Orthographic Gradation
+! 1.3.1[1].1.1[231] (Diphthong + Consonant and Consonant Geminate alternation)
+!   Strong grade: 
+!   Extra strong grade: 
+!   Weak grade: 
+! FORMS
+! (1)  Inf: pieʹǩǩed
+! (2)  Ind.Prs.Sg3: peäkk
+! (3)  Ind.Prs.Pl3: peäʹǩˈǩe
+! (4)  Ind.Prt.Pl3: pieʹǩˈǩe
+! (5)  Ind.Imprt.Sg2: pieʹjj
+! (6)  Ind.Pot.Sg3: pieʹjjež
+! (7)  Imprt.Sg3: peäǥǥas
+! (8)  Imprt.13.ConNeg: piâkˈku 
+! (9)  Imprt.Pl3: peäkˈkaz
+! (10)  Ger.Temp.PxSg3: peäʹjjeeʹstes
+! * Yaml: __V-piekked__
+! pieʹǩǩed:peäkk
+! Strong grade in penultimate syllable
++V:%^VOWRaise%^PAL VSUF-INF_ED ; !1
+!+V: VSUF-IND-PRS-SG3_ED ; !2
++V+Imprt+Pl3:%^CC2CCC%>az FINAL1 ;
++V+Ind+Prs+Sg3: FINAL1 ;
++V+Ind+Prs+Pl3:%^PAL%>e FINAL1 ; !3
++V:%^VOWRaise%^PAL VSUF-IND-PRT-PL3_ED ; !4
++V:%^VOWRaise%^PAL%^CC2C VSUF-POTENTIAL_ED ; !5
++V+Pot+Sg3:%^VOWRaise%^PAL%^CC2C%>âž   FINAL1 ; !6
++V+Imprt+Sg3:%^CC2C%>as FINAL1 ; !7
++V:%^VOWRaise VSUF-IMPRT-13-CONNEG_ED ; !8
+ !9V
+
++V+Actio:%>em FINAL1 ;
++V+ActEss:%^PAL%>men FINAL1 ;
++V+GerTemp:%^VOWL%^CShort%^PAL%>een FINAL1 ;
++V+GerInstr:%^VOWL%^CShort%^PAL%>eeʹl FINAL1 ;
++V+Actio:%^PAL%>em FINAL1 ;
++V+PrsPrc:%^PAL%>i FINAL1 ;
++V+PrfPrc:%^VOWLower%^PALNo%>am FINAL1 ;
++V+Pass+PrfPrc:%^PALNo%>um FINAL1 ;
++V+Imprt+ConNeg:%^PALNo%>u FINAL1 ;
++V+VAbess:%^VOWL%^CShort%^PAL%>kâni FINAL1 ;                 !WG
++V+VAbess:%^VOWL%^CShort%^PAL%>kani FINAL1 ;         !WG
++V+VAbess:%^VOWL%^CShort%^PAL%>ǩeânai FINAL1 ;               !WG
+
+
 LEXICON JURDDED
 ! juʹrdded:juʹrdd
 ! In the lexicon ''@LEXNAME@'' the verb __kâʹlmmed__ has the lexc stem
@@ -1769,4 +1826,3 @@ LEXICON VSUF-PRSPRC_ED
 +PrsPrc+Pl+Nom:%^CC2C%>i FINAL1 ;
 +PrsPrc+Pl+Nom:i FINAL1 ;
 +PrsPrc+Der/MWN: N_JOOʹTTI ;
-
