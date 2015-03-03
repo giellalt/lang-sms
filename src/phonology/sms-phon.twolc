@@ -33,20 +33,24 @@
 !! !!Alphabet
 
 Alphabet 
-  a b c d e f g h i ï j k l m n o p q r s t u v w x y z !!= * @CODE@
-  A B C D E F G H I Ï J K L M N O P Q R S T U V W X Y Z !!= * @CODE@
-  æ ä ø ö å á é í					!!= * @CODE@
-  Å Ä Ö Ø Æ Á						!!= * @CODE@
-  Á É Ó Ú Í À È Ò Ù Ì Ë Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð		!!= * @CODE@
-  á é ó ú í à è ò ù ì ë ü ï â ê ô û î ã ý þ ñ ð ß ª ß ç	!!= * @CODE@
+  a b c d e f g h i j k l m n o p q r s t u v w x y z !!= * @CODE@
+  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z !!= * @CODE@
+  ä å â õ      !!= * @CODE@ 
+  Ä Å Â Õ       !!= * @CODE@
   č ǩ ǯ ǧ ž đ ǥ ʒ š ŋ					!!= * @CODE@
   Č Ǩ Ǯ Ǧ Ž Đ Ǥ Ʒ Š Ŋ					!!= * @CODE@
-  õ â							!!= * @CODE@
-  Õ Â							!!= * @CODE@
+  ẹ   	      	   !!= * @CODE@ Pedagogical purposes
+  Ẹ		   !!= * @CODE@ Pedagogical purposes
+
+  æ ø ö á é í					!!= * @CODE@
+  Æ Ø Ö Á						!!= * @CODE@
+  Á É Ó Ú Í À È Ò Ù Ì Ë Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð		!!= * @CODE@
+  á é ó ú í à è ò ù ì ë ü ï â ê ô û î ã ý þ ñ ð ß ª ß ç	!!= * @CODE@
+
 
  ʹ  !! * MODIFIER LETTER PRIME: U+02B9 suprasegmental palatization
  ʼ  !! * MODIFIER LETTER APOSTROPHE: U+02BC Syllable marker that appears in writing 
- %ˈ !! * MODIFIER LETTER VERTICAL LINE: U+02C8 as overlong consonant marker that does not appear in writing 
+ %ˈ !! * MODIFIER LETTER VERTICAL LINE: U+02C8 as overlong consonant marker that does not appear in writing except for pedagogical purposes
 
 !  for consonant lengthening
 %{XC%}:m
@@ -362,7 +366,7 @@ Rules
 
 "Even syllabic verbs I, vowel shortening o:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
- o:0 <=> OnSetC _ o: (ʹ:|0:ʹ) [u m:+ |LongC|Cns: :Cns*] [ %^VV2V: ] ;
+ o:0 <=> OnSetC _ o: (ʹ:|0:ʹ) [u m:+ |LongC|Cns: :Cns*]  %^VV2V:  ;
 !€# ooum0%^VV2V%^C2CCu
 !€0 0oumm00u
     OnSetC _ o: (ʹ:|0:ʹ) [LongC|Cns: :Cns*] %^VV2V: ;
@@ -743,7 +747,7 @@ Rules
 "Even syllabic verbs I, relative vowel lengthening 0:e"
 !! __@RULENAME@__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
  0:e <=> OnSetC _ e RelVowLengthening ;
-!€# čââʹlmteʹm%^VOWL
+!€# čââʹlmteʹm%^V2VV
 !€0 čââʹlmte0m0
         OnSetC _ e (ʹ:|0:ʹ) Cns:+ %^V2VV: ;
 !€# p0ess%^V2VV
@@ -753,8 +757,11 @@ Rules
 !€# v0iǯǯ%^V2VV%^VOWLower%>as 
 !€0 veeǯǯ000as
 
+
 !Distinguishing mainstam and maainstam
-      Cns: _ e (u:|i:) (ʹ:|0:ʹ)  Cns:+ %{Â1%}: Cns:+  %^V2VV: ; 
+      Cns: _ e (u:|i:) (ʹ:|0:ʹ)  Cns:+ (%{Â1%}:) Cns:+  %^V2VV: ; 
+!€# n0eiʹbb%^V2VV%^CC2C
+!€0 neeiʹb000
       [ n | š ] _ e (ʹ:|0:ʹ) ǩ ǩ %^V2VV: ;
 !€# kaađn0e0ǩǩ%^V2VV%^PAL
 !€0 kaađneeʹǩǩ00
@@ -778,11 +785,13 @@ Rules
 !Distinguishing mainstam and maainstam
       Cns: _ õ (u:|i:) (ʹ:|0:ʹ)  Cns: %{Â1%}: Cns:+  %^VOWL: ; 
 
-   OnSetC _ õ (ʹ:|0:ʹ) Cns:+ [%^V2VV: ((%^PALE:|%^PALÄ:) %^PAL:|%^PALNo:) %^CC2C:] ; 
+   OnSetC _ õ (ʹ:|0:ʹ) Cns:+ %^V2VV: ; 
 !€# v0õrr%^V2VV%^CC2C
 !€0 võõr000
 !€# s0õll%^V2VV%^CC2C
 !€0 sõõl00
+!€# mättʼt0õss%^V2VV%^CC2C
+!€0 mättʼtõõzz00
 
 
 "Even syllabic verbs I, relative vowel lengthening 0:ä"
@@ -1075,19 +1084,18 @@ Rules
 
 "Even syllabic verbs I, cg for b"
 !! __@RULENAME@__ - used with  neiʹbb+N+Sg+Gen: neeiʹb
-!! {{{
  b:0 <=> SurfLongVow  [i (ʹ:|0:ʹ)|(ʹ:|0:ʹ) l] b _   BetweenStemAndConsGrade %^CC2C: ;
-
+!€# n0eiʹbb%^V2VV%^CC2C
+!€0 neeiʹb000
 
 "Even syllabic verbs I, cg m:0"
 !! __@RULENAME@__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, 
- m:0 <=> SurfLongVow (ʹ:|0:ʹ)  (s|r|l|p|d:) m: _ (%^VOWL:|%^VOWXL:) %^CShort: ;
+ m:0 <=> SurfLongVow (ʹ:|0:ʹ)  (s|r|l|p|d:) m: _ BetweenStemAndConsGrade %^CC2C: ;
  SurfLongVow (ʹ:|0:ʹ) m: _    BetweenStemAndConsGrade %^CC2C: ;
 !€# sääʹmm%^CC2C
 !€0 sääʹm00
-         SurfLongVow (ʹ:) h: (ʹ:|0:ʹ)      m: _ (%^VOWL:|%^VOWXL:) %^CShort: ; 
+         SurfLongVow (ʹ:) h: (ʹ:|0:ʹ)      m: _ BetweenStemAndConsGrade %^CC2C: ;
           
-
 
 
 "Even syllabic verbs I, cg v:0"
@@ -1126,14 +1134,14 @@ Rules
  n:0 <=> 
  SurfLongVow (ʹ:|0:ʹ) n: _    BetweenStemAndConsGrade %^CC2C: ;
       SurfLongVow  (ʹ:|0:ʹ)  (s|r|l|p|d:) n:  _ (a: i:) (%^VOWL:|%^VOWXL:) %^CShort: ;
-         SurfLongVow  (ʹ:) h: (ʹ:|0:ʹ) n: _ (%^VOWXL:) %^CShort: ; 
+         SurfLongVow  (ʹ:) h: (ʹ:|0:ʹ) n: _ BetweenStemAndConsGrade %^CC2C: ; 
           
 "Even syllabic verbs I, cg for ʒ"
 !! __@RULENAME@__ - used with  pääʹʒʒelm+N+Sg+Ill: päʹʒlma
 !! {{{
  ʒ:0 <=>
 !2013-09-19    SurfLongVow (ʹ:|0:ʹ) ʒ _ %^VOWXL: (%^CShort:) ;
-      u: (ʹ:) v:u (0:ʹ) ʒ _  %^VOWXL: (%^CShort:) ;
+      u: (ʹ:) v:u (0:ʹ) ʒ _  BetweenStemAndConsGrade %^CCC2C: ;
         2SgVow (ʹ:|0:ʹ) ʒ _ Vow: [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^VOWSH:  %^CLong: %^RmVow: ;
 !! }}}
 
@@ -1233,14 +1241,14 @@ Rules
 !! used with
 !!  > .
  ǩ:j <=>   
- SurfLongVow (ʹ:|0:ʹ) ǩ: _    BetweenStemAndConsGrade %^CC2C: ;
-         SurfLongVow (ʹ:|0:ʹ)    _ ǩ: BetweenStemAndConsGrade %^CC2C: ;
+ SurfLongVow (ʹ:|0:ʹ) ǩ: _    BetweenStemAndPALAllo ((%^PALÄ:|%^PALE:) %^PAL:) %^CC2C: ;
+         SurfLongVow (ʹ:|0:ʹ)    _ ǩ: BetweenStemAndPALAllo ((%^PALÄ:|%^PALE:) %^PAL:) %^CC2C: ;
 
-  OnSetC [DbVow|Diphth] (ʹ:|0:ʹ) ǩ:   _ BetweenStemAndConsGrade %^CC2C: ;
-  OnSetC [DbVow|Diphth] (ʹ:|0:ʹ)  _  ǩ: BetweenStemAndConsGrade %^CC2C: ; 
+  OnSetC [DbVow|Diphth] (ʹ:|0:ʹ) ǩ:   _ BetweenStemAndPALAllo ((%^PALÄ:|%^PALE:) %^PAL:) %^CC2C: ;
+  OnSetC [DbVow|Diphth] (ʹ:|0:ʹ)  _  ǩ: BetweenStemAndPALAllo ((%^PALÄ:|%^PALE:) %^PAL:) %^CC2C: ; 
 
-  OnSetC  SurfLongVow   (ʹ:|0:ʹ) ǩ: (%ˈ:) _          %^VOWXL: (%^CShort:) ; 
-  OnSetC  SurfLongVow   (ʹ:|0:ʹ)          _ (%ˈ:) ǩ: %^VOWXL: (%^CShort:) ; 
+  OnSetC  SurfLongVow   (ʹ:|0:ʹ) ǩ: (%ˈ:) _ PALAllo ((%^PALÄ:|%^PALE:) %^PAL:)  %^CCC2C: ; 
+  OnSetC  SurfLongVow   (ʹ:|0:ʹ)          _ (%ˈ:) ǩ: PALAllo ((%^PALÄ:|%^PALE:) %^PAL:) %^CCC2C: ; 
 
 
 "Even syllabic nouns I, with extra lengthening of vowel V>VV and ǩ:ǥ"
@@ -1286,16 +1294,16 @@ Rules
 
 "Even syllabic verbs I, Voicing after long vowel or diphthong s:z s:z" 
 !! __@RULENAME@__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
-!! {{{
- s:z <=> OnSetC [Diphth|DbVow] (ʹ:|0:ʹ) s:       _          %^VOWL:   %^CShort: ; 
-         OnSetC [Diphth|DbVow] (ʹ:|0:ʹ)          _       s: %^VOWL:   %^CShort: ; 
-         OnSetC   Diphth       (ʹ:|0:ʹ) s:  %ˈ:  _          %^VOWXL: (%^CShort:) ; 
-         OnSetC   Diphth       (ʹ:|0:ʹ)          _ %ˈ:   s: %^VOWXL: (%^CShort:) ; 
-         OnSetC   AllDbVow     (ʹ:|0:ʹ) s: (%ˈ:) _          %^VOWXL: (%^CShort:) ; 
-         OnSetC   AllDbVow     (ʹ:|0:ʹ)          _ (%ˈ:) s: %^VOWXL: (%^CShort:) ; 
+ s:z <=> OnSetC [Diphth|DbVow] (ʹ:|0:ʹ) s:  _  BetweenStemAndConsGrade  %^CC2C: ; 
+         OnSetC [Diphth|DbVow] (ʹ:|0:ʹ) _   s: BetweenStemAndConsGrade  %^CC2C: ; 
+!€# mättʼt0õss%^V2VV%^CC2C
+!€0 mättʼtõõzz00
+         OnSetC   [Diphth|AllDbVow]  (ʹ:|0:ʹ) s:  %ˈ:  _  BetweenStemAndConsGrade %^CCC2C: ; 
+         OnSetC   [Diphth|AllDbVow]  (ʹ:|0:ʹ)  _ %ˈ:   s: BetweenStemAndConsGrade %^CCC2C: ; 
+
 !! deriving cieʹǩǩes+N+Sg+Gen: ceäkˈkaz
   OnSetC :Vow+ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] e: _ BetweenStemAndPALNo (%^PALNo:|%^PAL:) %^VC: ; 
-!! }}}
+
 
          
 
@@ -1303,8 +1311,8 @@ Rules
 "Even syllabic verbs I, third consonant loss" 
 !! __@RULENAME@__ - lgg:lǥ, Vow Ca Cx Cx:0, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants following consonant at coda that become single consonants in gradation
 !! {{{
- Cx:0 <=> SurfLongVow  (ʹ:|0:ʹ)  [s|r|l|p|d:] Cx: _ (%^VOWL:|%^VOWXL:) %^CShort: ;
-          SurfLongVow  (%{ʹ%}:) h: (ʹ:|0:ʹ) Cx:  _ (%^VOWL:|%^VOWXL:) %^CShort: ;
+ Cx:0 <=> SurfLongVow  (ʹ:|0:ʹ)  [s|r|l|p|d:] Cx: _ BetweenStemAndConsGrade %^CC2C: ;
+          SurfLongVow  (%{ʹ%}:) h: (ʹ:|0:ʹ) Cx:  _ BetweenStemAndConsGrade %^CC2C: ;
                 where Cx in (ŋ č c s) ;
 !! }}}
 
@@ -1312,7 +1320,7 @@ Rules
 !! __@RULENAME@__ - tt:đ
 !! {{{
 
- t:đ  <=> SurfLongVow (ʹ:|0:ʹ) _ t:0 (%^VOWL:|%^VOWXL:) %^CShort: ;
+ t:đ  <=> SurfLongVow (ʹ:|0:ʹ) _ t:0 BetweenStemAndConsGrade [%^CC2C:|%^CCC2C:] ;
 !! }}}
 
 
@@ -1327,8 +1335,8 @@ Rules
 "Even syllabic verbs I, second consonant loss t:0"
 !! __@RULENAME@__ -
 !! {{{
- t:0 <=> SurfLongVow              (ʹ:|0:ʹ) ([s|r|l]) t: _ (%^VOWL:|%^VOWXL:) %^CShort: ;
-         SurfLongVow (%{ʹ%}:) h: (ʹ:|0:ʹ)           t: _ (%^VOWL:|%^VOWXL:) %^CShort: ;
+ t:0 <=> SurfLongVow              (ʹ:|0:ʹ) ([s|r|l]) t: _ BetweenStemAndConsGrade  %^CC2C: ;
+         SurfLongVow (%{ʹ%}:) h: (ʹ:|0:ʹ)           t: _ BetweenStemAndConsGrade  %^CC2C: ;
 !! }}}
 
 "Even syllabic verbs I, second consonant loss p:0"
@@ -1341,15 +1349,15 @@ Rules
 "Even syllabic verbs I, second consonant loss k:0"
 !! __@RULENAME@__ -
 !! {{{
- k:0 <=> SurfLongVow  (ʹ:|0:ʹ)  [s|r|l|p] k:  _ (%^VOWL:|%^VOWXL:) %^CShort: ;
-!       SurfLongVow  (%{ʹ%}:) h: (ʹ:|0:ʹ) k: _ (%^VOWL:|%^VOWXL:) %^CShort: ;
+ k:0 <=> SurfLongVow  (ʹ:|0:ʹ)  [s|r|l|p] k:  _ BetweenStemAndConsGrade  %^CC2C: ;
+!       SurfLongVow  (%{ʹ%}:) h: (ʹ:|0:ʹ) k: _ BetweenStemAndConsGrade  %^CC2C: ;
 !! }}}
 
 "Even syllabic verbs I, second consonant loss ǩ:0"
 !! __@RULENAME@__ -
 !! {{{
  ǩ:0 <=>
-  SurfLongVow  (ʹ:|0:ʹ)  [s|r|l|p] ǩ:  _ (%^VOWL:|%^VOWXL:) %^CShort: ;
+  SurfLongVow  (ʹ:|0:ʹ)  [s|r|l|p] ǩ:  _ BetweenStemAndConsGrade  %^CC2C: ;
 !          SurfLongVow  (%{ʹ%}:) h: (ʹ:|0:ʹ) ǩ: _ (%^VOWL:|%^VOWXL:) %^CShort: ;
 !! }}}
 
@@ -1431,16 +1439,16 @@ Rules
 "Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m"
 !! __@RULENAME@__ - kåʹmrded+V+Imp+Sg2: kååʹmmerd 
  0:m <=> SurfLongVow (ʹ:|0:ʹ)  m _ [%{E1%}:] Cns:+ [%^IMPSG2:|%^INDPRSSG3:] ;
-        m _ %^VOWSH: %^CLong: ;
+        m _ BetweenStemAndConsGrade %^C2CC: ;
 
-!€# ooum0%^VOWSH%^CLongu
+!€# ooum0%^VV2V%^C2CCu
 !€0 0oumm00u
 
 
 "Consonant lengthening 0:b"
 !! __@RULENAME@__ - 
 !! {{{
- 0:b <=>  2ShortVow  (ʹ:|0:ʹ) [l] b _ Vow: Cns [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] (%^PALNo:) ; 
+ 0:b <=>  2ShortVow  (ʹ:|0:ʹ) [l] b _ Vow: Cns BetweenStemAndConsGrade %^C2CC: ;
 !! }}}
 
 "Consonant lengthening 0:p"
@@ -1460,25 +1468,25 @@ Rules
 "Consonant lengthening 0:d"
 !! __@RULENAME@__ - juurd+N+Sg+Gen: jurddi
 !! {{{
- 0:d <=> 2ShortVow (ʹ:) (r) d _ (i:)  [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ;
+ 0:d <=> 2ShortVow (ʹ:) (r) d _ (i:)  BetweenStemAndConsGrade %^C2CC: ;
 !! }}}
 
 "Consonant lengthening 0:t"
 !! __@RULENAME@__ - 
 !! {{{
- 0:t <=> 2ShortVow (ʹ:) (s) :t _ [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ;
+ 0:t <=> 2ShortVow (ʹ:) (s) :t _ BetweenStemAndConsGrade %^C2CC: ;
 !! }}}
 
 "Consonant lengthening 0:c"
 !! __@RULENAME@__ - 
 !! {{{
- 0:c <=>  2ShortVow  (ʹ:|:ʹ) p c _ [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ;
+ 0:c <=>  2ShortVow  (ʹ:|:ʹ) p c _ BetweenStemAndConsGrade %^C2CC: ;
 !! }}}
 
 "Consonant lengthening 0:đ"
 !! __@RULENAME@__ - čââʹđ+N+Sg+Gen: čâđđam
 !! {{{
- 0:đ <=>  2ShortVow  (ʹ:)  đ _ [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ;
+ 0:đ <=>  2ShortVow  (ʹ:)  đ _ BetweenStemAndConsGrade %^C2CC: ;
 !! }}}
 
 "Consonant lengthening 0:l"
@@ -1540,53 +1548,53 @@ Rules
 "Consonant X3 lengthening after diphthong in vertical line %ˈ "
 !! __@RULENAME@__ - used in +N+Sg+Ill __jeäll:jiâlˈlu, __
 !!b c č ǯ d đ g ǧ k ǩ l m n p r s š t v also htˈt nˈnj
- 0:%ˈ <=> Diphth (ʹ:|0:ʹ)     b  _ b      (e: s:) [[%^VOWSH:|%^VOWXSH:] %^CLong:|(%^VOWRaise:) ((%^PALE:|%^PALÄ:) %^PAL:) %^CC2CCC:] ;
-          Diphth (ʹ:|0:ʹ)     c  _ c      (e: s:) [[%^VOWSH:|%^VOWXSH:] %^CLong:|(%^VOWRaise:) ((%^PALE:|%^PALÄ:) %^PAL:) %^CC2CCC:] ;
-          Diphth (ʹ:|0:ʹ)     č  _ č      (e: s:) [[%^VOWSH:|%^VOWXSH:] %^CLong:|(%^VOWRaise:) ((%^PALE:|%^PALÄ:) %^PAL:) %^CC2CCC:] ;
-          Diphth (ʹ:|0:ʹ)     ǯ  _ ǯ      (e: s:) [[%^VOWSH:|%^VOWXSH:] %^CLong:|(%^VOWRaise:) ((%^PALE:|%^PALÄ:) %^PAL:) %^CC2CCC:] ;
-          Diphth (ʹ:|0:ʹ)     d  _ d      (e: s:) [[%^VOWSH:|%^VOWXSH:] %^CLong:|(%^VOWRaise:) ((%^PALE:|%^PALÄ:) %^PAL:) %^CC2CCC:] ;
-          Diphth (ʹ:|0:ʹ)     đ  _ đ      (e: s:) [[%^VOWSH:|%^VOWXSH:] %^CLong:|(%^VOWRaise:) ((%^PALE:|%^PALÄ:) %^PAL:) %^CC2CCC:] ;
-          Diphth (ʹ:|0:ʹ)     g: _ g:     (e: s:) [[%^VOWSH:|%^VOWXSH:] %^CLong:|(%^VOWRaise:) ((%^PALE:|%^PALÄ:) %^PAL:) %^CC2CCC:] ;
-          Diphth (ʹ:|0:ʹ)     ǧ: _ ǧ:     (e: s:) [[%^VOWSH:|%^VOWXSH:] %^CLong:|(%^VOWRaise:) ((%^PALE:|%^PALÄ:) %^PAL:) %^CC2CCC:] ;
-          Diphth (ʹ:|0:ʹ)     k: _ k:     (e: s:) [[%^VOWSH:|%^VOWXSH:] %^CLong:|(%^VOWRaise:) ((%^PALE:|%^PALÄ:) %^PAL:) %^CC2CCC:] ;
-          Diphth (ʹ:|0:ʹ)     ǩ: _ ǩ:     (e: s:) [[%^VOWSH:|%^VOWXSH:] %^CLong:|(%^VOWRaise:) ((%^PALE:|%^PALÄ:) %^PAL:) %^CC2CCC:] ;
-          Diphth (ʹ:|0:ʹ)     l  _ l      (e: s:) [[%^VOWSH:|%^VOWXSH:] %^CLong:|(%^VOWRaise:) ((%^PALE:|%^PALÄ:) %^PAL:) %^CC2CCC:] ;
+ 0:%ˈ <=> Diphth (ʹ:|0:ʹ)     b  _ b     BetweenStemAndConsGrade %^CC2CCC: ;
+          Diphth (ʹ:|0:ʹ)     c  _ c     BetweenStemAndConsGrade %^CC2CCC: ;
+          Diphth (ʹ:|0:ʹ)     č  _ č     BetweenStemAndConsGrade %^CC2CCC: ;
+          Diphth (ʹ:|0:ʹ)     ǯ  _ ǯ     BetweenStemAndConsGrade %^CC2CCC: ;
+          Diphth (ʹ:|0:ʹ)     d  _ d     BetweenStemAndConsGrade %^CC2CCC: ;
+          Diphth (ʹ:|0:ʹ)     đ  _ đ     BetweenStemAndConsGrade %^CC2CCC: ;
+          Diphth (ʹ:|0:ʹ)     g: _ g:    BetweenStemAndConsGrade %^CC2CCC: ;
+          Diphth (ʹ:|0:ʹ)     ǧ: _ ǧ:    BetweenStemAndConsGrade %^CC2CCC: ;
+          Diphth (ʹ:|0:ʹ)     k: _ k:    BetweenStemAndConsGrade %^CC2CCC: ;
+          Diphth (ʹ:|0:ʹ)     ǩ: _ ǩ:    BetweenStemAndConsGrade %^CC2CCC: ;
+          Diphth (ʹ:|0:ʹ)     l  _ l     BetweenStemAndConsGrade %^CC2CCC: ;
 !€# kuâl0l%^CC2CCC%>a
 !€0 kuâlˈl00a
-          Diphth (ʹ:|0:ʹ)     m  _ m      (e: s:) [[%^VOWSH:|%^VOWXSH:] %^CLong:|(%^VOWRaise:) ((%^PALE:|%^PALÄ:) %^PAL:) %^CC2CCC:] ;
-          Diphth (ʹ:|0:ʹ)     n  _ n  (j) (e: s:) [[%^VOWSH:|%^VOWXSH:] %^CLong:|(%^VOWRaise:) ((%^PALE:|%^PALÄ:) %^PAL:) %^CC2CCC:] ;
-          Diphth (ʹ:|0:ʹ)     p  _ p      (e: s:) [[%^VOWSH:|%^VOWXSH:] %^CLong:|(%^VOWRaise:) ((%^PALE:|%^PALÄ:) %^PAL:) %^CC2CCC:] ;
-          Diphth (ʹ:|0:ʹ)     r  _ r      (e: s:) [[%^VOWSH:|%^VOWXSH:] %^CLong:|(%^VOWRaise:) ((%^PALE:|%^PALÄ:) %^PAL:) %^CC2CCC:] ;
-          Diphth (ʹ:|0:ʹ)     s  _ s      (e: s:) [[%^VOWSH:|%^VOWXSH:] %^CLong:|(%^VOWRaise:) ((%^PALE:|%^PALÄ:) %^PAL:) %^CC2CCC:] ;
-          Diphth (ʹ:|0:ʹ)     š  _ š      (e: s:) [[%^VOWSH:|%^VOWXSH:] %^CLong:|(%^VOWRaise:) ((%^PALE:|%^PALÄ:) %^PAL:) %^CC2CCC:] ;
-          Diphth (ʹ:|0:ʹ) (h) t _ t       (e: s:) [[%^VOWSH:|%^VOWXSH:] %^CLong:|(%^VOWRaise:) ((%^PALE:|%^PALÄ:) %^PAL:) %^CC2CCC:] ;
-          Diphth (ʹ:|0:ʹ)     v _ v       (e: s:) [[%^VOWSH:|%^VOWXSH:] %^CLong:|(%^VOWRaise:) ((%^PALE:|%^PALÄ:) %^PAL:) %^CC2CCC:] ;
+          Diphth (ʹ:|0:ʹ)     m  _ m     BetweenStemAndConsGrade %^CC2CCC: ;
+          Diphth (ʹ:|0:ʹ)     n  _ n (j) BetweenStemAndConsGrade %^CC2CCC: ;
+          Diphth (ʹ:|0:ʹ)     p  _ p     BetweenStemAndConsGrade %^CC2CCC: ;
+          Diphth (ʹ:|0:ʹ)     r  _ r     BetweenStemAndConsGrade %^CC2CCC: ;
+          Diphth (ʹ:|0:ʹ)     s  _ s     BetweenStemAndConsGrade %^CC2CCC: ;
+          Diphth (ʹ:|0:ʹ)     š  _ š     BetweenStemAndConsGrade %^CC2CCC: ;
+          Diphth (ʹ:|0:ʹ) (h) t _ t      BetweenStemAndConsGrade %^CC2CCC: ;
+          Diphth (ʹ:|0:ʹ)     v _ v      BetweenStemAndConsGrade %^CC2CCC: ;
 
 
 !! !Removing X3 length mark
 "Removing Consonant X3 length mark after diphthong in vertical line %ˈ LEFT ARROW"
 !! __@RULENAME@__ - deriving 
 !!b c č ǯ d đ g ǧ k ǩ l m n p r s š t v also htˈt nˈnj
-!! {{{
- %ˈ:0 <= Diphth (ʹ:|0:ʹ)     b _ b     [[%^VOWL:|%^VOWXL:] %^CShort:] ;
-         Diphth (ʹ:|0:ʹ)     c _ c     [[%^VOWL:|%^VOWXL:] %^CShort:] ;
-         Diphth (ʹ:|0:ʹ)     č _ č     [[%^VOWL:|%^VOWXL:] %^CShort:] ;
-         Diphth (ʹ:|0:ʹ)     ǯ _ ǯ     [[%^VOWL:|%^VOWXL:] %^CShort:] ;
-         Diphth (ʹ:|0:ʹ)     d _ d     [[%^VOWL:|%^VOWXL:] %^CShort:] ;
-         Diphth (ʹ:|0:ʹ)     đ _ đ     [[%^VOWL:|%^VOWXL:] %^CShort:] ;
-         Diphth (ʹ:|0:ʹ)     g _ g     [[%^VOWL:|%^VOWXL:] %^CShort:] ;
-         Diphth (ʹ:|0:ʹ)     ǧ _ ǧ     [[%^VOWL:|%^VOWXL:] %^CShort:] ;
-         Diphth (ʹ:|0:ʹ)     k _ k     [[%^VOWL:|%^VOWXL:] %^CShort:] ;
-         Diphth (ʹ:|0:ʹ)     ǩ _ ǩ     [[%^VOWL:|%^VOWXL:] %^CShort:] ;
-         Diphth (ʹ:|0:ʹ)     l _ l     [[%^VOWL:|%^VOWXL:] %^CShort:] ;
-         Diphth (ʹ:|0:ʹ)     m _ m     [[%^VOWL:|%^VOWXL:] %^CShort:] ;
-         Diphth (ʹ:|0:ʹ)     n _ n (j) [[%^VOWL:|%^VOWXL:] %^CShort:] ;
-         Diphth (ʹ:|0:ʹ)     p _ p     [[%^VOWL:|%^VOWXL:] %^CShort:] ;
-         Diphth (ʹ:|0:ʹ)     r _ r     [[%^VOWL:|%^VOWXL:] %^CShort:] ;
-         Diphth (ʹ:|0:ʹ)     s _ s     [[%^VOWL:|%^VOWXL:] %^CShort:] ;
-         Diphth (ʹ:|0:ʹ)     š _ š     [[%^VOWL:|%^VOWXL:] %^CShort:] ;
-         Diphth (ʹ:|0:ʹ) (h) t _ t     [[%^VOWL:|%^VOWXL:] %^CShort:] ;
-         Diphth (ʹ:|0:ʹ)     v _ v     [[%^VOWL:|%^VOWXL:] %^CShort:] ;
+!! {{{BetweenStemAndConsGrade %^C2CC:
+ %ˈ:0 <= Diphth (ʹ:|0:ʹ)     b _ b     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     c _ c     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     č _ č     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     ǯ _ ǯ     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     d _ d     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     đ _ đ     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     g _ g     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     ǧ _ ǧ     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     k _ k     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     ǩ _ ǩ     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     l _ l     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     m _ m     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     n _ n (j) BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     p _ p     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     r _ r     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     s _ s     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     š _ š     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ) (h) t _ t     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     v _ v     BetweenStemAndConsGrade %^CCC2CC: ;
 !! }}}
 
 "Removing Consonant X3 length mark after diphthong in vertical line %ˈ RIGHT ARROW"
