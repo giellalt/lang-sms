@@ -362,14 +362,14 @@ Rules
 
 "Even syllabic verbs I, vowel shortening o:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
- o:0 <=> OnSetC _ o: (ʹ:|0:ʹ) [u m:+ |LongC|Cns: :Cns*] [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ;
-!€# ooum0%^VOWSH%^CLongu
+ o:0 <=> OnSetC _ o: (ʹ:|0:ʹ) [u m:+ |LongC|Cns: :Cns*] [ %^VV2V: ] ;
+!€# ooum0%^VV2V%^C2CCu
 !€0 0oumm00u
     OnSetC _ o: (ʹ:|0:ʹ) [LongC|Cns: :Cns*] %^VV2V: ;
 !€# šoomm%^VV2V%^VOWRaise%>u
 !€0 š0omm000u
 
-         [Cns:+|:Cns+] _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] (%^VOWSH: (%^CLong:)|%^VC:) %^RmVow: ; 
+         [Cns:+|:Cns+] _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^RmVow: ; 
 
 
 "Even syllabic verbs I, vowel shortening a:0"
@@ -529,16 +529,17 @@ Rules
 
 "Even syllabic verbs I, vowel lowering o:å"
 !! __@RULENAME@__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in poorrâd
-!! {{{
- o:å <=> OnSetC    _ o:å (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^VOWL: %^CShort:)                   %^VOWLower: (%^VOWFront:|%^VOWBack:) (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:) %^PAL:) RBound ;
-         OnSetC o: _     (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^VOWSH: %^CLong:|%^VOWL: %^CShort:) %^VOWLower: (%^VOWFront:|%^VOWBack:) (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:) %^PAL:) RBound ;
-         OnSetC    _     (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^VOWSH: %^CLong:)                   %^VOWLower: (%^VOWFront:|%^VOWBack:) (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:) %^PAL:) RBound ;
+ o:å <=> OnSetC    _ o:å (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  %^VOWLower:  ;
+         OnSetC o: _     (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^VV2V:) %^VOWLower:  ;
+!€# poo0rr%^V2VV%^VOWLower%^PAL%>e
+!€0 p0åʹrr0000e
+         OnSetC    _     (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]   %^VOWLower: ;
 ! juʹrdded+V+Cond+Sg1: joordčem
-         OnSetC 0:å _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^VOWL: %^CShort:)  %^VOWLower: (%^VOWFront:|%^VOWBack:) (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:) %^PAL:) RBound ;
+         OnSetC 0:å _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] %^V2VV:   %^VOWLower: ;
 ! juʹrdded > joordam
-         OnSetC    _ (u:|i:) (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^VOWL: %^CShort:) %^VOWLower: (%^VOWFront:|%^VOWBack:) (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:) %^PAL:) RBound ;
-         OnSetC    _ ((ʹ:) (v:u|j:i)) (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^VOWSH: %^CLong:) %^VOWLower: (%^VOWFront:|%^VOWBack:) (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:) %^PAL:) RBound ;
-!! }}}
+         OnSetC    _ (u:|i:) (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] %^VOWLower: ;
+         OnSetC    _ ((ʹ:) (v:u|j:i)) (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] %^VOWLower: ;
+
 
 
 "Even syllabic verbs I, vowel lowering i:e"
@@ -1241,6 +1242,14 @@ Rules
   OnSetC  SurfLongVow   (ʹ:|0:ʹ) ǩ: (%ˈ:) _          %^VOWXL: (%^CShort:) ; 
   OnSetC  SurfLongVow   (ʹ:|0:ʹ)          _ (%ˈ:) ǩ: %^VOWXL: (%^CShort:) ; 
 
+
+"Even syllabic nouns I, with extra lengthening of vowel V>VV and ǩ:ǥ"
+!! __@RULENAME@__ 
+!! used with
+!!  > .
+ ǩ:ǥ <=>   
+ Vow: (ʹ:) ǩ: (%ˈ:) _    BetweenStemAndPALAllo %^PALNo: [%^CC2C:|%^CCC2C:] ;
+ Vow: (ʹ:) _ (%ˈ:) ǩ: BetweenStemAndPALAllo %^PALNo: [%^CC2C:|%^CCC2C:] ;
 
 
 
