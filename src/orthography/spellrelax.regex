@@ -1,11 +1,11 @@
 # Skolt Saami ordinary spellrelax file.
 
 đ (->) ð ,
-ä (->) æ , # in case Norw writers use their own letter
-Ä (->) Æ , # in case Norw writers use their own letter
+ä (->) æ , # ä, accept also Norwegian letter
+Ä (->) Æ , # Ä, accept also Norwegian letter
 á (->) á , # in case there are NSa names in the base
 Á (->) Á , # in case there are NSa names in the base
-æ (->) ä , # in case there are Norw names in the base
+æ (->) ä , # Norw names in the base, accept also ä
 æ (->) ä , # etc.
 Æ (->) Ä , #  etc.
 Æ (->) Ä , # etc.
@@ -13,13 +13,13 @@
 ø (->) ö , # etc.
 Ø (->) Ö , #  etc.
 Ø (->) Ö , # etc.
-â (->) â , # combining acute
+â (->) â , # â, accept also  combining acute
 Â (->) Â , # combining acute
 å (->) å , # combining ring
 Å (->) Å , # combining ring
 õ (->) õ , # combining tilde
 Õ (->) Õ , # combining tilde
-č (->) č , # combining caron for the precomposed letter
+č (->) č , # č, accepts also  combining caron for the precomposed letter
 Č (->) Č , # etc.
 ǯ (->) ǯ , # etc.
 Ǯ (->) Ǯ , # etc.
@@ -31,13 +31,17 @@
 Š (->) Š , # etc.
 ž (->) ž , # etc.
 Ž (->) Ž , # etc.
-ʹ (->) ′ , # U+02CA MODIFIER LETTER PRIM  written as U+2032 PRIME        
-ʹ (->) ´ , # U+02CA MODIFIER LETTER PRIME  written as U+00B4 ACUTE ACCENT 
-ʹ (->) ˊ , # U+02B9 MODIFIER LETTER PRIME  written as  U+02CA MODIFIER LETTER ACUTE ACCENT
-ˈ (->) ' , # U+02C8 MODIFYER LETTER VERTICAL LINE written as U+0027 APOSTROPHE   
-ˈ (->) 0 , # U+02C8 MODIFYER LETTER VERTICAL LINE written as ZERO
-ʼ (->) ’ ,  # U+02BC MODIFIER LETTER APOSTROPHE written as U+2019 RIGHT SINGLE QUOTATION MARK
-ạ (->) a ,    # Here we remove the dot under vowel. 
+ǧ (->) ğ , # ǧ, accepts also Latin small letter g with breve U+011F (Valtioneuvosto)
+Ǧ (->) Ğ , # Ǧ, accepts also Latin capital letter G with breve U+011E (Valtioneuvosto)
+ʹ (->) ′ , # U+02B9 MODIFIER LETTER PRIME, accept also U+2032 PRIME        
+ʹ (->) ´ , # U+02B9 MODIFIER LETTER PRIME, accept also U+00B4 ACUTE ACCENT 
+ʹ (->) ˊ , # U+02B9 MODIFIER LETTER PRIME, accept also  U+02CA MODIFIER LETTER ACUTE ACCENT
+ˈ (->) ' , # U+02C8 MODIFIER LETTER VERTICAL LINE, accept also U+0027 APOSTROPHE   
+ˈ (->) 0 , # U+02C8 MODIFIER LETTER VERTICAL LINE, accept also ZERO
+ʼ (->) ’ ,  # U+02BC MODIFIER LETTER APOSTROPHE, accept also U+2019 RIGHT SINGLE QUOTATION MARK
+#
+# THESE SHOULD BE CHECKED
+ạ (->) a ,    #THIS REQUIRES  LETTER WITH DOT BELOWbut accepts also plain letter
 ẹ (->) e ,    # Here we remove the dot under vowel. 
 ị (->) i ,    # Here we remove the dot under vowel. 
 ọ (->) o ,    # Here we remove the dot under vowel. 
