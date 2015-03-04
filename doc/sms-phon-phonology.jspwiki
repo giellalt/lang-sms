@@ -126,7 +126,7 @@ End of alphabet definitions
 
  * LongV2SH = [a:0 a|â:0 â|ä:0 ä|e:0 e|i:0 i|å:0 å|o:0 o|u:0 u|õ:0 õ|a:0 a:ä|â:0 â:õ|ä:0 ä:a|ä:0 ä:a|e:0 e:i|i:0 i:e|å:0 å:o|o:0 o:u|u:0 u:o|õ:0 õ:â] ;  
 
- * Diphth = [e â|e:i â:õ|e ä|e:i â:e|e:i ä:â|e:i ä:e|i â|i:e â:ä|i â:e|i e|i:e e:â|i:e e:ä|i e:õ|i õ|i:e õ:â|i:e õ:ä|u â|u â:õ|u e|u e:â|u â:e|u e:õ|u e:ä|u õ|u õ:â|u õ:e|u å|u å:ä|u å:e|u ä|u ä:å|u ä:e] ;  
+ * Diphth = [e â|e:i â:õ|e ä|e:i â:e|e:i ä:â|e:i ä:e|i â|i:e â:ä|i â:e|i e|i:e e:â|i:e e:ä|i e:õ|i õ|i:e õ:â|i:e õ:ä|u â|u â:õ|u e|u e:â|u â:e|u e:õ|u e:ä|u õ|u õ:â|u õ:e|u å|u å:ä|u å:e| u å:ẹ|u ä|u ä:å|u ä:ẹ|u ä:e] ;  
 
  * DbVow = [a a|a:ä a:ä|i i|i:e i:e|o o|o:å o:å|õ õ|õ:â õ:â|u u|u:o u:o|â â|â:õ â:õ|e e|e e:ä|e ä:e|e:i e:i|å å|å:o å:o|ä ä|ä:a ä:a] ;  
 
@@ -230,7 +230,7 @@ possible triggers before PALE PALÄ
 
 possible triggers between VowHeight and word end
 {{{
- * BetweenVowHeightAndMorph = [(%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) (X3:) ((%^PALE:|%^PALÄ:) %^PAL:|%^PALNo:)] ;  
+ * BetweenVowHeightAndMorph = [(%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) (X3:) ((%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:|%^PALNo:)] ;  
 }}}
 
 possible triggers between word end and consonant grade
@@ -341,8 +341,10 @@ __Even syllabic verbs I, diphthong raising beginning with e:i ä:â__ - deriving
 
 __Even syllabic verbs I, diphthong raising beginning with e:i ä:e__ 
 
-__Even syllabic verbs I, diphthong raising beginning with ä:a u__ - deriving läullad > laullum
+__Even syllabic verbs I, diphthong raising beginning with e:i ä:ẹ__ 
 
+
+__Even syllabic verbs I, diphthong raising beginning with ä:a u__ - deriving läullad > laullum
 
 
 !LOWERING 
@@ -414,6 +416,9 @@ __Even syllabic verbs I, diphthong opening after u e:õ__ - deriving vueʹlǧǧe
 
 !Vowel Palatalization
 __diphthong allophonic realization in palatalization u å:e__ - deriving 
+
+!Vowel Palatalization
+__diphthong allophonic realization in palatalization u å:ẹ__ - deriving 
 
 !Vowel Lowering and Fronting
 

@@ -59,6 +59,80 @@ endif # CAN_HFST
 #################################################
 #### Add language-specific build rules here: ####
 
+analyser-%.hfst: analyser-%.tmp.hfst                        \
+					filters/remove-modifier-letter-vertical-line.hfst   \
+					filters/remove-letter-dot-below.hfst            
+	$(AM_V_RGX2FST)$(PRINTF) "                               \
+				@\"$<\"                                      \
+			.o. @\"filters/remove-letter-dot-below.hfst\" \
+			.o. @\"filters/remove-modifier-letter-vertical-line.hfst\"   \
+			;" \
+		| $(HFST_REGEXP2FST) $(HFST_FLAGS) -S --xerox-composition=ON \
+		| $(HFST_INVERT) \
+		> $@
+
+# We need to specify -gt- to avoid applying the filters to the raw fst:
+generator-gt-%.hfst: generator-gt-%.tmp.hfst                \
+					filters/remove-modifier-letter-vertical-line.hfst   \
+					filters/remove-letter-dot-below.hfst            
+	$(AM_V_RGX2FST)$(PRINTF) "                               \
+				@\"$<\"                                      \
+			.o. @\"filters/remove-letter-dot-below.hfst\" \
+			.o. @\"filters/remove-modifier-letter-vertical-line.hfst\"   \
+			;" \
+		| $(HFST_REGEXP2FST) $(HFST_FLAGS) -S --xerox-composition=ON \
+		> $@
+
+# We need to specify -gt- to avoid applying the filters to the raw fst:
+analyser-gt-%.xfst: analyser-gt-%.tmp.xfst                  \
+					filters/remove-modifier-letter-vertical-line.xfst   \
+					filters/remove-letter-dot-below.xfst            
+	$(AM_V_XFST)$(PRINTF) "read regex                        \
+				@\"$<\"                                      \
+			.o. @\"filters/remove-letter-dot-below.xfst\" \
+			.o. @\"filters/remove-modifier-letter-vertical-line.xfst\"   \
+			;\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST) $(VERBOSITY)
+
+# Special case for the disamb analyser, since it follows the same filename
+# pattern as the raw fst:
+analyser-disamb-gt-%.xfst: analyser-disamb-gt-%.tmp.xfst    \
+					filters/remove-modifier-letter-vertical-line.xfst   \
+					filters/remove-letter-dot-below.xfst            
+	$(AM_V_XFST)$(PRINTF) "read regex                        \
+				@\"$<\"                                      \
+			.o. @\"filters/remove-letter-dot-below.xfst\" \
+			.o. @\"filters/remove-modifier-letter-vertical-line.xfst\"   \
+			;\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST) $(VERBOSITY)
+
+generator-%.xfst: generator-%.tmp.xfst                      \
+					filters/remove-modifier-letter-vertical-line.xfst   \
+					filters/remove-letter-dot-below.xfst            
+	$(AM_V_XFST)$(PRINTF) "read regex                        \
+				@\"$<\"                                      \
+			.o. @\"filters/remove-letter-dot-below.xfst\" \
+			.o. @\"filters/remove-modifier-letter-vertical-line.xfst\"   \
+			;\n\
+		 invert net\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST) $(VERBOSITY)
+
+# Do NOT apply the accent removal filters to the normative
+# dictionary generator (both hfst and xfst):
+generator-dict-gt-norm.hfst: generator-dict-gt-norm.tmp.hfst
+	$(AM_V_CP)cp -f $< $@
+
+generator-dict-gt-norm.xfst: generator-dict-gt-norm.tmp.xfst
+	$(AM_V_XFST)$(PRINTF) "\
+		 load stack $<\n\
+		 invert net\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST) $(VERBOSITY)
+
+
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
 ##################################################################
