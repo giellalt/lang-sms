@@ -72,7 +72,7 @@ Alphabet
  %^VOWRaise:0 !!= * @CODE@ e>i, ä>e 
  %^VOWBack:0	     !!= * @CODE@ Backing e>õ, e>â
  %^VOWFront:0	     !!= * @CODE@ Fronting
- %^PAL:0 %^PALNo:0 %^PALE:0 %^PALÄ:0   !!= * @CODE@ Palatalisation
+ %^PAL:0 %^PALNo:0 %^PALE:0 %^PALÄ:0 %^PALẸ:0   !!= * @CODE@ Palatalisation
  %^VC:0         !!= * @CODE@ Voicing s:z š:ž
  %^Â:0		!!= * @CODE@ Indicates placement of â in stem
 
@@ -281,7 +281,7 @@ BetweenVowHeightAndMorph = [(%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) (X3
 !! }}}
 
 !! possible triggers between word end and consonant grade
-BetweenStemAndConsGrade = [(%^V2VV:|%^VV2V:) (%^VOWRaise:|%^VOWLower:) (%^PALNo:|(%^PALE:|%^PALÄ:) %^PAL:)] ;
+BetweenStemAndConsGrade = [(%^V2VV:|%^VV2V:) (%^VOWRaise:|%^VOWLower:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:)] ;
 
 !! neutral to vowel height and backness
 !! {{{
@@ -796,9 +796,12 @@ Rules
 
 "Even syllabic verbs I, relative vowel lengthening 0:ä"
 !! __@RULENAME@__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
- 0:ä <=> OnSetC _ ä (ʹ:|0:ʹ) Cns:+ %^V2VV: (%^CC2C:) RBound ;
+ 0:ä <=> OnSetC _ ä (u|i) (ʹ:|0:ʹ) Cns:+ %^V2VV: ;
+! OnSetC _ ä  (ʹ:|0:ʹ) Cns:+ %^V2VV: (%^CC2C:) RBound ;
 !€# 0äldd%^V2VV%^CC2C
 !€0 ääld000
+!€# j0äuʹrr%^V2VV%^CC2C
+!€0 jääuʹr000
  OnSetC _ [å:ä|ä|a:ä] RelVowLengthening ; 
 !Distinguishing mainstam and maainstam
 !- kååʹmmerd, maainâst Vowel lengthening in INDPRSSG3 and IMPSG2
@@ -1168,12 +1171,15 @@ Rules
 "Even syllabic verbs I, cg for r" 
 !! __@RULENAME@__ - used with  võrr:võõr
  r:0 <=>
- SurfLongVow (ʹ:|0:ʹ) r: _    BetweenStemAndConsGrade %^CC2C: ;
+ SurfLongVow (u|i) (ʹ:|0:ʹ) r: _    BetweenStemAndConsGrade %^CC2C: ;
 !  [SurfLongVow (ʹ:|0:ʹ)|u: (ʹ:) v:u (0:ʹ)] r: _  [%^V2VV: ((%^PALE:|%^PALÄ:) %^PAL:|%^PALNo:) %^CC2C:] ;
 !€# v0õrr%^V2VV%^CC2C
 !€0 võõr000
 !€# paarr%^CC2C
 !€0 paar00
+!€# j0äuʹrr%^V2VV%^CC2C
+!€0 jääuʹr000
+
           [DbVow|Diphth] (ʹ:|0:ʹ) r: _  [%^St2W:|%^VOWL: %^CShort:] ; 
 
 
