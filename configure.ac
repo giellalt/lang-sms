@@ -203,6 +203,9 @@ AC_CONFIG_FILES([tools/shellscripts/usms-gt.sh], \
 
 #### BEGIN: Add language-specific scripts below here: ####
 
+AC_CONFIG_FILES([test/src/morphology/test-verb-generation.sh], \
+      [chmod a+x test/src/morphology/test-verb-generation.sh])
+
 ############ END: Language-specific scripts. #############
 
 # This must be near the end of all configure.ac files:
