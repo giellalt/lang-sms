@@ -24,8 +24,14 @@ GT_LEXC_SRCS_L1_L2=\
 				stems/exceptions.lexc \
 				stems/punctuation.lexc \
 				stems/adjectives_newwords.lexc \
+				stems/adpositions_newwords.lexc \
+				stems/adverbs_newwords.lexc \
+				stems/conjunctions_newwords.lexc \
 				stems/nouns_newwords.lexc \
+				stems/particles_newwords.lexc \
+				stems/pronouns_newwords.lexc \
 				stems/propernouns_newwords.lexc \
+				stems/verbs_newwords.lexc \
 				affixes/adjectives.lexc \
 				affixes/adverbs.lexc \
 				affixes/nouns.lexc \
