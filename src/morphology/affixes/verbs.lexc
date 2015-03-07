@@ -556,24 +556,64 @@ LEXICON V_REÄKKAD
 ! ** Yaml: __V-reakkad__
 ! In the lexicon ''@LEXNAME@''
 ! reäkkad:reäkk
-! Stem is strong
-! diphthong
-+V+Ind+Prs:		TEEVVAD-PRS ;
-+V+Ind+Prt:		TEEVVAD-PRT ;
-+V+Imprt:			TEEVVAD-IMPRT ;
-+V:%^VOWL%^CShort%> VSUF-I-POTKOND ; !WG
-+V+Pot+Sg3:%^VOWL%^CShort%>ež	FINAL1 ; !WG
-+V+Inf:%>ad FINAL1 ;
-+V+PrsPrc:%>ai FINAL1 ;
-+V+PrfPrc:%>am FINAL1 ;
-+V+ActEss:%>men FINAL1 ;
-+V+Pass+PrfPrc:%^VOWSH%^CLong%^VOWRaise%>um FINAL1 ;
-+V+GerTemp:%^VOWL%^CShort%>een FINAL1 ;
-+V+GerInstr:%^VOWL%^CShort%>eeʹl FINAL1 ;
-+V+Actio:%>am FINAL1 ;
-+V+VAbess:%^VOWL%^CShort%>kâni FINAL1 ;		!WG
-+V+VAbess:%^VOWL%^CShort%>kani FINAL1 ;		!WG
-+V+VAbess:%^VOWL%^CShort%>ǩeânai FINAL1 ;		!WG
+!!
+! 1. The Ind.Prs.Sg3 form is a single syllable
+! 1.2 The infinitive ends in ad
+! 1.2.1 Has gradation
+! 1.2.1.1 Diphthong 
+! The stem is strong
+! Relative grade indicates
+! W => St
+! St => XSt
+! XSt == XSt
+! Monophthong
+! Raising 
+! FORMS
+! (1) +V+Inf: reäkkad
+!   Ind.Prs.Pl1-Pl2, Ind.Prt.ConNeg
+!   Imprt.Pl1-Pl2-Pl3, ActEss, Actio, PrsPrc, PrfPrc
+! (2) +V+Ind+Prs+Sg3: reäkk
+! (3) +V+Ind+Prs+Pl3: reäkˈka
+! (4) +V+Ind+Prt+Pl3: riâkˈku
+!   Ind.Prt.Sg1-Sg2-4
+! (5) +V+Imprt+Sg2: reäǥǥ
+!   Ind.Prs.Sg1-Sg2-4-ConNeg
+!   Ind.Prt.Sg3-Pl1-Pl2
+!   Imprt.2.ConNeg
+!   VAbe, GerTemp, GerInstr
+!   Cond-Pot
+! (6) +V+Pot+Sg3: reäǥǥaž
+! (7) +V+Imprt+Sg3: reäǥǥas
+! (8) +V+Imprt+13+ConNeg: riâkˈku
+!    Pass.PrfPrc
+!
++V: VSUF-INF_AD ; !1
++V: VSUF-IND-PRS-SG3_AD ; !2
++V+Ind+Prs+Pl3:%^CC2CCC%>a FINAL1 ; !3
++V:%^VOWRaise%^CC2CCC%> VSUF-IND-PRT-PL3_AD ; !4
++V:%^V2VV%> VSUF-I-POTKOND_AD ; !5
++V+Pot+Sg3:%^V2VV%>až   FINAL1 ; !6
++V+Imprt+Sg3:%^V2VV%>as FINAL1 ; !7
++V:%^VOWRaise%^CC2CCC VSUF-IMPRT-13-CONNEG_AD ; !8
+
+
+!!
+!+V+Ind+Prs:		TEEVVAD-PRS ;
+!+V+Ind+Prt:		TEEVVAD-PRT ;
+!+V+Imprt:			TEEVVAD-IMPRT ;
+!+V:%^VOWL%^CShort%> VSUF-I-POTKOND ; !WG
+!+V+Pot+Sg3:%^VOWL%^CShort%>ež	FINAL1 ; !WG
+!+V+Inf:%>ad FINAL1 ;
+!+V+PrsPrc:%>ai FINAL1 ;
+!+V+PrfPrc:%>am FINAL1 ;
+!+V+ActEss:%>men FINAL1 ;
+!+V+Pass+PrfPrc:%^VOWSH%^CLong%^VOWRaise%>um FINAL1 ;
+!+V+GerTemp:%^VOWL%^CShort%>een FINAL1 ;
+!+V+GerInstr:%^VOWL%^CShort%>eeʹl FINAL1 ;
+!+V+Actio:%>am FINAL1 ;
+!+V+VAbess:%^VOWL%^CShort%>kâni FINAL1 ;		!WG
+!+V+VAbess:%^VOWL%^CShort%>kani FINAL1 ;		!WG
+!+V+VAbess:%^VOWL%^CShort%>ǩeânai FINAL1 ;		!WG
 
 LEXICON V_CEÄGGAD
 ! ** Yaml: __V-ceaggad__
@@ -1673,6 +1713,7 @@ LEXICON VSUF-INF_AD
 +Imprt+Pl2:%>ad FINAL1 ;
 +ActEss:%>men FINAL1 ;
 +Actio:%>am FINAL1 ;
++Actio:%>am NMN_SLOOHMAN ;
  VSUF-PRSPRC_AD ;
 +PrfPrc:%>am FINAL1 ;
 LEXICON VSUF-IND-PRS-SG3_AD
