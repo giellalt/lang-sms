@@ -286,7 +286,17 @@ Symbols that need to be escaped on the lower side (towards twolc):
 * >
 * <
 
+The Usage extents are marked using following tags:
 
+ *  +Err/Sub      
+ * __ +Use/Marg        __ marginal (?)
+ * __ +Use/-Spell      __ Excluded in speller
+ * __ +Use/SpellNoSugg __ recognized but not suggested in speller
+ * __ +Use/Circ        __ circular paths (old ^C^)
+ * __ +Use/CircN       __ circular paths for the numerals (old ^N^)
+ * __ +Use/NG          __ not-generate, for ped generation isme-ped.fst
+
+Compounding
 
 !!Flag diacritics
 We have manually optimised the structure of our lexicon using following
@@ -348,6 +358,9 @@ given the proper use of these flags.
  *  PROP_NEWWORDS ;   These are new proper nouns beginning 2015-03-04 
  *  V_NEWWORDS ;     These are new verbs
 -----
+
+
+This is a temporary solution until nouns are moved to xml
 
 Single form lacking POS designation
 
