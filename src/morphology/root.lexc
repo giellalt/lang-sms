@@ -304,7 +304,18 @@ Y9 !!= * @CODE@
  %[%>%] !! * >
  %[%<%] !! * <
 
+!! The Usage extents are marked using following tags:
 
+ +Err/Sub     !!= * @CODE@ 
+ +Use/Marg        !!= * __@CODE@__ marginal (?)
+ +Use/-Spell      !!= * __@CODE@__ Excluded in speller
+ +Use/SpellNoSugg !!= * __@CODE@__ recognized but not suggested in speller
+ +Use/Circ        !!= * __@CODE@__ circular paths (old ^C^)
+ +Use/CircN       !!= * __@CODE@__ circular paths for the numerals (old ^N^)
+ +Use/NG          !!= * __@CODE@__ not-generate, for ped generation isme-ped.fst
+
+!! Compounding
++Cmp
 
 !! !!Flag diacritics
 !! We have manually optimised the structure of our lexicon using following
@@ -367,6 +378,11 @@ LEXICON Root 	  !!= * @CODE@
  PROP_NEWWORDS ;  !!= * @CODE@ These are new proper nouns beginning 2015-03-04 
  V_NEWWORDS ;    !!= * @CODE@ These are new verbs
 !! -----
+
+
+LEXICON nouns
+!! This is a temporary solution until nouns are moved to xml
+N_NEWWORDS ;
 
 LEXICON WORK_
 !! Single form lacking POS designation
