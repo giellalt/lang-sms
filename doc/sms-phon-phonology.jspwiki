@@ -65,6 +65,8 @@ CHARACTERISTIC BREAKDOWN 2015-02-17
  * %^XYY2XY:0 	 Shortens consonant cluster
  * %^XY2XYY:0 	 Lengthens consonant cluster
 
+ *  %^PenV2VV:0      Penultimate syllable
+
 Gradation triggers 2015.01.23
  *  %^XSt2St:0	 Causes weakening from extra strong to strong
  *  %^XSt2W:0	 Causes weakening from extra strong to weak
@@ -76,7 +78,6 @@ Gradation triggers 2015.01.23
 Other vowel length and consonant length will be phased out
  *  %^VOWSH:0	  
  *  %^VOWXSH:0	   Extra shortens vowel in relation to consonant
- *  %^VOWL:0      Lengthens vowel in relation to consonant
  *  %^VOWXL:0     Extra lengthens vowel in relation to consonant in nouns, for example
  *  %^CXLong:0 %^CLong:0 %^CShort:0  Lengthening, shortening
 
@@ -215,13 +216,13 @@ relative lengthening of vowel right context following vowel:vowel
 relative lengthening of vowel right context following vowel:vowel
 0:u <=> OnSetC _ :u RelVowLengtheningNOTu
 {{{
- * RelVowLengtheningNOTu = [(ʹ:|0:ʹ) [CCforPrecedingV2VV  %^VOWL: %^CShort:|[iCC2iCforPrecedingV2VV|CC2CforPrecedingV2VV] %^V2VV: %^CC2C:|CC2CforPrecedingVV %^CC2C:]] ; 
+ * RelVowLengtheningNOTu = [(ʹ:|0:ʹ) [CCforPrecedingV2VV  %^PenV2VV: %^CShort:|[iCC2iCforPrecedingV2VV|CC2CforPrecedingV2VV] %^V2VV: %^CC2C:|CC2CforPrecedingVV %^CC2C:]] ; 
 }}}
 
 
 possible triggers before VOWLower and VOWRaise
 {{{
- * PrecedeVOWLowerRaise = [([%^VOWSH:|%^VOWXSH:] %^CLong:|[%^VOWL:|%^VOWXL:] %^CShort:)] ;  
+ * PrecedeVOWLowerRaise = [([%^VOWSH:|%^VOWXSH:] %^CLong:|[%^PenV2VV:|%^VOWXL:] %^CShort:)] ;  
 }}}
 
 possible triggers between stem and PALNo and PAL
@@ -443,7 +444,7 @@ __Even syllabic verbs I, secondary vowel fronting with PAL u õ:e__ - deriving +
 
 !RELATIVE VOWEL LENGTHENING
 
-vowel lengthening and consonant shortening, %^VOWL and %^CShort 
+vowel lengthening and consonant shortening, %^PenV2VV and %^CShort 
 
 
 __Even syllabic verbs I, relative vowel lengthening 0:â__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
