@@ -89,8 +89,13 @@ Alphabet
 %^XYYY2XY:0 	!!= * @CODE@ Weakens Extra strong to weak consonant cluster
 %^XYY2XY:0 	!!= * @CODE@ Shortens consonant cluster
 %^XY2XYY:0 	!!= * @CODE@ Lengthens consonant cluster
+%^XYY2VY:0	!!= * @CODE@ Consonant cluster to vowel and consonant sijdd:siid
+%^XYY2VYY:0	!!= * @CODE@ Consonant cluster to vowel and geminate uvdd:ouʹdd
 
+%^PenVV2V:0     !!= * @CODE@ Shortens vowel in penultimate syllable
 %^PenV2VV:0     !!= * @CODE@ Lengthens vowel in penultimate syllable
+%^PenCC2C:0     !!= * @CODE@ Shortens consonant in penultimate syllable
+%^PenC2CC:0     !!= * @CODE@ Lengthens consonant in penultimate syllable
 
 !! !! Gradation triggers 2015.01.23
  %^XSt2St:0	!!= * @CODE@ Causes weakening from extra strong to strong
@@ -283,6 +288,8 @@ BetweenVowHeightAndMorph = [(%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) (X3
 
 !! possible triggers between word end and consonant grade
 BetweenStemAndConsGrade = [(%^V2VV:|%^VV2V:) (%^VOWRaise:|%^VOWLower:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:)] ;
+
+PenBetweenStemAndConsGrade = [(%^PenV2VV:|%^PenVV2V:)] ;
 
 !! neutral to vowel height and backness
 !! {{{
@@ -909,10 +916,12 @@ Rules
  
 "Even syllabic nouns, for j>i"
 !! __@RULENAME@__ - sijdd > siid This will need a special extra-lengthening rule
- j:i <=> OnSetC i: (%{ʹ%}:) _ (ʹ:) [ d d:|s s:] [%^PenV2VV: %^CShort:|%^VOWXL:|%^VOWLower:|%^VOWSH: %^CLong: %^VOWLower: (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:] ;
+ j:i <=> OnSetC i: (%{ʹ%}:) _ (ʹ:) [ d d:|s s:] BetweenStemAndConsGrade %^XYY2VY: ;
 !€# ijss%^VOWXL%^CShort%>âs
 !€0 iis0000âs
-
+  Vow:Vow ʹ: _ j: %^PALNo:  %^CC2C: # ;
+!€# sââʹjj%^PALNo%^CC2C
+!€0 sââ0i00
 
 "Even syllabic verbs,  for v>u"
 !! __@RULENAME@__ - uvdd > ouʹdde
@@ -1471,7 +1480,7 @@ Rules
 
 "Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m"
 !! __@RULENAME@__ - kåʹmrded+V+Imp+Sg2: kååʹmmerd 
- 0:m <=> SurfLongVow (ʹ:|0:ʹ)  m _ [%{E1%}:] Cns:+ [%^IMPSG2:|%^INDPRSSG3:] ;
+ 0:m <=> Vow:Vow (ʹ:|0:ʹ)  m _ [%{E1%}:] Cns:+ PenBetweenStemAndConsGrade %^PenC2CC: [%^IMPSG2:|%^INDPRSSG3:] ;
         m _ BetweenStemAndConsGrade %^C2CC: ;
 
 !€# ooum0%^VV2V%^C2CCu
@@ -1481,9 +1490,9 @@ Rules
 
 "Consonant lengthening 0:b"
 !! __@RULENAME@__ - 
-!! {{{
- 0:b <=>  2ShortVow  (ʹ:|0:ʹ) [l] b _ Vow: Cns BetweenStemAndConsGrade %^C2CC: ;
-!! }}}
+ 0:b <=>  2ShortVow  (ʹ:|0:ʹ) [l] b _  BetweenStemAndConsGrade %^C2CC: ;
+  2ShortVow  (ʹ:|0:ʹ) [l] b _ Vow: Cns PenBetweenStemAndConsGrade %^PenC2CC: ;
+
 
 "Consonant lengthening 0:p"
 !! __@RULENAME@__ - 

@@ -34,28 +34,28 @@ LEXICON NounRoot
 !! here grouped according to continuation lexicon.
 
 
+
 !! !!â-stems
 !    =======
 
-!! !N-toll: -âst Loc and -e Ill
+!! !N_TOLL: -âst Loc and -e Ill
 
-toll:toll N-toll " fire/tuli" ;          !!= * @CODE@
-jiõnn:jiõnn N-toll "sound; voice/ääni" ;  !!= * @CODE@
-kuss:kuss N-toll "cow/lehmä" ;           !!= * @CODE@
-kuålgg:kuålgg N-toll "old hair (on an animal)/eläimen vanha karva" ;
-jokk:jokk N-toll "river/joki" ;
-čiõkk:čiõkk N-toll " cache, hiding place/piilo" ;
-
-luhtt:luhtt N-toll " bay/lahti" ;
-papp:papp N-toll "priest/pappi" ;
-muõrr:muõrr N-toll "tree/puu" ;
-võrr:võrr N-toll "blood/veri" ;
-ǩiđđ:ǩiđđ N-toll "spring/kevät" ;
-sõll:sõll N-toll "lap; embrace/syli" ;
-kunn:kunn N-toll "ash/tuhka" ;
+toll:toll N_TOLL " fire/tuli" ;          !!= * @CODE@
+kuss:kuss N_TOLL "cow/lehmä" ;           !!= * @CODE@
+jokk:jokk N_TOLL "river/joki" ;
+võrr:võrr N_TOLL "blood/veri" ;
+ǩiđđ:ǩiđđ N_TOLL "spring/kevät" ;
+sõll:sõll N_TOLL "lap; embrace/syli" ;
+kunn:kunn N_TOLL "ash/tuhka" ;
 
 paarr:paarr N_PAARR " couple/pari" ;
-saakk:saakk N_SAAKK "message/viesti" ;
+saakk:saakk N_PAARR "message/viesti" ;
+
+papp:papp N_PAPP "priest/pappi" ;
+
+algg:algg N_AUTT ;
+autt:autt N_AUTT ;
+kuålgg:kuålgg N_AUTT "old hair (on an animal)/eläimen vanha karva" ;
 
 šaarf:šaarf N_LUUKK " scrarf/kaulaliina" ;
 luukk:luukk N_LUUKK " onion/sipuli" ;
@@ -63,13 +63,18 @@ staan:staan N_LUUKK " safety/turva" ;
 kaarc:kaarc N_LUUKK " stench/katku" ;
 voozz:voozz N_LUUKK " load/kuorma" ;
 
+čiõkk:čiõkk N_MUÕRR " cache, hiding place/piilo" ;
+jiõnn:jiõnn N_MUÕRR "sound; voice/ääni" ;  !!= * @CODE@
+ǩiõtt:ǩiõtt N_MUÕRR ;
+muõrr:muõrr N_MUÕRR "tree/puu" ;
+
+
+luhtt:luhtt N_TOLL " bay/lahti" ;
+
 
 !! !N-miarr: -âst Loc and -ense Ill mieʹrre
 
 miârr:miârr N-miarr "sea/meri" ;   !!= * @CODE@
-
-!! !N_ǨIÕTT:  -âst Loc and -ense Ill ǩiõʹtte
-ǩiõtt N_ǨIÕTT ;
 
 
 !! !N_PUÅVV: -âst Loc and -ense Ill 3Grade
@@ -78,33 +83,38 @@ puåvv N_PUÅVV "/nuotan povi" ;
 
 
 
-
 !! !!a-stems
 !    =======
 
-!! !N-pess: -ast Loc
+!! !N_PESS: -ast Loc
 
-pess N-pess " gun/ampuma-ase" ;   !!= * @CODE@
-påll N-pess " float (on a fishing net)/verkonkoho" ;   !!= * @CODE@
-päll N-pess " ball/pallo" ;
-ǩeâlkk N-pess " sled, sleigh/kelkka, reki" ;
-kuäll:kuäl'l N-pess " Scandinavian yoghourt (fil, viili)/viili" ;
-ruâkk N-pess "/ruoko" ;
-čuäcc N-pess "/pökkelö" ;
-äldd N-pess " reindeer cow/porovaadin" ;
-njolpp N-pess "/nulppo" ;
-peäldd N-pess " field/pelto" ;
-pââll N-pess " fear/pelko" ;
-šoomm N-pess "/" ;
+pess N_PESS " gun/ampuma-ase" ;   !!= * @CODE@
+påll N_PESS " float (on a fishing net)/verkonkoho" ;   !!= * @CODE@
+päll N_PESS " ball/pallo" ;
+
+pââll N_ŠOOMM " fear/pelko" ;
+šoomm N_ŠOOMM "/" ;
+
+ruâkk N_RUÂKK "/ruoko" ;
+kuäll:kuälˈl N_PESS " Scandinavian yoghourt (fil, viili)/viili" ;
+čuäcc N_PESS "/pökkelö" ;
+
+äldd:äldd N_ÄLDD " reindeer cow/porovaadin" ;   !!= * @CODE@ hfst problem
+njolpp N_ÄLDD "/nulppo" ;
+
+peäldd N_ǨEÂLKK " field/pelto" ;
+ǩeâlkk N_ǨEÂLKK " sled, sleigh/kelkka, reki" ;
 
 
 
 !! !!e-stems
 !    =======
 
-!! !N-piess: -est Loc vowel lowering
+!! !N_PIEʹSS: -est Loc vowel lowering
 
-pieʹss:pieʹss N-piess "nest/pesä" ;  !!= * @CODE@
+pieʹss:piâss N_PIEʹSS "nest/pesä" ;  !!= * @CODE@
+
+
 žaaʹll N-piess "mercy/sääli" ;
 riʹmjj N-piess "fox/kettu" ;
 
@@ -113,7 +123,7 @@ kuʹmpp N_KUʹMPP "wolf/susi" ;
 
 
 !! !!sijdd
-sijdd:sijdd N-toll "village/kylä" ;  !!= * @CODE@
+sijdd:sijdd N_TOLL "village/kylä" ;  !!= * @CODE@
 !! sijdd > siid This will need a special extra-lengthening rule
  
 
@@ -150,7 +160,6 @@ seäm:seämˈmân N-siom ;
 !! !N_ČÄÄʹCC: 
 čääʹcc N_ČÄÄʹCC ;
 
-
 !! !!n (unclassified)
 !    ================
 
@@ -170,13 +179,11 @@ aacaǩ n ;
 aaʹrhel n ;
 aaʹrhelkåʹdd n ;
 addrõs n ;
-algg n ;
 alggneäʹttel n ;
 alggpuättmõš n ;
 alggsääʹnn n ;
 alleerǥ n ;
 anttbiott n ;
-autt n ;
 auttstäʹllj n ;
 aʹmmrik n ;
 aʹrddi n ;
@@ -238,9 +245,7 @@ jieʹlli n ;
 jieʹnn n ;
 jieʹrjkuõbbâr n ;
 jieʹǩǩ n ;
-jiõnn n ;
 jiõŋŋ n ;
-jokk n ;
 joorǥlõʹtti n ;
 joŋŋ n ;
 jueʹlǧǧ n ;
@@ -273,9 +278,7 @@ kueʹhtt n ;
 kueʹll n ;
 kueʹss n ;
 kulttuur n ;
-kunn n ;
 kurss n ;
-kuss n ;
 kuurta n ;
 kuälktem n ;
 kuärgg n ;
@@ -323,15 +326,13 @@ liuʹnnj n ;
 liõmm n ;
 loppâ n ;
 lueʹm n ;
-luukk n ;
-luuvdá n ;
+luuvda n ;
 luâđastvuejjamautt n ;
 luõss n ;
 lâpp n ;
 lââʹss n ;
 läänhalltõs n ;
 läʹbǯǯ n ;
-låʹdd n ;
 lõnnj n ;
 lõstt n ;
 manah n ;
@@ -344,13 +345,11 @@ meäʹcc-čuâǥǥas n ;
 meäʹcˈc n ;
 mieʹlǩǩ N_MIEʹLǨǨ ;
 miârkk n ;
-miârr n ;
 mostt n ;
 motorǩeâlkk n ;
 mueʹrjj n ;
 mueʹrjjsäʹpp n ;
 mueʹđđ n ;
-muõrr n ;
 muõtt n ;
 muʹzei n ;
 mââiʹbargg n ;
@@ -393,7 +392,6 @@ organ n ;
 ougglestmättʼtõssân n ;
 ođđeeʹjjmään n ;
 paaštkueʹll n ;
-papp n ;
 paradiis n ;
 peiʹvv N_PEIʹVV ;
 peälpp n ;
@@ -488,7 +486,6 @@ seärad n ;
 seäʹlǧǧ n ;
 seʹntt n ;
 sieʹm n ;
-sijdd n ;
 silbb n ;
 silbbmedal n ;
 sinap n ;
@@ -563,7 +560,6 @@ teäʹdd n ;
 teʹlvisia n ;
 teʹǩǩ n ;
 tiõrvâsvuõttpõrtt n ;
-toll n ;
 tolltuõddâr n ;
 toobdâs n ;
 triâŋgg n ;
@@ -627,7 +623,6 @@ vuẹʹddes n ;
 vääžž n ;
 vääʹrr n ;
 vääʹrrpaain n ;
-võrr n ;
 zâʹveâz n ;
 zääbbar n ;
 zääʹvesǩ n ;
@@ -641,7 +636,6 @@ zääʹvesǩ n ;
 äiʹtt n ;
 äiʹǧǧ n ;
 äkk n ;
-äldd n ;
 ämmat n ;
 ääkkaž n ;
 ääŋŋ n ;
@@ -725,7 +719,7 @@ tuâjjla n ; ! XXX ?
 ǩiõlltuâjjla n ; ! XXX
 ǩiõttʼtuẹjj n ;
 ǩiõǥǥnjuõll n ;
-ǩiđđ n ;
+
 
 
 
@@ -771,7 +765,6 @@ tuâjjla n ; ! XXX ?
 
 lookki N_LOOKKI "XXX" ;
 čâustõk N_ČÂUSTÕK  "XXX" ; 
-kuäll:kuälˈl a "XXX" ; 
 čuâll a "XXX" ; 
 puäll a "XXX" ; 
 jeäll a "XXX" ; 
