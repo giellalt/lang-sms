@@ -193,6 +193,9 @@ CHARACTERISTIC BREAKDOWN 2015-02-17
  * %^XYY2XY       Shortens consonant cluster
  * %^XY2XYY       Lengthens consonant cluster
 
+ * %^PenV2VV      Shortens vowel in penultimate syllable
+
+
 !!Gradation triggers 2015.01.23
  *  %^XSt2St	 Causes weakening from extra strong to strong
  *  %^XSt2W	 Causes weakening from extra strong to weak
@@ -232,7 +235,7 @@ Gradation triggers 2015.02.09 For	Consonant Clusters
  * %^VC          Voicing s:z š:ž
  * %^VOWBack   for backing
  * %^VOWFront   for fronting
- * %^VOWL       for lengthening
+ * %^VOWL       for lengthening BEING PHASED OUT
  * %^VOWLower   for lowering
  * %^VOWRaise   for raising
  * %^VOWSH 	 for shortening
@@ -241,6 +244,7 @@ Gradation triggers 2015.02.09 For	Consonant Clusters
  * %^VOWLax    e:â
  * %^VOWXL      for extralengthening
  * %^Â		 Indicates placement of â in stem
+
 
  * %{VU%}          used with stuuʹl
  * %{A1%}          used with vuejted
@@ -314,8 +318,6 @@ do no harm.
  | @D.CmpPref.TRUE@ | Block such words from entering ENDLEX
  | @P.CmpPref.FALSE@ | Block these words from making further compounds
  | @D.CmpLast.TRUE@ | Block such words from entering R
- | @D.CmpSuff.TRUE@ | Block such words from entering R
- | @P.CmpSuff.TRUE@ | Mark that we have passed R
  | @D.CmpNone.TRUE@ | Combines with the next tag to prohibit compounding
  | @U.CmpNone.FALSE@ | Combines with the prev tag to prohibit compounding
  | @P.CmpOnly.TRUE@ | Sets a flag to indicate that the word has passed R
