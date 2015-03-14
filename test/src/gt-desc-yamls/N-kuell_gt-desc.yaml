@@ -1,10 +1,10 @@
 Config:
   hfst:
-    Gen: ../../../src/generator-dict-gt-norm.hfst
-    Morph: ../../../src/analyser-dict-gt-norm.hfst
+    Gen: ../../../src/generator-gt-desc.hfst
+    Morph: ../../../src/analyser-gt-desc.hfst
   xerox:
-    Gen: ../../../src/generator-dict-gt-norm.xfst
-    Morph: ../../../src/analyser-dict-gt-norm.xfst
+    Gen: ../../../src/generator-gt-desc.xfst
+    Morph: ../../../src/analyser-gt-desc.xfst
     App: lookup
 
 Tests:
@@ -14,23 +14,23 @@ Tests:
 # Then: run analyser, then correct. 
 
 
-  Noun - kueʹll: # Noun e-stem 'fish/kala' - full paradigm
+  Noun - kueʹll e-stem: # Noun 'fish/kala' - full paradigm
      kueʹll+N+Sg+Nom: kueʹll
      kueʹll+N+Sg+Gen: kueʹl
      kueʹll+N+Sg+Acc: kueʹl
-     kueʹll+N+Sg+Ill: kuâlˈla
+     kueʹll+N+Sg+Ill: kuâlla
      kueʹll+N+Sg+Loc: kueʹlest
-     kueʹll+N+Sg+Com: kueʹlin
+     kueʹll+N+Sg+Com: [kueʹlin, kuõʹlin]
      kueʹll+N+Ess: kueʹllen
      kueʹll+N+Par: kueʹlled
      kueʹll+N+Sg+Abe: kueʹltää
      kueʹll+N+Pl+Nom: kueʹl
-     kueʹll+N+Pl+Gen: kueʹli
-     kueʹll+N+Pl+Acc: kueʹlid
-     kueʹll+N+Pl+Ill: kueʹlid
-     kueʹll+N+Pl+Loc: kueʹlin
-     kueʹll+N+Pl+Com: kueʹlivuiʹm
-     kueʹll+N+Pl+Abe: kueʹlitää
+     kueʹll+N+Pl+Gen: [kueʹli, kuõʹli]
+     kueʹll+N+Pl+Acc: [kueʹlid,	kuõʹlid]
+     kueʹll+N+Pl+Ill: [kueʹlid,	kuõʹlid]
+     kueʹll+N+Pl+Loc: [kueʹlin,	kuõʹlin]
+     kueʹll+N+Pl+Com: [kueʹlivuiʹm, kuõʹlivuiʹm]
+     kueʹll+N+Pl+Abe: [kueʹlitää, kuõʹlitää]
      kueʹll+N+Der/teʹm+A+Der/MWN+N+Sg+Nom: kueʹlteʹm
      kueʹll+N+Der/teʹm+A+Der/MWN+N+Pl+Nom: kueʹlteeʹm
      kueʹll+N+Der/teʹm+A+Attr: kueʹlteʹmes
