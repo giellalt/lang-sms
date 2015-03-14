@@ -278,8 +278,10 @@ BetweenStemAndPALNo = [( %^VV2V: |%^V2VV:) (%^VOWLower:|%^VOWRaise:) (%^PALÄ:|%
 ! [([%^St2XSt:|%^St2W:|%^XSt2St:|%^XSt2W:|%^W2St:|%^W2XSt:]|[%^VOWSH:|%^VOWXSH:] (%^CLong:)|[%^PenV2VV:|%^VOWXL:] (%^FRICG:) (%^CShort:)) (%^VOWLower:|%^VOWRaise:) (%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) (X3:)] ;
 
 !! possible triggers before PALE PALÄ
-BetweenStemAndPALAllo = [( %^VV2V: )] ;
+BetweenStemAndPALAllo = [( %^VV2V: |%^V2VV:)] ;
 ![([%^St2XSt:|%^St2W:|%^XSt2St:|%^XSt2W:|%^W2St:|%^W2XSt:]|[%^VOWSH:|%^VOWXSH:] (%^CLong:)|[%^PenV2VV:|%^VOWXL:] (%^FRICG:) (%^CShort:)) ] ; 
+
+BetweenStemAndHeight = [( %^VV2V: |%^V2VV:)] ;
 
 !! possible triggers between VowHeight and word end
 !! {{{
@@ -366,12 +368,15 @@ Rules
 
 "Even syllabic verbs I, vowel shortening i:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
-!! {{{
- i:0 <=> OnSetC _ i: (%ʹ:|0:%ʹ) [LongC|Cns: :Cns*] [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ;
+ i:0 <=>
+         OnSetC _ i: (ʹ:|0:ʹ) Cns:+ %^VV2V: ;
+!!viikkâd+V+Ind+Prs+Pl3
+!€# viikk%^VV2V%^VOWLower%^PAL%>e
+!€0 v0eʹǩǩ0000e
+ OnSetC _ i: (%ʹ:|0:%ʹ) [LongC|Cns: :Cns*] [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ;
          Cns _ %> ǥ a ; ! +Sg+Ill N_HÕʹPPI
          [Cns:+|:Cns+] _ [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m] (%^VOWSH: (%^CLong:)|%^VC:) %^RmVow: ;
          OnSetC _ i: (ʹ:|0:ʹ) Cns:+ Vow: [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^VOWSH: ; ! iilâsǩ:ilska
-!! }}}
 
 "Even syllabic verbs I, vowel shortening o:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
@@ -409,8 +414,9 @@ Rules
 !! __@RULENAME@__ - used in zeeʹtt+N+Sg+Abe: zeeʹttʼtää
  0:ʼ <=>
      [ :n | :l ] (%^C2CC:) %> _ j ;
-        s s %>  _ s ; 
-        t t %>  _ t ; 
+        s (ˈ:) s BetweenStemAndConsGrade (%^CCC2CC:) %>  _ s ; 
+        t (ˈ:) t BetweenStemAndConsGrade (%^CCC2CC:) %>  _ t ; 
+        k (ˈ:) k BetweenStemAndConsGrade (%^CCC2CC:) %>  _ k ; 
 !€# ijss%>0sa
 !€# ijss0ʼsa
 
@@ -630,26 +636,25 @@ Rules
 "Even syllabic verbs I, vowel lowering õ:â "
 !! __@RULENAME@__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
  õ:â <=>
-       õ: _  (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^VV2V:) %^VOWLower: (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) ;
+       i: _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] %^VOWLower: ;
+!!riõkkâd+V+Ind+Prs+Sg3 'to whip'
+!€# riõkˈk%^VOWLower
+!€0 reâkˈk0
+       õ: _  (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^VV2V:) %^VOWLower: ;
 !€# mõõ0nn%^VV2V%^VOWLower%^PAL%>e
 !€0 m0âʹnn0000e
       _ õ: (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  %^VOWLower: ;
 !€# mõõnn%^VOWLower%^CC2C%>as
 !€0 mâân0000as
 
-       õ: _    (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^VOWSH: %^CLong:|%^PenV2VV: %^CShort:)                      %^VOWLower: (%^VOWFront:|%^VOWBack:) (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
-   OnSetC _    (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^VOWSH: %^CLong:)                      %^VOWLower: (%^VOWFront:|%^VOWBack:) (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
-! juʹrdded+V+Cond+Sg1: joordčem
-   OnSetC _ 0:â (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^PenV2VV: %^CShort:)  %^VOWLower: (%^VOWFront:|%^VOWBack:) (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ; 
 ! juʹrdded > joordam
    OnSetC _ (u:|i:) (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^PenV2VV: %^CShort:) %^VOWLower: (%^VOWFront:|%^VOWBack:) (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ; 
    OnSetC _ ((ʹ:) (v:u|j:i)) (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^VOWSH: %^CLong:) %^VOWLower: (%^VOWFront:|%^VOWBack:) (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
 ! diphthong opening after u
-! - deriving +Ind+Prs+Sg3, in kuõskkâd kueʹsǩǩe
-        u _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^PenV2VV: (%^FRICG:0) %^CShort:)  %^VOWLower: (X3:) (%^PALNo:) RBound ; 
-! diphthong opening õ:â after i:e
-! - deriving +Ind+Prs+Sg3, in čiõkkâd
-       i: _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^PenV2VV: %^CShort:)  %^VOWLower: (X3:)  %^PALNo: RBound ; 
+        u _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] %^VOWLower: ;
+!! kuõskkâd+V+Ind+Prs+Sg3
+!€# kuõskk%^VOWLower
+!€# kuâskk0
 
 
 ! diphthongs
@@ -720,11 +725,10 @@ Rules
 
 "Even syllabic verbs I, diphthong opening õ:ä after i:e"
 !! __@RULENAME@__ - deriving +Ind+Prs+Sg3, in čiõkkâd
-!! {{{
  õ:ä <=>
- i:e _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  (%^VOWSH: (%^FRICG:0) %^CLong:|%^PenV2VV: %^CShort:) %^VOWLower: (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: ;
- u _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  (%^VOWSH: (%^FRICG:0) %^CLong:|%^PenV2VV: %^CShort:) %^VOWLower: %^VOWFront: ;
-!! }}}
+ i:e _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  BetweenStemAndHeight %^VOWLower: %^PALÄ: ;
+ u _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  BetweenStemAndHeight %^VOWLower: %^PALÄ: ;
+
 
 
 
@@ -734,11 +738,11 @@ Rules
  
 "Even syllabic verbs I, secondary vowel fronting with PAL u õ:e"
 !! __@RULENAME@__ - deriving +Ind+Prs+Pl3 in VIQQAD: kuõskkâd >kueʹsǩǩe
-!! {{{
- õ:e <=> u _ (%ʹ:|0:%ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^VOWSH: %^CLong:|%^PenV2VV: %^CShort:)  %^VOWLower: (X3:) (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: RBound ; ! deriving +V+Inf in vueʹlǧǧed
-! u _ (%ʹ:|0:%ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^VOWSH: %^CLong:|%^PenV2VV: %^CShort:)  %^VOWFront: (X3:) (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: RBound ; ! deriving +V+Inf in vueʹlǧǧed
-!         i _ (%ʹ:|0:%ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]                                        %^VOWFront:       (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: %> ;
-!! }}} 
+ õ:e <=>
+  u _ (%ʹ:|0:%ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] %^VOWLower: %^PALE: ; ! deriving +V+Inf in vueʹlǧǧed
+
+         i _ (%ʹ:|0:%ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] %^VOWLower: %^PALE: ; 
+! - deriving +Ind+Prs+Sg3, in kuõskkâd kueʹsǩǩe CHECK THIS
 
 
 
@@ -1330,11 +1334,10 @@ Rules
 
 "Even syllabic verbs I, Voicing č:j"
 !! __@RULENAME@__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
-!! {{{
- č:j <=> OnSetC SurfLongVow (ʹ:|0:ʹ) č: _    (%^PenV2VV:|%^VOWXL:) %^CShort: ;
-         OnSetC SurfLongVow (ʹ:|0:ʹ)    _ č: (%^PenV2VV:|%^VOWXL:) %^CShort: ;
+ č:j <=> OnSetC SurfLongVow (ʹ:|0:ʹ) č: _    BetweenStemAndConsGrade %^CC2C: ;
+         OnSetC SurfLongVow (ʹ:|0:ʹ)    _ č: BetweenStemAndConsGrade %^CC2C: ;
                                              _ %^VC: ;
-!! }}}
+
 
 "Even syllabic verbs I, Voicing after long vowel or diphthong s:z s:z" 
 !! __@RULENAME@__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
