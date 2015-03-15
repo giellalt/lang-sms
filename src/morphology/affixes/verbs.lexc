@@ -425,28 +425,16 @@ LEXICON V_TEEVVAD
 ! 1.2.1.1 Monophthong 
 ! Stem is strong
 ! one vowel
-+V: VSUF-INF_AD ; !1
-+V: VSUF-IND-PRS-SG3_AD ; !2
-+V+Ind+Prs+Pl3:%>a FINAL1 ; !3 
-+V:%^VV2V%^VOWRaise%> VSUF-IND-PRT-PL3_AD ; !4
-+V:%^CC2C%> VSUF-I-POTKOND_AD ; !5
-+V+Pot+Sg3:%^CC2C%>ež	FINAL1 ; !6
-+V+Imprt+Sg3:%^CC2C%>as FINAL1 ; !7
-+V:%^VV2V%^VOWRaise VSUF-IMPRT-13-CONNEG_AD ; !8
++V: VSUF-INF_AD ; !1 teevvad
++V: VSUF-IND-PRS-SG3_AD ; !2 teevv
++V+Ind+Prs+Pl3:%^VV2V%>a FINAL1 ; !3 tevva
++V:%^VV2V%^VOWRaise%> VSUF-IND-PRT-PL3_AD ; !4 tivvu
++V:%^CC2C%> VSUF-I-POTKOND_AD ; !5 teev-
++V+Pot+Sg3:%^CC2C%>ež	FINAL1 ; !6 teevež
++V+Imprt+Sg3:%^CC2C%>as FINAL1 ; !7 teevas
++V:%^VV2V%^VOWRaise VSUF-IMPRT-13-CONNEG_AD ; !8 tivvu
++V:%^VV2V VSUF-IMPRT-PL3_AD ; ! tevv-
 
-!+V+Ind+Prs:		TEEVVAD-PRS ;
-!+V+Ind+Prt:		TEEVVAD-PRT ;
-!+V+Imprt:			TEEVVAD-IMPRT ;
-!+V+PrsPrc:%>ai FINAL1 ;
-!+V+PrfPrc:%>am FINAL1 ;
-!+V+ActEss:%>men FINAL1 ;
-!+V+Pass+PrfPrc:%^VOWSH%^CLong%^VOWRaise%>um FINAL1 ;
-!+V+GerTemp:%^V2VV%^CC2C%>een FINAL1 ;
-!+V+GerInstr:%^V2VV%^CC2C%>eeʹl FINAL1 ;
-!+V+Actio:%>am FINAL1 ;
-!+V+VAbess:%^V2VV%^CC2C%>kâni FINAL1 ;		!WG
-!+V+VAbess:%^V2VV%^CC2C%>kani FINAL1 ;		!WG
-!+V+VAbess:%^V2VV%^CC2C%>ǩeânai FINAL1 ;		!WG
 
 LEXICON V_TÄTTAD
 ! tättad:tätt
@@ -489,7 +477,7 @@ LEXICON V_TÄTTAD
 +V+Pot+Sg3:%^V2VV%>ež   FINAL1 ; !6
 +V+Imprt+Sg3:%^V2VV%>as FINAL1 ; !7
 +V:%^VOWRaise VSUF-IMPRT-13-CONNEG_AD ; !8
-
++V: VSUF-IMPRT-PL3_AD ;
 
 !+V+Ind+Prs:		TEEVVAD-PRS ;
 !+V+Ind+Prt:		TEEVVAD-PRT ;
@@ -552,7 +540,7 @@ LEXICON V_REÄKKAD
 +V+Pot+Sg3:%^V2VV%>až   FINAL1 ; !6
 +V+Imprt+Sg3:%^V2VV%>as FINAL1 ; !7
 +V:%^VOWRaise%^CC2CCC VSUF-IMPRT-13-CONNEG_AD ; !8
-
++V:%^CC2CCC VSUF-IMPRT-PL3_AD ;
 
 !!
 !+V+Ind+Prs:		TEEVVAD-PRS ;
@@ -1754,7 +1742,9 @@ LEXICON VSUF-INF_AD
 +PrfPrc:%>am FINAL1 ;
 LEXICON VSUF-IND-PRS-SG3_AD
 +Ind+Prs+Sg3: FINAL1 ;
-+Imprt+Pl3:%>az FINAL1 ;
+
+!+Imprt+Pl3:%>az FINAL1 ; VSUF-IMPRT-PL3_AD
+
 LEXICON VSUF-INF_ED
 +Inf:%>ed FINAL1 ;
 +Ind+Prs+Pl1:%>ep FINAL1 ;
@@ -1880,6 +1870,9 @@ LEXICON VSUF-IMPRT-13-CONNEG_ÂD
 LEXICON VSUF-IMPRT-13-CONNEG_AD
 +Imprt+13+ConNeg:%>u FINAL1 ;
 +Pass+PrfPrc:%>um FINAL1 ;
+LEXICON VSUF-IMPRT-PL3_AD
++Imprt+Pl3:%>az FINAL1 ;
+
 LEXICON VSUF-IMPRT-13-CONNEG_ED
 +Imprt+13+ConNeg:%>u FINAL1 ;
 +Pass+PrfPrc:%>um FINAL1 ;
