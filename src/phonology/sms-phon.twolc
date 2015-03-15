@@ -138,6 +138,7 @@ Alphabet
  %> ! Inflectional suffix
  #  ! Word boundary for both lexicalised and dynamic compounds
  %^ ! (exceptional) soft hyphenation point
+ %- ! Hyphen for question particle
 
 !! End of alphabet definitions
  ;
@@ -327,6 +328,9 @@ Rules
 !! {{{
  â:0 <=> OnSetC _ â: (ʹ:|0:ʹ) [LongC|Cns:+] [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ;
          [Cns:+|:Cns+] _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] (%^VOWSH: (%^CLong:)|%^VC:) %^RmVow: ;
+
+ OnSetC _ â: u (ʹ:|0:ʹ) Cns: Cns:*  %^VV2V:  ;
+
 !! }}}
 
 "Even syllabic verbs I, vowel shortening e:0"
@@ -342,11 +346,16 @@ Rules
 !! deriving cieʹǩǩes+N+Sg+Ill: ceäkˈksa
   OnSetC :Vow+ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] _  s: [%^VOWSH: %^CLong:| %^VOWXSH: %^CLong:]  %^VOWLower: (%^VOWBack:) (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:)  %^RmVow: ; 
 
+ OnSetC _ e: u (ʹ:|0:ʹ) Cns: Cns:*  %^VV2V:  ;
+
 
 "Even syllabic verbs I, vowel shortening å:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
 !! {{{
  å:0 <=> OnSetC _ å: (ʹ:|0:ʹ) [LongC|Cns: :Cns*] [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ;
+
+ OnSetC _ å: u (ʹ:|0:ʹ) Cns: Cns:*  %^VV2V:  ;
+
 !! }}}
 
 "Even syllabic verbs I, vowel shortening õ:0"
@@ -359,11 +368,14 @@ Rules
 !€0 m0âʹnn0000e
          OnSetC _ õ: (ʹ:|0:ʹ) Cns:+ Vow: [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^VOWSH: ;
 
+ OnSetC _ õ: u (ʹ:|0:ʹ) Cns: Cns:*  %^VV2V:  ;
+
 "Even syllabic verbs I, vowel shortening u:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
 !! {{{
  u:0 <=> OnSetC _ u: (ʹ:|0:ʹ) [C2CCafterVV2V|Cns: :Cns+] (i:) [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ;
          OnSetC _ u: (ʹ:|0:ʹ) Cns:+ Vow: [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m] [%^VOWSH:|%^RmVow:] ;
+
 !! }}}
 
 "Even syllabic verbs I, vowel shortening i:0"
@@ -378,18 +390,23 @@ Rules
          [Cns:+|:Cns+] _ [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m] (%^VOWSH: (%^CLong:)|%^VC:) %^RmVow: ;
          OnSetC _ i: (ʹ:|0:ʹ) Cns:+ Vow: [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^VOWSH: ; ! iilâsǩ:ilska
 
+ OnSetC _ i: u (ʹ:|0:ʹ) Cns: Cns:*  %^VV2V:  ;
+
+
 "Even syllabic verbs I, vowel shortening o:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
- o:0 <=> OnSetC _ o: (ʹ:|0:ʹ) [u m:+ |LongC|Cns: :Cns*]  %^VV2V:  ;
- OnSetC _ o: (ʹ:|0:ʹ) u m:+  %^VV2V:  ;
-!! ooumaž+N+Sg+Gen
-!€# ooum0%^VV2V%^C2CCu
-!€0 0oumm00u
+ o:0 <=> 
     OnSetC _ o: (ʹ:|0:ʹ) [LongC|Cns: :Cns*] %^VV2V: ;
 !€# šoomm%^VV2V%^VOWRaise%>u
 !€0 š0omm000u
 
+ OnSetC _ o: u (ʹ:|0:ʹ) Cns: Cns:*  %^VV2V:  ;
+!! ooumaž+N+Sg+Gen
+!€# ooum0%^VV2V%^C2CCu
+!€0 0oumm00u
+
          [Cns:+|:Cns+] _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^RmVow: ; 
+
 
 
 "Even syllabic verbs I, vowel shortening a:0"
@@ -401,6 +418,8 @@ Rules
          [Cns:+|:Cns+] _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] (%^VOWSH: (%^CLong:)|%^VC:) %^RmVow: ; 
          OnSetC _ a: (%ʹ:|0:%ʹ) Cns:+ Vow: [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^VOWSH: ; 
    OnSetC :Vow+ (%ʹ:|0:%ʹ) [LongC|Cns:+ - [Cns:* [l|n]]] _ i: %> Vow: ; 
+
+ OnSetC _ a: u (ʹ:|0:ʹ) Cns: Cns:*  %^VV2V:  ;
 
 
 "vowel to syllable mark a:ʼ"
@@ -429,6 +448,7 @@ Rules
    OnSetC _ ä: (ʹ:|0:ʹ) [LongC|Cns: :Cns*|Cns:+] [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ;
          OnSetC _ ä: (ʹ:|0:ʹ) Cns:+ Vow: [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] %^VOWSH: %^CLong: ;
 
+ OnSetC _ ä: u (ʹ:|0:ʹ) Cns: Cns:*  %^VV2V:  ;
 
 
 
@@ -636,7 +656,7 @@ Rules
 "Even syllabic verbs I, vowel lowering õ:â "
 !! __@RULENAME@__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
  õ:â <=>
-       i: _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] %^VOWLower: ;
+       i: _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] %^VOWLower: [ RBound |%^PAL:|%^PALNo:] ;
 !!riõkkâd+V+Ind+Prs+Sg3 'to whip'
 !€# riõkˈk%^VOWLower
 !€0 reâkˈk0
@@ -651,7 +671,7 @@ Rules
    OnSetC _ (u:|i:) (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^PenV2VV: %^CShort:) %^VOWLower: (%^VOWFront:|%^VOWBack:) (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ; 
    OnSetC _ ((ʹ:) (v:u|j:i)) (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^VOWSH: %^CLong:) %^VOWLower: (%^VOWFront:|%^VOWBack:) (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
 ! diphthong opening after u
-        u _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] %^VOWLower: ;
+        u _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] %^VOWLower: [ RBound |%^PAL:|%^PALNo:] ;
 !! kuõskkâd+V+Ind+Prs+Sg3
 !€# kuõskk%^VOWLower
 !€# kuâskk0
@@ -1184,9 +1204,13 @@ Rules
 
 "Even syllabic verbs I, cg for s"
 !! __@RULENAME@__ 
- s:0 <=>  i: j:i (ʹ:|0:ʹ) s _ %^VOWXL: %^CShort: ;
+ s:0 <=>  i: (%{ʹ%}:) j: (ʹ:|0:ʹ) s _ BetweenStemAndConsGrade %^XYY2VY: ;
 !€# ijss%^VOWXL%^CShort%>âs
 !€0 iis0000âs
+      SurfLongVow  (ʹ:|0:ʹ)  [r|l|p] s: _ BetweenStemAndConsGrade %^CC2C: ;
+      SurfLongVow  (%{ʹ%}:) h: (ʹ:|0:ʹ) s:  _ BetweenStemAndConsGrade %^CC2C: ;
+
+ 
 
 "Even syllabic verbs I, cg for đ" 
 !! __@RULENAME@__ - used with  ǩiđđ:ǩiiđ
@@ -1360,7 +1384,7 @@ Rules
 !! {{{
  Cx:0 <=> SurfLongVow  (ʹ:|0:ʹ)  [s|r|l|p|d:] Cx: _ BetweenStemAndConsGrade %^CC2C: ;
           SurfLongVow  (%{ʹ%}:) h: (ʹ:|0:ʹ) Cx:  _ BetweenStemAndConsGrade %^CC2C: ;
-                where Cx in (ŋ č c s) ;
+                where Cx in (ŋ č c) ;
 !! }}}
 
 "Even syllabic verbs I, t>đ" 
