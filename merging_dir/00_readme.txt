@@ -741,3 +741,5 @@ V_Ger_sms2x.xml:            <l pos="Ger">vääʹʒʒeel</l>
 V_Ger_sms2x.xml:            <l pos="Ger">čuõigeeʹl</l>
 V_Ger_sms2x.xml:            <l pos="Ger">ǩeeʹrdeel</l>
 
+MR: if "Ger" originates from my old files it was meant only as preliminary tagging and Jaska should correct this
+
