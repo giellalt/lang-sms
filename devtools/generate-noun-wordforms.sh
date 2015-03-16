@@ -10,7 +10,7 @@ morf_codes="+N+Sg+Nom \
             +N+Sg+Ill \
             +N+Sg+Com \
             +N+Pl+Nom \
-            +N+Pl+Com \
+            +N+Pl+Acc \
             +N+Ess"
 
 # Lexicon source file for lexicons and lemmas:
