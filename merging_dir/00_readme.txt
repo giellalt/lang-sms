@@ -715,3 +715,29 @@ Is this your intent? Wouldn’t it be more to the point to call the attribute �
 
 ANSWER MR
 Yes, you are right, this is a mistake. it should be the other way round. I will correct it later. Bytheway, I have not worked with the Russian FST yet, but perhaps later we can get the aspect pairs from there automatically? In this case, we would have obsolete information here as well. But let us discuss this later.
+
+===================
+CG: pos="Ger" issue
+
+1. Ger is not actually a pos:
+  pos="V" type="Ger"
+
+2. If Ger means "Gerund" why not have it the same way as 
+impf-attr, or even better, just have it modeled in the FST?
+
+3. grep says that there are pos="Ger" in the adv-file, too.
+
+unified_sms2x_src>g '"Ger"' *.xml
+Adv_sms2x.xml:            <l pos="Ger">jeäʹleestes</l>
+Adv_sms2x.xml:            <l pos="Ger">jueʹjjǩânai</l>
+Adv_sms2x.xml:            <l pos="Ger">juâkkjeǩânai</l>
+Adv_sms2x.xml:            <l pos="Ger">kuâsttjeǩânai</l>
+Adv_sms2x.xml:            <l pos="Ger">riistǩâni</l>
+Adv_sms2x.xml:            <l pos="Ger">suuddǩânai</l>
+Adv_sms2x.xml:            <l pos="Ger">vueiʹnǩâni</l>
+Adv_sms2x.xml:            <l pos="Ger">šõõddǩâni</l>
+V_Ger_sms2x.xml:            <l pos="Ger">uuʹrčeel</l>
+V_Ger_sms2x.xml:            <l pos="Ger">vääʹʒʒeel</l>
+V_Ger_sms2x.xml:            <l pos="Ger">čuõigeeʹl</l>
+V_Ger_sms2x.xml:            <l pos="Ger">ǩeeʹrdeel</l>
+
