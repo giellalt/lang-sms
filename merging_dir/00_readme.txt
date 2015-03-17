@@ -220,6 +220,7 @@ merging: later, when the overlapping has been done
  
 5. merging: semi-manually 
   ==> TODO
+  ==> all data from id=fm is merged in CS 
 
 ID legend for the current sms data:
 
