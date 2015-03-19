@@ -268,7 +268,7 @@ In the sml-materials we have:
          </content>
       </e>
    </e_u>
-==>>
+==>
 <e id="sml_209" inNo="">
     <lg>
         <l pos="V">aavistaa</l>
@@ -282,6 +282,12 @@ In the sml-materials we have:
         </tg>
     </mg>
 </e>
+_________________
+CG comments:
+   - pos values are obviously found in <p id="13">verbi</p>
+   - what about the infor in <p id="17">800</p>?
+_________________
+
 <e id="sml_210" inNo="27069">
     <lg>
         <l pos="V">vainuta</l>
@@ -298,7 +304,7 @@ In the sml-materials we have:
 <e id="sml_211" inNo="27075">
     <lg>
         <l pos="V">vaistota</l>
-        </lg>
+    </lg>
     <mg>
         <tg xml:lang="sms">
             <t pos="V">aiccâd</t>
@@ -308,7 +314,7 @@ In the sml-materials we have:
 <e id="sml_212" inNo="249">
     <lg>
         <l pos="V">aistia</l>
-        </lg>
+    </lg>
     <mg>
         <tg xml:lang="sms">
             <t pos="V">aiccâd</t>
@@ -325,6 +331,30 @@ In the sml-materials we have:
         </tg>
     </mg>
 </e>
+_________________
+CG comments:
+ - how comes that both 'saada' and 'vihiä'
+    landed here in the same elementn namely <l> 
+            <p id="2">saada</p>
+            <p id="3">vihiä</p>
+	while with id="sml_210"
+
+            <p id="2">vainuta</p>
+            <p id="3">vaistota</p>
+
+you got this structure
+
+            <l pos="V">vainuta</l>
+            <variants>
+               <l_syn>vaistota</l_syn>
+            </variants>
+? (it was a long question)
+
+ - if inconsistencies then these should be systematically check for
+   and corrected BEFORE any other transformation towards a gt-like
+   dictionary xml structure.
+_________________
+
 <e id="sml_214" inNo="3464">
     <lg>
         <l pos="V">hoksata</l>
@@ -362,3 +392,7 @@ In the sml-materials we have:
     </mg>
 </e>
 --------------
+TODO:
+ - find the opposite type of <e_u>-structure:
+    not many sml-entries to unify but a very complex
+    structure in the t-part; try to gt-transform it
