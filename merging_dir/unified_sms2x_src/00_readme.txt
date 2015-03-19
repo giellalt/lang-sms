@@ -286,6 +286,8 @@ _________________
 CG comments:
    - pos values are obviously found in <p id="13">verbi</p>
    - what about the infor in <p id="17">800</p>?
+JR answers:
+   - the info in <p id="17">800</p> indicates verb; there are more of these
 _________________
 
 <e id="sml_210" inNo="27069">
@@ -353,6 +355,8 @@ you got this structure
  - if inconsistencies then these should be systematically check for
    and corrected BEFORE any other transformation towards a gt-like
    dictionary xml structure.
+JR answers:
+ - There was a problem with  'saada' and 'vihiä', namely, the first is a verb and the second is the object. This was a hand correction.
 _________________
 
 <e id="sml_214" inNo="3464">
