@@ -396,3 +396,276 @@ TODO:
  - find the opposite type of <e_u>-structure:
     not many sml-entries to unify but a very complex
     structure in the t-part; try to gt-transform it
+
+Here some examples:
+
+      <e id="sml_26739">
+         <rev-sort_key>rruš</rev-sort_key>
+         <lg>
+            <l>šurr</l>
+            <variants>
+               <l_syn>jõnn</l_syn>
+            </variants>
+         </lg>
+         <content>
+            <p id="1">23259</p>
+            <p id="2">suuri</p>
+            <p id="3"/>
+            <p id="4"/>
+            <p id="5">rruš</p>
+            <p b_info="(-šuur, -šuʹrre)" id="6" syn="jõnn (attr.)">šurr</p>
+            <p id="7"/>
+            <p id="8"/>
+            <p id="9"/>
+            <p id="10"/>
+            <p id="11"/>
+            <p id="12"/>
+            <p id="13"/>
+            <p id="14"/>
+            <p id="15"/>
+            <p id="16"/>
+            <p id="17">1.111</p>
+         </content>
+      </e>
+      <e id="sml_7741">
+         <rev-sort_key>sârõõk</rev-sort_key>
+         <lg>
+            <l>kõõrâs</l>
+         </lg>
+         <content>
+            <p id="1"/>
+            <p id="2">voimakas</p>
+            <p id="3">ankara, kova</p>
+            <p id="4"/>
+            <p id="5">sârõõk</p>
+            <p b_info="(kõrrâz)" id="6">kõõrâs</p>
+            <p id="7"/>
+            <p id="8"/>
+            <p id="9"/>
+            <p id="10">kõrr</p>
+            <p id="11"/>
+            <p id="12"/>
+            <p id="13"/>
+            <p id="14"/>
+            <p id="15"/>
+            <p id="16"/>
+            <p id="17">1.2</p>
+         </content>
+      </e>
+
+      <e id="sml_7692">
+         <rev-sort_key>sâmlõõk</rev-sort_key>
+         <lg>
+            <l>kõõlmâs</l>
+            <variants>
+               <l_var>kõõumâs</l_var>
+            </variants>
+         </lg>
+         <content>
+            <p id="1">24005</p>
+            <p id="2">tajuton: tajuttomaksi</p>
+            <p id="3"/>
+            <p id="4"/>
+            <p id="5">sâmlõõk</p>
+            <p id="6" var="kõõumâs">kõõlmâs</p>
+            <p id="7"/>
+            <p id="8"/>
+            <p id="9"/>
+            <p id="10"/>
+            <p id="11"/>
+            <p id="12"/>
+            <p id="13"/>
+            <p id="14"/>
+            <p id="15"/>
+            <p id="16"/>
+            <p id="17">1000</p>
+         </content>
+       </e>
+
+
+      <e id="sml_7784">
+         <rev-sort_key>sâmuõõk</rev-sort_key>
+         <lg>
+            <l>kõõumâs</l>
+            <variants>
+               <l_attr>kõumm</l_attr>
+               <l_var>kõõlmâs</l_var>
+            </variants>
+         </lg>
+         <content>
+            <p id="1">10111</p>
+            <p id="2">kylmä</p>
+            <p id="3"/>
+            <p id="4"/>
+            <p id="5">sâmuõõk</p>
+            <p attr="#kõumm" id="6" var="kõõlmâs">kõõumâs</p>
+            <p id="7"/>
+            <p id="8"/>
+            <p id="9"/>
+            <p id="10">kõlmm</p>
+            <p id="11"/>
+            <p id="12"/>
+            <p id="13"/>
+            <p id="14"/>
+            <p id="15"/>
+            <p id="16"/>
+            <p id="17">1.2</p>
+         </content>
+      </e>
+
+
+      <e id="sml_27701">
+         <rev-sort_key>sâduiit</rev-sort_key>
+         <lg>
+            <l>tiiudâs</l>
+         </lg>
+         <content>
+            <p id="1">26266</p>
+            <p id="2">täysinäinen</p>
+            <p id="3"/>
+            <p id="4"/>
+            <p id="5">sâduiit</p>
+            <p b_info="(tiuddâz, tiuddsa, #tiudd-)" id="6">tiiudâs</p>
+            <p id="7"/>
+            <p id="8"/>
+            <p id="9"/>
+            <p id="10"/>
+            <p id="11"/>
+            <p id="12"/>
+            <p id="13"/>
+            <p id="14"/>
+            <p id="15"/>
+            <p id="16"/>
+            <p id="17">1.2</p>
+         </content>
+      </e>
+
+      <e id="sml_29179">
+         <rev-sort_key>cclʹåt</rev-sort_key>
+         <lg>
+            <l>tåʹlcc</l>
+            <variants>
+               <l_syn>mieʹrres</l_syn>
+            </variants>
+         </lg>
+         <content>
+            <p id="1">25986</p>
+            <p id="2">tylsä</p>
+            <p id="3"/>
+            <p id="4"/>
+            <p id="5">cclʹåt</p>
+            <p b_info="(#tååʹlces)" id="6" syn="mieʹrres (attr.)">tåʹlcc</p>
+            <p id="7"/>
+            <p id="8"/>
+            <p id="9"/>
+            <p id="10"/>
+            <p id="11"/>
+            <p id="12"/>
+            <p id="13"/>
+            <p id="14"/>
+            <p id="15"/>
+            <p id="16"/>
+            <p id="17">3.11</p>
+         </content>
+      </e>
+
+
+      <e id="sml_574">
+         <rev-sort_key>ǩelʹââ</rev-sort_key>
+         <lg>
+            <l>ââʹleǩ</l>
+            <variants>
+               <l_syn>seenai</l_syn>
+               <l_var>ââʹliǩ</l_var>
+            </variants>
+         </lg>
+         <content>
+            <p id="1">22166</p>
+            <p id="2">sininen</p>
+            <p id="3"/>
+            <p id="4"/>
+            <p id="5">ǩelʹââ</p>
+            <p id="6" syn="seenai" var="ââʹliǩ">ââʹleǩ</p>
+            <p id="7"/>
+            <p id="8"/>
+            <p id="9"/>
+            <p id="10"/>
+            <p id="11"/>
+            <p id="12"/>
+            <p id="13"/>
+            <p id="14"/>
+            <p id="15"/>
+            <p id="16"/>
+            <p id="17">1.2</p>
+         </content>
+      </e>
+
+      <e id="sml_26739">
+         <rev-sort_key>rruš</rev-sort_key>
+         <lg>
+            <l>šurr</l>
+            <variants>
+               <l_syn>jõnn</l_syn>
+            </variants>
+         </lg>
+         <content>
+            <p id="1">23259</p>
+            <p id="2">suuri</p>
+            <p id="3"/>
+            <p id="4"/>
+            <p id="5">rruš</p>
+            <p b_info="(-šuur, -šuʹrre)" id="6" syn="jõnn (attr.)">šurr</p>
+            <p id="7"/>
+            <p id="8"/>
+            <p id="9"/>
+            <p id="10"/>
+            <p id="11"/>
+            <p id="12"/>
+            <p id="13"/>
+            <p id="14"/>
+            <p id="15"/>
+            <p id="16"/>
+            <p id="17">1.111</p>
+         </content>
+      </e>
+
+
+      <e id="sml_29039">
+         <rev-sort_key>anäut</rev-sort_key>
+         <lg>
+            <l>tuäna</l>
+            <variants>
+               <l_syn>tåna</l_syn>
+               <l_syn>tååna</l_syn>
+            </variants>
+         </lg>
+         <content>
+            <p id="1">24528</p>
+            <p id="2">te kaksi</p>
+            <p id="3"/>
+            <p id="4"/>
+            <p id="5">anäut</p>
+            <p b_info="(tuännaid)" id="6" syn="tåna ~ tååna (tånnaid)">tuäna</p>
+            <p id="7"/>
+            <p id="8"/>
+            <p id="9"/>
+            <p id="10"/>
+            <p id="11"/>
+            <p id="12"/>
+            <p id="13"/>
+            <p id="14"/>
+            <p id="15"/>
+            <p id="16"/>
+            <p id="17">1000</p>
+         </content>
+      </e>
+
+ CG comment:
+  - as orientation
+    1. check all <p id="N">-elements systematically for
+        regularities/irregularities
+
+    2. check all attributes in <p id="6"> systematically and give a
+        description of what they mean and how to be transformed into
+        the gt-like dict-structure
+
