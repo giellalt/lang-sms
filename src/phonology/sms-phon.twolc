@@ -358,10 +358,10 @@ Rules
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
  å:0 <=>
  OnSetC _ å: (u) (ʹ:|0:ʹ) Cns: [ Cns:*|:Cns*]  %^VV2V:  ;
-         OnSetC _ õ: (ʹ:|0:ʹ) Cns: (:Cns+|Cns:+) [Vow:|%{Â1%}:|%{A1%}:|%{E1%}:] [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^PenVV2V: ;
+         OnSetC _ å: (ʹ:|0:ʹ) Cns: (:Cns+|Cns:+) [Vow:|%{Â1%}:|%{A1%}:|%{E1%}:] [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^PenVV2V: ;
 !! sååbbar+N+Sg+Gen __meeting__
-!€# sååbb%{A1%}r%^PenVV2V%^IMPSG2
-!€0 s0åbbar00
+!€# sååbbar%^PenVV2V
+!€0 s0åbbar0
 
 
 "Even syllabic verbs I, vowel shortening õ:0"
@@ -511,10 +511,10 @@ Rules
   OnSetC :0 _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] %^VV2V: %^VOWRaise: ;
 !€# teevv%^VV2V%^VOWRaise%>uš
 !€0 t0ivv000uš
-  OnSetC  [e:|e:0|0:i] _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  PrecedeVOWLowerRaise %^VOWRaise: ;
-  OnSetC _ (u:) (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] PrecedeVOWLowerRaise %^VOWRaise: ;
+  OnSetC  [e:|e:0|0:i] _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  BetweenStemAndHeight %^VOWRaise: ;
+  OnSetC _ (u:) (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] BetweenStemAndHeight %^VOWRaise: ;
 ! diphthong raising with e:i at onset - deriving +Ind+Prt+Pl3 in reäkkad > riâkku, veârrad > viõrru
-  _ [ä:|â: ] (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  PrecedeVOWLowerRaise  %^VOWRaise: ;
+  _ [ä:|â: ] (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  BetweenStemAndHeight  %^VOWRaise: ;
 
 
 
@@ -543,20 +543,20 @@ Rules
 "Even syllabic verbs I, diphthong raising beginning with e:i ä:â"
 !! __@RULENAME@__ - deriving +Ind+Prt+Pl3 in reäkkad > riâkku, veârrad > viõrru
 !! {{{
- ä:â <=> OnSetC e:  _ (%ʹ:|0:%ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+]  PrecedeVOWLowerRaise %^VOWRaise: %> u ;
+ ä:â <=> OnSetC e:  _ (%ʹ:|0:%ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+]  BetweenStemAndHeight %^VOWRaise: %> u ;
 !! }}}
 
 
 
 "Even syllabic verbs I, diphthong raising beginning with e:i ä:e"
 !! __@RULENAME@__ 
- ä:e <=> OnSetC [u|e:i]  _ :ʹ [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+]  PrecedeVOWLowerRaise %^VOWRaise: %^PALE: %^PAL: ;
+ ä:e <=> OnSetC [u|e:i]  _ :ʹ [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+]  BetweenStemAndHeight %^VOWRaise: %^PALE: %^PAL: ;
 !€# čuä0ckk%^CONSH%^PALE%^PAL%>es
 !€# čueʹcǩ00000es
 
 "Even syllabic verbs I, diphthong raising beginning with e:i ä:ẹ"
 !! __@RULENAME@__ 
- ä:ẹ <=> OnSetC [u|e:i]  _ :ʹ [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+]  PrecedeVOWLowerRaise %^VOWRaise: %^PALẸ: %^PAL: ;
+ ä:ẹ <=> OnSetC [u|e:i]  _ :ʹ [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+]  BetweenStemAndHeight %^VOWRaise: %^PALẸ: %^PAL: ;
 
 
 "Even syllabic verbs I, diphthong raising beginning with ä:a u"
