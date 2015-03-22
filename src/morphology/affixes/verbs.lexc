@@ -840,28 +840,39 @@ LEXICON V_VUEIʹNNED
 ! Vowel raising
 ! NEEDS WORK
 !(son vuäinn)
-+V+Ind+Prs:		TIETTED-PRS ;
-+V+Ind+Prt:		TIETTED-PRT ;
-+V+Imprt:			TIETTED-IMPRT ;
-+V:%^V2VV%^VOWBack%^PAL%^CC2C%>	POTENTIAL ; !WG PAL for vuõʹljžem
-+V:%^V2VV%^PAL%^CC2C%>	POTENTIAL ; !WG PAL for vueʹljžem
-+V:%^V2VV%^VOWLower%^PALNo%^CC2C%>	CONDITIONAL ; !WG vowel lowering to cope with
-! vuâlǥas this would mean there is a form teâđas 2012-11-27
-+V+Pot+Sg3:%^V2VV%^PAL%^CC2C%>ež	FINAL1 ; !WG vueʹljež
-+V+Pot+Sg3:%^V2VV%^VOWBack%^PAL%^CC2C%>ež	FINAL1 ; !WG vuõʹljež
-+V+Inf:%^VOWFront%^PAL%>ed FINAL1 ;
-+V+ActEss:%^PAL%>men FINAL1 ;
-+V+GerTemp:%^V2VV%^PAL%^CC2C%>een FINAL1 ;
-+V+GerInstr:%^V2VV%^PAL%^CC2C%>eeʹl FINAL1 ;
-+V+Actio:%^PAL%>em FINAL1 ;
-+V+PrsPrc:%^VOWBack%^PAL%>i FINAL1 ; !vuõʹlǧǧi
-+V+PrsPrc:%^PAL%>i FINAL1 ; !vueʹlǧǧi
-+V+PrfPrc:%^VOWLower%^VOWBack%^PALNo%>am FINAL1 ;
-+V+Pass+PrfPrc:%^VOWBack%^PALNo%>um FINAL1 ;
-+V+Imprt+13+ConNeg:%^VOWBack%^PALNo%>u FINAL1 ;
-!+V+VAbess:%^V2VV%^CC2C%>kâni FINAL1 ;			!WG
-+V+VAbess:%^V2VV%^PAL%^CC2C%>kani FINAL1 ;		!WG
-+V+VAbess:%^V2VV%^PAL%^CC2C%>ǩeännai FINAL1 ;		!WG
++V:%^PALE%^PAL VSUF-INF_ED ; !1
++V:%^VOWLower VSUF-IND-PRS-SG3_ED ; !2
++V+Ind+Prs+Pl3:%^VOWLower%^PAL%>e FINAL1 ; !3
++V:%^PALE%^PAL%> VSUF-IND-PRT-PL3_ED ; !4
++V:%^VOWRaise%^PAL%^CC2C%> VSUF-POTENTIAL_ED ; !5
++V:%^VOWLower%^CC2C%> VSUF-CONDITIONAL_ED ; !5 ?2 ?7
++V+Pot+Sg3:%^VOWRaise%^PAL%^CC2C%>ež   FINAL1 ; !6
++V+Pot+Sg3:%^PALE%^PAL%^CC2C%>ež   FINAL1 ; !6
++V+Imprt+Sg3:%^CC2C%>as FINAL1 ; !7
++V:%^VOWRaise VSUF-IMPRT-13-CONNEG_ED ; !8
+
+!+V+Ind+Prs:		TIETTED-PRS ;
+!+V+Ind+Prt:		TIETTED-PRT ;
+!+V+Imprt:			TIETTED-IMPRT ;
+!+V:%^V2VV%^VOWBack%^PAL%^CC2C%>	POTENTIAL ; !WG PAL for vuõʹljžem
+!+V:%^V2VV%^PAL%^CC2C%>	POTENTIAL ; !WG PAL for vueʹljžem
+!+V:%^V2VV%^VOWLower%^PALNo%^CC2C%>	CONDITIONAL ; !WG vowel lowering to cope with
+!! vuâlǥas this would mean there is a form teâđas 2012-11-27
+!+V+Pot+Sg3:%^V2VV%^PAL%^CC2C%>ež	FINAL1 ; !WG vueʹljež
+!+V+Pot+Sg3:%^V2VV%^VOWBack%^PAL%^CC2C%>ež	FINAL1 ; !WG vuõʹljež
+!+V+Inf:%^VOWFront%^PAL%>ed FINAL1 ;
+!+V+ActEss:%^PAL%>men FINAL1 ;
+!+V+GerTemp:%^V2VV%^PAL%^CC2C%>een FINAL1 ;
+!+V+GerInstr:%^V2VV%^PAL%^CC2C%>eeʹl FINAL1 ;
+!+V+Actio:%^PAL%>em FINAL1 ;
+!+V+PrsPrc:%^VOWBack%^PAL%>i FINAL1 ; !vuõʹlǧǧi
+!+V+PrsPrc:%^PAL%>i FINAL1 ; !vueʹlǧǧi
+!+V+PrfPrc:%^VOWLower%^VOWBack%^PALNo%>am FINAL1 ;
+!+V+Pass+PrfPrc:%^VOWBack%^PALNo%>um FINAL1 ;
+!+V+Imprt+13+ConNeg:%^VOWBack%^PALNo%>u FINAL1 ;
+!!+V+VAbess:%^V2VV%^CC2C%>kâni FINAL1 ;			!WG
+!+V+VAbess:%^V2VV%^PAL%^CC2C%>kani FINAL1 ;		!WG
+!+V+VAbess:%^V2VV%^PAL%^CC2C%>ǩeännai FINAL1 ;		!WG
 
 LEXICON V_VUEʹLǦǦED
 ! FORMS
@@ -1502,16 +1513,16 @@ LEXICON KAMRDED-PRS
  +ConNeg:%^IMPSG2 FINAL1 ; ! kååʹmmerd
 
 LEXICON LEED-PRS
- +Sg1:eäm		FINAL1	; !WG
- +Sg2:eäk		FINAL1	; !WG
- +Sg3:ij		FINAL1	; 
- +Pl1:eäʹp	FINAL1	; ! __
- +Pl2:%>eäʹped		FINAL1	; ! __
- +Pl2:%>eʹped		FINAL1	; ! __
- +Pl3:%>ie		FINAL1	; ! __
- +Pl3:%>iâ		FINAL1	; ! __
- +Pl3:%>ee		FINAL1	; ! __
- +Sg4:%>eät FINAL1 ; ! 
+ +Sg1:eäm		K	; !WG
+ +Sg2:eäk		K	; !WG
+ +Sg3:ij		K	; 
+ +Pl1:eäʹp	K	; ! __
+ +Pl2:%>eäʹped		K	; ! __
+ +Pl2:%>eʹped		K	; ! __
+ +Pl3:%>ie		K	; ! __
+ +Pl3:%>iâ		K	; ! __
+ +Pl3:%>ee		K	; ! __
+ +Sg4:%>eät K ; ! 
  +ConNeg:eäkˈku FINAL1 ; ! 
 
 ! Past tense

@@ -40,7 +40,8 @@ The rule file for Skolt Saami is divided into 5 main types:
 
 Trigger symbols
 
- *  %^RmVow:0  for removing vowels e, â, a in second syllable before consonant  
+ *  %^RmVow:0  for removing vowels e, â, a after final consonant in stem
+ *  %^PenRmVow:0  for removing penultimate vowels e, â, a, i.e. vowel befor final stem consonant/consonants
  *  %^1VOW:0 %^2VOW:0 %^3VOW:0 %^4VOW:0 %^5VOW:0  Vow triggers
 
  *  %^VOWLower:0  i>e, õ>â, â>ä, u>o, o>å
@@ -244,6 +245,7 @@ possible triggers between VowHeight and word end
 possible triggers between word end and consonant grade
 
 
+
 neutral to vowel height and backness
 {{{
  * NeutrHighBack = [(%^VOWLower:|%^VOWRaise:) (%^VOWFront:|%^VOWBack:)] ;  
@@ -258,7 +260,7 @@ neutral to vowel and consonant length
 
 
 
-* X3 = C Vx Cx Cx     C Vx Vy Cx ' Cx
+* X3 = C Vx Cx Cx     C Vx Vy Cx ˈ Cx
 * X2 = C Vx Vx Cx Cx  C Vx Vy Cx Cx
 * X1 = C Vx Vx Cx     C Vx Vy Cx
 
@@ -271,10 +273,8 @@ neutral to vowel and consonant length
 
 
 __Even syllabic verbs I, vowel shortening â:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
-{{{
 
 
-}}}
 
 __Even syllabic verbs I, vowel shortening e:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
 teevvad+V+Prt+4:
@@ -283,6 +283,7 @@ deriving cieʹǩǩes+N+Sg+Ill: ceäkˈksa
 
 
 __Even syllabic verbs I, vowel shortening å:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+sååbbar+N+Sg+Gen __meeting__
 
 
 __Even syllabic verbs I, vowel shortening õ:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
@@ -346,7 +347,7 @@ __Even syllabic verbs I, vowel raising â:õ __ - Adding +Prt+Pl3 for ed verbs, 
 
 
 
-__Even syllabic verbs I, diphthong raising beginning with u ä:å__ - deriving +Ind+Prt+Pl3 in kuâs'sad > kuõs'su, kuärŋŋad kuårŋŋu
+__Even syllabic verbs I, diphthong raising beginning with u ä:å__ - deriving +Ind+Prt+Pl3 in kuâsˈsad > kuõsˈsu, kuärŋŋad kuårŋŋu
 {{{
 }}}
 
@@ -390,8 +391,9 @@ __Even syllabic verbs I, vowel lowering a:ä__ - Adding +Prt+Pl3 for ed verbs, R
 
 
 __Even syllabic verbs I, vowel lowering u:o__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in uʹvdded
-
+uʹvdded+V+Cond+Pl3 __to give__
 vuʹvll+N+Sg+Ill: voulla
+
 stuuʹl+N+Sg+Ill: stooula
 
 
@@ -603,7 +605,6 @@ __Even-syllabic nouns I,  ǧ and weakening of grade to j__ - vueʹlǧǧed+V+Ind+
 __Even-syllabic nouns I, Depalatalization of ǧǧ__ - vueʹlǧǧed+V+Ind+Prs+Sg3: vuâlgg
 
 __Even-syllabic nouns I, Depalatalization of ǩ:k__ -
- *  ǩ:k <=>   
 
 __Even-syllabic nouns, removing palatalization in -est +Loc nouns__ - removing palatalization in +Sg+Ill,  pieʹss:peässa
 
@@ -626,7 +627,6 @@ __Even syllabic verbs I, cg m:0__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg,
 
 
 __Even syllabic verbs I, cg v:0__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, teevvad > teev
-
 
 
 __Even syllabic nouns I, with extra lengthening of vowel ij>ii/uv>uu and dd>d__ - used with  +N+Sg+Nom > +N+Sg+Gen, sijdd > siid
@@ -661,7 +661,8 @@ deriving påll+N+Sg+Gen: pååll
 __j:0 __ 
 
 
-__Even syllabic verbs I, cg for g__ - used with  cõõggâlm+N+Sg+Ill: cõglma
+__Even syllabic verbs I, cg for g__
+cõõggâlm+N+Sg+Ill
 
 __Even syllabic verbs I, cg for ǧ__ - used with  vueʹlǧǧed+V+Ind+Prs+Sg1: vuâlǥam
 
