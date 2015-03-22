@@ -2610,29 +2610,6 @@ LEXICON NMN_OBL-KAAĐNEǨ
 :%^V2VV%^PAL PL-OBL ;
 
 
-LEXICON N_SLOOHMAN
-+N: NMN_SLOOHMAN ;
-LEXICON NMN_SLOOHMAN
-!! !!2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 252)
-!! !!2.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
-!! !!2.3.2 Sg.Ill in -a
-!! !!2.3.2.2 LACKS Gradation
-!! !!2.3.2.2.1 Penultimate stem vowel loss: (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Gen, Pl.Acc, Pl.Ill, Pl.Loc, Pl.Com, Pl.Abe)
-!! !!2.3.2.2.1.1 The Sg.Com vowel i appears before final n  
-!NumContLex="1.2"
-!! ** Yaml: __A-sloohman__
-:%^PenRmVow%> PL-OBL ;
-:  PL-NOM ;
-:%^PenRmVow%>e ESS ;
-:%^PenRmVow%>e PAR ;
-:  SG-ABE ;
-:  SG-ACC ;
-:%^PenRmVow%> SG-COM_IN ;
-:  SG-GEN ;
-:%^PenRmVow%>a SG-ILL ;
-:%^PenRmVow%>e SG-LOC ;
-:  SG-NOM ;
-
 !! !!l-stems
 LEXICON N_NJUÄʹMMEL !!= * @CODE@ = stemtype l-stem njuäʹmmel:njuäʹmmel
 !! ** Yaml: __njuammel, njuunnjel, aappal__ 
@@ -2648,22 +2625,7 @@ LEXICON N_NJUÄʹMMEL !!= * @CODE@ = stemtype l-stem njuäʹmmel:njuäʹmmel
 +N:%^VOWSH%^CLong PL-NOM ;
 +N:%^VOWSH%^CLong%^RmVow PL-OBL ;
 
-LEXICON N_ǨEÂLǤAL
-! "1.2"
-!! = stemtype n-stem ǩeâlǥal:ǩeâlǥal
-!! ** Yaml: __kealgal__
-+N: SG-NOM ;
-+N:%^PenC2CC SG-GEN ;
-+N:%^PenC2CC SG-ACC ;
-+N:%^PenC2CC%^PenRmVow%>a SG-ILL ;
-+N:%^PenC2CC%^PenRmVow%>e SG-LOC ;
-+N:%^PenC2CC%^PenRmVow NMN_SG-COM_IN ;
-+N:%^PenC2CC%^PenRmVow%>e ESS ; ! ess and prt without
-+N:%^PenC2CC%^PenRmVow%>e PAR ;
-+N:%^PenC2CC SG-ABE ;
-+N:%^PenC2CC PL-NOM ;
-+N:%^PenC2CC%^PenRmVow PL-OBL ;
-
+!! In penultimate â:0
 
 LEXICON N_KÕÕNJÂL
 ! Gradation: Yes
@@ -2683,6 +2645,48 @@ LEXICON N_KÕÕNJÂL
 +N:%^PenVV2V%^PenC2CC%^PenRmVow%>e PAR ;
 +N:%^PenVV2V%^PenC2CC%^PenRmVow SG-ABE ;
 +N:%^PenVV2V%^PenC2CC PL-NOM ;
++N:%^PenVV2V%^PenC2CC%^PenRmVow PL-OBL ;
+
+LEXICON N_TAALKÂS
+! Gradation: Yes
+! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
+! Penultimate stem vowel retention: Sg.Nom, Sg.Gen, Sg.Acc, Sg.Abe, Pl.Nom
+! Stem vowel: e
+! Voicing of final sibilant
+!! stemtype n-stem taalkâs:taalkâs
+!! N_GEN2X3-NOM2X1
+!! ** Yaml: __N-taalkas__
++N: SG-NOM ;
++N:%^PenVV2V%^PenC2CC%^VC SG-GEN ;
++N:%^PenVV2V%^PenC2CC%^VC SG-ACC ;
++N:%^PenVV2V%^PenC2CC%^PenRmVow%>a SG-ILL ;
++N:%^PenVV2V%^PenC2CC%^PenRmVow%>e SG-LOC ;
++N:%^PenVV2V%^PenC2CC%^PenRmVow NMN_SG-COM_IN ;
++N:%^PenVV2V%^PenC2CC%^PenRmVow%>e ESS ; ! ess and prt without
++N:%^PenVV2V%^PenC2CC%^PenRmVow%>e PAR ;
++N:%^PenVV2V%^PenC2CC%^PenRmVow SG-ABE ;
++N:%^PenVV2V%^PenC2CC%^VC PL-NOM ;
++N:%^PenVV2V%^PenC2CC%^PenRmVow PL-OBL ;
+
+LEXICON N_VÕÕNÂS
+! Gradation: Yes
+! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
+! Penultimate stem vowel retention: Sg.Nom, Sg.Gen, Sg.Acc, Sg.Abe, Pl.Nom
+! Stem vowel: e
+! Voicing of final sibilant
+!! stemtype n-stem võõnâs:võõnâs
+!! N_GEN2X3-NOM2X1
+!! ** Yaml: __N-voonas__
++N: SG-NOM ;
++N:%^PenVV2V%^PenC2CC%^VC SG-GEN ;
++N:%^PenVV2V%^PenC2CC%^VC SG-ACC ;
++N:%^PenVV2V%^PenC2CC%^PenRmVow%>a SG-ILL ;
++N:%^PenVV2V%^PenC2CC%^PenRmVow%>e SG-LOC ;
++N:%^PenVV2V%^PenC2CC%^PenRmVow NMN_SG-COM_IN ;
++N:%^PenVV2V%^PenC2CC%^PenRmVow%>e ESS ; ! ess and prt without
++N:%^PenVV2V%^PenC2CC%^PenRmVow%>e PAR ;
++N:%^PenVV2V%^PenC2CC%^PenRmVow SG-ABE ;
++N:%^PenVV2V%^PenC2CC%^VC PL-NOM ;
 +N:%^PenVV2V%^PenC2CC%^PenRmVow PL-OBL ;
 
 LEXICON N_TUÕDDÂR
@@ -2723,7 +2727,48 @@ LEXICON N_ǨIÕRÂČ
 +N:%^PenRmVow PL-NOM ;
 +N:%^PenRmVow PL-OBL ;
 
+LEXICON N_CÕÕGGÂLM
+! Gradation: Yes
+!   Extra strong grade: Else
+!   Strong grade: Sg.Nom
+! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
+! Stem vowel: e
+!! stemtype l-stem cõõggâlm:cõõggâlm
+!! * __@LEXNAME@__ = Koulukielioppi stemtype II 9 (29)
+!! ** Yaml: __cooggalm, aaresm, kaaddask __ 
++N: SG-NOM ;
++N: SG-GEN ;
++N: SG-ACC ;
++N:%^PenVV2V%^PenCC2C%^PenRmVow%>a SG-ILL ;
++N:%^PenVV2V%^PenCC2C%^PenRmVow%>e SG-LOC ;
++N:%^PenVV2V%^PenCC2C%^PenRmVow NMN_SG-COM_IN ;
++N:%^PenVV2V%^PenCC2C%^PenRmVow%>e ESS ; ! ess and prt without
++N:%^PenVV2V%^PenCC2C%^PenRmVow%>e PAR ;
++N:%^PenVV2V%^PenCC2C%^PenRmVow SG-ABE ;
++N: PL-NOM ;
++N:%^PenVV2V%^PenCC2C%^PenRmVow PL-OBL ;
+
+!! in penultimate a:0
+
+LEXICON N_ǨEÂLǤAL
+! Gradation: Yes
+! "1.2"
+!! = stemtype n-stem ǩeâlǥal:ǩeâlǥal
+!! ** Yaml: __kealgal__
++N: SG-NOM ;
++N:%^PenC2CC SG-GEN ;
++N:%^PenC2CC SG-ACC ;
++N:%^PenC2CC%^PenRmVow%>a SG-ILL ;
++N:%^PenC2CC%^PenRmVow%>e SG-LOC ;
++N:%^PenC2CC%^PenRmVow NMN_SG-COM_IN ;
++N:%^PenC2CC%^PenRmVow%>e ESS ; ! ess and prt without
++N:%^PenC2CC%^PenRmVow%>e PAR ;
++N:%^PenC2CC SG-ABE ;
++N:%^PenC2CC PL-NOM ;
++N:%^PenC2CC%^PenRmVow PL-OBL ;
+
 LEXICON N_SÅÅBBAR
+! Gradation: Yes
 !! stemtype n-stem sååbbar:sååbbar
 !! N_GEN2X3-NOM2X1
 !! ** Yaml: __N-sååbbar__
@@ -2803,27 +2848,54 @@ LEXICON N_ÄÄPPAL
 +N:%^PenVV2V%^PenRmVow PL-OBL ;
 
 
-LEXICON N_CÕÕGGÂLM
+LEXICON N_KÅÅVAS
 ! Gradation: Yes
 !   Extra strong grade: Else
-!   Strong grade: Sg.Nom
+!   Weak grade: Sg.Nom
+! Monophthong
 ! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
 ! Stem vowel: e
-!! stemtype l-stem cõõggâlm:cõõggâlm
-!! * __@LEXNAME@__ = Koulukielioppi stemtype II 9 (29)
-!! ** Yaml: __cooggalm, aaresm, kaaddask __ 
+!! stemtype n-stem kååvas:kååvas
+!! N_GEN2X3-NOM2X1
+!! ** Yaml: __N-kaavas__
 +N: SG-NOM ;
-+N: SG-GEN ;
-+N: SG-ACC ;
-+N:%^PenVV2V%^PenCC2C%^PenRmVow%>a SG-ILL ;
-+N:%^PenVV2V%^PenCC2C%^PenRmVow%>e SG-LOC ;
-+N:%^PenVV2V%^PenCC2C%^PenRmVow NMN_SG-COM_IN ;
-+N:%^PenVV2V%^PenCC2C%^PenRmVow%>e ESS ; ! ess and prt without
-+N:%^PenVV2V%^PenCC2C%^PenRmVow%>e PAR ;
-+N:%^PenVV2V%^PenCC2C%^PenRmVow SG-ABE ;
-+N: PL-NOM ;
-+N:%^PenVV2V%^PenCC2C%^PenRmVow PL-OBL ;
++N:%^PenVV2V%^PenC2CC%^VC SG-GEN ;
++N:%^PenVV2V%^PenC2CC%^VC SG-ACC ;
++N:%^PenVV2V%^PenC2CC%^PenRmVow%>a SG-ILL ;
++N:%^PenVV2V%^PenC2CC%^PenRmVow%>e SG-LOC ;
++N:%^PenVV2V%^PenC2CC%^PenRmVow NMN_SG-COM_IN ;
++N:%^PenVV2V%^PenC2CC%^PenRmVow%>e ESS ; ! ess and prt without
++N:%^PenVV2V%^PenC2CC%^PenRmVow%>e PAR ;
++N:%^PenVV2V%^PenC2CC%^PenRmVow SG-ABE ;
++N:%^PenVV2V%^PenC2CC%^VC PL-NOM ;
++N:%^PenVV2V%^PenC2CC%^PenRmVow PL-OBL ;
 
+
+LEXICON N_SLOOHMAN
+! Gradation: None
++N: NMN_SLOOHMAN ;
+LEXICON NMN_SLOOHMAN
+!! !!2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 252)
+!! !!2.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
+!! !!2.3.2 Sg.Ill in -a
+!! !!2.3.2.2 LACKS Gradation
+!! !!2.3.2.2.1 Penultimate stem vowel loss: (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Gen, Pl.Acc, Pl.Ill, Pl.Loc, Pl.Com, Pl.Abe)
+!! !!2.3.2.2.1.1 The Sg.Com vowel i appears before final n  
+!NumContLex="1.2"
+!! ** Yaml: __A-sloohman__
+:%^PenRmVow%> PL-OBL ;
+:  PL-NOM ;
+:%^PenRmVow%>e ESS ;
+:%^PenRmVow%>e PAR ;
+:  SG-ABE ;
+:  SG-ACC ;
+:%^PenRmVow%> SG-COM_IN ;
+:  SG-GEN ;
+:%^PenRmVow%>a SG-ILL ;
+:%^PenRmVow%>e SG-LOC ;
+:  SG-NOM ;
+
+!! In penultimate e:0
 
 LEXICON N_VEEʹREST
 ! Gradation: Yes
@@ -2881,8 +2953,13 @@ LEXICON N_ÄÄʹREŠM
 !! !!m-stems
 
 LEXICON N-laajj !!= * @CODE@ = stemtype Âm-stem
+ N_LAAJJ ;
+LEXICON N_LAAJJ
+! Gradation: Yes
+! laajj:lačč
 !! ** Yaml:
-+N:%^VOWXL SG-NOM ; ! õõh:õõu
++N:%^V2VV%^CC2C SG-NOM ; ! õõh:õõu
+!+N:%^VOWXL SG-NOM ; ! õõh:õõu
 +N:âm SG-GEN ;
 +N:âm SG-ACC ;
 +N:m%>a SG-ILL ;
@@ -2893,6 +2970,24 @@ LEXICON N-laajj !!= * @CODE@ = stemtype Âm-stem
 +N:âm SG-ABE ;
 +N:âm PL-NOM ;
 +N:m PL-OBL ;
+
+LEXICON N_SÕÕUS
+! Gradation: Yes
+! sõõus:sõhss
+!! ** Yaml:
++N:%^V2VV%^XYY2VY SG-NOM ; ! õõh:õõu
+!+N:%^VOWXL SG-NOM ; ! õõh:õõu
++N:âm SG-GEN ;
++N:âm SG-ACC ;
++N:m%>a SG-ILL ;
++N:m%>e SG-LOC ;
++N:m%> NMN_SG-COM_IN ;
++N:%>e ESS ; ! ess and prt without m? earlier: +N:m%>e ESS
++N:%>e PAR ; ! ess and prt without m?
++N:âm SG-ABE ;
++N:âm PL-NOM ;
++N:m PL-OBL ;
+
 
 
 LEXICON N_VUEʹN !!= * @CODE@ = stemtype Am-stem
