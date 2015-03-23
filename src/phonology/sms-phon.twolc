@@ -123,6 +123,7 @@ Alphabet
  %{EÂ%}:e !!= * @CODE@ archiform for ie:eâ variation
  %^IMPSG2:0	!!= * @CODE@ 
  %^INDPRSSG3:0  !!= * @CODE@ 
+ %^PenVow2a:0	!!= * @CODE@ Changes penultimate vowel to a; e:a â:a
  %^FRICG:0	!!= * @CODE@ 
  %^VOWTense:0   !!= * @CODE@ â:e
  %^VOWLax:0     !!= * @CODE@ e:â 
@@ -518,8 +519,10 @@ Rules
   OnSetC  [e:|e:0|0:i] _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  BetweenStemAndHeight %^VOWRaise: ;
   OnSetC _ (u:) (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] BetweenStemAndHeight %^VOWRaise: ;
 ! diphthong raising with e:i at onset - deriving +Ind+Prt+Pl3 in reäkkad > riâkku, veârrad > viõrru
-  _ [ä:|â: ] (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  BetweenStemAndHeight  %^VOWRaise: ;
-
+  _ [ä:|â: ] (u) (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  BetweenStemAndHeight  %^VOWRaise: ;
+!!reâugg+N+Sg+Ill
+!€# reâugg%^VOWRaise%>u
+!€0 riõugg00u
 
 
 "Even syllabic verbs I, vowel raising â:õ" 
@@ -530,10 +533,13 @@ Rules
 !€0 ruõkˈk000u
   OnSetC â:  _      (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  BetweenStemAndHeight %^VOWRaise: ;
           OnSetC â:0 _      (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  BetweenStemAndHeight %^VOWRaise: (%^PAL:) ;
-                 0:õ _      (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]           VNeutrGrade %^VOWRaise: ;
+                 0:õ _      (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  BetweenStemAndHeight %^VOWRaise: ;
           OnSetC     _ (u:) (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]   %^VOWRaise: (%^PAL:) ;
-          OnSetC u   _      (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ :%ˈ Cns:+] ([%^VOWSH:|%^VOWXSH:] %^CLong:) %^VOWRaise: ;
-          OnSetC [ e: | i]  _      (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+]  BetweenStemAndHeight %^VOWRaise: ;
+          OnSetC u   _      (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ :%ˈ Cns:+] BetweenStemAndHeight %^VOWRaise: ;
+          OnSetC [ e: | i]  _   (u)   (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+]  BetweenStemAndHeight %^VOWRaise: ;
+!!reâugg+N+Sg+Ill
+!€# reâugg%^VOWRaise%>u
+!€0 riõugg00u
 
 
 
@@ -723,9 +729,12 @@ Rules
 
 "Vowel in second syllable e:a"
 !! __@RULENAME@__ - deriving cieʹǩǩes+N+Sg+Gen: ceäkˈkaz
-!! {{{
  e:a <=> OnSetC :Vow+ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] _ s: [%^VOWSH: %^CLong:|%^VOWXSH: %^CLong:] %^VOWLower: (%^VOWBack:) (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) %^VC: ;
-!! }}}        
+   _ (ʹ:|0:ʹ) [Cns:+] (%^PenV2VV:) %^PenVow2a: ;
+!!cieʹǩǩes+N+Sg+Gen
+!€# cieʹǩǩes%^PenVow2a
+
+
 
 "Even syllabic verbs I, diphthong opening i:e â:ä"
 !! __@RULENAME@__ - deriving +Ind+Prs+Sg3, in čiõkkâd
@@ -734,7 +743,7 @@ Rules
 !!vueiʹnned+V+Ind+Prs+Sg3
 !€# vuâinn%^VOWLower
 !€0 vuäinn0
- i: _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] %^VOWLower: (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
+ i: _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] %^VOWLower: (%^PALNo:| %^PAL:)  ;
 ! i: _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^PenV2VV: %^CShort:) %^VOWLower: (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
 
 
@@ -1061,6 +1070,13 @@ Rules
 !€# m0ain%{Â1%}st%^PenV2VV%^INDPRSSG3
 !€0 maainast00
          
+"Realization for â in a"
+!! __@RULENAME@__ -
+ â:a <=> _ (ʹ:|0:ʹ) [Cns:+] (%^PenV2VV:) %^PenVow2a: ;
+!!ǩiõrggned+V+Ind+Prs+Sg3
+!€# ǩiõrggân%^PenVow2a
+!€0 ǩiõrggan0
+
 !! !THE NON-ORTHOGRAPHIC SYLLABLE 
 
 
