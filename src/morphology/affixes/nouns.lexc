@@ -2366,17 +2366,18 @@ LEXICON NMN_VUʹVLL
 !! ** Yaml: __vuvll, vuvdd__
 !! * __vuʹvll:vuʹvll__
 +N:%^V2VV%^CC2C%^VOWLower%^PALNo%>a SG-ILL ; 
-+N: SG-NOM ;
-+N:%^V2VV%^CC2C SG-GEN ;
-+N:%^V2VV%^CC2C%^PAL SG-ACC ;
-+N:%^V2VV%^CC2C%>e SG-LOC ;
-+N:%^V2VV%^CC2C NMN_SG-COM_IN ;
-+N:%>e ESS ; ! ess and prt without
-+N:%>e PAR ;
-+N:%^V2VV%^CC2C SG-ABE ;
+ ATTESTED-NOUN-STEM ;
+ SG-NOM ;
+:%^V2VV%^CC2C SG-GEN ;
+:%^V2VV%^CC2C%^PAL SG-ACC ;
+:%^V2VV%^CC2C%>e SG-LOC ;
+:%^V2VV%^CC2C NMN_SG-COM_IN ;
+:%>e ESS ; ! ess and prt without
+:%>e PAR ;
+:%^V2VV%^CC2C SG-ABE ;
 
-+N:%^V2VV%^CC2C PL-NOM ;
-+N:%^V2VV%^CC2C PL-OBL ;
+:%^V2VV%^CC2C PL-NOM ;
+:%^V2VV%^CC2C PL-OBL ;
 
 
 LEXICON N_E-ANoPal3-21 !!= * @CODE@ Nouns with -est Loc and -a Ill without ʹ
@@ -2403,6 +2404,7 @@ LEXICON NMN_PEÄʹSˈS
 !! lemma and stem 3rd grade; vowel raising
 !! ** Yaml: __peass__
 +Sg+Ill:%^PALNo%>a K ; 
+ ATTESTED-NOUN-STEM ;
 : SG-NOM ;
 :%^V2VV%^VOWRaise%^CC2C SG-GEN ;
 :%^V2VV%^VOWRaise%^CC2C SG-ACC ;
@@ -2423,6 +2425,7 @@ LEXICON NMN_NEIʹBB
 !! N_E-ANoPal2-21
 !! ** Yaml: __neibb__
 :%^PALNo%>a SG-ILL ; 
+ ATTESTED-NOUN-STEM ;
 : SG-NOM ;
 :%^V2VV%^CC2C SG-GEN ;
 :%^V2VV%^CC2C SG-ACC ;
@@ -2441,6 +2444,7 @@ LEXICON N_MIEʹRR
 LEXICON NMN_MIEʹRR
 !! Nouns with -est Loc and -a Ill without ʹ
 !! ** Yaml: __mierr__
+:%^PAL ATTESTED-NOUN-STEM ;
 :%^PAL SG-NOM ;
 :%^CC2C%^VOWLower%^PAL SG-GEN ;
 :%^CC2C%^VOWLower%^PAL SG-ACC ;
@@ -2459,6 +2463,7 @@ LEXICON N_MIEʹLǨǨ
 !! __@CODE@__ Nouns with -est Loc and -a Ill without ʹ
 !! mieʹlǩǩ:miâlkk
 !! ** Yaml: __N-mielkk__
++N:%^PALE%^PAL ATTESTED-NOUN-STEM ;
 +N:%^PALE%^PAL SG-NOM ;
 +N:%^PALE%^PAL%^CC2C SG-GEN ;
 +N:%^PALE%^PAL%^CC2C SG-ACC ;
@@ -2484,6 +2489,7 @@ LEXICON N_HÕʹPPI !!= * @CODE@ is for nouns with ''-est'' +Loc
 !! ** Yaml: __hoppi__
 !! * There are several stem types
 !! * hõʹppi:hõʹppi
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N: SG-GEN ;
 +N: SG-ACC ;
@@ -2503,6 +2509,7 @@ LEXICON N_LOOKKI !!= * @CODE@ is for nouns with ''-est'' +Loc
 !! * There are several stem types
 !! * lookki:lookki
 !! NumContLex="1.2"
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N:%^CC2C SG-GEN ;
 +N:%^CC2C SG-ACC ;
@@ -2521,6 +2528,7 @@ LEXICON N_SÄRNNAI !!= * @CODE@ is for nouns with ''-est'' +Loc
 !! * There are several stem types
 !! * särnnai:särnnai
 !! NumContLex="
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N:%^V2VV%^CC2C SG-GEN ;
 +N:%^V2VV%^CC2C SG-ACC ;
@@ -2534,24 +2542,29 @@ LEXICON N_SÄRNNAI !!= * @CODE@ is for nouns with ''-est'' +Loc
 +N:%^V2VV%^CC2C PL-OBL ;
 
 
-LEXICON N_JUURD !!= * @CODE@ is for nouns with stem ''i'' + ''-est'' +Sg+Loc; all stem other than the +Sg+Nom are X3; the ''i'' does not occur in +Par 
+LEXICON N_JUURD
+!! is for nouns with stem ''i'' + ''-est'' +Sg+Loc; all stem other than the +Sg+Nom are X3; the ''i'' does not occur in +Par 
 !! N_GEN2I-ILLAX3-LOCEX3-NOM1X1
-!! ** Yaml: __juurd__
+!! ** Yaml: __N-juurd__
 !! * There are several stem types 
 !! * juurd:juurd
-
++N ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
-+N:%^VOWXSH%^CLong%>i SG-GEN ;
-+N:i%^VOWSH%^CLong SG-ACC ;
-+N:i%^VOWSH%^CLong%>a SG-ILL ;
-+N:i%^VOWSH%^CLong%>e SG-LOC ;
-+N:i%^VOWSH%^CLong NMN_SG-COM_IN ;
-+N:i%^VOWSH%^CLong%>e ESS ;
-+N:%^VOWSH%^CLong%>e PAR ;
-+N:i%^VOWSH%^CLong SG-ABE ;
++N:%^VV2V%^C2CC%>i SG-GEN ;
++N:%^VV2V%^C2CC%>i SG-ACC ;
++N:%^VV2V%^C2CC%>j%>a SG-ILL ;
++N:%^VV2V%^C2CC%>ǥ%>a SG-ILL ;
++N:%^VV2V%^C2CC%>j%>e SG-LOC ;
++N:%^VV2V%^C2CC%>j NMN_SG-COM_IN ;
++N:%^VV2V%^C2CC%>j%>e ESS ;
++N:%^VV2V%^C2CC%>e PAR ;
++N:%^VV2V%^C2CC%>j SG-ABE ;
 
-+N:i%^VOWSH%^CLong PL-NOM ;
-+N:i%^VOWSH%^CLong PL-OBL ;
++N:%^VV2V%^C2CC%>i PL-NOM ;
++N:%^VV2V%^C2CC%>j PL-OBL ;
++N+Der/Dim:%^VV2V%^C2CC%>j N_KUÂLAŽ ;
++N+Der/Dim:%^VV2V%^C2CC%>ǥ N_KUÂLAŽ ;
+
 
 LEXICON N_MUUƷ
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -2579,7 +2592,7 @@ LEXICON N_MUUƷ
 !! ** Yaml: __N-muuz__
 !! * There are several stem types 
 !! * muuʒ:muvʒʒi
-
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N:%^VOWXSH%^CLong%>i SG-GEN ;
 +N:%^VOWSH%^CLong%>i SG-ACC ;
@@ -2611,6 +2624,7 @@ LEXICON N_MÄÄN
 !! ** Yaml: __N-maan__
 !! * There are several stem types
 !! * mään:mään
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N:%{XC%}%^VV2V%^VOWRaise%^C2CC%>u SG-GEN ;
 +N:%{XC%}%^VV2V%^VOWRaise%^C2CC%>u SG-ACC ;
@@ -2634,6 +2648,7 @@ LEXICON NMN_SUÂL
 !! ** Yaml: __N-sual__
 !! * There are several stem types
 !! * suâl:suâl
+ ATTESTED-NOUN-STEM ;
 : SG-NOM ;
 :%{XC%}%^VOWRaise%^C2CC%>u SG-GEN ;
 :%{XC%}%^VOWRaise%^C2CC%>u SG-ACC ;
@@ -2653,6 +2668,7 @@ LEXICON NMN_SUÂL
 
 LEXICON N_ČÂUSTÕK !!= * @CODE@ = stemtype 
 !! ** Yaml: __N-chaustok__
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N:k%>â ESS ; 
 +N:k%>â PAR ;
@@ -2663,6 +2679,7 @@ LEXICON N_TÄÄVTÕS
 LEXICON NMN_TÄÄVTÕS
 !! stemtype 
 !! ** Yaml: __N-chaustok__
+ ATTESTED-NOUN-STEM ;
 : SG-NOM ;
 :%>â ESS ; 
 :%>â PAR ;
@@ -2670,6 +2687,7 @@ LEXICON NMN_TÄÄVTÕS
 
 LEXICON N_KARNDAŠ !!= * @CODE@ = stemtype 
 !! ** Yaml: __N-chaustok__
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N:š%>â ESS ; 
 +N:š%>â PAR ;
@@ -2689,6 +2707,7 @@ LEXICON NMN_OBL-ČÂUSTÕK
 
 LEXICON N_DURAK !!= * @CODE@ = stemtype 
 !! ** Yaml: durak
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N:%^V2VV SG-GEN ;
 +N:%^V2VV SG-ACC ;
@@ -2705,6 +2724,7 @@ LEXICON N_DURAK !!= * @CODE@ = stemtype
 LEXICON N_KAAĐNEǨ
 !!= * @CODE@ = stemtype 
 !! ** Yaml: __N-kaadhnekj, N-chaustok__
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N:ǩ%^PAL%>e ESS ; 
 +N:ǩ%^PAL%>e PAR ;
@@ -2725,6 +2745,7 @@ LEXICON NMN_OBL-KAAĐNEǨ
 !! !!l-stems
 LEXICON N_NJUÄʹMMEL !!= * @CODE@ = stemtype l-stem njuäʹmmel:njuäʹmmel
 !! ** Yaml: __njuammel, njuunnjel, aappal__ 
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N:%^VOWSH%^CLong  SG-GEN ;
 +N:%^VOWSH%^CLong SG-ACC ;
@@ -2747,6 +2768,7 @@ LEXICON N_KÕÕNJÂL
 !! stemtype n-stem kõõnjâl:kõõnjâl
 !! N_GEN2X3-NOM2X1
 !! ** Yaml: __koonjal__
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N:%^PenVV2V%^PenC2CC SG-GEN ;
 +N:%^PenVV2V%^PenC2CC SG-ACC ;
@@ -2768,6 +2790,7 @@ LEXICON N_TAALKÂS
 !! stemtype n-stem taalkâs:taalkâs
 !! N_GEN2X3-NOM2X1
 !! ** Yaml: __N-taalkas__
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N:%^PenVV2V%^PenC2CC%^VC SG-GEN ;
 +N:%^PenVV2V%^PenC2CC%^VC SG-ACC ;
@@ -2789,6 +2812,7 @@ LEXICON N_VÕÕNÂS
 !! stemtype n-stem võõnâs:võõnâs
 !! N_GEN2X3-NOM2X1
 !! ** Yaml: __N-voonas__
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N:%^PenVV2V%^PenC2CC%^VC SG-GEN ;
 +N:%^PenVV2V%^PenC2CC%^VC SG-ACC ;
@@ -2808,6 +2832,7 @@ LEXICON N_TUÕDDÂR
 !! stemtype n-stem tuõddâr:tuõddâr
 !! N_GEN2X3-NOM2X1
 !! ** Yaml: __N-tuoddar__
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ; !tuõddâr
 +N:%^PenCC2CCC SG-GEN ;
 +N:%^PenCC2CCC SG-ACC ;
@@ -2827,6 +2852,7 @@ LEXICON N_ǨIÕRÂČ
 !! stemtype n-stem ǩiõrâč:ǩiõrâč
 !! N_GEN2X3-NOM2X1
 !! ** Yaml: __N-kiorach__
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ; !ǩiõrâč
 +N: SG-GEN ;
 +N: SG-ACC ;
@@ -2848,6 +2874,7 @@ LEXICON N_CÕÕGGÂLM
 !! stemtype l-stem cõõggâlm:cõõggâlm
 !! * __@LEXNAME@__ = Koulukielioppi stemtype II 9 (29)
 !! ** Yaml: __cooggalm, aaresm, kaaddask __ 
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N: SG-GEN ;
 +N: SG-ACC ;
@@ -2867,6 +2894,7 @@ LEXICON N_ǨEÂLǤAL
 ! "1.2"
 !! = stemtype n-stem ǩeâlǥal:ǩeâlǥal
 !! ** Yaml: __kealgal__
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N:%^PenC2CC SG-GEN ;
 +N:%^PenC2CC SG-ACC ;
@@ -2884,6 +2912,7 @@ LEXICON N_SÅÅBBAR
 !! stemtype n-stem sååbbar:sååbbar
 !! N_GEN2X3-NOM2X1
 !! ** Yaml: __N-sååbbar__
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N:%^PenVV2V SG-GEN ;
 +N:%^PenVV2V SG-ACC ;
@@ -2905,6 +2934,7 @@ LEXICON N_PÅÅTTAǨ
 !! stemtype n-stem påårraǩ:pååttaǩ
 !! N_GEN2X3-NOM2X1
 !! ** Yaml: __N-paattakj__
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N:%^PenVV2V SG-GEN ;
 +N:%^PenVV2V SG-ACC ;
@@ -2926,6 +2956,7 @@ LEXICON NMN_JÂNNAM
 !! stemtype n-stem jânnam:jânnam
 !! N_GEN2X3-NOM2X1
 !! ** Yaml: __N-jânnam__
+ ATTESTED-NOUN-STEM ;
 : SG-NOM ;
 : SG-GEN ;
 : SG-ACC ;
@@ -2947,6 +2978,7 @@ LEXICON N_ÄÄPPAL
 !! stemtype n-stem ääppal:ääppal
 !! N_GEN2X3-NOM2X1
 !! ** Yaml: __N-aeaeppal__
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N:%^PenVV2V SG-GEN ;
 +N:%^PenVV2V SG-ACC ;
@@ -2970,6 +3002,7 @@ LEXICON N_KÅÅVAS
 !! stemtype n-stem kååvas:kååvas
 !! N_GEN2X3-NOM2X1
 !! ** Yaml: __N-kaavas__
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N:%^PenVV2V%^PenC2CC%^VC SG-GEN ;
 +N:%^PenVV2V%^PenC2CC%^VC SG-ACC ;
@@ -3005,6 +3038,7 @@ LEXICON NMN_SLOOHMAN
 :  SG-GEN ;
 :%^PenRmVow%>a SG-ILL ;
 :%^PenRmVow%>e SG-LOC ;
+ ATTESTED-NOUN-STEM ;
 :  SG-NOM ;
 
 !! In penultimate e:0
@@ -3023,6 +3057,7 @@ LEXICON N_VEEʹREST
 !! stemtype l-stem veeʹrest:veeʹrest
 !! * __@LEXNAME@__ = Koulukielioppi stemtype II 9 (29)
 !! ** Yaml: __N-veerest __ 
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N: SG-GEN ;
 +N: SG-ACC ;
@@ -3048,6 +3083,7 @@ LEXICON N_ÄÄʹREŠM
 !! stemtype l-stem ääʹrešm:ääʹrešm
 !! * __@LEXNAME@__ = Koulukielioppi stemtype II 9 (29)
 !! ** Yaml: __N-aeaereshm __ 
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N: SG-GEN ;
 +N: SG-ACC ;
@@ -3070,6 +3106,7 @@ LEXICON N_LAAJJ
 ! Gradation: Yes
 ! laajj:lačč
 !! ** Yaml:
++N:%^V2VV%^CC2C ATTESTED-NOUN-STEM ;
 +N:%^V2VV%^CC2C SG-NOM ; ! õõh:õõu
 !+N:%^VOWXL SG-NOM ; ! õõh:õõu
 +N:âm SG-GEN ;
@@ -3087,6 +3124,7 @@ LEXICON N_SÕÕUS
 ! Gradation: Yes
 ! sõõus:sõhss
 !! ** Yaml:
++N:%^V2VV%^XYY2VY ATTESTED-NOUN-STEM ;
 +N:%^V2VV%^XYY2VY SG-NOM ; ! õõh:õõu
 !+N:%^VOWXL SG-NOM ; ! õõh:õõu
 +N:âm SG-GEN ;
@@ -3104,6 +3142,7 @@ LEXICON N_SÕÕUS
 
 LEXICON N_VUEʹN !!= * @CODE@ = stemtype Am-stem
 !! ** Yaml: __vuen__
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ; ! 
 +N:%^VOWXSH%^CLong%^VOWLower%^VOWBack%^PALNo%>am SG-GEN ;
 +N:am SG-ACC ;
@@ -3120,6 +3159,7 @@ LEXICON N_VUEʹN !!= * @CODE@ = stemtype Am-stem
 LEXICON N_ČÂÂʹĐ !!= * @CODE@ = stemtype Am-stem without ''m'' in ess
 !! ** Yaml: caad
 !! ** čââʹđ:čââʹđ
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N:%^VOWXSH%^CLong%^PALNo%>am SG-GEN ;
 +N:%^VOWSXH%^CLong%^PALNo%>am SG-ACC ;
@@ -3138,6 +3178,7 @@ LEXICON N_ČÂÂʹĐ !!= * @CODE@ = stemtype Am-stem without ''m'' in ess
 
 LEXICON N-kuolban !!= * @CODE@ = stemtype n-stem kuõlbân:kuõlbb
 !! ** Yaml: __kuolban__
++N:%^V2VV%^CC2C%>ân ATTESTED-NOUN-STEM ;
 +N:%^V2VV%^CC2C%>ân SG-NOM ;
 +N:%^VOWSH%^CLong%^PALNo%>ân SG-GEN ;
 +N:%^VOWSH%^CLong%^PALNo%>ân SG-ACC ;
@@ -3150,6 +3191,42 @@ LEXICON N-kuolban !!= * @CODE@ = stemtype n-stem kuõlbân:kuõlbb
 +N:%>ân PL-NOM ;
 +N:%^VOWSH%^CLong%>n PL-OBL_LESS-ABE ;
 +N:%^VOWSH%^CLong%>nâ PL-ABE ; ! 2013-09-10 Is this correct?
+
+LEXICON N_BIOLOGIA
++N: NMN_BIOLOGIA ;
+LEXICON NMN_BIOLOGIA
+! biologia:biologia
+!! ** Yaml: __N-biologia__
+ ATTESTED-NOUN-STEM ;
+ SG-NOM ;
+ SG-GEN ;
+ SG-ACC ;
+:aʹje SG-ILL ;
+ SG-LOC ;
+ SG-COM_IN ;
+ ESS ; ! ess and prt without
+ PAR ;
+ SG-ABE ;
+ PL-NOM ;
+ PL-OBL ;
+
+LEXICON N_RADIO
++N: NMN_RADIO ;
+LEXICON NMN_RADIO
+! radio:radio
+!! ** Yaml: __N-radio__
+ ATTESTED-NOUN-STEM ;
+ SG-NOM ;
+ SG-GEN ;
+ SG-ACC ;
+ SG-ILL ;
+ SG-LOC ;
+ SG-COM_IN ;
+ ESS ; ! ess and prt without
+ PAR ;
+ SG-ABE ;
+ PL-NOM ;
+ PL-OBL ;
 
 
 LEXICON N-siom  !!= * @CODE@ = stemtype n-stem
@@ -3182,6 +3259,7 @@ LEXICON N_ǨEʹRRES
 !! stemtype l-stem ǩeʹrres:ǩeʹrres
 !! * __@LEXNAME@__ = Koulukielioppi stemtype II 8 (28)
 !! ** Yaml: __kerres __
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N:%^VC SG-GEN ;
 +N:%^VC SG-ACC ;
@@ -3201,6 +3279,7 @@ LEXICON N_ǨEʹRRES
 
 LEXICON N_CIEʹǨǨES
 !! ** Yaml: __ciekkes__
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N:%^VOWSH%^CLong%^VOWLower%^PALNo%^VC SG-GEN ;
 +N:%^VOWSH%^CLong%^VOWLower%^PALNo%^VC SG-ACC ;
@@ -3221,6 +3300,7 @@ LEXICON N_CIEʹǨǨES
 LEXICON N_MUEʹLES
 !!
 !! ** Yaml: __mueles__
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N:%^VOWSH%^CLong%^VOWLower%^VOWBack%^PALNo%^VC SG-GEN ;
 +N:%^VOWSH%^CLong%^VOWLower%^VOWBack%^PALNo%^VC SG-ACC ;
@@ -3242,6 +3322,7 @@ LEXICON N_ČÂÂʹLMTEʹM
 !! 292-295
 !! ** Yaml: __A-chaalmtem__
 !!NumContLex="650"
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N:%^V2VV SG-GEN ;
 +N:%^V2VV SG-ACC ;
@@ -3382,6 +3463,7 @@ LEXICON 215	  !!= * @CODE@ = Koulukielioppi stemtype II 15
 LEXICON N_TUEJJEEI !!= * @CODE@ = Koulukielioppi stemtype II 15
 !! tueʹjjeei:tueʹjjee
 !! * Yaml: __N-tuejjeei__
++N:i ATTESTED-NOUN-STEM ;
 +N:i SG-NOM ;
 +N:i SG-GEN ;
 +N:i SG-ACC ;
@@ -3430,6 +3512,7 @@ LEXICON 22mos !!= * @CODE@ = Koulukielioppi stemtype II 22 moš
 LEXICON 22mus !!= * @CODE@ = Koulukielioppi stemtype II 22 muš
 +N+Sg+Nom: # ;
 LEXICON N_LOOKKMÕŠ
++N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N:š%>â ESS ;
 +N:š%>â PAR ;
@@ -3438,6 +3521,7 @@ LEXICON N_LOOKKMÕŠ
 LEXICON N_ČÅRRÕS
 +N: NMN_ČÅRRÕS ;
 LEXICON NMN_ČÅRRÕS
+ ATTESTED-NOUN-STEM ;
 : SG-NOM ;
 :s%>â ESS ;
 :s%>â PAR ;
