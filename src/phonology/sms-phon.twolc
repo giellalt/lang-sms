@@ -1199,12 +1199,6 @@ Rules
 !"Even syllabic verbs I, cg in relation to Vowel length"
 !! !Vow Cx Cx:0 
 
-"Even syllabic verbs I, cg for b"
-!! __@RULENAME@__ - used with  neiʹbb+N+Sg+Gen: neeiʹb
- b:0 <=> SurfLongVow  [i (ʹ:|0:ʹ)|(ʹ:|0:ʹ) l] b _   BetweenStemAndConsGrade %^CC2C: ;
-!€# n0eiʹbb%^V2VV%^CC2C
-!€0 neeiʹb000
-
 "Even syllabic verbs I, cg m:0"
 !! __@RULENAME@__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, 
  m:0 <=> SurfLongVow (ʹ:|0:ʹ)  (s|r|l|p|d:) m: _ BetweenStemAndConsGrade %^CC2C: ;
@@ -1213,6 +1207,20 @@ Rules
 !€0 sääʹm00
          SurfLongVow (ʹ:) h: (ʹ:|0:ʹ)      m: _ BetweenStemAndConsGrade %^CC2C: ;
           
+
+"Even syllabic verbs I, cg for b"
+!! __@RULENAME@__ - used with  neiʹbb+N+Sg+Gen: neeiʹb
+ b:0 <=> SurfLongVow  [i (ʹ:|0:ʹ)|(ʹ:|0:ʹ) l] b _   BetweenStemAndConsGrade %^CC2C: ;
+!€# n0eiʹbb%^V2VV%^CC2C
+!€0 neeiʹb000
+
+
+"Even syllabic verbs I, second consonant loss p:0"
+!! __@RULENAME@__ -
+ p:0 <=> SurfLongVow (ʹ:|0:ʹ) (Cns:) p: _ %^CC2C: ;
+!€# ǩiâpp%^CC2C
+!€0 ǩiâv00
+          2SgVow (ʹ:|0:ʹ)            p _ Vow: [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^PenCC2C: ;  
 
 
 "Even syllabic verbs I, cg v:0"
@@ -1223,7 +1231,25 @@ Rules
 !!peiʹvv+N+Sg+Gen
 !€# p0eiʹvv%^V2VV%^CC2C
 !€0 peeiʹv000
-! SurfLongVow (i) (ʹ:|0:ʹ) v: _ (%^PenV2VV:|%^VOWXL:) %^CShort: ;
+
+
+"f:0"
+!! __@RULENAME@__ 
+
+ f:0 <=>
+ SurfLongVow (i) (ʹ:|0:ʹ) f: _    BetweenStemAndConsGrade %^CC2C: ;
+!!kaaʹff+N+Sg+Gen __coffee__
+!€# kaaʹff%^CC2C
+!€0 kaaʹf0
+
+
+"Even syllabic verbs I, cg n:0"
+!! __@RULENAME@__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, jiõnn:jiõn
+ n:0 <=> 
+ SurfLongVow (ʹ:|0:ʹ) n: _    BetweenStemAndConsGrade %^CC2C: ;
+      SurfLongVow  (ʹ:|0:ʹ)  (s|r|l|p|d:) n:  _ (a: i:) (%^PenV2VV:|%^VOWXL:) %^CShort: ;
+         SurfLongVow  (ʹ:) h: (ʹ:|0:ʹ) n: _ BetweenStemAndConsGrade %^CC2C: ; 
+          
 
 "Even syllabic nouns I, with extra lengthening of vowel ij>ii/uv>uu and dd>d"
 !! __@RULENAME@__ - used with  +N+Sg+Nom > +N+Sg+Gen, sijdd > siid
@@ -1248,13 +1274,16 @@ Rules
 !! - idd:id, +Imp+Sg2, +Ind+Prs+ConNeg double consonants following vowel and "i" at coda that become single consonants in gradation
         2SgVow (ʹ:|0:ʹ) d _ Vow: [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^VOWSH: %^CLong: %^RmVow: ; 
 
-"Even syllabic verbs I, cg n:0"
-!! __@RULENAME@__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, jiõnn:jiõn
- n:0 <=> 
- SurfLongVow (ʹ:|0:ʹ) n: _    BetweenStemAndConsGrade %^CC2C: ;
-      SurfLongVow  (ʹ:|0:ʹ)  (s|r|l|p|d:) n:  _ (a: i:) (%^PenV2VV:|%^VOWXL:) %^CShort: ;
-         SurfLongVow  (ʹ:) h: (ʹ:|0:ʹ) n: _ BetweenStemAndConsGrade %^CC2C: ; 
-          
+
+
+"Even syllabic verbs I, second consonant loss t:0"
+!! __@RULENAME@__ -
+!! {{{
+ t:0 <=> SurfLongVow              (ʹ:|0:ʹ) ([s|r|l]) t: _ BetweenStemAndConsGrade  %^CC2C: ;
+         SurfLongVow (%{ʹ%}:) h: (ʹ:|0:ʹ)           t: _ BetweenStemAndConsGrade  %^CC2C: ;
+!! }}}
+
+
 "Even syllabic verbs I, cg for ʒ"
 !! __@RULENAME@__ - used with  pääʹʒʒelm+N+Sg+Ill: päʹʒlma
 !! {{{
@@ -1320,6 +1349,17 @@ Rules
 !€# kuâ0ll%^PenV2VV%^CShort%^PAL
 !€0 kueʹl0000
 
+"Even syllabic verbs I, cg for š"
+!! __@RULENAME@__
+ š:0 <=>
+      SurfLongVow  (ʹ:|0:ʹ)  [r|l|p] š: _ BetweenStemAndConsGrade %^CC2C: ;
+      SurfLongVow  (%{ʹ%}:) h: (ʹ:|0:ʹ) š:  _ BetweenStemAndConsGrade %^CC2C: ;
+      Vow: (%{ʹ%}:) h: (ʹ:|0:ʹ) š:  _ BetweenStemAndConsGrade %^XYY2VY: ;
+!!šapšš+N+Sg+Gen ____
+!€# š0apšš%^V2VV%^CC2C
+!€0 šaapš000
+
+
 "j:0 "
 !! __@RULENAME@__ 
  j:0 <=>
@@ -1341,8 +1381,6 @@ Rules
  ǧ:0 <=> SurfLongVow (ʹ:|0:ʹ) l [ǧ:j|ǧ:] _    BetweenStemAndConsGrade %^CC2C: ;
 
 
-! "Even syllabic verbs I, cg vv:v"
-! v:0 <=> :Vow (ʹ:|0:ʹ) v _ (%^PenV2VV:) %^CShort: ; 
 
 "Even syllabic nouns I, with extra lengthening of vowel V>VV and KK>ǤǤ"
 !! __@RULENAME@__ 
@@ -1468,21 +1506,6 @@ Rules
 !€# ǩiâpp%^CC2C
 !€0 ǩiâv00
 
-
-
-"Even syllabic verbs I, second consonant loss t:0"
-!! __@RULENAME@__ -
-!! {{{
- t:0 <=> SurfLongVow              (ʹ:|0:ʹ) ([s|r|l]) t: _ BetweenStemAndConsGrade  %^CC2C: ;
-         SurfLongVow (%{ʹ%}:) h: (ʹ:|0:ʹ)           t: _ BetweenStemAndConsGrade  %^CC2C: ;
-!! }}}
-
-"Even syllabic verbs I, second consonant loss p:0"
-!! __@RULENAME@__ -
- p:0 <=> SurfLongVow (ʹ:|0:ʹ) (Cns:) p: _ %^CC2C: ;
-!€# ǩiâpp%^CC2C
-!€0 ǩiâv00
-          2SgVow (ʹ:|0:ʹ)            p _ Vow: [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^VOWSH:  %^RmVow: ;  
 
 "Even syllabic verbs I, second consonant loss k:0"
 !! __@RULENAME@__ -
