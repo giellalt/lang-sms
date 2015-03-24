@@ -44,11 +44,23 @@
 ẹ (->) e ,    # Here the dot below e U+1EB9 for dict accepts also plain letter e. 
 Ẹ (->) Ẹ ,    # Here the dot below E U+1EB8 for dict accepts combination E + U+0323 
 ẹ (->) ẹ ,    # Here the dot below e U+1EB9 for dict accepts combination e + U+0323 
-# THESE SHOULD BE CHECKED
-ạ (->) a ,    #THIS REQUIRES  LETTER WITH DOT BELOWbut accepts also plain letter
-ị (->) i ,    # Here we remove the dot under vowel. 
-ọ (->) o ,    # Here we remove the dot under vowel. 
-ụ (->) u    
+# THESE SHOULD BE CHECKED. ARE THEY NECESSARY IN SMS
+Ạ (->) A,     #Here the dot below A U+1EA0 for dict accepts also plain letter A.
+ạ (->) a,     #Here the dot below a U+1EA1 for dict accepts also plain letter a.
+Ạ (->) Ạ  ,    #Here the dot below A U+1EA0 also accepts A + U+0323
+ạ (->) ạ  ,    #Here the dot below a U+1EA0 also accepts a + U+0323
+Ị (->) I ,    # Here the dot below I U+1ECA also accepts I
+ị (->) i ,    # Here the dot below i U+1ECB also accepts i
+Ị (->) Ị ,    # Here the dot below I U+1ECA also accepts I + U+0323
+ị (->) ị ,    # Here the dot below i U+1ECB also accepts i + U+0323
+Ọ (->) Ọ ,    # Here the dot below O U+1ECC also accepts O + U+0323
+ọ (->) ọ ,    # Here the dot below o U+1ECC also accepts o + U+0323
+Ọ (->) O ,    # Here the dot below O U+1ECC also accepts O 
+ọ (->) o ,    # Here the dot below O U+1ECC also accepts o
+Ụ (->) Ụ ,    # Here the dot below U U+1EE4 also accepts U + U+0323
+ụ (->) ụ ,    # Here the dot below u U+1EE5 also accepts u + U+0323
+Ụ (->) U ,    # Here the dot below U U+1EE4 also accepts U 
+ụ (->) u     # Here the dot below U U+1EE5 also accepts u
 ;
 
 # awaiting better preprocess:
