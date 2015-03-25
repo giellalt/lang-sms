@@ -895,7 +895,7 @@ Rules
  OnSetC _ [å:ä|ä|a:ä] RelVowLengthening ; 
 !Distinguishing mainstam and maainstam
 !- kååʹmmerd, maainâst Vowel lengthening in INDPRSSG3 and IMPSG2
-     _ ä (i) (ʹ:|0:ʹ) Cns:+ [%{E1%}:|%{A1%}:|%{Â1%}:] Cns:+ [%^PenV2VV:|%^IMPSG2:|%^INDPRSSG3:] ;
+     _ ä (i) (ʹ:|0:ʹ) Cns:+ [%{E1%}:|%{A1%}:|%{Â1%}:|Vow:] Cns:+ [%^PenV2VV:|%^IMPSG2:|%^INDPRSSG3:] ;
 
 
 
@@ -903,14 +903,14 @@ Rules
 "Even syllabic verbs I, relative vowel lengthening 0:a"
 !! __@RULENAME@__ - deriving +V+Inf in MAINSTED: maainstam, mainstam
  0:a <=>
-  OnSetC _ :a [RelVowLengthening]  ;
+  OnSetC _ :a (u|i) (ʹ:|0:ʹ) Cns:+ %^V2VV: ;
 !€# 0äldd%^V2VV%^VOWRaise%^CC2C%>už
 !€0 aald00000už
 !€# dur0ak%^V2VV
 !€0 duraak0
 
 !Distinguishing mainstam and maainstam
-  OnSetC _ a  i  (ʹ:|0:ʹ) Cns: [ %{Â1%}: | %{A1%}: | %{E1%}:] Cns:+  %^PenV2VV: ;
+  OnSetC _ a  (u|i)  (ʹ:|0:ʹ) Cns:+ [ %{Â1%}: | %{A1%}: | %{E1%}:|Vow:] Cns:+  %^PenV2VV: ;
 !€# m0ain%{Â1%}st%^PenV2VV%^IMPSG2
 !€0 maainâst0
 !   [ b | ʒ | (ǯ) ǯ | (g) g | i b | i n |(k) k |l|m |(n) n | n v|r g|r| r t | u d|u l| u n | u ŋ | u r] _ s t (%^PenV2VV:) %^IMPSG2: ;
@@ -950,7 +950,7 @@ Rules
 "Even syllabic nouns I, relative vowel lengthening i"
 !! __@RULENAME@__ - ǩiđđ:ǩiiđ
  0:i <=> OnSetC _ :i RelVowLengthening  ;
-  OnSetC _ i  (ʹ:|0:ʹ) CNoJ: [ %{Â1%}: | %{A1%}: | %{E1%}:] Cns:+  %^PenV2VV: ;
+  OnSetC _ i  (ʹ:|0:ʹ) CNoJ: [ %{Â1%}: | %{A1%}: | %{E1%}:|Vow:] Cns:+  %^PenV2VV: ;
 !! pirsted+V+Ind+Prs+ConNeg
 !€# p0ir%{Â1%}st%^PenV2VV%^IMPSG2
 !€0 piirâst00
@@ -1278,10 +1278,9 @@ Rules
 
 "Even syllabic verbs I, second consonant loss t:0"
 !! __@RULENAME@__ -
-!! {{{
- t:0 <=> SurfLongVow              (ʹ:|0:ʹ) ([s|r|l]) t: _ BetweenStemAndConsGrade  %^CC2C: ;
+ t:0 <=> SurfLongVow           (u|i)   (ʹ:|0:ʹ) ([s|r|l]) t: _ BetweenStemAndConsGrade  %^CC2C: ;
          SurfLongVow (%{ʹ%}:) h: (ʹ:|0:ʹ)           t: _ BetweenStemAndConsGrade  %^CC2C: ;
-!! }}}
+
 
 
 "Even syllabic verbs I, cg for ʒ"
@@ -1292,6 +1291,15 @@ Rules
       u: (ʹ:) v:u (0:ʹ) ʒ _  BetweenStemAndConsGrade %^CCC2C: ;
         2SgVow (ʹ:|0:ʹ) ʒ _ Vow: [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^VOWSH:  %^CLong: %^RmVow: ;
 !! }}}
+
+"ǯ:0"
+!! __@RULENAME@__ - 
+ ǯ:0 <=>
+      u: (ʹ:) [ v: (0:ʹ)|Cns:] ǯ _  BetweenStemAndConsGrade %^CC2C: ;
+        2SgVow (ʹ:|0:ʹ) ǯ _ Vow: [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^PenCC2C: ;
+!!kuʹvǯǯ+N+Sg+Gen
+!€# kuʹvǯǯ%^CC2C
+!€0 kuʹvǯ00
 
 "Even syllabic verbs I, cg for s"
 !! __@RULENAME@__ 
