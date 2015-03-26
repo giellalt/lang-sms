@@ -71,6 +71,8 @@ Alphabet
 
  %^VOWLower:0 !!= * @CODE@ i>e, õ>â, â>ä, u>o, o>å
  %^VOWRaise:0 !!= * @CODE@ e>i, ä>e 
+ %^PenVOWRaise:0 !!= * @CODE@ e>i, ä>e
+ %^PenVOWLower:0 !!= * @CODE@ i>e, õ>â, â>ä, u>o, o>å
  %^VOWBack:0	     !!= * @CODE@ Backing e>õ, e>â
  %^VOWFront:0	     !!= * @CODE@ Fronting
  %^PAL:0 %^PALNo:0 %^PALE:0 %^PALÄ:0 %^PALẸ:0   !!= * @CODE@ Palatalisation
@@ -296,9 +298,12 @@ BetweenVowHeightAndMorph = [(%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) (X3
 !! possible triggers between word end and consonant grade
 BetweenStemAndConsGrade = [(%^V2VV:|%^VV2V:) (%^VOWRaise:|%^VOWLower:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:)] ;
 
-PenBetweenStemAndConsGrade = [(%^PenV2VV:|%^PenVV2V:)] ;
+PenBetweenStemAndPALNo = [(%^PenV2VV:|%^PenVV2V:) (%^PenVOWRaise:|%^PenVOWLower:) ] ;
+
+PenBetweenStemAndConsGrade = [(%^PenV2VV:|%^PenVV2V:) (%^PenVOWRaise:|%^PenVOWLower:) (%^PenPALNo:|(%^PenPALE:|%^PenPALÄ:|%^PenPALẸ:) %^PenPAL:)] ;
 
 PenBetweenStemAndVowelLoss = [(%^PenV2VV:|%^PenVV2V:) (%^PenC2CC:|%^PenCC2C:|%^PenCC2CCC:)] ;
+
 
 PenBetweenStemAndStemFinalVoicing = [(%^PenV2VV:|%^PenVV2V:) (%^PenPALNo:|(%^PenPALE:|%^PenPALÄ:|%^PenPALẸ:) %^PenPAL:) (%^PenC2CC:|%^PenCC2C:|%^PenCC2CCC:) (%^PenRmVow:)] ;
 
@@ -1176,12 +1181,13 @@ Rules
 
 "Even-syllabic nouns, removing palatalization in -est +Loc nouns"
 !! __@RULENAME@__ - removing palatalization in +Sg+Ill,  pieʹss:peässa
-   ʹ:0 <=>  [Vow:|:Vow] _ [:Cns :Cns+|Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (e: s:) BetweenStemAndPALNo %^PALNo: [RBound|%^RmVow:|%^VC:] ;
+   ʹ:0 <=>  [Vow:|:Vow] _ [:Cns :Cns+|Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] BetweenStemAndPALNo %^PALNo: [RBound|%^RmVow:|%^VC:] ;
 !€# čââʹlmteʹm%{XC%}%^CLong%^PALNo%>a
 !€0 čââʹlmte0mm000a
      _ [:Cns :Cns+|Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] BetweenStemAndPALNo %^PALNo: ;
 !€# čââʹlmteʹm0%^PALNo%^C2CC%>a
 !€0 čââʹlmte0mm000a
+  [Vow:|:Vow] _ [:Cns :Cns+|Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] Vow: Cns:+ PenBetweenStemAndPALNo %^PenPALNo:  ;
 
 !jurdded
                     Vow: _ CNoV: Cns:+ BetweenStemAndPALNo %^PALNo: ; 
