@@ -101,6 +101,7 @@ Alphabet
 %^PenCC2C:0     !!= * @CODE@ Shortens consonant in penultimate syllable
 %^PenCC2CCC:0     !!= * @CODE@ Extra Lengthens consonant in penultimate syllable
 %^PenC2CC:0     !!= * @CODE@ Lengthens consonant in penultimate syllable
+%^PenC2CCC:0 	!!= * @CODE@ Lengthens consonant in penultimate syllable
 
 !! !! Gradation triggers 2015.01.23
  %^XSt2St:0	!!= * @CODE@ Causes weakening from extra strong to strong
@@ -433,7 +434,7 @@ Rules
  a:0 <=> OnSetC _ a: (ʹ:|0:ʹ) [LongC|Cns: :Cns*] %^VV2V: ;
 !€# saa0kk%^VV2V%^PAL%>e
 !€0 s0aʹǩǩ000e
- OnSetC _ a: (ʹ:|0:ʹ) [LongC|Cns: :Cns*] [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ;
+ OnSetC _ a: (ʹ:|0:ʹ) [LongC|Cns: :Cns*] Vow: Cns %^PenVV2V: ;
          [Cns:+|:Cns+] _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ; 
 !!Aanar+N+Prop+Sg+Ill
 !€# Aanar%^PenRmVow%>a
@@ -466,10 +467,10 @@ Rules
 
 "Even syllabic verbs I, vowel shortening ä:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
- ä:0 <=> OnSetC _ ä: Cns: %{XC%}: %^VV2V:  ;
-!€# mään%{XC%}%^VV2V: %^C2CC%^VOWRaise%>u
+ ä:0 <=> OnSetC _ ä: Cns: :Cns* %^VV2V:  ;
+!€# mään%{XC%}%^VV2V%^VOWRaise%^C2CC%>u
 !€0 m0ann000u
-   OnSetC _ ä: (ʹ:|0:ʹ) [LongC|Cns: :Cns*|Cns:+] [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ;
+   OnSetC _ ä: (ʹ:|0:ʹ) [LongC|Cns: :Cns*|Cns:+] %^VV2V:  ;
          OnSetC _ ä: (ʹ:|0:ʹ) Cns: (:Cns+|Cns:+) [Vow:|%{Â1%}:|%{A1%}:|%{E1%}:] [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^PenVV2V: ;
 
  OnSetC _ ä: (u) (ʹ:|0:ʹ) Cns: [ Cns:*|:Cns*]  %^VV2V:  ;
@@ -1629,16 +1630,16 @@ Rules
 
 "Consonant lengthening 0:p"
 !! __@RULENAME@__ - 
-!! {{{
- 0:p <=>  2ShortVow  (ʹ:|0:ʹ) [m|l] p _ Vow: Cns [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] (%^PALNo:) ; 
-!! }}}
+ 0:p <=>  2ShortVow  (ʹ:|0:ʹ) [m|l] p _ BetweenStemAndConsGrade %^C2CC: ;
+           2ShortVow  (ʹ:|0:ʹ) [m|l] p _ Vow: Cns PenBetweenStemAndConsGrade %^PenC2CC: ;	       
+
 
 "Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:n"
 !! __@RULENAME@__
- 0:n <=>  Vow: (ʹ:|0:ʹ) n _ %^W2XSt: ;
-!€# mään0%^W2XSt%^VOWRaise%>u
+ 0:n <=>  Vow: (ʹ:|0:ʹ) n _ BetweenStemAndConsGrade %^C2CC: ;
+!€# mään0%^VOWRaise%^C2CC%>u
 !€0 m0ann000u
- OnSetC  2ShortVow (ʹ:|0:ʹ) n _ (j) [%{Â1%}:|%{A1%}:|%{E1%}:] l PenBetweenStemAndConsGrade %^PenC2CC: ;
+ OnSetC  2ShortVow (ʹ:|0:ʹ) n _ (j) Vow: Cns PenBetweenStemAndConsGrade %^PenC2CC: ;
 
 !!kõõnjâl+N+Sg+Gen __tear__
 !€# kõõn0j%{Â1%}l%^PenVV2V%^PenC2CC%^IMPSG2
@@ -1647,43 +1648,46 @@ Rules
 
 "Consonant lengthening 0:d"
 !! __@RULENAME@__ - juurd+N+Sg+Gen: jurddi
-!! {{{
  0:d <=> 2ShortVow (ʹ:) (r) d _ (i:)  BetweenStemAndConsGrade %^C2CC: ;
-!! }}}
+    2ShortVow (ʹ:) (r) d _ Vow: Cns  PenBetweenStemAndConsGrade %^PenC2CC: ;
 
 "Consonant lengthening 0:t"
 !! __@RULENAME@__ - 
-!! {{{
  0:t <=> 2ShortVow (ʹ:) (s) :t _ BetweenStemAndConsGrade %^C2CC: ;
-!! }}}
+      2ShortVow (ʹ:) (s) :t _ Vow: Cns  PenBetweenStemAndConsGrade %^PenC2CC: ;
+
+
+"Consonant lengthening 0:ǯ"
+!! __@RULENAME@__ - 
+ 0:ǯ <=>  2ShortVow  (ʹ:|:ʹ) Cns ǯ _ BetweenStemAndConsGrade %^C2CC: ;
+         2ShortVow  (ʹ:|:ʹ) Cns ǯ _ Vow: Cns  PenBetweenStemAndConsGrade %^PenC2CC: ;
 
 "Consonant lengthening 0:c"
 !! __@RULENAME@__ - 
-!! {{{
- 0:c <=>  2ShortVow  (ʹ:|:ʹ) p c _ BetweenStemAndConsGrade %^C2CC: ;
-!! }}}
+ 0:c <=>  2ShortVow  (ʹ:|:ʹ) Cns c _ BetweenStemAndConsGrade %^C2CC: ;
+         2ShortVow  (ʹ:|:ʹ) Cns c _ Vow: Cns  PenBetweenStemAndConsGrade %^PenC2CC: ;
 
 "Consonant lengthening 0:đ"
 !! __@RULENAME@__ - čââʹđ+N+Sg+Gen: čâđđam
-!! {{{
  0:đ <=>  2ShortVow  (ʹ:)  đ _ BetweenStemAndConsGrade %^C2CC: ;
-!! }}}
+         2ShortVow  (ʹ:)  đ _ Vow: Cns  PenBetweenStemAndConsGrade %^PenC2CC: ;
+
 
 "Consonant lengthening 0:l"
 !! __@RULENAME@__ 
  0:l <=>
  :Vow (ʹ:|:ʹ) l (0:%ˈ) _ BetweenStemAndConsGrade [ %^C2CC:|%^C2CCC:] ;
-! :Vow (ʹ:|:ʹ) l (0:%ˈ) _ (e: s:) BetweenStemAndConsGrade [ %^C2CC:|%^C2CCC:] ;
+ :Vow (ʹ:|:ʹ) l (0:%ˈ) _ Vow: Cns  PenBetweenStemAndConsGrade [ %^PenC2CC:|%^PenC2CCC:] ;
 !€# suâl0%^VOWRaise%^C2CC%>ud 
 !€0 suõll000ud
-!  2ShortVow  (ʹ:)  l (0:%ˈ) _ (e: s:) [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ; 
+
 
 
 "Consonant lengthening 0:g"
 !! __@RULENAME@__ - ǩeâlǥal+N+Sg+Gen: ǩeâlggal
-!! {{{
- 0:g <=>  2ShortVow   l ǥ: _ Vow: Cns [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ;
-!! }}}
+ 0:g <=>  2ShortVow   l ǥ: _ BetweenStemAndConsGrade [ %^C2CC:|%^C2CCC:] ;
+  2ShortVow   l ǥ: _ Vow: Cns PenBetweenStemAndConsGrade [ %^PenC2CC:|%^PenC2CCC:] ;
+
 
 "Consonant lengthening 0:ǧ"
 !! __@RULENAME@__ - 
@@ -1702,7 +1706,7 @@ Rules
  0:k <=> Vow (ʹ:) (l|n|ŋ|r|s|š|t) :k _ BetweenStemAndConsGrade %^C2CC: ;
 !€# durak0%^C2CC%>a
 !€0 durakk00a
-!  2ShortVow  (ʹ:) [l|s|š] :k _ Vow: Cns [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] (%^PALNo:) ;
+   Vow (ʹ:) (l|n|ŋ|r|s|š|t) :k _ Vow: Cns PenBetweenStemAndConsGrade %^PenC2CC: ;
 
 
 !! !!CONSONANT QUALITY CHANGE
