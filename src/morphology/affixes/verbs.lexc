@@ -301,9 +301,9 @@ LEXICON V_PIÂSSÂD
 +V:%^VOWLower VSUF-IND-PRS-SG3_ÂD ; !2 peäss
 +V+Ind+Prs+Pl3:%^VOWLower%^PAL%^CC2CCC%>e K ; !3 peäʹsˈse
 +V:%^PALE%^PAL%^CC2CCC VSUF-IND-PRT-PL3_ÂD ; !4 pieʹsˈse
-+V:%^CC2C VSUF-I-POTKOND_ÂD ; !5 piâzz
-+V+Pot+Sg3:%^CC2C%>âž   K ; !6 piâzzâž
-+V+Imprt+Sg3:%^VOWLower%^CC2C%>as K ; !7 piâzzas
++V:%^KK2GG VSUF-I-POTKOND_ÂD ; !5 piâzz
++V+Pot+Sg3:%^KK2GG%>âž   K ; !6 piâzzâž
++V+Imprt+Sg3:%^VOWLower%^KK2GG%>as K ; !7 piâzzas
 +V:%^CC2CCC VSUF-IMPRT-13-CONNEG_ÂD ; !8 piâsˈsu
 +V+Der/N:»mõš NMN_X-MÕŠ ;
 
@@ -340,9 +340,9 @@ LEXICON V_ČIÕKKÂD
 +V:%^VOWLower VSUF-IND-PRS-SG3_ÂD ; !2 čeâkk
 +V+Ind+Prs+Pl3:%^VOWLower%^PALÄ%^PAL%^CC2CCC%>e K ; !3 čeäʹǩˈǩe
 +V:%^PAL%^CC2CCC VSUF-IND-PRT-PL3_ÂD ; !4 čiõʹǩˈǩe
-+V:%^CC2C VSUF-I-POTKOND_ÂD ; !5 čiõǥǥ
-+V+Pot+Sg3:%^CC2C%>âž   K ; !6 čiõǥǥâž
-+V+Imprt+Sg3:%^VOWLower%^CC2C%>as K ; !7 čiõǥǥas
++V:%^KK2GG VSUF-I-POTKOND_ÂD ; !5 čiõǥǥ
++V+Pot+Sg3:%^KK2GG%>âž   K ; !6 čiõǥǥâž
++V+Imprt+Sg3:%^VOWLower%^KK2GG%>as K ; !7 čiõǥǥas
 +V:%^CC2CCC VSUF-IMPRT-13-CONNEG_ÂD ; !8 čiõkˈku
 +V+Der/N:»mõš NMN_X-MÕŠ ;
 
@@ -389,6 +389,44 @@ LEXICON V_AIBBÂD
 +V+PrfPrc:%>âm K ;
 +V+Pass+PrfPrc:%^VOWSH%^CLong%>um K ;
 +V:%^V2VV%^CC2C VABESS ;		!WG
++V+Der/N:»mõš NMN_X-MÕŠ ;
+
+LEXICON V_TOBDDÂD
+! 1. VERBS WITH SINGLE-SYLLABLE Ind.Prs.Sg3 (2009: 354)
+! 1.1 Inf in âd (vowel shift)
+!   Raised: Inf, Ind.Prt.Pl3, Imprt.Sg2, Pot.Sg3
+!   Lowered: Ind.Prs.Sg3, Ind.Prs.Pl3, Imprt.Sg3
+! 1.1.1 Has Palatalization
+! 1.1.1[1] (Palatalization pattern)
+!   Palatalized: Ind.Prs.Pl3, Ind.Prt.Pl3
+!   Not Palatalized: Inf, Ind.Prs.Sg3, Imprt.Sg2, Imprt.Sg3, Pot.Sg3
+! 1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+! 1.1.1[1].1.1 Has Orthographic Gradation
+! 1.1.1[1].1.1[221] (Monophthong + Consonant Cluster alternation)
+!   Strong grade: Inf, Ind.Prs.Sg3
+!   Strong grade: Ind.Prs.Pl3, Ind.Prt.Pl3
+!   Weak grade: Imprt.Sg2, Pot.Sg3, Imprt.Sg3
+! FORMS
+! (1)  Inf: tobddâd
+! (2)  Ind.Prs.Sg3: tåbdd
+! (3)  Ind.Prs.Pl3: tåʹbdde
+! (4)  Ind.Prt.Pl3: toʹbdde
+! (5)  Imprt.Sg2: toobd
+! (6)  Pot.Sg3: toobdâž
+! (7)  Imprt.Sg3: tååbdas
+!   
+! * Yaml: 
+!  tobddâd:tobdd
+!  with lexc stem
++V: VSUF-INF_ÂD ; !1
++V:%^VOWLower VSUF-IND-PRS-SG3_ÂD ; !2
++V+Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ; !3
++V:%^PAL VSUF-IND-PRT-PL3_ÂD ; !4
++V:%^V2VV%^CC2C VSUF-I-POTKOND_ÂD ; !5
++V+Pot+Sg3:%^V2VV%^CC2C%>âž   K ; !6
++V+Imprt+Sg3:%^V2VV%^VOWLower%^CC2C%>as K ; !7
++V: VSUF-IMPRT-13-CONNEG_ÂD ; !8
+
 +V+Der/N:»mõš NMN_X-MÕŠ ;
 
 LEXICON V_KUÕSKKÂD
@@ -473,7 +511,55 @@ LEXICON V_VÕÕIDÂD
 !   
 ! * Yaml: 
 ! võõidâd:võõid
-+V: # ;
++V: VSUF-INF_ÂD ; !1
++V:%^VOWLower VSUF-IND-PRS-SG3_ÂD ; !2
++V+Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ; !3
++V:%^PAL VSUF-IND-PRT-PL3_ÂD ; !4
++V: VSUF-I-POTKOND_ÂD ; !5
++V+Pot+Sg3:%>âž   K ; !6
++V+Imprt+Sg3:%^VOWLower%>as K ; !7
++V: VSUF-IMPRT-13-CONNEG_ÂD ; !8
+
++V+Der/N:»mõš NMN_X-MÕŠ ;
+
+
+LEXICON V_ŠLOOBBÂD
+! 1. VERBS WITH SINGLE-SYLLABLE Ind.Prs.Sg3 (2009: 354)
+! 1.1 Inf in âd (vowel shift)
+!   Raised: Inf, Ind.Prt.Pl3, Imprt.Sg2, Pot.Sg3
+!   Lowered: Ind.Prs.Sg3, Ind.Prs.Pl3, Imprt.Sg3
+! 1.1.1 Has Palatalization
+! 1.1.1[1] (Palatalization pattern)
+!   Palatalized: Ind.Prs.Pl3, Ind.Prt.Pl3
+!   Not Palatalized: Inf, Ind.Prs.Sg3, Imprt.Sg2, Imprt.Sg3, Pot.Sg3
+! 1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+! 1.1.1[1].1.2 Lacks Orthographic Gradation
+! 1.1.1[1].1.2[111] (Monophthong + Consonant Cluster)
+!   Weak grade: Inf, Ind.Prs.Sg3
+!   Weak grade: Ind.Prs.Pl3, Ind.Prt.Pl3
+!   Weak grade: Imprt.Sg2, Pot.Sg3, Imprt.Sg3
+! FORMS
+! (1)  Inf: šloobbâd
+! (2)  Ind.Prs.Sg3: šlååbb
+! (3)  Ind.Prs.Pl3: šlååʹbbe
+! (4)  Ind.Prt.Pl3: šlooʹbbe
+! (5)  Ind.Imprt.Sg2: šloobb
+! (6)  Ind.Pot.Sg3: šloobbâž
+! (7)  Ind.Imprt.Sg3: šlååbb
+!   
+! * Yaml: 
+! šloobbâd:šloobb
++V: VSUF-INF_ÂD ; !1
++V:%^VOWLower VSUF-IND-PRS-SG3_ÂD ; !2
++V+Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ; !3
++V:%^PAL VSUF-IND-PRT-PL3_ÂD ; !4
++V: VSUF-I-POTKOND_ÂD ; !5
++V+Pot+Sg3:%>âž   K ; !6
++V+Imprt+Sg3:%^VOWLower%>as K ; !7
++V: VSUF-IMPRT-13-CONNEG_ÂD ; !8
+
++V+Der/N:»mõš NMN_X-MÕŠ ;
+
 
 LEXICON VIQQAD
 ! Lexicon ''@LEXNAME@'' is for verbs like
@@ -970,21 +1056,15 @@ LEXICON V_UʹVDDED
 !    Pass.PrfPrc
 ! uʹvdded:uvdd
 +V:%^PAL VSUF-INF_ED ; !1
-+V:%^VOWLower%^CCC2CC VSUF-IND-PRS-SG3_ED ; !2
-+V+Ind+Prs+Pl3:%^VOWLower%^PAL%^CCC2CC%>e K ; !3
++V:%^VOWLower%^XYY2VYY VSUF-IND-PRS-SG3_ED ; !2
++V+Ind+Prs+Pl3:%^VOWLower%^PAL%^XYY2VYY%>e K ; !3
 +V:%^PAL%> VSUF-IND-PRT-PL3_ED ; !4
 +V:%^PAL%^XYY2VY%> VSUF-POTENTIAL_ED ; !5
 +V:%^V2VV%^VOWLower%^XYY2VY%> VSUF-CONDITIONAL_ED ; !5 ?2 ?7
-+V+Pot+Sg3:%^VOWRaise%^PAL%^CC2C%>ež   K ; !6
-+V+Imprt+Sg3:%^CC2C%>as K ; !7
++V+Pot+Sg3:%^VOWRaise%^PAL%^XYY2C%>ež   K ; !6
++V+Imprt+Sg3:%^V2VV%^VOWLower%^XYY2VY%>as K ; !7
 +V: VSUF-IMPRT-13-CONNEG_ED ; !8
 
-!+V+Ind+Prs:             V_UʹVDDED-PRS ;
-!+V+Ind+Prt:             V_UʹVDDED-PRT ;
-!+V+Imprt:                 V_UʹVDDED-IMPRT ;
-!+V:%^V2VV%^PAL%^CC2C%>       POTENTIAL ; !
-!+V:%^VOWXL%^CShort%^VOWLower%^PALNo%>    CONDITIONAL ; !
-!+V+Pot+Sg3:%^V2VV%^VOWRaise%^PAL%^CC2C%>ež    K ; !WG
 !+V+Inf:%^VOWFront%^PAL%>ed K ;
 !+V+Actio:%>em K ;
 !+V+ActEss:%^PAL%>men K ;
@@ -1905,18 +1985,6 @@ LEXICON JURDDED-PRS
  +Sg4:%^V2VV%^PAL%^CC2C%>et FINAL1 ; ! juʹrddet
  +ConNeg:%^PenV2VV%^CShort%^VOWFront%^PAL FINAL1 ;
 
-! assuming stem _uʹvdd_
-LEXICON V_UʹVDDED-PRS
- +Sg1:%^VOWXL%^CShort%^VOWLower%^PALNo%>am		FINAL1	; !WG _ooudam_ 
- +Sg2:%^VOWXL%^CShort%^VOWLower%^PALNo%>ak		FINAL1	; !WG ! _ooudak_
- +Sg3:%^V2VV%^VOWLower%^PALNo%^CC2C FINAL1	; ! _oudd_
- +Pl1:%^PAL%>ep		FINAL1	; ! _uʹvddep_
- +Pl2:%^PAL%>veʹted		FINAL1	; ! _uʹvddveʹted_
- +Pl3:%^V2VV%^VOWLower%^CC2C%^PAL%>e		FINAL1	; ! _ouʹdde_
- +Pl3:%^VOWSH%^CLong%^VOWLower%^VOWFront%^PAL%>e		FINAL1	; ! _teäʹtte_
- +Sg4:%^V2VV%^PAL%^CC2C%>et FINAL1 ; ! uuʹdet
- +ConNeg:%^PenV2VV%^CShort%^VOWFront%^PAL FINAL1 ;
-
 ! assuming stem _tieʹtt_
 LEXICON TIETTED-PRS
  +Sg1:%^V2VV%^VOWLower%^PALNo%^CC2C%>am		FINAL1	; !WG _teâđam_ 
@@ -2001,18 +2069,6 @@ LEXICON KALMMED-PRT
  +ConNeg:%>am FINAL1 ;
 
 LEXICON JURDDED-PRT
- +Sg1:%^PAL%>em         FINAL1  ; ! _juʹrddem_
- +Sg2:%^PAL%>iǩ         FINAL1  ; ! _juʹrddiǩ_
- +Sg3:%^V2VV%^PAL%^CC2C%>i FINAL1     ; !WG ! _juuʹrdi_
- +Pl1:%^V2VV%^PAL%^CC2C%>im FINAL1    ; !WG ! _juuʹrdim_
- +Pl1:%^V2VV%^PAL%^CC2C%>in FINAL1    ; !WG ! _juuʹrdin_
- +Pl2:%^V2VV%^PAL%^CC2C%>id FINAL1    ; !WG ! _tiõʹđid_
- +Pl3:%^VOWSH%^CLong%^VOWRaise%^PAL%>e FINAL1   ; ! _kõʹlmme_
- +Sg4:%^VOWFront%^PAL%>eš FINAL1 ; ! juʹrddeš
-!2013-08-29 +Sg4:%^VOWSH%^CLong%^VOWFront%^PAL%>eš FINAL1 ; ! juʹrddeš
- +ConNeg:%>am FINAL1 ;
-
-LEXICON V_UʹVDDED-PRT
  +Sg1:%^PAL%>em         FINAL1  ; ! _juʹrddem_
  +Sg2:%^PAL%>iǩ         FINAL1  ; ! _juʹrddiǩ_
  +Sg3:%^V2VV%^PAL%^CC2C%>i FINAL1     ; !WG ! _juuʹrdi_
@@ -2120,15 +2176,6 @@ LEXICON JURDDED-IMPRT
  +Pl1:%^PAL%>ep                      FINAL1  ;
  +Pl2:%^PAL%>ed                      FINAL1  ;
  +Pl3:%^VOWLower%^PALNo%>az          FINAL1  ;
-
-!
-LEXICON V_UʹVDDED-IMPRT
- +Sg2:%^V2VV%^PAL%^CC2C FINAL1        ; !WG
- +Sg3:%^VOWXL%^CShort%^VOWLower%^PALNo%>as                FINAL1  ; !WG
- +Pl1:%^PAL%>ep                      FINAL1  ;
- +Pl2:%^PAL%>ed                      FINAL1  ;
- +Pl3:%^V2VV%^VOWLower%^PALNo%^CC2C%>az          FINAL1  ;
-
 
 ! tieʹtted
 LEXICON TIETTED-IMPRT
