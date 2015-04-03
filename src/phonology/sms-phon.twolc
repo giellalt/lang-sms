@@ -182,7 +182,7 @@ ShortV2XL = [0:a a|0:ä a:ä] ;  !!= * @CODE@
 
 LongV2SH = [a:0 a|â:0 â|ä:0 ä|e:0 e|i:0 i|å:0 å|o:0 o|u:0 u|õ:0 õ|a:0 a:ä|â:0 â:õ|ä:0 ä:a|ä:0 ä:a|e:0 e:i|i:0 i:e|å:0 å:o|o:0 o:u|u:0 u:o|õ:0 õ:â] ; !!= * @CODE@ 
 
-Diphth = [e â|e:i â:õ|e ä|e:i â:e|e:i ä:â|e:i ä:e|i â|i:e â:ä|i â:e|i e|i:e e:â|i:e e:ä|i e:õ|i õ|i:e õ:â|i:e õ:ä|u â|u â:õ|u e|u e:â|u â:e|u e:õ|u e:ä|u õ|u õ:â|u õ:e|u å|u å:ä|u å:e| u å:ẹ|u ä|u ä:å|u ä:ẹ|u ä:e] ; !!= * @CODE@ 
+Diphth = [e â|e:i â:õ|e ä|e:i â:e|e:i ä:â|e:i ä:e|i â|i:e â:ä|i â:e|i e|i:e e:â|i:e e:ä|i e:õ|i õ|i:e õ:â|i:e õ:ä|u â|u â:õ|u e|u e:â|u â:e|u e:õ|u e:ä|u õ|u õ:â|u õ:e|u å|u å:ä|u å:e| u å:ẹ|u å:õ|u ä|u ä:å|u ä:ẹ|u ä:e] ; !!= * @CODE@ 
 
 DbVow = [a a|a:ä a:ä|i i|i:e i:e|o o|o:å o:å|õ õ|õ:â õ:â|u u|u:o u:o|â â|â:õ â:õ|e e|e e:ä|e ä:e|e:i e:i|å å|å:o å:o|ä ä|ä:a ä:a] ; !!= * @CODE@ 
 
@@ -308,10 +308,10 @@ PenBetweenStemAndPALNo = [(%^PenV2VV:|%^PenVV2V:) (%^PenVOWRaise:|%^PenVOWLower:
 
 PenBetweenStemAndConsGrade = [(%^PenV2VV:|%^PenVV2V:) (%^PenVOWRaise:|%^PenVOWLower:) (%^PenPALNo:|(%^PenPALE:|%^PenPALÄ:|%^PenPALẸ:) %^PenPAL:)] ;
 
-PenBetweenStemAndVowelLoss = [(%^PenV2VV:|%^PenVV2V:) (%^PenC2CC:|%^PenCC2C:|%^PenCC2CCC:)] ;
+PenBetweenStemAndVowelLoss = [(%^PenV2VV:|%^PenVV2V:) (%^PenVOWRaise:|%^PenVOWLower:) (%^PenPALNo:|(%^PenPALE:|%^PenPALÄ:|%^PenPALẸ:) %^PenPAL:) (%^PenC2CC:|%^PenCC2C:|%^PenCC2CCC:)] ;
 
 
-PenBetweenStemAndStemFinalVoicing = [(%^PenV2VV:|%^PenVV2V:) (%^PenPALNo:|(%^PenPALE:|%^PenPALÄ:|%^PenPALẸ:) %^PenPAL:) (%^PenC2CC:|%^PenCC2C:|%^PenCC2CCC:) (%^PenRmVow:)] ;
+PenBetweenStemAndStemFinalVoicing = [(%^PenV2VV:|%^PenVV2V:) (%^PenVOWRaise:|%^PenVOWLower:) (%^PenPALNo:|(%^PenPALE:|%^PenPALÄ:|%^PenPALẸ:) %^PenPAL:) (%^PenC2CC:|%^PenCC2C:|%^PenCC2CCC:) (%^PenRmVow:)] ;
 
 !! neutral to vowel height and backness
 !! {{{
@@ -781,6 +781,15 @@ Rules
  e:õ <=> u _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^PenV2VV: %^CShort:|%^VOWSH: (%^CLong:)) %^VOWBack: ;
 !! }}}
 
+" u å:õ"
+!! __@RULENAME@__ -
+!! = a>ä lowering clockwise
+ å:õ <=> u _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] %^VOWRaise: ;
+!€# puått%^VOWRaise%>u
+!€0 puõtt00u
+
+
+
 !! !Vowel Palatalization
 "diphthong allophonic realization in palatalization u å:e"
 !! __@RULENAME@__ - deriving 
@@ -870,14 +879,13 @@ Rules
 
 "Even syllabic verbs I, relative vowel lengthening 0:å"
 !! __@RULENAME@__ - deriving
-!! {{{
  0:å <=>
 !! - deriving påll+N+Sg+Gen: pååll
    OnSetC _ :å RelVowLengthening RBound ;
 !Distinguishing mainstam and maainstam
 !Vowel lengthening in INDPRSSG3 and IMPSG2 0:å kååʹmmerd, maainâst
-      Cns: _ å (u:|i:) (ʹ:|0:ʹ)  Cns:+ [%{Â1%}:|%{A1%}:|%{E1%}:] Cns:+  [%^PenV2VV:|%^IMPSG2:|%^INDPRSSG3:] ;
-!! }}}
+      Cns: _ å (u:|i:) (ʹ:|0:ʹ)  Cns:+ [e:|a:|â:|%{Â1%}:|%{A1%}:|%{E1%}:] Cns:+  %^PenV2VV: ;
+
 
 "Even syllabic verbs I, relative vowel lengthening 0:õ"
 !! __@RULENAME@__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
@@ -1220,7 +1228,10 @@ Rules
 !€# sääʹmm%^CC2C
 !€0 sääʹm00
          SurfLongVow (ʹ:) h: (ʹ:|0:ʹ)      m: _ BetweenStemAndConsGrade %^CC2C: ;
-          
+         m: _ Vow: Cns:+ PenBetweenStemAndConsGrade %^PenCC2C: ;
+!!kåʹmrded+V+Ind+Prs+Sg3 __bow__
+!€# k0åʹmmerd%^PenV2VV%^PenVow2a
+!€0 kååʹmmard00
 
 "Even syllabic verbs I, cg for b"
 !! __@RULENAME@__ - used with  neiʹbb+N+Sg+Gen: neeiʹb
