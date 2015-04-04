@@ -108,6 +108,8 @@ Alphabet
 %^PenC2CC:0     !!= * @CODE@ Lengthens consonant in penultimate syllable
 %^PenC2CCC:0 	!!= * @CODE@ Lengthens consonant in penultimate syllable
 
+%^J2I:0		!!= * @CODE@ in tuâjj:tuâi
+
 !! !! Gradation triggers 2015.01.23
  %^XSt2St:0	!!= * @CODE@ Causes weakening from extra strong to strong
  %^XSt2W:0	!!= * @CODE@ Causes weakening from extra strong to weak
@@ -346,7 +348,8 @@ Rules
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
  â:0 <=>
           OnSetC _ â: (u) (ʹ:|0:ʹ) Cns: [ Cns:*|:Cns*]  %^VV2V:  ;
-         [Cns:+|:Cns+] _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ;
+          _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ;
+!         [Cns:+|:Cns+] _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ;
 
 
 
@@ -358,7 +361,8 @@ Rules
 !€# teevv%^VV2V%^VOWRaise%>uš
 !€0 t0ivv000uš
  OnSetC _ e: (ʹ:|0:ʹ) [LongC|Cns: :Cns*] [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ;
-         [Cns:+|:Cns+] _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ; 
+          _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ; 
+!         [Cns:+|:Cns+] _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ; 
 !!Ââvel+N+Prop+Sg+Loc  __Ivalo__
 !€# Ââvel%^PenRmVow%>est
 !€# Ââv0l00est
@@ -411,7 +415,8 @@ Rules
 !€# viikk%^VV2V%^VOWLower%^PAL%>e
 !€0 v0eʹǩǩ0000e
          Cns _ %^RmVow%> ǥ a ; ! +Sg+Ill N_HÕʹPPI
-         [Cns:+|:Cns+] _ [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ;
+          _ [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ;
+!         [Cns:+|:Cns+] _ [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ;
          OnSetC _ i: (ʹ:|0:ʹ) Cns:+ Vow: [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^PenVV2V: ; ! iilâsǩ:ilska
 
  OnSetC _ i: (u) (ʹ:|0:ʹ) Cns: [ Cns:*|:Cns*]  %^VV2V:  ;
@@ -439,7 +444,8 @@ Rules
 !€# saa0kk%^VV2V%^PAL%>e
 !€0 s0aʹǩǩ000e
  OnSetC _ a: (ʹ:|0:ʹ) [LongC|Cns: :Cns*] Vow: Cns %^PenVV2V: ;
-         [Cns:+|:Cns+] _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ; 
+          _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ; 
+!         [Cns:+|:Cns+] _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ; 
 !!Aanar+N+Prop+Sg+Ill
 !€# Aanar%^PenRmVow%>a
 !€# Aan0r00a
@@ -1013,9 +1019,13 @@ Rules
  j:i <=> OnSetC i: (%{ʹ%}:) _ (ʹ:) [ d d:|s s:] BetweenStemAndConsGrade %^XYY2VY: ;
 !€# ijss%^VOWXL%^CShort%>âs
 !€0 iis0000âs
-  Vow:Vow ʹ: _ j: %^PALNo:  %^CC2C: # ;
-!€# sââʹjj%^PALNo%^CC2C
+  Vow: (ʹ:|:ʹ) _ j: BetweenStemAndConsGrade %^J2I: %^CC2C: ;
+
+!€# sââʹjj%^PALNo%^J2I%^CC2C
 !€0 sââ0i00
+!!tuâjj+N+Sg+Acc __work__
+!€# tuâjj%^J2I%^CC2C
+!€0 tuâi000
 
 "Even syllabic verbs,  for v>u"
 !! __@RULENAME@__ - uvdd > ouʹdde
@@ -1383,7 +1393,7 @@ Rules
       Vow:  (ʹ:|0:ʹ)  [r|l|p] š: _ BetweenStemAndConsGrade %^CC2C: ;
       Vow:  (%{ʹ%}:) h: (ʹ:|0:ʹ) š:  _ BetweenStemAndConsGrade %^CC2C: ;
       Vow: (%{ʹ%}:) h: (ʹ:|0:ʹ) š:  _ BetweenStemAndConsGrade %^XYY2VY: ;
-!!šapšš+N+Sg+Gen ____
+!!šapšš+N+Sg+Gen __white fish__
 !€# š0apšš%^V2VV%^CC2C
 !€0 šaapš000
 
@@ -1391,9 +1401,13 @@ Rules
 "j:0 "
 !! __@RULENAME@__ 
  j:0 <=>
- Vow: (ʹ:|0:ʹ) Cns:* j: _    BetweenStemAndConsGrade %^CC2C: ;
+ Vow: (ʹ:|0:ʹ) Cns:* j: _    BetweenStemAndConsGrade (%^J2I:) %^CC2C: ;
+!!ǩeʹrjj+N+Pl+Nom __book__
 !€# ǩ0eʹrjj%^V2VV%^CC2C
 !€0 ǩeeʹrj000
+!!tuâjj+N+Sg+Acc __work__
+!€# tuâjj%^J2I%^CC2C
+!€0 tuâi000
 
 
 "Even syllabic verbs I, cg for g"
@@ -1426,6 +1440,10 @@ Rules
   :Vow  _ k: (%^V2VV:) %^KK2GG: ;
 !€# j0okk%^V2VV%^KK2GG
 !€0 jooǥǥ00
+    _ k: BetweenStemAndConsGrade %^CC2C: ;
+!!loǥškueʹtted __begin to read__
+!€# lookk%^VV2V%^CC2C»škueʹtted
+!€0 l0oǥ0000škueʹtted
 
 "Even syllabic nouns I, with extra lengthening of vowel V>VV and k:j"
 !! __@RULENAME@__ 
@@ -1537,10 +1555,12 @@ Rules
 
 "Even syllabic verbs I, second consonant loss k:0"
 !! __@RULENAME@__ -
-!! {{{
- k:0 <=> Vow:  (ʹ:|0:ʹ)  [s|r|l|p] k:  _ BetweenStemAndConsGrade  %^CC2C: ;
+ k:0 <=> Vow:  (ʹ:|0:ʹ)  (s|r|l|p) k:  _ BetweenStemAndConsGrade  %^CC2C: ;
 !       SurfLongVow  (%{ʹ%}:) h: (ʹ:|0:ʹ) k: _ BetweenStemAndConsGrade  %^CC2C: ;
-!! }}}
+!!loǥškueʹtted __begin to read__
+!€# lookk%^VV2V%^CC2C»škueʹtted
+!€0 l0oǥ0000škueʹtted
+
 
 "Even syllabic verbs I, second consonant loss ǩ:0"
 !! __@RULENAME@__ -
