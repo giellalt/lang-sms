@@ -20,6 +20,7 @@ LEXICON N_PAARR
 +N: NMN_PAARR ;
 LEXICON NMN_PAARR
 ! gradation: yes
+! Sg.Loc: âst
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
 !! !!1.1 Sg.Loc in -âst (no vowel shift, all raised)
 !! !!  â-stems (Sg.Loc, Ess, Par).
@@ -1001,6 +1002,51 @@ LEXICON NMN_RÄÄKK
 :%^KK2GG%>a PL-OBL ;
 +Der/Dim:%^KK2GG%^VOWRaise%> N_PIISSUŽ ;
 
+LEXICON N_VUÂRR
++N: NMN_VUÂRR ;
+LEXICON NMN_VUÂRR
+! gradation: yes
+!! Is for nouns with ''-ast'' Loc
+!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+!! !!1.2 Sg.Loc in -ast (vowel shift)
+!! !!  Raised: Sg.Ill
+!! !!  Lowered: ELSE
+!! !!  a-stems (Sg.Loc, Ess, Par).
+!! !!1.2.2 Sg.Ill vowel	-u
+!! !!1.2.2.2 Lacks Palatalization
+!! !!1.2.2.2.1 Lacks Specifically Pedagogical Gradation
+!! !!1.2.2.2.1.1 Has Orthographic Gradation
+!! !!1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
+!! !!  Strong grade: Sg.Nom, Ess, Par
+!! !!  Extra strong grade: Sg.Ill
+!! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+!! !!FORMS
+!! !!(1) Sg.Nom: vuârr
+!! !!(2) Pl.Nom: vuâr
+!! !!(3) Sg.Ill: vuõrru
+!! !!(4) Sg.Loc: vuârast
+!! !!(5) Sg.Com: vuârain
+!! !!(6) Ess: vuârran
+!! !!(7) Par: vuârrad
+!! !!(8) Pl.Acc: vuâraid
+!! !!(9) Dim.N.Sg.Nom: vuõruž (2009: 310)
+!NumContLex="1.1120000000000001"
+!! N_A-URaise3-32
+!! ** Yaml: __N-vuorr__
+ ATTESTED-NOUN-STEM ;
+: SG-NOM ;
+:%^CC2C SG-GEN ;
+:%^CC2C SG-ACC ;
+:%^VOWRaise%>u SG-ILL ;
+:%^CC2C%>a SG-LOC ;
+:%^CC2C%>a SG-COM_IN ;
+:%>a ESS ; ! ess and prt without
+:%>a PAR ;
+:%^CC2C SG-ABE ;
+:%^CC2C PL-NOM ;
+:%^CC2C%>a PL-OBL ;
++Der/Dim:%^CC2C%^VOWRaise%> N_PIISSUŽ ;
+
 LEXICON N_TUÂJJ
 +N: NMN_TUÂJJ ;
 LEXICON NMN_TUÂJJ
@@ -1021,7 +1067,7 @@ LEXICON NMN_TUÂJJ
 !! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 !! !!FORMS
 !! !!(1) Sg.Nom: tuâjj
-!! !!(2) Pl.Nom: tuâj
+!! !!(2) Pl.Nom: tuâi
 !! !!(3) Sg.Ill: tuõjˈju
 !! !!(4) Sg.Loc: tuâjast
 !! !!(5) Sg.Com: tuâjain
@@ -1034,15 +1080,15 @@ LEXICON NMN_TUÂJJ
 !! ** Yaml: __N-tuajj__
  ATTESTED-NOUN-STEM ;
 : SG-NOM ;
-:%^CC2C SG-GEN ;
-:%^CC2C SG-ACC ;
+:%^J2I%^CC2C SG-GEN ;
+:%^J2I%^CC2C SG-ACC ;
 :%^VOWRaise%>u SG-ILL ;
 :%^CC2C%>a SG-LOC ;
 :%^CC2C%>a SG-COM_IN ;
 :%>a ESS ; ! ess and prt without
 :%>a PAR ;
 :%^CC2C SG-ABE ;
-:%^CC2C PL-NOM ;
+:%^J2I%^CC2C PL-NOM ;
 :%^CC2C%>a PL-OBL ;
 +Der/Dim:%^CC2C%^VOWRaise%> N_PIISSUŽ ;
 
@@ -1177,6 +1223,7 @@ LEXICON NMN_ÄLDD
  ATTESTED-NOUN-STEM ;
 : SG-NOM ;
 +Der/Dim:%^V2VV%^VOWRaise%^CC2C N_PIISSUŽ ;
+
 
 LEXICON N_LÄʹBǮǮ
 +N: NMN_LÄʹBǮǮ ;
@@ -1494,15 +1541,15 @@ LEXICON NMN_PÂÂʹJJ
 !!
  ATTESTED-NOUN-STEM ;
 : SG-NOM ;
-:%^St2W SG-GEN ;
-:%^V2VV%^CC2C SG-ACC ;
+:%^J2I%^CC2C SG-GEN ;
+:%^J2I%^CC2C SG-ACC ;
 :%^VV2V%^PALNo%>a SG-ILL ;
 :%^CC2C%>e SG-LOC ;
 :%^VOWRaise%^CC2C SG-COM_IN ;
 :%>e ESS ; ! ess and prt without
 :%>e PAR ;
 :%^CC2C SG-ABE ;
-:%^CC2C PL-NOM ;
+:%^J2I%^CC2C PL-NOM ;
 :%^VOWRaise%^CC2C PL-OBL ;
 +Der/Dim:%^V2VV%^CC2C%^PALNo%> N_KUÂLAŽ ;
 
@@ -2317,6 +2364,7 @@ LEXICON NMN_JARPLAN
 !! ** Yaml: __N-jarplan__
  ATTESTED-NOUN-STEM ;
 : SG-NOM ;
+:%^V2VV SG-NOM ;
 :%^V2VV SG-GEN ;
 :%^V2VV SG-ACC ;
 :%^V2VV%^PAL%>e SG-ILL ;
@@ -2541,7 +2589,6 @@ LEXICON NMN_X-EEI
  PL-OBL ;
 
 
-
 LEXICON N_KÅʹLL
 +N: NMN_KÅʹLL ;
 LEXICON NMN_KÅʹLL
@@ -2558,12 +2605,37 @@ LEXICON NMN_KÅʹLL
 :%^V2VV%^CC2C SG-ACC ;
 :%^PALNo%>a SG-ILL ;
 :%^V2VV%^CC2C%>e SG-LOC ;
-:%^V2VV%^VOWRaise SG-COM_IN ;
+:%^V2VV%^VOWRaise%^CC2C SG-COM_IN ;
 :%>e ESS ; ! ess and prt without
 :%>e PAR ;
 :%^V2VV%^CC2C SG-ABE ;
 :%^V2VV%^CC2C PL-NOM ;
-:%^V2VV%^VOWRaise PL-OBL ;
+:%^V2VV%^VOWRaise%^CC2C PL-OBL ;
+
+
+
+LEXICON N_UNIVERSITEʹTT
++N: NMN_UNIVERSITEʹTT ;
+LEXICON NMN_UNIVERSITEʹTT
+! gradation: yes
+! Sg.Loc: est
+!! ** Yaml: __N-universitett__
+!! * There are several stem types 
+!! * universiteʹtt:universiteʹtt
+
+ ATTESTED-NOUN-STEM ;
+: SG-NOM ;
+:%^V2VV%^CC2C SG-GEN ;
+:%^V2VV%^CC2C SG-ACC ;
+:%^PALNo%>a SG-ILL ;
+:%^V2VV%^CC2C%>e SG-LOC ;
+:%^V2VV%^CC2C SG-COM_IN ;
+:%>e ESS ; ! ess and prt without
+:%>e PAR ;
+:%^V2VV%^CC2C SG-ABE ;
+:%^V2VV%^CC2C PL-NOM ;
+:%^V2VV%^CC2C PL-OBL ;
+
 
 LEXICON N_LÅʹDD
 +N: NMN_LÅʹDD ;
@@ -3017,19 +3089,19 @@ LEXICON N_MÄÄN
 !! * mään:mään
 +N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
-+N:%^VV2V%^VOWRaise%^C2CC%>u SG-GEN ;
-+N:%^VV2V%^VOWRaise%^C2CC%>u SG-ACC ;
-+N:%^VV2V%^C2CC%>ǥa SG-ILL ;
-+N:%^VV2V%^C2CC%>ʼja SG-ILL ;
-+N:%^VV2V%^VOWRaise%^C2CC%>u SG-LOC ;
-+N:%^VV2V%^C2CC%>ʼje SG-LOC ;
-+N:%^VV2V%^VOWRaise%^C2CC%>u SG-COM_IN ;
-+N:%^VV2V%^C2CC%>ʼj SG-COM_IN ;
-+N:%^VV2V%^C2CC%>ʼje ESS ; ! ess and prt without
-+N:%^VV2V%^VOWRaise%^C2CC%>u PAR ;
-+N:%^VV2V%^VOWRaise%^C2CC%>u SG-ABE ;
-+N:%^VV2V%^VOWRaise%^C2CC%>u PL-NOM ;
-+N:%^VV2V%^VOWRaise%^C2CC%>u PL-OBL ;
++N:%{XC%}%^VV2V%^VOWRaise%^C2CC%>u SG-GEN ;
++N:%{XC%}%^VV2V%^VOWRaise%^C2CC%>u SG-ACC ;
++N:%{XC%}%^VV2V%^C2CC%>ǥa SG-ILL ;
++N:%{XC%}%^VV2V%^C2CC%>ʼja SG-ILL ;
++N:%{XC%}%^VV2V%^VOWRaise%^C2CC%>u SG-LOC ;
++N:%{XC%}%^VV2V%^C2CC%>ʼje SG-LOC ;
++N:%{XC%}%^VV2V%^VOWRaise%^C2CC%>u SG-COM_IN ;
++N:%{XC%}%^VV2V%^C2CC%>ʼj SG-COM_IN ;
++N:%{XC%}%^VV2V%^C2CC%>ʼje ESS ; ! ess and prt without
++N:%{XC%}%^VV2V%^VOWRaise%^C2CC%>u PAR ;
++N:%{XC%}%^VV2V%^VOWRaise%^C2CC%>u SG-ABE ;
++N:%{XC%}%^VV2V%^VOWRaise%^C2CC%>u PL-NOM ;
++N:%{XC%}%^VV2V%^VOWRaise%^C2CC%>u PL-OBL ;
 
 
 LEXICON N_SUÂL
@@ -3042,19 +3114,19 @@ LEXICON NMN_SUÂL
 !! * suâl:suâl
  ATTESTED-NOUN-STEM ;
 : SG-NOM ;
-:%^VOWRaise%^C2CCC%>u SG-GEN ;
-:%^VOWRaise%^C2CCC%>u SG-ACC ;
-:%^C2CCC%>ǥa SG-ILL ;
-:%^C2CCC%>ja SG-ILL ;
-:%^VOWRaise%^C2CCC%>u SG-LOC ;
-:%^C2CCC%>je SG-LOC ;
-:%^VOWRaise%^C2CCC%>u SG-COM_IN ;
-:%^C2CCC%>j SG-COM_IN ;
+:%{XC%}%^VOWRaise%^C2CCC%>u SG-GEN ;
+:%{XC%}%^VOWRaise%^C2CCC%>u SG-ACC ;
+:%{XC%}%^C2CCC%>ǥa SG-ILL ;
+:%{XC%}%^C2CCC%>ja SG-ILL ;
+:%{XC%}%^VOWRaise%^C2CCC%>u SG-LOC ;
+:%{XC%}%^C2CCC%>je SG-LOC ;
+:%{XC%}%^VOWRaise%^C2CCC%>u SG-COM_IN ;
+:%{XC%}%^C2CCC%>j SG-COM_IN ;
 :%>a ESS ; 
-:%^VOWRaise%^C2CCC%>u PAR ;
-:%^VOWRaise%^C2CCC%>u SG-ABE ;
-:%^VOWRaise%^C2CCC%>u PL-NOM ;
-:%^VOWRaise%^C2CCC%>u PL-OBL ;
+:%{XC%}%^VOWRaise%^C2CCC%>u PAR ;
+:%{XC%}%^VOWRaise%^C2CCC%>u SG-ABE ;
+:%{XC%}%^VOWRaise%^C2CCC%>u PL-NOM ;
+:%{XC%}%^VOWRaise%^C2CCC%>u PL-OBL ;
 
 !! !!k-stems
 
