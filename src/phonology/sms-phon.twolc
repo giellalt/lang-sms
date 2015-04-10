@@ -108,8 +108,8 @@ Alphabet
 %^PenCC2CCC:0     !!= * @CODE@ Extra Lengthens consonant in penultimate syllable
 %^PenC2CC:0     !!= * @CODE@ Lengthens consonant in penultimate syllable
 %^PenC2CCC:0 	!!= * @CODE@ Lengthens consonant in penultimate syllable
-%^PenXYY2VY:0	!!= * @CODE@ 
-%^PenVY2XYY:0	!!= * @CODE@ 
+%^PenXYY2VY:0	!!= * @CODE@ Vhss:VVus in penultimate syllable
+%^PenVY2XYY:0	!!= * @CODE@ VVus:Vhss in penultimate syllable
 
 %^J2I:0		!!= * @CODE@ in tuâjj:tuâi
 %^I2J:0		!!= * @CODE@ in agent names
@@ -254,7 +254,7 @@ XYY2XYCluster = [l [m m:|b b:|p p:| d d:|t t:|g g:|ǧ: ǧ:|k: k:|ǩ: ǩ:]|m [p p
 
 
 !! Onset consonant or word boundary
-OnSetC = [Cns|#] ;
+OnSetC = [:Cns|#] ;
 
 
 !! following morpheme or word boundary
@@ -355,7 +355,7 @@ Rules
 !!čââʹđ+N+Sg+Ill: __heart/sydän__
 !€# čââʹđ0%^VV2V%^PALNo%^C2CC%>ma
 !€0 č0â0đđ0000ma
-          _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ;
+    OnSetC   _ [Cns:+|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ;
 !         [Cns:+|:Cns+] _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ;
 
 
@@ -407,11 +407,11 @@ Rules
 
 "Even syllabic verbs I, vowel shortening u:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
- u:0 <=>  _ u: (ʹ:|0:ʹ) [C2CCafterVV2V|Cns: :Cns+] (i:) %^VV2V: ;
+ u:0 <=> OnSetC _ u: (ʹ:|0:ʹ) [C2CCafterVV2V|Cns: :Cns+] (i:) %^VV2V: ;
 !!juurd+N+Ess __thought__
 !€# juurd0%^VV2V%^C2CC%>j%>en
 !€0 j0urdd000j0en
-          _ u: (ʹ:|0:ʹ) Cns:+ Vow: [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m] %^PenVV2V: ;
+      OnSetC  _ u: (ʹ:|0:ʹ) Cns:+ Vow: [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m] %^PenVV2V: ;
 
 
 "Even syllabic verbs I, vowel shortening i:0"
@@ -422,7 +422,7 @@ Rules
 !€# viikk%^VV2V%^VOWLower%^PAL%>e
 !€0 v0eʹǩǩ0000e
          Cns _ %^RmVow%> ǥ a ; ! +Sg+Ill N_HÕʹPPI
-          _ [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ;
+        OnSetC  _ [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ;
 !         [Cns:+|:Cns+] _ [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ;
          OnSetC _ i: (ʹ:|0:ʹ) Cns:+ Vow: [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^PenVV2V: ; ! iilâsǩ:ilska
 
@@ -451,7 +451,7 @@ Rules
 !€# saa0kk%^VV2V%^PAL%>e
 !€0 s0aʹǩǩ000e
  OnSetC _ a: (ʹ:|0:ʹ) [LongC|Cns: :Cns*] Vow: Cns %^PenVV2V: ;
-          _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ; 
+       OnSetC   _ [Cns:+|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ; 
 !         [Cns:+|:Cns+] _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ; 
 !!Aanar+N+Prop+Sg+Ill
 !€# Aanar%^PenRmVow%>a
@@ -530,7 +530,6 @@ Rules
 "Even syllabic verbs I, vowel raising e:i"
 !! __@RULENAME@__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
  e:i <=>
-!!
   OnSetC _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] %^VOWRaise: ;
 !€# pess%^VOWRaise%>u
 !€0 piss00u
@@ -952,7 +951,6 @@ Rules
 !!€0 maainâst0
 !!   [ b | ʒ | (ǯ) ǯ | (g) g | i b | i n |(k) k |l|m |(n) n | n v|r g|r| r t | u d|u l| u n | u ŋ | u r] _ s t (%^PenV2VV:) %^IMPSG2: ;
 !!   [ ʹ đ đ | ʹ ǩ |ʹ l|ʹ l ǩ |ʹ m m |ʹ p] _ s t %^IMPSG2: ;
-!
 !   Cns: _ a  i  (ʹ:|0:ʹ) Cns: %{Â1%}: Cns:+  %^PenV2VV: ; 
 !   Cns: _ a  i  Cns: %{Â1%}: Cns:+  %^PenV2VV: ;
 !   Cns: _ a (u:|i:) (ʹ:|0:ʹ)  Cns:+ [%{Â1%}:|%{A1%}:|%{E1%}:] Cns:+  [%^PenV2VV:|%^IMPSG2:|%^INDPRSSG3:] ; 
