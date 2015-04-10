@@ -108,6 +108,8 @@ Alphabet
 %^PenCC2CCC:0     !!= * @CODE@ Extra Lengthens consonant in penultimate syllable
 %^PenC2CC:0     !!= * @CODE@ Lengthens consonant in penultimate syllable
 %^PenC2CCC:0 	!!= * @CODE@ Lengthens consonant in penultimate syllable
+%^PenXYY2VY:0	!!= * @CODE@ 
+%^PenVY2XYY:0	!!= * @CODE@ 
 
 %^J2I:0		!!= * @CODE@ in tuâjj:tuâi
 %^I2J:0		!!= * @CODE@ in agent names
@@ -1342,13 +1344,6 @@ Rules
 
 
 
-"Even syllabic verbs I, second consonant loss t:0"
-!! __@RULENAME@__ -
- t:0 <=> Vow:           (u|i)   (ʹ:|0:ʹ) ([s|r|l]) t: _ BetweenStemAndConsGrade  %^CC2C: ;
-         Vow: (%{ʹ%}:) h: (ʹ:|0:ʹ)           t: _ BetweenStemAndConsGrade  %^CC2C: ;
-
-
-
 "Even syllabic verbs I, cg for ʒ"
 !! __@RULENAME@__ - used with  pääʹʒʒelm+N+Sg+Ill: päʹʒlma
  ʒ:0 <=>
@@ -1364,18 +1359,6 @@ Rules
 !€# kuʹvǯǯ%^CC2C
 !€0 kuʹvǯ00
         2SgVow (ʹ:|0:ʹ) ǯ _ Vow: [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndConsGrade  %^PenCC2C: ;
-
-"Even syllabic verbs I, cg for s"
-!! __@RULENAME@__ 
- s:0 <=>  i: (%{ʹ%}:) j: (ʹ:|0:ʹ) s _ BetweenStemAndConsGrade %^XYY2VY: ;
-!€# ijss%^VOWXL%^CShort%>âs
-!€0 iis0000âs
-      Vow:  (ʹ:|0:ʹ)  [r|l|p] s: _ BetweenStemAndConsGrade %^CC2C: ;
-      Vow:  (%{ʹ%}:) h: (ʹ:|0:ʹ) s:  _ BetweenStemAndConsGrade %^CC2C: ;
-      Vow: (%{ʹ%}:) h: (ʹ:|0:ʹ) s:  _ BetweenStemAndConsGrade %^XYY2VY: ;
-!!uhss+N+Sg+Gen __door__
-!€# uhss%^XYY2VY
-!€0 uus00
 
 "Even syllabic verbs I, cg for đ" 
 !! __@RULENAME@__ - used with  ǩiđđ:ǩiiđ
@@ -1417,17 +1400,6 @@ Rules
          [[DbVow|Diphth]|Vow: u] (ʹ:|0:ʹ) l: _  [%^St2W:|%^PenV2VV: %^CShort:] ; 
 !€# kuâ0ll%^PenV2VV%^CShort%^PAL
 !€0 kueʹl0000
-
-"Even syllabic verbs I, cg for š"
-!! __@RULENAME@__
- š:0 <=>
-      Vow:  (ʹ:|0:ʹ)  [r|l|p] š: _ BetweenStemAndConsGrade %^CC2C: ;
-      Vow:  (%{ʹ%}:) h: (ʹ:|0:ʹ) š:  _ BetweenStemAndConsGrade %^CC2C: ;
-      Vow: (%{ʹ%}:) h: (ʹ:|0:ʹ) š:  _ BetweenStemAndConsGrade %^XYY2VY: ;
-!!šapšš+N+Sg+Gen __white fish__
-!€# š0apšš%^V2VV%^CC2C
-!€0 šaapš000
-
 
 "j:0 "
 !! __@RULENAME@__ 
@@ -1566,11 +1538,51 @@ Rules
 
 "Even syllabic verbs I, third consonant loss" 
 !! __@RULENAME@__ - lgg:lǥ, Vow Ca Cx Cx:0, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants following consonant at coda that become single consonants in gradation
-!! {{{
- Cx:0 <=> Vow:  (ʹ:|0:ʹ)  [s|r|l|p|d:] Cx: _ BetweenStemAndConsGrade %^CC2C: ;
-          Vow:  (%{ʹ%}:) h: (ʹ:|0:ʹ) Cx:  _ BetweenStemAndConsGrade %^CC2C: ;
-                where Cx in (ŋ č c) ;
-!! }}}
+ Cx:0 <=>
+       Vow:  (ʹ:|0:ʹ)  Cns: Cx: _ BetweenStemAndConsGrade %^CC2C: ;
+       Vow:  (ʹ:|0:ʹ) [h:|j:] (ʹ:|0:ʹ) Cx:  _ BetweenStemAndConsGrade %^XYY2VY: ;
+       Vow:  (ʹ:|0:ʹ)  Cns: Cx: _ Vow: Cns:+ PenBetweenStemAndConsGrade %^PenCC2C: ;
+       Vow:  (ʹ:|0:ʹ) [h:|j:] (ʹ:|0:ʹ) Cx:  _ Vow: Cns:+ PenBetweenStemAndConsGrade %^PenXYY2VY: ;
+                where Cx in (t c č s š) ;
+
+
+!"Even syllabic verbs I, second consonant loss t:0"
+!!! __@RULENAME@__ -
+! t:0 <=> Vow:           (u|i)   (ʹ:|0:ʹ) ([s|r|l]) t: _ BetweenStemAndConsGrade  %^CC2C: ;
+!         Vow: (%{ʹ%}:) h: (ʹ:|0:ʹ)           t: _ BetweenStemAndConsGrade  %^XYY2VY: ;
+!"Even syllabic verbs I, cg for s"
+!!! __@RULENAME@__ 
+! s:0 <=>  i: (%{ʹ%}:) j: (ʹ:|0:ʹ) s _ BetweenStemAndConsGrade %^XYY2VY: ;
+!!€# ijss%^VOWXL%^CShort%>âs
+!!€0 iis0000âs
+!      Vow:  (ʹ:|0:ʹ)  [r|l|p] s: _ BetweenStemAndConsGrade %^CC2C: ;
+!      Vow:  (%{ʹ%}:) h: (ʹ:|0:ʹ) s:  _ BetweenStemAndConsGrade %^CC2C: ;
+!      Vow: (%{ʹ%}:) h: (ʹ:|0:ʹ) s:  _ BetweenStemAndConsGrade %^XYY2VY: ;
+!!!uhss+N+Sg+Gen __door__
+!!€# uhss%^XYY2VY
+!!€0 uus00
+!"Even syllabic verbs I, cg for š"
+!!! __@RULENAME@__
+! š:0 <=>
+!      Vow:  (ʹ:|0:ʹ)  [r|l|p] š: _ BetweenStemAndConsGrade %^CC2C: ;
+!      Vow:  (%{ʹ%}:) h: (ʹ:|0:ʹ) š:  _ BetweenStemAndConsGrade %^CC2C: ;
+!      Vow: (%{ʹ%}:) h: (ʹ:|0:ʹ) š:  _ BetweenStemAndConsGrade %^XYY2VY: ;
+!!šapšš+N+Sg+Gen __white fish/siika__
+!€# š0apšš%^V2VV%^CC2C
+!€0 šaapš000
+
+
+
+
+
+
+"Consonant loss ŋ:0"
+!! __@RULENAME@__ -
+ ŋ:0 <=>
+ Vow: (ʹ:|0:ʹ) ([Cns - ŋ]) ŋ: _    BetweenStemAndConsGrade %^CC2C: ;
+ Vow: (ʹ:|0:ʹ) ([Cns - ŋ]) ŋ: _  Vow: Cns:+  PenBetweenStemAndConsGrade %^PenCC2C: ;
+
+
 
 "Even syllabic verbs I, t>đ" 
 !! __@RULENAME@__ - tt:đ
