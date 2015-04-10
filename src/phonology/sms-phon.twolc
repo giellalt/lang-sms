@@ -346,10 +346,13 @@ Rules
 
 
 
-"Even syllabic verbs I, vowel shortening â:0"
-!! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+"Vowel shortening â:0"
+!! __@RULENAME@__ - 
  â:0 <=>
           OnSetC _ â: (u) (ʹ:|0:ʹ) Cns: [ Cns:*|:Cns*]  %^VV2V:  ;
+!!čââʹđ+N+Sg+Ill: __heart/sydän__
+!€# čââʹđ0%^VV2V%^PALNo%^C2CC%>ma
+!€0 č0â0đđ0000ma
           _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ;
 !         [Cns:+|:Cns+] _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ;
 
@@ -1178,8 +1181,15 @@ Rules
 
 "Even-syllabic verbs I, Palatalization of k:ǩ"
 !! __@RULENAME@__ -
- k:ǩ <=> Vow: (ʹ:|0:ʹ) (Cns:)     _ k: (%^VV2V:|%^VOWSH: (%^CLong:)) NeutrHighBack (X3:) (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: RBound ;
-           Vow: (ʹ:|0:ʹ) (Cns:) k: _     (%^VV2V:|%^VOWSH: (%^CLong:)) NeutrHighBack (X3:) (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: RBound ;
+ k:ǩ <=>
+ Vow: :ʹ Cns:   _ k: BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CC2C:) RBound ;
+!!mieʹlǩǩ+N+Sg+Acc: __milk/maito__
+!€# miâ0lkk%^PALE%^PAL%^CC2C
+!€0 mieʹlǩ0000
+ Vow: :ʹ        _ k: BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: RBound ;
+! Vow: (ʹ:|0:ʹ) (Cns:)     _ k: (%^VV2V:|%^VOWSH: (%^CLong:)) NeutrHighBack (X3:) (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: RBound ;
+  Vow: 0:ʹ (Cns:) k: _   BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: RBound ;
+!           Vow: (ʹ:|0:ʹ) (Cns:) k: _     (%^VV2V:|%^VOWSH: (%^CLong:)) NeutrHighBack (X3:) (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: RBound ;
 !with insertion of palatal before
            Vow: (ʹ:|0:ʹ) (Cns:)     _ k: (%^VV2V:|%^VOWSH: (%^CLong:)) NeutrHighBack (X3:) (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: RBound ;
            Vow: (ʹ:|0:ʹ) (Cns:) k: _     (%^VV2V:|%^VOWSH: (%^CLong:)) NeutrHighBack (X3:) (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: RBound ;
@@ -1464,7 +1474,7 @@ Rules
   :Vow  _ k: (%^V2VV:) %^KK2GG: ;
 !€# j0okk%^V2VV%^KK2GG
 !€0 jooǥǥ00
-    _ k: BetweenStemAndConsGrade %^CC2C: ;
+  :Vow  _ k: BetweenStemAndConsGrade %^CC2C: ;
 !!loǥškueʹtted __begin to read__
 !€# lookk%^VV2V%^CC2C»škueʹtted
 !€0 l0oǥ0000škueʹtted
@@ -1579,11 +1589,14 @@ Rules
 
 "Even syllabic verbs I, second consonant loss k:0"
 !! __@RULENAME@__ -
- k:0 <=> Vow:  (ʹ:|0:ʹ)  (s|r|l|p) k:  _ BetweenStemAndConsGrade  %^CC2C: ;
+ k:0 <=> Vow:  (:ʹ)  (s|r|l|p) k:  _ BetweenStemAndConsGrade  %^CC2C: ;
 !       SurfLongVow  (%{ʹ%}:) h: (ʹ:|0:ʹ) k: _ BetweenStemAndConsGrade  %^CC2C: ;
 !!loǥškueʹtted __begin to read__
 !€# lookk%^VV2V%^CC2C»škueʹtted
 !€0 l0oǥ0000škueʹtted
+!!mieʹlǩǩ+N+Sg+Acc: __milk/maito__
+!€# miâ0lkk%^PALE%^PAL%^CC2C
+!€0 mieʹlǩ0000
 
 
 "Even syllabic verbs I, second consonant loss ǩ:0"
@@ -1684,16 +1697,22 @@ Rules
 !€# čââʹlmteʹm0%^PALNo%^C2CC%>a
 !€0 čââʹlmte0mm000a
 
-"Consonant lengthening 0:b"
-!! __@RULENAME@__ - 
- 0:b <=>  2ShortVow  (ʹ:|0:ʹ) [l] b _  BetweenStemAndConsGrade %^C2CC: ;
-  2ShortVow  (ʹ:|0:ʹ) [l] b _ Vow: Cns PenBetweenStemAndConsGrade %^PenC2CC: ;
+!"Consonant lengthening 0:b"
+!!! __@RULENAME@__ - 
+! 0:b <=>  2ShortVow  (ʹ:|0:ʹ) [l] b _  BetweenStemAndConsGrade %^C2CC: ;
+!  2ShortVow  (ʹ:|0:ʹ) [l] b _ Vow: Cns PenBetweenStemAndConsGrade %^PenC2CC: ;
 
 
-"Consonant lengthening 0:p"
+!"Consonant lengthening 0:p"
+!!! __@RULENAME@__ - 
+! 0:p <=>  2ShortVow  (ʹ:|0:ʹ) [m|l] p _ BetweenStemAndConsGrade %^C2CC: ;
+!           2ShortVow  (ʹ:|0:ʹ) [m|l] p _ Vow: Cns PenBetweenStemAndConsGrade %^PenC2CC: ;	       
+
+"Consonant lengthening 0:Cx"
 !! __@RULENAME@__ - 
- 0:p <=>  2ShortVow  (ʹ:|0:ʹ) [m|l] p _ BetweenStemAndConsGrade %^C2CC: ;
-           2ShortVow  (ʹ:|0:ʹ) [m|l] p _ Vow: Cns PenBetweenStemAndConsGrade %^PenC2CC: ;	       
+ 0:Cx <=>  Vow:  (ʹ:|0:ʹ) [ i:|u:|Cns:] :Cx _ BetweenStemAndConsGrade %^C2CC: ;
+           Vow:  (ʹ:|0:ʹ) [ i:|u:|Cns:] :Cx _ Vow: Cns: PenBetweenStemAndConsGrade %^PenC2CC: ;
+           where Cx in (b p v) ;
 
 
 "Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:n"
@@ -1731,8 +1750,11 @@ Rules
 
 "Consonant lengthening 0:đ"
 !! __@RULENAME@__ - čââʹđ+N+Sg+Gen: čâđđam
- 0:đ <=>  2ShortVow  (ʹ:)  đ _ BetweenStemAndConsGrade %^C2CC: ;
-         2ShortVow  (ʹ:)  đ _ Vow: Cns  PenBetweenStemAndConsGrade %^PenC2CC: ;
+ 0:đ <=> Vow:  (ʹ:)  đ _ BetweenStemAndConsGrade %^C2CC: ;
+!!čââʹđ+N+Sg+Ill: __heart/sydän__
+!€# čââʹđ0%^VV2V%^PALNo%^C2CC%>ma
+!€0 č0â0đđ0000ma
+         Vow:  (ʹ:)  đ _ Vow: Cns  PenBetweenStemAndConsGrade %^PenC2CC: ;
 
 
 "Consonant lengthening 0:l"
