@@ -406,7 +406,7 @@
 
         <p idNo="N5">kanidʹo</p>
         <tg xml:lang="sms">
-          <t pos="A" var="oʹdinak ~">oʹdinakai</t>
+          <variants_t><t pos="A">oʹdinakai</t><t pos="A">oʹdinak</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -419,7 +419,7 @@
 
         <p idNo="N5">kanidʹo</p>
         <tg xml:lang="sms">
-          <t pos="A" var="oʹdinak ~">oʹdinakai</t>
+          <variants_t><t pos="A">oʹdinakai</t><t pos="A">oʹdinak</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -1424,7 +1424,9 @@
   </e>
   <e>
     <lg>
-      <l pos="A" syn="(lentoasema)">asema</l>
+      <l pos="A" >asema</l>
+    <variants><l_syn>lentoasema</l_syn>
+    </variants>
     </lg>      <content>
         <p idNo="1"/>
 
@@ -1437,7 +1439,39 @@
   </e>
   <e>
     <lg>
-      <l pos="A" syn="(linja-autoasema)">asema</l>
+      <l pos="A" >lentoasema</l>
+    <variants><l_syn>asema</l_syn>
+    </variants>
+    </lg>      <content>
+        <p idNo="1"/>
+
+        <p idNo="N5">ǩǩʹiäpmâvviesnalpraj</p>
+        <tg xml:lang="sms">
+          <t pos="N" infl="(-pääiʹǩ, -päikka)">jarplanseivvâmpäiʹǩǩ</t>
+        </tg>
+        <p idNo="17">1.113</p>
+      </content>
+  </e>
+  <e>
+    <lg>
+      <l pos="A" >asema</l>
+    <variants><l_syn>linja-autoasema</l_syn>
+    </variants>
+    </lg>      <content>
+        <p idNo="1">943</p>
+
+        <p idNo="N5">ǩǩʹiäpmetsråssub</p>
+        <tg xml:lang="sms">
+          <t pos="N" infl="(-pääiʹǩ, -päikka)">bussårstempäiʹǩǩ</t>
+        </tg>
+        <p idNo="17">1.113</p>
+      </content>
+  </e>
+  <e>
+    <lg>
+      <l pos="A" >linja-autoasema</l>
+    <variants><l_syn>asema</l_syn>
+    </variants>
     </lg>      <content>
         <p idNo="1">943</p>
 
@@ -1924,7 +1958,7 @@
 
         <p idNo="N5">iavää</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#ääv-)">äävai</t>
+          <variants_t><t pos="A" >äävai</t><t pos="Prefix" pointer="A::äävai">ääv-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -1937,7 +1971,7 @@
 
         <p idNo="N5">savää</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#ääv-)">äävas</t>
+          <variants_t><t pos="A" >äävas</t><t pos="Prefix" pointer="A::äävas">ääv-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -2015,7 +2049,24 @@
   </e>
   <e>
     <lg>
-      <l pos="A" syn="(heikko)">avuton</l>
+      <l pos="A" >avuton</l>
+    <variants><l_syn>heikko</l_syn>
+    </variants>
+    </lg>      <content>
+        <p idNo="1">1248</p>
+
+        <p idNo="N5">mʹetppʹää</p>
+        <tg xml:lang="sms">
+          <t attr="(#ääʹppteʹmes)" infl="(-teeʹm, -temˈma)" pos="A">ääʹppteʹm</t>
+        </tg>
+        <p idNo="17">650</p>
+      </content>
+  </e>
+  <e>
+    <lg>
+      <l pos="A" >heikko</l>
+    <variants><l_syn>avuton</l_syn>
+    </variants>
     </lg>      <content>
         <p idNo="1">1248</p>
 
@@ -2787,7 +2838,7 @@
 
         <p idNo="N5">sõmdʹuoo</p>
         <tg xml:lang="sms">
-          <t pos="A" var="oouʹdmõs ~">õõuʹdmõs</t>
+          <variants_t><t pos="A">õõuʹdmõs</t><t pos="A">oouʹdmõs</t></variants_t>
           <t pos="A" exmp="(attr.)">vuõss</t>
         </tg>
         <p idNo="17">400</p>
@@ -3265,7 +3316,7 @@
 
         <p idNo="N5">iađååp</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#pååđ-)">pååđai</t>
+          <variants_t><t pos="A" >pååđai</t><t pos="Prefix" pointer="A::pååđai">pååđ-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -3551,7 +3602,7 @@
 
         <p idNo="N5">sõmdʹuoo</p>
         <tg xml:lang="sms">
-          <t infl="(-mõõzz, -mõʹsse)" var="oouʹdmõs ~">õõuʹdmõs</t>
+          <variants_t><t infl="(-mõõzz, -mõʹsse)">õõuʹdmõs</t><t infl="(-mõõzz, -mõʹsse)">oouʹdmõs</t></variants_t>
         </tg>
         <p idNo="17">400</p>
       </content>
@@ -4541,7 +4592,7 @@
 
         <p idNo="N5">sejeejmmʹut</p>
         <tg xml:lang="sms">
-          <t pos="A" var="tuʹmmjeejes ~">tuʹmmjeeʹes</t>
+          <variants_t><t pos="A">tuʹmmjeeʹes</t><t pos="A">tuʹmmjeejes</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -5325,7 +5376,7 @@
 
         <p idNo="N5">sõtuaal</p>
         <tg xml:lang="sms">
-          <t>laautõs ~</t>
+          <t>laautõs</t>
         </tg>
         <p idNo="17">400</p>
       </content>
@@ -5621,7 +5672,7 @@
 
         <p idNo="N5">sõlshhäs</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#sähss-)">sähhslõs</t>
+          <variants_t><t pos="A" >sähhslõs</t><t pos="Prefix" pointer="A::sähhslõs">sähss-</t></variants_t>
         </tg>
         <p idNo="17">400</p>
       </content>
@@ -6521,7 +6572,7 @@
 
         <p idNo="N5">semʹäet</p>
         <tg xml:lang="sms">
-          <t dial="(N)" infl="(teämmaz, teämmsa)">teäʹmes </t>
+          <t dial="(N)" infl="(teämmaz, teämmsa)">teäʹmes</t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -9276,7 +9327,7 @@
 
         <p idNo="N5">iađååp</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#pååđ-)">pååđai</t>
+          <variants_t><t pos="A" >pååđai</t><t pos="Prefix" pointer="A::pååđai">pååđ-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -9305,7 +9356,7 @@
 
         <p idNo="N5">iađååp</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#pååđ-)">pååđai</t>
+          <variants_t><t pos="A" >pååđai</t><t pos="Prefix" pointer="A::pååđai">pååđ-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -9412,7 +9463,7 @@
 
         <p idNo="N5">baruuš</p>
         <tg xml:lang="sms">
-          <t infl="(=)" var="šuurab (=, šuurba) ~ šoorab (=) ~">šõõrab</t>
+          <variants_t><t infl="(=)">šõõrab</t><t infl="(=)">šuurab (=, šuurba)</t><t infl="(=)">šoorab (=)</t></variants_t>
         </tg>
         <p idNo="17">900</p>
       </content>
@@ -10234,7 +10285,7 @@
 
         <p idNo="N5">iššåur</p>
         <tg xml:lang="sms">
-          <t pos="A" attr="(#rueʹššes)" var="ruåšši ~">ruåššâd</t>
+          <variants_t><t pos="A" attr="(#rueʹššes)">ruåššâd</t><t pos="A" attr="(#rueʹššes)">ruåšši</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -10747,7 +10798,7 @@
 
         <p idNo="N5">sâǥrõõt</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#tõõrǥ-)">tõõrǥâs</t>
+          <variants_t><t pos="A" >tõõrǥâs</t><t pos="Prefix" pointer="A::tõõrǥâs">tõõrǥ-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -10763,7 +10814,7 @@
 
         <p idNo="N5">sâǥrõõt</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#tâârǥ-)">tõõrǥâs</t>
+          <variants_t><t pos="A" >tõõrǥâs</t><t pos="Prefix" pointer="A::tõõrǥâs">tâârǥ-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -11858,7 +11909,7 @@
 
         <p idNo="N5">sejeetlõõp</p>
         <tg xml:lang="sms">
-          <t pos="A" var="põõlteejes ~">põõlteeʼes</t>
+          <variants_t><t pos="A">põõlteeʼes</t><t pos="A">põõlteejes</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -12259,7 +12310,7 @@
 
         <p idNo="N5">iaččrok</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#kuʹrčč-)">korččai</t>
+          <variants_t><t pos="A" >korččai</t><t pos="Prefix" pointer="A::korččai">kuʹrčč-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -13024,7 +13075,7 @@
 
         <p idNo="N5">sõmuččom</p>
         <tg xml:lang="sms">
-          <t infl="(-mõõzz, -mõʹsse)" var="moččumus ~">moččumõs</t>
+          <variants_t><t infl="(-mõõzz, -mõʹsse)">moččumõs</t><t infl="(-mõõzz, -mõʹsse)">moččumus</t></variants_t>
         </tg>
         <p idNo="17">400</p>
       </content>
@@ -13076,7 +13127,7 @@
 
         <p idNo="N5">iallev</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#veʹll-)">vellai</t>
+          <variants_t><t pos="A" >vellai</t><t pos="Prefix" pointer="A::vellai">veʹll-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -14416,7 +14467,7 @@
         <p idNo="N5">bblʹep</p>
         <tg xml:lang="sms">
           <t pos="A" attr="(#peeʹlbes)">peʹlbb</t>
-          <t pos="A" Prefix="(#peʹlbb-)">pelbbai</t>
+          <variants_t><t pos="A" >pelbbai</t><t pos="Prefix" pointer="A::pelbbai">peʹlbb-</t></variants_t>
         </tg>
         <p idNo="17">3.11</p>
       </content>
@@ -16034,7 +16085,7 @@
 
         <p idNo="N5">arooš</p>
         <tg xml:lang="sms">
-          <t pos="A" var="šoora ~">šõõra</t>
+          <variants_t><t pos="A">šõõra</t><t pos="A">šoora</t></variants_t>
         </tg>
         <p idNo="17">1.4</p>
       </content>
@@ -16300,7 +16351,7 @@
 
         <p idNo="N5">žasllõiǩmʹääs)ttrõun(</p>
         <tg xml:lang="sms">
-          <t infl="(-sa, -siʹžže)" var="sääʹmǩiõllsaž (-sa, -siʹžže)">nuõrttsääʹmǩiõllsaž</t>
+          <variants_t><t infl="(-sa, -siʹžže)">nuõrttsääʹmǩiõllsaž</t><t infl="(-sa, -siʹžže)">sääʹmǩiõllsaž (-sa, -siʹžže)</t></variants_t>
         </tg>
         <p idNo="17">1.26</p>
       </content>
@@ -17373,7 +17424,7 @@
 
         <p idNo="N5">seǩšʹååk</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#kåʹšǩǩ-)">kååʹšǩes</t>
+          <variants_t><t pos="A" >kååʹšǩes</t><t pos="Prefix" pointer="A::kååʹšǩes">kåʹšǩǩ-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -17712,7 +17763,7 @@
 
         <p idNo="N5">iarrʹuâk</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#kâuʹrr-)">kâuʹrrai</t>
+          <variants_t><t pos="A" >kâuʹrrai</t><t pos="Prefix" pointer="A::kâuʹrrai">kâuʹrr-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -18350,7 +18401,7 @@
 
         <p idNo="N5">iammro</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#uʹrmm-)">ormmai</t>
+          <variants_t><t pos="A" >ormmai</t><t pos="Prefix" pointer="A::ormmai">uʹrmm-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -18998,7 +19049,7 @@
 
         <p idNo="N5">sâmuõõk</p>
         <tg xml:lang="sms">
-          <t pos="A" attr="(#kõlmm)" var="kõõumâs (#kõumm) ~"> kõõlmâs</t>
+          <variants_t><t pos="A" attr="(#kõlmm)"> kõõlmâs</t><t pos="A" attr="(#kõlmm)">kõõumâs (#kõumm)</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -19914,7 +19965,7 @@
 
         <p idNo="N5">iannrokš</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#škuʹrnn-)">škornnai</t>
+          <variants_t><t pos="A" >škornnai</t><t pos="Prefix" pointer="A::škornnai">škuʹrnn-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -20940,7 +20991,7 @@
 
         <p idNo="N5">ialläv</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#väʹll-)" attr="(vällas ~ vaʹlles)">vällai</t>
+          <variants_t><t pos="A"  attr="(vällas ~ vaʹlles)">vällai</t><t pos="Prefix" pointer="A::vällai">väʹll-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -21037,7 +21088,7 @@
 
         <p idNo="N5">sõlshhäs</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#sähss-)">sähhslõs</t>
+          <variants_t><t pos="A" >sähhslõs</t><t pos="Prefix" pointer="A::sähhslõs">sähss-</t></variants_t>
         </tg>
         <p idNo="17">400</p>
       </content>
@@ -21875,7 +21926,7 @@
 
         <p idNo="N5">iajllʹâk</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#kaʹllj-)">kâʹlljai</t>
+          <variants_t><t pos="A" >kâʹlljai</t><t pos="Prefix" pointer="A::kâʹlljai">kaʹllj-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -24527,7 +24578,7 @@
 
         <p idNo="N5">seksååk</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#kåʹšǩǩ-)">kååʹšǩes</t>
+          <variants_t><t pos="A" >kååʹšǩes</t><t pos="Prefix" pointer="A::kååʹšǩes">kåʹšǩǩ-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -24956,7 +25007,7 @@
 
         <p idNo="N5">makåm</p>
         <tg xml:lang="sms">
-          <t pos="A" var="måkam ~">måkkam</t>
+          <variants_t><t pos="A">måkkam</t><t pos="A">måkam</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -25130,7 +25181,7 @@
 
         <p idNo="N5">makån</p>
         <tg xml:lang="sms">
-          <t pos="A" var="nåkam ~">nåkkam</t>
+          <variants_t><t pos="A">nåkkam</t><t pos="A">nåkam</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -27269,7 +27320,7 @@
 
         <p idNo="N5">iarrbok</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#kuʹbrr-)">kobrrai</t>
+          <variants_t><t pos="A" >kobrrai</t><t pos="Prefix" pointer="A::kobrrai">kuʹbrr-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -27419,7 +27470,7 @@
 
         <p idNo="N5">senʹääv</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#vääʹnn-)" infl="(vännaz, vännsa)">vääʹnes</t>
+          <variants_t><t pos="A"  infl="(vännaz, vännsa)">vääʹnes</t><t pos="Prefix" pointer="A::vääʹnes">vääʹnn-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -28155,7 +28206,7 @@
 
         <p idNo="N5">ǩendrʹep</p>
         <tg xml:lang="sms">
-          <t pos="N" infl="(-neeʹǩǩ, perdnekka)" var="peʹrdneǩ ~">peeʹredneǩ</t>
+          <variants_t><t pos="N" infl="(-neeʹǩǩ, perdnekka)">peeʹredneǩ</t><t pos="N" infl="(-neeʹǩǩ, perdnekka)">peʹrdneǩ</t></variants_t>
         </tg>
         <p idNo="17">1.22</p>
       </content>
@@ -30281,7 +30332,7 @@
 
         <p idNo="N5">bbʹäus)mammâep(</p>
         <tg xml:lang="sms">
-          <t infl="(-sueʹbb, -suäbba)" var="suäʹbb (-sueʹbb, -suäbba)">peâmmamsuäʹbb</t>
+          <variants_t><t infl="(-sueʹbb, -suäbba)">peâmmamsuäʹbb</t><t infl="(-sueʹbb, -suäbba)">suäʹbb (-sueʹbb, -suäbba)</t></variants_t>
         </tg>
         <p idNo="17">1.113</p>
       </content>
@@ -31099,7 +31150,7 @@
 
         <p idNo="N5">ddiok</p>
         <tg xml:lang="sms">
-          <t dial="(P)" infl="(kooid, koiddu)">koidd </t>
+          <t dial="(P)" infl="(kooid, koiddu)">koidd</t>
         </tg>
         <p idNo="17">1,112</p>
       </content>
@@ -31454,7 +31505,7 @@
 
         <p idNo="N5">sejeetlõõp</p>
         <tg xml:lang="sms">
-          <t pos="A" var="põõlteejes ~">põõlteeʼes</t>
+          <variants_t><t pos="A">põõlteeʼes</t><t pos="A">põõlteejes</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -32418,7 +32469,7 @@
 
         <p idNo="N5">deŋŋʹues</p>
         <tg xml:lang="sms">
-          <t pos="A" attr="(#seuʹnnjes)" var="seuʹŋŋed (#seuʹŋŋes) ~">seuʹnnjed</t>
+          <variants_t><t pos="A" attr="(#seuʹnnjes)">seuʹnnjed</t><t pos="A" attr="(#seuʹnnjes)">seuʹŋŋed (#seuʹŋŋes)</t></variants_t>
         </tg>
         <p idNo="17">1.25</p>
       </content>
@@ -33268,7 +33319,7 @@
 
         <p idNo="N5">sumusttop</p>
         <tg xml:lang="sms">
-          <t pos="A" var="pottsumus ~">pottsumõs</t>
+          <variants_t><t pos="A">pottsumõs</t><t pos="A">pottsumus</t></variants_t>
         </tg>
         <p idNo="17">400</p>
       </content>
@@ -34477,7 +34528,7 @@
 
         <p idNo="N5">illuip</p>
         <tg xml:lang="sms">
-          <t pos="A" attr="(#piõuʹlles)" var="piulli ~">piõulli</t>
+          <variants_t><t pos="A" attr="(#piõuʹlles)">piõulli</t><t pos="A" attr="(#piõuʹlles)">piulli</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -35718,7 +35769,24 @@
   </e>
   <e>
     <lg>
-      <l pos="A" syn="(kesy)">rauhallinen</l>
+      <l pos="A" >rauhallinen</l>
+    <variants><l_syn>kesy</l_syn>
+    </variants>
+    </lg>      <content>
+        <p idNo="1">19949</p>
+
+        <p idNo="N5">jjʹåål</p>
+        <tg xml:lang="sms">
+          <t pos="A" attr="(#lååʹjes)">lååʹjj</t>
+        </tg>
+        <p idNo="17">3.11</p>
+      </content>
+  </e>
+  <e>
+    <lg>
+      <l pos="A" >kesy</l>
+    <variants><l_syn>rauhallinen</l_syn>
+    </variants>
     </lg>      <content>
         <p idNo="1">19949</p>
 
@@ -37029,7 +37097,7 @@
 
         <p idNo="N5">iaššråm</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#måršš-)">mårššai</t>
+          <variants_t><t pos="A" >mårššai</t><t pos="Prefix" pointer="A::mårššai">måršš-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -37579,7 +37647,7 @@
 
         <p idNo="N5">dâkkčur</p>
         <tg xml:lang="sms">
-          <t pos="A" attr="(#ruʹčǩǩes)" var="ručkkâd ~">ruʹčkkâd</t>
+          <variants_t><t pos="A" attr="(#ruʹčǩǩes)">ruʹčkkâd</t><t pos="A" attr="(#ruʹčǩǩes)">ručkkâd</t></variants_t>
         </tg>
         <p idNo="N13">väri</p>
         <p idNo="17">1.25</p>
@@ -38510,7 +38578,7 @@
 
         <p idNo="N5">ippʹur</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#rupp-)">ruʹppi</t>
+          <variants_t><t pos="A" >ruʹppi</t><t pos="Prefix" pointer="A::ruʹppi">rupp-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -38700,7 +38768,7 @@
 
         <p idNo="N5">iarrbâ</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#âʹbrr-)">âbrrai</t>
+          <variants_t><t pos="A" >âbrrai</t><t pos="Prefix" pointer="A::âbrrai">âʹbrr-</t></variants_t>
         </tg>
         <p idNo="N13">sää</p>
         <p idNo="17">1.2</p>
@@ -38740,7 +38808,24 @@
   </e>
   <e>
     <lg>
-      <l pos="A" syn="(kivistävä)">sattuva</l>
+      <l pos="A" >sattuva</l>
+    <variants><l_syn>kivistävä</l_syn>
+    </variants>
+    </lg>      <content>
+        <p idNo="1">21539</p>
+
+        <p idNo="N5">ieeccʹeuč</p>
+        <tg xml:lang="sms">
+          <t infl="(=, -ceeja)">čueʹcceei</t>
+        </tg>
+        <p idNo="17">700</p>
+      </content>
+  </e>
+  <e>
+    <lg>
+      <l pos="A" >kivistävä</l>
+    <variants><l_syn>sattuva</l_syn>
+    </variants>
     </lg>      <content>
         <p idNo="1">21539</p>
 
@@ -39149,7 +39234,7 @@
 
         <p idNo="N5">makån</p>
         <tg xml:lang="sms">
-          <t infl="(=, nåkkma)" var="nåkam (=) ~">nåkkam</t>
+          <variants_t><t infl="(=, nåkkma)">nåkkam</t><t infl="(=, nåkkma)">nåkam (=)</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -39340,7 +39425,7 @@
 
         <p idNo="N5">ittʹeup</p>
         <tg xml:lang="sms">
-          <t infl="(puõʹđi, puõttja)" var="pueʹtti ~">puõʹtti</t>
+          <variants_t><t infl="(puõʹđi, puõttja)">puõʹtti</t><t infl="(puõʹđi, puõttja)">pueʹtti</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -39366,7 +39451,7 @@
 
         <p idNo="N5">ittʹõup</p>
         <tg xml:lang="sms">
-          <t pos="A" var="puõʹtti ~">pueʹtti</t>
+          <variants_t><t pos="A">pueʹtti</t><t pos="A">puõʹtti</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -40146,7 +40231,7 @@
 
         <p idNo="N5">kelaa</p>
         <tg xml:lang="sms">
-          <t pos="A" var="ââʹleǩ ~">ââʹliǩ</t>
+          <variants_t><t pos="A">ââʹliǩ</t><t pos="A">ââʹleǩ</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -40159,7 +40244,7 @@
 
         <p idNo="N5">ǩelʹââ</p>
         <tg xml:lang="sms">
-          <t pos="A" var="ââʹleǩ ~">ââʹliǩ, seenai</t>
+          <variants_t><t pos="A">ââʹliǩ, seenai</t><t pos="A">ââʹleǩ</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -41064,7 +41149,7 @@
 
         <p idNo="N5">sumulttõiš</p>
         <tg xml:lang="sms">
-          <t pos="A" var="šiõttlumus ~">šiõttlõmâs</t>
+          <variants_t><t pos="A">šiõttlõmâs</t><t pos="A">šiõttlumus</t></variants_t>
         </tg>
         <p idNo="17">400</p>
       </content>
@@ -41806,7 +41891,7 @@
 
         <p idNo="N5">sumusjjõus</p>
         <tg xml:lang="sms">
-          <t pos="A" var="suõjjsumus ~">suõjjsõmâs</t>
+          <variants_t><t pos="A">suõjjsõmâs</t><t pos="A">suõjjsumus</t></variants_t>
         </tg>
         <p idNo="17">400</p>
       </content>
@@ -42252,7 +42337,7 @@
 
         <p idNo="N5">baruuš</p>
         <tg xml:lang="sms">
-          <t infl="(=)" var="šuurab (=) ~ šoorab (=) ~">šõõrab</t>
+          <variants_t><t infl="(=)">šõõrab</t><t infl="(=)">šuurab (=)</t><t infl="(=)">šoorab (=)</t></variants_t>
         </tg>
         <p idNo="17">900</p>
       </content>
@@ -42265,7 +42350,7 @@
 
         <p idNo="N5">baruuš</p>
         <tg xml:lang="sms">
-          <t pos="A" var="šuurab ~ šoorab ~">šõõrab</t>
+          <variants_t><t pos="A">šõõrab</t><t pos="A">šuurab</t><t pos="A">šoorab</t></variants_t>
         </tg>
         <p idNo="17">900</p>
       </content>
@@ -42323,7 +42408,7 @@
 
         <p idNo="N5">sõmruuš</p>
         <tg xml:lang="sms">
-          <t pos="A" var="šuurmõs ~ šoormõs ~">šõõrmõs</t>
+          <variants_t><t pos="A">šõõrmõs</t><t pos="A">šuurmõs</t><t pos="A">šoormõs</t></variants_t>
         </tg>
         <p idNo="17">400</p>
       </content>
@@ -42592,7 +42677,7 @@
 
         <p idNo="N5">saksååm</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#mååsk-)">mååskas</t>
+          <variants_t><t pos="A" >mååskas</t><t pos="Prefix" pointer="A::mååskas">mååsk-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -43288,7 +43373,7 @@
 
         <p idNo="N5">mummaat</p>
         <tg xml:lang="sms">
-          <t pos="A" var="taammum ~">tammum</t>
+          <variants_t><t pos="A">tammum</t><t pos="A">taammum</t></variants_t>
         </tg>
         <p idNo="17">600</p>
       </content>
@@ -43408,7 +43493,7 @@
 
         <p idNo="N5">mmʹeiv</p>
         <tg xml:lang="sms">
-          <t pos="A" var="vieʹmm-, lommum ~">luõmmum</t>
+          <variants_t><t pos="A">luõmmum</t><t pos="A">vieʹmm-, lommum</t></variants_t>
         </tg>
         <p idNo="17">600</p>
       </content>
@@ -43469,7 +43554,7 @@
 
         <p idNo="N5">sâǥrõõt</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#tâârǥ-)">tõõrǥâs</t>
+          <variants_t><t pos="A" >tõõrǥâs</t><t pos="Prefix" pointer="A::tõõrǥâs">tâârǥ-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -43854,7 +43939,7 @@
 
         <p idNo="N5">iaggâut</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#tueʹǧǧ-)">tuâggai</t>
+          <variants_t><t pos="A" >tuâggai</t><t pos="Prefix" pointer="A::tuâggai">tueʹǧǧ-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -45087,7 +45172,7 @@
 
         <p idNo="N5">iaččroks</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#skuʹrčč-)" infl="(=, skorččja)">skorččai</t>
+          <variants_t><t pos="A"  infl="(=, skorččja)">skorččai</t><t pos="Prefix" pointer="A::skorččai">skuʹrčč-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -45582,7 +45667,7 @@
 
         <p idNo="N5">žaldlääv)mej(mmiåut</p>
         <tg xml:lang="sms">
-          <t infl="(-la, -liʹžže)" var="tuåimmvääldlaž (-la, -liʹžže)">tuåimmjemvääldlaž</t>
+          <variants_t><t infl="(-la, -liʹžže)">tuåimmjemvääldlaž</t><t infl="(-la, -liʹžže)">tuåimmvääldlaž (-la, -liʹžže)</t></variants_t>
         </tg>
         <p idNo="17">1.26</p>
       </content>
@@ -45647,7 +45732,7 @@
 
         <p idNo="N5">mešllanbbʹuun</p>
         <tg xml:lang="sms">
-          <t infl="(-šeeʹm, -šemˈma)" var="nuuʹbbnallšem ~">nuʹbnallšem</t>
+          <variants_t><t infl="(-šeeʹm, -šemˈma)">nuʹbnallšem</t><t infl="(-šeeʹm, -šemˈma)">nuuʹbbnallšem</t></variants_t>
         </tg>
         <p idNo="17">1.22</p>
       </content>
@@ -45780,7 +45865,7 @@
 
         <p idNo="N5">sõtuaal</p>
         <tg xml:lang="sms">
-          <t>laautõs ~</t>
+          <t>laautõs</t>
         </tg>
         <p idNo="17">400</p>
       </content>
@@ -46394,7 +46479,7 @@
 
         <p idNo="N5">ittʹeup</p>
         <tg xml:lang="sms">
-          <t pos="A" var="pueʹtti ~">puõʹtti</t>
+          <variants_t><t pos="A">puõʹtti</t><t pos="A">pueʹtti</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -46647,7 +46732,7 @@
 
         <p idNo="N5">sâkkaaj</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#jâkk-)">jaakkâs</t>
+          <variants_t><t pos="A" >jaakkâs</t><t pos="Prefix" pointer="A::jaakkâs">jâkk-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -46971,7 +47056,7 @@
 
         <p idNo="N5">ššʹut</p>
         <tg xml:lang="sms">
-          <t pos="A" var="tuʹšš ~">tuʹššen</t>
+          <variants_t><t pos="A">tuʹššen</t><t pos="A">tuʹšš</t></variants_t>
         </tg>
         <p idNo="17">1.113</p>
       </content>
@@ -47408,7 +47493,7 @@
 
         <p idNo="N5">ssut</p>
         <tg xml:lang="sms">
-          <t pos="A" var="tuʹšš, tuʹšš ~">tuʹššen</t>
+          <variants_t><t pos="A">tuʹššen</t><t pos="A">tuʹšš, tuʹšš</t></variants_t>
         </tg>
         <p idNo="17">1.113</p>
       </content>
@@ -47747,7 +47832,7 @@
 
         <p idNo="N5">makän</p>
         <tg xml:lang="sms">
-          <t infl="(=, näkkma)" var="näkam (=, näkkma) ~">näkkam</t>
+          <variants_t><t infl="(=, näkkma)">näkkam</t><t infl="(=, näkkma)">näkam (=, näkkma)</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -47760,7 +47845,7 @@
 
         <p idNo="N5">medduän</p>
         <tg xml:lang="sms">
-          <t pos="A" var="näʹbddem ~">näuʹddem</t>
+          <variants_t><t pos="A">näuʹddem</t><t pos="A">näʹbddem</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -47869,7 +47954,7 @@
 
         <p idNo="N5">sõmnžääv</p>
         <tg xml:lang="sms">
-          <t pos="A" var="vääžnmõs ~">vääžnʼjumus</t>
+          <variants_t><t pos="A">vääžnʼjumus</t><t pos="A">vääžnmõs</t></variants_t>
         </tg>
         <p idNo="17">400</p>
       </content>
@@ -48189,7 +48274,7 @@
 
         <p idNo="N5">iakkråt</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#tåʹrǩǩ-)">tårkkai</t>
+          <variants_t><t pos="A" >tårkkai</t><t pos="Prefix" pointer="A::tårkkai">tåʹrǩǩ-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -48537,7 +48622,7 @@
 
         <p idNo="N5">saksååm</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#mååsk-)">mååskas</t>
+          <variants_t><t pos="A" >mååskas</t><t pos="Prefix" pointer="A::mååskas">mååsk-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -48629,7 +48714,7 @@
         <p idNo="N5">sâbboo</p>
         <tg xml:lang="sms">
           <t pos="A" attr="(#obb)">oobbâs</t>
-          <t pos="A" Prefix="(#mååsk-)">mååskas</t>
+          <variants_t><t pos="A" >mååskas</t><t pos="Prefix" pointer="A::mååskas">mååsk-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -49068,7 +49153,7 @@
 
         <p idNo="N5">žâvlkså</p>
         <tg xml:lang="sms">
-          <t pos="A" var="åsklvâž ~">ååsklvâž</t>
+          <variants_t><t pos="A">ååsklvâž</t><t pos="A">åsklvâž</t></variants_t>
         </tg>
         <p idNo="17">1.26</p>
       </content>
@@ -50109,7 +50194,7 @@
 
         <p idNo="N5">iǩǩrʹak</p>
         <tg xml:lang="sms">
-          <t pos="A" attr="(#kaʹrǩǩes)" var="kaʹrǩǩi ~">karkkâd</t>
+          <variants_t><t pos="A" attr="(#kaʹrǩǩes)">karkkâd</t><t pos="A" attr="(#kaʹrǩǩes)">kaʹrǩǩi</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -50777,7 +50862,7 @@
 
         <p idNo="N5">ianštot</p>
         <tg xml:lang="sms">
-          <t pos="A" var="totšnai ~">tõtšnai</t>
+          <variants_t><t pos="A">tõtšnai</t><t pos="A">totšnai</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -51017,7 +51102,7 @@
 
         <p idNo="N5">iaddläv</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#väʹldd-)">välddai</t>
+          <variants_t><t pos="A" >välddai</t><t pos="Prefix" pointer="A::välddai">väʹldd-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -51463,7 +51548,7 @@
 
         <p idNo="N5">sâmõsrräup</p>
         <tg xml:lang="sms">
-          <t pos="A" var="puärrsõmâs ~">puärrsummus</t>
+          <variants_t><t pos="A">puärrsummus</t><t pos="A">puärrsõmâs</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -52028,7 +52113,7 @@
 
         <p idNo="N5">ǯǯʹič</p>
         <tg xml:lang="sms">
-          <t pos="A" var="čiʹǯǯ- ~">čiʹǯs-</t>
+          <variants_t><t pos="A">čiʹǯs-</t><t pos="A">čiʹǯǯ-</t></variants_t>
         </tg>
         <p idNo="17">1000</p>
       </content>
@@ -52216,7 +52301,7 @@
 
         <p idNo="N5">maddõs</p>
         <tg xml:lang="sms">
-          <t pos="A" var="âiʹdde- ~ eiʹdde- ~">emanšõddâm</t>
+          <variants_t><t pos="A">emanšõddâm</t><t pos="A">âiʹdde-</t><t pos="A">eiʹdde-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -52297,7 +52382,7 @@
 
         <p idNo="N5">šalläej</p>
         <tg xml:lang="sms">
-          <t pos="A" var="jeällaš ~" attr="(#jeällšõs ~ jällšõs)">jällaš</t>
+          <variants_t><t pos="A" attr="(#jeällšõs ~ jällšõs)">jällaš</t><t pos="A" attr="(#jeällšõs ~ jällšõs)">jeällaš</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -53570,7 +53655,7 @@
 
         <p idNo="N5">iammräej</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#jeäʹrmm-)" attr="(#jieʹrmmes)">jeärmmai</t>
+          <variants_t><t pos="A"  attr="(#jieʹrmmes)">jeärmmai</t><t pos="Prefix" pointer="A::jeärmmai">jeäʹrmm-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -53832,7 +53917,7 @@
 
         <p idNo="N5">iaddläv</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#väʹldd-)">välddai</t>
+          <variants_t><t pos="A" >välddai</t><t pos="Prefix" pointer="A::välddai">väʹldd-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -54015,7 +54100,7 @@
         <p idNo="N5">bblʹep</p>
         <tg xml:lang="sms">
           <t pos="A" attr="(#peeʹlbes)">peʹlbb</t>
-          <t pos="A" Prefix="(#peʹlbb-)">pelbbai</t>
+          <variants_t><t pos="A" >pelbbai</t><t pos="Prefix" pointer="A::pelbbai">peʹlbb-</t></variants_t>
         </tg>
         <p idNo="17">3.11</p>
       </content>
@@ -54031,7 +54116,7 @@
 
         <p idNo="N5">iannev</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#veʹnn-)">vennai</t>
+          <variants_t><t pos="A" >vennai</t><t pos="Prefix" pointer="A::vennai">veʹnn-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -54665,7 +54750,7 @@
 
         <p idNo="N5">senʹääv</p>
         <tg xml:lang="sms">
-          <t infl="(vännaz, vännsa)" var="vääʹnes ~">väänas  #vääʹnn</t>
+          <variants_t><t infl="(vännaz, vännsa)">väänas  #vääʹnn</t><t infl="(vännaz, vännsa)">vääʹnes</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -54678,7 +54763,7 @@
 
         <p idNo="N5">zajncco</p>
         <tg xml:lang="sms">
-          <t pos="A" var="occnjaž ~">õccnjaž</t>
+          <variants_t><t pos="A">õccnjaž</t><t pos="A">occnjaž</t></variants_t>
         </tg>
         <p idNo="17">1.26</p>
       </content>
@@ -54691,7 +54776,7 @@
 
         <p idNo="N5">zakcoo</p>
         <tg xml:lang="sms">
-          <t pos="A" var="oocckaž ~">õõcckaž</t>
+          <variants_t><t pos="A">õõcckaž</t><t pos="A">oocckaž</t></variants_t>
         </tg>
         <p idNo="17">1.26</p>
       </content>
@@ -54704,7 +54789,7 @@
 
         <p idNo="N5">senʹääv</p>
         <tg xml:lang="sms">
-          <t infl="(vännaz, vännsa)" var="vääʹnes ~">väänas  #vääʹnn</t>
+          <variants_t><t infl="(vännaz, vännsa)">väänas  #vääʹnn</t><t infl="(vännaz, vännsa)">vääʹnes</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -54717,7 +54802,7 @@
 
         <p idNo="N5">senʹääv</p>
         <tg xml:lang="sms">
-          <t infl="(vännaz, vännsa)" var="vääʹnes ~">väänas</t>
+          <variants_t><t infl="(vännaz, vännsa)">väänas</t><t infl="(vännaz, vännsa)">vääʹnes</t></variants_t>
           <t pos="A">#vääʹnn</t>
         </tg>
         <p idNo="17">1.2</p>
@@ -54809,7 +54894,7 @@
 
         <p idNo="N5">dâkkrak</p>
         <tg xml:lang="sms">
-          <t pos="A" attr="(#kaʹrǩǩes)" var="karkkâd ~">kaʹrǩǩi</t>
+          <variants_t><t pos="A" attr="(#kaʹrǩǩes)">kaʹrǩǩi</t><t pos="A" attr="(#kaʹrǩǩes)">karkkâd</t></variants_t>
         </tg>
         <p idNo="17">1.25</p>
       </content>
@@ -56172,7 +56257,7 @@
 
         <p idNo="N5">iatoork</p>
         <tg xml:lang="sms">
-          <t pos="A" var="krootai ~">krõõtai</t>
+          <variants_t><t pos="A">krõõtai</t><t pos="A">krootai</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -56224,7 +56309,7 @@
 
         <p idNo="N5">iakkäš</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#šäʹǩǩ-)">šäkkai</t>
+          <variants_t><t pos="A" >šäkkai</t><t pos="Prefix" pointer="A::šäkkai">šäʹǩǩ-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
@@ -56276,7 +56361,7 @@
 
         <p idNo="N5">iammräej</p>
         <tg xml:lang="sms">
-          <t pos="A" Prefix="(#jeäʹrmm-)" attr="(#jieʹrmmes)">jeärmmai</t>
+          <variants_t><t pos="A"  attr="(#jieʹrmmes)">jeärmmai</t><t pos="Prefix" pointer="A::jeärmmai">jeäʹrmm-</t></variants_t>
         </tg>
         <p idNo="17">1.2</p>
       </content>
