@@ -48,7 +48,9 @@ Trigger symbols
  *  %^VOWRaise:0  e>i, ä>e 
  *  %^PenVOWRaise:0  e>i, ä>e
  *  %^PenVOWLower:0  i>e, õ>â, â>ä, u>o, o>å
- *  %^VOWBack:0	      Backing e>õ, e>â
+ *  %^VOWBack:0	      Backing e>õ, e>â vuäinn BUT vuõiʹni
+ *  %^PenVOWBack:0	      Backing e>õ, e>â vuäinn BUT vuõiʹni
+
  *  %^VOWFront:0	      Fronting
  *  %^PAL:0 %^PALNo:0 %^PALE:0 %^PALÄ:0 %^PALẸ:0    Palatalisation
  *  %^PenPAL:0 %^PenPALNo:0 %^PenPALE:0 %^PenPALÄ:0 %^PenPALẸ:0    Penultimate Palatalisation
@@ -68,6 +70,7 @@ CHARACTERISTIC BREAKDOWN 2015-02-17
  * %^XYYY2XY:0 	 Weakens Extra strong to weak consonant cluster
  * %^XYY2XY:0 	 Shortens consonant cluster
  * %^XY2XYY:0 	 Lengthens consonant cluster
+ * %^XY2XYYY:0 	 Lengthens consonant cluster
  * %^XYY2VY:0	 Consonant cluster to vowel and consonant sijdd:siid
  * %^XYY2VYY:0	 Consonant cluster to vowel and geminate uvdd:ouʹdd
  * %^KKK2GG:0	 Geminate weakening 
@@ -79,11 +82,24 @@ CHARACTERISTIC BREAKDOWN 2015-02-17
  * %^PenVV2V:0      Shortens vowel in penultimate syllable
  * %^PenV2VV:0      Lengthens vowel in penultimate syllable
  * %^PenCC2C:0      Shortens consonant in penultimate syllable
+ * %^PenCCC2C:0         Extra strong to weak consonant in penultimate syllable
+ * %^PenCCC2CC:0         Extra strong to strong consonant in penultimate syllable
  * %^PenCC2CCC:0      Extra Lengthens consonant in penultimate syllable
  * %^PenC2CC:0      Lengthens consonant in penultimate syllable
  * %^PenC2CCC:0 	 Lengthens consonant in penultimate syllable
  * %^PenXYY2VY:0	 Vhss:VVus in penultimate syllable
+ * %^PenXYY2VYY:0	 consonant cluster to Vowel and Geminate
  * %^PenVY2XYY:0	 VVus:Vhss in penultimate syllable
+ * %^PenXY2XYY:0	 
+ * %^PenXYY2XY:0	 
+ * %^PenXYYY2XYY:0	 Extra strong to strong consonant cluster
+ * %^PenXYYY2XY:0	 Extra strong to weak consonant cluster
+ * %^PenXYY2XYYY:0	 Extra Lengthens consonant cluster
+ * %^PenKKK2GG:0       Geminate weakening
+ * %^PenKK2GG:0        Geminate weakening jokk:jooǥǥ
+ * %^PenGG2KK:0        Geminate strengthening
+ * %^PenGG2KKK:0       Geminate extra strengthening čuâǥǥas:čuõkˈksa
+
 
  * %^J2I:0		 in tuâjj:tuâi
  * %^I2J:0		 in agent names
@@ -247,9 +263,12 @@ possible triggers before VOWLower and VOWRaise
  * PrecedeVOWLowerRaise = [([%^VOWSH:|%^VOWXSH:] %^CLong:|[%^PenV2VV:|%^VOWXL:] %^CShort:)] ;  
 }}}
 
-possible triggers between stem and PALNo and PAL
 
 possible triggers before PALE PALÄ
+
+possible triggers between stem and PALNo and PAL
+
+possible triggers between word end and consonant grade
 
 
 possible triggers between VowHeight and word end
@@ -257,7 +276,8 @@ possible triggers between VowHeight and word end
  * BetweenVowHeightAndMorph = [(%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) (X3:) ((%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:|%^PALNo:)] ;  
 }}}
 
-possible triggers between word end and consonant grade
+
+
 
 
 
@@ -376,6 +396,8 @@ __Even syllabic verbs I, diphthong raising beginning with e:i ä:â__ - deriving
 __Even syllabic verbs I, diphthong raising beginning with e:i ä:e__ 
 
 __Even syllabic verbs I, diphthong raising beginning with e:i ä:ẹ__ 
+
+__diphthong backing beginning with u ä:õ__
 
 
 __Even syllabic verbs I, diphthong raising beginning with ä:a u__ - deriving läullad > laullum
@@ -543,7 +565,7 @@ __s0õhss%^V2VV%^XYY2VY examples:__
 __sõõus000 examples:__
 
 __Relative vowel lengthening 0:Vx__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
-OnSetC _ ä  (ʹ:|0:ʹ) Cns:+ %^V2VV: (%^CC2C:) RBound ;
+OnSetC _ ä  (ʹ:|0:ʹ) Cns:+ %^V2VV: ([%^CC2C:|%^XYY2XY:]) RBound ;
 
 __0äldd%^V2VV%^CC2C examples:__
 
@@ -864,8 +886,8 @@ __Even syllabic verbs I, lgg>lǥ __ - vueʹlǧǧed+V+Ind+Prs+Sg2 => vuâlǥak
 
 
 __Odd syllabic nouns I, lǥ>lg__ - ǩeâlǥal+N+Sg+Gen: ǩeâlggal
-{{{
-}}}
+
+
 
 __even syllabic verbs I, 'lǧǧ>'lj __ - 
 
@@ -963,7 +985,7 @@ __Consonant X3 lengthening after diphthong in vertical line %ˈ __ - used in +N+
 
 !Removing X3 length mark
 __Removing Consonant X3 length mark after diphthong in vertical line %ˈ LEFT ARROW__ - deriving 
-{{{BetweenStemAndConsGrade %^C2CC:
+{{{BetweenStemAndConsGrade [%^C2CC:|%^XY2XYY:]
 }}}
 
 
