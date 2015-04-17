@@ -404,7 +404,7 @@ Rules
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
  å:0 <=>
  OnSetC _ å: (u) (ʹ:|0:ʹ) Cns: [ Cns:*|:Cns*]  %^VV2V:  ;
-         OnSetC _ å: (ʹ:|0:ʹ) Cns: (:Cns+|Cns:+) [Vow:|%{Â1%}:|%{A1%}:|%{E1%}:] [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^PenVV2V: ;
+         OnSetC _ å: (ʹ:|0:ʹ) Cns: (:Cns+|Cns:+) [Vow:|%{Â1%}:|%{A1%}:|%{E1%}:] [Cns:+ |n j|l m|s ǩ:|s t|š ǩ:|š m]  %^PenVV2V: ;
 !! sååbbar+N+Sg+Gen __meeting__
 !€# sååbbar%^PenVV2V
 !€0 s0åbbar0
@@ -1726,7 +1726,7 @@ Rules
 
 "Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m"
 !! __@RULENAME@__ - kåʹmrded+V+Imp+Sg2: kååʹmmerd 
- 0:m <=> Vow:Vow (ʹ:|0:ʹ)  m _ [%{E1%}:] Cns:+ PenBetweenStemAndConsGrade [%^PenC2CC:|%^PenXY2XYY:] [%^IMPSG2:|%^INDPRSSG3:] ;
+ 0:m <=> Vow:Vow (ʹ:|0:ʹ)  m _ Vow: Cns:+ PenBetweenStemAndConsGrade [%^PenC2CC:|%^PenXY2XYY:] [%^IMPSG2:|%^INDPRSSG3:] ;
         m _ BetweenStemAndConsGrade [%^C2CC:|%^XY2XYY:] ;
 
 !€# ooum0%^VV2V%^C2CCu
@@ -1747,8 +1747,9 @@ Rules
 
 "Consonant lengthening 0:Cx"
 !! __@RULENAME@__ - 
- 0:Cx <=>  Vow:  (ʹ:|0:ʹ) [ i:|u:|Cns:] :Cx _ BetweenStemAndConsGrade [%^C2CC:|%^XY2XYY:] ;
-           Vow:  (ʹ:|0:ʹ) [ i:|u:|Cns:] :Cx _ Vow: Cns: PenBetweenStemAndConsGrade [%^PenC2CC:|%^PenXY2XYY:] ;
+ 0:Cx <=>
+  Vow:  ( i:|u:) (ʹ:|0:ʹ) (Cns:) :Cx _ BetweenStemAndConsGrade [%^C2CC:|%^XY2XYY:] ;
+  Vow:  ( i:|u:) (ʹ:|0:ʹ) (Cns:) :Cx _ Vow: Cns:* PenBetweenStemAndConsGrade [%^PenC2CC:|%^PenXY2XYY:] ;
            where Cx in (b p v) ;
 
 
