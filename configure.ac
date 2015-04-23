@@ -215,6 +215,8 @@ AC_CONFIG_FILES([tools/shellscripts/usms-gt.sh], \
       [chmod a+x tools/shellscripts/usms-gt.sh])
 
 #### BEGIN: Add language-specific scripts below here: ####
+AC_CONFIG_FILES([test/src/morphology/generate-verb-lemmas.sh], \
+      [chmod a+x test/src/morphology/generate-verb-lemmas.sh])
 
 AC_CONFIG_FILES([test/src/morphology/test-verb-generation.sh], \
       [chmod a+x test/src/morphology/test-verb-generation.sh])
