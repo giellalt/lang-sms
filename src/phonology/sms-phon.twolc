@@ -74,6 +74,8 @@ Alphabet
  %^VOWRaise:0 !!= * @CODE@ e>i, ä>e 
  %^PenVOWRaise:0 !!= * @CODE@ e>i, ä>e
  %^PenVOWLower:0 !!= * @CODE@ i>e, õ>â, â>ä, u>o, o>å
+ %^LowerI2E:0	 !!= * @CODE@ this is for diphthong in mieʹlǩǩ:meâlkka
+ %^PenLowerI2E:0	 !!= * @CODE@ this is for diphthong in mieʹlǩǩ:meâlkka
  %^VOWBack:0	     !!= * @CODE@ Backing e>õ, e>â vuäinn BUT vuõiʹni
  %^PenVOWBack:0	     !!= * @CODE@ Backing e>õ, e>â vuäinn BUT vuõiʹni
 
@@ -311,13 +313,13 @@ PrecedeVOWLowerRaise = [([%^VOWSH:|%^VOWXSH:] %^CLong:|[%^PenV2VV:|%^VOWXL:] %^C
 BetweenStemAndHeight = [( %^VV2V: |%^V2VV:)] ;
 
 !! possible triggers before PALE PALÄ
-BetweenStemAndPALAllo = [ BetweenStemAndHeight (%^VOWLower:|%^VOWRaise:)] ;
+BetweenStemAndPALAllo = [ BetweenStemAndHeight (%^VOWLower:|%^VOWRaise:|%^LowerI2E:)] ;
 
 !! possible triggers between stem and PALNo and PAL
-BetweenStemAndPALNo = [ BetweenStemAndHeight [(%^VOWLower:|%^VOWRaise:) (%^PALÄ:|%^PALE:|%^PALẸ:)| %^VOWBack: ] ] ;
+BetweenStemAndPALNo = [ BetweenStemAndHeight [(%^VOWLower:|%^VOWRaise:|%^LowerI2E:) (%^PALÄ:|%^PALE:|%^PALẸ:)| %^VOWBack: ] ] ;
 
 !! possible triggers between word end and consonant grade
-BetweenStemAndConsGrade = [ BetweenStemAndHeight ((%^VOWRaise:|%^VOWLower:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:)| %^VOWBack: (%^PALNo:|%^PAL:) ) ] ;
+BetweenStemAndConsGrade = [ BetweenStemAndHeight ((%^VOWRaise:|%^VOWLower:|%^LowerI2E:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:)| %^VOWBack: (%^PALNo:|%^PAL:) ) ] ;
 
 
 !! possible triggers between VowHeight and word end
@@ -680,8 +682,10 @@ Rules
 ! juʹrdded > joordam
            OnSetC _ (u:|i:) (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] %^VOWLower: ;
            OnSetC _ ((ʹ:) (v:u|j:i)) (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] %^VOWLower: ;
-
-
+  OnSetC _ â: (ʹ:|0:ʹ) Cns: [Cns:* |:Cns*] %^LowerI2E: ;
+!!mieʹlǩǩ+N+Sg+Ill: __milk/maito__
+!€# miâlkk%^LowerI2E%>a
+!€0 meâlkk00a
 
 "Even syllabic verbs I, vowel lowering a:ä"
 !! __@RULENAME@__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
