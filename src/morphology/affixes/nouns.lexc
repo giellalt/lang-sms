@@ -1671,6 +1671,107 @@ LEXICON NMN_SÄÄʹMM
 :%^VOWRaise%^CC2C PL-OBL ;
 +Der/Dim:%^PALNo%^CC2C%> N_KUÂLAŽ ;
 
+LEXICON N_NJUUʹNN !!= * @CODE@ njuuʹnn:njuuʹnn
++N: NMN_NJUUʹNN ;
+LEXICON NMN_NJUUʹNN
+! gradation: yes
+! weak: single
+!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+!! !!1.3 Sg.Loc in -est (vowel shift)
+!! !!  Raised: Sg.Com, Pl.Obl
+!! !!  Lowered: ELSE
+!! !!  e-stems (Sg.Loc, Ess, Par).
+!! !!1.3.2 Sg.Ill vowel -a
+!! !!1.3.2.1 Has Palatalization
+!! !!  Palatalized: ELSE
+!! !!  Not Palatalized: Sg.Ill
+!! !!1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+!! !!1.3.2.1.1.1 Has Orthographic Gradation
+!! !!1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+!! !!  Strong grade: Sg.Nom, Ess, Par
+!! !!  Extra strong grade: Sg.Ill
+!! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+!! !!FORMS
+!! !!(1) Sg.Nom: njuuʹnn
+!! !!(2) Pl.Nom: njuuʹn
+!! !!(3) Sg.Ill: njonna
+!! !!(4) Sg.Loc: njuuʹnest
+!! !!(5) Sg.Com: saaʹnin
+!! !!(6) Ess: njuuʹnnen
+!! !!(7) Par: njuuʹnned
+!! !!(8) Pl.Acc: saaʹnid
+!! !!(9) Der/Dim.N.Sg.Nom: njoonaž
+!! NumContLex="1.113"
+!! ** Yaml: __N-njuunn__
+!! * There are several stem types
+!! * njuuʹnn:njuuʹnn
+!!
+ ATTESTED-NOUN-STEM ;
+: SG-NOM ;
+:%^CC2C SG-GEN ;
+:%^CC2C SG-ACC ;
+:%^VV2V%^VOWLower%^PALNo%>a SG-ILL ;
+:%^CC2C%>e SG-LOC ;
+:%^VOWRaise%^CC2C SG-COM_IN ; !2015-04-24 Is this correct
+:%>e ESS ; ! ess and prt without
+:%>e PAR ;
+!2009: 204 +N:%^CC2C%>e PAR ;
+:%^CC2C SG-ABE ;
+:%^CC2C PL-NOM ;
+:%^VOWRaise%^CC2C PL-OBL ;
++Der/Dim:%^PALNo%^CC2C%> N_KUÂLAŽ ;
+
+LEXICON N_ŠKUUʹL !!= * @CODE@ škuuʹl:škuuʹl
++N: NMN_ŠKUUʹL ;
+LEXICON NMN_ŠKUUʹL
+! gradation: no
+! weak: single
+! vowel_shift: Sg.Ill
+!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+!! !!1.3 Sg.Loc in -est (vowel shift)
+!! !!  Raised: ELSE
+!! !!  Lowered: Sg.Ill
+!! !!  e-stems (Sg.Loc, Ess, Par).
+!! !!1.3.2 Sg.Ill vowel -a
+!! !!1.3.2.1 Has Palatalization
+!! !!  Palatalized: ELSE
+!! !!  Not Palatalized: Sg.Ill
+!! !!1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+!! !!1.3.2.1.1.1 Lacks Orthographic Gradation
+!! !!1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+!! !!  Strong grade: Sg.Nom, Ess, Par
+!! !!  Extra strong grade: Sg.Ill
+!! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+!! !!FORMS
+!! !!(1) Sg.Nom: škuuʹl
+!! !!(2) Pl.Nom: škuuʹl
+!! !!(3) Sg.Ill: škooula
+!! !!(4) Sg.Loc: škuuʹlest
+!! !!(5) Sg.Com: škuuʹlin
+!! !!(6) Ess: škuuʹlen
+!! !!(7) Par: škuuʹled
+!! !!(8) Pl.Acc: škuuʹlid
+!! !!(9) Der/Dim.N.Sg.Nom: škooulaž
+!! NumContLex="1.113"
+!! ** Yaml: __N-skuul__
+!! * There are several stem types
+!! * škuuʹl:škuuʹl
+!!
+ ATTESTED-NOUN-STEM ;
+: SG-NOM ;
+: SG-GEN ;
+: SG-ACC ;
+:%^V2VV%^VOWLower%^PALNo%>a SG-ILL ;
+!:%^V2VV%^VOWLower%^PALNo%>a SG-ILL ; work with u:õ
+:%>e SG-LOC ;
+: SG-COM_IN ; !2015-04-24 Is this correct
+:%>e ESS ; ! ess and prt without
+:%>e PAR ;
+: SG-ABE ;
+: PL-NOM ;
+: PL-OBL ;
++Der/Dim:%^V2VV%^VOWLower%^PALNo%> N_KUÂLAŽ ;
+
 LEXICON N_EʹČČ !!= * @CODE@ eʹčč:eʹčč
 ! V1ʹC1C1
 +N: NMN_EʹČČ ;
@@ -3555,6 +3656,28 @@ LEXICON N_VÕÕNÂS
 +N:%^PenVV2V%^PenC2CC%^PenRmVow SG-ABE ;
 +N:%^PenVV2V%^PenC2CC%^VC PL-NOM ;
 +N:%^PenVV2V%^PenC2CC%^PenRmVow PL-OBL ;
+
+LEXICON N_TUÕVÂS
+! gradation: yes
+! vowel: diphthong
+! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
+! Penultimate stem vowel retention: Sg.Nom, Sg.Gen, Sg.Acc, Sg.Abe, Pl.Nom
+! Stem vowel: e
+! Voicing of final sibilant
+!! stemtype n-stem tuõvâs:tuõvâs
+!! ** Yaml: __N-tuovas__
++N: ATTESTED-NOUN-STEM ;
++N: SG-NOM ;
++N:%^PenC2CC%^VC SG-GEN ;
++N:%^PenC2CC%^VC SG-ACC ;
++N:%^PenC2CC%^PenRmVow%>a SG-ILL ;
++N:%^PenC2CC%^PenRmVow%>e SG-LOC ;
++N:%^PenC2CC%^PenRmVow SG-COM_IN ;
++N:%^PenC2CC%^PenRmVow%>e ESS ; ! ess and prt without
++N:%^PenC2CC%^PenRmVow%>e PAR ;
++N:%^PenC2CC%^PenRmVow SG-ABE ;
++N:%^PenC2CC%^VC PL-NOM ;
++N:%^PenC2CC%^PenRmVow PL-OBL ;
 
 LEXICON N_VUÕIVÂS
 ! gradation: yes
