@@ -732,7 +732,10 @@ Rules
 
  OnSetC  _ (ʹ:)  v:u (0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^PenV2VV: %^CShort:) %^VOWLower: (%^VOWFront:|%^VOWBack:) (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
 ! OnSetC (0:) _ (ʹ:) [CNoV: Cns:*|Cns:+ (%ˈ:|:%ˈ) Cns:+] VNeutrGrade %^VOWLower: (%^VOWFront:|%^VOWBack:) (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
-!! stuuʹl+N+Sg+Ill: stooula
+ OnSetC (0:) _ %{VU%}: (ʹ:|0:ʹ) Cns:+  ;
+!!stuuʹl+N+Sg+Ill: __chair/tuoli__
+!€# st0u%{VU%}ʹl%^V2VV%^VOWLower%^PALNo%>a
+!€# stoou0l0000a
 ! OnSetC 0: _ [ %{VU%}:u (ʹ:|0:ʹ) [d|l|r|ʒ]]  %^VOWLower: ;
 ! juʹrdded+V+Cond+Sg1: joordčem
  OnSetC 0: _ (ʹ:|0:ʹ) [CNoV: Cns:*|Cns:+ (%ˈ:|:%ˈ) Cns:+]  %^PenV2VV:  %^CShort:    %^VOWLower: ; 
@@ -885,8 +888,8 @@ Rules
 
 "Relative vowel lengthening 0:Vx"
 ! __@RULENAME@__
- 0:Vx <=> OnSetC _ :Vx (u:|i:) (ʹ:|0:ʹ)  Cns: [Cns:*|:Cns*] %^V2VV: ;
-  OnSetC _ :Vx (u:|i:) (ʹ:|0:ʹ)  Cns: [Cns:*|:Cns*] [Vow: |%{Â1%}:] Cns:+  %^PenV2VV: ;
+ 0:Vx <=> OnSetC _ :Vx (u:|i:|%{VU%}:) (ʹ:|0:ʹ)  Cns: [Cns:*|:Cns*] %^V2VV: ;
+  OnSetC _ :Vx (u:|i:|%{VU%}:) (ʹ:|0:ʹ)  Cns: [Cns:*|:Cns*] [Vow: |%{Â1%}:] Cns:+  %^PenV2VV: ;
                 where Vx in (a ä â å e o õ) ;
 
 !"Even syllabic verbs I, relative vowel lengthening 0:â"
@@ -1198,10 +1201,6 @@ Rules
 !!bioloog+N+Sg+Ill __biologist__
 !€# bioloo0g%^PAL%>e
 !€0 biolooʹǧ00e
-
-!                where Cx in (g k)
-!                      Cy in (ǧ ǩ)
-!                matched ;
 
 
 "Even-syllabic verbs I, Palatalization of k:ǩ"
