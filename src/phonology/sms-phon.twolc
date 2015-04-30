@@ -83,6 +83,7 @@ Alphabet
  %^PAL:0 %^PALNo:0 %^PALE:0 %^PALÄ:0 %^PALẸ:0   !!= * @CODE@ Palatalisation
  %^PenPAL:0 %^PenPALNo:0 %^PenPALE:0 %^PenPALÄ:0 %^PenPALẸ:0   !!= * @CODE@ Penultimate Palatalisation
  %^VC:0         !!= * @CODE@ Voicing s:z š:ž
+ %^DeVC:0         !!= * @CODE@ devoicing z:s ž:š
  %^Â:0		!!= * @CODE@ Indicates placement of â in stem
 
 !!  !! CHARACTERISTIC BREAKDOWN 2015-02-17
@@ -1100,6 +1101,14 @@ Rules
 !€# kuâ0ll%^PALE%^PAL
 !€0 kueʹll00
 
+
+"Even-syllabic nouns, for â:ẹ"
+!! __@RULENAME@__ 
+ â:ẹ <=> i _ :ʹ [Cns:+|Cns:+ 0:%ˈ Cns:+]  %^PALẸ: %^PAL: ;
+!!pieʹll+N+Sg+Nom: __half__
+!€# piâ0ll%^PALẸ%^PAL
+!€0 piẹʹll00
+
 !! !VOWEL and ZERO ALTERNATION
 
 
@@ -1270,6 +1279,10 @@ Rules
      _ [:Cns :Cns+|Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] BetweenStemAndPALNo %^PALNo: ;
 !€# čââʹlmteʹm0%^PALNo%^C2CC%>a
 !€0 čââʹlmte0mm000a
+   [Vow:|:Vow] _ [:Cns :Cns+|Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] %^PenRmVow %^PALNo: [RBound|%^RmVow:|%^VC:] ;
+!!stroitteʹl+N+Sg+Ill: __plant/laitos__
+!€# stroitteʹl%^PenRmVow%^PALNo%>a
+!€0 stroitt00l000a
   [Vow:|:Vow] _ [:Cns :Cns+|Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] Vow: Cns:+ PenBetweenStemAndPALNo %^PenPALNo:  ;
 
 !jurdded
@@ -1557,7 +1570,12 @@ Rules
    :Vow+ (ʹ:|0:ʹ) [Cns: :Cns*|Cns:+ (%ˈ:|:%ˈ) Cns:+] Vow: _ PenBetweenStemAndStemFinalVoicing %^VC: ; 
 
 
-         
+"Devoicing z:s"
+!! __@RULENAME@__ 
+ z:s <=>  [Cns: :Cns*|Cns:+ (%ˈ:|:%ˈ) Cns:+] Vow: _ PenBetweenStemAndStemFinalVoicing %^DeVC: ;
+!!aaunâs+N+Sg+Nom: __material/aine__
+!€# 0aunnâz%^PenV2VV%^PenXYY2XY%^DeVC
+!€0 aaun0âs000
 
 
 "Even syllabic verbs I, third consonant loss" 
