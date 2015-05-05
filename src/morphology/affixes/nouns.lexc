@@ -4747,7 +4747,8 @@ LEXICON N_LOOKKI !!= * @CODE@ lookki:lookki
 +N:%^KK2GG PL-OBL ;
 
 
-LEXICON N_SÄRNNAI !!= * @CODE@ is for nouns with ''-est'' +Loc
+LEXICON N_SÄRNNAI !!= * @CODE@ särnnai:särnnai
+! is for nouns with ''-est'' +Loc
 ! gradation: yes
 !! ** Yaml: __sarnnai__
 !! * There are several stem types
@@ -4755,16 +4756,16 @@ LEXICON N_SÄRNNAI !!= * @CODE@ is for nouns with ''-est'' +Loc
 !! NumContLex="
 +N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
-+N:%^V2VV%^XYY2XY SG-GEN ;
-+N:%^V2VV%^XYY2XY SG-ACC ;
-+N:%^I2J%>a SG-ILL ;
-+N:%^I2J%>e SG-LOC ;
-+N:%^V2VV%^XYY2XY SG-COM_N ;
-+N:%^I2J%>e ESS ; ! ess and prt without
-+N:%^I2J%>e PAR ;
-+N:%^V2VV%^XYY2XY SG-ABE ;
-+N:%^V2VV%^XYY2XY PL-NOM ;
-+N:%^V2VV%^XYY2XY PL-OBL ;
++N:%^PenV2VV%^PenXYY2XY SG-GEN ;
++N:%^PenV2VV%^PenXYY2XY SG-ACC ;
++N:%^RmVow%^I2J%>a SG-ILL ;
++N:%^RmVow%^I2J%>e SG-LOC ;
++N:%^PenV2VV%^PenXYY2XY%^RmVow%^I2J%>i SG-COM_N ;
++N:%^RmVow%^I2J%>e ESS ; ! ess and prt without
++N:%^RmVow%^I2J%>e PAR ;
++N:%^PenV2VV%^PenXYY2XY SG-ABE ;
++N:%^PenV2VV%^PenXYY2XY PL-NOM ;
++N:%^PenV2VV%^PenXYY2XY%^RmVow%^I2J%>i PL-OBL ;
 
 
 LEXICON N_KÅČČAI !!= * @CODE@ is for nouns with ''-est'' +Loc
@@ -5119,14 +5120,14 @@ LEXICON N_KÕÕNJÂL
 +N: SG-NOM ;
 +N:%^PenVV2V%^PenC2CC SG-GEN ;
 +N:%^PenVV2V%^PenC2CC SG-ACC ;
-+N:%^PenVV2V%^PenC2CC%^PenRmVow%>a SG-ILL ;
-+N:%^PenVV2V%^PenC2CC%^PenRmVow%>e SG-LOC ;
-+N:%^PenVV2V%^PenC2CC%^PenRmVow SG-COM_IN ;
-+N:%^PenVV2V%^PenC2CC%^PenRmVow%>e ESS ; ! ess and prt without
-+N:%^PenVV2V%^PenC2CC%^PenRmVow%>e PAR ;
-+N:%^PenVV2V%^PenC2CC%^PenRmVow SG-ABE ;
++N:%^PenVV2V%^PenC2CC%^RmVow%>a SG-ILL ;
++N:%^PenVV2V%^PenC2CC%^RmVow%>e SG-LOC ;
++N:%^PenVV2V%^PenC2CC%^RmVow SG-COM_IN ;
++N:%^PenVV2V%^PenC2CC%^RmVow%>e ESS ; ! ess and prt without
++N:%^PenVV2V%^PenC2CC%^RmVow%>e PAR ;
++N:%^PenVV2V%^PenC2CC%^RmVow SG-ABE ;
 +N:%^PenVV2V%^PenC2CC PL-NOM ;
-+N:%^PenVV2V%^PenC2CC%^PenRmVow PL-OBL ;
++N:%^PenVV2V%^PenC2CC%^RmVow PL-OBL ;
 
 LEXICON N_TAALKÂS !!= * @CODE@ taalkâs:talkkâz
 ! stem: N.Sg.Gen
@@ -5141,14 +5142,14 @@ LEXICON N_TAALKÂS !!= * @CODE@ taalkâs:talkkâz
 +N:%^PenV2VV%^PenXYY2XY%^DeVC SG-NOM ;
 +N: SG-GEN ;
 +N: SG-ACC ;
-+N:%^PenRmVow%^DeVC%>a SG-ILL ;
-+N:%^PenRmVow%^DeVC%>e SG-LOC ;
-+N:%^PenRmVow%^DeVC SG-COM_IN ;
-+N:%^PenRmVow%^DeVC%>e ESS ; ! ess and prt without
-+N:%^PenRmVow%^DeVC%>e PAR ;
++N:%^RmVow%^DeVC%>a SG-ILL ;
++N:%^RmVow%^DeVC%>e SG-LOC ;
++N:%^RmVow%^DeVC SG-COM_IN ;
++N:%^RmVow%^DeVC%>e ESS ; ! ess and prt without
++N:%^RmVow%^DeVC%>e PAR ;
 +N: SG-ABE ;
 +N: PL-NOM ;
-+N:%^PenRmVow%^DeVC PL-OBL ;
++N:%^RmVow%^DeVC PL-OBL ;
 
 
 LEXICON N_KOONTÂR
@@ -5164,14 +5165,14 @@ LEXICON N_KOONTÂR
 +N: SG-NOM ;
 +N:%^PenVV2V%^PenC2CC SG-GEN ;
 +N:%^PenVV2V%^PenC2CC SG-ACC ;
-+N:%^PenVV2V%^PenC2CC%^PenRmVow%>a SG-ILL ;
-+N:%^PenVV2V%^PenC2CC%^PenRmVow%>e SG-LOC ;
-+N:%^PenVV2V%^PenC2CC%^PenRmVow SG-COM_IN ;
-+N:%^PenVV2V%^PenC2CC%^PenRmVow%>e ESS ; ! ess and prt without
-+N:%^PenVV2V%^PenC2CC%^PenRmVow%>e PAR ;
-+N:%^PenVV2V%^PenC2CC%^PenRmVow SG-ABE ;
++N:%^PenVV2V%^PenC2CC%^RmVow%>a SG-ILL ;
++N:%^PenVV2V%^PenC2CC%^RmVow%>e SG-LOC ;
++N:%^PenVV2V%^PenC2CC%^RmVow SG-COM_IN ;
++N:%^PenVV2V%^PenC2CC%^RmVow%>e ESS ; ! ess and prt without
++N:%^PenVV2V%^PenC2CC%^RmVow%>e PAR ;
++N:%^PenVV2V%^PenC2CC%^RmVow SG-ABE ;
 +N:%^PenVV2V%^PenC2CC%^VC PL-NOM ;
-+N:%^PenVV2V%^PenC2CC%^PenRmVow PL-OBL ;
++N:%^PenVV2V%^PenC2CC%^RmVow PL-OBL ;
 
 LEXICON N_VÕÕNÂS
 ! gradation: yes
@@ -5186,14 +5187,14 @@ LEXICON N_VÕÕNÂS
 +N: SG-NOM ;
 +N:%^PenVV2V%^PenC2CC%^VC SG-GEN ;
 +N:%^PenVV2V%^PenC2CC%^VC SG-ACC ;
-+N:%^PenVV2V%^PenC2CC%^PenRmVow%>a SG-ILL ;
-+N:%^PenVV2V%^PenC2CC%^PenRmVow%>e SG-LOC ;
-+N:%^PenVV2V%^PenC2CC%^PenRmVow SG-COM_IN ;
-+N:%^PenVV2V%^PenC2CC%^PenRmVow%>e ESS ; ! ess and prt without
-+N:%^PenVV2V%^PenC2CC%^PenRmVow%>e PAR ;
-+N:%^PenVV2V%^PenC2CC%^PenRmVow SG-ABE ;
++N:%^PenVV2V%^PenC2CC%^RmVow%>a SG-ILL ;
++N:%^PenVV2V%^PenC2CC%^RmVow%>e SG-LOC ;
++N:%^PenVV2V%^PenC2CC%^RmVow SG-COM_IN ;
++N:%^PenVV2V%^PenC2CC%^RmVow%>e ESS ; ! ess and prt without
++N:%^PenVV2V%^PenC2CC%^RmVow%>e PAR ;
++N:%^PenVV2V%^PenC2CC%^RmVow SG-ABE ;
 +N:%^PenVV2V%^PenC2CC%^VC PL-NOM ;
-+N:%^PenVV2V%^PenC2CC%^PenRmVow PL-OBL ;
++N:%^PenVV2V%^PenC2CC%^RmVow PL-OBL ;
 
 LEXICON N_KÕÕDDÂS !!= * @CODE@ kõõddâs:kõddâz
 ! gradation: yes
@@ -5208,14 +5209,14 @@ LEXICON N_KÕÕDDÂS !!= * @CODE@ kõõddâs:kõddâz
 +N:%^PenV2VV%^DeVC SG-NOM ;
 +N: SG-GEN ;
 +N: SG-ACC ;
-+N:%^PenRmVow%^DeVC%>a SG-ILL ;
-+N:%^PenRmVow%^DeVC%>e SG-LOC ;
-+N:%^PenRmVow%^DeVC SG-COM_IN ;
-+N:%^PenRmVow%^DeVC%>e ESS ; ! ess and prt without
-+N:%^PenRmVow%^DeVC%>e PAR ;
-+N:%^PenRmVow%^DeVC SG-ABE ;
++N:%^RmVow%^DeVC%>a SG-ILL ;
++N:%^RmVow%^DeVC%>e SG-LOC ;
++N:%^RmVow%^DeVC SG-COM_IN ;
++N:%^RmVow%^DeVC%>e ESS ; ! ess and prt without
++N:%^RmVow%^DeVC%>e PAR ;
++N:%^RmVow%^DeVC SG-ABE ;
 +N: PL-NOM ;
-+N:%^PenRmVow%^DeVC PL-OBL ;
++N:%^RmVow%^DeVC PL-OBL ;
 
 LEXICON N_KIIUǤÂN !!= *  @CODE@ kiiuǥân:kiuggân
 ! gradation: yes
@@ -5230,14 +5231,14 @@ LEXICON N_KIIUǤÂN !!= *  @CODE@ kiiuǥân:kiuggân
 +N:%^PenV2VV%^PenXYY2XY SG-NOM ;
 +N: SG-GEN ;
 +N: SG-ACC ;
-+N:%^PenRmVow%>a SG-ILL ;
-+N:%^PenRmVow%>e SG-LOC ;
-+N:%^PenRmVow SG-COM_IN ;
-+N:%^PenRmVow%>e ESS ; ! ess and prt without
-+N:%^PenRmVow%>e PAR ;
-+N:%^PenRmVow SG-ABE ;
++N:%^RmVow%>a SG-ILL ;
++N:%^RmVow%>e SG-LOC ;
++N:%^RmVow SG-COM_IN ;
++N:%^RmVow%>e ESS ; ! ess and prt without
++N:%^RmVow%>e PAR ;
++N:%^RmVow SG-ABE ;
 +N: PL-NOM ;
-+N:%^PenRmVow PL-OBL ;
++N:%^RmVow PL-OBL ;
 
 LEXICON N_TUÕVÂS !!= *  @CODE@ tuõvâs:tuõvvâz
 ! gradation: yes
@@ -5252,14 +5253,14 @@ LEXICON N_TUÕVÂS !!= *  @CODE@ tuõvâs:tuõvvâz
 +N:%^PenCC2C%^DeVC SG-NOM ;
 +N: SG-GEN ;
 +N: SG-ACC ;
-+N:%^PenRmVow%>a SG-ILL ;
-+N:%^PenRmVow%>e SG-LOC ;
-+N:%^PenRmVow SG-COM_IN ;
-+N:%^PenRmVow%>e ESS ; ! ess and prt without
-+N:%^PenRmVow%>e PAR ;
-+N:%^PenRmVow SG-ABE ;
++N:%^RmVow%>a SG-ILL ;
++N:%^RmVow%>e SG-LOC ;
++N:%^RmVow SG-COM_IN ;
++N:%^RmVow%>e ESS ; ! ess and prt without
++N:%^RmVow%>e PAR ;
++N:%^RmVow SG-ABE ;
 +N: PL-NOM ;
-+N:%^PenRmVow PL-OBL ;
++N:%^RmVow PL-OBL ;
 
 LEXICON N_VUÕIVÂS !!= *  @CODE@ vuõivâs:vuõivvâz
 ! gradation: yes
@@ -5273,14 +5274,14 @@ LEXICON N_VUÕIVÂS !!= *  @CODE@ vuõivâs:vuõivvâz
 +N:%^PenXYY2XY%^DeVC SG-NOM ;
 +N: SG-GEN ;
 +N: SG-ACC ;
-+N:%^PenRmVow%>a SG-ILL ;
-+N:%^PenRmVow%>e SG-LOC ;
-+N:%^PenRmVow SG-COM_IN ;
-+N:%^PenRmVow%>e ESS ; ! ess and prt without
-+N:%^PenRmVow%>e PAR ;
-+N:%^PenRmVow SG-ABE ;
++N:%^RmVow%>a SG-ILL ;
++N:%^RmVow%>e SG-LOC ;
++N:%^RmVow SG-COM_IN ;
++N:%^RmVow%>e ESS ; ! ess and prt without
++N:%^RmVow%>e PAR ;
++N:%^RmVow SG-ABE ;
 +N: PL-NOM ;
-+N:%^PenRmVow PL-OBL ;
++N:%^RmVow PL-OBL ;
 
 LEXICON N_TUÕDDÂR !!= *  @CODE@ tuõddâr:tuõdˈdâr
 ! orth_gradation: no
@@ -5293,14 +5294,14 @@ LEXICON N_TUÕDDÂR !!= *  @CODE@ tuõddâr:tuõdˈdâr
 +N:%^PenCCC2CC SG-NOM ;		! tuõddâr
 +N: SG-GEN ;	       			! tuõdˈdâr
 +N: SG-ACC ;				! tuõdˈdâr
-+N:%^PenRmVow%>a SG-ILL ;		! tuõdˈdra
-+N:%^PenRmVow%>e SG-LOC ;		! tuõdˈdrest
-+N:%^PenRmVow SG-COM_IN ;		! tuõdˈdrin
-+N:%^PenRmVow%>e ESS ; 			! tuõdˈdren
-+N:%^PenRmVow%>e PAR ;			! tuõdˈdred
++N:%^RmVow%>a SG-ILL ;		! tuõdˈdra
++N:%^RmVow%>e SG-LOC ;		! tuõdˈdrest
++N:%^RmVow SG-COM_IN ;		! tuõdˈdrin
++N:%^RmVow%>e ESS ; 			! tuõdˈdren
++N:%^RmVow%>e PAR ;			! tuõdˈdred
 +N: SG-ABE ;				! tuõdˈdârtaa/tuõdˈdârtää
 +N: PL-NOM ;				! tuõdˈdâr
-+N:%^PenRmVow PL-OBL ;			! tuõdˈdri, 
++N:%^RmVow PL-OBL ;			! tuõdˈdri, 
 
 LEXICON N_ǨIÕRÂČ
 ! gradation: no
@@ -5313,14 +5314,14 @@ LEXICON N_ǨIÕRÂČ
 +N: SG-NOM ; !ǩiõrâč
 +N: SG-GEN ;
 +N: SG-ACC ;
-+N:%^PenRmVow%>a SG-ILL ;
-+N:%^PenRmVow%>e SG-LOC ;
-+N:%^PenRmVow SG-COM_IN ;
-+N:%^PenRmVow%>e ESS ; ! ess and prt without
-+N:%^PenRmVow%>e PAR ;
-+N:%^PenRmVow SG-ABE ;
-+N:%^PenRmVow PL-NOM ;
-+N:%^PenRmVow PL-OBL ;
++N:%^RmVow%>a SG-ILL ;
++N:%^RmVow%>e SG-LOC ;
++N:%^RmVow SG-COM_IN ;
++N:%^RmVow%>e ESS ; ! ess and prt without
++N:%^RmVow%>e PAR ;
++N:%^RmVow SG-ABE ;
++N:%^RmVow PL-NOM ;
++N:%^RmVow PL-OBL ;
 
 LEXICON N_CÕÕGGÂLM
 ! gradation: yes
@@ -5335,14 +5336,14 @@ LEXICON N_CÕÕGGÂLM
 +N: SG-NOM ;	       		! cõõggâlm
 +N: SG-GEN ;			! cõõggâlm
 +N: SG-ACC ;			! cõõggâlm
-+N:%^PenVV2V%^PenCC2C%^PenRmVow%>a SG-ILL ;	! cõglma
-+N:%^PenVV2V%^PenCC2C%^PenRmVow%>e SG-LOC ;	! cõglmest
-+N:%^PenVV2V%^PenCC2C%^PenRmVow SG-COM_IN ;	! cõglmin
-+N:%^PenVV2V%^PenCC2C%^PenRmVow%>e ESS ;  	! cõglmen
-+N:%^PenVV2V%^PenCC2C%^PenRmVow%>e PAR ;	! cõglmed
++N:%^PenVV2V%^PenCC2C%^RmVow%>a SG-ILL ;	! cõglma
++N:%^PenVV2V%^PenCC2C%^RmVow%>e SG-LOC ;	! cõglmest
++N:%^PenVV2V%^PenCC2C%^RmVow SG-COM_IN ;	! cõglmin
++N:%^PenVV2V%^PenCC2C%^RmVow%>e ESS ;  	! cõglmen
++N:%^PenVV2V%^PenCC2C%^RmVow%>e PAR ;	! cõglmed
 +N: SG-ABE ;			! cõõggâlmtaa/cõõggâlmtää
 +N: PL-NOM ;			! cõõggâlm
-+N:%^PenVV2V%^PenCC2C%^PenRmVow PL-OBL ;	! cõglmi, cõglmid, cõglmid, cõglmin, cõglmivuiʹm, cõglmitaa/cõglmitää
++N:%^PenVV2V%^PenCC2C%^RmVow PL-OBL ;	! cõglmi, cõglmid, cõglmid, cõglmin, cõglmivuiʹm, cõglmitaa/cõglmitää
 
 
 LEXICON N_SIIVÂLM
@@ -5358,14 +5359,14 @@ LEXICON N_SIIVÂLM
 +N: SG-NOM ;	       		! siivâlm
 +N: SG-GEN ;			! siivââlm
 +N: SG-ACC ;			! siivââlm
-+N:%^PenVV2V%^PenCC2C%^PenRmVow%>a SG-ILL ;	! siivlma
-+N:%^PenVV2V%^PenCC2C%^PenRmVow%>e SG-LOC ;	! siivlmest
-+N:%^PenVV2V%^PenCC2C%^PenRmVow SG-COM_IN ;	! siivlmin
-+N:%^PenVV2V%^PenCC2C%^PenRmVow%>e ESS ;  	! siivlmen
-+N:%^PenVV2V%^PenCC2C%^PenRmVow%>e PAR ;	! siivlmed
++N:%^PenVV2V%^PenCC2C%^RmVow%>a SG-ILL ;	! siivlma
++N:%^PenVV2V%^PenCC2C%^RmVow%>e SG-LOC ;	! siivlmest
++N:%^PenVV2V%^PenCC2C%^RmVow SG-COM_IN ;	! siivlmin
++N:%^PenVV2V%^PenCC2C%^RmVow%>e ESS ;  	! siivlmen
++N:%^PenVV2V%^PenCC2C%^RmVow%>e PAR ;	! siivlmed
 +N: SG-ABE ;			! siivââlmtaa/siivââlmtää
 +N: PL-NOM ;			! siivââlm
-+N:%^PenVV2V%^PenCC2C%^PenRmVow PL-OBL ;	! siivlmi, siivlmid, siivlmid, siivlmin, siivlmivuiʹm, siivlmitaa/siivlmitää
++N:%^PenVV2V%^PenCC2C%^RmVow PL-OBL ;	! siivlmi, siivlmid, siivlmid, siivlmin, siivlmivuiʹm, siivlmitaa/siivlmitää
 
 LEXICON N_VIIRRÂM
 ! vowel_length: yes
@@ -5380,14 +5381,14 @@ LEXICON N_VIIRRÂM
 +N: SG-NOM ;	       		! viirrâm
 +N: SG-GEN ;			! viirrâm
 +N: SG-ACC ;			! viirrâm
-+N:%^PenRmVow%>a SG-ILL ;	! viirrma
-+N:%^PenRmVow%>e SG-LOC ;	! viirrmest
-+N:%^PenRmVow SG-COM_IN ;	! viirrmin
-+N:%^PenRmVow%>e ESS ;  	! viirrmen
-+N:%^PenRmVow%>e PAR ;	! viirrmed
++N:%^RmVow%>a SG-ILL ;	! viirrma
++N:%^RmVow%>e SG-LOC ;	! viirrmest
++N:%^RmVow SG-COM_IN ;	! viirrmin
++N:%^RmVow%>e ESS ;  	! viirrmen
++N:%^RmVow%>e PAR ;	! viirrmed
 +N: SG-ABE ;			! viirrâmtaa/viirrâmtää
 +N: PL-NOM ;			! viirrâm
-+N:%^PenVV2V%^PenCC2C%^PenRmVow PL-OBL ;	! viirrmi, viirrmid, viirrmid, viirrmin, viirrmivuiʹm, viirrmitaa/viirrmitää
++N:%^PenVV2V%^PenCC2C%^RmVow PL-OBL ;	! viirrmi, viirrmid, viirrmid, viirrmin, viirrmivuiʹm, viirrmitaa/viirrmitää
 
 
 
@@ -5402,14 +5403,14 @@ LEXICON N_ǨEÂLǤAL
 +N: SG-NOM ;
 +N:%^PenC2CC SG-GEN ;
 +N:%^PenC2CC SG-ACC ;
-+N:%^PenC2CC%^PenRmVow%>a SG-ILL ;
-+N:%^PenC2CC%^PenRmVow%>e SG-LOC ;
-+N:%^PenC2CC%^PenRmVow SG-COM_IN ;
-+N:%^PenC2CC%^PenRmVow%>e ESS ; ! ess and prt without
-+N:%^PenC2CC%^PenRmVow%>e PAR ;
++N:%^PenC2CC%^RmVow%>a SG-ILL ;
++N:%^PenC2CC%^RmVow%>e SG-LOC ;
++N:%^PenC2CC%^RmVow SG-COM_IN ;
++N:%^PenC2CC%^RmVow%>e ESS ; ! ess and prt without
++N:%^PenC2CC%^RmVow%>e PAR ;
 +N:%^PenC2CC SG-ABE ;
 +N:%^PenC2CC PL-NOM ;
-+N:%^PenC2CC%^PenRmVow PL-OBL ;
++N:%^PenC2CC%^RmVow PL-OBL ;
 
 LEXICON N_SÅÅBBAR
 ! gradation: yes
@@ -5420,14 +5421,14 @@ LEXICON N_SÅÅBBAR
 +N: SG-NOM ;
 +N:%^PenVV2V SG-GEN ;
 +N:%^PenVV2V SG-ACC ;
-+N:%^PenVV2V%^PenRmVow%>a SG-ILL ;
-+N:%^PenVV2V%^PenRmVow%>e SG-LOC ;
-+N:%^PenVV2V%^PenRmVow SG-COM_IN ;
-+N:%^PenVV2V%^PenRmVow%>e ESS ; ! ess and prt without
-+N:%^PenVV2V%^PenRmVow%>e PAR ;
-+N:%^PenVV2V%^PenRmVow SG-ABE ;
++N:%^PenVV2V%^RmVow%>a SG-ILL ;
++N:%^PenVV2V%^RmVow%>e SG-LOC ;
++N:%^PenVV2V%^RmVow SG-COM_IN ;
++N:%^PenVV2V%^RmVow%>e ESS ; ! ess and prt without
++N:%^PenVV2V%^RmVow%>e PAR ;
++N:%^PenVV2V%^RmVow SG-ABE ;
 +N:%^PenVV2V PL-NOM ;
-+N:%^PenVV2V%^PenRmVow PL-OBL ;
++N:%^PenVV2V%^RmVow PL-OBL ;
 
 LEXICON N_PÅÅTTAǨ
 ! gradation: yes
@@ -5444,14 +5445,14 @@ LEXICON N_PÅÅTTAǨ
 +N: SG-NOM ;
 +N:%^PenVV2V SG-GEN ;
 +N:%^PenVV2V SG-ACC ;
-+N:%^PenVV2V%^PenRmVow%>a SG-ILL ; ! pååttka
-+N:%^PenVV2V%^PenRmVow%>e SG-LOC ;
-+N:%^PenVV2V%^PenRmVow SG-COM_IN ;
-+N:%^PenVV2V%^PenRmVow%>e ESS ; ! ess and prt without
-+N:%^PenVV2V%^PenRmVow%>e PAR ;
-+N:%^PenVV2V%^PenRmVow SG-ABE ;
++N:%^PenVV2V%^RmVow%>a SG-ILL ; ! pååttka
++N:%^PenVV2V%^RmVow%>e SG-LOC ;
++N:%^PenVV2V%^RmVow SG-COM_IN ;
++N:%^PenVV2V%^RmVow%>e ESS ; ! ess and prt without
++N:%^PenVV2V%^RmVow%>e PAR ;
++N:%^PenVV2V%^RmVow SG-ABE ;
 +N:%^PenVV2V PL-NOM ;
-+N:%^PenVV2V%^PenRmVow PL-OBL ;
++N:%^PenVV2V%^RmVow PL-OBL ;
 
 LEXICON N_JÂNNAM
 +N: NMN_JÂNNAM ;
@@ -5466,14 +5467,14 @@ LEXICON NMN_JÂNNAM
 : SG-NOM ;
 : SG-GEN ;
 : SG-ACC ;
-:%^PenRmVow%>a SG-ILL ;
-:%^PenRmVow%>e SG-LOC ;
-:%^PenRmVow SG-COM_IN ;
-:%^PenRmVow%>e ESS ; ! ess and prt without
-:%^PenRmVow%>e PAR ;
-:%^PenRmVow SG-ABE ;
+:%^RmVow%>a SG-ILL ;
+:%^RmVow%>e SG-LOC ;
+:%^RmVow SG-COM_IN ;
+:%^RmVow%>e ESS ; ! ess and prt without
+:%^RmVow%>e PAR ;
+:%^RmVow SG-ABE ;
 : PL-NOM ;
-:%^PenRmVow PL-OBL ;
+:%^RmVow PL-OBL ;
 
 LEXICON N_ÄÄPPAL
 ! gradation: yes
@@ -5488,14 +5489,14 @@ LEXICON N_ÄÄPPAL
 +N: SG-NOM ;
 +N:%^PenVV2V SG-GEN ;
 +N:%^PenVV2V SG-ACC ;
-+N:%^PenVV2V%^PenRmVow%>a SG-ILL ;
-+N:%^PenVV2V%^PenRmVow%>e SG-LOC ;
-+N:%^PenVV2V%^PenRmVow SG-COM_IN ;
-+N:%^PenVV2V%^PenRmVow%>e ESS ; ! ess and prt without
-+N:%^PenVV2V%^PenRmVow%>e PAR ;
-+N:%^PenVV2V%^PenRmVow SG-ABE ;
++N:%^PenVV2V%^RmVow%>a SG-ILL ;
++N:%^PenVV2V%^RmVow%>e SG-LOC ;
++N:%^PenVV2V%^RmVow SG-COM_IN ;
++N:%^PenVV2V%^RmVow%>e ESS ; ! ess and prt without
++N:%^PenVV2V%^RmVow%>e PAR ;
++N:%^PenVV2V%^RmVow SG-ABE ;
 +N:%^PenVV2V PL-NOM ;
-+N:%^PenVV2V%^PenRmVow PL-OBL ;
++N:%^PenVV2V%^RmVow PL-OBL ;
 
 
 LEXICON N_KÅÅVAS !!= * @CODE@ kååvas:kååvas
@@ -5513,14 +5514,14 @@ LEXICON N_KÅÅVAS !!= * @CODE@ kååvas:kååvas
 +N: SG-NOM ;
 +N:%^PenVV2V%^PenC2CC%^VC SG-GEN ;
 +N:%^PenVV2V%^PenC2CC%^VC SG-ACC ;
-+N:%^PenVV2V%^PenC2CC%^PenRmVow%>a SG-ILL ;
-+N:%^PenVV2V%^PenC2CC%^PenRmVow%>e SG-LOC ;
-+N:%^PenVV2V%^PenC2CC%^PenRmVow SG-COM_IN ;
-+N:%^PenVV2V%^PenC2CC%^PenRmVow%>e ESS ; ! ess and prt without
-+N:%^PenVV2V%^PenC2CC%^PenRmVow%>e PAR ;
-+N:%^PenVV2V%^PenC2CC%^PenRmVow SG-ABE ;
++N:%^PenVV2V%^PenC2CC%^RmVow%>a SG-ILL ;
++N:%^PenVV2V%^PenC2CC%^RmVow%>e SG-LOC ;
++N:%^PenVV2V%^PenC2CC%^RmVow SG-COM_IN ;
++N:%^PenVV2V%^PenC2CC%^RmVow%>e ESS ; ! ess and prt without
++N:%^PenVV2V%^PenC2CC%^RmVow%>e PAR ;
++N:%^PenVV2V%^PenC2CC%^RmVow SG-ABE ;
 +N:%^PenVV2V%^PenC2CC%^VC PL-NOM ;
-+N:%^PenVV2V%^PenC2CC%^PenRmVow PL-OBL ;
++N:%^PenVV2V%^PenC2CC%^RmVow PL-OBL ;
 
 
 LEXICON N_KUÄIVAS !!= * @CODE@ kuäivas:kuäivvaz
@@ -5538,14 +5539,14 @@ LEXICON N_KUÄIVAS !!= * @CODE@ kuäivas:kuäivvaz
 +N:%^PenCC2C%^DeVC SG-NOM ;
 +N: SG-GEN ;
 +N: SG-ACC ;
-+N:%^PenRmVow%^DeVC%>a SG-ILL ;
-+N:%^PenRmVow%^DeVC%>e SG-LOC ;
-+N:%^PenRmVow%^DeVC SG-COM_IN ;
-+N:%^PenRmVow%^DeVC%>e ESS ; ! ess and prt without
-+N:%^PenRmVow%^DeVC%>e PAR ;
-+N:%^PenRmVow%^DeVC SG-ABE ;
++N:%^RmVow%^DeVC%>a SG-ILL ;
++N:%^RmVow%^DeVC%>e SG-LOC ;
++N:%^RmVow%^DeVC SG-COM_IN ;
++N:%^RmVow%^DeVC%>e ESS ; ! ess and prt without
++N:%^RmVow%^DeVC%>e PAR ;
++N:%^RmVow%^DeVC SG-ABE ;
 +N: PL-NOM ;
-+N:%^PenRmVow%^DeVC PL-OBL ;
++N:%^RmVow%^DeVC PL-OBL ;
 
 
 LEXICON N_SLOOHMAN
@@ -5560,16 +5561,16 @@ LEXICON NMN_SLOOHMAN
 !! !!2.3.2.2.1.1 The Sg.Com vowel i appears before final n  
 !NumContLex="1.2"
 !! ** Yaml: __A-sloohman__
-:%^PenRmVow%> PL-OBL ;
+:%^RmVow%> PL-OBL ;
 :  PL-NOM ;
-:%^PenRmVow%>e ESS ;
-:%^PenRmVow%>e PAR ;
+:%^RmVow%>e ESS ;
+:%^RmVow%>e PAR ;
 :  SG-ABE ;
 :  SG-ACC ;
-:%^PenRmVow%> SG-COM_IN ;
+:%^RmVow%> SG-COM_IN ;
 :  SG-GEN ;
-:%^PenRmVow%>a SG-ILL ;
-:%^PenRmVow%>e SG-LOC ;
+:%^RmVow%>a SG-ILL ;
+:%^RmVow%>e SG-LOC ;
  ATTESTED-NOUN-STEM ;
 :  SG-NOM ;
 
@@ -5593,14 +5594,14 @@ LEXICON N_VEEʹREST
 +N: SG-NOM ;
 +N: SG-GEN ;
 +N: SG-ACC ;
-+N:%^PenVV2V%^PenRmVow%>ta SG-ILL ;
-+N:%^PenVV2V%^PenRmVow%>e SG-LOC ;
-+N:%^PenVV2V%^PenRmVow SG-COM_IN ;
-+N:%^PenVV2V%^PenRmVow%>e ESS ; ! ess and prt without
-+N:%^PenVV2V%^PenRmVow%>e PAR ;
-+N:%^PenVV2V%^PenRmVow SG-ABE ;
++N:%^PenVV2V%^RmVow%>ta SG-ILL ;
++N:%^PenVV2V%^RmVow%>e SG-LOC ;
++N:%^PenVV2V%^RmVow SG-COM_IN ;
++N:%^PenVV2V%^RmVow%>e ESS ; ! ess and prt without
++N:%^PenVV2V%^RmVow%>e PAR ;
++N:%^PenVV2V%^RmVow SG-ABE ;
 +N: PL-NOM ;
-+N:%^PenVV2V%^PenRmVow PL-OBL ;
++N:%^PenVV2V%^RmVow PL-OBL ;
 
 
 LEXICON N_ÄÄʹREŠM
@@ -5619,14 +5620,14 @@ LEXICON N_ÄÄʹREŠM
 +N: SG-NOM ;
 +N: SG-GEN ;
 +N: SG-ACC ;
-+N:%^PenVV2V%^PenRmVow%>a SG-ILL ;
-+N:%^PenVV2V%^PenRmVow%>e SG-LOC ;
-+N:%^PenVV2V%^PenRmVow SG-COM_IN ;
-+N:%^PenVV2V%^PenRmVow%>e ESS ; ! ess and prt without
-+N:%^PenVV2V%^PenRmVow%>e PAR ;
-+N:%^PenVV2V%^PenRmVow SG-ABE ;
++N:%^PenVV2V%^RmVow%>a SG-ILL ;
++N:%^PenVV2V%^RmVow%>e SG-LOC ;
++N:%^PenVV2V%^RmVow SG-COM_IN ;
++N:%^PenVV2V%^RmVow%>e ESS ; ! ess and prt without
++N:%^PenVV2V%^RmVow%>e PAR ;
++N:%^PenVV2V%^RmVow SG-ABE ;
 +N: PL-NOM ;
-+N:%^PenVV2V%^PenRmVow PL-OBL ;
++N:%^PenVV2V%^RmVow PL-OBL ;
 
 LEXICON N_SPÄʹSSEB
 +N: NMN_SPÄʹSSEB ;
@@ -5646,14 +5647,14 @@ LEXICON NMN_SPÄʹSSEB
 : SG-NOM ;
 : SG-GEN ;
 : SG-ACC ;
-:%^PenPALNo%^PenRmVow%>a SG-ILL ;
-:%^PenRmVow%>e SG-LOC ;
-:%^PenRmVow SG-COM_IN ;
-:%^PenRmVow%>e ESS ; ! ess and prt without
-:%^PenRmVow%>e PAR ;
-:%^PenRmVow SG-ABE ;
+:%^PenPALNo%^RmVow%>a SG-ILL ;
+:%^RmVow%>e SG-LOC ;
+:%^RmVow SG-COM_IN ;
+:%^RmVow%>e ESS ; ! ess and prt without
+:%^RmVow%>e PAR ;
+:%^RmVow SG-ABE ;
 : PL-NOM ;
-:%^PenRmVow PL-OBL ;
+:%^RmVow PL-OBL ;
 
 LEXICON N_STROITTEʹL !!= * @CODE@ stroitteʹl:stroitteʹl
 +N: NMN_STROITTEʹL ;
@@ -5673,14 +5674,14 @@ LEXICON NMN_STROITTEʹL
 : SG-NOM ;
 : SG-GEN ;
 : SG-ACC ;
-:%^PenRmVow%^PALNo%>a SG-ILL ;
-:%^PenRmVow%^PALNo%>e SG-LOC ;
-:%^PenRmVow%^PALNo SG-COM_IN ;
-:%^PenRmVow%^PALNo%>e ESS ; ! ess and prt without
-:%^PenRmVow%^PALNo%>e PAR ;
-:%^PenRmVow%^PALNo SG-ABE ;
+:%^RmVow%^PALNo%>a SG-ILL ;
+:%^RmVow%^PALNo%>e SG-LOC ;
+:%^RmVow%^PALNo SG-COM_IN ;
+:%^RmVow%^PALNo%>e ESS ; ! ess and prt without
+:%^RmVow%^PALNo%>e PAR ;
+:%^RmVow%^PALNo SG-ABE ;
 : PL-NOM ;
-:%^PenRmVow%^PALNo PL-OBL ;
+:%^RmVow%^PALNo PL-OBL ;
 
 LEXICON N_MINIʹSTTER
 +N: NMN_MINIʹSTTER ;
@@ -5700,14 +5701,14 @@ LEXICON NMN_MINIʹSTTER
 : SG-NOM ;
 : SG-GEN ;
 : SG-ACC ;
-:%^PenRmVow%>a SG-ILL ; !miniʹsttra
-:%^PenRmVow%>e SG-LOC ;
-:%^PenRmVow SG-COM_IN ;
-:%^PenRmVow%>e ESS ; ! ess and prt without
-:%^PenRmVow%>e PAR ;
-:%^PenRmVow SG-ABE ;
+:%^RmVow%>a SG-ILL ; !miniʹsttra
+:%^RmVow%>e SG-LOC ;
+:%^RmVow SG-COM_IN ;
+:%^RmVow%>e ESS ; ! ess and prt without
+:%^RmVow%>e PAR ;
+:%^RmVow SG-ABE ;
 : PL-NOM ;
-:%^PenRmVow PL-OBL ;
+:%^RmVow PL-OBL ;
 
 LEXICON N_ČEEUʹRES
 ! gradation: yes
@@ -5725,14 +5726,14 @@ LEXICON N_ČEEUʹRES
 +N: SG-NOM ;
 +N:%^PenVV2V%^PenPALNo%^PenVow2a%^VC SG-GEN ;
 +N:%^PenVV2V%^PenPALNo%^PenVow2a%^VC SG-ACC ;
-+N:%^PenPALNo%^PenRmVow%>a SG-ILL ;
-+N:%^PenPALNo%^PenRmVow%>e SG-LOC ;
-+N:%^PenPALNo%^PenRmVow SG-COM_IN ;
-+N:%^PenPALNo%^PenRmVow%>e ESS ; ! ess and prt without
-+N:%^PenPALNo%^PenRmVow%>e PAR ;
-+N:%^PenPALNo%^PenRmVow SG-ABE ;
++N:%^PenPALNo%^RmVow%>a SG-ILL ;
++N:%^PenPALNo%^RmVow%>e SG-LOC ;
++N:%^PenPALNo%^RmVow SG-COM_IN ;
++N:%^PenPALNo%^RmVow%>e ESS ; ! ess and prt without
++N:%^PenPALNo%^RmVow%>e PAR ;
++N:%^PenPALNo%^RmVow SG-ABE ;
 +N:%^PenVV2V%^PenPALNo%^PenVow2a%^VC PL-NOM ;
-+N:%^PenVV2V%^PenPALNo%^PenRmVow PL-OBL ;
++N:%^PenVV2V%^PenPALNo%^RmVow PL-OBL ;
 
 LEXICON N_CIEʹǨǨES
 ! cieʹǩǩes:ciâkkes
@@ -5749,14 +5750,14 @@ LEXICON N_CIEʹǨǨES
 +N:%^PenPALẸ%^PenPAL SG-NOM ;
 +N:%^PenVOWLower%^PenCC2CCC%^PenVow2a%^VC SG-GEN ;
 +N:%^PenVOWLower%^PenCC2CCC%^PenVow2a%^PenVow2a%^VC SG-ACC ;
-+N:%^PenVOWLower%^PenCC2CCC%^PenRmVow%>a SG-ILL ;
-+N:%^PenVOWLower%^PenCC2CCC%^PenRmVow%>e SG-LOC ;
-+N:%^PenVOWLower%^PenCC2CCC%^PenRmVow SG-COM_IN ;
-+N:%^PenVOWLower%^PenCC2CCC%^PenRmVow%>e ESS ; ! ess and prt without
-+N:%^PenVOWLower%^PenCC2CCC%^PenRmVow%>e PAR ;
-+N:%^PenVOWLower%^PenCC2CCC%^PenRmVow SG-ABE ;
++N:%^PenVOWLower%^PenCC2CCC%^RmVow%>a SG-ILL ;
++N:%^PenVOWLower%^PenCC2CCC%^RmVow%>e SG-LOC ;
++N:%^PenVOWLower%^PenCC2CCC%^RmVow SG-COM_IN ;
++N:%^PenVOWLower%^PenCC2CCC%^RmVow%>e ESS ; ! ess and prt without
++N:%^PenVOWLower%^PenCC2CCC%^RmVow%>e PAR ;
++N:%^PenVOWLower%^PenCC2CCC%^RmVow SG-ABE ;
 +N:%^PenVOWLower%^PenCC2CCC%^PenVow2a%^VC PL-NOM ;
-+N:%^PenVOWLower%^PenCC2CCC%^PenRmVow PL-OBL ;
++N:%^PenVOWLower%^PenCC2CCC%^RmVow PL-OBL ;
 
 LEXICON N_REʹPPIǨ
 ! gradation: yes
@@ -5773,14 +5774,14 @@ LEXICON N_REʹPPIǨ
 +N: SG-NOM ;
 +N:%^PenV2VV SG-GEN ;
 +N:%^PenV2VV SG-ACC ;
-+N:%^PenRmVow%>a SG-ILL ; ! reppka
-+N:%^PenV2VV%^PenRmVow%>e SG-LOC ;
-+N:%^PenV2VV%^PenRmVow SG-COM_IN ;
-+N:%^PenV2VV%^PenRmVow%>e ESS ; ! ess and prt without
-+N:%^PenV2VV%^PenRmVow%>e PAR ;
-+N:%^PenV2VV%^PenRmVow SG-ABE ;
++N:%^RmVow%>a SG-ILL ; ! reppka
++N:%^PenV2VV%^RmVow%>e SG-LOC ;
++N:%^PenV2VV%^RmVow SG-COM_IN ;
++N:%^PenV2VV%^RmVow%>e ESS ; ! ess and prt without
++N:%^PenV2VV%^RmVow%>e PAR ;
++N:%^PenV2VV%^RmVow SG-ABE ;
 +N:%^PenV2VV PL-NOM ;
-+N:%^PenV2VV%^PenRmVow PL-OBL ;
++N:%^PenV2VV%^RmVow PL-OBL ;
 
 
 
@@ -6260,14 +6261,8 @@ LEXICON NMN_SG-ILL_VOWSH-PAL_E
 LEXICON NMN_SG-ILL_VOWSH-CLONG-PAL_E
 :%^VOWSH%^CLong%^PAL%>e SG-ILL ;
 
-LEXICON NMN_SG-ILL_VOWSH-CLONG-RMVOW_A
-:%^VOWSH%^CLong%^RmVow%>a SG-ILL ;
-
 LEXICON NMN_SG-ILL_VOWSH-CLONG-RMVOW_U
 :%^VOWSH%^CLong%>u SG-ILL ;
-
-LEXICON NMN_SG-ILL_VOWSH-RMVOW_A
-:%^VOWSH%^RmVow%>a SG-ILL ;
 
 LEXICON NMN_SG-LOC_Â
 :%>â SG-LOC ;
@@ -6281,11 +6276,6 @@ LEXICON NMN_SG-LOC_ZERO
 LEXICON NMN_SG-LOC_E
 :%>e SG-LOC ;
 
-LEXICON NMN_SG-LOC_VOWSH-RMVOW_E
-:%^VOWSH%^RmVow%>e SG-LOC ;
-
-LEXICON NMN_SG-LOC_VOWSH-CLONG-RMVOW_E
-:%^VOWSH%^CLong%^RmVow%>e SG-LOC ;
 
 LEXICON NMN_SG-LOC_VOWL-CSHORT_Â
 :%^V2VV%^CC2C%>â SG-LOC ;
@@ -6300,23 +6290,12 @@ LEXICON NMN_ESS_Â
 LEXICON NMN_ESS_E
 :%>e ESS ;
 
-LEXICON NMN_ESS_VOWSH-RMVOW_E
-:%^VOWSH%^RmVow%>e ESS ;
-
-LEXICON NMN_ESS_VOWSH-CLONG-RMVOW_E
-:%^VOWSH%^CLong%^RmVow%>e ESS ;
 
 LEXICON NMN_PAR_Â
 :%>â PAR ;
 
 LEXICON NMN_PAR_E
 :%>e PAR ;
-
-LEXICON NMN_PAR_VOWSH-RMVOW_E
-:%^VOWSH%^RmVow%>e PAR ;
-
-LEXICON NMN_PAR_VOWSH-CLONG-RMVOW_E
-:%^VOWSH%^CLong%^RmVow%>e PAR ;
 
 
 !! !Number and case tags
