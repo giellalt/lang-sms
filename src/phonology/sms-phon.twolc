@@ -80,8 +80,11 @@ Alphabet
  %^PenVOWBack:0	     !!= * @CODE@ Backing e>õ, e>â vuäinn BUT vuõiʹni
 
  %^VOWFront:0	     !!= * @CODE@ Fronting
- %^PAL:0 %^PALNo:0 %^PALE:0 %^PALÄ:0 %^PALẸ:0   !!= * @CODE@ Palatalisation
- %^PenPAL:0 %^PenPALNo:0 %^PenPALE:0 %^PenPALÄ:0 %^PenPALẸ:0   !!= * @CODE@ Penultimate Palatalisation
+ %^PAL:0 %^PALNo:0 %^PALE:0 %^PALÄ:0 %^PALẸ:0 %^PALÂ:0 %^PALÕ:0   !!= * @CODE@ Palatalisation
+ %^PenPAL:0 %^PenPALNo:0 %^PenPALE:0 %^PenPALÄ:0 %^PenPALẸ:0 %^PenPALÂ:0  !!= * @CODE@ Penultimate Palatalisation
+%^PenPALÕ:0 %^PenPALÂ:0
+%^PALK:0     !!= * @CODE@ causes k:ǩ and g:ǧ
+
  %^VC:0         !!= * @CODE@ Voicing s:z š:ž
  %^DeVC:0         !!= * @CODE@ devoicing z:s ž:š
  %^Â:0		!!= * @CODE@ Indicates placement of â in stem
@@ -199,7 +202,7 @@ Sets
 !! !!Definitions
 
 Definitions
- DummiesBeforeConsLength = [%^V2VV: |%^VV2V: |%^VOWRaise:| %^VOWLower:| %^PAL: | %^PALNo: | %^PALE: | %^PALÄ: | %^PALẸ: ] ;
+ DummiesBeforeConsLength = [%^V2VV: |%^VV2V: |%^VOWRaise:| %^VOWLower:| %^PAL: | %^PALNo: |%^PALÂ: |%^PALÕ:| %^PALE: | %^PALÄ: | %^PALẸ: ] ;
  DummiesBeforeVowelHeight = [( %^V2VV: |%^VV2V: )] ; 
 
 !! {{{
@@ -317,27 +320,27 @@ BetweenStemAndHeight = [( %^VV2V: |%^V2VV:)] ;
 BetweenStemAndPALAllo = [ BetweenStemAndHeight (%^VOWLower:|%^VOWRaise:|%^LowerI2E:)] ;
 
 !! possible triggers between stem and PALNo and PAL
-BetweenStemAndPALNo = [ BetweenStemAndHeight [(%^VOWLower:|%^VOWRaise:|%^LowerI2E:) (%^PALÄ:|%^PALE:|%^PALẸ:)| %^VOWBack: ] ] ;
+BetweenStemAndPALNo = [ BetweenStemAndHeight [(%^VOWLower:|%^VOWRaise:|%^LowerI2E:) (%^PALÄ:|%^PALE:|%^PALẸ:|%^PALÕ:|%^PALÂ:)| %^VOWBack: ] ] ;
 
 !! possible triggers between word end and consonant grade
-BetweenStemAndConsGrade = [ BetweenStemAndHeight ((%^VOWRaise:|%^VOWLower:|%^LowerI2E:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:)| %^VOWBack: (%^PALNo:|%^PAL:) ) ] ;
+BetweenStemAndConsGrade = [ BetweenStemAndHeight ((%^VOWRaise:|%^VOWLower:|%^LowerI2E:) ((%^PALÂ:|%^PALÕ:) %^PALNo:|(%^PALÕ:|%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:)| %^VOWBack: (%^PALNo:|%^PAL:) ) ] ;
 
 
 !! possible triggers between VowHeight and word end
 !! {{{
-BetweenVowHeightAndMorph = [(%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) (X3:) ((%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:|%^PALNo:)] ; !!= * @CODE@ 
+BetweenVowHeightAndMorph = [(%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) (X3:) ((%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÕ:) %^PAL:|(%^PALÂ:|%^PALÕ:) %^PALNo:)] ; !!= * @CODE@ 
 !! }}}
 
 BetweenPALNoAndMorph = [(%^CC2C:|%^C2CC:|%^XY2XYY:|%^XYY2XY:|%^KK2GG:|%^GG2KK:|%^CC2CCC:|%^C2CCC:|%^CCC2C:|%^CCC2CC:|%^XYYY2XYY:|%^XYYY2XY:|%^XY2XYYY:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:|%^GG2KKK:) RBound ] ;
 
 PenBetweenStemAndPALNo = [(%^PenV2VV:|%^PenVV2V:) (%^PenVOWRaise:|%^PenVOWLower:|%^PenVOWBack:) ] ;
 
-PenBetweenStemAndConsGrade = [(%^PenV2VV:|%^PenVV2V:) ((%^PenVOWRaise:|%^PenVOWLower:) (%^PenPALNo:|(%^PenPALE:|%^PenPALÄ:|%^PenPALẸ:) %^PenPAL:)| %^PenVOWBack: (%^PenPALNo:|%^PenPAL:) ) ] ;
+PenBetweenStemAndConsGrade = [(%^PenV2VV:|%^PenVV2V:) ((%^PenVOWRaise:|%^PenVOWLower:) ((%^PenPALÂ:|%^PenPALÕ:) %^PenPALNo:|(%^PenPALÕ:|%^PenPALE:|%^PenPALÄ:|%^PenPALẸ:) %^PenPAL:)| %^PenVOWBack: (%^PenPALNo:|%^PenPAL:) ) ] ;
 
-PenBetweenStemAndVowelLoss = [(%^PenV2VV:|%^PenVV2V:) [(%^PenVOWRaise:|%^PenVOWLower:) (%^PenPALNo:|(%^PenPALE:|%^PenPALÄ:|%^PenPALẸ:) %^PenPAL:)| %^PenVOWBack: (%^PenPALNo:|%^PenPAL:)] ([%^PenC2CC:|%^PenXY2XYY:]|%^PenCC2C:|%^PenXYY2XY:|%^PenCC2CCC:)] ;
+PenBetweenStemAndVowelLoss = [(%^PenV2VV:|%^PenVV2V:) [(%^PenVOWRaise:|%^PenVOWLower:) ((%^PenPALÂ:|%^PenPALÕ:) %^PenPALNo:|(%^PenPALE:|%^PenPALÄ:|%^PenPALẸ:|%^PenPALÕ:) %^PenPAL:)| %^PenVOWBack: (%^PenPALNo:|%^PenPAL:)] ([%^PenC2CC:|%^PenXY2XYY:]|%^PenCC2C:|%^PenXYY2XY:|%^PenCC2CCC:)] ;
 
 
-PenBetweenStemAndStemFinalVoicing = [(%^PenV2VV:|%^PenVV2V:) [(%^PenVOWRaise:|%^PenVOWLower:) (%^PenPALNo:|(%^PenPALE:|%^PenPALÄ:|%^PenPALẸ:) %^PenPAL:)| %^PenVOWBack: (%^PenPALNo:|%^PenPAL:) ] ([%^PenC2CC:|%^PenXY2XYY:]|%^PenCC2C:|%^PenXYY2XY:|%^PenCC2CCC:) (%^PenRmVow:)] ;
+PenBetweenStemAndStemFinalVoicing = [(%^PenV2VV:|%^PenVV2V:) [(%^PenVOWRaise:|%^PenVOWLower:) ((%^PenPALÂ:|%^PenPALÕ:) %^PenPALNo:|(%^PenPALÕ:|%^PenPALE:|%^PenPALÄ:|%^PenPALẸ:) %^PenPAL:)| %^PenVOWBack: (%^PenPALNo:|%^PenPAL:) ] ([%^PenC2CC:|%^PenXY2XYY:]|%^PenCC2C:|%^PenXYY2XY:|%^PenCC2CCC:) (%^PenRmVow:)] ;
 
 PenBetweenPALNoAndMorph = [(%^PenCC2C:|%^PenC2CC:|%^PenXYY2XY:|%^PenXYY2XYYY:|%^PenKK2GG:|%^PenGG2KK:|%^PenCC2CCC:|%^PenC2CCC:|%^PenCCC2C:|%^PenCCC2CC:|%^PenXYYY2XYY:|%^PenXYYY2XY:|%^PenXY2XYY:|%^PenXYY2VY:|%^PenXYY2VYY:|%^PenKKK2GG:|%^PenGG2KKK:) RBound ] ;
 
@@ -391,7 +394,7 @@ Rules
 !€# teevv%^VV2V%^VOWRaise%>uš
 !€0 t0ivv000uš
  OnSetC _ e: (ʹ:|0:ʹ) [LongC|Cns: :Cns*] [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ;
-          _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ; 
+       Cns:  _ (0:ʼ) [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ; 
 !         [Cns:+|:Cns+] _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^PenRmVow: ; 
 !!Ââvel+N+Prop+Sg+Loc  __Ivalo__
 !€# Ââvel%^PenRmVow%>est
@@ -496,6 +499,8 @@ Rules
 !! __@RULENAME@__ - used in zeeʹtt+N+Sg+Abe: zeeʹttʼtää
  0:ʼ <=>
      [ :n | :l ] ([%^C2CC:|%^XY2XYY:]) %> _ j ;
+     t e: _ t %^PenRmVow: ;
+!!jåʹttʼted+V+Inf
         m (ˈ:) m BetweenStemAndConsGrade (%^CCC2CC:) %>  _ m ; 
         v (ˈ:) v BetweenStemAndConsGrade (%^CCC2CC:) %>  _ v ; 
         s (ˈ:) s BetweenStemAndConsGrade (%^CCC2CC:) %>  _ s ; 
@@ -609,17 +614,17 @@ Rules
 
 "Even syllabic verbs I, diphthong raising beginning with e:i ä:e"
 !! __@RULENAME@__ 
- ä:e <=> OnSetC [u|e:i]  _ :ʹ [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+]  BetweenStemAndHeight %^VOWRaise: %^PALE: %^PAL: ;
+ ä:e <=> OnSetC [u|e:i]  _ (i|u) :ʹ [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+]  BetweenStemAndHeight %^VOWRaise: %^PALE: %^PAL: ;
 !€# čuä0ckk%^CONSH%^PALE%^PAL%>es
 !€# čueʹcǩ00000es
 
 "Even syllabic verbs I, diphthong raising beginning with e:i ä:ẹ"
 !! __@RULENAME@__ 
- ä:ẹ <=> OnSetC [u|e:i]  _ :ʹ [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+]  BetweenStemAndHeight %^VOWRaise: %^PALẸ: %^PAL: ;
+ ä:ẹ <=> OnSetC [u|e:i]  _ (i|u) :ʹ [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+]  BetweenStemAndHeight %^VOWRaise: %^PALẸ: %^PAL: ;
 
 "diphthong backing beginning with u ä:õ"
 !! __@RULENAME@__
- ä:õ <=>  u  _  (i) (:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+]  BetweenStemAndHeight %^VOWBack: ;
+ ä:õ <=>  u  _  (i|u) (:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+]  BetweenStemAndHeight %^VOWBack: ;
 
 
 "Even syllabic verbs I, diphthong raising beginning with ä:a u"
@@ -887,17 +892,18 @@ Rules
 
 !! vowel lengthening and consonant shortening, %^PenV2VV and %^CShort 
 
+"Even syllabic verbs I, relative vowel lengthening 0:â"
+!! __@RULENAME@__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
+ 0:â <=> OnSetC _ :â RelVowLengthening ;
+!Distinguishing mainstam and maainstam
+      Cns: _ â (u:|i:) (ʹ:|0:ʹ)  Cns: [Vow: |%{Â1%}:] Cns:+  %^PenV2VV: ;
+      e _ Cns: Cns:+ %^PALÂ: %^PALNo: ;
+
 "Relative vowel lengthening 0:Vx"
 ! __@RULENAME@__
  0:Vx <=> OnSetC _ :Vx (u:|i:|%{VU%}:) (ʹ:|0:ʹ)  Cns: [Cns:*|:Cns*] %^V2VV: ;
   OnSetC _ :Vx (u:|i:|%{VU%}:) (ʹ:|0:ʹ)  Cns: [Cns:*|:Cns*] [Vow: |%{Â1%}:] Cns:+  %^PenV2VV: ;
-                where Vx in (a ä â å e o õ) ;
-
-!"Even syllabic verbs I, relative vowel lengthening 0:â"
-!! __@RULENAME@__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
-! 0:â <=> OnSetC _ :â RelVowLengthening ;
-!!Distinguishing mainstam and maainstam
-!      Cns: _ â (u:|i:) (ʹ:|0:ʹ)  Cns: [Vow: |%{Â1%}:] Cns:+  %^PenV2VV: ;
+                where Vx in (a ä å e o õ) ;
 
 
 !"Even syllabic verbs I, relative vowel lengthening 0:e"
@@ -1082,9 +1088,8 @@ Rules
 
 "trisyllabic verbs and doer derivations, i>j"
 !! __@RULENAME@__ -
-!! {{{
  i:j <=> _ %^I2J: %>: Vow ;
-!! }}}
+
 
 !! !VOWELS TENSE vs LAX 2012-11-28
 
