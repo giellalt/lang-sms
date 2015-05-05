@@ -54,8 +54,10 @@ Trigger symbols
  *  %^PenVOWBack:0	      Backing e>õ, e>â vuäinn BUT vuõiʹni
 
  *  %^VOWFront:0	      Fronting
- *  %^PAL:0 %^PALNo:0 %^PALE:0 %^PALÄ:0 %^PALẸ:0    Palatalisation
- *  %^PenPAL:0 %^PenPALNo:0 %^PenPALE:0 %^PenPALÄ:0 %^PenPALẸ:0    Penultimate Palatalisation
+ *  %^PAL:0 %^PALNo:0 %^PALE:0 %^PALÄ:0 %^PALẸ:0 %^PALÂ:0 %^PALÕ:0    Palatalisation
+ *  %^PenPAL:0 %^PenPALNo:0 %^PenPALE:0 %^PenPALÄ:0 %^PenPALẸ:0 %^PenPALÂ:0   Penultimate Palatalisation
+ * %^PALK:0      causes k:ǩ and g:ǧ
+
  *  %^VC:0          Voicing s:z š:ž
  *  %^DeVC:0          devoicing z:s ž:š
  *  %^Â:0		 Indicates placement of â in stem
@@ -276,7 +278,7 @@ possible triggers between word end and consonant grade
 
 possible triggers between VowHeight and word end
 {{{
- * BetweenVowHeightAndMorph = [(%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) (X3:) ((%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:|%^PALNo:)] ;  
+ * BetweenVowHeightAndMorph = [(%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) (X3:) ((%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÕ:) %^PAL:|(%^PALÂ:|%^PALÕ:) %^PALNo:)] ;  
 }}}
 
 
@@ -505,8 +507,8 @@ __Even syllabic verbs I, secondary vowel fronting with PAL u õ:e__ - deriving +
 
 vowel lengthening and consonant shortening, %^PenV2VV and %^CShort 
 
+__Even syllabic verbs I, relative vowel lengthening 0:â__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
 
-__Relative vowel lengthening 0:Vx__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
 
 
 __Relative vowel lengthening 0:Vx__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
@@ -652,8 +654,7 @@ __Even syllabic verbs,  for v>u__ - uvdd > ouʹdde
 __Even syllabic verbs,  for v>u__ - luhtt  s s: ...
 
 __trisyllabic verbs and doer derivations, i>j__ -
-{{{
-}}}
+
 
 !VOWELS TENSE vs LAX 2012-11-28
 
