@@ -1927,28 +1927,53 @@ LEXICON V_PUEʹTTED !!= * @CODE@ pueʹtted:puätt
 +V+Der/N:»mõš NMN_X-MÕŠ ;
 +V+Der/škueʹtted:%^VOWLower%^PAL%^CC2C%>e»škuätt V_PUEʹTTED ;
 
-LEXICON TIETTED
+LEXICON V_TIEʹTTED !!= * @CODE@ tieʹtted:teâtt
 ! In the lexicon ''@LEXNAME@'' the verb __tieʹtted__ has the form __tiõtt__
-+V+Ind+Prs:		TIETTED-PRS ;
-+V+Ind+Prt:		TIETTED-PRT ;
-+V+Imprt:			TIETTED-IMPRT ;
-+V:%^V2VV%^VOWBack%^PAL%^CC2C%>	POTENTIAL ; !WG PAL for vuõʹljžem
-+V:%^V2VV%^PAL%^CC2C%>	POTENTIAL ; !WG PAL for vueʹljžem
-+V:%^V2VV%^VOWLower%^PALNo%^CC2C%>	CONDITIONAL ; !WG vowel lowering to cope with
-! vuâlǥas this would mean there is a form teâđas 2012-11-27
-+V+Pot+Sg3:%^V2VV%^PAL%^CC2C%>ež	K ; !WG vueʹljež
-+V+Pot+Sg3:%^V2VV%^VOWBack%^PAL%^CC2C%>ež	K ; !WG vuõʹljež
-+V+Inf:%^VOWFront%^PAL%>ed K ;
++V+Ind+Prs+Sg1:%^CC2C%>am		FINAL1	; !WG _teâđam_ 
++V+Ind+Prs+Sg2:%^PALNo%^CC2C%>ak		FINAL1	; !WG ! _teâđak_
++V+Ind+Prs+Sg3: FINAL1	; ! _teâtt_
++V+Ind+Prs+Pl1:%^VOWRaise%^PALE%^PAL%>ep		FINAL1	; ! _äʹlǧǧep_ _tieʹttep_
++V+Ind+Prs+Pl2:%^VOWRaise%^PALE%^PAL%>veʹted		FINAL1	; ! _tieʹttveʹted_
++V+Ind+Prs+Pl3:%^PALÄ%^PAL%>e		FINAL1	; ! _teäʹtte_ 
++V+Ind+Prs+Sg4:%^VOWRaise%^PALE%^PAL%^CC2C%>et FINAL1 ; ! vueʹljet
++V+Ind+Prs+ConNeg:%^VOWRaise%^PALE%^PAL%^CC2C FINAL1 ;
+
+!+V+Ind+Prt:		TIETTED-PRT ;
++V+Ind+Prt+Sg1:%^VOWRaise%^PAL%>em		FINAL1	; ! _tiõʹttem_
++V+Ind+Prt+Sg2:%^VOWRaise%^PAL%>iǩ		FINAL1	; ! _tiõʹttiǩ_
++V+Ind+Prt+Sg3:%^VOWRaise%^PAL%^CC2C%>i		K	; !WG ! _tiõʹđi_
++V+Ind+Prt+Pl1:%^VOWRaise%^PAL%^CC2C%>im		K  ; !WG ! _tiõʹđim_
++V+Ind+Prt+Pl1:%^VOWRaise%^PAL%^CC2C%>in		K  ; !WG ! _tiõʹđin_
++V+Ind+Prt+Pl2:%^VOWRaise%^PAL%^CC2C%>id		K	; !WG ! _tiõʹđid_
++V+Ind+Prt+Pl2:%^VOWRaise%^PALE%^PAL%^CC2C%>id		K	; ! _tieʹđid_
++V+Ind+Prt+Pl3:%^VOWRaise%^PAL%^CC2CCC%>e		FINAL1	; ! _tiõʹtte_ 
++V+Ind+Prt+Pl3:%^VOWRaise%^PALE%^PAL%^CC2CCC%>e		FINAL1	; ! _tieʹtte_
++V+Ind+Prt+Sg4:%^VOWRaise%^PAL%>eš FINAL1 ; ! tiõʹtteš
++V+Ind+Prt+ConNeg:%>am FINAL1 ; ! teâttam
+
+!+V+Imprt:			TIETTED-IMPRT ;
++V+Imprt+Sg2:%^VOWRaise%^PALE%^PAL%^CC2C K	; ! tieʹđ
++V+Imprt+Sg3:%^CC2C%>as		K	; ! teâđas
++V+Imprt+Pl1:%^VOWRaise%^PALE%^PAL%>ep 		K	;
++V+Imprt+Pl2:%^VOWRaise%^PALE%^PAL%>ed 		K  ;
++V+Imprt+Pl3:%^CC2CCC%>az		K	; ! teâtˈtaz
++V+Imprt+2+ConNeg:%^PAL%^CC2C K	; !WG
+
++V+Pot+Sg3:%^VOWRaise%^PAL%^CC2C%>ež	K ; !WG tiõʹđež
++V:%^VOWRaise%^PAL%^CC2C%>	POTENTIAL ; ! tiõʹđežem
++V:%^CC2C%>	CONDITIONAL ; !WG vowel lowering to cope with
++V+Inf:%^VOWRaise%^PALE%^PAL%>ed K ;
 +V+ActEss:%^PAL%>men K ;
-+V+GerTemp:%^V2VV%^PAL%^CC2C%>een K ;
-+V+GerInstr:%^V2VV%^PAL%^CC2C%>eeʹl K ;
++V+GerTemp:%^PAL%^CC2C%>een K ;
++V+GerInstr:%^PAL%^CC2C%>eeʹl K ;
 +V+Actio:%^PAL%>em K ;
-+V+PrsPrc:%^VOWBack%^PAL%>i K ; !vuõʹlǧǧi
++V+PrsPrc:%^VOWRaise%^PAL%>i K ; !vuõʹlǧǧi
 +V+PrsPrc:%^PAL%>i K ; !vueʹlǧǧi
 +V+PrfPrc:%^VOWLower%^VOWBack%^PALNo%>am K ;
-+V+Pass+PrfPrc:%^VOWBack%^PALNo%>um K ;
-+V+Imprt+13+ConNeg:%^VOWBack%^PALNo%>u K ;
-+V:%^V2VV%^PAL%^CC2C  VABESS ;		!WG
++V+Pass+PrfPrc:%^VOWRaise%>um K ;
++V+Imprt+13+ConNeg:%^VOWRaise%>u K ;
++V:%^PAL%^CC2C  VABESS ;		!WG
+
 
 LEXICON V_VUEIʹNNED !!= * @CODE@ vueiʹnned:vuäinn
 ! FORMS
@@ -2056,19 +2081,17 @@ LEXICON V_TÄIʹDDED !!= * @CODE@ täiʹdded:täidd
 ! Vowel raising
 ! NEEDS WORK
 !(son täidd) ??
-+V:%^VOWRaise%^PALE%^PAL VSUF-INF_ED ; !1
++V:%^PAL VSUF-INF_ED ; !1
 +V: VSUF-IND-PRS-SG3_ED ; !2
 +V+Ind+Prs+Pl3:%^PAL%>e K ; !3
 +V:%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ; !4
 +V:%^VOWRaise%^PAL%^XYY2XY%> VSUF-POTENTIAL_ED ; !5 vueiʹnet
-+V:%^VOWBack%^PAL%^XYY2XY%> VSUF-POTENTIAL_ED ; !5 vuõiʹnet
 +V:%^XYY2XY%> VSUF-CONDITIONAL_ED ; !5 ?2 ?7
-+V+Pot+Sg3:%^VOWBack%^PAL%^XYY2XY%>ež   K ; !6
-+V+Pot+Sg3:%^VOWRaise%^PALE%^PAL%^XYY2XY%>ež   K ; !6
++V+Pot+Sg3:%^VOWRaise%^PAL%^XYY2XY%>ež   K ; !6
 +V+Imprt+Sg3:%^XYY2XY%>as K ; !7
-+V:%^VOWBack VSUF-IMPRT-13-CONNEG_ED ; !8
-
++V:%^VOWRaise VSUF-IMPRT-13-CONNEG_ED ; !8
 +V+Der/N:»mõš NMN_X-MÕŠ ;
+
 
 LEXICON V_SUIʹTTED !!= * @CODE@ suiʹtted:suitt
 ! seek parallell in AIBBÂD
@@ -2915,10 +2938,88 @@ LEXICON V_KÅʹMRDED !!= * @CODE@ kåʹmrded:kååʹmmerd
 +V+Der/škueʹtted:%^PenVV2V%^PenCC2C%^RmVow%>e»škuätt V_PUEʹTTED ;
 
 
-LEXICON V_ǨEʹRJJTED
+LEXICON V_ČIEʹǨRDED !!= * @CODE@ čieʹǩrded:čieʹǩǩerd
+! FORMS
+! (1) +V+Inf: čieʹǩrded
+!   Ind.Prs.Pl1-Pl2, Ind.Prt.ConNeg
+!   Imprt.Pl1-Pl2-Pl3, ActEss, Actio, PrsPrc, PrfPrc
+! (2) +V+Ind+Prs+Sg3: čieʹǩǩard
+! (3) +V+Ind+Prs+Pl3: čieʹǩrdje
+! (4) +V+Ind+Prt+Pl3: čieʹǩrdje
+!   Ind.Prt.Sg1-Sg2-4
+! (5) +V+Imprt+Sg2: čieʹǩǩerd
+!   Ind.Prs.Sg1-Sg2-4-ConNeg
+!   Ind.Prt.Sg3-Pl1-Pl2
+!   Imprt.2.ConNeg
+!   VAbe, GerTemp, GerInstr
+!   Cond-Pot
+! (6) +V+Pot+Sg3: kåʹmrdež
+! (7) +V+Imprt+Sg3: čieʹǩrdââǥǥas
+! (8) +V+Imprt+13+ConNeg: čieʹǩrduku
+!    Pass.PrfPrc
++V+Ind+Prs+Sg3:%^PenVow2a K  ; ! čieʹǩǩard
++V+Ind+Prs+ConNeg: K ;    	      ! čieʹǩǩerd
++V+Ind+Prs+Sg1:%^PenCC2C%^RmVow%>am  K  ;  ! čieʹǩrdam
++V+Ind+Prs+Sg2:%^PenCC2C%^RmVow%>ak  K  ; !
++V+Ind+Prs+Pl1:%^PenCC2C%^RmVow%>ep  K  ; 
++V+Ind+Prs+Pl2:%^PenCC2C%^RmVow%>eʹped K  ;
++V+Ind+Prs+Pl3:%^PenCC2C%^RmVow%>e     K  ;
++V+Ind+Prs+Sg4:%^PenCC2C%^RmVow%>et K ; !
+
++V+Ind+Prt+Sg1:%^PenCC2C%^RmVow%>em             K  ; ! čieʹǩrdem
++V+Ind+Prt+Sg2:%^PenCC2C%^RmVow%>iǩ             K  ; ! čieʹǩrdiǩ
++V+Ind+Prt+Sg3:%^PenCC2C%^RmVow%>i              K  ; ! ! čieʹǩrdi
++V+Ind+Prt+Pl1:%^PenCC2C%^RmVow%>im             K  ; ! ! čieʹǩrdim
++V+Ind+Prt+Pl2:%^PenCC2C%^RmVow%>id             K  ; ! ! čieʹǩrdid
++V+Ind+Prt+Pl3:%^PenCC2C%^RmVow%>e              K  ; ! čieʹǩrde
++V+Ind+Prt+Sg4:%^PenCC2C%^RmVow%>eš K ; ! čieʹǩrdeš
++V+Ind+Prt+ConNeg:%^PenCC2C%^RmVow%>am K ; ! čieʹǩrdam
+
++V+Imprt+Sg3:%^PenCC2C%^RmVow%>ââǥǥas          K  ; !WG
++V+Imprt+Pl1:%^PenCC2C%^RmVow%>âkap                    K  ;
++V+Imprt+Pl2:%^PenCC2C%^RmVow%>eʹǩed           K  ;
++V+Imprt+Pl3:%^PenCC2C%^RmVow%>âkaz            K  ;
+
++V+Imprt+Sg2:	K ;				  ! kååʹmmerd
++V+Imprt+2+ConNeg:	K ;			  ! kååʹmmerd
++V+Imprt+13+ConNeg:%^PenCC2C%^RmVow%>uku K ;
++V+Imprt+13+ConNeg+Use/NG:%^PenV2VV%^PenCC2C%^RmVow%>uku K ;
+
++V:%^PenCC2C%^RmVow%>eʹ		VSUF-I-POTKOND ; !WG
++V+Pot+Sg3:%^PenCC2C%^RmVow%>ež	K ; !WG
++V+Inf:%^PenCC2C%^RmVow%>ed K ;
++V+ActEss:%^PenCC2C%^RmVow%>eʹmen K ;
++V+Actio:%^PenCC2C%^RmVow%>am K ;
++V+PrsPrc:%^PenCC2C%^RmVow%>eei K ;
++V+PrsPrc+Der/N:%^PenCC2C%^RmVow%>ee N_TUEJJEEI ;
++V+PrfPrc:%^PenCC2C%^RmVow%>am K ;
++V+Pass+PrfPrc:%^PenCC2C%^RmVow%>ummu K ;
++V+Pass+PrfPrc:%^PenCC2C%^RmVow%>uum K ;
++V+VAbess:%^PenCC2C%^RmVow%>eǩâni K ;
++V+GerTemp:%^PenCC2C%^RmVow%>een K ;
++V+GerInstr:%^PenCC2C%^RmVow%>eeʹl K ;
+!+V+Imprt+ConNeg:%^PenV2VV%^RmVow%>uku K ;
+!+V:%^PenV2VV%^RmVow%>eʹ	VSUF-I-POTKOND ; !WG
+!+V+Pot+Sg3:%^PenV2VV%^RmVow%>eʹž	K ; !WG
+!+V+Inf:%^PenV2VV%^RmVow%>ed K ;
+!+V+ActEss:%^PenV2VV%^RmVow%>eʹmen K ;
+!+V+Actio:%^PenV2VV%^RmVow%>am K ;
+!+V+PrsPrc:%^PenV2VV%^RmVow%>eei K ;
+!+V+PrsPrc+Der/N:%^PenV2VV%^RmVow%>eei NMN_X-EEI ;
+!+V+PrfPrc:%^PenV2VV%^RmVow%>am K ;
+!+V+Pass+PrfPrc:%^PenV2VV%^RmVow%>ummu K ;
+!+V+Pass+PrfPrc:%^PenV2VV%^RmVow%>uum K ;
+!+V+VAbess:%^PenV2VV%^RmVow%>eǩâni K ;
+!+V+GerTemp:%^PenV2VV%^RmVow%>een K ;
+!+V+GerInstr:%^PenV2VV%^RmVow%>eeʹl K ;
++V+Der/N:%^PenCC2C%^RmVow%>umuš NMN_X-MÕŠ ;
++V+Der/škueʹtted:%^PenCC2C%^RmVow%>e»škuätt V_PUEʹTTED ;
+
+
+LEXICON V_ǨEʹRJJTED !!= * @CODE@ ǩeʹrjjted:ǩeʹrjjet
 ! lexicon ''@LEXNAME@'' 
 ! ǩeʹrjjted:ǩeʹrjjet
-! * Yaml: __V-ǩeʹrjjted__
+! * Yaml: __V-kjerjjted__
 ! +Ind+Prs+ConNeg: ǩeʹrjjet
 +V+Ind+Prs+Sg3:%^PenVow2a K        ;
 +V+Ind+Prs+ConNeg: K ; ! ǩeʹrjjet
