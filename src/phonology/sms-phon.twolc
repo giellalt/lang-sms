@@ -580,7 +580,7 @@ Rules
 "Even syllabic verbs I, vowel raising â:õ" 
 !! __@RULENAME@__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
  â:õ <=>
-          OnSetC u   _    (i)  (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ :%ˈ Cns:+| Cns:+ (%ˈ:|:%ˈ) :Cns] (%{XC%}:) %^VOWRaise:  ;
+          OnSetC u   _    (i)  (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ :%ˈ Cns:+| Cns:+ (%ˈ:|:%ˈ) :Cns] (%{XC%}:) %^VOWRaise:  (%^PALNo:|%^PAL:) BetweenPALNoAndMorph ;
 !€# ruâk0k%^VOWRaise%^CC2CCC%>u
 !€0 ruõkˈk000u
   OnSetC â:  _      (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  BetweenStemAndHeight %^VOWRaise: ;
@@ -1106,7 +1106,10 @@ Rules
       u _ (:ʹ) [Cns:+|Cns:+ 0:%ˈ Cns:+] %^PALE: %^PAL: ;
 !€# kuâ0ll%^PALE%^PAL
 !€0 kueʹll00
-
+  [u|e:i]  _ (i|u) :ʹ [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+]  BetweenStemAndHeight %^VOWRaise: %^PALE: %^PAL: ;
+!!tieʹtted+V+Imprt+Sg2: __know/tietää__
+!€# teâ0tt%^VOWRaise%^PALE%^PAL%^CC2C
+!€0 tieʹđ00000
 
 "Even-syllabic nouns, for â:ẹ"
 !! __@RULENAME@__ 
