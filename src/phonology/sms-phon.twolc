@@ -385,6 +385,7 @@ Rules
     OnSetC   _ [Cns:+|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ;
 !         [Cns:+|:Cns+] _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ;
 
+      Cns: (:Cns*)  _ Cns:+ PenBetweenStemAndConsGrade %^RmVow: ;
 
 
 "Even syllabic verbs I, vowel shortening e:0"
@@ -408,6 +409,7 @@ Rules
 !€0 0eʹǩ00rd0000ed
 !! deriving cieʹǩǩes+N+Sg+Ill: ceäkˈksa
 
+      Cns: (:Cns*)  _ Cns:+ PenBetweenStemAndConsGrade %^RmVow: ;
 
 
 
@@ -419,6 +421,7 @@ Rules
 !! sååbbar+N+Sg+Gen __meeting__
 !€# sååbbar%^PenVV2V
 !€0 s0åbbar0
+      Cns: (:Cns*)  _ Cns:+ PenBetweenStemAndConsGrade %^RmVow: ;
 
 
 "Even syllabic verbs I, vowel shortening õ:0"
@@ -436,6 +439,9 @@ Rules
 
  OnSetC _ õ: (u) (ʹ:|0:ʹ) Cns: [ Cns:*|:Cns*]  %^VV2V:  ;
 
+      Cns: (:Cns*)  _ Cns:+ PenBetweenStemAndConsGrade %^RmVow: ;
+
+
 "Even syllabic verbs I, vowel shortening u:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
  u:0 <=> OnSetC _ u: (ʹ:|0:ʹ) [C2CCafterVV2V|Cns: :Cns+] (i:) %^VV2V: ;
@@ -443,6 +449,10 @@ Rules
 !€# juurd0%^VV2V%^C2CC%>j%>en
 !€0 j0urdd000j0en
       OnSetC  _ u: (ʹ:|0:ʹ) Cns:+ Vow: [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m] %^PenVV2V: ;
+      Cns: (:Cns*)  _ Cns:+ PenBetweenStemAndConsGrade %^RmVow: ;
+!!mainstummuš+N+Sg+Ill:
+!€# mainstum0uš%^PenC2CC%^RmVow%>a
+!€0 mainstumm0š000a
 
 
 "Even syllabic verbs I, vowel shortening i:0"
@@ -459,6 +469,8 @@ Rules
 
  OnSetC _ i: (u) (ʹ:|0:ʹ) Cns: [ Cns:*|:Cns*]  %^VV2V:  ;
 
+      Cns: (:Cns*)  _ Cns:+ PenBetweenStemAndConsGrade %^RmVow: ;
+
 
 "Even syllabic verbs I, vowel shortening o:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
@@ -474,6 +486,7 @@ Rules
 
          [Cns:+|:Cns+] _ [Cns:+|i:|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^RmVow: ; 
 
+      Cns: (:Cns*)  _ Cns:+ PenBetweenStemAndConsGrade %^RmVow: ;
 
 
 "Even syllabic verbs I, vowel shortening a:0"
@@ -490,6 +503,7 @@ Rules
    OnSetC :Vow+ (ʹ:|0:ʹ) [LongC|Cns:+ - [Cns:* [l|n]]] _ i: %> Vow: ; 
 
  OnSetC _ a: (u) (ʹ:|0:ʹ) Cns: [ Cns:*|:Cns*]  %^VV2V:  ;
+      Cns: (:Cns*)  _ Cns:+ PenBetweenStemAndConsGrade %^RmVow: ;
 
 
 "vowel to syllable mark a:ʼ"
@@ -1553,7 +1567,10 @@ Rules
          OnSetC   AllDbVow     (ʹ:|0:ʹ)          _ (%ˈ:) š: %^VOWXL: (%^CShort:) ;
 !€# kõõččm0õšš%^V2VV%^KK2GG
 !€0 kõõččmõõžž00
-!         _ %^VC: ;
+      Vow:   _ PenBetweenStemAndStemFinalVoicing %^VC: ;
+!!mainstummuš+N+Sg+Gen:
+!€# mainstum0uš%^PenC2CC%^VC
+!€# mainstummuž00
 
 "Even syllabic verbs I, Voicing c:ʒ"
 !! __@RULENAME@__ - cc:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
@@ -1765,7 +1782,8 @@ Rules
 
 "Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m"
 !! __@RULENAME@__ - kåʹmrded+V+Imp+Sg2: kååʹmmerd 
- 0:m <=> Vow:Vow (ʹ:|0:ʹ)  m _ Vow: Cns:+ PenBetweenStemAndConsGrade [%^PenC2CC:|%^PenXY2XYY:] [%^IMPSG2:|%^INDPRSSG3:] ;
+ 0:m <=> Vow:Vow (ʹ:|0:ʹ)  m _ Vow: Cns:+ PenBetweenStemAndConsGrade [%^PenC2CC:|%^PenXY2XYY:]  ;
+! Vow:Vow (ʹ:|0:ʹ)  m _ Vow: Cns:+ PenBetweenStemAndConsGrade [%^PenC2CC:|%^PenXY2XYY:] [%^IMPSG2:|%^INDPRSSG3:] ;
         m _ BetweenStemAndConsGrade [%^C2CC:|%^XY2XYY:] ;
 
 !€# ooum0%^VV2V%^C2CCu
