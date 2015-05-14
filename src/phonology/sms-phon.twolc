@@ -382,10 +382,10 @@ Rules
 !!čââʹđ+N+Sg+Ill: __heart/sydän__
 !€# čââʹđ0%^VV2V%^PALNo%^C2CC%>ma
 !€0 č0â0đđ0000ma
-    OnSetC   _ [Cns:+|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ;
+    OnSetC   _ (:ʼ) [Cns:+|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ;
 !         [Cns:+|:Cns+] _ [Cns|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ;
 
-      Cns: (:Cns*)  _ Cns:+ PenBetweenStemAndConsGrade %^RmVow: ;
+      Cns: (:Cns*)  _ (:ʼ) Cns:+ PenBetweenStemAndConsGrade %^RmVow: ;
 
 
 "Even syllabic verbs I, vowel shortening e:0"
@@ -409,7 +409,7 @@ Rules
 !€0 0eʹǩ00rd0000ed
 !! deriving cieʹǩǩes+N+Sg+Ill: ceäkˈksa
 
-      Cns: (:Cns*)  _ Cns:+ PenBetweenStemAndConsGrade %^RmVow: ;
+      Cns: (:Cns*)  _ (:ʼ) Cns:+ PenBetweenStemAndConsGrade %^RmVow: ;
 
 
 
@@ -495,15 +495,20 @@ Rules
 !€# saa0kk%^VV2V%^PAL%>e
 !€0 s0aʹǩǩ000e
  OnSetC _ a: (ʹ:|0:ʹ) [LongC|Cns: :Cns*] Vow: Cns %^PenVV2V: ;
-       OnSetC   _ [Cns:+|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ; 
+       OnSetC   _ (:ʼ) [Cns:+|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ; 
 !!Aanar+N+Prop+Sg+Ill: __Inari/Enare__
 !€# Aanar%^RmVow%>a
 !€# Aan0r00a
          OnSetC _ a: (ʹ:|0:ʹ) Cns:+ Vow: [Cns|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^PenVV2V: ; 
-   OnSetC :Vow+ (ʹ:|0:ʹ) [LongC|Cns:+ - [Cns:* [l|n]]] _ i: %> Vow: ; 
+   OnSetC :Vow+ (ʹ:|0:ʹ) [LongC|Cns:+ - [Cns:* [l|n]]] _ i: %^RmVow: %> Vow: ; 
 
  OnSetC _ a: (u) (ʹ:|0:ʹ) Cns: [ Cns:*|:Cns*]  %^VV2V:  ;
-      Cns: (:Cns*)  _ Cns:+ PenBetweenStemAndConsGrade %^RmVow: ;
+      Cns: (:Cns*)  _ (:ʼ) Cns:+ PenBetweenStemAndConsGrade %^RmVow: ;
+
+  OnSetC _ (:ʼ) Cns:+ %^RmVow:  ;
+!!mättʼted+V+Inf: __teach/opettaa__
+!€# mätta0t%^RmVow%>ed
+!€0 mätt0ʼt00ed
 
 
 "vowel to syllable mark a:ʼ"
@@ -519,6 +524,9 @@ Rules
      [ :n | :l ] ([%^C2CC:|%^XY2XYY:]) %> _ j ;
      n Vow: _ n %^RmVow: ;
      t Vow: _ t %^RmVow: ;
+!!mättʼted+V+Inf: __teach/opettaa__
+!€# mätta0t%^RmVow%>ed
+!€# mätt0ʼt00ed
      j Vow: _ j %^RmVow: ;
 !!jåʹttʼted+V+Inf
         m (ˈ:) m BetweenStemAndConsGrade (%^CCC2CC:) %>  _ m ; 
@@ -1229,11 +1237,9 @@ Rules
  
 "Even-syllabic verbs I, Palatalization of g:ǧ"
 !! __@RULENAME@__ -
- g:ǧ <=> Vow: (ʹ:|0:ʹ) (Cns:)     _ g: (%^VV2V:|%^VOWSH: (%^CLong:)) NeutrHighBack (X3:) (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: RBound ;
-           Vow: (ʹ:|0:ʹ) (Cns:) g: _     (%^VV2V:|%^VOWSH: (%^CLong:)) NeutrHighBack (X3:) (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: RBound ;
-!with insertion of palatal before
-           Vow: (ʹ:|0:ʹ) (Cns:)     _ g: (%^VV2V:|%^VOWSH: (%^CLong:)) NeutrHighBack (X3:) (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: RBound ;
-           Vow: (ʹ:|0:ʹ) (Cns:) g: _     (%^VV2V:|%^VOWSH: (%^CLong:)) NeutrHighBack (X3:) (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: RBound ;
+ g:ǧ <=> Vow: (ʹ:|0:ʹ) (Cns:)     _ (ˈ:0|0:ˈ) g: BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CCC2CC:) RBound ;
+           Vow: (ʹ:|0:ʹ) (Cns:) g: (ˈ:0|0:ˈ) _   BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CCC2CC:) RBound ;
+
     Vow: 0: _ BetweenStemAndPALNo %^PAL: ;
 !!bioloog+N+Sg+Ill __biologist__
 !€# bioloo0g%^PAL%>e
@@ -1957,7 +1963,7 @@ Rules
 "Removing Consonant X3 length mark after diphthong in vertical line %ˈ LEFT ARROW"
 !! __@RULENAME@__ - deriving 
 !!b c č ǯ d đ g ǧ k ǩ l m n p r s š t v also htˈt nˈnj
-!! {{{BetweenStemAndConsGrade [%^C2CC:|%^XY2XYY:]
+!! {{{ BetweenStemAndConsGrade [%^C2CC:|%^XY2XYY:]
  %ˈ:0 <= Diphth (ʹ:|0:ʹ)     b _ b     BetweenStemAndConsGrade %^CCC2CC: ;
          Diphth (ʹ:|0:ʹ)     c _ c     BetweenStemAndConsGrade %^CCC2CC: ;
          Diphth (ʹ:|0:ʹ)     č _ č     BetweenStemAndConsGrade %^CCC2CC: ;
