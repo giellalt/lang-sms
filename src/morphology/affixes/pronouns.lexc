@@ -18,6 +18,8 @@ LEXICON PRON_
 !! The lexicon ''@LEXNAME@'' assigns the tag __+Pron__
 +Pron: # ;
 
+LEXICON PRON-PERS_
++Pron+Pers: # ;
 
 !! !!!Pronouns
 
@@ -30,7 +32,7 @@ Demonstrative ; !!= * @CODE@
 Reflexive ;     !!= * @CODE@
 Interrogative ; !!= * @CODE@
 ! Reciprocal ;
-! Relative ;
+ Relative ;	!!= * @CODE@ kååʹtt, mii
 ! Indefinite ;
 
 
@@ -97,7 +99,7 @@ tut+Pron+Dem:tu 	SHORTDEM ;
 tõt+Pron+Dem:tõ 	SHORTDEM ;
 tät+Pron+Dem:tää 	LONGDEM ;
 tut+Pron+Dem:tuu 	LONGDEM ;
-tõt+Pron+Dem:0t  	TOTDEM ; !!= * @CODE@ The Epsilon has been inserted 2015-02-11
+tõt+Pron+Dem:t  	TOTDEM ; !!= * @CODE@ The Epsilon has been removed 2015-05-13
 tiet-aa:tie 		TIET-AA ;
 
 LEXICON SHORTDEM !!= * @CODE@
@@ -245,14 +247,15 @@ LEXICON RCOMPLPX !!= * @CODE@
 
 
 LEXICON Interrogative !!= * @CODE@
-mii+Pron+Interr:0m	MK ; !!= * @CODE@ The Epsilon  inserted 2015-02-11
-ǩii+Pron+Interr:0ǩ	MK ; !!= * @CODE@ The Epsilon  inserted 2015-02-11
+mii+Pron+Interr:m	MK ; !!= * @CODE@ The Epsilon  inserted 2015-02-11
+ǩii+Pron+Interr:ǩ	MK ; !!= * @CODE@ The Epsilon  inserted 2015-02-11
 mii+Pron+Interr:mõõ	MK-long ;
 ǩii+Pron+Interr:ǩeä	MK-long ;
 mii+Pron+Interr:mõ	MK-short ;
 ǩii+Pron+Interr:ǩeä	MK-short ;
 mii+Pron+Interr:mââ	MK-low ;
 ǩii+Pron+Interr:ǩeä	MK-low ;
+mii+Pron+Interr+Sg+Loc:mâʹst	K ;
 
 LEXICON MK !!= * @CODE@
 +Sg+Nom:ii	K ;
@@ -264,7 +267,7 @@ LEXICON MK-long !!= * @CODE@
 +Pl+Nom:k	K ;
 
 LEXICON MK-short !!= * @CODE@
-+Sg+Com:ʹin	K ;
++Sg+Com:in	K ;
 +Sg+Abe:ntää	K ;
 
 LEXICON MK-low !!= * @CODE@
@@ -273,6 +276,33 @@ LEXICON MK-low !!= * @CODE@
 +Par:ʹđed	K ;
 +Pl+Com:ivuiʹm	K ;
 +Pl+Abe:itää	K ;
+
+
+LEXICON Relative !!= * @CODE@
+mii+Pron+Rel:m       MK ;
+ǩii+Pron+Rel:ǩ       MK ;
+mii+Pron+Rel:mõõ     MK-long ;
+ǩii+Pron+Rel:ǩeä     MK-long ;
+mii+Pron+Rel:mõ      MK-short ;
+ǩii+Pron+Rel:ǩeä     MK-short ;
+mii+Pron+Rel:mââ     MK-low ;
+ǩii+Pron+Rel:ǩeä     MK-low ;
+mii+Pron+Rel+Sg+Loc:mâʹst	K ;
+kååʹtt+Pron+Rel+Sg+Nom:kååʹtt K ;
+kååʹtt+Pron+Rel+Sg+Acc:koon K ;
+kååʹtt+Pron+Rel+Sg+Gen:koon K ;
+kååʹtt+Pron+Rel+Sg+Gen+Err/Orth:koonn K ;
+kååʹtt+Pron+Rel+Sg+Ill:koozz K ;
+kååʹtt+Pron+Rel+Sg+Loc:koʹst K ;
+kååʹtt+Pron+Rel+Sg+Com:kooin K ;
+kååʹtt+Pron+Rel+Pl+Nom:kook K ;
+kååʹtt+Pron+Rel+Pl+Gen:kooi K ;
+kååʹtt+Pron+Rel+Pl+Acc:koid K ;
+kååʹtt+Pron+Rel+Pl+Ill:koid K ;
+kååʹtt+Pron+Rel+Pl+Loc:koin K ;
+kååʹtt+Pron+Rel+Pl+Loc:kooin K ;
+kååʹtt+Pron+Rel+Sg+Prl:kooiǥ K ;
+!kååʹtt+Pron+Rel:koot K ; 
 
 
 !! !SPATIAL PRONOUNS
