@@ -4399,9 +4399,9 @@ LEXICON N_TOBDDI !!= * @CODE@ tobddi:tobddi
 +N: SG-ABE ;    		! tobdditaa
 +N:%^V2VV%^XYY2XY PL-NOM ;             ! toobdi
 +N+Use/NG: PL-NOM ;             ! tobddi
-+N: PL-OBL ;             	! tobddi
-+N+Use/NG:%^V2VV%^XYY2XY PL-NOM ;      ! toobdi
-+N+Use/NG:%^V2VV%^XYY2XY PL-OBL ;      ! toobdi
++N:%^I2J PL-OBL ;             	! tobddji
++N+Use/NG: PL-NOM ;      ! tobddi
++N+Use/NG:%^V2VV%^XYY2XY%^I2J PL-OBL ;      ! toobdji
 
 LEXICON N_ǨIÕSSI !!= * @CODE@ ǩiõssi:ǩiõssi
 ! gradation: yes
@@ -4422,9 +4422,9 @@ LEXICON N_ǨIÕSSI !!= * @CODE@ ǩiõssi:ǩiõssi
 +N: SG-ABE ;    		! ǩiõssitaa
 +N:%^KK2GG PL-NOM ;             ! ǩiõzzi
 +N+Use/NG: PL-NOM ;             ! ǩiõssi
-+N: PL-OBL ;             	! ǩiõssi
-+N+Use/NG:%^KK2GG PL-NOM ;      ! ǩiõzzi
-+N+Use/NG:%^KK2GG PL-OBL ;      ! ǩiõzzi
++N:%^I2J PL-OBL ;             	! ǩiõssji
++N+Use/NG: PL-NOM ;      	! ǩiõssi
++N+Use/NG:%^KK2GG%^I2J PL-OBL ;      ! ǩiõzzji
 
 LEXICON N_VUÕLLI !!= * @CODE@ vuõlli:vuõlli
 ! gradation: yes
@@ -4435,16 +4435,14 @@ LEXICON N_VUÕLLI !!= * @CODE@ vuõlli:vuõlli
 !! NumContLex="1.2"
 +N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
-+N:%^CC2C SG-ABE/ACC/GEN ;
-+N:%^CC2C SG-ACC ;
++N: SG-ABE/ACC/GEN ;
 +N:%^I2J%>a SG-ILL ;
 +N:%^I2J%>e SG-LOC ;
 +N:%^CC2C SG-COM_N ;
 +N:%^I2J%>e ESS ; ! ess and prt without
 +N:%^I2J%>e PAR ;
-+N:%^CC2C SG-ABE ;
 +N:%^CC2C PL-NOM ;
-+N:%^CC2C PL-OBL ;
++N:%^I2J PL-OBL ;
 
 
 LEXICON N_SUÕSKKI !!= * @CODE@ suõskki:suõskki
@@ -4457,17 +4455,15 @@ LEXICON N_SUÕSKKI !!= * @CODE@ suõskki:suõskki
 +N: ATTESTED-NOUN-STEM ;		! suõskki
 +N: SG-NOM ;	       			! suõskki
 +N: SG-ABE/ACC/GEN ;	! 
-+N: SG-ACC ;	!
 +N:%^RmVow%^I2J%>a SG-ILL ;    		! suõskkja
 +N:%^RmVow%^I2J%>e SG-LOC ;
 +N:%^RmVow%^I2J%>i SG-COM_N ;
 +N:%^RmVow%^I2J%>e ESS ; ! ess and prt without
 +N:%^RmVow%^I2J%>e PAR ;
-+N:%^PenXYY2XY SG-ABE ;
 +N:%^PenXYY2XY PL-NOM ;				! suõski
 +N+Use/NG: PL-NOM ;				! suõskki
-+N:%^RmVow%^I2J%>i PL-OBL ;			! suõskki
-+N+Use/NG:%^PenXYY2XY%^RmVow%^I2J%>i PL-OBL ;	! suõski
++N:%^RmVow%^I2J%>i PL-OBL ;			! suõskkji
++N+Use/NG:%^PenXYY2XY%^RmVow%^I2J%>i PL-OBL ;	! suõskji
 
 LEXICON N_ǨIÕʹLDDI !!= * @CODE@ ǩiõʹlddi:ǩiõʹlddi
 ! gradation: yes
@@ -4479,18 +4475,15 @@ LEXICON N_ǨIÕʹLDDI !!= * @CODE@ ǩiõʹlddi:ǩiõʹlddi
 +N: ATTESTED-NOUN-STEM ;	! ǩiõʹlddi
 +N: SG-NOM ;	       		! ǩiõʹlddi
 +N: SG-ABE/ACC/GEN ;    		! ǩiõʹlddi
-+N: SG-ACC ;    		! ǩiõʹlddi
 +N:%^I2J%>a SG-ILL ;		! ǩiõʹlddja
 +N:%^I2J%>e SG-LOC ;		! ǩiõʹlddjest
 +N:%^CC2C SG-COM_N ;		! ǩiõʹlddjin
 +N:%^I2J%>e ESS ;  		! ǩiõʹlddjen
 +N:%^I2J%>e PAR ;		! ǩiõʹlddjed
-+N: SG-ABE ;    		! ǩiõʹldditaa
 +N:%^XYY2XY PL-NOM ;             ! ǩiõʹldi
 +N+Use/NG: PL-NOM ;             ! ǩiõʹlddi
-+N: PL-OBL ;             	! ǩiõʹlddi
-+N+Use/NG:%^XYY2XY PL-NOM ;      ! ǩiõʹldi
-+N+Use/NG:%^XYY2XY PL-OBL ;      ! ǩiõʹldi
++N:%^I2J PL-OBL ;             	! ǩiõʹlddji
++N+Use/NG:%^XYY2XY%^I2J PL-OBL ;      ! ǩiõʹldji
 
 LEXICON N_KÅČČAI !!= * @CODE@ is for nouns with ''-est'' +Loc
 ! gradation: yes
@@ -4501,15 +4494,13 @@ LEXICON N_KÅČČAI !!= * @CODE@ is for nouns with ''-est'' +Loc
 +N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
 +N:%^V2VV SG-ABE/ACC/GEN ;
-+N:%^V2VV SG-ACC ;
 +N:%^I2J%>a SG-ILL ;
 +N:%^I2J%>e SG-LOC ;
 +N:%^V2VV SG-COM_N ;
 +N:%^I2J%>e ESS ; ! ess and prt without
 +N:%^I2J%>e PAR ;
-+N:%^V2VV SG-ABE ;
 +N:%^V2VV PL-NOM ;
-+N:%^V2VV PL-OBL ;
++N:%^V2VV%^I2J PL-OBL ;
 
 LEXICON N_SÄRNNAI !!= * @CODE@ särnnai:särnnai
 ! is for nouns with ''-est'' +Loc
@@ -4990,6 +4981,7 @@ LEXICON NMN_OBL-KAAĐNEǨ
 :%^V2VV%^PAL%>e SG-LOC ;
 :%^V2VV%^PAL%> SG-COM_IN ;
 :%^V2VV%^PAL PL-OBL ;
+
 
 
 !! !!l-stems
