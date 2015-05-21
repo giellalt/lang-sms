@@ -3950,12 +3950,14 @@ LEXICON NMN_OOUMAŽ
 :až SG-NOM ;
 :%^VV2V%^C2CC%>u SG-ABE/ACC/GEN-PL-NOM ;
 :ž NMN_SG-ILL_E ;
-:%^VV2V%^C2CCu NMN_SG-LOC_ZERO ;
-:%^VV2V%^C2CCu SG-COM_IN ;
+:%^VV2V%^C2CCu NMN_SG-LOC_ZERO ;	! oummust
+:%^VV2V%^C2CCu SG-COM_IN ;     		! oummuin
+:%^VV2V%^C2CC SG-COM_IN ;     		! oummin
 :až NMN_ESS_E ;
 :až NMN_PAR_E ;
 
-:%^VV2V%^C2CCu PL-OBL ;
+:%^VV2V%^C2CCu PL-OBL ;			! oummui
+:%^VV2V%^C2CC PL-OBL ;			! oummi
 
 
 LEXICON N_ČUÂǤǤAS !!= * @CODE@ 
@@ -5537,6 +5539,34 @@ LEXICON NMN_SPÄʹSSEB
 :%^RmVow SG-ABE ;
 : PL-NOM ;
 :%^RmVow PL-OBL ;
+
+LEXICON N_PRÄÄʹZNIǨ
++N: NMN_PRÄÄʹZNIǨ ;
+LEXICON NMN_PRÄÄʹZNIǨ
+! gradation: yes
+!    Penultimate: Yes
+!      Extra strong grade: Else
+!      Weak grade: Sg.Nom, Sg.Gen, Sg.Acc, Pl.Nom
+!    Ultimate: None
+! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
+! Stem vowel: e
+! Ultimate stem consonant
+!! stemtype l-stem prääʹzniǩ:prääʹzniǩ
+!! * __@LEXNAME@__ = Koulukielioppi stemtype II 9 (29)
+!! ** Yaml: __N-spaesseb __ 
+: ATTESTED-NOUN-STEM ;
+: SG-NOM ;
+: SG-GEN ;
+: SG-ACC ;
+:%^PenPALNo%^RmVow%^PALNo%>a SG-ILL ;	! prääznka
+:%^RmVow%>e SG-LOC ;
+:%^RmVow SG-COM_IN ;
+:%^RmVow%>e ESS ; ! ess and prt without
+:%^RmVow%>e PAR ;
+:%^RmVow SG-ABE ;
+: PL-NOM ;
+:%^RmVow PL-OBL ;
+
 
 LEXICON N_STROITTEʹL !!= * @CODE@ stroitteʹl:stroitteʹl
 +N: NMN_STROITTEʹL ;
