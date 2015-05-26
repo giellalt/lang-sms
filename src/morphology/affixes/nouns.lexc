@@ -2314,7 +2314,7 @@ LEXICON NMN_ČÄÄʹCC
 :%^VOWRaise%^KK2GG PL-OBL ;
 +Der/Dim:%^PALNo%^KK2GG%> N_KUÂLAŽ ;
 
-LEXICON N_ŠKUUʹL !!= * @CODE@ škuuʹl:škuuʹl
+LEXICON N_ŠKUUʹL !!= * @CODE@ škuuʹl:šku%{VU%}l
 +N: NMN_ŠKUUʹL ;
 LEXICON NMN_ŠKUUʹL
 ! gradation: no
@@ -2351,17 +2351,17 @@ LEXICON NMN_ŠKUUʹL
 !! * There are several stem types
 !! * škuuʹl:škuuʹl
 !!
- ATTESTED-NOUN-STEM ;
-: SG-NOM ;
-: SG-ABE/ACC/GEN-PL-NOM ;
-:%^V2VV%^VOWLower%^PALNo%>a SG-ILL ;
-!:%^V2VV%^VOWLower%^PALNo%>a SG-ILL ; work with u:õ
-:%>e SG-LOC ;
-: SG-COM_IN ; !2015-04-24 Is this correct
-:%>e ESS ; ! ess and prt without
-:%>e PAR ;
-: PL-OBL ;
-+Der/Dim:%^V2VV%^VOWLower%^PALNo%> N_KUÂLAŽ ;
+:%^PAL ATTESTED-NOUN-STEM ;			! škuuʹl
+:%^PAL SG-NOM ;	    			! škuuʹl
+:%^PAL SG-ABE/ACC/GEN-PL-NOM ;		! škuuʹl
+:%^V2VV%^VOWLower%>a SG-ILL ;	! škooula
+!:%^V2VV%^VOWLower%>a SG-ILL ; work with u:õ
+:%^PAL%>e SG-LOC ;
+:%^PAL SG-COM_IN ; !2015-04-24 Is this correct
+:%^PAL%>e ESS ; ! ess and prt without
+:%^PAL%>e PAR ;
+:%^PAL PL-OBL ;
++Der/Dim:%^V2VV%^VOWLower%> N_KUÂLAŽ ;
 
 
 LEXICON N_PÂÂʹJJ !!= * @CODE@ pââʹjj:pââʹjj
@@ -4793,6 +4793,25 @@ LEXICON N_VUEʹSTTI !!= * @CODE@ vueʹstti:vueʹstti
 
 
 
+
+LEXICON N_ÕPSS !!= * @CODE@ õpss:õpss
+! gradation: yes
+! opposite gradation of juurd
+! compare: tõõuʹnj, stääʹlj, kuunnj, säuʹnnj
+!! ** Yaml: __N-opss__
+!! * There are several stem types 
++N: ATTESTED-NOUN-STEM ;
++N: SG-NOM ;
++N:%^V2VV%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;
++N:%>j%>a SG-ILL ;
++N:%^V2VV%^XYY2XY%>j%>e SG-LOC ;
++N:%^V2VV%^XYY2XY%>j SG-COM_IN ;
++N:%>j%>e ESS ;
++N:%>e PAR ;
++N:%^V2VV%^XYY2XY%>j PL-OBL ;
++N+Der/Dim:%^V2VV%^XYY2XY%>j N_KUÂLAŽ ;
+
+
 LEXICON N_JUURD !!= * @CODE@ juurd:jurdd
 ! gradation: yes
 !! is for nouns with stem ''i'' + ''-est'' +Sg+Loc; all stem other than the +Sg+Nom are X3; the ''i'' does not occur in +Par 
@@ -5395,9 +5414,9 @@ LEXICON N_SÅÅBBAR
 !! stemtype n-stem sååbbar:sååbbar
 !! N_GEN2X3-NOM2X1
 !! ** Yaml: __N-sååbbar__
-+N: ATTESTED-NOUN-STEM ;
-+N: SG-NOM ;
-+N:%^PenVV2V SG-GEN ;
++N: ATTESTED-NOUN-STEM ;		! sååbbar
++N: SG-NOM ;	       			! sååbbar
++N:%^PenVV2V SG-GEN ;			! såbbar
 +N:%^PenVV2V SG-ACC ;
 +N:%^PenVV2V%^RmVow%>a SG-ILL ;
 +N:%^PenVV2V%^RmVow%>e SG-LOC ;
@@ -5538,6 +5557,28 @@ LEXICON NMN_SLOOHMAN
 !! !!2.3.2.2.1.1 The Sg.Com vowel i appears before final n  
 !NumContLex="1.2"
 !! ** Yaml: __A-sloohman__
+:%^RmVow%> PL-OBL ;
+:%^RmVow%>e ESS ;
+:%^RmVow%>e PAR ;
+:%^RmVow%> SG-COM_IN ;
+:  SG-ABE/ACC/GEN-PL-NOM ;
+:%^RmVow%>a SG-ILL ;
+:%^RmVow%>e SG-LOC ;
+ ATTESTED-NOUN-STEM ;
+:  SG-NOM ;
+
+LEXICON N_ČEÄPPAT
+! gradation: no
++N: NMN_ČEÄPPAT ;
+LEXICON NMN_ČEÄPPAT
+!! !!2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 252)
+!! !!2.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
+!! !!2.3.2 Sg.Ill in -a
+!! !!2.3.2.2 LACKS Gradation
+!! !!2.3.2.2.1 Penultimate stem vowel loss: (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Gen, Pl.Acc, Pl.Ill, Pl.Loc, Pl.Com, Pl.Abe)
+!! !!2.3.2.2.1.1 The Sg.Com vowel i appears before final n  
+!NumContLex="1.2"
+!! ** Yaml: __A-cheappat__
 :%^RmVow%> PL-OBL ;
 :%^RmVow%>e ESS ;
 :%^RmVow%>e PAR ;
