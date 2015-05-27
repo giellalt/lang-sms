@@ -2238,6 +2238,51 @@ LEXICON NMN_SÄÄʹMM
 :%^VOWRaise%^CC2C PL-OBL ;
 +Der/Dim:%^PALNo%^CC2C%> N_KUÂLAŽ ;
 
+LEXICON N_NUʹBB !!= * @CODE@ nuʹbb:nuʹbb
++N: NMN_NUʹBB ;
+LEXICON NMN_NUʹBB
+! gradation: yes
+! vowel: monophthong
+! weak: single
+!! !!1.3 Sg.Loc in -est (vowel shift)
+!! !!  Raised: Sg.Com, Pl.Obl
+!! !!  Lowered: ELSE
+!! !!  e-stems (Sg.Loc, Ess, Par).
+!! !!1.3.2 Sg.Ill vowel -a
+!! !!1.3.2.1 Has Palatalization
+!! !!  Palatalized: ELSE
+!! !!  Not Palatalized: Sg.Ill
+!! !!1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+!! !!1.3.2.1.1.1 Has Orthographic Gradation
+!! !!1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+!! !!  Strong grade: Sg.Nom, Ess, Par
+!! !!  Extra strong grade: Sg.Ill
+!! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+!! !!FORMS
+!! !!(1) Sg.Nom: nuʹbb
+!! !!(2) Pl.Nom: nuuʹbb
+!! !!(3) Sg.Ill: nobba
+!! !!(4) Sg.Loc: nuuʹbbest
+!! !!(5) Sg.Com: nuuʹbbin
+!! !!(6) Ess: nuʹbben
+!! !!(7) Par: nuʹbbed
+!! !!(8) Pl.Acc: nuuʹbbid
+!! !!(9) Der/Dim.N.Sg.Nom: noobbaž
+!! NumContLex="1.113"
+!! ** Yaml: __N-nubb__
+!! * There are several stem types
+!!
+ ATTESTED-NOUN-STEM ;			! nuʹbb
+: SG-NOM ;	    			! nuʹbb
+:%^V2VV SG-ABE/ACC/GEN-PL-NOM ;		! nuuʹbb
+:%^VOWLower%^PALNo%>a SG-ILL ;		! nobba
+:%^V2VV%>e SG-LOC ;	    	   	! nuuʹbbest
+:%^V2VV SG-COM_IN ;			! nuuʹbbin
+:%>e ESS ; 	  			! nuʹbben
+:%>e PAR ;				! nuʹbbed
+:%^V2VV PL-OBL ;			! nuuʹbbi
++Der/Dim:%^V2VV%^VOWLower%^PALNo%> N_KUÂLAŽ ;	! noobbaž
+
 LEXICON N_NJUUʹNN !!= * @CODE@ njuuʹnn:njuuʹnn
 +N: NMN_NJUUʹNN ;
 LEXICON NMN_NJUUʹNN
@@ -3967,6 +4012,31 @@ LEXICON NMN_JARPLAN
 :%^V2VV SG-COM_IN ;
 :%^V2VV%>e ESS ; ! ess and prt without
 :%^V2VV%>e PAR ;
+:%^V2VV PL-OBL ;
+
+LEXICON N_ATOM !!= * @CODE@ atom:atom
++N: NMN_ATOM ;
+LEXICON NMN_ATOM
+! gradation: yes
+!! !!2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
+!! !!2.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
+!! !!2.1.3 Sg.Ill in palatalization and -e
+!! !!2.1.3.3 Has Gradation in last syllable
+!! !!2.1.3.3.1 Monophthong
+!! !!2.1.3.3.1.3 Consonant always short
+!! !!2.1.3.3.1.3.4 Sg.Nom Short vowel AND Short consonant
+!! !!2.1.3.3.1.3.4.1.Sg.Gen Weak Grade
+!! !!2.1.3.3.1.3.4.1.3 Sg.Ill Weak Grade
+!! atom:atom
+!! ** Yaml: __N-atom__
+ ATTESTED-NOUN-STEM ;			! atom
+: SG-NOM ;	    			! atom
+:%^V2VV SG-ABE/ACC/GEN-PL-NOM ;		! atoom
+:%^V2VV%^PAL%>e SG-ILL ;      		! atooʹme
+:%^V2VV%>â SG-LOC ;    			! atoomâst
+:%^V2VV SG-COM_IN ;			! atoomin
+:%^V2VV%>â ESS ;  			! atoomân
+:%^V2VV%>â PAR ;
 :%^V2VV PL-OBL ;
 
 LEXICON N_SÄʹPPLI !!= * @CODE@ 
@@ -5945,6 +6015,22 @@ LEXICON N_REʹPPIǨ
 +N:%^PenV2VV%^RmVow PL-OBL ;
 
 
+!! PENULTIMATE O:0
+LEXICON N_MOOTTOR !!= * @CODE@ moottor:moottor
+! gradation: no
+! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
+! Stem vowel: e
+!! ** Yaml: __N-moottor__
++N: ATTESTED-NOUN-STEM ;	! moottor
++N: SG-NOM ; 	       		! moottor
++N: SG-ABE/ACC/GEN-PL-NOM ;	! moottor
++N:%^RmVow%>a SG-ILL ;	  	! moottra
++N:%^RmVow%>e SG-LOC ;		! moottrest
++N:%^RmVow SG-COM_IN ;		! moottrin
++N:%^RmVow%>e ESS ;  		! moottren
++N:%^RmVow%>e PAR ;		! moottred
++N:%^RmVow PL-OBL ;		! moottri
+
 
 !! !!m-stems
 
@@ -6071,17 +6157,15 @@ LEXICON NMN_ČUEʹCCEM
 !! ** Yaml: __N-perrjem__
  ATTESTED-NOUN-STEM ;	! čueʹccem
  SG-NOM ;	    	! čueʹccem
-: SG-GEN ;	! čueʹccem
-:  SG-ACC ;	! čueʹccem
-:%^RmVowa SG-ILL ;	! čueccma
+: SG-ABE/ACC/GEN-PL-NOM ;	! čueʹccem
+:%^PenPALNo%^RmVowa SG-ILL ;	! čueccma
 :%^RmVowe SG-LOC ;	! čueʹccmest
 :%^RmVow SG-COM_IN ;	! čueʹccmin
 :%^RmVowe ESS ;		! čueʹccmen
 :%^RmVowe PAR ;    	! čueʹccmed
-: SG-ABE ;	! čueʹccemtaa/čueʹccemtää
-: PL-NOM ;	! čueʹccem
 :%^RmVow PL-OBL ;    	! čueʹccmi
 
+!! VOWEL-FINAL STEMS
 LEXICON N_BIOLOGIA
 +N: NMN_BIOLOGIA ;
 LEXICON NMN_BIOLOGIA
@@ -6392,7 +6476,7 @@ LEXICON N_LOOKKMÕŠ
 +N:š NMN_OBL-ČÂUSTÕK ;
 
 LEXICON N_MÄTTJUMUŠ
-:%^PenC2CC N_MAINSTUMMUŠ ;
++N:%^PenC2CC NMN_MAINSTUMMUŠ ;
 +N+Err/Orth: ATTESTED-NOUN-STEM ;
 +N+Err/Orth: SG-NOM ;
 +N+Err/Orth:š%>â ESS ;
@@ -6400,6 +6484,12 @@ LEXICON N_MÄTTJUMUŠ
 +N+Err/Orth:š NMN_OBL-ČÂUSTÕK ;
 
 LEXICON N_MAINSTUMMUŠ
++N+Err/Orth:%^PenCC2C ATTESTED-NOUN-STEM ;	! mainstumuš
++N+Err/Orth:%^PenCC2C SG-NOM ;
++N+Err/Orth:š%^PenCC2C%>â ESS ;
++N+Err/Orth:š%^PenCC2C%>â PAR ;
++N+Err/Orth:š%^PenCC2C NMN_OBL-ČÂUSTÕK ;
+
 +N: NMN_MAINSTUMMUŠ ;
 LEXICON NMN_MAINSTUMMUŠ
  ATTESTED-NOUN-STEM ;
