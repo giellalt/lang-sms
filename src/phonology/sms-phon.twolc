@@ -446,12 +446,12 @@ Rules
 "Even syllabic verbs I, vowel shortening u:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
  u:0 <=> OnSetC _ u: (ʹ:|0:ʹ) [C2CCafterVV2V|Cns: :Cns+] (i:) %^VV2V: ;
-!!juurd+N+Ess __thought__
+!! juurd+N+Ess __thought__
 !€# juurd0%^VV2V%^C2CC%>j%>en
 !€0 j0urdd00%>j%>en
       OnSetC  _ u: (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m] %^PenVV2V: ;
       Cns: (:Cns*)  _ Cns:+ PenBetweenStemAndConsGrade %^RmVow: ;
-!!mainstummuš+N+Sg+Ill:
+!! mainstummuš+N+Sg+Ill:
 !€# mainstum0uš%^PenC2CC%^RmVow%>a
 !€0 mainstumm0š00%>a
 
@@ -460,13 +460,13 @@ Rules
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
  i:0 <=>
          OnSetC _ i: (ʹ:|0:ʹ) [LongC|Cns: :Cns*] %^VV2V: ;
-!!viikkâd+V+Ind+Prs+Pl3
+!! viikkâd+V+Ind+Prs+Pl3
 !€# viikk%^VV2V%^VOWLower%^PAL%>e
 !€0 v0eʹǩǩ000%>e
          Cns _ %^UltRmVow%> ǥ a ; ! +Sg+Ill N_HÕʹPPI
         OnSetC  _ [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ;
 !         [Cns:+|:Cns+] _ [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ;
-!!prääʹzniǩ+N+Sg+Ill: __celebration/juhla__
+!! prääʹzniǩ+N+Sg+Ill: __celebration/juhla__
 !€# prääʹzniǩ%^PenPALNo%^RmVow%^PALNo%>a
 !€0 prää0zn0k000%>a
 
@@ -494,12 +494,12 @@ Rules
       Cns: (:Cns*)  _ Cns:+ PenBetweenStemAndConsGrade %^RmVow: ;
 
 
-"Even syllabic verbs I, vowel shortening a:0"
+"Even syllabic verbs I, vowel shortening a:0 "
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
  a:0 <=> OnSetC _ a: (ʹ:|0:ʹ) [LongC|Cns: :Cns*] %^VV2V: ;
 !€# saa0kk%^VV2V%^PAL%>e
 !€0 s0aʹǩǩ00%>e
- OnSetC _ a: (ʹ:|0:ʹ) [LongC|Cns: :Cns*] Vow: Cns %^PenVV2V: ;
+ OnSetC _ a: (ʹ:|0:ʹ) [LongC|Cns: :Cns*] Vow: Cns: [Cns:*|:Cns*] %^PenVV2V: ;
        OnSetC   _ (:ʼ) [Cns:+|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ; 
 !!Aanar+N+Prop+Sg+Ill: __Inari/Enare__
 !€# Aanar%^RmVow%>a
@@ -545,8 +545,8 @@ Rules
 !€# ijss%>0sa
 !€# ijss%>ʼsa
 
-"ZERO to hyphen minus 0:-"
-!! __@RULENAME@__ - used in zeeʹtt+N+Sg+Abe: zeeʹttʼtää
+"ZERO to hyphen minus 0:- in this rule"
+!! __@RULENAME@__ - used in Kääzzkõsraajõstuâjj-joouk
  0:%- <=>
         Cx  _ #  Cx ;
 	where Cx in (b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž) ; 
@@ -1508,7 +1508,7 @@ Rules
 
 "Even syllabic verbs I, cg for ǧ"
 !! __@RULENAME@__ - used with  vueʹlǧǧed+V+Ind+Prs+Sg1: vuâlǥam
- ǧ:0 <=> Vow: [ :ʹ Cns: | [u:|i:] :ʹ ] [ǧ:j|ǧ:] _ BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
+ ǧ:0 <=> Vow: [ [ :ʹ| ʹ: ] Cns: | [u:|i:] [ :ʹ| ʹ: ] ] [ǧ:j|ǧ:] _ BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
 !!äiʹǧǧ+N+Sg+Gen: __time/aika__
 !€# 0äiʹǧǧ%^V2VV%^CC2C
 !€0 ääiʹj000
@@ -1719,7 +1719,7 @@ Rules
 "Even syllabic verbs I, second consonant loss ǩ:0"
 !! __@RULENAME@__ -
  ǩ:0 <=>
-  Vow:  (ʹ:|0:ʹ)  [s|r|l|p] ǩ:  _ BetweenStemAndConsGrade  [%^CC2C:|%^XYY2XY:] ;
+  Vow:  (ʹ:|0:ʹ)  [[i|u] (ʹ:|0:ʹ) |c|ŋ|s|r|l|p] ǩ:  _ BetweenStemAndConsGrade  [%^CC2C:|%^XYY2XY:] ;
 
     ǩ:  _ Vow: Cns:+ PenBetweenStemAndConsGrade  [%^PenCC2C:|%^PenXYY2XY:] ;
 !!eʹǩrded+V+Inf
