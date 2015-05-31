@@ -13,6 +13,8 @@ This file documents the Skolt Saami noun morphology, lexicon by lexicon.
 The lexicon __n__ is a dummy lexicon containing N Sg Nom only.
 We resend it to __N_TOLL__ (â-stem) while waiting for a better analysis.
 
+
+CLASS 1 NOMINALS
  * LEXICON N_PAPP  papp:papp
 !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
 !!1.1 Sg.Loc in -âst (no vowel shift, all raised)
@@ -41,7 +43,9 @@ We resend it to __N_TOLL__ (â-stem) while waiting for a better analysis.
 !!(9) Der/Dim.N.Sg.Nom: paappâž
 toll:toll
 ** Yaml: __N-papp__
-
+strong_geminate, short_vowel
+strong_geminate, short_vowel, palatalization
+strong_geminate, long_vowel
 
 
  * LEXICON N_TOLL  toll:toll
@@ -72,7 +76,10 @@ toll:toll
 !!(9) Der/Dim.N.Sg.Nom: toolâž
 toll:toll
 ** Yaml: __N-kidd, N-soll, N-toll, N-vorr__
-
+strong_geminate, short_vowel, no_palatalization, high_stem_vowel 
+strong_geminate, short_vowel, palatalization, high_stem_vowel
+single_consonant, long_vowel, no_palatalization, high_stem_vowel
+single_consonant, long_vowel, palatalization, high_stem_vowel
 
 
 
@@ -659,6 +666,10 @@ Is for nouns with ''-ast'' Loc
 !!(9) Dim.N.Sg.Nom: piissuž (2009: 310)
 N_A-URaise3-32
 ** Yaml: __N-pess, N-pall__
+strong_geminate, short_vowel, no_palatalization, low_stem_vowel
+strong_geminate, short_vowel, no_palatalization, high_stem_vowel
+strong_geminate, long_vowel, no_palatalization, low_stem_vowel
+strong_geminate, long_vowel, no_palatalization, high_stem_vowel
 
 
  * LEXICON N_ŠOOMM  šoomm:šoomm
@@ -1132,6 +1143,11 @@ NumContLex="1.113"
 ** Yaml: __N-vaell__
 * There are several stem types
 * väʹll:väʹll
+strong_geminate, short_vowel, palatalization, low_stem_vowel
+strong_geminate, short_vowel, depalatalization, low_stem_vowel
+strong_geminate, long_vowel, palatalization, low_stem_vowel
+strong_geminate, long_vowel, palatalization, high_stem_vowel
+strong_geminate, long_vowel, depalatalization, low_stem_vowel
 
  * LEXICON N_EʹČČ  eʹčč:eʹčč
 !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204, 329)
@@ -2421,6 +2437,294 @@ jarplan:jarplan
 atom:atom
 ** Yaml: __N-atom__
 
+CLASS 2 NOMINALS with high stem vowel and i-stems
+ * LEXICON N_JUURD  juurd:jurdd
+is for nouns with stem ''i'' + ''-est'' +Sg+Loc; all stem other than the +Sg+Nom are X3; the ''i'' does not occur in +Par 
+N_GEN2I-ILLAX3-LOCEX3-NOM1X1
+** Yaml: __N-juurd__
+* There are several stem types 
+* juurd:juurd
+
+
+ * LEXICON N_MAADD  maadd:madd
+is for nouns with stem ''i'' + ''-est'' +Sg+Loc; all stem other than the +Sg+Nom are X3; the ''i'' does not occur in +Par 
+** Yaml: __N-maadd__
+* There are several stem types 
+* maadd:maadd
+strong_geminate, long_vowel, no-palatalization, high_stem_vowel
+strong_geminate, short_vowel, no-palatalization, high_stem_vowel
+
+
+is for nouns with stem ''i'' + ''-est'' +Sg+Loc; all stem other than the +Sg+Nom are X3; the ''i'' does not occur in +Par 
+** Yaml: __N-muott__
+* There are several stem types 
+* muõtt:muõtt
+
+ * LEXICON N_MUUƷ  muuʒ:muvʒʒ
+!!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+!!1.3 Sg.Loc in -est (no vowel shift, all raised)
+ e-stems (Sg.Loc, Ess, Par).
+!!1.3.2 Sg.Ill vowel -a
+!!1.3.2.2 Lacks Palatalization
+!!1.3.2.2.1 Lacks Specifically Pedagogical Gradation
+!!1.3.2.2.1.1 Has Orthographic Gradation
+!!1.3.2.2.1.1[] (Monophthong + Consonant Cluster Variation)
+ Weak grade: Sg.Nom
+ Extra strong grade: Ess, Par
+ Extra strong grade: Sg.Ill
+ Extra strong grade: Pl.Nom, Sg.Loc, Sg.Com
+!!FORMS
+!!(1) Sg.Nom: muuʒ
+!!(2) Pl.Nom: muvʒʒi
+!!(3) Sg.Ill: muvʒʒǥa
+!!(4) Sg.Loc: muvʒʒest
+!!(5) Sg.Com: muvʒʒin
+!!(6) Ess: muvʒʒen
+!!(7) Par: muvʒʒed
+!!(8) Pl.Acc: muvʒʒjid
+!!(9) Der/Dim.N.Sg.Nom:
+** Yaml: __N-muuz__
+* There are several stem types 
+* muuʒ:muvʒʒi
+
+CLASS 2 NOMINALS with low stem vowel and u-stems
+!!u-stems
+!!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 228)
+!!1.2 Sg.Loc in -ust. u-stems (Sg.Loc, Ess, Par).
+!!1.2.3 Sg.Ill in raised vowel and -u
+!!1.2.3.1 Has Gradation
+!!1.2.3.1.1 Monophthong
+!!1.2.3.1.1.1 Consonant Geminate (W2XSt)
+!!1.2.3.1.1.1.1 Sg.Nom Weak Grade
+!!1.2.3.1.1.1.1.3.Sg.Gen Extra Strong Grade
+!!1.2.3.1.1.1.1.3.3 Sg.Ill Extra Strong Grade
+!!1.2.3.1.1.1.1.3.3.Q All but Sg.Nom are raised vowels
+mään:mään
+** Yaml: __N-maan__
+* There are several stem types
+* mään:mään
+
+
+ * LEXICON N_SUÂL   suâl:suõlˈl
+ *   is for nouns with ''-est'' +Loc
+** Yaml: __N-sual__
+* There are several stem types
+
+ * LEXICON N_PUÄƷƷ  puäʒʒ:puõcˈc
+ *   is for nouns with ''-est'' +Loc
+** Yaml: __N-sual__
+* There are several stem types
+* puäʒʒ:puõcˈc
+
+CLASS 2 NOMINALS with high stem vowel and â-stems
+ * LEXICON N_PIIĐ  piiđ:pitt
+ *   is for nouns with ''-est'' +Loc
+** Yaml: __N-piidh__
+* There are several stem types
+* piiđ:pitt
+
+CLASS 3 NOMINALS
+!!m-stems
+
+ * LEXICON N-laajj  = stemtype Âm-stem
+** Yaml:
+
+** Yaml:
+
+
+
+
+
+!!n-stems
+
+ * LEXICON N-siom   = stemtype n-stem
+** Yaml: __siom__
+
+ * LEXICON N-kuolban  = stemtype n-stem kuõlbân:kuõlbb
+** Yaml: __kuolban__
+
+
+CLASS 3
+ * LEXICON N_VUEʹN  vueʹn:vuânˈn
+stemtype Am-stem
+** Yaml: __vuen__
+
+Are these actually necessary 2015-05-30 
+
+
+ * LEXICON N_ČÂÂʹĐ  čââʹđ:čâđđ
+** Yaml: __N-caad__
+** čââʹđ:čââʹđ
+
+CLASS 4 IN Â
+IN PENULTIMATE Â:0
+
+ * LEXICON N_KÕÕNJÂL  kõõnjâl:kõnnjâl
+N_GEN2X3-NOM2X1
+** Yaml: __koonjal__
+
+ * LEXICON N_TAALKÂS  taalkâs:talkkâz
+stemtype n-stem taalkâs:taalkâs
+** Yaml: __N-taalkas__
+
+
+stemtype n-stem koontâr:koontâr
+N_GEN2X3-NOM2X1
+** Yaml: __N-koontar__
+
+ * LEXICON N_VÕÕNÂS   võõnâs:võnnâz
+
+N_GEN2X3-NOM2X1
+** Yaml: __N-voonas__
+
+ * LEXICON N_ČÕÕǤǤÂS   čõõǥǥâs:čõkkâz
+
+N_GEN2X3-NOM2X1
+** Yaml: __N-chooghghas__
+
+ * LEXICON N_KÕÕDDÂS  kõõddâs:kõddâz
+stemtype n-stem kõõddâs:kõddâz
+N_GEN2X3-NOM2X1
+** Yaml: __N-voonas__
+
+ *  LEXICON N_KIIUǤÂN  kiiuǥân:kiuggân
+stemtype n-stem kiiuǥân:kiiuǥân
+
+** Yaml: __N-kiiughan__
+
+ *  LEXICON N_TUÕVÂS  tuõvâs:tuõvvâz
+stemtype n-stem tuõvâs:tuõvâs
+** Yaml: __N-tuovas__
+
+ *  LEXICON N_VUÕNJÂL  vuõnjâl:vuõnnjâl
+** Yaml: __N-tuovas__
+
+ *  LEXICON N_VUÕIVÂS  vuõivâs:vuõivvâz
+
+** Yaml: __N-vuoivas__
+
+ *  LEXICON N_TUÕDDÂR  tuõddâr:tuõdˈdâr
+N_GEN2X3-NOM2X1
+** Yaml: __N-tuoddar__
+
+stemtype n-stem ǩiõrâč:ǩiõrâč
+N_GEN2X3-NOM2X1
+** Yaml: __N-kiorach__
+
+stemtype l-stem cõõggâlm:cõõggâlm
+* __N_CÕÕGGÂLM__ = Koulukielioppi stemtype II 9 (29)
+** Yaml: __cooggalm, aaresm, kaaddask __ 
+
+
+stemtype l-stem siivâlm:siivâlm
+* __N_SIIVÂLM__ = Koulukielioppi stemtype II 9 (29)
+** Yaml: __N-siivalm __ 
+
+stemtype l-stem viirrâm:viirrâm
+* __N_VIIRRÂM__ = Koulukielioppi stemtype II 9 (29)
+** Yaml: __N-viirram __ 
+
+
+IN PENULTIMATE A:0
+
+= stemtype n-stem ǩeâlǥal:ǩeâlǥal
+** Yaml: __kealgal__
+
+= stemtype n-stem ceerkav:ceerkav
+** Yaml: __ceerkav__
+
+stemtype n-stem sååbbar:sååbbar
+N_GEN2X3-NOM2X1
+** Yaml: __N-sååbbar__
+
+stemtype n-stem pååttaǩ:pååttaǩ
+Palatalization loss in Sg.Ill
+** Yaml: __N-paattakj__
+
+stemtype n-stem jânnam:jânnam
+N_GEN2X3-NOM2X1
+** Yaml: __N-jânnam__
+
+ * LEXICON N_ÄÄPPAL  ääppal:ääppal
+stemtype n-stem ääppal:ääppal
+N_GEN2X3-NOM2X1
+** Yaml: __N-aeaeppal__
+
+
+ * LEXICON N_KÅÅVAS  kååvas:kåvvaz
+N_GEN2X3-NOM2X1
+** Yaml: __N-kaavas__
+
+
+ * LEXICON N_KUÄIVAS  kuäivas:kuäivvaz
+stemtype n-stem kuäivas:kuäivas
+N_GEN2X3-NOM2X1
+** Yaml: __N-kuaeivas__
+
+
+!!2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 252)
+!!2.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
+!!2.3.2 Sg.Ill in -a
+!!2.3.2.2 LACKS Gradation
+!!2.3.2.2.1 Penultimate stem vowel loss: (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Gen, Pl.Acc, Pl.Ill, Pl.Loc, Pl.Com, Pl.Abe)
+!!2.3.2.2.1.1 The Sg.Com vowel i appears before final n  
+** Yaml: __A-sloohman__
+
+!!2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 252)
+!!2.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
+!!2.3.2 Sg.Ill in -a
+!!2.3.2.2 LACKS Gradation
+!!2.3.2.2.1 Penultimate stem vowel loss: (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Gen, Pl.Acc, Pl.Ill, Pl.Loc, Pl.Com, Pl.Abe)
+!!2.3.2.2.1.1 The Sg.Com vowel i appears before final n  
+** Yaml: __A-cheappat__
+
+IN PENULTIMATE E:0
+
+ * LEXICON N_VEEʹREST  veeʹrest:veeʹrest
+* __N_VEEʹREST__ = Koulukielioppi stemtype II 9 (29)
+** Yaml: __N-veerest __ 
+
+
+ * LEXICON N_ÄÄʹREŠM  ääʹrešm:ääʹrešm
+stemtype l-stem ääʹrešm:ääʹrešm
+* __N_ÄÄʹREŠM__ = Koulukielioppi stemtype II 9 (29)
+** Yaml: __N-aeaereshm __ 
+
+stemtype l-stem späʹsseb:späʹsseb
+* __NMN_SPÄʹSSEB__ = Koulukielioppi stemtype II 9 (29)
+** Yaml: __N-spaesseb __ 
+
+ * LEXICON N_PRÄÄʹZNIǨ  prääʹzniǩ:prääʹzniǩ
+stemtype l-stem prääʹzniǩ:prääʹzniǩ
+* __NMN_PRÄÄʹZNIǨ__ = Koulukielioppi stemtype II 9 (29)
+** Yaml: __N-spaesseb __ 
+
+
+ * LEXICON N_STROITTEʹL  stroitteʹl:stroitteʹl
+stemtype l-stem stroitteʹl:stroitteʹl
+* __NMN_STROITTEʹL__ = Koulukielioppi stemtype II 9 (29)
+** Yaml: __N-stroittel __ 
+
+!!l-stems
+ * LEXICON N_NJUÄʹMMEL  = stemtype l-stem njuäʹmmel:njuäʹmmel
+** Yaml: __njuammel, njuunnjel, aappal__ 
+
+stemtype l-stem čeeuʹres:čeeuʹres
+* __N_ČEEUʹRES__ = Koulukielioppi stemtype II 9 (29)
+** Yaml: __N-ceeures __ 
+
+* __N_CIEʹǨǨES__ = Koulukielioppi stemtype II 9 (29)
+** Yaml: __N-ciekkes __ 
+
+!!s:z-stem type
+stemtype l-stem ǩeʹrres:ǩeʹrres
+* __N_ǨEʹRRES__ = Koulukielioppi stemtype II 8 (28)
+** Yaml: __kerres __
+
+
+** Yaml: __mueles__
+
+
  * LEXICON N_SÄʹPPLI  
 * Yaml: __A-saeppli__
 säʹppli:säʹppl
@@ -2432,7 +2736,7 @@ säʹmmlaž:säʹmmlaž
 
 Diminutive derivations
 
- * LEXICON N_MUÕRÂŽ  
+ * LEXICON N_MUÕRÂŽ  muõrâž:muõr
 (2009: 306)
 * muõrâž:muõr
 * Yaml: __N-muorazh__
@@ -2732,90 +3036,7 @@ NumContLex="1.2"
 * There are several stem types 
 
 
- * LEXICON N_JUURD  juurd:jurdd
-is for nouns with stem ''i'' + ''-est'' +Sg+Loc; all stem other than the +Sg+Nom are X3; the ''i'' does not occur in +Par 
-N_GEN2I-ILLAX3-LOCEX3-NOM1X1
-** Yaml: __N-juurd__
-* There are several stem types 
-* juurd:juurd
 
-
- * LEXICON N_MAADD  maadd:madd
-is for nouns with stem ''i'' + ''-est'' +Sg+Loc; all stem other than the +Sg+Nom are X3; the ''i'' does not occur in +Par 
-** Yaml: __N-maadd__
-* There are several stem types 
-* maadd:maadd
-
-
-
-is for nouns with stem ''i'' + ''-est'' +Sg+Loc; all stem other than the +Sg+Nom are X3; the ''i'' does not occur in +Par 
-** Yaml: __N-muott__
-* There are several stem types 
-* muõtt:muõtt
-
-
-
- * LEXICON N_MUUƷ  muuʒ:muvʒʒ
-!!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-!!1.3 Sg.Loc in -est (no vowel shift, all raised)
- e-stems (Sg.Loc, Ess, Par).
-!!1.3.2 Sg.Ill vowel -a
-!!1.3.2.2 Lacks Palatalization
-!!1.3.2.2.1 Lacks Specifically Pedagogical Gradation
-!!1.3.2.2.1.1 Has Orthographic Gradation
-!!1.3.2.2.1.1[] (Monophthong + Consonant Cluster Variation)
- Weak grade: Sg.Nom
- Extra strong grade: Ess, Par
- Extra strong grade: Sg.Ill
- Extra strong grade: Pl.Nom, Sg.Loc, Sg.Com
-!!FORMS
-!!(1) Sg.Nom: muuʒ
-!!(2) Pl.Nom: muvʒʒi
-!!(3) Sg.Ill: muvʒʒǥa
-!!(4) Sg.Loc: muvʒʒest
-!!(5) Sg.Com: muvʒʒin
-!!(6) Ess: muvʒʒen
-!!(7) Par: muvʒʒed
-!!(8) Pl.Acc: muvʒʒjid
-!!(9) Der/Dim.N.Sg.Nom:
-** Yaml: __N-muuz__
-* There are several stem types 
-* muuʒ:muvʒʒi
-
-
-!!u-stems
-!!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 228)
-!!1.2 Sg.Loc in -ust. u-stems (Sg.Loc, Ess, Par).
-!!1.2.3 Sg.Ill in raised vowel and -u
-!!1.2.3.1 Has Gradation
-!!1.2.3.1.1 Monophthong
-!!1.2.3.1.1.1 Consonant Geminate (W2XSt)
-!!1.2.3.1.1.1.1 Sg.Nom Weak Grade
-!!1.2.3.1.1.1.1.3.Sg.Gen Extra Strong Grade
-!!1.2.3.1.1.1.1.3.3 Sg.Ill Extra Strong Grade
-!!1.2.3.1.1.1.1.3.3.Q All but Sg.Nom are raised vowels
-mään:mään
-** Yaml: __N-maan__
-* There are several stem types
-* mään:mään
-
-
- * LEXICON N_SUÂL   suâl:suõlˈl
- *   is for nouns with ''-est'' +Loc
-** Yaml: __N-sual__
-* There are several stem types
-
- * LEXICON N_PUÄƷƷ  puäʒʒ:puõcˈc
- *   is for nouns with ''-est'' +Loc
-** Yaml: __N-sual__
-* There are several stem types
-* puäʒʒ:puõcˈc
-
- * LEXICON N_PIIĐ  piiđ:pitt
- *   is for nouns with ''-est'' +Loc
-** Yaml: __N-piidh__
-* There are several stem types
-* piiđ:pitt
 
 !!k-stems
 
@@ -2842,169 +3063,11 @@ kaađneǩ+N+Sg+Gen: kaađneeʹǩǩ
 
 
 
-!!l-stems
- * LEXICON N_NJUÄʹMMEL  = stemtype l-stem njuäʹmmel:njuäʹmmel
-** Yaml: __njuammel, njuunnjel, aappal__ 
 
-IN PENULTIMATE Â:0
-
- * LEXICON N_KÕÕNJÂL  kõõnjâl:kõnnjâl
-N_GEN2X3-NOM2X1
-** Yaml: __koonjal__
-
- * LEXICON N_TAALKÂS  taalkâs:talkkâz
-stemtype n-stem taalkâs:taalkâs
-** Yaml: __N-taalkas__
-
-
-stemtype n-stem koontâr:koontâr
-N_GEN2X3-NOM2X1
-** Yaml: __N-koontar__
-
- * LEXICON N_VÕÕNÂS   võõnâs:võnnâz
-
-N_GEN2X3-NOM2X1
-** Yaml: __N-voonas__
-
- * LEXICON N_ČÕÕǤǤÂS   čõõǥǥâs:čõkkâz
-
-N_GEN2X3-NOM2X1
-** Yaml: __N-chooghghas__
-
- * LEXICON N_KÕÕDDÂS  kõõddâs:kõddâz
-stemtype n-stem kõõddâs:kõddâz
-N_GEN2X3-NOM2X1
-** Yaml: __N-voonas__
-
- *  LEXICON N_KIIUǤÂN  kiiuǥân:kiuggân
-stemtype n-stem kiiuǥân:kiiuǥân
-
-** Yaml: __N-kiiughan__
-
- *  LEXICON N_TUÕVÂS  tuõvâs:tuõvvâz
-stemtype n-stem tuõvâs:tuõvâs
-** Yaml: __N-tuovas__
-
- *  LEXICON N_VUÕNJÂL  vuõnjâl:vuõnnjâl
-** Yaml: __N-tuovas__
-
- *  LEXICON N_VUÕIVÂS  vuõivâs:vuõivvâz
-
-** Yaml: __N-vuoivas__
-
- *  LEXICON N_TUÕDDÂR  tuõddâr:tuõdˈdâr
-N_GEN2X3-NOM2X1
-** Yaml: __N-tuoddar__
-
-stemtype n-stem ǩiõrâč:ǩiõrâč
-N_GEN2X3-NOM2X1
-** Yaml: __N-kiorach__
-
-stemtype l-stem cõõggâlm:cõõggâlm
-* __N_CÕÕGGÂLM__ = Koulukielioppi stemtype II 9 (29)
-** Yaml: __cooggalm, aaresm, kaaddask __ 
-
-
-stemtype l-stem siivâlm:siivâlm
-* __N_SIIVÂLM__ = Koulukielioppi stemtype II 9 (29)
-** Yaml: __N-siivalm __ 
-
-stemtype l-stem viirrâm:viirrâm
-* __N_VIIRRÂM__ = Koulukielioppi stemtype II 9 (29)
-** Yaml: __N-viirram __ 
-
-
-
-IN PENULTIMATE A:0
-
-= stemtype n-stem ǩeâlǥal:ǩeâlǥal
-** Yaml: __kealgal__
-
-= stemtype n-stem ceerkav:ceerkav
-** Yaml: __ceerkav__
-
-stemtype n-stem sååbbar:sååbbar
-N_GEN2X3-NOM2X1
-** Yaml: __N-sååbbar__
-
-stemtype n-stem pååttaǩ:pååttaǩ
-Palatalization loss in Sg.Ill
-** Yaml: __N-paattakj__
-
-stemtype n-stem jânnam:jânnam
-N_GEN2X3-NOM2X1
-** Yaml: __N-jânnam__
-
- * LEXICON N_ÄÄPPAL  ääppal:ääppal
-stemtype n-stem ääppal:ääppal
-N_GEN2X3-NOM2X1
-** Yaml: __N-aeaeppal__
-
-
- * LEXICON N_KÅÅVAS  kååvas:kåvvaz
-N_GEN2X3-NOM2X1
-** Yaml: __N-kaavas__
-
-
- * LEXICON N_KUÄIVAS  kuäivas:kuäivvaz
-stemtype n-stem kuäivas:kuäivas
-N_GEN2X3-NOM2X1
-** Yaml: __N-kuaeivas__
-
-
-!!2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 252)
-!!2.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
-!!2.3.2 Sg.Ill in -a
-!!2.3.2.2 LACKS Gradation
-!!2.3.2.2.1 Penultimate stem vowel loss: (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Gen, Pl.Acc, Pl.Ill, Pl.Loc, Pl.Com, Pl.Abe)
-!!2.3.2.2.1.1 The Sg.Com vowel i appears before final n  
-** Yaml: __A-sloohman__
-
-!!2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 252)
-!!2.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
-!!2.3.2 Sg.Ill in -a
-!!2.3.2.2 LACKS Gradation
-!!2.3.2.2.1 Penultimate stem vowel loss: (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Gen, Pl.Acc, Pl.Ill, Pl.Loc, Pl.Com, Pl.Abe)
-!!2.3.2.2.1.1 The Sg.Com vowel i appears before final n  
-** Yaml: __A-cheappat__
-
-IN PENULTIMATE E:0
-
-stemtype l-stem veeʹrest:veeʹrest
-* __N_VEEʹREST__ = Koulukielioppi stemtype II 9 (29)
-** Yaml: __N-veerest __ 
-
-
- * LEXICON N_ÄÄʹREŠM  ääʹrešm:ääʹrešm
-stemtype l-stem ääʹrešm:ääʹrešm
-* __N_ÄÄʹREŠM__ = Koulukielioppi stemtype II 9 (29)
-** Yaml: __N-aeaereshm __ 
-
-stemtype l-stem späʹsseb:späʹsseb
-* __NMN_SPÄʹSSEB__ = Koulukielioppi stemtype II 9 (29)
-** Yaml: __N-spaesseb __ 
-
- * LEXICON N_PRÄÄʹZNIǨ  prääʹzniǩ:prääʹzniǩ
-stemtype l-stem prääʹzniǩ:prääʹzniǩ
-* __NMN_PRÄÄʹZNIǨ__ = Koulukielioppi stemtype II 9 (29)
-** Yaml: __N-spaesseb __ 
-
-
- * LEXICON N_STROITTEʹL  stroitteʹl:stroitteʹl
-stemtype l-stem stroitteʹl:stroitteʹl
-* __NMN_STROITTEʹL__ = Koulukielioppi stemtype II 9 (29)
-** Yaml: __N-stroittel __ 
 
 stemtype l-stem miniʹstter:miniʹstter
 * __NMN_MINIʹSTTER__ = Koulukielioppi stemtype II 9 (29)
 ** Yaml: __N-miniʹstter __ 
-
-stemtype l-stem čeeuʹres:čeeuʹres
-* __N_ČEEUʹRES__ = Koulukielioppi stemtype II 9 (29)
-** Yaml: __N-ceeures __ 
-
-* __N_CIEʹǨǨES__ = Koulukielioppi stemtype II 9 (29)
-** Yaml: __N-ciekkes __ 
 
 stemtype n-stem reʹppiǩ:reʹppiǩ
 Palatalization loss in Sg.Ill
@@ -3015,30 +3078,6 @@ PENULTIMATE O:0
  * LEXICON N_MOOTTOR  moottor:moottor
 ** Yaml: __N-moottor__
 
-
-!!m-stems
-
- * LEXICON N-laajj  = stemtype Âm-stem
-** Yaml:
-
-** Yaml:
-
-
-
- * LEXICON N_VUEʹN  = stemtype Am-stem
-** Yaml: __vuen__
-
-
- * LEXICON N_ČÂÂʹĐ  čââʹđ:čââʹđ
-** Yaml: __N-caad__
-** čââʹđ:čââʹđ
-
-
-
-!!n-stems
-
- * LEXICON N-kuolban  = stemtype n-stem kuõlbân:kuõlbb
-** Yaml: __kuolban__
 
 
  * LEXICON N_PEʹRRJEM  peʹrrjem:peʹrrjem
@@ -3053,11 +3092,6 @@ VOWEL-FINAL STEMS
 ** Yaml: __N-radio__
 
 
- * LEXICON N-siom   = stemtype n-stem
-** Yaml: __siom__
-
-
-
 
  *  = stemtype 
 ** Yaml: __N-nallshem__
@@ -3067,14 +3101,6 @@ nallšem+N+Sg+Gen: kaađneeʹǩǩ
 
 
 
-
-!!s:z-stem type
-stemtype l-stem ǩeʹrres:ǩeʹrres
-* __N_ǨEʹRRES__ = Koulukielioppi stemtype II 8 (28)
-** Yaml: __kerres __
-
-
-** Yaml: __mueles__
 
 292-295
 ** Yaml: __A-chaalmtem__
