@@ -108,6 +108,7 @@ Alphabet
 %^XYY2VYY:0	!!= * @CODE@ Consonant cluster to vowel and geminate uvdd:ouʹdd
 %^KKK2GG:0	!!= * @CODE@ Geminate weakening 
 %^KK2GG:0	!!= * @CODE@ Geminate weakening jokk:jooǥǥ
+%^KK2G:0		!!= * @CODE@ Geminate weakening	 in allegro pååss:påz
 %^GG2KK:0	!!= * @CODE@ Geminate strengthening
 %^GG2KKK:0	!!= * @CODE@ Geminate extra strengthening čuâǥǥas:čuõkˈksa
 
@@ -593,9 +594,11 @@ Rules
 
 "Even syllabic verbs I, vowel raising å:o"
 !! __@RULENAME@__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
- å:o <=>  OnSetC _ å:o (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  %^VOWRaise: ; 
-          OnSetC [å:o|0:o] _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] BetweenStemAndHeight  %^VOWRaise: ;
+ å:o <=>  OnSetC _ å: (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]   %^VOWRaise: ; 
+          OnSetC [å:|0:o] _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] BetweenStemAndHeight  %^VOWRaise: ;
            [å:o|0:|å:0] _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] BetweenStemAndHeight %^VOWRaise: ;
+!€# kååʹpp%^VOWRaise%^CC2C%>in
+!€0 kooʹv0000in
 !€# k0åʹll%^V2VV%^VOWRaise%>in
 !€0 kooʹll000%>in
           OnSetC _ (u:) (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  %^VOWRaise: ((%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) %> [e|u] ;
@@ -668,7 +671,7 @@ Rules
 
 "Even syllabic verbs I, diphthong raising beginning with e:i ä:ẹ"
 !! __@RULENAME@__ 
- ä:ẹ <=> OnSetC [u|e:i]  _ (i|u) :ʹ [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+]  BetweenStemAndHeight %^VOWRaise: %^PALẸ: %^PAL: ;
+ ä:ẹ <=> OnSetC [u|e:i]  _ (i|u) :ʹ [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+|Cns:+ 0:%ˈ Cns:+]  BetweenStemAndHeight (%^VOWRaise:) %^PALẸ: %^PAL: ;
 
 "diphthong backing beginning with u ä:õ"
 !! __@RULENAME@__
@@ -1531,9 +1534,9 @@ Rules
   :Vow  _ k: (%^V2VV:) %^KK2GG: ;
 !€# j0okk%^V2VV%^KK2GG
 !€0 jooǥǥ00
-  :Vow  _ k: BetweenStemAndPALNo %^CC2C: ;
+  :Vow  _ k: BetweenStemAndPALNo %^KK2G: ;
 !!loǥškueʹtted __begin to read__
-!€# lookk%^VV2V%^CC2C»škueʹtted
+!€# lookk%^VV2V%^KK2G»škueʹtted
 !€0 l0oǥ000»škueʹtted
 
 "Even syllabic nouns I, with extra lengthening of vowel V>VV and k:j"
@@ -1588,6 +1591,10 @@ Rules
          OnSetC   AllDbVow     (ʹ:|0:ʹ)          _ (%ˈ:) š: %^VOWXL: (%^CShort:) ;
 !€# kõõččm0õšš%^V2VV%^KK2GG
 !€0 kõõččmõõžž00
+       Vow:  _ š: (%^VV2V: ) %^KK2G: ;
+!€# pååss%^VV2V%^KK2G»škuätt
+!€0 p0åz0000škuätt
+
       Vow:   _ PenBetweenStemAndStemFinalVoicing %^VC: ;
 !!mainstummuš+N+Sg+Gen:
 !€# mainstum0uš%^PenC2CC%^VC
@@ -1600,12 +1607,20 @@ Rules
 !€# čääʹcc%^KK2GG
 !€0 čääʹʒʒ00
                                    _ %^VC: ; 
+       Vow:  _ c: (%^VV2V: ) %^KK2G: ;
+!€# pååss%^VV2V%^KK2G»škuätt
+!€0 p0åz0000škuätt
+
 
 "Even syllabic verbs I, Voicing č:j"
 !! __@RULENAME@__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
  č:j <=> Vow: (ʹ:|0:ʹ) č: _    BetweenStemAndConsGrade %^KK2GG: ;
          Vow: (ʹ:|0:ʹ)    _ č: BetweenStemAndConsGrade %^KK2GG: ;
                                              _ %^VC: ;
+
+       Vow:  _ č: (%^VV2V: ) %^KK2G: ;
+!€# pååss%^VV2V%^KK2G»škuätt
+!€0 p0åz0000škuätt
 
 
 "Even syllabic verbs I, Voicing after long vowel or diphthong s:z s:z" 
@@ -1616,9 +1631,12 @@ Rules
 !€0 mättʼtõõzz00
          Vow:  (ʹ:|0:ʹ) s:  %ˈ:  _  BetweenStemAndConsGrade %^KKK2GG: ; 
          Vow:  (ʹ:|0:ʹ)  _ %ˈ:   s: BetweenStemAndConsGrade %^KKK2GG: ; 
-
 !! deriving cieʹǩǩes+N+Sg+Gen: ceäkˈkaz
    :Vow+ (ʹ:|0:ʹ) [Cns: :Cns*|Cns:+ (%ˈ:|:%ˈ) Cns:+] Vow: _ PenBetweenStemAndStemFinalVoicing %^VC: ; 
+
+       Vow:  _ s: (%^VV2V: ) %^KK2G: ;
+!€# pååss%^VV2V%^KK2G»škuätt
+!€0 p0åz0000škuätt
 
 
 "Devoicing z:s"
@@ -1652,6 +1670,7 @@ Rules
        Vow:  (ʹ:|0:ʹ) [h:|j:] (ʹ:|0:ʹ) Cx:  _ BetweenStemAndConsGrade %^XYY2VY: ;
        Vow: [ (ʹ:|0:ʹ)  Cns: | [u|i] (ʹ:|0:ʹ) ] Cx: _ Vow: Cns:+ PenBetweenStemAndConsGrade [%^PenCC2C:|%^PenXYY2XY:] ;
        Vow:  (ʹ:|0:ʹ) [h:|j:] (ʹ:|0:ʹ) Cx:  _ Vow: Cns:+ PenBetweenStemAndConsGrade %^PenXYY2VY: ;
+       Vow: Cx:  _ (%^VV2V: ) %^KK2G: ;
                 where Cx in (c č s š) ;
 
 
@@ -1700,7 +1719,7 @@ Rules
 
 "Even syllabic nouns I, p>v" 
 !! __@RULENAME@__ - pp:v
- p:v  <=> Vow: (ʹ:|0:ʹ) _ p:0  %^CC2C: ;
+ p:v  <=> Vow: (ʹ:|0:ʹ) _ p:0 BetweenStemAndConsGrade  %^CC2C: ;
 !€# ǩiâpp%^CC2C
 !€0 ǩiâv00
 
@@ -1714,6 +1733,9 @@ Rules
 !!mieʹlǩǩ+N+Sg+Acc: __milk/maito__
 !€# miâ0lkk%^PALE%^PAL%^CC2C
 !€0 mieʹlǩ0000
+       Vow: k:  _ (%^VV2V: ) %^KK2G: ;
+!€# pååss%^VV2V%^KK2G»škuätt
+!€0 p0åz0000škuätt
 
 
 "Even syllabic verbs I, second consonant loss ǩ:0"
