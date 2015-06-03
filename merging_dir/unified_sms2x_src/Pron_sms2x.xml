@@ -39,9 +39,11 @@
     <rev-sort_key>iim</rev-sort_key>
     <lg>
       <l pos="Pron" type="Rel">mii</l>
-      <l_syn>kååʹtt</l_syn>
+      <variants>
+	<l_syn>kååʹtt</l_syn>
+      </variants>
       <stg>
-        <st Contlex="PRON_" inflexId="::::1000">mii</st>
+        <st Contlex="PRON-REL_" inflexId="::::1000">mii</st>
       </stg>
       <infl>
         <form gloss="Sg.Gen">mõõn</form>
@@ -229,13 +231,12 @@
                <c name="included">yes</c>
             </inc-audio>
          </content>
-      </e>
-   <e_u id="sms_bag_6173">
-      <map stamp="gt_Pro_5:fm_1631:sml_20362" fin_lemma_id="5861"/>
-      <e id="gt_Pro_5" meta="05">
-         <rev-sort_key>kup</rev-sort_key>
-         <lg>
-            <l pos="Pron">puk</l>
+  </e>
+  <e id="gt_Pro_5" meta="05">
+    <map stamp="gt_Pro_5:fm_1631:sml_20362" fin_lemma_id="5861"/>
+    <rev-sort_key>kup</rev-sort_key>
+    <lg>
+      <l pos="Pron">puk</l>
             <stg>
                <st Contlex="PRON_" inflexId="::::1000">puk</st>
             </stg>
@@ -268,10 +269,12 @@
                <t pos="Pron">kaikki</t>
             </tg>
             <tg xml:lang="eng">
-               <t pos="Pron">all</t>
+               <t pos="Pron" stat="pref">all</t>
+               <t pos="Pron">everything</t>
             </tg>
             <tg xml:lang="deu">
-               <t pos="Pron">alle</t>
+               <t pos="Pron" stat="pref">alle</t>
+               <t pos="Pron">jede</t>
             </tg>
             <tg xml:lang="nob">
                <t pos="Pron">alle</t>
@@ -283,26 +286,18 @@
                <t pos="Pron">gàihka</t>
             </tg>
          </mg>
-      </e>
-      <e id="fm_1631">
-         <rev-sort_key>kup</rev-sort_key>
-         <lg>
-            <l>puk</l>
-         </lg>
          <mg>
             <tg xml:lang="fin">
-               <t>kaikki; koko; kokonaan</t>
+               <t>koko; kokonaan</t>
             </tg>
             <tg xml:lang="eng">
-               <t>everything, all; every; altogether</t>
+               <t>every; altogether</t>
             </tg>
          </mg>
          <content id="fm_1631">
             <inc-transl>
                <c name="German">all, -e, -r, -s; jede, -r, -s; gänzlich, vollkommen</c>
-               <c name="Russian">всё</c>
                <c name="Norwegian">all, alt, alle, hel, helt, hele, fullstendig</c>
-               <c name="Kildin">пугк</c>
                <c name="Finnish">kaikki; koko; kokonaan</c>
                <c name="English">everything, all; every; altogether</c>
             </inc-transl>
@@ -316,19 +311,17 @@
                <c name="included">yes</c>
             </inc-audio>
          </content>
-      </e>
-   </e_u>
-   <e_u id="sms_bag_6174">
-      <map stamp="gt_Pro_6:fm_4041:fm_6471:sml_23893" fin_lemma_id="2758"/>
-      <e id="gt_Pro_6" meta="04">
-         <rev-sort_key>jis</rev-sort_key>
-         <lg>
-            <l pos="Pron">sij</l>
-            <stg>
-               <st Contlex="PRON_" inflexId="::::1000">sij</st>
-            </stg>
-            <infl>
-               <form gloss="Du.Nom">suäna</form>
+  </e>
+  <e id="gt_Pro_6" meta="04">
+     <map stamp="gt_Pro_6:fm_4041:fm_6471:sml_23893" fin_lemma_id="2758"/>
+     <rev-sort_key>jis</rev-sort_key>
+     <lg>
+       <l pos="Pron">sij</l>
+       <stg>
+         <st Contlex="PRON_" inflexId="::::1000">sij</st>
+       </stg>
+       <infl>
+         <form gloss="Du.Nom">suäna</form>
             </infl>
             <etymology>
                <etymon source="finnougric" type="inher">sɤ̈-</etymon>
@@ -341,6 +334,9 @@
             <semantics>
                <sem class="HUMAN">PEOPLE</sem>
             </semantics>
+            <tg xml:lang="deu">
+               <t pos="Pron" type="Pers" gloss="Pl3.Nom">sie</t>
+            </tg>
             <tg xml:lang="eng">
                <t pos="Pron">they</t>
             </tg>
@@ -351,38 +347,17 @@
                <t pos="Pron">они</t>
             </tg>
             <tg xml:lang="nob">
-               <t pos="Pron">dem</t>
+               <t pos="Pron" stat="pref">dem</t>
+               <t pos="Pron">de</t>
             </tg>
             <tg xml:lang="sme">
-               <t pos="Pron">sii</t>
                <t pos="Pron">sii</t>
             </tg>
             <tg xml:lang="sju">
                <t pos="Pron">sijja</t>
             </tg>
          </mg>
-      </e>
-      <e id="fm_4041">
-         <rev-sort_key>jis</rev-sort_key>
-         <lg>
-            <l>sij</l>
-         </lg>
-         <mg>
-            <tg xml:lang="fin">
-               <t>he</t>
-            </tg>
-            <tg xml:lang="eng">
-               <t>they</t>
-            </tg>
-         </mg>
          <content id="fm_4041">
-            <inc-transl>
-               <c name="German">sie (3. Pl)</c>
-               <c name="Russian">они</c>
-               <c name="Norwegian">de</c>
-               <c name="Finnish">he</c>
-               <c name="English">they</c>
-            </inc-transl>
             <inc-audio>
                <c name="ID_Audio">4042</c>
                <c name="Reader">13</c>
@@ -390,10 +365,9 @@
                <c name="included">yes</c>
             </inc-audio>
          </content>
-      </e>
-   </e_u>
+  </e>
    <e_u id="sms_bag_6175">
-      <map stamp="gt_Pro_7:fm_2060:fm_6485:sml_24499" fin_lemma_id=""/>
+      <map stamp="gt_Pro_7:fm_2060:fm_6485:sml_24499" fin_lemma_id="4028"/>
       <e id="gt_Pro_7" meta="04">
          <rev-sort_key>nos</rev-sort_key>
          <lg>
@@ -403,6 +377,7 @@
             </stg>
             <infl>
                <form gloss="Sg.Gen">suu</form>
+               <form gloss="Sg.Ill">suʹnne</form>
             </infl>
             <etymology>
                <etymon source="finnougric" type="xxx">sɤ̈-</etymon>
@@ -482,34 +457,9 @@
             </tg>
          </mg>
       </e>
-      <e id="sml_24499">
-         <rev-sort_key>nos</rev-sort_key>
-         <lg>
-            <l>son</l>
-         </lg>
-         <content>
-            <p id="1">4028</p>
-            <p id="2">hän</p>
-            <p id="3"/>
-            <p id="4"/>
-            <p id="5">nos</p>
-            <p id="6">son</p>
-            <p id="7"/>
-            <p id="8">suu</p>
-            <p id="9">suʹnne</p>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
-         </content>
-      </e>
    </e_u>
    <e_u id="sms_bag_6176">
-      <map stamp="gt_Pro_8:fm_6033:sml_27976" fin_lemma_id=""/>
+      <map stamp="gt_Pro_8:fm_6033:sml_27976" fin_lemma_id="22192"/>
       <e id="gt_Pro_8" meta="04">
          <rev-sort_key>not</rev-sort_key>
          <lg>
@@ -519,6 +469,7 @@
             </stg>
             <infl>
                <form gloss="Sg.Gen">tuu</form>
+               <form gloss="Sg.Ill">tuʹnne</form>
             </infl>
             <etymology>
                <etymon source="uralic" type="inher" variant="tə̑n">tun</etymon>
@@ -592,34 +543,9 @@
             </inc-audio>
          </content>
       </e>
-      <e id="sml_27976">
-         <rev-sort_key>not</rev-sort_key>
-         <lg>
-            <l>ton</l>
-         </lg>
-         <content>
-            <p id="1">22192</p>
-            <p id="2">sinä</p>
-            <p id="3"/>
-            <p id="4"/>
-            <p id="5">not</p>
-            <p id="6">ton</p>
-            <p id="7"/>
-            <p id="8">tuu</p>
-            <p id="9">tuʹnne</p>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
-         </content>
-      </e>
    </e_u>
    <e_u id="sms_bag_6177">
-      <map stamp="gt_Pro_9:fm_5904:fm_6315:sml_10996" fin_lemma_id=""/>
+      <map stamp="gt_Pro_9:fm_5904:fm_6315:sml_10996" fin_lemma_id="9228"/>
       <e id="gt_Pro_9" meta="04">
          <rev-sort_key>iiǩ</rev-sort_key>
          <lg>
@@ -719,40 +645,29 @@
          </mg>
       </e>
       <e id="sml_10996">
-         <rev-sort_key>iiǩ</rev-sort_key>
-         <lg>
-            <l>ǩii</l>
-         </lg>
          <content>
             <p id="1">9228</p>
             <p id="2">kuka</p>
             <p id="3">kenen, ketkä</p>
-            <p id="4"/>
-            <p id="5">iiǩ</p>
-            <p id="6">ǩii</p>
-            <p id="7"/>
-            <p id="8">ǩeän</p>
-            <p id="9">ǩeäk</p>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
    </e_u>
    <e_u id="sms_bag_6178">
-      <map stamp="gt_Pro_10:fm_5903:sml_9779" fin_lemma_id=""/>
+      <map stamp="gt_Pro_10:fm_5903:sml_9779" fin_lemma_id="4985"/>
       <e id="gt_Pro_10" meta="04">
          <rev-sort_key>ttʹååk</rev-sort_key>
          <lg>
             <l pos="Pron">kååʹtt</l>
+	    <variants>
+	      <l_syn>mii</l_syn>
+	    </variants>
             <stg>
-               <st Contlex="PRON_" inflexId="::::1000">kååʹtt</st>
+               <st Contlex="PRON-REL_" inflexId="::::1000">kååʹtt</st>
             </stg>
+            <infl>
+               <form gloss="Sg.Gen">koon</form>
+               <form gloss="Pl.Nom">kook</form>
+            </infl>
             <etymology>
                <etymon source="uralic?" type="inher">ku-</etymon>
                <note>derivation</note>
@@ -766,7 +681,6 @@
                <sem class="HUMAN">PEOPLE</sem>
             </semantics>
             <tg xml:lang="eng">
-               <t pos="Pron">who</t>
                <t pos="Pron">who</t>
             </tg>
             <tg xml:lang="rus">
@@ -813,43 +727,15 @@
             </inc-audio>
          </content>
       </e>
-      <e id="sml_9779">
-         <rev-sort_key>ttʹååk</rev-sort_key>
-         <lg>
-            <l>kååʹtt</l>
-            <variants>
-               <l_syn>mii</l_syn>
-            </variants>
-         </lg>
-         <content>
-            <p id="1">4985</p>
-            <p id="2">joka</p>
-            <p id="3">rel. pron.</p>
-            <p id="4"/>
-            <p id="5">ttʹååk</p>
-            <p b_info="(koon, kook)" id="6" syn="mii">kååʹtt</p>
-            <p id="7"/>
-            <p id="8">mõõn</p>
-            <p id="9">mõõk</p>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
-         </content>
-      </e>
    </e_u>
    <e_u id="sms_bag_6179">
-      <map stamp="gt_Pro_11:fm_6034:sml_27705" fin_lemma_id=""/>
+      <map stamp="gt_Pro_11:fm_6034:sml_27705" fin_lemma_id="24527"/>
       <e id="gt_Pro_11" meta="05">
          <rev-sort_key>jit</rev-sort_key>
          <lg>
             <l pos="Pron">tij</l>
             <stg>
-               <st Contlex="PRON_" inflexId="::::1000">tij</st>
+               <st Contlex="PRON-PERS-PL2_" inflexId="::::1000">tij</st>
             </stg>
             <etymology>
                <etymon source="uralic" type="inher">tɤ̈</etymon>
@@ -912,52 +798,33 @@
             </inc-audio>
          </content>
       </e>
-      <e id="sml_27705">
-         <rev-sort_key>jit</rev-sort_key>
-         <lg>
-            <l>tij</l>
-         </lg>
-         <content>
-            <p id="1">24527</p>
-            <p id="2">te</p>
-            <p id="3"/>
-            <p id="4"/>
-            <p id="5">jit</p>
-            <p id="6" nr="(mon.)">tij</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
-         </content>
-      </e>
    </e_u>
    <e_u id="sms_bag_297">
-      <map stamp="fm_124:sml_5309" fin_lemma_id=""/>
+      <map stamp="fm_124:sml_5309" fin_lemma_id="4719"/>
       <e id="fm_124">
          <rev-sort_key>natsjij</rev-sort_key>
          <lg>
             <l pos="Pron">jijstan</l>
             <stg>
-               <st Contlex="PRON_" inflexId="::::1000">jijstan</st>
+               <st Contlex="PRON-REFL-SG1-LOC_" inflexId="::::1000">jijstan</st>
             </stg>
             <variants>
-               <l_pipe>jijstad</l_pipe>
-               <l_pipe>jijstes</l_pipe>
-               <l_pipe>jijsteen</l_pipe>
-               <l_pipe>jijsteed</l_pipe>
-               <l_pipe>jijsteez</l_pipe>
+               <l_pipe gloss="Pron.Refl.Loc.PxSg1">jijstan</l_pipe>
+               <l_pipe gloss="Pron.Refl.Loc.PxSg2">jijstad</l_pipe>
+               <l_pipe gloss="Pron.Refl.Loc.PxSg3">jijstes</l_pipe>
+               <l_pipe gloss="Pron.Refl.Loc.PxPl1">jijsteen</l_pipe>
+               <l_pipe gloss="Pron.Refl.Loc.PxPl2">jijsteed</l_pipe>
+               <l_pipe gloss="Pron.Refl.Loc.PxPl3">jijsteez</l_pipe>
             </variants>
          </lg>
          <mg>
             <tg xml:lang="fin">
-               <t>itseltäni, -si, -än, -mme, -nne, -än</t>
+               <t gloss="Pron.Refl.Abl.PxSg1">itseltäni</t>
+               <t gloss="Pron.Refl.Abl.PxSg2">itseltäsi</t>
+               <t gloss="Pron.Refl.Abl.PxSg3">itseltään</t>
+               <t gloss="Pron.Refl.Abl.PxPl1">itseltämme</t>
+               <t gloss="Pron.Refl.Abl.PxPl2">itseltänne</t>
+               <t gloss="Pron.Refl.Abl.PxPl3">itseltään</t>
             </tg>
             <tg xml:lang="eng">
                <t/>
@@ -975,39 +842,6 @@
             </inc-audio>
          </content>
       </e>
-      <e id="sml_5309">
-         <rev-sort_key>natsjij</rev-sort_key>
-         <lg>
-            <l>jijstan</l>
-            <variants>
-               <l_var_pipe>jijstan</l_var_pipe>
-               <l_var_pipe>jijstad</l_var_pipe>
-               <l_var_pipe>jijstes</l_var_pipe>
-               <l_var_pipe>jijsteen</l_var_pipe>
-               <l_var_pipe>jijsteed</l_var_pipe>
-               <l_var_pipe>jijsteez</l_var_pipe>
-            </variants>
-         </lg>
-         <content>
-            <p id="1">4719</p>
-            <p id="2">itse: itseltä|ni,-si,-än,-mme,-nne,-än</p>
-            <p id="3"/>
-            <p id="4"/>
-            <p id="5">na|tsjij</p>
-            <p id="6" var="jijst|an,-ad,-es,-een,-eed,-eez">jijstan</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
-         </content>
-      </e>
    </e_u>
    <e_u id="sms_bag_296">
       <map stamp="fm_123"/>
@@ -1016,19 +850,25 @@
          <lg>
             <l pos="Pron">jiõccan</l>
             <stg>
-               <st Contlex="PRON_" inflexId="::::">jiõcˈcan</st>
+               <st Contlex="PRON-REFL-SG1-ILL_" inflexId="::::">jiõcˈcan</st>
             </stg>
             <variants>
-               <l_pipe>jiõcˈcad</l_pipe>
-               <l_pipe>jiõcˈces</l_pipe>
-               <l_pipe>jiõcˈceen</l_pipe>
-               <l_pipe>jiõcˈceed</l_pipe>
-               <l_pipe>jiõcˈceez</l_pipe>
+               <l_pipe gloss="Pron.Refl.Ill.PxSg1">jiõcˈcan</l_pipe>
+               <l_pipe gloss="Pron.Refl.Ill.PxSg2">jiõcˈcad</l_pipe>
+               <l_pipe gloss="Pron.Refl.Ill.PxSg3">jiõcˈces</l_pipe>
+               <l_pipe gloss="Pron.Refl.Ill.PxPl1">jiõcˈceen</l_pipe>
+               <l_pipe gloss="Pron.Refl.Ill.PxPl2">jiõcˈceed</l_pipe>
+               <l_pipe gloss="Pron.Refl.Ill.PxPl3">jiõcˈceez</l_pipe>
             </variants>
          </lg>
          <mg>
             <tg xml:lang="fin">
-               <t>itselle|ni,-si,-nsä,-mme,-nne,-nsä</t>
+               <t gloss="Pron.Refl.All.PxSg1">itselleni</t>
+               <t gloss="Pron.Refl.All.PxSg2">itsellesi</t>
+               <t gloss="Pron.Refl.All.PxSg3">itselleen</t>
+               <t gloss="Pron.Refl.All.PxPl1">itsellemme</t>
+               <t gloss="Pron.Refl.All.PxPl2">itsellenne</t>
+               <t gloss="Pron.Refl.All.PxPl3">itselleen</t>
             </tg>
             <tg xml:lang="eng">
                <t/>
@@ -1131,7 +971,7 @@
      </content>
    </e>
    <e_u id="sms_bag_191">
-      <map stamp="fm_12:sml_12259" fin_lemma_id=""/>
+      <map stamp="fm_12:sml_12259" fin_lemma_id="12487"/>
       <e id="fm_12">
          <rev-sort_key>nannool</rev-sort_key>
          <lg>
@@ -1197,7 +1037,7 @@
       </e>
    </e_u>
    <e_u id="sms_bag_394">
-      <map stamp="fm_224:sml_8325" fin_lemma_id=""/>
+      <map stamp="fm_224:sml_8325" fin_lemma_id="25152"/>
       <e id="fm_224">
          <rev-sort_key>semʹieuk mmʹieuk</rev-sort_key>
          <lg>
@@ -1255,7 +1095,7 @@
       </e>
    </e_u>
    <e_u id="sms_bag_2671">
-      <map stamp="fm_2869:sml_5165" fin_lemma_id=""/>
+      <map stamp="fm_2869:sml_5165" fin_lemma_id="15910"/>
       <e id="fm_2869">
          <rev-sort_key>neččʹeij</rev-sort_key>
          <lg>
@@ -1318,11 +1158,14 @@
       </e>
    </e_u>
    <e_u id="sms_bag_5402">
-      <map stamp="fm_6049:sml_5270:sml_5271" fin_lemma_id=""/>
+      <map stamp="fm_6049:sml_5270:sml_5271" fin_lemma_id="15914:22193"/>
       <e id="fm_6049">
          <rev-sort_key>dajjiij</rev-sort_key>
          <lg>
             <l pos="Pron">jiijjad</l>
+            <variants>
+               <l_var>jiõjjad</l_var>
+            </variants>
             <stg>
                <st Contlex="PRON_" inflexId="::::1000">jiijjad</st>
             </stg>
@@ -1355,67 +1198,33 @@
          </content>
       </e>
       <e id="sml_5270">
-         <rev-sort_key>dajjiij</rev-sort_key>
-         <lg>
-            <l>jiijjad</l>
-         </lg>
          <content>
             <p id="1">15914</p>
             <p id="2">oma: omasi</p>
-            <p id="3"/>
-            <p id="4"/>
-            <p id="5">dajjiij</p>
-            <p id="6">jiijjad</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
             <p id="17">1000</p>
          </content>
       </e>
       <e id="sml_5271">
-         <rev-sort_key>dajjiij</rev-sort_key>
-         <lg>
-            <l>jiijjad</l>
-            <variants>
-               <l_var>jiõjjad</l_var>
-            </variants>
-         </lg>
          <content>
             <p id="1">22193</p>
             <p id="2">sinä: sinun omasi</p>
-            <p id="3"/>
-            <p id="4"/>
-            <p id="5">dajjiij</p>
-            <p id="6" var="jiõjjad">jiijjad</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
    </e_u>
    <e_u id="sms_bag_2500">
-      <map stamp="fm_2668:sml_5269:sml_5317:sml_5318:sml_5319" fin_lemma_id=""/>
+      <map stamp="fm_2668:sml_5269:sml_5317:sml_5318:sml_5319" fin_lemma_id="4715:15909:13833:4720"/>
       <e id="fm_2668">
-         <rev-sort_key>naččiij</rev-sort_key>
+         <rev-sort_key>naččõij</rev-sort_key>
          <lg>
-            <l pos="Pron">jiiččan</l>
+            <l pos="Pron">jiõččan</l>
+            <variants>
+               <l_var gloss="Pron.Refl.Acc.PxSg1">jiiččan</l_var>
+               <l_var gloss="Pron.Refl.Acc.PxSg2">jiiččad</l_var>
+               <l_var gloss="Pron.Refl.Acc.PxSg1">jiõččan</l_var>
+               <l_var gloss="Pron.Refl.Acc.PxSg2">jiõččad</l_var>
+            </variants>
             <stg>
-               <st Contlex="PRON_" inflexId="::::1000">jiiččan</st>
+               <st Contlex="PRON_" inflexId="::::1000">jiõččan</st>
             </stg>
          </lg>
          <mg>
@@ -1443,123 +1252,32 @@
          </content>
       </e>
       <e id="sml_5269">
-         <rev-sort_key>naččiij</rev-sort_key>
-         <lg>
-            <l>jiiččan</l>
-            <variants>
-               <l_var_pipe>jiiččan</l_var_pipe>
-               <l_var_pipe>jiiččad</l_var_pipe>
-               <l_var_pipe>jiõččan</l_var_pipe>
-               <l_var_pipe>jiõččad</l_var_pipe>
-            </variants>
-         </lg>
          <content>
             <p id="1">4715</p>
             <p id="2">itse: itse|ni,-si</p>
-            <p id="3"/>
-            <p id="4"/>
-            <p id="5">n|aččiij</p>
-            <p id="6" var="jiičča|n,-d ~ jiõčča|n,-d">jiiččan</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
       <e id="sml_5317">
-         <rev-sort_key>naččõij</rev-sort_key>
-         <lg>
-            <l>jiõččan</l>
-            <variants>
-               <l_var>jiiččan</l_var>
-            </variants>
-         </lg>
          <content>
             <p id="1">15909</p>
             <p id="2">oma: omani</p>
-            <p id="3"/>
-            <p id="4"/>
-            <p id="5">naččõij</p>
-            <p id="6" var="jiiččan">jiõččan</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
       <e id="sml_5318">
-         <rev-sort_key>naččõij</rev-sort_key>
-         <lg>
-            <l>jiõččan</l>
-            <variants>
-               <l_var>jiiččan</l_var>
-            </variants>
-         </lg>
          <content>
             <p id="1">13833</p>
             <p id="2">minä: minun omani</p>
-            <p id="3"/>
-            <p id="4"/>
-            <p id="5">naččõij</p>
-            <p id="6" var="jiiččan">jiõččan</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
       <e id="sml_5319">
-         <rev-sort_key>naččõij</rev-sort_key>
-         <lg>
-            <l>jiõččan</l>
-            <variants>
-               <l_var>jiiččan</l_var>
-            </variants>
-         </lg>
          <content>
             <p id="1">4720</p>
             <p id="2">itse: minä (minut) itseni</p>
-            <p id="3"/>
-            <p id="4"/>
-            <p id="5">naččõij</p>
-            <p id="6" var="jiiččan">jiõččan</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
    </e_u>
    <e_u id="sms_bag_3615">
-      <map stamp="fm_4032:sml_5279:sml_5280:sml_5281" fin_lemma_id=""/>
+      <map stamp="fm_4032:sml_5279:sml_5280:sml_5281" fin_lemma_id="4716:15911:24529"/>
       <e id="fm_4032">
          <rev-sort_key>dejjʹiij</rev-sort_key>
          <lg>
@@ -1614,17 +1332,6 @@
             <p id="4"/>
             <p id="5">s|âjjiij</p>
             <p id="6" var="jiijjâ|s,-n,-d,-z ~ jiiʹjje|s,-n,-d,-z">jiijjâs</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
       <e id="sml_5280">
@@ -1635,21 +1342,8 @@
          <content>
             <p id="1">15911</p>
             <p id="2">oma: omanne</p>
-            <p id="3"/>
-            <p id="4"/>
             <p id="5">dejjʹiij</p>
             <p id="6">jiiʹjjed</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
       <e id="sml_5281">
@@ -1664,26 +1358,14 @@
          <content>
             <p id="1">24529</p>
             <p id="2">te: (teidät) itsenne</p>
-            <p id="3"/>
-            <p id="4"/>
             <p id="5">dejjʹiij</p>
             <p id="6" var="jiijjâd ~ jiijjeed">jiiʹjjed</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
             <p id="17">1000</p>
          </content>
       </e>
    </e_u>
    <e_u id="sms_bag_2025">
-      <map stamp="fm_2112:sml_5279:sml_5304:sml_5305:sml_5307" fin_lemma_id=""/>
+      <map stamp="fm_2112:sml_5279:sml_5304:sml_5305:sml_5307" fin_lemma_id="4716:15949:4029"/>
       <e id="fm_2112">
          <rev-sort_key>sejjʹiij</rev-sort_key>
          <lg>
@@ -1785,20 +1467,8 @@
             <p id="1">15949</p>
             <p id="2">omituinen</p>
             <p id="3">oma</p>
-            <p id="4"/>
             <p id="5">sejjʹiij</p>
             <p b_info="jne. (ks. oma)" id="6">jiiʹjjes</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
       <e id="sml_5307">
@@ -1812,26 +1482,13 @@
          <content>
             <p id="1">4029</p>
             <p id="2">hän: hänen, (hänet) itsensä</p>
-            <p id="3"/>
-            <p id="4"/>
             <p id="5">sejjʹiij</p>
             <p id="6" var="jiijjâs">jiiʹjjes</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
    </e_u>
    <e_u id="sms_bag_2026">
-      <map stamp="fm_2113:sml_5278:sml_5279:sml_5308" fin_lemma_id=""/>
+      <map stamp="fm_2113:sml_5278:sml_5279:sml_5308" fin_lemma_id="2760:4716:15913"/>
       <e id="fm_2113">
          <rev-sort_key>zejjʹiij</rev-sort_key>
          <lg>
@@ -1875,21 +1532,8 @@
          <content>
             <p id="1">2760</p>
             <p id="2">he: heidän, (heidät) itsensä</p>
-            <p id="3"/>
-            <p id="4"/>
             <p id="5">zâjjiij</p>
             <p id="6" var="jiiʹjjez">jiijjâz</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
       <e id="sml_5279">
@@ -1914,17 +1558,6 @@
             <p id="4"/>
             <p id="5">s|âjjiij</p>
             <p id="6" var="jiijjâ|s,-n,-d,-z ~ jiiʹjje|s,-n,-d,-z">jiijjâs</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
       <e id="sml_5308">
@@ -1935,21 +1568,8 @@
          <content>
             <p id="1">15913</p>
             <p id="2">oma: heidän omansa</p>
-            <p id="3"/>
-            <p id="4"/>
             <p id="5">zejjʹiij</p>
             <p id="6">jiiʹjjez</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
    </e_u>
@@ -1976,8 +1596,6 @@
                <c name="German">(wir) selbst, unser, unser eigenes</c>
                <c name="Russian">сами, наш, наш собственный</c>
                <c name="Norwegian">vi selv, vår, vårt, våre, vår egen</c>
-               <c name="Finnish">(meidät) itsemme, meidän, omamme</c>
-               <c name="English">ourselves, our, our own</c>
             </inc-transl>
             <inc-audio>
                <c name="ID_Audio">2869</c>
@@ -1989,25 +1607,37 @@
       </e>
    </e_u>
    <e_u id="sms_bag_4514">
-      <map stamp="fm_5029:sml_5322" fin_lemma_id=""/>
+      <map stamp="fm_5029:sml_5322" fin_lemma_id="4717"/>
       <e id="fm_5029">
          <rev-sort_key>naničij</rev-sort_key>
          <lg>
-            <l pos="Pron">jičinan</l>
+            <l pos="Pron">jiõččinan</l>
             <stg>
                <st Contlex="PRON_" inflexId="::::1000">jičinan</st>
             </stg>
             <variants>
-               <l_pipe>jičinad</l_pipe>
-               <l_pipe>jičines</l_pipe>
-               <l_pipe>jičineen</l_pipe>
-               <l_pipe>jičineed</l_pipe>
-               <l_pipe>jičineez</l_pipe>
+              <l_pipe gloss="Pron.Refl.Ess.PxSg1">jiõččinan</l_pipe>
+               <l_pipe gloss="Pron.Refl.Ess.PxSg2">jiõččinad</l_pipe>
+               <l_pipe gloss="Pron.Refl.Ess.PxSg3">jiõččines</l_pipe>
+               <l_pipe gloss="Pron.Refl.Ess.PxPl1">jiõččineen</l_pipe>
+               <l_pipe gloss="Pron.Refl.Ess.PxPl2">jiõččineed</l_pipe>
+               <l_pipe gloss="Pron.Refl.Ess.PxPl3">jiõččineez</l_pipe>
+               <l_pipe gloss="Pron.Refl.Ess.PxSg1">jičinan</l_pipe>
+               <l_pipe gloss="Pron.Refl.Ess.PxSg2">jičinad</l_pipe>
+               <l_pipe gloss="Pron.Refl.Ess.PxSg3">jičines</l_pipe>
+               <l_pipe gloss="Pron.Refl.Ess.PxPl1">jičineen</l_pipe>
+               <l_pipe gloss="Pron.Refl.Ess.PxPl2">jičineed</l_pipe>
+               <l_pipe gloss="Pron.Refl.Ess.PxPl3">jičineez</l_pipe>
             </variants>
          </lg>
          <mg>
             <tg xml:lang="fin">
-               <t>itsekse|ni, -s i, -nsä, -mme, -nne, -nsä</t>
+               <t gloss="Pron.Refl.Tra.PxSg1">itsekseni</t>
+               <t gloss="Pron.Refl.Tra.PxSg2">itseksesi</t>
+               <t gloss="Pron.Refl.Tra.PxSg3">itsekseen</t>
+               <t gloss="Pron.Refl.Tra.PxPl1">itseksemme</t>
+               <t gloss="Pron.Refl.Tra.PxPl2">itseksenne</t>
+               <t gloss="Pron.Refl.Tra.PxPl3">itsekseen</t>
             </tg>
             <tg xml:lang="eng">
                <t>to myself, yourself, him-/herself, ourselves, theirselves,
@@ -2030,50 +1660,18 @@
          </content>
       </e>
       <e id="sml_5322">
-         <rev-sort_key>naniččõij</rev-sort_key>
-         <lg>
-            <l>jiõččinan</l>
-            <variants>
-               <l_var_pipe>jiõččinan</l_var_pipe>
-               <l_var_pipe>jiõččinad</l_var_pipe>
-               <l_var_pipe>jiõččines</l_var_pipe>
-               <l_var_pipe>jiõččineen</l_var_pipe>
-               <l_var_pipe>jiõččineed</l_var_pipe>
-               <l_var_pipe>jiõččineez</l_var_pipe>
-               <l_var_pipe>jičinan</l_var_pipe>
-               <l_var_pipe>jičinad</l_var_pipe>
-               <l_var_pipe>jičines</l_var_pipe>
-               <l_var_pipe>jičineen</l_var_pipe>
-               <l_var_pipe>jičineed</l_var_pipe>
-               <l_var_pipe>jičineez</l_var_pipe>
-            </variants>
-         </lg>
          <content>
             <p id="1">4717</p>
             <p id="2">itse: itsekse|ni,-si,-nsä,-mme,-nne,-nsä</p>
-            <p id="3"/>
-            <p id="4"/>
             <p id="5">na|niččõij</p>
             <p id="6"
                var="jiõččin|an,-ad,-es,-een,-eed,-eez ~ jičin|an,-ad,-es, -een,-eed,-eez">jiõččinan</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
    </e_u>
-   <e_u id="sms_bag_3162">
-      <map stamp="fm_3508"/>
-      <e id="fm_3508">
-         <rev-sort_key>ččij</rev-sort_key>
+   <e id="fm_3508">
+     <map stamp="fm_3508"/>
+     <rev-sort_key>ččij</rev-sort_key>
          <lg>
             <l pos="Pron">jičč</l>
             <stg>
@@ -2096,8 +1694,6 @@
                <c name="German">selbst</c>
                <c name="Russian">сам, само, само</c>
                <c name="Norwegian">selv</c>
-               <c name="Finnish">itse</c>
-               <c name="English">self</c>
             </inc-transl>
             <inc-audio>
                <c name="ID_Audio">3509</c>
@@ -2106,8 +1702,7 @@
                <c name="included">yes</c>
             </inc-audio>
          </content>
-      </e>
-   </e_u>
+   </e>
    <e_u id="sms_bag_1612">
       <map stamp="fm_1630"/>
       <e id="fm_1630">
@@ -2131,8 +1726,6 @@
                <c name="German">jede(r, s)</c>
                <c name="Russian">каждый, всякий, любой</c>
                <c name="Norwegian">hver og en, alle</c>
-               <c name="Finnish">jokainen</c>
-               <c name="English">everyone, everybody; each, every</c>
             </inc-transl>
             <inc-audio>
                <c name="ID_Audio">1631</c>
@@ -2166,8 +1759,6 @@
                <c name="German">jede(r,s)</c>
                <c name="Russian">каждый</c>
                <c name="Norwegian">hver og en, alle</c>
-               <c name="Finnish">jokainen</c>
-               <c name="English">everyone, everybody; each, every</c>
             </inc-transl>
             <inc-audio>
                <c name="ID_Audio">1630</c>
@@ -2201,8 +1792,6 @@
                <c name="German">jemand</c>
                <c name="Russian">кто-то, кто-либо</c>
                <c name="Norwegian">noen, noe, en eller annen</c>
-               <c name="Finnish">joku</c>
-               <c name="English">somebody, anybody</c>
             </inc-transl>
             <inc-audio>
                <c name="ID_Audio">6813</c>
@@ -2235,8 +1824,6 @@
                <c name="German">wer (Pl); was (Pl), welche (Pl)</c>
                <c name="Russian">кто (о многих)</c>
                <c name="Norwegian">hvem (flertall), som (flertall)</c>
-               <c name="Finnish">ketkä; jotka</c>
-               <c name="English">who (Pl), what (Pl), which (Pl)</c>
             </inc-transl>
             <inc-audio>
                <c name="ID_Audio">5906</c>
@@ -2270,8 +1857,6 @@
                <c name="German">wessen; dessen</c>
                <c name="Russian">чей, какой</c>
                <c name="Norwegian">hvis, hvem</c>
-               <c name="Finnish">kenen; jonka</c>
-               <c name="English">whose, which</c>
             </inc-transl>
             <inc-audio>
                <c name="ID_Audio">5910</c>
@@ -2283,7 +1868,7 @@
       </e>
    </e_u>
    <e_u id="sms_bag_4479">
-      <map stamp="fm_4993:sml_12674" fin_lemma_id=""/>
+      <map stamp="fm_4993:sml_12674" fin_lemma_id="12508"/>
       <e id="fm_4993">
          <rev-sort_key>nâzzuul</rev-sort_key>
          <lg>
@@ -2292,6 +1877,7 @@
                <st Contlex="PRON_" inflexId="::::1000">luuzzân</st>
             </stg>
             <variants>
+               <l_pipe>luuzzân</l_pipe>
                <l_pipe>luuzzâd</l_pipe>
                <l_pipe>luuzzõs</l_pipe>
                <l_pipe>luuzzõn</l_pipe>
@@ -2310,8 +1896,6 @@
          <content id="fm_4993">
             <inc-transl>
                <c name="German">zu mir, dir, ihr/ihm, uns, euch, ihnen</c>
-               <c name="Finnish">luokseni,-si,-nsa,-mme,-nne,-nsa</c>
-               <c name="English">to me, you, him/her, us, you, them</c>
             </inc-transl>
             <inc-audio>
                <c name="ID_Audio">4994</c>
@@ -2341,22 +1925,12 @@
             <p id="4"/>
             <p id="5">na|zzuul</p>
             <p id="6" var="luuzz|an,-ad,-âs,-ân,-âd,-âz">luuzzan</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
             <p id="17">1000</p>
          </content>
       </e>
    </e_u>
    <e_u id="sms_bag_858">
-      <map stamp="fm_758:sml_12672" fin_lemma_id=""/>
+      <map stamp="fm_758:sml_12672" fin_lemma_id="12486"/>
       <e id="fm_758">
          <rev-sort_key>sennʹuul</rev-sort_key>
          <lg>
@@ -2406,26 +1980,13 @@
          <content>
             <p id="1">12486</p>
             <p id="2">luo|na,-ta luona|an,-mme,-nne,-nsa</p>
-            <p id="3"/>
-            <p id="4"/>
             <p id="5">s|ennʹuul</p>
             <p id="6" var="luuʹnne|s, -n, -d, -z">luuʹnnes</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
    </e_u>
    <e_u id="sms_bag_786">
-      <map stamp="fm_669:sml_13485" fin_lemma_id=""/>
+      <map stamp="fm_669:sml_13485" fin_lemma_id="14011"/>
       <e id="fm_669">
          <rev-sort_key>nadlâem</rev-sort_key>
          <lg>
@@ -2471,26 +2032,13 @@
          <content>
             <p id="1">14011</p>
             <p id="2">mukaa|ni,-si, mukana|ni,-si</p>
-            <p id="3"/>
-            <p id="4"/>
             <p id="5">n|adlâem</p>
             <p id="6" var="meâlda|n,-d">meâldan</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
    </e_u>
    <e_u id="sms_bag_787">
-      <map stamp="fm_670:sml_13845" fin_lemma_id=""/>
+      <map stamp="fm_670:sml_13845" fin_lemma_id="14012"/>
       <e id="fm_670">
          <rev-sort_key>sedlʹeim</rev-sort_key>
          <lg>
@@ -2540,21 +2088,8 @@
          <content>
             <p id="1">14012</p>
             <p id="2">mukaa|nsa,-mme,-nne,-nsa, mukana|an,-mme,-nne,-nsa</p>
-            <p id="3"/>
-            <p id="4"/>
             <p id="5">s|edlʹeim</p>
             <p id="6" var="mieʹlde|s,-n,-d,-z">mieʹldes</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
    </e_u>
@@ -2585,7 +2120,7 @@
       </e>
    </e_u>
    <e_u id="sms_bag_5240">
-      <map stamp="fm_5853:sml_14637" fin_lemma_id=""/>
+      <map stamp="fm_5853:sml_14637" fin_lemma_id="13470"/>
       <e id="fm_5853">
          <rev-sort_key>anäum</rev-sort_key>
          <lg>
@@ -2593,6 +2128,9 @@
             <stg>
                <st Contlex="PRON_" inflexId="::::1000">muäna</st>
             </stg>
+<infl>
+  <form gloss="Acc">muännaid</form>
+</infl>
          </lg>
          <mg>
             <tg xml:lang="fin">
@@ -2618,34 +2156,9 @@
             </inc-audio>
          </content>
       </e>
-      <e id="sml_14637">
-         <rev-sort_key>anäum</rev-sort_key>
-         <lg>
-            <l>muäna</l>
-         </lg>
-         <content>
-            <p id="1">13470</p>
-            <p id="2">me: me kaksi</p>
-            <p id="3"/>
-            <p id="4"/>
-            <p id="5">anäum</p>
-            <p b_info="(akk. muännaid)" id="6">muäna</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
-         </content>
-      </e>
    </e_u>
    <e_u id="sms_bag_5265">
-      <map stamp="fm_5881:sml_13432" fin_lemma_id=""/>
+      <map stamp="fm_5881:sml_13432" fin_lemma_id="13874"/>
       <e id="fm_5881">
          <rev-sort_key>dʹiâm</rev-sort_key>
          <lg>
@@ -2679,28 +2192,9 @@
          </content>
       </e>
       <e id="sml_13432">
-         <rev-sort_key>dʹiâm</rev-sort_key>
-         <lg>
-            <l>mâiʹd</l>
-         </lg>
          <content>
             <p id="1">13874</p>
             <p id="2">mitä</p>
-            <p id="3"/>
-            <p id="4"/>
-            <p id="5">dʹiâm</p>
-            <p id="6">mâiʹd</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
    </e_u>
@@ -2727,8 +2221,6 @@
                <c name="German">etwas</c>
                <c name="Russian">что-то, нечто</c>
                <c name="Norwegian">noe</c>
-               <c name="Finnish">jotakin</c>
-               <c name="English">something, anything</c>
             </inc-transl>
             <inc-audio>
                <c name="ID_Audio">354</c>
@@ -2740,11 +2232,14 @@
       </e>
    </e_u>
    <e_u id="sms_bag_971">
-      <map stamp="fm_889:sml_13456:sml_13457:sml_13458" fin_lemma_id=""/>
+      <map stamp="fm_889:sml_13456:sml_13457:sml_13458" fin_lemma_id="5414:5411:23855"/>
       <e id="fm_889">
          <rev-sort_key>sasalŋŋʹâm</rev-sort_key>
          <lg>
             <l pos="Pron">mâʹŋŋlasas</l>
+            <variants>
+               <l_var>mâʹŋŋlõõssâs</l_var>
+            </variants>
             <stg>
                <st Contlex="PRON_" inflexId="::::1000">mâʹŋŋlasas</st>
             </stg>
@@ -2781,21 +2276,8 @@
          <content>
             <p id="1">5414</p>
             <p id="2">jälkeensä</p>
-            <p id="3"/>
-            <p id="4"/>
             <p id="5">sasalŋŋʹâm</p>
             <p id="6">mâʹŋŋlasas</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
       <e id="sml_13457">
@@ -2806,21 +2288,6 @@
          <content>
             <p id="1">5411</p>
             <p id="2">jälkeen: jälkeensä</p>
-            <p id="3"/>
-            <p id="4"/>
-            <p id="5">sasalŋŋʹâm</p>
-            <p id="6">mâʹŋŋlasas</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
       <e id="sml_13458">
@@ -2835,25 +2302,11 @@
             <p id="1">23855</p>
             <p id="2">taakse</p>
             <p id="3">taakseen</p>
-            <p id="4"/>
-            <p id="5">sasalŋŋʹâm</p>
-            <p id="6" var="mâʹŋŋlõõssâs">mâʹŋŋlasas</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
    </e_u>
    <e_u id="sms_bag_2635">
-      <map stamp="fm_2828:sml_17084:sml_17085" fin_lemma_id=""/>
+      <map stamp="fm_2828:sml_17084:sml_17085" fin_lemma_id="19366:29501"/>
       <e id="fm_2828">
          <rev-sort_key>mâloo</rev-sort_key>
          <lg>
@@ -2901,21 +2354,8 @@
          <content>
             <p id="1">19366</p>
             <p id="2">päälle: päälle|nsä,-mme,-nne,-nsä</p>
-            <p id="3"/>
-            <p id="4"/>
             <p id="5">s|âloo</p>
             <p id="6" var="oolâ|s,-m,-d,-z">oolâs</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
       <e id="sml_17085">
@@ -2932,21 +2372,8 @@
          <content>
             <p id="1">29501</p>
             <p id="2">ylle: ylle|nsä,-mme,-nne,-nsä</p>
-            <p id="3"/>
-            <p id="4"/>
             <p id="5">s|âloo</p>
             <p id="6" var="oolâ|s,-m,-d,-z">oolâs</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
    </e_u>
@@ -2976,8 +2403,6 @@
          <content id="fm_2827">
             <inc-transl>
                <c name="German">auf/über ihm/ihr, uns, euch, ihnen</c>
-               <c name="Finnish">päälle|nsä,-mme, -nne,-nsä, ylle|nsä,-mme,-nne, -nsä</c>
-               <c name="English">on/above him/her, us, you, them</c>
             </inc-transl>
             <inc-audio>
                <c name="ID_Audio">2828</c>
@@ -2989,7 +2414,7 @@
       </e>
    </e_u>
    <e_u id="sms_bag_841">
-      <map stamp="fm_739:sml_19326" fin_lemma_id=""/>
+      <map stamp="fm_739:sml_19326" fin_lemma_id="29588"/>
       <e id="fm_739">
          <rev-sort_key>nasrrip</rev-sort_key>
          <lg>
@@ -2998,6 +2423,7 @@
                <st Contlex="PRON_" inflexId="::::1000">pirrsan</st>
             </stg>
             <variants>
+               <l_pipe>pirrsan</l_pipe>
                <l_pipe>pirrsad</l_pipe>
                <l_pipe>pirrses</l_pipe>
                <l_pipe>pirrseen</l_pipe>
@@ -3043,30 +2469,21 @@
          <content>
             <p id="1">29588</p>
             <p id="2">ympärille|ni,-si,-nsä,-mme,-nne,-nsä</p>
-            <p id="3"/>
-            <p id="4"/>
             <p id="5">na|srrip</p>
             <p id="6" var="pirrs|an,-ad,-es,-een,-eed,-eez">pirrsan</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
    </e_u>
   <e_u id="sms_bag_1058">
-      <map stamp="fm_1000:sml_9141" fin_lemma_id=""/>
+      <map stamp="fm_1000:sml_9141" fin_lemma_id="9477"/>
       <e id="fm_1000">
          <rev-sort_key>a-žabbäuk</rev-sort_key>
          <lg>
             <l pos="Pron">kuäbbaž-a</l>
+            <variants>
+               <l_syn>kuhttu</l_syn>
+               <l_syn>kuõhttu</l_syn>
+            </variants>
             <stg>
                <st inflexId="::::1.26">kuäbbaž-a</st>
             </stg>
@@ -3084,8 +2501,6 @@
                <c name="German">beide, jeder</c>
                <c name="Russian">оба</c>
                <c name="Norwegian">begge to</c>
-               <c name="Finnish">kumpikin</c>
-               <c name="English">both, each</c>
             </inc-transl>
             <inc-audio>
                <c name="ID_Audio">1001</c>
@@ -3096,37 +2511,17 @@
          </content>
       </e>
       <e id="sml_9141">
-         <rev-sort_key>a-žabbäuk</rev-sort_key>
-         <lg>
-            <l>kuäbbaž-a</l>
-            <variants>
-               <l_syn>kuhttu</l_syn>
-               <l_syn>kuõhttu</l_syn>
-            </variants>
-         </lg>
          <content>
             <p id="1">9477</p>
             <p id="2">kumpikin</p>
-            <p id="3"/>
-            <p id="4"/>
             <p id="5">žabbäuk</p>
             <p id="6" syn="kuhttu ~ kuõhttu (mon.)">kuäbbaž-a</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
             <p id="17">1.26</p>
          </content>
       </e>
    </e_u>
   <e_u id="sms_bag_1555">
-      <map stamp="fm_1569:sml_9142" fin_lemma_id=""/>
+      <map stamp="fm_1569:sml_9142" fin_lemma_id="9473"/>
       <e id="fm_1569">
          <rev-sort_key>en-žabbäuk</rev-sort_key>
          <lg>
@@ -3148,8 +2543,6 @@
                <c name="German">der (die, das) eine oder der (die, das) andere, eine(r, s) von beiden</c>
                <c name="Russian">один из двух, тот или другой</c>
                <c name="Norwegian">den ene av to</c>
-               <c name="Finnish">jompikumpi</c>
-               <c name="English">either one</c>
             </inc-transl>
             <inc-audio>
                <c name="ID_Audio">1570</c>
@@ -3167,30 +2560,22 @@
          <content>
             <p id="1">9473</p>
             <p id="2">kumpi: jompikumpi</p>
-            <p id="3"/>
-            <p id="4"/>
             <p id="5">žabbäuk</p>
             <p b_info="(kuäbba-ne)" id="6">kuäbbaž-ne</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
             <p id="17">1.26</p>
          </content>
       </e>
    </e_u>
   <e_u id="sms_bag_3367">
-      <map stamp="fm_3749:sml_10977" fin_lemma_id=""/>
+      <map stamp="fm_3749:sml_10977" fin_lemma_id="5013"/>
       <e id="fm_3749">
          <rev-sort_key>en-ttʹååk</rev-sort_key>
          <lg>
             <l pos="Pron">kååʹtt-ne</l>
+            <variants>
+               <l_syn>ǩii-ne</l_syn>
+               <l_syn>måtam</l_syn>
+            </variants>
             <stg>
                <st inflexId="::::1000">kååʹtt-ne</st>
             </stg>
@@ -3231,26 +2616,13 @@
          <content>
             <p id="1">5013</p>
             <p id="2">joku</p>
-            <p id="3"/>
-            <p id="4"/>
             <p id="5">iiǩ</p>
             <p id="6" syn="kååʹtt-ne, måtam">ǩii-ne</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
    </e_u>
   <e_u id="sms_bag_3368">
-      <map stamp="fm_3750:sml_13921" fin_lemma_id=""/>
+      <map stamp="fm_3750:sml_13921" fin_lemma_id="5001"/>
       <e id="fm_3750">
          <rev-sort_key>en-iim</rev-sort_key>
          <lg>
@@ -3258,6 +2630,11 @@
             <stg>
                <st inflexId="::::1000">mii-ne</st>
             </stg>
+<infl>
+<form gloss="Sg.Acc">mõõn-ne</form>
+<form gloss="Sg.Gen">mõõn-ne</form>
+<form gloss="Pl.Nom">mõõk-ne</form>
+</infl>
          </lg>
          <mg>
             <tg xml:lang="fin">
@@ -3291,20 +2668,8 @@
          <content>
             <p id="1">5001</p>
             <p id="2">jokin</p>
-            <p id="3"/>
-            <p id="4"/>
             <p id="5">iim</p>
             <p id="6">mii-ne</p>
-            <p id="7"/>
-            <p id="8">mõõn-ne</p>
-            <p id="9">mõõk-ne</p>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
             <p id="17">1000</p>
          </content>
       </e>
@@ -3336,11 +2701,15 @@
       </e>
    </e_u>
   <e_u id="sms_bag_3612">
-      <map stamp="fm_4029:sml_25619" fin_lemma_id=""/>
+      <map stamp="fm_4029:sml_25619" fin_lemma_id="2759"/>
       <e id="fm_4029">
          <rev-sort_key>anäus</rev-sort_key>
          <lg>
             <l pos="Pron">suäna</l>
+            <variants>
+               <l_var>såna</l_var>
+               <l_var>sååna</l_var>
+            </variants>
             <stg>
                <st inflexId="::::1000">suäna</st>
             </stg>
@@ -3370,41 +2739,24 @@
          </content>
       </e>
       <e id="sml_25619">
-         <rev-sort_key>anäus</rev-sort_key>
-         <lg>
-            <l>suäna</l>
-            <variants>
-               <l_var>såna</l_var>
-               <l_var>sååna</l_var>
-            </variants>
-         </lg>
          <content>
             <p id="1">2759</p>
             <p id="2">he kaksi</p>
-            <p id="3"/>
-            <p id="4"/>
             <p id="5">anäus</p>
             <p case="(akk. suännaid)" id="6" var="såna ~sååna (akk. sånnaid)">suäna</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
    </e_u>
   <e_u id="sms_bag_5566">
-      <map stamp="fm_6495:sml_25619" fin_lemma_id=""/>
+      <map stamp="fm_6495:sml_25619" fin_lemma_id="2759"/>
       <e id="fm_6495">
          <rev-sort_key>anäus</rev-sort_key>
          <lg>
             <l pos="Pron">suäna</l>
+            <variants>
+               <l_var>såna</l_var>
+               <l_var>sååna</l_var>
+            </variants>
             <stg>
                <st inflexId="::::1000">suäna</st>
             </stg>
@@ -3425,37 +2777,16 @@
          </content>
       </e>
       <e id="sml_25619">
-         <rev-sort_key>anäus</rev-sort_key>
-         <lg>
-            <l>suäna</l>
-            <variants>
-               <l_var>såna</l_var>
-               <l_var>sååna</l_var>
-            </variants>
-         </lg>
          <content>
             <p id="1">2759</p>
             <p id="2">he kaksi</p>
-            <p id="3"/>
-            <p id="4"/>
             <p id="5">anäus</p>
             <p case="(akk. suännaid)" id="6" var="såna ~sååna (akk. sånnaid)">suäna</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
    </e_u>
   <e_u id="sms_bag_3673">
-      <map stamp="fm_4102:sml_27633" fin_lemma_id=""/>
+      <map stamp="fm_4102:sml_27633" fin_lemma_id="26199"/>
       <e id="fm_4102">
          <rev-sort_key>aa-kkeit</rev-sort_key>
          <lg>
@@ -3487,33 +2818,16 @@
          </content>
       </e>
       <e id="sml_27633">
-         <rev-sort_key>aa-kkeit</rev-sort_key>
-         <lg>
-            <l>tiekk-aa</l>
-         </lg>
          <content>
             <p id="1">26199</p>
             <p id="2">tämä: nämä tässä</p>
-            <p id="3"/>
-            <p id="4"/>
             <p id="5">kkeit</p>
             <p id="6">tiekk-aa</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
    </e_u>
   <e_u id="sms_bag_3640">
-      <map stamp="fm_4065:sml_27659" fin_lemma_id=""/>
+      <map stamp="fm_4065:sml_27659" fin_lemma_id="26197"/>
       <e id="fm_4065">
          <rev-sort_key>aa-tteit</rev-sort_key>
          <lg>
@@ -3545,28 +2859,9 @@
          </content>
       </e>
       <e id="sml_27659">
-         <rev-sort_key>aa-tteit</rev-sort_key>
-         <lg>
-            <l>tiett-aa</l>
-         </lg>
          <content>
             <p id="1">26197</p>
             <p id="2">tämä tässä</p>
-            <p id="3"/>
-            <p id="4"/>
-            <p id="5">tteit</p>
-            <p id="6">tiett-aa</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
    </e_u>
@@ -3623,11 +2918,15 @@
       </e>
    </e_u>
   <e_u id="sms_bag_5390">
-      <map stamp="fm_6036:sml_29039" fin_lemma_id=""/>
+      <map stamp="fm_6036:sml_29039" fin_lemma_id="24528"/>
       <e id="fm_6036">
          <rev-sort_key>anäut</rev-sort_key>
          <lg>
             <l pos="Pron">tuäna</l>
+            <variants>
+               <l_syn>tåna</l_syn>
+               <l_syn>tååna</l_syn>
+            </variants>
             <stg>
                <st inflexId="::::1000">tuäna</st>
             </stg>
@@ -3657,37 +2956,16 @@
          </content>
       </e>
       <e id="sml_29039">
-         <rev-sort_key>anäut</rev-sort_key>
-         <lg>
-            <l>tuäna</l>
-            <variants>
-               <l_syn>tåna</l_syn>
-               <l_syn>tååna</l_syn>
-            </variants>
-         </lg>
          <content>
             <p id="1">24528</p>
             <p id="2">te kaksi</p>
-            <p id="3"/>
-            <p id="4"/>
             <p id="5">anäut</p>
             <p b_info="(tuännaid)" id="6" syn="tåna ~ tååna (tånnaid)">tuäna</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
    </e_u>
   <e_u id="sms_bag_4513">
-      <map stamp="fm_5028:sml_33354" fin_lemma_id=""/>
+      <map stamp="fm_5028:sml_33354" fin_lemma_id="12507"/>
       <e id="fm_5028">
          <rev-sort_key>nasrrå</rev-sort_key>
          <lg>
@@ -3696,6 +2974,7 @@
                <st inflexId="::::1000">årrsan</st>
             </stg>
             <variants>
+               <l_pipe>årrsan</l_pipe>
                <l_pipe>årrsad</l_pipe>
                <l_pipe>årrses</l_pipe>
                <l_pipe>årrseen</l_pipe>
@@ -3727,45 +3006,23 @@
          </content>
       </e>
       <e id="sml_33354">
-         <rev-sort_key>nasrrå</rev-sort_key>
-         <lg>
-            <l>årrsan</l>
-            <variants>
-               <l_var_pipe>årrsan</l_var_pipe>
-               <l_var_pipe>årrsad</l_var_pipe>
-               <l_var_pipe>årrses</l_var_pipe>
-               <l_var_pipe>årrseen</l_var_pipe>
-               <l_var_pipe>årrseed</l_var_pipe>
-               <l_var_pipe>årrseez</l_var_pipe>
-            </variants>
-         </lg>
          <content>
             <p id="1">12507</p>
             <p id="2">luokse: luokse|ni,-si,-nsa,-mme,-nne,-nsa</p>
-            <p id="3"/>
-            <p id="4"/>
             <p id="5">na|srrå</p>
             <p id="6" var="årrs|an,-ad,-es,-een,-eed,-eez">årrsan</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
    </e_u>
   <e_u id="sms_bag_1527">
-      <map stamp="fm_1536:sml_10949" fin_lemma_id=""/>
+      <map stamp="fm_1536:sml_10949" fin_lemma_id="9233"/>
       <e id="fm_1536">
          <rev-sort_key>a-iiǩ</rev-sort_key>
          <lg>
             <l pos="Pron">ǩii-a</l>
+            <variants>
+               <l_syn>kååʹtt-a</l_syn>
+            </variants>
             <stg>
                <st inflexId="::::1000">ǩii-a</st>
             </stg>
@@ -3795,36 +3052,16 @@
          </content>
       </e>
       <e id="sml_10949">
-         <rev-sort_key>a-iiǩ</rev-sort_key>
-         <lg>
-            <l>ǩii-a</l>
-            <variants>
-               <l_syn>kååʹtt-a</l_syn>
-            </variants>
-         </lg>
          <content>
             <p id="1">9233</p>
             <p id="2">kuka: kukin</p>
-            <p id="3"/>
-            <p id="4"/>
             <p id="5">iiǩ</p>
             <p id="6" syn="kååʹtt-a">ǩii-a</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
    </e_u>
   <e_u id="sms_bag_1335">
-      <map stamp="fm_1318:sml_14606" fin_lemma_id=""/>
+      <map stamp="fm_1318:sml_14606" fin_lemma_id="16867"/>
       <e id="fm_1318">
          <rev-sort_key>nnåum</rev-sort_key>
          <lg>
@@ -3832,6 +3069,10 @@
             <stg>
                <st inflexId="::::1.111">muånn</st>
             </stg>
+<infl>
+<form gloss="Sg.Gen">muån</form>
+<form gloss="Sg.Ill">mueʹnne</form>
+</infl>
          </lg>
          <mg>
             <tg xml:lang="fin">
@@ -3866,19 +3107,6 @@
             <p id="1">16867</p>
             <p id="2">pari</p>
             <p id="3">noin kaksi</p>
-            <p id="4"/>
-            <p id="5">nnåum</p>
-            <p id="6">muånn</p>
-            <p id="7"/>
-            <p id="8">muån</p>
-            <p id="9">mueʹnne</p>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
             <p id="17">1.111</p>
          </content>
       </e>
@@ -3918,7 +3146,7 @@
       </e>
    </e_u>
    <e_u id="sms_bag_2199">
-      <map stamp="fm_2308:sml_28210" fin_lemma_id=""/>
+      <map stamp="fm_2308:sml_28210" fin_lemma_id="21606"/>
       <e id="fm_2308" r="f">
          <rev-sort_key>aa-tõt aa-tõt</rev-sort_key>
          <lg>
@@ -3948,28 +3176,11 @@
          </mg>
       </e>
       <e id="sml_28210">
-         <rev-sort_key>aa-tõt aa-tõt</rev-sort_key>
-         <lg>
-            <l>tõt-aa tõt-aa</l>
-         </lg>
          <content>
             <p id="1">21606</p>
             <p id="2">se ja se</p>
-            <p id="3"/>
-            <p id="4"/>
             <p id="5">tõt</p>
             <p id="6">tõt-aa tõt-aa</p>
-            <p id="7"/>
-            <p id="8"/>
-            <p id="9"/>
-            <p id="10"/>
-            <p id="11"/>
-            <p id="12"/>
-            <p id="13"/>
-            <p id="14"/>
-            <p id="15"/>
-            <p id="16"/>
-            <p id="17">1000</p>
          </content>
       </e>
    </e_u>
