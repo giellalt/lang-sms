@@ -73,10 +73,12 @@ GT_LEXC_L2_SRCS=\
 
 # Set this to the names of all generated lexc files, if any
 GENERATED_LEXC_SRCS=\
+			 $(srcdir)/stems/A_sms2x.lexc     \
 			 $(srcdir)/stems/Pron_sms2x.lexc     
 
 # Set this to the names of all source xml files, if any
 GT_XML_SRCS=\
+			 stems/A_sms2x.xml     \
 			 stems/Pron_sms2x.xml     
 
 # Define any additional sources here (compiled on their own, or just included
