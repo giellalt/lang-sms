@@ -43,3 +43,6 @@ OR
             </analysis>
         </mini_paradigm>
 
+Ryan: NDS currently uses <mini_paradigm /> and <analysis /> for some paradigms.
+I could change this for sma without affecting sme, but i'd prefer to keep it
+consistent.
