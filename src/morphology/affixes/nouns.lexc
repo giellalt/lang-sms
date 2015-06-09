@@ -5134,6 +5134,27 @@ LEXICON N_CIEʹǨǨES
 +N:%^PenVOWLower%^PenCC2CCC%^PenVow2a%^VC PL-NOM ;
 +N:%^PenVOWLower%^PenCC2CCC%^RmVow PL-OBL ;
 
+LEXICON N_ČUEʹĐES !!= * @CODE@ čueʹđes:čuâttez
++N: NMN_ČUEʹĐES ;
+LEXICON NMN_ČUEʹĐES !!= * @CODE@ čueʹđes:čuâttez
+! 3.e.diphth.gem
+! gradation: yes
+!   Extra strong grade: Else
+!   Weak grade: Sg.Nom
+! Diphthong
+! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
+! Stem vowel: e
+!! ** Yaml: __N-chuedhes__
+:%^PenPALE%^PenPAL%^PenCC2C%^DeVC ATTESTED-NOUN-STEM ;	! čueʹđes
+:%^PenPALE%^PenPAL%^PenCC2C%^DeVC SG-NOM ;	     	! čueʹđes
+:%^PenVow2a SG-ABE/ACC/GEN-PL-NOM ;	 		! čuâttaz
+:%^RmVow%^DeVC%>a SG-ILL ;	  			! čuâttsa
+:%^RmVow%^DeVC%>e SG-LOC ;				! čuâttsest
+:%^RmVow%^DeVC SG-COM_IN ;				! čuâttsin
+:%^RmVow%^DeVC%>e ESS ;  				! čuâttsen
+:%^RmVow%^DeVC%>e PAR ;					! čuâttsed
+:%^RmVow%^DeVC PL-OBL ;					! čuâttsi
+
 
 LEXICON N_MUEʹLES
 !!
@@ -5521,6 +5542,25 @@ LEXICON N_VUÂPˈPAI !!= * @CODE@ vuâppai:vuâpˈp
 +N:j%>e ESS ; ! ess and prt without
 +N:j%>e PAR ;
 +N: PL-OBL ;! what is this2015-04-29
+
+LEXICON N_ČIISTI !!= * @CODE@ čiisti:čiisti
+! gradation: yes
+! is for nouns with ''-est'' +Loc
+!! ** Yaml: __N-chiisti__
+!! * There are several stem types
+!! * sirddi:sirddi
+!! NumContLex=""
++N: ATTESTED-NOUN-STEM ;	! čiisti
++N: SG-NOM ;	       		! čiisti
++N:%^XY2XYY SG-ABE/ACC/GEN ;    		! čiistti
++N:%^XY2XYY%^I2J%>a SG-ILL ;		! čiisttja
++N:%^XY2XYY%^I2J%>e SG-LOC ;		! tobddjest
++N:%^XY2XYY%^I2J SG-COM_N ;		! tobddjin
++N:%^XY2XYY%^I2J%>e ESS ;  		! tobddjen
++N:%^XY2XYY%^I2J%>e PAR ;		! tobddjed
++N:%^V2VV%^XYY2XY PL-NOM ;             ! čistti
++N:%^XY2XYY%^I2J PL-OBL ;             	! čiisttji
+
 
 !! PRESENT PARTICIPLES
 LEXICON N_CÕGGI !!= * @CODE@ cõggi:cõggi
