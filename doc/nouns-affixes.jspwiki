@@ -10,6 +10,7 @@ This file documents the Skolt Saami noun morphology, lexicon by lexicon.
 
 CLASS 1 HIGH VOWEL, NO PALATALIZATION NOMINALS
  * LEXICON N_PAPP  papp:papp
+analogy in PESS
 !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
 !!1.1 Sg.Loc in -âst (no vowel shift, all raised)
  â-stems (Sg.Loc, Ess, Par).
@@ -43,6 +44,7 @@ strong_geminate, long_vowel
 
 
  * LEXICON N_TOLL  toll:toll
+analogy in ääŋŋ
 like KÕÕNJÂL 
 !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
 !!1.1 Sg.Loc in -âst (no vowel shift, all raised)
@@ -609,6 +611,7 @@ CLASS 1 LOW VOWEL, MONOPHTHONG, NO PALATALIZATION NOMINALS
 !!a-stems
 
  * LEXICON N_PESS  pess:pess
+analogy in PAPP
 Is for nouns with ''-ast'' Loc
 !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 !!1.2 Sg.Loc in -ast (vowel shift)
@@ -636,9 +639,53 @@ Is for nouns with ''-ast'' Loc
 N_A-URaise3-32
 ** Yaml: __N-pess, N-pall__
 strong_geminate, short_vowel, no_palatalization, low_stem_vowel
+ *  ATTESTED-NOUN-STEM ;		  pess
+ * : SG-NOM ;	    		  pess
+ * :%>a ESS ; 			  pessan
+ * :%>a PAR ;			  pessad
 strong_geminate, short_vowel, no_palatalization, high_stem_vowel
+ * :%^VOWRaise%>u SG-ILL ;		  pissu
 strong_geminate, long_vowel, no_palatalization, low_stem_vowel
+ * :%^V2VV SG-ABE/ACC/GEN-PL-NOM ;	  peess
+ * :%^V2VV%>a SG-LOC ;	      	  peessast
+ * :%^V2VV%>a SG-COM_IN ;		  peessain
+ * :%^V2VV%>a PL-OBL ;  		  peessai
 strong_geminate, long_vowel, no_palatalization, high_stem_vowel
+ * +Der/Dim:%^V2VV%^VOWRaise%> N_PIISSUŽ ;   piissuž
+
+
+ * LEXICON N_ÄŊŊ  äŋŋ:äŋŋ
+analogy in TOLL
+Is for nouns with ''-ast'' Loc
+!!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+!!1.2 Sg.Loc in -ast (vowel shift)
+ Raised: Sg.Ill
+ Lowered: ELSE
+ a-stems (Sg.Loc, Ess, Par).
+!!1.2.2 Sg.Ill vowel	-u
+!!1.2.2.2 Lacks Palatalization
+!!1.2.2.2.1 Lacks Specifically Pedagogical Gradation
+!!1.2.2.2.1.1 Has Orthographic Gradation
+!!1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
+ Extra strong grade: Sg.Nom, Ess, Par
+ Extra strong grade: Sg.Ill
+ Strong grade: Pl.Nom, Sg.Loc, Sg.Com
+!!FORMS
+** Yaml: __N-aeŋŋ__
+strong_geminate, short_vowel, no_palatalization, low_stem_vowel
+ *  ATTESTED-NOUN-STEM ;		  äŋŋ
+ * : SG-NOM ;	    		  äŋŋ
+ * :%>a ESS ; 			  äŋŋan
+ * :%>a PAR ;			  äŋŋad
+strong_geminate, short_vowel, no_palatalization, high_stem_vowel
+ * :%^VOWRaise%>u SG-ILL ;		  aŋŋu
+single_consonant, long_vowel, no_palatalization, low_stem_vowel
+ * :%^V2VV%^CC2C SG-ABE/ACC/GEN-PL-NOM ;  ääŋ
+ * :%^V2VV%^CC2C%>a SG-LOC ;	       ääŋast
+ * :%^V2VV%^CC2C%>a SG-COM_IN ;	       ääŋain
+ * :%^V2VV%^CC2C%>a PL-OBL ;  	       ääŋai
+strong_geminate, long_vowel, no_palatalization, high_stem_vowel
+ * +Der/Dim:%^V2VV%^VOWRaise%^CC2C%> N_PIISSUŽ ;  aaŋuž
 
 
  * LEXICON N_ŠOOMM  šoomm:šoomm
@@ -910,17 +957,17 @@ Is for nouns with ''-ast'' Loc
  Extra strong grade: Sg.Ill
  Strong grade: Pl.Nom, Sg.Loc, Sg.Com
 !!FORMS
-!!(1) Sg.Nom: neävˈv
-!!(2) Pl.Nom: neävv
-!!(3) Sg.Ill: niâvˈvu
-!!(4) Sg.Loc: neävvast
-!!(5) Sg.Com: neävvain
-!!(6) Ess: neävˈvan
-!!(7) Par: neävˈvad
-!!(8) Pl.Acc: neävvaid
-!!(9) Dim.N.Sg.Nom: niâvvuž (2009: 310)
-N_A-URaise3-32
 ** Yaml: __N-neavvv__
+ *  ATTESTED-NOUN-STEM ;			  neävˈv
+ * : SG-NOM ;	    			  neävˈv
+ * :%^CCC2CC SG-ABE/ACC/GEN-PL-NOM ;	  neävv
+ * :%^VOWRaise%>u SG-ILL ;			  niâvˈvu
+ * :%^CCC2CC%>a SG-LOC ; 			 neävvast
+ * :%^CCC2CC%>a SG-COM_IN ;		 neävvain
+ * :%>a ESS ;   	       			 neävˈvan
+ * :%>a PAR ;				 neävˈvad
+ * :%^CCC2CC%>a PL-OBL ;			 neävvai
+ * +Der/Dim:%^CCC2CC%^VOWRaise%> N_PIISSUŽ ;   niâvvuž
 
  * LEXICON N_PEÄLDD  peäldd:peäldd
 Is for nouns with ''-ast'' Loc
@@ -938,17 +985,19 @@ Is for nouns with ''-ast'' Loc
  Extra strong grade: Sg.Ill
  Strong grade: Pl.Nom, Sg.Loc, Sg.Com
 !!FORMS
-!!(1) Sg.Nom: peäldd
-!!(2) Pl.Nom: peäld
-!!(3) Sg.Ill: piâlddu
-!!(4) Sg.Loc: peäldast
-!!(5) Sg.Com: peäldain
-!!(6) Ess: peälddan
-!!(7) Par: peälddad
-!!(8) Pl.Acc: peäldaid
 !!(9) Dim.N.Sg.Nom: piâlduž (2009: 310)
 N_A-URaise3-32
 ** Yaml: __N-pealdd__
+ *  ATTESTED-NOUN-STEM ;		  peäldd
+ * : SG-NOM ;	    		  peäldd
+ * :%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;	  peäld
+ * :%^VOWRaise%>u SG-ILL ;		  piâlddu
+ * :%^XYY2XY%>a SG-LOC ; 		  peäldast
+ * :%^XYY2XY%>a SG-COM_IN ;	  peäldain
+ * :%>a ESS ;   	       		  peälddan
+ * :%>a PAR ;			  peälddad
+ * :%^XYY2XY%>a PL-OBL ;		  peäldai, peäldaid, peäldaid, peäldain, 
+ * +Der/Dim:%^XYY2XY%^VOWRaise%> N_PIISSUŽ ;    piâlduž
 
 
  * LEXICON N_MEER  meer:meer
@@ -966,16 +1015,18 @@ N_A-U1-11
  Weak grade: Sg.Ill
  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 !!FORMS
-!!(1) Sg.Nom: meer
-!!(2) Pl.Nom: meer
-!!(3) Sg.Ill: meeru ~ meera
-!!(4) Sg.Loc: meerast
-!!(5) Sg.Com: meerain
-!!(6) Ess: meeran
-!!(7) Par: meerad
-!!(8) Pl.Acc: meeraid
-!!(9) Der/Dim.N.Sg.Nom: meeruž
 ** Yaml: __meer, steehl__
+ *  ATTESTED-NOUN-STEM ;		 meer
+ * : SG-NOM ;	    		 meer
+ * : SG-ABE/ACC/GEN-PL-NOM ;	 meer
+ * :%>u SG-ILL ;			 meeru
+ * +Use/NG:%>a SG-ILL ;		 meera
+ * :%>a SG-LOC ;	   		 meerast
+ * :%>a SG-COM_IN ;		 meerain
+ * :%>a ESS ;     			 meeran
+ * :%>a PAR ;			 meerad
+ * :%>a PL-OBL ;			 meerai
+ * +Der/Dim: N_PIISSUŽ ;		 meeruž
 
  * LEXICON N_VÄÄŽŽ  vääžž:vääžž
 Is for nouns with ''-ast'' Loc, No gradation
@@ -992,16 +1043,19 @@ N_A-U1-11
  Weak grade: Sg.Ill
  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 !!FORMS
-!!(1) Sg.Nom: vääžž
-!!(2) Pl.Nom: vääžž
-!!(3) Sg.Ill: vaažžu ~ vääžža
-!!(4) Sg.Loc: vääžžast
-!!(5) Sg.Com: vääžžain
-!!(6) Ess: vääžžan
-!!(7) Par: vääžžad
-!!(8) Pl.Acc: vääžžaid
-!!(9) Der/Dim.N.Sg.Nom: vääžžuž
 ** Yaml: __A-vaeaezhzh__
+ *  ATTESTED-NOUN-STEM ;		 vääžž
+ * : SG-NOM ;	    		 vääžž
+ * : SG-ABE/ACC/GEN-PL-NOM ;	 vääžž
+ * :%^VOWRaise%>u SG-ILL ;		 vaažžu
+ * +Use/NG:%>a SG-ILL ;  	      	 vääžža
+ * :%>a SG-LOC ;	   		 vääžžast
+ * :%>a SG-COM_IN ;		 vääžžain
+ * :%>a ESS ;     			 vääžžan
+ * :%>a PAR ;			 vääžžad
+ * :%>a PL-OBL ;			 vääžžai
+ * +Der/Dim:%^VOWRaise N_PIISSUŽ ;	 vaažžuž
+ * +Use/NG+Der/Dim: N_KUÂLAŽ ;   	 vääžžaž
 
  * LEXICON N_ÅSKK  åskk:åskk
 Is for nouns with ''-ast'' Loc, No gradation
@@ -1018,16 +1072,18 @@ N_A-U1-11
  Weak grade: Sg.Ill
  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 !!FORMS
-!!(1) Sg.Nom: åskk
-!!(2) Pl.Nom: ååsk
-!!(3) Sg.Ill: oskku ~ åskka
-!!(4) Sg.Loc: ååskast
-!!(5) Sg.Com: ååskain
-!!(6) Ess: ååskan
-!!(7) Par: ååskad
-!!(8) Pl.Acc: ååskaid
-!!(9) Der/Dim.N.Sg.Nom: ååskuž
 ** Yaml: __A-oaskk__
+ *  ATTESTED-NOUN-STEM ;			 åskk
+ * : SG-NOM ;	    			 åskk
+ * :%^V2VV%^CC2C SG-ABE/ACC/GEN-PL-NOM ;	 ååsk
+ * :%^VOWRaise%>u SG-ILL ;		    	 oskku
+ * +Use/NG:%>a SG-ILL ;  	      			 åskka
+ * :%^V2VV%^CC2C%>a SG-LOC ;		 ååskast
+ * :%^V2VV%^CC2C%>a SG-COM_IN ;		 ååskain
+ * :%>a ESS ; 	 	   		 åskkan
+ * :%>a PAR ;				 åskkad
+ * :%^V2VV%^CC2C%>a PL-OBL ;		 ååskai
+ * +Der/Dim:%^VOWRaise%>u N_PIISSUŽ ;	 ooskuž
 
  * LEXICON N_PLEÂN  pleân:pleân
 Is for nouns with ''-ast'' Loc, No gradation
@@ -1044,16 +1100,19 @@ N_A-U1-11
  Weak grade: Sg.Ill
  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 !!FORMS
-!!(1) Sg.Nom: pleân
-!!(2) Pl.Nom: pleân
-!!(3) Sg.Ill: pleânu ~ pleâna ~ pleâʹne
-!!(4) Sg.Loc: pleânast
-!!(5) Sg.Com: pleânain
-!!(6) Ess: pleânan
-!!(7) Par: pleânad
-!!(8) Pl.Acc: pleânaid
-!!(9) Der/Dim.N.Sg.Nom: pleânuž
 ** Yaml: __N-plean__
+ *  ATTESTED-NOUN-STEM ;	  pleân
+ * : SG-NOM ;	    	  pleân
+ * : SG-ABE/ACC/GEN-PL-NOM ;   pleân
+ * :%>u SG-ILL ;		  pleânu
+ * :%>a SG-ILL ;		  pleâna
+ * :%^PAL%>e SG-ILL ;	  pleâʹne
+ * :%>a SG-LOC ;	 	  pleânast
+ * :%>a SG-COM_IN ;	  pleânain
+ * :%>a ESS ;     		  pleânan
+ * :%>a PAR ;		  pleânad
+ * :%>a PL-OBL ;		  pleânai
+ * +Der/Dim: N_PIISSUŽ ;	  pleânuž
 
  * LEXICON N_ǨEÂLKK  ǩeâlkk:ǩeâlkk
 !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -1070,18 +1129,21 @@ N_A-U1-11
  Strong grade: Sg.Ill
  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 !!FORMS
-!!(1) Sg.Nom: ǩeâlkk
-!!(2) Pl.Nom: ǩeâlk
-!!(3) Sg.Ill: ǩiõlkku
-!!(4) Sg.Loc: ǩeâlkast
-!!(5) Sg.Com: ǩeâlkain
-!!(6) Ess: ǩeâlkkan
-!!(7) Par: ǩeâlkkad
-!!(8) Pl.Acc: ǩeâlkaid
 !!(9) Der/Dim.N.Sg.Nom: ǩiõlkuž (2009: 312-313)
+ * :%^XYY2XY%>a PL-OBL ;			 ǩeâlkai
+ * :%>a ESS ;   	    			 ǩeâlkkan
+ * :%>a PAR ;				 ǩeâlkkad
+ * :%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;	 ǩeâlk
+ * :%^VOWRaise%>u SG-ILL ;			 ǩiõlkku
+ * :%^XYY2XY%>a SG-LOC ; 			 ǩeâlkast
+ * :%^XYY2XY%>a SG-COM_IN ;		 ǩeâlkain
+ *  ATTESTED-NOUN-STEM ;  			 ǩeâlkk
+ * : SG-NOM ;	    			 ǩeâlkk
+ * :%^XYY2XY%^VOWRaise N_PIISSUŽ ;		 ǩiõlkuž
 
 
  * LEXICON N_ÄKK  äkk:äkk
+normative = PESS 
 ** Yaml: __N-aekk__
 
 CLASS 1 HIGH VOWEL, PALATALIZATION NOMINALS
