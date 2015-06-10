@@ -11,6 +11,7 @@ LEXICON N_ !!= * @CODE@ FOR (STILL) UNCLASSIFIED INCOMING NOUNS.
 
 !! CLASS 1 HIGH VOWEL, NO PALATALIZATION NOMINALS
 LEXICON N_PAPP !!= * @CODE@ papp:papp
+!! analogy in PESS
 +N:  NMN_PAPP ;
 LEXICON NMN_PAPP
 ! foot: 2syll
@@ -73,6 +74,7 @@ LEXICON NMN_PAPP
 
 
 LEXICON N_TOLL !!= * @CODE@ toll:toll
+!! analogy in ääŋŋ
 +N: NMN_TOLL ;
 LEXICON NMN_TOLL
 !! like KÕÕNJÂL 
@@ -1223,6 +1225,7 @@ LEXICON NMN_ŠKOOUL
 !! !!a-stems
 
 LEXICON N_PESS !!= * @CODE@ pess:pess
+!! analogy in PAPP
 ! 2.a.mono.gem
 +N: NMN_PESS ;
 LEXICON NMN_PESS
@@ -1255,19 +1258,56 @@ LEXICON NMN_PESS
 !! N_A-URaise3-32
 !! ** Yaml: __N-pess, N-pall__
 !! strong_geminate, short_vowel, no_palatalization, low_stem_vowel
- ATTESTED-NOUN-STEM ;
-: SG-NOM ;
-:%>a ESS ; ! ess and prt without
-:%>a PAR ;
+ ATTESTED-NOUN-STEM ;		 !!= * @CODE@ pess
+: SG-NOM ;	    		 !!= * @CODE@ pess
+:%>a ESS ; 			 !!= * @CODE@ pessan
+:%>a PAR ;			 !!= * @CODE@ pessad
 !! strong_geminate, short_vowel, no_palatalization, high_stem_vowel
-:%^VOWRaise%>u SG-ILL ;
+:%^VOWRaise%>u SG-ILL ;		 !!= * @CODE@ pissu
 !! strong_geminate, long_vowel, no_palatalization, low_stem_vowel
-:%^V2VV SG-ABE/ACC/GEN-PL-NOM ;
-:%^V2VV%>a SG-LOC ;
-:%^V2VV%>a SG-COM_IN ;
-:%^V2VV%>a PL-OBL ;
+:%^V2VV SG-ABE/ACC/GEN-PL-NOM ;	 !!= * @CODE@ peess
+:%^V2VV%>a SG-LOC ;	      	 !!= * @CODE@ peessast
+:%^V2VV%>a SG-COM_IN ;		 !!= * @CODE@ peessain
+:%^V2VV%>a PL-OBL ;  		 !!= * @CODE@ peessai
 !! strong_geminate, long_vowel, no_palatalization, high_stem_vowel
-+Der/Dim:%^V2VV%^VOWRaise%> N_PIISSUŽ ;
++Der/Dim:%^V2VV%^VOWRaise%> N_PIISSUŽ ; !!= * @CODE@  piissuž
+
+
+LEXICON N_ÄŊŊ !!= * @CODE@ äŋŋ:äŋŋ
+!! analogy in TOLL
++N: NMN_ÄŊŊ ;
+LEXICON NMN_ÄŊŊ
+! gradation: yes
+!! Is for nouns with ''-ast'' Loc
+!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+!! !!1.2 Sg.Loc in -ast (vowel shift)
+!! !!  Raised: Sg.Ill
+!! !!  Lowered: ELSE
+!! !!  a-stems (Sg.Loc, Ess, Par).
+!! !!1.2.2 Sg.Ill vowel	-u
+!! !!1.2.2.2 Lacks Palatalization
+!! !!1.2.2.2.1 Lacks Specifically Pedagogical Gradation
+!! !!1.2.2.2.1.1 Has Orthographic Gradation
+!! !!1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
+!! !!  Extra strong grade: Sg.Nom, Ess, Par
+!! !!  Extra strong grade: Sg.Ill
+!! !!  Strong grade: Pl.Nom, Sg.Loc, Sg.Com
+!! !!FORMS
+!! ** Yaml: __N-aeŋŋ__
+!! strong_geminate, short_vowel, no_palatalization, low_stem_vowel
+ ATTESTED-NOUN-STEM ;		 !!= * @CODE@ äŋŋ
+: SG-NOM ;	    		 !!= * @CODE@ äŋŋ
+:%>a ESS ; 			 !!= * @CODE@ äŋŋan
+:%>a PAR ;			 !!= * @CODE@ äŋŋad
+!! strong_geminate, short_vowel, no_palatalization, high_stem_vowel
+:%^VOWRaise%>u SG-ILL ;		 !!= * @CODE@ aŋŋu
+!! single_consonant, long_vowel, no_palatalization, low_stem_vowel
+:%^V2VV%^CC2C SG-ABE/ACC/GEN-PL-NOM ; !!= * @CODE@ ääŋ
+:%^V2VV%^CC2C%>a SG-LOC ;	      !!= * @CODE@ ääŋast
+:%^V2VV%^CC2C%>a SG-COM_IN ;	      !!= * @CODE@ ääŋain
+:%^V2VV%^CC2C%>a PL-OBL ;  	      !!= * @CODE@ ääŋai
+!! strong_geminate, long_vowel, no_palatalization, high_stem_vowel
++Der/Dim:%^V2VV%^VOWRaise%^CC2C%> N_PIISSUŽ ; !!= * @CODE@ aaŋuž
 
 
 LEXICON N_ŠOOMM !!= * @CODE@ šoomm:šoomm
@@ -1676,28 +1716,18 @@ LEXICON NMN_NEÄVˈV
 !! !!  Extra strong grade: Sg.Ill
 !! !!  Strong grade: Pl.Nom, Sg.Loc, Sg.Com
 !! !!FORMS
-!! !!(1) Sg.Nom: neävˈv
-!! !!(2) Pl.Nom: neävv
-!! !!(3) Sg.Ill: niâvˈvu
-!! !!(4) Sg.Loc: neävvast
-!! !!(5) Sg.Com: neävvain
-!! !!(6) Ess: neävˈvan
-!! !!(7) Par: neävˈvad
-!! !!(8) Pl.Acc: neävvaid
-!! !!(9) Dim.N.Sg.Nom: niâvvuž (2009: 310)
 !NumContLex="1.1120000000000001"
-!! N_A-URaise3-32
 !! ** Yaml: __N-neavvv__
- ATTESTED-NOUN-STEM ;			! neävˈv
-: SG-NOM ;	    			! neävˈv
-:%^CCC2CC SG-ABE/ACC/GEN-PL-NOM ;			! neävv
-:%^VOWRaise%>u SG-ILL ;			! niâvˈvu
-:%^CCC2CC%>a SG-LOC ;
-:%^CCC2CC%>a SG-COM_IN ;
-:%>a ESS ; ! ess and prt without
-:%>a PAR ;
-:%^CCC2CC%>a PL-OBL ;
-+Der/Dim:%^CCC2CC%^VOWRaise%> N_PIISSUŽ ;
+ ATTESTED-NOUN-STEM ;			!!= * @CODE@  neävˈv
+: SG-NOM ;	    			!!= * @CODE@  neävˈv
+:%^CCC2CC SG-ABE/ACC/GEN-PL-NOM ;	!!= * @CODE@  neävv
+:%^VOWRaise%>u SG-ILL ;			!!= * @CODE@  niâvˈvu
+:%^CCC2CC%>a SG-LOC ; 			!!= * @CODE@ neävvast
+:%^CCC2CC%>a SG-COM_IN ;		!!= * @CODE@ neävvain
+:%>a ESS ;   	       			!!= * @CODE@ neävˈvan
+:%>a PAR ;				!!= * @CODE@ neävˈvad
+:%^CCC2CC%>a PL-OBL ;			!!= * @CODE@ neävvai
++Der/Dim:%^CCC2CC%^VOWRaise%> N_PIISSUŽ ;  !!= * @CODE@ niâvvuž
 
 LEXICON N_PEÄLDD !!= * @CODE@ peäldd:peäldd
 +N: NMN_PEÄLDD ;
@@ -1718,28 +1748,20 @@ LEXICON NMN_PEÄLDD
 !! !!  Extra strong grade: Sg.Ill
 !! !!  Strong grade: Pl.Nom, Sg.Loc, Sg.Com
 !! !!FORMS
-!! !!(1) Sg.Nom: peäldd
-!! !!(2) Pl.Nom: peäld
-!! !!(3) Sg.Ill: piâlddu
-!! !!(4) Sg.Loc: peäldast
-!! !!(5) Sg.Com: peäldain
-!! !!(6) Ess: peälddan
-!! !!(7) Par: peälddad
-!! !!(8) Pl.Acc: peäldaid
 !! !!(9) Dim.N.Sg.Nom: piâlduž (2009: 310)
 !NumContLex="1.1120000000000001"
 !! N_A-URaise3-32
 !! ** Yaml: __N-pealdd__
- ATTESTED-NOUN-STEM ;		! peäldd
-: SG-NOM ;	    		! peäldd
-:%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;		! peäld
-:%^VOWRaise%>u SG-ILL ;		! piâlddu
-:%^XYY2XY%>a SG-LOC ; 		! peäldast
-:%^XYY2XY%>a SG-COM_IN ;	! peäldain
-:%>a ESS ;   	       		! peälddan
-:%>a PAR ;			! peälddad
-:%^XYY2XY%>a PL-OBL ;		! peäldai, peäldaid, peäldaid, peäldain, 
-+Der/Dim:%^XYY2XY%^VOWRaise%> N_PIISSUŽ ;  ! piâlduž
+ ATTESTED-NOUN-STEM ;		!!= * @CODE@  peäldd
+: SG-NOM ;	    		!!= * @CODE@  peäldd
+:%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;	!!= * @CODE@  peäld
+:%^VOWRaise%>u SG-ILL ;		!!= * @CODE@  piâlddu
+:%^XYY2XY%>a SG-LOC ; 		!!= * @CODE@  peäldast
+:%^XYY2XY%>a SG-COM_IN ;	!!= * @CODE@  peäldain
+:%>a ESS ;   	       		!!= * @CODE@  peälddan
+:%>a PAR ;			!!= * @CODE@  peälddad
+:%^XYY2XY%>a PL-OBL ;		!!= * @CODE@  peäldai, peäldaid, peäldaid, peäldain, 
++Der/Dim:%^XYY2XY%^VOWRaise%> N_PIISSUŽ ;  !!= * @CODE@  piâlduž
 
 
 LEXICON N_MEER !!= * @CODE@ meer:meer
@@ -1760,27 +1782,18 @@ LEXICON NMN_MEER
 !! !!  Weak grade: Sg.Ill
 !! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 !! !!FORMS
-!! !!(1) Sg.Nom: meer
-!! !!(2) Pl.Nom: meer
-!! !!(3) Sg.Ill: meeru ~ meera
-!! !!(4) Sg.Loc: meerast
-!! !!(5) Sg.Com: meerain
-!! !!(6) Ess: meeran
-!! !!(7) Par: meerad
-!! !!(8) Pl.Acc: meeraid
-!! !!(9) Der/Dim.N.Sg.Nom: meeruž
 !! ** Yaml: __meer, steehl__
- ATTESTED-NOUN-STEM ;
-: SG-NOM ;
-: SG-ABE/ACC/GEN-PL-NOM ;
-:%>u SG-ILL ;
-:%>a SG-ILL ;
-:%>a SG-LOC ;
-:%>a SG-COM_IN ;
-:%>a ESS ; ! ess and prt without
-:%>a PAR ;
-:%>a PL-OBL ;
-+Der/Dim: N_PIISSUŽ ;
+ ATTESTED-NOUN-STEM ;		!!= * @CODE@ meer
+: SG-NOM ;	    		!!= * @CODE@ meer
+: SG-ABE/ACC/GEN-PL-NOM ;	!!= * @CODE@ meer
+:%>u SG-ILL ;			!!= * @CODE@ meeru
++Use/NG:%>a SG-ILL ;		!!= * @CODE@ meera
+:%>a SG-LOC ;	   		!!= * @CODE@ meerast
+:%>a SG-COM_IN ;		!!= * @CODE@ meerain
+:%>a ESS ;     			!!= * @CODE@ meeran
+:%>a PAR ;			!!= * @CODE@ meerad
+:%>a PL-OBL ;			!!= * @CODE@ meerai
++Der/Dim: N_PIISSUŽ ;		!!= * @CODE@ meeruž
 
 LEXICON N_VÄÄŽŽ !!= * @CODE@ vääžž:vääžž
 +N: NMN_VÄÄŽŽ ;
@@ -1800,27 +1813,19 @@ LEXICON NMN_VÄÄŽŽ
 !! !!  Weak grade: Sg.Ill
 !! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 !! !!FORMS
-!! !!(1) Sg.Nom: vääžž
-!! !!(2) Pl.Nom: vääžž
-!! !!(3) Sg.Ill: vaažžu ~ vääžža
-!! !!(4) Sg.Loc: vääžžast
-!! !!(5) Sg.Com: vääžžain
-!! !!(6) Ess: vääžžan
-!! !!(7) Par: vääžžad
-!! !!(8) Pl.Acc: vääžžaid
-!! !!(9) Der/Dim.N.Sg.Nom: vääžžuž
 !! ** Yaml: __A-vaeaezhzh__
- ATTESTED-NOUN-STEM ;
-: SG-NOM ;
-: SG-ABE/ACC/GEN-PL-NOM ;
-:%^VOWRaise%>u SG-ILL ;
-:%>a SG-ILL ;
-:%>a SG-LOC ;
-:%>a SG-COM_IN ;
-:%>a ESS ; ! ess and prt without
-:%>a PAR ;
-:%>a PL-OBL ;
-!+Der/Dim: N_PIISSUŽ ;
+ ATTESTED-NOUN-STEM ;		!!= * @CODE@ vääžž
+: SG-NOM ;	    		!!= * @CODE@ vääžž
+: SG-ABE/ACC/GEN-PL-NOM ;	!!= * @CODE@ vääžž
+:%^VOWRaise%>u SG-ILL ;		!!= * @CODE@ vaažžu
++Use/NG:%>a SG-ILL ;  	      	!!= * @CODE@ vääžža
+:%>a SG-LOC ;	   		!!= * @CODE@ vääžžast
+:%>a SG-COM_IN ;		!!= * @CODE@ vääžžain
+:%>a ESS ;     			!!= * @CODE@ vääžžan
+:%>a PAR ;			!!= * @CODE@ vääžžad
+:%>a PL-OBL ;			!!= * @CODE@ vääžžai
++Der/Dim:%^VOWRaise N_PIISSUŽ ;	!!= * @CODE@ vaažžuž
++Use/NG+Der/Dim: N_KUÂLAŽ ;   	!!= * @CODE@ vääžžaž
 
 LEXICON N_ÅSKK !!= * @CODE@ åskk:åskk
 +N: NMN_ÅSKK ;
@@ -1840,27 +1845,18 @@ LEXICON NMN_ÅSKK
 !! !!  Weak grade: Sg.Ill
 !! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 !! !!FORMS
-!! !!(1) Sg.Nom: åskk
-!! !!(2) Pl.Nom: ååsk
-!! !!(3) Sg.Ill: oskku ~ åskka
-!! !!(4) Sg.Loc: ååskast
-!! !!(5) Sg.Com: ååskain
-!! !!(6) Ess: ååskan
-!! !!(7) Par: ååskad
-!! !!(8) Pl.Acc: ååskaid
-!! !!(9) Der/Dim.N.Sg.Nom: ååskuž
 !! ** Yaml: __A-oaskk__
- ATTESTED-NOUN-STEM ;
-: SG-NOM ;
-:%^V2VV%^CC2C SG-ABE/ACC/GEN-PL-NOM ;
-:%^VOWRaise%>u SG-ILL ;
-:%>a SG-ILL ;
-:%^V2VV%^CC2C%>a SG-LOC ;
-:%^V2VV%^CC2C%>a SG-COM_IN ;
-:%>a ESS ; ! ess and prt without
-:%>a PAR ;
-:%^V2VV%^CC2C%>a PL-OBL ;
-+Der/Dim:%^VOWRaise%>u N_PIISSUŽ ;
+ ATTESTED-NOUN-STEM ;			!!= * @CODE@ åskk
+: SG-NOM ;	    			!!= * @CODE@ åskk
+:%^V2VV%^CC2C SG-ABE/ACC/GEN-PL-NOM ;	!!= * @CODE@ ååsk
+:%^VOWRaise%>u SG-ILL ;		    	!!= * @CODE@ oskku
++Use/NG:%>a SG-ILL ;  	      			!!= * @CODE@ åskka
+:%^V2VV%^CC2C%>a SG-LOC ;		!!= * @CODE@ ååskast
+:%^V2VV%^CC2C%>a SG-COM_IN ;		!!= * @CODE@ ååskain
+:%>a ESS ; 	 	   		!!= * @CODE@ åskkan
+:%>a PAR ;				!!= * @CODE@ åskkad
+:%^V2VV%^CC2C%>a PL-OBL ;		!!= * @CODE@ ååskai
++Der/Dim:%^VOWRaise%>u N_PIISSUŽ ;	!!= * @CODE@ ooskuž
 
 LEXICON N_PLEÂN !!= * @CODE@ pleân:pleân
 +N: NMN_PLEÂN ;
@@ -1880,28 +1876,19 @@ LEXICON NMN_PLEÂN
 !! !!  Weak grade: Sg.Ill
 !! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 !! !!FORMS
-!! !!(1) Sg.Nom: pleân
-!! !!(2) Pl.Nom: pleân
-!! !!(3) Sg.Ill: pleânu ~ pleâna ~ pleâʹne
-!! !!(4) Sg.Loc: pleânast
-!! !!(5) Sg.Com: pleânain
-!! !!(6) Ess: pleânan
-!! !!(7) Par: pleânad
-!! !!(8) Pl.Acc: pleânaid
-!! !!(9) Der/Dim.N.Sg.Nom: pleânuž
 !! ** Yaml: __N-plean__
- ATTESTED-NOUN-STEM ;	! pleân
-: SG-NOM ;	    	! pleân
-: SG-ABE/ACC/GEN-PL-NOM ;		! pleân
-:%>u SG-ILL ;		! pleânu
-:%>a SG-ILL ;		! pleâna
-:%^PAL%>e SG-ILL ;	! pleâʹne
-:%>a SG-LOC ;	 	! pleânast
-:%>a SG-COM_IN ;	! pleânain
-:%>a ESS ;     		! pleânan
-:%>a PAR ;		! pleânad
-:%>a PL-OBL ;		! pleânai
-+Der/Dim: N_PIISSUŽ ;	! pleânuž
+ ATTESTED-NOUN-STEM ;	!!= * @CODE@  pleân
+: SG-NOM ;	    	!!= * @CODE@  pleân
+: SG-ABE/ACC/GEN-PL-NOM ; !!= * @CODE@  pleân
+:%>u SG-ILL ;		!!= * @CODE@  pleânu
+:%>a SG-ILL ;		!!= * @CODE@  pleâna
+:%^PAL%>e SG-ILL ;	!!= * @CODE@  pleâʹne
+:%>a SG-LOC ;	 	!!= * @CODE@  pleânast
+:%>a SG-COM_IN ;	!!= * @CODE@  pleânain
+:%>a ESS ;     		!!= * @CODE@  pleânan
+:%>a PAR ;		!!= * @CODE@  pleânad
+:%>a PL-OBL ;		!!= * @CODE@  pleânai
++Der/Dim: N_PIISSUŽ ;	!!= * @CODE@  pleânuž
 
 LEXICON N_ǨEÂLKK !!= * @CODE@ ǩeâlkk:ǩeâlkk
 +N: NMN_ǨEÂLKK ;
@@ -1921,48 +1908,43 @@ LEXICON NMN_ǨEÂLKK
 !! !!  Strong grade: Sg.Ill
 !! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 !! !!FORMS
-!! !!(1) Sg.Nom: ǩeâlkk
-!! !!(2) Pl.Nom: ǩeâlk
-!! !!(3) Sg.Ill: ǩiõlkku
-!! !!(4) Sg.Loc: ǩeâlkast
-!! !!(5) Sg.Com: ǩeâlkain
-!! !!(6) Ess: ǩeâlkkan
-!! !!(7) Par: ǩeâlkkad
-!! !!(8) Pl.Acc: ǩeâlkaid
 !! !!(9) Der/Dim.N.Sg.Nom: ǩiõlkuž (2009: 312-313)
 !NumContLex="1,112"
-:%^XYY2XY%>a PL-OBL ;
-:%>a ESS ; ! ess and prt without
-:%>a PAR ;
-:%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;
-:%^VOWRaise%>u SG-ILL ;
-:%^XYY2XY%>a SG-LOC ;
-:%^XYY2XY%>a SG-COM_IN ;
- ATTESTED-NOUN-STEM ;
-: SG-NOM ;
-:%^XYY2XY%^VOWRaise N_PIISSUŽ ;
+:%^XYY2XY%>a PL-OBL ;			!!= * @CODE@ ǩeâlkai
+:%>a ESS ;   	    			!!= * @CODE@ ǩeâlkkan
+:%>a PAR ;				!!= * @CODE@ ǩeâlkkad
+:%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;	!!= * @CODE@ ǩeâlk
+:%^VOWRaise%>u SG-ILL ;			!!= * @CODE@ ǩiõlkku
+:%^XYY2XY%>a SG-LOC ; 			!!= * @CODE@ ǩeâlkast
+:%^XYY2XY%>a SG-COM_IN ;		!!= * @CODE@ ǩeâlkain
+ ATTESTED-NOUN-STEM ;  			!!= * @CODE@ ǩeâlkk
+: SG-NOM ;	    			!!= * @CODE@ ǩeâlkk
+:%^XYY2XY%^VOWRaise N_PIISSUŽ ;		!!= * @CODE@ ǩiõlkuž
 
 
 LEXICON N_ÄKK !!= * @CODE@ äkk:äkk
+!! normative = PESS 
 +N: NMN_ÄKK ;
 LEXICON NMN_ÄKK
 ! gradation: yes
 ! vowel: monophthong
 ! consonantism: geminate
 ! stem vowel: a
-! illative vowel: a
+! illative vowel: u ~ a
 !! ** Yaml: __N-aekk__
 !!
  ATTESTED-NOUN-STEM ;			! äkk
 : SG-NOM ;	    			! äkk
 :%^V2VV SG-ABE/ACC/GEN-PL-NOM ;		! ääkk
-:%>a SG-ILL ;	      		! äkka
+:%^VOWRaise%>u SG-ILL ;	      		! akku
++Use/NG:%>a SG-ILL ;	      		! äkka
 :%^V2VV%>a SG-LOC ;			! ääkkast
 :%^V2VV SG-COM_IN ;		! ääkkin
 :%>a ESS ; 	  	    		! äkkan
 :%>a PAR ;				! äkkad
 :%^V2VV PL-OBL ;		! ääkki
-+Der/Dim:%^V2VV%> N_KUÂLAŽ ;	! ääkkaž
++Der/Dim:%^V2VV%^VOWRaise%> N_PIISSUŽ ;	! aakkuž
++Use/NG+Der/Dim:%^V2VV%> N_KUÂLAŽ ;	! ääkkaž
 
 !! CLASS 1 HIGH VOWEL, PALATALIZATION NOMINALS
 LEXICON N_NUʹBB !!= * @CODE@ nuʹbb:nuʹbb
