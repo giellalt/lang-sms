@@ -43,15 +43,13 @@ LEXICON NMN_PAPP
 !! strong_geminate, short_vowel
  ATTESTED-NOUN-STEM ;		!!= * @CODE@ papp
 : SG-NOM ;			!!= * @CODE@ papp
-:%>â ESS ; 	  		!!= * @CODE@ pappân
-:%>â PAR ;			!!= * @CODE@ pappâd
+:%>â ESS/PAR ; 	  		!!= * @CODE@ pappân, pappâd
 !! strong_geminate, short_vowel, palatalization
 :%^PAL%>e SG-ILL ;		!!= * @CODE@ paʹppe
 !! strong_geminate, long_vowel
 :%^V2VV SG-ABE/ACC/GEN-PL-NOM ;	!!= * @CODE@ paapp
 :%^V2VV%>â SG-LOC ;		!!= * @CODE@ paappâst
-:%^V2VV SG-COM_IN ;		!!= * @CODE@ paappin
-:%^V2VV PL-OBL ;		!!= * @CODE@ paappi, paappid, paappid, paappin, paappivuiʹm, paappitaa
+:%^V2VV SG-COM_IN/PL-OBL ;	!!= * @CODE@ paappi, paappid, paappid, paappin, paappivuiʹm, paappitaa
 
 +Der/Dim+N:%^V2VV N_MUÕRÂŽ-WITHOUT-PAL ;  !!= * @CODE@ paapp-
 +Der/Dim+N:%^V2VV%^PAL N_MUÕRÂŽ-WITH-PAL ;  !!= * @CODE@ paaʹpp-
@@ -3520,8 +3518,8 @@ LEXICON NMN_JEÄʹǦˈǦ
 :%^VOWRaise%^PALẸ%^PAL%^CCC2CC SG-ABE/ACC/GEN-PL-NOM ;	 !!= * @CODE@ (2) jiẹʹǧǧ
 :%^VOWRaise%^PALẸ%^PAL%^CCC2CC%>e SG-LOC ;	     	 !!= * @CODE@ (4) jiẹʹǧǧest
 :%^VOWRaise%^PALE%^PAL%^CCC2CC SG-COM_IN ;		 !!= * @CODE@ (5) jieʹǧǧin
-:%^VOWRaise%^PALẸ%^PAL%>e ESS ; 	 		 !!= * @CODE@ (6) jeäʹǧˈǧen
-:%^VOWRaise%^PALẸ%^PAL%>e PAR ;				 !!= * @CODE@ (7) jeäʹǧˈǧed
+:%^PAL%>e ESS ; 	 		 !!= * @CODE@ (6) jeäʹǧˈǧen
+:%^PAL%>e PAR ;				 !!= * @CODE@ (7) jeäʹǧˈǧed
 :%^VOWRaise%^PALE%^PAL%^CCC2CC PL-OBL ;			 !!= * @CODE@ (8) jieʹǧǧid
 +Der/Dim:%^CCC2CC%> N_KUÂLAŽ ; 	      			 !!= * @CODE@ (9) jeäggaž
 
@@ -5367,7 +5365,7 @@ LEXICON N_ČIISTI !!= * @CODE@ čiisti:čiisti
 +N:%^XY2XYY SG-ABE/ACC/GEN ;    		! čiistti
 +N:%^XY2XYY%^I2J%>a SG-ILL ;		! čiisttja
 +N:%^XY2XYY%^I2J%>e SG-LOC ;		! tobddjest
-+N:%^XY2XYY%^I2J SG-COM_N ;		! tobddjin
++N:%^XY2XYY%^I2J SG-COM_IN ;		! tobddjin
 +N:%^XY2XYY%^I2J%>e ESS ;  		! tobddjen
 +N:%^XY2XYY%^I2J%>e PAR ;		! tobddjed
 +N:%^V2VV%^XYY2XY PL-NOM ;             ! čistti
@@ -5387,13 +5385,13 @@ LEXICON N_CÕGGI !!= * @CODE@ cõggi:cõggi
 +N: SG-ABE/ACC/GEN ;			! cõggi
 +N:%^I2J%>a SG-ILL ;		! cõggja
 +N:%^I2J%>e SG-LOC ;		! cõggjest
-+N:%^CC2C SG-COM_N ;		! cõggjin
++N:%^I2J SG-COM_IN ;		! cõggjin
 +N:%^I2J%>e ESS ;  		! cõggjen
 +N:%^I2J%>e PAR ;		! cõggjed
-+N:%^CC2C PL-NOM ;		! cõõggi
-+N+Use/NG: PL-OBL ;		! cõggi
++N:%^V2VV PL-NOM ;		! cõõggi
++N: PL-OBL ;		! cõggi
 +N+Use/NG: PL-NOM ;		! cõggi
-+N:%^CC2C PL-OBL ;		! cõõggi
++N+Use/NG:%^V2VV PL-OBL ;		! cõõggi
 
 
 
@@ -5410,14 +5408,14 @@ LEXICON N_JÕÕVVI !!= * @CODE@ jõõvvi:jõõvvi
 +N: SG-ACC ;			! jõõvvi
 +N:%^I2J%>a SG-ILL ;		! jõõvvja
 +N:%^I2J%>e SG-LOC ;		! jõõvvjest
-+N:%^CC2C SG-COM_N ;		! jõõvvjin
++N:%^I2J SG-COM_IN ;		! jõõvvjin
 +N:%^I2J%>e ESS ;  		! jõõvvjen
 +N:%^I2J%>e PAR ;		! jõõvvjed
 +N: SG-ABE ;			! jõõvvitaa
 +N:%^CC2C PL-NOM ;		! jõõvi
-+N:%^CC2C PL-OBL ;		! jõõvi
++N: PL-OBL ;		! jõõvvi
++N+Use/NG:%^CC2C PL-OBL ;		! jõõvi
 +N+Use/NG: PL-NOM ;		! jõõvvi
-+N+Use/NG: PL-OBL ;		! jõõvvi
 
 LEXICON N_LOOKKI !!= * @CODE@ lookki:lookki
 ! gradation: yes
@@ -5517,7 +5515,7 @@ LEXICON N_SUÕSKKI !!= * @CODE@ suõskki:suõskki
 +N: SG-ABE/ACC/GEN ;	! 
 +N:%^RmVow%^I2J%>a SG-ILL ;    		! suõskkja
 +N:%^RmVow%^I2J%>e SG-LOC ;
-+N:%^RmVow%^I2J%>i SG-COM_N ;
++N:%^RmVow%^I2J SG-COM_IN ;
 +N:%^RmVow%^I2J%>e ESS ; ! ess and prt without
 +N:%^RmVow%^I2J%>e PAR ;
 +N:%^PenXYY2XY PL-NOM ;				! suõski
@@ -5555,7 +5553,7 @@ LEXICON N_SÄRNNAI !!= * @CODE@ särnnai:särnnai
 +N:%^PenV2VV%^PenXYY2XY SG-ACC ;
 +N:%^RmVow%^I2J%>a SG-ILL ;
 +N:%^RmVow%^I2J%>e SG-LOC ;
-+N:%^PenV2VV%^PenXYY2XY%^RmVow%^I2J%>i SG-COM_N ;
++N:%^PenV2VV%^PenXYY2XY%^RmVow%^I2J SG-COM_IN ;
 +N:%^RmVow%^I2J%>e ESS ; ! ess and prt without
 +N:%^RmVow%^I2J%>e PAR ;
 +N:%^PenV2VV%^PenXYY2XY SG-ABE ;
@@ -5576,7 +5574,7 @@ LEXICON N_VUEJJAI !!= * @CODE@ vuejjai:vuejjai
 +N: SG-ACC ;	!
 +N:%^RmVow%^I2J%>a SG-ILL ;    		! vuejjʼja
 +N:%^RmVow%^I2J%>e SG-LOC ;
-+N:%^RmVow%^I2J%>i SG-COM_N ;
++N:%^RmVow%^I2J SG-COM_IN ;
 +N:%^RmVow%^I2J%>e ESS ; ! ess and prt without
 +N:%^RmVow%^I2J%>e PAR ;
 +N: SG-ABE ;
@@ -5599,7 +5597,7 @@ LEXICON N_MEÄLTTAI !!= * @CODE@ meälttai:meälttai
 +N: SG-ACC ;	!
 +N:%^RmVow%^I2J%>a SG-ILL ;    		! meälttja
 +N:%^RmVow%^I2J%>e SG-LOC ;
-+N:%^RmVow%^I2J%>i SG-COM_N ;
++N:%^RmVow%^I2J SG-COM_IN ;
 +N:%^RmVow%^I2J%>e ESS ; ! ess and prt without
 +N:%^RmVow%^I2J%>e PAR ;
 +N:%^PenXYY2XY PL-NOM ;				! meältai
@@ -6234,6 +6232,10 @@ LEXICON SG-ABE_ʹtää
 LEXICON SG-ACC
 +Sg+Acc: K ;
 
+LEXICON SG-COM_IN/PL-OBL
+ SG-COM_IN ;
+ PL-OBL ;
+
 LEXICON SG-COM_N
 !! 
 +Sg+Com:%>n K ;
@@ -6252,14 +6254,18 @@ LEXICON SG-LOC
 LEXICON SG-NOM
 +Sg+Nom: K ;
 
+LEXICON ESS/PAR
+ ESS ;
+ PAR ;
+
 LEXICON ESS
 +Ess:n K ;
 
 LEXICON PAR
 +Par:d K ;
 
-LEXICON PL-OBL
- PL-OBL_LESS-ABE ;
+LEXICON PL-OBL 
+PL-OBL_LESS-ABE ;
  PL-ABE ;
 
 LEXICON PL-OBL_LESS-ABE
