@@ -214,7 +214,7 @@ ShortV2XL = [0:a a|0:ä a:ä] ;  !!= * @CODE@
 
 LongV2SH = [a:0 a|â:0 â|ä:0 ä|e:0 e|i:0 i|å:0 å|o:0 o|u:0 u|õ:0 õ|a:0 a:ä|â:0 â:õ|ä:0 ä:a|ä:0 ä:a|e:0 e:i|i:0 i:e|å:0 å:o|o:0 o:u|u:0 u:o|õ:0 õ:â] ; !!= * @CODE@ 
 
-Diphth = [e â|e:i â:õ|e ä|e:i â:e|e:i ä:â|e:i ä:e|i â|i:e â:ä|i â:e|i e|i:e e:â|i:e e:ä|i e:õ|i õ|i:e õ:â|i:e õ:ä|u â|u â:õ|u e|u e:â|u â:e|u e:õ|u e:ä|u õ|u õ:â|u õ:e|u å|u å:ä|u å:e| u å:ẹ|u å:õ|u ä|u ä:å|u ä:ẹ|u ä:e] ; !!= * @CODE@ 
+Diphth = [e â|e:i â:õ|e ä|e:i â:e|e:i ä:â|e:i ä:e|i â|i:e â:ä|i â:e|i e|i:e e:â|i:e e:ä|i e:õ|i õ|i:e õ:â|i:e õ:ä|u â|u â:õ|u e|u e:â|u â:e|u e:õ|u e:ä|u õ|u õ:â|u õ:e|u å|u å:ä|u å:e| u å:ẹ|u å:õ|u ä|u ä:å|u ä:ẹ|u ä:e|u ä:ẹ] ; !!= * @CODE@ 
 
 DbVow = [a a|a:ä a:ä|i i|i:e i:e|o o|o:å o:å|õ õ|õ:â õ:â|u u|u:o u:o|â â|â:õ â:õ|e e|e e:ä|e ä:e|e:i e:i|å å|å:o å:o|ä ä|ä:a ä:a] ; !!= * @CODE@ 
 
@@ -1224,13 +1224,13 @@ Rules
 
 "0:ʹ as transfer from left of v:u"
 !! __@RULENAME@__ - used +Ind+Prs+Pl3, uʹvdded+V+Ind+Prs+Pl3: ouʹdde
-0:ʹ <=>      v:u _ [ʒ ʒ:|d d:|l l:|r r:]       BetweenStemAndPALNo  %^PAL: [%^XYY2VY:|%^XYY2VYY:|%^XYY2XY:] ;
+0:ʹ <=>      v:u (0:%ˈ) _ [ʒ ʒ:|d d:|l l:|r r:]       BetweenStemAndPALNo  %^PAL: [%^XYY2VY:|%^XYY2VYY:|%^XYY2XY:] ;
 !€# uv0dd%^PAL%^XYY2VY
 !€0 uuʹd000
  
-         ʹ:0 v:u _ [ʒ ʒ:|d d:|l l:|r r:]       BetweenStemAndPALNo  ( %^PAL:) RBound ;
-              h:u _ [c c:|č č:|s s:|š š:|t t:]  BetweenStemAndPALNo  %^PAL: ;
-             Vow: _ [Cns:+|Cns:+ (%ˈ:|0:%ˈ) Cns:+] (i:) BetweenStemAndPALNo  %^PAL: ;
+         ʹ:0 v:u (0:%ˈ) _ [ʒ ʒ:|d d:|l l:|r r:]       BetweenStemAndPALNo  ( %^PAL:) RBound ;
+              h:u (0:%ˈ) _ [c c:|č č:|s s:|š š:|t t:]  BetweenStemAndPALNo  %^PAL: ;
+             Vow: (0:%ˈ) _ [Cns:+|Cns:+ (%ˈ:|0:%ˈ) Cns:+] (i:) BetweenStemAndPALNo  %^PAL: ;
 !€# saa0kk%^VV2V%^PAL%>e
 !€0 s0aʹǩǩ00%>e
 !€# mõõ0nn%^VV2V%^VOWLower%^PAL%>e
@@ -1247,8 +1247,8 @@ Rules
  
 "Even-syllabic verbs I, Palatalization of g:ǧ"
 !! __@RULENAME@__ -
- g:ǧ <=> Vow: (ʹ:|0:ʹ) (Cns:)     _ (ˈ:0|0:ˈ) g: BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CCC2CC:) RBound ;
-           Vow: (ʹ:|0:ʹ) (Cns:) g: (ˈ:0|0:ˈ) _   BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CCC2CC:) RBound ;
+ g:ǧ <=> Vow: (ʹ:|0:ʹ) (Cns:)     _ (ˈ:|0:ˈ) g: BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CCC2CC:) RBound ;
+           Vow: (ʹ:|0:ʹ) (Cns:) g: (ˈ:|0:ˈ) _   BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CCC2CC:) RBound ;
 
     Vow: 0: _ BetweenStemAndPALNo %^PAL: ;
 !!bioloog+N+Sg+Ill __biologist__
@@ -1259,21 +1259,15 @@ Rules
 "Even-syllabic verbs I, Palatalization of k:ǩ"
 !! __@RULENAME@__ -
  k:ǩ <=>
- Vow: :ʹ Cns:   _ k: BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: ([%^CC2C:|%^XYY2XY:]) RBound ;
+ Vow: (ʹ:|0:ʹ) Cns:   _ (0:) k: BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: ([%^CC2C:|%^XYY2XY:]) RBound ;
 !!mieʹlǩǩ+N+Sg+Acc: __milk/maito__
 !€# miâ0lkk%^PALE%^PAL%^CC2C
 !€0 mieʹlǩ0000
- Vow: :ʹ        _ k: BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: RBound ;
+ Vow: (ʹ:|0:ʹ)        _ (ˈ:|0:ˈ) k: BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CC2CCC:) RBound ;
 ! Vow: (ʹ:|0:ʹ) (Cns:)     _ k: (%^VV2V:|%^VOWSH: (%^CLong:)) NeutrHighBack (X3:) (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: RBound ;
-  Vow: 0:ʹ (Cns:) k: _   BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: RBound ;
-!           Vow: (ʹ:|0:ʹ) (Cns:) k: _     (%^VV2V:|%^VOWSH: (%^CLong:)) NeutrHighBack (X3:) (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: RBound ;
-!with insertion of palatal before
-           Vow: (ʹ:|0:ʹ) (Cns:)     _ k: (%^VV2V:|%^VOWSH: (%^CLong:)) NeutrHighBack (X3:) (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: RBound ;
-           Vow: (ʹ:|0:ʹ) (Cns:) k: _     (%^VV2V:|%^VOWSH: (%^CLong:)) NeutrHighBack (X3:) (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: RBound ;
+  Vow: (ʹ:|0:ʹ) (Cns:) k: (ˈ:|0:ˈ) _   BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CC2CCC:) RBound ;
 
-!                where Cx in (g k)
-!                      Cy in (ǧ ǩ)
-!                matched ;
+
 !€# jo0kk%^PAL%>e
 !€0 joʹǩǩ0%>e
 !€# saa0kk%^VV2V%^PAL%>e
@@ -2002,7 +1996,7 @@ Rules
           Diphth (ʹ:|0:ʹ) (h) t _ t     [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^PenCC2CCC:] ;
           Diphth (ʹ:|0:ʹ)     v _ v     [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^PenCC2CCC:] ;
 
-Diphth _ (ʹ:|0:ʹ) :Cns Cns:* %^Allegro: ;
+Diphth _ (ʹ:|0:ʹ) :Cns Cns:* BetweenStemAndPALNo %^Allegro: ;
 
 
 
