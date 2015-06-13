@@ -2129,7 +2129,7 @@ LEXICON NMN_JUEʹLǦǦ
 
 :%^VOWRaise%^PAL%^XYY2XY PL-OBL ;
 +Err/Orth:%^PALE%^PAL%^XYY2XY PL-OBL ;
-+Der/Dim:%^VOWLower%^XYY2XY%> N_KUÂLAŽ ;
++Der/Dim:%^XYY2XY%> N_KUÂLAŽ ;
 
 LEXICON N_KUEʹLL !!= * @CODE@ kueʹll:kuâll
 ! vowel: diphthong
@@ -2679,15 +2679,16 @@ LEXICON NMN_PÂÂʹJJ
 !!
  ATTESTED-NOUN-STEM ;
 : SG-NOM ;
-:%^J2I%^CC2C SG-GEN ;
-:%^J2I%^CC2C SG-ACC ;
+:%^CC2C SG-ABE/ACC/GEN-PL-NOM ;     !!= * @CODE@ pââʹj
++Use/NG:%^PALNo%^J2I%^CC2C SG-GEN ;     !!= * @CODE@ pââi
++Use/NG:%^PALNo%^J2I%^CC2C SG-ACC ;
 :%^VV2V%^PALNo%>a SG-ILL ;
 :%^CC2C%>e SG-LOC ;
 :%^VOWRaise%^CC2C SG-COM_IN ;
 :%>e ESS ; ! ess and prt without
 :%>e PAR ;
 :%^CC2C SG-ABE ;
-:%^J2I%^CC2C PL-NOM ;
++Use/NG:%^PALNo%^J2I%^CC2C PL-NOM ;
 :%^VOWRaise%^CC2C PL-OBL ;
 +Der/Dim:%^V2VV%^CC2C%^PALNo%> N_KUÂLAŽ ;
 
@@ -3329,15 +3330,6 @@ LEXICON NMN_ǨEÄʹDǦǦ
 !! !!  Strong grade: Sg.Ill
 !! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 !! !!FORMS
-!! !!(1) Sg.Nom: ǩeäʹdǧǧ
-!! !!(2) Pl.Nom: ââʼlj
-!! !!(3) Sg.Ill: âlgga
-!! !!(4) Sg.Loc: ââʹljest
-!! !!(5) Sg.Com: õõʹljin
-!! !!(6) Ess: ǩeäʹdǧǧen
-!! !!(7) Par: ǩeäʹdǧǧed
-!! !!(8) Pl.Acc: õõʹljid
-!! !!(9) Der/Dim.N.Sg.Nom: ââlǥaž
 !! NumContLex="1.113"
 !! Is for nouns with ''-est'' Loc, Extra long vowel
 !! ** Yaml: __N-keadgg__
@@ -3351,6 +3343,8 @@ LEXICON NMN_ǨEÄʹDǦǦ
 :%^PAL%>e PAR ;						! ǩeäʹdǧǧed
 :%^VOWRaise%^PALE%^PAL%^XYY2XY%> PL-OBL ;		! ǩieʹdji
 +Der/Dim:%^XYY2XY%> N_KUÂLAŽ ;
+
+
 
 LEXICON N_ČUÄʹRVV !!= * @CODE@ čuäʹrvv:čuärvv
 ! vowel: diphthong
