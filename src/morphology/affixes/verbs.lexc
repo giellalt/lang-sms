@@ -1660,13 +1660,20 @@ LEXICON V_JUʹRDDED !!= * @CODE@ juʹrdded:jurdd
 ! juʹrdded:jurdd
 +V:%^PAL VSUF-INF_ED ; !1
 +V:%^VOWLower VSUF-IND-PRS-SG3_ED ; !2 jordd
+!! Ind+Prs+Sg3, 
 +V+Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ; !3 joʹrdde
+!! Ind+Prs+Pl3
 +V:%^PAL VSUF-IND-PRT-PL3_ED ; !4 juʹrdde
-+V:%^V2VV%^PAL%^XYY2XY VSUF-POTENTIAL_ED ; !5 juuʹrd-
-+V:%^V2VV%^VOWLower%^XYY2XY%> VSUF-CONDITIONAL_ED ; !5 ?2 ?7
+!! Ind+Prt+Pl3, 
++V:%^V2VV%^VOWLower%^XYY2XY%> VSUF-CONDITIONAL_ED ; !5 ?2 ?7 joord
+!! Ind+Prs+Sg1, Ind+Prs+Sg2, Cond
++V:%^V2VV%^PAL%^XYY2XY VSUF-POTENTIAL_ED ; !6 juuʹrd-
+!! Ind+Prs+Sg4, Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2
+!! Pot, Imprt+Sg2, Ind+Prs+ConNeg
 +V+Pot+Sg3:%^V2VV%^PAL%^XYY2XY%>ež   K ; !6
-+V+Imprt+Sg3:%^V2VV%^XYY2XY%>as K ; !7 joordas
-+V:%^V2VV%^VOWLower%^XYY2XY VSUF-IND-PRS-CONNEG_ED ;
++V+Imprt+Sg3:%^V2VV%^VOWLower%^XYY2XY%>as K ; !7 joordas
+!! Imprt+Sg3
++V:%^V2VV%^PAL%^XYY2XY VSUF-IND-PRS-CONNEG_ED ; !!= * @CODE@ juuʹrd
 +V: VSUF-IMPRT-13-CONNEG_ED ; !8
 
 +V+Der/škueʹtted:%^PAL%^XYY2XY»škuätt V_PUEʹTTED ;
@@ -2127,24 +2134,52 @@ LEXICON V_PUEʹTTED !!= * @CODE@ pueʹtted:puätt
 !    Pass.PrfPrc
 ! 
 ! NEEDS WORK
-+V:%^VOWRaise%^PALE%^PAL VSUF-INF_ED ;		!1 pueʹtted 
-+V: VSUF-IND-PRS-SG3_ED ; 	     		!2 puätt
-+V+Ind+Prs+Pl3:%^PAL%>e K ; 			!3 puäʹtte
-+V:%^VOWRaise%^PALE%^PAL%> VSUF-IND-PRT-PL3_ED ; !4 pueʹtte
-+V:%^VOWRaise%^PALÕ%^PAL%> VSUF-IND-PRT-PL3_ED ; !4 puõʹtte
-+V:%^VOWRaise%^PALE%^PAL%^CC2C%> VSUF-POTENTIAL_ED ; !5 pueʹđež
-!+V:%^VOWRaise%^PALÕ%^PAL%^CC2C%> VSUF-POTENTIAL_ED ; !5 puõʹđež
-+V:%^VOWRaise%^PALÕ%^PAL%^CC2C VSUF-IND-PRT-SG3-PL1-PL2_ ; ! puõʹđi
+!! Strong-HighVowel-Palatalization
++V:%^VOWRaise%^PALE%^PAL VSUF-INF_ED ;		!!= * @CODE@ (1) pueʹtted 
+!! V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
+!! Actio, ActEss, PrsPrc
 
-+V:%^CC2C%> VSUF-CONDITIONAL_ED ; !5 ?2 ?7
-+V:%^PAL%^CC2C%> VSUF-CONDITIONAL_ED ; !5 ?2 ?7
-+V:%^PAL%^CC2C VSUF-IND-PRS-CONNEG_ED ;
-+V+Pot+Sg3:%^PAL%^CC2C%>ež   K ; !6   puäʹđež
-+V+Pot+Sg3:%^VOWRaise%^PALE%^PAL%^CC2C%>ež   K ; !6  pueʹđež
-+V+Imprt+Sg3:%^CC2C%>as K ; !7 puäʹđas
-+V:%^VOWRaise%^PALÕ VSUF-IMPRT-13-CONNEG_ED ; !8 puõttu
-+V:%^VOWRaise VSUF-IMPRT-13-CONNEG_ED ; !8 puåttu
+!! Strong-LoweredVowel-No-palatalization
++V: VSUF-IND-PRS-SG3_ED ; 	     		!!= * @CODE@ (2) puätt
+!! +V+Ind+Prs+Sg3, Ind.Prt.ConNeg, PrfPrc
 
+!! ExtraStrong-LoweredVowel-Palatalization
++V+Ind+Prs+Pl3:%^PAL%^CC2CCC%>e K ;     !!= * @CODE@ (3) puäʹtˈte
+!! +V+Ind+Prs+Pl3
+
+!! ExtraStrong-RaisedVowel-Palatalization
++V:%^VOWRaise%^PALE%^PAL%^CC2CCC%> VSUF-IND-PRT-PL3_ED ; !!= * @CODE@ (4) pueʹtˈte
++V:%^VOWRaise%^PALÕ%^PAL%^CC2CCC%> VSUF-IND-PRT-PL3_ED ; !!= * @CODE@ (4) puõʹtˈte
+!!  +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
+
+!! Weak-RaisedVowel-Palatalization
++V:%^VOWRaise%^PALE%^PAL%^CC2C%> VSUF-POTENTIAL_ED ; !!= * @CODE@ (5 pueʹđež
+!+V:%^VOWRaise%^PALÕ%^PAL%^CC2C%> VSUF-POTENTIAL_ED ; !!= * @CODE@ (5 puõʹđež
++V:%^VOWRaise%^PALÕ%^PAL%^CC2C VSUF-IND-PRT-SG3-PL1-PL2_ ; !!= * @CODE@ ( puõʹđi
++V+Pot+Sg3:%^PAL%^CC2C%>ež   K ; !!= * @CODE@ (6   puäʹđež
++V+Pot+Sg3:%^VOWRaise%^PALE%^PAL%^CC2C%>ež   K ; !!= * @CODE@ (6  pueʹđež
+!! Ind+Prs+ConNeg, Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Imprt+Sg2, 
+
+!! Weak-StableV-Palatalization
++V:%^PAL%^CC2C VSUF-IND-PRS-CONNEG_ED ; !!= * @CODE@ (6) puäʹđ-
+!! Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
+
+!! Weak-LoweredVowel-No-palatalization
++V:%^CC2C%> VSUF-CONDITIONAL_ED ; !!= * @CODE@ (7) puäđ-
++V+Imprt+Sg3:%^CC2C%>as K ; !!= * @CODE@ (7 puäʹđas
+!! Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
++Use/NG+V:%^PAL%^CC2C%> VSUF-CONDITIONAL_ED ; !!= * @CODE@ (5 ?2 ?7) puäʹđ-
+
+!! ExtraStrong-RaisedVowel-No-palatalization
++V:%^VOWRaise%^PALÕ VSUF-IMPRT-13-CONNEG_ED ; !!= * @CODE@ (8 puõttu
++V:%^VOWRaise VSUF-IMPRT-13-CONNEG_ED ; !!= * @CODE@ (8 puåttu
+!! Imprt+ConNeg, Pass+PrfPrc
+
+!! ExtraStrong-LoweredVowel-No-palatalization (9)
++V:%^CC2CCC VSUF-IMPRT-PL3_ED ;  !!= * @CODE@ puätˈtaz
+!! Imprt+Pl3
+
+!! Allegro (10)
 +V+Der/škueʹtted:%^VOWLower%^PAL%^CC2C%>e»škuätt V_PUEʹTTED ;
 
 LEXICON V_VUEIʹNNED !!= * @CODE@ vueiʹnned:vuäinn
@@ -3247,7 +3282,6 @@ LEXICON VSUF-INF_ED
 +Inf:%>ed FINAL1 ;
 +Ind+Prs+Pl1:%>ep FINAL1 ;
 +Ind+Prs+Pl2:%>veʹted FINAL1 ;
-+Ind+Prt+ConNeg:%>am FINAL1 ;
 +Imprt+Pl1:%>ep FINAL1 ;
 +Imprt+Pl2:%>ed FINAL1 ;
 +ActEss:%>men FINAL1 ;
@@ -3255,11 +3289,16 @@ LEXICON VSUF-INF_ED
 +Actio:%>em  N_MINIʹSTTER ; ! Should there be a derivation here 2015-05-06
  VSUF-PRSPRC_ED ;
 
+
+
 LEXICON VSUF-IND-PRS-SG3_ED
-+PrfPrc:%>am FINAL1 ; !HERE or ONE LEXICON UP
 +Ind+Prs+Sg3: FINAL1 ;
-+Imprt+Pl3:%>az FINAL1 ;
++Ind+Prt+ConNeg:%>am FINAL1 ;
++PrfPrc:%>am FINAL1 ; !HERE or ONE LEXICON UP
 +Der/mõš:»mõš N_LOOKKMÕŠ ;
+
+LEXICON VSUF-IMPRT-PL3_ED !!= * @CODE@ puätˈtaz
++Imprt+Pl3:%>az FINAL1 ;
 
 !
 LEXICON VSUF-IND-PRT-PL3_ÂD
@@ -3314,7 +3353,7 @@ LEXICON VSUF-I-POTKOND_AD
 LEXICON VSUF-POTENTIAL_ED
  POTENTIAL ;
  VSUF-IND-PRT-SG3-PL1-PL2_ ;
- VABESS ;
+
 
 LEXICON VABESS
 +VAbess:%>kani K ;
@@ -3329,16 +3368,19 @@ LEXICON GER_
 +GerTemp:%>een K ;
 +GerTemp:%>eeʹst K ;
 
-LEXICON VSUF-CONDITIONAL_ED
+LEXICON VSUF-CONDITIONAL_ED  !!= * @CODE@ (7)
 +Ind+Prs+Sg1:%>am K ;
 +Ind+Prs+Sg2:%>ak K ;
  CONDITIONAL ;
- VABESS ;
- GER_ ;
++Imprt+Sg3:%>as K ;
 
-LEXICON VSUF-IND-PRS-CONNEG_ED
-+Ind+Prs+Sg4:%>et FINAL1 ;
+LEXICON VSUF-IND-PRS-CONNEG_ED !!= * @CODE@ (6)
++Imprt+Sg2: FINAL1 ;
 +Ind+Prs+ConNeg: FINAL1 ;
++Ind+Prs+Sg4:%>et FINAL1 ;
+ VABESS ;
+ GER_ ; 
+
 +Imprt+2+ConNeg: FINAL1 ;
 
 
