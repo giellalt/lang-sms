@@ -46,3 +46,12 @@ OR
 Ryan: NDS currently uses <mini_paradigm /> and <analysis /> for some paradigms.
 I could change this for sma without affecting sme, but i'd prefer to keep it
 consistent.
+
+###
+The state of merging in the *_sms2x.xml files:
+A lot of the content has been converted into elements that can be moved or copied to the appropriate position in the merged structure.
+(1) sml reference numbers have been moved into the <map/> beginning tag.
+(2) <infl/> elements have been converted to <mini_paradigm/> elements
+(3) material from Moshnikoff has also been adapted to the <mini_paradigm/> elements
+(4) <tg/> elements have more or less been alphabetized.
+
