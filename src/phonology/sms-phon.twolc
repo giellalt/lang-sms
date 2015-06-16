@@ -957,7 +957,7 @@ Rules
 
 "Relative vowel lengthening 0:Vx"
 ! __@RULENAME@__
- 0:Vx <=> OnSetC _ :Vx (u:|i:|%{VU%}:) (ʹ:|0:ʹ)  Cns: [Cns:*|:Cns*] %^V2VV: ;
+ 0:Vx <=> OnSetC _ :Vx (u:|i:|%{VU%}:|:u) (ʹ:|0:ʹ)  Cns: [Cns:*|:Cns*] %^V2VV: ;
   OnSetC _ :Vx (u:|i:|%{VU%}:) (ʹ:|0:ʹ)  Cns: [Cns:*|:Cns*] Vow: Cns:+  %^PenV2VV: ;
                 where Vx in (a ä å e õ) ;
 
@@ -1230,6 +1230,8 @@ Rules
  
          ʹ:0 v:u (0:%ˈ) _ [ʒ ʒ:|d d:|l l:|r r:]       BetweenStemAndPALNo  ( %^PAL:) RBound ;
               h:u (0:%ˈ) _ [c c:|č č:|s s:|š š:|t t:]  BetweenStemAndPALNo  %^PAL: ;
+!€# t0äh0tt%^V2VV%^PAL%^XYY2VY
+!€0 tääuʹt0000
              Vow: (0:%ˈ) _ [Cns:+|Cns:+ (%ˈ:|0:%ˈ) Cns:+] (i:) BetweenStemAndPALNo  %^PAL: ;
 !€# saa0kk%^VV2V%^PAL%>e
 !€0 s0aʹǩǩ00%>e
