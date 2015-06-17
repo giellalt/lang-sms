@@ -894,16 +894,38 @@ N_A-URaise3-32
  Strong grade: Sg.Ill
  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 !!FORMS
-!!(1) Sg.Nom: äldd
-!!(2) Pl.Nom: ääld
-!!(3) Sg.Ill: alddu
-!!(4) Sg.Loc: ääldast
-!!(5) Sg.Com: ääldain
-!!(6) Ess: älddan
-!!(7) Par: älddad
-!!(8) Pl.Acc: ääldaid
-!!(9) Der/Dim.N.Sg.Nom: aalduž (2009: 312-313)
 ** Yaml: __N-aeldd__
+grade: strengthened (short_vowel, long_cluster), vowel: raised
+ * :%^VOWRaise%>u SG-ILL ;		      	 (3) alddu
+Sg_Ill
+
+grade: strengthened (short_vowel, long_cluster), vowel: neutral (low)
+ * : A-STEM-PX-STENGTHEN ;	    	   (5) äldd
+Ess_Px..., Sg_Ill...
+
+grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
+ *  ATTESTED-NOUN-STEM ;			 (1) äldd
+ * : A-STEM_SG-NOM ;	    			 (1) äldd
+Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
+
+grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
+ * :%>a ESS/PAR ;	   		    	 (6) älddan
+
+grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
+ * :%^V2VV%^XYY2XY A-STEM_SG-ABE/ACC/GEN-PL-NOM ;  (2) ääld
+Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
+stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
+
+grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
+ * +Der/Dim:%^V2VV%^VOWRaise%^XYY2XY N_PIISSUŽ ;  (9) aalduž (2009: 312-313)
+
+grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
+ * :%^XYY2XY A-STEM-PX-ALLEGRO ;	   (5) äld
+Sg_Loc_Px..
+
+ * LEXICON A-STEM_SG-NOM  (1)
+ * LEXICON A-STEM_SG-ABE/ACC/GEN-PL-NOM   (2)
+
 
  * LEXICON N_LÄINN  läinn:läinn
 Is for nouns with ''-ast'' Loc
@@ -1037,17 +1059,18 @@ Is for nouns with ''-ast'' Loc
  Extra strong grade: Sg.Ill
  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 !!FORMS
-!!(1) Sg.Nom: tuâjj
-!!(2) Pl.Nom: tuâi
-!!(3) Sg.Ill: tuõjˈju
-!!(4) Sg.Loc: tuâjast
-!!(5) Sg.Com: tuâjain
-!!(6) Ess: tuâjjan
-!!(7) Par: tuâjjad
-!!(8) Pl.Acc: tuâjaid
-!!(9) Dim.N.Sg.Nom: tuõjuž (2009: 310)
 N_A-URaise3-32
 ** Yaml: __N-tuajj__
+ *  ATTESTED-NOUN-STEM ;			 (1) tuâjj
+ * : SG-NOM ;	    			 (1) tuâjj
+ * :%^CC2C SG-ABE/ACC/GEN-PL-NOM ;		 (2) tuâj
+ * :%^VOWRaise%^CC2CCC%>u SG-ILL ;		 (3) tuõjˈju
+ * :%^CC2C%>a SG-LOC ;    	      		 (4) tuâjast
+ * :%^CC2C%>a SG-COM_IN/PL-OBL ;		 (5) tuâjain
+ * :%>a ESS/PAR ;				 (6) tuâjjan
+ * +Der/Dim:%^CC2C%^VOWRaise%> N_PIISSUŽ ;  (9) tuõjuž (2009: 310)
+
+ * +Use/NG:%^J2I%^CC2C SG-GEN ;		 (2) tuâi
 
  * LEXICON N_RUÂKK  ruâkk:ruâkk
 !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -2515,7 +2538,6 @@ NumContLex="1.113"
  * :%^PAL E-STEM-PX-STENGTHEN-WITH-PAL ;			    (12) jeäʹǧˈǧ
  * +Use/NG:%^VOWRaise%^PALẸ%^PAL%^CCC2CC E-STEM-PX-ALLEGRO ;   (2)
 
-
  * LEXICON E-STEM_SG-NOM  (1)
  * LEXICON E-STEM_SG-ABE/ACC/GEN-PL-NOM  (2)
  * LEXICON E-STEM_SG-ILL  (3)
@@ -2760,7 +2782,8 @@ is for nouns with stem ''i'' + ''-est'' +Sg+Loc; all stem other than the +Sg+Nom
 
 CLASS 2 NOMINALS with low stem vowel and u-stems
 !!u-stems
- * LEXICON N_MÄÄN  mään:manˈn
+ * LEXICON N_MÄÄN  mään:mann
+ * LEXICON NMN_MÄÄN  mään:mann
 !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 228)
 !!1.2 Sg.Loc in -ust. u-stems (Sg.Loc, Ess, Par).
 !!1.2.3 Sg.Ill in raised vowel and -u
@@ -2771,9 +2794,11 @@ CLASS 2 NOMINALS with low stem vowel and u-stems
 !!1.2.3.1.1.1.1.3.Sg.Gen Extra Strong Grade
 !!1.2.3.1.1.1.1.3.3 Sg.Ill Extra Strong Grade
 !!1.2.3.1.1.1.1.3.3.Q All but Sg.Nom are raised vowels
-mään:mään
 ** Yaml: __N-maan__
 * There are several stem types
+ * :%^V2VV%^VOWLower%^CC2C ATTESTED-NOUN-STEM ;  mään
+ * :%^V2VV%^VOWLower%^CC2C SG-NOM ;	         mään
+ * :%>u SG-ABE/ACC/GEN-PL-NOM ;	 		  mannu
 
 
  * LEXICON N_SUÂL   suâl:suõlˈl
@@ -3530,6 +3555,8 @@ Has palatalization preceding
 
 
 !A-STEM-PX
+
+
 
 
 

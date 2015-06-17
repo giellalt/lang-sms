@@ -214,7 +214,7 @@ ShortV2XL = [0:a a|0:ä a:ä] ;  !!= * @CODE@
 
 LongV2SH = [a:0 a|â:0 â|ä:0 ä|e:0 e|i:0 i|å:0 å|o:0 o|u:0 u|õ:0 õ|a:0 a:ä|â:0 â:õ|ä:0 ä:a|ä:0 ä:a|e:0 e:i|i:0 i:e|å:0 å:o|o:0 o:u|u:0 u:o|õ:0 õ:â] ; !!= * @CODE@ 
 
-Diphth = [e â|e:i â:õ|e ä|e:i â:e|e:i ä:â|e:i ä:e|i â|i:e â:ä|i â:e|i e|i:e e:â|i:e e:ä|i e:õ|i õ|i:e õ:â|i:e õ:ä|u â|u â:õ|u e|u e:â|u â:e|u e:õ|u e:ä|u õ|u õ:â|u õ:e|u å|u å:ä|u å:e| u å:ẹ|u å:õ|u ä|u ä:å|u ä:ẹ|u ä:e|u ä:ẹ] ; !!= * @CODE@ 
+Diphth = [e â|e:i â:õ|e ä|e:i â:e|e:i ä:â|e:i ä:e|e:i ä:ẹ|i â|i:e â:ä|i â:e|i e|i:e e:â|i:e e:ä|i e:õ|i õ|i:e õ:â|i:e õ:ä|u â|u â:õ|u e|u e:â|u â:e|u â:ẹ|u e:õ|u e:ä|u õ|u õ:â|u õ:e|u å|u å:ä|u å:e| u å:ẹ|u å:õ|u ä|u ä:å|u ä:e|u ä:ẹ] ; !!= * @CODE@ 
 
 DbVow = [a a|a:ä a:ä|i i|i:e i:e|o o|o:å o:å|õ õ|õ:â õ:â|u u|u:o u:o|â â|â:õ â:õ|e e|e e:ä|e ä:e|e:i e:i|å å|å:o å:o|ä ä|ä:a ä:a] ; !!= * @CODE@ 
 
@@ -756,7 +756,7 @@ Rules
          OnSetC a: _     (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] BetweenStemAndHeight                      %^VOWLower: (%^VOWFront:|%^VOWBack:) (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
          OnSetC    _     (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] BetweenStemAndHeight                      %^VOWLower: (%^VOWFront:|%^VOWBack:) (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
 ! juʹrdded+V+Cond+Sg1: joordčem
-         OnSetC 0:ä _    (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^PenV2VV: %^CShort:)  %^VOWLower: (%^VOWFront:|%^VOWBack:) (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
+         OnSetC 0: _    (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^V2VV: )  %^VOWLower: (%^VOWFront:|%^VOWBack:) (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) BetweenPALNoAndMorph ;
 ! juʹrdded > joordam
          OnSetC     _ (u:|i:) (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^PenV2VV: %^CShort:) %^VOWLower: (%^VOWFront:|%^VOWBack:) (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
          OnSetC     _ ((ʹ:) (v:u|j:i)) (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] BetweenStemAndHeight %^VOWLower: (%^VOWFront:|%^VOWBack:) (X3:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
@@ -2005,30 +2005,30 @@ Diphth _ (ʹ:|0:ʹ) :Cns Cns:* BetweenStemAndPALNo %^Allegro: ;
 
 
 !! !Removing X3 length mark
-!"Removing Consonant X3 length mark after diphthong in vertical line %ˈ LEFT ARROW"
+"Removing Consonant X3 length mark after diphthong in vertical line %ˈ LEFT ARROW"
 !! __@RULENAME@__ - deriving 
 !! b c č ǯ d đ g ǧ k ǩ l m n p r s š t v also htˈt nˈnj
 ! BetweenStemAndConsGrade [%^C2CC:|%^XY2XYY:]
 !! {{{ 
-! %ˈ:0 <= Diphth (ʹ:|0:ʹ)     b _ b     BetweenStemAndConsGrade %^CCC2CC: ;
-!         Diphth (ʹ:|0:ʹ)     c _ c     BetweenStemAndConsGrade %^CCC2CC: ;
-!         Diphth (ʹ:|0:ʹ)     č _ č     BetweenStemAndConsGrade %^CCC2CC: ;
-!         Diphth (ʹ:|0:ʹ)     ǯ _ ǯ     BetweenStemAndConsGrade %^CCC2CC: ;
-!         Diphth (ʹ:|0:ʹ)     d _ d     BetweenStemAndConsGrade %^CCC2CC: ;
-!         Diphth (ʹ:|0:ʹ)     đ _ đ     BetweenStemAndConsGrade %^CCC2CC: ;
-!         Diphth (ʹ:|0:ʹ)     g _ g     BetweenStemAndConsGrade %^CCC2CC: ;
-!         Diphth (ʹ:|0:ʹ)     ǧ _ ǧ     BetweenStemAndConsGrade %^CCC2CC: ;
-!         Diphth (ʹ:|0:ʹ)     k _ k     BetweenStemAndConsGrade %^CCC2CC: ;
-!         Diphth (ʹ:|0:ʹ)     ǩ _ ǩ     BetweenStemAndConsGrade %^CCC2CC: ;
-!         Diphth (ʹ:|0:ʹ)     l _ l     BetweenStemAndConsGrade %^CCC2CC: ;
-!         Diphth (ʹ:|0:ʹ)     m _ m     BetweenStemAndConsGrade %^CCC2CC: ;
-!         Diphth (ʹ:|0:ʹ)     n _ n (j) BetweenStemAndConsGrade %^CCC2CC: ;
-!         Diphth (ʹ:|0:ʹ)     p _ p     BetweenStemAndConsGrade %^CCC2CC: ;
-!         Diphth (ʹ:|0:ʹ)     r _ r     BetweenStemAndConsGrade %^CCC2CC: ;
-!         Diphth (ʹ:|0:ʹ)     s _ s     BetweenStemAndConsGrade %^CCC2CC: ;
-!         Diphth (ʹ:|0:ʹ)     š _ š     BetweenStemAndConsGrade %^CCC2CC: ;
-!         Diphth (ʹ:|0:ʹ) (h) t _ t     BetweenStemAndConsGrade %^CCC2CC: ;
-!         Diphth (ʹ:|0:ʹ)     v _ v     BetweenStemAndConsGrade %^CCC2CC: ;
+ %ˈ:0 <=> Diphth (ʹ:|0:ʹ)     b _ b     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     c _ c     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     č _ č     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     ǯ _ ǯ     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     d _ d     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     đ _ đ     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     g _ g     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     ǧ _ ǧ     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     k _ k     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     ǩ _ ǩ     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     l _ l     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     m _ m     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     n _ n (j) BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     p _ p     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     r _ r     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     s _ s     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     š _ š     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ) (h) t _ t     BetweenStemAndConsGrade %^CCC2CC: ;
+         Diphth (ʹ:|0:ʹ)     v _ v     BetweenStemAndConsGrade %^CCC2CC: ;
 !! }}}
 
 

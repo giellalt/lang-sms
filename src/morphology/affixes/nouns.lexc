@@ -1286,32 +1286,46 @@ LEXICON NMN_ÄLDD
 !! !!  Strong grade: Sg.Ill
 !! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 !! !!FORMS
-!! !!(1) Sg.Nom: äldd
-!! !!(2) Pl.Nom: ääld
-!! !!(3) Sg.Ill: alddu
-!! !!(4) Sg.Loc: ääldast
-!! !!(5) Sg.Com: ääldain
-!! !!(6) Ess: älddan
-!! !!(7) Par: älddad
-!! !!(8) Pl.Acc: ääldaid
-!! !!(9) Der/Dim.N.Sg.Nom: aalduž (2009: 312-313)
 !! ** Yaml: __N-aeldd__
 !NumContLex="1.1120000000000001"
-:%^V2VV%^XYY2XY%>a PL-OBL ;
-:%>a ESS ; ! ess and prt without
-:%>a PAR ;
-:%^V2VV%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;
-:%^VOWRaise%>u SG-ILL ;
-:%^V2VV%^XYY2XY%>a SG-LOC ;
-:%^V2VV%^XYY2XY%>a SG-COM_IN ;
- ATTESTED-NOUN-STEM ;
-: SG-NOM ;
-+Der/Dim:%^V2VV%^VOWRaise%^XYY2XY N_PIISSUŽ ;
+!! grade: strengthened (short_vowel, long_cluster), vowel: raised
+:%^VOWRaise%>u SG-ILL ;		      	!!= * @CODE@ (3) alddu
+!! Sg_Ill
+
+!! grade: strengthened (short_vowel, long_cluster), vowel: neutral (low)
+: A-STEM-PX-STENGTHEN ;	    	  !!= * @CODE@ (5) äldd
+!! Ess_Px..., Sg_Ill...
+
+!! grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
+ ATTESTED-NOUN-STEM ;			!!= * @CODE@ (1) äldd
+: A-STEM_SG-NOM ;	    			!!= * @CODE@ (1) äldd
+!! Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
+
+!! grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
+:%>a ESS/PAR ;	   		    	!!= * @CODE@ (6) älddan
+
+!! grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
+:%^V2VV%^XYY2XY A-STEM_SG-ABE/ACC/GEN-PL-NOM ; !!= * @CODE@ (2) ääld
+!! Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
+!! stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
+
+!! grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
++Der/Dim:%^V2VV%^VOWRaise%^XYY2XY N_PIISSUŽ ; !!= * @CODE@ (9) aalduž (2009: 312-313)
+
+!! grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
+:%^XYY2XY A-STEM-PX-ALLEGRO ;	  !!= * @CODE@ (5) äld
+!! Sg_Loc_Px..
+
+LEXICON A-STEM_SG-NOM !!= * @CODE@ (1)
+SG-NOM ;
 A-STEM-PX-RETAIN ;
-:%^V2VV%^XYY2XY A-STEM-PX-WEAKEN ;
-:%^V2VV%^XYY2XY A-STEM-PX-WEAKEN_NG ;
-:%^XYY2XY A-STEM-PX-ALLEGRO ;
-: A-STEM-PX-STENGTHEN ;
+LEXICON A-STEM_SG-ABE/ACC/GEN-PL-NOM  !!= * @CODE@ (2)
+ SG-ABE/ACC/GEN-PL-NOM ;
+:%>a SG-LOC ;
+:%>a SG-COM_IN/PL-OBL ;
+ A-STEM-PX-WEAKEN ;
+ A-STEM-PX-WEAKEN_NG ;
+
 
 LEXICON N_LÄINN !!= * @CODE@ läinn:läinn
 +N: NMN_LÄINN ;
@@ -1513,31 +1527,21 @@ LEXICON NMN_TUÂJJ
 !! !!  Extra strong grade: Sg.Ill
 !! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 !! !!FORMS
-!! !!(1) Sg.Nom: tuâjj
-!! !!(2) Pl.Nom: tuâi
-!! !!(3) Sg.Ill: tuõjˈju
-!! !!(4) Sg.Loc: tuâjast
-!! !!(5) Sg.Com: tuâjain
-!! !!(6) Ess: tuâjjan
-!! !!(7) Par: tuâjjad
-!! !!(8) Pl.Acc: tuâjaid
-!! !!(9) Dim.N.Sg.Nom: tuõjuž (2009: 310)
 !NumContLex="1.1120000000000001"
 !! N_A-URaise3-32
 !! ** Yaml: __N-tuajj__
- ATTESTED-NOUN-STEM ;
-: SG-NOM ;
-:%^J2I%^CC2C SG-GEN ;
-:%^J2I%^CC2C SG-ACC ;
-:%^VOWRaise%>u SG-ILL ;
-:%^CC2C%>a SG-LOC ;
-:%^CC2C%>a SG-COM_IN ;
-:%>a ESS ; ! ess and prt without
-:%>a PAR ;
-:%^CC2C SG-ABE ;
-:%^J2I%^CC2C PL-NOM ;
-:%^CC2C%>a PL-OBL ;
-+Der/Dim:%^CC2C%^VOWRaise%> N_PIISSUŽ ;
+ ATTESTED-NOUN-STEM ;			!!= * @CODE@ (1) tuâjj
+: SG-NOM ;	    			!!= * @CODE@ (1) tuâjj
+:%^CC2C SG-ABE/ACC/GEN-PL-NOM ;		!!= * @CODE@ (2) tuâj
+:%^VOWRaise%^CC2CCC%>u SG-ILL ;		!!= * @CODE@ (3) tuõjˈju
+:%^CC2C%>a SG-LOC ;    	      		!!= * @CODE@ (4) tuâjast
+:%^CC2C%>a SG-COM_IN/PL-OBL ;		!!= * @CODE@ (5) tuâjain
+:%>a ESS/PAR ;				!!= * @CODE@ (6) tuâjjan
++Der/Dim:%^CC2C%^VOWRaise%> N_PIISSUŽ ; !!= * @CODE@ (9) tuõjuž (2009: 310)
+
++Use/NG:%^J2I%^CC2C SG-GEN ;		!!= * @CODE@ (2) tuâi
++Use/NG:%^J2I%^CC2C SG-ACC ;
++Use/NG:%^J2I%^CC2C PL-NOM ;
 
 LEXICON N_RUÂKK !!= * @CODE@ ruâkk:ruâkk
 ! 2.a.diph.gem
@@ -3632,7 +3636,6 @@ LEXICON NMN_JEÄʹǦˈǦ
 :%^PAL E-STEM-PX-STENGTHEN-WITH-PAL ;			   !!= * @CODE@ (12) jeäʹǧˈǧ
 +Use/NG:%^VOWRaise%^PALẸ%^PAL%^CCC2CC E-STEM-PX-ALLEGRO ;  !!= * @CODE@ (2)
 
-
 LEXICON E-STEM_SG-NOM !!= * @CODE@ (1)
  SG-NOM ;
  E-STEM-PX-RETAIN-WITH-PAL ;
@@ -4068,7 +4071,9 @@ LEXICON NMN_MUUƷ !!= * @CODE@ muuʒ:muvʒʒ
 
 !! CLASS 2 NOMINALS with low stem vowel and u-stems
 !! !!u-stems
-LEXICON N_MÄÄN !!= * @CODE@ mään:manˈn
+LEXICON N_MÄÄN !!= * @CODE@ mään:mann
++N: NMN_MÄÄN ;
+LEXICON NMN_MÄÄN !!= * @CODE@ mään:mann
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 228)
 !! !!1.2 Sg.Loc in -ust. u-stems (Sg.Loc, Ess, Par).
@@ -4081,21 +4086,19 @@ LEXICON N_MÄÄN !!= * @CODE@ mään:manˈn
 !! !!1.2.3.1.1.1.1.3.3 Sg.Ill Extra Strong Grade
 !! !!1.2.3.1.1.1.1.3.3.Q All but Sg.Nom are raised vowels
 !NumContLex="1.1299999999999999"
-!! mään:mään
 !! ** Yaml: __N-maan__
 !! * There are several stem types
-+N:%^V2VV%^VOWLower%^CCC2C ATTESTED-NOUN-STEM ;
-+N:%^V2VV%^VOWLower%^CCC2C SG-NOM ;
-+N:%>u SG-ABE/ACC/GEN-PL-NOM ;
-+N:%^VOWLower%>ǥa SG-ILL ;
-+N:%^VOWLower%>ʼja SG-ILL ;
-+N:%>u SG-LOC ;
-+N:%^VOWLower%>ʼje SG-LOC ;
-+N:%>u SG-COM_IN ;
-+N:%^VOWLower%>ʼj SG-COM_IN ;
-+N:%^VOWLower%>ʼje ESS ; ! ess and prt without
-+N:%^VOWLower%>u PAR ;
-+N:%>u PL-OBL ;
+:%^V2VV%^VOWLower%^CC2C ATTESTED-NOUN-STEM ; !!= * @CODE@ mään
+:%^V2VV%^VOWLower%^CC2C SG-NOM ;	        !!= * @CODE@ mään
+:%>u SG-ABE/ACC/GEN-PL-NOM ;	 		 !!= * @CODE@ mannu
+:%^VOWLower%>ǥa SG-ILL ;
+:%^VOWLower%>ʼja SG-ILL ;
+:%>u SG-LOC ;
+:%^VOWLower%>ʼje SG-LOC ;
+:%>u SG-COM_IN/PL-OBL ;
+:%^VOWLower%>ʼj SG-COM_IN ;
+:%^VOWLower%>ʼje ESS ; ! ess and prt without
+:%^VOWLower%>u PAR ;
 
 
 LEXICON N_SUÂL  !!= * @CODE@ suâl:suõlˈl
@@ -6589,11 +6592,7 @@ LEXICON A-STEM-PX-RETAIN
 +Sg+Nom+PxPl3:%>az K ;
 
 +Sg+Abe+PxSg1:%>antää K ;
-+Sg+Abe+PxSg2:%>adtää K ;
-+Sg+Abe+PxSg3:%>astää K ;
 +Sg+Abe+PxPl1:%>antää K ;
-+Sg+Abe+PxPl2:%>adtää K ;
-+Sg+Abe+PxPl3:%>aztää K ;
 
 +Sg+Acc+PxSg1:%>an K ;
 +Sg+Acc+PxPl1:%>an K ;
@@ -6602,6 +6601,7 @@ LEXICON A-STEM-PX-RETAIN
 
 +Pl+Nom+PxSg1:%>an K ;
 +Pl+Nom+PxPl1:%>an K ;
+
 
 LEXICON A-STEM-PX-ALLEGRO
 +Sg+Loc+PxSg1:%>stan K ;
@@ -6621,6 +6621,11 @@ LEXICON A-STEM-PX-WEAKEN_NG
 +Use/NG+Sg+Loc+PxPl3:%>steez K ;
 
 LEXICON A-STEM-PX-WEAKEN
++Sg+Abe+PxSg2:%>adtää K ;
++Sg+Abe+PxSg3:%>astää K ;
++Sg+Abe+PxPl2:%>adtää K ;
++Sg+Abe+PxPl3:%>aztää K ;
+
 +Sg+Acc+PxSg2:%>ad K ;
 +Sg+Acc+PxSg3:%>as K ;
 +Sg+Acc+PxPl2:%>ad K ;
