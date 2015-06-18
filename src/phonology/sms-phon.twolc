@@ -281,7 +281,7 @@ XYY2XYCluster = [l [m m:|b b:|p p:| d d:|t t:|g g:|ǧ: ǧ:|k: k:|ǩ: ǩ:]|m [p p
 
 
 !! Onset consonant or word boundary
-OnSetC = [:Cns|#] ;
+OnSetC = [:Cns|#|%>] ;
 
 
 !! following morpheme or word boundary
@@ -401,7 +401,7 @@ Rules
 !€# teevv%^VV2V%^VOWRaise%>uš
 !€0 t0ivv00%>uš
  OnSetC _ e: (ʹ:|0:ʹ) [LongC|Cns: :Cns*] [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ;
-       Cns:  _ (0:ʼ) [Cns:+|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ; 
+   OnSetC  _ (0:ʼ) [Cns:+|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ; 
 !! Ââvel+N+Prop+Sg+Loc  __Ivalo__
 !€# Ââvel%^RmVow%>est
 !€# Ââv0l0%>est
