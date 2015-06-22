@@ -624,7 +624,7 @@ Rules
   OnSetC  [e:|e:0|0:i] _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  BetweenStemAndHeight %^VOWRaise: ;
   OnSetC _ (u:) (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] BetweenStemAndHeight %^VOWRaise: ;
 ! diphthong raising with e:i at onset - deriving +Ind+Prt+Pl3 in reäkkad > riâkku, veârrad > viõrru
-  _ [ä:|â: ] (u) (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  BetweenStemAndHeight  %^VOWRaise: ;
+ OnSetC  _ [ä:|â: ] (u) (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  BetweenStemAndHeight  %^VOWRaise: ;
 !!reâugg+N+Sg+Ill
 !€# reâugg%^VOWRaise%>u
 !€0 riõugg0%>u
@@ -816,7 +816,7 @@ Rules
        õ: _  (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] (%^VV2V:) %^VOWLower: ;
 !€# mõõ0nn%^VV2V%^VOWLower%^PAL%>e
 !€0 m0âʹnn000%>e
-      _ õ: (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  %^VOWLower: ;
+    OnSetC  _ õ: (ʹ:|0:ʹ) [Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+]  %^VOWLower: ;
 !€# mõõnn%^VOWLower%^CC2C%>as
 !€0 mâân000%>as
 
@@ -850,7 +850,7 @@ Rules
 "Vowel in second syllable e:a"
 !! __@RULENAME@__ - deriving cieʹǩǩes+N+Sg+Gen: ceäkˈkaz
  e:a <=> 
-   _ (ʹ:|0:ʹ) [Cns:+] PenBetweenStemAndVowelLoss %^PenVow2a: ;
+  OnSetC _ (ʹ:|0:ʹ) [Cns:+] PenBetweenStemAndVowelLoss %^PenVow2a: ;
 !!cieʹǩǩes+N+Sg+Gen
 !€# ciâk0kes%^PenVOWLower%^PenCC2CCC%^PenVow2a%^VC
 !€0 ceäkˈkaz0000
@@ -1193,7 +1193,7 @@ Rules
 
 "Realization for â in a"
 !! __@RULENAME@__ -
- â:a <=> _ (ʹ:|0:ʹ) [Cns:+] (%^PenV2VV:) %^PenVow2a: ;
+ â:a <=> OnSetC _ (ʹ:|0:ʹ) [Cns:+] (%^PenV2VV:) %^PenVow2a: ;
 !!ǩiõrggned+V+Ind+Prs+Sg3
 !€# ǩiõrggân%^PenVow2a
 !€0 ǩiõrggan0
@@ -1204,7 +1204,7 @@ Rules
 "Loss of ʼ when preceded by vowel"
 !! __@RULENAME@__ - This is a temporary solution to  "ʼ" in võʹllʼjed
 !! {{{
- ʼ:0 <=> :Vow _ ; 
+ ʼ:0 <=> :Vow _ Cns: ; 
 !! }}}
 
 "%{A1%}:ʼ when subseqent syllable has vowel v"
@@ -1317,7 +1317,7 @@ Rules
    ʹ:0 <=>  [Vow:|:Vow] _ [:Cns :Cns+|Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] BetweenStemAndPALNo %^PALNo: [RBound|%^UltRmVow:|%^VC:] ;
 !€# čââʹlmteʹm%{XC%}%^CLong%^PALNo%>a
 !€0 čââʹlmte0mm00%>a
-     _ [:Cns :Cns+|Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] BetweenStemAndPALNo %^PALNo: ;
+   Vow:  _ [:Cns :Cns+|Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] BetweenStemAndPALNo %^PALNo: ;
 !€# čââʹlmteʹm0%^PALNo%^C2CC%>a
 !€0 čââʹlmte0mm00%>a
    [Vow:|:Vow] _ [:Cns :Cns+|Cns:+|Cns:+ (%ˈ:|:%ˈ) Cns:+] %^RmVow: %^PALNo: [RBound|%^UltRmVow:|%^VC:] ;
@@ -1331,7 +1331,7 @@ Rules
 
 !jurdded
                     Vow: _ CNoV: Cns:+ BetweenStemAndPALNo %^PALNo: ; 
-                         _ v:u ; 
+                    Vow: _ v:u ; 
 
 
 
