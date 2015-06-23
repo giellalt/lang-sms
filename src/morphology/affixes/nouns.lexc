@@ -3038,10 +3038,10 @@ LEXICON NMN_LÄÄIʹJ
 :%^V2VV%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;	! lääiʹj
 :%^PALNo%>a SG-ILL ;   		! lääiǥa
 :%^V2VV%^XYY2XY%>e SG-LOC ;	! lääiʹjest
-:%^V2VV%^XYY2XY SG-COM_IN ;	! lääiʹjin
+:%^V2VV%^VOWRaise%^XYY2XY SG-COM_IN ;	! lääiʹjin
 :%>e ESS ; 		  	! lääiʹjen
 :%>e PAR ;			! lääiʹjed
-:%^V2VV%^XYY2XY%> PL-OBL ;	! lääiʹji, lääiʹjid, lääiʹjid, lääiʹjin, lääiʹjivuiʹm, lääiʹjitaa/lääiʹjtää
+:%^V2VV%^VOWRaise%^XYY2XY%> PL-OBL ;	! lääiʹji, lääiʹjid, lääiʹjid, lääiʹjin, lääiʹjivuiʹm, lääiʹjitaa/lääiʹjtää
 +Der/Dim:%^V2VV%^PALNo%^XYY2XY%> N_KUÂLAŽ ; ! lääiǥaž
 
 LEXICON N_ǨEʹRJJ !!= * @CODE@ ǩeʹrjj:ǩeʹrjj
@@ -3116,17 +3116,17 @@ LEXICON NMN_TÄʹHTT
 !! !!(5) Sg.Com: tääutin
 !! !!(6) Ess: täʹhtten
 !! !!(7) Par: täʹhtted
-!! !!(8) Pl.Acc: tääutid
+!! !!(8) Pl.Acc: taauʹtid
 !! !!(9) Der/Dim.N.Sg.Nom: tääutaž
 !! NumContLex="1.113
 !! Is for nouns with ''-est'' Loc, Extra long vowel
 !! ** Yaml: __N-kerjj__
-:%^PAL ATTESTED-NOUN-STEM ;
+:%^PAL ATTESTED-NOUN-STEM ;  
 :%^PAL SG-NOM ;
 :%^V2VV%^PAL%^XYY2VY SG-ABE/ACC/GEN-PL-NOM ;
 :%>a SG-ILL ;
 :%^V2VV%^PAL%^XYY2VY%>e SG-LOC ;
-:%^V2VV%^PAL%^XYY2VY SG-COM_IN/PL-OBL ;
+:%^V2VV%^VOWRaise%^PAL%^XYY2VY SG-COM_IN/PL-OBL ;
 :%^PAL%>e ESS/PAR ; 
 +Der/Dim:%^V2VV%^PALNo%^XYY2VY%> N_KUÂLAŽ ;
 
@@ -3201,10 +3201,8 @@ LEXICON NMN_JÄUʹRR
 :%^V2VV%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;
 :%^PALNo%>a SG-ILL ;
 :%^V2VV%^XYY2XY%>e SG-LOC ;
-:%^V2VV%^XYY2XY SG-COM_IN ;
-:%>e ESS ; ! ess and prt without
-:%>e PAR ;
-:%^V2VV%^XYY2XY%> PL-OBL ;
+:%^V2VV%^VOWRaise%^XYY2XY SG-COM_IN/PL-OBL ;
+:%>e ESS/PAR ;
 +Der/Dim:%^V2VV%^PALNo%^XYY2XY%> N_KUÂLAŽ ;
 
 LEXICON N_PEIʹVV !!= * @CODE@ peiʹvv:peiʹvv
@@ -3293,9 +3291,8 @@ LEXICON NMN_ǨIẸʹČČ
 :%^VOWLower%^CC2CCC%>a SG-ILL ;		  	! ǩeäʹčˈča
 :%^PALẸ%^PAL%^KK2GG%>e SG-LOC ;			! ǩiẹʹjjest
 :%^PALẸ%^PAL%>e ESS ;  	      			! ǩiẹʹččen
-:%^PALẸ%^PAL%^KK2GG%>e PAR ;			! ǩiẹʹččen
-:%^PALE%^PAL%^KK2GG SG-COM_IN ;			! ǩieʹjjin
-:%^PALE%^PAL%^KK2GG PL-OBL ;  			! ǩieʹjji
+:%^PALẸ%^PAL%^KK2GG%>e PAR ;			! ǩiẹʹččed
+:%^VOWRaise%^PALE%^PAL%^KK2GG SG-COM_IN/PL-OBL ;			! ǩieʹjjin
 +Der/Dim:%^VOWLower%^KK2GG%> N_KUÂLAŽ ;		! ǩeäjjaž
 
 LEXICON N_SUẸʹǨǨ !!= * @CODE@ sueʹǩǩ:suäkk
@@ -3342,8 +3339,7 @@ LEXICON NMN_SUẸʹǨǨ
 :%^VOWRaise%^PALẸ%^PAL%^KK2GG%>e PAR ;
 !2009: 204 +N:%^KK2GG%>e PAR ;
 
-:%^VOWRaise%^PALE%^PAL%^KK2GG SG-COM_IN ;
-:%^VOWRaise%^PALE%^PAL%^KK2GG PL-OBL ;
+:%^VOWRaise%^PALE%^PAL%^KK2GG SG-COM_IN/PL-OBL ;
 +Der/Dim:%^KK2GG%> N_KUÂLAŽ ;
 
 LEXICON N_KUẸʹTT !!= * @CODE@ kuẹʹtt:kuätt
@@ -3379,8 +3375,7 @@ LEXICON NMN_KUẸʹTT
 :%^VOWRaise%^PALẸ%^PAL%>e ESS ; 		! kuẹʹtten
 :%^VOWRaise%^PALẸ%^PAL%^CC2C%>e PAR ;		! kuẹʹtted
 !2009: 204 +N:%^CC2C%>e PAR ;	    		
-:%^PAL%^CC2C SG-COM_IN ;			! kuäʹđin
-:%^PAL%^CC2C PL-OBL ;  				! kuäʹđi
+:%^PAL%^CC2C SG-COM_IN/PL-OBL ;			! kuäʹđin
 +Der/Dim:%^CC2C%> N_KUÂLAŽ ;			! kuäđaž
 
 LEXICON N_VUẸIʹVV !!= * @CODE@ vuẹiʹvv:vuäivv
@@ -3422,11 +3417,9 @@ LEXICON NMN_VUẸIʹVV
 :%^VOWRaise%^PALẸ%^PAL%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;		! vuẹiʹv
 :%>a SG-ILL ;		       	      		! vuäivva
 :%^VOWRaise%^PALẸ%^PAL%^XYY2XY%>e SG-LOC ;	! vuẹiʹvest
-:%^VOWRaise%^PALẸ%^PAL%>e ESS ;   	 	! vuẹiʹvven
-:%^VOWRaise%^PALẸ%^PAL%^XYY2XY%>e PAR ;		! vuẹiʹvved
+:%^VOWRaise%^PALẸ%^PAL%>e ESS/PAR ;   	 	! vuẹiʹvven
 
-:%^VOWRaise%^PALE%^PAL%^XYY2XY SG-COM_IN ;	! vueiʹvin
-:%^VOWRaise%^PALE%^PAL%^XYY2XY PL-OBL ;	 	! vueiʹvi
+:%^VOWRaise%^PALE%^PAL%^XYY2XY SG-COM_IN/PL-OBL ;	! vueiʹvin
 +Der/Dim:%^XYY2XY%> N_KUÂLAŽ ; 	      		! vuäiʹvaž
 
 LEXICON N_ǨEÄʹDǦǦ !!= * @CODE@ ǩeäʹdǧǧ:ǩeädgg
@@ -3458,10 +3451,8 @@ LEXICON NMN_ǨEÄʹDǦǦ
 :%^VOWRaise%^PALẸ%^PAL%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;	! ǩiẹʹdj
 :%>a SG-ILL ;		       			     	! ǩeädgga
 :%^XYY2XY%^PALẸ%^PAL%>e SG-LOC ;			! ǩiẹʹdjest
-:%^VOWRaise%^PALE%^PAL%^XYY2XY SG-COM_IN ;		! ǩieʹdjin
-:%^PAL%>e ESS ;		       		 		! ǩeäʹdǧǧen
-:%^PAL%>e PAR ;						! ǩeäʹdǧǧed
-:%^VOWRaise%^PALE%^PAL%^XYY2XY%> PL-OBL ;		! ǩieʹdji
+:%^VOWRaise%^PALE%^PAL%^XYY2XY SG-COM_IN/PL-OBL ;		! ǩieʹdjin
+:%^PAL%>e ESS/PAR ;		       		 		! ǩeäʹdǧǧen
 +Der/Dim:%^XYY2XY%> N_KUÂLAŽ ;
 
 
@@ -3506,10 +3497,8 @@ LEXICON NMN_ČUÄʹRVV
 :%^PALẸ%^PAL%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;	! čuẹʼrv
 :%>a SG-ILL ;	     			   	! čuärvva
 :%^PALẸ%^PAL%^XYY2XY%>e SG-LOC ;		! čuẹʼrvest
-:%^PALẸ%^PAL%>e ESS ; 	       			! čuäʼrvven
-:%^PALẸ%^PAL%^XYY2XY%>e PAR ;			! čuäʼrvved
-:%^PALE%^PAL%^XYY2XY SG-COM_IN ;		! čueʼrvin
-:%^PALE%^PAL%^XYY2XY PL-OBL ;  			! čueʼrvi
+:%^PAL%>e ESS/PAR ; 	       			! čuäʼrvven
+:%^VOWRaise%^PALE%^PAL%^XYY2XY SG-COM_IN/PL-OBL ;		! čueʼrvin
 +Der/Dim:%^XYY2XY%> N_KUÂLAŽ ;			! čuärvaž
 
 LEXICON N_NEUʹLL !!= * @CODE@ 
@@ -3548,10 +3537,8 @@ LEXICON NMN_NEUʹLL
 :%^V2VV%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;
 :%^PALNo%>a SG-ILL ;
 :%^V2VV%^XYY2XY%>e SG-LOC ;
-:%^V2VV%^XYY2XY SG-COM_IN ;
-:%>e ESS ; ! ess and prt without
-:%>e PAR ;
-:%^V2VV%^XYY2XY PL-OBL ;
+:%^V2VV%^XYY2XY SG-COM_IN/PL-OBL ;
+:%>e ESS/PAR ;
 +Der/Dim:%^V2VV%^PALNo%^XYY2XY%> N_KUÂLAŽ ;
 
 LEXICON N_PIẸʹSS !!= * @CODE@ pieʹss:peäss
@@ -3594,10 +3581,8 @@ LEXICON NMN_PIẸʹSS
 :%^VOWRaise%^PALẸ%^PAL SG-NOM ;		  	  	! piẹʹss
 :%^VOWRaise%^PALẸ%^PAL%^KK2GG SG-ABE/ACC/GEN-PL-NOM ;	! piẹʹzz
 :%^VOWRaise%^PALẸ%^PAL%^KK2GG%>e SG-LOC ;	    	! piẹʹzzest
-:%^VOWRaise%^PALE%^PAL%^KK2GG SG-COM_IN ;		! pieʹzzin
-:%^VOWRaise%^PALẸ%^PAL%>e ESS ; 			! piẹʹssen
-:%^VOWRaise%^PALẸ%^PAL%>e PAR ;				! piẹʹssed
-:%^VOWRaise%^PALE%^PAL%^KK2GG PL-OBL ;			! pieʹzzi
+:%^VOWRaise%^PALE%^PAL%^KK2GG SG-COM_IN/PL-OBL ;		! pieʹzzin
+:%^VOWRaise%^PALẸ%^PAL%>e ESS/PAR ; 			! piẹʹssen
 +Der/Dim:%^KK2GG%> N_KUÂLAŽ ; 	     			! peäzzaž
  
 LEXICON N_JEÄʹǦˈǦ !!= * @CODE@ jeäʹǧǧ:jeägˈg
