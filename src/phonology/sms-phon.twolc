@@ -400,7 +400,6 @@ Rules
 !! teevvad+V+Prt+4:
 !€# teevv%^VV2V%^VOWRaise%>uš
 !€0 t0ivv00%>uš
- OnSetC _ e: (ʹ:|0:ʹ) [LongC|Cns: :Cns*] [%^VOWSH: %^CLong:|%^VOWXSH: (%^CLong:)] ;
    OnSetC  _ (0:ʼ) [Cns:+|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ; 
 !! Ââvel+N+Prop+Sg+Loc  __Ivalo__
 !€# Ââvel%^RmVow%>est
@@ -413,9 +412,6 @@ Rules
 !€# eeʹǩǩerd%^PenVV2V%^PenCC2C%^RmVow%>ed
 !€0 0eʹǩ00rd000%>ed
 !! deriving cieʹǩǩes+N+Sg+Ill: ceäkˈksa
-
-      Cns: (:Cns*)  _ (:ʼ) Cns:+ PenBetweenStemAndVowelLoss %^RmVow: ;
-
 
 
 "Even syllabic verbs I, vowel shortening å:0"
@@ -537,7 +533,7 @@ Rules
      [ :n | :l ] ([%^C2CC:|%^XY2XYY:]) %> _ j ;
      n Vow: _ n %^RmVow: ;
      t Vow: _ t %^RmVow: ;
-!!mättʼted+V+Inf: __teach/opettaa__
+!! mättʼted+V+Inf: __teach/opettaa__
 !€# mätta0t%^RmVow%>ed
 !€# mätt0ʼt0%>ed
      j Vow: _ j %^RmVow: ;
@@ -1025,7 +1021,7 @@ Rules
 !€# 0âʹlǧǧ%^V2VV%^CC2C%>i
 !€0 õõʹlj000%>i
 !Distinguishing mainstam and maainstam
-      Cns: _ õ (u:|i:) (ʹ:|0:ʹ)  Cns: Vow: Cns:+  %^PenV2VV: ; 
+      Cns: _ õ (u:|i:) (ʹ:|0:ʹ)  Cns: Cns:* Vow: Cns:+  %^PenV2VV: ; 
 
    OnSetC _ õ (ʹ:|0:ʹ) Cns:+ %^V2VV: ; 
 !€# v0õrr%^V2VV%^CC2C
@@ -1758,7 +1754,7 @@ Rules
        Vow: k:  _ (%^VV2V: ) %^KK2G: ;
 !€# pååss%^VV2V%^KK2G»škuätt
 !€0 p0åz0000škuätt
-
+           k:  _ PenBetweenStemAndConsGrade  [ %^PenCC2C: | %^PenXYY2XY: ] ;
 
 "Even syllabic verbs I, second consonant loss ǩ:0"
 !! __@RULENAME@__ -
