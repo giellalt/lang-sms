@@ -392,6 +392,13 @@ Rules
       Cns: (:Cns*)  _ (:ʼ) Cns:+ PenBetweenStemAndVowelLoss %^RmVow: ;
 
 
+"Even syllabic verbs I, vowel shortening ẹ:0"
+!! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+ ẹ:0 <=>
+   OnSetC _ ẹ: (ʹ:|0:ʹ) [LongC|Cns: :Cns*] %^VV2V:  ;
+ OnSetC _ ẹ: (u|i) (ʹ:|0:ʹ) Cns: [ Cns:*|:Cns*]  %^VV2V:  ;
+ OnSetC _ ẹ: (ʹ:|0:ʹ)  Cns: [ Cns:*|:Cns*]   Vow: Cns:+ %^PenVV2V: ;
+
 
 "Even syllabic verbs I, vowel shortening e:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
@@ -1622,6 +1629,10 @@ Rules
          Vow: (ʹ:|0:ʹ)    _ c: BetweenStemAndConsGrade %^KK2GG: ;
 !€# čääʹcc%^KK2GG
 !€0 čääʹʒʒ00
+         Vow: (ʹ:|0:ʹ) c: ˈ: _    BetweenStemAndConsGrade %^KKK2GG: ;
+         Vow: (ʹ:|0:ʹ)    _ ˈ: c: BetweenStemAndConsGrade %^KKK2GG: ;
+!€# puõcˈc%^VOWLower%^PALÄ%^KKK2GG
+!€0 puäʒ0ʒ000
                                    _ %^VC: ; 
        Vow:  _ c: (%^VV2V: ) %^KK2G: ;
 !€# pååss%^VV2V%^KK2G»škuätt
