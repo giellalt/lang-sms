@@ -3973,13 +3973,12 @@ LEXICON NMN_JUURD !!= * @CODE@ juurd:jurdd
 :%^V2VV%^XYY2XY ATTESTED-NOUN-STEM ;
 :%^V2VV%^XYY2XY SG-NOM ;
 :%>i SG-ABE/ACC/GEN-PL-NOM ;
-:%>j%>a SG-ILL ;
 :%>ǥ%>a SG-ILL ;
++Use/NG:%>j%>a SG-ILL ;
 :%>j%>e SG-LOC ;
-:%>j SG-COM_IN ;
+:%>j SG-COM_IN/PL-OBL ;
 :%>j%>e ESS ;
 :%>e PAR ;
-+N:%>j PL-OBL ;
 +N+Der/Dim:%>j N_KUÂLAŽ ;
 +N+Der/Dim:%>ǥ N_KUÂLAŽ ;
 
@@ -4000,11 +3999,10 @@ LEXICON NMN_MAADD !!= * @CODE@ maadd:madd
 :%>j%>a SG-ILL ;
 :%>ǥ%>a SG-ILL ;
 :%>j%>e SG-LOC ;
-:%>j SG-COM_IN ;
+:%>j SG-COM_IN/PL-OBL ;
 :%>j%>e ESS ;
 :%>e PAR ;
 
-:%>j PL-OBL ;
 +Der/Dim:%>j N_KUÂLAŽ ;
 +Der/Dim:%>ǥ N_KUÂLAŽ ;
 
@@ -4020,13 +4018,12 @@ LEXICON NMN_MUÕTT
 : ATTESTED-NOUN-STEM ;
 : SG-NOM ;
 :%>i SG-ABE/ACC/GEN-PL-NOM ;	! muõtti
-:%>j%>a SG-ILL ;
 :%>ǥ%>a SG-ILL ;
++Use/NG:%>j%>a SG-ILL ;
 :%>j%>e SG-LOC ;
-:%>j SG-COM_IN ;
+:%>j SG-COM_IN/PL-OBL ;
 :%>j%>e ESS ;
 :%>e PAR ;
-:%>j PL-OBL ;
 +Der/Dim:%>j N_KUÂLAŽ ;
 +Der/Dim:%>ǥ N_KUÂLAŽ ;
 
@@ -5163,143 +5160,6 @@ LEXICON NMN_SÄʹPPLI
 +Pl+Abe:eeitää K ;
 
 
-LEXICON N_SÄʹMMLAŽ !!= * @CODE@ 
-+N: NMN_SÄʹMMLAŽ ;
-LEXICON NMN_SÄʹMMLAŽ
-! gradation: no
-!! * Yaml: __A-saemmlazh__
-!! säʹmmlaž:säʹmmlaž
-+Sg+Nom:až K ;
-+Sg+Gen:a K ;
-+Sg+Acc:a K ;
-+Sg+Ill:iʹžže K ;
-+Sg+Loc:ast K ;
-+Sg+Com:ain K ;
-+Ess:iʹžžen K ;
-+Par:iʹžžed K ;
-+Sg+Abe:atää K ;
-+Pl+Nom:a K ;
-+Pl+Gen:ai K ;
-+Pl+Acc:aid K ;
-+Pl+Ill:aid K ;
-+Pl+Loc:ain K ;
-+Pl+Com:aivuiʹm K ;
-+Pl+Abe:aitää K ;
-
-!! Diminutive derivations
-
-LEXICON N_MUÕRÂŽ !!= * @CODE@ muõrâž:muõr
-+N: NMN_MUÕRÂŽ ;
-LEXICON NMN_MUÕRÂŽ
-! gradation: no
-!! (2009: 306)
-!! * muõrâž:muõr
-!! * Yaml: __N-muorazh__
-:âž ATTESTED-NOUN-STEM ;
-:âž SG-NOM ;
-:%^PAL%>e SG-ABE/ACC/GEN-PL-NOM ;
-:že NMN_SG-ILL_E ;
-:%^PAL%>est NMN_SG-LOC_ZERO ;
-:%^PAL SG-COM_IN ;
-:ž NMN_ESS_E ;
-:ž NMN_PAR_E ;
-:%^PAL%>i PL-OBL ;
-
-LEXICON N_MUÕRÂŽ-WITHOUT-PAL !!= * @CODE@ paapp-
-:âž SG-NOM ;		!!= * @CODE@ paappâž
-:že NMN_SG-ILL_E ;	!!= * @CODE@ paappže
-:ž NMN_ESS_E ;	 	!!= * @CODE@ paappžen
-:ž NMN_PAR_E ;		!!= * @CODE@ paappžed
-LEXICON N_MUÕRÂŽ-WITH-PAL   !!= * @CODE@ paaʹpp-
-:%>e SG-ABE/ACC/GEN-PL-NOM ;	!!= * @CODE@ paaʹppe
-:%>est NMN_SG-LOC_ZERO ;	!!= * @CODE@ paaʹppest
-: SG-COM_IN ;	    !!= * @CODE@ paaʹppin
-:%>i PL-OBL ;	    !!= * @CODE@ paaʹppi
-
-
-
-
-LEXICON N_PIISSUŽ !!= * @CODE@ 
-+N: NMN_PIISSUŽ ;
-LEXICON NMN_PIISSUŽ
-! gradation: no
-!! (2009: 310)
-!! * piissuž:piiss
-!! * Yaml: __N-piissuzh__
-:už ATTESTED-NOUN-STEM ;
-:už SG-NOM ;
-:u SG-ABE/ACC/GEN-PL-NOM ;
-:ž NMN_SG-ILL_E ;
-:u NMN_SG-LOC_ZERO ;
-:u SG-COM_IN ;
-:ž NMN_ESS_E ;
-:ž NMN_PAR_E ;
-:u PL-OBL ;
-
-
-
-LEXICON N_KUÂLAŽ !!= * @CODE@ 
-+N: NMN_KUÂLAŽ ;
-LEXICON NMN_KUÂLAŽ
-! gradation: no
-!! * kuâlaž:kuâl
-!! * Yaml: __N-kualazh__
-!! kuâla, kuâlže
-:až ATTESTED-NOUN-STEM ;
-:až SG-NOM ;
-:a SG-ABE/ACC/GEN-PL-NOM ;
-:ž NMN_SG-ILL_E ;
-:a NMN_SG-LOC_ZERO ;
-:a SG-COM_IN ;
-:ž NMN_ESS_E ;
-:ž NMN_PAR_E ;
-:a PL-OBL ;
-LÅÅDDAŽ-STEM-PX ;
-: LÅÅDDAŽ-STEM-PX-ALLEGRO ; !!= * @CODE@ This should go to each stem type ERROR
-
-
-LEXICON N_KUUʹMPEŽ !!= * @CODE@ 
-+N: NMN_KUUʹMPEŽ ;
-LEXICON NMN_KUUʹMPEŽ
-! gradation: no
-!! * kuuʹmpež:kuuʹmp
-!! * Yaml: __N-kuumpezh__
-!! 
-:ež ATTESTED-NOUN-STEM ;
-:ež SG-NOM ;
-:e SG-ABE/ACC/GEN-PL-NOM ;
-:ž NMN_SG-ILL_E ;
-:e NMN_SG-LOC_ZERO ;
-: SG-COM_IN ;
-:ž NMN_ESS_E ;
-:ž NMN_PAR_E ;
-:i PL-OBL ;
-
-LEXICON N_OOUMAŽ !!= * @CODE@ 
-+N:  NMN_OOUMAŽ ;
-LEXICON NMN_OOUMAŽ
-! gradation: no
-!! is for nouns with ''-ust'' +Sg+Loc; ''e'' +Sg+Ill; X2 no gradation; no lowering no raising
-!! N_GEN1-ILLEX1-LOCE-NOM1X1
-!! ** Yaml: __N-ooumazh__
-!! * There are several stem types 
-!! * ooumaž:ooum
-
-!+N:%^VOWL%^CShort%^VC DenominalAdjsCShort ;
-
-:až ATTESTED-NOUN-STEM ;
-:až SG-NOM ;
-:%^VV2V%^C2CC%>u SG-ABE/ACC/GEN-PL-NOM ;
-:ž NMN_SG-ILL_E ;
-:%^VV2V%^C2CCu NMN_SG-LOC_ZERO ;	! oummust
-:%^VV2V%^C2CCu SG-COM_IN ;     		! oummuin
-:%^VV2V%^C2CC SG-COM_IN ;     		! oummin
-:ž NMN_ESS_E ;
-:ž NMN_PAR_E ;
-
-:%^VV2V%^C2CCu PL-OBL ;			! oummui
-:%^VV2V%^C2CC PL-OBL ;			! oummi
-
 
 LEXICON N_ČUÂǤǤAS !!= * @CODE@ čuâǥǥas:čuâkˈk
 ! 3.u.diph.gem
@@ -5484,41 +5344,6 @@ LEXICON N_MIEʹLǨǨ !!= * @CODE@ mieʹlǩǩ:meâlkk
 +N+Der/Dim:%^XYY2XY N_KUÂLAŽ ;	 		! meâlkaž
 
 
-!! !!i-stems
-LEXICON N_HÕʹPPI !!= * @CODE@ hõʹppi:hõʹppi
-! is for nouns with ''-est'' +Loc
-! gradation: no
-!! ** Yaml: __hoppi__
-!! * There are several stem types
-!! * hõʹppi:hõʹppi
-+N: ATTESTED-NOUN-STEM ;
-+N: SG-NOM ;
-+N: SG-ABE/ACC/GEN-PL-NOM ;
-+N:%>a SG-ILL ;
-+N:%>ǥa SG-ILL ;
-+N:%>e SG-LOC ;
-+N: SG-COM_IN ;
-+N:%>e ESS ; ! ess and prt without
-+N:%>e PAR ;
-+N: PL-OBL ;
-
-
-LEXICON N_VUÂPˈPAI !!= * @CODE@ vuâppai:vuâpˈp
-! is for nouns with ''-est'' +Loc
-! gradation: no
-!! ** Yaml: __vuappai__
-!! * There are several stem types
-+N:ai ATTESTED-NOUN-STEM ;
-+N:ai SG-NOM ;
-+N:ai SG-ABE/ACC/GEN-PL-NOM ;
-+N:j%>a SG-ILL ;
-+N:%>ǥa SG-ILL ;
-+N:j%>e SG-LOC ;
-+N:j SG-COM_IN ;
-+N:j%>e ESS ; ! ess and prt without
-+N:j%>e PAR ;
-+N: PL-OBL ;! what is this2015-04-29
-
 LEXICON N_ČIISTI !!= * @CODE@ čiisti:čiisti
 ! gradation: yes
 ! is for nouns with ''-est'' +Loc
@@ -5538,6 +5363,398 @@ LEXICON N_ČIISTI !!= * @CODE@ čiisti:čiisti
 +N:%^XY2XYY%^I2J PL-OBL ;             	! čiisttji
 
 
+
+
+
+LEXICON N_ÕPSS !!= * @CODE@ õpss:õpss
+! gradation: yes
+! opposite gradation of juurd
+! compare: tõõuʹnj, stääʹlj, kuunnj, säuʹnnj
+!! ** Yaml: __N-opss__
+!! * There are several stem types 
++N: ATTESTED-NOUN-STEM ;
++N: SG-NOM ;
++N:%^V2VV%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;
++N:%>j%>a SG-ILL ;
++N:%^V2VV%^XYY2XY%>j%>e SG-LOC ;
++N:%^V2VV%^XYY2XY%>j SG-COM_IN ;
++N:%>j%>e ESS ;
++N:%>e PAR ;
++N:%^V2VV%^XYY2XY%>j PL-OBL ;
++N+Der/Dim:%^V2VV%^XYY2XY%>j N_KUÂLAŽ ;
+
+
+
+LEXICON SG-ABE/ACC/GEN-PL-NOM
+ SG-ABE/ACC/GEN ;
+ PL-NOM ;
+LEXICON	SG-ABE/ACC/GEN
+ SG-ABE ;
+ SG-ACC ;
+ SG-GEN ;
+
+LEXICON N_KARNDAŠ !!= * @CODE@ = stemtype 
+!! ** Yaml: __N-chaustok__
++N: ATTESTED-NOUN-STEM ;
++N: SG-NOM ;
++N:š%>â ESS ; 
++N:š%>â PAR ;
++N:š NMN_OBL-ČÂUSTÕK ;
+
+LEXICON NMN_OBL-ČÂUSTÕK
+!! čâustõk+N+Sg+Gen:čâustõõǥǥ
+:%^V2VV%^KK2GG SG-ABE/ACC/GEN-PL-NOM ;
+:%^PAL%>e SG-ILL ;
+:%^V2VV%^KK2GG%>â SG-LOC ;
+:%^V2VV%^KK2GG%> SG-COM_IN ;
+:%^V2VV%^KK2GG PL-OBL ;
+
+
+LEXICON N_DURAK !!= * @CODE@ = stemtype 
+! gradation: yes
+!! ** Yaml: durak
++N: ATTESTED-NOUN-STEM ;
++N: SG-NOM ;
++N:%^V2VV SG-ABE/ACC/GEN-PL-NOM ;
++N:k%>a SG-ILL ;
++N:%^V2VV%>a SG-LOC ;
++N:%^V2VV%> SG-COM_IN ;
++N:%^V2VV%>e ESS ; ! ess and prt without
++N:%^V2VV%>e PAR ;
++N:%^V2VV PL-OBL ;
+
+
+
+
+
+LEXICON N_MINIʹSTTER
++N: NMN_MINIʹSTTER ;
+LEXICON NMN_MINIʹSTTER
+! gradation: no
+!    Penultimate: Yes
+!      Extra strong grade: Else
+!      Weak grade: Sg.Nom, Sg.Gen, Sg.Acc, Pl.Nom
+!    Ultimate: None
+! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
+! Stem vowel: e
+! Ultimate stem consonant
+!! stemtype l-stem miniʹstter:miniʹstter
+!! * __@LEXNAME@__ = Koulukielioppi stemtype II 9 (29)
+!! ** Yaml: __N-miniʹstter __ 
+: ATTESTED-NOUN-STEM ;
+: SG-NOM ;
+: SG-GEN ;
+: SG-ACC ;
+:%^RmVow%>a SG-ILL ; !miniʹsttra
+:%^RmVow%>e SG-LOC ;
+:%^RmVow SG-COM_IN ;
+:%^RmVow%>e ESS ; ! ess and prt without
+:%^RmVow%>e PAR ;
+:%^RmVow SG-ABE ;
+: PL-NOM ;
+:%^RmVow PL-OBL ;
+
+LEXICON N_REʹPPIǨ
+! gradation: yes
+! syllables: odd
+! vowel_type: monophthong
+!   Extra strong grade: Else
+!   Strong grade: Sg.Nom
+! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
+! Stem vowel: e
+!! stemtype n-stem reʹppiǩ:reʹppiǩ
+!! Palatalization loss in Sg.Ill
+!! ** Yaml: __N-reppikj__
++N: ATTESTED-NOUN-STEM ;
++N: SG-NOM ;
++N:%^PenV2VV SG-GEN ;
++N:%^PenV2VV SG-ACC ;
++N:%^RmVow%>a SG-ILL ; ! reppka
++N:%^PenV2VV%^RmVow%>e SG-LOC ;
++N:%^PenV2VV%^RmVow SG-COM_IN ;
++N:%^PenV2VV%^RmVow%>e ESS ; ! ess and prt without
++N:%^PenV2VV%^RmVow%>e PAR ;
++N:%^PenV2VV%^RmVow SG-ABE ;
++N:%^PenV2VV PL-NOM ;
++N:%^PenV2VV%^RmVow PL-OBL ;
+
+
+!! PENULTIMATE O:0
+LEXICON N_MOOTTOR !!= * @CODE@ moottor:moottor
+! gradation: no
+! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
+! Stem vowel: e
+!! ** Yaml: __N-moottor__
++N: ATTESTED-NOUN-STEM ;	! moottor
++N: SG-NOM ; 	       		! moottor
++N: SG-ABE/ACC/GEN-PL-NOM ;	! moottor
++N:%^RmVow%>a SG-ILL ;	  	! moottra
++N:%^RmVow%>e SG-LOC ;		! moottrest
++N:%^RmVow SG-COM_IN ;		! moottrin
++N:%^RmVow%>e ESS ;  		! moottren
++N:%^RmVow%>e PAR ;		! moottred
++N:%^RmVow PL-OBL ;		! moottri
+
+
+
+LEXICON N_PEʹRRJEM !!= * @CODE@ peʹrrjem:peʹrrjem
++N: NMN_PEʹRRJEM ;
+LEXICON NMN_PEʹRRJEM
+!
+!! ** Yaml: __N-perrjem__
+ ATTESTED-NOUN-STEM ;   ! peʹrrjem
+ SG-NOM ;               ! peʹrrjem
+: SG-GEN ;              ! peʹrrjem
+  SG-ACC ;              ! peʹrrjem
+:ma SG-ILL ;            ! peʹrrjemma
+:me SG-LOC ;            ! peʹrrjemmest
+:m SG-COM_IN ;          ! peʹrrjemmin
+:%>me ESS ;             ! peʹrrjemmen
+:%^PAL%>me ESS ;        ! peʹrrjeʹmmen
+:%>me PAR ;             ! peʹrrjemmed
+:%^PAL%>me PAR ;        ! peʹrrjeʹmmed
+: SG-ABE ;      ! peʹrrjemtaa/peʹrrjemtää
+: PL-NOM ;      ! peʹrrjem
+:m PL-OBL ;             ! peʹrrjemmi
+
+LEXICON N_ČUEʹCCEM !!= * @CODE@ čueʹccem:čueʹccem
++N: NMN_ČUEʹCCEM ;
+LEXICON NMN_ČUEʹCCEM
+! 
+!! ** Yaml: __N-perrjem__
+ ATTESTED-NOUN-STEM ;	! čueʹccem
+ SG-NOM ;	    	! čueʹccem
+: SG-ABE/ACC/GEN-PL-NOM ;	! čueʹccem
+:%^PenPALNo%^RmVowa SG-ILL ;	! čueccma
+:%^RmVowe SG-LOC ;	! čueʹccmest
+:%^RmVow SG-COM_IN ;	! čueʹccmin
+:%^RmVowe ESS ;		! čueʹccmen
+:%^RmVowe PAR ;    	! čueʹccmed
+:%^RmVow PL-OBL ;    	! čueʹccmi
+
+!! VOWEL-FINAL STEMS
+LEXICON N_BIOLOGIA
++N: NMN_BIOLOGIA ;
+LEXICON NMN_BIOLOGIA
+! biologia:biologia
+!! ** Yaml: __N-biologia__
+ ATTESTED-NOUN-STEM ;
+ SG-NOM ;
+ SG-GEN ;
+ SG-ACC ;
+:aʹje SG-ILL ;
+ SG-LOC ;
+ SG-COM_IN ;
+ ESS ; ! ess and prt without
+ PAR ;
+ SG-ABE ;
+ PL-NOM ;
+ PL-OBL ;
+
+LEXICON N_RADIO
++N: NMN_RADIO ;
+LEXICON NMN_RADIO
+! radio:radio
+!! ** Yaml: __N-radio__
+ ATTESTED-NOUN-STEM ;
+ SG-NOM ;
+ SG-GEN ;
+ SG-ACC ;
+:oʹje SG-ILL ;
++Use/NG: SG-ILL ;
+ SG-LOC ;
+ SG-COM_IN ;
+ ESS ; ! ess and prt without
+ PAR ;
+ SG-ABE ;
+ PL-NOM ;
+ PL-OBL ;
+
+
+
+LEXICON N_NALLŠEM
+!!= * @CODE@ = stemtype 
+! gradation: yes
+!! ** Yaml: __N-nallshem__
++N: ATTESTED-NOUN-STEM ;
++N: SG-NOM ;
++N:%^PAL%>e ESS ; 
++N:%^PAL%>e PAR ;
+!! nallšem+N+Sg+Gen: kaađneeʹǩǩ
+:%^V2VV%^PAL SG-GEN ;
+:%^V2VV%^PAL SG-ACC ;
+:m%^PALNo%>a SG-ILL ;
+:%^V2VV%^PAL%>e SG-LOC ;
+:%^V2VV%^PAL%> SG-COM_IN ;
+:%^V2VV%^PAL SG-ABE ;
+:%^V2VV%^PAL PL-NOM ;
+:%^V2VV%^PAL PL-OBL ;
+
+
+
+
+LEXICON N_OBL
++N+Sg+Gen: K ;
++N+Sg+Acc: K ;
++N+Sg+Ill:%>a K ;
++N+Sg+Loc:%>est K ;
++N+Sg+Com:%>in K ;
++N+Ess:%>en K ; ! ess and prt without
++N+Par:%>ed K ;
++N+Sg+Abe:%>tää K ;
+
++N+Pl+Nom: K ;
++N+Pl+Gen:%>i K ;
++N+Pl+Acc:%>id K ;
++N+Pl+Ill:%>id K ;
++N+Pl+Loc:%>in K ;
++N+Pl+Com:%>ivuiʹm K ;
++N+Pl+Abe:%>itää K ;
+
+LEXICON N_ČÂÂʹLMTEʹM
+!! 292-295
+!! ** Yaml: __A-chaalmtem__
+!!NumContLex="650"
++N: ATTESTED-NOUN-STEM ;
++N: SG-NOM ;
++N:%^V2VV SG-GEN ;
++N:%^V2VV SG-ACC ;
+!+N:%{XC%}%^CLong%>a SG-ILL ;
++N:%^PALNo%^C2CC%>a SG-ILL ;
++N:%^V2VV%>e SG-LOC ;
++N:%^V2VV SG-COM_IN ;
++N:%^V2VV%>e ESS ;
++N:%^V2VV%>e PAR ;
++N:%^V2VV SG-ABE ;
++N:%^V2VV PL-NOM ;
++N:%^V2VV PL-GEN ;
++N:%^V2VV PL-ACC ;
++N:%^V2VV PL-ILL ;
++N:%^V2VV PL-LOC ;
++N:%^V2VV PL-COM ;
++N:%^V2VV PL-ABE ;
+
+LEXICON N_PÅÅSSAI
+!! pååssai:pååss
+!! also a derivattion from the verb pååssad
++N+Sg+Nom:ai K ;
++N+Sg+Gen:%^KK2GG%>ai K ;
++N+Sg+Gen:ai K ;
++N+Sg+Acc:%^KK2GG%>ai K ;
++N+Sg+Acc:ai K ;
++N+Sg+Ill:%>ja K ;
++N+Sg+Loc:%>jest K ;
++N+Sg+Com:%^KK2GG%>ain K ;
++N+Sg+Com:ain K ;
++N+Ess:%>jen K ;
++N+Par:%>jed K ;
++N+Sg+Abe:%^KK2GG%>aitää K ;
++N+Sg+Abe:aitää K ;
++N+Pl+Nom:%^KK2GG%>ai K ;
++N+Pl+Nom:ai K ;
++N:%^KK2GG%>ji PL-OBL ;
++N:ji PL-OBL ;
+
+
+
+
+!! !!Stem types from the grammar
+
+!! ''These are still not fixed.''
+
+
+LEXICON N_TUEJJEEI !!= * @CODE@ tueʹjjeei:tueʹjjee
++N: NMN_TUEJJEEI ;
+LEXICON NMN_TUEJJEEI !!= * @CODE@ tueʹjjeei:tueʹjjee
+!! tueʹjjeei:tueʹjjee
+!! * Yaml: __N-tuejjeei__
+:i ATTESTED-NOUN-STEM ;
+:i SG-NOM ;
+:i SG-ABE/ACC/GEN-PL-NOM ;
+:%>ʹja SG-ILL ;
+:%>ʹje SG-LOC ;
+:%>ʹja SG-COM_IN ;
+:%>ʹje ESS ;
+:%>ʹje PAR ;
+:%>ʹj PL-OBL ;
+
+
+LEXICON N_MÄTTJUMUŠ
++N:%^PenC2CC NMN_MAINSTUMMUŠ ;
++N+Err/Orth: ATTESTED-NOUN-STEM ;
++N+Err/Orth: SG-NOM ;
++N+Err/Orth:š%>â ESS ;
++N+Err/Orth:š%>â PAR ;
++N+Err/Orth:š NMN_OBL-ČÂUSTÕK ;
+
+LEXICON N_MAINSTUMMUŠ
++N+Err/Orth:%^PenCC2C ATTESTED-NOUN-STEM ;	! mainstumuš
++N+Err/Orth:%^PenCC2C SG-NOM ;
++N+Err/Orth:š%^PenCC2C%>â ESS ;
++N+Err/Orth:š%^PenCC2C%>â PAR ;
++N+Err/Orth:š%^PenCC2C NMN_OBL-ČÂUSTÕK ;
+
++N: NMN_MAINSTUMMUŠ ;
+LEXICON NMN_MAINSTUMMUŠ
+ ATTESTED-NOUN-STEM ;
+ SG-NOM ;
+:%^VC SG-ACC ;
+:%^VC SG-GEN ;
+:%^RmVow%>a SG-ILL ;
+:%^RmVow%>e SG-LOC ;
+:%^RmVow SG-COM_IN ;
+:%^RmVow%>e ESS ;
+:%^RmVow%>e PAR ;
+:%^VC SG-ABE ;
+:%^VC PL-NOM ;
+:%^RmVow PL-OBL ;
+
+!! Class 5 according to Feist 152
+!! !!k-stems
+
+LEXICON N_ČÂUSTÕK !!= * @CODE@ = stemtype 
+! gradation: yes
+!! ** Yaml: __N-chaustok__
++N: ATTESTED-NOUN-STEM ;
++N: SG-NOM ;
++N:k%>â ESS ; 
++N:k%>â PAR ;
++N:k NMN_OBL-ČÂUSTÕK ;
+
+LEXICON N_TÄÄVTÕS
++N: NMN_TÄÄVTÕS ;
+LEXICON NMN_TÄÄVTÕS
+! gradation: yes
+!! stemtype 
+!! ** Yaml: __N-chaustok__
+ ATTESTED-NOUN-STEM ;
+: SG-NOM ;
+:%>â ESS ; 
+:%>â PAR ;
+:s NMN_OBL-ČÂUSTÕK ;
+
+LEXICON N_LOOKKMÕŠ !!= * @CODE@ lookkmõš:lookkmõš
++N: NMN_LOOKKMÕŠ ;
+LEXICON NMN_LOOKKMÕŠ !!= * @CODE@ lookkmõš:lookkmõš
+: ATTESTED-NOUN-STEM ;
+: SG-NOM ;
+:š%>â ESS ;
+:š%>â PAR ;
+:š NMN_OBL-ČÂUSTÕK ;
+
+
+
+LEXICON N_ČÅRRÕS
++N: NMN_ČÅRRÕS ;
++N: ATTESTED-NOUN-STEM ;	! čårrõs
+
+LEXICON NMN_ČÅRRÕS
+: SG-NOM ;
+:s%>â ESS ;
+:s%>â PAR ;
+:s NMN_OBL-ČÂUSTÕK ;
+
+!! Class 6 according to Feist 153-154
 !! PRESENT PARTICIPLES
 LEXICON N_CÕGGI !!= * @CODE@ cõggi:cõggi
 ! gradation: yes
@@ -5939,415 +6156,223 @@ LEXICON N_VUÕIʹNNI !!= * @CODE@ vuõiʹnni:vuõiʹnni
 +N+Use/NG: PL-NOM ;
 +N+Use/NG:%^XYY2XY PL-OBL ;
 
+!! Class 7 according to Feist 154-155
+!! !!i-stems
+LEXICON N_HÕʹPPI !!= * @CODE@ hõʹppi:hõʹppi
+! is for nouns with ''-est'' +Loc
+! gradation: no
+!! ** Yaml: __hoppi__
+!! * There are several stem types
+!! * hõʹppi:hõʹppi
++N: ATTESTED-NOUN-STEM ;
++N: SG-NOM ;
++N: SG-ABE/ACC/GEN-PL-NOM ;
++N:%^I2J%>a SG-ILL ;
++Use/NG+N:%>ǥa SG-ILL ;
++N:%>e SG-LOC ;
++N: SG-COM_IN/PL-OBL ;
++N:%>e ESS/PAR ; ! ess and prt without
+
+
+
+LEXICON N_VUÂPˈPAI !!= * @CODE@ vuâppai:vuâpˈp
+! is for nouns with ''-est'' +Loc
+! gradation: no
+!! ** Yaml: __vuappai__
+!! * There are several stem types
++N:ai ATTESTED-NOUN-STEM ;
++N:ai SG-NOM ;
++N:ai SG-ABE/ACC/GEN-PL-NOM ;
++N:j%>a SG-ILL ;
++Use/NG+N:%>ǥa SG-ILL ;
++N:j%>e SG-LOC ;
++N:j SG-COM_IN ;
++N:j%>e ESS/PAR ;
++N: PL-OBL ;! what is this2015-04-29
+
+
+!! Class 8 according to Feist 155-157
+
+
+!! Class 9 according to Feist 158
+LEXICON N_SÄʹMMLAŽ !!= * @CODE@ 
++N: NMN_SÄʹMMLAŽ ;
+LEXICON NMN_SÄʹMMLAŽ
+! gradation: no
+!! * Yaml: __A-saemmlazh__
+!! säʹmmlaž:säʹmmlaž
++Sg+Nom:až K ;
++Sg+Gen:a K ;
++Sg+Acc:a K ;
++Sg+Ill:iʹžže K ;
++Sg+Loc:ast K ;
++Sg+Com:ain K ;
++Ess:iʹžžen K ;
++Par:iʹžžed K ;
++Sg+Abe:atää K ;
++Pl+Nom:a K ;
++Pl+Gen:ai K ;
++Pl+Acc:aid K ;
++Pl+Ill:aid K ;
++Pl+Loc:ain K ;
++Pl+Com:aivuiʹm K ;
++Pl+Abe:aitää K ;
+
+!! Diminutive derivations
+
+LEXICON N_MUÕRÂŽ !!= * @CODE@ muõrâž:muõr
++N: NMN_MUÕRÂŽ ;
+LEXICON NMN_MUÕRÂŽ
+! gradation: no
+!! (2009: 306)
+!! * muõrâž:muõr
+!! * Yaml: __N-muorazh__
+:âž ATTESTED-NOUN-STEM ;
+:âž SG-NOM ;
+:%^PAL%>e SG-ABE/ACC/GEN-PL-NOM ;
+:že NMN_SG-ILL_E ;
+:%^PAL%>est NMN_SG-LOC_ZERO ;
+:%^PAL SG-COM_IN ;
+:ž NMN_ESS_E ;
+:ž NMN_PAR_E ;
+:%^PAL%>i PL-OBL ;
+
+LEXICON N_MUÕRÂŽ-WITHOUT-PAL !!= * @CODE@ paapp-
+:âž SG-NOM ;		!!= * @CODE@ paappâž
+:že NMN_SG-ILL_E ;	!!= * @CODE@ paappže
+:ž NMN_ESS_E ;	 	!!= * @CODE@ paappžen
+:ž NMN_PAR_E ;		!!= * @CODE@ paappžed
+LEXICON N_MUÕRÂŽ-WITH-PAL   !!= * @CODE@ paaʹpp-
+:%>e SG-ABE/ACC/GEN-PL-NOM ;	!!= * @CODE@ paaʹppe
+:%>est NMN_SG-LOC_ZERO ;	!!= * @CODE@ paaʹppest
+: SG-COM_IN ;	    !!= * @CODE@ paaʹppin
+:%>i PL-OBL ;	    !!= * @CODE@ paaʹppi
 
 
 
 
-LEXICON N_ÕPSS !!= * @CODE@ õpss:õpss
-! gradation: yes
-! opposite gradation of juurd
-! compare: tõõuʹnj, stääʹlj, kuunnj, säuʹnnj
-!! ** Yaml: __N-opss__
+LEXICON N_PIISSUŽ !!= * @CODE@ 
++N: NMN_PIISSUŽ ;
+LEXICON NMN_PIISSUŽ
+! gradation: no
+!! (2009: 310)
+!! * piissuž:piiss
+!! * Yaml: __N-piissuzh__
+:už ATTESTED-NOUN-STEM ;
+:už SG-NOM ;
+:u SG-ABE/ACC/GEN-PL-NOM ;
+:ž NMN_SG-ILL_E ;
+:u NMN_SG-LOC_ZERO ;
+:u SG-COM_IN ;
+:ž NMN_ESS_E ;
+:ž NMN_PAR_E ;
+:u PL-OBL ;
+
+
+
+LEXICON N_KUÂLAŽ !!= * @CODE@ 
++N: NMN_KUÂLAŽ ;
+LEXICON NMN_KUÂLAŽ
+! gradation: no
+!! * kuâlaž:kuâl
+!! * Yaml: __N-kualazh__
+!! kuâla, kuâlže
+:až ATTESTED-NOUN-STEM ;
+:až SG-NOM ;
+:a SG-ABE/ACC/GEN-PL-NOM ;
+:ž NMN_SG-ILL_E ;
+:a NMN_SG-LOC_ZERO ;
+:a SG-COM_IN ;
+:ž NMN_ESS_E ;
+:ž NMN_PAR_E ;
+:a PL-OBL ;
+LÅÅDDAŽ-STEM-PX ;
+: LÅÅDDAŽ-STEM-PX-ALLEGRO ; !!= * @CODE@ This should go to each stem type ERROR
+
+
+LEXICON N_KUUʹMPEŽ !!= * @CODE@ 
++N: NMN_KUUʹMPEŽ ;
+LEXICON NMN_KUUʹMPEŽ
+! gradation: no
+!! * kuuʹmpež:kuuʹmp
+!! * Yaml: __N-kuumpezh__
+!! 
+:ež ATTESTED-NOUN-STEM ;
+:ež SG-NOM ;
+:e SG-ABE/ACC/GEN-PL-NOM ;
+:ž NMN_SG-ILL_E ;
+:e NMN_SG-LOC_ZERO ;
+: SG-COM_IN ;
+:ž NMN_ESS_E ;
+:ž NMN_PAR_E ;
+:i PL-OBL ;
+
+LEXICON N_OOUMAŽ !!= * @CODE@ 
++N:  NMN_OOUMAŽ ;
+LEXICON NMN_OOUMAŽ
+! gradation: no
+!! is for nouns with ''-ust'' +Sg+Loc; ''e'' +Sg+Ill; X2 no gradation; no lowering no raising
+!! N_GEN1-ILLEX1-LOCE-NOM1X1
+!! ** Yaml: __N-ooumazh__
 !! * There are several stem types 
-+N: ATTESTED-NOUN-STEM ;
-+N: SG-NOM ;
-+N:%^V2VV%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;
-+N:%>j%>a SG-ILL ;
-+N:%^V2VV%^XYY2XY%>j%>e SG-LOC ;
-+N:%^V2VV%^XYY2XY%>j SG-COM_IN ;
-+N:%>j%>e ESS ;
-+N:%>e PAR ;
-+N:%^V2VV%^XYY2XY%>j PL-OBL ;
-+N+Der/Dim:%^V2VV%^XYY2XY%>j N_KUÂLAŽ ;
+!! * ooumaž:ooum
+
+!+N:%^VOWL%^CShort%^VC DenominalAdjsCShort ;
+
+:až ATTESTED-NOUN-STEM ;
+:až SG-NOM ;
+:%^VV2V%^C2CC%>u SG-ABE/ACC/GEN-PL-NOM ;
+:ž NMN_SG-ILL_E ;
+:%^VV2V%^C2CCu NMN_SG-LOC_ZERO ;	! oummust
+:%^VV2V%^C2CCu SG-COM_IN ;     		! oummuin
+:%^VV2V%^C2CC SG-COM_IN ;     		! oummin
+:ž NMN_ESS_E ;
+:ž NMN_PAR_E ;
+
+:%^VV2V%^C2CCu PL-OBL ;			! oummui
+:%^VV2V%^C2CC PL-OBL ;			! oummi
 
 
 
-LEXICON SG-ABE/ACC/GEN-PL-NOM
- SG-ABE/ACC/GEN ;
- PL-NOM ;
-LEXICON	SG-ABE/ACC/GEN
- SG-ABE ;
- SG-ACC ;
- SG-GEN ;
-
-!! !!k-stems
-
-LEXICON N_ČÂUSTÕK !!= * @CODE@ = stemtype 
-! gradation: yes
-!! ** Yaml: __N-chaustok__
-+N: ATTESTED-NOUN-STEM ;
-+N: SG-NOM ;
-+N:k%>â ESS ; 
-+N:k%>â PAR ;
-+N:k NMN_OBL-ČÂUSTÕK ;
-
-LEXICON N_TÄÄVTÕS
-+N: NMN_TÄÄVTÕS ;
-LEXICON NMN_TÄÄVTÕS
-! gradation: yes
-!! stemtype 
-!! ** Yaml: __N-chaustok__
- ATTESTED-NOUN-STEM ;
-: SG-NOM ;
-:%>â ESS ; 
-:%>â PAR ;
-:s NMN_OBL-ČÂUSTÕK ;
-
-LEXICON N_KARNDAŠ !!= * @CODE@ = stemtype 
-!! ** Yaml: __N-chaustok__
-+N: ATTESTED-NOUN-STEM ;
-+N: SG-NOM ;
-+N:š%>â ESS ; 
-+N:š%>â PAR ;
-+N:š NMN_OBL-ČÂUSTÕK ;
-
-LEXICON NMN_OBL-ČÂUSTÕK
-!! čâustõk+N+Sg+Gen:čâustõõǥǥ
-:%^V2VV%^KK2GG SG-ABE/ACC/GEN-PL-NOM ;
-:%^PAL%>e SG-ILL ;
-:%^V2VV%^KK2GG%>â SG-LOC ;
-:%^V2VV%^KK2GG%> SG-COM_IN ;
-:%^V2VV%^KK2GG PL-OBL ;
-
-
-LEXICON N_DURAK !!= * @CODE@ = stemtype 
-! gradation: yes
-!! ** Yaml: durak
-+N: ATTESTED-NOUN-STEM ;
-+N: SG-NOM ;
-+N:%^V2VV SG-ABE/ACC/GEN-PL-NOM ;
-+N:k%>a SG-ILL ;
-+N:%^V2VV%>a SG-LOC ;
-+N:%^V2VV%> SG-COM_IN ;
-+N:%^V2VV%>e ESS ; ! ess and prt without
-+N:%^V2VV%>e PAR ;
-+N:%^V2VV PL-OBL ;
-
+!! Class 10 according to Feist 160-161
 !!  !!ǩ-stem
-LEXICON N_KAAĐNEǨ
+LEXICON N_KAAĐNEǨ !!= * @CODE@ kaađneǩ:kaađneǩ
 !!= * @CODE@ = stemtype 
 !! ** Yaml: __N-kaadhnekj, N-chaustok__
 +N: ATTESTED-NOUN-STEM ;
 +N: SG-NOM ;
-+N:ǩ%^PAL%>e ESS ; 
-+N:ǩ%^PAL%>e PAR ;
-+N:ǩ NMN_OBL-KAAĐNEǨ ;
-
-LEXICON NMN_OBL-KAAĐNEǨ
-! gradation: yes
-!! kaađneǩ+N+Sg+Gen: kaađneeʹǩǩ
-:%^V2VV%^PAL SG-ABE/ACC/GEN-PL-NOM ;
-:%^PALNo%>a SG-ILL ;
-:%^V2VV%^PAL%>e SG-LOC ;
-:%^V2VV%^PAL%> SG-COM_IN ;
-:%^V2VV%^PAL PL-OBL ;
++Use/NG+N:ǩ%^PAL ATTESTED-NOUN-STEM ;
++Use/NG+N:ǩ%^PAL SG-NOM ;
++N:ǩ%^PAL%>e ESS/PAR ; !!= * @CODE@ kaađneʹǩǩe- 
++N:ǩ%^V2VV%^PAL SG-ABE/ACC/GEN-PL-NOM ; !!= * @CODE@ kaađneeʹǩǩ
++N:ǩ%^PALNo%>a SG-ILL ;
++N:ǩ%^V2VV%^PAL%>e SG-LOC ;
++N:ǩ%^V2VV%^PAL SG-COM_IN/PL-OBL ;
 
 
 
+!! Class 11 according to Feist 162
+LEXICON N_VISKKÂD !!= * @CODE@ viskkâd:viskk
++N: NMN_VISKKÂD ;
+LEXICON NMN_VISKKÂD
+:âd SG-NOM ;
+:âd SG-ABE/ACC/GEN-PL-NOM ;
+:ää SG-ILL ;
+:eeʼ SG-LOC ;
+:i SG-COM_IN/PL-OBL ;
+:ee ESS/PAR ;
 
+LEXICON N_ÂʹǨǨED !!= * @CODE@ âʹǩǩed:âʹǩǩ
++N: NMN_ÂʹǨǨED ;
+LEXICON NMN_ÂʹǨǨED
+:ed SG-NOM ;
+:ed SG-ABE/ACC/GEN-PL-NOM ;
+:ää SG-ILL ;
+:eeʼ SG-LOC ;
+:i SG-COM_IN/PL-OBL ;
+:ee ESS/PAR ;
 
-LEXICON N_MINIʹSTTER
-+N: NMN_MINIʹSTTER ;
-LEXICON NMN_MINIʹSTTER
-! gradation: no
-!    Penultimate: Yes
-!      Extra strong grade: Else
-!      Weak grade: Sg.Nom, Sg.Gen, Sg.Acc, Pl.Nom
-!    Ultimate: None
-! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
-! Stem vowel: e
-! Ultimate stem consonant
-!! stemtype l-stem miniʹstter:miniʹstter
-!! * __@LEXNAME@__ = Koulukielioppi stemtype II 9 (29)
-!! ** Yaml: __N-miniʹstter __ 
-: ATTESTED-NOUN-STEM ;
-: SG-NOM ;
-: SG-GEN ;
-: SG-ACC ;
-:%^RmVow%>a SG-ILL ; !miniʹsttra
-:%^RmVow%>e SG-LOC ;
-:%^RmVow SG-COM_IN ;
-:%^RmVow%>e ESS ; ! ess and prt without
-:%^RmVow%>e PAR ;
-:%^RmVow SG-ABE ;
-: PL-NOM ;
-:%^RmVow PL-OBL ;
-
-LEXICON N_REʹPPIǨ
-! gradation: yes
-! syllables: odd
-! vowel_type: monophthong
-!   Extra strong grade: Else
-!   Strong grade: Sg.Nom
-! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
-! Stem vowel: e
-!! stemtype n-stem reʹppiǩ:reʹppiǩ
-!! Palatalization loss in Sg.Ill
-!! ** Yaml: __N-reppikj__
-+N: ATTESTED-NOUN-STEM ;
-+N: SG-NOM ;
-+N:%^PenV2VV SG-GEN ;
-+N:%^PenV2VV SG-ACC ;
-+N:%^RmVow%>a SG-ILL ; ! reppka
-+N:%^PenV2VV%^RmVow%>e SG-LOC ;
-+N:%^PenV2VV%^RmVow SG-COM_IN ;
-+N:%^PenV2VV%^RmVow%>e ESS ; ! ess and prt without
-+N:%^PenV2VV%^RmVow%>e PAR ;
-+N:%^PenV2VV%^RmVow SG-ABE ;
-+N:%^PenV2VV PL-NOM ;
-+N:%^PenV2VV%^RmVow PL-OBL ;
-
-
-!! PENULTIMATE O:0
-LEXICON N_MOOTTOR !!= * @CODE@ moottor:moottor
-! gradation: no
-! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
-! Stem vowel: e
-!! ** Yaml: __N-moottor__
-+N: ATTESTED-NOUN-STEM ;	! moottor
-+N: SG-NOM ; 	       		! moottor
-+N: SG-ABE/ACC/GEN-PL-NOM ;	! moottor
-+N:%^RmVow%>a SG-ILL ;	  	! moottra
-+N:%^RmVow%>e SG-LOC ;		! moottrest
-+N:%^RmVow SG-COM_IN ;		! moottrin
-+N:%^RmVow%>e ESS ;  		! moottren
-+N:%^RmVow%>e PAR ;		! moottred
-+N:%^RmVow PL-OBL ;		! moottri
-
-
-
-LEXICON N_PEʹRRJEM !!= * @CODE@ peʹrrjem:peʹrrjem
-+N: NMN_PEʹRRJEM ;
-LEXICON NMN_PEʹRRJEM
-!
-!! ** Yaml: __N-perrjem__
- ATTESTED-NOUN-STEM ;   ! peʹrrjem
- SG-NOM ;               ! peʹrrjem
-: SG-GEN ;              ! peʹrrjem
-  SG-ACC ;              ! peʹrrjem
-:ma SG-ILL ;            ! peʹrrjemma
-:me SG-LOC ;            ! peʹrrjemmest
-:m SG-COM_IN ;          ! peʹrrjemmin
-:%>me ESS ;             ! peʹrrjemmen
-:%^PAL%>me ESS ;        ! peʹrrjeʹmmen
-:%>me PAR ;             ! peʹrrjemmed
-:%^PAL%>me PAR ;        ! peʹrrjeʹmmed
-: SG-ABE ;      ! peʹrrjemtaa/peʹrrjemtää
-: PL-NOM ;      ! peʹrrjem
-:m PL-OBL ;             ! peʹrrjemmi
-
-LEXICON N_ČUEʹCCEM !!= * @CODE@ čueʹccem:čueʹccem
-+N: NMN_ČUEʹCCEM ;
-LEXICON NMN_ČUEʹCCEM
-! 
-!! ** Yaml: __N-perrjem__
- ATTESTED-NOUN-STEM ;	! čueʹccem
- SG-NOM ;	    	! čueʹccem
-: SG-ABE/ACC/GEN-PL-NOM ;	! čueʹccem
-:%^PenPALNo%^RmVowa SG-ILL ;	! čueccma
-:%^RmVowe SG-LOC ;	! čueʹccmest
-:%^RmVow SG-COM_IN ;	! čueʹccmin
-:%^RmVowe ESS ;		! čueʹccmen
-:%^RmVowe PAR ;    	! čueʹccmed
-:%^RmVow PL-OBL ;    	! čueʹccmi
-
-!! VOWEL-FINAL STEMS
-LEXICON N_BIOLOGIA
-+N: NMN_BIOLOGIA ;
-LEXICON NMN_BIOLOGIA
-! biologia:biologia
-!! ** Yaml: __N-biologia__
- ATTESTED-NOUN-STEM ;
- SG-NOM ;
- SG-GEN ;
- SG-ACC ;
-:aʹje SG-ILL ;
- SG-LOC ;
- SG-COM_IN ;
- ESS ; ! ess and prt without
- PAR ;
- SG-ABE ;
- PL-NOM ;
- PL-OBL ;
-
-LEXICON N_RADIO
-+N: NMN_RADIO ;
-LEXICON NMN_RADIO
-! radio:radio
-!! ** Yaml: __N-radio__
- ATTESTED-NOUN-STEM ;
- SG-NOM ;
- SG-GEN ;
- SG-ACC ;
-:oʹje SG-ILL ;
-+Use/NG: SG-ILL ;
- SG-LOC ;
- SG-COM_IN ;
- ESS ; ! ess and prt without
- PAR ;
- SG-ABE ;
- PL-NOM ;
- PL-OBL ;
-
-
-
-LEXICON N_NALLŠEM
-!!= * @CODE@ = stemtype 
-! gradation: yes
-!! ** Yaml: __N-nallshem__
-+N: ATTESTED-NOUN-STEM ;
-+N: SG-NOM ;
-+N:%^PAL%>e ESS ; 
-+N:%^PAL%>e PAR ;
-!! nallšem+N+Sg+Gen: kaađneeʹǩǩ
-:%^V2VV%^PAL SG-GEN ;
-:%^V2VV%^PAL SG-ACC ;
-:m%^PALNo%>a SG-ILL ;
-:%^V2VV%^PAL%>e SG-LOC ;
-:%^V2VV%^PAL%> SG-COM_IN ;
-:%^V2VV%^PAL SG-ABE ;
-:%^V2VV%^PAL PL-NOM ;
-:%^V2VV%^PAL PL-OBL ;
-
-
-
-
-LEXICON N_OBL
-+N+Sg+Gen: K ;
-+N+Sg+Acc: K ;
-+N+Sg+Ill:%>a K ;
-+N+Sg+Loc:%>est K ;
-+N+Sg+Com:%>in K ;
-+N+Ess:%>en K ; ! ess and prt without
-+N+Par:%>ed K ;
-+N+Sg+Abe:%>tää K ;
-
-+N+Pl+Nom: K ;
-+N+Pl+Gen:%>i K ;
-+N+Pl+Acc:%>id K ;
-+N+Pl+Ill:%>id K ;
-+N+Pl+Loc:%>in K ;
-+N+Pl+Com:%>ivuiʹm K ;
-+N+Pl+Abe:%>itää K ;
-
-LEXICON N_ČÂÂʹLMTEʹM
-!! 292-295
-!! ** Yaml: __A-chaalmtem__
-!!NumContLex="650"
-+N: ATTESTED-NOUN-STEM ;
-+N: SG-NOM ;
-+N:%^V2VV SG-GEN ;
-+N:%^V2VV SG-ACC ;
-!+N:%{XC%}%^CLong%>a SG-ILL ;
-+N:%^PALNo%^C2CC%>a SG-ILL ;
-+N:%^V2VV%>e SG-LOC ;
-+N:%^V2VV SG-COM_IN ;
-+N:%^V2VV%>e ESS ;
-+N:%^V2VV%>e PAR ;
-+N:%^V2VV SG-ABE ;
-+N:%^V2VV PL-NOM ;
-+N:%^V2VV PL-GEN ;
-+N:%^V2VV PL-ACC ;
-+N:%^V2VV PL-ILL ;
-+N:%^V2VV PL-LOC ;
-+N:%^V2VV PL-COM ;
-+N:%^V2VV PL-ABE ;
-
-LEXICON N_PÅÅSSAI
-!! pååssai:pååss
-!! also a derivattion from the verb pååssad
-+N+Sg+Nom:ai K ;
-+N+Sg+Gen:%^KK2GG%>ai K ;
-+N+Sg+Gen:ai K ;
-+N+Sg+Acc:%^KK2GG%>ai K ;
-+N+Sg+Acc:ai K ;
-+N+Sg+Ill:%>ja K ;
-+N+Sg+Loc:%>jest K ;
-+N+Sg+Com:%^KK2GG%>ain K ;
-+N+Sg+Com:ain K ;
-+N+Ess:%>jen K ;
-+N+Par:%>jed K ;
-+N+Sg+Abe:%^KK2GG%>aitää K ;
-+N+Sg+Abe:aitää K ;
-+N+Pl+Nom:%^KK2GG%>ai K ;
-+N+Pl+Nom:ai K ;
-+N:%^KK2GG%>ji PL-OBL ;
-+N:ji PL-OBL ;
-
-
-
-
-!! !!Stem types from the grammar
-
-!! ''These are still not fixed.''
-
-
-LEXICON N_TUEJJEEI !!= * @CODE@ tueʹjjeei:tueʹjjee
-+N: NMN_TUEJJEEI ;
-LEXICON NMN_TUEJJEEI !!= * @CODE@ tueʹjjeei:tueʹjjee
-!! tueʹjjeei:tueʹjjee
-!! * Yaml: __N-tuejjeei__
-:i ATTESTED-NOUN-STEM ;
-:i SG-NOM ;
-:i SG-ABE/ACC/GEN-PL-NOM ;
-:%>ʹja SG-ILL ;
-:%>ʹje SG-LOC ;
-:%>ʹja SG-COM_IN ;
-:%>ʹje ESS ;
-:%>ʹje PAR ;
-:%>ʹj PL-OBL ;
-
-
-LEXICON N_LOOKKMÕŠ !!= * @CODE@ lookkmõš:lookkmõš
-+N: NMN_LOOKKMÕŠ ;
-LEXICON NMN_LOOKKMÕŠ !!= * @CODE@ lookkmõš:lookkmõš
-: ATTESTED-NOUN-STEM ;
-: SG-NOM ;
-:š%>â ESS ;
-:š%>â PAR ;
-:š NMN_OBL-ČÂUSTÕK ;
-
-LEXICON N_MÄTTJUMUŠ
-+N:%^PenC2CC NMN_MAINSTUMMUŠ ;
-+N+Err/Orth: ATTESTED-NOUN-STEM ;
-+N+Err/Orth: SG-NOM ;
-+N+Err/Orth:š%>â ESS ;
-+N+Err/Orth:š%>â PAR ;
-+N+Err/Orth:š NMN_OBL-ČÂUSTÕK ;
-
-LEXICON N_MAINSTUMMUŠ
-+N+Err/Orth:%^PenCC2C ATTESTED-NOUN-STEM ;	! mainstumuš
-+N+Err/Orth:%^PenCC2C SG-NOM ;
-+N+Err/Orth:š%^PenCC2C%>â ESS ;
-+N+Err/Orth:š%^PenCC2C%>â PAR ;
-+N+Err/Orth:š%^PenCC2C NMN_OBL-ČÂUSTÕK ;
-
-+N: NMN_MAINSTUMMUŠ ;
-LEXICON NMN_MAINSTUMMUŠ
- ATTESTED-NOUN-STEM ;
- SG-NOM ;
-:%^VC SG-ACC ;
-:%^VC SG-GEN ;
-:%^RmVow%>a SG-ILL ;
-:%^RmVow%>e SG-LOC ;
-:%^RmVow SG-COM_IN ;
-:%^RmVow%>e ESS ;
-:%^RmVow%>e PAR ;
-:%^VC SG-ABE ;
-:%^VC PL-NOM ;
-:%^RmVow PL-OBL ;
-
-
-LEXICON N_ČÅRRÕS
-+N: NMN_ČÅRRÕS ;
-+N: ATTESTED-NOUN-STEM ;	! čårrõs
-
-LEXICON NMN_ČÅRRÕS
-: SG-NOM ;
-:s%>â ESS ;
-:s%>â PAR ;
-:s NMN_OBL-ČÂUSTÕK ;
-
+!! Class 12 Feist 163
 
 
 !! !Noun phrase heads
