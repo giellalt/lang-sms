@@ -476,6 +476,54 @@ HatÂ-STEM-PX-RETAIN ;
  HatÂ-STEM-PX-STENGTHEN ;
 
 
+LEXICON N_SIJDD !!= * @CODE@ sijdd:sijdd
++N: NMN_SIJDD ;
+LEXICON NMN_SIJDD
+! foot: 2syll
+! diphthong: no
+! vowel_shift: no
+! consonant: clusterUI
+! gradation: yes2
+! weak_grade: short
+! strong_grade:	long
+! Sg.Loc: âst
+! Sg.Ill: palatalization-AND-e
+!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+!! !!1.1 Sg.Loc in -âst (no vowel shift, all raised)
+!! !!  â-stems (Sg.Loc, Ess, Par).
+!! !!1.1.1 Sg.Ill vowel	-e
+!! !!1.1.1.1 Has Palatalization
+!! !!1.1.1.1[1] (Palatalization pattern)
+!! !!  Palatalized: Sg.Ill
+!! !!  Not Palatalized: ELSE
+!! !!    Sg.Ill in palatalization and -e
+!! !!1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+!! !!1.1.1.1[1].1.1 Has Orthographic Gradation
+!! !!1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
+!! !!  Strong grade: Sg.Nom, Ess, Par
+!! !!  Strong grade: Sg.Ill
+!! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+!! !!FORMS
+!! ** Yaml: __N-sijdd__
+!! 
+ ATTESTED-NOUN-STEM ;				!!= * @CODE@ sijdd
+: SG-NOM ;	    				!!= * @CODE@ sijdd
+:%^XYY2VY SG-ABE/ACC/GEN-PL-NOM ;		!!= * @CODE@ siid
+:%^PAL%>e SG-ILL ;		      		!!= * @CODE@ siʹjdde
+:%^XYY2VY%>â SG-LOC ;			!!= * @CODE@ siidâst
+:%^XYY2VY SG-COM_IN/PL-OBL ;			!!= * @CODE@ siidin
+:%>â ESS/PAR ; 		  			!!= * @CODE@ sijddân
+
++Der/Dim+N:%^V2VV%^XYY2XY N_MUÕRÂŽ-WITHOUT-PAL ;  !!= * @CODE@ siid-
++Der/Dim+N:%^V2VV%^PAL%^XYY2XY N_MUÕRÂŽ-WITH-PAL ;  !!= * @CODE@ siiʹd-
+
+HatÂ-STEM-PX-RETAIN ;
+:%^XYY2VY HatÂ-STEM-PX-WEAKEN ;
+:%^XYY2VY HatÂ-STEM-PX-WEAKEN_NG ;
+:%^XYY2XY HatÂ-STEM-PX-ALLEGRO ;
+ HatÂ-STEM-PX-STENGTHEN ;
+
+
 LEXICON N_UHSS !!= * @CODE@ uhss:uhss
 +N: NMN_UHSS ;
 LEXICON NMN_UHSS
@@ -4517,9 +4565,9 @@ LEXICON NMN_VUÕIVÂS !!= *  @CODE@ vuõivâs:vuõivvâz
 :%^RmVow%^DeVC%>e PAR ;
 :%^RmVow%^DeVC VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
 
-LEXICON N_TUÕDDÂR !!= *  @CODE@ tuõddâr:tuõdˈdâr
-+N:  NMN_TUÕDDÂR ;
-LEXICON NMN_TUÕDDÂR !!= *  @CODE@ tuõddâr:tuõdˈdâr
+LEXICON N_TUÕDˈDÂR !!= *  @CODE@ tuõddâr:tuõdˈdâr
++N:  NMN_TUÕDˈDÂR ;
+LEXICON NMN_TUÕDˈDÂR !!= *  @CODE@ tuõddâr:tuõdˈdâr
 ! orth_gradation: no
 ! ped_gradation: yes
 ! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
