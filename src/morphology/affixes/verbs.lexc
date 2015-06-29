@@ -1362,7 +1362,7 @@ LEXICON V_LÄULLAD !!= * @CODE@ läullad:läull
 !! Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 
 !! Weak-StableVowel-No-Palatalization
-+V:%^V2VV%^CC2C%> VSUF-I-POTKOND_AD ; !!= * @CODE@  (6) +V+Pot+Sg3: lääulež
++V:%^V2VV%^XYY2XY%> VSUF-I-POTKOND_AD ; !!= * @CODE@  (6) +V+Pot+Sg3: lääulež
 !+V:%^V2VV%^VOWRaise%^PAL%^XYY2XY%> VSUF-POTENTIAL_ED ; = * @CODE@  (6) +V+Pot+Sg3: lääulež
 !! Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
 
@@ -1826,17 +1826,45 @@ LEXICON V_PUʹHTTED !!= * @CODE@ puʹhtted:puhtt
 ! (8) +V+Imprt+ConNegII: jurddu
 !    Pass.PrfPrc
 ! puʹhtted:puhtt
-+V:%^PAL VSUF-INF_ED ; !1
-+V:%^VOWLower VSUF-IND-PRS-SG3_ED ; !2 pohtt
-+V+Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ; !3 poʹhtte
-+V:%^PAL VSUF-IND-PRT-PL3_ED ; !4 puʹhtte
-+V:%^V2VV%^PAL%^XYY2VY VSUF-POTENTIAL_ED ; !5 puuʹt-
-+V:%^V2VV%^VOWLower%^XYY2VY%> VSUF-CONDITIONAL_ED ; !5 ?2 ?7
-+V:%^V2VV%^VOWLower%^XYY2VY VSUF-IND-PRS-CONNEG_ED ;
-+V+Imprt+Sg3:%^V2VV%^XYY2VY%>as K ; !7 pooutas
-+V: VSUF-IMPRT-CONNEGII_ED ; !8
+!! Strong-HighVowel-Palatalization
++V:%^PAL VSUF-INF_ED ; !!= * @CODE@ (1) +V+Inf: puʹhtted
+!! V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
+!! Actio, ActEss, PrsPrc
 
-+V+Der/škueʹtted:%^PAL%^XYY2VY»škuätt V_PUEʹTTED ;
+!! Strong-LoweredVowel-No-palatalization
++V:%^VOWLower VSUF-IND-PRS-SG3_ED ; !!= * @CODE@ (2) +V+Ind+Prs+Sg3: pohtt
+!! +V+Ind+Prs+Sg3, Ind.Prt.ConNeg, PrfPrc
+
+!! ExtraStrong-LoweredVowel-Palatalization
++V+Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ; !!= * @CODE@ (3) +V+Ind+Prs+Pl3: poʹhtte
+!! +V+Ind+Prs+Pl3
+
+!! ExtraStrong-RaisedVowel-Palatalization
++V:%^PAL VSUF-IND-PRT-PL3_ED ; !!= * @CODE@ (4) +V+Ind+Prt+Pl3: puʹhtte
+!! +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
+
+!! Weak-StableV-Palatalization
++V:%^V2VV%^VOWLower%^XYY2VY VSUF-IND-PRS-CONNEG_ED ; !!= * @CODE@ (5) 
+!! Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
+
+!! Weak-RaisedVowel-Palatalization
++V:%^V2VV%^PAL%^XYY2VY VSUF-POTENTIAL_ED ; !!= * @CODE@ (6) +V+Pot+Sg3: puuʹtež
+!! Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
+
+!! Weak-LoweredVowel-No-palatalization
++V:%^V2VV%^VOWLower%^XYY2VY%> VSUF-CONDITIONAL_ED ; !!= * @CODE@ (7) +V+Imprt+Sg3: pooutas
+!! Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
+
+!! ExtraStrong-RaisedVowel-No-palatalization
++V: VSUF-IMPRT-CONNEGII_ED ; !!= * @CODE@ (8) +V+Imprt+ConNegII: puhttu
+!! Imprt+ConNeg, Pass+PrfPrc
+
+!! ExtraStrong-LoweredVowel-No-palatalization
++V:%^VOWLower VSUF-IMPRT-PL3_ED ; !!= * @CODE@ (9) Ind.Imprt.Pl3: pohttaz ??
+!! Imprt+Pl3
+
+!! (10) Allegro for incoative: puʹht»
++V+Der/škueʹtted:%^PAL%^XYY2XY»škuätt V_PUEʹTTED ;
 
 LEXICON V_UʹVDDED !!= * @CODE@ uʹvdded:uvdd
 ! inf: ed
@@ -2936,40 +2964,41 @@ LEXICON V_VÕʹLLʼJED !!= * @CODE@ võʹll’jed:võʹll
 ! võʹllʼjed:võʹll
 ! +Ind+Prs+ConNeg: võʹlle
 ! võʹll’jed:võʹll
-+V+Imprt+Sg2:%^IMPSG2	K ;
-+V+Imprt+ConNeg:%>juku K ; ! võʹllʼjuku
++V+Imprt+Sg2:e	K ;	!!= * @CODE@ võʹlle
++V+Imprt+ConNeg:e K ; 	!!= * @CODE@ võʹlle
++V+Imprt+ConNegII:%>juku K ; !!= * @CODE@ võʹllʼjuku
 
 !+V+Ind+Prs:%{A1%}i		KAMRDED-PRS ;
-+V+Ind+Prs+Sg1:%>jam              FINAL1  ; ! võʹllʼjam
-+V+Ind+Prs+Sg2:%>jak              FINAL1  ; ! võʹllʼjak
-+V+Ind+Prs+Sg3:ai FINAL1        ; ! võʹllai
-+V+Ind+Prs+Pl1:%>jep      FINAL1  ;         ! võʹllʼjep
-+V+Ind+Prs+Pl2:%>jeʹped           FINAL1  ;  ! võʹllʼjeʹped
-+V+Ind+Prs+Pl3:%>je               FINAL1  ;  ! võʹllʼje
-+V+Ind+Prs+Sg4:%>jet FINAL1 ; !              !   võʹllʼjet
++V+Ind+Prs+Sg1:%>jam              K  ; ! võʹllʼjam
++V+Ind+Prs+Sg2:%>jak              K  ; ! võʹllʼjak
++V+Ind+Prs+Sg3:ai K        ; ! võʹllai
++V+Ind+Prs+Pl1:%>jep      K  ;         ! võʹllʼjep
++V+Ind+Prs+Pl2:%>jeʹped           K  ;  ! võʹllʼjeʹped
++V+Ind+Prs+Pl3:%>je               K  ;  ! võʹllʼje
++V+Ind+Prs+Sg4:%>jet K ; !              !   võʹllʼjet
 +V+Ind+Prs+ConNeg:e K ; ! võʹlle
 
 
 !+V+Ind+Prt:%{A1%}i		K1AMRDED-PRT ;
 
-+V+Ind+Prt+Sg1:%>jem             FINAL1  ; ! võʹllʼjem
-+V+Ind+Prt+Sg2:%>jiǩ             FINAL1  ; ! võʹllʼjiǩ
-+V+Ind+Prt+Sg3:%>ji              FINAL1  ; !WG ! võʹllʼji
-+V+Ind+Prt+Pl1:%>jim             FINAL1  ; !WG ! võʹllʼjim
-+V+Ind+Prt+Pl1:%>jin             FINAL1  ; !WG ! võʹllʼjin
-+V+Ind+Prt+Pl1:%>jiim             FINAL1  ; !WG ! võʹllʼjiim
-+V+Ind+Prt+Pl1:%>jiin             FINAL1  ; !WG ! võʹllʼjiin
-+V+Ind+Prt+Pl2:%>jid             FINAL1  ; !WG ! võʹllʼjid
-+V+Ind+Prt+Pl2:%>jiid             FINAL1  ; !WG ! võʹllʼjiid
-+V+Ind+Prt+Pl3:%>je              FINAL1  ; ! võʹllʼje
-+V+Ind+Prt+Sg4:%>ješ FINAL1 ; ! võʹllʼješ
++V+Ind+Prt+Sg1:%>jem             K  ; ! võʹllʼjem
++V+Ind+Prt+Sg2:%>jiǩ             K  ; ! võʹllʼjiǩ
++V+Ind+Prt+Sg3:%>ji              K  ; !WG ! võʹllʼji
++V+Ind+Prt+Pl1:%>jim             K  ; !WG ! võʹllʼjim
++V+Ind+Prt+Pl1:%>jin             K  ; !WG ! võʹllʼjin
++V+Ind+Prt+Pl1:%>jiim             K  ; !WG ! võʹllʼjiim
++V+Ind+Prt+Pl1:%>jiin             K  ; !WG ! võʹllʼjiin
++V+Ind+Prt+Pl2:%>jid             K  ; !WG ! võʹllʼjid
++V+Ind+Prt+Pl2:%>jiid             K  ; !WG ! võʹllʼjiid
++V+Ind+Prt+Pl3:%>je              K  ; ! võʹllʼje
++V+Ind+Prt+Sg4:%>ješ K ; ! võʹllʼješ
 
 
 !+V+Imprt:%{A1%}i			KAMRDED-IMPRT ;
-+V+Imprt+Sg3:%>jââǥǥas          FINAL1  ;    ! võʹllʼjââǥǥas
-+V+Imprt+Pl1:%>jâkap            FINAL1  ;    ! võʹllʼjâkap
-+V+Imprt+Pl2:%>jeʹǩed           FINAL1  ;    ! võʹllʼjeʹǩed
-+V+Imprt+Pl3:%>jâkaz            FINAL1  ;    ! võʹllʼjâkaz
++V+Imprt+Sg3:%>jââǥǥas          K  ;    ! võʹllʼjââǥǥas
++V+Imprt+Pl1:%>jâkap            K  ;    ! võʹllʼjâkap
++V+Imprt+Pl2:%>jeʹǩed           K  ;    ! võʹllʼjeʹǩed
++V+Imprt+Pl3:%>jâkaz            K  ;    ! võʹllʼjâkaz
 
 +V+Imprt+ConNeg:%>juku K ;    ! võʹllʼjuku
 +V:%>jeʹ		VSUF-I-POTKOND ; !WG
@@ -3377,23 +3406,23 @@ LEXICON LEED-PRT
 
 ! teeʹmeed
 LEXICON TEEMEED-IMPRT
- +Sg3:%>ââǥǥas		FINAL1	; !WG
- +Pl1:%>âkap			FINAL1	;
- +Pl2:%>eʹǩed		FINAL1	;
- +Pl3:%>âkaz		FINAL1	;
+ +Sg3:%>ââǥǥas		K	; !WG
+ +Pl1:%>âkap			K	;
+ +Pl2:%>eʹǩed		K	;
+ +Pl3:%>âkaz		K	;
 
 LEXICON KAMRDED-IMPRT
- +Sg3:%>ââǥǥas          FINAL1  ; !WG
- +Pl1:%>âkap                    FINAL1  ;
- +Pl2:%>eʹǩed           FINAL1  ;
- +Pl3:%>âkaz            FINAL1  ;
+ +Sg3:%>ââǥǥas          K  ; !WG
+ +Pl1:%>âkap                    K  ;
+ +Pl2:%>eʹǩed           K  ;
+ +Pl3:%>âkaz            K  ;
 
 LEXICON LEED-IMPRT
- +Sg3:%>eäǥǥas          FINAL1  ; !WG
- +Pl1:%>eäkˈkap                    FINAL1  ;
- +Pl2:%>eäkˈku           FINAL1  ;
- +Pl2:%>eäkˈkveʹted           FINAL1  ;
- +Pl3:%>eäkˈkaz            FINAL1  ;
+ +Sg3:%>eäǥǥas          K  ; !WG
+ +Pl1:%>eäkˈkap                    K  ;
+ +Pl2:%>eäkˈku           K  ;
+ +Pl2:%>eäkˈkveʹted           K  ;
+ +Pl3:%>eäkˈkaz            K  ;
 
 
 
@@ -3402,98 +3431,98 @@ LEXICON LEED-IMPRT
 ! not including +Pot+Sg3
 ! - - - - - - - - - - - - - -
 LEXICON VSUF-INF_ÂD
-+Inf:%>âd FINAL1 ;
-+Ind+Prs+Pl1:%>âp FINAL1 ;
-+Ind+Prs+Pl2:%>veʹted FINAL1 ;
-+Ind+Prt+ConNeg:%>âm FINAL1 ;
-+Imprt+Pl1:%>âp FINAL1 ;
-+Imprt+Pl2:%>âd FINAL1 ;
-+ActEss:%>men FINAL1 ;
-+Actio:%>âm FINAL1 ;
++Inf:%>âd K ;
++Ind+Prs+Pl1:%>âp K ;
++Ind+Prs+Pl2:%>veʹted K ;
++Ind+Prt+ConNeg:%>âm K ;
++Imprt+Pl1:%>âp K ;
++Imprt+Pl2:%>âd K ;
++ActEss:%>men K ;
++Actio:%>âm K ;
 +Actio:%>âm N_ǨIÕRÂČ ; ! mõõnnâm
-+PrsPrc:%>i FINAL1 ;
-+PrfPrc:%>âm FINAL1 ;
++PrsPrc:%>i K ;
++PrfPrc:%>âm K ;
 LEXICON VSUF-IND-PRS-SG3_ÂD
-+Ind+Prs+Sg3: FINAL1 ;
-+Imprt+Pl3:%>az FINAL1 ;
++Ind+Prs+Sg3: K ;
++Imprt+Pl3:%>az K ;
 
 
 LEXICON VSUF-INF_AD
-+Inf:%>ad FINAL1 ;
-+Ind+Prs+Pl1:%>ap FINAL1 ;
-+Ind+Prs+Pl2:%>veʹted FINAL1 ;
-+Ind+Prt+ConNeg:%>am FINAL1 ;
-+Imprt+Pl1:%>ap FINAL1 ;
-+Imprt+Pl2:%>ad FINAL1 ;
-+ActEss:%>men FINAL1 ;
-+Actio:%>am FINAL1 ;
++Inf:%>ad K ;
++Ind+Prs+Pl1:%>ap K ;
++Ind+Prs+Pl2:%>veʹted K ;
++Ind+Prt+ConNeg:%>am K ;
++Imprt+Pl1:%>ap K ;
++Imprt+Pl2:%>ad K ;
++ActEss:%>men K ;
++Actio:%>am K ;
 +Actio:%>am N_SLOOHMAN ;
  VSUF-PRSPRC_AD ;
-+PrfPrc:%>am FINAL1 ;
++PrfPrc:%>am K ;
 +Der/mõš:»mõš N_LOOKKMÕŠ ;
 
 LEXICON VSUF-IND-PRS-SG3_AD
-+Ind+Prs+Sg3: FINAL1 ;
++Ind+Prs+Sg3: K ;
 
-!+Imprt+Pl3:%>az FINAL1 ; VSUF-IMPRT-PL3_AD
+!+Imprt+Pl3:%>az K ; VSUF-IMPRT-PL3_AD
 
 
 LEXICON VSUF-INF_ED
-+Inf:%>ed FINAL1 ;
-+Ind+Prs+Pl1:%>ep FINAL1 ;
-+Ind+Prs+Pl2:%>veʹted FINAL1 ;
-+Imprt+Pl1:%>ep FINAL1 ;
-+Imprt+Pl2:%>ed FINAL1 ;
-+ActEss:%>men FINAL1 ;
-+Actio:%>em FINAL1 ;
++Inf:%>ed K ;
++Ind+Prs+Pl1:%>ep K ;
++Ind+Prs+Pl2:%>veʹted K ;
++Imprt+Pl1:%>ep K ;
++Imprt+Pl2:%>ed K ;
++ActEss:%>men K ;
++Actio:%>em K ;
 +Actio:%>em  N_MINIʹSTTER ; ! Should there be a derivation here 2015-05-06
  VSUF-PRSPRC_ED ;
 
 
 
 LEXICON VSUF-IND-PRS-SG3_ED
-+Ind+Prs+Sg3: FINAL1 ;
-+Ind+Prt+ConNeg:%>am FINAL1 ;
-+PrfPrc:%>am FINAL1 ; !HERE or ONE LEXICON UP
++Ind+Prs+Sg3: K ;
++Ind+Prt+ConNeg:%>am K ;
++PrfPrc:%>am K ; !HERE or ONE LEXICON UP
 +Der/mõš:»mõš N_LOOKKMÕŠ ;
 
 LEXICON VSUF-IMPRT-PL3_ED !!= * @CODE@ puätˈtaz
-+Imprt+Pl3:%>az FINAL1 ;
++Imprt+Pl3:%>az K ;
 
 !
 LEXICON VSUF-IND-PRT-PL3_ÂD
-+Ind+Prt+Sg1:%>em FINAL1 ;
-+Ind+Prt+Sg2:%>iǩ FINAL1 ;
-+Ind+Prt+Pl3:%>e FINAL1 ;
-+Ind+Prt+Sg4:%>eš FINAL1 ;
++Ind+Prt+Sg1:%>em K ;
++Ind+Prt+Sg2:%>iǩ K ;
++Ind+Prt+Pl3:%>e K ;
++Ind+Prt+Sg4:%>eš K ;
 LEXICON VSUF-IND-PRT-PL3_AD
-+Ind+Prt+Sg1:%>um FINAL1 ;
-+Ind+Prt+Sg2:%>uk FINAL1 ;
-+Ind+Prt+Pl3:%>u FINAL1 ;
-+Ind+Prt+Sg4:%>uš FINAL1 ;
++Ind+Prt+Sg1:%>um K ;
++Ind+Prt+Sg2:%>uk K ;
++Ind+Prt+Pl3:%>u K ;
++Ind+Prt+Sg4:%>uš K ;
 LEXICON VSUF-IND-PRT-PL3_ED
-+Ind+Prt+Sg1:%>em FINAL1 ;
-+Ind+Prt+Sg2:%>iǩ FINAL1 ;
-+Ind+Prt+Pl3:%>e FINAL1 ;
-+Ind+Prt+Sg4:%>eš FINAL1 ;
++Ind+Prt+Sg1:%>em K ;
++Ind+Prt+Sg2:%>iǩ K ;
++Ind+Prt+Pl3:%>e K ;
++Ind+Prt+Sg4:%>eš K ;
 !
 LEXICON VSUF-IND-PRT-SG3-PL1-PL2_
-+Ind+Prt+Sg3:%>i FINAL1 ;
-+Ind+Prt+Pl1:%>im FINAL1 ;
-+Ind+Prt+Pl1:%>in FINAL1 ;
-+Ind+Prt+Pl2:%>id FINAL1 ;
++Ind+Prt+Sg3:%>i K ;
++Ind+Prt+Pl1:%>im K ;
++Ind+Prt+Pl1:%>in K ;
++Ind+Prt+Pl2:%>id K ;
 
 !
 LEXICON VSUF-I-POTKOND_ÂD
  VSUF-I-POTKOND ;
  VSUF-IND-PRT-SG3-PL1-PL2_ ;
-+Ind+Prs+Sg1:%>am FINAL1 ;
-+Ind+Prs+Sg2:%>ak FINAL1 ;
-+Ind+Prs+Sg4:%>ât FINAL1 ;
-+Ind+Prs+ConNeg: FINAL1 ;
++Ind+Prs+Sg1:%>am K ;
++Ind+Prs+Sg2:%>ak K ;
++Ind+Prs+Sg4:%>ât K ;
++Ind+Prs+ConNeg: K ;
 
-+Imprt+Sg2: FINAL1 ;
-+Imprt+ConNeg: FINAL1 ;
++Imprt+Sg2: K ;
++Imprt+ConNeg: K ;
  VABESS ;
  GER_ ;
 
