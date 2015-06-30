@@ -9,6 +9,32 @@
 LEXICON N_ !!= * @CODE@ FOR (STILL) UNCLASSIFIED INCOMING NOUNS.
 +N+WORK: #;
 
+!! IRREGULAR NOUN nijdd
+LEXICON N_NIJDD !!= * @CODE@ nijdd:ni
++N: NMN_NIJDD ;
+LEXICON	NMN_NIJDD	!!= * @CODE@ nijdd:ni
+!! ** Yaml: __N-nijdd__
+:jdd ATTESTED-NOUN-STEM ;		!!= * @CODE@ nijdd
+:jdd SG-NOM ;			!!= * @CODE@ nijdd
+:jdd%>â ESS/PAR ; 	  		!!= * @CODE@ nijddân, nijddâd
+!! strong_geminate, short_vowel, palatalization
+:jdd%^PAL%>e SG-ILL ;		!!= * @CODE@ niõʹđ
+!! strong_geminate, long_vowel
+:õđ SG-ABE/ACC/GEN-PL-NOM ;	!!= * @CODE@ niõđ
+:õđ%>â SG-LOC ;		!!= * @CODE@ niõđâst
+:õđ SG-COM_IN/PL-OBL ;	!!= * @CODE@ niõđ, niõđid, niõđid, niõđin, niõđivuiʹm, niõđitaa
+
++Der/Dim+N:õđ N_MUÕRÂŽ-WITHOUT-PAL ;  !!= * @CODE@ niõđ-
++Der/Dim+N:õđ%^PAL N_MUÕRÂŽ-WITH-PAL ;  !!= * @CODE@ niõʹđ-
+
+:jdd HatÂ-STEM-PX-RETAIN ;
+:õđ HatÂ-STEM-PX-WEAKEN ;
+:õđ HatÂ-STEM-PX-WEAKEN_NG ;
+:õđ HatÂ-STEM-PX-ALLEGRO ;
+:õđ HatÂ-STEM-PX-STENGTHEN ;
+
+
+
 !! CLASS 1 HIGH VOWEL, NO PALATALIZATION NOMINALS
 LEXICON N_PAPP !!= * @CODE@ papp:papp
 !! analogy in PESS
@@ -3077,7 +3103,7 @@ LEXICON NMN_ÂʹLǦǦ
 :%^PAL%>e ESS/PAR ;	       			!!= * @CODE@ (6) Ess: âʹlǧǧen
 +Der/Dim:%^V2VV%^XYY2XY%> N_KUÂLAŽ ;		!!= * @CODE@ (9) Der/Dim.N.Sg.Nom: ââlǥaž
 
-LEXICON N_PÄIʹǨǨ !!= * @CODE@ päiʹǩǩ:päiʹǩǩ
+LEXICON N_PÄIʹǨǨ !!= * @CODE@ päiʹǩǩ:päikk
 ! vowel: monophthong
 +N: NMN_PÄIʹǨǨ ;
 LEXICON NMN_PÄIʹǨǨ
@@ -3110,16 +3136,15 @@ LEXICON NMN_PÄIʹǨǨ
 !! NumContLex="1.113"
 !! Is for nouns with ''-est'' Loc, Extra long vowel
 !! ** Yaml: __N-paeikk__
- ATTESTED-NOUN-STEM ;
-: SG-NOM ;
-:%^V2VV%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;
-:%^PALNo%>a SG-ILL ;
-:%^V2VV%^XYY2XY%>e SG-LOC ;
-:%^V2VV%^VOWRaise%^XYY2XY SG-COM_IN ;
-:%>e ESS ; ! ess and prt without
-:%>e PAR ;
-:%^V2VV%^VOWRaise%^XYY2XY%> PL-OBL ;
-+Der/Dim:%^V2VV%^PALNo%^XYY2XY%> N_KUÂLAŽ ;
+:%^PAL ATTESTED-NOUN-STEM ;
+:%^PAL SG-NOM ;
+:%^V2VV%^PAL%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;
+:%>a SG-ILL ;
+:%^V2VV%^PAL%^XYY2XY%>e SG-LOC ;
+:%^V2VV%^VOWRaise%^PAL%^XYY2XY SG-COM_IN ;
+:%^PAL%>e ESS/PAR ; ! ess and prt without
+:%^V2VV%^VOWRaise%^PAL%^XYY2XY%> PL-OBL ;
++Der/Dim:%^V2VV%^XYY2XY%> N_KUÂLAŽ ;
 
 LEXICON N_SÄIʹMM !!= * @CODE@ säiʹmm:säiʹmm
 ! vowel: monophthong
