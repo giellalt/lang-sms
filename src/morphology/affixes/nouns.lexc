@@ -5285,6 +5285,32 @@ LEXICON N_ČEEUʹRES
 +N:%^PenVV2V%^PenPALNo%^RmVow PL-OBL ;
 +N:%^PenVV2V%^PenPALNo%^RmVow VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
 
+LEXICON N_JEEʹEL !!= * @CODE@ jeeʹel:jeäkˈkel
++N: NMN_JEEʹEL ;
+LEXICON NMN_JEEʹEL !!= * @CODE@ jeeʹel:jeäkˈkel
+! gradation: yes
+!    Penultimate: Yes
+!      Extra strong grade: Else
+!      Weak grade: Sg.Nom, Sg.Gen, Sg.Acc, Pl.Nom
+!    Ultimate: None
+! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
+! Stem vowel: e
+! Ultimate stem consonant
+!! ** Yaml: __N-jeeel __ 
++Use/NG:%^PenPALE%^PenPAL%^PenKKK2GG ATTESTED-NOUN-STEM ; !!= * @CODE@ jeeʹjjel
++Use/NG:%^PenPALE%^PenPAL%^PenKKK2GG SG-NOM ;
+:%^PenVow2a SG-GEN ;
+:%^PenVow2a SG-ACC ;
+:%^RmVow%>a SG-ILL ;
+:%^RmVow%>e SG-LOC ;
+:%^RmVow SG-COM_IN ;
+:%^RmVow%>e ESS ; ! ess and prt without
+:%^RmVow%>e PAR ;
+:%^RmVow SG-ABE ;
+:%^PenVow2a PL-NOM ;
+:%^RmVow PL-OBL ;
+:%^RmVow VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
+
 !! !!s:z-stem type
 LEXICON N_ǨEʹRRES
 !! stemtype l-stem ǩeʹrres:ǩeʹrres
@@ -6267,6 +6293,25 @@ LEXICON N_MEÄLTTAI !!= * @CODE@ meälttai:meälttai
 +N+Use/NG: PL-NOM ;				! meälttai
 +N:%^RmVow%^I2J%>i PL-OBL ;			! meälttai
 +N+Use/NG:%^PenXYY2XY%^RmVow%^I2J%>i PL-OBL ;	! meältai
+
+LEXICON N_ŽẸẸVAI !!= * @CODE@ žeevai:žẹẹvai
++N: NMN_ŽẸẸVAI ;
+LEXICON NMN_ŽẸẸVAI !!= * @CODE@ žeevai:žẹẹvai
+! is for nouns with ''-est'' +Loc
+! gradation: no
+!! ** Yaml: __zheevai__
+!! NumContLex="
+: ATTESTED-NOUN-STEM ;		! žẹẹvai
+: SG-NOM ;	       			! žẹẹvai
+: SG-ABE/ACC/GEN ;	! 
+: SG-ACC ;	!
+:%^RmVow%^I2J%>a SG-ILL ;    		! žẹẹvja
++Use/NG:%^RmVow%^I2Zero%>ǥa SG-ILL ;    		! žẹẹvǥa
+:%^RmVow%^I2J%>e SG-LOC ;
+:%^RmVow%^I2J SG-COM_IN ;
+:%^RmVow%^I2J%>e ESS/PAR ; ! ess and prt without
+:%^PenXYY2XY PL-NOM ;				! žẹẹvai
+:%^RmVow%^I2J%>i PL-OBL ;			! žẹẹvai
 
 
 LEXICON N_JOOʹTTI !!= * @CODE@ jooʹtti:jooʹtti
