@@ -27,6 +27,7 @@ GT_LEXC_SRCS_L1_L2=\
 				stems/adpositions_newwords.lexc \
 				stems/adverbs_newwords.lexc \
 				stems/conjunctions_newwords.lexc \
+				stems/nouns.lexc \
 				stems/nouns_newwords.lexc \
 				stems/particles_newwords.lexc \
 				stems/pronouns_newwords.lexc \
@@ -48,7 +49,6 @@ GT_LEXC_SRCS_L1_L2=\
 #				stems/adverbs.lexc \
 #				stems/conjunctions.lexc \
 #				stems/interjections.lexc \
-#				stems/nouns.lexc \
 #				stems/numerals.lexc \
 #				stems/particles.lexc \
 #				stems/pronouns.lexc \
