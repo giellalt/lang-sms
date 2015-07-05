@@ -74,7 +74,9 @@ GT_LEXC_L2_SRCS=\
 # Set this to the names of all generated lexc files, if any
 GENERATED_LEXC_SRCS=\
 			 $(srcdir)/stems/A_sms2x.lexc     \
+			 $(srcdir)/stems/Adv_sms2x.lexc     \
 			 $(srcdir)/stems/CS_sms2x.lexc     \
+			 $(srcdir)/stems/Det_sms2x.lexc     \
 			 $(srcdir)/stems/Interj_sms2x.lexc     \
 			 $(srcdir)/stems/N_sms2x.lexc     \
 			 $(srcdir)/stems/Num_sms2x.lexc     \
@@ -85,7 +87,9 @@ GENERATED_LEXC_SRCS=\
 # Set this to the names of all source xml files, if any
 GT_XML_SRCS=\
 			 stems/A_sms2x.xml     \
+			 stems/Adv_sms2x.xml     \
 			 stems/CS_sms2x.xml     \
+			 stems/Det_sms2x.xml     \
 			 stems/Interj_sms2x.xml     \
 			 stems/N_sms2x.xml     \
 			 stems/Num_sms2x.xml     \
