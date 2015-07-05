@@ -451,7 +451,9 @@ LEXICON Root 	  !!= * @CODE@
 
 !! This generates from merged materials
  A_sms2x ;	      !!= * @CODE@ This generates from merged materials
+ Adv_sms2x ;	      !!= * @CODE@ adverbs
  CS_sms2x ;	      !!= * @CODE@ subjunctions
+ Det_sms2x ;	      !!= * @CODE@ determiners
  Interj_sms2x ;	      !!= * @CODE@ This generates from merged materials
  N_sms2x ;	      !!= * @CODE@ This generates from merged materials
  Num_sms2x ;	      !!= * @CODE@ This generates from merged materials
@@ -481,6 +483,7 @@ LEXICON WORK_
 !! Single form lacking POS designation
 +WORK: # ;
 
+
 LEXICON	INTERJ_
 !! Interjections
 +Interj: # ;
@@ -498,8 +501,18 @@ LEXICON CS_
 +CS: # ;
 
 LEXICON CS-TEMP_
-!! 'when'
+!! __when__
 +CS+Temp: # ;
+
+LEXICON DET_
+!! determiner
++Det+WORK: # ;
+
+LEXICON DET_JÂNNAM
+!! determiner
++Det+Attr: # ;
++Det+Der/MWN: N_JÂNNAM ;
+
 
 LEXICON NUM_
 +Num: # ;
