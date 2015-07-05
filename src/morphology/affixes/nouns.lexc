@@ -3211,26 +3211,26 @@ LEXICON NMN_PÄIʹǨǨ
 !! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 !! !!FORMS
 !! !!(1) Sg.Nom: päiʹǩǩ
-!! !!(2) Pl.Nom: pääiʼj
+!! !!(2) Pl.Nom: pääiʼǩ
 !! !!(3) Sg.Ill: päikka
-!! !!(4) Sg.Loc: pääiʹjest
-!! !!(5) Sg.Com: paaiʹjin
+!! !!(4) Sg.Loc: pääiʹǩest
+!! !!(5) Sg.Com: paaiʹǩin
 !! !!(6) Ess: päiʹǩǩen
 !! !!(7) Par: päiʹǩǩed
-!! !!(8) Pl.Acc: paaiʹjid
+!! !!(8) Pl.Acc: paaiʹǩid
 !! !!(9) Der/Dim.N.Sg.Nom: pääiǥaž
 !! NumContLex="1.113"
 !! Is for nouns with ''-est'' Loc, Extra long vowel
 !! ** Yaml: __N-paeikk__
-:%^PAL ATTESTED-NOUN-STEM ;
-:%^PAL SG-NOM ;
-:%^V2VV%^PAL%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;
-:%>a SG-ILL ;
-:%^V2VV%^PAL%^XYY2XY%>e SG-LOC ;
-:%^V2VV%^VOWRaise%^PAL%^XYY2XY SG-COM_IN ;
-:%^PAL%>e ESS/PAR ; ! ess and prt without
-:%^V2VV%^VOWRaise%^PAL%^XYY2XY%> PL-OBL ;
-+Der/Dim:%^V2VV%^XYY2XY%> N_KUÂLAŽ ;
+:%^PAL ATTESTED-NOUN-STEM ;	!!= * @CODE@ (1) Sg.Nom: päiʹǩǩ
+:%^PAL SG-NOM ;		  !!= * @CODE@ (1) Sg.Nom: päiʹǩǩ
+:%^V2VV%^PAL%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ; !!= * @CODE@ (2) Pl.Nom: pääiʹǩ
+:%>a SG-ILL ;	     !!= * @CODE@ (3) Sg.Ill: päikka
+:%^V2VV%^PAL%^XYY2XY%>e SG-LOC ;  !!= * @CODE@ (4) Sg.Loc: pääiʹǩest
+:%^V2VV%^VOWRaise%^PAL%^XYY2XY SG-COM_IN ;     !!= * @CODE@ (5) Sg.Com: paaiʹǩin
+:%^PAL%>e ESS/PAR ; 	       !!= * @CODE@ (6) Ess: päiʹǩǩen
+:%^V2VV%^VOWRaise%^PAL%^XYY2XY%> PL-OBL ;   !!= * @CODE@ (8) Pl.Acc: paaiʹǩid
++Der/Dim:%^V2VV%^XYY2XY%> N_KUÂLAŽ ; !!= * @CODE@ (9) Der/Dim.N.Sg.Nom: pääiǥaž
 
 LEXICON N_SÄIʹMM !!= * @CODE@ säiʹmm:säiʹmm
 ! vowel: monophthong
@@ -3437,10 +3437,46 @@ LEXICON NMN_ǨEʹRJJ
 :%>a SG-ILL ;	     			   !!= * @CODE@ (3)  Sg.Ill: ǩerjja
 :%^V2VV%^PAL%^XYY2XY%>e SG-LOC ;	   !!= * @CODE@ (4) Sg.Loc: ǩeeʹrjest
 :%^V2VV%^PAL%^XYY2XY SG-COM_IN ;	   !!= * @CODE@ (5) Sg.Com: ǩeeʹrjin
-+Use/NG:%^V2VV%^VOWRaise%^PAL%^XYY2XY SG-COM_IN ; !!= * @CODE@ (5) Sg.Com: ǩiiʹrjin
+! WHICH ONE IS PRIMARY
+:%^V2VV%^VOWRaise%^PAL%^XYY2XY SG-COM_IN ; !!= * @CODE@ (5) Sg.Com: ǩiiʹrjin
 :%^PAL%>e ESS/PAR ; !!= * @CODE@ (6) Ess: ǩeʹrjjen
 :%^V2VV%^PAL%^XYY2XY%> PL-OBL ; !!= * @CODE@ (8) Pl.Acc: ǩeeʹrjid
 +Der/Dim:%^V2VV%^XYY2XY%> N_KUÂLAŽ ;  !!= * @CODE@ (9) Der/Dim.N.Sg.Nom: ǩeerjaž
+
+LEXICON N_TEʹKSTT !!= * @CODE@ teʹkstt:tekstt
+! vowel: monophthong
++N: NMN_TEʹKSTT ;
+LEXICON NMN_TEʹKSTT
+!! gradation: yes
+!! vowel_shift: no
+!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+!! !!1.3 Sg.Loc in -est (NO vowel shift)
+!! !!  Raised: Sg.Com, Pl.Obl
+!! !!  Lowered: ELSE
+!! !!  e-stems (Sg.Loc, Ess, Par).
+!! !!1.3.2 Sg.Ill vowel -a
+!! !!1.3.2.1 Has Palatalization
+!! !!  Palatalized: ELSE
+!! !!  Not Palatalized: Sg.Ill
+!! !!1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+!! !!1.3.2.1.1.1 Has Orthographic Gradation
+!! !!1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+!! !!  Strong grade: Sg.Nom, Ess, Par
+!! !!  Strong grade: Sg.Ill
+!! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+!! !!FORMS
+!! NumContLex="1.113
+!! Is for nouns with ''-est'' Loc, Extra long vowel
+!! ** Yaml: __N-kerjj__
+:%^PAL ATTESTED-NOUN-STEM ;	!!= * @CODE@ (1) Sg.Nom: teʹkstt
+:%^PAL SG-NOM ;		  	!!= * @CODE@ (1) Sg.Nom: teʹkstt
+:%^V2VV%^PAL%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ; !!= * @CODE@ (2) Pl.Nom: teeʹkst
+:%>a SG-ILL ;	     			   !!= * @CODE@ (3)  Sg.Ill: tekstta
+:%^V2VV%^PAL%^XYY2XY%>e SG-LOC ;	   !!= * @CODE@ (4) Sg.Loc: teeʹkstest
+:%^V2VV%^PAL%^XYY2XY SG-COM_IN ;	   !!= * @CODE@ (5) Sg.Com: teeʹkstin
+:%^PAL%>e ESS/PAR ; !!= * @CODE@ (6) Ess: teʹkstten
+:%^V2VV%^PAL%^XYY2XY%> PL-OBL ; !!= * @CODE@ (8) Pl.Acc: teeʹkstid
++Der/Dim:%^V2VV%^XYY2XY%> N_KUÂLAŽ ;  !!= * @CODE@ (9) Der/Dim.N.Sg.Nom: teekstaž
 
 LEXICON N_TÄʹHTT !!= * @CODE@ täʹhtt:tähtt
 ! vowel: monophthong
@@ -5934,26 +5970,38 @@ LEXICON NMN_BIOLOGIA
  PL-NOM ;
  PL-OBL ;
 
-LEXICON N_RADIO
+LEXICON N_RADIO !!= * @CODE@ radio:radio
 +N: NMN_RADIO ;
 LEXICON NMN_RADIO
-! radio:radio
 !! ** Yaml: __N-radio__
- ATTESTED-NOUN-STEM ;
- SG-NOM ;
- SG-GEN ;
- SG-ACC ;
-:oʹje SG-ILL ;
-+Use/NG: SG-ILL ;
- SG-LOC ;
- SG-COM_IN ;
- ESS ; ! ess and prt without
- PAR ;
- SG-ABE ;
- PL-NOM ;
- PL-OBL ;
+ ATTESTED-NOUN-STEM ;  !!= * @CODE@ (=TSA-1)
+ SG-NOM ;	    !!= * @CODE@ (TSA-1) +Sg+Nom:
+ SG-ABE/ACC/GEN ;   !!= * @CODE@ (=TSA-2)
+:oʹje SG-ILL ;	    !!= * @CODE@ (TSA-3) +Sg+Ill:
++Use/NG: SG-ILL ;   !!= * @CODE@ (TSA-3) +Sg+Ill:
+ SG-LOC ;	    !!= * @CODE@ ()
+ SG-COM_IN ;	    !!= * @CODE@ (=TSA-4)
+ ESS/PAR ; 	    !!= * @CODE@ ()
+ PL-NOM ;	    !!= * @CODE@ (TSA-2) +Pl+Nom:
+ PL-OBL ;	    !!= * @CODE@ (TSA-4) +Pl+Gen: 
+!FIX-DIM
 
-
+LEXICON N_ENERGII !!= * @CODE@ energii:energi
++N: NMN_ENERGII ;
+LEXICON NMN_ENERGII
+!! ** Yaml: __N-energii__
+!! THIS NEEDS CHECKING
++Use/NG:i ATTESTED-NOUN-STEM ;  !!= * @CODE@ (=TSA-1)
++Use/NG:i SG-NOM ;           !!= * @CODE@ (TSA-1) +Sg+Nom: energii
++Use/NG:i SG-ABE/ACC/GEN	    ;   !!= * @CODE@ (=TSA-2)
++Use/NG:ia SG-ILL ;	        !!= * @CODE@ (TSA-3) +Sg+Ill: energiia
++Use/NG:i SG-LOC ;	    !!= * @CODE@ ()
++Use/NG:i SG-COM_N ;        !!= * @CODE@ (=TSA-4)
++Use/NG:i ESS/PAR ;          !!= * @CODE@ ()
++Use/NG:i PL-NOM ;           !!= * @CODE@ (TSA-2) +Pl+Nom: energii
++Use/NG:i PL-OBL ;           !!= * @CODE@ (TSA-4) +Pl+Gen:
+!FIX-DIM
+:a N_BIOLOGIA ;
 
 LEXICON N_NALLŠEM
 !!= * @CODE@ = stemtype 

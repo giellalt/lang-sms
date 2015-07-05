@@ -539,10 +539,14 @@ Rules
 
 
 
-"ZERO to syllable mark 0:ʼ"
+"ZERO to syllable mark 0:ʼ here"
 !! __@RULENAME@__ - used in zeeʹtt+N+Sg+Abe: zeeʹttʼtää
  0:ʼ <=>
      [ :n | :l ] ([%^C2CC:|%^XY2XYY:]) %> _ j ;
+     [ :n | :l ] ([%^C2CC:|%^XY2XYY:]) %> _ (Vow:0) i:j ;
+!!€# valmštõõll%>0i%^I2J%>i
+!!€0 valmštõõll%>ʼj0%>i
+
      n Vow: _ n %^RmVow: ;
      t Vow: _ t %^RmVow: ;
 !! mättʼted+V+Inf: __teach/opettaa__
@@ -1097,14 +1101,14 @@ Rules
   OnSetC _ å:o  (ʹ:|0:ʹ) Cns:+  %^V2VV: %^VOWRaise: ;
 !!€# k0åʹll%^V2VV%^VOWRaise%>in
 !!€0 kooʹll00%>in
-   OnSetC _ o (ʹ:|0:ʹ) Cns:+  %^V2VV: ; 
+   OnSetC _ o (i|u) (ʹ:|0:ʹ) Cns:+  %^V2VV: ; 
 ! - deriving toll+N+Sg+Gen: tool
 !!€# t0oll%^V2VV%^CC2C
 !!€0 tool000
 !!€# t0o0ll%^V2VV%^PAL%^CC2C%>e
 !!€0 tooʹl0000%>e
 
-OnSetC _ o (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^PenV2VV: ;
+OnSetC _ o (i|u) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^PenV2VV: ;
 !!€# k0onttâr%^PenV2VV%^PenXYY2XY
 !!€0 koont0âr00
 
@@ -1293,7 +1297,7 @@ OnSetC _ o (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^PenV2VV: ;
 "Even-syllabic verbs I, Palatalization of k:ǩ"
 !! __@RULENAME@__ - used in
  k:ǩ <=>
- Vow: (ʹ:|0:ʹ) Cns:   _ (0:) k: BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: ([%^CC2C:|%^XYY2XY:]) RBound ;
+ Vow: (ʹ:|0:ʹ) (Cns:)   _ (0:) k: BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: ([%^CC2C:|%^XYY2XY:]) RBound ;
 !! mieʹlǩǩ+N+Sg+Acc: __milk/maito__
 !!€# miâ0lkk%^PALE%^PAL%^CC2C
 !!€0 mieʹlǩ0000
@@ -1809,11 +1813,12 @@ OnSetC _ o (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^PenV2VV: ;
 
 "even syllabic verbs I, 'lǧǧ>'lj" 
 !! __@RULENAME@__ - used in
- g:j  <=> Vow:   :ʹ [l|r|d:]  _ g:0 BetweenStemAndPALNo %^PAL: %^XYY2XY: ;
+ g:j  <=> Vow:  [ i :ʹ|:ʹ [l|r|d:]]  _ g:0 BetweenStemAndPALNo %^PAL: %^XYY2XY: ;
 !vueʹlǧǧed+V+Ind+Prt+Pl1 => vuõʹljim
 !!€# vuâ0lgg%^VOWRaise%^PAL%^CC2C%>im
-!!€# vuõʹlj0000%>im
-
+!!€0 vuõʹlj0000%>im
+!!€# 0äi0gg%^V2VV%^PAL%^XYY2XY
+!!€0 ääiʹj0000
 
 
 
