@@ -3145,25 +3145,29 @@ LEXICON V_STÅÅRJED
 LEXICON V_SILTTEED !!= * @CODE@ siltteed:siltt
 ! Ind+Prs+ConNeg: -âd
 ! lexicon ''@LEXNAME@'' 
-+V+Ind+Prs:		TEEMEED-PRS ;
-+V+Ind+Prt:		TEEMEED-PRT ;
-+V+Imprt:			TEEMEED-IMPRT ;
-+V+Imprt+Sg2:%>âd		K ;
-+V:%>eʹ		VSUF-I-POTKOND ; !WG
-+V+Pot+Sg3:%>eež	K ; !WG
-+V+Inf:%>eed K ;
-+V+ActEss:%>eʹmen K ;
-+V: GER_ ;
-+V+Actio:%>eem K ;
-+V+Actio:%>eem ATTESTED-NOUN-STEM ;
-+V+PrsPrc:%>eei K ;
-+V+PrsPrc+Der/N:%>ee N_TUÕĐŠTEEI ;
-+V+PrfPrc:%>ääm K ;
-+V+Pass+PrfPrc:%>ummu K ;
-+V+Pass+PrfPrc:%>uum K ;
-+V+VAbess:%>eǩâni K ;		!WG
-+V+Imprt+ConNeg:%>ukku K ;
-+V+Der/mmuš:%>ummuš N_MAINSTUMMUŠ ;
++V: VSUF-TEEʹMEED-IND-PRS-SG3 ;
++V:%>âd VSUF-TEEʹMEED-IND-PRS-CONNEG ;
++V: VSUF-TEEʹMEED-ELSE ; !!= * @CODE@ 
+
+!+V+Ind+Prs:		TEEMEED-PRS ;
+!+V+Ind+Prt:		TEEMEED-PRT ;
+!+V+Imprt:			TEEMEED-IMPRT ;
+!+V+Imprt+Sg2:%>âd		K ;
+!+V:%>eʹ		VSUF-I-POTKOND ; !WG
+!+V+Pot+Sg3:%>eež	K ; !WG
+!+V+Inf:%>eed K ;
+!+V+ActEss:%>eʹmen K ;
+!+V: GER_ ;
+!+V+Actio:%>eem K ;
+!+V+Actio:%>eem ATTESTED-NOUN-STEM ;
+!+V+PrsPrc:%>eei K ;
+!+V+PrsPrc+Der/N:%>ee N_TUÕĐŠTEEI ;
+!+V+PrfPrc:%>ääm K ;
+!+V+Pass+PrfPrc:%>ummu K ;
+!+V+Pass+PrfPrc:%>uum K ;
+!+V+VAbess:%>eǩâni K ;		!WG
+!+V+Imprt+ConNeg:%>ukku K ;
+!+V+Der/mmuš:%>ummuš N_MAINSTUMMUŠ ;
 
 !! !CLASS 4 LOW VOWEL, NO PALATALIZATION
 LEXICON V_SOLLEED
@@ -3172,25 +3176,9 @@ LEXICON V_SOLLEED
 ! * Yaml: __V-solleed__
 ! +Ind+Prs+ConNeg: sollad
 ! lexicon ''@LEXNAME@'' 
-+V+Ind+Prs:		TEEMEED-PRS ;
-+V+Ind+Prt:		TEEMEED-PRT ;
-+V+Imprt:			TEEMEED-IMPRT ;
-+V+Imprt+Sg2:%>ad		K ;
-+V:%>eʹ		VSUF-I-POTKOND ; !WG
-+V+Pot+Sg3:%>eež	K ; !WG
-+V+Inf:%>eed K ;
-+V+ActEss:%>eʹmen K ;
-+V: GER_ ;
-+V+Actio:%>eem K ;
-+V+Actio:%>eem ATTESTED-NOUN-STEM ;
-+V+PrsPrc:%>eei K ;
-+V+PrsPrc+Der/N:%>ee N_TUÕĐŠTEEI ;
-+V+PrfPrc:%>ääm K ;
-+V+Pass+PrfPrc:%>ummu K ;
-+V+Pass+PrfPrc:%>uum K ;
-+V+VAbess:%>eǩâni K ;		!WG
-+V+Imprt+ConNeg:%>ukku K ;
-+V+Der/mmuš:%>ummuš N_MAINSTUMMUŠ ;
++V: VSUF-TEEʹMEED-IND-PRS-SG3 ;
++V:%>ad VSUF-TEEʹMEED-IND-PRS-CONNEG ;
++V: VSUF-TEEʹMEED-ELSE ; !!= * @CODE@
 
 
 !! !CLASS 4 HIGH VOWEL,  PALATALIZATION
@@ -3201,25 +3189,10 @@ LEXICON V_TEEʹMEED
 ! Ind+Prs+ConNeg: Palatalization AND -ed
 ! teeʹmeed:teeʹm
 ! lexicon ''@LEXNAME@'' 
-+V+Ind+Prs:		TEEMEED-PRS ;
-+V+Ind+Prt:		TEEMEED-PRT ;
-+V+Imprt:			TEEMEED-IMPRT ;
-+V+Imprt+Sg2:%>ed		K ;
-+V:%>eʹ		VSUF-I-POTKOND ; !WG
-+V+Pot+Sg3:%>eež	K ; !WG
-+V+Inf:%>eed K ;
-+V+ActEss:%>eʹmen K ;
-+V: GER_ ;
-+V+Actio:%>eem K ;
-+V+Actio:%>eem ATTESTED-NOUN-STEM ;
-+V+PrsPrc:%>eei K ;
-+V+PrsPrc+Der/N:%>ee N_TUÕĐŠTEEI ;
-+V+PrfPrc:%>ääm K ;
-+V+Pass+PrfPrc:%>ummu K ;
-+V+Pass+PrfPrc:%>uum K ;
-+V+VAbess:%>eǩâni K ;		!WG
-+V+Imprt+ConNeg:%>ukku K ;
-+V+Der/mmuš:%>ummuš N_MAINSTUMMUŠ ;
++V: VSUF-TEEʹMEED-IND-PRS-SG3 ;
++V:%>ed VSUF-TEEʹMEED-IND-PRS-CONNEG ;
++V: VSUF-TEEʹMEED-ELSE ; !!= * @CODE@
+
 
 !! Not yet written
 
@@ -3278,6 +3251,78 @@ LEXICON KAMRDED-01
 ! assuming stem _juʹrdd_
 
 ! assuming stem _tieʹtt_
+LEXICON VSUF-TEEʹMEED-IND-PRS-SG3
++Ind+Prs+Sg3:%>ad K ; !!= * @CODE@ teeʹmad
+
+LEXICON	VSUF-TEEʹMEED-IND-PRS-CONNEG
++Ind+Prs+ConNeg:  K ;
++Imprt+Sg2:  K ;
++Imprt+ConNeg:  K ;
+
+LEXICON	VSUF-TEEʹMEED-ELSE
++Ind+Prs+Sg1:%>ääm             K       ; !WG _ääʹvääm_
++Ind+Prs+Sg2:%>ääk             K       ; !WG ! _ääʹvääk_
++Ind+Prs+Pl1:%>eep             K       ; ! _ääʹveep_ _tieʹttep_
++Ind+Prs+Pl2:%>eʹped           K       ; ! _ääʹveʹped_
++Ind+Prs+Pl3:%>ee              K       ; ! _ääʹvee_
++Ind+Prs+Sg4:%>eet K ; ! ääʹveet
+
++Ind+Prt+Sg1:%>eem             K       ; ! _ääʹveem_
++Ind+Prt+Sg2:%>iiǩ             K       ; ! _ääʹviiǩ_
++Ind+Prt+Sg3:%>ii              K       ; !WG ! _ääʹvii_
++Ind+Prt+Pl1:%>iim             K       ; !WG ! _ääʹviim_
++Ind+Prt+Use/NG+Pl1:%>iin              K       ; !WG ! _ääʹviin_ ! sub??
++Ind+Prt+Pl2:%>iid             K       ; !WG ! _ääʹviid_
++Ind+Prt+Pl3:%>ee              K       ; ! _ääʹvee_
++Ind+Prt+Sg4:%>eeš K ; ! ääʹveeš
++Ind+Prt+ConNeg:%>ääm K ;
++Ind+Prs+ConNegII:%>uku K ;
++Ind+Imprt+ConNegII:%>uku K ;
+
++Pot+Sg1:eʹžem K ;
++Pot+Sg2:eʹžiǩ K ;
++Pot+Sg3:eež K ;
++Pot+Pl1:eʹžep K ;
++Use/NG+Pot+Pl1:eʹžim K ;
++Use/NG+Pot+Pl1:eʹžin K ;
++Pot+Pl2:eʹžid K ;
++Pot+Pl3:eʹže K  ;
++Pot+Sg4:eʹžet K ;
++Pot+ConNeg:eʹže K ;
+
++Cond+Sg1:eʹčem K        ;
++Cond+Sg2:eʹčiǩ K        ;
++Cond+Sg3:eʹči K ;
++Cond+Pl1:eʹčim K        ; ! How are these related?
++Cond+Pl1+Use/NG:eʹčep K ; ! Are there substandards?
++Cond+Pl1+Use/NG:eʹčin K ; !
++Cond+Pl2:eʹčid K        ;
++Cond+Pl3:eʹče K ;
++Cond+Sg4:eʹčeš K ;
++Cond+ConNeg:eʹče K ;
+
++Imprt+Sg3:%>ââǥǥas          K       ; !WG
++Imprt+Pl1:%>âkap                    K       ;
++Imprt+Pl2:%>eʹǩed           K       ;
++Use/NG+Imprt+Pl2:%>eed           K       ;
++Imprt+Pl3:%>âkaz            K       ;
+
++Inf:eed K ;
+ GER_ ;
++Actio:%>eeʹm K ;
++Actio+Nom:%>eeʹm K ;
++Actio+Acc:%>eeʹm K ;
++Actio+Gen:%>eeʹm K ;
++ActEss:%>eʹmmen K ;
++Actio:%>eeʹm ATTESTED-NOUN-STEM ;
++V+VAbess:%>eeǩâni K ; 
++PrsPrc:%>eei K ;
++PrsPrc+Der/N:%>ee N_TUÕĐŠTEEI ;
++V+Act+PrfPrc:%>ääm K ;
++V+Pass+PrfPrc:%>ummu K ;
++V+Pass+PrfPrc:%>uum K ;
++V+Der/mmuš:%>ummuš N_MAINSTUMMUŠ ;
+
 
 ! assuming stem _ääʹv_ _teeʹm_
 LEXICON TEEMEED-PRS
@@ -3285,9 +3330,10 @@ LEXICON TEEMEED-PRS
  +Sg2:%>ääk		K	; !WG ! _ääʹvääk_
  +Sg3:%>ad K	; ! _ääʹvad_
  +Pl1:%>eep		K	; ! _ääʹveep_ _tieʹttep_
- +Pl2:%>veʹted		K	; ! _ääʹvveʹted_
+ +Pl2:%>eʹped		K	; ! _ääʹvveʹted_
  +Pl3:%>ee		K	; ! _ääʹvee_
  +Sg4:%>eet K ; ! ääʹveet
+
  +ConNeg:%>ed K ; ! ääʹved
 
 
@@ -3329,7 +3375,6 @@ LEXICON TEEMEED-PRT
  +Pl3:%>ee		K	; ! _ääʹvee_
  +Sg4:%>eeš K ; ! ääʹveeš
  +ConNeg:%>ääm K ;
-
 
 
 ! assuming stem _kååʹmmerd_
@@ -3522,9 +3567,9 @@ LEXICON VABESS
 +VAbess:%>ǩani K ;
 
 LEXICON GER_
-+GerInstr:%>eeʹl K ;
-+GerTemp:%>een K ;
-+GerTemp:%>eeʹst K ;
++GerInstr:%>eeʹl K ; !FIX-ME
++GerTemp:%>een K ; !FIX-ME +Ger+Ess
++GerTemp:%>eeʹst K ; !FIX-ME +Ger+Loc
 
 LEXICON VSUF-CONDITIONAL_ED  !!= * @CODE@ (7)
 +Ind+Prs+Sg1:%>am K ;
