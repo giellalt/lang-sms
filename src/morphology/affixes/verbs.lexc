@@ -1403,17 +1403,34 @@ LEXICON V_SÄRNNAD !!= * @CODE@ särnnad:särnn
 ! (9) Ind.Imprt.Pl3: särnnaz
 ! (10) Allegro for incoative: särnn»
 
-+V: VSUF-INF_AD ; !1 särnnad
-+V: VSUF-IND-PRS-SG3_AD ; !2 särnn
-+V+Ind+Prs+Pl3:%>a K ; !3 särnna
-+V:%^VOWRaise%> VSUF-IND-PRT-PL3_AD ; !4 sarnnu
-+V:%^V2VV%^XYY2XY%> VSUF-I-POTKOND_AD ; !5 säärn-
-+V+Pot+Sg3:%^V2VV%^XYY2XY%>ež	K ; !6 säärnež
-+V+Imprt+Sg3:%^V2VV%^XYY2XY%>as K ; !7 säärnas
-+V:%^VOWRaise VSUF-IMPRT-CONNEGII_AD ; !8 sarnnu
-+V: VSUF-IMPRT-PL3_AD ; ! särnn-
-+V+Der/mõš:»mõš N_LOOKKMÕŠ ;
++V: VSUF-INF_AD ; !!= * @CODE@ (1)  Inf: särnnad
+!! V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Ind+Prt+ConNeg
+!! Imprt+Pl1, Imprt+Pl2
+!! Actio, ActEss, PrsPrc, +Der/mõš
+
++V: VSUF-IND-PRS-SG3_AD ; !!= * @CODE@ (2)  Ind.Prs.Sg3: särnn
+!! +V+Ind+Prs+Sg3
+
++V+Ind+Prs+Pl3:%>a K ; !!= * @CODE@ (3)  Ind.Prs.Pl3: särnna
+!! +Ind+Prs+Pl3
+
++V:%^VOWRaise%> VSUF-IND-PRT-PL3_AD ; !!= * @CODE@ (4) Ind.Prt.Pl3: sarnnu
+!! +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
+
+
++V:%^V2VV%^XYY2XY%> VSUF-I-POTKOND_AD ; !!= * @CODE@ (5-7) +Imprt+Sg2: säärn
+!! Imprt+ConNeg, Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, Ind+Prs+Sg1, Ind+Prs+Sg2
+!! +Ger, +VAbess, +Pot, +Cond, +Imprt+Sg3
+
++V:%^VOWRaise VSUF-IMPRT-CONNEGII_AD ; !!= * @CODE@ (8 sarnnu
+!! Imprt+ConNegII, Pass+PrfPrc
+
++V: VSUF-IMPRT-PL3_AD ; !!= * @CODE@ (9) särnnaz
+!! +Imprt+Pl3
+
+!! (10) Allegro for incoative: särn»
 +V+Der/škueʹtted:%^XYY2XY»škuätt V_PUEʹTTED ;
+
 
 LEXICON V_KÄIDDAD !!= * @CODE@ käiddad:käidd
 ! ** Yaml: __V-käiddad__
@@ -1633,7 +1650,7 @@ LEXICON V_LAʹDDED !!= * @CODE@ laʹdded:ladd
 
 !! ExtraStrong-RaisedVowel-No-palatalization
 +V: VSUF-IMPRT-CONNEGII_ED ; !!= * @CODE@ (8) +V+Imprt+ConNegII: laddu
-!! Imprt+ConNeg, Pass+PrfPrc
+!! Imprt+ConNegII, Pass+PrfPrc
 
 !! ExtraStrong-LoweredVowel-No-palatalization
 +V:%^VOWLower VSUF-IMPRT-PL3_ED ; !!= * @CODE@ (9) Ind.Imprt.Pl3: läddaz
@@ -2131,7 +2148,7 @@ LEXICON V_CEʹPCCED !!= * @CODE@ ceʹpcced:cepcc
 
 !! ExtraStrong-LowVowel-No-palatalization
 +V: VSUF-IND-PRS-SG3_ED ; !!= * @CODE@ (2) +V+Ind+Prs+Sg3: cepcc
-!! +V+Ind+Prs+Sg3, Ind.Prt.ConNeg, PrfPrc
+!! +V+Ind+Prs+Sg3, Ind.Prt.ConNeg, PrfPrc, +Der/mõš
 
 !! ExtraStrong-LowVowel-Palatalization
 +V+Ind+Prs+Pl3:%^PAL%>e K ; !!= * @CODE@ (3) +V+Ind+Prs+Pl3: ceʹpcce
@@ -2187,17 +2204,35 @@ LEXICON V_KÄʹDDED !!= * @CODE@ käʹdded:kädd
 !    Pass.PrfPrc
 ! (9) Ind.Imprt.Pl3: käddaz
 ! käʹdded:kädd
-+V:%^PAL VSUF-INF_ED ; !1 käʹdded
-+V: VSUF-IND-PRS-SG3_ED ; !2 kädd
-+V+Ind+Prs+Pl3:%^PAL%>e K ; !3 käʹdde
-+V:%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ; !4 kaʹdde
-+V:%^V2VV%^VOWRaise%^PAL%> VSUF-POTENTIAL_ED ; !5 kaaʹdd-
-+V:%^V2VV%> VSUF-CONDITIONAL_ED ; !5 ?2 ?7 kääʹdd-
-+V+Imprt+Sg3:%^V2VV%^PAL%>as K ; !7 kääʹddas
-+V:%^V2VV%^PAL VSUF-IND-PRS-CONNEG_ED ;
-+V: VSUF-IMPRT-CONNEGII_ED ; !8 kädd-
++V:%^PAL VSUF-INF_ED ; !!= * @CODE@ (1) +V+Inf: käʹdded
+!! V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
+!! Actio, ActEss, PrsPrc, 
 
-! (10) Allegro for incoative: käʹd»
++V: VSUF-IND-PRS-SG3_ED ; !!= * @CODE@ (2) +V+Ind+Prs+Sg3: kädd
+!! +V+Ind+Prs+Sg3, Ind.Prt.ConNeg, PrfPrc, +Der/mõš
+
++V+Ind+Prs+Pl3:%^PAL%>e K ; !!= * @CODE@ (3) +V+Ind+Prs+Pl3: käʹdde
+!! +V+Ind+Prs+Pl3
+
++V:%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ; !!= * @CODE@ (4) +V+Ind+Prt+Pl3: kaʹdde
+!! +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
+
++V:%^V2VV%^PAL VSUF-IND-PRS-CONNEG_ED ; !!= * @CODE@ (5) Imprt+Sg2: kääʹdd
+!! Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
+
++V:%^V2VV%^VOWRaise%^PAL%> VSUF-POTENTIAL_ED ; !!= * @CODE@ (6) +V+Pot+Sg3: kaaʹddež
+!! Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
+
++V:%^V2VV%> VSUF-CONDITIONAL_ED ; !!= * @CODE@ (7) +V+Imprt+Sg3: kääddas
+!! Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
+
++V:%^VOWRaise VSUF-IMPRT-CONNEGII_ED ; !!= * @CODE@ (8) +V+Imprt+ConNegII: kaddu
+!! Imprt+ConNeg, Pass+PrfPrc
+
++V: VSUF-IMPRT-PL3_ED ; !!= * @CODE@ (9) Ind.Imprt.Pl3: käddaz
+!! Imprt+Pl3
+
+!! (10) Allegro for incoative: käʹd»
 +V+Der/škueʹtted:%^PAL%^CC2C»škuätt V_PUEʹTTED ;
 
 LEXICON V_VEÄʹDˈDED !!= * @CODE@ veäʹdˈded:veädd
@@ -3545,8 +3580,8 @@ LEXICON VSUF-I-POTKOND_AD
 +Ind+Prs+Sg2:%>ak K ;
 +Ind+Prs+Sg4:%>at K ;
 +Ind+Prs+ConNeg: K ;
-:a VSUF-IND-PRT-SG3-PL1-PL2_ ;
 
++Imprt+Sg3:%>as K ;
 +Imprt+Sg2: K ;
 +Imprt+ConNeg: K ;
  VABESS ;
