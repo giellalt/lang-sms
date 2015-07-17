@@ -23,6 +23,7 @@ GT_LEXC_SRCS_L1_L2=\
 				root.lexc \
 				stems/exceptions.lexc \
 				stems/punctuation.lexc \
+				stems/adjectives.lexc \
 				stems/adjectives_newwords.lexc \
 				stems/adpositions_newwords.lexc \
 				stems/adverbs_newwords.lexc \
@@ -44,7 +45,6 @@ GT_LEXC_SRCS_L1_L2=\
 
 #
 #
-#				stems/adjectives.lexc \
 #				stems/adpositions.lexc \
 #				stems/adverbs.lexc \
 #				stems/conjunctions.lexc \
