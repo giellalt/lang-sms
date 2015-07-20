@@ -23,7 +23,8 @@ LEXICON A-ATTR_as
 
 LEXICON A-ATTR_es
 +A+Attr:%>es # ;
-+A+Comp:»ab NMN_SLOOHMAN ;
++A: ADJ-DER/COMP_ab ;
+!+A+Comp:»ab NMN_SLOOHMAN ;
 +A+Superl:»mõs NMN_ČÅRRÕS ;
 +A+Der/vuõtt:%>es»vuõtt N_MUÕRR ; 
 
@@ -460,6 +461,10 @@ LEXICON A_ÕÕMÂS !!= * @CODE@ õõmâs:õmm
 +A+Attr:sõs FINAL1 ;
 +A+Der/MWN:âz NMN_VÕÕNÂS ;
 
+LEXICON A_KÄÄʹMES  !!= * @CODE@ kääʹmes:kämm
++A+Attr:%^V2VV%^PAL FINAL1 ;
++A+Der/MWN:ez N_ÅÅʹVES ; !!= * @CODE@	kääʹmes:kämmez
+
 LEXICON A_TUÕĐŠTEEI !!= * @CODE@ tuejjeei:tuejjee
 +A+Sg+Nom:i FINAL1 ;
 +A+Pl+Nom:i FINAL1 ; !!= * @CODE@ Check this 2015-02-22
@@ -574,26 +579,26 @@ LEXICON A4e
 !+A+Pred+Pl:es # ; !!WK stem grade
 +A+Attr: # ;
 !+A+Comp:%^VOWL%^PALNo%^CLong%^s»ab # ; !!NPAL
-!+A+Superl:%^s»umus # ; !!NPAL
+!+A+Superl:%^s»ummus # ; !!NPAL
 
 !LEXICON A8 ?does not work at all
 !+A: AdjAttr-os ; !!VDEL
 !+A+Comp:%^l»ab # ; !!NPAL
-!+A+Superl:%^l»umus # ; !!NPAL
+!+A+Superl:%^l»ummus # ; !!NPAL
 
 !! CLASS 11 ADJECTIVES
 LEXICON A_ŠIÂLGGÂD !!= * @CODE@ šiâlggâd:šiâlgg
 +A:%^VOWRaise%^PALE%^PAL AdjAttr-es ;
-+A+Sg+Nom:âd K ;
-+A+Pl+Nom:âd K ;
++A:âd SG-NOM ;
++A:âd PL-NOM ;
 +A+Der/MWN: N_VISKKÂD ;
 +A: ADJ-DER/COMP_ääb ;
 +A:ADJ-DER/SUPERL_ummus ;
 
 LEXICON A_ŠÕLLÂD !!= * @CODE@ šõllâd:šõll
 +A:%^PAL AdjAttr-es ;
-+A+Sg+Nom:âd K ;
-+A+Pl+Nom:âd K ;
++A:âd SG-NOM ;
++A:âd PL-NOM ;
 +A+Der/MWN: N_VISKKÂD ;
 +A: ADJ-DER/COMP_ääb ;
 +A: ADJ-DER/SUPERL_ummus ;
@@ -601,7 +606,7 @@ LEXICON A_ŠÕLLÂD !!= * @CODE@ šõllâd:šõll
 
 LEXICON A_ÂʹǨǨED!!= * @CODE@ âʹǩǩed:âʹǩǩ
 +A: AdjAttr-es ;
-+A+Sg+Nom:ed K ;
++A:ed SG-NOM ;
 +A: ADJ-DER/COMP_ääb ;
 +A: ADJ-DER/SUPERL_ummus ;
 
@@ -621,7 +626,7 @@ LEXICON A_SÄʹMMLAŽ
 !! säʹmmlaž:säʹmml
 +A+Attr:až K ;
 +A+Comp:ab K ;
-+A+Superl:umus K ;
++A+Superl:ummus K ;
 +A+Der/MWN:  N_SÄʹMMLAŽ ;
 
 
@@ -629,7 +634,7 @@ LEXICON A_SÄʹMMLAŽ
 LEXICON A30
 !+A: # ; same form
 +A+Comp:»ab # ; !!NPAL
-+A+Superl:»umus # ; !!NPAL
++A+Superl:»ummus # ; !!NPAL
 
 LEXICON DenominalAdjsCShort
 +Der/teʹm:»teʹm A_ČÂÂʹLMTEʹM ;
@@ -637,7 +642,7 @@ LEXICON DenominalAdjsCShort
 !+Der/A+Pred+Pl:»teʹm # ;
 !+Der/A:»teʹm AdjAttr-es ; ! 2013-09-19 the +Attr removed to avoid double tags
 +Der/t+A:»t AdjDerComp ; ! 2013-09-19 the +Comp removed to avoid double tags
-+Der/t+A:»t AdjDerSuperl-umus ; ! 2013-09-19 the +Superl removed to avoid double tags
++Der/t+A:»t AdjDerSuperl-ummus ; ! 2013-09-19 the +Superl removed to avoid double tags
 
 LEXICON AdjAttr-Ø
 +Attr:%^ # ;
@@ -660,19 +665,19 @@ LEXICON AdjDerComp
 !! Class 12 Feist 163
 LEXICON ADJ-DER/COMP_ab
 +Comp+Attr:»ab # ;
-+Comp+Sg+Nom:»ab K ;
++Comp:»ab SG-NOM ;
 +Comp:»ab SG-ABE/ACC/GEN-PL-NOM ;
-+Comp+Sg+Ill:»õʹbbe K ;
-+Comp+Sg+Loc:»õbâst K ;
++Comp:»õʹbbe SG-ILL ;
++Comp:»õbâst SG-LOC ;
 +Comp:»õb SG-COM_IN/PL-OBL ;
 +Comp:»õbâ ESS/PAR ;
 
 LEXICON ADJ-DER/COMP_ääb
 +Comp+Attr:»ääb # ;
-+Comp+Sg+Nom:»ääb K ;
++Comp:»ääb SG-NOM ;
 +Comp:»ääb SG-ABE/ACC/GEN-PL-NOM ;
-+Comp+Sg+Ill:»uʹbbe K ;
-+Comp+Sg+Loc:»ubust K ;
++Comp:»uʹbbe SG-ILL ;
++Comp:»ubust SG-LOC ;
 +Comp:»ubu SG-COM_IN/PL-OBL ;
 +Comp:»ubu ESS/PAR ;
 
@@ -688,8 +693,8 @@ LEXICON AdjDerSuperl-mos
 
 LEXICON AdjDerSuperl-mus
 +Der/mus+Superl:»mus # ; 
-LEXICON AdjDerSuperl-umus
-+Der/umus+Superl:»umus # ; 
+LEXICON AdjDerSuperl-ummus
++Der/ummus+Superl:»ummus # ; 
 
 LEXICON AdjNom-as
 +Attr+Sg+Gen:%>âz # ;
