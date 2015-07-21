@@ -1031,7 +1031,7 @@ Rules
 "Even syllabic verbs I, relative vowel lengthening 0:å"
 !! __@RULENAME@__ - deriving
  0:å <=>
-   OnSetC _ [å|o:å] (u:|i:) Cns:+ %^V2VV: ( %^VOWLower: ) ;
+   OnSetC _ [å|o:å] (u:|i:) (ʹ:|0:ʹ) Cns:+ %^V2VV: ( %^VOWLower: ) ;
    OnSetC _ å (ʹ:|0:ʹ) Cns:+ %^V2VV: ;
    OnSetC _ å (ʹ:|0:ʹ) Cns:+ Vow: [Cns:*|:Cns*] %^PenV2VV: ;
 
@@ -1199,16 +1199,16 @@ OnSetC _ o (i|u) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^PenV2VV: ;
 
 "Even-syllabic nouns, for â:e"
 !! __@RULENAME@__ -  ǩiâpp:ǩieʹpˈpe
- â:e <=> i _ :ʹ [Cns:+|Cns:+ 0:ˈ Cns:+]  %^PALE: %^PAL: ;
+ â:e <=> i _ :ʹ [Cns:+|Cns:+ (0:ˈ|ˈ:0)  Cns:+]  %^PALE: %^PAL: ;
 !! +N+Sg+Ill
 !!€# miâ0rr%^PALE%^PAL%>e
 !!€0 mieʹrr00%>e
 !!€# piâ0ss%^PALE%^PAL
 !!€0 pieʹss00
-      u _ (:ʹ) [Cns:+|Cns:+ 0:ˈ Cns:+] %^PALE: %^PAL: ;
+      u _ (:ʹ) [Cns:+|Cns:+ (0:ˈ|ˈ:0) Cns:+] %^PALE: %^PAL: ;
 !!€# kuâ0ll%^PALE%^PAL
 !!€0 kueʹll00
-  [u|e:i]  _ (i|u) :ʹ [Cns:+|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ 0:ˈ Cns:+]  BetweenStemAndHeight %^VOWRaise: %^PALE: %^PAL: ;
+  [u|e:i]  _ (i|u) :ʹ [Cns:+|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ 0:ˈ Cns:+]  BetweenStemAndHeight (%^VOWRaise:) %^PALE: %^PAL: ;
 !! tieʹtted+V+Imprt+Sg2: __know/tietää__
 !!€# teâ0tt%^VOWRaise%^PALE%^PAL%^CC2C
 !!€0 tieʹđ00000
