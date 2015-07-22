@@ -81,6 +81,7 @@ GENERATED_LEXC_SRCS=\
 			 $(srcdir)/stems/Det_sms2x.lexc     \
 			 $(srcdir)/stems/Interj_sms2x.lexc     \
 			 $(srcdir)/stems/N_sms2x.lexc     \
+			 $(srcdir)/stems/N_Prop_sms2x.lexc     \
 			 $(srcdir)/stems/Num_sms2x.lexc     \
 			 $(srcdir)/stems/Pcle_sms2x.lexc     \
 			 $(srcdir)/stems/Pron_sms2x.lexc     \
@@ -96,6 +97,7 @@ GT_XML_SRCS=\
 			 stems/Det_sms2x.xml     \
 			 stems/Interj_sms2x.xml     \
 			 stems/N_sms2x.xml     \
+			 stems/N_Prop_sms2x.xml     \
 			 stems/Num_sms2x.xml     \
 			 stems/Pcle_sms2x.xml     \
 			 stems/Pron_sms2x.xml     \

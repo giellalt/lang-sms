@@ -71,10 +71,10 @@ LEXICON V_LEEʹD !!= * @CODE@ leeʹd:l
 +V+Pot+Sg4:%>eʹžžet K ;
 +V+Pot+ConNeg:%>eʹžže K ;
 +V+Inf:%>eeʹd K ;
-+V+PrsPrc:%>eʹddi K ;
-+V+PrfPrc:%>eämˈmaž K ;
-+V+PrfPrc:%>eämˈma K ;
-+V+PrfPrc:%>eäm K ;
++V+Act+PrsPrc:%>eʹddi K ;
++V+Act+PrfPrc:%>eämˈmaž K ;
++V+Act+PrfPrc:%>eämˈma K ;
++V+Act+PrfPrc:%>eäm K ;
 
 !! !!REGULAR VERBS
 !! !CLASS 1 HIGH VOWEL, NO PALATALIZATION
@@ -1993,8 +1993,8 @@ LEXICON V_TIEʹTTED !!= * @CODE@ tieʹtted:teâtt
 !+V+Imprt:			TIETTED-IMPRT ;
 +V+Imprt+Sg2:%^VOWRaise%^PALE%^PAL%^CC2C K	; ! tieʹđ
 
-+V+PrsPrc:%^VOWRaise%^PAL%>i K ; !vuõʹlǧǧi
-+V+PrsPrc:%^PAL%>i K ; !vueʹlǧǧi
++V+Act+PrsPrc:%^VOWRaise%^PAL%>i K ; !vuõʹlǧǧi
++V+Act+PrsPrc:%^PAL%>i K ; !vueʹlǧǧi
 
 
 
@@ -2827,9 +2827,9 @@ LEXICON VSUF-VUEJTED-ELSE
 +ActEss:%>eʹmen K ;
 +Actio:%>em K ;
 +Actio:%>em N_PEʹRRJEM ;
-+PrsPrc:%>eei K ;
-+PrsPrc+Der/N:%>ee N_TUÕĐŠTEEI ;
-+PrfPrc:%>am K ;
++Act+PrsPrc:%>eei K ;
++Act+PrsPrc+Der/N:%>ee N_TUÕĐŠTEEI ;
++Act+PrfPrc:%>am K ;
 +Pass+PrfPrc:%>ummu K ;
 +Pass+PrfPrc:%>uum K ;
 :e VABESS ;
@@ -3022,7 +3022,7 @@ LEXICON V_KUÂĐˈĐJED !!= * @CODE@ kuâđđjed:kuâđˈđ
 +V:%>j VSUF-VUEJTED-ELSE ; !!= * @CODE@ kuâđˈđjed
 
 +V+Ind+Prt+ConNeg:%>jâmma K ; ! kuâđˈđjâmma
-+V+PrfPrc:%>jâmma K ;
++V+Act+PrfPrc:%>jâmma K ;
 +V+Pass+PrfPrc:%>jum K ;
 
 
@@ -3048,10 +3048,21 @@ LEXICON V_VÕʹLLʼJED !!= * @CODE@ võʹll’jed:võʹll
 +V+Ind+Prt+Pl1:%>jiin             K  ; !WG ! võʹllʼjiin
 +V+Ind+Prt+Pl2:%>jiid             K  ; !WG ! võʹllʼjiid
 
-+V+PrfPrc:%>jâmma K ;
++V+Act+PrfPrc:%>jâmma K ;
 +V+Pass+PrfPrc:%>jum K ; !
 
 +V+Der/škueʹtted:%>je»škuätt V_PUEʹTTED ;
+
+LEXICON V_VÕʹLLʼJED-SG3 !!= * @CODE@ võʹll’jed:võʹll
++V+Ind+Prs+ConNeg:e    K ;   !!= * @CODE@ võʹlle
++V+Ind+Prs+Sg3:ai K ; !!= * @CODE@ võʹllai
++V+Ind+Prt+Sg3:%>ji K ;
++V+Cond+Sg3:%>jeʹči K ;
++V+Cond+ConNeg:%>jeʹče K ;
++V+Pot+Sg3:%>jež K ;
++V+Pot+ConNeg:%>ježe K ;
++V+Act+PrfPrc:%>jam K ;
+
 
 
 !! !CLASS 3 LOW VOWEL, PALATALIZATION
@@ -3116,9 +3127,9 @@ LEXICON V_KUÕCCJED !!= * @CODE@ kuõccjed:kuõcc
 +V+ActEss:%>jeʹmen K ;
 +V+Actio:%>jam K ;
 +V+Actio:%>jam N_SLOOHMAN ;
-+V+PrsPrc:%>jeei K ;
-+V+PrsPrc+Der/N:%>jee N_TUÕĐŠTEEI ;
-+V+PrfPrc:%>jam K ;
++V+Act+PrsPrc:%>jeei K ;
++V+Act+PrsPrc+Der/N:%>jee N_TUÕĐŠTEEI ;
++V+Act+PrfPrc:%>jam K ;
 +V+Pass+PrfPrc:%>jummu K ;
 +V+Pass+PrfPrc:%>juum K ;
 +V+VAbess:%>jeǩâni K ;
@@ -3190,9 +3201,9 @@ LEXICON V_STÅÅRJED
 +V+ActEss:%>jeʹmen K ;
 +V+Actio:%>jam K ;
 +V+Actio:%>jam N_SLOOHMAN ;
-+V+PrsPrc:%>jeei K ;
-+V+PrsPrc+Der/N:%>jee N_TUÕĐŠTEEI ;
-+V+PrfPrc:%>jam K ;
++V+Act+PrsPrc:%>jeei K ;
++V+Act+PrsPrc+Der/N:%>jee N_TUÕĐŠTEEI ;
++V+Act+PrfPrc:%>jam K ;
 +V+Pass+PrfPrc:%>jummu K ;
 +V+Pass+PrfPrc:%>juum K ;
 +V+VAbess:%>jeǩâni K ;
@@ -3226,9 +3237,9 @@ LEXICON V_SILTTEED !!= * @CODE@ siltteed:siltt
 !+V: GER_ ;
 !+V+Actio:%>eem K ;
 !+V+Actio:%>eem ATTESTED-NOUN-STEM ;
-!+V+PrsPrc:%>eei K ;
-!+V+PrsPrc+Der/N:%>ee N_TUÕĐŠTEEI ;
-!+V+PrfPrc:%>ääm K ;
+!+V+Act+PrsPrc:%>eei K ;
+!+V+Act+PrsPrc+Der/N:%>ee N_TUÕĐŠTEEI ;
+!+V+Act+PrfPrc:%>ääm K ;
 !+V+Pass+PrfPrc:%>ummu K ;
 !+V+Pass+PrfPrc:%>uum K ;
 !+V+VAbess:%>eǩâni K ;		!WG
@@ -3280,10 +3291,10 @@ LEXICON KAMRDED-01
 +V+Inf:%>ed K ;
 +V+ActEss:%>eʹmen K ;
 +V+Actio:%>am K ;
-+V+PrsPrc:%>eei K ;
-+V+PrsPrc+Der/N:%>ee N_TUÕĐŠTEEI ;
-+V+PrfPrc:%>am K ;
-+V+PrfPrc:%>âmma K ;
++V+Act+PrsPrc:%>eei K ;
++V+Act+PrsPrc+Der/N:%>ee N_TUÕĐŠTEEI ;
++V+Act+PrfPrc:%>am K ;
++V+Act+PrfPrc:%>âmma K ;
 +V+Pass+PrfPrc:%>ummu K ;
 +V+Pass+PrfPrc:%>um K ; !
 +V+Pass+PrfPrc:%>uum K ; !
@@ -3382,8 +3393,8 @@ LEXICON	VSUF-TEEʹMEED-ELSE
 +ActEss:%>eʹmmen K ;
 +Actio:%>eeʹm ATTESTED-NOUN-STEM ;
 +V+VAbess:%>eeǩâni K ; 
-+PrsPrc:%>eei K ;
-+PrsPrc+Der/N:%>ee N_TUÕĐŠTEEI ;
++Act+PrsPrc:%>eei K ;
++Act+PrsPrc+Der/N:%>ee N_TUÕĐŠTEEI ;
 +V+Act+PrfPrc:%>ääm K ;
 +V+Pass+PrfPrc:%>ummu K ;
 +V+Pass+PrfPrc:%>uum K ;
@@ -3516,8 +3527,8 @@ LEXICON VSUF-INF_ÂD
 +ActEss:%>men K ;
 +Actio:%>âm K ;
 +Actio:%>âm N_ǨIÕRÂČ ; ! mõõnnâm
-+PrsPrc:%>i K ;
-+PrfPrc:%>âm K ;
++Act+PrsPrc:%>i K ;
++Act+PrfPrc:%>âm K ;
 +Der/mõš:»mõš N_LOOKKMÕŠ ;
 
 LEXICON VSUF-IND-PRS-SG3_ÂD
@@ -3536,7 +3547,7 @@ LEXICON VSUF-INF_AD
 +Actio:%>am K ;
 +Actio:%>am N_SLOOHMAN ;
  VSUF-PRSPRC_AD ;
-+PrfPrc:%>am K ;
++Act+PrfPrc:%>am K ;
 +Der/mõš:»mõš N_LOOKKMÕŠ ;
 
 LEXICON VSUF-IND-PRS-SG3_AD
@@ -3561,7 +3572,7 @@ LEXICON VSUF-INF_ED
 LEXICON VSUF-IND-PRS-SG3_ED
 +Ind+Prs+Sg3: K ;
 +Ind+Prt+ConNeg:%>am K ;
-+PrfPrc:%>am K ; !HERE or ONE LEXICON UP
++Act+PrfPrc:%>am K ; !HERE or ONE LEXICON UP
 +Der/mõš:»mõš N_LOOKKMÕŠ ;
 
 LEXICON VSUF-IMPRT-PL3_ED !!= * @CODE@ puätˈtaz
@@ -3706,15 +3717,15 @@ LEXICON VSUF-IMPRT-CONNEGII_ED
 ! - - - - - -
 
 LEXICON VSUF-PRSPRC_AD
-+PrsPrc:ai K ;
-+PrsPrc+Sg+Nom:ai K ;
-+PrsPrc+Pl+Nom:%^CC2C%>ai K ;
-+PrsPrc+Pl+Nom:ai K ;
-+PrsPrc+Der/MWN: N_PÅÅSSAI ;
++Act+PrsPrc:ai K ;
++Act+PrsPrc+Sg+Nom:ai K ;
++Act+PrsPrc+Pl+Nom:%^CC2C%>ai K ;
++Act+PrsPrc+Pl+Nom:ai K ;
++Act+PrsPrc+Der/MWN: N_PÅÅSSAI ;
 
 LEXICON VSUF-PRSPRC_ED
-+PrsPrc:i K ;
-+PrsPrc+Sg+Nom:i K ;
-+PrsPrc+Pl+Nom:%^CC2C%>i K ;
-+PrsPrc+Pl+Nom:i K ;
-+PrsPrc+Der/MWN: N_JOOʹTTI ;
++Act+PrsPrc:i K ;
++Act+PrsPrc+Sg+Nom:i K ;
++Act+PrsPrc+Pl+Nom:%^CC2C%>i K ;
++Act+PrsPrc+Pl+Nom:i K ;
++Act+PrsPrc+Der/MWN: N_JOOʹTTI ;
