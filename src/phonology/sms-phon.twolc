@@ -1007,7 +1007,7 @@ Rules
 
 "0:ẹ relative vowel lengthening"
 !! __@RULENAME@__ - 
- 0:ẹ <=>         OnSetC _ ẹ (i|u) (ʹ:|0:ʹ) Cns: (Cns:*|:Cns*) %^V2VV: ;
+ 0:ẹ <=>         OnSetC _ ẹ (i|u) Cns: (Cns:*|:Cns*) %^V2VV: ;
 !!€# p0ẹss%^V2VV
 !!€0 pẹẹss0
 
@@ -1017,9 +1017,9 @@ Rules
  0:e <=> OnSetC _ e RelVowLengthening ;
 !!€# čââʹlmt0eʹm%^V2VV
 !!€0 čââʹlmtee0m0
-        OnSetC _ e (i) (ʹ:|0:ʹ) Cns: (Cns:*|:Cns*) %^V2VV: ;
-!!€# p0ess%^V2VV
-!!€0 peess0
+        OnSetC _ :e (i) (ʹ:|0:ʹ) Cns: (Cns:*|:Cns*) %^V2VV: ;
+!!€# p0ẹi0vv%^V2VV%^PAL%^CC2C
+!!€0 peeiʹv0000
          OnSetC _ i:e RelVowLengthening %^VOWLower: ;
          OnSetC _ i:e RelVowLengthening %^VOWLower: ;
 !!€# v0iǯǯ%^V2VV%^VOWLower%>as 
@@ -1230,6 +1230,8 @@ OnSetC _ o (i|u) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^PenV2VV: ;
 "Palatalization for ẹ:e"
 !! __@RULENAME@__ - used in
  ẹ:e <=> OnSetC (ẹ:|0:) _ (i|u) :ʹ [Cns:+|Cns:+ (0:ˈ|ˈ:0) Cns:+] BetweenStemAndPALNo %^PAL:  ;
+!!€# p0ẹi0vv%^V2VV%^PAL%^CC2C
+!!€0 peeiʹv0000
          OnSetC _ ẹ: (i|u) :ʹ [Cns:+|Cns:+ (0:ˈ|ˈ:0) Cns:+] BetweenStemAndPALNo %^PAL:  ;
 
 !! !VOWEL and ZERO ALTERNATION
@@ -1445,8 +1447,8 @@ OnSetC _ o (i|u) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^PenV2VV: ;
 
  v:0 <=>
   v: _    BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
-!!peiʹvv+N+Sg+Gen
-!!€# p0eiʹvv%^V2VV%^CC2C
+!!peiʹvv+N+Sg+Gen+Indef
+!!€# p0ẹi0vv%^V2VV%^PAL%^CC2C
 !!€0 peeiʹv000
  v: _  Vow: Cns: [Cns:* |:Cns*]  PenBetweenStemAndConsGrade [%^PenCC2C:|%^PenXYY2XY:] ;
 !! peiʹvv+N+Sg+Nom: __day/päivä__
