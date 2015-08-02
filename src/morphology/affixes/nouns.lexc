@@ -1184,7 +1184,7 @@ HatÂ-STEM-PX-STENGTHEN ;
 !! !!a-stems
 
 LEXICON N_PẸSS !!= * @CODE@ pess:pẹss
-!! analogy in PAPP
+!! analogy in N_PAPP
 ! 2.a.mono.gem
 +N: NMN_PẸSS ;
 LEXICON NMN_PẸSS
@@ -1239,7 +1239,7 @@ LEXICON NMN_PẸSS
 
 
 LEXICON N_ÄŊŊ !!= * @CODE@ äŋŋ:äŋŋ
-!! analogy in TOLL
+!! analogy in N_TOLL
 +N: NMN_ÄŊŊ ;
 LEXICON NMN_ÄŊŊ
 !! Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_gem
@@ -2178,28 +2178,57 @@ LEXICON NMN_NUʹBB
 !! !!  Extra strong grade: Sg.Ill
 !! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 !! !!FORMS
-!! !!(1) Sg.Nom: nuʹbb
-!! !!(2) Pl.Nom: nuuʹbb
-!! !!(3) Sg.Ill: nobba
-!! !!(4) Sg.Loc: nuuʹbbest
-!! !!(5) Sg.Com: nuuʹbbin
-!! !!(6) Ess: nuʹbben
-!! !!(7) Par: nuʹbbed
-!! !!(8) Pl.Acc: nuuʹbbid
-!! !!(9) Der/Dim.N.Sg.Nom: noobbaž
 !! NumContLex="1.113"
 !! ** Yaml: __N-nubb__
 !! * There are several stem types
 !!
-:%^PAL ATTESTED-NOUN-STEM ;			! nuʹbb
-:%^PAL SG-NOM ;	    			! nuʹbb
-:%^V2VV%^PAL SG-ABE/ACC/GEN-PL-NOM ;		! nuuʹbb
-:%^VOWLower%>a SG-ILL ;		! nobba
-:%^V2VV%^PAL%>e SG-LOC ;	    	   	! nuuʹbbest
-:%^V2VV%^PAL SG-COM_IN ;			! nuuʹbbin
-:%^PAL%>e ESS/PAR ; 	  			! nuʹbben
-:%^V2VV%^PAL PL-OBL ;			! nuuʹbbi
-+Der/Dim:%^V2VV%^VOWLower%> N_KUÂLAŽ ;	! noobbaž
+:%^PAL ATTESTED-NOUN-STEM ;			!!(1) Sg.Nom: nuʹbb
+:%^PAL SG-NOM ;	    			!!(1) Sg.Nom: nuʹbb
+:%^V2VV%^PAL SG-ABE/ACC/GEN-PL-NOM ;		!!(2) Pl.Nom: nuuʹbb
+:%^VOWLower%>a SG-ILL ;		!!(3) Sg.Ill: nobba
+:%^V2VV%^PAL%>e SG-LOC ;	    	   	!!(4) Sg.Loc: nuuʹbbest
+:%^V2VV%^PAL SG-COM_IN ;			!!(5) Sg.Com: nuuʹbbin
+:%^PAL%>e ESS/PAR ; 	  			!!(6) Ess: nuʹbben
+:%^V2VV%^PAL PL-OBL ;			!!(8) Pl.Gen: nuuʹbbi
++Der/Dim:%^V2VV%^VOWLower%> N_KUÂLAŽ ;	!!(9) Der/Dim.N.Sg.Nom: noobbaž
+
+LEXICON N_ČUʹǨǨ !!= * @CODE@ čuʹǩǩ:čukk
++N: NMN_ČUʹǨǨ ;
+LEXICON NMN_ČUʹǨǨ
+!! Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_gem_dd_type
+! gradation: yes
+! vowel: monophthong
+! weak: single
+!! !!1.3 Sg.Loc in -est (vowel shift)
+!! !!  Raised: Sg.Com, Pl.Obl
+!! !!  Lowered: ELSE
+!! !!  e-stems (Sg.Loc, Ess, Par).
+!! !!1.3.2 Sg.Ill vowel -a
+!! !!1.3.2.1 Has Palatalization
+!! !!  Palatalized: ELSE
+!! !!  Not Palatalized: Sg.Ill
+!! !!1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+!! !!1.3.2.1.1.1 Has Orthographic Gradation
+!! !!1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+!! !!  Strong grade: Sg.Nom, Ess, Par
+!! !!  Extra strong grade: Sg.Ill
+!! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+!! !!FORMS
+!! NumContLex="1.113"
+!! ** Yaml: __N-chukk__
+!! * There are several stem types
+!!
+:%^PAL ATTESTED-NOUN-STEM ;			!!(1) Sg.Nom: čuʹǩǩ
+:%^PAL SG-NOM ;	    			!!(1) Sg.Nom: čuʹǩǩ
+:%^V2VV%^PAL SG-ABE/ACC/GEN-PL-NOM ;		!!(2) Pl.Nom: čuuʹǩǩ
+:%^VOWLower%>a SG-ILL ;		!!(3) Sg.Ill: čokka
++Use/NG:%^U2Õ%>a SG-ILL ;		!!(3) Sg.Ill: čõkka
+:%^V2VV%^PAL%>e SG-LOC ;	    	   	!!(4) Sg.Loc: čuuʹǩǩest
+:%^V2VV%^PAL SG-COM_IN ;			!!(5) Sg.Com: čuuʹǩǩin
+:%^PAL%>e ESS/PAR ; 	  			!!(6) Ess: čuʹǩǩen
+:%^V2VV%^PAL PL-OBL ;			!!(8) Pl.Gen: čuuʹǩǩi
++Der/Dim:%^V2VV%^VOWLower%> N_KUÂLAŽ ;	!!(9) Der/Dim.N.Sg.Nom: čookkaž
++Use/NG+Der/Dim:%^V2VV%^U2Õ%> N_KUÂLAŽ ;	!!(9) Der/Dim.N.Sg.Nom: čõõkkaž
 
 LEXICON N_NJUUʹNN !!= * @CODE@ njuuʹnn:njuuʹnn
 +N: NMN_NJUUʹNN ;
@@ -4291,7 +4320,7 @@ LEXICON NMN_KUʹMPP
 
 
 
-LEXICON N_KAAʹFF !!= * @CODE@ 
+LEXICON N_KAAʹFF !!= * @CODE@ kaaʹff:kaaʹff
 +N: NMN_KAAʹFF ;
 LEXICON NMN_KAAʹFF
 ! gradation: yes
@@ -4308,29 +4337,19 @@ LEXICON NMN_KAAʹFF
 !! !!  Strong grade: Sg.Ill
 !! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 !! !!FORMS
-!! !!(1) Sg.Nom: kaaʹff
-!! !!(2) Pl.Nom: kaaʼf
-!! !!(3) Sg.Ill: kaaʹffe
-!! !!(4) Sg.Loc: kaaʹfest
-!! !!(5) Sg.Com: kaaʹfin
-!! !!(6) Ess: kaaʹffen
-!! !!(7) Par: kaaʹffed
-!! !!(8) Pl.Acc: kaaʹfid
-!! !!(9) Der/Dim.N.Sg.Nom: kaaʹfež
 !! ** Yaml: __N-kaaff__
 !! ???* There are several stem types
 !! * kaaʹff:kaaʹff
 !! NumContLex="1.1140000000000001"
-:  ATTESTED-NOUN-STEM ;
-: SG-NOM ;
-:%^CC2C SG-ABE/ACC/GEN-PL-NOM ;
-:%>e SG-ILL ;
-:%^CC2C%>e SG-LOC ;
-:%^CC2C SG-COM_IN ;
-:%>e ESS ; ! ess and prt without
-:%>e PAR ;
-:%^CC2C PL-OBL ;
-+Der/Dim:%^CC2C%> N_KUUʹMPEŽ ;
+:  ATTESTED-NOUN-STEM ; !!(1) Sg.Nom: kaaʹff
+: SG-NOM ; !!(1) Sg.Nom: kaaʹff
+:%^CC2C SG-ABE/ACC/GEN-PL-NOM ; !!(2) Pl.Nom: kaaʼf
+:%>e SG-ILL ; !!(3) Sg.Ill: kaaʹffe
+:%^CC2C%>e SG-LOC ; !!(4) Sg.Loc: kaaʹfest
+:%^CC2C SG-COM_IN ; !!(5) Sg.Com: kaaʹfin
+:%>e ESS/PAR ; !!(6) Ess: kaaʹffen
+:%^CC2C PL-OBL ; !!(8) Pl.Gen: kaaʹfi
++Der/Dim:%^CC2C%> N_KUUʹMPEŽ ; !!(9) Der/Dim.N.Sg.Nom: kaaʹfež
 
 
 
@@ -6752,7 +6771,7 @@ LEXICON N_SÄRNNAI !!= * @CODE@ särnnai:särnnai
 LEXICON N_VUEJJAI !!= * @CODE@ vuejjai:vuejjai
 ! is for nouns with ''-est'' +Loc
 ! gradation: yes
-!! ** Yaml: __sarnnai__
+!! ** Yaml: __N-vuejjai__
 !! * There are several stem types
 !! * vuejjai:vuejjai
 !! NumContLex="
