@@ -76,7 +76,9 @@ Alphabet
  %^PenVOWRaise:0 !!= * @CODE@ e>i, ä>e
  %^PenVOWLower:0 !!= * @CODE@ i>e, õ>â, â>ä, u>o, o>å
  %^LowerI2E:0	 !!= * @CODE@ this is for diphthong in mieʹlǩǩ:meâlkka
- %^PenLowerI2E:0	 !!= * @CODE@ this is for diphthong in mieʹlǩǩ:meâlkka
+ %^PenLowerI2E:0 !!= * @CODE@ this is for diphthong in mieʹlǩǩ:meâlkka
+ %^U2Õ:0	 !!= * @CODE@ lowers u>õ	 
+ %^PenU2Õ:0	 !!= * @CODE@ lowers u>õ	 
  %^VOWBack:0	     !!= * @CODE@ Backing e>õ, e>â vuäinn BUT vuõiʹni
  %^PenVOWBack:0	     !!= * @CODE@ Backing e>õ, e>â vuäinn BUT vuõiʹni
 
@@ -845,6 +847,13 @@ Rules
 ! OnSetC 0: _ (ʹ:|0:ʹ) [CNoV: Cns:*|Cns:+ (ˈ:|:ˈ) Cns:+]  %^PenV2VV:  %^CShort:    %^VOWLower: ; 
 ! juʹrdded > joordam
 
+"Even syllabic verbs I, vowel lowering u:õ "
+!! __@RULENAME@__ - deriving
+ u:õ <=>
+       [u:|OnsetC] _  (ʹ:|0:ʹ) [Cns:+|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^U2Õ: ;
+!!€# č0ukk%^V2VV%^U2Õ%>až
+!!€0 čõõkk00%>až
+    OnSetC  _ u: (ʹ:|0:ʹ) [Cns:+|Cns:+ (ˈ:|:ˈ) Cns:+]  %^U2Õ: ;
 
 
 
