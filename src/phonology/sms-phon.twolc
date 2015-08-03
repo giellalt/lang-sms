@@ -551,7 +551,9 @@ Rules
      [ :n | :l ] ([%^C2CC:|%^XY2XYY:]) %> _ (Vow:0) i:j ;
 !!€# valmštõõll%>0i%^I2J%>i
 !!€0 valmštõõll%>ʼj0%>i
-
+     [ :n | :l ] _ i:j ;
+!!€# jieʹll0i%^I2J%>e%>st
+!!€0 jieʹllʼj0%>e%>st
      n Vow: _ n %^RmVow: ;
      t Vow: _ t %^RmVow: ;
 !! mättʼted+V+Inf: __teach/opettaa__
@@ -1078,16 +1080,16 @@ Rules
 
 "Even syllabic verbs I, relative vowel lengthening 0:ä"
 !! __@RULENAME@__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
- 0:ä <=> OnSetC _ ä (i|u) (ʹ:|0:ʹ) Cns:+ %^V2VV: ;
+ 0:ä <=> OnSetC _ ä (i|:u) (ʹ:|0:ʹ) Cns:+ %^V2VV: ;
  OnSetC _ ä  (ʹ:|0:ʹ) Cns:+ %^V2VV: ([%^CC2C:|%^XYY2XY:]) RBound ;
 !!€# 0äldd%^V2VV%^CC2C
 !!€0 ääld000
 !!€# j0äuʹrr%^V2VV%^CC2C
 !!€0 jääuʹr000
- OnSetC _ [å:ä|ä|a:ä] (u|i) (ʹ:|0:ʹ) Cns:+ %^V2VV: ( %^VOWLower: )  ; 
+ OnSetC _ [å:ä|ä|a:ä] (:u|i) (ʹ:|0:ʹ) Cns:+ %^V2VV: ( %^VOWLower: )  ; 
 !Distinguishing mainstam and maainstam
 !- kååʹmmerd, maainâst Vowel lengthening in INDPRSSG3 and IMPSG2
-     _ ä (u|i) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] [%^PenV2VV:|%^IMPSG2:|%^INDPRSSG3:] ;
+     _ ä (:u|i) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] [%^PenV2VV:|%^IMPSG2:|%^INDPRSSG3:] ;
 
 
 
@@ -1199,10 +1201,10 @@ OnSetC _ o (i|u) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^PenV2VV: ;
 !! __@RULENAME@__ - luhtt  s s: ...
  h:u <=>
  Vow: (%{ʹ%}:) _ (:ʹ) [s s:|š š:|t t:|c c:|č č:] BetweenStemAndConsGrade %^XYY2VY: ;
-! Vow: (%{ʹ%}:) _ (ʹ:|0:ʹ) [s s:|š š:|t t:|c c:|č č:] [%^PenV2VV: %^CShort:|%^VOWXL:|%^VOWSH: %^CLong:  %^VOWLower: (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:] ;
 !! uhss+N+Der/Dim+N+Sg+Gen __door__
 !!€# uh0ss%^PAL%^XYY2VY%>e
 !!€0 uuʹs000%>e
+ Vow: (%{ʹ%}:) _ (:ʹ) [s s:|š š:|t t:|c c:|č č:] Vow: Cns:* PenBetweenStemAndConsGrade %^PenXYY2VY: ;
 
 "trisyllabic verbs and doer derivations, i>j"
 !! __@RULENAME@__ - used in
@@ -1297,7 +1299,7 @@ OnSetC _ o (i|u) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^PenV2VV: ;
 !!€0 uuʹd000
  
          ʹ:0 v:u (0:ˈ) _ [ʒ ʒ:|d d:|l l:|r r:]       BetweenStemAndPALNo  ( %^PAL:) RBound ;
-              h:u (0:ˈ) _ [c c:|č č:|s s:|š š:|t t:]  BetweenStemAndPALNo  %^PAL: ;
+              h: (0:ˈ) _ [c c:|č č:|s s:|š š:|t t:]  BetweenStemAndPALNo  %^PAL: %^XYY2VY: ;
 !!€# t0äh0tt%^V2VV%^PAL%^XYY2VY
 !!€0 tääuʹt0000
              [Vow:|:Vow] (0:ˈ) _ (i|u) [Cns:+|Cns:+ (ˈ:|0:ˈ) Cns:+] (i:) BetweenStemAndPALNo  %^PAL: ;
