@@ -126,6 +126,7 @@ See also: NMN_KUSS-PLC, which is the same, but minus PL forms and certain cases
  Extra strong grade: Sg.Nom, Ess, Par
  Extra strong grade: Sg.Ill
  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+similar_to: 
 !!FORMS
 ** Yaml: __N-kuss__
 
@@ -2709,22 +2710,17 @@ Is for nouns with ''-est'' Loc, Extra long vowel
 !!(2) Pl.Nom: tääut
 !!(3) Sg.Ill: tähtta
 !!(4) Sg.Loc: tääutest
-!!(5) Sg.Com: tääutin
-!!(6) Ess: täʹhtten
-!!(7) Par: täʹhtted
-!!(8) Pl.Acc: taauʹtid
-!!(9) Der/Dim.N.Sg.Nom: tääutaž
 NumContLex="1.113
 Is for nouns with ''-est'' Loc, Extra long vowel
-** Yaml: __N-kerjj__
- * :%^PAL ATTESTED-NOUN-STEM ;  
- * :%^PAL SG-NOM ;  
- * :%^V2VV%^PAL%^XYY2VY SG-ABE/ACC/GEN-PL-NOM ;   
- * :%>a SG-ILL ;   
- * :%^V2VV%^PAL%^XYY2VY%>e SG-LOC ;   
- * :%^V2VV%^VOWRaise%^PAL%^XYY2VY SG-COM_IN/PL-OBL ;   
- * :%^PAL%>e ESS/PAR ;   
- * +Der/Dim:%^V2VV%^PALNo%^XYY2VY%> N_KUÂLAŽ ;   
+** Yaml: __N-taehtt__
+ * :%^PAL ATTESTED-NOUN-STEM ;   (1) Sg.Nom: täʹhtt
+ * :%^PAL SG-NOM ;   (1) Sg.Nom: täʹhtt
+ * :%^V2VV%^PAL%^XYY2VY SG-ABE/ACC/GEN-PL-NOM ;    (2) Pl.Nom: tääuʹt
+ * :%>a SG-ILL ;    (3) Sg.Ill: tähtta
+ * :%^V2VV%^PAL%^XYY2VY%>e SG-LOC ;    (4) Sg.Loc: tääuʹtest
+ * :%^V2VV%^VOWRaise%^PAL%^XYY2VY SG-COM_IN/PL-OBL ;    (5) Sg.Com: tääuʹtin
+ * :%^PAL%>e ESS/PAR ;    (6) Ess: täʹhtten
+ * +Der/Dim:%^V2VV%^PALNo%^XYY2VY%> N_KUÂLAŽ ;    !(9) Der/Dim.N.Sg.Nom: tääutaž
 
  * LEXICON N_RUʹHSS  ruʹhss:ruʹhss
 !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -3272,6 +3268,19 @@ jarplan:jarplan
 !!2.1.3.3.1.3.4.1.3 Sg.Ill Weak Grade
 atom:atom
 ** Yaml: __N-atom__
+
+ * LEXICON N_AIHAM  aiham:aiham
+!!2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
+!!2.1 Sg.Loc in -ast. a-stems (Sg.Loc, Ess, Par).
+!!2.1.3 Sg.Ill in palatalization and -a
+!!2.1.3.3 Has Gradation in last syllable
+!!2.1.3.3.1 Monophthong
+!!2.1.3.3.1.3 Consonant always short
+!!2.1.3.3.1.3.4 Sg.Nom Short vowel AND Short consonant
+!!2.1.3.3.1.3.4.1.Sg.Gen Weak Grade
+!!2.1.3.3.1.3.4.1.3 Sg.Ill extra Strong Grade
+** Yaml: __N-aiham__
+
 
 CLASS 2 NOMINALS with high stem vowel and i-stems
  * LEXICON N_JUURD  juurd:jurdd
@@ -3925,9 +3934,6 @@ nallšem+N+Sg+Gen: kaađneeʹǩǩ
 292-295
 ** Yaml: __A-chaalmtem__
 
-pååssai:pååss
-also a derivattion from the verb pååssad
-
 
 
 
@@ -4028,6 +4034,51 @@ NumContLex="
 * There are several stem types
 * 
 NumContLex="
+ * +N: ATTESTED-NOUN-STEM ; 
+ * +N: SG-NOM ; 
+ * +N: SG-ABE/ACC/GEN ; 
+ * +N:%^RmVow%^I2J%>a SG-ILL ; 
+ * +N:%^RmVow%^I2J%>e SG-LOC ; 
+ * +N:%^RmVow%^V2VV SG-COM_IN ; 
+ * +N:%^I2J%>e ESS/PAR ; 
+ * +N:%^PenV2VV PL-NOM ; 
+ * +N:%^RmVow%^I2J PL-OBL ; 
+ * +Use/NG+N: PL-NOM ; 
+ * +Use/NG+N:%^PenV2VV%^RmVow%^I2J PL-OBL ; 
+
+ * LEXICON N_PEELLAI  peellai:peellai
+** Yaml: __paassai__
+* There are several stem types
+* 
+NumContLex="
+ * +N: ATTESTED-NOUN-STEM ; 
+ * +N: SG-NOM ;  Sg.Nom.Indef: peellai 
+ * +N: SG-ABE/ACC/GEN ; 
+ * +N:%^RmVow%^I2J%>a SG-ILL ;  Sg.Ill.Indef: peellja
+ * +N:%^RmVow%^I2J%>e SG-LOC ; 
+ * +N:%^RmVow%^V2VV SG-COM_IN ; 
+ * +N:%^I2J%>e ESS/PAR ; 
+ * +N:%^PenCC2C PL-NOM ;  Pl.Nom.Indef: peelai
+ * +N:%^RmVow%^I2J PL-OBL ; 
+ * +Use/NG+N: PL-NOM ; 
+ * +Use/NG+N:%^PenCC2C%^RmVow%^I2J PL-OBL ; 
+
+ * LEXICON N_PÅÅSSAI  pååssai:pååssai
+** Yaml: __paassai__
+* There are several stem types
+* 
+NumContLex="
+ * +N: ATTESTED-NOUN-STEM ; 
+ * +N: SG-NOM ;  Sg.Nom.Indef: pååssai 
+ * +N: SG-ABE/ACC/GEN ; 
+ * +N:%^RmVow%^I2J%>a SG-ILL ;  Sg.Ill.Indef: pååssja
+ * +N:%^RmVow%^I2J%>e SG-LOC ; 
+ * +N:%^RmVow%^I2J SG-COM_IN ; 
+ * +N:%^I2J%>e ESS/PAR ; 
+ * +N:%^PenKK2GG PL-NOM ;  Pl.Nom.Indef: pååzzai
+ * +N:%^RmVow%^I2J PL-OBL ; 
+ * +Use/NG+N: PL-NOM ; 
+ * +Use/NG+N:%^PenKK2GG%^RmVow%^I2J PL-OBL ; 
 
  * LEXICON N_SÄRNNAI  särnnai:särnnai
 ** Yaml: __sarnnai__
@@ -4042,6 +4093,12 @@ NumContLex="
 * vuejjai:vuejjai
 NumContLex="
 
+
+ * LEXICON N_REÄKKAI  reäkkai:reäkkai
+** Yaml: __sarnnai__
+* There are several stem types
+* reäkkai:reäkkai
+NumContLex="
 
  * LEXICON N_MEÄLTTAI  meälttai:meälttai
 ** Yaml: __sarnnai__
@@ -4092,6 +4149,7 @@ NumContLex="1.2"
 * There are several stem types
 * jieʹlli:jieʹlli
 NumContLex="1.2"
+ * +N:%^I2J%>e SG-LOC ;  jieʹllʼjest
 
  * LEXICON N_LIEʹĐˈĐI  lieʹđđi:lieʹđˈđi
 ** Yaml: __N-liedhdhdhi__
@@ -4127,6 +4185,25 @@ Class 7 according to Feist 154-155
  * LEXICON N_VUÂPˈPAI  vuâppai:vuâpˈp
 ** Yaml: __vuappai__
 * There are several stem types
+
+
+ * LEXICON N_KAAMMI  kaammi:kaamm
+** Yaml: __piannai__
+* There are several stem types
+kaammi
+käʹmme
+kaammjen
+käʹmmi
+
+
+ * LEXICON N_PIÂNNAI  piânnai:piânˈn
+** Yaml: __piannai__
+* There are several stem types
+piânnai
+pieʹnˈne
+piânnʼjen
+pieʹnˈni
+piânˈnʼji
 
 
 Class 8 according to Feist 155-157
