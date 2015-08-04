@@ -1304,7 +1304,7 @@ OnSetC _ o (i|u) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^PenV2VV: ;
               h: (0:ˈ) _ [c c:|č č:|s s:|š š:|t t:]  BetweenStemAndPALNo  %^PAL: %^XYY2VY: ;
 !!€# t0äh0tt%^V2VV%^PAL%^XYY2VY
 !!€0 tääuʹt0000
-             [Vow:|:Vow] (0:ˈ) _ (i|u) [Cns:+|Cns:+ (ˈ:|0:ˈ) Cns:+] (i:) BetweenStemAndPALNo  %^PAL: ;
+             [Vow:|:Vow] (0:ˈ) _ (i|u) Cns: [Cns:*|:Cns*|Cns:* (ˈ:|0:ˈ) Cns:*] (i:) BetweenStemAndPALNo  %^PAL: ;
 !!€# saa0kk%^VV2V%^PAL%>e
 !!€0 s0aʹǩǩ00%>e
 !!€# mõõ0nn%^VV2V%^VOWLower%^PAL%>e
@@ -2035,10 +2035,13 @@ OnSetC _ o (i|u) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^PenV2VV: ;
  0:ǧ <=>  2ShortVow  :ʹ  l ǥ: _ Vow: Cns:+ PenBetweenStemAndPALNo (%^PenPALE:|%^PenPALÄ:|%^PenPALẸ:) %^PenPAL: %^PenXY2XYY: ;
 !! }}}
 
-"Consonant lengthening 0:ǩ"
+"Consonant lengthening 0:ǩ "
 !! __@RULENAME@__ - used in
 !! {{{
- 0:ǩ <=>   :ʹ  l ǩ _ Vow: Cns:+ PenBetweenStemAndPALNo (%^PenPALE:|%^PenPALÄ:|%^PenPALẸ:) %^PenPAL: %^PenXY2XYY: ;
+
+ 0:ǩ <=>
+  ǩ _ BetweenStemAndConsGrade %^C2CC: ;
+   :ʹ  l ǩ _ Vow: Cns:+ PenBetweenStemAndPALNo (%^PenPALE:|%^PenPALÄ:|%^PenPALẸ:) %^PenPAL: %^PenXY2XYY: ;
 !! }}}
 
 "Consonant lengthening 0:k"
