@@ -333,6 +333,8 @@ BetweenStemAndPALNo = [ BetweenStemAndHeight [(%^VOWLower:|%^VOWRaise:|%^LowerI2
 !! possible triggers between word end and consonant grade
 BetweenStemAndConsGrade = [ BetweenStemAndHeight ((%^VOWRaise:|%^VOWLower:|%^LowerI2E:) ((%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:|%^VOWLower: %^PALÄ: |(%^PALÕ:|%^PALE:|%^PALÄ:|%^PALẸ:) (%^Allegro:) %^PAL:)| %^VOWBack: (%^Allegro:) (%^PALNo:|%^PAL:) ) ] ;
 
+!! possible triggers between vowel length and Palatalization
+BetweenVowLengthAndPALNo = [(%^VOWLower:|%^VOWRaise:|%^LowerI2E:) (%^PALÄ:|%^PALE:|%^PALẸ:|%^PALÕ:|%^PALÂ:)| %^VOWBack: ] ;
 
 !! possible triggers between VowHeight and word end
 !! {{{
@@ -1252,7 +1254,7 @@ OnSetC _ o (i|u) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^PenV2VV: ;
  ẹ:e <=> OnSetC (ẹ:|0:) _ (i|u) :ʹ [Cns:+|Cns:+ (0:ˈ|ˈ:0) Cns:+] BetweenStemAndPALNo %^PAL:  ;
 !!€# p0ẹi0vv%^V2VV%^PAL%^CC2C
 !!€0 peeiʹv0000
-         OnSetC _ ẹ: (i|u) :ʹ [Cns:+|Cns:+ (0:ˈ|ˈ:0) Cns:+] BetweenStemAndPALNo %^PAL:  ;
+         OnSetC _ ẹ: (i|u) :ʹ [Cns:+|Cns:+ (0:ˈ|ˈ:0) Cns:+] BetweenVowLengthAndPALNo %^PAL:  ;
 
 !! !VOWEL and ZERO ALTERNATION
 
