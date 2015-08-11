@@ -351,7 +351,7 @@ PenBetweenStemAndConsGrade = [(%^PenV2VV:|%^PenVV2V:) ((%^PenVOWRaise:|%^PenVOWL
 PenBetweenStemAndVowelLoss = [(%^PenV2VV:|%^PenVV2V:) [(%^PenVOWRaise:|%^PenVOWLower:) ((%^PenPALÂ:|%^PenPALÕ:) (%^PenAllegro:) %^PenPALNo:|(%^PenPALE:|%^PenPALÄ:|%^PenPALẸ:|%^PenPALÕ:) (%^PenAllegro:) %^PenPAL:)| %^PenVOWBack: (%^PenAllegro:) (%^PenPALNo:|%^PenPAL:)] ([%^PenC2CC:|%^PenXY2XYY:]|%^PenCC2C:|%^PenXYY2XY:|%^PenCC2CCC:)] ;
 
 
-PenBetweenStemAndStemFinalVoicing = [(%^PenV2VV:|%^PenVV2V:) [(%^PenVOWRaise:|%^PenVOWLower:) ((%^PenPALÂ:|%^PenPALÕ:) (%^PenAllegro:) %^PenPALNo:|(%^PenPALÕ:|%^PenPALE:|%^PenPALÄ:|%^PenPALẸ:) (%^PenAllegro:) %^PenPAL:)| %^PenVOWBack: (%^PenAllegro:) (%^PenPALNo:|%^PenPAL:) ] ([%^PenC2CC:|%^PenXY2XYY:]|%^PenCC2C:|%^PenXYY2XY:|%^PenCCC2CC:|%^PenCC2CCC:) (%^RmVow:)] ;
+PenBetweenStemAndStemFinalVoicing = [(%^PenV2VV:|%^PenVV2V:) [(%^PenVOWRaise:|%^PenVOWLower:) ((%^PenPALÂ:|%^PenPALÕ:) (%^PenAllegro:) %^PenPALNo:|(%^PenPALÕ:|%^PenPALE:|%^PenPALÄ:|%^PenPALẸ:) (%^PenAllegro:) %^PenPAL:)| %^PenVOWBack: (%^PenAllegro:) (%^PenPALNo:|%^PenPAL:) ] (%^PenC2CC:|%^PenXY2XYY:|%^PenXYY2VY:|%^PenCC2C:|%^PenXYY2XY:|%^PenCCC2CC:|%^PenCC2CCC:) (%^RmVow:)] ;
 
 PenBetweenPALNoAndMorph = [(%^PenCC2C:|%^PenC2CC:|%^PenXYY2XY:|%^PenXYY2XYYY:|%^PenKK2GG:|%^PenGG2KK:|%^PenCC2CCC:|%^PenC2CCC:|%^PenCCC2C:|%^PenCCC2CC:|%^PenXYYY2XYY:|%^PenXYYY2XY:|%^PenXY2XYY:|%^PenXYY2VY:|%^PenXYY2VYY:|%^PenKKK2GG:|%^PenGG2KKK:) RBound ] ;
 
@@ -1219,6 +1219,9 @@ OnSetC _ o (i|u) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^PenV2VV: ;
 !!€# uh0ss%^PAL%^XYY2VY%>e
 !!€0 uuʹs000%>e
  Vow: (%{ʹ%}:) _ (:ʹ) [s s:|š š:|t t:|c c:|č č:] Vow: Cns:* PenBetweenStemAndConsGrade %^PenXYY2VY: ;
+!! piiutâs+N+Sg+Nom __clothing/vaate__
+!!€# p0ihttâz%^PenV2VV%^PenXYY2VY%^DeVC
+!!€0 piiut0âs000
 
 "trisyllabic verbs and doer derivations, i>j"
 !! __@RULENAME@__ - used in
@@ -1772,6 +1775,9 @@ OnSetC _ o (i|u) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^PenV2VV: ;
 !! aaunâs+N+Sg+Nom: __material/aine__
 !!€# 0aunnâz%^PenV2VV%^PenXYY2XY%^DeVC
 !!€0 aaun0âs000
+!! piiutâs+N+Sg+Nom __clothing/vaate__
+!!€# p0ihttâz%^PenV2VV%^PenXYY2VY%^DeVC
+!!€0 piiut0âs000
 
 "Devoicing ž:š"
 !! __@RULENAME@__ - used in
@@ -1789,9 +1795,12 @@ OnSetC _ o (i|u) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^PenV2VV: ;
 !!€0 aaut000
          Vow: (%{ʹ%}:) h: (ʹ:|0:ʹ)           t: _ BetweenStemAndConsGrade  %^XYY2VY: ;
 
- t _ Vow: Cns:+ PenBetweenStemAndConsGrade %^PenXYY2XY: ;
+ t _ Vow: Cns:+ PenBetweenStemAndConsGrade [%^PenXYY2XY:|%^PenXYY2VY:] ;
 !!€# k0onttâr%^PenV2VV%^PenXYY2XY
 !!€0 koont0âr00
+!! piiutâs+N+Sg+Nom __clothing/vaate__
+!!€# p0ihttâz%^PenV2VV%^PenXYY2VY%^DeVC
+!!€0 piiut0âs000
 
 
 "Even syllabic verbs I, third consonant loss" 
