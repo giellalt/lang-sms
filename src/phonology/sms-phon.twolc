@@ -746,7 +746,7 @@ Rules
 !! čääʹcc+N+Pl+Acc __water__
 !!€# čääʹcc%^VOWRaise%^KK2GG%>id
 !!€0 čaaʹʒʒ00%>id
-  OnSetC (0:a)  _ u  (ʹ:|0:ʹ) [Cns:+|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ 0:ˈ Cns:+] BetweenStemAndHeight %^VOWRaise: %>  u ;
+  OnSetC (0:a)  _ (u|i)  (ʹ:|0:ʹ) [Cns:+|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ 0:ˈ Cns:+] BetweenStemAndHeight %^VOWRaise:  ;
          OnSetC  ä:    _    (ʹ:|0:ʹ) [Cns:+|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ 0:ˈ Cns:+] BetweenStemAndHeight %^VOWRaise: [%^C2CC:|%^XY2XYY:]  %>  a ; 
          OnSetC  ä:    _    (ʹ:|0:ʹ) [Cns:+|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ 0:ˈ Cns:+] BetweenStemAndHeight %^VOWRaise: ;
 
@@ -1101,8 +1101,8 @@ Rules
  OnSetC _ [å:ä|ä|a:ä] (:u|i) (ʹ:|0:ʹ) Cns:+ %^V2VV: ( %^VOWLower: )  ; 
 !Distinguishing mainstam and maainstam
 !- kååʹmmerd, maainâst Vowel lengthening in INDPRSSG3 and IMPSG2
-     _ ä (:u|i) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] [%^PenV2VV:|%^IMPSG2:|%^INDPRSSG3:] ;
-
+    OnSetC _ ä (:u|i) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] [%^PenV2VV:|%^IMPSG2:|%^INDPRSSG3:] ;
+    OnSetC _ ä (i|:u) (ʹ:|0:ʹ) Cns:+ Vow: Cns:* %^PenV2VV: ;
 
 
 
@@ -1442,11 +1442,11 @@ OnSetC _ o (i|u) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^PenV2VV: ;
 "Even syllabic verbs I, cg m:0"
 !! __@RULENAME@__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, 
  m:0 <=>
- Vow: (ʹ:|0:ʹ) (s|r|l|p|d:)  m: _ BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
+ Vow: (ʹ:|0:ʹ) (s|r|l|p|d:)  m: (ˈ:) _ BetweenStemAndConsGrade [%^CC2C:|%^CCC2C:|%^XYY2XY:] ;
 !!€# sääʹmm%^CC2C
 !!€0 sääʹm00
-         Vow: (ʹ:) h: (ʹ:|0:ʹ)      m: _ BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
-         m: _ Vow: Cns:+ PenBetweenStemAndConsGrade [%^PenCC2C:|%^PenXYY2XY:] ;
+         Vow: (ʹ:) h: (ʹ:|0:ʹ)      m: (ˈ:) _ BetweenStemAndConsGrade [%^CC2C: |%^CCC2C:|%^XYY2XY:] ;
+         m: (ˈ:) _ Vow: Cns:+ PenBetweenStemAndConsGrade [%^PenCC2C:|%^PenCCC2C:|%^PenXYY2XY:] ;
 !! kåʹmrded+V+Ind+Prs+Sg3 __bow__
 !!€# k0åʹmmerd%^PenV2VV%^PenVow2a
 !!€0 kååʹmmard00
