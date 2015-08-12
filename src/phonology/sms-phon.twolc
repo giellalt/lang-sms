@@ -342,6 +342,8 @@ BetweenVowHeightAndMorph = [(%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) ((%
 !! }}}
 
 
+BetweenPALNoAndMorphRightArrow = [(%^CC2C:|%^C2CC:|%^XY2XYY:|%^XYY2XY:|%^KK2GG:|%^GG2KK:|%^CC2CCC:|%^C2CCC:|%^CCC2C:|%^CCC2CC:|%^XYYY2XYY:|%^XYYY2XY:|%^XY2XYYY:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:|%^GG2KKK:) ] ;
+
 BetweenPALNoAndMorph = [(%^CC2C:|%^C2CC:|%^XY2XYY:|%^XYY2XY:|%^KK2GG:|%^GG2KK:|%^CC2CCC:|%^C2CCC:|%^CCC2C:|%^CCC2CC:|%^XYYY2XYY:|%^XYYY2XY:|%^XY2XYYY:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:|%^GG2KKK:) RBound ] ;
 
 PenBetweenStemAndPALNo = [(%^PenV2VV:|%^PenVV2V:) (%^PenVOWRaise:|%^PenVOWLower:|%^PenVOWBack:) (%^PenAllegro:) ] ;
@@ -571,9 +573,9 @@ Rules
         s (ˈ:) s BetweenStemAndConsGrade (%^CCC2CC:) %>  _ s ; 
         t (ˈ:) t BetweenStemAndConsGrade (%^CCC2CC:) %>  _ t ; 
         k (ˈ:) k BetweenStemAndConsGrade (%^CCC2CC:) %>  _ k ; 
-        :ǩ (ˈ:) :ǩ BetweenStemAndConsGrade (%^CCC2CC:) %>  _ ǩ ; 
-        :ž (ˈ:) :ž BetweenStemAndConsGrade (%^CCC2CC:) %>  _ ž ; 
-        :č (ˈ:) :č BetweenStemAndConsGrade (%^CCC2CC:) %>  _ č ; 
+        :ǩ (ˈ:) :ǩ BetweenStemAndConsGrade BetweenPALNoAndMorphRightArrow %> _ ǩ ; 
+        :ž (ˈ:) :ž BetweenStemAndConsGrade BetweenPALNoAndMorphRightArrow %>  _ ž ; 
+        :č (ˈ:) :č BetweenStemAndConsGrade BetweenPALNoAndMorphRightArrow %>  _ č ; 
 !!€# ijss%>0sa
 !!€# ijss%>ʼsa
 
@@ -843,7 +845,7 @@ Rules
 !! suukkâd+V+Imprt+Sg3: __row/soutaa__
 !!€# suukk%^VOWLower%^KK2GG%>as
 !!€# sooǥǥ00%>as
-       OnSetC (0:o) _  (ʹ:| 0:ʹ) [CNoV: Cns:*|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWLower: ; 
+       OnSetC (0:o) _ (ʹ:| 0:ʹ) [CNoV: Cns:*|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWLower: ; 
 !       OnSetC (0:o) _  (ʹ:| 0:ʹ) [CNoV: Cns:*|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWLower: (%^VOWFront:|%^VOWBack:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ; 
 !! juʹrdded+V+Ind+Prs+Sg1 __think__
 !!€# j0urdd%^V2VV%^VOWLower%^CC2C%>am
@@ -852,7 +854,7 @@ Rules
 
  OnSetC  _ (ʹ:)  v:u (0:ʹ) [Cns:+|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: (%^VOWFront:|%^VOWBack:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
 ! OnSetC (0:) _ (ʹ:) [CNoV: Cns:*|Cns:+ (ˈ:|:ˈ) Cns:+] VNeutrGrade %^VOWLower: (%^VOWFront:|%^VOWBack:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
- OnSetC (0:) _ %{VU%}: (ʹ:|0:ʹ) Cns:+ %^VOWLower: ;
+ OnSetC (0:) _ %{VU%}: (ʹ:|0:ʹ) Cns:+ BetweenStemAndHeight %^VOWLower: ;
 !! stuuʹl+N+Sg+Ill: __chair/tuoli__
 !!€# st0u%{VU%}ʹl%^V2VV%^VOWLower%^PALNo%>a
 !!€0 stoou0l000%>a
