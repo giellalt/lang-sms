@@ -2519,7 +2519,7 @@ LEXICON V_VUẸʹĐĐED !!= * @CODE@ vueʹđđed:vuäđđ
 !!  +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 !! Weak-StableV-Palatalization
-+V:%^PAL%^CC2C VSUF-IND-PRS-CONNEG_ED ; !!= * @CODE@ (5) vueʹđ
++V:%^PAL%^CC2C VSUF-IND-PRS-CONNEG_ED ; !!= * @CODE@ (5) vuäʹđ
 !! Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 
 !! Weak-RaisedVowel-Palatalization
@@ -2620,34 +2620,45 @@ LEXICON V_TÄIʹDDED !!= * @CODE@ täiʹdded:täidd
 
 LEXICON V_CEÄʹLǨǨED !!= * @CODE@ ceäʹlǩǩed:ceälkk
 ! FORMS
-! (1) +V+Inf: ceäʹlǩǩed
-!   Ind.Prs.Pl1-Pl2, Ind.Prt.ConNeg
-!   Imprt.Pl1-Pl2-Pl3, ActEss, Actio, PrsPrc, PrfPrc
-! (2) +V+Ind+Prs+Sg3: ceälkk
-! (3) +V+Ind+Prs+Pl3: ceäʹlǩǩe
-! (4) +V+Ind+Prt+Pl3: cieʹlǩǩe
-!   Ind.Prt.Sg1-Sg2-4
-! (5) +V+Imprt+Sg2: cieʹlj
-!   Ind.Prs.Sg1-Sg2-4-ConNeg
-!   Ind.Prt.Sg3-Pl1-Pl2
-!   Imprt.2.ConNeg
-!   VAbe, GerTemp, GerInstr
-!   Cond-Pot
-! (6) +V+Pot+Sg3: cieʹljež
-! (7) +V+Imprt+Sg3: ceälkas
-! (8) +V+Imprt+ConNegII: ciâlkku
-!    Pass.PrfPrc
-! ceäʹlǩǩed:ceälkk
-+V:%^PAL VSUF-INF_ED ; !1
-+V: VSUF-IND-PRS-SG3_ED ; !2 ceälkk
-+V+Ind+Prs+Pl3:%^PAL%>e K ; !3
-+V:%^VOWRaise%^PALE%^PAL%> VSUF-IND-PRT-PL3_ED ; !4
-+V:%^XYY2XY VSUF-IND-PRS-CONNEG_ED ; !5
-+V:%^VOWRaise%^PALE%^PAL%^XYY2XY%> VSUF-POTENTIAL_ED ; !6
-+V:%^XYY2XY%> VSUF-CONDITIONAL_ED ; !7
-+V+Imprt+Sg3:%^XYY2XY%>as K ; !7
-+V: VSUF-IMPRT-CONNEGII_ED ; !8
 
+!!
++V:%^PAL VSUF-INF_ED ; !!= * @CODE@ (1) +V+Inf: ceäʹlǩǩed
+!! V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
+!! Actio, ActEss, PrsPrc
+
+!!
++V: VSUF-IND-PRS-SG3_ED ; !!= * @CODE@ (2) +V+Ind+Prs+Sg3: ceälkk
+!! +V+Ind+Prs+Sg3, Ind.Prt.ConNeg, PrfPrc
+
+!!
++V+Ind+Prs+Pl3:%^PAL%>e K ; !!= * @CODE@ (3) +V+Ind+Prs+Pl3: ceäʹlǩǩe
+!! +V+Ind+Prs+Pl3
+
+!!
++V:%^VOWRaise%^PALE%^PAL%> VSUF-IND-PRT-PL3_ED ; !!= * @CODE@ (4) +V+Ind+Prt+Pl3: cieʹlǩǩe
+!!  +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
+
+!!
++V:%^VOWRaise%^PALẸ%^PAL%^XYY2XY VSUF-IND-PRS-CONNEG_ED ; !!= * @CODE@ (5) +V+Imprt+Sg2: ciẹʹlǩ
+!! Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
+
+!!
++V:%^VOWRaise%^PALE%^PAL%^XYY2XY%> VSUF-POTENTIAL_ED ; !!= * @CODE@ (6) +V+Pot+Sg3: cieʹlǩi
+!! Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
+
+!!
++V:%^XYY2XY%> VSUF-CONDITIONAL_ED ; !!= * @CODE@ (7) +V+Ind+Prs+Sg1: ceälkam
+!! Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
+
+!!
++V:%^VOWRaise VSUF-IMPRT-CONNEGII_ED ; !!= * @CODE@ (8) +V+Imprt+ConNegII: ciâlkku
+!! Imprt+ConNeg, Pass+PrfPrc
+
+!!
++V: VSUF-IMPRT-PL3_ED ;  !!= * @CODE@ +V+Imprt+Pl3 ceälkkaz
+!! Imprt+Pl3
+
+!! Allegro (10)
 +V+Der/škueʹtted:%^PAL%^XYY2XY»škuätt V_PUEʹTTED ;
 
 LEXICON V_MEÄʹTTED !!= * @CODE@ meäʹtted:meätt
