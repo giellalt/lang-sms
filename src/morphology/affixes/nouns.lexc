@@ -1660,6 +1660,7 @@ LEXICON NMN_MEÂRKK
 ! strong_grade: long
 ! Sg.Loc: âst
 ! Sg.Ill: palatalization-AND-e
+
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
 !! !!1.1 Sg.Loc in -âst (no vowel shift, all raised)
 !! !!  â-stems (Sg.Loc, Ess, Par).
@@ -1726,29 +1727,20 @@ LEXICON NMN_VUÂRR
 !! !!  Strong grade: Sg.Nom, Ess, Par
 !! !!  Extra strong grade: Sg.Ill
 !! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+!! uâ:uõ, eä:iâ
 !! !!FORMS
-!! !!(1) Sg.Nom: vuârr
-!! !!(2) Pl.Nom: vuâr
-!! !!(3) Sg.Ill: vuõrˈru
-!! !!(4) Sg.Loc: vuârast
-!! !!(5) Sg.Com: vuârain
-!! !!(6) Ess: vuârran
-!! !!(7) Par: vuârrad
-!! !!(8) Pl.Acc: vuâraid
-!! !!(9) Dim.N.Sg.Nom: vuõruž (2009: 310)
 !NumContLex="1.1120000000000001"
 !! N_A-URaise3-32
 !! ** Yaml: __N-vuarr__
- ATTESTED-NOUN-STEM ;			! vuârr
-: SG-NOM ;	    			! vuârr
-:%^CC2C SG-ABE/ACC/GEN-PL-NOM ;			! vuâr
-:%^VOWRaise%>u SG-ILL ;			! vuõrˈru
-:%^CC2C%>a SG-LOC ;   			! vuârast
-:%^CC2C%>a SG-COM_IN ;			! vuârain
-:%>a ESS ; 	     			! vuârran
-:%>a PAR ;				! vuârrad
-:%^CC2C%>a PL-OBL ;			! vuârai, 
-+Der/Dim:%^CC2C%^VOWRaise%> N_PIISSUŽ ;	! vuõruž,
+ ATTESTED-NOUN-STEM ;			!!(1) Sg.Nom: vuârr
+: SG-NOM ;	    			!!(1) Sg.Nom: vuârr
+:%^CC2C SG-ABE/ACC/GEN-PL-NOM ;		!!(2) Pl.Nom: vuâr vuâr
+:%^VOWRaise%>u SG-ILL ;			!!(3) Sg.Ill: vuõrˈru
+:%^CC2C%>a SG-LOC ;   			!!(4) Sg.Loc: vuârast
+:%^CC2C%>a SG-COM_IN ;			!!(5) Sg.Com: vuârain
+:%>a ESS/PAR ; 	     			!!(6) Ess: vuârran
+:%^CC2C%>a PL-OBL ;			!!(8) Pl.Gen: vuârai, 
++Der/Dim:%^CC2C%^VOWRaise%> N_PIISSUŽ ;	!!(9) Dim.N.Sg.Nom: vuõruž,
 
 LEXICON N_TUÂJJ !!= * @CODE@ tuâjj:tuâjj
 +N: NMN_TUÂJJ ;
@@ -5129,8 +5121,7 @@ LEXICON NMN_KOONTÂR
 :%^RmVow%>a SG-ILL ;
 :%^RmVow%>e SG-LOC ;
 :%^RmVow SG-COM_IN ;
-:%^RmVow%>e ESS ;
-:%^RmVow%>e PAR ;
+:%^RmVow%>e ESS/PAR ;
 :%^RmVow PL-OBL ;
 :%^RmVow VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
 
@@ -5827,7 +5818,7 @@ LEXICON NMN_STROITTEʹL
 :%^RmVow%^PALNo PL-OBL ;
 :%^RmVow%^PALNo VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
 
-LEXICON N_ČEEUʹRES
+LEXICON N_ČEEUʹRES !!= * @CODE@ čeeuʹres:čeurrez
 ! gradation: yes
 !    Penultimate: Yes
 !      Extra strong grade: Else
@@ -5839,19 +5830,16 @@ LEXICON N_ČEEUʹRES
 !! stemtype l-stem čeeuʹres:čeeuʹres
 !! * __@LEXNAME@__ = Koulukielioppi stemtype II 9 (29)
 !! ** Yaml: __N-ceeures __ 
-+N: ATTESTED-NOUN-STEM ;
-+N: SG-NOM ;
-+N:%^PenVV2V%^PenPALNo%^PenVow2a%^VC SG-GEN ;
-+N:%^PenVV2V%^PenPALNo%^PenVow2a%^VC SG-ACC ;
-+N:%^PenPALNo%^RmVow%>a SG-ILL ;
-+N:%^PenPALNo%^RmVow%>e SG-LOC ;
-+N:%^PenPALNo%^RmVow SG-COM_IN ;
-+N:%^PenPALNo%^RmVow%>e ESS ; ! ess and prt without
-+N:%^PenPALNo%^RmVow%>e PAR ;
-+N:%^PenPALNo%^RmVow SG-ABE ;
-+N:%^PenVV2V%^PenPALNo%^PenVow2a%^VC PL-NOM ;
-+N:%^PenVV2V%^PenPALNo%^RmVow PL-OBL ;
-+N:%^PenVV2V%^PenPALNo%^RmVow VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
++N:%^DeVC ATTESTED-NOUN-STEM ;
++N:%^DeVC SG-NOM ;
++N:%^PenVV2V%^PenPALNo%^PenVow2a SG-ABE/ACC/GEN ;
++N:%^PenPALNo%^RmVow%^DeVC%>a SG-ILL ;
++N:%^PenPALNo%^RmVow%^DeVC%>e SG-LOC ;
++N:%^PenPALNo%^RmVow%^DeVC SG-COM_IN ;
++N:%^PenPALNo%^RmVow%^DeVC%>e ESS/PAR ; ! ess and prt without
++N:%^PenVV2V%^PenPALNo%^PenVow2a PL-NOM ;
++N:%^PenVV2V%^PenPALNo%^RmVow%^DeVC PL-OBL ;
++N:%^PenVV2V%^PenPALNo%^RmVow%^DeVC VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_JEEʹEL !!= * @CODE@ jeeʹel:jeäkˈkel
 +N: NMN_JEEʹEL ;
@@ -5881,27 +5869,21 @@ LEXICON NMN_JEEʹEL !!= * @CODE@ jeeʹel:jeäkˈkel
 
 !! !!s:z-stem type
 LEXICON N_ǨEʹRRES
++N: NMN_ǨEʹRRES ;
+LEXICON NMN_ǨEʹRRES
 !! stemtype l-stem ǩeʹrres:ǩeʹrres
 !! * __@LEXNAME@__ = Koulukielioppi stemtype II 8 (28)
 !! ** Yaml: __kerres __
-+N: ATTESTED-NOUN-STEM ;
-+N: SG-NOM ;
-+N:%^VC SG-GEN ;
-+N:%^VC SG-ACC ;
-+N:%^RmVow%>a SG-ILL ;
-+N:%^RmVow%>e SG-LOC ;
-+N:%^RmVow%> SG-COM_IN ;
-+N:%^RmVow%>e ESS ; ! ess and prt without
-+N:%^RmVow%>e PAR ;
-+N:%^VC SG-ABE ;
-+N:%^VC PL-NOM ;
-+N:%^RmVow PL-GEN ;
-+N:%^RmVow PL-ACC ;
-+N:%^RmVow PL-ILL ;
-+N:%^RmVow PL-LOC ;
-+N:%^RmVow PL-COM ;
-+N:%^RmVow PL-ABE ; 
-+N:%^RmVow VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
+: ATTESTED-NOUN-STEM ;
+: SG-NOM ;
+:%^VC SG-ABE/ACC/GEN ;
+:%^RmVow%>a SG-ILL ;
+:%^RmVow%>e SG-LOC ;
+:%^RmVow%> SG-COM_IN ;
+:%^RmVow%>e ESS/PAR ;
+:%^VC PL-NOM ;
+:%^RmVow PL-OBL ;
+:%^RmVow VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
 
 
 !! CLASS 4 BISYLLABIC, LOW VOWEL, DIPHTHONG, PALATALIZATION
@@ -5976,14 +5958,11 @@ LEXICON N_CIEʹǨǨES
 !! ** Yaml: __N-ciekkes __ 
 +N:%^PenPALẸ%^PenPAL ATTESTED-NOUN-STEM ;
 +N:%^PenPALẸ%^PenPAL SG-NOM ;
-+N:%^PenVOWLower%^PenCC2CCC%^PenVow2a%^VC SG-GEN ;
-+N:%^PenVOWLower%^PenCC2CCC%^PenVow2a%^PenVow2a%^VC SG-ACC ;
++N:%^PenVOWLower%^PenCC2CCC%^PenVow2a%^VC SG-ABE/ACC/GEN ;
 +N:%^PenVOWLower%^PenCC2CCC%^RmVow%>a SG-ILL ;
 +N:%^PenVOWLower%^PenCC2CCC%^RmVow%>e SG-LOC ;
 +N:%^PenVOWLower%^PenCC2CCC%^RmVow SG-COM_IN ;
-+N:%^PenVOWLower%^PenCC2CCC%^RmVow%>e ESS ; ! ess and prt without
-+N:%^PenVOWLower%^PenCC2CCC%^RmVow%>e PAR ;
-+N:%^PenVOWLower%^PenCC2CCC%^RmVow SG-ABE ;
++N:%^PenVOWLower%^PenCC2CCC%^RmVow%>e ESS/PAR ;
 +N:%^PenVOWLower%^PenCC2CCC%^PenVow2a%^VC PL-NOM ;
 +N:%^PenVOWLower%^PenCC2CCC%^RmVow PL-OBL ;
 +N:%^PenVOWLower%^PenCC2CCC%^RmVow VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
@@ -6001,16 +5980,60 @@ LEXICON NMN_ČUEʹĐES !!= * @CODE@ čueʹđes:čuâttez
 !! ** Yaml: __N-chuedhes__
 :%^PenPALE%^PenPAL%^PenCC2C%^DeVC ATTESTED-NOUN-STEM ;	! čueʹđes
 :%^PenPALE%^PenPAL%^PenCC2C%^DeVC SG-NOM ;	     	! čueʹđes
-:%^PenVow2a SG-ABE/ACC/GEN-PL-NOM ;	 		! čuâttaz
+:%^PenVow2a SG-ABE/ACC/GEN ;	 		! čuâttaz
 :%^RmVow%^DeVC%>a SG-ILL ;	  			! čuâttsa
 :%^RmVow%^DeVC%>e SG-LOC ;				! čuâttsest
 :%^RmVow%^DeVC SG-COM_IN ;				! čuâttsin
-:%^RmVow%^DeVC%>e ESS ;  				! čuâttsen
-:%^RmVow%^DeVC%>e PAR ;					! čuâttsed
+:%^RmVow%^DeVC%>e ESS/PAR ;  				! čuâttsen
+:%^PenVow2a PL-NOM ;	 		! čuâttaz
 :%^RmVow%^DeVC PL-OBL ;					! čuâttsi
 :%^RmVow%^DeVC VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
 
-LEXICON N_MUEʹLES !!= * @CODE@ 
+LEXICON N_ǨEEʹLES !!= * @CODE@ ǩeeʹles:ǩeâlˈlez
++N: NMN_ǨEEʹLES ;
+LEXICON NMN_ǨEEʹLES !!= * @CODE@ ǩeeʹles:ǩeâlˈlez
+! 3.e.diphth.gem
+! gradation: yes
+!   Extra strong grade: Else
+!   Weak grade: Sg.Nom
+! Diphthong
+! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
+! Stem vowel: e
+!! ** Yaml: __N-chuedhes__
+:%^PenPALE%^PenPAL%^PenCCC2C%^DeVC ATTESTED-NOUN-STEM ;	! ǩeeʹles
+:%^PenPALE%^PenPAL%^PenCCC2C%^DeVC SG-NOM ;	     	! ǩeeʹles
+:%^PenVow2a SG-ABE/ACC/GEN ;	 		! ǩeâlˈlaz
+:%^RmVow%^DeVC%>a SG-ILL ;	  			! ǩeâlˈlsa
+:%^RmVow%^DeVC%>e SG-LOC ;				! ǩeâlˈlsest
+:%^RmVow%^DeVC SG-COM_IN ;				! ǩeâlˈlsin
+:%^RmVow%^DeVC%>e ESS/PAR ;  				! ǩeâlˈlsen
+:%^PenVow2a PL-NOM ;	 		! ǩeâlˈlaz
+:%^RmVow%^DeVC PL-OBL ;					! ǩeâlˈlsi
+:%^RmVow%^DeVC VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
+
+LEXICON N_ǨEEʹSTES !!= * @CODE@ ǩeeʹstes:ǩeâsttez
++N: NMN_ǨEEʹSTES ;
+LEXICON NMN_ǨEEʹSTES !!= * @CODE@ ǩeeʹstes:ǩeâsttez
+! 3.e.diphth.gem
+! gradation: yes
+!   Extra strong grade: Else
+!   Weak grade: Sg.Nom
+! Diphthong
+! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
+! Stem vowel: e
+!! ** Yaml: __N-keestes__
+:%^PenPALE%^PenPAL%^PenXYY2XY%^DeVC ATTESTED-NOUN-STEM ;	! ǩeeʹstes
+:%^PenPALE%^PenPAL%^PenXYY2XY%^DeVC SG-NOM ;	     	! ǩeeʹstes
+:%^PenVow2a%^RmCns SG-ABE/ACC/GEN ;	 		! ǩeâstta
+:%^RmVow%^DeVC%>a SG-ILL ;	  			! ǩeâsttsa
+:%^RmVow%^DeVC%>e SG-LOC ;				! ǩeâsttsest
+:%^RmVow%^DeVC SG-COM_IN ;				! ǩeâsttsin
+:%^RmVow%^DeVC%>e ESS/PAR ;  				! ǩeâsttsen
+:%^PenVow2a%^RmCns PL-NOM ;	 		! ǩeâstta
+:%^RmVow%^DeVC PL-OBL ;					! ǩeâsttsi
+:%^RmVow%^DeVC VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
+
+LEXICON N_MUEʹLES !!= * @CODE@  
 !!
 !! ** Yaml: __mueles__
 +N: ATTESTED-NOUN-STEM ;
@@ -6627,14 +6650,12 @@ LEXICON N_ČÅRRÕS
 
 LEXICON NMN_ČÅRRÕS
 : SG-NOM ;
-:s%>â ESS ;
-:s%>â PAR ;
+:%^C2CC%>â ESS/PAR ;
 :s NMN_OBL-ČÂUSTÕK ;
 
 LEXICON N_ČÅRRÕS-PL
 +N: ATTESTED-NOUN-STEM ;        ! čårrõs
-+N:s%>â ESS ;
-+N:s%>â PAR ;
++N:%^C2CC%>â ESS/PAR ;
 +N:s%^V2VV%^KK2GG PL-NOM ;
 +N:s%^V2VV%^KK2GG PL-OBL ;
 
@@ -7177,19 +7198,24 @@ LEXICON N_VUÕIʹNNI !!= * @CODE@ vuõiʹnni:vuõiʹnni
 !! Class 7 according to Feist 154-155
 !! !!i-stems
 LEXICON N_HÕʹPPI !!= * @CODE@ hõʹppi:hõʹppi
++N: NMN_HÕʹPPI ;
+LEXICON NMN_HÕʹPPI !!= * @CODE@ hõʹppi:hõʹppi
 ! is for nouns with ''-est'' +Loc
 ! gradation: no
 !! ** Yaml: __hoppi__
 !! * There are several stem types
 !! * hõʹppi:hõʹppi
-+N: ATTESTED-NOUN-STEM ;
-+N: SG-NOM ;
-+N: SG-ABE/ACC/GEN-PL-NOM ;
-+N:%^I2J%>a SG-ILL ;
-+Use/NG+N:%>ǥa SG-ILL ;
-+N:%>e SG-LOC ;
-+N: SG-COM_IN/PL-OBL ;
-+N:%>e ESS/PAR ; ! ess and prt without
+: ATTESTED-NOUN-STEM ;
+: SG-NOM ;
+: SG-ABE/ACC/GEN ;
+:%^I2J%>a SG-ILL ;
++Use/NG:%^RmVow%>ǥa SG-ILL ;
+:%^I2J%>e SG-LOC ;
+:%^I2J SG-COM_IN ;
+:%^I2J%>e ESS/PAR ; ! ess and prt without
+
+: PL-NOM ;
+:%^I2J PL-OBL ;
 
 
 
