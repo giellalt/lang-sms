@@ -43,7 +43,8 @@ Trigger symbols
  *  %^RmVow:0  for removing vowels e, â, a before final consonant in stem
  *  %^UltRmVow:0  for removing vowels e, â, a after final consonant in stem
  *  %^PenRmVow:0  for removing penultimate vowels e, â, a, i.e. vowel befor final stem consonant/consonants
- *  %^1VOW:0 %^2VOW:0 %^3VOW:0 %^4VOW:0 %^5VOW:0  Vow triggers
+ *  %^RmCns:0  for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta 
+ * %^1VOW:0 %^2VOW:0 %^3VOW:0 %^4VOW:0 %^5VOW:0  Vow triggers
 
  *  %^VOWLower:0  i>e, õ>â, â>ä, u>o, o>å
  *  %^VOWRaise:0  e>i, ä>e 
@@ -299,6 +300,7 @@ possible triggers between VowHeight and word end
 
 
 
+
 neutral to vowel height and backness
 {{{
  * NeutrHighBack = [(%^VOWLower:|%^VOWRaise:) (%^VOWFront:|%^VOWBack:)] ;  
@@ -329,10 +331,6 @@ neutral to vowel and consonant length
 __Vowel shortening â:0__ - used in
 čââʹđ+N+Sg+Ill: __heart/sydän__
 
-__čââʹđ0%^VV2V%^PALNo%^C2CC%>ma examples:__
-
-__č0â0đđ000%>ma examples:__
-
 
 
 __Even syllabic verbs I, vowel shortening ẹ:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
@@ -340,120 +338,48 @@ __Even syllabic verbs I, vowel shortening ẹ:0__ - used in +Ind+Prs+Pl3, +Ind+P
 
 __Even syllabic verbs I, vowel shortening e:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
 teevvad+V+Prt+4:
-
-__teevv%^VV2V%^VOWRaise%>uš examples:__
-
-__t0ivv00%>uš examples:__
 Ââvel+N+Prop+Sg+Loc  __Ivalo__
-
-__Ââvel%^RmVow%>est examples:__
-
-__Ââv0l0%>est examples:__
 
 
 eʹǩrded+V+Inf
-
-__eeʹǩǩerd%^PenVV2V%^PenCC2C%^RmVow%>ed examples:__
-
-__0eʹǩ00rd000%>ed examples:__
 deriving cieʹǩǩes+N+Sg+Ill: ceäkˈksa
 
 
 __Even syllabic verbs I, vowel shortening å:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
 sååbbar+N+Sg+Gen __meeting__
 
-__sååbbar%^PenVV2V examples:__
-
-__s0åbbar0 examples:__
-
 
 
 __Even syllabic verbs I, vowel shortening õ:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
-
-__mõõ0nn%^VV2V%^PAL%>e examples:__
-
-__m0õʹnn00%>e examples:__
-
-__mõõ0nn%^VV2V%^VOWLower%^PAL%>e examples:__
-
-__m0âʹnn000%>e examples:__
 kõõnjâl+N+Sg+Gen __tear__
-
-__kõõn0jâl%^PenVV2V%^PenC2CC examples:__
-
-__k0õnnjâl00 examples:__
 
 
 
 
 __Even syllabic verbs I, vowel shortening u:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
 juurd+N+Ess __thought__
-
-__juurd0%^VV2V%^C2CC%>j%>en examples:__
-
-__j0urdd00%>j%>en examples:__
 mainstummuš+N+Sg+Ill:
-
-__mainstum0uš%^PenC2CC%^RmVow%>a examples:__
-
-__mainstumm0š00%>a examples:__
 
 
 __Even syllabic verbs I, vowel shortening i:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
 viikkâd+V+Ind+Prs+Pl3
-
-__vii0kk%^VV2V%^VOWLower%^PAL%>e examples:__
-
-__v0eʹǩǩ000%>e examples:__
 prääʹzniǩ+N+Sg+Ill: __celebration/juhla__
 
-__prääʹzniǩ%^PenPALNo%^RmVow%^PALNo%>a examples:__
-
-__prää0zn0k000%>a examples:__
 
 
-
-
-__žẹẹvai%^RmVow%^I2Zero%>ǥa examples:__
-
-__žẹẹv0000%>ǥa examples:__
 
 __Even syllabic verbs I, vowel shortening o:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
 
-__šoomm%^VV2V%^VOWRaise%>u examples:__
-
-__š0omm00%>u examples:__
-
-__poonjâst%^PenVV2V%^RmVow%>ed examples:__
-
-__p0onj0st00%>ed examples:__
-
 ooumaž+N+Sg+Gen
-
-__ooum0%^VV2V%^XY2XYYu examples:__
-
-__0oumm00u examples:__
 
 
 
 
 __Even syllabic verbs I, vowel shortening a:0 __ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
-
-__saa0kk%^VV2V%^PAL%>e examples:__
-
-__s0aʹǩǩ00%>e examples:__
 Aanar+N+Prop+Sg+Ill: __Inari/Enare__
-
-__Aanar%^RmVow%>a examples:__
-
-__Aan0r0%>a examples:__
 
 
 mättʼted+V+Inf: __teach/opettaa__
-
-__mätta0t%^RmVow%>ed examples:__
-
-__mätt0ʼt0%>ed examples:__
 
 
 
@@ -465,28 +391,8 @@ __vowel to syllable mark a:ʼ__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
 
 
 __ZERO to syllable mark 0:ʼ here__ - used in zeeʹtt+N+Sg+Abe: zeeʹttʼtää
-
-__valmštõõll%>0i%^I2J%>i examples:__
-
-__valmštõõll%>ʼj0%>i examples:__
 piânˈnai+N+Ess: __dog/koira__
-
-__piânˈn%^CCC2CC%>0j%>en examples:__
-
-__piân0n0%>ʼj%>en examples:__
-
-__jieʹll0i%^I2J%>e%>st examples:__
-
-__jieʹllʼj0%>e%>st examples:__
 mättʼted+V+Inf: __teach/opettaa__
-
-__mätta0t%^RmVow%>ed examples:__
-
-__mätt0ʼt0%>ed examples:__
-
-__ijss%>0sa examples:__
-
-__ijss%>ʼsa examples:__
 
 __ZERO to hyphen minus 0:- in this rule__ - used in Kääzzkõsraajõstuâjj-joouk
 
@@ -496,10 +402,6 @@ __ZERO to hyphen minus 0:- in this rule__ - used in Kääzzkõsraajõstuâjj-joo
 
 __Even syllabic verbs I, vowel shortening ä:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
 mään+N+Sg+Gen __moon__
-
-__mään%{XC%}%^VV2V%^VOWRaise%^C2CC%>u examples:__
-
-__m0ann00%>u examples:__
 
 
 
@@ -516,83 +418,23 @@ deriving +Ind+Prt+Sg1, +Ind+Prt+Sg2 +Ind+Prt+Pl3 in teevvad:tivvu
 
 __Even syllabic verbs I, vowel raising o:u__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
 
-__šoomm%^VV2V%^VOWRaise%>u examples:__
-
-__š0omm00%>u examples:__
-
 
 
 __Even syllabic verbs I, vowel raising å:o__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
-
-__kååʹpp%^VOWRaise%^CC2C%>in examples:__
-
-__kooʹv0000%>in examples:__
-
-__k0åʹll%^V2VV%^VOWRaise%>in examples:__
-
-__kooʹll00%>in examples:__
 
 
 
 __Even syllabic verbs I, vowel raising e:i__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
 
-__pess%^VOWRaise%>u examples:__
-
-__piss0%>u examples:__
-
-__p0ess%^V2VV%^VOWRaise%>už examples:__
-
-__piiss00%>už examples:__
-
-__teevv%^VV2V%^VOWRaise%>uš examples:__
-
-__t0ivv00%>uš examples:__
-
-__reâugg%^VOWRaise%>u examples:__
-
-__riõugg0%>u examples:__
-
 
 
 __Even syllabic verbs I, vowel raising ẹ:i__ - used in
 
-__pẹss%^VOWRaise%>u examples:__
-
-__piss0%>u examples:__
-
-__p0ẹss%^V2VV%^VOWRaise%>už examples:__
-
-__piiss00%>už examples:__
-
-__tẹẹvv%^VV2V%^VOWRaise%>uš examples:__
-
-__t0ivv00%>uš examples:__
-
 
 __Even syllabic verbs I, vowel raising â:õ __ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
-
-__ruâk0k%^VOWRaise%^CC2CCC%>u examples:__
-
-__ruõkˈk00%>u examples:__
-
-__čuâkˈk%^VOWRaise%>u examples:__
-
-__čuõkˈk0%>u examples:__
 mââʹnn+N+Pl+Acc: __egg/muna__
-
-__mââʹnn%^VOWRaise%^CC2C%>id examples:__
-
-__mõõʹn00%>id examples:__
 čâʹlmm+N+Pl+Acc: __eye/silmä__
 
-__č0â0lmm%^V2VV%^VOWRaise%^PAL%^XYY2XY%>id examples:__
-
-__čõõʹlm00000%>id examples:__
-
-
-__reâugg%^VOWRaise%>u examples:__
-
-__riõugg0%>u examples:__
 
 
 
@@ -611,35 +453,11 @@ __Even syllabic verbs I, diphthong raising beginning with e:i ä:e__ - used in
 
 __Even syllabic verbs I, diphthong raising beginning with e:i ä:ẹ__ - used in
 
-__čuä0ckk%^PALẸ%^PAL%^XYY2XY%>es examples:__
-
-__čuẹʹcǩ0000%>es examples:__
-
-__suä0kk%^PALẸ%^PAL%^CC2C examples:__
-
-__suẹʹjj000 examples:__
-
 
 __diphthong backing beginning with u ä:õ__ - used in
 
 __Even syllabic verbs I, diphthong raising beginning with ä:a u__ - deriving läullad > laullum
-
-__mään%{XC%}%^VV2V%^VOWRaise%^C2CC%>u examples:__
-
-__m0ann00%>u examples:__
-
-__äldd%^VOWRaise%>u examples:__
-
-__aldd0%>u examples:__
-
-__0äldd%^V2VV%^VOWRaise%^CC2C%>u examples:__
-
-__aald0000%>u examples:__
 čääʹcc+N+Pl+Acc __water__
-
-__čääʹcc%^VOWRaise%^KK2GG%>id examples:__
-
-__čaaʹʒʒ00%>id examples:__
 
 
 
@@ -651,27 +469,11 @@ __čaaʹʒʒ00%>id examples:__
 
 __Even syllabic verbs I, vowel lowering o:å__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in poorrâd
 
-__poo0rr%^V2VV%^VOWLower%^PAL%>e examples:__
-
-__p0åʹrr000%>e examples:__
-
 
 
 __Even syllabic verbs I, vowel lowering i:e__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
 
-__v0iǯǯ%^V2VV%^VOWLower%>as  examples:__
-
-__veeǯǯ00%>as examples:__
-
-__v0iǯǯ%^V2VV%^VOWLower%>as examples:__
-
-__veeǯǯ00%>as examples:__
-
 mieʹlǩǩ+N+Sg+Ill: __milk/maito__
-
-__miâlkk%^LowerI2E%>a examples:__
-
-__meâlkk0%>a examples:__
 
 __Even syllabic verbs I, vowel lowering a:ä__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
 {{{
@@ -684,74 +486,26 @@ __Even syllabic verbs I, vowel lowering a:ä__ - deriving +Ind+Prs+Sg3, +Ind+Prs
 __Even syllabic verbs I, vowel lowering u:o__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in uʹvdded
 
 uʹvdded+V+Cond+Pl3 __to give__
-
-__0uvdd%^V2VV%^VOWLower%^XYY2VY%>če examples:__
-
-__ooud0000%>če examples:__
-
-__uvdd%^VOWLower%^XYY2VYY examples:__
-
-__oudd00 examples:__
 vuʹvll+N+Sg+Ill: voulla
-
-__vuʹvll%^VOWLower%^PALNo%^XYY2VYY%>a examples:__
-
-__vo0ull000%>a examples:__
 suukkâd+V+Imprt+Sg3: __row/soutaa__
-
-__suukk%^VOWLower%^KK2GG%>as examples:__
-
-__sooǥǥ00%>as examples:__
 juʹrdded+V+Ind+Prs+Sg1 __think__
-
-__j0urdd%^V2VV%^VOWLower%^CC2C%>am examples:__
-
-__joord0000%>am examples:__
 
 stuuʹl+N+Sg+Ill: __chair/tuoli__
 
-__st0u%{VU%}ʹl%^V2VV%^VOWLower%^PALNo%>a examples:__
-
-__stoou0l000%>a examples:__
-
 __Even syllabic verbs I, vowel lowering u:õ __ - deriving
-
-__č0ukk%^V2VV%^U2Õ%>až examples:__
-
-__čõõkk00%>až examples:__
 
 
 
 __Even syllabic verbs I, vowel lowering õ:â __ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
 riõkkâd+V+Ind+Prs+Sg3 __to whip__
 
-__riõkˈk%^VOWLower# examples:__
-
-__reâkˈk0# examples:__
-
-__mõõ0nn%^VV2V%^VOWLower%^PAL%>e examples:__
-
-__m0âʹnn000%>e examples:__
-
-__mõõnn%^VOWLower%^CC2C%>as examples:__
-
-__mâân000%>as examples:__
-
 kuõskkâd+V+Ind+Prs+Sg3
-
-__kuõskk%^VOWLower examples:__
-
-__kuâskk0 examples:__
 
 
 !diphthongs
 
 __Even syllabic verbs I, diphthong opening after u å:ä__ - deriving +Ind+Prs+Sg3, in kuåccâd kuäʹcce
 = a>ä lowering clockwise
-
-__kuå0cc%^VOWLower%^PAL%^CC2CCC examples:__
-
-__kuäʹcˈce examples:__
 
 
 __Even syllabic verbs I, diphthong opening after i:e e:ä__ - deriving +Ind+Prs+Sg3, in čiõkkâd
@@ -761,17 +515,9 @@ __Even syllabic verbs I, diphthong opening after i:e e:ä__ - deriving +Ind+Prs+
 __Vowel in second syllable e:a__ - deriving cieʹǩǩes+N+Sg+Gen: ceäkˈkaz
 cieʹǩǩes+N+Sg+Gen
 
-__ciâk0kes%^PenVOWLower%^PenCC2CCC%^PenVow2a%^VC examples:__
-
-__ceäkˈkaz0000 examples:__
-
 
 
 __Even syllabic verbs I, diphthong opening i:e â:ä for â:ä __ - deriving +Ind+Prs+Sg3, in čiõkkâd
-
-__vuâinn%^VOWLower examples:__
-
-__vuäinn0 examples:__
 
 
 
@@ -793,18 +539,10 @@ __Even syllabic verbs I, diphthong opening after u e:õ__ - deriving vueʹlǧǧe
 __ u å:õ__ - used in
 = a>ä lowering clockwise
 
-__puått%^VOWRaise%>u examples:__
-
-__puõtt0%>u examples:__
-
 
 
 !Vowel Palatalization
 __diphthong allophonic realization in palatalization u å:e__ - deriving 
-
-__puå0v0v%^PALE%^PAL%^CC2CCC%>e examples:__
-
-__pueʹvˈv000%>e examples:__
 
 
 __diphthong allophonic realization in palatalization u å:ẹ__ - deriving 
@@ -835,42 +573,14 @@ vowel lengthening and consonant shortening, %^PenV2VV and %^CShort
 __Even syllabic verbs I, relative vowel lengthening 0:â__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
 šõddâd+V+Imprt+Sg3: 
 
-__š0õdd%^V2VV%^VOWLower%>as examples:__
-
-__šââdd00%>as examples:__
-
 
 __Even syllabic verbs I, relative vowel lengthening 0:â__ - used in
 
 __0:ẹ relative vowel lengthening__ - 
 
-__p0ẹss%^V2VV examples:__
-
-__pẹẹss0 examples:__
-
 
 __Even syllabic verbs I, relative vowel lengthening 0:e__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
 
-__čââʹlmt0eʹm%^V2VV examples:__
-
-__čââʹlmtee0m0 examples:__
-
-__p0ẹi0vv%^V2VV%^PAL%^CC2C examples:__
-
-__peeiʹv0000 examples:__
-
-__v0iǯǯ%^V2VV%^VOWLower%>as  examples:__
-
-__veeǯǯ00%>as examples:__
-
-
-__n0eiʹbb%^V2VV%^CC2C examples:__
-
-__neeiʹb000 examples:__
-
-__kaađn0e0ǩǩ%^V2VV%^PAL examples:__
-
-__kaađneeʹǩǩ00 examples:__
 
 
 __Even syllabic verbs I, relative vowel lengthening 0:å__ - deriving
@@ -880,109 +590,29 @@ __Even syllabic verbs I, relative vowel lengthening 0:å__ - deriving
 
 __Even syllabic verbs I, relative vowel lengthening 0:õ__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
 âʹlǧǧ+N+Pl+Gen: __boy/poika__
-
-__0âʹlǧǧ%^V2VV%^VOWRaise%^PAL%^XYY2XY%>i examples:__
-
-__õõʹlj000%>i examples:__
 čâʹlmm+N+Pl+Acc: __eye/silmä__
 
-__č0â0lmm%^V2VV%^VOWRaise%^PAL%^XYY2XY%>id examples:__
-
-__čõõʹlm00000%>id examples:__
-
-
-__v0õrr%^V2VV%^CC2C examples:__
-
-__võõr000 examples:__
-
-__s0õll%^V2VV%^CC2C examples:__
-
-__sõõl000 examples:__
-
-__mättʼt0õss%^V2VV%^KK2GG examples:__
-
-__mättʼtõõzz00 examples:__
-
-__s0õhss%^V2VV%^XYY2VY examples:__
-
-__sõõus000 examples:__
 
 __Even syllabic verbs I, relative vowel lengthening 0:ä__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
-
-__0äldd%^V2VV%^CC2C examples:__
-
-__ääld000 examples:__
-
-__j0äuʹrr%^V2VV%^CC2C examples:__
-
-__jääuʹr000 examples:__
 
 
 
 __Even syllabic verbs I, relative vowel lengthening 0:a__ - deriving +V+Inf in MAINSTED: maainstam, mainstam
 
-__0äldd%^V2VV%^VOWRaise%^CC2C%>už examples:__
-
-__aald0000%>už examples:__
-
-__dur0ak%^V2VV examples:__
-
-__duraak0 examples:__
-
-
-__m0ainâst%^PenV2VV examples:__
-
-__maainâst0 examples:__
 
 
 
 
 __Even syllabic verbs I, relative vowel lengthening 0:o__ -  simultaneous lengthening and lowering: juʹrdded > joordam juʹrdded+V+Ind+Prs+Sg1
-
-__0uvdd%^V2VV%^VOWLower%^XYY2VY%>če examples:__
-
-__ooud0000%>če examples:__
 juʹrdded+V+Ind+Prs+Sg1 __think__
 
-__j0urdd%^V2VV%^VOWLower%^XYY2XY%>am examples:__
 
-__joord0000%>am examples:__
-
-
-__k0åʹll%^V2VV%^VOWRaise%>in examples:__
-
-__kooʹll00%>in examples:__
-
-__t0oll%^V2VV%^CC2C examples:__
-
-__tool000 examples:__
-
-__t0o0ll%^V2VV%^PAL%^CC2C%>e examples:__
-
-__tooʹl0000%>e examples:__
-
-
-__k0onttâr%^PenV2VV%^PenXYY2XY examples:__
-
-__koont0âr00 examples:__
 
 
 
 __Even syllabic nouns I, relative vowel lengthening i__ - ǩiđđ:ǩiiđ
 pirsted+V+Ind+Prs+ConNeg
 
-__p0irâst%^PenV2VV examples:__
-
-__piirâst0 examples:__
-
-__p0ess%^V2VV%^VOWRaise%>už examples:__
-
-__piiss00%>už examples:__
-
-
-__ǩ0iđđ%^V2VV%^CC2C examples:__
-
-__ǩiiđ000 examples:__
 
 
 
@@ -1002,41 +632,13 @@ simultaneous lengthening and raising, hmm: xfst ordering might be easier
 
 __Even syllabic nouns, for j>i__ - sijdd > siid This will need a special extra-lengthening rule
 
-__ijss%^XYY2VY%>âs examples:__
-
-__iis00%>âs examples:__
-
-
-__sââʹjj%^PALNo%^J2I%^CC2C examples:__
-
-__sââ0i00 examples:__
 tuâjj+N+Sg+Acc __work__
-
-__tuâjj%^J2I%^CC2C examples:__
-
-__tuâi000 examples:__
 
 __Even syllabic verbs,  for v>u__ - uvdd > ouʹdde
 
-__uv0dd%^PAL%^XYY2VY examples:__
-
-__uuʹd000 examples:__
-
-__uvdd%^VOWLower%^XYY2VYY examples:__
-
-__oudd00 examples:__
-
 __Even syllabic verbs,  for v>u__ - luhtt  s s: ...
 uhss+N+Der/Dim+N+Sg+Gen __door__
-
-__uh0ss%^PAL%^XYY2VY%>e examples:__
-
-__uuʹs000%>e examples:__
 piiutâs+N+Sg+Nom __clothing/vaate__
-
-__p0ihttâz%^PenV2VV%^PenXYY2VY%^DeVC examples:__
-
-__piiut0âs000 examples:__
 
 __trisyllabic verbs and doer derivations, i>j__ - used in
 
@@ -1046,37 +648,13 @@ __trisyllabic verbs and doer derivations, i>j__ - used in
 
 __Even-syllabic nouns, for â:e__ -  ǩiâpp:ǩieʹpˈpe
 +N+Sg+Ill
-
-__miâ0rr%^PALE%^PAL%>e examples:__
-
-__mieʹrr00%>e examples:__
-
-__piâ0ss%^PALE%^PAL examples:__
-
-__pieʹss00 examples:__
-
-__kuâ0ll%^PALE%^PAL examples:__
-
-__kueʹll00 examples:__
 tieʹtted+V+Imprt+Sg2: __know/tietää__
-
-__teâ0tt%^VOWRaise%^PALE%^PAL%^CC2C examples:__
-
-__tieʹđ00000 examples:__
 
 __Even-syllabic nouns, for â:ẹ__ - used in
 pieʹll+N+Sg+Nom: __half__
 
-__piâ0ll%^PALẸ%^PAL examples:__
-
-__piẹʹll00 examples:__
-
 
 __Palatalization for ẹ:e__ - used in
-
-__p0ẹi0vv%^V2VV%^PAL%^CC2C examples:__
-
-__peeiʹv0000 examples:__
 
 !VOWEL and ZERO ALTERNATION
 
@@ -1090,10 +668,6 @@ __Palatalization for ẹ:e__ - kåʹmrded, vuejat, maainâst
 }}}
 
 __Realization for â in a__ - used in
-
-__ǩiõrggân%^PenVow2a examples:__
-
-__ǩiõrggan0 examples:__
 
 !THE NON-ORTHOGRAPHIC SYLLABLE 
 
@@ -1114,30 +688,6 @@ __%{A1%}:ʼ when subseqent syllable has vowel v__ - This is a temporary solution
 
 __0:ʹ as transfer from left of v:u__ - used +Ind+Prs+Pl3, uʹvdded+V+Ind+Prs+Pl3: ouʹdde
 
-__uv0dd%^PAL%^XYY2VY examples:__
-
-__uuʹd000 examples:__
-
-
-__t0äh0tt%^V2VV%^PAL%^XYY2VY examples:__
-
-__tääuʹt0000 examples:__
-
-__saa0kk%^VV2V%^PAL%>e examples:__
-
-__s0aʹǩǩ00%>e examples:__
-
-__mõõ0nn%^VV2V%^VOWLower%^PAL%>e examples:__
-
-__m0âʹnn000%>e examples:__
-
-__kuâ0ll%^PALE%^PAL examples:__
-
-__kueʹll00 examples:__
-
-__stu%{VU%}0l%^PAL examples:__
-
-__stuuʹl0 examples:__
 
 
 The left context allows for:
@@ -1145,36 +695,16 @@ Vowel shortening, and j/v > Vow
 
 __d:đ in weak grade__ - used in
 
-__ǩeädgg%^VOWRaise%^PALẸ%^PAL%^XYY2XY examples:__
-
-__ǩiẹđj00000 examples:__
-
 
 __Even-syllabic verbs I, Palatalization of g:ǧ__ - used in
 
 bioloog+N+Sg+Ill __biologist__
 
-__bioloo0g%^PAL%>e examples:__
-
-__biolooʹǧ0%>e examples:__
-
 
 __Even-syllabic verbs I, Palatalization of k:ǩ__ - used in
 mieʹlǩǩ+N+Sg+Acc: __milk/maito__
 
-__miâ0lkk%^PALE%^PAL%^CC2C examples:__
 
-__mieʹlǩ0000 examples:__
-
-
-
-__jo0kk%^PAL%>e examples:__
-
-__joʹǩǩ0%>e examples:__
-
-__saa0kk%^VV2V%^PAL%>e examples:__
-
-__s0aʹǩǩ00%>e examples:__
 
 __Even-syllabic nouns I, Depalatalization of ǧ and weakening of grade to ǥ__ - vueʹlǧǧed+V+Ind+Prs+Sg1: vuâlǥam
 
@@ -1183,45 +713,15 @@ derive vueʹlǧǧed+V+Imp+Pl3: vuâlǥǥaz
 __Even-syllabic nouns I,  ǧ and weakening of grade to j__ - vueʹlǧǧed+V+Ind+Prs+4: vueʹljet  âʹlǧǧ+N+Sg+Gen: ââʹlj
 äiʹǧǧ+N+Sg+Gen: __time/aika__
 
-__0äiʹǧǧ%^V2VV%^CC2C examples:__
-
-__ääiʹj000 examples:__
-
 __Even-syllabic nouns I, Depalatalization of ǧǧ__ - vueʹlǧǧed+V+Ind+Prs+Sg3: vuâlgg
 
-__vueʹlǧǧ%^PALNo examples:__
-
 __Even-syllabic nouns I, Depalatalization of ǩ:k__ - used in
-
-__mäʹtǩǩ%^PALNo%>a examples:__
-
-__mä0tkk0%>a examples:__
 prääʹzniǩ+N+Sg+Ill: __celebration/juhla__
-
-__prääʹzniǩ%^PenPALNo%^RmVow%^PALNo%>a examples:__
-
-__prää0zn0k000%>a examples:__
 
 
 __Even-syllabic nouns, removing palatalization in -est +Loc nouns__ - removing palatalization in +Sg+Ill,  pieʹss:peässa
-
-__čââʹlmteʹm%{XC%}%^CLong%^PALNo%>a examples:__
-
-__čââʹlmte0mm00%>a examples:__
-
-__čââʹlmteʹm0%^PALNo%^C2CC%>a examples:__
-
-__čââʹlmte0mm00%>a examples:__
 stroitteʹl+N+Sg+Ill: __plant/laitos__
-
-__stroitteʹl%^RmVow%^PALNo%>a examples:__
-
-__stroitt00l00%>a examples:__
 prääʹzniǩ+N+Sg+Ill: __celebration/juhla__
-
-__prääʹzniǩ%^PenPALNo%^RmVow%^PALNo%>a examples:__
-
-__prää0zn0k000%>a examples:__
 
 
 
@@ -1235,47 +735,19 @@ mõõnnâd : mõʹnne : mõõn
 
 
 __Even syllabic verbs I, cg m:0__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, 
-
-__sääʹmm%^CC2C examples:__
-
-__sääʹm00 examples:__
 kåʹmrded+V+Ind+Prs+Sg3 __bow__
-
-__k0åʹmmerd%^PenV2VV%^PenVow2a examples:__
-
-__kååʹmmard00 examples:__
 
 __Even syllabic verbs I, cg for b__ - used
 neiʹbb+N+Sg+Gen: __knife/veitsi__
-
-__n0eiʹbb%^V2VV%^CC2C examples:__
-
-__neeiʹb000 examples:__
 äʹrbb+N+Sg+Gen: __heritage/perintö__
-
-__0ä0rbb%^V2VV%^PAL%^CC2C examples:__
-
-__ääʹrb0000 examples:__
 
 
 __Even syllabic verbs I, second consonant loss p:0__ - used in
 
-__ǩiâpp%^CC2C examples:__
-
-__ǩiâv00 examples:__
-
 
 __Even syllabic verbs I, cg v:0__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, teevvad > teev
 
-
-__p0ẹi0vv%^V2VV%^PAL%^CC2C examples:__
-
-__peeiʹv000 examples:__
 peiʹvv+N+Sg+Nom: __day/päivä__
-
-__tuõvvâz%^PenCC2C%^DeVC examples:__
-
-__tuõv0âs00 examples:__
 
 
 
@@ -1283,28 +755,12 @@ __f:0__ - used in
 
 kaaʹff+N+Sg+Gen __coffee__
 
-__kaaʹff%^CC2C examples:__
-
-__kaaʹf0 examples:__
-
 
 __Even syllabic verbs I, cg n:0__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, jiõnn:jiõn
 
 
 __Even syllabic nouns I, with extra lengthening of vowel ij>ii/uv>uu and dd>d__ - used with  +N+Sg+Nom > +N+Sg+Gen, sijdd > siid
 
-
-__0äldd%^V2VV%^CC2C examples:__
-
-__ääld000 examples:__
-
-__0äldd%^V2VV%^VOWRaise%^CC2C%>už examples:__
-
-__aald0000%>už examples:__
-
-__uv0dd%^PAL%^XYY2VY examples:__
-
-__uuʹd000 examples:__
 
 
 uʹvdded+V+Ind+Prs+4: uuʹdet
@@ -1320,10 +776,6 @@ __Even syllabic verbs I, cg for ʒ__ - used with  pääʹʒʒelm+N+Sg+Ill: päʹ
 
 __ǯ:0__ - used in
 
-__kuʹvǯǯ%^CC2C examples:__
-
-__kuʹvǯ00 examples:__
-
 
 __č:0__ - used in
 
@@ -1336,76 +788,27 @@ __ž:0__ - used in
 
 __z:0__ - used in
 
-
-
 __Even syllabic verbs I, cg for đ __ - used with  ǩiđđ:ǩiiđ
-
-__ǩ0iđđ%^V2VV%^CC2C examples:__
-
-__ǩiiđ00 examples:__
 
 
 __Even syllabic verbs I, cg for r __ - used with  võrr:võõr
-
-__v0õrr%^V2VV%^CC2C examples:__
-
-__võõr000 examples:__
-
-__paarr%^CC2C examples:__
-
-__paar00 examples:__
-
-__j0äuʹrr%^V2VV%^CC2C examples:__
-
-__jääuʹr000 examples:__
 
 
 __Even syllabic verbs I, cg for l__ - used with  vuʹvll+N+Sg+Gen: vuuʹl
 deriving 
 
-__t0oll%^V2VV%^CC2C examples:__
-
-__tool00 examples:__
-
-__vuʹv0ll%^V2VV%^CC2C examples:__
-
-__vu0uʹl00 examples:__
-
 deriving påll+N+Sg+Gen: pååll
-
-__kuâ0ll%^V2VV%^PALE%^PAL%^CC2C examples:__
-
-__kueʹl00000 examples:__
 
 __j:0 __ - used in
 ǩeʹrjj+N+Pl+Nom __book__
-
-__ǩ0eʹrjj%^V2VV%^CC2C examples:__
-
-__ǩeeʹrj000 examples:__
 tuâjj+N+Sg+Acc __work__
-
-__tuâjj%^J2I%^CC2C examples:__
-
-__tuâi000 examples:__
-
-__p0ojjâz%^PenV2VV%^PenCC2C%^DeVC examples:__
-
-__pooj0âs000 examples:__
 
 __Even syllabic verbs I, cg for g__ - used in
 cõõggâlm+N+Sg+Ill
 
-__cõõggâlm%^PenVV2V%^PenCC2C%^RmVow%>a examples:__
-
-__c0õg00lm000%>a examples:__
 
 __Even syllabic verbs I, cg for ǧ__ - used with  vueʹlǧǧed+V+Ind+Prs+Sg1: vuâlǥam
 äiʹǧǧ+N+Sg+Gen: __time/aika__
-
-__0äiʹǧǧ%^V2VV%^CC2C examples:__
-
-__ääiʹj000 examples:__
 
 
 GEMINATE TO WEAK QUALITY GEMINATE
@@ -1414,15 +817,7 @@ used with  +N+Sg+Nom > +N+Sg+Gen for cases like
 lookki > looǥǥi.
 
 
-__j0okk%^V2VV%^KK2GG examples:__
-
-__jooǥǥ00 examples:__
-
 loǥškueʹtted __begin to read__
-
-__lookk%^VV2V%^KK2G»škueʹtted examples:__
-
-__l0oǥ000»škueʹtted examples:__
 
 __Even syllabic nouns I, with extra lengthening of vowel V>VV and k:j__ - used in
 used with
@@ -1445,110 +840,38 @@ used with
 
 __Even syllabic verbs I, Voicing š:ž __ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
 
-__kõõččm0õšš%^V2VV%^KK2GG examples:__
-
-__kõõččmõõžž00 examples:__
-
-__pååss%^VV2V%^KK2G»škuätt examples:__
-
-__p0åz0000škuätt examples:__
-
-
-__mainstum0uš%^PenC2CC%^VC examples:__
-
-__mainstummuž00 examples:__
 
 __Even syllabic verbs I, Voicing c:ʒ__ - cc:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
-
-__čääʹcc%^KK2GG examples:__
-
-__čääʹʒʒ00 examples:__
-
-__puõcˈc%^VOWLower%^PALÄ%^KKK2GG examples:__
-
-__puäʒ0ʒ000 examples:__
-
-__pååss%^VV2V%^KK2G»škuätt examples:__
-
-__p0åz0000škuätt examples:__
 
 
 __Even syllabic verbs I, Voicing č:j__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
 
 
-__pååss%^VV2V%^KK2G»škuätt examples:__
-
-__p0åz0000škuätt examples:__
-
 __Even syllabic verbs I, Voicing after long vowel or diphthong s:z s:z __ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
-
-__mättʼt0õss%^V2VV%^KK2GG examples:__
-
-__mättʼtõõzz00 examples:__
 deriving cieʹǩǩes+N+Sg+Gen: ceäkˈkaz
 
-
-__pååss%^VV2V%^KK2G»škuätt examples:__
-
-__p0åz0000škuätt examples:__
 
 
 __Devoicing z:s__ - used in
 aaunâs+N+Sg+Nom: __material/aine__
-
-__0aunnâz%^PenV2VV%^PenXYY2XY%^DeVC examples:__
-
-__aaun0âs000 examples:__
 piiutâs+N+Sg+Nom __clothing/vaate__
 
-__p0ihttâz%^PenV2VV%^PenXYY2VY%^DeVC examples:__
-
-__piiut0âs000 examples:__
-
 __Devoicing ž:š__ - used in
-
-__p0õttâž%^PenV2VV%^PenCC2C%^DeVC examples:__
-
-__põõđ0âš000 examples:__
 
 
 
 __Even syllabic verbs I, second consonant loss t:0__ - used in
 autt+N+Pl+Nom __car/auto__
 
-__0autt%^V2VV%^CC2C examples:__
-
-__aaut000 examples:__
-
-
-__k0onttâr%^PenV2VV%^PenXYY2XY examples:__
-
-__koont0âr00 examples:__
 piiutâs+N+Sg+Nom __clothing/vaate__
-
-__p0ihttâz%^PenV2VV%^PenXYY2VY%^DeVC examples:__
-
-__piiut0âs000 examples:__
 
 
 __Even syllabic verbs I, third consonant loss __ - lgg:lǥ, Vow Ca Cx Cx:0, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants following consonant at coda that become single consonants in gradation
 
 
 
-
-__ijss%^VOWXL%^CShort%>âs examples:__
-
-__iis000%>âs examples:__
 uhss+N+Sg+Gen __door__
-
-__uhss%^XYY2VY examples:__
-
-__uus00 examples:__
 šapšš+N+Sg+Gen __white fish/siika__
-
-__š0apšš%^V2VV%^CC2C examples:__
-
-__šaapš000 examples:__
 
 
 
@@ -1564,49 +887,21 @@ __Even syllabic verbs I, t>đ __ - tt:đ
 
 }}}
 
-__ǩiõ0tt%^Allegro%^CC2C%>stan examples:__
-
-__ǩiõˈđ000%>stan examples:__
-
 
 __Even syllabic nouns I, p>v __ - pp:v
-
-__ǩiâpp%^CC2C examples:__
-
-__ǩiâv00 examples:__
 
 
 __Even syllabic verbs I, second consonant loss k:0__ - used in
 loǥškueʹtted __begin to read__
-
-__lookk%^VV2V%^CC2C»škueʹtted examples:__
-
-__l0oǥ000»škueʹtted examples:__
 mieʹlǩǩ+N+Sg+Acc: __milk/maito__
-
-__miâ0lkk%^PALE%^PAL%^CC2C examples:__
-
-__mieʹlǩ0000 examples:__
-
-__pååss%^VV2V%^KK2G»škuätt examples:__
-
-__p0åz0000škuätt examples:__
 
 __Even syllabic verbs I, second consonant loss ǩ:0__ - used in
 
 eʹǩrded+V+Inf
 
-__eeʹǩǩerd%^PenVV2V%^PenCC2C%^RmVow%>ed examples:__
-
-__0eʹǩ00rd000%>ed examples:__
-
 __Even syllabic verbs I, second consonant loss ǥ:0__ - used in
 
 påǥsted+V+Inf
-
-__pååǥǥast%^PenVV2V%^PenCC2C%^RmVow%>ed examples:__
-
-__p0åǥ00st000%>ed examples:__
 
 
 __Even syllabic verbs I, lgg>lǥ __ - vueʹlǧǧed+V+Ind+Prs+Sg2 => vuâlǥak
@@ -1617,19 +912,7 @@ __Odd syllabic nouns I, lǥ>lg__ - ǩeâlǥal+N+Sg+Gen: ǩeâlggal
 
 
 
-__ǩeâlǥ0al%^PenXY2XYY examples:__
-
-__ǩeâlggal0 examples:__
-
 __even syllabic verbs I, 'lǧǧ>'lj __ - used in
-
-__vuâ0lgg%^VOWRaise%^PAL%^CC2C%>im examples:__
-
-__vuõʹlj0000%>im examples:__
-
-__0äi0gg%^V2VV%^PAL%^XYY2XY examples:__
-
-__ääiʹj0000 examples:__
 
 
 
@@ -1645,33 +928,17 @@ __ääiʹj0000 examples:__
 
 __Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:m__ - used in
 
-__čââʹlmteʹm%{XC%}%^PALNo%^C2CC%>a examples:__
-
-__čââʹlmte0mm000%>a examples:__
-
 __Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:v__ - used in
 
 
 __Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:n__ - used in
 
-__mään%{XC%}%^VV2V%^VOWRaise%^C2CC%>u examples:__
-
-__m0ann0000u examples:__
-
 __Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:d__ - used in
 
 __Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:r__ - used in
 
-__puär0%{XC%}%^VOWRaise%^C2CCC%>u examples:__
-
-__puårˈr000u examples:__
-
 __Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:l__ - used in
 suâl+N+Pl+Nom __island__
-
-__suâl0%{XC%}%^VOWRaise%^C2CCC%>u examples:__
-
-__suõlˈl000u examples:__
 
 __Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:k__ - used in
 
@@ -1681,14 +948,6 @@ __Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:k__ -
 __Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m__ - kåʹmrded+V+Imp+Sg2: kååʹmmerd 
 
 
-__ooum0%^VV2V%^C2CCu examples:__
-
-__0oumm00u examples:__
-
-__čââʹlmteʹm0%^PALNo%^C2CC%>a examples:__
-
-__čââʹlmte0mm000a examples:__
-
 __Consonant lengthening 0:b__ - used in
 
 
@@ -1697,21 +956,9 @@ __Consonant lengthening 0:p__ - used in
 __Consonant lengthening 0:v__ - used in
 kååvas+N+Sg+Gen: __kota__
 
-__kååv0as%^PenVV2V%^PenC2CC%^VC examples:__
-
-__k0åvvaz000 examples:__
-
 __Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:n__ - used in
 
-__mään0%^VV2V%^VOWRaise%^C2CC%>u examples:__
-
-__m0ann0000u examples:__
-
 kõõnjâl+N+Sg+Gen __tear__
-
-__kõõn0jâl%^PenVV2V%^PenC2CC examples:__
-
-__k0õnnjâl00 examples:__
 
 
 __Consonant lengthening 0:d__ - juurd+N+Sg+Gen: jurddi
@@ -1726,17 +973,9 @@ __Consonant lengthening 0:c__ - used in
 __Consonant lengthening 0:đ__ - čââʹđ+N+Sg+Gen: čâđđam
 čââʹđ+N+Sg+Ill: __heart/sydän__
 
-__čââʹđ0%^VV2V%^PALNo%^C2CC%>ma examples:__
-
-__č0â0đđ000%>ma examples:__
-
 
 __Consonant lengthening 0:l__ - used in
 suâl+N+Par __island/saari__
-
-__suâl0%^VOWRaise%^C2CC%>ud  examples:__
-
-__suõll00%>ud examples:__
 
 
 __Consonant lengthening 0:ŋ__ - used in
@@ -1744,10 +983,6 @@ __Consonant lengthening 0:ŋ__ - used in
 
 __Consonant lengthening 0:g__  - used in
 ǩeâlǥal+N+Sg+Gen __kilkura__
-
-__ǩeâlǥ0al%^PenC2CC examples:__
-
-__ǩeâlggal0 examples:__
 
 __Consonant lengthening 0:ǧ__ - used in
 {{{
@@ -1760,10 +995,6 @@ __Consonant lengthening 0:ǩ __ - used in
 
 __Consonant lengthening 0:k__ - used in
 
-__durak0%^C2CC%>a examples:__
-
-__durakk00a examples:__
-
 
 !!CONSONANT QUALITY CHANGE
 
@@ -1774,10 +1005,6 @@ __Consonant quality change ǥ:ǧ__ - used in
 __Consonant quality change ǥ:k__ - used in
 čuâǥǥas+N+Sg+Ill  __road__
 
-__čuâǥ0ǥ%^GG2KKK%^VOWRaise%>sa examples:__
-
-__čuõkˈk00%>sa examples:__
-
 
 !Pedagogical X3 length mark after diphthongs in vertical line ˈ 
 
@@ -1787,10 +1014,6 @@ __čuõkˈk00%>sa examples:__
 __Consonant X3 lengthening after diphthong in vertical line ˈ character__ - used in +N+Sg+Ill
 __jeäll:jiâlˈlu, __
 b c č ǯ d đ g ǧ k ǩ l m n p r s š t v also htˈt nˈnj
-
-__kuâl0l%^CC2CCC%>a examples:__
-
-__kuâlˈl00a examples:__
 
 
 
@@ -1807,19 +1030,11 @@ b c č ǯ d đ g ǧ k ǩ l m n p r s š t v also htˈt nˈnj
 
 __Removing Consonant X3 length mark after diphthong in vertical line ˈ LEFT ARROW__ - maainâst
 
-__m0ain%{Â1%}st%^PenV2VV%^IMPSG2 examples:__
-
-__maainâst00 examples:__
-
 
 __Removing Consonant X3 length mark after diphthong in vertical line ˈ LEFT ARROW__ - 
 {{{
 }}}
 
 __Removing Consonant X3 length mark after diphthong in vertical line ˈ LEFT ARROW__ - 
-
-__m0ain%{Â1%}st%^PenV2VV%^INDPRSSG3 examples:__
-
-__maainast00 examples:__
 
 
