@@ -89,7 +89,8 @@ AM_CONDITIONAL([HAVE_ALT_ORTHS], [test "x$ALT_ORTHS" != "x" \
 # NOT support dialectal variant fst's. Use upper case, separate with space.
 # Dialects are presently only used in Oahpa fst's, and only support dialectal
 # variation within the -norm- fst's.
-AC_SUBST([DIALECTS], [""])
+#AC_SUBST([DIALECTS], [""])
+AC_SUBST([DIALECTS], ["main"])
 AM_CONDITIONAL([HAVE_DIALECTS], [test "x$DIALECTS" != "x"])
 
 # GTLANG is the language code used to identify this project; it should be same
