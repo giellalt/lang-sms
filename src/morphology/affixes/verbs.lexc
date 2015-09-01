@@ -2042,38 +2042,50 @@ LEXICON V_SUIʹTTED !!= * @CODE@ suiʹtted:suitt
 
 
 LEXICON V_VUEʹLǦǦED !!= * @CODE@ vueʹlǧǧed:vuâlgg
+!! 1.e.
+!! 1c
+!! * Yaml: __V-juekked__
 ! FORMS
-! (1) +V+Inf: vueʹlǧǧed
-!   Ind.Prs.Pl1-Pl2, Ind.Prt.ConNeg
-!   Imprt.Pl1-Pl2-Pl3, ActEss, Actio, PrsPrc, PrfPrc
-! (2) +V+Ind+Prs+Sg3: vuâlgg
-! (3) +V+Ind+Prs+Pl3: vueʹlǧǧe
-! (4) +V+Ind+Prt+Pl3: vuõʹlǧǧe
-!   Ind.Prt.Sg1-Sg2-4
-! (5) +V+Imprt+Sg2: vueʹlj
-!   Ind.Prs.Sg1-Sg2-4-ConNeg
-!   Ind.Prt.Sg3-Pl1-Pl2
-!   Imprt.2.ConNeg
-!   VAbe, GerTemp, GerInstr
-!   Cond-Pot
-! (6) +V+Pot+Sg3: vuõʹljež
-! (7) +V+Imprt+Sg3: vuâlǥas
-! (8) +V+Imprt+ConNegII: vuõlggu
-!    Pass.PrfPrc
-! vueʹlǧǧed:vuâlgg
-+V:%^PALE%^PAL VSUF-INF_ED ; !1
-+V: VSUF-IND-PRS-SG3_ED ; !2
-+V+Ind+Prs+Pl3:%^PALE%^PAL%>e K ; !3
-+V+Ind+Prs+Pl3:%^PALÄ%^PAL%>e K ; !3
-+V:%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ; !4
+!! XYY-HighVowel-Palatalization
++V:%^PALE%^PAL VSUF-INF_ED ; !!= * @CODE@ (1) +V+Inf: vueʹlǧǧed
+!! V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
+!! Actio, ActEss, PrsPrc
 
-+V:%^VOWRaise%^PAL%^XYY2XY%> VSUF-POTENTIAL_ED ; !6
-+V:%^PALE%^PAL%^XYY2XY%> VSUF-POTENTIAL_ED ; !6
-+V:%^XYY2XY%> VSUF-CONDITIONAL_ED ; !5 ?2 ?7
-+V:%^PALE%^PAL%^XYY2XY VSUF-IND-PRS-CONNEG_ED ;
-+V+Imprt+Sg3:%^XYY2XY%>as K ; !7
-+V:%^VOWRaise VSUF-IMPRT-CONNEGII_ED ; !8
+!! XYY-HighVowel-No-palatalization
++V: VSUF-IND-PRS-SG3_ED ; !!= * @CODE@ (2) +V+Ind+Prs+Sg3: vuâlgg
+!! +V+Ind+Prs+Sg3, Ind.Prt.ConNeg, PrfPrc
 
+!! XYY-HighVowel-Palatalization
++V+Ind+Prs+Pl3:%^PALE%^PAL%>e K ; !!= * @CODE@ (3) +V+Ind+Prs+Pl3: vueʹlǧǧe
+!! +V+Ind+Prs+Pl3
++Use/NG+V+Ind+Prs+Pl3:%^PALÄ%^PAL%>e K ; !3
+
+!! XYY-RaisedVowel-Palatalization
++V:%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ; !!= * @CODE@ (4) +V+Ind+Prt+Pl3: vuõʹlǧǧe
+!! +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
+
+!! 2XY-StableV-Palatalization
++V:%^PALE%^PAL%^XYY2XY VSUF-IND-PRS-CONNEG_ED ; !!= * @CODE@ (5) +V+Imprt+Sg2: vueʹlj
+!! Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
+
+!! 2XY-RaisedVowel-Palatalization
++V:%^VOWRaise%^PAL%^XYY2XY%> VSUF-POTENTIAL_ED ; !!= * @CODE@  (6) +V+Pot+Sg3: !! vuõʹljež
++V:%^PALE%^PAL%^XYY2XY%> VSUF-POTENTIAL_ED ; 
+!! Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, 
+
+!! 2XY-LoweredVowel-No-palatalization
++V:%^XYY2XY%> VSUF-CONDITIONAL_ED ; !!= * @CODE@ (7) +V+Imprt+Sg3: vuâlǥas
+!! Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
+
+!! XYY-RaisedVowel-No-palatalization
++V:%^VOWRaise VSUF-IMPRT-CONNEGII_ED ; !!= * @CODE@ (8) +V+Imprt+ConNegII: vuõlggu
+!! Imprt+ConNeg, Pass+PrfPrc
+
+!! XYY-HighVowel-No-palatalization
++V: VSUF-IMPRT-PL3_ED ; !!= * @CODE@ (9) Ind.Imprt.Pl3: vuâlggaz
+!! Imprt+Pl3
+
+!! (10) Allegro for incoative: vueʹlj»
 +V+Der/škueʹtted:%^PALE%^PAL%^XYY2XY»škuätt V_PUEʹTTED ;
 
 !! !CLASS 1 LOW VOWEL, PALATALIZATION
@@ -2082,36 +2094,43 @@ LEXICON V_VUEʹLǦǦED !!= * @CODE@ vueʹlǧǧed:vuâlgg
 LEXICON V_SOLLÂʹTTED !!= * @CODE@ sollâʹtted:sollâtt
 ! seek parallel in TÄTTAD
 ! FORMS
-! (1) +V+Inf: sollâʹtted
-!   Ind.Prs.Pl1-Pl2, Ind.Prt.ConNeg
-!   Imprt.Pl1-Pl2-Pl3, ActEss, Actio, PrsPrc, PrfPrc
-! (2) +V+Ind+Prs+Sg3: sollâtt
-! (3) +V+Ind+Prs+Pl3: sollâʹtte
-! (4) +V+Ind+Prt+Pl3: sollõʹtte
-!   Ind.Prt.Sg1-Sg2-4
-! (5) +V+Imprt+Sg2: sollââʹtt
-!   Ind.Prs.Sg1-Sg2-4-ConNeg
-!   Ind.Prt.Sg3-Pl1-Pl2
-!   Imprt.2.ConNeg
-!   VAbe, GerTemp, GerInstr
-!   Cond-Pot
-! (6) +V+Pot+Sg3: sollõõʹttež
-! (7) +V+Imprt+Sg3: sollââttas
-! (8) +V+Imprt+ConNegII: sollõttu
-!    Pass.PrfPrc
-! (9) Ind.Imprt.Pl3: sollâttaz
-! (10) Allegro for incoative: sollâʹđ»
+!! ExtraStrong-LowVowel-Palatalization
++V:%^PAL VSUF-INF_ED ; !!= * @CODE@ (1) +V+Inf: sollâʹtted
+!! V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
+!! Actio, ActEss, PrsPrc
 
-! sollâʹtted:sollâtt
-+V:%^PAL VSUF-INF_ED ; !1
-+V: VSUF-IND-PRS-SG3_ED ; !2
-+V+Ind+Prs+Pl3:%^PAL%>e K ; !3
-+V:%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ; !4
-+V:%^V2VV%^VOWRaise%^PAL%> VSUF-I-POTKOND_AD ; !5
-+V+Pot+Sg3:%^V2VV%^VOWRaise%^PAL%>ež   K ; !6
-+V+Imprt+Sg3:%^V2VV%>as K ; !7
-+V:%^V2VV%^PAL VSUF-IND-PRS-CONNEG_ED ;
-+V:%^VOWRaise VSUF-IMPRT-CONNEGII_ED ; !8
+!! ExtraStrong-LowVowel-No-palatalization
++V: VSUF-IND-PRS-SG3_ED ; !!= * @CODE@ (2) +V+Ind+Prs+Sg3: sollâtt
+!! +V+Ind+Prs+Sg3, Ind.Prt.ConNeg, PrfPrc
+
+!! Strong-LowVowel-Palatalization
++V+Ind+Prs+Pl3:%^PAL%>e K ; !!= * @CODE@ (3) +V+Ind+Prs+Pl3: sollâʹtte
+!! +V+Ind+Prs+Pl3
+
+!! ExtraStrong-RaisedVowel-Palatalization
++V:%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ; !!= * @CODE@ (4) +V+Ind+Prt+Pl3: joʹtte
+!! +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
+
+!! Strong-StableV-Palatalization
++V:%^V2VV%^PAL VSUF-IND-PRS-CONNEG_ED ; !!= * @CODE@ (5) +V+Imprt+Sg2: sollââʹtt
+!! Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
+
+!! Strong-RaisedVowel-Palatalization
++V:%^V2VV%^VOWRaise%^PAL VSUF-POTENTIAL_ED ; !!= * @CODE@  (6) +V+Pot+Sg3: sollõõʹttež
+!! Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
+
+!! Strong-LowVowel-No-palatalization
++V:%^V2VV VSUF-CONDITIONAL_ED ; !!= * @CODE@ (7) +V+Imprt+Sg3: sollââttas
+!! Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
+
++V:%^VOWRaise VSUF-IMPRT-CONNEGII_ED ; !!= * @CODE@ (8) +V+Imprt+ConNegII: sollõttu
+!! Imprt+ConNeg, Pass+PrfPrc
+
+!! ExtraStrong-LowVowel-No-palatalization
++V: VSUF-IMPRT-PL3_ED ; !!= * @CODE@ (9) Ind.Imprt.Pl3: sollâttaz
+!! Imprt+Pl3
+
+!! (10) Allegro for incoative: sollâʹđ»
 +V+Der/škueʹtted:%^PAL%^CC2C%>e»škuätt V_PUEʹTTED ; 
 
 
@@ -2140,7 +2159,7 @@ LEXICON V_JÅÅʹTTED !!= * @CODE@ jååʹtted:jåått
 !! Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 
 !! Weak-RaisedVowel-Palatalization
-+V:%^VOWRaise%^PAL%^CC2C VSUF-POTENTIAL_ED ; !!= * @CODE@  (6) +V+Pot+Sg3: j
++V:%^VOWRaise%^PAL%^CC2C VSUF-POTENTIAL_ED ; !!= * @CODE@  (6) +V+Pot+Sg3: jooʹđež
 !! Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
 
 !! Weak-LowVowel-No-palatalization
@@ -2470,10 +2489,10 @@ LEXICON V_VUEIʹNNED !!= * @CODE@ vueiʹnned:vuäinn
 +V: VSUF-IND-PRS-SG3_ED ; !2
 +V+Ind+Prs+Pl3:%^PAL%>e K ; !3
 +V:%^VOWRaise%^PALE%^PAL%> VSUF-IND-PRT-PL3_ED ; !4
++V:%^VOWRaise%^PALE%^PAL%^XYY2XY VSUF-IND-PRS-CONNEG_ED ;
 +V:%^VOWRaise%^PALE%^PAL%^XYY2XY%> VSUF-POTENTIAL_ED ; !6 vueiʹnet
 +V:%^VOWBack%^PAL%^XYY2XY%> VSUF-POTENTIAL_ED ; !6 vuõiʹnet
 +V:%^XYY2XY%> VSUF-CONDITIONAL_ED ; !5 ?2 ?7
-+V:%^VOWRaise%^PALE%^PAL%^XYY2XY VSUF-IND-PRS-CONNEG_ED ;
 +V+Imprt+Sg3:%^XYY2XY%>as K ; !7
 +V:%^VOWBack VSUF-IMPRT-CONNEGII_ED ; !8
 
@@ -3106,13 +3125,13 @@ LEXICON V_VÕʹLLʼJED !!= * @CODE@ võʹll’jed:võʹll
 +V:ai VSUF-VUEJTED-IND-PRS-SG3 ; !!= * @CODE@ võʹllai
 +V:%>j VSUF-VUEJTED-ELSE ; 
 
-+V+Ind+Prt+Pl1:%>jin             K  ; !WG ! võʹllʼjin
-+V+Ind+Prt+Pl1:%>jiim             K  ; !WG ! võʹllʼjiim
-+V+Ind+Prt+Pl1:%>jiin             K  ; !WG ! võʹllʼjiin
-+V+Ind+Prt+Pl2:%>jiid             K  ; !WG ! võʹllʼjiid
++Use/NG+V+Ind+Prt+Pl1:%>jin             K  ; !WG ! võʹllʼjin
++Use/NG+V+Ind+Prt+Pl1:%>jiim             K  ; !WG ! võʹllʼjiim
++Use/NG+V+Ind+Prt+Pl1:%>jiin             K  ; !WG ! võʹllʼjiin
++Use/NG+V+Ind+Prt+Pl2:%>jiid             K  ; !WG ! võʹllʼjiid
 
-+V+Act+PrfPrc:%>jâmma K ;
-+V+Pass+PrfPrc:%>jum K ; !
++Use/NG+V+Act+PrfPrc:%>jâmma K ;
++Use/NG+V+Pass+PrfPrc:%>jum K ; !
 
 +V+Der/škueʹtted:%>je»škuätt V_PUEʹTTED ;
 
