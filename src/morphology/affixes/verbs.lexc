@@ -227,33 +227,41 @@ LEXICON V_VIIKKÂD !!= * @CODE@ viikkâd:viikk
 !   Extra strong grade: Ind.Prs.Pl3, Ind.Prt.Pl3
 !   Weak grade: Imprt.Sg2, Pot.Sg3, Imprt.Sg3
 ! FORMS
-! (1)  Inf: viikkâd
-! (2)  Ind.Prs.Sg3: veekk
-! (3)  Ind.Prs.Pl3: veʹǩǩe
-! (4)  Ind.Prt.Pl3: viʹǩǩe
-! (5)  Ind.Imprt.Sg2: viiǥǥ
-! (6)  Ind.Pot.Sg3: viiǥǥâž
-! (7)  Ind.Imprt.Sg3: veeǥǥas
-! (8)  Imprt.13.ConNeg: vikk
-! (9)  Ind.Imprt.Pl3: vekkaz
-! (10) Allegro for incoative: viǥ»
 ! * Yaml: __V-viikkad__
 ! viikkâd:viikk
 ! Strong grade in penultimate syllable
-+V: VSUF-INF_ÂD ; !1 viikkâd
-!+V:%^VOWLower VSUF-IND-PRS-SG3_ÂD ; !2
-+V+Imprt+Pl3:%^VV2V%^VOWLower%>az K ; ! vekkaz
-+V+Ind+Prs+Sg3:%^VOWLower K ; ! veekk
-+V+Ind+Prs+Pl3:%^VV2V%^VOWLower%^PAL%>e K ; !3 veʹǩǩe
-+V:%^VV2V%^PAL VSUF-IND-PRT-PL3_ÂD ; !4 viʹǩǩe
-+V:%^KK2GG VSUF-I-POTKOND_ÂD ; !5 viiǥǥ-
-+V+Pot+Sg3:%^KK2GG%>âž   K ; !6 viiǥǥ-
-+V+Imprt+Sg3:%^VOWLower%^KK2GG%>as K ; !7 veeǥǥas
-+V:%^VV2V VSUF-IMPRT-CONNEGII_ÂD ; !8 vikk-
-+V+Imprt+ConNegII:%^VV2V%>u K ; ! vikku
-+V+Der/mõš:»mõš N_LOOKKMÕŠ ;
++V: VSUF-INF_ÂD ; !!= * @CODE@ (1)  Inf: viikkâd
+!! V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
+!! Imprt+Pl1, Imprt+Pl2
+!! Actio, ActEss, PrsPrc
+!!  Ind.Prt.ConNeg, Imprt+Pl3, PrfPrc
+!! +Der/mõš
+
++V:%^VOWLower VSUF-IND-PRS-SG3_ÂD ; !!= * @CODE@ (2)  Ind.Prs.Sg3: veekk
+!! +V+Ind+Prs+Sg3, +Imprt+Pl3
+
++V+Ind+Prs+Pl3:%^VV2V%^VOWLower%^PAL%>e K ; !!= * @CODE@ (3)  Ind.Prs.Pl3: veʹǩǩe
+!! +V+Ind+Prs+Pl3
+
++V:%^VV2V%^PAL VSUF-IND-PRT-PL3_ÂD ; !!= * @CODE@ (4)  Ind.Prt.Pl3: viʹǩǩe
+!! +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
+
++V:%^KK2GG VSUF-I-POTKOND_ÂD ; !!= * @CODE@ (5-6)  Pot.Sg3: viiǥǥâž
+!! +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
+!! Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
+!! Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der/ted
+
++V+Imprt+Sg3:%^VOWLower%^KK2GG%>as K ; !!= * @CODE@ (7)  Imprt.Sg3: veeǥǥas
+!! Imprt+Sg3
+
++V:%^VV2V VSUF-IMPRT-CONNEGII_ÂD ; !!= * @CODE@ (8)  Imprt.ConNegII: vikku
+!! Imprt+ConNegII, Pass+PrfPrc
+
++V+Imprt+Pl3:%^VV2V%^VOWLower%>az K ; !!= * @CODE@ (9) Ind.Imprt.Pl3: vekkaz
+!! Imprt+Pl3
+
+!!= * @CODE@ (10) Allegro for incoative: viǥ»
 +V+Der/škueʹtted:%^VV2V%^KK2G»škuätt V_PUEʹTTED ;
-+V+Der/ted:%^KK2GG»ât  V_AALǤTED ;
 
 LEXICON V_RIČČÂD !!= * @CODE@ riččâd:ričč
  V_VIǮǮÂD ;
@@ -541,30 +549,92 @@ LEXICON V_HUÕLLÂD !!= * @CODE@ huõllâd:huõll
 !   Extra strong grade: Ind.Prs.Pl3, Ind.Prt.Pl3
 !   Weak grade: Imprt.Sg2, Pot.Sg3, Imprt.Sg3
 ! FORMS
-! (1)  Inf: huõllâd
-! (2)  Ind.Prs.Sg3: huâll
-! (3)  Ind.Prs.Pl3: hueʹlˈle (allophonic)
-! (4)  Ind.Prt.Pl3: huõʹlˈle
-! (5)  Ind.Imprt.Sg2: huõl
-! (6)  Ind.Pot.Sg3: huõlâž
-! (7)  Ind.Imprt.Sg3: huâlas
-! (8)  Imprt.13.ConNeg: huõlˈlu
-! (9)  Ind.Imprt.Pl3: huâlˈlaz
-! (10) Allegro for incoative: huõl»
 ! Lexicon ''@LEXNAME@'' is for verbs like
-!  huõllâd:huõll
 ! * Yaml: __V-huollad__
 !  with lexc stem
-+V: VSUF-INF_ÂD ; !1 huõllâd
-+V:%^VOWLower VSUF-IND-PRS-SG3_ÂD ; !2 huâll
-+V+Ind+Prs+Pl3:%^VOWLower%^PALE%^PAL%^CC2CCC%>e K ; !3 hueʹlˈle
-+V:%^PAL%^CC2CCC VSUF-IND-PRT-PL3_ÂD ; !4 huõʹlˈle
-+V:%^CC2C VSUF-I-POTKOND_ÂD ; !5 huõl
-+V+Pot+Sg3:%^CC2C%>âž   K ; !6 huõlâž
-+V+Imprt+Sg3:%^VOWLower%^CC2C%>as K ; !7 huõlas
-+V:%^CC2CCC VSUF-IMPRT-CONNEGII_ÂD ; !8 huõlˈlu
-+V+Der/mõš:»mõš N_LOOKKMÕŠ ;
-+V+Der/škueʹtted:%^CC2C»škuätt V_PUEʹTTED ;
++V: VSUF-INF_ÂD ; !!= * @CODE@ (1)  Inf: huõllâd
+!! V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
+!! Imprt+Pl1, Imprt+Pl2
+!! Actio, ActEss, PrsPrc
+!!  Ind.Prt.ConNeg, Imprt+Pl3, PrfPrc
+!! +Der/mõš
+
++V:%^VOWLower VSUF-IND-PRS-SG3_ÂD ; !!= * @CODE@ (2)  Ind.Prs.Sg3: huâll
+!! +V+Ind+Prs+Sg3, +Imprt+Pl3
+
++V+Ind+Prs+Pl3:%^VOWLower%^PALE%^PAL%^CC2CCC%>e K ; !!= * @CODE@ (3)  Ind.Prs.Pl3: hueʹlˈle
+!! +V+Ind+Prs+Pl3
+
++V:%^PAL%^CC2CCC VSUF-IND-PRT-PL3_ÂD ; !!= * @CODE@ (4)  Ind.Prt.Pl3: huõʹlˈle
+!! +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
+
++V:%^CC2C VSUF-I-POTKOND_ÂD ; !!= * @CODE@ (5-6)  Pot.Sg3: huõlâž
+!! +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
+!! Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
+!! Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der/ted
+
++V+Imprt+Sg3:%^VOWLower%^CC2C%>as K ; !!= * @CODE@ (7)  Imprt.Sg3: huõlas
+!! Imprt+Sg3
+
++V:%^CC2CCC VSUF-IMPRT-CONNEGII_ÂD ; !!= * @CODE@ (8)  Imprt.ConNegII: huõlˈlu
+!! Imprt+ConNegII, Pass+PrfPrc
+
++V:%^CC2CCC%>az K ; !!= * @CODE@ (9) Ind.Imprt.Pl3: huâlˈlaz
+!! Imprt+Pl3
+
++V+Der/škueʹtted:%^CC2C»škuätt V_PUEʹTTED ; !!= * @CODE@ (10) Allegro for incoative: huõl»
+
+
+LEXICON V_SUÅPPÂD !!= * @CODE@ suåppâd:suåpp
+! 1. VERBS WITH SINGLE-SYLLABLE Ind.Prs.Sg3 (2009: 354)
+! 1.1 Inf in âd (vowel shift)
+!   Raised: Inf, Ind.Prt.Pl3, Imprt.Sg2, Pot.Sg3
+!   Lowered: Ind.Prs.Sg3, Ind.Prs.Pl3, Imprt.Sg3
+! 1.1.1 Has Palatalization
+! 1.1.1[1] (Palatalization pattern)
+!   Palatalized: Ind.Prs.Pl3, Ind.Prt.Pl3
+!   Not Palatalized: Inf, Ind.Prs.Sg3, Imprt.Sg2, Imprt.Sg3, Pot.Sg3
+! 1.1.1[1].2 Has Specifically Pedagogical Gradation
+! 1.1.1[1].2.1 Has Orthographic Gradation
+! 1.1.1[1].2.1[231].2 (Diphthong + Consonant Geminate alternation)
+!   Strong grade: Inf, Ind.Prs.Sg3
+!   Extra strong grade: Ind.Prs.Pl3, Ind.Prt.Pl3
+!   Weak grade: Imprt.Sg2, Pot.Sg3, Imprt.Sg3
+! FORMS
+! Lexicon ''@LEXNAME@'' is for verbs like
+! * Yaml: __V-huollad__
+!  with lexc stem
++V: VSUF-INF_ÂD ; !!= * @CODE@ (1)  Inf: suåppâd
+!! V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
+!! Imprt+Pl1, Imprt+Pl2
+!! Actio, ActEss, PrsPrc
+!!  Ind.Prt.ConNeg, Imprt+Pl3, PrfPrc
+!! +Der/mõš
+
++V:%^VOWLower VSUF-IND-PRS-SG3_ÂD ; !!= * @CODE@ (2)  Ind.Prs.Sg3: suäpp
+!! +V+Ind+Prs+Sg3, +Imprt+Pl3
+
++V+Ind+Prs+Pl3:%^VOWLower%^PAL%^CC2CCC%>e K ; !!= * @CODE@ (3)  Ind.Prs.Pl3: suäʹpˈpe
+!! +V+Ind+Prs+Pl3
+
++V:%^PALE%^PAL%^CC2CCC VSUF-IND-PRT-PL3_ÂD ; !!= * @CODE@ (4)  Ind.Prt.Pl3: sueʹpˈpe
+!! +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
+
++V:%^CC2C VSUF-I-POTKOND_ÂD ; !!= * @CODE@ (5-6)  Pot.Sg3: suåvâž
+!! +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
+!! Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
+!! Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der/ted
+
++V+Imprt+Sg3:%^VOWLower%^CC2C%>as K ; !!= * @CODE@ (7)  Imprt.Sg3: suävas
+!! Imprt+Sg3
+
++V:%^CC2CCC VSUF-IMPRT-CONNEGII_ÂD ; !!= * @CODE@ (8)  Imprt.ConNegII: suåpˈpu
+!! Imprt+ConNegII, Pass+PrfPrc
+
++V:%^CC2CCC%>az K ; !!= * @CODE@ (9) Ind.Imprt.Pl3: suäpˈpaz
+!! Imprt+Pl3
+
++V+Der/škueʹtted:%^CC2C»škuätt V_PUEʹTTED ; !!= * @CODE@ (10) Allegro for incoative: suåv»
 +V+Der/ted:%^CC2C»ât  V_AALǤTED ;
 
 
@@ -1434,11 +1504,11 @@ LEXICON V_SÄRNNAD !!= * @CODE@ särnnad:särnn
 +V+Ind+Prs+Pl3:%>a K ; !!= * @CODE@ (3)  Ind.Prs.Pl3: särnna
 !! +Ind+Prs+Pl3
 
-+V:%^VOWRaise%> VSUF-IND-PRT-PL3_AD ; !!= * @CODE@ (4) Ind.Prt.Pl3: sarnnu
++V:%^VOWRaise VSUF-IND-PRT-PL3_AD ; !!= * @CODE@ (4) Ind.Prt.Pl3: sarnnu
 !! +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 
-+V:%^V2VV%^XYY2XY%> VSUF-I-POTKOND_AD ; !!= * @CODE@ (5-7) +Imprt+Sg2: säärn
++V:%^V2VV%^XYY2XY VSUF-I-POTKOND_AD ; !!= * @CODE@ (5-7) +Imprt+Sg2: säärn
 !! Imprt+ConNeg, Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, Ind+Prs+Sg1, Ind+Prs+Sg2
 !! +Ger, +VAbess, +Pot, +Cond, +Imprt+Sg3
 
