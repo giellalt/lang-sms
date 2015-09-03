@@ -103,9 +103,11 @@ GT_XML_SRCS=\
 			 stems/Pron_sms2x.xml     \
 			 stems/V_sms2x.xml     
 
-# Define any additional sources here (compiled on their own, or just included
-# in the distro):
+# Define any additional sources here (compiled on their own):
 GT_LOCAL_SRCS=
+
+# Define here any additional sources just included in the distro:
+GT_DISTRO_SRCS=
 
 ### BEGIN: Local processing: ###
 
