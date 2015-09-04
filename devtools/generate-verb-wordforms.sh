@@ -13,8 +13,9 @@ morf_codes="+V+Inf \
             +V+Pot+Sg3 \
             +V+Cond+Sg3 \
             +V+Imprt+Sg3 \
+            +V+Imprt+ConNegII \
             +V+Imprt+Pl3 \
-            +V+PrfPrc"
+            +V+Der/škueʹtted+V+Inf"
 
 # Lexicon source file for lexicons and lemmas:
 source_file=src/morphology/stems/V_sms2x.lexc

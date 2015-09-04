@@ -11,7 +11,14 @@ morf_codes="+N+Sg+Nom \
             +N+Sg+Com \
             +N+Pl+Nom \
             +N+Pl+Acc \
-            +N+Ess"
+            +N+Ess \
+            +N+Par \
+            +N+Der/Dim+N+Sg+Nom \
+            +N+Der/Dim+N+Sg+Gen \
+            +N+Sg+Nom+PxSg3 \
+            +N+Sg+Loc+PxSg3 \
+            +N+Sg+Acc+PxSg3 \
+            +N+Ess+PxSg3"
 
 # Lexicon source file for lexicons and lemmas:
 source_file=src/morphology/stems/N_sms2x.lexc
