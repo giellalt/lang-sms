@@ -285,7 +285,7 @@ XYY2XYCluster = [l [m m:|b b:|p p:| d d:|t t:|g g:|ǧ: ǧ:|k: k:|ǩ: ǩ:]|m [p p
 
 
 !! Onset consonant or word boundary
-OnSetC = [:Cns (Cns:) |#|%>] ;
+OnSetC = [:Cns (Cns:|:Cns) |#|%>] ;
 
 
 !! following morpheme or word boundary
@@ -336,6 +336,8 @@ BetweenStemAndConsGrade = [ BetweenStemAndHeight ((%^VOWRaise:|%^VOWLower:|%^Low
 
 !! possible triggers between vowel length and Palatalization
 BetweenVowLengthAndPALNo = [(%^VOWLower:|%^VOWRaise:|%^LowerI2E:) (%^PALÄ:|%^PALE:|%^PALẸ:|%^PALÕ:|%^PALÂ:)| %^VOWBack: ] ;
+
+BetweenVowHeightAndConsGrade = [((%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÕ:) (%^Allegro:) %^PAL:|(%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:)] ;
 
 !! possible triggers between VowHeight and word end
 !! {{{
@@ -1100,6 +1102,11 @@ Rules
 !€ ääld000
 !€ j0äuʹrr%^V2VV%^CC2C
 !€ jääuʹr000
+   OnSetC _ ä h: (ʹ:|0:ʹ) Cns:+ %^V2VV: BetweenVowHeightAndConsGrade %^XYY2VY: ;
+!! mäʹhssed+V+Ind+Prs+Sg1: __pay/maksaa__
+!€ m0ähss%^V2VV%^XYY2VY%>am
+!€ määus000%>am
+
  OnSetC _ [å:ä|ä|a:ä] (:u|i) (ʹ:|0:ʹ) Cns:+ %^V2VV: ( %^VOWLower: )  ; 
 !Distinguishing mainstam and maainstam
 !- kååʹmmerd, maainâst Vowel lengthening in INDPRSSG3 and IMPSG2
@@ -1176,10 +1183,13 @@ OnSetC _ o (i|u) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^PenV2VV: ;
 
 "Even syllabic nouns, relative vowel extra lengthening u not followed by v"
 !! __@RULENAME@__ - declension of nouns kunn > kuun
- 0:u <=> OnSetC _ [o:u|u] (ʹ:|0:ʹ) Cns: Cns:* %^V2VV: ((%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:|%^PALNo:) BetweenPALNoAndMorph ;
+ 0:u <=> OnSetC _ [o:u|u] (ʹ:|0:ʹ) Cns: Cns:* (%^PenCC2C:) %^V2VV: ((%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:|%^PALNo:) BetweenPALNoAndMorph ;
  OnSetC _ [o:u|u] RelVowLengtheningNOTu ;
            Cns: _  :u (ʹ:|0:ʹ)  CNoV: Vow: [Cns:+|:Cns]   %^PenV2VV: [%>|#|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:] ;
-
+ 
+!! mainstummuš+N+Err/Orth+Sg+Gen
+!€ mainstumm0ušš%^PenCC2C%^V2VV%^KK2GG
+!€ mainstum0uužž000
 
 
 !! simultaneous lengthening and raising, hmm: xfst ordering might be easier
