@@ -11,6 +11,7 @@ morf_codes="+N+Sg+Nom \
             +N+Sg+Com \
             +N+Pl+Nom \
             +N+Pl+Acc \
+            +N+Pl+Loc \
             +N+Ess \
             +N+Par \
             +N+Der/Dim+N+Sg+Nom \
