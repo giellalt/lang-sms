@@ -84,12 +84,19 @@ LEXICON NMN_PAPP
 +Der/Dim+N:%^V2VV%^PAL N_MUÕRÂŽ-WITH-PAL ;  !!= * @CODE@ paaʹpp-
 
 HatÂ-STEM-PX-RETAIN ;
-:%^V2VV HatÂ-STEM-PX-WEAKEN ;
-:%^V2VV HatÂ-STEM-PX-WEAKEN_NG ;
- HatÂ-STEM-PX-ALLEGRO ;
+:%^V2VV HatÂ-STEM-PX-WEAKEN ; !! e.g. 
+:%^V2VV HatÂ-STEM-PX-WEAKEN_NG ; !! e.g. +Use/NG+Sg+Loc+PxSg3
+ HatÂ-STEM-PX-ALLEGRO ; !! e.g. +Sg+Loc+PxSg1
  HatÂ-STEM-PX-STENGTHEN ;
 
-
+LEXICON N_PAPP-PL
+: ATTESTED-NOUN-STEM ;          !!= * @CODE@ papp
+:%^V2VV PL-NOM ; !!= * @CODE@ paapp
+:%^V2VV PL-OBL ;      !!= * @CODE@ paappi, paappid, paappid, paappin, paappivuiʹm, paappitaa
+:%>â ESS/PAR ;                  !!= * @CODE@ pappân, pappâd
+ HatÂ-STEM-PX-RETAIN-PL ;
+:%^V2VV HatÂ-STEM-PX-WEAKEN-PL ;
+ HatÂ-STEM-PX-STENGTHEN-ESS ;
 
 LEXICON N_TOLL !!= * @CODE@ toll:toll
 !! analogy in ääŋŋ
@@ -2380,7 +2387,7 @@ LEXICON NMN_KUʹRČČ
 :%^V2VV%^XYY2XY PL-OBL ;		! kuuʹrči
 +Der/Dim:%^V2VV%^VOWLower%^PALNo%^XYY2XY%> N_KUÂLAŽ ;	! koorčaž
 
-LEXICON N_KUʹVǮǮ !!= * @CODE@ kuʹvǯǯ:kuʹvǯǯ
+LEXICON N_KUʹVǮǮ !!= * @CODE@ kuʹvǯǯ:kuvǯǯ
 ! vowel: monophthong
 +N: NMN_KUʹVǮǮ ;
 LEXICON NMN_KUʹVǮǮ
@@ -2414,16 +2421,15 @@ LEXICON NMN_KUʹVǮǮ
 !! NumContLex="1.113"
 !! Is for nouns with ''-est'' Loc, Extra long vowel
 !! ** Yaml: __N-kuvzz__
- ATTESTED-NOUN-STEM ;
-: SG-NOM ;
-:%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;
-:%^VOWLower%^PALNo%^XYY2VYY NMN_SG-ILL_A ; !kouǯǯa
-:%^XYY2XY%>e SG-LOC ;
-:%^XYY2XY SG-COM_IN ;
-:%>e ESS ; ! ess and prt without
-:%>e PAR ;
-:%^XYY2XY%> PL-OBL ;
-+Der/Dim:%^VOWLower%^PALNo%^XYY2VYY%> N_KUÂLAŽ ;
+:%^PAL ATTESTED-NOUN-STEM ;
+:%^PAL SG-NOM ;
+:%^PAL%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;
+:%^VOWLower%^XYY2VYY NMN_SG-ILL_A ; !kouǯǯa
+:%^PAL%^XYY2XY%>e SG-LOC ;
+:%^PAL%^XYY2XY SG-COM_IN ;
+:%^PAL%>e ESS/PAR ; ! ess and prt without
+:%^PAL%^XYY2XY%> PL-OBL ;
++Der/Dim:%^VOWLower%^XYY2VYY%> N_KUÂLAŽ ;
 
 LEXICON N_JUʹVJJ !!= * @CODE@ juʹvjj:juvjj
 ! vowel: monophthong
@@ -4154,9 +4160,12 @@ LEXICON NMN_JEÄʹNˈN
  E-STEM_SG-ILL ;	     !!= * @CODE@ (3) jeägˈga
 :%^PAL ATTESTED-NOUN-STEM ;  !!= * @CODE@ (1) jeäʹǧˈǧ
 :%^PAL E-STEM_SG-NOM ;       !!= * @CODE@ (1) jeäʹǧˈǧ
-:%^VOWRaise%^PALẸ%^PAL%^CCC2CC E-STEM_SG-ABE/ACC/GEN-PL-NOM ;	 !!= * @CODE@ (2) jiẹʹǧǧ
+:%^VOWRaise%^PALẸ%^PAL%^CCC2CC E-STEM_SG-ABE/ACC/GEN ;	 !!= * @CODE@ (2) jiẹʹǧǧ
+:%^VOWRaise%^PALẸ%^PAL%^CCC2CC PL-NOM ;	 !!= * @CODE@ (2) jiẹʹǧǧ
 :%^VOWRaise%^PALẸ%^PAL%^CCC2CC%>e SG-LOC ;  !!= * @CODE@ (4) jiẹʹǧǧest
-:%^VOWRaise%^PALE%^PAL%^CCC2CC E-STEM_SG-COM_IN/PL-OBL ;  !!= * @CODE@ (5) jieʹǧǧin
+:%^VOWRaise%^PALE%^PAL%^CCC2CC SG-COM_IN ;  !!= * @CODE@ (5) jieʹǧǧin
+:%^VOWRaise%^PALE%^PAL%^CCC2CC E-STEM_PL-OBL ;  !!= * @CODE@ (5) jieʹǧǧin
+
 :%^PAL%>e ESS/PAR ; 	 !!= * @CODE@ (6) jeäʹǧˈǧen, (7) jeäʹǧˈǧed
 :%^CCC2CC E-STEM_N_KUÂLAŽ ; 	      			 !!= * @CODE@ (9) jeäggaž
  E-STEM-PX-RETAIN-WITHOUT-PAL ;				 !!= * @CODE@ (10) jeägˈg-
@@ -4165,19 +4174,27 @@ LEXICON NMN_JEÄʹNˈN
 +Use/NG:%^VOWRaise%^PALẸ%^PAL%^CCC2CC E-STEM-PX-ALLEGRO ;  !!= * @CODE@ (2)
 
 
+
 LEXICON E-STEM_SG-NOM !!= * @CODE@ (1)
  SG-NOM ;
  E-STEM-PX-RETAIN-WITH-PAL ;
+
 LEXICON E-STEM_SG-ABE/ACC/GEN-PL-NOM !!= * @CODE@ (2)
- SG-ABE/ACC/GEN-PL-NOM ;
- E-STEM-PX-WEAKEN-WITH-PAL ;
- E-STEM-PX-WEAKEN_NG ;
+ PL-NOM ;
+ E-STEM_SG-ABE/ACC/GEN ;
+LEXICON E-STEM_SG-ABE/ACC/GEN !!= * @CODE@ (2)
+ SG-ABE/ACC/GEN ;
+ E-STEM-PX-WEAKEN-WITH-PAL ; !! e.g. +Sg+Acc+PxPl3
+ E-STEM-PX-WEAKEN_NG ; !! e.g. +Use/NG+Sg+Loc+PxSg1
+
  DenominalAdjsCShort ;
 LEXICON E-STEM_SG-ILL !!= * @CODE@ (3)
 : NMN_SG-ILL_A ;
  E-STEM-PX-STENGTHEN-WITHOUT-PAL ;
 LEXICON E-STEM_SG-COM_IN/PL-OBL !!= * @CODE@ (5)
  SG-COM_IN ;
+ E-STEM_PL-OBL ;
+LEXICON E-STEM_PL-OBL
  PL-OBL ;
  E-STEM-PX-WEAKEN-WITH-PAL_PL-OBL ;
 LEXICON E-STEM_N_KUÂLAŽ !!= * @CODE@ (9)
@@ -6141,18 +6158,24 @@ LEXICON NMN_LÅʹDD
 !! is for nouns with ''-est'' +Loc, 
 !! N_E-ANoPal3-32
 !! ** Yaml: __N-ladd__
-!! * There are several stem types 
-!! * låʹdd:låʹdd
 
- ATTESTED-NOUN-STEM ;
-: SG-NOM ;
-:%^V2VV SG-ABE/ACC/GEN-PL-NOM ;
-:%^PALNo%>a SG-ILL ;
-:%^V2VV%>e SG-LOC ;
-:%^V2VV%^VOWRaise SG-COM_IN ;
-:%>e ESS ; ! ess and prt without
-:%>e PAR ;
-:%^V2VV%^VOWRaise PL-OBL ;
+:%^PAL ATTESTED-NOUN-STEM ;
+:%^PAL E-STEM_SG-NOM ;
+:%^V2VV%^PAL E-STEM_SG-ABE/ACC/GEN ;
+:%> E-STEM_SG-ILL ;
+:%^V2VV%^PAL%>e SG-LOC ;
+:%^V2VV%^VOWRaise%^PAL SG-COM_IN ;
+:%^PAL%>e ESS/PAR ; 
+
+:%^V2VV%^PAL PL-NOM ;
+:%^V2VV%^VOWRaise%^PAL E-STEM_PL-OBL ;
++Der/Dim:%^V2VV E-STEM_N_KUÂLAŽ ; !!= * @CODE@ (9) lååddaž
+ E-STEM-PX-RETAIN-WITHOUT-PAL ;                          !!= * @CODE@ (10) lådd-
+:%^PAL%^CC2C E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) låʹd»
+:%^PAL E-STEM-PX-STENGTHEN-WITH-PAL ;                      !!= * @CODE@ (12) låʹdd
++Use/NG:%^PAL E-STEM-PX-ALLEGRO ;  !!= * @CODE@ (2) låʹdd
+
+
 
 LEXICON N_PIEʹǨˈǨ !!= * @CODE@ pieʹǩˈǩ:pieʹǩˈǩ
 +N: NMN_PIEʹǨˈǨ ;
@@ -7479,7 +7502,7 @@ LEXICON NMN_KAAĐNEǨ !!= * @CODE@ kaađneǩ:kaađneǩ
 +Use/NG+N:%^PAL%^C2CC SG-NOM ;
 :%^PAL%^C2CC%>e ESS/PAR ; !!= * @CODE@ kaađneʹǩǩe- 
 :%^V2VV%^PAL%^C2CC SG-ABE/ACC/GEN ; !!= * @CODE@ kaađneeʹǩǩ
-:%^PALNo%^C2CC%>a SG-ILL ;
+:%^PALNo%^C2CC%>a SG-ILL ; !!= * @CODE@ kaađnekka
 :%^V2VV%^PAL%^C2CC%>e SG-LOC ;
 :%^V2VV%^PAL%^C2CC SG-COM_IN ;
 :%^V2VV%^PAL%^C2CC PL-NOM ; !!= * @CODE@ kaađneeʹǩǩ
@@ -7623,6 +7646,9 @@ LEXICON PL-ABE
 !! !!POSSESSIVE DECLENSION
 !! !HatÂ-STEM-PX
 LEXICON HatÂ-STEM-PX-RETAIN
+ HatÂ-STEM-PX-RETAIN-SG ;
+ HatÂ-STEM-PX-RETAIN-PL ;
+LEXICON HatÂ-STEM-PX-RETAIN-SG
 ! Adapted from Feist (2010: 175)
 +Sg+Nom+PxSg1:%>am K ;
 +Sg+Nom+PxSg2:%>ad K ;
@@ -7643,6 +7669,7 @@ LEXICON HatÂ-STEM-PX-RETAIN
 +Sg+Gen+PxSg1:%>an K ;
 +Sg+Gen+PxPl1:%>ân K ;
 
+LEXICON HatÂ-STEM-PX-RETAIN-PL
 +Pl+Nom+PxSg1:%>an K ;
 +Pl+Nom+PxPl1:%>ân K ;
 
@@ -7664,6 +7691,9 @@ LEXICON HatÂ-STEM-PX-WEAKEN_NG
 +Use/NG+Sg+Loc+PxPl3:%>steez K ;
 
 LEXICON HatÂ-STEM-PX-WEAKEN
+ HatÂ-STEM-PX-WEAKEN-SG ;
+ HatÂ-STEM-PX-WEAKEN-PL ;
+LEXICON HatÂ-STEM-PX-WEAKEN-SG
 +Sg+Acc+PxSg2:%>ad K ;
 +Sg+Acc+PxSg3:%>âs K ;
 +Sg+Acc+PxPl2:%>âd K ;
@@ -7681,6 +7711,7 @@ LEXICON HatÂ-STEM-PX-WEAKEN
 +Sg+Com+PxPl2:%>ineed K ;
 +Sg+Com+PxPl3:%>ineez K ;
 
+LEXICON HatÂ-STEM-PX-WEAKEN-PL
 +Pl+Abe+PxSg1:%>ääntää K ;
 +Pl+Abe+PxSg2:%>äädtää K ;
 +Pl+Abe+PxSg3:%>eestää K ;
@@ -7729,6 +7760,15 @@ LEXICON HatÂ-STEM-PX-WEAKEN
 +Pl+Nom+PxPl3:%>âz K ;
 
 LEXICON HatÂ-STEM-PX-STENGTHEN
++Sg+Ill+PxSg1:%>san K ;
++Sg+Ill+PxSg2:%>sad K ;
++Sg+Ill+PxSg3:%>ses K ;
++Sg+Ill+PxPl1:%>seen K ;
++Sg+Ill+PxPl2:%>seed K ;
++Sg+Ill+PxPl3:%>seez K ;
+ HatÂ-STEM-PX-STENGTHEN-ESS ;
+
+LEXICON HatÂ-STEM-PX-STENGTHEN-ESS
 +Ess+PxSg1:%>nan K ;
 +Ess+PxSg2:%>nad K ;
 +Ess+PxSg3:%>nes K ;
@@ -7736,12 +7776,6 @@ LEXICON HatÂ-STEM-PX-STENGTHEN
 +Ess+PxPl2:%>need K ;
 +Ess+PxPl3:%>neez K ;
 
-+Sg+Ill+PxSg1:%>san K ;
-+Sg+Ill+PxSg2:%>sad K ;
-+Sg+Ill+PxSg3:%>ses K ;
-+Sg+Ill+PxPl1:%>seen K ;
-+Sg+Ill+PxPl2:%>seed K ;
-+Sg+Ill+PxPl3:%>seez K ;
 
 !! !A-STEM-PX
 LEXICON A-STEM-PX-RETAIN
