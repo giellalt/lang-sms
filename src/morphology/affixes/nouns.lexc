@@ -4361,7 +4361,8 @@ LEXICON N_KLAAʹDD !!= * @CODE@ klaaʹdd:klaaʹdd
 +N: NMN_KLAAʹDD ;
 LEXICON NMN_KLAAʹDD
 ! gradation: no
-!! is for nouns with ''-est'' +Sg+Loc; ''e'' +Sg+Ill; X2 no gradation; no lowering no raising
+!! is for nouns with ''-est'' +Sg+Loc; ''e'' +Sg+Ill;
+!! X2 no gradation; no lowering no raising
 !! N_GEN1-ILLEX1-LOCE-NOM1X1
 !! ** Yaml: __klaadd__
 !! * There are several stem types 
@@ -4537,6 +4538,25 @@ LEXICON NMN_JUURD !!= * @CODE@ juurd:jurdd
 :%>e PAR ;
 +N+Der/Dim:%>j N_KUÂLAŽ ;
 +N+Der/Dim:%>ǥ N_KUÂLAŽ ;
+
+LEXICON N_KAAV !!= * @CODE@ kaav:kaapp
++N: NMN_KAAV ;
+LEXICON NMN_KAAV !!= * @CODE@ kaav:kaapp
+! gradation: yes
+!! is for nouns with stem ''i'' + ''-est'' +Sg+Loc; all stem other than the +Sg+Nom are X3; the ''i'' does not occur in +Par 
+!!
+!! ** Yaml: __N-kaav__
+!! * There are several stem types 
+:%^XX2X ATTESTED-NOUN-STEM ;
+:%^XX2X SG-NOM ;
+:%>i SG-ABE/ACC/GEN-PL-NOM ;
+:%>ǥ%>a SG-ILL ;
++Use/NG:%>j%>a SG-ILL ;
+:%>j%>e SG-LOC ;
+:%>j SG-COM_IN/PL-OBL ;
+:%>j%>â ESS/PAR ;
++N+Der/Dim:%>ǥ N_KUÂLAŽ ;
++Use/NG+N+Der/Dim:%>j N_KUÂLAŽ ;
 
 LEXICON N_POOUS !!= * @CODE@ poous:pohss
 +N: NMN_POOUS ;
@@ -7471,7 +7491,8 @@ LEXICON N_OOUMAŽ !!= * @CODE@ ooumaž:ooum
 +N:  NMN_OOUMAŽ ;
 LEXICON NMN_OOUMAŽ
 ! gradation: no
-!! is for nouns with ''-ust'' +Sg+Loc; ''e'' +Sg+Ill; X2 no gradation; no lowering no raising
+!! is for nouns with ''-ust'' +Sg+Loc; ''e'' +Sg+Ill;
+!! X2 no gradation; no lowering no raising
 !! N_GEN1-ILLEX1-LOCE-NOM1X1
 !! ** Yaml: __N-ooumazh__
 !! * There are several stem types 
@@ -7530,11 +7551,13 @@ LEXICON N_ÂʹǨǨED !!= * @CODE@ âʹǩǩed:âʹǩǩ
 +N: NMN_ÂʹǨǨED ;
 LEXICON NMN_ÂʹǨǨED
 :ed SG-NOM ;
-:ed SG-ABE/ACC/GEN-PL-NOM ;
+:ed SG-ABE/ACC/GEN ;
 :ää SG-ILL ;
 :eeʼ SG-LOC ;
-:i SG-COM_IN/PL-OBL ;
+:i SG-COM_IN ;
 :ee ESS/PAR ;
+:ed PL-NOM ;
+:i PL-OBL ;
 
 !! Class 12 Feist 163
 
