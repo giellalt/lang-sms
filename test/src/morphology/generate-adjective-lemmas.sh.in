@@ -76,34 +76,39 @@ Fail=0
 
 # The script tests both Xerox and Hfst transducers if available:
 for f in $fsttype; do
-	if [ $f == "xfst" ]; then
-		lookuptool="@LOOKUP@ -q -flags mbTT"
-		suffix="xfst"
-	elif [ $f == "hfst" ]; then
-		lookuptool="@HFST_LOOKUP@ -q"
-		suffix="hfstol"
-	else
-	    Fail=1
-		printf "ERROR: Unknown fst type! "
-	    echo "$f - FAIL"
-	    continue
-	fi
-#	echo "$generator_file.$suffix"
-	if [ -f "$generator_file.$suffix" ]; then
-		let "transducer_found += 1"
+    if [ $f == "xfst" ]; then
+        lookup_tool="@LOOKUP@ -flags mbTT"
+        suffix="xfst"
+        # Does lookup support -q / quiet mode?
+        lookup_quiet=$($lookup_tool -q 2>&1 | grep USAGES)
+        if ! [[ $lookup_quiet == *"USAGES"* ]] ; then
+            # it does support quiet mode, add the -q flag:
+            lookup_tool="@LOOKUP@ -q -flags mbTT"
+        fi
+    elif [ $f == "hfst" ]; then
+        lookup_tool="@HFST_OPTIMIZED_LOOKUP@ -q"
+        suffix="hfstol"
+    else
+        Fail=1
+        printf "ERROR: Unknown fst type! "
+        echo "$f - FAIL"
+        continue
+    fi
+    if [ -f "$generator_file.$suffix" ]; then
+        let "transducer_found += 1"
 
 ###### Test non-comopunds: #######
 		# generate nouns in Singular, extract the resulting generated lemma,
 		# store it:
 # Generer lemmaer i adjectives med +N+Sg+Nom, lagre i generated-adjectives
-        sed 's/$/+A+Sg+Nom/' $lemmas | $lookuptool $generator_file.$suffix | \
+        sed 's/$/+A+Sg+Nom/' $lemmas | $lookup_tool $generator_file.$suffix | \
           cut -f2 | grep -v "A+" | grep -v "^$" | sort -u > $generated_lemmas.$f.txt		
 		
 # Generer plurale lemmaer i filtered-adjectives med +N+Pl+Nom (som ikke lar seg generer med +N+Sg+Nom).
 # Lagre dem i generated-adjectives
-		sed 's/$/+A+Sg+Nom/' $lemmas | $lookuptool $generator_file.$suffix | \
+		sed 's/$/+A+Sg+Nom/' $lemmas | $lookup_tool $generator_file.$suffix | \
 		cut -f2 | grep "A+" | cut -d "+" -f1 | sed 's/$/+A+Pl+Nom/' | \
-		$lookuptool $generator_file.$suffix | \
+		$lookup_tool $generator_file.$suffix | \
 		cut -f2 | grep -v "^$" >> $generated_lemmas.$f.txt 
 
 
@@ -119,7 +124,7 @@ for f in $fsttype; do
 # lagre i missingadjectiveLemmas.txt. Formene generes med  +A+Sg+Nom for enklere debugging.
 		comm -23 $lemmas $generated_lemmas.$f.txt |\
 		grep -v '^$' | sed 's/$/+A+Sg+Nom/' |\
-		$lookuptool $generator_file.$suffix > $result_file.$f.txt
+		$lookup_tool $generator_file.$suffix > $result_file.$f.txt
 
 		# Open the diff file in SubEthaEdit (if there is a diff):
 		if [ -s $result_file.$f.txt ]; then
