@@ -111,15 +111,18 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 
 !! !Person-number
-+Sg1	      !!= * @CODE@
-+Sg2	      !!= * @CODE@
-+Sg3	      !!= * @CODE@
-+Pl1	      !!= * @CODE@
-+Pl2	      !!= * @CODE@
-+Pl3	      !!= * @CODE@
++Sg1	      !!= * @CODE@ first person singular
++Sg2	      !!= * @CODE@ second person singular
++Sg3	      !!= * @CODE@ third person singular
++Pl1	      !!= * @CODE@ first person plural
++Pl2	      !!= * @CODE@ second person plural
++Pl3	      !!= * @CODE@ third  person plural
 +Sg4    !!= * @CODE@ impersonal fourth person, in MT a Pl4 might be needed
 +13          !!= * @CODE@ used in combination with +Imp+13+ConNeg
 +2	     !!= * @CODE@ used in combination with +Imp+2+ConNeg
+
+!! !Abbreviation
++ABBR	!!= * @CODE@ abbreviation
 
 !! !Derivation
 +Der/N2A !!=derived adjective N»A
@@ -441,6 +444,7 @@ LEXICON Root 	  !!= * @CODE@
 
 !! This generates from merged materials
  A_sms2x ;	      !!= * @CODE@ This generates from merged materials
+ ABBR_sms2x ;	      !!= * @CODE@ abbreviations
  Adp_sms2x ;	      !!= * @CODE@ adverbs
  Adv_sms2x ;	      !!= * @CODE@ adverbs
  CC_sms2x ;	      !!= * @CODE@ conjunctions
@@ -475,6 +479,48 @@ N_NEWWORDS ;
 LEXICON WORK_
 !! Single form lacking POS designation
 +WORK: # ;
+
+!! ABBREVIATIONS 
+!! these still need development 2015-09-11
+LEXICON AB-DOT_
++WORK+ABBR:%.%> # ;
+
+LEXICON AB-DOT-A_
++A+ABBR:%.%> # ;
+LEXICON AB-DOT-ADV_
++Adv+ABBR:%.%> # ;
+LEXICON AB-DOT-N_
++N+ABBR:%.%> # ;
+LEXICON AB-DOT-NUM_
++Num+ABBR:%.%> # ;
+LEXICON AB-DOT-PRON_
++Pron+ABBR:%.%> # ;
+LEXICON AB-DOT-V_
++V+ABBR:%.%> # ;
+LEXICON AB-DOT-V-TV-IMPRT-SG2_
++V+ABBR+TV+Imprt+Sg2:%.%> # ;
+LEXICON AB-DOT-V-TV-IND-PRS-3_
++V+ABBR+TV+Ind+Prs+Sg3:%.%> # ;
++V+ABBR+TV+Ind+Prs+Pl3:%.%> # ;
+LEXICON AB-DOT-V-IV-IND-PRT-SG3_
++V+ABBR+IV+Ind+Prt+Sg3:%.%> # ;
+
+LEXICON AB-NO-DOT_
++WORK+ABBR:%> # ;
+LEXICON AB-NO-DOT-A_
++A+ABBR:%> # ;
+LEXICON AB-NO-DOT-ADV_
++Adv+ABBR:%> # ;
+LEXICON AB-NO-DOT-N_
++N+ABBR:%> # ;
+LEXICON AB-NO-DOT-PRON_
++Pron+ABBR:%> # ;
+LEXICON AB-NO-DOT-V_
++V+ABBR:%> # ;
+
+LEXICON ab-dot-IVprfprc   !!= * __@CODE@__
++V+ABBR+IV+PrfPrc:%.%> # ; ! Period.
+
 
 
 LEXICON	INTERJ_
