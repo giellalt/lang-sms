@@ -55,3 +55,8 @@ A lot of the content has been converted into elements that can be moved or copie
 (3) material from Moshnikoff has also been adapted to the <mini_paradigm/> elements
 (4) <tg/> elements have more or less been alphabetized.
 
+## 2015-09-12
+Merging has been completed in: 
+N_Prop_sms2x
+CC_sms2x
+
