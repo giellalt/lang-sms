@@ -5111,6 +5111,27 @@ LEXICON NMN_KÕÕDDÂS !!= * @CODE@ kõõddâs:kõddâz
 :%^RmVow%^DeVC PL-OBL ;
 :%^RmVow%^DeVC VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
 
+LEXICON N_LUUBBÂL !!= * @CODE@ luubbâl:lubbâl
++N: NMN_LUUBBÂL ;
+LEXICON NMN_LUUBBÂL !!= * @CODE@ luubbâl:lubbâl
+!! like PODD but also PAPP, N_KÕÕDDÂS
+! gradation: yes
+! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
+! Penultimate stem vowel retention: Sg.Nom, Sg.Gen, Sg.Acc, Sg.Abe, Pl.Nom
+! Stem vowel: e
+! Voicing of final sibilant
+!! ** Yaml: __N-luubbal__
+:%^PenV2VV%^DeVC ATTESTED-NOUN-STEM ;
+:%^PenV2VV%^DeVC SG-NOM ;
+: SG-ABE/ACC/GEN-PL-NOM ;
+:%^RmVow%^DeVC%>a SG-ILL ;
+:%^RmVow%^DeVC%>e SG-LOC ;
+:%^RmVow%^DeVC SG-COM_IN ;
+:%^RmVow%^DeVC%>e ESS ;
+:%^RmVow%^DeVC%>e PAR ;
+:%^RmVow%^DeVC PL-OBL ;
+:%^RmVow%^DeVC VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
+
 LEXICON N_TAALKÂS !!= * @CODE@ taalkâs:talkkâz
 +N: NMN_TAALKÂS ;
 LEXICON NMN_TAALKÂS !!= * @CODE@ taalkâs:talkkâz
@@ -6670,13 +6691,14 @@ LEXICON NMN_MAINSTUMMUŠ
 !! !!k-stems
 
 LEXICON N_ČÂUSTÕK !!= * @CODE@ = stemtype 
++N: NMN_ČÂUSTÕK ;
+LEXICON NMN_ČÂUSTÕK !!= * @CODE@ = stemtype 
 ! gradation: yes
 !! ** Yaml: __N-chaustok__
-+N: ATTESTED-NOUN-STEM ;
-+N: SG-NOM ;
-+N:k%>â ESS ; 
-+N:k%>â PAR ;
-+N:k NMN_OBL-ČÂUSTÕK ;
+: ATTESTED-NOUN-STEM ;
+: SG-NOM ;
+:k%>â ESS/PAR ; 
+:k NMN_OBL-ČÂUSTÕK ;
 
 LEXICON N_TÄÄVTÕS
 +N: NMN_TÄÄVTÕS ;
@@ -6686,8 +6708,7 @@ LEXICON NMN_TÄÄVTÕS
 !! ** Yaml: __N-chaustok__
  ATTESTED-NOUN-STEM ;
 : SG-NOM ;
-:%>â ESS ; 
-:%>â PAR ;
+:%>â ESS/PAR ; 
 :s NMN_OBL-ČÂUSTÕK ;
 
 LEXICON N_LOOKKMÕŠ !!= * @CODE@ lookkmõš:lookkmõš
