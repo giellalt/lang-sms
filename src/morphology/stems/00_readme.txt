@@ -60,4 +60,5 @@ Merging has been completed in:
 N_Prop_sms2x
 CC_sms2x
 CS_sms2x
-
+2015-09-15
+Det_sms2x
