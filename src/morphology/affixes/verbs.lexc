@@ -1295,15 +1295,15 @@ LEXICON V_HEÂRRAD
 ! (9) Ind.Imprt.Pl3: heârˈraz
 ! (10) Allegro for incoative: heâr»
 !
-+V: VSUF-INF_AD ; !1
-+V: VSUF-IND-PRS-SG3_AD ; !2
-+V+Ind+Prs+Pl3:%^CC2CCC%>a K ; !3
-+V:%^VOWRaise%^CC2CCC%> VSUF-IND-PRT-PL3_AD ; !4
++V: VSUF-INF_AD ; !! (1) +V+Inf: heârrad
++V: VSUF-IND-PRS-SG3_AD ; !! (2) +V+Ind+Prs+Sg3: heârr
++V+Ind+Prs+Pl3:%^CC2CCC%>a K ; !! (3) +V+Ind+Prs+Pl3: heârˈra
++V:%^VOWRaise%^CC2CCC%> VSUF-IND-PRT-PL3_AD ; !! (4) +V+Ind+Prt+Pl3: hiõrˈru
 +V:%^CC2C%> VSUF-I-POTKOND_AD ; !5
 +V+Pot+Sg3:%^CC2C%>až   K ; !6
-+V+Imprt+Sg3:%^CC2C%>as K ; !7
-+V:%^VOWRaise%^CC2CCC VSUF-IMPRT-CONNEGII_AD ; !8
-+V:%^CC2CCC VSUF-IMPRT-PL3_AD ;
++V+Imprt+Sg3:%^CC2C%>as K ; !! (7) +V+Imprt+Sg3: heâras
++V:%^VOWRaise%^CC2CCC VSUF-IMPRT-CONNEGII_AD ; !! (8) +V+Imprt+ConNegII: heârˈru
++V:%^CC2CCC VSUF-IMPRT-PL3_AD ; !! (9) Ind.Imprt.Pl3: heârˈraz
 +V+Der/mõš:»mõš N_LOOKKMÕŠ ;
 +V+Der/škueʹtted:%^CC2C»škuätt V_PUEʹTTED ;
 
@@ -2981,8 +2981,8 @@ LEXICON V_AGSTED !!= * @CODE@ agsted:aaggâst
 +V:%^PenVow2a VSUF-VUEJTED-IND-PRS-SG3 ; ! aaggâst
 +V: VSUF-VUEJTED-IND-PRS-CONNEG ;        ! aaggâst
 +V:%^PenVV2V%^PenCC2C%^RmVow VSUF-VUEJTED-ELSE ;           ! agsted
-+Use/NG+V:%^PenVV2V%^RmVow VSUF-VUEJTED-ELSE ;           ! aggsted
 +Use/NG+V:%^RmVow VSUF-VUEJTED-ELSE ;           ! aaggsted
+!+Use/NG+V:%^PenVV2V%^RmVow VSUF-VUEJTED-ELSE ;           ! aggsted
 
 
 LEXICON V_MAINSTED !!= * @CODE@ mainsted:maainâst
@@ -3899,6 +3899,7 @@ LEXICON VSUF-IND-PRT-PL3_ED
 +Ind+Prt+Sg4:%>eš K ;
 !
 LEXICON VSUF-IND-PRT-SG3-PL1-PL2_
+!! VSUF-I-POTKOND_ÂD, VSUF-I-POTKOND_AD and VSUF-POTENTIAL_ED come here
 +Ind+Prt+Sg3:%>i K ;
 +Ind+Prt+Pl1:%>im K ;
 +Use/NG+Ind+Prt+Pl1:%>in K ;
@@ -3924,6 +3925,7 @@ LEXICON VSUF-I-POTKOND_AD
  VSUF-I-POTKOND ;
 +Pot+Sg3:%>ež   K ;
 +Imprt+Sg3:%>as K ;
+:a VSUF-IND-PRT-SG3-PL1-PL2_ ;
 +Ind+Prs+Sg1:%>am K ;
 +Ind+Prs+Sg2:%>ak K ;
 +Ind+Prs+Sg4:%>at K ;

@@ -2959,6 +2959,7 @@ LEXICON N_VÄʹLL !!= * @CODE@ väʹll:väll
 +N: NMN_VÄʹLL ;
 LEXICON NMN_VÄʹLL
 ! gradation: yes
+!! similar_to: N_PAPP
 !! vowel: monophthong
 !! vowel_shift: yes
 !! consonantism: geminate
@@ -3050,27 +3051,40 @@ LEXICON NMN_ÄʹVV
 !! !!  Extra strong grade: Sg.Ill
 !! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 !! !!FORMS
-!! !!(1) Sg.Nom: äʹvv
-!! !!(2) Pl.Nom: eeʼjj
-!! !!(3) Sg.Ill: ečča
-!! !!(4) Sg.Loc: eeʹjjest
-!! !!(5) Sg.Com: eeʹjjin
-!! !!(6) Ess: äʹvven
-!! !!(7) Par: äʹvved
-!! !!(8) Pl.Acc: eeʹjjid
-!! !!(9) Der/Dim.N.Sg.Nom: eejjaž
 !! NumContLex="1.113"
-!! ** Yaml: __N-ecch__
-!! * There are several stem types
+!! ** Yaml: __N-aevv__
 !!
 :%^PAL ATTESTED-NOUN-STEM ;			! äʹvv
-:%^PAL SG-NOM ;
-:%^V2VV%^PAL%^CC2C SG-ABE/ACC/GEN-PL-NOM ;
-: NMN_SG-ILL_A ;
-:%^V2VV%^PAL%^CC2C%>e SG-LOC ;
-:%^V2VV%^PAL%^CC2C SG-COM_IN/PL-OBL ;
-:%^PAL%>e ESS/PAR ; ! ess and prt without
-+Der/Dim:%^V2VV%^CC2C%> N_KUÂLAŽ ; ! äävaž
+:%^PAL SG-NOM ; !!(1) Sg.Nom: äʹvv
+:%^V2VV%^PAL%^CC2C SG-ABE/ACC/GEN-PL-NOM ; !!(2) Pl.Nom: ääʼv
+:%>a SG-ILL ;   !!(3) Sg.Ill: ävva
+:%^V2VV%^PAL%^CC2C%>e SG-LOC ;	!!(4) Sg.Loc: ääʹvest
+:%^V2VV%^PAL%^CC2C SG-COM_IN/PL-OBL ; !!(5) Sg.Com: ääʹvin
+:%^PAL%>e ESS/PAR ; !!(6) Ess: äʹvven
++Der/Dim:%^V2VV%^CC2C%> N_KUÂLAŽ ; !!(9) Der/Dim.N.Sg.Nom: äävaž
+
+LEXICON N_STÄʹLLJ !!= * @CODE@ stäʹllj:ställj
+!! V1ʹC1C1
++N: NMN_STÄʹLLJ ;
+LEXICON NMN_STÄʹLLJ
+!! vowel: monophthong
+!! vowel_shift: yes
+!! gradation: yes
+!! similarity: N_TOLL:N_KUSS:N_EʹČČ:N_ÄʹVV
+!! !!FORMS
+!! NumContLex="1.113"
+!! ** Yaml: __N-staellj__
+!!
+:%^PAL ATTESTED-NOUN-STEM ;			! stäʹllj
+:%^PAL SG-NOM ; !!(1) Sg.Nom: äʹvv
+:%^V2VV%^PAL%^CC2C SG-ABE/ACC/GEN ; !!(2) Sg.Gen: stääʼlj
+:%>a SG-ILL ;   !!(3) Sg.Ill: ställja
+:%^V2VV%^PAL%^CC2C%>e SG-LOC ;	!!(4) Sg.Loc: stääʹljest
+:%^V2VV%^VOWRaise%^PAL%^CC2C SG-COM_IN ; !!(5) Sg.Com: staaʹljin
+:%^PAL%>e ESS/PAR ; !!(6) Ess: äʹvven
+:%^V2VV%^PAL%^CC2C PL-NOM ; !!(2) Pl.Nom: stääʼlj
+:%^V2VV%^VOWRaise%^PAL%^CC2C PL-OBL ; !!(5) Pl.Gen: staaʹlji
++Der/Dim:%^V2VV%^CC2C%> N_KUÂLAŽ ; !!(9) Der/Dim.N.Sg.Nom: äävaž
 
 LEXICON N_ÄʹǨǨ !!= * @CODE@ äʹǩǩ:äkk
 ! vowel: monophthong
@@ -3503,7 +3517,7 @@ LEXICON NMN_ǨEʹMNN
 :%^V2VV%^XYY2XY%> PL-OBL ;
 +Der/Dim:%^V2VV%^PALNo%^XYY2XY%> N_KUÂLAŽ ;	! ǩeâmnaž
 
-LEXICON N_LÄÄIʹJ !!= * @CODE@ lääiʹj:lääiʹj
+LEXICON N_LÄÄIʹJ !!= * @CODE@ lääiʹj:lääiǥ
 ! vowel: monophthong
 +N: NMN_LÄÄIʹJ ;
 LEXICON NMN_LÄÄIʹJ
@@ -3524,28 +3538,19 @@ LEXICON NMN_LÄÄIʹJ
 !! !!  Strong grade: Sg.Ill
 !! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 !! !!FORMS
-!! !!(1) Sg.Nom: lääiʹj
-!! !!(2) Pl.Nom: lääiʹj
-!! !!(3) Sg.Ill: lääiǥa
-!! !!(4) Sg.Loc: lääiʹjest
-!! !!(5) Sg.Com: lääiʹjin
-!! !!(6) Ess: lääiʹjen
-!! !!(7) Par: lääiʹjed
-!! !!(8) Pl.Acc: lääiʹjid
-!! !!(9) Der/Dim.N.Sg.Nom: lääiǥaž
 !! NumContLex="1.113"
 !! Is for nouns with ''-est'' Loc, Extra long vowel
 !! ** Yaml: __N-laeaeij__
- ATTESTED-NOUN-STEM ;		! lääiʹj
-: SG-NOM ;	    		! lääiʹj
-:%^V2VV%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;	! lääiʹj
-:%^PALNo NMN_SG-ILL_A ;   		! lääiǥa
-:%^V2VV%^XYY2XY%>e SG-LOC ;	! lääiʹjest
-:%^V2VV%^VOWRaise%^XYY2XY SG-COM_IN ;	! lääiʹjin
-:%>e ESS ; 		  	! lääiʹjen
-:%>e PAR ;			! lääiʹjed
-:%^V2VV%^VOWRaise%^XYY2XY%> PL-OBL ;	! lääiʹji, lääiʹjid, lääiʹjid, lääiʹjin, lääiʹjivuiʹm, lääiʹjitaa/lääiʹjtää
-+Der/Dim:%^V2VV%^PALNo%^XYY2XY%> N_KUÂLAŽ ; ! lääiǥaž
+:%^PAL ATTESTED-NOUN-STEM ;		! lääiʹj
+:%^PAL SG-NOM ;	    		! lääiʹj
+:%^PAL SG-ABE/ACC/GEN ;	! lääiʹj
+:%>a SG-ILL ;   		! lääiǥa
+:%^PAL%>e SG-LOC ;	! lääiʹjest
+:%^PAL SG-COM_IN ;	! lääiʹjin
+:%^PAL%>e ESS/PAR ; 		  	! lääiʹjen
+:%^PAL PL-NOM ;	! lääiʹj
+:%^PAL%> PL-OBL ;	! lääiʹji, lääiʹjid, lääiʹjid, lääiʹjin, lääiʹjivuiʹm, lääiʹjitaa/lääiʹjtää
++Der/Dim:%> N_KUÂLAŽ ; ! lääiǥaž
 
 LEXICON N_ǨEʹRJJ !!= * @CODE@ ǩeʹrjj:ǩerjj
 ! vowel: monophthong
@@ -5559,7 +5564,7 @@ LEXICON NMN_CEERKAV !!= * @CODE@ ceerkav:cẹẹrkav
 :%^RmVow SG-COM_IN/PL-OBL ;			   !!= * @CODE@ (5) ceerkvin
 :%^RmVow%>e ESS/PAR ;  			   !!= * @CODE@ (6) ceerkven
 :%^RmVow SÅÅBBAR-STEM-PX ; !!= * @CODE@ såbbr-
-+Use/NG:%^PenVV2V%^PenXY2XYY%^RmVow%>a SG-ILL ; !!= * @CODE@ (3) cerkkva
+!+Use/NG:%^PenVV2V%^PenXY2XYY%^RmVow%>a SG-ILL ; !!= * @CODE@ (3) cerkkva
 
 LEXICON N_SÅÅBBAR !!= * @CODE@ sååbbar:såbbar
 +N: NMN_SÅÅBBAR ;
@@ -5909,14 +5914,11 @@ LEXICON NMN_SPÄʹSSEB
 !! ** Yaml: __N-spaesseb __ 
 : ATTESTED-NOUN-STEM ;
 : SG-NOM ;
-: SG-GEN ;
-: SG-ACC ;
+: SG-ABE/ACC/GEN ;
 :%^PenPALNo%^RmVow%>a SG-ILL ;
 :%^RmVow%>e SG-LOC ;
 :%^RmVow SG-COM_IN ;
-:%^RmVow%>e ESS ; ! ess and prt without
-:%^RmVow%>e PAR ;
-:%^RmVow SG-ABE ;
+:%^RmVow%>e ESS/PAR ; ! ess and prt without
 : PL-NOM ;
 :%^RmVow PL-OBL ;
 :%^RmVow VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
@@ -6036,19 +6038,18 @@ LEXICON NMN_JEEʹEL !!= * @CODE@ jeeʹel:jeäkˈkel
 ! Stem vowel: e
 ! Ultimate stem consonant
 !! ** Yaml: __N-jeeel __ 
+:%^PenPALE%^PenPAL%^PenKKK2ZERO ATTESTED-NOUN-STEM ; !!= * @CODE@ jeeʹjjel
+:%^PenPALE%^PenPAL%^PenKKK2ZERO SG-NOM ;
 +Use/NG:%^PenPALE%^PenPAL%^PenKKK2GG ATTESTED-NOUN-STEM ; !!= * @CODE@ jeeʹjjel
 +Use/NG:%^PenPALE%^PenPAL%^PenKKK2GG SG-NOM ;
-:%^PenVow2a SG-GEN ;
-:%^PenVow2a SG-ACC ;
+:%^PenVow2a SG-ABE/ACC/GEN ;
 :%^RmVow%>a SG-ILL ;
 :%^RmVow%>e SG-LOC ;
 :%^RmVow SG-COM_IN ;
-:%^RmVow%>e ESS ; ! ess and prt without
-:%^RmVow%>e PAR ;
-:%^RmVow SG-ABE ;
+:%^RmVow%>e ESS/PAR ; ! ess and prt without
 :%^PenVow2a PL-NOM ;
 :%^RmVow PL-OBL ;
-:%^RmVow VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
+:%^PenKKK2GG%^RmVow VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
 
 !! !!s:z-stem type
 LEXICON N_ǨEʹRRES
@@ -6590,17 +6591,14 @@ LEXICON NMN_MINIʹSTTER
 !! ** Yaml: __N-miniʹstter __ 
 : ATTESTED-NOUN-STEM ;
 : SG-NOM ;
-: SG-GEN ;
-: SG-ACC ;
+: SG-ABE/ACC/GEN ;
 :%^RmVow%>a SG-ILL ; !miniʹsttra
 :%^RmVow%>e SG-LOC ;
 :%^RmVow SG-COM_IN ;
 :%^RmVow%>e ESS ; ! ess and prt without
 :%^RmVow%>e PAR ;
-:%^RmVow SG-ABE ;
 : PL-NOM ;
 :%^RmVow PL-OBL ;
-
 
 
 LEXICON N_REʹPPIǨ
