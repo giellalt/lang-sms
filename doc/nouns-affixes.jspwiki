@@ -2610,7 +2610,7 @@ NumContLex="1.113"
 Is for nouns with ''-est'' Loc, Extra long vowel
 ** Yaml: __N-algg__
 
- * LEXICON N_LÄÄIʹJ  lääiʹj:lääiʹj
+ * LEXICON N_LÄÄIʹJ  lääiʹj:lääiǥ
 !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 !!1.3 Sg.Loc in -est (vowel shift)
  Raised: Sg.Com, Pl.Obl
@@ -2627,15 +2627,6 @@ Is for nouns with ''-est'' Loc, Extra long vowel
  Strong grade: Sg.Ill
  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 !!FORMS
-!!(1) Sg.Nom: lääiʹj
-!!(2) Pl.Nom: lääiʹj
-!!(3) Sg.Ill: lääiǥa
-!!(4) Sg.Loc: lääiʹjest
-!!(5) Sg.Com: lääiʹjin
-!!(6) Ess: lääiʹjen
-!!(7) Par: lääiʹjed
-!!(8) Pl.Acc: lääiʹjid
-!!(9) Der/Dim.N.Sg.Nom: lääiǥaž
 NumContLex="1.113"
 Is for nouns with ''-est'' Loc, Extra long vowel
 ** Yaml: __N-laeaeij__
@@ -3299,6 +3290,13 @@ atom:atom
  * +Der/Dim+N:%^V2VV%^PAL N_MUÕRÂŽ-WITH-PAL ;   paaʹr-
 
 
+ * LEXICON N_EVAŊǦEʹLIUM  evaŋǧeʹlium:evaŋǧeʹlium
+evaŋǧeʹlium:evaŋǧeʹlium
+** Yaml: __N-evaŋǧeʹlium__
+ * +Der/Dim+N:%^V2VV N_MUÕRÂŽ-WITHOUT-PAL ;   paar-
+ * +Der/Dim+N:%^V2VV%^PAL N_MUÕRÂŽ-WITH-PAL ;   paaʹr-
+
+
  * LEXICON N_AIHAM  aiham:aiham
 !!2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
 !!2.1 Sg.Loc in -ast. a-stems (Sg.Loc, Ess, Par).
@@ -3573,6 +3571,12 @@ stemtype n-stem aautâr:aautâr
 stemtype n-stem ǩiiuǥân:ǩiiuǥân
 
 ** Yaml: __N-kiiughan__
+ * :%^RmVow VÕÕNÂS-STEM-PX ;  võnns-
+
+ *  LEXICON N_ǨIÕTKÂM  ǩiõtkâm:ǩiõtkkâm
+ *  LEXICON NMN_ǨIÕTKÂM  ǩiõtkâm:ǩiõtkkâm
+
+** Yaml: __N-kiotkam__
  * :%^RmVow VÕÕNÂS-STEM-PX ;  võnns-
 
  *  LEXICON N_FIINÂS  fiinâs:fijnnâz
@@ -3955,7 +3959,17 @@ NumContLex=""
 
 
  * LEXICON N_DURAK  = stemtype 
+ * LEXICON NMN_DURAK  = stemtype 
 ** Yaml: durak
+
+ * LEXICON N_MANAH  = stemtype 
+ * LEXICON NMN_MANAH  = stemtype 
+** Yaml: manah
+
+
+ * LEXICON N_MILJONÄÄʹR  = stemtype miljonääʹr:miljonäär
+ * LEXICON NMN_MILJONÄÄʹR  = stemtype
+** Yaml: __N-miljonaeaer_
 
 
 
@@ -3965,7 +3979,6 @@ NumContLex=""
 stemtype l-stem miniʹstter:miniʹstter
 * __NMN_MINIʹSTTER__ = Koulukielioppi stemtype II 9 (29)
 ** Yaml: __N-miniʹstter __ 
-
 
 
 stemtype n-stem reʹppiǩ:reʹppiǩ
@@ -3996,10 +4009,44 @@ VOWEL-FINAL STEMS
  *  PL-NOM ;    	+Pl+Nom
  *  PL-OBL ;    	+Pl+Gen
 
+** Yaml: __N-bukva__
+ *  SG-NOM ;   +Sg+Nom
+ *  SG-ABE/ACC/GEN ; 	+Sg+Gen
+ * :aʹje SG-ILL ; 	+Sg+Ill: bukvaaʹje
+ * +Use/NG: SG-ILL ; 	+Sg+Ill: bukva
+ *  SG-LOC ;    	+Sg+Loc
+ *  SG-COM_IN ; 	+Sg+Com
+ *  ESS/PAR ;   	+Ess
+ *  PL-NOM ;    	+Pl+Nom
+ *  PL-OBL ;    	+Pl+Gen
+
+** Yaml: __N-merja__
+ *  SG-NOM ;   +Sg+Nom
+ *  SG-ABE/ACC/GEN ; 	+Sg+Gen
+ * :aʹje SG-ILL ; 	+Sg+Ill: merjaaʹje
+ * :%^RmVow%>že SG-ILL ; 	+Sg+Ill: merjže
+ * +Use/NG: SG-ILL ; 	+Sg+Ill: merja
+ *  SG-LOC ;    	+Sg+Loc
+ *  SG-COM_IN ; 	+Sg+Com
+ *  ESS/PAR ;   	+Ess
+ *  PL-NOM ;    	+Pl+Nom
+ *  PL-OBL ;    	+Pl+Gen
+
 ** Yaml: __N-truuba__
  *  SG-NOM ;   +Sg+Nom
  *  SG-ABE/ACC/GEN ; 	+Sg+Gen
  *  SG-ILL ; 		+Sg+Ill
+ *  SG-LOC ;    	+Sg+Loc
+ *  SG-COM_IN ; 	+Sg+Com
+ *  ESS/PAR ;   	+Ess
+ *  PL-NOM ;    	+Pl+Nom
+ *  PL-OBL ;    	+Pl+Gen
+
+** Yaml: __Prop-terhi__
+ *  SG-NOM ;   +Sg+Nom
+ *  SG-ABE/ACC/GEN ; 	+Sg+Gen
+ * :iʹje SG-ILL ; 	+Sg+Ill: terhiiʹje
+ * :ʹžže SG-ILL ; 	+Sg+Ill: terhiʹžže
  *  SG-LOC ;    	+Sg+Loc
  *  SG-COM_IN ; 	+Sg+Com
  *  ESS/PAR ;   	+Ess
@@ -4018,6 +4065,18 @@ VOWEL-FINAL STEMS
  *  ESS/PAR ; 	     ()
  *  PL-NOM ;	     (TSA-2) +Pl+Nom:
  *  PL-OBL ;	     (TSA-4) +Pl+Gen: 
+
+ * LEXICON N_HYPOTEEʹS  hypoteeʹs:hypotẹẹs
+** Yaml: __N-hypotees__
+ * :%^PAL ATTESTED-NOUN-STEM ;   
+ * :%^PAL SG-NOM ;	      +Sg+Nom:
+ * :%^PAL SG-ABE/ACC/GEN ;    
+ * :%>a SG-ILL ;	      +Sg+Ill:
+ * :%^PAL%>e SG-LOC ;	     
+ * :%^PAL SG-COM_IN ;	     
+ * :%^PAL%>e ESS/PAR ; 	     
+ * :%^PAL PL-NOM ;	      +Pl+Nom:
+ * :%^PAL PL-OBL ;	      +Pl+Gen: 
 
  * LEXICON N_ENERGII  energii:energi
 ** Yaml: __N-energii__
@@ -4476,6 +4535,8 @@ Class 12 Feist 163
 !Number and case tags
 
 Has palatalization preceding
+
+Used with words like juurd: jurddǥatta
 
 
 
