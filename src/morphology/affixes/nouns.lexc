@@ -4522,13 +4522,33 @@ LEXICON NMN_ATOM
 !! ** Yaml: __N-atom__
  ATTESTED-NOUN-STEM ;			! atom
 : SG-NOM ;	    			! atom
-:%^V2VV SG-ABE/ACC/GEN-PL-NOM ;		! atoom
+:%^V2VV SG-ABE/ACC/GEN ;		! atoom
 :%^V2VV%^PAL%>e SG-ILL ;      		! atooʹme
 :%^V2VV%>â SG-LOC ;    			! atoomâst
 :%^V2VV SG-COM_IN ;			! atoomin
 :%^V2VV%>â ESS ;  			! atoomân
 :%^V2VV%>â PAR ;
+:%^V2VV PL-NOM ;		! atoom
 :%^V2VV PL-OBL ;
++Der/Dim+N:%^V2VV N_MUÕRÂŽ-WITHOUT-PAL ;  !!= * @CODE@ paar-
++Der/Dim+N:%^V2VV%^PAL N_MUÕRÂŽ-WITH-PAL ;  !!= * @CODE@ paaʹr-
+
+
+LEXICON N_EVAŊǦEʹLIUM !!= * @CODE@ evaŋǧeʹlium:evaŋǧeʹlium
++N: NMN_EVAŊǦEʹLIUM ;
+LEXICON NMN_EVAŊǦEʹLIUM
+! gradation: yes
+!! evaŋǧeʹlium:evaŋǧeʹlium
+!! ** Yaml: __N-evaŋǧeʹlium__
+ ATTESTED-NOUN-STEM ;			! evaŋǧeʹlium
+: SG-NOM ;	    			! evaŋǧeʹlium
+:%^V2VV SG-ABE/ACC/GEN ;		! evaŋǧeʹliuum
+:%^PAL%>e SG-ILL ;      		! evaŋǧeʹliuʹmme
+:%^V2VV%>â SG-LOC ;    			! evaŋǧeʹliuumâst
+:%^V2VV SG-COM_IN ;			! evaŋǧeʹliuumin
+:%^V2VV%>â ESS/PAR ;  			! evaŋǧeʹliumân
+:%^V2VV PL-NOM ;		! evaŋǧeʹliuum
+:%^V2VV PL-OBL ;		! evaŋǧeʹliuumi
 +Der/Dim+N:%^V2VV N_MUÕRÂŽ-WITHOUT-PAL ;  !!= * @CODE@ paar-
 +Der/Dim+N:%^V2VV%^PAL N_MUÕRÂŽ-WITH-PAL ;  !!= * @CODE@ paaʹr-
 
@@ -4550,11 +4570,11 @@ LEXICON NMN_AIHAM
  ATTESTED-NOUN-STEM ;			! aiham
 : SG-NOM ;	    			! aiham
 :%^V2VV SG-ABE/ACC/GEN-PL-NOM ;		! aihaam
-:%^V2VV%^PAL%>e SG-ILL ;      		! aihamma
-:%^V2VV%>â SG-LOC ;    			! aihaamast
+:%^C2CC%>a SG-ILL ;      		! aihamma
+:%^V2VV%>a SG-LOC ;    			! aihaamast
 :%^V2VV SG-COM_IN ;			! aihaamin
-:%^V2VV%>â ESS ;  			! aihaaman
-:%^V2VV%>â PAR ;
+:%^V2VV%>a ESS ;  			! aihaaman
+:%^V2VV%>a PAR ;
 :%^V2VV PL-OBL ;
 
 
@@ -4570,11 +4590,14 @@ LEXICON NMN_JUURD !!= * @CODE@ juurd:jurdd
 !! * juurd:juurd
 :%^V2VV%^XYY2XY ATTESTED-NOUN-STEM ;
 :%^V2VV%^XYY2XY SG-NOM ;
-:%>i SG-ABE/ACC/GEN-PL-NOM ;
+:%>i SG-ACC/GEN ;
+:%>ǥ%>a SG-ABE_tta ;
++Use/NG:%>i SG-ABE ;
 :%>ǥ%>a SG-ILL ;
 +Use/NG:%>j%>a SG-ILL ;
 :%>j%>e SG-LOC ;
 :%>j SG-COM_IN/PL-OBL ;
+:%>i PL-NOM ;
 :%>j%>e ESS ;
 :%>e PAR ;
 +N+Der/Dim:%>j N_KUÂLAŽ ;
@@ -5292,6 +5315,23 @@ LEXICON NMN_ǨIIUǤÂN !!= *  @CODE@ ǩiiuǥân:ǩiuggân
 :%^RmVow%>e ESS ;  			 ! ǩiuggnen
 :%^RmVow%>e PAR ;			 ! ǩiuggned
 :%^RmVow PL-OBL ;			 ! ǩiuggni
+:%^RmVow VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
+
+LEXICON N_ǨIÕTKÂM !!= *  @CODE@ ǩiõtkâm:ǩiõtkkâm
++N: NMN_ǨIÕTKÂM ;
+LEXICON NMN_ǨIÕTKÂM !!= *  @CODE@ ǩiõtkâm:ǩiõtkkâm
+! gradation: yes
+!! 
+!! ** Yaml: __N-kiotkam__
+:%^PenV2VV%^PenXYY2XY ATTESTED-NOUN-STEM ;
+:%^PenV2VV%^PenXYY2XY SG-NOM ;		 ! ǩiõtkâm
+: SG-ABE/ACC/GEN-PL-NOM ;    		 ! ǩiõtkkâm
+:%^RmVow%>a SG-ILL ;			 ! ǩiõtkkma
+:%^RmVow%>e SG-LOC ;			 ! ǩiõtkkmest
+:%^RmVow SG-COM_IN ;			 ! ǩiõtkkmin
+:%^RmVow%>e ESS ;  			 ! ǩiõtkkmen
+:%^RmVow%>e PAR ;			 ! ǩiõtkkmed
+:%^RmVow PL-OBL ;			 ! ǩiõtkkmi
 :%^RmVow VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_FIINÂS !!= *  @CODE@ fiinâs:fijnnâz
@@ -6459,8 +6499,10 @@ LEXICON SG-ABE/ACC/GEN-PL-NOM
  SG-ABE/ACC/GEN ;
  PL-NOM ;
 LEXICON	SG-ABE/ACC/GEN
-+Der/N2A: DenominalAdjsCShort ; !!= * @CODE@ 2015-08-23 +Der/teʹm
  SG-ABE ;
+ SG-ACC/GEN ;
+LEXICON SG-ACC/GEN
++Der/N2A: DenominalAdjsCShort ; !!= * @CODE@ 2015-08-23 +Der/teʹm
  SG-ACC ;
  SG-GEN ;
 
@@ -6482,17 +6524,50 @@ LEXICON NMN_OBL-ČÂUSTÕK
 
 
 LEXICON N_DURAK !!= * @CODE@ = stemtype 
++N: NMN_DURAK ;
+LEXICON NMN_DURAK !!= * @CODE@ = stemtype 
 ! gradation: yes
 !! ** Yaml: durak
-+N: ATTESTED-NOUN-STEM ;
-+N: SG-NOM ;
-+N:%^V2VV SG-ABE/ACC/GEN-PL-NOM ;
-+N:k%>a SG-ILL ;
-+N:%^V2VV%>a SG-LOC ;
-+N:%^V2VV%> SG-COM_IN ;
-+N:%^V2VV%>e ESS ; ! ess and prt without
-+N:%^V2VV%>e PAR ;
-+N:%^V2VV PL-OBL ;
+: ATTESTED-NOUN-STEM ;
+: SG-NOM ;
+:%^V2VV SG-ABE/ACC/GEN-PL-NOM ;
+:k%>a SG-ILL ;
+:%^V2VV%>a SG-LOC ;
+:%^V2VV%> SG-COM_IN ;
+:%^V2VV%>e ESS ; ! ess and prt without
+:%^V2VV%>e PAR ;
+:%^V2VV PL-OBL ;
+
+LEXICON N_MANAH !!= * @CODE@ = stemtype 
++N: NMN_MANAH ;
+LEXICON NMN_MANAH !!= * @CODE@ = stemtype 
+! gradation: yes
+!! ** Yaml: manah
+: ATTESTED-NOUN-STEM ;
+: SG-NOM ;
+:%^V2VV SG-ABE/ACC/GEN-PL-NOM ;
+:%>a SG-ILL ;
+:%^V2VV%>a SG-LOC ;
+:%^V2VV%> SG-COM_IN ;
+:%^V2VV%>e ESS ; ! ess and prt without
+:%^V2VV%>e PAR ;
+:%^V2VV PL-OBL ;
+
+
+LEXICON N_MILJONÄÄʹR !!= * @CODE@ = stemtype miljonääʹr:miljonäär
++N: NMN_MILJONÄÄʹR ;
+LEXICON NMN_MILJONÄÄʹR !!= * @CODE@ = stemtype
+! gradation: yes
+!! ** Yaml: __N-miljonaeaer_
+:%^PAL ATTESTED-NOUN-STEM ;
+:%^PAL SG-NOM ;
+:%^PAL SG-ABE/ACC/GEN-PL-NOM ;
+:%>a SG-ILL ;
+:%^PAL%>e SG-LOC ;
+:%^PAL%> SG-COM_IN ;
+:%^PAL%>e ESS ; ! ess and prt without
+:%^PAL%>e PAR ;
+:%^PAL PL-OBL ;
 
 
 
@@ -6622,6 +6697,39 @@ LEXICON NMN_BIOLOGIA
  PL-NOM ;    !!= * @CODE@	+Pl+Nom
  PL-OBL ;    !!= * @CODE@	+Pl+Gen
 
+LEXICON N_BUKVA
++N: NMN_BUKVA ;
+LEXICON NMN_BUKVA
+! bukva:bukva
+!! ** Yaml: __N-bukva__
+ ATTESTED-NOUN-STEM ;
+ SG-NOM ;  !!= * @CODE@ +Sg+Nom
+ SG-ABE/ACC/GEN ; !!= * @CODE@	+Sg+Gen
+:aʹje SG-ILL ; !!= * @CODE@	+Sg+Ill: bukvaaʹje
++Use/NG: SG-ILL ; !!= * @CODE@	+Sg+Ill: bukva
+ SG-LOC ;    !!= * @CODE@	+Sg+Loc
+ SG-COM_IN ; !!= * @CODE@	+Sg+Com
+ ESS/PAR ;   !!= * @CODE@	+Ess
+ PL-NOM ;    !!= * @CODE@	+Pl+Nom
+ PL-OBL ;    !!= * @CODE@	+Pl+Gen
+
+LEXICON N_MERJA
++N: NMN_MERJA ;
+LEXICON NMN_MERJA
+! merja:merja
+!! ** Yaml: __N-merja__
+ ATTESTED-NOUN-STEM ;
+ SG-NOM ;  !!= * @CODE@ +Sg+Nom
+ SG-ABE/ACC/GEN ; !!= * @CODE@	+Sg+Gen
+:aʹje SG-ILL ; !!= * @CODE@	+Sg+Ill: merjaaʹje
+:%^RmVow%>že SG-ILL ; !!= * @CODE@	+Sg+Ill: merjže
++Use/NG: SG-ILL ; !!= * @CODE@	+Sg+Ill: merja
+ SG-LOC ;    !!= * @CODE@	+Sg+Loc
+ SG-COM_IN ; !!= * @CODE@	+Sg+Com
+ ESS/PAR ;   !!= * @CODE@	+Ess
+ PL-NOM ;    !!= * @CODE@	+Pl+Nom
+ PL-OBL ;    !!= * @CODE@	+Pl+Gen
+
 LEXICON N_TRUUBA
 +N: NMN_TRUUBA ;
 LEXICON NMN_TRUUBA
@@ -6631,6 +6739,22 @@ LEXICON NMN_TRUUBA
  SG-NOM ;  !!= * @CODE@ +Sg+Nom
  SG-ABE/ACC/GEN ; !!= * @CODE@	+Sg+Gen
  SG-ILL ; 	!!= * @CODE@	+Sg+Ill
+ SG-LOC ;    !!= * @CODE@	+Sg+Loc
+ SG-COM_IN ; !!= * @CODE@	+Sg+Com
+ ESS/PAR ;   !!= * @CODE@	+Ess
+ PL-NOM ;    !!= * @CODE@	+Pl+Nom
+ PL-OBL ;    !!= * @CODE@	+Pl+Gen
+
+LEXICON N_TERHI
++N: NMN_TERHI ;
+LEXICON NMN_TERHI
+! terhi:terhi
+!! ** Yaml: __Prop-terhi__
+ ATTESTED-NOUN-STEM ;
+ SG-NOM ;  !!= * @CODE@ +Sg+Nom
+ SG-ABE/ACC/GEN ; !!= * @CODE@	+Sg+Gen
+:iʹje SG-ILL ; !!= * @CODE@	+Sg+Ill: terhiiʹje
+:ʹžže SG-ILL ; !!= * @CODE@	+Sg+Ill: terhiʹžže
  SG-LOC ;    !!= * @CODE@	+Sg+Loc
  SG-COM_IN ; !!= * @CODE@	+Sg+Com
  ESS/PAR ;   !!= * @CODE@	+Ess
@@ -6651,6 +6775,21 @@ LEXICON NMN_RADIO
  ESS/PAR ; 	    !!= * @CODE@ ()
  PL-NOM ;	    !!= * @CODE@ (TSA-2) +Pl+Nom:
  PL-OBL ;	    !!= * @CODE@ (TSA-4) +Pl+Gen: 
+!FIX-DIM
+
+LEXICON N_HYPOTEEʹS !!= * @CODE@ hypoteeʹs:hypotẹẹs
++N: NMN_HYPOTEEʹS ;
+LEXICON NMN_HYPOTEEʹS
+!! ** Yaml: __N-hypotees__
+:%^PAL ATTESTED-NOUN-STEM ;  !!= * @CODE@ 
+:%^PAL SG-NOM ;	    !!= * @CODE@  +Sg+Nom:
+:%^PAL SG-ABE/ACC/GEN ;   !!= * @CODE@ 
+:%>a SG-ILL ;	    !!= * @CODE@  +Sg+Ill:
+:%^PAL%>e SG-LOC ;	    !!= * @CODE@ 
+:%^PAL SG-COM_IN ;	    !!= * @CODE@ 
+:%^PAL%>e ESS/PAR ; 	    !!= * @CODE@ 
+:%^PAL PL-NOM ;	    !!= * @CODE@  +Pl+Nom:
+:%^PAL PL-OBL ;	    !!= * @CODE@  +Pl+Gen: 
 !FIX-DIM
 
 LEXICON N_ENERGII !!= * @CODE@ energii:energi
@@ -7765,6 +7904,10 @@ LEXICON SG-ABE
 LEXICON SG-ABE_ʹtää
 !! Has palatalization preceding
 +Sg+Abe:%>ʹtää K ;
+
+LEXICON SG-ABE_tta
+!! Used with words like juurd: jurddǥatta
++Sg+Abe:%>tta K ;
 
 LEXICON SG-ACC
 +Sg+Acc: K ;
