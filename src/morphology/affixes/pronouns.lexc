@@ -21,17 +21,59 @@ LEXICON PRON_
 LEXICON PRON-PERS_
 +Pron+Pers: # ;
 LEXICON PRON-PERS-SG1_
-+Pron+Pers+Sg1: # ;
++Pron+Pers+Sg1+Nom:on # ;
++Pron+Pers+Sg1: PRON-PERS-SG-OBL ;
 LEXICON PRON-PERS-SG2_
-+Pron+Pers+Sg2: # ;
++Pron+Pers+Sg2+Nom:on # ;
++Pron+Pers+Sg2: PRON-PERS-SG-OBL ;
 LEXICON PRON-PERS-SG3_
-+Pron+Pers+Sg3: # ;
++Pron+Pers+Sg3+Nom:on # ;
++Pron+Pers+Sg3: PRON-PERS-SG-OBL ;
+LEXICON PRON-PERS-DU1_
++Pron+Pers+Du1: PRON-PERS-DU ;
+LEXICON PRON-PERS-DU2_
++Pron+Pers+Du2: PRON-PERS-DU ;
+LEXICON PRON-PERS-DU3_
++Pron+Pers+Du3: PRON-PERS-DU ;
 LEXICON PRON-PERS-PL1_
-+Pron+Pers+Pl1: # ;
++Pron+Pers+Pl1: PRON-PERS-PL ;
 LEXICON PRON-PERS-PL2_
-+Pron+Pers+Pl2: # ;
++Pron+Pers+Pl2: PRON-PERS-PL ;
 LEXICON PRON-PERS-PL3_
-+Pron+Pers+Pl3: # ;
++Pron+Pers+Pl3: PL ;
+
+
+LEXICON PRON-PERS-SG-OBL
++Gen:u	      K ;
++Acc:u	      K ;
++Ill:ʹnne	      K ;
++Loc:ʹst	      K ;
++Com:in	      K ;
++Abe:utää	      K ;
++Ess:uʹnen	      K ;
++Par:uʹđed	      K ;
+
+
+
+LEXICON PRON-PERS-DU
++Nom:a		K ;
++Gen:nai	      K ;
++Acc:naid	      K ;
++Ill:naid	      K ;
++Loc:nast	      K ;
++Com:nain	      K ;
++Abe:naitää	      K ;
++Ess:nan	      K ;
+
+LEXICON PRON-PERS-PL
++Nom:ij		K ; !!= * @CODE@ mij, tij, sij
++Gen:ij	      K ; !!= * @CODE@ mij, tij, sij
++Acc:iʹjjid	      K ; !!= * @CODE@ miʹjjid, tiʹjjid, siʹjjid
++Ill:iʹjjid	      K ; !!= * @CODE@ miʹjjid, tiʹjjid, siʹjjid
++Loc:eeʹst	      K ; !!= * @CODE@ meeʹst, teeʹst, seeʹst
++Com:ijvuiʹm     K ; !!= * @CODE@ mijvuiʹm, tijvuiʹm, sijvuiʹm
++Abe:ijtää	      K ; !!= * @CODE@ mijtää, tijtää, sijtää
+
 
 
 LEXICON PRON-REL_
@@ -43,7 +85,7 @@ LEXICON PRON-REL_
 !! Pointing to all the pronominal subgroups
 
 LEXICON Pronoun !!= * @CODE@
-Personal ;      !!= * @CODE@
+!Personal ;      !!= * @CODE@
 Demonstrative ; !!= * @CODE@
 Reflexive ;     !!= * @CODE@
 Interrogative ; !!= * @CODE@
