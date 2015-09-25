@@ -3255,16 +3255,17 @@ LEXICON NMN_PÂÂʹJJ
 !!
 :%^PAL ATTESTED-NOUN-STEM ;
 :%^PAL SG-NOM ;			    !!= * @CODE@ (1) pââʹjj
-:%^PAL%^CC2C SG-ABE/ACC/GEN-PL-NOM ;     !!= * @CODE@ (2) pââʹj
+:%^PAL%^CC2C SG-ABE/ACC/GEN ;     !!= * @CODE@ (2) pââʹj
 :%^VV2V NMN_SG-ILL_A ;    	    !!= * @CODE@ (3) pâjja
 :%^PAL%^CC2C%>e SG-LOC ;	 	    !!= * @CODE@ (4) pââʹjest
 :%^VOWRaise%^PAL%^CC2C SG-COM_IN ;	    !!= * @CODE@ (5) põõʹjin
 :%^PAL%>e ESS/PAR ;	  	    	    !!= * @CODE@ (6) pââʹjjen
+:%^PAL%^CC2C PL-NOM ;     !!= * @CODE@ (2) pââʹj
+:%^VOWRaise%^PAL%^CC2C PL-OBL ;
++Der/Dim:%^V2VV%^CC2C%> N_KUÂLAŽ ;
 +Use/NG:%^J2I%^CC2C SG-GEN ;     !!= * @CODE@ pââi
 +Use/NG:%^J2I%^CC2C SG-ACC ;
 +Use/NG:%^J2I%^CC2C PL-NOM ;
-:%^VOWRaise%^PAL%^CC2C PL-OBL ;
-+Der/Dim:%^V2VV%^CC2C%> N_KUÂLAŽ ;
 
 LEXICON N_KÄʹLBB !!= * @CODE@ käʹlbb:kälbb âʹlǧǧ:âlgg
 ! vowel: monophthong
@@ -3291,14 +3292,17 @@ LEXICON NMN_KÄʹLBB
 !! Is for nouns with ''-est'' Loc, Extra long vowel
 !! ** Yaml: __N-algg__
 :%^PAL ATTESTED-NOUN-STEM ;			!!= * @CODE@ (1) Sg.Nom: âʹlǧǧ
-:%^PAL SG-NOM ;		  			!!= * @CODE@ (1) Sg.Nom: âʹlǧǧ
-:%^V2VV%^PAL%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;	!!= * @CODE@ (2) Pl.Nom: ââʹlj
-: NMN_SG-ILL_A ;	     			   	!!= * @CODE@ (3) Sg.Ill: âlgga
+:%^PAL E-STEM_SG-NOM ;		  			!!= * @CODE@ (1) Sg.Nom: âʹlǧǧ
+:%^V2VV%^PAL%^XYY2XY E-STEM_SG-ABE/ACC/GEN ;	!!= * @CODE@ (2) Pl.Nom: ââʹlj
+:%^V2VV%^PAL%^XYY2XY PL-NOM ;	!!= * @CODE@ (2) Pl.Nom: ââʹlj
+: E-STEM_SG-ILL ;	     			   	!!= * @CODE@ (3) Sg.Ill: âlgga
 :%^V2VV%^PAL%^XYY2XY%>e SG-LOC ;		!!= * @CODE@ (4) Sg.Loc: ââʹljest
-:%^V2VV%^VOWRaise%^PAL%^XYY2XY SG-COM_IN/PL-OBL ; !!= * @CODE@ (5) Sg.Com: õõʹljin
+:%^V2VV%^VOWRaise%^PAL%^XYY2XY SG-COM_IN ; !!= * @CODE@ (5) Sg.Com: õõʹljin
+:%^V2VV%^VOWRaise%^PAL%^XYY2XY E-STEM_PL-OBL ; !!= * @CODE@ (5) Sg.Com: õõʹljin
 :%^PAL%>e ESS/PAR ;	       			!!= * @CODE@ (6) Ess: âʹlǧǧen
-+Der/Dim:%^V2VV%^XYY2XY%> N_KUÂLAŽ ;		!!= * @CODE@ (9) Der/Dim.N.Sg.Nom: ââlǥaž
-
++Der/Dim:%^V2VV%^XYY2XY E-STEM_N_KUÂLAŽ ;		!!= * @CODE@ (9) Der/Dim.N.Sg.Nom: ââlǥaž
+ E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) kälbb-
+%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) käʹlb-
 
 LEXICON N_ARGUMEʹNTT !!= * @CODE@ argumeʹntt:argumentt
 !! vowel: monophthong
@@ -7288,12 +7292,12 @@ LEXICON N_JOOʹTTI !!= * @CODE@ jooʹtti:jooʹtti
 +N: SG-ABE/ACC/GEN ;			! jooʹtti
 +N:%^I2J%>a SG-ILL ;		! jooʹttja
 +N:%^I2J%>e SG-LOC ;		! jooʹttjest
-+N: SG-COM_N ;			! jooʹttin
++N:%^I2J SG-COM_IN ;			! jooʹttjin
 +N:%^I2J%>e ESS/PAR ;   		! jooʹttjen
 +N:%^CC2C PL-NOM ;		! jooʹđi
 +N+Use/NG: PL-NOM ;		! jooʹtti
-+N: PL-OBL ;			! jooʹttji
-+N+Use/NG:%^CC2C PL-OBL ;	! jooʹđji
++N:%^I2J PL-OBL ;			! jooʹttji
++N+Use/NG:%^CC2C%^I2J PL-OBL ;	! jooʹđji
 
 LEXICON N_OOʹCCI !!= * @CODE@ ooʹcci:ooʹcci
 ! gradation: yes
@@ -7307,12 +7311,12 @@ LEXICON N_OOʹCCI !!= * @CODE@ ooʹcci:ooʹcci
 +N: SG-ABE/ACC/GEN ;		! ooʹcci
 +N:%^I2J%>a SG-ILL ;		! ooʹccja
 +N:%^I2J%>e SG-LOC ;		! ooʹccjest
-+N: SG-COM_N ;			! ooʹccin
++N:%^I2J SG-COM_IN ;			! ooʹccin
 +N:%^I2J%>e ESS/PAR ;   		! ooʹccjen
 +N:%^KK2GG PL-NOM ;		! ooʹʒʒi
 +N+Use/NG: PL-NOM ;		! ooʹcci
-+N: PL-OBL ;			! ooʹccji
-+N+Use/NG:%^KK2GG PL-OBL ;	! ooʹʒʒji
++N:%^I2J PL-OBL ;			! ooʹccji
++N+Use/NG:%^KK2GG%^I2J PL-OBL ;	! ooʹʒʒji
 
 
 LEXICON N_JÅÅRǤLÕʹTTI !!= * @CODE@ jåårǥlõʹtti:jåårǥlõʹtti
