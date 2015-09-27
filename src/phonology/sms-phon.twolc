@@ -291,7 +291,7 @@ OnSetC = [:Cns (Cns:|:Cns) |#|%>] ;
 
 !! following morpheme or word boundary
 !! {{{
-RBound = [#|%>] ; !!= * @CODE@ 
+RBound = [#|%>|»] ; !!= * @CODE@ 
 !! }}}
 
 !! relative lengthening of vowel right context following vowel:vowel
@@ -1342,7 +1342,7 @@ OnSetC _ o (i|u) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^PenV2VV: ;
               h: (:ˈ) _ [c c:|č č:|s s:|š š:|t t:]  BetweenStemAndPALNo  %^PAL: %^XYY2VY: ;
 !€ t0äh0tt%^V2VV%^PAL%^XYY2VY
 !€ tääuʹt0000
-             [Vow:|:Vow] (:ˈ) _ (i|u) Cns: [Cns:*|:Cns*|Cns:* (ˈ:|:ˈ) Cns:*] (i:) BetweenStemAndPALNo  %^PAL: ;
+             [Vow:|:Vow] (i|u) (:ˈ) _ Cns: [Cns:*|:Cns*|Cns:* (ˈ:|:ˈ) Cns:*] (i:) BetweenStemAndPALNo  %^PAL: ;
 !€ saa0kk%^VV2V%^PAL%>e
 !€ s0aʹǩǩ00%>e
 !€ mõõ0nn%^VV2V%^VOWLower%^PAL%>e
@@ -1351,7 +1351,7 @@ OnSetC _ o (i|u) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^PenV2VV: ;
 !€ kueʹll00
 !€ stu%{VU%}0l%^PAL
 !€ stuuʹl0
-             [Vow:|:Vow] (:ˈ) _ (i|u) Cns: [Cns:*|:Cns*|Cns:* (ˈ:|:ˈ) Cns:*] Vow: Cns:* PenBetweenStemAndPALNo (%^PenPALE:)  %^PenPAL: ;
+             [Vow:|:Vow] (i|u) (:ˈ)  _ Cns: [Cns:*|:Cns*|Cns:* (ˈ:|:ˈ) Cns:*] Vow: Cns:* PenBetweenStemAndPALNo (%^PenPALE:)  %^PenPAL: ;
 !€ k0ä0llez%^PenV2VV%^PenPAL%^DeVC
 !€ kääʹlles000
 !€ jeä0kˈkel%^PenPALE%^PenPAL%^PenKKK2ZERO
@@ -1379,7 +1379,7 @@ OnSetC _ o (i|u) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^PenV2VV: ;
 !€ biolooʹǧ0%>e
 
 
-"Even-syllabic verbs I, Palatalization of k:ǩ"
+"Even-syllabic verbs I, Palatalization of k:ǩ here"
 !! __@RULENAME@__ - used in
  k:ǩ <=>
  Vow: (ʹ:|0:ʹ) (Cns:)   _ (0:) k: BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: ([%^CC2C:|%^XYY2XY:]) RBound ;
