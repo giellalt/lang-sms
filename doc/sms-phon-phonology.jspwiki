@@ -39,27 +39,28 @@ The rule file for Skolt Saami is divided into 5 main types:
 
 
 Trigger symbols
+ * %^Pen:0  for combinations 2015-09-28 Miikka
 
  *  %^RmVow:0  for removing vowels e, â, a before final consonant in stem
  *  %^UltRmVow:0  for removing vowels e, â, a after final consonant in stem
- *  %^PenRmVow:0  for removing penultimate vowels e, â, a, i.e. vowel befor final stem consonant/consonants
+ * ! %^PenRmVow:0  for removing penultimate vowels e, â, a, i.e. vowel befor final stem consonant/consonants
  *  %^RmCns:0  for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta 
  * %^1VOW:0 %^2VOW:0 %^3VOW:0 %^4VOW:0 %^5VOW:0  Vow triggers
 
  *  %^VOWLower:0  i>e, õ>â, â>ä, u>o, o>å
  *  %^VOWRaise:0  e>i, ä>e 
- *  %^PenVOWRaise:0  e>i, ä>e
- *  %^PenVOWLower:0  i>e, õ>â, â>ä, u>o, o>å
+ * ! %^PenVOWRaise:0  e>i, ä>e
+ * ! %^PenVOWLower:0  i>e, õ>â, â>ä, u>o, o>å
  *  %^LowerI2E:0	  this is for diphthong in mieʹlǩǩ:meâlkka
- *  %^PenLowerI2E:0  this is for diphthong in mieʹlǩǩ:meâlkka
+ * ! %^PenLowerI2E:0  this is for diphthong in mieʹlǩǩ:meâlkka
  *  %^U2Õ:0	  lowers u>õ	 
- *  %^PenU2Õ:0	  lowers u>õ	 
+ * ! %^PenU2Õ:0	  lowers u>õ	 
  *  %^VOWBack:0	      Backing e>õ, e>â vuäinn BUT vuõiʹni
- *  %^PenVOWBack:0	      Backing e>õ, e>â vuäinn BUT vuõiʹni
+ * ! %^PenVOWBack:0	      Backing e>õ, e>â vuäinn BUT vuõiʹni
 
  *  %^VOWFront:0	      Fronting
  *  %^PAL:0 %^PALNo:0 %^PALE:0 %^PALÄ:0 %^PALẸ:0 %^PALÂ:0 %^PALÕ:0    Palatalisation
- *  %^PenPAL:0 %^PenPALNo:0 %^PenPALE:0 %^PenPALÄ:0 %^PenPALẸ:0 %^PenPALÂ:0   Penultimate Palatalisation
+ * ! %^PenPAL:0 %^PenPALNo:0 %^PenPALE:0 %^PenPALÄ:0 %^PenPALẸ:0 %^PenPALÂ:0   Penultimate Palatalisation
  * %^PALK:0      causes k:ǩ and g:ǧ
 
  *  %^VC:0          Voicing s:z š:ž
@@ -89,29 +90,30 @@ CHARACTERISTIC BREAKDOWN 2015-02-17
  * %^GG2KKK:0	 Geminate extra strengthening čuâǥǥas:čuõkˈksa
 
 
- * %^PenVV2V:0      Shortens vowel in penultimate syllable
- * %^PenV2VV:0      Lengthens vowel in penultimate syllable
- * %^PenCC2C:0      Shortens consonant in penultimate syllable
- * %^PenCCC2C:0         Extra strong to weak consonant in penultimate syllable
- * %^PenCCC2CC:0         Extra strong to strong consonant in penultimate syllable
- * %^PenCC2CCC:0      Extra Lengthens consonant in penultimate syllable
- * %^PenC2CC:0      Lengthens consonant in penultimate syllable
- * %^PenC2CCC:0 	 Lengthens consonant in penultimate syllable
- * %^PenXYY2VY:0	 Vhss:VVus in penultimate syllable
- * %^PenXYY2VYY:0	 consonant cluster to Vowel and Geminate
- * %^PenVY2XYY:0	 VVus:Vhss in penultimate syllable
- * %^PenXY2XYY:0	 
- * %^PenXYY2XY:0	 
- * %^PenXYYY2XYY:0	 Extra strong to strong consonant cluster
- * %^PenXYYY2XY:0	 Extra strong to weak consonant cluster
- * %^PenXYY2XYYY:0	 Extra Lengthens consonant cluster
- * %^PenKKK2ZERO:0	 Geminate weakening jeeʹel
- * %^PenKKK2GG:0       Geminate weakening
- * %^PenKK2GG:0        Geminate weakening jokk:jooǥǥ
- * %^PenGG2KK:0        Geminate strengthening
- * %^PenGG2KKK:0       Geminate extra strengthening čuâǥǥas:čuõkˈksa
+ * !%^PenVV2V:0      Shortens vowel in penultimate syllable
+ * !%^PenV2VV:0      Lengthens vowel in penultimate syllable
+ * !%^PenCC2C:0      Shortens consonant in penultimate syllable
+ * !%^PenCCC2C:0         Extra strong to weak consonant in penultimate syllable
+ * !%^PenCCC2CC:0         Extra strong to strong consonant in penultimate syllable
+ * !%^PenCC2CCC:0      Extra Lengthens consonant in penultimate syllable
+ * !%^PenC2CC:0      Lengthens consonant in penultimate syllable
+ * !%^PenC2CCC:0 	 Lengthens consonant in penultimate syllable
+ * !%^PenXYY2VY:0	 Vhss:VVus in penultimate syllable
+ * !%^PenXYY2VYY:0	 consonant cluster to Vowel and Geminate
+ * !%^PenVY2XYY:0	 VVus:Vhss in penultimate syllable
+ * !%^PenXY2XYY:0	 
+ * !%^PenXYY2XY:0	 
+ * !%^PenXYYY2XYY:0	 Extra strong to strong consonant cluster
+ * !%^PenXYYY2XY:0	 Extra strong to weak consonant cluster
+ * !%^PenXYY2XYYY:0	 Extra Lengthens consonant cluster
+ * !%^PenKKK2ZERO:0	 Geminate weakening jeeʹel
+FIXME
+ * !%^PenKKK2GG:0       Geminate weakening
+ * !%^PenKK2GG:0        Geminate weakening jokk:jooǥǥ
+ * !%^PenGG2KK:0        Geminate strengthening
+ * !%^PenGG2KKK:0       Geminate extra strengthening čuâǥǥas:čuõkˈksa
 
- *  %^PenAllegro:0	     This introduces vertical bar after diphth before consonants
+ * ! %^PenAllegro:0	     This introduces vertical bar after diphth before consonants
  *  %^Allegro:0	     This introduces vertical bar after diphth before consonants
 
  * %^J2I:0		 in tuâjj:tuâi
@@ -269,13 +271,13 @@ relative lengthening of vowel right context following vowel:vowel
 relative lengthening of vowel right context following vowel:vowel
 0:u <=> OnSetC _ :u RelVowLengtheningNOTu
 {{{
- * RelVowLengtheningNOTu = [(ʹ:|0:ʹ) [CCforPrecedingV2VV  %^PenV2VV: %^CShort:|[iCC2iCforPrecedingV2VV|CC2CforPrecedingV2VV] %^V2VV: %^CC2C:|CC2CforPrecedingVV %^CC2C:]] ; 
+ * RelVowLengtheningNOTu = [(ʹ:|0:ʹ) [CCforPrecedingV2VV  %^Pen: %^V2VV: %^CShort:|[iCC2iCforPrecedingV2VV|CC2CforPrecedingV2VV] %^V2VV: %^CC2C:|CC2CforPrecedingVV %^CC2C:]] ; 
 }}}
 
 
 possible triggers before VOWLower and VOWRaise
 {{{
- * PrecedeVOWLowerRaise = [([%^VOWSH:|%^VOWXSH:] %^CLong:|[%^PenV2VV:|%^VOWXL:] %^CShort:)] ;  
+ * PrecedeVOWLowerRaise = [([%^VOWSH:|%^VOWXSH:] %^CLong:|[%^Pen: %^V2VV:|%^VOWXL:] %^CShort:)] ;  
 }}}
 
 
@@ -567,7 +569,7 @@ __Even syllabic verbs I, secondary u > v __
 
 !RELATIVE VOWEL LENGTHENING
 
-vowel lengthening and consonant shortening, %^PenV2VV and %^CShort 
+vowel lengthening and consonant shortening, %^Pen: %^V2VV and %^CShort 
 
 __Even syllabic verbs I, relative vowel lengthening 0:â__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
 šõddâd+V+Imprt+Sg3: 
