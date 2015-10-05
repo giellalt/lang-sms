@@ -75,14 +75,14 @@ Alphabet
 
  %^VOWLower:0 !!= * @CODE@ i>e, õ>â, â>ä, u>o, o>å
  %^VOWRaise:0 !!= * @CODE@ e>i, ä>e 
-! %^PenVOWRaise:0 !!= * @CODE@ e>i, ä>e
-! %^PenVOWLower:0 !!= * @CODE@ i>e, õ>â, â>ä, u>o, o>å
+! %^PenVOWRaise:0 != * @CODE@ e>i, ä>e
+! %^PenVOWLower:0 != * @CODE@ i>e, õ>â, â>ä, u>o, o>å
  %^LowerI2E:0	 !!= * @CODE@ this is for diphthong in mieʹlǩǩ:meâlkka
-! %^PenLowerI2E:0 !!= * @CODE@ this is for diphthong in mieʹlǩǩ:meâlkka
+! %^PenLowerI2E:0 != * @CODE@ this is for diphthong in mieʹlǩǩ:meâlkka
  %^U2Õ:0	 !!= * @CODE@ lowers u>õ	 
-! %^PenU2Õ:0	 !!= * @CODE@ lowers u>õ	 
+! %^PenU2Õ:0	 != * @CODE@ lowers u>õ	 
  %^VOWBack:0	     !!= * @CODE@ Backing e>õ, e>â vuäinn BUT vuõiʹni
-! %^PenVOWBack:0	     !!= * @CODE@ Backing e>õ, e>â vuäinn BUT vuõiʹni
+! %^PenVOWBack:0	     != * @CODE@ Backing e>õ, e>â vuäinn BUT vuõiʹni
 
  %^VOWFront:0	     !!= * @CODE@ Fronting
  %^PAL:0 %^PALNo:0 %^PALE:0 %^PALÄ:0 %^PALẸ:0 %^PALÂ:0 %^PALÕ:0   !!= * @CODE@ Palatalisation
@@ -1033,7 +1033,7 @@ Rules
       e _ Cns: Cns:+ %^PALÂ: %^PALNo: ;
 
 !"Relative vowel lengthening 0:Vx"
-!! __@RULENAME@__ - used in
+! __@RULENAME@__ - used in
 ! 0:Vx <=> OnSetC _ :Vx (u:|i:|%{VU%}:|:u) (ʹ:|0:ʹ)  Cns: [Cns:*|:Cns*] %^V2VV: ;
 !  OnSetC _ :Vx (u:|i:|%{VU%}:) (ʹ:|0:ʹ)  Cns: [Cns:*|:Cns*] Vow: Cns:+  %^Pen: %^V2VV: ;
 !                where Vx in (a å) ;
@@ -1889,7 +1889,7 @@ OnSetC _ o (i|u) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^Pen: %^V2VV: ;
 !      Vow:  (ʹ:|0:ʹ)  [r|l|p] š: _ BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
 !      Vow:  (%{ʹ%}:) h: (ʹ:|0:ʹ) š:  _ BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
 !      Vow: (%{ʹ%}:) h: (ʹ:|0:ʹ) š:  _ BetweenStemAndConsGrade %^XYY2VY: ;
-!! šapšš+N+Sg+Gen __white fish/siika__
+! šapšš+N+Sg+Gen __white fish/siika__
 !€ š0apšš%^V2VV%^CC2C
 !€ šaapš000
 
