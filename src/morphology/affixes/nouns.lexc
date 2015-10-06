@@ -3806,8 +3806,8 @@ LEXICON NMN_ǨIẸʹČČ
 :%^PALẸ%^PAL%^KK2GG SG-ABE/ACC/GEN-PL-NOM ;	!!(2) Pl.Nom: ǩiẹʹjj
 :%^VOWLower%^CC2CCC E-STEM_SG-ILL ;		!!(3) Sg.Ill: ǩeäčˈča
 :%^PALẸ%^PAL%^KK2GG%>e SG-LOC ;			!!(4) Sg.Loc: ǩiẹʹjjest
-:%^PALẸ%^PAL%>e ESS ;  	      			!!(6) Ess: ǩiẹʹččen
-:%^PALẸ%^PAL%^KK2GG%>e PAR ;			! ǩiẹʹččed
+:%^PALẸ%^PAL%>e ESS/PAR ;  	      			!!(6) Ess: ǩiẹʹččen
++Use/NG:%^PALẸ%^PAL%^KK2GG%>e PAR ;			! ǩiẹʹččed
 :%^VOWRaise%^PALE%^PAL%^KK2GG SG-COM_IN/PL-OBL ; !!(5) Sg.Com: ǩieʹjjin
 +Der/Dim:%^VOWLower%^KK2GG%> N_KUÂLAŽ ;		!!(9) Der/Dim.N.Sg.Nom: ǩeäjjaž
 
@@ -3842,8 +3842,8 @@ LEXICON NMN_SUẸʹǨǨ
 :%^VOWRaise%^PALẸ%^PAL%^KK2GG PL-NOM ; !!(2) Pl.Nom: suẹʼjj
 :%^CC2CCC%>a E-STEM_SG-ILL ;	      !!(3) Sg.Ill: suäkˈka
 :%^VOWRaise%^PALẸ%^PAL%^KK2GG%>e SG-LOC ; !!(4) Sg.Loc: suẹʹjjest
-:%^VOWRaise%^PALẸ%^PAL%>e ESS ; !!(6) Ess: suẹʹǩǩen
-:%^VOWRaise%^PALẸ%^PAL%^KK2GG%>e PAR ; !!(7) Par: suẹʹjjed
+:%^VOWRaise%^PALẸ%^PAL%>e ESS/PAR ; !!(6) Ess: suẹʹǩǩen
++Use/NG:%^VOWRaise%^PALẸ%^PAL%^KK2GG%>e PAR ; !!(7) Par: suẹʹjjed
 !2009: 204 +N:%^KK2GG%>e PAR ;
 
 :%^VOWRaise%^PALE%^PAL%^KK2GG SG-COM_IN ; !!(5) Sg.Com: sueʹjjin
@@ -3918,8 +3918,8 @@ LEXICON NMN_NUẸʹJJ
 +Use/NG:%^PAL%^J2I%^CC2C SG-ABE/ACC/GEN-PL-NOM ;  	      	! nuäʹi
 :%^CC2CCC E-STEM_SG-ILL ;				! nuäjˈja
 :%^PAL%^CC2C%>e SG-LOC ;			! nuäʹjest
-:%^VOWRaise%^PALẸ%^PAL%>e ESS ; 		! nuẹʹjjen
-:%^VOWRaise%^PALẸ%^PAL%^CC2C%>e PAR ;		! nuẹʹjjed
+:%^VOWRaise%^PALẸ%^PAL%>e ESS/PAR ; 		! nuẹʹjjen
++Use/NG:%^VOWRaise%^PALẸ%^PAL%^CC2C%>e PAR ;		! nuẹʹjjed
 !2009: 204 +N:%^CC2C%>e PAR ;	    		
 :%^PAL%^CC2C SG-COM_IN/PL-OBL ;			! nuäʹjin
 +Der/Dim:%^CC2C%> N_KUÂLAŽ ;			! nuäjaž
@@ -4462,6 +4462,32 @@ LEXICON NMN_PLAAN
 +Der/Dim+N: N_MUÕRÂŽ-WITHOUT-PAL ;  !!= * @CODE@ paar-
 +Der/Dim+N:%^PAL N_MUÕRÂŽ-WITH-PAL ;  !!= * @CODE@ paaʹr-
 
+LEXICON N_BIOLOOG !!= * @CODE@ bioloog:bioloog
++N: NMN_BIOLOOG ;
+LEXICON NMN_BIOLOOG
+! gradation: no
+!! !!2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
+!! !!2.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
+!! !!2.1.3 Sg.Ill in palatalization and -e
+!! !!2.1.3.3 Lacks Gradation (in last syllable)
+!! !!2.1.3.3.1 Monophthong
+!! !!2.1.3.3.1.3 Consonant always short
+!! !!2.1.3.3.1.3.4 Sg.Nom long vowel AND Short consonant
+!! !!2.1.3.3.1.3.4.1.Sg.Gen Weak Grade
+!! !!2.1.3.3.1.3.4.1.3 Sg.Ill Weak Grade
+!! bioloog:bioloog
+!! ** Yaml: __N-bioloog__
+ ATTESTED-NOUN-STEM ;
+: SG-NOM ;		! bioloog
+: SG-ABE/ACC/GEN-PL-NOM ;		! bioloog
+:%^VV2V%^PAL%>e SG-ILL ;	! bioloʹǧe
+:%>â SG-LOC ;	 	! bioloogâst
+: SG-COM_IN ;		! bioloogin
+:%>â ESS/PAR ;  		! bioloogân
+: PL-OBL ;		! bioloogi
++Der/Dim+N: N_MUÕRÂŽ-WITHOUT-PAL ;  !!= * @CODE@ bioloog-
++Der/Dim+N:%^PAL N_MUÕRÂŽ-WITH-PAL ;  !!= * @CODE@ biolooʹǧ-
+
 LEXICON N_JARPLAAN !!= * @CODE@ 
 +N: NMN_JARPLAAN ;
 LEXICON NMN_JARPLAAN
@@ -4580,8 +4606,8 @@ LEXICON NMN_JUURD !!= * @CODE@ juurd:jurdd
 :%>j%>e SG-LOC ;
 :%>j SG-COM_IN/PL-OBL ;
 :%>i PL-NOM ;
-:%>j%>e ESS ;
-:%>e PAR ;
+:%>j%>e ESS/PAR ;
++Use/NG:%>e PAR ;
 +N+Der/Dim:%>j N_KUÂLAŽ ;
 +N+Der/Dim:%>ǥ N_KUÂLAŽ ;
 
@@ -4626,8 +4652,8 @@ LEXICON NMN_POOUS !!= * @CODE@ poous:pohss
 :%>j%>e SG-LOC ;
 :%>j SG-COM_IN/PL-OBL ;
 :%>i PL-NOM ;
-:%>j%>e ESS ;
-:%>e PAR ;
+:%>j%>e ESS/PAR ;
++Use/NG:%>e PAR ;
 +N+Der/Dim:%>j N_KUÂLAŽ ;
 +N+Der/Dim:%>ǥ N_KUÂLAŽ ;
 
@@ -4652,8 +4678,8 @@ LEXICON NMN_MAADD !!= * @CODE@ maadd:madd
 :%>j%>e SG-LOC ;
 :%>j SG-COM_IN/PL-OBL ;
 :%>i PL-NOM ;	 ! maddi
-:%>j%>e ESS ;
-:%>e PAR ;
+:%>j%>e ESS/PAR ;
++Use/NG:%>e PAR ;
 
 +Der/Dim:%>j N_KUÂLAŽ ;
 +Der/Dim:%>ǥ N_KUÂLAŽ ;
@@ -4674,8 +4700,8 @@ LEXICON NMN_LIÕV
 :%>j%>e SG-LOC ;
 :%>j SG-COM_IN/PL-OBL ;
 :%>i PL-NOM ;	! liõppi
-:%>j%>e ESS ;
-:%>e PAR ;
+:%>j%>e ESS/PAR ;
++Use/NG:%>e PAR ;
 +Der/Dim:%>j N_KUÂLAŽ ;
 +Der/Dim:%>ǥ N_KUÂLAŽ ;
 
@@ -4698,8 +4724,8 @@ LEXICON NMN_MUÕTT
 :%>j%>e SG-LOC ;
 :%>j SG-COM_IN/PL-OBL ;
 :%>i PL-NOM ;	! muõtti
-:%>j%>e ESS ;
-:%>e PAR ;
+:%>j%>e ESS/PAR ;
++Use/NG:%>e PAR ;
 +Der/Dim:%>j N_KUÂLAŽ ;
 +Der/Dim:%>ǥ N_KUÂLAŽ ;
 
@@ -4744,8 +4770,8 @@ LEXICON NMN_PUÅĐ
 :%>j%>e SG-LOC ;
 :%>j SG-COM_IN/PL-OBL ;
 :%>i PL-NOM ;	! puåtti
-:%>j%>e ESS ;
-:%>e PAR ;
+:%>j%>e ESS/PAR ;
++Use/NG:%>e PAR ;
 +Der/Dim:%>j N_KUÂLAŽ ;
 +Der/Dim:%>ǥ N_KUÂLAŽ ;
 
@@ -4765,8 +4791,8 @@ LEXICON NMN_MUÅRD
 :%>j%>e SG-LOC ;
 :%>j SG-COM_IN/PL-OBL ;
 :%>i PL-NOM ;	! muårddi
-:%>j%>e ESS ;
-:%>e PAR ;
+:%>j%>e ESS/PAR ;
++Use/NG:%>e PAR ;
 +Der/Dim:%>j N_KUÂLAŽ ;
 +Der/Dim:%>ǥ N_KUÂLAŽ ;
 
@@ -4839,8 +4865,8 @@ LEXICON NMN_MÄÄN !!= * @CODE@ mään:mann
 :%^VOWLower%>ʼje SG-LOC ;
 :%>u SG-COM_IN/PL-OBL ;
 :%^VOWLower%>ʼj SG-COM_IN ;
-:%^VOWLower%>ʼje ESS ; ! ess and prt without
-:%^VOWLower%>u PAR ;
+:%^VOWLower%>ʼje ESS/PAR ; ! ess and prt without
++Use/NG:%^VOWLower%>u PAR ;
 
 
 LEXICON N_SUÂL  !!= * @CODE@ suâl:suõlˈl
@@ -4859,8 +4885,8 @@ LEXICON NMN_SUÂL
 :%^VOWLower%>je SG-LOC ;		! suâlˈljest
 :%>u SG-COM_IN ;       			! suõlˈluin
 :%^VOWLower%>j SG-COM_IN ;		! suâlˈl'jin
-:%^VOWLower%^CCC2C%>a ESS ; 		! suâlan
-:%>u PAR ;	      	  		! suõlˈlud
+:%^VOWLower%^CCC2C%>a ESS/PAR ; 		! suâlan
++Use/NG:%>u PAR ;	      	  		! suõlˈlud
 :%>u PL-OBL ;				! suõlˈlui
 
 LEXICON N_CUÂBB  !!= * @CODE@ cuâbb:cuõbˈb
@@ -4879,8 +4905,8 @@ LEXICON NMN_CUÂBB
 +Use/NG:%^VOWLower%>je SG-LOC ;		! cuâbˈbjest
 :%>u SG-COM_IN ;       			! cuõbˈbuin
 :%^VOWLower%>j SG-COM_IN ;		! cuâbˈbjin
-:%^VOWLower%^CCC2CC%>a ESS ; 		! cuâbban
-:%>u PAR ;	      	  		! cuõbˈbud
+:%^VOWLower%^CCC2CC%>a ESS/PAR ; 		! cuâbban
++Use/NG:%>u PAR ;	      	  		! cuõbˈbud
 :%>u PL-OBL ;				! cuõbˈbui
 
 LEXICON N_ČUÂNJ  !!= * @CODE@ čuânj:čuõnˈnj
@@ -4897,8 +4923,8 @@ LEXICON NMN_ČUÂNJ
 +Use/NG:%>ǥa SG-ILL ;		! čuõnˈnjǥa
 :%>u SG-LOC ;	       			! suõlˈlust
 :%>u SG-COM_IN ;       			! suõlˈluin
-:%^VOWLower%^CCC2C%>a ESS ; 		! čuânjan
-:%>u PAR ;	      	  		! čuõnˈnjud
+:%^VOWLower%^CCC2C%>a ESS/PAR ; 		! čuânjan
++Use/NG:%>u PAR ;	      	  		! čuõnˈnjud
 :%>u PL-OBL ;				! čuõnˈnjui
 
 LEXICON N_PUÄƷƷ !!= * @CODE@ puäʒʒ:puõcˈc
@@ -4916,8 +4942,8 @@ LEXICON NMN_PUÄƷƷ
 +Use/NG:%^VOWLower%^PALÄ%>ǥa SG-ILL ;
 :%>u SG-LOC ;
 :%>u SG-COM_IN ;
-:%^VOWLower%^PALÄ%^KKK2GG%>a ESS ; 
-:%>u PAR ;
+:%^VOWLower%^PALÄ%^KKK2GG%>a ESS/PAR ; 
++Use/NG:%>u PAR ;
 :%>u PL-OBL ;
 :%>je SG-LOC ;
 :%>j SG-COM_IN ;
@@ -5569,8 +5595,8 @@ LEXICON NMN_KÅÅDDAS !!= * @CODE@ kååddas:kåddaz
 :%^RmVow%^DeVC%>a SG-ILL ;
 :%^RmVow%^DeVC%>e SG-LOC ;
 :%^RmVow%^DeVC SG-COM_IN ;
-:%^RmVow%^DeVC%>e ESS ; ! ess and prt without
-:%^RmVow%>e PAR ;
+:%^RmVow%^DeVC%>e ESS/PAR ; ! ess and prt without
++Use/NG:%^RmVow%>e PAR ;
 :%^RmVow%^DeVC PL-OBL ;
 :%^RmVow%^DeVC SÅÅBBAR-STEM-PX ; !!= * @CODE@ kådds-
 
