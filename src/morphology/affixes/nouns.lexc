@@ -2487,32 +2487,25 @@ LEXICON NMN_VUEʹSS
 !! !!  Extra strong grade: Sg.Ill
 !! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 !! !!FORMS
-!! !!(1) Sg.Nom: vueʹss
-!! !!(2) Pl.Nom: vueʼzz
-!! !!(3) Sg.Ill: vuâsˈsa
-!! !!(4) Sg.Loc: vueʹzzest
-!! !!(5) Sg.Com: vuõʹzzin ~ vueʹzzin
-!! !!(6) Ess: vueʹssen
-!! !!(7) Par: vueʹssed
-!! !!(8) Pl.Acc: vuõʹzzid ~ vueʹzzid
-!! !!(9) Der/Dim.N.Sg.Nom: vuâzzaž 
 !! ** Yaml: __N-vuess__
-!! * There are several stem types 
-!! * vueʹss:vuâss
-:%^CC2CCC NMN_SG-ILL_A ;
+:%^CC2CCC E-STEM_SG-ILL ; !!(3) Sg.Ill: vuâsˈsa
 :%^PALE%^PAL%^KK2GG DenominalAdjsCShort ;
 
 :%^PALE%^PAL ATTESTED-NOUN-STEM ;
-:%^PALE%^PAL SG-NOM ;
-:%^PALE%^PAL%^KK2GG SG-ABE/ACC/GEN-PL-NOM ;
-:%^PALE%^PAL%^KK2GG%>e SG-LOC ;
-:%^VOWRaise%^PAL%^KK2GG SG-COM_IN ;
-+Use/NG:%^PALE%^PAL%^KK2GG SG-COM_IN ;
-:%^PALE%^PAL%>e ESS/PAR ; ! ess and prt without
+:%^PALE%^PAL E-STEM_SG-NOM ; !!(1) Sg.Nom: vueʹss
+:%^PALE%^PAL%^KK2GG E-STEM_SG-ABE/ACC/GEN ; !!(2) Pl.Nom: vueʼzz
+:%^PALE%^PAL%^KK2GG PL-NOM ; !!(2) Pl.Nom: vueʼzz
+:%^PALE%^PAL%^KK2GG%>e SG-LOC ; !!(4) Sg.Loc: vueʹzzest
+:%^VOWRaise%^PAL%^KK2GG SG-COM_IN ; !!(5) Sg.Com: vuõʹzzin ~ vueʹzzin
++Use/NG:%^PALE%^PAL%^KK2GG SG-COM_IN ; 
+:%^PALE%^PAL%>e ESS/PAR ; !!(6) Ess: vueʹssen
 
-:%^VOWRaise%^PAL%^KK2GG PL-OBL ;
+:%^VOWRaise%^PAL%^KK2GG E-STEM_PL-OBL ; !!(8) Pl.Acc: vuõʹzzid ~ vueʹzzid
 +Use/NG:%^PALE%^PAL%^KK2GG PL-OBL ;
-+Der/Dim:%^KK2GG%> N_KUÂLAŽ ;
++Der/Dim:%^KK2GG%> E-STEM_N_KUÂLAŽ ; !!(9) Der/Dim.N.Sg.Nom: vuâzzaž
+ E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) vuâss-
+:%^PALE%^PAL E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) vueʹss-
+
 
 LEXICON N_SUEʹJJ !!= * @CODE@  sueʹjj:suâjj
 ! vowel: diphthong
