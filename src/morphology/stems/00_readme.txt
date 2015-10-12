@@ -62,3 +62,7 @@ CC_sms2x
 CS_sms2x
 2015-09-15
 Det_sms2x
+2015-10-11
+Interj_sms2x
+Num_sms2x
+Pcle_sms2x
