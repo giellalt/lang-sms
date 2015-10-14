@@ -425,6 +425,27 @@ LEXICON A_KLAAʹDD !!= * @CODE@ klaaʹdd:klaaʹdd
    A-ATTR_es ;
 +A+Der/MWN: N_KLAAʹDD ;
 
+!! CLASS denominals in -i
+!! cf. Feist (2012: 198-199)
+!! These will need their own expansions
+!! HOW DOES JIÕʹNNI decline?
+LEXICON A_JIÕʹNNI !!= * @CODE@ jiõʹnni:jiõnn
++A+Attr:%^PAL%>es #   ;
++A+Sg+Nom:%^PAL%>i  # ;
++A:%^PAL%>j ADJ-DER/COMP_ab ;
++A:%^PAL%>j ADJ-DER/SUPERL_ummus ;
+LEXICON A_PÄRRAI !!= * @CODE@ pärrai:pärr
++A+Attr:%>as #   ;
++A+Sg+Nom:%>ai  # ;
++A:%>j ADJ-DER/COMP_ab ;
++A:%>j ADJ-DER/SUPERL_ummus ;
+LEXICON A_SÄLTTAI !!= * @CODE@ sälttai:sältt
++A+Attr:%>as #   ;
++A+Sg+Nom:%>ai  # ;
++A:%>j ADJ-DER/COMP_ab ;
++A:%>j ADJ-DER/SUPERL_ummus ;
+
+
 !! CLASS 
 
 LEXICON A_ČÅRRÕS
@@ -461,7 +482,20 @@ LEXICON A_OOĐÂS !!= * @CODE@ oođâs:ođđ
 +A:s ADJ-DER/SUPERL_ummus ;
 +A+Der/MWN:âz NMN_VÕÕNÂS ;
 
+LEXICON A_KÕÕDDÂS !!= * @CODE@ kõõddâs:kõdd
++A+Sg+Nom:%^Pen%^V2VV%>âs FINAL1 ;
++A+Pl+Nom:%>âz FINAL1 ; !!= * @CODE@ Check this 2015-02-22
++A:s ADJ-DER/COMP_kõlmmsab ;
++A:s ADJ-DER/SUPERL_ummus ;
++A+Der/MWN:âz N_VÕÕNÂS ;
+
 LEXICON A_JÕÕSKÂS !!= * @CODE@ jõõskâs:jõskk
++A+Attr: FINAL1 ;
++A:s ADJ-DER/COMP_kõlmmsab ;
++A:s ADJ-DER/SUPERL_ummus ;
++A+Der/MWN:âz NMN_TAALKÂS ;
+
+LEXICON A_PIIUTÂS !!= * @CODE@ piiutâs:pihtt
 +A+Attr: FINAL1 ;
 +A:s ADJ-DER/COMP_kõlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
@@ -486,22 +520,152 @@ LEXICON A_ÕÕMÂS !!= * @CODE@ õõmâs:õmm
 +A:s ADJ-DER/SUPERL_ummus ;
 +A+Der/MWN:âz NMN_VÕÕNÂS ;
 
+LEXICON A_TUÕVÂS !!= * @CODE@ tuõvâs:tuõvv
++A+Attr:sõs FINAL1 ;
++A:s ADJ-DER/COMP_kõlmmsab ;
++A:s ADJ-DER/SUPERL_ummus ;
++A+Der/MWN:âz NMN_TUÕVÂS ;
+
+LEXICON A_VUÕIVÂS !!= * @CODE@ vuõivâs:vuõivv
++A+Attr: FINAL1 ;
++A:s ADJ-DER/COMP_kõlmmsab ;
++A:s ADJ-DER/SUPERL_ummus ;
++A+Der/MWN:âz NMN_VUÕIVÂS ;
+
+
+LEXICON A_VIIRRÂM !!= * @CODE@ viirrâm:viirrâm
++A+Attr:%^RmVow%>õs FINAL1 ;
++A:%^RmVow ADJ-DER/COMP_kõlmmsab ;
++A:%^RmVow ADJ-DER/SUPERL_ummus ;
++A+Der/MWN: N_VIIRRÂM ;
+
 LEXICON A_KÄÄʹMES  !!= * @CODE@ kääʹmes:kämm
 +A+Attr:%^V2VV%^PAL FINAL1 ;
 +A:s ADJ-DER/COMP_kõlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
 +A+Der/MWN:ez N_ÅÅʹVES ; !!= * @CODE@	kääʹmes:kämmez
 
+
 LEXICON A_TUÕĐŠTEEI !!= * @CODE@ tuejjeei:tuejjee
 +A+Sg+Nom:i FINAL1 ;
 +A+Pl+Nom:i FINAL1 ; !!= * @CODE@ Check this 2015-02-22
 +A+Der/MWN: N_TUÕĐŠTEEI ;
 
+!! WORK HERE 2015-10-14 deverbals
+LEXICON A_CÕGGI !!= * @CODE@ cõggi:cõggi
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ; 
++A+Der/MWN: N_CÕGGI ;
+LEXICON A_JÕÕVVI !!= * @CODE@ jõõvvi:jõõvvi
+!! ** Yaml: __A-vaeaezhzh__
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_JÕÕVVI ;
+LEXICON A_LOOKKI !!= * @CODE@ lookki:lookki
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_LOOKKI ;
+LEXICON A_TOBDDI !!= * @CODE@ tobddi:tobddi
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_TOBDDI ;
+LEXICON A_ǨIÕSSI !!= * @CODE@ ǩiõssi:ǩiõssi
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_ǨIÕSSI ;
+LEXICON A_VUÕLLI !!= * @CODE@ vuõlli:vuõlli
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_VUÕLLI ;
 LEXICON A_SUÕSKKI !!= * @CODE@ kuõskki:kuõskki
 +A+Sg+Nom: FINAL1 ;
 +A+Pl+Nom: FINAL1 ; !!= * @CODE@ Check this 2015-02-22
 +A+Der/MWN: N_SUÕSKKI ;
+LEXICON A_KÅČČAI !!= * @CODE@ kåččai:kåččai
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_KÅČČAI ;
+LEXICON A_PEELLAI !!= * @CODE@ peellai:peellai
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_PEELLAI ;
+LEXICON A_PÅÅSSAI !!= * @CODE@ pååssai:pååssai
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_PÅÅSSAI ;
+LEXICON A_SÄRNNAI !!= * @CODE@ särnnai:särnnai
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_SÄRNNAI ;
+LEXICON A_VUEJJAI !!= * @CODE@ vuejjai:vuejjai
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_VUEJJAI ;
+LEXICON A_REÄKKAI !!= * @CODE@ reäkkai:reäkkai
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_REÄKKAI ;
+LEXICON A_VUÄGˈGAI !!= * @CODE@ vuäggai:vuägˈgai
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_VUÄGˈGAI ;
+LEXICON A_MEÄLTTAI !!= * @CODE@ meälttai:meälttai
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_MEÄLTTAI ;
+LEXICON A_ŽẸẸVAI !!= * @CODE@ žeevai:žẹẹvai
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_ŽẸẸVAI ;
+LEXICON A_JOOʹTTI !!= * @CODE@ jooʹtti:jooʹtti
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_JOOʹTTI ;
+LEXICON A_OOʹCCI !!= * @CODE@ ooʹcci:ooʹcci
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_OOʹCCI ;
+LEXICON A_JÅÅRǤLÕʹTTI !!= * @CODE@ jåårǥlõʹtti:jåårǥlõʹtti
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_JÅÅRǤLÕʹTTI ;
+LEXICON A_ÄJJNÕʹSTTI !!= * @CODE@ äjjnõʹstti:äjjnõʹstti
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_ÄJJNÕʹSTTI ;
+LEXICON A_SIʹRDDI !!= * @CODE@ siʹrddi:siʹrddi
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_SIʹRDDI ;
+LEXICON A_SUʹVDDI !!= * @CODE@ suʹvddi:suʹvddi
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_SUʹVDDI ;
+LEXICON A_JIEʹLLI !!= * @CODE@ jieʹlli:jieʹlli
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_JIEʹLLI ;
+LEXICON A_LIEʹĐˈĐI !!= * @CODE@ lieʹđđi:lieʹđˈđi
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_LIEʹĐˈĐI ;
+LEXICON A_VUEʹSTTI !!= * @CODE@ vueʹstti:vueʹstti
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_VUEʹSTTI ;
+LEXICON A_ǨIÕʹLDDI !!= * @CODE@ ǩiõʹlddi:ǩiõʹlddi
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_ǨIÕʹLDDI ;
+LEXICON A_VUÕIʹNNI !!= * @CODE@ vuõiʹnni:vuõiʹnni
++A+Sg+Nom: FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_VUÕIʹNNI ;
 
+LEXICON A_JUURD !!= * @CODE@ juurd:jurdd
++A+Sg+Nom:%^V2VV%^XYY2XY FINAL1 ;
++A+Pl+Nom: FINAL1 ;
++A+Der/MWN: N_JUURD ;
 
 
 LEXICON A_SLOOHMAN
@@ -515,13 +679,6 @@ LEXICON A_SLOOHMAN
 +A+Pl+Nom: FINAL1 ;
 +A+Der/MWN: N_SLOOHMAN ;
 
-LEXICON A_JÕÕVVI
-! Gradation: None
-! 1.115
-!! ** Yaml: __A-vaeaezhzh__
-+A+Sg+Nom: FINAL1 ;
-+A+Pl+Nom: FINAL1 ;
-+A+Der/MWN: N_JÕÕVVI ;
 
 LEXICON A_ČÂÂʹLMTEʹM
 !! !!2. WORDS WITH MULTI-SYLLABLE NOMINATIVE SINGULARS (2009: 293)
