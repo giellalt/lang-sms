@@ -2601,32 +2601,25 @@ LEXICON NMN_JUEʹLǦǦ
 !! !!  Extra strong grade: Sg.Ill
 !! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 !! !!FORMS
-!! !!(1) Sg.Nom: jueʹlǧǧ
-!! !!(2) Pl.Nom: jueʹlj
-!! !!(3) Sg.Ill: juâlgga
-!! !!(4) Sg.Loc: jueʹljest
-!! !!(5) Sg.Com: juõʹljin ~ jueʹljin
-!! !!(6) Ess: jueʹlǧǧen
-!! !!(7) Par: jueʹlǧǧed
-!! !!(8) Pl.Acc: juõʹljid ~ jueʹljid
-!! !!(9) Der/Dim.N.Sg.Nom: juâlǥaž 
 !! ** Yaml: __N-juelggj__
 !! * There are several stem types 
-!! * jueʹlǧǧ:juâlgg
-:%^CC2CCC NMN_SG-ILL_A ;
+: E-STEM_SG-ILL ; !!(3) Sg.Ill: juâlgga
 :%^PALE%^PAL%^XYY2XY DenominalAdjsCShort ;
-
 :%^PALE%^PAL ATTESTED-NOUN-STEM ;
-:%^PALE%^PAL SG-NOM ;
-:%^PALE%^PAL%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;
-:%^PALE%^PAL%^XYY2XY%>e SG-LOC ;
-:%^VOWRaise%^PAL%^XYY2XY SG-COM_IN ;
-+Use/NG:%^PALE%^PAL%^XYY2XY SG-COM_IN ;
-:%^PALE%^PAL%>e ESS/PAR ; ! ess and prt without
+:%^PALE%^PAL E-STEM_SG-NOM ; !!(1) Sg.Nom: jueʹlǧǧ
+:%^PALE%^PAL%^XYY2XY E-STEM_SG-ABE/ACC/GEN ;
+:%^PALE%^PAL%^XYY2XY PL-NOM ; !!(2) Pl.Nom: jueʹlj
+:%^PALE%^PAL%^XYY2XY%>e SG-LOC ; !!(4) Sg.Loc: jueʹljest
+:%^VOWRaise%^PAL%^XYY2XY SG-COM_IN ; !!(5) Sg.Com: juõʹljin
++Use/NG:%^PALE%^PAL%^XYY2XY SG-COM_IN ; !!(5) Sg.Com:  jueʹljin
+:%^PALE%^PAL%>e ESS/PAR ; !!(6) Ess: jueʹlǧǧen
 
-:%^VOWRaise%^PAL%^XYY2XY PL-OBL ;
-+Use/NG:%^PALE%^PAL%^XYY2XY PL-OBL ;
-+Der/Dim:%^XYY2XY%> N_KUÂLAŽ ;
+:%^VOWRaise%^PAL%^XYY2XY E-STEM_PL-OBL ; !!(8) Pl.Acc: juõʹljid
++Use/NG:%^PALE%^PAL%^XYY2XY E-STEM_PL-OBL ; !!(8) Pl.Acc: jueʹljid
++Der/Dim:%^XYY2XY%> E-STEM_N_KUÂLAŽ ; !!(9) Der/Dim.N.Sg.Nom: juâlǥaž
+ E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) juâlgg-
+:%^PALE%^PAL E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) jueʹlj-
+
 
 LEXICON N_KUEʹHTT !!=	     * @CODE@ kueʹhtt:kuâhtt
 +N: NMN_KUEʹHTT ;
