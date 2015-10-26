@@ -282,16 +282,16 @@ LEXICON V0_VIIKKÂD !!= * @CODE@ viikkâd:viikk
 +Der/škueʹtted:%^VV2V%^KK2G»škuätt V_PUEʹTTED ;
 
 LEXICON V_RIČČÂD !!= * @CODE@ riččâd:ričč
- V_VIǮǮÂD ;
-LEXICON V_RÕVVÂD !!= * @CODE@ rõvvâd:rõvv
- V_VIǮǮÂD ;
+ V_RÕVVÂD ;
 LEXICON V_VIǮǮÂD !!= * @CODE@ viǯǯâd:viǯǯ
-+V: V0_VIǮǮÂD ;
-LEXICON IV_VIǮǮÂD !!= * @CODE@ viǯǯâd:viǯǯ
-+V+IV: V0_VIǮǮÂD ;
-LEXICON TV_VIǮǮÂD !!= * @CODE@ viǯǯâd:viǯǯ
-+V+TV: V0_VIǮǮÂD ;
-LEXICON V0_VIǮǮÂD !!= * @CODE@ viǯǯâd:viǯǯ
+ V_RÕVVÂD ;
+LEXICON V_RÕVVÂD !!= * @CODE@ rõvvâd:rõvv
++V: V0_RÕVVÂD ;
+LEXICON IV_RÕVVÂD !!= * @CODE@ rõvvâd:rõvv
++V+IV: V0_RÕVVÂD ;
+LEXICON TV_RÕVVÂD !!= * @CODE@ rõvvâd:rõvv
++V+TV: V0_RÕVVÂD ;
+LEXICON V0_RÕVVÂD !!= * @CODE@ rõvvâd:rõvv
 
 ! 1. VERBS WITH SINGLE-SYLLABLE Ind.Prs.Sg3 (2009: 354)
 ! 1.1 Inf in âd (vowel shift)
@@ -308,7 +308,7 @@ LEXICON V0_VIǮǮÂD !!= * @CODE@ viǯǯâd:viǯǯ
 !   Extra strong grade: Ind.Prs.Pl3, Ind.Prt.Pl3
 !   Strong grade: Imprt.Sg2, Pot.Sg3, Imprt.Sg3
 ! FORMS
-! (1)  Inf: viǯǯâd
+! (1)  Inf: rõvvâd
 ! (2)  Ind.Prs.Sg3: veǯǯ
 ! (3)  Ind.Prs.Pl3: veʹǯǯe
 ! (4)  Ind.Prt.Pl3: viʹǯǯe
@@ -320,11 +320,10 @@ LEXICON V0_VIǮǮÂD !!= * @CODE@ viǯǯâd:viǯǯ
 !   Cond-Pot
 ! (6)  Pot.Sg3: viiǯǯâž
 ! (7)  Imprt.Sg3: veeǯǯ
-! (8)  Imprt.13.ConNeg: viǯǯu
+! (8)  Imprt.13.ConNeg: rõvvu
 ! (9)  Ind.Imprt.Pl3: veǯǯaz
 ! (10) Allegro for incoative: viǯ»
-! * Yaml: __V-vizzad__
-! viǯǯâd:viǯǯ
+! * Yaml: __V-rovvad, V-vizzad__
 ! Extra strong grade in penultimate syllable
 : VSUF-INF_ÂD ; !1
 :%^VOWLower VSUF-IND-PRS-SG3_ÂD ; !2
@@ -2557,6 +2556,61 @@ LEXICON V0_VUEʹLǦǦED !!= * @CODE@ vueʹlǧǧed:vuâlgg
 !! (10) Allegro for incoative: vueʹlj»
 +Der/škueʹtted:%^PALE%^PAL%^XYY2XY»škuätt V_PUEʹTTED ;
 
+
+LEXICON V_VUEʹHSSED !!= * @CODE@ vueʹhssed:vuâhss
++V: V0_VUEʹHSSED ;
+LEXICON IV_VUEʹHSSED !!= * @CODE@ vueʹhssed:vuâhss
++V+IV: V0_VUEʹHSSED ;
+LEXICON TV_VUEʹHSSED !!= * @CODE@ vueʹhssed:vuâhss
++V+TV: V0_VUEʹHSSED ;
+LEXICON V0_VUEʹHSSED !!= * @CODE@ vueʹhssed:vuâhss
+
+!! 1.e.
+!! 1c
+!! * Yaml: __V-juekked__
+! FORMS
+!! XYY-HighVowel-Palatalization
+:%^PALE%^PAL VSUF-INF_ED ; !!= * @CODE@ (1) +V+Inf: vueʹhssed
+!! V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
+!! Actio, ActEss, PrsPrc
+
+!! XYY-HighVowel-No-palatalization
+: VSUF-IND-PRS-SG3_ED ; !!= * @CODE@ (2) +V+Ind+Prs+Sg3: vuâhss
+!! +V+Ind+Prs+Sg3, Ind.Prt.ConNeg, PrfPrc
+
+!! XYY-HighVowel-Palatalization
++Ind+Prs+Pl3:%^PALE%^PAL%>e K ; !!= * @CODE@ (3) +V+Ind+Prs+Pl3: vueʹhsse
+!! +V+Ind+Prs+Pl3
++Use/NG+Ind+Prs+Pl3:%^PALÄ%^PAL%>e K ; !3
+
+!! XYY-RaisedVowel-Palatalization
+:%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ; !!= * @CODE@ (4) +V+Ind+Prt+Pl3: vuõʹlǧǧe
+!! +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
+
+!! 2XY-StableV-Palatalization
+:%^PALE%^PAL%^XYY2VY VSUF-IND-PRS-CONNEG_ED ; !!= * @CODE@ (5) +V+Imprt+Sg2: vueuʹs
+!! Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
+
+!! 2XY-RaisedVowel-Palatalization
+:%^VOWRaise%^PAL%^XYY2VY%> VSUF-POTENTIAL_ED ; !!= * @CODE@  (6) +V+Pot+Sg3: !! vuõuʹsež
++Use/NG:%^PALE%^PAL%^XYY2VY%> VSUF-POTENTIAL_ED ; 
+!! Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, 
+
+!! 2XY-LoweredVowel-No-palatalization
+:%^XYY2VY%> VSUF-CONDITIONAL_ED ; !!= * @CODE@ (7) +V+Imprt+Sg3: vuâusas
+!! Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
+
+!! XYY-RaisedVowel-No-palatalization
+:%^VOWRaise VSUF-IMPRT-CONNEGII_ED ; !!= * @CODE@ (8) +V+Imprt+ConNegII: vuõhssu
+!! Imprt+ConNeg, Pass+PrfPrc
+
+!! XYY-HighVowel-No-palatalization
+: VSUF-IMPRT-PL3_ED ; !!= * @CODE@ (9) Ind.Imprt.Pl3: vuâhssaz
+!! Imprt+Pl3
+
+!! (10) Allegro for incoative: vueuʹs»
++Der/škueʹtted:%^PALE%^PAL%^XYY2VY»škuätt V_PUEʹTTED ;
+
 !! !CLASS 1 LOW VOWEL, PALATALIZATION
 !! EVEN-SYLLABLE STEMS IN -ED
 
@@ -3593,6 +3647,7 @@ LEXICON TV_TAARBŠED !!= * @CODE@ taarbšed:taarbâš
 LEXICON V0_TAARBŠED !!= * @CODE@ taarbšed:taarbâš
 
 ! No Gradation
+! similar_to: V_KÄIGGŠED
 ! ž:š
 :%^PenVow2a VSUF-VUEJTED-IND-PRS-SG3 ;	! taarbâš
 :%^VC VSUF-VUEJTED-IND-PRS-CONNEG ;        	! taarbâž
@@ -3716,6 +3771,8 @@ LEXICON VSUF-VUEJTED-ELSE
 +Der/mmuš:%>ummuš N_MAINSTUMMUŠ ;
 +Err/Orth+Der/muš:%>umuš N_MAINSTUMMUŠ ;
 +Der/škueʹtted:%>e»škuätt V_PUEʹTTED ;
++Der/âʹtted:âtt TV_SOLLÂʹTTED ;
++Der/âʹstted:âstt V_CEʹPCCED ;
 
 LEXICON V_KÄIGGŠED !!= * @CODE@ käiggšed:käiggaš
 +V: V0_KÄIGGŠED ;
