@@ -1737,16 +1737,6 @@ LEXICON V0_SÄRNNAD !!= * @CODE@ särnnad:särnn
 ! Stem is strong
 ! one vowel
 ! FORMS
-! (1)  Inf: särnnad
-! (2)  Ind.Prs.Sg3: särnn
-! (3)  Ind.Prs.Pl3: särnna
-! (4)  Ind.Prt.Pl3: sarnnu
-! (5)  Ind.Imprt.Sg2: säärn
-! (6)  Ind.Pot.Sg3: säärnež
-! (7)  Ind.Imprt.Sg3: säärnas
-! (8)  Imprt.13.ConNeg: sarnnu
-! (9) Ind.Imprt.Pl3: särnnaz
-! (10) Allegro for incoative: särnn»
 
 : VSUF-INF_AD ; !!= * @CODE@ (1)  Inf: särnnad
 !! V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Ind+Prt+ConNeg
@@ -1767,7 +1757,7 @@ LEXICON V0_SÄRNNAD !!= * @CODE@ särnnad:särnn
 !! Imprt+ConNeg, Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, Ind+Prs+Sg1, Ind+Prs+Sg2
 !! +Ger, +VAbess, +Pot, +Cond, +Imprt+Sg3
 
-:%^VOWRaise VSUF-IMPRT-CONNEGII_AD ; !!= * @CODE@ (8 sarnnu
+:%^VOWRaise VSUF-IMPRT-CONNEGII_AD ; !!= * @CODE@ (8) Imprt.13.ConNeg: sarnnu
 !! Imprt+ConNegII, Pass+PrfPrc
 
 : VSUF-IMPRT-PL3_AD ; !!= * @CODE@ (9) särnnaz
@@ -1775,6 +1765,53 @@ LEXICON V0_SÄRNNAD !!= * @CODE@ särnnad:särnn
 
 !! (10) Allegro for incoative: särn»
 +Der/škueʹtted:%^XYY2XY»škuätt V_PUEʹTTED ;
+
+LEXICON V_PÅHSSAD !!= * @CODE@ påhssad:påhss
++V: V0_PÅHSSAD ;
+LEXICON IV_PÅHSSAD !!= * @CODE@ påhssad:påhss
++V+IV: V0_PÅHSSAD ;
+LEXICON TV_PÅHSSAD !!= * @CODE@ påhssad:påhss
++V+TV: V0_PÅHSSAD ;
+LEXICON V0_PÅHSSAD !!= * @CODE@ påhssad:påhss
+
+! ** Yaml: __V-påhssad__
+! In the lexicon ''@LEXNAME@''
+! påhssad:påhss
+! 1. The Ind.Prs.Sg3 form is a single syllable
+! 1.2 The infinitive ends in ad
+! 1.2.1 Has gradation
+! 1.2.1.1 Monophthong 
+! Stem is strong
+! one vowel
+! FORMS
+
+: VSUF-INF_AD ; !!= * @CODE@ (1)  Inf: påhssad
+!! V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Ind+Prt+ConNeg
+!! Imprt+Pl1, Imprt+Pl2
+!! Actio, ActEss, PrsPrc, +Der/mõš
+
+: VSUF-IND-PRS-SG3_AD ; !!= * @CODE@ (2)  Ind.Prs.Sg3: påhss
+!! +V+Ind+Prs+Sg3
+
++Ind+Prs+Pl3:%>a K ; !!= * @CODE@ (3)  Ind.Prs.Pl3: påhssa
+!! +Ind+Prs+Pl3
+
+:%^VOWRaise VSUF-IND-PRT-PL3_AD ; !!= * @CODE@ (4) Ind.Prt.Pl3: pohssu
+!! +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
+
+
+:%^V2VV%^XYY2VY VSUF-I-POTKOND_AD ; !!= * @CODE@ (5-7) +Imprt+Sg2: pååus
+!! Imprt+ConNeg, Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, Ind+Prs+Sg1, Ind+Prs+Sg2
+!! +Ger, +VAbess, +Pot, +Cond, +Imprt+Sg3
+
+:%^VOWRaise VSUF-IMPRT-CONNEGII_AD ; !!= * @CODE@ (8) Imprt.13.ConNeg: pohssu
+!! Imprt+ConNegII, Pass+PrfPrc
+
+: VSUF-IMPRT-PL3_AD ; !!= * @CODE@ (9) påhssaz
+!! +Imprt+Pl3
+
+!! (10) Allegro for incoative: påus»
++Der/škueʹtted:%^XYY2VY»škuätt V_PUEʹTTED ;
 
 
 LEXICON V_KÄIDDAD !!= * @CODE@ käiddad:käidd
