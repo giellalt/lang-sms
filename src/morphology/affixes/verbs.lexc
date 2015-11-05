@@ -3565,7 +3565,6 @@ LEXICON TV_CEÄʹLǨǨED !!= * @CODE@ ceäʹlǩǩed:ceälkk
 LEXICON V0_CEÄʹLǨǨED !!= * @CODE@ ceäʹlǩǩed:ceälkk
 
 ! FORMS
-
 !!
 :%^PAL VSUF-INF_ED ; !!= * @CODE@ (1) +V+Inf: ceäʹlǩǩed
 !! V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
@@ -3633,18 +3632,43 @@ LEXICON V0_MEÄʹTTED !!= * @CODE@ meäʹtted:meätt
 ! (8) +V+Imprt+ConNegII: miâtˈtu
 !    Pass.PrfPrc
 ! meäʹtted:meätt
-:%^PAL VSUF-INF_ED ; !1
-: VSUF-IND-PRS-SG3_ED ; !2 meätt
-+Ind+Prs+Pl3:%^PAL%>e K ; !3
-:%^VOWRaise%^PALE%^PAL%> VSUF-IND-PRT-PL3_ED ; !4
-:%^VOWRaise%^PALE%^PAL%^XYY2XY%> VSUF-POTENTIAL_ED ; !5
-:%^XYY2XY%> VSUF-CONDITIONAL_ED ; !5 ?2 ?7
-:%^XYY2XY VSUF-IND-PRS-CONNEG_ED ;
-+Pot+Sg3:%^VOWRaise%^PALE%^PAL%^XYY2XY%>ež   K ; !6
-+Imprt+Sg3:%^XYY2XY%>as K ; !7
-: VSUF-IMPRT-CONNEGII_ED ; !8
+:%^PAL VSUF-INF_ED ; !! (1) +V+Inf: meäʹtted
+!! V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
+!! Actio, ActEss, PrsPrc
 
-:%^PAL%^XYY2XY VSUF-ALLEGRO_ED ;
+!!
+: VSUF-IND-PRS-SG3_ED ; !! (2) +V+Ind+Prs+Sg3: meätt
+!! +V+Ind+Prs+Sg3, Ind.Prt.ConNeg, PrfPrc
+
+!!
++Ind+Prs+Pl3:%^PAL%>e K ; !! (3) +V+Ind+Prs+Pl3: meäʹtˈte
+!! +V+Ind+Prs+Pl3
+
+!!
+:%^VOWRaise%^PALE%^PAL%> VSUF-IND-PRT-PL3_ED ; !! (4) +V+Ind+Prt+Pl3: mieʹtˈte
+!!  +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
+
+!!
+:%^CCC2CC VSUF-IND-PRS-CONNEG_ED ; !! (5) +V+Imprt+Sg2:?? mieʹđ
+!! Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
+
+!!
+:%^VOWRaise%^PALE%^PAL%^CCC2C%> VSUF-POTENTIAL_ED ; !! (6) +V+Pot+Sg3: ??mieʹđež
+!! Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
+
+!!
+:%^CCC2CC%> VSUF-CONDITIONAL_ED ; !! (7) +V+Imprt+Sg3: meättas
+!! Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
+
+!!
+:%^VOWRaise VSUF-IMPRT-CONNEGII_ED ; !! (8) +V+Imprt+ConNegII: miâtˈtu
+!! Imprt+ConNeg, Pass+PrfPrc
+
+!!
+: VSUF-IMPRT-PL3_ED ;  !!= * @CODE@ +V+Imprt+Pl3 meätˈtaz
+!! Imprt+Pl3
+
+:%^PAL%^CCC2CC VSUF-ALLEGRO_ED ; !! CHECK FORM
 
 LEXICON V_MÄʹHSSED !!= * @CODE@ mäʹhssed:mähss
 +V: V0_MÄʹHSSED ;
@@ -3655,36 +3679,44 @@ LEXICON TV_MÄʹHSSED !!= * @CODE@ mäʹhssed:mähss
 LEXICON V0_MÄʹHSSED !!= * @CODE@ mäʹhssed:mähss
 
 ! FORMS
-! (1) +V+Inf: mäʹhssed
-!   Ind.Prs.Pl1-Pl2, Ind.Prt.ConNeg
-!   Imprt.Pl1-Pl2-Pl3, ActEss, Actio, PrsPrc, PrfPrc
-! (2) +V+Ind+Prs+Sg3: mähss
-! (3) +V+Ind+Prs+Pl3: mäʹhsse
-! (4) +V+Ind+Prt+Pl3: maʹhsse
-!   Ind.Prt.Sg1-Sg2-4
-! (5) +V+Imprt+Sg2: maauʹs
-!   Ind.Prs.Sg1-Sg2-4-ConNeg
-!   Ind.Prt.Sg3-Pl1-Pl2
-!   Imprt.2.ConNeg
-!   VAbe, GerTemp, GerInstr
-!   Cond-Pot
-! (6) +V+Pot+Sg3: maauʹsež
-! (7) +V+Imprt+Sg3: määusas
-! (8) +V+Imprt+ConNegII: mahssu
-!    Pass.PrfPrc
-! mäʹhssed:mähss
-:%^PAL VSUF-INF_ED ; !1
-: VSUF-IND-PRS-SG3_ED ; !2 mähss
-+Ind+Prs+Pl3:%^PAL%>e K ; !3
-:%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ; !4
-:%^VOWRaise%^PAL%^XYY2VY%> VSUF-POTENTIAL_ED ; !5
-:%^XYY2VY%> VSUF-CONDITIONAL_ED ; !5 ?2 ?7
-:%^XYY2VY VSUF-IND-PRS-CONNEG_ED ;
-+Pot+Sg3:%^VOWRaise%^PAL%^XYY2VY%>ež   K ; !6
-+Imprt+Sg3:%^XYY2VY%>as K ; !7
-: VSUF-IMPRT-CONNEGII_ED ; !8
 
-!! (10)
+:%^PAL VSUF-INF_ED ; !! (1) +V+Inf: mäʹhssed
+!! V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
+!! Actio, ActEss, PrsPrc
+
+!!
+: VSUF-IND-PRS-SG3_ED ; !! (2) +V+Ind+Prs+Sg3: mähss
+!! +V+Ind+Prs+Sg3, Ind.Prt.ConNeg, PrfPrc
+
+!!
++Ind+Prs+Pl3:%^PAL%>e K ; !! (3) +V+Ind+Prs+Pl3: mäʹhsse
+!! +V+Ind+Prs+Pl3
+
+!!
+:%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ; !! (4) +V+Ind+Prt+Pl3: maʹhsse
+!!  +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
+
+!!
+:%^V2VV%^XYY2VY VSUF-IND-PRS-CONNEG_ED ; !! (5) +V+Imprt+Sg2: maauʹs
+!! Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
+
+!!
+:%^V2VV%^VOWRaise%^PAL%^XYY2VY%> VSUF-POTENTIAL_ED ; !! (6) +V+Pot+Sg3: maauʹsež
+!! Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
+
+!!
+:%^V2VV%^XYY2VY%> VSUF-CONDITIONAL_ED ; !! (7) +V+Imprt+Sg3: määusas
+!! Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
+
+!!
+:%^VOWRaise VSUF-IMPRT-CONNEGII_ED ; !!= * @CODE@ (8) +V+Imprt+ConNegII: mahssu
+!! Imprt+ConNeg, Pass+PrfPrc
+
+!!
+: VSUF-IMPRT-PL3_ED ;  !!= * @CODE@ (9) +V+Imprt+Pl3 mähssaz
+!! Imprt+Pl3
+
+!! (10) mäuʹs
 :%^PAL%^XYY2VY VSUF-ALLEGRO_ED ;
 
 !! DERIVED VERBS WITH PENULTIMATE VOWEL LOSS AND CHANGE
