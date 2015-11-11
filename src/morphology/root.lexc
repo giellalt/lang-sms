@@ -513,6 +513,7 @@ h3 !!= * @CODE@
 
 !! Compounding
 +Cmp
++CmpNP/First
 
 !! !!Flag diacritics
 !! We have manually optimised the structure of our lexicon using following
@@ -547,6 +548,7 @@ h3 !!= * @CODE@
 
 
 LEXICON Root 	  !!= * @CODE@
+ Abbreviation ;      !!= * @CODE@ abbreviations
  AdjectiveRoot ;  !!= * @CODE@
  Adposition ;	  !!= * @CODE@
  NounRoot ;	  !!= * @CODE@ 
@@ -564,8 +566,9 @@ LEXICON Root 	  !!= * @CODE@
 
 !! This generates from merged materials
  A_sms2x ;	      !!= * @CODE@ This generates from merged materials
- ABBR_sms2x ;	      !!= * @CODE@ abbreviations
- Adp_sms2x ;	      !!= * @CODE@ adverbs
+ TRAB_sms2x ;	      !!= * @CODE@ transitive abbreviations
+ TRNUMAB_sms2x ;      !!= * @CODE@ transitive abbreviations with numerals
+ Adp_sms2x ;	      !!= * @CODE@ adpositions
  Adv_sms2x ;	      !!= * @CODE@ adverbs
  CC_sms2x ;	      !!= * @CODE@ conjunctions
  CS_sms2x ;	      !!= * @CODE@ subjunctions
@@ -599,47 +602,6 @@ N_NEWWORDS ;
 LEXICON WORK_
 !! Single form lacking POS designation
 +WORK: # ;
-
-!! ABBREVIATIONS 
-!! these still need development 2015-09-11
-LEXICON AB-DOT_
-+WORK+ABBR:%.%> # ;
-
-LEXICON AB-DOT-A_
-+A+ABBR:%.%> # ;
-LEXICON AB-DOT-ADV_
-+Adv+ABBR:%.%> # ;
-LEXICON AB-DOT-N_
-+N+ABBR:%.%> # ;
-LEXICON AB-DOT-NUM_
-+Num+ABBR:%.%> # ;
-LEXICON AB-DOT-PRON_
-+Pron+ABBR:%.%> # ;
-LEXICON AB-DOT-V_
-+V+ABBR:%.%> # ;
-LEXICON AB-DOT-V-TV-IMPRT-SG2_
-+V+ABBR+TV+Imprt+Sg2:%.%> # ;
-LEXICON AB-DOT-V-TV-IND-PRS-3_
-+V+ABBR+TV+Ind+Prs+Sg3:%.%> # ;
-+V+ABBR+TV+Ind+Prs+Pl3:%.%> # ;
-LEXICON AB-DOT-V-IV-IND-PRT-SG3_
-+V+ABBR+IV+Ind+Prt+Sg3:%.%> # ;
-
-LEXICON AB-NO-DOT_
-+WORK+ABBR:%> # ;
-LEXICON AB-NO-DOT-A_
-+A+ABBR:%> # ;
-LEXICON AB-NO-DOT-ADV_
-+Adv+ABBR:%> # ;
-LEXICON AB-NO-DOT-N_
-+N+ABBR:%> # ;
-LEXICON AB-NO-DOT-PRON_
-+Pron+ABBR:%> # ;
-LEXICON AB-NO-DOT-V_
-+V+ABBR:%> # ;
-
-LEXICON ab-dot-IVprfprc   !!= * __@CODE@__
-+V+ABBR+IV+PrfPrc:%.%> # ; ! Period.
 
 
 
