@@ -1,0 +1,543 @@
+! Divvun & Giellatekno - open source grammars for Sámi and other languages
+! Copyright © 2000-2010 The University of Tromsø & the Norwegian Sámi Parliament
+! http://giellatekno.uit.no & http://divvun.no
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version. The GNU General Public License
+! is found at http://www.gnu.org/licenses/gpl.html. It is
+! also available in the file $GTHOME/LICENSE.txt.
+!
+! Other licensing options are available upon request, please contact
+! giellatekno@hum.uit.no or feedback@divvun.no
+
+! ============================= !
+!! !!!File containing abbreviations 
+! ============================= !
+
+!! !!Lexica for adding tags and periods
+! ----------------------------------
+
+!! Splitting in 4 + 1  groups, because of the preprocessor
+!  - - - - - - - - - - - - - - - - - - - - - - - - -
+
+LEXICON Abbreviation   !!= * __@CODE@__
+ITRAB ;	   !!= # The @CODE@ lexicon (intransitive abbrs) Ltd.
+TRNUMAB ;  !!= # The @CODE@ lexicon (abbrs trans wrt. numerals)
+TRAB ;	   !!= # The @CODE@ lexicon (transitive abbrs) tri. 
+!NOAB ;	   !!= # The @CODE@ lexicon (not really abbrs)
+!NUMNOAB ;  !!= # The @CODE@ lexicon (not behaving as abbr before num)
+SYMBOLS ;  !!= # The @CODE@ lexicon (misc. symbols)
+
+!! !!The sublexica
+
+!! !Dividing between abbreviations with and witout final period
+
+!! ABBREVIATIONS 
+!! these still need development 2015-09-11
+LEXICON AB-DOT_
++WORK+ABBR:%.%> # ;
+
+LEXICON AB-DOT-A_
++A+ABBR:%.%> # ;
+LEXICON AB-DOT-ADV_
++Adv+ABBR:%.%> # ;
+LEXICON AB-DOT-N_
++N+ABBR:%.%> # ;
+LEXICON AB-DOT-NUM_
++Num+ABBR:%.%> # ;
+LEXICON AB-DOT-PRON_
++Pron+ABBR:%.%> # ;
+LEXICON AB-DOT-V_
++V+ABBR:%.%> # ;
+LEXICON AB-DOT-V-TV-IMPRT-SG2_
++V+ABBR+TV+Imprt+Sg2:%.%> # ;
+LEXICON AB-DOT-V-TV-IND-PRS-3_
++V+ABBR+TV+Ind+Prs+Sg3:%.%> # ;
++V+ABBR+TV+Ind+Prs+Pl3:%.%> # ;
+LEXICON AB-DOT-V-IV-IND-PRT-SG3_
++V+ABBR+IV+Ind+Prt+Sg3:%.%> # ;
+
+LEXICON AB-NO-DOT_
++WORK+ABBR:%> # ;
+LEXICON AB-NO-DOT-A_
++A+ABBR:%> # ;
+LEXICON AB-NO-DOT-ADV_
++Adv+ABBR:%> # ;
+LEXICON AB-NO-DOT-N_
++N+ABBR:%> # ;
+LEXICON AB-NO-DOT-PRON_
++Pron+ABBR:%> # ;
+LEXICON AB-NO-DOT-V_
++V+ABBR:%> # ;
+
+LEXICON ab-dot-IVprfprc   !!= * __@CODE@__
++V+ABBR+IV+PrfPrc:%.%> # ; ! Period.
+
+!!
+LEXICON ab-dot-noun-adj   !!= * __@CODE@__
+ab-dot-noun ;
+ab-dot-adj ;
+
+LEXICON ab-noun   !!= * __@CODE@__
+ab-nodot-noun ;
+ab-dot-noun ;
+
+LEXICON ab-adj   !!= * __@CODE@__
+ab-nodot-adj ;
+ab-dot-adj ;
+
+LEXICON ab-adv   !!= * __@CODE@__
+ab-nodot-adv ;
+ab-dot-adv ;
+
+LEXICON ab-num   !!= * __@CODE@__
+ab-nodot-num ;
+ab-dot-num;
+
+!! !The lexicons that add tags
+
+
+
+LEXICON ab-nodot-noun   !!= * __@CODE@__  The bulk
+       +N+ABBR+Attr:      # ; ! no period, that is.
+        +N+ABBR+Nom:      # ; ! no period, that is.
+        +N+ABBR+Acc:      # ; ! no period, that is.
+        +N+ABBR+Gen:      # ; ! no period, that is.
+        +N+ABBR+Ill:%>%:i   # ; ! no period, that is.
+        +N+ABBR+Loc:%>%:st   # ; ! no period, that is.
+        +N+ABBR+Com:%>%:in  # ; ! no period, that is.
+        +N+ABBR+Ess:%>%:n   # ; ! no period, that is.
++N+ABBR+Ill+Err/Orth:%>%:ii  # ; ! no period, that is. !
++N+ABBR+Loc+Err/Orth:%>%:as  # ; ! no period, that is. !
++N+ABBR+Com+Err/Orth:%>%:ain # ;! no period, that is. !
++N+ABBR+Com+Err/Orth:%>%:iin # ;! no period, that is. !
++N+ABBR+Ess+Err/Orth:%>%:an  # ; ! no period, that is. !
+!+N+ABBR: RHyph ;
+
+LEXICON ab-nodot-adj   !!= * __@CODE@__
+!+ABBR:%> # ; ! no period, that is.
++A+ABBR+Attr:%> # ; ! no period, that is.
++A+ABBR+Nom:%> # ; ! no period, that is.
++A+ABBR+Acc:%> # ; ! no period, that is.
++A+ABBR+Gen:%> # ; ! no period, that is.
+!+A+ABBR: RHyph ;
+
+LEXICON ab-nodot-adv   !!= * __@CODE@__
+ +Adv+ABBR:%> # ; ! no period, that is.
+ +Adv+ABBR+Attr:%> # ; ! no period, that is.
+ +Adv+ABBR+Nom:%> # ; ! no period, that is.
+ +Adv+ABBR+Acc:%> # ; ! no period, that is.
+ +Adv+ABBR+Gen:%> # ; ! no period, that is.
+! +Adv+ABBR: RHyph ;
+
+LEXICON ab-nodot-num   !!= * __@CODE@__
+!+ABBR:%> # ; ! no period, that is.
++Num+ABBR+Nom:%> # ; ! no period, that is.
++Num+ABBR+Acc:%> # ; ! no period, that is.
++Num+ABBR+Gen:%> # ; ! no period, that is.
+!+Num+ABBR: RHyph ;
+
+
+LEXICON ab-dot-noun   !!= * __@CODE@__  This is the lexicon for abbrs that must have a period.
+       +N+ABBR+Attr:%.%>      # ;
+        +N+ABBR+Nom:%.%>      # ;
+        +N+ABBR+Acc:%.%>      # ;
+        +N+ABBR+Gen:%.%>      # ;
+!        +N+ABBR+Ill:%.%>%:i   # ;
+!        +N+ABBR+Loc:%.%>%:s   # ;
+!        +N+ABBR+Com:%.%>%:in  # ;
+!        +N+ABBR+Ess:%.%>%:n   # ;
+!+N+ABBR+Ill+Err/Orth:%.%>%:ii  # ; !
+!+N+ABBR+Loc+Err/Orth:%.%>%:as  # ; !
+!+N+ABBR+Com+Err/Orth:%.%>%:ain # ; !
+!+N+ABBR+Com+Err/Orth:%.%>%:iin # ; !
+!+N+ABBR+Ess+Err/Orth:%.%>%:an  # ; !
+!+N+ABBR:%. RHyph ;
+
+
+LEXICON ab-dot-adj   !!= * __@CODE@__  This is the lexicon for abbrs that must have a period.
++A+ABBR+Attr:%.%> # ;
++A+ABBR+Nom:%.%> # ;
++A+ABBR+Acc:%.%> # ;
++A+ABBR+Gen:%.%> # ;
+
+LEXICON ab-dot-adv   !!= * __@CODE@__  This is the lexicon for abbrs that must have a period.
++Adv+ABBR:%.%> # ; ! Adv without case.
+
+LEXICON ab-dot-num   !!= * __@CODE@__  This is the lexicon for abbrs that must have a period.
+! +ABBR:%.%> # ;
++Num+ABBR+Nom:%.%> # ;
++Num+ABBR+Acc:%.%> # ;
++Num+ABBR+Gen:%.%> # ;
+
+LEXICON ab-dot-cc   !!= * __@CODE@__
++CC+ABBR:%.%> # ;
+
+
+! Then, as an afterthought, come our two verbs, gč. and vrd.
+
+LEXICON ab-verb   !!= * __@CODE@__  A lexicon for "gč." and perhaps also other abbreviated verbs.
+ab-dot-verb ;
+ab-nodot-verb ;
+ab-dot-IVprfprc ;
+
+LEXICON ab-dot-verb   !!= * __@CODE@__
++V+ABBR+TV+Imprt:%.%> # ; ! Period.
+
+LEXICON ab-nodot-verb   !!= * __@CODE@__
++V+ABBR+TV+Imprt:%> # ; ! No period.
+! # ;
+
+
+
+LEXICON SYMBOLconnector   !!= * __@CODE@__
+  +Attr+Use/Circ:   K ; ! §
+  +Sg+Nom+Use/Circ:   K ; ! §
+!          +Sg+Gen:   K ; ! §
+!          +Sg+Acc:   K ; ! §
+ +Err/Orth+Use/Circ:   SYMBOLsuff ; ! §as
+         +Use/Circ:%: SYMBOLsuff ; ! §:s
+ +Err/Orth+Use/Circ:%- SYMBOLsuff ; ! §-as ! Perhaps.
+ +Err/Orth+Use/Circ:%' SYMBOLsuff ; ! §'as ! Perhaps.
+
+LEXICON SYMBOLsuff   !!= * __@CODE@__
+!                       K ; ! § 14 (no case on the bare §). Oh, yes. Case.
+         +Sg+Gen:       K ;	! §    (case suffix on the rest, in case of explicit
+         +Sg+Acc:       K ;	!       suffix)
+ +Sg+Gen+Err/Orth:a      K ;	! §:a  (case suffix on the rest, in case of explicit
+ +Sg+Acc+Err/Orth:a      K ;	!       suffix)
+ +Sg+Ill+Err/Orth:ij     K ;
+         +Sg+Ill:i      K ;
+         +Sg+Loc:s      K ;  ! §:s
+ +Sg+Loc+Err/Orth:as     K ;  ! §:as
+         +Sg+Com:in     K ;
+            +Ess:n      K ;
+    +Ess+Err/Orth:an     K ;
+         +Pl+Nom:t      K ;
+         +Pl+Gen:id     K ;
+         +Pl+Acc:id     K ;
+         +Pl+Ill:ide    K ;
+         +Pl+Loc:in     K ;
+         +Pl+Com:igujn  K ;
+ +Pl+Nom+Err/Orth:at     K ;
+ +Pl+Gen+Err/Orth:ajd    K ;
+ +Pl+Acc+Err/Orth:ajd    K ;
+ +Pl+Ill+Err/Orth:ajde   K ;
+ +Pl+Loc+Err/Orth:ajn    K ;
+ +Pl+Com+Err/Orth:ajgujn K ;
+
+
+
+!! !!The abbreviation lexicon itself
+! -------------------------------
+
+! Miscellaneous symbols, abbreviation symbols
+! -------------------------------------------
+
+LEXICON SYMBOLS   !!= * __@CODE@__ is for iscellaneous abbr symbols
+ §+N+ABBR+Use/Circ:§  SYMBOLconnector ; ! §:s
+§§+N+ABBR+Use/Circ:§§ SYMBOLconnector ; !§§:ain
+ $+N+ABBR+Use/Circ:$  SYMBOLconnector ; ! $:s
+ €+N+ABBR+Use/Circ:€  SYMBOLconnector ; ! €:s
+ £+N+ABBR+Use/Circ:£  SYMBOLconnector ; ! £:s
+ ®+N+ABBR:® # ;
+ ©+N+ABBR:© # ;
+
+
+! =============================================== !
+! Intransitive abbreviations 
+! =============================================== !
+
+LEXICON ITRAB   !!= * __@CODE@__ are intransitive abbreviations, A.S. etc.
+
+! List the beginning of the alphabet, !
+! in order to account for numbering !
+! of paragraphs etc. !
+
+1p+Use/Circ:1p ab-noun; ! !
+2p+Use/Circ:2p ab-noun; ! !
+3p+Use/Circ:3p ab-noun; ! !
+
+ ITRAB_sms2x ;        !!= * @CODE@ intransitive abbreviations
+!! These are measurements postposed after numerals
+ TRNUMABPO_sms2x ;        !!= * @CODE@ postpositional transitive abbreviations with numerals preceding
+ TRABPO_sms2x ;        !!= * @CODE@ postpositional transitive abbreviations
+
+iii AB-NO-DOT-N_ ;
+vii AB-NO-DOT-N_ ;
+viii AB-NO-DOT-N_ ;
+ix AB-NO-DOT-N_ ;
+xi AB-NO-DOT-N_ ;
+xii AB-NO-DOT-N_ ;
+xiii AB-NO-DOT-N_ ;
+xiv AB-NO-DOT-N_ ;
+xix AB-NO-DOT-N_ ;
+xv AB-NO-DOT-N_ ;
+xvi AB-NO-DOT-N_ ;
+xvii AB-NO-DOT-N_ ;
+xviii AB-NO-DOT-N_ ;
+xxi AB-NO-DOT-N_ ;
+xxii AB-NO-DOT-N_ ;
+xxiii AB-NO-DOT-N_ ;
+xxiv AB-NO-DOT-N_ ;
+xxix AB-NO-DOT-N_ ;
+xxv AB-NO-DOT-N_ ;
+xxvi AB-NO-DOT-N_ ;
+xxvii AB-NO-DOT-N_ ;
+xxviii AB-NO-DOT-N_ ;
+
+
+
+! ============================================================ !
+! Abbreviations that are not treated as abbreviations !
+! at the end of the sentence !
+! ============================================================ !
+
+LEXICON NOAB   !!= * __@CODE@__ du, gen, jur
+
+!! This class contains homonyms, which are both intransitive
+!! abbreviations and normal words. The abbreviation usage
+!! is less common and thus only the occurences in the middle of
+!! the sentnece (when next word has small letters) can be 
+!! considered as true cases.
+
+du ab-dot-noun ; !dualis
+gen ab-dot-noun ; ! genitiivi
+jur ab-dot-adj ; !juridihkalaš !
+
+
+
+! ============================================================ !
+! Abreviations who are transitive in front of numerals 
+! ============================================================ !
+
+LEXICON TRNUMAB   !!= * __@CODE@__ contains abbreviations who are transitive in front of numerals, i.e. preposed
+
+!! For abbrs for which numerals are complements, but other
+!! words not necessarily are. This group treats arabic numerals as
+!! if it were transitive but letters as if it were intransitive.
+
+! TODO: Bug the fact that these abbrs do not distinguish between
+! cap and small letters, whereast he ITRAB ones do.
+
+ TRNUMAB_sms2x ; !!= * __@CODE@__ contains abbreviations in xml preposed
+! "Bohten geassemánu 3. b. Lean velá dáppe." for sms is in TRNUMABPO_sms2x
+
+
+! =============================================== !
+! Transitive abbreviations !
+! =============================================== !
+
+LEXICON TRAB   !!= * __@CODE@__ contains preposed transitive abbreviations 
+
+!! This lexicon is for abbrs that always have a constituent following it.
+
+! from here pointing to two types of TRAB:
+! TRAB heads (gč. ...) here called h-ab and h-ab-dot
+! TRAB attributes (St. ...) here called ab and ab-dot or at-ab?
+
+ TRAB_sms2x ; !!= * __@CODE@__ contains preposed transitive abbreviations xml
+
+! Here comes the initials
+! They are found in names etc.
+
+! 13.11.11: changed
+! A+Use/SpellNoSugg:A ab-nodot-noun; !
+! to
+! A+Use/SpellNoSugg:A ab-dot-noun; !
+! in order to harmonise with nob.
+
+! A.-xyz   LOWER-CASE-DOUBLETS
+A+Use/SpellNoSugg:A AB-DOT-N_;
+B+Use/SpellNoSugg:B AB-DOT-N_;
+C+Use/SpellNoSugg:C AB-DOT-N_;
+D+Use/SpellNoSugg:D AB-DOT-N_;
+E+Use/SpellNoSugg:E AB-DOT-N_;
+F+Use/SpellNoSugg:F AB-DOT-N_;
+G+Use/SpellNoSugg:G AB-DOT-N_;
+H+Use/SpellNoSugg:H AB-DOT-N_;
+I+Use/SpellNoSugg:I AB-DOT-N_;
+J+Use/SpellNoSugg:J AB-DOT-N_;
+K+Use/SpellNoSugg:K AB-DOT-N_;
+L+Use/SpellNoSugg:L AB-DOT-N_;
+M+Use/SpellNoSugg:M AB-DOT-N_;
+N+Use/SpellNoSugg:N AB-DOT-N_;
+O+Use/SpellNoSugg:O AB-DOT-N_;
+P+Use/SpellNoSugg:P AB-DOT-N_;
+Q+Use/SpellNoSugg:Q AB-DOT-N_;
+R+Use/SpellNoSugg:R AB-DOT-N_;
+S+Use/SpellNoSugg:S AB-DOT-N_;
+T+Use/SpellNoSugg:T AB-DOT-N_;
+U+Use/SpellNoSugg:U AB-DOT-N_;
+V+Use/SpellNoSugg:V AB-DOT-N_;
+W+Use/SpellNoSugg:W AB-DOT-N_;
+X+Use/SpellNoSugg:X AB-DOT-N_;
+Y+Use/SpellNoSugg:Y AB-DOT-N_;
+Z+Use/SpellNoSugg:Z AB-DOT-N_;
+Æ+Use/SpellNoSugg:Æ AB-DOT-N_;
+Ø+Use/SpellNoSugg:Ø AB-DOT-N_;
+Å+Use/SpellNoSugg:Å AB-DOT-N_;
+Ä+Use/SpellNoSugg:Ä AB-DOT-N_;
+Ö+Use/SpellNoSugg:Ö AB-DOT-N_;
+Č+Use/SpellNoSugg:Č AB-DOT-N_;
+Š+Use/SpellNoSugg:Š AB-DOT-N_;
+Ž+Use/SpellNoSugg:Ž AB-DOT-N_;
+Ŧ+Use/SpellNoSugg:Ŧ AB-DOT-N_;
+Đ+Use/SpellNoSugg:Đ AB-DOT-N_;
+Ŋ+Use/SpellNoSugg:Ŋ AB-DOT-N_;
+Á+Use/SpellNoSugg:Á AB-DOT-N_;
+Ǩ+Use/SpellNoSugg:Ǩ AB-DOT-N_;
+Ǧ+Use/SpellNoSugg:Ǧ AB-DOT-N_;
+Ǥ+Use/SpellNoSugg:Ǥ AB-DOT-N_;
+Ʒ+Use/SpellNoSugg:Ʒ AB-DOT-N_;
+Ǯ+Use/SpellNoSugg:Ǯ AB-DOT-N_;
+
+! A-klasse  LOWER-CASE-DOUBLETS
+!A+Use/SpellNoSugg+CmpNP/First:A AB-NO-DOT-N_;
+!B+Use/SpellNoSugg+CmpNP/First:B AB-NO-DOT-N_;
+!C+Use/SpellNoSugg+CmpNP/First:C AB-NO-DOT-N_;
+!D+Use/SpellNoSugg+CmpNP/First:D AB-NO-DOT-N_;
+!E+Use/SpellNoSugg+CmpNP/First:E AB-NO-DOT-N_;
+!F+Use/SpellNoSugg+CmpNP/First:F AB-NO-DOT-N_;
+!G+Use/SpellNoSugg+CmpNP/First:G AB-NO-DOT-N_;
+!H+Use/SpellNoSugg+CmpNP/First:H AB-NO-DOT-N_;
+!I+Use/SpellNoSugg+CmpNP/First:I AB-NO-DOT-N_;
+!J+Use/SpellNoSugg+CmpNP/First:J AB-NO-DOT-N_;
+!K+Use/SpellNoSugg+CmpNP/First:K AB-NO-DOT-N_;
+!L+Use/SpellNoSugg+CmpNP/First:L AB-NO-DOT-N_;
+!M+Use/SpellNoSugg+CmpNP/First:M AB-NO-DOT-N_;
+!N+Use/SpellNoSugg+CmpNP/First:N AB-NO-DOT-N_;
+!O+Use/SpellNoSugg+CmpNP/First:O AB-NO-DOT-N_;
+!P+Use/SpellNoSugg+CmpNP/First:P AB-NO-DOT-N_;
+!Q+Use/SpellNoSugg+CmpNP/First:Q AB-NO-DOT-N_;
+!R+Use/SpellNoSugg+CmpNP/First:R AB-NO-DOT-N_;
+!S+Use/SpellNoSugg+CmpNP/First:S AB-NO-DOT-N_;
+!T+Use/SpellNoSugg+CmpNP/First:T AB-NO-DOT-N_;
+!U+Use/SpellNoSugg+CmpNP/First:U AB-NO-DOT-N_;
+!V+Use/SpellNoSugg+CmpNP/First:V AB-NO-DOT-N_;
+!W+Use/SpellNoSugg+CmpNP/First:W AB-NO-DOT-N_;
+!X+Use/SpellNoSugg+CmpNP/First:X AB-NO-DOT-N_;
+!Y+Use/SpellNoSugg+CmpNP/First:Y AB-NO-DOT-N_;
+!Z+Use/SpellNoSugg+CmpNP/First:Z AB-NO-DOT-N_;
+!Æ+Use/SpellNoSugg+CmpNP/First:Æ AB-NO-DOT-N_;
+!Ø+Use/SpellNoSugg+CmpNP/First:Ø AB-NO-DOT-N_;
+!Å+Use/SpellNoSugg+CmpNP/First:Å AB-NO-DOT-N_;
+!Ä+Use/SpellNoSugg+CmpNP/First:Ä AB-NO-DOT-N_;
+!Ö+Use/SpellNoSugg+CmpNP/First:Ö AB-NO-DOT-N_;
+!Č+Use/SpellNoSugg+CmpNP/First:Č AB-NO-DOT-N_;
+!Š+Use/SpellNoSugg+CmpNP/First:Š AB-NO-DOT-N_;
+!Ž+Use/SpellNoSugg+CmpNP/First:Ž AB-NO-DOT-N_;
+!Ŧ+Use/SpellNoSugg+CmpNP/First:Ŧ AB-NO-DOT-N_;
+!Đ+Use/SpellNoSugg+CmpNP/First:Đ AB-NO-DOT-N_;
+!Ŋ+Use/SpellNoSugg+CmpNP/First:Ŋ AB-NO-DOT-N_;
+!Á+Use/SpellNoSugg+CmpNP/First:Á AB-NO-DOT-N_;
+!Ǩ+Use/SpellNoSugg+CmpNP/First:Ǩ AB-NO-DOT-N_;
+!Ǧ+Use/SpellNoSugg+CmpNP/First:Ǧ AB-NO-DOT-N_;
+!Ǥ+Use/SpellNoSugg+CmpNP/First:Ǥ AB-NO-DOT-N_;
+!Ʒ+Use/SpellNoSugg+CmpNP/First:Ʒ AB-NO-DOT-N_;
+!Ǯ+Use/SpellNoSugg+CmpNP/First:Ǯ AB-NO-DOT-N_;
+
+! a-klasse
+ž+Use/SpellNoSugg+CmpNP/First:ž AB-NO-DOT-N_;
+á+Use/SpellNoSugg+CmpNP/First:á AB-NO-DOT-N_;
+ŋ+Use/SpellNoSugg+CmpNP/First:ŋ AB-NO-DOT-N_;
+đ+Use/SpellNoSugg+CmpNP/First:đ AB-NO-DOT-N_;
+ŧ+Use/SpellNoSugg+CmpNP/First:ŧ AB-NO-DOT-N_;
+a+Use/SpellNoSugg+CmpNP/First:a AB-NO-DOT-N_; !
+c+Use/SpellNoSugg+CmpNP/First:c AB-NO-DOT-N_; !
+d+Use/SpellNoSugg+CmpNP/First:d AB-NO-DOT-N_; !
+e+Use/SpellNoSugg+CmpNP/First:e AB-NO-DOT-N_; !
+f+Use/SpellNoSugg+CmpNP/First:f AB-NO-DOT-N_; !
+g+Use/SpellNoSugg+CmpNP/First:g AB-NO-DOT-N_; !
+h+Use/SpellNoSugg+CmpNP/First:h AB-NO-DOT-N_; !
+i+Use/SpellNoSugg+CmpNP/First:i AB-NO-DOT-N_; !
+j+Use/SpellNoSugg+CmpNP/First:j AB-NO-DOT-N_; !
+k+Use/SpellNoSugg+CmpNP/First:k AB-NO-DOT-N_; !
+l+Use/SpellNoSugg+CmpNP/First:l AB-NO-DOT-N_; !
+m+Use/SpellNoSugg+CmpNP/First:m AB-NO-DOT-N_; !
+n+Use/SpellNoSugg+CmpNP/First:n AB-NO-DOT-N_; !
+o+Use/SpellNoSugg+CmpNP/First:o AB-NO-DOT-N_; !mysko
+p+Use/SpellNoSugg+CmpNP/First:p AB-NO-DOT-N_; !
+q+Use/SpellNoSugg+CmpNP/First:q AB-NO-DOT-N_; !
+r+Use/SpellNoSugg+CmpNP/First:r AB-NO-DOT-N_; !
+s+Use/SpellNoSugg+CmpNP/First:s AB-NO-DOT-N_; !
+t+Use/SpellNoSugg+CmpNP/First:t AB-NO-DOT-N_; !
+u+Use/SpellNoSugg+CmpNP/First:u AB-NO-DOT-N_; !
+v+Use/SpellNoSugg+CmpNP/First:v AB-NO-DOT-N_; !
+w+Use/SpellNoSugg+CmpNP/First:w AB-NO-DOT-N_; !
+x+Use/SpellNoSugg+CmpNP/First:x AB-NO-DOT-N_; !
+y+Use/SpellNoSugg+CmpNP/First:y AB-NO-DOT-N_; !
+z+Use/SpellNoSugg+CmpNP/First:z AB-NO-DOT-N_; !
+æ+Use/SpellNoSugg+CmpNP/First:æ AB-NO-DOT-N_; !
+ø+Use/SpellNoSugg+CmpNP/First:ø AB-NO-DOT-N_; !
+å+Use/SpellNoSugg+CmpNP/First:å AB-NO-DOT-N_; !
+ä+Use/SpellNoSugg+CmpNP/First:ä AB-NO-DOT-N_; !
+ö+Use/SpellNoSugg+CmpNP/First:ö AB-NO-DOT-N_; !
+č+Use/SpellNoSugg+CmpNP/First:č AB-NO-DOT-N_; !
+š+Use/SpellNoSugg+CmpNP/First:š AB-NO-DOT-N_; !
+ǩ+Use/SpellNoSugg+CmpNP/First:ǩ AB-NO-DOT-N_;
+ǧ+Use/SpellNoSugg+CmpNP/First:ǧ AB-NO-DOT-N_;
+ǥ+Use/SpellNoSugg+CmpNP/First:ǥ AB-NO-DOT-N_;
+ʒ+Use/SpellNoSugg+CmpNP/First:ʒ AB-NO-DOT-N_;
+ǯ+Use/SpellNoSugg+CmpNP/First:ǯ AB-NO-DOT-N_;
+
+! a.-xyz
+ž+Use/SpellNoSugg:ž AB-DOT-N_;
+á+Use/SpellNoSugg:á AB-DOT-N_;
+ŋ+Use/SpellNoSugg:ŋ AB-DOT-N_;
+đ+Use/SpellNoSugg:đ AB-DOT-N_;
+ŧ+Use/SpellNoSugg:ŧ AB-DOT-N_;
+a+Use/SpellNoSugg:a AB-DOT-N_; !
+c+Use/SpellNoSugg:c AB-DOT-N_; !
+d+Use/SpellNoSugg:d AB-DOT-N_; !
+e+Use/SpellNoSugg:e AB-DOT-N_; !
+f+Use/SpellNoSugg:f AB-DOT-N_; !
+g+Use/SpellNoSugg:g AB-DOT-N_; !
+h+Use/SpellNoSugg:h AB-DOT-N_; !
+i+Use/SpellNoSugg:i AB-DOT-N_; !
+j+Use/SpellNoSugg:j AB-DOT-N_; !
+k+Use/SpellNoSugg:k AB-DOT-N_; !
+l+Use/SpellNoSugg:l AB-DOT-N_; !
+m+Use/SpellNoSugg:m AB-DOT-N_; !
+n+Use/SpellNoSugg:n AB-DOT-N_; !
+o+Use/SpellNoSugg:o AB-DOT-N_; !
+p+Use/SpellNoSugg:p AB-DOT-N_; !
+q+Use/SpellNoSugg:q AB-DOT-N_; !
+r+Use/SpellNoSugg:r AB-DOT-N_; !
+s+Use/SpellNoSugg:s AB-DOT-N_; !
+t+Use/SpellNoSugg:t AB-DOT-N_; !
+u+Use/SpellNoSugg:u AB-DOT-N_; !
+v+Use/SpellNoSugg:v AB-DOT-N_; !
+w+Use/SpellNoSugg:w AB-DOT-N_; !
+x+Use/SpellNoSugg:x AB-DOT-N_; !
+y+Use/SpellNoSugg:y AB-DOT-N_; !
+z+Use/SpellNoSugg:z AB-DOT-N_; !
+æ+Use/SpellNoSugg:æ AB-DOT-N_; !
+ø+Use/SpellNoSugg:ø AB-DOT-N_; !
+å+Use/SpellNoSugg:å AB-DOT-N_; !
+ä+Use/SpellNoSugg:ä AB-DOT-N_; !
+ö+Use/SpellNoSugg:ö AB-DOT-N_; !
+č+Use/SpellNoSugg:č AB-DOT-N_; !
+š+Use/SpellNoSugg:š AB-DOT-N_; !
+ǩ+Use/SpellNoSugg:ǩ AB-DOT-N_;
+ǧ+Use/SpellNoSugg:ǧ AB-DOT-N_;
+ǥ+Use/SpellNoSugg:ǥ AB-DOT-N_;
+ʒ+Use/SpellNoSugg:ʒ AB-DOT-N_;
+ǯ+Use/SpellNoSugg:ǯ AB-DOT-N_;
+
+
+
+
+LEXICON NUMNOAB   !!= * __@CODE@__ su, dii
+
+!! This class contains homonyms, which are both abbrs for 
+!! which numerals are complements and normal words. The abbreviation usage
+!! is less common and thus only the occurences in the middle of
+!! the sentnece can be considered as true cases.
+
+su ab-dot-adv ; !La stå!
+dii ab-noun ; !diibmu, La stå!
+
+
