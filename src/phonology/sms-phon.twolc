@@ -116,6 +116,7 @@ Alphabet
 %^XY2XYYY:0 	!!= * @CODE@ Lengthens consonant cluster
 %^XYY2VY:0	!!= * @CODE@ Consonant cluster to vowel and consonant sijdd:siid
 %^XYY2VYY:0	!!= * @CODE@ Consonant cluster to vowel and geminate uvdd:ouʹdd
+%^XYY2IY:0	!!= * @CODE@ Consonant cluster to i  and consonant kueʹhtt:kueiʹt
 %^KKK2GG:0	!!= * @CODE@ Geminate weakening 
 %^KK2GG:0	!!= * @CODE@ Geminate weakening jokk:jooǥǥ
 %^KK2G:0		!!= * @CODE@ Geminate weakening	 in allegro pååss:påz
@@ -1286,8 +1287,16 @@ OnSetC _ o (i|u) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^Pen: %^V2VV: ;
 
  Vow: (%{ʹ%}:) _ (:ʹ) [s s:|š š:|t t:|c c:|č č:] Vow: Cns:* PenBetweenStemAndConsGrade %^Pen: %^XYY2VY: ;
 !! piiutâs+N+Sg+Nom __clothing/vaate__
-!€ p0ihttâz%^Pen: %^V2VV%^Pen: %^XYY2VY%^DeVC
+!€ p0ihttâz%^Pen%^V2VV%^Pen%^XYY2VY%^DeVC
 !€ piiut0âs000
+
+
+ "Even syllabic nouns, for h>i"
+!! __@RULENAME@__ - kueʹhtt 
+h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
+!! kueiʹt+Num+Sg+Gen __two/kaksi__
+!€ kuâh0tt%^PALE%^PAL%^XYY2IY
+!€ kueiʹt0000
 
 "trisyllabic verbs and doer derivations, i>j"
 !! __@RULENAME@__ - used in
@@ -1386,9 +1395,12 @@ OnSetC _ o (i|u) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^Pen: %^V2VV: ;
 !€ uuʹd000
  
          ʹ:0 v:u (:ˈ) _ [ʒ ʒ:|d d:|l l:|r r:]       BetweenStemAndPALNo  ( %^PAL:) RBound ;
-              h: (:ˈ) _ [c c:|č č:|s s:|š š:|t t:]  BetweenStemAndPALNo  %^PAL: %^XYY2VY: ;
+              h: (:ˈ) _ [c c:|č č:|s s:|š š:|t t:]  BetweenStemAndPALNo  %^PAL: [ %^XYY2VY: |%^XYY2IY: ] ;
 !€ t0äh0tt%^V2VV%^PAL%^XYY2VY
 !€ tääuʹt0000
+!! kueiʹt+Num+Sg+Gen __two/kaksi__
+!€ kuâh0tt%^PALE%^PAL%^XYY2IY
+!€ kueiʹt0000
              [Vow:|:Vow] (i|u) (:ˈ) _ Cns: [Cns:*|:Cns*|Cns:* (ˈ:|:ˈ) Cns:*] (i:) BetweenStemAndPALNo  %^PAL: ;
 !€ saa0kk%^VV2V%^PAL%>e
 !€ s0aʹǩǩ00%>e
