@@ -7086,6 +7086,20 @@ LEXICON NMN_CÕGGI !!= * @CODE@ cõggi:cõggi
 +Use/NG: PL-NOM ;		! cõggi
 +Use/NG:%^V2VV%^I2J PL-OBL ;		! cõõggi
 
+!! participles in -I from verbs in -âd
+LEXICON NOM-AG_ÂD
+: ATTESTED-NOUN-STEM ;		! suõskki
+: SG-NOM ;	       			! suõskki
+: SG-ABE/ACC/GEN ;	! 
+:%^I2J%>a SG-ILL ;    		! suõskkja
+:%^I2J%>e SG-LOC ;
+:%^I2J SG-COM_IN ;
+:%^I2J%>e ESS/PAR ; ! ess and prt without
++Use/NG: PL-NOM ;				! suõskki
+:%^I2J PL-OBL ;			! suõskkji
+LEXICON NOM-AG_ÂD_NO-PL-NOM
+: PL-NOM ;				! suõski
++Use/NG:%^I2J PL-OBL ;	! suõskji
 
 
 LEXICON N_JÕÕVVI !!= * @CODE@ jõõvvi:jõõvvi
@@ -7202,9 +7216,7 @@ LEXICON NMN_SUÕSKKI !!= * @CODE@ suõskki:suõskki
 ! is for nouns with ''-est'' +Loc
 ! gradation: yes
 !! ** Yaml: __suoskki__
-!! * There are several stem types
-!! * suõskki:suõskki
-!! NumContLex="
+
 : ATTESTED-NOUN-STEM ;		! suõskki
 : SG-NOM ;	       			! suõskki
 : SG-ABE/ACC/GEN ;	! 
@@ -7212,10 +7224,26 @@ LEXICON NMN_SUÕSKKI !!= * @CODE@ suõskki:suõskki
 :%^I2J%>e SG-LOC ;
 :%^I2J SG-COM_IN ;
 :%^I2J%>e ESS/PAR ; ! ess and prt without
-:%^Pen%^XYY2XY PL-NOM ;				! suõski
 +Use/NG: PL-NOM ;				! suõskki
 :%^I2J PL-OBL ;			! suõskkji
+:%^Pen%^XYY2XY PL-NOM ;				! suõski
 +Use/NG:%^Pen%^XYY2XY%^I2J PL-OBL ;	! suõskji
+
+!! participles in -AI from verbs in -ad
+LEXICON  NOM-AG_AD
+: ATTESTED-NOUN-STEM ; !!= * @CODE@
+: SG-NOM ; !!= * @CODE@
+: SG-ABE/ACC/GEN ; !!= * @CODE@
+:%^RmVow%^I2J%>a SG-ILL ; !!= * @CODE@
+:%^RmVow%^I2J%>e SG-LOC ; !!= * @CODE@
+:%^RmVow%^I2J SG-COM_IN ; !!= * @CODE@
+:%^I2J%>e ESS/PAR ; !!= * @CODE@
+:%^RmVow%^I2J PL-OBL ; !!= * @CODE@
++Use/NG: PL-NOM ; !!= * @CODE@
+LEXICON  NOM-AG_AD_NO-PL-NOM
+: PL-NOM ; !!= * @CODE@
++Use/NG:%^RmVow%^I2J PL-OBL ; !!= * @CODE@
+
 
 LEXICON N_KÅČČAI !!= * @CODE@ kåččai:kåččai
 +N: NMN_KÅČČAI ;
@@ -7403,6 +7431,21 @@ LEXICON NMN_ŽẸẸVAI !!= * @CODE@ žeevai:žẹẹvai
 :%^RmVow%^I2J%>e ESS/PAR ; ! ess and prt without
 :%^Pen%^XYY2XY PL-NOM ;				! žẹẹvai
 :%^RmVow%^I2J%>i PL-OBL ;			! žẹẹvai
+
+!! participles in -I from verbs in ʹ-ed
+LEXICON  NOM-AG_ED
+: ATTESTED-NOUN-STEM ; !!= * @CODE@
+: SG-NOM ; !!= * @CODE@
+: SG-ABE/ACC/GEN ; !!= * @CODE@
+:%^RmVow%^I2J%>a SG-ILL ; !!= * @CODE@
+:%^RmVow%^I2J%>e SG-LOC ; !!= * @CODE@
+:%^RmVow%^I2J SG-COM_IN ; !!= * @CODE@
+:%^I2J%>e ESS/PAR ; !!= * @CODE@
+:%^RmVow%^I2J PL-OBL ; !!= * @CODE@
++Use/NG: PL-NOM ; !!= * @CODE@
+LEXICON  NOM-AG_ED_NO-PL-NOM
+: PL-NOM ; !!= * @CODE@
++Use/NG:%^RmVow%^I2J PL-OBL ; !!= * @CODE@
 
 
 LEXICON N_JOOʹTTI !!= * @CODE@ jooʹtti:jooʹtti
