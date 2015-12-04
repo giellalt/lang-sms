@@ -1272,6 +1272,13 @@ LEXICON NMN_PẸSS
 :%^CC2C A-STEM-PX-ALLEGRO ;     !!= * @CODE@ pes»
 !! Sg_Loc_Px..
 
+LEXICON N_PẸSS-PL
+!! !!FORMS
+!! strong_geminate, short_vowel, no_palatalization, low_stem_vowel
+ ATTESTED-NOUN-STEM ;		 !!= * @CODE@ pess
+:%>a ESS/PAR ; 			 !!= * @CODE@ (6) Ess: pessan
+:%^V2VV PL-NOM ;	 !!= * @CODE@ (2) Pl.Nom: peess
+:%^V2VV%>a PL-OBL ; 
 
 
 LEXICON N_ÄŊŊ !!= * @CODE@ äŋŋ:äŋŋ
@@ -1331,6 +1338,7 @@ LEXICON N_ŠOOMM !!= * @CODE@ šoomm:šoomm
 LEXICON NMN_ŠOOMM
 !! Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_gem
 ! gradation: yes
+! similar_to: N_RÄÄKK
 !! Is for nouns with ''-ast'' Loc
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 !! !!1.2 Sg.Loc in -ast (vowel shift)
@@ -4937,6 +4945,27 @@ LEXICON NMN_MÄÄN !!= * @CODE@ mään:mann
 :%>u SG-COM_IN/PL-OBL ;
 :%^VOWLower%>ʼj SG-COM_IN ;
 :%^VOWLower%>ʼje ESS/PAR ; ! ess and prt without
++Use/NG:%^VOWLower%>u PAR ;
+
+LEXICON N_PÂÂGG !!= * @CODE@ pââgg:põgg
++N: NMN_PÂÂGG ;
+LEXICON NMN_PÂÂGG !!= * @CODE@ pââgg:põgg
+! gradation: yes
+! vowel_raise: yes
+!! ** Yaml: __N-paagg__
+!! * There are several stem types
+:%^V2VV%^VOWLower ATTESTED-NOUN-STEM ; !!= * @CODE@ pââgg
+:%^V2VV%^VOWLower SG-NOM ;	        !!= * @CODE@ pââgg
+:%>u SG-ABE/ACC/GEN ;	 		 !!= * @CODE@ põggu
+:%^VOWLower%>ja SG-ILL ;
++Use/NG:%^VOWLower%>ǥa SG-ILL ;
+:%>u SG-LOC ;
+:%^VOWLower%>je SG-LOC ;
+:%>u SG-COM_IN ;
+:%^VOWLower%>j SG-COM_IN ;
+:%>u PL-NOM ;	 		 !!= * @CODE@ põggu
+:%>u PL-OBL ;
+:%^VOWLower%>je ESS/PAR ; ! ess and prt without
 +Use/NG:%^VOWLower%>u PAR ;
 
 
