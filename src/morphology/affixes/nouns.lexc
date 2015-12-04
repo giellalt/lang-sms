@@ -363,7 +363,6 @@ HatÂ-STEM-PX-RETAIN ;
 :%^VV2V HatÂ-STEM-PX-STENGTHEN ;
 
 
-
 LEXICON N_SAAKK !!= * @CODE@ saakk:saakk
 +N: NMN_SAAKK ;
 LEXICON NMN_SAAKK
@@ -415,6 +414,33 @@ HatÂ-STEM-PX-RETAIN ;
 :%^KK2GG HatÂ-STEM-PX-WEAKEN ;
 :%^KK2GG HatÂ-STEM-PX-WEAKEN_NG ;
 :%^KK2G HatÂ-STEM-PX-ALLEGRO ;
+:%^VV2V HatÂ-STEM-PX-STENGTHEN ;
+
+
+LEXICON N_RIIKK !!= * @CODE@ riikk:riikk
++N: NMN_RIIKK ;
+LEXICON NMN_RIIKK
+!! !!FORMS
+!! ** Yaml: __N-riikk__
+!! is for nouns with -âst Loc. N_Â-EPal2-21
+!! N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
+: SG-COM_IN ;			!!= * @CODE@ riikkin
+:  SG-ABE/ACC/GEN-PL-NOM ;	!!= * @CODE@ riikk
+:%^VV2V%^PAL%>e SG-ILL ;	   	!!= * @CODE@ riʹǩǩe
++Der/N2A:%^VV2V%^PAL N2A_LUÕʹSSI ;      !!= * @CODE@ riʹǩǩi
+: SG-NOM ;	       			!!= * @CODE@ riikk
+ ATTESTED-NOUN-STEM ;			!!= * @CODE@ riikk
+:%>â SG-LOC ;			!!= * @CODE@ riikkâst
+:â ESS/PAR ;    	   			!!= * @CODE@ riikkân
+: PL-OBL ;			!!= * @CODE@ riikki
+
++Der/Dim+N: N_MUÕRÂŽ-WITHOUT-PAL ;  !!= * @CODE@ riikk-
++Der/Dim+N:%^PAL N_MUÕRÂŽ-WITH-PAL ;  !!= * @CODE@ riiʹǩǩ-
+
+HatÂ-STEM-PX-RETAIN ;
+: HatÂ-STEM-PX-WEAKEN ;
+: HatÂ-STEM-PX-WEAKEN_NG ;
+: HatÂ-STEM-PX-ALLEGRO ;
 :%^VV2V HatÂ-STEM-PX-STENGTHEN ;
 
 LEXICON N_VILLJ !!= * @CODE@ villj:villj
@@ -6039,32 +6065,6 @@ LEXICON NMN_SPÄʹSSEB
 :%^RmVow PL-OBL ;
 :%^RmVow VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
 
-LEXICON N_KUÄʹLˈLEC !!= * @CODE@ kuäʹllec:kuäʹlˈlec
-+N: NMN_KUÄʹLˈLEC ;
-LEXICON NMN_KUÄʹLˈLEC
-! gradation: yes
-!    Penultimate: Yes
-!      Extra strong grade: Else
-!      Weak grade: Sg.Nom, Sg.Gen, Sg.Acc, Pl.Nom
-!    Ultimate: None
-! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
-! Stem vowel: e
-! Ultimate stem consonant
-!! * __@LEXNAME@__ = Koulukielioppi stemtype II 9 (29)
-!! ** Yaml: __N-kuaellec __ 
-: ATTESTED-NOUN-STEM ;
-: SG-NOM ;
-: SG-GEN ;
-: SG-ACC ;
-:%^RmVow%>a SG-ILL ; !!= * @CODE@ kuäʹlˈlca
-:%^RmVow%>e SG-LOC ;
-:%^RmVow SG-COM_IN ;
-:%^RmVow%>e ESS/PAR ; ! ess and prt without
-:%^RmVow SG-ABE ;
-: PL-NOM ;
-:%^RmVow PL-OBL ;
-:%^RmVow VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
-
 LEXICON N_PRÄÄʹZNIǨ !!= * @CODE@ prääʹzniǩ:prääʹzniǩ
 +N: NMN_PRÄÄʹZNIǨ ;
 LEXICON NMN_PRÄÄʹZNIǨ
@@ -6236,7 +6236,7 @@ LEXICON NMN_PUÄʹRES !!= * @CODE@ puäʹres:puärˈrez
 ! Diphthong
 ! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
 ! Stem vowel: e
-!! ** Yaml: __N-aaves__
+!! ** Yaml: __N-puaeres__
 :%^Pen%^PAL%^Pen%^CCC2C%^DeVC ATTESTED-NOUN-STEM ;	! puäʹres
 :%^Pen%^PAL%^Pen%^CCC2C%^DeVC SG-NOM ;	     	! puäʹres
 :%^PenVow2a SG-ABE/ACC/GEN-PL-NOM ;	 		! puärˈraz
@@ -6717,35 +6717,6 @@ LEXICON NMN_MILJONÄÄʹR !!= * @CODE@ = stemtype
 :%^PAL%> SG-COM_IN ;
 :%^PAL%>e ESS/PAR ; ! ess and prt without
 :%^PAL PL-OBL ;
-
-
-
-
-
-LEXICON N_MINIʹSTTER
-+N: NMN_MINIʹSTTER ;
-
-LEXICON NMN_MINIʹSTTER
-! gradation: no
-!    Penultimate: Yes
-!      Extra strong grade: Else
-!      Weak grade: Sg.Nom, Sg.Gen, Sg.Acc, Pl.Nom
-!    Ultimate: None
-! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
-! Stem vowel: e
-! Ultimate stem consonant
-!! stemtype l-stem miniʹstter:miniʹstter
-!! * __@LEXNAME@__ = Koulukielioppi stemtype II 9 (29)
-!! ** Yaml: __N-miniʹstter __ 
-: ATTESTED-NOUN-STEM ;
-: SG-NOM ;
-: SG-ABE/ACC/GEN ;
-:%^RmVow%>a SG-ILL ; !miniʹsttra
-:%^RmVow%>e SG-LOC ;
-:%^RmVow SG-COM_IN ;
-:%^RmVow%>e ESS/PAR ; ! ess and prt without
-: PL-NOM ;
-:%^RmVow PL-OBL ;
 
 
 LEXICON N_REʹPPIǨ
