@@ -1216,50 +1216,6 @@ HatÂ-STEM-PX-RETAIN ;
 : HatÂ-STEM-PX-STENGTHEN ;
 
 
-LEXICON N_ŠKOOUL !!= * @CODE@ škooul:škooul
-+N: NMN_ŠKOOUL ;
-LEXICON NMN_ŠKOOUL
-!! Sg_Nom: vow_mono:vow_long:vow_high:pal_no:cns_vy
-! gradation: no
-!!  is for words with ''-âst'' Loc but ''-ense'' Ill 3rd grade
-!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-!! !!1.1 Sg.Loc in -âst (no vowel shift, all raised)
-!! !!  â-stems (Sg.Loc, Ess, Par).
-!! !!1.1.1 Sg.Ill vowel	-e
-!! !!1.1.1.1 Has Palatalization
-!! !!1.1.1.1[1] (Palatalization pattern)
-!! !!  Palatalized: Sg.Ill
-!! !!  Not Palatalized: ELSE
-!! !!    Sg.Ill in palatalization and -e
-!! !!  Lacks Allophonic palatalization
-!! !!1.1.1.1[1].2 Lacks Specifically Pedagogical Gradation
-!! !!1.1.1.1[1].2.1 Lacks Orthographic Gradation
-!! !!1.1.1.1[1].2.1[] (Monophthong + Consonant cluster)
-!! !!  Weak grade: Sg.Nom, Ess, Par
-!! !!  Weak grade: Sg.Ill
-!! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-!! !!FORMS
-!! !!(9) Der/Dim.N.Sg.Nom: škooulâž
-!! škooul:škooul
-!! ** Yaml: __N-shkooul__
- ATTESTED-NOUN-STEM ;
- SG-NOM ; 	    !!= * @CODE@ (1) Sg.Nom: škooul
- SG-ABE/ACC/GEN-PL-NOM ; !!= * @CODE@ (2) Pl.Nom: škooul
-:%^PAL%>e SG-ILL ;     !!= * @CODE@ (3) Sg.Ill: škoouˈle
-+Der/N2A:%^PAL N2A_LUÕʹSSI ;     !!= * @CODE@ N»A: škoouˈli
-:%>â SG-LOC ;	       !!= * @CODE@ (4) Sg.Loc: škooulâst
-: SG-COM_IN ;	       !!= * @CODE@ (5) Sg.Com: škooulin
-:%>â ESS/PAR ;	       !!= * @CODE@ (6) Ess: škooulân 
-: PL-OBL ;   	       !!= * @CODE@ (8) Pl.Gen: škoouli
-+Der/Dim+N: N_MUÕRÂŽ-WITHOUT-PAL ;  !!= * @CODE@ škooul-
-+Der/Dim+N:%^PAL N_MUÕRÂŽ-WITH-PAL ;  !!= * @CODE@ škoouʹl-
-
-HatÂ-STEM-PX-RETAIN ;
-HatÂ-STEM-PX-WEAKEN ;
-HatÂ-STEM-PX-STENGTHEN ;
-
-
-
 !! CLASS 1 LOW VOWEL, MONOPHTHONG, NO PALATALIZATION NOMINALS
 !! !!a-stems
 
@@ -4476,6 +4432,24 @@ LEXICON NMN_KLAAʹDD
 
  PL-OBL ;
 
+LEXICON N_ZEEʹTT !!= * @CODE@ zeeʹtt:zẹẹtt
++N: NMN_ZEEʹTT ;
+LEXICON NMN_ZEEʹTT
+! gradation: no
+!! 
+!! !!FORMS
+!! ** Yaml: __N-zeett__
+
+:%^PAL  ATTESTED-NOUN-STEM ; !!(1) Sg.Nom: zeeʹtt
+:%^PAL SG-NOM ; !!(1) Sg.Nom: zeeʹtt
+:%^PAL SG-ABE/ACC/GEN-PL-NOM ; !!(2) Pl.Nom: zeeʹtt
+:%>a SG-ILL ; !!(3) Sg.Ill: zẹẹtta
+:%^PAL%>e SG-LOC ; !!(4) Sg.Loc: zeeʹttest
+:%^PAL SG-COM_IN ; !!(5) Sg.Com: zeeʹttin
+:%^PAL%>e ESS/PAR ; !!(6) Ess: zeeʹtten
+:%^PAL PL-OBL ; !!(8) Pl.Gen: zeeʹtti
++Der/Dim:%^PAL%> N_KUUʹMPEŽ ; !!(9) Der/Dim.N.Sg.Nom: zeeʹttež
+
 
 
 LEXICON N_LUUKK !!= * @CODE@ 
@@ -4522,14 +4496,20 @@ LEXICON NMN_PLAAN
 !! ** Yaml: __N-plaan__
  ATTESTED-NOUN-STEM ;
 : SG-NOM ;		! plaan
-: SG-ABE/ACC/GEN-PL-NOM ;		! plaan
+: SG-ABE/ACC/GEN ;		! plaan
 :%^PAL%>e SG-ILL ;	! plaaʹne
++Der/N2A:%^PAL N2A_LUÕʹSSI ;     !!= * @CODE@ N»A: plaaʹni
 :%>â SG-LOC ;	 	! plaanâst
 : SG-COM_IN ;		! plaanin
 :%>â ESS/PAR ;  		! plaanân
+: PL-NOM ;		! plaan
 : PL-OBL ;		! plaani
 +Der/Dim+N: N_MUÕRÂŽ-WITHOUT-PAL ;  !!= * @CODE@ paar-
 +Der/Dim+N:%^PAL N_MUÕRÂŽ-WITH-PAL ;  !!= * @CODE@ paaʹr-
+HatÂ-STEM-PX-RETAIN ;
+HatÂ-STEM-PX-WEAKEN ;
+HatÂ-STEM-PX-STENGTHEN ;
+
 
 LEXICON N_BIOLOOG !!= * @CODE@ bioloog:bioloog
 +N: NMN_BIOLOOG ;
@@ -5083,6 +5063,21 @@ LEXICON N_SÕÕUS !!= * @CODE@ sõõus:sõhss
 !! ** Yaml:
 +N:%^V2VV%^XYY2VY ATTESTED-NOUN-STEM ;
 +N:%^V2VV%^XYY2VY SG-NOM ; ! õõh:õõu
++N:âm SG-ABE/ACC/GEN ;
++N:m%>a SG-ILL ;
++N:m%>e SG-LOC ;
++N:m%> SG-COM_IN ;
++N:m%>e ESS/PAR ; ! ess and prt without m? earlier: +N:m%>e ESS
++N+Use/NG:%>e ESS/PAR ; ! ess and prt without m?
++N:âm PL-NOM ;
++N:m PL-OBL ;
+
+LEXICON N_LAAUR !!= * @CODE@ laaur:laurr
+! gradation: yes
+! laaur:laurr
+!! ** Yaml:
++N:%^V2VV%^XYY2XY ATTESTED-NOUN-STEM ;
++N:%^V2VV%^XYY2XY SG-NOM ; ! 
 +N:âm SG-ABE/ACC/GEN ;
 +N:m%>a SG-ILL ;
 +N:m%>e SG-LOC ;
@@ -7726,7 +7721,7 @@ LEXICON NMN_VUÂPˈPAI !!= * @CODE@ vuâppai:vuâpˈp
 :ai ATTESTED-NOUN-STEM ;
 :ai SG-NOM ;
 :ai SG-ABE/ACC/GEN-PL-NOM ;
-:j%>a SG-ILL ;
+:%>a SG-ILL ;
 +Use/NG:%>ǥa SG-ILL ;
 :j%>e SG-LOC ;
 :j SG-COM_IN ;
