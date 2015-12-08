@@ -121,6 +121,7 @@ Alphabet
 %^KK2GG:0	!!= * @CODE@ Geminate weakening jokk:jooǥǥ
 %^KK2G:0		!!= * @CODE@ Geminate weakening	 in allegro pååss:påz
 %^K2GG:0	!!= * @CODE@ Geminate weakening čårrõs:čårrõõzz
+%^K2G:0		!!= * @CODE@ Geminate weakening	 in allegro čâustõk
 %^GG2KK:0	!!= * @CODE@ Geminate strengthening
 %^GG2KKK:0	!!= * @CODE@ Geminate extra strengthening čuâǥǥas:čuõkˈksa
 
@@ -1764,7 +1765,16 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 !! lookki > looǥǥi.
  k:ǥ <=>
  Vow:  k: _   BetweenStemAndPALNo %^KK2GG: ;
-         Vow:   _ k: BetweenStemAndPALNo %^KK2GG: ;
+         Vow:   _ [k: | 0:] BetweenStemAndPALNo [%^KK2GG: | %^K2GG:] ;
+
+!! čâustõk+N+Sg+Gen
+!€ čâust0õk0%^V2VV%^K2GG
+!€ čâustõõǥǥ0
+       Vow:   _ BetweenStemAndPALNo %^K2G: ;
+!! with allegro
+!! čâustõk+N+Sg+Ela+PxSg3
+!€ čâustõk%^K2G%>stes
+!€ čâustõǥ0%>stes
 
   OnSetC [DbVow|Diphth]  k: _ (i:) BetweenStemAndPALNo %^KK2GG: ;
   OnSetC [DbVow|Diphth]  _  k: (i:) BetweenStemAndPALNo %^KK2GG: ;
@@ -1794,7 +1804,10 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 !!  > .
  k:j <=>   
  Vow: :ʹ k: _  BetweenStemAndPALAllo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: %^KK2GG: ;
-         Vow: (:ˈ) :ʹ    _ k: BetweenStemAndPALAllo (%^PALE:|%^PALÄ:|%^PALẸ:) [%^PAL: %^KK2GG:| %^Allegro: %^PAL: %^KK2G:] ;
+         Vow: (:ˈ) :ʹ    _ [ k:|0:] BetweenStemAndPALAllo (%^PALE:|%^PALÄ:|%^PALẸ:) [%^PAL: %^KK2GG:| %^Allegro: %^PAL: %^KK2G:| %^PAL: %^K2GG: ] ;
+       Vow: (:ˈ) :ʹ  _  BetweenStemAndPALNo  %^PAL: %^K2G: ;
+!! with allegro
+
 !!2015-10-05
   OnSetC [DbVow|Diphth] :ʹ k: (ˈ:)  _ BetweenStemAndPALAllo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: [ %^KK2GG:| %^KKK2GG:] ;
   OnSetC [DbVow|Diphth] :ʹ  _ (ˈ:) k: BetweenStemAndPALAllo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: [%^KK2GG: | %^KKK2GG:] ; 
@@ -1836,7 +1849,14 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 !! __@RULENAME@__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
  š:ž <=> 
  Vow: (ʹ:|0:ʹ) š: _    BetweenStemAndConsGrade %^KK2GG: ;
-         Vow: (ʹ:|0:ʹ)    _ š: BetweenStemAndConsGrade %^KK2GG: ;
+         Vow: (ʹ:|0:ʹ)    _ [š: |0:] BetweenStemAndConsGrade [ %^KK2GG: | %^K2GG: ] ;
+!! lookkmõš+N+Sg+Gen
+!€ lookkm0õš0%^V2VV%^K2GG
+!€ lookkm0õžž00
+       Vow: 0:*  _  BetweenStemAndConsGrade %^K2G: ;
+!! with allegro
+
+
           Diphth       (ʹ:|0:ʹ) š:  ˈ:  _   BetweenStemAndConsGrade %^KKK2GG: ;
           Diphth      (ʹ:|0:ʹ) _   ˈ:  š:  BetweenStemAndConsGrade %^KKK2GG: ;
 !€ kõõččm0õšš%^V2VV%^KK2GG
@@ -1884,6 +1904,9 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
          Vow: (:ˈ) (ʹ:|0:ʹ) _   [s: |0:] BetweenStemAndConsGrade  [%^KK2GG: |%^K2GG:] ; 
 !€ mättʼt0õss%^V2VV%^KK2GG
 !€ mättʼtõõzz00
+       Vow: 0:*  _  BetweenStemAndConsGrade %^K2G: ;
+!! with allegro
+
          Vow:  (ʹ:|0:ʹ) s:  ˈ:  _  BetweenStemAndConsGrade %^KKK2GG: ; 
          Vow:  (ʹ:|0:ʹ)  _ ˈ:   s: BetweenStemAndConsGrade %^KKK2GG: ; 
 !! deriving cieʹǩǩes+N+Sg+Gen: ceäkˈkaz
@@ -2258,11 +2281,35 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 
 "0:z"
 !! __@RULENAME@__ - used in
- 0:z <=> Vow (ʹ:) s: _ BetweenStemAndConsGrade %^K2GG: ;  
+ 0:z <=> Vow (ʹ:) s: _ BetweenStemAndConsGrade %^K2GG: ;
 
 !! čårrõs+N+Sg+Gen
 !€ čårr0õs0%^V2VV%^K2GG
 !€ čårr0õzz0
+
+"0:ž"
+!! __@RULENAME@__ - used in
+ 0:ž <=> Vow (ʹ:) š: _ BetweenStemAndConsGrade %^K2GG: ;
+
+!! lookkmõš+N+Sg+Gen
+!€ lookkm0õš0%^V2VV%^K2GG
+!€ lookkm0õžž00
+
+"0:ǥ"
+!! __@RULENAME@__ - used in
+ 0:ǥ <=> Vow (ʹ:) k: _ BetweenStemAndPALAllo %^K2GG: ;  
+
+!! čâustõk+N+Sg+Gen
+!€ čâust0õk0%^V2VV%^K2GG
+!€ čâustõõǥǥ0
+
+"0:j"
+!! __@RULENAME@__ - used in
+ 0:j <=> Vow (ʹ:) k: _ BetweenStemAndPALAllo %^PAL: %^K2GG: ;  
+
+!! čâustõk+N+Sg+Gen
+!€ čâust0õ0k0%^V2VV%^PAL%^K2GG
+!€ čâustõõʹjj000
 
 !! !!CONSONANT QUALITY CHANGE
 
