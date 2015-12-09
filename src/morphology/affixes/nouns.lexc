@@ -37,7 +37,7 @@ LEXICON	NMN_NIJDD	!!= * @CODE@ nijdd:ni
 
 !! CLASS 1 HIGH VOWEL, NO PALATALIZATION NOMINALS
 LEXICON N_PAPP !!= * @CODE@ papp:papp
-!! analogy in PESS
+!! analogy in N_PẸSS
 +N:  NMN_PAPP ;
 LEXICON NMN_PAPP
 !! Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_gem
@@ -1487,6 +1487,7 @@ LEXICON N_ÄLDD !!= * @CODE@ äldd:äldd
 LEXICON NMN_ÄLDD
 !! Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_xyy
 ! gradation: yes
+!! N_LÄINN has been integrated here
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 !! !!1.2 Sg.Loc in -ast (vowel shift)
 !! !!  Raised: Sg.Ill
@@ -1542,53 +1543,10 @@ LEXICON A-STEM_SG-ABE/ACC/GEN-PL-NOM  !!= * @CODE@ (2)
  A-STEM-PX-WEAKEN ;
  A-STEM-PX-WEAKEN_NG ;
 
-LEXICON N_LÄINN !!= * @CODE@ läinn:läinn
-+N: NMN_LÄINN ;
-LEXICON NMN_LÄINN
-!! Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_vyy
-! gradation: yes
-! V2VV CC2C
-! vowel: monophthong
-!! Is for nouns with ''-ast'' Loc
-!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-!! !!1.2 Sg.Loc in -ast (vowel shift)
-!! !!  Raised: Sg.Ill
-!! !!  Lowered: ELSE
-!! !!  a-stems (Sg.Loc, Ess, Par).
-!! !!1.2.2 Sg.Ill vowel	-u
-!! !!1.2.2.2 Lacks Palatalization
-!! !!1.2.2.2.1 Lacks Specifically Pedagogical Gradation
-!! !!1.2.2.2.1.1 Has Orthographic Gradation
-!! !!1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
-!! !!  Strong grade: Sg.Nom, Ess, Par
-!! !!  Extra strong grade: Sg.Ill
-!! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-!! !!FORMS
-!! !!(9) Dim.N.Sg.Nom: laainuž (2009: 310)
-!NumContLex="1.1120000000000001"
-!! N_A-URaise3-32
-!! ** Yaml: __N-laeinn__
- ATTESTED-NOUN-STEM ;                    !!= * @CODE@ (1) läinn
-: A-STEM_SG-NOM ;	    			 !!= * @CODE@ (1) Sg.Nom läinn
-!! Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
-:%^V2VV%^XYY2XY A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	 !!= * @CODE@ (2) Pl.Nom: lääin
-!! Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
-!! stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
-
-:%^VV2V%^VOWRaise%>u SG-ILL ;	      	 !!= * @CODE@ (3) Sg.Ill: lainnu
-!! Sg_Ill
-
-:%>a ESS/PAR ; 	   		    	 !!= * @CODE@ (6) lääin  
-
-+Der/Dim:%^V2VV%^XYY2XY%^VOWRaise%> N_PIISSUŽ ; !!= * @CODE@ (9) Dim.N.Sg.Nom: laainuž
-
-:%^XYY2XY A-STEM-PX-ALLEGRO ; !!= * @CODE@ (10) läin»
-!! Sg_Loc_Px..
-
-LEXICON N_PEIGG !!= * @CODE@ peigg:peigg
-+N: NMN_PEIGG ;
-LEXICON NMN_PEIGG
+LEXICON N_PẸIGG !!= * @CODE@ peigg:peigg
++N: NMN_PẸIGG ;
+LEXICON NMN_PẸIGG
 !! Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_vxx
 ! gradation: yes
 ! V2VV CC2C
@@ -1620,7 +1578,7 @@ LEXICON NMN_PEIGG
 !! Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 !! stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
-:%^VV2V%^VOWRaise%>u SG-ILL ;	      	 !!= * @CODE@ (3) Sg.Ill: pijggu !!WHAT IS THIS?
+:%^VOWRaise%^VYY2XYY%>u SG-ILL ;	      	 !!= * @CODE@ (3) Sg.Ill: pijggu !!WHAT IS THIS?
 !! Sg_Ill
 
 : A-STEM-PX-STENGTHEN ;           !!= * @CODE@ (5) peigg
@@ -4708,7 +4666,8 @@ LEXICON NMN_KAAV !!= * @CODE@ kaav:kaapp
 :%>j%>e SG-LOC ;
 :%>j SG-COM_IN/PL-OBL ;
 :%>i PL-NOM ;
-:%>j%>â ESS/PAR ;
+:%^CC2C%>â ESS/PAR ; !!= * @CODE@ kaavân
+:%>j%>â ESS/PAR ; !!= * @CODE@ kaappjân 
 +N+Der/Dim:%>ǥ N_KUÂLAŽ ;
 +Use/NG+N+Der/Dim:%>j N_KUÂLAŽ ;
 
@@ -4964,6 +4923,25 @@ LEXICON NMN_PÂÂGG !!= * @CODE@ pââgg:põgg
 :%>u SG-COM_IN ;
 :%^VOWLower%>j SG-COM_IN ;
 :%>u PL-NOM ;	 		 !!= * @CODE@ põggu
+:%>u PL-OBL ;
+:%^VOWLower%>je ESS/PAR ; ! ess and prt without
++Use/NG:%^VOWLower%>u PAR ;
+
+LEXICON N_NJOORǤ !!= * @CODE@ njoorǥ:njurgg
++N: NMN_NJOORǤ ;
+LEXICON NMN_NJOORǤ !!= * @CODE@ njoorǥ:njurgg
+! gradation: yes
+! vowel_raise: yes
+!! ** Yaml: __N-paagg__
+!! * There are several stem types
+:%^V2VV%^VOWLower%^XYY2XY ATTESTED-NOUN-STEM ; !!= * @CODE@ njoorǥ
+:%^V2VV%^VOWLower%^XYY2XY SG-NOM ;	        !!= * @CODE@ njoorǥ
+:%>u SG-ABE/ACC/GEN ;	 		 !!= * @CODE@ njurggu
+:%^VOWLower%>ja SG-ILL ;
+:%>u SG-LOC ;
+:%>u SG-COM_IN ;
+:%^VOWLower%>j SG-COM_IN ;
+:%>u PL-NOM ;	 		 !!= * @CODE@ njurggu
 :%>u PL-OBL ;
 :%^VOWLower%>je ESS/PAR ; ! ess and prt without
 +Use/NG:%^VOWLower%>u PAR ;
@@ -5366,7 +5344,7 @@ LEXICON NMN_TAALKÂS !!= * @CODE@ taalkâs:talkkâz
 LEXICON N_PIIUTÂS !!= * @CODE@ piiutâs:pihttâz
 +N: NMN_PIIUTÂS ;
 LEXICON NMN_PIIUTÂS !!= * @CODE@ piiutâs:pihttâz
-!! like VAHTT
+!! like N_VAHTT
 ! stem: N.Sg.Gen
 ! gradation: yes
 ! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
@@ -6294,6 +6272,28 @@ LEXICON NMN_ÅÅʹVES !!= * @CODE@ ååʹves:åvvez
 :%^RmVow%^DeVC PL-OBL ;					! åvvsi
 :%^RmVow%^DeVC VÕÕNÂS-STEM-PX ; !!= * @CODE@ åvvs-
 
+LEXICON N_KÄÄʹRBES !!= * @CODE@ kääʹrbes:kärbbez
++N: NMN_KÄÄʹRBES ;
+LEXICON NMN_KÄÄʹRBES !!= * @CODE@ kääʹrbes:kärbbez
+! 3.e.diphth.gem
+! gradation: yes
+!   Extra strong grade: Else
+!   Weak grade: Sg.Nom
+! Diphthong
+! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
+! Stem vowel: e
+!! ** Yaml: __N-kaeaerbes__
+:%^Pen%^V2VV%^Pen%^PAL%^Pen%^XYY2XY%^DeVC ATTESTED-NOUN-STEM ;	! kääʹrbes
+:%^Pen%^V2VV%^Pen%^PAL%^Pen%^XYY2XY%^DeVC SG-NOM ;	     	! kääʹrbes
+:%^PenVow2a SG-ABE/ACC/GEN ;	 		! kärbbaz
+:%^RmVow%^DeVC%>a SG-ILL ;	  			! kärbbsa
+:%^RmVow%^DeVC%>e SG-LOC ;				! kärbbsest
+:%^RmVow%^DeVC SG-COM_IN ;				! kärbbsin
+:%^RmVow%^DeVC%>e ESS/PAR ;  				! kärbbsen
+:%^PenVow2a PL-NOM ;	 		! kärbbaz
+:%^RmVow%^DeVC PL-OBL ;					! kärbbsi
+:%^RmVow%^DeVC VÕÕNÂS-STEM-PX ; !!= * @CODE@ kärbbs-
+
 LEXICON N_PUÄʹRES !!= * @CODE@ puäʹres:puärˈrez
 +N: NMN_PUÄʹRES ;
 LEXICON NMN_PUÄʹRES !!= * @CODE@ puäʹres:puärˈrez
@@ -6733,7 +6733,7 @@ LEXICON N_KARNDAŠ !!= * @CODE@ = stemtype
 LEXICON NMN_OBL-ČÂUSTÕK
 !! čâustõk+N+Sg+Gen:čâustõõǥǥ
 :%^V2VV%^K2GG SG-ABE/ACC/GEN ;
-:%^PAL%>e SG-ILL ;
+:%^PAL%^C2CC%>e SG-ILL ;
 :%^V2VV%^K2GG%>â SG-LOC ;
 :%^V2VV%^K2GG%> SG-COM_IN ;
 :%^V2VV%^K2GG PL-NOM ;

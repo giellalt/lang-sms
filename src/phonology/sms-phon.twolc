@@ -117,6 +117,9 @@ Alphabet
 %^XYY2VY:0	!!= * @CODE@ Consonant cluster to vowel and consonant sijdd:siid
 %^XYY2VYY:0	!!= * @CODE@ Consonant cluster to vowel and geminate uvdd:ouʹdd
 %^XYY2IY:0	!!= * @CODE@ Consonant cluster to i  and consonant kueʹhtt:kueiʹt
+%^VY2XYY:0	!!= * @CODE@ Consonant cluster i/u to j/v
+%^VYY2XYY:0	!!= * @CODE@ Consonant cluster i/u to j/v
+
 %^KKK2GG:0	!!= * @CODE@ Geminate weakening 
 %^KK2GG:0	!!= * @CODE@ Geminate weakening jokk:jooǥǥ
 %^KK2G:0		!!= * @CODE@ Geminate weakening	 in allegro pååss:påz
@@ -1055,7 +1058,7 @@ Rules
 
 "Even syllabic verbs I, secondary u > v "
 !! __@RULENAME@__ 
- u:v <=> u _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (ˈ:|:ˈ) Cns:+] %^VY2XYY ;
+ u:v <=> u _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (ˈ:|:ˈ) Cns:+] %^VY2XYY: ;
 
 
 !! !RELATIVE VOWEL LENGTHENING
@@ -1303,7 +1306,7 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 "trisyllabic verbs and doer derivations, i>j"
 !! __@RULENAME@__ - used in
  i:j <=> _ PenBetweenStemAndVowelLoss (%^RmVow:) %^I2J: %>: Vow ;
-
+   :i _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndConsGrade %^VOWRaise:  %^VYY2XYY: ;
 
 !! !VOWELS TENSE vs LAX 2012-11-28
 
@@ -1901,7 +1904,7 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 "Even syllabic verbs I, Voicing after long vowel or diphthong s:z s:z" 
 !! __@RULENAME@__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
  s:z <=> Vow: (ʹ:|0:ʹ) s:  _  BetweenStemAndConsGrade  %^KK2GG: ; 
-         Vow: (:ˈ) (ʹ:|0:ʹ) _   [s: |0:] BetweenStemAndConsGrade  [%^KK2GG: |%^K2GG:] ; 
+         Vow: (:ˈ) (ʹ:|0:ʹ) _   [s: |0:] BetweenStemAndConsGrade  [%^KK2GG: |%^K2GG: ] ; 
 !€ mättʼt0õss%^V2VV%^KK2GG
 !€ mättʼtõõzz00
        Vow: 0:*  _  BetweenStemAndConsGrade %^K2G: ;
@@ -2279,9 +2282,17 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
    Vow (ʹ:) [k| ǩ:k] _ Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^C2CC: ;
    Vow (ʹ:) [l|n|ŋ|r|s|š|t] [k| ǩ:k] _ Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^XY2XYY: ;
 
+"0:s"
+!! __@RULENAME@__ - used in
+ 0:s <=> Vow (:ʹ) s: _ BetweenStemAndConsGrade %^C2CC: ;
+
+!! čårrõs+N+Sg+Gen
+!€ čårr0õs0%^V2VV%^K2GG
+!€ čårr0õzz0
+
 "0:z"
 !! __@RULENAME@__ - used in
- 0:z <=> Vow (ʹ:) s: _ BetweenStemAndConsGrade %^K2GG: ;
+ 0:z <=> Vow (:ʹ) s: _ BetweenStemAndConsGrade %^K2GG: ;
 
 !! čårrõs+N+Sg+Gen
 !€ čårr0õs0%^V2VV%^K2GG
@@ -2289,7 +2300,7 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 
 "0:ž"
 !! __@RULENAME@__ - used in
- 0:ž <=> Vow (ʹ:) š: _ BetweenStemAndConsGrade %^K2GG: ;
+ 0:ž <=> Vow (:ʹ) š: _ BetweenStemAndConsGrade %^K2GG: ;
 
 !! lookkmõš+N+Sg+Gen
 !€ lookkm0õš0%^V2VV%^K2GG
@@ -2305,7 +2316,7 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 
 "0:j"
 !! __@RULENAME@__ - used in
- 0:j <=> Vow (ʹ:) k: _ BetweenStemAndPALAllo %^PAL: %^K2GG: ;  
+ 0:j <=> Vow (:ʹ) k: _ BetweenStemAndPALAllo %^PAL: %^K2GG: ;  
 
 !! čâustõk+N+Sg+Gen
 !€ čâust0õ0k0%^V2VV%^PAL%^K2GG
