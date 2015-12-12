@@ -363,9 +363,6 @@ RelVowLengtheningNOTu = [(ʹ:|0:ʹ) [CCforPrecedingV2VV  %^Pen: %^V2VV: %^CShort
 
 
 !! possible triggers before VOWLower and VOWRaise
-!! {{{
-PrecedeVOWLowerRaise = [([%^VOWSH:|%^VOWXSH:] %^CLong:|[%^Pen: %^V2VV:|%^VOWXL:] %^CShort:)] ; !!= * @CODE@ 
-!! }}}
 
 BetweenStemAndHeight = [( %^VV2V: |%^V2VV:)] ;
 
@@ -1306,8 +1303,11 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 
 "trisyllabic verbs and doer derivations, i>j"
 !! __@RULENAME@__ - used in
- i:j <=> _ PenBetweenStemAndVowelLoss (%^RmVow:) %^I2J: %>: Vow ;
-   :i _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndConsGrade %^VOWRaise:  %^VYY2XYY: ;
+ i:j <=> [Vow: |Cns:] (0:ʼ) _ PenBetweenStemAndVowelLoss (%^RmVow:) %^I2J: %>: Vow ;
+   :i (0:ʹ) _ [Cns:+|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWRaise:  %^VYY2XYY: ;
+!! peigg
+!€ peigg%>u
+!€ pijgg%>u
 
 !! !VOWELS TENSE vs LAX 2012-11-28
 
