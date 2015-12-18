@@ -43,16 +43,16 @@ GT_LEXC_SRCS_L1_L2=\
 				affixes/propernouns.lexc \
 				affixes/verbs.lexc \
 				compounding.lexc \
+				stems/adjectives.lexc \
+				stems/nouns.lexc \
 				clitics.lexc
 
 #
 #
-#				stems/adjectives.lexc \
 #				stems/adpositions.lexc \
 #				stems/adverbs.lexc \
 #				stems/conjunctions.lexc \
 #				stems/interjections.lexc \
-#				stems/nouns.lexc \
 #				stems/numerals.lexc \
 #				stems/particles.lexc \
 #				stems/pronouns.lexc \
