@@ -375,6 +375,13 @@ LEXICON A_PÄIʹǨǨ !!= * @CODE@ päiʹǩǩ:päikk
 !+A+Der/MWN: N_PÄIʹǨǨ ;
 +A: NMN_PÄIʹǨǨ ;
 
+LEXICON A_HÄÄʹSǨ !!= * @CODE@ hääʹsǩ:hääsk
+! vowel: monophthong
+! gradation: no
+:%^PAL   A-ATTR_es ;
++A: NMN_HÄÄʹSǨ ;
+
+
 LEXICON A_SÄIʹMM !!= * @CODE@ säiʹmm:säimm
 ! vowel: monophthong
 :%^V2VV%^PAL%^CC2C   A-ATTR_es ;
@@ -654,17 +661,23 @@ LEXICON A_VIIRRÂM !!= * @CODE@ viirrâm:viirrâm
 !+A+Der/MWN: N_VIIRRÂM ;
 +A: NMN_VIIRRÂM ;
 
+LEXICON A_KÅÅVAS !!= * @CODE@ kååvas:kåvv
++A+Attr: FINAL1 ;
++A:s ADJ-DER/COMP_kõlmmsab ;
++A:s ADJ-DER/SUPERL_ummus ;
++A:az NMN_KÅÅVAS ;
+
 LEXICON A_KÅÅDDAS !!= * @CODE@ kååddas:kåådd
 +A+Attr: FINAL1 ;
 +A:s ADJ-DER/COMP_kõlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
-+A+Der/MWN:az N_KÅÅDDAS ;
++A:az NMN_KÅÅDDAS ;
 
 LEXICON A_VEEIDAS !!= * @CODE@ veeidas:veidd
 +A+Attr:sõs FINAL1 ;
 +A:s ADJ-DER/COMP_kõlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
-+A+Der/MWN:az N_PÄÄLKAS ;
++A:az NMN_PÄÄLKAS ;
 
 
 LEXICON A_SPÄʹSSEB !!= * @CODE@ späʹsseb:späʹsseb
@@ -679,7 +692,7 @@ LEXICON A_KÄÄʹMES  !!= * @CODE@ kääʹmes:kämm
 +A+Attr:%^V2VV%^PAL FINAL1 ;
 +A:s ADJ-DER/COMP_kõlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
-+A+Der/MWN:ez N_ÅÅʹVES ; !!= * @CODE@   kääʹmes:kämmez
++A:ez NMN_ÅÅʹVES ; !!= * @CODE@   kääʹmes:kämmez
 
 LEXICON A_KÄÄʹLLES  !!= * @CODE@ kääʹlles:käll
 +A+Attr:%^V2VV%^PAL FINAL1 ;
@@ -697,7 +710,7 @@ LEXICON A_ǨEEʹLES  !!= * @CODE@ ǩeeʹles:ǩeâlˈl
 +A+Attr:%^PAL FINAL1 ; !CHECKME
 +A:s ADJ-DER/COMP_kõlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
-+A+Der/MWN:ez N_ǨEEʹLES ; !!= * @CODE@	ǩeeʹles:ǩeâlˈlez
++A:ez NMN_ǨEEʹLES ; !!= * @CODE@	ǩeeʹles:ǩeâlˈlez
 
 LEXICON A_PUÄʹRES  !!= * @CODE@ puäʹres:puärˈr
 +A+Attr:%^PAL FINAL1 ;
@@ -709,7 +722,7 @@ LEXICON A_ČUEʹĐES  !!= * @CODE@ čueʹđes:čuâtˈt
 +A+Attr:%^PAL FINAL1 ;
 +A:s ADJ-DER/COMP_kõlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
-+A+Der/MWN:ez N_ČUEʹĐES ; !!= * @CODE@   puäʹres:puärˈrez
++A:ez NMN_ČUEʹĐES ; !!= * @CODE@   puäʹres:puärˈrez
 
 LEXICON A_ǨEEʹSTES  !!= * @CODE@ ǩeeʹstes:ǩeâstt
 +A+Attr:%^PALE%^PAL FINAL1 ; !CHECKME

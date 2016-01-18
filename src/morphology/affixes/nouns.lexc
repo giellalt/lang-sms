@@ -482,10 +482,10 @@ HatÂ-STEM-PX-RETAIN ;
 : HatÂ-STEM-PX-STRENGTHEN ;
 
 LEXICON N_ČUÕŠKK-PL !!= * @CODE@ čuõšk:čuõškk
- ATTESTED-NOUN-STEM ;                   !!= * @CODE@ (1) čuõskk
-:%>â ESS/PAR ;                          !!= * @CODE@ (6) čuõskkân
-:%^XYY2XY PL-NOM ;      !!= * @CODE@ (2) čuõsk
-:%^XYY2XY PL-OBL ;              !!= * @CODE@ (5) čuõskin
++N: ATTESTED-NOUN-STEM ;                   !!= * @CODE@ (1) čuõskk
++N:%>â ESS/PAR ;                          !!= * @CODE@ (6) čuõskkân
++N:%^XYY2XY PL-NOM ;      !!= * @CODE@ (2) čuõsk
++N:%^XYY2XY PL-OBL ;              !!= * @CODE@ (5) čuõskin
 
 
 LEXICON N_RUÕIDD !!= * @CODE@ ruõidd:ruõidd
@@ -778,6 +778,12 @@ HatÂ-STEM-PX-RETAIN ;
 :%^V2VV%^CC2C HatÂ-STEM-PX-WEAKEN_NG ;
 :%^CC2C HatÂ-STEM-PX-ALLEGRO ;
  HatÂ-STEM-PX-STRENGTHEN ;
+
+LEXICON N_TOLL-PL
++N: ATTESTED-NOUN-STEM ; !!= * @CODE@ toll
++N:%>â ESS/PAR ;         !!= * @CODE@ tollân
++N:%^V2VV%^CC2C PL-NOM ; !!= * @CODE@ tool
++N:%^V2VV%^CC2C PL-OBL ; !!= * @CODE@ tooli, toolid, toolid, toolin, toolivuiʹm, toolitaa
 
  
 !!!
@@ -3521,6 +3527,25 @@ LEXICON NMN_PÄIʹǨǨ
 :%^V2VV%^XYY2XY E-STEM_N_KUÂLAŽ ; !!= * @CODE@ (9) Der/Dim.N.Sg.Nom: pääiǥaž
  E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) päikk-
 :%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) päiʹǩ-
+
+LEXICON N_HÄÄʹSǨ !!= * @CODE@ hääʹsǩ:hääsk
+! vowel: monophthong
++N: NMN_HÄÄʹSǨ ;
+LEXICON NMN_HÄÄʹSǨ
+! gradation: no
+!! ** Yaml: __N-haeaesk__
+:%^PAL ATTESTED-NOUN-STEM ;	!!= * @CODE@ (1) Sg.Nom: hääʹsǩ
+:%^PAL E-STEM_SG-NOM ;		  !!= * @CODE@ (1) Sg.Nom: hääʹsǩ
+%^PAL E-STEM_SG-ABE/ACC/GEN ; !!= * @CODE@ (2) Pl.Nom: hääʹsǩ
+%^PAL PL-NOM ; !!= * @CODE@ (2) Pl.Nom: hääʹsǩ
+: E-STEM_SG-ILL ;	     !!= * @CODE@ (3) Sg.Ill: hääska
+%^PAL%>e SG-LOC ;  !!= * @CODE@ (4) Sg.Loc: hääʹsǩest
+%^PAL SG-COM_IN ;     !!= * @CODE@ (5) Sg.Com: hääʹsǩin
+:%^PAL%>e ESS/PAR ; 	       !!= * @CODE@ (6) Ess: hääʹsǩen
+%^PAL%> E-STEM_PL-OBL ;   !!= * @CODE@ (8) Pl.Acc: hääʹsǩid
+: E-STEM_N_KUÂLAŽ ; !!= * @CODE@ (9) Der/Dim.N.Sg.Nom: hääskaž
+ E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) hääsk-
+:%^PAL E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) kääʹsǩ-
 
 
 LEXICON N_SÄIʹMM !!= * @CODE@ säiʹmm:säiʹmm
