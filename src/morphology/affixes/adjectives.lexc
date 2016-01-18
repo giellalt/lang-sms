@@ -322,6 +322,10 @@ LEXICON A_VÄʹLL !!= * @CODE@ väʹll:väll
 !+A+Der/MWN: N_VÄʹLL ;
 +A: NMN_VÄʹLL ;
 
+LEXICON A_UʹCC !!= * @CODE@ uʹcc:ucc
+:%^V2VV%^PAL   A-ATTR_es ;
++A: NMN_UʹCC ;
+
 LEXICON A_EʹČČ !!= * @CODE@ eʹčč:ečč
 ! vowel: monophthong
 ! V1ʹC1C1
@@ -432,6 +436,10 @@ LEXICON A_PIẸʹSS !!= * @CODE@ pieʹss:peäss
 !+A+Der/MWN: N_PIẸʹSS ;
 +A: NMN_PIẸʹSS ;
 
+LEXICON A_PEÄʹSˈS !!= * @CODE@ peäʹss:peäsˈs
+! vowel: diphthong
+:%^VOWRaise%^PALẸ%^PAL%^CCC2CC   A-ATTR_es ;
++A: NMN_PEÄʹSˈS ;
 
 LEXICON A_SUẸʹǨǨ !!= * @CODE@ sueʹǩǩ:suäkk
 !! cuẹʹǩǩ
@@ -534,8 +542,15 @@ LEXICON A_ČÂUSTÕK
 +A: NMN_OBL-TÄÄVTÕS ;
 
 LEXICON A_KÅÅLVAK
++A+Attr:%^RmVow%>õs FINAL1 ;
++A:%^RmVow ADJ-DER/COMP_kõlmmsab ;
++A:%^RmVow ADJ-DER/SUPERL_ummus ;
 +A: NMN_KÅÅLVAK ;
+
 LEXICON A_PÅÅTTAǨ
++A+Attr:%^RmVow%^PALNo%>õs FINAL1 ;
++A:%^RmVow ADJ-DER/COMP_kõlmmsab ;
++A:%^RmVow ADJ-DER/SUPERL_ummus ;
 +A: NMN_PÅÅTTAǨ ;
 
 LEXICON A_KUÂLAŽ
@@ -566,7 +581,7 @@ LEXICON A_KÕÕDDÂS !!= * @CODE@ kõõddâs:kõdd
 +A:s ADJ-DER/COMP_kõlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
 !+A+Der/MWN:âz N_VÕÕNÂS ;
-+A:âz NMN_VÕÕNÂS ;
++A:âz NMN_KÕÕDDÂS ;
 
 LEXICON A_JÕÕSKÂS !!= * @CODE@ jõõskâs:jõskk
 +A+Attr: FINAL1 ;
@@ -575,11 +590,17 @@ LEXICON A_JÕÕSKÂS !!= * @CODE@ jõõskâs:jõskk
 !+A+Der/MWN:âz NMN_TAALKÂS ;
 +A:âz NMN_TAALKÂS ;
 
+LEXICON A_VAALMÂŠ !!= * @CODE@ vaalmâš:valmm
++A+Attr: FINAL1 ;
++A:š ADJ-DER/COMP_kõlmmsab ;
++A:š ADJ-DER/SUPERL_ummus ;
++A:âž NMN_TAALKÂS ;
+
 LEXICON A_PIIUTÂS !!= * @CODE@ piiutâs:pihtt
 +A+Attr: FINAL1 ;
 +A:s ADJ-DER/COMP_kõlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
-+A:âz NMN_TAALKÂS ;
++A:âz NMN_PIIUTÂS ;
 
 LEXICON A_FIINÂS !!= * @CODE@ fiinâs:fijnn
 +A+Attr:%^XYY2VY FINAL1 ;	! fiin
@@ -682,13 +703,19 @@ LEXICON A_PUÄʹRES  !!= * @CODE@ puäʹres:puärˈr
 +A+Attr:%^PAL FINAL1 ;
 +A:s ADJ-DER/COMP_kõlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
-+A+Der/MWN:ez N_PUÄʹRES ; !!= * @CODE@   puäʹres:puärˈrez
++A:ez NMN_PUÄʹRES ; !!= * @CODE@   puäʹres:puärˈrez
 
 LEXICON A_ČUEʹĐES  !!= * @CODE@ čueʹđes:čuâtˈt
 +A+Attr:%^PAL FINAL1 ;
 +A:s ADJ-DER/COMP_kõlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
 +A+Der/MWN:ez N_ČUEʹĐES ; !!= * @CODE@   puäʹres:puärˈrez
+
+LEXICON A_ǨEEʹSTES  !!= * @CODE@ ǩeeʹstes:ǩeâstt
++A+Attr:%^PALE%^PAL FINAL1 ; !CHECKME
++A:s ADJ-DER/COMP_kõlmmsab ;
++A:s ADJ-DER/SUPERL_ummus ;
++A:ez NMN_ǨEEʹSTES ; !!= * @CODE@  ǩeeʹstes:ǩeâsttez
 
 
 LEXICON A_TUÕĐŠTEEI !!= * @CODE@ tuejjeei:tuejjee
