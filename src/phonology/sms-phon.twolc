@@ -1220,9 +1220,9 @@ OnSetC _ o (i|u) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^Pen: %^V2VV: ;
 "Even syllabic nouns I, relative vowel lengthening i"
 !! __@RULENAME@__ - ǩiđđ:ǩiiđ
  0:i <=> OnSetC _ [ e:i| i| ẹ:i ] RelVowLengthening  ;
-  OnSetC _ i  [(ʹ:|0:ʹ) CNoJ:|h: (ʹ:|0:ʹ) Cns:+] Vow: [Cns:+|:Cns]  %^Pen: %^V2VV: ;
+  OnSetC _ i  [(ʹ:|0:ʹ) CNoJ:|[h:|u] (ʹ:|0:ʹ) Cns:+] Vow: [Cns:+|:Cns]  %^Pen: %^V2VV: ;
 !! pirsted+V+Ind+Prs+ConNeg
-!!€ p0irâst%^Pen: %^V2VV
+!!€ p0irâst%^Pen%^V2VV
 !!€ piirâst0
    OnSetC _ [e:i|ẹ:i] [Cns:+|Cns:+ ((ˈ:|:ˈ)|:ˈ) Cns:+] %^V2VV: %^VOWRaise: ;
 !!€ p0ẹss%^V2VV%^VOWRaise%>už
@@ -1447,7 +1447,8 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 "Even-syllabic verbs I, Palatalization of k:ǩ here"
 !! __@RULENAME@__ - used in
  k:ǩ <=>
- Vow: (ʹ:|0:ʹ) (Cns:)   _ (0:) k: BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: ([%^CC2C:|%^XYY2XY:]) RBound ;
+ Vow: (ʹ:|0:ʹ) (Cns:)   _ (0:) k: [BetweenStemAndPALNo |Vow: Cns:+ PenBetweenStemAndPALNo %^Pen: ] (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: ([%^CC2C:|%^XYY2XY:]) RBound ;
+ Vow: (ʹ:|0:ʹ) (Cns:)   _ (0:) k: Vow: Cns:+ PenBetweenStemAndPALNo (%^Pen: [%^PALE:|%^PALÄ:|%^PALẸ:]) %^Pen: %^PAL: (%^Pen: [%^CC2C:|%^XYY2XY:]) RBound ;
 !! mieʹlǩǩ+N+Sg+Acc: __milk/maito__
 !!€ miâ0lkk%^PALE%^PAL%^CC2C
 !!€ mieʹlǩ0000
@@ -1561,7 +1562,10 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 !! äʹrbb+N+Sg+Gen: __heritage/perintö__
 !!€ 0ä0rbb%^V2VV%^PAL%^CC2C
 !!€ ääʹrb0000
-
+ Vow:  [i (ʹ:|0:ʹ)|(ʹ:|0:ʹ) Cns: ] b _   PenBetweenStemAndConsGrade %^Pen: [%^CC2C:|%^XYY2XY:] ;
+!! joorbâs+A+Sg+Nom
+!!€ j0orbbâz%^Pen%^V2VV%^Pen%^XYY2XY%^DeVC
+!!€ joorb0âs00000
 
 "Even syllabic verbs I, second consonant loss p:0"
 !! __@RULENAME@__ - used in
@@ -1625,7 +1629,7 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 ! njeiddad > njeeid
 ! 2012-06-12 v:u allows for uʹvdded
 !! - idd:id, +Imp+Sg2, +Ind+Prs+ConNeg double consonants following vowel and "i" at coda that become single consonants in gradation
-         d _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m]  [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ; 
+         d _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m]  PenBetweenStemAndConsGrade [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ; 
 
 
 
@@ -2392,26 +2396,26 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 !! b c č ǯ d đ g ǧ k ǩ l m n p r s š t v also htˈt nˈnj
 ! BetweenStemAndConsGrade [%^C2CC:|%^XY2XYY:]
 !! {{{ 
- ˈ:0 <=> (ʹ:|0:ʹ)     b _ b:     BetweenStemAndConsGrade [%^CCC2CC:|%^CCC2C:] ;
-         (ʹ:|0:ʹ)     c _ c:     BetweenStemAndConsGrade [%^CCC2CC:|%^CCC2C:] ;
-         (ʹ:|0:ʹ)     č _ č:     BetweenStemAndConsGrade [%^CCC2CC:|%^CCC2C:] ;
-         (ʹ:|0:ʹ)     ʒ _ ʒ:     BetweenStemAndConsGrade [%^CCC2CC:|%^CCC2C:] ;
-         (ʹ:|0:ʹ)     ǯ _ ǯ:     BetweenStemAndConsGrade [%^CCC2CC:|%^CCC2C:] ;
-         (ʹ:|0:ʹ)     d _ d:     BetweenStemAndConsGrade [%^CCC2CC:|%^CCC2C:] ;
-         (ʹ:|0:ʹ)     đ _ đ:     BetweenStemAndConsGrade [%^CCC2CC:|%^CCC2C:] ;
-         (ʹ:|0:ʹ)     g _ g:     BetweenStemAndConsGrade [%^CCC2CC:|%^CCC2C:] ;
-         (ʹ:|0:ʹ)     :ǧ _ [:ǧ|ǧ:0|g:0]     BetweenStemAndConsGrade [%^CCC2CC:|%^CCC2C:] ;
+ ˈ:0 <=> (ʹ:|0:ʹ)     b _ b:     [BetweenStemAndConsGrade | Vow: Cns:+  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     c _ c:     [BetweenStemAndConsGrade | Vow: Cns:+  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     č _ č:     [BetweenStemAndConsGrade | Vow: Cns:+  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     ʒ _ ʒ:     [BetweenStemAndConsGrade | Vow: Cns:+  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     ǯ _ ǯ:     [BetweenStemAndConsGrade | Vow: Cns:+  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     d _ d:     [BetweenStemAndConsGrade | Vow: Cns:+  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     đ _ đ:     [BetweenStemAndConsGrade | Vow: Cns:+  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     g _ g:     [BetweenStemAndConsGrade | Vow: Cns:+  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     :ǧ _ [:ǧ|ǧ:0|g:0]     [BetweenStemAndConsGrade | Vow: Cns:+  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
          (ʹ:|0:ʹ)     k: _ k:     [BetweenStemAndConsGrade | Vow: Cns:+ PenBetweenStemAndConsGrade] [%^CCC2CC:|%^CCC2C:|%^Pen: %^KKK2ZERO: ] ;
-         (ʹ:|0:ʹ)     :ǩ _ [:ǩ|ǩ:0|k:0]     BetweenStemAndConsGrade [%^CCC2CC:|%^CCC2C:] ;
-         (ʹ:|0:ʹ)     l _ l:     BetweenStemAndConsGrade [%^CCC2CC:|%^CCC2C:] ;
-         (ʹ:|0:ʹ)     m _ m:     BetweenStemAndConsGrade [%^CCC2CC:|%^CCC2C:] ;
-         (ʹ:|0:ʹ)     n _ n: (j) BetweenStemAndConsGrade [%^CCC2CC:|%^CCC2C:] ;
-         (ʹ:|0:ʹ)     p: _ p:     BetweenStemAndConsGrade [%^CCC2CC:|%^CCC2C:] ;
-         (ʹ:|0:ʹ)     r _ r:     BetweenStemAndConsGrade [%^CCC2CC:|%^CCC2C:] ;
-         (ʹ:|0:ʹ)     s _ s:     BetweenStemAndConsGrade [%^CCC2CC:|%^CCC2C:] ;
-         (ʹ:|0:ʹ)     š _ š:     BetweenStemAndConsGrade [%^CCC2CC:|%^CCC2C:] ;
-         (ʹ:|0:ʹ) (h) t: _ t:     BetweenStemAndConsGrade [%^CCC2CC:|%^CCC2C:] ;
-         (ʹ:|0:ʹ)     v _ v:     BetweenStemAndConsGrade [%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     :ǩ _ [:ǩ|ǩ:0|k:0]     [BetweenStemAndConsGrade | Vow: Cns:+  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     l _ l:     [BetweenStemAndConsGrade | Vow: Cns:+  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     m _ m:     [BetweenStemAndConsGrade | Vow: Cns:+  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     n _ n: (j) [BetweenStemAndConsGrade | Vow: Cns:+  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     p: _ p:     [BetweenStemAndConsGrade | Vow: Cns:+  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     r _ r:     [BetweenStemAndConsGrade | Vow: Cns:+  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     s _ s:     [BetweenStemAndConsGrade | Vow: Cns:+  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     š _ š:     [BetweenStemAndConsGrade | Vow: Cns:+  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ) (h) t: _ t:     [BetweenStemAndConsGrade | Vow: Cns:+  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     v _ v:     [BetweenStemAndConsGrade | Vow: Cns:+  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
 !! }}}
 
 
