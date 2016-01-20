@@ -360,10 +360,10 @@ stem_with_gradation="yes"
 
 
  * LEXICON N_ČUÕŠKK-PL  čuõšk:čuõškk
- *  ATTESTED-NOUN-STEM ;                    (1) čuõskk
- * :%>â ESS/PAR ;                           (6) čuõskkân
- * :%^XYY2XY PL-NOM ;       (2) čuõsk
- * :%^XYY2XY PL-OBL ;               (5) čuõskin
+ * +N: ATTESTED-NOUN-STEM ;                    (1) čuõskk
+ * +N:%>â ESS/PAR ;                           (6) čuõskkân
+ * +N:%^XYY2XY PL-NOM ;       (2) čuõsk
+ * +N:%^XYY2XY PL-OBL ;               (5) čuõskin
 
 
  * LEXICON N_RUÕIDD  ruõidd:ruõidd
@@ -589,6 +589,11 @@ single_consonant, long_vowel, no_palatalization, high_stem_vowel
 single_consonant, long_vowel, palatalization, high_stem_vowel
  * +Der/Dim+N:%^V2VV%^PAL%^CC2C N_MUÕRÂŽ-WITH-PAL ;   tooʹl-
 
+
+ * +N: ATTESTED-NOUN-STEM ;  toll
+ * +N:%>â ESS/PAR ;          tollân
+ * +N:%^V2VV%^CC2C PL-NOM ;  tool
+ * +N:%^V2VV%^CC2C PL-OBL ;  tooli, toolid, toolid, toolin, toolivuiʹm, toolitaa
 
 
  * LEXICON N_SIJDD  sijdd:sijdd
@@ -2317,6 +2322,37 @@ strong_geminate, long_vowel, depalatalization, low_stem_vowel
  * : E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) väll-
  * :%^PAL%^CC2C E-STEM-PX-ALLEGRO ;  (11) väʹl-
 
+ * LEXICON N_UʹCC  uʹcc:ucc
+similar_to: N_PAPP
+vowel: monophthong
+vowel_shift: ??
+consonantism: geminate
+!!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+!!1.3 Sg.Loc in -est (vowel shift)
+ Raised: Sg.Com, Pl.Obl
+ Lowered: ELSE
+ e-stems (Sg.Loc, Ess, Par).
+!!1.3.2 Sg.Ill vowel -a
+!!1.3.2.1 Has Palatalization
+ Palatalized: ELSE
+ Not Palatalized: Sg.Ill
+!!1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+!!1.3.2.1.1.1 Has Orthographic Gradation
+!!1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+ Strong grade: Sg.Nom, Ess, Par
+ Extra strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+!!FORMS
+NumContLex="1.113"
+** Yaml: __A-ucc__
+strong_geminate, short_vowel, palatalization, low_stem_vowel
+strong_geminate, short_vowel, depalatalization, low_stem_vowel
+strong_geminate, long_vowel, palatalization, low_stem_vowel
+strong_geminate, long_vowel, palatalization, high_stem_vowel
+strong_geminate, long_vowel, depalatalization, low_stem_vowel
+ * : E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) ucc-
+ * :%^PAL%^CC2C E-STEM-PX-ALLEGRO ;  (11) uʹc-
+
 
 
  * LEXICON N_EʹČČ  eʹčč:ečč
@@ -2647,6 +2683,21 @@ Is for nouns with ''-est'' Loc, Extra long vowel
  * :%^V2VV%^XYY2XY E-STEM_N_KUÂLAŽ ;  (9) Der/Dim.N.Sg.Nom: pääiǥaž
  *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) päikk-
  * :%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) päiʹǩ-
+
+ * LEXICON N_HÄÄʹSǨ  hääʹsǩ:hääsk
+** Yaml: __N-haeaesk__
+ * :%^PAL ATTESTED-NOUN-STEM ;	 (1) Sg.Nom: hääʹsǩ
+ * :%^PAL E-STEM_SG-NOM ;		   (1) Sg.Nom: hääʹsǩ
+ * %^PAL E-STEM_SG-ABE/ACC/GEN ;  (2) Pl.Nom: hääʹsǩ
+ * %^PAL PL-NOM ;  (2) Pl.Nom: hääʹsǩ
+ * : E-STEM_SG-ILL ;	      (3) Sg.Ill: hääska
+ * %^PAL%>e SG-LOC ;   (4) Sg.Loc: hääʹsǩest
+ * %^PAL SG-COM_IN ;      (5) Sg.Com: hääʹsǩin
+ * :%^PAL%>e ESS/PAR ; 	        (6) Ess: hääʹsǩen
+ * %^PAL%> E-STEM_PL-OBL ;    (8) Pl.Acc: hääʹsǩid
+ * : E-STEM_N_KUÂLAŽ ;  (9) Der/Dim.N.Sg.Nom: hääskaž
+ *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) hääsk-
+ * :%^PAL E-STEM-PX-ALLEGRO ;  (11) kääʹsǩ-
 
 
  * LEXICON N_SÄIʹMM  säiʹmm:säiʹmm
@@ -3653,7 +3704,6 @@ like PODD but also PAPP, N_KÕÕDDÂS
  * LEXICON N_TAALKÂS  taalkâs:talkkâz
  * LEXICON NMN_TAALKÂS  taalkâs:talkkâz
 like PÕRTT
-stemtype n-stem taalkâs:taalkâs
 ** Yaml: __N-taalkas__
  * :%^RmVow%^DeVC VÕÕNÂS-STEM-PX ;  võnns-
 
@@ -3699,8 +3749,7 @@ stemtype n-stem fiinâs:fiinâs
 
 CLASS 4 BISYLLABIC, HIGH VOWEL, DIPHTHONG, NO PALATALIZATION
  *  LEXICON N_TUÕVÂS  tuõvâs:tuõvvâz
- *  LEXICON NMN_TUÕVÂS  tuõvâs:tuõvvâz
-stemtype n-stem tuõvâs:tuõvâs
+ *  LEXICON NMN_TUÕVÂS  tuõvâs:tuõvˈvâz
 ** Yaml: __N-tuovas__
  * :%^RmVow%^DeVC VÕÕNÂS-STEM-PX ;  võnns-
 
