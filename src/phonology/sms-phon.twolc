@@ -397,7 +397,7 @@ PenBetweenStemAndConsGrade = [(%^Pen: %^V2VV:|%^Pen: %^VV2V:) ((%^Pen: %^VOWRais
 PenBetweenStemAndVowelLoss = [(%^Pen: %^V2VV:|%^Pen: %^VV2V:) [(%^Pen: %^VOWRaise:|%^Pen: %^VOWLower:) ((%^Pen: %^PALÂ:|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PALNo:|(%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PAL:)| %^Pen: %^VOWBack: (%^Pen: %^Allegro:) (%^Pen: %^PALNo:|%^Pen: %^PAL:)] ([%^Pen: %^C2CC:|%^Pen: %^XY2XYY:]|%^Pen: %^CC2C:|%^Pen: %^XYY2XY:|%^Pen: %^CC2CCC:)] ;
 
 
-PenBetweenStemAndStemFinalVoicing = [(%^Pen: %^V2VV:|%^Pen: %^VV2V:) [(%^Pen: %^VOWRaise:|%^Pen: %^VOWLower:) ((%^Pen: %^PALÂ:|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PALNo:|(%^Pen: %^PALÕ:|%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:) (%^Pen: %^Allegro:) %^Pen: %^PAL:)| %^Pen: %^VOWBack: (%^Pen: %^Allegro:) (%^Pen: %^PALNo:|%^Pen: %^PAL:) ] (%^Pen: %^C2CC:|%^Pen: %^XY2XYY:|%^Pen: %^XYY2VY:|%^Pen: %^CC2C:|%^Pen: %^XYY2XY:|%^Pen: %^CCC2CC:|%^Pen: %^CC2CCC:) (%^RmVow:)] ;
+PenBetweenStemAndStemFinalVoicing = [(%^Pen: %^V2VV:|%^Pen: %^VV2V:) [(%^Pen: %^VOWRaise:|%^Pen: %^VOWLower:) ((%^Pen: %^PALÂ:|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PALNo:|(%^Pen: %^PALÕ:|%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:) (%^Pen: %^Allegro:) %^Pen: %^PAL:)| %^Pen: %^VOWBack: (%^Pen: %^Allegro:) (%^Pen: %^PALNo:|%^Pen: %^PAL:) ] (%^Pen: %^C2CC:|%^Pen: %^XY2XYY:|%^Pen: %^XYY2VY:|%^Pen: %^CC2C:|%^Pen: %^XYY2XY:|%^Pen: %^CCC2CC:|%^Pen: %^CC2CCC:|%^Pen: %^CCC2C:) (%^RmVow:)] ;
 
 PenBetweenPALNoAndMorph = [(%^Pen: %^CC2C:|%^Pen: %^C2CC:|%^Pen: %^XYY2XY:|%^Pen: %^KK2GG:|%^Pen: %^GG2KK:|%^Pen: %^CC2CCC:|%^Pen: %^C2CCC:|%^Pen: %^CCC2C:|%^Pen: %^CCC2CC:|%^Pen: %^XYYY2XYY:|%^Pen: %^XYYY2XY:|%^Pen: %^XY2XYY:|%^Pen: %^XYY2VY:|%^Pen: %^XYY2VYY:|%^Pen: %^KKK2GG:|%^Pen: %^GG2KKK:) RBound ] ;
 
@@ -571,7 +571,7 @@ Rules
 !!€ Aanar%^RmVow%>a
 !!€ Aan0r0%>a
          OnSetC _ a: (i) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^Pen: %^VV2V: ; 
-   OnSetC :Vow+ (ʹ:|0:ʹ) [LongC|Cns:+ - [Cns:* [l|n]]] _ i: %^RmVow: %> Vow: ; 
+   OnSetC :Vow+ (ʹ:|0:ʹ) [LongC|Cns:+ - [Cns:* [l|n]]] _ i: %^RmVow:  ; 
 
  OnSetC _ a: (u) (ʹ:|0:ʹ) Cns: [ Cns:*|:Cns*]  %^VV2V:  ;
       Cns: (:Cns*)  _ (:ʼ) Cns:+ PenBetweenStemAndVowelLoss %^RmVow: ;
