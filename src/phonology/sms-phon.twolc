@@ -257,21 +257,6 @@ Definitions
  DummiesBeforeConsLength = [%^V2VV: |%^VV2V: |%^VOWRaise:| %^VOWLower:| %^PAL: | %^PALNo: |%^PALÂ: |%^PALÕ:| %^PALE: | %^PALÄ: | %^PALẸ: ] ;
  DummiesBeforeVowelHeight = [( %^V2VV: |%^VV2V: )] ; 
 
-!! {{{
-
-Diphth = [e â|e:i â:õ|e ä|e:i â:e|e:i ä:â|e:i ä:e|e:i ä:ẹ|i â|i:e â:ä|i â:e|i e|i:e e:â|i:e e:ä|i e:õ|i õ|i:e õ:â|i:e õ:ä|u â|u â:õ|u e|u e:â|u â:e|u â:ẹ|u e:õ|u e:ä|u õ|u õ:â|u õ:e|u å|u å:ä|u å:e| u å:ẹ|u å:õ|u ä|u ä:å|u ä:e|u ä:ẹ] ; !!= * @CODE@ 
-
-DbVow = [a a|a:ä a:ä|i i|i:e i:e|o o|o:å o:å|õ õ|õ:â õ:â|u u|u:o u:o|â â|â:õ â:õ|e e|e e:ä|e ä:e|e:i e:i|å å|å:o å:o|ä ä|ä:a ä:a] ; !!= * @CODE@ 
-
-2DbVow = [0:a a|0:a ä:a|0:i i|0:i e:i|0:o o|0:o u:o|0:o å:o|0:õ õ|0:õ â:õ|0:u u|0:u o:u|0:â â|0:e e|0:å å|0:å o:å|0:ä ä] ; !!= * @CODE@ 
-
-AllDbVow = [DbVow|2DbVow] ; !!= * @CODE@ 
-
-2SgVow = [a:0 a|a:0 a:ä|i:0 i|i:0 i:e|o:0 o|o:0 o:å|õ:0 õ|õ:0 õ:â|u:0 u|u:0 u:o|â:0 â|â:0 â:õ|e:0 e|e:0 e:i|å:0 å|å:0 å:o| ä:0 ä|ä:0 ä:a] ; !!= * @CODE@ 
-
-!! }}}
-
-
 !! preceded by two vowels
 !! {{{
 CC2CforPrecedingVV = [k:ǥ k:ǥ|k:j k:j|ǩ:j ǩ:j|ǩ:ǥ ǩ:ǥ|s:z s:z|š:ž š:ž|c:ʒ c:ʒ|č:j č:j|m m:0|v v:0|đ đ:0|n n:0|l l:0|p:v p:0|t:đ t:0|r r:0] ; !!= * @CODE@ 
@@ -322,24 +307,6 @@ OnSetC = [:Cns (Cns:|:Cns) |#|%>] ;
 RBound = [#|%>|»] ; !!= * @CODE@ 
 !! }}}
 
-!! relative lengthening of vowel right context following vowel:vowel
-! 0:õ <=> OnSetC _ ?:õ RelVowLengthening
-
-!! {{{
-RelVowLengthening = [(ʹ:|0:ʹ) [CCforPrecedingV2VV  %^V2VV:|CC2CforPrecedingVV %^V2VV:|Cns:  %^V2VV:|CC2CforPrecedingV2VV (a: i:) %^V2VV: |CC2CafterV2VVandUI %^V2VV: |XYY2XYCluster %^V2VV:] ] ; !!= * @CODE@
-!RelVowLengthening = [(ʹ:|0:ʹ) [CCforPrecedingV2VV  %^V2VV:|Cns: ( : :? ) %^V2VV:|CC2CforPrecedingV2VV (a: i:) %^V2VV: |CC2CafterV2VVandUI %^V2VV: |XYY2XYCluster %^V2VV:] ] ;
-!! }}}
-
-
-
-
-
-
-!! relative lengthening of vowel right context following vowel:vowel
-!! 0:u <=> OnSetC _ ?:u RelVowLengtheningNOTu
-!! {{{
-RelVowLengtheningNOTu = [(ʹ:|0:ʹ) [CCforPrecedingV2VV  %^Pen: %^V2VV: %^CShort:|[iCC2iCforPrecedingV2VV|CC2CforPrecedingV2VV] %^V2VV: %^CC2C:|CC2CforPrecedingVV %^CC2C:]] ; !!= * @CODE@
-!! }}}
 
 
 !! possible triggers before VOWLower and VOWRaise
@@ -1073,14 +1040,14 @@ Rules
 
 "Even syllabic verbs I, relative vowel lengthening 0:e"
 !! __@RULENAME@__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
- 0:e <=> OnSetC _ e RelVowLengthening ;
+ 0:e <=> OnSetC _ e  (ʹ:|0:ʹ) Cns:+ %^V2VV: BetweenVowHeightAndConsGrade ;
 !!€ čââʹlmt0eʹm%^V2VV
 !!€ čââʹlmtee0m0
         OnSetC _ Vow:e (i|u) (ʹ:|0:ʹ) Cns: (Cns:*|:Cns*) %^V2VV: ;
 !!€ p0ẹi0vv%^V2VV%^PAL%^XYY2XY
 !!€ peeiʹv0000
-         OnSetC _ i:e RelVowLengthening %^VOWLower: ;
-         OnSetC _ i:e RelVowLengthening %^VOWLower: ;
+         OnSetC _ i:e  (ʹ:|0:ʹ) Cns:+ %^V2VV: %^VOWLower: ;
+         OnSetC _ i:e  (ʹ:|0:ʹ) Cns:+ %^V2VV: %^VOWLower: ;
 !!€ v0iǯǯ%^V2VV%^VOWLower%>as 
 !!€ veeǯǯ00%>as
 
@@ -1202,7 +1169,8 @@ OnSetC _ o (i|u) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^Pen: %^V2VV: ;
 
 "Even syllabic nouns I, relative vowel lengthening i"
 !! __@RULENAME@__ - ǩiđđ:ǩiiđ
- 0:i <=> OnSetC _ [ e:i| i| ẹ:i ] RelVowLengthening  ;
+ 0:i <=> OnSetC _ [ e:i| ẹ:i ]  [Cns:+|Cns:+ ((ˈ:|:ˈ)|:ˈ) Cns:+] %^V2VV: %^VOWRaise:  ;
+OnSetC _ i [Cns:+|Cns:+ ((ˈ:|:ˈ)|:ˈ) Cns:+] %^V2VV: BetweenVowHeightAndMorph   ;
   OnSetC _ i  [(ʹ:|0:ʹ) CNoJ:|[h:|u] (ʹ:|0:ʹ) Cns:+] Vow: [Cns:+|:Cns]  %^Pen: %^V2VV: ;
 !! pirsted+V+Ind+Prs+ConNeg
 !!€ p0irâst%^Pen%^V2VV
@@ -1221,11 +1189,12 @@ OnSetC _ o (i|u) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^Pen: %^V2VV: ;
 "Even syllabic nouns, relative vowel extra lengthening u not followed by v"
 !! __@RULENAME@__ - declension of nouns kunn > kuun
  0:u <=> OnSetC _ [o:u|u] (ʹ:|0:ʹ) Cns: Cns:* (%^Pen: %^CC2C:) %^V2VV: ((%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:|%^PALNo:) BetweenPALNoAndMorph ;
- OnSetC _ [o:u|u] RelVowLengtheningNOTu ;
+ OnSetC _ o:u (i) ʹ:|0:ʹ) Cns: Cns:*  %^V2VV:  %^VOWRaise:  ;
+ OnSetC _ u (i) ʹ:|0:ʹ) Cns: Cns:*  %^V2VV: BetweenVowHeightAndMorph ;
            Cns: _  Vow:u (ʹ:|0:ʹ)  CNoV: Vow: [Cns:+|:Cns]   %^Pen: %^V2VV: [%>|#|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:] ;
  
 !! mainstummuš+N+Err/Orth+Sg+Gen
-!!€ mainstumm0ušš%^Pen: %^CC2C%^V2VV%^KK2GG
+!!€ mainstumm0ušš%^Pen%^CC2C%^V2VV%^KK2GG
 !!€ mainstum0uužž000
 
 
@@ -1559,7 +1528,7 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
  p:0 <=> Vow: (ʹ:|0:ʹ) (Cns:) p: _ BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
 !!€ ǩiâpp%^CC2C
 !!€ ǩiâv00
-          2SgVow (ʹ:|0:ʹ)            p _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndConsGrade  [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;  
+          Vow: (ʹ:|0:ʹ)            p _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndConsGrade  [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;  
 
 
 "Even syllabic verbs I, cg v:0"
@@ -1631,7 +1600,7 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 !!€ s0auʒʒ%^V2VV%^%^XYY2VY
 !!€ saauʒ000
 
-        2SgVow (ʹ:|0:ʹ) ʒ _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m]  PenBetweenStemAndConsGrade  [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;
+        Vow: (ʹ:|0:ʹ) ʒ _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m]  PenBetweenStemAndConsGrade  [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;
 
 
 "ǯ:0"
@@ -1647,7 +1616,7 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 "č:0"
 !! __@RULENAME@__ - used in
  č:0 <=>
-        2SgVow (ʹ:|0:ʹ) Cns: č _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndConsGrade  [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;
+        Vow: (ʹ:|0:ʹ) Cns: č _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndConsGrade  [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;
 
        Vow: [ (ʹ:|0:ʹ)  Cns: | [u|i] (ʹ:|0:ʹ) ] č: _ BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
        Vow:  (ʹ:|0:ʹ) [h:|j:] (ʹ:|0:ʹ) č:  _ BetweenStemAndConsGrade %^XYY2VY: ;
@@ -1657,7 +1626,7 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 "c:0"
 !! __@RULENAME@__ - used in
  c:0 <=>
-        2SgVow (ʹ:|0:ʹ) Cns: c _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndConsGrade  [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;
+        (ʹ:|0:ʹ) Cns: c _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndConsGrade  [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;
        Vow: [ (ʹ:|0:ʹ)  Cns: | [u|i] (ʹ:|0:ʹ) ] c: _ BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
        Vow:  (ʹ:|0:ʹ) [h:|j:] (ʹ:|0:ʹ) c:  _ BetweenStemAndConsGrade %^XYY2VY: ;
        Vow: [ (ʹ:|0:ʹ)  Cns: | [u|i] (ʹ:|0:ʹ) ] c: _ Vow: Cns:+ PenBetweenStemAndConsGrade [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;
@@ -1667,7 +1636,7 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 !! __@RULENAME@__ - used in
  ž:0 <=>
       Vow: (ʹ:|0:ʹ) Cns: ž _  BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
-        2SgVow (ʹ:|0:ʹ) Cns: ž _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndConsGrade  [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;
+         (ʹ:|0:ʹ) Cns: ž _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndConsGrade  [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;
 
 
 
@@ -1675,7 +1644,7 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 !! __@RULENAME@__ - used in
  z:0 <=>
       Vow: (ʹ:|0:ʹ) Cns: z _  BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
-        2SgVow (ʹ:|0:ʹ) Cns: z _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndConsGrade  [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;
+        (ʹ:|0:ʹ) Cns: z _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndConsGrade  [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;
       Vow: _ PenBetweenStemAndVowelLoss (%^PenVow2a:) %^RmCns: ;
 !!€ ǩeâsttez%^PenVow2a%^RmCns
 !!€ ǩeâstta000
@@ -1772,8 +1741,8 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 !!€ čâustõk%^K2G%>stes
 !!€ čâustõǥ0%>stes
 
-  OnSetC [DbVow|Diphth]  k: _ (i:) BetweenStemAndPALNo %^KK2GG: ;
-  OnSetC [DbVow|Diphth]  _  k: (i:) BetweenStemAndPALNo %^KK2GG: ;
+  Vow:  k: _ (i:) BetweenStemAndPALNo %^KK2GG: ;
+  Vow:  _  k: (i:) BetweenStemAndPALNo %^KK2GG: ;
     k: _ (%^V2VV:) %^KK2GG: ;
     _ k: (%^V2VV:) %^KK2GG: ;
 !!€ j0okk%^V2VV%^KK2GG
@@ -1805,13 +1774,13 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 !! with allegro
 
 !!2015-10-05
-  OnSetC [DbVow|Diphth] :ʹ k: (ˈ:)  _ BetweenStemAndPALAllo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: [ %^KK2GG:| %^KKK2GG:] ;
-  OnSetC [DbVow|Diphth] :ʹ  _ (ˈ:) k: BetweenStemAndPALAllo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: [%^KK2GG: | %^KKK2GG:] ; 
+  Vow: :ʹ k: (ˈ:)  _ BetweenStemAndPALAllo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: [ %^KK2GG:| %^KKK2GG:] ;
+  Vow: :ʹ  _ (ˈ:) k: BetweenStemAndPALAllo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: [%^KK2GG: | %^KKK2GG:] ; 
 !!€ suä0kk%^PALẸ%^PAL%^KK2GG
 !!€ suẹʹjj000
 
-  [DbVow|Diphth] :ʹ k:  (ˈ:)   _ Vow: Cns:* PenBetweenStemAndPALAllo (%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:) %^Pen: %^PAL: %^Pen: %^KKK2GG: ;
-   [DbVow|Diphth] :ʹ  _  (ˈ:)  k: Vow: Cns:* PenBetweenStemAndPALAllo (%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:) %^Pen: %^PAL: %^Pen: %^KKK2GG: ; 
+  Vow :ʹ k:  (ˈ:)   _ Vow: Cns:* PenBetweenStemAndPALAllo (%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:) %^Pen: %^PAL: %^Pen: %^KKK2GG: ;
+   Vow: :ʹ  _  (ˈ:)  k: Vow: Cns:* PenBetweenStemAndPALAllo (%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:) %^Pen: %^PAL: %^Pen: %^KKK2GG: ; 
 !!€ jeä0kˈkel%^Pen: %^PALE%^Pen: %^PAL%^Pen: %^KKK2GG%^RmVow%>až
 !!€ jeeʹj0j0l0000%>až
 
@@ -1824,8 +1793,8 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
  Vow: (ʹ:|0:ʹ) ǩ: _    BetweenStemAndPALAllo ((%^PALÄ:|%^PALẸ:|%^PALE:) %^PAL:) %^KK2GG: ;
          Vow: (ʹ:|0:ʹ)    _ ǩ: BetweenStemAndPALAllo ((%^PALÄ:|%^PALẸ:|%^PALE:) %^PAL:) %^KK2GG: ;
 
-  OnSetC [DbVow|Diphth] (ʹ:|0:ʹ) ǩ:   _ BetweenStemAndPALAllo ((%^PALÄ:|%^PALẸ:|%^PALE:) %^PAL:) %^KK2GG: ;
-  OnSetC [DbVow|Diphth] (ʹ:|0:ʹ)  _  ǩ: BetweenStemAndPALAllo ((%^PALÄ:|%^PALẸ:|%^PALE:) %^PAL:) %^KK2GG: ; 
+  Vow: (ʹ:|0:ʹ) ǩ:   _ BetweenStemAndPALAllo ((%^PALÄ:|%^PALẸ:|%^PALE:) %^PAL:) %^KK2GG: ;
+  Vow: (ʹ:|0:ʹ)  _  ǩ: BetweenStemAndPALAllo ((%^PALÄ:|%^PALẸ:|%^PALE:) %^PAL:) %^KK2GG: ; 
 
   Vow:   (ʹ:|0:ʹ) ǩ: (ˈ:) _ PALAllo ((%^PALÄ:|%^PALẸ:|%^PALE:) %^PAL:)  %^KKK2GG: ; 
   Vow:   (ʹ:|0:ʹ)          _ (ˈ:) ǩ: PALAllo ((%^PALÄ:|%^PALẸ:|%^PALE:) %^PAL:) %^KKK2GG: ; 
@@ -1853,8 +1822,8 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 !! with allegro
 
 
-          Diphth       (ʹ:|0:ʹ) š:  ˈ:  _   BetweenStemAndConsGrade %^KKK2GG: ;
-          Diphth      (ʹ:|0:ʹ) _   ˈ:  š:  BetweenStemAndConsGrade %^KKK2GG: ;
+          Vow:      (ʹ:|0:ʹ) š:  ˈ:  _   BetweenStemAndConsGrade %^KKK2GG: ;
+          Vow:      (ʹ:|0:ʹ) _   ˈ:  š:  BetweenStemAndConsGrade %^KKK2GG: ;
 !!€ kõõččm0õšš%^V2VV%^KK2GG
 !!€ kõõččmõõžž00
        Vow:  _ š: (%^VV2V: ) %^KK2G: ;
@@ -2378,7 +2347,7 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
           (ʹ:|0:ʹ) (h) t _ t     [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
           (ʹ:|0:ʹ)     v _ v     [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
 
-!Diphth _ (ʹ:|0:ʹ) :Cns Cns:* BetweenStemAndPALNo %^Allegro: ;
+
 
 
 
