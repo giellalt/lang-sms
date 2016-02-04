@@ -55,14 +55,19 @@ Alphabet
 !  for consonant lengthening
 %{XC%}:m
 %{XC%}:n
-!%{XC%}:v
+%{XC%}:v
+%{XC%}:d
+%{XC%}:r
+%{XC%}:l
+%{XC%}:k
+%{XC%}:ǥ
+%{XC%}:s
+%{XC%}:š
+%{XC%}:z
+%{XC%}:ž
 
-!%{XC%}:d
-!%{XC%}:r
-!%{XC%}:l
-
-!%{XC%}:k
-
+! for vowel lengthening
+%{XV%}:0
 
 !! !! Trigger symbols
 %^Pen:0 !!= * @CODE@ for combinations 2015-09-28 Miikka
@@ -249,43 +254,6 @@ Definitions
  DummiesBeforeConsLength = [%^V2VV: |%^VV2V: |%^VOWRaise:| %^VOWLower:| %^PAL: | %^PALNo: |%^PALÂ: |%^PALÕ:| %^PALE: | %^PALÄ: | %^PALẸ: ] ;
  DummiesBeforeVowelHeight = [( %^V2VV: |%^VV2V: )] ; 
 
-!! preceded by two vowels
-!! {{{
-CC2CforPrecedingVV = [k:ǥ k:ǥ|k:j k:j|ǩ:j ǩ:j|ǩ:ǥ ǩ:ǥ|s:z s:z|š:ž š:ž|c:ʒ c:ʒ|č:j č:j|m m:0|v v:0|đ đ:0|n n:0|l l:0|p:v p:0|t:đ t:0|r r:0] ; !!= * @CODE@ 
-!! }}}
-
-!! preceded by one vowel Vx=>VxVx påll=>pååll
-!|ǧ:j ǧ:0|ǧ:ǥ ǧ:0 
-!! {{{
-CCforPrecedingV2VV =  [b b|p p|m m|v v| d d|t t|đ đ|n n|l l|r r|s s|š š|c c|č č| ǯ ǯ | k k|ǩ ǩ|g g|ǧ ǧ|ǧ:g ǧ:g|ǧ:ǥ ǧ:ǥ ] ; !!= * @CODE@ 
-
-iCC2iCforPrecedingV2VV = [ i (ʹ:|0:ʹ) [b b:0|ʒ ʒ:0|d d:0|g g:0|k k:0|ǩ ǩ:0|l l:0|m m:0|n n:0|p p:0|r r:0|t t:0|v v:0]] ; !!= * @CODE@ 
-
-uCC2uCforPrecedingV2VV = [ [u|%{VU%}:u] (ʹ:|0:ʹ) [ʒ ʒ:0|d d:0|g g:0|k k:0|ǩ ǩ:0|l l:0|m m:0|n n:0|p p:0|r r:0|t t:0]] ; !!= * @CODE@ 
-!! }}}
-
-!! extra long vowel (u or i)
-!! {{{
-CC2CafterV2VVandUI = [uCC2uCforPrecedingV2VV|iCC2iCforPrecedingV2VV] ;  !!= * @CODE@ 
-!! }}}
-
-!! extra long vowel (d or l or r)
-!! {{{
-CC2CforPrecedingV2VV = [l [b b:0|ǧ:j ǧ:0|ǧ:ǥ ǧ:0|m m:0|t t:0]|m p p:0|p c c:0|r [d d:0|n n:0]|s [k: k:0|ǩ: ǩ:0|t t:0]] ; !!= * @CODE@ 
-!! }}}
-
-!! extra long consonant (d or l or r)
-!! {{{
-C2CCafterVV2V = [l [b 0:b|j:ǧ 0:ǧ|ǥ:ǧ 0:ǧ|m 0:m|t 0:t]|m p 0:p|p c 0:c|r d 0:d|s [:k 0:k|:ǩ 0:ǩ|t 0:t]] ; !!= * @CODE@ 
-!! }}}
-
-!! Long consonant cluster
-LongCluster = [l [d d |g g|ǧ ǧ|m m|t t]|m p p|p c c|r d d |s [k k|ǩ ǩ|t t]] ;
-
-!! Shortening consonant cluster
-XYY2XYCluster = [l [m m:|b b:|p p:| d d:|t t:|g g:|ǧ: ǧ:|k: k:|ǩ: ǩ:]|m [p p:| j j: ]|p c c:|r [d d:|g: g:|ǧ: ǧ:|k: k:|ǩ: ǩ:|č: č:|t t: | j j: ] |s [k k:|ǩ ǩ:|t t:]] ;
-
-
 
 !! Short consonant cluster
 
@@ -445,7 +413,7 @@ Rules
 
 "Even syllabic verbs I, vowel shortening u:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
- u:0 <=> OnSetC _ u: (ʹ:|0:ʹ) [C2CCafterVV2V|Cns: :Cns+] (i:) %^VV2V: ;
+ u:0 <=> OnSetC _ u: (ʹ:|0:ʹ) [Cns: :Cns+] (i:) %^VV2V: ;
 !! juurd+N+Ess __thought__
 !!€ juurd0%^VV2V%^C2CC%>j%>en
 !!€ j0urdd00%>j%>en
