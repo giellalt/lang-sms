@@ -510,7 +510,7 @@ Rules
 !!€ Aanar%^RmVow%>a
 !!€ Aan0r0%>a
          OnSetC _ a: (i) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^Pen: %^VV2V: ; 
-    ?:Vow+ (ʹ:|0:ʹ) [Cns:+ - [Cns:* [l|n]]] _ i: %^RmVow:  ; 
+    :Vow+ (ʹ:|0:ʹ) [Cns:+ - [Cns:* [l|n]]] _ i: %^RmVow:  ; 
 
  OnSetC _ a: (u) (ʹ:|0:ʹ) Cns: [ Cns:*|:Cns*]  %^VV2V:  ;
       Cns: (:Cns*)  _ (:ʼ) Cns:+ PenBetweenStemAndVowelLoss %^RmVow: ;
@@ -526,7 +526,7 @@ Rules
 "vowel to syllable mark a:ʼ"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
 !! {{{
- a:ʼ <=> ?:Vow+ (ʹ:|0:ʹ)  Cns:* [l|n]  _ i: %> Vow: ;
+ a:ʼ <=> :Vow+ (ʹ:|0:ʹ)  Cns:* [l|n]  _ i: %> Vow: ;
 !! }}}
 
 
@@ -557,9 +557,9 @@ Rules
         s (ˈ:) s BetweenStemAndConsGrade (%^CCC2CC:) %>  _ s ; 
         t (ˈ:) t: BetweenStemAndConsGrade (%^CCC2CC:|%^XYY2XY:) %>  _ t ; 
         k (ˈ:) k BetweenStemAndConsGrade (%^CCC2CC:) %>  _ k ; 
-        ?:ǩ (ˈ:) :ǩ BetweenStemAndConsGrade BetweenPALNoAndMorphRightArrow %> _ ǩ ; 
-        ?:ž (ˈ:) :ž BetweenStemAndConsGrade BetweenPALNoAndMorphRightArrow %>  _ ž ; 
-        ?:č (ˈ:) :č BetweenStemAndConsGrade BetweenPALNoAndMorphRightArrow %>  _ č ; 
+        Cns:ǩ (ˈ:) Cns:ǩ BetweenStemAndConsGrade BetweenPALNoAndMorphRightArrow %> _ ǩ ; 
+        Cns:ž (ˈ:) Cns:ž BetweenStemAndConsGrade BetweenPALNoAndMorphRightArrow %>  _ ž ; 
+        Cns:č (ˈ:) Cns:č BetweenStemAndConsGrade BetweenPALNoAndMorphRightArrow %>  _ č ; 
 !!€ ijss%>0sa
 !!€ ijss%>ʼsa
 !!€ kåčč%>0čem
@@ -1019,8 +1019,8 @@ Rules
 
 !"Relative vowel lengthening 0:Vx"
 ! __@RULENAME@__ - used in
-! 0:Vx <=> OnSetC _ ?:Vx (u:|i:|%{VU%}:|:u) (ʹ:|0:ʹ)  Cns: [Cns:*|:Cns*] %^V2VV: ;
-!  OnSetC _ ?:Vx (u:|i:|%{VU%}:) (ʹ:|0:ʹ)  Cns: [Cns:*|:Cns*] Vow: Cns:+  %^Pen: %^V2VV: ;
+! 0:Vx <=> OnSetC _ :Vx (u:|i:|%{VU%}:|:u) (ʹ:|0:ʹ)  Cns: [Cns:*|:Cns*] %^V2VV: ;
+!  OnSetC _ :Vx (u:|i:|%{VU%}:) (ʹ:|0:ʹ)  Cns: [Cns:*|:Cns*] Vow: Cns:+  %^Pen: %^V2VV: ;
 !                where Vx in (a å) ;
 
 "0:ẹ relative vowel lengthening"
