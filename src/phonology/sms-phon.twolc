@@ -106,14 +106,10 @@ Alphabet
 %^CC2C:0 	!!= * @CODE@ Shortens consonant
 %^C2CC:0 	!!= * @CODE@ Lengthens consonant
 %^CC2CCC:0 	!!= * @CODE@ Strong to Extra Strong consonant
-%^C2CCC:0 	!!= * @CODE@ Weak to Extra strong consonant
 %^CCC2C:0 	!!= * @CODE@ Extra Strong to Weak consonant
 %^CCC2CC:0 	!!= * @CODE@ Extra Strong to Strong consonant
-%^XYYY2XYY:0 	!!= * @CODE@ Weakens Extra strong to strong consonant cluster
-%^XYYY2XY:0 	!!= * @CODE@ Weakens Extra strong to weak consonant cluster
 %^XYY2XY:0 	!!= * @CODE@ Shortens consonant cluster
 %^XY2XYY:0 	!!= * @CODE@ Lengthens consonant cluster
-%^XY2XYYY:0 	!!= * @CODE@ Lengthens consonant cluster
 %^XYY2VY:0	!!= * @CODE@ Consonant cluster to vowel and consonant sijdd:siid
 %^XYY2VYY:0	!!= * @CODE@ Consonant cluster to vowel and geminate uvdd:ouʹdd
 %^XYY2IY:0	!!= * @CODE@ Consonant cluster to i  and consonant kueʹhtt:kueiʹt
@@ -125,8 +121,6 @@ Alphabet
 %^KK2G:0		!!= * @CODE@ Geminate weakening	 in allegro pååss:påz
 %^K2GG:0	!!= * @CODE@ Geminate weakening čårrõs:čårrõõzz
 %^K2G:0		!!= * @CODE@ Geminate weakening	 in allegro čâustõk
-%^GG2KK:0	!!= * @CODE@ Geminate strengthening
-%^GG2KKK:0	!!= * @CODE@ Geminate extra strengthening čuâǥǥas:čuõkˈksa
 
 
 !%^PenVV2V:0     
@@ -170,8 +164,6 @@ Alphabet
 !! Geminate weakening jokk:jooǥǥ
 !%^PenGG2KK:0       
 !! Geminate strengthening
-!%^PenGG2KKK:0      
-!! Geminate extra strengthening čuâǥǥas:čuõkˈksa
 
 ! %^PenAllegro:0	    
 !! This introduces vertical bar after diphth before consonants
@@ -333,9 +325,9 @@ BetweenVowHeightAndMorph = [(%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) ((%
 !! }}}
 
 
-BetweenPALNoAndMorphRightArrow = [(%^CC2C:|%^C2CC:|%^XY2XYY:|%^XYY2XY:|%^KK2GG:|%^GG2KK:|%^CC2CCC:|%^C2CCC:|%^CCC2C:|%^CCC2CC:|%^XYYY2XYY:|%^XYYY2XY:|%^XY2XYYY:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:|%^GG2KKK:) ] ;
+BetweenPALNoAndMorphRightArrow = [(%^CC2C:|%^C2CC:|%^XY2XYY:|%^XYY2XY:|%^KK2GG:|%^CC2CCC:|%^CCC2C:|%^CCC2CC:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:) ] ;
 
-BetweenPALNoAndMorph = [(%^CC2C:|%^C2CC:|%^XY2XYY:|%^XYY2XY:|%^KK2GG:|%^GG2KK:|%^CC2CCC:|%^C2CCC:|%^CCC2C:|%^CCC2CC:|%^XYYY2XYY:|%^XYYY2XY:|%^XY2XYYY:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:|%^GG2KKK:) RBound ] ;
+BetweenPALNoAndMorph = [(%^CC2C:|%^C2CC:|%^XY2XYY:|%^XYY2XY:|%^KK2GG:|%^CC2CCC:|%^CCC2C:|%^CCC2CC:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:) RBound ] ;
 
 PenBetweenStemAndPALNo = [(%^Pen: %^V2VV:|%^Pen: %^VV2V:) (%^Pen: %^VOWRaise:|%^Pen: %^VOWLower:|%^Pen: %^VOWBack:) (%^Pen: %^Allegro:) ] ;
 
@@ -346,7 +338,7 @@ PenBetweenStemAndVowelLoss = [(%^Pen: %^V2VV:|%^Pen: %^VV2V:) [(%^Pen: %^VOWRais
 
 PenBetweenStemAndStemFinalVoicing = [(%^Pen: %^V2VV:|%^Pen: %^VV2V:) [(%^Pen: %^VOWRaise:|%^Pen: %^VOWLower:) ((%^Pen: %^PALÂ:|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PALNo:|(%^Pen: %^PALÕ:|%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:) (%^Pen: %^Allegro:) %^Pen: %^PAL:)| %^Pen: %^VOWBack: (%^Pen: %^Allegro:) (%^Pen: %^PALNo:|%^Pen: %^PAL:) ] (%^Pen: %^C2CC:|%^Pen: %^XY2XYY:|%^Pen: %^XYY2VY:|%^Pen: %^CC2C:|%^Pen: %^XYY2XY:|%^Pen: %^CCC2CC:|%^Pen: %^CC2CCC:|%^Pen: %^CCC2C:) (%^RmVow:)] ;
 
-PenBetweenPALNoAndMorph = [(%^Pen: %^CC2C:|%^Pen: %^C2CC:|%^Pen: %^XYY2XY:|%^Pen: %^KK2GG:|%^Pen: %^GG2KK:|%^Pen: %^CC2CCC:|%^Pen: %^C2CCC:|%^Pen: %^CCC2C:|%^Pen: %^CCC2CC:|%^Pen: %^XYYY2XYY:|%^Pen: %^XYYY2XY:|%^Pen: %^XY2XYY:|%^Pen: %^XYY2VY:|%^Pen: %^XYY2VYY:|%^Pen: %^KKK2GG:|%^Pen: %^GG2KKK:) RBound ] ;
+PenBetweenPALNoAndMorph = [(%^Pen: %^CC2C:|%^Pen: %^C2CC:|%^Pen: %^XYY2XY:|%^Pen: %^KK2GG:|%^Pen: %^CC2CCC:|%^Pen: %^CCC2C:|%^Pen: %^CCC2CC:|%^Pen: %^XY2XYY:|%^Pen: %^XYY2VY:|%^Pen: %^XYY2VYY:|%^Pen: %^KKK2GG:) RBound ] ;
 
 
 !! neutral to vowel height and backness
@@ -358,7 +350,7 @@ NeutrHighBack = [(%^VOWLower:|%^VOWRaise:) (%^VOWFront:|%^VOWBack:)] ; !!= * @CO
 VNeutrGrade = [(%^VV2V: |%^V2VV: )];
 !! neutral to consonant length
 !! {{{
-CNeutrGrade = [(%^CC2C: |[%^C2CC:|%^XY2XYY:] |%^C2CCC: |%^CC2CCC: |%^KK2GG: |%^KKK2GG: |%^XYY2VY: |%^XYY2VYY:|%^CCC2CC: )] ;
+CNeutrGrade = [(%^CC2C: |[%^C2CC:|%^XY2XYY:] |%^CC2CCC: |%^KK2GG: |%^KKK2GG: |%^XYY2VY: |%^XYY2VYY:|%^CCC2CC: )] ;
 !! }}}
 !! neutral to vowel and consonant length
 !! {{{
@@ -1111,11 +1103,11 @@ Rules
 ! €s0ähss%^V2VV%^XYY2VY%>am
 ! €sääus000%>am
 
- OnSetC _ [å:ä|ä|a:ä] (?:u|i) (ʹ:|0:ʹ) Cns:+ %^V2VV: ( %^VOWLower: )  ; 
+ OnSetC _ [å:ä|ä|a:ä] (h:u|u|i) (ʹ:|0:ʹ) Cns:+ %^V2VV: ( %^VOWLower: )  ; 
 !Distinguishing mainstam and maainstam
 !- kååʹmmerd, maainâst Vowel lengthening in INDPRSSG3 and IMPSG2
-    OnSetC _ ä (?:u|i) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] [%^Pen: %^V2VV:|%^IMPSG2:|%^INDPRSSG3:] ;
-    OnSetC _ ä (i|?:u) (ʹ:|0:ʹ) Cns:+ Vow: Cns:* %^Pen: %^V2VV: ;
+    OnSetC _ ä (h:u|u|i) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] [%^Pen: %^V2VV:|%^IMPSG2:|%^INDPRSSG3:] ;
+    OnSetC _ ä (i|h:u|u) (ʹ:|0:ʹ) Cns:+ Vow: Cns:* %^Pen: %^V2VV: ;
 
 
 
@@ -1144,7 +1136,7 @@ Rules
 "Even syllabic verbs I, relative vowel lengthening 0:o"
 !! __@RULENAME@__ -  simultaneous lengthening and lowering: juʹrdded > joordam juʹrdded+V+Ind+Prs+Sg1
  0:o <=>
-   OnSetC _ [[:o - 0:]  [Cns: - v: ] [Cns:* |:Cns*] | u:o [%{VU%}:u|(ʹ:) v:] (ʹ:|0:ʹ) [d|l|r|ʒ] | [:o - 0:]  (ʹ:) [ v:|h:]  (0:ʹ) [d d:|l l:|r r:|ʒ ʒ:|s s:|t t:| č č: |c c: ] ] %^V2VV:  %^VOWLower: ;
+   OnSetC _ [u:o  [Cns: - v: ] [Cns:* |:Cns*] | u:o [%{VU%}:u|(ʹ:) v:] (ʹ:|0:ʹ) [d|l|r|ʒ] | u:o  (ʹ:) [ v:|h:]  (0:ʹ) [d d:|l l:|r r:|ʒ ʒ:|s s:|t t:| č č: |c c: ] ] %^V2VV:  %^VOWLower: ;
 !!€ 0uvdd%^V2VV%^VOWLower%^XYY2VY%>če
 !!€ ooud0000%>če
 !! juʹrdded+V+Ind+Prs+Sg1 __think__
@@ -1169,13 +1161,13 @@ OnSetC _ o (i|u) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|:Cns] %^Pen: %^V2VV: ;
 
 "Even syllabic nouns I, relative vowel lengthening i"
 !! __@RULENAME@__ - ǩiđđ:ǩiiđ
- 0:i <=> OnSetC _ [ e:i| ẹ:i ]  [Cns:+|Cns:+ ((ˈ:|:ˈ)|:ˈ) Cns:+] %^V2VV: %^VOWRaise:  ;
-OnSetC _ i [Cns:+|Cns:+ ((ˈ:|:ˈ)|:ˈ) Cns:+] %^V2VV: BetweenVowHeightAndMorph   ;
+ 0:i <=> OnSetC _ [ e:i| ẹ:i ]  [Cns:+|Cns:+ (ˈ:|:ˈ) Cns:+] %^V2VV: %^VOWRaise:  ;
+OnSetC _ i [Cns:+|Cns:+ (ˈ:|:ˈ) Cns:+] %^V2VV: BetweenVowHeightAndMorph   ;
   OnSetC _ i  [(ʹ:|0:ʹ) CNoJ:|[h:|u] (ʹ:|0:ʹ) Cns:+] Vow: [Cns:+|:Cns]  %^Pen: %^V2VV: ;
 !! pirsted+V+Ind+Prs+ConNeg
 !!€ p0irâst%^Pen%^V2VV
 !!€ piirâst0
-   OnSetC _ [e:i|ẹ:i] [Cns:+|Cns:+ ((ˈ:|:ˈ)|:ˈ) Cns:+] %^V2VV: %^VOWRaise: ;
+   OnSetC _ [e:i|ẹ:i] [Cns:+|Cns:+ (ˈ:|:ˈ) Cns:+] %^V2VV: %^VOWRaise: ;
 !!€ p0ẹss%^V2VV%^VOWRaise%>už
 !!€ piiss00%>už
 
@@ -1191,7 +1183,7 @@ OnSetC _ i [Cns:+|Cns:+ ((ˈ:|:ˈ)|:ˈ) Cns:+] %^V2VV: BetweenVowHeightAndMorph 
  0:u <=> OnSetC _ [o:u|u] (ʹ:|0:ʹ) Cns: Cns:* (%^Pen: %^CC2C:) %^V2VV: ((%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:|%^PALNo:) BetweenPALNoAndMorph ;
  OnSetC _ o:u (i) (ʹ:|0:ʹ) Cns: Cns:*  %^V2VV:  %^VOWRaise:  ;
  OnSetC _ u (i) (ʹ:|0:ʹ) Cns: Cns:*  %^V2VV: BetweenVowHeightAndMorph ;
-           Cns: _  Vow:u (ʹ:|0:ʹ)  CNoV: Vow: [Cns:+|:Cns]   %^Pen: %^V2VV: [%>|#|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:] ;
+           Cns: _  u (ʹ:|0:ʹ)  CNoV: Vow: [Cns:+|:Cns]   %^Pen: %^V2VV: [%>|#|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:] ;
  
 !! mainstummuš+N+Err/Orth+Sg+Gen
 !!€ mainstumm0ušš%^Pen%^CC2C%^V2VV%^KK2GG
@@ -1749,6 +1741,9 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 !!€ jooǥǥ00
     k: ˈ: _ (%^V2VV:) %^KKK2GG: ;
   Vow:Vow  _ ˈ: k: (%^V2VV:) %^KKK2GG: ;
+!! čuâǥǥas+N+Sg+Nom  __road__
+!!€ čuâkˈk%^KK2GG%>as
+!!€ čuâǥ0ǥ00%>as
 
   Vow:Vow  _ k: BetweenStemAndPALNo %^KK2G: ;
 !! loǥškueʹtted __begin to read__
@@ -2088,36 +2083,36 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 
 !"Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:m"
 !!! __@RULENAME@__ - used in
-! %{XC%}:m <=>  Vow: (ʹ:|0:ʹ) m _ BetweenStemAndConsGrade [[%^C2CC:|%^XY2XYY:]|%^C2CCC:] ;
+! %{XC%}:m <=>  Vow: (ʹ:|0:ʹ) m _ BetweenStemAndConsGrade [%^C2CC:|%^XY2XYY:] ;
 !!!€ čââʹlmteʹm%{XC%}%^PALNo%^C2CC%>a
 !!!€ čââʹlmte0mm000%>a
 
 !"Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:v"
 !!! __@RULENAME@__ - used in
-! %{XC%}:v <=>  Vow: (ʹ:|0:ʹ) v _ BetweenStemAndConsGrade [[%^C2CC:|%^XY2XYY:]|%^C2CCC:] ;
+! %{XC%}:v <=>  Vow: (ʹ:|0:ʹ) v _ BetweenStemAndConsGrade [%^C2CC:|%^XY2XYY:] ;
 
 
 !"Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:n"
 !!! __@RULENAME@__ - used in
-! %{XC%}:n <=>  Vow: (ʹ:|0:ʹ) n _ BetweenStemAndConsGrade [[%^C2CC:|%^XY2XYY:]|%^C2CCC:] ;
+! %{XC%}:n <=>  Vow: (ʹ:|0:ʹ) n _ BetweenStemAndConsGrade [%^C2CC:|%^XY2XYY:] ;
 !!€ mään%{XC%}%^VV2V%^VOWRaise%^C2CC%>u
 !!€ m0ann0000u
 
 !"Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:d"
 !!! __@RULENAME@__ - used in
-! %{XC%}:d <=>  Vow: (ʹ:|0:ʹ) d _ BetweenStemAndConsGrade [[%^C2CC:|%^XY2XYY:]|%^C2CCC:] ;
+! %{XC%}:d <=>  Vow: (ʹ:|0:ʹ) d _ BetweenStemAndConsGrade [%^C2CC:|%^XY2XYY:] ;
 
 !"Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:r"
 !!! __@RULENAME@__ - used in
-! %{XC%}:r <=>  Vow: (ʹ:|0:ʹ) r _ BetweenStemAndConsGrade [[%^C2CC:|%^XY2XYY:]|%^C2CCC:] ;
-!!€ puär0%{XC%}%^VOWRaise%^C2CCC%>u
+! %{XC%}:r <=>  Vow: (ʹ:|0:ʹ) r _ BetweenStemAndConsGrade [%^C2CC:|%^XY2XYY:] ;
+!!€ puär0%{XC%}%^VOWRaise%>u
 !!€ puårˈr000u
 
 !"Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:l"
 !!! __@RULENAME@__ - used in
-! %{XC%}:l <=>  Vow: (ʹ:|0:ʹ) l (:ˈ) _ BetweenStemAndConsGrade [ [%^C2CC:|%^XY2XYY:] | %^C2CCC:] ;
+! %{XC%}:l <=>  Vow: (ʹ:|0:ʹ) l (:ˈ) _ BetweenStemAndConsGrade [ %^C2CC:|%^XY2XYY:] ;
 !! suâl+N+Pl+Nom __island__
-!!€ suâl0%{XC%}%^VOWRaise%^C2CCC%>u
+!!€ suâl0%{XC%}%^VOWRaise%>u
 !!€ suõlˈl000u
 
 !"Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:k"
@@ -2204,8 +2199,8 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 "Consonant lengthening 0:l"
 !! __@RULENAME@__ - used in
  0:l <=>
-  (ʹ:|:ʹ) l (:ˈ) _ BetweenStemAndConsGrade [ [%^C2CC:|%^XY2XYY:]|%^C2CCC:] ;
-  (ʹ:|:ʹ) l (:ˈ) _ Vow: Cns:*  PenBetweenStemAndConsGrade [ [%^Pen: %^C2CC:|%^Pen: %^XY2XYY:]|%^Pen: %^C2CCC:] ;
+  (ʹ:|:ʹ) l (:ˈ) _ BetweenStemAndConsGrade [ %^C2CC:|%^XY2XYY:] ;
+  (ʹ:|:ʹ) l (:ˈ) _ Vow: Cns:*  PenBetweenStemAndConsGrade [ %^Pen: %^C2CC:|%^Pen: %^XY2XYY:] ;
 !! suâl+N+Par __island/saari__
 !!€ suâl0%^VOWRaise%^C2CC%>ud 
 !!€ suõll00%>ud
@@ -2213,14 +2208,14 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 
 "Consonant lengthening 0:ŋ"
 !! __@RULENAME@__ - used in
- 0:ŋ <=>   ŋ _ BetweenStemAndConsGrade [ %^C2CC:|%^XY2XYY:|%^C2CCC:] ;
-           ŋ _ Vow: Cns:+ PenBetweenStemAndConsGrade [%^Pen: %^C2CC:|%^Pen: %^XY2XYY:|%^Pen: %^C2CCC:] ;
+ 0:ŋ <=>   ŋ _ BetweenStemAndConsGrade [ %^C2CC:|%^XY2XYY:] ;
+           ŋ _ Vow: Cns:+ PenBetweenStemAndConsGrade [%^Pen: %^C2CC:|%^Pen: %^XY2XYY:] ;
 
 
 "Consonant lengthening 0:g"
 !! __@RULENAME@__  - used in
- 0:g <=>  Vow:   l ǥ: _ BetweenStemAndConsGrade [ [%^C2CC:|%^XY2XYY:]|%^C2CCC:] ;
-  Vow:   l ǥ: _ Vow: Cns PenBetweenStemAndConsGrade [ [%^Pen: %^C2CC:|%^Pen: %^XY2XYY:]|%^Pen: %^C2CCC:] ;
+ 0:g <=>  Vow:   l ǥ: _ BetweenStemAndConsGrade [ %^C2CC:|%^XY2XYY:] ;
+  Vow:   l ǥ: _ Vow: Cns PenBetweenStemAndConsGrade [ %^Pen: %^C2CC:|%^Pen: %^XY2XYY:] ;
 !! ǩeâlǥal+N+Sg+Gen __kilkura__
 !!€ ǩeâlǥ0al%^Pen: %^C2CC
 !!€ ǩeâlggal0
@@ -2304,13 +2299,6 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
  ǥ:ǧ <=>  :ʹ  Cns: _ 0: Vow: Cns:+ PenBetweenStemAndPALNo (%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:) %^Pen: %^PAL: %^Pen: %^XY2XYY: ;
 !Dummy
 
-"Consonant quality change ǥ:k"
-!! __@RULENAME@__ - used in
- ǥ:k <=>  Vow:  ǥ: 0: _ %^GG2KKK: ;
-          Vow:  _  0: ǥ: %^GG2KKK: ;
-!! čuâǥǥas+N+Sg+Ill  __road__
-!!€ čuâǥ0ǥ%^GG2KKK%^VOWRaise%>sa
-!!€ čuõkˈk00%>sa
 
 
 !! !Pedagogical X3 length mark after diphthongs in vertical line ˈ 
@@ -2330,7 +2318,7 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
           (ʹ:|0:ʹ)     d  _ d    [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
           (ʹ:|0:ʹ)     đ  _ đ    [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
           (ʹ:|0:ʹ)     g: _ g:   [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
-          (ʹ:|0:ʹ)     ǥ: _ ǥ:   [ BetweenStemAndConsGrade [%^CC2CCC:|%^GG2KKK:]| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+          (ʹ:|0:ʹ)     ǥ: _ ǥ:   [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
           (ʹ:|0:ʹ)     ǧ: _ ǧ:   [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
           (ʹ:|0:ʹ)     j _ j:   [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
           (ʹ:|0:ʹ)     k: _ k:   [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
@@ -2405,3 +2393,5 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 !!€ maainast00
          
 
+"Limitations for ZERO:x 1"
+ 0: => [: - 0:| .#.] _ [: - 0:| .#.] ;
