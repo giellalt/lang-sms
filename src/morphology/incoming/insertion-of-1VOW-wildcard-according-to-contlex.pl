@@ -6,8 +6,10 @@ undef $/;
 $_ = <>;
 
 ####
-# This is for inserting %^1VOW
-##
+# This is for inserting the metacharacter %^1VOW in stems according
+# to stem type. It is used with A, N, N_Prop, Num, V
+# in the stems/...xml files
+## 
 # _TÄÄVTÕS
 #
 s/(_TÄÄVTÕS\"[^>]*\>[^<]*)(..\<\/st\>)/$1%^1VOW$2/g;
