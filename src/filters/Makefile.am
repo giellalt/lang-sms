@@ -22,6 +22,9 @@ GIELLA_FILTER_LOCAL_REGEX_SRCS=\
 					downcase_UCletters.regex \
 					remove-rel_focus-strings.regex \
 					remove-modifier-letter-vertical-line.regex \
+					replace-iterated-consonant-with-palatal-and-consonant.regex \
+					replace-vowel-iteration-with-length-for-norm.regex \
+					replace-vowel-iteration-with-length-for-dict.regex \
 					remove-letter-dot-below.regex
 
 # List any local filter xfscript files here:
