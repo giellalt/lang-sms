@@ -4335,6 +4335,7 @@ LEXICON NMN_JEÄʹRMM
 :%^PALNo E-STEM_SG-ILL ; !!(3) Sg.Ill: jeärgga
 :%^VOWRaise%^PALẸ%^PAL%^XYY2XY DenominalAdjsCShort ;
 :%^PAL ATTESTED-NOUN-STEM ;
++Err/Orth+Use/NG:%^VOWRaise%^PALẸ%^PAL ATTESTED-NOUN-STEM ;
 :%^PAL E-STEM_SG-NOM ; !!(1) Sg.Nom: jeäʹrǧǧ
 :%^VOWRaise%^PALẸ%^PAL%^XYY2XY E-STEM_SG-ABE/ACC/GEN ; !!(2) Pl.Nom: jiẹʹrj
 :%^VOWRaise%^PALẸ%^PAL%^XYY2XY PL-NOM ; !!(2) Pl.Nom: jiẹʹrj
@@ -7211,6 +7212,22 @@ LEXICON NMN_TERHI
  PL-NOM ;    !!= * @CODE@	+Pl+Nom
  PL-OBL ;    !!= * @CODE@	+Pl+Gen
 
+LEXICON N_JOUSTE
++N: NMN_JOUSTE ;
+LEXICON NMN_JOUSTE
+! jouste:jouste
+!! ** Yaml: __Prop-jouste__
+ ATTESTED-NOUN-STEM ;
+ SG-NOM ;  !!= * @CODE@ +Sg+Nom
+ SG-ABE/ACC/GEN ; !!= * @CODE@	+Sg+Gen
+:eʹje SG-ILL ; !!= * @CODE@	+Sg+Ill: jousteeʹje
+:ʹžže SG-ILL ; !!= * @CODE@	+Sg+Ill: jousteʹžže
+ SG-LOC ;    !!= * @CODE@	+Sg+Loc
+ SG-COM_IN ; !!= * @CODE@	+Sg+Com
+ ESS/PAR ;   !!= * @CODE@	+Ess
+ PL-NOM ;    !!= * @CODE@	+Pl+Nom
+ PL-OBL ;    !!= * @CODE@	+Pl+Gen
+
 LEXICON N_RADIO !!= * @CODE@ radio:radio
 +N: NMN_RADIO ;
 LEXICON NMN_RADIO
@@ -7219,6 +7236,22 @@ LEXICON NMN_RADIO
  SG-NOM ;	    !!= * @CODE@ (TSA-1) +Sg+Nom:
  SG-ABE/ACC/GEN ;   !!= * @CODE@ (=TSA-2)
 :oʹje SG-ILL ;	    !!= * @CODE@ (TSA-3) +Sg+Ill:
++Use/NG: SG-ILL ;   !!= * @CODE@ (TSA-3) +Sg+Ill:
+ SG-LOC ;	    !!= * @CODE@ ()
+ SG-COM_IN ;	    !!= * @CODE@ (=TSA-4)
+ ESS/PAR ; 	    !!= * @CODE@ ()
+ PL-NOM ;	    !!= * @CODE@ (TSA-2) +Pl+Nom:
+ PL-OBL ;	    !!= * @CODE@ (TSA-4) +Pl+Gen: 
+!FIX-DIM
+
+LEXICON N_OULU !!= * @CODE@ oulu:oulu
++N: NMN_OULU ;
+LEXICON NMN_OULU
+!! ** Yaml: __N-oulu__
+ ATTESTED-NOUN-STEM ;  !!= * @CODE@ (=TSA-1)
+ SG-NOM ;	    !!= * @CODE@ (TSA-1) +Sg+Nom:
+ SG-ABE/ACC/GEN ;   !!= * @CODE@ (=TSA-2)
+:uʹje SG-ILL ;	    !!= * @CODE@ (TSA-3) +Sg+Ill:
 +Use/NG: SG-ILL ;   !!= * @CODE@ (TSA-3) +Sg+Ill:
  SG-LOC ;	    !!= * @CODE@ ()
  SG-COM_IN ;	    !!= * @CODE@ (=TSA-4)
@@ -7385,7 +7418,7 @@ LEXICON NMN_TÄÄVTÕS
  ATTESTED-NOUN-STEM ;
 : SG-NOM ;
 :%>â ESS/PAR ; 
-:%{XC%}%>â ESS/PAR ; 
+:%{XC%}%^C2CC%>â ESS/PAR ; 
 : NMN_OBL-TÄÄVTÕS ;
 
 LEXICON N_LOOKKMÕŠ !!= * @CODE@ lookkmõš:lookkmõš
