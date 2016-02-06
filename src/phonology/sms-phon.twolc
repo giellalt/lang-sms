@@ -298,6 +298,7 @@ BetweenPALNoAndMorph = [(%^CC2C:|%^C2CC:|%^XY2XYY:|%^XYY2XY:|%^KK2GG:|%^CC2CCC:|
 
 PenBetweenStemAndPALNo = [(%^Pen: %^V2VV:|%^Pen: %^VV2V:) (%^Pen: %^VOWRaise:|%^Pen: %^VOWLower:|%^Pen: %^VOWBack:) (%^Pen: %^Allegro:) ] ;
 
+
 PenBetweenStemAndConsGrade = [(%^Pen: %^V2VV:|%^Pen: %^VV2V:) ((%^Pen: %^VOWRaise:|%^Pen: %^VOWLower:) ((%^Pen: %^PALÂ:|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PALNo:|(%^Pen: %^PALÕ:|%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:) (%^Pen: %^Allegro:) %^Pen: %^PAL:)| %^Pen: %^VOWBack: (%^Pen: %^Allegro:) (%^Pen: %^PALNo:|%^Pen: %^PAL:) ) ] ;
 
 PenBetweenStemAndVowelLoss = [(%^Pen: %^V2VV:|%^Pen: %^VV2V:) [(%^Pen: %^VOWRaise:|%^Pen: %^VOWLower:) ((%^Pen: %^PALÂ:|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PALNo:|(%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PAL:)| %^Pen: %^VOWBack: (%^Pen: %^Allegro:) (%^Pen: %^PALNo:|%^Pen: %^PAL:)] ([%^Pen: %^C2CC:|%^Pen: %^XY2XYY:]|%^Pen: %^CC2C:|%^Pen: %^XYY2XY:|%^Pen: %^CC2CCC:)] ;
@@ -1421,7 +1422,8 @@ h:i <=> Vow: (:ʹ) _ t t: BetweenStemAndConsGrade %^XYY2IY: ;
 !! prääʹzniǩ+N+Sg+Ill: __celebration/juhla__
 !!€ prääʹzniǩ%^Pen: %^PALNo%^RmVow%^PALNo%>a
 !!€ prää0zn0k000%>a
- Cns: (ˈ:|:ˈ) _ Vow: Cns:* PenBetweenStemAndVowelLoss (%^RmVow:) %^PALNo: (%^DeVC:) RBound ;
+ Cns: (ˈ:|:ˈ) _ Vow: Cns:* PenBetweenStemAndConsGrade (%^RmVow:) %^PALNo: (%^DeVC:) RBound ;
+! Cns: (ˈ:|:ˈ) _ Vow: Cns:* PenBetweenStemAndVowelLoss (%^RmVow:) %^PALNo: (%^DeVC:) RBound ;
 
 
 "Even-syllabic nouns, removing palatalization in -est +Loc nouns"
