@@ -65,14 +65,10 @@ endif # CAN_FOMA
 
 analyser-%.hfst: analyser-%.tmp.hfst                        \
 					filters/remove-modifier-letter-vertical-line.hfst   \
-					filters/replace-iterated-consonant-with-palatal-and-consonant.hfst   \
-					filters/replace-vowel-iteration-with-length-for-norm.hfst   \
 					filters/remove-letter-dot-below.hfst            
 	$(AM_V_RGX2FST)$(PRINTF) "                               \
 				@\"$<\"                                      \
 			.o. @\"filters/remove-letter-dot-below.hfst\" \
-			.o. @\"filters/replace-iterated-consonant-with-palatal-and-consonant.hfst\"   \
-			.o. @\"filters/replace-vowel-iteration-with-length-for-norm.hfst\"   \
 			.o. @\"filters/remove-modifier-letter-vertical-line.hfst\"   \
 			;" \
 		| $(HFST_REGEXP2FST) $(HFST_FLAGS) -S --xerox-composition=ON \
@@ -82,14 +78,10 @@ analyser-%.hfst: analyser-%.tmp.hfst                        \
 # We need to specify -gt- to avoid applying the filters to the raw fst:
 generator-gt-%.hfst: generator-gt-%.tmp.hfst                \
 					filters/remove-modifier-letter-vertical-line.hfst   \
-					filters/replace-iterated-consonant-with-palatal-and-consonant.hfst   \
-					filters/replace-vowel-iteration-with-length-for-norm.hfst   \
 					filters/remove-letter-dot-below.hfst            
 	$(AM_V_RGX2FST)$(PRINTF) "                               \
 				@\"$<\"                                      \
 			.o. @\"filters/remove-letter-dot-below.hfst\" \
-			.o. @\"filters/replace-iterated-consonant-with-palatal-and-consonant.hfst\"   \
-			.o. @\"filters/replace-vowel-iteration-with-length-for-norm.hfst\"   \
 			.o. @\"filters/remove-modifier-letter-vertical-line.hfst\"   \
 			;" \
 		| $(HFST_REGEXP2FST) $(HFST_FLAGS) -S --xerox-composition=ON \
@@ -98,14 +90,10 @@ generator-gt-%.hfst: generator-gt-%.tmp.hfst                \
 # We need to specify -gt- to avoid applying the filters to the raw fst:
 analyser-gt-%.xfst: analyser-gt-%.tmp.xfst                  \
 					filters/remove-modifier-letter-vertical-line.xfst   \
-					filters/replace-iterated-consonant-with-palatal-and-consonant.xfst   \
-					filters/replace-vowel-iteration-with-length-for-norm.xfst   \
 					filters/remove-letter-dot-below.xfst            
 	$(AM_V_XFST)$(PRINTF) "read regex                        \
 				@\"$<\"                                      \
 			.o. @\"filters/remove-letter-dot-below.xfst\" \
-			.o. @\"filters/replace-iterated-consonant-with-palatal-and-consonant.xfst\"   \
-			.o. @\"filters/replace-vowel-iteration-with-length-for-norm.xfst\"   \
 			.o. @\"filters/remove-modifier-letter-vertical-line.xfst\"   \
 			;\n\
 		 save stack $@\n\
@@ -115,14 +103,10 @@ analyser-gt-%.xfst: analyser-gt-%.tmp.xfst                  \
 # pattern as the raw fst:
 analyser-disamb-gt-%.xfst: analyser-disamb-gt-%.tmp.xfst    \
 					filters/remove-modifier-letter-vertical-line.xfst   \
-					filters/replace-iterated-consonant-with-palatal-and-consonant.xfst   \
-					filters/replace-vowel-iteration-with-length-for-norm.xfst   \
 					filters/remove-letter-dot-below.xfst            
 	$(AM_V_XFST)$(PRINTF) "read regex                        \
 				@\"$<\"                                      \
 			.o. @\"filters/remove-letter-dot-below.xfst\" \
-			.o. @\"filters/replace-iterated-consonant-with-palatal-and-consonant.xfst\"   \
-			.o. @\"filters/replace-vowel-iteration-with-length-for-norm.xfst\"   \
 			.o. @\"filters/remove-modifier-letter-vertical-line.xfst\"   \
 			;\n\
 		 save stack $@\n\
@@ -130,43 +114,24 @@ analyser-disamb-gt-%.xfst: analyser-disamb-gt-%.tmp.xfst    \
 
 generator-%.xfst: generator-%.tmp.xfst                      \
 					filters/remove-modifier-letter-vertical-line.xfst   \
-					filters/replace-iterated-consonant-with-palatal-and-consonant.xfst   \
-					filters/replace-vowel-iteration-with-length-for-norm.xfst   \
 					filters/remove-letter-dot-below.xfst            
 	$(AM_V_XFST)$(PRINTF) "read regex                        \
 				@\"$<\"                                      \
 			.o. @\"filters/remove-letter-dot-below.xfst\" \
-			.o. @\"filters/replace-iterated-consonant-with-palatal-and-consonant.xfst\"   \
-			.o. @\"filters/replace-vowel-iteration-with-length-for-norm.xfst\"   \
 			.o. @\"filters/remove-modifier-letter-vertical-line.xfst\"   \
 			;\n\
 		 invert net\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST) $(VERBOSITY)
 
-
 # Do NOT apply the accent removal filters to the normative
 # dictionary generator (both hfst and xfst):
-generator-dict-gt-norm.hfst: generator-dict-gt-norm.tmp.hfst    \
-					filters/replace-iterated-consonant-with-palatal-and-consonant.hfst   \
-					filters/replace-vowel-iteration-with-length-for-dict.hfst   \
-	$(AM_V_RGX2FST)$(PRINTF) "                               \
-				@\"$<\"                                      \
-			.o. @\"filters/replace-iterated-consonant-with-palatal-and-consonant.hfst\"   \
-			.o. @\"filters/replace-vowel-iteration-with-length-for-dict.hfst\"   \
-			;" \
-		| $(HFST_REGEXP2FST) $(HFST_FLAGS) -S --xerox-composition=ON \
-		> $@
+generator-dict-gt-norm.hfst: generator-dict-gt-norm.tmp.hfst
+	$(AM_V_CP)cp -f $< $@
 
-#
-generator-dict-gt-norm.xfst: generator-dict-gt-norm.tmp.xfst     \
-					filters/replace-iterated-consonant-with-palatal-and-consonant.xfst   \
-					filters/replace-vowel-iteration-with-length-for-dict.xfst   \
-	$(AM_V_XFST)$(PRINTF) "read regex                        \
-				@\"$<\"                                      \
-			.o. @\"filters/replace-iterated-consonant-with-palatal-and-consonant.xfst\"   \
-			.o. @\"filters/replace-vowel-iteration-with-length-for-dict.xfst\"   \
-			;\n\
+generator-dict-gt-norm.xfst: generator-dict-gt-norm.tmp.xfst
+	$(AM_V_XFST)$(PRINTF) "\
+		 load stack $<\n\
 		 invert net\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST) $(VERBOSITY)
