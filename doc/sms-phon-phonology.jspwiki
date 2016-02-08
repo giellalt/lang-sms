@@ -26,15 +26,13 @@ The rule file for Skolt Saami is divided into 5 main types:
 
  *   æ ø ö á é í					
  *   Æ Ø Ö Á						
- *   Á É Ó Ú Í À È Ò Ù Ì Ë Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð		
- *   á é ó ú í à è ò ù ì ë ü ï â ê ô û î ã ý þ ñ ð ß ª ß ç	
+ *   É Ó Ú Í À È Ò Ù Ì Ë Ü Ï Ê Ô Û Î Ã Ý þ Ñ Ð		
+ *   é ó ú í à è ò ù ì ë ü ï ê ô û î ã ý þ ñ ð ß ª ß ç	
 
 
 * MODIFIER LETTER PRIME: U+02B9 suprasegmental palatization
 * MODIFIER LETTER APOSTROPHE: U+02BC Syllable marker that appears in writing 
 * MODIFIER LETTER VERTICAL LINE: U+02C8 as overlong consonant marker that does not appear in writing except for pedagogical purposes
-
-
 
 
 
@@ -44,7 +42,7 @@ Trigger symbols
  *  %^RmVow:0  for removing vowels e, â, a before final consonant in stem
  *  %^UltRmVow:0  for removing vowels e, â, a after final consonant in stem
  *  %^RmCns:0  for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta 
- * %^1VOW:0 %^2VOW:0 %^3VOW:0 %^4VOW:0 %^5VOW:0  Vow triggers
+ *  %^2VOW:0 %^3VOW:0 %^4VOW:0 %^5VOW:0  Vow triggers
 
  *  %^VOWLower:0  i>e, õ>â, â>ä, u>o, o>å
  *  %^VOWRaise:0  e>i, ä>e 
@@ -67,14 +65,10 @@ CHARACTERISTIC BREAKDOWN 2015-02-17
  * %^CC2C:0 	 Shortens consonant
  * %^C2CC:0 	 Lengthens consonant
  * %^CC2CCC:0 	 Strong to Extra Strong consonant
- * %^C2CCC:0 	 Weak to Extra strong consonant
  * %^CCC2C:0 	 Extra Strong to Weak consonant
  * %^CCC2CC:0 	 Extra Strong to Strong consonant
- * %^XYYY2XYY:0 	 Weakens Extra strong to strong consonant cluster
- * %^XYYY2XY:0 	 Weakens Extra strong to weak consonant cluster
  * %^XYY2XY:0 	 Shortens consonant cluster
  * %^XY2XYY:0 	 Lengthens consonant cluster
- * %^XY2XYYY:0 	 Lengthens consonant cluster
  * %^XYY2VY:0	 Consonant cluster to vowel and consonant sijdd:siid
  * %^XYY2VYY:0	 Consonant cluster to vowel and geminate uvdd:ouʹdd
  * %^XYY2IY:0	 Consonant cluster to i  and consonant kueʹhtt:kueiʹt
@@ -86,8 +80,6 @@ CHARACTERISTIC BREAKDOWN 2015-02-17
  * %^KK2G:0		 Geminate weakening	 in allegro pååss:påz
  * %^K2GG:0	 Geminate weakening čårrõs:čårrõõzz
  * %^K2G:0		 Geminate weakening	 in allegro čâustõk
- * %^GG2KK:0	 Geminate strengthening
- * %^GG2KKK:0	 Geminate extra strengthening čuâǥǥas:čuõkˈksa
 
 
 Shortens vowel in penultimate syllable
@@ -111,7 +103,6 @@ FIXME
 Geminate weakening
 Geminate weakening jokk:jooǥǥ
 Geminate strengthening
-Geminate extra strengthening čuâǥǥas:čuõkˈksa
 
 This introduces vertical bar after diphth before consonants
  *  %^Allegro:0	     This introduces vertical bar after diphth before consonants
@@ -178,70 +169,6 @@ End of alphabet definitions
 !!Definitions
 
 
-{{{
- * ShortV2XL = [0:a a|0:ä a:ä] ;  
-
- * LongV2SH = [a:0 a|â:0 â|ä:0 ä|e:0 e|i:0 i|å:0 å|o:0 o|u:0 u|õ:0 õ|a:0 a:ä|â:0 â:õ|ä:0 ä:a|ä:0 ä:a|e:0 e:i|i:0 i:e|å:0 å:o|o:0 o:u|u:0 u:o|õ:0 õ:â] ;  
-
- * Diphth = [e â|e:i â:õ|e ä|e:i â:e|e:i ä:â|e:i ä:e|e:i ä:ẹ|i â|i:e â:ä|i â:e|i e|i:e e:â|i:e e:ä|i e:õ|i õ|i:e õ:â|i:e õ:ä|u â|u â:õ|u e|u e:â|u â:e|u â:ẹ|u e:õ|u e:ä|u õ|u õ:â|u õ:e|u å|u å:ä|u å:e| u å:ẹ|u å:õ|u ä|u ä:å|u ä:e|u ä:ẹ] ;  
-
- * DbVow = [a a|a:ä a:ä|i i|i:e i:e|o o|o:å o:å|õ õ|õ:â õ:â|u u|u:o u:o|â â|â:õ â:õ|e e|e e:ä|e ä:e|e:i e:i|å å|å:o å:o|ä ä|ä:a ä:a] ;  
-
- * 2DbVow = [0:a a|0:a ä:a|0:i i|0:i e:i|0:o o|0:o u:o|0:o å:o|0:õ õ|0:õ â:õ|0:u u|0:u o:u|0:â â|0:e e|0:å å|0:å o:å|0:ä ä] ;  
-
- * AllDbVow = [DbVow|2DbVow] ;  
-
- * 2SgVow = [a:0 a|a:0 a:ä|i:0 i|i:0 i:e|o:0 o|o:0 o:å|õ:0 õ|õ:0 õ:â|u:0 u|u:0 u:o|â:0 â|â:0 â:õ|e:0 e|e:0 e:i|å:0 å|å:0 å:o| ä:0 ä|ä:0 ä:a] ;  
-
- * SurfLongVow = [Diphth|AllDbVow] ;  
-
- * 2ShortVow = [Diphth|2SgVow] ;  
-
-
- * CC = [b b|c c|č č|ǯ ǯ|d d|đ đ|g g|ǧ ǧ|k k|ǩ ǩ|l l|m m|n n|p p|r r|s s|š š|t t|v v|h t t|n n j] ; 
-
- * LongC = [k: k:|s: s:|š: š:|c: c:|č: č:|m m:|v v:|đ đ:|n n:|l l:|r r:] ;  
-}}}
-
-preceded by two vowels VxVx, VxVy
-{{{
- * DiphthwithCC = [k:ǥ k:ǥ|s:z s:z|š:ž š:ž|c:ʒ c:ʒ|č:j č:j|m m:0|v v:0|đ đ:0|n n:0|l l:0|r r:0] ; 
-}}}
-
-preceded by two vowels
-{{{
- * CC2CforPrecedingVV = [k:ǥ k:ǥ|k:j k:j|ǩ:j ǩ:j|ǩ:ǥ ǩ:ǥ|s:z s:z|š:ž š:ž|c:ʒ c:ʒ|č:j č:j|m m:0|v v:0|đ đ:0|n n:0|l l:0|p:v p:0|t:đ t:0|r r:0] ;  
-}}}
-
-preceded by one vowel Vx=>VxVx påll=>pååll
-{{{
- * CCforPrecedingV2VV =  [b b|p p|m m|v v| d d|t t|đ đ|n n|l l|r r|s s|š š|c c|č č| ǯ ǯ | k k|ǩ ǩ|g g|ǧ ǧ|ǧ:g ǧ:g|ǧ:ǥ ǧ:ǥ ] ;  
-
- * iCC2iCforPrecedingV2VV = [ i (ʹ:|0:ʹ) [b b:0|ʒ ʒ:0|d d:0|g g:0|k k:0|ǩ ǩ:0|l l:0|m m:0|n n:0|p p:0|r r:0|t t:0|v v:0]] ;  
-
- * uCC2uCforPrecedingV2VV = [ [u|%{VU%}:u] (ʹ:|0:ʹ) [ʒ ʒ:0|d d:0|g g:0|k k:0|ǩ ǩ:0|l l:0|m m:0|n n:0|p p:0|r r:0|t t:0]] ;  
-}}}
-
-extra long vowel (u or i)
-{{{
- * CC2CafterV2VVandUI = [uCC2uCforPrecedingV2VV|iCC2iCforPrecedingV2VV] ;   
-}}}
-
-extra long vowel (d or l or r)
-{{{
- * CC2CforPrecedingV2VV = [l [b b:0|ǧ:j ǧ:0|ǧ:ǥ ǧ:0|m m:0|t t:0]|m p p:0|p c c:0|r [d d:0|n n:0]|s [k: k:0|ǩ: ǩ:0|t t:0]] ;  
-}}}
-
-extra long consonant (d or l or r)
-{{{
- * C2CCafterVV2V = [l [b 0:b|j:ǧ 0:ǧ|ǥ:ǧ 0:ǧ|m 0:m|t 0:t]|m p 0:p|p c 0:c|r d 0:d|s [:k 0:k|:ǩ 0:ǩ|t 0:t]] ;  
-}}}
-
-Long consonant cluster
-
-Shortening consonant cluster
-
-
 
 Short consonant cluster
 
@@ -254,27 +181,6 @@ following morpheme or word boundary
  * RBound = [#|%>|»] ;  
 }}}
 
-relative lengthening of vowel right context following vowel:vowel
-
-{{{
- * RelVowLengthening = [(ʹ:|0:ʹ) [CCforPrecedingV2VV  %^V2VV:|CC2CforPrecedingVV %^V2VV:|Cns: (%{XC%}:) %^V2VV:|CC2CforPrecedingV2VV (a: i:) %^V2VV: |CC2CafterV2VVandUI %^V2VV: |XYY2XYCluster %^V2VV:] ] ; 
-}}}
-
-relative lengthening of vowel right context following vowel:vowel
-0:i <=> OnSetC _ :i RelVowLengtheningNOTi
-{{{
- * RelVowLengtheningNOTi = [(ʹ:|0:ʹ) [CCforPrecedingV2VV  %^V2VV:|[CC2CforPrecedingV2VV|uCC2uCforPrecedingV2VV] %^V2VV: %^CC2C:|CC2CforPrecedingVV %^CC2C: ]] ; 
-}}}
-
-
-
-
-
-relative lengthening of vowel right context following vowel:vowel
-0:u <=> OnSetC _ :u RelVowLengtheningNOTu
-{{{
- * RelVowLengtheningNOTu = [(ʹ:|0:ʹ) [CCforPrecedingV2VV  %^Pen: %^V2VV: %^CShort:|[iCC2iCforPrecedingV2VV|CC2CforPrecedingV2VV] %^V2VV: %^CC2C:|CC2CforPrecedingVV %^CC2C:]] ; 
-}}}
 
 
 possible triggers before VOWLower and VOWRaise
@@ -293,6 +199,7 @@ possible triggers between VowHeight and word end
 {{{
  * BetweenVowHeightAndMorph = [(%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) ((%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÕ:) (%^Allegro:) %^PAL:|(%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:)] ;  
 }}}
+
 
 
 
@@ -446,6 +353,9 @@ mättʼted+V+Inf: __teach/opettaa__
 * __ijss%>ʼsa__
 * __kåčč%>0čem__
 * __kåčč%>ʼčem__
+* __0autt%^V2VV%^XYY2XY%>0taa__
+* __aaut000%>ʼtaa__
+
 
 __ZERO to hyphen minus 0:- in this rule__ - used in Kääzzkõsraajõstuâjj-joouk
 
@@ -709,22 +619,22 @@ __Even syllabic verbs I, secondary u > v __
 
 vowel lengthening and consonant shortening, %^Pen: %^V2VV and %^CShort 
 
-__Even syllabic verbs I, relative vowel lengthening 0:â__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
+__Even syllabic verbs I, relative vowel lengthening %^1VOW:â__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
 šõddâd+V+Imprt+Sg3: 
 * __š0õdd%^V2VV%^VOWLower%>as__
 * __šââdd00%>as__
 
 
 
-__0:ẹ relative vowel lengthening__ - 
+__%^1VOW:ẹ relative vowel lengthening__ - 
 * __p0ẹss%^V2VV__
 * __pẹẹss0__
 
 
-__Even syllabic verbs I, relative vowel lengthening 0:e__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
+__Even syllabic verbs I, relative vowel lengthening %^1VOW:e__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
 * __čââʹlmt0eʹm%^V2VV__
 * __čââʹlmtee0m0__
-* __p0ẹi0vv%^V2VV%^PAL%^CC2C__
+* __p0ẹi0vv%^V2VV%^PAL%^XYY2XY__
 * __peeiʹv0000__
 * __v0iǯǯ%^V2VV%^VOWLower%>as__
 * __veeǯǯ00%>as__
@@ -735,12 +645,12 @@ __Even syllabic verbs I, relative vowel lengthening 0:e__ - deriving +V+Inf in T
 * __kaađneeʹǩǩ00__
 
 
-__Even syllabic verbs I, relative vowel lengthening 0:å__ - deriving
+__Even syllabic verbs I, relative vowel lengthening %^1VOW:å__ - deriving
 
 
 
 
-__Even syllabic verbs I, relative vowel lengthening 0:õ__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
+__Even syllabic verbs I, relative vowel lengthening %^1VOW:õ__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
 âʹlǧǧ+N+Pl+Gen: __boy/poika__
 * __0âʹlǧǧ%^V2VV%^VOWRaise%^PAL%^XYY2XY%>i__
 * __õõʹlj000%>i__
@@ -757,7 +667,7 @@ __Even syllabic verbs I, relative vowel lengthening 0:õ__ - deriving +V+Inf in 
 * __s0õhss%^V2VV%^XYY2VY__
 * __sõõus000__
 
-__Even syllabic verbs I, relative vowel lengthening 0:ä__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
+__Even syllabic verbs I, relative vowel lengthening %^1VOW:ä__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
 * __0äldd%^V2VV%^CC2C__
 * __ääld000__
 * __j0äuʹrr%^V2VV%^CC2C__
@@ -769,7 +679,7 @@ mäʹhssed+V+Ind+Prs+Sg1: __pay/maksaa__
 
 
 
-__Even syllabic verbs I, relative vowel lengthening 0:a__ - deriving +V+Inf in MAINSTED: maainstam, mainstam
+__Even syllabic verbs I, relative vowel lengthening %^1VOW:a__ - deriving +V+Inf in MAINSTED: maainstam, mainstam
 * __0äldd%^V2VV%^VOWRaise%^CC2C%>už__
 * __aald0000%>už__
 * __dur0ak%^V2VV__
@@ -781,7 +691,7 @@ __Even syllabic verbs I, relative vowel lengthening 0:a__ - deriving +V+Inf in M
 
 
 
-__Even syllabic verbs I, relative vowel lengthening 0:o__ -  simultaneous lengthening and lowering: juʹrdded > joordam juʹrdded+V+Ind+Prs+Sg1
+__Even syllabic verbs I, relative vowel lengthening %^1VOW:o__ -  simultaneous lengthening and lowering: juʹrdded > joordam juʹrdded+V+Ind+Prs+Sg1
 * __0uvdd%^V2VV%^VOWLower%^XYY2VY%>če__
 * __ooud0000%>če__
 juʹrdded+V+Ind+Prs+Sg1 __think__
@@ -815,7 +725,7 @@ pirsted+V+Ind+Prs+ConNeg
 __Even syllabic nouns, relative vowel extra lengthening u not followed by v__ - declension of nouns kunn > kuun
 
 mainstummuš+N+Err/Orth+Sg+Gen
-* __mainstumm0ušš%^Pen:__ {{%^CC2C%^V2VV%^KK2GG}}
+* __mainstumm0ušš%^Pen%^CC2C%^V2VV%^KK2GG__
 * __mainstum0uužž000__
 
 
@@ -965,6 +875,10 @@ bioloog+N+Sg+Ill __biologist__
 
 
 __Even-syllabic verbs I, Palatalization of k:ǩ here__ - used in
+
+hääʹsǩ Perhaps the stem should simply be __häskk__
+* __hää0sk%^PAL__
+* __hääʹsk0__
 mieʹlǩǩ+N+Sg+Acc: __milk/maito__
 * __miâ0lkk%^PALE%^PAL%^CC2C__
 * __mieʹlǩ0000__
@@ -1002,7 +916,7 @@ prääʹzniǩ+N+Sg+Ill: __celebration/juhla__
 
 
 __Even-syllabic nouns, removing palatalization in -est +Loc nouns__ - removing palatalization in +Sg+Ill,  pieʹss:peässa
-* __čââʹlmteʹm%{XC%}%^CLong%^PALNo%>a__
+* __čââʹlmteʹm0%^PALNo%^C2CC%>a__
 * __čââʹlmte0mm00%>a__
 * __čââʹlmteʹm0%^PALNo%^C2CC%>a__
 * __čââʹlmte0mm00%>a__
@@ -1169,7 +1083,7 @@ used with  +N+Sg+Nom > +N+Sg+Gen for cases like
 lookki > looǥǥi.
 
 čâustõk+N+Sg+Gen
-* __čâust0õk0%^V2VV%^K2GG__
+* __čâust0õk%{XC%}%^V2VV%^K2GG__
 * __čâustõõǥǥ0__
 with allegro
 čâustõk+N+Sg+Ela+PxSg3
@@ -1178,6 +1092,9 @@ with allegro
 
 * __j0okk%^V2VV%^KK2GG__
 * __jooǥǥ00__
+čuâǥǥas+N+Sg+Nom  __road__
+* __čuâkˈk%^KK2GG%>as__
+* __čuâǥ0ǥ00%>as__
 
 loǥškueʹtted __begin to read__
 * __lookk%^VV2V%^KK2G»škueʹtted__
@@ -1215,7 +1132,7 @@ used with
 
 
 __Even syllabic verbs I, Voicing š:ž __ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
-lookkmõš+N+Sg+Gen
+lookkmõš+N+Sg+Gen 
 * __lookkm0õš0%^V2VV%^K2GG__
 * __lookkm0õžž00__
 with allegro
@@ -1226,7 +1143,7 @@ with allegro
 * __pååss%^VV2V%^KK2G»škuätt__
 * __p0åz0000škuätt__
 
-* __mainstum0uš%^Pen:__ {{%^C2CC%^VC}}
+* __mainstum0uš%^Pen%^C2CC%^VC__
 * __mainstummuž00__
 
 __Even syllabic verbs I, Voicing c:ʒ__ - cc:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
@@ -1244,12 +1161,14 @@ __Even syllabic verbs I, Voicing č:j__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, doub
 * __p0åz0000škuätt__
 
 __Even syllabic verbs I, Voicing after long vowel or diphthong s:z s:z __ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
-* __mättʼt0õss%^V2VV%^KK2GG__
+* __mättʼt0õs%{XC%}%^V2VV%^KK2GG__
 * __mättʼtõõzz00__
 with allegro
 
 deriving cieʹǩǩes+N+Sg+Gen: ceäkˈkaz
-
+cieʹǩǩes+N+Sg+Gen
+* __ceäkˈkez%^PenVow2a__
+* __ceäkˈkaz0__
 * __pååss%^VV2V%^KK2G»škuätt__
 * __p0åz0000škuätt__
 
@@ -1261,15 +1180,15 @@ deriving cieʹǩǩes+N+Sg+Gen: ceäkˈkaz
 
 __Devoicing z:s__ - used in
 aaunâs+N+Sg+Nom: __material/aine__
-* __0aunnâz%^Pen:__ {{%^V2VV%^Pen:}} (Eng. %^XYY2XY%^DeVC)
-* __aaun0âs000__
+* __0aunnâz%^Pen%^V2VV%^Pen%^XYY2XY%^DeVC__
+* __aaun0âs00000__
 piiutâs+N+Sg+Nom __clothing/vaate__
 * __p0ihttâz%^Pen:__ {{%^V2VV%^Pen:}} (Eng. %^XYY2VY%^DeVC)
 * __piiut0âs000__
 
 __Devoicing ž:š__ - used in
-* __p0õttâž%^Pen:__ {{%^V2VV%^Pen:}} (Eng. %^CC2C%^DeVC)
-* __põõđ0âš000__
+* __p0õttâž%^Pen%^V2VV%^Pen%^CC2C%^DeVC__
+* __põõđ0âš00000__
 * __heäpˈpaž%^Pen%^CCC2C%^DeVC__
 * __heäv00aš000__
 
@@ -1280,10 +1199,10 @@ autt+N+Pl+Nom __car/auto__
 * __0autt%^V2VV%^CC2C__
 * __aaut000__
 
-* __k0onttâr%^Pen:__ {{%^V2VV%^Pen:}} (Eng. %^XYY2XY)
-* __koont0âr00__
+* __k0onttâr%^Pen%^V2VV%^Pen%^XYY2XY__
+* __koont0âr0000__
 piiutâs+N+Sg+Nom __clothing/vaate__
-* __p0ihttâz%^Pen:__ {{%^V2VV%^Pen:}} (Eng. %^XYY2VY%^DeVC)
+* __p0ihttâz%^Pen%^V2VV%^Pen%^XYY2VY%^DeVC__
 * __piiut0âs000__
 
 
@@ -1323,6 +1242,10 @@ __Even syllabic nouns I, p>v __ - pp:v
 * __heäpˈpaž%^Pen%^CCC2C%^DeVC__
 * __heäv00aš000__
 
+__Consonant quality change ǥ:j__ - used in
+* __lääi0ǥ%^PAL__
+* __lääiʹj0__
+
 __Even syllabic verbs I, second consonant loss k:0__ - used in
 loǥ<škueʹtted __begin to read__
 * __lookk%^VV2V%^CC2C»škueʹtted__
@@ -1339,18 +1262,18 @@ mieʹlǩǩ+N+Sg+Acc: __milk/maito__
 __Even syllabic verbs I, second consonant loss ǩ:0__ - used in
 
 eʹǩrded+V+Inf
-* __eeʹǩǩerd%^Pen:__ {{%^VV2V%^Pen:}} (Eng. %^CC2C%^RmVow%>ed)
-* __0eʹǩ00rd000%>ed__
+* __eeʹǩǩerd%^Pen%^VV2V%^Pen%^CC2C%^RmVow%>ed__
+* __0eʹǩ00rd00000%>ed__
 
 __Even syllabic verbs I, second consonant loss ǥ:0__ - used in
 
 påǥsted+V+Inf
-* __pååǥǥast%^Pen:__ {{%^VV2V%^Pen:}} (Eng. %^CC2C%^RmVow%>ed)
-* __p0åǥ00st000%>ed__
+* __pååǥǥast%^Pen%^VV2V%^Pen%^CC2C%^RmVow%>ed__
+* __p0åǥ00st00000%>ed__
 
 
 __Even syllabic verbs I, lgg>lǥ __ - vueʹlǧǧed+V+Ind+Prs+Sg2 => vuâlǥak
-* __ǩeâlggal%^Pen:__ {{%^XYY2XY}}
+* __ǩeâlggal%^Pen%^XYY2XY__
 * __ǩeâlǥ0al0__
 * __aaggâst%^Pen%^VV2V%^Pen%^CC2C%^RmVow%>ed__
 * __0ag00st00000%>ed__
@@ -1361,8 +1284,8 @@ __Even syllabic verbs I, lgg>lǥ __ - vueʹlǧǧed+V+Ind+Prs+Sg2 => vuâlǥak
 __Odd syllabic nouns I, lǥ>lg__ - ǩeâlǥal+N+Sg+Gen: ǩeâlggal
 
 
-* __ǩeâlǥ0al%^Pen:__ {{%^XY2XYY}}
-* __ǩeâlggal0__
+* __ǩeâlǥ0al%^Pen%^XY2XYY__
+* __ǩeâlggal00__
 
 __even syllabic verbs I, 'lǧǧ>'lj __ - used in
 * __vuâ0lgg%^VOWRaise%^PAL%^CC2C%>im__
@@ -1382,132 +1305,134 @@ __even syllabic verbs I, 'lǧǧ>'lj __ - used in
 * In verbs this will be observed in finite forms
 * In derivational morphology, e.g. -škuetted, this is not the case
 
-__Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:m__ - used in
-* __čââʹlmteʹm%{XC%}%^PALNo%^C2CC%>a__
-* __čââʹlmte0mm000%>a__
+__Orthographic Consonant lengthening Weak to strong %{XC%}:Cx __ - used in
+* __čââʹlmtẹm%{XC%}%^C2CC%>a__
+* __čââʹlmtẹmm0%>a__
 
-__Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:v__ - used in
+__Orthographic Consonant lengthening Weak to strong %{XC%}:Cx for n and l__ - used in
 
 
-__Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:n__ - used in
+
+__Orthographic Consonant lengthening Weak to strong %{XC%}:Cx for n and l__ - used in
+
+
+__Orthographic Consonant lengthening Weak to strong %{XC%}:Cx for n and l__ - used in
 * __mään%{XC%}%^VV2V%^VOWRaise%^C2CC%>u__
 * __m0ann0000u__
 
-__Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:d__ - used in
+__Orthographic Consonant lengthening Weak to strong %{XC%}:Cx for n and l__ - used in
 
-__Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:r__ - used in
-* __puär0%{XC%}%^VOWRaise%^C2CCC%>u__
+__Orthographic Consonant lengthening Weak to strong %{XC%}:Cx for n and l__ - used in
+* __puär0%{XC%}%^VOWRaise%>u__
 * __puårˈr000u__
 
-__Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:l__ - used in
+__Orthographic Consonant lengthening Weak to strong %{XC%}:Cx for n and l__ - used in
 suâl+N+Pl+Nom __island__
-* __suâl0%{XC%}%^VOWRaise%^C2CCC%>u__
+* __suâl0%{XC%}%^VOWRaise%>u__
 * __suõlˈl000u__
 
-__Orthographic Consonant lengthening Weak to strong or extra strong %{XC%}:k__ - used in
+__Orthographic Consonant lengthening Weak to strong %{XC%}:Cx for n and l__ - used in
 
 
 
 
 __Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m__ - kåʹmrded+V+Imp+Sg2: kååʹmmerd 
 
-* __ooum0%^VV2V%^XY2XYYu__
-* __0oumm00u__
-* __čââʹlmteʹm0%^PALNo%^C2CC%>a__
-* __čââʹlmte0mm000a__
+* __čââʹlmtẹm%{XC%}%^C2CC%>a__
+* __čââʹlmtẹmm0%>a__
 
-__Consonant lengthening 0:b__ - used in
+__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m__ - used in
 
 
-__Consonant lengthening 0:p__ - used in
+__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m__ - used in
 
-__Consonant lengthening 0:v__ - used in
-kååvas+N+Sg+Gen: __kota__
-* __kååv0as%^Pen:__ {{%^VV2V%^Pen:}} (Eng. %^C2CC%^VC)
-* __k0åvvaz000__
+__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m__ - used in
+kååvas+N+Sg+Nom: __kota__
+* __k0åvvaz%^Pen%^V2VV%^Pen%^CC2C%^DeVC__
+* __kååv0as000__
 
-__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:n__ - used in
+__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m__ - used in
 * __mään0%^VV2V%^VOWRaise%^C2CC%>u__
 * __m0ann0000u__
 
-kõõnjâl+N+Sg+Gen __tear__
-* __kõõn0jâl%^Pen:__ {{%^VV2V%^Pen:}} (Eng. %^C2CC)
-* __k0õnnjâl00__
+kõõnjâl+N+Sg+Nom __tear__
+* __k0õnnjâl%^Pen%^V2VV%^Pen%^CC2C__
+* __kõõn0jâl00__
 
 
-__Consonant lengthening 0:d__ - juurd+N+Sg+Gen: jurddi
+__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m__ - juurd+N+Sg+Gen: jurddi
 
-__Consonant lengthening 0:t__ - used in
+__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m__ - used in
 
 
-__Consonant lengthening 0:ǯ__ - used in
+__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m__ - used in
 
-__Consonant lengthening 0:c__ - used in
+__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m__ - used in
 
-__Consonant lengthening 0:đ__ - čââʹđ+N+Sg+Gen: čâđđam
+__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m__ - čââʹđ+N+Sg+Gen: čâđđam
 čââʹđ+N+Sg+Ill: __heart/sydän__
-* __čââʹđ0%^VV2V%^PALNo%^C2CC%>ma__
+* __čââʹđ%{XC%}%^VV2V%^PALNo%^C2CC%>ma__
 * __č0â0đđ000%>ma__
 
 
-__Consonant lengthening 0:l__ - used in
-suâl+N+Par __island/saari__
-* __suâl0%^VOWRaise%^C2CC%>ud__
-* __suõll00%>ud__
+__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m__ - used in
+suâl+N+Nom __island/saari__
+* __suõlˈl%^VOWLower%^CCC2C__
+* __suâl0000__
 
 
-__Consonant lengthening 0:ŋ__ - used in
+__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m__ - used in
 
 
-__Consonant lengthening 0:g__  - used in
-ǩeâlǥal+N+Sg+Gen __kilkura__
-* __ǩeâlǥ0al%^Pen:__ {{%^C2CC}}
-* __ǩeâlggal0__
+__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m__  - used in
+ǩeâlǥal+N+Sg+Nom __kilkura__
+* __ǩeâlggal%^Pen%^XYY2XY__
+* __ǩeâlǥ0al0__
 
-__Consonant lengthening 0:ǧ__ - used in
+__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m__ - used in
 {{{
 }}}
 
-__Consonant lengthening 0:ǩ __ - used in
+__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m__ - used in
 {{{
 
 }}}
 
-__Consonant lengthening 0:k__ - used in
-* __durak0%^C2CC%>a__
+__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m__ - used in
+* __durak%{XC%}%^C2CC%>a__
 * __durakk00a__
 kaađneǩ+N+Sg+Ill:
-* __kaađneǩ0%^PALNo%^C2CC%>a__
+* __kaađneǩ%{XC%}%^PALNo%^C2CC%>a__
 * __kaađnekk00%>a__
 
-__0:s__ - used in
+__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m__ - used in
 
 čårrõs+N+Sg+Gen
-* __čårr0õs0%^V2VV%^K2GG__
+* __čårr0õs%{XC%}%^V2VV%^K2GG__
 * __čårr0õzz0__
 
-__0:z__ - used in
+__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m__ - used in
 
 čårrõs+N+Sg+Gen
-* __čårr0õs0%^V2VV%^K2GG__
+* __čårr0õs%{XC%}%^V2VV%^K2GG__
 * __čårr0õzz0__
 
-__0:ž__ - used in
+__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m__ - used in
 
 lookkmõš+N+Sg+Gen
-* __lookkm0õš0%^V2VV%^K2GG__
+* __lookkm0õš%{XC%}%^V2VV%^K2GG__
 * __lookkm0õžž00__
 
-__0:ǥ__ - used in
+__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m__ - used in
 
 čâustõk+N+Sg+Gen
-* __čâust0õk0%^V2VV%^K2GG__
+* __čâust0õk%{XC%}%^V2VV%^K2GG__
 * __čâustõõǥǥ0__
 
-__0:j__ - used in
+__Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m__ - used in
 
 čâustõk+N+Sg+Gen
-* __čâust0õ0k0%^V2VV%^PAL%^K2GG__
+* __čâust0õ0k%{XC%}%^V2VV%^PAL%^K2GG__
 * __čâustõõʹjj000__
 
 !!CONSONANT QUALITY CHANGE
@@ -1516,10 +1441,6 @@ __Consonant quality change j:ǧ__ - used in
 
 __Consonant quality change ǥ:ǧ__ - used in
 
-__Consonant quality change ǥ:k__ - used in
-čuâǥǥas+N+Sg+Ill  __road__
-* __čuâǥ0ǥ%^GG2KKK%^VOWRaise%>sa__
-* __čuõkˈk00%>sa__
 
 
 !Pedagogical X3 length mark after diphthongs in vertical line ˈ 
@@ -1532,6 +1453,7 @@ __jeäll:jiâlˈlu, __
 b c č ǯ d đ g ǧ k ǩ l m n p r s š t v also htˈt nˈnj
 * __kuâl0l%^CC2CCC%>a__
 * __kuâlˈl00a__
+
 
 
 
