@@ -2392,7 +2392,7 @@ LEXICON NMN_NJUUʹNN
 :%^CC2C PL-OBL ;		!!(8) Pl+Gen: njuuʹni
 +Der/Dimin:%^VOWLower%^PALNo%^CC2C N_KUÂLAŽ ;	!!(9) Der/Dimin.N.Sg.Nom: njoonaž
 
-LEXICON N_STUUʹL !!= * @CODE@ stuuʹl:stu%{VU%}l
+LEXICON N_STUUʹL !!= * @CODE@ stuuʹl:st%^1VOWu%{VU%}l
 +N: NMN_STUUʹL ;
 LEXICON NMN_STUUʹL
 !! Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_vyy
@@ -5339,9 +5339,9 @@ LEXICON NMN_ČUEʹNJ
 !! CLASS 4 BISYLLABIC, HIGH VOWEL, MONOPHTHONG, NO PALATALIZATION
 !! IN PENULTIMATE Â:0
 
-LEXICON N_KÕÕNJÂL !!= * @CODE@ kõõnjâl:kõnnjâl
+LEXICON N_KÕÕNJÂL !!= * @CODE@ kõõnjâl:k%^1VOWõnnjâl
 +N: NMN_KÕÕNJÂL ;
-LEXICON NMN_KÕÕNJÂL !!= * @CODE@ kõõnjâl:kõnnjâl
+LEXICON NMN_KÕÕNJÂL !!= * @CODE@ kõõnjâl:k%^1VOWõnnjâl
 !! similar to TOLL
 ! gradation: yes
 ! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
@@ -5865,9 +5865,9 @@ LEXICON NMN_CEERKAV !!= * @CODE@ ceerkav:cẹẹrkav
 :%^RmVow SÅÅBBAR-STEM-PX ; !!= * @CODE@ såbbr-
 !+Use/NG:%^Pen%^VV2V%^Pen%^XY2XYY%^RmVow%>a SG-ILL ;  (3) cerkkva
 
-LEXICON N_SÅÅBBAR !!= * @CODE@ sååbbar:såbbar
+LEXICON N_SÅÅBBAR !!= * @CODE@ sååbbar:s%^1VOWåbbar
 +N: NMN_SÅÅBBAR ;
-LEXICON NMN_SÅÅBBAR !!= * @CODE@ sååbbar:såbbar
+LEXICON NMN_SÅÅBBAR !!= * @CODE@ sååbbar:s%^1VOWåbbar
 ! gradation: yes
 !! N_GEN2X3-NOM2X1
 !! ** Yaml: __N-sååbbar__
@@ -6346,7 +6346,7 @@ LEXICON NMN_STROOIʹTEL
 :%^RmVow PL-OBL ;
 :%^RmVow VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
 
-LEXICON N_ČEEUʹRES !!= * @CODE@ čeeuʹres:čeurrez
+LEXICON N_ČEEUʹRES !!= * @CODE@ čeeuʹres:č%^1VOWeurrez
 ! gradation: yes
 !    Penultimate: Yes
 !      Extra strong grade: Else
@@ -6358,16 +6358,16 @@ LEXICON N_ČEEUʹRES !!= * @CODE@ čeeuʹres:čeurrez
 !! stemtype l-stem čeeuʹres:čeeuʹres
 !! * __@LEXNAME@__ = Koulukielioppi stemtype II 9 (29)
 !! ** Yaml: __N-ceeures __ 
-+N:%^DeVC ATTESTED-NOUN-STEM ;
-+N:%^DeVC SG-NOM ;
-+N:%^Pen%^VV2V%^Pen%^PALNo%^PenVow2a SG-ABE/ACC/GEN ;
-+N:%^Pen%^PALNo%^RmVow%^DeVC%>a SG-ILL ;
-+N:%^Pen%^PALNo%^RmVow%^DeVC%>e SG-LOC ;
-+N:%^Pen%^PALNo%^RmVow%^DeVC SG-COM_IN ;
-+N:%^Pen%^PALNo%^RmVow%^DeVC%>e ESS/PAR ; ! ess and prt without
-+N:%^Pen%^VV2V%^Pen%^PALNo%^PenVow2a PL-NOM ;
-+N:%^Pen%^VV2V%^Pen%^PALNo%^RmVow%^DeVC PL-OBL ;
-+N:%^Pen%^VV2V%^Pen%^PALNo%^RmVow%^DeVC VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
++N:%^Pen%^VV2V%^Pen%^PAL%^Pen%^XYY2XY%^DeVC ATTESTED-NOUN-STEM ;
++N:%^Pen%^VV2V%^Pen%^PAL%^Pen%^XYY2XY%^DeVC SG-NOM ;
++N:%^PenVow2a SG-ABE/ACC/GEN ;
++N:%^RmVow%^DeVC%>a SG-ILL ;
++N:%^RmVow%^DeVC%>e SG-LOC ;
++N:%^RmVow%^DeVC SG-COM_IN ;
++N:%^RmVow%^DeVC%>e ESS/PAR ; ! ess and prt without
++N:%^PenVow2a PL-NOM ;
++N:%^RmVow%^DeVC PL-OBL ;
++N:%^RmVow%^DeVC VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_SEEUʹTER !!= * @CODE@ seeuʹter:seähtter
 +N: NMN_SEEUʹTER ;
@@ -6541,8 +6541,10 @@ LEXICON N_NJUÄʹMMEL !!= * @CODE@ = stemtype l-stem njuäʹmmel:njuäʹmmel
 +N:%^VOWSH%^CLong%^RmVow PL-OBL ;
 
 
-LEXICON N_CIEʹǨǨES
-! cieʹǩǩes:ciâkkes
+LEXICON N_CIẸʹǨǨES !!= * @CODE@ cieʹǩǩes:ceâkˈkez
++N: NMN_CIẸʹǨǨES ;
+LEXICON NMN_CIẸʹǨǨES
+! cieʹǩǩes:ciâkˈkez
 ! gradation: yes
 !    Penultimate: Yes
 !      Extra strong grade: Else
@@ -6552,16 +6554,16 @@ LEXICON N_CIEʹǨǨES
 ! Stem vowel: e
 !! * __@LEXNAME@__ = Koulukielioppi stemtype II 9 (29)
 !! ** Yaml: __N-ciekkes __ 
-+N:%^Pen%^PALẸ%^Pen%^PAL ATTESTED-NOUN-STEM ;
-+N:%^Pen%^PALẸ%^Pen%^PAL SG-NOM ;
-+N:%^Pen%^VOWLower%^Pen%^CC2CCC%^PenVow2a%^VC SG-ABE/ACC/GEN ;
-+N:%^Pen%^VOWLower%^Pen%^CC2CCC%^RmVow%>a SG-ILL ;
-+N:%^Pen%^VOWLower%^Pen%^CC2CCC%^RmVow%>e SG-LOC ;
-+N:%^Pen%^VOWLower%^Pen%^CC2CCC%^RmVow SG-COM_IN ;
-+N:%^Pen%^VOWLower%^Pen%^CC2CCC%^RmVow%>e ESS/PAR ;
-+N:%^Pen%^VOWLower%^Pen%^CC2CCC%^PenVow2a%^VC PL-NOM ;
-+N:%^Pen%^VOWLower%^Pen%^CC2CCC%^RmVow PL-OBL ;
-+N:%^Pen%^VOWLower%^Pen%^CC2CCC%^RmVow VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
++N:%^Pen%^PALẸ%^Pen%^PAL%^Pen%^CCC2CC%^DeVC ATTESTED-NOUN-STEM ;
++N:%^Pen%^PALẸ%^Pen%^PAL%^Pen%^CCC2CC%^DeVC SG-NOM ;
++N:%^Pen%^VOWLower%^PenVow2a SG-ABE/ACC/GEN ;
++N:%^Pen%^VOWLower%^RmVow%^DeVC%>a SG-ILL ;
++N:%^Pen%^VOWLower%^RmVow%^DeVC%>e SG-LOC ;
++N:%^Pen%^VOWLower%^RmVow%^DeVC SG-COM_IN ;
++N:%^Pen%^VOWLower%^RmVow%^DeVC%>e ESS/PAR ;
++N:%^Pen%^VOWLower%^PenVow2a PL-NOM ;
++N:%^Pen%^VOWLower%^RmVow%^DeVC PL-OBL ;
++N:%^Pen%^VOWLower%^RmVow%^DeVC VÕÕNÂS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_ČUEʹĐES !!= * @CODE@ čueʹđes:čuâttez
 +N: NMN_ČUEʹĐES ;
@@ -8070,7 +8072,7 @@ LEXICON NMN_HÕʹPPI !!= * @CODE@ hõʹppi:hõʹppi
 : SG-NOM ;
 : SG-ABE/ACC/GEN ;
 :%^I2J%>a SG-ILL ;
-+Use/NG:%^RmVow%>ǥa SG-ILL ;
++Use/NG:%^UltRmVow%>ǥa SG-ILL ;
 :%^I2J%>e SG-LOC ;
 :%^I2J SG-COM_IN ;
 :%^I2J%>e ESS/PAR ; ! ess and prt without
