@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Noun - jarplan e-stem lentokone: # Noun - full paradigm
+     jarplaan+N+Sg+Nom: [jarplaan, jarplan]
+     jarplaan+N+Sg+Gen: jarplaan
+     jarplaan+N+Sg+Acc: jarplaan
+     jarplaan+N+Sg+Ill: jarplaaʹne
+     jarplaan+N+Sg+Loc: jarplaanâst
+     jarplaan+N+Sg+Com: jarplaanin
+     jarplaan+N+Ess: jarplaanen
+     jarplaan+N+Par: jarplaaned
+     jarplaan+N+Sg+Abe: [jarplaantaa, jarplaantää]
+     jarplaan+N+Pl+Nom: jarplaan
+     jarplaan+N+Pl+Gen: jarplaani
+     jarplaan+N+Pl+Acc: jarplaanid
+     jarplaan+N+Pl+Ill: jarplaanid
+     jarplaan+N+Pl+Loc: jarplaanin
+     jarplaan+N+Pl+Com: jarplaanivuiʹm
+     jarplaan+N+Pl+Abe: [jarplaanitaa, jarplaanitää]
