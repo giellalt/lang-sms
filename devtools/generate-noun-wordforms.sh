@@ -13,15 +13,15 @@ morf_codes="+N+Sg+Nom \
             +N+Pl+Acc \
             +N+Ess \
             +N+Par \
-            +N+Der/Dim+N+Sg+Nom \
+            +N+Der/Dimin+N+Sg+Nom \
+            +N+Der/Dimin+N+Sg+Gen \
             +N+Sg+Nom+PxSg3 \
             +N+Sg+Loc+PxSg3 \
             +N+Sg+Acc+PxSg3 \
             +N+Ess+PxSg3"
 
 # Lexicon source file for lexicons and lemmas:
-#source_file=src/morphology/stems/N_sms2x.lexc
-source_file=N-types_2016-02-17_01.regex
+source_file=src/morphology/stems/N_sms2x.lexc
 
 # Lexicons that should NOT be used to extract lemmas (egrep expression):
 exception_lexicons="(flagK)"
