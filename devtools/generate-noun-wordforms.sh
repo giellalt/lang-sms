@@ -6,23 +6,22 @@
 ######### USER Variables - change these to your liking: #########
 # Codes for the word forms to be generated - list as many or few as needed:
 morf_codes="+N+Sg+Nom \
-            +N+Sg+Gen \
+            +N+Pl+Nom \
             +N+Sg+Ill \
             +N+Sg+Com \
-            +N+Pl+Nom \
+            +N+Sg+Gen \
             +N+Pl+Acc \
-            +N+Pl+Loc \
             +N+Ess \
             +N+Par \
             +N+Der/Dim+N+Sg+Nom \
-            +N+Der/Dim+N+Sg+Gen \
             +N+Sg+Nom+PxSg3 \
             +N+Sg+Loc+PxSg3 \
             +N+Sg+Acc+PxSg3 \
             +N+Ess+PxSg3"
 
 # Lexicon source file for lexicons and lemmas:
-source_file=src/morphology/stems/N_sms2x.lexc
+#source_file=src/morphology/stems/N_sms2x.lexc
+source_file=N-types_2016-02-17_01.regex
 
 # Lexicons that should NOT be used to extract lemmas (egrep expression):
 exception_lexicons="(flagK)"
