@@ -289,9 +289,9 @@ BetweenVowHeightAndMorph = [(%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) ((%
 !! }}}
 
 
-BetweenPALNoAndMorphRightArrow = [(%^CC2C:|%^C2CC:|%^XY2XYY:|%^XYY2XY:|%^K2GG|%^KK2GG:|%^CC2CCC:|%^CCC2C:|%^CCC2CC:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:) ] ;
+BetweenPALNoAndMorphRightArrow = [(%^CC2C:|%^C2CC:|%^XY2XYY:|%^XYY2XY:|%^K2GG:|%^KK2GG:|%^CC2CCC:|%^CCC2C:|%^CCC2CC:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:) ] ;
 
-BetweenPALNoAndMorph = [(%^CC2C:|%^C2CC:|%^XY2XYY:|%^XYY2XY:|%^K2GG|%^KK2GG:|%^CC2CCC:|%^CCC2C:|%^CCC2CC:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:) RBound ] ;
+BetweenPALNoAndMorph = [(%^CC2C:|%^C2CC:|%^XY2XYY:|%^XYY2XY:|%^K2GG:|%^KK2GG:|%^CC2CCC:|%^CCC2C:|%^CCC2CC:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:) RBound ] ;
 
 PenBetweenStemAndPALNo = [(%^Pen: %^V2VV:|%^Pen: %^VV2V:) (%^Pen: %^VOWRaise:|%^Pen: %^VOWLower:|%^Pen: %^VOWBack:) (%^Pen: %^Allegro:) ] ;
 
@@ -1262,7 +1262,7 @@ h:i <=> Vow: _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
 !! tieʹtted+V+Imprt+Sg2: __know/tietää__
 !!€ teâ0tt%^VOWRaise%^PALE%^PAL%^CC2C
 !!€ tieʹđ00000
-  e:  _ (i|u) :ʹ [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+]  %^PALE:  ;
+  e:  _ (i|u) :ʹ [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+]  [%^PALE: | Vow: Cns:* %^Pen: %^PALE: ]  ;
 !!€ ǩeâ0sttez%^Pen%^PALE%^Pen%^PAL%^Pen%^XYY2XY%^DeVC
 !!€ ǩeeʹst0es0000000
 
@@ -1388,7 +1388,7 @@ h:i <=> Vow: _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
  Vow: (ʹ:|0:ʹ) [Cns: - k:]   _ (k: |%{XC%}:) [BetweenStemAndPALNo |Vow: Cns:+ PenBetweenStemAndPALNo %^Pen: ] (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: ([%^CC2C:|%^XYY2XY:]) (%^DeVC:) RBound ;
 !! hääʹsǩ Perhaps the stem should simply be __häskk__
 !!€ hää0sk%^PAL
-!!€ hääʹsk0
+!!€ hääʹsǩ0
  Vow: (ʹ:|0:ʹ) (Cns:)   _ (0:) [k: |%{XC%}:] Vow: Cns:+ PenBetweenStemAndPALNo (%^Pen: [%^PALE:|%^PALÄ:|%^PALẸ:]) %^Pen: %^PAL: (%^Pen: [%^CC2C:|%^XYY2XY:]) (%^DeVC:) RBound ;
 !! mieʹlǩǩ+N+Sg+Acc: __milk/maito__
 !!€ meâ0lkk%^VOWRaise%^PALE%^PAL%^CC2C
@@ -1410,7 +1410,7 @@ h:i <=> Vow: _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
 
 !Not needed here
 !! äiʹǧǧ+N+Sg+Gen: __time/aika__
-!!€ %^1VOWäi0gg%^V2VV%^PAL%^CC2C
+!!€ %^1VOWäi0gg%^V2VV%^PAL%^XYY2XY
 !!€ ääiʹj0000
 
 
@@ -1432,8 +1432,8 @@ h:i <=> Vow: _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
 !  Vow: (ʹ:) (Cns) ǩ: (ˈ:|:ˈ) _    (e: s:) BetweenStemAndPALNo %^PALNo: RBound ;
  Vow: (ˈ:|:ˈ) (Cns) _ PenBetweenStemAndVowelLoss (%^RmVow:) %^PALNo: ;
 !! prääʹzniǩ+N+Sg+Ill: __celebration/juhla__
-!!€ prääʹzniǩ%^Pen%^PALNo%^RmVow%^PALNo%>a
-!!€ prääʹzn0k0000%>a
+!!€ prääʹzniǩ%^RmVow%^PALNo%>a
+!!€ prääʹzn0k00%>a
 !!€ kaaddâšǩ%^Pen%^VV2V%^Pen%^CC2C%^RmVow%^PALNo%>a
 !!€ k0ad00šk000000%>a
  Cns: (ˈ:|:ˈ) _ Vow: Cns:* PenBetweenStemAndConsGrade (%^RmVow:) %^PALNo: (%^DeVC:) RBound ;
