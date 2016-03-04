@@ -239,6 +239,8 @@ Sets
 
  Vow	= a e ẹ i o u å ä â õ           	      	      	      	        !!= * @CODE@
           A E Ẹ I O U Å Ä Â Õ ;	    				        !!= * @CODE@
+ VowNoIU  = a e ẹ o å ä â õ 
+            A E Ẹ O Å Ä Â Õ ;
 
  CNoJV  = b c d f g h k l m n p q r s t w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž 
  	  B C D F G H K L M N P Q R S T W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;     !!= * @CODE@
@@ -528,15 +530,15 @@ Rules
 !!€ mätt0ʼt0%>ed
      j Vow: _ j %^RmVow: ;
 !!jåʹttʼted+V+Inf
-        m (ˈ:) m BetweenStemAndConsGrade (%^CCC2CC:) (%>)  _ m ; 
-        n (ˈ:) n BetweenStemAndConsGrade (%^CCC2CC:) (%>)  _ n ; 
-        v (ˈ:) v BetweenStemAndConsGrade (%^CCC2CC:) (%>)  _ v ; 
-        s (ˈ:) s BetweenStemAndConsGrade (%^CCC2CC:) (%>)  _ s ; 
-        t (ˈ:) t: BetweenStemAndConsGrade (%^CCC2CC:|%^XYY2XY:) (%>)  _ t ; 
-        k (ˈ:) k BetweenStemAndConsGrade (%^CCC2CC:) (%>)  _ (k) ; 
-        Cns:ǩ (ˈ:) Cns:ǩ BetweenStemAndConsGrade BetweenPALNoAndMorphRightArrow (%>) _ ǩ ; 
-        Cns:ž (ˈ:) Cns:ž BetweenStemAndConsGrade BetweenPALNoAndMorphRightArrow (%>)  _ ž ; 
-        Cns:č (ˈ:) Cns:č BetweenStemAndConsGrade BetweenPALNoAndMorphRightArrow (%>)  _ č ; 
+        [ :VowNoIU [i|u]|Cns] (ˈ:) m BetweenStemAndConsGrade (%^CCC2CC:) [%>|»]  _ m ; 
+        [ :VowNoIU [i|u]|Cns] (ˈ:) n BetweenStemAndConsGrade (%^CCC2CC:) [%>|»]  _ n ; 
+        [ :VowNoIU [i|u]|Cns] (ˈ:) v BetweenStemAndConsGrade (%^CCC2CC:) [%>|»]  _ v ; 
+        [ :VowNoIU [i|u]|Cns] (ˈ:) s BetweenStemAndConsGrade (%^CCC2CC:) [%>|»]  _ s ; 
+        [ :VowNoIU [i|u]|Cns] (ˈ:) t: BetweenStemAndConsGrade (%^CCC2CC:|%^XYY2XY:) [%>|»]  _ t ; 
+        [ :VowNoIU [i|u]|Cns] (ˈ:) k BetweenStemAndConsGrade (%^CCC2CC:) [%>|»]  _ k ; 
+       [ :VowNoIU [i|u]|Cns:] (ˈ:) Cns:ǩ BetweenStemAndConsGrade BetweenPALNoAndMorphRightArrow [%>|»] _ ǩ ; 
+        [ :VowNoIU [i|u]|Cns:] (ˈ:) Cns:ž BetweenStemAndConsGrade BetweenPALNoAndMorphRightArrow [%>|»]  _ ž ; 
+        [ :VowNoIU [i|u]|Cns:] (ˈ:) Cns:č BetweenStemAndConsGrade BetweenPALNoAndMorphRightArrow [%>|»]  _ č ; 
 !!€ ijss%>0sa
 !!€ ijss%>ʼsa
 !!€ kåčč%>0čem
@@ -1352,6 +1354,8 @@ h:i <=> Vow: _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
 !!€ kueʹll00
 !!€ st%^1VOWu%{VU%}0l%^PAL
 !!€ st0uuʹl0
+!!€ čââʹlmt%^1VOWẹ0m%^PAL
+!!€ čââʹlmt0eʹm0
              [Vow:|:Vow] (i|u) (:ˈ)  _ Cns:+ [Cns:*|%{XC%}:Cns|Cns:* (ˈ:|:ˈ) Cns:*] Vow: Cns:* PenBetweenStemAndPALNo (%^Pen: %^PALE:)  %^Pen: %^PAL: ;
 !!€ k%^1VOWä0llez%^Pen%^V2VV%^Pen%^PAL%^DeVC
 !!€ kääʹlles00000
