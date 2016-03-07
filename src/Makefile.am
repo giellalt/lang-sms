@@ -63,78 +63,60 @@ endif # CAN_FOMA
 #################################################
 #### Add language-specific build rules here: ####
 
-analyser-%.hfst: analyser-%.tmp.hfst                        \
-					filters/remove-modifier-letter-vertical-line.hfst   \
-					filters/remove-letter-dot-below.hfst            
-	$(AM_V_RGX2FST)$(PRINTF) "                               \
-				@\"$<\"                                      \
-			.o. @\"filters/remove-letter-dot-below.hfst\" \
-			.o. @\"filters/remove-modifier-letter-vertical-line.hfst\"   \
-			;" \
-		| $(HFST_REGEXP2FST) $(HFST_FLAGS) -S --xerox-composition=ON \
-		| $(HFST_INVERT) \
-		> $@
-
-# We need to specify -gt- to avoid applying the filters to the raw fst:
-generator-gt-%.hfst: generator-gt-%.tmp.hfst                \
-					filters/remove-modifier-letter-vertical-line.hfst   \
-					filters/remove-letter-dot-below.hfst            
-	$(AM_V_RGX2FST)$(PRINTF) "                               \
-				@\"$<\"                                      \
-			.o. @\"filters/remove-letter-dot-below.hfst\" \
-			.o. @\"filters/remove-modifier-letter-vertical-line.hfst\"   \
-			;" \
-		| $(HFST_REGEXP2FST) $(HFST_FLAGS) -S --xerox-composition=ON \
-		> $@
-
-# We need to specify -gt- to avoid applying the filters to the raw fst:
-analyser-gt-%.xfst: analyser-gt-%.tmp.xfst                  \
-					filters/remove-modifier-letter-vertical-line.xfst   \
-					filters/remove-letter-dot-below.xfst            
-	$(AM_V_XFST)$(PRINTF) "read regex                        \
-				@\"$<\"                                      \
-			.o. @\"filters/remove-letter-dot-below.xfst\" \
-			.o. @\"filters/remove-modifier-letter-vertical-line.xfst\"   \
+# We need to add processing of language-specific tags in the analysers:
+define giella_analysers
+analyser-gt-%.$(1): analyser-gt-%.tmp.$(1) \
+					 filters/remove-modifier-letter-vertical-line.$(1) \
+					 filters/remove-letter-dot-below.$(1)
+	$$(AM_V_XFST_TOOL)$$(PRINTF) "read regex \
+				@\"$$<\"                                      \
+			.o. @\"filters/remove-letter-dot-below.$(1)\" \
+			.o. @\"filters/remove-modifier-letter-vertical-line.$(1)\"   \
 			;\n\
-		 save stack $@\n\
-		 quit\n" | $(XFST) $(VERBOSITY)
+		 $$(INVERT_HFST)\
+		 save stack $$@\n\
+		 quit\n" | $$(XFST_TOOL)
+endef
+$(foreach fst,hfst xfst foma,$(eval $(call giella_analysers,$(fst))))
 
 # Special case for the disamb analyser, since it follows the same filename
 # pattern as the raw fst:
-analyser-disamb-gt-%.xfst: analyser-disamb-gt-%.tmp.xfst    \
-					filters/remove-modifier-letter-vertical-line.xfst   \
-					filters/remove-letter-dot-below.xfst            
-	$(AM_V_XFST)$(PRINTF) "read regex                        \
+analyser-disamb-gt-desc.%: analyser-disamb-gt-desc.tmp.% \
+					filters/remove-modifier-letter-vertical-line.% \
+					filters/remove-letter-dot-below.%
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 				@\"$<\"                                      \
-			.o. @\"filters/remove-letter-dot-below.xfst\" \
-			.o. @\"filters/remove-modifier-letter-vertical-line.xfst\"   \
+			.o. @\"filters/remove-letter-dot-below.$*\" \
+			.o. @\"filters/remove-modifier-letter-vertical-line.$*\"   \
 			;\n\
+		 $(INVERT_HFST)\
 		 save stack $@\n\
-		 quit\n" | $(XFST) $(VERBOSITY)
+		 quit\n" | $(XFST_TOOL)
 
-generator-%.xfst: generator-%.tmp.xfst                      \
-					filters/remove-modifier-letter-vertical-line.xfst   \
-					filters/remove-letter-dot-below.xfst            
-	$(AM_V_XFST)$(PRINTF) "read regex                        \
-				@\"$<\"                                      \
-			.o. @\"filters/remove-letter-dot-below.xfst\" \
-			.o. @\"filters/remove-modifier-letter-vertical-line.xfst\"   \
+# We need to add processing of language-specific tags in the generator:
+define giella_generators
+generator-gt-%.$(1): generator-gt-%.tmp.$(1) \
+					 filters/remove-modifier-letter-vertical-line.$(1) \
+					 filters/remove-letter-dot-below.$(1)
+	$$(AM_V_XFST_TOOL)$$(PRINTF) "read regex \
+				@\"$$<\"                                      \
+			.o. @\"filters/remove-letter-dot-below.$(1)\" \
+			.o. @\"filters/remove-modifier-letter-vertical-line.$(1)\"   \
 			;\n\
-		 invert net\n\
-		 save stack $@\n\
-		 quit\n" | $(XFST) $(VERBOSITY)
+		 $$(INVERT_XFST)$$(INVERT_FOMA)\
+		 save stack $$@\n\
+		 quit\n" | $$(XFST_TOOL)
+endef
+$(foreach fst,hfst xfst foma,$(eval $(call giella_generators,$(fst))))
 
 # Do NOT apply the accent removal filters to the normative
-# dictionary generator (both hfst and xfst):
-generator-dict-gt-norm.hfst: generator-dict-gt-norm.tmp.hfst
-	$(AM_V_CP)cp -f $< $@
-
-generator-dict-gt-norm.xfst: generator-dict-gt-norm.tmp.xfst
-	$(AM_V_XFST)$(PRINTF) "\
+# dictionary generator:
+generator-dict-gt-norm.%: generator-dict-gt-norm.tmp.%
+	$(AM_V_XFST_TOOL)$(PRINTF) "\
 		 load stack $<\n\
-		 invert net\n\
+		 $(INVERT_XFST)$(INVERT_FOMA)\
 		 save stack $@\n\
-		 quit\n" | $(XFST) $(VERBOSITY)
+		 quit\n" | $(XFST_TOOL)
 
 
 ##################################################################
