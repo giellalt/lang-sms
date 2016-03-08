@@ -12,12 +12,14 @@ morf_codes="+N+Sg+Nom \
             +N+Sg+Gen \
             +N+Pl+Acc \
             +N+Ess \
-            +N+Par \
             +N+Der/Dimin+N+Sg+Nom \
-            +N+Der/Dimin+N+Sg+Gen \
+            +N+Der/Dimin+N+Sg+Ill \
+            +N+Der/Dimin+N+Pl+Nom \
+            +N+Der/Dimin+N+Pl+Ill \
             +N+Sg+Nom+PxSg3 \
             +N+Sg+Loc+PxSg3 \
             +N+Sg+Acc+PxSg3 \
+            +N+Ess+PxSg1 \
             +N+Ess+PxSg3"
 
 # Lexicon source file for lexicons and lemmas:
@@ -30,7 +32,7 @@ exception_lexicons="(flagK)"
 generator_file=src/generator-dict-gt-norm
 
 # How many lemmas maximally for each lexicon:
-lemmacount=10
+lemmacount=100
 
 # Specify path to $GTCORE - we don't use Autotools for these scripts:
 gtcore=$GTCORE
