@@ -2930,7 +2930,6 @@ LEXICON NMN_MIEʹLˈL
 !! * There are several stem types 
 !! * mieʹll:meâlˈl
 : E-STEM_SG-ILL ; !!= * @CODE@ (3) meâlˈla
-:%^PALE%^PAL%^CCC2CC DenominalAdjsCShort ; !!= * @CODE@
 
 :%^VOWRaise%^PALE%^PAL ATTESTED-NOUN-STEM ; !!= * @CODE@ (1) mieʹlˈl
 :%^VOWRaise%^PALE%^PAL E-STEM_SG-NOM ; !!= * @CODE@ (1) mieʹlˈl
@@ -3013,10 +3012,11 @@ LEXICON NMN_MUEʹRJJ
 !! NumContLex="1.113"
 !! Is for nouns with ''-est'' Loc, Extra long vowel
 !! ** Yaml: __N-muerjj__
-:%^PALE%^PAL ATTESTED-NOUN-STEM ;		!!= * @CODE@ (1) Sg.Nom: mueʹrjj
-:%^PALE%^PAL SG-NOM ;		  		!!= * @CODE@ (1) Sg.Nom: mueʹrjj
+:%^PALE%^PAL%^XYY2XY DenominalAdjsCShort ; !!= * @CODE@
+:%^PALE%^PAL ATTESTED-NOUN-STEM ;	!!= * @CODE@ (1) Sg.Nom: mueʹrjj
+:%^PALE%^PAL SG-NOM ;		  	!!= * @CODE@ (1) Sg.Nom: mueʹrjj
 :%^PALE%^PAL%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;	!!= * @CODE@ (2) Pl.Nom: mueʹrj
-: E-STEM_SG-ILL ;  			     	!!= * @CODE@ (3) Sg.Nom: muârjja
+: E-STEM_SG-ILL ;  		     	!!= * @CODE@ (3) Sg.Nom: muârjja
 :%^PALE%^PAL%^XYY2XY%>e SG-LOC ;		!!= * @CODE@ (4) Sg.Loc: mueʹrjest
 :%^VOWRaise%^PAL%^XYY2XY SG-COM_IN/PL-OBL ; !!= * @CODE@ (5) Sg.Com: muõʹrjin
 +Use/NG:%^PALE%^PAL%^XYY2XY SG-COM_IN/PL-OBL ; !!= * @CODE@ (5) Sg.Com:  mueʹrjin
@@ -4408,6 +4408,9 @@ LEXICON E-STEM_SG-ABE/ACC/GEN !!= * @CODE@ (2)
 LEXICON E-STEM_SG-ILL !!= * @CODE@ (3)
 :%>a SG-ILL ;
  E-STEM-PX-STRENGTHEN-WITHOUT-PAL ;
++Der/N2A: N2A_ČÄCCAI ;
+
+
 LEXICON E-STEM_SG-COM_IN/PL-OBL !!= * @CODE@ (5)
  SG-COM_IN ;
  E-STEM_PL-OBL ;
@@ -4773,6 +4776,12 @@ LEXICON NMN_ATOM
 :%^V2VV PL-OBL ;
 +Der/Dimin+N:%^V2VV N_MUÕRÂŽ-WITHOUT-PAL ;  !!= * @CODE@ paar-
 +Der/Dimin+N:%^V2VV%^PAL N_MUÕRÂŽ-WITH-PAL ;  !!= * @CODE@ paaʹr-
+
+:%^V2VV HatÂ-STEM-PX-RETAIN ;
+:%^V2VV HatÂ-STEM-PX-WEAKEN ; !! e.g.
+:%^V2VV HatÂ-STEM-PX-WEAKEN_NG ; !! e.g. +Use/NG+Sg+Loc+PxSg3
+:%^V2VV HatÂ-STEM-PX-ALLEGRO ; !! e.g. +Sg+Loc+PxSg1
+:%^V2VV HatÂ-STEM-PX-STRENGTHEN ;
 
 
 LEXICON N_EVAŊǦEʹLIUM !!= * @CODE@ evaŋǧeʹlium:evaŋǧeʹlium
@@ -9035,6 +9044,7 @@ LEXICON A-STEM-PX-STRENGTHEN
 +Sg+Ill+PxPl1:%>seen K ;
 +Sg+Ill+PxPl2:%>seed K ;
 +Sg+Ill+PxPl3:%>seez K ;
+
 
 !! !E-STEM-PX
 LEXICON E-STEM-PX-RETAIN-WITHOUT-PAL
