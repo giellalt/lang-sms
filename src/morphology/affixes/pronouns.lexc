@@ -92,6 +92,7 @@ Interrogative ; !!= * @CODE@
 ! Reciprocal ;
  Relative ;	!!= * @CODE@ kååʹtt, mii
  Indefinite ;
+ Distributive ;
 
 
 !! !!Personal pronouns
@@ -380,6 +381,11 @@ LEXICON MK-long !!= * @CODE@
 LEXICON MK-short !!= * @CODE@
 +Sg+Com:in	K ;
 +Sg+Abe:ntää	K ;
+MK-PL-short ;
+
+LEXICON MK-PL-short !!= * @CODE@
++Pl+Acc:iʹd	K ;
++Pl+Ill:iʹd	K ;
 
 LEXICON MK-low !!= * @CODE@
 +Ess:ʹđen	K ;
@@ -395,18 +401,42 @@ LEXICON INDEF-MK-long !!= * @CODE@
 +Sg+Acc:n-ne	K ;
 +Sg+Gen:n-ne	K ;
 +Sg+Ill:zz-ne	K ;
++Sg+Abe:nn-ne-tää	K ;
 +Pl+Nom:k-ne	K ;
 
-LEXICON INDEF-MK-short !!= * @CODE@
-+Sg+Com:in-ne	K ;
-+Sg+Abe:ntää-ne	K ;
+LEXICON INDEF-MK-low-short !!= * @CODE@
++Sg+Loc:ʹstt-ne K ; 
++Pl+Acc:iʹd-ne	K ;
++Pl+Ill:iʹd-ne	K ;
 
 LEXICON INDEF-MK-low !!= * @CODE@
 +Ess:ʹđen-ne	K ;
 +Par:ʹđ-ne	K ;
 +Par:ʹđed-ne	K ;
-+Pl+Com:ivuiʹm-ne	K ;
-+Pl+Abe:itää-ne	K ;
++Pl+Com:i-ne-vuiʹm	K ;
++Pl+Abe:i-ne-tää	K ;
+
+LEXICON DISTR-MK !!= * @CODE@
++Sg+Nom:ii-a	K ;
+
+LEXICON DISTR-MK-long !!= * @CODE@
++Sg+Acc:n-a	K ;
++Sg+Gen:n-a	K ;
++Sg+Ill:zz-a	K ;
++Sg+Abe:nn-a-tää	K ;
++Pl+Nom:k-a	K ;
+
+LEXICON DISTR-MK-low-short !!= * @CODE@
++Sg+Loc:ʹstt-a K ; 
++Pl+Acc:iʹd-a	K ;
++Pl+Ill:iʹd-a	K ;
+
+LEXICON DISTR-MK-low !!= * @CODE@
++Ess:ʹđen-a	K ;
++Par:ʹđ-a	K ;
++Par:ʹđed-a	K ;
++Pl+Com:i-a-vuiʹm	K ;
++Pl+Abe:i-a-tää	K ;
 
 LEXICON PRON-QNT_
 +Pron+Qnt: # ;
@@ -443,11 +473,15 @@ mii-ne+Pron+Indef:m       INDEF-MK ;
 ǩii-ne+Pron+Indef:ǩ       INDEF-MK ;
 mii-ne+Pron+Indef:mõõ     INDEF-MK-long ;
 ǩii-ne+Pron+Indef:ǩeä     INDEF-MK-long ;
-mii-ne+Pron+Indef:mõ      INDEF-MK-short ;
-ǩii-ne+Pron+Indef:ǩeä     INDEF-MK-short ;
+mii-ne+Pron+Indef:mâ      INDEF-MK-low-short ;
+ǩii-ne+Pron+Indef:ǩeä     INDEF-MK-low-short ;
 mii-ne+Pron+Indef:mââ     INDEF-MK-low ;
 ǩii-ne+Pron+Indef:ǩeä     INDEF-MK-low ;
-mii-ne+Pron+Indef+Sg+Loc:mâʹst-ne K ;
+ǩii-ne+Pron+Indef+Sg+Com:ǩeäinn-ne K ;
+mii-ne+Pron+Indef+Sg+Com:mõiʹnn-ne K ;
+ǩii-ne+Pron+Indef+Pl+Loc:ǩeäinn-ne K ;
+mii-ne+Pron+Indef+Pl+Loc:mâiʹnn-ne K ;
+mii-ne+Use/NG+Pron+Indef+Sg+Loc:mâʹst-ne K ;
 kååʹtt-ne+Pron+Indef+Sg+Nom:kååʹtt-ne K ;
 kååʹtt-ne+Pron+Indef+Sg+Acc:koon-ne K ;
 kååʹtt-ne+Pron+Indef+Sg+Gen:koon-ne K ;
@@ -462,6 +496,71 @@ kååʹtt-ne+Pron+Indef+Pl+Ill:koid-ne K ;
 kååʹtt-ne+Pron+Indef+Pl+Loc:koin-ne K ;
 kååʹtt-ne+Pron+Indef+Pl+Loc:kooin-ne K ;
 kååʹtt-ne+Pron+Indef+Sg+Prl:kooiǥ-ne K ;
+
+kuäbbaž-ne+Pron+Indef+Sg+Nom:kuäbbaž-ne K ;
+kuäbbaž-ne+Pron+Indef+Sg+Acc:kuäbba-ne K ;
+kuäbbaž-ne+Pron+Indef+Sg+Gen:kuäbba-ne K ;
+kuäbbaž-ne+Pron+Indef+Sg+Ill:kuäbbže-ne K ;
+kuäbbaž-ne+Pron+Indef+Sg+Loc:kuäbbast-ne K ;
+kuäbbaž-ne+Pron+Indef+Sg+Com:kuäbbain-ne K ;
+kuäbbaž-ne+Pron+Indef+Sg+Abe:kuäbba-ne-tää K ;
+kuäbbaž-ne+Pron+Indef+Ess:kuäbbžen-ne K ;
+kuäbbaž-ne+Pron+Indef+Par:kuäbbžed-ne K ;
+
+kuäbbaž-ne+Pron+Indef+Pl+Nom:kuäbba-ne K ;
+kuäbbaž-ne+Pron+Indef+Pl+Gen:kuäbbai-ne K ;
+kuäbbaž-ne+Pron+Indef+Pl+Acc:kuäbbaid-ne K ;
+kuäbbaž-ne+Pron+Indef+Pl+Ill:kuäbbaid-ne K ;
+kuäbbaž-ne+Pron+Indef+Pl+Loc:kuäbbain-ne K ;
+kuäbbaž-ne+Pron+Indef+Pl+Com:kuäbbai-ne-vuiʹm K ;
+kuäbbaž-ne+Pron+Indef+Pl+Abe:kuäbbai-ne-tää K ;
+
+LEXICON Distributive !!= * @CODE@
+mii-a+Pron+Distr:m       DISTR-MK ;
+ǩii-a+Pron+Distr:ǩ       DISTR-MK ;
+mii-a+Pron+Distr:mõõ     DISTR-MK-long ;
+ǩii-a+Pron+Distr:ǩeä     DISTR-MK-long ;
+mii-a+Pron+Distr:mâ      DISTR-MK-low-short ;
+ǩii-a+Pron+Distr:ǩeä     DISTR-MK-low-short ;
+mii-a+Pron+Distr:mââ     DISTR-MK-low ;
+ǩii-a+Pron+Distr:ǩeä     DISTR-MK-low ;
+ǩii-a+Pron+Distr+Sg+Com:ǩeäinn-a K ;
+mii-a+Pron+Distr+Sg+Com:mõiʹnn-a K ;
+ǩii-a+Pron+Distr+Pl+Loc:ǩeäinn-a K ;
+mii-a+Pron+Distr+Pl+Loc:mâiʹnn-a K ;
+mii-a+Use/NG+Pron+Distr+Sg+Loc:mâʹst-a K ;
+kååʹtt-a+Pron+Distr+Sg+Nom:kååʹtt-a K ;
+kååʹtt-a+Pron+Distr+Sg+Acc:koon-a K ;
+kååʹtt-a+Pron+Distr+Sg+Gen:koon-a K ;
+kååʹtt-a+Pron+Distr+Sg+Gen+Err/Orth:koonn-a K ;
+kååʹtt-a+Pron+Distr+Sg+Ill:koozz-a K ;
+kååʹtt-a+Pron+Distr+Sg+Loc:koʹst-a K ;
+kååʹtt-a+Pron+Distr+Sg+Com:kooin-a K ;
+kååʹtt-a+Pron+Distr+Pl+Nom:kook-a K ;
+kååʹtt-a+Pron+Distr+Pl+Gen:kooi-a K ;
+kååʹtt-a+Pron+Distr+Pl+Acc:koid-a K ;
+kååʹtt-a+Pron+Distr+Pl+Ill:koid-a K ;
+kååʹtt-a+Pron+Distr+Pl+Loc:koin-a K ;
+kååʹtt-a+Pron+Distr+Pl+Loc:kooin-a K ;
+kååʹtt-a+Pron+Distr+Sg+Prl:kooiǥ-a K ;
+
+kuäbbaž-a+Pron+Distr+Sg+Nom:kuäbbaž-a K ;
+kuäbbaž-a+Pron+Distr+Sg+Acc:kuäbba-a K ;
+kuäbbaž-a+Pron+Distr+Sg+Gen:kuäbba-a K ;
+kuäbbaž-a+Pron+Distr+Sg+Ill:kuäbbže-a K ;
+kuäbbaž-a+Pron+Distr+Sg+Loc:kuäbbast-a K ;
+kuäbbaž-a+Pron+Distr+Sg+Com:kuäbbain-a K ;
+kuäbbaž-a+Pron+Distr+Sg+Abe:kuäbba-a-tää K ;
+kuäbbaž-a+Pron+Distr+Ess:kuäbbžen-a K ;
+kuäbbaž-a+Pron+Distr+Par:kuäbbžed-a K ;
+
+kuäbbaž-a+Pron+Distr+Pl+Nom:kuäbba-a K ;
+kuäbbaž-a+Pron+Distr+Pl+Gen:kuäbbai-a K ;
+kuäbbaž-a+Pron+Distr+Pl+Acc:kuäbbaid-a K ;
+kuäbbaž-a+Pron+Distr+Pl+Ill:kuäbbaid-a K ;
+kuäbbaž-a+Pron+Distr+Pl+Loc:kuäbbain-a K ;
+kuäbbaž-a+Pron+Distr+Pl+Com:kuäbbai-a-vuiʹm K ;
+kuäbbaž-a+Pron+Distr+Pl+Abe:kuäbbai-a-tää K ;
 
 !! !SPATIAL PRONOUNS
 LEXICON PRON-SPAT-SG1_
