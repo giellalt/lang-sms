@@ -2537,24 +2537,44 @@ LEXICON V0_JUʹRDDED !!= * @CODE@ juʹrdded:jurdd
 ! (8) +V+Imprt+ConNegII: jurddu
 !    Pass.PrfPrc
 ! juʹrdded:jurdd
-:%^PAL VSUF-INF_ED ; !1
-:%^VOWLower VSUF-IND-PRS-SG3_ED ; !2 jordd
-!! Ind+Prs+Sg3, 
+!! Strong-HighVowel-Palatalization
+:%^PAL VSUF-INF_ED ; !!= * @CODE@ (1) +V+Inf: juʹrdded
+!! V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
+!! Actio, ActEss, PrsPrc
+
+!! Strong-LoweredVowel-No-palatalization
+:%^VOWLower VSUF-IND-PRS-SG3_ED ; !!= * @CODE@ (2) +V+Ind+Prs+Sg3: jordd
+!! +V+Ind+Prs+Sg3, Ind.Prt.ConNeg, PrfPrc
+
+!! ExtraStrong-LoweredVowel-Palatalization
 +Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ; !3 joʹrdde
 !! Ind+Prs+Pl3
-:%^PAL VSUF-IND-PRT-PL3_ED ; !4 juʹrdde
-!! Ind+Prt+Pl3, 
-:%^V2VV%^VOWLower%^XYY2XY%> VSUF-CONDITIONAL_ED ; !5 ?2 ?7 joord
-!! Ind+Prs+Sg1, Ind+Prs+Sg2, Cond
-:%^V2VV%^PAL%^XYY2XY VSUF-POTENTIAL_ED ; !6 juuʹrd-
-!! Ind+Prs+Sg4, Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2
-!! Pot, Imprt+Sg2, Ind+Prs+ConNeg
-+Imprt+Sg3:%^V2VV%^VOWLower%^XYY2XY%>as K ; !7 joordas
-!! Imprt+Sg3
-:%^V2VV%^PAL%^XYY2XY VSUF-IND-PRS-CONNEG_ED ; !!= * @CODE@ juuʹrd
-: VSUF-IMPRT-CONNEGII_ED ; !8
 
-!! (10) 
+!! ExtraStrong-RaisedVowel-Palatalization
+:%^PAL VSUF-IND-PRT-PL3_ED ; !!= * @CODE@ (4) +V+Ind+Prt+Pl3: juʹrdde
+!! +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
+
+!! Weak-StableV-Palatalization
+:%^V2VV%^PAL%^XYY2XY VSUF-IND-PRS-CONNEG_ED ; !!= * @CODE@ (5) juuʹrd
+!! Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
+
+!! Weak-RaisedVowel-Palatalization
+:%^V2VV%^PAL%^XYY2XY VSUF-POTENTIAL_ED ; !!= * @CODE@ (6) +V+Pot+Sg3: juuʹrdež
+!! Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
+
+!! Weak-LoweredVowel-No-palatalization
+:%^V2VV%^VOWLower%^XYY2XY%> VSUF-CONDITIONAL_ED ; !!= * @CODE@ (7) +V+Imprt+Sg3: joordas
+!! Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
+
+!! ExtraStrong-RaisedVowel-No-palatalization
+: VSUF-IMPRT-CONNEGII_ED ; !!= * @CODE@ (8) +V+Imprt+ConNegII: jurddu
+!! Imprt+ConNeg, Pass+PrfPrc
+
+!! ExtraStrong-LoweredVowel-No-palatalization
+:%^VOWLower VSUF-IMPRT-PL3_ED ; !!= * @CODE@ (9) Ind.Imprt.Pl3: jorddaz 
+!! Imprt+Pl3
+
+!! (10) Allegro for incoative: juʹrd»
 :%^PAL%^XYY2XY VSUF-ALLEGRO_ED ;
 
 LEXICON V_PUʹHTTED !!= * @CODE@ puʹhtted:puhtt
