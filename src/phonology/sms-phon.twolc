@@ -610,7 +610,7 @@ Rules
 !! __@RULENAME@__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
  e:i <=>
   OnSetC _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWRaise: ;
-  OnSetC _ %^1VOW:   (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  BetweenStemAndHeight %^VOWRaise: ;
+  OnSetC _ [%^1VOW:|e:]   (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  BetweenStemAndHeight %^VOWRaise: ;
 
   OnSetC _ Vow:0 (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VV2V: %^VOWRaise: ;
   OnSetC  e: _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWRaise: ;
@@ -631,7 +631,7 @@ Rules
   OnSetC _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWRaise: ;
 !!€ pẹss%^VOWRaise%>u
 !!€ piss0%>u
-  OnSetC _ %^1VOW: (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  BetweenStemAndHeight %^VOWRaise: ;
+  OnSetC _ [%^1VOW:|ẹ:] (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  BetweenStemAndHeight %^VOWRaise: ;
 !!€ pẹ%^1VOWss%^V2VV%^VOWRaise%>už
 !!€ piiss00%>už
   OnSetC _ Vow:0 (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VV2V: %^VOWRaise: ;
@@ -1352,8 +1352,8 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
  
 "Even-syllabic verbs I, Palatalization of g:ǧ"
 !! __@RULENAME@__ - used in
- g:ǧ <=> Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:)     _ (ˈ:|:ˈ) g: BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CCC2CC:) RBound ;
-           Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:) g: (ˈ:|:ˈ) _   BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CCC2CC:) RBound ;
+ g:ǧ <=> Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:)     _ (ˈ:|:ˈ) g: BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CCC2CC:|%^CC2CCC:) RBound ;
+           Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:) g: (ˈ:|:ˈ) _   BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CCC2CC:|%^CC2CCC:) RBound ;
 
     Vow: (%^1VOW:) 0: _ BetweenStemAndPALNo %^PAL: ;
 !! bioloog+N+Sg+Ill __biologist__
@@ -1364,7 +1364,7 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
 "Even-syllabic verbs I, Palatalization of k:ǩ here"
 !! __@RULENAME@__ - used in
  k:ǩ <=>
- Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:)   _ (0:) [k: |%{XC%}: ] [BetweenStemAndPALNo |Vow: Cns:+ PenBetweenStemAndPALNo %^Pen: ] (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: ([%^CC2C:|%^XYY2XY:]) (%^DeVC:) RBound ;
+ Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:)   _ (0:) [k: |%{XC%}: ] [BetweenStemAndPALNo |Vow: Cns:+ PenBetweenStemAndPALNo %^Pen: ] (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: ([%^CC2C:|%^CCC2CC:|%^XYY2XY:]) (%^DeVC:) RBound ;
 
  Vow: (%^1VOW:) (ʹ:|0:ʹ) [Cns: - k:]   _ (k: |%{XC%}:) [BetweenStemAndPALNo |Vow: Cns:+ PenBetweenStemAndPALNo %^Pen: ] (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: ([%^CC2C:|%^XYY2XY:]) (%^DeVC:) RBound ;
 !! hääʹsǩ Perhaps the stem should simply be __häskk__
@@ -1374,9 +1374,9 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
 !! mieʹlǩǩ+N+Sg+Acc: __milk/maito__
 !!€ meâ0lkk%^VOWRaise%^PALE%^PAL%^CC2C
 !!€ mieʹlǩ00000
- Vow: (%^1VOW:) (ʹ:|0:ʹ)        _ (ˈ:|:ˈ) [k: |%{XC%}:] BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CC2CCC:|%^C2CC:) RBound ;
+ Vow: (%^1VOW:) (ʹ:|0:ʹ)        _ (ˈ:|:ˈ) [k: |%{XC%}:] BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CC2CCC:|%^CCC2CC:|%^C2CC:) RBound ;
 ! Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:)     _ [k: |%{XC%}:] (%^VV2V:|%^VOWSH: (%^CLong:)) NeutrHighBack (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: RBound ;
-  Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:) k: (ˈ:|:ˈ) _   BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CC2CCC:) RBound ;
+  Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:) k: (ˈ:|:ˈ) _   BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CC2CCC:|%^CCC2CC:) RBound ;
 
 !!€ jo%^1VOW0kk%^PAL%>e
 !!€ jo0ʹǩǩ0%>e
