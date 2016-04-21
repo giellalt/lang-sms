@@ -2379,6 +2379,46 @@ LEXICON NMN_ÄKK
 :%^CC2C A-STEM-PX-ALLEGRO ;     !!= * @CODE@ (5) äk
 !! Sg_Loc_Px..
 
+LEXICON N_APTEEKK !!= * @CODE@ apteekk:apteekk
+!! normative = PẸSS 
++N: NMN_APTEEKK ;
+LEXICON NMN_APTEEKK
+!! Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_gem
+! gradation: yes
+! vowel: monophthong
+! consonantism: geminate
+! stem vowel: a
+! illative vowel: u ~ a
+!! ** Yaml: __N-aekk__
+!!
+!! grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
+ ATTESTED-NOUN-STEM ;			! apteekk
+: A-STEM_SG-NOM ;	    			! apteekk
+!! Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
+
+!! grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
+: A-STEM_SG-ABE/ACC/GEN-PL-NOM ;		! apteekk
+!! Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px...,
+!! stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
+
+!! grade: strengthened (short_vowel, long_cluster), vowel: raised
+:%>a SG-ILL ;	      		! apteekka
+
+!! grade: strengthened (short_vowel, long_cluster), vowel: neutral (low)
+: A-STEM-PX-STRENGTHEN ;           !!= * @CODE@ (5) apteekk
+!! Ess_Px..., Sg_Ill..., N»A
+
+!! grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
+:%>a ESS/PAR ; 	  	    		! apteekkan
+
+!! grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
++Der/Dimin:%> N_PẸẸSSAŽ ; !!= * @CODE@  (9) Dim.N.Sg.Nom: apteekkaž
+
+!! grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
+:%^VV2V%^CC2C A-STEM-PX-ALLEGRO ;     !!= * @CODE@ (5) aptek
+!! Sg_Loc_Px..
+
+
 LEXICON N_LÄÄMPA !!= * @CODE@ läämpa:lämpp
 !! two-syllable
 +N: NMN_LÄÄMPA ;
@@ -3590,6 +3630,30 @@ LEXICON NMN_EEʹǨǨ
  E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) ẹẹkk-
 :%^VV2V%^PAL%^CC2C E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) eʹǩ-
 
+
+LEXICON N_TEEʹMM !!= * @CODE@ teeʹmm:teemm
++N: NMN_TEEʹMM ;
+LEXICON NMN_TEEʹMM
+! gradation: yes
+! vowel: monophthong
+! vowel_shift: no
+! weak: single
+!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+!! !!FORMS
+!! NumContLex="1.113"
+!! ** Yaml: __N-teemm__
+!!
+:%^PAL E-STEM_SG-NOM ;		  !!(1) Sg.Nom: teeʹmm
+:%^PAL%^CC2C E-STEM_SG-ABE/ACC/GEN ; !!(2) Pl.Nom: teeʹm
+:%^PAL%^CC2C PL-NOM ; !!(2) Pl.Nom: teeʹm
+:%^VV2V E-STEM_SG-ILL ; !!(3) Sg.Ill: temma
+:%^PAL%^CC2C%>e SG-LOC ; !!(4) Sg.Loc: teeʹmest
+:%^PAL%^CC2C SG-COM_IN ; !!(5) Sg.Com: teeʹmin
+:%^PAL%^CC2C E-STEM_PL-OBL ; !!(5) Sg.Com: teeʹmin
+:%^PAL%>e ESS/PAR ; !!(6) Ess: teeʹmmen
+:%^CC2C E-STEM_N_KUÂLAŽ ; !!(9) Der/Dimin.N.Sg.Nom: teemaž
+ E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) teemm-
+:%^VV2V%^PAL%^CC2C E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) teʹm-
 
 LEXICON N_PÂÂʹJJ !!= * @CODE@ pââʹjj:pââjj
 ! vowel: monophthong
