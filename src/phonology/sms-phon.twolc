@@ -306,7 +306,7 @@ PenBetweenStemAndConsGrade = [(%^Pen: %^V2VV:|%^Pen: %^VV2V:) ((%^Pen: %^VOWRais
 PenBetweenStemAndVowelLoss = [(%^Pen: %^V2VV:|%^Pen: %^VV2V:) [(%^Pen: %^VOWRaise:|%^Pen: %^VOWLower:) ((%^Pen: %^PALÂ:|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PALNo:|(%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PAL:)| %^Pen: %^VOWBack: (%^Pen: %^Allegro:) (%^Pen: %^PALNo:|%^Pen: %^PAL:)] ([%^Pen: %^C2CC:|%^Pen: %^XY2XYY:]|%^Pen: %^CC2C:|%^Pen: %^XYY2XY:|%^Pen: %^CC2CCC:)] ;
 
 
-PenBetweenStemAndStemFinalVoicing = [(%^Pen: %^V2VV:|%^Pen: %^VV2V:) [(%^Pen: %^VOWRaise:|%^Pen: %^VOWLower:) ((%^Pen: %^PALÂ:|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PALNo:|(%^Pen: %^PALÕ:|%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:) (%^Pen: %^Allegro:) %^Pen: %^PAL:)| %^Pen: %^VOWBack: (%^Pen: %^Allegro:) (%^Pen: %^PALNo:|%^Pen: %^PAL:) ] (%^Pen: %^C2CC:|%^Pen: %^XY2XYY:|%^Pen: %^XYY2VY:|%^Pen: %^CC2C:|%^Pen: %^XYY2XY:|%^Pen: %^CCC2CC:|%^Pen: %^CC2CCC:|%^Pen: %^CCC2C:) (%^RmVow:)] ;
+PenBetweenStemAndStemFinalVoicing = [(%^Pen: %^V2VV:|%^Pen: %^VV2V:) [(%^Pen: %^VOWRaise:|%^Pen: %^VOWLower:) ((%^Pen: %^PALÂ:|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PALNo:|(%^Pen: %^PALÕ:|%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:) (%^Pen: %^Allegro:) %^Pen: %^PAL:)| %^Pen: %^VOWBack: (%^Pen: %^Allegro:) (%^Pen: %^PALNo:|%^Pen: %^PAL:) ] (%^Pen: %^C2CC:|%^Pen: %^XY2XYY:|%^Pen: %^XYY2VY:|%^Pen: %^CC2C:|%^Pen: %^XYY2XY:|%^Pen: %^CCC2CC:|%^Pen: %^CC2CCC:|%^Pen: %^CCC2C:) (%^RmVow:|%^PenVow2a:)] ;
 
 PenBetweenPALNoAndMorph = [(%^Pen: %^CC2C:|%^Pen: %^C2CC:|%^Pen: %^XYY2XY:|%^Pen: %^KK2GG:|%^Pen: %^CC2CCC:|%^Pen: %^CCC2C:|%^Pen: %^CCC2CC:|%^Pen: %^XY2XYY:|%^Pen: %^XYY2VY:|%^Pen: %^XYY2VYY:|%^Pen: %^KKK2GG:) RBound ] ;
 
@@ -553,8 +553,9 @@ Rules
 !! __@RULENAME@__ - used in Kääzzkõsraajõstuâjj-joouk
  0:%- <=>
         Cx  _ #  Cx ;
-	where Cx in (b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž) ; 
-
+  where Cx in (b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž) ;
+!!€ kääzzkõsraajõstuâjj0#joukk
+!!€ kääzzkõsraajõstuâjj%-#joukk
 
 
 
@@ -1377,7 +1378,11 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
  Vow: (%^1VOW:) (ʹ:|0:ʹ)        _ (ˈ:|:ˈ) [k: |%{XC%}:] BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CC2CCC:|%^CCC2CC:|%^C2CC:) RBound ;
 ! Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:)     _ [k: |%{XC%}:] (%^VV2V:|%^VOWSH: (%^CLong:)) NeutrHighBack (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: RBound ;
   Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:) k: (ˈ:|:ˈ) _   BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CC2CCC:|%^CCC2CC:) RBound ;
+  Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:) k: (ˈ:|:ˈ) _  Vow: Cns:* PenBetweenStemAndPALNo (%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:) %^Pen: %^PAL: (%^Pen: %^CC2CCC:|%^Pen: %^CCC2CC:) RBound ;
 
+!! rääʹǩǩes+A+Sg+Nom __beloved/rakas__
+!!€ rä%^1VOW0kkes%^Pen%^V2VV%^Pen%^PAL
+!!€ rääʹǩǩes0000
 !!€ jo%^1VOW0kk%^PAL%>e
 !!€ jo0ʹǩǩ0%>e
 !!€ saa0kk%^VV2V%^PAL%>e
@@ -1821,9 +1826,9 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
          Vow: (%^1VOW:)  (ʹ:|0:ʹ) s:  ˈ:  _  BetweenStemAndConsGrade %^KKK2GG: ; 
          Vow: (%^1VOW:)  (ʹ:|0:ʹ)  _ ˈ:   s: BetweenStemAndConsGrade %^KKK2GG: ; 
 !! deriving cieʹǩǩes+N+Sg+Gen: ceäkˈkaz
-    [Cns:+ (%{XC%}:Cns)|Cns:+ (ˈ:|:ˈ) Cns:+] Vow: _ PenBetweenStemAndStemFinalVoicing %^VC: ; 
+    [Cns:+ (%{XC%}:Cns)|Cns:+ (ˈ:|:ˈ) Cns:+] Vow: _ PenBetweenStemAndStemFinalVoicing (%^PenVow2a:) %^VC: ; 
 !! cieʹǩǩes+N+Sg+Gen
-!!€ ceäkˈkez%^PenVow2a
+!!€ ceäkˈkes%^PenVow2a
 !!€ ceäkˈkaz0
        Vow: (%^1VOW:)  _ s: (%^VV2V: ) %^KK2G: ;
 !!€ pååss%^VV2V%^KK2G»škuätt
