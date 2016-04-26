@@ -1,0 +1,135 @@
+SMS-Meeting
+Date: 19.01.2015
+Attending: Jack, Michael, Ciprian
+
+1. Merging data
+
+ - decision: all data in one place
+ - langs/sms/src/morphology/stems/*.xml
+ 
+ - how?
+ 
+ sms2X intersected with non-open sms-data in XML
+  ==> working data
+  
+  Action points:
+   - tmp-dir i sms
+   - merge the xml formats
+   Result:
+   - three groups of entries
+   a. entries with non-trivial stg
+   b. entries with trivial stg (adv, prepositions)
+   c. entries without stg: todo
+   
+Routine for updating stg-info
+- extract entries into Jack's lexc working format (using IDs)
+- update lexc data
+- import data back into xml format
+
+
+   
+   
+   
+
+
+<e>
+ <lg rev="dâllõõp">
+  <l pos="V">põõllâd</l>
+  <stg>
+   <st Contlex="V_PÕÕLLÂD" NumContLex="800">põõll</st>
+  </stg>
+ </lg>
+ <mg>
+  <tg xml:lang="fin">
+   <t ordId="17145">pelätä</t>
+  </tg>
+ </mg>
+</e>
+
+põõllâd:põõll V_PÕÕLLÂD "pelätä" ;
+
+
+ - data to move to langs/src/morphology/stems/
+a_sms2X.xml  => A_sms.xml
+abbr_sms2X.xml
+adv_sms2X.xml
+adp_sms2X.xml
+cc_sms2X.xml
+cs_sms2X.xml
+det_sms2X.xml
+i_sms2X.xml
+n_sms2X.xml
+num_sms2X.xml
+pcle_sms2X.xml
+pro_sms2X.xml
+prop_sms2X.xml
+v_sms2X.xml
+
+ - note that some of my pos-tags might be different from GT conventions
+ - all moved files should be deleted 
+
+
+
+gogogogo:gogogogo #;
+
+2. etymology
+
+From Michael:
+     <lg>
+         <l pos="a" class="4â">joorbâs</l>
+         <etymology>
+            <etymon type="inher" source="saamic">jorpe̮</etymon>
+            <cognate xml:lang="sjd">ёрпас</cognate>
+         </etymology>
+      </lg>
+
+From Jack:
+
+  <e>
+    <lg>
+      <l pos="N">верь</l>
+<cognate>
+<l pos="N" xml:lang="fin">veri</l>
+<l pos="N" xml:lang="hun">vér</l>
+<l pos="N" xml:lang="kpv">вир</l>
+<l pos="N" xml:lang="mdf">вер</l>
+<l pos="N" xml:lang="mrj">вӹр</l>
+<l pos="N" xml:lang="sme">varra</l>
+<l pos="N" xml:lang="sms">võrr</l>
+</cognate>
+
+      <stg>
+        <st Contlex="N_КАЛ">вӒ4рь</st>
+      </stg>
+    </lg>
+
+result:
+ <ety>
+   <emon */>
+   <cogn */>
+ </ety> 
+  
+  - audio file pointer
+  
+   <lg>
+         <l pos="n">ceerkav</l>
+         <audio>
+            <a dialect="muo" speaker="ZMN"
+               href="http://corpus1.mpi.nl/qfs1/media-archive/dobes_data/Kola-Saami/Recordings/Language/KSDP/Skolt/Lexicon/Vocabulary/Media/ceerkav_SKO111211_ZMN_5.wav"/>
+            <a dialect="peä" speaker="KJ"
+               href="http://corpus1.mpi.nl/qfs1/media-archive/dobes_data/Kola-Saami/Recordings/Language/KSDP/Skolt/Lexicon/Vocabulary/Media/ceerkav_SKO111219_KJ_1.wav"
+            />
+         </audio>
+    </lg>
+  
+  3. monolingual info (definitions, etc.)
+  <mg>
+   <defg>
+     <d xml:lang="xxx">asdfasdfasdfasdf</d>
+   </defg>
+   <tg>
+   </tg>  
+  </mg>
+
+
+

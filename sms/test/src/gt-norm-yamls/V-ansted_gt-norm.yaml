@@ -1,0 +1,67 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Verb - äʹnsted: # Verb 'to steal' - full paradigm
+     äʹnsted+V+Ind+Prs+Sg1: [äʹnstam, ääʹnstam]
+     äʹnsted+V+Ind+Prs+Sg2: [äʹnstak, ääʹnstak]
+     äʹnsted+V+Ind+Prs+Sg3: ääʹnast
+     äʹnsted+V+Ind+Prs+Pl1: [äʹnstep, ääʹnstep]
+     äʹnsted+V+Ind+Prs+Pl2: [äʹnsteʹped, ääʹnsteʹped]
+     äʹnsted+V+Ind+Prs+Pl3: [äʹnste, ääʹnste]
+     äʹnsted+V+Ind+Prs+Sg4: [äʹnstet, ääʹnstet]
+
+     äʹnsted+V+Ind+Prt+Sg1: [äʹnstem, ääʹnstem]
+     äʹnsted+V+Ind+Prt+Sg2: [äʹnstiǩ, ääʹnstiǩ]
+     äʹnsted+V+Ind+Prt+Sg3: [äʹnsti, ääʹnsti]
+     äʹnsted+V+Ind+Prt+Pl1: [äʹnstim, äʹnstin, ääʹnstim, ääʹnstin, äʹnstiim, äʹnstiin, ääʹnstiim, ääʹnstiin]
+     äʹnsted+V+Ind+Prt+Pl2: [äʹnstid, ääʹnstid, äʹnstiid, ääʹnstiid]
+     äʹnsted+V+Ind+Prt+Pl3: [äʹnste, ääʹnste]
+     äʹnsted+V+Ind+Prt+Sg4: [äʹnsteš, ääʹnsteš]
+
+     äʹnsted+V+Pot+Sg1: [äʹnsteʹžem, ääʹnsteʹžem]
+     äʹnsted+V+Pot+Sg2: [äʹnsteʹžiǩ, ääʹnsteʹžiǩ]
+     äʹnsted+V+Pot+Sg3: [äʹnstež, ääʹnstež]
+     äʹnsted+V+Pot+Pl1: [äʹnsteʹžep, äʹnsteʹžim, äʹnsteʹžin, ääʹnsteʹžep, ääʹnsteʹžim, ääʹnsteʹžin]
+     äʹnsted+V+Pot+Pl2: [äʹnsteʹžid, ääʹnsteʹžid]
+     äʹnsted+V+Pot+Pl3: [äʹnsteʹže, ääʹnsteʹže]
+     äʹnsted+V+Pot+Sg4: [äʹnsteʹžet, ääʹnsteʹžet]
+     äʹnsted+V+Pot+ConNeg: [äʹnsteʹže, ääʹnsteʹže]
+
+     äʹnsted+V+Cond+Sg1: [äʹnsteʹčem, ääʹnsteʹčem]
+     äʹnsted+V+Cond+Sg2: [äʹnsteʹčiǩ, ääʹnsteʹčiǩ, äʹnsteʹčeǩ, ääʹnsteʹčeǩ]
+     äʹnsted+V+Cond+Sg3: [äʹnsteʹči, ääʹnsteʹči]
+     äʹnsted+V+Cond+Pl1: [äʹnsteʹčim, äʹnsteʹčin, äʹnsteʹčep, ääʹnsteʹčim, ääʹnsteʹčin, ääʹnsteʹčep]
+     äʹnsted+V+Cond+Pl2: [äʹnsteʹčid, ääʹnsteʹčid]
+     äʹnsted+V+Cond+Pl3: [äʹnsteʹče, ääʹnsteʹče]
+     äʹnsted+V+Cond+Sg4: [äʹnsteʹčeš, ääʹnsteʹčeš]
+     äʹnsted+V+Cond+ConNeg: [äʹnsteʹče, ääʹnsteʹče]
+
+     äʹnsted+V+Imprt+Sg2: ääʹnest
+     äʹnsted+V+Imprt+Sg3: [äʹnstââǥǥas, ääʹnstââǥǥas]
+     äʹnsted+V+Imprt+Pl1: [äʹnstâkap, ääʹnstâkap]
+     äʹnsted+V+Imprt+Pl2: [äʹnsteʹǩed, ääʹnsteʹǩed]
+     äʹnsted+V+Imprt+Pl3: [äʹnstâkaz, ääʹnstâkaz]
+     äʹnsted+V+Imprt+ConNegII: [äʹnstuku, ääʹnstuku]
+     äʹnsted+V+Actio+Ess: [äʹnsteʹmmen, ääʹnsteʹmmen]
+     äʹnsted+V+Actio: [äʹnstem, ääʹnstem]
+     äʹnsted+V+Act+PrsPrc: [äʹnsteei, ääʹnsteei]
+     äʹnsted+V+Act+PrfPrc: [äʹnstam, äʹnstamma, ääʹnstamma, ääʹnstam]
+     äʹnsted+V+Pass+PrfPrc: [äʹnstummu, äʹnstuum, äʹnstum, ääʹnstummu, ääʹnstuum, ääʹnstum]
+# deduced from Sammallahti/Mosnikoff 1991 -ummu, -uum and -um occur as variants
+     äʹnsted+V+VAbess: [äʹnsteǩâni, ääʹnsteǩâni, ääʹnstekâni, äʹnsteǩenai, ääʹnsteǩeânnai, ääʹnsteǩânai, ääʹnstekani, äʹnsteǩânai, äʹnsteǩeânai, äʹnsteǩani, äʹnsteǩeânnai, ääʹnsteǩenai, ääʹnsteǩani, äʹnstekâni, äʹnstekani, ääʹnsteǩeânai]
+     äʹnsted+V+Ger+Ess: [äʹnsteeʹn, ääʹnsteeʹn]
+     äʹnsted+V+Ger+Instr: [äʹnsteeʹl, ääʹnsteeʹl]
+

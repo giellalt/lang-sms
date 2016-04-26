@@ -1,0 +1,2191 @@
+! Divvun & Giellatekno - open source grammars for Sámi and other languages
+! Copyright © 2000-2010 The University of Tromsø & the Norwegian Sámi Parliament
+! http://giellatekno.uit.no & http://divvun.no
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version. The GNU General Public License
+! is found at http://www.gnu.org/licenses/gpl.html. It is
+! also available in the file $GTHOME/LICENSE.txt.
+!
+! Other licensing options are available upon request, please contact
+! giellatekno@hum.uit.no or feedback@divvun.no
+
+!! !!!Skolt Sámi TWOLC file
+!
+! $Id$
+!
+!
+
+!! !!!Introduction
+!! The rule file for Skolt Saami is divided into 5 main types:
+!! 
+!! # Definitions
+!! # Consonant shift rules (tbw)
+!! # Vowel alternation rules
+!! # Consonant gradation rules
+!! # Rules for cleaning up and composing end result
+
+
+!! !!!Alphabets, sets and definitions
+
+!! !!Alphabet
+
+Alphabet 
+  a b c d e f g h i j k l m n o p q r s t u v w x y z !!= * @CODE@
+  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z !!= * @CODE@
+  ä å â õ      !!= * @CODE@ 
+  Ä Å Â Õ       !!= * @CODE@
+  č ǩ ǯ ǧ ž đ ǥ ʒ š ŋ					!!= * @CODE@
+  Č Ǩ Ǯ Ǧ Ž Đ Ǥ Ʒ Š Ŋ					!!= * @CODE@
+  ẹ   	      	   !!= * @CODE@ Pedagogical purposes
+  Ẹ		   !!= * @CODE@ Pedagogical purposes
+
+  æ ø ö á é í					!!= * @CODE@
+  Æ Ø Ö Á						!!= * @CODE@
+  É Ó Ú Í À È Ò Ù Ì Ë Ü Ï Ê Ô Û Î Ã Ý þ Ñ Ð		!!= * @CODE@
+  é ó ú í à è ò ù ì ë ü ï ê ô û î ã ý þ ñ ð ß ª ß ç	!!= * @CODE@
+
+
+ ʹ  !! * MODIFIER LETTER PRIME: U+02B9 suprasegmental palatization
+ ʼ  !! * MODIFIER LETTER APOSTROPHE: U+02BC Syllable marker that appears in writing 
+ ˈ !! * MODIFIER LETTER VERTICAL LINE: U+02C8 as overlong consonant marker that does not appear in writing except for pedagogical purposes
+
+!  for consonant lengthening
+%{XC%}:m
+%{XC%}:n
+%{XC%}:v
+%{XC%}:d
+%{XC%}:r
+%{XC%}:l
+%{XC%}:k
+%{XC%}:ǥ
+%{XC%}:s
+%{XC%}:š
+%{XC%}:z
+%{XC%}:ž
+
+
+!! !! Trigger symbols
+%^Pen:0 !!= * @CODE@ for combinations 2015-09-28 Miikka
+
+ %^RmVow:0 !!= * @CODE@ for removing vowels e, â, a before final consonant in stem
+ %^UltRmVow:0 !!= * @CODE@ for removing vowels e, â, a after final consonant in stem
+! %^PenRmVow:0 != * @CODE@ for removing penultimate vowels e, â, a, i.e. vowel befor final stem consonant/consonants
+ %^RmCns:0 !!= * @CODE@ for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta 
+%^1VOW:0
+ %^2VOW:0 %^3VOW:0 %^4VOW:0 %^5VOW:0 !!= * @CODE@ Vow triggers
+
+ %^VOWLower:0 !!= * @CODE@ i>e, õ>â, â>ä, u>o, o>å
+ %^VOWRaise:0 !!= * @CODE@ e>i, ä>e 
+! %^PenVOWRaise:0 
+! e>i, ä>e
+! %^PenVOWLower:0
+ ! i>e, õ>â, â>ä, u>o, o>å
+ %^LowerI2E:0	 !!= * @CODE@ this is for diphthong in mieʹlǩǩ:meâlkka
+! %^PenLowerI2E:0
+ ! this is for diphthong in mieʹlǩǩ:meâlkka
+ %^U2Õ:0	 !!= * @CODE@ lowers u>õ	 
+! %^PenU2Õ:0
+! lowers u>õ	 
+ %^VOWBack:0	     !!= * @CODE@ Backing e>õ, e>â vuäinn BUT vuõiʹni
+! %^PenVOWBack:0
+    ! Backing e>õ, e>â vuäinn BUT vuõiʹni
+
+ %^VOWFront:0	     !!= * @CODE@ Fronting
+ %^PAL:0 %^PALNo:0 %^PALE:0 %^PALÄ:0 %^PALẸ:0 %^PALÂ:0 %^PALÕ:0   !!= * @CODE@ Palatalisation
+! %^PenPAL:0 %^PenPALNo:0 %^PenPALE:0 %^PenPALÄ:0 %^PenPALẸ:0 %^PenPALÂ:0  
+!! Penultimate Palatalisation
+!%^PenPALÕ:0 %^PenPALÂ:0
+%^PALK:0     !!= * @CODE@ causes k:ǩ and g:ǧ
+
+ %^VC:0         !!= * @CODE@ Voicing s:z š:ž
+ %^DeVC:0         !!= * @CODE@ devoicing z:s ž:š
+ %^Â:0		!!= * @CODE@ Indicates placement of â in stem
+
+!!  !! CHARACTERISTIC BREAKDOWN 2015-02-17
+%^VV2V:0        !!= * @CODE@ Shortens vowel 
+%^V2VV:0 	!!= * @CODE@ Lengthens vowel
+%^CC2C:0 	!!= * @CODE@ Shortens consonant
+%^C2CC:0 	!!= * @CODE@ Lengthens consonant
+%^CC2CCC:0 	!!= * @CODE@ Strong to Extra Strong consonant
+%^CCC2C:0 	!!= * @CODE@ Extra Strong to Weak consonant
+%^CCC2CC:0 	!!= * @CODE@ Extra Strong to Strong consonant
+%^XYY2XY:0 	!!= * @CODE@ Shortens consonant cluster
+%^XY2XYY:0 	!!= * @CODE@ Lengthens consonant cluster
+%^XYY2VY:0	!!= * @CODE@ Consonant cluster to vowel and consonant sijdd:siid
+%^XYY2VYY:0	!!= * @CODE@ Consonant cluster to vowel and geminate uvdd:ouʹdd
+%^XYY2IY:0	!!= * @CODE@ Consonant cluster to i  and consonant kueʹhtt:kueiʹt
+%^VY2XYY:0	!!= * @CODE@ Consonant cluster i/u to j/v
+%^VYY2XYY:0	!!= * @CODE@ Consonant cluster i/u to j/v
+
+%^KKK2GG:0	!!= * @CODE@ Geminate weakening 
+%^KK2GG:0	!!= * @CODE@ Geminate weakening jokk:jooǥǥ
+%^KK2G:0		!!= * @CODE@ Geminate weakening	 in allegro pååss:påz
+%^K2GG:0	!!= * @CODE@ Geminate weakening čårrõs:čårrõõzz
+%^K2G:0		!!= * @CODE@ Geminate weakening	 in allegro čâustõk
+
+
+!%^PenVV2V:0     
+!! Shortens vowel in penultimate syllable
+!%^PenV2VV:0     
+!! Lengthens vowel in penultimate syllable
+!%^PenCC2C:0     
+!! Shortens consonant in penultimate syllable
+!%^PenCCC2C:0        
+!! Extra strong to weak consonant in penultimate syllable
+!%^PenCCC2CC:0        
+!! Extra strong to strong consonant in penultimate syllable
+!%^PenCC2CCC:0     
+!! Extra Lengthens consonant in penultimate syllable
+!%^PenC2CC:0     
+!! Lengthens consonant in penultimate syllable
+!%^PenC2CCC:0 	
+!! Lengthens consonant in penultimate syllable
+!%^PenXYY2VY:0	
+!! Vhss:VVus in penultimate syllable
+!%^PenXYY2VYY:0	
+!! consonant cluster to Vowel and Geminate
+!%^PenVY2XYY:0	
+!! VVus:Vhss in penultimate syllable
+!%^PenXY2XYY:0	
+!! 
+!%^PenXYY2XY:0	
+!! 
+!%^PenXYYY2XYY:0	
+!! Extra strong to strong consonant cluster
+!%^PenXYYY2XY:0	
+!! Extra strong to weak consonant cluster
+!%^PenXYY2XYYY:0	
+!! Extra Lengthens consonant cluster
+!%^PenKKK2ZERO:0	
+!! Geminate weakening jeeʹel
+ %^KKK2ZERO:0   !! FIXME
+ %^KK2ZERO:0   !! nââʹer
+!%^PenKKK2GG:0      
+!! Geminate weakening
+!%^PenKK2GG:0       
+!! Geminate weakening jokk:jooǥǥ
+!%^PenGG2KK:0       
+!! Geminate strengthening
+
+! %^PenAllegro:0	    
+!! This introduces vertical bar after diphth before consonants
+ %^Allegro:0	    !!= * @CODE@ This introduces vertical bar after diphth before consonants
+
+%^J2I:0		!!= * @CODE@ in tuâjj:tuâi
+%^I2J:0		!!= * @CODE@ in agent names
+%^I2Zero:0		!!= * @CODE@ in agent names
+
+!! !! Gradation triggers 2015.01.23
+ %^XSt2St:0	!!= * @CODE@ Causes weakening from extra strong to strong
+ %^XSt2W:0	!!= * @CODE@ Causes weakening from extra strong to weak
+ %^St2W:0	!!= * @CODE@ Causes weakening from strong to weak
+ %^W2St:0	!!= * @CODE@ Causes strengthening from weak to strong
+ %^W2XSt:0	!!= * @CODE@ Causes strengthening from weak to extra strong
+ %^St2XSt:0	!!= * @CODE@ Causes strengthening from strong to extra strong
+
+!! Other vowel length and consonant length will be phased out
+ %^VOWSH:0	  !!= * @CODE@
+ %^VOWXSH:0	  !!= * @CODE@ Extra shortens vowel in relation to consonant
+ %^VOWXL:0    !!= * @CODE@ Extra lengthens vowel in relation to consonant in nouns, for example
+ %^CXLong:0 %^CLong:0 %^CShort:0 !!= * @CODE@ Lengthening, shortening
+
+ X3:0  !!= * @CODE@ causes weak grade
+ %{VU%}:u         !!= * @CODE@ used with stuuʹl
+ %{Â1%}:0 !!= * @CODE@ used with "mainsted" to tell (a story)
+ %{A1%}:0 !!= * @CODE@ used with "vuejted" to drive (causative)
+ %{E1%}:0 !!= * @CODE@ used with "kåʹmrded" to bow
+ %{%ʹ%}:0 !!= * @CODE@ archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one.
+ %{EÂ%}:e !!= * @CODE@ archiform for ie:eâ variation
+ %^IMPSG2:0	!!= * @CODE@ 
+ %^INDPRSSG3:0  !!= * @CODE@ 
+ %^PenVow2a:0	!!= * @CODE@ Changes penultimate vowel to a; e:a â:a
+ %^FRICG:0	!!= * @CODE@ 
+ %^VOWTense:0   !!= * @CODE@ â:e
+ %^VOWLax:0     !!= * @CODE@ e:â 
+
+!! Literal quotes and angles must be escaped (cf morpheme boundaries below):
+
+ »7     !! * »
+ «7     !! * «
+ %[%>%] !! * >
+ %[%<%] !! * <
+
+!! Morpheme boundaries:
+ «  ! Derivational prefix
+ »  ! Derivational suffix
+ %< ! Inflectional prefix
+ %> ! Inflectional suffix
+ #  ! Word boundary for both lexicalised and dynamic compounds
+ %^ ! (exceptional) soft hyphenation point
+ %- ! Hyphen for question particle
+
+!! End of alphabet definitions
+ ;
+
+
+!! !!Sets
+Sets 
+
+! Letter =
+ Cns	= b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž 
+          B C D F G H J K L M N P Q R S T V W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ; !!= * @CODE@
+ CNoV	= b c d f g h j k l m n p q r s t w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž 
+          B C D F G H J K L M N P Q R S T W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;   !!= * @CODE@
+
+ CNoJ	= b c d f g h k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž 
+          B C D F G H K L M N P Q R S T V W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;   !!= * @CODE@
+
+ Vow	= a e ẹ i o u å ä â õ           	      	      	      	        !!= * @CODE@
+          A E Ẹ I O U Å Ä Â Õ ;	    				        !!= * @CODE@
+ VowNoIU  = a e ẹ o å ä â õ 
+            A E Ẹ O Å Ä Â Õ ;
+
+ CNoJV  = b c d f g h k l m n p q r s t w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž 
+ 	  B C D F G H K L M N P Q R S T W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;     !!= * @CODE@
+
+ CNoDLRZ = b c f g h j k m n p q s t v w x z đ ǯ č ŋ ǩ ǧ ǥ š ž 
+           B C F G H J K M N P Q S T V W X Z Đ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;        !!= * @CODE@
+
+
+!! !!Definitions
+
+Definitions
+
+!! Short consonant cluster
+
+
+!! Onset consonant or word boundary
+OnSetC = [[%{XC%}:Cns|Cns:Cns] (Cns:|%{XC%}:Cns) |#|%>] ;
+
+
+!! following morpheme or word boundary
+!! {{{
+RBound = [#|%>|»] ; !!= * @CODE@ 
+!! }}}
+
+
+
+!! possible triggers before VOWLower and VOWRaise
+
+BetweenStemAndHeight = [( %^VV2V: |%^V2VV:)] ;
+
+!! possible triggers before PALE PALÄ
+BetweenStemAndPALAllo = [ BetweenStemAndHeight (%^VOWLower:|%^VOWRaise:|%^LowerI2E:)] ;
+
+!! possible triggers between stem and PALNo and PAL
+BetweenStemAndPALNo = [ BetweenStemAndHeight [(%^VOWLower:|%^VOWRaise:|%^LowerI2E:) (%^PALÄ:|%^PALE:|%^PALẸ:|%^PALÕ:|%^PALÂ:)| %^VOWBack: ] (%^Allegro:) ] ;
+
+!! possible triggers between word end and consonant grade
+BetweenStemAndConsGrade = [ BetweenStemAndHeight ((%^VOWRaise:|%^VOWLower:|%^LowerI2E:) ((%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:|%^VOWLower: %^PALÄ: |(%^PALÕ:|%^PALE:|%^PALÄ:|%^PALẸ:) (%^Allegro:) %^PAL:)| %^VOWBack: (%^Allegro:) (%^PALNo:|%^PAL:) ) ] ;
+
+!! possible triggers between vowel length and Palatalization
+BetweenVowLengthAndPALNo = [(%^VOWLower:|%^VOWRaise:|%^LowerI2E:) (%^PALÄ:|%^PALE:|%^PALẸ:|%^PALÕ:|%^PALÂ:)| %^VOWBack: ] ;
+
+BetweenVowHeightAndConsGrade = [((%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÕ:) (%^Allegro:) %^PAL:|(%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:)] ;
+
+!! possible triggers between VowHeight and word end
+!! {{{
+BetweenVowHeightAndMorph = [(%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) ((%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÕ:) (%^Allegro:) %^PAL:|(%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:)] ; !!= * @CODE@ 
+!! }}}
+
+
+BetweenPALNoAndMorphRightArrow = [(%^CC2C:|%^C2CC:|%^XY2XYY:|%^XYY2XY:|%^K2GG:|%^KK2GG:|%^CC2CCC:|%^CCC2C:|%^CCC2CC:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:) ] ;
+
+BetweenPALNoAndMorph = [(%^CC2C:|%^C2CC:|%^XY2XYY:|%^XYY2XY:|%^K2GG:|%^KK2GG:|%^CC2CCC:|%^CCC2C:|%^CCC2CC:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:) RBound ] ;
+
+PenBetweenStemAndPALNo = [(%^Pen: %^V2VV:|%^Pen: %^VV2V:) (%^Pen: %^VOWRaise:|%^Pen: %^VOWLower:|%^Pen: %^VOWBack:) (%^Pen: %^Allegro:) ] ;
+
+PenBetweenStemAndPALAllo  = [ (%^Pen: %^V2VV:|%^Pen: %^VV2V:) (%^Pen: %^VOWLower:|%^Pen: %^VOWRaise:|%^Pen: %^LowerI2E:)] ;
+
+
+PenBetweenStemAndConsGrade = [(%^Pen: %^V2VV:|%^Pen: %^VV2V:) ((%^Pen: %^VOWRaise:|%^Pen: %^VOWLower:) ((%^Pen: %^PALÂ:|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PALNo:|(%^Pen: %^PALÕ:|%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:) (%^Pen: %^Allegro:) %^Pen: %^PAL:)| %^Pen: %^VOWBack: (%^Pen: %^Allegro:) (%^Pen: %^PALNo:|%^Pen: %^PAL:) ) ] ;
+
+PenBetweenStemAndVowelLoss = [(%^Pen: %^V2VV:|%^Pen: %^VV2V:) [(%^Pen: %^VOWRaise:|%^Pen: %^VOWLower:) ((%^Pen: %^PALÂ:|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PALNo:|(%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PAL:)| %^Pen: %^VOWBack: (%^Pen: %^Allegro:) (%^Pen: %^PALNo:|%^Pen: %^PAL:)] ([%^Pen: %^C2CC:|%^Pen: %^XY2XYY:]|%^Pen: %^CC2C:|%^Pen: %^XYY2XY:|%^Pen: %^CC2CCC:)] ;
+
+
+PenBetweenStemAndStemFinalVoicing = [(%^Pen: %^V2VV:|%^Pen: %^VV2V:) [(%^Pen: %^VOWRaise:|%^Pen: %^VOWLower:) ((%^Pen: %^PALÂ:|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PALNo:|(%^Pen: %^PALÕ:|%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:) (%^Pen: %^Allegro:) %^Pen: %^PAL:)| %^Pen: %^VOWBack: (%^Pen: %^Allegro:) (%^Pen: %^PALNo:|%^Pen: %^PAL:) ] (%^Pen: %^C2CC:|%^Pen: %^XY2XYY:|%^Pen: %^XYY2VY:|%^Pen: %^CC2C:|%^Pen: %^XYY2XY:|%^Pen: %^CCC2CC:|%^Pen: %^CC2CCC:|%^Pen: %^CCC2C:) (%^RmVow:|%^PenVow2a:)] ;
+
+PenBetweenPALNoAndMorph = [(%^Pen: %^CC2C:|%^Pen: %^C2CC:|%^Pen: %^XYY2XY:|%^Pen: %^KK2GG:|%^Pen: %^CC2CCC:|%^Pen: %^CCC2C:|%^Pen: %^CCC2CC:|%^Pen: %^XY2XYY:|%^Pen: %^XYY2VY:|%^Pen: %^XYY2VYY:|%^Pen: %^KKK2GG:) RBound ] ;
+
+
+!! neutral to vowel height and backness
+!! {{{
+NeutrHighBack = [(%^VOWLower:|%^VOWRaise:) (%^VOWFront:|%^VOWBack:)] ; !!= * @CODE@ 
+!! }}}
+
+!! neutral to vowel length
+VNeutrGrade = [(%^VV2V: |%^V2VV: )];
+!! neutral to consonant length
+!! {{{
+CNeutrGrade = [(%^CC2C: |[%^C2CC:|%^XY2XYY:] |%^CC2CCC: |%^KK2GG: |%^KKK2GG: |%^XYY2VY: |%^XYY2VYY:|%^CCC2CC: )] ;
+!! }}}
+!! neutral to vowel and consonant length
+!! {{{
+NeutrGrade = [VNeutrGrade |CNeutrGrade] ; !!= * @CODE@ 
+!! }}}
+
+
+
+!! * X3 = C Vx Cx Cx     C Vx Vy Cx ˈ Cx
+!! * X2 = C Vx Vx Cx Cx  C Vx Vy Cx Cx
+!! * X1 = C Vx Vx Cx     C Vx Vy Cx
+
+
+!! !!!Rules
+Rules 
+
+!! !!Vowel shortening rules 
+
+
+
+"Vowel shortening â:0"
+!! __@RULENAME@__ - used in
+ â:0 <=>
+          OnSetC â: _ (u) (ʹ:|0:ʹ) Cns: [ Cns:*|%{XC%}:Cns*]  %^VV2V:  ;
+!Not needed here
+!! čââʹđ+N+Sg+Ill: __heart/sydän__
+!!€ čâ%^1VOWđđ%>ma
+!!€ čâ0đđ%>ma
+    OnSetC   _ (:ʼ) [Cns:+|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ;
+
+      Cns: (%{XC%}:Cns*)  _ (:ʼ) Cns:+ PenBetweenStemAndVowelLoss %^RmVow: ;
+
+
+"Even syllabic verbs I, vowel shortening ẹ:0"
+!! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+ ẹ:0 <=>
+   OnSetC ẹ: _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:Cns)] %^VV2V:  ;
+ OnSetC ẹ: _ (u|i) (ʹ:|0:ʹ) Cns: [ Cns:*|%{XC%}:Cns]  %^VV2V:  ;
+ OnSetC ẹ: _ (ʹ:|0:ʹ)  Cns: [ Cns:*|%{XC%}:Cns]   Vow: Cns:+ %^Pen: %^VV2V: ;
+
+
+"Even syllabic verbs I, vowel shortening e:0"
+!! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+ e:0 <=>
+   OnSetC [e: |:e] _ (ʹ:|0:ʹ) [Cns:+ %{XC%}:Cns] %^VV2V:  ;
+!! teevvad+V+Prt+4:
+!!€ teevv%^VV2V%^VOWRaise%>uš
+!!€ t0ivv00%>uš
+   OnSetC  _ (0:ʹ) [Cns:+|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ; 
+!! Ââvel+N+Prop+Sg+Loc  __Ivalo__
+!!€ Ââvel%^RmVow%>est
+!!€ Ââv0l0%>est
+
+ OnSetC e: _ (u) (ʹ:|0:ʹ) Cns:+ (%{XC%}:Cns)  %^VV2V:  ;
+
+ OnSetC e: _ (ʹ:|0:ʹ)  Cns:+ (%{XC%}:Cns)   Vow: Cns:+ %^Pen: %^VV2V: ;
+!! eʹǩrded+V+Inf
+!!€ eeʹǩǩerd%^Pen%^VV2V%^Pen%^CC2C%^RmVow%>ed
+!!€ 0eʹǩ00rd00000%>ed
+!! deriving cieʹǩǩes+N+Sg+Ill: ceäkˈksa
+
+
+"Even syllabic verbs I, vowel shortening å:0"
+!! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+ å:0 <=>
+ OnSetC å: _ (u) (ʹ:|0:ʹ) Cns:+ (%{XC%}:Cns)  %^VV2V:  ;
+!! jååʹtted+V+Ind+Prt+Pl3 __trekk__
+!!€ jåå0tt%^VV2V%^VOWRaise%^PAL%>e
+!!€ jo0ʹtt000%>e
+         OnSetC å: _ (ʹ:|0:ʹ) Cns:+ (%{XC%}:Cns) Vow: [Cns:+ |n j|l m|s ǩ:|s t|š ǩ:|š m]  %^Pen: %^VV2V: ;
+!Not needed here
+!! sååbbar+N+Sg+Nom __meeting__
+!!€ så%^1VOWbbar%^Pen%^V2VV
+!!€ sååbbar00
+      Cns: (%{XC%}:Cns)  _ Cns:+ PenBetweenStemAndVowelLoss %^RmVow: ;
+
+
+
+"Even syllabic verbs I, vowel shortening õ:0"
+!! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+ õ:0 <=>
+ OnSetC õ: _ (ʹ:|0:ʹ) Cns:+ (%{XC%}:Cns) %^VV2V: ;
+!!€ mõõ0nn%^VV2V%^PAL%>e
+!!€ m0õʹnn00%>e
+!!€ mõõ0nn%^VV2V%^VOWLower%^PAL%>e
+!!€ m0âʹnn000%>e
+         OnSetC õ: _ (ʹ:|0:ʹ) Cns:+ (%{XC%}:Cns) Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^Pen: %^VV2V: ;
+!No needed here
+!! kõõnjâl+N+Sg+Gen __tear__
+!!€ kõ%^1VOWnnjâl%^Pen%^VV2V%^Pen%^C2CC
+!!€ kõ0nnjâl0000
+
+ OnSetC õ: _ (u) (ʹ:|0:ʹ) Cns:+ (%{XC%}:Cns)  %^VV2V:  ;
+
+      Cns:+ (%{XC%}:Cns)  _ Cns:+ PenBetweenStemAndVowelLoss %^RmVow: ;
+
+
+"Even syllabic verbs I, vowel shortening u:0"
+!! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+ u:0 <=> OnSetC u: _ (ʹ:|0:ʹ) Cns:+ (%{XC%}:Cns) (i:) %^VV2V: ;
+!Not needed here
+!! juurd+N+Ess __thought__
+!!€ ju%^1VOWrdd%>j%>en
+!!€ ju0rdd%>j%>en
+      OnSetC  u: _ (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m] %^Pen: %^VV2V: ;
+      Cns:+ (%{XC%}:Cns)  _ Cns:+ PenBetweenStemAndVowelLoss %^RmVow: ;
+!! mainstummuš+N+Sg+Ill:
+!!€ mainstummuš%^RmVow%>a
+!!€ mainstumm0š0%>a
+
+
+"Even syllabic verbs I, vowel shortening i:0"
+!! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+ i:0 <=>
+         OnSetC i: _ (ʹ:|0:ʹ) Cns:+ (%{XC%}:Cns) %^VV2V: ;
+!! viikkâd+V+Ind+Prs+Pl3
+!!€ vii0kk%^VV2V%^VOWLower%^PAL%>e
+!!€ v0eʹǩǩ000%>e
+         Cns _ %^UltRmVow: %> ǥ a ; 
+!! +Sg+Ill N_HÕʹPPI
+!!€ hõʹppi%^UltRmVow%>ǥa
+!!€ hõʹpp00%>ǥa
+        OnSetC  _ [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ;
+!! prääʹzniǩ+N+Sg+Ill: __celebration/juhla__
+!!€ prääʹzniǩ%^RmVow%^PALNo%>a
+!!€ prääʹzn0k00%>a
+
+         OnSetC i: _ (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^Pen: %^VV2V: ; ! iilâsǩ:ilska
+
+ OnSetC i: _ (u) (ʹ:|0:ʹ) Cns:+ (%{XC%}:Cns)  %^VV2V:  ;
+
+      Cns:+ (%{XC%}:Cns)  _ Cns:+ PenBetweenStemAndVowelLoss %^RmVow: ;
+      [Cns:|Vow:] _ (%^RmVow:) %^I2Zero: ;
+!!€ žẹẹvai%^RmVow%^I2Zero%>ǥa
+!!€ žẹẹv0000%>ǥa
+
+"Even syllabic verbs I, vowel shortening o:0"
+!! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+ o:0 <=> 
+    OnSetC o: _ (u) (ʹ:|0:ʹ) Cns:+ (%{XC%}:Cns) %^VV2V: ;
+!!€ šoomm%^VV2V%^VOWRaise%>u
+!!€ š0umm00%>u
+    OnSetC o: _ (u) (ʹ:|0:ʹ) Cns:+ (%{XC%}:Cns) Vow: Cns:+ (%{XC%}:Cns) %^Pen: %^VV2V: ;
+!!€ poonjâst%^Pen%^VV2V%^RmVow%>ed
+!!€ p0onj0st000%>ed
+
+
+
+         Cns:+ (%{XC%}:Cns) _ [Cns:+|i:|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^RmVow: ; 
+
+      Cns:+ (%{XC%}:Cns)  _ Cns:+ PenBetweenStemAndVowelLoss %^RmVow: ;
+
+!Not needed here
+!! ooumaž+N+Sg+Nom
+!!€ o%^1VOWumm%^V2VV%^XYY2XY%>až
+!!€ ooum000%>až
+
+
+"Even syllabic verbs I, vowel shortening a:0 "
+!! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+ a:0 <=> OnSetC a: _ (i|u) (ʹ:|0:ʹ) Cns:+ (%{XC%}:Cns) %^VV2V: ;
+!!€ saa0kk%^VV2V%^PAL%>e
+!!€ s0aʹǩǩ00%>e
+ OnSetC a: _ (i|u) (ʹ:|0:ʹ) Cns:+ (%{XC%}:Cns) Vow: Cns:+ (%{XC%}:Cns) %^Pen: %^VV2V: ;
+       OnSetC   _ (:ʼ) [Cns:+|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ; 
+!! Aanar+N+Prop+Sg+Ill: __Inari/Enare__
+!!€ Aanar%^RmVow%>a
+!!€ Aan0r0%>a
+         OnSetC a: _ (i) (ʹ:|0:ʹ) Cns:+ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^Pen: %^VV2V: ; 
+    :Vow+ (ʹ:|0:ʹ) [Cns:+ - [Cns:* [l|n]]] _ i: %^RmVow:  ; 
+
+ OnSetC a: _ (u) (ʹ:|0:ʹ) Cns:+ (%{XC%}:Cns)  %^VV2V:  ;
+      Cns:+ (%{XC%}:Cns)  _ (:ʼ) Cns:+ PenBetweenStemAndVowelLoss %^RmVow: ;
+
+  OnSetC _ (:ʼ) Cns:+ %^RmVow:  ;
+!! mättʼted+V+Inf: __teach/opettaa__
+!!€ mätta0t%^RmVow%>ed
+!!€ mätt0ʼt0%>ed
+
+
+
+
+"vowel to syllable mark a:ʼ"
+!! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+!! {{{
+ a:ʼ <=> :Vow+ (ʹ:|0:ʹ)  Cns:* [l|n]  _ i: %> Vow: ;
+!! }}}
+
+
+
+"ZERO to syllable mark 0:ʼ here"
+!! __@RULENAME@__ - used in zeeʹtt+N+Sg+Abe: zeeʹttʼtää
+ 0:ʼ <=>
+     [ :n | :l ] ([%^C2CC:|%^CCC2CC:|%^XY2XYY:]) %> _ j ;
+     [ :n | :l ] ([%^C2CC:|%^CCC2CC:|%^XY2XYY:]) %> _ (Vow:0) i:j ;
+!!€ valmštõõll0i%^I2J%>i
+!!€ valmštõõllʼj0%>i
+!! piânˈnai+N+Ess: __dog/koira__
+!!€ piânˈn%^CCC2CC%>0j%>en
+!!€ piân0n0%>ʼj%>en
+     [ :n | :l ] _ i: PenBetweenStemAndVowelLoss (%^RmVow:) %^I2J: ;
+!!€ jieʹll0i%^I2J%>e%>st
+!!€ jieʹllʼj0%>e%>st
+     n Vow: _ n %^RmVow: ;
+     s Vow: _ :s %^RmVow: ;
+     t Vow: _ t %^RmVow: ;
+!! mättʼted+V+Inf: __teach/opettaa__
+!!€ mätta0t%^RmVow%>ed
+!!€ mätt0ʼt0%>ed
+     j Vow: _ j %^RmVow: ;
+!!jåʹttʼted+V+Inf
+        [ :VowNoIU [i|u]|Cns] (ˈ:) m BetweenStemAndConsGrade (%^CCC2CC:) [%>|»]  _ m ; 
+        [ :VowNoIU [i|u]|Cns] (ˈ:) n BetweenStemAndConsGrade (%^CCC2CC:) [%>|»]  _ n ; 
+        [ :VowNoIU [i|u]|Cns] (ˈ:) v BetweenStemAndConsGrade (%^CCC2CC:) [%>|»]  _ v ; 
+        [ :VowNoIU [i|u]|Cns] (ˈ:) s BetweenStemAndConsGrade (%^CCC2CC:) [%>|»]  _ s ; 
+        [ :VowNoIU [i|u]|Cns] (ˈ:) t: BetweenStemAndConsGrade (%^CCC2CC:|%^XYY2XY:|%^XYY2VY:) [%>|»]  _ t ; 
+        [ :VowNoIU [i|u]|Cns] (ˈ:) k BetweenStemAndConsGrade (%^CCC2CC:) [%>|»]  _ k ; 
+       [ :VowNoIU [i|u]|Cns:] (ˈ:) Cns:ǩ BetweenStemAndConsGrade BetweenPALNoAndMorphRightArrow [%>|»] _ ǩ ; 
+        [ :VowNoIU [i|u]|Cns:] (ˈ:) Cns:ž BetweenStemAndConsGrade BetweenPALNoAndMorphRightArrow [%>|»]  _ ž ; 
+        [ :VowNoIU [i|u]|Cns:] (ˈ:) Cns:č BetweenStemAndConsGrade BetweenPALNoAndMorphRightArrow [%>|»]  _ č ; 
+!!€ ijss%>0sa
+!!€ ijss%>ʼsa
+!!€ kåčč%>0čem
+!!€ kåčč%>ʼčem
+!!€ a%^1VOWutt%^V2VV%^XYY2XY%>0taa
+!!€ aaut000%>ʼtaa
+
+
+"ZERO to hyphen minus 0:- in this rule"
+!! __@RULENAME@__ - used in Kääzzkõsraajõstuâjj-joouk
+ 0:%- <=>
+        Cx  _ #  Cx ;
+  where Cx in (b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž) ;
+!!€ kääzzkõsraajõstuâjj0#joukk
+!!€ kääzzkõsraajõstuâjj%-#joukk
+
+
+
+
+"Even syllabic verbs I, vowel shortening ä:0"
+!! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+ ä:0 <=> OnSetC _ ä: Cns:+ (%{XC%}:Cns) %^VV2V:  ;
+   OnSetC ä: _ (i) (ʹ:|0:ʹ) Cns:+ (%{XC%}:Cns) Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m]  %^Pen: %^VV2V: ;
+
+ OnSetC _ ä: (u) (ʹ:|0:ʹ) Cns:+ (%{XC%}:Cns)  %^VV2V:  ;
+
+
+
+
+!! !!Vowel alternation rules
+
+!! !VOWEL SHIFT
+
+!2015-05-20 What is this?(tbw)
+
+!! !RAISING
+!! deriving +Ind+Prt+Sg1, +Ind+Prt+Sg2 +Ind+Prt+Pl3 in teevvad:tivvu
+
+"Even syllabic verbs I, vowel raising o:u"
+!! __@RULENAME@__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
+ o:u <=>  OnSetC  o: _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWRaise:  ;
+       OnSetC  _ (Vow:0) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  (%^VV2V:) %^VOWRaise: RBound ;
+!!€ šoomm%^VV2V%^VOWRaise%>u
+!!€ š0umm00%>u
+
+       OnSetC _ o:0 (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  BetweenStemAndHeight %^VOWRaise: ((%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) %> [e|u] ;
+       OnSetC _ %^1VOW:u (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  (%^V2VV: %^CShort:) %^VOWRaise: (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: %> [e|u] ;
+           OnSetC _ (u:) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  (%^VOWSH: %^CLong:|%^V2VV:) %^VOWRaise: ((%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) %> [e|u] ;
+
+
+"Even syllabic verbs I, vowel raising å:o"
+!! __@RULENAME@__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
+ å:o <=>  OnSetC _ å: (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  BetweenStemAndHeight %^VOWRaise: ; 
+          OnSetC _ %^1VOW: (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight  %^VOWRaise: ;
+
+          OnSetC å: _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWRaise: ;
+!!€ kåå0pp%^VOWRaise%^PAL%^CC2C%>in
+!!€ kooʹv0000%>in
+!!€ kå%^1VOW0ll%^V2VV%^VOWRaise%^PAL%>in
+!!€ kooʹll000%>in
+          OnSetC _ (u:) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWRaise:  ;
+!!€ kåbll%^VOWRaise
+!!€ kobll0
+
+
+
+"Even syllabic verbs I, vowel raising e:i"
+!! __@RULENAME@__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
+ e:i <=>
+  OnSetC _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWRaise: ;
+  OnSetC _ [%^1VOW:|e:]   (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  BetweenStemAndHeight %^VOWRaise: ;
+
+  OnSetC _ Vow:0 (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VV2V: %^VOWRaise: ;
+  OnSetC  e: _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWRaise: ;
+  OnSetC _ e:0 (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  BetweenStemAndHeight %^VOWRaise: ;
+  OnSetC _ (u:) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWRaise: ;
+! diphthong raising with e:i at onset - deriving +Ind+Prt+Pl3 in reäkkad > riâkku, veârrad > viõrru
+ OnSetC  _ [ä:|â: ] (u) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWRaise: ;
+!!reâugg+N+Sg+Ill
+!!€ reâugg%^VOWRaise%>u
+!!€ riõugg0%>u
+!!€ jeä0gˈg%^VOWRaise%^PALẸ%^PAL%^CCC2CC
+!!€ jiẹʹǧ0ǧ0000
+
+
+"Even syllabic verbs I, vowel raising ẹ:i"
+!! __@RULENAME@__ - used in
+ ẹ:i <=>
+  OnSetC _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWRaise: ;
+!!€ pẹss%^VOWRaise%>u
+!!€ piss0%>u
+  OnSetC _ [%^1VOW:|ẹ:] (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  BetweenStemAndHeight %^VOWRaise: ;
+!!€ pẹ%^1VOWss%^V2VV%^VOWRaise%>už
+!!€ piiss00%>už
+  OnSetC _ Vow:0 (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VV2V: %^VOWRaise: ;
+!!€ tẹẹvv%^VV2V%^VOWRaise%>uš
+!!€ t0ivv00%>uš
+  OnSetC  ẹ: _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWRaise: ;
+  OnSetC _ ẹ:0 (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  BetweenStemAndHeight %^VOWRaise: ;
+  OnSetC _ (u:|i:) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWRaise: ;
+
+
+"Even syllabic verbs I, vowel raising â:õ" 
+!! __@RULENAME@__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
+ â:õ <=>
+          OnSetC u   _    (i)  (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+ (%{XC%}:)| Cns:+ (ˈ:|:ˈ) :Cns]  %^VOWRaise:  (%^PALNo:|%^PAL:) BetweenPALNoAndMorph ;
+!!€ ruâk0k%^VOWRaise%^CC2CCC%>u
+!!€ ruõkˈk00%>u
+!!€ čuâkˈk%^VOWRaise%>u
+!!€ čuõkˈk0%>u
+  OnSetC â:  _      (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWRaise: ;
+  OnSetC _   â:   (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWRaise: ;
+!! mââʹnn+N+Pl+Acc: __egg/muna__
+!!€ mââ0nn%^VOWRaise%^PAL%^CC2C%>id
+!!€ mõõʹn0000%>id
+          OnSetC _ â:0   (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VV2V: %^VOWRaise: (%^PAL:) BetweenPALNoAndMorph ;
+          OnSetC _ %^1VOW:     (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^V2VV: %^VOWRaise: (%^PAL:) BetweenPALNoAndMorph ;
+!! čâʹlmm+N+Pl+Acc: __eye/silmä__
+!!€ čâ%^1VOW0lmm%^V2VV%^VOWRaise%^PAL%^XYY2XY%>id
+!!€ čõõʹlm00000%>id
+
+          OnSetC     _ (u:) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]   %^VOWRaise: (%^PAL:) BetweenPALNoAndMorph ;
+          OnSetC u   _   (i)   (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+] %^VOWRaise: (%^PALNo:|%^PAL:) BetweenPALNoAndMorph  ;
+          OnSetC [ e: | i]  _   (u)   (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+] %^VOWRaise: (%^PALNo:|%^PAL:) BetweenPALNoAndMorph ;
+!!reâugg+N+Sg+Ill
+!!€ reâugg%^VOWRaise%>u
+!!€ riõugg0%>u
+
+
+
+"Even syllabic verbs I, diphthong raising beginning with u ä:å"
+!! __@RULENAME@__ - deriving +Ind+Prt+Pl3 in kuâsˈsad > kuõsˈsu, kuärŋŋad kuårŋŋu
+!! {{{
+ ä:å <=> OnSetC u  _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWRaise: BetweenPALNoAndMorph ;
+!! }}}
+
+
+"Even syllabic verbs I, diphthong raising beginning with e:i ä:â"
+!! __@RULENAME@__ - deriving +Ind+Prt+Pl3 in reäkkad > riâkku, veârrad > viõrru
+!! {{{
+ ä:â <=> OnSetC e:  _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+]  BetweenStemAndHeight %^VOWRaise: BetweenPALNoAndMorph ;
+!! }}}
+
+
+
+"Even syllabic verbs I, diphthong raising beginning with e:i ä:e"
+!! __@RULENAME@__ - used in
+ ä:e <=> OnSetC [u|e:i]  _ (i|u) :ʹ [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+]  BetweenStemAndHeight %^VOWRaise: %^PALE: %^PAL: ;
+  e  _ (i|u|h:) 0: [Cns:+|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+] Vow: Cns:*   %^Pen: %^PALE: %^Pen: %^PAL: ;
+!!€ jeä0kˈkel%^Pen%^PALE%^Pen%^PAL%^Pen%^KKK2ZERO
+!!€ jeeʹ000el000000
+
+
+
+"Even syllabic verbs I, diphthong raising beginning with e:i ä:ẹ"
+!! __@RULENAME@__ - used in
+ ä:ẹ <=> OnSetC [u|e:i]  _ (i|u) :ʹ [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+]  BetweenStemAndHeight (%^VOWRaise:) %^PALẸ: %^PAL: ;
+!!€ čuä0ckk%^PALẸ%^PAL%^XYY2XY%>es
+!!€ čuẹʹcǩ0000%>es
+!!€ suä0kk%^PALẸ%^PAL%^KK2GG
+!!€ suẹʹjj000
+
+
+"diphthong backing beginning with u ä:õ"
+!! __@RULENAME@__ - used in
+ ä:õ <=>  u _ (i|u) (:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+]  BetweenStemAndHeight %^VOWBack: ;
+          [u|e:] _ (i|u) (:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+]  BetweenStemAndHeight %^VOWRaise: %^PALÕ:  ;
+!!€ jeä0l0l%^VOWRaise%^PALÕ%^PAL%^CC2CCC%>e
+!!€ jiõʹlˈl0000%>e
+
+"Even syllabic verbs I, diphthong raising beginning with ä:a u"
+!! __@RULENAME@__ - deriving läullad > laullum
+ ä:a <=>
+  ä: _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWRaise: ;
+  OnSetC _ (%^1VOW:) (u|i)  (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWRaise:  ;
+!!€ ä%^1VOWldd%^VOWRaise%>u
+!!€ a0ldd0%>u
+!!€ ä%^1VOWldd%^V2VV%^VOWRaise%^XYY2XY%>u
+!!€ aald0000%>u
+ OnSetC _ ä: (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+] %^VOWRaise: ;
+!! čääʹcc+N+Pl+Acc __water__
+!!€ čääʹcc%^VOWRaise%^KK2GG%>id
+!!€ čaaʹʒʒ00%>id
+
+
+!! !LOWERING 
+
+! Where: VIGGAD +Ind+Prs+Sg3, +Ind+Prs+Pl3
+!        TIETTED 
+! long and single vowels
+
+
+
+"Even syllabic verbs I, vowel lowering o:å"
+!! __@RULENAME@__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in poorrâd
+ o:å <=> OnSetC    _ o:å (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWLower:  ;
+         OnSetC o: _     (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWLower:  ;
+!!€ poo0rr%^VV2V%^VOWLower%^PAL%>e
+!!€ p0åʹrr000%>e
+         OnSetC    _  (%^1VOW:)   (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]   %^VOWLower: ;
+!! juʹrdded+V+Cond+Sg1: joordčem
+         OnSetC _ %^1VOW:å (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^V2VV:   %^VOWLower: ;
+!! juʹrdded > joordam
+         OnSetC    _ (%^1VOW:) (u:|i:) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: ;
+         OnSetC    _ (%^1VOW:) ((ʹ:) (v:u|j:i)) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: ;
+
+
+
+"Even syllabic verbs I, vowel lowering i:e"
+!! __@RULENAME@__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
+ i:e <=>
+   OnSetC _ i:e (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] (%^V2VV:)  %^VOWLower: ;
+!!€ vi%^1VOWǯǯ%^V2VV%^VOWLower%>as 
+!!€ veeǯǯ00%>as
+         OnSetC _ [õ:â|õ:ä|â:ä|e:ä|e:â] (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] (e: s:)  %^VOWLower: ;
+           OnSetC i: _   (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: ;
+           OnSetC _ (%^1VOW:) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] (%^V2VV:)  %^VOWLower: ;
+!! juʹrdded+V+Cond+Sg1: joordčem
+!!€ vi%^1VOWǯǯ%^V2VV%^VOWLower%>as
+!!€ veeǯǯ00%>as
+
+! juʹrdded > joordam
+           OnSetC _ (%^1VOW:) (u:|i:) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: ;
+           OnSetC _ (%^1VOW:) ((ʹ:) (v:u|j:i)) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: ;
+  OnSetC _ â: (ʹ:|0:ʹ) Cns:+ (%{XC%}:Cns) %^LowerI2E: ;
+!Not needed here
+!! mieʹlǩǩ+N+Sg+Nom: __milk/maito__
+!!€ meâ0lkk%^VOWRaise%^PALE%^PAL
+!!€ mieʹlǩǩ000
+  OnSetC _ â: (ʹ:|0:ʹ) [Cns:+ |Cns:+ (ˈ:|:ˈ) Cns:+] Vow: Cns:* %^Pen: %^VOWLower: ;
+!! cieʹǩǩes+N+Sg+Gen
+!!€ ciâkˈkez%^Pen%^VOWLower%^PenVow2a
+!!€ ceäkˈkaz000
+
+"Even syllabic verbs I, vowel lowering a:ä"
+!! __@RULENAME@__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
+!! {{{
+ a:ä <=> OnSetC    _ a:ä (u|i) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWLower: (%^VOWFront:|%^VOWBack:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
+         OnSetC a: _     (u|i) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: (%^VOWFront:|%^VOWBack:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
+         OnSetC    _    (%^1VOW:) (u|i) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWLower: (%^VOWFront:|%^VOWBack:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
+! juʹrdded+V+Cond+Sg1: joordčem
+         OnSetC _ %^1VOW:   (u|i) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] (%^V2VV: )  %^VOWLower: (%^VOWFront:|%^VOWBack:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) BetweenPALNoAndMorph ;
+! juʹrdded > joordam
+!         OnSetC     _ (%^1VOW:) (u:|i:) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: (%^VOWFront:|%^VOWBack:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
+         OnSetC     _ (%^1VOW:) ((ʹ:) (v:u|j:i)) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWLower: (%^VOWFront:|%^VOWBack:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
+!! }}}
+
+
+"Even syllabic verbs I, vowel lowering u:o"
+!! __@RULENAME@__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in uʹvdded
+ u:o <=>
+        OnSetC _ (%^1VOW:) (ʹ:) v: (0:ʹ) [n n: |d d:|l l:|r r:|ʒ ʒ:|ǯ ǯ:|j j:] (%^V2VV:) %^VOWLower:  ;
+
+!! uʹvdded+V+Cond+Pl3 __to give__
+!!€ u%^1VOWvdd%^V2VV%^VOWLower%^XYY2VY%>če
+!!€ ooud0000%>če
+!! uʹvdded+V+Ind+Prs+Sg3
+!!€ u%^1VOWvdd%^VOWLower%^XYY2VYY
+!!€ o0udd00
+!! vuʹvll+N+Sg+Ill: voulla
+!!€ vuvll%^VOWLower%^PALNo%^XYY2VYY%>a
+!!€ voull000%>a
+  OnSetC _ [o|u:o] (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWLower: (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) (%^KK2GG:|%^CC2C:|%^XYY2XY:) RBound ;
+        OnSetC u: _   (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|r d d:]  %^VOWLower: (%^VOWFront:|%^VOWBack:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) (%^KK2GG:|%^CC2C:|%^XYY2XY:) RBound ;
+!! suukkâd+V+Imprt+Sg3: __row/soutaa__
+!!€ suukk%^VOWLower%^KK2GG%>as
+!!€ sooǥǥ00%>as
+       OnSetC _ (%^1VOW:) (ʹ:| 0:ʹ) [CNoV: Cns:* |Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWLower: ; 
+!! juʹrdded+V+Ind+Prs+Sg1 __think__
+!!€ ju%^1VOWrdd%^V2VV%^VOWLower%^XYY2XY%>am
+!!€ joord0000%>am
+!! juʹrdded+V+Ind+Prs+Pl3 __think__
+!!€ ju%^1VOW0rdd%^VOWLower%^PAL%>e
+!!€ jo0ʹrdd00%>e
+! uʹvdded+V+Ind+Pl3: ouʹdde 
+
+ OnSetC  _ (%^1VOW:) (ʹ:)  v:u (0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: (%^VOWFront:|%^VOWBack:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
+ OnSetC _ (%^1VOW:) %{VU%}: (ʹ:|0:ʹ) Cns:+ BetweenStemAndHeight %^VOWLower: ;
+!! stuuʹl+N+Sg+Ill: __chair/tuoli__
+!!€ stu%^1VOW%{VU%}l%^V2VV%^VOWLower%>a
+!!€ stooul00%>a
+!! juʹrdded+V+Cond+Sg1: joordčem
+!! juʹrdded > joordam
+
+"Even syllabic verbs I, vowel lowering u:õ "
+!! __@RULENAME@__ - deriving
+ u:õ <=>
+       u: _  (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] ( Vow: Cns:* %^Pen: ) %^U2Õ: ;
+       OnsetC _ (%^1VOW:) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] [BetweenStemAndHeight | Vow: Cns:* PenBetweenStemAndHeight %^Pen: ] %^U2Õ: ;
+!!€ ču%^1VOWkk%^V2VV%^U2Õ%>až
+!!€ čõõkk00%>až
+    OnSetC  _ u: (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^U2Õ: ;
+
+
+
+"Even syllabic verbs I, vowel lowering õ:â "
+!! __@RULENAME@__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
+ õ:â <=>
+       i: _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: [ BetweenPALNoAndMorph |%^PAL:|%^PALNo:] ;
+!! riõkkâd+V+Ind+Prs+Sg3 __to whip__
+!!€ riõkˈk%^VOWLower#
+!!€ reâkˈk0#
+       õ: _  (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: ;
+!!€ mõõ0nn%^VV2V%^VOWLower%^PAL%>e
+!!€ m0âʹnn000%>e
+    OnSetC  _ õ: (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWLower: ;
+!!€ mõõnn%^VOWLower%^CC2C%>as
+!!€ mâân000%>as
+
+! juʹrdded > joordam
+   OnSetC _ (%^1VOW:)  (u:|i:) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: (%^VOWFront:|%^VOWBack:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ; 
+   OnSetC _ (%^1VOW:) ((ʹ:) (v:u|j:i)) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWLower: (%^VOWFront:|%^VOWBack:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
+! diphthong opening after u
+        u _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: [ BetweenPALNoAndMorph |%^PAL:|%^PALNo:] ;
+!! kuõskkâd+V+Ind+Prs+Sg3
+!!€ kuõskk%^VOWLower
+!!€ kuâskk0
+
+
+!! !diphthongs
+
+"Even syllabic verbs I, diphthong opening after u å:ä"
+!! __@RULENAME@__ - deriving +Ind+Prs+Sg3, in kuåccâd kuäʹcce
+!! = a>ä lowering clockwise
+ å:ä <=> u _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWLower: (%^PALNo:|%^PAL:) BetweenPALNoAndMorph ;
+!!€ kuå0c0c%^VOWLower%^PAL%^CC2CCC%>e
+!!€ kuäʹcˈc000%>e
+
+
+"Even syllabic verbs I, diphthong opening after i:e e:ä"
+!! __@RULENAME@__ - deriving +Ind+Prs+Sg3, in čiõkkâd
+ e:ä <=> [i:|u] _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] (e: s:) %^VOWLower: (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) [RBound|%^RmVow:|%^VC:] ;
+!! vueʹlǧǧed+V+Ind+Prs+Pl3: vuäʹlǧǧa
+
+
+"Vowel in second syllable e:a"
+!! __@RULENAME@__ - deriving cieʹǩǩes+N+Sg+Gen: ceäkˈkaz
+ e:a <=> 
+  OnSetC _ (ʹ:|0:ʹ) [Cns:*] PenBetweenStemAndVowelLoss %^PenVow2a: ;
+!! cieʹǩǩes+N+Sg+Gen
+!!€ ciâkˈkez%^Pen%^VOWLower%^PenVow2a
+!!€ ceäkˈkaz000
+
+
+
+"Even syllabic verbs I, diphthong opening i:e â:ä for â:ä "
+!! __@RULENAME@__ - deriving +Ind+Prs+Sg3, in čiõkkâd
+ â:ä <=>
+ u _ i (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: ;
+!!vueiʹnned+V+Ind+Prs+Sg3
+!!€ vuâinn%^VOWLower
+!!€ vuäinn0
+ i: _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: (%^PALNo:| %^PAL:)  ;
+ i: _ (ʹ:|0:ʹ) [Cns:+|Cns:+ (ˈ:|:ˈ) Cns:+] Vow: Cns:+ %^Pen: %^VOWLower: (%^Pen: %^PALNo:| %^Pen: %^PAL:)  ;
+ u _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^PALÄ:  ;
+!! vueʹlǧǧed+Use/NG+V+Ind+Prs+Pl3 __leave/lähteä__
+!!€ vuâ0lgg%^PALÄ%^PAL%>e
+!!€ vuäʹlǧǧ00%>e
+
+"Even syllabic verbs I, diphthong opening after i:e e:â"
+!! __@RULENAME@__ - deriving +Ind+Prs+Sg3, in pi%{EÂ%}ʹǩǩ:peâkka
+!! {{{
+ %{EÂ%}:â <=> i: _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: %^PALNo:  RBound ;
+!! }}}
+
+"Even syllabic verbs I, diphthong opening after u e:â"
+!! __@RULENAME@__ - deriving vueʹlǧǧed+V+Ind+Prs+Pl3: vuâʹlǧǧe
+!! {{{
+ e:â <=> [u|i:] _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] (e: s:) %^VOWLower: %^VOWBack: ;
+!! }}}
+
+!! !Vowel backing
+
+"Even syllabic verbs I, diphthong opening after u e:õ"
+!! __@RULENAME@__ - deriving vueʹlǧǧed+V+Ind+Prt+Sg1: vuõʹlǧǧem
+!! {{{
+ e:õ <=> u _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWBack: ;
+!! }}}
+
+" u å:õ"
+!! __@RULENAME@__ - used in
+!! = a>ä lowering clockwise
+!! {{{
+ å:õ <=> u _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWRaise: ;
+!! }}}
+!!€ puått%^VOWRaise%>u
+!!€ puõtt0%>u
+
+
+
+!! !Vowel Palatalization
+"diphthong allophonic realization in palatalization u å:e"
+!! __@RULENAME@__ - deriving 
+!! {{{
+ å:e <=> u _ :ʹ  [Cns:+ (%{XC%}:)|Cns:+ :ˈ Cns:+]  %^PALE: %^PAL: ;
+!! }}}
+!!€ puå0v0v%^PALE%^PAL%^CC2CCC%>e
+!!€ pueʹvˈv000%>e
+
+
+"diphthong allophonic realization in palatalization u å:ẹ"
+!! __@RULENAME@__ - deriving 
+ å:ẹ <=> u _ :ʹ  [Cns:+ (%{XC%}:)|Cns:+ :ˈ Cns:+] %^PALẸ: %^PAL: ;
+
+!! !Vowel Lowering and Fronting
+
+"Even syllabic verbs I, diphthong opening õ:ä after i:e"
+!! __@RULENAME@__ - deriving +Ind+Prs+Sg3, in čiõkkâd
+ õ:ä <=>
+ i:e _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  BetweenStemAndHeight %^VOWLower: %^PALÄ: ;
+ u _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  BetweenStemAndHeight %^VOWLower: %^PALÄ: ;
+
+
+
+
+!! !SECONDARY FRONTING
+
+
+ 
+"Even syllabic verbs I, secondary vowel fronting with PAL u õ:e"
+!! __@RULENAME@__ - deriving +Ind+Prs+Pl3 in VIQQAD: kuõskkâd >kueʹsǩǩe
+ õ:e <=>
+  u _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: %^PALE: ; ! deriving +V+Inf in vueʹlǧǧed
+
+         i _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: %^PALE: ; 
+! - deriving +Ind+Prs+Sg3, in kuõskkâd kueʹsǩǩe CHECK THIS
+
+
+
+"Even syllabic verbs I, secondary u > v "
+!! __@RULENAME@__ 
+ u:v <=> u _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VY2XYY: ;
+
+
+!! !RELATIVE VOWEL LENGTHENING
+
+!! vowel lengthening and consonant shortening, %^Pen: %^V2VV and %^CShort 
+
+"Even syllabic verbs I, relative vowel lengthening %^1VOW:â"
+!! __@RULENAME@__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
+ %^1VOW:â <=> OnSetC [ Vow:â|Vow:Â] _ (u:|i:|%{VU%}:) (ʹ:|0:ʹ)  Cns:+ (%{XC%}:Cns) %^V2VV: ;
+   OnSetC [â|õ:â|Â|Õ:Â] _ (u:|i:|%{VU%}:) (ʹ:|0:ʹ) Cns:+ %^V2VV: ( %^VOWLower: ) ;
+!! šõddâd+V+Imprt+Sg3: 
+!!€ šõ%^1VOWdd%^V2VV%^VOWLower%>as
+!!€ šââdd00%>as
+
+!Distinguishing mainstam and maainstam
+      OnSetC [â|Â] _ (u:|i:) (ʹ:|0:ʹ)  Cns:+ (%{XC%}:Cns)  Vow: Cns:+ (%{XC%}:Cns)  %^Pen: %^V2VV: ;
+!!€ nââʹer+N+Sg+Nom _sleep_
+!!€ nâ%^1VOW0kker%^Pen%^V2VV%^Pen%^PAL%^Pen%^KK2ZERO
+!!€ nââʹ00er%^Pen%^V2VV%^Pen%^PAL%^Pen%^KK2ZERO
+      [e|E] _ Cns: Cns:+ %^PALÂ: %^PALNo: ;
+
+
+"%^1VOW:ẹ relative vowel lengthening"
+!! __@RULENAME@__ - 
+ %^1VOW:ẹ <=>         OnSetC [ẹ|Ẹ] _ (i|u) Cns:+ (%{XC%}:Cns) %^V2VV: ;
+!!€ pẹ%^1VOWss%^V2VV
+!!€ pẹẹss0
+
+
+"Even syllabic verbs I, relative vowel lengthening %^1VOW:e"
+!! __@RULENAME@__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
+ %^1VOW:e <=> OnSetC [e|E] _  (ʹ:|0:ʹ) Cns:+ %^V2VV: BetweenVowHeightAndConsGrade ;
+!!€ čââʹlmtẹ%^1VOW0m%^V2VV%^PAL
+!!€ čââʹlmteeʹm00
+        OnSetC [Vow:e|Vow:E] _ (i|u) (ʹ:|0:ʹ) Cns:+ (%{XC%}:Cns) %^V2VV: ;
+!!€ pẹ%^1VOWi0vv%^V2VV%^PAL%^XYY2XY
+!!€ peeiʹv0000
+         OnSetC i:e _  (ʹ:|0:ʹ) Cns:+ %^V2VV: %^VOWLower: ;
+!!€ vi%^1VOWǯǯ%^V2VV%^VOWLower%>as 
+!!€ veeǯǯ00%>as
+
+!Distinguishing mainstam and maainstam
+      Cns: Vow:e _ (u:|i:) (ʹ:|0:ʹ)  Cns:+ (Vow:) Cns:+  %^Pen: %^V2VV: ; 
+      [ n | š ] Vow:e _ (ʹ:|0:ʹ) ǩ ǩ %^V2VV: ;
+!!€ kaađnẹ%^1VOW0ǩ%{XC%}%^V2VV%^PAL%^C2CC
+!!€ kaađneeʹǩǩ000
+
+
+"Even syllabic verbs I, relative vowel lengthening %^1VOW:å"
+!! __@RULENAME@__ - deriving
+ %^1VOW:å <=>
+   OnSetC [å|o:å|Å|O:Å] _ (u:|i:|h:u|v:u) (ʹ:|0:ʹ) Cns:+ %^V2VV: ( %^VOWLower: ) ;
+   OnSetC [å|Å] _ (u:|i:|h:u|v:u) (ʹ:|0:ʹ) Cns:+ (Vow: [Cns:* (%{XC%}:Cns)] %^Pen:) %^V2VV: ;
+!! sååbbar+N+Sg+Nom
+!!€ så%^1VOWbbar%^Pen%^V2VV
+!!€ sååbbar00
+!!$ s%^1VOWåbbar%^Pen%^V2VV
+!!$ s0åbbar00
+
+
+
+"Even syllabic verbs I, relative vowel lengthening %^1VOW:õ"
+!! __@RULENAME@__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
+ %^1VOW:õ <=>
+     OnSetC Vow:õ _ (u:|i:) (ʹ:|0:ʹ)  Cns:+ (%{XC%}:Cns) %^V2VV: ;
+!! âʹlǧǧ+N+Pl+Gen: __boy/poika__
+!!€ â%^1VOW0lgg%^V2VV%^VOWRaise%^PAL%^XYY2XY%>i
+!!€ õõʹlj00000%>i
+!! čâʹlmm+N+Pl+Acc: __eye/silmä__
+!!€ čâ%^1VOW0lmm%^V2VV%^VOWRaise%^PAL%^XYY2XY%>id
+!!€ čõõʹlm00000%>id
+     OnSetC u:õ _ (ʹ:|0:ʹ)  Cns:+ (%{XC%}:Cns) [ %^V2VV: %^U2Õ: | %^Pen: %^V2VV: %^Pen: %^U2Õ: ] ;
+!!€ ču%^1VOWkk%^V2VV%^U2Õ%>až
+!!€ čõõkk00%>až
+
+!Distinguishing mainstam and maainstam
+      Cns: õ _ (u:|i:) (ʹ:|0:ʹ)  Cns: Cns:* Vow: [Cns:+| %{XC%}:Cns]  %^Pen: %^V2VV: ; 
+
+   OnSetC [õ|Õ] _ (ʹ:|0:ʹ) Cns:+ (%{XC%}:Cns) %^V2VV: ; 
+!!€ võ%^1VOWrr%^V2VV%^CC2C
+!!€ võõr000
+!!€ sõ%^1VOWll%^V2VV%^CC2C
+!!€ sõõl000
+!!€ mättʼtõ%^1VOWs%{XC%}%^V2VV%^K2GG
+!!€ mättʼtõõzz00
+!!€ sõ%^1VOWhss%^V2VV%^XYY2VY
+!!€ sõõus000
+
+"Even syllabic verbs I, relative vowel lengthening %^1VOW:ä"
+!! __@RULENAME@__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
+ %^1VOW:ä <=> OnSetC [ä|Ä] _ (i|:u) (ʹ:|0:ʹ) Cns:+ %^V2VV: ;
+ OnSetC ä _ (ʹ:|0:ʹ) Cns:+ %^V2VV: ([%^CC2C:|%^XYY2XY:]) RBound ;
+!!€ ä%^1VOWldd%^V2VV%^CC2C
+!!€ ääld000
+!!€ jä%^1VOWu0rr%^V2VV%^PAL%^CC2C
+!!€ jääuʹr0000
+   OnSetC ä _ h: (ʹ:|0:ʹ) Cns:+ %^V2VV: BetweenVowHeightAndConsGrade %^XYY2VY: ;
+!! mäʹhssed+V+Ind+Prs+Sg1: __pay/maksaa__
+!!€ mä%^1VOWhss%^V2VV%^XYY2VY%>am
+!!€ määus000%>am
+!!€ sä%^1VOWhss%^V2VV%^XYY2VY%>am
+!!€ sääus000%>am
+
+ OnSetC [å:ä|ä|a:ä] _ (h:u|u|i) (ʹ:|0:ʹ) Cns:+ %^V2VV: ( %^VOWLower: )  ; 
+!Distinguishing mainstam and maainstam
+!- kååʹmmerd, maainâst Vowel lengthening in INDPRSSG3 and IMPSG2
+    OnSetC ä _ (h:u|u|i) (ʹ:|0:ʹ) Cns:+ Vow: Cns:+ (%{XC%}:Cns) [%^Pen: %^V2VV:|%^IMPSG2:|%^INDPRSSG3:] ;
+    OnSetC ä _ (i|h:u|u) (ʹ:|0:ʹ) Cns:+ Vow: Cns:* %^Pen: %^V2VV: ;
+
+
+
+"Even syllabic verbs I, relative vowel lengthening %^1VOW:a"
+!! __@RULENAME@__ - deriving +V+Inf in MAINSTED: maainstam, mainstam
+ %^1VOW:a <=>
+  OnSetC [Vow:a|Vow:A] _ (i|u) (ʹ:|0:ʹ) Cns:+ %^V2VV: ;
+!!€ ä%^1VOWldd%^V2VV%^VOWRaise%^CC2C%>už
+!!€ aald0000%>už
+!!€ dura%^1VOWk%^V2VV
+!!€ duraak0
+
+!Distinguishing mainstam and maainstam
+  OnSetC [a|A] _ (i|u)  (ʹ:|0:ʹ) Cns:+ Vow: Cns:+ (%{XC%}:Cns)  %^Pen: %^V2VV: ;
+!Not needed here
+!!€ maainâst
+!!€ maainâst
+!2016-04   [ b | ʒ | (ǯ) ǯ | (g) g | i b | i n |(k) k |l|m |(n) n | n v|r g|r| r t | u d|u l| u n | u ŋ | u r] _ s t (%^Pen: %^V2VV:) %^IMPSG2: ;
+!2016-04   [ ʹ đ đ | ʹ ǩ |ʹ l|ʹ l ǩ |ʹ m m |ʹ p] _ s t %^IMPSG2: ;
+   Cns: a _  i  (ʹ:|0:ʹ) Cns: Vow: Cns:+ (%{XC%}:Cns)  %^Pen: %^V2VV: ; 
+   Cns: a _  i  Cns: Vow: Cns:+ (%{XC%}:Cns)  %^Pen: %^V2VV: ;
+   Cns: a _ (u:|i:) (ʹ:|0:ʹ)  Cns:+ Vow: Cns:+ (%{XC%}:Cns)  [%^Pen: %^V2VV:|%^IMPSG2:|%^INDPRSSG3:] ; 
+
+
+
+
+"Even syllabic verbs I, relative vowel lengthening %^1VOW:o"
+!! __@RULENAME@__ -  simultaneous lengthening and lowering: juʹrdded > joordam juʹrdded+V+Ind+Prs+Sg1
+ %^1VOW:o <=>
+   OnSetC u:o _ [Cns: - v: ] [Cns:* |:Cns*] %^V2VV:  %^VOWLower: ;
+   OnSetC u:o _ [%{VU%}:u|(ʹ:) v:] (ʹ:|0:ʹ) [d|l|r|ʒ] %^V2VV:  %^VOWLower: ;
+   OnSetC u:o _ [ (ʹ:) [ v:|h:] (0:ʹ) [d d:|l l:|r r:|ʒ ʒ:|s s:|t t:| č č: |c c: ] ] %^V2VV:  %^VOWLower: ;
+
+!!€ u%^1VOWvdd%^V2VV%^VOWLower%^XYY2VY%>če
+!!€ ooud0000%>če
+!! juʹrdded+V+Ind+Prs+Sg1 __think__
+!!€ ju%^1VOWrdd%^V2VV%^VOWLower%^XYY2XY%>am
+!!€ joord0000%>am
+
+  OnSetC å:o _  (ʹ:|0:ʹ) Cns:+  %^V2VV: %^VOWRaise: ;
+!!€ kå%^1VOW0ll%^V2VV%^VOWRaise%^PAL%>in
+!!€ kooʹll000%>in
+   OnSetC o _ (i|u) (ʹ:|0:ʹ) Cns:+  %^V2VV: ; 
+! - deriving toll+N+Sg+Gen: tool
+!!€ to%^1VOWll%^V2VV%^CC2C
+!!€ tool000
+!!€ to%^1VOW0ll%^V2VV%^PAL%^CC2C%>e
+!!€ tooʹl0000%>e
+
+OnSetC o _ (i|u) (ʹ:|0:ʹ) Cns:+ Vow: Cns:+ (%{XC%}:Cns) %^Pen: %^V2VV: ;
+!!€ ko%^1VOWnttâr%^Pen%^V2VV%^Pen%^XYY2XY
+!!€ koont0âr0000
+
+
+"Even syllabic nouns I, relative vowel lengthening i"
+!! __@RULENAME@__ - ǩiđđ:ǩiiđ
+ %^1VOW:i <=> OnSetC [ e:i| ẹ:i ] _ (0:ʹ)  [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] [%^V2VV: %^VOWRaise:| Vow: Cns:+ %^Pen: %^V2VV: %^Pen: %^VOWRaise:]  ;
+OnSetC [i|I] _ [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^V2VV: BetweenVowHeightAndMorph   ;
+  OnSetC [Vow:i|Vow:I] _  [(ʹ:|0:ʹ) CNoJ:|[h:|u] (ʹ:|0:ʹ) Cns:+] Vow: Cns:+ (%{XC%}:Cns)  %^Pen: %^V2VV: ;
+!Not needed here
+!! pirsted+V+Ind+Prs+ConNeg
+!!€ piirâst
+!!€ piirâst
+!!€ pẹ%^1VOWss%^V2VV%^VOWRaise%>už
+!!€ piiss00%>už
+
+   OnSetC [i|I] _ (ʹ:|0:ʹ) CNoJ: Cns:*  %^V2VV:  ;
+!!€ ǩi%^1VOWđđ%^V2VV%^CC2C
+!!€ ǩiiđ000
+
+
+
+"Even syllabic nouns, relative vowel extra lengthening u not followed by v"
+!! __@RULENAME@__ - declension of nouns kunn > kuun
+ %^1VOW:u <=> OnSetC [o:u|u] _ (ʹ:|0:ʹ) Cns:+  (%{XC%}:Cns) (%^Pen: %^CC2C:) %^V2VV: ((%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:|%^PALNo:) BetweenPALNoAndMorph ;
+ OnSetC [o:u|u] _ (ʹ:|0:ʹ) Cns: Cns:* (%^Pen: %^CC2C:) %^V2VV: ((%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:|%^PALNo:) [%^C2CC: | %^K2GG:] ;
+ OnSetC o:u _ (i) (ʹ:|0:ʹ) Cns: Cns:*  %^V2VV:  %^VOWRaise:  ;
+ OnSetC u (i) _ (ʹ:|0:ʹ) Cns: Cns:*  %^V2VV: BetweenVowHeightAndMorph ;
+           Cns: u _ (ʹ:|0:ʹ)  CNoV: Vow: Cns:+ (%{XC%}:Cns)  %^Pen: %^V2VV: [%>|#|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:] ;
+ 
+!! mainstummuš+N+Err/Orth+Sg+Gen
+!!€ mainstummu%^1VOWš%{XC%}%^Pen%^CC2C%^V2VV%^K2GG
+!!€ mainstum0uužž0000
+
+
+!! simultaneous lengthening and raising, hmm: xfst ordering might be easier
+
+
+
+!! !VOWEL DUMMY LOSS
+
+
+!! !SEMI VOWELS
+
+ 
+"Even syllabic nouns, for j>i"
+!! __@RULENAME@__ - sijdd > siid This will need a special extra-lengthening rule
+ j:i <=> OnSetC i: (%{ʹ%}:) _ (ʹ:) [ d d:|s s:] BetweenStemAndConsGrade %^XYY2VY: ;
+!!€ ijss%^XYY2VY%>âs
+!!€ iis00%>âs
+  Vow: (%^1VOW:) (ʹ:|:ʹ) _ j: BetweenStemAndConsGrade %^J2I: [%^CC2C:|%^XYY2XY:] ;
+
+!!€ sââjj%^J2I%^CC2C
+!!€ sââi000
+!! tuâjj+N+Sg+Acc __work__
+!!€ tuâjj%^J2I%^CC2C
+!!€ tuâi000
+
+"Even syllabic verbs,  for v>u"
+!! __@RULENAME@__ - uvdd > ouʹdde
+ v:u <=>  u: (%^1VOW:) (ʹ:) _ (0:ʹ) [ǯ ǯ: |ʒ ʒ:|d d:|l l:|r r:] BetweenStemAndConsGrade [%^XYY2VY: |%^CCC2CC:|%^XYY2VYY:] ;
+!!€ u%^1VOWv0dd%^PAL%^XYY2VY
+!!€ u0uʹd000
+!!€ u%^1VOWvdd%^VOWLower%^XYY2VYY
+!!€ o0udd00
+
+ "Even syllabic nouns, for h>u"
+!! __@RULENAME@__ - luhtt  s s: ...
+ h:u <=>
+ Vow: (%^1VOW:) (%{ʹ%}:) _ (:ʹ) [s s:|š š:|t t:|c c:|č č:] BetweenStemAndConsGrade %^XYY2VY: ;
+!! uhss+N+Der/Dim+N+Sg+Gen __door__
+!!€ uh0ss%^PAL%^XYY2VY%>e
+!!€ uuʹs000%>e
+
+!!€ sä%^1VOWhss%^V2VV%^XYY2VY%>am
+!!€ sääus000%>am
+
+ Vow: (%^1VOW:) (%{ʹ%}:) _ (:ʹ) [s s:|š š:|t t:|c c:|č č:] Vow: Cns:* PenBetweenStemAndConsGrade %^Pen: %^XYY2VY: ;
+!! piiutâs+N+Sg+Nom __clothing/vaate__
+!!€ pi%^1VOWhttâz%^Pen%^V2VV%^Pen%^XYY2VY%^DeVC
+!!€ piiut0âs00000
+
+
+ "Even syllabic nouns, for h>i"
+!! __@RULENAME@__ - kueʹhtt 
+h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
+!! kueiʹt+Num+Sg+Gen __two/kaksi__
+!!€ kuâh0tt%^PALE%^PAL%^XYY2IY
+!!€ kueiʹt0000
+
+"trisyllabic verbs and doer derivations, i>j"
+!! __@RULENAME@__ - used in
+ i:j <=> [Vow: |Cns:] (0:ʼ) _ PenBetweenStemAndVowelLoss (%^RmVow:) %^I2J:  ;
+   Vow:i (%^1VOW:) (0:ʹ) _ [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWRaise:  %^VYY2XYY: ;
+!   Vow:i (%^1VOW:) (0:ʹ) _ [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWRaise:  %^VYY2XYY: ;
+!!
+!!€ valmštõõll0i%^I2J%>i
+!!€ valmštõõllʼj0%>i
+!! piânˈnai+N+Ess: __dog/koira__
+!!€ piânˈn%^CCC2CC%>0j%>en
+!!€ piân0n0%>ʼj%>en
+
+!! peigg+N+Sg+Ill
+!!€ pẹ%^1VOWigg%^VOWRaise%^VYY2XYY%>u
+!!€ pi0jgg00%>u
+
+!! !VOWELS TENSE vs LAX 2012-11-28
+
+
+"Even-syllabic nouns, for â:e"
+!! __@RULENAME@__ -  ǩiâpp:ǩieʹpˈpe
+ â:e <=> i _ :ʹ [Cns:+ (%{XC%}:)|Cns:+ (:ˈ|ˈ:)  Cns:+]  %^PALE: %^PAL: ;
+!! +N+Sg+Ill
+!!€ miâ0rr%^PALE%^PAL%>e
+!!€ mieʹrr00%>e
+!!€ piâ0ss%^PALE%^PAL
+!!€ pieʹss00
+      u _ ((h:i) :ʹ) [Cns:+ (%{XC%}:)|Cns:+ (:ˈ|ˈ:) Cns:+] %^PALE: %^PAL: ;
+!!€ kuâ0ll%^PALE%^PAL
+!!€ kueʹll00
+  [u|:i]  _ (i|u) :ʹ [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+]  BetweenStemAndHeight (%^VOWRaise:) %^PALE: %^PAL: ;
+!! tieʹtted+V+Imprt+Sg2: __know/tietää__
+!!€ teâ0tt%^VOWRaise%^PALE%^PAL%^CC2C
+!!€ tieʹđ00000
+  e:  _ (i|u) :ʹ [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+]  [%^PALE: | Vow: Cns:* %^Pen: %^PALE: ]  ;
+!!€ ǩeâ0sttez%^Pen%^PALE%^Pen%^PAL%^Pen%^XYY2XY%^DeVC
+!!€ ǩeeʹst0es0000000
+
+"Even-syllabic nouns, for â:ẹ"
+!! __@RULENAME@__ - used in
+ â:ẹ <=> i _ :ʹ [Cns:+ (%{XC%}:)|Cns:+ :ˈ Cns:+]  %^PALẸ: %^PAL: ;
+!Not needed here
+!! pieʹll+N+Sg+Nom: __half__
+!!€ peä0ll%^VOWRaise%^PALẸ%^PAL
+!!€ piẹʹll000
+
+
+"Palatalization for ẹ:e"
+!! __@RULENAME@__ - used in
+ ẹ:e <=>
+ OnSetC ẹ: _ (i|u) :ʹ [Cns:+ (%{XC%}:)|Cns:+ (:ˈ|ˈ:0) Cns:+]  %^PAL:  ;
+ OnSetC _ (%^1VOW:) (i|u) :ʹ [Cns:+ (%{XC%}:)|Cns:+ (:ˈ|ˈ:0) Cns:+] BetweenStemAndHeight %^PAL:  ;
+!!€ pẹ%^1VOWi0vv%^V2VV%^PAL%^CC2C
+!!€ peeiʹv0000
+         OnSetC _ ẹ: (i|u) :ʹ [Cns:+ (%{XC%}:)|Cns:+ (:ˈ|ˈ:0) Cns:+]  %^PAL:  ;
+
+!! !VOWEL and ZERO ALTERNATION
+
+
+"Realization for â in a"
+!! __@RULENAME@__ - used in
+ â:a <=> OnSetC _ (ʹ:|0:ʹ) [Cns:+] (%^Pen: %^V2VV:) %^PenVow2a: ;
+!!ǩiõrggned+V+Ind+Prs+Sg3
+!!€ ǩiõrggân%^PenVow2a
+!!€ ǩiõrggan0
+
+!! !THE NON-ORTHOGRAPHIC SYLLABLE 
+
+
+"Loss of ʼ when preceded by vowel"
+!! __@RULENAME@__ - This is a temporary solution to  "ʼ" in võʹllʼjed
+!! {{{
+ ʼ:0 <=> Vow:Vow _ Cns: ; 
+!! }}}
+
+"%{A1%}:ʼ when subseqent syllable has vowel v"
+!! __@RULENAME@__ - This is a temporary solution to  "ʼ" in võʹllʼjed 2013-08-29
+!! {{{
+%{A1%}:ʼ <=> [l l|n n] _ i: %> Vow: ; 
+!! }}}
+
+!! !PALATALIZATION
+
+
+
+
+"0:ʹ as transfer from left of v:u"
+!! __@RULENAME@__ - used +Ind+Prs+Pl3, uʹvdded+V+Ind+Prs+Pl3: ouʹdde
+0:ʹ <=> v: (:ˈ) _ [ʒ ʒ:|d d:|l l:|r r:]       BetweenStemAndPALNo  %^PAL: [%^XYY2VY:|%^XYY2VYY:] ;
+!!€ u%^1VOWv0dd%^PAL%^XYY2VY
+!!€ u0uʹd000
+ 
+          v:u (:ˈ) _ [ʒ ʒ:|d d:|l l:|r r:]       BetweenStemAndPALNo  ( %^PAL:) RBound ;
+              h: (:ˈ) _ [c c:|č č:|s s:|š š:|t t:]  BetweenStemAndPALNo  %^PAL: [ %^XYY2VY: |%^XYY2IY: ] ;
+!!€ tä%^1VOWh0tt%^V2VV%^PAL%^XYY2VY
+!!€ tääuʹt0000
+!! kueiʹt+Num+Sg+Gen __two/kaksi__
+!!€ kuâh0tt%^PALE%^PAL%^XYY2IY
+!!€ kueiʹt0000
+             [Vow:|:Vow] (%^1VOW:) (i|u) (:ˈ) _ Cns:+ [Cns:*|%{XC%}:Cns|Cns:* (ˈ:|:ˈ) Cns:*] (i:) BetweenStemAndPALNo  %^PAL: ;
+!!€ saa0kk%^VV2V%^PAL%>e
+!!€ sa0ʹǩǩ00%>e
+!!€ mõõ0nn%^VV2V%^VOWLower%^PAL%>e
+!!€ mâ0ʹnn000%>e
+!!€ jåå0tt%^VV2V%^VOWRaise%^PAL%>e
+!!€ jo0ʹtt000%>e
+!!€ kuâ0ll%^PALE%^PAL
+!!€ kueʹll00
+!!€ stu%^1VOW%{VU%}0l%^PAL
+!!€ stu0uʹl0
+!!€ čââʹlmtẹ%^1VOW0m%^PAL
+!!€ čââʹlmte0ʹm0
+             [Vow:|:Vow] (%^1VOW:) (i|u|h:u|h:i) (:ˈ)  _ Cns:+ [Cns:*|%{XC%}:Cns|Cns:* (ˈ:|:ˈ) Cns:*] Vow: Cns:* PenBetweenStemAndPALNo (%^Pen: %^PALE:)  %^Pen: %^PAL: ;
+!!€ kä%^1VOW0llez%^Pen%^V2VV%^Pen%^PAL%^DeVC
+!!€ kääʹlles00000
+!!€ jeä0kˈkel%^Pen%^PALE%^Pen%^PAL%^Pen%^KKK2ZERO
+!!€ jeeʹ000el000000
+!!€ seä0htter%^Pen%^PALE%^Pen%^PAL%^Pen%^XYY2VY
+!!€ seeʹut0er000000
+!! The left context allows for:
+!! Vowel shortening, and j/v > Vow 
+
+"d:đ in weak grade"
+!! __@RULENAME@__ - used in
+ d:đ <=> Vow: (%^1VOW:) (:ʹ) _ [g: g:| v v:] BetweenStemAndConsGrade [%^XYY2XY:] ;
+!!€ ǩeä0dgg%^VOWRaise%^PALẸ%^PAL%^XYY2XY
+!!€ ǩiẹʹđj00000
+         Vow: (%^1VOW:) (:ʹ) _ [g: g:| v v:] Vow: Cns* PenBetweenStemAndConsGrade [%^Pen: %^XYY2XY:] ;
+
+ 
+"Even-syllabic verbs I, Palatalization of g:ǧ"
+!! __@RULENAME@__ - used in
+ g:ǧ <=> Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:)     _ (ˈ:|:ˈ) g: BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CCC2CC:|%^CC2CCC:) RBound ;
+           Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:) g: (ˈ:|:ˈ) _   BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CCC2CC:|%^CC2CCC:) RBound ;
+
+    Vow: (%^1VOW:) 0: _ BetweenStemAndPALNo %^PAL: ;
+!! bioloog+N+Sg+Ill __biologist__
+!!€ bioloo0g%^PAL%>e
+!!€ biolooʹǧ0%>e
+
+
+"Even-syllabic verbs I, Palatalization of k:ǩ here"
+!! __@RULENAME@__ - used in
+ k:ǩ <=>
+ Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:)   _ (0:) [k: |%{XC%}: ] [BetweenStemAndPALNo |Vow: Cns:+ PenBetweenStemAndPALNo %^Pen: ] (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: ([%^CC2C:|%^CCC2CC:|%^XYY2XY:]) (%^DeVC:) RBound ;
+
+ Vow: (%^1VOW:) (ʹ:|0:ʹ) [Cns: - k:]   _ (k: |%{XC%}:) [BetweenStemAndPALNo |Vow: Cns:+ PenBetweenStemAndPALNo %^Pen: ] (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: ([%^CC2C:|%^XYY2XY:]) (%^DeVC:) RBound ;
+!! hääʹsǩ Perhaps the stem should simply be __häskk__
+!!€ hää0sk%^PAL
+!!€ hääʹsǩ0
+ Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:)   _ (0:) [k: |%{XC%}:] Vow: Cns:+ PenBetweenStemAndPALNo (%^Pen: [%^PALE:|%^PALÄ:|%^PALẸ:]) %^Pen: %^PAL: (%^Pen: [%^CC2C:|%^XYY2XY:]) (%^DeVC:) RBound ;
+!! mieʹlǩǩ+N+Sg+Acc: __milk/maito__
+!!€ meâ0lkk%^VOWRaise%^PALE%^PAL%^CC2C
+!!€ mieʹlǩ00000
+ Vow: (%^1VOW:) (ʹ:|0:ʹ)        _ (ˈ:|:ˈ) [k: |%{XC%}:] BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CC2CCC:|%^CCC2CC:|%^C2CC:) RBound ;
+! Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:)     _ [k: |%{XC%}:] (%^VV2V:|%^VOWSH: (%^CLong:)) NeutrHighBack (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: RBound ;
+  Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:) k: (ˈ:|:ˈ) _   BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CC2CCC:|%^CCC2CC:) RBound ;
+  Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:) k: (ˈ:|:ˈ) _  Vow: Cns:* PenBetweenStemAndPALNo (%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:) %^Pen: %^PAL: (%^Pen: %^CC2CCC:|%^Pen: %^CCC2CC:) RBound ;
+
+!! rääʹǩǩes+A+Sg+Nom __beloved/rakas__
+!!€ rä%^1VOW0kkes%^Pen%^V2VV%^Pen%^PAL
+!!€ rääʹǩǩes0000
+!!€ jo%^1VOW0kk%^PAL%>e
+!!€ jo0ʹǩǩ0%>e
+!!€ saa0kk%^VV2V%^PAL%>e
+!!€ s0aʹǩǩ00%>e
+  Vow: (%^1VOW:) _ (%^RmVow:) %^PALK: ;
+!! kåålvak+N+Sg+Loc
+!!€ kåålvak%^RmVow%^PALK%>est
+!!€ kåålv0ǩ00%>est
+
+!! derive vueʹlǧǧed+V+Imp+Pl3: vuâlǥǥaz
+
+!Not needed here
+!! äiʹǧǧ+N+Sg+Gen: __time/aika__
+!!€ ä%^1VOWi0gg%^V2VV%^PAL%^XYY2XY
+!!€ ääiʹj0000
+
+
+"Even-syllabic nouns I, Depalatalization of ǩ:k"
+!! __@RULENAME@__ - used in
+ ǩ:k <=> 
+!Not needed here
+!!mäʹtǩǩ+N+Sg+Ill
+!!€ mätkk%>a
+!!€ mätkk%>a
+   Vow: (%^1VOW:) _ %{XC%}: %^PALNo: ;
+!! kaađneǩ+N+Sg+Ill:
+!!€ kaađne%^1VOWǩ%{XC%}%^PALNo%^C2CC%>a
+!!€ kaađne0kk00%>a
+
+ Vow: (%^1VOW:) (ˈ:|:ˈ) (Cns) _ PenBetweenStemAndVowelLoss (%^RmVow:) %^PALNo: ;
+!! prääʹzniǩ+N+Sg+Ill: __celebration/juhla__
+!!€ prääʹzniǩ%^RmVow%^PALNo%>a
+!!€ prääʹzn0k00%>a
+!!€ kaaddâšǩ%^Pen%^VV2V%^Pen%^CC2C%^RmVow%^PALNo%>a
+!!€ k0ad00šk000000%>a
+ Cns: (ˈ:|:ˈ) _ Vow: Cns:* PenBetweenStemAndConsGrade (%^RmVow:) %^PALNo: (%^DeVC:) RBound ;
+! Cns: (ˈ:|:ˈ) _ Vow: Cns:* PenBetweenStemAndVowelLoss (%^RmVow:) %^PALNo: (%^DeVC:) RBound ;
+
+
+"Even-syllabic nouns, removing palatalization in -est +Loc nouns"
+!! __@RULENAME@__ - removing palatalization in +Sg+Ill,  pieʹss:peässa
+   ʹ:0 <=>  [Vow:|:Vow] (%^1VOW:) _ [:Cns :Cns+|Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndPALNo %^PALNo: [RBound|%^UltRmVow:|%^VC:] ;
+!Not needed here
+!!€ čââʹlmtẹ%^1VOWm%{XC%}%^C2CC%>a
+!!€ čââʹlmtẹ0mm0%>a
+   Vow: (%^1VOW:)  _ [:Cns :Cns+|Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndPALNo %^PALNo: ;
+   [Vow:|:Vow] (%^1VOW:) _ [:Cns :Cns+|Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^RmVow: %^PALNo: [RBound|%^UltRmVow:|%^VC:] ;
+!CHECKME
+!! stroitteʹl+N+Sg+Ill: __plant/laitos__
+!!€ stroitteʹl%^RmVow%^PALNo%>a
+!!€ stroitt00l00%>a
+  [Vow:|:Vow] (%^1VOW:) _ [:Cns :Cns+|Cns:+|Cns:+ (ˈ:|:ˈ) Cns:+] Vow: Cns:* PenBetweenStemAndPALNo %^Pen: %^PALNo:  ;
+!! prääʹzniǩ+N+Sg+Ill: __celebration/juhla__
+!!€ prääʹzniǩ%^RmVow%^PALNo%>a
+!!€ prääʹzn0k00%>a
+
+!jurdded
+                    Vow: (%^1VOW:) _ CNoV: Cns:+ BetweenStemAndPALNo %^PALNo: ; 
+                    Vow: (%^1VOW:) _ v:u ; 
+
+
+
+!! !!Consonant QUANTITY CHANGE gradation rules
+
+!! !Weakening Consonant Cluster
+
+!! dealing with relative length changes
+!! mõõnnâd : mõʹnne : mõõn 
+
+!"Even syllabic verbs I, cg in relation to Vowel length"
+! !Vow Cx Cx:0 
+
+"Even syllabic verbs I, cg m:0"
+!! __@RULENAME@__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, 
+ m:0 <=>
+ Vow: (%^1VOW:) (ʹ:|0:ʹ) (s|r|l|p|d:)  m: (ˈ:) _ BetweenStemAndConsGrade [%^CC2C:|%^CCC2C:|%^XYY2XY:] ;
+!!€ sää0mm%^PAL%^CC2C
+!!€ sääʹm000
+         Vow: (%^1VOW:) (ʹ:) h: (ʹ:|0:ʹ)      m: (ˈ:) _ BetweenStemAndConsGrade [%^CC2C: |%^CCC2C:|%^XYY2XY:] ;
+         m: (ˈ:) _ Vow: Cns:+ PenBetweenStemAndConsGrade [%^Pen: %^CC2C:|%^Pen: %^CCC2C:|%^Pen: %^XYY2XY:] ;
+!Not needed here
+!! kåʹmrded+V+Ind+Prs+Sg3 __bow__
+!!€ kååʹmmerd%^PenVow2a
+!!€ kååʹmmard0
+
+"Even syllabic verbs I, cg for b"
+!! __@RULENAME@__ - used
+ b:0 <=> Vow: (%^1VOW:)  [i (ʹ:|0:ʹ)|(ʹ:|0:ʹ) Cns: ] b _   BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
+!! neiʹbb+N+Sg+Gen: __knife/veitsi__
+!!€ nẹ%^1VOWi0bb%^V2VV%^PAL%^CC2C
+!!€ neeiʹb0000
+!! äʹrbb+N+Sg+Gen: __heritage/perintö__
+!!€ ä%^1VOW0rbb%^V2VV%^PAL%^XYY2XY
+!!€ ääʹrb0000
+ Vow: (%^1VOW:)  [i (ʹ:|0:ʹ)|(ʹ:|0:ʹ) Cns: ] b _ Vow: Cns:*   PenBetweenStemAndConsGrade %^Pen: [%^CC2C:|%^XYY2XY:] ;
+!! joorbâs+A+Sg+Nom
+!!€ jo%^1VOWrbbâz%^Pen%^V2VV%^Pen%^XYY2XY%^DeVC
+!!€ joorb0âs00000
+
+
+"Even syllabic verbs I, second consonant loss p:0"
+!! __@RULENAME@__ - used in
+ p:0 <=> Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:) p: _ BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
+!!€ ǩiâpp%^CC2C
+!!€ ǩiâv00
+          Vow: (%^1VOW:) (ʹ:|0:ʹ)            p: (ˈ:) _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndConsGrade  [%^Pen: %^CC2C:|%^Pen: %^CCC2C:] ;  
+
+
+"Even syllabic verbs I, cg v:0"
+!! __@RULENAME@__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, teevvad > teev
+
+ v:0 <=>
+  v: _    BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
+!!peiʹvv+N+Sg+Gen+Indef
+!!€ pẹ%^1VOWi0vv%^V2VV%^PAL%^CC2C
+!!€ peeiʹv0000
+ v: _  Vow: Cns:+ (%{XC%}:Cns)  PenBetweenStemAndConsGrade [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:|%^Pen: %^CCC2C:] ;
+!! tuõvâs+N+Sg+Nom: __day/päivä__
+!!€ tuõvˈvâz%^Pen%^CCC2C%^DeVC
+!!€ tuõv00âs000
+
+
+
+"f:0"
+!! __@RULENAME@__ - used in
+
+ f:0 <=>
+      f: _    BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
+!! kaaʹff+N+Sg+Gen __coffee__
+!!€ kaa0ff%^PAL%^CC2C
+!!€ kaaʹf000
+
+
+"Even syllabic verbs I, cg n:0"
+!! __@RULENAME@__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, jiõnn:jiõn
+ n:0 <=> 
+      n: _  (j)  BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
+!!päʹrnn
+         Vow: (%^1VOW:)  (ʹ:) h: (ʹ:|0:ʹ) n: _ (j) BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ; 
+      n: _ (j) Vow: Cns:*  PenBetweenStemAndConsGrade [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;
+          
+
+"Even syllabic nouns I, with extra lengthening of vowel ij>ii/uv>uu and dd>d"
+!! __@RULENAME@__ - used with  +N+Sg+Nom > +N+Sg+Gen, sijdd > siid
+
+ d:0 <=> d _ BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
+!!€ ä%^1VOWldd%^V2VV%^XYY2XY
+!!€ ääld000
+!!€ ä%^1VOWldd%^V2VV%^VOWRaise%^XYY2XY%>už
+!!€ aald0000%>už
+ [v:| j:] (0:ʹ) d _  BetweenStemAndConsGrade  [%^XYY2VY:] ;
+!!€ u%^1VOWv0dd%^PAL%^XYY2VY
+!!€ u0uʹd000
+!! juʹrdded+V+Ind+Prs+Sg1 __think__
+!!€ ju%^1VOWrdd%^V2VV%^VOWLower%^XYY2XY%>am
+!!€ joord0000%>am
+
+!! uʹvdded+V+Ind+Prs+4: 
+!!€ u%^1VOWv0dd%^PAL%^XYY2VY%>et
+!!€ u0uʹd000%>et
+
+
+! njeiddad > njeeid
+! 2012-06-12 v:u allows for uʹvdded
+!! - idd:id, +Imp+Sg2, +Ind+Prs+ConNeg double consonants following vowel and "i" at coda that become single consonants in gradation
+         d _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m]  PenBetweenStemAndConsGrade [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ; 
+
+
+
+
+
+"Even syllabic verbs I, cg for ʒ"
+!! __@RULENAME@__ - used with  pääʹʒʒelm+N+Sg+Ill: päʹʒlma
+ ʒ:0 <=>
+      u: (ʹ:|0:ʹ) v:u (0:ʹ) ʒ _  BetweenStemAndConsGrade %^XYY2VY: ;
+      [Vow - u] (i|u) (0:ʹ) ʒ _  BetweenStemAndConsGrade [%^XYY2XY:|%^CC2C:] ;
+!! sauʒʒ+N+Pl+Nom __sheep/lammas__
+!!€ sa%^1VOWuʒʒ%^V2VV%^XYY2XY
+!!€ saauʒ000
+
+        Vow: (%^1VOW:) (ʹ:|0:ʹ) ʒ _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m]  PenBetweenStemAndConsGrade  [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;
+
+
+"ǯ:0"
+!! __@RULENAME@__ - used in
+ ǯ:0 <=>
+      Vow: (%^1VOW:) (ʹ:|:ʹ) [ v: (0:ʹ)|Cns:] ǯ _  BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:| %^XYY2VY: ] ;
+!! kuʹvǯǯ+N+Sg+Gen
+!!€ ku%^1VOWv0ǯǯ%^PAL%^XYY2XY
+!!€ ku0uʹǯ000
+        Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:) ǯ _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndConsGrade  [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:|%^Pen: %^XYY2VY:] ;
+
+
+"č:0"
+!! __@RULENAME@__ - used in
+ č:0 <=>
+        Vow: (%^1VOW:) (ʹ:|0:ʹ) Cns: č _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndConsGrade  [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;
+
+       Vow: (%^1VOW:) [ (ʹ:|0:ʹ)  Cns: | [u|i] (ʹ:|0:ʹ) ] č: _ BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
+       Vow: (%^1VOW:)  (ʹ:|0:ʹ) [h:|j:] (ʹ:|0:ʹ) č:  _ BetweenStemAndConsGrade %^XYY2VY: ;
+       Vow: (%^1VOW:) [ (ʹ:|0:ʹ)  Cns: | [u|i] (ʹ:|0:ʹ) ] č: _ Vow: Cns:+ PenBetweenStemAndConsGrade [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;
+       Vow: (%^1VOW:)  (ʹ:|0:ʹ) [h:|j:] (ʹ:|0:ʹ) č:  _ Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^XYY2VY: ;
+
+"c:0"
+!! __@RULENAME@__ - used in
+ c:0 <=>
+        (ʹ:|0:ʹ) Cns: c _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndConsGrade  [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;
+       Vow: (%^1VOW:) [ (ʹ:|0:ʹ)  Cns: | [u|i] (ʹ:|0:ʹ) ] c: _ BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
+       Vow: (%^1VOW:)  (ʹ:|0:ʹ) [h:|j:] (ʹ:|0:ʹ) c:  _ BetweenStemAndConsGrade %^XYY2VY: ;
+       Vow: (%^1VOW:) [ (ʹ:|0:ʹ)  Cns: | [u|i] (ʹ:|0:ʹ) ] c: _ Vow: Cns:+ PenBetweenStemAndConsGrade [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;
+       Vow: (%^1VOW:)  (ʹ:|0:ʹ) [h:|j:] (ʹ:|0:ʹ) c:  _ Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^XYY2VY: ;
+
+"ž:0"
+!! __@RULENAME@__ - used in
+ ž:0 <=>
+      Vow: (%^1VOW:) (ʹ:|0:ʹ) Cns: ž _  BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
+         (ʹ:|0:ʹ) Cns: ž _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndConsGrade  [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;
+
+
+
+"z:0"
+!! __@RULENAME@__ - used in
+ z:0 <=>
+      Vow: (%^1VOW:) (ʹ:|0:ʹ) Cns: z _  BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
+        (ʹ:|0:ʹ) Cns: z _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndConsGrade  [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;
+      Vow: _ PenBetweenStemAndVowelLoss (%^PenVow2a:) %^RmCns: ;
+!!€ ǩeâsttez%^PenVow2a%^RmCns
+!!€ ǩeâstta000
+
+"Even syllabic verbs I, cg for đ" 
+!! __@RULENAME@__ - used with  ǩiđđ:ǩiiđ
+ đ:0 <=>
+ Vow: (%^1VOW:) (ʹ:|0:ʹ) đ: _    BetweenStemAndConsGrade %^CC2C: ;
+!!€ ǩi%^1VOWđđ%^V2VV%^CC2C
+!!€ ǩiiđ000
+     	 đ: _ Vow: Cns:  PenBetweenStemAndConsGrade [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;
+!!€ o%^1VOWđđâz%^Pen%^V2VV%^Pen%^CC2C%^DeVC
+!!€ oođ0âs00000
+
+"Even syllabic verbs I, cg for r" 
+!! __@RULENAME@__ - used with  võrr:võõr
+ r:0 <=>
+ Vow: (%^1VOW:) (i|u) (ʹ:|0:ʹ) (Cns:)  r: (ˈ:) _    BetweenStemAndConsGrade [%^CC2C:|%^CCC2C:|%^XYY2XY:] ;
+!!€ võ%^1VOWrr%^V2VV%^CC2C
+!!€ võõr000
+!!€ paarr%^CC2C
+!!€ paar00
+!!€ jä%^1VOWu0rr%^V2VV%^PAL%^CC2C
+!!€ jääuʹr0000
+ Vow: (%^1VOW:) (i|u) (ʹ:|0:ʹ) (Cns:) r: (ˈ:) _  Vow: Cns:  PenBetweenStemAndConsGrade [%^Pen: %^CC2C:|%^Pen: %^CCC2C:|%^Pen: %^XYY2XY:] ;
+
+
+"Even syllabic verbs I, cg for l"
+!! __@RULENAME@__ - used with  vuʹvll+N+Sg+Gen: vuuʹl
+ l:0 <=>
+ Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:) l: (ˈ:) _ (j)   BetweenStemAndConsGrade [%^CC2C:|%^CCC2C:|%^XYY2XY:] ;
+!! deriving 
+!!€ to%^1VOWll%^V2VV%^CC2C
+!!€ tool000
+!!€ stä%^1VOW0llj%^V2VV%^PAL%^CC2C
+!!€ stääʹl0j000
+   u: (ʹ:) v:u (0:ʹ) l: _  %^V2VV: ((%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:|%^PALNo:) [%^CC2C:|%^CCC2C:|%^XYY2XY:] ;
+!- used with  vuʹvll+N+Sg+Gen: vuuʹl
+!!€ vu%^1VOWv0ll%^V2VV%^PAL%^XYY2XY
+!!€ vu0uʹl0000
+
+!! deriving kueʹll+N+Sg+Gen: kueʹl
+!!€ kuâ0ll%^V2VV%^PALE%^PAL%^CC2C
+!!€ kueʹl00000
+
+"j:0 "
+!! __@RULENAME@__ - used in
+ j:0 <=>
+     j: _    BetweenStemAndConsGrade (%^J2I:) [%^CC2C:|%^XYY2XY:|%^XYY2VY:] ;
+!! ǩeʹrjj+N+Pl+Nom __book__
+!!€ ǩe%^1VOWʹrjj%^V2VV%^XYY2XY
+!!€ ǩeeʹrj000
+!! tuâjj+N+Sg+Acc __work__
+!!€ tuâjj%^J2I%^CC2C
+!!€ tuâi000
+    j: _ Vow: Cns:+ PenBetweenStemAndConsGrade [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:|%^Pen: %^XYY2VY:] ;
+!!€ po%^1VOWjjâz%^Pen%^V2VV%^Pen%^CC2C%^DeVC
+!!€ pooj0âs00000
+
+"Even syllabic verbs I, cg for g"
+!! __@RULENAME@__ - used in
+ g:0 <=>  Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:+) g: _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndConsGrade [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;
+!! cõõggâlm+N+Sg+Ill
+!!€ cõõggâlm%^Pen%^VV2V%^Pen%^CC2C%^RmVow%>a
+!!€ c0õg00lm00000%>a
+!!€ ǩeâlggal%^Pen%^XYY2XY
+!!€ ǩeâlǥ0al00
+
+          Vow: (%^1VOW:)  [i (0:ʹ)|u (0:ʹ) |(0:ʹ)  [ŋ|r|l|d:]] g: _    BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
+!! äiʹǧǧ+N+Sg+Gen: __time/aika__
+!!€ ä%^1VOWi0gg%^V2VV%^PAL%^XYY2XY
+!!€ ääiʹj0000
+
+"Even syllabic verbs I, cg for ǧ"
+!! __@RULENAME@__ - used with  vueʹlǧǧed+V+Ind+Prs+Sg1: vuâlǥam
+ ǧ:0 <=> Vow: (%^1VOW:) [ [ :ʹ| ʹ: ] Cns: | [u:|i:] [ :ʹ| ʹ: ] ] ǧ: _ Vow: Cns: PenBetweenStemAndConsGrade %^Pen: [%^CC2C:|%^XYY2XY:] ;
+!Not needed here
+
+!! GEMINATE TO WEAK QUALITY GEMINATE
+"Even syllabic nouns I, with extra lengthening of vowel V>VV and KK>ǤǤ"
+!! __@RULENAME@__  - used in
+!! used with  +N+Sg+Nom > +N+Sg+Gen for cases like
+!! lookki > looǥǥi.
+ k:ǥ <=>
+    Vow: (%^1VOW:)  k: _ (i:)  BetweenStemAndPALNo %^KK2GG: ;
+    Vow: (%^1VOW:)   _ [k: (i:) | %{XC%}:] BetweenStemAndPALNo [%^KK2GG: | %^K2GG:] ;
+
+!! čâustõk+N+Sg+Gen
+!!€ čâustõ%^1VOWk%{XC%}%^V2VV%^K2GG
+!!€ čâustõõǥǥ00
+       Vow: (%^1VOW:)   _ BetweenStemAndPALNo %^K2G: ;
+!! with allegro
+!! čâustõk+N+Sg+Ela+PxSg3
+!!€ čâustõk%^K2G%>stes
+!!€ čâustõǥ0%>stes
+
+    k: (ˈ:) _ (%^V2VV:) [%^KK2GG: | %^KKK2GG:] ;
+    Vow:Vow (%^1VOW:) _ (ˈ:) k: (%^V2VV:) [%^KK2GG: | %^KKK2GG:] ;
+!!€ jo%^1VOWkk%^V2VV%^KK2GG
+!!€ jooǥǥ00
+!! čuâǥǥas+N+Sg+Nom  __road__
+!!€ čuâkˈk%^KKK2GG%>as
+!!€ čuâǥ0ǥ0%>as
+
+  Vow:Vow (%^1VOW:)  _ k: BetweenStemAndPALNo %^KK2G: ;
+!! loǥškueʹtted __begin to read__
+!!€ lookk%^VV2V%^KK2G»škueʹtted
+!!€ l0oǥ000»škueʹtted
+
+  Vow:Vow (%^1VOW:)  k: (ˈ:) _ Vow: Cns:* PenBetweenStemAndPALNo %^Pen: [%^KKK2GG: | %^KK2GG: ] ;
+  Vow:Vow (%^1VOW:)  _ (ˈ:) k: Vow: Cns:* PenBetweenStemAndPALNo %^Pen: [%^KKK2GG: | %^KK2GG: ] ;
+!! čõõǥǥâs
+!!€ čõ%^1VOWkkâz%^Pen%^V2VV%^Pen%^KK2GG%^DeVC
+!!€ čõõǥǥâs00000
+
+   
+
+"Even syllabic nouns I, with extra lengthening of vowel V>VV and k:j"
+!! __@RULENAME@__ - used in
+!! used with
+!!  > .
+ k:j <=>   
+ Vow: (%^1VOW:) :ʹ k: _  BetweenStemAndPALAllo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: %^KK2GG: ;
+         Vow: (%^1VOW:) (:ˈ) :ʹ    _ [ k:|0:] BetweenStemAndPALAllo (%^PALE:|%^PALÄ:|%^PALẸ:) [%^PAL: %^KK2GG:| %^Allegro: %^PAL: %^KK2G:| %^PAL: %^K2GG: ] ;
+       Vow: (%^1VOW:) (:ˈ) :ʹ  _  BetweenStemAndPALNo  %^PAL: %^K2G: ;
+!! with allegro
+
+!!2015-10-05
+  Vow: (%^1VOW:) :ʹ k: (ˈ:)  _ BetweenStemAndPALAllo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: [ %^KK2GG:| %^KKK2GG:] ;
+  Vow: (%^1VOW:) :ʹ  _ (ˈ:) k: BetweenStemAndPALAllo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: [%^KK2GG: | %^KKK2GG:] ; 
+!!€ suä0kk%^PALẸ%^PAL%^KK2GG
+!!€ suẹʹjj000
+
+  Vow (%^1VOW:) :ʹ k:  (ˈ:)   _ Vow: Cns:* PenBetweenStemAndPALAllo (%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:) %^Pen: %^PAL: %^Pen: %^KKK2GG: ;
+   Vow: (%^1VOW:) :ʹ  _  (ˈ:)  k: Vow: Cns:* PenBetweenStemAndPALAllo (%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:) %^Pen: %^PAL: %^Pen: %^KKK2GG: ; 
+!!€ jeä0kˈkel%^Pen%^PALE%^Pen%^PAL%^Pen%^KKK2GG%^RmVow%>až
+!!€ jeeʹj0j0l0000000%>až
+
+
+"Even syllabic nouns I, with extra lengthening of vowel V>VV and ǩ:j"
+!! __@RULENAME@__ - used in
+!! used with
+!!  > .
+ ǩ:j <=>   
+ Vow: (%^1VOW:) (ʹ:|0:ʹ) ǩ: _    BetweenStemAndPALAllo ((%^PALÄ:|%^PALẸ:|%^PALE:) %^PAL:) %^KK2GG: ;
+         Vow: (%^1VOW:) (ʹ:|0:ʹ)    _ ǩ: BetweenStemAndPALAllo ((%^PALÄ:|%^PALẸ:|%^PALE:) %^PAL:) %^KK2GG: ;
+
+  Vow: (%^1VOW:) (ʹ:|0:ʹ) ǩ:   _ BetweenStemAndPALAllo ((%^PALÄ:|%^PALẸ:|%^PALE:) %^PAL:) %^KK2GG: ;
+  Vow: (%^1VOW:) (ʹ:|0:ʹ)  _  ǩ: BetweenStemAndPALAllo ((%^PALÄ:|%^PALẸ:|%^PALE:) %^PAL:) %^KK2GG: ; 
+
+  Vow: (%^1VOW:)   (ʹ:|0:ʹ) ǩ: (ˈ:) _ PALAllo ((%^PALÄ:|%^PALẸ:|%^PALE:) %^PAL:)  %^KKK2GG: ; 
+  Vow: (%^1VOW:)   (ʹ:|0:ʹ)          _ (ˈ:) ǩ: PALAllo ((%^PALÄ:|%^PALẸ:|%^PALE:) %^PAL:) %^KKK2GG: ; 
+
+
+
+"Even syllabic verbs I, Voicing š:ž" 
+!! __@RULENAME@__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
+ š:ž <=> 
+ Vow: (%^1VOW:) (ʹ:|0:ʹ) š: _    BetweenStemAndConsGrade %^KK2GG: ;
+         Vow: (%^1VOW:) (ʹ:|0:ʹ)    _ [š: |%{XC%}:] BetweenStemAndConsGrade [ %^KK2GG: | %^K2GG: ] ;
+!! lookkmõš+N+Sg+Gen 
+!!€ lookkmõ%^1VOWš%{XC%}%^V2VV%^K2GG
+!!€ lookkmõõžž00
+       Vow: (%^1VOW:) 0:*  _  BetweenStemAndConsGrade %^K2G: ;
+!! with allegro
+
+
+          Vow: (%^1VOW:)      (ʹ:|0:ʹ) š:  ˈ:  _   BetweenStemAndConsGrade %^KKK2GG: ;
+          Vow: (%^1VOW:)      (ʹ:|0:ʹ) _   ˈ:  š:  BetweenStemAndConsGrade %^KKK2GG: ;
+       Vow: (%^1VOW:)  _ š: (%^VV2V: ) %^KK2G: ;
+!!€ pååss%^VV2V%^KK2G»škuätt
+!!€ p0åz000»škuätt
+
+      Vow: (%^1VOW:)   _ PenBetweenStemAndStemFinalVoicing %^VC: ;
+!!mainstummuš+N+Sg+Gen:
+!!€ mainstummuš%^VC
+!!€ mainstummuž0
+
+"Even syllabic verbs I, Voicing c:ʒ"
+!! __@RULENAME@__ - cc:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
+ c:ʒ <=> Vow: (%^1VOW:) (ʹ:|0:ʹ) c: _    BetweenStemAndConsGrade %^KK2GG: ;
+         Vow: (%^1VOW:) (ʹ:|0:ʹ)    _ c: BetweenStemAndConsGrade %^KK2GG: ;
+!!€ čää0cc%^PAL%^KK2GG
+!!€ čääʹʒʒ00
+         Vow: (%^1VOW:) (ʹ:|0:ʹ) c: ˈ: _    BetweenStemAndConsGrade %^KKK2GG: ;
+         Vow: (%^1VOW:) (ʹ:|0:ʹ)    _ ˈ: c: BetweenStemAndConsGrade %^KKK2GG: ;
+!!€ puõcˈc%^VOWLower%^PALÄ%^KKK2GG
+!!€ puäʒ0ʒ000
+                                   _ %^VC: ; 
+       Vow: (%^1VOW:)  _ c: (%^VV2V: ) %^KK2G: ;
+!!€ pååss%^VV2V%^KK2G»škuätt
+!!€ p0åz000»škuätt
+
+
+"Even syllabic verbs I, Voicing č:j"
+!! __@RULENAME@__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
+ č:j <=> Vow: (%^1VOW:) (ʹ:|0:ʹ) č: _    BetweenStemAndConsGrade %^KK2GG: ;
+         Vow: (%^1VOW:) (ʹ:|0:ʹ)    _ č: BetweenStemAndConsGrade [ %^KK2GG: | %^CC2C: ] ;
+                                             _ %^VC: ;
+
+       Vow: (%^1VOW:)  _ č: (%^VV2V: ) %^KK2G: ;
+!!€ pååss%^VV2V%^KK2G»škuätt
+!!€ p0åz000»škuätt
+     Vow: (%^1VOW:) (ʹ:|0:ʹ) č: ˈ: _    BetweenStemAndConsGrade %^KKK2GG: ;
+     Vow: (%^1VOW:) (ʹ:|0:ʹ)    ˈ: _ č: BetweenStemAndConsGrade %^KKK2GG: ;
+
+"Even syllabic verbs I, Voicing after long vowel or diphthong s:z s:z" 
+!! __@RULENAME@__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
+ s:z <=> Vow: (%^1VOW:) (ʹ:|0:ʹ) s:  _  BetweenStemAndConsGrade  %^KK2GG: ; 
+         Vow: (%^1VOW:) (:ˈ) (ʹ:|0:ʹ) _   [s: |%{XC%}: ] BetweenStemAndConsGrade  [%^KK2GG: |%^K2GG: ] ; 
+!!€ mättʼtõ%^1VOWs%{XC%}%^V2VV%^K2GG
+!!€ mättʼtõõzz00
+       Vow: (%^1VOW:) (:ˈ) (ʹ:|0:ʹ)  _  BetweenStemAndConsGrade %^K2G: ;
+!! with allegro
+
+         Vow: (%^1VOW:)  (ʹ:|0:ʹ) s:  ˈ:  _  BetweenStemAndConsGrade %^KKK2GG: ; 
+         Vow: (%^1VOW:)  (ʹ:|0:ʹ)  _ ˈ:   s: BetweenStemAndConsGrade %^KKK2GG: ; 
+!! deriving cieʹǩǩes+N+Sg+Gen: ceäkˈkaz
+    [Cns:+ (%{XC%}:Cns)|Cns:+ (ˈ:|:ˈ) Cns:+] Vow: _ PenBetweenStemAndStemFinalVoicing (%^PenVow2a:) %^VC: ; 
+!! cieʹǩǩes+N+Sg+Gen
+!!€ ceäkˈkes%^PenVow2a
+!!€ ceäkˈkaz0
+       Vow: (%^1VOW:)  _ s: (%^VV2V: ) %^KK2G: ;
+!!€ pååss%^VV2V%^KK2G»škuätt
+!!€ p0åz000»škuätt
+
+   Vow (%^1VOW:) (ʹ:) _ %{XC%}: BetweenStemAndConsGrade %^K2GG: ;
+
+!! čårrõs+N+Sg+Gen
+!!€ čårrõ%^1VOWs%{XC%}%^V2VV%^K2GG
+!!€ čårrõõzz00
+
+
+"Devoicing z:s"
+!! __@RULENAME@__ - used in
+ z:s <=>  Cns: Vow: (%^1VOW:) _ PenBetweenStemAndStemFinalVoicing %^DeVC: ;
+!! aaunâs+N+Sg+Nom: __material/aine__
+!!€ a%^1VOWunnâz%^Pen%^V2VV%^Pen%^XYY2XY%^DeVC
+!!€ aaun0âs00000
+!! piiutâs+N+Sg+Nom __clothing/vaate__
+!!€ pi%^1VOWhttâz%^Pen%^V2VV%^Pen%^XYY2VY%^DeVC
+!!€ piiut0âs00000
+
+"Devoicing ž:š"
+!! __@RULENAME@__ - used in
+ ž:š <=> Cns: Vow: (%^1VOW:) _ PenBetweenStemAndStemFinalVoicing %^DeVC:;
+!!€ põ%^1VOWttâž%^Pen%^V2VV%^Pen%^CC2C%^DeVC
+!!€ põõđ0âš00000
+!!€ heäpˈpaž%^Pen%^CCC2C%^DeVC
+!!€ heäv00aš000
+
+
+
+"Even syllabic verbs I, second consonant loss t:0"
+!! __@RULENAME@__ - used in
+ t:0 <=> Vow: (%^1VOW:)  (i|u)   (ʹ:|0:ʹ) ((Cns: )[b|p|v|f|n|s|c|r|l|š|č|j|k]) t: _ BetweenStemAndConsGrade  [%^CC2C:|%^XYY2XY:] ;
+!! autt+N+Pl+Nom __car/auto__
+!!€ a%^1VOWutt%^V2VV%^CC2C
+!!€ aaut000
+         Vow: (%^1VOW:) (%{ʹ%}:) h: (ʹ:|0:ʹ)           t: _ BetweenStemAndConsGrade  [%^XYY2VY: | %^XYY2IY: ] ;
+
+ t _ Vow: (%^1VOW:) Cns:+ PenBetweenStemAndConsGrade [%^Pen: %^XYY2XY:|%^Pen: %^XYY2VY:] ;
+!!€ ko%^1VOWnttâr%^Pen%^V2VV%^Pen%^XYY2XY
+!!€ koont0âr0000
+!! piiutâs+N+Sg+Nom __clothing/vaate__
+!!€ pi%^1VOWhttâz%^Pen%^V2VV%^Pen%^XYY2VY%^DeVC
+!!€ piiut0âs00000
+
+
+"Even syllabic verbs I, third consonant loss" 
+!! __@RULENAME@__ - lgg:lǥ, Vow Ca Cx Cx:0, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants following consonant at coda that become single consonants in gradation
+ Cx:0 <=>
+       Vow: (%^1VOW:) [ (ʹ:|0:ʹ)  Cns: | [u|i] (ʹ:|0:ʹ) ] Cx: _ BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
+       Vow: (%^1VOW:)  (ʹ:|0:ʹ) [h:|j:] (ʹ:|0:ʹ) Cx:  _ BetweenStemAndConsGrade %^XYY2VY: ;
+       Vow: (%^1VOW:) [ (ʹ:|0:ʹ)  Cns: | [u|i] (ʹ:|0:ʹ) ] Cx: _ Vow: Cns:+ PenBetweenStemAndConsGrade [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;
+       Vow: (%^1VOW:)  (ʹ:|0:ʹ) [h:|j:] (ʹ:|0:ʹ) Cx:  _ Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^XYY2VY: ;
+       Vow: (%^1VOW:) Cx:  _ (%^VV2V: ) %^KK2G: ;
+                where Cx in (s š) ;
+!!€ sä%^1VOWhss%^V2VV%^XYY2VY%>am
+!!€ sääus000%>am
+
+
+!! uhss+N+Sg+Gen __door__
+!!€ uhss%^XYY2VY
+!!€ uus00
+!! šapšš+N+Sg+Gen __white fish/siika__
+!!€ ša%^1VOWpšš%^V2VV%^XYY2XY
+!!€ šaapš000
+
+
+
+
+
+
+"Consonant loss ŋ:0"
+!! __@RULENAME@__ - used in
+ ŋ:0 <=>
+ Vow: (%^1VOW:) (ʹ:|0:ʹ) ([Cns - ŋ]) ŋ: _    BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
+ Vow: (%^1VOW:) (ʹ:|0:ʹ) ([Cns - ŋ]) ŋ: _  Vow: Cns:*  PenBetweenStemAndConsGrade [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;
+
+
+
+"Even syllabic verbs I, t>đ" 
+!! __@RULENAME@__ - tt:đ
+!! {{{
+
+ t:đ  <=> Vow: (%^1VOW:) (:ˈ) (ʹ:|0:ʹ) _ t:0 (i:) BetweenStemAndConsGrade [%^CC2C:|%^CCC2C:] ;
+!! }}}
+!!€ ǩiõ0tt%^Allegro%^CC2C%>stan
+!!€ ǩiõˈđ000%>stan
+
+
+"Even syllabic nouns I, p>v" 
+!! __@RULENAME@__ - pp:v
+ p:v  <=> Vow: (%^1VOW:) (:ˈ) (ʹ:|0:ʹ) _ (ˈ:) p:0 BetweenStemAndConsGrade  [%^CC2C: | %^CCC2C: ] ;
+!!€ ǩiâpp%^CC2C
+!!€ ǩiâv00
+ Vow: (%^1VOW:) (:ˈ) (ʹ:|0:ʹ) _ (ˈ:) p:0 Vow: Cns:* PenBetweenStemAndConsGrade [%^Pen: %^CC2C:|%^Pen: %^CCC2C:] ;
+!!€ heäpˈpaž%^Pen%^CCC2C%^DeVC
+!!€ heäv00aš000
+
+"Consonant quality change ǥ:j"
+!! __@RULENAME@__ - used in
+ ǥ:j <=>
+  Vow: (%^1VOW:)  i (0:ʹ)  _ %^PAL: ;
+!!€ lääi0ǥ%^PAL
+!!€ lääiʹj0
+
+"Even syllabic verbs I, second consonant loss k:0"
+!! __@RULENAME@__ - used in
+ k:0 <=>   k:  _ BetweenStemAndConsGrade  [ %^CC2C: | %^XYY2XY: ] ;
+!! loǥškueʹtted __begin to read__
+!!€ lookk%^VV2V%^KK2G»škueʹtted
+!!€ l0oǥ000»škueʹtted
+!! mieʹlǩǩ+N+Sg+Acc: __milk/maito__
+!!€ meâ0lkk%^VOWRaise%^PALE%^PAL%^CC2C
+!!€ mieʹlǩ00000
+       Vow: (%^1VOW:) k:  _ (%^VV2V: ) %^KK2G: ;
+!!€ pååss%^VV2V%^KK2G»škuätt
+!!€ p0åz000»škuätt
+           k: (ˈ:)  _ Vow: Cns:+ PenBetweenStemAndConsGrade  %^Pen: [%^CC2C: | %^Pen: %^XYY2XY: | %^KKK2ZERO: | %^KK2ZERO: ] ;
+ Vow: (%^1VOW:) (0:) _ (ˈ:) k: Vow: Cns:+ PenBetweenStemAndConsGrade  %^Pen: [%^KKK2ZERO: | %^KK2ZERO:] ;
+!!€ jeä0kˈkel%^Pen%^PALE%^Pen%^PAL%^Pen%^KKK2ZERO
+!!€ jeeʹ000el000000
+!!€ nââʹer+N+Sg+Nom _sleep_
+!!€ nâ%^1VOW0kker%^Pen%^V2VV%^Pen%^PAL%^Pen%^KK2ZERO
+!!€ nââʹ00er%^Pen%^V2VV%^Pen%^PAL%^Pen%^KK2ZERO
+
+"Even syllabic verbs I, second consonant loss ǩ:0"
+!! __@RULENAME@__ - used in
+ ǩ:0 <=>
+
+    ǩ:  _ Vow: Cns:+ PenBetweenStemAndConsGrade  [%^Pen: %^CC2C:|%^Pen: %^XYY2XY:] ;
+!! eʹǩrded+V+Inf
+!!€ eeʹǩǩerd%^Pen%^VV2V%^Pen%^CC2C%^RmVow%>ed
+!!€ 0eʹǩ00rd00000%>ed
+
+"Even syllabic verbs I, second consonant loss ǥ:0"
+!! __@RULENAME@__ - used in
+ ǥ:0 <=>
+  Vow: (%^1VOW:)  (ʹ:|0:ʹ)  [i|u] (ʹ:|0:ʹ)  ǥ:  _ BetweenStemAndConsGrade  %^CC2C: ;
+
+    ǥ:  _ Vow: Cns:+ PenBetweenStemAndConsGrade  %^Pen: %^CC2C: ;
+!! påǥsted+V+Inf
+!!€ pååǥǥast%^Pen%^VV2V%^Pen%^CC2C%^RmVow%>ed
+!!€ p0åǥ00st00000%>ed
+
+
+"Even syllabic verbs I, lgg>lǥ" 
+!! __@RULENAME@__ - vueʹlǧǧed+V+Ind+Prs+Sg2 => vuâlǥak
+ g:ǥ  <=> Vow: (%^1VOW:) [i|u | (ʹ:0|%{ʹ%}:0) [l|r|d:] ]    _ g: BetweenStemAndConsGrade [%^CC2C:|%^XYY2XY:] ;
+ Vow: (%^1VOW:) (ʹ:0) (Cns:+)  _ g: Vow: Cns:+ PenBetweenStemAndConsGrade [%^Pen: %^XYY2XY:] ;
+!!€ ǩeâlggal%^Pen%^XYY2XY
+!!€ ǩeâlǥ0al00
+!!€ aaggâst%^Pen%^VV2V%^Pen%^CC2C%^RmVow%>ed
+!!€ 0ag00st00000%>ed
+
+
+"Odd syllabic nouns I, lǥ>lg"
+!! __@RULENAME@__ -
+ǥ:g <=>
+ Vow: (%^1VOW:) (ʹ:0)  l _ %{XC%}:  BetweenStemAndConsGrade %^XY2XYY:  ;
+
+ Vow: (%^1VOW:) (ʹ:0)  l _ %{XC%}: Vow: Cns:* PenBetweenStemAndConsGrade %^Pen: %^XY2XYY:  ;
+
+!Not needed here
+!! ǩeâlǥal+N+Sg+Nom:
+!!€ ǩeâlggal%^Pen%^XYY2XY
+!!€ ǩeâlǥ0al00
+
+"even syllabic verbs I, 'lgg>'lj" 
+!! __@RULENAME@__ - used in
+ g:j  <=> Vow: (%^1VOW:)  [ i :ʹ|:ʹ [l|r|d:]]  _ g: BetweenStemAndPALNo %^PAL: %^XYY2XY: ;
+!! vueʹlǧǧed+V+Ind+Prt+Pl1
+!!€ vuâ0lgg%^VOWRaise%^PAL%^CC2C%>im
+!!€ vuõʹlj0000%>im
+!!€ ä%^1VOWi0gg%^V2VV%^PAL%^XYY2XY
+!!€ ääiʹj0000
+   Vow: (%^1VOW:)  [ i :ʹ|:ʹ [l|r|d:]]  _ g: Vow: Cns:* PenBetweenStemAndPALNo %^Pen: %^PAL: %^Pen: %^XYY2XY: ;
+
+
+
+
+!! !!Rules for cleaning up and composing end result
+
+!! * Strengthening Consonant Cluster
+!! * V shortening and C lengthening 
+!! * %^C2CC is generally used in conjunction with a preceding %^VV2V
+!! * In verbs this will be observed in finite forms
+!! * In derivational morphology, e.g. -škuetted, this is not the case
+
+"Orthographic Consonant lengthening Weak to strong %{XC%}:Cx "
+!! __@RULENAME@__ - used in
+ %{XC%}:Cx <=>  Vow: (%^1VOW:) (ʹ:|0:ʹ) Cns:Cx _ BetweenStemAndConsGrade [%^C2CC:|%^K2GG:|%^XY2XYY:] ;
+        where Cx in (b c ʒ ǯ d đ ǥ g ǧ j k ǩ m ŋ p r s š t v z ž) ;
+!!€ čââʹlmtẹ%^1VOWm%{XC%}%^C2CC%>a
+!!€ čââʹlmtẹ0mm0%>a
+
+"Orthographic Consonant lengthening Weak to strong %{XC%}:Cx for n and l"
+!! __@RULENAME@__ - used in
+ %{XC%}:Cx <=>  Vow: (%^1VOW:) (ʹ:|0:ʹ) Cns:Cx _ (j) BetweenStemAndConsGrade [%^C2CC:|%^XY2XYY:] ;
+        where Cx in (l n) ;
+
+
+
+!Not needed here
+!!€ ma%^1VOWnn%^V2VV%^VOWLower%^CC2C
+!!€ mään0000
+
+!Not needed here
+!!€ puärˈr%^VOWLower%^CCC2C
+!!€ puär0000
+
+!Not needed here
+!! suâl+N+Sg+Nom __island__
+!!€ suõlˈl%^VOWLower%^CCC2C
+!!€ suâl0000
+
+
+
+
+"Orthographic Consonant lengthening in INDPRSSG3 and IMPSG2 0:m"
+!! __@RULENAME@__ - kåʹmrded+V+Imp+Sg2: kååʹmmerd 
+ 0:m <=> Vow:Vow (%^1VOW:) (ʹ:|0:ʹ)  m _ Vow: Cns: PenBetweenStemAndConsGrade %^Pen: %^C2CC:  ;
+
+!Not needed here
+!!€ čââʹlmtẹ%^1VOWm%{XC%}%^C2CC%>a
+!!€ čââʹlmtẹ0mm0%>a
+
+!Not needed here
+!! kååvas+N+Sg+Nom: __kota__
+!!€ kå%^1VOWvvaz%^Pen%^V2VV%^Pen%^CC2C%^DeVC
+!!€ kååv0as00000
+
+
+!Not needed here
+!! kõõnjâl+N+Sg+Nom __tear__
+!!€ kõ%^1VOWnnjâl%^Pen%^V2VV%^Pen%^CC2C
+!!€ kõõn0jâl0000
+
+
+
+!Not needed here
+!! suâl+N+Nom __island/saari__
+!!€ suõlˈl%^VOWLower%^CCC2C
+!!€ suâl0000
+
+
+!Not needed here
+!! ǩeâlǥal+N+Sg+Nom __kilkura__
+!!€ ǩeâlggal%^Pen%^XYY2XY
+!!€ ǩeâlǥ0al00
+
+
+!Not needed here
+!!€ dura%^1VOWk%{XC%}%^C2CC%>a
+!!€ dura0kk0%>a
+!! kaađneǩ+N+Sg+Ill:
+!!€ kaađne%^1VOWǩ%{XC%}%^PALNo%^C2CC%>a
+!!€ kaađne0kk00%>a
+
+!Not needed here
+!! čårrõs+N+Sg+Gen
+!!€ čårrõ%^1VOWs%{XC%}%^V2VV%^K2GG
+!!€ čårrõõzz00
+
+
+!Not needed here
+!! lookkmõš+N+Sg+Gen
+!!€ lookkmõ%^1VOWš%{XC%}%^V2VV%^K2GG
+!!€ lookkm0õžž00
+
+!Not needed here
+!! čâustõk+N+Sg+Gen
+!!€ čâustõ%^1VOWk%{XC%}%^V2VV%^K2GG
+!!€ čâustõõǥǥ00
+
+!Not needed here
+!! čâustõk+N+Sg+Gen
+!!€ čâustõ%^1VOW0k%{XC%}%^V2VV%^PAL%^K2GG
+!!€ čâustõõʹjj000
+
+!! !!CONSONANT QUALITY CHANGE
+
+
+!! !Pedagogical X3 length mark after diphthongs in vertical line ˈ 
+
+!2015-05-20 What is this?(tbw)
+
+
+!! !Adding X3 length mark
+"Consonant X3 lengthening after diphthong in vertical line ˈ character"
+!! __@RULENAME@__ - used in +N+Sg+Ill
+!! __jeäll:jiâlˈlu, __
+!! b c č ǯ d đ g ǧ k ǩ l m n p r s š t v also htˈt nˈnj
+ 0:ˈ <=> (ʹ:|0:ʹ)     b  _ b    [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+          (ʹ:|0:ʹ)     c  _ c    [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+          (ʹ:|0:ʹ)     č  _ č    [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+          (ʹ:|0:ʹ)     ʒ  _ ʒ    [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+          (ʹ:|0:ʹ)     ǯ  _ ǯ    [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+          (ʹ:|0:ʹ)     d  _ d    [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+          (ʹ:|0:ʹ)     đ  _ đ    [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+          (ʹ:|0:ʹ)     g: _ g:   [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+          (ʹ:|0:ʹ)     ǥ: _ ǥ:   [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+          (ʹ:|0:ʹ)     ǧ: _ ǧ:   [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+          (ʹ:|0:ʹ)     j _ j:   [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+          (ʹ:|0:ʹ)     k: _ k:   [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+          (ʹ:|0:ʹ)     ǩ: _ ǩ:   [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+          (ʹ:|0:ʹ)     l  _ :l (j)   [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+!!€ kuâl0l%^CC2CCC%>a
+!!€ kuâlˈl0%>a
+          (ʹ:|0:ʹ)     m  _ :m    [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+          (ʹ:|0:ʹ)     n  _ :n (j)[ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+          (ʹ:|0:ʹ)     ŋ  _ ŋ    [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+          (ʹ:|0:ʹ)     p  _ p    [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+          (ʹ:|0:ʹ)     r  _ :r    [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+          (ʹ:|0:ʹ)     s  _ s    [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+          (ʹ:|0:ʹ)     š  _ š    [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+          (ʹ:|0:ʹ) (h) t _ t     [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+          (ʹ:|0:ʹ)     v _ v     [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+
+
+
+
+
+
+
+!! !Removing X3 length mark
+"Removing Consonant X3 length mark after diphthong in vertical line ˈ LEFT ARROW"
+!! __@RULENAME@__ - deriving 
+!! b c č ǯ d đ g ǧ k ǩ l m n p r s š t v also htˈt nˈnj
+! BetweenStemAndConsGrade [%^C2CC:|%^XY2XYY:]
+!! {{{ 
+ ˈ:0 <=> (ʹ:|0:ʹ)     b _ b:     [BetweenStemAndConsGrade | Vow: Cns:*  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     c: _ c:     [BetweenStemAndConsGrade | Vow: Cns:*  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     č: _ č:     [BetweenStemAndConsGrade | Vow: Cns:*  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     ʒ _ ʒ:     [BetweenStemAndConsGrade | Vow: Cns:*  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     ǯ _ ǯ:     [BetweenStemAndConsGrade | Vow: Cns:*  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     d _ d:     [BetweenStemAndConsGrade | Vow: Cns:*  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     đ _ đ:     [BetweenStemAndConsGrade | Vow: Cns:*  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     g: _ g:     [BetweenStemAndConsGrade | Vow: Cns:*  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+!         (ʹ:|0:ʹ)     :ǧ _ [:ǧ|ǧ:0|g:0]     [BetweenStemAndConsGrade | Vow: Cns:*  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     k: _ k:     [BetweenStemAndConsGrade | Vow: Cns:+ PenBetweenStemAndConsGrade] [%^CCC2CC:|%^CCC2C:|%^Pen: %^KKK2ZERO: ] ;
+         (ʹ:|0:ʹ)     :ǩ _ [:ǩ|ǩ:0|k:0]     [BetweenStemAndConsGrade | Vow: Cns:*  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     l _ l:     [BetweenStemAndConsGrade | Vow: Cns:*  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     m _ m:     [BetweenStemAndConsGrade | Vow: Cns:*  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     n _ n: (j) [BetweenStemAndConsGrade | Vow: Cns:*  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     p: _ p:     [BetweenStemAndConsGrade | Vow: Cns:*  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     r _ r:     [BetweenStemAndConsGrade | Vow: Cns:*  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     s: _ s:     [BetweenStemAndConsGrade | Vow: Cns:*  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     š: _ š:     [BetweenStemAndConsGrade | Vow: Cns:*  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ) (h) t: _ t:     [BetweenStemAndConsGrade | Vow: Cns:*  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+         (ʹ:|0:ʹ)     v _ v:     [BetweenStemAndConsGrade | Vow: Cns:*  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
+!! }}}
+
+
+
+         
+
+!"Limitations for ZERO:x 1"
+! 0: => [: - 0:| .#.] _ [: - 0:| .#.] ;
