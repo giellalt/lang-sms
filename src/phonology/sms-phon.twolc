@@ -263,7 +263,7 @@ OnSetC = [[%{XC%}:Cns|Cns:Cns] (Cns:|%{XC%}:Cns) |#|%>] ;
 
 !! following morpheme or word boundary
 !! {{{
-RBound = [#|%>|»] ; !!= * @CODE@ 
+RBound = [#|%>|»|%-] ; !!= * @CODE@ 
 !! }}}
 
 
@@ -1100,11 +1100,10 @@ Rules
 !!€ dura%^1VOWk%^V2VV
 !!€ duraak0
 
-!Distinguishing mainstam and maainstam
-  OnSetC [a|A] _ (i|u)  (ʹ:|0:ʹ) Cns:+ Vow: Cns:+ (%{XC%}:Cns)  %^Pen: %^V2VV: ;
-!Not needed here
-!!€ maainâst
-!!€ maainâst
+!
+  [a|A] _ (i|u)  (ʹ:|0:ʹ) Cns:+ Vow: Cns:* (%{XC%}:Cns)  %^Pen: %^V2VV: ;
+!! taalkâs+N+Sg+Nom
+
 !2016-04   [ b | ʒ | (ǯ) ǯ | (g) g | i b | i n |(k) k |l|m |(n) n | n v|r g|r| r t | u d|u l| u n | u ŋ | u r] _ s t (%^Pen: %^V2VV:) %^IMPSG2: ;
 !2016-04   [ ʹ đ đ | ʹ ǩ |ʹ l|ʹ l ǩ |ʹ m m |ʹ p] _ s t %^IMPSG2: ;
    Cns: a _  i  (ʹ:|0:ʹ) Cns: Vow: Cns:+ (%{XC%}:Cns)  %^Pen: %^V2VV: ; 
@@ -1955,7 +1954,11 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
        Vow: (%^1VOW:) k:  _ (%^VV2V: ) %^KK2G: ;
 !!€ pååss%^VV2V%^KK2G»škuätt
 !!€ på0z000»škuätt
-           k: (ˈ:)  _ Vow: Cns:+ PenBetweenStemAndConsGrade  %^Pen: [%^CC2C: | %^Pen: %^XYY2XY: | %^KKK2ZERO: | %^KK2ZERO: ] ;
+           k: (ˈ:)  _ Vow: Cns:+ PenBetweenStemAndConsGrade  %^Pen: [%^CC2C: | %^XYY2XY: | %^KKK2ZERO: | %^KK2ZERO: ] ;
+!! taalkâs+N+Sg+Nom
+!!€ ta%^1VOWlkkâs%^Pen%^V2VV%^Pen%^XYY2XY
+!!€ taalk0âs0000
+
  Vow: (%^1VOW:) (0:) _ (ˈ:) k: Vow: Cns:+ PenBetweenStemAndConsGrade  %^Pen: [%^KKK2ZERO: | %^KK2ZERO:] ;
 !!€ jeä0kˈkel%^Pen%^PALE%^Pen%^PAL%^Pen%^KKK2ZERO
 !!€ jeeʹ000el000000
