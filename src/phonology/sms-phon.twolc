@@ -83,6 +83,7 @@ Alphabet
 ! e>i, ä>e
 ! %^PenVOWLower:0
  ! i>e, õ>â, â>ä, u>o, o>å
+ %^ShiftEA2IE:0	  !!= * @CODE@ bieʹss:beâss
  %^LowerI2E:0	 !!= * @CODE@ this is for diphthong in mieʹlǩǩ:meâlkka
 ! %^PenLowerI2E:0
  ! this is for diphthong in mieʹlǩǩ:meâlkka
@@ -619,12 +620,15 @@ Rules
   OnSetC _ e:0 (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  BetweenStemAndHeight %^VOWRaise: ;
   OnSetC _ (u:) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWRaise: ;
 ! diphthong raising with e:i at onset - deriving +Ind+Prt+Pl3 in reäkkad > riâkku, veârrad > viõrru
- OnSetC  _ [ä:ẹ|ä:e|â:õ|â:e ] (u) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWRaise: ;
+
+ OnSetC  _ [ä:ẹ|ä:e|â:õ|â:e ] (u) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  [%^VOWRaise:|%^ShiftEA2IE:] ;
 !!reâugg+N+Sg+Ill
 !!€ reâugg%^VOWRaise%>u
 !!€ riõugg0%>u
 !!€ jeä0gˈg%^VOWRaise%^PALẸ%^PAL%^CCC2CC
 !!€ jiẹʹǧ0ǧ0000
+!!€ beâ0ss%^ShiftEA2IE%^PAL%^CCC2CC
+!!€ bieʹss%^ShiftEA2IE%^PAL
 
 
 "Even syllabic verbs I, vowel raising ẹ:i"
@@ -764,7 +768,7 @@ Rules
 !! viǯǯâd+V+Ind+Prs+Pl3
 !!€ vi%^1VOW0ǯǯ%^VOWLower%^PAL%>e
 !!€ ve0ʹǯǯ00%>e
-!! viǯǯâd+V+Imprt+Sg2 ____
+!! viǯǯâd+V+Imprt+Sg2 __fetch/noutaa__
 !!€ vi%^1VOWǯǯ%^V2VV%^VOWLower%>as 
 !!€ veeǯǯ00%>as
 
@@ -810,7 +814,10 @@ Rules
 !! vuʹvll+N+Sg+Ill: voulla
 !!€ vuvll%^VOWLower%^PALNo%^XYY2VYY%>a
 !!€ voull000%>a
-  OnSetC _ [o|u:o] (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWLower: (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) (%^KK2GG:|%^CC2C:|%^XYY2XY:) RBound ;
+  OnSetC _ [u:o|u:0] (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] (%^VV2V:)  %^VOWLower: (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) (%^KK2GG:|%^CC2C:|%^XYY2XY:) RBound ;
+!! kuullâd+V+Ind+Prs+Pl3 __hear/kuulla__
+!!€ kuu0ll%^VV2V%^VOWLower%^PAL%^CC2C%>e
+!!€ ko0ʹl00000%>e
         OnSetC u: _   (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|r d d:]  %^VOWLower: (%^VOWFront:|%^VOWBack:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) (%^KK2GG:|%^CC2C:|%^XYY2XY:) RBound ;
 !! suukkâd+V+Imprt+Sg3: __row/soutaa__
 !!€ suukk%^VOWLower%^KK2GG%>as
@@ -1261,7 +1268,7 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
 !! tieʹtted+V+Imprt+Sg2: __know/tietää__
 !!€ teâ0tt%^VOWRaise%^PALE%^PAL%^CC2C
 !!€ tieʹđ00000
-  e:  _ (i|u) :ʹ [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+]  [%^PALE: | Vow: Cns:* %^Pen: %^PALE: ]  ;
+  e:  _ (i|u) :ʹ [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+]  [%^PALE: |%^ShiftEA2IE:| Vow: Cns:* %^Pen: [%^PALE:|%^ShiftEA2IE:] ]  ;
 !!€ ǩeâ0sttez%^Pen%^PALE%^Pen%^PAL%^Pen%^XYY2XY%^DeVC
 !!€ ǩeeʹst0es0000000
 
