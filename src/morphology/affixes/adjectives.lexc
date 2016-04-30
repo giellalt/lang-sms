@@ -5,6 +5,10 @@
 LEXICON A_
 +A+WORK: # ;
 
+LEXICON A_PSS-PRFPRC
+! These might simply be left out of the fst
++V+Pss+PrfPrc: # ;
+
 LEXICON A-ATTR_
 +A+Attr: # ;
 +A+Der/vuõtt:»vuõtt N_MUORR ; 
@@ -89,14 +93,15 @@ LEXICON A_PLAAN !!= * @CODE@ plaan:plaan
 
 
 !! CLASS 1 LOW VOWEL, NO PALATALIZATION NOMINALS
+LEXICON A_PESS
++A+Attr: FINAL1 ;
++A: NMN_PESS ;
 
 LEXICON A_VAEAEZHZH
 ! Gradation: None
 ! 1.115
 !! ** Yaml: __A-vaeaezhzh__
 +A+Attr: FINAL1 ;
-+A+Sg+Nom: FINAL1 ;
-+A+Pl+Nom: FINAL1 ;
 : A-ATTR_as ;
 !+A+Der/MWN: N_VAEAEZHZH ;
 +A: NMN_VAEAEZHZH ;
@@ -111,8 +116,6 @@ LEXICON A_NUQBB  !!= * @CODE@ nuʹbb:nubb
 ! 1.115
 !! ** Yaml: __A-nubb__
 :%^V2VV%^PAL   A-ATTR_es ;
-+A+Sg+Nom:%^PAL FINAL1 ;
-+A+Pl+Nom:%^V2VV%^PAL FINAL1 ;
 !+A+Der/MWN: N_NUQBB ;
 +A: NMN_NUQBB ;
 
