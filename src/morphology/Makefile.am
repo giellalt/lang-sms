@@ -95,6 +95,7 @@ GENERATED_LEXC_SRCS=\
 			 $(srcdir)/stems/N_Prop_Toponyms_sms2x.lexc     \
 			 $(srcdir)/stems/Num_sms2x.lexc     \
 			 $(srcdir)/stems/Pcle_sms2x.lexc     \
+			 $(srcdir)/stems/Prefix_sms2x.lexc     \
 			 $(srcdir)/stems/Pron_sms2x.lexc     \
 			 $(srcdir)/stems/V_sms2x.lexc     
 
@@ -117,6 +118,7 @@ GT_XML_SRCS=\
 			 stems/N_Prop_Toponyms_sms2x.xml     \
 			 stems/Num_sms2x.xml     \
 			 stems/Pcle_sms2x.xml     \
+			 stems/Prefix_sms2x.xml     \
 			 stems/Pron_sms2x.xml     \
 			 stems/V_sms2x.xml     
 
