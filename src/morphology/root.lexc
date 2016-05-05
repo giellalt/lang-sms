@@ -502,6 +502,9 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Cmp 
 +CmpNP/First
 +CmpNP/Pref
++Cmp/SplitR	!!= * __@CODE@__ This to take care of Oahpo- ja dutkandept - want this in speller Remainder is found to the right
++Cmp/SplitL	!!= * __@CODE@__ Remainder is found to the left
+
 +Allegro	!!= * __@CODE@__ never last element of compound words
 
 !! !!Flag diacritics
@@ -561,6 +564,7 @@ LEXICON Root 	  !!= * @CODE@
  Det_sms2x ;	      !!= * @CODE@ determiners
  Interj_sms2x ;	      !!= * @CODE@ This generates from merged materials
  N_sms2x ;	      !!= * @CODE@ This generates from merged materials
++Cmp/SplitL+Use/SpellNoSugg#:-# N_sms2x ;   !!= * @CODE@ This allows split compound nouns
  N_Prop_sms2x ;	      !!= * @CODE@ This generates from merged materials
  N_Prop_Toponyms_sms2x ; !!= * @CODE@ Toponymy
  Num_sms2x ;	      !!= * @CODE@ This generates from merged materials

@@ -42,15 +42,15 @@ LEXICON A-ATTR_es
 LEXICON A_PAPP !!= * @CODE@ papp:papp
 !! 
 :%^V2VV A-ATTR_ys ;
-+A+Sg+Nom: FINAL1 ;
-+A+Pl+Nom:%^V2VV FINAL1 ; 
++A+Sg+Nom: ENDLEX ;
++A+Pl+Nom:%^V2VV ENDLEX ; 
 !+A+Der/MWN:  N_PAPP ;
 +A:  NMN_PAPP ;
 
 LEXICON A_TOLL
 :%^V2VV%^CC2C A-ATTR_ys ;
-+A+Sg+Nom: FINAL1 ;
-+A+Pl+Nom:%^V2VV%^CC2C FINAL1 ; !!= * @CODE@ Check this 2015-02-22
++A+Sg+Nom: ENDLEX ;
++A+Pl+Nom:%^V2VV%^CC2C ENDLEX ; !!= * @CODE@ Check this 2015-02-22
 !+A+Der/MWN: N_TOLL ;
 +A: NMN_TOLL ;
 
@@ -99,14 +99,14 @@ LEXICON A_PLAAN !!= * @CODE@ plaan:plaan
 
 !! CLASS 1 LOW VOWEL, NO PALATALIZATION NOMINALS
 LEXICON A_PESS
-+A+Attr: FINAL1 ;
++A+Attr: ENDLEX ;
 +A: NMN_PESS ;
 
 LEXICON A_VAEAEZHZH
 ! Gradation: None
 ! 1.115
 !! ** Yaml: __A-vaeaezhzh__
-+A+Attr: FINAL1 ;
++A+Attr: ENDLEX ;
 : A-ATTR_as ;
 !+A+Der/MWN: N_VAEAEZHZH ;
 +A: NMN_VAEAEZHZH ;
@@ -199,8 +199,8 @@ LEXICON A_PEIQVV !!= * @CODE@ peiʹvv:pẹivv
 LEXICON A_SUEAQKHKH !!= * @CODE@ sueʹǩǩ:suäkk
 !! cuẹʹǩǩ
 :%^PALẸ%^PAL%^KK2GG   A-ATTR_es ;
-+A+Sg+Nom:%^PALẸ%^PAL FINAL1 ;
-+A+Pl+Nom:%^PALẸ%^PAL%^KK2GG FINAL1 ;
++A+Sg+Nom:%^PALẸ%^PAL ENDLEX ;
++A+Pl+Nom:%^PALẸ%^PAL%^KK2GG ENDLEX ;
 !+A+Der/MWN: N_SUEAQKHKH ;
 +A: NMN_SUEAQKHKH ;
 
@@ -254,56 +254,56 @@ LEXICON A_SAJOS
 +A: NMN_OBL-SAJOS ;
 
 LEXICON A_KOALVAK
-+A+Attr:%^RmVow%>õs FINAL1 ;
++A+Attr:%^RmVow%>õs ENDLEX ;
 +A:%^RmVow ADJ-DER/COMP_kwlmmsab ;
 +A:%^RmVow ADJ-DER/SUPERL_ummus ;
 +A: NMN_KOALVAK ;
 
 LEXICON A_AACCIKH
-+A+Attr:%^RmVow%^PALNo%>õs FINAL1 ;
++A+Attr:%^RmVow%^PALNo%>õs ENDLEX ;
 +A:%^RmVow ADJ-DER/COMP_kwlmmsab ;
 +A:%^RmVow ADJ-DER/SUPERL_ummus ;
 +A: NMN_AACCIKH ;
 
 LEXICON A_KUALAZH
-+A+Sg+Nom:až FINAL1 ;
-+A+Pl+Nom:až FINAL1 ; !!= * @CODE@ Check this 2015-02-22
++A+Sg+Nom:až ENDLEX ;
++A+Pl+Nom:až ENDLEX ; !!= * @CODE@ Check this 2015-02-22
 !+A+Der/MWN: N_KUALAZH ;
 +A: NMN_KUALAZH ;
 
 LEXICON A_VOONYS !!= * @CODE@ võõnâs:võnn
-+A+Sg+Nom:%^V2VV%^CC2Câs FINAL1 ;
-+A+Pl+Nom: FINAL1 ; !!= * @CODE@ Check this 2015-02-22
++A+Sg+Nom:%^V2VV%^CC2Câs ENDLEX ;
++A+Pl+Nom: ENDLEX ; !!= * @CODE@ Check this 2015-02-22
 +A:s ADJ-DER/COMP_kwlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
 !+A+Der/MWN: N_VOONYS ;
 +A:âs NMN_VOONYS ;
 
 LEXICON A_OODHYS !!= * @CODE@ oođâs:ođđ
-+A+Attr: FINAL1 ;
++A+Attr: ENDLEX ;
 +A:s ADJ-DER/COMP_kwlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
 !+A+Der/MWN:âz NMN_VOONYS ;
 +A:âs NMN_VOONYS ;
 
 LEXICON A_KOODDYS !!= * @CODE@ kõõddâs:kõdd
-+A+Attr: FINAL1 ;
-+A+Sg+Nom:%^Pen%^V2VV%>âs FINAL1 ;
-+A+Pl+Nom:%>âz FINAL1 ; !!= * @CODE@ Check this 2015-02-22
++A+Attr: ENDLEX ;
++A+Sg+Nom:%^Pen%^V2VV%>âs ENDLEX ;
++A+Pl+Nom:%>âz ENDLEX ; !!= * @CODE@ Check this 2015-02-22
 +A:s ADJ-DER/COMP_kwlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
 !+A+Der/MWN:âz N_VOONYS ;
 +A:âs NMN_KOODDYS ;
 
 LEXICON A_MOOCHCHYS !!= * @CODE@ mooččâs:močč
-+A+Attr: FINAL1 ;
-+A+Sg+Nom:%>âs FINAL1 ;
++A+Attr: ENDLEX ;
++A+Sg+Nom:%>âs ENDLEX ;
 +A: ADJ-DER/COMP_aeaeb ;
 +A: ADJ-DER/SUPERL_ummus ;
 +A:âs NMN_KOODDYS ;
 
 LEXICON A_JOOSKYS !!= * @CODE@ jõõskâs:jõskk
-+A+Attr: FINAL1 ;
++A+Attr: ENDLEX ;
 +A:s ADJ-DER/COMP_kwlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
 !+A+Der/MWN:âs NMN_TAALKYS ;
@@ -311,13 +311,13 @@ LEXICON A_JOOSKYS !!= * @CODE@ jõõskâs:jõskk
 
 
 LEXICON A_PIIUTYS !!= * @CODE@ piiutâs:pihtt
-+A+Attr: FINAL1 ;
++A+Attr: ENDLEX ;
 +A:s ADJ-DER/COMP_kwlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
 +A:âs NMN_PIIUTYS ;
 
 LEXICON A_FIINYS !!= * @CODE@ fiinâs:fijnn
-+A+Attr:%^XYY2VY FINAL1 ;	! fiin
++A+Attr:%^XYY2VY ENDLEX ;	! fiin
 +A:s ADJ-DER/COMP_kwlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
 !+A+Der/MWN:âz NMN_FIINYS ;	! fijnnâz
@@ -325,14 +325,14 @@ LEXICON A_FIINYS !!= * @CODE@ fiinâs:fijnn
 
 
 LEXICON A_RUODDYS !!= * @CODE@ ruõddâs:ruõdˈd
-+A+Attr: FINAL1 ;
++A+Attr: ENDLEX ;
 +A:s ADJ-DER/COMP_kwlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
 !+A+Der/MWN:âz N_RUODDYS ;
 +A:âs NMN_RUODDYS ;
 
 LEXICON A_TUOVYS !!= * @CODE@ tuõvâs:tuõvv
-+A+Attr:sõs FINAL1 ;
++A+Attr:sõs ENDLEX ;
 +A:s ADJ-DER/COMP_kwlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
 !+A+Der/MWN:âz N_TUOVYS ;
@@ -340,7 +340,7 @@ LEXICON A_TUOVYS !!= * @CODE@ tuõvâs:tuõvv
 
 
 LEXICON A_VUOIVYS !!= * @CODE@ vuõivâs:vuõivv
-+A+Attr: FINAL1 ;
++A+Attr: ENDLEX ;
 +A:s ADJ-DER/COMP_kwlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
 !+A+Der/MWN:âz N_VUOIVYS ;
@@ -348,26 +348,26 @@ LEXICON A_VUOIVYS !!= * @CODE@ vuõivâs:vuõivv
 
 
 LEXICON A_KOAOAVAS !!= * @CODE@ kååvas:kåvv
-+A+Attr: FINAL1 ;
++A+Attr: ENDLEX ;
 +A:s ADJ-DER/COMP_kwlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
 +A:as NMN_KOAOAVAS ;
 
 LEXICON A_KOAOADDAS !!= * @CODE@ kååddas:kåådd
-+A+Attr: FINAL1 ;
++A+Attr: ENDLEX ;
 +A:s ADJ-DER/COMP_kwlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
 +A:as NMN_KOAOADDAS ;
 
 LEXICON A_TOBDDSALLASH !!= * @CODE@ tobddsallaš:tobddsallaš
-+A+Attr: FINAL1 ;
++A+Attr: ENDLEX ;
 +A:%^RmVow ADJ-DER/COMP_kwlmmsab ;
 +A:%^RmVow ADJ-DER/SUPERL_ummus ;
 +A: NMN_MAINSTUMMUSH ;
 
 
 LEXICON A_JAELLASH !!= * @CODE@ jällaš:jällaš
-+A+Attr:%^RmVow%>õs FINAL1 ;
++A+Attr:%^RmVow%>õs ENDLEX ;
 +A:%^RmVow ADJ-DER/COMP_kwlmmsab ;
 +A:%^RmVow ADJ-DER/SUPERL_ummus ;
 !+A+Der/MWN: NMN_MAINSTUMMUSH ;
@@ -375,21 +375,21 @@ LEXICON A_JAELLASH !!= * @CODE@ jällaš:jällaš
 
 
 LEXICON A_VAALMYSH !!= * @CODE@ vaalmâš:valmmâš
-+A+Attr:%^RmVow%>õs FINAL1 ;
++A+Attr:%^RmVow%>õs ENDLEX ;
 +A:%^RmVow ADJ-DER/COMP_kwlmmsab ;
 +A:%^RmVow ADJ-DER/SUPERL_ummus ;
 +A: NMN_TAALKYS ;
 
 
 LEXICON A_VEEIDAS !!= * @CODE@ veeidas:veidd
-+A+Attr:sõs FINAL1 ;
++A+Attr:sõs ENDLEX ;
 +A:s ADJ-DER/COMP_kwlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
 +A:as NMN_PAEAELKAS ;
 
 
 LEXICON A_AANAR !!= * @CODE@ späʹsseb:späʹsseb
-+A+Attr:%^RmVow%>õs FINAL1 ;
++A+Attr:%^RmVow%>õs ENDLEX ;
 +A:%^RmVow ADJ-DER/COMP_kwlmmsab ;
 +A:%^RmVow ADJ-DER/SUPERL_ummus ;
 +A: NMN_AANAR ;
@@ -397,28 +397,28 @@ LEXICON A_AANAR !!= * @CODE@ späʹsseb:späʹsseb
 
 
 LEXICON A_KAAQMES  !!= * @CODE@ kääʹmes:kämm
-+A+Attr:%^V2VV%^PAL FINAL1 ;
++A+Attr:%^V2VV%^PAL ENDLEX ;
 +A:s ADJ-DER/COMP_kwlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
 +A:es NMN_OAQVES ; !!= * @CODE@   kääʹmes:kämmez
 +A+Der/vuõtt:%^PAL%^V2VV%>es»vuõtt N_MUORR ; 
 
 LEXICON A_KAAQLLES  !!= * @CODE@ kääʹlles:kä%^1VOWll
-+A+Attr:%^V2VV%^PAL FINAL1 ;
++A+Attr:%^V2VV%^PAL ENDLEX ;
 +A:s ADJ-DER/COMP_kwlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
 +A:es NMN_KAAQLLES ; !!= * @CODE@   kääʹmes:kämmez
 +A+Der/vuõtt:%^PAL%^V2VV%>es»vuõtt N_MUORR ; 
 
 LEXICON A_KOAQSHKHES !!= * @CODE@ kååʹšǩes:kåškk
-+A+Attr:%^PAL FINAL1 ;
++A+Attr:%^PAL ENDLEX ;
 +A:s ADJ-DER/COMP_kwlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
 +A:es NMN_KAAQRBES ;
 +A+Der/vuõtt:%^PAL%^XYY2XY%>es»vuõtt N_MUORR ; 
 
 LEXICON A_KHEEQLES  !!= * @CODE@ ǩeeʹles:ǩeâlˈl
-+A+Attr:%^Pen%PALE%^Pen%^PAL%^Pen%^CCC2C%>es FINAL1 ; !CHECKME
++A+Attr:%^Pen%PALE%^Pen%^PAL%^Pen%^CCC2C%>es ENDLEX ; !CHECKME
 +A:s ADJ-DER/COMP_kwlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
 +A:es NMN_KHEEQLES ; !!= * @CODE@	ǩeeʹles:ǩeâlˈles
@@ -426,21 +426,21 @@ LEXICON A_KHEEQLES  !!= * @CODE@ ǩeeʹles:ǩeâlˈl
 
 
 LEXICON A_PUAQRES  !!= * @CODE@ puäʹres:puärˈr
-+A+Attr:%^PAL FINAL1 ;
++A+Attr:%^PAL ENDLEX ;
 +A:s ADJ-DER/COMP_kwlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
 +A:es NMN_PUAQRES ; !!= * @CODE@   puäʹres:puärˈres
 +A+Der/vuõtt:%^PAL%^CCC2C%>es»vuõtt N_MUORR ; 
 
 LEXICON A_CHUEQDHES  !!= * @CODE@ čueʹđes:čuâtˈt
-+A+Attr:%^PAL FINAL1 ;
++A+Attr:%^PAL ENDLEX ;
 +A:s ADJ-DER/COMP_kwlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
 +A:es NMN_CHUEQDHES ; !!= * @CODE@   puäʹres:puärˈrez
 +A+Der/vuõtt:%^PALE%^PAL%^CCC2C%>es»vuõtt N_MUORR ; 
 
 LEXICON A_CHUEAQCKHES  !!= * @CODE@ čueʹcǩes:čuäckkez
-+A+Attr:%^PALẸ%^PAL FINAL1 ; !CHECKME
++A+Attr:%^PALẸ%^PAL ENDLEX ; !CHECKME
 +A:s ADJ-DER/COMP_kwlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
 +A:es NMN_CHUEAQCKHES ; !!= * @CODE@  čueʹcǩes:čuäckkez
@@ -448,8 +448,8 @@ LEXICON A_CHUEAQCKHES  !!= * @CODE@ čueʹcǩes:čuäckkez
 
 
 LEXICON A_PRSPRC-EEI !!= * @CODE@ tuejjeei:tuejjee
-+A+Attr:jes FINAL1 ;
-+A+Attr:jas FINAL1 ; !!= * @CODE@ c.f. sjm faʹlsǩeejas
++A+Attr:jes ENDLEX ;
++A+Attr:jas ENDLEX ; !!= * @CODE@ c.f. sjm faʹlsǩeejas
 +A: NMN_PRSPRC-EEI ;
 +A:j ADJ-DER/COMP_kwlmmsab ;
 +A:j ADJ-DER/SUPERL_ummus ;
@@ -544,8 +544,8 @@ LEXICON A_VUOIQNNI !!= * @CODE@ vuõiʹnni:vuõiʹnni
 +A:%^I2J ADJ-DER/SUPERL_ummus ;
 
 LEXICON A_JUURD !!= * @CODE@ juurd:jurdd
-+A+Sg+Nom:%^V2VV%^XYY2XY FINAL1 ;
-+A+Pl+Nom: FINAL1 ;
++A+Sg+Nom:%^V2VV%^XYY2XY ENDLEX ;
++A+Pl+Nom: ENDLEX ;
 +A: NMN_JUURD ;
 
 
@@ -556,14 +556,14 @@ LEXICON A_JUURD !!= * @CODE@ juurd:jurdd
 !!! !!2.3.2.2 LACKS Gradation
 !!! !!2.3.2.2.1 Second syllable vowel loss (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Gen, Pl.Acc, Pl.Ill, Pl.Loc, Pl.Com, Pl.Abe)
 !!! ** Yaml: __A-sloohman__
-!+A+Sg+Nom: FINAL1 ;
-!+A+Pl+Nom: FINAL1 ;
+!+A+Sg+Nom: ENDLEX ;
+!+A+Pl+Nom: ENDLEX ;
 !+A: NMN_AANAR ;
 
 LEXICON A_RADIO 
 !! check this 2015-11-10
-+A+Sg+Nom: FINAL1 ;
-+A+Pl+Nom: FINAL1 ;
++A+Sg+Nom: ENDLEX ;
++A+Pl+Nom: ENDLEX ;
 +A: NMN_RADIO ;
 
 LEXICON A_NALLSHEM
@@ -575,8 +575,8 @@ LEXICON A_NALLSHEM
 !!NumContLex="650"
 !! ** Yaml: __A-chaalmtem__
 +A: AdjAttr-es ;
-+A+Sg+Nom: FINAL1 ;
-+A+Pl+Nom:%^V2VV%^PAL FINAL1 ;
++A+Sg+Nom: ENDLEX ;
++A+Pl+Nom:%^V2VV%^PAL ENDLEX ;
 +A: NMN_NALLSHEM ;
 
 !! CLASS 11 ADJECTIVES

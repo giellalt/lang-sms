@@ -438,6 +438,9 @@ The Usage extents are marked using following tags:
  * __ +Use/NG          __ not-generate, for ped generation isme-ped.fst
 
 Compounding
+ * __+Cmp/SplitR	__ This to take care of Oahpo- ja dutkandept - want this in speller Remainder is found to the right
+ * __+Cmp/SplitL	__ Remainder is found to the left
+
  * __+Allegro	__ never last element of compound words
 
 !!Flag diacritics
@@ -497,6 +500,7 @@ This generates from merged materials
  *  Det_sms2x ;	       determiners
  *  Interj_sms2x ;	       This generates from merged materials
  *  N_sms2x ;	       This generates from merged materials
+ * +Cmp/SplitL+Use/SpellNoSugg#:-# N_sms2x ;    This allows split compound nouns
  *  N_Prop_sms2x ;	       This generates from merged materials
  *  N_Prop_Toponyms_sms2x ;  Toponymy
  *  Num_sms2x ;	       This generates from merged materials
