@@ -583,12 +583,14 @@ LEXICON A_NALLSHEM
 LEXICON A_SHIYLGGYD !!= * @CODE@ šiâlggâd:šiâlgg
 +A:%^VOWRaise%^PALE%^PAL AdjAttr-es ;
 +A: NMN_VISKKYD ;
++A:âd A2N-VUOTT ;
 +A: ADJ-DER/COMP_aeaeb ;
 +A: ADJ-DER/SUPERL_ummus ;
 
 LEXICON A_VISKKYD !!= * @CODE@ viskkâd:viskk
 +A:%^PAL AdjAttr-es ;
 +A: NMN_VISKKYD ;
++A:âd A2N-VUOTT ;
 +A: ADJ-DER/COMP_aeaeb ;
 +A: ADJ-DER/SUPERL_ummus ;
 
@@ -596,6 +598,7 @@ LEXICON A_VISKKYD !!= * @CODE@ viskkâd:viskk
 LEXICON A_MOASHSHAD !!= * @CODE@ måššad:måšš
 +A: AdjAttr-es ;
 +A: NMN_MOASHSHAD ;
++A:ad A2N-VUOTT ;
 +A: ADJ-DER/COMP_aeaeb ;
 +A: ADJ-DER/SUPERL_ummus ;
 
@@ -603,6 +606,7 @@ LEXICON A_MOASHSHAD !!= * @CODE@ måššad:måšš
 LEXICON A_AQKHKHED !!= * @CODE@ âʹǩǩed:âʹǩǩ
 +A: AdjAttr-es ;
 +A: NMN_AQKHKHED ;
++A:ed A2N-VUOTT ;
 +A: ADJ-DER/COMP_aeaeb ;
 +A: ADJ-DER/SUPERL_ummus ;
 
@@ -614,7 +618,7 @@ LEXICON A20
 
 LEXICON A_MEERSAZH
 !! säʹmmlaž:säʹmml
-+A+Attr:až K ;
++A:až AdjAttr-ZERO ;
 +A: ADJ-DER/COMP_kwlmmsab ;
 +A: ADJ-DER/SUPERL_ummus ;
 +A+Der/MWN:  N_MEERSAZH ;
@@ -636,11 +640,16 @@ LEXICON DenominalAdjsCShort
 
 
 LEXICON AdjAttr-ZERO
-!+Attr:%^ # ;
-+Attr: # ;
++Attr: ENDLEX ;
++Attr: A2N-VUOTT ;
 
 LEXICON AdjAttr-es
-+Attr:%>es # ; 
++Attr:%>es ENDLEX ; 
++Attr:%>es A2N-VUOTT ;
+
+LEXICON A2N-VUOTT
++Der/vuõtt:»vuõtt N_MUORR ;
+
 
 LEXICON AdjDerComp
 +Comp+Attr:»ab # ; 
