@@ -551,11 +551,30 @@ Rules
 "ZERO to hyphen minus 0:- in this rule"
 !! __@RULENAME@__ - used in Kääzzkõsraajõstuâjj-joouk
  0:%- <=>
-        Cx  _ #  Cx ;
-  where Cx in (b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž) ;
+        [k|ǩ] _ # [k|ǩ] ;
+        [g|ǧ|ǥ] _ # [g|ǧ|ǥ] ;
+        [c|č] _ # [c|č] ;
+        [s|š] _ # [s|š] ;
+        [z|ž] _ # [z|ž] ;
+        [d|đ] _ # [d|đ] ;
+        [o|õ] _ # [o|õ] ;
+        [a|å|ä|â] _ # [a|å|ä|â] ;
+	[v|w] _ # [v|w] ;
+	b _ # b ;
+	f _ # f ;
+	h _ # h ;
+	j _ # j ;
+	l _ # l ;
+	m _ # m ;
+	n _ # n ;
+	p _ # p ;
+	r _ # r ;
+	t _ # t ;
+
+!        Cx  _ #  Cx ;
+!  where Cx in (b f h j l m n p q r t v w x ʒ ǯ ŋ) ;
 !!€ kääzzkõsraajõstuâjj0#joukk
 !!€ kääzzkõsraajõstuâjj%-#joukk
-
 
 
 
