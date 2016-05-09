@@ -3231,15 +3231,41 @@ LEXICON V0_VEAQDDDED !!= * @CODE@ veäʹdˈded:veädd
 !    Pass.PrfPrc
 ! (9) Ind.Imprt.Pl3: veäddaz
 ! veäʹdˈded:veädd
-:%^PAL VSUF-INF_ED ; !1 veäʹdˈded
-: VSUF-IND-PRS-SG3_ED ; !2 veädd
-+Ind+Prs+Pl3:%^PAL%>e K ; !3 veäʹdˈde
-:%^VOWRaise%^PALẸ%^PAL%> VSUF-IND-PRT-PL3_ED ; !4 vieʹdˈde
-:%^VOWRaise%^PALẸ%^PAL%^CC2CCC%> VSUF-POTENTIAL_ED ; !5 vieʹdd-
-:%^CC2CCC%> VSUF-CONDITIONAL_ED ; !5 ?2 ?7 veäʹdˈd-
-+Imprt+Sg3:%^PAL%>as K ; !7 veäʹddas
-:%^PAL VSUF-IND-PRS-CONNEG_ED ;
-: VSUF-IMPRT-CONNEGII_ED ; !8 veädd-
+:%^PAL VSUF-INF_ED ; !!= * @CODE@ (1) +V+Inf: veäʹdˈded
+!! V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
+!! Actio, ActEss, PrsPrc
+
+!! Strong-LowVowel-No-palatalization
+: VSUF-IND-PRS-SG3_ED ; !!= * @CODE@ (2) +V+Ind+Prs+Sg3: veädd
+!! +V+Ind+Prs+Sg3, Ind.Prt.ConNeg, PrfPrc
+
+!! ExtraStrong-LowVowel-Palatalization
++Ind+Prs+Pl3:%^PAL%>e K ; !!= * @CODE@ (3) +V+Ind+Prs+Pl3: veäʹdˈde
+!! +V+Ind+Prs+Pl3
+
+!! ExtraStrong-RaisedVowel-Palatalization
+:%^VOWRaise%^PALẸ%^PAL%> VSUF-IND-PRT-PL3_ED ; !!= * @CODE@ (4) +V+Ind+Prt+Pl3: vieʹdˈde
+!! +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
+
+!! Weak-StableV-Palatalization
+:%^PALẸ%^PAL%^CCC2CC VSUF-IND-PRS-CONNEG_ED ; !!= * @CODE@ (5) viẹʹdd
+!! Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
+
+!! Weak-RaisedVowel-Palatalization
+:%^VOWRaise%^PALE%^PAL%^CCC2CC%> VSUF-POTENTIAL_ED ; !!= * @CODE@ (6) +V+Pot+Sg3: vieʹddež
+!! Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
+
+!! Weak-LoweredVowel-No-palatalization
+:%^CCC2CC%> VSUF-CONDITIONAL_ED ; !!= * @CODE@ (7) +V+Imprt+Sg3: veäddas
+!! Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
+
+!! ExtraStrong-RaisedVowel-No-palatalization
+:%^VOWRaise VSUF-IMPRT-CONNEGII_ED ; !!= * @CODE@ (8) +V+Imprt+ConNegII: viâdˈdu
+!! Imprt+ConNeg, Pass+PrfPrc
+
+!! ExtraStrong-LoweredVowel-No-palatalization
+VSUF-IMPRT-PL3_ED ; !!= * @CODE@ (9) Ind.Imprt.Pl3: veädˈdaz
+!! Imprt+Pl3
 
 ! (10) Allegro for incoative: veäʹd»
 :%^PAL%^CC2C VSUF-ALLEGRO_ED ;
@@ -3970,7 +3996,7 @@ LEXICON V0_MAQHSSED !!= * @CODE@ mäʹhssed:mähss
 !!  +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 !!
-:%^V2VV%^XYY2VY VSUF-IND-PRS-CONNEG_ED ; !! (5) +V+Imprt+Sg2: maauʹs
+:%^V2VV%^PAL%^XYY2VY VSUF-IND-PRS-CONNEG_ED ; !! (5) +V+Imprt+Sg2: määuʹs
 !! Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 
 !!
