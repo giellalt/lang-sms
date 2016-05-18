@@ -32,7 +32,6 @@ GT_LEXC_SRCS_L1_L2=\
 				stems/adverbs_newwords.lexc \
 				stems/conjunctions_newwords.lexc \
 				stems/nouns_newwords.lexc \
-				stems/numerals.lexc \
 				stems/particles_newwords.lexc \
 				stems/pronouns_newwords.lexc \
 				stems/propernouns_newwords.lexc \
@@ -55,6 +54,7 @@ GT_LEXC_SRCS_L1_L2=\
 #				stems/conjunctions.lexc \
 #				stems/interjections.lexc \
 #				stems/nouns.lexc \
+#				stems/numerals.lexc \
 #				stems/particles.lexc \
 #				stems/pronouns.lexc \
 # 				stems/sms-propernouns.lexc \
@@ -95,7 +95,6 @@ GENERATED_LEXC_SRCS=\
 			 $(srcdir)/stems/N_Prop_Toponyms_sms2x.lexc     \
 			 $(srcdir)/stems/Num_sms2x.lexc     \
 			 $(srcdir)/stems/Pcle_sms2x.lexc     \
-			 $(srcdir)/stems/Prefix_sms2x.lexc     \
 			 $(srcdir)/stems/Pron_sms2x.lexc     \
 			 $(srcdir)/stems/V_sms2x.lexc     
 
@@ -118,12 +117,14 @@ GT_XML_SRCS=\
 			 stems/N_Prop_Toponyms_sms2x.xml     \
 			 stems/Num_sms2x.xml     \
 			 stems/Pcle_sms2x.xml     \
-			 stems/Prefix_sms2x.xml     \
 			 stems/Pron_sms2x.xml     \
 			 stems/V_sms2x.xml     
 
-# Define any additional sources here (compiled on their own):
+# Define any additional lexc sources here (compiled on their own):
 GT_LOCAL_SRCS=
+
+# Define local xfscripts here:
+GT_LOCAL_XFSCRIPT_SRCS=
 
 # Define here any additional sources just included in the distro:
 GT_DISTRO_SRCS=
