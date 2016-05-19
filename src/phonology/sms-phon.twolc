@@ -300,6 +300,8 @@ BetweenPALNoAndMorphRightArrow = [(%^CC2C:|%^C2CC:|%^XY2XYY:|%^XYY2XY:|%^K2GG:|%
 
 BetweenPALNoAndMorph = [(%^CC2C:|%^C2CC:|%^XY2XYY:|%^XYY2XY:|%^K2GG:|%^KK2GG:|%^CC2CCC:|%^CCC2C:|%^CCC2CC:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:) RBound ] ;
 
+BetweenStemAndRightArrow = [BetweenStemAndConsGrade BetweenPALNoAndMorphRightArrow] ;
+
 PenBetweenStemAndPALNo = [(%^Pen: %^V2VV:|%^Pen: %^VV2V:) (%^Pen: %^VOWRaise:|%^Pen: %^VOWLower:|%^Pen: %^VOWBack:) (%^Pen: %^Allegro:) ] ;
 
 PenBetweenStemAndPALAllo  = [ (%^Pen: %^V2VV:|%^Pen: %^VV2V:) (%^Pen: %^VOWLower:|%^Pen: %^VOWRaise:|%^Pen: %^LowerI2E:)] ;
@@ -376,7 +378,7 @@ Rules
 !!€ e0ʹǩ00rd00000%>ed
 !! deriving cieʹǩǩes+N+Sg+Ill: ceäkˈksa
 
-   [OnSetC|PenUltCns]  _ (0:ʹ) [Cns:+|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ; 
+   [OnSetC|PenUltCns]  _ (0:ʼ) (0:ʹ) [Cns:+|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ; 
 !! Ââvel+N+Prop+Sg+Loc  __Ivalo__
 !!€ Ââvel%^RmVow%>est
 !!€ Ââv0l0%>est
@@ -515,6 +517,7 @@ Rules
      [ :n | :l | j] _ i: PenBetweenStemAndVowelLoss (%^RmVow:) %^I2J: ;
 !!€ jieʹll0i%^I2J%>e%>st
 !!€ jieʹllʼj0%>e%>st
+     m BetweenStemAndRightArrow ( %>) Vow: _ m %^RmVow: ;
      n Vow: _ n %^RmVow: ;
      s Vow: _ :s %^RmVow: ;
      t Vow: _ t %^RmVow: ;
@@ -766,7 +769,7 @@ Rules
            OnSetC i: _   (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: ;
 
 
-   OnSetC _ [õ:â|õ:ä|â:ä|e:ä|e:â] (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] (e: s:)  %^VOWLower: ;
+   OnSetC _ [õ:â|õ:ä|â:ä|e:â] (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] (e: s:)  %^VOWLower: ;
   OnSetC _ [â:ä|â:ẹ|â:e] (ʹ:|0:ʹ) Cns:+ (%{XC%}:) %^LowerI2E: ;
 !Not needed here
 !! mieʹlǩǩ+N+Sg+Nom: __milk/maito__
