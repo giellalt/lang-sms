@@ -153,7 +153,6 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Der/N
 +Der/mmuš !!= * @CODE@ deverbal derivation V»N
 +Der/mõš !!= * @CODE@ deverbal derivation V»N
-+Der/muš !!= * @CODE@ deverbal derivation V»N, secondary?
 +Der/vuõtt !!= * @CODE@ A»N
 
 !! Verb derivation
@@ -299,12 +298,12 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Foc/son
 +Foc/jõs
 +Foc/õs
-+Foc/ǥõs
 +Foc/mes
 +Foc/ba
 +Foc/âs
 +Foc/ât
 +Foc/tâma
++Foc/ǥõs
 +Foc/tõt
 
 
@@ -377,7 +376,6 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 %^VYY2XYY	!!= * @CODE@ Consonant cluster i/u to j/v
 
 %^KKK2GG	!!= * @CODE@ Geminate weakening 
-%^KKK2G		!!= * @CODE@ Strong Geminate allegro
 %^KK2GG		!!= * @CODE@ Geminate weakening	  jokk:jooǥǥ
 %^K2GG	!!= * @CODE@ Geminate weakening čårrõs:čårrõõzz
 %^KK2G		!!= * @CODE@ Geminate weakening	 in allegro pååss:påz
@@ -394,6 +392,101 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 %^J2I		!!= * @CODE@ in tuâjj:tuâi
 %^I2J		!!= * @CODE@ in agent names
 %^I2Zero		!!= * @CODE@ in agent names
+
+! for guesser
+! Alphabetical Order a e i o u y å ä ö
+%{aØ%}
+%{aä%}
+%{aäØ%}
+
+%{âe%}
+%{âeẹiØ%}
+%{âeẹõ%}
+%{âeiõØ%}
+%{âeõ%}
+%{âõ%}
+%{âõØ%}
+%{âØ%}
+
+%{eẹ%}
+%{eẹi%}
+%{eẹiØ%}
+%{eẹä%}
+%{eẹØ%}
+%{eØ%}
+%{ei%}
+%{eiØ%}
+%{eå%}
+
+%{ẹØ%}
+%{ẹi%}
+%{ẹiØ%}
+%{âä%}
+%{ẹä%}
+%{ẹåä%}
+
+%{ij%}
+%{ijØ%}
+%{iõ%}
+%{iØ%}
+
+%{oØ%}
+%{oå%}
+%{oåØ%}
+%{oõu%}
+%{oõuØ%}
+
+%{õu%}
+%{õØ%}
+
+%{uØ%}
+%{åØ%}
+%{åä%}
+%{äØ%}
+%{1ˈØ%}
+%{2ˈØ%}
+%{%ʹØ%}
+%{1%ʹØ%}
+%{2%ʹØ%}
+%{bØ%}
+%{cØ%}
+%{cʒ%}
+%{cʒØ%}
+%{čØ%}
+%{čj%}
+%{čjØ%}
+%{dØ%}
+%{dđ%}
+%{đØ%}
+%{fØ%}
+%{gØ%}
+%{gǧØ%}
+%{gǧǥ%}
+%{ǥØ%}
+%{hØ%}
+%{jØ%}
+%{kǩ%}
+%{kǩØ%}
+%{kØ%}
+%{kǩǥj%}
+%{kǩǥjØ%}
+%{lØ%}
+%{mØ%}
+%{ŋØ%}
+%{nØ%}
+%{pØ%}
+%{rØ%}
+%{sz%}
+%{szØ%}
+%{sØ%}
+%{šžØ%}
+%{šž%}
+%{tØ%}
+%{tđ%}
+%{vØ%}
+%{ʒØ%}
+%{ǯØ%}
+
 
 !! !!Gradation triggers 2015.01.23
  %^XSt2St	!!= * @CODE@ Causes weakening from extra strong to strong
@@ -448,8 +541,6 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 %^RmCns !!= * @CODE@ for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta 
 %^VC         !!= * @CODE@ Voicing s:z š:ž
  %^DeVC         !!= * @CODE@ devoicing z:s ž:š
- %^ShiftEA2IE	  !!= * @CODE@ bieʹss:beâss teâtt, tieʹtted != tieʹtti ~tiõʹtti
-
 %^VOWLower  !!= * @CODE@ for lowering
  %^LowerI2E	 !!= * @CODE@ this is for diphthong in mieʹlǩǩ:meâlkka
 ! %^PenLowerI2E	 != * @CODE@ this is for diphthong in mieʹlǩǩ:meâlkka
@@ -503,9 +594,6 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Cmp 
 +CmpNP/First
 +CmpNP/Pref
-+Cmp/SplitR	!!= * __@CODE@__ This to take care of Oahpo- ja dutkandept - want this in speller Remainder is found to the right
-+Cmp/SplitL	!!= * __@CODE@__ Remainder is found to the left
-
 +Allegro	!!= * __@CODE@__ never last element of compound words
 
 !! !!Flag diacritics
@@ -565,12 +653,10 @@ LEXICON Root 	  !!= * @CODE@
  Det_sms2x ;	      !!= * @CODE@ determiners
  Interj_sms2x ;	      !!= * @CODE@ This generates from merged materials
  N_sms2x ;	      !!= * @CODE@ This generates from merged materials
-+Cmp/SplitL+Use/SpellNoSugg#:-# N_sms2x ;   !!= * @CODE@ This allows split compound nouns
  N_Prop_sms2x ;	      !!= * @CODE@ This generates from merged materials
  N_Prop_Toponyms_sms2x ; !!= * @CODE@ Toponymy
  Num_sms2x ;	      !!= * @CODE@ This generates from merged materials
  Pcle_sms2x ;	      !!= * @CODE@ This generates from merged materials
- Prefix_sms2x ;	      !!= * @CODE@ This generates from merged materials
  Pron_sms2x ;	      !!= * @CODE@ This generates from merged materials
  V_sms2x ;	      !!= * @CODE@ This generates from merged materials
 
@@ -744,13 +830,9 @@ LEXICON PR-TEMP-GOV-LOC_
 
 LEXICON PREFIX_
 +Prefix: # ;
-LEXICON PREFIX/A_
-+Prefix+A+Cmp#:# NounRoot ;
-LEXICON PREFIX/N_
-+Prefix+N+Cmp#:# NounRoot ;
 LEXICON SUF_
 +Suf: # ;
 
 LEXICON SUF/A_
-ettšem+Der/A:ettšẹ%^1VOWm A_NALLSHEM ;
-nallšem+Der/A:nallšẹ%^1VOWm A_NALLSHEM ;
+ettšem+Der/A:ettš{eẹ}{eẹØ}{mØ}m A_NALLSHEM ;
+nallšem+Der/A:nallš{eẹ}{eẹØ}{mØ}m A_NALLSHEM ;

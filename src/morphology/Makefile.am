@@ -45,6 +45,25 @@ GT_LEXC_SRCS_L1_L2=\
 				affixes/propernouns.lexc \
 				affixes/verbs.lexc \
 				compounding.lexc \
+			 stems/A_sms2x.lexc     \
+			 stems/ITRAB_sms2x.lexc     \
+			 stems/TRAB_sms2x.lexc     \
+			 stems/TRABPO_sms2x.lexc     \
+			 stems/TRNUMAB_sms2x.lexc     \
+			 stems/TRNUMABPO_sms2x.lexc     \
+			 stems/Adp_sms2x.lexc     \
+			 stems/Adv_sms2x.lexc     \
+			 stems/CC_sms2x.lexc     \
+			 stems/CS_sms2x.lexc     \
+			 stems/Det_sms2x.lexc     \
+			 stems/Interj_sms2x.lexc     \
+			 stems/N_sms2x.lexc     \
+			 stems/N_Prop_sms2x.lexc     \
+			 stems/N_Prop_Toponyms_sms2x.lexc     \
+			 stems/Num_sms2x.lexc     \
+			 stems/Pcle_sms2x.lexc     \
+			 stems/Pron_sms2x.lexc     \
+			 stems/V_sms2x.lexc     \
 				clitics.lexc
 
 #
@@ -77,52 +96,14 @@ GT_LEXC_L2_SRCS=\
 			$(L2)
 
 # Set this to the names of all generated lexc files, if any
-GENERATED_LEXC_SRCS=\
-			 $(srcdir)/stems/A_sms2x.lexc     \
-			 $(srcdir)/stems/ITRAB_sms2x.lexc     \
-			 $(srcdir)/stems/TRAB_sms2x.lexc     \
-			 $(srcdir)/stems/TRABPO_sms2x.lexc     \
-			 $(srcdir)/stems/TRNUMAB_sms2x.lexc     \
-			 $(srcdir)/stems/TRNUMABPO_sms2x.lexc     \
-			 $(srcdir)/stems/Adp_sms2x.lexc     \
-			 $(srcdir)/stems/Adv_sms2x.lexc     \
-			 $(srcdir)/stems/CC_sms2x.lexc     \
-			 $(srcdir)/stems/CS_sms2x.lexc     \
-			 $(srcdir)/stems/Det_sms2x.lexc     \
-			 $(srcdir)/stems/Interj_sms2x.lexc     \
-			 $(srcdir)/stems/N_sms2x.lexc     \
-			 $(srcdir)/stems/N_Prop_sms2x.lexc     \
-			 $(srcdir)/stems/N_Prop_Toponyms_sms2x.lexc     \
-			 $(srcdir)/stems/Num_sms2x.lexc     \
-			 $(srcdir)/stems/Pcle_sms2x.lexc     \
-			 $(srcdir)/stems/Prefix_sms2x.lexc     \
-			 $(srcdir)/stems/Pron_sms2x.lexc     \
-			 $(srcdir)/stems/V_sms2x.lexc     
+GENERATED_LEXC_SRCS=
+
 
 # Set this to the names of all source xml files, if any
-GT_XML_SRCS=\
-			 stems/A_sms2x.xml     \
-			 stems/ITRAB_sms2x.xml     \
-			 stems/TRAB_sms2x.xml     \
-			 stems/TRABPO_sms2x.xml     \
-			 stems/TRNUMAB_sms2x.xml     \
-			 stems/TRNUMABPO_sms2x.xml     \
-			 stems/Adp_sms2x.xml     \
-			 stems/Adv_sms2x.xml     \
-			 stems/CC_sms2x.xml     \
-			 stems/CS_sms2x.xml     \
-			 stems/Det_sms2x.xml     \
-			 stems/Interj_sms2x.xml     \
-			 stems/N_sms2x.xml     \
-			 stems/N_Prop_sms2x.xml     \
-			 stems/N_Prop_Toponyms_sms2x.xml     \
-			 stems/Num_sms2x.xml     \
-			 stems/Pcle_sms2x.xml     \
-			 stems/Prefix_sms2x.xml     \
-			 stems/Pron_sms2x.xml     \
-			 stems/V_sms2x.xml     
+GT_XML_SRCS=
 
-# Define any additional lexc sources here (compiled on their own):
+
+# Define any additional sources here (compiled on their own):
 GT_LOCAL_SRCS=
 
 # Define local xfscripts here:
