@@ -968,7 +968,7 @@ LEXICON NMN_SAAKK
 HatY-STEM-PX-RETAIN ;
 :%^KK2GG HatY-STEM-PX-WEAKEN ;
 :%^KK2GG HatY-STEM-PX-WEAKEN_NG ;
-:%^KK2G HatY-STEM-PX-ALLEGRO ;
+:%^VV2V%^KK2G HatY-STEM-PX-ALLEGRO ;
 :%^VV2V HatY-STEM-PX-STRENGTHEN ;
 
 !!!
@@ -1063,7 +1063,7 @@ LEXICON NMN_PAARR
 HatY-STEM-PX-RETAIN ;
 :%^CC2C HatY-STEM-PX-WEAKEN ;
 :%^CC2C HatY-STEM-PX-WEAKEN_NG ;
-:%^CC2C HatY-STEM-PX-ALLEGRO ;
+:%^VV2V%^CC2C HatY-STEM-PX-ALLEGRO ; !!= * @CODE@ par-
 :%^VV2V HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_SHLAAJJ !!= * @CODE@ šlaajj:šlaajj
@@ -1230,7 +1230,7 @@ LEXICON NMN_RIIKK
 HatY-STEM-PX-RETAIN ;
 : HatY-STEM-PX-WEAKEN ;
 : HatY-STEM-PX-WEAKEN_NG ;
-: HatY-STEM-PX-ALLEGRO ;
+:%^VV2V%^CC2C HatY-STEM-PX-ALLEGRO ; !!= * @CODE@ rik-
 :%^VV2V HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_AQSTTRIK !!= * @CODE@ aʹsttrik:aʹsttri%^1VOWk
@@ -7397,7 +7397,7 @@ LEXICON NMN_CHUYGXGXAS
 :%^KKK2GG%>as SG-NOM ;		     !!= * @CODE@ čuâǥǥas
 :%^VOWRaise%>u SG-ABE/ACC/GEN-PL-NOM ; !!= * @CODE@ čuõkˈku
 :sa SG-ILL ; 			     !!= * @CODE@ čuâkˈksa
-:%^VOWRaise%>u NMN_SG-LOC_ZERO ;
+:%^VOWRaise%>u SG-LOC ;
 :%^VOWRaise%>u SG-COM_IN/PL-OBL ;
 :%^VOWRaise%>se ESS/PAR ;
 
@@ -8599,7 +8599,7 @@ LEXICON NMN_MEERSAZH
 :iʹžže ESS/PAR ;
 :a PL-NOM ;
 :a PL-OBL ;
-+Der/Dimin:õõžž N_MUORYZH ;
++Der/Dimin:õõžž N_SAEQMMLOOZHZHYZH ;
 
 !! Diminutive derivations
 
@@ -8614,7 +8614,7 @@ LEXICON NMN_MUORYZH
 :âž SG-NOM ;
 :%^PAL%>e SG-ABE/ACC/GEN ;
 :že SG-ILL ;
-:%^PAL%>est NMN_SG-LOC_ZERO ;
+:%^PAL%>e SG-LOC ;
 :%^PAL SG-COM_IN ;
 :ž%>e ESS/PAR ;
 :%^PAL%>e PL-NOM ;
@@ -8625,6 +8625,11 @@ LEXICON N_MUORYZH-WITHOUT-PAL !!= * @CODE@ paapp-
 :že SG-ILL ;	!!= * @CODE@ paappže
 :že ESS/PAR ;	 	!!= * @CODE@ paappžen
 
+HatY-STEM-PX-RETAIN ;
+: HatY-STEM-PX-WEAKEN ;
++Use/NG: HatY-STEM-PX-ALLEGRO ; !!= * @CODE@ muõrstes
+: HatY-STEM-PX-STRENGTHEN ;
+
 LEXICON N_MUORYZH-WITH-PAL   !!= * @CODE@ paaʹpp-
 :%>e SG-ABE/ACC/GEN ;	!!= * @CODE@ paaʹppe
 :%>e SG-LOC ;	!!= * @CODE@ paaʹppest
@@ -8632,10 +8637,38 @@ LEXICON N_MUORYZH-WITH-PAL   !!= * @CODE@ paaʹpp-
 :%>e PL-NOM ;	!!= * @CODE@ paaʹppe
 : PL-OBL ;	    !!= * @CODE@ paaʹppi
 
+: HatY-STEM-PX-ALLEGRO ; !!= * @CODE@ muõʹrstes
+
+
+LEXICON N_SAEQMMLOOZHZHYZH !!= * @CODE@ säʹmmlõõžžâž:säʹmmlõõžž
++N: NMN_SAEQMMLOOZHZHYZH ;
+LEXICON NMN_SAEQMMLOOZHZHYZH
+! gradation: no
+! allegro: yes
+! vowel: high
+!! * Yaml: __N-muorazh__
+:âž ATTESTED-NOUN-STEM ;
+:âž SG-NOM ;
+:%^PAL%>e SG-ABE/ACC/GEN ;
+:%>že SG-ILL ;
+:%^PAL%>e SG-LOC ;
+:%^PAL SG-COM_IN ;
+:ž%>e ESS/PAR ;
+:%^PAL%>e PL-NOM ;
+:%^PAL PL-OBL ;
+
+HatY-STEM-PX-RETAIN ;
+: HatY-STEM-PX-WEAKEN ;
+: HatY-STEM-PX-WEAKEN_NG ; !!= * @CODE@ säʹmmlõõžž- Sg_Loc_PxSg1
+:%^PAL HatY-STEM-PX-WEAKEN_NG ; !!= * @CODE@ säʹmmlõõʹžž- Sg_Loc_PxSg1
+:%^VV2V%^PAL%^CC2C HatY-STEM-PX-ALLEGRO ; !!= * @CODE@ säʹmmlõʹž-
+:%^VV2V%^CC2C HatY-STEM-PX-ALLEGRO ; !!= * @CODE@ säʹmmlõž-
+:%^VV2V HatY-STEM-PX-STRENGTHEN ;
+
 LEXICON N_PRE-PEESSAZH !!= * @CODE@ puälaž:puäl
 N_PEESSAZH ;
 :%^VOWRaiseu SG-ABE/ACC/GEN ;
-:%^VOWRaiseu NMN_SG-LOC_ZERO ;
+:%^VOWRaiseu SG-LOC ;
 :%^VOWRaiseu SG-COM_IN ;
 :%^VOWRaiseu PL-NOM ;
 :%^VOWRaiseu PL-OBL ;
@@ -8664,7 +8697,7 @@ LEXICON NMN_PIISSUZH
 :už SG-NOM ;
 :u SG-ABE/ACC/GEN ;
 :ž NMN_SG-ILL_E ;
-:u NMN_SG-LOC_ZERO ;
+:u SG-LOC ;
 :u SG-COM_IN ;
 :že ESS/PAR ;
 :u PL-NOM ;
@@ -8683,7 +8716,7 @@ LEXICON NMN_KUALAZH
 :až SG-NOM ;
 :a SG-ABE/ACC/GEN ;
 :ž NMN_SG-ILL_E ;
-:a NMN_SG-LOC_ZERO ;
+:a SG-LOC ;
 :a SG-COM_IN ;
 :ž%>e ESS/PAR ;
 :a PL-NOM ;
@@ -8700,7 +8733,7 @@ LEXICON NMN_UUQREZH
 :ež SG-NOM ;
 :e SG-ABE/ACC/GEN ;
 :ž NMN_SG-ILL_E ;
-:e NMN_SG-LOC_ZERO ;
+:e SG-LOC ;
 :e SG-COM_IN ;
 :ž%>e ESS/PAR ;
 :e PL-NOM ;
@@ -8734,7 +8767,7 @@ LEXICON NMN_VONNSAZH
 :a SG-ABE/ACC/GEN ;
 :õʹžže SG-ILL ;
 +Use/NG:iʹžže SG-ILL ;
-:a NMN_SG-LOC_ZERO ;
+:a SG-LOC ;
 :a SG-COM_IN ;
 :õʹžže ESS/PAR ;
 +Use/NG:iʹžže ESS/PAR ;
@@ -8749,7 +8782,7 @@ LEXICON NMN_JIQLSSI !!= * @CODE@ Jiʹlssi:Jiʹlssi
 : SG-NOM ;
 : SG-ABE/ACC/GEN ;
 :%^I2J%>a SG-ILL ;
-: NMN_SG-LOC_ZERO ;
+: SG-LOC ;
 :%^I2J SG-COM_IN ;
 :%^I2J%>e ESS/PAR ; !! Is this correct 2015-09-11
 : PL-NOM ;
@@ -8763,7 +8796,7 @@ LEXICON NMN_OAQLGA !!= * @CODE@ Ååʹlga:Ååʹlg
 :a SG-NOM ;
 :a SG-ABE/ACC/GEN ;
 :ž NMN_SG-ILL_E ;
-:a NMN_SG-LOC_ZERO ;
+:a SG-LOC ;
 :a SG-COM_IN ;
 :ž%>e ESS/PAR ; !! Is this correct 2015-09-11
 :a PL-NOM ;
@@ -8777,7 +8810,7 @@ LEXICON NMN_SINIDA !!= * @CODE@ Sinida:Sinid
 :a SG-ABE/ACC/GEN ;
 :õʹžž NMN_SG-ILL_E ;
 +Use/NG:iʹžž NMN_SG-ILL_E ;
-:a NMN_SG-LOC_ZERO ;
+:a SG-LOC ;
 :a SG-COM_IN ;
 :õʹžž%>e ESS/PAR ; !! Is this correct 2015-09-11
 +Use/NG:iʹžž%>e ESS/PAR ; !! Is this correct 2015-09-11
@@ -8797,7 +8830,7 @@ LEXICON NMN_KUUQMPEZH
 :ež SG-NOM ;
 :e SG-ABE/ACC/GEN-PL-NOM ;
 :ž NMN_SG-ILL_E ;
-:e NMN_SG-LOC_ZERO ;
+:e SG-LOC ;
 : SG-COM_IN ;
 :že ESS/PAR ;
 :i PL-OBL ;
@@ -8819,7 +8852,7 @@ LEXICON NMN_OOUMAZH
 :%^V2VV%^XYY2XY%>až SG-NOM ;
 :%>u SG-ABE/ACC/GEN-PL-NOM ;
 :%^V2VV%^XYY2XY%>ž NMN_SG-ILL_E ;
-:u NMN_SG-LOC_ZERO ;	! oummust
+:u SG-LOC ;	! oummust
 :u SG-COM_IN ;     		! oummuin
 : SG-COM_IN ;     		! oummin
 :%^V2VV%^XYY2XY%>že ESS/PAR ;
