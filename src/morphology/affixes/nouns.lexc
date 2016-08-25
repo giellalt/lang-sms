@@ -7981,9 +7981,9 @@ LEXICON NMN_PRSPRC-VCC-I !!= * @CODE@ cõggi:cõggi
 :%^I2J SG-COM_IN ;		! cõggjin
 :%^I2J%>e ESS/PAR ;  		! cõggjen
 :%^V2VV PL-NOM ;		! cõõggi
-:%^I2J PL-OBL ;		! cõggi
++Use/NG:%^I2J PL-OBL ;		! cõggi
 +Use/NG: PL-NOM ;		! cõggi
-+Use/NG:%^V2VV%^I2J PL-OBL ;		! cõõggi
+:%^V2VV%^I2J PL-OBL ;		! cõõggi
 
 !! participles in -I from verbs in -âd
 LEXICON NOM-AG_YD
@@ -7994,11 +7994,16 @@ LEXICON NOM-AG_YD
 :%^I2J%>e SG-LOC ;
 :%^I2J SG-COM_IN ;
 :%^I2J%>e ESS/PAR ; ! ess and prt without
+:%^XYY2XY PL-NOM ;				! suõski
 +Use/NG: PL-NOM ;				! suõskki
-:%^I2J PL-OBL ;			! suõskkji
+:%^XYY2XY%^I2J PL-OBL ;			! suõskji
++Use/NG:%^I2J PL-OBL ;			! suõskkji
+
 LEXICON NOM-AG_YD_NO-PL-NOM
-: PL-NOM ;				! suõski
-+Use/NG:%^I2J PL-OBL ;	! suõskji
+:%^XYY2XY PL-NOM ;				! suõski
+:%^XYY2XY%^I2J PL-OBL ;	! suõskji
++Use/NG: PL-NOM ;	! suõskki
++Use/NG:%^I2J PL-OBL ;	! suõskkji
 
 
 LEXICON N_PRSPRC-VVCC-I !!= * @CODE@ jõõvvi:jõõvvi
@@ -8018,8 +8023,8 @@ LEXICON NMN_PRSPRC-VVCC-I !!= * @CODE@ jõõvvi:jõõvvi
 :%^I2J SG-COM_IN ;		!!= * @CODE@ jõõvvjin
 :%^I2J%>e ESS/PAR ;  		!!= * @CODE@ jõõvvjen
 :%^CC2C PL-NOM ;		!!= * @CODE@ jõõvi
-:%^I2J PL-OBL ;		!!= * @CODE@ jõõvvi
-+Use/NG:%^CC2C%^I2J PL-OBL ;	!!= * @CODE@ jõõvi
+:%^CC2C%^I2J PL-OBL ;		!!= * @CODE@ jõõvji
++Use/NG:%^I2J PL-OBL ;	!!= * @CODE@ jõõvvji
 +Use/NG: PL-NOM ;		!!= * @CODE@ jõõvvi
 
 LEXICON N_PRSPRC-VVKK-I !!= * @CODE@ lookki:lookki
