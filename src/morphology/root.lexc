@@ -153,6 +153,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Der/N
 +Der/mmuš !!= * @CODE@ deverbal derivation V»N
 +Der/mõš !!= * @CODE@ deverbal derivation V»N
++Der/muš !!= * @CODE@ deverbal derivation V»N, secondary?
 +Der/vuõtt !!= * @CODE@ A»N
 
 !! Verb derivation
@@ -162,7 +163,49 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Der/âʹstted  	!!= * @CODE@ diminutive V»V
 +Der/ted  	!!= * @CODE@ causative V»V
 +Der/âʹtted  	!!= * @CODE@ causative V»V 
++Der/õõttâd  	!!= * @CODE@ reflexive reciprocal V»V 
++Der/tõõvvâd 	!!= * @CODE@ privative + translative N»V 
 +Der/NomAg	!!= * @CODE@ agent V»N
+
+!! !!Tags for originating language
+
+!! The following tags are used to guide conversion to IPA: loan words
+!! and foreign names are usually pronounced (approximately) as in the
+!! originating (majority) language. Instead of trying to identify the
+!! correct pronounciation based on fonotactics (orthotactics actually),
+!! we tag all words that can't be correctly transcribed using the SME
+!! transcriber with source language codes. Once tagged, it is possible
+!! to split the lexical transducer in smaller ones according to langu-
+!! age, and apply different IPA conversion to each of them.
+!! 
+!! The principle of tagging is that we only tag to the extent needed,
+!! and following a priority:
+!! # any untagged word is pronounced with SME orthographic conventions
+!! # NNO and NOB have identical pronounciation, NNO is only used if
+!!   different in spelling from NOB
+!! # SWE has mostly the same pronounciation as NOB, and is only used
+!!   if different in spelling from NOB
+!! # Occasionally even SME (the default) may be tagged, to block other
+!!   languages from being specified, mainly during semi-automatic
+!!   language tagging sessions
+!! 
+!! All in all, we want to get as much correctly transcribed to IPA
+!! with as little work as possible. On the other hand, if more words
+!! are tagged than strictly needed, this should pose no problem as
+!! long as the IPA conversion is correct - at least some words will
+!! get the same pronounciation whether read as SME or NOB/NNO/SWE.
+
++OLang/SME !!≈ * @CODE@ - North Sámi
++OLang/SMA !!≈ * @CODE@ - South Sámi
++OLang/SMN !!≈ * @CODE@ - Inari Sámi
++OLang/RUS !!≈ * @CODE@ - Russian
++OLang/FIN !!≈ * @CODE@ - Finnish
++OLang/SWE !!≈ * @CODE@ - Swedish
++OLang/NOB !!≈ * @CODE@ - Norw. bokmål
++OLang/NNO !!≈ * @CODE@ - Norw. nynorsk
++OLang/ENG !!≈ * @CODE@ - English
++OLang/UND !!≈ * @CODE@ - Undefined
+
 
 !! !Government tags
 +%<gen%>
@@ -298,12 +341,12 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Foc/son
 +Foc/jõs
 +Foc/õs
++Foc/ǥõs
 +Foc/mes
 +Foc/ba
 +Foc/âs
 +Foc/ât
 +Foc/tâma
-+Foc/ǥõs
 +Foc/tõt
 
 
@@ -376,6 +419,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 %^VYY2XYY	!!= * @CODE@ Consonant cluster i/u to j/v
 
 %^KKK2GG	!!= * @CODE@ Geminate weakening 
+%^KKK2G		!!= * @CODE@ Strong Geminate allegro
 %^KK2GG		!!= * @CODE@ Geminate weakening	  jokk:jooǥǥ
 %^K2GG	!!= * @CODE@ Geminate weakening čårrõs:čårrõõzz
 %^KK2G		!!= * @CODE@ Geminate weakening	 in allegro pååss:påz
@@ -392,104 +436,6 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 %^J2I		!!= * @CODE@ in tuâjj:tuâi
 %^I2J		!!= * @CODE@ in agent names
 %^I2Zero		!!= * @CODE@ in agent names
-
-! for guesser
-! Alphabetical Order a e i o u y å ä ö
-%{aØ%}
-%{aä%}
-%{aäØ%}
-
-%{âe%}
-%{âeẹiØ%}
-%{âeẹõ%}
-%{âeiõØ%}
-%{âeõ%}
-%{âõ%}
-%{âõØ%}
-%{âØ%}
-
-%{eẹ%}
-%{eẹi%}
-%{eẹiØ%}
-%{eẹä%}
-%{eẹØ%}
-%{eØ%}
-%{ei%}
-%{eiØ%}
-%{eå%}
-
-%{ẹØ%}
-%{ẹi%}
-%{ẹiØ%}
-%{âä%}
-%{ẹä%}
-%{ẹåä%}
-
-%{ij%}
-%{ijØ%}
-%{iõ%}
-%{iØ%}
-
-%{oØ%}
-%{oå%}
-%{oåØ%}
-%{oõu%}
-%{oõuØ%}
-
-%{õu%}
-%{õØ%}
-
-%{uØ%}
-%{åØ%}
-%{åä%}
-%{äØ%}
-%{1ˈØ%}
-%{2ˈØ%}
-%{%ʹØ%}
-%{1%ʹØ%}
-%{2%ʹØ%}
-%{bØ%}
-%{cØ%}
-%{cʒ%}
-%{cʒØ%}
-%{čØ%}
-%{čj%}
-%{čjØ%}
-%{dØ%}
-%{dđ%}
-%{đØ%}
-%{fØ%}
-%{gØ%}
-%{gǧØ%}
-%{gǧǥ%}
-%{gǧǥj%}
-%{ǥØ%}
-%{hi%}
-%{hu%}
-%{hØ%}
-%{jØ%}
-%{kǩ%}
-%{kǩØ%}
-%{kØ%}
-%{kǩǥj%}
-%{kǩǥjØ%}
-%{lØ%}
-%{mØ%}
-%{ŋØ%}
-%{nØ%}
-%{pØ%}
-%{rØ%}
-%{sz%}
-%{szØ%}
-%{sØ%}
-%{šžØ%}
-%{šž%}
-%{tØ%}
-%{tđ%}
-%{vØ%}
-%{ʒØ%}
-%{ǯØ%}
-
 
 !! !!Gradation triggers 2015.01.23
  %^XSt2St	!!= * @CODE@ Causes weakening from extra strong to strong
@@ -544,6 +490,8 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 %^RmCns !!= * @CODE@ for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta 
 %^VC         !!= * @CODE@ Voicing s:z š:ž
  %^DeVC         !!= * @CODE@ devoicing z:s ž:š
+ %^ShiftEA2IE	  !!= * @CODE@ bieʹss:beâss teâtt, tieʹtted != tieʹtti ~tiõʹtti
+
 %^VOWLower  !!= * @CODE@ for lowering
  %^LowerI2E	 !!= * @CODE@ this is for diphthong in mieʹlǩǩ:meâlkka
 ! %^PenLowerI2E	 != * @CODE@ this is for diphthong in mieʹlǩǩ:meâlkka
@@ -585,7 +533,15 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 !! The Usage extents are marked using following tags:
 
- +Err/Orth     !!= * @CODE@ 
+ +Err/Orth     !!= * @CODE@  substandard, not in normative fst
+ +Err/Lex         !!≈ * __@CODE@__ substandard, not in normative fst, no normative lemma
+ +Err/DerSub      !!≈ * __@CODE@__ substandard for derivation, not in normative fst, no normative lemma
+ +Err/CmpSub      !!≈ * __@CODE@__ substandard for compounding, not in normative fst (wrong form or POS in first part)
+ +Err/NoHyph     !!≈ * __@CODE@__ substandard for compounding, not in normative fst (needs hyph)
+ +Err/Hyph     !!≈ * __@CODE@__ substandard for compounding, not in normative fst (should have no hyphen)
+ +Err/SpaceCmp    !!≈ * __@CODE@__ used for compounds written apart - only retained in the HFST Grammar Checker disambiguation analyser
+ +Err/Spellrelax  !!≈ * __@CODE@__ used to tag spellrelaxed typos (tag is inserted via flag diacritics)
+
  +Use/Marg        !!= * __@CODE@__ marginal (?)
  +Use/-Spell      !!= * __@CODE@__ Excluded in speller
  +Use/SpellNoSugg !!= * __@CODE@__ recognized but not suggested in speller
@@ -597,6 +553,9 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Cmp 
 +CmpNP/First
 +CmpNP/Pref
++Cmp/SplitR	!!= * __@CODE@__ This to take care of Oahpo- ja dutkandept - want this in speller Remainder is found to the right
++Cmp/SplitL	!!= * __@CODE@__ Remainder is found to the left
+
 +Allegro	!!= * __@CODE@__ never last element of compound words
 
 !! !!Flag diacritics
@@ -656,10 +615,12 @@ LEXICON Root 	  !!= * @CODE@
  Det_sms2x ;	      !!= * @CODE@ determiners
  Interj_sms2x ;	      !!= * @CODE@ This generates from merged materials
  N_sms2x ;	      !!= * @CODE@ This generates from merged materials
++Cmp/SplitL+Use/SpellNoSugg#:-# N_sms2x ;   !!= * @CODE@ This allows split compound nouns
  N_Prop_sms2x ;	      !!= * @CODE@ This generates from merged materials
  N_Prop_Toponyms_sms2x ; !!= * @CODE@ Toponymy
  Num_sms2x ;	      !!= * @CODE@ This generates from merged materials
  Pcle_sms2x ;	      !!= * @CODE@ This generates from merged materials
+ Prefix_sms2x ;	      !!= * @CODE@ This generates from merged materials
  Pron_sms2x ;	      !!= * @CODE@ This generates from merged materials
  V_sms2x ;	      !!= * @CODE@ This generates from merged materials
 
@@ -778,6 +739,9 @@ LEXICON NUM_TOLL
 LEXICON NUM_PAPP
 +Num: # ;
 +Num: NMN_PAPP ;
+LEXICON NUM_AELDD
++Num: # ;
++Num: NMN_AELDD ;
 LEXICON NUM_KUEQLL
 +Num:%^PALE%^PAL # ;
 +Num: NMN_KUEQLL ;
@@ -833,9 +797,13 @@ LEXICON PR-TEMP-GOV-LOC_
 
 LEXICON PREFIX_
 +Prefix: # ;
+LEXICON PREFIX/A_
++Prefix+A+Cmp#:# NounRoot ;
+LEXICON PREFIX/N_
++Prefix+N+Cmp#:# NounRoot ;
 LEXICON SUF_
 +Suf: # ;
 
 LEXICON SUF/A_
-ettšem+Der/A:ettš{eẹ}{eẹØ}{mØ}m A_NALLSHEM ;
-nallšem+Der/A:nallš{eẹ}{eẹØ}{mØ}m A_NALLSHEM ;
+ettšem+Der/A:ettšẹ%^1VOWm A_NALLSHEM ;
+nallšem+Der/A:nallšẹ%^1VOWm A_NALLSHEM ;
