@@ -2033,6 +2033,45 @@ LEXICON V0_KUAEIVVAD !!= * @CODE@ kuäivvad:kuäivv
 : VSUF-IMPRT-PL3_AD ; ! kuäivv-
 :%^XYY2XY FOR-AD-TO-V_SHKUEAQTTED ;
 
+LEXICON V_KUYISSAD !!= * @CODE@ kuäivvad:kuäivv
++V: V0_KUYISSAD ;
+LEXICON IV_KUYISSAD !!= * @CODE@ kuäivvad:kuäivv
++V+IV: V0_KUYISSAD ;
+LEXICON TV_KUYISSAD !!= * @CODE@ kuäivvad:kuäivv
++V+TV: V0_KUYISSAD ;
+LEXICON V0_KUYISSAD !!= * @CODE@ kuäivvad:kuäivv
+
+! ** Yaml: __V-kuyissad__
+! In the lexicon ''@LEXNAME@''
+! kuäivvad:kuäivv
+! 1. The Ind.Prs.Sg3 form is a single syllable
+! 1.2 The infinitive ends in ad
+! 1.2.1 Has gradation
+! 1.2.1.1 Monophthong 
+! Stem is strong
+! one vowel
+! FORMS
+! (1)  Inf: kuäivvad
+! (2)  Ind.Prs.Sg3: kuäivv
+! (3)  Ind.Prs.Pl3: kuäivva
+! (4)  Ind.Prt.Pl3: kuaivvu
+! (5)  Ind.Imprt.Sg2: kuäiv
+! (6)  Ind.Pot.Sg3: kuäivež
+! (7)  Ind.Imprt.Sg3: kuäivas
+! (8)  Imprt.13.ConNeg: kuaivvu
+! (9) Ind.Imprt.Pl3: kuäivvaz
+! (10) Allegro for incoative: kuäivv»
+
+: VSUF-INF_AD ; !1 kuäivvad
+: VSUF-IND-PRS-SG3_AD ; !2 kuäivv
++Ind+Prs+Pl3:%>a K ; !3 kuäivva
+:%^VOWRaise%> VSUF-IND-PRT-PL3_AD ; !4 kuaivvu
+:%^XYY2XY%> VSUF-I-POTKOND_AD ; !5 kuäiv-
++Imprt+Sg3:%^XYY2XY%>as K ; !7 kuäivas
+:%^VOWRaise VSUF-IMPRT-CONNEGII_AD ; !8 kuaivvu
+: VSUF-IMPRT-PL3_AD ; ! kuäivv-
+:%^XYY2XY FOR-AD-TO-V_SHKUEAQTTED ;
+
 LEXICON V_KUAESTTAD !!= * @CODE@ kuästtad:kuästt
 +V: V0_KUAESTTAD ;
 LEXICON IV_KUAESTTAD !!= * @CODE@ kuästtad:kuästt
@@ -2041,36 +2080,17 @@ LEXICON TV_KUAESTTAD !!= * @CODE@ kuästtad:kuästt
 +V+TV: V0_KUAESTTAD ;
 LEXICON V0_KUAESTTAD !!= * @CODE@ kuästtad:kuästt
 
-! ** Yaml: __V-kuaeivvad__
-! In the lexicon ''@LEXNAME@''
-! kuästtad:kuästt
-! 1. The Ind.Prs.Sg3 form is a single syllable
-! 1.2 The infinitive ends in ad
-! 1.2.1 Has gradation
-! 1.2.1.1 Monophthong 
-! Stem is strong
-! one vowel
-! FORMS
-! (1)  Inf: kuästtad
-! (2)  Ind.Prs.Sg3: kuästt
-! (3)  Ind.Prs.Pl3: kuästta
-! (4)  Ind.Prt.Pl3: kuasttu
-! (5)  Ind.Imprt.Sg2: kuäst
-! (6)  Ind.Pot.Sg3: kuästež
-! (7)  Ind.Imprt.Sg3: kuästas
-! (8)  Imprt.13.ConNeg: kuasttu
-! (9) Ind.Imprt.Pl3: kuästtaz
-! (10) Allegro for incoative: kuästt»
 
-: VSUF-INF_AD ; !1 kuästtad
-: VSUF-IND-PRS-SG3_AD ; !! (2)  Ind.Prs.Sg3: kuästt
-+Ind+Prs+Pl3:%>a K ; !! (3)  Ind.Prs.Pl3: kuästta
-:%^VOWRaise%> VSUF-IND-PRT-PL3_AD ; !! (4)  Ind.Prt.Pl3: kuasttu
-:%^XYY2XY%> VSUF-I-POTKOND_AD ; !! (5)  Ind.Imprt.Sg2: kuäst-
-+Imprt+Sg3:%^XYY2XY%>as K ; !! (7)  Ind.Imprt.Sg3: kuästas
-:%^VOWRaise VSUF-IMPRT-CONNEGII_AD ; !! (8)  Imprt.13.ConNeg: kuasttu
-: VSUF-IMPRT-PL3_AD ; ! kuästt-
-:%^XYY2XY FOR-AD-TO-V_SHKUEAQTTED ;
+: VSUF-INF_AD ; !1 kuâissad
+: VSUF-IND-PRS-SG3_AD ; !! (2)  Ind.Prs.Sg3: kuâss
++Ind+Prs+Pl3:%>a K ; !! (3)  Ind.Prs.Pl3: kuâsˈsa
+:%^VOWRaise%> VSUF-IND-PRT-PL3_AD ; !! (4)  Ind.Prt.Pl3: kuõsˈsu
+:%^KK2GG%> VSUF-I-POTKOND_AD ; !! (5)  Ind.Imprt.Sg2: kuâzz-
++Imprt+Sg3:%^KK2GG%>as K ; !! (7)  Ind.Imprt.Sg3: kuâzzas
+:%^VOWRaise VSUF-IMPRT-CONNEGII_AD ; !! (8)  Imprt.13.ConNeg: kuõssu
+: VSUF-IMPRT-PL3_AD ; ! kuâss-
+:%^KK2G FOR-AD-TO-V_SHKUEAQTTED ;
+:%^KK2GG FOR-AD-TO-V_SHKUEAQTTED ;
 
 LEXICON V_VEYHSSAD !!= * @CODE@ veâhssad:veâhss
 +V: V0_VEYHSSAD ;
