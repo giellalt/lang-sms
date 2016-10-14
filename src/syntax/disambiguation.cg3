@@ -555,7 +555,7 @@ REMOVE:NegPrt (Neg Prt)(NEGATE 1 ("lea" ConNeg Prt)) ;
 ## this is for removing the 'ij' etc. 
 	## Ij lin gujht daarah altese vielie jienebh biejjieh daesnie.
 
-SELECT:Du1NotVGen Du1 (0 VGen LINK -*1 ("månnoeh") BARRIER S-BOUNDARY)
+SELECT:Du1NotVGen Du1 (0 VGen LINK -*1 ("månnoeh") BARRIER S-BOUNDARY) ;
 
 # Imperative
 #REMOVE:NotImpIfWord Imp IF (*-1 NOT-ADV-INT-PCLE BARRIER CS OR CC);
@@ -667,8 +667,8 @@ MAP (@+FMAINV) TARGET VFIN IF (NOT 0 AUX) ;
 
 MAP (@+FMAINV) TARGET VFIN IF (0 AUX LINK NOT *1 Inf OR PrfPrc BARRIER S-BOUNDARY) ;
 
-MAP (@-FMAINV) TARGET Ger OR ConNeg OR PrfPrc OR Inf IF (*1 VFIN LINK 0 AUX BARRIER S-BOUNDARY) ;
-MAP (@-FMAINV) TARGET Ger OR ConNeg OR PrfPrc OR Inf IF (*-1 VFIN LINK 0 AUX BARRIER S-BOUNDARY) ;
+MAP (@-FMAINV) TARGET Ger OR ConNeg OR PrfPrc OR Inf IF (*1 VFIN BARRIER S-BOUNDARY LINK 0 AUX) ;
+MAP (@-FMAINV) TARGET Ger OR ConNeg OR PrfPrc OR Inf IF (*-1 VFIN BARRIER S-BOUNDARY LINK 0 AUX ) ;
 	#$ Luste tjoejkedh.
 	# 
 
@@ -703,7 +703,7 @@ SELECT:PlIfPlSubj Pl3 IF (*-1 (Pl Nom) BARRIER NOT-ADV OR COMMA);
 	## Jijnjesh leah sijhteminie edtjibie gieline barkedh, maehtibie tjåahkoeh, seeminarh øørnedh gusnie åadtjoejibie gaavnedidh jih rååresjadtedh.
 
 REMOVE:FocGan Foc/gan (0 (V Du3)) ;
-SELECT:Ger Ger (0 (Der/NomAct) LINK *-1 REALCOPULAS BARRIER S-BOUNDARY)
+SELECT:Ger Ger (0 (Der/NomAct) LINK *-1 REALCOPULAS BARRIER S-BOUNDARY) ;
 	## Maam leah datne darjoeminie?
 
 # Contract or not -- removed, we have removed the sma contract verb analysis
@@ -1090,7 +1090,7 @@ MAP (@SPRED) TARGET Nom IF (*1C (@SUBJ) BARRIER NPNH);
 MAP (@<SPRED) TARGET Nom IF (*-1C (@SUBJ) BARRIER NPNH);
 	# this is if the finite verb is missing
 	## Tåamma voejije.
-MAP (@SPRED>) TARGET Nom IF (*-1 BOS BARRIER NPNH)(*1 @SUBJ LINK 0 Inf BARRIER NOT-ADV);   
+MAP (@SPRED>) TARGET Nom IF (*-1 BOS BARRIER NPNH)(*1 @SUBJ BARRIER NOT-ADV LINK 0 Inf);   
 	## Luste tjoejkedh.
 	#$ Lustes aate tjoejkedh.
 
@@ -1201,7 +1201,7 @@ REMOVE:Nregex N-DER (0 N-DER-SUF) ;
 REMOVE:Aregex A-DER (0 A-DER-SUF) ;
 
 
-REMOVE:waitwithDis (2 V) (0 (1 V))
+REMOVE:waitwithDis (2 V) (0 (1 V)) ;
 
 
 MAP (@OBJ>) TARGET Acc (NOT 0 TIME OR ROUTE)(*1 MAINV + TV BARRIER S-BOUNDARY OR COMMA) ;
