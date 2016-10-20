@@ -64,9 +64,11 @@ CHARACTERISTIC BREAKDOWN 2015-02-17
  * %^VV2V:0         Shortens vowel 
  * %^V2VV:0 	 Lengthens vowel
  * %^CC2C:0 	 Shortens consonant
+ * %^CC2CAllegro:0 	 Shortens consonant
  * %^C2CC:0 	 Lengthens consonant
  * %^CC2CCC:0 	 Strong to Extra Strong consonant
  * %^CCC2C:0 	 Extra Strong to Weak consonant
+ * %^CCC2CAllegro:0 	 Extra Strong to Weak consonant
  * %^CCC2CC:0 	 Extra Strong to Strong consonant
  * %^XYY2XY:0 	 Shortens consonant cluster
  * %^XY2XYY:0 	 Lengthens consonant cluster
@@ -79,9 +81,9 @@ CHARACTERISTIC BREAKDOWN 2015-02-17
  * %^KKK2GG:0	 Geminate weakening 
  * %^KKK2G:0	 Strong Geminate allegro
  * %^KK2GG:0	 Geminate weakening jokk:jooǥǥ
- * %^KK2G:0		 Geminate weakening	 in allegro pååss:påz
+ * %^KK2GAllegro:0		 Geminate weakening	 in allegro pååss:påz
  * %^K2GG:0	 Geminate weakening čårrõs:čårrõõzz
- * %^K2G:0		 Geminate weakening	 in allegro čâustõk
+ * %^K2GAllegro:0		 Geminate weakening	 in allegro čâustõk
 
 
 Shortens vowel in penultimate syllable
@@ -306,6 +308,11 @@ __Vowel shortening i:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
 viikkâd+V+Ind+Prs+Pl3
 * __vii0kk%^VV2V%^VOWLower%^PAL%>e __
 * __ve0ʹǩǩ000%>e __
+viikkâd+V+Imprt+Pl3
+* __viikk%^VV2V%^VOWLower%>az __
+* __vẹ0kk00%>az __
+* __*viikk%^VV2V%^VOWLower%>az __ (is not standard language)
+* __*vẹẹkk00%>az __ (is not standard language)
 iilâsǩ:ilska
 
 prääʹzniǩ+N+Sg+Ill: __celebration/juhla__
@@ -327,6 +334,12 @@ __Vowel shortening o:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
 ponjsted+V+Inf
 * __poonjâst%^Pen%^VV2V%^RmVow%>ed __
 * __po0nj0st000%>ed __
+poorrâd+V+Imprt+Pl3
+* __poorr%^VV2V%^VOWLower%>az __
+* __på0rr00%>az __
+ooccâd+V+Imprt+Pl3
+* __oocc%^VV2V%^VOWLower%>az __
+* __å0cc00%>az __
 
 
 ooumaž+N+Sg+Nom
@@ -409,7 +422,7 @@ __Vowel raising e:i__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second
 reâugg+N+Sg+Ill
 * __reâugg%^VOWRaise%>u __
 * __riõugg0%>u __
-mieʹlǩǩ+N+Sg+Nom
+mieʹlǩǩ+N+Sg+Nom: __milk/maito__
 * __meâ0lkk%^VOWRaise%^PALE%^PAL __
 * __mieʹlǩǩ000 __
 * __jeä0gˈg%^VOWRaise%^PALẸ%^PAL%^CCC2CC __
@@ -507,23 +520,34 @@ juʹrdded > joordam
 
 
 
-__Even syllabic verbs I, vowel lowering i:e__ - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
-viǯǯâd+V+Ind+Prs+Pl3
+__Even syllabic verbs I, vowel lowering i:e__ - 
+viǯǯâd+V+Ind+Prs+Pl3 __fetch/noutaa__
 * __vi%^1VOW0ǯǯ%^VOWLower%^PAL%>e __
 * __ve0ʹǯǯ00%>e __
-viǯǯâd+V+Imprt+Sg2 __fetch/noutaa__
-* __vi%^1VOWǯǯ%^V2VV%^VOWLower%>as __
-* __veeǯǯ00%>as __
+viikkâd+V+Ind+Prs+Pl3
+* __vii0kk%^VV2V%^VOWLower%^PAL%>e __
+* __ve0ʹǩǩ000%>e __
 
 
 
 
-mieʹlǩǩ+N+Sg+Nom: __milk/maito__
-* __meâ0lkk%^VOWRaise%^PALE%^PAL __
-* __mieʹlǩǩ000 __
 cieʹǩǩes+N+Sg+Gen
 * __ciâkˈkez%^Pen%^VOWLower%^PenVow2a __
 * __ceäkˈkaz000 __
+
+
+__Even syllabic verbs I, vowel lowering i:ẹ __ - deriving +Ind+Prs+Sg3 in viǯǯâd
+viǯǯâd+V+Imprt+Sg2 __fetch/noutaa__
+* __vi%^1VOWǯǯ%^V2VV%^VOWLower%>as __
+* __vẹẹǯǯ00%>as __
+viikkâd+V+Imprt+Pl3
+* __viikk%^VV2V%^VOWLower%>az __
+* __vẹ0kk00%>az __
+
+
+
+
+
 
 __Vowel lowering a:ä__ -
 
@@ -1072,6 +1096,7 @@ __č:0__ - used in
 
 
 
+
 __c:0__ - used in
 
 __ž:0__ - used in
@@ -1438,13 +1463,6 @@ __Removing Consonant X3 length mark after diphthong in vertical line ˈ LEFT ARR
 b c č ǯ d đ g ǧ k ǩ l m n p r s š t v also htˈt nˈnj
 {{{ 
 }}}
-
-
-
-
-
-
-Old
 
 
 
