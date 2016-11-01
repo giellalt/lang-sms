@@ -20,6 +20,7 @@
 # List any local filter regex files here:
 GIELLA_FILTER_LOCAL_REGEX_SRCS=\
 					downcase_UCletters.regex \
+					remove-norm-comp-tags.regex \
 					remove-rel_focus-strings.regex \
 					remove-modifier-letter-vertical-line.regex \
 					replace-iterated-consonant-with-palatal-and-consonant.regex \
