@@ -26,7 +26,9 @@ GIELLA_FILTER_LOCAL_REGEX_SRCS=\
 					replace-iterated-consonant-with-palatal-and-consonant.regex \
 					replace-vowel-iteration-with-length-for-norm.regex \
 					replace-vowel-iteration-with-length-for-dict.regex \
-					remove-letter-dot-below.regex
+					remove-letter-dot-below.regex \
+					split-CmpNP-tags.regex \
+					convert_to_flags-CmpNP-tags.regex
 
 # List any local filter xfscript files here:
 GIELLA_FILTER_LOCAL_XFSCRIPT_SRCS=
