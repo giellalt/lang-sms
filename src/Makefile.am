@@ -92,10 +92,10 @@ analyser-gt-norm.%: analyser-gt-norm.tmp.% \
 					filters/remove-modifier-letter-vertical-line.% \
 					filters/remove-letter-dot-below.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
-				@\"filters/block-illegal_compound-strings.hfst\"       \
-			.o. @\"filters/split-CmpN-tags.hfst\"                      \
-			.o. @\"filters/insert-default_left_compounding-tags.hfst\" \
-			.o. @\"filters/insert-default-compounding-tags.hfst\"      \
+				@\"filters/block-illegal_compound-strings.$*\"          \
+			.o. @\"filters/split-CmpN-tags.$*\"                         \
+			.o. @\"filters/insert-default_left_compounding-tags.$*\"    \
+			.o. @\"filters/insert-default-compounding-tags.$*\"         \
 			.o. @\"filters/remove-illegal-derivation-strings-flagbased.$*\" \
 			.o. @\"filters/convert_to_flags-CmpNP-tags.$*\"            \
 			.o. @\"filters/split-CmpNP-tags.$*\"                       \
