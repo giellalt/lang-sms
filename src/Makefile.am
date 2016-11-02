@@ -130,10 +130,14 @@ analyser-gt-norm.xfst: analyser-gt-norm.tmp.xfst \
 # Special case for the disamb analyser, since it follows the same filename
 # pattern as the raw fst:
 analyser-disamb-gt-desc.%: analyser-disamb-gt-desc.tmp.% \
+					filters/remove-derivation-position-tags.% \
+					filters/remove-norm-comp-tags.%             \
 					filters/remove-modifier-letter-vertical-line.% \
 					filters/remove-letter-dot-below.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
-				@\"$<\"                                      \
+				@\"filters/remove-derivation-position-tags.$*\" \
+			.o. @\"filters/remove-norm-comp-tags.$*\"           \
+			.o. @\"$<\"                                      \
 			.o. @\"filters/remove-letter-dot-below.$*\" \
 			.o. @\"filters/remove-modifier-letter-vertical-line.$*\"   \
 			;\n\
@@ -144,10 +148,14 @@ analyser-disamb-gt-desc.%: analyser-disamb-gt-desc.tmp.% \
 # We need to add processing of language-specific tags in the generator:
 define giella_generators
 generator-gt-%.$(1): generator-gt-%.tmp.$(1) \
+					 filters/remove-derivation-position-tags.$(1) \
+					 filters/remove-norm-comp-tags.$(1)             \
 					 filters/remove-modifier-letter-vertical-line.$(1) \
 					 filters/remove-letter-dot-below.$(1)
 	$$(AM_V_XFST_TOOL)$$(PRINTF) "read regex \
-				@\"$$<\"                                      \
+				@\"filters/remove-derivation-position-tags.$*\" \
+			.o. @\"filters/remove-norm-comp-tags.$*\"           \
+			.o. @\"$$<\"                                      \
 			.o. @\"filters/remove-letter-dot-below.$(1)\" \
 			.o. @\"filters/remove-modifier-letter-vertical-line.$(1)\"   \
 			;\n\
@@ -159,9 +167,14 @@ $(foreach fst,hfst xfst foma,$(eval $(call giella_generators,$(fst))))
 
 # Do NOT apply the accent removal filters to the normative
 # dictionary generator:
-generator-dict-gt-norm.%: generator-dict-gt-norm.tmp.%
-	$(AM_V_XFST_TOOL)$(PRINTF) "\
-		 load stack $<\n\
+generator-dict-gt-norm.%: generator-dict-gt-norm.tmp.% \
+					filters/remove-derivation-position-tags.% \
+					filters/remove-norm-comp-tags.%
+	$(AM_V_XFST_TOOL)$(PRINTF) "\read regex \
+				@\"filters/remove-derivation-position-tags.$*\" \
+			.o. @\"filters/remove-norm-comp-tags.$*\"           \
+			.o. @\"$<\"                                         \
+			;\n\
 		 $(INVERT_XFST)$(INVERT_FOMA)\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
