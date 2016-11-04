@@ -19,16 +19,24 @@
 ############## BEGIN: Local modifications ###############
 # List any local filter regex files here:
 GIELLA_FILTER_LOCAL_REGEX_SRCS=\
-					downcase_UCletters.regex \
-					remove-norm-comp-tags.regex \
-					remove-rel_focus-strings.regex \
-					remove-modifier-letter-vertical-line.regex \
-					replace-iterated-consonant-with-palatal-and-consonant.regex \
+					downcase_UCletters.regex                           \
+					remove-norm-comp-tags.regex                        \
+					remove-rel_focus-strings.regex                     \
+					remove-modifier-letter-vertical-line.regex         \
 					replace-vowel-iteration-with-length-for-norm.regex \
 					replace-vowel-iteration-with-length-for-dict.regex \
-					remove-letter-dot-below.regex \
-					split-CmpNP-tags.regex \
-					convert_to_flags-CmpNP-tags.regex
+					remove-letter-dot-below.regex                      \
+					block-illegal_compound-strings.regex               \
+					insert-default-compounding-tags.regex              \
+					insert-default_left_compounding-tags.regex         \
+					remove-derivation-position-tags.regex              \
+					remove-illegal-derivation-strings.regex            \
+					remove-illegal-derivation-strings-flagbased.regex  \
+					rename-POS_before_Der-tags.regex                   \
+					split-CmpN-tags.regex                              \
+					split-CmpNP-tags.regex                             \
+					convert_to_flags-CmpNP-tags.regex                  \
+					replace-iterated-consonant-with-palatal-and-consonant.regex
 
 # List any local filter xfscript files here:
 GIELLA_FILTER_LOCAL_XFSCRIPT_SRCS=
