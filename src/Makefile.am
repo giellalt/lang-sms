@@ -153,8 +153,8 @@ generator-gt-%.$(1): generator-gt-%.tmp.$(1) \
 					 filters/remove-modifier-letter-vertical-line.$(1) \
 					 filters/remove-letter-dot-below.$(1)
 	$$(AM_V_XFST_TOOL)$$(PRINTF) "read regex \
-				@\"filters/remove-derivation-position-tags.$*\" \
-			.o. @\"filters/remove-norm-comp-tags.$*\"           \
+				@\"filters/remove-derivation-position-tags.$(1)\" \
+			.o. @\"filters/remove-norm-comp-tags.$(1)\"           \
 			.o. @\"$$<\"                                      \
 			.o. @\"filters/remove-letter-dot-below.$(1)\" \
 			.o. @\"filters/remove-modifier-letter-vertical-line.$(1)\"   \
@@ -170,7 +170,7 @@ $(foreach fst,hfst xfst foma,$(eval $(call giella_generators,$(fst))))
 generator-dict-gt-norm.%: generator-dict-gt-norm.tmp.% \
 					filters/remove-derivation-position-tags.% \
 					filters/remove-norm-comp-tags.%
-	$(AM_V_XFST_TOOL)$(PRINTF) "\read regex \
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 				@\"filters/remove-derivation-position-tags.$*\" \
 			.o. @\"filters/remove-norm-comp-tags.$*\"           \
 			.o. @\"$<\"                                         \
