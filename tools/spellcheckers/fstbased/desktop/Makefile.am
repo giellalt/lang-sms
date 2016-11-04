@@ -23,6 +23,18 @@ CORPUS_SIZE=
 
 ### BEGIN: Local build rules: *.hfst: *.tmp.hfst ###
 
+generator-desktopspeller-gt-norm.hfst: \
+			generator-desktopspeller-gt-norm.tmp.hfst \
+			filters/remove-derivation-position-tags.hfst
+	$(AM_V_HXFST)$(PRINTF) "\
+	set encode-weights ON \n\
+	read regex \
+		@\"filters/remove-derivation-position-tags.hfst\" \
+	.o. @\"$<\" \
+	; \n\
+	save stack $@\n\
+	quit\n" | $(HFST_XFST) -p $(MORE_VERBOSITY)
+
 #### END: Local build rules: *.hfst: *.tmp.hfst ####
 
 include $(top_srcdir)/am-shared/tools-spellcheckers-fstbased-desktop-dir-include.am
