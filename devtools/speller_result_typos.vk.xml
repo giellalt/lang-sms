@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="https://gtsvn.uit.no/langtech/trunk/giella-core/scripts/style/speller_xml.css" type="text/css"?>
-<?xml-stylesheet href="https://gtsvn.uit.no/langtech/trunk/giella-core/scripts/style/speller_xml.css" type="text/css"?>
+<?xml-stylesheet type="text/css" href="https://gtsvn.uit.no/langtech/trunk/giella-core/scripts/style/speller_xml.css"?>
 <spelltestresult>
   <header>
     <engine abbreviation="vk">
       <toolversion>n/a</toolversion>
-      <processing memoryusage="n/a" realtime="0" usertime="0" systime="0"/>
+      <processing memoryusage="n/a" realtime="0" systime="0" usertime="0"/>
     </engine>
-    <lexicon version="sms version 0.1, 08.11.2016, rev143077"/>
+    <lexicon version="sms version 0.1, 08.11.2016, rev143097"/>
     <document>typos.txt</document>
-    <timestamp>20161108-1937</timestamp>
-    <truefalsesummary wordcount="247">
-      <original correct="0" error="247"/>
-      <speller correct="8" error="239"/>
-      <positive true="239" false="0"/>
-      <negative true="0" false="8"/>
+    <timestamp>20161109-0000</timestamp>
+    <truefalsesummary wordcount="246">
+      <original correct="0" error="246"/>
+      <speller correct="6" error="240"/>
+      <positive true="240" false="0"/>
+      <negative true="0" false="6"/>
       <precision>1.00</precision>
-      <recall>0.97</recall>
-      <accuracy>0.97</accuracy>
+      <recall>0.98</recall>
+      <accuracy>0.98</accuracy>
     </truefalsesummary>
     <suggestionsummary>
-      <sugg1 editdist1="113" editdist2="25" editdist3plus="15"/>
-      <sugg2 editdist1="17" editdist2="8" editdist3plus="0"/>
-      <sugg3 editdist1="5" editdist2="6" editdist3plus="0"/>
-      <sugg4 editdist1="1" editdist2="2" editdist3plus="0"/>
-      <sugg5 editdist1="1" editdist2="3" editdist3plus="0"/>
+      <sugg1 editdist1="116" editdist2="32" editdist3plus="16"/>
+      <sugg2 editdist1="18" editdist2="9" editdist3plus="0"/>
+      <sugg3 editdist1="4" editdist2="6" editdist3plus="0"/>
+      <sugg4 editdist1="1" editdist2="1" editdist3plus="0"/>
+      <sugg5 editdist1="0" editdist2="2" editdist3plus="0"/>
       <suggbelow5 editdist1="0" editdist2="0" editdist3plus="0"/>
-      <nosugg editdist1="9" editdist2="6" editdist3plus="3"/>
-      <badsuggs editdist1="12" editdist2="14" editdist3plus="7"/>
-      <averageposition>1.37</averageposition>
-      <averagesuggs_with_correct>4.77</averagesuggs_with_correct>
-      <top1pos_percent>64.02</top1pos_percent>
-      <top5pos_percent>82.01</top5pos_percent>
-      <allpos_percent>82.01</allpos_percent>
-      <nosugg_percent>4.18</nosugg_percent>
-      <badsugg_percent>13.81</badsugg_percent>
+      <nosugg editdist1="8" editdist2="5" editdist3plus="3"/>
+      <badsuggs editdist1="11" editdist2="8" editdist3plus="6"/>
+      <averageposition>1.30</averageposition>
+      <averagesuggs_with_correct>4.78</averagesuggs_with_correct>
+      <top1pos_percent>68.33</top1pos_percent>
+      <top5pos_percent>85.42</top5pos_percent>
+      <allpos_percent>85.42</allpos_percent>
+      <nosugg_percent>4.17</nosugg_percent>
+      <badsugg_percent>10.42</badsugg_percent>
     </suggestionsummary>
   </header>
   <results>
@@ -201,36 +201,33 @@
         <suggestion>čõhččân</suggestion>
       </suggestions>
     </word>
-    <word corrsugg="-1">
-      <original status="error">čeâlkâlm</original>
+    <word corrsugg="1">
+      <original status="error">ceâlkâlm</original>
       <speller status="error"/>
-      <expected>čiâlkâlm</expected>
+      <expected>ciâlkâlm</expected>
       <edit_dist>1</edit_dist>
-      <suggestions count="4">
-        <suggestion>ciâlkâlm</suggestion>
+      <position>1</position>
+      <suggestions count="5">
+        <suggestion expected="yes">ciâlkâlm</suggestion>
         <suggestion>meâlkââm</suggestion>
-        <suggestion>čuâlkââm</suggestion>
         <suggestion>seâlkââm</suggestion>
+        <suggestion>ceârkââm</suggestion>
+        <suggestion>ciâlkâlm-</suggestion>
       </suggestions>
     </word>
-    <word corrsugg="-1">
+    <word corrsugg="1">
       <original status="error">ceälkkum</original>
       <speller status="error"/>
       <expected>ciâlkkum</expected>
       <edit_dist>2</edit_dist>
+      <position>1</position>
       <suggestions count="5">
+        <suggestion expected="yes">ciâlkkum</suggestion>
         <suggestion>ceälkkam</suggestion>
-        <suggestion>ceälkk</suggestion>
-        <suggestion>ceälkam</suggestion>
-        <suggestion>ceälkk-a</suggestion>
-        <suggestion>cuålkkum</suggestion>
+        <suggestion>ciâlkku</suggestion>
+        <suggestion>ciâkkum</suggestion>
+        <suggestion>ciâlkkuõm</suggestion>
       </suggestions>
-    </word>
-    <word corrsugg="badaccept">
-      <original status="error">ceälkkmuužž</original>
-      <speller status="correct"/>
-      <expected>ceälkkmõõžž</expected>
-      <edit_dist>2</edit_dist>
     </word>
     <word corrsugg="1">
       <original status="error">Čeʹvetjäuʹrra</original>
@@ -256,8 +253,8 @@
         <suggestion expected="yes">čuäʹjtum</suggestion>
         <suggestion>vuäjtum</suggestion>
         <suggestion>čuõjtum</suggestion>
-        <suggestion>čuäʹjtem</suggestion>
-        <suggestion>čuäjtõs</suggestion>
+        <suggestion>čuåntum</suggestion>
+        <suggestion>čuårtum</suggestion>
       </suggestions>
     </word>
     <word corrsugg="0">
@@ -427,14 +424,16 @@
         <suggestion>håmmʼmuščee</suggestion>
       </suggestions>
     </word>
-    <word corrsugg="-1">
+    <word corrsugg="1">
       <original status="error">håmmõšše</original>
       <speller status="error"/>
       <expected>håmmʼmõʹšše</expected>
       <edit_dist>3</edit_dist>
-      <suggestions count="2">
-        <suggestion>håmmvõššu</suggestion>
+      <position>1</position>
+      <suggestions count="3">
+        <suggestion expected="yes">håmmʼmõʹšše</suggestion>
         <suggestion>håmmäšša</suggestion>
+        <suggestion>håmmvõššu</suggestion>
       </suggestions>
     </word>
     <word corrsugg="3">
@@ -534,10 +533,10 @@
       <position>1</position>
       <suggestions count="5">
         <suggestion expected="yes">jeäʹp</suggestion>
+        <suggestion>jiâ</suggestion>
+        <suggestion>jeäʹt</suggestion>
+        <suggestion>leäʹp</suggestion>
         <suggestion>jeä</suggestion>
-        <suggestion>jeäl</suggestion>
-        <suggestion>jeän</suggestion>
-        <suggestion>jeʹp</suggestion>
       </suggestions>
     </word>
     <word corrsugg="1">
@@ -548,10 +547,10 @@
       <position>1</position>
       <suggestions count="5">
         <suggestion expected="yes">jeäʹt</suggestion>
+        <suggestion>jiâ</suggestion>
         <suggestion>jeäl</suggestion>
         <suggestion>jeärt</suggestion>
         <suggestion>jeä</suggestion>
-        <suggestion>jeän</suggestion>
       </suggestions>
     </word>
     <word corrsugg="1">
@@ -695,9 +694,9 @@
       <suggestions count="5">
         <suggestion expected="yes">juõʹǩǩ</suggestion>
         <suggestion>jueʹǩǩ</suggestion>
-        <suggestion>äuʹǩǩ</suggestion>
-        <suggestion>kuʹǩǩ</suggestion>
-        <suggestion>juõv</suggestion>
+        <suggestion>vueʹǩǩ</suggestion>
+        <suggestion>jueʹtǩ</suggestion>
+        <suggestion>jueʹǩǩe</suggestion>
       </suggestions>
     </word>
     <word corrsugg="3">
@@ -815,17 +814,18 @@
         <suggestion>koʹrvveeʹst</suggestion>
       </suggestions>
     </word>
-    <word corrsugg="-1">
+    <word corrsugg="1">
       <original status="error">kueʹđđmõš</original>
       <speller status="error"/>
       <expected>kuâđđmõš</expected>
       <edit_dist>2</edit_dist>
+      <position>1</position>
       <suggestions count="5">
-        <suggestion>kueʹđđma</suggestion>
+        <suggestion expected="yes">kuâđđmõš</suggestion>
+        <suggestion>luâđđmõš</suggestion>
+        <suggestion>vuäđđmõš</suggestion>
+        <suggestion>kueʹđđmaž</suggestion>
         <suggestion>kueʹđđmai</suggestion>
-        <suggestion>kueʹđđmed</suggestion>
-        <suggestion>kueʹđđmen</suggestion>
-        <suggestion>kueʹđđmin</suggestion>
       </suggestions>
     </word>
     <word corrsugg="1">
@@ -836,10 +836,10 @@
       <position>1</position>
       <suggestions count="5">
         <suggestion expected="yes">kueʹllšeellmõʹšše</suggestion>
+        <suggestion>kuõllšeellmõʹšše</suggestion>
         <suggestion>kueʹlšeellmõʹšše</suggestion>
         <suggestion>kueʹllseellmõʹšše</suggestion>
         <suggestion>kueʹlsšeellmõʹšše</suggestion>
-        <suggestion>čueʹllšeellmõʹšše</suggestion>
       </suggestions>
     </word>
     <word corrsugg="1">
@@ -921,8 +921,8 @@
         <suggestion expected="yes">ǩeerjlaž</suggestion>
         <suggestion>Kaʹrjjlaž</suggestion>
         <suggestion>kaʹrjjlaž</suggestion>
-        <suggestion>ǩeʹrjjat</suggestion>
-        <suggestion>ǩeʹrjjtam</suggestion>
+        <suggestion>ǩeʹrjj-a</suggestion>
+        <suggestion>ǩeʹrjjtab</suggestion>
       </suggestions>
     </word>
     <word corrsugg="1">
@@ -981,17 +981,18 @@
         <suggestion>ǩiõllstaanpiisam</suggestion>
       </suggestions>
     </word>
-    <word corrsugg="-1">
+    <word corrsugg="1">
       <original status="error">ǩiõttââll</original>
       <speller status="error"/>
       <expected>ǩiõttʼtââll</expected>
       <edit_dist>2</edit_dist>
+      <position>1</position>
       <suggestions count="5">
-        <suggestion>miõttââll</suggestion>
+        <suggestion expected="yes">ǩiõttʼtââll</suggestion>
         <suggestion>riõttââll</suggestion>
         <suggestion>šiõttââll</suggestion>
         <suggestion>ǩiõltââll</suggestion>
-        <suggestion>ǩiõttpââll</suggestion>
+        <suggestion>miõttââll</suggestion>
       </suggestions>
     </word>
     <word corrsugg="1">
@@ -1008,32 +1009,32 @@
         <suggestion>kuvddlummuž-</suggestion>
       </suggestions>
     </word>
-    <word corrsugg="4">
+    <word corrsugg="1">
       <original status="error">laaʹjj</original>
       <speller status="error"/>
       <expected>lääʹjj</expected>
       <edit_dist>2</edit_dist>
-      <position>4</position>
+      <position>1</position>
       <suggestions count="5">
+        <suggestion expected="yes">lääʹjj</suggestion>
         <suggestion>laaʹjji</suggestion>
         <suggestion>laaʹjje</suggestion>
         <suggestion>laajj</suggestion>
-        <suggestion expected="yes">lääʹjj</suggestion>
-        <suggestion>šlaajj</suggestion>
+        <suggestion>cääʹjj</suggestion>
       </suggestions>
     </word>
-    <word corrsugg="5">
+    <word corrsugg="1">
       <original status="error">lääʹjjin</original>
       <speller status="error"/>
       <expected>laaʹjjin</expected>
       <edit_dist>2</edit_dist>
-      <position>5</position>
+      <position>1</position>
       <suggestions count="5">
-        <suggestion>ääʹjjin</suggestion>
-        <suggestion>lääʹjjinn</suggestion>
-        <suggestion>lääʹjjen</suggestion>
-        <suggestion>lääʹjj</suggestion>
         <suggestion expected="yes">laaʹjjin</suggestion>
+        <suggestion>laaʹjjid</suggestion>
+        <suggestion>ääʹjjin</suggestion>
+        <suggestion>laaʹjji</suggestion>
+        <suggestion>saaʹjjin</suggestion>
       </suggestions>
     </word>
     <word corrsugg="1">
@@ -1050,32 +1051,32 @@
         <suggestion>läiʹǩǩpiisar</suggestion>
       </suggestions>
     </word>
-    <word corrsugg="4">
+    <word corrsugg="1">
       <original status="error">leäp</original>
       <speller status="error"/>
       <expected>leäʹp</expected>
       <edit_dist>1</edit_dist>
-      <position>4</position>
+      <position>1</position>
       <suggestions count="5">
+        <suggestion expected="yes">leäʹp</suggestion>
         <suggestion>leäi</suggestion>
+        <suggestion>liâ</suggestion>
         <suggestion>leäm</suggestion>
         <suggestion>leäk</suggestion>
-        <suggestion expected="yes">leäʹp</suggestion>
-        <suggestion>lepp</suggestion>
       </suggestions>
     </word>
-    <word corrsugg="5">
+    <word corrsugg="1">
       <original status="error">leät</original>
       <speller status="error"/>
       <expected>leäʹt</expected>
       <edit_dist>1</edit_dist>
-      <position>5</position>
+      <position>1</position>
       <suggestions count="5">
+        <suggestion expected="yes">leäʹt</suggestion>
         <suggestion>leäi</suggestion>
+        <suggestion>liâ</suggestion>
         <suggestion>leäm</suggestion>
         <suggestion>leäk</suggestion>
-        <suggestion>lett</suggestion>
-        <suggestion expected="yes">leäʹt</suggestion>
       </suggestions>
     </word>
     <word corrsugg="-1">
@@ -1084,11 +1085,11 @@
       <expected>leâša</expected>
       <edit_dist>2</edit_dist>
       <suggestions count="5">
-        <suggestion>leâʹša</suggestion>
         <suggestion>leša</suggestion>
         <suggestion>jeäʹla</suggestion>
         <suggestion>leäʹp</suggestion>
         <suggestion>leämma</suggestion>
+        <suggestion>leäʹt</suggestion>
       </suggestions>
     </word>
     <word corrsugg="-1">
@@ -1096,19 +1097,26 @@
       <speller status="error"/>
       <expected>Leâša</expected>
       <edit_dist>2</edit_dist>
-      <suggestions count="5">
-        <suggestion>Leâʹša</suggestion>
+      <suggestions count="4">
         <suggestion>Jeäʹla</suggestion>
-        <suggestion>Šeäšša</suggestion>
-        <suggestion>Šeäʹšš</suggestion>
         <suggestion>Meäšša</suggestion>
+        <suggestion>Šeäʹšš</suggestion>
+        <suggestion>Šeäšša</suggestion>
       </suggestions>
     </word>
-    <word corrsugg="badaccept">
+    <word corrsugg="1">
       <original status="error">leâʹša</original>
-      <speller status="correct"/>
+      <speller status="error"/>
       <expected>leâša</expected>
       <edit_dist>1</edit_dist>
+      <position>1</position>
+      <suggestions count="5">
+        <suggestion expected="yes">leâša</suggestion>
+        <suggestion>leašša</suggestion>
+        <suggestion>leša</suggestion>
+        <suggestion>leeʹšǩ</suggestion>
+        <suggestion>seâša</suggestion>
+      </suggestions>
     </word>
     <word corrsugg="1">
       <original status="error">lia</original>
@@ -1155,10 +1163,10 @@
       <position>1</position>
       <suggestions count="5">
         <suggestion expected="yes">lõʹsses</suggestion>
+        <suggestion>lõssʼses</suggestion>
         <suggestion>lõssâs</suggestion>
         <suggestion>lõssnes</suggestion>
         <suggestion>loʹsses</suggestion>
-        <suggestion>laʹsses</suggestion>
       </suggestions>
     </word>
     <word corrsugg="badaccept">
@@ -1319,10 +1327,10 @@
       <expected>meäʹrreemväʹlddvuõđ</expected>
       <edit_dist>2</edit_dist>
       <suggestions count="5">
-        <suggestion>mieʹrreemväʹlddjuõđ</suggestion>
-        <suggestion>mieʹrreemväʹlddluõđ</suggestion>
-        <suggestion>mieʹrreemväʹlddtuõđ</suggestion>
         <suggestion>mieʹrreemväʹlddvuâđ</suggestion>
+        <suggestion>mieʹrreemväʹlddjuõđ</suggestion>
+        <suggestion>mieʹrreemväʹlddtuõđ</suggestion>
+        <suggestion>mieʹrreemväʹlddluõđ</suggestion>
         <suggestion>mieʹrreemväʹlddvuõi</suggestion>
       </suggestions>
     </word>
@@ -1353,17 +1361,18 @@
         <suggestion>miõlže</suggestion>
       </suggestions>
     </word>
-    <word corrsugg="-1">
+    <word corrsugg="1">
       <original status="error">miõttât</original>
       <speller status="error"/>
       <expected>miõđât</expected>
       <edit_dist>2</edit_dist>
+      <position>1</position>
       <suggestions count="5">
+        <suggestion expected="yes">miõđât</suggestion>
         <suggestion>miõttâd</suggestion>
         <suggestion>miõttâm</suggestion>
+        <suggestion>miõđat</suggestion>
         <suggestion>smiõttât</suggestion>
-        <suggestion>miõtt-ât</suggestion>
-        <suggestion>šiõttât</suggestion>
       </suggestions>
     </word>
     <word corrsugg="1">
@@ -1473,17 +1482,17 @@
         <suggestion>muʹttep</suggestion>
       </suggestions>
     </word>
-    <word corrsugg="3">
+    <word corrsugg="4">
       <original status="error">muštted</original>
       <speller status="error"/>
       <expected>muʹštted</expected>
       <edit_dist>1</edit_dist>
-      <position>3</position>
+      <position>4</position>
       <suggestions count="5">
         <suggestion>muʹtted</suggestion>
+        <suggestion>mušttʼted</suggestion>
         <suggestion>mušttled</suggestion>
         <suggestion expected="yes">muʹštted</suggestion>
-        <suggestion>muštčed</suggestion>
         <suggestion>muõtted</suggestion>
       </suggestions>
     </word>
@@ -1656,15 +1665,18 @@
       <expected>NRK-mainstâttmõõžžâst</expected>
       <edit_dist>1</edit_dist>
     </word>
-    <word corrsugg="-1">
+    <word corrsugg="3">
       <original status="error">Nuʹett</original>
       <speller status="error"/>
       <expected>Nueʹtt</expected>
       <edit_dist>2</edit_dist>
-      <suggestions count="3">
-        <suggestion>Nuʹtt</suggestion>
-        <suggestion>Kuʹstt</suggestion>
-        <suggestion>Fuʹntt</suggestion>
+      <position>3</position>
+      <suggestions count="5">
+        <suggestion>Čueʹtt</suggestion>
+        <suggestion>Jueʹtt</suggestion>
+        <suggestion expected="yes">Nueʹtt</suggestion>
+        <suggestion>Šueʹtt</suggestion>
+        <suggestion>Vueʹtt</suggestion>
       </suggestions>
     </word>
     <word corrsugg="-1">
@@ -1675,9 +1687,9 @@
       <suggestions count="5">
         <suggestion>nuõrorganisaatiai</suggestion>
         <suggestion>nuõrrorganisaatiai</suggestion>
-        <suggestion>nuõriorganisatioi</suggestion>
-        <suggestion>aurriorganisaatiai</suggestion>
-        <suggestion>kuõrorganisaatiai</suggestion>
+        <suggestion>nueʹrorganisaatiai</suggestion>
+        <suggestion>nuâraorganisaatiai</suggestion>
+        <suggestion>nuõʹreorganisaatiai</suggestion>
       </suggestions>
     </word>
     <word corrsugg="-1">
@@ -1688,9 +1700,9 @@
       <suggestions count="5">
         <suggestion>nuõrorganisaatiaid</suggestion>
         <suggestion>nuõrrorganisaatiaid</suggestion>
-        <suggestion>nuõriorganisatioid</suggestion>
-        <suggestion>aurriorganisaatiaid</suggestion>
-        <suggestion>kuõrorganisaatiaid</suggestion>
+        <suggestion>nueʹrorganisaatiaid</suggestion>
+        <suggestion>nuâraorganisaatiaid</suggestion>
+        <suggestion>nuõʹreorganisaatiaid</suggestion>
       </suggestions>
     </word>
     <word corrsugg="1">
@@ -1804,10 +1816,10 @@
       <position>1</position>
       <suggestions count="5">
         <suggestion expected="yes">piâssâm</suggestion>
+        <suggestion>peässam</suggestion>
         <suggestion>piâssâd</suggestion>
         <suggestion>piâssâp</suggestion>
         <suggestion>piâssum</suggestion>
-        <suggestion>siâssâm</suggestion>
       </suggestions>
     </word>
     <word corrsugg="1">
@@ -1905,10 +1917,10 @@
       <position>1</position>
       <suggestions count="5">
         <suggestion expected="yes">puõʹtti</suggestion>
-        <suggestion>puõtt</suggestion>
-        <suggestion>puåtti</suggestion>
-        <suggestion>tuõtti</suggestion>
-        <suggestion>muõtti</suggestion>
+        <suggestion>pueʹtti</suggestion>
+        <suggestion>puõʹđi</suggestion>
+        <suggestion>pueʹđi</suggestion>
+        <suggestion>pueʹddi</suggestion>
       </suggestions>
     </word>
     <word corrsugg="-1">
@@ -1991,31 +2003,32 @@
       <expected>riâššât</expected>
       <edit_dist>1</edit_dist>
     </word>
-    <word corrsugg="-1">
+    <word corrsugg="1">
       <original status="error">riâššeš</original>
       <speller status="error"/>
       <expected>rieʹššeš</expected>
       <edit_dist>2</edit_dist>
+      <position>1</position>
       <suggestions count="5">
+        <suggestion expected="yes">rieʹššeš</suggestion>
         <suggestion>riâššteš</suggestion>
         <suggestion>riâšščeš</suggestion>
-        <suggestion>riâššâm</suggestion>
-        <suggestion>riâššmõš</suggestion>
-        <suggestion>riâššât</suggestion>
+        <suggestion>rieʹšše</suggestion>
+        <suggestion>rieʹššem</suggestion>
       </suggestions>
     </word>
-    <word corrsugg="1">
+    <word corrsugg="2">
       <original status="error">riâʹšše</original>
       <speller status="error"/>
       <expected>rieʹšše</expected>
       <edit_dist>1</edit_dist>
-      <position>1</position>
+      <position>2</position>
       <suggestions count="5">
-        <suggestion expected="yes">rieʹšše</suggestion>
-        <suggestion>riõʹšše</suggestion>
-        <suggestion>riâšši</suggestion>
-        <suggestion>rieʹššeš</suggestion>
         <suggestion>reäʹšše</suggestion>
+        <suggestion expected="yes">rieʹšše</suggestion>
+        <suggestion>rieʹššeš</suggestion>
+        <suggestion>riõʹšše</suggestion>
+        <suggestion>lieʹšše</suggestion>
       </suggestions>
     </word>
     <word corrsugg="1">
@@ -2039,10 +2052,10 @@
       <position>1</position>
       <suggestions count="5">
         <suggestion expected="yes">sââʹjest</suggestion>
+        <suggestion>rääʹjest</suggestion>
         <suggestion>haaʹjest</suggestion>
         <suggestion>raaʹjest</suggestion>
         <suggestion>taaʹjest</suggestion>
-        <suggestion>vaaʹjest</suggestion>
       </suggestions>
     </word>
     <word corrsugg="1">
@@ -2189,13 +2202,14 @@
         <suggestion>-škoouʹlʼjummšest</suggestion>
       </suggestions>
     </word>
-    <word corrsugg="1">
+    <word corrsugg="2">
       <original status="error">sosiaalaž</original>
       <speller status="error"/>
       <expected>sosiaalʼlaž</expected>
       <edit_dist>2</edit_dist>
-      <position>1</position>
-      <suggestions count="2">
+      <position>2</position>
+      <suggestions count="3">
+        <suggestion>Rosiäälaž</suggestion>
         <suggestion expected="yes">sosiaalʼlaž</suggestion>
         <suggestion>Rosiaaluž</suggestion>
       </suggestions>
@@ -2315,7 +2329,7 @@
         <suggestion>sääʹmlääiʹjest</suggestion>
         <suggestion>sääʹmlääʹdest</suggestion>
         <suggestion>sääʹmlääʹvest</suggestion>
-        <suggestion>sääʹmläkkjest</suggestion>
+        <suggestion>sääʹmhaaʹjest</suggestion>
       </suggestions>
     </word>
     <word corrsugg="0">
@@ -2445,7 +2459,7 @@
         <suggestion expected="yes">Taar</suggestion>
         <suggestion>Taaʹri</suggestion>
         <suggestion>Taaʹre</suggestion>
-        <suggestion>Vaaʹri</suggestion>
+        <suggestion>Kääʹr</suggestion>
       </suggestions>
     </word>
     <word corrsugg="1">
@@ -2541,9 +2555,9 @@
       <suggestions count="5">
         <suggestion expected="yes">tiõrvâsvuõttpiisar</suggestion>
         <suggestion>tiõrvâsvuõttviizâr</suggestion>
+        <suggestion>tiõrvâsvuõđpiisar</suggestion>
         <suggestion>tiõrvâsvuõddpiisar</suggestion>
         <suggestion>tiõrvâsvuõttciiǥar</suggestion>
-        <suggestion>tiõrvâsvuõttpiisam</suggestion>
       </suggestions>
     </word>
     <word corrsugg="1">
@@ -2707,10 +2721,10 @@
       <position>1</position>
       <suggestions count="5">
         <suggestion expected="yes">tääiʹben</suggestion>
-        <suggestion>tääiǥen</suggestion>
+        <suggestion>taaibin</suggestion>
         <suggestion>kääiben</suggestion>
+        <suggestion>tääiǥen</suggestion>
         <suggestion>nääiben</suggestion>
-        <suggestion>täävžen</suggestion>
       </suggestions>
     </word>
     <word corrsugg="1">
@@ -2883,9 +2897,9 @@
       <suggestions count="5">
         <suggestion expected="yes">vuäitče</suggestion>
         <suggestion>vuäitt</suggestion>
+        <suggestion>vuäđče</suggestion>
         <suggestion>vuäiʹtte</suggestion>
         <suggestion>vuäittam</suggestion>
-        <suggestion>vuäitči</suggestion>
       </suggestions>
     </word>
     <word corrsugg="1">
@@ -2898,8 +2912,8 @@
         <suggestion expected="yes">vuäitči</suggestion>
         <suggestion>vuäitt-i</suggestion>
         <suggestion>vuäitt</suggestion>
-        <suggestion>vuäitče</suggestion>
-        <suggestion>vuäittam</suggestion>
+        <suggestion>vuäđči</suggestion>
+        <suggestion>vuäʹđči</suggestion>
       </suggestions>
     </word>
     <word corrsugg="2">
@@ -3130,18 +3144,18 @@
         <suggestion>vääʹrrvuässas</suggestion>
       </suggestions>
     </word>
-    <word corrsugg="3">
+    <word corrsugg="1">
       <original status="error">ääʹššid</original>
       <speller status="error"/>
       <expected>aaʹššid</expected>
       <edit_dist>2</edit_dist>
-      <position>3</position>
+      <position>1</position>
       <suggestions count="5">
-        <suggestion>ääʹššed</suggestion>
-        <suggestion>ääʹšš</suggestion>
         <suggestion expected="yes">aaʹššid</suggestion>
-        <suggestion>ääʹššla</suggestion>
-        <suggestion>ääʹššlaid</suggestion>
+        <suggestion>aaʹšši</suggestion>
+        <suggestion>aaʹššin</suggestion>
+        <suggestion>aaʹlšid</suggestion>
+        <suggestion>kaaʹššid</suggestion>
       </suggestions>
     </word>
     <word corrsugg="3">
