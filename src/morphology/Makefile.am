@@ -97,7 +97,8 @@ GENERATED_LEXC_SRCS=\
 			 $(srcdir)/stems/Pcle_sms2x.lexc     \
 			 $(srcdir)/stems/Prefix_sms2x.lexc     \
 			 $(srcdir)/stems/Pron_sms2x.lexc     \
-			 $(srcdir)/stems/V_sms2x.lexc     
+			 $(srcdir)/stems/V_sms2x.lexc     \
+			 $(srcdir)/stems/ABBR_sms2x.lexc
 
 # Set this to the names of all source xml files, if any
 GT_XML_SRCS=\
@@ -120,7 +121,8 @@ GT_XML_SRCS=\
 			 stems/Pcle_sms2x.xml     \
 			 stems/Prefix_sms2x.xml     \
 			 stems/Pron_sms2x.xml     \
-			 stems/V_sms2x.xml     
+			 stems/V_sms2x.xml     \
+			 stems/ABBR_sms2x.xml
 
 # Define any additional lexc sources here (compiled on their own):
 GT_LOCAL_SRCS=
