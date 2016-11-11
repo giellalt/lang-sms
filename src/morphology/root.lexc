@@ -555,6 +555,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
  +Use/CircN       !!= * __@CODE@__ circular paths for the numerals (old ^N^)
  +Use/NG          !!= * __@CODE@__ not-generate, for ped generation isme-ped.fst
  +Largo		  !!= * __@CODE@__ largo variant instead of allegro saaǥǥstõõllâd vs saǥstõõllâd
+ +Allegro	!!= * __@CODE@__ never last element of compound words
 
 !! Compounding
 +Cmp 
@@ -562,8 +563,9 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +CmpNP/Pref
 +Cmp/SplitR	!!= * __@CODE@__ This to take care of Oahpo- ja dutkandept - want this in speller Remainder is found to the right
 +Cmp/SplitL	!!= * __@CODE@__ Remainder is found to the left
-
-+Allegro	!!= * __@CODE@__ never last element of compound words
++Cmp/SgNom
++Cmp/SgGen
++Cmp/PlGen
 
 !! !!Flag diacritics
 !! We have manually optimised the structure of our lexicon using following
@@ -598,54 +600,54 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 
 LEXICON Root 	  !!= * @CODE@
-                             0    Abbreviation          ; !!= * @CODE@ abbreviations
-                             0    Adposition            ; !!= * @CODE@
-                             0    ProperNoun            ; !!= * @CODE@
+    Abbreviation          ; !!= * @CODE@ abbreviations
+    Adposition            ; !!= * @CODE@
+    ProperNoun            ; !!= * @CODE@
 
-                             0    VerbRoot              ; !!= * @CODE@
-                             0    Adverb                ; !!= * @CODE@
-                             0    Subjunction           ; !!= * @CODE@
-                             0    Conjunction           ; !!= * @CODE@
-                             0    Interjection          ; !!= * @CODE@
-                             0    Pronoun               ; !!= * @CODE@
-                             0    Punctuation           ; !!= * @CODE@
-                             0    Particle              ; !!= * @CODE@
+    VerbRoot              ; !!= * @CODE@
+    Adverb                ; !!= * @CODE@
+    Subjunction           ; !!= * @CODE@
+    Conjunction           ; !!= * @CODE@
+    Interjection          ; !!= * @CODE@
+    Pronoun               ; !!= * @CODE@
+    Punctuation           ; !!= * @CODE@
+    Particle              ; !!= * @CODE@
 
 !! This generates from merged materials
-                                  A_sms2x               ; !!= * @CODE@ This generates from merged materials
-                                  TRAB_sms2x            ; !!= * @CODE@ transitive abbreviations
-                                  TRNUMAB_sms2x         ; !!= * @CODE@ transitive abbreviations with numerals
-                             0    Adp_sms2x             ; !!= * @CODE@ adpositions
-                             0    Adv_sms2x             ; !!= * @CODE@ adverbs
-                             0    CC_sms2x              ; !!= * @CODE@ conjunctions
-                             0    CS_sms2x              ; !!= * @CODE@ subjunctions
-                             0    Det_sms2x             ; !!= * @CODE@ determiners
-                             0    Interj_sms2x          ; !!= * @CODE@ This generates from merged materials
-                             0    N_sms2x               ; !!= * @CODE@ This generates from merged materials
+         A_sms2x               ; !!= * @CODE@ This generates from merged materials
+         TRAB_sms2x            ; !!= * @CODE@ transitive abbreviations
+         TRNUMAB_sms2x         ; !!= * @CODE@ transitive abbreviations with numerals
+    Adp_sms2x             ; !!= * @CODE@ adpositions
+    Adv_sms2x             ; !!= * @CODE@ adverbs
+    CC_sms2x              ; !!= * @CODE@ conjunctions
+    CS_sms2x              ; !!= * @CODE@ subjunctions
+    Det_sms2x             ; !!= * @CODE@ determiners
+    Interj_sms2x          ; !!= * @CODE@ This generates from merged materials
+    N_sms2x               ; !!= * @CODE@ This generates from merged materials
   +Cmp/SplitL+Use/SpellNoSugg#:-# N_sms2x               ; !!= * @CODE@ This allows split compound nouns
-                             0    N_Prop_sms2x          ; !!= * @CODE@ This generates from merged materials
-                             0    N_Prop_Toponyms_sms2x ; !!= * @CODE@ Toponymy
-                             0    Num_sms2x             ; !!= * @CODE@ This generates from merged materials
-                             0    Pcle_sms2x            ; !!= * @CODE@ This generates from merged materials
-                             0    Prefix_sms2x          ; !!= * @CODE@ This generates from merged materials
-                             0    Pron_sms2x            ; !!= * @CODE@ This generates from merged materials
-                             0    V_sms2x               ; !!= * @CODE@ This generates from merged materials
+    N_Prop_sms2x          ; !!= * @CODE@ This generates from merged materials
+    N_Prop_Toponyms_sms2x ; !!= * @CODE@ Toponymy
+    Num_sms2x             ; !!= * @CODE@ This generates from merged materials
+    Pcle_sms2x            ; !!= * @CODE@ This generates from merged materials
+    Prefix_sms2x          ; !!= * @CODE@ This generates from merged materials
+    Pron_sms2x            ; !!= * @CODE@ This generates from merged materials
+    V_sms2x               ; !!= * @CODE@ This generates from merged materials
 
-                                  Numeral               ; !!= * @CODE@ This feeds Arabi numerals, borrowed from sme
+         Numeral               ; !!= * @CODE@ This feeds Arabi numerals, borrowed from sme
 
 
-                             0    EXCEPTIONS            ;
+    EXCEPTIONS            ;
 
-                             0    A_NEWWORDS            ; !!= * @CODE@ These are new adjectives beginning 2015-02-11
-                             0    ADP_NEWWORDS          ; !!= * @CODE@ These are new adpositions
-                             0    ADV_NEWWORDS          ; !!= * @CODE@ These are new adverbs
-                             0    CC_NEWWORDS           ; !!= * @CODE@ These are new conjunctions
-                             0    N_NEWWORDS            ; !!= * @CODE@ These are new nouns beginning 2015-01-10
-                             0    PCLE_NEWWORDS         ; !!= * @CODE@ These are particles
-                             0    PRON_NEWWORDS         ; !!= * @CODE@ These are pronouns
-                             0    PROP_NEWWORDS         ; !!= * @CODE@ These are new proper nouns beginning 2015-03-04
-                             0    TOPONYMS_NEWWORDS     ; !!= * @CODE@ 2016-02-06
-                             0    V_NEWWORDS            ; !!= * @CODE@ These are new verbs
+    A_NEWWORDS            ; !!= * @CODE@ These are new adjectives beginning 2015-02-11
+    ADP_NEWWORDS          ; !!= * @CODE@ These are new adpositions
+    ADV_NEWWORDS          ; !!= * @CODE@ These are new adverbs
+    CC_NEWWORDS           ; !!= * @CODE@ These are new conjunctions
+    N_NEWWORDS            ; !!= * @CODE@ These are new nouns beginning 2015-01-10
+    PCLE_NEWWORDS         ; !!= * @CODE@ These are particles
+    PRON_NEWWORDS         ; !!= * @CODE@ These are pronouns
+    PROP_NEWWORDS         ; !!= * @CODE@ These are new proper nouns beginning 2015-03-04
+    TOPONYMS_NEWWORDS     ; !!= * @CODE@ 2016-02-06
+    V_NEWWORDS            ; !!= * @CODE@ These are new verbs
 
 !! INCOMING _lemma:stem Contlex_ sets to be distinguished from glossing in progress
 !                                 AdjectiveRoot         ;
@@ -812,5 +814,5 @@ LEXICON SUF_
  +Suf: # ;
 
 LEXICON SUF/A_
-  ettšem+Der/A:ettšẹ%^1VOWm  A_NALLSHEM ;
- nallšem+Der/A:nallšẹ%^1VOWm A_NALLSHEM ;
+  ettšem+Der/A@U.Cap.Opt@:ettšẹ%^1VOWm@U.Cap.Opt@  A_NALLSHEM ;
+ nallšem+Der/A@U.Cap.Opt@:nallšẹ%^1VOWm@U.Cap.Opt@ A_NALLSHEM ;
