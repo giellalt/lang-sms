@@ -1022,22 +1022,22 @@ Rules
 !!€ nââʹer+N+Sg+Nom _sleep_
 !!€ nâ%^1VOW0kker%^Pen%^V2VV%^Pen%^PAL%^Pen%^KK2ZERO
 !!€ nââʹ00er%^Pen%^V2VV%^Pen%^PAL%^Pen%^KK2ZERO
-      [e|E] _ [u|Cns:] Cns:+ BetweenStemAndPALNo %^PALÂ: %^PALNo: ;
+      [e|E] _ [u|Cns:] Cns:+ BetweenStemAndHeight %^PALÂ: %^PALNo: ;
 
 
 "%^1VOW:ẹ relative vowel lengthening"
 !! __@RULENAME@__ - 
- %^1VOW:ẹ <=>         OnSetC [ẹ|Ẹ] _ (i|u) Cns:+ (%{XC%}:) %^V2VV: ;
+ %^1VOW:ẹ <=>         OnSetC [ẹ|Ẹ] _ (i|u) Cns:+ (%{XC%}:) %^V2VV: BetweenPALNoAndMorphRightArrow RBound ;
 !!€ pẹ%^1VOWss%^V2VV
 !!€ pẹẹss0
 
 
 "Even syllabic verbs I, relative vowel lengthening %^1VOW:e"
 !! __@RULENAME@__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
- %^1VOW:e <=> OnSetC [e|E] _  (ʹ:|0:ʹ) Cns:+ %^V2VV: BetweenVowHeightAndConsGrade ;
+ %^1VOW:e <=> OnSetC [e|E|ẹ:] _  :ʹ Cns:+ %^V2VV:  %^PAL: ;
 !!€ čââʹlmtẹ%^1VOW0m%^V2VV%^PAL
 !!€ čââʹlmteeʹm00
-        OnSetC [Vow:e|Vow:E] _ (i|u) (ʹ:|0:ʹ) Cns:+ (%{XC%}:) %^V2VV: ;
+        OnSetC [Vow:e|Vow:E] _ (i|u) :ʹ Cns:+ (%{XC%}:) %^V2VV:  %^PAL: ;
 !!€ pẹ%^1VOWi0vv%^V2VV%^PAL%^XYY2XY
 !!€ peeiʹv0000
          OnSetC i:e _  (ʹ:|0:ʹ) Cns:+ %^V2VV: %^VOWLower: ;
@@ -1046,7 +1046,7 @@ Rules
 
 !Distinguishing mainstam and maainstam
       Cns: Vow:e _ (u:|i:) (ʹ:|0:ʹ)  Cns:+ (Vow:) Cns:+  %^Pen: %^V2VV: ; 
-      [ n | š ] Vow:e _ (ʹ:|0:ʹ) ǩ ǩ %^V2VV: ;
+      [ n | š ] Vow:e _ (ʹ:|0:ʹ) ǩ %{XC%}: %^V2VV: %^PAL: ;
 !!€ kaađnẹ%^1VOW0ǩ%{XC%}%^V2VV%^PAL%^C2CC
 !!€ kaađneeʹǩǩ000
 
