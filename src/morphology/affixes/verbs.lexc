@@ -964,7 +964,7 @@ LEXICON V0_KUOSKKYD !!= * @CODE@ kuõskkâd:kuõskk
 :%^VOWLower VSUF-IND-PRS-SG3_YD ; !!= * @CODE@ (2)  Ind.Prs.Sg3: kuâskk
 !! +Ind+Prs+Sg3, +Imprt+Pl3
 
-+Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ; !!= * @CODE@ (3)  Ind.Prs.Pl3: kueʹsǩǩe (allophonic)
++Ind+Prs+Pl3:%^VOWLower%^PALE%^PAL%>e K ; !!= * @CODE@ (3)  Ind.Prs.Pl3: kueʹsǩǩe (allophonic)
 !! +Ind+Prs+Pl3
 
 :%^PAL VSUF-IND-PRT-PL3_YD ; !!= * @CODE@ (4)  Ind.Prt.Pl3: kuõʹsǩǩe
@@ -2494,7 +2494,7 @@ LEXICON TV_KUEQDDDED !!= * @CODE@ kueʹdded:kuâdˈd
 LEXICON V0_KUEQDDDED !!= * @CODE@ kueʹdded:kuâdˈd
 
 !! like: V_JUEQKHKHED
-! Stem is Strong
+! Stem is extra Strong
 ! Diphthong
 ! Vowel shift
 ! FORMS
@@ -2530,7 +2530,7 @@ LEXICON V0_KUEQDDDED !!= * @CODE@ kueʹdded:kuâdˈd
 !! Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 
 !! ExtraStrong-RaisedVowel-No-palatalization
-:%^VOWRaise VSUF-IMPRT-CONNEGII_ED ; !!= * @CODE@ (8 kuõdˈdu
+:%^VOWRaise VSUF-IMPRT-CONNEGII_ED ; !!= * @CODE@ (8) kuõdˈdu
 !! Imprt+ConNeg, Pass+PrfPrc
 
 !! ExtraStrong-LoweredVowel-No-palatalization (9)
@@ -2545,6 +2545,67 @@ LEXICON V0_KUEQDDDED !!= * @CODE@ kueʹdded:kuâdˈd
 
 !! (12) Weak-RaisedVowel-NoPalatalization
 :%^VOWRaise%^CCC2CC VSUF-CHED_ED ; !!= * @CODE@  (12) +Der/čed: kuõdd-
+
+LEXICON V_SHIEQTTTED !!= * @CODE@ šieʹtted:kuâdˈd
++V: V0_SHIEQTTTED ;
+LEXICON IV_SHIEQTTTED !!= * @CODE@ šieʹtted:šeâtˈt
++V+IV: V0_SHIEQTTTED ;
+LEXICON TV_SHIEQTTTED !!= * @CODE@ šieʹtted:šeâtˈt
++V+TV: V0_SHIEQTTTED ;
+LEXICON V0_SHIEQTTTED !!= * @CODE@ šieʹtted:šeâtˈt
+
+!! like: V_SHIEQTTTED
+! Stem is extra Strong
+! Diphthong
+! Vowel shift
+! FORMS
+
+!! Strong-HighVowel-Palatalization
+:%^VOWRaise%^PALE%^PAL VSUF-INF_ED ;		!!= * @CODE@ (1) šieʹtˈted 
+!! V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
+!! Actio, ActEss, PrsPrc
+
+!! Strong-LoweredVowel-No-palatalization
+: VSUF-IND-PRS-SG3_ED ; 	     		!!= * @CODE@ (2) šeâtˈt
+!! +V+Ind+Prs+Sg3, Ind.Prt.ConNeg, PrfPrc
+
+!! ExtraStrong-LoweredVowel-Palatalization
++Ind+Prs+Pl3:%^PALE%^PAL%>e K ;     !!= * @CODE@ (3) šieʹtˈte
+!! +V+Ind+Prs+Pl3
+
+!! ExtraStrong-RaisedVowel-Palatalization
+:%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ; !!= * @CODE@ (4) šiõʹtˈte
+!!  +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
+
+!! Weak-StableV-Palatalization
+:%^VOWRaise%^PALE%^PAL%^CCC2CC VSUF-IND-PRS-CONNEG_ED ; !!= * @CODE@ (5) šieʹtt-
+!! Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
+!!   Ger.Temp.PxSg3: jeäʹleeʹstes
+
+!! Weak-RaisedVowel-Palatalization
+:%^VOWRaise%^PALE%^PAL%^CCC2CC%> VSUF-POTENTIAL_ED ; !!= * @CODE@ (6) šieʹttež
+!! Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
+
+!! Weak-LoweredVowel-No-palatalization
+:%^CCC2CC%> VSUF-CONDITIONAL_ED ; !!= * @CODE@ (7) šeâtt-
+!! Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
+
+!! ExtraStrong-RaisedVowel-No-palatalization
+:%^VOWRaise VSUF-IMPRT-CONNEGII_ED ; !!= * @CODE@ (8) šiõtˈtu
+!! Imprt+ConNeg, Pass+PrfPrc
+
+!! ExtraStrong-LoweredVowel-No-palatalization (9)
+: VSUF-IMPRT-PL3_ED ;  !!= * @CODE@ šeâtˈtaz
+!! Imprt+Pl3
+
+!! Allegro (10) šieʹt»
+:%^VOWRaise%^PALE%^PAL%^CCC2C%>e VSUF-ALLEGRO_ED ;
+
+!! (11) Present Participle:
+:%^VOWRaise%^PAL%> FOR-VSUF-PRSPRC_ED ; !!= * @CODE@ (11) šiõʹtˈti
+
+!! (12) Weak-RaisedVowel-NoPalatalization
+:%^VOWRaise%^CCC2CC VSUF-CHED_ED ; !!= * @CODE@  (12) +Der/čed: šiõtt-
 
 LEXICON V_JUQRDDED !!= * @CODE@ juʹrdded:jurdd
 +V: V0_JUQRDDED ;
