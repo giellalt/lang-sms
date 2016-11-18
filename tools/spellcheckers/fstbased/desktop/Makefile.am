@@ -11,29 +11,20 @@ CORPUSNAME=spellercorpus
 # Specify whether to use corpus weights for frequency ranking of suggestions.
 # Make sure you test the suggestion quality both before and after changing this
 # setting.
-ENABLE_CORPUS_WEIGHTS=yes
+ENABLE_CORPUS_WEIGHTS=no
 
 # Number of lines (= word forms) in the sort-uniqued corpus. If empty the whole
 # corpus will be used. Too large a corpus can make the acceptor fst unneccessary
 # big without improving the suggestion quality in a noticable way. A starting
 # point could be to only include word forms occurring at least twice. Try
 # different values to find the best compromise between fst size and suggestion
-# quality.
+# quality. Look at the file:
+# tools/spellcheckers/fstbased/desktop/spellercorpus.uniq.txt
+# and look for a relevant cut-off line, typically somewhere in the two occurence
+# section.
 CORPUS_SIZE=
 
 ### BEGIN: Local build rules: *.hfst: *.tmp.hfst ###
-
-generator-desktopspeller-gt-norm.hfst: \
-			generator-desktopspeller-gt-norm.tmp.hfst \
-			filters/remove-derivation-position-tags.hfst
-	$(AM_V_HXFST)$(PRINTF) "\
-	set encode-weights ON \n\
-	read regex \
-		@\"filters/remove-derivation-position-tags.hfst\" \
-	.o. @\"$<\" \
-	; \n\
-	save stack $@\n\
-	quit\n" | $(HFST_XFST) -p $(MORE_VERBOSITY)
 
 #### END: Local build rules: *.hfst: *.tmp.hfst ####
 
