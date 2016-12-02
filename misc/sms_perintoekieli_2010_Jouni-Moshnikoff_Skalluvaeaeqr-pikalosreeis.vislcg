@@ -16,9 +16,9 @@
 "<mainstam>"
 	"mainsted" V Ind Prs Sg1 @FMV #4->0
 "<tän>"
-	"tät" Pron Dem Sg Acc @<OBJ #5->6
+	"tät" Det Dem Sg Acc @X #5->6
 "<nåkam>"
-	"nåkkam" Det Der/N Pl Nom @X #6->4
+	"nåkkam" Det Der/N Sg Acc @<OBJ #6->4
 "<,>"
 	"," CLB @CLB #7->13
 "<ko>"
@@ -110,9 +110,9 @@
 "<pueʹrr>"
 	"pueʹrr" N Sg Nom @<SUBJ #5->4
 "<motorkååʹlzin>"
-	"motorkååʹlez" N Pl Loc @<ADVL-ine #6->4
+	"motorkååʹlez" N Sg Com @X #6->7
 "<vuejjad>"
-	"vuejjad" V Inf @IMV #7->4
+	"vuejjad" V Inf @IMV #7->5
 "<dõõzze>"
 	"dõõt" Pron Det Sg Ill @<ADVL #8->7
 "<.>"
@@ -122,7 +122,6 @@
 	"Ooudbu" ? @X #1->0
 "<jeäʹǩǩää>"
 	"jeäʹǩǩää" Adv @ADVL> #2->9
-	"jeäʹǩǩääž" N Pl Nom @SUBJ> #2->9
 "<,>"
 	"," CLB @CLB #3->4
 "<että>"
@@ -154,7 +153,6 @@
 	"leeʹd" V Ind Prs Pl3 @FS-<ADVL #16->9
 "<âʹlnn>"
 	"âʹlnn" Adv Loc @<ADVL-ine #17->16
-	"âʹlnn" Pron @X #17->16
 "<.>"
 	"." CLB @CLB #18->9
 
@@ -173,9 +171,9 @@
 "<,>"
 	"," CLB @CLB #7->6
 "<čõõđ>"
-	"čõõđ" Adv @<ADVL-ine #8->5
+	"čõõđ" Adv @<ADVL-ine #8->9
 "<mõõni>"
-	"mââʹnn" N Pl Gen @<ADVL #9->5
+	"mõõnnâd" V Ind Prt Sg3 @<FMV #9->1
 "<pâi>"
 	"pâi" CC @CNP #10->9
 "<.>"
@@ -184,34 +182,34 @@
 "<Na>"
 	"na" Interj @INTERJ #1->0
 "<mon>"
-	"mon" Pron Pers Sg1 Nom @SUBJ> #2->7
+	"mon" Pron Pers Sg1 Nom @SUBJ> #2->3
 "<ceälkam:>"
-	"ceälkam:" ? @X #3->0
+	"ceälkam:" V Ind Prs Sg1 @FMV #3->0
+"<:>"
+	":" PUNCT @CLB #4->3
 "<«>"
-	"«" PUNCT LEFT @CLB #4->5
+	"«" PUNCT LEFT @CLB #5->6
 "<Mon-han>"
-	"mon" Pron Pers Sg1 Nom Foc/han @SUBJ> #5->7
+	"mon" Pron Pers Sg1 Nom Foc/han @SUBJ> #6->8
 "<kâʹl>"
-	"kâʹl" Adv @ADVL-ine> #6->7
+	"kâʹl" Adv @ADVL-ine> #7->8
 "<vuäitam>"
-	"vueiʹtted" V Ind Prs Sg1 @FMV #7->0
+	"vueiʹtted" V Ind Prs Sg1 @FMV #8->0
 "<sââʹvǩivuiʹm>"
-	"sââʹviǩ" N Pl Com @<ADVL #8->7
+	"sââʹviǩ" N Pl Com @<ADVL #9->8
 "<ǩeässjed>"
-	"ǩeässjed" V Inf @<ADVL #9->7
-	"ǩeäʹssjed" V Inf @<ADVL #9->7
+	"ǩeässjed" V Inf @<ADVL #10->8
 "<tuu>"
-	"ton" Pron Pers Sg2 Gen @>P #10->11
+	"ton" Pron Pers Sg2 Gen @>P #11->12
 "<mieʹldd>"
-	"mieʹldd" Po @-F<ADVL-ine #11->9
+	"mieʹldd" Po @-F<ADVL-ine #12->10
 "<.>"
-	"." CLB @CLB #12->1
+	"." CLB @CLB #13->1
 
 "<Pâi>"
 	"pâi" CC @CVP #1->3
 "<čâustõõǥǥ>"
-	"čâustõk" N Pl Nom @SUBJ> #2->3
-	"čâustõk" N Sg Gen @ADVL> #2->3
+	"čâustõk" N Sg Acc @OBJ> #2->3
 "<piijjlep>"
 	"piijjled" V Ind Prs Pl1 @FMV #3->0
 "<[>"
