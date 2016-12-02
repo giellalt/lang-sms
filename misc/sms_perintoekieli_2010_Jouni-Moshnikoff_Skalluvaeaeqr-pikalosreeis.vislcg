@@ -128,7 +128,7 @@
 "<että>"
         "että" Err/Lex CS @cvp #4->5
 "<vueʹlǧǧep>"
-        "vueʹlǧǧed" V Ind Prs Pl1 @fmv #5->0
+        "vueʹlǧǧed" V Imprt Pl1 @fmv #5->0
 "<mâka>"
         "mâka" Adv @ladvl-ine #6->5
 "<kåittad>"
@@ -157,189 +157,182 @@
         "." CLB @clb #18->5
 
 "<Ij>"
-	"ij" V Neg Ind Sg3 @FAUX #1->0
+        "ij" V Neg Ind Sg3 @faux #1->0
 "<kuâddam>"
-	"kueʹdded" V Act PrfPrc @IMV #2->1
+        "kueʹdded" V Act PrfPrc @imv #2->1
 "<ij>"
-	"ij" V Neg Ind Sg3 @FAUX #3->1
+        "ij" V Neg Ind Sg3 @faux #3->1
 "<,>"
-	"," CLB @CLB #4->3
+        "," CLB @clb #4->3
 "<ij>"
-	"ij" V Neg Ind Sg3 @FAUX #5->3
+        "ij" V Neg Ind Sg3 @faux #5->3
 "<tõt>"
-	"tõt" Pron Dem Sg Nom @<SUBJ #6->5
+        "tõt" Pron Dem Sg Nom @lsubj #6->5
 "<,>"
-	"," CLB @CLB #7->6
+        "," CLB @clb #7->6
 "<čõõđ>"
-	"čõõđ" Adv @<ADVL-ine #8->9
+        "čõõđ" Adv @ladvl-ine #8->9
 "<mõõni>"
-	"mõõnnâd" V Ind Prt Sg3 @<FMV #9->1
+        "mõõnnâd" V Ind Prt Sg3 @lfmv #9->1
 "<pâi>"
-	"pâi" CC @CNP #10->9
+        "pâi" Adv @x #10->9
 "<.>"
-	"." CLB @CLB #11->1
+        "." CLB @clb #11->1
 
 "<Na>"
-	"na" Interj @INTERJ #1->0
+        "na" Interj @interj #1->3
 "<mon>"
-	"mon" Pron Pers Sg1 Nom @SUBJ> #2->3
-"<ceälkam:>"
-	"ceälkam:" V Ind Prs Sg1 @FMV #3->0
+        "mon" Pron Pers Sg1 Nom @subjr #2->3
+"<ceälkam>"
+        "ceälkam" V Ind Prs Sg1 @fmv #3->0
 "<:>"
-	":" PUNCT @CLB #4->3
+        ":" PUNCT @clb #4->3
 "<«>"
-	"«" PUNCT LEFT @CLB #5->6
+        "«" PUNCT LEFT @clb #5->6
 "<Mon-han>"
-	"mon" Pron Pers Sg1 Nom Foc/han @SUBJ> #6->8
+        "mon" Pron Pers Sg1 Nom Foc/han @subjr #6->8
 "<kâʹl>"
-	"kâʹl" Adv @ADVL-ine> #7->8
+        "kâʹl" Adv @advl-ine> #7->8
 "<vuäitam>"
-	"vueiʹtted" V Ind Prs Sg1 @FMV #8->0
+        "vueiʹtted" V Ind Prs Sg1 @fmv #8->3
 "<sââʹvǩivuiʹm>"
-	"sââʹviǩ" N Pl Com @<ADVL #9->8
+        "sââʹviǩ" N Pl Com @ladvl #9->8
 "<ǩeässjed>"
-	"ǩeässjed" V Inf @<ADVL #10->8
+        "ǩeässjed" V Inf @ladvl #10->8
 "<tuu>"
-	"ton" Pron Pers Sg2 Gen @>P #11->12
+        "ton" Pron Pers Sg2 Gen @rp #11->12
 "<mieʹldd>"
-	"mieʹldd" Po @-F<ADVL-ine #12->10
+        "mieʹldd" Po @-fradvl-ine #12->10
 "<.>"
-	"." CLB @CLB #13->1
+        "." CLB @clb #13->1
 
 "<Pâi>"
-	"pâi" CC @CVP #1->3
+        "pâi" Adv @x #1->3
 "<čâustõõǥǥ>"
-	"čâustõk" N Sg Acc @OBJ> #2->3
+        "čâustõk" N Sg Acc @objr #2->3
 "<piijjlep>"
-	"piijjled" V Ind Prs Pl1 @FMV #3->0
+        "piijjled" V Ind Prs Pl1 @fmv #3->0
 "<[>"
-	"[" PUNCT LEFT @CLB #4->5
+        "[" PUNCT LEFT @clb #4->5
 "<motorkååʹlez>"
-	"moottor" N Allegro Cmp/SgNom Cm @X #5->0
+        "moottorkååʹlez" N Sg Acc @obj #5->0
 "<čõnnstep>"
-	"čõnnstep" ? @X #6->0
+        "čõnstep" V Ind Prs Pl3 @X #6->0
 "<]>"
-	"]" PUNCT RIGHT @CLB #7->6
+        "]" PUNCT RIGHT @clb #7->6
 "<.>"
-	"." CLB @CLB #8->3
-
+        "." CLB @clb #8->3
 "<»>"
-	"»" PUNCT RIGHT @CLB #1->0
+	"»" PUNCT RIGHT @clb #1->0
 
 "<Nuʹtt>"
-	"nuʹtt" Pcle @PCLE #1->2
+        "nuʹtt" Adv @x #1->2
 "<tiârtim>"
-	"tiârrâd" V Der/ted V TV Ind P @FMV #2->0
+        "tiârrâd" V Der/ted V TV Ind Prt Pl1 @fmv #2->0
 "<Pâʹjj-Njauddma>"
-	"Pâʹjj-Njauddâm" N Prop Der/D @X #3->0
+        "Pâʹjj-Njauddâm" N Prop Sg Ill @x #3->2
 "<tok>"
-	"tok" Adv @<ADVL-ine #4->2
+        "tok" Adv @ladvl-ine #4->2
 "<Kåre>"
-	"Kåre" ? @X #5->0
+        "Kåre" N Prop Sg Nom @x #5->6
 "<päikka>"
-	"päiʹǩǩ" N Sg Ill @<ADVL #6->2
+        "päiʹǩǩ" N Sg Ill @ladvl #6->2
 "<Fjellstualle>"
-	"Fjellstualle" ? @X #7->0
+        "Fjellstualle" N Prop Sg Ill @x #7->2
 "<.>"
-	"." CLB @CLB #8->2
+        "." CLB @clb #8->2
 
 "<Tõʹst>"
-	"tõʹst" Adv @ADVL-ine> #1->5
+        "tõʹst" Adv @advl-iner #1->5
 "<mon>"
-	"mon" Pron Pers Sg1 Nom @SUBJ> #2->5
+        "mon" Pron Pers Sg1 Nom @subjr #2->5
 "<sââʹvǩään>"
-	"sââʹviǩ" N Pl Acc PxSg1 @OBJ> #3->5
+        "sââʹviǩ" N Pl Acc PxSg1 @objr #3->5
 "<tõzz>"
-	"tõzz" Adv @ADVL-ine> #4->5
+        "tõzz" Adv @advl-iner #4->5
 "<kuõʹđđem>"
-	"kueʹđđed" V Ind Prt Sg1 @FMV #5->0
+        "kueʹđđed" V Ind Prt Sg1 @fmv #5->0
 "<ja>"
-	"ja" CC @CVP #6->5
+        "ja" CC @cpv #6->5
 "<domoi>"
-	"domoi" Adv @ADVL-ine> #7->8
+        "domoi" Adv @advl-iner #7->8
 "<leeiʹm>"
-	"leeʹd" V Ind Prt Pl1 @FMV #8->5
+        "leeʹd" V Ind Prt Pl1 @fmv #8->5
 "<särnnam>"
-	"särnnad" V Act PrfPrc @X #9->0
+        "särnnad" V Act PrfPrc @x #9->0
 "<,>"
-	"," CLB @CLB #10->9
+        "," CLB @clb #10->9
 "<ǩeäk>"
-	"ǩeäk" Pron @X #11->0
+        "ǩeäk" Pron @subj #11->12
 "<lie>"
-	"leeʹd" V Ind Prs Pl3 @FMV #12->5
+        "leeʹd" V Ind Prs Pl3 @fmv #12->5
 "<dõõʹst>"
-	"dõõt" Pron Det Sg Loc @<ADVL-ine #13->12
+        "dõõt" Pron Det Sg Loc @ladvl-ine #13->12
 "<,>"
-	"," CLB @CLB #14->13
+        "," CLB @clb #14->13
 "<de>"
-	"de" Adv @ADVL-ine> #15->22
+        "de" Adv @advl-ine> #15->18
 "<muʹst>"
-	"mon" Pron Pers Sg1 Loc @ADVL-ine> #16->22
+        "mon" Pron Pers Sg1 Loc @advl-ine> #16->18
 "<sââʹviǩ>"
-	"sââʹviǩ" N Pl Nom @SUBJ> #17->22
-	"sââʹviǩ" N Sg Nom @SUBJ> #17->22
-	"sââʹviǩ" N Sg Gen @ADVL> #17->22
+        "sââʹviǩ" N Pl Nom @SUBJ> #17->18
 "<õõlǥče>"
-	"õlggâd" V Cond ConNeg @X #18->0
+        "õlggâd" V Cond Pl3 @x #18->5
 "<domoi>"
-	"domoi" Adv @ADVL-ine> #19->22
+        "domoi" Adv @advl-ine> #19->18
 "<dõõn>"
-	"dõõt" Pron Det Sg Gen @X #20->0
+        "dõõt" Interj @x #20->18
 "<[>"
-	"[" PUNCT LEFT @CLB #21->22
+        "[" PUNCT LEFT @clb #21->22
 "<viikkâd>"
-	"viikkâd" V Inf @IMV #22->18
+        "viikkâd" V Inf @imv #22->18
 "<]>"
-	"]" PUNCT RIGHT @CLB #23->22
+        "]" PUNCT RIGHT @clb #23->22
 "<.>"
-	"." CLB @CLB #24->5
+        "." CLB @clb #24->5
+
 
 "<Di>"
-	"di" CC @CVP #1->4
+        "di" CC @cvp #1->4
 "<Kårelle>"
-	"Kårelle" ? @X #2->0
+        "Kårelle" N Prop Sg Ill @x #2->4
 "<še>"
-	"še" Pcle @PCLE #3->2
+        "še" Pcle @pcle #3->2
 "<sarnnum>"
-	"särnnad" V Ind Prt Sg1 @FMV #4->0
+        "särnnad" V Ind Prt Sg1 @fmv #4->0
 "<,>"
-	"," CLB @CLB #5->6
+        "," CLB @clb #5->6
 "<että>"
-	"että" Err/Lex CS @CVP #6->8
+        "että" Err/Lex CS @cvp #6->8
 "<Čeʹvetjääuʹr>"
-	"Čeʹvetjäuʹrr" N Prop Pl Nom @SUBJ> #7->8
+        "Čeʹvetjäuʹrr" N Prop Sg Gen @rp #7->8
 "<årra>"
-	"åårrad" V Ind Prs Pl3 @FS-<ADVL #8->4
+        "åårrad" Po Ill @fs-ladvl #8->9
 "<lie>"
-	"leeʹd" V Ind Prs Pl3 @FMV #9->4
+        "leeʹd" V Ind Prs Pl3 @fmv #9->4
 "<mõõnni>"
-	"mõõnni" N Pl Nom @<SUBJ #10->9
+        "mõõnni" N Pl Nom @lsubj #10->9
 "<,>"
-	"," CLB @CLB #11->6
+        "," CLB @clb #11->6
 "<ni>"
-	"ni" Pcle @PCLE #12->13
+        "ni" Adv @x #12->13
 "<muu>"
-	"mon" Pron Pers Sg1 Gen @>N #13->14
+        "mon" Pron Pers Sg1 Gen @rn #13->14
 "<sââʹvǩid>"
-	"sââʹviǩ" N Pl Acc @<OBJ #14->9
-	"sââʹviǩ" N Pl Ill @<ADVL #14->9
+        "sââʹviǩ" N Pl Acc @lobj #14->9
 "<tok>"
-	"tok" Adv @<ADVL-ine #15->9
+        "tok" Adv @ladvl-ine #15->9
 "<.>"
-	"." CLB @CLB #16->4
+        "." CLB @clb #16->4
 
 "<Jiijj>"
-	"jiõčč" Pron Refl Pl Nom @SUBJ> #1->2
+        "jiõčč" Pron Refl Pl Nom @subjr #1->2
 "<njuiʹǩǩiim>"
-	"njuiʹǩǩeed" V Ind Prt Pl1 @FMV #2->0
-"<motor[>"
-	"motor[" ? @X #3->0
-"<kåålsa>"
-	"kåålsa" ? @X #4->0
-"<]>"
-	"]" PUNCT RIGHT @CLB #5->4
+        "njuiʹǩǩeed" V Ind Prt Pl1 @fmv #2->0
+"<motorkååʹlza>"
+        "motorkååʹlza" N Sg Ill @x #3->2
 "<.>"
-	"." CLB @CLB #6->2
+        "." CLB @clb #4->2
 
 "<Nuʹtt>"
 	"nuʹtt" Pcle @PCLE #1->2
