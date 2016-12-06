@@ -231,6 +231,10 @@ LIST ADVLCASE = Ine Ill Com Ela ;
 LIST NUMBER = Sg Pl ;
 LIST NOMEN-NOT-PRON = N A Indef Num Ord ;  # they can have Dem as attr
 
+LIST TENSES = Prs Prt ;
+LIST PERS-TAG = Sg1 Sg2 Sg3 Du1 Du2 Du3 Pl1 Pl2 Pl3 ;
+
+
 LIST WORD = N A V Adv Pron Interj Num CS CC Pcle Pr Po ;
 SET REALWORD = WORD - Num - Ord ;
 SET REALWORD-NOTABBR = WORD - Num - Ord - ABBR ;
@@ -475,7 +479,8 @@ REMOVE:R_Attr_ABBR Attr IF (0 ABBR + Nom)(NOT 1 Prop OR ABBR);
 
 
 # Lexicalisation rather than derivation
-REMOVE:lex N-DER IF (0 N-DER)(0 $$CASES)(0 $$NUMBER);
+REMOVE:nlex N-DER IF (0 N-DER)(0 $$CASES)(0 $$NUMBER);
+REMOVE:vlex V-DER IF (0 V-DER)(0 $$PERS-TAG)(0 $$TENSES);
 
 
 
@@ -558,7 +563,6 @@ REMOVE:PrtInNeg Prs IF (0 Neg)(*1C ConNeg + Prt BARRIER NOT-ADV);
 	
 REMOVE:PrsInNeg Prt IF (0 Neg)(*1C ConNeg BARRIER NOT-ADV LINK NOT 0 Prt);
 
-LIST PERS-TAG = Sg1 Sg2 Sg3 Du1 Du2 Du3 Pl1 Pl2 Pl3 ;
 
 SELECT:PersonInNeg $$PERS-TAG (0 Neg + Prt)(*1C $$PERS-TAG + ConNeg BARRIER NOT-ADV);
 REMOVE:NegPrt (Neg Prt)(NEGATE 1 ("lea" ConNeg Prt)) ;
