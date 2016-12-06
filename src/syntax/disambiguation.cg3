@@ -472,6 +472,16 @@ REMOVE:R_Attr_ABBR Attr IF (0 ABBR + Nom)(NOT 1 Prop OR ABBR);
 #REMOVE: ("j") IF (0 ("J"));
 #REMOVE: ("<[a-zäöåøæï]>"r) IF (0 ("<[A-ZÄÖÅØÆÏ]>"r));
 	## J. A.	
+
+
+# Lexicalisation rather than derivation
+REMOVE:lex N-DER IF (0 N-DER)(0 $$CASES)(0 $$NUMBER);
+
+
+
+
+
+
 # Trivialia
 
 REMOVE:prop_daate Prop IF (0 Pers); # too strong
@@ -574,6 +584,24 @@ REMOVE:Imprtd Imprt (*-1 WORD BARRIER CC OR COMMA OR BOS)(NOT 0 Neg)(NEGATE -1 C
 SELECT:Imprte (Imprt Sg2) (-1 CC LINK *-1C (Imprt Sg2) BARRIER S-BOUNDARY OR V) ;
 
 
+# Genitive modifier
+
+SELECT:genmod Gen IF (-1 BOS)(1C N);
+	      ##
+
+# Subject
+
+SELECT:nsg N + Sg + Nom IF (*-1 BOS BARRIER VFIN)(O Nom)(*1C V + Sg3 BARRIER VFIN);
+
+SELECT:npl N + Pl + Nom IF (*-1 BOS BARRIER VFIN)(O Nom)(*1C V + Pl3 BARRIER VFIN);
+
+
+
+
+
+
+
+# M A P P I N G
 
 
 	# CC- and CS-Mapping
