@@ -380,6 +380,12 @@ LEXICON A_AANAR !!= * @CODE@ späʹsseb:späʹsseb
 +A:%^RmVow ADJ-DER/SUPERL_ummus ;
 +A: A-01_AANAR ;
 
+LEXICON A_KUQCCER !!= * @CODE@ kuʹccer:kuʹccer
++A+Attr:%^RmVow%>es ENDLEX ; !only distinguishing form from AANAR
++A:%^RmVow ADJ-DER/COMP_kwlmmsab ;
++A:%^RmVow ADJ-DER/SUPERL_ummus ;
++A: A-01_AANAR ;
+
 
 LEXICON A_KAAMMI
 +A: A-01_KAAMMI ;
@@ -7638,6 +7644,27 @@ LEXICON A-01_PRSPRC-VXYY-I !!= * @CODE@ äjjnõʹstti:äjjnõʹstti
 +Use/NG:%^V2VV%^XYY2XY A-02_PL-OBL ;       ! siiʹrdi
 
 LEXICON A-01_PRSPRC-VHYY-I !!= * @CODE@ aʹhtti:a%^1VOWhtti
+! gradation: yes
+! is for nouns with ''-est'' +Loc
+!! * Yaml: __lookk__
+!! * There are several stem types
+!! * äjjnõʹstti:äjjnõʹstti
+!! NumContLex="1.2"
+!! * sirddi:sirddi
+!! NumContLex="1.2"
+: A-02_SG-NOM ;	       			! aʹhtti
+: A-02_SG-ABE/ACC/GEN ;    			! aʹhtti
+:%^I2J%>a A-02_SG-ILL ;		! aʹhttja
++Err/Orth+Use/NG:%^Pen%^PALNo%^I2J%>a A-02_SG-ILL ;		! ahttja
+:%^I2J%>e A-02_SG-LOC ;			! aʹhttjest
+:%^CC2C A-02_SG-COM_N ;			! aʹhttjin
+:%^I2J%>e A-02_ESS/PAR ;  			! aʹhttjen
+:%^V2VV%^XYY2VY A-02_PL-NOM ;             	! aauʹti
++Use/NG: A-02_PL-NOM ;             	! siʹrddi
+: A-02_PL-OBL ;             		! siʹrddi
++Use/NG:%^V2VV%^XYY2VY A-02_PL-OBL ;       ! siiʹrdi
+
+LEXICON A-01_PRSPRC-VWHYY-AI !!= * @CODE@ veâhssai:veâhssai
 ! gradation: yes
 ! is for nouns with ''-est'' +Loc
 !! * Yaml: __lookk__
