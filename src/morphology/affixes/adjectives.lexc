@@ -129,9 +129,9 @@ LEXICON A_MUEQRJJ !!= * @CODE@ mueʹrjj:mueʹrjj
 
 !! CLASS 1 LOW VOWEL, PALATALIZATION NOMINALS
 
-LEXICON A_VAEQLL !!= * @CODE@ väʹll:väll
+LEXICON A_LOAQDD !!= * @CODE@ väʹll:väll
 :%^V2VV%^PAL   A-ATTR_es ;
-+A: A-01_VAEQLL ;
++A: A-01_LOAQDD ;
 
 LEXICON A_UQCC !!= * @CODE@ uʹcc:u%^1VOWcc
 :%^V2VV%^PAL   A-ATTR_es ;
@@ -189,14 +189,19 @@ LEXICON A_KUEAQTT !!= * @CODE@ kuẹʹtt:kuätt
 :%^PALẸ%^PAL%^CC2C   A-ATTR_es ;
 +A: A-01_KUEAQTT ;
 
+LEXICON A_HIEAQNN !!= * @CODE@ hieʹnn:heänn
+! vowel: diphthong
+:%^VOWRaise%^PALẸ%^PAL%^CC2C   A-ATTR_es ;
++A: A-01_HIEAQNN ;
+
 LEXICON A_JEAQNNN !!= * @CODE@ jeäʹnn:jeänˈn, jeäʹǧǧ:jeägˈg
 ! vowel: diphthong
-:%^PALẸ%^PAL%^CCC2CC   A-ATTR_es ;
+:%^VOWRaise%^PALẸ%^PAL%^CCC2CC   A-ATTR_es ;
 +A: A-01_JEAQNNN ;
 
 LEXICON A_JEAQRMM !!= * @CODE@ jeäʹrmm:jeärmm
 ! vowel: diphthong
-:VOWRaise%^PALẸ%^PAL%^XYY2XY   A-ATTR_es ;
+:%^VOWRaise%^PALẸ%^PAL%^XYY2XY   A-ATTR_es ;
 +A: A-01_JEAQRMM ;
 
 LEXICON A_CHUAQRVV !!= * @CODE@ tuäʹŋǧǧ:tuäŋgg
@@ -373,6 +378,11 @@ LEXICON A_VEEIDAS !!= * @CODE@ veeidas:veidd
 +A:s ADJ-DER/SUPERL_ummus ;
 +A:as A-01_PAEAELKAS ;
 
+LEXICON A_CEAEGGAS  !!= * @CODE@ ceäggas:ceägˈg
++A+Attr: ENDLEX ;
++A:s ADJ-DER/COMP_kwlmmsab ;
++A:s ADJ-DER/SUPERL_ummus ;
++A:as A-01_CEAEGGAS ;
 
 LEXICON A_AANAR !!= * @CODE@ späʹsseb:späʹsseb
 +A+Attr:%^RmVow%>õs ENDLEX ;
@@ -463,6 +473,15 @@ LEXICON A_PRSPRC-VWCCC-I !!= * @CODE@ kuõʹddi:kuõʹdˈdi
 +A:%^I2J ADJ-DER/COMP_kwlmmsab ;
 +A:%^I2J ADJ-DER/SUPERL_ummus ;
 
+LEXICON A_PRSPRC-VWHYY-AI !!= * @CODE@ veâhssai
++A: A-01_PRSPRC-VWHYY-AI ;
++A:%^RmVow%^I2J ADJ-DER/COMP_kwlmmsab ;
++A:%^RmVow%^I2J ADJ-DER/SUPERL_ummus ;
+
+LEXICON A_SUQVDDI
++A: A-01_SUQVDDI ;
++A:%^I2J ADJ-DER/COMP_kwlmmsab ;
++A:%^I2J ADJ-DER/SUPERL_ummus ;
 
 LEXICON A_PRSPRC-VVCC-I !!= * @CODE@ jõõvvi:jõõvvi
 !! * Yaml: __A-vaeaezhzh__
@@ -548,8 +567,9 @@ LEXICON A_VUOIQNNI !!= * @CODE@ vuõiʹnni:vuõiʹnni
 +A:%^I2J ADJ-DER/SUPERL_ummus ;
 
 LEXICON A_JUURD !!= * @CODE@ juurd:jurdd
-+A+Sg+Nom:%^V2VV%^XYY2XY ENDLEX ;
-+A+Pl+Nom: ENDLEX ;
++A+Attr:%^V2VV%^XYY2XY%>jõs ENDLEX ;
++A:%^V2VV%^XYY2XY%>j ADJ-DER/COMP_kwlmmsab ;
++A:%^V2VV%^XYY2XY%>j ADJ-DER/SUPERL_ummus ;
 +A: A-01_JUURD ;
 
 
@@ -3889,7 +3909,7 @@ LEXICON A-01_MUEQRJJ
 !! !!e-stems
 
 
-LEXICON A-01_VAEQLL
+LEXICON A-01_LOAQDD
 ! gradation: yes
 !! similar_to: N_PAPP
 !! vowel: monophthong
@@ -4913,6 +4933,24 @@ LEXICON A-01_KUEAQTT
  E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) kuätt-
 :%^PAL%^CC2C E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) kuẹʹđ-
 :%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) kuäʹtˈt- Ess+Px..
+
+LEXICON A-01_HIEAQNN
+! gradation: yes
+
+!!
+:%^VOWRaise%^PALẸ%^PAL A-02_E-STEM_SG-NOM ;		  	! hiẹʹnn
+:%^PAL%^CC2C A-02_E-STEM_SG-ABE/ACC/GEN ;  	      			! hiäʹn
+:%^PAL%^CC2C A-02_PL-NOM ;  	      			! hiäʹn
+:%^CC2CCC A-02_E-STEM_SG-ILL ;				! hiänˈna
+:%^PAL%^CC2C%>e A-02_SG-LOC ;			! hiäʹnest
+:%^VOWRaise%^PALẸ%^PAL%>e A-02_ESS/PAR ; 		! hiẹʹnnen
+!2009: 204 +N:%^CC2C%>e A-02_PAR ;	    		
+:%^PAL%^CC2C A-02_SG-COM_IN ;			! hiäʹnin
+:%^PAL%^CC2C A-02_E-STEM_PL-OBL ;			! hiäʹnin
+:%^CC2C A-02_E-STEM_N_KUALAZH ;			! hiänaž
+ E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) hiänn-
+:%^PAL%^CC2C E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) hiẹʹn-
+:%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) hiäʹnˈn- Ess+Px..
 
 
 
@@ -6815,6 +6853,17 @@ LEXICON A-01_PAEAELKAS !!= * @CODE@ päälkas:pälkkas
 !! * Yaml: __N-paalkas__
 :%^Pen%^V2VV%^Pen%^XYY2XY A-02_SG-NOM ;
 :%^VC A-02_SG-ABE/ACC/GEN-PL-NOM ; !!= * @CODE@ pälkkaz
+:%^RmVow%>a A-02_SG-ILL ;
+:%^RmVow%>e A-02_SG-LOC ;
+:%^RmVow A-02_SG-COM_IN ;
+:%^RmVow%>e A-02_ESS/PAR ; ! ess and prt without
+:%^RmVow A-02_PL-OBL ;
+:%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
+
+LEXICON A-01_CEAEGGAS !!= * @CODE@ ceäggas:ceägˈgas
+!! * Yaml: __N-ceaeggas__
+:%^Pen%^CCC2CC A-02_SG-NOM ;
+:%^VC A-02_SG-ABE/ACC/GEN-PL-NOM ; !!= * @CODE@ ceägˈgaz
 :%^RmVow%>a A-02_SG-ILL ;
 :%^RmVow%>e A-02_SG-LOC ;
 :%^RmVow A-02_SG-COM_IN ;
