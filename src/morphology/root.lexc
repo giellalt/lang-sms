@@ -61,7 +61,6 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Spat
 +State
 +Temp
-+Parenthetic
 
 !! !Number
 +Sg	      !!= * @CODE@ Singular = õõutilååkk
@@ -129,9 +128,6 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Sg1	      !!= * @CODE@ first person singular
 +Sg2	      !!= * @CODE@ second person singular
 +Sg3	      !!= * @CODE@ third person singular
-+Du1	      !!= * @CODE@ first person dual
-+Du2	      !!= * @CODE@ second person dual
-+Du3	      !!= * @CODE@ third person dual
 +Pl1	      !!= * @CODE@ first person plural
 +Pl2	      !!= * @CODE@ second person plural
 +Pl3	      !!= * @CODE@ third  person plural
@@ -141,10 +137,6 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 !! !Abbreviation
 +ABBR	!!= * @CODE@ abbreviation
-
-!! !Homonymy
-+Hom1
-+Hom2
 
 !! !Derivation
 +Der/N2A !!=derived adjective N»A
@@ -159,10 +151,8 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Der/t !!= * @CODE@ carative derivation N»A for subsequent derivation
 !! Noun derivation
 +Der/N
-+Der/MOš !!= * @CODE@ deverbal derivation V»N architype mõš and mmuš
 +Der/mmuš !!= * @CODE@ deverbal derivation V»N
 +Der/mõš !!= * @CODE@ deverbal derivation V»N
-+Der/muš !!= * @CODE@ deverbal derivation V»N, secondary?
 +Der/vuõtt !!= * @CODE@ A»N
 
 !! Verb derivation
@@ -172,59 +162,11 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Der/âʹstted  	!!= * @CODE@ diminutive V»V
 +Der/ted  	!!= * @CODE@ causative V»V
 +Der/âʹtted  	!!= * @CODE@ causative V»V 
-+Der/õõttâd  	!!= * @CODE@ reflexive reciprocal V»V 
-+Der/õõvvâd  	!!= * @CODE@  V»V kulsted: kulstõõvvâd
-+Der/õõllâd  	!!= * @CODE@  V»V 
-+Der/stõõllâd  	!!= * @CODE@  V»V 
-+Der/tõõvvâd 	!!= * @CODE@ privative + translative N»V 
-+Der/čed	!!= * @CODE@ frequentative V»V for ʹCCed verbs
 +Der/NomAg	!!= * @CODE@ agent V»N
 
-!! !!Tags for originating language
-
-!! The following tags are used to guide conversion to IPA: loan words
-!! and foreign names are usually pronounced (approximately) as in the
-!! originating (majority) language. Instead of trying to identify the
-!! correct pronounciation based on fonotactics (orthotactics actually),
-!! we tag all words that can't be correctly transcribed using the SME
-!! transcriber with source language codes. Once tagged, it is possible
-!! to split the lexical transducer in smaller ones according to langu-
-!! age, and apply different IPA conversion to each of them.
-!! 
-!! The principle of tagging is that we only tag to the extent needed,
-!! and following a priority:
-!! # any untagged word is pronounced with SME orthographic conventions
-!! # NNO and NOB have identical pronounciation, NNO is only used if
-!!   different in spelling from NOB
-!! # SWE has mostly the same pronounciation as NOB, and is only used
-!!   if different in spelling from NOB
-!! # Occasionally even SME (the default) may be tagged, to block other
-!!   languages from being specified, mainly during semi-automatic
-!!   language tagging sessions
-!! 
-!! All in all, we want to get as much correctly transcribed to IPA
-!! with as little work as possible. On the other hand, if more words
-!! are tagged than strictly needed, this should pose no problem as
-!! long as the IPA conversion is correct - at least some words will
-!! get the same pronounciation whether read as SME or NOB/NNO/SWE.
-
-+OLang/SME !!≈ * @CODE@ - North Sámi
-+OLang/SMA !!≈ * @CODE@ - South Sámi
-+OLang/SMN !!≈ * @CODE@ - Inari Sámi
-+OLang/RUS !!≈ * @CODE@ - Russian
-+OLang/FIN !!≈ * @CODE@ - Finnish
-+OLang/SWE !!≈ * @CODE@ - Swedish
-+OLang/NOB !!≈ * @CODE@ - Norw. bokmål
-+OLang/NNO !!≈ * @CODE@ - Norw. nynorsk
-+OLang/ENG !!≈ * @CODE@ - English
-+OLang/UND !!≈ * @CODE@ - Undefined
-
-
 !! !Government tags
-+%<acc%>
 +%<gen%>
 +%<loc%>	!!= * @CODE@ this will be added to the preposition tagging __mâŋŋa jââđast__
-+%<nom%>
 
 !! !Semantic properties of names
 +Sem/Ani      !!= * @CODE@ Animate
@@ -356,12 +298,12 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Foc/son
 +Foc/jõs
 +Foc/õs
-+Foc/ǥõs
 +Foc/mes
 +Foc/ba
 +Foc/âs
 +Foc/ât
 +Foc/tâma
++Foc/ǥõs
 +Foc/tõt
 
 
@@ -421,11 +363,9 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 %^VV2V        !!= * @CODE@ Shortens vowel 
 %^V2VV 	      !!= * @CODE@ Lengthens vowel
 %^CC2C 	      !!= * @CODE@ Shortens consonant
-%^CC2CAllegro 	      !!= * @CODE@ Shortens consonant
 %^C2CC 	      !!= * @CODE@ Lengthens consonant
 %^CC2CCC 	!!= * @CODE@ Strong to Extra Strong consonant
 %^CCC2C 	!!= * @CODE@ Extra Strong to Weak consonant
-%^CCC2CAllegro 	!!= * @CODE@ Extra Strong to Weak consonant
 %^CCC2CC 	!!= * @CODE@ Extra Strong to Strong consonant
 %^XYY2XY      !!= * @CODE@ Shortens consonant cluster
 %^XY2XYY      !!= * @CODE@ Lengthens consonant cluster
@@ -436,11 +376,10 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 %^VYY2XYY	!!= * @CODE@ Consonant cluster i/u to j/v
 
 %^KKK2GG	!!= * @CODE@ Geminate weakening 
-%^KKK2G		!!= * @CODE@ Strong Geminate allegro
 %^KK2GG		!!= * @CODE@ Geminate weakening	  jokk:jooǥǥ
 %^K2GG	!!= * @CODE@ Geminate weakening čårrõs:čårrõõzz
-%^KK2GAllegro		!!= * @CODE@ Geminate weakening	 in allegro pååss:påz
-%^K2GAllegro		!!= * @CODE@ Geminate weakening	 in allegro čâustõk
+%^KK2G		!!= * @CODE@ Geminate weakening	 in allegro pååss:påz
+%^K2G		!!= * @CODE@ Geminate weakening	 in allegro čâustõk
 
 %^APen !!= * @CODE@ for combinations 2015-10-04 Jack
 %^Pen !!= * @CODE@ for combinations 2015-09-28 Miikka
@@ -453,6 +392,104 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 %^J2I		!!= * @CODE@ in tuâjj:tuâi
 %^I2J		!!= * @CODE@ in agent names
 %^I2Zero		!!= * @CODE@ in agent names
+
+! for guesser
+! Alphabetical Order a e i o u y å ä ö
+%{aØ%}
+%{aä%}
+%{aäØ%}
+
+%{âe%}
+%{âeẹiØ%}
+%{âeẹõ%}
+%{âeiõØ%}
+%{âeõ%}
+%{âõ%}
+%{âõØ%}
+%{âØ%}
+
+%{eẹ%}
+%{eẹi%}
+%{eẹiØ%}
+%{eẹä%}
+%{eẹØ%}
+%{eØ%}
+%{ei%}
+%{eiØ%}
+%{eå%}
+
+%{ẹØ%}
+%{ẹi%}
+%{ẹiØ%}
+%{âä%}
+%{ẹä%}
+%{ẹåä%}
+
+%{ij%}
+%{ijØ%}
+%{iõ%}
+%{iØ%}
+
+%{oØ%}
+%{oå%}
+%{oåØ%}
+%{oõu%}
+%{oõuØ%}
+
+%{õu%}
+%{õØ%}
+
+%{uØ%}
+%{åØ%}
+%{åä%}
+%{äØ%}
+%{1ˈØ%}
+%{2ˈØ%}
+%{%ʹØ%}
+%{1%ʹØ%}
+%{2%ʹØ%}
+%{bØ%}
+%{cØ%}
+%{cʒ%}
+%{cʒØ%}
+%{čØ%}
+%{čj%}
+%{čjØ%}
+%{dØ%}
+%{dđ%}
+%{đØ%}
+%{fØ%}
+%{gØ%}
+%{gǧØ%}
+%{gǧǥ%}
+%{gǧǥj%}
+%{ǥØ%}
+%{hi%}
+%{hu%}
+%{hØ%}
+%{jØ%}
+%{kǩ%}
+%{kǩØ%}
+%{kØ%}
+%{kǩǥj%}
+%{kǩǥjØ%}
+%{lØ%}
+%{mØ%}
+%{ŋØ%}
+%{nØ%}
+%{pØ%}
+%{rØ%}
+%{sz%}
+%{szØ%}
+%{sØ%}
+%{šžØ%}
+%{šž%}
+%{tØ%}
+%{tđ%}
+%{vØ%}
+%{ʒØ%}
+%{ǯØ%}
+
 
 !! !!Gradation triggers 2015.01.23
  %^XSt2St	!!= * @CODE@ Causes weakening from extra strong to strong
@@ -507,8 +544,6 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 %^RmCns !!= * @CODE@ for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta 
 %^VC         !!= * @CODE@ Voicing s:z š:ž
  %^DeVC         !!= * @CODE@ devoicing z:s ž:š
- %^ShiftEA2IE	  !!= * @CODE@ bieʹss:beâss teâtt, tieʹtted != tieʹtti ~tiõʹtti
-
 %^VOWLower  !!= * @CODE@ for lowering
  %^LowerI2E	 !!= * @CODE@ this is for diphthong in mieʹlǩǩ:meâlkka
 ! %^PenLowerI2E	 != * @CODE@ this is for diphthong in mieʹlǩǩ:meâlkka
@@ -550,33 +585,19 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 !! The Usage extents are marked using following tags:
 
- +Err/Orth     !!= * @CODE@  substandard, not in normative fst
- +Err/Lex         !!≈ * __@CODE@__ substandard, not in normative fst, no normative lemma
- +Err/DerSub      !!≈ * __@CODE@__ substandard for derivation, not in normative fst, no normative lemma
- +Err/CmpSub      !!≈ * __@CODE@__ substandard for compounding, not in normative fst (wrong form or POS in first part)
- +Err/NoHyph     !!≈ * __@CODE@__ substandard for compounding, not in normative fst (needs hyph)
- +Err/Hyph     !!≈ * __@CODE@__ substandard for compounding, not in normative fst (should have no hyphen)
- +Err/SpaceCmp    !!≈ * __@CODE@__ used for compounds written apart - only retained in the HFST Grammar Checker disambiguation analyser
- +Err/Spellrelax  !!≈ * __@CODE@__ used to tag spellrelaxed typos (tag is inserted via flag diacritics)
-
+ +Err/Orth     !!= * @CODE@ 
  +Use/Marg        !!= * __@CODE@__ marginal (?)
  +Use/-Spell      !!= * __@CODE@__ Excluded in speller
  +Use/SpellNoSugg !!= * __@CODE@__ recognized but not suggested in speller
  +Use/Circ        !!= * __@CODE@__ circular paths (old ^C^)
  +Use/CircN       !!= * __@CODE@__ circular paths for the numerals (old ^N^)
  +Use/NG          !!= * __@CODE@__ not-generate, for ped generation isme-ped.fst
- +Largo		  !!= * __@CODE@__ largo variant instead of allegro saaǥǥstõõllâd vs saǥstõõllâd
- +Allegro	!!= * __@CODE@__ never last element of compound words
 
 !! Compounding
 +Cmp 
 +CmpNP/First
 +CmpNP/Pref
-+Cmp/SplitR	!!= * __@CODE@__ This to take care of Oahpo- ja dutkandept - want this in speller Remainder is found to the right
-+Cmp/SplitL	!!= * __@CODE@__ Remainder is found to the left
-+Cmp/SgNom
-+Cmp/SgGen
-+Cmp/PlGen
++Allegro	!!= * __@CODE@__ never last element of compound words
 
 !! !!Flag diacritics
 !! We have manually optimised the structure of our lexicon using following
@@ -611,79 +632,77 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 
 LEXICON Root 	  !!= * @CODE@
-    Abbreviation          ; !!= * @CODE@ abbreviations
-    Adposition            ; !!= * @CODE@
-    ProperNoun            ; !!= * @CODE@
+ !Abbreviation ;      !!= * @CODE@ abbreviations
+ !Adposition ;	  !!= * @CODE@
+ !ProperNoun ;	  !!= * @CODE@
 
-    VerbRoot              ; !!= * @CODE@
-    Adverb                ; !!= * @CODE@
-    Subjunction           ; !!= * @CODE@
-    Conjunction           ; !!= * @CODE@
-    Interjection          ; !!= * @CODE@
-    Pronoun               ; !!= * @CODE@
-    Punctuation           ; !!= * @CODE@
-    Particle              ; !!= * @CODE@
+ VerbRoot ;		  !!= * @CODE@
+ !Adverb ;		  !!= * @CODE@
+ !Subjunction ;	  !!= * @CODE@
+ !Conjunction ;	  !!= * @CODE@
+ !Interjection ;	  !!= * @CODE@
+ !Pronoun ;		  !!= * @CODE@
+ Punctuation ;	  !!= * @CODE@
+ !Particle ;	      !!= * @CODE@
 
 !! This generates from merged materials
-         A_sms2x               ; !!= * @CODE@ This generates from merged materials
-         TRAB_sms2x            ; !!= * @CODE@ transitive abbreviations
-         TRNUMAB_sms2x         ; !!= * @CODE@ transitive abbreviations with numerals
-    Adp_sms2x             ; !!= * @CODE@ adpositions
-    Adv_sms2x             ; !!= * @CODE@ adverbs
-    CC_sms2x              ; !!= * @CODE@ conjunctions
-    CS_sms2x              ; !!= * @CODE@ subjunctions
-    Det_sms2x             ; !!= * @CODE@ determiners
-    Interj_sms2x          ; !!= * @CODE@ This generates from merged materials
-    N_sms2x               ; !!= * @CODE@ This generates from merged materials
-  +Cmp/SplitL+Use/SpellNoSugg#:-# N_sms2x               ; !!= * @CODE@ This allows split compound nouns
-    N_Prop_sms2x          ; !!= * @CODE@ This generates from merged materials
-    N_Prop_Toponyms_sms2x ; !!= * @CODE@ Toponymy
-    Num_sms2x             ; !!= * @CODE@ This generates from merged materials
-    Pcle_sms2x            ; !!= * @CODE@ This generates from merged materials
-    Prefix_sms2x          ; !!= * @CODE@ This generates from merged materials
-    Pron_sms2x            ; !!= * @CODE@ This generates from merged materials
-    V_sms2x               ; !!= * @CODE@ This generates from merged materials
+ !A_sms2x ;	      !!= * @CODE@ This generates from merged materials
+ !TRAB_sms2x ;	      !!= * @CODE@ transitive abbreviations
+ !TRNUMAB_sms2x ;      !!= * @CODE@ transitive abbreviations with numerals
+ !Adp_sms2x ;	      !!= * @CODE@ adpositions
+ !Adv_sms2x ;	      !!= * @CODE@ adverbs
+ !CC_sms2x ;	      !!= * @CODE@ conjunctions
+ !CS_sms2x ;	      !!= * @CODE@ subjunctions
+ !Det_sms2x ;	      !!= * @CODE@ determiners
+ !Interj_sms2x ;	      !!= * @CODE@ This generates from merged materials
+ N_sms2x ;	      !!= * @CODE@ This generates from merged materials
+ !N_Prop_sms2x ;	      !!= * @CODE@ This generates from merged materials
+ !N_Prop_Toponyms_sms2x ; !!= * @CODE@ Toponymy
+ !Num_sms2x ;	      !!= * @CODE@ This generates from merged materials
+ !Pcle_sms2x ;	      !!= * @CODE@ This generates from merged materials
+ !Pron_sms2x ;	      !!= * @CODE@ This generates from merged materials
+ V_sms2x ;	      !!= * @CODE@ This generates from merged materials
 
-         Numeral               ; !!= * @CODE@ This feeds Arabi numerals, borrowed from sme
+ !Numeral ;		  !!= * @CODE@ This feeds Arabi numerals, borrowed from sme
 
 
-    EXCEPTIONS            ;
+! EXCEPTIONS ;
 
-    A_NEWWORDS            ; !!= * @CODE@ These are new adjectives beginning 2015-02-11
-    ADP_NEWWORDS          ; !!= * @CODE@ These are new adpositions
-    ADV_NEWWORDS          ; !!= * @CODE@ These are new adverbs
-    CC_NEWWORDS           ; !!= * @CODE@ These are new conjunctions
-    N_NEWWORDS            ; !!= * @CODE@ These are new nouns beginning 2015-01-10
-    PCLE_NEWWORDS         ; !!= * @CODE@ These are particles
-    PRON_NEWWORDS         ; !!= * @CODE@ These are pronouns
-    PROP_NEWWORDS         ; !!= * @CODE@ These are new proper nouns beginning 2015-03-04
-    TOPONYMS_NEWWORDS     ; !!= * @CODE@ 2016-02-06
-    V_NEWWORDS            ; !!= * @CODE@ These are new verbs
+! A_NEWWORDS ;    !!= * @CODE@ These are new adjectives beginning 2015-02-11
+! ADP_NEWWORDS ;    !!= * @CODE@ These are new adpositions
+! ADV_NEWWORDS ;    !!= * @CODE@ These are new adverbs 
+! CC_NEWWORDS ;    !!= * @CODE@ These are new conjunctions
+! N_NEWWORDS ;    !!= * @CODE@ These are new nouns beginning 2015-01-10
+! PCLE_NEWWORDS ;    !!= * @CODE@ These are particles
+! PRON_NEWWORDS ;    !!= * @CODE@ These are pronouns
+! PROP_NEWWORDS ;  !!= * @CODE@ These are new proper nouns beginning 2015-03-04 
+! TOPONYMS_NEWWORDS ;  !!= * @CODE@ 2016-02-06
+! V_NEWWORDS ;    !!= * @CODE@ These are new verbs
 
 !! INCOMING _lemma:stem Contlex_ sets to be distinguished from glossing in progress
-!                                 AdjectiveRoot         ;
-!                                 N-INCOMING            ;
+! AdjectiveRoot ;  
+! N-INCOMING ;	  
 
 !  -----
 
 LEXICON NounRoot
-N_NEWWORDS ;
+!N_NEWWORDS ;
  N_sms2x ; 
 ! N-INCOMING ;
 
-LEXICON nouns
+!LEXICON nouns
 !! This is a temporary solution until nouns are moved to xml
-N_NEWWORDS ;
+!N_NEWWORDS ;
 
 LEXICON WORK_
 !! Single form lacking POS designation
-   +WORK: # ;
++WORK: # ;
 
 
 
 LEXICON	INTERJ_
 !! Interjections
- +Interj: # ;
++Interj: # ;
 
 !! * Postposition ; is still not included
 !! * Preposition ;  is still not included
@@ -691,139 +710,132 @@ LEXICON	INTERJ_
 
 !! CONJUNCTIONS
 LEXICON CC_
- +CC: # ;
++CC: # ;
 
 LEXICON CS_
 !! Subjunction
- +CS: # ;
++CS: # ;
 
 LEXICON CS-TEMP_
 !! __when__
- +CS+Temp: # ;
++CS+Temp: # ;
 
 LEXICON DET_
 !! determiner
- +Det+WORK: # ;
++Det+WORK: # ;
 
 LEXICON DET_NUQBB
 !! determiner
-  +Det+Attr: #         ;
- +Det+Der/N: NMN_NUQBB ;
++Det+Attr: # ;
++Det+Der/N: NMN_NUQBB ;
 
 LEXICON DET_AANAR
 !! determiner
-  +Det+Attr: #         ;
- +Det+Der/N: NMN_AANAR ;
++Det+Attr: # ;
++Det+Der/N: NMN_AANAR ;
 
 LEXICON DET_KHEEQLES
 !! determiner
- +Det+Attr:%^Pen%^PALE%^Pen%^PAL%^Pen%^CCC2C #            ;
-      +Det:                                  NMN_KHEEQLES ;
++Det+Attr:%^Pen%^PALE%^Pen%^PAL%^Pen%^CCC2C # ;
++Det: NMN_KHEEQLES ;
 
 
 LEXICON DET-SHORTDEM_
 ! tõt:tõ
- +Det+Dem: SHORTDEM ;
++Det+Dem: SHORTDEM ;
 
 
 LEXICON ORD_
 +Det+Ord: # ;
 
 LEXICON NUM-ORD_
-! +Num+Ord: # ;
-  +Det+Ord: # ;
+!+Num+Ord: # ;
++Det+Ord: # ;
 
-LEXICON DET_NEELLJAD !!= * @CODE@ neelljad:neellj
+LEXICON NUM-ORD_NEELLJAD !!= * @CODE@ neelljad:neellj
 !! similar_to: A_MOASHSHAD
-!       +Num+Ord:   #             ;
-   +Det+Ord+Attr:ad #             ;
-        +Det+Ord:ad SG-NOM        ;
-        +Det+Ord:ad PL-NOM        ;
-  +Det+Ord+Der/N:   NMN_MOASHSHAD ;
+!+Num+Ord: # ;
++Det+Ord+Attr:ad # ;
++Det+Ord:ad SG-NOM ;
++Det+Ord:ad PL-NOM ;
++Det+Ord+Der/N: NMN_MOASHSHAD ;
 
 LEXICON NUM_
- +Num: # ;
++Num: # ;
 LEXICON NUM_VAHTT
- +Num: #         ;
- +Num: NMN_VAHTT ;
++Num: # ;
++Num: NMN_VAHTT ;
 
 LEXICON NUM_ALGG
- +Num: #        ;
- +Num: NMN_ALGG ;
++Num: # ;
++Num: NMN_ALGG ;
 LEXICON NUM_AUTT
- +Num: #        ;
- +Num: NMN_AUTT ;
++Num: # ;
++Num: NMN_AUTT ;
 LEXICON NUM_TOLL
- +Num: #        ;
- +Num: NMN_TOLL ;
++Num: # ;
++Num: NMN_TOLL ;
 LEXICON NUM_PAPP
- +Num: #        ;
- +Num: NMN_PAPP ;
-LEXICON NUM_AELDD
- +Num: #         ;
- +Num: NMN_AELDD ;
++Num: # ;
++Num: NMN_PAPP ;
 LEXICON NUM_KUEQLL
- +Num:%^PALE%^PAL #          ;
- +Num:            NMN_KUEQLL ;
++Num:%^PALE%^PAL # ;
++Num: NMN_KUEQLL ;
 LEXICON NUM_KUEQHTT !!= * @CODE@ kueʹhtt:kuâhtt
- +Num:%^PALE%^PAL #           ;
- +Num:            NMN_KUEQHTT ;
++Num:%^PALE%^PAL # ;
++Num: NMN_KUEQHTT ;
 LEXICON NUM_NELLJ
- +Num: #         ;
- +Num: NMN_NELLJ ;
++Num: # ;
++Num: NMN_NELLJ ;
 
 LEXICON NUM_LO !!= * @CODE@ kuttlo:kuttl
-        +Num:o        K      ;
- +Num+Pl+Nom:ååi      K      ;
- +Num+Sg+Gen:ååi      K      ;
- +Num+Sg+Acc:ååi      K      ;
- +Num+Sg+Ill:åkka     K      ;
- +Num+Sg+Loc:ååʹjjest K      ;
-        +Num:ooʹjj    PL-OBL ;
++Num:o K ;
++Num+Pl+Nom:ååi K ;
++Num+Sg+Gen:ååi K ;
++Num+Sg+Acc:ååi K ;
++Num+Sg+Ill:åkka K ;
++Num+Sg+Loc:ååʹjjest K ;
++Num:ooʹjj PL-OBL ; 
 LEXICON NUM_LOAOAI !!= * @CODE@ lååi:l  THIS looks like allegro
-        +Num:ååi      K      ;
- +Num+Pl+Nom:ååi      K      ;
- +Num+Sg+Gen:ååi      K      ;
- +Num+Sg+Acc:ååi      K      ;
- +Num+Sg+Ill:åkka     K      ;
- +Num+Sg+Loc:ååʹjjest #      ; ! Work on this 2015-11-12
-        +Num:ooʹjj    PL-OBL ;
++Num:ååi K ;
++Num+Pl+Nom:ååi K ;
++Num+Sg+Gen:ååi K ;
++Num+Sg+Acc:ååi K ;
++Num+Sg+Ill:åkka K ;
++Num+Sg+Loc:ååʹjjest # ; ! Work on this 2015-11-12
++Num:ooʹjj PL-OBL ; 
 
 
 LEXICON PCLE_
- +Pcle: # ;
++Pcle: # ;
 
 !! Postpositions with government tagging possible
 LEXICON ADP_
- +Po: # ;
++Po: # ;
 LEXICON PO_
- +Po: # ;
++Po: # ;
 
 LEXICON ADP-GOV-LOC_
- +Po+%<loc%>: # ;
++Po+%<loc%>: # ;
 LEXICON PO-GOV-GEN_
- +Po+%<gen%>: # ;
++Po+%<gen%>: # ;
 
 
 !! Prepositions with government tagging possible
 LEXICON PR_
- +Pr: # ;
++Pr: # ;
 
 LEXICON PR-TEMP-GOV-GEN_
- +Pr+Temp+%<gen%>: # ;
++Pr+Temp+%<gen%>: # ;
 
 LEXICON PR-TEMP-GOV-LOC_
- +Pr+Temp+%<loc%>: # ;
++Pr+Temp+%<loc%>: # ;
 
 LEXICON PREFIX_
- +Prefix: # ;
-LEXICON PREFIX/A_
- +Prefix+A+Cmp#:# NounRoot ;
-LEXICON PREFIX/N_
- +Prefix+N+Cmp#:# NounRoot ;
++Prefix: # ;
 LEXICON SUF_
- +Suf: # ;
++Suf: # ;
 
 LEXICON SUF/A_
-  ettšem+Der/A@U.Cap.Opt@:ettšẹ%^1VOWm@U.Cap.Opt@  A_NALLSHEM ;
- nallšem+Der/A@U.Cap.Opt@:nallšẹ%^1VOWm@U.Cap.Opt@ A_NALLSHEM ;
+ettšem+Der/A:ettš{eẹ}{eẹØ}{mØ}m A_NALLSHEM ;
+nallšem+Der/A:nallš{eẹ}{eẹØ}{mØ}m A_NALLSHEM ;
