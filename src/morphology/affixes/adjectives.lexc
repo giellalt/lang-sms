@@ -414,6 +414,13 @@ LEXICON A_KAAQLLES  !!= * @CODE@ kääʹlles:kä%^1VOWll
 +A:es A-01_KAAQLLES ; !!= * @CODE@   kääʹmes:kämmez
 +A:%^PAL%^V2VV%>es A2N-VUOTT ;
 
+LEXICON A_PUUQTTES  !!= * @CODE@ puuʹttes:pu%^1VOWtt
++A+Attr:%^V2VV%^PAL ENDLEX ;
++A:%^VOWLower%>s ADJ-DER/COMP_kwlmmsab ;
++A:%^VOWLower%>s ADJ-DER/SUPERL_ummus ;
++A: A-01_PUUQTTES ; !!= * @CODE@   puuʹttes:pu%^1VOWttes
++A:%^V2VV%^PAL%>es A2N-VUOTT ;
+
 LEXICON A_KOAQSHKHES !!= * @CODE@ kååʹšǩes:kåškk
 +A+Attr:%^PAL ENDLEX ;
 +A:s ADJ-DER/COMP_kwlmmsab ;
@@ -566,11 +573,17 @@ LEXICON A_VUOIQNNI !!= * @CODE@ vuõiʹnni:vuõiʹnni
 +A:%^I2J ADJ-DER/COMP_kwlmmsab ;
 +A:%^I2J ADJ-DER/SUPERL_ummus ;
 
-LEXICON A_JUURD !!= * @CODE@ juurd:jurdd
+LEXICON A_JUURD !!= * @CODE@ juurd:ju%^1VOWrdd
 +A+Attr:%^V2VV%^XYY2XY%>jõs ENDLEX ;
 +A:%^V2VV%^XYY2XY%>j ADJ-DER/COMP_kwlmmsab ;
 +A:%^V2VV%^XYY2XY%>j ADJ-DER/SUPERL_ummus ;
 +A: A-01_JUURD ;
+
+LEXICON A_MAADD !!= * @CODE@ maadd:ma%^1VOWdd
++A+Attr:%^V2VV%>jõs ENDLEX ;
++A:%^V2VV%>j ADJ-DER/COMP_kwlmmsab ;
++A:%^V2VV%>j ADJ-DER/SUPERL_ummus ;
++A: A-01_MAADD ;
 
 
 LEXICON A_RADIO 
@@ -5720,32 +5733,32 @@ LEXICON A-01_JUURD !!= * @CODE@ juurd:jurdd
 !2016-12-05-NotUsed!+Der/Dimin:%>j N_KUALAZH ;
 !2016-12-05-NotUsed!+Der/Dimin:%>ǥ N_KUALAZH ;
 
-!2016-12-05-NotUsed!LEXICON A-01_MAADD !!= * @CODE@ maadd:madd
-!2016-12-05-NotUsed!! gradation: yes
-!2016-12-05-NotUsed!! vowel_center: monophthong
-!2016-12-05-NotUsed!! consonant_center: geminate
-!2016-12-05-NotUsed!! sg_nom_grade: weak
-!2016-12-05-NotUsed!!     VV2V
-!2016-12-05-NotUsed!!! is for nouns with stem ''i'' + ''-est'' +Sg+Loc; all stem other than the +Sg+Nom are X3; the ''i'' does not occur in +Par 
-!2016-12-05-NotUsed!!! * Yaml: __N-maadd__
-!2016-12-05-NotUsed!!! * There are several stem types 
-!2016-12-05-NotUsed!!! * maadd:maadd
-!2016-12-05-NotUsed!!! strong_geminate, long_vowel, no-palatalization, high_stem_vowel
-!2016-12-05-NotUsed!:%^V2VV A-02_SG-NOM ;
-!2016-12-05-NotUsed!!! strong_geminate, short_vowel, no-palatalization, high_stem_vowel
-!2016-12-05-NotUsed!:%>i A-02_SG-ACC/GEN ;	 ! maddi
-!2016-12-05-NotUsed!:%>ǥ%>a A-02_SG-ABE_tta ;
-!2016-12-05-NotUsed!+Use/NG:%>i A-02_SG-ABE ;	 ! maddi
-!2016-12-05-NotUsed!:%>ǥ%>a A-02_SG-ILL ;
-!2016-12-05-NotUsed!+Use/NG:%>j%>a A-02_SG-ILL ;
-!2016-12-05-NotUsed!:%>j%>e A-02_SG-LOC ;
-!2016-12-05-NotUsed!:%>j A-02_SG-COM_IN/PL-OBL ;
-!2016-12-05-NotUsed!:%>i A-02_PL-NOM ;	 ! maddi
-!2016-12-05-NotUsed!:%>j%>e A-02_ESS/PAR ;
-!2016-12-05-NotUsed!+Use/NG:%>e A-02_PAR ;
-!2016-12-05-NotUsed!
-!2016-12-05-NotUsed!+Der/Dimin:%>j N_KUALAZH ;
-!2016-12-05-NotUsed!+Der/Dimin:%>ǥ N_KUALAZH ;
+LEXICON A-01_MAADD !!= * @CODE@ maadd:madd
+! gradation: yes
+! vowel_center: monophthong
+! consonant_center: geminate
+! sg_nom_grade: weak
+!     VV2V
+!! is for nouns with stem ''i'' + ''-est'' +Sg+Loc; all stem other than the +Sg+Nom are X3; the ''i'' does not occur in +Par 
+!! * Yaml: __N-maadd__
+!! * There are several stem types 
+!! * maadd:maadd
+!! strong_geminate, long_vowel, no-palatalization, high_stem_vowel
+:%^V2VV A-02_SG-NOM ;
+!! strong_geminate, short_vowel, no-palatalization, high_stem_vowel
+:%>i A-02_SG-ACC/GEN ;	 ! maddi
+:%>ǥ%>a A-02_SG-ABE_tta ;
++Use/NG:%>i A-02_SG-ABE ;	 ! maddi
+:%>ǥ%>a A-02_SG-ILL ;
++Use/NG:%>j%>a A-02_SG-ILL ;
+:%>j%>e A-02_SG-LOC ;
+:%>j A-02_SG-COM_IN/PL-OBL ;
+:%>i A-02_PL-NOM ;	 ! maddi
+:%>j%>e A-02_ESS/PAR ;
++Use/NG:%>e A-02_PAR ;
+
++Der/Dimin:%>j N_KUALAZH ;
++Der/Dimin:%>ǥ N_KUALAZH ;
 
 
 !2016-12-05-NotUsed!LEXICON A-01_LIOV
@@ -7109,6 +7122,26 @@ LEXICON A-01_PUAQRES !!= * @CODE@ puäʹres:puärˈres
 :%^RmVow A-02_PL-OBL ;					! puärˈrsi
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ puärˈrs-
 
+
+LEXICON A-01_PUUQTTES !!= * @CODE@ puuʹttes:pu%^1VOWtt
+! 3.e.diphth.gem
+! gradation: yes
+!   Extra strong grade: Else
+!   Weak grade: Sg.Nom
+! Diphthong
+! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
+! Stem vowel: e
+!! * Yaml: __A-puuqttes__
+:%^V2VV%^PAL%>es A-02_SG-NOM ;	     	! puuʹttes
+:%^VOWLower%>az A-02_SG-ABE/ACC/GEN-PL-NOM ;	! pottaz
+:%^VOWLower%>sa A-02_SG-ILL ;	  	! pottsa
+:%^VOWLower%>se A-02_SG-LOC ;		! pottsest
+:%^VOWLower%>s A-02_SG-COM_IN ;		! pottsin
+:%^VOWLower%>se A-02_ESS/PAR ;  		! pottsen
+:%^VOWLower%>s A-02_PL-OBL ;			! pottsi
+:%^VOWLower%>s VOONYS-STEM-PX ; !!= * @CODE@ potts-
+
+:%^Pen%^U2Õ%^PenVow2a%^VC A-02_SG-ABE/ACC/GEN-PL-NOM ;	! pottaz
 
 !! !!-stems
 
