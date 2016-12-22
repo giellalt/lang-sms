@@ -97,6 +97,10 @@ LEXICON A_PESS
 +A+Attr: ENDLEX ;
 +A: A-01_PESS ;
 
+LEXICON A_SHOOMM
++A+Attr: ENDLEX ;
++A: A-01_SHOOMM ;
+
 LEXICON A_VAEAEZHZH
 ! Gradation: None
 ! 1.115
@@ -184,10 +188,10 @@ LEXICON A_SUEAQKHKH !!= * @CODE@ sueʹǩǩ:suäkk
 :%^PALẸ%^PAL%^KK2GG   A-ATTR_es ;
 +A: A-01_SUEAQKHKH ;
 
-LEXICON A_KUEAQTT !!= * @CODE@ kuẹʹtt:kuätt
+!LEXICON A_KUEAQTT !!= * @CODE@ kuẹʹtt:kuätt
 ! vowel: diphthong
-:%^PALẸ%^PAL%^CC2C   A-ATTR_es ;
-+A: A-01_KUEAQTT ;
+!:%^PALẸ%^PAL%^CC2C   A-ATTR_es ;
+!+A: A-01_KUEAQTT ;
 
 LEXICON A_HIEAQNN !!= * @CODE@ hieʹnn:heänn
 ! vowel: diphthong
@@ -485,10 +489,10 @@ LEXICON A_PRSPRC-VWHYY-AI !!= * @CODE@ veâhssai
 +A:%^RmVow%^I2J ADJ-DER/COMP_kwlmmsab ;
 +A:%^RmVow%^I2J ADJ-DER/SUPERL_ummus ;
 
-LEXICON A_SUQVDDI
-+A: A-01_SUQVDDI ;
-+A:%^I2J ADJ-DER/COMP_kwlmmsab ;
-+A:%^I2J ADJ-DER/SUPERL_ummus ;
+!LEXICON A_SUQVDDI
+!+A: A-01_SUQVDDI ;
+!+A:%^I2J ADJ-DER/COMP_kwlmmsab ;
+!+A:%^I2J ADJ-DER/SUPERL_ummus ;
 
 LEXICON A_PRSPRC-VVCC-I !!= * @CODE@ jõõvvi:jõõvvi
 !! * Yaml: __A-vaeaezhzh__
@@ -2120,55 +2124,55 @@ LEXICON A-01_PESS
 !2016-12-05-NotUsed!:%^CC2CAllegro A-STEM-PX-ALLEGRO ;     !!= * @CODE@ (10) äŋ»
 !2016-12-05-NotUsed!!! Sg_Loc_Px..
 
-!2016-12-05-NotUsed!LEXICON A-01_SHOOMM
-!2016-12-05-NotUsed!!! Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_gem
-!2016-12-05-NotUsed!! gradation: yes
-!2016-12-05-NotUsed!! similar_to: N_RAEAEKK
-!2016-12-05-NotUsed!!! Is for nouns with ''-ast'' Loc
-!2016-12-05-NotUsed!!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-!2016-12-05-NotUsed!!! !!1.2 Sg.Loc in -ast (vowel shift)
-!2016-12-05-NotUsed!!! !!  Raised: Sg.Ill
-!2016-12-05-NotUsed!!! !!  Lowered: ELSE
-!2016-12-05-NotUsed!!! !!  a-stems (Sg.Loc, Ess, Par).
-!2016-12-05-NotUsed!!! !!1.2.2 Sg.Ill vowel	-u
-!2016-12-05-NotUsed!!! !!1.2.2.2 Lacks Palatalization
-!2016-12-05-NotUsed!!! !!1.2.2.2.1 Lacks Specifically Pedagogical Gradation
-!2016-12-05-NotUsed!!! !!1.2.2.2.1.1 Has Orthographic Gradation
-!2016-12-05-NotUsed!!! !!1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
-!2016-12-05-NotUsed!!! !!  Strong grade: Sg.Nom, Ess, Par
-!2016-12-05-NotUsed!!! !!  Extra strong grade: Sg.Ill
-!2016-12-05-NotUsed!!! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-!2016-12-05-NotUsed!!! !!FORMS
-!2016-12-05-NotUsed!!NumContLex="1.1120000000000001"
-!2016-12-05-NotUsed!!! N_A-URaise3-32
-!2016-12-05-NotUsed!!! * Yaml: __soomm__
-!2016-12-05-NotUsed!!! grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
-!2016-12-05-NotUsed!: A-02_A-STEM_SG-NOM ;	    		!!= * @CODE@ (1) Sg.Nom: šoomm
-!2016-12-05-NotUsed!!! Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
-!2016-12-05-NotUsed!
-!2016-12-05-NotUsed!!! grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-!2016-12-05-NotUsed!:%^CC2C A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ;		!!= * @CODE@ (2) Pl.Nom: šoom
-!2016-12-05-NotUsed!!! Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
-!2016-12-05-NotUsed!!! stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
-!2016-12-05-NotUsed!
-!2016-12-05-NotUsed!!! grade: strengthened (short_vowel, long_cluster), vowel: raised
-!2016-12-05-NotUsed!:%^VV2V%^VOWRaise%>u A-02_SG-ILL ; 		!!= * @CODE@ (3) Sg.Ill: šummu
-!2016-12-05-NotUsed!!! Sg_Ill
-!2016-12-05-NotUsed!
-!2016-12-05-NotUsed!!! grade: strengthened (short_vowel, long_cluster), vowel: neutral (low)
-!2016-12-05-NotUsed!:%^VV2V A-STEM-PX-STRENGTHEN ;           !!= * @CODE@ (5) šomm
-!2016-12-05-NotUsed!!! Ess_Px..., Sg_Ill..., N»A
-!2016-12-05-NotUsed!
-!2016-12-05-NotUsed!!! grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
-!2016-12-05-NotUsed!:%>a A-02_ESS/PAR ; 	     			!!= * @CODE@ (6) Ess: šoomman
-!2016-12-05-NotUsed!
-!2016-12-05-NotUsed!!! grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
-!2016-12-05-NotUsed!+Der/Dimin:%^VOWRaise%^CC2C%> A-01_PIISSUZH ;	!!= * @CODE@ (9) Dim.N.Sg.Nom: šuumuž
-!2016-12-05-NotUsed!+Der/Dimin:%^CC2C%> A-01_PEESSAZH ; !!= * @CODE@  (9) Dim.N.Sg.Nom: šoomaž
-!2016-12-05-NotUsed!
-!2016-12-05-NotUsed!!! grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
-!2016-12-05-NotUsed!:%^VV2V%^CC2CAllegro A-STEM-PX-ALLEGRO ; !!= * @CODE@ (10) šom»
-!2016-12-05-NotUsed!!! Sg_Loc_Px..
+LEXICON A-01_SHOOMM
+!! Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_gem
+! gradation: yes
+! similar_to: N_RAEAEKK
+!! Is for nouns with ''-ast'' Loc
+!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+!! !!1.2 Sg.Loc in -ast (vowel shift)
+!! !!  Raised: Sg.Ill
+!! !!  Lowered: ELSE
+!! !!  a-stems (Sg.Loc, Ess, Par).
+!! !!1.2.2 Sg.Ill vowel	-u
+!! !!1.2.2.2 Lacks Palatalization
+!! !!1.2.2.2.1 Lacks Specifically Pedagogical Gradation
+!! !!1.2.2.2.1.1 Has Orthographic Gradation
+!! !!1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
+!! !!  Strong grade: Sg.Nom, Ess, Par
+!! !!  Extra strong grade: Sg.Ill
+!! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+!! !!FORMS
+!NumContLex="1.1120000000000001"
+!! N_A-URaise3-32
+!! * Yaml: __soomm__
+!! grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
+: A-02_A-STEM_SG-NOM ;	    		!!= * @CODE@ (1) Sg.Nom: šoomm
+!! Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
+
+!! grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
+:%^CC2C A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ;		!!= * @CODE@ (2) Pl.Nom: šoom
+!! Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
+!! stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
+
+!! grade: strengthened (short_vowel, long_cluster), vowel: raised
+:%^VV2V%^VOWRaise%>u A-02_SG-ILL ; 		!!= * @CODE@ (3) Sg.Ill: šummu
+!! Sg_Ill
+
+!! grade: strengthened (short_vowel, long_cluster), vowel: neutral (low)
+:%^VV2V A-STEM-PX-STRENGTHEN ;           !!= * @CODE@ (5) šomm
+!! Ess_Px..., Sg_Ill..., N»A
+
+!! grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
+:%>a A-02_ESS/PAR ; 	     			!!= * @CODE@ (6) Ess: šoomman
+
+!! grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
++Der/Dimin:%^VOWRaise%^CC2C%> A-01_PIISSUZH ;	!!= * @CODE@ (9) Dim.N.Sg.Nom: šuumuž
++Der/Dimin:%^CC2C%> A-01_PEESSAZH ; !!= * @CODE@  (9) Dim.N.Sg.Nom: šoomaž
+
+!! grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
+:%^VV2V%^CC2CAllegro A-STEM-PX-ALLEGRO ; !!= * @CODE@ (10) šom»
+!! Sg_Loc_Px..
 
 
 !2016-12-05-NotUsed!LEXICON A-01_LYYJJ
