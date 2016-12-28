@@ -629,6 +629,7 @@ LEXICON Root 	  !!= * @CODE@
          A_sms2x               ; !!= * @CODE@ This generates from merged materials
          TRAB_sms2x            ; !!= * @CODE@ transitive abbreviations
          TRNUMAB_sms2x         ; !!= * @CODE@ transitive abbreviations with numerals
+       ABBR_sms2x ;
     Adp_sms2x             ; !!= * @CODE@ adpositions
     Adv_sms2x             ; !!= * @CODE@ adverbs
     CC_sms2x              ; !!= * @CODE@ conjunctions
@@ -672,13 +673,13 @@ N_NEWWORDS ;
  N_sms2x ; 
 ! N-INCOMING ;
 
-LEXICON nouns
-!! This is a temporary solution until nouns are moved to xml
-N_NEWWORDS ;
+!LEXICON nouns
+!!! This is a temporary solution until nouns are moved to xml
+!N_NEWWORDS ;
 
-LEXICON WORK_
+!LEXICON WORK_
 !! Single form lacking POS designation
-   +WORK: # ;
+!   +WORK: # ;
 
 
 
@@ -730,9 +731,9 @@ LEXICON DET-SHORTDEM_
 LEXICON ORD_
 +Det+Ord: # ;
 
-LEXICON NUM-ORD_
-! +Num+Ord: # ;
-  +Det+Ord: # ;
+!LEXICON NUM-ORD_
+!! +Num+Ord: # ;
+!  +Det+Ord: # ;
 
 LEXICON DET_NEELLJAD !!= * @CODE@ neelljad:neellj
 !! similar_to: A_MOASHSHAD
@@ -810,20 +811,20 @@ LEXICON PO-GOV-GEN_
 LEXICON PR_
  +Pr: # ;
 
-LEXICON PR-TEMP-GOV-GEN_
- +Pr+Temp+%<gen%>: # ;
+!LEXICON PR-TEMP-GOV-GEN_
+! +Pr+Temp+%<gen%>: # ;
 
 LEXICON PR-TEMP-GOV-LOC_
  +Pr+Temp+%<loc%>: # ;
 
-LEXICON PREFIX_
- +Prefix: # ;
+!LEXICON PREFIX_
+! +Prefix: # ;
 LEXICON PREFIX/A_
  +Prefix+A+Cmp#:# NounRoot ;
-LEXICON PREFIX/N_
- +Prefix+N+Cmp#:# NounRoot ;
-LEXICON SUF_
- +Suf: # ;
+!LEXICON PREFIX/N_
+! +Prefix+N+Cmp#:# NounRoot ;
+!LEXICON SUF_
+! +Suf: # ;
 
 LEXICON SUF/A_
   ettšem+Der/A@U.Cap.Opt@:ettšẹ%^1VOWm@U.Cap.Opt@  A_NALLSHEM ;
