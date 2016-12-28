@@ -567,10 +567,10 @@ LEXICON A_LIEQDHDHDHI !!= * @CODE@ lieʹđđi:lieʹđˈđi
 +A: A-01_LIEQDHDHDHI ;
 +A:%^I2J ADJ-DER/COMP_kwlmmsab ;
 +A:%^I2J ADJ-DER/SUPERL_ummus ;
-LEXICON A_PRSPRC_VWXYY-I !!= * @CODE@ vueʹstti:vueʹstti
-+A: A-01_PRSPRC_VWXYY-I ;
-+A:%^I2J ADJ-DER/COMP_kwlmmsab ;
-+A:%^I2J ADJ-DER/SUPERL_ummus ;
+!LEXICON A_PRSPRC_VWXYY-I !!= * @CODE@ vueʹstti:vueʹstti
+!+A: A-01_PRSPRC_VWXYY-I ;
+!+A:%^I2J ADJ-DER/COMP_kwlmmsab ;
+!+A:%^I2J ADJ-DER/SUPERL_ummus ;
 
 LEXICON A_VUOIQNNI !!= * @CODE@ vuõiʹnni:vuõiʹnni
 +A: A-01_VUOIQNNI ;
@@ -661,7 +661,7 @@ LEXICON DenominalAdjsCShort
 +Der/A+Der/teʹm:»teʹm A2N-VUOTT ;
 +Der/A+Der/teʹm:»teʹm AdjAttr-es ; ! 2013-09-19 the +Attr removed to avoid double tags
 +Der/t+A:»t AdjDerComp ; ! 2013-09-19 the +Comp removed to avoid double tags
-+Der/t+A:»t AdjDerSuperl-ummus ; ! 2013-09-19 the +Superl removed to avoid double tags
++Der/t+A:»t A_IS_ADJ-DER/SUPERL_ummus ; ! 2013-09-19 the +Superl removed to avoid double tags
 +Der/tõõvvâd:»tõõvv IV_LAUKKOOLLYD ; !!= * @CODE@ privative = carative + translative
 
 LEXICON AdjAttr-ZERO
@@ -754,33 +754,33 @@ LEXICON ADJ-DER/SUPERL_ummus
 +Use/NG+Superl:»umõs A-01_MAINSTUMMUSH ;
 
 
-LEXICON AdjDerSuperl-mos
-!+Der/mõs+Superl:»mõs # ; 
-+Superl:»mõs # ; 
+!LEXICON AdjDerSuperl-mos
+!!+Der/mõs+Superl:»mõs # ; 
+!+Superl:»mõs # ; 
 
-LEXICON AdjDerSuperl-mus
-!+Der/mus+Superl:»mus # ; 
-+Superl:»mus # ; 
-LEXICON AdjDerSuperl-ummus
-!+Der/ummus+Superl:»ummus # ; 
-+Superl:»ummus # ; 
+!LEXICON AdjDerSuperl-mus
+!!+Der/mus+Superl:»mus # ; 
+!+Superl:»mus # ; 
+!LEXICON AdjDerSuperl-ummus
+!!+Der/ummus+Superl:»ummus # ; 
+!+Superl:»ummus # ; 
 
-LEXICON AdjNom-as
-+Attr+Sg+Gen:%>âz # ;
-+Attr+Sg+Acc:%>âz # ;
-+Attr+Sg+Ill:%>sa # ;
-+Attr+Sg+Loc:%>sest # ;
-+Attr+Sg+Com:%>sin # ;
-+Attr+Ess:%>sen # ;
-+Attr+Par:%>sed # ; 
-+Attr+Sg+Abe:%>âztää # ;
-+Attr+Pl+Nom:%>âz # ;
-+Attr+Pl+Gen:%>si # ;
-+Attr+Pl+Acc:%>sid # ;
-+Attr+Pl+Ill:%>sid # ;
-+Attr+Pl+Loc:%>sin # ;
-+Attr+Pl+Com:%>sivuiʹm # ;
-+Attr+Pl+Abe:%>sitää # ;
+!LEXICON AdjNom-as
+!+Attr+Sg+Gen:%>âz # ;
+!+Attr+Sg+Acc:%>âz # ;
+!+Attr+Sg+Ill:%>sa # ;
+!+Attr+Sg+Loc:%>sest # ;
+!+Attr+Sg+Com:%>sin # ;
+!+Attr+Ess:%>sen # ;
+!+Attr+Par:%>sed # ; 
+!+Attr+Sg+Abe:%>âztää # ;
+!+Attr+Pl+Nom:%>âz # ;
+!+Attr+Pl+Gen:%>si # ;
+!+Attr+Pl+Acc:%>sid # ;
+!+Attr+Pl+Ill:%>sid # ;
+!+Attr+Pl+Loc:%>sin # ;
+!+Attr+Pl+Com:%>sivuiʹm # ;
+!+Attr+Pl+Abe:%>sitää # ;
 
 
 !! N›A derivation in +Der/N2A
@@ -4915,7 +4915,7 @@ LEXICON A-01_SUEAQKHKH
 :%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) suäʹǩˈǩ Ess+Px..
 
 
-LEXICON A-01_KUEAQTT
+!LEXICON A-01_KUEAQTT
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
 !! !!1.3 Sg.Loc in -est (vowel shift)
@@ -4937,19 +4937,19 @@ LEXICON A-01_KUEAQTT
 !! * Yaml: __N-kuett__
 !! * There are several stem types
 !!
-:%^VOWRaise%^PALẸ%^PAL A-02_E-STEM_SG-NOM ;		  	! kuẹʹtt
-:%^PAL%^CC2C A-02_E-STEM_SG-ABE/ACC/GEN ;  	      			! kuäʹđ
-:%^PAL%^CC2C A-02_PL-NOM ;  	      			! kuäʹđ
-:%^CC2CCC A-02_E-STEM_SG-ILL ;				! kuätˈta
-:%^PAL%^CC2C%>e A-02_SG-LOC ;			! kuäʹđest
-:%^VOWRaise%^PALẸ%^PAL%>e A-02_ESS/PAR ; 		! kuẹʹtten
+!:%^VOWRaise%^PALẸ%^PAL A-02_E-STEM_SG-NOM ;		  	! kuẹʹtt
+!:%^PAL%^CC2C A-02_E-STEM_SG-ABE/ACC/GEN ;  	      			! kuäʹđ
+!:%^PAL%^CC2C A-02_PL-NOM ;  	      			! kuäʹđ
+!:%^CC2CCC A-02_E-STEM_SG-ILL ;				! kuätˈta
+!:%^PAL%^CC2C%>e A-02_SG-LOC ;			! kuäʹđest
+!:%^VOWRaise%^PALẸ%^PAL%>e A-02_ESS/PAR ; 		! kuẹʹtten
 !2009: 204 +N:%^CC2C%>e A-02_PAR ;	    		
-:%^PAL%^CC2C A-02_SG-COM_IN ;			! kuäʹđin
-:%^PAL%^CC2C A-02_E-STEM_PL-OBL ;			! kuäʹđin
-:%^CC2C A-02_E-STEM_N_KUALAZH ;			! kuäđaž
- E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) kuätt-
-:%^PAL%^CC2C E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) kuẹʹđ-
-:%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) kuäʹtˈt- Ess+Px..
+!:%^PAL%^CC2C A-02_SG-COM_IN ;			! kuäʹđin
+!:%^PAL%^CC2C A-02_E-STEM_PL-OBL ;			! kuäʹđin
+!:%^CC2C A-02_E-STEM_N_KUALAZH ;			! kuäđaž
+! E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) kuätt-
+!:%^PAL%^CC2C E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) kuẹʹđ-
+!:%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) kuäʹtˈt- Ess+Px..
 
 LEXICON A-01_HIEAQNN
 ! gradation: yes
@@ -7772,23 +7772,23 @@ LEXICON A-01_PRSPRC-VWHYY-AI !!= * @CODE@ veâhssai:veâhssai
 +Use/NG:%^V2VV%^XYY2VY A-02_PL-OBL ;       ! siiʹrdi
 
 
-LEXICON A-01_SUQVDDI !!= * @CODE@ suʹvddi:suʹvddi
+!LEXICON A-01_SUQVDDI !!= * @CODE@ suʹvddi:suʹvddi
 ! gradation: yes
 ! is for nouns with ''-est'' +Loc
 !! * Yaml: __N-suvddi__
 !! * There are several stem types
 !! NumContLex="1.2"
-: A-02_SG-NOM ;	       			! suʹvddi
-: A-02_SG-ABE/ACC/GEN ;    			! suʹvddi
-: A-02_SG-ACC ;    			! suʹvddi
-:%^I2J%>a A-02_SG-ILL ;		! suʹvddja
-:%^I2J%>e A-02_SG-LOC ;			! suʹvddjest
-:%^CC2C A-02_SG-COM_N ;			! suʹvddjin
-:%^I2J%>e A-02_ESS/PAR ;  			! suʹvddjen
-:%^XYY2VY A-02_PL-NOM ;             	! suuʹdi
-+Use/NG: A-02_PL-NOM ;             	! suʹvddi
-: A-02_PL-OBL ;             		! suʹvddi
-+Use/NG:%^XYY2VY A-02_PL-OBL ;       ! suuʹdi
+!: A-02_SG-NOM ;	       			! suʹvddi
+!: A-02_SG-ABE/ACC/GEN ;    			! suʹvddi
+!: A-02_SG-ACC ;    			! suʹvddi
+!:%^I2J%>a A-02_SG-ILL ;		! suʹvddja
+!:%^I2J%>e A-02_SG-LOC ;			! suʹvddjest
+!:%^CC2C A-02_SG-COM_N ;			! suʹvddjin
+!:%^I2J%>e A-02_ESS/PAR ;  			! suʹvddjen
+!:%^XYY2VY A-02_PL-NOM ;             	! suuʹdi
+!+Use/NG: A-02_PL-NOM ;             	! suʹvddi
+!: A-02_PL-OBL ;             		! suʹvddi
+!+Use/NG:%^XYY2VY A-02_PL-OBL ;       ! suuʹdi
 
 
 LEXICON A-01_LIEQDHDHDHI !!= * @CODE@ lieʹđđi:lieʹđˈđi
@@ -7808,23 +7808,23 @@ LEXICON A-01_LIEQDHDHDHI !!= * @CODE@ lieʹđđi:lieʹđˈđi
 +Use/NG:%^CC2C A-02_PL-OBL ;
 
 
-LEXICON A-01_PRSPRC_VWXYY-I !!= * @CODE@ vueʹstti:vueʹstti
+!LEXICON A-01_PRSPRC_VWXYY-I !!= * @CODE@ vueʹstti:vueʹstti
 ! gradation: yes
 ! is for nouns with ''-est'' +Loc
 !! * Yaml: __lookk__
 !! * There are several stem types
 !! * vueʹstti:vueʹstti
 !! NumContLex="1.2"
-: A-02_SG-NOM ;
-: A-02_SG-ABE/ACC/GEN ;
-:%^Pen%^PALNo%^I2J%>a A-02_SG-ILL ;
-:%^I2J%>e A-02_SG-LOC ;
-: A-02_SG-COM_N ;
-:%^I2J%>e A-02_ESS/PAR ; ! ess and prt without
-:%^XYY2XY A-02_PL-NOM ;
-: A-02_PL-OBL ;
-+Use/NG: A-02_PL-NOM ;
-+Use/NG:%^XYY2XY A-02_PL-OBL ;
+!: A-02_SG-NOM ;
+!: A-02_SG-ABE/ACC/GEN ;
+!:%^Pen%^PALNo%^I2J%>a A-02_SG-ILL ;
+!:%^I2J%>e A-02_SG-LOC ;
+!: A-02_SG-COM_N ;
+!:%^I2J%>e A-02_ESS/PAR ; ! ess and prt without
+!:%^XYY2XY A-02_PL-NOM ;
+!: A-02_PL-OBL ;
+!+Use/NG: A-02_PL-NOM ;
+!+Use/NG:%^XYY2XY A-02_PL-OBL ;
 
 LEXICON A-01_VUOIQNNI !!= * @CODE@ vuõiʹnni:vuõiʹnni
 ! gradation: yes
