@@ -107,13 +107,13 @@ HatY-STEM-PX-RETAIN ;
  HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_PAPP-PL
-: R ;          !!= * @CODE@ papp
-:%^V2VV PL-NOM ; !!= * @CODE@ paapp
-:%^V2VV PL-OBL ;      !!= * @CODE@ paappi, paappid, paappid, paappin, paappivuiʹm, paappitaa
-:%>â ESS/PAR ;                  !!= * @CODE@ pappân, pappâd
- HatY-STEM-PX-RETAIN-PL ;
-:%^V2VV HatY-STEM-PX-WEAKEN-PL ;
- HatY-STEM-PX-STRENGTHEN-ESS ;
++N: R ;          !!= * @CODE@ papp
++N:%^V2VV PL-NOM ; !!= * @CODE@ paapp
++N:%^V2VV PL-OBL ;      !!= * @CODE@ paappi, paappid, paappid, paappin, paappivuiʹm, paappitaa
++N:%>â ESS/PAR ;                  !!= * @CODE@ pappân, pappâd
++N: HatY-STEM-PX-RETAIN-PL ;
++N:%^V2VV HatY-STEM-PX-WEAKEN-PL ;
++N: HatY-STEM-PX-STRENGTHEN-ESS ;
 
 
 
@@ -240,10 +240,10 @@ HatY-STEM-PX-RETAIN ;
  HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_AUTT-PL !!= * @CODE@ aaut:autt
- R ;                           !!= * @CODE@ autt
-:%>â ESS/PAR ;                                  !!= * @CODE@ auttân
-:%^V2VV%^XYY2XY PL-NOM ;                !!= * @CODE@ aaut
-:%^V2VV%^XYY2XY PL-OBL ;                        !!= * @CODE@ aauti
++N: R ;                           !!= * @CODE@ autt
++N:%>â ESS/PAR ;                                  !!= * @CODE@ auttân
++N:%^V2VV%^XYY2XY PL-NOM ;                !!= * @CODE@ aaut
++N:%^V2VV%^XYY2XY PL-OBL ;                        !!= * @CODE@ aauti
 
 
 
@@ -817,10 +817,10 @@ HatY-STEM-PX-RETAIN ;
  HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_SIJDD-PL !!= * @CODE@ siid:sijdd
-: R ;
-:%^XYY2VY PL-NOM ;	!!= * @CODE@ siid
-:%^XYY2VY PL-OBL ;                      !!= * @CODE@ siidi
-:%>â ESS/PAR ;                              !!= * @CODE@ sijddâd
++N: R ;
++N:%^XYY2VY PL-NOM ;	!!= * @CODE@ siid
++N:%^XYY2VY PL-OBL ;                      !!= * @CODE@ siidi
++N:%>â ESS/PAR ;                              !!= * @CODE@ sijddâd
 
 
 !!!
@@ -1098,10 +1098,10 @@ HatY-STEM-PX-RETAIN ;
 :%^CC2CCC HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_MUORR-PL !!= * @CODE@ muõrr:muõrr
-: R ;
-:%>â ESS/PAR ;                          !!= * @CODE@ muõrrân
-:%^CC2C PL-NOM ;                !!= * @CODE@ muõr
-:%^CC2C PL-OBL ;                        !!= * @CODE@ muõri
++N: R ;
++N:%>â ESS/PAR ;                          !!= * @CODE@ muõrrân
++N:%^CC2C PL-NOM ;                !!= * @CODE@ muõr
++N:%^CC2C PL-OBL ;                        !!= * @CODE@ muõri
 
 
 LEXICON N_KHIOJJ !!= * @CODE@ ǩiõjj:ǩiõjj
@@ -1355,10 +1355,10 @@ LEXICON NMN_PESS
 LEXICON N_PESS-PL
 !! !!FORMS
 !! strong_geminate, short_vowel, no_palatalization, low_stem_vowel
- R ;		 !!= * @CODE@ pess
-:%>a ESS/PAR ; 			 !!= * @CODE@ (6) Ess: pessan
-:%^V2VV PL-NOM ;	 !!= * @CODE@ (2) Pl.Nom: peess
-:%^V2VV%>a PL-OBL ; 
++N: R ;		 !!= * @CODE@ pess
++N:%>a ESS/PAR ; 			 !!= * @CODE@ (6) Ess: pessan
++N:%^V2VV PL-NOM ;	 !!= * @CODE@ (2) Pl.Nom: peess
++N:%^V2VV%>a PL-OBL ; 
 
 
 
@@ -3710,10 +3710,10 @@ LEXICON NMN_CHAAQCC
 :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) čäʹcc Ess+Px..
 
 LEXICON N_CHAAQCC-PL !!= * @CODE@ čääʹʒʒ:čääcc
-:%^PAL R ;                   !!= * @CODE@ (1) čääʹcc
-:%^PAL%^KK2GG PL-NOM ;        !!= * @CODE@ (2) čääʼʒʒ
-:%^VOWRaise%^PAL%^KK2GG E-STEM_PL-OBL ;          !!= * @CODE@ (5) čaaʼʒʒin
-:%^PAL%>e ESS/PAR ;                              !!= * @CODE@ (6) čääʼccen
++N:%^PAL R ;                   !!= * @CODE@ (1) čääʹcc
++N:%^PAL%^KK2GG PL-NOM ;        !!= * @CODE@ (2) čääʼʒʒ
++N:%^VOWRaise%^PAL%^KK2GG E-STEM_PL-OBL ;          !!= * @CODE@ (5) čaaʼʒʒin
++N:%^PAL%>e ESS/PAR ;                              !!= * @CODE@ (6) čääʼccen
 
 
 LEXICON N_EEQKHKH !!= * @CODE@ eeʹǩǩ:ẹẹkk
@@ -4758,10 +4758,10 @@ LEXICON NMN_JEAQRMM
 
 
 LEXICON N_JEAQRMM-PL
-:%^PAL R ;
-:%^VOWRaise%^PALẸ%^PAL%^XYY2XY PL-NOM ; !!(2) Pl.Nom: jiẹʹrj
-:%^PAL%>e ESS/PAR ; !!(6) Ess: jeäʹrǧǧen
-:%^VOWRaise%^PALE%^PAL%^XYY2XY PL-OBL ; !!(8) Pl.Acc: jieʹrjid
++N:%^PAL R ;
++N:%^VOWRaise%^PALẸ%^PAL%^XYY2XY PL-NOM ; !!(2) Pl.Nom: jiẹʹrj
++N:%^PAL%>e ESS/PAR ; !!(6) Ess: jeäʹrǧǧen
++N:%^VOWRaise%^PALE%^PAL%^XYY2XY PL-OBL ; !!(8) Pl.Acc: jieʹrjid
 
 LEXICON N_REAEIQGHGH !!= * @CODE@ reäiʹǧǧ:reäigg
 ! vowel: diphthong
