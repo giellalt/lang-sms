@@ -626,7 +626,10 @@ need to be merged as well. I will need this info later. If it is possible, they 
 </inc-audio>
 
 ================================
-Question for Ciprian: With the new naming of the xml file Prop_sms2x.xml => N_Prop_sms2x.xml we will have to alter the xsl transformation script which has been used in the AKU languages for generating stems/...lexc files. That is simple isn't it? (see main/gtcore//scripts/xsl/generate_lex-fileVM.xsl)
+Question for Ciprian: With the new naming of the xml file Prop_sms2x.xml =>
+N_Prop_sms2x.xml we will have to alter the xsl transformation script which has
+been used in the AKU languages for generating stems/...lexc files. That is
+simple isn't it? (see $GTHOME/giella-core/scripts/xsl/generate_lex-fileVM.xsl)
 Answer for Jack: I guess not that difficult.
 ================================
 
