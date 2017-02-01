@@ -111,6 +111,7 @@ LIST Opt = Opt ;
 LIST Actor = Actor ;
 LIST Clt = Clt ;
 LIST A = A ;
+LIST Det = Det ;
 LIST Ord = Ord ;
 LIST Coll = Coll ;
 LIST ABBR = ABBR ;
@@ -307,7 +308,7 @@ LIST NORGA = "Dánmárku-#Norga" "davvi#Norga" "Davvi-Norga" "gaska-#Norga" "Nor
 
 
  # The set REALCOPULAS is smaller than COPULAS, made for verbs with PrfPrc complements: Seammás REALCOPULAS son dovdan iežas...
-LIST REALCOPULAS = "lea" ;
+LIST REALCOPULAS = "leeʹd" "lij" "iʹlla" ;
 
 # The set COPULAS is for predicative constructions
 LIST COPULAS = "lea" ;
@@ -709,8 +710,9 @@ MAP (@-FMAINV) TARGET Ger OR ConNeg OR PrfPrc OR Inf IF (*-1 VFIN BARRIER S-BOUN
 
 
 # PrfPrc
+SELECT: PrfPrc (*-1 REALCOPULAS BARRIER V OR S-BOUNDARY) ;
 #SELECT: PrfPrc (*-1 ("lea") BARRIER V OR S-BOUNDARY) ;
-SELECT:PrfPrs_DerNomAct PrfPrc (0 (Der/NomAct) LINK *-1 S-BOUNDARY BARRIER V)(NEGATE *1 V BARRIER S-BOUNDARY) ;
+#SELECT:PrfPrs_DerNomAct PrfPrc (0 (Der/NomAct) LINK *-1 S-BOUNDARY BARRIER V)(NEGATE *1 V BARRIER S-BOUNDARY) ;
 	## Disse maahtam tjaeledh gosse sijhtem, jih aaj lohkedh gosse båarasåbpoe  sjidteme.
 	## Manne aktem gärjam man nomme jupmele-vaerie lohkeme.
 
@@ -757,6 +759,9 @@ REMOVE:No_Px PX IF (0 N)(NOT 0 FAMILY OR Pron);
 #SELECT: Attr IF (0 Prop)(1 Prop); # Too hard.
 REMOVE:PropAttr (Prop Attr) IF (NOT 1 Prop);
 	## Åvla gihtjie, vaadtsa lihkebe jih geelkie dam naehpiem.
+
+REMOVE:DetAttr (Det Attr) IF (NOT 1 N OR A) ;
+	## puk mainste säämas
 
 #SELECT:GenToAdp Gen IF (1 Adp); #NOTUSED # check this
 #REMOVE:NotNomToAdp Nom IF (1 Adp); #NOTUSED # check this
