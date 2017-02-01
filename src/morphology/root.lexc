@@ -627,6 +627,7 @@ LEXICON Root 	  !!= * @CODE@
     Punctuation           ; !!= * @CODE@
     Particle              ; !!= * @CODE@
 
+    NEG-COPULA		  ; !!= * @CODE@ This is for 3rd person iʹlla
 !! This generates from merged materials
          A_sms2x               ; !!= * @CODE@ This generates from merged materials
          TRAB_sms2x            ; !!= * @CODE@ transitive abbreviations
@@ -700,48 +701,6 @@ LEXICON CS_
 LEXICON CS-TEMP_
 !! __when__
  +CS+Temp: # ;
-
-LEXICON DET_
-!! determiner
- +Det: # ;
-
-LEXICON DET_NUQBB
-!! determiner
-  +Det+Attr: #         ;
- +Det: NMN_NUQBB ;
-! +Det+Der/N: NMN_NUQBB ;
-
-LEXICON DET_AANAR
-!! determiner
-  +Det+Attr: #         ;
- +Det: NMN_AANAR ;
-! +Det+Der/N: NMN_AANAR ;
-
-LEXICON DET_KHEEQLES
-!! determiner
- +Det+Attr:%^Pen%^PALE%^Pen%^PAL%^Pen%^CCC2C #            ;
-      +Det:                                  NMN_KHEEQLES ;
-
-
-LEXICON DET-SHORTDEM_
-! tõt:tõ
- +Det+Dem: SHORTDEM ;
-
-
-LEXICON ORD_
-+Det+Ord: # ;
-
-!LEXICON NUM-ORD_
-! +Num+Ord: # ;
-! +Det+Ord: # ;
-
-LEXICON DET_NEELLJAD !!= * @CODE@ neelljad:neellj
-!! similar_to: A_MOASHSHAD
-!       +Num+Ord:   #             ;
-   +Det+Ord+Attr:ad #             ;
-        +Det+Ord:ad SG-NOM        ;
-        +Det+Ord:ad PL-NOM        ;
-  +Det+Ord+Der/N:   NMN_MOASHSHAD ;
 
 LEXICON NUM_
  +Num: # ;

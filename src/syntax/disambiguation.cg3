@@ -111,6 +111,7 @@ LIST Opt = Opt ;
 LIST Actor = Actor ;
 LIST Clt = Clt ;
 LIST A = A ;
+LIST Det = Det ;
 LIST Ord = Ord ;
 LIST Coll = Coll ;
 LIST ABBR = ABBR ;
@@ -231,6 +232,10 @@ LIST ADVLCASE = Ine Ill Com Ela ;
 LIST NUMBER = Sg Pl ;
 LIST NOMEN-NOT-PRON = N A Indef Num Ord ;  # they can have Dem as attr
 
+LIST TENSES = Prs Prt ;
+LIST PERS-TAG = Sg1 Sg2 Sg3 Du1 Du2 Du3 Pl1 Pl2 Pl3 ;
+
+
 LIST WORD = N A V Adv Pron Interj Num CS CC Pcle Pr Po ;
 SET REALWORD = WORD - Num - Ord ;
 SET REALWORD-NOTABBR = WORD - Num - Ord - ABBR ;
@@ -303,7 +308,7 @@ LIST NORGA = "Dánmárku-#Norga" "davvi#Norga" "Davvi-Norga" "gaska-#Norga" "Nor
 
 
  # The set REALCOPULAS is smaller than COPULAS, made for verbs with PrfPrc complements: Seammás REALCOPULAS son dovdan iežas...
-LIST REALCOPULAS = "lea" ;
+LIST REALCOPULAS = "leeʹd" "lij" "iʹlla" ;
 
 # The set COPULAS is for predicative constructions
 LIST COPULAS = "lea" ;
@@ -472,6 +477,17 @@ REMOVE:R_Attr_ABBR Attr IF (0 ABBR + Nom)(NOT 1 Prop OR ABBR);
 #REMOVE: ("j") IF (0 ("J"));
 #REMOVE: ("<[a-zäöåøæï]>"r) IF (0 ("<[A-ZÄÖÅØÆÏ]>"r));
 	## J. A.	
+
+
+# Lexicalisation rather than derivation
+REMOVE:nlex N-DER IF (0 N-DER)(0 $$CASES)(0 $$NUMBER);
+REMOVE:vlex V-DER IF (0 V-DER)(0 $$PERS-TAG)(0 $$TENSES);
+
+
+
+
+
+
 # Trivialia
 
 REMOVE:prop_daate Prop IF (0 Pers); # too strong
@@ -548,14 +564,13 @@ REMOVE:PrtInNeg Prs IF (0 Neg)(*1C ConNeg + Prt BARRIER NOT-ADV);
 	
 REMOVE:PrsInNeg Prt IF (0 Neg)(*1C ConNeg BARRIER NOT-ADV LINK NOT 0 Prt);
 
-LIST PERS-TAG = Sg1 Sg2 Sg3 Du1 Du2 Du3 Pl1 Pl2 Pl3 ;
 
 SELECT:PersonInNeg $$PERS-TAG (0 Neg + Prt)(*1C $$PERS-TAG + ConNeg BARRIER NOT-ADV);
 REMOVE:NegPrt (Neg Prt)(NEGATE 1 ("lea" ConNeg Prt)) ;
 ## this is for removing the 'ij' etc. 
 	## Ij lin gujht daarah altese vielie jienebh biejjieh daesnie.
 
-SELECT:Du1NotVGen Du1 (0 VGen LINK -*1 ("månnoeh") BARRIER S-BOUNDARY)
+SELECT:Du1NotVGen Du1 (0 VGen LINK -*1 ("månnoeh") BARRIER S-BOUNDARY) ;
 
 # Imperative
 #REMOVE:NotImpIfWord Imp IF (*-1 NOT-ADV-INT-PCLE BARRIER CS OR CC);
@@ -574,6 +589,26 @@ REMOVE:Imprtd Imprt (*-1 WORD BARRIER CC OR COMMA OR BOS)(NOT 0 Neg)(NEGATE -1 C
 SELECT:Imprte (Imprt Sg2) (-1 CC LINK *-1C (Imprt Sg2) BARRIER S-BOUNDARY OR V) ;
 
 
+# Genitive modifier
+
+SELECT:genmod Gen IF (-1 BOS)(1C N);
+	      ##
+
+# Subject
+
+SELECT:nsg N + Sg + Nom IF (*-1 BOS BARRIER VFIN)(0 Nom)(*1C V + Sg3 BARRIER VFIN);
+
+SELECT:npl N + Pl + Nom IF (*-1 BOS BARRIER VFIN)(0 Nom)(*1C V + Pl3 BARRIER VFIN);
+
+SELECT:npl N + Pl + Nom IF (*-1 BOS BARRIER VFIN)(0 Nom)(*1C V + Pl3 BARRIER VFIN);
+
+
+
+
+
+
+
+# M A P P I N G
 
 
 	# CC- and CS-Mapping
@@ -667,16 +702,17 @@ MAP (@+FMAINV) TARGET VFIN IF (NOT 0 AUX) ;
 
 MAP (@+FMAINV) TARGET VFIN IF (0 AUX LINK NOT *1 Inf OR PrfPrc BARRIER S-BOUNDARY) ;
 
-MAP (@-FMAINV) TARGET Ger OR ConNeg OR PrfPrc OR Inf IF (*1 VFIN LINK 0 AUX BARRIER S-BOUNDARY) ;
-MAP (@-FMAINV) TARGET Ger OR ConNeg OR PrfPrc OR Inf IF (*-1 VFIN LINK 0 AUX BARRIER S-BOUNDARY) ;
+MAP (@-FMAINV) TARGET Ger OR ConNeg OR PrfPrc OR Inf IF (*1 VFIN BARRIER S-BOUNDARY LINK 0 AUX) ;
+MAP (@-FMAINV) TARGET Ger OR ConNeg OR PrfPrc OR Inf IF (*-1 VFIN BARRIER S-BOUNDARY LINK 0 AUX ) ;
 	#$ Luste tjoejkedh.
 	# 
 
 
 
 # PrfPrc
+SELECT: PrfPrc (*-1 REALCOPULAS BARRIER V OR S-BOUNDARY) ;
 #SELECT: PrfPrc (*-1 ("lea") BARRIER V OR S-BOUNDARY) ;
-SELECT:PrfPrs_DerNomAct PrfPrc (0 (Der/NomAct) LINK *-1 S-BOUNDARY BARRIER V)(NEGATE *1 V BARRIER S-BOUNDARY) ;
+#SELECT:PrfPrs_DerNomAct PrfPrc (0 (Der/NomAct) LINK *-1 S-BOUNDARY BARRIER V)(NEGATE *1 V BARRIER S-BOUNDARY) ;
 	## Disse maahtam tjaeledh gosse sijhtem, jih aaj lohkedh gosse båarasåbpoe  sjidteme.
 	## Manne aktem gärjam man nomme jupmele-vaerie lohkeme.
 
@@ -703,7 +739,7 @@ SELECT:PlIfPlSubj Pl3 IF (*-1 (Pl Nom) BARRIER NOT-ADV OR COMMA);
 	## Jijnjesh leah sijhteminie edtjibie gieline barkedh, maehtibie tjåahkoeh, seeminarh øørnedh gusnie åadtjoejibie gaavnedidh jih rååresjadtedh.
 
 REMOVE:FocGan Foc/gan (0 (V Du3)) ;
-SELECT:Ger Ger (0 (Der/NomAct) LINK *-1 REALCOPULAS BARRIER S-BOUNDARY)
+SELECT:Ger Ger (0 (Der/NomAct) LINK *-1 REALCOPULAS BARRIER S-BOUNDARY) ;
 	## Maam leah datne darjoeminie?
 
 # Contract or not -- removed, we have removed the sma contract verb analysis
@@ -723,6 +759,9 @@ REMOVE:No_Px PX IF (0 N)(NOT 0 FAMILY OR Pron);
 #SELECT: Attr IF (0 Prop)(1 Prop); # Too hard.
 REMOVE:PropAttr (Prop Attr) IF (NOT 1 Prop);
 	## Åvla gihtjie, vaadtsa lihkebe jih geelkie dam naehpiem.
+
+REMOVE:DetAttr (Det Attr) IF (NOT 1 N OR A) ;
+	## puk mainste säämas
 
 #SELECT:GenToAdp Gen IF (1 Adp); #NOTUSED # check this
 #REMOVE:NotNomToAdp Nom IF (1 Adp); #NOTUSED # check this
@@ -1090,7 +1129,7 @@ MAP (@SPRED) TARGET Nom IF (*1C (@SUBJ) BARRIER NPNH);
 MAP (@<SPRED) TARGET Nom IF (*-1C (@SUBJ) BARRIER NPNH);
 	# this is if the finite verb is missing
 	## Tåamma voejije.
-MAP (@SPRED>) TARGET Nom IF (*-1 BOS BARRIER NPNH)(*1 @SUBJ LINK 0 Inf BARRIER NOT-ADV);   
+MAP (@SPRED>) TARGET Nom IF (*-1 BOS BARRIER NPNH)(*1 @SUBJ BARRIER NOT-ADV LINK 0 Inf);   
 	## Luste tjoejkedh.
 	#$ Lustes aate tjoejkedh.
 
@@ -1201,7 +1240,7 @@ REMOVE:Nregex N-DER (0 N-DER-SUF) ;
 REMOVE:Aregex A-DER (0 A-DER-SUF) ;
 
 
-REMOVE:waitwithDis (2 V) (0 (1 V))
+REMOVE:waitwithDis (2 V) (0 (1 V)) ;
 
 
 MAP (@OBJ>) TARGET Acc (NOT 0 TIME OR ROUTE)(*1 MAINV + TV BARRIER S-BOUNDARY OR COMMA) ;

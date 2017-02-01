@@ -825,6 +825,51 @@ LEXICON N2A_CHAECCAI
 +Der/N2A+A:%>j ADJ-DER/COMP_kwlmmsab ;
 +Der/N2A+A:%>j ADJ-DER/SUPERL_ummus ;
 
+LEXICON DET_
+!! determiner
+ +Det: # ;
+
+LEXICON DET_NUQBB
+!! determiner
+  +Det+Attr: #         ;
+ +Det: NMN_NUQBB ;
+! +Det+Der/N: NMN_NUQBB ;
+
+LEXICON DET_AANAR
+!! determiner
+  +Det+Attr: #         ;
+ +Det: NMN_AANAR ;
+! +Det+Der/N: NMN_AANAR ;
+
+LEXICON DET_KHEEQLES
+!! determiner
+ +Det+Attr:%^Pen%^PALE%^Pen%^PAL%^Pen%^CCC2C #            ;
+      +Det:                                  NMN_KHEEQLES ;
+
+
+LEXICON DET-SHORTDEM_
+! tõt:tõ
+ +Det+Dem: SHORTDEM ;
+
+
+LEXICON ORD_
++Det+Ord: # ;
+
+!LEXICON NUM-ORD_
+! +Num+Ord: # ;
+! +Det+Ord: # ;
+
+LEXICON DET_NEELLJAD !!= * @CODE@ neelljad:neellj
+!! similar_to: A_MOASHSHAD
+!       +Num+Ord:   #             ;
+   +Det+Ord+Attr:ad #             ;
+        +Det+Ord:ad SG-NOM        ;
+        +Det+Ord:ad PL-NOM        ;
+  +Det+Ord+Der/N:   NMN_MOASHSHAD ;
+
+
+LEXICON DET_ATTR
++Det+Attr: K ;
 
 LEXICON DET-REFL_ 
 !! jiiʹjjes:jiijj
@@ -7062,7 +7107,7 @@ LEXICON A-01_KAAQLLES !!= * @CODE@ kääʹlles:källes
 ! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
 ! Stem vowel: e
 !! * Yaml: __N-kaeaelles__
-:%^Pen%^V2VV%^Pen%^PAL A-02_SG-NOM ;	     	! kääʹlles
+:%^Pen%^V2VV%^Pen%^PAL%>es A-02_SG-NOM ;	     	! kääʹlles
 :%^PenVow2a%^VC A-02_SG-ABE/ACC/GEN-PL-NOM ;	 		! källaz
 :%^RmVow%>a A-02_SG-ILL ;	  			! källsa
 :%^RmVow%>e A-02_SG-LOC ;				! källsest
