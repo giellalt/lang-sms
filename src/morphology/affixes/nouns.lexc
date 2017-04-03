@@ -1092,7 +1092,7 @@ LEXICON NMN_MUORR
 +Der/Dimin+N:%^PAL%^CC2C N_MUORYZH-WITH-PAL ;  !!= * @CODE@ muõʹr-
 
 HatY-STEM-PX-RETAIN ;
-+Use/NG:%^CC2C HatY-STEM-PX-RETAIN-PL
++Use/NG:%^CC2C HatY-STEM-PX-RETAIN-PL ;
 :%^CC2C HatY-STEM-PX-WEAKEN ;
 :%^CC2C HatY-STEM-PX-WEAKEN_NG ;
 :%^Allegro%^PAL%^CC2C HatY-STEM-PX-ALLEGRO ; !Prefer
@@ -4973,26 +4973,46 @@ LEXICON NMN_KAAQFF
 
 
 
-LEXICON N_KLAAQDD !!= * @CODE@ klaaʹdd:klaaʹdd
+
+
+LEXICON N_KLAAQDD !!= * @CODE@ klaaʹdd:klaadd
 +N: NMN_KLAAQDD ;
 LEXICON NMN_KLAAQDD
-! gradation: no
-!! is for nouns with ''-est'' +Sg+Loc; ''e'' +Sg+Ill;
 !! X2 no gradation; no lowering no raising
-!! N_GEN1-ILLEX1-LOCE-NOM1X1
-!! ** Yaml: __klaadd__
-!! * There are several stem types 
-!! * klaaʹdd:klaaʹdd
-
+!!! pos="nominal"
+!!! syll_count-in-Sg_Nom="1"
+!!! stem-ends-in="consonant"
+!!! stem_vowel-in-Sg_Loc="e"
+!!! stem_with_gradation="no"
+!! Sg_Ill="palatalization|e-final"
+!! cf. plaan 
+!! * Yaml: __N-klaadd__
 !:%^Pen%^V2VV%^CShort%^VC DenominalAdjsCShort ;
- SG-NOM ;
- SG-ABE/ACC/GEN-PL-NOM ;
- NMN_SG-ILL_E ;
- NMN_SG-LOC_E ;
- SG-COM_IN ;
-:%>e ESS/PAR ;
+! SG-NOM ;
+! SG-ABE/ACC/GEN-PL-NOM ;
+! NMN_SG-ILL_E ;
+! NMN_SG-LOC_E ;
+! SG-COM_IN ;
+!:%>e ESS/PAR ;
+! PL-OBL ;
+!! New
 
- PL-OBL ;
+:%^PAL E-STEM_SG-NOM ;
+:%^PAL E-STEM_SG-ABE/ACC/GEN ;
+: E-STEM_SG-ILL ; !FIXME
+:%^PAL%>e SG-LOC ;
+:%^VOWRaise%^PAL SG-COM_IN ;
+:%^PAL%>e ESS/PAR ; 
+
+:%^PAL PL-NOM ;
+:%^PAL E-STEM_PL-OBL ;
+!! These must be checked 2017-04-03
+!: E-STEM_N_KUALAZH ; !!= * @CODE@ (9) lååddaž
+! E-STEM-PX-RETAIN-WITHOUT-PAL ;                          !!= * @CODE@ (10) lådd-
+!:%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) låʹd»
+!:%^PAL E-STEM-PX-STRENGTHEN-WITH-PAL ;                      !!= * @CODE@ (12) låʹdd
+!+Use/NG:%^PAL E-STEM-PX-ALLEGRO ;  !!= * @CODE@ (2) låʹdd
+
 
 LEXICON N_ZEEQTT !!= * @CODE@ zeeʹtt:zẹẹtt
 +N: NMN_ZEEQTT ;
@@ -7379,33 +7399,6 @@ LEXICON N_LOAQDD-PL !!= * @CODE@ lååʹdd:lådd
 
 
 
-LEXICON N_KLAAQDD !!= * @CODE@ klaaʹdd:klaadd
-+N: NMN_KLAAQDD ;
-LEXICON NMN_KLAAQDD
-!!! pos="nominal"
-!!! syll_count-in-Sg_Nom="1"
-!!! stem-ends-in="consonant"
-!!! stem_vowel-in-Sg_Loc="e"
-!!! stem_with_gradation="no"
-!! Sg_Ill="palatalization|e-final"
-!! cf. plaan 
-!! * Yaml: __N-klaadd__
-
-:%^PAL E-STEM_SG-NOM ;
-:%^PAL E-STEM_SG-ABE/ACC/GEN ;
-: E-STEM_SG-ILL ; !FIXME
-:%^PAL%>e SG-LOC ;
-:%^VOWRaise%^PAL SG-COM_IN ;
-:%^PAL%>e ESS/PAR ; 
-
-:%^PAL PL-NOM ;
-:%^PAL E-STEM_PL-OBL ;
-!! These must be checked 2017-04-03
-!: E-STEM_N_KUALAZH ; !!= * @CODE@ (9) lååddaž
-! E-STEM-PX-RETAIN-WITHOUT-PAL ;                          !!= * @CODE@ (10) lådd-
-!:%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) låʹd»
-!:%^PAL E-STEM-PX-STRENGTHEN-WITH-PAL ;                      !!= * @CODE@ (12) låʹdd
-!+Use/NG:%^PAL E-STEM-PX-ALLEGRO ;  !!= * @CODE@ (2) låʹdd
 
 
 
