@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Adjective - kõõumâs e-stem kylmempi: # Adjective - full paradigm
+     kõõumâs+A+Comp+Sg+Nom: kõummsab
+     kõõumâs+A+Comp+Sg+Gen: kõummsab
+     kõõumâs+A+Comp+Sg+Acc: kõummsab
+     kõõumâs+A+Comp+Sg+Ill: [kõummsõʹbbe, kõummsuʹbbe]
+     kõõumâs+A+Comp+Sg+Loc: [kõummsõbâst, kõummsubust]
+     kõõumâs+A+Comp+Sg+Com: [kõummsõbin, kõummsubuin]
+     kõõumâs+A+Comp+Ess: [kõummsõbân, kõummsubun]
+     kõõumâs+A+Comp+Par: [kõummsõbâd, kõummsubud]
+     kõõumâs+A+Comp+Sg+Abe: [kõummsabtaa, kõummsabtää]
+     kõõumâs+A+Comp+Pl+Nom: kõummsab
+     kõõumâs+A+Comp+Pl+Gen: [kõummsõbi, kõummsubui]
+     kõõumâs+A+Comp+Pl+Acc: [kõummsõbid, kõummsubuid]
+     kõõumâs+A+Comp+Pl+Ill: [kõummsõbid, kõummsubuid]
+     kõõumâs+A+Comp+Pl+Loc: [kõummsõbin, kõummsubuin]
+     kõõumâs+A+Comp+Pl+Com: [kõummsõbivuiʹm, kõummsubuivuiʹm]
+     kõõumâs+A+Comp+Pl+Abe: [kõummsõbitaa, kõummsõbitää, kõummsubuitaa, kõummsubuitää]

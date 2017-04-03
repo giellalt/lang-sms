@@ -1092,9 +1092,16 @@ LEXICON NMN_MUORR
 +Der/Dimin+N:%^PAL%^CC2C N_MUORYZH-WITH-PAL ;  !!= * @CODE@ muõʹr-
 
 HatY-STEM-PX-RETAIN ;
++Use/NG:%^CC2C HatY-STEM-PX-RETAIN-PL
 :%^CC2C HatY-STEM-PX-WEAKEN ;
 :%^CC2C HatY-STEM-PX-WEAKEN_NG ;
-:%^Allegro%^CC2CAllegro HatY-STEM-PX-ALLEGRO ;
+:%^Allegro%^PAL%^CC2C HatY-STEM-PX-ALLEGRO ; !Prefer
+!! ǩiõtt+N+Sg+Loc+PxSg1 __hand,arm/käsi__
+!!€ ǩiõ0tt%^Allegro%^PAL%^CC2C%>stan
+!!€ ǩiõʹđ0000%>stan
+:%^Allegro%^CC2C HatY-STEM-PX-ALLEGRO ;
+!:%^Allegro%^PAL%^CC2CAllegro HatY-STEM-PX-ALLEGRO ; !Prefer 
+!:%^Allegro%^CC2CAllegro HatY-STEM-PX-ALLEGRO ;
 :%^CC2CCC HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_MUORR-PL !!= * @CODE@ muõrr:muõrr
@@ -7370,6 +7377,38 @@ LEXICON N_LOAQDD-PL !!= * @CODE@ lååʹdd:lådd
 +N:%^V2VV%^PAL PL-NOM ;
 +N:%^V2VV%^VOWRaise%^PAL PL-OBL ;
 
+
+
+LEXICON N_KLAAQDD !!= * @CODE@ klaaʹdd:klaadd
++N: NMN_KLAAQDD ;
+LEXICON NMN_KLAAQDD
+!!! pos="nominal"
+!!! syll_count-in-Sg_Nom="1"
+!!! stem-ends-in="consonant"
+!!! stem_vowel-in-Sg_Loc="e"
+!!! stem_with_gradation="no"
+!! Sg_Ill="palatalization|e-final"
+!! cf. plaan 
+!! * Yaml: __N-klaadd__
+
+:%^PAL E-STEM_SG-NOM ;
+:%^PAL E-STEM_SG-ABE/ACC/GEN ;
+: E-STEM_SG-ILL ; !FIXME
+:%^PAL%>e SG-LOC ;
+:%^VOWRaise%^PAL SG-COM_IN ;
+:%^PAL%>e ESS/PAR ; 
+
+:%^PAL PL-NOM ;
+:%^PAL E-STEM_PL-OBL ;
+!! These must be checked 2017-04-03
+!: E-STEM_N_KUALAZH ; !!= * @CODE@ (9) lååddaž
+! E-STEM-PX-RETAIN-WITHOUT-PAL ;                          !!= * @CODE@ (10) lådd-
+!:%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) låʹd»
+!:%^PAL E-STEM-PX-STRENGTHEN-WITH-PAL ;                      !!= * @CODE@ (12) låʹdd
+!+Use/NG:%^PAL E-STEM-PX-ALLEGRO ;  !!= * @CODE@ (2) låʹdd
+
+
+
 !! !!e-a-stems
 
 
@@ -8958,7 +8997,7 @@ LEXICON HatY-STEM-PX-WEAKEN-SG
 
 +Sg+Abe+PxSg2:%>adtaa K ;
 +Sg+Abe+PxSg2:%>adtää K ;
-+Sg+Abe+PxSg3:%>âsta K ;
++Sg+Abe+PxSg3:%>âstaa K ;
 +Sg+Abe+PxSg3:%>âstää K ;
 +Sg+Abe+PxPl2:%>âdtaa K ;
 +Sg+Abe+PxPl2:%>âdtää K ;
@@ -8986,6 +9025,10 @@ LEXICON HatY-STEM-PX-WEAKEN-PL
 +Pl+Abe+PxSg1:%>ääntää K ;
 +Pl+Abe+PxSg2:%>äädtaa K ;
 +Pl+Abe+PxSg2:%>äädtää K ;
++Use/NG+Pl+Abe+PxSg1:%>aantaa K ;
++Use/NG+Pl+Abe+PxSg1:%>aantää K ;
++Use/NG+Pl+Abe+PxSg2:%>aadtaa K ;
++Use/NG+Pl+Abe+PxSg2:%>aadtää K ;
 +Pl+Abe+PxSg3:%>eestaa K ;
 +Pl+Abe+PxSg3:%>eestää K ;
 +Pl+Abe+PxPl1:%>eentaa K ;
@@ -8997,6 +9040,8 @@ LEXICON HatY-STEM-PX-WEAKEN-PL
 
 +Pl+Acc+PxSg1:%>ään K ;
 +Pl+Acc+PxSg2:%>ääd K ;
++Use/NG+Pl+Acc+PxSg1:%>aan K ;
++Use/NG+Pl+Acc+PxSg2:%>aad K ;
 +Pl+Acc+PxSg3:%>ees K ;
 +Pl+Acc+PxPl1:%>een K ;
 +Pl+Acc+PxPl2:%>eed K ;
@@ -9004,6 +9049,8 @@ LEXICON HatY-STEM-PX-WEAKEN-PL
 
 +Pl+Com+PxSg1:%>äänvuiʹm K ;
 +Pl+Com+PxSg2:%>äädvuiʹm K ;
++Use/NG+Pl+Com+PxSg1:%>aanvuiʹm K ;
++Use/NG+Pl+Com+PxSg2:%>aadvuiʹm K ;
 +Pl+Com+PxSg3:%>eesvuiʹm K ;
 +Pl+Com+PxPl1:%>eenvuiʹm K ;
 +Pl+Com+PxPl2:%>eedvuiʹm K ;
@@ -9011,6 +9058,8 @@ LEXICON HatY-STEM-PX-WEAKEN-PL
 
 +Pl+Gen+PxSg1:%>ään K ;
 +Pl+Gen+PxSg2:%>ääd K ;
++Use/NG+Pl+Gen+PxSg1:%>aan K ;
++Use/NG+Pl+Gen+PxSg2:%>aad K ;
 +Pl+Gen+PxSg3:%>ees K ;
 +Pl+Gen+PxPl1:%>een K ;
 +Pl+Gen+PxPl2:%>eed K ;
@@ -9018,6 +9067,8 @@ LEXICON HatY-STEM-PX-WEAKEN-PL
 
 +Pl+Ill+PxSg1:%>ään K ;
 +Pl+Ill+PxSg2:%>ääd K ;
++Use/NG+Pl+Ill+PxSg1:%>aan K ;
++Use/NG+Pl+Ill+PxSg2:%>aad K ;
 +Pl+Ill+PxSg3:%>ees K ;
 +Pl+Ill+PxPl1:%>een K ;
 +Pl+Ill+PxPl2:%>eed K ;
