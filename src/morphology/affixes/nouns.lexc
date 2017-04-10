@@ -1343,7 +1343,8 @@ LEXICON NMN_PESS
 !! strong_geminate, short_vowel, no_palatalization, low_stem_vowel
 : A-STEM_SG-NOM ;	    		 !!= * @CODE@ (1) Sg.Nom: pess
 !! Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
-
+!!€ pẹ%^1VOWss
+!!€ pe0ss
 !! strong_geminate, short_vowel, no_palatalization, low_stem_vowel, stem_vowel: a
 :%>a ESS/PAR ; 			 !!= * @CODE@ (6) Ess: pessan
 
@@ -7785,7 +7786,7 @@ LEXICON NMN_ENERGII
 !+N+Pl+Com:%>ivuiʹm K ;
 !+N+Pl+Abe:%>itää K ;
 
-LEXICON N_NALLSHEM !!= * @CODE@ čââʹlmteʹm:čââʹlmt%^1VOWẹm
+LEXICON N_NALLSHEM !!= * @CODE@ čââʹlmteʹm:čââʹlmtẹ%^1VOWm
 +N: NMN_NALLSHEM ;
 LEXICON NMN_NALLSHEM
 !! 292-295
@@ -7813,10 +7814,10 @@ LEXICON N_PRSPRC-EEI !!= * @CODE@ tuõđšteei:tueʹjjee
 LEXICON NMN_PRSPRC-EEI !!= * @CODE@ tuõđšteei:tueʹjjee
 !! tuõđšteei:tueʹjjee
 !! * Yaml: __N-tuodhshteei__
-:ʹjj SG-NOM ;
-+Use/NG:i SG-NOM ;
-:ʹj SG-ABE/ACC/GEN-PL-NOM ;
-+Use/NG:i SG-ABE/ACC/GEN-PL-NOM ;
++Use/NG:ʹjj SG-NOM ;
+:i SG-NOM ;
++Use/NG:ʹj SG-ABE/ACC/GEN-PL-NOM ;
+:i SG-ABE/ACC/GEN-PL-NOM ;
 :j%^VV2V%>ja SG-ILL ; ! ǨK 2017-02-20
 
 +Use/NG:%>ja SG-ILL ;
@@ -8739,6 +8740,12 @@ LEXICON NMN_OOUMAZH
 :%^V2VV%^XYY2XY LOAOADDAZH-STEM-PX ; 
 :%^V2VV%^XYY2XY LOAOADDAZH-STEM-PX-ALLEGRO ; 
 
+LEXICON N_OOUMAZH-PL
+:u PL-OBL ;			! oummui
+: PL-OBL ;			! oummi
+:%^V2VV%^XYY2XY LOAOADDAZH-STEM-PX ; 
+:%^V2VV%^XYY2XY LOAOADDAZH-STEM-PX-ALLEGRO ; 
+:%^V2VV%^XYY2XY%>že ESS/PAR ;
 
 
 !! Class 10 according to Feist 160-161
@@ -8748,21 +8755,29 @@ LEXICON N_KAADHNEKH !!= * @CODE@ kaađneǩ:kaađnẹ%^1VOWǩ
 LEXICON NMN_KAADHNEKH !!= * @CODE@ kaađneǩ:kaađnẹ%^1VOWǩ
 !!= * @CODE@ = stemtype 
 !! * Yaml: __N-kaadhnekj, N-chaustok__
-: SG-NOM ;
+: SG-NOM ; !! Ǩiõllkaʹlddi. 2017-04-04-05
+!! kaađneǩ+N+Sg+Nom __lincense vessel/suitsutusastia__
+!!€ kaađnẹ%^1VOWǩ
+!!€ kaađne0ǩ
 +Use/NG:%{XC%}%^PAL%^C2CC SG-NOM ;
 :%{XC%}%^PAL%^C2CC%>e ESS/PAR ; !!= * @CODE@ kaađneʹǩǩe- 
 :%{XC%}%^V2VV%^PAL%^C2CC SG-ABE/ACC/GEN ; !!= * @CODE@ kaađneeʹǩǩ
-:%{XC%}%^PALNo%^C2CC%>a SG-ILL ; !!= * @CODE@ kaađnekka
+!! kaađneǩ+N+Sg+Gen 
+!!€ kaađnẹ%^1VOWǩ%{XC%}%^V2VV%^PAL%^C2CC
+!!€ kaađneeʹǩǩ000
+:%{XC%}%^PALNo%^C2CC%>a SG-ILL ; !!= * @CODE@ kaađnẹkka
 :%{XC%}%^V2VV%^PAL%^C2CC%>e SG-LOC ;
-:%{XC%}%^V2VV%^VOWRaise%^PAL%^C2CC SG-COM_IN ; !!= * @CODE@ kaađniiʹǩǩin
+:%{XC%}%^V2VV%^VOWRaise%^PAL%^C2CC SG-COM_IN ; 
+!!€ kaađnẹ%^1VOW0ǩ%{XC%}%^V2VV%^VOWRaise%^PAL%^C2CC%>in
+!!€ kaađniiʹǩǩ0000%>in
 +Use/NG:%{XC%}%^V2VV%^PAL%^C2CC SG-COM_IN ; !!= * @CODE@ kaađneeʹǩǩin
 :%{XC%}%^V2VV%^PAL%^C2CC PL-NOM ; !!= * @CODE@ kaađneeʹǩǩ
 :%{XC%}%^V2VV%^VOWRaise%^PAL%^C2CC PL-OBL ;
 +Use/NG:%{XC%}%^V2VV%^PAL%^C2CC PL-OBL ;
 
-!LEXICON N_KAADHNEKH-PL !!= * @CODE@ kaađneǩ:kaađn%^1VOWeǩ
+!LEXICON N_KAADHNEKH-PL !!= * @CODE@ kaađneǩ:kaađnẹ%^1VOWǩ
 !+N: NMN_KAADHNEKH-PL ;
-!LEXICON NMN_KAADHNEKH-PL !!= * @CODE@ kaađneǩ:kaađneǩ
+!LEXICON NMN_KAADHNEKH-PL !!= * @CODE@ kaađneǩ:kaađnẹ%^1VOWǩ
 !!= * @CODE@ = stemtype 
 !! * Yaml: __N-kaadhnekj, N-chaustok__
 !: R ;
@@ -8771,6 +8786,29 @@ LEXICON NMN_KAADHNEKH !!= * @CODE@ kaađneǩ:kaađnẹ%^1VOWǩ
 !:%{XC%}%^V2VV%^PAL%^C2CC PL-NOM ; !!= * @CODE@ kaađneeʹǩǩ
 !:%{XC%}%^V2VV%^VOWRaise%^PAL%^C2CC PL-OBL ;
 !+Use/NG:%{XC%}%^V2VV%^PAL%^C2CC PL-OBL ;
+
+!! Sort of like 10
+LEXICON N_VUYSPPOAQD !!= * @CODE@ vuâsppåʹd:vuâsppå%^1VOWd
++N: NMN_VUYSPPOAQD ;
+LEXICON NMN_VUYSPPOAQD !!= * @CODE@ vuâsppåʹd:vuâsppå%^1VOWd
+!!= * @CODE@ = stemtype 
+!! * Yaml: __N-kaadhnekj, N-chaustok__
+:%^PAL SG-NOM ; !! Ǩiõllkaʹlddi. 2017-04-04-05
+!! vuâsppåʹd+N+Sg+Nom __Lord/Herra__
+!!€ vuâsppå%^1VOW0d%^PAL
+!!€ vuâsppå0ʹd0
+:%{XC%}%^PAL%^C2CC%>e ESS/PAR ; !!= * @CODE@ kaađneʹǩǩe- 
+:%{XC%}%^V2VV%^PAL%^C2CC SG-ABE/ACC/GEN ; !!= * @CODE@ kaađneeʹǩǩ
+!! vuâsppåʹd+N+Sg+Gen 
+!!€ vuâsppå%^1VOWd%{XC%}%^V2VV%^PAL%^C2CC
+!!€ vuâsppååʹdd000
+:%{XC%}%^PALNo%^C2CC%>a SG-ILL ; !!= * @CODE@ kaađnekka
+:%{XC%}%^V2VV%^PAL%^C2CC%>e SG-LOC ;
+:%{XC%}%^V2VV%^VOWRaise%^PAL%^C2CC SG-COM_IN ; 
+!!€ vuâsppå%^1VOW0d%{XC%}%^V2VV%^VOWRaise%^PAL%^C2CC%>in
+!!€ vuâsppooʹdd0000%>in
+:%{XC%}%^V2VV%^PAL%^C2CC PL-NOM ; !!= * @CODE@ vuâsppooʹdd
+:%{XC%}%^V2VV%^VOWRaise%^PAL%^C2CC PL-OBL ;
 
 
 
