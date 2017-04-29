@@ -4012,7 +4012,7 @@ LEXICON NMN_SAIQMM
 :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) säiʹmm Ess+Px..
 
 
-LEXICON N_KHEQDD !!= * @CODE@ ǩeʹdd:ǩeʹdd
+LEXICON N_KHEQDD !!= * @CODE@ ǩeʹdd:ǩe%^1VOWdd
 ! vowel: monophthong
 +N: NMN_KHEQDD ;
 LEXICON NMN_KHEQDD
@@ -4049,10 +4049,10 @@ LEXICON NMN_KHEQDD
 :%^V2VV%^PALE%^PAL E-STEM_SG-ABE/ACC/GEN ;		! ǩeeʹdd
 :%^V2VV%^PALE%^PAL PL-NOM ;		! ǩeeʹdd
 :%^PALÂ%^PALNo%^CC2CCC E-STEM_SG-ILL ;		! ǩeâdˈda
-:%^V2VV%>e SG-LOC ;		! ǩeeʹddest
-:%^V2VV SG-COM_IN ;		! ǩeeʹddin
-:%>e ESS/PAR ; ! ess and prt without
-:%^V2VV%> E-STEM_PL-OBL ;
+:%^V2VV%^PAL%>e SG-LOC ;		! ǩeeʹddest
+:%^V2VV%^PAL SG-COM_IN ;		! ǩeeʹddin
+:%^PAL%>e ESS/PAR ; ! ess and prt without
+:%^V2VV%^PAL%> E-STEM_PL-OBL ;
 :%^V2VV%^PALNo E-STEM_N_KUALAZH ;	! ǩeâddaž
 !! WORK NEEDED FROM HERE DOWN
 
@@ -8267,17 +8267,16 @@ LEXICON NMN_SUQVDDI !!= * @CODE@ suʹvddi:suʹvddi
 !! * Yaml: __N-suvddi__
 !! * There are several stem types
 !! NumContLex="1.2"
-: SG-NOM ;	       			! suʹvddi
-: SG-ABE/ACC/GEN ;    			! suʹvddi
-: SG-ACC ;    			! suʹvddi
-:%^I2J%>a SG-ILL ;		! suʹvddja
-:%^I2J%>e SG-LOC ;			! suʹvddjest
-:%^CC2C SG-COM_N ;			! suʹvddjin
-:%^I2J%>e ESS/PAR ;  			! suʹvddjen
-:%^XYY2VY PL-NOM ;             	! suuʹdi
-+Use/NG: PL-NOM ;             	! suʹvddi
-: PL-OBL ;             		! suʹvddi
-+Use/NG:%^XYY2VY PL-OBL ;       ! suuʹdi
+:%^PAL SG-NOM ;	       			! suʹvddi
+:%^PAL SG-ABE/ACC/GEN ;    			! suʹvddi
+:%^PAL%^I2J%>a SG-ILL ;		! suʹvddja
+:%^PAL%^I2J%>e SG-LOC ;			! suʹvddjest
+:%^PAL%^CC2C SG-COM_N ;			! suʹvddjin
+:%^PAL%^I2J%>e ESS/PAR ;  			! suʹvddjen
+:%^PAL%^XYY2VY PL-NOM ;             	! suuʹdi
++Use/NG:%^PAL PL-NOM ;             	! suʹvddi
+:%^PAL PL-OBL ;             		! suʹvddi
++Use/NG:%^PAL%^XYY2VY PL-OBL ;       ! suuʹdi
 
 LEXICON N_LIEQDHDHDHI !!= * @CODE@ lieʹđđi:lieʹđˈđi
 +N: NMN_LIEQDHDHDHI ;
@@ -8740,12 +8739,12 @@ LEXICON NMN_OOUMAZH
 :%^V2VV%^XYY2XY LOAOADDAZH-STEM-PX ; 
 :%^V2VV%^XYY2XY LOAOADDAZH-STEM-PX-ALLEGRO ; 
 
-LEXICON N_OOUMAZH-PL
-:u PL-OBL ;			! oummui
-: PL-OBL ;			! oummi
-:%^V2VV%^XYY2XY LOAOADDAZH-STEM-PX ; 
-:%^V2VV%^XYY2XY LOAOADDAZH-STEM-PX-ALLEGRO ; 
-:%^V2VV%^XYY2XY%>že ESS/PAR ;
+!LEXICON N_OOUMAZH-PL
+!:u PL-OBL ;			! oummui
+!: PL-OBL ;			! oummi
+!:%^V2VV%^XYY2XY LOAOADDAZH-STEM-PX ; 
+!:%^V2VV%^XYY2XY LOAOADDAZH-STEM-PX-ALLEGRO ; 
+!:%^V2VV%^XYY2XY%>že ESS/PAR ;
 
 
 !! Class 10 according to Feist 160-161
@@ -8788,8 +8787,8 @@ LEXICON NMN_KAADHNEKH !!= * @CODE@ kaađneǩ:kaađnẹ%^1VOWǩ
 !+Use/NG:%{XC%}%^V2VV%^PAL%^C2CC PL-OBL ;
 
 !! Sort of like 10
-LEXICON N_VUYSPPOAQD !!= * @CODE@ vuâsppåʹd:vuâsppå%^1VOWd
-+N: NMN_VUYSPPOAQD ;
+!LEXICON N_VUYSPPOAQD !!= * @CODE@ vuâsppåʹd:vuâsppå%^1VOWd
+!+N: NMN_VUYSPPOAQD ;
 LEXICON NMN_VUYSPPOAQD !!= * @CODE@ vuâsppåʹd:vuâsppå%^1VOWd
 !!= * @CODE@ = stemtype 
 !! * Yaml: __N-kaadhnekj, N-chaustok__
@@ -8879,8 +8878,8 @@ LEXICON NMN_SG-LOC_Y
 !LEXICON NMN_SG-LOC_ZERO
 !: SG-LOC ;
 
-LEXICON NMN_SG-LOC_E
-:%>e SG-LOC ;
+!LEXICON NMN_SG-LOC_E
+!:%>e SG-LOC ;
 
 
 LEXICON NMN_ESS_Y
