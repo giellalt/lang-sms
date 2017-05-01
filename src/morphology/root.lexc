@@ -63,6 +63,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +State
 +Temp
 +Parenthetic
++AssocColl
 
 !! !Number
 +Sg	      !!= * @CODE@ Singular = õõutilååkk
@@ -582,6 +583,11 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Cmp/PlGen
 
 !! !!Flag diacritics
+@P.AssocColl.ON@ !!= * __@CODE@__ Used with Kin terms and Ant
+@R.AssocColl.ON@
+@C.AssocColl@
+
+
 !! We have manually optimised the structure of our lexicon using following
 !! flag diacritics to restrict morhpological combinatorics - only allow compounds
 !! with verbs if the verb is further derived into a noun again:
@@ -619,7 +625,7 @@ LEXICON Root 	  !!= * @CODE@
     ProperNoun            ; !!= * @CODE@
 
     VerbRoot              ; !!= * @CODE@
-    Adverb                ; !!= * @CODE@
+!    Adverb                ; !!= * @CODE@
     Subjunction           ; !!= * @CODE@
     Conjunction           ; !!= * @CODE@
     Interjection          ; !!= * @CODE@
@@ -639,9 +645,10 @@ LEXICON Root 	  !!= * @CODE@
     CS_sms2x              ; !!= * @CODE@ subjunctions
     Det_sms2x             ; !!= * @CODE@ determiners
     Interj_sms2x          ; !!= * @CODE@ This generates from merged materials
+@R.AssocColl.ON@    N_Kin_sms2x               ; !!= * @CODE@ This generates from merged materials
     N_sms2x               ; !!= * @CODE@ This generates from merged materials
   +Cmp/SplitL+Use/SpellNoSugg#:-# N_sms2x               ; !!= * @CODE@ This allows split compound nouns
-    N_Prop_sms2x          ; !!= * @CODE@ This generates from merged materials
+@P.AssocColl.ON@    N_Prop_sms2x          ; !!= * @CODE@ This generates from merged materials
     N_Prop_Toponyms_sms2x ; !!= * @CODE@ Toponymy
     Num_sms2x             ; !!= * @CODE@ This generates from merged materials
     Pcle_sms2x            ; !!= * @CODE@ This generates from merged materials
@@ -726,6 +733,9 @@ LEXICON NUM_AELDD
 LEXICON NUM_KUEQLL
  +Num:%^PALE%^PAL #          ;
  +Num:            NMN_KUEQLL ;
+LEXICON NUM_TAQHTT
+ +Num:%^PAL #          ;
+ +Num:            NMN_TAQHTT ;
 LEXICON NUM_KUEQHTT !!= * @CODE@ kueʹhtt:kuâhtt
  +Num:%^PALE%^PAL #           ;
  +Num:            NMN_KUEQHTT ;
@@ -733,8 +743,18 @@ LEXICON NUM_NELLJ
  +Num: #         ;
  +Num: NMN_NELLJ ;
 
+LEXICON NUM_AANAR
+ +Num: #         ;
+ +Num: NMN_AANAR ;
+
+LEXICON NUM_ATOM
+ +Num: #         ;
+ +Num: NMN_ATOM ;
+
 LEXICON NUM_LO !!= * @CODE@ kuttlo:kuttl
+:ååǥǥ DET_NEELLJAD ; !!= * @CODE@ This ordinal derivation
         +Num:o        K      ;
++Use/SpellNoSugg+Num:å        K      ;
  +Num+Pl+Nom:ååi      K      ;
  +Num+Sg+Gen:ååi      K      ;
  +Num+Sg+Acc:ååi      K      ;
