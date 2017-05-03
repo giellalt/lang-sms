@@ -25,45 +25,47 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 !! !!Grammatical tags
 
-!! !Parts of speech
+!! !Tags for POS
 
 +A	      !!= * @CODE@ Adjective
-+V	      !!= * @CODE@ Verb
-+N	      !!= * @CODE@ Noun
-+Det      !!= * @CODE@ Determiner
-+Adv      !!= * @CODE@ Adverb
-+Pron     !!= * @CODE@ Pronoun
-+CS	      !!= * @CODE@ Subjunction
++Adp          !!= * @CODE@ Adposition, i.e. Post- and Prepostion
++Adv          !!= * @CODE@ Adverb
 +CC	      !!= * @CODE@ Conjunction
-+Adp      !!= * @CODE@ Adposition
-+Po	      !!= * @CODE@ Postposition
++CS	      !!= * @CODE@ Subjunction
++Det          !!= * @CODE@ Determiner
++Interj       !!= * @CODE@ Interjection
++N	      !!= * @CODE@ Noun
++Po	      !!= * @CODE@ Postposition 
 +Pr	      !!= * @CODE@ Preposition
-+Interj   !!= * @CODE@ Interjection
-+Pcle     !!= * @CODE@ Particle
++Pron         !!= * @CODE@ Pronoun
++Pcle         !!= * @CODE@ Particle
++V	      !!= * @CODE@ Verb
 
-!! !Subtypes
+!! !Tags for sub-POS
 
-+Guess    !!= * @CODE@
+ +Prop   !!= * __@CODE@__ - Proper noun
+ +Pers   !!= * __@CODE@__ - Personal Pronoun
+ +Dem    !!= * __@CODE@__ - Demonstrative Pronoun
+ +Interr !!= * __@CODE@__ - Interrogative Pronoun
+ +Refl   !!= * __@CODE@__ - Reflexive Pronoun
+ +Recipr !!= * __@CODE@__ - Reciprocal Pronoun
+ +Rel    !!= * __@CODE@__ - Relative Pronoun
+ +Indef  !!= * __@CODE@__ - Indefinitive Pronoun
+ +Coll   !!= * __@CODE@__ - Collective numerals
+ +Arab   !!= * __@CODE@__ - Arabic numeral
+ +Rom    !!= * __@CODE@__ - Roman numeral 
+ +Pass   !!= * __@CODE@__ - hallat/haddat not in use
 
-+Prop     !!= * @CODE@ Proper noun
+
 +Pred     !!= * @CODE@
 +Attr     !!= * @CODE@ Attributive form
-+Pers     !!= * @CODE@ Personal
-+Dem      !!= * @CODE@ Demonstrative
-+Interr   !!= * @CODE@ Interrogative
-+Refl     !!= * @CODE@ Reflexive
-+Recipr   !!= * @CODE@ Reciprocal
-+Rel      !!= * @CODE@ Relative
-+Indef    !!= * @CODE@ Indefinite
 +Distr    !!= * @CODE@ Distributive
 
 !! !Types of adverbs
-+Manner
-+Spat
-+State
-+Temp
 +Parenthetic
 +AssocColl
+
++Guess    !!= * @CODE@
 
 !! !Number
 +Sg	      !!= * @CODE@ Singular = õõutilååkk
@@ -75,8 +77,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Gen      !!= * @CODE@
 +Acc      !!= * @CODE@
 +Ill      !!= * @CODE@
-+Ine      !!= * @CODE@
-+Ela      !!= * @CODE@
++Loc      !!= * @CODE@
 +Com      !!= * @CODE@
 +Ess      !!= * @CODE@
 +Par      !!= * @CODE@
@@ -98,7 +99,6 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Actor    !!= * @CODE@
 +Actio    !!= * @CODE@
 +ActEss   !!= * @CODE@ -men
-+NegConv2 !!= * @CODE@ fix!
 
 !! Valence
 +IV          !!= * @CODE@ Intransitive
@@ -141,8 +141,6 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +13          !!= * @CODE@ used in combination with +Imp+13+ConNeg
 +2	     !!= * @CODE@ used in combination with +Imp+2+ConNeg
 
-!! !Abbreviation
-+ABBR	!!= * @CODE@ abbreviation
 
 !! !Homonymy
 +Hom1
@@ -162,9 +160,6 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !! Noun derivation
 +Der/N
 +Der/MOš !!= * @CODE@ deverbal derivation V»N architype mõš and mmuš
-+Der/mmuš !!= * @CODE@ deverbal derivation V»N
-+Der/mõš !!= * @CODE@ deverbal derivation V»N
-+Der/muš !!= * @CODE@ deverbal derivation V»N, secondary?
 +Der/vuõtt !!= * @CODE@ A»N
 
 !! Verb derivation
@@ -215,6 +210,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +OLang/SME !!≈ * @CODE@ - North Sámi
 +OLang/SMA !!≈ * @CODE@ - South Sámi
 +OLang/SMN !!≈ * @CODE@ - Inari Sámi
++OLang/SMS !!≈ * @CODE@ - Skolt Sámi
 +OLang/RUS !!≈ * @CODE@ - Russian
 +OLang/FIN !!≈ * @CODE@ - Finnish
 +OLang/SWE !!≈ * @CODE@ - Swedish
@@ -229,6 +225,10 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +%<gen%>
 +%<loc%>	!!= * @CODE@ this will be added to the preposition tagging __mâŋŋa jââđast__
 +%<nom%>
+
++Sem/Manner
+
+
 
 !! !Semantic properties of names
 +Sem/Ani      !!= * @CODE@ Animate
@@ -369,13 +369,21 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Foc/tõt
 
 
+!! !Other tags
 
++ABBR               !!≈ * __@CODE@__ Abbreviation
++ACR                !!≈ * __@CODE@__  Acronym
++CLB                !!≈ * __@CODE@__  Clause border (full stop, comma..)
++PUNCT              !!≈ * __@CODE@__  punctuation
++LEFT               !!≈ * __@CODE@__  left paranthesis
++RIGHT              !!≈ * __@CODE@__  right paranthesis
+^GUESSNOUNROOT  
++Dyn                !!≈ * __@CODE@__  Dynamically generated (acronyms)
+
++Prefix		    !!≈ * __@CODE@__  prefix
 
 !! !Punctuation
-+CLB   !!= * @CODE@
-+PUNCT !!= * @CODE@
 +HYPH  !!= * @CODE@
-+PAR   !!= * @CODE@
 
 !! !!Letters
 
@@ -707,7 +715,7 @@ LEXICON CS_
 
 LEXICON CS-TEMP_
 !! __when__
- +CS+Temp: # ;
+ +CS+Sem/Time: # ;
 
 LEXICON NUM_
  +Num: # ;
