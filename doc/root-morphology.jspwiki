@@ -10,39 +10,45 @@ more than one character, and it contains the initial __Root__ lexicon.
 
 !!Grammatical tags
 
-!Parts of speech
+!Tags for POS
 
  * +A	       Adjective
- * +V	       Verb
- * +N	       Noun
- * +Det       Determiner
- * +Adv       Adverb
- * +Pron      Pronoun
- * +CS	       Subjunction
+ * +Adp           Adposition, i.e. Post- and Prepostion
+ * +Adv           Adverb
  * +CC	       Conjunction
- * +Adp       Adposition
- * +Po	       Postposition
+ * +CS	       Subjunction
+ * +Det           Determiner
+ * +Interj        Interjection
+ * +N	       Noun
+ * +Po	       Postposition 
  * +Pr	       Preposition
- * +Interj    Interjection
- * +Pcle      Particle
+ * +Pron          Pronoun
+ * +Pcle          Particle
+ * +V	       Verb
 
-!Subtypes
+!Tags for sub-POS
 
- * +Guess    
+ * __ +Prop   __ - Proper noun
+ * __ +Pers   __ - Personal Pronoun
+ * __ +Dem    __ - Demonstrative Pronoun
+ * __ +Interr __ - Interrogative Pronoun
+ * __ +Refl   __ - Reflexive Pronoun
+ * __ +Recipr __ - Reciprocal Pronoun
+ * __ +Rel    __ - Relative Pronoun
+ * __ +Indef  __ - Indefinitive Pronoun
+ * __ +Coll   __ - Collective numerals
+ * __ +Arab   __ - Arabic numeral
+ * __ +Rom    __ - Roman numeral 
+ * __ +Pass   __ - hallat/haddat not in use
 
- * +Prop      Proper noun
+
  * +Pred     
  * +Attr      Attributive form
- * +Pers      Personal
- * +Dem       Demonstrative
- * +Interr    Interrogative
- * +Refl      Reflexive
- * +Recipr    Reciprocal
- * +Rel       Relative
- * +Indef     Indefinite
  * +Distr     Distributive
 
 !Types of adverbs
+
+ * +Guess    
 
 !Number
  * +Sg	       Singular = õõutilååkk
@@ -54,8 +60,7 @@ more than one character, and it contains the initial __Root__ lexicon.
  * +Gen      
  * +Acc      
  * +Ill      
- * +Ine      
- * +Ela      
+ * +Loc      
  * +Com      
  * +Ess      
  * +Par      
@@ -77,7 +82,6 @@ more than one character, and it contains the initial __Root__ lexicon.
  * +Actor    
  * +Actio    
  * +ActEss    -men
- * +NegConv2  fix!
 
 Valence
  * +IV           Intransitive
@@ -120,8 +124,6 @@ Valence
  * +13           used in combination with +Imp+13+ConNeg
  * +2	      used in combination with +Imp+2+ConNeg
 
-!Abbreviation
- * +ABBR	 abbreviation
 
 !Homonymy
 
@@ -134,9 +136,6 @@ Valence
  * +Der/t  carative derivation N»A for subsequent derivation
 Noun derivation
  * +Der/MOš  deverbal derivation V»N architype mõš and mmuš
- * +Der/mmuš  deverbal derivation V»N
- * +Der/mõš  deverbal derivation V»N
- * +Der/muš  deverbal derivation V»N, secondary?
  * +Der/vuõtt  A»N
 
 Verb derivation
@@ -186,6 +185,7 @@ get the same pronounciation whether read as SME or NOB/NNO/SWE.
  * +OLang/SME - North Sámi
  * +OLang/SMA - South Sámi
  * +OLang/SMN - Inari Sámi
+ * +OLang/SMS - Skolt Sámi
  * +OLang/RUS - Russian
  * +OLang/FIN - Finnish
  * +OLang/SWE - Swedish
@@ -197,6 +197,9 @@ get the same pronounciation whether read as SME or NOB/NNO/SWE.
 
 !Government tags
  * +%<loc%>	 this will be added to the preposition tagging __mâŋŋa jââđast__
+
+
+
 
 !Semantic properties of names
  * +Sem/Ani       Animate
@@ -320,13 +323,20 @@ get the same pronounciation whether read as SME or NOB/NNO/SWE.
  * +Foc/ki	   This might be used with Use/NG
 
 
+!Other tags
 
+ * __+ABBR__ Abbreviation
+ * __+ACR__  Acronym
+ * __+CLB__  Clause border (full stop, comma..)
+ * __+PUNCT__  punctuation
+ * __+LEFT__  left paranthesis
+ * __+RIGHT__  right paranthesis
+ * __+Dyn__  Dynamically generated (acronyms)
+
+ * __+Prefix		__  prefix
 
 !Punctuation
- * +CLB   
- * +PUNCT 
  * +HYPH  
- * +PAR   
 
 !!Letters
 
@@ -508,6 +518,9 @@ Compounding
  * __+Cmp/SplitL	__ Remainder is found to the left
 
 !!Flag diacritics
+ * __@P.AssocColl.ON@ __ Used with Kin terms and Ant
+
+
 We have manually optimised the structure of our lexicon using following
 flag diacritics to restrict morhpological combinatorics - only allow compounds
 with verbs if the verb is further derived into a noun again:
@@ -545,7 +558,6 @@ given the proper use of these flags.
  *     ProperNoun            ; 
 
  *     VerbRoot              ; 
- *     Adverb                ; 
  *     Subjunction           ; 
  *     Conjunction           ; 
  *     Interjection          ; 
@@ -553,6 +565,7 @@ given the proper use of these flags.
  *     Punctuation           ; 
  *     Particle              ; 
 
+ *     NEG-COPULA		  ;  This is for 3rd person iʹlla
 This generates from merged materials
  *          A_sms2x               ;  This generates from merged materials
  *          TRAB_sms2x            ;  transitive abbreviations
@@ -563,9 +576,10 @@ This generates from merged materials
  *     CS_sms2x              ;  subjunctions
  *     Det_sms2x             ;  determiners
  *     Interj_sms2x          ;  This generates from merged materials
+ * @P.AssocColl.ON@    N_Kin_sms2x               ;  This generates from merged materials
  *     N_sms2x               ;  This generates from merged materials
  *   +Cmp/SplitL+Use/SpellNoSugg#:-# N_sms2x               ;  This allows split compound nouns
- *     N_Prop_sms2x          ;  This generates from merged materials
+ * @P.AssocColl.ON@    N_Prop_sms2x          ;  This generates from merged materials
  *     N_Prop_Toponyms_sms2x ;  Toponymy
  *     Num_sms2x             ;  This generates from merged materials
  *     Pcle_sms2x            ;  This generates from merged materials
@@ -607,26 +621,13 @@ Subjunction
 
 __when__
 
-determiner
-
-determiner
-
-determiner
-
-determiner
-
-
-
-
-
-
- * LEXICON DET_NEELLJAD  neelljad:neellj
-similar_to: A_MOASHSHAD
-
 
  * LEXICON NUM_KUEQHTT  kueʹhtt:kuâhtt
 
+
+
  * LEXICON NUM_LO  kuttlo:kuttl
+ * :ååǥǥ DET_NEELLJAD ;  This ordinal derivation
  * LEXICON NUM_LOAOAI  lååi:l  THIS looks like allegro
 
 

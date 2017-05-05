@@ -719,6 +719,11 @@ Sg.Ill:
  * +Der/Dimin+N:%^CC2C N_MUORYZH-WITHOUT-PAL ;   muõr-
  * +Der/Dimin+N:%^PAL%^CC2C N_MUORYZH-WITH-PAL ;   muõʹr-
 
+ǩiõtt+N+Sg+Loc+PxSg1 __hand,arm/käsi__
+* __ǩiõ0tt%^Allegro%^PAL%^CC2CAllegro%>stan __
+* __ǩiõʹđ0000%>stan __
+* __ǩiõtt%^Allegro%^CC2CAllegro%>stan __
+* __ǩiõđ000%>stan __
 
  * LEXICON N_MUORR-PL  muõrr:muõrr
  * +N:%>â ESS/PAR ;                           muõrrân
@@ -864,7 +869,8 @@ Ess_Px..., Sg_Ill..., N»A
 strong_geminate, short_vowel, no_palatalization, low_stem_vowel
  * : A-STEM_SG-NOM ;	    		  (1) Sg.Nom: pess
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
-
+* __pẹ%^1VOWss __
+* __pe0ss __
 strong_geminate, short_vowel, no_palatalization, low_stem_vowel, stem_vowel: a
  * :%>a ESS/PAR ; 			  (6) Ess: pessan
 
@@ -2906,7 +2912,7 @@ Is for nouns with ''-est'' Loc, Extra long vowel
  * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) säiʹmm Ess+Px..
 
 
- * LEXICON N_KHEQDD  ǩeʹdd:ǩeʹdd
+ * LEXICON N_KHEQDD  ǩeʹdd:ǩe%^1VOWdd
 !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 !!1.3 Sg.Loc in -est (vowel shift)
  Raised: Sg.Com, Pl.Obl
@@ -3546,14 +3552,17 @@ NumContLex="1.1140000000000001"
 
 
 
- * LEXICON N_KLAAQDD  klaaʹdd:klaaʹdd
-is for nouns with ''-est'' +Sg+Loc; ''e'' +Sg+Ill;
-X2 no gradation; no lowering no raising
-N_GEN1-ILLEX1-LOCE-NOM1X1
-* Yaml: __klaadd__
-* There are several stem types 
-* klaaʹdd:klaaʹdd
 
+
+ * LEXICON N_KLAAQDD  klaaʹdd:klaadd
+X2 no gradation; no lowering no raising
+Sg_Ill="palatalization|e-final"
+cf. plaan 
+* Yaml: __N-klaadd__
+New
+
+
+These must be checked 2017-04-03
 
 
  * LEXICON N_ZEEQTT  zeeʹtt:zẹẹtt
@@ -4291,8 +4300,8 @@ IN PENULTIMATE E:0
 * Yaml: __N-kaeaelles__
  * :%^RmVow VOONYS-STEM-PX ;  källs-
 
- * LEXICON N_OAQVES  ååʹves:åvves
- * LEXICON NMN_OAQVES  ååʹves:åvves
+ * LEXICON N_OAQVES  ååʹves:å%^1VOWvves
+ * LEXICON NMN_OAQVES  ååʹves:å%^1VOWvves
 * Yaml: __N-aaves__
  * :%^RmVow VOONYS-STEM-PX ;  åvvs-
 
@@ -4399,6 +4408,11 @@ N_E-ANoPal3-32
  * +Use/NG:%^PAL E-STEM-PX-ALLEGRO ;   (2) låʹdd
 
  * LEXICON N_LOAQDD-PL  lååʹdd:lådd
+
+
+
+
+
 
 !!e-a-stems
 
@@ -4600,7 +4614,7 @@ THIS NEEDS CHECKING
 
 
 
- * LEXICON N_NALLSHEM  čââʹlmteʹm:čââʹlmt%^1VOWẹm
+ * LEXICON N_NALLSHEM  čââʹlmteʹm:čââʹlmtẹ%^1VOWm
 292-295
 * Yaml: __A-chaalmtem__
 
@@ -4616,6 +4630,7 @@ THIS NEEDS CHECKING
  * LEXICON NMN_PRSPRC-EEI  tuõđšteei:tueʹjjee
 tuõđšteei:tueʹjjee
 * Yaml: __N-tuodhshteei__
+
 
 
 
@@ -4954,8 +4969,8 @@ Diminutive derivations
  * LEXICON N_SAEQMMLOOZHZHYZH  säʹmmlõõžžâž:säʹmmlõõžž
 * Yaml: __N-muorazh__
 
- * : HatY-STEM-PX-WEAKEN_NG ;  säʹmmlõõžž- Sg_Loc_PxSg1
- * :%^PAL HatY-STEM-PX-WEAKEN_NG ;  säʹmmlõõʹžž- Sg_Loc_PxSg1
+ * : HatY-STEM-PX-WEAKEN_LARGO ;  säʹmmlõõžž- Sg_Loc_PxSg1
+ * :%^PAL HatY-STEM-PX-WEAKEN_LARGO ;  säʹmmlõõʹžž- Sg_Loc_PxSg1
  * :%^VV2V%^PAL%^CC2CAllegro HatY-STEM-PX-ALLEGRO ;  säʹmmlõʹž-
  * :%^VV2V%^CC2CAllegro HatY-STEM-PX-ALLEGRO ;  säʹmmlõž-
 
@@ -5009,7 +5024,7 @@ Is this correct 2015-09-11
 * Yaml: __N-kuumpezh__
 
 
- * LEXICON N_OOUMAZH  ooumaž:oumm
+ * LEXICON N_OOUMAZH  ooumaž:o%^1VOWumm
 is for nouns with ''-ust'' +Sg+Loc; ''e'' +Sg+Ill;
 X2 no gradation; no lowering no raising
 N_GEN1-ILLEX1-LOCE-NOM1X1
@@ -5027,14 +5042,39 @@ Class 10 according to Feist 160-161
  * LEXICON N_KAADHNEKH  kaađneǩ:kaađnẹ%^1VOWǩ
  * LEXICON NMN_KAADHNEKH  kaađneǩ:kaađnẹ%^1VOWǩ
 * Yaml: __N-kaadhnekj, N-chaustok__
+Ǩiõllkaʹlddi. 2017-04-04-05
+kaađneǩ+N+Sg+Nom __lincense vessel/suitsutusastia__
+* __kaađnẹ%^1VOWǩ __
+* __kaađne0ǩ __
  * :%{XC%}%^PAL%^C2CC%>e ESS/PAR ;  kaađneʹǩǩe- 
  * :%{XC%}%^V2VV%^PAL%^C2CC SG-ABE/ACC/GEN ;  kaađneeʹǩǩ
- * :%{XC%}%^PALNo%^C2CC%>a SG-ILL ;  kaađnekka
- * :%{XC%}%^V2VV%^VOWRaise%^PAL%^C2CC SG-COM_IN ;  kaađniiʹǩǩin
+kaađneǩ+N+Sg+Gen 
+* __kaađnẹ%^1VOWǩ%{XC%}%^V2VV%^PAL%^C2CC __
+* __kaađneeʹǩǩ000 __
+ * :%{XC%}%^PALNo%^C2CC%>a SG-ILL ;  kaađnẹkka
+* __kaađnẹ%^1VOW0ǩ%{XC%}%^V2VV%^VOWRaise%^PAL%^C2CC%>in __
+* __kaađniiʹǩǩ0000%>in __
  * +Use/NG:%{XC%}%^V2VV%^PAL%^C2CC SG-COM_IN ;  kaađneeʹǩǩin
  * :%{XC%}%^V2VV%^PAL%^C2CC PL-NOM ;  kaađneeʹǩǩ
 
 * Yaml: __N-kaadhnekj, N-chaustok__
+
+Sort of like 10
+ * LEXICON NMN_VUYSPPOAQD  vuâsppåʹd:vuâsppå%^1VOWd
+* Yaml: __N-kaadhnekj, N-chaustok__
+Ǩiõllkaʹlddi. 2017-04-04-05
+vuâsppåʹd+N+Sg+Nom __Lord/Herra__
+* __vuâsppå%^1VOW0d%^PAL __
+* __vuâsppå0ʹd0 __
+ * :%{XC%}%^PAL%^C2CC%>e ESS/PAR ;  kaađneʹǩǩe- 
+ * :%{XC%}%^V2VV%^PAL%^C2CC SG-ABE/ACC/GEN ;  kaađneeʹǩǩ
+vuâsppåʹd+N+Sg+Gen 
+* __vuâsppå%^1VOWd%{XC%}%^V2VV%^PAL%^C2CC __
+* __vuâsppååʹdd000 __
+ * :%{XC%}%^PALNo%^C2CC%>a SG-ILL ;  kaađnekka
+* __vuâsppå%^1VOW0d%{XC%}%^V2VV%^VOWRaise%^PAL%^C2CC%>in __
+* __vuâsppooʹdd0000%>in __
+ * :%{XC%}%^V2VV%^PAL%^C2CC PL-NOM ;  vuâsppooʹdd
 
 
 
@@ -5105,7 +5145,14 @@ Used with words like juurd: jurddǥatta
 
 
 
+
+
+
+
 !A-STEM-PX
+
+
+
 
 
 
@@ -5158,7 +5205,16 @@ Used with words like juurd: jurddǥatta
 
 
 
+
+
+
+
+
 !LOAOADDAZH-STEM-PX
+
+
+
+
 
 
 
@@ -5202,6 +5258,10 @@ Used with words like juurd: jurddǥatta
 
 
 
+
+
+
+
  * LEXICON VOONYS-STEM-PX-STRENGTHEN-WITH-PAL  needs checking
 
 
@@ -5212,6 +5272,7 @@ Used with words like juurd: jurddǥatta
 
 
  * LEXICON N-ALLEGRO_ATTESTED-NOUN-STEM  This is for Allegro forms
+
 
 
 
