@@ -736,6 +736,64 @@ LEXICON V0_HUOLLYD !!= * @CODE@ huõllâd:huõll
 
 :%^CC2CAllegro FOR-CIRCUMFLEX-AD-TO-V_SHKUEAQTTED ; !!= * @CODE@ (10) Allegro for incoative: huõl»
 
+LEXICON V_SIORRYD !!= * @CODE@ siõrrâd:siõrr
++V: V0_SIORRYD ;
+LEXICON IV_SIORRYD !!= * @CODE@ siõrrâd:siõrr
++V+IV: V0_SIORRYD ;
+LEXICON TV_SIORRYD !!= * @CODE@ siõrrâd:siõrr
++V+TV: V0_SIORRYD ;
+LEXICON V0_SIORRYD !!= * @CODE@ siõrrâd:siõrr
+
+! 1. VERBS WITH SINGLE-SYLLABLE Ind.Prs.Sg3 (2009: 354)
+! 1.1 Inf in âd (vowel shift)
+!   Raised: Inf, Ind.Prt.Pl3, Imprt.Sg2, Pot.Sg3
+!   Lowered: Ind.Prs.Sg3, Ind.Prs.Pl3, Imprt.Sg3
+! 1.1.1 Has Palatalization
+! 1.1.1[1] (Palatalization pattern)
+!   Palatalized: Ind.Prs.Pl3, Ind.Prt.Pl3
+!   Not Palatalized: Inf, Ind.Prs.Sg3, Imprt.Sg2, Imprt.Sg3, Pot.Sg3
+! 1.1.1[1].2 Has Specifically Pedagogical Gradation
+! 1.1.1[1].2.1 Has Orthographic Gradation
+! 1.1.1[1].2.1[231].2 (Diphthong + Consonant Geminate alternation)
+!   Strong grade: Inf, Ind.Prs.Sg3
+!   Extra strong grade: Ind.Prs.Pl3, Ind.Prt.Pl3
+!   Weak grade: Imprt.Sg2, Pot.Sg3, Imprt.Sg3
+! FORMS
+! Lexicon ''@LEXNAME@'' is for verbs like
+! * Yaml: __V-huollad__
+!  with lexc stem
+: VSUF-INF_YD ; !!= * @CODE@ (1)  Inf: siõrrâd
+!! V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
+!! Imprt+Pl1, Imprt+Pl2
+!! Actio, ActEss, PrsPrc
+!!  Ind.Prt.ConNeg, Imprt+Pl3, PrfPrc
+!! NomAct in MOsh
+
+:%^VOWLower VSUF-IND-PRS-SG3_YD ; !!= * @CODE@ (2)  Ind.Prs.Sg3: seârr
+!! +Ind+Prs+Sg3, +Imprt+Pl3
+
++Ind+Prs+Pl3:%^VOWLower%^PALÄ%^PAL%^CC2CCC%>e K ; !!= * @CODE@ (3)  Ind.Prs.Pl3: seäʹrˈre
+!! +Ind+Prs+Pl3
+
+:%^PAL%^CC2CCC VSUF-IND-PRT-PL3_YD ; !!= * @CODE@ (4)  Ind.Prt.Pl3: siõʹrˈre
+!! +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
+
+:%^CC2C VSUF-I-POTKOND_YD ; !!= * @CODE@ (5-6)  Pot.Sg3: siõrâž
+!! +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
+!! Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
+!! Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der/ted
+
++Imprt+Sg3:%^VOWLower%^CC2C%>as K ; !!= * @CODE@ (7)  Imprt.Sg3: siõras
+!! Imprt+Sg3
+
+:%^CC2CCC VSUF-IMPRT-CONNEGII_YD ; !!= * @CODE@ (8)  Imprt.ConNegII: siõrˈru
+!! Imprt+ConNegII, Pass+PrfPrc
+
+:%^VOWLower%^CC2CCC%>az K ; !!= * @CODE@ (9) Ind.Imprt.Pl3: seârˈraz
+!! Imprt+Pl3
+
+:%^CC2CAllegro FOR-CIRCUMFLEX-AD-TO-V_SHKUEAQTTED ; !!= * @CODE@ (10) Allegro for incoative: siõr»
+
 
 LEXICON V_SUOAPPYD !!= * @CODE@ suåppâd:suåpp
 +V: V0_SUOAPPYD ;
@@ -4216,13 +4274,13 @@ LEXICON V0_MEAQTTTED !!= * @CODE@ meäʹtted:meätˈt
 !! (11) Present Participle:
 :%^VOWRaise%^PALE%^PAL FOR-VSUF-PRSPRC_ED ; !! (11) +V+Act+PrsPrc: mieʹtˈti
 
-LEXICON V_MAQHSSED !!= * @CODE@ mäʹhssed:mähss
+LEXICON V_MAQHSSED !!= * @CODE@ mäʹhssed:mä%^1VOWhss
 +V: V0_MAQHSSED ;
-LEXICON IV_MAQHSSED !!= * @CODE@ mäʹhssed:mähss
+LEXICON IV_MAQHSSED !!= * @CODE@ mäʹhssed:mä%^1VOWhss
 +V+IV: V0_MAQHSSED ;
-LEXICON TV_MAQHSSED !!= * @CODE@ mäʹhssed:mähss
+LEXICON TV_MAQHSSED !!= * @CODE@ mäʹhssed:mä%^1VOWhss
 +V+TV: V0_MAQHSSED ;
-LEXICON V0_MAQHSSED !!= * @CODE@ mäʹhssed:mähss
+LEXICON V0_MAQHSSED !!= * @CODE@ mäʹhssed:mä%^1VOWhss
 
 ! FORMS
 
