@@ -259,6 +259,11 @@ Sets
            B C F G H J K M N P Q S T V W X Z Đ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;        !!= * @CODE@
 
 
+Dummy = %^PAL %^PALE %^PALẸ %^PALÕ %^PALÄ 
+ %^CC2C %^CCC2C %^CCC2CC %^XYY2IY %^XYY2XY %^KK2GG %^XYY2VY %^KKK2GG %^KKK2ZERO %^C2CC 
+ %^J2I %^Pen %^V2VV %^VOWLower %^RmVow %^PenVow2a %^RmCns %^VC %^ShiftEA2IE %^V2VV 
+ %^VOWRaise %^VOWSH %^CLong %^K2GG ; !!= * @CODE@ dummies in Sg.Nom and Sg.Gen
+
 
 !! !!Definitions
 
@@ -328,6 +333,8 @@ PenBetweenStemAndStemFinalVoicing = [PenBetweenStemAndVowelLoss (%^RmVow:|%^PenV
 
 PenBetweenPALNoAndMorph = [(%^Pen: [(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:]|%^Pen: %^C2CC:|%^Pen: %^XYY2XY:|%^Pen: %^KK2GG:|%^Pen: %^CC2CCC:|%^Pen: %^CCC2C:|%^Pen: %^CCC2CC:|%^Pen: %^XY2XYY:|%^Pen: %^XYY2VY:|%^Pen: %^XYY2VYY:|%^Pen: %^KKK2GG:) RBound ] ;
 
+!! used in compounding Cmp/SgNom and Cmp/SgGen
+SgNomGen = [((%^PALE: %^PAL:) %^CCC2C:|(%^PALE: %^PAL:) %^CCC2CC:|%^PALẸ:|[%^PALE:|%^PALÕ:] %^PAL: %^XYY2IY:|[%^PALẸ:|%^PALE:] %^PAL: %^XYY2XY:|((%^PALE:) %^PAL:) %^KK2GG:|(%^PALE:) %^PAL:| ((%^PALE) %^PAL:) (%^J2I:) %^CC2C:|%^PAL: %^XYY2VY:)];
 
 !! neutral to vowel height and backness
 !! {{{
@@ -2305,25 +2312,33 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
 "Hyphen for splitting between look-alikes"
 !! __@RULENAME@__ - used in Kääzzkõsraajõstuâjj-joouk
  %{%-Ø%}:%- <=>
-        [k|:ǩ] (:0) _ #  [k|ǩ] ;
-        [g|:ǧ|:ǥ] (:0) _ # [g|ǧ|ǥ] ;
-        [c|č] (:0) _ # [c|č] ;
-        [s|š] (:0) _ # [s|š] ;
-        [:z|:ž] (:0) _ # [z|ž] ;
-        [d|:đ] (t:0|đ:0) _ # [d|đ] ;
-        [:o|:õ] _ # [o|õ] ;
-        [:a|:å|:ä|:â] _ # [a|å|ä|â] ;
-	[:v|w] (v:0) _ # [v|w] ;
-	b _ # b ;
-	f (f:0) _ # f ;
-	h _ # h ;
-	[k:j|č:j|j (j:0)] _ # j ;
-	l (l:0) (j) _ # l ;
-	m (m:0) _ # m ;
-	[ŋ (ŋ:0)|n (n:0) (j)] _ # n ;
-	p _ # p ;
-	r (r:0) _ # r ;
-	t _ # t ;
+        [k|:ǩ] (:0) Dummy:* _ #  [k|ǩ] ;
+        [g|:ǧ|:ǥ] (:0) Dummy:* _ # [g|ǧ|ǥ] ;
+        [c|č] (:0) Dummy:* _ # [c|č] ;
+        [s|š] (:0) Dummy:* _ # [s|š] ;
+        [:z|:ž] (:0) Dummy:* _ # [z|ž] ;
+        [d|:đ] (t:0|đ:0) Dummy:* _ # [d|đ] ;
+        [:o|:õ] Dummy:* _ # [o|õ] ;
+        [:a|:å|:ä|:â] Dummy:* _ # [a|å|ä|â] ;
+	[:v|w] (v:0) Dummy:* _ # [v|w] ;
+	b Dummy:* _ # b ;
+	f (f:0) Dummy:* _ # f ;
+	h Dummy:* _ # h ;
+	[k:j|č:j|j (j:0)|[l:|n:] j] Dummy:* _ # j ;
+!! tuâjj+N+Cmp/SgNom+Cmp#joukk+N+Sg+Nom:  __team/työryhmä__
+!!€ tuâjj%{%-Ø%}#joukk
+!!€ tuâjj%-#joukk
+!!$ tuâjj%{%-Ø%}#joukk
+!!$ tuâjj0#joukk
+	l (l:0) (j) Dummy:* _ # l ;
+	m (m:0) Dummy:* _ # m ;
+!! sääʹmm+N+Cmp/SgGen+Cmp#musikk+N+Sg+Nom: __Skolt Sámi music/kolttamusiikki__
+!! sää0mm%PAL%^CC2C%{%-Ø%}#musikk
+!! sääʹm000%-#musikk
+	[ŋ (ŋ:0)|n (n:0) (j)] Dummy:* _ # n ;
+	p Dummy:* _ # p ;
+	r (r:0) Dummy:* _ # r ;
+	t Dummy:* _ # t ;
 
 !Q!!        Cx  _ #  Cx ;
 !Q!!  where Cx in (b f h j l m n p q r t v w x ʒ ǯ ŋ) ;
