@@ -275,7 +275,7 @@ PenUltCns = [Cns:|%{XC%}:] ;
 
 !! following morpheme or word boundary
 !! {{{
-RBound = [(%^Hyphen:|%^NoHyphen:) #|%>|»|%-] ; !!= * @CODE@ 
+RBound = [(%^Hyphen: %-|%^NoHyphen:) #|%>|»|%-] ; !!= * @CODE@ 
 !! }}}
 
 
@@ -2245,25 +2245,25 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
 "Disallow Nohyphen "
 !! __@RULENAME@__ - used in Kääzzkõsraajõstuâjj-joouk
  %^NoHyphen:0 /<=
-        [k|ǩ] _ #  [k|ǩ] ;
-        [g|ǧ|ǥ] _ # [g|ǧ|ǥ] ;
-        [c|č] _ # [c|č] ;
-        [s|š] _ # [s|š] ;
-        [z|ž] _ # [z|ž] ;
-        [d|đ] _ # [d|đ] ;
-        [o|õ] _ # [o|õ] ;
-        [a|å|ä|â] _ # [a|å|ä|â] ;
-	[v|w] _ # [v|w] ;
-	b _ # b ;
-	f _ # f ;
-	h _ # h ;
-	j _ # j ;
-	l _ # l ;
-	m _ # m ;
-	n _ # n ;
-	p _ # p ;
-	r _ # r ;
-	t _ # t ;
+        [k|ǩ] _ .#.  [k|ǩ] ;
+        [g|ǧ|ǥ] _ .#. [g|ǧ|ǥ] ;
+        [c|č] _ .#. [c|č] ;
+        [s|š] _ .#. [s|š] ;
+        [z|ž] _ .#. [z|ž] ;
+        [d|đ] _ .#. [d|đ] ;
+        [o|õ] _ .#. [o|õ] ;
+        [a|å|ä|â] _ .#. [a|å|ä|â] ;
+	[v|w] _ .#. [v|w] ;
+	b _ .#. b ;
+	f _ .#. f ;
+	h _ .#. h ;
+	j _ .#. j ;
+	l _ .#. l ;
+	m _ .#. m ;
+	n _ .#. n ;
+	p _ .#. p ;
+	r _ .#. r ;
+	t _ .#. t ;
 
 !        Cx  _ #  Cx ;
 !  where Cx in (b f h j l m n p q r t v w x ʒ ǯ ŋ) ;
@@ -2274,25 +2274,25 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
 "Disallow hyphen "
 !! __@RULENAME@__ - used in Kääzzkõsraajõstuâjj-joouk
  %^Hyphen:0 /<=
-        [[:Cns|:Vow] - [k|ǩ]] (:0) _ %- #  [k|ǩ] ;
-        [[:Cns|:Vow] - [g|ǧ|ǥ]] (:0) _ %- # [g|ǧ|ǥ] ;
-        [[:Cns|:Vow] - [c|č]] (:0) _ %- # [c|č] ;
-        [[:Cns|:Vow] - [s|š]] (:0) _ %- # [s|š] ;
-        [[:Cns|:Vow] - [z|ž]] (:0) _ %- # [z|ž] ;
-        [[:Cns|:Vow] - [d|đ]] (:0) _ %- # [d|đ] ;
-        [[:Cns|:Vow] - [o|õ]] (:0) _ %- # [o|õ] ;
-        [[:Cns|:Vow] - [a|å|ä|â]] (:0) _ %- # [a|å|ä|â] ;
-	[[:Cns|:Vow] - [v|w]] (:0) _ %- # [v|w] ;
-	[[:Cns|:Vow] - [b]] (:0) _ %- # b ;
-	[[:Cns|:Vow] - [f]] (:0) _ %- # f ;
-	[[:Cns|:Vow] - [h]] (:0) _ %- # h ;
-	[[:Cns|:Vow] - [j]] (:0) _ %- # j ;
-	[[:Cns|:Vow] - [l]] (:0) _ %- # l ;
-	[[:Cns|:Vow] - [m]] (:0) _ %- # m ;
-	[[:Cns|:Vow] - [n]] (:0) _ %- # n ;
-	[[:Cns|:Vow] - [p]] (:0) _ %- # p ;
-	[[:Cns|:Vow] - [r]] (:0) _ %- # r ;
-	[[:Cns|:Vow] - [t]] (:0) _ %- # t ;
+        [[:Cns|:Vow] - [k|ǩ]] (:0) _ %- .#.  [k|ǩ] ;
+        [[:Cns|:Vow] - [g|ǧ|ǥ]] (:0) _ %- .#. [g|ǧ|ǥ] ;
+        [[:Cns|:Vow] - [c|č]] (:0) _ %- .#. [c|č] ;
+        [[:Cns|:Vow] - [s|š]] (:0) _ %- .#. [s|š] ;
+        [[:Cns|:Vow] - [z|ž]] (:0) _ %- .#. [z|ž] ;
+        [[:Cns|:Vow] - [d|đ]] (:0) _ %- .#. [d|đ] ;
+        [[:Cns|:Vow] - [o|õ]] (:0) _ %- .#. [o|õ] ;
+        [[:Cns|:Vow] - [a|å|ä|â]] (:0) _ %- .#. [a|å|ä|â] ;
+	[[:Cns|:Vow] - [v|w]] (:0) _ %- .#. [v|w] ;
+	[[:Cns|:Vow] - [b]] (:0) _ %- .#. b ;
+	[[:Cns|:Vow] - [f]] (:0) _ %- .#. f ;
+	[[:Cns|:Vow] - [h]] (:0) _ %- .#. h ;
+	[[:Cns|:Vow] - [j]] (:0) _ %- .#. j ;
+	[[:Cns|:Vow] - [l]] (:0) _ %- .#. l ;
+	[[:Cns|:Vow] - [m]] (:0) _ %- .#. m ;
+	[[:Cns|:Vow] - [n]] (:0) _ %- .#. n ;
+	[[:Cns|:Vow] - [p]] (:0) _ %- .#. p ;
+	[[:Cns|:Vow] - [r]] (:0) _ %- .#. r ;
+	[[:Cns|:Vow] - [t]] (:0) _ %- .#. t ;
 
 
 
