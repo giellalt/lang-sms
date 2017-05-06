@@ -2240,10 +2240,15 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
          (ʹ:|0:ʹ)     v _ v:     [BetweenStemAndConsGrade | Vow: Cns:*  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
 !! }}}
 
-"Hyphen with Vx in b, f, h, etc "
+"Hyphen with Vx in b, h, etc "
 !! __@RULENAME@__ check sma
 %#:%- <=> :Vx  _ :Vx    ;
-      where Vx in ( b  f  h  j  m  p  r  t ) matched ;
+      where Vx in ( b  h  p  t ) matched ;
+
+"Hyphen with Vx in f, j, etc "
+!! __@RULENAME@__ check sma
+%#:%- <=> :Vx  _ :Vx    ;
+      where Vx in ( f  j  m  r ) matched ;
 
 
 "Hyphen with Vx  in multiples k ǩ "
@@ -2283,12 +2288,12 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
 
 "Hyphen with Vx and Vx in multiples a å ä â "
 !! __@RULENAME@__ check sma
- %#:%- <=> :Vx (:0) _ :Vx  ;
+ %#:%- <=> :Vx  _ :Vx  ;
         where Vx in ( a å ä â ) ;
 
 "Hyphen with Vx and Vx in multiples o õ "
 !! __@RULENAME@__ check sma
- %#:%- <=> :Vx (:0) _ :Vx  ;
+ %#:%- <=> :Vx _ :Vx  ;
         where Vx in ( o õ ) ;
 
 "Hyphen with Vx and Vx in multiples l n "
