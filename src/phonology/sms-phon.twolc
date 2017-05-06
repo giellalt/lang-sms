@@ -2240,59 +2240,99 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
          (ʹ:|0:ʹ)     v _ v:     [BetweenStemAndConsGrade | Vow: Cns:*  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
 !! }}}
 
+"Hyphen with Vx in b, f, h, ..."
+!! __@RULENAME@__ check sma
+ #:- <=> :Vx (:0) _ :Vx ;
+     where Vx in [ b | f | h | j | m | p | r | t ] ;
 
 
-"Disallow Nohyphen "
-!! __@RULENAME@__ - used in Kääzzkõsraajõstuâjj-joouk
- %^NoHyphen:0 /<=
-        [k|ǩ] _ .#.  [k|ǩ] ;
-        [g|ǧ|ǥ] _ .#. [g|ǧ|ǥ] ;
-        [c|č] _ .#. [c|č] ;
-        [s|š] _ .#. [s|š] ;
-        [z|ž] _ .#. [z|ž] ;
-        [d|đ] _ .#. [d|đ] ;
-        [o|õ] _ .#. [o|õ] ;
-        [a|å|ä|â] _ .#. [a|å|ä|â] ;
-	[v|w] _ .#. [v|w] ;
-	b _ .#. b ;
-	f _ .#. f ;
-	h _ .#. h ;
-	j _ .#. j ;
-	l _ .#. l ;
-	m _ .#. m ;
-	n _ .#. n ;
-	p _ .#. p ;
-	r _ .#. r ;
-	t _ .#. t ;
+"Hyphen with Vx and Vy in multiples k ǩ "
+!! __@RULENAME@__ check sma
+ #:- <=> :Vx (:0) _ :Vy ;
+         where Vx in [ k ǩ ] 
+	 Vy in [ k ǩ ]  ;
 
-!        Cx  _ #  Cx ;
-!  where Cx in (b f h j l m n p q r t v w x ʒ ǯ ŋ) ;
-!!€ kääzzkõsraajõstuâjj0#joukk
-!!€ kääzzkõsraajõstuâjj%-#joukk
+"Hyphen with Vx and Vy in multiples g ǧ ǥ "
+!! __@RULENAME@__ check sma
+ #:- <=> :Vx (:0) _ :Vy ;
+         where Vx in [ g ǧ ǥ ]
+         Vy in [ g ǧ ǥ ]  ;
+
+"Hyphen with Vx and Vy in multiples c č "
+!! __@RULENAME@__ check sma
+ #:- <=> :Vx (:0) _ :Vy ;
+         where Vx in [ c č ]
+         Vy in [ c č ]  ;
+
+"Hyphen with Vx and Vy in multiples s š "
+!! __@RULENAME@__ check sma
+ #:- <=> :Vx (:0) _ :Vy ;
+         where Vx in [ s š ]
+         Vy in [ s š ]  ;
+
+"Hyphen with Vx and Vy in multiples z ž "
+!! __@RULENAME@__ check sma
+ #:- <=> :Vx (:0) _ :Vy ;
+         where Vx in [ z ž ]
+         Vy in [ z ž ]  ;
+
+"Hyphen with Vx and Vy in multiples d đ "
+!! __@RULENAME@__ check sma
+ #:- <=> :Vx (:0) _ :Vy ;
+         where Vx in [ d đ ]
+         Vy in [ d đ ]  ;
+
+"Hyphen with Vx and Vy in multiples v w "
+!! __@RULENAME@__ check sma
+ #:- <=> :Vx (:0) _ :Vy ;
+         where Vx in [ v w ]
+         Vy in [ v w ]  ;
+
+"Hyphen with Vx and Vy in multiples a å ä â "
+!! __@RULENAME@__ check sma
+ #:- <=> :Vx (:0) _ :Vy ;
+         where Vx in [ a å ä â ]
+         Vy in [ a å ä â ]  ;
+
+"Hyphen with Vx and Vy in multiples o õ "
+!! __@RULENAME@__ check sma
+ #:- <=> :Vx (:0) _ :Vy ;
+         where Vx in [ o õ ]
+         Vy in [ o õ ]  ;
+
+"Hyphen with Vx and Vy in multiples l n "
+!! __@RULENAME@__ check sma
+ #:- <=> :Vx (:0) (j) _ :Vy ;
+         where Vx in [ l n ]
+         Vy in [ l n ]  ;
 
 
-"Disallow hyphen "
-!! __@RULENAME@__ - used in Kääzzkõsraajõstuâjj-joouk
- %^Hyphen:0 /<=
-        [[:Cns|:Vow] - [k|ǩ]] (:0) _ %- .#.  [k|ǩ] ;
-        [[:Cns|:Vow] - [g|ǧ|ǥ]] (:0) _ %- .#. [g|ǧ|ǥ] ;
-        [[:Cns|:Vow] - [c|č]] (:0) _ %- .#. [c|č] ;
-        [[:Cns|:Vow] - [s|š]] (:0) _ %- .#. [s|š] ;
-        [[:Cns|:Vow] - [z|ž]] (:0) _ %- .#. [z|ž] ;
-        [[:Cns|:Vow] - [d|đ]] (:0) _ %- .#. [d|đ] ;
-        [[:Cns|:Vow] - [o|õ]] (:0) _ %- .#. [o|õ] ;
-        [[:Cns|:Vow] - [a|å|ä|â]] (:0) _ %- .#. [a|å|ä|â] ;
-	[[:Cns|:Vow] - [v|w]] (:0) _ %- .#. [v|w] ;
-	[[:Cns|:Vow] - [b]] (:0) _ %- .#. b ;
-	[[:Cns|:Vow] - [f]] (:0) _ %- .#. f ;
-	[[:Cns|:Vow] - [h]] (:0) _ %- .#. h ;
-	[[:Cns|:Vow] - [j]] (:0) _ %- .#. j ;
-	[[:Cns|:Vow] - [l]] (:0) _ %- .#. l ;
-	[[:Cns|:Vow] - [m]] (:0) _ %- .#. m ;
-	[[:Cns|:Vow] - [n]] (:0) _ %- .#. n ;
-	[[:Cns|:Vow] - [p]] (:0) _ %- .#. p ;
-	[[:Cns|:Vow] - [r]] (:0) _ %- .#. r ;
-	[[:Cns|:Vow] - [t]] (:0) _ %- .#. t ;
-
-
+!Q!"Disallow Nohyphen "
+!Q!!! __@RULENAME@__ - used in Kääzzkõsraajõstuâjj-joouk
+!Q! %^NoHyphen:0 /<=
+!Q!        [k|ǩ] _ .#.  [k|ǩ] ;
+!Q!        [g|ǧ|ǥ] _ .#. [g|ǧ|ǥ] ;
+!Q!        [c|č] _ .#. [c|č] ;
+!Q!        [s|š] _ .#. [s|š] ;
+!Q!        [z|ž] _ .#. [z|ž] ;
+!Q!        [d|đ] _ .#. [d|đ] ;
+!Q!        [o|õ] _ .#. [o|õ] ;
+!Q!        [a|å|ä|â] _ .#. [a|å|ä|â] ;
+!Q!	[v|w] _ .#. [v|w] ;
+!Q!	b _ .#. b ;
+!Q!	f _ .#. f ;
+!Q!	h _ .#. h ;
+!Q!	j _ .#. j ;
+!Q!	l _ .#. l ;
+!Q!	m _ .#. m ;
+!Q!	n _ .#. n ;
+!Q!	p _ .#. p ;
+!Q!	r _ .#. r ;
+!Q!	t _ .#. t ;
+!Q!
+!Q!!        Cx  _ #  Cx ;
+!Q!!  where Cx in (b f h j l m n p q r t v w x ʒ ǯ ŋ) ;
+!Q!!!€ kääzzkõsraajõstuâjj0#joukk
+!Q!!!€ kääzzkõsraajõstuâjj%-#joukk
+!Q!
 
