@@ -23,13 +23,20 @@ LEXICON Rreal ! This show a simple beginning for modeling sme
 !+Use/Circ+Cmp#:# NounRoot ;
 
 LEXICON RrealAfterCmpNFlags
-+Cmp#:%{%-Ø%}# NounRoot ;
++Cmp#:%^Hyphen%-# NounRoot ;
++Cmp#:%^NoHyphen# NounRoot ;
 
-+Cmp#:%{%-Ø%}# SUF/A_ ;
++Cmp#:%^Hyphen%-# SUF/A_ ;
++Cmp#:%^NoHyphen# SUF/A_ ;
 +Cmp/SplitR+Use/SpellNoSugg:%- ENDLEX     ; ! This to take care of Oahpo- ja dutkandept - want this in speller
-+Cmp#@P.NeedNoun.ON@:0#@P.NeedNoun.ON@ VerbRoot ;
-+Cmp#@P.NeedNoun.ON@:0#@P.NeedNoun.ON@ V_NEWWORDS ;
-+Cmp#@P.NeedNoun.ON@:0#@P.NeedNoun.ON@ V_sms2x ;
++Cmp0#@P.NeedNoun.ON@:%^Hyphen%-#@P.NeedNoun.ON@ VerbRoot ;
++Cmp0#@P.NeedNoun.ON@:%^Hyphen%-#@P.NeedNoun.ON@ V_NEWWORDS ;
++Cmp0#@P.NeedNoun.ON@:%^Hyphen%-#@P.NeedNoun.ON@ V_sms2x ;
+
++Cmp#@P.NeedNoun.ON@:%^NoHyphen#@P.NeedNoun.ON@ VerbRoot ;
++Cmp#@P.NeedNoun.ON@:%^NoHyphen#@P.NeedNoun.ON@ V_NEWWORDS ;
++Cmp#@P.NeedNoun.ON@:%^NoHyphen#@P.NeedNoun.ON@ V_sms2x ;
+
 
 
 LEXICON RNum
