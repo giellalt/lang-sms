@@ -275,7 +275,7 @@ PenUltCns = [Cns:|%{XC%}:] ;
 
 !! following morpheme or word boundary
 !! {{{
-RBound = [(%^Hyphen: %-|%^NoHyphen:) #:|%>|»|%-] ; !!= * @CODE@ 
+RBound = [(%^Hyphen: %-|%^NoHyphen:|%{%-Ø%}:) #:|%>|»|%-] ; !!= * @CODE@ 
 !! }}}
 
 
@@ -1197,7 +1197,7 @@ OnSetC [i|I] _ [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^V2VV: BetweenVowHeightA
  OnSetC [o:u|u] _ (ʹ:|0:ʹ) Cns: Cns:* (%^Pen: [(%^Allegro:) (%^PAL:) %^CC2C:|(%^Allegro:) (%^PAL:) %^CC2CAllegro:]) %^V2VV: ((%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:|%^PALNo:) [%^C2CC: | %^K2GG:] ;
  OnSetC o:u _ (i) (ʹ:|0:ʹ) Cns: Cns:*  %^V2VV:  %^VOWRaise:  ;
  OnSetC u (i) _ (ʹ:|0:ʹ) Cns: Cns:*  %^V2VV: BetweenVowHeightAndMorph ;
-           Cns: u _ (ʹ:|0:ʹ)  CNoV: Vow: Cns:+ (%{XC%}:)  %^Pen: %^V2VV: [%>|(%^Hyphen: %- |%^NoHyphen:) #:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:] ;
+           Cns: u _ (ʹ:|0:ʹ)  CNoV: Vow: Cns:+ (%{XC%}:)  %^Pen: %^V2VV: [%>|(%^Hyphen: %- |%^NoHyphen:|%{%-Ø%}:) #:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:] ;
 
 !! mainstummuš+N+Err/Orth+Sg+Gen
 !!€ mainstummu%^1VOWš%{XC%}%^Pen%^CC2C%^V2VV%^K2GG
@@ -2240,91 +2240,91 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
          (ʹ:|0:ʹ)     v _ v:     [BetweenStemAndConsGrade | Vow: Cns:*  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
 !! }}}
 
-"Hyphen with Vx in b, h, etc "
-!! __@RULENAME@__ check sma
-#:%- <=> :Vx  _ :Vx    ;
-      where Vx in ( b  h  p  t ) matched ;
+!W!"Hyphen with Vx in b, h, etc "
+!W!!! __@RULENAME@__ check sma
+!W!#:%- <=> :Vx  _ :Vx    ;
+!W!      where Vx in ( b  h  p  t ) matched ;
+!W!
+!W!"Hyphen with Vx in f, j, etc "
+!W!!! __@RULENAME@__ check sma
+!W!#:%- <=> :Vx  _ :Vx    ;
+!W!      where Vx in ( f  j  m  r ) matched ;
+!W!
+!W!
+!W!"Hyphen with Vx  in multiples k ǩ "
+!W!!! __@RULENAME@__ check sma
+!W! #:%- <=> :Vx (:0) _ :Vx  ;
+!W!        where Vx in ( k ǩ ) ;
+!W!
+!W!"Hyphen with Vx and Vx in multiples g ǧ ǥ "
+!W!!! __@RULENAME@__ check sma
+!W! #:%- <=> :Vx (:0) _ :Vx  ;
+!W!        where Vx in ( g ǧ ǥ ) ; 
+!W!
+!W!"Hyphen with Vx and Vx in multiples c č "
+!W!!! __@RULENAME@__ check sma
+!W! #:%- <=> :Vx (:0) _ :Vx  ;
+!W!        where Vx in ( c č ) ;
+!W!
+!W!"Hyphen with Vx and Vx in multiples s š "
+!W!!! __@RULENAME@__ check sma
+!W! #:%- <=> :Vx (:0) _ :Vx  ;
+!W!        where Vx in ( s š ) ;
+!W!
+!W!"Hyphen with Vx and Vx in multiples z ž "
+!W!!! __@RULENAME@__ check sma
+!W! #:%- <=> :Vx (:0) _ :Vx  ;
+!W!        where Vx in ( z ž ) ;
+!W!
+!W!"Hyphen with Vx and Vx in multiples d đ "
+!W!!! __@RULENAME@__ check sma
+!W! #:%- <=> :Vx (:0) _ :Vx  ;
+!W!        where Vx in ( d đ ) ;
+!W!
+!W!"Hyphen with Vx and Vx in multiples v w "
+!W!!! __@RULENAME@__ check sma
+!W! #:%- <=> :Vx (:0) _ :Vx  ;
+!W!        where Vx in ( v w ) ;
+!W!
+!W!"Hyphen with Vx and Vx in multiples a å ä â "
+!W!!! __@RULENAME@__ check sma
+!W! #:%- <=> :Vx  _ :Vx  ;
+!W!        where Vx in ( a å ä â ) ;
+!W!
+!W!"Hyphen with Vx and Vx in multiples o õ "
+!W!!! __@RULENAME@__ check sma
+!W! #:%- <=> :Vx _ :Vx  ;
+!W!        where Vx in ( o õ ) ;
+!W!
+!W!"Hyphen with Vx and Vx in multiples l n "
+!W!!! __@RULENAME@__ check sma
+!W! #:%- <=> :Vx (:0) (j) _ :Vx  ;
+!W!        where Vx in ( l n ) ;
 
-"Hyphen with Vx in f, j, etc "
-!! __@RULENAME@__ check sma
-#:%- <=> :Vx  _ :Vx    ;
-      where Vx in ( f  j  m  r ) matched ;
 
+"Hyphen for splitting between look-alikes"
+!! __@RULENAME@__ - used in Kääzzkõsraajõstuâjj-joouk
+ %{%-Ø%}:%- <=>
+        [:k|:ǩ] (:0) _ #  [k|ǩ] ;
+        [::g|:ǧ|:ǥ] (:0) _ # [g|ǧ|ǥ] ;
+        [:c|:č] (:0) _ # [c|č] ;
+        [:s|:š] (:0) _ # [s|š] ;
+        [:z|:ž] (:0) _ # [z|ž] ;
+        [:d|:đ] (t:0|đ:0) _ # [d|đ] ;
+        [:o|:õ] _ # [o|õ] ;
+        [:a|:å|:ä|:â] _ # [a|å|ä|â] ;
+	[:v|:w] (v:0) _ # [v|w] ;
+	:b _ # b ;
+	:f (f:0) _ # f ;
+	:h _ # h ;
+	:j (j:0) _ # j ;
+	:l (j) _ # l ;
+	:m (m:0) _ # m ;
+	:n (n:0) (j) _ # n ;
+	:p _ # p ;
+	:r (r:0) _ # r ;
+	:t _ # t ;
 
-"Hyphen with Vx  in multiples k ǩ "
-!! __@RULENAME@__ check sma
- #:%- <=> :Vx (:0) _ :Vx  ;
-        where Vx in ( k ǩ ) ;
-
-"Hyphen with Vx and Vx in multiples g ǧ ǥ "
-!! __@RULENAME@__ check sma
- #:%- <=> :Vx (:0) _ :Vx  ;
-        where Vx in ( g ǧ ǥ ) ; 
-
-"Hyphen with Vx and Vx in multiples c č "
-!! __@RULENAME@__ check sma
- #:%- <=> :Vx (:0) _ :Vx  ;
-        where Vx in ( c č ) ;
-
-"Hyphen with Vx and Vx in multiples s š "
-!! __@RULENAME@__ check sma
- #:%- <=> :Vx (:0) _ :Vx  ;
-        where Vx in ( s š ) ;
-
-"Hyphen with Vx and Vx in multiples z ž "
-!! __@RULENAME@__ check sma
- #:%- <=> :Vx (:0) _ :Vx  ;
-        where Vx in ( z ž ) ;
-
-"Hyphen with Vx and Vx in multiples d đ "
-!! __@RULENAME@__ check sma
- #:%- <=> :Vx (:0) _ :Vx  ;
-        where Vx in ( d đ ) ;
-
-"Hyphen with Vx and Vx in multiples v w "
-!! __@RULENAME@__ check sma
- #:%- <=> :Vx (:0) _ :Vx  ;
-        where Vx in ( v w ) ;
-
-"Hyphen with Vx and Vx in multiples a å ä â "
-!! __@RULENAME@__ check sma
- #:%- <=> :Vx  _ :Vx  ;
-        where Vx in ( a å ä â ) ;
-
-"Hyphen with Vx and Vx in multiples o õ "
-!! __@RULENAME@__ check sma
- #:%- <=> :Vx _ :Vx  ;
-        where Vx in ( o õ ) ;
-
-"Hyphen with Vx and Vx in multiples l n "
-!! __@RULENAME@__ check sma
- #:%- <=> :Vx (:0) (j) _ :Vx  ;
-        where Vx in ( l n ) ;
-
-
-!Q!"Disallow Nohyphen "
-!Q!!! __@RULENAME@__ - used in Kääzzkõsraajõstuâjj-joouk
-!Q! %^NoHyphen:0 /<=
-!Q!        [k|ǩ] _ .#.  [k|ǩ] ;
-!Q!        [g|ǧ|ǥ] _ .#. [g|ǧ|ǥ] ;
-!Q!        [c|č] _ .#. [c|č] ;
-!Q!        [s|š] _ .#. [s|š] ;
-!Q!        [z|ž] _ .#. [z|ž] ;
-!Q!        [d|đ] _ .#. [d|đ] ;
-!Q!        [o|õ] _ .#. [o|õ] ;
-!Q!        [a|å|ä|â] _ .#. [a|å|ä|â] ;
-!Q!	[v|w] _ .#. [v|w] ;
-!Q!	b _ .#. b ;
-!Q!	f _ .#. f ;
-!Q!	h _ .#. h ;
-!Q!	j _ .#. j ;
-!Q!	l _ .#. l ;
-!Q!	m _ .#. m ;
-!Q!	n _ .#. n ;
-!Q!	p _ .#. p ;
-!Q!	r _ .#. r ;
-!Q!	t _ .#. t ;
-!Q!
 !Q!!        Cx  _ #  Cx ;
 !Q!!  where Cx in (b f h j l m n p q r t v w x ʒ ǯ ŋ) ;
 !Q!!!€ kääzzkõsraajõstuâjj0#joukk
