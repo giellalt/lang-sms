@@ -268,14 +268,14 @@ Definitions
 
 
 !! Onset consonant or word boundary
-OnSetC = [[%{XC%}:Cns|Cns:Cns] (Cns:|%{XC%}:Cns) |#|%>|»] ;
+OnSetC = [[%{XC%}:Cns|Cns:Cns] (Cns:|%{XC%}:Cns) |#:|%>|»] ;
 
 !! Penultimate consonant
 PenUltCns = [Cns:|%{XC%}:] ;
 
 !! following morpheme or word boundary
 !! {{{
-RBound = [(%^Hyphen: %-|%^NoHyphen:) #|%>|»|%-] ; !!= * @CODE@ 
+RBound = [(%^Hyphen: %-|%^NoHyphen:) #:|%>|»|%-] ; !!= * @CODE@ 
 !! }}}
 
 
@@ -1197,7 +1197,7 @@ OnSetC [i|I] _ [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^V2VV: BetweenVowHeightA
  OnSetC [o:u|u] _ (ʹ:|0:ʹ) Cns: Cns:* (%^Pen: [(%^Allegro:) (%^PAL:) %^CC2C:|(%^Allegro:) (%^PAL:) %^CC2CAllegro:]) %^V2VV: ((%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:|%^PALNo:) [%^C2CC: | %^K2GG:] ;
  OnSetC o:u _ (i) (ʹ:|0:ʹ) Cns: Cns:*  %^V2VV:  %^VOWRaise:  ;
  OnSetC u (i) _ (ʹ:|0:ʹ) Cns: Cns:*  %^V2VV: BetweenVowHeightAndMorph ;
-           Cns: u _ (ʹ:|0:ʹ)  CNoV: Vow: Cns:+ (%{XC%}:)  %^Pen: %^V2VV: [%>|(%^Hyphen: %- |%^NoHyphen:) #|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:] ;
+           Cns: u _ (ʹ:|0:ʹ)  CNoV: Vow: Cns:+ (%{XC%}:)  %^Pen: %^V2VV: [%>|(%^Hyphen: %- |%^NoHyphen:) #:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:] ;
 
 !! mainstummuš+N+Err/Orth+Sg+Gen
 !!€ mainstummu%^1VOWš%{XC%}%^Pen%^CC2C%^V2VV%^K2GG
