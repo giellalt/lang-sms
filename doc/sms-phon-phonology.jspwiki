@@ -144,6 +144,11 @@ Other vowel length and consonant length will be phased out
  *  %^VOWTense:0    â:e
  *  %^VOWLax:0      e:â 
 
+Hyphen at compound word boundary
+ * %{%-Ø%}:0  Zero versus hyphen in compounding
+ * %^Hyphen:0     at compound word boundary with %-
+ * %^NoHyphen:0     at compound word boundary
+
 Literal quotes and angles must be escaped (cf morpheme boundaries below):
 
 * »
@@ -171,6 +176,9 @@ End of alphabet definitions
  *            B C F G H J K M N P Q S T V W X Z Đ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;        
 
 
+ *  %^VOWRaise %^VOWSH %^CLong %^K2GG ;  dummies in Sg.Nom and Sg.Gen
+
+
 !!Definitions
 
 
@@ -183,7 +191,7 @@ Penultimate consonant
 
 following morpheme or word boundary
 {{{
- * RBound = [#|%>|»|%-] ;  
+ * RBound = [(%^Hyphen: %-|%^NoHyphen:|%{%-Ø%}:) #:|%>|»|%-] ;  
 }}}
 
 
@@ -220,6 +228,7 @@ Penultimate vowel centers possible triggers before VOWLower and VOWRaise
 
 
 
+used in compounding Cmp/SgNom and Cmp/SgGen
 
 neutral to vowel height and backness
 {{{
@@ -385,12 +394,6 @@ mättʼted+V+Inf: __teach/opettaa__
 * __taaurõ%^1VOWš%{XC%}%^C2CC%>0ses __
 * __taaurõ0šš0%>ʼses __
 
-__ZERO to hyphen minus 0:- in this rule__ - used in Kääzzkõsraajõstuâjj-joouk
-
-* __kääzzkõsraajõstuâjj0#joukk__
-* __kääzzkõsraajõstuâjj%-#joukk__
-
-
 
 !!Vowel alternation rules
 
@@ -499,9 +502,11 @@ __Even syllabic verbs I, diphthong raising beginning with ä:a u__ - deriving l�
 * __ä%^1VOWldd%^V2VV%^VOWRaise%^XYY2XY%>u__
 * __aald0000%>u__
 čääʹcc+N+Pl+Acc __water__
-* __čääʹcc%^VOWRaise%^KK2GG%>id__
-* __čaaʹʒʒ00%>id__
-
+* __čääʹcc%^VOWRaise%^KK2GG%>id __
+* __čaaʹʒʒ00%>id __
+mäʹhssed+V+Ind+Prt+Sg3: __pay/maksaa__
+* __mä%^1VOWh0ss%^V2VV%^VOWRaise%^PAL%^XYY2VY%>i __
+* __maauʹs00000%>i __
 
 !LOWERING 
 
@@ -530,6 +535,10 @@ viikkâd+V+Ind+Prs+Pl3
 
 
 
+
+siõrrâd+V+Ind+Prs+Pl3: __play/leikkiä__
+* __siõ0r0r%^VOWLower%^PALÄ%^PAL%^CC2CCC%>e __
+* __seäʹrˈr%^VOWLower%^PALÄ%^PAL%^CC2CCC%>e __
 
 cieʹǩǩes+N+Sg+Gen
 * __ciâkˈkez%^Pen%^VOWLower%^PenVow2a__
@@ -667,7 +676,9 @@ __diphthong allophonic realization in palatalization u å:ẹ__ - deriving
 !Vowel Lowering and Fronting
 
 __Even syllabic verbs I, diphthong opening õ:ä after i:e__ - deriving +Ind+Prs+Sg3, in čiõkkâd
-
+siõrrâd+V+Ind+Prs+Pl3: __play/leikkiä__
+* __siõ0r0r%^VOWLower%^PALÄ%^PAL%^CC2CCC%>e __
+* __seäʹrˈr%^VOWLower%^PALÄ%^PAL%^CC2CCC%>e __
 
 
 
@@ -764,6 +775,10 @@ __Even syllabic verbs I, relative vowel lengthening %^1VOW:a__ - deriving +V+Inf
 * __aald0000%>už __
 * __dura%^1VOWk%^V2VV __
 * __duraak0 __
+mäʹhssed+V+Ind+Prt+Sg3: __pay/maksaa__
+* __mä%^1VOWh0ss%^V2VV%^VOWRaise%^PAL%^XYY2VY%>i __
+* __maauʹs00000%>i __
+
 taalkâs+N+Sg+Nom
 
 
@@ -930,11 +945,18 @@ __0:ʹ as transfer from left of v:u__ - used +Ind+Prs+Pl3, uʹvdded+V+Ind+Prs+Pl
 * __u%^1VOWv0dd%^PAL%^XYY2VY__
 * __u0uʹd000__
 
-* __tä%^1VOWh0tt%^V2VV%^PAL%^XYY2VY__
-* __tääuʹt0000__
+täʹhtt+N+Pl+Nom: __bone/luu__
+* __tä%^1VOWh0tt%^V2VV%^PAL%^XYY2VY __
+* __tääuʹt0000 __
+täʹhtt+N+Pl+Gen: __bone/luu__
+* __tä%^1VOWh0tt%^V2VV%^VOWRaise%^PAL%^XYY2VY%>i __
+* __taauʹt0000%>i __
 kueiʹt+Num+Sg+Gen __two/kaksi__
 * __kuâh0tt%^PALE%^PAL%^XYY2IY __
 * __kueiʹt0000 __
+siõrrâd+V+Ind+Prs+Pl3: __play/leikkiä__
+* __siõ0r0r%^VOWLower%^PALÄ%^PAL%^CC2CCC%>e __
+* __seäʹrˈr0000%>e __
 * __saa0kk%^VV2V%^PAL%>e __
 * __sa0ʹǩǩ00%>e __
 tääʹss+N+Sg+Gen: __level/taso__
@@ -1500,7 +1522,14 @@ b c č ǯ d đ g ǧ k ǩ l m n p r s š t v also htˈt nˈnj
 
 
 
-
-
+__Hyphen for splitting between look-alikes__ - used in Kääzzkõsraajõstuâjj-joouk
+tuâjj+N+Cmp/SgNom+Cmp#joukk+N+Sg+Nom:  __team/työryhmä__
+* __tuâjj#joukk __
+* __tuâjj%-joukk __
+* __*tuâjj#joukk __ (is not standard language)
+* __*tuâjj#joukk __ (is not standard language)
+sääʹmm+N+Cmp/SgGen+Cmp#musikk+N+Sg+Nom: __Skolt Sámi music/kolttamusiikki__
+sää0mm%PAL%^CC2C%{%-Ø%}#musikk
+sääʹm000%-#musikk
 
 
