@@ -294,7 +294,7 @@ BetweenStemAndPALAllo = [ BetweenStemAndHeight (%^VOWLower:|%^VOWRaise:|%^LowerI
 BetweenStemAndPALNo = [ BetweenStemAndHeight [(%^VOWLower:|%^VOWRaise:|%^LowerI2E:) (%^PALÄ:|%^PALE:|%^PALẸ:|%^PALÕ:|%^PALÂ:)| %^VOWBack: ] (%^Allegro:) ] ;
 
 !! possible triggers between word end and consonant grade
-BetweenStemAndConsGrade = [ BetweenStemAndHeight ((%^VOWRaise:|%^VOWLower:|%^LowerI2E:) ((%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:|%^VOWLower: %^PALÄ: |(%^PALÕ:|%^PALE:|%^PALÄ:|%^PALẸ:) (%^Allegro:) %^PAL:)| %^VOWBack: (%^Allegro:) (%^PALNo:|%^PAL:) ) ] ;
+BetweenStemAndConsGrade = [ BetweenStemAndHeight ((%^VOWRaise:|%^VOWLower:|%^LowerI2E:) ((%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:|%^VOWLower: %^PALÄ:|(%^PALÕ:|%^PALE:|%^PALÄ:|%^PALẸ:) (%^Allegro:) %^PAL:)| %^VOWBack: (%^Allegro:) (%^PALNo:|%^PAL:) ) ] ;
 
 !! possible triggers between vowel length and Palatalization
 BetweenVowLengthAndPALNo = [(%^VOWLower:|%^VOWRaise:|%^LowerI2E:) (%^PALÄ:|%^PALE:|%^PALẸ:|%^PALÕ:|%^PALÂ:)| %^VOWBack: ] ;
@@ -680,12 +680,14 @@ Rules
 
 
 "Diphthong raising beginning with u ä:å"
-!! __@RULENAME@__ - deriving +Ind+Prt+Pl3 in kuärŋŋad kuårŋŋu
+!! __@RULENAME@__ -
  ä:å <=>
     u  _ (i) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWRaise: BetweenPALNoAndMorph ;
 !! kuärŋŋad+V+Ind+Prt+Pl3
 !!€ kuärŋŋ%^VOWRaise%>u
-!!€ kuõrŋŋ0%>u
+!!€ kuårŋŋ0%>u
+!!$ kuärŋŋ%^VOWRaise%>u
+!!$ kuõrŋŋ0%>u
 
 
 "Diphthong raising beginning with e:i ä:â"
@@ -1365,6 +1367,9 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
 "0:ʹ as transfer from left of v:u"
 !! __@RULENAME@__ - used +Ind+Prs+Pl3, uʹvdded+V+Ind+Prs+Pl3: ouʹdde
 0:ʹ <=> v: (:ˈ) _ [ʒ ʒ:|d d:|l l:|r r:|j j:]       BetweenStemAndPALNo  %^PAL: [%^XYY2VY:|%^XYY2VYY:] ;
+!! uʹvdded+V+Ind+Prs+Pl3: __give/antaa__
+!!€ u%^1VOWv0dd%^VOWLower%^PAL%^XYY2VYY%>e
+!!€ o0uʹdd000%>e
 !!€ u%^1VOWv0dd%^PAL%^XYY2VY
 !!€ u0uʹd000
  
