@@ -483,6 +483,10 @@ Gradation triggers 2015.02.09 For	Consonant Clusters
  * %{%ʹ%}       archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one.
  * %{EÂ%} 	     archiform for ie:eä variation, e.g. pieʹǩǩ+N+Sg+Ill:peâkka
 
+Hyphen at compound word boundary
+ * %{%-Ø%}  Zero versus hyphen in compounding
+ * %^Hyphen     at compound word boundary with %-
+ * %^NoHyphen     at compound word boundary
 
 
 !!Escaped symbols
@@ -578,7 +582,7 @@ This generates from merged materials
  *     Interj_sms2x          ;  This generates from merged materials
  * @P.AssocColl.ON@    N_Kin_sms2x               ;  This generates from merged materials
  *     N_sms2x               ;  This generates from merged materials
- *   +Cmp/SplitL+Use/SpellNoSugg#:-# N_sms2x               ;  This allows split compound nouns
+ *   +Cmp/SplitL+Use/SpellNoSugg#:%-# N_sms2x               ;  This allows split compound nouns
  * @P.AssocColl.ON@    N_Prop_sms2x          ;  This generates from merged materials
  *     N_Prop_Toponyms_sms2x ;  Toponymy
  *     Num_sms2x             ;  This generates from merged materials
