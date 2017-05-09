@@ -288,16 +288,16 @@ RBound = [(%^Hyphen: %-|%^NoHyphen:|%{%-Ø%}:) #:|%>|»|%-] ; !!= * @CODE@
 BetweenStemAndHeight = [( %^VV2V: |%^V2VV:)] ;
 
 !! possible triggers before PALE PALÄ
-BetweenStemAndPALAllo = [ BetweenStemAndHeight (%^VOWLower:|%^VOWRaise:|%^LowerI2E:)] ;
+BetweenStemAndPALAllo = [ BetweenStemAndHeight (%^VOWLower:|%^VOWRaise:)] ;
 
 !! possible triggers between stem and PALNo and PAL
-BetweenStemAndPALNo = [ BetweenStemAndHeight [(%^VOWLower:|%^VOWRaise:|%^LowerI2E:) (%^PALÄ:|%^PALE:|%^PALẸ:|%^PALÕ:|%^PALÂ:)| %^VOWBack: ] (%^Allegro:) ] ;
+BetweenStemAndPALNo = [ BetweenStemAndHeight [(%^VOWLower:|%^VOWRaise:) (%^PALÄ:|%^PALE:|%^PALẸ:|%^PALÕ:|%^PALÂ:)| %^VOWBack: ] (%^Allegro:) ] ;
 
 !! possible triggers between word end and consonant grade
-BetweenStemAndConsGrade = [ BetweenStemAndHeight ((%^VOWRaise:|%^VOWLower:|%^LowerI2E:) ((%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:|%^VOWLower: %^PALÄ:|(%^PALÕ:|%^PALE:|%^PALÄ:|%^PALẸ:) (%^Allegro:) %^PAL:)| %^VOWBack: (%^Allegro:) (%^PALNo:|%^PAL:) ) ] ;
+BetweenStemAndConsGrade = [ BetweenStemAndHeight ((%^VOWRaise:|%^VOWLower:) ((%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:|%^VOWLower: %^PALÄ:|(%^PALÕ:|%^PALE:|%^PALÄ:|%^PALẸ:) (%^Allegro:) %^PAL:)| %^VOWBack: (%^Allegro:) (%^PALNo:|%^PAL:) ) ] ;
 
 !! possible triggers between vowel length and Palatalization
-BetweenVowLengthAndPALNo = [(%^VOWLower:|%^VOWRaise:|%^LowerI2E:) (%^PALÄ:|%^PALE:|%^PALẸ:|%^PALÕ:|%^PALÂ:)| %^VOWBack: ] ;
+BetweenVowLengthAndPALNo = [(%^VOWLower:|%^VOWRaise:) (%^PALÄ:|%^PALE:|%^PALẸ:|%^PALÕ:|%^PALÂ:)| %^VOWBack: ] ;
 
 BetweenVowHeightAndConsGrade = [((%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÕ:) (%^Allegro:) %^PAL:|(%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:)] ;
 
@@ -319,7 +319,7 @@ PenBetweenStemAndHeight = [(%^Pen: %^VV2V: |%^Pen: %^V2VV:)] ;
 
 PenBetweenStemAndPALNo = [PenBetweenStemAndHeight (%^Pen: %^VOWRaise:|%^Pen: %^VOWLower:|%^Pen: %^VOWBack:) (%^Pen: %^Allegro:) ] ;
 
-PenBetweenStemAndPALAllo  = [ PenBetweenStemAndHeight (%^Pen: %^VOWLower:|%^Pen: %^VOWRaise:|%^Pen: %^LowerI2E:)] ;
+PenBetweenStemAndPALAllo  = [ PenBetweenStemAndHeight (%^Pen: %^VOWLower:|%^Pen: %^VOWRaise:)] ;
 
 
 PenBetweenStemAndConsGrade = [PenBetweenStemAndHeight ((%^Pen: %^VOWRaise:|%^Pen: %^VOWLower:) ((%^Pen: %^PALÂ:|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PALNo:|(%^Pen: %^PALÕ:|%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:) (%^Pen: %^Allegro:) %^Pen: %^PAL:)| %^Pen: %^VOWBack: (%^Pen: %^Allegro:) (%^Pen: %^PALNo:|%^Pen: %^PAL:) ) ] ;
@@ -632,8 +632,8 @@ Rules
 !!€ mieʹlǩǩ000
 !!€ jeä0gˈg%^VOWRaise%^PALẸ%^PAL%^CCC2CC
 !!€ jiẹʹǧ0ǧ0000
-!!€ beâ0sˈs%^PALE%^PAL%^CCC2CC
-!!€ bieʹs0s000
+!!€ beâ0sˈs%^VOWRaise%^PALE%^PAL%^CCC2CC
+!!€ bieʹs0s0000
 !!€ ceägˈg%^VOWRaise%>u
 !!€ ciâgˈg0%>u
 
@@ -772,7 +772,7 @@ Rules
 "Even syllabic verbs I, vowel lowering i:e"
 !! __@RULENAME@__ - 
  i:e <=>
-   OnSetC _ (i:|%^1VOW:) (u:|i:) :ʹ [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight  %^VOWLower: ;
+   OnSetC _ (i:|%^1VOW:) (u:|i:) :ʹ [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight  %^VOWLower: %^PAL: ;
 !! viǯǯâd+V+Ind+Prs+Pl3 __fetch/noutaa__
 !!€ vi%^1VOW0ǯǯ%^VOWLower%^PAL%>e
 !!€ ve0ʹǯǯ00%>e
@@ -781,16 +781,15 @@ Rules
 !!€ ve0ʹǩǩ000%>e
 
 
-   OnSetC _ (%^1VOW:) (v:u|j:i) :ʹ [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWLower: ;
+   OnSetC _ (%^1VOW:) (v:u|j:i) :ʹ [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWLower: %^PAL: ;
 
 
-   OnSetC _ [õ:â|õ:ä|â:ä|e:â] (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] (e: s:)  %^VOWLower: ;
+   OnSetC _ [õ:|â:|e:] (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] [%^VOWLower:  %^PAL: |(e: s:) %^Pen: %^VOWLower: %^Pen: %^PAL:] ;
 !! siõrrâd+V+Ind+Prs+Pl3: __play/leikkiä__
 !!€ siõ0r0r%^VOWLower%^PALÄ%^PAL%^CC2CCC%>e
 !!€ seäʹrˈr%^VOWLower%^PALÄ%^PAL%^CC2CCC%>e
 
-  OnSetC _ [â:ä|â:ẹ|â:e] (ʹ:|0:ʹ) Cns:+ (%{XC%}:) %^LowerI2E: ;
-  OnSetC _ [â:ä|â:ẹ] (ʹ:|0:ʹ) [Cns:+ |Cns:+ (ˈ:|:ˈ) Cns:+] Vow: Cns:* %^Pen: %^VOWLower: ;
+  OnSetC _ â: (ʹ:|0:ʹ) [Cns:+ |Cns:+ (ˈ:|:ˈ) Cns:+] Vow: Cns:* %^Pen: %^VOWLower: ;
 !! cieʹǩǩes+N+Sg+Gen
 !!€ ciâkˈkez%^Pen%^VOWLower%^PenVow2a
 !!€ ceäkˈkaz000
@@ -812,7 +811,6 @@ Rules
            OnSetC _ (%^1VOW:) (v:u|j:i) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWLower: ;
 
   OnSetC i: _  [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: ;
-
 
 
 "Vowel lowering a:ä"
@@ -1037,7 +1035,8 @@ Rules
 
 "%^1VOW:ẹ relative vowel lengthening"
 !! __@RULENAME@__ - 
- %^1VOW:ẹ <=>         OnSetC [ẹ|Ẹ] _ (i|u) Cns:+ (%{XC%}:) %^V2VV: BetweenPALNoAndMorphRightArrow RBound ;
+ %^1VOW:ẹ <=>         OnSetC [:ẹ|:Ẹ] _ (i|u) Cns:+ (%{XC%}:) %^V2VV: BetweenPALNoAndMorphRightArrow RBound ;
+!! pess+N+Sg+Acc: __rifle/pyssy__
 !!€ pẹ%^1VOWss%^V2VV
 !!€ pẹẹss0
 
@@ -1051,8 +1050,6 @@ Rules
 !!€ pẹ%^1VOWi0vv%^V2VV%^PAL%^XYY2XY
 !!€ peeiʹv0000
          OnSetC i:e _  (ʹ:|0:ʹ) Cns:+ %^V2VV: %^VOWLower: ;
-!!€ vi%^1VOWǯǯ%^V2VV%^VOWLower%>as 
-!!€ veeǯǯ00%>as
 
 !Distinguishing mainstam and maainstam
       Cns: Vow:e _ (u:|i:) (ʹ:|0:ʹ)  Cns:+ (Vow:) Cns:+  %^Pen: %^V2VV: ; 
