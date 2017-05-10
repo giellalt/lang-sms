@@ -332,7 +332,7 @@ PenBetweenStemAndStemFinalVoicing = [PenBetweenStemAndVowelLoss (%^RmVow:|%^PenV
 PenBetweenPALNoAndMorph = [(%^Pen: [(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:]|%^Pen: %^C2CC:|%^Pen: %^XYY2XY:|%^Pen: %^KK2GG:|%^Pen: %^CC2CCC:|%^Pen: %^CCC2C:|%^Pen: %^CCC2CC:|%^Pen: %^XY2XYY:|%^Pen: %^XYY2VY:|%^Pen: %^XYY2VYY:|%^Pen: %^KKK2GG:) RBound ] ;
 
 !! used in compounding Cmp/SgNom and Cmp/SgGen
-SgNomGen = [((%^PALE: %^PAL:) %^CCC2C:|(%^PALE: %^PAL:) %^CCC2CC:|%^PALẸ:|[%^PALE:|%^PALÕ:] %^PAL: %^XYY2IY:|[%^PALẸ:|%^PALE:] %^PAL: %^XYY2XY:|((%^PALE:) %^PAL:) %^KK2GG:|(%^PALE:) %^PAL:| ((%^PALE) %^PAL:) (%^J2I:) %^CC2C:|%^PAL: %^XYY2VY:)];
+SgNomGen = [((%^PALE: %^PAL:) %^CCC2C:|(%^PALE: %^PAL:) %^CCC2CC:|%^PALẸ:|[%^PALE:|%^PALÕ:] %^PAL: %^XYY2IY:|[%^PALẸ:|%^PALE:] %^PAL: %^XYY2XY:|((%^PALE:) %^PAL:) %^KK2GG:|(%^PALE:) %^PAL:| ((%^PALE:) %^PAL:) (%^J2I:) %^CC2C:|%^PAL: %^XYY2VY:)];
 
 !! neutral to vowel height and backness
 !! {{{
@@ -1425,7 +1425,10 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
  
 "Even-syllabic verbs I, Palatalization of g:ǧ"
 !! __@RULENAME@__ - used in
- g:ǧ <=> Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:)     _ (ˈ:|:ˈ) g: BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CCC2CC:|%^CC2CCC:) RBound ;
+ g:ǧ <=> Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:)     _ (ˈ:|:ˈ) g: BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CCC2CC:|%^CC2CCC:|%^XYY2XY:) RBound ;
+!! šäʹŋǧǧ+N+Sg+Com: __pasty/piirakka 
+!!€ šä%^1VOW0ŋgg%^V2VV%^VOWRaise%^PAL%^XYY2XY%>in
+!!€ šaaʹŋǧ00000%>in
            Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:) g: (ˈ:|:ˈ) _   BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CCC2CC:|%^CC2CCC:) RBound ;
 
     Vow: (%^1VOW:) 0: _ BetweenStemAndPALNo %^PAL: ;
@@ -1575,8 +1578,8 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
 !!peiʹvv+N+Sg+Gen+Indef
 !!€ pẹ%^1VOWi0vv%^V2VV%^PAL%^CC2C
 !!€ peeiʹv0000
- v: _  Vow: Cns:+ (%{XC%}:)  PenBetweenStemAndConsGrade [%^Pen: [(%^Allegro:) (%^PAL:) %^CC2C:|(%^Allegro:) (%^PAL:) %^CC2CAllegro:]|%^Pen: %^XYY2XY:|%^Pen: %^CCC2C:] ;
-!! tuõvâs+N+Sg+Nom: __day/päivä__
+ v: (ˈ:) _  Vow: Cns:+ (%{XC%}:)  PenBetweenStemAndConsGrade [%^Pen: [(%^Allegro:) (%^PAL:) %^CC2C:|(%^Allegro:) (%^PAL:) %^CC2CAllegro:]|%^Pen: %^XYY2XY:|%^Pen: %^CCC2C:] ;
+!! tuõvâs+N+Sg+Nom: __candle/tuohus, kynttilä__
 !!€ tuõvˈvâs%^Pen%^CCC2C
 !!€ tuõv00âs00
 
@@ -1897,7 +1900,7 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
 "Even syllabic verbs I, Voicing č:j"
 !! __@RULENAME@__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
  č:j <=> Vow: (%^1VOW:) (ʹ:|0:ʹ) č: _    (i:) BetweenStemAndConsGrade (%^I2J:) %^KK2GG: ;
-         Vow: (%^1VOW:) (ʹ:|0:ʹ)    _ č: (i:) BetweenStemAndConsGrade (%^I2J:) [ %^KK2GG: | [(%^Allegro:) (%^PAL:) %^CC2C:|(%^Allegro:) (%^PAL:) %^CC2CAllegro:] ] ;
+         Vow: (%^1VOW:) (ʹ:|0:ʹ)    _ č: (i:) BetweenStemAndConsGrade (%^I2J:) [ %^KK2GG: | [(%^Allegro:) (%^PAL:) %^CC2C:|(%^Allegro:) (%^PAL:) %^CC2CAllegro:|(%^Allegro:) (%^PAL:) %^KK2GAllegro:] ] ;
                                              _ %^VC: ;
 
        Vow: (%^1VOW:)  _ č: (%^VV2V: ) %^KK2GAllegro: ;
