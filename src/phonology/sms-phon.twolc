@@ -128,6 +128,7 @@ Alphabet
 %^K2GG:0	!!= * @CODE@ Geminate weakening čårrõs:čårrõõzz
 %^K2GAllegro:0		!!= * @CODE@ Geminate weakening	 in allegro čâustõk
 
+%{ʼØ%}:0		!!= * @CODE@ used between l, n, j and subsequent j and elsewhere
 
 !%^PenVV2V:0     
 !! Shortens vowel in penultimate syllable
@@ -368,7 +369,7 @@ Rules
 !! __@RULENAME@__ - used in
  â:0 <=>
       [â:â|â:õ] _ (i|u) (ʹ:|0:ʹ) Cns:+ (PenUltCns) (Vow: Cns:+ (PenUltCns) %^Pen:)  %^VV2V:  ;
-    [OnSetC|PenUltCns|»]   _ (:ʼ) [Cns:+|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ;
+    [OnSetC|PenUltCns|»]   _ (:ʼ|%{ʼØ%}:) [Cns:+|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ;
 
 !Not needed here
 !! čââʹđ+N+Sg+Ill: __heart/sydän__
@@ -397,7 +398,7 @@ Rules
 !!€ e0ʹǩ00rd00000%>ed
 !! deriving cieʹǩǩes+N+Sg+Ill: ceäkˈksa
 
-   [OnSetC|PenUltCns]  _ (0:ʼ) (0:ʹ) [Cns:+|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ; 
+   [OnSetC|PenUltCns]  _ (0:ʼ|%{ʼØ%}:) (0:ʹ) [Cns:+|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ; 
 !! Ââvel+N+Prop+Sg+Loc  __Ivalo__
 !!€ Ââvel%^RmVow%>est
 !!€ Ââv0l0%>est
@@ -520,14 +521,14 @@ Rules
 !!€ maainâst%^Pen%^VV2V%>ed
 !!€ ma0inâst00%>ed
 
-    [OnSetC|PenUltCns]  _ (:ʼ) [Cns:+|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ; 
+    [OnSetC|PenUltCns]  _ (:ʼ|%{ʼØ%}:) [Cns:+|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ; 
 !! Aanar+N+Prop+Sg+Ill: __Inari/Enare__
 !!€ Aanar%^RmVow%>a
 !!€ Aan0r0%>a
 
     :Vow+ (ʹ:|0:ʹ) [Cns:+ - [Cns:* [l|n]]] _ i: %^RmVow:  ; 
 
-  PenUltCns _ (:ʼ) Cns:+ %^RmVow:  ;
+  PenUltCns _ (:ʼ|%{ʼØ%}:) Cns:+ %^RmVow:  ;
 !! mättʼted+V+Inf: __teach/opettaa__
 !!€ mätta0t%^RmVow%>ed
 !!€ mätt0ʼt0%>ed
@@ -539,6 +540,11 @@ Rules
  ä:0 <=>
   ä: _ (i|u) (ʹ:|0:ʹ) Cns:+ (PenUltCns) (Vow: Cns:+ (PenUltCns) %^Pen:) %^VV2V: ;
   ä: _ [c c| č č| k k|s s|š š] %^VV2V: ;
+
+"%{ʼØ%} for modifier letter apostrophe"
+!! __@RULENAME@__ - 
+%{ʼØ%}:ʼ <=> [ :n | :l | j] (Vow:0) (%>) _ :j ;
+
 
 "ZERO to syllable mark 0:ʼ here"
 !! __@RULENAME@__ - used in zeeʹtt+N+Sg+Abe: zeeʹttʼtää
@@ -1281,7 +1287,7 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
 
 "trisyllabic verbs and doer derivations, i>j"
 !! __@RULENAME@__ - used in
- i:j <=> [Vow: |Cns:] (0:ʼ) _ [PenBetweenStemAndVowelLoss|BetweenStemAndConsGrade BetweenPALNoAndMorphRightArrow] (%^RmVow:) %^I2J:  ;
+ i:j <=> [Vow: |Cns:] (0:ʼ|%{ʼØ%}:) _ [PenBetweenStemAndVowelLoss|BetweenStemAndConsGrade BetweenPALNoAndMorphRightArrow] (%^RmVow:) %^I2J:  ;
    Vow:i (%^1VOW:) (0:ʹ) _ [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWRaise:  %^VYY2XYY: ;
 !   Vow:i (%^1VOW:) (0:ʹ) _ [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWRaise:  %^VYY2XYY: ;
 !!
