@@ -307,6 +307,7 @@ BetweenVowHeightAndConsGrade = [((%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÕ:) (%^Allegr
 BetweenVowHeightAndMorph = [(%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) ((%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÕ:) (%^Allegro:) %^PAL:|(%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:)] ; !!= * @CODE@ 
 !! }}}
 
+BetweenVowHeightAndMorph = [(%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) ((%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÕ:) (%^Allegro:) %^PAL:|(%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:) ([(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:]|%^C2CC:|%^XY2XYY:|%^XYY2XY:|%^K2GG:|%^KK2GG:|%^CC2CCC:|%^CCC2C:|%^CCC2CC:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:) RBound ] ;
 
 BetweenPALNoAndMorphRightArrow = [([(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:]|%^C2CC:|%^XY2XYY:|%^XYY2XY:|%^K2GG:|%^KK2GG:|%^CC2CCC:|%^CCC2C:|%^CCC2CC:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:) ] ;
 
@@ -853,15 +854,11 @@ Rules
 !! vuʹvll+N+Sg+Ill: voulla
 !!€ vuvll%^VOWLower%^PALNo%^XYY2VYY%>a
 !!€ voull000%>a
-  OnSetC _ [u:o|u:0] (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] (%^VV2V:)  %^VOWLower: (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) (%^KK2GG:|[(%^Allegro:) (%^PAL:) %^CC2C:|(%^Allegro:) (%^PAL:) %^CC2CAllegro:]|%^XYY2XY:) RBound ;
+  OnSetC _ [u:o|u:0] (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] (%^VV2V:)  %^VOWLower: BetweenVowHeightAndMorph ;
 !! kuullâd+V+Ind+Prs+Pl3 __hear/kuulla__
 !!€ kuu0ll%^VV2V%^VOWLower%^PAL%^CC2C%>e
 !!€ ko0ʹl00000%>e
-        OnSetC u: _   (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|r d d:]  %^VOWLower: (%^VOWFront:|%^VOWBack:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) (%^KK2GG:|[(%^Allegro:) (%^PAL:) %^CC2C:|(%^Allegro:) (%^PAL:) %^CC2CAllegro:]|%^XYY2XY:) RBound ;
-!! suukkâd+V+Imprt+Sg3: __row/soutaa__
-!!€ suukk%^VOWLower%^KK2GG%>as
-!!€ sooǥǥ00%>as
-       OnSetC _ (%^1VOW:) (ʹ:| 0:ʹ) [CNoV: Cns:* |Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWLower: ; 
+       OnSetC _ (%^1VOW:) (ʹ:| 0:ʹ) [CNoV: Cns:* |Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWLower: BetweenVowHeightAndMorph ; 
 !! juʹrdded+V+Ind+Prs+Sg1 __think__
 !!€ ju%^1VOWrdd%^V2VV%^VOWLower%^XYY2XY%>am
 !!€ joord0000%>am
@@ -870,8 +867,8 @@ Rules
 !!€ jo0ʹrdd00%>e
 ! uʹvdded+V+Ind+Prs+Pl3: ouʹdde 
 
- OnSetC  _ (%^1VOW:) (ʹ:)  v:u (0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: (%^VOWFront:|%^VOWBack:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
- OnSetC _ (%^1VOW:) %{VU%}: (ʹ:|0:ʹ) Cns:+ BetweenStemAndHeight %^VOWLower: ;
+ OnSetC  _ (%^1VOW:) (ʹ:)  v:u (0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: BetweenVowHeightAndMorph ;
+ OnSetC _ (%^1VOW:) %{VU%}: (ʹ:|0:ʹ) Cns:+ BetweenStemAndHeight %^VOWLower: BetweenVowHeightAndMorph ;
 !! stuuʹl+N+Sg+Ill: __chair/tuoli__
 !!€ stu%^1VOW%{VU%}l%^V2VV%^VOWLower%>a
 !!€ stooul00%>a
@@ -884,6 +881,11 @@ Rules
 !!€ po0ttaz0000
 !!$ pu%^1VOWttes%^Pen%^VOWLower%^PenVow2a%^VC
 !!$ pu0ttaz0000
+
+OnSetC u: _   (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|r d d:]  %^VOWLower: (%^VOWFront:|%^VOWBack:) (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) (%^KK2GG:|[(%^Allegro:) (%^PAL:) %^CC2C:|(%^Allegro:) (%^PAL:) %^CC2CAllegro:]|%^XYY2XY:) RBound ;
+!! suukkâd+V+Imprt+Sg3: __row/soutaa__
+!!€ suukk%^VOWLower%^KK2GG%>as
+!!€ sooǥǥ00%>as
 
 "Even syllabic verbs I, vowel lowering u:õ "
 !! __@RULENAME@__ - deriving
@@ -1445,6 +1447,11 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
 !! šäʹŋǧǧ+N+Sg+Com: __pasty/piirakka 
 !!€ šä%^1VOW0ŋgg%^V2VV%^VOWRaise%^PAL%^XYY2XY%>in
 !!€ šaaʹŋǧ00000%>in
+         Vow: (%^1VOW:) (ʹ:|0:ʹ) Cns:     _ (ˈ:|:ˈ) g:ǧ BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CCC2CC:|%^CC2CCC:|%^XYY2XY:) RBound ;
+!! vueʹlǧǧed+Use/NG+V+Ind+Prs+Pl3 __leave/lähteä__
+!!€ vuâ0lgg%^PALÄ%^PAL%>a
+!!€ vuäʹlǧǧ00%>a
+
            Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:) g: (ˈ:|:ˈ) _   BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CCC2CC:|%^CC2CCC:) RBound ;
 
     Vow: (%^1VOW:) 0: _ BetweenStemAndPALNo %^PAL: ;
