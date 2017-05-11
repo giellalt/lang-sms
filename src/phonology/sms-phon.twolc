@@ -651,14 +651,18 @@ Rules
 "Vowel raising ẹ:i"
 !! __@RULENAME@__ - used in
  ẹ:i <=>
-  OnSetC _ (%^1VOW:|ẹ:) (i|u) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWRaise: ;
+  OnSetC _ (%^1VOW:|ẹ:) (i:|u) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWRaise: ;
 !!€ pẹ%^1VOWss%^VOWRaise%>u
 !!€ pi0ss0%>u
 !!€ pẹ%^1VOWss%^V2VV%^VOWRaise%>už
 !!€ piiss00%>už
 !!€ tẹẹvv%^VV2V%^VOWRaise%>uš
 !!€ ti0vv00%>uš
-  OnSetC  ẹ: _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWRaise: ;
+!! peigg+N+Sg+Ill
+!!$ pẹ%^1VOWigg%^VOWRaise%^VYY2XYY%>u
+!!$ pẹ0jgg00%>u
+
+OnSetC  ẹ: _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWRaise: ;
 
 
 
@@ -1408,8 +1412,8 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
 !!€ saa0kk%^VV2V%^PAL%>e
 !!€ sa0ʹǩǩ00%>e
 !! tääʹss+N+Sg+Gen: __level/taso__
-!!€ tää0ss%^PAL%^KK2GG
-!!€ tääʹss00
+!!$ tää0ss%^PAL%^KK2GG
+!!$ tää0zz00
 !!€ mõõ0nn%^VV2V%^VOWLower%^PAL%>e
 !!€ mâ0ʹnn000%>e
 !!€ jåå0tt%^VV2V%^VOWRaise%^PAL%>e
@@ -1563,11 +1567,14 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
 !!€ sää0mm%^PAL%^CC2C
 !!€ sääʹm000
          Vow: (%^1VOW:) (ʹ:) h: (ʹ:|0:ʹ)      m: (ˈ:) _ BetweenStemAndConsGrade [[(%^Allegro:) (%^PAL:) %^CC2C:|(%^Allegro:) (%^PAL:) %^CC2CAllegro:] |%^CCC2C:|%^XYY2XY:] ;
-         m: (ˈ:) _ Vow: Cns:+ PenBetweenStemAndConsGrade [%^Pen: [(%^Allegro:) (%^PAL:) %^CC2C:|(%^Allegro:) (%^PAL:) %^CC2CAllegro:]|%^Pen: %^CCC2C:|%^Pen: %^XYY2XY:] ;
+         m: (ˈ:) _ Vow: (%^1VOW:) Cns:+ (%{XC%}:) PenBetweenStemAndConsGrade [%^Pen: [(%^Allegro:) (%^PAL:) %^CC2C:|(%^Allegro:) (%^PAL:) %^CC2CAllegro:]|%^Pen: %^K2GG:|%^Pen: %^CCC2C:|%^Pen: %^XYY2XY:] ;
 !Not needed here
 !! kåʹmrded+V+Ind+Prs+Sg3 __bow__
 !!€ kååʹmmerd%^PenVow2a
 !!€ kååʹmmard0
+!! mainstummuš+N+Err/Orth+Sg+Gen
+!!€ mainstummu%^1VOWš%{XC%}%^Pen%^CC2C%^V2VV%^K2GG
+!!€ mainstum0uužž0000
 
 "Even syllabic verbs I, cg for b"
 !! __@RULENAME@__ - used
@@ -1942,7 +1949,7 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
          Vow: (%^1VOW:) (:ˈ) (ʹ:|0:ʹ) _   [s: (i:) |%{XC%}: ] BetweenStemAndConsGrade (%^I2J:)  [%^KK2GG: |%^K2GG: ] ;
 !! tääʹss+N+Sg+Gen: __level/taso__
 !!€ tää0ss%^PAL%^KK2GG
-!!€ tääʹss00
+!!€ tääʹzz00
 !!€ mättʼtõ%^1VOWs%{XC%}%^V2VV%^K2GG
 !!€ mättʼtõõzz00
        Vow: (%^1VOW:) (:ˈ) (ʹ:|0:ʹ)  _  BetweenStemAndConsGrade %^K2GAllegro: ;
