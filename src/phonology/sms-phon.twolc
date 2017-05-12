@@ -151,7 +151,6 @@ Alphabet
 !! consonant cluster to Vowel and Geminate
 !%^PenVY2XYY:0	
 !! VVus:Vhss in penultimate syllable
-!%^PenXY2XYY:0	
 !! 
 !%^PenXYY2XY:0	
 !! 
@@ -306,11 +305,11 @@ BetweenVowHeightAndConsGrade = [((%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÕ:) (%^Allegr
 BetweenVowHeightAndMorph = [(%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) ((%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÕ:) (%^Allegro:) %^PAL:|(%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:)] ; !!= * @CODE@ 
 !! }}}
 
-BetweenVowHeightAndMorph = [(%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) ((%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÕ:) (%^Allegro:) %^PAL:|(%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:) ([(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:]|%^C2CC:|%^XY2XYY:|%^XYY2XY:|%^K2GG:|%^KK2GG:|%^CC2CCC:|%^CCC2C:|%^CCC2CC:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:) RBound ] ;
+BetweenVowHeightAndMorph = [(%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) ((%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÕ:) (%^Allegro:) %^PAL:|(%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:) ([(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:]|%^C2CC:|%^XYY2XY:|%^K2GG:|%^KK2GG:|%^CC2CCC:|%^CCC2C:|%^CCC2CC:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:) RBound ] ;
 
-BetweenPALNoAndMorphRightArrow = [([(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:]|%^C2CC:|%^XY2XYY:|%^XYY2XY:|%^K2GG:|%^KK2GG:|%^CC2CCC:|%^CCC2C:|%^CCC2CC:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:) ] ;
+BetweenPALNoAndMorphRightArrow = [([(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:]|%^C2CC:|%^XYY2XY:|%^K2GG:|%^KK2GG:|%^CC2CCC:|%^CCC2C:|%^CCC2CC:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:) ] ;
 
-BetweenPALNoAndMorph = [([(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:]|%^C2CC:|%^XY2XYY:|%^XYY2XY:|%^K2GG:|%^KK2GG:|%^CC2CCC:|%^CCC2C:|%^CCC2CC:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:) RBound ] ;
+BetweenPALNoAndMorph = [([(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:]|%^C2CC:|%^XYY2XY:|%^K2GG:|%^KK2GG:|%^CC2CCC:|%^CCC2C:|%^CCC2CC:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:) RBound ] ;
 
 BetweenStemAndRightArrow = [BetweenStemAndConsGrade BetweenPALNoAndMorphRightArrow] ;
 
@@ -325,12 +324,12 @@ PenBetweenStemAndPALAllo  = [ PenBetweenStemAndHeight (%^Pen: %^VOWLower:|%^Pen:
 
 PenBetweenStemAndConsGrade = [PenBetweenStemAndHeight ((%^Pen: %^VOWRaise:|%^Pen: %^VOWLower:) ((%^Pen: %^PALÂ:|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PALNo:|(%^Pen: %^PALÕ:|%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:) (%^Pen: %^Allegro:) %^Pen: %^PAL:)| %^Pen: %^VOWBack: (%^Pen: %^Allegro:) (%^Pen: %^PALNo:|%^Pen: %^PAL:) ) ] ;
 
-PenBetweenStemAndVowelLoss = [PenBetweenStemAndHeight [(%^Pen: %^VOWRaise:|%^Pen: %^VOWLower:|%^Pen: %^U2Õ:) ((%^Pen: %^PALÂ:|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PALNo:|(%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PAL:)| %^Pen: %^VOWBack: (%^Pen: %^Allegro:) (%^Pen: %^PALNo:|%^Pen: %^PAL:)] ([%^Pen: %^C2CC:|%^Pen: %^XY2XYY:]|%^Pen: [(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:]|%^Pen: %^XYY2XY:|%^Pen: %^CC2CCC:|%^Pen: %^CCC2CC:|%^Pen: %^CCC2C:)] ;
+PenBetweenStemAndVowelLoss = [PenBetweenStemAndHeight [(%^Pen: %^VOWRaise:|%^Pen: %^VOWLower:|%^Pen: %^U2Õ:) ((%^Pen: %^PALÂ:|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PALNo:|(%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PAL:)| %^Pen: %^VOWBack: (%^Pen: %^Allegro:) (%^Pen: %^PALNo:|%^Pen: %^PAL:)] ([%^Pen: %^C2CC:]|%^Pen: [(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:]|%^Pen: %^XYY2XY:|%^Pen: %^CC2CCC:|%^Pen: %^CCC2CC:|%^Pen: %^CCC2C:)] ;
 
 
 PenBetweenStemAndStemFinalVoicing = [PenBetweenStemAndVowelLoss (%^RmVow:|%^PenVow2a:)] ;
 
-PenBetweenPALNoAndMorph = [(%^Pen: [(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:]|%^Pen: %^C2CC:|%^Pen: %^XYY2XY:|%^Pen: %^KK2GG:|%^Pen: %^CC2CCC:|%^Pen: %^CCC2C:|%^Pen: %^CCC2CC:|%^Pen: %^XY2XYY:|%^Pen: %^XYY2VY:|%^Pen: %^XYY2VYY:|%^Pen: %^KKK2GG:) RBound ] ;
+PenBetweenPALNoAndMorph = [(%^Pen: [(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:]|%^Pen: %^C2CC:|%^Pen: %^XYY2XY:|%^Pen: %^KK2GG:|%^Pen: %^CC2CCC:|%^Pen: %^CCC2C:|%^Pen: %^CCC2CC:|%^Pen: %^XYY2VY:|%^Pen: %^XYY2VYY:|%^Pen: %^KKK2GG:) RBound ] ;
 
 !! used in compounding Cmp/SgNom and Cmp/SgGen
 SgNomGen = [((%^PALE: %^PAL:) %^CCC2C:|(%^PALE: %^PAL:) %^CCC2CC:|%^PALẸ:|[%^PALE:|%^PALÕ:] %^PAL: %^XYY2IY:|[%^PALẸ:|%^PALE:] %^PAL: %^XYY2XY:|((%^PALE:) %^PAL:) %^KK2GG:|(%^PALE:) %^PAL:| ((%^PALE:) %^PAL:) (%^J2I:) %^CC2C:|%^PAL: %^XYY2VY:)];
@@ -344,7 +343,7 @@ NeutrHighBack = [(%^VOWLower:|%^VOWRaise:) (%^VOWFront:|%^VOWBack:)] ; !!= * @CO
 VNeutrGrade = [(%^VV2V: |%^V2VV: )];
 !! neutral to consonant length
 !! {{{
-CNeutrGrade = [([(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:] |[%^C2CC:|%^XY2XYY:] |%^CC2CCC: |%^KK2GG: |%^KKK2GG: |%^XYY2VY: |%^XYY2VYY:|%^CCC2CC: )] ;
+CNeutrGrade = [([(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:] |[%^C2CC:] |%^CC2CCC: |%^KK2GG: |%^KKK2GG: |%^XYY2VY: |%^XYY2VYY:|%^CCC2CC: )] ;
 !! }}}
 !! neutral to vowel and consonant length
 !! {{{
@@ -551,12 +550,12 @@ Rules
 "ZERO to syllable mark 0:ʼ here"
 !! __@RULENAME@__ - used in zeeʹtt+N+Sg+Abe: zeeʹttʼtää
  0:ʼ <=>
-     [ :n | :l ] ([%^C2CC:|%^CCC2CC:|%^XY2XYY:]) %> _ j ;
+     [ :n | :l ] ([%^C2CC:|%^CCC2CC:]) %> _ j ;
 !!€ koll%>0j%>ed
 !!€ koll%>ʼj%>ed
 !!$ koll%>j%>ed
 !!$ koll%>j%>ed
-     [ :n | :l ] ([%^C2CC:|%^CCC2CC:|%^XY2XYY:]) %> _ (Vow:0) i:j ;
+     [ :n | :l ] ([%^C2CC:|%^CCC2CC:]) %> _ (Vow:0) i:j ;
 !!€ valmštõõll0i%^I2J%>i
 !!€ valmštõõllʼj0%>i
 !! piânˈnai+N+Ess: __dog/koira__
@@ -2136,14 +2135,14 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
 
 "Orthographic Consonant lengthening Weak to strong %{XC%}:Cx "
 !! __@RULENAME@__ - used in
- %{XC%}:Cx <=>  Vow: (%^1VOW:) (ʹ:|0:ʹ) Cns:Cx _ [BetweenStemAndConsGrade|PenBetweenStemAndConsGrade] [%^C2CC:|%^K2GG:|%^XY2XYY:] ;
+ %{XC%}:Cx <=>  Vow: (%^1VOW:) (ʹ:|0:ʹ) Cns:Cx _ [BetweenStemAndConsGrade|PenBetweenStemAndConsGrade] [%^C2CC:|%^K2GG:] ;
         where Cx in (b c ʒ ǯ d đ ǥ g ǧ j k ǩ m ŋ p r s š t v z ž) ;
 !!€ čââʹlmtẹ%^1VOWm%{XC%}%^C2CC%>a
 !!€ čââʹlmtẹ0mm0%>a
 
 "Orthographic Consonant lengthening Weak to strong %{XC%}:Cx for n and l"
 !! __@RULENAME@__ - used in
- %{XC%}:Cx <=>  Vow: (%^1VOW:) (ʹ:|0:ʹ) Cns:Cx _ (j) BetweenStemAndConsGrade [%^C2CC:|%^XY2XYY:] ;
+ %{XC%}:Cx <=>  Vow: (%^1VOW:) (ʹ:|0:ʹ) Cns:Cx _ (j) BetweenStemAndConsGrade [%^C2CC:] ;
         where Cx in (l n) ;
 
 
@@ -2274,7 +2273,7 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
 "Removing Consonant X3 length mark after diphthong in vertical line ˈ LEFT ARROW"
 !! __@RULENAME@__ - deriving 
 !! b c č ǯ d đ g ǧ k ǩ l m n p r s š t v also htˈt nˈnj
-! BetweenStemAndConsGrade [%^C2CC:|%^XY2XYY:]
+! BetweenStemAndConsGrade [%^C2CC:]
 !! {{{ 
  ˈ:0 <=> (ʹ:|0:ʹ)     b _ b:     [BetweenStemAndConsGrade | Vow: Cns:*  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:] ;
          (ʹ:|0:ʹ)     c: _ c:     [BetweenStemAndConsGrade | Vow: Cns:*  PenBetweenStemAndConsGrade %^Pen: ][%^CCC2CC:|%^CCC2C:|%^KKK2GG: ] ;
