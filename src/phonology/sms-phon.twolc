@@ -255,6 +255,7 @@ Sets
  CNoDLRZ = b c f g h j k m n p q s t v w x z đ ǯ č ŋ ǩ ǧ ǥ š ž 
            B C F G H J K M N P Q S T V W X Z Đ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;        !!= * @CODE@
 
+Ltrs = Vow Cns ;
 
 Dummy = %^PAL %^PALE %^PALẸ %^PALÕ %^PALÄ 
  %^CC2C %^CCC2C %^CCC2CC %^XYY2IY %^XYY2XY %^KK2GG %^XYY2VY %^KKK2GG %^KKK2ZERO %^C2CC 
@@ -2346,6 +2347,34 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
 !W! #:%- <=> :Vx (:0) (j) _ :Vx  ;
 !W!        where Vx in ( l n ) ;
 
+"#:# retension to avoid hyphen"
+!! __@RULENAME@__ - $ Sakssa-jânnam
+ #:# <=>
+	 [k|:ǩ] (:0) Dummy:* _  [Ltrs - [k|ǩ]] ;
+        [g|:ǧ|:ǥ] (:0) Dummy:* _ [Ltrs - [g|ǧ|ǥ]] ;
+        [c|č] (:0) Dummy:* _ [Ltrs - [c|č]] ;
+        [s|š] (:0) Dummy:* _ [Ltrs - [s|š]] ;
+        [:z|:ž] (:0) Dummy:* _ [Ltrs - [z|ž]] ;
+        [d|:đ] (t:0|đ:0) Dummy:* _ [Ltrs - [d|đ]] ;
+	:i Dummy:* _ [Ltrs - i] ;
+        :u Dummy:* _ [Ltrs - u] ;
+        :y Dummy:* _ [Ltrs - y] ;
+        [:e|:ẹ] Dummy:* _ [Ltrs - [e|ẹ]] ;
+        [:o|:õ|:ö] Dummy:* _ [Ltrs - [o|õ|ö]] ;
+        [:a|:å|:ä|:â] Dummy:* _ [Ltrs - [a|å|ä|â]] ;
+        [:v|w] (v:0) Dummy:* _ [Ltrs - [v|w]] ;
+        b Dummy:* _ [Ltrs - b] ;
+        f (f:0) Dummy:* _ [Ltrs - f] ;
+        h Dummy:* _ [Ltrs - h] ;
+        [k:j|č:j|j j:|[Ltrs - [l:|n:]] j] Dummy:* _ [Ltrs - j] ;
+!FIXME work with [n (n:)|l (l:)] j
+	l (l:0)  Dummy:* _ [Ltrs - l] ;
+	m (m:0) Dummy:* _ [Ltrs - m] ;
+	[ŋ (ŋ:0)|n (n:0) ] Dummy:* _ [Ltrs - n] ;
+	p Dummy:* _ [Ltrs - p] ;
+	r (r:0) Dummy:* _ [Ltrs - r] ;
+	t Dummy:* _ [Ltrs - t] ;
+	
 
 "Hyphen for splitting between look-alikes"
 !! __@RULENAME@__ - used in Kääzzkõsraajõstuâjj-joouk
@@ -2356,8 +2385,19 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
         [s|š] (:0) Dummy:* _ [s|š] ;
         [:z|:ž] (:0) Dummy:* _ [z|ž] ;
         [d|:đ] (t:0|đ:0) Dummy:* _ [d|đ] ;
-        [:o|:õ] Dummy:* _ [o|õ] ;
+	
+        :i Dummy:* _ i ;
+        :u Dummy:* _ u ;
+        :y Dummy:* _ y ;
+        [:e|:ẹ] Dummy:* _ [e|ẹ] ;
+        [:o|:õ|:ö] Dummy:* _ [o|õ|ö] ;
         [:a|:å|:ä|:â] Dummy:* _ [a|å|ä|â] ;
+!! Sakssajânnam+N+Prop+Sg+Nom: __Germany/Saksa
+!!€ Sakssa#jânnam
+!!€ Sakssa#jânnam
+!!$ Sakssa#jânnam
+!!$ Sakssa-jânnam
+
 	[:v|w] (v:0) Dummy:* _ [v|w] ;
 	b Dummy:* _ b ;
 	f (f:0) Dummy:* _ f ;
