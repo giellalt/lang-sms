@@ -271,14 +271,14 @@ Definitions
 
 
 !! Onset consonant or word boundary
-OnSetC = [[%{XC%}:Cns|Cns:Cns] (Cns:|%{XC%}:Cns) |#:|%>|»] ;
+OnSetC = [[%{XC%}:Cns|Cns:Cns] (Cns:|%{XC%}:Cns) |.#.|#:|%>|»] ;
 
 !! Penultimate consonant
 PenUltCns = [Cns:|%{XC%}:] ;
 
 !! following morpheme or word boundary
 !! {{{
-RBound = [(%^Hyphen: %-|%^NoHyphen:|%{%-Ø%}:) #:|%>|»|%-] ; !!= * @CODE@ 
+RBound = [(%^Hyphen: %-|%^NoHyphen:|%{%-Ø%}:) #:|.#.|%>|»|%-] ; !!= * @CODE@ 
 !! }}}
 
 
@@ -1226,7 +1226,7 @@ OnSetC [i|I] _ [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^V2VV: BetweenVowHeightA
  OnSetC [o:u|u] _ (ʹ:|0:ʹ) Cns: Cns:* (%^Pen: [(%^Allegro:) (%^PAL:) %^CC2C:|(%^Allegro:) (%^PAL:) %^CC2CAllegro:]) %^V2VV: ((%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:|%^PALNo:) [%^C2CC: | %^K2GG:] ;
  OnSetC o:u _ (i) (ʹ:|0:ʹ) Cns: Cns:*  %^V2VV:  %^VOWRaise:  ;
  OnSetC u (i) _ (ʹ:|0:ʹ) Cns: Cns:*  %^V2VV: BetweenVowHeightAndMorph ;
-           Cns: u _ (ʹ:|0:ʹ)  CNoV: Vow: Cns:+ (%{XC%}:)  %^Pen: %^V2VV: [%>|(%^Hyphen: %- |%^NoHyphen:|%{%-Ø%}:) #:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:] ;
+           Cns: u _ (ʹ:|0:ʹ)  CNoV: Vow: Cns:+ (%{XC%}:)  %^Pen: %^V2VV: [%>|(%^Hyphen: %- |%^NoHyphen:|%{%-Ø%}:) #:|.#.|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:] ;
 
 
  u _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  Vow: Cns:* %^Pen: %^V2VV: ;
@@ -2349,36 +2349,36 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
 
 "#:# retension to avoid hyphen"
 !! __@RULENAME@__ - $ Sakssa-jânnam
- #:# <=>
-	 [k|:ǩ] (:0) Dummy:* _  [Ltrs - [k|ǩ]] ;
-        [g|:ǧ|:ǥ] (:0) Dummy:* _ [Ltrs - [g|ǧ|ǥ]] ;
-        [c|č] (:0) Dummy:* _ [Ltrs - [c|č]] ;
-        [s|š] (:0) Dummy:* _ [Ltrs - [s|š]] ;
-        [:z|:ž] (:0) Dummy:* _ [Ltrs - [z|ž]] ;
-        [d|:đ] (t:0|đ:0) Dummy:* _ [Ltrs - [d|đ]] ;
-	:i Dummy:* _ [Ltrs - i] ;
-        :u Dummy:* _ [Ltrs - u] ;
-        :y Dummy:* _ [Ltrs - y] ;
-        [:e|:ẹ] Dummy:* _ [Ltrs - [e|ẹ]] ;
-        [:o|:õ|:ö] Dummy:* _ [Ltrs - [o|õ|ö]] ;
-        [:a|:å|:ä|:â] Dummy:* _ [Ltrs - [a|å|ä|â]] ;
-        [:v|w] (v:0) Dummy:* _ [Ltrs - [v|w]] ;
-        b Dummy:* _ [Ltrs - b] ;
-        f (f:0) Dummy:* _ [Ltrs - f] ;
-        h Dummy:* _ [Ltrs - h] ;
-        [k:j|č:j|j j:|[Ltrs - [l:|n:]] j] Dummy:* _ [Ltrs - j] ;
-!FIXME work with [n (n:)|l (l:)] j
-	l (l:0)  Dummy:* _ [Ltrs - l] ;
-	m (m:0) Dummy:* _ [Ltrs - m] ;
-	[ŋ (ŋ:0)|n (n:0) ] Dummy:* _ [Ltrs - n] ;
-	p Dummy:* _ [Ltrs - p] ;
-	r (r:0) Dummy:* _ [Ltrs - r] ;
-	t Dummy:* _ [Ltrs - t] ;
+! #:# <=>
+!	 [k|:ǩ] (:0) Dummy:* _  [Ltrs - [k|ǩ]] ;
+!        [g|:ǧ|:ǥ] (:0) Dummy:* _ [Ltrs - [g|ǧ|ǥ]] ;
+!        [c|č] (:0) Dummy:* _ [Ltrs - [c|č]] ;
+!        [s|š] (:0) Dummy:* _ [Ltrs - [s|š]] ;
+!        [:z|:ž] (:0) Dummy:* _ [Ltrs - [z|ž]] ;
+!        [d|:đ] (t:0|đ:0) Dummy:* _ [Ltrs - [d|đ]] ;
+!	:i Dummy:* _ [Ltrs - i] ;
+!        :u Dummy:* _ [Ltrs - u] ;
+!        :y Dummy:* _ [Ltrs - y] ;
+!        [:e|:ẹ] Dummy:* _ [Ltrs - [e|ẹ]] ;
+!        [:o|:õ|:ö] Dummy:* _ [Ltrs - [o|õ|ö]] ;
+!        [:a|:å|:ä|:â] Dummy:* _ [Ltrs - [a|å|ä|â]] ;
+!        [:v|w] (v:0) Dummy:* _ [Ltrs - [v|w]] ;
+!        b Dummy:* _ [Ltrs - b] ;
+!        f (f:0) Dummy:* _ [Ltrs - f] ;
+!        h Dummy:* _ [Ltrs - h] ;
+!        [k:j|č:j|j j:|[Ltrs - [l:|n:]] j] Dummy:* _ [Ltrs - j] ;
+!!FIXME work with [n (n:)|l (l:)] j
+!	l (l:0)  Dummy:* _ [Ltrs - l] ;
+!	m (m:0) Dummy:* _ [Ltrs - m] ;
+!	[ŋ (ŋ:0)|n (n:0) ] Dummy:* _ [Ltrs - n] ;
+!	p Dummy:* _ [Ltrs - p] ;
+!	r (r:0) Dummy:* _ [Ltrs - r] ;
+!	t Dummy:* _ [Ltrs - t] ;
 	
 
 "Hyphen for splitting between look-alikes"
 !! __@RULENAME@__ - used in Kääzzkõsraajõstuâjj-joouk
- #:%- <=>
+ %#:%- <=>
         [k|:ǩ] (:0) Dummy:* _  [k|ǩ] ;
         [g|:ǧ|:ǥ] (:0) Dummy:* _ [g|ǧ|ǥ] ;
         [c|č] (:0) Dummy:* _ [c|č] ;
