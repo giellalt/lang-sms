@@ -36,7 +36,8 @@ GIELLA_FILTER_LOCAL_REGEX_SRCS=\
 					split-CmpN-tags.regex                              \
 					split-CmpNP-tags.regex                             \
 					convert_to_flags-CmpNP-tags.regex                  \
-					replace-iterated-consonant-with-palatal-and-consonant.regex
+					replace-iterated-consonant-with-palatal-and-consonant.regex \
+					change-optionally-word_boundary_to_hyphen.regex
 
 # List any local filter xfscript files here:
 GIELLA_FILTER_LOCAL_XFSCRIPT_SRCS=
@@ -59,6 +60,12 @@ GIELLA_FILTER_LOCAL_GENERATED_LEXC_SRCS=
 EXTRA_SRCS=
 
 ########## Add local build rules below here: ############
+all-local: change-optionally-word_boundary_to_hyphen.whfst
+
+change-optionally-word_boundary_to_hyphen.whfst: \
+		change-optionally-word_boundary_to_hyphen.hfst
+	$(AM_V_REWEIGHT)$(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
+		-a10000 --symbol="@C.LexComp@" --arcs-only < $< > $@
 
 ############### END: Local modifications ################
 #########################################################
