@@ -302,9 +302,10 @@ BetweenVowLengthAndPALNo = [(%^VOWLower:|%^VOWRaise:) (%^PALÄ:|%^PALE:|%^PALẸ
 BetweenVowHeightAndConsGrade = [((%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÕ:) (%^Allegro:) %^PAL:|(%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:)] ;
 
 !! possible triggers between VowHeight and word end
-!! {{{
-BetweenVowHeightAndMorph = [(%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) ((%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÕ:) (%^Allegro:) %^PAL:|(%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:)] ; !!= * @CODE@ 
-!! }}}
+! Commented out the following definition BetweenVowHeightAndMorph, as it is defined twice. They should probably have different names. Now the code compiles (cf. Bz 2396). Trond.
+! {{{
+!BetweenVowHeightAndMorph = [(%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) ((%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÕ:) (%^Allegro:) %^PAL:|(%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:)] ; !!= * @CODE@ 
+! }}}
 
 BetweenVowHeightAndMorph = [(%^VOWFront:|%^VOWBack:) (%^VOWTense:|%^VOWLax:) ((%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÕ:) (%^Allegro:) %^PAL:|(%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:) ([(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:]|%^C2CC:|%^XYY2XY:|%^K2GG:|%^KK2GG:|%^CC2CCC:|%^CCC2C:|%^CCC2CC:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:) RBound ] ;
 
