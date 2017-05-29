@@ -4512,12 +4512,12 @@ LEXICON V0_VUEJTED !!= * @CODE@ vuejted:vuejat
 :%^RmVow VSUF-VUEJTED-ELSE ;
 
 LEXICON VSUF-VUEJTED-IND-PRS-SG3
-+Ind+Prs+Sg3: K ;
++Ind+Prs+Sg3:%^PALNo K ;
 
 LEXICON VSUF-VUEJTED-IND-PRS-CONNEG
-+Ind+Prs+ConNeg:	K ;
-+Imprt+Sg2:		K ;
-+Imprt+ConNeg: 	K ;
++Ind+Prs+ConNeg:%^PALNo	K ;
++Imprt+Sg2:%^PALNo		K ;
++Imprt+ConNeg:%^PALNo 	K ;
 
 LEXICON VSUF-VUEJTED-ELSE
 +Inf:%>ed K ;
@@ -4605,8 +4605,8 @@ LEXICON V0_JAELSTED !!= * @CODE@ jälsted:jäälast
 !
 ! * Yaml: __V-jaelsted__
 
-:%^PenVow2a VSUF-VUEJTED-IND-PRS-SG3 ; ! jäälast
-: VSUF-VUEJTED-IND-PRS-CONNEG ;      	 ! jäälast
+:%^PenVow2a%^PALNo VSUF-VUEJTED-IND-PRS-SG3 ; ! jäälast
+:%^PALNo VSUF-VUEJTED-IND-PRS-CONNEG ;      	 ! jäälast
 :%^Pen%^VV2V%^RmVow VSUF-VUEJTED-ELSE ; 		 ! jälsted
 +Use/NG:%^RmVow VSUF-VUEJTED-ELSE ; 		 ! jäälsted
 
@@ -4621,8 +4621,8 @@ LEXICON V0_POAGXSTED !!= * @CODE@ påǥsted:pååǥǥast
 
 ! lexicon ''@LEXNAME@''
 ! * Yaml: __V-poagsted__
-:%^PenVow2a VSUF-VUEJTED-IND-PRS-SG3 ; ! pååǥǥast
-: VSUF-VUEJTED-IND-PRS-CONNEG ;      	 ! pååǥǥast
+:%^PenVow2a%^PALNo VSUF-VUEJTED-IND-PRS-SG3 ; ! pååǥǥast
+:%^PALNo VSUF-VUEJTED-IND-PRS-CONNEG ;      	 ! pååǥǥast
 :%^Pen%^VV2V%^Pen%^CC2C%^RmVow VSUF-VUEJTED-ELSE ; 		 ! påǥsted
 +Err/Orth:%^Pen%^CC2C%^RmVow VSUF-VUEJTED-ELSE ; 	 ! pååǥsted
 +Use/NG:%^RmVow VSUF-VUEJTED-ELSE ; 	 ! pååǥǥsted
@@ -4637,8 +4637,8 @@ LEXICON V0_JOARGXSTED !!= * @CODE@ jårǥsted:jåårǥast
 
 ! lexicon ''@LEXNAME@''
 ! * Yaml: __V-poagsted__
-:%^PenVow2a VSUF-VUEJTED-IND-PRS-SG3 ; ! jåårǥast
-: VSUF-VUEJTED-IND-PRS-CONNEG ;        ! jåårǥast
+:%^PenVow2a%^PALNo VSUF-VUEJTED-IND-PRS-SG3 ; ! jåårǥast
+:%^PALNo VSUF-VUEJTED-IND-PRS-CONNEG ;        ! jåårǥast
 :%^Pen%^VV2V%^RmVow VSUF-VUEJTED-ELSE ;                 ! jårǥsted
 +Use/NG:%^RmVow VSUF-VUEJTED-ELSE ;                 ! jåårǥsted
 
@@ -4655,8 +4655,8 @@ LEXICON V0_TEYPSTED !!= * @CODE@ teâpsted:teâppast
 !! similar_to: 
 ! lexicon ''@LEXNAME@''
 ! * Yaml: __V-teapsted__
-:%^PenVow2a VSUF-VUEJTED-IND-PRS-SG3 ; ! teâppast
-: VSUF-VUEJTED-IND-PRS-CONNEG ;        ! teâppast
+:%^PenVow2a%^PALNo VSUF-VUEJTED-IND-PRS-SG3 ; ! teâppast
+:%^PALNo VSUF-VUEJTED-IND-PRS-CONNEG ;        ! teâppast
 :%^Pen%^CC2C%^RmVow VSUF-VUEJTED-ELSE ;  ! teâpsted
 +Use/NG:%^RmVow VSUF-VUEJTED-ELSE ;    ! teâppsted
 
@@ -4673,8 +4673,8 @@ LEXICON V0_JEAELSTED !!= * @CODE@ jeälsted:jeälast
 !! similar_to: 
 ! lexicon ''@LEXNAME@''
 ! * Yaml: __V-teapsted__
-:%^PenVow2a VSUF-VUEJTED-IND-PRS-SG3 ; ! jeälast
-: VSUF-VUEJTED-IND-PRS-CONNEG ;        ! jeälast
+:%^PenVow2a%^PALNo VSUF-VUEJTED-IND-PRS-SG3 ; ! jeälast
+:%^PALNo VSUF-VUEJTED-IND-PRS-CONNEG ;        ! jeälast
 :%^RmVow VSUF-VUEJTED-ELSE ;  ! jeälsted
 
 LEXICON V_SHORRNED !!= * @CODE@ šorrned:šorran
@@ -4705,8 +4705,8 @@ LEXICON V0_SHORRNED !!= * @CODE@ šorrned:šorran
 ! (7) +V+Imprt+Sg3: šorrnââǥǥas
 ! (8) +V+Imprt+ConNegII: šorrnuku
 !    Pass.PrfPrc
-:%^PenVow2a VSUF-VUEJTED-IND-PRS-SG3 ; ! šorran
-: VSUF-VUEJTED-IND-PRS-CONNEG ;        ! šorran
+:%^PenVow2a%^PALNo VSUF-VUEJTED-IND-PRS-SG3 ; ! šorran
+:%^PALNo VSUF-VUEJTED-IND-PRS-CONNEG ;        ! šorran
 :%^RmVow VSUF-VUEJTED-ELSE ;  	 ! šorrned
 
 
@@ -4739,7 +4739,7 @@ LEXICON V0_CHIEQKHRDED !!= * @CODE@ čieʹǩrded:čieʹǩǩerd
 ! (7) +V+Imprt+Sg3: čieʹǩrdââǥǥas
 ! (8) +V+Imprt+ConNegII: čieʹǩrduku
 !    Pass.PrfPrc
-:%^PenVow2a VSUF-VUEJTED-IND-PRS-SG3 ; ! čieʹǩǩard
+:%^PenVow2a%^PALNo VSUF-VUEJTED-IND-PRS-SG3 ; ! čieʹǩǩard
 : VSUF-VUEJTED-IND-PRS-CONNEG ;        ! čieʹǩǩerd
 :%^Pen%^CC2C%^RmVow VSUF-VUEJTED-ELSE ;  ! čieʹǩrded
 +Use/NG:%^RmVow VSUF-VUEJTED-ELSE ;  ! čieʹǩǩrded
@@ -4757,7 +4757,7 @@ LEXICON V0_NJAQMMSHED !!= * @CODE@ njâʹmmšed:njâʹmmeš
 ! No Gradation
 ! similar_to: V_TAARBSHED, V_KAEIGGSHED
 ! ž:š
-:%^PenVow2a VSUF-VUEJTED-IND-PRS-SG3 ;  ! njâʹmmaš
+:%^PenVow2a%^PALNo VSUF-VUEJTED-IND-PRS-SG3 ;  ! njâʹmmaš
 :%^VC VSUF-VUEJTED-IND-PRS-CONNEG ;             ! njâʹmmež
 :%^RmVow VSUF-VUEJTED-ELSE ;                  ! njâʹmmšed
 
@@ -4788,7 +4788,7 @@ LEXICON V0_KOAQMRDED !!= * @CODE@ kåʹmrded:kååʹmmerd
 ! (7) +V+Imprt+Sg3: kåʹmrdââǥǥas
 ! (8) +V+Imprt+ConNegII: kåʹmrduku
 !    Pass.PrfPrc
-:%^PenVow2a VSUF-VUEJTED-IND-PRS-SG3 ; ! kååʹmmard
+:%^PenVow2a%^PALNo VSUF-VUEJTED-IND-PRS-SG3 ; ! kååʹmmard
 : VSUF-VUEJTED-IND-PRS-CONNEG ;        ! kååʹmmerd
 :%^Pen%^VV2V%^Pen%^CC2C%^RmVow VSUF-VUEJTED-ELSE ;  ! kåʹmrded
 +Use/NG:%^RmVow VSUF-VUEJTED-ELSE ;  ! kååʹmmrded
@@ -4804,7 +4804,7 @@ LEXICON V0_LOAQNSTED !!= * @CODE@ låʹnsted:lååʹnest
 ! lexicon ''@LEXNAME@''
 ! ǩeʹrjjted:ǩeʹrjjet
 ! * Yaml: __V-kjerjjted__
-:%^PenVow2a VSUF-VUEJTED-IND-PRS-SG3 ; ! lååʹnast
+:%^PenVow2a%^PALNo VSUF-VUEJTED-IND-PRS-SG3 ; ! lååʹnast
 : VSUF-VUEJTED-IND-PRS-CONNEG ;        ! lååʹnest
 :%^Pen%^VV2V%^RmVow VSUF-VUEJTED-ELSE ;  ! låʹnsted
 +Use/NG:%^RmVow VSUF-VUEJTED-ELSE ;  ! lååʹnsted
@@ -4820,7 +4820,7 @@ LEXICON V0_KHEEQRJTED !!= * @CODE@ ǩeeʹrjted:ǩeeʹrjet
 ! lexicon ''@LEXNAME@''
 ! ǩeʹrjjted:ǩeʹrjjet
 ! * Yaml: __V-kjerjjted__
-:%^PenVow2a VSUF-VUEJTED-IND-PRS-SG3 ; ! ǩeeʹrjat
+:%^PenVow2a%^PALNo VSUF-VUEJTED-IND-PRS-SG3 ; ! ǩeeʹrjat
 : VSUF-VUEJTED-IND-PRS-CONNEG ;        ! ǩeeʹrjet
 :%^RmVow VSUF-VUEJTED-ELSE ;  ! ǩeeʹrjted
 
@@ -4834,7 +4834,7 @@ LEXICON V0_AUQCSTED !!= * @CODE@ äuʹcsted:äuʹccest
 
 ! lexicon ''@LEXNAME@''
 ! * Yaml: __V-aeucsted__
-:%^PenVow2a VSUF-VUEJTED-IND-PRS-SG3 ; ! äuʹccast
+:%^PenVow2a%^PALNo VSUF-VUEJTED-IND-PRS-SG3 ; ! äuʹccast
 : VSUF-VUEJTED-IND-PRS-CONNEG ;        ! äuʹccest
 :%^Pen%^XYY2XY%^RmVow VSUF-VUEJTED-ELSE ;  ! äuʹcsted
 
@@ -4848,7 +4848,7 @@ LEXICON V0_VUAQDHSTED !!= * @CODE@ vuäʹđsted:vuäʹđest
 
 ! lexicon ''@LEXNAME@''
 ! * Yaml: __V-vuaedhsted__
-:%^PenVow2a VSUF-VUEJTED-IND-PRS-SG3 ; ! vuäʹđast
+:%^PenVow2a%^PALNo VSUF-VUEJTED-IND-PRS-SG3 ; ! vuäʹđast
 : VSUF-VUEJTED-IND-PRS-CONNEG ;        ! vuäʹđest
 :%^RmVow VSUF-VUEJTED-ELSE ;  ! vuäʹđsted
 
@@ -4862,7 +4862,7 @@ LEXICON V0_VUAQPSTED !!= * @CODE@ vuäʹpsted:vuäʹppest
 
 ! lexicon ''@LEXNAME@''
 ! * Yaml: __V-vuaepsted__
-:%^PenVow2a VSUF-VUEJTED-IND-PRS-SG3 ; ! vuäʹppast
+:%^PenVow2a%^PALNo VSUF-VUEJTED-IND-PRS-SG3 ; ! vuäʹppast
 : VSUF-VUEJTED-IND-PRS-CONNEG ;        ! vuäʹppest
 :%^Pen%^CC2CAllegro%^RmVow VSUF-VUEJTED-ELSE ;  ! vuäʹpsted
 
@@ -4876,7 +4876,7 @@ LEXICON V0_NJAQDSTED !!= * @CODE@ njâʹdsted:njââʹddest
 
 ! lexicon ''@LEXNAME@'' 
 ! * Yaml: __V-njadsted__
-:%^PenVow2a VSUF-VUEJTED-IND-PRS-SG3 ; ! njââʹddast
+:%^PenVow2a%^PALNo VSUF-VUEJTED-IND-PRS-SG3 ; ! njââʹddast
 : VSUF-VUEJTED-IND-PRS-CONNEG ;        ! njââʹddest
 :%^Pen%^VV2V%^Pen%^CC2C%^RmVow VSUF-VUEJTED-ELSE ;  ! njâʹdsted
 +Use/NG:%^RmVow VSUF-VUEJTED-ELSE ;  ! njââʹddsted
@@ -4891,7 +4891,7 @@ LEXICON V0_AAIQJLDED !!= * @CODE@ ääiʹjlded:ääiʹjeld
 
 ! lexicon ''@LEXNAME@'' 
 ! * Yaml: __V-aeaeijlded__
-:%^PenVow2a VSUF-VUEJTED-IND-PRS-SG3 ; ! ääiʹjald
+:%^PenVow2a%^PALNo VSUF-VUEJTED-IND-PRS-SG3 ; ! ääiʹjald
 : VSUF-VUEJTED-IND-PRS-CONNEG ;        ! ääiʹjeld
 :%^RmVow VSUF-VUEJTED-ELSE ;  ! ääiʹjlded
 
@@ -4905,7 +4905,7 @@ LEXICON V0_KAQRJSTED !!= * @CODE@ käʹrjsted:kääʹrjest
 
 ! lexicon ''@LEXNAME@''
 ! * Yaml: __V-kaerjsted__
-:%^PenVow2a VSUF-VUEJTED-IND-PRS-SG3 ; ! kääʹrjast
+:%^PenVow2a%^PALNo VSUF-VUEJTED-IND-PRS-SG3 ; ! kääʹrjast
 : VSUF-VUEJTED-IND-PRS-CONNEG ;        ! kääʹrjest
 :%^Pen%^VV2V%^RmVow VSUF-VUEJTED-ELSE ;  ! käʹrjsted
 +Use/NG:%^RmVow VSUF-VUEJTED-ELSE ;  ! kääʹrjsted
