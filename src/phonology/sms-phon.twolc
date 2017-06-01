@@ -83,9 +83,7 @@ Alphabet
 ! e>i, ä>e
 ! %^PenVOWLower:0
  ! i>e, õ>â, â>ä, u>o, o>å
- %^LowerI2E:0	 !!= * @CODE@ this is for diphthong in mieʹlǩǩ:meâlkka
-! %^PenLowerI2E:0
- ! this is for diphthong in mieʹlǩǩ:meâlkka
+
  %^U2Õ:0	 !!= * @CODE@ lowers u>õ	 
 ! %^PenU2Õ:0
 ! lowers u>õ	 
@@ -199,8 +197,6 @@ Alphabet
  %^INDPRSSG3:0  !!= * @CODE@ 
  %^PenVow2a:0	!!= * @CODE@ Changes penultimate vowel to a; e:a â:a
  %^FRICG:0	!!= * @CODE@ 
- %^VOWTense:0   !!= * @CODE@ â:e
- %^VOWLax:0     !!= * @CODE@ e:â 
 
 !! Hyphen at compound word boundary
 %{%-Ø%}:0 !!= * @CODE@ Zero versus hyphen in compounding
@@ -296,13 +292,7 @@ BetweenVowLengthAndPALNo = [(%^VOWLower:|%^VOWRaise:) (%^PALÄ:|%^PALE:|%^PALẸ
 
 BetweenVowHeightAndConsGrade = [((%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÕ:) (%^Allegro:) %^PAL:|(%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:)] ;
 
-!! possible triggers between VowHeight and word end
-! Commented out the following definition BetweenVowHeightAndMorph, as it is defined twice. They should probably have different names. Now the code compiles (cf. Bz 2396). Trond.
-! {{{
-!BetweenVowHeightAndMorph = [ (%^VOWTense:|%^VOWLax:) ((%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÕ:) (%^Allegro:) %^PAL:|(%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:)] ; !!= * @CODE@ 
-! }}}
-
-BetweenVowHeightAndMorph = [ (%^VOWTense:|%^VOWLax:) ((%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÕ:) (%^Allegro:) %^PAL:|(%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:) ([(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:]|%^C2CC:|%^XYY2XY:|%^K2GG:|%^KK2GG:|%^CC2CCC:|%^CCC2C:|%^CCC2CC:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:) RBound ] ;
+BetweenVowHeightAndMorph = [  ((%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÕ:) (%^Allegro:) %^PAL:|(%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:) ([(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:]|%^C2CC:|%^XYY2XY:|%^K2GG:|%^KK2GG:|%^CC2CCC:|%^CCC2C:|%^CCC2CC:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:) RBound ] ;
 
 BetweenPALNoAndMorphRightArrow = [([(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:]|%^C2CC:|%^XYY2XY:|%^K2GG:|%^KK2GG:|%^CC2CCC:|%^CCC2C:|%^CCC2CC:|%^XYY2VY:|%^XYY2VYY:|%^KKK2GG:) ] ;
 
