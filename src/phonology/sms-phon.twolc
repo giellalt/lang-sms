@@ -285,7 +285,7 @@ BetweenStemAndPALAllo = [ BetweenStemAndHeight (%^VOWLower:|%^VOWRaise:)] ;
 BetweenStemAndPALNo = [ BetweenStemAndHeight [(%^VOWLower:|%^VOWRaise:) (%^PALÄ:|%^PALE:|%^PALẸ:|%^PALÕ:|%^PALÂ:)] (%^Allegro:) ] ;
 
 !! possible triggers between word end and consonant grade
-BetweenStemAndConsGrade = [ BetweenStemAndHeight ((%^VOWRaise:|%^VOWLower:) ((%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:|%^VOWLower: %^PALÄ:|(%^PALÕ:|%^PALE:|%^PALÄ:|%^PALẸ:) (%^Allegro:) %^PAL:)| (%^Allegro:) (%^PALNo:|%^PAL:) ) ] ;
+BetweenStemAndConsGrade = [ BetweenStemAndHeight ((%^VOWRaise:|%^VOWLower:) ((%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:|%^VOWLower: %^PALÄ:|(%^PALÕ:|%^PALE:|%^PALÄ:|%^PALẸ:) (%^Allegro:) %^PAL:)| (%^Allegro:) (%^PALÕ:|%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÂ:) (%^PALNo:|%^PAL:) ) ] ;
 
 !! possible triggers between vowel length and Palatalization
 BetweenVowLengthAndPALNo = [(%^VOWLower:|%^VOWRaise:) (%^PALÄ:|%^PALE:|%^PALẸ:|%^PALÕ:|%^PALÂ:) ] ;
