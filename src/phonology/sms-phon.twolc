@@ -87,7 +87,7 @@ Alphabet
  %^U2Õ:0	 !!= * @CODE@ lowers u>õ	 
 ! %^PenU2Õ:0
 ! lowers u>õ	 
- %^PAL:0 %^PALNo:0 %^PALE:0 %^PALÄ:0 %^PALẸ:0 %^PALÂ:0 %^PALÕ:0   !!= * @CODE@ Palatalisation
+ %^PAL:0 %^PALNo:0 %^PALI:0 %^PALE:0 %^PALÄ:0 %^PALẸ:0 %^PALÂ:0 %^PALÕ:0   !!= * @CODE@ Palatalisation
 ! %^PenPAL:0 %^PenPALNo:0 %^PenPALE:0 %^PenPALÄ:0 %^PenPALẸ:0 %^PenPALÂ:0  
 !! Penultimate Palatalisation
 !%^PenPALÕ:0 %^PenPALÂ:0
@@ -365,6 +365,11 @@ Rules
 
  _ %^UltRmVow: ;
 !! -â
+  e: _ (:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+]  %^VV2V: ;
+!! ǩeʹtted+V+Ind+Prs+ConNeg: __cook/keittää__
+!!€ ǩeâ0tt%^VV2V%^VOWRaise%^PALI%^PAL
+!!€ ǩi0ʹtt0000
+
 
 "Vowel shortening ẹ:0"
 !! __@RULENAME@__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
@@ -645,13 +650,13 @@ Rules
 "Vowel raising e:i"
 !! __@RULENAME@__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
  e:i <=>
-  OnSetC _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWRaise: ;
+  OnSetC _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWRaise: ;
   OnSetC _ (%^1VOW:|e:) (u) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  BetweenStemAndHeight %^VOWRaise: ;
 
   OnSetC  e: _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWRaise: ;
 ! diphthong raising with e:i at onset - deriving +Ind+Prt+Pl3 in reäkkad > riâkku, veârrad > viõrru
 
- OnSetC  _ [ä:|â:] (u|i) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWRaise: ;
+ OnSetC  _ [ä:|â:] (u|i) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] (%^VV2V:)  %^VOWRaise: ;
 ! OnSetC  _ [ä:ẹ|ä:e|ä:â|ä:õ|â:õ|â:e ] (u) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  [%^VOWRaise:|%^VOWRaise: %^PALE:] ;
 !! reâugg+N+Sg+Ill
 !!€ reâugg%^VOWRaise%>u
@@ -1333,6 +1338,15 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
 
 !! !VOWELS TENSE vs LAX 2012-11-28
 
+"Vowels for â:i"
+!! __@RULENAME@__ -
+ â:i <=>
+  e:  _ (i|u) :ʹ [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+]  [%^VOWRaise: %^PALI:| Vow: Cns:* %^Pen: %^VOWRaise: %^Pen: %^PALI: ]  ;
+!! ǩeʹtted+V+Ind+Prs+ConNeg: __cook/keittää__
+!!€ ǩeâ0tt%^VOWRaise%^PALI%^PAL
+!!€ ǩiiʹtt000
+
+
 
 "Vowels for â:e"
 !! __@RULENAME@__ -
@@ -1357,6 +1371,9 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
   e:  _ (i|u) :ʹ [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+]  [%^PALE: |%^VOWRaise: %^PALE:| Vow: Cns:* %^Pen: [%^PALE:|%^VOWRaise: %^Pen: %^PALE:] ]  ;
 !!€ ǩeâ0sttes%^Pen%^PALE%^Pen%^PAL%^Pen%^XYY2XY
 !!€ ǩeeʹst0es000000
+!! ǩeʹtted+V+Ind+Prs+ConNeg: __cook/keittää__
+!!€ ǩeâ0tt%^PALE%^PAL
+!!€ ǩeeʹtt00
 
 "Even-syllabic nouns, for â:ẹ"
 !! __@RULENAME@__ - used in
