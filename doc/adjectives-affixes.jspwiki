@@ -44,6 +44,7 @@ CLASS 1 LOW VOWEL, NO PALATALIZATION NOMINALS
 * Yaml: __A-vaeaezhzh__
 
 
+
 CLASS 1 LOW VOWEL, PALATALIZATION, ILLATIVE IN U NOMINALS
 
 
@@ -135,6 +136,8 @@ CLASS
 
  * LEXICON A_VUOIVYS  vuõivâs:vuõivv
 
+ * LEXICON A_KUORMYS  kuõrmâs:kuõrmm
+
 
  * LEXICON A_KOAOAVAS  kååvas:kåvv
 
@@ -150,6 +153,8 @@ CLASS
 
 
  * LEXICON A_VEEIDAS  veeidas:veidd
+
+ * LEXICON A_PAEAELKAS  päälkas:pä%^1VOWlkkas
 
  * LEXICON A_CEAEGGAS   ceäggas:ceägˈg
 
@@ -290,6 +295,7 @@ determiner
 determiner
 
 determiner
+determiner
 
 
 
@@ -353,7 +359,6 @@ strong_geminate, long_vowel
 
 e.g. 
 e.g. +Use/NG+Sg+Loc+PxSg3
-e.g. +Sg+Loc+PxSg3 pp:p papstes
 
 
 
@@ -697,10 +702,6 @@ strong_geminate, long_vowel, no_palatalization, high_stem_vowel
  * +Der/Dimin:%^V2VV%^VOWRaise%> A-01_PIISSUZH ;   (9) Dim.N.Sg.Nom: piissuž
  * +Der/Dimin:%^V2VV%> A-01_PEESSAZH ;   (9) Dim.N.Sg.Nom: pẹẹssaž
 
-grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
- * :%^CC2CAllegro A-STEM-PX-ALLEGRO ;      pes»
-Sg_Loc_Px..
-
 
 
 
@@ -746,9 +747,6 @@ grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
  * +Der/Dimin:%^VOWRaise%^CC2C%> A-01_PIISSUZH ;	 (9) Dim.N.Sg.Nom: šuumuž
  * +Der/Dimin:%^CC2C%> A-01_PEESSAZH ;   (9) Dim.N.Sg.Nom: šoomaž
 
-grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
- * :%^VV2V%^CC2CAllegro A-STEM-PX-ALLEGRO ;  (10) šom»
-Sg_Loc_Px..
 
 
 
@@ -805,14 +803,35 @@ Ess_Px..., Sg_Ill..., N»A
  * +Der/Dimin:%^VOWRaise%^CCC2CC%> A-01_PIISSUZH ;   niâvvuž
  * +Der/Dimin:%^CCC2CC%> A-01_PEESSAZH ;   (9) Dim.N.Sg.Nom: neävvaž
 
- * :%^CCC2C A-STEM-PX-ALLEGRO ;  (10) neäv» CHECKME
-Sg_Loc_Px..
 
 
 
 
 
 
+
+similar_to: N_PLAAN
+gradation: no
+vowel_shift: no
+Is for nouns with ''-ast'' Loc
+ a-stems (Sg.Loc, Ess, Par).
+* Yaml: __N-pealdd__
+ * : A-02_A-STEM_SG-NOM ;	    		  kapteän
+Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
+
+ * : A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	  kapteän
+Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
+stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
+
+ * :%>a A-02_SG-ILL ;		  kapteän
+Sg_Ill
+
+ * : A-STEM-PX-STRENGTHEN ;            (5) kapteän
+Ess_Px..., Sg_Ill..., N»A
+
+ * :%>a A-02_ESS/PAR ;   	       		  kapteänan
+
+ * +Der/Dimin:%^XYY2XY%> A-01_PEESSAZH ;   (9) Dim.N.Sg.Nom: kapteänaž
 
 
 
@@ -1646,6 +1665,7 @@ CLASS 4 BISYLLABIC, LOW VOWEL, MONOPHTHONG, NO PALATALIZATION
 
 
 
+
  * LEXICON A-01_KOAOADDAS  kååddas:kåddas
 N_GEN2X3-NOM2X1
 * Yaml: __N-kååddas__
@@ -1890,7 +1910,6 @@ NumContLex="1.2"
 
 
 
-
  * LEXICON A-01_PRSPRC-VCC-AI  kåččai:kåččai
 * Yaml: __kachchai__
 * There are several stem types
@@ -2051,6 +2070,7 @@ Class 9 according to Feist 158
 * Yaml: __A-saemmlazh__
 säʹmmlaž:säʹmmlaž
 
+
 Diminutive derivations
 
 
@@ -2063,7 +2083,6 @@ Diminutive derivations
  * :že A-02_SG-ILL ;	 paappže
  * :že A-02_ESS/PAR ;	 	 paappžen
 
- * +Use/NG: HatY-STEM-PX-ALLEGRO ;  muõrstes
 
  * LEXICON A-02_MUORYZH-WITH-PAL    paaʹpp-
  * :%>e A-02_SG-ABE/ACC/GEN ;	 paaʹppe
@@ -2074,8 +2093,11 @@ Diminutive derivations
  * :%>e A-02_PL-OBL ;	     paaʹppei Merja differentiates from regular pl
  * +Use/NG: A-02_PL-OBL ;	     paaʹppi
 
- * : HatY-STEM-PX-ALLEGRO ;  muõʹrstes
 
+* Yaml: __N-muorazh__
+
+ * : HatY-STEM-PX-WEAKEN_LARGO ;  säʹmmlõõžž- Sg_Loc_PxSg1
+ * :%^PAL HatY-STEM-PX-WEAKEN_LARGO ;  säʹmmlõõʹžž- Sg_Loc_PxSg1
 
 
  * LEXICON A-01_PEESSAZH  piissuž:pẹẹss
