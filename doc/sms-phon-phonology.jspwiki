@@ -3,7 +3,6 @@
 
 !!!Introduction
 The rule file for Skolt Saami is divided into 5 main types:
-
 # Definitions
 # Consonant shift rules (tbw)
 # Vowel alternation rules
@@ -17,7 +16,7 @@ The rule file for Skolt Saami is divided into 5 main types:
 
  *   a b c d e f g h i j k l m n o p q r s t u v w x y z 
  *   A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
- *   ä å â õ       
+ *   ä å â õ      
  *   Ä Å Â Õ       
  *   č ǩ ǯ ǧ ž đ ǥ ʒ š ŋ					
  *   Č Ǩ Ǯ Ǧ Ž Đ Ǥ Ʒ Š Ŋ					
@@ -31,7 +30,7 @@ The rule file for Skolt Saami is divided into 5 main types:
 
 
 * MODIFIER LETTER PRIME: U+02B9 suprasegmental palatization
-* MODIFIER LETTER APOSTROPHE: U+02BC Syllable marker that appears in writing 
+* MODIFIER LETTER APOSTROPHE: U+02BC Syllable marker that appears in writing
 * MODIFIER LETTER VERTICAL LINE: U+02C8 as overlong consonant marker that does not appear in writing except for pedagogical purposes
 
 
@@ -41,13 +40,13 @@ Trigger symbols
 
  *  %^RmVow:0  for removing vowels e, â, a before final consonant in stem
  *  %^UltRmVow:0  for removing vowels e, â, a after final consonant in stem
- *  %^RmCns:0  for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta 
+ *  %^RmCns:0  for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta
  *  %^2VOW:0 %^3VOW:0 %^4VOW:0 %^5VOW:0  Vow triggers
 
  *  %^VOWLower:0  i>e, õ>â, â>ä, u>o, o>å
- *  %^VOWRaise:0  e>i, ä>e 
+ *  %^VOWRaise:0  e>i, ä>e
 
- *  %^U2Õ:0	  lowers u>õ	 
+ *  %^U2Õ:0	  lowers u>õ
  *  %^PAL:0 %^PALNo:0 %^PALI:0 %^PALE:0 %^PALÄ:0 %^PALẸ:0 %^PALÂ:0 %^PALÕ:0    Palatalisation
 Penultimate Palatalisation
  * %^PALK:0      causes k:ǩ and g:ǧ
@@ -56,7 +55,7 @@ Penultimate Palatalisation
  *  %^Â:0		 Indicates placement of â in stem
 
 CHARACTERISTIC BREAKDOWN 2015-02-17
- * %^VV2V:0         Shortens vowel 
+ * %^VV2V:0         Shortens vowel
  * %^V2VV:0 	 Lengthens vowel
  * %^CC2C:0 	 Shortens consonant
  * %^CC2CAllegro:0 	 Shortens consonant
@@ -72,7 +71,7 @@ CHARACTERISTIC BREAKDOWN 2015-02-17
  * %^VY2XYY:0	 Consonant cluster i/u to j/v
  * %^VYY2XYY:0	 Consonant cluster i/u to j/v
 
- * %^KKK2GG:0	 Geminate weakening 
+ * %^KKK2GG:0	 Geminate weakening
  * %^KKK2G:0	 Strong Geminate allegro
  * %^KK2GG:0	 Geminate weakening jokk:jooǥǥ
  * %^KK2GAllegro:0		 Geminate weakening	 in allegro pååss:påz
@@ -92,8 +91,6 @@ Lengthens consonant in penultimate syllable
 Vhss:VVus in penultimate syllable
 consonant cluster to Vowel and Geminate
 VVus:Vhss in penultimate syllable
-
-
 Extra strong to strong consonant cluster
 Extra strong to weak consonant cluster
 Extra Lengthens consonant cluster
@@ -132,10 +129,10 @@ Other vowel length and consonant length will be phased out
  *  %{E1%}:0  used with "kåʹmrded" to bow
  *  %{%ʹ%}:0  archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one.
  *  %{EÂ%}:e  archiform for ie:eâ variation
- *  %^IMPSG2:0	 
- *  %^INDPRSSG3:0   
+ *  %^IMPSG2:0	
+ *  %^INDPRSSG3:0  
  *  %^PenVow2a:0	 Changes penultimate vowel to a; e:a â:a
- *  %^FRICG:0	 
+ *  %^FRICG:0	
 
 Hyphen at compound word boundary
  * %{%-Ø%}:0  Zero versus hyphen in compounding
@@ -184,7 +181,7 @@ Penultimate consonant
 
 following morpheme or word boundary
 {{{
- * RBound = [(%^Hyphen: %-|%^NoHyphen:|%{%-Ø%}:) #:|.#.|%>|»|%-] ;  
+ * RBound = [(%^Hyphen: %-|%^NoHyphen:|%{%-Ø%}:) #:|.#.|%>|»|%-] ; 
 }}}
 
 
@@ -220,7 +217,7 @@ used in compounding Cmp/SgNom and Cmp/SgGen
 
 neutral to vowel height and backness
 {{{
- * NeutrHighBack = [(%^VOWLower:|%^VOWRaise:) ] ;  
+ * NeutrHighBack = [(%^VOWLower:|%^VOWRaise:) ] ; 
 }}}
 
 neutral to vowel length
@@ -229,7 +226,7 @@ neutral to consonant length
 }}}
 neutral to vowel and consonant length
 {{{
- * NeutrGrade = [VNeutrGrade |CNeutrGrade] ;  
+ * NeutrGrade = [VNeutrGrade |CNeutrGrade] ; 
 }}}
 
 
@@ -241,7 +238,7 @@ neutral to vowel and consonant length
 
 !!!Rules
 
-!!Vowel shortening rules 
+!!Vowel shortening rules
 
 
 
@@ -377,7 +374,7 @@ mättʼted+V+Inf: __teach/opettaa__
 
 __Vowel shortening ä:0__ - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
 
-__%{ʼØ%} for modifier letter apostrophe__ - 
+__%{ʼØ%} for modifier letter apostrophe__ -
 
 -ä
 
@@ -427,7 +424,7 @@ __Vowel raising o:u__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second
 
 
 
-__Vowel raising å:o__ - Adding 
+__Vowel raising å:o__ - Adding
 
 * __kåbll%^VOWRaise __
 * __kobll0 __
@@ -468,7 +465,7 @@ peigg+N+Sg+Ill
 
 
 
-__Vowel raising â:õ __ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
+__Vowel raising â:õ__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
 mââʹnn+N+Pl+Acc: __egg/muna__
 * __mââ0nn%^VOWRaise%^PAL%^CC2C%>id __
 * __mõõʹn0000%>id __
@@ -498,7 +495,7 @@ kuärŋŋad+V+Ind+Prt+Pl3
 * __*kuõrŋŋ0%>u __ (is not standard language)
 
 
-__Diphthong raising beginning with e:i ä:â__ - 
+__Diphthong raising beginning with e:i ä:â__ -
 reäkkad+V+Ind+Prt+Pl3
 * __reäk0k%^VOWRaise%^CC2CCC%>u __
 * __riâkˈk00%>u __
@@ -537,7 +534,7 @@ mäʹhssed+V+Ind+Prt+Sg3: __pay/maksaa__
 * __mä%^1VOWh0ss%^V2VV%^VOWRaise%^PAL%^XYY2VY%>i __
 * __maauʹs00000%>i __
 
-!LOWERING 
+!LOWERING
 
 
 
@@ -554,7 +551,7 @@ juʹrdded > joordam
 
 
 
-__Even syllabic verbs I, vowel lowering i:e__ - 
+__Even syllabic verbs I, vowel lowering i:e__ -
 viǯǯâd+V+Ind+Prs+Pl3 __fetch/noutaa__
 * __vi%^1VOW0ǯǯ%^VOWLower%^PAL%>e __
 * __ve0ʹǯǯ00%>e __
@@ -693,14 +690,14 @@ __ u å:õ__ - used in
 
 
 !Vowel Palatalization
-__diphthong allophonic realization in palatalization u å:e__ - deriving 
+__diphthong allophonic realization in palatalization u å:e__ - deriving
 {{{
 }}}
 * __puå0v0v%^PALE%^PAL%^CC2CCC%>e __
 * __pueʹvˈv000%>e __
 
 
-__diphthong allophonic realization in palatalization u å:ẹ__ - deriving 
+__diphthong allophonic realization in palatalization u å:ẹ__ - deriving
 
 !Vowel Lowering and Fronting
 
@@ -721,15 +718,15 @@ __Even syllabic verbs I, secondary vowel fronting with PAL u õ:e__ - deriving +
 * __kueʹsǩǩ000%>e __
 
 
-__Even syllabic verbs I, secondary u > v __ 
+__Even syllabic verbs I, secondary u > v __
 
 
 !RELATIVE VOWEL LENGTHENING
 
-vowel lengthening and consonant shortening, %^Pen: %^V2VV and %^CShort 
+vowel lengthening and consonant shortening, %^Pen: %^V2VV and %^CShort
 
 __Even syllabic verbs I, relative vowel lengthening %^1VOW:â__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
-šõddâd+V+Imprt+Sg3: 
+šõddâd+V+Imprt+Sg3:
 * __šõ%^1VOWdd%^V2VV%^VOWLower%>as __
 * __šââdd00%>as __
 
@@ -738,7 +735,7 @@ nââʹer+N+Sg+Nom _sleep_
 * __nââʹ00er000000 __
 
 
-__%^1VOW:ẹ relative vowel lengthening__ - 
+__%^1VOW:ẹ relative vowel lengthening__ -
 pess+N+Sg+Acc: __rifle/pyssy__
 * __pẹ%^1VOWss%^V2VV __
 * __pẹẹss0 __
@@ -908,7 +905,7 @@ piiutâs+N+Sg+Nom __clothing/vaate__
 * __piiut0âs0000 __
 
 
-__Even syllabic verbs,  for v>u__ - kueʹhtt 
+__Even syllabic verbs,  for v>u__ - kueʹhtt
 kueiʹt+Num+Sg+Gen __two/kaksi__
 * __kuâh0tt%^PALE%^PAL%^XYY2IY __
 * __kueiʹt0000 __
@@ -972,7 +969,7 @@ __Realization for â in a__ - used in
 * __ǩiõrggân%^PenVow2a __
 * __ǩiõrggan0 __
 
-!THE NON-ORTHOGRAPHIC SYLLABLE 
+!THE NON-ORTHOGRAPHIC SYLLABLE
 
 
 __Loss of ʼ when preceded by vowel__ - This is a temporary solution to  "ʼ" in võʹllʼjed
@@ -1029,7 +1026,7 @@ tääʹss+N+Sg+Gen: __level/taso__
 * __seäh0tter%^Pen%^PALE%^Pen%^PAL%^Pen%^XYY2VY __
 * __seeuʹt0er000000 __
 The left context allows for:
-Vowel shortening, and j/v > Vow 
+Vowel shortening, and j/v > Vow
 
 __d:đ in weak grade__ - used in
 * __ǩeä0dgg%^VOWRaise%^PALẸ%^PAL%^XYY2XY __
@@ -1040,7 +1037,7 @@ __Even-syllabic verbs I, Palatalization of g:ǧ__ - used in
 reäiʹǧǧ+N+Sg+Nom: __hole/reikä__
 * __reäi0gg%^PAL __
 * __reäiʹǧǧ0 __
-šäʹŋǧǧ+N+Sg+Com: __pasty/piirakka 
+šäʹŋǧǧ+N+Sg+Com: __pasty/piirakka
 * __šä%^1VOW0ŋgg%^V2VV%^VOWRaise%^PAL%^XYY2XY%>in __
 * __šaaʹŋǧ00000%>in __
 vueʹlǧǧed+Use/NG+V+Ind+Prs+Pl3 __leave/lähteä__
@@ -1106,10 +1103,10 @@ prääʹzniǩ+N+Sg+Ill: __celebration/juhla__
 !Weakening Consonant Cluster
 
 dealing with relative length changes
-mõõnnâd : mõʹnne : mõõn 
+mõõnnâd : mõʹnne : mõõn
 
 
-__Even syllabic verbs I, cg m:0__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg, 
+__Even syllabic verbs I, cg m:0__ - used with  +Imp+Sg2, +Ind+Prs+ConNeg,
 oolmaž+N+Sg+Nom: __person/henkilö__
 * __o%^1VOWlmm%^V2VV%^XYY2XY%>až __
 * __oolm000%>až __
@@ -1176,7 +1173,7 @@ juʹrdded+V+Ind+Prs+Sg1 __think__
 * __ju%^1VOWrdd%^V2VV%^VOWLower%^XYY2XY%>am __
 * __joord0000%>am __
 
-uʹvdded+V+Ind+Prs+4: 
+uʹvdded+V+Ind+Prs+4:
 * __u%^1VOWv0dd%^PAL%^XYY2VY%>et __
 * __u0uʹd000%>et __
 
@@ -1215,13 +1212,13 @@ __z:0__ - used in
 * __ǩeâsttez%^PenVow2a%^RmCns __
 * __ǩeâstta000 __
 
-__Even syllabic verbs I, cg for đ __ - used with  ǩiđđ:ǩiiđ
+__Even syllabic verbs I, cg for đ__ - used with  ǩiđđ:ǩiiđ
 * __ǩi%^1VOWđđ%^V2VV%^CC2C __
 * __ǩiiđ000 __
 * __o%^1VOWđđâs%^Pen%^V2VV%^Pen%^CC2C __
 * __oođ0âs0000 __
 
-__Even syllabic verbs I, cg for r __ - used with  võrr:võõr
+__Even syllabic verbs I, cg for r__ - used with  võrr:võõr
 * __võ%^1VOWrr%^V2VV%^CC2C __
 * __võõr000 __
 * __paarr%^CC2C __
@@ -1231,7 +1228,7 @@ __Even syllabic verbs I, cg for r __ - used with  võrr:võõr
 
 
 __Even syllabic verbs I, cg for l__ - used with  vuʹvll+N+Sg+Gen: vuuʹl
-deriving 
+deriving
 * __to%^1VOWll%^V2VV%^CC2C __
 * __tool000 __
 * __stä%^1VOW0llj%^V2VV%^PAL%^CC2C __
@@ -1240,7 +1237,7 @@ pääʹljes+N+Sg+Nom: __path/polku__
 * __pä%^1VOW0lljes%^Pen%^V2VV%^Pen%^PAL%^Pen%^CC2C __
 * __pääʹl0jes000000 __
 
- vuʹvll+N+Sg+Gen: 
+ vuʹvll+N+Sg+Gen:
 * __vu%^1VOWv0ll%^PAL%^XYY2VY __
 * __vu0uʹl000 __
 
@@ -1330,8 +1327,8 @@ used with
 
 
 
-__Even syllabic verbs I, Voicing š:ž __ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
-lookkmõš+N+Sg+Gen 
+__Even syllabic verbs I, Voicing š:ž__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
+lookkmõš+N+Sg+Gen
 * __lookkmõ%^1VOWš%{XC%}%^V2VV%^K2GG __
 * __lookkmõõžž00 __
 with allegro
@@ -1363,14 +1360,13 @@ __Even syllabic verbs I, Voicing č:j__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, doub
 * __pååss%^VV2V%^KK2GAllegro»škuätt __
 * __på0z000»škuätt __
 
-__Even syllabic verbs I, Voicing after long vowel or diphthong s:z s:z __ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
+__Even syllabic verbs I, Voicing after long vowel or diphthong s:z s:z__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
 tääʹss+N+Sg+Gen: __level/taso__
 * __tää0ss%^PAL%^KK2GG __
 * __tääʹzz00 __
 * __mättʼtõ%^1VOWs%{XC%}%^V2VV%^K2GG __
 * __mättʼtõõzz00 __
 with allegro
-
 
 cieʹǩǩes+N+Sg+Gen: __trick, type of ear mark/tikki, pykälä__
 * __*ciâkˈkes%^Pen%^VOWLower%^PenVow2a%^VC __ (is not standard language)
@@ -1398,7 +1394,7 @@ piiutâs+N+Sg+Nom __clothing/vaate__
 * __piiut0âs0000 __
 
 
-__Even syllabic verbs I, third consonant loss __ - lgg:lǥ, Vow Ca Cx Cx:0, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants following consonant at coda that become single consonants in gradation
+__Even syllabic verbs I, third consonant loss__ - lgg:lǥ, Vow Ca Cx Cx:0, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants following consonant at coda that become single consonants in gradation
 
 
 
@@ -1425,7 +1421,7 @@ __Consonant loss ŋ:0__ - used in
 
 
 
-__Even syllabic verbs I, t>đ __ - tt:đ
+__Even syllabic verbs I, t>đ__ - tt:đ
 ǩiõtt+N+Sg+Loc+PxSg1 __hand,arm/käsi__
 * __ǩiõ0tt%^Allegro%^PAL%^CC2CAllegro%>stan __
 * __ǩiõʹđ0000%>stan __
@@ -1434,7 +1430,7 @@ autt+N+Pl+Nom __car/auto__
 * __*aauđ000 __ (is not standard language)
 
 
-__Even syllabic nouns I, p>v __ - pp:v
+__Even syllabic nouns I, p>v__ - pp:v
 * __ǩiâpp%^CC2C __
 * __ǩiâv00 __
 * __heäpˈpaš%^Pen%^CCC2C __
@@ -1476,7 +1472,7 @@ påǥsted+V+Inf
 * __på0ǥ00st00000%>ed __
 
 
-__Even syllabic verbs I, lgg>lǥ __
+__Even syllabic verbs I, lgg>lǥ__
 * __ǩeâlggal%^Pen%^XYY2XY __
 * __ǩeâlǥ0al00 __
 * __aaggâst%^Pen%^VV2V%^Pen%^CC2C%^RmVow%>ed __
@@ -1485,7 +1481,7 @@ vueʹlǧǧed+V+Ind+Prs+Sg2
 * __vuâlgg%^XYY2XY%>ak __
 * __vuâlǥ00%>ak __
 
-__even syllabic verbs I, 'lgg>'lj __ - used in
+__even syllabic verbs I, 'lgg>'lj__ - used in
 vueʹlǧǧed+V+Ind+Prt+Pl1
 * __vuâ0lgg%^VOWRaise%^PAL%^XYY2XY%>im __
 * __vuõʹlj0000%>im __
@@ -1501,7 +1497,7 @@ reäiʹǧǧ+N+Pl+Nom
 !!Rules for cleaning up and composing end result
 
 * Strengthening Consonant Cluster
-* V shortening and C lengthening 
+* V shortening and C lengthening
 * %^C2CC is generally used in conjunction with a preceding %^VV2V
 * In verbs this will be observed in finite forms
 * In derivational morphology, e.g. -škuetted, this is not the case
@@ -1578,7 +1574,7 @@ lookkmõš+N+Sg+Gen
 !!CONSONANT QUALITY CHANGE
 
 
-!Pedagogical X3 length mark after diphthongs in vertical line ˈ 
+!Pedagogical X3 length mark after diphthongs in vertical line ˈ
 
 
 
@@ -1596,9 +1592,9 @@ b c č ǯ d đ g ǧ k ǩ l m n p r s š t v also htˈt nˈnj
 
 
 !Removing X3 length mark
-__Removing Consonant X3 length mark after diphthong in vertical line ˈ LEFT ARROW__ - deriving 
+__Removing Consonant X3 length mark after diphthong in vertical line ˈ LEFT ARROW__ - deriving
 b c č ǯ d đ g ǧ k ǩ l m n p r s š t v also htˈt nˈnj
-{{{ 
+{{{
 }}}
 
 
