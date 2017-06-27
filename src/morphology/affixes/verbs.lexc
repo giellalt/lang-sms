@@ -1990,6 +1990,54 @@ LEXICON V0_SARNNAD !!= * @CODE@ särnnad:särnn
 !! (10) Allegro for incoative: särn»
 :%^XYY2XY FOR-ALLEGRO-DEVERBAL-DERIVATION ;
 
+LEXICON V_PEITTAD !!= * @CODE@ peittad:peitt
++V: V0_PEITTAD ;
+LEXICON IV_PEITTAD !!= * @CODE@ peittad:pẹ%^1VOWitt
++V+IV: V0_PEITTAD ;
+!LEXICON TV_PEITTAD !!= * @CODE@ peittad:pẹ%^1VOWitt
+!+V+TV: V0_PEITTAD ;
+LEXICON V0_PEITTAD !!= * @CODE@ peittad:pẹ%^1VOWitt
+
+! ** Yaml: __V-peittad__
+! In the lexicon ''@LEXNAME@''
+! peittad:peitt
+! 1. The Ind.Prs.Sg3 form is a single syllable
+! 1.2 The infinitive ends in ad
+! 1.2.1 Has gradation
+! 1.2.1.1 Monophthong 
+! Stem is strong
+! one vowel
+! FORMS
+
+: VSUF-INF_AD ; !!= * @CODE@ (1)  Inf: peittad
+!! V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Ind+Prt+ConNeg
+!! Imprt+Pl1, Imprt+Pl2
+!! Actio, ActEss, PrsPrc, NomAct in MOsh
+
+: VSUF-IND-PRS-SG3_AD ; !!= * @CODE@ (2)  Ind.Prs.Sg3: peitt
+!! +V+Ind+Prs+Sg3
+
++Ind+Prs+Pl3:%>a K ; !!= * @CODE@ (3)  Ind.Prs.Pl3: peitta
+!! +Ind+Prs+Pl3
+
+: VSUF-IND-PRT-PL3_AD ; !!= * @CODE@ (4) Ind.Prt.Pl3: peittu
+!! +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
+
+
+:%^V2VV%^XYY2XY VSUF-I-POTKOND_AD ; !!= * @CODE@ (5-7) +Imprt+Sg2: peeit
+!! Imprt+ConNeg, Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, Ind+Prs+Sg1, Ind+Prs+Sg2
+!! +Ger, +VAbess, +Pot, +Cond, +Imprt+Sg3
+
+: VSUF-IMPRT-CONNEGII_AD ; !!= * @CODE@ (8) Imprt.13.ConNeg: peittu
+!! Imprt+ConNegII, Pass+PrfPrc
+
+: VSUF-IMPRT-PL3_AD ; !!= * @CODE@ (9) peittaz
+!! +Imprt+Pl3
+
+!! (10) Allegro for incoative: peit»
+:%^XYY2XY FOR-ALLEGRO-DEVERBAL-DERIVATION ;
+
+
 LEXICON V_POAHSSAD !!= * @CODE@ påhssad:påhss
 +V: V0_POAHSSAD ;
 !LEXICON IV_POAHSSAD !!= * @CODE@ påhssad:påhss
@@ -4748,8 +4796,11 @@ LEXICON V0_TEYPSTED !!= * @CODE@ teâpsted:teâppast
 ! * Yaml: __V-teapsted__
 :%^PenVow2a%^PALNo VSUF-VUEJTED-IND-PRS-SG3 ; ! teâppast
 :%^PALNo VSUF-VUEJTED-IND-PRS-CONNEG ;        ! teâppast
-:%^Pen%^CC2C%^RmVow VSUF-VUEJTED-ELSE ;  ! teâpsted
-+Use/NG:%^RmVow VSUF-VUEJTED-ELSE ;    ! teâppsted
+:%^Pen%^CC2CAllegro%^RmVow%^PALK VSUF-VUEJTED-ELSE-PAL ; ! teâpsted reämšǩ-
+:%^Pen%^CC2CAllegro%^RmVow VSUF-VUEJTED-ELSE-NOPAL ;	 ! teâpsted reämšk-
++Use/NG:%^RmVow%^PALK VSUF-VUEJTED-ELSE-PAL ; ! teâppsted reämmšǩ-
++Use/NG:%^RmVow VSUF-VUEJTED-ELSE-NOPAL ;	 ! teâppsted reämmšk-
+
 
 LEXICON V_JEAELSTED !!= * @CODE@ jeälsted:jeälast
 +V: V0_JEAELSTED ;
