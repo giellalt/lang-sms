@@ -66,6 +66,28 @@ Alphabet
 %{XC%}:z
 %{XC%}:ž
 
+! for vowel length
+%{õuØ%}:0
+%{ouØ%}:0
+%{âõØ%}:0
+%{ẹiØ%}:0
+%{äaØ%}:0
+%{äåØ%}:0
+%{eiØ%}:0
+%{åoØ%}:0
+%{ẹeiØ%}:0
+! for vowel height, by default vowels are low.
+%{õu%}:õ
+%{ou%}:o
+%{âõ%}:â
+%{ẹi%}:ẹ
+%{äa%}:ä
+%{äå%}:ä
+%{ei%}:e
+%{åo%}:å
+%{ẹei%}:ẹ
+%{âõe%}:â
+%{âõäe%}:â
 
 !! !! Trigger symbols
 %^Pen:0 !!= * @CODE@ for combinations 2015-09-28 Miikka
@@ -630,7 +652,14 @@ Rules
 !!€ šoomm%^VV2V%^VOWRaise%>u
 !!€ šu0mm00%>u
 
-
+"Vowel raising %{õu%}:u"
+!! __@RULENAME@__ - Adding
+ %{õu%}:u <=>
+       %{õu%}: _ (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWRaise:  ;
+       OnSetC  _ (%{õu%}:|%{õuØ%}:) (i|u) (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  BetweenStemAndHeight %^VOWRaise: RBound ;
+!! tõlvvad+V+Pass+PrfPrc: 
+!!€ t%{õu%}%{õuØ%}lvv%^VOWRaise%>um
+!!€ tu0lvv0%>um
 
 "Vowel raising å:o"
 !! __@RULENAME@__ - Adding
@@ -1149,6 +1178,12 @@ OnSetC u: _   (ʹ:|0:ʹ) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|r d d:]  %^VOWLo
  OnSetC õ _ h: (ʹ:|0:ʹ) Cns:+ %^V2VV: BetweenVowHeightAndConsGrade %^XYY2VY: ;
 !!€ sõ%^1VOWhss%^V2VV%^XYY2VY
 !!€ sõõus000
+
+"relative vowel lengthening %{õuØ%}:õ"
+!! __@RULENAME@__
+ %{õuØ%}:õ <=>
+     OnSetC %{õu%}:õ _ (u:|i:) (ʹ:|0:ʹ)  Cns:+ (%{XC%}:) %^V2VV: ;
+
 
 
 "Even syllabic verbs I, relative vowel lengthening %^1VOW:ä"
