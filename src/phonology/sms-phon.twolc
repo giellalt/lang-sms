@@ -101,18 +101,13 @@ Alphabet
 
  %^VOWLower:0 !!= * @CODE@ i>e, õ>â, â>ä, u>o, o>å
  %^VOWRaise:0 !!= * @CODE@ e>i, ä>e
-! %^PenVOWRaise:0
 ! e>i, ä>e
-! %^PenVOWLower:0
  ! i>e, õ>â, â>ä, u>o, o>å
 
  %^U2Õ:0	 !!= * @CODE@ lowers u>õ
-! %^PenU2Õ:0
 ! lowers u>õ
  %^PAL:0 %^PALNo:0 %^PALI:0 %^PALE:0 %^PALÄ:0 %^PALẸ:0 %^PALÂ:0 %^PALÕ:0   !!= * @CODE@ Palatalisation
-! %^PenPAL:0 %^PenPALNo:0 %^PenPALE:0 %^PenPALÄ:0 %^PenPALẸ:0 %^PenPALÂ:0
 !! Penultimate Palatalisation
-!%^PenPALÕ:0 %^PenPALÂ:0
 %^PALK:0     !!= * @CODE@ causes k:ǩ and g:ǧ
 
  %^VC:0         !!= * @CODE@ Voicing s:z š:ž
@@ -135,6 +130,8 @@ Alphabet
 %^VY2XYY:0	!!= * @CODE@ Consonant cluster i/u to j/v
 %^VYY2XYY:0	!!= * @CODE@ Consonant cluster i/u to j/v
 
+%^KK2ZERO:0   !!= * @CODE@ nââʹer
+%^KKK2ZERO:0      !!= * @CODE@  jeeʹel
 %^KKK2GG:0	!!= * @CODE@ Geminate weakening
 %^KKK2G:0	!!= * @CODE@ Strong Geminate allegro
 %^KK2GG:0	!!= * @CODE@ Geminate weakening jokk:jooǥǥ
@@ -144,49 +141,7 @@ Alphabet
 
 %{ʼØ%}:0		!!= * @CODE@ used between l, n, j and subsequent j and elsewhere
 
-!%^PenVV2V:0
-!! Shortens vowel in penultimate syllable
-!%^PenV2VV:0
-!! Lengthens vowel in penultimate syllable
-!%^PenCC2C:0
-!! Shortens consonant in penultimate syllable
-!%^PenCCC2C:0
-!! Extra strong to weak consonant in penultimate syllable
-!%^PenCCC2CC:0
-!! Extra strong to strong consonant in penultimate syllable
-!%^PenCC2CCC:0
-!! Extra Lengthens consonant in penultimate syllable
-!%^PenC2CC:0
-!! Lengthens consonant in penultimate syllable
-!%^PenC2CCC:0
-!! Lengthens consonant in penultimate syllable
-!%^PenXYY2VY:0
-!! Vhss:VVus in penultimate syllable
-!%^PenXYY2VYY:0
-!! consonant cluster to Vowel and Geminate
-!%^PenVY2XYY:0
-!! VVus:Vhss in penultimate syllable
-!!
-!%^PenXYY2XY:0
-!!
-!%^PenXYYY2XYY:0
-!! Extra strong to strong consonant cluster
-!%^PenXYYY2XY:0
-!! Extra strong to weak consonant cluster
-!%^PenXYY2XYYY:0
-!! Extra Lengthens consonant cluster
-!%^PenKKK2ZERO:0
-!! Geminate weakening jeeʹel
- %^KKK2ZERO:0   !! FIXME
- %^KK2ZERO:0   !! nââʹer
-!%^PenKKK2GG:0
-!! Geminate weakening
-!%^PenKK2GG:0
-!! Geminate weakening jokk:jooǥǥ
-!%^PenGG2KK:0
-!! Geminate strengthening
 
-! %^PenAllegro:0
 !! This introduces vertical bar after diphth before consonants
  %^Allegro:0	    !!= * @CODE@ This introduces vertical bar after diphth before consonants
 
@@ -203,7 +158,6 @@ Alphabet
  %^St2XSt:0	!!= * @CODE@ Causes strengthening from strong to extra strong
 
 !! Other vowel length and consonant length will be phased out
- %^VOWSH:0	  !!= * @CODE@
  %^VOWXSH:0	  !!= * @CODE@ Extra shortens vowel in relation to consonant
  %^VOWXL:0    !!= * @CODE@ Extra lengthens vowel in relation to consonant in nouns, for example
  %^CXLong:0 %^CLong:0 %^CShort:0 !!= * @CODE@ Lengthening, shortening
@@ -1560,7 +1514,6 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ) t t: BetweenStemAndConsGrade %^XYY2IY: ;
 !!€ meâ0lkk%^VOWRaise%^PALE%^PAL%^CC2C
 !!€ mieʹlǩ00000
  Vow: (%^1VOW:) (ʹ:|0:ʹ)        _ (ˈ:|:ˈ) [k: |%{XC%}:] BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CC2CCC:|%^CCC2CC:|%^C2CC:) RBound ;
-! Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:)     _ [k: |%{XC%}:] (%^VV2V:|%^VOWSH: (%^CLong:)) NeutrHighBack (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: RBound ;
   Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:) k: (ˈ:|:ˈ) _   BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CC2CCC:|%^CCC2CC:) RBound ;
   Vow: (%^1VOW:) (ʹ:|0:ʹ) (Cns:) k: (ˈ:|:ˈ) _  Vow: Cns:* PenBetweenStemAndPALNo (%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:) %^Pen: %^PAL: (%^Pen: %^CC2CCC:|%^Pen: %^CCC2CC:) RBound ;
 
