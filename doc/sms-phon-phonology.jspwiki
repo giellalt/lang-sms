@@ -71,6 +71,8 @@ CHARACTERISTIC BREAKDOWN 2015-02-17
  * %^VY2XYY:0	 Consonant cluster i/u to j/v
  * %^VYY2XYY:0	 Consonant cluster i/u to j/v
 
+ * %^KK2ZERO:0    nââʹer
+ * %^KKK2ZERO:0        jeeʹel
  * %^KKK2GG:0	 Geminate weakening
  * %^KKK2G:0	 Strong Geminate allegro
  * %^KK2GG:0	 Geminate weakening jokk:jooǥǥ
@@ -80,26 +82,6 @@ CHARACTERISTIC BREAKDOWN 2015-02-17
 
  * %{ʼØ%}:0		 used between l, n, j and subsequent j and elsewhere
 
-Shortens vowel in penultimate syllable
-Lengthens vowel in penultimate syllable
-Shortens consonant in penultimate syllable
-Extra strong to weak consonant in penultimate syllable
-Extra strong to strong consonant in penultimate syllable
-Extra Lengthens consonant in penultimate syllable
-Lengthens consonant in penultimate syllable
-Lengthens consonant in penultimate syllable
-Vhss:VVus in penultimate syllable
-consonant cluster to Vowel and Geminate
-VVus:Vhss in penultimate syllable
-Extra strong to strong consonant cluster
-Extra strong to weak consonant cluster
-Extra Lengthens consonant cluster
-Geminate weakening jeeʹel
-FIXME
-nââʹer
-Geminate weakening
-Geminate weakening jokk:jooǥǥ
-Geminate strengthening
 
 This introduces vertical bar after diphth before consonants
  *  %^Allegro:0	     This introduces vertical bar after diphth before consonants
@@ -117,7 +99,6 @@ Gradation triggers 2015.01.23
  *  %^St2XSt:0	 Causes strengthening from strong to extra strong
 
 Other vowel length and consonant length will be phased out
- *  %^VOWSH:0	  
  *  %^VOWXSH:0	   Extra shortens vowel in relation to consonant
  *  %^VOWXL:0     Extra lengthens vowel in relation to consonant in nouns, for example
  *  %^CXLong:0 %^CLong:0 %^CShort:0  Lengthening, shortening
@@ -422,7 +403,10 @@ __Vowel raising o:u__ - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second
 * __šoomm%^VV2V%^VOWRaise%>u __
 * __šu0mm00%>u __
 
-
+__Vowel raising %{õu%}:u__ - Adding
+tõlvvad+V+Pass+PrfPrc: 
+* __t%{õu%}%{õuØ%}lvv%^VOWRaise%>um __
+* __tu0lvv0%>um __
 
 __Vowel raising å:o__ - Adding
 
@@ -742,7 +726,9 @@ pess+N+Sg+Acc: __rifle/pyssy__
 viǯǯâd+V+Imprt+Sg2 __fetch/noutaa__
 * __vi%^1VOWǯǯ%^V2VV%^VOWLower%>as __
 * __vẹẹǯǯ00%>as __
-
+eelas+N+Sg+Nom:
+* __ẹ%^1VOWllas%^Pen%^V2VV%^Pen%^CC2C __
+* __ẹẹl0as0000 __
 
 __Even syllabic verbs I, relative vowel lengthening %^1VOW:e__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
 * __čââʹlmtẹ%^1VOW0m%^V2VV%^PAL __
@@ -785,6 +771,9 @@ __Even syllabic verbs I, relative vowel lengthening %^1VOW:õ__ - deriving +V+In
 * __mättʼtõõzz00 __
 * __sõ%^1VOWhss%^V2VV%^XYY2VY __
 * __sõõus000 __
+
+__relative vowel lengthening %{õuØ%}:õ__
+
 
 
 __Even syllabic verbs I, relative vowel lengthening %^1VOW:ä__ - deriving +V+Inf in TIETTED: uudd > uʹvdded
