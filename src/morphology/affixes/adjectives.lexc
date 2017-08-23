@@ -16,25 +16,22 @@ LEXICON A-ATTR_
 LEXICON A-ATTR_ys
 +A+Attr:%>âs # ;
 +A+Comp+Attr:»ab # ;
-+A+Superl+Attr:»mõs # ;
 +A+Comp:»ab A-01_AANAR ;
-+A+Superl:»mõs A-01_SAJOS ;
+A_IS_ADJ-DER/SUPERL_mws ;
 +A:%>âs A2N-VUOTT ;
 
 LEXICON A-ATTR_as
 +A+Attr:%>as # ;
 +A+Comp+Attr:»ab # ;
-+A+Superl+Attr:»mõs # ;
 +A+Comp:»ab A-01_AANAR ;
-+A+Superl:»mõs A-01_SAJOS ;
+A_IS_ADJ-DER/SUPERL_mws ;
 +A:%>as A2N-VUOTT ;
 
 LEXICON A-ATTR_es
 +A+Attr:%>es # ;
-+A+Superl+Attr:»mõs # ;
 +A: ADJ-DER/COMP_ab ; !!= * @CODE@ This has a Comp+Attr
 !+A+Comp:»ab A-01_AANAR ;
-+A+Superl:»mõs A-01_SAJOS ;
+A_IS_ADJ-DER/SUPERL_mws ;
 +A:%>es A2N-VUOTT ;
 
 
@@ -63,11 +60,15 @@ LEXICON A_MUORR !!= * @CODE@ muõrr:muõrr
 :%^CC2C A-ATTR_ys ;
 +A: A-01_MUORR ;
 
+LEXICON A_NUORR !!= * @CODE@ nuõrr:nuõrr
++A+Attr: # ;
++A: A-01_MUORR ;
+
 LEXICON A_KUOCC !!= * @CODE@ kuõcc:kuõcc
 +A+Attr:%^KK2GG%>âs # ;
 +A+Comp+Attr:%^KK2GG%>»j»ab # ;
-+A+Superl+Attr:%^KK2GG%>»j»ummus # ;
 +A+Comp:%^KK2GG%>%{ʼØ%}j»ab A-01_AANAR ;
++A+Superl+Attr:%^KK2GG%>»j»ummus # ;
 +A+Superl:%^KK2GG%>%{ʼØ%}j ADJ-DER/SUPERL_ummus ;
 +A: A-01_LUOSS ;
 
@@ -112,8 +113,8 @@ LEXICON A_VAEAEZHZH
 LEXICON A_KHEAEHN
 : A-ATTR_as ;
 +A+Comp+Attr:»ab # ;
-+A+Superl+Attr:»mõs # ;
 +A+Comp:»ab A-01_AANAR ;
++A: A-SUPERL_mos ;
 +A: A-01_KAPTEAEN ;
 
 
@@ -460,6 +461,14 @@ LEXICON A_KHEEQLES  !!= * @CODE@ ǩeeʹles:ǩeâlˈl
 
 
 LEXICON A_PUAQRES  !!= * @CODE@ puäʹres:puärˈr
++A+Attr:%^PAL%^CCC2C%>es ENDLEX ;
++Err/Orth+A+Attr:%^PAL ENDLEX ;
++A:s ADJ-DER/COMP_kwlmmsab ;
++A:s ADJ-DER/SUPERL_ummus ;
++A:es A-01_PUAQRES ; !!= * @CODE@   puäʹres:puärˈres
++A:%^PAL%^CCC2C%>es A2N-VUOTT ;
+
+LEXICON A_VUAQMES  !!= * @CODE@ vuäʹres:vuärˈr
 +A+Attr:%^PAL ENDLEX ;
 +A:s ADJ-DER/COMP_kwlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
@@ -749,8 +758,8 @@ LEXICON ADJ-DER/COMP_kwlmmsab
 +Use/SpellNoSugg+Use/NG+Comp:»ubu A-02_ESS/PAR ;
 
 LEXICON A_IS_ADJ-DER/SUPERL_mws
-+A+Superl+Attr:»mõs # ;
-+A+Superl:»mõs A-01_SAJOS ;
++A+Superl+Attr:»mõ%^1VOWs # ;
++A+Superl:»mõ%^1VOWs A-01_SAJOS ;
 
 LEXICON A_IS_ADJ-DER/SUPERL_ummus
 +A: ADJ-DER/SUPERL_ummus ;
@@ -774,8 +783,8 @@ LEXICON ADJ-DER/SUPERL_ummus
 
 
 !LEXICON AdjDerSuperl-mos
-!!+Der/mõs+Superl:»mõs # ; 
-!+Superl:»mõs # ; 
+!!+Der/mõs+Superl:»mõ%^1VOWs # ; 
+!+Superl:»mõ%^1VOWs # ; 
 
 !LEXICON AdjDerSuperl-mus
 !!+Der/mus+Superl:»mus # ; 
@@ -8507,7 +8516,7 @@ LEXICON A-02_PL-ABE
 !2016-12-05-NotUsed!LEXICON A20
 !2016-12-05-NotUsed!+A+Pred+Pl: # ; 
 !2016-12-05-NotUsed!+A+Comp:»ab # ; 
-!2016-12-05-NotUsed!+A+Superl:»mõs # ; 
+!2016-12-05-NotUsed!+A+Superl:»mõ%^1VOWs # ; 
 
 !2016-12-05-NotUsed!LEXICON A30
 !2016-12-05-NotUsed!!+A: # ; same form
