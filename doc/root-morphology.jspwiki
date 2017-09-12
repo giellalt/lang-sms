@@ -721,11 +721,11 @@ Symbols that need to be escaped on the lower side (towards twolc):
 
 The Usage extents are marked using following tags:
 
- *  +Err/Orth       substandard, not in normative fst
+ *  +Err/Orth          substandard, not in normative fst
  * __+Err/Lex__ substandard, not in normative fst, no normative lemma
  * __+Err/DerSub__ substandard for derivation, not in normative fst, no normative lemma
  * __+Err/CmpSub__ substandard for compounding, not in normative fst (wrong form or POS in first part)
- * __+Err/NoHyph__ substandard for compounding, not in normative fst (needs hyph)
+ * __+Err/MissingHyph__ substandard for compounding, not in normative fst (needs hyph)
  * __+Err/Hyph__ substandard for compounding, not in normative fst (should have no hyphen)
  * __+Err/SpaceCmp__ used for compounds written apart - only retained in the HFST Grammar Checker disambiguation analyser
  * __+Err/Spellrelax__ used to tag spellrelaxed typos (tag is inserted via flag diacritics)
@@ -736,8 +736,8 @@ The Usage extents are marked using following tags:
  * __ +Use/Circ        __ circular paths (old ^C^)
  * __ +Use/CircN       __ circular paths for the numerals (old ^N^)
  * __ +Use/NG          __ not-generate, for ped generation isme-ped.fst
- * __ +Largo		  __ largo variant instead of allegro saaǥǥstõõllâd vs saǥstõõllâd
- * __ +Allegro	__ never last element of compound words
+ * __ +Largo	          __ largo variant instead of allegro saaǥǥstõõllâd vs saǥstõõllâd
+ * __ +Allegro         __ never last element of compound words
 
 Compounding
  * __+Cmp/SplitR	__ This to take care of Oahpo- ja dutkandept - want this in speller Remainder is found to the right
