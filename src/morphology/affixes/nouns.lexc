@@ -7161,7 +7161,7 @@ LEXICON NMN_CYYQ33EL !!= * @CODE@ kääʹlles:källes
 :%^RmVow PL-OBL ;					! câʒʒli
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ câʒʒl-
 
-LEXICON N_KAAQLLES !!= * @CODE@ kääʹlles:källes
+LEXICON N_KAAQLLES !!= * @CODE@ kääʹlles:kä%^1VOW%{ʹØ%}lles
 +N: NMN_KAAQLLES ;
 LEXICON NMN_KAAQLLES !!= * @CODE@ kääʹlles:källes
 ! 3.e.diphth.gem
@@ -7181,7 +7181,7 @@ LEXICON NMN_KAAQLLES !!= * @CODE@ kääʹlles:källes
 :%^RmVow PL-OBL ;					! källsi
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ källs-
 
-LEXICON N_OAQVES !!= * @CODE@ ååʹves:å%^1VOWvves
+LEXICON N_OAQVES !!= * @CODE@ ååʹves:å%^1VOW%{ʹØ%}vves
 +N: NMN_OAQVES ;
 LEXICON NMN_OAQVES !!= * @CODE@ ååʹves:å%^1VOWvves
 ! 3.e.diphth.gem
@@ -7413,9 +7413,30 @@ LEXICON NMN_KHEEQSTES !!= * @CODE@ ǩeeʹstes:ǩeâsttes
 :%^RmVow PL-OBL ;					! ǩeâsttsi
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
-LEXICON N_CHUEAQCKHES !!= * @CODE@ čueʹcǩes:čuäckkes
-+N: NMN_CHUEAQCKHES ;
-LEXICON NMN_CHUEAQCKHES !!= * @CODE@ čueʹcǩes:čuäckkes
+LEXICON N_VIEQLPES !!= * @CODE@ vieʹlpes:ǩeâlppes
++N: NMN_VIEQLPES ;
+LEXICON NMN_VIEQLPES !!= * @CODE@ vieʹlpes:ǩeâlppes
+! 3.e.diphth.gem
+! gradation: yes
+!   Extra strong grade: Else
+!   Weak grade: Sg.Nom
+! Diphthong
+! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
+! Stem vowel: e
+!! * Yaml: __N-veelpes__
+:%^Pen%^PALE%^Pen%^PAL%^Pen%^XYY2XY SG-NOM ;	     	! vieʹlpes
+:%^PenVow2a%^RmCns SG-ABE/ACC/GEN ;	 		! viâlpta
+:%^RmVow%>a SG-ILL ;	  			! viâlppsa
+:%^RmVow%>e SG-LOC ;				! viâlppsest
+:%^RmVow SG-COM_IN ;				! viâlppsin
+:%^RmVow%>e ESS/PAR ;  				! viâlppsen
+:%^PenVow2a%^RmCns PL-NOM ;	 		! viâlppa
+:%^RmVow PL-OBL ;					! viâlppsi
+:%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+
+LEXICON N_PUEAQRDES !!= * @CODE@ čueʹcǩes:čuäckkes
++N: NMN_PUEAQRDES ;
+LEXICON NMN_PUEAQRDES !!= * @CODE@ čueʹcǩes:čuäckkes
 ! 3.e.diphth.cluster
 ! gradation: yes
 !   Extra strong grade: Else
@@ -7589,6 +7610,11 @@ LEXICON NMN_MIEAQRR
 :%^VOWRaise%^PALE%^PAL%>e ESS/PAR ; ! ess and prt without
 
 :%^VOWRaise%^PALE%^PAL%^CC2C PL-OBL ;
+
+LEXICON N_MIEAQRR-PL !!= * @CODE@ meäʹr:meä%{ʹØ%}rr
++N:%^PAL%^CC2C PL-NOM ;
++N:%^VOWRaise%^PALE%^PAL%>e ESS/PAR ; ! ess and prt without
++N:%^VOWRaise%^PALE%^PAL%^CC2C PL-OBL ;
 
 
 LEXICON N_MIEQLKHKH !!= * @CODE@ mieʹlǩǩ:meâlkk
@@ -9071,12 +9097,12 @@ LEXICON NMN_OOUMAZH
 +Err/Orth:%^V2VV%^XYY2XY LOAOADDAZH-STEM-PX ; 
 +Err/Orth:%^V2VV%^XYY2XY LOAOADDAZH-STEM-PX-ALLEGRO ; 
 
-!LEXICON N_OOUMAZH-PL
-!:u PL-OBL ;			! oummui
-!: PL-OBL ;			! oummi
-!:%^V2VV%^XYY2XY LOAOADDAZH-STEM-PX ; 
-!:%^V2VV%^XYY2XY LOAOADDAZH-STEM-PX-ALLEGRO ; 
-!:%^V2VV%^XYY2XY%>že ESS/PAR ;
+LEXICON N_OOUMAZH-PL
+:u PL-OBL ;			! oummui
+: PL-OBL ;			! oummi
+:%^V2VV%^XYY2XY LOAOADDAZH-STEM-PX ; 
+:%^V2VV%^XYY2XY LOAOADDAZH-STEM-PX-ALLEGRO ; 
+:%^V2VV%^XYY2XY%>že ESS/PAR ;
 
 
 !! Class 10 according to Feist 160-161
