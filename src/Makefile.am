@@ -129,17 +129,19 @@ analyser-gt-norm.xfst: analyser-gt-norm.tmp.xfst \
 
 # Special case for the disamb analyser, since it follows the same filename
 # pattern as the raw fst:
-analyser-disamb-gt-desc.%: analyser-disamb-gt-desc.tmp.% \
-					filters/remove-derivation-position-tags.% \
-					filters/remove-norm-comp-tags.%             \
+analyser-disamb-gt-desc.%: analyser-disamb-gt-desc.tmp.%           \
+					filters/remove-derivation-position-tags.%      \
+					filters/remove-norm-comp-tags.%                \
+					filters/remove-orig_lang-tags.%                \
 					filters/remove-modifier-letter-vertical-line.% \
 					filters/remove-letter-dot-below.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
-				@\"filters/remove-derivation-position-tags.$*\" \
-			.o. @\"filters/remove-norm-comp-tags.$*\"           \
-			.o. @\"$<\"                                      \
-			.o. @\"filters/remove-letter-dot-below.$*\" \
-			.o. @\"filters/remove-modifier-letter-vertical-line.$*\"   \
+				@\"filters/remove-derivation-position-tags.$*\"      \
+			.o. @\"filters/remove-orig_lang-tags.$*\"                \
+			.o. @\"filters/remove-norm-comp-tags.$*\"                \
+			.o. @\"$<\"                                              \
+			.o. @\"filters/remove-letter-dot-below.$*\"              \
+			.o. @\"filters/remove-modifier-letter-vertical-line.$*\" \
 			;\n\
 		 $(INVERT_HFST)\
 		 save stack $@\n\
