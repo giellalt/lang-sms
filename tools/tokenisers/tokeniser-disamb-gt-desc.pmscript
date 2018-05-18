@@ -1,7 +1,7 @@
 !! Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
 !! Then just:
 !! $ make
-!! $ echo "ja, ja" | hfst-tokenise --gtd tokeniser-disamb-gt-desc.pmhfst
+!! $ echo "ja, ja" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
 
 !! Issues:
 !! - [X] Ambiguous input
@@ -25,9 +25,9 @@
 !! - [ ] Try set-difference-unknowns method with regular hfst commands?
 
 !! More usage examples:
-!! $ echo "Juos gorreválggain lea (dárbbašlaš) deavdit gáibádusa boasttu olmmoš, man mielde lahtuid." | hfst-tokenise --gtd tokeniser-disamb-gt-desc.pmhfst
-!! $ echo "(gáfe) 'ja' ja 3. ja? ц jaja ukjend \"ukjend\"" | hfst-tokenise --gtd tokeniser-disamb-gt-desc.pmhfst
-!! $ echo "márffibiillagáffe" | hfst-tokenise --gtd tokeniser-disamb-gt-desc.pmhfst
+!! $ echo "Juos gorreválggain lea (dárbbašlaš) deavdit gáibádusa boasttu olmmoš, man mielde lahtuid." | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+!! $ echo "(gáfe) 'ja' ja 3. ja? ц jaja ukjend \"ukjend\"" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+!! $ echo "márffibiillagáffe" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
 
 !! Pmatch documentation:
 !! https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch
@@ -38,7 +38,7 @@ Define morphology @bin"analyser_relabelled-disamb-gt-desc.hfst" ;
 
 Define url @bin"../../src/morphology/url.hfst".i ;
 
-Define incondform      Punct |{“}|{”}|{…}|{­}|{}|{}|{➤}|{–}|{—}|{•}|{‚}|{§}|{!} ;
+Define incondform      Punct | {“} | {”} | {…} | {­} ;
 
 Define blank           Whitespace | incondform ;
 
@@ -51,12 +51,7 @@ Define urlword          url                          LC([blank | #]) RC([blank |
 !! 2) unmatched strings
 !! We want to give 1) a match, but let 2) be treated specially by hfst-tokenise -a
 Define alphabet "a-z" | {á}|{š}|{ž}|{č}|{đ}|{ŋ}|{ŧ}|{æ}|{ä}|{ø}|{ö}|{å}
-              | "A-Z" | {Á}|{Š}|{Ž}|{Č}|{Đ}|{Ŋ}|{Ŧ}|{Æ}|{Ä}|{Ø}|{Ö}|{Å}
-              |{â}|{é}|{õ}|{ʒ}|{ǯ}|{ǥ}|{ǧ}|{ǩ}|{ñ}|{ĺ}|{ï}|{à}|{ś}|{ô}
-              |{Â}|{É}|{Õ}|{Ʒ}|{Ǯ}|{Ǥ}|{Ǧ}|{Ǩ}|{Ñ}|{Ĺ}|{Ï}|{À}|{Ś}|{Ô}
-              |{ó}|{ë}|{í}|{ō}|{ð}
-              |{Ó}|{Ë}|{Í}|{Ō}|{Ð}
-              |{ʹ}|{ʼ}|{ˈ}|{‘}|{‐}|{–}|{—}|"0-9" ;
+              | "A-Z" | {Á}|{Š}|{Ž}|{Č}|{Đ}|{Ŋ}|{Ŧ}|{Æ}|{Ä}|{Ø}|{Ö}|{Å} ;
 Define alphaword alphabet+;
 !! TODO: Could use something like this, but built-in's don't include šžđčŋ:
 ! Define MixCase(X) [OptCap(X) | UpCase(X)];
@@ -67,7 +62,7 @@ Define alphaword alphabet+;
 Define unknownform [alphaword].u ;
 !! Simply give an empty reading when something is unknown:
 Define unknownwordEmpty unknownform:0 LC([blank | #]) RC([[blank ] | # ]);
-!! hfst-tokenise --gtd will treat such empty analyses as unknowns, and
+!! hfst-tokenise --giella-cg will treat such empty analyses as unknowns, and
 !! remove empty analyses from other readings. Empty readings are also
 !! legal in CG, they get a default baseform equal to the wordform, but
 !! no tag to check, so it's safer to let hfst-tokenise handle them.
