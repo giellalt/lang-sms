@@ -1,0 +1,23 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-dict-gt-norm.hfst
+    Morph: ../../../src/analyser-dict-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-dict-gt-norm.xfst
+    Morph: ../../../src/analyser-dict-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Adjective - vuäʹmes class A4e: # Adjective 'old' - full paradigm
+    vuäʹmes+A+Sg+Nom: vuäʹmes
+    vuäʹmes+A+Pl+Nom: vuämˈmaz
+    vuäʹmes+A+Attr: vuäʹmˈm
+    vuäʹmes+A+Comp+Attr: vuämˈmsab
+    vuäʹmes+A+Superl+Attr: vuämˈmsumus
+

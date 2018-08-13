@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-dict-gt-norm.hfst
+    Morph: ../../../src/analyser-dict-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-dict-gt-norm.xfst
+    Morph: ../../../src/analyser-dict-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Noun - siõm a-stem: # Noun 'rifle' - full paradigm
+     siõm+N+Sg+Nom: siõm
+     siõm+N+Sg+Gen: siõmˈmân
+     siõm+N+Sg+Acc: siõmˈmân
+     siõm+N+Sg+Ill: siõmˈmna
+     siõm+N+Sg+Loc: siõmˈmnest
+     siõm+N+Sg+Com: siõmˈmnin
+     siõm+N+Ess: siõmˈmnen
+     siõm+N+Par: siõmˈmned
+     siõm+N+Sg+Abe: [siõmˈmântaa, siõmˈmântää]
+     siõm+N+Pl+Nom: siõmˈmân
+     siõm+N+Pl+Gen: siõmˈmni
+     siõm+N+Pl+Acc: siõmˈmnid
+     siõm+N+Pl+Ill: siõmˈmnid
+     siõm+N+Pl+Loc: siõmˈmnin
+     siõm+N+Pl+Com: siõmˈmnivuiʹm
+     siõm+N+Pl+Abe: [siõmˈmnitaa, siõmˈmnitää]
