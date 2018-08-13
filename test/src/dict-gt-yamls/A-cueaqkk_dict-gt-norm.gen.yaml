@@ -1,0 +1,22 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-dict-gt-norm.hfst
+    Morph: ../../../src/analyser-dict-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-dict-gt-norm.xfst
+    Morph: ../../../src/analyser-dict-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+  Adjective - čueʹǩǩ class A1e: # Adjective 'shallow' - full paradigm
+    čueʹǩǩ+A+Sg+Nom: čuẹʹǩǩ
+    čueʹǩǩ+A+Pl+Nom: čuẹʹjj
+    čueʹǩǩ+A+Attr: čuẹʹjjes
+    čueʹǩǩ+A+Comp+Attr: čuẹʹjjab
+    čueʹǩǩ+A+Superl+Attr: čuẹʹjjmõs
+
