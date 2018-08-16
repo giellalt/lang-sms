@@ -4900,6 +4900,8 @@ LEXICON E-STEM_SG-ABE/ACC/GEN !!= * @CODE@ (2)
  E-STEM-PX-WEAKEN-WITH-PAL ; !! e.g. +Sg+Acc+PxPl3
  E-STEM-PX-WEAKEN_NG ; !! e.g. +Use/NG+Sg+Loc+PxSg1
 +Use/SpellNoSugg+Err/Orth: A_DER/LAZH ;
++Err/Orth: E-STEM_PL-OBL ; 
+!! låʹdd >> lååʹddi; it should  be lå'dd >> loo'ddi
 
  DenominalAdjsCShort ;
 
@@ -5441,8 +5443,11 @@ LEXICON NMN_JUURD !!= * @CODE@ juurd:ju%^1VOWrdd
 +Use/NG:%>%{ʼØ%}j%>â ESS/PAR ;
 +Use/NG:%^V2VV%^XYY2XY%>â ESS/PAR ;
 +Use/NG:%>e PAR ;
++Err/Orth:%>â ESS/PAR ;
 +Der/Dimin:%>%{ʼØ%}j N_KUYLAZH ;
 +Der/Dimin:%>ǥ N_KUYLAZH ;
+:%>ǥ A_DER/ALLASH ;
+:%^V2VV%^XYY2XY A_DER/SAZH ;
 :%>ǥ VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 :%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
@@ -5466,6 +5471,8 @@ LEXICON NMN_AAZZ !!= * @CODE@ aazz:a%^1VOWss
 +Use/NG:%>e PAR ;
 +Der/Dimin:%>%{ʼØ%}j N_KUYLAZH ;
 +Der/Dimin:%>ǥ N_KUYLAZH ;
+:%>ǥ A_DER/ALLASH ;
+:%^V2VV%^KK2GG A_DER/SAZH ;
 :%>ǥ VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 :%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
@@ -5493,6 +5500,8 @@ LEXICON NMN_KOODH !!= * @CODE@ koođ:ko%^1VOWđđ
 +Use/NG:%>%{ʼØ%}j%>â ESS/PAR ;
 +Use/NG:%^V2VV%^CC2C%>â ESS/PAR ;
 +Der/Dimin:%>ǥ N_KUYLAZH ;
+:%>ǥ A_DER/ALLASH ;
+:%^V2VV%^CC2C A_DER/SAZH ;
 +Use/NG+Der/Dimin:%>%{ʼØ%}j N_KUYLAZH ;
 :%>ǥ VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 :%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ võnns-
@@ -5521,6 +5530,8 @@ LEXICON NMN_KAAV !!= * @CODE@ kaav:kaapp
 +Use/NG:%>%{ʼØ%}j%>â ESS/PAR ; !!= * @CODE@ kaappjân 
 +Use/NG:%^CC2C%>â ESS/PAR ; !!= * @CODE@ kaavân
 +Der/Dimin:%>ǥ N_KUYLAZH ;
+:%>ǥ A_DER/ALLASH ;
+:%^CC2C A_DER/SAZH ;
 +Use/NG+Der/Dimin:%>%{ʼØ%}j N_KUYLAZH ;
 :%>ǥ VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 :%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ võnns-
@@ -5550,6 +5561,8 @@ LEXICON NMN_POOUS !!= * @CODE@ poous:pohss
 +Use/NG:%>e PAR ;
 +Der/Dimin:%>%{ʼØ%}j N_KUYLAZH ;
 +Der/Dimin:%>ǥ N_KUYLAZH ;
+:%>ǥ A_DER/ALLASH ;
+:%^V2VV%^XYY2VY A_DER/SAZH ;
 :%>ǥ VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 :%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
@@ -5581,6 +5594,8 @@ LEXICON NMN_MAADD !!= * @CODE@ maadd:madd
 
 +Der/Dimin:%>%{ʼØ%}j N_KUYLAZH ;
 +Der/Dimin:%>ǥ N_KUYLAZH ;
+:%>ǥ A_DER/ALLASH ;
+:%^V2VV A_DER/SAZH ;
 :%>ǥ VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 :%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
@@ -5606,6 +5621,8 @@ LEXICON NMN_LIOV
 +Use/NG:%>e PAR ;
 +Der/Dimin:%>%{ʼØ%}j N_KUYLAZH ;
 +Der/Dimin:%>ǥ N_KUYLAZH ;
+:%>ǥ A_DER/ALLASH ;
+:%^CC2C A_DER/SAZH ;
 :%>ǥ VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 :%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
@@ -5621,7 +5638,7 @@ LEXICON NMN_MUOTT
 !! ** Yaml: __N-muott__
 !! * There are several stem types 
 !! * muõtt:muõtt
-: SG-NOM ;
+:%^CCC2CC SG-NOM ;
 :%>i SG-ACC/GEN ;	! muõtti
 :%>ǥ%>a SG-ABE_tta ;
 +Use/NG:%>i SG-ABE ;	! muõtti
@@ -5634,6 +5651,8 @@ LEXICON NMN_MUOTT
 +Use/NG:%>e PAR ;
 +Der/Dimin:%>%{ʼØ%}j N_KUYLAZH ;
 +Der/Dimin:%>ǥ N_KUYLAZH ;
+:%>ǥ A_DER/ALLASH ;
+:%^CCC2CC A_DER/SAZH ;
 :%>ǥ VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 :%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
@@ -5661,6 +5680,8 @@ LEXICON NMN_SUOL
 !:%>e PAR ; 2015-10-06
 +Der/Dimin:%>%{ʼØ%}j N_KUYLAZH ;
 +Der/Dimin:%>ǥ N_KUYLAZH ;
+:%>ǥ A_DER/ALLASH ;
+:%^CCC2C A_DER/SAZH ;
 :%>ǥ VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 :%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
@@ -5687,6 +5708,8 @@ LEXICON NMN_PUOADH
 +Use/NG:%>e PAR ;
 +Der/Dimin:%>%{ʼØ%}j N_KUYLAZH ;
 +Der/Dimin:%>ǥ N_KUYLAZH ;
+:%>ǥ A_DER/ALLASH ;
+:%^CC2C A_DER/SAZH ;
 :%>ǥ VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 :%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
@@ -5712,6 +5735,8 @@ LEXICON NMN_MUOARD
 +Use/NG:%>e PAR ;
 +Der/Dimin:%>%{ʼØ%}j N_KUYLAZH ;
 +Der/Dimin:%>ǥ N_KUYLAZH ;
+:%>ǥ A_DER/ALLASH ;
+:%^XYY2XY A_DER/SAZH ;
 :%>ǥ VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 :%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
@@ -5754,6 +5779,8 @@ LEXICON NMN_MUU3 !!= * @CODE@ muuʒ:muvʒʒ
 :%>e ESS/PAR ;  	   !!(6) Ess: muvʒʒen
 :%>i PL-NOM ;		! muvʒʒi
 :%>%{ʼØ%}ji PL-OBL ;		!(8) Pl.Gen: muvʒʒji
+:%>ǥ A_DER/ALLASH ;
+:%^XYY2VY A_DER/SAZH ;
 :%>ǥ VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 
@@ -5973,6 +6000,7 @@ LEXICON NMN_LAAJJ !!= * @CODE@ laajj:la%^1VOWčč
 :%>e ESS/PAR ; ! ess and prt without m? earlier: +N:m%>e ESS
 :m PL-OBL ;
 :m VOONYS-STEM-PX ;
+:%>m A_DER/ALLASH ;
 
 LEXICON N_LAAJJ-PL
 +N:âm PL-NOM ;                         ! laččâm
@@ -5991,6 +6019,7 @@ LEXICON NMN_OODH !!= * @CODE@ õõđ:õ%^1VOWđđ
 :%>e ESS/PAR ; ! ess and prt without m? earlier: +N:m%>e ESS
 :m PL-OBL ;
 :m VOONYS-STEM-PX ;
+:%>m A_DER/ALLASH ;
 
 LEXICON N_SOOUS !!= * @CODE@ sõõus:sõhss
 ! gradation: yes
@@ -6008,6 +6037,7 @@ LEXICON NMN_SOOUS !!= * @CODE@ sõõus:sõ%^1VOWhss
 :m VOONYS-STEM-PX ;
 :âm PL-NOM ;
 :m PL-OBL ;
+:%>m A_DER/ALLASH ;
 
 LEXICON N_SOOUS-PL
 +N:âm PL-NOM ;
@@ -6029,6 +6059,7 @@ LEXICON NMN_LAAUR !!= * @CODE@ laaur:laurr
 :âm PL-NOM ;
 :m PL-OBL ;
 :m VOONYS-STEM-PX ;
+:%>m A_DER/ALLASH ;
 
 LEXICON N_VYYID !!= * @CODE@ vââid:võ%^1VOWidd
 +N: NMN_VYYID ;
@@ -6043,6 +6074,7 @@ LEXICON NMN_VYYID !!= * @CODE@ vââid:võ%^1VOWidd
 :%^V2VV%^VOWLower%^XYY2XY%>me ESS/PAR ; 
 :%>m PL-OBL ;
 :%>m VOONYS-STEM-PX ;
+:%>m A_DER/ALLASH ;
 
 
 
@@ -6064,6 +6096,7 @@ LEXICON NMN_SIOM  !!= * @CODE@ = siõm:siõmˈm
 :%>ne ESS/PAR ;
 :%>n PL-OBL ;
 :%>n VOONYS-STEM-PX ;
+:%>n A_DER/ALLASH ;
 
 LEXICON N_VUYSK !!= * @CODE@ vuâsk:vuâskk
 +N: NMN_VUYSK ;
@@ -6078,6 +6111,7 @@ LEXICON NMN_VUYSK !!= * @CODE@ vuâsk:vuâskk
 :%>ane ESS/PAR ; ! ess and prt without
 :%>n PL-OBL ;
 :%>n VOONYS-STEM-PX ;
+:%>n A_DER/ALLASH ;
 
 LEXICON N_KHIYLGX !!= * @CODE@ ǩiâlǥ:ǩiâlgg
 +N: NMN_KHIYLGX ;
@@ -6092,6 +6126,7 @@ LEXICON NMN_KHIYLGX !!= * @CODE@ ǩiâlǥ:ǩiâlgg
 :%>ane ESS/PAR ; ! ess and prt without
 :%>n PL-OBL ;
 :%>n VOONYS-STEM-PX ;
+:%>n A_DER/ALLASH ;
 
 LEXICON N_KUOLBYN !!= * @CODE@ kuõlbân:kuõlbb
 +N: NMN_KUOLBYN ;
@@ -6106,6 +6141,7 @@ LEXICON NMN_KUOLBYN !!= * @CODE@ kuõlbân:kuõlbb
 :%>âne ESS/PAR ; ! ess and prt without
 :%>n PL-OBL ;
 :%>n VOONYS-STEM-PX ;
+:%>n A_DER/ALLASH ;
 
 LEXICON N_SIEQM !!= * @CODE@ sieʹm:siâmˈm
 +N: NMN_SIEQM ;
@@ -6120,6 +6156,7 @@ LEXICON NMN_SIEQM
 +Use/Ped:%^VOWRaise%>n%>e ESS/PAR ; ! ess and prt without m?
 +Use/Ped:%^VOWRaise%>n PL-OBL ;
 +Use/Ped:%^VOWRaise%>n VOONYS-STEM-PX ;
+:%^VOWRaise%>n A_DER/ALLASH ;
 
 LEXICON N_LUEQM !!= * @CODE@ lueʹm:luâmˈm
 +N: NMN_LUEQM ;
@@ -6134,6 +6171,7 @@ LEXICON NMN_LUEQM
 :%>n%>e ESS/PAR ; ! ess and prt without m?
 :%>n PL-OBL ;
 :%>n VOONYS-STEM-PX ;
+:%>n A_DER/ALLASH ;
 
 
 !! CLASS 3
@@ -6150,6 +6188,7 @@ LEXICON NMN_VUEQN
 +Use/Ped:%>e ESS/PAR ; ! ess and prt without m?
 +Use/Ped:m PL-OBL ;
 +Use/Ped:m VOONYS-STEM-PX ;
+:%>m A_DER/ALLASH ;
 
 !! Are these actually necessary 2015-05-30 
 :%^CCC2CC%>am SG-ABE/ACC/GEN-PL-NOM ;
@@ -6177,6 +6216,7 @@ LEXICON NMN_CHYYQDH
 :%>me ESS/PAR ; ! ess and prt without
 :%>m PL-OBL ;
 :%>m VOONYS-STEM-PX ;
+:%>m A_DER/ALLASH ;
 
 LEXICON N_CHUEQNJ !!= * @CODE@ čueʹnj:čuânˈnj
 +N: NMN_CHUEQNJ ;
@@ -6191,6 +6231,7 @@ LEXICON NMN_CHUEQNJ
 :%>e ESS/PAR ; ! ess and prt without ǥ?
 :ǥ PL-OBL ;
 :ǥ VOONYS-STEM-PX ;
+:%>ǥ A_DER/ALLASH ;
 
 
 !! CLASS 4 BISYLLABIC, HIGH VOWEL, MONOPHTHONG, NO PALATALIZATION
@@ -6213,6 +6254,7 @@ LEXICON NMN_KOONJYL !!= * @CODE@ kõõnjâl:k%^1VOWõnnjâl
 :%^RmVow%>e ESS/PAR ; ! ess and prt without
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_VOONYS  !!= * @CODE@ võõnâs:võ%^1VOWnnâs
 +N: NMN_VOONYS ;
@@ -6234,6 +6276,7 @@ LEXICON NMN_VOONYS  !!= * @CODE@ võõnâs:võnnâs
 :%^RmVow%>e ESS/PAR ;  				! võnnsen
 :%^RmVow PL-OBL ;				! võnnsi
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_CHOOGXGXYS  !!= * @CODE@ čõõǥǥâs:čõkkâs
 +N: NMN_CHOOGXGXYS ;
@@ -6255,6 +6298,7 @@ LEXICON NMN_CHOOGXGXYS  !!= * @CODE@ čõõǥǥâs:čõkkâs
 :%^RmVow%>e ESS/PAR ;  				! čõkksen
 :%^RmVow PL-OBL ;				! čõkksi
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_KOODDYS !!= * @CODE@ kõõddâs:kõddâs
 +N: NMN_KOODDYS ;
@@ -6274,6 +6318,7 @@ LEXICON NMN_KOODDYS !!= * @CODE@ kõõddâs:kõddâs
 :%^RmVow%>e ESS/PAR ;
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_LUUBBYL !!= * @CODE@ luubbâl:lubbâl
 +N: NMN_LUUBBYL ;
@@ -6293,6 +6338,7 @@ LEXICON NMN_LUUBBYL !!= * @CODE@ luubbâl:lubbâl
 :%^RmVow%>e ESS/PAR ;
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_TAALKYS !!= * @CODE@ taalkâs:talkkâs
 +N: NMN_TAALKYS ;
@@ -6313,6 +6359,7 @@ LEXICON NMN_TAALKYS !!= * @CODE@ taalkâs:talkkâs
 :%^RmVow%>e ESS/PAR ; ! ess and prt without
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_PIIUTYS !!= * @CODE@ piiutâs:pihttâs
 +N: NMN_PIIUTYS ;
@@ -6334,6 +6381,7 @@ LEXICON NMN_PIIUTYS !!= * @CODE@ piiutâs:pihttâs
 :%^RmVow%>e ESS/PAR ; ! ess and prt without
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_KOONTYR !!= * @CODE@ koontâr:konttâr
 +N: NMN_KOONTYR ;
@@ -6354,6 +6402,7 @@ LEXICON NMN_KOONTYR
 :%^RmVow%>e ESS/PAR ;
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_AAUTYR !!= * @CODE@ aautâr:ahttâr
 +N: NMN_AAUTYR ;
@@ -6374,6 +6423,7 @@ LEXICON NMN_AAUTYR
 :%^RmVow%>e ESS/PAR ;
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_KHIIUGXYN !!= *  @CODE@ ǩiiuǥân:ǩiuggân
 +N: NMN_KHIIUGXYN ;
@@ -6394,6 +6444,7 @@ LEXICON NMN_KHIIUGXYN !!= *  @CODE@ ǩiiuǥân:ǩiuggân
 :%^RmVow%>e ESS/PAR ;  			 ! ǩiuggnen
 :%^RmVow PL-OBL ;			 ! ǩiuggni
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_KHIOTKYM !!= *  @CODE@ ǩiõtkâm:ǩiõtkkâm
 +N: NMN_KHIOTKYM ;
@@ -6409,6 +6460,7 @@ LEXICON NMN_KHIOTKYM !!= *  @CODE@ ǩiõtkâm:ǩiõtkkâm
 :%^RmVow%>e ESS/PAR ;  			 ! ǩiõtkkmen
 :%^RmVow PL-OBL ;			 ! ǩiõtkkmi
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_FIINYS !!= *  @CODE@ fiinâs:fijnnâs
 +N: NMN_FIINYS ;
@@ -6429,6 +6481,7 @@ LEXICON NMN_FIINYS !!= *  @CODE@ fiinâs:fijnnâs
 :%^RmVow%>e ESS/PAR ;  			 ! fijnnsen
 :%^RmVow PL-OBL ;			 ! fijnnsi
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 !! CLASS 4 BISYLLABIC, HIGH VOWEL, DIPHTHONG, NO PALATALIZATION
 LEXICON N_TUOVYS !!= *  @CODE@ tuõvâs:tuõvˈvâs
@@ -6448,6 +6501,7 @@ LEXICON NMN_TUOVYS !!= *  @CODE@ tuõvâs:tuõvˈvâs
 :%^RmVow SG-COM_IN/PL-OBL ;
 :%^RmVow%>e ESS/PAR ; 
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 !LEXICON N_KUOADHYS !!= *  @CODE@ kuåđâs:kuåđˈđâs
 !+N: NMN_KUOADHYS ;
@@ -6466,6 +6520,7 @@ LEXICON NMN_TUOVYS !!= *  @CODE@ tuõvâs:tuõvˈvâs
 !:%^RmVow SG-COM_IN/PL-OBL ;
 !:%^RmVow%>e ESS/PAR ; 
 !:%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_VUONJYL !!= *  @CODE@ vuõnjâl:vuõnnjâl
 +N: NMN_VUONJYL ;
@@ -6485,6 +6540,7 @@ LEXICON NMN_VUONJYL !!= *  @CODE@ vuõnjâl:vuõnnjâl
 :%^RmVow%>e ESS/PAR ; ! ess and prt without
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_VUOIVYS !!= *  @CODE@ vuõivâs:vuõivvâs
 +N: NMN_VUOIVYS ;
@@ -6503,6 +6559,7 @@ LEXICON NMN_VUOIVYS !!= *  @CODE@ vuõivâs:vuõivvâs
 :%^RmVow SG-COM_IN/PL-OBL ;    !!= *  @CODE@ (5) Sg_Com: vuõivvsin
 :%^RmVow%>e ESS/PAR ; 	 !!= *  @CODE@ (6) Ess: vuõivvsen
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_TUODDYR !!= *  @CODE@ tuõddâr:tuõdˈdâr
 +N:  NMN_TUODDYR ;
@@ -6521,6 +6578,7 @@ LEXICON NMN_TUODDYR !!= *  @CODE@ tuõddâr:tuõdˈdâr
 :%^RmVow%>e ESS/PAR ; 			! tuõdˈdren
 :%^RmVow PL-OBL ;			! tuõdˈdri, 
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_CHIOGXGXYR !!= *  @CODE@ čiõǥǥâr:čiõkˈkâr
 +N:  NMN_CHIOGXGXYR ;
@@ -6539,6 +6597,7 @@ LEXICON NMN_CHIOGXGXYR !!= *  @CODE@ čiõǥǥâr:čiõkˈkâr
 :%^RmVow%>e ESS/PAR ; 			! čiõkˈkren
 :%^RmVow PL-OBL ;			! čiõkˈkri, 
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 
 LEXICON N_PUAEGXGXANJ !!= *  @CODE@ tuõddâr:tuõdˈdâr
@@ -6558,6 +6617,7 @@ LEXICON NMN_PUAEGXGXANJ !!= *  @CODE@ puäǥǥanj:puäkˈkanj
 :%^RmVow%>e ESS/PAR ; 			! tuõdˈdren
 :%^RmVow PL-OBL ;			! tuõdˈdri, 
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ puäkˈknj-
+:%^RmVow A_DER/ALLASH ;
 
 
 LEXICON N_RUODDYS !!= *  @CODE@ ruõddâs:ruõdˈdâs
@@ -6578,6 +6638,7 @@ LEXICON NMN_RUODDYS !!= *  @CODE@ ruõddâs:ruõdˈdâs
 :%^RmVow%>e ESS/PAR ; 			! ruõdˈdsen
 :%^RmVow PL-OBL ;			! ruõdˈdsi, 
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 
 LEXICON N_NAQZVAANASH-PL !!= *  @CODE@ naʹzvaanâš:naʹzvaanâš
@@ -6604,6 +6665,8 @@ LEXICON NMN_COOGGYLM
 :%^Pen%^VV2V%^Pen%^CC2CAllegro%^RmVow%>e ESS/PAR ;  	! cõglmen
 :%^Pen%^VV2V%^Pen%^CC2CAllegro%^RmVow PL-OBL ;	! cõglmi, cõglmid, cõglmid, cõglmin, cõglmivuiʹm, cõglmitaa/cõglmitää
 :%^Pen%^VV2V%^Pen%^CC2CAllegro%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^Pen%^VV2V%^Pen%^CC2CAllegro%^RmVow A_DER/ALLASH ;
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_SIIVALM !!= * @CODE@ siivâlm:siivâlm
 +N: NMN_SIIVALM ;
@@ -6624,6 +6687,8 @@ LEXICON NMN_SIIVALM
 :%^Pen%^VV2V%^RmVow%>e ESS/PAR ;  	! sivlmen
 :%^Pen%^VV2V%^RmVow PL-OBL ;	! sivlmi, sivlmid, sivlmid, sivlmin, sivlmivuiʹm, sivlmitaa/sivlmitää
 :%^Pen%^VV2V%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^Pen%^VV2V%^RmVow A_DER/ALLASH ;
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_KAADDYSHKH !!= * @CODE@ kaaddâšǩ:kaaddâšǩ
 +N: NMN_KAADDYSHKH ;
@@ -6643,6 +6708,8 @@ LEXICON NMN_KAADDYSHKH
 :%^Pen%^VV2V%^Pen%^CC2CAllegro%^RmVow%>e ESS/PAR ;  	! kadšǩen
 :%^Pen%^VV2V%^Pen%^CC2CAllegro%^RmVow PL-OBL ;	! kadšǩi, kadšǩid, kadšǩid, kadšǩin, kadšǩivuiʹm, kadšǩitaa/kadšǩitää
 :%^Pen%^VV2V%^Pen%^CC2CAllegro%^RmVow%^PALNo VOONYS-STEM-PX ; !!= * @CODE@ võnns- CHECKME
+:%^Pen%^VV2V%^Pen%^CC2CAllegro%^RmVow%^PALNo A_DER/ALLASH ;
+:%^RmVow%^PALNo A_DER/ALLASH ;
 
 !LEXICON N_KHIOZZYLM !!= * @CODE@ ǩiõzzâlm:ǩiõzzâlm
 !+N: NMN_KHIOZZYLM ;
@@ -6677,6 +6744,8 @@ LEXICON NMN_TOOBDYLM
 :%^Pen%^VV2V%^RmVow%>e ESS/PAR ;  	! tobdlmen
 :%^Pen%^VV2V%^RmVow PL-OBL ;	! tobdlmi, kadšǩid, kadšǩid, kadšǩin, kadšǩivuiʹm, kadšǩitaa/kadšǩitää
 :%^Pen%^VV2V%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ tobdlm- CHECKME
+:%^Pen%^VV2V%^RmVow A_DER/ALLASH ;
+:%^RmVow A_DER/ALLASH ;
 
 
 LEXICON N_IILYSKH !!= * @CODE@ iilâsǩ:iilâsǩ
@@ -6696,6 +6765,8 @@ LEXICON NMN_IILYSKH
 :%^Pen%^VV2V%^RmVow%>e ESS/PAR ;  	! ilsǩen
 :%^Pen%^VV2V%^RmVow PL-OBL ;	! ilsǩi, ilsǩid, ilskid, ilskin, ilskivuiʹm, ilskitaa/ilskitää
 :%^Pen%^VV2V%^RmVow%^PALNo VOONYS-STEM-PX ; !!= * @CODE@ võnns- CHECKME
+:%^Pen%^VV2V%^RmVow A_DER/ALLASH ;
+:%^RmVow A_DER/ALLASH ;
 
 
 !! CLASS 4 BISYLLABIC, LOW VOWEL, MONOPHTHONG, NO PALATALIZATION
@@ -6713,6 +6784,7 @@ LEXICON NMN_CEERKAV !!= * @CODE@ ceerkav:cẹẹrkav
 :%^RmVow SG-COM_IN/PL-OBL ;			   !!= * @CODE@ (5) ceerkvin
 :%^RmVow%>e ESS/PAR ;  			   !!= * @CODE@ (6) ceerkven
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_SOAOABBAR !!= * @CODE@ sååbbar:s%^1VOWåbbar
 +N: NMN_SOAOABBAR ;
@@ -6728,6 +6800,7 @@ LEXICON NMN_SOAOABBAR !!= * @CODE@ sååbbar:s%^1VOWåbbar
 :%^RmVow%>e ESS/PAR ; ! ess and prt without
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_KOAOADDAS !!= * @CODE@ kååddas:kåddas
 +N: NMN_KOAOADDAS ;
@@ -6744,6 +6817,7 @@ LEXICON NMN_KOAOADDAS !!= * @CODE@ kååddas:kåddas
 +Use/NG:%^RmVow%>e PAR ;
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ kådds-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_KOALVAK !!= * @CODE@ kåålvak:kåålvak
 +N: NMN_KOALVAK ;
@@ -6768,6 +6842,7 @@ LEXICON NMN_KOALVAK !!= * @CODE@ kåålvak:kåålvak
 : PL-NOM ;
 :%^RmVow%^PALK PL-OBL ;
 :%^RmVow%^PALK VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_AACCIKH !!= * @CODE@ pååttaǩ:pååttaǩ
 +N: NMN_AACCIKH ;
@@ -6792,6 +6867,7 @@ LEXICON NMN_AACCIKH !!= * @CODE@ pååttaǩ:pååttaǩ
 : PL-NOM ;
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
+:%^RmVow%^PALNo A_DER/ALLASH ;
 
 LEXICON N_AANAR
 +N: NMN_AANAR ;
@@ -6810,6 +6886,7 @@ LEXICON NMN_AANAR
 :%^RmVow%>e ESS/PAR ;
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_CHIOPYRJ !!= * @CODE@ čiõpârj:čiõpâr
 +N: NMN_CHIOPYRJ ;
@@ -6828,6 +6905,7 @@ LEXICON NMN_CHIOPYRJ
 :%^RmVow%>%{ʼØ%}je ESS/PAR ;
 :%^RmVow%>%{ʼØ%}j PL-OBL ;
 :%^RmVow%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
+:%^RmVow%>ǥ A_DER/ALLASH ;
 
 LEXICON N_KOAOAVAS !!= * @CODE@ kååvas:kå%^1VOWvvas
 +N: NMN_KOAOAVAS ;
@@ -6848,6 +6926,7 @@ LEXICON NMN_KOAOAVAS !!= * @CODE@ kååvas:kåvvas
 :%^RmVow%>e ESS/PAR ; ! ess and prt without
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_PAEAELKAS !!= * @CODE@ päälkas:pälkkas
 +N: NMN_PAEAELKAS ;
@@ -6869,6 +6948,7 @@ LEXICON NMN_PAEAELKAS !!= * @CODE@ päälkas:pälkkas
 :%^RmVow%>e ESS/PAR ; ! ess and prt without
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_MUYLAS !!= * @CODE@ muâlas:muâlˈlas
 +N: NMN_MUYLAS ;
@@ -6890,6 +6970,7 @@ LEXICON NMN_MUYLAS !!= * @CODE@ muâlas:muâlˈlas
 :%^RmVow%>e ESS/PAR ; ! ess and prt without
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_VEEVAR !!= * @CODE@ veevar:vẹvvar
 +N: NMN_VEEVAR ;
@@ -6910,6 +6991,7 @@ LEXICON NMN_VEEVAR !!= * @CODE@ veevar:vẹvvar
 :%^RmVow%>e ESS/PAR ; ! ess and prt without
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
+:%^RmVow A_DER/ALLASH ;
 
 !LEXICON N_SLOOHMAN
 !! gradation: no
@@ -6953,6 +7035,7 @@ LEXICON NMN_KOAOADDARV
 :%^Pen%^VV2V%^Pen%^CC2C%^RmVow%>e ESS/PAR ;  	! kådrven
 :%^Pen%^VV2V%^Pen%^CC2C%^RmVow PL-OBL ;	! kådrvi, kådrvid, kådrvid, kådrvin, kådrvivuiʹm, kådrvitaa/kådrvitää
 :%^Pen%^VV2V%^Pen%^CC2C%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^Pen%^VV2V%^Pen%^CC2C%^RmVow A_DER/ALLASH ;
 
 !! CLASS 4 BISYLLABIC, LOW VOWEL, DIPHTHONG, NO PALATALIZATION
 !! IN PENULTIMATE A:0
@@ -6971,6 +7054,7 @@ LEXICON NMN_KHEYLGXAL !!= * @CODE@ ǩeâlǥal:ǩeâlggal
 :%^RmVow%>e ESS/PAR ; ! ess and prt without
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_KUAEIVAS !!= * @CODE@ kuäivas:kuäivvas
 +N: NMN_KUAEIVAS ;
@@ -6993,6 +7077,7 @@ LEXICON NMN_KUAEIVAS !!= * @CODE@ kuäivas:kuäivvas
 :%^RmVow%>e ESS/PAR ; ! ess and prt without
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_JUYGXGXAS !!= * @CODE@ juâǥǥas:juâkˈkas
 ! gradation: no
@@ -7014,6 +7099,7 @@ LEXICON NMN_JUYGXGXAS
 :%^RmVow%>e SG-LOC ;
 :%^Pen%^KKK2GG SG-NOM ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_HEAVASH !!= * @CODE@ heävaš:heäpˈpaš
 ! gradation: yes
@@ -7029,6 +7115,7 @@ LEXICON NMN_HEAVASH
 :%^Pen%^CCC2C SG-NOM ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
 +Der/Dimin:%^RmVow N_KUYLAZH ;
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_KUAELLAS !!= * @CODE@ kuällas:kuälˈlas
 ! gradation: yes
@@ -7044,6 +7131,7 @@ LEXICON NMN_KUAELLAS
 :%^Pen%^CCC2CC SG-NOM ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
 +Der/Dimin:%^RmVow N_KUYLAZH ;
+:%^RmVow A_DER/ALLASH ;
 
 !! CLASS 4 BISYLLABIC, LOW VOWEL, MONOPHTHONG, PALATALIZATION
 LEXICON N_VEEQREST !!= * @CODE@ veeʹrest:veeʹrest
@@ -7073,6 +7161,7 @@ LEXICON NMN_VEEQREST !!= * @CODE@ veeʹrest:veeʹrest
 : PL-NOM ;
 :%^Pen%^VV2V%^RmVow PL-OBL ;
 :%^Pen%^VV2V%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^Pen%^VV2V%^RmVow A_DER/ALLASH ;
 
 
 LEXICON N_AAQRESHM !!= * @CODE@ ääʹrešm:ääʹrešm
@@ -7101,6 +7190,7 @@ LEXICON NMN_AAQRESHM !!= * @CODE@ ääʹrešm:ääʹrešm
 : PL-NOM ;
 :%^Pen%^VV2V%^RmVow PL-OBL ;
 :%^Pen%^VV2V%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^Pen%^VV2V%^RmVow A_DER/ALLASH ;
 
 LEXICON N_SAAQVESKH !!= * @CODE@ sääʹvesǩ:sääʹvesǩ
 +N: NMN_SAAQVESKH ;
@@ -7128,6 +7218,7 @@ LEXICON NMN_SAAQVESKH
 +Use/SpellNoSugg+Use/NG:%^RmVow%>e ESS/PAR ; !!= * @CODE@ CHECKME
 +Use/SpellNoSugg+Use/NG:%^RmVow PL-OBL ;
 +Use/SpellNoSugg+Use/NG:%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^Pen%^VV2V%^RmVow A_DER/ALLASH ;
 
 
 LEXICON N_KUEQDDELM !!= * @CODE@ kueʹddelm:kueʹddelm
@@ -7152,6 +7243,7 @@ LEXICON NMN_KUEQDDELM !!= * @CODE@ kueʹddelm:kueʹddelm
 : PL-NOM ;
 :%^Pen%^CC2C%^RmVow PL-OBL ;
 :%^Pen%^CC2C%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^Pen%^CC2C%^RmVow A_DER/ALLASH ;
 
 
 
@@ -7177,6 +7269,7 @@ LEXICON NMN_STROOIQTEL
 : PL-NOM ;
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_CHEEUQRES !!= * @CODE@ čeeuʹres:če%^1VOWurres
 +N: NMN_CHEEUQRES ;
@@ -7201,6 +7294,7 @@ LEXICON NMN_CHEEUQRES !!= * @CODE@ čeeuʹres:če%^1VOWurres
 :%^PenVow2a%^VC PL-NOM ;
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_POAOAUQTES !!= * @CODE@ pååuʹtes:på%^1VOWhttes
 +N: NMN_POAOAUQTES ;
@@ -7217,6 +7311,7 @@ LEXICON NMN_POAOAUQTES !!= * @CODE@ pååuʹtes:på%^1VOWhttes
 :%^PenVow2a%^VC PL-NOM ;
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_SEEUQTER !!= * @CODE@ seeuʹter:seähtter
 +N: NMN_SEEUQTER ;
@@ -7239,6 +7334,7 @@ LEXICON NMN_SEEUQTER !!= * @CODE@ seeuʹter:seähtter
 :%^PenVow2a PL-NOM ;
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_JEEQEL !!= * @CODE@ jeeʹel:jeäkˈkel
 +N: NMN_JEEQEL ;
@@ -7262,6 +7358,7 @@ LEXICON NMN_JEEQEL !!= * @CODE@ jeeʹel:jeäkˈkel
 :%^PenVow2a PL-NOM ;
 :%^RmVow PL-OBL ;
 :%^Pen%^PALE%^Pen%^PAL%^Pen%^KKK2GG%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^Pen%^PALE%^Pen%^PAL%^Pen%^KKK2GG%^RmVow A_DER/ALLASH ;
 
 LEXICON N_NYYQER !!= * @CODE@ nââʹer:n%^1VOWâkker
 +N: NMN_NYYQER ;
@@ -7284,6 +7381,7 @@ LEXICON NMN_NYYQER !!= * @CODE@ nââʹer:n%^1VOWâkker
 :%^PenVow2a PL-NOM ;
 :%^RmVow PL-OBL ;
 :%^Pen%^PAL%^Pen%^KK2GG%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^Pen%^PAL%^Pen%^KK2GG%^RmVow A_DER/ALLASH ;
 
 !! !!s:z-stem type
 LEXICON N_NUQKHKHESH
@@ -7307,6 +7405,7 @@ LEXICON NMN_MAINSTUMMUSH
 :%^VC PL-NOM ;
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 
 !! CLASS 4 BISYLLABIC, LOW VOWEL, DIPHTHONG, PALATALIZATION
@@ -7331,6 +7430,7 @@ LEXICON NMN_CYYQ33EL !!= * @CODE@ kääʹlles:källes
 :%^RmVow%>e ESS/PAR ;  				! câʒʒlen
 :%^RmVow PL-OBL ;					! câʒʒli
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ câʒʒl-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_KAAQLLES !!= * @CODE@ kääʹlles:kä%^1VOW%{ʹØ%}lles
 +N: NMN_KAAQLLES ;
@@ -7351,6 +7451,7 @@ LEXICON NMN_KAAQLLES !!= * @CODE@ kääʹlles:källes
 :%^RmVow%>e ESS/PAR ;  				! källsen
 :%^RmVow PL-OBL ;					! källsi
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ källs-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_OAQVES !!= * @CODE@ ååʹves:å%^1VOW%{ʹØ%}vves
 +N: NMN_OAQVES ;
@@ -7371,6 +7472,7 @@ LEXICON NMN_OAQVES !!= * @CODE@ ååʹves:å%^1VOWvves
 :%^RmVow%>e ESS/PAR ;  				! åvvsen
 :%^RmVow PL-OBL ;					! åvvsi
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ åvvs-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_KAAQRBES !!= * @CODE@ kääʹrbes:kärbbes
 +N: NMN_KAAQRBES ;
@@ -7392,6 +7494,7 @@ LEXICON NMN_KAAQRBES !!= * @CODE@ kääʹrbes:kärbbes
 :%^PenVow2a%^VC PL-NOM ;	 		! kärbbaz
 :%^RmVow PL-OBL ;					! kärbbsi
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ kärbbs-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_PUAQRES !!= * @CODE@ puäʹres:puärˈres
 +N: NMN_PUAQRES ;
@@ -7412,6 +7515,7 @@ LEXICON NMN_PUAQRES !!= * @CODE@ puäʹres:puärˈres
 :%^RmVow%>e ESS/PAR ;  				! puärˈrsen
 :%^RmVow PL-OBL ;					! puärˈrsi
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ puärˈrs-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_PUAQRES-PL !!= * @CODE@ puäʹres:puärˈres
 +N: NMN_PUAQRES-PL ;
@@ -7421,6 +7525,7 @@ LEXICON NMN_PUAQRES-PL !!= * @CODE@ puäʹres:puärˈres
 :%^RmVow%>e ESS/PAR ;  				! puärˈrsen
 :%^RmVow PL-OBL ;					! puärˈrsi
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ puärˈrs-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_PEAEQLES !!= * @CODE@ peäʹles:peälˈles
 ! peä%{ʹØ%}l%{ˈØ%}%{lØ%}%{eaØ%}%{sz%}
@@ -7442,6 +7547,7 @@ LEXICON NMN_PEAEQLES !!= * @CODE@ peäʹles:peälˈles
 :%^RmVow%>e ESS/PAR ;  				! peälˈlsen
 :%^RmVow PL-OBL ;					! peälˈlsi
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ peälˈls-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_PUUQTTES !!= * @CODE@ puuʹttes:pu%^1VOWtt
 ! p%{uo%}%{uØ%}%{ʹØ%}tt%{eaØ%}%{sz%}
@@ -7461,6 +7567,7 @@ LEXICON NMN_PUUQTTES !!= * @CODE@ puuʹttes:pu%^1VOWtt
 :%^VOWLower%>se A-02_ESS/PAR ;  	! pottsen
 :%^VOWLower%>s A-02_PL-OBL ;		! pottsi
 :%^VOWLower%>s VOONYS-STEM-PX ; !!= * @CODE@ potts-
+:%^VOWLower%>s A_DER/ALLASH ;
 
 
 
@@ -7476,6 +7583,7 @@ LEXICON NMN_NJUAEQMMEL !!= * @CODE@ = stemtype l-stem njuäʹmmel:njuäʹmˈmel
 :%^RmVow%> SG-COM_IN ;
 :%^RmVow%>e ESS/PAR ; ! ess and prt without
 :%^RmVow PL-OBL ;
+:%^RmVow A_DER/ALLASH ;
 
 
 LEXICON N_CIEAQKHKHES !!= * @CODE@ cieʹǩǩes:ciâkˈkes
@@ -7500,6 +7608,7 @@ LEXICON NMN_CIEAQKHKHES
 :%^Pen%^VOWLower%^PenVow2a%^VC PL-NOM ;
 :%^Pen%^VOWLower%^RmVow PL-OBL ;
 :%^Pen%^VOWLower%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^Pen%^VOWLower%^RmVow A_DER/ALLASH ;
 
 LEXICON N_CHUEQDHES !!= * @CODE@ čueʹđes:čuâttes
 +N: NMN_CHUEQDHES ;
@@ -7521,6 +7630,7 @@ LEXICON NMN_CHUEQDHES !!= * @CODE@ čueʹđes:čuâttes
 :%^PenVow2a%^VC PL-NOM ;	 		! čuâttaz
 :%^RmVow PL-OBL ;					! čuâttsi
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_KHEEQLES !!= * @CODE@ ǩeeʹles:ǩeâlˈles
 +N: NMN_KHEEQLES ;
@@ -7542,6 +7652,7 @@ LEXICON NMN_KHEEQLES !!= * @CODE@ ǩeeʹles:ǩeâlˈles
 :%^PenVow2a%^VC PL-NOM ;	 		! ǩeâlˈlaz
 :%^RmVow PL-OBL ;					! ǩeâlˈlsi
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_VUAQPPPES !!= * @CODE@ vueʹppes:vuäpˈpes
 +N: NMN_VUAQPPPES ;
@@ -7562,6 +7673,7 @@ LEXICON NMN_VUAQPPPES !!= * @CODE@ vueʹppes:vuäpˈpes
 :%^PenVow2a%^VC PL-NOM ;	 		! vuäpˈpaz
 :%^RmVow PL-OBL ;					! vuäpˈpsi
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_KHEEQSTES !!= * @CODE@ ǩeeʹstes:ǩeâsttes
 +N: NMN_KHEEQSTES ;
@@ -7583,6 +7695,7 @@ LEXICON NMN_KHEEQSTES !!= * @CODE@ ǩeeʹstes:ǩeâsttes
 :%^PenVow2a%^RmCns PL-NOM ;	 		! ǩeâstta
 :%^RmVow PL-OBL ;					! ǩeâsttsi
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_VIEQLPES !!= * @CODE@ vieʹlpes:ǩeâlppes
 +N: NMN_VIEQLPES ;
@@ -7604,6 +7717,7 @@ LEXICON NMN_VIEQLPES !!= * @CODE@ vieʹlpes:ǩeâlppes
 :%^PenVow2a%^RmCns PL-NOM ;	 		! viâlppa
 :%^RmVow PL-OBL ;					! viâlppsi
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_PUEAQRDES !!= * @CODE@ čueʹcǩes:čuäckkes
 +N: NMN_PUEAQRDES ;
@@ -7625,6 +7739,7 @@ LEXICON NMN_PUEAQRDES !!= * @CODE@ čueʹcǩes:čuäckkes
 :%^PenVow2a%^RmCns PL-NOM ;	 		! čuäckka
 :%^RmVow PL-OBL ;					! čuäckksi
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 LEXICON N_VUEAEQDDES !!= * @CODE@ vuẹʹddes:vuädˈdes
 +N: NMN_VUEAEQDDES ;
@@ -7646,6 +7761,7 @@ LEXICON NMN_VUEAEQDDES !!= * @CODE@ vuẹʹddes:vuädˈdes
 :%^PenVow2a%^RmCns PL-NOM ;	 		! vuädˈda
 :%^RmVow PL-OBL ;					! vuädˈdsi
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%^RmVow A_DER/ALLASH ;
 
 
 LEXICON N_SAQPPLI !!= * @CODE@ säʹppli:säʹppl
@@ -7979,6 +8095,7 @@ LEXICON NMN_BIOLOGIA
  PL-NOM ;    !!= * @CODE@	+Pl+Nom
  PL-OBL ;    !!= * @CODE@	+Pl+Gen
  VOWEL-FINAL-STEM-PX ;
++Use/SpellNoSugg: A_DER/LAZH ;
 
 LEXICON N_BUKVA
 +N: NMN_BUKVA ;
@@ -8138,6 +8255,7 @@ LEXICON NMN_ENERGII
 +Use/NG:i PL-OBL ;           !!= * @CODE@ (TSA-4) +Pl+Gen:
 !FIX-DIM
 :a N_BIOLOGIA ;
++Use/SpellNoSugg:i A_DER/LAZH ;
 
 
 
