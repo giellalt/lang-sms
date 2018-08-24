@@ -180,6 +180,7 @@ Alphabet
 %^Hyphen:0    !!= * @CODE@ at compound word boundary with %-
 %^NoHyphen:0    !!= * @CODE@ at compound word boundary
 
+
 !! Literal quotes and angles must be escaped (cf morpheme boundaries below):
 
  »7     !! * »
@@ -887,6 +888,11 @@ OnSetC  ẹ: _ (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^V
 !! vuʹvll+N+Sg+Ill: voulla
 !!€ vu^1VOWvll^VOWLower^XYY2VYY>a
 !!€ vo0ull00>a
+        OnSetC _ (%^1VOW:) (ʹ:|%{ʹØ%}:) h: (0:ʹ|%{ʹØ%}:) [t t: |s s:|c c:|č č:|š š:] (%^V2VV:) %^VOWLower:  ;
+!! puʹhtted+V+Cond+Pl3 __to give__
+!!€ pu^1VOW%{ʹØ%}h%{ʹØ%}tt^VOWLower
+!!€ po00h0tt0
+
   OnSetC _ [u:o|u:0] (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] (%^VV2V:)  %^VOWLower: BetweenVowHeightAndMorph ;
 !! kuullâd+V+Ind+Prs+Pl3 __hear/kuulla__
 !!€ kuu0ll^VV2V^VOWLower^PAL^CC2C>e
@@ -908,7 +914,7 @@ OnSetC  ẹ: _ (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^V
 !! juʹrdded+V+Cond+Sg1: joordčem
 !! juʹrdded > joordam
 
- OnsetC _ (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) [CNoV: Cns:* |Cns:+ (ˈ:|:ˈ) Cns:+]  Vow: Cns:*  %^Pen: %^VOWLower: ;
+ OnSetC _ (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) [CNoV: Cns:* |Cns:+ (ˈ:|:ˈ) Cns:+]  Vow: Cns:*  %^Pen: %^VOWLower: ;
 !! puuʹttes+A+Sg+Gen: __bright/kirkas__
 !!€ pu^1VOWttes^Pen^VOWLower^PenVow2a^VC
 !!€ po0ttaz0000
@@ -924,7 +930,7 @@ OnSetC u: _   (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|r d d:
 !! __@RULENAME@__ - deriving
  u:õ <=>
     u: _  (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] ( Vow: Cns:* %^Pen: ) %^U2Õ: ;
-    OnsetC _ (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] [BetweenStemAndHeight | Vow: Cns:* PenBetweenStemAndHeight %^Pen: ] %^U2Õ: ;
+    OnSetC _ (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] [BetweenStemAndHeight | Vow: Cns:* PenBetweenStemAndHeight %^Pen: ] %^U2Õ: ;
 !!€ ču^1VOWkk^V2VV^U2Õ>až
 !!€ čõõkk00>až
     OnSetC  _ u: (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^U2Õ: ;
@@ -1143,17 +1149,17 @@ OnSetC u: _   (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|r d d:
  %^1VOW:õ <=>
      OnSetC Vow:õ _ (u:|i:) (ʹ:|0:ʹ|%{ʹØ%}:)  Cns:+ (%{XC%}:) %^V2VV: ;
 !! âʹlǧǧ+N+Pl+Gen: __boy/poika__
-!!€ â%^1VOW0lgg%^V2VV%^VOWRaise%^PAL%^XYY2XY%>i
+!!€ â%^1VOW%{ʹØ%}lgg%^V2VV%^VOWRaise%^PAL%^XYY2XY%>i
 !!€ õõʹlj00000%>i
 !! čâʹlmm+N+Pl+Acc: __eye/silmä__
-!!€ čâ%^1VOW0lmm%^V2VV%^VOWRaise%^PAL%^XYY2XY%>id
+!!€ čâ%^1VOW%{ʹØ%}lmm%^V2VV%^VOWRaise%^PAL%^XYY2XY%>id
 !!€ čõõʹlm00000%>id
-     OnSetC u:õ _ (ʹ:|0:ʹ|%{ʹØ%}:)  Cns:+ (%{XC%}:) [ %^V2VV: %^U2Õ: | %^Pen: %^V2VV: %^Pen: %^U2Õ: ] ;
+     OnSetC [u:õ|õ] _ (ʹ:|0:ʹ|%{ʹØ%}:)  Cns:+ (%{XC%}:) [ %^V2VV:  | %^Pen: %^V2VV:] ;
 !!€ ču%^1VOWkk%^V2VV%^U2Õ%>až
 !!€ čõõkk00%>až
 
 !Distinguishing mainstam and maainstam
-      Cns: õ _ (u:|i:) (ʹ:|0:ʹ|%{ʹØ%}:)  Cns: Cns:* Vow: [Cns:+| %{XC%}:Cns]  %^Pen: %^V2VV: ;
+      OnSetC õ _ (u:|i:) (ʹ:|0:ʹ|%{ʹØ%}:)  Cns: Cns:* Vow: [Cns:+| %{XC%}:Cns]  %^Pen: %^V2VV: ;
 
    OnSetC [õ|Õ] _ (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ (%{XC%}:) %^V2VV: ;
 !!€ võ%^1VOWrr%^V2VV%^CC2C
@@ -1175,6 +1181,9 @@ OnSetC u: _   (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|r d d:
 !! radio+N+Sg+Ill
 !!€ radio%^1VOW%^V2VVʹje
 !!€ radioo0ʹje
+
+   OnSetC [u:õ|õ] _ (%{ʹØ%}:)  Cns:+ Vow: Cns:* %^Pen: %^V2VV: ;
+
 
 
 "Even syllabic verbs I, relative vowel lengthening %^1VOW:ä"
@@ -1312,6 +1321,10 @@ OnSetC [i|I] _ (%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^V2VV: Betwe
 !!$ pu%^1VOW0ttes%^Pen%^V2VV%^Pen%^PAL
 !!$ pu0ʹttes0000
 
+ OnSetC u _ (ʹ:|0:ʹ|%{ʹØ%}:) v %{ʹØ%}:0 Cns:*  %^V2VV: BetweenVowHeightAndMorph ;
+!! vuʹvdd+N+Err/Orth+Sg+Gen: __area/alue__
+!!€ vu%^1VOW%{ʹØ%}v%{ʹØ%}dd%^V2VV%^PAL%^XYY2XY
+!!€ vuuʹv0d0000
   u _ %^V2VV: ;
 !! Oulu+N+Prop+Sg+Ill
 !!€ Oulu%^1VOW%^V2VVʹje
@@ -1446,7 +1459,9 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ|%{ʹØ%}:) t t: BetweenStemAndConsGrade %^XYY2IY: 
 !! pieʹll+N+Sg+Nom: __half__
 !!€ peä0ll%^VOWRaise%^PALẸ%^PAL
 !!€ piẹʹll000
-
+    u _ j j: %^PALẸ: ;
+!!€ tuâjj^PALẸ
+!!€ tuẹjj0
 
 "Palatalization for ẹ:e"
 !! __@RULENAME@__ - used in
@@ -2082,6 +2097,11 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ|%{ʹØ%}:) t t: BetweenStemAndConsGrade %^XYY2IY: 
 !!€ mainstummuš%^VC
 !!€ mainstummuž0
 
+         Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) š: (ˈ:) _  Vow: Cns:* PenBetweenStemAndConsGrade (%^I2J:) %^Pen: [ %^KKK2GG: | %^KK2GG: ] ;
+         Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:)    _ (ˈ:) š: Vow: Cns:* PenBetweenStemAndConsGrade (%^I2J:) %^Pen: [%^KKK2GG:| %^KK2GG: |%^KKK2G:] ;
+
+
+
 "Even syllabic verbs I, Voicing c:ʒ"
 !! __@RULENAME@__ - cc:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
  c:ʒ <=> Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) c: _   (i:)  BetweenStemAndConsGrade (%^I2J:) %^KK2GG: ;
@@ -2102,6 +2122,13 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ|%{ʹØ%}:) t t: BetweenStemAndConsGrade %^XYY2IY: 
 !!€ pååss%^VV2V%^KK2GAllegro»škuätt
 !!€ på0z000»škuätt
 
+         Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) c: (ˈ:) _  Vow: Cns:* PenBetweenStemAndConsGrade (%^I2J:) %^Pen: [ %^KKK2GG: | %^KK2GG: ] ;
+         Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:)    _ (ˈ:) c: Vow: Cns:* PenBetweenStemAndConsGrade (%^I2J:) %^Pen: [%^KKK2GG:| %^KK2GG: |%^KKK2G:] ;
+!! õõʒʒâs+N+Sg+Nom: __high water/vuoksi__
+!!€ õ%^1VOWccâs%^Pen%^V2VV%^Pen%^KK2GG
+!!€ õõʒʒâs0000
+
+
 
 "Even syllabic verbs I, Voicing č:j"
 !! __@RULENAME@__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
@@ -2114,6 +2141,9 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ|%{ʹØ%}:) t t: BetweenStemAndConsGrade %^XYY2IY: 
 !!€ på0z000»škuätt
      Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) č: ˈ: _    (i:) BetweenStemAndConsGrade (%^I2J:) %^KKK2GG: ;
      Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:)    ˈ: _ č: (i:) BetweenStemAndConsGrade (%^I2J:) %^KKK2GG: ;
+
+         Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) č: (ˈ:) _  Vow: Cns:* PenBetweenStemAndConsGrade (%^I2J:) %^Pen: [ %^KKK2GG: | %^KK2GG: ] ;
+         Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:)    _ (ˈ:) č: Vow: Cns:* PenBetweenStemAndConsGrade (%^I2J:) %^Pen: [%^KKK2GG:| %^KK2GG: |%^KKK2G:] ;
 
 "Even syllabic verbs I, Voicing after long vowel or diphthong s:z s:z"
 !! __@RULENAME@__ - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
@@ -2144,6 +2174,8 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ|%{ʹØ%}:) t t: BetweenStemAndConsGrade %^XYY2IY: 
 !!€ čårrõ%^1VOW%{ʹØ%}s%{XC%}%^V2VV%^K2GG
 !!€ čårrõõ0zz00
 
+         Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) s: (ˈ:) _  Vow: Cns:* PenBetweenStemAndConsGrade (%^I2J:) %^Pen: [ %^KKK2GG: | %^KK2GG: ] ;
+         Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:)    _ (ˈ:) s: Vow: Cns:* PenBetweenStemAndConsGrade (%^I2J:) %^Pen: [%^KKK2GG:| %^KK2GG: |%^KKK2G:] ;
 
 
 
