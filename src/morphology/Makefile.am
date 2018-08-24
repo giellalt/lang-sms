@@ -43,6 +43,7 @@ GT_LEXC_SRCS_L1_L2=\
 				affixes/nouns.lexc \
 				affixes/pronouns.lexc \
 				affixes/propernouns.lexc \
+				affixes/smi-propernouns.lexc \
 				affixes/verbs.lexc \
 				compounding.lexc \
 				clitics.lexc
@@ -78,6 +79,7 @@ GT_LEXC_L2_SRCS=\
 
 # Set this to the names of all generated lexc files, if any
 GENERATED_LEXC_SRCS=\
+			 generated_files/smi-$(GTLANG)-propernouns.lexc	\
 			 $(srcdir)/stems/A_sms2x.lexc     \
 			 $(srcdir)/stems/ITRAB_sms2x.lexc     \
 			 $(srcdir)/stems/TRAB_sms2x.lexc     \
@@ -144,6 +146,22 @@ GT_DISTRO_SRCS=
 ### gle/ for an example of how this is used.
 
 GIELLA_LOCAL_TARGETS=
+
+generated_files/smi-propernouns.lexc: \
+			$(GIELLA_SHARED)/smi/src/morphology/stems/smi-propernouns.lexc
+	$(AM_V_at)$(MKDIR_P) generated_files
+	$(AM_V_GEN)cp -f $< $@
+
+generated_files/smi-$(GTLANG)-propernouns.lexc: \
+		generated_files/smi-propernouns.lexc \
+		$(srcdir)/stems/$(GTLANG)-propernouns.lexc
+	$(AM_V_GEN)rm -f $@ && \
+	cp -f $(srcdir)/stems/$(GTLANG)-propernouns.lexc $@ && \
+	echo "" >> $@ && \
+	echo "! <--- Dump from SMI -->" >> $@ && \
+	echo "" >> $@ && \
+	$(top_srcdir)/src/scripts/smi-$(GTLANG)-conversion.pl $< >> $@
+
 
 ### END: Local processing: ###
 

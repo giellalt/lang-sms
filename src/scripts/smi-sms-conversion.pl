@@ -19,10 +19,13 @@ while(<>) {
 #	s/ C-FI-NEN/nen LONDON/g ;
 #	s/SUND/BERN/g ;
 #	s/HEIM/BERN/g ;
-	s/NIKOSIIJA(\-ani|\-fem|\-mal|\-obj|\-org|\-plc|\-sur)/PROP_TRUUBA$1/g ;
-	s/ACCRA(\-ani|\-fem|\-mal|\-obj|\-org|\-plc|\-sur)/PROP_TRUUBA$1/g ;
-	s/SIJTE(\-ani|\-fem|\-mal|\-obj|\-org|\-plc|\-sur)/PROP_TRUUBA$1/g ;
-	s/HAWAII(\-ani|\-fem|\-mal|\-obj|\-org|\-plc|\-sur)/PROP_TRUUBA$1/g ;
+	s/(NIKOSIIJA|ACCRA|SIJTE|HAWAII)(\-ani)/PROP_TRUUBA$2/g ;
+	s/(NIKOSIIJA|ACCRA|SIJTE|HAWAII)(\-fem)/PROP_TRUUBA$2/g ;
+	s/(NIKOSIIJA|ACCRA|SIJTE|HAWAII)(\-mal)/PROP_TRUUBA$2/g ;
+	s/(NIKOSIIJA|ACCRA|SIJTE|HAWAII)(\-obj)/PROP_TRUUBA$2/g ;
+	s/(NIKOSIIJA|ACCRA|SIJTE|HAWAII)(\-org)/PROP_TRUUBA$2/g ;
+	s/(NIKOSIIJA|ACCRA|SIJTE|HAWAII)(\-plc)/PROP_TRUUBA$2/g ;
+	s/(NIKOSIIJA|ACCRA|SIJTE|HAWAII)(\-sur)/PROP_TRUUBA$2/g ;
 
 #	s/BALAK/LONDON/g ;
 #	s/SKANIK/SULLOT/g ;
