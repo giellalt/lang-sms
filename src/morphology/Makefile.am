@@ -102,6 +102,7 @@ GENERATED_LEXC_SRCS=\
 			 $(srcdir)/stems/Pron_sms2x.lexc     \
 			 $(srcdir)/stems/V_sms2x.lexc     \
 			 $(srcdir)/stems/ABBR_sms2x.lexc
+#            generated_files/punctuation.lexc
 
 # Set this to the names of all source xml files, if any
 GT_XML_SRCS=\
