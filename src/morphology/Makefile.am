@@ -32,6 +32,7 @@ GT_LEXC_SRCS_L1_L2=\
 				compounding.lexc \
 			 stems/N_sms2x.lexc     \
 			 stems/V_sms2x.lexc     \
+			 stems/punctuation.lexc \
 				clitics.lexc
 
 #
@@ -95,7 +96,8 @@ GT_LEXC_L2_SRCS=\
 			$(L2)
 
 # Set this to the names of all generated lexc files, if any
-GENERATED_LEXC_SRCS=generated_files/punctuation.lexc
+#GENERATED_LEXC_SRCS=generated_files/punctuation.lexc
+GENERATED_LEXC_SRCS=
 
 
 # Set this to the names of all source xml files, if any
