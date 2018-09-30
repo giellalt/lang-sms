@@ -117,10 +117,10 @@ LEXICON ACCRA-obj
 LEXICON ACCRA-LOAN-obj
 +N+Prop+Sem/Obj:%> ACCRADECL-LOAN ;
 
-LEXICON ACCRA-objplc
-+N+Prop+Sem/Obj:%> ACCRADECL ;
-+N+Prop+Sem/Plc:%> ACCRADECL_PLC-ORG ;
-+N+Prop+Sem/Sur:%> ACCRADECL_PLC-ORG ;
+!LEXICON ACCRA-objplc
+!+N+Prop+Sem/Obj:%> ACCRADECL ;
+!+N+Prop+Sem/Plc:%> ACCRADECL_PLC-ORG ;
+!+N+Prop+Sem/Sur:%> ACCRADECL_PLC-ORG ;
 
 LEXICON ACCRA-org
 +N+Prop+Sem/Org:%> ACCRADECL_PLC-ORG ;
@@ -132,9 +132,9 @@ LEXICON ACCRA-mal
 +N+Prop+Sem/Mal:%>  ACCRADECL ;
 +N+Prop+Sem/Mal+Der1+Der/Dimin+N:%>ž PLACE-DIMDECL ; !From PIERADECL
 
-LEXICON ACCRA-malsur
-+N+Prop+Sem/Mal:%>  ACCRADECL ;
-+N+Prop+Sem/Sur:%>  ACCRADECL ;
+!LEXICON ACCRA-malsur
+!+N+Prop+Sem/Mal:%>  ACCRADECL ;
+!+N+Prop+Sem/Sur:%>  ACCRADECL ;
 
 LEXICON ACCRA-fem
 +N+Prop+Sem/Fem:%>  ACCRADECL ;
@@ -144,11 +144,11 @@ LEXICON ACCRA-femsur
 +N+Prop+Sem/Fem:%>  ACCRADECL ;
 +N+Prop+Sem/Sur:%>  ACCRADECL ;
 
-LEXICON ACCRA-femplc !Names that are both female names and place names
-+N+Prop+Sem/Fem:%>  ACCRADECL ;
-+N+Prop+Sem/Plc:%> ACCRADECL_PLC-ORG ;
-+N+Prop+Sem/Sur:%> ACCRADECL_PLC-ORG ;
-:%> PLACELASH ;
+!LEXICON ACCRA-femplc !Names that are both female names and place names
+!+N+Prop+Sem/Fem:%>  ACCRADECL ;
+!+N+Prop+Sem/Plc:%> ACCRADECL_PLC-ORG ;
+!+N+Prop+Sem/Sur:%> ACCRADECL_PLC-ORG ;
+!:%> PLACELASH ;
 
 LEXICON ACCRA-malfem
 +N+Prop+Sem/Fem:%>  ACCRADECL ;
@@ -364,45 +364,45 @@ LEXICON RONDANE-SG-OBL-case
 !+Pl+Com:jgujn K ;
 
 
-LEXICON HAWAII-plc
- +N+Prop+Sem/Plc: HAWAII-plc-derinfl ;
- +N+Prop+Sem/Sur: HAWAII-plc-derinfl ;
+!LEXICON HAWAII-plc
+! +N+Prop+Sem/Plc: HAWAII-plc-derinfl ;
+! +N+Prop+Sem/Sur: HAWAII-plc-derinfl ;
 
-LEXICON HAWAII-plc-derinfl
-@U.Cap.Obl@ HAWAII-case ;
-@U.Cap.Opt@+Der1+Der/lasj+CmpN/SgN+CmpN/SgG+CmpN/PlG+A:@U.Cap.Opt@ HAWAIILASH ;
+!LEXICON HAWAII-plc-derinfl
+!@U.Cap.Obl@ HAWAII-case ;
+!@U.Cap.Opt@+Der1+Der/lasj+CmpN/SgN+CmpN/SgG+CmpN/PlG+A:@U.Cap.Opt@ HAWAIILASH ;
 
-LEXICON HAWAII-case
-            +Cmp/SgNom:%>     RHyph ;
-   +Cmp/SgGen+Err/Orth:%>     RHyph ;   ! for placenames
-               +Sg+Nom:     K ;
-               +Sg+Acc:     K ;
-               +Sg+Gen:     K ;
-                  +Ess:%>jin  K ;
-               +Sg+Ill:%>jii  K ;
-               +Sg+Loc:%>jis  K ;
-+Sg+Loc+South+Err/Orth:%>jin  K ; !SOUTH
-               +Sg+Com:%>jijn K ;
-!              +Pl+Nom:%>jit  K ;
-!                     :%>     ACCRA-DC ;
-!                     :%>ji   ACCRA-OBL_PLC-ORG ;
-!                     :%>ji   ACCRA-IICASE ;
-
-
-LEXICON HAWAIILASH
-       :%>lažž ATTR      ;
-       :lažž   JOHTOLAT0 ;
-+Sg+Nom:lažža  PxVvowch  ; ! tentative.
-   +Ess:lažžan K         ;
-   +Ess:lažžan PxC       ;
-       :lažža  LASJOBL   ; ! Under ISSORASSA-
+!LEXICON HAWAII-case
+!            +Cmp/SgNom:%>     RHyph ;
+!   +Cmp/SgGen+Err/Orth:%>     RHyph ;   ! for placenames
+!               +Sg+Nom:     K ;
+!               +Sg+Acc:     K ;
+!               +Sg+Gen:     K ;
+!                  +Ess:%>jin  K ;
+!               +Sg+Ill:%>jii  K ;
+!               +Sg+Loc:%>jis  K ;
+!+Sg+Loc+South+Err/Orth:%>jin  K ; !SOUTH
+!               +Sg+Com:%>jijn K ;
+!!              +Pl+Nom:%>jit  K ;
+!!                     :%>     ACCRA-DC ;
+!!                     :%>ji   ACCRA-OBL_PLC-ORG ;
+!!                     :%>ji   ACCRA-IICASE ;
 
 
-LEXICON HAWAII-sur
-+N+Prop+Sem/Sur:%> ACCRA-DC ;
-+N+Prop+Sem/Sur:%> ACCRA-OBL ;
-+N+Prop+Sem/Sur:%> ACCRA-IICASE ;
-+N+Prop+Sem/Sur:%>X5 ACCRA-IICASE-SGCOM ;
+!LEXICON HAWAIILASH
+!       :%>lažž ATTR      ;
+!       :lažž   JOHTOLAT0 ;
+!+Sg+Nom:lažža  PxVvowch  ; ! tentative.
+!   +Ess:lažžan K         ;
+!   +Ess:lažžan PxC       ;
+!       :lažža  LASJOBL   ; ! Under ISSORASSA-
+
+
+!LEXICON HAWAII-sur
+!+N+Prop+Sem/Sur:%> ACCRA-DC ;
+!+N+Prop+Sem/Sur:%> ACCRA-OBL ;
+!+N+Prop+Sem/Sur:%> ACCRA-IICASE ;
+!+N+Prop+Sem/Sur:%>X5 ACCRA-IICASE-SGCOM ;
 
 !LEXICON SKOHTERMADII-plc
 !0@U.Cap.Obl@+N+Prop+Sem/Plc:%>@U.Cap.Obl@ SKOHTERMADIIDECL ;
@@ -702,61 +702,61 @@ LEXICON MARJA-SHORTGENcase
 !LEXICON SIJTE-obj
 !+N+Prop+Sem/Obj:%> SIJTEDECL ;
 
-LEXICON SIJTE-org
-+N+Prop+Sem/Org:%> SIJTEDECL_PLC-ORG ;
+!LEXICON SIJTE-org
+!+N+Prop+Sem/Org:%> SIJTEDECL_PLC-ORG ;
 
-LEXICON SIJTE-mal
-+N+Prop+Sem/Mal:%>  SIJTEDECL ;
+!LEXICON SIJTE-mal
+!+N+Prop+Sem/Mal:%>  SIJTEDECL ;
 
-LEXICON SIJTE-fem
-+N+Prop+Sem/Fem:%>  SIJTEDECL ;
+!LEXICON SIJTE-fem
+!+N+Prop+Sem/Fem:%>  SIJTEDECL ;
 
-LEXICON SIJTE-sur
-+N+Prop+Sem/Sur:%> SIJTEDECL ;
+!LEXICON SIJTE-sur
+!+N+Prop+Sem/Sur:%> SIJTEDECL ;
 
-LEXICON SIJTE-plc ! Place names
-+N+Prop+Sem/Plc:%>  SIJTEDECL_PLC-ORG ;
-+N+Prop+Sem/Sur:%>  SIJTEDECL_PLC-ORG ;
-:%> PLACELASH ;
-
-
-
-LEXICON SIJTEDECL
-! These sublexica are irrelevant for SIJTE, but added
-! for the sake of the lexicon MARJA ! Muhto gč. dat kommentára... Imaštallan dan gal veha...
-ACCRA-DC ;                          !Nom, Ess
-!+Err/Orth:W9 ACCRA-I ; 
-+Err/Orth: SIJTE-I ;
-! Here, we allow for Illative Sijtei
-!Dát ii oro doibmamin, go Sijtei lea dovdameahttun lookupis. W9hmm, sáhtá leat konv-feailla.
-!Does not work, W9 is commented out in twol.
-!NB! Sijtii is norm, Sijtei is SUB, the -ei-illative should just be used in cases like Marie (where it already works)
- ACCRA-I ;      !Here, we allow for Illative Sijtii
- ACCRA-OBL ;
- ACCRA-IICASE ;
-:X5 ACCRA-IICASE ;
+!LEXICON SIJTE-plc ! Place names
+!+N+Prop+Sem/Plc:%>  SIJTEDECL_PLC-ORG ;
+!+N+Prop+Sem/Sur:%>  SIJTEDECL_PLC-ORG ;
+!:%> PLACELASH ;
 
 
-LEXICON SIJTEDECL_PLC-ORG
-! These sublexica are irrelevant for SIJTE, but added
-! for the sake of the lexicon MARJA ! Muhto gč. dat kommentára... Imaštallan dan gal veha...
-ACCRA-DC ;                          !Nom, Ess
-!+Err/Orth:W9 ACCRA-I ; 
-+Err/Orth: SIJTE-I ;
- ! Here, we allow for Illative Sijtei
-!Dát ii oro doibmamin, go Sijtei lea dovdameahttun lookupis. W9hmm, sáhtá leat konv-feailla.
-!Does not work, W9 is commented out in twol.
-!NB! Sijtii is norm, Sijtei is SUB, the -ei-illative should just be used in cases like Marie (where it already works)
- ACCRA-I ;      !Here, we allow for Illative Sijtii
- ACCRA-OBL_PLC-ORG ;
- ACCRA-IICASE-SGCOM ;
-!@U.Cap.Obl@ ACCRA-IICASE ;
 
-LEXICON SIJTE-I
-@U.Cap.Obl@ SIJTE-Icase ;
+!LEXICON SIJTEDECL
+!! These sublexica are irrelevant for SIJTE, but added
+!! for the sake of the lexicon MARJA ! Muhto gč. dat kommentára... Imaštallan dan gal veha...
+!ACCRA-DC ;                          !Nom, Ess
+!!+Err/Orth:W9 ACCRA-I ; 
+!+Err/Orth: SIJTE-I ;
+!! Here, we allow for Illative Sijtei
+!!Dát ii oro doibmamin, go Sijtei lea dovdameahttun lookupis. W9hmm, sáhtá leat konv-feailla.
+!!Does not work, W9 is commented out in twol.
+!!NB! Sijtii is norm, Sijtei is SUB, the -ei-illative should just be used in cases like Marie (where it already works)
+! ACCRA-I ;      !Here, we allow for Illative Sijtii
+! ACCRA-OBL ;
+! ACCRA-IICASE ;
+!:X5 ACCRA-IICASE ;
 
-LEXICON SIJTE-Icase
-+Sg+Ill:i K ;
+
+!LEXICON SIJTEDECL_PLC-ORG
+!! These sublexica are irrelevant for SIJTE, but added
+!! for the sake of the lexicon MARJA ! Muhto gč. dat kommentára... Imaštallan dan gal veha...
+!ACCRA-DC ;                          !Nom, Ess
+!!+Err/Orth:W9 ACCRA-I ; 
+!+Err/Orth: SIJTE-I ;
+! ! Here, we allow for Illative Sijtei
+!!Dát ii oro doibmamin, go Sijtei lea dovdameahttun lookupis. W9hmm, sáhtá leat konv-feailla.
+!!Does not work, W9 is commented out in twol.
+!!NB! Sijtii is norm, Sijtei is SUB, the -ei-illative should just be used in cases like Marie (where it already works)
+! ACCRA-I ;      !Here, we allow for Illative Sijtii
+! ACCRA-OBL_PLC-ORG ;
+! ACCRA-IICASE-SGCOM ;
+!!@U.Cap.Obl@ ACCRA-IICASE ;
+
+!LEXICON SIJTE-I
+!@U.Cap.Obl@ SIJTE-Icase ;
+
+!LEXICON SIJTE-Icase
+!+Sg+Ill:i K ;
 
 
 !LEXICON GUOLBBA-plc ! Place names
