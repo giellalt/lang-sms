@@ -18,8 +18,6 @@ LEXICON N_NIJDD !!= * @CODE@ nijdd:ni
 LEXICON	NMN_NIJDD	!!= * @CODE@ nijdd:ni
 !! * Yaml: __N-nijdd__
 :jdd SG-NOM ;			!!= * @CODE@ nijdd
-+Err/GenreLeudd:jddâ SG-NOM ;			!!= * @CODE@ nijddâ
-+Err/GenreLeudd:jddâ SG-NOM ;			!!= * @CODE@ nijddâ
 :jdd%>â ESS/PAR ; 	  		!!= * @CODE@ nijddân, nijddâd
 !! strong_geminate, short_vowel, palatalization
 :%{ʹØ%}jdd%^PAL%>e SG-ILL ;		!!= * @CODE@ niʹjdde
@@ -36,6 +34,32 @@ LEXICON	NMN_NIJDD	!!= * @CODE@ nijdd:ni
 :õđ HatY-STEM-PX-WEAKEN_LARGO ;
 :õđ SG-LOC-PX ;
 :õđ HatY-STEM-PX-STRENGTHEN ;
+
++Err/GenreLeudd:õđâ SG-ABE/ACC/GEN-PL-NOM ;     !!= * @CODE@ niõđ Leudd 2018-09-20
++Err/GenreLeudd:õđâ SG-COM_N ; !!= * @CODE@ Leudd 2018-09-20
+
+
+! Test data:
+!!€gt-norm: nijdd #
+!!€ nijdd:  	 nijdd+N+Sg+Nom
+!!€ niõd: 	 nijdd+N+Sg+Gen
+!!€ niõd: 	 nijdd+N+Sg+Acc
+!!€ niʹjdde: 	 nijdd+N+Sg+Ill
+!!€ niõdâst: 	 nijdd+N+Sg+Loc
+!!€ niõdstad: 	 nijdd+N+Sg+Loc+PxSg1
+!!€ niõdin: 	 nijdd+N+Sg+Com
+!!€ nijddân: 	 nijdd+N+Ess
+!!€ nijddâd: 	 nijdd+N+Par
+!!€ niõdtaa: 	 nijdd+N+Sg+Abe
+!!€ niõd:	 nijdd+N+Pl+Nom
+!!€ niõdi: 	 nijdd+N+Pl+Gen
+!!€ niõdid: 	 nijdd+N+Pl+Acc
+!!€ niõdid: 	 nijdd+N+Pl+Ill
+!!€ niõdin: 	 nijdd+N+Pl+Loc
+!!€ niõdivuiʹm:  nijdd+N+Pl+Com
+!!€ niõditaa: 	 nijdd+N+Pl+Abe
+!!€ niõdâž:      nijdd+N+Der/Dimin+N+Sg+Nom
+!!€ niõʹde:      nijdd+N+Der/Dimin+N+Sg+Gen
 
 
 
@@ -111,7 +135,7 @@ LEXICON NMN_PAPP
 HatY-STEM-PX-RETAIN ;
 :%^V2VV HatY-STEM-PX-WEAKEN ; !! e.g. 
 :%^V2VV HatY-STEM-PX-WEAKEN_LARGO ; !! e.g. +Use/NG+Sg+Loc+PxSg3
-:%^CC2CAllegro SG-LOC-PX ; !! e.g. +Sg+Loc+PxSg3 pp:p papstes
+:%^CC2CAllegro SG-LOC-PX_ALLEGRO ; !! e.g. +Sg+Loc+PxSg3 pp:p papstes
  HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_PAPP-PL
@@ -131,6 +155,7 @@ LEXICON N_PAPP-PL
 !!€ paʹppe: 	 papp+N+Sg+Ill
 !!€ paappâst: 	 papp+N+Sg+Loc
 !!€ papstan: 	 papp+N+Sg+Loc+PxSg1
+!!€ paappstan: 	 papp+N+Sg+Loc+PxSg1
 !!€ paappin: 	 papp+N+Sg+Com
 !!€ pappân: 	 papp+N+Ess
 !!€ pappâd: 	 papp+N+Par
@@ -205,7 +230,7 @@ LEXICON NMN_ALGG
 HatY-STEM-PX-RETAIN ;
 :%^V2VV%^XYY2XY HatY-STEM-PX-WEAKEN ;
 :%^V2VV%^XYY2XY HatY-STEM-PX-WEAKEN_LARGO ;
-:%^XYY2XY SG-LOC-PX ;
+:%^XYY2XY SG-LOC-PX_ALLEGRO ;
 : HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_ALGG-PL !!= * @CODE@ põõrt:põrtt
@@ -294,7 +319,7 @@ LEXICON NMN_AUTT
 HatY-STEM-PX-RETAIN ;
 :%^V2VV%^XYY2XY HatY-STEM-PX-WEAKEN ;
 :%^V2VV%^XYY2XY HatY-STEM-PX-WEAKEN_LARGO ;
-:%^XYY2XY SG-LOC-PX ;
+:%^XYY2XY SG-LOC-PX_ALLEGRO ;
  HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_AUTT-PL !!= * @CODE@ aaut:autt
@@ -382,7 +407,7 @@ LEXICON NMN_VAHTT
 HatY-STEM-PX-RETAIN ;
 :%^V2VV%^XYY2VY HatY-STEM-PX-WEAKEN ;
 :%^V2VV%^XYY2VY HatY-STEM-PX-WEAKEN_LARGO ;
-:%^XYY2VY SG-LOC-PX ;
+:%^XYY2VY SG-LOC-PX_ALLEGRO ;
  HatY-STEM-PX-STRENGTHEN ;
 
 ! Test data:
@@ -468,7 +493,7 @@ LEXICON NMN_KUSS
 HatY-STEM-PX-RETAIN ;
 :%^V2VV%^KK2GG HatY-STEM-PX-WEAKEN ;
 :%^V2VV%^KK2GG HatY-STEM-PX-WEAKEN_LARGO ;
-:%^KK2GAllegro SG-LOC-PX ;
+:%^KK2GAllegro SG-LOC-PX_ALLEGRO ;
  HatY-STEM-PX-STRENGTHEN ;
 
 ! Test data:
@@ -527,7 +552,7 @@ LEXICON NMN_RUOCCC !!= * @CODE@ ruõcc:ruõcˈc
 HatY-STEM-PX-RETAIN ;
 :%^CCC2CC HatY-STEM-PX-WEAKEN ;
 :%^CCC2CC HatY-STEM-PX-WEAKEN_LARGO ;
-:%^Allegro%^CCC2CAllegro SG-LOC-PX ;
+:%^Allegro%^CCC2CAllegro SG-LOC-PX_ALLEGRO ;
  HatY-STEM-PX-STRENGTHEN ;
 
 ! Test data:
@@ -610,7 +635,7 @@ LEXICON NMN_CHUOSHKK
 HatY-STEM-PX-RETAIN ;
 :%^XYY2XY HatY-STEM-PX-WEAKEN ;
 :%^XYY2XY HatY-STEM-PX-WEAKEN_LARGO ;
-:%^Allegro%^XYY2XY SG-LOC-PX ;
+:%^Allegro%^XYY2XY SG-LOC-PX_ALLEGRO ;
 : HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_CHUOSHKK-PL !!= * @CODE@ čuõšk:čuõškk
@@ -698,7 +723,7 @@ LEXICON NMN_RUOIDD
 HatY-STEM-PX-RETAIN ;
 :%^XYY2XY HatY-STEM-PX-WEAKEN ;
 :%^XYY2XY HatY-STEM-PX-WEAKEN_LARGO ;
-:%^Allegro%^XYY2XY SG-LOC-PX ;
+:%^Allegro%^XYY2XY SG-LOC-PX_ALLEGRO ;
 : HatY-STEM-PX-STRENGTHEN ;
 
 ! Test data:
@@ -777,7 +802,7 @@ LEXICON NMN_PUOAVV
 HatY-STEM-PX-RETAIN ;
 :%^CC2C HatY-STEM-PX-WEAKEN ;
 :%^CC2C HatY-STEM-PX-WEAKEN_LARGO ;
-:%^Allegro%^CC2CAllegro SG-LOC-PX ;
+:%^Allegro%^CC2CAllegro SG-LOC-PX_ALLEGRO ;
 :%^CC2CCC HatY-STEM-PX-STRENGTHEN ;
 
 ! Test data:
@@ -855,7 +880,7 @@ LEXICON NMN_SIYKKK
 HatY-STEM-PX-RETAIN ;
 :%^CCC2CC HatY-STEM-PX-WEAKEN ;
 :%^CCC2CC HatY-STEM-PX-WEAKEN_LARGO ;
-:%^Allegro%^CCC2CAllegro SG-LOC-PX ;
+:%^Allegro%^CCC2CAllegro SG-LOC-PX_ALLEGRO ;
 : HatY-STEM-PX-STRENGTHEN ;
 
 ! Test data:
@@ -937,7 +962,7 @@ LEXICON NMN_MIYRKK
 HatY-STEM-PX-RETAIN ;
 :%^XYY2XY HatY-STEM-PX-WEAKEN ;
 :%^XYY2XY HatY-STEM-PX-WEAKEN_LARGO ;
-:%^Allegro%^XYY2XY SG-LOC-PX ;
+:%^Allegro%^XYY2XY SG-LOC-PX_ALLEGRO ;
 : HatY-STEM-PX-STRENGTHEN ;
 
 ! Test data:
@@ -1028,7 +1053,7 @@ LEXICON NMN_TOLL
 HatY-STEM-PX-RETAIN ;
 :%^V2VV%^CC2C HatY-STEM-PX-WEAKEN ;
 :%^V2VV%^CC2C HatY-STEM-PX-WEAKEN_LARGO ;
-:%^CC2CAllegro SG-LOC-PX ;
+:%^CC2CAllegro SG-LOC-PX_ALLEGRO ;
  HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_TOLL-PL
@@ -1119,7 +1144,7 @@ LEXICON NMN_SIJDD
 HatY-STEM-PX-RETAIN ;
 :%^XYY2VY HatY-STEM-PX-WEAKEN ;
 :%^XYY2VY HatY-STEM-PX-WEAKEN_LARGO ;
-:%^XYY2XY SG-LOC-PX ; !!= * @CODE@ CHECKME
+:%^XYY2XY SG-LOC-PX_ALLEGRO ; !!= * @CODE@ CHECKME
  HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_SIJDD-PL !!= * @CODE@ siid:sijdd
@@ -1216,8 +1241,31 @@ LEXICON NMN_SAAKK
 HatY-STEM-PX-RETAIN ;
 :%^KK2GG HatY-STEM-PX-WEAKEN ;
 :%^KK2GG HatY-STEM-PX-WEAKEN_LARGO ;
-:%^VV2V%^KK2GAllegro SG-LOC-PX ;
+:%^VV2V%^KK2GAllegro SG-LOC-PX_ALLEGRO ;
 :%^VV2V HatY-STEM-PX-STRENGTHEN ;
+
+! Test data:
+!!€gt-norm: saakk #
+!!€ saakk: saakk+N+Sg+Nom
+!!€ saaǥǥ: saakk+N+Sg+Gen
+!!€ saaǥǥ: saakk+N+Sg+Acc
+!!€ saʹǩǩe: saakk+N+Sg+Ill
+!!€ saaǥǥâst: saakk+N+Sg+Loc
+!!€ saǥstan: saakk+N+Sg+Loc+PxSg1
+!!€ saaǥǥin: saakk+N+Sg+Com
+!!€ saakkân: saakk+N+Ess
+!!€ saakkâd: saakk+N+Par
+!!€ saaǥǥtaa: saakk+N+Sg+Abe
+!!€ saaǥǥ: saakk+N+Pl+Nom
+!!€ saaǥǥi: saakk+N+Pl+Gen
+!!€ saaǥǥid: saakk+N+Pl+Acc
+!!€ saaǥǥid: saakk+N+Pl+Ill
+!!€ saaǥǥin: saakk+N+Pl+Loc
+!!€ saaǥǥivuiʹm: saakk+N+Pl+Com
+!!€ saaǥǥitaa: saakk+N+Pl+Abe
+!!€ saaǥǥâž: saakk+N+Der/Dimin+N+Sg+Nom
+!!€ saaʹjje: saakk+N+Der/Dimin+N+Sg+Gen
+
 
 !!!
 LEXICON N_LUOSS !!= * @CODE@ luõss:luõ%{ʹØ%}ss
@@ -1253,11 +1301,34 @@ LEXICON NMN_LUOSS !!= * @CODE@ luõss:luõss
 HatY-STEM-PX-RETAIN ;
 :%^KK2GG HatY-STEM-PX-WEAKEN ;
 :%^KK2GG HatY-STEM-PX-WEAKEN_LARGO ;
-:%^Allegro%^KK2GAllegro SG-LOC-PX ;
+:%^Allegro%^KK2GAllegro SG-LOC-PX_ALLEGRO ;
 :%^CC2CCC HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_LUOSS-PL
 	N_LUOSS ;
+
+! Test data:
+!!€gt-norm: luõss #
+!!€ luõss: luõss+N+Sg+Nom
+!!€ luõzz: luõss+N+Sg+Gen
+!!€ luõzz: luõss+N+Sg+Acc
+!!€ luõʹsˈse: luõss+N+Sg+Ill
+!!€ luõzzâst: luõss+N+Sg+Loc
+!!€ luõˈzstan: luõss+N+Sg+Loc+PxSg1
+!!€ luõzzin: luõss+N+Sg+Com
+!!€ luõssân: luõss+N+Ess
+!!€ luõssâd: luõss+N+Par
+!!€ luõzztaa: luõss+N+Sg+Abe
+!!€ luõzz: luõss+N+Pl+Nom
+!!€ luõzzi: luõss+N+Pl+Gen
+!!€ luõzzid: luõss+N+Pl+Acc
+!!€ luõzzid: luõss+N+Pl+Ill
+!!€ luõzzin: luõss+N+Pl+Loc
+!!€ luõzzivuiʹm: luõss+N+Pl+Com
+!!€ luõzzitaa: luõss+N+Pl+Abe
+!!€ luõzzâž: luõss+N+Der/Dimin+N+Sg+Nom
+!!€ luõʹzze: luõss+N+Der/Dimin+N+Sg+Gen
+
 
 !!!
 LEXICON N_PAARR !!= * @CODE@ paarr:paa%{ʹØ%}rr
@@ -1317,7 +1388,7 @@ LEXICON NMN_PAARR
 HatY-STEM-PX-RETAIN ;
 :%^CC2C HatY-STEM-PX-WEAKEN ;
 :%^CC2C HatY-STEM-PX-WEAKEN_LARGO ;
-:%^VV2V%^CC2CAllegro SG-LOC-PX ; !!= * @CODE@ par-
+:%^VV2V%^CC2CAllegro SG-LOC-PX_ALLEGRO ; !!= * @CODE@ par-
 :%^VV2V HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_SHLAAJJ !!= * @CODE@ šlaajj:šlaa%{ʹØ%}jj
@@ -1396,11 +1467,11 @@ HatY-STEM-PX-RETAIN ;
 :%^CC2C HatY-STEM-PX-WEAKEN ;
 :%^PAL%^CC2C HatY-STEM-PX-WEAKEN_LARGO ; ! Added 2017-04-04
 :%^CC2C HatY-STEM-PX-WEAKEN_LARGO ;
-:%^Allegro%^PAL%^CC2CAllegro SG-LOC-PX ; !Prefer  Added 2017-04-04 
+:%^Allegro%^PAL%^CC2CAllegro SG-LOC-PX_ALLEGRO ; !Prefer  Added 2017-04-04 
 !! ǩiõtt+N+Sg+Loc+PxSg1 __hand,arm/käsi__
 !!€ ǩiõ0tt%^Allegro%^PAL%^CC2CAllegro%>stan
 !!€ ǩiõʹđ0000%>stan
-:%^Allegro%^CC2CAllegro SG-LOC-PX ;
+:%^Allegro%^CC2CAllegro SG-LOC-PX_ALLEGRO ;
 !!€ ǩiõtt%^Allegro%^CC2CAllegro%>stan
 !!€ ǩiõđ000%>stan
 :%^PAL%^CC2CCC HatY-STEM-PX-STRENGTHEN-SG12 ;
@@ -1463,7 +1534,7 @@ LEXICON NMN_MIOHTT
 HatY-STEM-PX-RETAIN ;
 : HatY-STEM-PX-WEAKEN ;
 : HatY-STEM-PX-WEAKEN_LARGO ;
-: SG-LOC-PX ;
+: SG-LOC-PX_ALLEGRO ;
 :%^VV2V HatY-STEM-PX-STRENGTHEN ;
 
 
@@ -1499,7 +1570,7 @@ LEXICON NMN_RIIKK
 HatY-STEM-PX-RETAIN ;
 : HatY-STEM-PX-WEAKEN ;
 : HatY-STEM-PX-WEAKEN_LARGO ;
-:%^VV2V%^CC2CAllegro SG-LOC-PX ; !!= * @CODE@ rik-
+:%^VV2V%^CC2CAllegro SG-LOC-PX_ALLEGRO ; !!= * @CODE@ rik-
 :%^VV2V HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_AQSTTRIK !!= * @CODE@ aʹsttrik:aʹsttri%^1VOW%{ʹØ%}k
@@ -1533,7 +1604,7 @@ LEXICON NMN_AQSTTRIK
 :%^V2VV%^C2CC HatY-STEM-PX-RETAIN ;
 :%^V2VV%^C2CC HatY-STEM-PX-WEAKEN ;
 :%^V2VV%^C2CC HatY-STEM-PX-WEAKEN_LARGO ;
-: SG-LOC-PX ;
+: SG-LOC-PX_ALLEGRO ;
 :%^C2CC HatY-STEM-PX-STRENGTHEN ;
 
 !!!
@@ -1676,7 +1747,7 @@ LEXICON NMN_PESS
 +Der/Dimin:%^V2VV%> N_PEESSAZH ; !!= * @CODE@  (9) Dim.N.Sg.Nom: pẹẹssaž
 
 !! grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
-:%^CC2CAllegro SG-LOC-PX ;     !!= * @CODE@ pes»
+:%^CC2CAllegro SG-LOC-PX_ALLEGRO ;     !!= * @CODE@ pes»
 !! Sg_Loc_Px..
 
 LEXICON N_PESS-PL
@@ -1740,7 +1811,7 @@ LEXICON NMN_SHOOMM
 +Der/Dimin:%^CC2C%> N_PEESSAZH ; !!= * @CODE@  (9) Dim.N.Sg.Nom: šoomaž
 
 !! grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
-:%^VV2V%^CC2CAllegro SG-LOC-PX ; !!= * @CODE@ (10) šom»
+:%^VV2V%^CC2CAllegro SG-LOC-PX_ALLEGRO ; !!= * @CODE@ (10) šom»
 !! Sg_Loc_Px..
 
 
@@ -1795,7 +1866,7 @@ LEXICON NMN_LYYJJ
 +Der/Dimin:%^CC2C%> N_PEESSAZH ; !!= * @CODE@  (9) Dim.N.Sg.Nom: lââjaž
 
 !! grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
-:%^VV2V%^CC2CAllegro SG-LOC-PX ; !!= * @CODE@ (10) lâj»
+:%^VV2V%^CC2CAllegro SG-LOC-PX_ALLEGRO ; !!= * @CODE@ (10) lâj»
 !! Sg_Loc_Px..
 
 
@@ -1851,7 +1922,7 @@ LEXICON NMN_RAEAEKK
 +Der/Dimin:%^KK2GG%> N_PEESSAZH ; !!= * @CODE@  (9) Dim.N.Sg.Nom: rääǥǥaž
 
 !! grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
-:%^VV2V%^KK2GAllegro SG-LOC-PX ; !!= * @CODE@ (10) räǥ»
+:%^VV2V%^KK2GAllegro SG-LOC-PX_ALLEGRO ; !!= * @CODE@ (10) räǥ»
 !! Sg_Loc_Px..
 
 LEXICON N_RAEAEKK-PL
@@ -1916,8 +1987,30 @@ LEXICON NMN_AELDD
 
 
 !! grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
-:%^XYY2XY SG-LOC-PX ;	  !!= * @CODE@ (10) äld
+:%^XYY2XY SG-LOC-PX_ALLEGRO ;	  !!= * @CODE@ (10) äld
 !! Sg_Loc_Px..
+
+! Test data:
+!!€gt-norm: äldd #
+!!€ äldd: äldd+N+Sg+Nom
+!!€ ääld: äldd+N+Sg+Gen
+!!€ ääld: äldd+N+Sg+Acc
+!!€ alddu: äldd+N+Sg+Ill
+!!€ ääldast: äldd+N+Sg+Loc
+!!€ äldstan: äldd+N+Allegro+Sg+Loc+PxSg1
+!!€ ääldstan: äldd+N+Largo+Sg+Loc+PxSg1
+!!€ ääldain: äldd+N+Sg+Com
+!!€ älddan: äldd+N+Ess
+!!€ älddad: äldd+N+Par
+!!€ ääldtaa: äldd+N+Sg+Abe
+!!€ ääld: äldd+N+Pl+Nom
+!!€ ääldai: äldd+N+Pl+Gen
+!!€ ääldaid: äldd+N+Pl+Acc
+!!€ ääldaid: äldd+N+Pl+Ill
+!!€ ääldain: äldd+N+Pl+Loc
+!!€ ääldaivuiʹm: äldd+N+Pl+Com
+!!€ ääldaitaa: äldd+N+Pl+Abe
+!!€ aalduž: äldd+N+Der/Dimin+N+Sg+Nom
 
 
 LEXICON A-STEM_SG-NOM !!= * @CODE@ (1)
@@ -1980,7 +2073,7 @@ LEXICON NMN_PEIGG
 +Der/Dimin:%^V2VV%^XYY2XY%> N_PEESSAZH ; !!= * @CODE@  (9) Dim.N.Sg.Nom: pẹẹiǥaž
 
 
-:%^XYY2XY SG-LOC-PX ; !!= * @CODE@ (10) peiǥ»
+:%^XYY2XY SG-LOC-PX_ALLEGRO ; !!= * @CODE@ (10) peiǥ»
 !! Sg_Loc_Px..
 
 LEXICON N_KOAHTT !!= * @CODE@ kåhtt:kåhtt
@@ -2045,7 +2138,7 @@ LEXICON NMN_KOAHTT
 
 
 !! grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
-:%^XYY2VY SG-LOC-PX ; !!= * @CODE@ (10) kåut»
+:%^XYY2VY SG-LOC-PX_ALLEGRO ; !!= * @CODE@ (10) kåut»
 !! Sg_Loc_Px..
 
 
@@ -2122,7 +2215,7 @@ LEXICON NMN_TEYLKK
 +Der/Dimin:%^XYY2XY%> N_PEESSAZH ; !!= * @CODE@  (9) Dim.N.Sg.Nom: meârkaž
 
 !! grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
-:%^XYY2XY SG-LOC-PX ; !!= * @CODE@ (10) meârk»
+:%^XYY2XY SG-LOC-PX_ALLEGRO ; !!= * @CODE@ (10) meârk»
 !! Sg_Loc_Px..
 
 LEXICON N_VUYHSS !!= * @CODE@ vuâhss:vuâhss
@@ -2159,7 +2252,7 @@ LEXICON NMN_VUYHSS
 +Der/Dimin:%^XYY2VY%> N_PEESSAZH ; !!= * @CODE@  (9) Dim.N.Sg.Nom: vuâusaž
 
 !! grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
-:%^XYY2VY SG-LOC-PX ; !!= * @CODE@ (10) vuâus»
+:%^XYY2VY SG-LOC-PX_ALLEGRO ; !!= * @CODE@ (10) vuâus»
 !! Sg_Loc_Px..
 
 
@@ -2214,7 +2307,7 @@ LEXICON NMN_VUYRR
 +Der/Dimin:%^CC2C%> N_PEESSAZH ; !!= * @CODE@  (9) Dim.N.Sg.Nom: vuâraž
 
 !! grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
-:%^XYY2VY SG-LOC-PX ; !!= * @CODE@ (10) vuâr»
+:%^XYY2VY SG-LOC-PX_ALLEGRO ; !!= * @CODE@ (10) vuâr»
 !! Sg_Loc_Px..
 
 LEXICON N_TUYJJ !!= * @CODE@ tuâjj:tuâjj
@@ -2302,7 +2395,7 @@ LEXICON NMN_CHUAECC
 +Der/Dimin:%^KK2GG%> N_PEESSAZH ; !!= * @CODE@  (9) Dim.N.Sg.Nom: čuäʒʒaž
 
 !! grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
-:%^KK2GAllegro SG-LOC-PX ; !!= * @CODE@ (10) čuäʒ»
+:%^KK2GAllegro SG-LOC-PX_ALLEGRO ; !!= * @CODE@ (10) čuäʒ»
 !! Sg_Loc_Px..
 
 LEXICON N_CHUAECC-PL
@@ -2365,7 +2458,7 @@ LEXICON NMN_NEAVVV
 +Der/Dimin:%^VOWRaise%^CCC2CC%> N_PIISSUZH ;  !!= * @CODE@ niâvvuž
 +Der/Dimin:%^CCC2CC%> N_PEESSAZH ; !!= * @CODE@  (9) Dim.N.Sg.Nom: neävvaž
 
-:%^CCC2CC SG-LOC-PX ; !!= * @CODE@ (10) neävv» CHECKME
+:%^CCC2CC SG-LOC-PX_ALLEGRO ; !!= * @CODE@ (10) neävv» CHECKME
 !! Sg_Loc_Px..
 
 
@@ -2400,7 +2493,7 @@ LEXICON NMN_PEYTTT
 +Der/Dimin:%^VOWRaise%^CCC2CC%> N_PIISSUZH ;  !!= * @CODE@ niâvvuž
 +Der/Dimin:%^CCC2CC%> N_PEESSAZH ; !!= * @CODE@  (9) Dim.N.Sg.Nom: neävvaž
 
-:%^CCC2CC SG-LOC-PX ; !!= * @CODE@ (10) neävv» CHECKME
+:%^CCC2CC SG-LOC-PX_ALLEGRO ; !!= * @CODE@ (10) neävv» CHECKME
 !! Sg_Loc_Px..
 
 
@@ -2449,7 +2542,7 @@ LEXICON NMN_PEAELDD
 +Der/Dimin:%^VOWRaise%^XYY2XY%> N_PIISSUZH ;  !!= * @CODE@  piâlduž
 +Der/Dimin:%^XYY2XY%> N_PEESSAZH ; !!= * @CODE@  (9) Dim.N.Sg.Nom: peäldaž
 
-:%^XYY2XY SG-LOC-PX ; !!= * @CODE@ (10) peäld»
+:%^XYY2XY SG-LOC-PX_ALLEGRO ; !!= * @CODE@ (10) peäld»
 !! Sg_Loc_Px..
 
 LEXICON N_PEAELDD-PL
@@ -2509,7 +2602,7 @@ LEXICON NMN_TUOAIMM
 
 
 !! grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
-:%^XYY2XY SG-LOC-PX ;	  !!= * @CODE@ (5) tuåim
+:%^XYY2XY SG-LOC-PX_ALLEGRO ;	  !!= * @CODE@ (5) tuåim
 !! Sg_Loc_Px..
 
 
@@ -2738,7 +2831,7 @@ LEXICON NMN_AKK
 +Der/Dimin:%^V2VV%> N_PEESSAZH ; !!= * @CODE@  (9) Dim.N.Sg.Nom: ääkkaž
 
 !! grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
-:%^CC2CAllegro SG-LOC-PX ;     !!= * @CODE@ (5) äk
+:%^CC2CAllegro SG-LOC-PX_ALLEGRO ;     !!= * @CODE@ (5) äk
 !! Sg_Loc_Px..
 
 LEXICON N_APTEEKK !!= * @CODE@ apteekk:apteekk
@@ -2779,7 +2872,7 @@ LEXICON NMN_APTEEKK
 +Der/Dimin:%> N_PEESSAZH ; !!= * @CODE@  (9) Dim.N.Sg.Nom: apteekkaž
 
 !! grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
-:%^VV2V%^CC2CAllegro SG-LOC-PX ;     !!= * @CODE@ (5) aptek
+:%^VV2V%^CC2CAllegro SG-LOC-PX_ALLEGRO ;     !!= * @CODE@ (5) aptek
 !! Sg_Loc_Px..
 
 
@@ -5182,6 +5275,29 @@ LEXICON NMN_JEAQNNN
 :%^PAL E-STEM-PX-STRENGTHEN-WITH-PAL ;			   !!= * @CODE@ (12) jeäʹǧˈǧ
 +Use/NG:%^VOWRaise%^PALẸ%^PAL%^CCC2CC E-STEM-PX-ALLEGRO ;  !!= * @CODE@ (2)
 
+! Test data:
+!!€gt-norm: jeäʹnn #
+!! jeäʹnˈn: 	   jeäʹnn+N+Sg+Nom
+!! jiẹʹnn: 	   jeäʹnn+N+Sg+Gen
+!! jiẹʹnn: 	   jeäʹnn+N+Sg+Acc
+!! jeänˈna: 	   jeäʹnn+N+Sg+Ill
+!! jiẹʹnnest: 	   jeäʹnn+N+Sg+Loc
+!! jiẹˈʹnstan: 	   jeäʹnn+N+Sg+Loc+PxSg1
+!! jiẹʹnnstan: 	   jeäʹnn+N+Sg+Loc+PxSg1
+!! jieʹnnin: 	   jeäʹnn+N+Sg+Com
+!! jeäʹnˈnen: 	   jeäʹnn+N+Ess
+!! jeäʹnˈned: 	   jeäʹnn+N+Par
+!! jiẹʹnntaa: 	   jeäʹnn+N+Sg+Abe
+!! jiẹʹnn: 	   jeäʹnn+N+Pl+Nom
+!! jieʹnni: 	   jeäʹnn+N+Pl+Gen
+!! jieʹnnid: 	   jeäʹnn+N+Pl+Acc
+!! jieʹnnid: 	   jeäʹnn+N+Pl+Ill
+!! jieʹnnin: 	   jeäʹnn+N+Pl+Loc
+!! jieʹnnivuiʹm:   jeäʹnn+N+Pl+Com
+!! jieʹnnitaa: 	   jeäʹnn+N+Pl+Abe
+!! jeännaž: 	   jeäʹnn+N+Der/Dimin+N+Sg+Nom
+!! jeänna: 	   jeäʹnn+N+Der/Dimin+N+Sg+Gen
+
 
 
 LEXICON E-STEM_SG-NOM !!= * @CODE@ (1)
@@ -5642,7 +5758,7 @@ LEXICON NMN_ATOM
 :%^V2VV HatY-STEM-PX-RETAIN ;
 :%^V2VV HatY-STEM-PX-WEAKEN ; !! e.g.
 :%^V2VV HatY-STEM-PX-WEAKEN_LARGO ; !! e.g. +Use/NG+Sg+Loc+PxSg3
-:%^V2VV SG-LOC-PX ; !! e.g. +Sg+Loc+PxSg1
+:%^V2VV SG-LOC-PX_ALLEGRO ; !! e.g. +Sg+Loc+PxSg1
 :%^V2VV HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_BLOUSLOV !!= * @CODE@ blouslõv:blouslõ%^1VOWv CHECKME
@@ -5664,7 +5780,7 @@ LEXICON NMN_BLOUSLOV
 :%^V2VV HatY-STEM-PX-RETAIN ;
 :%^V2VV HatY-STEM-PX-WEAKEN ; !! e.g.
 :%^V2VV HatY-STEM-PX-WEAKEN_LARGO ; !! e.g. +Use/NG+Sg+Loc+PxSg3
-: SG-LOC-PX ; !! e.g. +Sg+Loc+PxSg1
+: SG-LOC-PX_ALLEGRO ; !! e.g. +Sg+Loc+PxSg1
 :%^V2VV HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_EVANHGHEQLIUM !!= * @CODE@ evaŋǧeʹlium:evaŋǧeʹlium
@@ -8294,7 +8410,7 @@ LEXICON NMN_OBL-SAJOS
 :%{XC%}%^C2CC HatY-STEM-PX-RETAIN ;
 :%{XC%}%^V2VV%^K2GG HatY-STEM-PX-WEAKEN ;
 :%{XC%}%^V2VV%^K2GG HatY-STEM-PX-WEAKEN_LARGO ;
-:%^K2GAllegro SG-LOC-PX ;
+:%^K2GAllegro SG-LOC-PX_ALLEGRO ;
 :%{XC%}%^C2CC HatY-STEM-PX-STRENGTHEN ;
 
 ! HatY-STEM-PX-RETAIN-PL ;
@@ -9433,6 +9549,9 @@ HatY-STEM-PX-RETAIN ;
 : HatY-STEM-PX-WEAKEN ;
 +Use/NG: SG-LOC-PX ; !!= * @CODE@ muõrstes
 : HatY-STEM-PX-STRENGTHEN ;
++Err/GenreLeudd+Sg+Nom+PxSg1:âž%>am K;  !!= * @CODE@ Leudd 2018-09-20
++Err/GenreLeudd+Sg+Nom+PxSg1:%>ž%>amâ K; !!= * @CODE@ Leudd 2018-09-20
++Err/GenreLeudd+Sg+Nom+PxSg1:âž%>amâ K; !!= * @CODE@ Leudd 2018-09-20
 
 LEXICON N_MUORYZH-WITH-PAL   !!= * @CODE@ paaʹpp-
 :%>e SG-ABE/ACC/GEN ;	!!= * @CODE@ paaʹppe
@@ -9455,6 +9574,10 @@ HatY-STEM-PX-RETAIN ;
 +Use/NG: SG-LOC-PX ; !!= * @CODE@ muõrstes
 : HatY-STEM-PX-STRENGTHEN ;
 
++Err/GenreLeudd+Sg+Nom+PxSg1:âž%>am K;  !!= * @CODE@ Leudd 2018-09-20
++Err/GenreLeudd+Sg+Nom+PxSg1:%>ž%>amâ K; !!= * @CODE@ Leudd 2018-09-20
++Err/GenreLeudd+Sg+Nom+PxSg1:âž%>amâ K; !!= * @CODE@ Leudd 2018-09-20
+
 LEXICON N_KUUZZYZH-WITH-PAL   !!= * @CODE@ kuuʹzz-
 :%>e SG-ABE/ACC/GEN ;	!!= * @CODE@ paaʹzze
 :%>e SG-LOC ;	!!= * @CODE@ paaʹzzest
@@ -9466,7 +9589,7 @@ LEXICON N_KUUZZYZH-WITH-PAL   !!= * @CODE@ kuuʹzz-
 +Use/SpellNoSugg: SG-LOC-PX ; !!= * @CODE@ kuuʹzzstes
 
 LEXICON N_KUUZZYZH-WITH-PAL-ALLEGRO
-: SG-LOC-PX ; !!= * @CODE@ kuʹzstes
+: SG-LOC-PX_ALLEGRO ; !!= * @CODE@ kuʹzstes
 
 
 LEXICON N_SAEQMMLOOZHZHYZH !!= * @CODE@ säʹmmlõõžžâž:säʹmmlõõžž
@@ -9489,8 +9612,8 @@ HatY-STEM-PX-RETAIN ;
 : HatY-STEM-PX-WEAKEN ;
 : HatY-STEM-PX-WEAKEN_LARGO ; !!= * @CODE@ säʹmmlõõžž- Sg_Loc_PxSg1
 :%^PAL HatY-STEM-PX-WEAKEN_LARGO ; !!= * @CODE@ säʹmmlõõʹžž- Sg_Loc_PxSg1
-:%^VV2V%^PAL%^CC2CAllegro SG-LOC-PX ; !!= * @CODE@ säʹmmlõʹž-
-:%^VV2V%^CC2CAllegro SG-LOC-PX ; !!= * @CODE@ säʹmmlõž-
+:%^VV2V%^PAL%^CC2CAllegro SG-LOC-PX_ALLEGRO ; !!= * @CODE@ säʹmmlõʹž-
+:%^VV2V%^CC2CAllegro SG-LOC-PX_ALLEGRO ; !!= * @CODE@ säʹmmlõž-
 :%^VV2V HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_PRE-PEESSAZH !!= * @CODE@ puälaž:puäl
@@ -9511,6 +9634,10 @@ LEXICON NMN_PEESSAZH !!= * @CODE@ piissuž:pẹẹss
 :až SG-NOM ;
 :ž NMN_SG-ILL_E ;
 :že ESS/PAR ;
++Err/GenreLeudd+Sg+Nom+PxSg1:ažam K; !!= * @CODE@ Leudd 2018-09-20
++Err/GenreLeudd+Sg+Nom+PxSg1:%>žamâ K; !!= * @CODE@ Leudd 2018-09-20
++Err/GenreLeudd+Sg+Nom+PxSg1:ažamâ K; !!= * @CODE@ Leudd 2018-09-20
+
 
 LEXICON N_PIISSUZH !!= * @CODE@ piissuž:piiss
 +N: NMN_PIISSUZH ;
@@ -9527,6 +9654,10 @@ LEXICON NMN_PIISSUZH
 :že ESS/PAR ;
 :u PL-NOM ;
 :u PL-OBL ;
+
++Err/GenreLeudd+Sg+Nom+PxSg1:ožam K; !!= * @CODE@ Leudd 2018-09-20
++Err/GenreLeudd+Sg+Nom+PxSg1:%>žamâ K; !!= * @CODE@ Leudd 2018-09-20
++Err/GenreLeudd+Sg+Nom+PxSg1:ožamâ K; !!= * @CODE@ Leudd 2018-09-20
 
 
 
@@ -9547,6 +9678,10 @@ LEXICON NMN_KUYLAZH
 :a PL-OBL ;
 LOAOADDAZH-STEM-PX ;
 : LOAOADDAZH-STEM-PX-ALLEGRO ; !!= * @CODE@ This should go to each stem type ERROR
+
++Err/GenreLeudd+Sg+Nom+PxSg1:ažam K; !!= * @CODE@ Leudd 2018-09-20
++Err/GenreLeudd+Sg+Nom+PxSg1:%>žamâ K; !!= * @CODE@ Leudd 2018-09-20
++Err/GenreLeudd+Sg+Nom+PxSg1:ažamâ K; !!= * @CODE@ Leudd 2018-09-20
 
 LEXICON N_UUQREZH !!= * @CODE@ uuʹrež:uuʹr
 +N: NMN_UUQREZH ;
@@ -9915,6 +10050,7 @@ LEXICON PL-ABE
 LEXICON HatY-STEM-PX-RETAIN
  HatY-STEM-PX-RETAIN-SG ;
  HatY-STEM-PX-RETAIN-PL ;
++Err/GenreLeudd:â SG-NOM ; !!= * @CODE@ Leudd 2018-09-20
 LEXICON HatY-STEM-PX-RETAIN-SG
 ! Adapted from Feist (2010: 175)
 +Sg+Nom+PxSg1:%>am K; 
@@ -9943,13 +10079,17 @@ LEXICON HatY-STEM-PX-RETAIN-PL
 +Pl+Nom+PxPl1:%>ân K ;
 
 LEXICON HatY-STEM-PX-WEAKEN_LARGO
-+Use/NG: SG-LOC-PX ;
++Use/NG+Largo: SG-LOC-PX ;
++Err/GenreLeudd:â SG-ABE/ACC/GEN-PL-NOM ; !!= * @CODE@ Leudd 2018-09-20
++Err/GenreLeudd:â SG-COM_N ; !!= * @CODE@ Leudd 2018-09-20
 
 LEXICON HatY-STEM-PX-WEAKEN
  HatY-STEM-PX-WEAKEN-SG ;
  HatY-STEM-PX-WEAKEN-PL ;
 DenominalAdjsCShort ;
 
++Err/GenreLeudd:â SG-ABE/ACC/GEN-PL-NOM ; !!= * @CODE@ Leudd 2018-09-20
++Err/GenreLeudd:â SG-COM_N ; !!= * @CODE@ Leudd 2018-09-20
 
 LEXICON HatY-STEM-PX-WEAKEN-SG
 +Sg+Acc+PxSg2:%>ad K ;
@@ -10108,6 +10248,10 @@ LEXICON A-STEM-PX-RETAIN
 +Pl+Nom+PxSg1:%>an K ;
 +Pl+Nom+PxPl1:%>an K ;
 
++Err/GenreLeudd:a SG-NOM ; !!= * @CODE@ Leudd 2018-09-20
+
+LEXICON SG-LOC-PX_ALLEGRO
++Allegro: SG-LOC-PX ;
 
 LEXICON SG-LOC-PX
 +Sg+Loc+PxSg1:%>stan K ;
@@ -10223,6 +10367,10 @@ LEXICON A-STEM-PX-WEAKEN
 +Pl+Nom+PxPl2:%>ad K ;
 +Pl+Nom+PxPl3:%>az K ;
 
++Err/GenreLeudd:a SG-ABE/ACC/GEN-PL-NOM ; !!= * @CODE@ Leudd 2018-09-20
++Err/GenreLeudd:a SG-COM_N ; !!= * @CODE@ Leudd 2018-09-20
+
+
 LEXICON A-STEM-PX-STRENGTHEN
 +Der/N2A: N2A_REAEB3H3HAI ;     !!= * @CODE@ N»A
 +Ess+PxSg1:%>nan K ;
@@ -10255,6 +10403,7 @@ LEXICON E-STEM-PX-RETAIN-WITHOUT-PAL
 +Sg+Abe+PxSg1:%>antaa K ;
 +Sg+Abe+PxSg1:%>antää K ;
 
++Err/GenreLeudd:e SG-NOM ; !!= * @CODE@ Leudd 2018-09-20
 
 LEXICON E-STEM-PX-RETAIN-WITH-PAL
 +Sg+Nom+PxSg3:%>es K ;
@@ -10281,6 +10430,9 @@ LEXICON E-STEM-PX-WEAKEN_NG
 +Use/NG+Sg+Loc+PxPl1:%>steen K ;
 +Use/NG+Sg+Loc+PxPl2:%>steed K ;
 +Use/NG+Sg+Loc+PxPl3:%>steez K ;
+
++Err/GenreLeudd:e SG-ABE/ACC/GEN-PL-NOM ; !!= * @CODE@ Leudd 2018-09-20
++Err/GenreLeudd:e SG-COM_N ; !!= * @CODE@ Leudd 2018-09-20
 
 LEXICON E-STEM-PX-WEAKEN-WITHOUT-PAL
 +Sg+Acc+PxSg2:%>ad K ;
