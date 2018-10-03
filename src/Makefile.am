@@ -133,11 +133,15 @@ analyser-disamb-gt-desc.%: analyser-disamb-gt-desc.tmp.%           \
 					filters/remove-derivation-position-tags.%      \
 					filters/remove-norm-comp-tags.%                \
 					filters/remove-orig_lang-tags.%                \
+					filters/remove-dialect-tags.%                  \
+					filters/remove-homonymy-tags.%           
 					filters/remove-modifier-letter-vertical-line.% \
 					filters/remove-letter-dot-below.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 				@\"filters/remove-derivation-position-tags.$*\"      \
 			.o. @\"filters/remove-orig_lang-tags.$*\"                \
+			.o. @\"filters/remove-dialect-tags.$*\"                  \
+			.o. @\"filters/remove-homonymy-tags.$*\"           \
 			.o. @\"filters/remove-norm-comp-tags.$*\"                \
 			.o. @\"$<\"                                              \
 			.o. @\"filters/remove-letter-dot-below.$*\"              \
@@ -146,6 +150,7 @@ analyser-disamb-gt-desc.%: analyser-disamb-gt-desc.tmp.%           \
 		 $(INVERT_HFST)\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
+
 
 # We need to add processing of language-specific tags in the generator:
 define giella_generators
@@ -180,6 +185,8 @@ generator-dict-gt-norm.%: generator-dict-gt-norm.tmp.% \
 		 $(INVERT_XFST)$(INVERT_FOMA)\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
+
+
 
 
 ##################################################################
