@@ -111,9 +111,9 @@ analyser-gt-norm.%: analyser-gt-norm.tmp.% \
 # The operation 'twosided flag-diacritics" crashes Xerox badly, so we do with
 # a simpler, less restrictive normative fst when building with Xerox:
 analyser-gt-norm.xfst: analyser-gt-norm.tmp.xfst \
-					filters/remove-norm-comp-tags.xfst             \
-					filters/remove-derivation-position-tags.xfst   \
-					filters/remove-illegal-derivation-strings.xfst \
+					filters/remove-norm-comp-tags.xfst                \
+					filters/remove-derivation-position-tags.xfst      \
+					filters/remove-illegal-derivation-strings.xfst    \
 					filters/remove-modifier-letter-vertical-line.xfst \
 					filters/remove-letter-dot-below.xfst
 	$(AM_V_XFST)$(PRINTF) "read regex \
@@ -134,14 +134,14 @@ analyser-disamb-gt-desc.%: analyser-disamb-gt-desc.tmp.%           \
 					filters/remove-norm-comp-tags.%                \
 					filters/remove-orig_lang-tags.%                \
 					filters/remove-dialect-tags.%                  \
-					filters/remove-homonymy-tags.%           
+					filters/remove-homonymy-tags.%                 \
 					filters/remove-modifier-letter-vertical-line.% \
 					filters/remove-letter-dot-below.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 				@\"filters/remove-derivation-position-tags.$*\"      \
 			.o. @\"filters/remove-orig_lang-tags.$*\"                \
 			.o. @\"filters/remove-dialect-tags.$*\"                  \
-			.o. @\"filters/remove-homonymy-tags.$*\"           \
+			.o. @\"filters/remove-homonymy-tags.$*\"                 \
 			.o. @\"filters/remove-norm-comp-tags.$*\"                \
 			.o. @\"$<\"                                              \
 			.o. @\"filters/remove-letter-dot-below.$*\"              \
@@ -151,20 +151,19 @@ analyser-disamb-gt-desc.%: analyser-disamb-gt-desc.tmp.%           \
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
 
-
 # We need to add processing of language-specific tags in the generator:
 define giella_generators
 generator-gt-%.$(1): generator-gt-%.tmp.$(1) \
-					 filters/remove-derivation-position-tags.$(1) \
-					 filters/remove-norm-comp-tags.$(1)             \
+					 filters/remove-derivation-position-tags.$(1)      \
+					 filters/remove-norm-comp-tags.$(1)                \
 					 filters/remove-modifier-letter-vertical-line.$(1) \
 					 filters/remove-letter-dot-below.$(1)
 	$$(AM_V_XFST_TOOL)$$(PRINTF) "read regex \
-				@\"filters/remove-derivation-position-tags.$(1)\" \
-			.o. @\"filters/remove-norm-comp-tags.$(1)\"           \
-			.o. @\"$$<\"                                      \
-			.o. @\"filters/remove-letter-dot-below.$(1)\" \
-			.o. @\"filters/remove-modifier-letter-vertical-line.$(1)\"   \
+				@\"filters/remove-derivation-position-tags.$(1)\"      \
+			.o. @\"filters/remove-norm-comp-tags.$(1)\"                \
+			.o. @\"$$<\"                                               \
+			.o. @\"filters/remove-letter-dot-below.$(1)\"              \
+			.o. @\"filters/remove-modifier-letter-vertical-line.$(1)\" \
 			;\n\
 		 $$(INVERT_XFST)$$(INVERT_FOMA)\
 		 save stack $$@\n\
@@ -185,9 +184,6 @@ generator-dict-gt-norm.%: generator-dict-gt-norm.tmp.% \
 		 $(INVERT_XFST)$(INVERT_FOMA)\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
-
-
-
 
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
