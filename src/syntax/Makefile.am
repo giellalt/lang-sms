@@ -8,7 +8,7 @@
 
 #############################################
 #### Add language-specific sources here: ####
-GT_CG_LOCAL_SRCS=
+GT_CG_LOCAL_SRCS=korp.cg3
 
 #############################################################
 #### Add language-specific targets to be installed here: ####
@@ -24,6 +24,8 @@ endif # WANT_SYNTAX
 
 #################################################
 #### Add language-specific build rules here: ####
+%.cg3: $(GIELLA_SHARED)/smi/src/syntax/%.cg3
+	$(AM_V_CP)cp -f $< $@
 
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
@@ -31,7 +33,7 @@ endif # WANT_SYNTAX
 
 ####### Other targets: ###########
 clean-local:
-	-rm -f *.bin
+	-rm -f *.bin functions.cg3 dependency.cg3 korp.cg3
 
 ####### Build rules via include: ########
 
