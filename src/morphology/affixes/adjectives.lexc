@@ -102,6 +102,10 @@ LEXICON A_SHOOMM
 +A+Attr: ENDLEX ;
 +A: A-01_SHOOMM ;
 
+LEXICON A_TUYJJ
+:%^CC2C  A-ATTR_as ;
++A: A-01_TUYJJ ;
+
 LEXICON A_VAEAEZHZH
 ! Gradation: None
 ! 1.115
@@ -285,8 +289,9 @@ LEXICON A_KUYLAZH
 +A: A-01_KUYLAZH ;
 
 LEXICON A_VOONYS !!= * @CODE@ võõnâs:võnn
-+A+Sg+Nom:%^V2VV%^CC2Câs ENDLEX ;
++A+Sg+Nom:%^V2VV%^CC2C%>âs ENDLEX ;
 +A+Pl+Nom: ENDLEX ; !!= * @CODE@ Check this 2015-02-22
++A+Attr:%^V2VV%^CC2C%>sõs ENDLEX ;
 +A:s ADJ-DER/COMP_kwlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
 +A:âs A-01_VOONYS ;
@@ -693,6 +698,13 @@ LEXICON A_MEERSAZH
 +A: ADJ-DER/SUPERL_ummus ;
 +A: A-01_MEERSAZH ;
 
+LEXICON A_YNNJOZH
+!! ânnʼjõž:ânnʼj
++A:õž AdjAttr-ZERO ;
++A: ADJ-DER/COMP_kwlmmsab ;
++A: ADJ-DER/SUPERL_ummus ;
++A: A-01_YNNJOZH ;
+
 LEXICON A_MUORYZH
 !! muõrâž:muõr
 +A:âž AdjAttr-ZERO ;
@@ -777,9 +789,17 @@ LEXICON ADJ-DER/COMP_kwlmmsab
 +Use/SpellNoSugg+Use/NG+Comp:»ubâ A-02_ESS/PAR ;
 +Use/SpellNoSugg+Use/NG+Comp:»ubu A-02_ESS/PAR ;
 
+LEXICON A_HAS_ADJ-DER/SUPERL_mws
++A+Superl+Attr: # ;
++A+Superl: A-01_SAJOS ;
+
 LEXICON A_IS_ADJ-DER/SUPERL_mws
 +A+Superl+Attr:»mõ%^1VOWs # ;
 +A+Superl:»mõ%^1VOWs A-01_SAJOS ;
+
+LEXICON A_HAS_ADJ-DER/SUPERL_umus
++Use/NG+Superl+Attr: # ;
++Use/NG+Superl: A-01_MAINSTUMMUSH ;
 
 LEXICON A_IS_ADJ-DER/SUPERL_ummus
 +A: ADJ-DER/SUPERL_ummus ;
@@ -2378,53 +2398,37 @@ LEXICON A-01_SHOOMM
 !2016-12-05-NotUsed!
 !2016-12-05-NotUsed!!! grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 
+LEXICON A_AELDD
++A:  A-01_AELDD ;
 
-!2016-12-05-NotUsed!LEXICON A-01_AELDD
-!2016-12-05-NotUsed!!! Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_xyy
-!2016-12-05-NotUsed!! gradation: yes
-!2016-12-05-NotUsed!!! N_LÄINN has been integrated here
-!2016-12-05-NotUsed!!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-!2016-12-05-NotUsed!!! !!1.2 Sg.Loc in -ast (vowel shift)
-!2016-12-05-NotUsed!!! !!  Raised: Sg.Ill
-!2016-12-05-NotUsed!!! !!  Lowered: ELSE
-!2016-12-05-NotUsed!!! !!  a-stems (Sg.Loc, Ess, Par).
-!2016-12-05-NotUsed!!! !!1.2.2 Sg.Ill vowel -u
-!2016-12-05-NotUsed!!! !!1.2.2.2 Lacks Palatalization
-!2016-12-05-NotUsed!!! !!1.2.2.2.1 Lacks Specifically Pedagogical Gradation
-!2016-12-05-NotUsed!!! !!1.2.2.2.1.1 Has Orthographic Gradation
-!2016-12-05-NotUsed!!! !!1.2.2.2.1.1[] (Monophthong + Consonant Cluster alternation)
-!2016-12-05-NotUsed!!! !!  Strong grade: Sg.Nom, Ess, Par
-!2016-12-05-NotUsed!!! !!  Strong grade: Sg.Ill
-!2016-12-05-NotUsed!!! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-!2016-12-05-NotUsed!!! !!FORMS
-!2016-12-05-NotUsed!!! * Yaml: __N-aeldd__
-!2016-12-05-NotUsed!!NumContLex="1.1120000000000001"
-!2016-12-05-NotUsed!!! grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
-!2016-12-05-NotUsed!: A-02_A-STEM_SG-NOM ;	    			!!= * @CODE@ (1) äldd
-!2016-12-05-NotUsed!!! Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
-!2016-12-05-NotUsed!
-!2016-12-05-NotUsed!!! grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-!2016-12-05-NotUsed!:%^V2VV%^XYY2XY A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ; !!= * @CODE@ (2) ääld
-!2016-12-05-NotUsed!!! Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
-!2016-12-05-NotUsed!!! stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
-!2016-12-05-NotUsed!
-!2016-12-05-NotUsed!!! grade: strengthened (short_vowel, long_cluster), vowel: raised
-!2016-12-05-NotUsed!:%^VOWRaise%>u A-02_SG-ILL ;		      	!!= * @CODE@ (3) alddu
-!2016-12-05-NotUsed!!! Sg_Ill
-!2016-12-05-NotUsed!
-!2016-12-05-NotUsed!!! grade: strengthened (short_vowel, long_cluster), vowel: neutral (low)
-!2016-12-05-NotUsed!: A-STEM-PX-STRENGTHEN ;	    	  !!= * @CODE@ (5) äldd
-!2016-12-05-NotUsed!!! Ess_Px..., Sg_Ill..., N»A
-!2016-12-05-NotUsed!
-!2016-12-05-NotUsed!!! grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
-!2016-12-05-NotUsed!:%>a A-02_ESS/PAR ;	   		    	!!= * @CODE@ (6) älddan
-!2016-12-05-NotUsed!
-!2016-12-05-NotUsed!!! grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
-!2016-12-05-NotUsed!+Der/Dimin:%^V2VV%^VOWRaise%^XYY2XY A-01_PIISSUZH ; !!= * @CODE@ (9) Dim.N.Sg.Nom: aalduž (2009: 312-313)
-!2016-12-05-NotUsed!+Der/Dimin:%^V2VV%^XYY2XY%> A-01_PEESSAZH ; !!= * @CODE@  (9) Dim.N.Sg.Nom: ääldaž
-!2016-12-05-NotUsed!
-!2016-12-05-NotUsed!
-!2016-12-05-NotUsed!!! grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
+LEXICON A-01_AELDD
+
+!! grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
+: A-02_A-STEM_SG-NOM ;	    			!!= * @CODE@ (1) äldd
+!! Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
+
+!! grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
+:%^V2VV%^XYY2XY A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ; !!= * @CODE@ (2) ääld
+!! Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
+!! stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
+
+!! grade: strengthened (short_vowel, long_cluster), vowel: raised
+:%^VOWRaise%>u A-02_SG-ILL ;		      	!!= * @CODE@ (3) alddu
+!! Sg_Ill
+
+!! grade: strengthened (short_vowel, long_cluster), vowel: neutral (low)
+: A-STEM-PX-STRENGTHEN ;	    	  !!= * @CODE@ (5) äldd
+!! Ess_Px..., Sg_Ill..., N»A
+
+!! grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
+:%>a A-02_ESS/PAR ;	   		    	!!= * @CODE@ (6) älddan
+
+!! grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
++Der/Dimin:%^V2VV%^VOWRaise%^XYY2XY A-01_PIISSUZH ; !!= * @CODE@ (9) Dim.N.Sg.Nom: aalduž (2009: 312-313)
++Der/Dimin:%^V2VV%^XYY2XY%> A-01_PEESSAZH ; !!= * @CODE@  (9) Dim.N.Sg.Nom: ääldaž
+
+
+!! grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 
 
 LEXICON A-02_A-STEM_SG-NOM !!= * @CODE@ (1)
@@ -2615,29 +2619,8 @@ DenominalAdjsCShort ;
 !2016-12-05-NotUsed!!! grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 
 
-!2016-12-05-NotUsed!LEXICON A-01_TUYJJ
-!2016-12-05-NotUsed!!! Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_gem_jj_type
-!2016-12-05-NotUsed!! gradation: yes
-!2016-12-05-NotUsed!!! Is for nouns with ''-ast'' Loc
-!2016-12-05-NotUsed!!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-!2016-12-05-NotUsed!!! !!1.2 Sg.Loc in -ast (vowel shift)
-!2016-12-05-NotUsed!!! !!  Raised: Sg.Ill
-!2016-12-05-NotUsed!!! !!  Lowered: ELSE
-!2016-12-05-NotUsed!!! !!  a-stems (Sg.Loc, Ess, Par).
-!2016-12-05-NotUsed!!! !!1.2.2 Sg.Ill vowel	-u
-!2016-12-05-NotUsed!!! !!1.2.2.0 Lacks Palatalization
-!2016-12-05-NotUsed!!! !!1.2.2.0.2 Has Specifically Pedagogical Gradation
-!2016-12-05-NotUsed!!! !!1.2.2.0.2.0 Has Orthographic Gradation
-!2016-12-05-NotUsed!!! !!1.2.2.0.2.0[] (Diphthong + Consonant Geminate alternation)
-!2016-12-05-NotUsed!!! !!  Strong grade: Sg.Nom, Ess, Par
-!2016-12-05-NotUsed!!! !!  Extra strong grade: Sg.Ill
-!2016-12-05-NotUsed!!! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-!2016-12-05-NotUsed!!! similar_to: N_KHIOJJ
-!2016-12-05-NotUsed!!! !!FORMS
-!2016-12-05-NotUsed!!NumContLex="1.1120000000000001"
-!2016-12-05-NotUsed!!! N_A-URaise3-32
-!2016-12-05-NotUsed!!! * Yaml: __N-tuajj__
-!2016-12-05-NotUsed! NMN_VUYRR ;
+LEXICON A-01_TUYJJ
+ NMN_VUYRR ;
 !2016-12-05-NotUsed!+Use/NG:%^J2I%^CC2C A-02_SG-GEN ;		!!= * @CODE@ (2) tuâi
 !2016-12-05-NotUsed!+Use/NG:%^J2I%^CC2C A-02_SG-ACC ;
 !2016-12-05-NotUsed!+Use/NG:%^J2I%^CC2C A-02_PL-NOM ;
@@ -5605,35 +5588,26 @@ LEXICON A-01_JEAQRMM
 !2016-12-05-NotUsed!+Der/Dimin+A: A-02_MUORYZH-WITHOUT-PAL ;  !!= * @CODE@ paar-
 !2016-12-05-NotUsed!+Der/Dimin+A:%^PAL A-02_MUORYZH-WITH-PAL ;  !!= * @CODE@ paaʹr-
 
-!2016-12-05-NotUsed!LEXICON A-01_ATOM
-!2016-12-05-NotUsed!! gradation: yes
-!2016-12-05-NotUsed!!! !!2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
-!2016-12-05-NotUsed!!! !!2.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
-!2016-12-05-NotUsed!!! !!2.1.3 Sg.Ill in palatalization and -e
-!2016-12-05-NotUsed!!! !!2.1.3.3 Has Gradation in last syllable
-!2016-12-05-NotUsed!!! !!2.1.3.3.1 Monophthong
-!2016-12-05-NotUsed!!! !!2.1.3.3.1.3 Consonant always short
-!2016-12-05-NotUsed!!! !!2.1.3.3.1.3.4 Sg.Nom Short vowel AND Short consonant
-!2016-12-05-NotUsed!!! !!2.1.3.3.1.3.4.1.Sg.Gen Weak Grade
-!2016-12-05-NotUsed!!! !!2.1.3.3.1.3.4.1.3 Sg.Ill Weak Grade
-!2016-12-05-NotUsed!!! atom:atom
-!2016-12-05-NotUsed!!! * Yaml: __N-atom__
-!2016-12-05-NotUsed!: A-02_SG-NOM ;	    			! atom
-!2016-12-05-NotUsed!:%^V2VV A-02_SG-ABE/ACC/GEN ;		! atoom
-!2016-12-05-NotUsed!:%^V2VV%^PAL%>e A-02_SG-ILL ;      		! atooʹme
-!2016-12-05-NotUsed!:%^V2VV%>â A-02_SG-LOC ;    			! atoomâst
-!2016-12-05-NotUsed!:%^V2VV A-02_SG-COM_IN ;			! atoomin
-!2016-12-05-NotUsed!:%^V2VV%>â A-02_ESS/PAR ;  			! atoomân
-!2016-12-05-NotUsed!:%^V2VV A-02_PL-NOM ;		! atoom
-!2016-12-05-NotUsed!:%^V2VV A-02_PL-OBL ;
-!2016-12-05-NotUsed!+Der/Dimin+A:%^V2VV A-02_MUORYZH-WITHOUT-PAL ;  !!= * @CODE@ paar-
-!2016-12-05-NotUsed!+Der/Dimin+A:%^V2VV%^PAL A-02_MUORYZH-WITH-PAL ;  !!= * @CODE@ paaʹr-
-!2016-12-05-NotUsed!
-!2016-12-05-NotUsed!:%^V2VV HatY-STEM-PX-RETAIN ;
-!2016-12-05-NotUsed!:%^V2VV HatY-STEM-PX-WEAKEN ; !! e.g.
-!2016-12-05-NotUsed!:%^V2VV HatY-STEM-PX-WEAKEN_LARGO ; !! e.g. +Use/NG+Sg+Loc+PxSg3
-!2016-12-05-NotUsed!:%^V2VV HatY-STEM-PX-ALLEGRO ; !! e.g. +Sg+Loc+PxSg1
-!2016-12-05-NotUsed!:%^V2VV HatY-STEM-PX-STRENGTHEN ;
+LEXICON A_ATOM
++A: A-01_ATOM ;
+LEXICON A-01_ATOM
+
+: A-02_SG-NOM ;	    			! atom
+:%^V2VV A-02_SG-ABE/ACC/GEN ;		! atoom
+:%^V2VV%^PAL%>e A-02_SG-ILL ;      		! atooʹme
+:%^V2VV%>â A-02_SG-LOC ;    			! atoomâst
+:%^V2VV A-02_SG-COM_IN ;			! atoomin
+:%^V2VV%>â A-02_ESS/PAR ;  			! atoomân
+:%^V2VV A-02_PL-NOM ;		! atoom
+:%^V2VV A-02_PL-OBL ;
++Der/Dimin+A:%^V2VV A-02_MUORYZH-WITHOUT-PAL ;  !!= * @CODE@ paar-
++Der/Dimin+A:%^V2VV%^PAL A-02_MUORYZH-WITH-PAL ;  !!= * @CODE@ paaʹr-
+
+:%^V2VV HatY-STEM-PX-RETAIN ;
+:%^V2VV HatY-STEM-PX-WEAKEN ; !! e.g.
+:%^V2VV HatY-STEM-PX-WEAKEN_LARGO ; !! e.g. +Use/NG+Sg+Loc+PxSg3
+:%^V2VV HatY-STEM-PX-ALLEGRO ; !! e.g. +Sg+Loc+PxSg1
+:%^V2VV HatY-STEM-PX-STRENGTHEN ;
 
 !2016-12-05-NotUsed!LEXICON A-01_BLOUSLOV
 !2016-12-05-NotUsed!! gradation: yes
@@ -8061,6 +8035,23 @@ LEXICON A-01_KAAMMI !!= * @CODE@ kaammi:kaamm
 
 !! Class 9 according to Feist 158
 
+LEXICON A-01_YNNJOZH
+! gradation: no
+!! * Yaml: __A-saemmlazh__
+!! ânnʼjõž:ânnʼj
++Sg+Nom:õž K ;
+:a A-02_SG-ABE/ACC/GEN ;
+:õʹžže A-02_SG-ILL ;
+:iʹžže A-02_SG-ILL ;
+:a A-02_SG-LOC ;
+:a A-02_SG-COM_IN ;
+:õʹžže A-02_ESS/PAR ;
+:iʹžže A-02_ESS/PAR ;
++Use/NG:e A-02_ESS/PAR ;
+:a A-02_PL-NOM ;
+:a A-02_PL-OBL ;
++Der/Dimin:õõžž A-01_SAEQMMLOOZHZHYZH ;
+
 LEXICON A-01_MEERSAZH
 ! gradation: no
 !! * Yaml: __A-saemmlazh__
@@ -8156,6 +8147,9 @@ LEXICON A-01_PEESSAZH !!= * @CODE@ piissuž:pẹẹss
 :až A-02_SG-NOM ;
 :ž NMN_SG-ILL_E ;
 :že A-02_ESS/PAR ;
+
+LEXICON A_PIISSUZH !!= * @CODE@ piissuž:piiss
++A: A-01_PIISSUZH ;
 
 LEXICON A-01_PIISSUZH
 ! gradation: no
