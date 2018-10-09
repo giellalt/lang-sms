@@ -49,7 +49,7 @@ Define flags [          ! explicit list since `?` does not match flags
 ];
 Define inputmark    [ 0:"@PMATCH_INPUT_MARK@" | 0:"@PMATCH_BACKTRACKING@" ];
 
-Define incondform      Punct|{“}|{”}|{…}|{‚}|{‘}|{’}|{–}|{—}|{­}|{_}|{<}|{>}|{■}|{«}|{»}|{�}|{@}|{'}|{}|{}|{➤}|{•}|{§}|{!}
+Define incondform      Punct|{“}|{”}|{…}|{‚}|{‘}|{’}|{–}|{—}|{­}|{_}|{<}|{>}|{■}|{«}|{»}|{�}|{@}|{'}
                        | { } ! U+2000    En Quad                    &#8192;
                        | { } ! U+2001    Em Quad                    &#8193;
                        | { } ! U+2002    En Space                   &#8194;
@@ -112,13 +112,10 @@ Define alphabet "a-z"
                |{Ỷ}|{Ƴ}|{Ỵ}|{Ɏ}
                |{š}|{ž}|{č}|{đ}|{í}|{ŋ}|{ň}|{ŧ}|{ň}
                |{Š}|{Ž}|{Č}|{Đ}|{Í}|{Ŋ}|{Ň}|{Ŧ}|{Ň}
-               |{ʒ}|{ǯ}|{ǥ}|{ǧ}|{ǩ}|{ñ}|{ĺ}|{ś}
-               |{Ʒ}|{Ǯ}|{Ǥ}|{Ǧ}|{Ǩ}|{Ñ}|{Ĺ}|{Ś}
-               |{ʹ}|{ʼ}|{ˈ}|{‘}|{‐}|{–}|{—}
-               | "0-9" |{-}
+               | "0-9"
                |{_}|{§}|{°}
                ;
-Define alphamiddle {'} ; ! Treat foo-bar as one big unknown, but -foo (or bar-) as two tokens
+Define alphamiddle {'}|{-} ; ! Treat foo-bar as one big unknown, but -foo (or bar-) as two tokens
 Define alphaword alphabet+ ( alphamiddle alphabet+ );
 !! TODO: Could use something like this, but built-in's don't include šžđčŋ:
 ! Define MixCase(X) [OptCap(X) | UpCase(X)];
