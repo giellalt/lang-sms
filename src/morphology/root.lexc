@@ -159,7 +159,16 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Hom3
 +Hom4
 
+
 !! !Derivation
+
+!! All non-positional derivations should be preceded by this tag, to make it possible
+!! to target regular expressions at all derivations in a language-independent way:
+!! just specify +Der|+Der1 .. +Der5 and you are set.
+
++Der  !!≈ * @CODE@
+
+
 +Der/Car !!= * @CODE@  N»A -tem, -teʹmes
 +Der/Dimin  !!= * @CODE@ diminutive derivation N»N was Der/Dim, V»V was Der/sted, Der/âʹstted
 !+Der/sted  	!!= * @CODE@ diminutive V»V
@@ -199,6 +208,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Der/ched	!!= * @CODE@ frequentative V»V for ʹCCed verbs -čed
 +Der/NomAg	!!= * @CODE@ agent V»N
 +Der/NomAct	!!= * @CODE@ action V»N +Der/MOsh
+
 
 !! !!Tags for originating language
 
