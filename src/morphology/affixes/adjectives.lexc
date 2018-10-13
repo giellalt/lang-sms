@@ -35,6 +35,7 @@ A_IS_ADJ-DER/SUPERL_mws ;
 +A:%>es A2N-VUOTT ;
 
 
+
 !! CLASS 1 HIGH VOWEL, NO PALATALIZATION NOMINALS
 LEXICON A_PAPP !!= * @CODE@ papp:papp
 !! 
@@ -60,9 +61,18 @@ LEXICON A_MUORR !!= * @CODE@ muõrr:muõrr
 :%^CC2C A-ATTR_ys ;
 +A: A-01_MUORR ;
 
-!LEXICON A_NUORR !!= * @CODE@ nuõrr:nuõrr
-!+A+Attr: # ;
-!+A: A-01_MUORR ;
+LEXICON A_NUORR !!= * @CODE@ nuõrr:nuõrr
++A+Attr: # ;
++A: A-01_MUORR ;
+
+LEXICON A_SHIOGHGH !!= * @CODE@ šiõǥǥ:šiõǥǥ
+!! Need work on derivation since this only has positive form. 2018-10-13
++A+Attr: # ;
++A: # ;
+
+LEXICON	A_KOOKKA !!= * @CODE@	kookka length of/pituinen
+!! no gradation, has preceding genitive 2018-10-13
++A: # ;
 
 LEXICON A_KUOCC !!= * @CODE@ kuõcc:kuõcc
 +A+Attr:%^KK2GG%>âs # ;
@@ -92,6 +102,9 @@ LEXICON A_SUYMMM !!= * @CODE@ suâmm:suâmˈm
 :%^PALE%^PAL%^XXX2XX A-ATTR_es ;
 +A: A-01_NEAVVV ;! !Check this 2016-09-16 
 
+LEXICON A_MODDAI !!= * @CODE@ moddai:modd
++A:ǥ  A-ATTR_ys ; !!Check this 2018-10-13
++A+Sg+Nom:ai # ;
 
 !! CLASS 1 LOW VOWEL, NO PALATALIZATION NOMINALS
 LEXICON A_PESS
@@ -149,48 +162,53 @@ LEXICON A_LOAQDD !!= * @CODE@ väʹll:väll
 :%^V2VV%^PAL   A-ATTR_es ;
 +A: A-01_LOAQDD ;
 
-LEXICON A_UQCC !!= * @CODE@ uʹcc:u%^1VOWcc
+LEXICON A_UQCC !!= * @CODE@ uʹcc:u%^1VOW%{ʹØ%}cc
 :%^V2VV%^PAL   A-ATTR_es ;
 +A: A-01_UQCC ;
 
-LEXICON A_SAAQMM !!= * @CODE@ sääʹmm:säämm
+LEXICON A_SAAQMM !!= * @CODE@ sääʹmm:sää%{ʹØ%}mm
 :%^CC2C%^PAL   A-ATTR_es ;
 +A: A-01_SAAQMM ;
 
-LEXICON A_CHAAQCC !!= * @CODE@ čääʹcc:čääcc
+LEXICON A_CHAAQCC !!= * @CODE@ čääʹcc:čää%{ʹØ%}cc
 :%^PAL%^KK2GG   A-ATTR_es ;
 +A: A-01_CHAAQCC ;
 
-LEXICON A_KAQLBB !!= * @CODE@ käʹlbb:kälbb âʹlǧǧ:âlgg
+LEXICON A_KAQLBB !!= * @CODE@ käʹlbb:kälbb âʹlǧǧ:â%^1VOW%{ʹØ%}lgg
 ! vowel: monophthong
 :%^V2VV%^PAL%^CC2C   A-ATTR_es ;
 +A: A-01_KAQLBB ;
 
-LEXICON A_HAAQSKH !!= * @CODE@ hääʹsǩ:hääsk
+LEXICON A_HAAQSKH !!= * @CODE@ hääʹsǩ:hää%{ʹØ%}sk
 ! vowel: monophthong
 ! gradation: no
 :%^PAL   A-ATTR_es ;
 +A: A-01_HAAQSKH ;
 
+LEXICON A_HITRAI !!= * @CODE@ hitrai:hitrai
+!! no separate attribute form 2018-10-13
+!! loanword
++A+Attr: # ;
++A: # ;
 
-LEXICON A_SEQTT !!= * @CODE@ seʹtt:sẹtt
+LEXICON A_SEQTT !!= * @CODE@ seʹtt:sẹ%^1VOW%{ʹØ%}tt
 ! vowel: monophthong
 !! CHECKME
 :%^V2VV%^PAL   A-ATTR_es ;
 +A: A-01_SEQTT ;
 
 
-LEXICON A_KHEQRJJ !!= * @CODE@ ǩeʹrjj:ǩẹrjj
+LEXICON A_KHEQRJJ !!= * @CODE@ ǩeʹrjj:ǩẹ%^1VOW%{ʹØ%}rjj
 ! vowel: monophthong
 :%^V2VV%^PAL%^XYY2XY   A-ATTR_es ;
 +A: A-01_KHEQRJJ ;
 
-LEXICON A_JAUQRR !!= * @CODE@ jäuʹrr:jäurr
+LEXICON A_JAUQRR !!= * @CODE@ jäuʹrr:jä%^1VOWu%{ʹØ%}rr
 ! vowel: monophthong
 :%^V2VV%^PAL%^XYY2XY   A-ATTR_es ;
 +A: A-01_JAUQRR ;
 
-LEXICON A_PEIQVV !!= * @CODE@ peiʹvv:pẹivv
+LEXICON A_PEIQVV !!= * @CODE@ peiʹvv:pẹ%^1VOWi%{ʹØ%}vv
 ! vowel: monophthong
 :%^V2VV%^PAL%^XYY2XY   A-ATTR_es ;
 +A: A-01_PEIQVV ;
@@ -254,6 +272,8 @@ LEXICON A_SAELTTAI !!= * @CODE@ sälttai:sältt
 +A:%>%{ʼØ%}j ADJ-DER/COMP_ab ;
 +A:%>%{ʼØ%}j ADJ-DER/SUPERL_ummus ;
 !%^RmVow%^I2J
+
+
 
 !! CLASS 
 
@@ -504,6 +524,8 @@ LEXICON A_PUEAQRDES  !!= * @CODE@ čueʹcǩes:čuäckkez
 +A:es A-01_PUEAQRDES ; !!= * @CODE@  čueʹcǩes:čuäckkez
 +A:%^PALẸ%^PAL%^XYY2XY%>es A2N-VUOTT ;
 
+LEXICON A_TUEJJEEJA !!= * @CODE@ tuejjeeja:tuejjẹẹja
++A: NMN_TUEJJEEJA ;
 
 LEXICON A_PRSPRC-EEI !!= * @CODE@ tuejjeei:tuejjee
 +A+Attr:jes ENDLEX ;
@@ -621,7 +643,7 @@ LEXICON A_LIEQDHDHDHI !!= * @CODE@ lieʹđđi:lieʹđˈđi
 !+A:%^I2J ADJ-DER/COMP_kwlmmsab ;
 !+A:%^I2J ADJ-DER/SUPERL_ummus ;
 
-LEXICON A_VUOIQNNI !!= * @CODE@ vuõiʹnni:vuõiʹnni
+LEXICON A_VUOIQNNI !!= * @CODE@ vuõiʹnni:vuõiʹnn%{ʼØ%}i
 +A: A-01_VUOIQNNI ;
 +A:%^I2J ADJ-DER/COMP_kwlmmsab ;
 +A:%^I2J ADJ-DER/SUPERL_ummus ;
@@ -3171,44 +3193,25 @@ LEXICON A-01_NUQBB
 !2016-12-05-NotUsed!:%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) čuʹkk-
 !2016-12-05-NotUsed!:%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) cuʹǩǩ Ess+Px..
 
-!2016-12-05-NotUsed!LEXICON A-01_NJUUQNN
-!2016-12-05-NotUsed!!! Sg_Nom: vow_mono:vow_long:vow_high_u:pal_yes:cns_gem
-!2016-12-05-NotUsed!! gradation: yes
-!2016-12-05-NotUsed!! vowel: monophthong
-!2016-12-05-NotUsed!! weak: single
-!2016-12-05-NotUsed!!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-!2016-12-05-NotUsed!!! !!1.3 Sg.Loc in -est (vowel shift)
-!2016-12-05-NotUsed!!! !!  Raised: Sg.Com, Pl.Obl
-!2016-12-05-NotUsed!!! !!  Lowered: ELSE
-!2016-12-05-NotUsed!!! !!  e-stems (Sg.Loc, Ess, Par).
-!2016-12-05-NotUsed!!! !!1.3.2 Sg.Ill vowel -a
-!2016-12-05-NotUsed!!! !!1.3.2.1 Has Palatalization
-!2016-12-05-NotUsed!!! !!  Palatalized: ELSE
-!2016-12-05-NotUsed!!! !!  Not Palatalized: Sg.Ill
-!2016-12-05-NotUsed!!! !!1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-!2016-12-05-NotUsed!!! !!1.3.2.1.1.1 Has Orthographic Gradation
-!2016-12-05-NotUsed!!! !!1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
-!2016-12-05-NotUsed!!! !!  Strong grade: Sg.Nom, Ess, Par
-!2016-12-05-NotUsed!!! !!  Extra strong grade: Sg.Ill
-!2016-12-05-NotUsed!!! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-!2016-12-05-NotUsed!!! !!FORMS
-!2016-12-05-NotUsed!!! NumContLex="1.113"
-!2016-12-05-NotUsed!!! * Yaml: __N-njuunn__
-!2016-12-05-NotUsed!!! * There are several stem types
-!2016-12-05-NotUsed!!! * njuuʹnn:njuuʹnn
-!2016-12-05-NotUsed!!!
-!2016-12-05-NotUsed!:%^PAL A-02_E-STEM_SG-NOM ;	    			!!(1) Sg.Nom: njuuʹnn
-!2016-12-05-NotUsed!:%^PAL%^CC2C A-02_E-STEM_SG-ABE/ACC/GEN ;		!!(2) Pl.Nom: njuuʹn
-!2016-12-05-NotUsed!:%^PAL%^CC2C A-02_PL-NOM ;		!!(2) Pl.Nom: njuuʹn
-!2016-12-05-NotUsed!:%^VV2V%^VOWLower A-02_E-STEM_SG-ILL ;	!!(3) Sg.Ill: njonna
-!2016-12-05-NotUsed!:%^PAL%^CC2C%>e A-02_SG-LOC ;	    	   	!!(4) Sg.Loc: njuuʹnest
-!2016-12-05-NotUsed!:%^PAL%^CC2C A-02_SG-COM_IN ;			!!(5) Sg.Com: njuuʹnin
-!2016-12-05-NotUsed!:%^PAL%>e A-02_ESS/PAR ; 	  			!!(6) Ess: njuuʹnnen
-!2016-12-05-NotUsed!:%^PAL%^CC2C A-02_E-STEM_PL-OBL ;		!!(8) Pl+Gen: njuuʹni
-!2016-12-05-NotUsed!:%^VOWLower%^CC2C A-02_E-STEM_N_KUYLAZH ;	!!(9) Der/Dimin.N.Sg.Nom: njoonaž
-!2016-12-05-NotUsed! E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) njuunn-
-!2016-12-05-NotUsed!:%^VV2V%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) njuʹn-
-!2016-12-05-NotUsed!:%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) njuʹnn Ess+Px..
+LEXICON A_NJUUQNN
++A: A-01_NJUUQNN ;
+LEXICON A-01_NJUUQNN
+!! Bahuvriihi: årddnjuuʹnn
+!! * Yaml: __N-njuunn__
+
+!!
+:%^PAL A-02_E-STEM_SG-NOM ;	    			!!(1) Sg.Nom: njuuʹnn
+:%^PAL%^CC2C A-02_E-STEM_SG-ABE/ACC/GEN ;		!!(2) Pl.Nom: njuuʹn
+:%^PAL%^CC2C A-02_PL-NOM ;		!!(2) Pl.Nom: njuuʹn
+:%^VV2V%^VOWLower A-02_E-STEM_SG-ILL ;	!!(3) Sg.Ill: njonna
+:%^PAL%^CC2C%>e A-02_SG-LOC ;	    	   	!!(4) Sg.Loc: njuuʹnest
+:%^PAL%^CC2C A-02_SG-COM_IN ;			!!(5) Sg.Com: njuuʹnin
+:%^PAL%>e A-02_ESS/PAR ; 	  			!!(6) Ess: njuuʹnnen
+:%^PAL%^CC2C A-02_E-STEM_PL-OBL ;		!!(8) Pl+Gen: njuuʹni
+:%^VOWLower%^CC2C A-02_E-STEM_N_KUYLAZH ;	!!(9) Der/Dimin.N.Sg.Nom: njoonaž
+ E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) njuunn-
+:%^VV2V%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) njuʹn-
+:%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) njuʹnn Ess+Px..
 
 
 !2016-12-05-NotUsed!LEXICON A-01_STUUQL
@@ -3355,50 +3358,34 @@ LEXICON A-01_NUQBB
 !2016-12-05-NotUsed!:%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) kuʹvǯ-
 !2016-12-05-NotUsed!:%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) kuʹvǯǯ Ess+Px..
 
-
-!2016-12-05-NotUsed!LEXICON A-01_JUQVJJ
-!2016-12-05-NotUsed!!! Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_vyy
-!2016-12-05-NotUsed!! gradation: yes
-!2016-12-05-NotUsed!!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-!2016-12-05-NotUsed!!! !!1.3 Sg.Loc in -est (vowel shift)
-!2016-12-05-NotUsed!!! !!  Raised: Sg.Com, Pl.Obl
-!2016-12-05-NotUsed!!! !!  Lowered: ELSE
-!2016-12-05-NotUsed!!! !!  e-stems (Sg.Loc, Ess, Par).
-!2016-12-05-NotUsed!!! !!1.3.2 Sg.Ill vowel -a
-!2016-12-05-NotUsed!!! !!1.3.2.1 Has Palatalization
-!2016-12-05-NotUsed!!! !!  Palatalized: ELSE
-!2016-12-05-NotUsed!!! !!  Not Palatalized: Sg.Ill
-!2016-12-05-NotUsed!!! !!1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-!2016-12-05-NotUsed!!! !!1.3.2.1.1.1 Has Orthographic Gradation
-!2016-12-05-NotUsed!!! !!1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
-!2016-12-05-NotUsed!!! !!  Strong grade: Sg.Nom, Ess, Par
-!2016-12-05-NotUsed!!! !!  Strong grade: Sg.Ill
-!2016-12-05-NotUsed!!! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-!2016-12-05-NotUsed!!! !!FORMS
-!2016-12-05-NotUsed!!! !!(1) Sg.Nom: juʹvjj
-!2016-12-05-NotUsed!!! !!(2) Pl.Nom: juuʹj
-!2016-12-05-NotUsed!!! !!(3) Sg.Ill: joujja
-!2016-12-05-NotUsed!!! !!(4) Sg.Loc: juuʹjest
-!2016-12-05-NotUsed!!! !!(5) Sg.Com: juuʹjin
-!2016-12-05-NotUsed!!! !!(6) Ess: juʹvjjen
-!2016-12-05-NotUsed!!! !!(7) Par: juʹvjjed
-!2016-12-05-NotUsed!!! !!(8) Pl.Acc: juuʹjid
-!2016-12-05-NotUsed!!! !!(9) Der/Dimin.N.Sg.Nom: joujjaž
-!2016-12-05-NotUsed!!! NumContLex="1.113"
-!2016-12-05-NotUsed!!! Is for nouns with ''-est'' Loc, Extra long vowel
-!2016-12-05-NotUsed!!! * Yaml: __N-juvjj__
-!2016-12-05-NotUsed!:%^PAL A-02_E-STEM_SG-NOM ;
-!2016-12-05-NotUsed!:%^PAL%^XYY2VY A-02_E-STEM_SG-ABE/ACC/GEN ;
-!2016-12-05-NotUsed!:%^PAL%^XYY2VY A-02_PL-NOM ;
-!2016-12-05-NotUsed!:%^VOWLower%^XYY2VYY A-02_E-STEM_SG-ILL ; !joujja
-!2016-12-05-NotUsed!:%^PAL%^XYY2VY%>e A-02_SG-LOC ;
-!2016-12-05-NotUsed!:%^PAL%^XYY2VY A-02_SG-COM_IN ;
-!2016-12-05-NotUsed!:%^PAL%>e A-02_ESS/PAR ; ! ess and prt without
-!2016-12-05-NotUsed!:%^PAL%^XYY2VY%> A-02_E-STEM_PL-OBL ;
-!2016-12-05-NotUsed!:%^VOWLower%^XYY2VY A-02_E-STEM_N_KUYLAZH ;
-!2016-12-05-NotUsed! E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) juvjj-
-!2016-12-05-NotUsed!:%^VV2V%^PAL%^XYY2VY E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) juʹj-
-!2016-12-05-NotUsed!:%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) juʹvjj Ess+Px..
+LEXICON A_JUQVJJ
++A: A-01_JUQVJJ ;
+LEXICON A-01_JUQVJJ
+!! !!FORMS
+!! !!(1) Sg.Nom: juʹvjj
+!! !!(2) Pl.Nom: juuʹj
+!! !!(3) Sg.Ill: joujja
+!! !!(4) Sg.Loc: juuʹjest
+!! !!(5) Sg.Com: juuʹjin
+!! !!(6) Ess: juʹvjjen
+!! !!(7) Par: juʹvjjed
+!! !!(8) Pl.Acc: juuʹjid
+!! !!(9) Der/Dimin.N.Sg.Nom: joujjaž
+!! NumContLex="1.113"
+!! Is for nouns with ''-est'' Loc, Extra long vowel
+!! * Yaml: __N-juvjj__
+:%^PAL A-02_E-STEM_SG-NOM ;
+:%^PAL%^XYY2VY A-02_E-STEM_SG-ABE/ACC/GEN ;
+:%^PAL%^XYY2VY A-02_PL-NOM ;
+:%^VOWLower%^XYY2VYY A-02_E-STEM_SG-ILL ; !joujja
+:%^PAL%^XYY2VY%>e A-02_SG-LOC ;
+:%^PAL%^XYY2VY A-02_SG-COM_IN ;
+:%^PAL%>e A-02_ESS/PAR ; ! ess and prt without
+:%^PAL%^XYY2VY%> A-02_E-STEM_PL-OBL ;
+:%^VOWLower%^XYY2VY A-02_E-STEM_N_KUYLAZH ;
+ E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) juvjj-
+:%^VV2V%^PAL%^XYY2VY E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) juʹj-
+:%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) juʹvjj Ess+Px..
 
 !2016-12-05-NotUsed!LEXICON A-01_VUEQSS
 !2016-12-05-NotUsed!!! Sg_Nom: vow_di:vow_short:vow_high_u:pal_yes:cns_gem
