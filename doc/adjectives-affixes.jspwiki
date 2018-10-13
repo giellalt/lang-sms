@@ -10,6 +10,7 @@
  * +A: ADJ-DER/COMP_ab ;  This has a Comp+Attr
 
 
+
 CLASS 1 HIGH VOWEL, NO PALATALIZATION NOMINALS
  * LEXICON A_PAPP  papp:papp
 
@@ -24,6 +25,13 @@ friskk
 
  * LEXICON A_MUORR  muõrr:muõrr
 
+ * LEXICON A_NUORR  nuõrr:nuõrr
+
+ * LEXICON A_SHIOGHGH  šiõǥǥ:šiõǥǥ
+Need work on derivation since this only has positive form. 2018-10-13
+
+ * LEXICON	A_KOOKKA 	kookka length of/pituinen
+no gradation, has preceding genitive 2018-10-13
 
  * LEXICON A_KUOCC  kuõcc:kuõcc
 
@@ -38,6 +46,7 @@ hiâlpp
  * LEXICON A_SUYMMM  suâmm:suâmˈm
 
 
+ * LEXICON A_MODDAI  moddai:modd
 
 CLASS 1 LOW VOWEL, NO PALATALIZATION NOMINALS
 
@@ -62,26 +71,29 @@ CLASS 1 LOW VOWEL, PALATALIZATION NOMINALS
 
  * LEXICON A_LOAQDD  väʹll:väll
 
- * LEXICON A_UQCC  uʹcc:u%^1VOWcc
+ * LEXICON A_UQCC  uʹcc:u%^1VOW%{ʹØ%}cc
 
- * LEXICON A_SAAQMM  sääʹmm:säämm
+ * LEXICON A_SAAQMM  sääʹmm:sää%{ʹØ%}mm
 
- * LEXICON A_CHAAQCC  čääʹcc:čääcc
+ * LEXICON A_CHAAQCC  čääʹcc:čää%{ʹØ%}cc
 
- * LEXICON A_KAQLBB  käʹlbb:kälbb âʹlǧǧ:âlgg
+ * LEXICON A_KAQLBB  käʹlbb:kälbb âʹlǧǧ:â%^1VOW%{ʹØ%}lgg
 
- * LEXICON A_HAAQSKH  hääʹsǩ:hääsk
+ * LEXICON A_HAAQSKH  hääʹsǩ:hää%{ʹØ%}sk
 
+ * LEXICON A_HITRAI  hitrai:hitrai
+no separate attribute form 2018-10-13
+loanword
 
- * LEXICON A_SEQTT  seʹtt:sẹtt
+ * LEXICON A_SEQTT  seʹtt:sẹ%^1VOW%{ʹØ%}tt
 CHECKME
 
 
- * LEXICON A_KHEQRJJ  ǩeʹrjj:ǩẹrjj
+ * LEXICON A_KHEQRJJ  ǩeʹrjj:ǩẹ%^1VOW%{ʹØ%}rjj
 
- * LEXICON A_JAUQRR  jäuʹrr:jäurr
+ * LEXICON A_JAUQRR  jäuʹrr:jä%^1VOWu%{ʹØ%}rr
 
- * LEXICON A_PEIQVV  peiʹvv:pẹivv
+ * LEXICON A_PEIQVV  peiʹvv:pẹ%^1VOWi%{ʹØ%}vv
 
  * LEXICON A_SUEAQKHKH  sueʹǩǩ:suäkk
 cuẹʹǩǩ
@@ -105,6 +117,8 @@ HOW DOES JIÕʹNNI decline?
 
  * LEXICON A_PAERRAI  pärrai:pärr
  * LEXICON A_SAELTTAI  sälttai:sältt
+
+
 
 CLASS 
 
@@ -192,6 +206,7 @@ CLASS
  * LEXICON A_PUEAQRDES   čueʹcǩes:čuäckkez
  * +A:es A-01_PUEAQRDES ;   čueʹcǩes:čuäckkez
 
+ * LEXICON A_TUEJJEEJA  tuejjeeja:tuejjẹẹja
 
  * LEXICON A_PRSPRC-EEI  tuejjeei:tuejjee
  * +A+Attr:jas ENDLEX ;  c.f. sjm faʹlsǩeejas
@@ -228,7 +243,7 @@ WORK HERE 2015-10-14 deverbals
 
  * LEXICON A_LIEQDHDHDHI  lieʹđđi:lieʹđˈđi
 
- * LEXICON A_VUOIQNNI  vuõiʹnni:vuõiʹnni
+ * LEXICON A_VUOIQNNI  vuõiʹnni:vuõiʹnn%{ʼØ%}i
 
  * LEXICON A_JUURD  juurd:ju%^1VOWrdd
 
@@ -936,6 +951,12 @@ NumContLex="1.113"
 
 
 
+Bahuvriihi: årddnjuuʹnn
+* Yaml: __N-njuunn__
+
+ *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) njuunn-
+ * :%^VV2V%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) njuʹn-
+ * :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) njuʹnn Ess+Px..
 
 
 
@@ -944,7 +965,22 @@ NumContLex="1.113"
 
 
 
-
+!!FORMS
+!!(1) Sg.Nom: juʹvjj
+!!(2) Pl.Nom: juuʹj
+!!(3) Sg.Ill: joujja
+!!(4) Sg.Loc: juuʹjest
+!!(5) Sg.Com: juuʹjin
+!!(6) Ess: juʹvjjen
+!!(7) Par: juʹvjjed
+!!(8) Pl.Acc: juuʹjid
+!!(9) Der/Dimin.N.Sg.Nom: joujjaž
+NumContLex="1.113"
+Is for nouns with ''-est'' Loc, Extra long vowel
+* Yaml: __N-juvjj__
+ *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) juvjj-
+ * :%^VV2V%^PAL%^XYY2VY E-STEM-PX-ALLEGRO ;  (11) juʹj-
+ * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) juʹvjj Ess+Px..
 
 
 
