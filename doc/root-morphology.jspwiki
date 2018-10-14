@@ -226,7 +226,6 @@ get the same pronounciation whether read as SME or NOB/NNO/SWE.
  * +Sem/Act          = Activity
  * +Sem/Adr          = Webadr
  * +Sem/Amount       = Amount
- * +Sem/Ani          = Animate
  * +Sem/Ani       Animate	    (names)
  * +Sem/Ani-fish  Animate	 
  * +Sem/Aniprod      = Animal Product
@@ -279,8 +278,6 @@ get the same pronounciation whether read as SME or NOB/NNO/SWE.
  * +Sem/Obj-ling     = Object with something written on it
  * +Sem/Obj-rope     = flexible ropelike object
  * +Sem/Obj-surfc    = Surface object
- * +Sem/Oevre   = oevre (work of art, text)
- * +Sem/Org          = Organisation
  * +Sem/Org       Organization (names)
  * +Sem/Part		   = Feature, oassi, bealli
  * +Sem/Perc-cogn      = Cloth
@@ -336,7 +333,6 @@ get the same pronounciation whether read as SME or NOB/NNO/SWE.
  * +Sem/Ani_Build					
  * +Sem/Ani_Build-part				
  * +Sem/Ani_Build_Hum_Txt			
- * +Sem/Ani-fish					
  * +Sem/Ani_Group					
  * +Sem/Ani_Group_Hum				
  * +Sem/Ani_Group_Prod-vis
@@ -366,6 +362,12 @@ get the same pronounciation whether read as SME or NOB/NNO/SWE.
  * +Sem/Body_Plc					
  * +Sem/Body_Plc-elevate			
  * +Sem/Body_Time					
+ * +Sem/Build-part_Cat                 
+ * +Sem/Build-part_Cat_Ctain           
+ * +Sem/Build-part_Cat_Ctain_Mat       
+ * +Sem/Build-part_Ctain               
+ * +Sem/Build-part_Ctain_Mat           
+ * +Sem/Build-part_Ctain_Obj           
  * +Sem/Build-part_Plc				
  * +Sem/Build_Build-part			
  * +Sem/Build_Clth-part			
@@ -374,12 +376,6 @@ get the same pronounciation whether read as SME or NOB/NNO/SWE.
  * +Sem/Build_Obj 			
  * +Sem/Build_Org					
  * +Sem/Build_Route				
- * +Sem/Build-part_Cat                 
- * +Sem/Build-part_Cat_Ctain           
- * +Sem/Build-part_Cat_Ctain_Mat       
- * +Sem/Build-part_Ctain               
- * +Sem/Build-part_Ctain_Mat           
- * +Sem/Build-part_Ctain_Obj           
  * +Sem/Cat_Group_Hum	                
  * +Sem/Cat_Group_Hum_Plc	            
  * +Sem/Clth-jewl_Curr				
@@ -387,6 +383,7 @@ get the same pronounciation whether read as SME or NOB/NNO/SWE.
  * +Sem/Clth-jewl_Curr_Obj_Org
  * +Sem/Clth-jewl_Fruit
  * +Sem/Clth-jewl_Money			
+ * +Sem/Clth-jewl_Org				
  * +Sem/Clth-jewl_Plant			
  * +Sem/Clth_Hum					
  * +Sem/Clth_Obj-clo
@@ -422,8 +419,8 @@ get the same pronounciation whether read as SME or NOB/NNO/SWE.
  * +Sem/Feat-phys_Wthr				
  * +Sem/Feat-psych_Hum				
  * +Sem/Feat-psych_Plc
- * +Sem/Food_Obj-surfc
  * +Sem/Feat_Plant					
+ * +Sem/Food_Obj-surfc
  * +Sem/Food_Perc-phys				
  * +Sem/Food_Plant					
  * +Sem/Fruit_Hum                      
@@ -444,9 +441,9 @@ get the same pronounciation whether read as SME or NOB/NNO/SWE.
  * +Sem/Hum_Mat_Tool
  * +Sem/Hum_Obj					
  * +Sem/Hum_Org					
- * +Sem/Hum_Sign
  * +Sem/Hum_Plant					
  * +Sem/Hum_Plc					
+ * +Sem/Hum_Sign
  * +Sem/Hum_Tool					
  * +Sem/Hum_Tool-it                     = Human
  * +Sem/Hum_Veh					
@@ -459,14 +456,19 @@ get the same pronounciation whether read as SME or NOB/NNO/SWE.
  * +Sem/Money_Obj					
  * +Sem/Money_Part
  * +Sem/Money_Txt					
+ * +Sem/Obj-ling_Obj-surfc             
  * +Sem/Obj-play					
  * +Sem/Obj-play_Sport				
  * +Sem/Obj_Semcon					
  * +Sem/Obj_Sign
- * +Sem/Obj_Veh					
- * +Sem/Clth-jewl_Org				
+ * +Sem/Obj_State					
  * +Sem/Obj_Symbol
- * +Sem/Oevre-txt					 (so far only Biblija, changed to Sem/Txt)
+ * +Sem/Obj_Veh					
+ * +Sem/Oeuvre					 (not used so far (?)), note oeu-
+ * +Sem/Oeuvre-txt					 (so far only Biblija, changed to Sem/Txt)
+ * +Sem/Org_Prod-audio
+ * +Sem/Org_Prod-cogn
+ * +Sem/Org_Prod-vis
  * +Sem/Org_Rule					
  * +Sem/Org_Txt					
  * +Sem/Org_Veh					
@@ -484,20 +486,15 @@ get the same pronounciation whether read as SME or NOB/NNO/SWE.
  * +Sem/Plc_Substnc				
  * +Sem/Plc_Substnc_Wthr			
  * +Sem/Plc_Time					
+ * +Sem/Plc_Time_Wthr
  * +Sem/Plc_Tool-catch				
  * +Sem/Plc_Wthr					
  * +Sem/Prod-audio_Txt				
  * +Sem/Prod-cogn_Txt				
  * +Sem/Semcon_Txt					
- * +Sem/Obj_State					
- * +Sem/Substnc_Wthr				
- * +Sem/Plc_Time_Wthr
- * +Sem/Time_Wthr					
  * +Sem/State-sick_Substnc
- * +Sem/Obj-ling_Obj-surfc             
- * +Sem/Org_Prod-audio
- * +Sem/Org_Prod-cogn
- * +Sem/Org_Prod-vis
+ * +Sem/Substnc_Wthr				
+ * +Sem/Time_Wthr					
 
 
 
