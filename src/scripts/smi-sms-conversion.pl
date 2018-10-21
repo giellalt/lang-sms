@@ -31,7 +31,7 @@ while(<>) {
 #	s/SKANIK/SULLOT/g ;
 #	s/RONDANE-LOAN/BERN/g ;
 #	s/BETFAGE/BERN/g ;
-#	s/DUORTNUS/BERN/g ;
+#	s/DUORTNUS/BERN/g ;	
 #	s/DUBAI/BERN/g ;
 #	s/BETFAGE/BERN/g ;
 	s/fkagK/K/g ;
@@ -40,8 +40,10 @@ while(<>) {
 	s/Indreeide/Indre-eide/g ;
 	s/Lilleeng/Lille-eng/g ;
 	s/Simleelva/Simle-elva/g ;
-#	s/\+CmpNP\/None//g ;
-	
+#	removing short names with CmpNP/None till there is a filter for them
+    s/^.*CmpNP/!/ ; 
+    s/^.*ProperNoun-smi-nocomp/!/ ; 
+
 
 # names with Skolt Sami inflection
 	s/^Evangelium\+/!Evangelium\+/g ;
