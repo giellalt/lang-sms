@@ -127,6 +127,27 @@ analyser-gt-norm.xfst: analyser-gt-norm.tmp.xfst \
 		 save stack $@\n\
 		 quit\n" | $(XFST) $(VERBOSITY)
 
+
+# We need special treatment of the disamb fst going to further pmatch processing
+# mainly due to the target pattern, thus listed here. The rule body and the
+# dependencies should be the same as the regular disamb analysers below:
+analyser-pmatchdisamb-gt-desc.hfst: analyser-pmatchdisamb-gt-desc.tmp.hfst \
+				filters/remove-norm-comp-tags.hfst             \
+				filters/remove-derivation-position-tags.hfst   \
+				filters/remove-orig_lang-tags.hfst             \
+				filters/rename-POS_before_Der-tags.hfst        
+	$(AM_V_HXFST)$(PRINTF) "read regex \
+		    @\"filters/remove-derivation-position-tags.hfst\" \
+		.o. @\"filters/remove-norm-comp-tags.hfst\"           \
+		.o. @\"filters/remove-orig_lang-tags.hfst\"           \
+		.o. @\"filters/rename-POS_before_Der-tags.hfst\"      \
+		.o. @\"$<\"                                           \
+		;\n\
+	invert net\n\
+	save stack $@\n\
+	quit\n" | $(HFST_XFST) -p $(MORE_VERBOSITY)
+
+
 # Special case for the disamb analyser, since it follows the same filename
 # pattern as the raw fst:
 analyser-disamb-gt-desc.%: analyser-disamb-gt-desc.tmp.%           \
@@ -136,16 +157,18 @@ analyser-disamb-gt-desc.%: analyser-disamb-gt-desc.tmp.%           \
 					filters/remove-dialect-tags.%                  \
 					filters/remove-homonymy-tags.%                 \
 					filters/remove-modifier-letter-vertical-line.% \
-					filters/remove-letter-dot-below.%
+					filters/remove-letter-dot-below.%              \
+					filters/rename-POS_before_Der-tags.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 				@\"filters/remove-derivation-position-tags.$*\"      \
 			.o. @\"filters/remove-orig_lang-tags.$*\"                \
 			.o. @\"filters/remove-dialect-tags.$*\"                  \
 			.o. @\"filters/remove-homonymy-tags.$*\"                 \
 			.o. @\"filters/remove-norm-comp-tags.$*\"                \
-			.o. @\"$<\"                                              \
 			.o. @\"filters/remove-letter-dot-below.$*\"              \
 			.o. @\"filters/remove-modifier-letter-vertical-line.$*\" \
+			.o. @\"filters/rename-POS_before_Der-tags.$*\"      \
+			.o. @\"$<\"                                              \
 			;\n\
 		 $(INVERT_HFST)\
 		 save stack $@\n\
