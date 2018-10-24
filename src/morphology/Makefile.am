@@ -26,7 +26,6 @@ GT_LEXC_SRCS_L1_L2=\
 				root.lexc \
 				stems/abbreviations.lexc \
 				stems/exceptions.lexc \
-				stems/punctuation.lexc \
 				stems/adjectives_newwords.lexc \
 				stems/adpositions_newwords.lexc \
 				stems/adverbs_newwords.lexc \
@@ -79,30 +78,30 @@ GT_LEXC_L2_SRCS=\
 
 # Set this to the names of all generated lexc files, if any
 GENERATED_LEXC_SRCS=\
-			 generated_files/smi-$(GTLANG)-propernouns.lexc	\
-			 $(srcdir)/stems/A_sms2x.lexc     \
-			 $(srcdir)/stems/ITRAB_sms2x.lexc     \
-			 $(srcdir)/stems/TRAB_sms2x.lexc     \
-			 $(srcdir)/stems/TRABPO_sms2x.lexc     \
-			 $(srcdir)/stems/TRNUMAB_sms2x.lexc     \
-			 $(srcdir)/stems/TRNUMABPO_sms2x.lexc     \
-			 $(srcdir)/stems/Adp_sms2x.lexc     \
-			 $(srcdir)/stems/Adv_sms2x.lexc     \
-			 $(srcdir)/stems/CC_sms2x.lexc     \
-			 $(srcdir)/stems/CS_sms2x.lexc     \
-			 $(srcdir)/stems/Det_sms2x.lexc     \
-			 $(srcdir)/stems/Interj_sms2x.lexc     \
-			 $(srcdir)/stems/N_sms2x.lexc     \
-			 $(srcdir)/stems/N_Kin_sms2x.lexc     \
-			 $(srcdir)/stems/N_Prop_sms2x.lexc     \
-			 $(srcdir)/stems/N_Prop_Toponyms_sms2x.lexc     \
-			 $(srcdir)/stems/Num_sms2x.lexc     \
-			 $(srcdir)/stems/Pcle_sms2x.lexc     \
-			 $(srcdir)/stems/Prefix_sms2x.lexc     \
-			 $(srcdir)/stems/Pron_sms2x.lexc     \
-			 $(srcdir)/stems/V_sms2x.lexc     \
-			 $(srcdir)/stems/ABBR_sms2x.lexc
-#            generated_files/punctuation.lexc
+			generated_files/smi-$(GTLANG)-propernouns.lexc \
+			$(srcdir)/stems/A_sms2x.lexc                   \
+			$(srcdir)/stems/ITRAB_sms2x.lexc               \
+			$(srcdir)/stems/TRAB_sms2x.lexc                \
+			$(srcdir)/stems/TRABPO_sms2x.lexc              \
+			$(srcdir)/stems/TRNUMAB_sms2x.lexc             \
+			$(srcdir)/stems/TRNUMABPO_sms2x.lexc           \
+			$(srcdir)/stems/Adp_sms2x.lexc                 \
+			$(srcdir)/stems/Adv_sms2x.lexc                 \
+			$(srcdir)/stems/CC_sms2x.lexc                  \
+			$(srcdir)/stems/CS_sms2x.lexc                  \
+			$(srcdir)/stems/Det_sms2x.lexc                 \
+			$(srcdir)/stems/Interj_sms2x.lexc              \
+			$(srcdir)/stems/N_sms2x.lexc                   \
+			$(srcdir)/stems/N_Kin_sms2x.lexc               \
+			$(srcdir)/stems/N_Prop_sms2x.lexc              \
+			$(srcdir)/stems/N_Prop_Toponyms_sms2x.lexc     \
+			$(srcdir)/stems/Num_sms2x.lexc                 \
+			$(srcdir)/stems/Pcle_sms2x.lexc                \
+			$(srcdir)/stems/Prefix_sms2x.lexc              \
+			$(srcdir)/stems/Pron_sms2x.lexc                \
+			$(srcdir)/stems/V_sms2x.lexc                   \
+			$(srcdir)/stems/ABBR_sms2x.lexc                \
+			generated_files/punctuation.lexc
 
 # Set this to the names of all source xml files, if any
 GT_XML_SRCS=\
