@@ -165,10 +165,10 @@ analyser-disamb-gt-desc.%: analyser-disamb-gt-desc.tmp.%           \
 			.o. @\"filters/remove-dialect-tags.$*\"                  \
 			.o. @\"filters/remove-homonymy-tags.$*\"                 \
 			.o. @\"filters/remove-norm-comp-tags.$*\"                \
+			.o. @\"filters/rename-POS_before_Der-tags.$*\"           \
+			.o. @\"$<\"                                              \
 			.o. @\"filters/remove-letter-dot-below.$*\"              \
 			.o. @\"filters/remove-modifier-letter-vertical-line.$*\" \
-			.o. @\"filters/rename-POS_before_Der-tags.$*\"      \
-			.o. @\"$<\"                                              \
 			;\n\
 		 $(INVERT_HFST)\
 		 save stack $@\n\
