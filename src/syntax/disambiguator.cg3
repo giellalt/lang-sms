@@ -417,8 +417,11 @@ LIST GENERAL-PLACE = "sïjte";
 
 LIST PLACE-P = "alkalisnie" "alkalistie" "avtelen" "avteli" "avtelisnie" "avtelistie" "avtem" "avtene" "baakta" "baaktoe" "baalte" "baaltelen" "baalteli" "baaltelisnie" "baaltelistie" "baaltes" "baaltese" "bealan" "bealese" "bealesne" "bealeste" "bielehth" "bielelen" "bieleli" "bielesne" "bieleste" "bielielisnie" "bielielistie" "bijjelen "bijjeli" "bijjielisnie" "bijjielistie" "boehten" "boehth" "bïjre" "daebpiebisnie" "daebpelen" "daebpeli" "daebpielisnie" "daebpielisnie" "daebpielistie" "debpeli" "debpielisnie" "debpielistie" "duakan" "dubpelen" "dubpeli" "dubpielisnie" "dubpielistie" "duebpelen" "duebpeli" "duebpielisnie" "duebpielistie" "duekelen" "duekesne" "duekeste" "duekiem" "jillelen" "jilleli" "jillielisnie" "jillielistie" "luvleli" "luvlielisnie" "luvlielistie" "miehtjelde" "miehtjelen" "miehtjeli" "miehtjielasse" "miehtjielisnie" "miehtjielistie" "nïlle" "noerhtelen" "noerhteli" "noerhtelisnie" "noerhtelistie" "nualan" "nueleste" "nuelesne" "nuelie" "nueliem" "raajan" "raejeste" "rastah" "sisnie" "sisnjeli" "sisnjielisnie" "sisnjielistie" "sistie" "sjisjnjeli" "sjisjnjielisnie" "sjisjnjielistie" "sïjse" "tjïddh" "tjïrrh" "uvte" "vuelelen" "vueleli" "vuelielisnie" "vuelielistie" "vuestelen" "vuestie" "vuestielisnie" "vuestielistie" "vööste" "åarjalisnie" "åarjalistie" "åarjelen" "åarjeli" "åarjielisnie" "åarjielistie" "åelesne" "åerjielisnie" "ålkoelisnie" "ålkoelistie" "ålkolen" "ålkoli" "åvtelen" "åvteli" "åvtelisnie" "åvtelistie" "åvtem" "åvtene" "åvtese" "åvtesne" "åvteste" "åvtetji" "åvtine" "lïhkebe" "vuelege" ;
 
+LIST MONTH = "kålggmään" "läʹznpeiʹvvmään" "njuhččmään" "ođđeeʹjjmään" "pââʹzzmään" "pâʹzzlâšttam-mään" "pâʹzzlâšttammään" "pâʹzzlâšttammään" "påʹrǧǧmään" "rosttovmään" "rõõǥǥâdmään" "skamm-mään" "sueiʹnnmään" "täʹlvvmään" "vueʹssmään" "vuõssmään" "vuʹvrrmään" "čõhččmään" "ǩieʹssmään" "ǩiđđmään" ;
+	
+LIST TIMEWORD = "biejjie" "b" "gïjre" "giesie" "tïjme" "dygne" "bodte" "bådte" "tjaktje" "tjaktjegiesie" "tjaktjedaelvie" "daelvie" "tsåahka" "jaepie" "jïjje" "jahke" "aske" "reakedsbiejjie" "våhkoe" "vahka" "måanta" "dæjsta" "aejkie" ;
 
-LIST TIME = "biejjie" "b" "gïjre" "giesie" "tïjme" "dygne" "bodte" "bådte" "tjaktje" "tjaktjegiesie" tjaktjedaelvie" "daelvie" "tsåahka" "jaepie" "jïjje" "jahke" "aske" "reakedsbiejjie" "våhkoe" "vahka" "måanta" "dæjsta" "aejkie" ;
+SET TIME = MONTH OR TIMEWORD ; # splitting TIMEWORD later.
 
 LIST CONCRETE-ROUTE = (".*raejkien"r) (".*raejkiem"r) "guhkies" ;
 
@@ -427,6 +430,9 @@ LIST ABSTR-ROUTE = "mïjle" (".*mïjle"r) "lehkie#mïjletje" (".*meetere"r) ;
 SET ROUTE = CONCRETE-ROUTE OR ABSTR-ROUTE ; 
 
 SET PLACE = GEOGRAPHICAL-PLACE OR POLITICAL-PLACE OR GENERAL-PLACE OR ROUTE OR BUILDING ;
+
+LIST COUNTABLE = "uási" "káppálâh" "kápuluh" "cekki" "momentt" ;
+
 
 # ============== #
 # Disambiguation #
@@ -486,6 +492,20 @@ REMOVE:R_Attr_ABBR Attr IF (0 ABBR + Nom)(NOT 1 Prop OR ABBR);
 REMOVE:nlex N-DER IF (0 N-DER)(0 $$CASES)(0 $$NUMBER);
 REMOVE:vlex V-DER IF (0 V-DER)(0 $$PERS-TAG)(0 $$TENSES);
 
+
+
+# Cycle 1
+
+#!! !! Numerals
+
+#!! * __r1082__ Selects (Num Nom)
+SELECT:r1082 (Num Nom) IF (-1 COUNTABLE - Ess OR ("nr"))(0 ABBR OR ACR OR Num) ;
+#$ Dieđáhusa oasis I ovdanbuktojuvvo Bb:a sámepolitihkalaš vuođđolávdi.
+#$ Áirras nr. 10 Ole Henrik Magga oaččui permišuvnna.
+
+SELECT (Num Nom) IF (1 ("§"));
+SELECT (Num Nom) IF (-1 ("§"));
+SELECT (Num Nom) IF (-1 MONTH);
 
 
 
