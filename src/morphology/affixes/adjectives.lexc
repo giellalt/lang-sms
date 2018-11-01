@@ -287,8 +287,8 @@ LEXICON A_SAJOS
 +A: SG-NOM ;
 +A:%{XC%}%^C2CC%>â ESS ;
 +A:%{XC%}%^C2CC%>â PAR ;
-+Err/Orth+A:%{XC%}%^K2GG%>â ESS ;
-+Err/Orth+A:%{XC%}%^K2GG%>â PAR ;
++Err/Orth+Use/NG+A:%{XC%}%^K2GG%>â ESS ;
++Err/Orth+Use/NG+A:%{XC%}%^K2GG%>â PAR ;
 +A: A-01_OBL-SAJOS ;
 
 LEXICON A_KOALVAK
@@ -497,7 +497,7 @@ LEXICON A_KHEEQLES  !!= * @CODE@ ǩeeʹles:ǩeâlˈl
 
 LEXICON A_PUAQRES  !!= * @CODE@ puäʹres:puärˈr
 +A+Attr:%^PAL%^CCC2C%>es ENDLEX ;
-+Err/Orth+A+Attr:%^PAL ENDLEX ;
++Err/Orth+Use/NG+A+Attr:%^PAL ENDLEX ;
 +A:s ADJ-DER/COMP_kwlmmsab ;
 +A:s ADJ-DER/SUPERL_ummus ;
 +A:es A-01_PUAQRES ; !!= * @CODE@   puäʹres:puärˈres
@@ -541,6 +541,11 @@ LEXICON A_PRSPRC-EEQJJ !!= * @CODE@ tuejjeei:tuejjẹẹ
 +A:%>ʹj ADJ-DER/SUPERL_ummus ;
 
 !! WORK HERE 2015-10-14 deverbals
+LEXICON A_PRSPRC-NOGRADE-I !!= * @CODE@ uuidi:uuidi
++A: A-01_PRSPRC-NOGRADE-I ;
++A:%^I2J ADJ-DER/COMP_kwlmmsab ;
++A:%^I2J ADJ-DER/SUPERL_ummus ;
+
 LEXICON A_PRSPRC-VCC-I !!= * @CODE@ cõggi:cõggi
 +A: A-01_PRSPRC-VCC-I ;
 +A:%^I2J ADJ-DER/COMP_kwlmmsab ;
@@ -638,6 +643,12 @@ LEXICON A_LIEQDHDHDHI !!= * @CODE@ lieʹđđi:lieʹđˈđi
 +A: A-01_LIEQDHDHDHI ;
 +A:%^I2J ADJ-DER/COMP_kwlmmsab ;
 +A:%^I2J ADJ-DER/SUPERL_ummus ;
+
+LEXICON A_PRSPRC_VWHCC-I !!= * @CODE@ viõhssi:viõhssi
++A: A-01_PRSPRC_VWHCC-I ;
++A:%^I2J ADJ-DER/COMP_kwlmmsab ;
++A:%^I2J ADJ-DER/SUPERL_ummus ;
+
 !LEXICON A_PRSPRC_VWXYY-I !!= * @CODE@ vueʹstti:vueʹstti
 !+A: A-01_PRSPRC_VWXYY-I ;
 !+A:%^I2J ADJ-DER/COMP_kwlmmsab ;
@@ -720,8 +731,8 @@ LEXICON A_DER/ALLASH
 LEXICON A_MEERSAZH
 !! säʹmmlaž:säʹmml
 +A:až AdjAttr-ZERO ;
-+Err/Orth+A:âž AdjAttr-ZERO ;
-+Err/Orth+A:áž AdjAttr-ZERO ;
++Err/Orth+Use/NG+A:âž AdjAttr-ZERO ;
++Err/Orth+Use/NG+A:áž AdjAttr-ZERO ;
 +A: ADJ-DER/COMP_kwlmmsab ;
 +A: ADJ-DER/SUPERL_ummus ;
 +A: A-01_MEERSAZH ;
@@ -822,8 +833,8 @@ LEXICON A_HAS_ADJ-DER/SUPERL_mws
 +A+Superl: A-01_SAJOS ;
 
 LEXICON A_IS_ADJ-DER/SUPERL_mws
-+A+Superl+Attr:»mõ%^1VOWs # ;
-+A+Superl:»mõ%^1VOWs A-01_SAJOS ;
++A+Superl+Attr:»mõ%^1VOW%{ʹØ%}s # ;
++A+Superl:»mõ%^1VOW%{ʹØ%}s A-01_SAJOS ;
 
 LEXICON A_HAS_ADJ-DER/SUPERL_umus
 +Use/NG+Superl+Attr: # ;
@@ -849,13 +860,15 @@ LEXICON ADJ-DER/SUPERL_ummus
 +Use/NG+Superl+Attr:»umõs # ;
 +Use/NG+Superl:»umõs A-01_MAINSTUMMUSH ;
 
+LEXICON A_GENATTR
++A+GenAttr: # ;
 
 !LEXICON AdjDerSuperl-mos
-!!+Der+Der/mos+Superl:»mõ%^1VOWs # ; 
+!!+Der+Der/mos+Superl:»mõ%^1VOW%{ʹØ%}s # ; 
 !+Superl:»mõ%^1VOWs # ; 
 
 !LEXICON AdjDerSuperl-mus
-!!+Der+Der/mus+Superl:»mus # ; 
+!!+Der+Der/mus+Superl:»mu%^1VOW%{ʹØ%}s # ; 
 !+Superl:»mus # ; 
 !LEXICON AdjDerSuperl-ummus
 !!+Der+Der/ummus+Superl:»ummus # ; 
@@ -5045,50 +5058,52 @@ LEXICON A-01_HIEAQNN
 !2016-12-05-NotUsed!:%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) vieʹm-
 !2016-12-05-NotUsed!:%^PAL%CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) vieʹmˈm Ess+Px..
 
+LEXICON A_VUEAIQVV
++A: A-01_VUEAIQVV ;
 
-!2016-12-05-NotUsed!LEXICON A-01_VUEAIQVV
-!2016-12-05-NotUsed!! gradation: yes
-!2016-12-05-NotUsed!!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-!2016-12-05-NotUsed!!! !!1.3 Sg.Loc in -est (vowel shift)
-!2016-12-05-NotUsed!!! !!  Raised: Sg.Com, Pl.Obl
-!2016-12-05-NotUsed!!! !!  Lowered: ELSE  ẹ, ä
-!2016-12-05-NotUsed!!! !!  e-stems (Sg.Loc, Ess, Par).
-!2016-12-05-NotUsed!!! !!1.3.2 Sg.Ill vowel -a
-!2016-12-05-NotUsed!!! !!1.3.2.1 Has Palatalization
-!2016-12-05-NotUsed!!! !!  Palatalized: ELSE
-!2016-12-05-NotUsed!!! !!  Not Palatalized: Sg.Ill
-!2016-12-05-NotUsed!!! !!1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-!2016-12-05-NotUsed!!! !!1.3.2.1.1.1 Has Orthographic Gradation
-!2016-12-05-NotUsed!!! !!1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
-!2016-12-05-NotUsed!!! !!  Strong grade: Sg.Nom, Ess, Par
-!2016-12-05-NotUsed!!! !!  Extra strong grade: Sg.Ill
-!2016-12-05-NotUsed!!! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-!2016-12-05-NotUsed!!! !!FORMS
-!2016-12-05-NotUsed!!! !!(1) Sg.Nom: vuẹiʹvv
-!2016-12-05-NotUsed!!! !!(2) Pl.Nom: vuẹiʼv
-!2016-12-05-NotUsed!!! !!(3) Sg.Ill: vuäivva
-!2016-12-05-NotUsed!!! !!(4) Sg.Loc: vuẹiʹvest
-!2016-12-05-NotUsed!!! !!(5) Sg.Com: vueiʹvin
-!2016-12-05-NotUsed!!! !!(6) Ess: vuẹiʹvven
-!2016-12-05-NotUsed!!! !!(7) Par: vuẹiʹvved
-!2016-12-05-NotUsed!!! !!(8) Pl.Acc: vueiʹvid
-!2016-12-05-NotUsed!!! !!(9) Der/Dimin.N.Sg.Nom: vuäivaž
-!2016-12-05-NotUsed!!! NumContLex="1.113"
-!2016-12-05-NotUsed!!! * Yaml: __N-vueivv__
-!2016-12-05-NotUsed!!! * There are several stem types
-!2016-12-05-NotUsed!!!
-!2016-12-05-NotUsed!:%^VOWRaise%^PALẸ%^PAL A-02_E-STEM_SG-NOM ;		  	! vuẹiʹvv
-!2016-12-05-NotUsed!:%^VOWRaise%^PALẸ%^PAL%^XYY2XY A-02_E-STEM_SG-ABE/ACC/GEN ;		! vuẹiʹv
-!2016-12-05-NotUsed!:%^VOWRaise%^PALẸ%^PAL%^XYY2XY A-02_PL-NOM ;		! vuẹiʹv
-!2016-12-05-NotUsed!: A-02_E-STEM_SG-ILL ;		       	      		! vuäivva
-!2016-12-05-NotUsed!:%^VOWRaise%^PALẸ%^PAL%^XYY2XY%>e A-02_SG-LOC ;	! vuẹiʹvest
-!2016-12-05-NotUsed!:%^VOWRaise%^PALẸ%^PAL%>e A-02_ESS/PAR ;   	 	! vuẹiʹvven
-!2016-12-05-NotUsed!:%^VOWRaise%^PALE%^PAL%^XYY2XY A-02_SG-COM_IN ;	! vueiʹvin
-!2016-12-05-NotUsed!:%^VOWRaise%^PALE%^PAL%^XYY2XY A-02_E-STEM_PL-OBL ;	! vueiʹvin
-!2016-12-05-NotUsed!:%^XYY2XY A-02_E-STEM_N_KUYLAZH ; 	      		! vuäivaž
-!2016-12-05-NotUsed! E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) vuäivv-
-!2016-12-05-NotUsed!:%^VOWRaise%^PALẸ%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) vuẹiʹv-
-!2016-12-05-NotUsed!:%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) vuäiʹvv- Ess+Px..
+LEXICON A-01_VUEAIQVV
+! gradation: yes
+!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+!! !!1.3 Sg.Loc in -est (vowel shift)
+!! !!  Raised: Sg.Com, Pl.Obl
+!! !!  Lowered: ELSE  ẹ, ä
+!! !!  e-stems (Sg.Loc, Ess, Par).
+!! !!1.3.2 Sg.Ill vowel -a
+!! !!1.3.2.1 Has Palatalization
+!! !!  Palatalized: ELSE
+!! !!  Not Palatalized: Sg.Ill
+!! !!1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+!! !!1.3.2.1.1.1 Has Orthographic Gradation
+!! !!1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+!! !!  Strong grade: Sg.Nom, Ess, Par
+!! !!  Extra strong grade: Sg.Ill
+!! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+!! !!FORMS
+!! !!(1) Sg.Nom: vuẹiʹvv
+!! !!(2) Pl.Nom: vuẹiʼv
+!! !!(3) Sg.Ill: vuäivva
+!! !!(4) Sg.Loc: vuẹiʹvest
+!! !!(5) Sg.Com: vueiʹvin
+!! !!(6) Ess: vuẹiʹvven
+!! !!(7) Par: vuẹiʹvved
+!! !!(8) Pl.Acc: vueiʹvid
+!! !!(9) Der/Dimin.N.Sg.Nom: vuäivaž
+!! NumContLex="1.113"
+!! * Yaml: __N-vueivv__
+!! * There are several stem types
+!!
+:%^VOWRaise%^PALẸ%^PAL A-02_E-STEM_SG-NOM ;		  	! vuẹiʹvv
+:%^VOWRaise%^PALẸ%^PAL%^XYY2XY A-02_E-STEM_SG-ABE/ACC/GEN ;		! vuẹiʹv
+:%^VOWRaise%^PALẸ%^PAL%^XYY2XY A-02_PL-NOM ;		! vuẹiʹv
+: A-02_E-STEM_SG-ILL ;		       	      		! vuäivva
+:%^VOWRaise%^PALẸ%^PAL%^XYY2XY%>e A-02_SG-LOC ;	! vuẹiʹvest
+:%^VOWRaise%^PALẸ%^PAL%>e A-02_ESS/PAR ;   	 	! vuẹiʹvven
+:%^VOWRaise%^PALE%^PAL%^XYY2XY A-02_SG-COM_IN ;	! vueiʹvin
+:%^VOWRaise%^PALE%^PAL%^XYY2XY A-02_E-STEM_PL-OBL ;	! vueiʹvin
+:%^XYY2XY A-02_E-STEM_N_KUYLAZH ; 	      		! vuäivaž
+ E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) vuäivv-
+:%^VOWRaise%^PALẸ%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) vuẹiʹv-
+:%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) vuäiʹvv- Ess+Px..
 
 
 
@@ -7342,8 +7357,8 @@ LEXICON A-01_NALLSHEM !!= * @CODE@ čââʹlmteʹm:čââʹlmtẹ%^1VOWm
 : A-02_SG-NOM ; !! Ǩiõllkaʹlddi. 2017-04-04
 !!€ čââʹlmtẹ%^1VOWm
 !!€ čââʹlmtẹ0m
-+Err/Orth:%{XC%}%^PAL A-02_SG-NOM ;
-+Err/Orth:%{XC%}%^PAL%^C2CC A-02_SG-NOM ;
++Err/Orth+Use/NG:%{XC%}%^PAL A-02_SG-NOM ;
++Err/Orth+Use/NG:%{XC%}%^PAL%^C2CC A-02_SG-NOM ;
 :%^V2VV%^PAL A-02_SG-ABE/ACC/GEN ;
 :%{XC%}%^C2CC%>a A-02_SG-ILL ;
 :%^V2VV%^PAL%>e A-02_SG-LOC ;
@@ -7404,6 +7419,25 @@ LEXICON A-01_SAJOS
 
 !! Class 6 according to Feist 153-154
 !! PRESENT A-02_PARTICIPLES
+
+LEXICON A-01_PRSPRC-NOGRADE-I !!= * @CODE@ uuidi:uuidi
+! gradation: yes
+! is for nouns with ''-est'' +Loc
+!! * Yaml: __N-joovvi__
+!! * There are several stem types
+!! * cõggi:cõggi
+!! NumContLex="1.2"
++Attr: # ;
+: A-02_SG-NOM ;	       		! cõggi
+: A-02_SG-ABE/ACC/GEN ;			! cõggi
+:%^I2J%>a A-02_SG-ILL ;		! cõggja
+:%^I2J%>e A-02_SG-LOC ;		! cõggjest
+:%^I2J A-02_SG-COM_IN ;		! cõggjin
+:%^I2J%>e A-02_ESS/PAR ;  		! cõggjen
+:%^V2VV A-02_PL-NOM ;		! cõõggi
++Use/NG:%^I2J A-02_PL-OBL ;		! cõggi
++Use/NG: A-02_PL-NOM ;		! cõggi
+:%^V2VV%^I2J A-02_PL-OBL ;		! cõõggi
 
 LEXICON A-01_PRSPRC-VCC-I !!= * @CODE@ cõggi:cõggi
 ! gradation: yes
@@ -7876,6 +7910,24 @@ LEXICON A-01_LIEQDHDHDHI !!= * @CODE@ lieʹđđi:lieʹđˈđi
 !: A-02_PL-OBL ;
 !+Use/NG: A-02_PL-NOM ;
 !+Use/NG:%^XYY2XY A-02_PL-OBL ;
+
+LEXICON A-01_PRSPRC_VWHCC-I !!= * @CODE@ viõhssi:viõhssi
+! gradation: yes
+! is for nouns with ''-est'' +Loc
+! * Yaml: __lookk__
+! * There are several stem types
+! * vueʹstti:vueʹstti
+! NumContLex="1.2"
+: A-02_SG-NOM ;
+: A-02_SG-ABE/ACC/GEN ;
+:%^Pen%^PALNo%^I2J%>a A-02_SG-ILL ;
+:%^I2J%>e A-02_SG-LOC ;
+: A-02_SG-COM_N ;
+:%^I2J%>e A-02_ESS/PAR ; ! ess and prt without
+:%^XYY2XY A-02_PL-NOM ;
+: A-02_PL-OBL ;
++Use/NG: A-02_PL-NOM ;
++Use/NG:%^XYY2XY A-02_PL-OBL ;
 
 LEXICON A-01_VUOIQNNI !!= * @CODE@ vuõiʹnni:vuõiʹnni
 ! gradation: yes
@@ -8458,54 +8510,56 @@ LEXICON A-02_PL-ABE
 !2016-12-05-NotUsed!
 !2016-12-05-NotUsed!!! grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 
+LEXICON A_VUYRR
++A: A-01_VUYRR ;
 
-!2016-12-05-NotUsed!LEXICON A-01_VUYRR
-!2016-12-05-NotUsed!!! Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_gem
-!2016-12-05-NotUsed!! gradation: yes
-!2016-12-05-NotUsed!!! Is for nouns with ''-ast'' Loc
-!2016-12-05-NotUsed!!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-!2016-12-05-NotUsed!!! !!1.2 Sg.Loc in -ast (vowel shift)
-!2016-12-05-NotUsed!!! !!  Raised: Sg.Ill
-!2016-12-05-NotUsed!!! !!  Lowered: ELSE
-!2016-12-05-NotUsed!!! !!  a-stems (Sg.Loc, Ess, Par).
-!2016-12-05-NotUsed!!! !!1.2.2 Sg.Ill vowel	-u
-!2016-12-05-NotUsed!!! !!1.2.2.2 Lacks Palatalization
-!2016-12-05-NotUsed!!! !!1.2.2.2.1 Lacks Specifically Pedagogical Gradation
-!2016-12-05-NotUsed!!! !!1.2.2.2.1.1 Has Orthographic Gradation
-!2016-12-05-NotUsed!!! !!1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
-!2016-12-05-NotUsed!!! !!  Strong grade: Sg.Nom, Ess, Par
-!2016-12-05-NotUsed!!! !!  Extra strong grade: Sg.Ill
-!2016-12-05-NotUsed!!! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-!2016-12-05-NotUsed!!! uâ:uõ, eä:iâ
-!2016-12-05-NotUsed!!! !!FORMS
-!2016-12-05-NotUsed!!NumContLex="1.1120000000000001"
-!2016-12-05-NotUsed!!! N_A-URaise3-32
-!2016-12-05-NotUsed!!! * Yaml: __N-vuarr__
-!2016-12-05-NotUsed!!! grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
-!2016-12-05-NotUsed!: A-02_A-STEM_SG-NOM ;	    			!!(1) Sg.Nom: vuârr
-!2016-12-05-NotUsed!!! Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
-!2016-12-05-NotUsed!
-!2016-12-05-NotUsed!!! grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-!2016-12-05-NotUsed!:%^CC2C A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ;		!!(2) Pl.Nom: vuâr vuâr
-!2016-12-05-NotUsed!!! Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
-!2016-12-05-NotUsed!!! stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
-!2016-12-05-NotUsed!
-!2016-12-05-NotUsed!!! grade: strengthened (short_vowel, long_cluster), vowel: raised
-!2016-12-05-NotUsed!:%^VOWRaise%^CC2CCC%>u A-02_SG-ILL ;			!!(3) Sg.Ill: vuõrˈru
-!2016-12-05-NotUsed!!! Sg_Ill
-!2016-12-05-NotUsed!
-!2016-12-05-NotUsed!!! grade: strengthened (short_vowel, long_cluster), vowel: neutral (low)
-!2016-12-05-NotUsed!: A-STEM-PX-STRENGTHEN ;           !!= * @CODE@ (5) vuârr
-!2016-12-05-NotUsed!!! Ess_Px..., Sg_Ill..., N»A
-!2016-12-05-NotUsed!
-!2016-12-05-NotUsed!!! grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
-!2016-12-05-NotUsed!:%>a A-02_ESS/PAR ; 	     			!!(6) Ess: vuârran
-!2016-12-05-NotUsed!
-!2016-12-05-NotUsed!!! grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
-!2016-12-05-NotUsed!+Der+Der/Dimin:%^VOWRaise%^CC2C%> A-01_PIISSUZH ;	!!(9) Dim.N.Sg.Nom: vuõruž,
-!2016-12-05-NotUsed!+Der+Der/Dimin:%^CC2C%> A-01_PEESSAZH ; !!= * @CODE@  (9) Dim.N.Sg.Nom: vuâraž
-!2016-12-05-NotUsed!
-!2016-12-05-NotUsed!!! grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
+LEXICON A-01_VUYRR
+!! Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_gem
+! gradation: yes
+!! Is for nouns with ''-ast'' Loc
+!! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+!! !!1.2 Sg.Loc in -ast (vowel shift)
+!! !!  Raised: Sg.Ill
+!! !!  Lowered: ELSE
+!! !!  a-stems (Sg.Loc, Ess, Par).
+!! !!1.2.2 Sg.Ill vowel	-u
+!! !!1.2.2.2 Lacks Palatalization
+!! !!1.2.2.2.1 Lacks Specifically Pedagogical Gradation
+!! !!1.2.2.2.1.1 Has Orthographic Gradation
+!! !!1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
+!! !!  Strong grade: Sg.Nom, Ess, Par
+!! !!  Extra strong grade: Sg.Ill
+!! !!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+!! uâ:uõ, eä:iâ
+!! !!FORMS
+!NumContLex="1.1120000000000001"
+!! N_A-URaise3-32
+!! * Yaml: __N-vuarr__
+!! grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
+: A-02_A-STEM_SG-NOM ;	    			!!(1) Sg.Nom: vuârr
+!! Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
+
+!! grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
+:%^CC2C A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ;		!!(2) Pl.Nom: vuâr vuâr
+!! Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
+!! stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
+
+!! grade: strengthened (short_vowel, long_cluster), vowel: raised
+:%^VOWRaise%^CC2CCC%>u A-02_SG-ILL ;			!!(3) Sg.Ill: vuõrˈru
+!! Sg_Ill
+
+!! grade: strengthened (short_vowel, long_cluster), vowel: neutral (low)
+: A-STEM-PX-STRENGTHEN ;           !!= * @CODE@ (5) vuârr
+!! Ess_Px..., Sg_Ill..., N»A
+
+!! grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
+:%>a A-02_ESS/PAR ; 	     			!!(6) Ess: vuârran
+
+!! grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
++Der+Der/Dimin:%^VOWRaise%^CC2C%> A-01_PIISSUZH ;	!!(9) Dim.N.Sg.Nom: vuõruž,
++Der+Der/Dimin:%^CC2C%> A-01_PEESSAZH ; !!= * @CODE@  (9) Dim.N.Sg.Nom: vuâraž
+
+!! grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 
 !2016-12-05-NotUsed!LEXICON A20
 !2016-12-05-NotUsed!+A+Pred+Pl: # ; 
