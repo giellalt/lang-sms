@@ -5,6 +5,12 @@
 LEXICON A_
 +A: # ;
 
+LEXICON A_GENATTR
++A+GenAttr: # ;
+LEXICON A_SJM ! These are problems 2018-11-2
++A+Attr: # ;
+
+
 LEXICON A_PSS-PRFPRC
 ! These might simply be left out of the fst
 +V+Pass+PrfPrc: # ;
@@ -187,9 +193,11 @@ LEXICON A_HAAQSKH !!= * @CODE@ hääʹsǩ:hää%{ʹØ%}sk
 
 LEXICON A_HITRAI !!= * @CODE@ hitrai:hitrai
 !! no separate attribute form 2018-10-13
-!! loanword
+!! Russian loanword 
 +A+Attr: # ;
-+A: # ;
++A+Sg+Nom: # ;
++A+Pl+Nom: # ;
+:%^1VOW%^V2VVʹje SG-ILL ; !!= * @CODE@
 
 LEXICON A_SEQTT !!= * @CODE@ seʹtt:sẹ%^1VOW%{ʹØ%}tt
 ! vowel: monophthong
@@ -644,8 +652,8 @@ LEXICON A_LIEQDHDHDHI !!= * @CODE@ lieʹđđi:lieʹđˈđi
 +A:%^I2J ADJ-DER/COMP_kwlmmsab ;
 +A:%^I2J ADJ-DER/SUPERL_ummus ;
 
-LEXICON A_PRSPRC_VWHCC-I !!= * @CODE@ viõhssi:viõhssi
-+A: A-01_PRSPRC_VWHCC-I ;
+LEXICON A_PRSPRC-VWHCC-I !!= * @CODE@ viõhssi:viõhssi
++A: A-01_PRSPRC-VWHCC-I ;
 +A:%^I2J ADJ-DER/COMP_kwlmmsab ;
 +A:%^I2J ADJ-DER/SUPERL_ummus ;
 
@@ -859,9 +867,6 @@ LEXICON ADJ-DER/SUPERL_ummus
 +Use/NG+Superl:»umâs A-01_MAINSTUMMUSH ;
 +Use/NG+Superl+Attr:»umõs # ;
 +Use/NG+Superl:»umõs A-01_MAINSTUMMUSH ;
-
-LEXICON A_GENATTR
-+A+GenAttr: # ;
 
 !LEXICON AdjDerSuperl-mos
 !!+Der+Der/mos+Superl:»mõ%^1VOW%{ʹØ%}s # ; 
@@ -2012,33 +2017,35 @@ HatY-STEM-PX-RETAIN ;
 !2016-12-05-NotUsed! NMN_MUORR ;
 !2016-12-05-NotUsed!+Use/NG:%^J2I%^CC2C A-02_SG-ABE/ACC/GEN-PL-NOM ;	!!= * @CODE@ (2) Pl.Nom: ǩiõi
 
+LEXICON A_MIOHTT
++A:  A-01_MIOHTT ;
 
-!2016-12-05-NotUsed!LEXICON A-01_MIOHTT
-!2016-12-05-NotUsed!!! !!FORMS
-!2016-12-05-NotUsed!!!! pos="nominal"
-!2016-12-05-NotUsed!!! similar_to: N_VUYHSS
-!2016-12-05-NotUsed!!!! syll_count-in-Sg_Nom="1"
-!2016-12-05-NotUsed!!!! stem-ends-in="consonant"
-!2016-12-05-NotUsed!!!! stem_vowel-in-Sg_Loc="â"
-!2016-12-05-NotUsed!!!! stem_with_gradation="yes" 
-!2016-12-05-NotUsed!!! * Yaml: __N-miwhtt__
-!2016-12-05-NotUsed!
-!2016-12-05-NotUsed!:%^XYY2VY A-02_SG-COM_IN ;			!!= * @CODE@ miõutin
-!2016-12-05-NotUsed!:%^XYY2VY  A-02_SG-ABE/ACC/GEN-PL-NOM ;	!!= * @CODE@ miõut
-!2016-12-05-NotUsed!:%^PAL%>e A-02_SG-ILL ;	   	!!= * @CODE@ miõʹhtte
-!2016-12-05-NotUsed!: A-02_SG-NOM ;	       			!!= * @CODE@ miõhtt
-!2016-12-05-NotUsed!:%^XYY2VY%>â A-02_SG-LOC ;			!!= * @CODE@ miõutâst
-!2016-12-05-NotUsed!:â A-02_ESS/PAR ;    	   			!!= * @CODE@ miõhttân
-!2016-12-05-NotUsed!:%^XYY2VY A-02_PL-OBL ;			!!= * @CODE@ miõuti
-!2016-12-05-NotUsed!
-!2016-12-05-NotUsed!+Der+Der/Dimin+A: A-02_MUORYZH-WITHOUT-PAL ;  !!= * @CODE@ miõhtt-
-!2016-12-05-NotUsed!+Der+Der/Dimin+A:%^PAL A-02_MUORYZH-WITH-PAL ;  !!= * @CODE@ riiʹǩǩ-
-!2016-12-05-NotUsed!
-!2016-12-05-NotUsed!HatY-STEM-PX-RETAIN ;
-!2016-12-05-NotUsed!: HatY-STEM-PX-WEAKEN ;
-!2016-12-05-NotUsed!: HatY-STEM-PX-WEAKEN_LARGO ;
-!2016-12-05-NotUsed!: SG-LOC-PX_ALLEGRO ;
-!2016-12-05-NotUsed!:%^VV2V HatY-STEM-PX-STRENGTHEN ;
+LEXICON A-01_MIOHTT
+!! !!FORMS
+!!! pos="nominal"
+!! similar_to: N_VUYHSS
+!!! syll_count-in-Sg_Nom="1"
+!!! stem-ends-in="consonant"
+!!! stem_vowel-in-Sg_Loc="â"
+!!! stem_with_gradation="yes" 
+!! * Yaml: __N-miwhtt__
++Attr:%^XYY2VY%>âs # ;
+:%^XYY2VY A-02_SG-COM_IN ;			!!= * @CODE@ miõutin
+:%^XYY2VY  A-02_SG-ABE/ACC/GEN-PL-NOM ;	!!= * @CODE@ miõut
+:%^PAL%>e A-02_SG-ILL ;	   	!!= * @CODE@ miõʹhtte
+: A-02_SG-NOM ;	       			!!= * @CODE@ miõhtt
+:%^XYY2VY%>â A-02_SG-LOC ;			!!= * @CODE@ miõutâst
+:â A-02_ESS/PAR ;    	   			!!= * @CODE@ miõhttân
+:%^XYY2VY A-02_PL-OBL ;			!!= * @CODE@ miõuti
+
++Der+Der/Dimin+A: A-02_MUORYZH-WITHOUT-PAL ;  !!= * @CODE@ miõhtt-
++Der+Der/Dimin+A:%^PAL A-02_MUORYZH-WITH-PAL ;  !!= * @CODE@ riiʹǩǩ-
+
+HatY-STEM-PX-RETAIN ;
+: HatY-STEM-PX-WEAKEN ;
+: HatY-STEM-PX-WEAKEN_LARGO ;
+: SG-LOC-PX_ALLEGRO ;
+:%^VV2V HatY-STEM-PX-STRENGTHEN ;
 
 
 !!!
@@ -5700,6 +5707,15 @@ LEXICON A-01_JUURD !!= * @CODE@ juurd:jurdd
 +Der+Der/Dimin:%>%{ʼØ%}j N_KUYLAZH ;
 +Der+Der/Dimin:%>ǥ N_KUYLAZH ;
 
+LEXICON A_KOSSI !!= * @CODE@ kõssi:kõ%^1VOW%{ʹØ%}ss
+! kõssi: kõss: kââzzab
++A: A-01_KOSSI ;
+LEXICON A-01_KOSSI !!= * @CODE@ kõssi:kõ%^1VOW%{ʹØ%}ss
++Attr: # ;
++Sg+Nom:i # ; ! Needs work 2018-11-02
+:%^VOWLower%^PAL%^KK2GG ADJ-DER/COMP_ab ;
+:%^VOWLower%^PAL%^KK2GG ADJ-DER/SUPERL_ummus ;
+
 !2016-12-05-NotUsed!LEXICON A-01_KOODH !!= * @CODE@ koođ:ko%^1VOWđđ
 !2016-12-05-NotUsed!! gradation: yes
 !2016-12-05-NotUsed!! vowel_center: monophthong
@@ -6423,7 +6439,7 @@ LEXICON A-01_TAALKYS !!= * @CODE@ taalkâs:talkkâs
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 
-LEXICON A-01_PIIUTYS !!= * @CODE@ piiutâs:pihttâs
+LEXICON A-01_PIIUTYS !!= * @CODE@ piiutâs:pi%^1VOWhttâs
 !! like N_VAHTT
 ! stem: N.Sg.Gen
 ! gradation: yes
@@ -7068,6 +7084,23 @@ LEXICON A-01_JUYGXGXAS
 !2016-12-05-NotUsed!:%^Pen%^VV2V%^RmVow A-02_PL-OBL ;
 !2016-12-05-NotUsed!:%^Pen%^VV2V%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
+LEXICON A_MUYLAS !!= * @CODE@ muâlas:muâlˈlas
++A: A-01_MUYLAS ;
+LEXICON A-01_MUYLAS !!= * @CODE@ muâlas:muâlˈlas
+
+!! * Yaml: __N-muylas__
++Attr:%^VC%>õs # ;
+:%^Pen%^CCC2C SG-NOM ;
+:%^VC SG-ABE/ACC/GEN ; !!= * @CODE@ muâlˈlaz
+:%^VC PL-NOM ; !!= * @CODE@ muâlˈlaz
+:%^RmVow%>a SG-ILL ;
+:%^RmVow%>e SG-LOC ;
+:%^RmVow SG-COM_IN ;
+:%^RmVow%>e ESS/PAR ; ! ess and prt without
+:%^RmVow PL-OBL ;
+:%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
+:%^RmVow A_DER/ALLASH ;
+
 
 
 LEXICON A-01_MAINSTUMMUSH
@@ -7337,7 +7370,7 @@ LEXICON A-01_RADIO
 !! * Yaml: __N-radio__
  A-02_SG-NOM ;	    !!= * @CODE@ (TSA-1) +Sg+Nom:
  A-02_SG-ABE/ACC/GEN ;   !!= * @CODE@ (=TSA-2)
-:oʹje A-02_SG-ILL ;	    !!= * @CODE@ (TSA-3) +Sg+Ill:
+:%^1VOW%^V2VVʹje A-02_SG-ILL ;	    !!= * @CODE@ (TSA-3) +Sg+Ill:
 +Use/NG: A-02_SG-ILL ;   !!= * @CODE@ (TSA-3) +Sg+Ill:
  A-02_SG-LOC ;	    !!= * @CODE@ ()
  A-02_SG-COM_IN ;	    !!= * @CODE@ (=TSA-4)
@@ -7759,23 +7792,26 @@ LEXICON A-01_PRSPRC-VWXYY-AI !!= * @CODE@ meälttai:meälttai
 :%^RmVow%^I2J%>i A-02_PL-OBL ;			! meälttai
 +Use/NG:%^Pen%^XYY2XY%^RmVow%^I2J%>i A-02_PL-OBL ;	! meältai
 
-!2016-12-05-NotUsed!LEXICON A-01_ZHEEVAI !!= * @CODE@ žeevai:žẹẹvai
-!2016-12-05-NotUsed!! is for nouns with ''-est'' +Loc
-!2016-12-05-NotUsed!! gradation: no
-!2016-12-05-NotUsed!!! * Yaml: __zheevai__
-!2016-12-05-NotUsed!!! NumContLex="
-!2016-12-05-NotUsed!: A-02_SG-NOM ;	       			! žẹẹvai
-!2016-12-05-NotUsed!: A-02_SG-ABE/ACC/GEN ;	! 
-!2016-12-05-NotUsed!: A-02_SG-ACC ;	!
-!2016-12-05-NotUsed!:%^RmVow%^I2J%>a A-02_SG-ILL ;    		! žẹẹvja
-!2016-12-05-NotUsed!+Use/NG:%^RmVow%^I2Zero%>ǥa A-02_SG-ILL ;    		! žẹẹvǥa
-!2016-12-05-NotUsed!:%^RmVow%^I2J%>e A-02_SG-LOC ;
-!2016-12-05-NotUsed!:%^RmVow%^I2J A-02_SG-COM_IN ;
-!2016-12-05-NotUsed!:%^RmVow%^I2J%>e A-02_ESS/PAR ; ! ess and prt without
-!2016-12-05-NotUsed!:%^Pen%^XYY2XY A-02_PL-NOM ;				! žẹẹvai
-!2016-12-05-NotUsed!:%^RmVow%^I2J%>i A-02_PL-OBL ;			! žẹẹvai
+LEXICON A_ZHEEVAI
++A: A-01_ZHEEVAI ;
 
-!2016-12-05-NotUsed!!! participles in -I from verbs in ʹ-ed
+LEXICON A-01_ZHEEVAI !!= * @CODE@ žeevai:žẹẹvai
+! is for nouns with ''-est'' +Loc
+! gradation: no
+!! * Yaml: __zheevai__
+!! NumContLex="
+: A-02_SG-NOM ;	       			! žẹẹvai
+: A-02_SG-ABE/ACC/GEN ;	! 
+: A-02_SG-ACC ;	!
+:%^RmVow%^I2J%>a A-02_SG-ILL ;    		! žẹẹvja
++Use/NG:%^RmVow%^I2Zero%>ǥa A-02_SG-ILL ;    		! žẹẹvǥa
+:%^RmVow%^I2J%>e A-02_SG-LOC ;
+:%^RmVow%^I2J A-02_SG-COM_IN ;
+:%^RmVow%^I2J%>e A-02_ESS/PAR ; ! ess and prt without
+:%^Pen%^XYY2XY A-02_PL-NOM ;				! žẹẹvai
+:%^RmVow%^I2J%>i A-02_PL-OBL ;			! žẹẹvai
+
+!! participles in -I from verbs in ʹ-ed
 !2016-12-05-NotUsed!LEXICON  A-02_NOM-AG_ED
 !2016-12-05-NotUsed!: A-02_SG-NOM ; !!= * @CODE@
 !2016-12-05-NotUsed!: A-02_SG-ABE/ACC/GEN ; !!= * @CODE@
@@ -7911,7 +7947,7 @@ LEXICON A-01_LIEQDHDHDHI !!= * @CODE@ lieʹđđi:lieʹđˈđi
 !+Use/NG: A-02_PL-NOM ;
 !+Use/NG:%^XYY2XY A-02_PL-OBL ;
 
-LEXICON A-01_PRSPRC_VWHCC-I !!= * @CODE@ viõhssi:viõhssi
+LEXICON A-01_PRSPRC-VWHCC-I !!= * @CODE@ viõhssi:viõhssi
 ! gradation: yes
 ! is for nouns with ''-est'' +Loc
 ! * Yaml: __lookk__
@@ -7950,22 +7986,24 @@ LEXICON A-01_VUOIQNNI !!= * @CODE@ vuõiʹnni:vuõiʹnni
 
 !! Class 7 according to Feist 154-155
 !! !!i-stems
-!2016-12-05-NotUsed!LEXICON A-01_HOQPPI !!= * @CODE@ hõʹppi:hõʹppi
-!2016-12-05-NotUsed!! is for nouns with ''-est'' +Loc
-!2016-12-05-NotUsed!! gradation: no
-!2016-12-05-NotUsed!!! * Yaml: __hoppi__
-!2016-12-05-NotUsed!!! * There are several stem types
-!2016-12-05-NotUsed!!! * hõʹppi:hõʹppi
-!2016-12-05-NotUsed!: A-02_SG-NOM ;
-!2016-12-05-NotUsed!: A-02_SG-ABE/ACC/GEN ;
-!2016-12-05-NotUsed!:%^I2J%>a A-02_SG-ILL ;
-!2016-12-05-NotUsed!+Use/NG:%^UltRmVow%>ǥa A-02_SG-ILL ;
-!2016-12-05-NotUsed!:%^I2J%>e A-02_SG-LOC ;
-!2016-12-05-NotUsed!:%^I2J A-02_SG-COM_IN ;
-!2016-12-05-NotUsed!:%^I2J%>e A-02_ESS/PAR ; ! ess and prt without
-!2016-12-05-NotUsed!
-!2016-12-05-NotUsed!: A-02_PL-NOM ;
-!2016-12-05-NotUsed!:%^I2J A-02_PL-OBL ;
+LEXICON A_HOQPPI
++A: A-01_HOQPPI ;
+LEXICON A-01_HOQPPI !!= * @CODE@ hõʹppi:hõʹppi
+! is for nouns with ''-est'' +Loc
+! gradation: no
+!! * Yaml: __hoppi__
+!! * There are several stem types
+!! * hõʹppi:hõʹppi
+: A-02_SG-NOM ;
+: A-02_SG-ABE/ACC/GEN ;
+:%^I2J%>a A-02_SG-ILL ;
++Use/NG:%^UltRmVow%>ǥa A-02_SG-ILL ;
+:%^I2J%>e A-02_SG-LOC ;
+:%^I2J A-02_SG-COM_IN ;
+:%^I2J%>e A-02_ESS/PAR ; ! ess and prt without
+
+: A-02_PL-NOM ;
+:%^I2J A-02_PL-OBL ;
 
 
 
