@@ -7,13 +7,13 @@
 !! !!Unclassified words
 
 LEXICON N_ !!= * @CODE@ FOR (STILL) UNCLASSIFIED INCOMING NOUNS.
-+N: #;
+: #;
 !testing with make  HFST_LEXC_FLAGS=--Werror
 !NMN_PIGS;
 
 !! IRREGULAR NOUN nijdd
 LEXICON N_NIJDD !!= * @CODE@ nijdd:ni
-+N: NMN_NIJDD ;
+: NMN_NIJDD ;
 
 LEXICON	NMN_NIJDD	!!= * @CODE@ nijdd:ni
 !! * Yaml: __N-nijdd__
@@ -67,7 +67,7 @@ LEXICON	NMN_NIJDD	!!= * @CODE@ nijdd:ni
 LEXICON N_PAPP !!= * @CODE@ papp:papp
 !! similar_to: N_PESS
 !! N_HVCC
-+N:  NMN_PAPP ;
+:  NMN_PAPP ;
 LEXICON NMN_PAPP
 !! pa%{a0%}%{ʹ0%}%{p0%}p
 !! V%{V0%}%{ʹ0%}%{C0%}C
@@ -140,13 +140,13 @@ HatY-STEM-PX-RETAIN ;
  HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_PAPP-PL
-+N: R ;          !!= * @CODE@ papp
-+N:%^V2VV PL-NOM ; !!= * @CODE@ paapp
-+N:%^V2VV PL-OBL ;      !!= * @CODE@ paappi, paappid, paappid, paappin, paappivuiʹm, paappitaa
-+N:%>â ESS/PAR ;                  !!= * @CODE@ pappân, pappâd
-+N: HatY-STEM-PX-RETAIN-PL ;
-+N:%^V2VV HatY-STEM-PX-WEAKEN-PL ;
-+N: HatY-STEM-PX-STRENGTHEN-ESS ;
+: R ;          !!= * @CODE@ papp
+:%^V2VV PL-NOM ; !!= * @CODE@ paapp
+:%^V2VV PL-OBL ;      !!= * @CODE@ paappi, paappid, paappid, paappin, paappivuiʹm, paappitaa
+:%>â ESS/PAR ;                  !!= * @CODE@ pappân, pappâd
+: HatY-STEM-PX-RETAIN-PL ;
+:%^V2VV HatY-STEM-PX-WEAKEN-PL ;
+: HatY-STEM-PX-STRENGTHEN-ESS ;
 
 ! Test data:
 !!€gt-norm: papp # 
@@ -174,7 +174,7 @@ LEXICON N_PAPP-PL
 
 LEXICON N_ALGG !!= * @CODE@ põrtt:põ%^1VOW%{ʹØ%}rtt
 !! N_HVXYY
-+N: NMN_ALGG ;
+: NMN_ALGG ;
 LEXICON NMN_ALGG
 !! Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_xyy
 !! similar_to: N_TAALKYS, N_KOONTYR
@@ -236,10 +236,10 @@ HatY-STEM-PX-RETAIN ;
 : HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_ALGG-PL !!= * @CODE@ põõrt:põrtt
-+N: R ;                           !!= * @CODE@ põrtt
-+N:%^V2VV%^XYY2XY PL-NOM ;                !!= * @CODE@ põõrt
-+N:%>â ESS/PAR ;                                  !!= * @CODE@ põrttân
-+N:%^V2VV%^XYY2XY PL-OBL ;                        !!= * @CODE@ põõrti
+: R ;                           !!= * @CODE@ põrtt
+:%^V2VV%^XYY2XY PL-NOM ;                !!= * @CODE@ põõrt
+:%>â ESS/PAR ;                                  !!= * @CODE@ põrttân
+:%^V2VV%^XYY2XY PL-OBL ;                        !!= * @CODE@ põõrti
 
 ! Test data:
 !!€gt-norm: algg # 
@@ -266,7 +266,7 @@ LEXICON N_ALGG-PL !!= * @CODE@ põõrt:põrtt
 !!!
 LEXICON N_AUTT !!= * @CODE@ autt:a%^1VOWu%{ʹØ%}tt
 !! N_HVUCC
-+N: NMN_AUTT ;
+: NMN_AUTT ;
 LEXICON NMN_AUTT
 !! Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_vyy
 !!! pos="nominal"
@@ -326,10 +326,10 @@ HatY-STEM-PX-RETAIN ;
  HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_AUTT-PL !!= * @CODE@ aaut:autt
-+N: R ;                           !!= * @CODE@ autt
-+N:%>â ESS/PAR ;                                  !!= * @CODE@ auttân
-+N:%^V2VV%^XYY2XY PL-NOM ;                !!= * @CODE@ aaut
-+N:%^V2VV%^XYY2XY PL-OBL ;                        !!= * @CODE@ aauti
+: R ;                           !!= * @CODE@ autt
+:%>â ESS/PAR ;                                  !!= * @CODE@ auttân
+:%^V2VV%^XYY2XY PL-NOM ;                !!= * @CODE@ aaut
+:%^V2VV%^XYY2XY PL-OBL ;                        !!= * @CODE@ aauti
 
 ! Test data:
 !!€gt-norm: autt #
@@ -357,7 +357,7 @@ LEXICON N_AUTT-PL !!= * @CODE@ aaut:autt
 !!!
 LEXICON N_VAHTT !!= * @CODE@ vahtt:va%^1VOW%{ʹØ%}h%{ʹØ%}tt
 !! N_HVHCC
-+N: NMN_VAHTT ;
+: NMN_VAHTT ;
 LEXICON NMN_VAHTT
 !! Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_hyy
 !!! pos="nominal"
@@ -442,7 +442,7 @@ HatY-STEM-PX-RETAIN ;
 
 LEXICON N_KUSS !!= * @CODE@ kuss:ku%^1VOW%{ʹØ%}ss
 !! N_HVKK-HVVGG
-+N: NMN_KUSS ;
+: NMN_KUSS ;
 LEXICON NMN_KUSS
 !! Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_gem_ss_type
 !!! pos="nominal"
@@ -526,7 +526,7 @@ HatY-STEM-PX-RETAIN ;
 
 LEXICON N_RUOCCC !!= * @CODE@ ruõcc:ruõ%{ʹØ%}cˈc
 !! N_HVWCCC-CC
-+N: NMN_RUOCCC ;
+: NMN_RUOCCC ;
 LEXICON NMN_RUOCCC !!= * @CODE@ ruõcc:ruõcˈc
 !! Sg_Nom: vow_di:vow_high:pal_no:cns_gem_long
 !!! pos="nominal"
@@ -587,7 +587,7 @@ HatY-STEM-PX-RETAIN ;
 
 LEXICON N_CHUOSHKK !!= * @CODE@ čuõškk:čuõ%{ʹØ%}škk
 !! N_HVWXYY
-+N: NMN_CHUOSHKK ;
+: NMN_CHUOSHKK ;
 LEXICON NMN_CHUOSHKK
 !! Sg_Nom: vow_di:vow_high:pal_no:cns_xyy
 !!! pos="nominal"
@@ -678,7 +678,7 @@ LEXICON N_CHUOSHKK-PL !!= * @CODE@ čuõšk:čuõškk
 
 LEXICON N_RUOIDD !!= * @CODE@ ruõidd:ruõi%{ʹØ%}dd
 !! N_HVWUCC
-+N: NMN_RUOIDD ;
+: NMN_RUOIDD ;
 LEXICON NMN_RUOIDD
 !! Sg_Nom: vow_di:vow_high:pal_no:cns_vxx
 !!! pos="nominal"
@@ -761,7 +761,7 @@ HatY-STEM-PX-RETAIN ;
 !!!
 LEXICON N_PUOAVV !!= * @CODE@ puåvv:puå%{ʹØ%}vv
 !! N_HVWCC
-+N: NMN_PUOAVV ;
+: NMN_PUOAVV ;
 LEXICON NMN_PUOAVV
 !! Sg_Nom: vow_di:vow_high:pal_no:cns_gem
 !!! pos="nominal"
@@ -839,7 +839,7 @@ HatY-STEM-PX-RETAIN ;
 
 LEXICON N_SIYKKK !!= * @CODE@ siâkˈk:siâ%{ʹØ%}kˈk
 !! N_HVWCCC
-+N: NMN_SIYKKK ;
+: NMN_SIYKKK ;
 LEXICON NMN_SIYKKK
 !! Sg_Nom: vow_di:vow_high:pal_no:cns_gem_long
 !!! pos="nominal"
@@ -919,7 +919,7 @@ HatY-STEM-PX-RETAIN ;
 !!!
 LEXICON N_MIYRKK !!= * @CODE@ sǩiâŋkk:sǩiâ%{ʹØ%}ŋkk
 !! N_HVWXYY
-+N: NMN_MIYRKK ;
+: NMN_MIYRKK ;
 LEXICON NMN_MIYRKK
 !! Sg_Nom: vow_di:vow_high:pal_no:cns_xyy
 !!! pos="nominal"
@@ -1005,7 +1005,7 @@ HatY-STEM-PX-RETAIN ;
 LEXICON N_TOLL !!= * @CODE@ toll:to%^1VOW%{ʹØ%}ll
 !! N_HVCC-VVC
 !! similar_to: N_AENHNH, N_STAQLLJ, N_KOONJYL
-+N: NMN_TOLL ;
+: NMN_TOLL ;
 LEXICON NMN_TOLL
 !! Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_gem
 !!! pos="nominal"
@@ -1101,7 +1101,7 @@ LEXICON N_TOLL-PL
 !!!
 LEXICON N_SIJDD !!= * @CODE@ sijdd:si%{ʹØ%}j%{ʹØ%}dd
 !! N_HVJCC
-+N: NMN_SIJDD ;
+: NMN_SIJDD ;
 LEXICON NMN_SIJDD
 !! Sg_Nom: vow_mono:vow_short:vow_high_i_type:pal_no:cns_jyy
 !!! pos="nominal"
@@ -1195,7 +1195,7 @@ LEXICON N_SIJDD-PL !!= * @CODE@ siid:sijdd
 
 !!!
 LEXICON N_SAAKK !!= * @CODE@ saakk:saa%{ʹØ%}kk
-+N: NMN_SAAKK ;
+: NMN_SAAKK ;
 LEXICON NMN_SAAKK
 !! similar_to: N_PAARR, N_SHLAAJJ
 !! Sg_Nom: vow_mono:vow_long:vow_high:pal_no:cns_gem_ss_type
@@ -1282,7 +1282,7 @@ HatY-STEM-PX-RETAIN ;
 
 !!!
 LEXICON N_LUOSS !!= * @CODE@ luõss:luõ%{ʹØ%}ss
-+N: NMN_LUOSS ;
+: NMN_LUOSS ;
 LEXICON NMN_LUOSS !!= * @CODE@ luõss:luõss
 !! Sg_Nom: vow_di:vow_high:pal_no:cns_gem_ss_type
 !!! pos="nominal"
@@ -1345,7 +1345,7 @@ LEXICON N_LUOSS-PL
 
 
 LEXICON N_PAARR !!= * @CODE@ paarr:paa%{ʹØ%}rr
-+N: NMN_PAARR ;
+: NMN_PAARR ;
 LEXICON NMN_PAARR
 !! Sg_Nom: vow_mono:vow_long:vow_high:pal_no:cns_gem
 !!! pos="nominal"
@@ -1405,7 +1405,7 @@ HatY-STEM-PX-RETAIN ;
 :%^VV2V HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_PAARR-PL !!= * @CODE@ paarr:paa%{ʹØ%}rr
-+N: NMN_PAARR-PL ;
+: NMN_PAARR-PL ;
 LEXICON NMN_PAARR-PL
 !! * Yaml: __N-paarr, N-saakk__
 !! is for nouns with -âst Loc. N_Y-EPal2-21
@@ -1452,7 +1452,7 @@ HatY-STEM-PX-RETAIN ;
 
 
 LEXICON N_SHLAAJJ !!= * @CODE@ šlaajj:šlaa%{ʹØ%}jj
-+N: NMN_SHLAAJJ ;
+: NMN_SHLAAJJ ;
 LEXICON NMN_SHLAAJJ
 !! Sg_Nom: vow_mono:vow_long:vow_high:pal_no:cns_gem_jj_type
 !!! pos="nominal"
@@ -1497,7 +1497,7 @@ LEXICON NMN_SHLAAJJ
 
 !!!
 LEXICON N_MUORR !!= * @CODE@ muõrr:muõ%{ʹØ%}rr
-+N: NMN_MUORR ;
+: NMN_MUORR ;
 LEXICON NMN_MUORR
 !! Sg_Nom: vow_di:vow_high:pal_no:cns_gem
 !!! pos="nominal"
@@ -1598,7 +1598,7 @@ LEXICON N_MUORR-PL !!= * @CODE@ muõrr:muõrr
 
 LEXICON N_KHIOJJ !!= * @CODE@ ǩiõjj:ǩiõ%{ʹØ%}jj
 ! â.2.diph.gem
-+N: NMN_KHIOJJ ;
+: NMN_KHIOJJ ;
 LEXICON NMN_KHIOJJ
 !! Sg_Nom: vow_di:vow_high:pal_no:cns_gem_jj_type
 !!! pos="nominal"
@@ -1641,7 +1641,7 @@ LEXICON NMN_KHIOJJ
 !!€ kuõʹje: kuõjj+N+Der+Der/Dimin+N+Sg+Gen
 
 LEXICON N_MIOHTT !!= * @CODE@ miõhtt:miõ%{ʹØ%}h%{ʹØ%}tt
-+N: NMN_MIOHTT ;
+: NMN_MIOHTT ;
 LEXICON NMN_MIOHTT
 !! !!FORMS
 !!! pos="nominal"
@@ -1675,7 +1675,7 @@ HatY-STEM-PX-RETAIN ;
 
 !!!
 LEXICON N_RIIKK !!= * @CODE@ riikk:rii%{ʹØ%}kk
-+N: NMN_RIIKK ;
+: NMN_RIIKK ;
 LEXICON NMN_RIIKK
 !! !!FORMS
 !!! pos="nominal"
@@ -1709,7 +1709,7 @@ HatY-STEM-PX-RETAIN ;
 :%^VV2V HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_AQSTTRIK !!= * @CODE@ aʹsttrik:aʹsttri%^1VOW%{ʹØ%}k
-+N: NMN_AQSTTRIK ;
+: NMN_AQSTTRIK ;
 LEXICON NMN_AQSTTRIK
 !! !!FORMS
 !!! pos="nominal"
@@ -1745,7 +1745,7 @@ LEXICON NMN_AQSTTRIK
 !!!
 
 LEXICON N_PLAAN !!= * @CODE@ plaan:plaa%{ʹØ%}n
-+N: NMN_PLAAN ;
+: NMN_PLAAN ;
 LEXICON NMN_PLAAN
 !!! pos="nominal"
 !!! syll_count-in-Sg_Nom="1"
@@ -1785,7 +1785,7 @@ HatY-STEM-PX-STRENGTHEN ;
 
 
 LEXICON N_LOMAAKK !!= * @CODE@ lomaakk:lomaa%{ʹØ%}kk
-+N: NMN_LOMAAKK ;
+: NMN_LOMAAKK ;
 LEXICON NMN_LOMAAKK
 !!! pos="nominal"
 !!! syll_count-in-Sg_Nom="1"
@@ -1825,7 +1825,7 @@ A_DER/SAZH ;
 LEXICON N_PESS !!= * @CODE@ pess:pẹss
 !! similar_to: N_PAPP
 ! 2.a.mono.gem
-+N: NMN_PESS ;
+: NMN_PESS ;
 LEXICON NMN_PESS
 !! Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_gem
 !!! pos="nominal"
@@ -1896,7 +1896,7 @@ LEXICON N_PESS-PL
 
 
 LEXICON N_SHOOMM !!= * @CODE@ šoomm:šoomm
-+N: NMN_SHOOMM ;
+: NMN_SHOOMM ;
 LEXICON NMN_SHOOMM
 !! Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_gem
 ! gradation: yes
@@ -1951,7 +1951,7 @@ LEXICON NMN_SHOOMM
 
 
 LEXICON N_LYYJJ !!= * @CODE@ lââjj:lââjj
-+N: NMN_LYYJJ ;
+: NMN_LYYJJ ;
 LEXICON NMN_LYYJJ
 !! Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_gem_jj
 ! gradation: yes
@@ -2006,7 +2006,7 @@ LEXICON NMN_LYYJJ
 
 
 LEXICON N_RAEAEKK !!= * @CODE@ rääkk:rääkk
-+N: NMN_RAEAEKK ;
+: NMN_RAEAEKK ;
 LEXICON NMN_RAEAEKK
 !! Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_gem_ss_type
 ! gradation: yes
@@ -2073,7 +2073,7 @@ LEXICON N_RAEAEKK-PL
 
 LEXICON N_AELDD !!= * @CODE@ äldd:äldd
 ! 2.a.mono.cluster
-+N: NMN_AELDD ;
+: NMN_AELDD ;
 LEXICON NMN_AELDD
 !! Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_xyy
 ! gradation: yes
@@ -2162,7 +2162,7 @@ DenominalAdjsCShort ;
  LAT ;
 
 LEXICON N_PEIGG !!= * @CODE@ peigg:pẹigg
-+N: NMN_PEIGG ;
+: NMN_PEIGG ;
 LEXICON NMN_PEIGG
 !! Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_vxx
 ! gradation: yes
@@ -2212,7 +2212,7 @@ LEXICON NMN_PEIGG
 !! Sg_Loc_Px..
 
 LEXICON N_KOAHTT !!= * @CODE@ kåhtt:kåhtt
-+N: NMN_KOAHTT ;
+: NMN_KOAHTT ;
 LEXICON NMN_KOAHTT
 !! Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_hyy
 ! gradation: yes
@@ -2280,7 +2280,7 @@ LEXICON NMN_KOAHTT
 !! CLASS 1 LOW VOWEL, DIPHTHONG, NO PALATALIZATION NOMINALS
 
 LEXICON N_TEYLKK !!= * @CODE@ teâlkk:teâlkk
-+N: NMN_TEYLKK ;
+: NMN_TEYLKK ;
 LEXICON NMN_TEYLKK
 !! Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_xyy
 ! foot: 2syll
@@ -2354,7 +2354,7 @@ LEXICON NMN_TEYLKK
 !! Sg_Loc_Px..
 
 LEXICON N_VUYHSS !!= * @CODE@ vuâhss:vuâhss
-+N: NMN_VUYHSS ;
+: NMN_VUYHSS ;
 LEXICON NMN_VUYHSS
 
 !! !!FORMS
@@ -2392,7 +2392,7 @@ LEXICON NMN_VUYHSS
 
 
 LEXICON N_VUYRR !!= * @CODE@ vuârr:vuârr
-+N: NMN_VUYRR ;
+: NMN_VUYRR ;
 LEXICON NMN_VUYRR
 !! Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_gem
 ! gradation: yes
@@ -2446,7 +2446,7 @@ LEXICON NMN_VUYRR
 !! Sg_Loc_Px..
 
 LEXICON N_TUYJJ !!= * @CODE@ tuâjj:tuâjj
-+N: NMN_TUYJJ ;
+: NMN_TUYJJ ;
 LEXICON NMN_TUYJJ
 !! Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_gem_jj_type
 ! gradation: yes
@@ -2480,7 +2480,7 @@ LEXICON NMN_TUYJJ
 
 LEXICON N_CHUAECC !!= * @CODE@ čuäcc:čuäcc
 ! 2.a.diph.gem
-+N: NMN_CHUAECC ;
+: NMN_CHUAECC ;
 LEXICON NMN_CHUAECC
 !! Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_gem
 ! gradation: yes
@@ -2552,7 +2552,7 @@ LEXICON N_CHUAECC-PL
 :%>a ESS/PAR ;  	      			!!= * @CODE@ (6) Ess: čuäccan
 
 LEXICON N_NEAVVV !!= * @CODE@ neävv:neävˈv
-+N: NMN_NEAVVV ;
+: NMN_NEAVVV ;
 LEXICON NMN_NEAVVV
 !! Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_gem_long
 ! gradation: yes
@@ -2604,7 +2604,7 @@ LEXICON N_NEAVVV-PL
 
 
 !LEXICON N_PEYTTT !!= * @CODE@ Peâtt:Peâtˈt
-!+N: NMN_PEYTTT ;
+!: NMN_PEYTTT ;
 LEXICON NMN_PEYTTT
 ! gradation: yes
 !! * Yaml: __N-peyttt__
@@ -2633,7 +2633,7 @@ LEXICON NMN_PEYTTT
 
 
 LEXICON N_PEAELDD !!= * @CODE@ peäldd:peäldd
-+N: NMN_PEAELDD ;
+: NMN_PEAELDD ;
 LEXICON NMN_PEAELDD
 !! Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_xyy
 ! gradation: yes
@@ -2685,7 +2685,7 @@ LEXICON N_PEAELDD-PL
 
 LEXICON N_TUOAIMM !!= * @CODE@ tuåimm:tuåimm
 ! 2.a.di.cluster
-+N: NMN_TUOAIMM ;
+: NMN_TUOAIMM ;
 LEXICON NMN_TUOAIMM
 !! Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_vyy
 ! Sg_Nom: 1-Syll
@@ -2742,7 +2742,7 @@ LEXICON NMN_TUOAIMM
 
 
 LEXICON N_KAPTEAEN !!= * @CODE@ kapteän:kapteän
-+N: NMN_KAPTEAEN ;
+: NMN_KAPTEAEN ;
 LEXICON NMN_KAPTEAEN
 !! similar_to: N_PLAAN
 !! gradation: no
@@ -2773,7 +2773,7 @@ LEXICON NMN_KAPTEAEN
 !! Sg_Loc_Px..
 
 LEXICON N_VIRVEL !!= * @CODE@ virvel:virvẹ%^1VOW%{ʹØ%}l
-+N: NMN_VIRVEL ;
+: NMN_VIRVEL ;
 LEXICON NMN_VIRVEL
 !! !!FORMS
 !! * Yaml: __virvel__
@@ -2792,7 +2792,7 @@ LEXICON NMN_VIRVEL
 
 
 LEXICON N_MEER !!= * @CODE@ meer:meer
-+N: NMN_MEER ;
+: NMN_MEER ;
 LEXICON NMN_MEER
 !! Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_sing
 ! gradation: no
@@ -2826,7 +2826,7 @@ LEXICON NMN_MEER
 
 
 LEXICON N_VAEAEZHZH !!= * @CODE@ vääžž:vääžž
-+N: NMN_VAEAEZHZH ;
+: NMN_VAEAEZHZH ;
 LEXICON NMN_VAEAEZHZH
 !! Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_gem_dd_type
 ! gradation: no
@@ -2860,7 +2860,7 @@ LEXICON NMN_VAEAEZHZH
 +Use/NG+Der+Der/Dimin: N_KUYLAZH ;   	!!= * @CODE@ vääžžaž
 
 LEXICON N_OASKK !!= * @CODE@ åskk:åskk
-+N: NMN_OASKK ;
+: NMN_OASKK ;
 LEXICON NMN_OASKK
 !! Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_xyy
 ! gradation: yes
@@ -2893,7 +2893,7 @@ LEXICON NMN_OASKK
 +Der+Der/Dimin:%> N_PEESSAZH ; !!= * @CODE@  (9) Dim.N.Sg.Nom: ååskaž
 
 LEXICON N_PLEYN !!= * @CODE@ pleân:pleân
-+N: NMN_PLEYN ;
+: NMN_PLEYN ;
 LEXICON NMN_PLEYN
 !! Sg_Nom: vow_di:vow_long:vow_low:pal_no:cns_sing
 ! gradation: no
@@ -2947,7 +2947,7 @@ LEXICON NMN_PLEYN
 
 LEXICON N_AKK !!= * @CODE@ äkk:äkk
 !! normative = PẸSS 
-+N: NMN_AKK ;
+: NMN_AKK ;
 LEXICON NMN_AKK
 !! Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_gem
 ! gradation: yes
@@ -2990,7 +2990,7 @@ LEXICON NMN_AKK
 
 LEXICON N_APTEEKK !!= * @CODE@ apteekk:apteekk
 !! normative = PẸSS 
-+N: NMN_APTEEKK ;
+: NMN_APTEEKK ;
 LEXICON NMN_APTEEKK
 !! Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_gem
 ! gradation: yes
@@ -3032,7 +3032,7 @@ LEXICON NMN_APTEEKK
 
 LEXICON N_LAEAEMPA !!= * @CODE@ läämpa:lämpp
 !! two-syllable
-+N: NMN_LAEAEMPA ;
+: NMN_LAEAEMPA ;
 LEXICON NMN_LAEAEMPA
 !! Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_gem
 ! gradation: yes
@@ -3055,7 +3055,7 @@ LEXICON NMN_LAEAEMPA
 
 !LEXICON N_UULLA !!= * @CODE@ Uulla:Uulla
 !!! two-syllable
-!+N: NMN_UULLA ;
+!: NMN_UULLA ;
 LEXICON NMN_UULLA
 ! gradation: yes
 ! vowel: monophthong
@@ -3079,7 +3079,7 @@ LEXICON NMN_UULLA
 
 !! CLASS 1 HIGH VOWEL TYPE, NO PALATALIZATION NOMINALS
 !LEXICON N_NELLJ !!= * @CODE@ nellj:nẹllj
-!+N: NMN_NELLJ  ;
+!: NMN_NELLJ  ;
 LEXICON NMN_NELLJ !!= * @CODE@ nellj:nẹllj
  SG-NOM ;
 :%^V2VV SG-ABE/ACC/GEN ;	!!= * @CODE@ Sg+Gen: nẹẹllj
@@ -3093,7 +3093,7 @@ LEXICON NMN_NELLJ !!= * @CODE@ nellj:nẹllj
 
 !! CLASS 1 HIGH VOWEL, PALATALIZATION NOMINALS
 LEXICON N_NUQBB !!= * @CODE@ nuʹbb:nubb
-+N: NMN_NUQBB ;
+: NMN_NUQBB ;
 LEXICON NMN_NUQBB
 !! Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_gem_dd_type
 ! gradation: yes
@@ -3133,7 +3133,7 @@ LEXICON NMN_NUQBB
 :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) nuʹbb Ess+Px..
 
 LEXICON N_CHUQKHKH !!= * @CODE@ čuʹǩǩ:čukk
-+N: NMN_CHUQKHKH ;
+: NMN_CHUQKHKH ;
 LEXICON NMN_CHUQKHKH
 !! Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_gem_dd_type
 ! gradation: yes
@@ -3175,7 +3175,7 @@ LEXICON NMN_CHUQKHKH
 :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) cuʹǩǩ Ess+Px..
 
 LEXICON N_NJUUQNN !!= * @CODE@ njuuʹnn:njuunn
-+N: NMN_NJUUQNN ;
+: NMN_NJUUQNN ;
 LEXICON NMN_NJUUQNN
 !! Sg_Nom: vow_mono:vow_long:vow_high_u:pal_yes:cns_gem
 ! gradation: yes
@@ -3217,7 +3217,7 @@ LEXICON NMN_NJUUQNN
 :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) njuʹnn Ess+Px..
 
 LEXICON N_STUUQL !!= * @CODE@ stuuʹl:st%^1VOWu%{VU%}l
-+N: NMN_STUUQL ;
+: NMN_STUUQL ;
 LEXICON NMN_STUUQL
 !! Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_vyy
 ! gradation: no
@@ -3271,7 +3271,7 @@ LEXICON NMN_STUUQL
 
 
 LEXICON N_KUQRCHCH !!= * @CODE@ kuʹrčč:kurčč
-+N: NMN_KUQRCHCH ;
+: NMN_KUQRCHCH ;
 LEXICON NMN_KUQRCHCH
 !! Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_xyy
 ! gradation: yes
@@ -3322,7 +3322,7 @@ LEXICON NMN_KUQRCHCH
 
 LEXICON N_KUQV3H3H !!= * @CODE@ kuʹvǯǯ:kuvǯǯ
 ! vowel: monophthong
-+N: NMN_KUQV3H3H ;
+: NMN_KUQV3H3H ;
 LEXICON NMN_KUQV3H3H
 !! Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_xyy
 ! gradation: yes
@@ -3370,7 +3370,7 @@ LEXICON NMN_KUQV3H3H
 
 LEXICON N_JUQVJJ !!= * @CODE@ juʹvjj:ju%^1VOW%{ʹØ%}v%{ʹØ%}jj
 ! vowel: monophthong
-+N: NMN_JUQVJJ ;
+: NMN_JUQVJJ ;
 LEXICON NMN_JUQVJJ
 !! Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_vyy
 ! gradation: yes
@@ -3423,7 +3423,7 @@ LEXICON N_JUQVJJ-PL
 	
 LEXICON N_VUEQSS !!= * @CODE@  vueʹss:vuâss
 ! vowel: diphthong
-+N: NMN_VUEQSS ;
+: NMN_VUEQSS ;
 LEXICON NMN_VUEQSS
 !! Sg_Nom: vow_di:vow_short:vow_high_u:pal_yes:cns_gem
 ! gradation: yes
@@ -3465,7 +3465,7 @@ LEXICON NMN_VUEQSS
 
 LEXICON N_BIEQSS !!= * @CODE@  bieʹss:beâss
 ! vowel: diphthong
-+N: NMN_BIEQSS ;
+: NMN_BIEQSS ;
 LEXICON NMN_BIEQSS
 !! Sg_Nom: vow_di:vow_short:vow_high_u:pal_yes:cns_gem
 ! gradation: yes
@@ -3506,7 +3506,7 @@ LEXICON NMN_BIEQSS
 
 LEXICON N_SKHIEQRR !!= * @CODE@  sǩieʹrr:sǩeârr
 ! vowel: diphthong
-+N: NMN_SKHIEQRR ;
+: NMN_SKHIEQRR ;
 LEXICON NMN_SKHIEQRR
 !! Sg_Nom: vow_di:vow_short:vow_high_u:pal_yes:cns_gem
 ! gradation: yes
@@ -3548,7 +3548,7 @@ LEXICON NMN_SKHIEQRR
 
 LEXICON N_SUEQJJ !!= * @CODE@  sueʹjj:suâjj
 ! vowel: diphthong
-+N: NMN_SUEQJJ ;
+: NMN_SUEQJJ ;
 LEXICON NMN_SUEQJJ
 !! Sg_Nom: vow_di:vow_short:vow_high_u:pal_yes:cns_gem
 ! gradation: yes
@@ -3593,7 +3593,7 @@ LEXICON NMN_SUEQJJ
 
 !LEXICON N_JUEQLGHGH !!= * @CODE@ jueʹlǧǧ:juâlgg
 ! vowel: diphthong
-!+N: NMN_JUEQLGHGH ;
+!: NMN_JUEQLGHGH ;
 LEXICON NMN_JUEQLGHGH
 !! Sg_Nom: vow_di:vow_short:vow_high_u:pal_yes:cns_xyy
 ! gradation: yes
@@ -3636,7 +3636,7 @@ LEXICON NMN_JUEQLGHGH
 
 
 !LEXICON N_KUEQHTT !!=	     * @CODE@ kueʹhtt:kuâhtt
-!+N: NMN_KUEQHTT ;
+!: NMN_KUEQHTT ;
 LEXICON NMN_KUEQHTT !!=	     * @CODE@ kueʹhtt:kuâhtt
 :%^PALE%^PAL  E-STEM_SG-NOM ;
 :%^PALE%^PAL SG-ACC ; !!= * @CODE@ Num+Sg+Acc: kueʹhtt
@@ -3666,7 +3666,7 @@ LEXICON NMN_KUEQHTT !!=	     * @CODE@ kueʹhtt:kuâhtt
 
 LEXICON N_KUEQLL !!= * @CODE@ kueʹll:kuâll
 ! vowel: diphthong
-+N: NMN_KUEQLL ;
+: NMN_KUEQLL ;
 LEXICON NMN_KUEQLL
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
@@ -3716,7 +3716,7 @@ LEXICON NMN_KUEQLL
 
 LEXICON N_KUEQSSS !!= * @CODE@ kueʹsˈs:kuâsˈs
 ! vowel: diphthong
-+N: NMN_KUEQSSS ;
+: NMN_KUEQSSS ;
 LEXICON NMN_KUEQSSS
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
@@ -3760,7 +3760,7 @@ LEXICON NMN_KUEQSSS
 
 LEXICON N_MIEQLLL !!= * @CODE@ mieʹll:meâlˈl
 ! vowel: diphthong
-+N: NMN_MIEQLLL ;
+: NMN_MIEQLLL ;
 LEXICON NMN_MIEQLLL
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
@@ -3803,7 +3803,7 @@ LEXICON NMN_MIEQLLL
 
 LEXICON N_SUEIQNN !!= * @CODE@ sueiʹnn:suâinn
 ! vowel: diphthong
-+N: NMN_SUEIQNN ;
+: NMN_SUEIQNN ;
 LEXICON NMN_SUEIQNN
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -3854,7 +3854,7 @@ LEXICON NMN_SUEIQNN
 
 LEXICON N_MUEQRJJ !!= * @CODE@ mueʹrjj:muârjj
 ! vowel: diphthong
-+N: NMN_MUEQRJJ ;
+: NMN_MUEQRJJ ;
 LEXICON NMN_MUEQRJJ
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -3895,7 +3895,7 @@ LEXICON NMN_MUEQRJJ
 
 LEXICON N_MAAIQLM !!= * @CODE@ maaiʹlm:ma%^1VOWilmm
 ! vowel: diphthong
-+N: NMN_MAAIQLM ;
+: NMN_MAAIQLM ;
 LEXICON NMN_MAAIQLM
 ! gradation: yes
 
@@ -3918,7 +3918,7 @@ LEXICON NMN_MAAIQLM
 
 LEXICON N_SYSTEEQM !!= * @CODE@ uʹčteeʹl:uʹčteel
 ! vowel: monophthong
-+N: NMN_SYSTEEQM ;
+: NMN_SYSTEEQM ;
 LEXICON NMN_SYSTEEQM
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -3956,7 +3956,7 @@ LEXICON NMN_SYSTEEQM
 
 LEXICON N_KANEL !!= * @CODE@ kanel:kanẹ%^1VOWl
 ! vowel: monophthong
-+N: NMN_KANEL ;
+: NMN_KANEL ;
 LEXICON NMN_KANEL
 ! gradation: yes
 !! * Yaml: __N-kanel__
@@ -3977,7 +3977,7 @@ LEXICON NMN_KANEL
 
 LEXICON N_KHIEQMNN !!= * @CODE@ ǩieʹmnn:ǩeâmnn
 ! vowel: diphthong
-+N: NMN_KHIEQMNN ;
+: NMN_KHIEQMNN ;
 LEXICON NMN_KHIEQMNN
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -4027,7 +4027,7 @@ LEXICON NMN_KHIEQMNN
 !! CLASS 1 LOW VOWEL, PALATALIZATION, ILLATIVE IN U NOMINALS
 
 LEXICON N_LAQB3H3H !!= * @CODE@ läʹbǯǯ:läbǯǯ
-+N: NMN_LAQB3H3H ;
+: NMN_LAQB3H3H ;
 LEXICON NMN_LAQB3H3H
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -4064,7 +4064,7 @@ LEXICON NMN_LAQB3H3H
 !! !!e-stems
 
 LEXICON N_VAEQLL !!= * @CODE@ väʹll:väll
-+N: NMN_VAEQLL ;
+: NMN_VAEQLL ;
 LEXICON NMN_VAEQLL
 ! gradation: yes
 !! similar_to: N_PAPP
@@ -4114,7 +4114,7 @@ LEXICON NMN_VAEQLL
 LEXICON N_EQCHCH !!= * @CODE@ eʹčč:ẹ%^1VOWčč
 ! vowel: monophthong
 ! V1ʹC1C1
-+N: NMN_EQCHCH ;
+: NMN_EQCHCH ;
 LEXICON NMN_EQCHCH
 !! vowel_shift: no
 !! gradation: yes
@@ -4152,7 +4152,7 @@ LEXICON NMN_EQCHCH
 LEXICON N_PEQKHKH !!= * @CODE@ peʹǩǩ:pẹ%^1VOWkk
 ! vowel: monophthong
 ! 
-+N: NMN_PEQKHKH ;
+: NMN_PEQKHKH ;
 LEXICON NMN_PEQKHKH
 !! vowel_shift: no
 !! gradation: yes
@@ -4178,7 +4178,7 @@ LEXICON NMN_PEQKHKH
 
 LEXICON N_AQVV !!= * @CODE@ äʹvv:ävv
 !! V1ʹC1C1
-+N: NMN_AQVV ;
+: NMN_AQVV ;
 LEXICON NMN_AQVV
 !! vowel: monophthong
 !! vowel_shift: no
@@ -4218,7 +4218,7 @@ LEXICON NMN_AQVV
 
 LEXICON N_STAQLLJ !!= * @CODE@ stäʹllj:ställj
 !! V1ʹC1C1
-+N: NMN_STAQLLJ ;
+: NMN_STAQLLJ ;
 LEXICON NMN_STAQLLJ
 !! vowel: monophthong
 !! vowel_shift: yes
@@ -4245,7 +4245,7 @@ LEXICON NMN_STAQLLJ
 
 LEXICON N_PEQLLJ !!= * @CODE@ peʹllj:pẹ%^1VOWllj
 
-+N: NMN_PEQLLJ ;
+: NMN_PEQLLJ ;
 LEXICON NMN_PEQLLJ
 !! vowel: monophthong
 !! vowel_shift: no
@@ -4270,7 +4270,7 @@ LEXICON NMN_PEQLLJ
 LEXICON N_AQKHKH !!= * @CODE@ äʹǩǩ:äkk
 ! vowel: monophthong
 ! V1ʹC1C1
-+N: NMN_AQKHKH ;
+: NMN_AQKHKH ;
 LEXICON NMN_AQKHKH
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204, 329)
@@ -4310,7 +4310,7 @@ LEXICON NMN_AQKHKH
 
 
 LEXICON N_SAAQMM !!= * @CODE@ sääʹmm:säämm
-+N: NMN_SAAQMM ;
+: NMN_SAAQMM ;
 LEXICON NMN_SAAQMM
 ! gradation: yes
 ! vowel: monophthong
@@ -4356,7 +4356,7 @@ LEXICON N_SAAQMM-PL
 
 
 LEXICON N_CHAAQCC !!= * @CODE@ čääʹcc:čääcc
-+N: NMN_CHAAQCC ;
+: NMN_CHAAQCC ;
 LEXICON NMN_CHAAQCC
 ! gradation: yes
 ! vowel: monophthong
@@ -4405,7 +4405,7 @@ LEXICON N_CHAAQCC-PL !!= * @CODE@ čääʹʒʒ:čääcc
 
 
 LEXICON N_EEQKHKH !!= * @CODE@ eeʹǩǩ:ẹẹkk
-+N: NMN_EEQKHKH ;
+: NMN_EEQKHKH ;
 LEXICON NMN_EEQKHKH
 ! gradation: yes
 ! vowel: monophthong
@@ -4449,7 +4449,7 @@ LEXICON NMN_EEQKHKH
 
 
 LEXICON N_TEEQMM !!= * @CODE@ teeʹmm:teemm
-+N: NMN_TEEQMM ;
+: NMN_TEEQMM ;
 LEXICON NMN_TEEQMM
 ! gradation: yes
 ! vowel: monophthong
@@ -4476,7 +4476,7 @@ LEXICON NMN_TEEQMM
 
 LEXICON N_PAAQJJ !!= * @CODE@ pââʹjj:pââjj
 ! vowel: monophthong
-+N: NMN_PAAQJJ ;
+: NMN_PAAQJJ ;
 LEXICON NMN_PAAQJJ
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204, 329)
@@ -4521,7 +4521,7 @@ LEXICON NMN_PAAQJJ
 LEXICON N_KAQLBB !!= * @CODE@ käʹlbb:kälbb âʹlǧǧ:âlgg
 ! vowel: monophthong
 !! similar_to: N_ALGG
-+N: NMN_KAQLBB ;
+: NMN_KAQLBB ;
 LEXICON NMN_KAQLBB
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -4563,7 +4563,7 @@ LEXICON NMN_KAQLBB-PL
 LEXICON N_TEQSTT !!= * @CODE@ argumeʹntt:argumentt
 !! vowel: monophthong
 !! vowel_height_change: no
-+N: NMN_TEQSTT ;
+: NMN_TEQSTT ;
 LEXICON NMN_TEQSTT
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -4602,7 +4602,7 @@ LEXICON NMN_TEQSTT
 
 LEXICON N_PAIQKHKH !!= * @CODE@ päiʹǩǩ:päikk
 ! vowel: monophthong
-+N: NMN_PAIQKHKH ;
+: NMN_PAIQKHKH ;
 LEXICON NMN_PAIQKHKH
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -4666,7 +4666,7 @@ LEXICON NMN_PAIQKHKH
 
 LEXICON N_LAEUQKHKH !!= * @CODE@ päiʹǩǩ:päikk
 ! vowel: monophthong
-+N: NMN_LAEUQKHKH ;
+: NMN_LAEUQKHKH ;
 LEXICON NMN_LAEUQKHKH
 !! Is for nouns with ''-est'' Loc, Extra long vowel
 !! * Yaml: __N-paeikk__
@@ -4710,7 +4710,7 @@ LEXICON NMN_LAEUQKHKH
 
 LEXICON N_HAAQSKH !!= * @CODE@ hääʹsǩ:hääsk
 ! vowel: monophthong
-+N: NMN_HAAQSKH ;
+: NMN_HAAQSKH ;
 LEXICON NMN_HAAQSKH
 ! gradation: no
 !! * Yaml: __N-haeaesk__
@@ -4731,7 +4731,7 @@ LEXICON NMN_HAAQSKH
 
 LEXICON N_SAIQMM !!= * @CODE@ säiʹmm:säimm
 ! vowel: monophthong
-+N: NMN_SAIQMM ;
+: NMN_SAIQMM ;
 LEXICON NMN_SAIQMM
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -4769,7 +4769,7 @@ LEXICON NMN_SAIQMM
 
 LEXICON N_KHEQDD !!= * @CODE@ ǩeʹdd:ǩe%^1VOWdd
 ! vowel: monophthong
-+N: NMN_KHEQDD ;
+: NMN_KHEQDD ;
 LEXICON NMN_KHEQDD
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -4814,7 +4814,7 @@ LEXICON NMN_KHEQDD
 
 LEXICON N_KHEQMNN !!= * @CODE@ ǩeʹmnn:ǩeʹmnn
 ! vowel: monophthong
-+N: NMN_KHEQMNN ;
+: NMN_KHEQMNN ;
 LEXICON NMN_KHEQMNN
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -4857,7 +4857,7 @@ LEXICON NMN_KHEQMNN
 
 LEXICON N_LAAIQJ !!= * @CODE@ lääiʹj:lääiǥ
 ! vowel: monophthong
-+N: NMN_LAAIQJ ;
+: NMN_LAAIQJ ;
 LEXICON NMN_LAAIQJ
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -4892,7 +4892,7 @@ LEXICON NMN_LAAIQJ
 
 LEXICON N_KHEQRJJ !!= * @CODE@ ǩeʹrjj:ǩerjj
 ! vowel: monophthong
-+N: NMN_KHEQRJJ ;
+: NMN_KHEQRJJ ;
 LEXICON NMN_KHEQRJJ
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -4929,7 +4929,7 @@ LEXICON NMN_KHEQRJJ
 
 LEXICON N_TEQKSTT !!= * @CODE@ teʹkstt:tekstt
 ! vowel: monophthong
-+N: NMN_TEQKSTT ;
+: NMN_TEQKSTT ;
 LEXICON NMN_TEQKSTT
 !! gradation: yes
 !! vowel_shift: no
@@ -4964,7 +4964,7 @@ LEXICON NMN_TEQKSTT
 
 LEXICON N_TAQHTT !!= * @CODE@ täʹhtt:tä%^1VOW%{ʹØ%}h%{ʹØ%}tt
 ! vowel: monophthong
-+N: NMN_TAQHTT ;
+: NMN_TAQHTT ;
 LEXICON NMN_TAQHTT
 ! gradation: yes
 !! similar_to: KÅHTT
@@ -5004,7 +5004,7 @@ LEXICON NMN_TAQHTT
 
 LEXICON N_RUQHSS !!= * @CODE@ ruʹhss:ruhss
 ! vowel: monophthong
-+N: NMN_RUQHSS ;
+: NMN_RUQHSS ;
 LEXICON NMN_RUQHSS
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -5044,7 +5044,7 @@ LEXICON NMN_RUQHSS
 LEXICON N_JAUQRR !!= * @CODE@ jäuʹrr:jäurr
 ! vowel: monophthong
 !! similar_to: N_AUTT
-+N: NMN_JAUQRR ;
+: NMN_JAUQRR ;
 LEXICON NMN_JAUQRR
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -5076,7 +5076,7 @@ LEXICON NMN_JAUQRR
 
 LEXICON N_PEIQVV !!= * @CODE@ peiʹvv:pẹ%^1VOWi%{ʹØ%}vv
 ! vowel: monophthong
-+N: NMN_PEIQVV ;
+: NMN_PEIQVV ;
 LEXICON NMN_PEIQVV
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -5120,7 +5120,7 @@ LEXICON N_PEIQVV-PL
 
 LEXICON N_PIEAQSS !!= * @CODE@ pieʹss:peäss
 ! vowel: diphthong
-+N: NMN_PIEAQSS ;
+: NMN_PIEAQSS ;
 LEXICON NMN_PIEAQSS
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
@@ -5161,7 +5161,7 @@ LEXICON NMN_PIEAQSS
 
 LEXICON N_SUEAQKHKH !!= * @CODE@ sueʹǩǩ:suäkk
 ! vowel: diphthong
-+N: NMN_SUEAQKHKH ;
+: NMN_SUEAQKHKH ;
 LEXICON NMN_SUEAQKHKH
 ! gradation: yes
 ! weak geminate
@@ -5204,7 +5204,7 @@ LEXICON NMN_SUEAQKHKH
 LEXICON N_KUEAQTT !!= * @CODE@ kuẹʹtt:kuätt
 ! vowel: diphthong
 !! similar_to: N_SUEAQKHKH
-+N: NMN_KUEAQTT ;
+: NMN_KUEAQTT ;
 LEXICON NMN_KUEAQTT
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
@@ -5247,7 +5247,7 @@ LEXICON NMN_KUEAQTT
 
 LEXICON N_NUEAQJJ !!= * @CODE@ nuẹʹjj:nuäjj
 ! vowel: diphthong
-+N: NMN_NUEAQJJ ;
+: NMN_NUEAQJJ ;
 LEXICON NMN_NUEAQJJ
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
@@ -5277,7 +5277,7 @@ NMN_KUEAQTT ;
 LEXICON N_VIEQMM !!= * @CODE@ vieʹmm:veâmm
 ! vowel: diphthong
 !! similar_to: N_SUEAQKHKH
-+N: NMN_VIEQMM ;
+: NMN_VIEQMM ;
 LEXICON NMN_VIEQMM
 ! gradation: yes
 !! !!FORMS
@@ -5303,7 +5303,7 @@ LEXICON NMN_VIEQMM
 
 LEXICON N_VUEAIQVV !!= * @CODE@ vuẹiʹvv:vuäivv
 ! vowel: diphthong
-+N: NMN_VUEAIQVV ;
+: NMN_VUEAIQVV ;
 LEXICON NMN_VUEAIQVV
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
@@ -5353,7 +5353,7 @@ LEXICON NMN_VUEAIQVV
 
 LEXICON N_CHUAQRVV !!= * @CODE@ čuäʹrvv:čuärvv
 ! vowel: diphthong
-+N: NMN_CHUAQRVV ;
+: NMN_CHUAQRVV ;
 LEXICON NMN_CHUAQRVV
 ! gradation: yes
 ! weak geminate
@@ -5419,7 +5419,7 @@ LEXICON NMN_CHUAQRVV
 
 LEXICON N_NEUQLL !!= * @CODE@ neuʹll:ne%^1VOWull 
 ! vowel: monophthong
-+N: NMN_NEUQLL ;
+: NMN_NEUQLL ;
 LEXICON NMN_NEUQLL
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -5460,7 +5460,7 @@ LEXICON NMN_NEUQLL
  
 LEXICON N_JEAQNNN !!= * @CODE@ jeäʹnn:jeänˈn, jeäʹǧǧ:jeägˈg
 ! vowel: diphthong
-+N: NMN_JEAQNNN ;
+: NMN_JEAQNNN ;
 LEXICON NMN_JEAQNNN
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
@@ -5552,7 +5552,7 @@ LEXICON E-STEM_N_KUYLAZH !!= * @CODE@ (9)
 
 LEXICON N_JEAQRMM !!= * @CODE@ jeäʹrǧǧ:jeärgg
 ! vowel: diphthong
-+N: NMN_JEAQRMM ;
+: NMN_JEAQRMM ;
 LEXICON NMN_JEAQRMM
 ! gradation: yes
 ! diphthong: yes
@@ -5600,7 +5600,7 @@ LEXICON N_JEAQRMM-PL
 
 LEXICON N_REAEIQGHGH !!= * @CODE@ reäiʹǧǧ:reäigg
 ! vowel: diphthong
-+N: NMN_REAEIQGHGH ;
+: NMN_REAEIQGHGH ;
 LEXICON NMN_REAEIQGHGH
 ! gradation: yes
 ! diphthong: yes
@@ -5642,7 +5642,7 @@ LEXICON NMN_REAEIQGHGH
 
 !LEXICON N_RIOQMJJ !!= * @CODE@ riõʹmjj:reâmjj
 ! vowel: diphthong
-+N: NMN_RIOQMJJ ;
+: NMN_RIOQMJJ ;
 LEXICON NMN_RIOQMJJ
 ! gradation: yes
 ! diphthong: yes
@@ -5667,7 +5667,7 @@ LEXICON NMN_RIOQMJJ
 
 LEXICON N_CHIOQLJ !!= * @CODE@ čiõʹlj:čeâlǥ
 ! vowel: diphthong
-+N: NMN_CHIOQLJ ;
+: NMN_CHIOQLJ ;
 LEXICON NMN_CHIOQLJ
 ! gradation: No (weak)
 ! Height_variation: Yes
@@ -5695,7 +5695,7 @@ LEXICON NMN_CHIOQLJ
 
 !!
 LEXICON N_KUQMPP !!= * @CODE@ kuʹmpp:kumpp
-+N: NMN_KUQMPP ;
+: NMN_KUQMPP ;
 LEXICON NMN_KUQMPP
 ! gradation: yes
 !! N_E-EPal3-31
@@ -5727,7 +5727,7 @@ LEXICON NMN_KUQMPP
 +Der+Der/Dimin:%^V2VV%^XYY2XY%> N_KUUQMPEZH ; !!(9) Der/Dimin.N.Sg.Nom: kuumpež
 
 LEXICON N_BAEQNDD !!= * @CODE@ bäʹndd:kumpp
-+N: NMN_BAEQNDD ;
+: NMN_BAEQNDD ;
 LEXICON NMN_BAEQNDD
 ! gradation: yes
 !! N_E-EPal3-31
@@ -5758,7 +5758,7 @@ LEXICON NMN_BAEQNDD
 +Der+Der/Dimin:%^V2VV%^XYY2XY%> N_KUUQMPEZH ; !!(9) Der/Dimin.N.Sg.Nom: bäändež
 
 LEXICON N_KRIQLCC !!= * @CODE@ kriʹlcc:krilcc
-+N: NMN_KRIQLCC ;
+: NMN_KRIQLCC ;
 LEXICON NMN_KRIQLCC
 ! gradation: yes
 !! !!FORMS
@@ -5789,7 +5789,7 @@ LEXICON NMN_KRIQLCC
 
 
 LEXICON N_DIQLL !!= * @CODE@ diʹll:dill
-+N: NMN_DIQLL ;
+: NMN_DIQLL ;
 LEXICON NMN_DIQLL
 ! gradation: yes
 !! !!FORMS
@@ -5807,7 +5807,7 @@ LEXICON NMN_DIQLL
 
 
 LEXICON N_KAAQFF !!= * @CODE@ kaaʹff:kaaʹff
-+N: NMN_KAAQFF ;
+: NMN_KAAQFF ;
 LEXICON NMN_KAAQFF
 ! gradation: yes
 !! 
@@ -5842,7 +5842,7 @@ LEXICON NMN_KAAQFF
 
 
 LEXICON N_KLAAQDD !!= * @CODE@ klaaʹdd:klaadd
-+N: NMN_KLAAQDD ;
+: NMN_KLAAQDD ;
 LEXICON NMN_KLAAQDD
 !! X2 no gradation; no lowering no raising
 !!! pos="nominal"
@@ -5882,7 +5882,7 @@ LEXICON NMN_KLAAQDD
 
 
 LEXICON N_ZEEQTT !!= * @CODE@ zeeʹtt:zẹẹtt
-+N: NMN_ZEEQTT ;
+: NMN_ZEEQTT ;
 LEXICON NMN_ZEEQTT
 ! gradation: no
 !! 
@@ -5903,7 +5903,7 @@ LEXICON NMN_ZEEQTT
 
 
 LEXICON N_LUUKK !!= * @CODE@ 
-+N: NMN_LUUKK ;
+: NMN_LUUKK ;
 LEXICON NMN_LUUKK
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
@@ -5932,7 +5932,7 @@ LEXICON NMN_LUUKK
 
 
 LEXICON N_BIOLOOG !!= * @CODE@ bioloog:bioloog
-+N: NMN_BIOLOOG ;
+: NMN_BIOLOOG ;
 LEXICON NMN_BIOLOOG
 ! gradation: no
 !! !!2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
@@ -5957,7 +5957,7 @@ LEXICON NMN_BIOLOOG
 +Der+Der/Dimin+N:%^PAL N_MUORYZH-WITH-PAL ;  !!= * @CODE@ biolooʹǧ-
 
 LEXICON N_JARPLAAN !!= * @CODE@ 
-+N: NMN_JARPLAAN ;
+: NMN_JARPLAAN ;
 LEXICON NMN_JARPLAAN
 ! gradation: allegro
 !! !!2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
@@ -5983,7 +5983,7 @@ LEXICON NMN_JARPLAAN
 +Der+Der/Dimin+N:%^PAL N_MUORYZH-WITH-PAL ;  !!= * @CODE@ paaʹr-
 
 LEXICON N_ATOM !!= * @CODE@ atom:atom
-+N: NMN_ATOM ;
+: NMN_ATOM ;
 LEXICON NMN_ATOM
 ! gradation: yes
 !! !!2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
@@ -6015,7 +6015,7 @@ LEXICON NMN_ATOM
 :%^V2VV HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_BLOUSLOV !!= * @CODE@ blouslõv:blouslõ%^1VOWv CHECKME
-+N: NMN_BLOUSLOV ;
+: NMN_BLOUSLOV ;
 LEXICON NMN_BLOUSLOV
 ! gradation: yes
 !! * Yaml: __N-blouslov__
@@ -6037,7 +6037,7 @@ LEXICON NMN_BLOUSLOV
 :%^V2VV HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_EVANHGHEQLIUM !!= * @CODE@ evaŋǧeʹlium:evaŋǧeʹlium
-+N: NMN_EVANHGHEQLIUM ;
+: NMN_EVANHGHEQLIUM ;
 LEXICON NMN_EVANHGHEQLIUM
 ! gradation: yes
 !! evaŋǧeʹlium:evaŋǧeʹlium
@@ -6055,7 +6055,7 @@ LEXICON NMN_EVANHGHEQLIUM
 
 
 LEXICON N_AIHAM !!= * @CODE@ aiham:aiham
-+N: NMN_AIHAM ;
+: NMN_AIHAM ;
 LEXICON NMN_AIHAM
 ! gradation: yes
 !! !!2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
@@ -6082,7 +6082,7 @@ LEXICON NMN_AIHAM
 
 !! !!CLASS 2 NOMINALS with high stem vowel and i-stems
 LEXICON N_JUURD !!= * @CODE@ juurd:ju%^1VOWrdd
-+N: NMN_JUURD ;
+: NMN_JUURD ;
 LEXICON NMN_JUURD !!= * @CODE@ juurd:ju%^1VOWrdd
 ! gradation: yes
 ! vowel_center: monophthong
@@ -6115,7 +6115,7 @@ LEXICON NMN_JUURD !!= * @CODE@ juurd:ju%^1VOWrdd
 :%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_AAZZ !!= * @CODE@ aazz:a%^1VOWss
-+N: NMN_AAZZ ;
+: NMN_AAZZ ;
 LEXICON NMN_AAZZ !!= * @CODE@ aazz:a%^1VOWss
 !! * Yaml: __N-aazz__
 !! * There are several stem types 
@@ -6140,7 +6140,7 @@ LEXICON NMN_AAZZ !!= * @CODE@ aazz:a%^1VOWss
 :%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_KOODH !!= * @CODE@ koođ:ko%^1VOWđđ
-+N: NMN_KOODH ;
+: NMN_KOODH ;
 LEXICON NMN_KOODH !!= * @CODE@ koođ:ko%^1VOWđđ
 ! gradation: yes
 ! vowel_center: monophthong
@@ -6170,7 +6170,7 @@ LEXICON NMN_KOODH !!= * @CODE@ koođ:ko%^1VOWđđ
 :%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_KAAV !!= * @CODE@ kaav:kaapp
-+N: NMN_KAAV ;
+: NMN_KAAV ;
 LEXICON NMN_KAAV !!= * @CODE@ kaav:kaapp
 ! gradation: yes
 ! vowel_center: monophthong
@@ -6200,7 +6200,7 @@ LEXICON NMN_KAAV !!= * @CODE@ kaav:kaapp
 :%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_POOUS !!= * @CODE@ poous:pohss
-+N: NMN_POOUS ;
+: NMN_POOUS ;
 LEXICON NMN_POOUS !!= * @CODE@ poous:pohss
 ! gradation: yes
 ! vowel_center: monophthong
@@ -6230,7 +6230,7 @@ LEXICON NMN_POOUS !!= * @CODE@ poous:pohss
 :%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_MAADD !!= * @CODE@ maadd:madd
-+N: NMN_MAADD ;
+: NMN_MAADD ;
 LEXICON NMN_MAADD !!= * @CODE@ maadd:madd
 ! gradation: yes
 ! vowel_center: monophthong
@@ -6263,7 +6263,7 @@ LEXICON NMN_MAADD !!= * @CODE@ maadd:madd
 :%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_LIOV !!= * @CODE@ liõv:liõpp
-+N: NMN_LIOV ;
+: NMN_LIOV ;
 LEXICON NMN_LIOV
 ! gradation: yes
 ! high_vowel: yes
@@ -6290,7 +6290,7 @@ LEXICON NMN_LIOV
 :%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_MUOTT !!= * @CODE@ muõtt:muõtˈt
-+N: NMN_MUOTT ;
+: NMN_MUOTT ;
 LEXICON NMN_MUOTT
 ! gradation: no
 ! Gradation: nothing orthographic
@@ -6321,7 +6321,7 @@ LEXICON NMN_MUOTT
 
 
 LEXICON N_SUOL !!= * @CODE@ suõl:suõlˈl
-+N: NMN_SUOL ;
+: NMN_SUOL ;
 LEXICON NMN_SUOL
 ! gradation: yes
 ! vowel_center: diphthong
@@ -6349,7 +6349,7 @@ LEXICON NMN_SUOL
 :%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_PUOADH !!= * @CODE@ puåđ:puått
-+N: NMN_PUOADH ;
+: NMN_PUOADH ;
 LEXICON NMN_PUOADH
 ! gradation: yes
 ! vowel_center: diphthong
@@ -6377,7 +6377,7 @@ LEXICON NMN_PUOADH
 :%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_MUOARD !!= * @CODE@ muård:muårdd
-+N: NMN_MUOARD ;
+: NMN_MUOARD ;
 LEXICON NMN_MUOARD
 ! gradation: yes
 ! high_vowel: yes
@@ -6404,7 +6404,7 @@ LEXICON NMN_MUOARD
 :%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_MUU3 !!= * @CODE@ muuʒ:muvʒʒ
-+N: NMN_MUU3 ;
+: NMN_MUU3 ;
 LEXICON NMN_MUU3 !!= * @CODE@ muuʒ:muvʒʒ
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -6450,7 +6450,7 @@ LEXICON NMN_MUU3 !!= * @CODE@ muuʒ:muvʒʒ
 !! CLASS 2 NOMINALS with low stem vowel and u-stems
 !! !!u-stems
 LEXICON N_MAEAEN !!= * @CODE@ mään:mann
-+N: NMN_MAEAEN ;
+: NMN_MAEAEN ;
 LEXICON NMN_MAEAEN !!= * @CODE@ mään:mann
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 228)
@@ -6478,7 +6478,7 @@ LEXICON NMN_MAEAEN !!= * @CODE@ mään:mann
 +Use/NG:%^VOWLower%>u PAR ;
 
 LEXICON N_PYYGG !!= * @CODE@ pââgg:põgg
-+N: NMN_PYYGG ;
+: NMN_PYYGG ;
 LEXICON NMN_PYYGG !!= * @CODE@ pââgg:põgg
 ! gradation: yes
 ! vowel_raise: yes
@@ -6498,7 +6498,7 @@ LEXICON NMN_PYYGG !!= * @CODE@ pââgg:põgg
 +Use/NG:%^VOWLower%>u PAR ;
 
 LEXICON N_NJOORGX !!= * @CODE@ njoorǥ:njurgg
-+N: NMN_NJOORGX ;
+: NMN_NJOORGX ;
 LEXICON NMN_NJOORGX !!= * @CODE@ njoorǥ:njurgg
 ! gradation: yes
 ! vowel_raise: yes
@@ -6517,7 +6517,7 @@ LEXICON NMN_NJOORGX !!= * @CODE@ njoorǥ:njurgg
 
 
 LEXICON N_SUYL  !!= * @CODE@ suâl:suõlˈl
-+N: NMN_SUYL ;
+: NMN_SUYL ;
 LEXICON NMN_SUYL
 ! gradation: yes
  !!= * @CODE@ is for nouns with ''-est'' +Loc
@@ -6537,7 +6537,7 @@ LEXICON NMN_SUYL
 :%>u PL-OBL ;				! suõlˈlui
 
 LEXICON N_KUYUS  !!= * @CODE@ kuâus:kuõhss
-+N: NMN_KUYUS ;
+: NMN_KUYUS ;
 LEXICON NMN_KUYUS
 ! gradation: yes
  !!= * @CODE@ is for nouns with ''-est'' +Loc
@@ -6557,7 +6557,7 @@ LEXICON NMN_KUYUS
 :%>u PL-OBL ;				! kuõhssui
 
 LEXICON N_CUYBB  !!= * @CODE@ cuâbb:cuõbˈb
-+N: NMN_CUYBB ;
+: NMN_CUYBB ;
 LEXICON NMN_CUYBB
 ! gradation: yes
  !!= * @CODE@ is for nouns with ''-est'' +Loc
@@ -6576,7 +6576,7 @@ LEXICON NMN_CUYBB
 :%>u PL-OBL ;				! cuõbˈbui
 
 LEXICON N_CHUYNJ  !!= * @CODE@ čuânj:čuõnˈnj
-+N: NMN_CHUYNJ ;
+: NMN_CHUYNJ ;
 LEXICON NMN_CHUYNJ
 ! gradation: yes
  !!= * @CODE@ is for nouns with ''-est'' +Loc
@@ -6593,7 +6593,7 @@ LEXICON NMN_CHUYNJ
 :%>u PL-OBL ;				! čuõnˈnjui
 
 LEXICON N_PUYGXGX !!= * @CODE@ puâǥǥ:puõkˈk
-+N: NMN_PUYGXGX ;
+: NMN_PUYGXGX ;
 LEXICON NMN_PUYGXGX
 ! gradation: yes
  !!= * @CODE@ is for nouns with ''-est'' +Loc
@@ -6608,7 +6608,7 @@ LEXICON NMN_PUYGXGX
 :%>u PL-OBL ;
 
 LEXICON N_PUA33 !!= * @CODE@ puäʒʒ:puõcˈc
-+N: NMN_PUA33 ;
+: NMN_PUA33 ;
 LEXICON NMN_PUA33
 ! gradation: yes
  !!= * @CODE@ is for nouns with ''-est'' +Loc
@@ -6631,7 +6631,7 @@ LEXICON NMN_PUA33
 
 !! CLASS 2 NOMINALS with high stem vowel and â-stems
 LEXICON N_PIIDH !!= * @CODE@ piiđ:pitt
-+N: NMN_PIIDH ;
+: NMN_PIIDH ;
 LEXICON NMN_PIIDH
 ! gradation: yes
  !!= * @CODE@ is for nouns with ''-âst'' +Loc
@@ -6651,7 +6651,7 @@ LEXICON NMN_PIIDH
 !! !!m-stems
 
 LEXICON N_LAAJJ !!= * @CODE@ laajj:la%^1VOWčč
-+N: NMN_LAAJJ ;
+: NMN_LAAJJ ;
 LEXICON NMN_LAAJJ !!= * @CODE@ laajj:la%^1VOWčč
 ! gradation: yes
 !! * Yaml: __N-laajj__
@@ -6670,7 +6670,7 @@ LEXICON N_LAAJJ-PL
 +N:m PL-OBL ;
 
 LEXICON N_OODH !!= * @CODE@ õõđ:õ%^1VOWđđ
-+N: NMN_OODH ;
+: NMN_OODH ;
 LEXICON NMN_OODH !!= * @CODE@ õõđ:õ%^1VOWđđ
 ! gradation: yes
 !! * Yaml: __N-oodhdh__
@@ -6688,7 +6688,7 @@ LEXICON N_SOOUS !!= * @CODE@ sõõus:sõhss
 ! gradation: yes
 ! sõõus:sõhss
 !! * Yaml:
-+N: NMN_SOOUS ;
+: NMN_SOOUS ;
 LEXICON NMN_SOOUS !!= * @CODE@ sõõus:sõ%^1VOWhss
 :%^V2VV%^XYY2VY SG-NOM ; ! õõh:õõu
 :âm SG-ABE/ACC/GEN ;
@@ -6708,7 +6708,7 @@ LEXICON N_SOOUS-PL
 +N:m PL-OBL ;
 
 LEXICON N_LAAUR !!= * @CODE@ laaur:laurr
-+N: NMN_LAAUR ;
+: NMN_LAAUR ;
 LEXICON NMN_LAAUR !!= * @CODE@ laaur:laurr
 ! gradation: yes
 ! laaur:laurr
@@ -6726,7 +6726,7 @@ LEXICON NMN_LAAUR !!= * @CODE@ laaur:laurr
 :%>m A_DER/ALLASH ;
 
 LEXICON N_VYYID !!= * @CODE@ vââid:võ%^1VOWidd
-+N: NMN_VYYID ;
+: NMN_VYYID ;
 LEXICON NMN_VYYID !!= * @CODE@ vââid:võ%^1VOWidd
 !! * Yaml: __N-vyyid__
 !! similar_to:
@@ -6748,7 +6748,7 @@ LEXICON NMN_VYYID !!= * @CODE@ vââid:võ%^1VOWidd
 !! !!n-stems
 
 LEXICON N_SIOM  !!= * @CODE@ = siõm:siõmˈm
-+N: NMN_SIOM ;
+: NMN_SIOM ;
 LEXICON NMN_SIOM  !!= * @CODE@ = siõm:siõmˈm
 !! * Yaml: __N-siom__
 :%^CCC2C SG-NOM ;
@@ -6763,7 +6763,7 @@ LEXICON NMN_SIOM  !!= * @CODE@ = siõm:siõmˈm
 :%>n A_DER/ALLASH ;
 
 LEXICON N_SEAEM  !!= * @CODE@ = seäm:seämˈm
-+N: NMN_SEAEM ;
+: NMN_SEAEM ;
 LEXICON NMN_SEAEM  !!= * @CODE@ = seäm:seämˈm
 !! * Yaml: __N-siom__
 :%^CCC2C SG-NOM ;
@@ -6778,7 +6778,7 @@ LEXICON NMN_SEAEM  !!= * @CODE@ = seäm:seämˈm
 :%>n A_DER/ALLASH ;
 
 LEXICON N_VUYSK !!= * @CODE@ vuâsk:vuâskk
-+N: NMN_VUYSK ;
+: NMN_VUYSK ;
 LEXICON NMN_VUYSK !!= * @CODE@ vuâsk:vuâskk
 !! * Yaml: __N-kuolban__
 !! similar_to:N_KUOLBYN
@@ -6793,7 +6793,7 @@ LEXICON NMN_VUYSK !!= * @CODE@ vuâsk:vuâskk
 :%>n A_DER/ALLASH ;
 
 LEXICON N_KHIYLGX !!= * @CODE@ ǩiâlǥ:ǩiâlgg
-+N: NMN_KHIYLGX ;
+: NMN_KHIYLGX ;
 LEXICON NMN_KHIYLGX !!= * @CODE@ ǩiâlǥ:ǩiâlgg
 !! * Yaml: __N-kuolban__
 !! similar_to:N_KUOLBYN
@@ -6808,7 +6808,7 @@ LEXICON NMN_KHIYLGX !!= * @CODE@ ǩiâlǥ:ǩiâlgg
 :%>n A_DER/ALLASH ;
 
 LEXICON N_KUOLBYN !!= * @CODE@ kuõlbân:kuõlbb
-+N: NMN_KUOLBYN ;
+: NMN_KUOLBYN ;
 LEXICON NMN_KUOLBYN !!= * @CODE@ kuõlbân:kuõlbb
 !! * Yaml: __N-kuolban__
 :  R ;
@@ -6823,7 +6823,7 @@ LEXICON NMN_KUOLBYN !!= * @CODE@ kuõlbân:kuõlbb
 :%>n A_DER/ALLASH ;
 
 LEXICON N_SIEQM !!= * @CODE@ sieʹm:siâmˈm
-+N: NMN_SIEQM ;
+: NMN_SIEQM ;
 LEXICON NMN_SIEQM 
 !! stemtype Am-stem
 !! * Yaml: __N-siem__
@@ -6838,7 +6838,7 @@ LEXICON NMN_SIEQM
 :%^VOWRaise%>n A_DER/ALLASH ;
 
 LEXICON N_LUEQM !!= * @CODE@ lueʹm:luâmˈm
-+N: NMN_LUEQM ;
+: NMN_LUEQM ;
 LEXICON NMN_LUEQM 
 !! stemtype Am-stem
 !! * Yaml: __N-luem__
@@ -6855,7 +6855,7 @@ LEXICON NMN_LUEQM
 
 !! CLASS 3
 LEXICON N_VUEQN !!= * @CODE@ vueʹn:vuânˈn
-+N: NMN_VUEQN ;
+: NMN_VUEQN ;
 LEXICON NMN_VUEQN 
 !! stemtype Am-stem
 !! * Yaml: __vuen__
@@ -6880,7 +6880,7 @@ LEXICON NMN_VUEQN
 
 
 LEXICON N_CHYYQDH !!= * @CODE@ čââʹđ:čâđđ
-+N: NMN_CHYYQDH ;
+: NMN_CHYYQDH ;
 LEXICON NMN_CHYYQDH
 ! gradation: yes
 ! diphthong: no
@@ -6898,7 +6898,7 @@ LEXICON NMN_CHYYQDH
 :%>m A_DER/ALLASH ;
 
 LEXICON N_CHUEQNJ !!= * @CODE@ čueʹnj:čuânˈnj
-+N: NMN_CHUEQNJ ;
+: NMN_CHUEQNJ ;
 LEXICON NMN_CHUEQNJ
 !! stemtype Aǥ-stem
 !! * Yaml: __N-chuenj__
@@ -6917,7 +6917,7 @@ LEXICON NMN_CHUEQNJ
 !! IN PENULTIMATE Â:0
 
 LEXICON N_KOONJYL !!= * @CODE@ kõõnjâl:k%^1VOWõnnjâl
-+N: NMN_KOONJYL ;
+: NMN_KOONJYL ;
 LEXICON NMN_KOONJYL !!= * @CODE@ kõõnjâl:k%^1VOWõnnjâl
 !! similar to TOLL
 ! gradation: yes
@@ -6936,7 +6936,7 @@ LEXICON NMN_KOONJYL !!= * @CODE@ kõõnjâl:k%^1VOWõnnjâl
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_VOONYS  !!= * @CODE@ võõnâs:võ%^1VOWnnâs
-+N: NMN_VOONYS ;
+: NMN_VOONYS ;
 LEXICON NMN_VOONYS  !!= * @CODE@ võõnâs:võnnâs
 !! like TOLL
 ! gradation: yes
@@ -6958,7 +6958,7 @@ LEXICON NMN_VOONYS  !!= * @CODE@ võõnâs:võnnâs
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_CHOOGXGXYS  !!= * @CODE@ čõõǥǥâs:čõ%^1VOWkkâs
-+N: NMN_CHOOGXGXYS ;
+: NMN_CHOOGXGXYS ;
 LEXICON NMN_CHOOGXGXYS  !!= * @CODE@ čõõǥǥâs:čõkkâs
 !! like KUSS
 ! gradation: yes
@@ -6980,7 +6980,7 @@ LEXICON NMN_CHOOGXGXYS  !!= * @CODE@ čõõǥǥâs:čõkkâs
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_KOODDYS !!= * @CODE@ kõõddâs:kõddâs
-+N: NMN_KOODDYS ;
+: NMN_KOODDYS ;
 LEXICON NMN_KOODDYS !!= * @CODE@ kõõddâs:kõddâs
 !! like N_PODD, N_PAPP, N_LUUBBYL
 ! gradation: yes
@@ -7000,7 +7000,7 @@ LEXICON NMN_KOODDYS !!= * @CODE@ kõõddâs:kõddâs
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_LUUBBYL !!= * @CODE@ luubbâl:lubbâl
-+N: NMN_LUUBBYL ;
+: NMN_LUUBBYL ;
 LEXICON NMN_LUUBBYL !!= * @CODE@ luubbâl:lubbâl
 !! like PODD but also PAPP, N_KOODDYS
 ! gradation: yes
@@ -7020,7 +7020,7 @@ LEXICON NMN_LUUBBYL !!= * @CODE@ luubbâl:lubbâl
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_TAALKYS !!= * @CODE@ taalkâs:talkkâs
-+N: NMN_TAALKYS ;
+: NMN_TAALKYS ;
 LEXICON NMN_TAALKYS !!= * @CODE@ taalkâs:talkkâs
 !! like PÕRTT
 ! stem: N.Sg.Gen
@@ -7041,7 +7041,7 @@ LEXICON NMN_TAALKYS !!= * @CODE@ taalkâs:talkkâs
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_PIIUTYS !!= * @CODE@ piiutâs:pihttâs
-+N: NMN_PIIUTYS ;
+: NMN_PIIUTYS ;
 LEXICON NMN_PIIUTYS !!= * @CODE@ piiutâs:pihttâs
 !! like N_VAHTT
 ! stem: N.Sg.Gen
@@ -7063,7 +7063,7 @@ LEXICON NMN_PIIUTYS !!= * @CODE@ piiutâs:pihttâs
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_KOONTYR !!= * @CODE@ koontâr:konttâr
-+N: NMN_KOONTYR ;
+: NMN_KOONTYR ;
 LEXICON NMN_KOONTYR
 !! like N_ALGG, N_TAALKYS, N_AAUTYR
 ! gradation: yes
@@ -7084,7 +7084,7 @@ LEXICON NMN_KOONTYR
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_AAUTYR !!= * @CODE@ aautâr:ahttâr
-+N: NMN_AAUTYR ;
+: NMN_AAUTYR ;
 LEXICON NMN_AAUTYR
 !! like N_ALGG, N_TAALKYS, N_AAUTYR
 ! gradation: yes
@@ -7105,7 +7105,7 @@ LEXICON NMN_AAUTYR
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_KHIIUGXYN !!= *  @CODE@ ǩiiuǥân:ǩiuggân
-+N: NMN_KHIIUGXYN ;
+: NMN_KHIIUGXYN ;
 LEXICON NMN_KHIIUGXYN !!= *  @CODE@ ǩiiuǥân:ǩiuggân
 ! gradation: yes
 ! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
@@ -7126,7 +7126,7 @@ LEXICON NMN_KHIIUGXYN !!= *  @CODE@ ǩiiuǥân:ǩiuggân
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_KHIOTKYM !!= *  @CODE@ ǩiõtkâm:ǩiõtkkâm
-+N: NMN_KHIOTKYM ;
+: NMN_KHIOTKYM ;
 LEXICON NMN_KHIOTKYM !!= *  @CODE@ ǩiõtkâm:ǩiõtkkâm
 ! gradation: yes
 !! 
@@ -7142,7 +7142,7 @@ LEXICON NMN_KHIOTKYM !!= *  @CODE@ ǩiõtkâm:ǩiõtkkâm
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_FIINYS !!= *  @CODE@ fiinâs:fijnnâs
-+N: NMN_FIINYS ;
+: NMN_FIINYS ;
 LEXICON NMN_FIINYS !!= *  @CODE@ fiinâs:fijnnâs
 ! gradation: yes
 ! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
@@ -7164,7 +7164,7 @@ LEXICON NMN_FIINYS !!= *  @CODE@ fiinâs:fijnnâs
 
 !! CLASS 4 BISYLLABIC, HIGH VOWEL, DIPHTHONG, NO PALATALIZATION
 LEXICON N_TUOVYS !!= *  @CODE@ tuõvâs:tuõvˈvâs
-+N: NMN_TUOVYS ;
+: NMN_TUOVYS ;
 LEXICON NMN_TUOVYS !!= *  @CODE@ tuõvâs:tuõvˈvâs
 ! gradation: yes  IS THIS JUST A SHORT DIPHTHONG
 ! vowel: diphthong
@@ -7183,7 +7183,7 @@ LEXICON NMN_TUOVYS !!= *  @CODE@ tuõvâs:tuõvˈvâs
 :%^RmVow A_DER/ALLASH ;
 
 !LEXICON N_KUOADHYS !!= *  @CODE@ kuåđâs:kuåđˈđâs
-!+N: NMN_KUOADHYS ;
+!: NMN_KUOADHYS ;
 !LEXICON NMN_KUOADHYS !!= *  @CODE@ kuåđâs:kuåđˈđâs
 ! gradation: yes
 ! vowel: diphthong
@@ -7202,7 +7202,7 @@ LEXICON NMN_TUOVYS !!= *  @CODE@ tuõvâs:tuõvˈvâs
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_VUONJYL !!= *  @CODE@ vuõnjâl:vuõnnjâl
-+N: NMN_VUONJYL ;
+: NMN_VUONJYL ;
 LEXICON NMN_VUONJYL !!= *  @CODE@ vuõnjâl:vuõnnjâl
 ! gradation: yes
 ! vowel: diphthong
@@ -7222,7 +7222,7 @@ LEXICON NMN_VUONJYL !!= *  @CODE@ vuõnjâl:vuõnnjâl
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_VUOIVYS !!= *  @CODE@ vuõivâs:vuõivvâs
-+N: NMN_VUOIVYS ;
+: NMN_VUOIVYS ;
 LEXICON NMN_VUOIVYS !!= *  @CODE@ vuõivâs:vuõivvâs
 ! gradation: yes
 ! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
@@ -7326,7 +7326,7 @@ LEXICON N_NAQZVAANASH-PL !!= *  @CODE@ naʹzvaanâš:naʹzvaanâš
 
 
 LEXICON N_COOGGYLM !!= * @CODE@ cõõggâlm:cõõggâlm
-+N: NMN_COOGGYLM ;
+: NMN_COOGGYLM ;
 LEXICON NMN_COOGGYLM
 ! gradation: yes
 !   Extra strong grade: Else
@@ -7348,7 +7348,7 @@ LEXICON NMN_COOGGYLM
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_SIIVALM !!= * @CODE@ siivâlm:siivâlm
-+N: NMN_SIIVALM ;
+: NMN_SIIVALM ;
 LEXICON NMN_SIIVALM
 ! vowel_length: yes
 !   Extra strong grade: Else
@@ -7370,7 +7370,7 @@ LEXICON NMN_SIIVALM
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_KAADDYSHKH !!= * @CODE@ kaaddâšǩ:kaaddâšǩ
-+N: NMN_KAADDYSHKH ;
+: NMN_KAADDYSHKH ;
 LEXICON NMN_KAADDYSHKH
 ! gradation: yes
 !   Extra strong grade: Else
@@ -7391,7 +7391,7 @@ LEXICON NMN_KAADDYSHKH
 :%^RmVow%^PALNo A_DER/ALLASH ;
 
 !LEXICON N_KHIOZZYLM !!= * @CODE@ ǩiõzzâlm:ǩiõzzâlm
-!+N: NMN_KHIOZZYLM ;
+!: NMN_KHIOZZYLM ;
 !LEXICON NMN_KHIOZZYLM
 ! gradation: No
 ! allegro: yes
@@ -7410,7 +7410,7 @@ LEXICON NMN_KAADDYSHKH
 !:%^Pen%^CC2CAllegro%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ ǩiõzlm- CHECKME
 
 LEXICON N_TOOBDYLM !!= * @CODE@ toobdâlm:toobdâlm
-+N: NMN_TOOBDYLM ;
+: NMN_TOOBDYLM ;
 LEXICON NMN_TOOBDYLM
 ! gradation: No
 ! allegro: yes
@@ -7428,7 +7428,7 @@ LEXICON NMN_TOOBDYLM
 
 
 LEXICON N_IILYSKH !!= * @CODE@ iilâsǩ:iilâsǩ
-+N: NMN_IILYSKH ;
+: NMN_IILYSKH ;
 LEXICON NMN_IILYSKH
 ! vowel_length: yes
 !   Extra strong grade: Else
@@ -7450,7 +7450,7 @@ LEXICON NMN_IILYSKH
 
 !! CLASS 4 BISYLLABIC, LOW VOWEL, MONOPHTHONG, NO PALATALIZATION
 LEXICON N_CEERKAV !!= * @CODE@ ceerkav:cẹẹrkav
-+N: NMN_CEERKAV ;
+: NMN_CEERKAV ;
 LEXICON NMN_CEERKAV !!= * @CODE@ ceerkav:cẹẹrkav
 ! gradation: yes
 ! "1.2"
@@ -7466,7 +7466,7 @@ LEXICON NMN_CEERKAV !!= * @CODE@ ceerkav:cẹẹrkav
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_SOAOABBAR !!= * @CODE@ sååbbar:s%^1VOWåbbar
-+N: NMN_SOAOABBAR ;
+: NMN_SOAOABBAR ;
 LEXICON NMN_SOAOABBAR !!= * @CODE@ sååbbar:s%^1VOWåbbar
 ! gradation: yes
 !! N_GEN2X3-NOM2X1
@@ -7483,7 +7483,7 @@ LEXICON NMN_SOAOABBAR !!= * @CODE@ sååbbar:s%^1VOWåbbar
 
 LEXICON N_KOAOADDAS !!= * @CODE@ kååddas:kå%^1VOWddas
 !! N_LBVVCC_as
-+N: NMN_KOAOADDAS ;
+: NMN_KOAOADDAS ;
 LEXICON NMN_KOAOADDAS !!= * @CODE@ kååddas:kåddas
 ! gradation: yes
 !! N_GEN2X3-NOM2X1
@@ -7500,7 +7500,7 @@ LEXICON NMN_KOAOADDAS !!= * @CODE@ kååddas:kåddas
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_KOALVAK !!= * @CODE@ kåålvak:kåålvak
-+N: NMN_KOALVAK ;
+: NMN_KOALVAK ;
 LEXICON NMN_KOALVAK !!= * @CODE@ kåålvak:kåålvak
 ! 1.2.1.3.1.2.2.1.
 ! gradation: yes
@@ -7525,7 +7525,7 @@ LEXICON NMN_KOALVAK !!= * @CODE@ kåålvak:kåålvak
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_AACCIKH !!= * @CODE@ pååttaǩ:pååttaǩ
-+N: NMN_AACCIKH ;
+: NMN_AACCIKH ;
 LEXICON NMN_AACCIKH !!= * @CODE@ pååttaǩ:pååttaǩ
 ! 1.2.1.3.1.2.2.2.
 ! gradation: yes
@@ -7550,7 +7550,7 @@ LEXICON NMN_AACCIKH !!= * @CODE@ pååttaǩ:pååttaǩ
 :%^RmVow%^PALNo A_DER/ALLASH ;
 
 LEXICON N_AANAR
-+N: NMN_AANAR ;
+: NMN_AANAR ;
 LEXICON NMN_AANAR
 ! gradation: no
 ! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
@@ -7569,7 +7569,7 @@ LEXICON NMN_AANAR
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_CHIOPYRJ !!= * @CODE@ čiõpârj:čiõpâr
-+N: NMN_CHIOPYRJ ;
+: NMN_CHIOPYRJ ;
 LEXICON NMN_CHIOPYRJ
 ! gradation: no
 ! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
@@ -7589,7 +7589,7 @@ LEXICON NMN_CHIOPYRJ
 
 LEXICON N_KOAOAVAS !!= * @CODE@ kååvas:kå%^1VOWvvas
 !! N_LBVVC_as
-+N: NMN_KOAOAVAS ;
+: NMN_KOAOAVAS ;
 LEXICON NMN_KOAOAVAS !!= * @CODE@ kååvas:kåvvas
 ! 3.e.mono.gem
 ! gradation: yes
@@ -7610,7 +7610,7 @@ LEXICON NMN_KOAOAVAS !!= * @CODE@ kååvas:kåvvas
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_PAEAELKAS !!= * @CODE@ päälkas:pälkkas
-+N: NMN_PAEAELKAS ;
+: NMN_PAEAELKAS ;
 LEXICON NMN_PAEAELKAS !!= * @CODE@ päälkas:pälkkas
 ! 3.e.mono.gem
 ! gradation: yes
@@ -7632,7 +7632,7 @@ LEXICON NMN_PAEAELKAS !!= * @CODE@ päälkas:pälkkas
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_MUYLAS !!= * @CODE@ muâlas:muâlˈlas
-+N: NMN_MUYLAS ;
+: NMN_MUYLAS ;
 LEXICON NMN_MUYLAS !!= * @CODE@ muâlas:muâlˈlas
 ! 3.e.mono.gem
 ! gradation: yes
@@ -7654,7 +7654,7 @@ LEXICON NMN_MUYLAS !!= * @CODE@ muâlas:muâlˈlas
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_VEEVAR !!= * @CODE@ veevar:vẹvvar
-+N: NMN_VEEVAR ;
+: NMN_VEEVAR ;
 LEXICON NMN_VEEVAR !!= * @CODE@ veevar:vẹvvar
 ! 3.e.mono.gem
 ! gradation: yes
@@ -7675,7 +7675,7 @@ LEXICON NMN_VEEVAR !!= * @CODE@ veevar:vẹvvar
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_VEEIVAR !!= * @CODE@ veeivar:vẹ%^1VOWivvar
-+N: NMN_VEEIVAR ;
+: NMN_VEEIVAR ;
 LEXICON NMN_VEEIVAR !!= * @CODE@ veeivar:vẹ%^1VOWivvar
 ! 3.e.mono.gem
 ! gradation: yes
@@ -7698,7 +7698,7 @@ LEXICON NMN_VEEIVAR !!= * @CODE@ veeivar:vẹ%^1VOWivvar
 
 !LEXICON N_SLOOHMAN
 !! gradation: no
-!+N: NMN_SLOOHMAN ;
+!: NMN_SLOOHMAN ;
 !+N: R ;	! sloohman
 
 !LEXICON NMN_SLOOHMAN
@@ -7720,7 +7720,7 @@ LEXICON NMN_VEEIVAR !!= * @CODE@ veeivar:vẹ%^1VOWivvar
 !:%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
 
 LEXICON N_KOAOADDARV !!= * @CODE@ kååddarv:kååddarv
-+N: NMN_KOAOADDARV ;
+: NMN_KOAOADDARV ;
 LEXICON NMN_KOAOADDARV
 ! gradation: yes
 !   Extra strong grade: Else
@@ -7744,7 +7744,7 @@ LEXICON NMN_KOAOADDARV
 !! IN PENULTIMATE A:0
 
 LEXICON N_KHEYLGXAL !!= * @CODE@ ǩeâlǥal:ǩeâlggal
-+N: NMN_KHEYLGXAL ;
+: NMN_KHEYLGXAL ;
 LEXICON NMN_KHEYLGXAL !!= * @CODE@ ǩeâlǥal:ǩeâlggal
 ! gradation: yes
 ! "1.2"
@@ -7761,7 +7761,7 @@ LEXICON NMN_KHEYLGXAL !!= * @CODE@ ǩeâlǥal:ǩeâlggal
 
 LEXICON N_KUAEIVAS !!= * @CODE@ kuäivas:kuäivvas
 !! N_LBVWXY_as
-+N: NMN_KUAEIVAS ;
+: NMN_KUAEIVAS ;
 LEXICON NMN_KUAEIVAS !!= * @CODE@ kuäivas:kuäivvas
 ! 3.e.diphth.gem
 ! gradation: yes
@@ -7785,7 +7785,7 @@ LEXICON NMN_KUAEIVAS !!= * @CODE@ kuäivas:kuäivvas
 
 LEXICON N_JUYGXGXAS !!= * @CODE@ juâǥǥas:juâkˈkas
 ! gradation: no
-+N: NMN_JUYGXGXAS ;
+: NMN_JUYGXGXAS ;
 LEXICON NMN_JUYGXGXAS
 !! !!2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 252)
 !! !!2.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
@@ -7807,7 +7807,7 @@ LEXICON NMN_JUYGXGXAS
 
 LEXICON N_HEAVASH !!= * @CODE@ heävaš:heäpˈpaš
 ! gradation: yes
-+N: NMN_HEAVASH ;
+: NMN_HEAVASH ;
 LEXICON NMN_HEAVASH
 !! * Yaml: __N-heavash__
 :%^RmVow%> PL-OBL ;
@@ -7823,7 +7823,7 @@ LEXICON NMN_HEAVASH
 
 LEXICON N_KUAELLAS !!= * @CODE@ kuällas:kuälˈlas
 ! gradation: yes
-+N: NMN_KUAELLAS ;
+: NMN_KUAELLAS ;
 LEXICON NMN_KUAELLAS
 !! * Yaml: __N-heavash__
 :%^RmVow%> PL-OBL ;
@@ -7839,7 +7839,7 @@ LEXICON NMN_KUAELLAS
 
 !! CLASS 4 BISYLLABIC, LOW VOWEL, MONOPHTHONG, PALATALIZATION
 LEXICON N_VEEQREST !!= * @CODE@ veeʹrest:veeʹrest
-+N: NMN_VEEQREST ;
+: NMN_VEEQREST ;
 LEXICON NMN_VEEQREST !!= * @CODE@ veeʹrest:veeʹrest
 ! ve%{e0%}ʹr%{e0%}st
 ! V%{V0%}ʹC%{e0%}XY
@@ -7869,7 +7869,7 @@ LEXICON NMN_VEEQREST !!= * @CODE@ veeʹrest:veeʹrest
 
 
 LEXICON N_AAQRESHM !!= * @CODE@ ääʹrešm:ääʹrešm
-+N: NMN_AAQRESHM ;
+: NMN_AAQRESHM ;
 LEXICON NMN_AAQRESHM !!= * @CODE@ ääʹrešm:ääʹrešm
 ! ä%{ä0%}ʹr%{e0%}šm
 ! V%{V0%}ʹC%{e0%}XY
@@ -7897,7 +7897,7 @@ LEXICON NMN_AAQRESHM !!= * @CODE@ ääʹrešm:ääʹrešm
 :%^Pen%^VV2V%^RmVow A_DER/ALLASH ;
 
 LEXICON N_SAAQVESKH !!= * @CODE@ sääʹvesǩ:sääʹvesǩ
-+N: NMN_SAAQVESKH ;
+: NMN_SAAQVESKH ;
 LEXICON NMN_SAAQVESKH
 ! gradation: yes
 !    Penultimate: Yes
@@ -7926,7 +7926,7 @@ LEXICON NMN_SAAQVESKH
 
 
 LEXICON N_KUEQDDELM !!= * @CODE@ kueʹddelm:kueʹddelm
-+N: NMN_KUEQDDELM ;
+: NMN_KUEQDDELM ;
 LEXICON NMN_KUEQDDELM !!= * @CODE@ kueʹddelm:kueʹddelm
 ! gradation: yes
 !    Penultimate: Yes
@@ -7952,7 +7952,7 @@ LEXICON NMN_KUEQDDELM !!= * @CODE@ kueʹddelm:kueʹddelm
 
 
 LEXICON N_STROOIQTEL !!= * @CODE@ strooiʹtel:stro%^1VOWiʹttel
-+N: NMN_STROOIQTEL ; !strooiʹtel (stroiʹttel, stroiʹttla)
+: NMN_STROOIQTEL ; !strooiʹtel (stroiʹttel, stroiʹttla)
 LEXICON NMN_STROOIQTEL
 ! gradation: yes
 !    Penultimate: Yes
@@ -7976,7 +7976,7 @@ LEXICON NMN_STROOIQTEL
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_CHEEUQRES !!= * @CODE@ čeeuʹres:če%^1VOWurres
-+N: NMN_CHEEUQRES ;
+: NMN_CHEEUQRES ;
 LEXICON NMN_CHEEUQRES !!= * @CODE@ čeeuʹres:če%^1VOWurres
 ! gradation: yes
 !    Penultimate: Yes
@@ -8001,7 +8001,7 @@ LEXICON NMN_CHEEUQRES !!= * @CODE@ čeeuʹres:če%^1VOWurres
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_POAOAUQTES !!= * @CODE@ pååuʹtes:på%^1VOWhttes
-+N: NMN_POAOAUQTES ;
+: NMN_POAOAUQTES ;
 LEXICON NMN_POAOAUQTES !!= * @CODE@ pååuʹtes:på%^1VOWhttes
 ! gradation: yes
 !    Penultimate: Yes
@@ -8018,7 +8018,7 @@ LEXICON NMN_POAOAUQTES !!= * @CODE@ pååuʹtes:på%^1VOWhttes
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_SEEUQTER !!= * @CODE@ seeuʹter:seähtter
-+N: NMN_SEEUQTER ;
+: NMN_SEEUQTER ;
 LEXICON NMN_SEEUQTER !!= * @CODE@ seeuʹter:seähtter
 ! gradation: yes
 !    Penultimate: Yes
@@ -8041,7 +8041,7 @@ LEXICON NMN_SEEUQTER !!= * @CODE@ seeuʹter:seähtter
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_JEEQEL !!= * @CODE@ jeeʹel:jeäkˈkel
-+N: NMN_JEEQEL ;
+: NMN_JEEQEL ;
 LEXICON NMN_JEEQEL !!= * @CODE@ jeeʹel:jeäkˈkel
 ! gradation: yes
 !    Penultimate: Yes
@@ -8065,7 +8065,7 @@ LEXICON NMN_JEEQEL !!= * @CODE@ jeeʹel:jeäkˈkel
 :%^Pen%^PALE%^Pen%^PAL%^Pen%^KKK2GG%^RmVow A_DER/ALLASH ;
 
 LEXICON N_NYYQER !!= * @CODE@ nââʹer:n%^1VOWâkker
-+N: NMN_NYYQER ;
+: NMN_NYYQER ;
 LEXICON NMN_NYYQER !!= * @CODE@ nââʹer:n%^1VOWâkker
 ! gradation: yes
 !    Penultimate: Yes
@@ -8089,14 +8089,14 @@ LEXICON NMN_NYYQER !!= * @CODE@ nââʹer:n%^1VOWâkker
 
 !! !!s:z-stem type
 LEXICON N_NUQKHKHESH
-+N: NMN_MAINSTUMMUSH ;
+: NMN_MAINSTUMMUSH ;
 
 LEXICON N_MAINSTUMMUSH
 +N+Err/Orth+Use/NG:%^Pen%^CC2C SG-NOM ;
 +N+Err/Orth+Use/NG:%^Pen%^CC2C%>â ESS/PAR ;
 +N+Err/Orth+Use/NG:%^Pen%^CC2C NMN_OBL-SAJOS ; ! checkme
 !%^V2VV%^KK2GG
-+N: NMN_MAINSTUMMUSH ;
+: NMN_MAINSTUMMUSH ;
 
 LEXICON NMN_MAINSTUMMUSH
 !! * Yaml: __kerres __
@@ -8116,7 +8116,7 @@ LEXICON NMN_MAINSTUMMUSH
 !! IN PENULTIMATE E:0
 
 LEXICON N_CYYQ33EL !!= * @CODE@ cääʹʒʒel:cä%^1VOWʒʒel
-+N: NMN_CYYQ33EL ;
+: NMN_CYYQ33EL ;
 LEXICON NMN_CYYQ33EL !!= * @CODE@ kääʹlles:källes
 ! 3.e.diphth.gem
 ! gradation: yes
@@ -8137,7 +8137,7 @@ LEXICON NMN_CYYQ33EL !!= * @CODE@ kääʹlles:källes
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_KAAQLLES !!= * @CODE@ kääʹlles:kä%^1VOW%{ʹØ%}lles
-+N: NMN_KAAQLLES ;
+: NMN_KAAQLLES ;
 LEXICON NMN_KAAQLLES !!= * @CODE@ kääʹlles:källes
 ! 3.e.diphth.gem
 ! gradation: yes
@@ -8158,7 +8158,7 @@ LEXICON NMN_KAAQLLES !!= * @CODE@ kääʹlles:källes
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_OAQVES !!= * @CODE@ ååʹves:å%^1VOW%{ʹØ%}vves
-+N: NMN_OAQVES ;
+: NMN_OAQVES ;
 LEXICON NMN_OAQVES !!= * @CODE@ ååʹves:å%^1VOWvves
 ! 3.e.diphth.gem
 ! gradation: yes
@@ -8179,7 +8179,7 @@ LEXICON NMN_OAQVES !!= * @CODE@ ååʹves:å%^1VOWvves
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_KAAQRBES !!= * @CODE@ kääʹrbes:kärbbes
-+N: NMN_KAAQRBES ;
+: NMN_KAAQRBES ;
 LEXICON NMN_KAAQRBES !!= * @CODE@ kääʹrbes:kärbbes
 ! 3.e.diphth.gem
 ! gradation: yes
@@ -8201,7 +8201,7 @@ LEXICON NMN_KAAQRBES !!= * @CODE@ kääʹrbes:kärbbes
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_PUAQRES !!= * @CODE@ puäʹres:puärˈres
-+N: NMN_PUAQRES ;
+: NMN_PUAQRES ;
 LEXICON NMN_PUAQRES !!= * @CODE@ puäʹres:puärˈres
 ! 3.e.diphth.gem
 ! gradation: yes
@@ -8222,7 +8222,7 @@ LEXICON NMN_PUAQRES !!= * @CODE@ puäʹres:puärˈres
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_PUAQRES-PL !!= * @CODE@ puäʹres:puärˈres
-+N: NMN_PUAQRES-PL ;
+: NMN_PUAQRES-PL ;
 LEXICON NMN_PUAQRES-PL !!= * @CODE@ puäʹres:puärˈres
 :%^Pen%^PAL%^Pen%^CCC2C R ;	! puäʹres
 :%^PenVow2a%^VC PL-NOM ;	 		! puärˈraz
@@ -8233,7 +8233,7 @@ LEXICON NMN_PUAQRES-PL !!= * @CODE@ puäʹres:puärˈres
 
 LEXICON N_PEAEQLES !!= * @CODE@ peäʹles:peälˈles
 ! peä%{ʹØ%}l%{ˈØ%}%{lØ%}%{eaØ%}%{sz%}
-+N: NMN_PEAEQLES ;
+: NMN_PEAEQLES ;
 LEXICON NMN_PEAEQLES !!= * @CODE@ peäʹles:peälˈles
 ! 3.e.diphth.gem
 ! gradation: yes
@@ -8255,7 +8255,7 @@ LEXICON NMN_PEAEQLES !!= * @CODE@ peäʹles:peälˈles
 
 LEXICON N_PUUQTTES !!= * @CODE@ puuʹttes:pu%^1VOWtt
 ! p%{uo%}%{uØ%}%{ʹØ%}tt%{eaØ%}%{sz%}
-+N: NMN_PUUQTTES ;
+: NMN_PUUQTTES ;
 LEXICON NMN_PUUQTTES !!= * @CODE@ puuʹttes:pu%^1VOWtt
 ! 3.e.monophth.gem
 ! gradation: yes
@@ -8277,7 +8277,7 @@ LEXICON NMN_PUUQTTES !!= * @CODE@ puuʹttes:pu%^1VOWtt
 
 !! !!-stems
 LEXICON N_NJUAEQMMEL !!= * @CODE@ = stemtype l-stem njuäʹmmel:njuäʹmˈmel
-+N: NMN_NJUAEQMMEL ;
+: NMN_NJUAEQMMEL ;
 LEXICON NMN_NJUAEQMMEL !!= * @CODE@ = stemtype l-stem njuäʹmmel:njuäʹmˈmel
 !! * Yaml: __njuammel, njuunnjel, aappal__ 
 : SG-NOM ;
@@ -8291,7 +8291,7 @@ LEXICON NMN_NJUAEQMMEL !!= * @CODE@ = stemtype l-stem njuäʹmmel:njuäʹmˈmel
 
 
 LEXICON N_CIEAQKHKHES !!= * @CODE@ cieʹǩǩes:ciâkˈkes
-+N: NMN_CIEAQKHKHES ;
+: NMN_CIEAQKHKHES ;
 LEXICON NMN_CIEAQKHKHES
 ! cieʹǩǩes:ciâkˈkes CHECKME 2016-04-22
 ! gradation: yes
@@ -8315,7 +8315,7 @@ LEXICON NMN_CIEAQKHKHES
 :%^Pen%^VOWLower%^RmVow A_DER/ALLASH ;
 
 LEXICON N_CHUEQDHES !!= * @CODE@ čueʹđes:čuâttes
-+N: NMN_CHUEQDHES ;
+: NMN_CHUEQDHES ;
 LEXICON NMN_CHUEQDHES !!= * @CODE@ čueʹđes:čuâttes
 ! 3.e.diphth.gem
 ! gradation: yes
@@ -8337,7 +8337,7 @@ LEXICON NMN_CHUEQDHES !!= * @CODE@ čueʹđes:čuâttes
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_KHEEQLES !!= * @CODE@ ǩeeʹles:ǩeâlˈles
-+N: NMN_KHEEQLES ;
+: NMN_KHEEQLES ;
 LEXICON NMN_KHEEQLES !!= * @CODE@ ǩeeʹles:ǩeâlˈles
 ! 3.e.diphth.gem
 ! gradation: yes
@@ -8359,7 +8359,7 @@ LEXICON NMN_KHEEQLES !!= * @CODE@ ǩeeʹles:ǩeâlˈles
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_VUAQPPPES !!= * @CODE@ vueʹppes:vuäpˈpes
-+N: NMN_VUAQPPPES ;
+: NMN_VUAQPPPES ;
 LEXICON NMN_VUAQPPPES !!= * @CODE@ vueʹppes:vuäpˈpes
 ! 3.e.diphth.gem
 ! gradation: no
@@ -8380,7 +8380,7 @@ LEXICON NMN_VUAQPPPES !!= * @CODE@ vueʹppes:vuäpˈpes
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_KHEEQSTES !!= * @CODE@ ǩeeʹstes:ǩeâsttes
-+N: NMN_KHEEQSTES ;
+: NMN_KHEEQSTES ;
 LEXICON NMN_KHEEQSTES !!= * @CODE@ ǩeeʹstes:ǩeâsttes
 ! 3.e.diphth.gem
 ! gradation: yes
@@ -8402,7 +8402,7 @@ LEXICON NMN_KHEEQSTES !!= * @CODE@ ǩeeʹstes:ǩeâsttes
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_VIEQLPES !!= * @CODE@ vieʹlpes:ǩeâlppes
-+N: NMN_VIEQLPES ;
+: NMN_VIEQLPES ;
 LEXICON NMN_VIEQLPES !!= * @CODE@ vieʹlpes:ǩeâlppes
 ! 3.e.diphth.gem
 ! gradation: yes
@@ -8424,7 +8424,7 @@ LEXICON NMN_VIEQLPES !!= * @CODE@ vieʹlpes:ǩeâlppes
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_PUEAQRDES !!= * @CODE@ čueʹcǩes:čuäckkes
-+N: NMN_PUEAQRDES ;
+: NMN_PUEAQRDES ;
 LEXICON NMN_PUEAQRDES !!= * @CODE@ čueʹcǩes:čuäckkes
 ! 3.e.diphth.cluster
 ! gradation: yes
@@ -8446,7 +8446,7 @@ LEXICON NMN_PUEAQRDES !!= * @CODE@ čueʹcǩes:čuäckkes
 :%^RmVow A_DER/ALLASH ;
 
 LEXICON N_VUEAEQDDES !!= * @CODE@ vuẹʹddes:vuädˈdes
-+N: NMN_VUEAEQDDES ;
+: NMN_VUEAEQDDES ;
 LEXICON NMN_VUEAEQDDES !!= * @CODE@ vuẹʹddes:vuädˈdes
 ! 3.e.diphth.gem
 ! gradation: yes
@@ -8469,7 +8469,7 @@ LEXICON NMN_VUEAEQDDES !!= * @CODE@ vuẹʹddes:vuädˈdes
 
 
 LEXICON N_SAQPPLI !!= * @CODE@ säʹppli:säʹppl
-+N: NMN_SAQPPLI ;
+: NMN_SAQPPLI ;
 LEXICON NMN_SAQPPLI
 ! gradation: no
 !! * Yaml: __A-saeppli__
@@ -8484,7 +8484,7 @@ LEXICON NMN_SAQPPLI
 +Der+Der/Dimin: NMN_SAQPPLEEJAZH ;
 
 LEXICON N_SAQPPLEEJAZH !!= * @CODE@ säʹppleejaž:säʹppl
-+N: NMN_SAQPPLEEJAZH ;
+: NMN_SAQPPLEEJAZH ;
 LEXICON NMN_SAQPPLEEJAZH
 ! gradation: no
 !! * Yaml: __A-saeppli__
@@ -8516,7 +8516,7 @@ LEXICON NMN_CHUYGXGXAS
 
 
 LEXICON N_SEQTT !!= * @CODE@ seʹtt:sett
-+N: NMN_SEQTT ;
+: NMN_SEQTT ;
 LEXICON NMN_SEQTT
 ! gradation: yes
 ! stem_vowel-in-Sg_Loc: est
@@ -8534,7 +8534,7 @@ LEXICON NMN_SEQTT
 
 
 LEXICON N_LOAQDD !!= * @CODE@ låʹdd:lå%^1VOWdd
-+N: NMN_LOAQDD ;
+: NMN_LOAQDD ;
 LEXICON NMN_LOAQDD
 ! gradation: yes
 !! is for nouns with ''-est'' +Loc, 
@@ -8570,7 +8570,7 @@ LEXICON N_LOAQDD-PL !!= * @CODE@ lååʹdd:lådd
 
 
 !LEXICON N_PEAQSSS !!= * @CODE@ peäʹss:peäsˈs
-!+N: NMN_PEAQSSS ;
+!: NMN_PEAQSSS ;
 !LEXICON NMN_PEAQSSS
 ! gradation: yes
 !! Nouns with -est Loc and -a Ill without ʹ
@@ -8588,7 +8588,7 @@ LEXICON N_LOAQDD-PL !!= * @CODE@ lååʹdd:lådd
 
 
 LEXICON N_MIEAQRR !!= * @CODE@ mieʹrr:meärr
-+N: NMN_MIEAQRR ;
+: NMN_MIEAQRR ;
 LEXICON NMN_MIEAQRR
 ! gradation: yes
 !! Nouns with -est Loc and -a Ill without ʹ
@@ -8609,7 +8609,7 @@ LEXICON N_MIEAQRR-PL !!= * @CODE@ meäʹr:meä%{ʹØ%}rr
 
 
 LEXICON N_MIEQLKHKH !!= * @CODE@ mieʹlǩǩ:meâlkk
-+N: NMN_MIEQLKHKH ;
+: NMN_MIEQLKHKH ;
 LEXICON NMN_MIEQLKHKH !!= * @CODE@ mieʹlǩǩ:meâlkk
 ! gradation: yes
 !! __@CODE@__ Nouns with -est Loc and -a Ill without ʹ
@@ -8631,7 +8631,7 @@ LEXICON NMN_MIEQLKHKH !!= * @CODE@ mieʹlǩǩ:meâlkk
 
 
 LEXICON N_PAARHOAQD !!= * @CODE@ päärhåʹd:päärhå%^1VOWd
-+N: NMN_PAARHOAQD ;
+: NMN_PAARHOAQD ;
 LEXICON NMN_PAARHOAQD !!= * @CODE@ päärhåʹd:päärhå%^1VOWd
 ! gradation: yes
 !! __@CODE@__ Nouns with -est Loc and -a Ill without ʹ
@@ -8651,7 +8651,7 @@ LEXICON NMN_PAARHOAQD !!= * @CODE@ päärhåʹd:päärhå%^1VOWd
 
 
 LEXICON N_CHIISTI !!= * @CODE@ čiisti:čiistti
-+N: NMN_CHIISTI ;
+: NMN_CHIISTI ;
 LEXICON NMN_CHIISTI !!= * @CODE@ čiisti:čiistti
 ! gradation: yes
 ! is for nouns with ''-est'' +Loc
@@ -8720,7 +8720,7 @@ LEXICON N_SAJOS-PL
 
 
 LEXICON N_MILJONAAQR !!= * @CODE@ = stemtype miljonääʹr:miljonäär
-+N: NMN_MILJONAAQR ;
+: NMN_MILJONAAQR ;
 LEXICON NMN_MILJONAAQR !!= * @CODE@ = stemtype
 ! gradation: yes
 !! * Yaml: __N-miljonaeaer__
@@ -8766,7 +8766,7 @@ LEXICON NMN_MILJONAAQR !!= * @CODE@ = stemtype
 
 !! PENULTIMATE O:0
 LEXICON N_MOOTTOR !!= * @CODE@ moottor:moottor
-+N: NMN_MOOTTOR ;
+: NMN_MOOTTOR ;
 LEXICON NMN_MOOTTOR !!= * @CODE@ moottor:moottor
 ! gradation: no
 ! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
@@ -8786,7 +8786,7 @@ LEXICON NMN_MOOTTOR !!= * @CODE@ moottor:moottor
 
 !! VOWEL-FINAL STEMS
 LEXICON N_BIOLOGIA
-+N: NMN_BIOLOGIA ;
+: NMN_BIOLOGIA ;
 LEXICON NMN_BIOLOGIA
 ! biologia:biologia
 !! * Yaml: __N-biologia__
@@ -8802,7 +8802,7 @@ LEXICON NMN_BIOLOGIA
 : A_DER/LAZH ;
 
 LEXICON N_BUKVA
-+N: NMN_BUKVA ;
+: NMN_BUKVA ;
 LEXICON NMN_BUKVA
 ! bukva:bukva
 !! * Yaml: __N-bukva__
@@ -8820,7 +8820,7 @@ LEXICON NMN_BUKVA
 
 
 !LEXICON N_MERJA
-!+N: NMN_MERJA ;
+!: NMN_MERJA ;
 LEXICON NMN_MERJA
 ! merja:merja
 !! * Yaml: __N-merja__
@@ -8837,7 +8837,7 @@ LEXICON NMN_MERJA
  VOWEL-FINAL-STEM-PX ;
 
 LEXICON N_TRUUBA
-+N: NMN_TRUUBA ;
+: NMN_TRUUBA ;
 LEXICON NMN_TRUUBA
 ! truuba:truuba
 !! * Yaml: __N-truuba__
@@ -8853,7 +8853,7 @@ LEXICON NMN_TRUUBA
  VOWEL-FINAL-STEM-PX ;
 
 !LEXICON N_TERHI
-!+N: NMN_TERHI ;
+!: NMN_TERHI ;
 LEXICON NMN_TERHI
 ! terhi:terhi
 !! * Yaml: __Prop-terhi__
@@ -8869,7 +8869,7 @@ LEXICON NMN_TERHI
  VOWEL-FINAL-STEM-PX ;
 
 !LEXICON N_JOUSTE
-!+N: NMN_JOUSTE ;
+!: NMN_JOUSTE ;
 LEXICON NMN_JOUSTE
 ! jouste:jouste
 !! * Yaml: __Prop-jouste__
@@ -8885,7 +8885,7 @@ LEXICON NMN_JOUSTE
  VOWEL-FINAL-STEM-PX ;
 
 LEXICON N_RADIO !!= * @CODE@ radio:radio
-+N: NMN_RADIO ;
+: NMN_RADIO ;
 LEXICON NMN_RADIO
 !! * Yaml: __N-radio__
  SG-NOM ;	    !!= * @CODE@ (TSA-1) +Sg+Nom:
@@ -8901,7 +8901,7 @@ LEXICON NMN_RADIO
  VOWEL-FINAL-STEM-PX ;
 
 !LEXICON N_OULU !!= * @CODE@ oulu:oulu
-!+N: NMN_OULU ;
+!: NMN_OULU ;
 LEXICON NMN_OULU
 !! * Yaml: __N-oulu__
  SG-NOM ;	    !!= * @CODE@ (TSA-1) +Sg+Nom:
@@ -8917,7 +8917,7 @@ LEXICON NMN_OULU
  VOWEL-FINAL-STEM-PX ;
 
 LEXICON N_CHEE !!= * @CODE@ čee:čẹẹ
-+N: NMN_CHEE ;
+: NMN_CHEE ;
 LEXICON NMN_CHEE
 !! * Yaml: __N-chee__
 : SG-NOM ;	    !!= * @CODE@ 
@@ -8932,7 +8932,7 @@ LEXICON NMN_CHEE
 !FIX-DIM
 
 !LEXICON N_HYPOTEEQS !!= * @CODE@ hypoteeʹs:hypotẹẹs
-!+N: NMN_HYPOTEEQS ;
+!: NMN_HYPOTEEQS ;
 !LEXICON NMN_HYPOTEEQS
 !! * Yaml: __N-hypotees__
 !:%^PAL SG-NOM ;	    !!= * @CODE@  +Sg+Nom:
@@ -8946,7 +8946,7 @@ LEXICON NMN_CHEE
 !FIX-DIM
 
 LEXICON N_ENERGII !!= * @CODE@ energii:energi
-+N: NMN_ENERGII ;
+: NMN_ENERGII ;
 LEXICON NMN_ENERGII
 !! * Yaml: __N-energii__
 !! THIS NEEDS CHECKING
@@ -8983,7 +8983,7 @@ LEXICON NMN_ENERGII
 !+N+Pl+Abe:%>itää K ;
 
 LEXICON N_NALLSHEM !!= * @CODE@ čââʹlmteʹm:čââʹlmtẹ%^1VOWm
-+N: NMN_NALLSHEM ;
+: NMN_NALLSHEM ;
 LEXICON NMN_NALLSHEM
 !! 292-295
 !! * Yaml: __A-chaalmtem__
@@ -9010,7 +9010,7 @@ LEXICON NMN_NALLSHEM
 
 
 LEXICON N_HOQZJEQN !!= * @CODE@ čââʹlmteʹm:čââʹlmtẹ%^1VOWm
-+N: NMN_HOQZJEQN ;
+: NMN_HOQZJEQN ;
 LEXICON NMN_HOQZJEQN
 !! 292-295
 !! * Yaml: __A-chaalmtem__
@@ -9039,7 +9039,7 @@ LEXICON NMN_HOQZJEQN
 
 !! ''These are still not fixed.''
 LEXICON N_TUEJJEEJA !!= * @CODE@ tuejjeeja:tuejjẹẹja
-+N: NMN_TUEJJEEJA ;
+: NMN_TUEJJEEJA ;
 LEXICON NMN_TUEJJEEJA !!= * @CODE@ tuejjeeja:tuejjẹẹja
 !! tuejjeeja:tuejjẹẹja
 !! * Yaml: __N-tuejjeeja__
@@ -9054,7 +9054,7 @@ LEXICON NMN_TUEJJEEJA !!= * @CODE@ tuejjeeja:tuejjẹẹja
 
 
 LEXICON N_PRSPRC-EEI !!= * @CODE@ tuõđšteei:tueʹjjee
-+N: NMN_PRSPRC-EEI ;
+: NMN_PRSPRC-EEI ;
 LEXICON NMN_PRSPRC-EEI !!= * @CODE@ tuõđšteei:tueʹjjee
 !! tuõđšteei:tueʹjjee
 !! * Yaml: __N-tuodhshteei__
@@ -9074,7 +9074,7 @@ LEXICON NMN_PRSPRC-EEI !!= * @CODE@ tuõđšteei:tueʹjjee
 +Der+Der/Dimin:%>%{ʼØ%}j N_KUYLAZH ;
 
 LEXICON N_PRSPRC-EEQJJ !!= * @CODE@ tuõđšteei:tueʹjjee
-+N: NMN_PRSPRC-EEQJJ ;
+: NMN_PRSPRC-EEQJJ ;
 LEXICON NMN_PRSPRC-EEQJJ !!= * @CODE@ tuõđšteei:tueʹjjee
 !! tuõđšteeʹjj:tuõđštẹẹ
 !! * Yaml: __N-tuodhshteeqjj__
@@ -9098,7 +9098,7 @@ LEXICON NMN_PRSPRC-EEQJJ !!= * @CODE@ tuõđšteei:tueʹjjee
 !! !!k-stems
 
 LEXICON N_SAJOS
-+N: NMN_SAJOS ;
+: NMN_SAJOS ;
 LEXICON NMN_SAJOS
 ! gradation: yes
 !! stemtype 
@@ -9112,7 +9112,7 @@ LEXICON NMN_SAJOS
 !! Class 6 according to Feist 153-154
 !! PRESENT PARTICIPLES
 LEXICON N_PRSPRC-VCC-I !!= * @CODE@ cõggi:cõggi
-+N: NMN_PRSPRC-VCC-I ;
+: NMN_PRSPRC-VCC-I ;
 LEXICON NMN_PRSPRC-VCC-I !!= * @CODE@ cõggi:cõggi
 ! gradation: yes
 ! is for nouns with ''-est'' +Loc
@@ -9157,7 +9157,7 @@ LEXICON NOM-AG_YD_NO-PL-NOM
 
 
 LEXICON N_PRSPRC-VVCC-I !!= * @CODE@ jõõvvi:jõõvvi
-+N: NMN_PRSPRC-VVCC-I ;
+: NMN_PRSPRC-VVCC-I ;
 LEXICON NMN_PRSPRC-VVCC-I !!= * @CODE@ jõõvvi:jõõvvi
 ! gradation: yes
 ! is for nouns with ''-est'' +Loc
@@ -9179,7 +9179,7 @@ LEXICON NMN_PRSPRC-VVCC-I !!= * @CODE@ jõõvvi:jõõvvi
 :%^I2J VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_PRSPRC-VVKK-I !!= * @CODE@ lookki:lookki
-+N: NMN_PRSPRC-VVKK-I ;
+: NMN_PRSPRC-VVKK-I ;
 LEXICON NMN_PRSPRC-VVKK-I !!= * @CODE@ lookki:lookki
 ! gradation: yes
 ! is for nouns with ''-est'' +Loc
@@ -9202,7 +9202,7 @@ LEXICON NMN_PRSPRC-VVKK-I !!= * @CODE@ lookki:lookki
 
 
 LEXICON N_PRSPRC-VWKK-I !!= * @CODE@ ǩiõssi:ǩiõssi
-+N: NMN_PRSPRC-VWKK-I ;
+: NMN_PRSPRC-VWKK-I ;
 LEXICON NMN_PRSPRC-VWKK-I !!= * @CODE@ ǩiõssi:ǩiõssi
 ! gradation: yes
 ! is for nouns with ''-est'' +Loc
@@ -9224,7 +9224,7 @@ LEXICON NMN_PRSPRC-VWKK-I !!= * @CODE@ ǩiõssi:ǩiõssi
 :%^I2J VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_PRSPRC-VWCC-I !!= * @CODE@ vuõlli:vuõlli
-+N: NMN_PRSPRC-VWCC-I ;
+: NMN_PRSPRC-VWCC-I ;
 LEXICON NMN_PRSPRC-VWCC-I !!= * @CODE@ vuõlli:vuõlli
 ! gradation: yes
 ! is for nouns with ''-est'' +Loc
@@ -9244,7 +9244,7 @@ LEXICON NMN_PRSPRC-VWCC-I !!= * @CODE@ vuõlli:vuõlli
 :%^I2J VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_PRSPRC-VWCCC-I !!= * @CODE@ kuõʹddi:kuõʹdˈdi
-+N: NMN_PRSPRC-VWCCC-I ;
+: NMN_PRSPRC-VWCCC-I ;
 LEXICON NMN_PRSPRC-VWCCC-I !!= * @CODE@ kuõʹddi:kuõʹdˈdi
 ! gradation: yes
 ! is for nouns with ''-est'' +Loc
@@ -9266,7 +9266,7 @@ LEXICON NMN_PRSPRC-VWCCC-I !!= * @CODE@ kuõʹddi:kuõʹdˈdi
 
 
 LEXICON N_PRSPRC-VWXYY-I !!= * @CODE@ suõskki:suõskki
-+N: NMN_PRSPRC-VWXYY-I ;
+: NMN_PRSPRC-VWXYY-I ;
 LEXICON NMN_PRSPRC-VWXYY-I !!= * @CODE@ suõskki:suõskki
 ! is for nouns with ''-est'' +Loc
 ! gradation: yes
@@ -9303,7 +9303,7 @@ LEXICON  NOM-AG_AD_NO-PL-NOM
 
 
 LEXICON N_PRSPRC-VCC-AI !!= * @CODE@ kåččai:kåččai
-+N: NMN_PRSPRC-VCC-AI ;
+: NMN_PRSPRC-VCC-AI ;
 LEXICON NMN_PRSPRC-VCC-AI !!= * @CODE@ kåččai:kåččai
 ! gradation: yes
 !! * Yaml: __kachchai__
@@ -9323,7 +9323,7 @@ LEXICON NMN_PRSPRC-VCC-AI !!= * @CODE@ kåččai:kåččai
 :%^I2J VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_PRSPRC-VVCC-AI !!= * @CODE@ peellai:peellai
-+N: NMN_PRSPRC-VVCC-AI ;
+: NMN_PRSPRC-VVCC-AI ;
 LEXICON NMN_PRSPRC-VVCC-AI !!= * @CODE@ peellai:peellai
 ! gradation: yes
 !! * Yaml: __paassai__
@@ -9343,7 +9343,7 @@ LEXICON NMN_PRSPRC-VVCC-AI !!= * @CODE@ peellai:peellai
 :%^I2J VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_PRSPRC-VVKK-AI !!= * @CODE@ pååssai:pååssai
-+N: NMN_PRSPRC-VVKK-AI ;
+: NMN_PRSPRC-VVKK-AI ;
 LEXICON NMN_PRSPRC-VVKK-AI !!= * @CODE@ pååssai:pååssai
 ! gradation: yes
 !! * Yaml: __paassai__
@@ -9363,7 +9363,7 @@ LEXICON NMN_PRSPRC-VVKK-AI !!= * @CODE@ pååssai:pååssai
 :%^I2J VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_PRSPRC-VXYY-AI !!= * @CODE@ särnnai:särnnai
-+N: NMN_PRSPRC-VXYY-AI ;
+: NMN_PRSPRC-VXYY-AI ;
 LEXICON NMN_PRSPRC-VXYY-AI !!= * @CODE@ särnnai:särnnai
 ! is for nouns with ''-est'' +Loc
 ! gradation: yes
@@ -9385,7 +9385,7 @@ LEXICON NMN_PRSPRC-VXYY-AI !!= * @CODE@ särnnai:särnnai
 
 
 LEXICON N_PRSPRC-VWCC-AI !!= * @CODE@ vuejjai:vuejjai
-+N: NMN_PRSPRC-VWCC-AI ;
+: NMN_PRSPRC-VWCC-AI ;
 LEXICON NMN_PRSPRC-VWCC-AI !!= * @CODE@ vuejjai:vuejjai
 ! is for nouns with ''-est'' +Loc
 ! gradation: yes
@@ -9410,7 +9410,7 @@ LEXICON NMN_PRSPRC-VWCC-AI !!= * @CODE@ vuejjai:vuejjai
 
 
 LEXICON N_PRSPRC-VWKK-AI !!= * @CODE@ reäkkai:reäkkai
-+N: NMN_PRSPRC-VWKK-AI ;
+: NMN_PRSPRC-VWKK-AI ;
 LEXICON NMN_PRSPRC-VWKK-AI !!= * @CODE@ reäkkai:reäkkai
 ! is for nouns with ''-est'' +Loc
 ! gradation: yes
@@ -9432,7 +9432,7 @@ LEXICON NMN_PRSPRC-VWKK-AI !!= * @CODE@ reäkkai:reäkkai
 :%^I2J VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_PRSPRC-VWCCC-AI !!= * @CODE@ vuäggai:vuägˈgai
-+N: NMN_PRSPRC-VWCCC-AI ;
+: NMN_PRSPRC-VWCCC-AI ;
 LEXICON NMN_PRSPRC-VWCCC-AI !!= * @CODE@ vuäggai:vuägˈgai
 ! is for nouns with ''-est'' +Loc
 ! gradation: yes
@@ -9454,7 +9454,7 @@ LEXICON NMN_PRSPRC-VWCCC-AI !!= * @CODE@ vuäggai:vuägˈgai
 :%^I2J VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_PRSPRC-VWXYY-AI !!= * @CODE@ meälttai:meälttai
-+N: NMN_PRSPRC-VWXYY-AI ;
+: NMN_PRSPRC-VWXYY-AI ;
 LEXICON NMN_PRSPRC-VWXYY-AI !!= * @CODE@ meälttai:meälttai
 ! is for nouns with ''-est'' +Loc
 ! gradation: yes
@@ -9476,7 +9476,7 @@ LEXICON NMN_PRSPRC-VWXYY-AI !!= * @CODE@ meälttai:meälttai
 :%^I2J VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_ZHEEVAI !!= * @CODE@ žeevai:žẹẹvai
-+N: NMN_ZHEEVAI ;
+: NMN_ZHEEVAI ;
 LEXICON NMN_ZHEEVAI !!= * @CODE@ žeevai:žẹẹvai
 ! is for nouns with ''-est'' +Loc
 ! gradation: no
@@ -9513,7 +9513,7 @@ LEXICON  NOM-AG_ED_NO-PL-NOM
 +Use/NG:%^RmVow%^I2J PL-OBL ; !!= * @CODE@
 
 LEXICON N_PRSPRC-VXYY-I !!= * @CODE@ äjjnõʹstti:äjjnõʹstti
-+N: NMN_PRSPRC-VXYY-I ;
+: NMN_PRSPRC-VXYY-I ;
 LEXICON NMN_PRSPRC-VXYY-I !!= * @CODE@ äjjnõʹstti:äjjnõʹstti
 ! gradation: yes
 ! is for nouns with ''-est'' +Loc
@@ -9538,7 +9538,7 @@ LEXICON NMN_PRSPRC-VXYY-I !!= * @CODE@ äjjnõʹstti:äjjnõʹstti
 :%^I2J VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_PRSPRC-VHYY-I !!= * @CODE@ aʹhtti:a%^1VOWhtti
-+N: NMN_PRSPRC-VHYY-I ;
+: NMN_PRSPRC-VHYY-I ;
 LEXICON NMN_PRSPRC-VHYY-I !!= * @CODE@ aʹhtti:a%^1VOWhtti
 ! gradation: yes
 ! is for nouns with ''-est'' +Loc
@@ -9563,7 +9563,7 @@ LEXICON NMN_PRSPRC-VHYY-I !!= * @CODE@ aʹhtti:a%^1VOWhtti
 :%^I2J VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_PRSPRC-VWHYY-I !!= * @CODE@ čiõhčči:čiõhčči
-+N: NMN_PRSPRC-VWHYY-I ;
+: NMN_PRSPRC-VWHYY-I ;
 LEXICON NMN_PRSPRC-VWHYY-I !!= * @CODE@ čiõhčči:čiõhčči
 ! gradation: yes
 ! is for nouns with ''-est'' +Loc
@@ -9587,7 +9587,7 @@ LEXICON NMN_PRSPRC-VWHYY-I !!= * @CODE@ čiõhčči:čiõhčči
 :%^I2J VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_SUQVDDI !!= * @CODE@ suʹvddi:suʹvddi
-+N: NMN_SUQVDDI ;
+: NMN_SUQVDDI ;
 LEXICON NMN_SUQVDDI !!= * @CODE@ suʹvddi:suʹvddi
 ! gradation: yes
 ! is for nouns with ''-est'' +Loc
@@ -9608,7 +9608,7 @@ LEXICON NMN_SUQVDDI !!= * @CODE@ suʹvddi:suʹvddi
 :%^I2J VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_LIEQDHDHDHI !!= * @CODE@ lieʹđđi:lieʹđˈđi
-+N: NMN_LIEQDHDHDHI ;
+: NMN_LIEQDHDHDHI ;
 LEXICON NMN_LIEQDHDHDHI !!= * @CODE@ lieʹđđi:lieʹđˈđi
 ! gradation: yes
 ! is for nouns with ''-est'' +Loc
@@ -9628,7 +9628,7 @@ LEXICON NMN_LIEQDHDHDHI !!= * @CODE@ lieʹđđi:lieʹđˈđi
 :%^I2J VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_PRSPRC_VWXYY-I !!= * @CODE@ vueʹstti:vueʹstti
-+N: NMN_PRSPRC_VWXYY-I ;
+: NMN_PRSPRC_VWXYY-I ;
 LEXICON NMN_PRSPRC_VWXYY-I !!= * @CODE@ vueʹstti:vueʹstti
 ! gradation: yes
 ! is for nouns with ''-est'' +Loc
@@ -9650,7 +9650,7 @@ LEXICON NMN_PRSPRC_VWXYY-I !!= * @CODE@ vueʹstti:vueʹstti
 :%^I2J VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_VUOIQNNI !!= * @CODE@ vuõiʹnni:vuõiʹnni
-+N: NMN_VUOIQNNI ;
+: NMN_VUOIQNNI ;
 LEXICON NMN_VUOIQNNI !!= * @CODE@ vuõiʹnni:vuõiʹnni
 ! gradation: yes
 ! is for nouns with ''-est'' +Loc
@@ -9674,7 +9674,7 @@ LEXICON NMN_VUOIQNNI !!= * @CODE@ vuõiʹnni:vuõiʹnni
 !! Class 7 according to Feist 154-155
 !! !!i-stems
 LEXICON N_HOQPPI !!= * @CODE@ hõʹppi:hõʹppi
-+N: NMN_HOQPPI ;
+: NMN_HOQPPI ;
 LEXICON NMN_HOQPPI !!= * @CODE@ hõʹppi:hõʹppi
 ! is for nouns with ''-est'' +Loc
 ! gradation: no
@@ -9696,7 +9696,7 @@ LEXICON NMN_HOQPPI !!= * @CODE@ hõʹppi:hõʹppi
 
 
 LEXICON N_VUYPPPAI !!= * @CODE@ vuâppai:vuâpˈp
-+N: NMN_VUYPPPAI ;
+: NMN_VUYPPPAI ;
 LEXICON NMN_VUYPPPAI !!= * @CODE@ vuâppai:vuâpˈp
 ! is for nouns with ''-est'' +Loc
 ! gradation: no
@@ -9714,7 +9714,7 @@ LEXICON NMN_VUYPPPAI !!= * @CODE@ vuâppai:vuâpˈp
 :%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 LEXICON N_SHUOABYRJ !!= * @CODE@ šuåbârj:šuåbâr
-+N: NMN_SHUOABYRJ ;
+: NMN_SHUOABYRJ ;
 LEXICON NMN_SHUOABYRJ !!= * @CODE@ šuåbârj:šuåbâr
 ! gradation: no
 !! * Yaml: __shuabarj__
@@ -9732,7 +9732,7 @@ LEXICON NMN_SHUOABYRJ !!= * @CODE@ šuåbârj:šuåbâr
 
 
 LEXICON N_OAOAUM !!= * @CODE@ ååum:å%^1VOWumm
-+N: NMN_OAOAUM ;
+: NMN_OAOAUM ;
 LEXICON NMN_OAOAUM !!= * @CODE@ ååum:å%^1VOWumm
 ! is for nouns with ''-ast'' +Loc
 ! gradation: yes
@@ -9750,7 +9750,7 @@ LEXICON NMN_OAOAUM !!= * @CODE@ ååum:å%^1VOWumm
 
 
 LEXICON N_CHUYR !!= * @CODE@ čuâr:čuõrˈr
-+N: NMN_CHUYR ;
+: NMN_CHUYR ;
 LEXICON NMN_CHUYR !!= * @CODE@ čuâr:čuõrˈr
 ! is for nouns with ''-est'' +Loc
 ! gradation: no
@@ -9776,7 +9776,7 @@ LEXICON NMN_CHUYR !!= * @CODE@ čuâr:čuõrˈr
 
 
 LEXICON N_KAAMMI !!= * @CODE@ kaammi:kaamm
-+N: NMN_KAAMMI ;
+: NMN_KAAMMI ;
 LEXICON NMN_KAAMMI !!= * @CODE@ kaammi:kaamm
 ! is for nouns with ''-est'' +Loc
 ! gradation: no
@@ -9795,7 +9795,7 @@ LEXICON NMN_KAAMMI !!= * @CODE@ kaammi:kaamm
 
 
 LEXICON N_PIYNNAI !!= * @CODE@ piânnai:piânˈn
-+N: NMN_PIYNNAI ;
+: NMN_PIYNNAI ;
 LEXICON NMN_PIYNNAI !!= * @CODE@ piânnai:piânˈn
 ! is for nouns with ''-est'' +Loc
 ! gradation: no
@@ -9823,7 +9823,7 @@ LEXICON NMN_PIYNNAI !!= * @CODE@ piânnai:piânˈn
 
 !! Class 9 according to Feist 158
 LEXICON N_MEERSAZH !!= * @CODE@ säʹmmlaž:säʹmml
-+N: NMN_MEERSAZH ;
+: NMN_MEERSAZH ;
 LEXICON NMN_MEERSAZH
 ! gradation: no
 !! * Yaml: __A-saemmlazh__
@@ -9845,7 +9845,7 @@ LEXICON NMN_MEERSAZH
 !! Diminutive derivations
 
 LEXICON N_MUORYZH !!= * @CODE@ muõrâž:muõr
-+N: NMN_MUORYZH ;
+: NMN_MUORYZH ;
 LEXICON NMN_MUORYZH
 ! gradation: no
 !! (2009: 306)
@@ -9913,7 +9913,7 @@ LEXICON N_KUUZZYZH-WITH-PAL-ALLEGRO
 
 
 LEXICON N_SAEQMMLOOZHZHYZH !!= * @CODE@ säʹmmlõõžžâž:säʹmmlõõžž
-+N: NMN_SAEQMMLOOZHZHYZH ;
+: NMN_SAEQMMLOOZHZHYZH ;
 LEXICON NMN_SAEQMMLOOZHZHYZH
 ! gradation: no
 ! allegro: yes
@@ -9949,7 +9949,7 @@ N_PEESSAZH ;
 
 LEXICON N_PEESSAZH !!= * @CODE@ piissuž:pẹẹss
 !! This is only a partial paradigm
-+N: NMN_PEESSAZH ;
+: NMN_PEESSAZH ;
 LEXICON NMN_PEESSAZH !!= * @CODE@ piissuž:pẹẹss
 :až SG-NOM ;
 :ž NMN_SG-ILL_E ;
@@ -9960,7 +9960,7 @@ LEXICON NMN_PEESSAZH !!= * @CODE@ piissuž:pẹẹss
 
 
 LEXICON N_PIISSUZH !!= * @CODE@ piissuž:piiss
-+N: NMN_PIISSUZH ;
+: NMN_PIISSUZH ;
 LEXICON NMN_PIISSUZH
 ! gradation: no
 !! (2009: 310)
@@ -9982,7 +9982,7 @@ LEXICON NMN_PIISSUZH
 
 
 LEXICON N_KUYLAZH !!= * @CODE@ kuâlaž:kuâl
-+N: NMN_KUYLAZH ;
+: NMN_KUYLAZH ;
 LEXICON NMN_KUYLAZH
 ! gradation: no
 !! * kuâlaž:kuâl
@@ -10004,7 +10004,7 @@ LOAOADDAZH-STEM-PX ;
 +Err/GenreLeudd+Sg+Nom+PxSg1:ažamâ K; !!= * @CODE@ Leudd 2018-09-20
 
 LEXICON N_UUQREZH !!= * @CODE@ uuʹrež:uuʹr
-+N: NMN_UUQREZH ;
+: NMN_UUQREZH ;
 LEXICON NMN_UUQREZH
 ! gradation: no
 !! * Yaml: __N-uurezh__
@@ -10019,7 +10019,7 @@ LEXICON NMN_UUQREZH
 
 
 LEXICON N_JEAQKHKHKHAAZH !!= * @CODE@ jeäʹǩǩääž:jeäʹǩˈǩ
-+N: NMN_JEAQKHKHKHAAZH ;
+: NMN_JEAQKHKHKHAAZH ;
 LEXICON NMN_JEAQKHKHKHAAZH
 ! gradation: no
 !! * Yaml: __N-jeakkeaeazh__
@@ -10035,7 +10035,7 @@ LEXICON NMN_JEAQKHKHKHAAZH
 
 
 LEXICON N_VONNSAZH !!= * @CODE@ võnnsaž:võnns
-+N: NMN_VONNSAZH ;
+: NMN_VONNSAZH ;
 LEXICON NMN_VONNSAZH
 ! gradation: no
 !! * Yaml: __N-kualazh__
@@ -10052,7 +10052,7 @@ LEXICON NMN_VONNSAZH
 
 
 !LEXICON N_JIQLSSI !!= * @CODE@ Jiʹlssi:Jiʹlss
-!+N: NMN_JIQLSSI ;
+!: NMN_JIQLSSI ;
 LEXICON NMN_JIQLSSI !!= * @CODE@ Jiʹlssi:Jiʹlssi
 : SG-NOM ;
 : SG-ABE/ACC/GEN ;
@@ -10065,7 +10065,7 @@ LEXICON NMN_JIQLSSI !!= * @CODE@ Jiʹlssi:Jiʹlssi
 
 
 !LEXICON N_OAQLGA !!= * @CODE@ Ååʹlga:Ååʹlg
-!+N: NMN_OAQLGA ;
+!: NMN_OAQLGA ;
 LEXICON NMN_OAQLGA !!= * @CODE@ Ååʹlga:Ååʹlg
 :a SG-NOM ;
 :a SG-ABE/ACC/GEN ;
@@ -10079,7 +10079,7 @@ LEXICON NMN_OAQLGA !!= * @CODE@ Ååʹlga:Ååʹlg
  LOAOADDAZH-STEM-PX-ALLEGRO ; 
 
 !LEXICON	 N_SINIDA !!= * @CODE@ Sinida:Sinid
-!+N: NMN_SINIDA ;
+!: NMN_SINIDA ;
 LEXICON NMN_SINIDA !!= * @CODE@ Sinida:Sinid
 :a SG-NOM ;
 :a SG-ABE/ACC/GEN ;
@@ -10095,7 +10095,7 @@ LEXICON NMN_SINIDA !!= * @CODE@ Sinida:Sinid
 
 
 LEXICON N_KUUQMPEZH !!= * @CODE@ 
-+N: NMN_KUUQMPEZH ;
+: NMN_KUUQMPEZH ;
 LEXICON NMN_KUUQMPEZH
 ! gradation: no
 !! * kuuʹmpež:kuuʹmp
@@ -10149,7 +10149,7 @@ LEXICON N_OOUMAZH-PL
 !! Class 10 according to Feist 160-161
 !!  !!neǩ-stem
 LEXICON N_KAADHNEKH !!= * @CODE@ kaađneǩ:kaađnẹ%^1VOWǩ
-+N: NMN_KAADHNEKH ;
+: NMN_KAADHNEKH ;
 LEXICON NMN_KAADHNEKH !!= * @CODE@ kaađneǩ:kaađnẹ%^1VOWǩ
 !!= * @CODE@ = stemtype 
 !! * Yaml: __N-kaadhnekj, N-chaustok__
@@ -10174,7 +10174,7 @@ LEXICON NMN_KAADHNEKH !!= * @CODE@ kaađneǩ:kaađnẹ%^1VOWǩ
 +Use/NG:%{XC%}%^V2VV%^PAL%^C2CC PL-OBL ;
 
 !LEXICON N_KAADHNEKH-PL !!= * @CODE@ kaađneǩ:kaađnẹ%^1VOWǩ
-!+N: NMN_KAADHNEKH-PL ;
+!: NMN_KAADHNEKH-PL ;
 !LEXICON NMN_KAADHNEKH-PL !!= * @CODE@ kaađneǩ:kaađnẹ%^1VOWǩ
 !!= * @CODE@ = stemtype 
 !! * Yaml: __N-kaadhnekj, N-chaustok__
@@ -10187,7 +10187,7 @@ LEXICON NMN_KAADHNEKH !!= * @CODE@ kaađneǩ:kaađnẹ%^1VOWǩ
 
 !! Sort of like 10
 !LEXICON N_VUYSPPOAQD !!= * @CODE@ vuâsppåʹd:vuâsppå%^1VOWd
-!+N: NMN_VUYSPPOAQD ;
+!: NMN_VUYSPPOAQD ;
 LEXICON NMN_VUYSPPOAQD !!= * @CODE@ vuâsppåʹd:vuâsppå%^1VOWd
 !!= * @CODE@ = stemtype 
 !! * Yaml: __N-kaadhnekj, N-chaustok__
@@ -10212,7 +10212,7 @@ LEXICON NMN_VUYSPPOAQD !!= * @CODE@ vuâsppåʹd:vuâsppå%^1VOWd
 
 !! Class 11 according to Feist 162
 LEXICON N_VISKKYD !!= * @CODE@ viskkâd:viskk
-+N: NMN_VISKKYD ;
+: NMN_VISKKYD ;
 LEXICON NMN_VISKKYD
 :âd SG-NOM ;
 :âd SG-ABE/ACC/GEN-PL-NOM ;
@@ -10222,7 +10222,7 @@ LEXICON NMN_VISKKYD
 :ee ESS/PAR ;
 
 !LEXICON N_MOASHSHAD !!= * @CODE@ måššad:måšš
-!+N: NMN_MOASHSHAD ;
+!: NMN_MOASHSHAD ;
 LEXICON NMN_MOASHSHAD
 :ad SG-NOM ;
 :ad SG-ABE/ACC/GEN ;
@@ -10234,7 +10234,7 @@ LEXICON NMN_MOASHSHAD
 :i PL-OBL ;
 
 LEXICON N_AQKHKHED !!= * @CODE@ âʹǩǩed:âʹǩǩ
-+N: NMN_AQKHKHED ;
+: NMN_AQKHKHED ;
 LEXICON NMN_AQKHKHED
 :ed SG-NOM ;
 :ed SG-ABE/ACC/GEN ;
