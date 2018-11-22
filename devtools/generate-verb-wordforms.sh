@@ -18,19 +18,20 @@ fi
 ######### USER Variables - change these to your liking: #########
 # Codes for the word forms to be generated - list as many or few as needed:
 morf_codes="+V+Inf \
+            +V+Ind+Prs+Sg3 \
+            +V+Ind+Prs+Pl3 \
+            +V+Ind+Prt+Pl3 \
+            +V+Ind+Prs+ConNeg \
+            +V+Pot+Sg3 \
+            +V+Cond+Sg3 \
+            +V+Der/škueʹtted+V+Inf \
             +V+Der/mõš+N+Sg+Nom \
             +V+Der/mmuš+N+Sg+Nom \
             +V+Der/NomAg+N+Sg+Nom"
-#            +V+Ind+Prs+Sg3 
-#            +V+Ind+Prs+Pl3 
-#            +V+Ind+Prt+Pl3 
-#            +V+Ind+Prs+ConNeg 
-#            +V+Pot+Sg3 
-#            +V+Cond+Sg3 
+
 #            +V+Imprt+Sg3 
 #            +V+Imprt+ConNegII 
 #            +V+Imprt+Pl3 
-#            +V+Der/škueʹtted+V+Inf
 
 # Lexicon source file for lexicons and lemmas:
 source_file=src/morphology/stems/V_sms2x.lexc

@@ -19,17 +19,10 @@ fi
 # Codes for the word forms to be generated - list as many or few as needed:
 morf_codes="+N+Sg+Nom \
             +N+Pl+Nom \
-            +N+Sg+Gen \
             +N+Sg+Ill \
-            +N+Sg+Com \
             +N+Pl+Gen \
             +N+Ess \
-            +N+Der/Dimin+N+Sg+Nom \
-            +N+Der/Dimin+N+Pl+Nom \
-            +N+Der/Dimin+N+Sg+Ill \
-            +N+Der/Dimin+N+Pl+Gen \
             +N+Sg+Loc+PxSg3 \
-            +N+Ess+PxSg1 \
             +N+Ess+PxSg3"
 
 # Lexicon source file for lexicons and lemmas:
