@@ -21,9 +21,9 @@ morf_codes="+N+Prop+Sg+Nom \
             +N+Prop+Sg+Gen \
             +N+Prop+Sg+Ill \
             +N+Prop+Sg+Com \
-            +N+Prop+Pl+Nom \
-            +N+Prop+Pl+Com \
-            +N+Prop+Ess"
+            +N+Prop+Ess \
+            +N+Prop+Sg+Loc+PxSg3 \
+            +N+Prop+Ess+PxSg3"
 
 # Lexicon source file for lexicons and lemmas:
 source_file=src/morphology/generated_files/smi-sma-propernouns.lexc

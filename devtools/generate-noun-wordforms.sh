@@ -20,18 +20,9 @@ fi
 morf_codes="+N+Sg+Nom \
             +N+Pl+Nom \
             +N+Sg+Ill \
-            +N+Sg+Com \
-            +N+Sg+Gen \
-            +N+Pl+Acc \
+            +N+Pl+Gen \
             +N+Ess \
-            +N+Der/Dimin+N+Sg+Nom \
-            +N+Der/Dimin+N+Sg+Ill \
-            +N+Der/Dimin+N+Pl+Nom \
-            +N+Der/Dimin+N+Pl+Ill \
-            +N+Sg+Nom+PxSg3 \
             +N+Sg+Loc+PxSg3 \
-            +N+Sg+Acc+PxSg3 \
-            +N+Ess+PxSg1 \
             +N+Ess+PxSg3"
 
 # Lexicon source file for lexicons and lemmas:
@@ -44,7 +35,7 @@ exception_lexicons="(flagK)"
 generator_file=src/generator-dict-gt-norm
 
 # How many lemmas maximally for each lexicon:
-lemmacount=100
+lemmacount=5000
 
 # Specify path to the dir containing the script used for generation:
 script_dir=$giella_core/scripts
