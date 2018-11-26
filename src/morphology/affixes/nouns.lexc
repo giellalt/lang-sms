@@ -4845,15 +4845,42 @@ LEXICON NMN_KHEQMNN
 !! NumContLex="1.113"
 !! Is for nouns with ''-est'' Loc, Extra long vowel
 !! * Yaml: __N-algg__
-: SG-NOM ;	    			! ǩeʹmnn
-:%^V2VV%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;		! ǩeeʹmn
+: E-STEM_SG-NOM ;	    			! ǩeʹmnn
+:%^V2VV%^XYY2XY E-STEM_SG-ABE/ACC/GEN ;		! ǩeeʹmn
+:%^V2VV%^XYY2XY PL-NOM ;		! ǩeeʹmn
 :%^PALÂ%^PALNo%^XYY2XY A_DER/LAZH ;
 :%^PALÂ%^PALNo E-STEM_SG-ILL ;		! ǩeâmnna
 :%^V2VV%^XYY2XY%>e SG-LOC ;		! ǩeeʹmnest
 :%^V2VV%^XYY2XY SG-COM_IN ;		! ǩeeʹmnin
 :%>e ESS/PAR ; ! ess and prt without
-:%^V2VV%^XYY2XY%> PL-OBL ;
+:%^V2VV%^XYY2XY%> E-STEM_PL-OBL ;
 :%^V2VV%^PALNo%^XYY2XY E-STEM_N_KUYLAZH ;	! ǩeâmnaž
+! see ǩieʹmnn
+
+! Test data:
+!!€gt-norm: ǩeʹmnn # 
+!!€ ǩeʹmnn:      ǩeʹmnn+N+Sg+Nom
+!!€ ǩeeʹmn:      ǩeʹmnn+N+Sg+Gen
+!!€ ǩeeʹmn:      ǩeʹmnn+N+Sg+Acc
+!!€ ǩeâmnna:      ǩeʹmnn+N+Sg+Ill
+!!€ ǩeeʹmnest:   ǩeʹmnn+N+Sg+Loc
+!!€ ǩeʹmnstan:   ǩeʹmnn+N+Sg+Loc+PxSg1
+!!€ ǩeeʹmnstan:  ǩeʹmnn+N+Sg+Loc+PxSg1
+!!€ jaauʹrin:    ǩeʹmnn+N+Sg+Com ???
+!!€ ǩeʹmnnen:    ǩeʹmnn+N+Ess
+!!€ ǩeʹmnned:    ǩeʹmnn+N+Par
+!!€ ǩeeʹmntaa:   ǩeʹmnn+N+Sg+Abe
+!!€ ǩeeʹmn:      ǩeʹmnn+N+Pl+Nom
+!!€ jaauʹri:     ǩeʹmnn+N+Pl+Gen
+!!€ jaauʹrid:    ǩeʹmnn+N+Pl+Acc
+!!€ jaauʹrid:    ǩeʹmnn+N+Pl+Ill
+!!€ jaauʹrin:    ǩeʹmnn+N+Pl+Loc
+!!€ jaauʹrivuiʹm: ǩeʹmnn+N+Pl+Com
+!!€ jaauʹritaa:          ǩeʹmnn+N+Pl+Abe
+!!€ jääuraž:     ǩeʹmnn+N+Der+Der/Dimin+N+Sg+Nom
+!!€ jääura:      ǩeʹmnn+N+Der+Der/Dimin+N+Sg+Gen
+
+
 
 LEXICON N_LAAIQJ !!= * @CODE@ lääiʹj:lääiǥ
 ! vowel: monophthong
@@ -5065,14 +5092,44 @@ LEXICON NMN_JAUQRR
 !! !!FORMS
 !! Is for nouns with ''-est'' Loc, Extra long vowel
 !! * Yaml: __N-jaurr__
-:%^PAL SG-NOM ; 	  !!(1) Sg.Nom: jäuʹrr
-:%^V2VV%^PAL%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ; !!(2) Pl.Nom: jääuʼr
+:%^PAL E-STEM_SG-NOM ; 	  !!(1) Sg.Nom: jäuʹrr
+:%^V2VV%^PAL%^XYY2XY E-STEM_SG-ABE/ACC/GEN ; !!(2) Pl.Nom: jääuʼr
+:%^V2VV%^PAL%^XYY2XY PL-NOM ; !!(2) Pl.Nom: jääuʼr
 :%^V2VV%^PAL%^XYY2XY A_DER/LAZH ;
 : E-STEM_SG-ILL ;	     !!(3) Sg.Ill: jäurra
 :%^V2VV%^PAL%^XYY2XY%>e SG-LOC ;   !!(4) Sg.Loc: jääuʹrest
-:%^V2VV%^VOWRaise%^PAL%^XYY2XY SG-COM_IN/PL-OBL ; !!(5) Sg.Com: jääuʹrin
+:%^V2VV%^VOWRaise%^PAL%^XYY2XY SG-COM_IN ; !!(5) Sg.Com: jaauʹrin
+:%^V2VV%^VOWRaise%^PAL%^XYY2XY E-STEM_PL-OBL ; !!(5) Sg.Com: jaauʹrin
 :%^PAL%>e ESS/PAR ; 	       !!(6) Ess: jäuʹrren
 :%^V2VV%^XYY2XY E-STEM_N_KUYLAZH ; !!(9) Der/Dimin.N.Sg.Nom: jääuraž
+ E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) jäurr
+:%^VV2V%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) jäuʹr 
+:%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) jäuʹrr Ess+Px..
+
+! Test data:
+!!€gt-norm: jäuʹrr # 
+!!€ jäuʹrr:      jäuʹrr+N+Sg+Nom
+!!€ jääuʹr:      jäuʹrr+N+Sg+Gen
+!!€ jääuʹr:      jäuʹrr+N+Sg+Acc
+!!€ jäurra:      jäuʹrr+N+Sg+Ill
+!!€ jääuʹrest:   jäuʹrr+N+Sg+Loc
+!!€ jäuʹrstan:   jäuʹrr+N+Sg+Loc+PxSg1
+!!€ jääuʹrstan:  jäuʹrr+N+Sg+Loc+PxSg1
+!!€ jaauʹrin:    jäuʹrr+N+Sg+Com
+!!€ jäuʹrren:    jäuʹrr+N+Ess
+!!€ jäuʹrred:    jäuʹrr+N+Par
+!!€ jääuʹrtaa:   jäuʹrr+N+Sg+Abe
+!!€ jääuʹr:      jäuʹrr+N+Pl+Nom
+!!€ jaauʹri:     jäuʹrr+N+Pl+Gen
+!!€ jaauʹrid:    jäuʹrr+N+Pl+Acc
+!!€ jaauʹrid:    jäuʹrr+N+Pl+Ill
+!!€ jaauʹrin:    jäuʹrr+N+Pl+Loc
+!!€ jaauʹrivuiʹm: jäuʹrr+N+Pl+Com
+!!€ jaauʹritaa:          jäuʹrr+N+Pl+Abe
+!!€ jääuraž:     jäuʹrr+N+Der+Der/Dimin+N+Sg+Nom
+!!€ jääura:      jäuʹrr+N+Der+Der/Dimin+N+Sg+Gen
+
+
 
 LEXICON N_PEIQVV !!= * @CODE@ peiʹvv:pẹ%^1VOWi%{ʹØ%}vv
 ! vowel: monophthong
