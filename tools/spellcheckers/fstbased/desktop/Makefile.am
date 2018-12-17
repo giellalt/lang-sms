@@ -11,7 +11,12 @@ CORPUSNAME=spellercorpus
 # Specify whether to use corpus weights for frequency ranking of suggestions.
 # Make sure you test the suggestion quality both before and after changing this
 # setting.
-ENABLE_CORPUS_WEIGHTS=yes
+ENABLE_CORPUS_WEIGHTS=no
+
+# Use this as the source lexical fst for unit weighting, it contains correct
+# surface forms except for the word boundary #, which is still present, and
+# used in the weighting:
+UW_SPELLER_SRC=generator-desktopspeller-gt-norm-base.hfst
 
 # Number of lines (= word forms) in the sort-uniqued corpus. If empty the whole
 # corpus will be used. Too large a corpus can make the acceptor fst unneccessary
@@ -25,18 +30,6 @@ ENABLE_CORPUS_WEIGHTS=yes
 CORPUS_SIZE=
 
 ### BEGIN: Local build rules: *.hfst: *.tmp.hfst ###
-
-generator-desktopspeller-gt-norm.hfst: \
-			generator-desktopspeller-gt-norm.tmp.hfst \
-			filters/remove-derivation-position-tags.hfst
-	$(AM_V_HXFST)$(PRINTF) "\
-	set encode-weights ON \n\
-	read regex \
-		@\"filters/remove-derivation-position-tags.hfst\" \
-	.o. @\"$<\" \
-	; \n\
-	save stack $@\n\
-	quit\n" | $(HFST_XFST) -p $(MORE_VERBOSITY)
 
 #### END: Local build rules: *.hfst: *.tmp.hfst ####
 
