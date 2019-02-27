@@ -43,6 +43,7 @@ GT_LEXC_SRCS_L1_L2=\
 				affixes/pronouns.lexc \
 				affixes/propernouns.lexc \
 				affixes/smi-propernouns.lexc \
+				affixes/symbols.lexc     \
 				affixes/verbs.lexc \
 				compounding.lexc \
 				clitics.lexc
@@ -101,7 +102,8 @@ GENERATED_LEXC_SRCS=\
 			$(srcdir)/stems/Pron_sms2x.lexc                \
 			$(srcdir)/stems/V_sms2x.lexc                   \
 			$(srcdir)/stems/ABBR_sms2x.lexc                \
-			generated_files/punctuation.lexc
+			generated_files/punctuation.lexc               \
+			generated_files/symbols.lexc
 
 # Set this to the names of all source xml files, if any
 GT_XML_SRCS=\
