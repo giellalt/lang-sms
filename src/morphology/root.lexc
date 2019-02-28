@@ -3,7 +3,7 @@
 ! http://giellatekno.uit.no & http://divvun.no
 !
 ! This program is free software; you can redistribute and/or modify
-! this file under the terms of the GNU General Public License as published by
+! this file under the terms of the GNU General Public License as published 
 ! the Free Software Foundation, either version 3 of the License, or
 ! (at your option) any later version. The GNU General Public License
 ! is found at http://www.gnu.org/licenses/gpl.html. It is
@@ -19,48 +19,59 @@
 !! more than one character, and it contains the initial __Root__ lexicon.
 
 Multichar_Symbols  !!≈ !!!Definitions for @CODE@
-+WORK    !!= * @CODE@ Incoming entries requiring further classification
+!+WORK is removed from code
+    ! Incoming entries requiring further classification
 +NoTransl !!= * @CODE@ No translation available
 
 !! !!Grammatical tags
 
-!! !Parts of speech
+!! !Tags for POS
++Ex/N
++Ex/A
++Ex/V
 
 +A	      !!= * @CODE@ Adjective
-+V	      !!= * @CODE@ Verb
-+N	      !!= * @CODE@ Noun
-+Det      !!= * @CODE@ Determiner
-+Adv      !!= * @CODE@ Adverb
-+Pron     !!= * @CODE@ Pronoun
-+CS	      !!= * @CODE@ Subjunction
++Adp          !!= * @CODE@ Adposition, i.e. Post- and Prepostion
++Adv          !!= * @CODE@ Adverb
 +CC	      !!= * @CODE@ Conjunction
-+Adp      !!= * @CODE@ Adposition
-+Po	      !!= * @CODE@ Postposition
++CS	      !!= * @CODE@ Subjunction
++Det          !!= * @CODE@ Determiner
++Interj       !!= * @CODE@ Interjection
++N	      !!= * @CODE@ Noun
++Num	      !!= * @CODE@ Numeral
++Po	      !!= * @CODE@ Postposition 
 +Pr	      !!= * @CODE@ Preposition
-+Interj   !!= * @CODE@ Interjection
-+Pcle     !!= * @CODE@ Particle
++Pron         !!= * @CODE@ Pronoun
++Pcle         !!= * @CODE@ Particle
++V	      !!= * @CODE@ Verb
 
-!! !Subtypes
+!! !Tags for sub-POS
 
-+Guess    !!= * @CODE@
+ +Prop   !!= * __@CODE@__ - Proper noun
+ +Pers   !!= * __@CODE@__ - Personal Pronoun
+ +Dem    !!= * __@CODE@__ - Demonstrative Pronoun
+ +Interr !!= * __@CODE@__ - Interrogative Pronoun
+ +Refl   !!= * __@CODE@__ - Reflexive Pronoun
+ +Recipr !!= * __@CODE@__ - Reciprocal Pronoun
+ +Rel    !!= * __@CODE@__ - Relative Pronoun
+ +Indef  !!= * __@CODE@__ - Indefinitive Pronoun
+ +Coll   !!= * __@CODE@__ - Collective numerals
+ +Arab   !!= * __@CODE@__ - Arabic numeral
+ +Rom    !!= * __@CODE@__ - Roman numeral 
+ +Pass   !!= * __@CODE@__ - hallat/haddat not in use
+ +Qnt	 !!= * __@CODE@__ - SHOULD THIS be here or a Sem/Qnt
 
-+Prop     !!= * @CODE@ Proper noun
 +Pred     !!= * @CODE@
 +Attr     !!= * @CODE@ Attributive form
-+Pers     !!= * @CODE@ Personal
-+Dem      !!= * @CODE@ Demonstrative
-+Interr   !!= * @CODE@ Interrogative
-+Refl     !!= * @CODE@ Reflexive
-+Recipr   !!= * @CODE@ Reciprocal
-+Rel      !!= * @CODE@ Relative
-+Indef    !!= * @CODE@ Indefinite
 +Distr    !!= * @CODE@ Distributive
 
++Temp     !!= * @CODE@
+
 !! !Types of adverbs
-+Manner
-+Spat
-+State
-+Temp
++Parenthetic
++AssocColl
+
++Guess    !!= * @CODE@
 
 !! !Number
 +Sg	      !!= * @CODE@ Singular = õõutilååkk
@@ -69,15 +80,18 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 !! !Case
 +Nom      !!= * @CODE@ Nominative = nominativ
-+Gen      !!= * @CODE@
-+Acc      !!= * @CODE@
-+Ill      !!= * @CODE@
-+Ine      !!= * @CODE@
-+Ela      !!= * @CODE@
-+Com      !!= * @CODE@
-+Ess      !!= * @CODE@
-+Par      !!= * @CODE@
-+Abe      !!= * @CODE@
++Gen      !!= * @CODE@ Genitive
++Acc      !!= * @CODE@ Accusative
++Ill      !!= * @CODE@ Illative
++Loc      !!= * @CODE@ Locative
++Com      !!= * @CODE@ Comitative
++Ess      !!= * @CODE@ Essive
++Par      !!= * @CODE@ Partative
++Prl      !!= * @CODE@ Prolative
++Abe      !!= * @CODE@ Abessive
+
++Lat      !!= * @CODE@ Lative lääinas, säämas, toimmpââjas 
+
 
 !! !Possessive suffix
 +PxSg1    !!= * @CODE@ 
@@ -90,12 +104,14 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !! !Adjective declension
 +Comp     !!= * @CODE@
 +Superl   !!= * @CODE@
++Ord	 !!= * __@CODE@__ - 
+
++GenAttr   !!= * @CODE@ Genitive attribute used as adjective?
 
 !! !Verb forms      Veʹrbbååʹbleʹǩ
 +Actor    !!= * @CODE@
 +Actio    !!= * @CODE@
 +ActEss   !!= * @CODE@ -men
-+NegConv2 !!= * @CODE@ fix!
 
 !! Valence
 +IV          !!= * @CODE@ Intransitive
@@ -128,6 +144,9 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Sg1	      !!= * @CODE@ first person singular
 +Sg2	      !!= * @CODE@ second person singular
 +Sg3	      !!= * @CODE@ third person singular
++Du1	      !!= * @CODE@ first person dual
++Du2	      !!= * @CODE@ second person dual
++Du3	      !!= * @CODE@ third person dual
 +Pl1	      !!= * @CODE@ first person plural
 +Pl2	      !!= * @CODE@ second person plural
 +Pl3	      !!= * @CODE@ third  person plural
@@ -135,145 +154,395 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +13          !!= * @CODE@ used in combination with +Imp+13+ConNeg
 +2	     !!= * @CODE@ used in combination with +Imp+2+ConNeg
 
-!! !Abbreviation
-+ABBR	!!= * @CODE@ abbreviation
-+Symbol !!≈ * @CODE@ = independent symbols in the text stream, like £, €, ©
+
+!! !Homonymy
++Hom1
++Hom2
++Hom3
++Hom4
+
 
 !! !Derivation
+
+!! All non-positional derivations should be preceded by this tag, to make it possible
+!! to target regular expressions at all derivations in a language-independent way:
+!! just specify +Der|+Der1 .. +Der5 and you are set.
+
++Der  !!≈ * @CODE@
+
+
++Der/Car !!= * @CODE@  N»A -tem, -teʹmes
++Der/Dimin  !!= * @CODE@ diminutive derivation N»N was Der/Dim, V»V was Der/sted, Der/âʹstted
+!+Der/sted  	!!= * @CODE@ diminutive V»V
+!+Der/âʹstted  	!!= * @CODE@ diminutive V»V
 +Der/N2A !!=derived adjective N»A
 +Der/V2Adv !!=derived adjective V»Adv
 +Der/nalla !!=derived adjective V»Adv
++Der/ad !!= * @CODE@ ordinals to nouns
 +Der/A  !!=derived adjective
-+Der/Dimin  !!= * @CODE@ diminutive derivation N»N was Der/Dim
-+Der/mõs  !!= * @CODE@ superlative One-syllable foot
++Der/allash !!=derived adjective N»A -jânnmallaš
++Der/lazh !!=derived adjective N»A
++Der/sazh !!=derived adjective N»A
++Der/i  !!= * @CODE@  N»A luõss >> luõʹssi, čääʹcc >> čäccai 'rich in' Sg.Ill
++Der/PALi !!= * @CODE@ rupp » ruʹppi ATTR ruʹppes DEPRICATE
++Der/mos  !!= * @CODE@ superlative One-syllable foot -mõs
 +Der/umus  !!= * @CODE@ superlative
 +Der/ummus  !!= * @CODE@ superlative 
-+Der/teʹm !!= * @CODE@ carative derivation N»A, V»A
++Der/teqm !!= * @CODE@ carative derivation N»A, V»A -teʹm
 +Der/t !!= * @CODE@ carative derivation N»A for subsequent derivation
 !! Noun derivation
 +Der/N
-+Der/mmuš !!= * @CODE@ deverbal derivation V»N
-+Der/mõš !!= * @CODE@ deverbal derivation V»N
-+Der/vuõtt !!= * @CODE@ A»N
++Der/MOsh !!= * @CODE@ deverbal derivation V»N architype mõš and mmuš
++Der/vuott !!= * @CODE@ A»N -vuõtt
++Der/lasj !!= * @CODE@  
++Der1 !!= * @CODE@  
++Der2
++Der3
++Der4
++Der5
 
 !! Verb derivation
 +Der/V2A !!=derived adjective V»A
-+Der/škueʹtted  !!= * @CODE@ incoative V»V
-+Der/sted  	!!= * @CODE@ diminutive V»V
-+Der/âʹstted  	!!= * @CODE@ diminutive V»V
-+Der/ted  	!!= * @CODE@ causative V»V
-+Der/âʹtted  	!!= * @CODE@ causative V»V 
++Der/shkueqtted  !!= * @CODE@ incoative V»V -škueʹtted
++Der/Caus	!!= * @CODE@ causative V»V, was Der/ted and Der/âʹtted
++Der/jed  	!!= * @CODE@ inchoative V»V also middle
++Der/oottyd  	!!= * @CODE@ reflexive reciprocal V»V -õõttâd
++Der/oovvyd  	!!= * @CODE@  V»V kulsted: kulstõõvvâd
++Der/oollyd  	!!= * @CODE@  V»V -õõllâd
++Der/stoollyd  	!!= * @CODE@  V»V -stõõllâd
++Der/stoovvyd  	!!= * @CODE@  V»V -stõõvvâd
++Der/toovvyd 	!!= * @CODE@ privative + translative N»V --tõõvvâd
++Der/ched	!!= * @CODE@ frequentative V»V for ʹCCed verbs -čed
 +Der/NomAg	!!= * @CODE@ agent V»N
++Der/NomAct	!!= * @CODE@ action V»N +Der/MOsh
+
+
+!! !!Tags for originating language
+
+!! The following tags are used to guide conversion to IPA: loan words
+!! and foreign names are usually pronounced (approximately) as in the
+!! originating (majority) language. Instead of trying to identify the
+!! correct pronounciation based on fonotactics (orthotactics actually),
+!! we tag all words that can't be correctly transcribed using the SME
+!! transcriber with source language codes. Once tagged, it is possible
+!! to split the lexical transducer in smaller ones according to langu-
+!! age, and apply different IPA conversion to each of them.
+!! 
+!! The principle of tagging is that we only tag to the extent needed,
+!! and following a priority:
+!! # any untagged word is pronounced with SME orthographic conventions
+!! # NNO and NOB have identical pronounciation, NNO is only used if
+!!   different in spelling from NOB
+!! # SWE has mostly the same pronounciation as NOB, and is only used
+!!   if different in spelling from NOB
+!! # Occasionally even SME (the default) may be tagged, to block other
+!!   languages from being specified, mainly during semi-automatic
+!!   language tagging sessions
+!! 
+!! All in all, we want to get as much correctly transcribed to IPA
+!! with as little work as possible. On the other hand, if more words
+!! are tagged than strictly needed, this should pose no problem as
+!! long as the IPA conversion is correct - at least some words will
+!! get the same pronounciation whether read as SME or NOB/NNO/SWE.
+
++OLang/SME !!≈ * @CODE@ - North Sámi
++OLang/SMA !!≈ * @CODE@ - South Sámi
++OLang/SMN !!≈ * @CODE@ - Inari Sámi
++OLang/SMS !!≈ * @CODE@ - Skolt Sámi
++OLang/RUS !!≈ * @CODE@ - Russian
++OLang/FIN !!≈ * @CODE@ - Finnish
++OLang/SWE !!≈ * @CODE@ - Swedish
++OLang/NOB !!≈ * @CODE@ - Norw. bokmål
++OLang/NNO !!≈ * @CODE@ - Norw. nynorsk
++OLang/ENG !!≈ * @CODE@ - English
++OLang/UND !!≈ * @CODE@ - Undefined
+
 
 !! !Government tags
++%<acc%>
++%<ess%>
 +%<gen%>
++%<ill%>
 +%<loc%>	!!= * @CODE@ this will be added to the preposition tagging __mâŋŋa jââđast__
++%<nom%>
 
-!! !Semantic properties of names
-+Sem/Ani      !!= * @CODE@ Animate
-+Sem/Ant      !!= * @CODE@ Anthroponym
-+Sem/Mal      !!= * @CODE@ Male
-+Sem/Fem      !!= * @CODE@ Female
-+Sem/Sur      !!= * @CODE@ Surname
-+Sem/Plc      !!= * @CODE@ Place name
-+Sem/Org      !!= * @CODE@ Organization
-+Sem/Obj      !!= * @CODE@ 
 
-!! !Semantic tags to help disambiguation & synt. analysis: (before POS)
+!! !Semantic tags
 
- +Sem/Act         !!= * @CODE@ = Activity
- +Sem/Adr         !!= * @CODE@ = Webadr
- +Sem/Amount      !!= * @CODE@ = Amount
- +Sem/Ani         !!= * @CODE@ = Animate
- +Sem/Aniprod     !!= * @CODE@ = Animal Product
- +Sem/Body        !!= * @CODE@ = Bodypart
- +Sem/Body-abstr  !!= * @CODE@ = siellu, vuoig?a, jierbmi
- +Sem/Build       !!= * @CODE@ = Building
- +Sem/Build-part  !!= * @CODE@ = Part of Bulding, like the closet
- +Sem/Cat	      !!= * @CODE@ = Category
- +Sem/Clth        !!= * @CODE@ = Clothes
- +Sem/Clth-jewl   !!= * @CODE@ = Jewelery
- +Sem/Clth-part   !!= * @CODE@ = part of clothes, boallu, sávdnji...
- +Sem/Ctain       !!= * @CODE@ = Container
- +Sem/Ctain-abstr !!= * @CODE@ = Abstract container like bank account
- +Sem/Ctain-clth  !!= * @CODE@ = Soft container, like a rucksack
- +Sem/Curr        !!= * @CODE@ = Currency like dollár, Not Money
- +Sem/Dance       !!= * @CODE@ = Dance
- +Sem/Dir	      !!= * @CODE@ = Direction like GPS-kursa
- +Sem/Domain      !!= * @CODE@ = Domain like politics, reindeerherding (a system of actions)
- +Sem/Drink       !!= * @CODE@ = Drink
- +Sem/Dummytag    !!= * @CODE@ = Dummytag
- +Sem/Edu         !!= * @CODE@ = Educational event
- +Sem/Event       !!= * @CODE@ = Event
- +Sem/Feat		  !!= * @CODE@ = Feature, like Árvu
- +Sem/Feat-phys   !!= * @CODE@ = Physiological feature, ivdni, fárda
- +Sem/Feat-psych  !!= * @CODE@ = Psychological feauture
- +Sem/Feat-measr  !!= * @CODE@ = Psychological feauture
- +Sem/Fem         !!= * @CODE@ = Female name
- +Sem/Food        !!= * @CODE@ = Food
- +Sem/Food-med    !!= * @CODE@ = Medicine
- +Sem/Furn        !!= * @CODE@ = Furniture
- +Sem/Game        !!= * @CODE@ = Game
- +Sem/Geom        !!= * @CODE@ = Geometrical object
- +Sem/Group       !!= * @CODE@ = Animal or Human Group
- +Sem/Hum         !!= * @CODE@ = Human
- +Sem/Hum-abstr   !!= * @CODE@ = Human abstract
- +Sem/Ideol       !!= * @CODE@ = Ideology
- +Sem/Lang        !!= * @CODE@ = Language
- +Sem/Mal         !!= * @CODE@ = Male name
- +Sem/Mat         !!= * @CODE@ = Material for producing things
- +Sem/Measr       !!= * @CODE@ = Measure
- +Sem/Money       !!= * @CODE@ = Has to do with money, like wages, not Curr(ency)
- +Sem/Obj         !!= * @CODE@ = Object
- +Sem/Obj-clo     !!= * @CODE@ = Cloth
- +Sem/Obj-cogn     !!= * @CODE@ = Cloth
- +Sem/Obj-el      !!= * @CODE@ = (Electrical) machine or apparatus
- +Sem/Obj-ling    !!= * @CODE@ = Object with something written on it
- +Sem/Obj-rope    !!= * @CODE@ = flexible ropelike object
- +Sem/Obj-surfc   !!= * @CODE@ = Surface object
- +Sem/Org         !!= * @CODE@ = Organisation
- +Sem/Part		  !!= * @CODE@ = Feature, oassi, bealli
- +Sem/Perc-cogn     !!= * @CODE@ = Cloth
- +Sem/Perc-emo    !!= * @CODE@ = Emotional perception
- +Sem/Perc-phys	  !!= * @CODE@ = Physical perception
- +Sem/Perc-psych	  !!= * @CODE@ = Physical perception
- +Sem/Plant       !!= * @CODE@ = Plant
- +Sem/Plant-part  !!= * @CODE@ = Plant part
- +Sem/Plc         !!= * @CODE@ = Place
- +Sem/Plc-abstr        !!= * @CODE@ = Abstract place
- +Sem/Plc-elevate      !!= * @CODE@ = Place
- +Sem/Plc-line         !!= * @CODE@ = Place
- +Sem/Plc-water        !!= * @CODE@ = Place
- +Sem/Pos		  !!= * @CODE@ = Position (as in social position job)
- +Sem/Process	  !!= * @CODE@ = Process
- +Sem/Prod		  !!= * @CODE@ = Product
- +Sem/Prod-audio  !!= * @CODE@ = Audio product
- +Sem/Prod-cogn	  !!= * @CODE@ = Cognition product
- +Sem/Prod-ling	  !!= * @CODE@ = Linguistic product
- +Sem/Prod-vis	  !!= * @CODE@ = Visual product
- +Sem/Rel		  !!= * @CODE@ = Relation
- +Sem/Route       !!= * @CODE@ = Route
- +Sem/Rule        !!= * @CODE@ = Rule or convention
- +Sem/Semcon      !!= * @CODE@ = Semantic concept
- +Sem/Sign	      !!= * @CODE@ = Sign (e.g. numbers, punctuation) 
- +Sem/Sport      !!= * @CODE@ = Sport
- +Sem/State		  !!= * @CODE@ = 
- +Sem/State-sick  !!= * @CODE@ = Illness
- +Sem/Substnc     !!= * @CODE@ = Substance, like Air and Water
- +Sem/Sur         !!= * @CODE@ = Surname
- +Sem/Symbol	  !!= * @CODE@ = Symbol
- +Sem/Time        !!= * @CODE@ = Time
- +Sem/Tool		  !!= * @CODE@ = Prototypical tool for repairing things
- +Sem/Tool-catch  !!= * @CODE@ = Tool used for catching (e.g. fish)
- +Sem/Tool-clean  !!= * @CODE@ = Tool used for cleaning
- +Sem/Tool-it	  !!= * @CODE@ = Tool used in IT
- +Sem/Tool-measr  !!= * @CODE@ = Tool used for measuring
- +Sem/Tool-music  !!= * @CODE@ = Music instrument
- +Sem/Tool-write  !!= * @CODE@ = Writing tool
- +Sem/Txt         !!= * @CODE@ = Text (girji, lávlla...)
- +Sem/Veh         !!= * @CODE@ = Vehicle
- +Sem/Wpn         !!= * @CODE@ = Weapon
- +Sem/Wthr        !!= * @CODE@ = The Weather or the state of ground
+
++Sem/Act         !!= * @CODE@ = Activity
++Sem/Adr         !!= * @CODE@ = Webadr
++Sem/Amount      !!= * @CODE@ = Amount
++Sem/Ani      !!= * @CODE@ Animate	    (names)
++Sem/Ani-fish !!= * @CODE@ Animate	 
++Sem/Aniprod     !!= * @CODE@ = Animal Product
++Sem/Ant      !!= * @CODE@ Anthroponym  (names)
++Sem/Body        !!= * @CODE@ = Bodypart
++Sem/Body-abstr  !!= * @CODE@ = siellu, vuoig?a, jierbmi
++Sem/Build       !!= * @CODE@ = Building
++Sem/Build-part  !!= * @CODE@ = Part of Bulding, like the closet
++Sem/Cat	      !!= * @CODE@ = Category
++Sem/Clth        !!= * @CODE@ = Clothes
++Sem/Clth-jewl   !!= * @CODE@ = Jewelery
++Sem/Clth-part   !!= * @CODE@ = part of clothes, boallu, sávdnji...
++Sem/Constellation  !!= * @CODE@  
++Sem/Ctain       !!= * @CODE@ = Container
++Sem/Ctain-abstr !!= * @CODE@ = Abstract container like bank account
++Sem/Ctain-clth  !!= * @CODE@ = Soft container, like a rucksack
++Sem/Curr        !!= * @CODE@ = Currency like dollár, Not Money
++Sem/Dance       !!= * @CODE@ = Dance
++Sem/Dir	      !!= * @CODE@ = Direction like GPS-kursa
++Sem/Domain      !!= * @CODE@ = Domain like politics, reindeerherding (a system of actions)
++Sem/Drink       !!= * @CODE@ = Drink
++Sem/Dummytag    !!= * @CODE@ = Dummytag
++Sem/Edu         !!= * @CODE@ = Educational event
++Sem/Event       !!= * @CODE@ = Event
++Sem/Feat		  !!= * @CODE@ = Feature, like Árvu
++Sem/Feat-measr  !!= * @CODE@ = Psychological feauture
++Sem/Feat-phys   !!= * @CODE@ = Physiological feature, ivdni, fárda
++Sem/Feat-psych  !!= * @CODE@ = Psychological feauture
++Sem/Fem         !!= * @CODE@ = Female name
++Sem/Food        !!= * @CODE@ = Food
++Sem/Food-med    !!= * @CODE@ = Medicine
++Sem/Furn        !!= * @CODE@ = Furniture
++Sem/Game        !!= * @CODE@ = Game
++Sem/Geom        !!= * @CODE@ = Geometrical object
++Sem/Group       !!= * @CODE@ = Animal or Human Group
++Sem/Holiday  !!= * @CODE@ 
++Sem/Hum         !!= * @CODE@ = Human
++Sem/Hum-abstr   !!= * @CODE@ = Human abstract
++Sem/Ideol       !!= * @CODE@ = Ideology
++Sem/Kin   !!= * @CODE@ 
++Sem/Lang        !!= * @CODE@ = Language
++Sem/Mal         !!= * @CODE@ = Male name
++Sem/Manner
++Sem/Mat         !!= * @CODE@ = Material for producing things
++Sem/Measr       !!= * @CODE@ = Measure
++Sem/Money       !!= * @CODE@ = Has to do with money, like wages, not Curr(ency)
++Sem/Obj      !!= * @CODE@ 			    (names)
++Sem/Obj-clo     !!= * @CODE@ = Cloth
++Sem/Obj-cogn     !!= * @CODE@ = Cloth
++Sem/Obj-el      !!= * @CODE@ = (Electrical) machine or apparatus
++Sem/Obj-ling    !!= * @CODE@ = Object with something written on it
++Sem/Obj-rope    !!= * @CODE@ = flexible ropelike object
++Sem/Obj-surfc   !!= * @CODE@ = Surface object
++Sem/Org      !!= * @CODE@ Organization (names)
++Sem/Part		  !!= * @CODE@ = Feature, oassi, bealli
++Sem/Perc-cogn     !!= * @CODE@ = Cloth
++Sem/Perc-emo    !!= * @CODE@ = Emotional perception
++Sem/Perc-phys	  !!= * @CODE@ = Physical perception
++Sem/Perc-psych	  !!= * @CODE@ = Psychical perception
++Sem/Plant       !!= * @CODE@ = Plant
++Sem/Plant-part  !!= * @CODE@ = Plant part
++Sem/Plc      !!= * @CODE@ Place name   (names)
++Sem/Plc-abstr        !!= * @CODE@ = Abstract place
++Sem/Plc-elevate      !!= * @CODE@ = Place
++Sem/Plc-line         !!= * @CODE@ = Place
++Sem/Plc-water        !!= * @CODE@ = Place
++Sem/Pos		  !!= * @CODE@ = Position (as in social position job)
++Sem/Process	  !!= * @CODE@ = Process
++Sem/Prod		  !!= * @CODE@ = Product
++Sem/Prod-audio  !!= * @CODE@ = Audio product
++Sem/Prod-cogn	  !!= * @CODE@ = Cognition product
++Sem/Prod-ling	  !!= * @CODE@ = Linguistic product
++Sem/Prod-vis	  !!= * @CODE@ = Visual product
++Sem/Rel		  !!= * @CODE@ = Relation
++Sem/Route       !!= * @CODE@ = Route
++Sem/Rule        !!= * @CODE@ = Rule or convention
++Sem/Semcon      !!= * @CODE@ = Semantic concept
++Sem/Sign	      !!= * @CODE@ = Sign (e.g. numbers, punctuation) 
++Sem/Sport      !!= * @CODE@ = Sport
++Sem/State		  !!= * @CODE@ = 
++Sem/State-sick  !!= * @CODE@ = Illness
++Sem/Substnc     !!= * @CODE@ = Substance, like Air and Water
++Sem/Sur      !!= * @CODE@ Surname	    (names)
++Sem/Symbol	  !!= * @CODE@ = Symbol
++Sem/Time        !!= * @CODE@ = Time
++Sem/Tool		  !!= * @CODE@ = Prototypical tool for repairing things
++Sem/Tool-catch  !!= * @CODE@ = Tool used for catching (e.g. fish)
++Sem/Tool-clean  !!= * @CODE@ = Tool used for cleaning
++Sem/Tool-it	  !!= * @CODE@ = Tool used in IT
++Sem/Tool-measr  !!= * @CODE@ = Tool used for measuring
++Sem/Tool-music  !!= * @CODE@ = Music instrument
++Sem/Tool-write  !!= * @CODE@ = Writing tool
++Sem/Txt         !!= * @CODE@ = Text (girji, lávlla...)
++Sem/Veh         !!= * @CODE@ = Vehicle
++Sem/Wpn         !!= * @CODE@ = Weapon
++Sem/Wthr        !!= * @CODE@ = The Weather or the state of ground
+
+!! !Multiple Semantic tags:
++Sem/Act_Fruit                      !!= * @CODE@ 
++Sem/Act_Group					    !!≈ * @CODE@ Activity and Group
++Sem/Act_Plc					    !!≈ * @CODE@   A persons job is an activity, and a place as well
++Sem/Act_Route					    !!≈ * @CODE@ Activity and Route, ie johtolat
++Sem/Amount_Build				    !!≈ * @CODE@   Amount and Building
++Sem/Amount_Semcon				    !!≈ * @CODE@
++Sem/Ani_Body-abstr_Hum			    !!≈ * @CODE@
++Sem/Ani_Build					    !!≈ * @CODE@
++Sem/Ani_Build-part				    !!≈ * @CODE@
++Sem/Ani_Build_Hum_Txt			    !!≈ * @CODE@
++Sem/Ani_Group					    !!≈ * @CODE@
++Sem/Ani_Group_Hum				    !!≈ * @CODE@
++Sem/Ani_Group_Prod-vis             !!≈ * @CODE@
++Sem/Ani_Hum					    !!≈ * @CODE@
++Sem/Ani_Hum_Plc				    !!≈ * @CODE@
++Sem/Ani_Hum_Time				    !!≈ * @CODE@
++Sem/Ani_Plc					    !!≈ * @CODE@
++Sem/Ani_Plc_Txt				    !!≈ * @CODE@
++Sem/Ani_Time					    !!≈ * @CODE@
++Sem/Ani_Veh					    !!≈ * @CODE@
++Sem/Aniprod_Hum				    !!≈ * @CODE@
++Sem/Aniprod_Obj-clo			    !!≈ * @CODE@
++Sem/Aniprod_Perc-phys			    !!≈ * @CODE@
++Sem/Aniprod_Plc				    !!≈ * @CODE@
++Sem/Aniprod_Plc_Route				!!≈ * @CODE@
++Sem/Body-abstr_Feat-cogn           !!≈ * @CODE@
++Sem/Body-abstr_Prod-audio_Semcon   !!≈ * @CODE@
++Sem/Body_Body-abstr			    !!≈ * @CODE@
++Sem/Body_Clth					    !!≈ * @CODE@
++Sem/Body_Food					    !!≈ * @CODE@
++Sem/Body_Group_Hum				    !!≈ * @CODE@
++Sem/Body_Group_Hum_Time            !!≈ * @CODE@
++Sem/Body_Hum					    !!≈ * @CODE@
++Sem/Body_Mat					    !!≈ * @CODE@
++Sem/Body_Measr					    !!≈ * @CODE@
++Sem/Body_Obj_Tool-catch		    !!≈ * @CODE@
++Sem/Body_Plc					    !!≈ * @CODE@
++Sem/Body_Plc-elevate			    !!≈ * @CODE@
++Sem/Body_Time					    !!≈ * @CODE@
++Sem/Build-part_Cat                 !!= * @CODE@
++Sem/Build-part_Cat_Ctain           !!= * @CODE@
++Sem/Build-part_Cat_Ctain_Mat       !!= * @CODE@
++Sem/Build-part_Ctain               !!= * @CODE@
++Sem/Build-part_Ctain_Mat           !!= * @CODE@
++Sem/Build-part_Ctain_Obj           !!= * @CODE@
++Sem/Build-part_Plc				    !!≈ * @CODE@
++Sem/Build_Build-part			    !!≈ * @CODE@
++Sem/Build_Clth-part			    !!≈ * @CODE@
++Sem/Build_Edu_Org				    !!≈ * @CODE@
++Sem/Build_Event_Org                !!≈ * @CODE@
++Sem/Build_Obj      			    !!≈ * @CODE@
++Sem/Build_Org					    !!≈ * @CODE@
++Sem/Build_Route				    !!≈ * @CODE@
++Sem/Cat_Group_Hum	                !!= * @CODE@
++Sem/Cat_Group_Hum_Plc	            !!= * @CODE@
++Sem/Clth-jewl_Curr				    !!≈ * @CODE@
++Sem/Clth-jewl_Curr_Obj             !!≈ * @CODE@
++Sem/Clth-jewl_Curr_Obj_Org         !!≈ * @CODE@
++Sem/Clth-jewl_Fruit                !!≈ * @CODE@
++Sem/Clth-jewl_Money			    !!≈ * @CODE@
++Sem/Clth-jewl_Org				    !!≈ * @CODE@
++Sem/Clth-jewl_Plant			    !!≈ * @CODE@
++Sem/Clth_Hum					    !!≈ * @CODE@
++Sem/Clth_Obj-clo                   !!≈ * @CODE@
++Sem/Ctain-abstr_Org			    !!≈ * @CODE@
++Sem/Ctain-clth_Plant			    !!≈ * @CODE@
++Sem/Ctain-clth_Veh				    !!≈ * @CODE@
++Sem/Ctain_Feat-phys			    !!≈ * @CODE@
++Sem/Ctain_Furn					    !!≈ * @CODE@
++Sem/Ctain_Plc					    !!≈ * @CODE@
++Sem/Ctain_Tool					    !!≈ * @CODE@
++Sem/Ctain_Tool-measr			    !!≈ * @CODE@
++Sem/Curr_Org					    !!≈ * @CODE@
++Sem/Dance_Org					    !!≈ * @CODE@
++Sem/Dance_Prod-audio			    !!≈ * @CODE@
++Sem/Domain_Food-med			    !!≈ * @CODE@
++Sem/Domain_Hum                    !!= * @CODE@
++Sem/Domain_Prod-audio			    !!≈ * @CODE@
++Sem/Drink_Plant                    !!= * @CODE@
++Sem/Edu_Event					    !!≈ * @CODE@
++Sem/Edu_Geom                      !!= * @CODE@ 
++Sem/Edu_Group_Hum				    !!≈ * @CODE@
++Sem/Edu_Hum                       !!= * @CODE@ 
++Sem/Edu_Mat					    !!≈ * @CODE@
++Sem/Edu_Org					    !!≈ * @CODE@
++Sem/Event_Food					    !!≈ * @CODE@
++Sem/Event_Hum					    !!≈ * @CODE@
++Sem/Event_Plc					    !!≈ * @CODE@
++Sem/Event_Plc-elevate              !!≈ * @CODE@
++Sem/Event_Time					    !!≈ * @CODE@
++Sem/Feat-measr_Plc 			    !!≈ * @CODE@
++Sem/Feat-phys_Tool-write		    !!≈ * @CODE@
++Sem/Feat-phys_Veh				    !!≈ * @CODE@
++Sem/Feat-phys_Wthr				    !!≈ * @CODE@
++Sem/Feat-psych_Hum				    !!≈ * @CODE@
++Sem/Feat-psych_Plc                 !!≈ * @CODE@
++Sem/Feat_Plant					    !!≈ * @CODE@
++Sem/Food_Obj-surfc                 !!≈ * @CODE@
++Sem/Food_Perc-phys				    !!≈ * @CODE@
++Sem/Food_Plant					    !!≈ * @CODE@
++Sem/Fruit_Hum                      !!= * @CODE@
++Sem/Game_Obj-play				    !!≈ * @CODE@
++Sem/Geom_Hum_Plc                   !!≈ * @CODE@
++Sem/Geom_Obj					    !!≈ * @CODE@
++Sem/Group_Hum					    !!≈ * @CODE@
++Sem/Group_Hum_Org				    !!≈ * @CODE@
++Sem/Group_Hum_Plc				    !!≈ * @CODE@
++Sem/Group_Hum_Prod-vis			    !!≈ * @CODE@
++Sem/Group_Org					    !!≈ * @CODE@
++Sem/Group_Prod-vis                 !!= * @CODE@ 
++Sem/Group_Sign					    !!≈ * @CODE@
++Sem/Group_Txt					    !!≈ * @CODE@
++Sem/Hum_Lang					    !!≈ * @CODE@
++Sem/Hum_Lang_Plc				    !!≈ * @CODE@
++Sem/Hum_Lang_Time				    !!≈ * @CODE@
++Sem/Hum_Mat_Tool                   !!≈ * @CODE@
++Sem/Hum_Obj					    !!≈ * @CODE@
++Sem/Hum_Org					    !!≈ * @CODE@
++Sem/Hum_Plant					    !!≈ * @CODE@
++Sem/Hum_Plc					    !!≈ * @CODE@
++Sem/Hum_Sign                       !!≈ * @CODE@
++Sem/Hum_Tool					    !!≈ * @CODE@
++Sem/Hum_Tool-it                    !!= * @CODE@ = Human
++Sem/Hum_Veh					    !!≈ * @CODE@
++Sem/Hum_Wthr					    !!≈ * @CODE@
++Sem/Lang_Tool					    !!≈ * @CODE@
++Sem/Mat_Plant					    !!≈ * @CODE@
++Sem/Mat_Txt					    !!≈ * @CODE@
++Sem/Measr_Sign	                    !!= * @CODE@ = Sign (e.g. numbers, punctuation) 
++Sem/Measr_Time					    !!≈ * @CODE@
++Sem/Money_Obj					    !!≈ * @CODE@
++Sem/Money_Part                     !!≈ * @CODE@
++Sem/Money_Txt					    !!≈ * @CODE@
++Sem/Obj-ling_Obj-surfc             !!= * @CODE@
++Sem/Obj-play					    !!≈ * @CODE@
++Sem/Obj-play_Sport				    !!≈ * @CODE@
++Sem/Obj_Semcon					    !!≈ * @CODE@
++Sem/Obj_Sign                       !!≈ * @CODE@
++Sem/Obj_State					    !!≈ * @CODE@
++Sem/Obj_Symbol                     !!≈ * @CODE@
++Sem/Obj_Veh					    !!≈ * @CODE@
++Sem/Oeuvre					    !!≈ * @CODE@ (not used so far (?)), note oeu-
++Sem/Oeuvre-txt					    !!≈ * @CODE@ (so far only Biblija, changed to Sem/Txt)
++Sem/Org_Prod-audio                 !!≈ * @CODE@
++Sem/Org_Prod-cogn                  !!≈ * @CODE@
++Sem/Org_Prod-vis                   !!≈ * @CODE@
++Sem/Org_Rule					    !!≈ * @CODE@
++Sem/Org_Txt					    !!≈ * @CODE@
++Sem/Org_Veh					    !!≈ * @CODE@
++Sem/Part_Prod-cogn				    !!≈ * @CODE@
++Sem/Part_Substnc				    !!≈ * @CODE@
++Sem/Perc-emo_Wthr				    !!≈ * @CODE@
++Sem/Plant_Plant-part			    !!≈ * @CODE@
++Sem/Plant_Tool					    !!≈ * @CODE@
++Sem/Plant_Tool-measr			    !!≈ * @CODE@
++Sem/Plc-abstr_Rel_State		    !!≈ * @CODE@
++Sem/Plc-abstr_Route			    !!≈ * @CODE@
++Sem/Plc_Pos					    !!≈ * @CODE@
++Sem/Plc_Route					    !!≈ * @CODE@
++Sem/Plc_State					    !!≈ * @CODE@
++Sem/Plc_Substnc				    !!≈ * @CODE@
++Sem/Plc_Substnc_Wthr			    !!≈ * @CODE@
++Sem/Plc_Time					    !!≈ * @CODE@
++Sem/Plc_Time_Wthr                  !!≈ * @CODE@
++Sem/Plc_Tool-catch				    !!≈ * @CODE@
++Sem/Plc_Wthr					    !!≈ * @CODE@
++Sem/Prod-audio_Txt				    !!≈ * @CODE@
++Sem/Prod-cogn_Txt				    !!≈ * @CODE@
++Sem/Semcon_Txt					    !!≈ * @CODE@
++Sem/State-sick_Substnc             !!≈ * @CODE@
++Sem/Substnc_Wthr				    !!≈ * @CODE@
++Sem/Time_Wthr					    !!≈ * @CODE@
 
 
 
@@ -299,22 +568,59 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Foc/son
 +Foc/jõs
 +Foc/õs
++Foc/ǥõs
 +Foc/mes
 +Foc/ba
 +Foc/âs
 +Foc/ât
 +Foc/tâma
-+Foc/ǥõs
 +Foc/tõt
 
+!! !Tags distinguishing different versions of the same lemma (before POS)
+!! In the xml the varid attribute is used in the st element with a mere numeric value
+!! an extra lemma attribute is inserted in the st element, e.g. lemma="tõlvvad"
++v1   !!≈ * __@CODE@__
++v2   !!≈ * __@CODE@__
++v3   !!≈ * __@CODE@__
++v4   !!≈ * __@CODE@__
++v5   !!≈ * __@CODE@__
++v6   !!≈ * __@CODE@__
++v7   !!≈ * __@CODE@__
++v8   !!≈ * __@CODE@__
++v9   !!≈ * __@CODE@__
++v10  !!≈ * __@CODE@__
++v11  !!≈ * __@CODE@__
++v12  !!≈ * __@CODE@__
++v13  !!≈ * __@CODE@__
++v14  !!≈ * __@CODE@__
++v15  !!≈ * __@CODE@__
++v16  !!≈ * __@CODE@__
++v17  !!≈ * __@CODE@__ 
++v18  !!≈ * __@CODE@__ 
++v19  !!≈ * __@CODE@__ 
++v20  !!≈ * __@CODE@__
++v21  !!≈ * __@CODE@__
++v22  !!≈ * __@CODE@__
++v23  !!≈ * __@CODE@__
++v24  !!≈ * __@CODE@__
 
 
+!! !Other tags
+
++ABBR               !!≈ * __@CODE@__ Abbreviation
++Symbol !!≈ * @CODE@ = independent symbols in the text stream, like £, €, ©
++ACR                !!≈ * __@CODE@__  Acronym
++CLB                !!≈ * __@CODE@__  Clause border (full stop, comma..)
++PUNCT              !!≈ * __@CODE@__  punctuation
++LEFT               !!≈ * __@CODE@__  left paranthesis
++RIGHT              !!≈ * __@CODE@__  right paranthesis
+^GUESSNOUNROOT  
++Dyn                !!≈ * __@CODE@__  Dynamically generated (acronyms)
+
++Prefix		    !!≈ * __@CODE@__  prefix
 
 !! !Punctuation
-+CLB   !!= * @CODE@
-+PUNCT !!= * @CODE@
 +HYPH  !!= * @CODE@
-+PAR   !!= * @CODE@
 
 !! !!Letters
 
@@ -360,16 +666,41 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !! !!Consonant lengthening
 %{XC%}
 
+!! !!Vowel length and height
+%{õuØ%}      !!= * @CODE@ 
+%{ouØ%}      !!= * @CODE@ 
+%{âõØ%}      !!= * @CODE@ 
+%{ẹiØ%}      !!= * @CODE@ 
+%{äaØ%}      !!= * @CODE@ 
+%{äåØ%}      !!= * @CODE@ 
+%{eiØ%}      !!= * @CODE@ 
+%{åoØ%}      !!= * @CODE@ 
+%{ẹeiØ%}     !!= * @CODE@ 
+! for vowel height, by default vowels are low.
+%{õu%}      !!= * @CODE@ 
+%{ou%}      !!= * @CODE@ 
+%{âõ%}      !!= * @CODE@ 
+%{ẹi%}      !!= * @CODE@ 
+%{äa%}      !!= * @CODE@ 
+%{äå%}      !!= * @CODE@ 
+%{ei%}      !!= * @CODE@ 
+%{åo%}      !!= * @CODE@ 
+%{ẹei%}     !!= * @CODE@ 
+%{âõe%}     !!= * @CODE@ 
+%{âõäe%}    !!= * @CODE@ 
+
+
 !!  !! CHARACTERISTIC BREAKDOWN 2015-02-17
 %^VV2V        !!= * @CODE@ Shortens vowel 
 %^V2VV 	      !!= * @CODE@ Lengthens vowel
 %^CC2C 	      !!= * @CODE@ Shortens consonant
+%^CC2CAllegro 	      !!= * @CODE@ Shortens consonant
 %^C2CC 	      !!= * @CODE@ Lengthens consonant
 %^CC2CCC 	!!= * @CODE@ Strong to Extra Strong consonant
 %^CCC2C 	!!= * @CODE@ Extra Strong to Weak consonant
+%^CCC2CAllegro 	!!= * @CODE@ Extra Strong to Weak consonant
 %^CCC2CC 	!!= * @CODE@ Extra Strong to Strong consonant
 %^XYY2XY      !!= * @CODE@ Shortens consonant cluster
-%^XY2XYY      !!= * @CODE@ Lengthens consonant cluster
 %^XYY2VY	!!= * @CODE@ Consonant cluster to vowel and consonant sijdd:siid
 %^XYY2VYY	!!= * @CODE@ Consonant cluster to vowel and geminate uvdd:ouʹdd
 %^XYY2IY	!!= * @CODE@ Consonant cluster to i  and consonant kueʹhtt:kueiʹt
@@ -377,10 +708,11 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 %^VYY2XYY	!!= * @CODE@ Consonant cluster i/u to j/v
 
 %^KKK2GG	!!= * @CODE@ Geminate weakening 
+%^KKK2G		!!= * @CODE@ Strong Geminate allegro
 %^KK2GG		!!= * @CODE@ Geminate weakening	  jokk:jooǥǥ
 %^K2GG	!!= * @CODE@ Geminate weakening čårrõs:čårrõõzz
-%^KK2G		!!= * @CODE@ Geminate weakening	 in allegro pååss:påz
-%^K2G		!!= * @CODE@ Geminate weakening	 in allegro čâustõk
+%^KK2GAllegro		!!= * @CODE@ Geminate weakening	 in allegro pååss:påz
+%^K2GAllegro		!!= * @CODE@ Geminate weakening	 in allegro čâustõk
 
 %^APen !!= * @CODE@ for combinations 2015-10-04 Jack
 %^Pen !!= * @CODE@ for combinations 2015-09-28 Miikka
@@ -394,102 +726,9 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 %^I2J		!!= * @CODE@ in agent names
 %^I2Zero		!!= * @CODE@ in agent names
 
-! for guesser
-! Alphabetical Order a e i o u y å ä ö
-%{aØ%}
-%{aä%}
-%{aäØ%}
+%{ʹØ%}		!!= * @CODE@ Modifier Letter prime
+%{ʼØ%}		!!= * @CODE@ used between l, n, j and subsequent j and elsewhere
 
-%{âe%}
-%{âeẹiØ%}
-%{âeẹõ%}
-%{âeiõØ%}
-%{âeõ%}
-%{âõ%}
-%{âõØ%}
-%{âØ%}
-
-%{eẹ%}
-%{eẹi%}
-%{eẹiØ%}
-%{eẹä%}
-%{eẹØ%}
-%{eØ%}
-%{ei%}
-%{eiØ%}
-%{eå%}
-
-%{ẹØ%}
-%{ẹi%}
-%{ẹiØ%}
-%{âä%}
-%{ẹä%}
-%{ẹåä%}
-
-%{ij%}
-%{ijØ%}
-%{iõ%}
-%{iØ%}
-
-%{oØ%}
-%{oå%}
-%{oåØ%}
-%{oõu%}
-%{oõuØ%}
-
-%{õu%}
-%{õØ%}
-
-%{uØ%}
-%{åØ%}
-%{åä%}
-%{äØ%}
-%{1ˈØ%}
-%{2ˈØ%}
-%{%ʹØ%}
-%{1%ʹØ%}
-%{2%ʹØ%}
-%{bØ%}
-%{cØ%}
-%{cʒ%}
-%{cʒØ%}
-%{čØ%}
-%{čj%}
-%{čjØ%}
-%{dØ%}
-%{dđ%}
-%{đØ%}
-%{fØ%}
-%{gØ%}
-%{gǧØ%}
-%{gǧǥ%}
-%{gǧǥj%}
-%{ǥØ%}
-%{hi%}
-%{hu%}
-%{hØ%}
-%{jØ%}
-%{kǩ%}
-%{kǩØ%}
-%{kØ%}
-%{kǩǥj%}
-%{kǩǥjØ%}
-%{lØ%}
-%{mØ%}
-%{ŋØ%}
-%{nØ%}
-%{pØ%}
-%{rØ%}
-%{sz%}
-%{szØ%}
-%{sØ%}
-%{šžØ%}
-%{šž%}
-%{tØ%}
-%{tđ%}
-%{vØ%}
-%{ʒØ%}
-%{ǯØ%}
 
 
 !! !!Gradation triggers 2015.01.23
@@ -527,42 +766,27 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 %^PAL       !!= * @CODE@ for placing palatalization mark __ʹ__
 %^PALK     !!= * @CODE@ causes k:ǩ and g:ǧ
 %^PALNo     !!= * @CODE@ This is to facilitate +Sg+Nom lemma:stem equivalence; it removes palatal supersegmental
+%^PALI   !!= * @CODE@ Palatalisation causes â:i, etc.
 %^PALE   !!= * @CODE@ Palatalisation causes â:e, etc.
 %^PALÄ   !!= * @CODE@ Palatalisation causes â:ä, etc.
 %^PALẸ	 !!= * @CODE@ Palatalisation causes å:ẹ suẹjj BUT suejjin (cf. 2012: 150, but )
 %^PALÂ	 !!= * @CODE@ Depalatalisation causes 0:â keâmnna
 %^PALÕ	 !!= * @CODE@ Depalatalisation causes â:õ tiõttum
-! %^PenPAL   != * @CODE@ Penultimate Palatalisation cieʹǩǩes+N+Sg+Gen: ceäkˈkaz
-! %^PenPALNo   != * @CODE@ Penultimate Palatalisation
-! %^PenPALE   != * @CODE@ Penultimate Palatalisation
-! %^PenPALÄ   != * @CODE@ Penultimate Palatalisation
-! %^PenPALẸ   != * @CODE@ Penultimate Palatalisation
-!%^PenPALÂ	 != * @CODE@ Depalatalisation causes 0:â keâmnna
-!%^PenPALÕ	 != * @CODE@ Depalatalisation causes â:õ tiõttum
  %^RmVow !!= * @CODE@ for removing vowels e, â, a before final consonant in stem
  %^UltRmVow !!= * @CODE@ for removing vowels e, â, a after final consonant in stem
 ! %^PenRmVow != * @CODE@ for removing penultimate vowels e, â, a, i.e. vowel befor final stem consonant/consonants
 %^RmCns !!= * @CODE@ for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta 
 %^VC         !!= * @CODE@ Voicing s:z š:ž
- %^DeVC         !!= * @CODE@ devoicing z:s ž:š
-%^VOWLower  !!= * @CODE@ for lowering
- %^LowerI2E	 !!= * @CODE@ this is for diphthong in mieʹlǩǩ:meâlkka
-! %^PenLowerI2E	 != * @CODE@ this is for diphthong in mieʹlǩǩ:meâlkka
+
+%^VOWLower  !!= * @CODE@ for lowering i>e, õ>â, â>ä, u>o, o>å
  %^U2Õ	 	 !!= * @CODE@ lowers u>õ	 
 ! %^PenU2Õ	 != * @CODE@ lowers u>õ	 
 
-%^VOWRaise  !!= * @CODE@ for raising
-! %^PenVOWRaise != * @CODE@ e>i, ä>e
-! %^PenVOWLower != * @CODE@ i>e, õ>â, â>ä, u>o, o>å
-%^VOWBack  !!= * @CODE@ for backing
-!%^PenVOWBack	     != * @CODE@ Backing ä>õ,  vuäinn BUT vuõiʹni
+%^VOWRaise  !!= * @CODE@ for raising e>i, ä>e
 
-%^VOWFront  !!= * @CODE@ for fronting
+
 %^VOWL      !!= * @CODE@ for lengthening BEING PHASED OUT
-%^VOWSH 	!!= * @CODE@ for shortening
 %^VOWXSH	  !!= * @CODE@ for extra shortening
-%^VOWTense  !!= * @CODE@ for tense vowel miârr:mieʹrre
-%^VOWLax   !!= * @CODE@ e:â
 %^VOWXL     !!= * @CODE@ for extralengthening
 %^Â		!!= * @CODE@ Indicates placement of â in stem
 
@@ -574,9 +798,15 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 %{%ʹ%}      !!= * @CODE@ archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one.
 %{EÂ%} 	    !!= * @CODE@ archiform for ie:eä variation, e.g. pieʹǩǩ+N+Sg+Ill:peâkka
 
+!! Hyphen at compound word boundary
+%{%-Ø%} !!= * @CODE@ Zero versus hyphen in compounding
+%^Hyphen    !!= * @CODE@ at compound word boundary with %-
+%^NoHyphen    !!= * @CODE@ at compound word boundary
 
+ 😱 	      !!= ! Compounding rules
 
 !! !!Escaped symbols
+
 
 !! Symbols that need to be escaped on the lower side (towards twolc):
  »7     !! * »
@@ -586,21 +816,62 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 !! The Usage extents are marked using following tags:
 
- +Err/Orth     !!= * @CODE@ 
+ +Err/Orth        !!= * @CODE@  substandard, not in normative fst
+ +Err/Lex         !!≈ * __@CODE@__ substandard, not in normative fst, no normative lemma
+ +Err/DerSub      !!≈ * __@CODE@__ substandard for derivation, not in normative fst, no normative lemma
+ +Err/CmpSub      !!≈ * __@CODE@__ substandard for compounding, not in normative fst (wrong form or POS in first part)
+ +Err/MissingHyph !!≈ * __@CODE@__ substandard for compounding, not in normative fst (needs hyph)
+ +Err/Hyph        !!≈ * __@CODE@__ substandard for compounding, not in normative fst (should have no hyphen)
+ +Err/SpaceCmp    !!≈ * __@CODE@__ used for compounds written apart - only retained in the HFST Grammar Checker disambiguation analyser
+ +Err/Spellrelax  !!≈ * __@CODE@__ used to tag spellrelaxed typos (tag is inserted via flag diacritics)
+ +Err/GenreLeudd        !!= * @CODE@ 
+ +Err/Orth-nom-acc        !!= * @CODE@ 
+ +Err/Orth-nom-gen        !!= * @CODE@ 
+
  +Use/Marg        !!= * __@CODE@__ marginal (?)
  +Use/-Spell      !!= * __@CODE@__ Excluded in speller
  +Use/SpellNoSugg !!= * __@CODE@__ recognized but not suggested in speller
  +Use/Circ        !!= * __@CODE@__ circular paths (old ^C^)
  +Use/CircN       !!= * __@CODE@__ circular paths for the numerals (old ^N^)
  +Use/NG          !!= * __@CODE@__ not-generate, for ped generation isme-ped.fst
+ +Use/Ped	  !!= * __@CODE@__ for use with pedagogical work
+ +Largo	          !!= * __@CODE@__ largo variant instead of allegro saaǥǥstõõllâd vs saǥstõõllâd
+ +Allegro         !!= * __@CODE@__ never last element of compound words
+ +MWE         !!= * __@CODE@__ never last element of compound words
+
+!! !Dialect tags:
+
+ +Dial/P  !!= * __@CODE@__ Paatsjoki (KKS)
+ +Dial/Pets  !!= * __@CODE@__ Petsamo
+ +Dial/N  !!= * __@CODE@__ Nuortjärvi (KKS)
+ +Dial/S  !!= * __@CODE@__ Suonikylä (KKS)
+
+ +South  !!= * __@CODE@__  
+ +Txt  !!= * __@CODE@__  
+
+
+
 
 !! Compounding
 +Cmp 
 +CmpNP/First
 +CmpNP/Pref
-+Allegro	!!= * __@CODE@__ never last element of compound words
++CmpNP/None
++CmpN/PlG
++CmpN/SgG
++CmpN/SgN
++Cmp/SplitR	!!= * __@CODE@__ This to take care of Oahpo- ja dutkandept - want this in speller Remainder is found to the right
++Cmp/SplitL	!!= * __@CODE@__ Remainder is found to the left
++Cmp/SgNom
++Cmp/SgGen
++Cmp/PlGen
 
 !! !!Flag diacritics
+@P.AssocColl.ON@ !!= * __@CODE@__ Used with Kin terms and Ant
+@R.AssocColl.ON@
+@C.AssocColl@
+
+
 !! We have manually optimised the structure of our lexicon using following
 !! flag diacritics to restrict morhpological combinatorics - only allow compounds
 !! with verbs if the verb is further derived into a noun again:
@@ -633,78 +904,82 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 
 LEXICON Root 	  !!= * @CODE@
- !Abbreviation ;      !!= * @CODE@ abbreviations
- !Adposition ;	  !!= * @CODE@
- !ProperNoun ;	  !!= * @CODE@
+    Abbreviation          ; !!= * @CODE@ abbreviations
+    Adposition            ; !!= * @CODE@
+    ProperNoun            ; !!= * @CODE@
 
- VerbRoot ;		  !!= * @CODE@
- !Adverb ;		  !!= * @CODE@
- !Subjunction ;	  !!= * @CODE@
- !Conjunction ;	  !!= * @CODE@
- !Interjection ;	  !!= * @CODE@
- !Pronoun ;		  !!= * @CODE@
- Punctuation ;	  !!= * @CODE@
- !Particle ;	      !!= * @CODE@
- Symbols     ;
+    VerbRoot              ; !!= * @CODE@
+!    Adverb                ; !!= * @CODE@
+    Subjunction           ; !!= * @CODE@
+    Conjunction           ; !!= * @CODE@
+    Interjection          ; !!= * @CODE@
+    Pronoun               ; !!= * @CODE@
+    Punctuation           ; !!= * @CODE@
+    Symbols               ; !!= * @CODE@
+    Particle              ; !!= * @CODE@
 
+    NEG-COPULA		  ; !!= * @CODE@ This is for 3rd person iʹlla
 !! This generates from merged materials
- !A_sms2x ;	      !!= * @CODE@ This generates from merged materials
- !TRAB_sms2x ;	      !!= * @CODE@ transitive abbreviations
- !TRNUMAB_sms2x ;      !!= * @CODE@ transitive abbreviations with numerals
- !Adp_sms2x ;	      !!= * @CODE@ adpositions
- !Adv_sms2x ;	      !!= * @CODE@ adverbs
- !CC_sms2x ;	      !!= * @CODE@ conjunctions
- !CS_sms2x ;	      !!= * @CODE@ subjunctions
- !Det_sms2x ;	      !!= * @CODE@ determiners
- !Interj_sms2x ;	      !!= * @CODE@ This generates from merged materials
- N_sms2x ;	      !!= * @CODE@ This generates from merged materials
- !N_Prop_sms2x ;	      !!= * @CODE@ This generates from merged materials
- !N_Prop_Toponyms_sms2x ; !!= * @CODE@ Toponymy
- !Num_sms2x ;	      !!= * @CODE@ This generates from merged materials
- !Pcle_sms2x ;	      !!= * @CODE@ This generates from merged materials
- !Pron_sms2x ;	      !!= * @CODE@ This generates from merged materials
- V_sms2x ;	      !!= * @CODE@ This generates from merged materials
+         A_sms2x               ; !!= * @CODE@ This generates from merged materials
+         TRAB_sms2x            ; !!= * @CODE@ transitive abbreviations
+         TRNUMAB_sms2x         ; !!= * @CODE@ transitive abbreviations with numerals
+       ABBR_sms2x ;
+    Adp_sms2x             ; !!= * @CODE@ adpositions
+    Adv_sms2x             ; !!= * @CODE@ adverbs
+    CC_sms2x              ; !!= * @CODE@ conjunctions
+    CS_sms2x              ; !!= * @CODE@ subjunctions
+    Det_sms2x             ; !!= * @CODE@ determiners
+    Interj_sms2x          ; !!= * @CODE@ This generates from merged materials
+@P.AssocColl.ON@    N_Kin_sms2x               ; !!= * @CODE@ This generates from merged materials
+    N_sms2x               ; !!= * @CODE@ This generates from merged materials
+  +Cmp/SplitL+Use/SpellNoSugg#:%-# N_sms2x               ; !!= * @CODE@ This allows split compound nouns
+@P.AssocColl.ON@    N_Prop_sms2x          ; !!= * @CODE@ This generates from merged materials
+    N_Prop_Toponyms_sms2x ; !!= * @CODE@ Toponymy
+    Num_sms2x             ; !!= * @CODE@ This generates from merged materials
+    Pcle_sms2x            ; !!= * @CODE@ This generates from merged materials
+    Prefix_sms2x          ; !!= * @CODE@ This generates from merged materials
+    Pron_sms2x            ; !!= * @CODE@ This generates from merged materials
+    V_sms2x               ; !!= * @CODE@ This generates from merged materials
 
- !Numeral ;		  !!= * @CODE@ This feeds Arabi numerals, borrowed from sme
+         Numeral               ; !!= * @CODE@ This feeds Arabi numerals, borrowed from sme
 
 
-! EXCEPTIONS ;
+    EXCEPTIONS            ;
 
-! A_NEWWORDS ;    !!= * @CODE@ These are new adjectives beginning 2015-02-11
-! ADP_NEWWORDS ;    !!= * @CODE@ These are new adpositions
-! ADV_NEWWORDS ;    !!= * @CODE@ These are new adverbs 
-! CC_NEWWORDS ;    !!= * @CODE@ These are new conjunctions
-! N_NEWWORDS ;    !!= * @CODE@ These are new nouns beginning 2015-01-10
-! PCLE_NEWWORDS ;    !!= * @CODE@ These are particles
-! PRON_NEWWORDS ;    !!= * @CODE@ These are pronouns
-! PROP_NEWWORDS ;  !!= * @CODE@ These are new proper nouns beginning 2015-03-04 
-! TOPONYMS_NEWWORDS ;  !!= * @CODE@ 2016-02-06
-! V_NEWWORDS ;    !!= * @CODE@ These are new verbs
+    A_NEWWORDS            ; !!= * @CODE@ These are new adjectives beginning 2015-02-11
+    ADP_NEWWORDS          ; !!= * @CODE@ These are new adpositions
+    ADV_NEWWORDS          ; !!= * @CODE@ These are new adverbs
+    CC_NEWWORDS           ; !!= * @CODE@ These are new conjunctions
+    N_NEWWORDS            ; !!= * @CODE@ These are new nouns beginning 2015-01-10
+    PCLE_NEWWORDS         ; !!= * @CODE@ These are particles
+    PRON_NEWWORDS         ; !!= * @CODE@ These are pronouns
+    PROP_NEWWORDS         ; !!= * @CODE@ These are new proper nouns beginning 2015-03-04
+    TOPONYMS_NEWWORDS     ; !!= * @CODE@ 2016-02-06
+    V_NEWWORDS            ; !!= * @CODE@ These are new verbs
+ ProperNoun-smi ; !!= * @CODE@ work with smi 2018-08-23
+! ProperNoun-smi-nocomp ; !!= * __@CODE@__ work with smi 2018-08-23
 
 !! INCOMING _lemma:stem Contlex_ sets to be distinguished from glossing in progress
-! AdjectiveRoot ;  
-! N-INCOMING ;	  
+!                                 AdjectiveRoot         ;
+!                                 N-INCOMING            ;
 
 !  -----
 
 LEXICON NounRoot
-!N_NEWWORDS ;
- N_sms2x ; 
+N_NEWWORDS ;
+ N_sms2x ;
+ N_Kin_sms2x ;
 ! N-INCOMING ;
 
 !LEXICON nouns
-!! This is a temporary solution until nouns are moved to xml
+!!! This is a temporary solution until nouns are moved to xml
 !N_NEWWORDS ;
-
-LEXICON WORK_
-!! Single form lacking POS designation
-+WORK: # ;
 
 
 
 LEXICON	INTERJ_
 !! Interjections
-+Interj: # ;
+ +Interj: # ;
 
 !! * Postposition ; is still not included
 !! * Preposition ;  is still not included
@@ -712,132 +987,117 @@ LEXICON	INTERJ_
 
 !! CONJUNCTIONS
 LEXICON CC_
-+CC: # ;
+ : # ;
 
 LEXICON CS_
 !! Subjunction
-+CS: # ;
+ : # ;
 
 LEXICON CS-TEMP_
 !! __when__
-+CS+Temp: # ;
-
-LEXICON DET_
-!! determiner
-+Det+WORK: # ;
-
-LEXICON DET_NUQBB
-!! determiner
-+Det+Attr: # ;
-+Det+Der/N: NMN_NUQBB ;
-
-LEXICON DET_AANAR
-!! determiner
-+Det+Attr: # ;
-+Det+Der/N: NMN_AANAR ;
-
-LEXICON DET_KHEEQLES
-!! determiner
-+Det+Attr:%^Pen%^PALE%^Pen%^PAL%^Pen%^CCC2C # ;
-+Det: NMN_KHEEQLES ;
-
-
-LEXICON DET-SHORTDEM_
-! tõt:tõ
-+Det+Dem: SHORTDEM ;
-
-
-LEXICON ORD_
-+Det+Ord: # ;
-
-LEXICON NUM-ORD_
-!+Num+Ord: # ;
-+Det+Ord: # ;
-
-LEXICON NUM-ORD_NEELLJAD !!= * @CODE@ neelljad:neellj
-!! similar_to: A_MOASHSHAD
-!+Num+Ord: # ;
-+Det+Ord+Attr:ad # ;
-+Det+Ord:ad SG-NOM ;
-+Det+Ord:ad PL-NOM ;
-+Det+Ord+Der/N: NMN_MOASHSHAD ;
+ +Sem/Time: # ;
 
 LEXICON NUM_
-+Num: # ;
+ : # ;
 LEXICON NUM_VAHTT
-+Num: # ;
-+Num: NMN_VAHTT ;
+ : #         ;
+ : NMN_VAHTT ;
 
 LEXICON NUM_ALGG
-+Num: # ;
-+Num: NMN_ALGG ;
+ : #        ;
+ : NMN_ALGG ;
 LEXICON NUM_AUTT
-+Num: # ;
-+Num: NMN_AUTT ;
+ : #        ;
+ : NMN_AUTT ;
 LEXICON NUM_TOLL
-+Num: # ;
-+Num: NMN_TOLL ;
+ : #        ;
+ : NMN_TOLL ;
 LEXICON NUM_PAPP
-+Num: # ;
-+Num: NMN_PAPP ;
+ : #        ;
+ : NMN_PAPP ;
+LEXICON NUM_AELDD
+ : #         ;
+ : NMN_AELDD ;
 LEXICON NUM_KUEQLL
-+Num:%^PALE%^PAL # ;
-+Num: NMN_KUEQLL ;
+ :%^PALE%^PAL #          ;
+ :            NMN_KUEQLL ;
+LEXICON NUM_TAQHTT
+ :%^PAL #          ;
+ :            NMN_TAQHTT ;
 LEXICON NUM_KUEQHTT !!= * @CODE@ kueʹhtt:kuâhtt
-+Num:%^PALE%^PAL # ;
-+Num: NMN_KUEQHTT ;
+ :%^PALE%^PAL #           ;
+ :            NMN_KUEQHTT ;
 LEXICON NUM_NELLJ
-+Num: # ;
-+Num: NMN_NELLJ ;
+ : #         ;
+ : NMN_NELLJ ;
+
+LEXICON NUM_AANAR
+ : #         ;
+ : NMN_AANAR ;
+
+LEXICON NUM_ATOM
+ : #         ;
+ : NMN_ATOM ;
+LEXICON NUM_JEAQNNN
+ :%^PAL #         ;
+ : NMN_JEAQNNN ;
+
+
 
 LEXICON NUM_LO !!= * @CODE@ kuttlo:kuttl
-+Num:o K ;
-+Num+Pl+Nom:ååi K ;
-+Num+Sg+Gen:ååi K ;
-+Num+Sg+Acc:ååi K ;
-+Num+Sg+Ill:åkka K ;
-+Num+Sg+Loc:ååʹjjest K ;
-+Num:ooʹjj PL-OBL ; 
+:ååǥǥ DET_NEELLJAD ; !!= * @CODE@ This ordinal derivation
+        :o        K      ;
++Use/SpellNoSugg:å        K      ;
+ +Pl+Nom:ååi      K      ;
+ +Sg+Gen:ååi      K      ;
+ +Sg+Acc:ååi      K      ;
+ +Sg+Ill:åkka     K      ;
+ +Sg+Loc:ååʹjjest K      ;
+        :ooʹjj    PL-OBL ;
 LEXICON NUM_LOAOAI !!= * @CODE@ lååi:l  THIS looks like allegro
-+Num:ååi K ;
-+Num+Pl+Nom:ååi K ;
-+Num+Sg+Gen:ååi K ;
-+Num+Sg+Acc:ååi K ;
-+Num+Sg+Ill:åkka K ;
-+Num+Sg+Loc:ååʹjjest # ; ! Work on this 2015-11-12
-+Num:ooʹjj PL-OBL ; 
+        :ååi      K      ;
+ +Pl+Nom:ååi      K      ;
+ +Sg+Gen:ååi      K      ;
+ +Sg+Acc:ååi      K      ;
+ +Sg+Ill:åkka     K      ;
+ +Sg+Loc:ååʹjjest #      ; ! Work on this 2015-11-12
+        :ooʹjj    PL-OBL ;
 
 
 LEXICON PCLE_
-+Pcle: # ;
+ : # ;
 
 !! Postpositions with government tagging possible
 LEXICON ADP_
-+Po: # ;
+ : # ;
 LEXICON PO_
-+Po: # ;
+ +Po: # ;
 
 LEXICON ADP-GOV-LOC_
-+Po+%<loc%>: # ;
+ +Po+%<loc%>: # ;
 LEXICON PO-GOV-GEN_
-+Po+%<gen%>: # ;
+ +Po+%<gen%>: # ;
 
 
 !! Prepositions with government tagging possible
 LEXICON PR_
-+Pr: # ;
+ +Pr: # ;
 
-LEXICON PR-TEMP-GOV-GEN_
-+Pr+Temp+%<gen%>: # ;
+!LEXICON PR-TEMP-GOV-GEN_
+! +Pr+Temp+%<gen%>: # ;
 
 LEXICON PR-TEMP-GOV-LOC_
-+Pr+Temp+%<loc%>: # ;
+ +Pr+Temp+%<loc%>: # ;
 
-LEXICON PREFIX_
-+Prefix: # ;
-LEXICON SUF_
-+Suf: # ;
+!LEXICON PREFIX_
+! +Prefix: # ;
+LEXICON PREFIX/A_
+ +Prefix+A+Cmp#:# NounRoot ;
+!LEXICON PREFIX/N_
+! +Prefix+N+Cmp#:# NounRoot ;
+!LEXICON SUF_
+! +Suf: # ;
 
 LEXICON SUF/A_
-ettšem+Der/A:ettš{eẹ}{eẹØ}{mØ}m A_NALLSHEM ;
-nallšem+Der/A:nallš{eẹ}{eẹØ}{mØ}m A_NALLSHEM ;
+  ettšem+Der/A+A@U.Cap.Opt@:ettšẹ%^1VOWm0@U.Cap.Opt@  A_NALLSHEM ;
+ nallšem+Der/A+A@U.Cap.Opt@:nallšẹ%^1VOWm0@U.Cap.Opt@ A_NALLSHEM ;
