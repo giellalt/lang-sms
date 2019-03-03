@@ -16,12 +16,12 @@
 ! Hyphenator for Skolt Sámi !
 ! ========================= !
 
-! This is a file copied from sme via smn. It need to be adjusted to sms.
+! This is a file copied from sme via smn. It needs to be adjusted for sms.
 
 echo <<defining Cns and Vow...>>
 
-define Vow       [ a | á | e | i | o | u | y | æ | ø | å | ä | ö |
-                   A | Á | E | I | O | U | Y | Æ | Ø | Å | Ä | Ö |
+define Vow       [ a | á | e | i | o | u | y | æ | ø | å | ä | ö | õ |
+                   A | Á | E | I | O | U | Y | Æ | Ø | Å | Ä | Ö | Õ |
 é | ó | ú | í | à | è | ò | ù | ì | ë | ü | ï | â | ê | ô | û | î | ã | ý
 É | Ó | Ú | Í | À | È | Ò | Ù | Ì | Ë | Ü | Ï | Â | Ê | Ô | Û | Î | Ã | Ý ] ;
 
@@ -86,8 +86,8 @@ define VowNotOslash [ Vow - Oslash   ] ;  ! Renamed from VowNotØ to avoid non-A
 define VowNotUI     [ Vow - UI  ] ;
 define LongVow      [ a a | e e | i i | o o | u u | á á | ä ä | ö ö ] ;
 
-define Cns [ b | c | č | d | đ | f | g | h | j | k | l | m | n | ŋ |
-             B | C | Č | D | Đ | F | G | H | J | K | L | M | N | Ŋ |
+define Cns [ b | c | č | ʒ | ǯ | d | đ | f | g | ǥ | ǧ | h | j | k | ǩ | l | m | n | ŋ |
+             B | C | Č | Ʒ | Ǯ | D | Đ | F | G | Ǥ | Ǧ | H | J | K | Ǩ | L | M | N | Ŋ |
              p | q | r | s | š | t | ŧ | v | w | x | z | ž |
              P | Q | R | S | Š | T | Ŧ | V | W | X | Z | Ž ] ;
 
