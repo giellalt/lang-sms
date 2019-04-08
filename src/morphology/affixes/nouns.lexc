@@ -1554,14 +1554,14 @@ HatY-STEM-PX-RETAIN ;
 :%^CC2C HatY-STEM-PX-WEAKEN ;
 :%^PAL%^CC2C HatY-STEM-PX-WEAKEN_LARGO ; ! Added 2017-04-04
 :%^CC2C HatY-STEM-PX-WEAKEN_LARGO ;
-:%^Allegro%^PAL%^CC2CAllegro SG-LOC-PX_ALLEGRO ; !Prefer  Added 2017-04-04 
+:%^Allegro%^CC2CAllegro SG-LOC-PX_ALLEGRO ; !Prefer  Added 2017-04-04 
 !! ǩiõtt+N+Sg+Loc+PxSg1 __hand,arm/käsi__
 !!€ ǩiõ0tt%^Allegro%^PAL%^CC2CAllegro%>stan
-!!€ ǩiõʹđ0000%>stan
-:%^Allegro%^CC2CAllegro SG-LOC-PX_ALLEGRO ;
+!!€ ǩiõˈđ0000%>stan
+!:%^Allegro%^CC2CAllegro SG-LOC-PX_ALLEGRO ;
 !!€ ǩiõtt%^Allegro%^CC2CAllegro%>stan
 !!€ ǩiõđ000%>stan
-:%^PAL%^CC2CCC HatY-STEM-PX-STRENGTHEN-SG12 ;
+:%^CC2CCC HatY-STEM-PX-STRENGTHEN-SG12 ;
 !! ǩiõtt+N+Sg+Ill+PxSg1: __hand/käsi__
 !!€ ǩiõ0t0t%^PAL%^CC2CCC%>san
 !!€ ǩiõʹtˈt000%>san
@@ -10460,7 +10460,6 @@ LEXICON HatY-STEM-PX-RETAIN-PL
 +Pl+Nom+PxPl1:%>ân K ;
 
 LEXICON HatY-STEM-PX-WEAKEN_LARGO
-+Use/NG+Largo: SG-LOC-PX ;
 +Err/GenreLeudd:â SG-ABE/ACC/GEN-PL-NOM ; !!= * @CODE@ Leudd 2018-09-20
 +Err/GenreLeudd:â SG-COM_N ; !!= * @CODE@ Leudd 2018-09-20
 
@@ -10468,6 +10467,7 @@ LEXICON HatY-STEM-PX-WEAKEN
  HatY-STEM-PX-WEAKEN-SG ;
  HatY-STEM-PX-WEAKEN-PL ;
 DenominalAdjsCShort ;
++Use/NG+Largo: SG-LOC-PX ;
 
 +Err/GenreLeudd:â SG-ABE/ACC/GEN-PL-NOM ; !!= * @CODE@ Leudd 2018-09-20
 +Err/GenreLeudd:â SG-COM_N ; !!= * @CODE@ Leudd 2018-09-20
@@ -10634,7 +10634,8 @@ LEXICON A-STEM-PX-RETAIN
 
 
 LEXICON SG-LOC-PX_ALLEGRO
-+Allegro: SG-LOC-PX ;
+: SG-LOC-PX ;
+!+Allegro: SG-LOC-PX ;
 
 LEXICON SG-LOC-PX
 +Sg+Loc+PxSg1:%>stan K ;
