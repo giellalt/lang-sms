@@ -320,7 +320,7 @@ CNeutrGrade = [([(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:] |[%^C2CC:] |%
 NeutrGrade = [VNeutrGrade |CNeutrGrade] ; !!= * @CODE@
 !! }}}
 
-
+SurfaceDiphthong = [ :e :ä | :e :â | :i :õ | :i :â | :i :e | :i :ẹ | :u :â | :u :õ | :u :å | :u :ä | :u :e | :u :ẹ ] ;
 
 !! * X3 = C Vx Cx Cx     C Vx Vy Cx ˈ Cx
 !! * X2 = C Vx Vx Cx Cx  C Vx Vy Cx Cx
@@ -711,7 +711,8 @@ OnSetC  ẹ: _ (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^V
 !! kuâsˈsad+V+Ind+Prt+Pl3
 !!€ kuâsˈs^VOWRaise>u
 !!€ kuõsˈs0>u
-  [ e: | i]  _ (u) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+] %^VOWRaise: (%^PALNo:|(%^PALÕ:|%^PALE:) %^PAL:) BetweenPALNoAndMorph ;
+  e:   _ (u) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+] %^VOWRaise: (%^PALNo:|(%^PALÕ:|%^PALE:) %^PAL:) BetweenPALNoAndMorph ;
+!2019-03-01  [ e: | i]  _ (u) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+] %^VOWRaise: (%^PALNo:|(%^PALÕ:|%^PALE:) %^PAL:) BetweenPALNoAndMorph ;
 !! reâugg+N+Sg+Ill
 !!€ reâugg^VOWRaise>u
 !!€ riõugg0>u
@@ -2271,7 +2272,7 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ|%{ʹØ%}:) t t: BetweenStemAndConsGrade %^XYY2IY: 
 !! __@RULENAME@__ - tt:đ
  t:đ  <=>
  Vow: %^1VOW: (:ˈ) (ʹ:|0:ʹ|%{ʹØ%}:) _ t:0 (i:) BetweenStemAndConsGrade [%^CC2C:|%^CCC2C:] (%^I2J:) ;
- Vow: [Vow: - [i|u]] (:ˈ) (ʹ:|0:ʹ|%{ʹØ%}:) _ t:0 (i:) BetweenStemAndConsGrade [%^CC2C:|%^CCC2C:|%^CC2CAllegro:] (%^I2J:) ;
+ Vow: [Vow: - [i|u]] (:ˈ) (ʹ:|0:ʹ|%{ʹØ%}:) _ t:0 (i:) BetweenStemAndConsGrade [%^CC2C:|%^CCC2C:| %^CC2CAllegro:] (%^I2J:) ;
 !! ǩiõtt+N+Sg+Loc+PxSg1 __hand,arm/käsi__
 !!€ ǩiõ0tt%^Allegro%^PAL%^CC2CAllegro%>stan
 !!€ ǩiõʹđ0000%>stan
@@ -2498,7 +2499,8 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ|%{ʹØ%}:) t t: BetweenStemAndConsGrade %^XYY2IY: 
 !! __@RULENAME@__ - used in +N+Sg+Ill
 !! __jeäll:jiâlˈlu, __
 !! b c č ǯ d đ g ǧ k ǩ l m n p r s š t v also htˈt nˈnj
- 0:ˈ <=> (ʹ:|0:ʹ|%{ʹØ%}:)     b  _ b    [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+ 0:ˈ <=>
+ (ʹ:|0:ʹ|%{ʹØ%}:)     b  _ b    [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
           (ʹ:|0:ʹ|%{ʹØ%}:)     c  _ c    [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
           (ʹ:|0:ʹ|%{ʹØ%}:)     č  _ č    [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
           (ʹ:|0:ʹ|%{ʹØ%}:)     ʒ  _ ʒ    [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
@@ -2523,6 +2525,11 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ|%{ʹØ%}:) t t: BetweenStemAndConsGrade %^XYY2IY: 
           (ʹ:|0:ʹ|%{ʹØ%}:)     š  _ š    [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
           (ʹ:|0:ʹ|%{ʹØ%}:) (h) t _ t     [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
           (ʹ:|0:ʹ|%{ʹØ%}:)     v _ v     [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+
+!NO 2019-03-01 SurfaceDiphthong (ʹ:|0:ʹ|%{ʹØ%}:)     Cx:Cns  _ Cx: (j) [ BetweenStemAndConsGrade %^CC2CCC:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: %^CC2CCC:] ;
+!NO2019-03-01 SurfaceDiphthong _ (ʹ:|0:ʹ|%{ʹØ%}:)     Cx:Cns Cx: (j) [ BetweenStemAndConsGrade (%^Allegro:) %^CC2CAllegro:| Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen:  %^CC2CAllegro:] ;
+
+!NO2019-03-01          where Cx in (b c č ʒ ǯ d đ g ǧ ǥ j k ǩ l m n ŋ p r s š t v) matched ; 
 
 
 
