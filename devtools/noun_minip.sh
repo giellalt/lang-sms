@@ -18,13 +18,13 @@ PATTERN=$1
 L_FILE="in.txt"
 cut -d '!' -f1 src/morphology/stems/N_Kin_sms2x.lexc src/morphology/stems/N_sms2x.lexc|egrep $PATTERN | tr '+' ':'| cut -d ':' -f1>$L_FILE
 
-P_FILE="test/data/testnounpradigm.txt"
+P_FILE="test/data/testnounparadigm.txt"
 
 for lemma in $(cat $L_FILE);
 do
  for form in $(cat $P_FILE);
  do
-   echo "${lemma}${form}" | $LOOKUP $GTHOME/langs/sms/src/generator-gt-norm.xfst
+   echo "${lemma}${form}" | $HLOOKUP $GTHOME/langs/sms/src/generator-gt-norm.hfstol
  done
 done
 

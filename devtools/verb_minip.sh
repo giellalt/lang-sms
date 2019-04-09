@@ -20,7 +20,7 @@ for lemma in $(cat $L_FILE);
 do
  for form in $(cat $P_FILE);
  do
-   echo "${lemma}${form}" | $LOOKUP $GTHOME/langs/sms/src/generator-gt-norm.xfst
+   echo "${lemma}${form}" | $HLOOKUP $GTHOME/langs/sms/src/generator-gt-norm.hfstol
  done
 done
 

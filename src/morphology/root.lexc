@@ -113,6 +113,9 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Actio    !!= * @CODE@
 +ActEss   !!= * @CODE@ -men
 
++NomAg	  !!= * @CODE@ CHECK ME
++Kin	  !!= * @CODE@ Kin term This may need to be removed, let Sem/Hum-kin suffice
+
 !! Valence
 +IV          !!= * @CODE@ Intransitive
 +TV          !!= * @CODE@ Transitive
@@ -193,8 +196,9 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !! Noun derivation
 +Der/N
 +Der/MOsh !!= * @CODE@ deverbal derivation V»N architype mõš and mmuš
-+Der/vuott !!= * @CODE@ A»N -vuõtt
++Der/vuota !!= * @CODE@ A»N -vuõtt
 +Der/lasj !!= * @CODE@  
++Der/neqkh !!= * @CODE@ N»N resident of place
 +Der1 !!= * @CODE@  
 +Der2
 +Der3
@@ -313,7 +317,8 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Sem/Hum         !!= * @CODE@ = Human
 +Sem/Hum-abstr   !!= * @CODE@ = Human abstract
 +Sem/Ideol       !!= * @CODE@ = Ideology
-+Sem/Kin   !!= * @CODE@ 
++Sem/Kin   !!= * @CODE@ for deprication to Sem/Hum-kin
++Sem/Hum-kin   !!= * @CODE@ = 
 +Sem/Lang        !!= * @CODE@ = Language
 +Sem/Mal         !!= * @CODE@ = Male name
 +Sem/Manner
@@ -854,6 +859,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 
 !! Compounding
+
 +Cmp 
 +CmpNP/First
 +CmpNP/Pref
@@ -861,11 +867,25 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +CmpN/PlG
 +CmpN/SgG
 +CmpN/SgN
-+Cmp/SplitR	!!= * __@CODE@__ This to take care of Oahpo- ja dutkandept - want this in speller Remainder is found to the right
-+Cmp/SplitL	!!= * __@CODE@__ Remainder is found to the left
-+Cmp/SgNom
-+Cmp/SgGen
-+Cmp/PlGen
+
+ +Cmp          !!≈ * __@CODE@__ - Dynamic compound. This tag should always be part
+               !!                 of a dynamic compound. It is important for
+               !!                 Apertium, and useful in other cases as well.
+ +Cmp/Attr     !!≈ * __@CODE@__ - Attributive
+ +Cmp/SgNom    !!≈ * __@CODE@__ - Singular Nominative
+ +Cmp/SgGen    !!≈ * __@CODE@__ - Singular Genitive
+ +Cmp/PlGen    !!≈ * __@CODE@__ - Plural Genitiv
+ +Cmp/SplitR   !!≈ * __@CODE@__ - This is a split compound with the other part to
+               !!                 the right: "Arbeids- og inkluderingsdepartementet"
+               !!                 => Arbeids- = +Cmp/SplitR
+ +Cmp/SplitL   !!≈ * __@CODE@__ - This is a split compound with the other part to the left
+ +Cmp/Sh       !!≈ * __@CODE@__ - testing +Cmp/Sh
+ +Cmp/Hyph     !!≈ * __@CODE@__ - on dynamic compounds that have a hyphen
+ +Cmp/NoHyph   !!≈ * __@CODE@__ - On compounds that COULD have had a hyphen (and usually have), but doesn't
+ +Cmp/SoftHyph !!≈ * __@CODE@__ - Tags compounds containing SOFT HYPHENS (U+00AD)
+ +Cmp/Cit      !!≈ * __@CODE@__ - Tags citation compounds, which can in principle
+               !!                 cover any word. Requires a hyphen.
+
 
 !! !!Flag diacritics
 @P.AssocColl.ON@ !!= * __@CODE@__ Used with Kin terms and Ant
@@ -907,7 +927,8 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 LEXICON Root 	  !!= * @CODE@
     Abbreviation          ; !!= * @CODE@ abbreviations
     Adposition            ; !!= * @CODE@
-    ProperNoun            ; !!= * @CODE@
+@U.Cap.Obl@    ProperNoun            ; !!= * @CODE@
+@U.Cap.Opt@    ProperNoun            ; !!= * @CODE@
 
     VerbRoot              ; !!= * @CODE@
 !    Adverb                ; !!= * @CODE@
@@ -935,7 +956,8 @@ LEXICON Root 	  !!= * @CODE@
     N_sms2x               ; !!= * @CODE@ This generates from merged materials
   +Cmp/SplitL+Use/SpellNoSugg#:%-# N_sms2x               ; !!= * @CODE@ This allows split compound nouns
 @P.AssocColl.ON@    N_Prop_sms2x          ; !!= * @CODE@ This generates from merged materials
-    N_Prop_Toponyms_sms2x ; !!= * @CODE@ Toponymy
+@U.Cap.Obl@    N_Prop_Toponyms_sms2x ; !!= * @CODE@ Toponymy
+@U.Cap.Opt@    N_Prop_Toponyms_sms2x ; !!= * @CODE@ Toponymy
     Num_sms2x             ; !!= * @CODE@ This generates from merged materials
     Pcle_sms2x            ; !!= * @CODE@ This generates from merged materials
     Prefix_sms2x          ; !!= * @CODE@ This generates from merged materials
@@ -954,8 +976,10 @@ LEXICON Root 	  !!= * @CODE@
     N_NEWWORDS            ; !!= * @CODE@ These are new nouns beginning 2015-01-10
     PCLE_NEWWORDS         ; !!= * @CODE@ These are particles
     PRON_NEWWORDS         ; !!= * @CODE@ These are pronouns
-    PROP_NEWWORDS         ; !!= * @CODE@ These are new proper nouns beginning 2015-03-04
-    TOPONYMS_NEWWORDS     ; !!= * @CODE@ 2016-02-06
+@U.Cap.Obl@    PROP_NEWWORDS         ; !!= * @CODE@ These are new proper nouns beginning 2015-03-04
+@U.Cap.Opt@    PROP_NEWWORDS         ; !!= * @CODE@ These are new proper nouns beginning 2015-03-04
+@U.Cap.Obl@    TOPONYMS_NEWWORDS     ; !!= * @CODE@ 2016-02-06
+@U.Cap.Opt@    TOPONYMS_NEWWORDS     ; !!= * @CODE@ 2016-02-06
     V_NEWWORDS            ; !!= * @CODE@ These are new verbs
  ProperNoun-smi ; !!= * @CODE@ work with smi 2018-08-23
 ! ProperNoun-smi-nocomp ; !!= * __@CODE@__ work with smi 2018-08-23
@@ -980,7 +1004,7 @@ N_NEWWORDS ;
 
 LEXICON	INTERJ_
 !! Interjections
- +Interj: # ;
+: # ;
 
 !! * Postposition ; is still not included
 !! * Preposition ;  is still not included
