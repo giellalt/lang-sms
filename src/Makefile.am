@@ -82,6 +82,7 @@ analyser-gt-desc.%: analyser-gt-desc.tmp.% \
 
 # And also for the normative analyser (foma and hfst):
 analyser-gt-norm.%: analyser-gt-norm.tmp.% \
+					filters/remove-derivation-position-tags.% \
 					filters/remove-illegal-derivation-strings-flagbased.% \
 					filters/insert-default-compounding-tags.% \
 					filters/insert-default_left_compounding-tags.% \
@@ -92,6 +93,7 @@ analyser-gt-norm.%: analyser-gt-norm.tmp.% \
 					filters/remove-modifier-letter-vertical-line.% \
 					filters/remove-letter-dot-below.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+			    @\"filters/remove-derivation-position-tags.$*\" \
 				@\"filters/block-illegal_compound-strings.$*\"          \
 			.o. @\"filters/split-CmpN-tags.$*\"                         \
 			.o. @\"filters/insert-default_left_compounding-tags.$*\"    \
