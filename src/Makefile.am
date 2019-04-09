@@ -94,7 +94,7 @@ analyser-gt-norm.%: analyser-gt-norm.tmp.% \
 					filters/remove-letter-dot-below.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 			    @\"filters/remove-derivation-position-tags.$*\" \
-				@\"filters/block-illegal_compound-strings.$*\"          \
+			.o.	@\"filters/block-illegal_compound-strings.$*\"          \
 			.o. @\"filters/split-CmpN-tags.$*\"                         \
 			.o. @\"filters/insert-default_left_compounding-tags.$*\"    \
 			.o. @\"filters/insert-default-compounding-tags.$*\"         \
