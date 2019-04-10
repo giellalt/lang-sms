@@ -334,7 +334,7 @@ SET VFIN-NOT-AUX = VFIN - AUX ;
 SET V-MAIN = V - COPULAS - Neg - MOD-ASP ;
 
 SET VFIN-NOT-NEG = VFIN - Neg ;
-  # this might be to strict, besides, "iige" can be written "ii ge"
+  # this might be too strict, besides, "iige" can be written "ii ge"
 
 SET NOT-NP = VFIN-NOT-NEG OR ConNeg OR Inf OR Pcle OR Interj OR CS ;
  # The set NP-BOUNDARY is bigger. 
@@ -388,7 +388,7 @@ LIST V-DER = Der/didh Der/htidh Der/alle Der/stidh Der/ehte Der/lidh Der/htalle 
 
 LIST V-DER-SUF = (".*didh"r) (".*htidh"r)  (".*alledh"r) (".*stidh"r) (".*ehtedh"r) (".*lidh"r) (".*lgidh"r) (".*htjidh"r)  (".*htovvedh"r)  (".*htoevedh"r)  (".*htehtedh"r)  (".*ahtjedh"r)  (".*gåetedh"r) (".*ehtedh"r) (".*gåetedh"r) (".*adtedh"r) (".*edsedh"r) (".*sovvedh"r) ;
 
-LIST N-DER = Der/NomAct Der/NomAg Der/Dimin Der/voete ;
+LIST N-DER = Der/NomAct Der/NomAg Der/Dimin Der/vuota ;
 LIST N-DER-SUF = (".*immie"r) (".*me"r) (".*æjja"r) (".*ije"r) (".*tje"r)  (".*voete"r) ;
 
 LIST A-DER = Der/ldihkie Der/ijes Der/ihks Der/les Der/ldahke Der/ldh ;
@@ -406,7 +406,7 @@ LIST VERB-FORMS = Inf Sg1 Sg2 Sg3 ;
 
 SET FORMS = VERB-FORMS OR WORD ;
 
-LIST BUILDING = "gåetie" ;
+LIST BUILDING = "kueʹtt" ;
 
 #LIST ROOM = "ladnja" "oadem#ladnja" ;
 
@@ -419,7 +419,7 @@ LIST PLACE-P = "alkalisnie" "alkalistie" "avtelen" "avteli" "avtelisnie" "avteli
 
 LIST MONTH = "kålggmään" "läʹznpeiʹvvmään" "njuhččmään" "ođđeeʹjjmään" "pââʹzzmään" "pâʹzzlâšttam-mään" "pâʹzzlâšttammään" "pâʹzzlâšttammään" "påʹrǧǧmään" "rosttovmään" "rõõǥǥâdmään" "skamm-mään" "sueiʹnnmään" "täʹlvvmään" "vueʹssmään" "vuõssmään" "vuʹvrrmään" "čõhččmään" "ǩieʹssmään" "ǩiđđmään" ;
 	
-LIST TIMEWORD = "biejjie" "b" "gïjre" "giesie" "tïjme" "dygne" "bodte" "bådte" "tjaktje" "tjaktjegiesie" "tjaktjedaelvie" "daelvie" "tsåahka" "jaepie" "jïjje" "jahke" "aske" "reakedsbiejjie" "våhkoe" "vahka" "måanta" "dæjsta" "aejkie" ;
+LIST TIMEWORD = "peiʹvv" "p" "ǩiđđ" "ǩieʹss" "tïjme" "dygne" "bodte" "bådte" "čõhčč" "tjaktjegiesie" "tjaktjedaelvie" "täʹlvv" "tsåahka" "jaepie" "inn" "eeʹǩǩ" "aske" "reakedsbiejjie" "våhkoe" "vahka" "måanta" "dæjsta" "aejkie" ;
 
 SET TIME = MONTH OR TIMEWORD ; # splitting TIMEWORD later.
 
@@ -747,6 +747,9 @@ SELECT:VSg2IfPersSg2a (V Sg2)(NOT 0 N) ((*-1 (Pers Nom Sg2) OR (Rel Sg Nom) BARR
 SELECT:Pl3WhenPlSubj (V Pl3) IF ((*-1 (N Pl Nom) OR (Num Sg Nom) OR (Pers Nom Pl3) BARRIER Sg2 OR S-BOUNDARY) OR (-1 (N Sg Nom) LINK -1 CC))(0 ("lea" V));
 #SELECT:Pl3WhenSubjCC (V Pl3) IF (-1 (N Sg Nom) LINK -1 CC)(0 ("lea" V));
 REMOVE:Pl3 (V Pl3) (NOT *0 Nom BARRIER S-BOUNDARY) ;
+# two Ind+Prs+Pl3 finites: haaʹlee da tätta 
+# ... što säʹmmla haaʹlee da tätta väʹldded vaʹsttõsvuõđ jiiʹjjez pueʹttiääiʹj ooudummšest...
+
 SELECT:Sg3WhenRelSg (V Sg3) ((-1 (Rel Sg Nom)) OR (-1 CC LINK *-1C (V Sg3) BARRIER S-BOUNDARY OR V));
 #SELECT:Sg3WhenSg3toLeft (V Sg3) (-1 CC LINK *-1C (V Sg3) BARRIER S-BOUNDARY OR V);
 
