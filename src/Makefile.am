@@ -63,6 +63,15 @@ endif # CAN_FOMA
 #################################################
 #### Add language-specific build rules here: ####
 
+# Hfst - add weights to compounds if using tropical-semiring fst format:
+if WITH_OFST_TROPICAL
+generator-raw-gt-desc.hfst: generator-raw-gt-desc.tmp.hfst
+	$(AM_V_REWEIGHT)$(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
+			-S '+Cmp' -a 10 --arcs-only -i $< \
+		> $@
+endif
+
+
 # We need to add processing of language-specific tags in the analyser:
 analyser-gt-desc.%: analyser-gt-desc.tmp.% \
 					filters/remove-derivation-position-tags.% \
