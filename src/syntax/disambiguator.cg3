@@ -384,7 +384,7 @@ LIST SOMESMALLABBR = "a" "r" "c" "d" "e" "f" "f" "g" "h" "i" "l" "m" "b" "j" "s"
 LIST SOMECAPABBR = "A" "R" "C" "D" "E" "F" "F" "G" "H" "I" "L" "M" "B" "J" "S" ;
 
 # Der sets
-LIST V-DER = Der/didh Der/htidh Der/alle Der/stidh Der/ehte Der/lidh Der/htalle Der/lgidh Der/htjidh Der/htovve Der/htoeve Der/htehte Der/ahtje Der/gåete Der/ehte Der/adte Der/eds Der/PassL;
+LIST V-DER = Der/st Der/jed Der/InchL ;
 
 LIST V-DER-SUF = (".*didh"r) (".*htidh"r)  (".*alledh"r) (".*stidh"r) (".*ehtedh"r) (".*lidh"r) (".*lgidh"r) (".*htjidh"r)  (".*htovvedh"r)  (".*htoevedh"r)  (".*htehtedh"r)  (".*ahtjedh"r)  (".*gåetedh"r) (".*ehtedh"r) (".*gåetedh"r) (".*adtedh"r) (".*edsedh"r) (".*sovvedh"r) ;
 
@@ -452,7 +452,7 @@ REMOVE:R_ACR ACR (0 CC);
 
 REMOVE:Prop Prop (0 ("jos"));
 
-
+REMOVE:derV V-DER IF (0 LEX-V);
 
 #foreløpig regel: 
 IFF:S_Interj Interj (-1 BOS)(1 EOS OR CLB) ; 
