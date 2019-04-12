@@ -311,15 +311,20 @@ LIST NORGA = "Dánmárku-#Norga" "davvi#Norga" "Davvi-Norga" "gaska-#Norga" "Nor
 LIST REALCOPULAS = "leeʹd" "lij" "iʹlla" ;
 
 # The set COPULAS is for predicative constructions
-LIST COPULAS = "lea" ;
+LIST COPULAS = "lij" ;
 
 SET V-NOT-COP = V - COPULAS ;
 
-LIST MOD-ASP = "galkedh" "tjoeveridh" "tjoeredh" "sååjhtedh" ;
+LIST MOD-ASP = "õlggâd" "feʹrttjed" "tuõsttâd" ;
+ # Still work needed 2019-04-12
 
  # Verbs that never have arguments of their own 
- 
-LIST AUX-OR-MAIN = "aelkedh" "edtjedh" "maehtedh" "sïjhtedh" "sjïdtedh" "båetedh" "åadtjodh" ;
+
+ # has infinite "äʹlǧǧed" "haaʹleed" "altteed" "vueiʹtted" "siltteed"
+ # "låppeed" "akkeed" "vuäǯǯad" "tättad" "õsttâd" "põrggâd" "ǩiččlõõttâd"
+ # motion verb with infinite: "mõõnnâd" "vueʹlǧǧed" "kuâđđjed" "mättjed"
+
+LIST AUX-OR-MAIN = "äʹlǧǧed" "haaʹleed" "altteed" "vueiʹtted" "mõõnnâd" "vueʹlǧǧed" "kuâđđjed" "mättjed" "siltteed" "låppeed" "akkeed" "vuäǯǯad" "tättad" "õsttâd" "põrggâd" "ǩiččlõõttâd";
 
  # These verbs can take arguments, so they do not belong in the AUX group, 
  # but they are nevertheless mapped to (@+FAUXV). 
@@ -342,7 +347,7 @@ SET NOT-NP = VFIN-NOT-NEG OR ConNeg OR Inf OR Pcle OR Interj OR CS ;
 LIST INFV = "aavoedidh" "aelkedh" "buektiehtidh" "provhkedh" ; 
 # These are often followed by an infitive.
 
-LIST ILLV = "båetedh" "juhtedh" "ringkedh" ;
+LIST ILLV = "čõʹǩǩeed" "jaukkâd" "kuâđđjed" "läppjed" "mõõnnâd" "pueʹtted" "tiârrâd" "urččâd"  "uurčeed" "viikkâd" "viikkled" "vueʹlǧǧed";
 LIST COMV = "budtedh" "pruvredh" ;
 
 LIST COM-ADJ = "latjkes" ;
@@ -384,7 +389,7 @@ LIST SOMESMALLABBR = "a" "r" "c" "d" "e" "f" "f" "g" "h" "i" "l" "m" "b" "j" "s"
 LIST SOMECAPABBR = "A" "R" "C" "D" "E" "F" "F" "G" "H" "I" "L" "M" "B" "J" "S" ;
 
 # Der sets
-LIST V-DER = Der/st Der/jed Der/InchL ;
+LIST V-DER = Der/st Der/jed Der/oottyd Der/oovvyd Der/oollyd Der/stoollyd Der/stoovvyd Der/toovvyd Der/ched Der/Caus Der/InchL ;
 
 LIST V-DER-SUF = (".*didh"r) (".*htidh"r)  (".*alledh"r) (".*stidh"r) (".*ehtedh"r) (".*lidh"r) (".*lgidh"r) (".*htjidh"r)  (".*htovvedh"r)  (".*htoevedh"r)  (".*htehtedh"r)  (".*ahtjedh"r)  (".*gåetedh"r) (".*ehtedh"r) (".*gåetedh"r) (".*adtedh"r) (".*edsedh"r) (".*sovvedh"r) ;
 
@@ -1286,6 +1291,10 @@ MAP (@<OBJ) TARGET (Pl Nom) (*-1 MAINV + TV BARRIER S-BOUNDARY OR COMMA)(NOT 0 T
 
             AFTER-SECTIONS              #
 # ======================================== #
+
+# This allows for testing Det vs Pron
+SUBSTITUTE (Det) (Pron) TARGET (Det) ;
+
    
 SUBSTITUTE (A) (A <sms>) WORD ;
 SUBSTITUTE (N) (N <sms>) WORD ;
