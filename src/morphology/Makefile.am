@@ -103,6 +103,7 @@ GENERATED_LEXC_SRCS=\
 			$(srcdir)/stems/Pron_sms2x.lexc                \
 			$(srcdir)/stems/V_sms2x.lexc                   \
 			$(srcdir)/stems/ABBR_sms2x.lexc                \
+			$(srcdir)/stems/ACRO_sms2x.lexc                \
 			generated_files/punctuation.lexc               \
 			generated_files/symbols.lexc
 
@@ -129,7 +130,9 @@ GT_XML_SRCS=\
 			 stems/Prefix_sms2x.xml     \
 			 stems/Pron_sms2x.xml     \
 			 stems/V_sms2x.xml     \
-			 stems/ABBR_sms2x.xml
+			 stems/ABBR_sms2x.xml	\
+			 stems/ACRO_sms2x.xml
+
 
 # Define any additional lexc sources here (compiled on their own):
 GT_LOCAL_SRCS=
