@@ -1,9 +1,9 @@
-This file is mostly for communicating current todos and questions; proper documentation should be written in http://giellatekno.uit.no/doc/dicts/SkoltSaami2X.html
+This file is mostly for communicating current todos and questions; proper documentation should be written in https://giellalt.uit.no/dicts/SkoltSaami2X.html
 
 ===
 
 TODO MR
-update documentation at http://giellatekno.uit.no/doc/dicts/SkoltSaami2X.html
+update documentation at https://giellalt.uit.no/dicts/SkoltSaami2X.html
 
 ===
 
