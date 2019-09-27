@@ -117,8 +117,8 @@ LEXICON ACCRA-ani
 LEXICON ACCRA-obj
 +N+Prop+Sem/Obj:%> ACCRADECL ;
 
-LEXICON ACCRA-LOAN-obj
-+N+Prop+Sem/Obj:%> ACCRADECL-LOAN ;
+! LEXICON ACCRA-LOAN-obj
+! +N+Prop+Sem/Obj:%> ACCRADECL-LOAN ;
 
 !LEXICON ACCRA-objplc
 !+N+Prop+Sem/Obj:%> ACCRADECL ;
@@ -128,8 +128,8 @@ LEXICON ACCRA-LOAN-obj
 LEXICON ACCRA-org
 +N+Prop+Sem/Org:%> ACCRADECL_PLC-ORG ;
 
-LEXICON ACCRA-LOAN-org
-+N+Prop+Sem/Org:%> ACCRADECL-LOAN ;
+! LEXICON ACCRA-LOAN-org
+! +N+Prop+Sem/Org:%> ACCRADECL-LOAN ;
 
 LEXICON ACCRA-mal
 +N+Prop+Sem/Mal:%>  ACCRADECL ;
@@ -174,14 +174,14 @@ LEXICON ACCRA-A-org
 :a ACCRA-org ;
 
 
-LEXICON ACCRA-A_MWE-plc
-:a ACCRA_MWE-plc ;
+! LEXICON ACCRA-A_MWE-plc
+! :a ACCRA_MWE-plc ;
 
 LEXICON ACCRA-A-fem
 :a ACCRA-fem ;
 
-LEXICON ACCRA_MWE-plc
-+N+Prop+Sem/Plc:%>  ACCRADECL_PLC-ORG ;
+! LEXICON ACCRA_MWE-plc
+! +N+Prop+Sem/Plc:%>  ACCRADECL_PLC-ORG ;
 
 LEXICON ACCRA-plc ! Place names
 +N+Prop+Sem/Plc:%>  ACCRADECL_PLC-ORG ;
@@ -236,8 +236,8 @@ LEXICON ACCRA-Y-obj
 LEXICON ACCRA-Y-plc
  ACCRA-plc ;
 
-LEXICON ACCRA-Y_MWE-plc
- ACCRA_MWE-plc ;
+! LEXICON ACCRA-Y_MWE-plc
+!  ACCRA_MWE-plc ;
 
 LEXICON ACCRA-Y-malsur
  ACCRA-Y-mal ;
@@ -919,8 +919,8 @@ LEXICON NYSTØ-plc ! Place names
 +N+Prop+Sem/Sur:%>  NYSTØDECL_PLC-ORG ;
 :%> PLACELASH ;
 
-LEXICON NYSTØ_MWE-plc ! Place names
-+N+Prop+Sem/Plc:%>  NYSTØDECL_PLC-ORG ;
+! LEXICON NYSTØ_MWE-plc ! Place names
+! +N+Prop+Sem/Plc:%>  NYSTØDECL_PLC-ORG ;
 
 
 !LEXICON NYSTØ ! Vowel-final, heavy syll
@@ -1283,9 +1283,9 @@ LEXICON LONDON-plc
 !:%> PLACELASH ;
 
 
-LEXICON LONDON_MWE-plc
- +Err/Orth:  BERN-plc ;
-+N+Prop+Sem/Plc:%> LONDONDECL_PLC-ORG ;
+! LEXICON LONDON_MWE-plc
+!  +Err/Orth:  BERN-plc ;
+! +N+Prop+Sem/Plc:%> LONDONDECL_PLC-ORG ;
 
 LEXICON JOKULL-plc
 +N+Prop+Sem/Plc:%> LONDONDECL_PLC-ORG ;
@@ -1388,9 +1388,9 @@ LEXICON DUBAI-plc
 +N+Prop+Sem/Sur:%> DUBAI-UCASE_PLC-ORG ;
 :%>a PLACELASH ;
 
-LEXICON DUBAI_MWE-plc
-!Like BERN for names ending Vowel-i
-+N+Prop+Sem/Plc:%> DUBAI-UCASE_PLC-ORG ;
+! LEXICON DUBAI_MWE-plc
+! !Like BERN for names ending Vowel-i
+! +N+Prop+Sem/Plc:%> DUBAI-UCASE_PLC-ORG ;
 
 LEXICON DUBAI-fem
 !Like BERN for names ending Vowel-i
@@ -1524,9 +1524,9 @@ LEXICON BERN-plc
 !:%>a PLACELASH ;
 
 
-LEXICON BERN_MWE-plc
-! Different lexicon for place names. Bern.
-+N+Prop+Sem/Plc:%> BERNDECL_PLC-ORG ;
+! LEXICON BERN_MWE-plc
+! ! Different lexicon for place names. Bern.
+! +N+Prop+Sem/Plc:%> BERNDECL_PLC-ORG ;
 
 LEXICON BERN-org
 ! Different lexicon for organisations. Microsoft.
@@ -2611,8 +2611,8 @@ LEXICON ERVASTI-obj
 LEXICON PIPPI-plc
 :i ACCRA-plc ;
 
-LEXICON PIPPI_MWE-plc
-:i ACCRA_MWE-plc ;
+! LEXICON PIPPI_MWE-plc
+! :i ACCRA_MWE-plc ;
 
 LEXICON PIPPI-sur
 :i ACCRA-sur ;
