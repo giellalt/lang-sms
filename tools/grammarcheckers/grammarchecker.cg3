@@ -596,6 +596,10 @@ SET CCCOMMA = CC OR COMMA ;
 
 #!! !Grammarchecker sets
 
+MAPPING-PREFIX = & ;
+
+LIST &LINK = &LINK ;
+
 LIST &err-agr = &err-agr ;
 LIST &err-gen-po = &err-gen-po ;
 LIST &err-no-conneg = &err-no-conneg ;
@@ -603,7 +607,10 @@ LIST &err-orrood-inf = &err-orrood-inf ;
 LIST &err-ext-agr = &err-ext-agr ;
 LIST &err-ext-vagr = &err-ext-vagr ;
 
-MAPPING-PREFIX = & ;
+LINK &punct-aistton-both = &punct-aistton-both ;
+LINK &punct-aistton-left = &punct-aistton-left ;
+LINK &punct-aistton-right = &punct-aistton-right ;
+LINK <NoSpaceBeforeParenBeg> = <NoSpaceBeforeParenBeg> ;
 
 SECTION
 
