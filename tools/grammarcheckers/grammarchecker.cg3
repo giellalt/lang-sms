@@ -205,8 +205,17 @@ LIST VAbess = VAbess ;		   #!! VAbess
 
 
 LIST Err/Orth = Err/Orth Err/Orth-a/á Err/Orth-nom/gen Err/Orth-nom/acc Err/DerSub Err/CmpSub Err/UnspaceCmp Err/HyphSub Err/SpaceCmp Err/Spellrelax err_orth_mt ; #!! Err/Orth
+LIST AllErrorTags = Err/Orth Err/Orth-a/á Err/Orth-nom/gen Err/Orth-nom/acc Err/DerSub Err/CmpSub Err/UnspaceCmp Err/HyphSub Err/SpaceCmp Err/Spellrelax err_orth_mt ;
+LIST Err/Orth-any = Err/Orth Err/Orth-a/á Err/Orth-nom/gen Err/Orth-nom/acc err_orth_mt ;
+SET NoErrorTags = (*) - AllErrorTags ;
 
+# Any Err/Orth + transitivity tags:
+LIST Err/Orth-any_OR_TV_IV = Err/Orth Err/Orth-a-á Err/Orth-nom-gen Err/Orth-nom-acc TV IV ;
+# Any Err that is NOT Err/Orth:
+LIST Err/Not-Orth = Err/Lex Err/DerSub Err/CmpSub Err/HyphSub Err/Hyph Err/MissingHyph Err/Spellrelax ;
 
+LIST <LastCohortOfParagraph> = <LastCohortOfParagraph> ;
+LIST <NoSpaceAfterParenEnd> = <NoSpaceAfterParenEnd> ;
 
 #!! !Semantic tags
 
@@ -607,10 +616,10 @@ LIST &err-orrood-inf = &err-orrood-inf ;
 LIST &err-ext-agr = &err-ext-agr ;
 LIST &err-ext-vagr = &err-ext-vagr ;
 
-LINK &punct-aistton-both = &punct-aistton-both ;
-LINK &punct-aistton-left = &punct-aistton-left ;
-LINK &punct-aistton-right = &punct-aistton-right ;
-LINK <NoSpaceBeforeParenBeg> = <NoSpaceBeforeParenBeg> ;
+LIST &punct-aistton-both = &punct-aistton-both ;
+LIST &punct-aistton-left = &punct-aistton-left ;
+LIST &punct-aistton-right = &punct-aistton-right ;
+LIST <NoSpaceBeforeParenBeg> = <NoSpaceBeforeParenBeg> ;
 
 SECTION
 
