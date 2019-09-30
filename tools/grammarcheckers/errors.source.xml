@@ -4,32 +4,70 @@
 <errors>
 
   <defaults>
-    <default type="Grammar error">
+    <!--
+        The defaults provide error messages for where you haven't explicitly
+        provided one, as long as there's a match in "ids" for the error tag
+    -->
+    <default>
       <ids>
-        <re v="real-.*"/>
-        <e id="unreal-girjji"/>
+        <re v="real-.*"/>       <!-- regex that matches all real-word-errors -->
       </ids>
       <header>
-        <title xml:lang="en">Real-word error</title>
-        <title xml:lang="se">Čállinmeattáhus</title>
+        <title xml:lang="en">Spelling errors</title>
+        <title xml:lang="sms">Čállinmeattáhusat</title>
       </header>
       <body>
-        <description xml:lang="en">The word "$1" exists in the dictionary, but means something different in this context.</description>
-        <description xml:lang="se">"$1" maŋis galggašii leat blah</description>
+        <description xml:lang="en">The word means something different here</description>
+        <description xml:lang="sms">Sátni šaddá eará go oaivvilduvvo</description>
+        <!-- TODO: fix description lang=se -->
       </body>
     </default>
-
-    <default type="Grammar error">
+    <default>
       <ids>
-        <e id="default"/>
+        <re v="msyn-wrong-case.*"/>
+        <re v="msyn-wrong_case.*"/>
       </ids>
       <header>
-        <title xml:lang="en">Grammar error</title>
-        <title xml:lang="se">Čállinmeattáhus</title>
+        <title xml:lang="en">Wrong form</title>
+        <title xml:lang="sms">Boasttuhápmi</title>
       </header>
       <body>
-        <description xml:lang="en">The word "$1" exists in the dictionary, but means something different in this context.</description>
-        <description xml:lang="se">"$1" maŋis galggašii leat blah</description>
+        <description xml:lang="en">"$1" seems to be in the wrong case</description>
+        <description xml:lang="sms"> "$1" orru leamen boasttukásusis</description>
+      </body>
+    </default>
+    <default>
+      <ids>
+        <re v="punct-aistton.*"/>
+      </ids>
+      <header>
+        <title xml:lang="en">Quotation marks</title>
+        <title xml:lang="sms">Aisttonmearkkat</title>
+        <references><ref n=""/></references>
+      </header>
+      <body>
+        <description xml:lang="en">Wrong quotation mark</description>
+        <description xml:lang="sms">Boasttuaisttonmearkkat</description>
+        <examples>
+          <ex xml:lang="sms">Doarjja addo vuosttažettiin {«}Sámi dutkama prográmmii{»} (2001–05)</ex> 
+        </examples>
+      </body>
+    </default>
+    <default>
+      <ids>
+        <re v="no-space-after-paren.*"/>
+        <re v="no-space-before-paren.*"/>
+      </ids>
+      <header>
+        <title xml:lang="en">Parenthesis missing space</title>
+        <title xml:lang="sms">Gaska váilu</title>
+      </header>
+      <body>
+        <description xml:lang="en">There is no space before or after the parenthesis "$1"</description>
+        <description xml:lang="sms">Ii leat gaska ovdal dehe maŋŋil ruođu "$1"</description>
+        <examples>
+          <ex xml:lang="sms">Vuoigatvuođa Lávdegotti{(}SVL{)}čilgehus</ex> 
+        </examples>
       </body>
     </default>
   </defaults>
@@ -37,25 +75,25 @@
   <error id="real-override">
     <header>
       <title xml:lang="en">cake instead of cheese</title>
-      <title xml:lang="se">gáhkku iige vuostá</title>
+      <title xml:lang="sms">gáhkku iige vuostá</title>
     </header>
     <body>
       <description xml:lang="en">this should be "cake" instead of "cheese"</description>
-      <description xml:lang="se">galggašii leat "gáhkku" iige "vuostá"</description>
+      <description xml:lang="sms">galggašii leat "gáhkku" iige "vuostá"</description>
     </body>
   </error>
 
   <error id="msyn-valency-ill">
     <header>
       <title xml:lang="en">illative instead of accusative</title>
-      <title xml:lang="se">illatiiva iige akkusatiiva</title>
+      <title xml:lang="sms">illatiiva iige akkusatiiva</title>
       <references> <ref n=""/></references>
     </header>
     <body>
       <description xml:lang="en">illative instead of accusative</description>
-      <description xml:lang="se">illatiiva iige akkusatiiva</description>
+      <description xml:lang="sms">illatiiva iige akkusatiiva</description>
     <examples>
-      <ex xml:lang="se">Hui ollu liikon {bohccobierggu} ja {goikebierggu}.</ex>
+      <ex xml:lang="sms">Hui ollu liikon {bohccobierggu} ja {goikebierggu}.</ex>
     </examples>
     </body>
   </error>
@@ -64,14 +102,14 @@
   <error id="msyn-valency-acc">
     <header>
       <title xml:lang="en">accusative instead of nominative</title>
-      <title xml:lang="se">akkusatiiva iige nominatiiva</title>
+      <title xml:lang="sms">akkusatiiva iige nominatiiva</title>
       <references> <ref n=""/></references>
     </header>
     <body>
       <description xml:lang="en">accusative instead of nominative</description>
-      <description xml:lang="se">illatiiva iige nominatiiva</description>
+      <description xml:lang="sms">illatiiva iige nominatiiva</description>
     <examples>
-      <ex xml:lang="se">Mun čálán {reive}.</ex>
+      <ex xml:lang="sms">Mun čálán {reive}.</ex>
     </examples>
     </body>
   </error>
@@ -79,14 +117,14 @@
   <error id="msyn-valency-loc-com">
     <header>
       <title xml:lang="en">msyn thing</title>
-      <title xml:lang="se">msyn thingy</title>
+      <title xml:lang="sms">msyn thingy</title>
       <references><ref n=""/></references>
     </header>
     <body>
       <description xml:lang="en">wrong word</description>
-      <description xml:lang="se">boasttut sátni</description>
+      <description xml:lang="sms">boasttut sátni</description>
     <examples>
-      <ex xml:lang="se">Ovdalgihtiigeassima sierra máksingoartta ferte álohii atnit go máksá boastagiro dahje báŋku {badjel}.</ex>
+      <ex xml:lang="sms">Ovdalgihtiigeassima sierra máksingoartta ferte álohii atnit go máksá boastagiro dahje báŋku {badjel}.</ex>
     </examples>
     </body>
   </error>
@@ -94,39 +132,105 @@
   <error id="lex-bokte-not-badjel">
     <header>
       <title xml:lang="en">"bokte" not "badjel"</title>
-      <title xml:lang="se">"bokte" iige "badjel"</title>
+      <title xml:lang="sms">"bokte" iige "badjel"</title>
       <references><ref n=""/></references>
     </header>
     <body>
       <description xml:lang="en">wrong word</description>
-      <description xml:lang="se">boasttut sátni</description>
+      <description xml:lang="sms">boasttut sátni</description>
     <examples>
-      <ex xml:lang="se">Ovdalgihtiigeassima sierra máksingoartta ferte álohii atnit go máksá boastagiro dahje báŋku {badjel}.</ex>
+      <ex xml:lang="sms">Ovdalgihtiigeassima sierra máksingoartta ferte álohii atnit go máksá boastagiro dahje báŋku {badjel}.</ex>
     </examples>
     </body>
   </error>
 
   <error id="syn-pred-not-attr-msg">
     <header>
-      <title xml:lang="se">«$1» ja «$2» leaba blah</title>
+      <title xml:lang="sms">«$1» ja «$2» leaba blah</title>
     </header>
     <body>
-      <description xml:lang="se">Predicative, iige attributive – «$1» ja «$2» leaba blah</description>
+      <description xml:lang="sms">Predicative, iige attributive – «$1» ja «$2» leaba blah</description>
     </body>
   </error>
 
   <error id="msyn-valency-go-inf">
     <header>
       <title xml:lang="en">Try a subclause with <em>go</em> instead of illative</title>
-      <title xml:lang="se">Iskka<em>go</em>-oalgecealkaga iige infinitiiva</title>
+      <title xml:lang="sms">Iskka<em>go</em>-oalgecealkaga iige infinitiiva</title>
       <references> <ref n=""/></references>
     </header>
     <body>
       <description xml:lang="en"><em>go</em> instead of illative</description>
-      <description xml:lang="se"><em>go</em> iige infinitiiva</description>
+      <description xml:lang="sms"><em>go</em> iige infinitiiva</description>
     <examples>
-      <ex xml:lang="se">Soai leaigga sihke dolkan ja suhttan gullat olbmuid šláddariid sudno birra, ja bovdiiga.</ex>
+      <ex xml:lang="sms">Soai leaigga sihke dolkan ja suhttan gullat olbmuid šláddariid sudno birra, ja bovdiiga.</ex>
     </examples>
+    </body>
+  </error>
+
+  <error id="typo">
+    <header>
+      <title xml:lang="en">Spelling errors</title>
+      <title xml:lang="sms">Čállinmeattáhusat</title>
+    </header>
+    <body>
+      <description xml:lang="en">Not in the dictionary</description>
+      <description xml:lang="sms">Ii leat sátnelisttus</description>
+    </body>
+  </error>
+
+  <error id="double-space-before">
+    <header>
+      <title xml:lang="en">Space errors</title>
+      <title xml:lang="sms">Sátnegaskameattáhusat</title>
+    </header>
+    <body>
+      <description xml:lang="en">There are two spaces in front of "$1"</description>
+      <description xml:lang="sms">Leat guokte gaskka ovdal "$1"</description>
+    </body>
+  </error>
+
+  <error id="space-after-paren-beg">
+    <header>
+      <title xml:lang="en">Space errors</title>
+      <title xml:lang="sms">Sátnegaskameattáhusat</title>
+    </header>
+    <body>
+      <description xml:lang="en">There is a space after the opening parenthesis "$1"</description>
+      <description xml:lang="sms">Lea gaska vuosttaš paragráfa "$1" ovddas</description>
+    </body>
+  </error>
+
+  <error id="space-before-paren-end">
+    <header>
+      <title xml:lang="en">Space errors</title>
+      <title xml:lang="sms">Sátnegaskameattáhusat</title>
+    </header>
+    <body>
+      <description xml:lang="en">There is a space before the closing parenthesis "$1"</description>
+      <description xml:lang="sms">Lea gaska nuppi paragráfa "$1" ovddas</description>
+    </body>
+  </error>
+
+  <error id="space-before-punct-mark">
+    <header>
+      <title xml:lang="en">Space errors</title>
+      <title xml:lang="sms">Sátnegaskameattáhusat</title>
+    </header>
+    <body>
+      <description xml:lang="en">There is a space in front of the punctuation mark "$1"</description>
+      <description xml:lang="sms">Lea gaska "$1" ovddas</description>
+    </body>
+  </error>
+
+  <error id="no-space-after-punct-mark">
+    <header>
+      <title xml:lang="en">Space errors</title>
+      <title xml:lang="sms">Sátnegaskameattáhusat</title>
+    </header>
+    <body>
+      <description xml:lang="en">There is no space after the punctuation mark "$1"</description>
+      <description xml:lang="sms">Ii leat gaska "$1" maŋis</description>
     </body>
   </error>
 
