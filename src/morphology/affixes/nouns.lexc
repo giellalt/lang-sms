@@ -11,6 +11,10 @@ LEXICON N_ !!= * @CODE@ FOR (STILL) UNCLASSIFIED INCOMING NOUNS.
 !testing with make  HFST_LEXC_FLAGS=--Werror
 !NMN_PIGS;
 
+LEXICON N_SG-NOM-STOP
+! For special +Sg+Nom when orphan from paradigm
++Sg+Nom: K ;
+
 !! IRREGULAR NOUN nijdd
 LEXICON N_NIJDD !!= * @CODE@ nijdd:ni
 !!! inflection_type="1"
@@ -4906,7 +4910,7 @@ LEXICON NMN_KHEQDD
 :%^V2VV%^PALNo E-STEM_N_KUYLAZH ;	! ǩeâddaž
 !! WORK NEEDED FROM HERE DOWN
 
-LEXICON N_KHEQMNN !!= * @CODE@ ǩeʹmnn:ǩeʹmnn
+LEXICON N_KHEQMNN !!= * @CODE@ ǩeʹmnn:ǩẹ%^1VOW%{ʹØ%}mnn
 !!! inflection_type="?"
 ! vowel: monophthong
 : NMN_KHEQMNN ;
@@ -4940,15 +4944,15 @@ LEXICON NMN_KHEQMNN
 !! NumContLex="1.113"
 !! Is for nouns with ''-est'' Loc, Extra long vowel
 !! * Yaml: __N-aâlghgh__
-: E-STEM_SG-NOM ;	    			! ǩeʹmnn
-:%^V2VV%^XYY2XY E-STEM_SG-ABE/ACC/GEN ;		! ǩeeʹmn
-:%^V2VV%^XYY2XY PL-NOM ;		! ǩeeʹmn
+:%^PAL E-STEM_SG-NOM ;	    			! ǩeʹmnn
+:%^V2VV%^XYY2XY%^PAL E-STEM_SG-ABE/ACC/GEN ;		! ǩeeʹmn
+:%^V2VV%^XYY2XY%^PAL PL-NOM ;		! ǩeeʹmn
 :%^PALÂ%^PALNo%^XYY2XY A_DER/LAZH ;
 :%^PALÂ%^PALNo E-STEM_SG-ILL ;		! ǩeâmnna
-:%^V2VV%^XYY2XY%>e SG-LOC ;		! ǩeeʹmnest
-:%^V2VV%^XYY2XY SG-COM_IN ;		! ǩeeʹmnin
-:%>e ESS/PAR ; ! ess and prt without
-:%^V2VV%^XYY2XY%> E-STEM_PL-OBL ;
+:%^V2VV%^XYY2XY%^PAL%>e SG-LOC ;		! ǩeeʹmnest
+:%^V2VV%^XYY2XY%^PAL SG-COM_IN ;		! ǩeeʹmnin
+:%^PAL%>e ESS/PAR ; ! ess and prt without
+:%^V2VV%^XYY2XY%^PAL%> E-STEM_PL-OBL ;
 :%^V2VV%^PALNo%^XYY2XY E-STEM_N_KUYLAZH ;	! ǩeâmnaž
 ! see ǩieʹmnn
 
@@ -8239,7 +8243,7 @@ LEXICON NMN_STROOIQTEL
 ! Ultimate stem consonant
 !! * __@LEXNAME@__ = Koulukielioppi stemtype II 9 (29)
 !! * Yaml: __N-strooitel __ 
-:%^Pen%^V2VV%^XYY2XY SG-NOM ;
+:%^Pen%^V2VV%^Pen%^XYY2XY SG-NOM ;
 : SG-ABE/ACC/GEN ;
 :%^RmVow%>a SG-ILL ;
 :%^RmVow%>e SG-LOC ;
@@ -11014,6 +11018,7 @@ LEXICON HatY-STEM-PX-RETAIN-SG
 +Sg+Gen+PxSg1:%>an K ;
 +Sg+Gen+PxPl1:%>ân K ;
 
++Sg+Gen+PxPl1:%>ân ASSOC-COLL_IQ33E ;
 +Sg+Gen+PxSg1:%>an ASSOC-COLL_IQ33E ;
 
 LEXICON HatY-STEM-PX-RETAIN-PL
@@ -11046,6 +11051,9 @@ LEXICON HatY-STEM-PX-WEAKEN-SG
 
 +Sg+Gen+PxSg2:%>ad ASSOC-COLL_IQ33E ;
 +Sg+Gen+PxSg3:%>âs ASSOC-COLL_IQ33E ;
++Sg+Gen+PxPl2:%>âd ASSOC-COLL_IQ33E ;
++Sg+Gen+PxPl3:%>âz ASSOC-COLL_IQ33E ;
+
 
 
 +Sg+Abe+PxSg2:%>adtaa K ;
@@ -11063,6 +11071,7 @@ LEXICON HatY-STEM-PX-WEAKEN-SG
 +Use/NG+Sg+Gen+PxPl1:%>ân K ;
 
 +Use/NG+Sg+Gen+PxSg1:%>an ASSOC-COLL_IQ33E ;
++Use/NG+Sg+Gen+PxPl1:%>ân ASSOC-COLL_IQ33E ;
 +Use/NG+Sg+Abe+PxSg1:%>antaa K ;
 +Use/NG+Sg+Abe+PxSg1:%>antää K ;
 +Use/NG+Sg+Abe+PxPl1:%>ântaa K ;
@@ -11187,6 +11196,7 @@ LEXICON A-STEM-PX-RETAIN
 +Sg+Gen+PxPl1:%>an K ;
 
 +Sg+Gen+PxSg1:%>an ASSOC-COLL_IQ33E ;
++Sg+Gen+PxPl1:%>an ASSOC-COLL_IQ33E ;
 
 +Pl+Nom+PxSg1:%>an K ;
 +Pl+Nom+PxPl1:%>an K ;
@@ -11237,6 +11247,9 @@ LEXICON A-STEM-PX-WEAKEN
 
 +Sg+Gen+PxSg2:%>ad ASSOC-COLL_IQ33E ;
 +Sg+Gen+PxSg3:%>as ASSOC-COLL_IQ33E ;
++Sg+Gen+PxPl2:%>ad ASSOC-COLL_IQ33E ;
++Sg+Gen+PxPl3:%>az ASSOC-COLL_IQ33E ;
+
 
 +Sg+Com+PxSg1:%>ainan K ;
 +Sg+Com+PxSg2:%>ainad K ;
@@ -11404,6 +11417,8 @@ LEXICON E-STEM-PX-WEAKEN-WITH-PAL
 +Sg+Gen+PxPl3:%>ez K ;
 
 +Sg+Gen+PxSg3:%>es ASSOC-COLL_IQ33E ;
++Sg+Gen+PxPl2:%>ed ASSOC-COLL_IQ33E ;
++Sg+Gen+PxPl3:%>ez ASSOC-COLL_IQ33E ;
 
 
 +Sg+Abe+PxSg3:%>estaa K ;
@@ -11735,6 +11750,10 @@ LEXICON VOONYS-STEM-PX-WEAKEN-WITH-PAL
 +Sg+Gen+PxPl3:%>eez K ;
 
 +Sg+Gen+PxSg3:%>es ASSOC-COLL_IQ33E ;
++Sg+Gen+PxPl1:%>een ASSOC-COLL_IQ33E ;
++Sg+Gen+PxPl2:%>eed ASSOC-COLL_IQ33E ;
++Sg+Gen+PxPl3:%>eez ASSOC-COLL_IQ33E ;
+
 
 LEXICON VOONYS-STEM-PX-WEAKEN-WITH-PAL_PL-OBL
 +Sg+Com+PxSg1:%>inan K ;
@@ -11777,6 +11796,13 @@ LEXICON VOONYS-STEM-PX-WEAKEN-WITH-PAL_PL-OBL
 +Pl+Gen+PxPl1:%>een K ;
 +Pl+Gen+PxPl2:%>eed K ;
 +Pl+Gen+PxPl3:%>eez K ;
+
++Pl+Gen+PxSg1:%>ään ASSOC-COLL_IQ33E ;
++Pl+Gen+PxSg2:%>ääd ASSOC-COLL_IQ33E ;
++Pl+Gen+PxSg3:%>ees ASSOC-COLL_IQ33E ;
++Pl+Gen+PxPl1:%>een ASSOC-COLL_IQ33E ;
++Pl+Gen+PxPl2:%>eed ASSOC-COLL_IQ33E ;
++Pl+Gen+PxPl3:%>eez ASSOC-COLL_IQ33E ;
 
 +Pl+Ill+PxSg1:%>ään K ;
 +Pl+Ill+PxSg2:%>ääd K ;
