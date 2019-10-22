@@ -785,9 +785,9 @@ SELECT:Ger Ger (0 (Der/NomAct) LINK *-1 REALCOPULAS BARRIER S-BOUNDARY) ;
 
 # Nomen
 
-REMOVE:No_Px PX IF (0 N)(NOT 0 FAMILY OR Pron);
+#2019-10-20 REMOVE:No_Px PX IF (0 N)(NOT 0 FAMILY OR Pron);
 	## Bïepmehtehteme jåarhka goh gïjrese vuertieminie.
-
+	##2019-10-20 Son mõõni, ääušas lueʹšti, tõzz kuõʹđi, pirr njikkõnj täävtõõđi,
 
 #SELECT: Attr IF (0 Prop)(1 Prop); # Too hard.
 REMOVE:PropAttr (Prop Attr) IF (NOT 1 Prop);
@@ -812,9 +812,9 @@ SELECT:IneIfEss/Com (N Pl Ine) (0 (N Ess) OR (N Sg Com)) (1 ("viedtedh" V* TV De
 REMOVE:EssIfCom/Ine (N Ess) (0 (N Sg Com) OR (N Pl Ine)) (*-1 (Pron Sg Com) OR (Pron Pl Ine) BARRIER NPNH OR S-BOUNDARY) ;
 # dajnie barkoeplaanine
 
-SELECT:NPlIll (N Pl Ill) (0 (N Pl Acc)) (NOT *0 (V TV) BARRIER S-BOUNDARY) ;
+#2019-10-20 SELECT:NPlIll (N Pl Ill) (0 (N Pl Acc)) (NOT *0 (V TV) BARRIER S-BOUNDARY) ;
 # ..., mejtie juridigkesne veadtjaldahkesne staatide, jih deklarasjovnide.
-
+#2019-10-20 Näʹde muõrid räʹjje, räʹjje, räʹjje.
 
 # Verb or Noun
 
