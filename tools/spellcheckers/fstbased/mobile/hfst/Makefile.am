@@ -18,6 +18,15 @@
 # This is the default weight for all editing operations in the error model:
 DEFAULT_WEIGHT=10
 
+# Whether to use swaps - ..ab.. -> ..ba.. in one single operation.
+# NB! Beware that this increases the size of the errormodel by ~ 3 * S^2, where
+# S is the size of the alphabet. Ie by A LOT.
+# If you want to enable swaps, consider using an edit distance of only 1, or
+# better yet, dot NOT include UPPERCASE LETTERS in the error model alphabet.
+#
+# Possible values are 'yes' or 'no'
+USE_SWAPS=no
+
 # Default edit distanse for the generated, alphabet-based error model:
 EDIT_DISTANCE=2
 
@@ -59,9 +68,9 @@ FINAL_STRING_EDITS=txt
 WORD_REPLACEMENTS=yes
 
 # Specify where to find the project.yaml file and the corresponding layout defs:
-KEYBOARD_LAYOUT_DIR=$(GIELLA_CORE)/../keyboards/smi
+KEYBOARD_LAYOUT_DIR=$(GIELLA_CORE)/../keyboards/$GLANG
 # Specify the ID of the layout as found at the top of each layout file
-KEYBOARD_LAYOUT_ID=skolt_sami_keyboard
+KEYBOARD_LAYOUT_ID=sms
 
 include $(top_srcdir)/am-shared/tools-spellcheckers-fstbased-mobile-hfst-dir-include.am
 
