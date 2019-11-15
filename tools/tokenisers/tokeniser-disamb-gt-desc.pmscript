@@ -53,7 +53,7 @@ Define inputmark    [ 0:"@PMATCH_INPUT_MARK@" | 0:"@PMATCH_BACKTRACKING@" ];
 
 ! Characters which have analyses in the lexicon, but can appear without spaces
 ! before/after, that is, with no context conditions, and adjacent to words:
-Define incondform      Punct|{“}|{”}|{…}|{‚}|{‘}|{’}|{–}|{—}|{­}|{_}|{<}|{>}|{«}|{»}|{@}|{'}|{➤}|{•}|{§}|{!}|{‹}|{›} ;
+Define incondform      Punct|{“}|{”}|{…}|{‚}|{‘}|{’}|{–}|{—}|{­}|{_}|{<}|{>}|{«}|{»}|{@}|{'}|{‹}|{›} ;
 
 Define blank           Whitespace | incondform
                        | { } ! U+2000    En Quad                    &#8192;
@@ -116,9 +116,6 @@ Define alphabet "a-z"
                |{Ỷ}|{Ƴ}|{Ỵ}|{Ɏ}
                |{š}|{ž}|{č}|{đ}|{í}|{ŋ}|{ň}|{ŧ}|{ň}
                |{Š}|{Ž}|{Č}|{Đ}|{Í}|{Ŋ}|{Ň}|{Ŧ}|{Ň}
-               |{ʒ}|{ǯ}|{ǥ}|{ǧ}|{ǩ}|{ñ}|{ĺ}|{ś}
-               |{Ʒ}|{Ǯ}|{Ǥ}|{Ǧ}|{Ǩ}|{Ñ}|{Ĺ}|{Ś}
-               |{ʹ}|{ʼ}|{ˈ}|{‘}
                | "0-9"
                |{_}|{§}|{°}
                ;
