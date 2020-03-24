@@ -154,6 +154,8 @@ LIST COMMA = "," ;
 LIST Der1 = Der1 ;
 LIST Der2 = Der2 ;
 LIST Der3 = Der3 ;
+LIST Err/GenreLeudd = Err/GenreLeudd ;
+
 
 LIST @CNP = @CNP ;
 LIST @CVP = @CVP ;
@@ -454,6 +456,8 @@ REMOVE:R_Num Num (0 Neg);
 REMOVE:R_ACR ACR (0 CC);
 	## Im leah naan saemieskuvlesne vaadtseme.
 	## Jih daejtie gærjide edtjem aaj sjeakodh, – jijtje jeahta jih aalka sjeakodh.
+
+REMOVE:Err Err/GenreLeudd (0C N) ;
 
 REMOVE:Prop Prop (0 ("jos"));
 
