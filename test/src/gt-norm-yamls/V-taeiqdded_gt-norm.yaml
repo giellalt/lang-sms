@@ -1,0 +1,66 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below) There are still problems
+# Then: run analyser, then correct. 
+
+
+  Verb - täiʹdded: # Verb 'to know' - full paradigm
+     täiʹdded+V+Inf: täiʹdded
+     täiʹdded+V+Ind+Prs+Sg1: tääidam
+     täiʹdded+V+Ind+Prs+Sg2: tääidak
+     täiʹdded+V+Ind+Prs+Sg3: täidd
+     täiʹdded+V+Ind+Prs+Pl1: täiʹddep
+     täiʹdded+V+Ind+Prs+Pl2: täiʹddveʹted
+     täiʹdded+V+Ind+Prs+Pl3: täiʹdde
+     täiʹdded+V+Ind+Prs+Sg4: tääiʹdet
+     täiʹdded+V+Ind+Prs+ConNeg: tääiʹd
+     täiʹdded+V+Ind+Prt+Sg1: [taiʹddem]
+     täiʹdded+V+Ind+Prt+Sg2: [taiʹddiǩ]
+     täiʹdded+V+Ind+Prt+Sg3: taaiʹdi
+     täiʹdded+V+Ind+Prt+Pl1: [taaiʹdim, taaiʹdin]
+     täiʹdded+V+Ind+Prt+Pl2: [taaiʹdid]
+     täiʹdded+V+Ind+Prt+Pl3: taiʹdde
+     täiʹdded+V+Ind+Prt+Sg4: taiʹddeš
+     täiʹdded+V+Ind+Prt+ConNeg: täiddam
+     täiʹdded+V+Pot+Sg1: [taaiʹdžem]
+     täiʹdded+V+Pot+Sg2: [taaiʹdžiǩ]
+     täiʹdded+V+Pot+Sg3: [taaiʹdež]
+     täiʹdded+V+Pot+Pl1: [taaiʹdžep, taaiʹdžim, taaiʹdžin]
+     täiʹdded+V+Pot+Pl2: [taaiʹdžid] 
+     täiʹdded+V+Pot+Pl3: [taaiʹdže]
+     täiʹdded+V+Pot+Sg4: [taaiʹdžet]
+     täiʹdded+V+Pot+ConNeg: [taaiʹdže]
+     täiʹdded+V+Cond+Sg1: tääidčem
+     täiʹdded+V+Cond+Sg2: tääidčiǩ
+     täiʹdded+V+Cond+Sg3: tääidči
+     täiʹdded+V+Cond+Pl1: [tääidčim, tääidčin, tääidčep]
+     täiʹdded+V+Cond+Pl2: tääidčid
+     täiʹdded+V+Cond+Pl3: tääidče
+     täiʹdded+V+Cond+Sg4: tääidčeš
+     täiʹdded+V+Cond+ConNeg: tääidče
+     täiʹdded+V+Imprt+Sg2: tääiʹd
+     täiʹdded+V+Imprt+Sg3: tääidas
+     täiʹdded+V+Imprt+Pl1: täiʹddep
+     täiʹdded+V+Imprt+Pl2: täiʹdded
+     täiʹdded+V+Imprt+Pl3: täiddaz
+     täiʹdded+V+Imprt+ConNeg: tääiʹd
+     täiʹdded+V+Imprt+ConNegII: taiddu      # taiddu
+     täiʹdded+V+Actio+Ess: täiʹddmen
+     täiʹdded+V+Actio: täiʹddem
+     täiʹdded+V+Act+PrsPrc: taiʹddi
+     täiʹdded+V+Act+PrfPrc: täiddam
+     täiʹdded+V+Pass+PrfPrc: taiddum         # taiddum
+     täiʹdded+V+VAbess: [tääiʹdkani, tääiʹdǩeännai]
+     täiʹdded+V+Ger+Ess: tääiʹdeen
+     täiʹdded+V+Ger+Instr: tääiʹdeeʹl
+     täiʹdded+V+Act+PrfPrc: täiddam
