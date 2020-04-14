@@ -807,13 +807,13 @@ LEXICON V0_HUOLLYD !!= * @CODE@ huõllâd:huõll
 
 :%^CC2CAllegro FOR-ALLEGRO-DEVERBAL-DERIVATION ; !!= * @CODE@ (10) Allegro for incoative: huõl»
 
-LEXICON V_SIORRYD !!= * @CODE@ siõrrâd:siõrr
+LEXICON V_SIORRYD !!= * @CODE@ siõrrâd:siõ%{ʹØ%}rr
 : V0_SIORRYD ;
-LEXICON IV_SIORRYD !!= * @CODE@ siõrrâd:siõrr
+LEXICON IV_SIORRYD !!= * @CODE@ siõrrâd:siõ%{ʹØ%}rr
 : V0_SIORRYD ;
-LEXICON TV_SIORRYD !!= * @CODE@ siõrrâd:siõrr
+LEXICON TV_SIORRYD !!= * @CODE@ siõrrâd:siõ%{ʹØ%}rr
 : V0_SIORRYD ;
-LEXICON V0_SIORRYD !!= * @CODE@ siõrrâd:siõrr
+LEXICON V0_SIORRYD !!= * @CODE@ siõrrâd:siõ%{ʹØ%}rr
 !!! inflection_type="1"
 ! 1. VERBS WITH SINGLE-SYLLABLE Ind.Prs.Sg3 (2009: 354)
 ! 1.1 Inf in âd (vowel shift)
@@ -3748,7 +3748,6 @@ LEXICON V0_KAAQKHKHED !!= * @CODE@ kââʹǩǩed:kââkk
 ! (7)  Imprt.Sg3: kââǥǥas
 ! (8)  Imprt.13.ConNeg: kõkku 
 ! (9)  Imprt.Pl3: kâkkaz
-! (9) Ind.Imprt.Pl3: kâkˈkaz
 ! (10) Allegro for incoative: kâʹj»
 ! (11)  Ger.Temp.PxSg3: kââʹjjeeʹstes
 ! * Yaml: __V-kaakked__
@@ -4266,48 +4265,65 @@ LEXICON V0_LEUQKHKHED !!= * @CODE@ leuʹǩǩed:leukk
 :%^V2VV%^VOWRaise%^XYY2XY VSUF-CHED_ED ; !!= * @CODE@  (12) +Der+Der/ched: 
 
 
-LEXICON V_TAIQDDED !!= * @CODE@ täiʹdded:täidd
+LEXICON V_TAIQDDED !!= * @CODE@ täiʹdded:tä%^1VOWi%{ʹØ%}dd
 : V0_TAIQDDED ;
-!LEXICON IV_TAIQDDED !!= * @CODE@ täiʹdded:täidd
+!LEXICON IV_TAIQDDED !!= * @CODE@ täiʹdded:tä%^1VOWi%{ʹØ%}dd
 !: V0_TAIQDDED ;
-!LEXICON TV_TAIQDDED !!= * @CODE@ täiʹdded:täidd
+!LEXICON TV_TAIQDDED !!= * @CODE@ täiʹdded:tä%^1VOWi%{ʹØ%}dd
 !: V0_TAIQDDED ;
-LEXICON V0_TAIQDDED !!= * @CODE@ täiʹdded:täidd
+LEXICON V0_TAIQDDED !!= * @CODE@ täiʹdded:tä%^1VOWi%{ʹØ%}dd
 !!! inflection_type="1"
 ! seek parallell in MEINNAD
 ! FORMS
+! Test data:
+!!€gt-norm: täiʹdded #
+!!€ täiʹdded:	täiʹdded+V+Inf  # (1)
 ! (1) +V+Inf: täiʹdded
 !   Ind.Prs.Pl1-Pl2, Ind.Prt.ConNeg
 !   Imprt.Pl1-Pl2-Pl3, ActEss, Actio, PrsPrc, PrfPrc
+!!€ täidd:	täiʹdded+V+Ind+Prs+Sg3  # (2)
 ! (2) +V+Ind+Prs+Sg3: täidd
+!!€ täiʹdde:	täiʹdded+V+Ind+Prs+Pl3  # (3)
 ! (3) +V+Ind+Prs+Pl3: täiʹdde
+!!€ taiʹdde:	täiʹdded+V+Ind+Prt+Pl3  # (4)
 ! (4) +V+Ind+Prt+Pl3: taiʹdde
 !   Ind.Prt.Sg1-Sg2-4
-! (5) +V+Imprt+Sg2: vueiʹn
+!!€ tääiʹd:	täiʹdded+V+Imprt+Sg2  # (5)
+! (5) +V+Imprt+Sg2: taaiʹd
 !   Ind.Prs.Sg1-Sg2-4-ConNeg
-!   Ind.Prt.Sg3-Pl1-Pl2
 !   Imprt.2.ConNeg
 !   VAbe, GerTemp, GerInstr
-!   Cond-Pot
+!!€ taaiʹdež:	täiʹdded+V+Pot+Sg3  # (6)
 ! (6) +V+Pot+Sg3: taaiʹdež
+!   Ind.Prt.Sg3-Pl1-Pl2
+!   Pot
+!!€ tääidas:	täiʹdded+V+Imprt+Sg3  # (7)
 ! (7) +V+Imprt+Sg3: ???tääidas
+!   Cond
+!!€ taiddu:	täiʹdded+V+Pot+Sg3  # (8)
 ! (8) +V+Imprt+ConNegII: ???taiddu
 !    Pass.PrfPrc
-! täiʹdded:täidd
-! Stem is Strong
-! Diphthong
-! Vowel raising
-! NEEDS WORK
-!(son täidd) ??
+!!€ täiddaz:	täiʹdded+V+Imprt+Pl3  # (9)  +V+Imprt+Pl3 täiddaz
+!!€ täiʹdškueʹtted:	täiʹdded+V++Der/InchL+V+Inf  # (10) Allegro
+!!€ taiʹddi:	täiʹdded+V+PrsPrc  # (11)
+!!€ taaidčed:	täiʹdded+V+Der/ched+V+Inf  # (12)
+
 :%^PAL VSUF-INF_ED ; !1
 : VSUF-IND-PRS-SG3_ED ; !2
 +Ind+Prs+Pl3:%^PAL%>e K ; !3
 :%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ; !4
-:%^XYY2XY VSUF-IND-PRS-CONNEG_ED ; !5
-:%^VOWRaise%^PAL%^XYY2XY%> VSUF-POTENTIAL_ED ; !6 vueiʹnet
-:%^XYY2XY%> VSUF-CONDITIONAL_ED ; !7
-+Imprt+Sg3:%^XYY2XY%>as K ; !7
+:%^V2VV%^PAL%^XYY2XY VSUF-IND-PRS-CONNEG_ED ; !5
+:%^V2VV%^VOWRaise%^PAL%^XYY2XY%> VSUF-POTENTIAL_ED ; !6 taaiʹdež
+:%^V2VV%^XYY2XY%> VSUF-CONDITIONAL_ED ; !7
++Imprt+Sg3:%^V2VV%^XYY2XY%>as K ; !7
 :%^VOWRaise VSUF-IMPRT-CONNEGII_ED ; !8
+
+!!
+: VSUF-IMPRT-PL3_ED ;  !!= * @CODE@ (9) +V+Imprt+Pl3 täiddaz
+!! Imprt+Pl3
+
+!! Allegro (10)
+:%^PAL%^XYY2XY FOR-ALLEGRO-DEVERBAL-DERIVATION ; !!= * @CODE@ (10) täiʹd- 
 
 !! (11) Present Participle:
 :%^VOWRaise%^PAL FOR-VSUF-PRSPRC_ED ; !!= * @CODE@ (11) taiʹddi
@@ -4405,7 +4421,7 @@ LEXICON V0_CEAQLKHKHED !!= * @CODE@ ceäʹlǩǩed:ceälkk
 !! Imprt+ConNeg, Pass+PrfPrc
 
 !!
-: VSUF-IMPRT-PL3_ED ;  !!= * @CODE@ +V+Imprt+Pl3 ceälkkaz
+: VSUF-IMPRT-PL3_ED ;  !!= * @CODE@ (9) +V+Imprt+Pl3 ceälkkaz
 !! Imprt+Pl3
 
 !! Allegro (10)
@@ -6010,7 +6026,7 @@ LEXICON POTENTIAL
 LEXICON CONDITIONAL
  +Cond+Sg1:%>čem K	;
  +Cond+Sg2:%>čiǩ K	;
- +Use/SpellNoSugg+Cond+Sg2:%>čeǩ K	;
+ +Use/NG+Use/SpellNoSugg+Cond+Sg2:%>čeǩ K	;
  +Cond+Sg3:%>či K	;
  +Cond+Pl1:%>čim K	; ! How are these related?
  +Cond+Pl1+Use/NG:%>čep K	; ! Are there substandards? 

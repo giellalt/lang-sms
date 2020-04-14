@@ -1,0 +1,66 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below) There are still problems
+# Then: run analyser, then correct. 
+
+
+  Verb - kåiʹtted: # Verb 'to know' - full paradigm
+     kåiʹtted+V+Inf: kåiʹtted
+     kåiʹtted+V+Ind+Prs+Sg1: kååitam
+     kåiʹtted+V+Ind+Prs+Sg2: kååitak
+     kåiʹtted+V+Ind+Prs+Sg3: kåitt
+     kåiʹtted+V+Ind+Prs+Pl1: kåiʹttep
+     kåiʹtted+V+Ind+Prs+Pl2: kåiʹttveʹted
+     kåiʹtted+V+Ind+Prs+Pl3: kåiʹtte
+     kåiʹtted+V+Ind+Prs+Sg4: kååiʹtet
+     kåiʹtted+V+Ind+Prs+ConNeg: kååiʹt
+     kåiʹtted+V+Ind+Prt+Sg1: [koiʹttem]
+     kåiʹtted+V+Ind+Prt+Sg2: [koiʹttiǩ]
+     kåiʹtted+V+Ind+Prt+Sg3: kooiʹti
+     kåiʹtted+V+Ind+Prt+Pl1: [kooiʹtim, kooiʹtin]
+     kåiʹtted+V+Ind+Prt+Pl2: [kooiʹtid]
+     kåiʹtted+V+Ind+Prt+Pl3: koiʹtte
+     kåiʹtted+V+Ind+Prt+Sg4: koiʹtteš
+     kåiʹtted+V+Ind+Prt+ConNeg: kåittam
+     kåiʹtted+V+Pot+Sg1: [kooiʹtžem]
+     kåiʹtted+V+Pot+Sg2: [kooiʹtžiǩ]
+     kåiʹtted+V+Pot+Sg3: [kooiʹtež]
+     kåiʹtted+V+Pot+Pl1: [kooiʹtžep, kooiʹtžim, kooiʹtžin]
+     kåiʹtted+V+Pot+Pl2: [kooiʹtžid] 
+     kåiʹtted+V+Pot+Pl3: [kooiʹtže]
+     kåiʹtted+V+Pot+Sg4: [kooiʹtžet]
+     kåiʹtted+V+Pot+ConNeg: [kooiʹtže]
+     kåiʹtted+V+Cond+Sg1: kååitčem
+     kåiʹtted+V+Cond+Sg2: kååitčiǩ
+     kåiʹtted+V+Cond+Sg3: kååitči
+     kåiʹtted+V+Cond+Pl1: [kååitčim, kååitčin, kååitčep]
+     kåiʹtted+V+Cond+Pl2: kååitčid
+     kåiʹtted+V+Cond+Pl3: kååitče
+     kåiʹtted+V+Cond+Sg4: kååitčeš
+     kåiʹtted+V+Cond+ConNeg: kååitče
+     kåiʹtted+V+Imprt+Sg2: kååiʹt
+     kåiʹtted+V+Imprt+Sg3: kååitas
+     kåiʹtted+V+Imprt+Pl1: kåiʹttep
+     kåiʹtted+V+Imprt+Pl2: kåiʹtted
+     kåiʹtted+V+Imprt+Pl3: kåittaz
+     kåiʹtted+V+Imprt+ConNeg: kååiʹt
+     kåiʹtted+V+Imprt+ConNegII: koittu      # koittu
+     kåiʹtted+V+Actio+Ess: kåiʹttmen
+     kåiʹtted+V+Actio: kåiʹttem
+     kåiʹtted+V+Act+PrsPrc: koiʹtti
+     kåiʹtted+V+Act+PrfPrc: kåittam
+     kåiʹtted+V+Pass+PrfPrc: koittum         # koittum
+     kåiʹtted+V+VAbess: [kååiʹtkani, kååiʹtǩeännai]
+     kåiʹtted+V+Ger+Ess: kååiʹteen
+     kåiʹtted+V+Ger+Instr: kååiʹteeʹl
+     kåiʹtted+V+Act+PrfPrc: kåittam
