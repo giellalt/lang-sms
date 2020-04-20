@@ -25,7 +25,7 @@ JSP_PAGES=root-morphology.jspwiki \
 		  subjunctions-stems.jspwiki       \
 		  verbs-affixes.jspwiki \
 		  verbs-stems.jspwiki \
-		  sms-phon-phonology.jspwiki
+		  phonology-morphology.jspwiki
 # clitics-morphology.jspwiki       \
 # compounding-morphology.jspwiki   \
 # abbreviations-stems.jspwiki      \
