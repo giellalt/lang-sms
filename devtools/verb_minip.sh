@@ -12,7 +12,7 @@ GTHOME=$(echo $GTHOME)
 
 PATTERN=$1
 L_FILE="in.txt"
-cut -d '!' -f1 src/morphology/stems/V_*.lexc | egrep $PATTERN | cut -d ':' -f1>$L_FILE
+cut -d '!' -f1 src/fst/stems/V_*.lexc | egrep $PATTERN | cut -d ':' -f1>$L_FILE
 
 P_FILE="test/data/testverbparadigm.txt"
 
