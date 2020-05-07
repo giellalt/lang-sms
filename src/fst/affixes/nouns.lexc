@@ -1192,7 +1192,7 @@ LEXICON N_SIJDD-PL !!= * @CODE@ siid:sijdd
 !!€ siid: 	 sijdd+N+Sg+Acc
 !!€ siʹjdde: 	 sijdd+N+Sg+Ill
 !!€ siidâst: 	 sijdd+N+Sg+Loc
-!!€ siidstad: 	 sijdd+N+Sg+Loc+PxSg1
+!!€ siidstad: 	 sijdd+N+Sg+Loc+PxSg2
 !!€ siidin: 	 sijdd+N+Sg+Com
 !!€ sijddân: 	 sijdd+N+Ess
 !!€ sijddâd: 	 sijdd+N+Par
@@ -1698,6 +1698,27 @@ HatY-STEM-PX-RETAIN ;
 : SG-LOC-PX_ALLEGRO ;
 :%^VV2V HatY-STEM-PX-STRENGTHEN ;
 
+! Test data:
+!!€gt-norm: miõhtt #
+!!€ miõhtt: miõhtt+N+Sg+Nom
+!!€ miõut: miõhtt+N+Sg+Gen
+!!€ miõut: miõhtt+N+Sg+Acc
+!!€ miõʹhtte: miõhtt+N+Sg+Ill
+!!€ miõutâst: miõhtt+N+Sg+Loc
+!!€ miõuˈtstan: miõhtt+N+Sg+Loc+PxSg1
+!!€ miõutin: miõhtt+N+Sg+Com
+!!€ miõhttân: miõhtt+N+Ess
+!!€ miõhttâd: miõhtt+N+Par
+!!€ miõuttaa: miõhtt+N+Sg+Abe
+!!€ miõut: miõhtt+N+Pl+Nom
+!!€ miõuti: miõhtt+N+Pl+Gen
+!!€ miõutid: miõhtt+N+Pl+Acc
+!!€ miõutid: miõhtt+N+Pl+Ill
+!!€ miõutin: miõhtt+N+Pl+Loc
+!!€ miõutivuiʹm: miõhtt+N+Pl+Com
+!!€ miõutitaa: miõhtt+N+Pl+Abe
+!!€ miõutâž: miõhtt+N+Der+Der/Dimin+N+Sg+Nom
+!!€ miõuʹte: miõhtt+N+Der+Der/Dimin+N+Sg+Gen
 
 !!!
 LEXICON N_RIIKK !!= * @CODE@ riikk:rii%{ʹØ%}kk
@@ -2160,6 +2181,10 @@ LEXICON NMN_AELDD
 :%^XYY2XY SG-LOC-PX_ALLEGRO ;	  !!= * @CODE@ (10) äld
 !! Sg_Loc_Px..
 
+LEXICON N_AELDD-PL
+:%>a ESS/PAR ;                          !!= * @CODE@ (6) älddan
+:%^V2VV%^XYY2XY A-STEM_PL-NOM ; !!= * @CODE@ (2) ääld
+
 ! Test data:
 !!€gt-norm: äldd #
 !!€ äldd: äldd+N+Sg+Nom
@@ -2195,6 +2220,11 @@ LEXICON A-STEM_SG-ABE/ACC/GEN-PL-NOM  !!= * @CODE@ (2)
  A-STEM-PX-WEAKEN_NG ;
 DenominalAdjsCShort ;
  LAT ;
+
+LEXICON A-STEM_PL-NOM  !!= * @CODE@ (2)
+ PL-NOM ;
+:%>a PL-OBL ;
++Use/NG: PL-OBL ;
 
 LEXICON N_PEIGG !!= * @CODE@ peigg:pẹigg
 !!! inflection_type="?"
@@ -2485,6 +2515,12 @@ LEXICON NMN_VUYRR
 :%^XYY2VY SG-LOC-PX_ALLEGRO ; !!= * @CODE@ (10) vuâr»
 !! Sg_Loc_Px..
 
+LEXICON N_VUYRR-PL
+!! grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
+:%>a ESS/PAR ;                          !!(6) Ess: vuârran
+:%^CC2C A-STEM_PL-NOM ;          !!(2) Pl.Nom: vuâr vuâr also PL-OBL
+
+
 LEXICON N_TUYJJ !!= * @CODE@ tuâjj:tuâjj
 !!! inflection_type="?"
 : NMN_TUYJJ ;
@@ -2518,6 +2554,9 @@ LEXICON NMN_TUYJJ
 +Use/NG:%^J2I%^CC2C SG-GEN ;		!!= * @CODE@ (2) tuâi
 +Use/NG:%^J2I%^CC2C SG-ACC ;
 +Use/NG:%^J2I%^CC2C PL-NOM ;
+
+LEXICON N_TUYJJ-PL
+ N_VUYRR-PL ;
 
 LEXICON N_CHUAECC !!= * @CODE@ čuäcc:čuäcc
 !!! inflection_type="?"
@@ -3380,6 +3419,58 @@ LEXICON NMN_KUQRCHCH
  E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) kurčč-
 :%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) kuʹrč-
 :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) kuʹrčč Ess+Px..
+
+LEXICON N_PUIQCC !!= * @CODE@ puiʹcc:pu%^1VOWi%{ʹØ%}cc
+!!! inflection_type="?"
+: NMN_PUIQCC ;
+LEXICON NMN_PUIQCC
+!! !!(1) Sg.Nom: kuʹrčč
+!! !!(2) Pl.Nom: kuuʹrč
+!! !!(3) Sg.Ill: korčča
+!! !!(4) Sg.Loc: kuuʹrčest
+!! !!(5) Sg.Com: kuuʹrčin
+!! !!(6) Ess: kuʹrččen
+!! !!(7) Par: kuʹrččed
+!! !!(8) Pl.Acc: kuuʹrčid
+!! !!(9) Der/Dimin.N.Sg.Nom: koorčaž
+!! NumContLex="1.113"
+!! * Yaml: __N-kurchch__
+!!
+:%^PAL E-STEM_SG-NOM ;	    			! kuʹrčč
+:%^V2VV%^PAL%^XYY2XY E-STEM_SG-ABE/ACC/GEN ;		! kuuʹrč
+:%^V2VV%^XYY2XY A_DER/LAZH ;
+:%^V2VV%^PAL%^XYY2XY PL-NOM ;		! kuuʹrč
+:%^VOWLower E-STEM_SG-ILL ;	! korčča
+:%^V2VV%^PAL%^XYY2XY%>e SG-LOC ;	    	   	! kuuʹrčest
+:%^V2VV%^PAL%^XYY2XY SG-COM_IN ;			! kuuʹrčin
+:%^PAL%>e ESS/PAR ; 	  			! kuʹrččen
+:%^V2VV%^PAL%^XYY2XY E-STEM_PL-OBL ;		! kuuʹrči
+:%^V2VV%^VOWLower%^XYY2XY E-STEM_N_KUYLAZH ;	! koorčaž
+ E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) kurčč-
+:%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) kuʹrč-
+:%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) kuʹrčč Ess+Px..
+
+! Test data:
+!!€gt-norm: puiʹcc #
+!!€ puiʹcc: puiʹcc+N+Sg+Nom
+!!€ puuiʹc: puiʹcc+N+Sg+Gen
+!!€ puuiʹc: puiʹcc+N+Sg+Acc
+!!€ poicca: puiʹcc+N+Sg+Ill
+!!€ puuiʹcest: puiʹcc+N+Sg+Loc
+!!€ puiʹcstan: puiʹcc+N+Allegro+Sg+Loc+PxSg1
+!!€ puuiʹcstan: puiʹcc+N+Largo+Sg+Loc+PxSg1
+!!€ puuiʹcain: puiʹcc+N+Sg+Com
+!!€ puiʹccen: puiʹcc+N+Ess
+!!€ puiʹcced: puiʹcc+N+Par
+!!€ puuiʹctaa: puiʹcc+N+Sg+Abe
+!!€ puuiʹc: puiʹcc+N+Pl+Nom
+!!€ puuiʹci: puiʹcc+N+Pl+Gen
+!!€ puuiʹcid: puiʹcc+N+Pl+Acc
+!!€ puuiʹcid: puiʹcc+N+Pl+Ill
+!!€ puuiʹcin: puiʹcc+N+Pl+Loc
+!!€ puuiʹcivuiʹm: puiʹcc+N+Pl+Com
+!!€ puuiʹcitaa: puiʹcc+N+Pl+Abe
+!!€ pooicaž: puiʹcc+N+Der+Der/Dimin+N+Sg+Nom
 
 
 LEXICON N_KUQV3H3H !!= * @CODE@ kuʹvǯǯ:kuvǯǯ
@@ -4647,6 +4738,10 @@ LEXICON NMN_KAQLBB
 :%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) käʹlb-
 :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) käʹlbb Ess+Px..
  NMN_KAQLBB-PL ;
+
+LEXICON N_KAQLBB-PL
+NMN_KAQLBB-PL ;
+:%^PAL%>e ESS/PAR ;                             !!= * @CODE@ (6) Ess: âʹlǧǧen
 
 LEXICON NMN_KAQLBB-PL
 :%^V2VV%^PAL%^XYY2XY PL-NOM ;	!!= * @CODE@ (2) Pl.Nom: ââʹlj
@@ -7252,7 +7347,7 @@ LEXICON NMN_LUUBBYL !!= * @CODE@ luubbâl:lubbâl
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 :%^RmVow A_DER/ALLASH ;
 
-LEXICON N_TAALKYS !!= * @CODE@ taalkâs:talkkâs
+LEXICON N_TAALKYS !!= * @CODE@ taalkâs:ta%^1VOWlkkâs
 !!! inflection_type="2"
 : NMN_TAALKYS ;
 LEXICON NMN_TAALKYS !!= * @CODE@ taalkâs:talkkâs
@@ -10629,6 +10724,12 @@ LEXICON NMN_UUQREZH
 :e PL-NOM ;
 :a PL-OBL ;
 
+LEXICON N_UUQREZH-PL
+:ž%>e ESS/PAR ;
+:e PL-NOM ;
+:a PL-OBL ;
+
+ 
 
 LEXICON N_JEAQKHKHKHAAZH !!= * @CODE@ jeäʹǩǩääž:jeäʹǩˈǩ
 !!! inflection_type="?"
@@ -10848,11 +10949,11 @@ LEXICON NMN_VISKKYD
 LEXICON NMN_MOASHSHAD
 :ad SG-NOM ;
 :ad SG-ABE/ACC/GEN ;
+:ad PL-NOM ;
 :ää SG-ILL ;
 :eeʼ SG-LOC ;
 :i SG-COM_IN ;
 :ee ESS/PAR ;
-:ad PL-NOM ;
 :i PL-OBL ;
 
 LEXICON N_AQKHKHED !!= * @CODE@ âʹǩǩed:âʹǩǩ
