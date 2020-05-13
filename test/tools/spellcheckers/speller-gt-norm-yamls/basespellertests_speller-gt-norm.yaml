@@ -1,0 +1,16 @@
+Config:
+  hfst:
+    Gen:   ../../../tools/spellcheckers/generator-speller-gt-norm.hfst
+    Morph: ../../../tools/spellcheckers/analyser-speller-gt-norm.hfst
+  xerox:
+    Gen:   ../../../tools/spellcheckers/generator-speller-gt-norm.xfst
+    Morph: ../../../tools/spellcheckers/analyser-speller-gt-norm.xfst
+    App: lookup
+
+Tests:
+  Normativity tests: # We should not generate non-standard or irrelevant forms:
+    sääʹmteʹǧǧ+N+Sg+Nom:             "sääʹmteʹǧǧ"
+    ǩiõll+N+Cmp#tuâjjlaž+N+Pl+Nom:   "ǩiõlltuâjjla"
+    tuâjj+N+Sg+Ill:                  "tuõjju"
+    vuäʹpsted+V+Actio+N+Cmp#tuâjj+N+Sg+Nom:    "vuäʹpstemtuâjj"
+

@@ -1,0 +1,64 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Verb - ceäggad: # Verb 'to put up/pystyttää' - full paradigm
+     ceäggad+V+Ind+Prs+Sg1: ceäggam
+     ceäggad+V+Ind+Prs+Sg2: ceäggak
+     ceäggad+V+Ind+Prs+Sg3: ceägg    #ceägg
+     ceäggad+V+Ind+Prs+Pl1: ceäggap    #ceäggap
+     ceäggad+V+Ind+Prs+Pl2: ceäggveʹted    #ceäggveʹted
+     ceäggad+V+Ind+Prs+Pl3: ceägga    #ceägga
+     ceäggad+V+Ind+Prs+Sg4: ceäggat
+     ceäggad+V+Ind+Prs+ConNeg: ceägg
+     ceäggad+V+Ind+Prt+Sg1: ciâggum    #ciâggum
+     ceäggad+V+Ind+Prt+Sg2: ciâgguk    #ciâgguk
+     ceäggad+V+Ind+Prt+Sg3: ceäggai
+     ceäggad+V+Ind+Prt+Pl1: [ceäggaim, ceäggain]
+     ceäggad+V+Ind+Prt+Pl2: ceäggaid
+     ceäggad+V+Ind+Prt+Pl3: ciâggu    #ciâggu
+     ceäggad+V+Ind+Prt+Sg4: ciâgguš    #ciâgguš
+     ceäggad+V+Ind+Prt+ConNeg: ceäggam    #ceäggam
+     ceäggad+V+Pot+Sg1: ceäggžem
+     ceäggad+V+Pot+Sg2: ceäggžiǩ
+     ceäggad+V+Pot+Sg3: ceäggaž
+     ceäggad+V+Pot+Pl1: [ceäggžep, ceäggžim, ceäggžin]
+     ceäggad+V+Pot+Pl2: ceäggžid 
+     ceäggad+V+Pot+Pl3: ceäggže
+     ceäggad+V+Pot+Sg4: ceäggžet
+     ceäggad+V+Pot+ConNeg: ceäggže
+     ceäggad+V+Cond+Sg1: ceäggčem
+     ceäggad+V+Cond+Sg2: [ceäggčiǩ, ceäggčeǩ]
+     ceäggad+V+Cond+Sg3: ceäggči
+     ceäggad+V+Cond+Pl1: [ceäggčim, ceäggčin, ceäggčep]
+     ceäggad+V+Cond+Pl2: ceäggčid
+     ceäggad+V+Cond+Pl3: ceäggče
+     ceäggad+V+Cond+Sg4: ceäggčeš
+     ceäggad+V+Cond+ConNeg: ceäggče
+     ceäggad+V+Imprt+Sg2: ceägg
+     ceäggad+V+Imprt+Sg3: ceäggas
+     ceäggad+V+Imprt+Pl1: ceäggap    #ceäggap
+     ceäggad+V+Imprt+Pl2: ceäggad    #ceäggad
+     ceäggad+V+Imprt+Pl3: ceäggaz    #ceäggaz
+     ceäggad+V+Imprt+ConNeg: ceägg
+     ceäggad+V+Imprt+ConNegII: ciâggu    #ciâggu
+     ceäggad+V+Actio+Ess: ceäggmen      #ceäggmen
+     ceäggad+V+Actio: ceäggam      #ceäggam
+     ceäggad+V+Act+PrsPrc: ceäggai      #ceäggai
+     ceäggad+V+Act+PrfPrc: ceäggam      #ceäggam
+     ceäggad+V+Pass+PrfPrc: ciâggum    #ciâggum
+     ceäggad+V+VAbess: [ceäggkani, ceäggǩânai, ceäggǩenai, ceäggǩâni, ceäggǩeânai, ceäggǩeânnai, ceäggkâni, ceäggǩani]
+     ceäggad+V+Ger+Ess: ceäggeeʹn
+     ceäggad+V+Ger+Instr: ceäggeeʹl

@@ -1,0 +1,23 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Adjective - kuʹǩǩ class A1e: # Adjective 'long' - full paradigm
+#    kuʹǩǩ+A+Pred+Sg: kuʹǩǩ
+    kuʹǩǩ+A+Pred+Pl: kuʹǩ
+    kuʹǩǩ+A+Attr: kuʹǩes
+    kuʹǩǩ+A+Comp: kuʹǩab
+    kuʹǩǩ+A+Superl: kuʹǩmõs
+

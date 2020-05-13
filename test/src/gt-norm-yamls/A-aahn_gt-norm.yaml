@@ -1,0 +1,22 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+  Adjective - ääʹhn class A40e: # Adjective 'greedy/ahne' - full paradigm
+    ääʹhn+A+Pred+Sg: ääʹhn
+    ääʹhn+A+Pred+Pl: ääʹhn
+    ääʹhn+A+Attr: ääʹhnes
+    ääʹhn+A+Comp: ääʹhnab
+    ääʹhn+A+Superl: ääʹhnmõs
+

@@ -1,0 +1,65 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below) There are still problems
+# Then: run analyser, then correct. 
+
+
+  Verb - ǩeʹtted: # Verb 'to cook' - full paradigm
+     ǩeʹtted+V+Inf: ǩeʹtted
+     ǩeʹtted+V+Ind+Prs+Sg1: ǩeâttam
+     ǩeʹtted+V+Ind+Prs+Sg2: ǩeâttak
+     ǩeʹtted+V+Ind+Prs+Sg3: ǩeâtt
+     ǩeʹtted+V+Ind+Prs+Pl1: ǩeʹttep
+     ǩeʹtted+V+Ind+Prs+Pl2: ǩeʹttveʹted
+     ǩeʹtted+V+Ind+Prs+Pl3: ǩeʹtte
+     ǩeʹtted+V+Ind+Prs+Sg4: ǩeeʹttet
+     ǩeʹtted+V+Ind+Prs+ConNeg: ǩeeʹtt
+     ǩeʹtted+V+Ind+Prt+Sg1: ǩiʹttem
+     ǩeʹtted+V+Ind+Prt+Sg2: ǩiʹttiǩ
+     ǩeʹtted+V+Ind+Prt+Sg3: ǩiiʹtti
+     ǩeʹtted+V+Ind+Prt+Pl1: [ǩiiʹttim, ǩiiʹttin]
+     ǩeʹtted+V+Ind+Prt+Pl2: ǩiiʹttid
+     ǩeʹtted+V+Ind+Prt+Pl3: ǩiʹtte
+     ǩeʹtted+V+Ind+Prt+Sg4: ǩiʹtteš
+     ǩeʹtted+V+Ind+Prt+ConNeg: ǩeâttam
+     ǩeʹtted+V+Pot+Sg1: ǩiiʹttžem
+     ǩeʹtted+V+Pot+Sg2: ǩiiʹttžiǩ
+     ǩeʹtted+V+Pot+Sg3: ǩiiʹttež
+     ǩeʹtted+V+Pot+Pl1: [ǩiiʹttžep, ǩiiʹttžim, ǩiiʹttžin]
+     ǩeʹtted+V+Pot+Pl2: ǩiiʹttžid 
+     ǩeʹtted+V+Pot+Pl3: ǩiiʹttže
+     ǩeʹtted+V+Pot+Sg4: ǩiiʹttžet
+     ǩeʹtted+V+Pot+ConNeg: ǩiiʹttže
+     ǩeʹtted+V+Cond+Sg1: ǩeâttčem
+     ǩeʹtted+V+Cond+Sg2: ǩeâttčiǩ
+     ǩeʹtted+V+Cond+Sg3: ǩeâttči
+     ǩeʹtted+V+Cond+Pl1: [ǩeâttčim, ǩeâttčin, ǩeâttčep]
+     ǩeʹtted+V+Cond+Pl2: ǩeâttčid
+     ǩeʹtted+V+Cond+Pl3: ǩeâttče
+     ǩeʹtted+V+Cond+Sg4: ǩeâttčeš
+     ǩeʹtted+V+Cond+ConNeg: ǩeâttče
+     ǩeʹtted+V+Imprt+Sg2: ǩiiʹtt
+     ǩeʹtted+V+Imprt+Sg3: ǩeâttas
+     ǩeʹtted+V+Imprt+Pl1: ǩeʹttep
+     ǩeʹtted+V+Imprt+Pl2: ǩeʹtted
+     ǩeʹtted+V+Imprt+Pl3: ǩeâttaz       # ǩeâttaz
+     ǩeʹtted+V+Imprt+ConNeg: ǩiiʹtt
+     ǩeʹtted+V+Imprt+ConNegII: ǩittu      
+     ǩeʹtted+V+Actio+Ess: ǩeʹttmen
+     ǩeʹtted+V+Actio: ǩeʹttem
+     ǩeʹtted+V+Act+PrsPrc: ǩiʹtti
+     ǩeʹtted+V+Act+PrfPrc: ǩeâttam
+     ǩeʹtted+V+Pass+PrfPrc: ǩittum         
+     ǩeʹtted+V+VAbess: [ǩeeʹttkani, ǩeeʹttǩeännai]
+     ǩeʹtted+V+Ger+Ess: ǩeeʹtteen
+     ǩeʹtted+V+Ger+Instr: ǩeeʹtteeʹl

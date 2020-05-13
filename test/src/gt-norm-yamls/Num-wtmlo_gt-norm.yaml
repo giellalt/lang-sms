@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Numeral - õtmlo : # Numeral 'eleven/yksitoista' - full paradigm
+     õtmlo+Num+Sg+Nom: õtmlo
+     õtmlo+Num+Sg+Gen: õtmlååi
+     õtmlo+Num+Sg+Acc: õtmlååi
+     õtmlo+Num+Sg+Ill: õtmlåkka
+     õtmlo+Num+Sg+Loc: õtmlååʹjjest
+     õtmlo+Num+Sg+Com: õtmlooʹjjin
+     õtmlo+Num+Ess: õtmlååʹǩǩen
+     õtmlo+Num+Par: õtmlååʹǩǩed
+     õtmlo+Num+Sg+Abe: [õtmlååitaa, õtmlååitää]
+     õtmlo+Num+Pl+Nom: õtmlååi
+     õtmlo+Num+Pl+Gen: õtmlooʹjji
+     õtmlo+Num+Pl+Acc: õtmlooʹjjid
+     õtmlo+Num+Pl+Ill: õtmlooʹjjid
+     õtmlo+Num+Pl+Loc: õtmlooʹjjin
+     õtmlo+Num+Pl+Com: õtmlooʹjjivuiʹm
+     õtmlo+Num+Pl+Abe: [õtmlooʹjjitaa, õtmlooʹjjitää]

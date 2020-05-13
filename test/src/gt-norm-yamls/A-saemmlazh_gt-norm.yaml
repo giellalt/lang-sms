@@ -1,0 +1,39 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+  Adjective - säʹmmlaž class 19: # Adjective 'Skolt Sami' - full paradigm
+#    säʹmmlaž+A+Pred+Sg: säʹmmlaž
+#    säʹmmlaž+A+Pred+Pl: säʹmmla
+# Are Predicate forms really necessary?
+    säʹmmlaž+A+Attr: säʹmmlaž
+    säʹmmlaž+A+Comp: säʹmmlab
+    säʹmmlaž+A+Superl: säʹmmlumus
+    säʹmmlaž+A+Der/MWN+N+Sg+Nom: säʹmmlaž
+    säʹmmlaž+A+Der/MWN+N+Sg+Gen: säʹmmla
+    säʹmmlaž+A+Der/MWN+N+Sg+Acc: säʹmmla
+    säʹmmlaž+A+Der/MWN+N+Sg+Ill: säʹmmliʹžže
+    säʹmmlaž+A+Der/MWN+N+Sg+Loc: säʹmmlast
+    säʹmmlaž+A+Der/MWN+N+Sg+Com: säʹmmlain
+    säʹmmlaž+A+Der/MWN+N+Ess: säʹmmliʹžžen
+    säʹmmlaž+A+Der/MWN+N+Par: säʹmmliʹžžed
+    säʹmmlaž+A+Der/MWN+N+Sg+Abe: säʹmmlatää
+    säʹmmlaž+A+Der/MWN+N+Pl+Nom: säʹmmla
+    säʹmmlaž+A+Der/MWN+N+Pl+Gen: säʹmmlai
+    säʹmmlaž+A+Der/MWN+N+Pl+Acc: säʹmmlaid
+    säʹmmlaž+A+Der/MWN+N+Pl+Ill: säʹmmlaid
+    säʹmmlaž+A+Der/MWN+N+Pl+Loc: säʹmmlain
+    säʹmmlaž+A+Der/MWN+N+Pl+Com: säʹmmlaivuiʹm
+    säʹmmlaž+A+Der/MWN+N+Pl+Abe: säʹmmlaitää
+
