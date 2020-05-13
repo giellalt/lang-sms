@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Noun - hõʹppi e-stem pöllö: # Noun - full paradigm
+     hõʹppi+N+Sg+Nom: hõʹppi
+     hõʹppi+N+Sg+Gen: hõʹppi
+     hõʹppi+N+Sg+Acc: hõʹppi
+     hõʹppi+N+Sg+Ill: [hõʹppja, hõʹppǥa]
+     hõʹppi+N+Sg+Loc: hõʹppjest
+     hõʹppi+N+Sg+Com: hõʹppjin
+     hõʹppi+N+Ess: hõʹppjen
+     hõʹppi+N+Par: hõʹppjed
+     hõʹppi+N+Sg+Abe: [hõʹppitaa, hõʹppitää]
+     hõʹppi+N+Pl+Nom: hõʹppi
+     hõʹppi+N+Pl+Gen: hõʹppji
+     hõʹppi+N+Pl+Acc: hõʹppjid
+     hõʹppi+N+Pl+Ill: hõʹppjid
+     hõʹppi+N+Pl+Loc: hõʹppjin
+     hõʹppi+N+Pl+Com: hõʹppjivuiʹm
+     hõʹppi+N+Pl+Abe: [hõʹppjitaa, hõʹppjitää]

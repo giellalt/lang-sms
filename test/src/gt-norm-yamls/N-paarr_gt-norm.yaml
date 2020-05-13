@@ -1,0 +1,34 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Noun - paarr â-stem: # Noun 'pari' - full paradigm
+     paarr+N+Sg+Nom: paarr
+     paarr+N+Sg+Gen: paar
+     paarr+N+Sg+Acc: paar
+     paarr+N+Sg+Ill: paʹrre
+     paarr+N+Sg+Loc: paarâst
+     paarr+N+Sg+Com: paarin
+     paarr+N+Ess: paarrân
+     paarr+N+Par: paarrâd
+     paarr+N+Sg+Abe: [paartaa, paartää]
+     paarr+N+Pl+Nom: paar
+     paarr+N+Pl+Gen: paari
+     paarr+N+Pl+Acc: paarid
+     paarr+N+Pl+Ill: paarid
+     paarr+N+Pl+Loc: paarin
+     paarr+N+Pl+Com: paarivuiʹm
+     paarr+N+Pl+Abe: [paaritaa, paaritää]
+     paarr+N+Der/Dimin+N+Sg+Nom: paarâž

@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Noun - kååʹpp a-stem kuoppa: # Noun - full paradigm
+     kååʹpp+N+Sg+Nom: kååʹpp
+     kååʹpp+N+Sg+Gen: kååʹv
+     kååʹpp+N+Sg+Acc: kååʹv
+     kååʹpp+N+Sg+Ill: kåppa
+     kååʹpp+N+Sg+Loc: kååʹvest
+     kååʹpp+N+Sg+Com: kooʹvin
+     kååʹpp+N+Ess: kååʹppen
+     kååʹpp+N+Par: kååʹpped
+     kååʹpp+N+Sg+Abe: [kååʹvtaa, kååʹvtää]
+     kååʹpp+N+Pl+Nom: kååʹv
+     kååʹpp+N+Pl+Gen: kooʹvi
+     kååʹpp+N+Pl+Acc: kooʹvid
+     kååʹpp+N+Pl+Ill: kooʹvid
+     kååʹpp+N+Pl+Loc: kooʹvin
+     kååʹpp+N+Pl+Com: kooʹvivuiʹm
+     kååʹpp+N+Pl+Abe: [kooʹvitaa, kooʹvitää]

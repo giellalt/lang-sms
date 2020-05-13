@@ -1,0 +1,43 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Noun - sõll â-stem : # Noun 'embrace' - full paradigm
+# 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+# 1.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
+# 1.1.1 Sg.Ill in ʹ-e
+# 1.1.1.1 Has Gradation
+# 1.1.1.1.1 Monophthong
+# 1.1.1.1.1.1 Homogenous Consonant
+# 1.1.1.1.1.1.2 Sg.Nom Extra Strong Grade
+# 1.1.1.1.1.1.2.1.Sg.Gen Weak Grade
+# 1.1.1.1.1.1.2.1.3 Sg.Ill Extra Strong Grade
+     sõll+N+Sg+Nom: sõll
+     sõll+N+Sg+Gen: sõõl
+     sõll+N+Sg+Acc: sõõl
+     sõll+N+Sg+Ill: sõʹlle
+     sõll+N+Sg+Loc: sõõlâst
+     sõll+N+Sg+Com: sõõlin
+     sõll+N+Ess: sõllân
+     sõll+N+Par: sõllâd
+     sõll+N+Sg+Abe: [sõõltaa, sõõltää]
+     sõll+N+Pl+Nom: sõõl
+     sõll+N+Pl+Gen: sõõli
+     sõll+N+Pl+Acc: sõõlid
+     sõll+N+Pl+Ill: sõõlid
+     sõll+N+Pl+Loc: sõõlin
+     sõll+N+Pl+Com: sõõlivuiʹm
+     sõll+N+Pl+Abe: [sõõlitaa, sõõlitää]
+     sõll+N+Der/Dimin+N+Sg+Nom: sõõlâž
