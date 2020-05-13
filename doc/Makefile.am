@@ -31,4 +31,4 @@ JSP_PAGES=root-morphology.jspwiki \
 # abbreviations-stems.jspwiki      \
 # acronyms-stems.jspwiki           \
 # smi-propernouns-stems.jspwiki    \
-include $(top_srcdir)/am-shared/doc-dir-include.am
+include $(top_srcdir)/../giella-core/am-shared/doc-dir-include.am
