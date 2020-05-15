@@ -6187,6 +6187,26 @@ LEXICON NMN_ZEEQTT
 :%^PAL PL-OBL ; !!(8) Pl.Gen: zeeʹtti
 +Der+Der/Dimin+N:%^PAL%> N_KUUQMPEZH ; !!(9) Der/Dimin.N.Sg.Nom: zeeʹttež
 
+LEXICON N_POAOAQMH !!= * @CODE@ pååʹmh:påå%{ʹØ%}mh
+!!! inflection_type="?"
+: NMN_POAOAQMH ;
+LEXICON NMN_POAOAQMH
+! gradation: no
+!! 
+!! !!FORMS
+!! * Yaml: __N-zeett__
+
+:%^PAL SG-NOM ; !!(1) Sg.Nom: pååʹmh
+:%^PAL SG-ABE/ACC/GEN-PL-NOM ; !!(2) Pl.Nom: pååʹmh
+: A_DER/LAZH ;
+:%>a SG-ILL ; !!(3) Sg.Ill: pååmha
+: A_DER/SAZH ;
+:%^PAL%>e SG-LOC ; !!(4) Sg.Loc: pååʹmhest
+:%^PAL SG-COM_IN ; !!(5) Sg.Com: pooʹmhin
+:%^PAL%>e ESS/PAR ; !!(6) Ess: pååʹmhen
+:%^PAL PL-OBL ; !!(8) Pl.Gen: pooʹmhi
++Der+Der/Dimin: E-STEM_N_KUYLAZH ; !!(9) Der/Dimin.N.Sg.Nom: pååmhaž
+
 
 
 LEXICON N_LUUKK !!= * @CODE@ 
@@ -6304,6 +6324,33 @@ LEXICON NMN_ATOM
 :%^V2VV HatY-STEM-PX-WEAKEN_LARGO ; !! e.g. +Use/NG+Sg+Loc+PxSg3
 :%^V2VV SG-LOC-PX_ALLEGRO ; !! e.g. +Sg+Loc+PxSg1
 :%^V2VV HatY-STEM-PX-STRENGTHEN ;
+
+LEXICON N_ESAI !!= * @CODE@ Esai:Esa%^1VOW%{ʹØ%}i
+!!! inflection_type="?"
+: NMN_ESAI ;
+LEXICON NMN_ESAI !!= * @CODE@ Esai:Esa%^1VOW%{ʹØ%}i
+
+! is for nouns with ''-est'' +Loc like ATOM
+! gradation: yes
+!! * Yaml: __esai__
+
+: SG-NOM ;	       			! suõskki
+:%^V2VV%^I2J SG-ABE/ACC/GEN ;	! 
+:%^V2VV%^PAL%^I2J%>e SG-ILL ;    		! suõskkja
+:%^V2VV%^I2J%>â SG-LOC ;
+:%^V2VV%^I2J SG-COM_IN ;
+:%^V2VV%^I2J%>â ESS/PAR ; ! ess and prt without
+:%^V2VV%^I2J PL-NOM ;				! suõskki
+:%^V2VV%^I2J PL-OBL ;			! suõskkji
++Der+Der/Dimin+N:%^V2VV%^I2J  N_MUORYZH-WITHOUT-PAL ;
++Der+Der/Dimin+N:%^V2VV%^PAL%^I2J  N_MUORYZH-WITH-PAL ;
+
+:%^V2VV%^I2J HatY-STEM-PX-RETAIN ;
+:%^V2VV%^I2J HatY-STEM-PX-WEAKEN ; !! e.g.
+:%^V2VV%^I2J HatY-STEM-PX-WEAKEN_LARGO ; !! e.g. +Use/NG+Sg+Loc+PxSg3
+:%^V2VV%^I2J SG-LOC-PX_ALLEGRO ; !! e.g. +Sg+Loc+PxSg1
+:%^V2VV%^I2J HatY-STEM-PX-STRENGTHEN ;
+
 
 LEXICON N_BLOUSLOV !!= * @CODE@ blouslõv:blouslõ%^1VOWv CHECKME
 !!! inflection_type="?"
@@ -9869,6 +9916,8 @@ LEXICON NMN_PRSPRC-VWXYY-I !!= * @CODE@ suõskki:suõskki
 +Der+Der/Dimin+N:%^I2J  N_KUYLAZH ;
 :%^I2J VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
+
+
 !! participles in -AI from verbs in -ad
 LEXICON  NOM-AG_AD
 : SG-NOM ; !!= * @CODE@
@@ -9992,8 +10041,8 @@ LEXICON NMN_PRSPRC-VWCC-AI !!= * @CODE@ vuejjai:vuejjai
 : SG-ABE ;
 :%^Pen%^CC2C PL-NOM ;	! vuejai
 +Use/NG: PL-NOM ;	! vuejjai
-:%^Pen%^CC2C%^RmVow%^I2J%>i PL-OBL ;
-+Use/NG:%^RmVow%^I2J%>i PL-OBL ;
+:%^Pen%^CC2C%^RmVow%^I2J%> PL-OBL ;
++Use/NG:%^RmVow%^I2J%> PL-OBL ;
 +Der+Der/Dimin+N:%^I2J  N_KUYLAZH ;
 :%^I2J VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
