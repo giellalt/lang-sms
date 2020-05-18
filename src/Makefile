@@ -36,7 +36,7 @@
 
 ####### Automake targets: ########
 
-# This file is included by $GTLANG/am-shared/src-dir-include.am, which is
+# This file is included by $GTLANG/../giella-core/am-shared/src-dir-include.am, which is
 # included by $GTLANG/src/Makefile.am. All file references are relative to
 # that Makefile.am.
 
@@ -481,20 +481,21 @@ ETAGS = etags
 CTAGS = ctags
 DIST_SUBDIRS = $(SUBDIRS)
 am__DIST_COMMON = $(srcdir)/Makefile.in \
+	$(top_srcdir)/../giella-core/am-shared/hfst-format-include.am \
+	$(top_srcdir)/../giella-core/am-shared/lookup-include.am \
+	$(top_srcdir)/../giella-core/am-shared/regex-include.am \
+	$(top_srcdir)/../giella-core/am-shared/silent_build-include.am \
 	$(top_srcdir)/../giella-core/am-shared/src-dir-include.am \
-	$(top_srcdir)/am-shared/hfst-format-include.am \
-	$(top_srcdir)/am-shared/lookup-include.am \
-	$(top_srcdir)/am-shared/regex-include.am \
-	$(top_srcdir)/am-shared/silent_build-include.am \
-	$(top_srcdir)/am-shared/src_alt_orth-include.am \
-	$(top_srcdir)/am-shared/src_alt_ws-include.am \
-	$(top_srcdir)/am-shared/src_area-include.am \
-	$(top_srcdir)/am-shared/src_dialects-include.am \
-	$(top_srcdir)/am-shared/src_dictionary-include.am \
-	$(top_srcdir)/am-shared/src_disamb-include.am \
-	$(top_srcdir)/am-shared/src_gramcheck-include.am \
-	$(top_srcdir)/am-shared/src_oahpa-include.am \
-	$(top_srcdir)/am-shared/xfscript-include.am README
+	$(top_srcdir)/../giella-core/am-shared/src_alt_orth-include.am \
+	$(top_srcdir)/../giella-core/am-shared/src_alt_ws-include.am \
+	$(top_srcdir)/../giella-core/am-shared/src_area-include.am \
+	$(top_srcdir)/../giella-core/am-shared/src_dialects-include.am \
+	$(top_srcdir)/../giella-core/am-shared/src_dictionary-include.am \
+	$(top_srcdir)/../giella-core/am-shared/src_disamb-include.am \
+	$(top_srcdir)/../giella-core/am-shared/src_gramcheck-include.am \
+	$(top_srcdir)/../giella-core/am-shared/src_oahpa-include.am \
+	$(top_srcdir)/../giella-core/am-shared/xfscript-include.am \
+	README
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 am__relativize = \
   dir0=`pwd`; \
@@ -553,9 +554,7 @@ GAWK = /opt/local/bin/gawk
 GIELLA_CORE = /Users/rueter/Documents/Github/giellalt/giella-core
 GIELLA_CORE_VERSION = /Users/rueter/Documents/Github/giellalt/giella-core/scripts/gt-version.sh
 GIELLA_LIBS = /Users/rueter/main/giella-libs
-GIELLA_MAINTAINER = 
 GIELLA_SHARED = /Users/rueter/Documents/Github/giellalt/giella-shared
-GIELLA_TEMPLATES = 
 GLANG = sms
 GLANG2 = sms
 GLANGUAGE = Skolt Sami
@@ -1085,7 +1084,7 @@ all: all-recursive
 
 .SUFFIXES:
 .SUFFIXES: .foma .hfst .regex .xfst
-$(srcdir)/Makefile.in:  $(srcdir)/Makefile.am $(top_srcdir)/../giella-core/am-shared/src-dir-include.am $(top_srcdir)/am-shared/src_dictionary-include.am $(top_srcdir)/am-shared/src_disamb-include.am $(top_srcdir)/am-shared/src_oahpa-include.am $(top_srcdir)/am-shared/src_area-include.am $(top_srcdir)/am-shared/src_alt_ws-include.am $(top_srcdir)/am-shared/src_alt_orth-include.am $(top_srcdir)/am-shared/src_dialects-include.am $(top_srcdir)/am-shared/src_gramcheck-include.am $(top_srcdir)/am-shared/regex-include.am $(top_srcdir)/am-shared/lookup-include.am $(top_srcdir)/am-shared/xfscript-include.am $(top_srcdir)/am-shared/hfst-format-include.am $(top_srcdir)/am-shared/silent_build-include.am $(am__configure_deps)
+$(srcdir)/Makefile.in:  $(srcdir)/Makefile.am $(top_srcdir)/../giella-core/am-shared/src-dir-include.am $(top_srcdir)/../giella-core/am-shared/src_dictionary-include.am $(top_srcdir)/../giella-core/am-shared/src_disamb-include.am $(top_srcdir)/../giella-core/am-shared/src_oahpa-include.am $(top_srcdir)/../giella-core/am-shared/src_area-include.am $(top_srcdir)/../giella-core/am-shared/src_alt_ws-include.am $(top_srcdir)/../giella-core/am-shared/src_alt_orth-include.am $(top_srcdir)/../giella-core/am-shared/src_dialects-include.am $(top_srcdir)/../giella-core/am-shared/src_gramcheck-include.am $(top_srcdir)/../giella-core/am-shared/regex-include.am $(top_srcdir)/../giella-core/am-shared/lookup-include.am $(top_srcdir)/../giella-core/am-shared/xfscript-include.am $(top_srcdir)/../giella-core/am-shared/hfst-format-include.am $(top_srcdir)/../giella-core/am-shared/silent_build-include.am $(am__configure_deps)
 	@for dep in $?; do \
 	  case '$(am__configure_deps)' in \
 	    *$$dep*) \
@@ -1105,7 +1104,7 @@ Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	    echo ' cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__maybe_remake_depfiles)'; \
 	    cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__maybe_remake_depfiles);; \
 	esac;
-$(top_srcdir)/../giella-core/am-shared/src-dir-include.am $(top_srcdir)/am-shared/src_dictionary-include.am $(top_srcdir)/am-shared/src_disamb-include.am $(top_srcdir)/am-shared/src_oahpa-include.am $(top_srcdir)/am-shared/src_area-include.am $(top_srcdir)/am-shared/src_alt_ws-include.am $(top_srcdir)/am-shared/src_alt_orth-include.am $(top_srcdir)/am-shared/src_dialects-include.am $(top_srcdir)/am-shared/src_gramcheck-include.am $(top_srcdir)/am-shared/regex-include.am $(top_srcdir)/am-shared/lookup-include.am $(top_srcdir)/am-shared/xfscript-include.am $(top_srcdir)/am-shared/hfst-format-include.am $(top_srcdir)/am-shared/silent_build-include.am $(am__empty):
+$(top_srcdir)/../giella-core/am-shared/src-dir-include.am $(top_srcdir)/../giella-core/am-shared/src_dictionary-include.am $(top_srcdir)/../giella-core/am-shared/src_disamb-include.am $(top_srcdir)/../giella-core/am-shared/src_oahpa-include.am $(top_srcdir)/../giella-core/am-shared/src_area-include.am $(top_srcdir)/../giella-core/am-shared/src_alt_ws-include.am $(top_srcdir)/../giella-core/am-shared/src_alt_orth-include.am $(top_srcdir)/../giella-core/am-shared/src_dialects-include.am $(top_srcdir)/../giella-core/am-shared/src_gramcheck-include.am $(top_srcdir)/../giella-core/am-shared/regex-include.am $(top_srcdir)/../giella-core/am-shared/lookup-include.am $(top_srcdir)/../giella-core/am-shared/xfscript-include.am $(top_srcdir)/../giella-core/am-shared/hfst-format-include.am $(top_srcdir)/../giella-core/am-shared/silent_build-include.am $(am__empty):
 
 $(top_builddir)/config.status: $(top_srcdir)/configure $(CONFIG_STATUS_DEPENDENCIES)
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
