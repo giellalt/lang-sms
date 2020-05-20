@@ -2726,3 +2726,7 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ|%{ʹØ%}:) t t: BetweenStemAndConsGrade %^XYY2IY: 
 !Q!!!€ kääzzkõsraajõstuâjj0#joukk
 !Q!!!€ kääzzkõsraajõstuâjj%-#joukk
 !Q!
+
+!!TESTS
+!echo 'c e ä {ʹØ}:0 v 0:ˈ v ^CC2CCC:0 > a' | hfst-pair-test src/fst/phonology.compose.hfst
+!echo 'cieʹvv+N+Sg+Ill' | hfst-lookup src/morphology/lexicon.hfst
