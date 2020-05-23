@@ -535,7 +535,7 @@ Rules
 
 "%{ʼØ%} for modifier letter apostrophe"
 !! __@RULENAME@__ -
-%{ʼØ%}:ʼ <=> [ :n | :l | j] (Vow:0) (%>) _ :j ;
+%{ʼØ%}:ʼ <=> [ :n | :l | j] [:0]* (%>) _ :j ;
          s [:0]* %> _ s ;
          l [:0]* %> _ l ;
          v [:0]* %> _ v ;
@@ -971,10 +971,13 @@ OnSetC u: _   (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|r d d:
    OnSetC _ (%^1VOW:0|%^1VOW:â)  (u:|i:) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower:  (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
    OnSetC _ (%^1VOW:0|%^1VOW:â) ((ʹ:|%{ʹØ%}:) (v:u|j:i)) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWLower:  (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
 ! diphthong opening after u
-        u _ (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: [ BetweenPALNoAndMorph |%^PAL:|%^PALNo:] ;
+        u _ (i) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: [ BetweenPALNoAndMorph |%^PAL:|%^PALNo:] ;
 !! kuõskkâd+V+Ind+Prs+Sg3
 !!€ kuõskk%^VOWLower
 !!€ kuâskk0
+!! juõiggâd+V+Ind+Prs+Sg3
+!!€ kuõigg%^VOWLower
+!!€ kuâigg0
 
 
 !! !diphthongs
