@@ -48,7 +48,7 @@ jobs:
           cd $GITHUB_WORKSPACE/lang
           ./autogen.sh
           mkdir -p build && cd build
-          ../configure --disable-hfst-desktop-spellers --enable-spellers --enable-fst-hyphenator --enable-hfst-mobile-speller
+          ../configure --enable-reversed-intersect --disable-hfst-desktop-spellers --enable-spellers --enable-fst-hyphenator --enable-hfst-mobile-speller
           make -j$(nproc)
           # fails atm
           # make check

@@ -8,7 +8,7 @@ LEXICON A_
 LEXICON A_GENATTR
 +GenAttr: # ;
 LEXICON A_SJM ! These are problems 2018-11-2
-+Attr: # ;
++Err/Orth+Attr: # ;
 
 
 LEXICON A_PSS-PRFPRC
@@ -227,14 +227,14 @@ LEXICON A_SUEAQKHKH !!= * @CODE@ sueʹǩǩ:suäkk
 :%^PALẸ%^PAL%^KK2GG   A-ATTR_es ;
 : A-01_SUEAQKHKH ;
 
-!LEXICON A_KUEAQTT !!= * @CODE@ kuẹʹtt:kuätt
+LEXICON A_KUEAQTT !!= * @CODE@ kuẹʹtt:kuätt
 ! vowel: diphthong
-!:%^PALẸ%^PAL%^CC2C   A-ATTR_es ;
-!: A-01_KUEAQTT ;
+:%^PAL%^CC2C   A-ATTR_es ;
+: A-01_KUEAQTT ;
 
 LEXICON A_HIEAQNN !!= * @CODE@ hieʹnn:heänn
 ! vowel: diphthong
-:%^VOWRaise%^PALẸ%^PAL%^CC2C   A-ATTR_es ;
+:%^PAL%^CC2C   A-ATTR_es ;
 : A-01_HIEAQNN ;
 
 LEXICON A_JEAQNNN !!= * @CODE@ jeäʹnn:jeänˈn, jeäʹǧǧ:jeägˈg
@@ -538,8 +538,9 @@ LEXICON A_TUEJJEEJA !!= * @CODE@ tuejjeeja:tuejjẹẹja
 : NMN_TUEJJEEJA ;
 
 LEXICON A_PRSPRC-EEI !!= * @CODE@ tuejjeei:tuejjee
-+Attr:jes ENDLEX ;
-+Attr:jas ENDLEX ; !!= * @CODE@ c.f. sjm faʹlsǩeejas
++Attr:i ENDLEX ;
++Err/Orth+Attr:jes ENDLEX ;
++Err/Orth+Attr:jas ENDLEX ; !!= * @CODE@ c.f. sjm faʹlsǩeejas
 : A-01_PRSPRC-EEI ;
 :j ADJ-DER/COMP_kwlmmsab ;
 :j ADJ-DER/SUPERL_ummus ;
@@ -770,10 +771,10 @@ LEXICON A_AQKHKHED !!= * @CODE@ âʹǩǩed:âʹǩǩ
 : ADJ-DER/SUPERL_ummus ;
 
 LEXICON A_DER/LAZH
-+Use/SpellNoSugg+Der+Der/lazh+A:%>l A_MEERSAZH ;
++Use/SpellNoSugg+Der+Der/lazh+A:%>%{ʼØ%}l A_MEERSAZH ;
 
 LEXICON A_DER/SAZH
-+Use/SpellNoSugg+Der+Der/sazh+A:s A_MEERSAZH ;
++Use/SpellNoSugg+Der+Der/sazh+A:%>%{ʼØ%}s A_MEERSAZH ;
 
 LEXICON A_DER/ALLASH
 +Use/SpellNoSugg+Der+Der/allash+A:%>allaš A_TOBDDSALLASH ;
@@ -822,7 +823,7 @@ LEXICON AdjAttr-es
 +Attr:%>es A2N-VUOTT ;
 
 LEXICON A2N-VUOTT
-+Der+Der/vuota+N:»vuõ%{ʹØ%}tt N_MUORR ;
++Der+Der/vuota+N:»%{ʼØ%}vuõ%{ʹØ%}tt N_MUORR ;
 
 
 LEXICON AdjDerComp
@@ -5004,7 +5005,7 @@ LEXICON A-01_SUEAQKHKH
 :%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) suäʹǩˈǩ Ess+Px..
 
 
-!LEXICON A-01_KUEAQTT
+LEXICON A-01_KUEAQTT
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
 !! !!1.3 Sg.Loc in -est (vowel shift)
@@ -5026,19 +5027,19 @@ LEXICON A-01_SUEAQKHKH
 !! * Yaml: __N-kuett__
 !! * There are several stem types
 !!
-!:%^VOWRaise%^PALẸ%^PAL A-02_E-STEM_SG-NOM ;		  	! kuẹʹtt
-!:%^PAL%^CC2C A-02_E-STEM_SG-ABE/ACC/GEN ;  	      			! kuäʹđ
-!:%^PAL%^CC2C A-02_PL-NOM ;  	      			! kuäʹđ
-!:%^CC2CCC A-02_E-STEM_SG-ILL ;				! kuätˈta
-!:%^PAL%^CC2C%>e A-02_SG-LOC ;			! kuäʹđest
-!:%^VOWRaise%^PALẸ%^PAL%>e A-02_ESS/PAR ; 		! kuẹʹtten
+:%^VOWRaise%^PALẸ%^PAL A-02_E-STEM_SG-NOM ;		  	! kuẹʹtt
+:%^PAL%^CC2C A-02_E-STEM_SG-ABE/ACC/GEN ;  	      			! kuäʹđ
+:%^PAL%^CC2C A-02_PL-NOM ;  	      			! kuäʹđ
+:%^CC2CCC A-02_E-STEM_SG-ILL ;				! kuätˈta
+:%^PAL%^CC2C%>e A-02_SG-LOC ;			! kuäʹđest
+:%^VOWRaise%^PALẸ%^PAL%>e A-02_ESS/PAR ; 		! kuẹʹtten
 !2009: 204 +N:%^CC2C%>e A-02_PAR ;	    		
-!:%^PAL%^CC2C A-02_SG-COM_IN ;			! kuäʹđin
-!:%^PAL%^CC2C A-02_E-STEM_PL-OBL ;			! kuäʹđin
-!:%^CC2C A-02_E-STEM_N_KUYLAZH ;			! kuäđaž
-! E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) kuätt-
-!:%^PAL%^CC2C E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) kuẹʹđ-
-!:%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) kuäʹtˈt- Ess+Px..
+:%^PAL%^CC2C A-02_SG-COM_IN ;			! kuäʹđin
+:%^PAL%^CC2C A-02_E-STEM_PL-OBL ;			! kuäʹđin
+:%^CC2C A-02_E-STEM_N_KUYLAZH ;			! kuäđaž
+ E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) kuätt-
+:%^PAL%^CC2C E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) kuẹʹđ-
+:%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) kuäʹtˈt- Ess+Px..
 
 LEXICON A-01_HIEAQNN
 ! gradation: yes
