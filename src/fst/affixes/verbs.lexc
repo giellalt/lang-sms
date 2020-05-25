@@ -2294,11 +2294,11 @@ LEXICON V0_VEYHSSAD !!= * @CODE@ veâhssad:veâhss
 : VSUF-IND-PRS-SG3_AD ; !! (2)  Ind.Prs.Sg3: veâhss
 +Ind+Prs+Pl3:%>a K ; !! (3)  Ind.Prs.Pl3: veâhssa
 :%^VOWRaise%> VSUF-IND-PRT-PL3_AD ; !! (4)  Ind.Prt.Pl3: viõhssu
-:%^XYY2XY%> VSUF-I-POTKOND_AD ; !! (5)  Ind.Imprt.Sg2: veâus-
-+Imprt+Sg3:%^XYY2XY%>as K ; !! (7)  Ind.Imprt.Sg3: veâusas
+:%^XYY2VY%> VSUF-I-POTKOND_AD ; !! (5)  Ind.Imprt.Sg2: veâus-
++Imprt+Sg3:%^XYY2VY%>as K ; !! (7)  Ind.Imprt.Sg3: veâusas
 :%^VOWRaise VSUF-IMPRT-CONNEGII_AD ; !! (8)  Imprt.13.ConNeg: viõhssu
 : VSUF-IMPRT-PL3_AD ; ! veâhss-
-:%^XYY2XY FOR-ALLEGRO-DEVERBAL-DERIVATION ;
+:%^XYY2VY FOR-ALLEGRO-DEVERBAL-DERIVATION ;
 
 LEXICON V_MEINNAD !!= * @CODE@ meinnad:meinn
 : V0_MEINNAD ;
@@ -4864,24 +4864,24 @@ LEXICON V0_JAELSTED !!= * @CODE@ jälsted:jäälast
 +Use/NG:%^RmVow VSUF-VUEJTED-ELSE ; 		 ! jäälsted
 
 
-!LEXICON V_JAEMLJED !!= * @CODE@ jämljed:jäämalǥ
-!: V0_JAEMLJED ;
+LEXICON V_JAEMLJED !!= * @CODE@ jämljed:jäämalǥ
+: V0_JAEMLJED ;
 !LEXICON IV_JAEMLJED !!= * @CODE@ jämljed:jäämalǥ
 !: V0_JAEMLJED ;
 !LEXICON TV_JAEMLJED !!= * @CODE@ jämljed:jäämalǥ
 !: V0_JAEMLJED ;
-!LEXICON V0_JAEMLJED !!= * @CODE@ jämljed:jäämalǥ
-!!! inflection_type="3"
+LEXICON V0_JAEMLJED !!= * @CODE@ jämljed:jäämalǥ
+!! inflection_type="3"
 ! lexicon ''@LEXNAME@''
 !
 ! * Yaml: __V-jaelsted ǥ:j__
 
-!:%^PenVow2a%^PALNo VSUF-VUEJTED-IND-PRS-SG3 ; ! jäämalǥ
-!:%^PALNo VSUF-VUEJTED-IND-PRS-CONNEG ;      	 ! jäämalǥ
-!:%^Pen%^VV2V%^RmVow%^PALK VSUF-VUEJTED-ELSE-PAL ; 		 ! jämlj
-!+Use/NG:%^RmVow%^PALK VSUF-VUEJTED-ELSE-PAL ; 		 ! jäämlj
-!:%^Pen%^VV2V%^RmVow VSUF-VUEJTED-ELSE-NOPAL ; 		 ! jämlǥ
-!+Use/NG:%^RmVow VSUF-VUEJTED-ELSE-NOPAL ; 		 ! jäämlǥ
+:%^PenVow2a%^PALK VSUF-VUEJTED-IND-PRS-SG3 ; ! jäämalj
+:%^PALNo VSUF-VUEJTED-IND-PRS-CONNEG ;      	 ! jäämalǥ
+:%^Pen%^VV2V%^RmVow%^PALK VSUF-VUEJTED-ELSE-PAL ; 		 ! jämlj
++Use/NG:%^RmVow%^PALK VSUF-VUEJTED-ELSE-PAL ; 		 ! jäämlj
+:%^Pen%^VV2V%^RmVow%^PALK VSUF-VUEJTED-ELSE-NOPAL ; 		 ! jämlj
++Use/NG:%^RmVow%^PALK VSUF-VUEJTED-ELSE-NOPAL ; 		 ! jäämlj
 
 
 LEXICON V_POAGXSTED !!= * @CODE@ påǥsted:pååǥǥast
@@ -4924,8 +4924,8 @@ LEXICON V_TEYPSTED !!= * @CODE@ teâpsted:teâppast
 : V0_TEYPSTED ;
 LEXICON IV_TEYPSTED !!= * @CODE@ teâpsted:teâppast
 : V0_TEYPSTED ;
-!LEXICON TV_TEYPSTED !!= * @CODE@ teâpsted:teâppast
-!: V0_TEYPSTED ;
+LEXICON TV_TEYPSTED !!= * @CODE@ teâpsted:teâppast
+: V0_TEYPSTED ;
 LEXICON V0_TEYPSTED !!= * @CODE@ teâpsted:teâppast
 !!! inflection_type="3"
 !! gradation: no
@@ -4976,10 +4976,10 @@ LEXICON V0_MUAERSKHED !!= * @CODE@ muärsǩed:muärask
 :%^RmVow%^PALK VSUF-VUEJTED-ELSE-PAL ;  ! muärsǩ
 :%^RmVow VSUF-VUEJTED-ELSE-NOPAL ;  ! muärsk
 
-!LEXICON V_TOINXSKHED !!= * @CODE@ tõiŋsǩed:tõõiŋâsk
-!: V0_TOINXSKHED ;
-LEXICON IV_TOINXSKHED !!= * @CODE@ tõiŋsǩed:tõõiŋâsk
+LEXICON V_TOINXSKHED !!= * @CODE@ tõiŋsǩed:tõõiŋâsk
 : V0_TOINXSKHED ;
+!LEXICON IV_TOINXSKHED !!= * @CODE@ tõiŋsǩed:tõõiŋâsk
+!: V0_TOINXSKHED ;
 !LEXICON TV_TOINXSKHED !!= * @CODE@ tõiŋsǩed:tõõiŋâsk
 !: V0_TOINXSKHED ;
 LEXICON V0_TOINXSKHED !!= * @CODE@ tõiŋsǩed:tõõiŋâsk
@@ -5337,8 +5337,8 @@ LEXICON V0_JEAELLLJED !!= * @CODE@ jeälljed:jeälˈl
 !! !CLASS 3 HIGH VOWEL, PALATALIZATION
 LEXICON V_VOQLLJED !!= * @CODE@ võʹllʼjed:võʹll
 : V0_VOQLLJED ;
-!LEXICON IV_VOQLLJED !!= * @CODE@ võʹllʼjed:võʹll
-!: V0_VOQLLJED ;
+LEXICON IV_VOQLLJED !!= * @CODE@ võʹllʼjed:võʹll
+: V0_VOQLLJED ;
 LEXICON TV_VOQLLJED !!= * @CODE@ võʹllʼjed:võʹll
 : V0_VOQLLJED ;
 LEXICON V0_VOQLLJED !!= * @CODE@ võʹllʼjed:võʹll
@@ -5464,8 +5464,8 @@ LEXICON V_STOAOARJED
 : V0_STOAOARJED ;
 !LEXICON IV_STOAOARJED
 !: V0_STOAOARJED ;
-!LEXICON TV_STOAOARJED
-!: V0_STOAOARJED ;
+LEXICON TV_STOAOARJED
+: V0_STOAOARJED ;
 LEXICON V0_STOAOARJED
 !!! inflection_type="4"
 ! page 388
@@ -5927,9 +5927,9 @@ LEXICON VSUF-I-POTKOND_YD
 @C.NeedNoun@+Der+Der/NomAg+N:@C.NeedNoun@i NOM-AG_YD_NO-PL-NOM ;
 +Der/st:»ast VSUF-VUEJTED-IND-PRS-SG3 ;
 +Der/st:»âst VSUF-VUEJTED-IND-PRS-CONNEG ;
-+Use/SpellNoSugg+Der/st:»st VSUF-VUEJTED-ELSE ;
-+Use/SpellNoSugg+Der/InchL:»škuätt V_SHKUEAQTTED ;
-+Use/SpellNoSugg+Der/stoollyd:»stõõll V_LAUKKOOLLYD ;
++Err/Orth+Use/NG+Use/SpellNoSugg+Der/st:»st VSUF-VUEJTED-ELSE ;
++Err/Orth+Use/NG+Use/SpellNoSugg+Der/InchL:»škuätt V_SHKUEAQTTED ;
++Err/Orth+Use/NG+Use/SpellNoSugg+Der/stoollyd:»stõõll V_LAUKKOOLLYD ;
 
 LEXICON VSUF-I-POTKOND_AD
  VSUF-I-POTKOND ;
@@ -5949,9 +5949,9 @@ LEXICON VSUF-I-POTKOND_AD
 @C.NeedNoun@+Der+Der/NomAg+N:@C.NeedNoun@ai NOM-AG_AD_NO-PL-NOM ;
 +Der/st:»ast VSUF-VUEJTED-IND-PRS-SG3 ;
 +Der/st:»ast VSUF-VUEJTED-IND-PRS-CONNEG ;
-+Use/SpellNoSugg+Der/st:»st VSUF-VUEJTED-ELSE ;
-+Use/SpellNoSugg+Der/InchL:»škuätt V_SHKUEAQTTED ;
-+Use/SpellNoSugg+Der/stoollyd:»stõõll V_LAUKKOOLLYD ;
++Err/Orth+Use/SpellNoSugg+Der/st:»st VSUF-VUEJTED-ELSE ;
++Err/Orth+Use/NG+Use/SpellNoSugg+Der/InchL:»škuätt V_SHKUEAQTTED ;
++Err/Orth+Use/NG+Use/SpellNoSugg+Der/stoollyd:»stõõll V_LAUKKOOLLYD ;
 
 
 LEXICON VSUF-POTENTIAL_ED
