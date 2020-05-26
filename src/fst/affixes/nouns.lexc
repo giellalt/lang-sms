@@ -3057,11 +3057,11 @@ LEXICON NMN_PLEYN
 !! Sg_Loc_Px..
 
 
-LEXICON N_AKK !!= * @CODE@ äkk:äkk
+!LEXICON N_AKK !!= * @CODE@ äkk:äkk
 !!! inflection_type="?"
 !! normative = PẸSS 
-: NMN_AKK ;
-LEXICON NMN_AKK
+!: NMN_AKK ;
+!LEXICON NMN_AKK
 !! Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_gem
 ! gradation: yes
 ! vowel: monophthong
@@ -3071,34 +3071,34 @@ LEXICON NMN_AKK
 !! * Yaml: __N-aekk__
 !!
 !! grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
-: A-STEM_SG-NOM ;	    			! äkk
+!: A-STEM_SG-NOM ;	    			! äkk
 !! Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 !! grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-:%^V2VV A-STEM_SG-ABE/ACC/GEN-PL-NOM ;		! ääkk
-:%^V2VV A_DER/LAZH ;
+!:%^V2VV A-STEM_SG-ABE/ACC/GEN-PL-NOM ;		! ääkk
+!:%^V2VV A_DER/LAZH ;
 
 !! Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px...,
 !! stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
 !! grade: strengthened (short_vowel, long_cluster), vowel: raised
-:%^VOWRaise%>u SG-ILL ;	      		! akku
-+Use/NG:%>a SG-ILL ;	      		! äkka
-: A_DER/SAZH ;
+!:%^VOWRaise%>u SG-ILL ;	      		! akku
+!+Use/NG:%>a SG-ILL ;	      		! äkka
+!: A_DER/SAZH ;
 
 !! grade: strengthened (short_vowel, long_cluster), vowel: neutral (low)
-: A-STEM-PX-STRENGTHEN ;           !!= * @CODE@ (5) äkk
+!: A-STEM-PX-STRENGTHEN ;           !!= * @CODE@ (5) äkk
 !! Ess_Px..., Sg_Ill..., N»A
 
 !! grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
-:%>a ESS/PAR ; 	  	    		! äkkan
+!:%>a ESS/PAR ; 	  	    		! äkkan
 
 !! grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
-+Der+Der/Dimin+N:%^V2VV%^VOWRaise%> N_PIISSUZH ;	! aakkuž
-+Der+Der/Dimin+N:%^V2VV%> N_PEESSAZH ; !!= * @CODE@  (9) Dim.N.Sg.Nom: ääkkaž
+!+Der+Der/Dimin+N:%^V2VV%^VOWRaise%> N_PIISSUZH ;	! aakkuž
+!+Der+Der/Dimin+N:%^V2VV%> N_PEESSAZH ; !!= * @CODE@  (9) Dim.N.Sg.Nom: ääkkaž
 
 !! grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
-:%^CC2CAllegro SG-LOC-PX_ALLEGRO ;     !!= * @CODE@ (5) äk
+!:%^CC2CAllegro SG-LOC-PX_ALLEGRO ;     !!= * @CODE@ (5) äk
 !! Sg_Loc_Px..
 
 LEXICON N_APTEEKK !!= * @CODE@ apteekk:apteekk
@@ -3494,11 +3494,11 @@ LEXICON NMN_PUIQCC
 !!€ pooicaž: puiʹcc+N+Der+Der/Dimin+N+Sg+Nom
 
 
-LEXICON N_KUQV3H3H !!= * @CODE@ kuʹvǯǯ:kuvǯǯ
+!LEXICON N_KUQV3H3H !!= * @CODE@ kuʹvǯǯ:kuvǯǯ
 !!! inflection_type="?"
 ! vowel: monophthong
-: NMN_KUQV3H3H ;
-LEXICON NMN_KUQV3H3H
+!: NMN_KUQV3H3H ;
+!LEXICON NMN_KUQV3H3H
 !! Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_xyy
 ! gradation: yes
 !! !!1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -3529,19 +3529,19 @@ LEXICON NMN_KUQV3H3H
 !! NumContLex="1.113"
 !! Is for nouns with ''-est'' Loc, Extra long vowel
 !! * Yaml: __N-kuvzz__
-:%^PAL E-STEM_SG-NOM ;		  !!(1) Sg.Nom: kuʹvǯǯ
-:%^PAL%^XYY2VY E-STEM_SG-ABE/ACC/GEN ; !!(2) Pl.Nom: kuuʼǯ
-:%^XYY2VY A_DER/LAZH ;
-:%^PAL%^XYY2VY PL-NOM ; !!(2) Pl.Nom: kuuʼǯ
-:%^VOWLower%^XYY2VYY E-STEM_SG-ILL ; !!(3) Sg.Ill:kouǯǯa
-:%^PAL%^XYY2VY%>e SG-LOC ;	  !!(4) Sg.Loc: kuuʹǯest
-:%^PAL%^XYY2VY SG-COM_IN ;
-:%^PAL%>e ESS/PAR ; ! ess and prt without
-:%^PAL%^XYY2VY%> E-STEM_PL-OBL ;
-:%^VOWLower%^XYY2VYY E-STEM_N_KUYLAZH ;	!!(9) Der/Dimin.N.Sg.Nom: kouǯaž
- E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) kuvǯǯ-
-:%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) kuʹvǯ-
-:%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) kuʹvǯǯ Ess+Px..
+!:%^PAL E-STEM_SG-NOM ;		  !!(1) Sg.Nom: kuʹvǯǯ
+!:%^PAL%^XYY2VY E-STEM_SG-ABE/ACC/GEN ; !!(2) Pl.Nom: kuuʼǯ
+!:%^XYY2VY A_DER/LAZH ;
+!:%^PAL%^XYY2VY PL-NOM ; !!(2) Pl.Nom: kuuʼǯ
+!:%^VOWLower%^XYY2VYY E-STEM_SG-ILL ; !!(3) Sg.Ill:kouǯǯa
+!:%^PAL%^XYY2VY%>e SG-LOC ;	  !!(4) Sg.Loc: kuuʹǯest
+!:%^PAL%^XYY2VY SG-COM_IN ;
+!:%^PAL%>e ESS/PAR ; ! ess and prt without
+!:%^PAL%^XYY2VY%> E-STEM_PL-OBL ;
+!:%^VOWLower%^XYY2VYY E-STEM_N_KUYLAZH ;	!!(9) Der/Dimin.N.Sg.Nom: kouǯaž
+! E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) kuvǯǯ-
+!:%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) kuʹvǯ-
+!:%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) kuʹvǯǯ Ess+Px..
 
 LEXICON N_JUQVJJ !!= * @CODE@ juʹvjj:ju%^1VOW%{ʹØ%}v%{ʹØ%}jj
 !!! inflection_type="?"
@@ -3574,7 +3574,7 @@ LEXICON NMN_JUQVJJ
 !! !!(6) Ess: juʹvjjen
 !! !!(7) Par: juʹvjjed
 !! !!(8) Pl.Acc: juuʹjid
-!! !!(9) Der/Dimin.N.Sg.Nom: joujjaž
+!! !!(9) Der/Dimin.N.Sg.Nom: jooujaž
 !! NumContLex="1.113"
 !! Is for nouns with ''-est'' Loc, Extra long vowel
 !! * Yaml: __N-juvjj__
@@ -7916,10 +7916,10 @@ LEXICON NMN_KOALVAK !!= * @CODE@ kåålvak:kåålvak
 :%^RmVow%^PALK PL-OBL ;
 :%^RmVow%^PALK VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
 
-LEXICON N_AACCIKH !!= * @CODE@ pååttaǩ:pååttaǩ
+LEXICON N_AACCIKH !!= * @CODE@ pååttaǩ:pååttak
 !!! inflection_type="2"
 : NMN_AACCIKH ;
-LEXICON NMN_AACCIKH !!= * @CODE@ pååttaǩ:pååttaǩ
+LEXICON NMN_AACCIKH !!= * @CODE@ pååttaǩ:pååttak
 ! 1.2.1.3.1.2.2.2.
 ! gradation: yes
 ! syllables: odd
@@ -7931,15 +7931,15 @@ LEXICON NMN_AACCIKH !!= * @CODE@ pååttaǩ:pååttaǩ
 !! stemtype n-stem pååttaǩ:pååttaǩ
 !! Palatalization loss in Sg.Ill
 !! * Yaml: __N-paattakj__
-: SG-NOM ;
-: SG-ABE/ACC/GEN ;
+:%^PALK SG-NOM ;
+:%^PALK SG-ABE/ACC/GEN ;
 :%^RmVow%^PALNo%>a SG-ILL ; ! pååttka
-:%^RmVow%>e SG-LOC ;
-:%^RmVow SG-COM_IN ;
-:%^RmVow%>e ESS/PAR ; !
-: PL-NOM ;
-:%^RmVow PL-OBL ;
-:%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
+:%^RmVow%^PALK%>e SG-LOC ;
+:%^RmVow%^PALK SG-COM_IN ;
+:%^RmVow%^PALK%>e ESS/PAR ; !
+:%^PALK PL-NOM ;
+:%^RmVow%^PALK PL-OBL ;
+:%^RmVow%^PALK VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
 
 LEXICON N_AANAR
 !!! inflection_type="2"
@@ -11961,7 +11961,7 @@ nijdd:ni N_NIJDD ;
 sieʹss:seâsˈs N_MIEQLLL ;
 vuäʹbb:vuäbˈb N_JEAQNNN ;
 ääkkaž:ääkk N_KUYLAZH ;
-äkk:ä%^1VOWkk N_AKK ;
+äkk:ä%^1VOWkk N_PESS ;
 
 
 LEXICON MALE-CLASSIFIERS
