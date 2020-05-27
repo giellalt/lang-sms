@@ -5006,6 +5006,14 @@ generator-gramcheck%.$(1): generator-gramcheck%.tmp.$(1) \
 endef
 $(foreach fst,hfst xfst foma,$(eval $(call giella_gramcheck_analysers,$(fst))))
 
+# We need a special target for regexes that must be compiled in the selected fst
+# format while in the same dir as regexes that should be compiled using the
+# openfst format. These are typically for spellers and other weighted utilities:
+$(SELECTED_FORMAT_REGEX_TARGETS): \
+%.hfst: %.regex
+	$(AM_V_RGX2FST)"$(HFST_REGEXP2FST)" $(HFST_FLAGS) $(HFST_FORMAT) \
+		$(HFST_REGEXP2FST_FLAGS) $(MORE_VERBOSITY) -S $< -o $@
+
 # We need a special target for regexes that must be compiled in the openfst
 # format while in the same dir as regexes that can be compiled using the chosen
 # format. These are typically for spellers and other weighted utilities:
