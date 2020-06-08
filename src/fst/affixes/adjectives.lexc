@@ -15,6 +15,10 @@ LEXICON A_PSS-PRFPRC
 ! These might simply be left out of the fst
 +V+Pass+PrfPrc: # ;
 
+LEXICON A_ACT-PRFPRC
+! These might simply be left out of the fst
++V+Act+PrfPrc: # ;! Needs fixing 2020-06-08
+
 LEXICON A-ATTR_
 !! These come directly from the xml to lexc xsltransformation lexica
 : # ;
@@ -441,11 +445,11 @@ LEXICON A_VEEIDAS !!= * @CODE@ veeidas:veidd
 :s ADJ-DER/SUPERL_ummus ;
 :as A-01_PAEAELKAS ;
 
-!LEXICON A_PAEAELKAS !!= * @CODE@ päälkas:pä%^1VOWlkkas
-!+Attr: ENDLEX ;
-!:%^RmVow ADJ-DER/COMP_kwlmmsab ;
-!:%^RmVow ADJ-DER/SUPERL_ummus ;
-!: A-01_PAEAELKAS ;
+LEXICON A_PAEAELKAS !!= * @CODE@ päälkas:pä%^1VOWlkkas
++Attr: ENDLEX ;
+:%^RmVow ADJ-DER/COMP_kwlmmsab ;
+:%^RmVow ADJ-DER/SUPERL_ummus ;
+: A-01_PAEAELKAS ;
 
 LEXICON A_CEAEGGAS  !!= * @CODE@ ceäggas:ceägˈg
 +Attr: ENDLEX ;
