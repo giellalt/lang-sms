@@ -2250,9 +2250,9 @@ LEXICON NMN_AELDD
 :%^XYY2XY SG-LOC-PX_ALLEGRO ;	  !!= * @CODE@ (10) äld
 !! Sg_Loc_Px..
 
-!LEXICON N_AELDD-PL
-!:%>a ESS/PAR ;                          !!= * @CODE@ (6) älddan
-!:%^V2VV%^XYY2XY A-STEM_PL-NOM ; !!= * @CODE@ (2) ääld
+LEXICON N_AELDD-PL
+:%>a ESS/PAR ;                          !!= * @CODE@ (6) älddan
+:%^V2VV%^XYY2XY A-STEM_PL-NOM ; !!= * @CODE@ (2) ääld
 
 ! Test data:
 !!€gt-norm: äldd #
@@ -8154,6 +8154,7 @@ LEXICON NMN_CHIOPPYRJ
 
 LEXICON N_KOAOAVAS !!= * @CODE@ kååvas:kå%^1VOWvvas
 !!! inflection_type="2"
+!! kååvas, joođâs
 !! N_LBVVC_as
 : NMN_KOAOAVAS ;
 LEXICON NMN_KOAOAVAS !!= * @CODE@ kååvas:kåvvas
@@ -8484,11 +8485,11 @@ LEXICON NMN_SAAQVESKH
 : PL-NOM ;
 :%^Pen%^VV2V%^RmVow PL-OBL ;
 :%^Pen%^VV2V%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
-+Use/SpellNoSugg+Use/NG:%^RmVow%>e SG-LOC ;
-+Use/SpellNoSugg+Use/NG:%^RmVow SG-COM_IN ; !!= * @CODE@ CHECKME
-+Use/SpellNoSugg+Use/NG:%^RmVow%>e ESS/PAR ; !!= * @CODE@ CHECKME
-+Use/SpellNoSugg+Use/NG:%^RmVow PL-OBL ;
-+Use/SpellNoSugg+Use/NG:%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
++Use/NGminip+Use/SpellNoSugg+Use/NG:%^RmVow%>e SG-LOC ;
++Use/NGminip+Use/SpellNoSugg+Use/NG:%^RmVow SG-COM_IN ; !!= * @CODE@ CHECKME
++Use/NGminip+Use/SpellNoSugg+Use/NG:%^RmVow%>e ESS/PAR ; !!= * @CODE@ CHECKME
++Use/NGminip+Use/SpellNoSugg+Use/NG:%^RmVow PL-OBL ;
++Use/NGminip+Use/SpellNoSugg+Use/NG:%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 :%^Pen%^VV2V%^RmVow%^PALNo A_DER/ALLASH ;
 
 
@@ -9624,8 +9625,8 @@ LEXICON NMN_NALLSHEM
 !! 292-295
 !! * Yaml: __A-chaalmtem__
 !!NumContLex="650"
-:%^PAL SG-NOM ;
-+Use/SpellNoSugg: SG-NOM ;
++Use/NGminip:%^PAL SG-NOM ;
+:%^PALE SG-NOM ;
 :%^V2VV%^PAL SG-ABE/ACC/GEN ;
 :%{XC%}%^C2CC%>a SG-ILL ;
 :%^V2VV%^PAL%>e SG-LOC ;
@@ -9652,7 +9653,8 @@ LEXICON NMN_HOQZJEQN
 !! 292-295
 !! * Yaml: __A-chaalmtem__
 !!NumContLex="650"
-:%^PAL SG-NOM ;
+:%^PALE SG-NOM ;
++Use/NGminip+Use/NG:%^PAL SG-NOM ;
 :%^V2VV%^PAL SG-ABE/ACC/GEN ;
 :%{XC%}%^C2CC%>a SG-ILL ; ! hoʹzjenna
 :%^V2VV%^PAL%>e SG-LOC ;
@@ -10823,7 +10825,7 @@ LEXICON N_KUUZZYZH-WITH-PAL   !!= * @CODE@ kuuʹzz-
 :%>e PL-NOM ;	!!= * @CODE@ paaʹzze
 :%>e PL-OBL ;	    !!= * @CODE@ paaʹzzei Merja differentiates from regular pl
 +Use/NGminip+Use/NG: PL-OBL ;	    !!= * @CODE@ paaʹzzi
-+Use/SpellNoSugg: SG-LOC-PX ; !!= * @CODE@ kuuʹzzstes
++Use/NGminip+Use/SpellNoSugg: SG-LOC-PX ; !!= * @CODE@ kuuʹzzstes
 
 LEXICON N_KUUZZYZH-WITH-PAL-ALLEGRO
 : SG-LOC-PX_ALLEGRO ; !!= * @CODE@ kuʹzstes
