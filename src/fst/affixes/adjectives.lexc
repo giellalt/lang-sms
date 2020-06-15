@@ -113,9 +113,18 @@ LEXICON A_SUYMMM !!= * @CODE@ suâmm:suâmˈm
 :%^PALE%^PAL%^XXX2XX A-ATTR_es ;
 : A-01_NEAVVV ;! !Check this 2016-09-16 
 
-LEXICON A_MODDAI !!= * @CODE@ moddai:modd
-:ǥ  A-ATTR_ys ; !!Check this 2018-10-13
-+Sg+Nom:ai # ;
+LEXICON A_MODDAI !!= * @CODE@ moddai:moddai
+! Used mainly with Russian loan words
++Attr: ENDLEX ; !!Check this 2020-06-09
+: SG-NOM ; !!= * @CODE@
+: SG-ABE/ACC/GEN ; !!= * @CODE@
+:%^RmVow%^I2J%>a SG-ILL ; !!= * @CODE@
+:%^RmVow%^I2J%>e SG-LOC ; !!= * @CODE@
+:%^RmVow%^V2VV SG-COM_IN ; !!= * @CODE@
+:%^I2J%>e ESS/PAR ; !!= * @CODE@
+:%^Pen%^V2VV PL-NOM ; !!= * @CODE@
+:%^RmVow%^I2J PL-OBL ; !!= * @CODE@
+
 
 !! CLASS 1 LOW VOWEL, NO PALATALIZATION NOMINALS
 LEXICON A_PESS
@@ -187,7 +196,7 @@ LEXICON A_CHAAQCC !!= * @CODE@ čääʹcc:čää%{ʹØ%}cc
 
 LEXICON A_KAQLBB !!= * @CODE@ käʹlbb:kälbb âʹlǧǧ:â%^1VOW%{ʹØ%}lgg
 ! vowel: monophthong
-:%^V2VV%^PAL%^CC2C   A-ATTR_es ;
+:%^V2VV%^PAL%^XYY2XY   A-ATTR_es ;
 : A-01_KAQLBB ;
 
 LEXICON A_HAAQSKH !!= * @CODE@ hääʹsǩ:hää%{ʹØ%}sk
@@ -880,8 +889,8 @@ LEXICON ADJ-DER/COMP_kwlmmsab
 +Comp:»õb A-02_PL-OBL ;
 +Use/NG+Comp:»ubu A-02_PL-OBL ;
 +Comp:»õbâ A-02_ESS/PAR ;
-+Use/SpellNoSugg+Use/NG+Comp:»ubâ A-02_ESS/PAR ;
-+Use/SpellNoSugg+Use/NG+Comp:»ubu A-02_ESS/PAR ;
++Use/NGminip+Use/SpellNoSugg+Use/NG+Comp:»ubâ A-02_ESS/PAR ;
++Use/NGminip+Use/SpellNoSugg+Use/NG+Comp:»ubu A-02_ESS/PAR ;
 
 LEXICON A_HAS_ADJ-DER/SUPERL_mws
 +Superl+Attr: # ;
@@ -1044,8 +1053,8 @@ LEXICON DET_DOHTAD !!= * @CODE@ doohhtad:doohht
 +Ord:»õd A-02_PL-OBL ;
 +Use/NG+Ord:»udu A-02_PL-OBL ;
 +Ord:»õdâ A-02_ESS/PAR ;
-+Use/SpellNoSugg+Use/NG+Ord:»udâ A-02_ESS/PAR ;
-+Use/SpellNoSugg+Use/NG+Ord:»udu A-02_ESS/PAR ;
++Use/NGminip+Use/SpellNoSugg+Use/NG+Ord:»udâ A-02_ESS/PAR ;
++Use/NGminip+Use/SpellNoSugg+Use/NG+Ord:»udu A-02_ESS/PAR ;
 
 
 LEXICON DET_ATTR
@@ -7434,10 +7443,10 @@ LEXICON A-01_NALLSHEM !!= * @CODE@ čââʹlmteʹm:čââʹlmtẹ%^1VOW%{ʹØ%}m
 !! 292-295
 !! * Yaml: __A-chaalmtem__
 !!NumContLex="650"
-: A-02_SG-NOM ; !! Ǩiõllkaʹlddi. 2017-04-04
+:%^PALE A-02_SG-NOM ; !! Ǩiõllkaʹlddi. 2017-04-04
 !!€ čââʹlmtẹ%^1VOW%{ʹØ%}m
 !!€ čââʹlmtẹ00m
-+Use/SpellNoSugg:%^PAL A-02_SG-NOM ; !2019-10-08
++Use/NGminip+Use/SpellNoSugg:%^PAL A-02_SG-NOM ; !2019-10-08
 +Use/NGminip+Use/NG:%{XC%}%^PAL%^C2CC A-02_SG-NOM ;
 :%^V2VV%^PAL A-02_SG-ABE/ACC/GEN ;
 :%{XC%}%^C2CC%>a A-02_SG-ILL ;
