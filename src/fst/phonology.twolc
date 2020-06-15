@@ -694,7 +694,7 @@ Rules
 "Vowel raising ẹ:i"
 !! __@RULENAME@__ - used in
  ẹ:i <=>
-  OnSetC _ (%^1VOW:|ẹ:) (i:|u) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWRaise: ;
+  OnSetC _ (%^1VOW:|ẹ:) (i:|u) (ʹ:|0:ʹ|%{ʹØ%}:) [h: (%{ʹØ%}:)|Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWRaise: ;
 !!€ pẹ^1VOWss^VOWRaise>u
 !!€ pi0ss0>u
 !!€ pẹ^1VOWss^V2VV^VOWRaise>už
@@ -714,10 +714,16 @@ OnSetC  ẹ: _ (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^V
  â:õ <=>
   â:  _      (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWRaise: ;
 !  [â:â|â:õ]  _      (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWRaise: ;
-  OnSetC _   (â:0|â:õ|%^1VOW:) (u) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight  %^VOWRaise: ;
+  OnSetC _   (â:|%^1VOW:) (u) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight  %^VOWRaise: ;
+!  OnSetC _   (â:0|â:õ|%^1VOW:) (u) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight  %^VOWRaise: ;
 !! mââʹnn+N+Pl+Acc: __egg/muna__
 !!€ mââ{ʹØ}nn^VOWRaise^PAL^CC2C>id
 !!€ mõõʹn0000>id
+!! pââʹjj+N+Pl+Gen
+!!€ pââ{ʹØ}jj^VOWRaise^PAL^CC2C>i
+!!€ põõ0j000>i
+!!$ pââ{ʹØ}jj^VOWRaise^PAL^CC2C>i
+!!$ pââ0j000>i
 !! čâʹlmm+N+Pl+Acc: __eye/silmä__
 !!€ čâ^1VOW{ʹØ}lmm^V2VV^VOWRaise^PAL^XYY2XY>id
 !!€ čõõʹlm00000>id
@@ -1142,7 +1148,8 @@ OnSetC u: _   (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|r d d:
 !! viǯǯâd+V+Imprt+Sg2 __fetch/noutaa__
 !!€ vi%^1VOWǯǯ%^V2VV%^VOWLower%>as
 !!€ vẹẹǯǯ00%>as
-         OnSetC [:ẹ|:Ẹ] _ (i|u) (%{ʹØ%}:0) Cns:+ Vow: Cns: %^Pen: %^V2VV: (%^Pen: %^VOWLower:) PenBetweenPALNoAndMorphRightArrow RBound ;
+         OnSetC [:ẹ|:Ẹ] _ (i|u) (%{ʹØ%}:0) Cns:+ Vow: Cns: %^Pen: %^V2VV: (%^Pen: %^VOWLower:) PenBetweenPALNoAndMorph ;
+!         OnSetC [:ẹ|:Ẹ] _ (i|u) (%{ʹØ%}:0) Cns:+ Vow: Cns: %^Pen: %^V2VV: (%^Pen: %^VOWLower:) PenBetweenPALNoAndMorphRightArrow RBound ;
 !! eelas+N+Sg+Nom:
 !!€ ẹ%^1VOWllas%^Pen%^V2VV%^Pen%^CC2C
 !!€ ẹẹl0as0000
@@ -1338,8 +1345,9 @@ OnSetC u: _   (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|r d d:
 "Even syllabic nouns I, relative vowel lengthening i"
 !! __@RULENAME@__ - ǩiđđ:ǩiiđ
  %^1VOW:i <=> OnSetC [ e:i| ẹ:i ] _ (0:ʹ|%{ʹØ%}:)  [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] [%^V2VV: %^VOWRaise:| Vow: Cns:+ %^Pen: %^V2VV: %^Pen: %^VOWRaise:]  ;
+
 OnSetC [i|I] _ (h|u) (%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^V2VV: BetweenVowHeightAndMorph   ;
-  OnSetC [Vow:i|Vow:I] _  [(ʹ:|0:ʹ|%{ʹØ%}:) CNoJ:|[h:|u] (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+] Vow: Cns:+ (%{XC%}:)  %^Pen: %^V2VV: ;
+  OnSetC [Vow:i|Vow:I] _  [(ʹ:|0:ʹ|%{ʹØ%}:) CNoJ:|(%{ʹØ%}:) [h:|u] (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+] Vow: Cns:+ (%{XC%}:)  %^Pen: %^V2VV: ;
 !Not needed here
 !! pirsted+V+Ind+Prs+ConNeg
 !!€ piirâst
@@ -1406,9 +1414,10 @@ OnSetC [i|I] _ (h|u) (%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^V2VV:
 
 "Even syllabic nouns, for j>i"
 !! __@RULENAME@__ - sijdd > siid This will need a special extra-lengthening rule
- j:i <=> OnSetC i: (%{ʹØ%}:) _ (ʹ:|%{ʹØ%}:) [ d d:|s s:|n n:] BetweenStemAndConsGrade %^XYY2VY: ;
+ j:i <=> OnSetC i: (%{ʹØ%}:) _ (ʹ:|%{ʹØ%}:) [ d d:|s s:|n n:] [BetweenStemAndConsGrade | Vow: Cns:+ PenBetweenStemAndConsGrade %^Pen: ] %^XYY2VY: ;
 !!€ ijss%^XYY2VY%>âs
 !!€ iis00%>âs
+
   Vow: (%^1VOW:) (ʹ:|:ʹ|%{ʹØ%}:) _ j: BetweenStemAndConsGrade %^J2I: [(%^Allegro:) (%^PAL:) %^CC2C:|(%^Allegro:) (%^PAL:) %^CC2CAllegro:|%^XYY2XY:] ;
 
 !!€ sââjj%^J2I%^CC2C
@@ -1484,7 +1493,7 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ|%{ʹØ%}:) t t: BetweenStemAndConsGrade %^XYY2IY: 
 "Vowels for â:e"
 !! __@RULENAME@__ -
  â:e <=>
-   [i|e:|u] _ ((h:i|i|u) [:ʹ|%{ʹØ%}:] ) [Cns:+ (%{XC%}:)|Cns:+ (:ˈ|ˈ:)  Cns:+|Cns:+ :ˈ Cns:+]  (%^VOWRaise:) %^PALE: %^PAL: ;
+   [i|e:|u] _ (( (%{ʹØ%}:) h:i|i|u) [:ʹ|%{ʹØ%}:] ) [Cns:+ (%{XC%}:)|Cns:+ (:ˈ|ˈ:)  Cns:+|Cns:+ :ˈ Cns:+]  (%^VOWRaise:) %^PALE: %^PAL: ;
 !   [i|e:i|u] _ ((h:i|i|u) [:ʹ|%{ʹØ%}:ʹ] ) [Cns:+ (%{XC%}:)|Cns:+ (:ˈ|ˈ:)  Cns:+|Cns:+ :ˈ Cns:+]  BetweenStemAndHeight (%^VOWRaise:) %^PALE: %^PAL: ;
 !! miârr+N+Sg+Ill
 !!€ miâ0rr%^PALE%^PAL%>e
@@ -1527,7 +1536,10 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ|%{ʹØ%}:) t t: BetweenStemAndConsGrade %^XYY2IY: 
 !! __@RULENAME@__ - used in
  ẹ:e <=>
  OnSetC ẹ: _ (i|u) [:ʹ|%{ʹØ%}:ʹ]  [Cns:+ (%{XC%}:)|Cns:+ (:ˈ|ˈ:0) Cns:+]  %^PAL:  ;
- OnSetC _ (%^1VOW:) (i|u) [:ʹ|%{ʹØ%}:ʹ]  [Cns:+ (%{XC%}:)|Cns:+ (:ˈ|ˈ:0) Cns:+] BetweenStemAndHeight [%^PAL:|%^PALE:]  ;
+ OnSetC _ (%^1VOW:) [(i|u) [:ʹ|%{ʹØ%}:ʹ]| %{ʹØ%}: h: %{ʹØ%}: ]  [Cns:+ (%{XC%}:)|Cns:+ (:ˈ|ˈ:0) Cns:+] BetweenStemAndHeight [%^PAL:|%^PALE:]  ;
+!! reʹhtt+N+Pl+Nom
+!!€ rẹ%^1VOW%{ʹØ%}h%{ʹØ%}tt%^V2VV%^PAL%^XYY2VY
+!!€ ree0uʹt0000
 !! peiʹvv+N+Sg+Gen: __day/päivä__
 !!€ pẹ%^1VOWi%{ʹØ%}vv%^V2VV%^PAL%^CC2C
 !!€ peeiʹv0000
