@@ -538,8 +538,14 @@ CG_MWESPLIT = /usr/local/bin/cg-mwesplit
 CG_RELABEL = /usr/local/bin/cg-relabel
 CYGPATH_W = echo
 CYGWINJAVAPATH = echo
+DEFAULT_FOMA = no
+DEFAULT_HFST = yes
+DEFAULT_HFST_BACKEND = foma
+DEFAULT_HYPERMIN = no
 DEFAULT_ORTH = 
+DEFAULT_REVERCI = yes
 DEFAULT_WS = Latn
+DEFAULT_XFST = no
 DEFS = -DPACKAGE_NAME=\"Giella\ sms\" -DPACKAGE_TARNAME=\"giella-sms\" -DPACKAGE_VERSION=\"0.2.0\" -DPACKAGE_STRING=\"Giella\ sms\ 0.2.0\" -DPACKAGE_BUGREPORT=\"feedback@divvun.no\" -DPACKAGE_URL=\"http://divvun.no\" -DPACKAGE=\"giella-sms\" -DVERSION=\"0.2.0\"
 DIALECTS = main
 DIFFTOOL = /usr/bin/opendiff
@@ -571,7 +577,7 @@ HFST_CONJUNCT = /usr/local/bin/hfst-conjunct
 HFST_DETERMINIZE = /usr/local/bin/hfst-determinize
 HFST_DISJUNCT = /usr/local/bin/hfst-disjunct
 HFST_FOMA = false
-HFST_FORMAT_NAME = openfst-tropical
+HFST_FORMAT_NAME = foma
 HFST_FST2FST = /usr/local/bin/hfst-fst2fst
 HFST_FST2STRINGS = /usr/local/bin/hfst-fst2strings
 HFST_FST2TXT = /usr/local/bin/hfst-fst2txt
@@ -895,13 +901,13 @@ OAHPA_DIALECT_TARGETS_FOMA = $(addsuffix .foma,$(OAHPA_DIALECT_TARGETS))
 #	$(am__append_76)
 #DIAL_GENERATORS = $(am__append_73) \
 #	$(am__append_75) $(am__append_77)
-#HFST_FORMAT = --format=foma
+HFST_FORMAT = --format=foma
 #HFST_FORMAT = --format=openfst-log
-HFST_FORMAT = --format=openfst-tropical
+#HFST_FORMAT = --format=openfst-tropical
 #HFST_FORMAT = --format=sfst
-#HFST_OLFORMAT = --format=optimized-lookup-unweighted
+HFST_OLFORMAT = --format=optimized-lookup-unweighted
 #HFST_OLFORMAT = --format=optimized-lookup-weighted
-HFST_OLFORMAT = --format=optimized-lookup-weighted
+#HFST_OLFORMAT = --format=optimized-lookup-weighted
 #HFST_OLFORMAT = --format=optimized-lookup-unweighted
 
 # hfst-compose:
@@ -1419,10 +1425,10 @@ uninstall-am: uninstall-hfstdataDATA
 #### Add language-specific build rules here: ####
 
 # Hfst - add weights to compounds if using tropical-semiring fst format:
-generator-raw-gt-desc.hfst: generator-raw-gt-desc.tmp.hfst
-	$(AM_V_REWEIGHT)$(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
-			-S '+Cmp' -a 10 --arcs-only -i $< \
-		> $@
+#generator-raw-gt-desc.hfst: generator-raw-gt-desc.tmp.hfst
+#	$(AM_V_REWEIGHT)$(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
+#			-S '+Cmp' -a 10 --arcs-only -i $< \
+#		> $@
 
 # We need to add processing of language-specific tags in the analyser:
 analyser-gt-desc.%: analyser-gt-desc.tmp.% \
