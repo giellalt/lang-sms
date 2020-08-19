@@ -295,6 +295,12 @@ LEXICON A_SAELTTAI !!= * @CODE@ sälttai:sältt
 :%>%{ʼØ%}j ADJ-DER/SUPERL_ummus ;
 !%^RmVow%^I2J
 
+LEXICON A_VELLAI !!= * @CODE@ vellai:vẹ%^1VOWll
+! no attribute complementary distribution with noun veʹll-
+:a%{ʼØ%}i NMN_ZHEEVAI ;
+:%>%{ʼØ%}j ADJ-DER/COMP_ab ;
+:%>%{ʼØ%}j ADJ-DER/SUPERL_ummus ;
+
 
 
 !! CLASS 
@@ -362,6 +368,13 @@ LEXICON A_MOOCHCHYS !!= * @CODE@ mooččâs:močč
 LEXICON A_JOOSKYS !!= * @CODE@ jõõskâs:jõ%^1VOWskk
 ! was A_JOOSKYS
 +Attr: ENDLEX ;
+:s ADJ-DER/COMP_kwlmmsab ;
+:s ADJ-DER/SUPERL_ummus ;
+:âs A-01_TAALKYS ;
+
+LEXICON A_AARVYS !!= * @CODE@ aarvâs:a%^1VOWrvv
+! was A_JOOSKYS
++Attr:sõs ENDLEX ;
 :s ADJ-DER/COMP_kwlmmsab ;
 :s ADJ-DER/SUPERL_ummus ;
 :âs A-01_TAALKYS ;
@@ -489,35 +502,35 @@ LEXICON A_KAAMMI
 : A-01_KAAMMI ;
 
 LEXICON A_KAAQMES  !!= * @CODE@ kääʹmes:kämm
-+Attr:%^V2VV%^PAL ENDLEX ;
++Attr:%^V2VV%^PAL%>es ENDLEX ;
 :s ADJ-DER/COMP_kwlmmsab ;
 :s ADJ-DER/SUPERL_ummus ;
 :es A-01_OAQVES ; !!= * @CODE@   kääʹmes:kämmez
-:%^PAL%^V2VV%>es A2N-VUOTT ;
+:%^V2VV%^PAL%>es A2N-VUOTT ;
 
 LEXICON A_KAAQLLES  !!= * @CODE@ kääʹlles:kä%^1VOWll
-+Attr:%^V2VV%^PAL ENDLEX ;
++Attr:%^V2VV%^PAL%>es ENDLEX ;
 :s ADJ-DER/COMP_kwlmmsab ;
 :s ADJ-DER/SUPERL_ummus ;
 :es A-01_KAAQLLES ; !!= * @CODE@   kääʹmes:kämmez
-:%^PAL%^V2VV%>es A2N-VUOTT ;
+:%^V2VV%^PAL%>es A2N-VUOTT ;
 
 LEXICON A_PUUQTTES  !!= * @CODE@ puuʹttes:pu%^1VOWtt
-+Attr:%^V2VV%^PAL ENDLEX ;
++Attr:%^V2VV%^PAL%>es ENDLEX ;
 :%^VOWLower%>s ADJ-DER/COMP_kwlmmsab ;
 :%^VOWLower%>s ADJ-DER/SUPERL_ummus ;
 : A-01_PUUQTTES ; !!= * @CODE@   puuʹttes:pu%^1VOWttes
 :%^V2VV%^PAL%>es A2N-VUOTT ;
 
 LEXICON A_KOAQSHKHES !!= * @CODE@ kååʹšǩes:kåškk
-+Attr:%^PAL ENDLEX ;
++Attr:%^PAL%^XYY2XY%>es ENDLEX ;
 :s ADJ-DER/COMP_kwlmmsab ;
 :s ADJ-DER/SUPERL_ummus ;
 :es A-01_KAAQRBES ;
 :%^PAL%^XYY2XY%>es A2N-VUOTT ;
 
 LEXICON A_KHEEQLES  !!= * @CODE@ ǩeeʹles:ǩeâlˈl
-+Attr:%^Pen%PALE%^Pen%^PAL%^Pen%^CCC2C%>es ENDLEX ; !CHECKME
++Attr:%^PALE%^PAL%^CCC2C%>es ENDLEX ; !CHECKME
 :s ADJ-DER/COMP_kwlmmsab ;
 :s ADJ-DER/SUPERL_ummus ;
 :es A-01_KHEEQLES ; !!= * @CODE@	ǩeeʹles:ǩeâlˈles
@@ -532,22 +545,23 @@ LEXICON A_PUAQRES  !!= * @CODE@ puäʹres:puärˈr
 :es A-01_PUAQRES ; !!= * @CODE@   puäʹres:puärˈres
 :%^PAL%^CCC2C%>es A2N-VUOTT ;
 
-!LEXICON A_VUAQMES  !!= * @CODE@ vuäʹres:vuärˈr
-!+Attr:%^PAL ENDLEX ;
-!:s ADJ-DER/COMP_kwlmmsab ;
-!:s ADJ-DER/SUPERL_ummus ;
-!:es A-01_PUAQRES ; !!= * @CODE@   puäʹres:puärˈres
-!:%^PAL%^CCC2C%>es A2N-VUOTT ;
+LEXICON A_VUAQMES  !!= * @CODE@ vuäʹres:vuärˈr
+! vuäʹmˈm: vuäʹmes+A+Attr
++Attr:%^PAL ENDLEX ;
+:s ADJ-DER/COMP_kwlmmsab ;
+:s ADJ-DER/SUPERL_ummus ;
+:es A-01_PUAQRES ; !!= * @CODE@   puäʹres:puärˈres
+:%^PAL%^CCC2C%>es A2N-VUOTT ;
 
 LEXICON A_CHUEQDHES  !!= * @CODE@ čueʹđes:čuâtˈt
-+Attr:%^PAL ENDLEX ;
++Attr:%^PALE%^PAL%^CCC2C%>es ENDLEX ;
 :s ADJ-DER/COMP_kwlmmsab ;
 :s ADJ-DER/SUPERL_ummus ;
 :es A-01_CHUEQDHES ; !!= * @CODE@   puäʹres:puärˈrez
 :%^PALE%^PAL%^CCC2C%>es A2N-VUOTT ;
 
 LEXICON A_PUEAQRDES  !!= * @CODE@ čueʹcǩes:čuäckkez
-+Attr:%^PALẸ%^PAL ENDLEX ; !CHECKME
++Attr:%^PALẸ%^PAL%^XYY2XY%>es ENDLEX ; !CHECKME
 :s ADJ-DER/COMP_kwlmmsab ;
 :s ADJ-DER/SUPERL_ummus ;
 :es A-01_PUEAQRDES ; !!= * @CODE@  čueʹcǩes:čuäckkez
