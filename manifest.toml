@@ -5,5 +5,9 @@ version = "0.1.1"
 system_pkg_id = "no.divvun.MacDivvun.sms"
 
 [windows]
-system_product_code = "1AC7B700-ADFD-4D66-B6F6-65434915FB4D"
-msoffice_product_code = "2F8747C4-84A2-47F7-8AF1-0890564405E8"
+system_product_code = "{0B883A20-5944-4F44-91A6-E4C9953C1489}_is1"
+legacy_product_codes = [
+    { value = "1AC7B700-ADFD-4D66-B6F6-65434915FB4D", kind = "nsis" },
+    { value = "2F8747C4-84A2-47F7-8AF1-0890564405E8", kind = "nsis" }
+]
+extra_locales = { sms-FI = "sms" }
