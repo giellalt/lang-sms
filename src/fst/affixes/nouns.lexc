@@ -1893,6 +1893,12 @@ HatY-STEM-PX-RETAIN ;
 HatY-STEM-PX-WEAKEN ;
 HatY-STEM-PX-STRENGTHEN ;
 
+LEXICON N_PLAAN-PL
+: PL-NOM ;              ! plaan
+: PL-OBL ;              ! plaani
++Der+Der/Dimin+N: N_MUORYZH-WITHOUT-PAL-PL ;
++Der+Der/Dimin+N:%^PAL N_MUORYZH-WITH-PAL-PL ;
+
 
 LEXICON N_LOMAAKK !!= * @CODE@ lomaakk:lomaa%{ʹØ%}kk
 !!! inflection_type="?"
@@ -10605,7 +10611,11 @@ LEXICON NMN_HOQPPI !!= * @CODE@ hõʹppi:hõʹppi
 +Der+Der/Dimin+N:%^I2J  N_KUYLAZH ;
 :%^I2J VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
-
+LEXICON N_HOQPPI-PL
+: PL-NOM ;
+:%^I2J PL-OBL ;
++Der+Der/Dimin+N:%^I2J  N_KUYLAZH-PL ;
+:%^I2J VOONYS-STEM-PX-PL ; 
 LEXICON N_VUYPPPAI !!= * @CODE@ vuâppai:vuâpˈp
 !!! inflection_type="?"
 : NMN_VUYPPPAI ;
@@ -10792,16 +10802,29 @@ HatY-STEM-PX-RETAIN ;
 +Err/Orth+Err/GenreLeudd+Sg+Nom+PxSg1:%>ž%>amâ K; !!= * @CODE@ Leudd 2018-09-20
 +Err/Orth+Err/GenreLeudd+Sg+Nom+PxSg1:âž%>amâ K; !!= * @CODE@ Leudd 2018-09-20
 
+LEXICON N_MUORYZH-WITHOUT-PAL-PL !!= * @CODE@ paapp
+:že ESS/PAR ;	 	!!= * @CODE@ paappžen
+HatY-STEM-PX-RETAIN-PL ;
+: HatY-STEM-PX-WEAKEN-PL ;
+: HatY-STEM-PX-STRENGTHEN-ESS ;
+
+
 LEXICON N_MUORYZH-WITH-PAL   !!= * @CODE@ paaʹpp-
 :%>e SG-ABE/ACC/GEN ;	!!= * @CODE@ paaʹppe
 :%>e SG-LOC ;	!!= * @CODE@ paaʹppest
 :%>e SG-COM_IN ;	    !!= * @CODE@ paaʹppein
 +Use/NGminip+Use/NG: SG-COM_IN ;	    !!= * @CODE@ paaʹppin
+
 :%>e PL-NOM ;	!!= * @CODE@ paaʹppe
 :%>e PL-OBL ;	    !!= * @CODE@ paaʹppei Merja differentiates from regular pl
 +Use/NGminip+Use/NG: PL-OBL ;	    !!= * @CODE@ paaʹppi
 
 : SG-LOC-PX ; !!= * @CODE@ muõʹrstes
+LEXICON N_MUORYZH-WITH-PAL-PL
+:%>e PL-NOM ;   !!= * @CODE@ paaʹppe
+:%>e PL-OBL ;       !!= * @CODE@ paaʹppei Merja differentiates from regular pl
++Use/NGminip+Use/NG: PL-OBL ;       !!= * @CODE@ paaʹppi
+
 
 LEXICON N_KUUZZYZH-WITHOUT-PAL !!= * @CODE@ paapp-
 :âž SG-NOM ;		!!= * @CODE@ paappâž
@@ -12017,35 +12040,42 @@ LEXICON VOONYS-STEM-PX !!= * @CODE@ võnns-
  A_DER/ALLASH ;
 +Der+Der/Dimin+N: N_VONNSAZH ;
 VOONYS-STEM-PX-RETAIN-WITHOUT-PAL ;
+ VOONYS-STEM-PX-RETAIN-WITHOUT-PAL-PL ;
  VOONYS-STEM-PX-RETAIN-WITH-PAL ;
+ VOONYS-STEM-PX-RETAIN-WITH-PAL-PL ;
  VOONYS-STEM-PX-ALLEGRO ;
  VOONYS-STEM-PX-WEAKEN-WITHOUT-PAL ;
  VOONYS-STEM-PX-WEAKEN-WITH-PAL ;
- VOONYS-STEM-PX-WEAKEN-WITH-PAL_PL-OBL ;
+ VOONYS-STEM-PX-WEAKEN-WITH-PAL-SG-OBL ;
+ VOONYS-STEM-PX-WEAKEN-WITH-PAL-PL-OBL ;
  VOONYS-STEM-PX-STRENGTHEN-WITH-PAL ;
  VOONYS-STEM-PX-STRENGTHEN-WITHOUT-PAL ;
+
+LEXICON VOONYS-STEM-PX-PL !!= * @CODE@ võnns-
+ VOONYS-STEM-PX-RETAIN-WITHOUT-PAL-PL ;
+ VOONYS-STEM-PX-RETAIN-WITH-PAL-PL ;
+ VOONYS-STEM-PX-WEAKEN-WITH-PAL-PL-OBL ;
+VOONYS-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ essive
 
 LEXICON VOONYS-STEM-PX-RETAIN-WITHOUT-PAL
 +Sg+Nom+PxSg1:%>am K ;
 +Sg+Nom+PxSg2:%>ad K ;
 +Sg+Acc+PxSg1:%>an K ;
 +Sg+Gen+PxSg1:%>an K ;
-+Pl+Nom+PxSg1:%>an K ;
-+Pl+Nom+PxSg2:%>ad K ;
-
 +Use/NGminip+Use/NG+Sg+Nom+PxSg1:%>am ASSOC-COLL_IQ33E ;
 
 +Sg+Gen+PxSg1:%>an ASSOC-COLL_IQ33E ;
+
+LEXICON VOONYS-STEM-PX-RETAIN-WITHOUT-PAL-PL
++Pl+Nom+PxSg1:%>an K ;
++Pl+Nom+PxSg2:%>ad K ;
+
 
 LEXICON VOONYS-STEM-PX-RETAIN-WITH-PAL
 +Sg+Nom+PxSg3:%>es K ;
 +Sg+Nom+PxPl1:%>eem K ;
 +Sg+Nom+PxPl2:%>eed K ;
 +Sg+Nom+PxPl3:%>eez K ;
-+Pl+Nom+PxSg3:%>es K ;
-+Pl+Nom+PxPl1:%>een K ;
-+Pl+Nom+PxPl2:%>eed K ;
-+Pl+Nom+PxPl3:%>eez K ;
 
 
 !!
@@ -12061,6 +12091,12 @@ LEXICON VOONYS-STEM-PX-RETAIN-WITH-PAL
 +Sg+Abe+PxPl2:%>eedtää K ;
 +Sg+Abe+PxPl3:%>eeztaa K ;
 +Sg+Abe+PxPl3:%>eeztää K ;
+
+LEXICON VOONYS-STEM-PX-RETAIN-WITH-PAL-PL
++Pl+Nom+PxSg3:%>es K ;
++Pl+Nom+PxPl1:%>een K ;
++Pl+Nom+PxPl2:%>eed K ;
++Pl+Nom+PxPl3:%>eez K ;
 
 
 LEXICON VOONYS-STEM-PX-ALLEGRO
@@ -12095,7 +12131,7 @@ LEXICON VOONYS-STEM-PX-WEAKEN-WITH-PAL
 +Sg+Gen+PxPl3:%>eez ASSOC-COLL_IQ33E ;
 
 
-LEXICON VOONYS-STEM-PX-WEAKEN-WITH-PAL_PL-OBL
+LEXICON VOONYS-STEM-PX-WEAKEN-WITH-PAL-SG-OBL
 +Sg+Com+PxSg1:%>inan K ;
 +Sg+Com+PxSg2:%>inad K ;
 +Sg+Com+PxSg3:%>iʹnes K ;
@@ -12103,6 +12139,7 @@ LEXICON VOONYS-STEM-PX-WEAKEN-WITH-PAL_PL-OBL
 +Sg+Com+PxPl2:%>iʹned K ;
 +Sg+Com+PxPl3:%>iʹnez K ;
 
+LEXICON VOONYS-STEM-PX-WEAKEN-WITH-PAL-PL-OBL
 +Pl+Abe+PxSg1:%>ääntaa K ;
 +Pl+Abe+PxSg1:%>ääntää K ;
 +Pl+Abe+PxSg2:%>äädtaa K ;
