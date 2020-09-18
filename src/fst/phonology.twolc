@@ -906,9 +906,11 @@ OnSetC  ẹ: _ (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^V
 "Vowel lowering a:ä"
 !! __@RULENAME@__ -
  a:ä <=>
-     a:ä _     (u|i) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower:  (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
+     a: _     (u|i) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower:  (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
+!     a:ä _     (u|i) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower:  (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
 
-  OnSetC    _ (a:ä|a:0|%^1VOW:ä|%^1VOW:0) (u|i) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight  %^VOWLower:  (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) [RBound|BetweenPALNoAndMorph] ;
+  OnSetC    _ (a:) (u|i) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight  %^VOWLower:  (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) [RBound|BetweenPALNoAndMorph] ;
+  OnSetC    _ (%^1VOW:ä|%^1VOW:0) (u|i) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight  %^VOWLower:  (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) [RBound|BetweenPALNoAndMorph] ;
 
     OnSetC     _ (%^1VOW:ä|%^1VOW:0) ((ʹ:|%{ʹØ%}:) (v:u|j:i)) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWLower:  (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
 
