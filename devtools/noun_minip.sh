@@ -11,7 +11,7 @@
 
 
 LOOKUP=$(echo $LOOKUP)
-GTHOME=$(echo $GTHOME)
+GTLANGS=$(echo $GTLANGS)
 
 
 PATTERN=$1
@@ -24,7 +24,7 @@ for lemma in $(cat $L_FILE);
 do
  for form in $(cat $P_FILE);
  do
-   echo "${lemma}${form}" | $HLOOKUP $GTHOME/langs/sms/src/generator-gt-norm.hfstol
+   echo "${lemma}${form}" | $HLOOKUP $GTLANGS/lang-sms/src/generator-gt-norm.hfstol
  done
 done
 
