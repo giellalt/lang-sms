@@ -20,62 +20,62 @@
 
 
 
-LEXICON UNIT   !!= * __@CODE@__  As acro, but without paradigm
-            +N+ABBR:%>    # ;
-     +N+ABBR+Sg+Nom:%>    # ;
-!    +N+ABBR+Sg+Gen:%>    # ;
-!    +N+ABBR+Sg+Loc:%>    # ;
-!       +N+ABBR+Ess:%>    # ;
-!       +N+ABBR+Par:%>    # ;
-!+N+ABBR+Par+Use/NG:%>%:d # ;
-!    +N+ABBR+Pl+Nom:%>    # ;
-
-LEXICON ACRONOUN_cons
-  ACRONOUN ;
-
-LEXICON ACRONOUN_vow
-  ACRONOUN ;
-
-
-LEXICON ACRO_ACCRA  !!= * __@CODE@__
-  +N+Prop+ACR:   acroconnector ;
-!     +N+Prop:%> ACCRADECL     ;
-
-LEXICON ACRO_BERN
-  +N+Prop+ACR:   acroconnector ;
-!     +N+Prop:%> BERN-UCASE    ;
-
-LEXICON ACRO_LONDON
-  +N+Prop+ACR:   acroconnector ;
-!     +N+Prop:%> LONDON-UCASE  ;
-
-LEXICON ACRO_NYSTØ
-  +N+Prop+ACR:   acroconnector ;
-!     +N+Prop:%> NYSTØ-OBL     ;
-
-LEXICON ACRO_cons
-  ACRO ;
-
-LEXICON ACRO_vow
-  ACRO ;
-
-
-LEXICON DYN_ACRO_cons
-  DYN_ACRO ;
-
-LEXICON DYN_ACRO_vow
-  DYN_ACRO ;
-
-
-LEXICON DYN_ACRO
- +N+Prop+Sem/Org+ACR+Dyn: acroconnector ;
-
-
-LEXICON ACRONOUN              ! Here we add the POS tag
- N+ACR: acroconnector ;
-
-LEXICON ACRO   !!= * __@CODE@__ adds +N+ACR and redicrects to acroconnector
- +N+Prop+ACR: acroconnector ;
+!LEXICON UNIT   !!= * __@CODE@__  As acro, but without paradigm
+!            +N+ABBR:%>    # ;
+!     +N+ABBR+Sg+Nom:%>    # ;
+!!    +N+ABBR+Sg+Gen:%>    # ;
+!!    +N+ABBR+Sg+Loc:%>    # ;
+!!       +N+ABBR+Ess:%>    # ;
+!!       +N+ABBR+Par:%>    # ;
+!!+N+ABBR+Par+Use/NG:%>%:d # ;
+!!    +N+ABBR+Pl+Nom:%>    # ;
+!
+!LEXICON ACRONOUN_cons
+!  ACRONOUN ;
+!
+!LEXICON ACRONOUN_vow
+!  ACRONOUN ;
+!
+!
+!LEXICON ACRO_ACCRA  !!= * __@CODE@__
+!  +N+Prop+ACR:   acroconnector ;
+!!     +N+Prop:%> ACCRADECL     ;
+!
+!LEXICON ACRO_BERN
+!  +N+Prop+ACR:   acroconnector ;
+!!     +N+Prop:%> BERN-UCASE    ;
+!
+!LEXICON ACRO_LONDON
+!  +N+Prop+ACR:   acroconnector ;
+!!     +N+Prop:%> LONDON-UCASE  ;
+!
+!LEXICON ACRO_NYSTØ
+!  +N+Prop+ACR:   acroconnector ;
+!!     +N+Prop:%> NYSTØ-OBL     ;
+!
+!LEXICON ACRO_cons
+!  ACRO ;
+!
+!LEXICON ACRO_vow
+!  ACRO ;
+!
+!
+!LEXICON DYN_ACRO_cons
+!  DYN_ACRO ;
+!
+!LEXICON DYN_ACRO_vow
+!  DYN_ACRO ;
+!
+!
+!LEXICON DYN_ACRO
+! +N+Prop+Sem/Org+ACR+Dyn: acroconnector ;
+!
+!
+!LEXICON ACRONOUN              ! Here we add the POS tag
+! N+ACR: acroconnector ;
+!
+!LEXICON ACRO   !!= * __@CODE@__ adds +N+ACR and redicrects to acroconnector
+! +N+Prop+ACR: acroconnector ;
 
 LEXICON acroconnector_vow
   acroconnector ;
