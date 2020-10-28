@@ -21,50 +21,50 @@
 
 
 LEXICON UNIT   !!= * __@CODE@__  As acro, but without paradigm
-+N+ABBR:%> # ;
-+N+ABBR+Sg+Nom:%> # ;
-+N+ABBR+Sg+Gen:%> # ;
-+N+ABBR+Sg+Loc:%> # ;
-+N+ABBR+Ess:%> # ;
-+N+ABBR+Par:%> # ;
-+N+ABBR+Par+Use/NG:%>%:d # ;
-+N+ABBR+Pl+Nom:%> # ;
+            +N+ABBR:%>    # ;
+     +N+ABBR+Sg+Nom:%>    # ;
+     +N+ABBR+Sg+Gen:%>    # ;
+     +N+ABBR+Sg+Loc:%>    # ;
+        +N+ABBR+Ess:%>    # ;
+        +N+ABBR+Par:%>    # ;
+ +N+ABBR+Par+Use/NG:%>%:d # ;
+     +N+ABBR+Pl+Nom:%>    # ;
 
-LEXICON ACRONOUN_cons  
- ACRONOUN ;
+LEXICON ACRONOUN_cons
+  ACRONOUN ;
 
-LEXICON ACRONOUN_vow  
- ACRONOUN ;
+LEXICON ACRONOUN_vow
+  ACRONOUN ;
 
 
 LEXICON ACRO_ACCRA  !!= * __@CODE@__
-+N+Prop+ACR: acroconnector ;
-!+N+Prop:%> ACCRADECL ;
+  +N+Prop+ACR:   acroconnector ;
+!     +N+Prop:%> ACCRADECL     ;
 
 LEXICON ACRO_BERN
-+N+Prop+ACR: acroconnector ;
-!+N+Prop:%> BERN-UCASE ;
+  +N+Prop+ACR:   acroconnector ;
+!     +N+Prop:%> BERN-UCASE    ;
 
 LEXICON ACRO_LONDON
-+N+Prop+ACR: acroconnector ;
-!+N+Prop:%> LONDON-UCASE ;
+  +N+Prop+ACR:   acroconnector ;
+!     +N+Prop:%> LONDON-UCASE  ;
 
 LEXICON ACRO_NYSTØ
-+N+Prop+ACR: acroconnector ;
-!+N+Prop:%> NYSTØ-OBL ;
+  +N+Prop+ACR:   acroconnector ;
+!     +N+Prop:%> NYSTØ-OBL     ;
 
 LEXICON ACRO_cons
- ACRO ;    
+  ACRO ;
 
 LEXICON ACRO_vow
- ACRO ;    
+  ACRO ;
 
 
-LEXICON DYN_ACRO_cons 
- DYN_ACRO ;    
+LEXICON DYN_ACRO_cons
+  DYN_ACRO ;
 
-LEXICON DYN_ACRO_vow 
- DYN_ACRO ;    
+LEXICON DYN_ACRO_vow
+  DYN_ACRO ;
 
 
 LEXICON DYN_ACRO
@@ -72,36 +72,36 @@ LEXICON DYN_ACRO
 
 
 LEXICON ACRONOUN              ! Here we add the POS tag
-N+ACR: acroconnector ;
+ N+ACR: acroconnector ;
 
 LEXICON ACRO   !!= * __@CODE@__ adds +N+ACR and redicrects to acroconnector
- +N+Prop+ACR: acroconnector ;    
+ +N+Prop+ACR: acroconnector ;
 
 LEXICON acroconnector_vow
- acroconnector ;
+  acroconnector ;
 
 LEXICON acroconnector   !!= * __@CODE@__ Here comes a set of possible symbols to put between the abbreviation and its suffix
-                acronull ;    ! for Nom, Gen, Acc
-          :%: acrooblique ; ! NRK:st
-               RHyph ;       ! Here we dive over to the compounds: NRK-2, NRK-bargi
+     acronull    ; ! for Nom, Gen, Acc
+ :%: acrooblique ; ! NRK:st
+     RHyph       ; ! Here we dive over to the compounds: NRK-2, NRK-bargi
 
 LEXICON acronull   !!= * __@CODE@__  for suffixless forms, redirecting to K_only for clitic forms
-+Sg+Nom:         # ;
-+Sg+Gen:         # ;
-+Sg+Acc:         # ;
+ +Sg+Nom: # ;
+ +Sg+Gen: # ;
+ +Sg+Acc: # ;
 
 LEXICON acrooblique   !!= * __@CODE@__
- +Sg+Ill:n              # ; ! NSR:n
- +Sg+Loc:st              # ; ! NRK:st
- +Sg+Com:in             # ;
- +Ess:n                 # ;	! NBR:n
- +Par:d                 # ;
- +Pl+Nom:t              # ;
- +Pl+Gen:id            # ;
- +Pl+Acc:id            # ;
- +Pl+Ill:id            # ;
- +Pl+Loc:in             # ;
- +Pl+Com:igijn          # ;
+ +Sg+Ill:n     # ; ! NSR:n
+ +Sg+Loc:st    # ; ! NRK:st
+ +Sg+Com:in    # ;
+    +Ess:n     # ; ! NBR:n
+    +Par:d     # ;
+ +Pl+Nom:t     # ;
+ +Pl+Gen:id    # ;
+ +Pl+Acc:id    # ;
+ +Pl+Ill:id    # ;
+ +Pl+Loc:in    # ;
+ +Pl+Com:igijn # ;
 
 !------Der/ár------
-! +Der1+Der/ár+CmpN/SgN+CmpN/SgG+CmpN/PlG+Use/-Spell:»ár GAHPIRLONG ;  !
+! +Der1+Der/ár+CmpN/SgN+CmpN/SgG+CmpN/PlG+Use/-Spell:»ár   GAHPIRLONG ; !
