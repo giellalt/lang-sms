@@ -155,7 +155,7 @@ LIST Der1 = Der1 ;
 LIST Der2 = Der2 ;
 LIST Der3 = Der3 ;
 LIST Err/GenreLeudd = Err/GenreLeudd ;
-
+LIST Cmp = Cmp ;#2020-11-08 Jaska
 
 LIST @CNP = @CNP ;
 LIST @CVP = @CVP ;
@@ -221,6 +221,7 @@ LIST @TITLE = @TITLE ;
 LIST @VOC = @VOC ; 
 LIST @X = @X ;
 
+LIST PO-WITH-GEN = "âʹlnn" "kuâŋŋa" "luzz" "mieʹldd" "ool" "åʹrnn" ;
 LIST REAL-TITLE = "prof" "cand.philol" ;
 LIST OFFICE = "gånka" ;
 SET TITLE = REAL-TITLE OR OFFICE ; 
@@ -452,6 +453,10 @@ SECTION
 
 # Cycle 0
 
+# čääʹcckaʹlddi take whole word when available
+REMOVE:CmpWhenWholePresent Cmp ;
+
+
 REMOVE:R_Num Num (0 Neg);
 REMOVE:R_ACR ACR (0 CC);
 	## Im leah naan saemieskuvlesne vaadtseme.
@@ -478,10 +483,20 @@ IFF:S_Interj Interj (-1 BOS)(1 EOS OR CLB) ;
 
 # Possessive suffix
 # Probably exists only for Refl and for kinship terms
+# In Skolt Sami Possessive suffixes ARE USED Jaska 2020-11-08
+
 
 REMOVE:PrfPrc_Not_PxSg1 PxSg1 IF (0 PrfPrc);
 	## Mijjieh saemieh daarah aaj aalkeme gærjah lohkedh.
 	
+# Pronouns and nouns
+# lij tõn niõđ teâđstam 2020-11-08 Jaska
+REMOVE:NPlNomIfPreceedingDemNotPL Pl IF ((-1 Dem + Sg + Acc) OR (-1 Dem + Sg + Gen)) ;
+
+# Postpostions
+#ja mõʹnne čääʹcckaʹlddi luzz.
+SELECT:GenWhenFollowedByGenPo Gen IF (1 PO-WITH-GEN) ;
+
 # Short Pronouns
 
 
