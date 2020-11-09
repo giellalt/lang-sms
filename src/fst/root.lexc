@@ -822,7 +822,8 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !! The Usage extents are marked using following tags:
 
  +Err/Orth        !!= * @CODE@  substandard, not in normative fst
- +Err/Orth-k-kh         !!≈ * __@CODE@__ substandard, not in normative fst
+ +Err/Orth-k-kh         !!≈ * __@CODE@__ substandard k, not in normative fst ǩ
+ +Err/Orth-a-y         !!≈ * __@CODE@__ substandard a, not in normative fst â
  +Err/Lex         !!≈ * __@CODE@__ substandard, not in normative fst, no normative lemma
  +Err/DerSub      !!≈ * __@CODE@__ substandard for derivation, not in normative fst, no normative lemma
  +Err/CmpSub      !!≈ * __@CODE@__ substandard for compounding, not in normative fst (wrong form or POS in first part)
@@ -1028,46 +1029,46 @@ LEXICON CS-TEMP_
 LEXICON NUM_
  : # ;
 LEXICON NUM_VAHTT
- : #         ;
+! : #         ;
  : NMN_VAHTT ;
 
 LEXICON NUM_ALGG
- : #        ;
+! : #        ;
  : NMN_ALGG ;
 LEXICON NUM_AUTT
- : #        ;
+! : #        ;
  : NMN_AUTT ;
 LEXICON NUM_TOLL
- : #        ;
+! : #        ;
  : NMN_TOLL ;
 LEXICON NUM_PAPP
- : #        ;
+! : #        ;
  : NMN_PAPP ;
 LEXICON NUM_AELDD
- : #         ;
+! : #         ;
  : NMN_AELDD ;
 LEXICON NUM_KUEQLL
- :%^PALE%^PAL #          ;
+! :%^PALE%^PAL #          ;
  :            NMN_KUEQLL ;
 LEXICON NUM_TAQHTT
- :%^PAL #          ;
+! :%^PAL #          ;
  :            NMN_TAQHTT ;
 LEXICON NUM_KUEQHTT !!= * @CODE@ kueʹhtt:kuâhtt
- :%^PALE%^PAL #           ;
+! :%^PALE%^PAL #           ;
  :            NMN_KUEQHTT ;
 LEXICON NUM_NELLJ
- : #         ;
+! : #         ;
  : NMN_NELLJ ;
 
 LEXICON NUM_AANAR
- : #         ;
+! : #         ;
  : NMN_AANAR ;
 
 LEXICON NUM_ATOM
- : #         ;
+! : #         ;
  : NMN_ATOM ;
 LEXICON NUM_JEAQNNN
- :%^PAL #         ;
+! :%^PAL #         ;
  : NMN_JEAQNNN ;
 
 
@@ -1101,6 +1102,10 @@ LEXICON ADP_
  PR_ ;
 LEXICON PO_
  +Po: # ;
+LEXICON PO-ILL_
++Po+Ill: # ;
+LEXICON PO-LOC_
++Po+Loc: # ;
 
 LEXICON ADP-GOV-LOC_
  +Po+%<loc%>: # ;
