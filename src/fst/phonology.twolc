@@ -321,6 +321,8 @@ CNeutrGrade = [([(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:] |[%^C2CC:] |%
 NeutrGrade = [VNeutrGrade |CNeutrGrade] ; !!= * @CODE@
 !! }}}
 
+NoVowRaise = \[ %^VOWRaise: | #]* [#|.#.] ;
+
 SurfaceDiphthong = [ :e :ä | :e :â | :i :õ | :i :â | :i :e | :i :ẹ | :u :â | :u :õ | :u :å | :u :ä | :u :e | :u :ẹ ] ;
 
 !! * X3 = C Vx Cx Cx     C Vx Vy Cx ˈ Cx
@@ -998,7 +1000,7 @@ OnSetC u: _   (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|r d d:
 
 ! juʹrdded > joordam
    OnSetC _ (%^1VOW:0|%^1VOW:â)  (u:|i:) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] (%^V2VV:) %^VOWLower:  (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
-   OnSetC _ (%^1VOW:0|%^1VOW:â) ((ʹ:|%{ʹØ%}:) (v:u|j:i)) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWLower:  (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
+   OnSetC _ (%^1VOW:0|%^1VOW:â) ((ʹ:|%{ʹØ%}:) (h:|v:u|j:i)) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] BetweenStemAndHeight %^VOWLower:  (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
 ! diphthong opening after u
         u _ (i) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: [ BetweenPALNoAndMorph |%^PAL:|%^PALNo:] ;
 !! kuõskkâd+V+Ind+Prs+Sg3
@@ -1185,8 +1187,9 @@ OnSetC u: _   (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|r d d:
 "Even syllabic verbs I, relative vowel lengthening %^1VOW:å"
 !! __@RULENAME@__ - deriving
  %^1VOW:å <=>
-   OnSetC [å|o:å|Å|O:Å] _ (u:|i:|h:u|v:u) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ %^V2VV: ( %^VOWLower: ) ;
-   OnSetC [å|Å] _ (u:|i:|h:u|v:u) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ (Vow: [Cns:* (%{XC%}:)] %^Pen:) %^V2VV: ;
+   OnSetC [o:å|Å|O:Å] _ (u:|i:|h:u|v:u) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ %^V2VV:  %^VOWLower:  ;
+!   OnSetC [å|o:å|Å|O:Å] _ (u:|i:|h:u|v:u) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ %^V2VV: ( %^VOWLower: ) ;
+   OnSetC [å|Å] _ (u:|i:|h:u|v:u) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ (Vow: [Cns:* (%{XC%}:)] %^Pen:) %^V2VV: NoVowRaise ;
 !! sååbbar+N+Sg+Nom
 !!€ så%^1VOWbbar%^Pen%^V2VV
 !!€ sååbbar00
