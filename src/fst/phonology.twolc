@@ -233,6 +233,7 @@ Dummy = %^PAL %^PALE %^PALẸ %^PALÕ %^PALÄ
  %^VOWRaise %^VOWSH %^CLong %^K2GG ; !!= * @CODE@ dummies in Sg.Nom and Sg.Gen
 
 
+
 !! !!Definitions
 
 Definitions
@@ -322,6 +323,8 @@ NeutrGrade = [VNeutrGrade |CNeutrGrade] ; !!= * @CODE@
 !! }}}
 
 NoVowRaise = \[ %^VOWRaise: | #]* [#|.#.] ;
+
+NoCnsDummy = \[ %^CC2C: | %^CCC2C: | %^CCC2CC: | %^XYY2IY: | %^XYY2XY: | %^KK2GG: | %^XYY2VY: | %^KKK2GG: | %^KKK2ZERO: | %^C2CC: | %^J2I: | %^RmCns: | %^K2GG: | # ]* ;
 
 SurfaceDiphthong = [ :e :ä | :e :â | :i :õ | :i :â | :i :e | :i :ẹ | :u :â | :u :õ | :u :å | :u :ä | :u :e | :u :ẹ ] ;
 
@@ -792,7 +795,7 @@ OnSetC  ẹ: _ (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^V
 "Diphthong raising beginning with e:i ä:ẹ"
 !! __@RULENAME@__ - used in
  ä:ẹ <=>
-  [u|e:]  _ (i|u) [:ʹ|%{ʹØ%}:ʹ] [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+]  BetweenStemAndHeight (%^VOWRaise:) %^PALẸ: %^PAL: ;
+  [u|e:]  _ (i|u) [:ʹ|%{ʹØ%}:ʹ] [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+]  BetweenStemAndHeight (%^VOWRaise:) %^PALẸ: (%^PAL:) ;
 !!€ čuä{ʹØ}ckk^PALẸ^PAL^XYY2XY>es
 !!€ čuẹʹcǩ0000>es
 !!€ suä{ʹØ}kk^PALẸ^PAL^KK2GG
@@ -1845,9 +1848,13 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ|%{ʹØ%}:) t t: BetweenStemAndConsGrade %^XYY2IY: 
 "Even syllabic verbs I, cg for b"
 !! __@RULENAME@__ - used
  b:0 <=> Vow: (%^1VOW:)  [i (ʹ:|0:ʹ|%{ʹØ%}:)|(ʹ:|0:ʹ|%{ʹØ%}:) Cns: ] b _   BetweenStemAndConsGrade [(%^Allegro:) (%^PAL:) %^CC2C:|(%^Allegro:) (%^PAL:) %^CC2CAllegro:|%^XYY2XY:] ;
+  Vow: (:ˈ) %{ʹØ%}: b ˈ: _ NoCnsDummy %^CC2CAllegro: ;
 !! neiʹbb+N+Sg+Gen: __knife/veitsi__
 !!€ nẹ%^1VOWi0bb%^V2VV%^PAL%^CC2C
 !!€ neeiʹb0000
+!! vuäʹbb+N+Sg+Loc+PxSg2
+!!€ vuä%{ʹØ%}bˈb%^VOWRaise%^PALẸ%^Allegro%^PAL%^CCC2CAllegro%>stad
+!!€ vuẹʹb0000000%>stad
 !! äʹrbb+N+Sg+Gen: __heritage/perintö__
 !!€ ä%^1VOW0rbb%^V2VV%^PAL%^XYY2XY
 !!€ ääʹrb0000
