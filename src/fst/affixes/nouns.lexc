@@ -9163,7 +9163,9 @@ LEXICON NMN_SAQPPLI
 :ee PL-NOM ;
 :ee PL-OBL ;
 +Der+Der/Dimin+N: NMN_SAQPPLEEJAZH ;
-:eeja VOONYS-STEM-PX ;
+:eeja VOONYS-STEM-PX-NO-DER ;
+:eeja A_DER/ALLASH ;
++Der+Der/Dimin+N:eej N_VONNSAZH ;
 
 LEXICON N_SAQPPLEEJAZH !!= * @CODE@ säʹppleejaž:säʹppl
 !!! inflection_type="4"
@@ -9834,6 +9836,42 @@ LEXICON NMN_SAJOS
 :%>â ESS/PAR ; 
 :%{XC%}%^C2CC%>â ESS/PAR ; 
 : NMN_OBL-SAJOS ;
+
+LEXICON N_KARNDASH
+!!! inflection_type="?"
+: NMN_KARNDASH ;
+LEXICON NMN_KARNDASH
+! gradation: yes
+!! stemtype 
+!! * Yaml: __N-chaustok__
+: SG-NOM ;
+:%>â ESS/PAR ; 
+:%{XC%}%^C2CC%>â ESS/PAR ; 
+
+:%{XC%}%^K2GG SG-ABE/ACC/GEN ;
+:%{XC%}%^PAL%^C2CC%>e SG-ILL ;
++Use/NGminip+Use/NG:%{XC%}%^C2CC%>e SG-ILL ;
+:%{XC%}%^K2GG%>â SG-LOC ;
+:%{XC%}%^K2GG%> SG-COM_IN ;
+:%{XC%}%^K2GG PL-NOM ;
+:%{XC%}%^K2GG PL-OBL ;
++Der+Der/Dimin+N:%{XC%}%^K2GG N_KUUZZYZH-WITHOUT-PAL ;  !!= * @CODE@ kuuzz-
++Der+Der/Dimin+N:%{XC%}%^PAL%^K2GG N_KUUZZYZH-WITH-PAL ;  !!= * @CODE@ kuuʹzz-
++Der+Der/Dimin+N:%^PAL%^KK2GAllegro N_KUUZZYZH-WITH-PAL-ALLEGRO ;
+
+! CHECKPX 2015-10-20
+:%{XC%}%^C2CC HatY-STEM-PX-RETAIN ;
+:%{XC%}%^K2GG HatY-STEM-PX-WEAKEN ;
+:%{XC%}%^K2GG HatY-STEM-PX-WEAKEN_LARGO ;
+:%^K2GAllegro SG-LOC-PX_ALLEGRO ;
+:%{XC%}%^C2CC HatY-STEM-PX-STRENGTHEN ;
+
+! HatY-STEM-PX-RETAIN-PL ;
+! HatY-STEM-PX-WEAKEN-PL ;
+! HatY-STEM-PX-STRENGTHEN-ESS ;
+
+
+
 
 
 !! Class 6 according to Feist 153-154
@@ -12115,6 +12153,8 @@ LEXICON LOAOADDAZH-STEM-PX-STRENGTHEN-WITHOUT-PAL
 LEXICON VOONYS-STEM-PX !!= * @CODE@ võnns-
  A_DER/ALLASH ;
 +Der+Der/Dimin+N: N_VONNSAZH ;
+VOONYS-STEM-PX-NO-DER ;
+LEXICON VOONYS-STEM-PX-NO-DER !!= * @CODE@ võnns-
 VOONYS-STEM-PX-RETAIN-WITHOUT-PAL ;
  VOONYS-STEM-PX-RETAIN-WITHOUT-PAL-PL ;
  VOONYS-STEM-PX-RETAIN-WITH-PAL ;
