@@ -20,7 +20,7 @@ more than one character, and it contains the initial **Root** lexicon.
  * **+Interj** = Interjection
  * **+N	** = Noun
  * **+Num	** = Numeral
- * **+Po	** = Postposition 
+ * **+Po	** = Postposition
  * **+Pr	** = Preposition
  * **+Pron** = Pronoun
  * **+Pcle** = Particle
@@ -43,19 +43,19 @@ Pre-derivational POS tags for CG processing
  * **+Indef** - Indefinitive Pronoun
  * **+Coll** - Collective numerals
  * **+Arab** - Arabic numeral
- * **+Rom** - Roman numeral 
+ * **+Rom** - Roman numeral
  * **+Pass** - hallat/haddat not in use
  * **+Qnt	** - SHOULD THIS be here or a Sem/Qnt
 
- * +Pred     
+ * +Pred
  * +Attr      Attributive form
  * +Distr     Distributive
 
- * +Temp     
+ * +Temp
 
 ### Types of adverbs
 
- * +Guess    
+ * +Guess
 
 ### Number
  * +Sg	       Singular = õõutilååkk
@@ -74,27 +74,27 @@ Pre-derivational POS tags for CG processing
  * +Prl       Prolative
  * +Abe       Abessive
 
- * +Lat       Lative lääinas, säämas, toimmpââjas 
+ * +Lat       Lative lääinas, säämas, toimmpââjas
 
 
 ### Possessive suffix
- * +PxSg1     
- * +PxSg2    
- * +PxSg3    
- * +PxPl1    
- * +PxPl2    
- * +PxPl3    
+ * +PxSg1
+ * +PxSg2
+ * +PxSg3
+ * +PxPl1
+ * +PxPl2
+ * +PxPl3
 
 ### Adjective declension
- * +Comp     
- * +Superl    superlative previously Der/mos Der/umus Der/ummus 
- * **+Ord	** - 
+ * +Comp
+ * +Superl    superlative previously Der/mos Der/umus Der/ummus
+ * **+Ord	** -
 
  * +GenAttr    Genitive attribute used as adjective?
 
 ### Verb forms      Veʹrbbååʹbleʹǩ
- * +Actor    
- * +Actio    
+ * +Actor
+ * +Actio
  * +ActEss    -men
 
  * +NomAg	   CHECK ME
@@ -112,19 +112,19 @@ Valence
  * +Pot	       Potential mood
  * +Cond	       Conditional mood
  * +Imprt	       Imperative mood
- * +ImprtII      
- * +Sup	      
+ * +ImprtII
+ * +Sup
 
- * +Inf		 
+ * +Inf
  * +Ger		  gerund +Ess, +Loc +Instr
- * +Instr     -eeʹl 
- * +ConNeg		 
- * +ConNegII		 
- * +Neg		 
- * +PrsPrc		 
- * +PrfPrc		 
- * +VGen		 
- * +VAbess		 
+ * +Instr     -eeʹl
+ * +ConNeg
+ * +ConNegII
+ * +Neg
+ * +PrsPrc
+ * +PrfPrc
+ * +VGen
+ * +VAbess
 
 
 ### Person-number
@@ -165,9 +165,9 @@ just specify +Der|+Der1 .. +Der5 and you are set.
 Noun derivation
  * +Der/musj  deverbal derivation V»N architype mõš and mmuš was Der/MOsh
  * +Der/vuota  A»N -vuõtt
- * +Der/lasj   
+ * +Der/lasj
  * +Der/neqkh  N»N resident of place
- * +Der1   
+ * +Der1
 
 Verb derivation
  * +Der/InchL   incoative V»V -škueʹtted
@@ -237,7 +237,7 @@ get the same pronunciation whether read as SME or NOB/NNO/SWE.
  * +Sem/Adr          = Webadr
  * +Sem/Amount       = Amount
  * +Sem/Ani       Animate	    (names)
- * +Sem/Ani-fish  Animate	 
+ * +Sem/Ani-fish  Animate
  * +Sem/Aniprod      = Animal Product
  * +Sem/Ant       Anthroponym  (names)
  * +Sem/Body         = Bodypart
@@ -248,7 +248,7 @@ get the same pronunciation whether read as SME or NOB/NNO/SWE.
  * +Sem/Clth         = Clothes
  * +Sem/Clth-jewl    = Jewelery
  * +Sem/Clth-part    = part of clothes, boallu, sávdnji...
- * +Sem/Constellation    
+ * +Sem/Constellation
  * +Sem/Ctain        = Container
  * +Sem/Ctain-abstr  = Abstract container like bank account
  * +Sem/Ctain-clth   = Soft container, like a rucksack
@@ -271,12 +271,12 @@ get the same pronunciation whether read as SME or NOB/NNO/SWE.
  * +Sem/Game         = Game
  * +Sem/Geom         = Geometrical object
  * +Sem/Group        = Animal or Human Group
- * +Sem/Holiday   
+ * +Sem/Holiday
  * +Sem/Hum          = Human
  * +Sem/Hum-abstr    = Human abstract
  * +Sem/Ideol        = Ideology
  * +Sem/Kin    for deprication to Sem/Hum-kin
- * +Sem/Hum-kin    = 
+ * +Sem/Hum-kin    =
  * +Sem/Lang         = Language
  * +Sem/Mal          = Male name
  * +Sem/Mat          = Material for producing things
@@ -313,9 +313,9 @@ get the same pronunciation whether read as SME or NOB/NNO/SWE.
  * +Sem/Route        = Route
  * +Sem/Rule         = Rule or convention
  * +Sem/Semcon       = Semantic concept
- * +Sem/Sign	       = Sign (e.g. numbers, punctuation) 
+ * +Sem/Sign	       = Sign (e.g. numbers, punctuation)
  * +Sem/Sport       = Sport
- * +Sem/State		   = 
+ * +Sem/State		   =
  * +Sem/State-sick   = Illness
  * +Sem/Substnc      = Substance, like Air and Water
  * +Sem/Sur       Surname	    (names)
@@ -334,186 +334,186 @@ get the same pronunciation whether read as SME or NOB/NNO/SWE.
  * +Sem/Wthr         = The Weather or the state of ground
 
 ### Multiple Semantic tags:
- * +Sem/Act_Fruit                       
+ * +Sem/Act_Fruit
  * +Sem/Act_Group					 Activity and Group
  * +Sem/Act_Plc					   A persons job is an activity, and a place as well
  * +Sem/Act_Route					 Activity and Route, ie johtolat
  * +Sem/Amount_Build				   Amount and Building
- * +Sem/Amount_Semcon				
- * +Sem/Ani_Body-abstr_Hum			
- * +Sem/Ani_Build					
- * +Sem/Ani_Build-part				
- * +Sem/Ani_Build_Hum_Txt			
- * +Sem/Ani_Group					
- * +Sem/Ani_Group_Hum				
+ * +Sem/Amount_Semcon
+ * +Sem/Ani_Body-abstr_Hum
+ * +Sem/Ani_Build
+ * +Sem/Ani_Build-part
+ * +Sem/Ani_Build_Hum_Txt
+ * +Sem/Ani_Group
+ * +Sem/Ani_Group_Hum
  * +Sem/Ani_Group_Prod-vis
- * +Sem/Ani_Hum					
- * +Sem/Ani_Hum_Plc				
- * +Sem/Ani_Hum_Time				
- * +Sem/Ani_Plc					
- * +Sem/Ani_Plc_Txt				
- * +Sem/Ani_Time					
- * +Sem/Ani_Veh					
- * +Sem/Aniprod_Hum				
- * +Sem/Aniprod_Obj-clo			
- * +Sem/Aniprod_Perc-phys			
- * +Sem/Aniprod_Plc				
- * +Sem/Aniprod_Plc_Route				
+ * +Sem/Ani_Hum
+ * +Sem/Ani_Hum_Plc
+ * +Sem/Ani_Hum_Time
+ * +Sem/Ani_Plc
+ * +Sem/Ani_Plc_Txt
+ * +Sem/Ani_Time
+ * +Sem/Ani_Veh
+ * +Sem/Aniprod_Hum
+ * +Sem/Aniprod_Obj-clo
+ * +Sem/Aniprod_Perc-phys
+ * +Sem/Aniprod_Plc
+ * +Sem/Aniprod_Plc_Route
  * +Sem/Body-abstr_Feat-cogn
  * +Sem/Body-abstr_Prod-audio_Semcon
- * +Sem/Body_Body-abstr			
- * +Sem/Body_Clth					
- * +Sem/Body_Food					
- * +Sem/Body_Group_Hum				
+ * +Sem/Body_Body-abstr
+ * +Sem/Body_Clth
+ * +Sem/Body_Food
+ * +Sem/Body_Group_Hum
  * +Sem/Body_Group_Hum_Time
- * +Sem/Body_Hum					
- * +Sem/Body_Mat					
- * +Sem/Body_Measr					
- * +Sem/Body_Obj_Tool-catch		
- * +Sem/Body_Plc					
- * +Sem/Body_Plc-elevate			
- * +Sem/Body_Time					
- * +Sem/Build-part_Cat                 
- * +Sem/Build-part_Cat_Ctain           
- * +Sem/Build-part_Cat_Ctain_Mat       
- * +Sem/Build-part_Ctain               
- * +Sem/Build-part_Ctain_Mat           
- * +Sem/Build-part_Ctain_Obj           
- * +Sem/Build-part_Plc				
- * +Sem/Build_Build-part			
- * +Sem/Build_Clth-part			
- * +Sem/Build_Edu_Org				
+ * +Sem/Body_Hum
+ * +Sem/Body_Mat
+ * +Sem/Body_Measr
+ * +Sem/Body_Obj_Tool-catch
+ * +Sem/Body_Plc
+ * +Sem/Body_Plc-elevate
+ * +Sem/Body_Time
+ * +Sem/Build-part_Cat
+ * +Sem/Build-part_Cat_Ctain
+ * +Sem/Build-part_Cat_Ctain_Mat
+ * +Sem/Build-part_Ctain
+ * +Sem/Build-part_Ctain_Mat
+ * +Sem/Build-part_Ctain_Obj
+ * +Sem/Build-part_Plc
+ * +Sem/Build_Build-part
+ * +Sem/Build_Clth-part
+ * +Sem/Build_Edu_Org
  * +Sem/Build_Event_Org
- * +Sem/Build_Obj 			
- * +Sem/Build_Org					
- * +Sem/Build_Route				
- * +Sem/Cat_Group_Hum	                
- * +Sem/Cat_Group_Hum_Plc	            
- * +Sem/Clth-jewl_Curr				
+ * +Sem/Build_Obj
+ * +Sem/Build_Org
+ * +Sem/Build_Route
+ * +Sem/Cat_Group_Hum
+ * +Sem/Cat_Group_Hum_Plc
+ * +Sem/Clth-jewl_Curr
  * +Sem/Clth-jewl_Curr_Obj
  * +Sem/Clth-jewl_Curr_Obj_Org
  * +Sem/Clth-jewl_Fruit
- * +Sem/Clth-jewl_Money			
- * +Sem/Clth-jewl_Org				
- * +Sem/Clth-jewl_Plant			
- * +Sem/Clth_Hum					
+ * +Sem/Clth-jewl_Money
+ * +Sem/Clth-jewl_Org
+ * +Sem/Clth-jewl_Plant
+ * +Sem/Clth_Hum
  * +Sem/Clth_Obj-clo
- * +Sem/Ctain-abstr_Org			
- * +Sem/Ctain-clth_Plant			
- * +Sem/Ctain-clth_Veh				
- * +Sem/Ctain_Feat-phys			
- * +Sem/Ctain_Furn					
- * +Sem/Ctain_Plc					
- * +Sem/Ctain_Tool					
- * +Sem/Ctain_Tool-measr			
- * +Sem/Curr_Org					
- * +Sem/Dance_Org					
- * +Sem/Dance_Prod-audio			
- * +Sem/Domain_Food-med			
- * +Sem/Domain_Hum                    
- * +Sem/Domain_Prod-audio			
- * +Sem/Drink_Plant                    
- * +Sem/Edu_Event					
- * +Sem/Edu_Geom                       
- * +Sem/Edu_Group_Hum				
- * +Sem/Edu_Hum                        
- * +Sem/Edu_Mat					
- * +Sem/Edu_Org					
- * +Sem/Event_Food					
- * +Sem/Event_Hum					
- * +Sem/Event_Plc					
+ * +Sem/Ctain-abstr_Org
+ * +Sem/Ctain-clth_Plant
+ * +Sem/Ctain-clth_Veh
+ * +Sem/Ctain_Feat-phys
+ * +Sem/Ctain_Furn
+ * +Sem/Ctain_Plc
+ * +Sem/Ctain_Tool
+ * +Sem/Ctain_Tool-measr
+ * +Sem/Curr_Org
+ * +Sem/Dance_Org
+ * +Sem/Dance_Prod-audio
+ * +Sem/Domain_Food-med
+ * +Sem/Domain_Hum
+ * +Sem/Domain_Prod-audio
+ * +Sem/Drink_Plant
+ * +Sem/Edu_Event
+ * +Sem/Edu_Geom
+ * +Sem/Edu_Group_Hum
+ * +Sem/Edu_Hum
+ * +Sem/Edu_Mat
+ * +Sem/Edu_Org
+ * +Sem/Event_Food
+ * +Sem/Event_Hum
+ * +Sem/Event_Plc
  * +Sem/Event_Plc-elevate
- * +Sem/Event_Time					
- * +Sem/Feat-measr_Plc 			
- * +Sem/Feat-phys_Tool-write		
- * +Sem/Feat-phys_Veh				
- * +Sem/Feat-phys_Wthr				
- * +Sem/Feat-psych_Hum				
+ * +Sem/Event_Time
+ * +Sem/Feat-measr_Plc
+ * +Sem/Feat-phys_Tool-write
+ * +Sem/Feat-phys_Veh
+ * +Sem/Feat-phys_Wthr
+ * +Sem/Feat-psych_Hum
  * +Sem/Feat-psych_Plc
- * +Sem/Feat_Plant					
+ * +Sem/Feat_Plant
  * +Sem/Food_Obj-surfc
- * +Sem/Food_Perc-phys				
- * +Sem/Food_Plant					
- * +Sem/Fruit_Hum                      
- * +Sem/Game_Obj-play				
+ * +Sem/Food_Perc-phys
+ * +Sem/Food_Plant
+ * +Sem/Fruit_Hum
+ * +Sem/Game_Obj-play
  * +Sem/Geom_Hum_Plc
- * +Sem/Geom_Obj					
- * +Sem/Group_Hum					
- * +Sem/Group_Hum_Org				
- * +Sem/Group_Hum_Plc				
- * +Sem/Group_Hum_Prod-vis			
- * +Sem/Group_Org					
- * +Sem/Group_Prod-vis                  
- * +Sem/Group_Sign					
- * +Sem/Group_Txt					
- * +Sem/Hum_Lang					
- * +Sem/Hum_Lang_Plc				
- * +Sem/Hum_Lang_Time				
+ * +Sem/Geom_Obj
+ * +Sem/Group_Hum
+ * +Sem/Group_Hum_Org
+ * +Sem/Group_Hum_Plc
+ * +Sem/Group_Hum_Prod-vis
+ * +Sem/Group_Org
+ * +Sem/Group_Prod-vis
+ * +Sem/Group_Sign
+ * +Sem/Group_Txt
+ * +Sem/Hum_Lang
+ * +Sem/Hum_Lang_Plc
+ * +Sem/Hum_Lang_Time
  * +Sem/Hum_Mat_Tool
- * +Sem/Hum_Obj					
- * +Sem/Hum_Org					
- * +Sem/Hum_Plant					
- * +Sem/Hum_Plc					
+ * +Sem/Hum_Obj
+ * +Sem/Hum_Org
+ * +Sem/Hum_Plant
+ * +Sem/Hum_Plc
  * +Sem/Hum_Sign
- * +Sem/Hum_Tool					
+ * +Sem/Hum_Tool
  * +Sem/Hum_Tool-it                     = Human
- * +Sem/Hum_Veh					
- * +Sem/Hum_Wthr					
- * +Sem/Lang_Tool					
- * +Sem/Mat_Plant					
- * +Sem/Mat_Txt					
- * +Sem/Measr_Sign	                     = Sign (e.g. numbers, punctuation) 
- * +Sem/Measr_Time					
- * +Sem/Money_Obj					
+ * +Sem/Hum_Veh
+ * +Sem/Hum_Wthr
+ * +Sem/Lang_Tool
+ * +Sem/Mat_Plant
+ * +Sem/Mat_Txt
+ * +Sem/Measr_Sign	                     = Sign (e.g. numbers, punctuation)
+ * +Sem/Measr_Time
+ * +Sem/Money_Obj
  * +Sem/Money_Part
- * +Sem/Money_Txt					
- * +Sem/Obj-ling_Obj-surfc             
- * +Sem/Obj-play					
- * +Sem/Obj-play_Sport				
- * +Sem/Obj_Semcon					
+ * +Sem/Money_Txt
+ * +Sem/Obj-ling_Obj-surfc
+ * +Sem/Obj-play
+ * +Sem/Obj-play_Sport
+ * +Sem/Obj_Semcon
  * +Sem/Obj_Sign
- * +Sem/Obj_State					
+ * +Sem/Obj_State
  * +Sem/Obj_Symbol
- * +Sem/Obj_Veh					
+ * +Sem/Obj_Veh
  * +Sem/Oeuvre					 (not used so far (?)), note oeu-
  * +Sem/Oeuvre-txt					 (so far only Biblija, changed to Sem/Txt)
  * +Sem/Org_Prod-audio
  * +Sem/Org_Prod-cogn
  * +Sem/Org_Prod-vis
- * +Sem/Org_Rule					
- * +Sem/Org_Txt					
- * +Sem/Org_Veh					
- * +Sem/Part_Prod-cogn				
- * +Sem/Part_Substnc				
- * +Sem/Perc-emo_Wthr				
- * +Sem/Plant_Plant-part			
- * +Sem/Plant_Tool					
- * +Sem/Plant_Tool-measr			
- * +Sem/Plc-abstr_Rel_State		
- * +Sem/Plc-abstr_Route			
- * +Sem/Plc_Pos					
- * +Sem/Plc_Route					
- * +Sem/Plc_State					
- * +Sem/Plc_Substnc				
- * +Sem/Plc_Substnc_Wthr			
- * +Sem/Plc_Time					
+ * +Sem/Org_Rule
+ * +Sem/Org_Txt
+ * +Sem/Org_Veh
+ * +Sem/Part_Prod-cogn
+ * +Sem/Part_Substnc
+ * +Sem/Perc-emo_Wthr
+ * +Sem/Plant_Plant-part
+ * +Sem/Plant_Tool
+ * +Sem/Plant_Tool-measr
+ * +Sem/Plc-abstr_Rel_State
+ * +Sem/Plc-abstr_Route
+ * +Sem/Plc_Pos
+ * +Sem/Plc_Route
+ * +Sem/Plc_State
+ * +Sem/Plc_Substnc
+ * +Sem/Plc_Substnc_Wthr
+ * +Sem/Plc_Time
  * +Sem/Plc_Time_Wthr
- * +Sem/Plc_Tool-catch				
- * +Sem/Plc_Wthr					
- * +Sem/Prod-audio_Txt				
- * +Sem/Prod-cogn_Txt				
- * +Sem/Semcon_Txt					
+ * +Sem/Plc_Tool-catch
+ * +Sem/Plc_Wthr
+ * +Sem/Prod-audio_Txt
+ * +Sem/Prod-cogn_Txt
+ * +Sem/Semcon_Txt
  * +Sem/State-sick_Substnc
- * +Sem/Substnc_Wthr				
- * +Sem/Time_Wthr					
+ * +Sem/Substnc_Wthr
+ * +Sem/Time_Wthr
 
 
 
 ### Clitic
- * +Clt      
- * +Qst       Question particle -a 
- * +Qst/a     Question particle -a 
- * +Qst/ko     Question particle -ko might be used with Use/NG  
+ * +Clt
+ * +Qst       Question particle -a
+ * +Qst/a     Question particle -a
+ * +Qst/ko     Question particle -ko might be used with Use/NG
 
  * +Foc/AA	    more specifically, exactly, contrast. used with Pron and Adv
 
@@ -541,9 +541,9 @@ an extra lemma attribute is inserted in the st element, e.g. lemma="tõlvvad"
  * **+v14**
  * **+v15**
  * **+v16**
- * **+v17** 
- * **+v18** 
- * **+v19** 
+ * **+v17**
+ * **+v18**
+ * **+v19**
  * **+v20**
  * **+v21**
  * **+v22**
@@ -565,24 +565,24 @@ an extra lemma attribute is inserted in the st element, e.g. lemma="tõlvvad"
  * **+Prefix		**  prefix
 
 ### Punctuation
- * +HYPH  
+ * +HYPH
 
 ## Letters
 
 ### Skolt Saami letters
 These definitions are probably not needed
- * č  
- * đ  
- * š  
- * ŧ  
- * ž  
- * Ʒ  
- * ǥ  
- * ǧ  
- * ǩ  
- * Ǯ  
- * ǯ 
- * Ǥ 
+ * č
+ * đ
+ * š
+ * ŧ
+ * ž
+ * Ʒ
+ * ǥ
+ * ǧ
+ * ǩ
+ * Ǯ
+ * ǯ
+ * Ǥ
 
 
 ### Archiphonemes
@@ -606,30 +606,30 @@ On the TODO-list: Change all X1, X2, ... to easy-to-remember names.
 ## Consonant lengthening
 
 ## Vowel length and height
- * %{õuØ%}       
- * %{ouØ%}       
- * %{âõØ%}       
- * %{ẹiØ%}       
- * %{äaØ%}       
- * %{äåØ%}       
- * %{eiØ%}       
- * %{åoØ%}       
- * %{ẹeiØ%}      
- * %{õu%}       
- * %{ou%}       
- * %{âõ%}       
- * %{ẹi%}       
- * %{äa%}       
- * %{äå%}       
- * %{ei%}       
- * %{åo%}       
- * %{ẹei%}      
- * %{âõe%}      
- * %{âõäe%}     
+ * %{õuØ%}
+ * %{ouØ%}
+ * %{âõØ%}
+ * %{ẹiØ%}
+ * %{äaØ%}
+ * %{äåØ%}
+ * %{eiØ%}
+ * %{åoØ%}
+ * %{ẹeiØ%}
+ * %{õu%}
+ * %{ou%}
+ * %{âõ%}
+ * %{ẹi%}
+ * %{äa%}
+ * %{äå%}
+ * %{ei%}
+ * %{åo%}
+ * %{ẹei%}
+ * %{âõe%}
+ * %{âõäe%}
 
 
 CHARACTERISTIC BREAKDOWN 2015-02-17
- * %^VV2V         Shortens vowel 
+ * %^VV2V         Shortens vowel
  * %^V2VV 	       Lengthens vowel
  * %^CC2C 	       Shortens consonant
  * %^CC2CAllegro 	       Shortens consonant
@@ -645,7 +645,7 @@ CHARACTERISTIC BREAKDOWN 2015-02-17
  * %^VY2XYY	 Consonant cluster i/u to j/v
  * %^VYY2XYY	 Consonant cluster i/u to j/v
 
- * %^KKK2GG	 Geminate weakening 
+ * %^KKK2GG	 Geminate weakening
  * %^KKK2G		 Strong Geminate allegro
  * %^KK2GG		 Geminate weakening	  jokk:jooǥǥ
  * %^K2GG	 Geminate weakening čårrõs:čårrõõzz
@@ -685,18 +685,18 @@ Gradation triggers 2015.02.09 For	Consonant Clusters
 ### Diacritic with mnemonic names
 
  * %^1VOW	  vowel position and length
- * %^2VOW	 
- * %^3VOW	 
- * %^4VOW	 
- * %^5VOW   
- * %^CLong		
- * %^CShort	
- * %^CXLong	
+ * %^2VOW
+ * %^3VOW
+ * %^4VOW
+ * %^5VOW
+ * %^CLong
+ * %^CShort
+ * %^CXLong
  * %^DIADEL  deleting diacritic
  * %^DIAINS  inserting diacritic
  * %^FRICG      for causing fricative ǥ vueʹlǧǧed+V+Imp+Pl3: vuâlǥǥaz
- * %^IMPSG2	
- * %^INDPRSSG3 
+ * %^IMPSG2
+ * %^INDPRSSG3
  * %^PenVow2a	 Changes penultimate vowel to a; e:a â:a
 
  * %^P3      ... means what?
@@ -711,11 +711,11 @@ Gradation triggers 2015.02.09 For	Consonant Clusters
  * %^PALÕ	  Depalatalisation causes â:õ tiõttum
  *  %^RmVow  for removing vowels e, â, a before final consonant in stem
  *  %^UltRmVow  for removing vowels e, â, a after final consonant in stem
- * %^RmCns  for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta 
+ * %^RmCns  for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta
  * %^VC          Voicing s:z š:ž
 
  * %^VOWLower   for lowering i>e, õ>â, â>ä, u>o, o>å
- *  %^U2Õ	 	  lowers u>õ	 
+ *  %^U2Õ	 	  lowers u>õ
 
  * %^VOWRaise   for raising e>i, ä>e
 
@@ -730,11 +730,11 @@ Gradation triggers 2015.02.09 For	Consonant Clusters
  * %{A1%}          used with vuejted
  * %{E1%}          used with kåʹmrded
  * %{Â1%}          used with mainsted
- * %{%ʹ%}       archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one.
+ * `{ʹ}`       archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one.
  * %{EÂ%} 	     archiform for ie:eä variation, e.g. pieʹǩǩ+N+Sg+Ill:peâkka
 
 Hyphen at compound word boundary
- * %{%-Ø%}  Zero versus hyphen in compounding
+ * `{-Ø}`  Zero versus hyphen in compounding
  * %^Hyphen     at compound word boundary with %-
  * %^NoHyphen     at compound word boundary
 
@@ -759,9 +759,9 @@ The Usage extents are marked using following tags:
  * **+Err/Hyph** substandard for compounding, not in normative fst (should have no hyphen)
  * **+Err/SpaceCmp** used for compounds written apart - only retained in the HFST Grammar Checker disambiguation analyser
  * **+Err/Spellrelax** used to tag spellrelaxed typos (tag is inserted via flag diacritics)
- *  +Err/GenreLeudd         
- *  +Err/Orth-nom-acc         
- *  +Err/Orth-nom-gen         
+ *  +Err/GenreLeudd
+ *  +Err/Orth-nom-acc
+ *  +Err/Orth-nom-gen
 |  **+Err/MissingSpace** | in use ins smi lexc
 
  * **+Use/Marg** marginal (?)
@@ -783,8 +783,8 @@ The Usage extents are marked using following tags:
  * **+Dial/N** Nuortjärvi (KKS)
  * **+Dial/S** Suonikylä (KKS)
 
- * **+South**  
- * **+Txt**  
+ * **+South**
+ * **+Txt**
 
 
 
@@ -846,20 +846,20 @@ given the proper use of these flags.
 # Basic lexica, pointing to the other lexicon files
 
 
- * LEXICON Root 	  
+ * LEXICON Root
  *     Abbreviation          ;  abbreviations
- *     Adposition            ; 
- * @U.Cap.Obl@    ProperNoun            ; 
- * @U.Cap.Opt@    ProperNoun            ; 
+ *     Adposition            ;
+ * @U.Cap.Obl@    ProperNoun            ;
+ * @U.Cap.Opt@    ProperNoun            ;
 
- *     VerbRoot              ; 
- *     Subjunction           ; 
- *     Conjunction           ; 
- *     Interjection          ; 
- *     Pronoun               ; 
- *     Punctuation           ; 
- *     Symbols               ; 
- *     Particle              ; 
+ *     VerbRoot              ;
+ *     Subjunction           ;
+ *     Conjunction           ;
+ *     Interjection          ;
+ *     Pronoun               ;
+ *     Punctuation           ;
+ *     Symbols               ;
+ *     Particle              ;
 
  *     NEG-COPULA		  ;  This is for 3rd person iʹlla
 This generates from merged materials
