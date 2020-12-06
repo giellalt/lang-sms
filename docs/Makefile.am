@@ -2,33 +2,33 @@
 ## Copyright: Sámediggi/Divvun/UiT
 ## Licence: GPL v3+
 
-# List all jspwiki files that should be created from source files in the
+# List all md files that should be created from source files in the
 # JSP_PAGES variable. The filename pattern is as follows:
 #
-# dir/filename.lexc => filename-dir.jspwiki
+# dir/filename.lexc => filename-dir.md
 
-JSP_PAGES=root-morphology.jspwiki \
-		  adjectives-affixes.jspwiki       \
-		  adjectives-stems.jspwiki         \
-		  adpositions-stems.jspwiki        \
-		  adverbs-stems.jspwiki            \
-		  conjunctions-stems.jspwiki \
-		  interjections-stems.jspwiki \
-		  nouns-affixes.jspwiki \
-		  nouns-stems.jspwiki \
-		  numerals-stems.jspwiki           \
-		  particles-stems.jspwiki \
-		  pronouns-stems.jspwiki \
-		  propernouns-affixes.jspwiki      \
-		  punctuation-stems.jspwiki        \
-		  sms-propernouns-stems.jspwiki        \
-		  subjunctions-stems.jspwiki       \
-		  verbs-affixes.jspwiki \
-		  verbs-stems.jspwiki \
-		  phonology-morphology.jspwiki
-# clitics-morphology.jspwiki       \
-# compounding-morphology.jspwiki   \
-# abbreviations-stems.jspwiki      \
-# acronyms-stems.jspwiki           \
-# smi-propernouns-stems.jspwiki    \
-include $(top_srcdir)/../giella-core/am-shared/doc-dir-include.am
+MD_PAGES=root-morphology.md \
+		  adjectives-affixes.md       \
+		  adjectives-stems.md         \
+		  adpositions-stems.md        \
+		  adverbs-stems.md            \
+		  conjunctions-stems.md \
+		  interjections-stems.md \
+		  nouns-affixes.md \
+		  nouns-stems.md \
+		  numerals-stems.md           \
+		  particles-stems.md \
+		  pronouns-stems.md \
+		  propernouns-affixes.md      \
+		  sms-propernouns-stems.md        \
+		  subjunctions-stems.md       \
+		  verbs-affixes.md \
+		  verbs-stems.md \
+		  phonology-morphology.md
+# clitics-morphology.md       \
+# punctuation-stems.md        \
+# compounding-morphology.md   \
+# abbreviations-stems.md      \
+# acronyms-stems.md           \
+# smi-propernouns-stems.md
+include $(top_srcdir)/../giella-core/am-shared/docs-dir-include.am
