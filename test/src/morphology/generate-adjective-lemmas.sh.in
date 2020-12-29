@@ -97,11 +97,11 @@ for f in $fsttype; do
 ###### Test non-comopunds: #######
 		# generate nouns in Singular, extract the resulting generated lemma,
 		# store it:
-# Generer lemmaer i adjectives med +N+Sg+Nom, lagre i generated-adjectives
+# Generer lemmaer i adjectives med +A+Sg+Nom, lagre i generated-adjectives
         sed 's/$/+A+Sg+Nom/' $lemmas | $lookup_tool $generator_file.$suffix | \
           cut -f2 | grep -v "A+" | grep -v "^$" | sort -u > $generated_lemmas.$f.txt		
 		
-# Generer plurale lemmaer i filtered-adjectives med +N+Pl+Nom (som ikke lar seg generer med +N+Sg+Nom).
+# Generer plurale lemmaer i filtered-adjectives med +N+Pl+Nom (som ikke lar seg generer med +A+Sg+Nom).
 # Lagre dem i generated-adjectives
 		sed 's/$/+A+Sg+Nom/' $lemmas | $lookup_tool $generator_file.$suffix | \
 		cut -f2 | grep "A+" | cut -d "+" -f1 | sed 's/$/+A+Pl+Nom/' | \
