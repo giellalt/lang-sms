@@ -2022,9 +2022,9 @@ No Allegro (10) 2015-12-04
  * :%^VOWRaise%^PALÕ%^PAL%> FOR-VSUF-PRSPRC_ED ;  (11) puõʹtti
 
 
- * LEXICON V_JIEAQLLED  jieʹlled:jeäll
- * LEXICON IV_JIEAQLLED  jieʹlled:jeäll
- * LEXICON V0_JIEAQLLED  jieʹlled:jeäll
+ * LEXICON V_JIEAQLLED  jieʹlled:jeä%{ʹØ%}ll
+ * LEXICON IV_JIEAQLLED  jieʹlled:jeä%{ʹØ%}ll
+ * LEXICON V0_JIEAQLLED  jieʹlled:jeä%{ʹØ%}ll
 like: V_PIEAQKHKHED
 
 Strong-HighVowel-Palatalization

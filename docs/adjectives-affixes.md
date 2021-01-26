@@ -341,10 +341,10 @@ muõrâž:muõr
 
 
 Class 12 Feist 163
- * +Comp:»ba A-02_SG-ILL ;  Sammallahti (1991: 188)
- * +Comp:»be A-02_SG-LOC ;  Sammallahti (1991: 188)
- * +Comp:»b A-02_SG-COM_IN ;  Sammallahti (1991: 188)
- * +Comp:»b A-02_PL-OBL ;  Sammallahti (1991: 188)
+ * +Der+Der/Comp:»ba A-02_SG-ILL ;  Sammallahti (1991: 188)
+ * +Der+Der/Comp:»be A-02_SG-LOC ;  Sammallahti (1991: 188)
+ * +Der+Der/Comp:»b A-02_SG-COM_IN ;  Sammallahti (1991: 188)
+ * +Der+Der/Comp:»b A-02_PL-OBL ;  Sammallahti (1991: 188)
 
 
 Sammallahti 2010: 151
