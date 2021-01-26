@@ -1,9 +1,6 @@
 
 
 # Skolt Sámi morphological analyser
-Here's a list of links to the page for each file of source code. All pages are concatenated and can be found as [sms.html].
-
-
 * [root-morphology.md](root-morphology.md)
 * [adjectives-affixes.md](adjectives-affixes.md)
 * [adjectives-stems.md](adjectives-stems.md)

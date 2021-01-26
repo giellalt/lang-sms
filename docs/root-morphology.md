@@ -25,6 +25,7 @@ more than one character, and it contains the initial **Root** lexicon.
  * **+Pron** = Pronoun
  * **+Pcle** = Particle
  * **+V	** = Verb
+ * **+Aux	** = Auxiliary
 
 Pre-derivational POS tags for CG processing
  * **+Ex/N** = Noun stem before derivation
