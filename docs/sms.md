@@ -13293,19 +13293,19 @@ The rule file for Skolt Saami is divided into 5 main types:
 
 ## Alphabet
 
- *   a b c d e f g h i j k l m n o p q r s t u v w x y z
- *   A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
- *   ä å â õ
- *   Ä Å Â Õ
- *   č ǩ ǯ ǧ ž đ ǥ ʒ š ŋ
- *   Č Ǩ Ǯ Ǧ Ž Đ Ǥ Ʒ Š Ŋ
+ *   a b c d e f g h i j k l m n o p q r s t u v w x y z 
+ *   A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
+ *   ä å â õ      
+ *   Ä Å Â Õ       
+ *   č ǩ ǯ ǧ ž đ ǥ ʒ š ŋ					
+ *   Č Ǩ Ǯ Ǧ Ž Đ Ǥ Ʒ Š Ŋ					
  *   ẹ   	      	    Pedagogical purposes
  *   Ẹ		    Pedagogical purposes
 
- *   æ ø ö á é í
- *   Æ Ø Ö Á
- *   É Ó Ú Í À È Ò Ù Ì Ë Ü Ï Ê Ô Û Î Ã Ý þ Ñ Ð
- *   é ó ú í à è ò ù ì ë ü ï ê ô û î ã ý þ ñ ð ß ª ß ç
+ *   æ ø ö á é í					
+ *   Æ Ø Ö Á						
+ *   É Ó Ú Í À È Ò Ù Ì Ë Ü Ï Ê Ô Û Î Ã Ý þ Ñ Ð		
+ *   é ó ú í à è ò ù ì ë ü ï ê ô û î ã ý þ ñ ð ß ª ß ç	
 
 
 * MODIFIER LETTER PRIME: U+02B9 suprasegmental palatization
@@ -13388,15 +13388,15 @@ Other vowel length and consonant length will be phased out
  *  %{Â1%}:0  used with "mainsted" to tell (a story)
  *  %{A1%}:0  used with "vuejted" to drive (causative)
  *  %{E1%}:0  used with "kåʹmrded" to bow
- *  `{ʼ}:`  archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one.
+ *  %{ʼ%}:0  archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one.
  *  %{EÂ%}:e  archiform for ie:eâ variation
- *  %^IMPSG2:0
- *  %^INDPRSSG3:0
+ *  %^IMPSG2:0	
+ *  %^INDPRSSG3:0  
  *  %^PenVow2a:0	 Changes penultimate vowel to a; e:a â:a
- *  %^FRICG:0
+ *  %^FRICG:0	
 
 Hyphen at compound word boundary
- * `{-Ø}`:0  Zero versus hyphen in compounding
+ * %{-Ø%}:0  Zero versus hyphen in compounding
  * %^Hyphen:0     at compound word boundary with %-
  * %^NoHyphen:0     at compound word boundary
 
@@ -13415,17 +13415,17 @@ End of alphabet definitions
 
 ## Sets
 
- *           B C D F G H J K L M N P Q R S T V W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
- *           B C D F G H J K L M N P Q R S T W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
+ *           B C D F G H J K L M N P Q R S T V W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ; 
+ *           B C D F G H J K L M N P Q R S T W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;   
 
- *           B C D F G H K L M N P Q R S T V W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
+ *           B C D F G H K L M N P Q R S T V W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;   
 
- *  Vow	= a e ẹ i o u å ä â õ
- *           A E Ẹ I O U Å Ä Â Õ ;
+ *  Vow	= a e ẹ i o u å ä â õ           	      	      	      	        
+ *           A E Ẹ I O U Å Ä Â Õ ;	    				        
 
- *  	  B C D F G H K L M N P Q R S T W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
+ *  	  B C D F G H K L M N P Q R S T W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;     
 
- *            B C F G H J K M N P Q S T V W X Z Đ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
+ *            B C F G H J K M N P Q S T V W X Z Đ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;        
 
 
  *  %^VOWRaise %^VOWSH %^CLong %^K2GG ;  dummies in Sg.Nom and Sg.Gen
@@ -13444,7 +13444,7 @@ Penultimate consonant
 
 following morpheme or word boundary
 ```
- * RBound = [(%^Hyphen: %-|%^NoHyphen:|{-Ø}:) #:|.#.|%>|»](%-) ;
+ * RBound = [(%^Hyphen: %-|%^NoHyphen:|%{-Ø%}:) #:|.#.|%>|»](%-) ; 
 ```
 
 
@@ -13483,7 +13483,7 @@ used in compounding Cmp/SgNom and Cmp/SgGen
 
 neutral to vowel height and backness
 ```
- * NeutrHighBack = [(%^VOWLower:](%^VOWRaise:) ) ;
+ * NeutrHighBack = [(%^VOWLower:](%^VOWRaise:) ) ; 
 ```
 
 neutral to vowel length
@@ -13492,7 +13492,7 @@ neutral to consonant length
 ```
 neutral to vowel and consonant length
 ```
- * NeutrGrade = [VNeutrGrade ](CNeutrGrade) ;
+ * NeutrGrade = [VNeutrGrade ](CNeutrGrade) ; 
 ```
 
 
@@ -13712,7 +13712,7 @@ deriving +Ind+Prt+Sg1, +Ind+Prt+Sg2 +Ind+Prt+Pl3 in teevvad:tivvu
 * *šu0mm00>u*
 
 **Vowel raising %{õu%}:u** - Adding
-tõlvvad+V+Pass+PrfPrc:
+tõlvvad+V+Pass+PrfPrc: 
 * *t{õu}{õuØ}lvv^VOWRaise>um*
 * *tu0lvv0>um*
 
@@ -14235,7 +14235,7 @@ Oulu+N+Prop+Sg+Ill
 * *Oulu%^1VOW%^V2VVʹje*
 * *Ouluu0ʹje*
 
-**Word-final vowel ö** -
+**Word-final vowel ö** - 
 Enontekiö+N+Prop+Sg+Ill
 * *Enontekiö%^1VOW%^V2VVʹje*
 * *Enontekiöö0ʹje*
@@ -15010,7 +15010,7 @@ reäiʹǧǧ+N+Pl+Nom
 **Orthographic Consonant lengthening Weak to strong %{XC%}:Cx** - used in
 * *čââʹlmtẹ^1VOWm{XC}^C2CC>a*
 * *čââʹlmtẹ0mm0>a*
-kaađneǩ+N+Sg+Gen
+kaađneǩ+N+Sg+Gen 
 * *kaađnẹ%^1VOW{ʹØ}ǩ{XC}%^PALNo%^C2CC>a*
 * *kaađnẹ00kk00>a*
 
@@ -15130,7 +15130,7 @@ tuâjj+N+Cmp/SgNom+Cmp#joukk+N+Sg+Nom:  **team/työryhmä**
 * ★*tuâjj#joukk* (is not standard language)
 * ★*tuâjj#joukk* (is not standard language)
 sääʹmm+N+Cmp/SgGen+Cmp#musikk+N+Sg+Nom: **Skolt Sámi music/kolttamusiikki**
-sää0mm%PAL%^CC2C{-Ø}#musikk
+sää0mm%PAL%^CC2C%{-Ø%}#musikk
 sääʹm000%-#musikk
 
 
