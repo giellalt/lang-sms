@@ -13,36 +13,36 @@
     <div id="header">
       <div id="engine" abbreviation="to">
         <div id="toolversion">n/a</div>
-        <div id="processing" memoryusage="n/a" usertime="28.675" realtime="29.211" systime="0.362" words_per_sec="11.06"> </div>
+        <div id="processing" memoryusage="n/a" usertime="36.755" realtime="38.54" systime="1.099" words_per_sec="8.38"> </div>
       </div>
-      <div id="lexicon" version="sms, desktop, version 0.1.1, 03.02.2021-1430"> </div>
+      <div id="lexicon" version="sms, desktop, version 0.1.1, 12.02.2021-1036"> </div>
       <div id="document">typos.txt</div>
-      <div id="timestamp">20210211-1303</div>
+      <div id="timestamp">20210212-1044</div>
       <div id="truefalsesummary" wordcount="323">
         <div id="originals" correct="0" error="323"> </div>
-        <div id="spellers" correct="14" error="309"> </div>
-        <div id="positives" true="309" false="0"> </div>
-        <div id="negatives" true="0" false="14"> </div>
+        <div id="spellers" correct="23" error="300"> </div>
+        <div id="positives" true="300" false="0"> </div>
+        <div id="negatives" true="0" false="23"> </div>
         <div id="precisions">1.00</div>
-        <div id="recall">0.96</div>
-        <div id="accuracy">0.96</div>
+        <div id="recall">0.93</div>
+        <div id="accuracy">0.93</div>
       </div>
       <div id="suggestionsummary">
-        <div id="sugg1" editdist1="141" editdist2="39" editdist3plus="6"> </div>
-        <div id="sugg2" editdist1="19" editdist2="9" editdist3plus="1"> </div>
-        <div id="sugg3" editdist1="4" editdist2="0" editdist3plus="0"> </div>
-        <div id="sugg4" editdist1="0" editdist2="1" editdist3plus="0"> </div>
+        <div id="sugg1" editdist1="156" editdist2="41" editdist3plus="6"> </div>
+        <div id="sugg2" editdist1="22" editdist2="6" editdist3plus="1"> </div>
+        <div id="sugg3" editdist1="7" editdist2="4" editdist3plus="0"> </div>
+        <div id="sugg4" editdist1="2" editdist2="0" editdist3plus="0"> </div>
         <div id="sugg5" editdist1="0" editdist2="1" editdist3plus="0"> </div>
-        <div id="suggbelow5" editdist1="0" editdist2="1" editdist3plus="0"> </div>
-        <div id="nosugg" editdist1="8" editdist2="5" editdist3plus="2"> </div>
-        <div id="badsuggs" editdist1="40" editdist2="13" editdist3plus="7"> </div>
-        <div id="averageposition">0.70</div>
-        <div id="averagesuggs_with_correct">8.44</div>
-        <div id="top1pos_percent">62.78</div>
-        <div id="top5pos_percent">74.11</div>
-        <div id="allpos_percent">74.43</div>
-        <div id="nosugg_percent">4.85</div>
-        <div id="badsugg_percent">20.71</div>
+        <div id="suggbelow5" editdist1="0" editdist2="2" editdist3plus="0"> </div>
+        <div id="nosugg" editdist1="5" editdist2="1" editdist3plus="1"> </div>
+        <div id="badsuggs" editdist1="18" editdist2="7" editdist3plus="8"> </div>
+        <div id="averageposition">0.97</div>
+        <div id="averagesuggs_with_correct">8.61</div>
+        <div id="top1pos_percent">70.33</div>
+        <div id="top5pos_percent">84.67</div>
+        <div id="allpos_percent">85.33</div>
+        <div id="nosugg_percent">2.33</div>
+        <div id="badsugg_percent">12.33</div>
       </div>
     </div>
     <table id="results">
@@ -296,17 +296,18 @@
         <td class="expected">budjetâsttmõʹšše</td>
         <td class="edit_dist">1</td>
         <td class="position">2</td>
-        <td class="suggestions" count="9">
+        <td class="suggestions" count="10">
           <ul>
             <li class="suggestion">budjetâʹsttmõʹžže</li>
             <li class="suggestion" expected="yes">budjetâsttmõʹšše</li>
-            <li class="suggestion">budjetâʹststmõʹžže</li>
-            <li class="suggestion">budjetâʹsttmõʹžžed</li>
-            <li class="suggestion">budjetâʹsttmõʹžžen</li>
             <li class="suggestion">budjetâʹsttmiʹžže</li>
+            <li class="suggestion">budjetâʹsttmõʹžžen</li>
+            <li class="suggestion">budjetâʹsttmõʹžžed</li>
+            <li class="suggestion">budjetâʹststmõʹžže</li>
             <li class="suggestion">budjetâsttmõšše</li>
             <li class="suggestion">budjetâsttmuʹšše</li>
             <li class="suggestion">-budjetâsttmõʹšše</li>
+            <li class="suggestion">budjettõsttmõʹšše</li>
           </ul>
         </td>
         <td/>
@@ -338,13 +339,26 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="0">
+      <tr class="word" corrsugg="1">
         <td class="original" status="error" speller="error">ceerkavlaulljid</td>
         <td>TP</td>
         <td class="expected">ceerkavlaullʼjid</td>
         <td class="edit_dist">1</td>
-        <td class="position">0</td>
-        <td/>
+        <td class="position">1</td>
+        <td class="suggestions" count="10">
+          <ul>
+            <li class="suggestion" expected="yes">ceerkavlaullʼjid</li>
+            <li class="suggestion">ceerkavläulljid</li>
+            <li class="suggestion">ceerkavnaulljid</li>
+            <li class="suggestion">ceerkavkaulljid</li>
+            <li class="suggestion">ceerkavlaullʼji</li>
+            <li class="suggestion">ceerkavlaullʼjed</li>
+            <li class="suggestion">ceerkavlaullʼjin</li>
+            <li class="suggestion">ceerkavlaullʼjâd</li>
+            <li class="suggestion">ceerkavläullʼjid</li>
+            <li class="suggestion">ceerkavlaullʼjaid</li>
+          </ul>
+        </td>
         <td/>
         <td/>
         <td/>
@@ -380,12 +394,12 @@
             <li class="suggestion">ceälkkam</li>
             <li class="suggestion">ceälkam</li>
             <li class="suggestion">ceälkktum</li>
+            <li class="suggestion">ciâkkum</li>
             <li class="suggestion">ciâlkku</li>
             <li class="suggestion">ciâlkčum</li>
             <li class="suggestion">ceälkk</li>
             <li class="suggestion">ceäkkam</li>
             <li class="suggestion">ceälkkaz</li>
-            <li class="suggestion">cuälkktum</li>
           </ul>
         </td>
         <td/>
@@ -418,20 +432,23 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="1">
         <td class="original" status="error" speller="error">Čeʹvetjäuʹrneǩ</td>
         <td>TP</td>
         <td class="expected">Čeʹvetjäuʹrrneǩ</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
-        <td class="suggestions" count="6">
+        <td class="position">1</td>
+        <td class="suggestions" count="9">
           <ul>
-            <li class="suggestion">Čeʹvetjäuʹrred</li>
+            <li class="suggestion" expected="yes">Čeʹvetjäuʹrrneǩ</li>
             <li class="suggestion">Čeʹvetjäuʹrrem</li>
             <li class="suggestion">Čeʹvetjäuʹrres</li>
+            <li class="suggestion">Čeʹvetjäuʹrren</li>
             <li class="suggestion">Čeʹvetjäuʹrrnes</li>
             <li class="suggestion">Čeʹvetjäuʹrrez</li>
-            <li class="suggestion">Čeʹvetjäuʹrren</li>
+            <li class="suggestion">Čeʹvetjäuʹrred</li>
+            <li class="suggestion">-čeʹvetjäuʹrrneǩ</li>
+            <li class="suggestion">Čeʹvetjäuʹrrneǩ-</li>
           </ul>
         </td>
         <td/>
@@ -473,14 +490,15 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="1">
+      <tr class="word" corrsugg="2">
         <td class="original" status="error" speller="error">čiâssji</td>
         <td>TP</td>
         <td class="expected">čiâssi</td>
         <td class="edit_dist">1</td>
-        <td class="position">1</td>
+        <td class="position">2</td>
         <td class="suggestions" count="10">
           <ul>
+            <li class="suggestion">čieʹssji</li>
             <li class="suggestion" expected="yes">čiâssi</li>
             <li class="suggestion">miâssji</li>
             <li class="suggestion">siâssji</li>
@@ -488,9 +506,8 @@
             <li class="suggestion">riʹssji</li>
             <li class="suggestion">čiâss-i</li>
             <li class="suggestion">hiʹssji</li>
-            <li class="suggestion">čiâʹhssji</li>
-            <li class="suggestion">ǩieʹssji</li>
             <li class="suggestion">siâzzji</li>
+            <li class="suggestion">čiâssäi</li>
           </ul>
         </td>
         <td/>
@@ -498,24 +515,24 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="1">
+      <tr class="word" corrsugg="2">
         <td class="original" status="error" speller="error">čiâssjin</td>
         <td>TP</td>
         <td class="expected">čiâssin</td>
         <td class="edit_dist">1</td>
-        <td class="position">1</td>
+        <td class="position">2</td>
         <td class="suggestions" count="10">
           <ul>
+            <li class="suggestion">čieʹssjin</li>
             <li class="suggestion" expected="yes">čiâssin</li>
             <li class="suggestion">miâssjin</li>
             <li class="suggestion">siâssjin</li>
             <li class="suggestion">piâssjin</li>
+            <li class="suggestion">čeästjin</li>
             <li class="suggestion">riʹssjin</li>
-            <li class="suggestion">čiâʹhssjin</li>
-            <li class="suggestion">ǩieʹssjin</li>
+            <li class="suggestion">čiâssjiõn</li>
             <li class="suggestion">hiʹssjin</li>
             <li class="suggestion">siâzzjin</li>
-            <li class="suggestion">čeästjin</li>
           </ul>
         </td>
         <td/>
@@ -608,24 +625,24 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="1">
+      <tr class="word" corrsugg="3">
         <td class="original" status="error" speller="error">dåmmškoouʹle</td>
         <td>TP</td>
         <td class="expected">dommškoouʹle</td>
         <td class="edit_dist">1</td>
-        <td class="position">1</td>
+        <td class="position">3</td>
         <td class="suggestions" count="10">
           <ul>
-            <li class="suggestion" expected="yes">dommškoouʹle</li>
+            <li class="suggestion">demmškoouʹle</li>
             <li class="suggestion">håmmškoouʹle</li>
+            <li class="suggestion" expected="yes">dommškoouʹle</li>
             <li class="suggestion">eʹmmškoouʹle</li>
             <li class="suggestion">čåʹmmškoouʹle</li>
             <li class="suggestion">tammškoouʹle</li>
             <li class="suggestion">tummškoouʹle</li>
             <li class="suggestion">tåimmškoouʹle</li>
-            <li class="suggestion">jårmmškoouʹle</li>
-            <li class="suggestion">čimmškoouʹle</li>
-            <li class="suggestion">šummškoouʹle</li>
+            <li class="suggestion">sõmmškoouʹle</li>
+            <li class="suggestion">ååumškoouʹle</li>
           </ul>
         </td>
         <td/>
@@ -633,20 +650,24 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="1">
         <td class="original" status="error" speller="error">ehdtii</td>
         <td>TP</td>
         <td class="expected">ehdti</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
-        <td class="suggestions" count="6">
+        <td class="position">1</td>
+        <td class="suggestions" count="10">
           <ul>
-            <li class="suggestion">õhttii</li>
-            <li class="suggestion">ahttii</li>
-            <li class="suggestion">ehdtõs</li>
-            <li class="suggestion">ehdteei</li>
-            <li class="suggestion">ahtii</li>
-            <li class="suggestion">Ahtii</li>
+            <li class="suggestion" expected="yes">ehdti</li>
+            <li class="suggestion">ehdtid</li>
+            <li class="suggestion">ehdtiid</li>
+            <li class="suggestion">ehdtiim</li>
+            <li class="suggestion">ehdtiin</li>
+            <li class="suggestion">ehdtim</li>
+            <li class="suggestion">ehdtin</li>
+            <li class="suggestion">ehdtiǩ</li>
+            <li class="suggestion">ehdtmi</li>
+            <li class="suggestion">ehdti-i</li>
           </ul>
         </td>
         <td/>
@@ -664,14 +685,14 @@
           <ul>
             <li class="suggestion" expected="yes">Eeʹjj</li>
             <li class="suggestion">Äʹjj</li>
+            <li class="suggestion">Peejj</li>
+            <li class="suggestion">Tuejj</li>
             <li class="suggestion">Eija</li>
             <li class="suggestion">Eero</li>
+            <li class="suggestion">Suejj</li>
+            <li class="suggestion">Vuejj</li>
             <li class="suggestion">Eeva</li>
             <li class="suggestion">Uvjj</li>
-            <li class="suggestion">Evje</li>
-            <li class="suggestion">Kåjj</li>
-            <li class="suggestion">Lujj</li>
-            <li class="suggestion">Päjj</li>
           </ul>
         </td>
         <td/>
@@ -792,12 +813,12 @@
             <li class="suggestion">feʹrttji</li>
             <li class="suggestion">fiʹttai</li>
             <li class="suggestion">certtai</li>
+            <li class="suggestion">verddai</li>
             <li class="suggestion">Berttai</li>
+            <li class="suggestion">serddai</li>
+            <li class="suggestion">ǩerddai</li>
             <li class="suggestion">Pertti</li>
-            <li class="suggestion">värttai</li>
-            <li class="suggestion">Bertai</li>
-            <li class="suggestion">Berthai</li>
-            <li class="suggestion">Berttaz</li>
+            <li class="suggestion">versttai</li>
           </ul>
         </td>
         <td/>
@@ -815,14 +836,14 @@
           <ul>
             <li class="suggestion" expected="yes">Heʹlssnest</li>
             <li class="suggestion">Halsnest</li>
-            <li class="suggestion">Helenest</li>
             <li class="suggestion">Heltnest</li>
-            <li class="suggestion">Hellenet</li>
-            <li class="suggestion">Hellest</li>
+            <li class="suggestion">Helenest</li>
+            <li class="suggestion">Ellsest</li>
+            <li class="suggestion">Hellenesa</li>
             <li class="suggestion">Helminest</li>
+            <li class="suggestion">Hellenet</li>
             <li class="suggestion">Hellnesat</li>
-            <li class="suggestion">Hellenes</li>
-            <li class="suggestion">Hellnes</li>
+            <li class="suggestion">Hellest</li>
           </ul>
         </td>
         <td/>
@@ -846,8 +867,8 @@
             <li class="suggestion">Halsnest</li>
             <li class="suggestion">Helenest</li>
             <li class="suggestion">Helminest</li>
+            <li class="suggestion">Hessnes</li>
             <li class="suggestion">Halssmest</li>
-            <li class="suggestion">Hälssjest</li>
           </ul>
         </td>
         <td/>
@@ -869,8 +890,8 @@
             <li class="suggestion">haaʹleed</li>
             <li class="suggestion">haaʹleem</li>
             <li class="suggestion">haaʹleeš</li>
-            <li class="suggestion">haaleed</li>
             <li class="suggestion">haaleen</li>
+            <li class="suggestion">haaleed</li>
             <li class="suggestion">haalees</li>
             <li class="suggestion">haaleez</li>
           </ul>
@@ -921,8 +942,8 @@
             <li class="suggestion">Halsnest</li>
             <li class="suggestion">Helenest</li>
             <li class="suggestion">Helminest</li>
+            <li class="suggestion">Hessnes</li>
             <li class="suggestion">Halssmest</li>
-            <li class="suggestion">Hälssjest</li>
           </ul>
         </td>
         <td/>
@@ -940,6 +961,7 @@
           <ul>
             <li class="suggestion">håmmʼmõšše</li>
             <li class="suggestion" expected="yes">håmmʼmõʹšše</li>
+            <li class="suggestion">håmmʼmuščee</li>
             <li class="suggestion">håmmʼmuš</li>
             <li class="suggestion">håmmʼmušân</li>
             <li class="suggestion">håmmʼmušâd</li>
@@ -947,7 +969,6 @@
             <li class="suggestion">håmmʼmušäi</li>
             <li class="suggestion">håmmʼmuš-a</li>
             <li class="suggestion">håmmʼmuš-i</li>
-            <li class="suggestion">åimmʼmušše</li>
           </ul>
         </td>
         <td/>
@@ -966,13 +987,13 @@
             <li class="suggestion">håmmʼmõšše</li>
             <li class="suggestion" expected="yes">håmmʼmõʹšše</li>
             <li class="suggestion">gummõšše</li>
-            <li class="suggestion">håmmkašše</li>
             <li class="suggestion">håmmõcce</li>
-            <li class="suggestion">håmmvõššu</li>
+            <li class="suggestion">håmmkašše</li>
+            <li class="suggestion">håmmruõšše</li>
             <li class="suggestion">håmmäšša</li>
+            <li class="suggestion">håmmvõššu</li>
             <li class="suggestion">håmmdušše</li>
             <li class="suggestion">håmmäššže</li>
-            <li class="suggestion">-håmmʼmõšše</li>
           </ul>
         </td>
         <td/>
@@ -1057,15 +1078,18 @@
         <td class="expected">interneeʹtt</td>
         <td class="edit_dist">1</td>
         <td class="position">1</td>
-        <td class="suggestions" count="7">
+        <td class="suggestions" count="10">
           <ul>
             <li class="suggestion" expected="yes">interneeʹtt</li>
             <li class="suggestion">interneʹtt</li>
+            <li class="suggestion">internetta</li>
             <li class="suggestion">interneeʹtti</li>
-            <li class="suggestion">interneeʹtt-</li>
-            <li class="suggestion">interneʹtt-</li>
+            <li class="suggestion">instemneett</li>
+            <li class="suggestion">Antežneett</li>
             <li class="suggestion">-interneʹtt</li>
+            <li class="suggestion">interneʹtt-</li>
             <li class="suggestion">-interneeʹtt</li>
+            <li class="suggestion">interneeʹtt-</li>
           </ul>
         </td>
         <td/>
@@ -1116,24 +1140,24 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="3">
         <td class="original" status="error" speller="error">jeäʹllted</td>
         <td>TP</td>
         <td class="expected">jeällted</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
+        <td class="position">3</td>
         <td class="suggestions" count="10">
           <ul>
             <li class="suggestion">jeäʹlted</li>
             <li class="suggestion">jeäʹltet</li>
+            <li class="suggestion" expected="yes">jeällted</li>
+            <li class="suggestion">jieʹlled</li>
             <li class="suggestion">jeäʹlsted</li>
-            <li class="suggestion">jeäʹltem</li>
-            <li class="suggestion">jeäʹltep</li>
-            <li class="suggestion">jeäʹlteš</li>
+            <li class="suggestion">jeälltet</li>
             <li class="suggestion">jeäʹltež</li>
             <li class="suggestion">jeäʹltid</li>
-            <li class="suggestion">jeäʹled</li>
             <li class="suggestion">jeäʹlčed</li>
+            <li class="suggestion">jieʹllmed</li>
           </ul>
         </td>
         <td/>
@@ -1155,8 +1179,8 @@
             <li class="suggestion">jeäʹltumušân</li>
             <li class="suggestion">jeälltumušâânn</li>
             <li class="suggestion">jeältumušâân</li>
-            <li class="suggestion">jeälltummušâân</li>
             <li class="suggestion">jeäʹltumušâân</li>
+            <li class="suggestion">jeälltummušâân</li>
             <li class="suggestion">jeälltummduššân</li>
             <li class="suggestion">jeälstumušân</li>
           </ul>
@@ -1166,49 +1190,24 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="1">
         <td class="original" status="error" speller="error">jeäp</td>
         <td>TP</td>
         <td class="expected">jeäʹp</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
+        <td class="position">1</td>
         <td class="suggestions" count="10">
           <ul>
+            <li class="suggestion" expected="yes">jeäʹp</li>
             <li class="suggestion">jeʹp</li>
             <li class="suggestion">jiâ</li>
+            <li class="suggestion">leäʹp</li>
+            <li class="suggestion">jeäʹt</li>
             <li class="suggestion">jeäl</li>
             <li class="suggestion">jeäʹl</li>
             <li class="suggestion">jeäʹđ</li>
             <li class="suggestion">jeän</li>
             <li class="suggestion">jeä</li>
-            <li class="suggestion">jeäʹr</li>
-            <li class="suggestion">leäi</li>
-            <li class="suggestion">leäm</li>
-          </ul>
-        </td>
-        <td/>
-        <td/>
-        <td/>
-        <td/>
-      </tr>
-      <tr class="word" corrsugg="-1">
-        <td class="original" status="error" speller="error">jeät</td>
-        <td>TP</td>
-        <td class="expected">jeäʹt</td>
-        <td class="edit_dist">1</td>
-        <td class="position">-1</td>
-        <td class="suggestions" count="10">
-          <ul>
-            <li class="suggestion">jiâ</li>
-            <li class="suggestion">jeäl</li>
-            <li class="suggestion">jeäʹl</li>
-            <li class="suggestion">veʹt</li>
-            <li class="suggestion">jeäʹđ</li>
-            <li class="suggestion">jeärt</li>
-            <li class="suggestion">jeä</li>
-            <li class="suggestion">jeän</li>
-            <li class="suggestion">jeäʹr</li>
-            <li class="suggestion">jeʹp</li>
           </ul>
         </td>
         <td/>
@@ -1217,13 +1216,40 @@
         <td/>
       </tr>
       <tr class="word" corrsugg="1">
+        <td class="original" status="error" speller="error">jeät</td>
+        <td>TP</td>
+        <td class="expected">jeäʹt</td>
+        <td class="edit_dist">1</td>
+        <td class="position">1</td>
+        <td class="suggestions" count="10">
+          <ul>
+            <li class="suggestion" expected="yes">jeäʹt</li>
+            <li class="suggestion">jiâ</li>
+            <li class="suggestion">jeäʹp</li>
+            <li class="suggestion">jeäl</li>
+            <li class="suggestion">leäʹt</li>
+            <li class="suggestion">jeäʹl</li>
+            <li class="suggestion">veʹt</li>
+            <li class="suggestion">jeäʹđ</li>
+            <li class="suggestion">jeän</li>
+            <li class="suggestion">jeärt</li>
+          </ul>
+        </td>
+        <td/>
+        <td/>
+        <td/>
+        <td/>
+      </tr>
+      <tr class="word" corrsugg="3">
         <td class="original" status="error" speller="error">jieʹllmõõžž</td>
         <td>TP</td>
         <td class="expected">jeällmõõžž</td>
         <td class="edit_dist">2</td>
-        <td class="position">1</td>
-        <td class="suggestions" count="2">
+        <td class="position">3</td>
+        <td class="suggestions" count="4">
           <ul>
+            <li class="suggestion">njeäʹllmõõžž</li>
+            <li class="suggestion">jieʹllmõʹžže</li>
             <li class="suggestion" expected="yes">jeällmõõžž</li>
             <li class="suggestion">miellmõõžž</li>
           </ul>
@@ -1258,24 +1284,24 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="2">
+      <tr class="word" corrsugg="4">
         <td class="original" status="error" speller="error">jiõnned</td>
         <td>TP</td>
         <td class="expected">jiõnnâd</td>
         <td class="edit_dist">1</td>
-        <td class="position">2</td>
+        <td class="position">4</td>
         <td class="suggestions" count="10">
           <ul>
+            <li class="suggestion">jiõnneed</li>
+            <li class="suggestion">jiõnnneed</li>
             <li class="suggestion">jiõneed</li>
             <li class="suggestion" expected="yes">jiõnnâd</li>
-            <li class="suggestion">jiõnneed</li>
+            <li class="suggestion">jiõnneet</li>
             <li class="suggestion">jiõnid</li>
+            <li class="suggestion">jiõʹnne</li>
+            <li class="suggestion">jiõnnsed</li>
             <li class="suggestion">jiõnnad</li>
-            <li class="suggestion">jieʹnned</li>
-            <li class="suggestion">jiõʹnnes</li>
-            <li class="suggestion">jiõnâd</li>
-            <li class="suggestion">jiõnad</li>
-            <li class="suggestion">jiõnee</li>
+            <li class="suggestion">jiõnne</li>
           </ul>
         </td>
         <td/>
@@ -1292,8 +1318,8 @@
         <td class="suggestions" count="10">
           <ul>
             <li class="suggestion" expected="yes">jiõnsteeʹjid</li>
-            <li class="suggestion">jiõnsteejed</li>
             <li class="suggestion">jiõnsteejad</li>
+            <li class="suggestion">jiõnsteejed</li>
             <li class="suggestion">jiõnsteeʹjin</li>
             <li class="suggestion">jiõnsteʹčid</li>
             <li class="suggestion">jiõnsteʹžid</li>
@@ -1474,15 +1500,18 @@
         <td class="expected">juätkkprojeeʹkt</td>
         <td class="edit_dist">1</td>
         <td class="position">1</td>
-        <td class="suggestions" count="7">
+        <td class="suggestions" count="10">
           <ul>
             <li class="suggestion" expected="yes">juätkkprojeeʹkt</li>
             <li class="suggestion">juâtkkprojeeʹkt</li>
-            <li class="suggestion">juätkkprojeeʹkti</li>
             <li class="suggestion">puätkkprojeeʹkt</li>
+            <li class="suggestion">juätkkprojeeʹkti</li>
             <li class="suggestion">juätkkprojeʹktt</li>
-            <li class="suggestion">juätkkprojeeʹkt-</li>
-            <li class="suggestion">-juätkkprojeeʹkt</li>
+            <li class="suggestion">juätkkprojekta</li>
+            <li class="suggestion">juätkkprojeektas</li>
+            <li class="suggestion">juätkkprojeektad</li>
+            <li class="suggestion">juätkkprojeektez</li>
+            <li class="suggestion">juätkkprojeektes</li>
           </ul>
         </td>
         <td/>
@@ -1504,10 +1533,10 @@
             <li class="suggestion">juätkkprojeʹktten</li>
             <li class="suggestion">juätkkprojeʹkttes</li>
             <li class="suggestion">juätkkprojeʹkttez</li>
+            <li class="suggestion">juätkkprojeʹkttčee</li>
             <li class="suggestion">juâtkkprojeʹktted</li>
             <li class="suggestion">juâtkkprojeʹktt</li>
             <li class="suggestion">juâtkkprojeʹkttem</li>
-            <li class="suggestion">juâtkkprojeʹktten</li>
           </ul>
         </td>
         <td/>
@@ -1529,10 +1558,10 @@
             <li class="suggestion">vueʹǩǩ</li>
             <li class="suggestion">kuʹǩǩ</li>
             <li class="suggestion">mueʹǩǩ</li>
+            <li class="suggestion">juõʹǩǩe</li>
             <li class="suggestion">juʹǩǩe</li>
             <li class="suggestion">čuʹǩǩ</li>
-            <li class="suggestion">Luʹǩǩ</li>
-            <li class="suggestion">juõʹǩǩi</li>
+            <li class="suggestion">sueʹǩǩ</li>
           </ul>
         </td>
         <td/>
@@ -1540,16 +1569,24 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="3">
         <td class="original" status="error" speller="error">jânnampäiʹǩǩjieʹllemvueʹǩǩkruug</td>
         <td>TP</td>
         <td class="expected">jânnampäiʹǩǩjieʹllemvueʹǩǩ-kruugg</td>
         <td class="edit_dist">2</td>
-        <td class="position">-1</td>
-        <td class="suggestions" count="2">
+        <td class="position">3</td>
+        <td class="suggestions" count="10">
           <ul>
-            <li class="suggestion">jânnampäiʹǩǩǩieʹllemvueʹǩǩkruugg</li>
-            <li class="suggestion">jânnampäiʹǩǩǩieʹllemvueʹǩǩkruun</li>
+            <li class="suggestion">jânnampäiʹǩǩjieʹllemvueʹǩǩkruugg</li>
+            <li class="suggestion">jânnampäiʹǩǩjieʹllemvueʹǩǩkruun</li>
+            <li class="suggestion" expected="yes">jânnampäiʹǩǩjieʹllemvueʹǩǩ-kruugg</li>
+            <li class="suggestion">jânnampäiʹǩǩjieʹllemvueʹǩǩkeruub</li>
+            <li class="suggestion">jânnampäiʹǩǩjieʹllemvueʹǩǩkruuni</li>
+            <li class="suggestion">jânnampäiʹǩǩjieʹllemvueʹǩǩkuul</li>
+            <li class="suggestion">jânnampäiʹǩǩjieʹllemvueʹǩǩkuun</li>
+            <li class="suggestion">jânnampäiʹǩǩjieʹllemvueʹǩǩkruugge</li>
+            <li class="suggestion">jânnampäiʹǩǩjieʹllemvueʹǩǩkuur</li>
+            <li class="suggestion">jânnampäiʹǩǩjieʹllemvueʹǩǩruuv</li>
           </ul>
         </td>
         <td/>
@@ -1671,7 +1708,7 @@
             <li class="suggestion">jåårǥlâttmõõžžâs</li>
             <li class="suggestion">jåårǥlâsttmõõžžâs</li>
             <li class="suggestion">jåårǥlõbttmõõžžâst</li>
-            <li class="suggestion">jåårǥloottmõõžžâst</li>
+            <li class="suggestion">jåårǥlâhttmõõžžâs</li>
           </ul>
         </td>
         <td/>
@@ -1679,13 +1716,17 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="0">
+      <tr class="word" corrsugg="-1">
         <td class="original" status="error" speller="error">jäuʹrrʼreggsummuš</td>
         <td>TP</td>
         <td class="expected">jäuʹrr-reggsummuš</td>
         <td class="edit_dist">1</td>
-        <td class="position">0</td>
-        <td/>
+        <td class="position">-1</td>
+        <td class="suggestions" count="1">
+          <ul>
+            <li class="suggestion">jäuʹrrreggstummuš</li>
+          </ul>
+        </td>
         <td/>
         <td/>
         <td/>
@@ -1862,12 +1903,12 @@
             <li class="suggestion">kueʹlšeeʹllmõʹžže</li>
             <li class="suggestion" expected="yes">kueʹllšeellmõʹšše</li>
             <li class="suggestion">kuõllšeeʹllmõʹžže</li>
+            <li class="suggestion">kuällšeeʹllmõʹžže</li>
+            <li class="suggestion">kueʹlšeellmõʹšše</li>
             <li class="suggestion">kuõllšeellmõʹšše</li>
-            <li class="suggestion">kueʹllšeeʹllmõʹžžen</li>
-            <li class="suggestion">vueʹllšeeʹllmõʹžže</li>
-            <li class="suggestion">kueʹllšeeʹllmõʹžžed</li>
+            <li class="suggestion">kuällšeellmõʹšše</li>
             <li class="suggestion">kueʹllšeeʹllmiʹžže</li>
-            <li class="suggestion">kueʹllšeellmõšše</li>
+            <li class="suggestion">tueʹllšeeʹllmõʹžže</li>
           </ul>
         </td>
         <td/>
@@ -1884,15 +1925,15 @@
         <td class="suggestions" count="10">
           <ul>
             <li class="suggestion" expected="yes">kueʹllšeellmõʹšše</li>
+            <li class="suggestion">kueʹlšeellmõʹšše</li>
             <li class="suggestion">kueʹllšeellmõšše</li>
+            <li class="suggestion">kuällšeellmõʹšše</li>
             <li class="suggestion">kuõllšeellmõʹšše</li>
+            <li class="suggestion">kueʹlšeellmõšše</li>
             <li class="suggestion">kullšeellmõʹšše</li>
             <li class="suggestion">juʹllšeellmõʹšše</li>
             <li class="suggestion">kåʹllšeellmõʹšše</li>
-            <li class="suggestion">vueʹllšeellmõʹšše</li>
-            <li class="suggestion">äuʹllšeellmõʹšše</li>
-            <li class="suggestion">kaallšeellmõʹšše</li>
-            <li class="suggestion">kupolšeellmõʹšše</li>
+            <li class="suggestion">tueʹllšeellmõʹšše</li>
           </ul>
         </td>
         <td/>
@@ -1983,9 +2024,9 @@
             <li class="suggestion">ǩeeʹrjtam</li>
             <li class="suggestion">ǩeeʹrjat</li>
             <li class="suggestion">ǩeeʹrjtaa</li>
-            <li class="suggestion">ǩeerjla</li>
             <li class="suggestion">ǩeeʹrjtak</li>
             <li class="suggestion">ǩeeʹrjtež</li>
+            <li class="suggestion">ǩeerjlai</li>
             <li class="suggestion">ǩeerjaž</li>
           </ul>
         </td>
@@ -2008,8 +2049,8 @@
             <li class="suggestion">käʹrjjlaž</li>
             <li class="suggestion" expected="yes">ǩeerjlaž</li>
             <li class="suggestion">ǩeʹrjjeež</li>
-            <li class="suggestion">tâʹrjjlaž</li>
             <li class="suggestion">ǩeʹrjjad</li>
+            <li class="suggestion">tâʹrjjlaž</li>
             <li class="suggestion">ǩeʹrjjlapp</li>
             <li class="suggestion">ǩeʹrjjlađđ</li>
           </ul>
@@ -2033,10 +2074,10 @@
             <li class="suggestion">ǩeʹrjjad</li>
             <li class="suggestion">ǩeârjjʼjaž</li>
             <li class="suggestion">ǩeerjlaž</li>
-            <li class="suggestion">ǩeârjaad</li>
+            <li class="suggestion">ǩerjja</li>
+            <li class="suggestion">ǩeerjaž</li>
+            <li class="suggestion">ǩeârja</li>
             <li class="suggestion">ǩeârjžad</li>
-            <li class="suggestion">ǩeârjaan</li>
-            <li class="suggestion">ǩeârjžam</li>
           </ul>
         </td>
         <td/>
@@ -2053,15 +2094,15 @@
         <td class="suggestions" count="10">
           <ul>
             <li class="suggestion" expected="yes">ǩeäk</li>
+            <li class="suggestion">ǩeäʹđ</li>
             <li class="suggestion">ǩeäʹl</li>
             <li class="suggestion">ǩeäʹr</li>
-            <li class="suggestion">ǩeäʹđ</li>
             <li class="suggestion">leäk</li>
+            <li class="suggestion">leäʹp</li>
             <li class="suggestion">ǩeän</li>
+            <li class="suggestion">jeäʹt</li>
+            <li class="suggestion">jeäʹp</li>
             <li class="suggestion">ǩeäʹst</li>
-            <li class="suggestion">peäʹl</li>
-            <li class="suggestion">ǩeäin</li>
-            <li class="suggestion">ǩeähn</li>
           </ul>
         </td>
         <td/>
@@ -2075,12 +2116,14 @@
         <td class="expected">ǩiõll-luvddkådda</td>
         <td class="edit_dist">1</td>
         <td class="position">-1</td>
-        <td class="suggestions" count="4">
+        <td class="suggestions" count="6">
           <ul>
             <li class="suggestion">ǩiõll-luʹvddkådda</li>
             <li class="suggestion">ǩiõlliluʹvddkådda</li>
             <li class="suggestion">ǩiõllvuvddkådda</li>
             <li class="suggestion">ǩiõllivuvddkådda</li>
+            <li class="suggestion">ǩiõlliluõddkådda</li>
+            <li class="suggestion">ǩiõll-luõddkådda</li>
           </ul>
         </td>
         <td/>
@@ -2099,13 +2142,13 @@
             <li class="suggestion" expected="yes">ǩiõlʼla</li>
             <li class="suggestion">ǩiõlʼlaž</li>
             <li class="suggestion">ǩiõʹllʼja</li>
-            <li class="suggestion">ǩiõlʼlai</li>
             <li class="suggestion">ǩiõldla</li>
+            <li class="suggestion">ǩiõlʼlai</li>
             <li class="suggestion">ǩiõlʼlab</li>
-            <li class="suggestion">ǩiâllʼja</li>
+            <li class="suggestion">ǩiõllsa</li>
             <li class="suggestion">viõllʼja</li>
-            <li class="suggestion">ǩiõllja</li>
-            <li class="suggestion">ǩiõllma</li>
+            <li class="suggestion">piõllʼja</li>
+            <li class="suggestion">ǩiâllʼja</li>
           </ul>
         </td>
         <td/>
@@ -2128,9 +2171,9 @@
             <li class="suggestion">ǩiõlʼlai</li>
             <li class="suggestion">ǩiõlʼlab</li>
             <li class="suggestion">ǩiõʹllʼjaž</li>
+            <li class="suggestion">ǩiõllsaž</li>
             <li class="suggestion">ǩiâllʼjaž</li>
-            <li class="suggestion">ǩiõlljaž</li>
-            <li class="suggestion">ǩiõllmaž</li>
+            <li class="suggestion">piõllʼjaž</li>
           </ul>
         </td>
         <td/>
@@ -2176,11 +2219,11 @@
             <li class="suggestion">ǩiõʹlliläkka</li>
             <li class="suggestion">ǩiõldläkka</li>
             <li class="suggestion">ǩiõlläkka</li>
+            <li class="suggestion">ǩiõllceäkka</li>
+            <li class="suggestion">ǩiõlljeäkka</li>
+            <li class="suggestion">ǩiõllkuäkka</li>
             <li class="suggestion">ǩiõllnjäkka</li>
             <li class="suggestion">ǩiõllpeäkka</li>
-            <li class="suggestion">ǩiõllpäkka</li>
-            <li class="suggestion">ǩiõlltäkka</li>
-            <li class="suggestion">ǩiõllääkka</li>
           </ul>
         </td>
         <td/>
@@ -2268,10 +2311,10 @@
             <li class="suggestion">miõttââll</li>
             <li class="suggestion">ǩiõltââll</li>
             <li class="suggestion">ǩiõpttââll</li>
+            <li class="suggestion">ǩiõptʼtââll</li>
             <li class="suggestion">ǩiõttpââll</li>
             <li class="suggestion">ǩiõttšââll</li>
-            <li class="suggestion">ǩiõptʼtââll</li>
-            <li class="suggestion">ǩiddââll</li>
+            <li class="suggestion">ǩiõrddââll</li>
           </ul>
         </td>
         <td/>
@@ -2361,24 +2404,24 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="1">
         <td class="original" status="error" speller="error">leäp</td>
         <td>TP</td>
         <td class="expected">leäʹp</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
+        <td class="position">1</td>
         <td class="suggestions" count="10">
           <ul>
+            <li class="suggestion" expected="yes">leäʹp</li>
             <li class="suggestion">leäi</li>
             <li class="suggestion">leäm</li>
             <li class="suggestion">liâ</li>
             <li class="suggestion">leäk</li>
+            <li class="suggestion">jeäʹp</li>
+            <li class="suggestion">leäʹt</li>
+            <li class="suggestion">lepp</li>
             <li class="suggestion">leäv</li>
-            <li class="suggestion">jeʹp</li>
-            <li class="suggestion">leäʹv</li>
-            <li class="suggestion">leäʹđ</li>
-            <li class="suggestion">leša</li>
-            <li class="suggestion">ǩeäk</li>
+            <li class="suggestion">leäʹpp</li>
           </ul>
         </td>
         <td/>
@@ -2386,24 +2429,24 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="1">
         <td class="original" status="error" speller="error">leät</td>
         <td>TP</td>
         <td class="expected">leäʹt</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
+        <td class="position">1</td>
         <td class="suggestions" count="10">
           <ul>
+            <li class="suggestion" expected="yes">leäʹt</li>
             <li class="suggestion">leäi</li>
             <li class="suggestion">leäm</li>
             <li class="suggestion">liâ</li>
             <li class="suggestion">leäk</li>
+            <li class="suggestion">leäʹp</li>
+            <li class="suggestion">lett</li>
+            <li class="suggestion">jeäʹt</li>
             <li class="suggestion">veʹt</li>
             <li class="suggestion">leätt</li>
-            <li class="suggestion">leäv</li>
-            <li class="suggestion">liânt</li>
-            <li class="suggestion">meʹt</li>
-            <li class="suggestion">leäʹv</li>
           </ul>
         </td>
         <td/>
@@ -2421,14 +2464,14 @@
           <ul>
             <li class="suggestion">leša</li>
             <li class="suggestion" expected="yes">leâša</li>
+            <li class="suggestion">leäʹp</li>
+            <li class="suggestion">leämma</li>
             <li class="suggestion">jeäʹla</li>
+            <li class="suggestion">leäʹt</li>
+            <li class="suggestion">leäʹšše</li>
             <li class="suggestion">leäšš</li>
             <li class="suggestion">leäi-a</li>
-            <li class="suggestion">leäušaz</li>
-            <li class="suggestion">leäʹđ</li>
-            <li class="suggestion">leäušaž</li>
-            <li class="suggestion">leäʹšmm</li>
-            <li class="suggestion">leašša</li>
+            <li class="suggestion">leäkka</li>
           </ul>
         </td>
         <td/>
@@ -2436,24 +2479,24 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="4">
+      <tr class="word" corrsugg="6">
         <td class="original" status="error" speller="error">Leäʹša</td>
         <td>TP</td>
         <td class="expected">Leâša</td>
         <td class="edit_dist">2</td>
-        <td class="position">4</td>
+        <td class="position">6</td>
         <td class="suggestions" count="10">
           <ul>
             <li class="suggestion">Jeäʹla</li>
+            <li class="suggestion">Meäšša</li>
+            <li class="suggestion">Šeäʹšš</li>
             <li class="suggestion">Šeäšša</li>
             <li class="suggestion">Leša</li>
             <li class="suggestion" expected="yes">Leâša</li>
-            <li class="suggestion">Leäšš</li>
-            <li class="suggestion">Leäi-a</li>
-            <li class="suggestion">Leäušaz</li>
-            <li class="suggestion">Leäʹđ</li>
-            <li class="suggestion">Leäušaž</li>
-            <li class="suggestion">Leäʹšmm</li>
+            <li class="suggestion">Leäʹp</li>
+            <li class="suggestion">Leämma</li>
+            <li class="suggestion">Leäʹt</li>
+            <li class="suggestion">Leäʹšše</li>
           </ul>
         </td>
         <td/>
@@ -2633,13 +2676,13 @@
             <li class="suggestion" expected="yes">lõʹsses</li>
             <li class="suggestion">loʹsses</li>
             <li class="suggestion">lõssʼses</li>
-            <li class="suggestion">lõssâs</li>
-            <li class="suggestion">lõsse</li>
-            <li class="suggestion">lõssnes</li>
             <li class="suggestion">lõsstes</li>
+            <li class="suggestion">lõssâs</li>
+            <li class="suggestion">lõssnes</li>
+            <li class="suggestion">lõsse</li>
             <li class="suggestion">laʹsses</li>
+            <li class="suggestion">luõʹsses</li>
             <li class="suggestion">lõʹsse</li>
-            <li class="suggestion">kõʹsses</li>
           </ul>
         </td>
         <td/>
@@ -2706,15 +2749,15 @@
         <td class="suggestions" count="10">
           <ul>
             <li class="suggestion" expected="yes">mâiʹd</li>
+            <li class="suggestion">meid</li>
             <li class="suggestion">mõiʹd</li>
-            <li class="suggestion">miaid</li>
             <li class="suggestion">Said</li>
-            <li class="suggestion">mais</li>
             <li class="suggestion">marid</li>
+            <li class="suggestion">miaid</li>
+            <li class="suggestion">mais</li>
             <li class="suggestion">pâi</li>
             <li class="suggestion">tõid</li>
             <li class="suggestion">mij</li>
-            <li class="suggestion">šâdd</li>
           </ul>
         </td>
         <td/>
@@ -2737,9 +2780,9 @@
             <li class="suggestion">mainstâʹttmõʹžže</li>
             <li class="suggestion">mainstâttmõõžži</li>
             <li class="suggestion">mainstâsttmõõžži</li>
-            <li class="suggestion">rainstâsttmõõžž</li>
+            <li class="suggestion">meinstâsttmõõžž</li>
+            <li class="suggestion">meinstâttmõõžž</li>
             <li class="suggestion">manstâttmõõžž</li>
-            <li class="suggestion">rainstâttmõõžž</li>
           </ul>
         </td>
         <td/>
@@ -2897,30 +2940,36 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="0">
-        <td class="original" status="error" speller="error">meäʹcctäällminister</td>
-        <td>TP</td>
+      <tr class="word" corrsugg="badaccept">
+        <td class="original" status="error" speller="correct">meäʹcctäällminister</td>
+        <td>FN</td>
         <td class="expected">meäʹcctäällminiʹstter</td>
         <td class="edit_dist">2</td>
-        <td class="position">0</td>
+        <td/>
         <td/>
         <td/>
         <td/>
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="1">
         <td class="original" status="error" speller="error">meäʹctäällministeria</td>
         <td>TP</td>
         <td class="expected">meäʹcctäällministeria</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
-        <td class="suggestions" count="4">
+        <td class="position">1</td>
+        <td class="suggestions" count="10">
           <ul>
+            <li class="suggestion" expected="yes">meäʹcctäällministeria</li>
+            <li class="suggestion">meäʹccäällministeria</li>
+            <li class="suggestion">meäʹccääʹllministeria</li>
             <li class="suggestion">mieʹttäällministeria</li>
-            <li class="suggestion">mäʹcctäällministeria</li>
-            <li class="suggestion">mäʹttäällministeria</li>
-            <li class="suggestion">mäʹccäällministeria</li>
+            <li class="suggestion">meäʹcctäällministeeria</li>
+            <li class="suggestion">meäʹccäällministeeria</li>
+            <li class="suggestion">meäʹcctäällministeriaz</li>
+            <li class="suggestion">meäʹcctäällministerias</li>
+            <li class="suggestion">meäʹcctäällministeriai</li>
+            <li class="suggestion">meäʹcctäällministeriad</li>
           </ul>
         </td>
         <td/>
@@ -2928,49 +2977,72 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
-        <td class="original" status="error" speller="error">mieʹrreemväʹlddvuõđ</td>
-        <td>TP</td>
+      <tr class="word" corrsugg="badaccept">
+        <td class="original" status="error" speller="correct">mieʹrreemväʹlddvuõđ</td>
+        <td>FN</td>
         <td class="expected">meäʹrreemväʹlddvuõđ</td>
         <td class="edit_dist">2</td>
-        <td class="position">-1</td>
-        <td class="suggestions" count="10">
-          <ul>
-            <li class="suggestion">mieʹrreemväʹlddvuâđ</li>
-            <li class="suggestion">mieʹrreemväʹlddjuõđ</li>
-            <li class="suggestion">mieʹrreemväʹlddvuõj</li>
-            <li class="suggestion">mieʹrreemväʹlddvuõm</li>
-            <li class="suggestion">mieʹrreemväʹlddvuõn</li>
-            <li class="suggestion">mieʹrreemväʹlddluõđ</li>
-            <li class="suggestion">mieʹrreemväʹlddruõđ</li>
-            <li class="suggestion">mieʹrreemväʹlddvõõđ</li>
-            <li class="suggestion">mieʹrreemväʹlddtuõđ</li>
-            <li class="suggestion">mieʹrreemsäʹlttvuõđ</li>
-          </ul>
-        </td>
+        <td/>
+        <td/>
         <td/>
         <td/>
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
-        <td class="original" status="error" speller="error">mieʹrreemväʹlddvuõttân</td>
-        <td>TP</td>
+      <tr class="word" corrsugg="badaccept">
+        <td class="original" status="error" speller="correct">mieʹrreemväʹlddvuõttân</td>
+        <td>FN</td>
         <td class="expected">meäʹrreemväʹlddvuõttân</td>
         <td class="edit_dist">2</td>
-        <td class="position">-1</td>
+        <td/>
+        <td/>
+        <td/>
+        <td/>
+        <td/>
+        <td/>
+      </tr>
+      <tr class="word" corrsugg="badaccept">
+        <td class="original" status="error" speller="correct">miõlle</td>
+        <td>FN</td>
+        <td class="expected">miõʹlle</td>
+        <td class="edit_dist">1</td>
+        <td/>
+        <td/>
+        <td/>
+        <td/>
+        <td/>
+        <td/>
+      </tr>
+      <tr class="word" corrsugg="badaccept">
+        <td class="original" status="error" speller="correct">miõttât</td>
+        <td>FN</td>
+        <td class="expected">miõđât</td>
+        <td class="edit_dist">2</td>
+        <td/>
+        <td/>
+        <td/>
+        <td/>
+        <td/>
+        <td/>
+      </tr>
+      <tr class="word" corrsugg="3">
+        <td class="original" status="error" speller="error">momeentt</td>
+        <td>TP</td>
+        <td class="expected">momeent</td>
+        <td class="edit_dist">1</td>
+        <td class="position">3</td>
         <td class="suggestions" count="10">
           <ul>
-            <li class="suggestion">mieʹrreemväʹlddjuõttân</li>
-            <li class="suggestion">mieʹrreemväʹlddnuõttân</li>
-            <li class="suggestion">mieʹrreemväʹlddvuõpttân</li>
-            <li class="suggestion">mieʹrreemväʹlddvuõptân</li>
-            <li class="suggestion">mieʹrreemväʹlddvuõttâs</li>
-            <li class="suggestion">mieʹrreemväʹlddtuõttân</li>
-            <li class="suggestion">mieʹrreemsäʹlttvuõttân</li>
-            <li class="suggestion">mieʹrreemväʹlddvuõddâm</li>
-            <li class="suggestion">mieʹrreemväʹlddvuõddâs</li>
-            <li class="suggestion">mieʹrreemväʹlddvuõptan</li>
+            <li class="suggestion">momentt</li>
+            <li class="suggestion">momeʹntt</li>
+            <li class="suggestion" expected="yes">momeent</li>
+            <li class="suggestion">momeeʹnt</li>
+            <li class="suggestion">momeenti</li>
+            <li class="suggestion">momeeʹnti</li>
+            <li class="suggestion">momeʹntte</li>
+            <li class="suggestion">komeeʹtt</li>
+            <li class="suggestion">momentta</li>
+            <li class="suggestion">momentte</li>
           </ul>
         </td>
         <td/>
@@ -2978,24 +3050,24 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
-        <td class="original" status="error" speller="error">miõlle</td>
+      <tr class="word" corrsugg="3">
+        <td class="original" status="error" speller="error">moment</td>
         <td>TP</td>
-        <td class="expected">miõʹlle</td>
+        <td class="expected">momentt</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
+        <td class="position">3</td>
         <td class="suggestions" count="10">
           <ul>
-            <li class="suggestion">miõʹle</li>
-            <li class="suggestion">miõll</li>
-            <li class="suggestion">miõl</li>
-            <li class="suggestion">miõlče</li>
-            <li class="suggestion">miõlže</li>
-            <li class="suggestion">miõlli</li>
-            <li class="suggestion">šiʹlle</li>
-            <li class="suggestion">diʹlle</li>
-            <li class="suggestion">iʹlle</li>
-            <li class="suggestion">miõʹlled</li>
+            <li class="suggestion">momeent</li>
+            <li class="suggestion">momeeʹnt</li>
+            <li class="suggestion" expected="yes">momentt</li>
+            <li class="suggestion">momeʹntt</li>
+            <li class="suggestion">momeenti</li>
+            <li class="suggestion">momenta</li>
+            <li class="suggestion">Lomest</li>
+            <li class="suggestion">Lomen</li>
+            <li class="suggestion">Nomen</li>
+            <li class="suggestion">Nomest</li>
           </ul>
         </td>
         <td/>
@@ -3004,93 +3076,69 @@
         <td/>
       </tr>
       <tr class="word" corrsugg="2">
-        <td class="original" status="error" speller="error">miõttât</td>
-        <td>TP</td>
-        <td class="expected">miõđât</td>
-        <td class="edit_dist">2</td>
-        <td class="position">2</td>
-        <td class="suggestions" count="10">
-          <ul>
-            <li class="suggestion">miõttâd</li>
-            <li class="suggestion" expected="yes">miõđât</li>
-            <li class="suggestion">miõttâm</li>
-            <li class="suggestion">miõđat</li>
-            <li class="suggestion">miõđâd</li>
-            <li class="suggestion">miõttad</li>
-            <li class="suggestion">šiõttât</li>
-            <li class="suggestion">miõttâl</li>
-            <li class="suggestion">miõttân</li>
-            <li class="suggestion">miõttâp</li>
-          </ul>
-        </td>
-        <td/>
-        <td/>
-        <td/>
-        <td/>
-      </tr>
-      <tr class="word" corrsugg="-1">
-        <td class="original" status="error" speller="error">momeentt</td>
-        <td>TP</td>
-        <td class="expected">momeent</td>
-        <td class="edit_dist">1</td>
-        <td class="position">-1</td>
-        <td class="suggestions" count="10">
-          <ul>
-            <li class="suggestion">momeʹntt</li>
-            <li class="suggestion">momeeʹnt</li>
-            <li class="suggestion">momeʹntte</li>
-            <li class="suggestion">momeeʹnti</li>
-            <li class="suggestion">komeeʹtt</li>
-            <li class="suggestion">momeʹntti</li>
-            <li class="suggestion">momeeʹnte</li>
-            <li class="suggestion">momeʹntt-</li>
-            <li class="suggestion">momeeʹnt-</li>
-            <li class="suggestion">-momeʹntt</li>
-          </ul>
-        </td>
-        <td/>
-        <td/>
-        <td/>
-        <td/>
-      </tr>
-      <tr class="word" corrsugg="-1">
-        <td class="original" status="error" speller="error">moment</td>
-        <td>TP</td>
-        <td class="expected">momentt</td>
-        <td class="edit_dist">1</td>
-        <td class="position">-1</td>
-        <td class="suggestions" count="10">
-          <ul>
-            <li class="suggestion">momeeʹnt</li>
-            <li class="suggestion">momeʹntt</li>
-            <li class="suggestion">Domest</li>
-            <li class="suggestion">Nomest</li>
-            <li class="suggestion">Women</li>
-            <li class="suggestion">Domena</li>
-            <li class="suggestion">Womena</li>
-            <li class="suggestion">Lomen</li>
-            <li class="suggestion">Nomen</li>
-            <li class="suggestion">Lomest</li>
-          </ul>
-        </td>
-        <td/>
-        <td/>
-        <td/>
-        <td/>
-      </tr>
-      <tr class="word" corrsugg="-1">
         <td class="original" status="error" speller="error">momeentest</td>
         <td>TP</td>
         <td class="expected">momeentâst</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
-        <td class="suggestions" count="5">
+        <td class="position">2</td>
+        <td class="suggestions" count="10">
           <ul>
             <li class="suggestion">momeeʹntest</li>
+            <li class="suggestion" expected="yes">momeentâst</li>
             <li class="suggestion">momeeʹntes</li>
             <li class="suggestion">momeeʹnttest</li>
             <li class="suggestion">moreeʹntest</li>
-            <li class="suggestion">-momeeʹntest</li>
+            <li class="suggestion">momeentees</li>
+            <li class="suggestion">momeentes</li>
+            <li class="suggestion">momenttest</li>
+            <li class="suggestion">momeenteed</li>
+            <li class="suggestion">momentast</li>
+          </ul>
+        </td>
+        <td/>
+        <td/>
+        <td/>
+        <td/>
+      </tr>
+      <tr class="word" corrsugg="3">
+        <td class="original" status="error" speller="error">momentest</td>
+        <td>TP</td>
+        <td class="expected">momeentâst</td>
+        <td class="edit_dist">2</td>
+        <td class="position">3</td>
+        <td class="suggestions" count="10">
+          <ul>
+            <li class="suggestion">momeeʹntest</li>
+            <li class="suggestion">momenttest</li>
+            <li class="suggestion" expected="yes">momeentâst</li>
+            <li class="suggestion">momentast</li>
+            <li class="suggestion">momentt</li>
+            <li class="suggestion">momeentes</li>
+            <li class="suggestion">Forentest</li>
+            <li class="suggestion">momenttjest</li>
+            <li class="suggestion">Nomeitest</li>
+            <li class="suggestion">nomintest</li>
+          </ul>
+        </td>
+        <td/>
+        <td/>
+        <td/>
+        <td/>
+      </tr>
+      <tr class="word" corrsugg="1">
+        <td class="original" status="error" speller="error">momentist</td>
+        <td>TP</td>
+        <td class="expected">momeentâst</td>
+        <td class="edit_dist">2</td>
+        <td class="position">1</td>
+        <td class="suggestions" count="6">
+          <ul>
+            <li class="suggestion" expected="yes">momeentâst</li>
+            <li class="suggestion">momentast</li>
+            <li class="suggestion">momentt</li>
+            <li class="suggestion">momenttest</li>
+            <li class="suggestion">momenttsa</li>
+            <li class="suggestion">-momentast</li>
           </ul>
         </td>
         <td/>
@@ -3099,49 +3147,25 @@
         <td/>
       </tr>
       <tr class="word" corrsugg="-1">
-        <td class="original" status="error" speller="error">momentest</td>
-        <td>TP</td>
-        <td class="expected">momeentâst</td>
-        <td class="edit_dist">2</td>
-        <td class="position">-1</td>
-        <td class="suggestions" count="10">
-          <ul>
-            <li class="suggestion">momeeʹntest</li>
-            <li class="suggestion">Forentest</li>
-            <li class="suggestion">Dometest</li>
-            <li class="suggestion">Romeotest</li>
-            <li class="suggestion">nomintest</li>
-            <li class="suggestion">Lomeitest</li>
-            <li class="suggestion">Nometest</li>
-            <li class="suggestion">Nomeitest</li>
-            <li class="suggestion">Lometest</li>
-            <li class="suggestion">Domeitest</li>
-          </ul>
-        </td>
-        <td/>
-        <td/>
-        <td/>
-        <td/>
-      </tr>
-      <tr class="word" corrsugg="0">
-        <td class="original" status="error" speller="error">momentist</td>
-        <td>TP</td>
-        <td class="expected">momeentâst</td>
-        <td class="edit_dist">2</td>
-        <td class="position">0</td>
-        <td/>
-        <td/>
-        <td/>
-        <td/>
-        <td/>
-      </tr>
-      <tr class="word" corrsugg="0">
         <td class="original" status="error" speller="error">momenttist</td>
         <td>TP</td>
         <td class="expected">momeentâst</td>
         <td class="edit_dist">3</td>
-        <td class="position">0</td>
-        <td/>
+        <td class="position">-1</td>
+        <td class="suggestions" count="10">
+          <ul>
+            <li class="suggestion">momenttest</li>
+            <li class="suggestion">momenttišti</li>
+            <li class="suggestion">momenttâs</li>
+            <li class="suggestion">momenttas</li>
+            <li class="suggestion">momenttjest</li>
+            <li class="suggestion">momentt-ât</li>
+            <li class="suggestion">momenttviist</li>
+            <li class="suggestion">momenttiisi</li>
+            <li class="suggestion">momenttijj</li>
+            <li class="suggestion">momenttätt</li>
+          </ul>
+        </td>
         <td/>
         <td/>
         <td/>
@@ -3180,7 +3204,7 @@
             <li class="suggestion">mutttet</li>
             <li class="suggestion">muʹtteš</li>
             <li class="suggestion">muʹštted</li>
-            <li class="suggestion">muʹttjed</li>
+            <li class="suggestion">muõtted</li>
           </ul>
         </td>
         <td/>
@@ -3205,7 +3229,7 @@
             <li class="suggestion">muʹttep</li>
             <li class="suggestion">muʹštte</li>
             <li class="suggestion">muʹšttem</li>
-            <li class="suggestion">muttted</li>
+            <li class="suggestion">muõtted</li>
           </ul>
         </td>
         <td/>
@@ -3213,24 +3237,24 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="1">
         <td class="original" status="error" speller="error">muädd</td>
         <td>TP</td>
         <td class="expected">muäʹdd</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
+        <td class="position">1</td>
         <td class="suggestions" count="10">
           <ul>
+            <li class="suggestion" expected="yes">muäʹdd</li>
             <li class="suggestion">määdd</li>
             <li class="suggestion">mädd</li>
             <li class="suggestion">puätt</li>
+            <li class="suggestion">mueʹdd</li>
+            <li class="suggestion">muädda</li>
             <li class="suggestion">muärdd</li>
             <li class="suggestion">muärd</li>
+            <li class="suggestion">vuäʹdd</li>
             <li class="suggestion">muõtt</li>
-            <li class="suggestion">määtt</li>
-            <li class="suggestion">suʹdd</li>
-            <li class="suggestion">äuʹdd</li>
-            <li class="suggestion">muäʹr</li>
           </ul>
         </td>
         <td/>
@@ -3244,13 +3268,14 @@
         <td class="expected">mäʹhssemplaaʹne</td>
         <td class="edit_dist">2</td>
         <td class="position">1</td>
-        <td class="suggestions" count="7">
+        <td class="suggestions" count="8">
           <ul>
             <li class="suggestion" expected="yes">mäʹhssemplaaʹne</li>
             <li class="suggestion">mäʹhssemplaane</li>
             <li class="suggestion">mäʹhssemplaannes</li>
-            <li class="suggestion">mäʹhssemlaʹnnje</li>
             <li class="suggestion">mäʹhssemkaʹnne</li>
+            <li class="suggestion">mäʹhssempieʹnne</li>
+            <li class="suggestion">mäʹhssemlaʹnnje</li>
             <li class="suggestion">mäʹhssemplaanže</li>
             <li class="suggestion">mäʹhssempaaʹnte</li>
           </ul>
@@ -3345,9 +3370,9 @@
             <li class="suggestion">mättsuåppmõš-škoouʹlʼjummšam</li>
             <li class="suggestion">mättsuåppmõš-škoouʹlʼjummšan</li>
             <li class="suggestion">lättsuåppmõš-škoouʹlʼjummša</li>
-            <li class="suggestion">sättsuåppmõš-škoouʹlʼjummša</li>
-            <li class="suggestion">tättsuåppmõš-škoouʹlʼjummša</li>
-            <li class="suggestion">mättsuåppmõš-škoouʹlʼjummšai</li>
+            <li class="suggestion">määttsuåppmõš-škoouʹlʼjummša</li>
+            <li class="suggestion">ättsuåppmõš-škoouʹlʼjummša</li>
+            <li class="suggestion">mättvuåppmõš-škoouʹlʼjummša</li>
           </ul>
         </td>
         <td/>
@@ -3367,12 +3392,12 @@
             <li class="suggestion">mättʼtõõlat</li>
             <li class="suggestion">mättʼtõõđât</li>
             <li class="suggestion">mättʹtõõđât</li>
-            <li class="suggestion">mättʼtõõlâž</li>
-            <li class="suggestion">fättʼtõõlât</li>
-            <li class="suggestion">mättʼtõõvât</li>
             <li class="suggestion">kättʼtõõlât</li>
+            <li class="suggestion">meättʼtõõlât</li>
+            <li class="suggestion">mättʼtõõlâst</li>
+            <li class="suggestion">mättʼtõõvât</li>
+            <li class="suggestion">mättʼtõõlâž</li>
             <li class="suggestion">sättʼtõõlât</li>
-            <li class="suggestion">mättʼtõllât</li>
           </ul>
         </td>
         <td/>
@@ -3489,15 +3514,15 @@
         <td class="suggestions" count="10">
           <ul>
             <li class="suggestion" expected="yes">mâiʹd</li>
+            <li class="suggestion">meid</li>
             <li class="suggestion">mõiʹd</li>
-            <li class="suggestion">miaid</li>
             <li class="suggestion">Said</li>
-            <li class="suggestion">mais</li>
             <li class="suggestion">marid</li>
+            <li class="suggestion">miaid</li>
+            <li class="suggestion">mais</li>
             <li class="suggestion">pâi</li>
             <li class="suggestion">tõid</li>
             <li class="suggestion">mij</li>
-            <li class="suggestion">šâdd</li>
           </ul>
         </td>
         <td/>
@@ -3505,24 +3530,24 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="1">
         <td class="original" status="error" speller="error">neʹttseeiʹdin</td>
         <td>TP</td>
         <td class="expected">neʹttseeidin</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
+        <td class="position">1</td>
         <td class="suggestions" count="10">
           <ul>
+            <li class="suggestion" expected="yes">neʹttseeidin</li>
             <li class="suggestion">neʹttseeiʹbin</li>
-            <li class="suggestion">neʹttseeiʹnin</li>
             <li class="suggestion">neʹttseeiʹmin</li>
-            <li class="suggestion">leʹttseeiʹmin</li>
-            <li class="suggestion">neʹttpeeiʹvin</li>
-            <li class="suggestion">neʹttseeiʹnen</li>
-            <li class="suggestion">neʹttseeiʹni</li>
-            <li class="suggestion">seʹttseeiʹnin</li>
-            <li class="suggestion">seʹttseeiʹbin</li>
-            <li class="suggestion">neʹttveeiʹnin</li>
+            <li class="suggestion">neʹttseeiʹnin</li>
+            <li class="suggestion">neʹttseeidain</li>
+            <li class="suggestion">neʹttseeidi</li>
+            <li class="suggestion">neʹttseeidid</li>
+            <li class="suggestion">nettseeidin</li>
+            <li class="suggestion">neʹttleeuʹdin</li>
+            <li class="suggestion">nueʹttseeidin</li>
           </ul>
         </td>
         <td/>
@@ -3547,7 +3572,7 @@
             <li class="suggestion">noʹrrem</li>
             <li class="suggestion">korrum</li>
             <li class="suggestion">jorrum</li>
-            <li class="suggestion">norru</li>
+            <li class="suggestion">norrtum</li>
           </ul>
         </td>
         <td/>
@@ -3609,24 +3634,24 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="2">
+      <tr class="word" corrsugg="3">
         <td class="original" status="error" speller="error">Nuʹett</td>
         <td>TP</td>
         <td class="expected">Nueʹtt</td>
         <td class="edit_dist">2</td>
-        <td class="position">2</td>
+        <td class="position">3</td>
         <td class="suggestions" count="10">
           <ul>
             <li class="suggestion">Čueʹtt</li>
+            <li class="suggestion">Kueʹtt</li>
             <li class="suggestion" expected="yes">Nueʹtt</li>
-            <li class="suggestion">Vueʹtt</li>
             <li class="suggestion">Jueʹtt</li>
+            <li class="suggestion">Vueʹtt</li>
+            <li class="suggestion">Šueʹtt</li>
             <li class="suggestion">Nuʹtt</li>
+            <li class="suggestion">Nueʹtte</li>
             <li class="suggestion">Nueʹtti</li>
-            <li class="suggestion">Nuõtt</li>
-            <li class="suggestion">Neʹtt</li>
-            <li class="suggestion">-nueʹtt</li>
-            <li class="suggestion">Nueʹtt-</li>
+            <li class="suggestion">Neett</li>
           </ul>
         </td>
         <td/>
@@ -3648,10 +3673,10 @@
             <li class="suggestion">šuõršorganisaatiai</li>
             <li class="suggestion">čuõrorganisaatiai</li>
             <li class="suggestion">muõrrorganisaatiai</li>
+            <li class="suggestion">nuõttorganisaatiai</li>
             <li class="suggestion">tuõrriorganisaatiai</li>
             <li class="suggestion">kuõrorganisaatiai</li>
             <li class="suggestion">kuõrriorganisaatiai</li>
-            <li class="suggestion">nuurrorganisaatiai</li>
           </ul>
         </td>
         <td/>
@@ -3673,10 +3698,10 @@
             <li class="suggestion">šuõršorganisaatiaid</li>
             <li class="suggestion">čuõrorganisaatiaid</li>
             <li class="suggestion">muõrrorganisaatiaid</li>
+            <li class="suggestion">nuõttorganisaatiaid</li>
             <li class="suggestion">tuõrriorganisaatiaid</li>
             <li class="suggestion">kuõrorganisaatiaid</li>
             <li class="suggestion">kuõrriorganisaatiaid</li>
-            <li class="suggestion">nuurrorganisaatiaid</li>
           </ul>
         </td>
         <td/>
@@ -3699,9 +3724,9 @@
             <li class="suggestion">nuõrttsääʹmǩiõli</li>
             <li class="suggestion">nuõrttsääʹmǩiõll</li>
             <li class="suggestion">nuõrttsääʹmmkuõl</li>
+            <li class="suggestion">nuõttsääʹmǩiõl</li>
             <li class="suggestion">nuõrttsääʹmmmiõl</li>
             <li class="suggestion">nuõrttsääʹmmpiõl</li>
-            <li class="suggestion">nuõrttsääʹmmiil</li>
           </ul>
         </td>
         <td/>
@@ -3930,14 +3955,14 @@
           <ul>
             <li class="suggestion" expected="yes">peäʹlest</li>
             <li class="suggestion">beäʹlest</li>
+            <li class="suggestion">pieʹlbest</li>
             <li class="suggestion">pueʹlest</li>
-            <li class="suggestion">jeäʹlest</li>
-            <li class="suggestion">peäʹles</li>
-            <li class="suggestion">peäʹđest</li>
+            <li class="suggestion">pieʹljest</li>
+            <li class="suggestion">pieʹlčest</li>
             <li class="suggestion">teäʹlest</li>
             <li class="suggestion">ǩeäʹlest</li>
-            <li class="suggestion">piõʹlest</li>
-            <li class="suggestion">peäʹltest</li>
+            <li class="suggestion">peäʹles</li>
+            <li class="suggestion">jeäʹlest</li>
           </ul>
         </td>
         <td/>
@@ -3951,11 +3976,18 @@
         <td class="expected">pieʹss-sõõʹjid</td>
         <td class="edit_dist">1</td>
         <td class="position">-1</td>
-        <td class="suggestions" count="3">
+        <td class="suggestions" count="10">
           <ul>
+            <li class="suggestion">pieʹsssõõʹjid</li>
+            <li class="suggestion">peäʹsssõõʹjid</li>
             <li class="suggestion">bieʹsssõõʹjid</li>
-            <li class="suggestion">ǩieʹssisõõʹjid</li>
-            <li class="suggestion">sieʹssisõõʹjid</li>
+            <li class="suggestion">pieʹsspõõʹjid</li>
+            <li class="suggestion">pieʹsssõõʹjed</li>
+            <li class="suggestion">pieʹsssõõʹrid</li>
+            <li class="suggestion">pieʹssvõõʹjid</li>
+            <li class="suggestion">sieʹsssõõʹjid</li>
+            <li class="suggestion">pieʹsssõõʹji</li>
+            <li class="suggestion">vieʹsssõõʹjid</li>
           </ul>
         </td>
         <td/>
@@ -3963,13 +3995,18 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="0">
+      <tr class="word" corrsugg="-1">
         <td class="original" status="error" speller="error">pieʹssʼsââi</td>
         <td>TP</td>
         <td class="expected">pieʹss-sââj</td>
         <td class="edit_dist">2</td>
-        <td class="position">0</td>
-        <td/>
+        <td class="position">-1</td>
+        <td class="suggestions" count="2">
+          <ul>
+            <li class="suggestion">pieʹsssââij</li>
+            <li class="suggestion">pieʹsssââv</li>
+          </ul>
+        </td>
         <td/>
         <td/>
         <td/>
@@ -4012,12 +4049,12 @@
             <li class="suggestion">piâzzam</li>
             <li class="suggestion">peässam</li>
             <li class="suggestion">piâssâd</li>
+            <li class="suggestion">piâssum</li>
             <li class="suggestion">piâssâp</li>
             <li class="suggestion">piâzzak</li>
             <li class="suggestion">piâzzim</li>
-            <li class="suggestion">piâsstam</li>
-            <li class="suggestion">pââssam</li>
-            <li class="suggestion">ǩeässam</li>
+            <li class="suggestion">jiâssam</li>
+            <li class="suggestion">piâssat</li>
           </ul>
         </td>
         <td/>
@@ -4062,34 +4099,38 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="2">
-        <td class="original" status="error" speller="error">Pirrõsminister</td>
-        <td>TP</td>
+      <tr class="word" corrsugg="badaccept">
+        <td class="original" status="error" speller="correct">Pirrõsminister</td>
+        <td>FN</td>
         <td class="expected">Pirrõsminiʹstter</td>
         <td class="edit_dist">2</td>
-        <td class="position">2</td>
-        <td class="suggestions" count="6">
-          <ul>
-            <li class="suggestion">Pirrõsministeeʹr</li>
-            <li class="suggestion" expected="yes">Pirrõsminiʹstter</li>
-            <li class="suggestion">Pirrõsministeria</li>
-            <li class="suggestion">Pirrõsmanaster</li>
-            <li class="suggestion">Pirrõsmintstes</li>
-            <li class="suggestion">Pirrõsminstes</li>
-          </ul>
-        </td>
+        <td/>
+        <td/>
         <td/>
         <td/>
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="0">
+      <tr class="word" corrsugg="1">
         <td class="original" status="error" speller="error">Presidentt</td>
         <td>TP</td>
         <td class="expected">Presideʹntt</td>
         <td class="edit_dist">1</td>
-        <td class="position">0</td>
-        <td/>
+        <td class="position">1</td>
+        <td class="suggestions" count="10">
+          <ul>
+            <li class="suggestion" expected="yes">Presideʹntt</li>
+            <li class="suggestion">Presidentta</li>
+            <li class="suggestion">Presidenta</li>
+            <li class="suggestion">Presidenttad</li>
+            <li class="suggestion">Presidenttam</li>
+            <li class="suggestion">Presidenttan</li>
+            <li class="suggestion">Presidenttai</li>
+            <li class="suggestion">Presidenttas</li>
+            <li class="suggestion">Presidenttji</li>
+            <li class="suggestion">Presidentže</li>
+          </ul>
+        </td>
         <td/>
         <td/>
         <td/>
@@ -4112,7 +4153,7 @@
             <li class="suggestion">primmât</li>
             <li class="suggestion">priimâm</li>
             <li class="suggestion">priim-ât</li>
-            <li class="suggestion">priimâs</li>
+            <li class="suggestion">priimân</li>
           </ul>
         </td>
         <td/>
@@ -4150,12 +4191,13 @@
         <td class="expected">projeʹkttjååʹđteei</td>
         <td class="edit_dist">1</td>
         <td class="position">1</td>
-        <td class="suggestions" count="6">
+        <td class="suggestions" count="7">
           <ul>
             <li class="suggestion" expected="yes">projeʹkttjååʹđteei</li>
             <li class="suggestion">profeʹttjååʹđteei</li>
-            <li class="suggestion">projeʹkttjååʹđsteei</li>
             <li class="suggestion">projeʹkttjååʹđeei</li>
+            <li class="suggestion">projeʹkttjååʹđsteei</li>
+            <li class="suggestion">projektažjååʹđteei</li>
             <li class="suggestion">-projeʹkttjååʹđteei</li>
             <li class="suggestion">projeʹkttjååʹđteei-</li>
           </ul>
@@ -4171,16 +4213,18 @@
         <td class="expected">proseeʹnt</td>
         <td class="edit_dist">1</td>
         <td class="position">1</td>
-        <td class="suggestions" count="8">
+        <td class="suggestions" count="10">
           <ul>
             <li class="suggestion" expected="yes">proseeʹnt</li>
             <li class="suggestion">proseeʹnti</li>
             <li class="suggestion">proseʹntt</li>
+            <li class="suggestion">prosenta</li>
             <li class="suggestion">Aroseen</li>
             <li class="suggestion">roseen</li>
+            <li class="suggestion">proseentad</li>
+            <li class="suggestion">proseentas</li>
             <li class="suggestion">Troseen</li>
-            <li class="suggestion">-proseeʹnt</li>
-            <li class="suggestion">proseeʹnt-</li>
+            <li class="suggestion">proseentes</li>
           </ul>
         </td>
         <td/>
@@ -4188,24 +4232,24 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="1">
         <td class="original" status="error" speller="error">puärssid</td>
         <td>TP</td>
         <td class="expected">puärrsid</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
+        <td class="position">1</td>
         <td class="suggestions" count="10">
           <ul>
+            <li class="suggestion" expected="yes">puärrsid</li>
             <li class="suggestion">puärsmid</li>
             <li class="suggestion">puårsiid</li>
+            <li class="suggestion">puärrsi</li>
+            <li class="suggestion">puärrsin</li>
+            <li class="suggestion">puärrsad</li>
             <li class="suggestion">puärsmed</li>
             <li class="suggestion">kuärstid</li>
-            <li class="suggestion">muärsǩid</li>
             <li class="suggestion">puärsmim</li>
-            <li class="suggestion">pärrsid</li>
             <li class="suggestion">puärsmin</li>
-            <li class="suggestion">puärsmiǩ</li>
-            <li class="suggestion">puärsmi</li>
           </ul>
         </td>
         <td/>
@@ -4228,9 +4272,9 @@
             <li class="suggestion">puõtt</li>
             <li class="suggestion">puåtti</li>
             <li class="suggestion">puâđi</li>
+            <li class="suggestion">pueʹddi</li>
             <li class="suggestion">tuõtti</li>
-            <li class="suggestion">puuʹti</li>
-            <li class="suggestion">ruõtti</li>
+            <li class="suggestion">muõtti</li>
           </ul>
         </td>
         <td/>
@@ -4324,9 +4368,9 @@
             <li class="suggestion" expected="yes">påʹrddǩeeʹrj</li>
             <li class="suggestion">påʹrddǩeeʹrji</li>
             <li class="suggestion">årddǩeeʹrj</li>
-            <li class="suggestion">kåʹddǩeeʹrj</li>
-            <li class="suggestion">åʹrddǩeeʹrj</li>
             <li class="suggestion">päʹddǩeeʹrj</li>
+            <li class="suggestion">åʹrddǩeeʹrj</li>
+            <li class="suggestion">kåʹddǩeeʹrj</li>
             <li class="suggestion">påʹrddveeʹrj</li>
             <li class="suggestion">låʹddǩeeʹrj</li>
             <li class="suggestion">påʹrddǩeeʹrm</li>
@@ -4479,6 +4523,7 @@
         <td class="suggestions" count="10">
           <ul>
             <li class="suggestion" expected="yes">riâššâd</li>
+            <li class="suggestion">riâššât</li>
             <li class="suggestion">riâššjad</li>
             <li class="suggestion">riâššmad</li>
             <li class="suggestion">riâššâm</li>
@@ -4486,8 +4531,7 @@
             <li class="suggestion">riõššâd</li>
             <li class="suggestion">riâššmid</li>
             <li class="suggestion">riâššjid</li>
-            <li class="suggestion">riâššmõšâd</li>
-            <li class="suggestion">riâššâp</li>
+            <li class="suggestion">riâššted</li>
           </ul>
         </td>
         <td/>
@@ -4495,26 +4539,13 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
-        <td class="original" status="error" speller="error">riâššat</td>
-        <td>TP</td>
+      <tr class="word" corrsugg="badaccept">
+        <td class="original" status="error" speller="correct">riâššat</td>
+        <td>FN</td>
         <td class="expected">riâššât</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
-        <td class="suggestions" count="10">
-          <ul>
-            <li class="suggestion">riâžžât</li>
-            <li class="suggestion">riâžžat</li>
-            <li class="suggestion">riâššâd</li>
-            <li class="suggestion">riâššâm</li>
-            <li class="suggestion">riâžžam</li>
-            <li class="suggestion">rââžžat</li>
-            <li class="suggestion">liâžžat</li>
-            <li class="suggestion">reäššaz</li>
-            <li class="suggestion">riâššâp</li>
-            <li class="suggestion">riâžžak</li>
-          </ul>
-        </td>
+        <td/>
+        <td/>
         <td/>
         <td/>
         <td/>
@@ -4529,15 +4560,15 @@
         <td class="suggestions" count="10">
           <ul>
             <li class="suggestion" expected="yes">riâššâp</li>
+            <li class="suggestion">riâššat</li>
             <li class="suggestion">riâššâm</li>
+            <li class="suggestion">riâššât</li>
             <li class="suggestion">riâššâd</li>
             <li class="suggestion">rââššap</li>
             <li class="suggestion">riâžžam</li>
-            <li class="suggestion">meäššap</li>
             <li class="suggestion">reäššaz</li>
             <li class="suggestion">liâššâp</li>
             <li class="suggestion">riâžžak</li>
-            <li class="suggestion">riõššâp</li>
           </ul>
         </td>
         <td/>
@@ -4545,24 +4576,24 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="1">
         <td class="original" status="error" speller="error">riâššeš</td>
         <td>TP</td>
         <td class="expected">rieʹššeš</td>
         <td class="edit_dist">2</td>
-        <td class="position">-1</td>
+        <td class="position">1</td>
         <td class="suggestions" count="10">
           <ul>
+            <li class="suggestion" expected="yes">rieʹššeš</li>
+            <li class="suggestion">rieʹšše</li>
+            <li class="suggestion">riâššteš</li>
+            <li class="suggestion">riõʹššeš</li>
             <li class="suggestion">viʹššeš</li>
+            <li class="suggestion">lieʹššeš</li>
             <li class="suggestion">riâžžčeš</li>
+            <li class="suggestion">rieʹššem</li>
             <li class="suggestion">riâžžteš</li>
             <li class="suggestion">riâššâm</li>
-            <li class="suggestion">riâššâd</li>
-            <li class="suggestion">riâššmõš</li>
-            <li class="suggestion">riâšši</li>
-            <li class="suggestion">riâššma</li>
-            <li class="suggestion">riâššmen</li>
-            <li class="suggestion">riâššjen</li>
           </ul>
         </td>
         <td/>
@@ -4570,24 +4601,24 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="2">
         <td class="original" status="error" speller="error">riâʹšše</td>
         <td>TP</td>
         <td class="expected">rieʹšše</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
+        <td class="position">2</td>
         <td class="suggestions" count="10">
           <ul>
+            <li class="suggestion">reäʹšše</li>
+            <li class="suggestion" expected="yes">rieʹšše</li>
+            <li class="suggestion">rieʹššeš</li>
+            <li class="suggestion">riõʹšše</li>
+            <li class="suggestion">leäʹšše</li>
+            <li class="suggestion">lieʹšše</li>
+            <li class="suggestion">rieʹššem</li>
             <li class="suggestion">riâšši</li>
+            <li class="suggestion">riâššu</li>
             <li class="suggestion">pâʹšše</li>
-            <li class="suggestion">rââʹšš</li>
-            <li class="suggestion">viʹšše</li>
-            <li class="suggestion">rââʹššes</li>
-            <li class="suggestion">rââʹššez</li>
-            <li class="suggestion">râʹšši</li>
-            <li class="suggestion">rââʹššed</li>
-            <li class="suggestion">rââʹššen</li>
-            <li class="suggestion">râʹššes</li>
           </ul>
         </td>
         <td/>
@@ -4682,16 +4713,19 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="1">
         <td class="original" status="error" speller="error">saaǥǥtuõʹlljeei</td>
         <td>TP</td>
         <td class="expected">saaǥǥtuõʹllʼjeei</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
-        <td class="suggestions" count="2">
+        <td class="position">1</td>
+        <td class="suggestions" count="5">
           <ul>
+            <li class="suggestion" expected="yes">saaǥǥtuõʹllʼjeei</li>
             <li class="suggestion">saaǥǥtuõʹlʼljeei</li>
+            <li class="suggestion">-saaǥǥtuõʹllʼjeei</li>
             <li class="suggestion">saaǥǥtuõʹlʼljeei-</li>
+            <li class="suggestion">saaǥǥtuõʹllʼjeei-</li>
           </ul>
         </td>
         <td/>
@@ -4699,24 +4733,24 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="1">
         <td class="original" status="error" speller="error">seeiʹdin</td>
         <td>TP</td>
         <td class="expected">seeidin</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
+        <td class="position">1</td>
         <td class="suggestions" count="10">
           <ul>
+            <li class="suggestion" expected="yes">seeidin</li>
+            <li class="suggestion">seeiʹbin</li>
             <li class="suggestion">meeiʹdin</li>
             <li class="suggestion">seeiʹmin</li>
             <li class="suggestion">seeiʹnin</li>
-            <li class="suggestion">seeiʹbin</li>
-            <li class="suggestion">peeiʹtin</li>
+            <li class="suggestion">seeiltin</li>
             <li class="suggestion">ǩeeiʹtin</li>
+            <li class="suggestion">peeiʹtin</li>
             <li class="suggestion">peeiʹvin</li>
             <li class="suggestion">leeuʹdin</li>
-            <li class="suggestion">seeiʹn</li>
-            <li class="suggestion">seeiʹni</li>
           </ul>
         </td>
         <td/>
@@ -4724,51 +4758,25 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="1">
-        <td class="original" status="error" speller="error">sieʹbrrkååʹdd</td>
-        <td>TP</td>
+      <tr class="word" corrsugg="badaccept">
+        <td class="original" status="error" speller="correct">sieʹbrrkååʹdd</td>
+        <td>FN</td>
         <td class="expected">seäʹbrrkååʹdd</td>
         <td class="edit_dist">2</td>
-        <td class="position">1</td>
-        <td class="suggestions" count="10">
-          <ul>
-            <li class="suggestion" expected="yes">seäʹbrrkååʹdd</li>
-            <li class="suggestion">sieʹbrkååʹdd</li>
-            <li class="suggestion">seäʹbrrkååʹddi</li>
-            <li class="suggestion">seäʹbrrkåʹdd</li>
-            <li class="suggestion">seäʹbrrlååʹdd</li>
-            <li class="suggestion">sieʹbrkååʹddi</li>
-            <li class="suggestion">sieʹbrkåʹdd</li>
-            <li class="suggestion">eʹbrrkååʹdd</li>
-            <li class="suggestion">sǩieʹrrkååʹdd</li>
-            <li class="suggestion">mieʹvrrkååʹdd</li>
-          </ul>
-        </td>
+        <td/>
+        <td/>
         <td/>
         <td/>
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="1">
-        <td class="original" status="error" speller="error">sieʹbrrkåʹdd</td>
-        <td>TP</td>
+      <tr class="word" corrsugg="badaccept">
+        <td class="original" status="error" speller="correct">sieʹbrrkåʹdd</td>
+        <td>FN</td>
         <td class="expected">seäʹbrrkåʹdd</td>
         <td class="edit_dist">2</td>
-        <td class="position">1</td>
-        <td class="suggestions" count="10">
-          <ul>
-            <li class="suggestion" expected="yes">seäʹbrrkåʹdd</li>
-            <li class="suggestion">sieʹbrkåʹdd</li>
-            <li class="suggestion">seäʹbrrkååʹdd</li>
-            <li class="suggestion">seäʹbrrkäʹdd</li>
-            <li class="suggestion">seäʹbrrkåʹddi</li>
-            <li class="suggestion">seäʹbrrlåʹdd</li>
-            <li class="suggestion">sieʹbrkååʹdd</li>
-            <li class="suggestion">sǩieʹrrkåʹdd</li>
-            <li class="suggestion">eʹbrrkåʹdd</li>
-            <li class="suggestion">mieʹvrrkåʹdd</li>
-          </ul>
-        </td>
+        <td/>
+        <td/>
         <td/>
         <td/>
         <td/>
@@ -4810,24 +4818,24 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="1">
         <td class="original" status="error" speller="error">siõmna</td>
         <td>TP</td>
         <td class="expected">siõmmna</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
+        <td class="position">1</td>
         <td class="suggestions" count="10">
           <ul>
+            <li class="suggestion" expected="yes">siõmmna</li>
             <li class="suggestion">simmna</li>
             <li class="suggestion">siõm-a</li>
-            <li class="suggestion">siõmm-a</li>
+            <li class="suggestion">siõmmni</li>
+            <li class="suggestion">siâmmna</li>
+            <li class="suggestion">siõmmnad</li>
+            <li class="suggestion">siõmmnam</li>
+            <li class="suggestion">siõmmnan</li>
+            <li class="suggestion">siõmmnai</li>
             <li class="suggestion">siõmnad</li>
-            <li class="suggestion">siõmnan</li>
-            <li class="suggestion">siõmtaa</li>
-            <li class="suggestion">siõm</li>
-            <li class="suggestion">siõm-aa</li>
-            <li class="suggestion">siõmâž</li>
-            <li class="suggestion">siõmže</li>
           </ul>
         </td>
         <td/>
@@ -5025,10 +5033,12 @@
         <td class="expected">Suõʹnnʼjelsiid</td>
         <td class="edit_dist">1</td>
         <td class="position">1</td>
-        <td class="suggestions" count="3">
+        <td class="suggestions" count="5">
           <ul>
             <li class="suggestion" expected="yes">Suõʹnnʼjelsiid</li>
             <li class="suggestion">Suõʹnnʼjelsiidi</li>
+            <li class="suggestion">Suõʹnnʼjelsiild</li>
+            <li class="suggestion">Suõʹnnʼjelsiidu</li>
             <li class="suggestion">Suõʹnnʼjelsiid-</li>
           </ul>
         </td>
@@ -5043,13 +5053,14 @@
         <td class="expected">såbbreʹstes</td>
         <td class="edit_dist">2</td>
         <td class="position">1</td>
-        <td class="suggestions" count="6">
+        <td class="suggestions" count="7">
           <ul>
             <li class="suggestion" expected="yes">såbbreʹstes</li>
-            <li class="suggestion">såbbrees</li>
             <li class="suggestion">såbbres</li>
+            <li class="suggestion">såbbrees</li>
             <li class="suggestion">såbbritest</li>
             <li class="suggestion">seäbrstes</li>
+            <li class="suggestion">såbbratem</li>
             <li class="suggestion">såbbratest</li>
           </ul>
         </td>
@@ -5092,8 +5103,8 @@
             <li class="suggestion">säʹmmlaž</li>
             <li class="suggestion">sämma</li>
             <li class="suggestion">Eʹmmla</li>
-            <li class="suggestion">säʹmmlam</li>
             <li class="suggestion">säʹmmlad</li>
+            <li class="suggestion">säʹmmlam</li>
             <li class="suggestion">säʹmmlan</li>
             <li class="suggestion">äʹmmla</li>
             <li class="suggestion">säʹmmlab</li>
@@ -5230,13 +5241,13 @@
             <li class="suggestion">sääʹmteʹǧǧlääʹjji</li>
             <li class="suggestion">sääʹmteʹǧǧlaaʹjji</li>
             <li class="suggestion">sääʹmmteʹǧǧlääʹjji</li>
-            <li class="suggestion">sääʹmteʹǧǧlääʹjj</li>
             <li class="suggestion">sääʹmteʹǧǧlääʹjjid</li>
+            <li class="suggestion">sääʹmteʹǧǧlääʹjj</li>
             <li class="suggestion">sääʹmteʹǧǧlääʹjjin</li>
             <li class="suggestion">sääʹmteʹǧǧlääʹjj-i</li>
             <li class="suggestion">sääʹmteʹǧǧääʹjji</li>
             <li class="suggestion">sääʹmmteiʹǧǧlääʹjji</li>
-            <li class="suggestion">-sääʹmteʹǧǧlääʹjji</li>
+            <li class="suggestion">sääʹmmteäʹǧǧlääʹjji</li>
           </ul>
         </td>
         <td/>
@@ -5304,14 +5315,14 @@
           <ul>
             <li class="suggestion" expected="yes">šieʹtted</li>
             <li class="suggestion">tieʹtted</li>
-            <li class="suggestion">seʹtted</li>
+            <li class="suggestion">nieʹtted</li>
             <li class="suggestion">sieʹltted</li>
             <li class="suggestion">sieʹpted</li>
+            <li class="suggestion">pieʹtted</li>
             <li class="suggestion">sieʹsted</li>
             <li class="suggestion">sieʹstted</li>
-            <li class="suggestion">seäʹptted</li>
-            <li class="suggestion">tieʹdded</li>
-            <li class="suggestion">šieʹttem</li>
+            <li class="suggestion">jieʹtted</li>
+            <li class="suggestion">seʹtted</li>
           </ul>
         </td>
         <td/>
@@ -5457,8 +5468,8 @@
             <li class="suggestion">taʹrjjed</li>
             <li class="suggestion">tajjat</li>
             <li class="suggestion">harjjat</li>
+            <li class="suggestion">tuejjad</li>
             <li class="suggestion">tuärjjad</li>
-            <li class="suggestion">tuâjjad</li>
           </ul>
         </td>
         <td/>
@@ -5620,15 +5631,15 @@
         <td class="suggestions" count="10">
           <ul>
             <li class="suggestion" expected="yes">teâttmašina</li>
-            <li class="suggestion">teâttmašinad</li>
-            <li class="suggestion">teâttmašinan</li>
-            <li class="suggestion">teâttmašinas</li>
-            <li class="suggestion">teâttmašinaz</li>
             <li class="suggestion">teâttmašinai</li>
             <li class="suggestion">teâttmašinam</li>
+            <li class="suggestion">teâttmašinan</li>
+            <li class="suggestion">teâttmašinas</li>
+            <li class="suggestion">teâttmašinad</li>
+            <li class="suggestion">teâttmašinaz</li>
+            <li class="suggestion">Peâttmašina</li>
             <li class="suggestion">teârttmašina</li>
-            <li class="suggestion">teâttmõšinn</li>
-            <li class="suggestion">teâttmânna</li>
+            <li class="suggestion">peâttmašina</li>
           </ul>
         </td>
         <td/>
@@ -5647,13 +5658,13 @@
             <li class="suggestion" expected="yes">teâttan</li>
             <li class="suggestion">teâttam</li>
             <li class="suggestion">teâttâân</li>
-            <li class="suggestion">teârttan</li>
-            <li class="suggestion">teâttad</li>
-            <li class="suggestion">teâttas</li>
-            <li class="suggestion">teâttaz</li>
             <li class="suggestion">teâttnan</li>
             <li class="suggestion">teâttsan</li>
-            <li class="suggestion">teâttâânn</li>
+            <li class="suggestion">tenttan</li>
+            <li class="suggestion">testtan</li>
+            <li class="suggestion">teâttad</li>
+            <li class="suggestion">Peâttan</li>
+            <li class="suggestion">peâttan</li>
           </ul>
         </td>
         <td/>
@@ -5681,13 +5692,26 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="0">
+      <tr class="word" corrsugg="1">
         <td class="original" status="error" speller="error">tiõrvâsvuõttkääzzkõsmieʹrrtieʹǥǥ</td>
         <td>TP</td>
         <td class="expected">tiõrvâsvuõttkääzzkõsmieʹrrtieʹǧǧ</td>
         <td class="edit_dist">2</td>
-        <td class="position">0</td>
-        <td/>
+        <td class="position">1</td>
+        <td class="suggestions" count="10">
+          <ul>
+            <li class="suggestion" expected="yes">tiõrvâsvuõttkääzzkõsmieʹrrtieʹǧǧ</li>
+            <li class="suggestion">tiõrvâsvuõttkääzzkõsmieʹrrtieʹdd</li>
+            <li class="suggestion">tiõrvâsvuõttkääzzkõsmieʹrrtieʹrd</li>
+            <li class="suggestion">tiõrvâsvuõttkääzzkõsmieʹrrtieʹrr</li>
+            <li class="suggestion">tiõrvâsvuõttkääzzkõsmieʹrrtieʹst</li>
+            <li class="suggestion">tiõrvâsvuõttkääzzkõsmieʹrrtieʹđi</li>
+            <li class="suggestion">tiõrvâsvuõttkääzzkõsmieʹrrtieʹll</li>
+            <li class="suggestion">tiõrvâsvuõttkääzzkõsmieʹrrtieʹrm</li>
+            <li class="suggestion">tiõrvâsvuõttkääzzkõsmieʹrrtieʹǩǩ</li>
+            <li class="suggestion">tiõrvâsvuõttkääzzkõsmieʹrrtieʹpp</li>
+          </ul>
+        </td>
         <td/>
         <td/>
         <td/>
@@ -5816,11 +5840,11 @@
             <li class="suggestion">tuâjjriâššâmõʹsse</li>
             <li class="suggestion">tuâjjriâššmõšõʹsse</li>
             <li class="suggestion">tuâjjrââššamõʹsse</li>
-            <li class="suggestion">kuâjjriâššâmõʹsse</li>
-            <li class="suggestion">tuâjjriâššilõʹsse</li>
-            <li class="suggestion">tuâjjliâššâmõʹsse</li>
-            <li class="suggestion">suâjjriâššiõʹsse</li>
-            <li class="suggestion">tuâjjriâššiõpsse</li>
+            <li class="suggestion">tuejjriâššâmõʹsse</li>
+            <li class="suggestion">tuâjjriõššâmõʹsse</li>
+            <li class="suggestion">tuâjjriõššiõʹsse</li>
+            <li class="suggestion">tuâjjliâššiõʹsse</li>
+            <li class="suggestion">tuâjjriâššiõʹpsse</li>
           </ul>
         </td>
         <td/>
@@ -5849,24 +5873,24 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="1">
         <td class="original" status="error" speller="error">tuõʹjju</td>
         <td>TP</td>
         <td class="expected">tuõjju</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
+        <td class="position">1</td>
         <td class="suggestions" count="10">
           <ul>
+            <li class="suggestion" expected="yes">tuõjju</li>
             <li class="suggestion">vuõjju</li>
+            <li class="suggestion">vuõʹjje</li>
             <li class="suggestion">juõʹjji</li>
             <li class="suggestion">vuõʹjji</li>
-            <li class="suggestion">tuåjju</li>
+            <li class="suggestion">čuõʹjje</li>
+            <li class="suggestion">suõjju</li>
             <li class="suggestion">tõʹjje</li>
-            <li class="suggestion">vuõrjju</li>
-            <li class="suggestion">tõjju</li>
+            <li class="suggestion">čuõjju</li>
             <li class="suggestion">tuårjju</li>
-            <li class="suggestion">tuõju</li>
-            <li class="suggestion">tuõʹrji</li>
           </ul>
         </td>
         <td/>
@@ -5887,11 +5911,11 @@
             <li class="suggestion">tuâjjriâššâmõʹsse</li>
             <li class="suggestion">tuâjjriâššmõšõʹsse</li>
             <li class="suggestion">tuâjjrââššamõʹsse</li>
-            <li class="suggestion">kuâjjriâššâmõʹsse</li>
-            <li class="suggestion">tuâjjriâššilõʹsse</li>
-            <li class="suggestion">tuâjjliâššâmõʹsse</li>
-            <li class="suggestion">suâjjriâššiõʹsse</li>
-            <li class="suggestion">tuâjjriâššiõpsse</li>
+            <li class="suggestion">tuejjriâššâmõʹsse</li>
+            <li class="suggestion">tuâjjriõššâmõʹsse</li>
+            <li class="suggestion">tuâjjriõššiõʹsse</li>
+            <li class="suggestion">tuâjjliâššiõʹsse</li>
+            <li class="suggestion">tuâjjriâššiõʹpsse</li>
           </ul>
         </td>
         <td/>
@@ -5913,10 +5937,10 @@
             <li class="suggestion">toimmjumuš</li>
             <li class="suggestion">tårmmjumuš</li>
             <li class="suggestion">tåimmjumuz</li>
+            <li class="suggestion">tuåmmtumuš</li>
             <li class="suggestion">tåimmjumus</li>
             <li class="suggestion">puåimmtumuš</li>
             <li class="suggestion">-tåimmjumuš</li>
-            <li class="suggestion">tåimmjumuš-</li>
           </ul>
         </td>
         <td/>
@@ -6003,14 +6027,18 @@
         <td class="expected">uʹčteeʹlid</td>
         <td class="edit_dist">1</td>
         <td class="position">1</td>
-        <td class="suggestions" count="6">
+        <td class="suggestions" count="10">
           <ul>
             <li class="suggestion" expected="yes">uʹčteeʹlid</li>
             <li class="suggestion">uʹčteeʹlin</li>
             <li class="suggestion">uʹčteeʹli</li>
+            <li class="suggestion">uʹčteelad</li>
             <li class="suggestion">uʹčteeʹled</li>
-            <li class="suggestion">uʹčteeʹli-</li>
-            <li class="suggestion">-uʹčteeʹlid</li>
+            <li class="suggestion">uʹčteelʼjid</li>
+            <li class="suggestion">uʹčteelaid</li>
+            <li class="suggestion">uʹčteeled</li>
+            <li class="suggestion">uʹčteela</li>
+            <li class="suggestion">uʹčteelsad</li>
           </ul>
         </td>
         <td/>
@@ -6146,8 +6174,8 @@
             <li class="suggestion">viiʒʒad</li>
             <li class="suggestion">šviʒʒad</li>
             <li class="suggestion">vaʒʒâd</li>
-            <li class="suggestion">viiʒʒâd</li>
             <li class="suggestion">viʒʒâǥ</li>
+            <li class="suggestion">viiʒʒâd</li>
           </ul>
         </td>
         <td/>
@@ -6192,10 +6220,10 @@
             <li class="suggestion">viʒʒtum</li>
             <li class="suggestion">viʒʒu</li>
             <li class="suggestion">aiccum</li>
+            <li class="suggestion">viccam</li>
             <li class="suggestion">ciccum</li>
             <li class="suggestion">viccâm</li>
             <li class="suggestion">võccum</li>
-            <li class="suggestion">viccam</li>
             <li class="suggestion">väʒʒam</li>
             <li class="suggestion">vikkum</li>
           </ul>
@@ -6319,10 +6347,10 @@
             <li class="suggestion">ǩeerjlâž</li>
             <li class="suggestion">meerlaž</li>
             <li class="suggestion">veärlaž</li>
-            <li class="suggestion">veerǥlai</li>
-            <li class="suggestion">veeitlaž</li>
             <li class="suggestion">ǩeerjaž</li>
             <li class="suggestion">ǩeerjla</li>
+            <li class="suggestion">ǩeerjlai</li>
+            <li class="suggestion">veeitlaž</li>
           </ul>
         </td>
         <td/>
@@ -6345,9 +6373,9 @@
             <li class="suggestion">vâl</li>
             <li class="suggestion">Real</li>
             <li class="suggestion">seâl</li>
+            <li class="suggestion">jeʹl</li>
             <li class="suggestion">vueʹl</li>
             <li class="suggestion">meâl</li>
-            <li class="suggestion">veâll</li>
           </ul>
         </td>
         <td/>
@@ -6368,11 +6396,11 @@
             <li class="suggestion">võboršeʹǩǩed</li>
             <li class="suggestion">võboršiiʹǩǩin</li>
             <li class="suggestion">võboršeeʹǩǩ</li>
+            <li class="suggestion">võboršeǩeeʹǩǩen</li>
             <li class="suggestion">võboršeeʹǩǩid</li>
             <li class="suggestion">võboršeeʹǩǩest</li>
             <li class="suggestion">võboršeeʹǩǩi</li>
             <li class="suggestion">võboršeeʹǩǩ-a</li>
-            <li class="suggestion">võboršeeʹǩǩ-i</li>
           </ul>
         </td>
         <td/>
@@ -6380,18 +6408,21 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="1">
         <td class="original" status="error" speller="error">võboršeʹǩ</td>
         <td>TP</td>
         <td class="expected">võboršeǩ</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
-        <td class="suggestions" count="4">
+        <td class="position">1</td>
+        <td class="suggestions" count="7">
           <ul>
+            <li class="suggestion" expected="yes">võboršeǩ</li>
             <li class="suggestion">võboršeʹǩǩ</li>
             <li class="suggestion">võboršeeʹǩǩ</li>
             <li class="suggestion">-võboršeʹǩǩ</li>
             <li class="suggestion">võboršeʹǩǩ-</li>
+            <li class="suggestion">võboršeǩ-</li>
+            <li class="suggestion">-võboršeǩ</li>
           </ul>
         </td>
         <td/>
@@ -6405,12 +6436,14 @@
         <td class="expected">vueiʹnnemnalla</td>
         <td class="edit_dist">1</td>
         <td class="position">1</td>
-        <td class="suggestions" count="4">
+        <td class="suggestions" count="6">
           <ul>
             <li class="suggestion" expected="yes">vueiʹnnemnalla</li>
             <li class="suggestion">vueiʹnnemnälla</li>
             <li class="suggestion">vueiʹnnemtalla</li>
+            <li class="suggestion">veinntemnalla</li>
             <li class="suggestion">vuåinčemnalla</li>
+            <li class="suggestion">veinnamnalla</li>
           </ul>
         </td>
         <td/>
@@ -6579,24 +6612,24 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="3">
+      <tr class="word" corrsugg="4">
         <td class="original" status="error" speller="error">vuärdd</td>
         <td>TP</td>
         <td class="expected">vuârdd</td>
         <td class="edit_dist">1</td>
-        <td class="position">3</td>
+        <td class="position">4</td>
         <td class="suggestions" count="10">
           <ul>
+            <li class="suggestion">vuäʹdd</li>
             <li class="suggestion">vuäʹrdd</li>
             <li class="suggestion">vuäitt</li>
             <li class="suggestion" expected="yes">vuârdd</li>
+            <li class="suggestion">muäʹdd</li>
             <li class="suggestion">vuʹvdd</li>
             <li class="suggestion">veʹrdd</li>
+            <li class="suggestion">vueʹdd</li>
             <li class="suggestion">vuärdad</li>
             <li class="suggestion">vuärdda</li>
-            <li class="suggestion">kuärdd</li>
-            <li class="suggestion">muärdd</li>
-            <li class="suggestion">suärdd</li>
           </ul>
         </td>
         <td/>
@@ -6616,12 +6649,12 @@
             <li class="suggestion">vuäzzlaž</li>
             <li class="suggestion">vuäzzlai</li>
             <li class="suggestion">vuäzzlan</li>
+            <li class="suggestion">vuässa</li>
             <li class="suggestion">vuäzza</li>
             <li class="suggestion">vuäzzlad</li>
             <li class="suggestion">vuäzzlam</li>
             <li class="suggestion">vuäzzlab</li>
             <li class="suggestion">vuässõs</li>
-            <li class="suggestion">vuässan</li>
           </ul>
         </td>
         <td/>
@@ -6642,9 +6675,9 @@
             <li class="suggestion">vuäzzla</li>
             <li class="suggestion">vuäzzlai</li>
             <li class="suggestion">vuäzzlan</li>
+            <li class="suggestion">vuäzzlad</li>
             <li class="suggestion">vuäzzlam</li>
             <li class="suggestion">vuäzzaž</li>
-            <li class="suggestion">vuäzzlad</li>
             <li class="suggestion">vuäzzlab</li>
             <li class="suggestion">vuässan</li>
           </ul>
@@ -6666,12 +6699,12 @@
             <li class="suggestion">vuäzzlaž</li>
             <li class="suggestion">vuäzzlai</li>
             <li class="suggestion">vuäzzlan</li>
-            <li class="suggestion">vuäzzlam</li>
             <li class="suggestion">vuäzzlad</li>
+            <li class="suggestion">vuäzzlam</li>
             <li class="suggestion">vuäzzlab</li>
-            <li class="suggestion">kueʹssla</li>
             <li class="suggestion">kuäʹssja</li>
-            <li class="suggestion">ruäʹssva</li>
+            <li class="suggestion">vieʹssla</li>
+            <li class="suggestion">vuäʹssnad</li>
           </ul>
         </td>
         <td/>
@@ -6696,7 +6729,7 @@
             <li class="suggestion">vuäzzlam</li>
             <li class="suggestion">vuäzzlab</li>
             <li class="suggestion">kuäʹssjaž</li>
-            <li class="suggestion">kueʹsslaž</li>
+            <li class="suggestion">vuäʹssnad</li>
           </ul>
         </td>
         <td/>
@@ -6717,11 +6750,11 @@
             <li class="suggestion">vuäzzlažvuõđâs</li>
             <li class="suggestion">vuäzzlažvõõđâst</li>
             <li class="suggestion">vuäzzlažjuõđâst</li>
+            <li class="suggestion">vuäzzlažluõđâst</li>
             <li class="suggestion">vuäzzlažtuõđâst</li>
             <li class="suggestion">vuäzzlažvuõjâst</li>
-            <li class="suggestion">vuäzzlažluõđâst</li>
-            <li class="suggestion">vuäzzlažvuõnâst</li>
             <li class="suggestion">vuäzzlažvuõmâst</li>
+            <li class="suggestion">vuäzzlažvuõnâst</li>
           </ul>
         </td>
         <td/>
@@ -6771,7 +6804,7 @@
             <li class="suggestion">vaassliʹžžen</li>
             <li class="suggestion">viõssliʹžžen</li>
             <li class="suggestion">vuäʹrliʹžžen</li>
-            <li class="suggestion">vuåskliʹžžen</li>
+            <li class="suggestion">vuâzzliʹžžen</li>
           </ul>
         </td>
         <td/>
@@ -6794,9 +6827,9 @@
             <li class="suggestion">kuäʹssjiʹžžen</li>
             <li class="suggestion">kueʹssliʹžžen</li>
             <li class="suggestion">ruäʹssviʹžžen</li>
+            <li class="suggestion">vieʹssliʹžžen</li>
             <li class="suggestion">vueʹzzliʹžžen</li>
             <li class="suggestion">-vuäzzliʹžžen</li>
-            <li class="suggestion">cuuʹssliʹžžen</li>
           </ul>
         </td>
         <td/>
@@ -6804,19 +6837,20 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="1">
         <td class="original" status="error" speller="error">vuäǯǯmuužž</td>
         <td>TP</td>
         <td class="expected">vuäǯǯmõõžž</td>
         <td class="edit_dist">2</td>
-        <td class="position">-1</td>
-        <td class="suggestions" count="9">
+        <td class="position">1</td>
+        <td class="suggestions" count="10">
           <ul>
+            <li class="suggestion" expected="yes">vuäǯǯmõõžž</li>
             <li class="suggestion">vuäǯǯamduužž</li>
             <li class="suggestion">viǯǯmuužž</li>
-            <li class="suggestion">lueǯǯmuužž</li>
             <li class="suggestion">vuäjjmuužž</li>
             <li class="suggestion">čueǯǯmuužž</li>
+            <li class="suggestion">lueǯǯmuužž</li>
             <li class="suggestion">vuäđđmuužž</li>
             <li class="suggestion">vuällmuužž</li>
             <li class="suggestion">vuäkkmuužž</li>
@@ -6828,14 +6862,15 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="1">
         <td class="original" status="error" speller="error">vuäǯǯmuužži</td>
         <td>TP</td>
         <td class="expected">vuäǯǯmõõžži</td>
         <td class="edit_dist">2</td>
-        <td class="position">-1</td>
+        <td class="position">1</td>
         <td class="suggestions" count="10">
           <ul>
+            <li class="suggestion" expected="yes">vuäǯǯmõõžži</li>
             <li class="suggestion">vuäǯǯamduužži</li>
             <li class="suggestion">vuäǯǯamtuužži</li>
             <li class="suggestion">lueǯǯmuužži</li>
@@ -6845,7 +6880,6 @@
             <li class="suggestion">vuäđđmuužži</li>
             <li class="suggestion">vuällmuužži</li>
             <li class="suggestion">vuäkkmuužži</li>
-            <li class="suggestion">vuäggmuužži</li>
           </ul>
         </td>
         <td/>
@@ -6863,14 +6897,14 @@
           <ul>
             <li class="suggestion" expected="yes">vuäǯǯ</li>
             <li class="suggestion">vueʹǯǯ</li>
+            <li class="suggestion">vuäʹmm</li>
+            <li class="suggestion">vuäǯǯa</li>
+            <li class="suggestion">vuäʹbb</li>
+            <li class="suggestion">vuäʹdd</li>
             <li class="suggestion">vuäʹđ</li>
-            <li class="suggestion">vuäʹri</li>
             <li class="suggestion">vuõʹǯǯi</li>
-            <li class="suggestion">vueʹǯǯi</li>
             <li class="suggestion">luäǯǯ</li>
-            <li class="suggestion">čuäʹlǯǯ</li>
-            <li class="suggestion">vuäʹr</li>
-            <li class="suggestion">vuäʹr-</li>
+            <li class="suggestion">lueʹǯǯ</li>
           </ul>
         </td>
         <td/>
@@ -6913,13 +6947,13 @@
             <li class="suggestion" expected="yes">vuõss-sâjjsa</li>
             <li class="suggestion">vueʹsssâjjsa</li>
             <li class="suggestion">vuõss-sâjjsaž</li>
-            <li class="suggestion">vuõskksâjjsa</li>
             <li class="suggestion">vuõss-sâjjsai</li>
+            <li class="suggestion">vuõskksâjjsa</li>
+            <li class="suggestion">vuõss-sâjjsab</li>
+            <li class="suggestion">viõssisâjjsa</li>
             <li class="suggestion">ruõssisâjjsa</li>
             <li class="suggestion">tuõssisâjjsa</li>
-            <li class="suggestion">viõssisâjjsa</li>
-            <li class="suggestion">vuõss-sâjjsab</li>
-            <li class="suggestion">kuõss-sâjjsa</li>
+            <li class="suggestion">vuõss-sâjjsad</li>
           </ul>
         </td>
         <td/>
@@ -6937,14 +6971,14 @@
           <ul>
             <li class="suggestion" expected="yes">vuõss-sâjjsab</li>
             <li class="suggestion">vuõss-sâjjsaž</li>
-            <li class="suggestion">vuõss-sâjjsa</li>
             <li class="suggestion">vuõss-sâjjsai</li>
+            <li class="suggestion">vuõss-sâjjsa</li>
+            <li class="suggestion">vuõss-sâjjsad</li>
             <li class="suggestion">vuõss-sâjjsam</li>
             <li class="suggestion">vuõss-sâjjsan</li>
-            <li class="suggestion">vuõss-sâjjsad</li>
             <li class="suggestion">vueʹsssâjjsab</li>
-            <li class="suggestion">vuõsslâjjsab</li>
             <li class="suggestion">vuõskksâjjsab</li>
+            <li class="suggestion">vuõsskuâjjsab</li>
           </ul>
         </td>
         <td/>
@@ -6963,13 +6997,13 @@
             <li class="suggestion" expected="yes">vuõss-sâjjsaž</li>
             <li class="suggestion">vueʹsssâjjsaž</li>
             <li class="suggestion">vuõss-sâjjsâž</li>
+            <li class="suggestion">vuõss-sâjjsai</li>
             <li class="suggestion">vuõskksâjjsaž</li>
             <li class="suggestion">vuõss-sâjjsa</li>
-            <li class="suggestion">vuõss-sâjjsai</li>
-            <li class="suggestion">ruõssisâjjsaž</li>
-            <li class="suggestion">vuõss-sâjjsab</li>
-            <li class="suggestion">tuõssisâjjsaž</li>
             <li class="suggestion">viõssisâjjsaž</li>
+            <li class="suggestion">ruõssisâjjsaž</li>
+            <li class="suggestion">tuõssisâjjsaž</li>
+            <li class="suggestion">vuõss-sâjjsab</li>
           </ul>
         </td>
         <td/>
@@ -7032,13 +7066,13 @@
             <li class="suggestion">kuäʹss</li>
             <li class="suggestion" expected="yes">vueʹss</li>
             <li class="suggestion">vueʹzz</li>
+            <li class="suggestion">vuäʹmm</li>
             <li class="suggestion">tääʹss</li>
             <li class="suggestion">vuõss</li>
             <li class="suggestion">väʹst</li>
             <li class="suggestion">kueʹss</li>
             <li class="suggestion">vuässõs</li>
-            <li class="suggestion">vuäʹmes</li>
-            <li class="suggestion">rääʹss</li>
+            <li class="suggestion">vuäʹbb</li>
           </ul>
         </td>
         <td/>
@@ -7055,15 +7089,15 @@
         <td class="suggestions" count="10">
           <ul>
             <li class="suggestion" expected="yes">vääʹrrvuäzzla</li>
+            <li class="suggestion">vääʹrrvuässa</li>
             <li class="suggestion">kääʹrrvuäzzla</li>
+            <li class="suggestion">vääʹrrvuäzza</li>
+            <li class="suggestion">väärrvuäzzla</li>
             <li class="suggestion">vääʹrrvuäzzlad</li>
             <li class="suggestion">vääʹrrvuäzzlai</li>
             <li class="suggestion">vääʹrrvuäzzlam</li>
             <li class="suggestion">vääʹrrvuäzzlan</li>
             <li class="suggestion">vääʹrrvuäzzlaž</li>
-            <li class="suggestion">väärrvuäzzla</li>
-            <li class="suggestion">vääʹrrvuäzza</li>
-            <li class="suggestion">vääʹrrvaassla</li>
           </ul>
         </td>
         <td/>
@@ -7081,14 +7115,14 @@
           <ul>
             <li class="suggestion" expected="yes">vääʹrrvuäzzlaž</li>
             <li class="suggestion">kääʹrrvuäzzlaž</li>
-            <li class="suggestion">vääʹrrvuäzzlad</li>
-            <li class="suggestion">vääʹrrvuäzzlai</li>
-            <li class="suggestion">vääʹrrvuäzzlan</li>
-            <li class="suggestion">vääʹrrvuäzzlam</li>
-            <li class="suggestion">väärrvuäzzlaž</li>
-            <li class="suggestion">vääʹrrvuäzzaž</li>
             <li class="suggestion">vääʹrrvuäzzla</li>
-            <li class="suggestion">vääʹrrvuässad</li>
+            <li class="suggestion">vääʹrrvuäzzaž</li>
+            <li class="suggestion">vääʹrrvuäzzlai</li>
+            <li class="suggestion">vääʹrrvuäzzlam</li>
+            <li class="suggestion">vääʹrrvuäzzlad</li>
+            <li class="suggestion">vääʹrrvuäzzlan</li>
+            <li class="suggestion">väärrvuäzzlaž</li>
+            <li class="suggestion">vääʹrrvuässsad</li>
           </ul>
         </td>
         <td/>
@@ -7195,15 +7229,19 @@
         <td/>
         <td/>
       </tr>
-      <tr class="word" corrsugg="-1">
+      <tr class="word" corrsugg="1">
         <td class="original" status="error" speller="error">õhttsažtuõʹjju</td>
         <td>TP</td>
         <td class="expected">õhttsažtuõjju</td>
         <td class="edit_dist">1</td>
-        <td class="position">-1</td>
-        <td class="suggestions" count="1">
+        <td class="position">1</td>
+        <td class="suggestions" count="5">
           <ul>
+            <li class="suggestion" expected="yes">õhttsažtuõjju</li>
             <li class="suggestion">õhttsažtuõju</li>
+            <li class="suggestion">õhttjažtuõjju</li>
+            <li class="suggestion">õhttmažtuõjju</li>
+            <li class="suggestion">-õhttsažtuõjju</li>
           </ul>
         </td>
         <td/>
