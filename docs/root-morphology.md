@@ -199,12 +199,12 @@ age, and apply different IPA conversion to each of them.
 
 The principle of tagging is that we only tag to the extent needed,
 and following a priority:
-# any untagged word is pronounced with SME orthographic conventions
-# NNO and NOB have identical pronunciation, NNO is only used if
+1. any untagged word is pronounced with SME orthographic conventions
+1. NNO and NOB have identical pronunciation, NNO is only used if
   different in spelling from NOB
-# SWE has mostly the same pronunciation as NOB, and is only used
+1. SWE has mostly the same pronunciation as NOB, and is only used
   if different in spelling from NOB
-# Occasionally even SME (the default) may be tagged, to block other
+1. Occasionally even SME (the default) may be tagged, to block other
   languages from being specified, mainly during semi-automatic
   language tagging sessions
 
@@ -776,6 +776,8 @@ The Usage extents are marked using following tags:
  * **+Largo	** largo variant instead of allegro saaǥǥstõõllâd vs saǥstõõllâd
  * **+Allegro** never last element of compound words
  * **+MWE** never last element of compound words
+ * **+Use/GC** only retained in the HFST Grammar Checker disambiguation analyser
+ * **+Use/-GC** never retained in the HFST Grammar Checker disambiguation analyser
 
 ### Dialect tags:
 
