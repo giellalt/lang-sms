@@ -45,6 +45,8 @@ LIST EOS = (<<<) (</s>); # vislcg and CG-2 together.
 # Tags declared as single-membered LISTs 
 # ======================================
 
+LIST Err/Orth = Err/Orth ;
+
 LIST N = N ;
 LIST Sg = Sg ;
 LIST Pl = Pl ;
@@ -396,10 +398,10 @@ LIST V-DER = Der/st Der/jed Der/oottyd Der/oovvyd Der/oollyd Der/stoollyd Der/st
 
 LIST V-DER-SUF = (".*didh"r) (".*htidh"r)  (".*alledh"r) (".*stidh"r) (".*ehtedh"r) (".*lidh"r) (".*lgidh"r) (".*htjidh"r)  (".*htovvedh"r)  (".*htoevedh"r)  (".*htehtedh"r)  (".*ahtjedh"r)  (".*gåetedh"r) (".*ehtedh"r) (".*gåetedh"r) (".*adtedh"r) (".*edsedh"r) (".*sovvedh"r) ;
 
-LIST N-DER = Der/NomAct Der/NomAg Der/Dimin Der/vuota ;
+LIST N-DER = Der/NomAct Der/NomAg Der/Dimin Der/vuota Der/musj ;
 LIST N-DER-SUF = (".*immie"r) (".*me"r) (".*æjja"r) (".*ije"r) (".*tje"r)  (".*voete"r) ;
 
-LIST A-DER = Der/ldihkie Der/ijes Der/ihks Der/les Der/ldahke Der/ldh ;
+LIST A-DER = Der/ldihkie Der/ijes Der/ihks Der/les Der/ldahke Der/ldh Der/sazh ;
 LIST A-DER-SUF = (".*ldihkie"r) (".*ijes"r) (".*ihks"r) (".*les"r) (".*ldahke"r) (".*ldh"r) ;
 
 LIST PASS = Der/PassS Der/PassL ;
@@ -488,6 +490,12 @@ IFF:S_Interj Interj (-1 BOS)(1 EOS OR CLB) ;
 
 REMOVE:PrfPrc_Not_PxSg1 PxSg1 IF (0 PrfPrc);
 	## Mijjieh saemieh daarah aaj aalkeme gærjah lohkedh.
+
+REMOVE:NotPlPx1 PxPl1 IF (-1 Gen)(0 Ess); #
+
+
+REMOVE:InfNotPxSg2 PxSg2 IF (-1 V)(0 Inf);
+REMOVE:InfNotPxPl2 PxPl2 IF (-1 V)(0 Inf);
 	
 # Pronouns and nouns
 # lij tõn niõđ teâđstam 2020-11-08 Jaska
@@ -1012,6 +1020,9 @@ SELECT:ComNotIne Com (0 Ine LINK *1 COM-ADJ BARRIER S-BOUNDARY) ;
 SELECT:AccNotIll (N Acc) (0 (N Ill) LINK *1 STV BARRIER NOT-ADV) ;
 	## Mov aaj aehtjie gie båanta. Dihte fievsesne fierhten biejjien, govside båhtja, jih gaajhkide juvride biepmedahta.
 
+# Accusative or Genitive
+REMOVE:GenPo Acc IF (0 Gen)(1C Po);
+
 # Indef or Adv
 SELECT:IndefNotAdv (Pron Indef)  (0 Adv) ((*1C A OR N BARRIER NPNH OR CC OR Pron LINK NOT -1 COMMA) OR (1 CC LINK 1 (A Attr) LINK 1 N) OR (1 ("laakan" Adv))) ;
     ## ..., gaajhkh dovnesh seamma vihkeles jih vihkeles ektesne barkedh abpevoetesne.
@@ -1307,6 +1318,30 @@ MAP (@OBJ>) TARGET (Pl Nom) (NOT 0 TIME OR ROUTE)(*1 MAINV + TV BARRIER S-BOUNDA
 MAP (@<OBJ) TARGET (Pl Nom) (*-1 MAINV + TV BARRIER S-BOUNDARY OR COMMA)(NOT 0 TIME OR ROUTE) ;
 	##Doh gøøkte KAARRETJH hijven utnigan.  "kaarretje" N Pl Nom @OBJ> MAP:958
 	##Men Jense, dihte guhten dah BAENIEH ij lij dihte ov geerjene dejtie desnie tjoeredh utnedh. "baenie" N Pl Nom @OBJ> MAP:958 
+
+#!! !!!Removing Err/Orth
+
+#!! Denne regelen fjerner Err/Orth når det er samme lemma, sjøl om morfologien er forskjellig.
+
+
+LIST WORDLEMMA = (".*"r) ;
+
+#!! * __errsub__ removes err/orth forms
+REMOVE:errsub $$WORDLEMMA + Err/Orth (0 $$WORDLEMMA - Err/Orth ) ;   #this one does not function in Apertium because there are no err_orth tags. Alternative rules:
+
+LIST Cmp/SgNom = Cmp/SgNom ;
+LIST Cmp/SgGen = Cmp/SgGen ;
+REMOVE:AllErrOrth SUB:1 Err/Orth IF (0/1 Err/Orth) ;
+REMOVE:NoNomCompounds SUB:1 Cmp/SgNom IF (0/1 Cmp/SgNom) ;
+REMOVE:NoGenCompounds SUB:1 Cmp/SgGen IF (0/1 Cmp/SgGen) ;
+
+REMOVE:alt_errsub2 $$WORDLEMMA + Gen + Ord (0 $$WORDLEMMA + Nom ) ;
+SELECT:alt_errsub2 Prop + Attr (1 Prop OR (np) ) ; 
+
+
+REMOVE:NoAder A-DER IF (0 LEX-A);
+REMOVE:NoNder N-DER IF (0 LEX-N);
+REMOVE:NoVder V-DER IF (0 LEX-V);
 
             AFTER-SECTIONS              #
 # ======================================== #
