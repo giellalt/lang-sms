@@ -1,0 +1,1382 @@
+:# 
+"<NOTE>"
+	"NOTE" ? @X
+"<!>"
+	"!" CLB <W:0.0>
+: 
+
+"<Replace>"
+	"Replace" ? @X
+: 
+"<the>"
+	"the" ? @X
+: 
+"<content>"
+	"content" ? @X
+: 
+"<of>"
+	"of" ? @X
+: 
+"<this>"
+	"this" ? @X
+: 
+"<file>"
+	"file" ? @X
+: 
+"<(>"
+	"(" PUNCT LEFT <W:0.0>
+"<including>"
+	"including" ? @X
+: 
+"<thist>"
+	"thist" ? @X
+: 
+"<comment>"
+	"comment" ? @X
+"<)>"
+	")" PUNCT RIGHT <W:0.0>
+: 
+"<with>"
+	"with" ? @X
+: 
+"<a>"
+	"a" <W:0.0>
+	"a" Pcle <sms> <W:0.0> @PCLE
+:\n
+:# 
+"<number>"
+	"number" ? @X
+: 
+"<of>"
+	"of" ? @X
+: 
+"<paragraphs>"
+	"paragraphs" ? @X
+: 
+"<and>"
+	"and" ? @X
+: 
+"<sentences>"
+	"sentences" ? @X
+: 
+"<suitable>"
+	"suitable" ? @X
+: 
+"<for>"
+	"for" ? @X
+: 
+"<testing>"
+	"testing" ? @X
+: 
+"<regressions>"
+	"regressions" ? @X
+: 
+"<in>"
+	"in" ? @X
+: 
+"<the>"
+	"the" ? @X
+:\n
+:# 
+"<morphological>"
+	"morphological" ? @X
+: 
+"<and>"
+	"and" ? @X
+: 
+"<syntactic>"
+	"syntactic" ? @X
+: 
+"<analyses>"
+	"analyses" ? @X
+"<.>"
+	"." CLB <W:0.0>
+: 
+
+"<The>"
+	"The" ? @X
+: 
+"<whole>"
+	"whole" ? @X
+: 
+"<file>"
+	"file" ? @X
+: 
+"<is>"
+	"is" ? @X
+: 
+"<used>"
+	"used" ? @X
+: 
+"<as>"
+	"as" ? @X
+: 
+"<input>"
+	"input" ? @X
+: 
+"<to>"
+	"to" ? @X
+:\n
+:# 
+"<preprocessing>"
+	"preprocessing" ? @X
+"</>"
+	"/" PUNCT <W:0.0>
+"<segmentation>"
+	"segmentation" ? @X
+"<,>"
+	"," CLB <W:0.0>
+: 
+"<morphological>"
+	"morphological" ? @X
+: 
+"<analysis>"
+	"analysis" ? @X
+"<,>"
+	"," CLB <W:0.0>
+: 
+"<disambiguation>"
+	"disambiguation" ? @X
+"<,>"
+	"," CLB <W:0.0>
+: 
+"<etc>"
+	"etc" ? @X
+"<.>"
+	"." CLB <W:0.0>
+:\n
+:\n
+:\n
+
+"<Tän>"
+	"tät" Pron <sms> Dem Sg Gen <W:0.0> @>N
+: 
+"<suåppmõõžž>"
+	"suåppmõš" N <sms> Sg Gen <W:0.0> @>N
+: 
+"<tiuʹddepiijjmõõžž>"
+	"tiuʹddepiijjmõš" N <sms> Pl Nom <W:0.0> @SUBJ>
+	"tiuʹddepiijjmõš" N <sms> Sg Acc <W:0.0> @OBJ>
+	"tiuʹddepiijjmõš" N <sms> Sg Gen <W:0.0> @>N
+: 
+"<praavmest>"
+	"praavâd" Ex/V Der/NomAct N <sms> Sg Loc <W:0.0> @ADVL>
+: 
+"<âânn>"
+	"âânn" N <sms> Sg Nom <W:0.0> @HNOUN
+	"ââʹnned" V <sms> TV Ind Prs Sg3 <W:0.0> @+FMAINV
+: 
+"<huõl>"
+	"huõll" N <sms> Pl Nom <W:0.0> @<OBJ
+	"huõll" N <sms> Sg Acc <W:0.0> @<OBJ
+	"huõll" N <sms> Sg Gen <W:0.0> @>N
+: 
+"<Tâʹvvjânnmallaš>"
+	"tâʹvvjânnam" Ex/N Der/allash A <sms> Attr <W:0.0> @>N
+	"tâʹvvjânnmallaš" A <sms> Attr <W:0.0> @>N
+: 
+"<sääʹmaaʹšši>"
+	"sääʹmäʹšš" N <sms> Pl Gen <W:0.0> @>N
+: 
+"<veʹrǧǧneǩ-komiteaaʹje>"
+	"komitea" N <sms> Sg Ill <W:0.0> @<ADVL
+		"veʹrǧǧneǩ" N Sem/Hum Cmp/SgNom Cmp <W:0.0>
+: 
+"<kuulli>"
+	"kuulli" A <sms> Attr <W:0.0> @>N
+: 
+"<tuâjj-joukk>"
+	"tuâjj-joukk" N <sms> Sg Nom <W:0.0> @<SUBJ
+"<.>"
+	"." CLB <W:0.0>
+: 
+
+"<Tuâjj-jooukâst>"
+	"tuâjj-joukk" N <sms> Sg Loc <W:0.0> @ADVL>
+: 
+"<lie>"
+	"leeʹd" V <sms> IV Ind Prs Pl3 <W:0.0> @+FMAINV
+: 
+"<kutt>"
+	"kutt" Num <sms> Sg Nom <W:0.0> @<SUBJ
+: 
+"<vuäzzla>"
+	"vueʹss" Hom2 Ex/N Der/lazh A <sms> Pl Nom <W:0.0> @<SUBJ
+	"vueʹss" Hom2 Ex/N Der/lazh A <sms> Sg Acc <W:0.0> @OBJ>
+	"vueʹss" Hom2 Ex/N Der/lazh A <sms> Sg Gen <W:0.0> @Num<
+	"vuäzzlaž" A <sms> Pl Nom <W:0.0> @<SUBJ
+	"vuäzzlaž" A <sms> Sg Acc <W:0.0> @OBJ>
+	"vuäzzlaž" A <sms> Sg Gen <W:0.0> @Num<
+	"vuäzzlaž" N <sms> Pl Nom <W:0.0> @<SUBJ
+	"vuäzzlaž" N <sms> Sg Acc <W:0.0> @OBJ>
+	"vuäzzlaž" N <sms> Sg Gen <W:0.0> @Num<
+"<,>"
+	"," CLB <W:0.0>
+: 
+"<kook>"
+	"kååʹtt" Pron <sms> Rel Pl Nom <W:0.0> @<SUBJ
+: 
+"<eeʹttkâʹstte>"
+	"eeʹttkâʹstted" V <sms> Ind Prs Pl3 <W:0.0> @+FMAINV
+: 
+"<riikkid>"
+	"riikk" N <sms> Pl Acc <W:0.0> @OBJ>
+	"riikk" N <sms> Pl Ill <W:0.0> @>ADVL
+	"rikk" N <sms> Pl Acc <W:0.0> @OBJ>
+	"rikk" N <sms> Pl Ill <W:0.0> @>ADVL
+: 
+"<da>"
+	"da" CC <sms> <W:0.0> @CNP
+: 
+"<sääʹmtiiʹǧǧid>"
+	"sääʹmteʹǧǧ" N <sms> Pl Acc <W:0.0> @<OBJ
+	"sääʹmteʹǧǧ" N <sms> Pl Ill <W:0.0> @<ADVL
+"<.>"
+	"." CLB <W:0.0>
+: 
+
+"<Juõʹǩǩ>"
+	"juõʹǩǩ" Pron <sms> Attr <W:0.0> @>N
+: 
+"<riikk>"
+	"riikk" N <sms> Sg Nom <W:0.0> @SUBJ>
+: 
+"<nõõmat>"
+	"nõõmted" V <sms> Ind Prs Sg3 <W:0.0> @+FMAINV
+: 
+"<õõut>"
+	"õhtt" Num <sms> Pl Nom <W:0.0> @>N
+	"õhtt" Num <sms> Sg Acc <W:0.0> @OBJ>
+	"õhtt" Num <sms> Sg Gen <W:0.0> @>N
+: 
+"<eeʹttkõʹstti>"
+	"eeʹttkâʹstted" V <sms> Act PrsPrc Pl Nom <W:0.0> @<SUBJ
+	"eeʹttkâʹstted" V <sms> Act PrsPrc Sg Nom <W:0.0> @<SUBJ
+: 
+"<da>"
+	"da" CC <sms> <W:0.0> @CVP
+: 
+"<juõʹǩǩ>"
+	"juõʹǩǩ" Pron <sms> Attr <W:0.0> @>N
+: 
+"<sääʹmteʹǧǧ>"
+	"sääʹmteʹǧǧ" N <sms> Sg Nom <W:0.0> @<SUBJ
+: 
+"<nõõmat>"
+	"nõõmted" V <sms> Ind Prs Sg3 <W:0.0> @+FMAINV
+: 
+"<õõut>"
+	"õhtt" Num <sms> Pl Nom <W:0.0> @<SUBJ
+	"õhtt" Num <sms> Sg Acc <W:0.0> @OBJ>
+: 
+"<eeʹttkõʹstti>"
+	"eeʹttkâʹstted" V <sms> Act PrsPrc Sg Nom <W:0.0> @<SUBJ
+"<.>"
+	"." CLB <W:0.0>
+:\n
+
+"<Suåppmõõžž>"
+	"suåppmõš" N <sms> Sg Gen <W:0.0> @>N
+: 
+"<praavmõš>"
+	"praavmõš" N <sms> Sg Nom <W:0.0> @SUBJ>
+: 
+"<šâdd>"
+	"šõddâd" V <sms> IV Ind Prs Sg3 <W:0.0> @+FMAINV
+: 
+"<vuârrsaǥstõõllmõššân>"
+	"saǥstõõllmõš" N <sms> Ess <W:0.0> @<SPRED
+		"vuârr" N Cmp/SgNom Cmp <W:0.0>
+	"saǥstõõllmõš" N <sms> Pl Nom PxPl1 <W:0.0> @<SUBJ
+		"vuârr" N Cmp/SgNom Cmp <W:0.0>
+	"saǥstõõllmõš" N <sms> Sg Acc PxPl1 <W:0.0> @OBJ>
+		"vuârr" N Cmp/SgNom Cmp <W:0.0>
+	"saǥstõõllmõš" N <sms> Sg Gen PxPl1 <W:0.0> @>N
+		"vuârr" N Cmp/SgNom Cmp <W:0.0>
+: 
+"<tuâjj-jooukâst>"
+	"tuâjj-joukk" N <sms> Sg Loc <W:0.0> @<ADVL
+: 
+"<leʹddi>"
+	"leʹddi" A <sms> Pl Nom <W:0.0> @<SUBJ
+	"leʹddi" A <sms> Sg Acc <W:0.0> @OBJ>
+	"leʹddi" A <sms> Sg Nom <W:0.0> @<SUBJ
+: 
+"<puki>"
+	"puk" Pron <sms> Pron <sms> Pl Gen <W:0.0> @>Num
+: 
+"<koolm>"
+	"kolmm" Num <sms> Pl Nom <W:0.0> @<SUBJ
+	"kolmm" Num <sms> Sg Acc <W:0.0> @OBJ>
+	"kolmm" Num <sms> Sg Gen <W:0.0> @>N
+	"koumm" Num <sms> Pl Nom <W:0.0> @<SUBJ
+	"koumm" Num <sms> Sg Acc <W:0.0> @OBJ>
+	"koumm" Num <sms> Sg Gen <W:0.0> @>N
+: 
+"<riikk>"
+	"riikk" N <sms> Pl Nom <W:0.0> @<SUBJ
+	"riikk" N <sms> Sg Acc <W:0.0> @OBJ>
+	"riikk" N <sms> Sg Gen <W:0.0> @>N
+	"riikk" N <sms> Sg Nom <W:0.0> @<SUBJ
+	"rikk" N <sms> Pl Nom <W:0.0> @<SUBJ
+	"rikk" N <sms> Sg Acc <W:0.0> @OBJ>
+	"rikk" N <sms> Sg Gen <W:0.0> @>N
+: 
+"<da>"
+	"da" CC <sms> <W:0.0> @CNP
+: 
+"<tõi>"
+	"tõt" Pron <sms> Dem Pl Gen <W:0.0> @>N
+: 
+"<sääʹmtiiʹǧǧi>"
+	"sääʹmteʹǧǧ" N <sms> Pl Gen <W:0.0> @>N
+: 
+"<kõõsk>"
+	"kõskk" N <sms> Pl Nom <W:0.0> @<SUBJ
+	"kõskk" N <sms> Sg Acc <W:0.0> @<OBJ
+	"kõskk" N <sms> Sg Gen <W:0.0> @<ADVL
+"<.>"
+	"." CLB <W:0.0>
+: 
+
+"<Vuârrsaǥstõõllâm>"
+	"saǥstõõllâd" Ex/V Der/NomAct N <sms> Sg Gen <W:0.0> @>N
+		"vuârr" N Cmp/SgNom Cmp <W:0.0>
+: 
+"<täävtõssân>"
+	"täävtõs" N <sms> Ess <W:0.0> @ADVL>
+: 
+"<lij>"
+	"leeʹd" V <sms> IV Ind Prs Sg3 <W:0.0> @+FMAINV
+: 
+"<tobdsted>"
+	"tobdsted" V <sms> Inf <W:0.0> @X
+: 
+"<vaʹǯǯtõõzzid>"
+	"vaʹǯǯtõs" N <sms> Pl Acc <W:0.0> @OBJ>
+	"vaʹǯǯtõs" N <sms> Pl Ill <W:0.0> @<ADVL
+: 
+"<di>"
+	"di" CC <sms> <W:0.0> @X
+: 
+"<vaajted>"
+	"vaajted" V <sms> Inf <W:0.0> @X
+: 
+"<ǩiõččlâsttmõõžžid>"
+	"ǩiõččlâsttmõš" N <sms> Pl Acc <W:0.0> @OBJ>
+	"ǩiõččlâsttmõš" N <sms> Pl Ill <W:0.0> @<ADVL
+: 
+"<da>"
+	"da" CC <sms> <W:0.0> @CNP
+: 
+"<teâđ>"
+	"teâtt" N <sms> Pl Nom <W:0.0> @<SUBJ
+	"teâtt" N <sms> Sg Acc <W:0.0> @OBJ>
+: 
+"<šiõǥǥ>"
+	"šiõǥǥ" A <sms> Attr <W:0.0> @>A
+: 
+"<vuõʹjji>"
+	"vueʹǩǩ" N <sms> Pl Gen <W:0.0> @>P
+	"vuõjj" Ex/N Der/N2A A <sms> Sg Gen <W:0.0> @>P
+: 
+"<pirr>"
+	"pirr" Adp Po <sms> <W:0.0> @<ADVL
+: 
+"<di>"
+	"di" CC <sms> <W:0.0> @X
+: 
+"<põrggâd>"
+	"põrggâd" V <sms> Inf <W:0.0> @X
+: 
+"<õõutsââʹjest>"
+	"õõutsââʹjest" Adv <sms> <W:0.0> @<ADVL
+: 
+"<õõutmiõllsažvuõʹtte>"
+	"õõutmiõllsažvuõtt" N <sms> Sg Ill <W:0.0> @<ADVL
+: 
+"<suåppmõõžž>"
+	"suåppmõš" N <sms> Pl Nom <W:0.0> @<SUBJ
+	"suåppmõš" N <sms> Sg Acc <W:0.0> @OBJ>
+	"suåppmõš" N <sms> Sg Gen <W:0.0> @>N
+: 
+"<täävtõõzzid>"
+	"täävtõs" N <sms> Pl Acc <W:0.0> @OBJ>
+	"täävtõs" N <sms> Pl Ill <W:0.0> @<ADVL
+: 
+"<ooudeei>"
+	"ooudeei" A <sms> Attr <W:0.0> @>N
+: 
+"<čåuddmõõžžin>"
+	"čåuddmõš" N <sms> Pl Loc <W:0.0> @<ADVL
+	"čåuddmõš" N <sms> Sg Com <W:0.0> @<ADVL
+"<.>"
+	"." CLB <W:0.0>
+:\n
+
+"<Tuâjj-joukk>"
+	"tuâjj-joukk" N <sms> Sg Nom <W:0.0> @SUBJ>
+: 
+"<ǩiõttʼtââll>"
+	"ǩiõttʼtõõllâd" V <sms> Ind Prs Sg3 <W:0.0> @+FMAINV
+: 
+"<temaattlaž>"
+	"temaattlaž" A <sms> Attr <W:0.0> @>N
+: 
+"<kõõččmõõžžid>"
+	"kõõččmõš" N <sms> Pl Ill <W:0.0> @ADVL>
+: 
+"<di>"
+	"di" CC <sms> <W:0.0> @X
+: 
+"<sääʹmtiiʹǧǧin>"
+	"sääʹmteʹǧǧ" N <sms> Pl Loc <W:0.0> @<ADVL
+	"sääʹmteʹǧǧ" N <sms> Sg Com <W:0.0> @>ADVL
+: 
+"<da>"
+	"da" CC <sms> <W:0.0> @X
+: 
+"<jeeʹres>"
+	"jieʹres" A <sms> Attr <W:0.0> @>N
+: 
+"<bieʹlin>"
+	"bieʹll" N <sms> Pl Loc <W:0.0> @<ADVL
+	"bieʹll" N <sms> Sg Com <W:0.0> @ADVL>
+: 
+"<puättam>"
+	"pueʹtted" V <sms> IV Act PrfPrc <W:0.0> @X
+: 
+"<rapoortid>"
+	"raportt" N <sms> Sem/Txt Pl Ill <W:0.0> @ADVL>
+: 
+"<tän>"
+	"tät" Pron <sms> Dem Sg Acc <W:0.0> @OBJ>
+	"tät" Pron <sms> Dem Sg Gen <W:0.0> @>N
+: 
+"<suåppmõõžžâst>"
+	"suåppmõš" N <sms> Sg Loc <W:0.0> @<ADVL
+: 
+"<jurddum>"
+	"juʹrdded" V <sms> Pass PrfPrc <W:0.0> @X
+: 
+"<säʹmmlai>"
+	"säʹmmlaž" N <sms> Sem/Hum Pl Gen <W:0.0> @>N
+: 
+"<vuõiggâdvuõđi>"
+	"vuõiggâdvuõtt" N <sms> Pl Gen <W:0.0> @>N
+: 
+"<tieuʹddmest>"
+	"tieuʹddem" N <sms> Sg Loc <W:0.0> @<ADVL
+"<.>"
+	"." CLB <W:0.0>
+: 
+
+"<Tuâjj-joukk>"
+	"tuâjj-joukk" N <sms> Sg Nom <W:0.0> @SUBJ>
+: 
+"<âlgg>"
+	"õlggâd" V <sms> IV Ind Prs Sg3 <W:0.0> @+FAUXV
+: 
+"<vueiʹtted>"
+	"vueiʹtted" V <sms> TV Inf <W:0.0> @-FAUXV
+: 
+"<tuejjeed>"
+	"tuejjeed" V <sms> TV Inf <W:0.0> @-FMAINV
+: 
+"<õhttsažtuâj>"
+	"õhttsažtuâjj" N <sms> Pl Nom <W:0.0> @<SUBJ
+	"õhttsažtuâjj" N <sms> Sg Acc <W:0.0> @<OBJ
+	"õhttsažtuâjj" N <sms> Sg Gen <W:0.0> @>N
+: 
+"<jeeʹres>"
+	"jieʹres" A <sms> Attr <W:0.0> @>N
+: 
+"<bieʹlivuiʹm>"
+	"bieʹll" N <sms> Pl Com <W:0.0> @<ADVL
+"<.>"
+	"." CLB <W:0.0>
+:\n
+
+"<Suåppmõõžž>"
+	"suåppmõš" N <sms> Sg Gen <W:0.0> @>N
+: 
+"<meäʹr>"
+	"mieʹrr" N <sms> Pl Nom <W:0.0> @SUBJ>
+	"mieʹrr" N <sms> Sg Acc <W:0.0> @OBJ>
+	"mieʹrr" N <sms> Sg Gen <W:0.0> @ADVL>
+: 
+"<ooudeem>"
+	"ooudeed" V <sms> Ind Prt Sg1 <W:0.0> @+FMAINV
+: 
+"<diõtt>"
+	"diõtt" Po <sms> <W:0.0> @<ADVL
+	"diõtt" Po <sms> <gen> <W:0.0> @<ADVL
+: 
+"<tuâjj-joukk>"
+	"tuâjj-joukk" N <sms> Sg Nom <W:0.0> @<SUBJ
+: 
+"<âlgg>"
+	"õlggâd" V <sms> IV Ind Prs Sg3 <W:0.0> @+FAUXV
+: 
+"<vueiʹtted>"
+	"vueiʹtted" V <sms> TV Inf <W:0.0> @-FAUXV
+: 
+"<čuäʹjted>"
+	"čuäʹjted" V <sms> Inf <W:0.0> @-FMAINV
+: 
+"<riikki>"
+	"riikk" N <sms> Pl Gen <W:0.0> @>N
+	"rikk" N <sms> Pl Gen <W:0.0> @>N
+: 
+"<halltõõzzid>"
+	"halltõs" N <sms> Pl Acc <W:0.0> @OBJ>
+	"halltõs" N <sms> Pl Ill <W:0.0> @>ADVL
+: 
+"<da>"
+	"da" CC <sms> <W:0.0> @CNP
+: 
+"<sääʹmtiiʹǧǧid>"
+	"sääʹmteʹǧǧ" N <sms> Pl Acc <W:0.0> @OBJ>
+	"sääʹmteʹǧǧ" N <sms> Pl Ill <W:0.0> @>ADVL
+: 
+"<eʹtǩǩõõzzid>"
+	"eʹtǩǩõs" N <sms> Pl Acc <W:0.0> @OBJ>
+	"eʹtǩǩõs" N <sms> Pl Ill <W:0.0> @>ADVL
+: 
+"<da>"
+	"da" CC <sms> <W:0.0> @CNP
+: 
+"<rapoortid>"
+	"raportt" N <sms> Sem/Txt Pl Acc <W:0.0> @<OBJ
+	"raportt" N <sms> Sem/Txt Pl Ill <W:0.0> @<ADVL
+"<.>"
+	"." CLB <W:0.0>
+: 
+
+"<Jõs>"
+	"jõs" CS <sms> <W:0.0> @CVP
+: 
+"<jeäʹt>"
+	"ij" V <sms> Neg Ind Sg4 <W:0.0> @+FAUXV
+: 
+"<eʹtǩǩõõzz>"
+	"eʹtǩǩõs" N <sms> Pl Nom <W:0.0> @OBJ>
+	"eʹtǩǩõs" N <sms> Sg Acc <W:0.0> @OBJ>
+	"eʹtǩǩõs" N <sms> Sg Gen <W:0.0> @>N
+: 
+"<leʹbe>"
+	"leʹbe" CC <sms> <W:0.0> @CNP
+: 
+"<rapoort>"
+	"raportt" N <sms> Sem/Txt Pl Nom <W:0.0> @<SUBJ
+	"raportt" N <sms> Sem/Txt Sg Acc <W:0.0> @OBJ>
+	"raportt" N <sms> Sem/Txt Sg Gen <W:0.0> @ADVL>
+: 
+"<uvddu>"
+	"uʹvdded" V <sms> TV Imprt ConNegII <W:0.0> @+FMAINV
+: 
+"<õõutmiõllsânji>"
+	"õõutmiõllsânji" Adv <sms> <W:0.0> @ADVL>
+"<,>"
+	"," CLB <W:0.0>
+: 
+"<tuâjj-joouk>"
+	"tuâjj-joukk" N <sms> Pl Nom <W:0.0> @<SUBJ
+	"tuâjj-joukk" N <sms> Sg Acc <W:0.0> @OBJ>
+	"tuâjj-joukk" N <sms> Sg Gen <W:0.0> @>A
+: 
+"<vuäzzla>"
+	"vueʹss" Hom2 Ex/N Der/lazh A <sms> Pl Nom <W:0.0> @SUBJ>
+	"vueʹss" Hom2 Ex/N Der/lazh A <sms> Sg Acc <W:0.0> @OBJ>
+	"vuäzzlaž" A <sms> Pl Nom <W:0.0> @SUBJ>
+	"vuäzzlaž" A <sms> Sg Acc <W:0.0> @OBJ>
+	"vuäzzlaž" N <sms> Pl Nom <W:0.0> @SUBJ>
+	"vuäzzlaž" N <sms> Sg Acc <W:0.0> @OBJ>
+	"vuäzzlaž" N <sms> Sg Gen <W:0.0> @<ADVL
+: 
+"<vuäiʹtte>"
+	"vueiʹtted" V <sms> TV Ind Prs Pl3 <W:0.0> @+FAUXV
+: 
+"<kueʹđđed>"
+	"kueʹđđed" V <sms> Inf <W:0.0> @-FMAINV
+: 
+"<tõõzz>"
+	"tõt" Pron <sms> Dem Sg Ill <W:0.0> @<ADVL
+: 
+"<jeäʹrab>"
+	"jieʹrr" Ex/A Der/Comp A <sms> Attr <W:0.0> @>N
+: 
+"<vuâmmšâttmõõžžid>"
+	"vuâmmšed" Ex/V Der/Caus Der/musj N <sms> Pl Acc <W:0.0> @<OBJ
+	"vuâmmšed" Ex/V Der/Caus Der/musj N <sms> Pl Ill <W:0.0> @<ADVL
+"<.>"
+	"." CLB <W:0.0>
+:\n
+
+"<Tuâjj-joukk>"
+	"tuâjj-joukk" N <sms> Sg Nom <W:0.0> @SUBJ>
+: 
+"<tuʹmmad>"
+	"tuʹmmeed" V <sms> Ind Prs Sg3 <W:0.0> @+FMAINV
+: 
+"<jiiʹjjes>"
+	"jiõčč" Pron <sms> Refl Sg3 Acc <W:0.0> @OBJ>
+	"jiõčč" Pron <sms> Refl Sg3 Gen <W:0.0> @>N
+: 
+"<vuâkkõõzzi>"
+	"vuâkkõs" N <sms> Pl Gen <W:0.0> @>P
+: 
+"<pirr>"
+	"pirr" Adp Po <sms> <W:0.0> @<ADVL
+: 
+"<da>"
+	"da" CC <sms> <W:0.0> @CVP
+: 
+"<mieʹrrad>"
+	"mieʹrreed" V <sms> Ind Prs Sg3 <W:0.0> @+FMAINV
+: 
+"<tõin>"
+	"tõt" Pron <sms> Dem Pl Loc <W:0.0> @<ADVL
+	"tõt" Pron <sms> Dem Sg Com <W:0.0> @ADVL>
+: 
+"<tääʹrǩben>"
+	"tääʹrǩab" Ex/A Der/Comp A <sms> Ess <W:0.0> @X
+	"täʹrǩǩ" Ex/A Der/Comp A <sms> Ess <W:0.0> @X
+: 
+"<pââʹjbeäʹlnn>"
+	"pââʹjbeäʹlnn" Adv <sms> <W:0.0> @ADVL>
+: 
+"<peäggtum>"
+	"peäggted" V <sms> Pass PrfPrc <W:0.0> @X
+	"peäggtum" A <sms> V <sms> Pass PrfPrc <W:0.0> @X
+: 
+"<tuåimmjummšest>"
+	"tåimmjummuš" N <sms> Err/Orth Sg Loc <W:0.0> @<ADVL
+"<.>"
+	"." CLB <W:0.0>
+:\n
+
+"<Suåppmõõžž>"
+	"suåppmõš" N <sms> Pl Nom <W:0.0> @SUBJ>
+	"suåppmõš" N <sms> Sg Acc <W:0.0> @OBJ>
+: 
+"<40>"
+	"40" Num <sms> Sg Acc <W:0.0> @OBJ>
+	"40" Num <sms> Sg Gen <W:0.0> @>N
+	"40" Num <sms> Sg Ill Attr <W:0.0> @>N
+	"40" Num <sms> Sg Loc Attr <W:0.0> @>N
+	"40" Num <sms> Sg Nom <W:0.0> @SUBJ>
+: 
+"<artiklast>"
+	"artikla" N <sms> Sg Loc <W:0.0> @ADVL>
+: 
+"<jurddum>"
+	"juʹrdded" V <sms> Pass PrfPrc <W:0.0> @X
+: 
+"<suåppmõõžž>"
+	"suåppmõš" N <sms> Pl Nom <W:0.0> @SUBJ>
+	"suåppmõš" N <sms> Sg Acc <W:0.0> @OBJ>
+	"suåppmõš" N <sms> Sg Gen <W:0.0> @>N
+: 
+"<tiuʹddepiijjmõõžž>"
+	"tiuʹddepiijjmõš" N <sms> Pl Nom <W:0.0> @SUBJ>
+	"tiuʹddepiijjmõš" N <sms> Sg Acc <W:0.0> @OBJ>
+	"tiuʹddepiijjmõš" N <sms> Sg Gen <W:0.0> @>N
+: 
+"<praavmõõžžâst>"
+	"praavmõš" N <sms> Sg Loc <W:0.0> @ADVL>
+: 
+"<šõddâm>"
+	"šõddâm" N <sms> Pl Nom <W:0.0> @SUBJ>
+	"šõddâm" N <sms> Sg Acc <W:0.0> @OBJ>
+	"šõddâm" N <sms> Sg Gen <W:0.0> @>N
+	"šõddâm" N <sms> Sg Nom <W:0.0> @SUBJ>
+: 
+"<kuulid>"
+	"kull" N <sms> Pl Acc <W:0.0> @OBJ>
+	"kull" N <sms> Pl Ill <W:0.0> @ADVL>
+	"kuul" N <sms> Pl Acc <W:0.0> @OBJ>
+	"kuul" N <sms> Pl Ill <W:0.0> @ADVL>
+: 
+"<jueʹjjet>"
+	"jueʹǩǩed" V <sms> Ind Prs Sg4 <W:0.0> @+FMAINV
+: 
+"<puki>"
+	"puk" Pron <sms> Pron <sms> Pl Gen <W:0.0> @>Num
+: 
+"<koolm>"
+	"kolmm" Num <sms> Pl Nom <W:0.0> @<SUBJ
+	"kolmm" Num <sms> Sg Acc <W:0.0> @OBJ>
+	"kolmm" Num <sms> Sg Gen <W:0.0> @>N
+	"koumm" Num <sms> Pl Nom <W:0.0> @<SUBJ
+	"koumm" Num <sms> Sg Acc <W:0.0> @OBJ>
+	"koumm" Num <sms> Sg Gen <W:0.0> @>N
+: 
+"<riikk>"
+	"riikk" N <sms> Pl Nom <W:0.0> @<SUBJ
+	"riikk" N <sms> Sg Acc <W:0.0> @OBJ>
+	"riikk" N <sms> Sg Gen <W:0.0> @>N
+	"riikk" N <sms> Sg Nom <W:0.0> @<SUBJ
+	"rikk" N <sms> Pl Nom <W:0.0> @<SUBJ
+	"rikk" N <sms> Sg Acc <W:0.0> @OBJ>
+	"rikk" N <sms> Sg Gen <W:0.0> @>N
+: 
+"<kõõsk>"
+	"kõskk" N <sms> Pl Nom <W:0.0> @<SUBJ
+	"kõskk" N <sms> Sg Acc <W:0.0> @OBJ>
+	"kõskk" N <sms> Sg Gen <W:0.0> @>N
+: 
+"<tässa>"
+	"tääʹss" N <sms> Sg Ill <W:0.0> @<ADVL
+: 
+"<leʹbe>"
+	"leʹbe" CC <sms> <W:0.0> @X
+: 
+"<jeeʹres>"
+	"jieʹres" A <sms> Attr <W:0.0> @>N
+: 
+"<suåppmõõžž>"
+	"suåppmõš" N <sms> Pl Nom <W:0.0> @<SUBJ
+	"suåppmõš" N <sms> Sg Acc <W:0.0> @OBJ>
+	"suåppmõš" N <sms> Sg Gen <W:0.0> @<ADVL
+: 
+"<meâldlânji>"
+	"meâldlânji" Adv <sms> <W:0.0> @<ADVL
+"<.>"
+	"." CLB <W:0.0>
+:\n
+
+"<Tän>"
+	"tät" Pron <sms> Dem Sg Gen <W:0.0> @>N
+: 
+"<suåppmõõžž>"
+	"suåppmõš" N <sms> Sg Gen <W:0.0> @ADVL>
+: 
+"<uuʹdet>"
+	"uʹvdded" V <sms> TV Ind Prs Sg4 <W:0.0> @+FMAINV
+: 
+"<puki>"
+	"puk" Pron <sms> Pron <sms> Pl Gen <W:0.0> @>Num
+: 
+"<koolm>"
+	"kolmm" Num <sms> Pl Nom <W:0.0> @<SUBJ
+	"kolmm" Num <sms> Sg Acc <W:0.0> @<OBJ
+	"kolmm" Num <sms> Sg Gen <W:0.0> @>N
+	"koumm" Num <sms> Pl Nom <W:0.0> @<SUBJ
+	"koumm" Num <sms> Sg Acc <W:0.0> @<OBJ
+	"koumm" Num <sms> Sg Gen <W:0.0> @>N
+: 
+"<riikk>"
+	"riikk" N <sms> Pl Nom <W:0.0> @<OBJ
+	"riikk" N <sms> Sg Acc <W:0.0> @<OBJ
+	"riikk" N <sms> Sg Gen <W:0.0> @>N
+	"riikk" N <sms> Sg Nom <W:0.0> @<SUBJ
+	"rikk" N <sms> Pl Nom <W:0.0> @<OBJ
+	"rikk" N <sms> Sg Acc <W:0.0> @<OBJ
+	"rikk" N <sms> Sg Gen <W:0.0> @>N
+: 
+"<sääʹmteeʹǧǧ>"
+	"sääʹmteʹǧǧ" N <sms> Pl Nom <W:0.0> @<OBJ
+	"sääʹmteʹǧǧ" N <sms> Sg Acc <W:0.0> @<OBJ
+	"sääʹmteʹǧǧ" N <sms> Sg Gen <W:0.0> @>N
+: 
+"<priimmâmnalla>"
+	"priimmâd" Ex/V Der/NomAct Der/nalla Adv <sms> <W:0.0> @<ADVL
+: 
+"<ouʹddel>"
+	"ouʹddel" Adv <sms> <W:0.0> @<ADVL
+: 
+"<tõn>"
+	"tõt" Pron <sms> Dem Sg Acc <W:0.0> @<OBJ
+	"tõt" Pron <sms> Dem Sg Gen <W:0.0> @>N
+: 
+"<vuâllaǩeeʹrjtummuž>"
+	"vuâllaǩeeʹrjtummuš" N <sms> Sg Acc <W:0.0> @<OBJ
+	"vuâllaǩeeʹrjtummuš" N <sms> Sg Gen <W:0.0> @<ADVL
+"<.>"
+	"." CLB <W:0.0>
+:\n
+
+"<Tän>"
+	"tät" Pron <sms> Dem Sg Gen <W:0.0> @>N
+: 
+"<suåppmõõžž>"
+	"suåppmõš" N <sms> Sg Gen <W:0.0> @X
+: 
+"<ratifiââʹstet>"
+	"ratifiââʹstet" ? @X
+"<.>"
+	"." CLB <W:0.0>
+:\n
+
+"<Suåppmõš>"
+	"suåppmõš" N <sms> Sg Nom <W:0.0> @SUBJ>
+: 
+"<puätt>"
+	"pueʹtted" V <sms> IV Ind Prs Sg3 <W:0.0> @+FMAINV
+: 
+"<viõʹǩǩe>"
+	"viõkk" N <sms> Sg Ill <W:0.0> @<ADVL
+: 
+"<kolmmlååǥǥad>"
+	"lååkk" N <sms> Pl Nom PxPl2 <W:0.0> @<SUBJ
+		"kolmm" Num Cmp/SgNom Cmp <W:0.0>
+	"lååkk" N <sms> Pl Nom PxSg2 <W:0.0> @<SUBJ
+		"kolmm" Num Cmp/SgNom Cmp <W:0.0>
+	"lååkk" N <sms> Sg Acc PxPl2 <W:0.0> @OBJ>
+		"kolmm" Num Cmp/SgNom Cmp <W:0.0>
+	"lååkk" N <sms> Sg Acc PxSg2 <W:0.0> @OBJ>
+		"kolmm" Num Cmp/SgNom Cmp <W:0.0>
+	"lååkk" N <sms> Sg Gen PxPl2 <W:0.0> @>N
+		"kolmm" Num Cmp/SgNom Cmp <W:0.0>
+	"lååkk" N <sms> Sg Gen PxSg2 <W:0.0> @>N
+		"kolmm" Num Cmp/SgNom Cmp <W:0.0>
+	"lååkk" N <sms> Pl Nom PxPl2 <W:0.0> @<SUBJ
+		"koumm" Num Cmp/SgNom Cmp <W:0.0>
+	"lååkk" N <sms> Pl Nom PxSg2 <W:0.0> @<SUBJ
+		"koumm" Num Cmp/SgNom Cmp <W:0.0>
+	"lååkk" N <sms> Sg Acc PxPl2 <W:0.0> @OBJ>
+		"koumm" Num Cmp/SgNom Cmp <W:0.0>
+	"lååkk" N <sms> Sg Acc PxSg2 <W:0.0> @OBJ>
+		"koumm" Num Cmp/SgNom Cmp <W:0.0>
+	"lååkk" N <sms> Sg Gen PxPl2 <W:0.0> @>N
+		"koumm" Num Cmp/SgNom Cmp <W:0.0>
+	"lååkk" N <sms> Sg Gen PxSg2 <W:0.0> @>N
+		"koumm" Num Cmp/SgNom Cmp <W:0.0>
+: 
+"<peiʹvven>"
+	"peiʹvv" N <sms> Ess <W:0.0> @<SPRED
+: 
+"<mâŋŋa>"
+	"mâŋŋa" Adv <sms> Sem/Time <W:0.0> @<ADVL
+: 
+"<tõʹst>"
+	"tõt" Pron <sms> Dem Sg Loc <W:0.0> @<ADVL
+	"tõʹst" Adv <sms> <W:0.0> @<ADVL
+"<,>"
+	"," CLB <W:0.0>
+: 
+"<ǥu>"
+	"ǥu" CS <sms> <W:0.0> @CVP
+: 
+"<puk>"
+	"puk" Pron <sms> Pron <sms> Sg Nom <W:0.0> @<SUBJ
+: 
+"<vueʹssbeäʹl>"
+	"vueʹssbieʹll" N <sms> Pl Nom <W:0.0> @SUBJ>
+	"vueʹssbieʹll" N <sms> Sg Acc <W:0.0> @OBJ>
+	"vueʹssbieʹll" N <sms> Sg Gen <W:0.0> @ADVL>
+: 
+"<lie>"
+	"leeʹd" V <sms> IV Ind Prs Pl3 <W:0.0> @+FMAINV
+: 
+"<ruõkkâm>"
+	"ruõkkâd" V <sms> Act PrfPrc <W:0.0> @X
+: 
+"<ratifiâʹsttemǩeeʹrjeez>"
+	"ratifiâʹsttemǩeeʹrjeez" ? @X
+: 
+"<Taarrjânnam>"
+	"Taarrjânnam" N <sms> Prop Sem/Plc Sg Gen <W:0.0> @>N
+: 
+"<ålggaaʹššiministeriaaʹje>"
+	"ålggaaʹššiministeria" N <sms> Sem/Org Sg Ill <W:0.0> @<ADVL
+"<.>"
+	"." CLB <W:0.0>
+:\n
+
+"<Taarrjânnam>"
+	"Taarrjânnam" N <sms> Prop Sem/Plc Sg Gen <W:0.0> @>N
+: 
+"<ålggaaʹššiministeria>"
+	"ålggaaʹššiministeria" N <sms> Sem/Org Sg Nom <W:0.0> @SUBJ>
+: 
+"<iʹlmmat>"
+	"iʹlmmted" V <sms> Ind Prs Sg3 <W:0.0> @+FMAINV
+: 
+"<jeeʹres>"
+	"jieʹres" A <sms> Attr <W:0.0> @>N
+: 
+"<bieʹlid>"
+	"bieʹll" N <sms> Pl Acc <W:0.0> @OBJ>
+	"bieʹll" N <sms> Pl Ill <W:0.0> @<ADVL
+: 
+"<ratifiâʹsttemǩiiʹrji>"
+	"ratifiâʹsttemǩeʹrjj" N <sms> Pl Gen <W:0.0> @>N
+: 
+"<ruõkkmõõžžâst>"
+	"ruõkkmõš" N <sms> Sg Loc <W:0.0> @<ADVL
+: 
+"<da>"
+	"da" CC <sms> <W:0.0> @X
+: 
+"<suåppmõõžž>"
+	"suåppmõš" N <sms> Pl Nom <W:0.0> @<SUBJ
+	"suåppmõš" N <sms> Sg Acc <W:0.0> @OBJ>
+	"suåppmõš" N <sms> Sg Gen <W:0.0> @>N
+: 
+"<viõʹǩǩepueʹttemääiʹj>"
+	"viõʹǩǩepueʹttemäiʹǧǧ" N <sms> Pl Nom <W:0.0> @<SUBJ
+	"viõʹǩǩepueʹttemäiʹǧǧ" N <sms> Sg Acc <W:0.0> @<OBJ
+	"viõʹǩǩepueʹttemäiʹǧǧ" N <sms> Sg Gen <W:0.0> @<ADVL
+"<.>"
+	"." CLB <W:0.0>
+: 
+
+"<Vueʹssbeäʹl>"
+	"vueʹssbieʹll" N <sms> Pl Nom <W:0.0> @SUBJ>
+: 
+"<vaʹsttee>"
+	"vaʹstteed" V <sms> Ind Prs Pl3 <W:0.0> @+FMAINV
+	"vaʹstteed" V <sms> Ind Prt Pl3 <W:0.0> @+FMAINV
+: 
+"<ääʹšš>"
+	"äʹšš" N <sms> Sg Gen <W:0.0> @>P
+: 
+"<pirr>"
+	"pirr" Adp Po <sms> <W:0.0> @<ADVL
+: 
+"<teâđtummšest>"
+	"teâđtummuš" N <sms> Sg Loc <W:0.0> @<ADVL
+: 
+"<sääʹmtiiʹǧǧid>"
+	"sääʹmteʹǧǧ" N <sms> Pl Acc <W:0.0> @<OBJ
+	"sääʹmteʹǧǧ" N <sms> Pl Ill <W:0.0> @<ADVL
+"<.>"
+	"." CLB <W:0.0>
+:\n
+
+"<Muttsid>"
+	"muuttâs" N <sms> Pl Acc <W:0.0> @OBJ>
+	"muuttâs" N <sms> Pl Ill <W:0.0> @>ADVL
+	"muuttõs" N <sms> Err/Orth Pl Acc <W:0.0> @OBJ>
+	"muuttõs" N <sms> Err/Orth Pl Ill <W:0.0> @>ADVL
+: 
+"<tän>"
+	"tät" Pron <sms> Dem Sg Acc <W:0.0> @OBJ>
+	"tät" Pron <sms> Dem Sg Gen <W:0.0> @>N
+: 
+"<suåppmõʹšše>"
+	"suåppmõš" N <sms> Sg Ill <W:0.0> @ADVL>
+: 
+"<raajât>"
+	"raajjâd" V <sms> TV Ind Prs Sg4 <W:0.0> @+FMAINV
+: 
+"<õhttsažtuâjast>"
+	"õhttsažtuâjj" N <sms> Sg Loc <W:0.0> @<ADVL
+: 
+"<puki>"
+	"puk" Pron <sms> Pron <sms> Pl Gen <W:0.0> @>Num
+: 
+"<koolm>"
+	"kolmm" Num <sms> Pl Nom <W:0.0> @<SUBJ
+	"kolmm" Num <sms> Sg Acc <W:0.0> @<OBJ
+	"kolmm" Num <sms> Sg Gen <W:0.0> @>N
+	"koumm" Num <sms> Pl Nom <W:0.0> @<SUBJ
+	"koumm" Num <sms> Sg Acc <W:0.0> @<OBJ
+	"koumm" Num <sms> Sg Gen <W:0.0> @>N
+: 
+"<riikk>"
+	"riikk" N <sms> Pl Nom <W:0.0> @<OBJ
+	"riikk" N <sms> Sg Acc <W:0.0> @<OBJ
+	"riikk" N <sms> Sg Gen <W:0.0> @>N
+	"riikk" N <sms> Sg Nom <W:0.0> @<SUBJ
+	"rikk" N <sms> Pl Nom <W:0.0> @<OBJ
+	"rikk" N <sms> Sg Acc <W:0.0> @<OBJ
+	"rikk" N <sms> Sg Gen <W:0.0> @>N
+: 
+"<sääʹmtiiʹǧǧivuiʹm>"
+	"sääʹmteʹǧǧ" N <sms> Pl Com <W:0.0> @<ADVL
+"<.>"
+	"." CLB <W:0.0>
+:\n
+
+"<Suåppmõõžž>"
+	"suåppmõš" N <sms> Sg Gen <W:0.0> @>N
+: 
+"<muuttâs>"
+	"muuttâs" N <sms> Sg Nom <W:0.0> @SUBJ>
+	"muuttõs" N <sms> Err/Orth Sg Nom <W:0.0> @SUBJ>
+: 
+"<puätt>"
+	"pueʹtted" V <sms> IV Ind Prs Sg3 <W:0.0> @+FMAINV
+: 
+"<viõʹǩǩe>"
+	"viõkk" N <sms> Sg Ill <W:0.0> @<ADVL
+: 
+"<kolmmlo>"
+	"kolmmlo" ? @X
+: 
+"<peiʹvved>"
+	"peiʹvv" N <sms> Sg Nom PxPl2 <W:0.0> @<SUBJ
+: 
+"<mâŋŋa>"
+	"mâŋŋa" Adv <sms> Sem/Time <W:0.0> @<ADVL
+: 
+"<tõʹst>"
+	"tõt" Pron <sms> Dem Sg Loc <W:0.0> @<ADVL
+	"tõʹst" Adv <sms> <W:0.0> @<ADVL
+"<,>"
+	"," CLB <W:0.0>
+: 
+"<ǥu>"
+	"ǥu" CS <sms> <W:0.0> @CVP
+: 
+"<vueʹssbeäʹl>"
+	"vueʹssbieʹll" N <sms> Pl Nom <W:0.0> @<SUBJ
+	"vueʹssbieʹll" N <sms> Sg Acc <W:0.0> @OBJ>
+	"vueʹssbieʹll" N <sms> Sg Gen <W:0.0> @ADVL>
+: 
+"<lie>"
+	"leeʹd" V <sms> IV Ind Prs Pl3 <W:0.0> @+FMAINV
+: 
+"<iʹlmmtam>"
+	"iʹlmmted" V <sms> Act PrfPrc <W:0.0> @X
+: 
+"<Taarrjânnam>"
+	"Taarrjânnam" N <sms> Prop Sem/Plc Sg Gen <W:0.0> @>N
+: 
+"<ålggaaʹššiministeriaaʹje>"
+	"ålggaaʹššiministeria" N <sms> Sem/Org Sg Ill <W:0.0> @ADVL>
+: 
+"<priimmʼmeez>"
+	"priimmâd" Ex/V Der/NomAct N <sms> Pl Acc PxPl3 <W:0.0> @OBJ>
+	"priimmâd" Ex/V Der/NomAct N <sms> Pl Gen PxPl3 <W:0.0> @>N
+	"priimmâd" Ex/V Der/NomAct N <sms> Pl Ill PxPl3 <W:0.0> @>ADVL
+	"priimmâd" Ex/V Der/NomAct N <sms> Pl Nom PxPl3 <W:0.0> @<SUBJ
+	"priimmâd" Ex/V Der/NomAct N <sms> Sg Acc PxPl3 <W:0.0> @OBJ>
+	"priimmâd" Ex/V Der/NomAct N <sms> Sg Gen PxPl3 <W:0.0> @>N
+	"priimmâd" Ex/V Der/NomAct N <sms> Sg Nom PxPl3 <W:0.0> @<SUBJ
+: 
+"<muttsid>"
+	"muuttâs" N <sms> Pl Acc <W:0.0> @<OBJ
+	"muuttâs" N <sms> Pl Ill <W:0.0> @<ADVL
+	"muuttõs" N <sms> Err/Orth Pl Acc <W:0.0> @<OBJ
+	"muuttõs" N <sms> Err/Orth Pl Ill <W:0.0> @<ADVL
+"<.>"
+	"." CLB <W:0.0>
+:\n
+
+"<Vueʹssbieʹll>"
+	"vueʹssbieʹll" N <sms> Sg Nom <W:0.0> @SUBJ>
+: 
+"<vuäitt>"
+	"vueiʹtted" V <sms> TV Ind Prs Sg3 <W:0.0> @+FAUXV
+: 
+"<čåuddõõttâd>"
+	"čåuddõõttâd" V <sms> Inf <W:0.0> @-FMAINV
+: 
+"<suåppmõõžžâst>"
+	"suåppmõš" N <sms> Sg Loc <W:0.0> @<ADVL
+: 
+"<iʹlmmteeʹl>"
+	"iʹlmmted" V <sms> Ger Instr <W:0.0> @-FMAINV
+: 
+"<ääʹššest>"
+	"äʹšš" N <sms> Sg Loc <W:0.0> @<ADVL
+: 
+"<ǩeerjlânji>"
+	"ǩeerjlânji" Adv <sms> <W:0.0> @<ADVL
+: 
+"<Taarrjânnam>"
+	"Taarrjânnam" N <sms> Prop Sem/Plc Sg Gen <W:0.0> @>N
+: 
+"<ålggaaʹššiministeriaaʹje>"
+	"ålggaaʹššiministeria" N <sms> Sem/Org Sg Ill <W:0.0> @<ADVL
+"<,>"
+	"," CLB <W:0.0>
+: 
+"<kååʹtt>"
+	"kååʹtt" Pron <sms> Rel Sg Nom <W:0.0> @<SUBJ
+: 
+"<iʹlmmat>"
+	"iʹlmmted" V <sms> Ind Prs Sg3 <W:0.0> @+FMAINV
+: 
+"<jeeʹres>"
+	"jieʹres" A <sms> Attr <W:0.0> @>N
+: 
+"<vueʹssbieʹlid>"
+	"vueʹssbieʹll" N <sms> Pl Acc <W:0.0> @OBJ>
+	"vueʹssbieʹll" N <sms> Pl Ill <W:0.0> @ADVL>
+: 
+"<kõõččmõõžžâst>"
+	"kõõččmõš" N <sms> Sg Loc <W:0.0> @<ADVL
+: 
+"<åårrai>"
+	"åårrai" A <sms> Attr <W:0.0> @>N
+: 
+"<iʹlmmtõõzz>"
+	"iʹlmmtõs" N <sms> Pl Nom <W:0.0> @<SUBJ
+	"iʹlmmtõs" N <sms> Sg Acc <W:0.0> @OBJ>
+	"iʹlmmtõs" N <sms> Sg Gen <W:0.0> @>N
+: 
+"<vuâsttaväʹlddmest>"
+	"vuâsttaväʹldded" Ex/V Der/NomAct N <sms> Sg Loc <W:0.0> @<ADVL
+: 
+"<da>"
+	"da" CC <sms> <W:0.0> @X
+: 
+"<iʹlmmtõõzz>"
+	"iʹlmmtõs" N <sms> Pl Nom <W:0.0> @<SUBJ
+	"iʹlmmtõs" N <sms> Sg Acc <W:0.0> @OBJ>
+	"iʹlmmtõs" N <sms> Sg Gen <W:0.0> @>N
+: 
+"<siiskõõzzâst>"
+	"siiskõs" N <sms> Sg Loc <W:0.0> @<ADVL
+"<.>"
+	"." CLB <W:0.0>
+: 
+
+"<Vueʹssbeäʹl>"
+	"vueʹssbieʹll" N <sms> Pl Nom <W:0.0> @SUBJ>
+: 
+"<vaʹsttee>"
+	"vaʹstteed" V <sms> Ind Prs Pl3 <W:0.0> @+FMAINV
+	"vaʹstteed" V <sms> Ind Prt Pl3 <W:0.0> @+FMAINV
+: 
+"<ääʹšš>"
+	"äʹšš" N <sms> Sg Gen <W:0.0> @>P
+: 
+"<pirr>"
+	"pirr" Adp Po <sms> <W:0.0> @<ADVL
+: 
+"<teâđtummšest>"
+	"teâđtummuš" N <sms> Sg Loc <W:0.0> @<ADVL
+: 
+"<sääʹmtiiʹǧǧid>"
+	"sääʹmteʹǧǧ" N <sms> Pl Acc <W:0.0> @<OBJ
+	"sääʹmteʹǧǧ" N <sms> Pl Ill <W:0.0> @<ADVL
+"<.>"
+	"." CLB <W:0.0>
+:\n
+
+"<Čåuddõõttmõš>"
+	"čåuddõõttmõš" N <sms> Sg Nom <W:0.0> @SUBJ>
+: 
+"<kuâskk>"
+	"kuõskkâd" V <sms> Ind Prs Sg3 <W:0.0> @+FMAINV
+: 
+"<tåʹlǩ>"
+	"tååʹlǩ" Adv <sms> Err/Orth <W:0.0> @ADVL>
+: 
+"<čåuddõõttmõõžž>"
+	"čåuddõõttmõš" N <sms> Pl Nom <W:0.0> @<SUBJ
+	"čåuddõõttmõš" N <sms> Sg Acc <W:0.0> @OBJ>
+	"čåuddõõttmõš" N <sms> Sg Gen <W:0.0> @<ADVL
+: 
+"<kuâđđam>"
+	"kuâđđad" V <sms> Actio Sg Acc <W:0.0> @OBJ>
+	"kuâđđad" V <sms> Actio Sg Gen <W:0.0> @>N
+	"kuâđđad" V <sms> Actio Sg Nom <W:0.0> @<SUBJ
+: 
+"<vueʹssbeäʹl>"
+	"vueʹssbieʹll" N <sms> Pl Nom <W:0.0> @<SUBJ
+	"vueʹssbieʹll" N <sms> Sg Acc <W:0.0> @OBJ>
+	"vueʹssbieʹll" N <sms> Sg Gen <W:0.0> @<ADVL
+: 
+"<da>"
+	"da" CC <sms> <W:0.0> @CVP
+: 
+"<puätt>"
+	"pueʹtted" V <sms> IV Ind Prs Sg3 <W:0.0> @+FMAINV
+: 
+"<viõʹǩǩe>"
+	"viõkk" N <sms> Sg Ill <W:0.0> @<ADVL
+: 
+"<kuuđ>"
+	"kutt" Num <sms> Pl Nom <W:0.0> @<SUBJ
+	"kutt" Num <sms> Sg Acc <W:0.0> @OBJ>
+	"kutt" Num <sms> Sg Gen <W:0.0> @>N
+: 
+"<määnpââʹj>"
+	"määnpââʹjj" N <sms> Pl Nom <W:0.0> @<SUBJ
+	"määnpââʹjj" N <sms> Sg Gen <W:0.0> @>P
+: 
+"<ǩeeʹjjest>"
+	"ǩeeʹjjest" Adp Po <sms> <W:0.0> @<ADVL
+: 
+"<mâŋŋa>"
+	"mâŋŋa" Adv <sms> Sem/Time <W:0.0> @<ADVL
+: 
+"<tõʹst>"
+	"tõt" Pron <sms> Dem Sg Loc <W:0.0> @<ADVL
+	"tõʹst" Adv <sms> <W:0.0> @<ADVL
+"<,>"
+	"," CLB <W:0.0>
+: 
+"<ǥu>"
+	"ǥu" CS <sms> <W:0.0> @CVP
+: 
+"<Taarrjânnam>"
+	"Taarrjânnam" N <sms> Prop Sem/Plc Sg Gen <W:0.0> @>N
+: 
+"<ålggaaʹššiministeria>"
+	"ålggaaʹššiministeria" N <sms> Sem/Org Pl Nom <W:0.0> @SUBJ>
+	"ålggaaʹššiministeria" N <sms> Sem/Org Sg Acc <W:0.0> @OBJ>
+	"ålggaaʹššiministeria" N <sms> Sem/Org Sg Gen <W:0.0> @ADVL>
+	"ålggaaʹššiministeria" N <sms> Sem/Org Sg Nom <W:0.0> @SUBJ>
+: 
+"<lij>"
+	"leeʹd" V <sms> IV Ind Prs Sg3 <W:0.0> @+FMAINV
+: 
+"<vuâsttavälddam>"
+	"vuâsttaväʹldded" V <sms> Act PrfPrc <W:0.0> @X
+: 
+"<čåuddõõttâmiʹlmmtõõzz>"
+	"iʹlmmtõs" N <sms> Pl Nom <W:0.0> @<SUBJ
+		"čåuddõõttâd" Ex/V Der/NomAct N Cmp/SgGen Cmp <W:0.0>
+	"iʹlmmtõs" N <sms> Sg Acc <W:0.0> @<OBJ
+		"čåuddõõttâd" Ex/V Der/NomAct N Cmp/SgGen Cmp <W:0.0>
+	"iʹlmmtõs" N <sms> Sg Gen <W:0.0> @<ADVL
+		"čåuddõõttâd" Ex/V Der/NomAct N Cmp/SgGen Cmp <W:0.0>
+	"iʹlmmtõs" N <sms> Pl Nom <W:0.0> @<SUBJ
+		"čåuʹdded" Ex/V Der/oottyd Der/NomAct N Cmp/SgGen Cmp <W:0.0>
+	"iʹlmmtõs" N <sms> Sg Acc <W:0.0> @<OBJ
+		"čåuʹdded" Ex/V Der/oottyd Der/NomAct N Cmp/SgGen Cmp <W:0.0>
+	"iʹlmmtõs" N <sms> Sg Gen <W:0.0> @<ADVL
+		"čåuʹdded" Ex/V Der/oottyd Der/NomAct N Cmp/SgGen Cmp <W:0.0>
+"<.>"
+	"." CLB <W:0.0>
+:\n
+
+"<Tän>"
+	"tät" Pron <sms> Dem Sg Gen <W:0.0> @>N
+: 
+"<suåppmõõžž>"
+	"suåppmõš" N <sms> Sg Gen <W:0.0> @>N
+: 
+"<alggveärlaž>"
+	"alggveärlaž" A <sms> Attr <W:0.0> @>N
+	"alggveärr" Ex/N Der/lazh A <sms> Attr <W:0.0> @>N
+: 
+"<kuuʹsǩid>"
+	"kuʹsǩǩ" N <sms> Pl Acc <W:0.0> @OBJ>
+	"kuʹsǩǩ" N <sms> Pl Ill <W:0.0> @ADVL>
+: 
+"<ruõkkât>"
+	"ruõkkâd" V <sms> Ind Prs Sg4 <W:0.0> @+FMAINV
+: 
+"<Taarrjânnam>"
+	"Taarrjânnam" N <sms> Prop Sem/Plc Sg Gen <W:0.0> @>N
+: 
+"<ålggaaʹššiministeriaaʹje>"
+	"ålggaaʹššiministeria" N <sms> Sem/Org Sg Ill <W:0.0> @<ADVL
+"<,>"
+	"," CLB <W:0.0>
+: 
+"<kååʹtt>"
+	"kååʹtt" Pron <sms> Rel Sg Nom <W:0.0> @<SUBJ
+: 
+"<tuåimat>"
+	"tåimted" V <sms> Err/Orth Ind Prs Sg3 <W:0.0> @+FMAINV
+	"tååimted" V <sms> Err/Orth Ind Prs Sg3 <W:0.0> @+FMAINV
+: 
+"<jeeʹres>"
+	"jieʹres" A <sms> Attr <W:0.0> @>N
+: 
+"<vueʹssbieʹlid>"
+	"vueʹssbieʹll" N <sms> Pl Acc <W:0.0> @OBJ>
+	"vueʹssbieʹll" N <sms> Pl Ill <W:0.0> @ADVL>
+: 
+"<suåppmõõžž>"
+	"suåppmõš" N <sms> Pl Nom <W:0.0> @<SUBJ
+	"suåppmõš" N <sms> Sg Acc <W:0.0> @OBJ>
+	"suåppmõš" N <sms> Sg Gen <W:0.0> @>A
+: 
+"<vuõiggsen>"
+	"vuõiǥâs" N <sms> Ess <W:0.0> @<SPRED
+: 
+"<tuõđštum>"
+	"tuõđšted" V <sms> Pass PrfPrc <W:0.0> @X
+: 
+"<kopioid>"
+	"kopio" N <sms> Pl Acc <W:0.0> @<OBJ
+	"kopio" N <sms> Pl Ill <W:0.0> @<ADVL
+"<.>"
+	"." CLB <W:0.0>
+: 
+
+"<Vueʹssbeäʹl>"
+	"vueʹssbieʹll" N <sms> Pl Nom <W:0.0> @SUBJ>
+: 
+"<vaʹsttee>"
+	"vaʹstteed" V <sms> Ind Prs Pl3 <W:0.0> @+FMAINV
+	"vaʹstteed" V <sms> Ind Prt Pl3 <W:0.0> @+FMAINV
+: 
+"<suåppmõõžž>"
+	"suåppmõš" N <sms> Pl Nom <W:0.0> @<SUBJ
+	"suåppmõš" N <sms> Sg Acc <W:0.0> @OBJ>
+	"suåppmõš" N <sms> Sg Gen <W:0.0> @>A
+: 
+"<vuõiggsen>"
+	"vuõiǥâs" N <sms> Ess <W:0.0> @<SPRED
+: 
+"<tuõđštum>"
+	"tuõđšted" V <sms> Pass PrfPrc <W:0.0> @X
+: 
+"<kopioi>"
+	"kopio" N <sms> Pl Gen <W:0.0> @>N
+: 
+"<tuåimtummšest>"
+	"tååimtummuš" N <sms> Err/Orth Sg Loc <W:0.0> @<ADVL
+: 
+"<sääʹmtiiʹǧǧid>"
+	"sääʹmteʹǧǧ" N <sms> Pl Acc <W:0.0> @<OBJ
+	"sääʹmteʹǧǧ" N <sms> Pl Ill <W:0.0> @<ADVL
+"<.>"
+	"." CLB <W:0.0>
+:\n
+
+"<Tän>"
+	"tät" Pron <sms> Dem Sg Gen <W:0.0> @>N
+: 
+"<ååsktem>"
+	"ååskted" Ex/V Der/NomAct N <sms> Sg Gen <W:0.0> @>P
+: 
+"<diõtt>"
+	"diõtt" Po <sms> <W:0.0> @-FADVL>
+	"diõtt" Po <sms> <gen> <W:0.0> @-FADVL>
+: 
+"<vueʹssbieʹli>"
+	"vueʹssbieʹll" N <sms> Pl Gen <W:0.0> @ADVL>
+: 
+"<eeʹttkõʹstti>"
+	"eeʹttkâʹstted" V <sms> Act PrsPrc Pl Nom <W:0.0> @SUBJ>
+	"eeʹttkâʹstted" V <sms> Act PrsPrc Sg Nom <W:0.0> @SUBJ>
+: 
+"<lie>"
+	"leeʹd" V <sms> IV Ind Prs Pl3 <W:0.0> @+FMAINV
+: 
+"<vuâllaǩeeʹrjtam>"
+	"vuâllaǩeeʹrjted" V <sms> Act PrfPrc <W:0.0> @X
+: 
+"<tän>"
+	"tät" Pron <sms> Dem Sg Acc <W:0.0> @OBJ>
+	"tät" Pron <sms> Dem Sg Gen <W:0.0> @>N
+: 
+"<suåppmõõžž>"
+	"suåppmõš" N <sms> Sg Acc <W:0.0> @<OBJ
+	"suåppmõš" N <sms> Sg Gen <W:0.0> @<ADVL
+"<.>"
+	"." CLB <W:0.0>
+:\n
+
+"<Suåppmõõžž>"
+	"suåppmõš" N <sms> Pl Nom <W:0.0> @SUBJ>
+	"suåppmõš" N <sms> Sg Acc <W:0.0> @OBJ>
+	"suåppmõš" N <sms> Sg Gen <W:0.0> @ADVL>
+: 
+"<ââʹnet>"
+	"ââʹnned" V <sms> TV Ind Prs Sg4 <W:0.0> @+FMAINV
+: 
+"<vuäǯǯmest>"
+	"vuäǯǯad" V <sms> TV Actio Sg Loc <W:0.0> @<ADVL
+	"vuäǯǯam" N <sms> Sg Loc <W:0.0> @<ADVL
+: 
+"<sääʹmǩiõʹlle>"
+	"sääʹmǩiõll" N <sms> Sg Ill <W:0.0> @<ADVL
+"<.>"
+	"." CLB <W:0.0>
+:\n
+:\n
+
