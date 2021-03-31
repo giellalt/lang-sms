@@ -24,6 +24,7 @@ MD_PAGES=root-morphology.md \
 		  subjunctions-stems.md       \
 		  verbs-affixes.md \
 		  verbs-stems.md \
+		  disambiguator-syntax.md     \
 		  phonology-morphology.md
 # clitics-morphology.md       \
 # punctuation-stems.md        \
