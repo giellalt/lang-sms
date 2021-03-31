@@ -23,4 +23,5 @@ Speller test result [here](speller-report.html).
 * [subjunctions-stems.md](subjunctions-stems.md)
 * [verbs-affixes.md](verbs-affixes.md)
 * [verbs-stems.md](verbs-stems.md)
+* [disambiguator-syntax.md](disambiguator-syntax.md)
 * [phonology-morphology.md](phonology-morphology.md)
