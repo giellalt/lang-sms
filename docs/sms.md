@@ -982,6 +982,7 @@ friskk
  * LEXICON A_SHIOGHGH  šiõǥǥ:šiõǥǥ
 Need work on derivation since this only has positive form. 2018-10-13
 
+
  * LEXICON	A_KOOKKA 	kookka length of/pituinen
 no gradation, has preceding genitive 2018-10-13
 
@@ -1281,7 +1282,7 @@ muõrâž:muõr
 
 
 
- * +Der+Der/toovvyd:»tõõvv IV_LAUKKOOLLYD ;  privative = carative + translative
+ * +Der+Der/toovvyd+V:»tõõvv IV_LAUKKOOLLYD ;  privative = carative + translative
 
 
 
@@ -8379,7 +8380,7 @@ Are these actually necessary 2015-05-30
 
  * LEXICON N_CHYYQDH  čââʹđ:čâđđ
 * Yaml: **N-caad**
-** čââʹđ:čââʹđ
+    - čââʹđ:čââʹđ
 
  * LEXICON N_CHUEQNJ  čueʹnj:čuânˈnj
 stemtype Aǥ-stem
@@ -10347,7 +10348,7 @@ Splitting according to person
 
 # SKOLT SAAMI PROPERNOUN MORPHOLOGY 
 
-THE LEXICON *@OUTSIDE_LEXICONS@* ASSIGNS THE TAG +N+Prop+Attr
+THE LEXICON *@OUTSIDE_LEXICONS@* ASSIGNS THE TAG +Attr
 
 
 
@@ -12753,9 +12754,9 @@ vuäˈđeškuätt
 * *tääidas:* `täiʹdded+V+Imprt+Sg3` (Eng. # (7))
 * *taiddu:* `täiʹdded+V+Pot+Sg3` (Eng. # (8))
 * *täiddaz:* `täiʹdded+V+Imprt+Pl3` (Eng. # (9) +V+Imprt+Pl3 täiddaz)
-* *täiʹdškueʹtted:* `täiʹdded+V+Der/InchL+V+Inf` (Eng. # (10) Allegro)
+* *täiʹdškueʹtted:* `täiʹdded+V+Der+Der/InchL+V+Inf` (Eng. # (10) Allegro)
 * *taiʹddi:* `täiʹdded+V+PrsPrc` (Eng. # (11))
-* *taaidčed:* `täiʹdded+V+Der/ched+V+Inf` (Eng. # (12))
+* *taaidčed:* `täiʹdded+V+Der+Der/ched+V+Inf` (Eng. # (12))
 
 
  * : VSUF-IMPRT-PL3_ED ;   (9) +V+Imprt+Pl3 täiddaz
@@ -13238,7 +13239,7 @@ VSUF-I-POTKOND_YD, VSUF-I-POTKOND_AD and VSUF-POTENTIAL_ED come here
  * LEXICON VSUF-IND-PRS-CONNEG_ED  (6)
 
 
- * +Use/NGminip+Use/NG+Der/st:»st VSUF-VUEJTED-ELSE ;  no allegro
+ * +Use/NGminip+Use/NG+Der+Der/st+V:»st VSUF-VUEJTED-ELSE ;  no allegro
 
 
 
@@ -13507,7 +13508,27 @@ No rules.
 
 
 
-### Verbs
+## Nouns
+
+
+###  Nominative plural
+
+
+
+
+
+
+
+###  Genitive
+
+* **PGenN** selects Gen when (Pron Pers) to the left and N to the right *mu sámevuođa iđuid*
+
+* **CoGen1** (quite strict) selects the first of coordinated genitives *riikkaid, čearuid ja boazoorohagaid ovttasbarggu*
+
+
+
+
+## Verbs
 
 * **IsItConNeg** 
 

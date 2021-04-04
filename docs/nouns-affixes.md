@@ -4872,7 +4872,7 @@ Are these actually necessary 2015-05-30
 
  * LEXICON N_CHYYQDH  čââʹđ:čâđđ
 * Yaml: **N-caad**
-** čââʹđ:čââʹđ
+    - čââʹđ:čââʹđ
 
  * LEXICON N_CHUEQNJ  čueʹnj:čuânˈnj
 stemtype Aǥ-stem

@@ -226,7 +226,27 @@ No rules.
 
 
 
-### Verbs
+## Nouns
+
+
+###  Nominative plural
+
+
+
+
+
+
+
+###  Genitive
+
+* **PGenN** selects Gen when (Pron Pers) to the left and N to the right *mu sámevuođa iđuid*
+
+* **CoGen1** (quite strict) selects the first of coordinated genitives *riikkaid, čearuid ja boazoorohagaid ovttasbarggu*
+
+
+
+
+## Verbs
 
 * **IsItConNeg** 
 
