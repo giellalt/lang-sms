@@ -34,6 +34,7 @@ friskk
  * LEXICON A_SHIOGHGH  šiõǥǥ:šiõǥǥ
 Need work on derivation since this only has positive form. 2018-10-13
 
+
  * LEXICON	A_KOOKKA 	kookka length of/pituinen
 no gradation, has preceding genitive 2018-10-13
 
@@ -333,7 +334,7 @@ muõrâž:muõr
 
 
 
- * +Der+Der/toovvyd:»tõõvv IV_LAUKKOOLLYD ;  privative = carative + translative
+ * +Der+Der/toovvyd+V:»tõõvv IV_LAUKKOOLLYD ;  privative = carative + translative
 
 
 

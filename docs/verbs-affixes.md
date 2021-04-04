@@ -2214,9 +2214,9 @@ vuäˈđeškuätt
 * *tääidas:* `täiʹdded+V+Imprt+Sg3` (Eng. # (7))
 * *taiddu:* `täiʹdded+V+Pot+Sg3` (Eng. # (8))
 * *täiddaz:* `täiʹdded+V+Imprt+Pl3` (Eng. # (9) +V+Imprt+Pl3 täiddaz)
-* *täiʹdškueʹtted:* `täiʹdded+V+Der/InchL+V+Inf` (Eng. # (10) Allegro)
+* *täiʹdškueʹtted:* `täiʹdded+V+Der+Der/InchL+V+Inf` (Eng. # (10) Allegro)
 * *taiʹddi:* `täiʹdded+V+PrsPrc` (Eng. # (11))
-* *taaidčed:* `täiʹdded+V+Der/ched+V+Inf` (Eng. # (12))
+* *taaidčed:* `täiʹdded+V+Der+Der/ched+V+Inf` (Eng. # (12))
 
 
  * : VSUF-IMPRT-PL3_ED ;   (9) +V+Imprt+Pl3 täiddaz
@@ -2699,7 +2699,7 @@ VSUF-I-POTKOND_YD, VSUF-I-POTKOND_AD and VSUF-POTENTIAL_ED come here
  * LEXICON VSUF-IND-PRS-CONNEG_ED  (6)
 
 
- * +Use/NGminip+Use/NG+Der/st:»st VSUF-VUEJTED-ELSE ;  no allegro
+ * +Use/NGminip+Use/NG+Der+Der/st+V:»st VSUF-VUEJTED-ELSE ;  no allegro
 
 
 
