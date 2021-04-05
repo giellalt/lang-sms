@@ -1282,7 +1282,7 @@ muõrâž:muõr
 
 
 
- * +Der+Der/toovvyd+V:»tõõvv IV_LAUKKOOLLYD ;  privative = carative + translative
+ * +Der+Der/toovvyd+V+IV:»tõõvv IV_LAUKKOOLLYD ;  privative = carative + translative
 
 
 
@@ -8983,7 +8983,7 @@ NumContLex=""
 
 
 
- * +Der+Der/N2A: DenominalAdjsCShort ;  2015-08-23 +Der+Der/teqm
+ * +Der+Der/N2A+A: DenominalAdjsCShort ;  2015-08-23 +Der+Der/teqm
 
 
 čâustõk+N+Sg+Gen:čâustõõǥǥ
@@ -9962,7 +9962,7 @@ Used with words like juurd: jurddǥatta
  * +Err/GenreLeudd:a SG-COM_N ;  Leudd 2018-09-20
 
 
- * +Der+Der/N2A: N2A_REAEB3H3HAI ;      N»A
+ * +Der+Der/N2A+A: N2A_REAEB3H3HAI ;      N»A
 
 
 
