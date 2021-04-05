@@ -334,7 +334,7 @@ muõrâž:muõr
 
 
 
- * +Der+Der/toovvyd+V:»tõõvv IV_LAUKKOOLLYD ;  privative = carative + translative
+ * +Der+Der/toovvyd+V+IV:»tõõvv IV_LAUKKOOLLYD ;  privative = carative + translative
 
 
 
