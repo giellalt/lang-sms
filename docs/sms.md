@@ -3517,6 +3517,7 @@ This file documents the Skolt Saami noun morphology, lexicon by lexicon.
  * LEXICON N_  FOR (STILL) UNCLASSIFIED INCOMING NOUNS.
 
 
+
 IRREGULAR NOUN nijdd
  * LEXICON N_NIJDD  nijdd:ni
 
