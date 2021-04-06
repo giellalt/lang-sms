@@ -102,16 +102,16 @@ for f in $fsttype; do
           cut -f2 | grep -v "A+" | grep -v "^$" | sort -u > $generated_lemmas.$f.txt		
 		
 # Generer lemmaer i adjectives med +A+Superl+Sg+Nom, lagre i generated-adjectives
-        sed 's/$/+A+Der\/Superl+A+Sg+Nom/' $suplemmas | $lookup_tool $generator_file.$suffix | \
+        sed 's/$/+A+Der\/Superl+A+Sg+Nom/' $lemmas | $lookup_tool $generator_file.$suffix | \
           cut -f2 | grep -v "A+" | grep -v "^$" | sort -u >> $generated_lemmas.$f.txt		
 
 # Generer lemmaer i adjectives med +A+Comp+Sg+Nom, lagre i generated-adjectives
-        sed 's/$/+A+Der\/Comp+A+Sg+Nom/' $complemmas | $lookup_tool $generator_file.$suffix | \
+        sed 's/$/+A+Der\/Comp+A+Sg+Nom/' $lemmas | $lookup_tool $generator_file.$suffix | \
           cut -f2 | grep -v "A+" | grep -v "^$" | sort -u >> $generated_lemmas.$f.txt		
 
 
 # Generer lemmaer i adjectives med +A+Attr, lagre i generated-adjectives
-        sed 's/$/+A+Attr/' $attrlemmas | $lookup_tool $generator_file.$suffix | \
+        sed 's/$/+A+Attr/' $lemmas | $lookup_tool $generator_file.$suffix | \
           cut -f2 | grep -v "A+" | grep -v "^$" | sort -u >> $generated_lemmas.$f.txt		
 
 # Generer plurale lemmaer i filtered-adjectives med +N+Pl+Nom (som ikke lar seg generer med +A+Sg+Nom).
