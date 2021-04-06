@@ -2430,6 +2430,10 @@ inflection_type="3"
 
  * LEXICON V_POAGXSTED  påǥsted:pååǥǥast
  * LEXICON V0_POAGXSTED  påǥsted:pååǥǥast
+lepsted+V+Inf
+* *lẹẹppast^Pen^VV2V^Pen^CC2CAllegro^RmVow*
+* *lẹ0p00st^Pen^VV2V^Pen^CC2CAllegro^RmVow*
+
 
  * LEXICON V_JOARGXSTED  jårǥsted:jåårǥast
  * LEXICON IV_JOARGXSTED  jårǥsted:jåårǥast
