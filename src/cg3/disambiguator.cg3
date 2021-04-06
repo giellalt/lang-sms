@@ -631,8 +631,8 @@ REMOVE:gujmie (N Sg Nom) (0 ("gujmie" Po) LINK -1 GUJMIE) ;
 
 SELECT:DemPlNounPl Pl IF (-1 Dem + Pl + Nom)(0 N + Sg + Gen);
 
-
-
+#REMOVE:NoAccGenIfPlNom Sg + Acc OR Sg + Gen IF (0 N + Pl + Nom)(*1 V + Pl3 BARRIER NOT-ADV-INT-PCLE);
+SELECT:NoAccGenIfPlNom (0 N + Pl + Nom) IF (*1 V + Pl3 BARRIER NOT-ADV-INT-PCLE);
 
 
 
