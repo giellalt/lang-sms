@@ -3,11 +3,11 @@
 
 # Introduction
 The rule file for Skolt Saami is divided into 5 main types:
-# Definitions
-# Consonant shift rules (tbw)
-# Vowel alternation rules
-# Consonant gradation rules
-# Rules for cleaning up and composing end result
+1. Definitions
+1. Consonant shift rules (tbw)
+1. Vowel alternation rules
+1. Consonant gradation rules
+1. Rules for cleaning up and composing end result
 
 
 # Alphabets, sets and definitions

@@ -12971,6 +12971,10 @@ inflection_type="3"
 
  * LEXICON V_POAGXSTED  påǥsted:pååǥǥast
  * LEXICON V0_POAGXSTED  påǥsted:pååǥǥast
+lepsted+V+Inf
+* *lẹẹppast^Pen^VV2V^Pen^CC2CAllegro^RmVow*
+* *lẹ0p00st^Pen^VV2V^Pen^CC2CAllegro^RmVow*
+
 
  * LEXICON V_JOARGXSTED  jårǥsted:jåårǥast
  * LEXICON IV_JOARGXSTED  jårǥsted:jåårǥast
@@ -13834,11 +13838,11 @@ Denne regelen fjerner Err/Orth når det er samme lemma, sjøl om morfologien er 
 
 # Introduction
 The rule file for Skolt Saami is divided into 5 main types:
-# Definitions
-# Consonant shift rules (tbw)
-# Vowel alternation rules
-# Consonant gradation rules
-# Rules for cleaning up and composing end result
+1. Definitions
+1. Consonant shift rules (tbw)
+1. Vowel alternation rules
+1. Consonant gradation rules
+1. Rules for cleaning up and composing end result
 
 
 # Alphabets, sets and definitions
