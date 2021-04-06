@@ -13519,7 +13519,6 @@ No rules.
 
 
 
-
 ###  Genitive
 
 * **PGenN** selects Gen when (Pron Pers) to the left and N to the right *mu sámevuođa iđuid*
