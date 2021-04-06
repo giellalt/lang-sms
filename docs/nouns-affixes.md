@@ -6158,6 +6158,7 @@ Diminutive derivations
  * +Err/Orth+Err/GenreLeudd+Sg+Nom+PxSg1:%>ž%>amâ K;  Leudd 2018-09-20
  * +Err/Orth+Err/GenreLeudd+Sg+Nom+PxSg1:âž%>amâ K;  Leudd 2018-09-20
 
+
  * LEXICON N_MUORYZH-WITHOUT-PAL-PL  paapp
  * :že ESS/PAR ;	 	 paappžen
 

@@ -1387,7 +1387,9 @@ kuʹvǯǯ+N+Sg+Gen
 
 **ž:0** - used in
 
-
+väžsted+V+Inf
+* *vääžžast^Pen^VV2V^Pen^CC2CAllegro^RmVow^PALK>ed*
+* *vä0ž00st000000>ed*
 
 **z:0** - used in
 * *ǩeâsttez%^PenVow2a%^RmCns*
@@ -1611,15 +1613,18 @@ piiutâs+N+Sg+Nom **clothing/vaate**
 * *sä%^1VOWhss%^V2VV%^XYY2VY%>am*
 * *sääus000%>am*
 
-âʹpsted+V+Inf: **smell a little/haiskahtaa**
-* *ââʹpsest%^Pen%^VV2V%^RmVow*
-* *â0ʹp00st000*
 
 uhss+N+Sg+Gen **door**
 * *uhss%^XYY2VY*
 * *uus00*
 
 
+ǩeäsʼsted+V+Inf:
+* *ǩeä%{ˈ1%}ssast^Pen^CC2CAllegro^RmVow^PALK>ed*
+* *ǩeäˈs00st0000>ed*
+âʹpsted+V+Inf: **smell a little/haiskahtaa**
+* *ââʹpsest%^Pen%^VV2V%^RmVow*
+* *â0ʹp00st000*
 
 **Consonant loss ŋ:0** - used in
 
@@ -1640,6 +1645,9 @@ autt+N+Pl+Nom **car/auto**
 puuttâd+V+Ind+Prt+Sg3: **end/loppua**
 * *puutt%^CC2C%>i*
 * *puuđ00%>i*
+kääđas+N+Sg+Nom:
+kä%^1VOWttas%^Pen%^V2VV%^Pen%^CC2C
+kääđ0as0000
 
 **Even syllabic nouns I, p>v** - pp:v
 * *ǩiâpp%^CC2C*
