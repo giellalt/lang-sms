@@ -13684,7 +13684,6 @@ no rule
 ### Adv or Po/Pr
 
 
-### Illative or genetive
 
 
 
@@ -13693,6 +13692,10 @@ no rule
 
 
 ### Accusative or illative
+
+
+
+
 
 ### Accusative or Genitive
 
