@@ -13872,7 +13872,43 @@ The rule file for Skolt Saami is divided into 5 main types:
 * MODIFIER LETTER APOSTROPHE: U+02BC Syllable marker that appears in writing
 * MODIFIER LETTER VERTICAL LINE: U+02C8 as overlong consonant marker that does not appear in writing except for pedagogical purposes
 
+ for consonant lengthening
+ * %{XC%}:m  
+ * %{XC%}:n  
+ * %{XC%}:v  
+ * %{XC%}:d  
+ * %{XC%}:r  
+ * %{XC%}:l  
+ * %{XC%}:k  
+ * %{XC%}:ǥ  
+ * %{XC%}:s  
+ * %{XC%}:š  
+ * %{XC%}:z  
+ * %{XC%}:ž  
 
+for vowel length
+ * %{õuØ%}:0   
+ * %{ouØ%}:0   
+ * %{âõØ%}:0   
+ * %{ẹiØ%}:0   
+ * %{äaØ%}:0   
+ * %{äåØ%}:0   
+ * %{eiØ%}:0   
+ * %{åoØ%}:0   
+ * %{ẹeiØ%}:0  
+
+for vowel height, by default vowels are low.
+ * %{õu%}:õ     
+ * %{ou%}:o     
+ * %{âõ%}:â     
+ * %{ẹi%}:ẹ     
+ * %{äa%}:ä     
+ * %{äå%}:ä     
+ * %{ei%}:e     
+ * %{åo%}:å     
+ * %{ẹei%}:ẹ    
+ * %{âõe%}:â    
+ * %{âõäe%}:â   
 
 Trigger symbols
  * %^Pen:0  for combinations 2015-09-28 Miikka
@@ -13880,6 +13916,7 @@ Trigger symbols
  *  %^RmVow:0  for removing vowels e, â, a before final consonant in stem
  *  %^UltRmVow:0  for removing vowels e, â, a after final consonant in stem
  *  %^RmCns:0  for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta
+ * %^1VOW:0   
  *  %^2VOW:0 %^3VOW:0 %^4VOW:0 %^5VOW:0  Vow triggers
 
  *  %^VOWLower:0  i>e, õ>â, â>ä, u>o, o>å
@@ -13969,26 +14006,45 @@ Literal quotes and angles must be escaped (cf morpheme boundaries below):
 * <
 
 Morpheme boundaries:
+* Derivational prefix
+* Derivational suffix
+* Inflectional prefix
+* Inflectional suffix
+* Word boundary for both lexicalised and dynamic compounds
+* (exceptional) soft hyphenation point
+* Hyphen for question particle
+* Compounding rules
 
 End of alphabet definitions
 
 
 ## Sets
 
- *           B C D F G H J K L M N P Q R S T V W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ; 
- *           B C D F G H J K L M N P Q R S T W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;   
+ *  Cns	= b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž   
+           B C D F G H J K L M N P Q R S T V W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ; 
+ *  CNoV	= b c d f g h j k l m n p q r s t w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž      
+            B C D F G H J K L M N P Q R S T W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;   
 
- *           B C D F G H K L M N P Q R S T V W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;   
+ *  CNoJ	= b c d f g h k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž       
+            B C D F G H K L M N P Q R S T V W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;   
 
- *  Vow	= a e ẹ i o u å ä â õ           	      	      	      	        
- *           A E Ẹ I O U Å Ä Â Õ ;	    				        
+ *  Vow	= a e ẹ i o u å ä â õ         
+            A E Ẹ I O U Å Ä Â Õ ;	    
+ *  VowNoIU  = a e ẹ o å ä â õ       
+              A E Ẹ O Å Ä Â Õ ;    
 
- *  	  B C D F G H K L M N P Q R S T W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;     
+ *  CNoJV  = b c d f g h k l m n p q r s t w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž    
+  	  B C D F G H K L M N P Q R S T W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;     
 
- *            B C F G H J K M N P Q S T V W X Z Đ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;        
+ *  CNoDLRZ = b c f g h j k m n p q s t v w x z đ ǯ č ŋ ǩ ǧ ǥ š ž     
+             B C F G H J K M N P Q S T V W X Z Đ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;        
 
+ * Ltrs = Vow Cns ;    
 
- *  %^VOWRaise %^VOWSH %^CLong %^K2GG ;  dummies in Sg.Nom and Sg.Gen
+ * Dummy = %^PAL %^PALE %^PALẸ %^PALÕ %^PALÄ                    
+   %^CC2C %^CCC2C %^CCC2CC %^XYY2IY %^XYY2XY %^KK2GG %^XYY2VY %^KKK2GG %^KKK2ZERO %^C2CC    
+   %^J2I %^Pen %^V2VV %^VOWLower %^RmVow %^PenVow2a %^RmCns %^VC %^V2VV    
+   %^VOWRaise %^VOWSH %^CLong %^K2GG ;  dummies in Sg.Nom and Sg.Gen
 
 
 
@@ -13999,8 +14055,10 @@ Short consonant cluster
 
 
 Onset consonant or word boundary
+ * OnSetC = [[%{XC%}:Cns|Cns:Cns] (Cns:|%{XC%}:Cns) |.#.|#:|%>](») ;     
 
 Penultimate consonant
+ * PenUltCns = [Cns:](%{XC%}:) ;     
 
 following morpheme or word boundary
 ```
@@ -14011,14 +14069,20 @@ following morpheme or word boundary
 
 possible triggers before VOWLower and VOWRaise
 
+ * BetweenStemAndHeight = [( %^VV2V: ](%^V2VV:)) ;     
 
 possible triggers before PALE PALÄ
+ * BetweenStemAndPALAllo = [ BetweenStemAndHeight (%^VOWLower:](%^VOWRaise:)) ;     
 
 possible triggers between stem and PALNo and PAL
+ * BetweenStemAndPALNo = [ BetweenStemAndHeight [(%^VOWLower:|%^VOWRaise:) (%^PALÄ:|%^PALE:|%^PALẸ:|%^PALÕ:](%^PALÂ:)] (%^Allegro:) ) ;     
 
 possible triggers between vowel length and consonant grade
+ * BetweenVowLenghtAndConsGrade = [ (%^VOWRaise:|%^VOWLower:) ( ((%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:|%^VOWLower: %^PALÄ:|(%^PALÕ:|%^PALE:|%^PALÄ:|%^PALẸ:) (%^Allegro:) %^PAL:)| (%^Allegro:) (%^PALÕ:|%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÂ:) (%^PALNo:](%^PAL:) ) ) ;     
+
 
 possible triggers between word end and consonant grade
+ * BetweenStemAndConsGrade = [ BetweenStemAndHeight BetweenVowLenghtAndConsGrade ];     
 
 possible triggers between vowel length and Palatalization
 
