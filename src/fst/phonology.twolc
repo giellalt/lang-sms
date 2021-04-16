@@ -52,42 +52,43 @@ Alphabet
  ʼ  !! * MODIFIER LETTER APOSTROPHE: U+02BC Syllable marker that appears in writing
  ˈ !! * MODIFIER LETTER VERTICAL LINE: U+02C8 as overlong consonant marker that does not appear in writing except for pedagogical purposes
 
-!  for consonant lengthening
-%{XC%}:m
-%{XC%}:n
-%{XC%}:v
-%{XC%}:d
-%{XC%}:r
-%{XC%}:l
-%{XC%}:k
-%{XC%}:ǥ
-%{XC%}:s
-%{XC%}:š
-%{XC%}:z
-%{XC%}:ž
+!!  for consonant lengthening
+%{XC%}:m  !!= * @CODE@
+%{XC%}:n  !!= * @CODE@
+%{XC%}:v  !!= * @CODE@
+%{XC%}:d  !!= * @CODE@
+%{XC%}:r  !!= * @CODE@
+%{XC%}:l  !!= * @CODE@
+%{XC%}:k  !!= * @CODE@
+%{XC%}:ǥ  !!= * @CODE@
+%{XC%}:s  !!= * @CODE@
+%{XC%}:š  !!= * @CODE@
+%{XC%}:z  !!= * @CODE@
+%{XC%}:ž  !!= * @CODE@
 
-! for vowel length
-%{õuØ%}:0
-%{ouØ%}:0
-%{âõØ%}:0
-%{ẹiØ%}:0
-%{äaØ%}:0
-%{äåØ%}:0
-%{eiØ%}:0
-%{åoØ%}:0
-%{ẹeiØ%}:0
-! for vowel height, by default vowels are low.
-%{õu%}:õ
-%{ou%}:o
-%{âõ%}:â
-%{ẹi%}:ẹ
-%{äa%}:ä
-%{äå%}:ä
-%{ei%}:e
-%{åo%}:å
-%{ẹei%}:ẹ
-%{âõe%}:â
-%{âõäe%}:â
+!! for vowel length
+%{õuØ%}:0   !!= * @CODE@
+%{ouØ%}:0   !!= * @CODE@
+%{âõØ%}:0   !!= * @CODE@
+%{ẹiØ%}:0   !!= * @CODE@
+%{äaØ%}:0   !!= * @CODE@
+%{äåØ%}:0   !!= * @CODE@
+%{eiØ%}:0   !!= * @CODE@
+%{åoØ%}:0   !!= * @CODE@
+%{ẹeiØ%}:0  !!= * @CODE@
+
+!! for vowel height, by default vowels are low.
+%{õu%}:õ     !!= * @CODE@
+%{ou%}:o     !!= * @CODE@
+%{âõ%}:â     !!= * @CODE@
+%{ẹi%}:ẹ     !!= * @CODE@
+%{äa%}:ä     !!= * @CODE@
+%{äå%}:ä     !!= * @CODE@
+%{ei%}:e     !!= * @CODE@
+%{åo%}:å     !!= * @CODE@
+%{ẹei%}:ẹ    !!= * @CODE@
+%{âõe%}:â    !!= * @CODE@
+%{âõäe%}:â   !!= * @CODE@
 
 !! !! Trigger symbols
 %^Pen:0 !!= * @CODE@ for combinations 2015-09-28 Miikka
@@ -96,7 +97,7 @@ Alphabet
  %^UltRmVow:0 !!= * @CODE@ for removing vowels e, â, a after final consonant in stem
 ! %^PenRmVow:0 != * @CODE@ for removing penultimate vowels e, â, a, i.e. vowel befor final stem consonant/consonants
  %^RmCns:0 !!= * @CODE@ for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta
-%^1VOW:0
+%^1VOW:0   !!= * @CODE@
  %^2VOW:0 %^3VOW:0 %^4VOW:0 %^5VOW:0 !!= * @CODE@ Vow triggers
 
  %^VOWLower:0 !!= * @CODE@ i>e, õ>â, â>ä, u>o, o>å
@@ -189,14 +190,14 @@ Alphabet
  %[%<%] !! * <
 
 !! Morpheme boundaries:
- «  ! Derivational prefix
- »  ! Derivational suffix
- %< ! Inflectional prefix
- %> ! Inflectional suffix
- #  ! Word boundary for both lexicalised and dynamic compounds
- %^ ! (exceptional) soft hyphenation point
- %- ! Hyphen for question particle
- ∑ ! Compounding rules
+ «  !! * Derivational prefix
+ »  !! * Derivational suffix
+ %< !! * Inflectional prefix
+ %> !! * Inflectional suffix
+ #  !! * Word boundary for both lexicalised and dynamic compounds
+ %^ !! * (exceptional) soft hyphenation point
+ %- !! * Hyphen for question particle
+ ∑  !! * Compounding rules
 
 !! End of alphabet definitions
  ;
@@ -206,31 +207,31 @@ Alphabet
 Sets
 
 ! Letter =
- Cns	= b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž
-          B C D F G H J K L M N P Q R S T V W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ; !!= * @CODE@
- CNoV	= b c d f g h j k l m n p q r s t w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž
-          B C D F G H J K L M N P Q R S T W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;   !!= * @CODE@
+ Cns	= b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž   !!= * @CODE@
+          B C D F G H J K L M N P Q R S T V W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ; !!= @CODE@
+ CNoV	= b c d f g h j k l m n p q r s t w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž      !!= * @CODE@
+          B C D F G H J K L M N P Q R S T W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;   !!=  @CODE@
 
- CNoJ	= b c d f g h k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž
-          B C D F G H K L M N P Q R S T V W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;   !!= * @CODE@
+ CNoJ	= b c d f g h k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž       !!= * @CODE@
+          B C D F G H K L M N P Q R S T V W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;   !!=  @CODE@
 
- Vow	= a e ẹ i o u å ä â õ           	      	      	      	        !!= * @CODE@
-          A E Ẹ I O U Å Ä Â Õ ;	    				        !!= * @CODE@
- VowNoIU  = a e ẹ o å ä â õ
-            A E Ẹ O Å Ä Â Õ ;
+ Vow	= a e ẹ i o u å ä â õ         !!= * @CODE@
+          A E Ẹ I O U Å Ä Â Õ ;	    !!=  @CODE@
+ VowNoIU  = a e ẹ o å ä â õ       !!= * @CODE@
+            A E Ẹ O Å Ä Â Õ ;    !!=  @CODE@
 
- CNoJV  = b c d f g h k l m n p q r s t w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž
- 	  B C D F G H K L M N P Q R S T W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;     !!= * @CODE@
+ CNoJV  = b c d f g h k l m n p q r s t w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž    !!= * @CODE@
+ 	  B C D F G H K L M N P Q R S T W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;     !!= @CODE@
 
- CNoDLRZ = b c f g h j k m n p q s t v w x z đ ǯ č ŋ ǩ ǧ ǥ š ž
-           B C F G H J K M N P Q S T V W X Z Đ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;        !!= * @CODE@
+ CNoDLRZ = b c f g h j k m n p q s t v w x z đ ǯ č ŋ ǩ ǧ ǥ š ž     !!= * @CODE@
+           B C F G H J K M N P Q S T V W X Z Đ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;        !!=  @CODE@
 
-Ltrs = Vow Cns ;
+Ltrs = Vow Cns ;    !!= * @CODE@
 
-Dummy = %^PAL %^PALE %^PALẸ %^PALÕ %^PALÄ
- %^CC2C %^CCC2C %^CCC2CC %^XYY2IY %^XYY2XY %^KK2GG %^XYY2VY %^KKK2GG %^KKK2ZERO %^C2CC
- %^J2I %^Pen %^V2VV %^VOWLower %^RmVow %^PenVow2a %^RmCns %^VC %^V2VV
- %^VOWRaise %^VOWSH %^CLong %^K2GG ; !!= * @CODE@ dummies in Sg.Nom and Sg.Gen
+Dummy = %^PAL %^PALE %^PALẸ %^PALÕ %^PALÄ                    !!= * @CODE@
+ %^CC2C %^CCC2C %^CCC2CC %^XYY2IY %^XYY2XY %^KK2GG %^XYY2VY %^KKK2GG %^KKK2ZERO %^C2CC    !!=  @CODE@
+ %^J2I %^Pen %^V2VV %^VOWLower %^RmVow %^PenVow2a %^RmCns %^VC %^V2VV    !!=  @CODE@
+ %^VOWRaise %^VOWSH %^CLong %^K2GG ; !!=  @CODE@ dummies in Sg.Nom and Sg.Gen
 
 
 
@@ -242,10 +243,10 @@ Definitions
 
 
 !! Onset consonant or word boundary
-OnSetC = [[%{XC%}:Cns|Cns:Cns] (Cns:|%{XC%}:Cns) |.#.|#:|%>|»] ;
+OnSetC = [[%{XC%}:Cns|Cns:Cns] (Cns:|%{XC%}:Cns) |.#.|#:|%>|»] ;     !!= * @CODE@
 
 !! Penultimate consonant
-PenUltCns = [Cns:|%{XC%}:] ;
+PenUltCns = [Cns:|%{XC%}:] ;     !!= * @CODE@
 
 !! following morpheme or word boundary
 !! {{{
@@ -256,20 +257,21 @@ RBound = [(%^Hyphen: %-|%^NoHyphen:|%{%-Ø%}:) #:|.#.|%>|»|%-] ; !!= * @CODE@
 
 !! possible triggers before VOWLower and VOWRaise
 
-BetweenStemAndHeight = [( %^VV2V: |%^V2VV:)] ;
+BetweenStemAndHeight = [( %^VV2V: |%^V2VV:)] ;     !!= * @CODE@
 
 !! possible triggers before PALE PALÄ
-BetweenStemAndPALAllo = [ BetweenStemAndHeight (%^VOWLower:|%^VOWRaise:)] ;
+BetweenStemAndPALAllo = [ BetweenStemAndHeight (%^VOWLower:|%^VOWRaise:)] ;     !!= * @CODE@
 
 !! possible triggers between stem and PALNo and PAL
-BetweenStemAndPALNo = [ BetweenStemAndHeight [(%^VOWLower:|%^VOWRaise:) (%^PALÄ:|%^PALE:|%^PALẸ:|%^PALÕ:|%^PALÂ:)] (%^Allegro:) ] ;
+BetweenStemAndPALNo = [ BetweenStemAndHeight [(%^VOWLower:|%^VOWRaise:) (%^PALÄ:|%^PALE:|%^PALẸ:|%^PALÕ:|%^PALÂ:)] (%^Allegro:) ] ;     !!= * @CODE@
 
 !! possible triggers between vowel length and consonant grade
-BetweenVowLenghtAndConsGrade = [ (%^VOWRaise:|%^VOWLower:) ( ((%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:|%^VOWLower: %^PALÄ:|(%^PALÕ:|%^PALE:|%^PALÄ:|%^PALẸ:) (%^Allegro:) %^PAL:)| (%^Allegro:) (%^PALÕ:|%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÂ:) (%^PALNo:|%^PAL:) ) ] ;
+BetweenVowLenghtAndConsGrade = [ (%^VOWRaise:|%^VOWLower:) ( ((%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:|%^VOWLower: %^PALÄ:|(%^PALÕ:|%^PALE:|%^PALÄ:|%^PALẸ:) (%^Allegro:) %^PAL:)| (%^Allegro:) (%^PALÕ:|%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÂ:) (%^PALNo:|%^PAL:) ) ] ;     !!= * @CODE@
+
 ! [ ((%^VOWRaise:|%^VOWLower:) ((%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:|%^VOWLower: %^PALÄ:|(%^PALÕ:|%^PALE:|%^PALÄ:|%^PALẸ:) (%^Allegro:) %^PAL:)| (%^Allegro:) (%^PALÕ:|%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÂ:) (%^PALNo:|%^PAL:) ) ] ;
 
 !! possible triggers between word end and consonant grade
-BetweenStemAndConsGrade = [ BetweenStemAndHeight BetweenVowLenghtAndConsGrade ];
+BetweenStemAndConsGrade = [ BetweenStemAndHeight BetweenVowLenghtAndConsGrade ];     !!= * @CODE@
 
 !! possible triggers between vowel length and Palatalization
 BetweenVowLengthAndPALNo = [(%^VOWLower:|%^VOWRaise:) (%^PALÄ:|%^PALE:|%^PALẸ:|%^PALÕ:|%^PALÂ:) ] ;
