@@ -212,76 +212,96 @@ End of alphabet definitions
 ## Definitions
 
 
-Short consonant cluster
+### Short consonant cluster
 
 
 Onset consonant or word boundary
- * OnSetC = [[%{XC%}:Cns|Cns:Cns] (Cns:|%{XC%}:Cns) |.#.|#:|%>](») ;     
+`OnSetC = [[%{XC%}:Cns\|Cns:Cns] (Cns:\|%{XC%}:Cns) \|.#.\|#:\|%>\](») ;`
 
 Penultimate consonant
- * PenUltCns = [Cns:](%{XC%}:) ;     
+`PenUltCns = [Cns:\](%{XC%}:) ;`
+
 
 following morpheme or word boundary
+
 ```
  * RBound = [(%^Hyphen: %-|%^NoHyphen:|%{-Ø%}:) #:|.#.|%>|»](%-) ; 
 ```
 
 
 
-possible triggers before VOWLower and VOWRaise
+ossible triggers before VOWLower and VOWRaise
 
- * BetweenStemAndHeight = [( %^VV2V: ](%^V2VV:)) ;     
+`BetweenStemAndHeight =  ( %^VV2V: \|%^V2VV:)`
 
 possible triggers before PALE PALÄ
- * BetweenStemAndPALAllo = [ BetweenStemAndHeight (%^VOWLower:](%^VOWRaise:)) ;     
+`BetweenStemAndPALAllo = [ BetweenStemAndHeight (%^VOWLower:](%^VOWRaise:))`
 
 possible triggers between stem and PALNo and PAL
- * BetweenStemAndPALNo = [ BetweenStemAndHeight [(%^VOWLower:|%^VOWRaise:) (%^PALÄ:|%^PALE:|%^PALẸ:|%^PALÕ:](%^PALÂ:)] (%^Allegro:) ) ;     
+`BetweenStemAndPALNo = [ BetweenStemAndHeight [(%^VOWLower:\|%^VOWRaise:) (%^PALÄ:\|%^PALE:\|%^PALẸ:\|%^PALÕ:\](%^PALÂ:)] (%^Allegro:) ) ; `
 
 possible triggers between vowel length and consonant grade
- * BetweenVowLenghtAndConsGrade = [ (%^VOWRaise:|%^VOWLower:) ( ((%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:|%^VOWLower: %^PALÄ:|(%^PALÕ:|%^PALE:|%^PALÄ:|%^PALẸ:) (%^Allegro:) %^PAL:)| (%^Allegro:) (%^PALÕ:|%^PALE:|%^PALÄ:|%^PALẸ:|%^PALÂ:) (%^PALNo:](%^PAL:) ) ) ;     
+`BetweenVowLenghtAndConsGrade = [ (%^VOWRaise:\|%^VOWLower:) ( ((%^PALÂ:\|%^PALÕ:) (%^Allegro:) %^PALNo:\|%^VOWLower: %^PALÄ:\|(%^PALÕ:\|%^PALE:\|%^PALÄ:\|%^PALẸ:) (%^Allegro:) %^PAL:)\| (%^Allegro:) (%^PALÕ:\|%^PALE:\|%^PALÄ:\|%^PALẸ:\|%^PALÂ:) (%^PALNo:\](%^PAL:) ) ) ;`
 
 
 possible triggers between word end and consonant grade
- * BetweenStemAndConsGrade = [ BetweenStemAndHeight BetweenVowLenghtAndConsGrade ];     
+`BetweenStemAndConsGrade = [ BetweenStemAndHeight BetweenVowLenghtAndConsGrade ];`
 
 possible triggers between vowel length and Palatalization
+`BetweenVowLengthAndPALNo = [(%^VOWLower:\|%^VOWRaise:) (%^PALÄ:\|%^PALE:\|%^PALẸ:\|%^PALÕ:\](%^PALÂ:) ) ;`
+
+`BetweenVowHeightAndConsGrade = [((%^PALE:\|%^PALÄ:\|%^PALẸ:\|%^PALÕ:) (%^Allegro:) %^PAL:\|(%^PALÂ:\](%^PALÕ:) (%^Allegro:) %^PALNo:)) ;`
+
+`BetweenVowHeightAndMorph = [  ((%^PALE:\|%^PALÄ:\|%^PALẸ:\|%^PALÕ:) (%^Allegro:) %^PAL:\|(%^PALÂ:\|%^PALÕ:) (%^Allegro:) %^PALNo:) ([(%^Allegro:) %^CC2C:\|(%^Allegro:) %^CC2CAllegro:]\|%^C2CC:\|%^XYY2XY:\|%^K2GG:\|%^KK2GG:\|%^CC2CCC:\|%^CCC2C:\|%^CCC2CC:\|%^XYY2VY:\|%^XYY2VYY:\](%^KKK2GG:) RBound ) ;`
+
+`BetweenPALNoAndMorphRightArrow = [([(%^Allegro:) %^CC2C:\|(%^Allegro:) %^CC2CAllegro:]\|%^C2CC:\|%^XYY2XY:\|%^K2GG:\|%^KK2GG:\|%^CC2CCC:\|%^CCC2C:\|%^CCC2CC:\|%^XYY2VY:\|%^XYY2VYY:\](%^KKK2GG:) ) ;`
+
+`BetweenPALNoAndMorph = [([(%^Allegro:) %^CC2C:\|(%^Allegro:) %^CC2CAllegro:]\|%^C2CC:\|%^XYY2XY:\|%^K2GG:\|%^KK2GG:\|%^CC2CCC:\|%^CCC2C:\|%^CCC2CC:\|%^XYY2VY:\|%^XYY2VYY:\](%^KKK2GG:) RBound ) ;`
+
+`BetweenStemAndRightArrow = [BetweenStemAndConsGrade BetweenPALNoAndMorphRightArrow] ;`
+
+### Penultimate vowel centers possible triggers before VOWLower and VOWRaise
+
+`PenBetweenStemAndHeight = [(%^Pen: %^VV2V: \](%^Pen: %^V2VV:)) ;`
+
+`PenBetweenStemAndPALNo = [PenBetweenStemAndHeight (%^Pen: %^VOWRaise:\](%^Pen: %^VOWLower:) (%^Pen: %^Allegro:) ) ;`
+
+`PenBetweenStemAndPALAllo  = [ PenBetweenStemAndHeight (%^Pen: %^VOWLower:\](%^Pen: %^VOWRaise:)) ;`
 
 
+`PenBetweenStemAndConsGrade = [PenBetweenStemAndHeight ((%^Pen: %^VOWRaise:\|%^Pen: %^VOWLower:) ((%^Pen: %^PALÂ:\|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PALNo:\|(%^Pen: %^PALÕ:\|%^Pen: %^PALE:\|%^Pen: %^PALÄ:\](%^Pen: %^PALẸ:) (%^Pen: %^Allegro:) %^Pen: %^PAL:) ) ) ;`
+
+`PenBetweenStemAndVowelLoss = [PenBetweenStemAndHeight [(%^Pen: %^VOWRaise:\|%^Pen: %^VOWLower:\|%^Pen: %^U2Õ:) ((%^Pen: %^PALÂ:\|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PALNo:\|(%^Pen: %^PALE:\|%^Pen: %^PALÄ:\|%^Pen: %^PALẸ:\|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PAL:)] ([%^Pen: %^C2CC:]\|%^Pen: [(%^Allegro:) %^CC2C:\|%^Allegro:\|(%^Allegro:) %^CC2CAllegro:]\|%^Pen: %^XYY2XY:\|%^Pen: %^CC2CCC:\|%^Pen: %^CCC2CC:\|%^Pen: %^CCC2C:\](%^Pen: %^KKK2GG:)) ;`
 
 
+`PenBetweenStemAndStemFinalVoicing = [PenBetweenStemAndVowelLoss (%^RmVow:\](%^PenVow2a:)) ;`
 
-
-
-Penultimate vowel centers possible triggers before VOWLower and VOWRaise
-
-
-
-
-
-
-
-
-
+`PenBetweenPALNoAndMorph = [(%^Pen: [(%^Allegro:) %^CC2C:\|(%^Allegro:) %^CC2CAllegro:]\|%^Pen: %^C2CC:\|%^Pen: %^XYY2XY:\|%^Pen: %^KK2GG:\|%^Pen: %^CC2CCC:\|%^Pen: %^CCC2C:\|%^Pen: %^CCC2CC:\|%^Pen: %^XYY2VY:\|%^Pen: %^XYY2VYY:\](%^Pen: %^KKK2GG:) RBound ) ;`
 
 used in compounding Cmp/SgNom and Cmp/SgGen
+`SgNomGen = [((%^PALE: %^PAL:) %^CCC2C:\|(%^PALE: %^PAL:) %^CCC2CC:\|%^PALẸ:\|[%^PALE:\|%^PALÕ:] %^PAL: %^XYY2IY:\|[%^PALẸ:\|%^PALE:] %^PAL: %^XYY2XY:\|((%^PALE:) %^PAL:) %^KK2GG:\|(%^PALE:) %^PAL:\| ((%^PALE:) %^PAL:) (%^J2I:) %^CC2C:\](%^PAL: %^XYY2VY:));`
 
 neutral to vowel height and backness
-```
- * NeutrHighBack = [(%^VOWLower:](%^VOWRaise:) ) ; 
-```
+
+`NeutrHighBack = [(%^VOWLower:\](%^VOWRaise:) ) ; `
 
 neutral to vowel length
+
+`VNeutrGrade = [(%^VV2V: \](%^V2VV: ));`
+
 neutral to consonant length
-```
-```
+
+`CNeutrGrade = [([(%^Allegro:) %^CC2C:\|(%^Allegro:) %^CC2CAllegro:] \|[%^C2CC:] \|%^CC2CCC: \|%^KK2GG: \|%^KKK2GG: \|%^XYY2VY: \|%^XYY2VYY:\](%^CCC2CC: )) ;`
+
 neutral to vowel and consonant length
-```
- * NeutrGrade = [VNeutrGrade ](CNeutrGrade) ; 
-```
 
+`NeutrGrade = [VNeutrGrade \](CNeutrGrade) ; `
 
+`NoVowRaise = \[ %^VOWRaise: \| #]* [#\](.#.) ;`
 
+`NoCnsDummy = \[ %^CC2C: \| %^CCC2C: \| %^CCC2CC: \| %^XYY2IY: \| %^XYY2XY: \| %^KK2GG: \| %^XYY2VY: \| %^KKK2GG: \| %^KKK2ZERO: \| %^C2CC: \| %^J2I: \| %^RmCns: \| %^K2GG: \]( # )* ;`
+
+`SurfaceDiphthong = [ :e :ä \| :e :â \| :i :õ \| :i :â \| :i :e \| :i :ẹ \| :u :â \| :u :õ \| :u :å \| :u :ä \| :u :e \]( :u :ẹ ) ;`
 
 * X3 = C Vx Cx Cx     C Vx Vy Cx ˈ Cx
 * X2 = C Vx Vx Cx Cx  C Vx Vy Cx Cx
@@ -324,6 +344,8 @@ cieʹǩǩes+N+Sg+Ill: **trick, type of ear mark/tikki, pykälä**
 Ââvel+N+Prop+Sg+Loc  **Ivalo**
 * *Ââvel%^RmVow%>est*
 * *Ââv0l0%>est*
+
+
 
 Jouste
 
@@ -754,7 +776,7 @@ juõiggâd+V+Ind+Prs+Sg3
 * *kuâigg0*
 
 
-### diphthongs
+### Diphthongs
 
 **Even syllabic verbs I, diphthong opening after u å:ä** - deriving +Ind+Prs+Sg3, in kuåccâd kuäʹcce
 = a>ä lowering clockwise
@@ -790,17 +812,15 @@ vueʹlǧǧed+Use/NG+V+Ind+Prs+Pl3 **leave/lähteä**
 
 **u å:õ** - used in
 = a>ä lowering clockwise
-```
-```
+
 * *puått%^VOWRaise%>u*
 * *puõtt0%>u*
 
 
 
 ### Vowel Palatalization
-**diphthong allophonic realization in palatalization u å:e** - deriving
-```
-```
+**diphthong allophonic realization in palatalization u å:e** - deriving e from å
+
 * *puå0v0v%^PALE%^PAL%^CC2CCC%>e*
 * *pueʹvˈv000%>e*
 
@@ -1006,8 +1026,6 @@ mainstummuš+N+Err/Orth+Sg+Gen: **story telling/tarinointi**
 * *mainstum0uužž0000*
 
 
-
-
 * *pu%^1VOW0ttes%^Pen%^V2VV%^Pen%^PAL*
 * *puuʹttes0000*
 * ★*pu%^1VOW0ttes%^Pen%^V2VV%^Pen%^PAL* (is not standard language)
@@ -1019,6 +1037,8 @@ vuʹvdd+N+Err/Orth+Sg+Gen: **area/alue**
 Oulu+N+Prop+Sg+Ill
 * *Oulu%^1VOW%^V2VVʹje*
 * *Ouluu0ʹje*
+
+
 
 **Word-final vowel ö** - 
 Enontekiö+N+Prop+Sg+Ill
@@ -1150,13 +1170,12 @@ karies+N+Sg+Nom: **caries/hammasmätä**
 ### THE NON-ORTHOGRAPHIC SYLLABLE
 
 
-**Loss of ʼ when preceded by vowel** - This is a temporary solution to  "ʼ" in võʹllʼjed
-```
-```
+**Loss of ʼ when preceded by vowel** - This is a temporary solution to  "ʼ" in võʹllʼjed, it deletes softmark when preceded by vowel
+
 
 **%{A1%}:ʼ when subseqent syllable has vowel v** - This is a temporary solution to  "ʼ" in võʹllʼjed 2013-08-29
-```
-```
+
+
 
 ### PALATALIZATION
 
@@ -1212,6 +1231,7 @@ uʹvdded+V+Ind+Prs+Pl3: **give/antaa**
 * *o0uʹdd000%>e*
 * *u%^1VOWv%{ʹØ%}dd%^PAL%^XYY2VY*
 * *u0uʹd000*
+
 
 täʹhtt+N+Pl+Nom: **bone/luu**
 * *tä%^1VOWh%{ʹØ%}tt%^V2VV%^PAL%^XYY2VY*
