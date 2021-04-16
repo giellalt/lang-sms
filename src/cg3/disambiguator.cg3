@@ -1060,7 +1060,7 @@ SELECT:AccNotIll Acc IF  (0 N + Pl + Ill LINK *1 STV BARRIER NOT-ADV) ;
 
 REMOVE:AccNotIllb Ill IF (0 Pl + Acc)(1 TV)(NOT 2 Inf);#(NOT *1 TV LINK *1 Acc BARRIER S-BOUNDARY);
 
-SELECT:AccNotIllc (Pl + Acc) IF (*-1 TV BARRIER NPNHAI);
+SELECT:AccNotIllc Pl + Acc IF (*-1 TV BARRIER NPNHAI);
 
 REMOVE:IllNotAcc Acc (0 Pl + Ill)(*-1 ILLV BARRIER NPNHAI);
 
@@ -1342,8 +1342,8 @@ REMOVE:waitwithDis (2 V) (0 (1 V)) ;
 
 MAP (@OBJ>) TARGET Acc (NOT 0 TIME OR ROUTE)(*1 MAINV + TV BARRIER S-BOUNDARY OR COMMA) ;
 MAP (@<OBJ) TARGET Acc (*-1 MAINV + TV BARRIER S-BOUNDARY OR COMMA)(NOT 0 TIME OR ROUTE) ;
-MAP (@OBJ>) TARGET Acc (NOT 1 EOS) ;  #"guhkies" A Sg Acc @OBJ> MAP:952 
-MAP (@<OBJ) TARGET Acc (NOT -1 BOS) ; #"guhkies" A Sg Acc @<OBJ MAP:954
+MAP (@OBJ>) TARGET Acc (*1 MAINV + TV BARRIER S-BOUNDARY OR COMMA) ;  #"guhkies" A Sg Acc @OBJ> MAP:952 
+MAP (@<OBJ) TARGET Acc (*-1 MAINV + TV BARRIER S-BOUNDARY OR COMMA); ; #"guhkies" A Sg Acc @<OBJ MAP:954
 	##Baktuse GUHKIEM klaasen lihke tjåadtjoeji jih vuartesji bæjjese don veelkes skaavhte-baanan.
 	##Åadtjoejibie vuejnedh MEJTIE nuekies sieties-beapmoeh åadtjoejibie. "mij" Pron Rel Pl Acc @OBJ> MAP:950
     ##Manne SOVMEN barre kruepies-laejpieh dah båetieh. "sovme" N Sg Acc @OBJ> MAP:952
