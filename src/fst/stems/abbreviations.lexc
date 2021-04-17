@@ -13,26 +13,26 @@
 ! giellatekno@hum.uit.no or feedback@divvun.no
 
 ! ============================= !
-!! !!!File containing abbreviations 
+!! # File containing abbreviations 
 ! ============================= !
 
-!! !!Lexica for adding tags and periods
+!! ## Lexica for adding tags and periods
 ! ----------------------------------
 
 !! Splitting in 4 + 1  groups, because of the preprocessor
 !  - - - - - - - - - - - - - - - - - - - - - - - - -
 
-LEXICON Abbreviation   !!= * __@CODE@__
-ITRAB ;	   !!= # The @CODE@ lexicon (intransitive abbrs) Ltd.
-TRNUMAB ;  !!= # The @CODE@ lexicon (abbrs trans wrt. numerals)
-TRAB ;	   !!= # The @CODE@ lexicon (transitive abbrs) tri. 
+LEXICON Abbreviation   !!= * **@CODE@**
+ITRAB ;	   !!= 1. The @CODE@ lexicon (intransitive abbrs) Ltd.
+TRNUMAB ;  !!= 1. The @CODE@ lexicon (abbrs trans wrt. numerals)
+TRAB ;	   !!= 1. The @CODE@ lexicon (transitive abbrs) tri. 
 !NOAB ;	   !!= # The @CODE@ lexicon (not really abbrs)
 !NUMNOAB ;  !!= # The @CODE@ lexicon (not behaving as abbr before num)
-SYMBOLS ;  !!= # The @CODE@ lexicon (misc. symbols)
+SYMBOLS ;  !!= 1. The @CODE@ lexicon (misc. symbols)
 
-!! !!The sublexica
+!! ## The sublexica
 
-!! !Dividing between abbreviations with and witout final period
+!! ### Dividing between abbreviations with and witout final period
 
 !! ABBREVIATIONS 
 !! these still need development 2015-09-11
@@ -80,7 +80,7 @@ LEXICON AB-NO-DOT-N_
 !ab-dot-noun ;
 !ab-dot-adj ;
 
-LEXICON ab-noun   !!= * __@CODE@__
+LEXICON ab-noun   !!= * **@CODE@**
 ab-nodot-noun ;
 ab-dot-noun ;
 
@@ -96,11 +96,11 @@ ab-dot-noun ;
 !ab-nodot-num ;
 !ab-dot-num;
 
-!! !The lexicons that add tags
+!! ### The lexicons that add tags
 
 
 
-LEXICON ab-nodot-noun   !!= * __@CODE@__  The bulk
+LEXICON ab-nodot-noun   !!= * **@CODE@**  The bulk
        +N+ABBR+Attr:      # ; ! no period, that is.
         +N+ABBR+Nom:      # ; ! no period, that is.
         +N+ABBR+Acc:      # ; ! no period, that is.
@@ -140,7 +140,7 @@ LEXICON ab-nodot-noun   !!= * __@CODE@__  The bulk
 !!+Num+ABBR: RHyph ;
 
 
-LEXICON ab-dot-noun   !!= * __@CODE@__  This is the lexicon for abbrs that must have a period.
+LEXICON ab-dot-noun   !!= * **@CODE@**  This is the lexicon for abbrs that must have a period.
        +N+ABBR+Attr:%.%>      # ;
         +N+ABBR+Nom:%.%>      # ;
         +N+ABBR+Acc:%.%>      # ;
@@ -192,7 +192,7 @@ LEXICON ab-dot-noun   !!= * __@CODE@__  This is the lexicon for abbrs that must 
 
 
 
-LEXICON SYMBOLconnector   !!= * __@CODE@__
+LEXICON SYMBOLconnector   !!= * **@CODE@**
       +Attr+Use/Circ:   K          ; ! §
     +Sg+Nom+Use/Circ:   K          ; ! §
 !            +Sg+Gen:   K          ; ! §
@@ -202,7 +202,7 @@ LEXICON SYMBOLconnector   !!= * __@CODE@__
   +Err/Orth+Use/Circ:%- SYMBOLsuff ; ! §-as ! Perhaps.
   +Err/Orth+Use/Circ:%' SYMBOLsuff ; ! §'as ! Perhaps.
 
-LEXICON SYMBOLsuff   !!= * __@CODE@__
+LEXICON SYMBOLsuff   !!= * **@CODE@**
 !                         K ; ! § 14 (no case on the bare §). Oh, yes. Case.
            +Sg+Gen:       K ; ! §    (case suffix on the rest, in case of explicit
            +Sg+Acc:       K ; !       suffix)
@@ -230,13 +230,13 @@ LEXICON SYMBOLsuff   !!= * __@CODE@__
 
 
 
-!! !!The abbreviation lexicon itself
+!! ## The abbreviation lexicon itself
 ! -------------------------------
 
 ! Miscellaneous symbols, abbreviation symbols
 ! -------------------------------------------
 
-LEXICON SYMBOLS   !!= * __@CODE@__ is for iscellaneous abbr symbols
+LEXICON SYMBOLS   !!= * **@CODE@** is for iscellaneous abbr symbols
 ! §+N+ABBR+Use/Circ:§  SYMBOLconnector ; ! §:s
  §+N+ABBR+Use/Circ+N+Sg+Nom:§%:s  K ; !
  §+N+ABBR+Use/Circ+N+Sg+Nom:§%:ff  K ; !
@@ -264,7 +264,7 @@ LEXICON SYMBOLS   !!= * __@CODE@__ is for iscellaneous abbr symbols
 ! Intransitive abbreviations 
 ! =============================================== !
 
-LEXICON ITRAB   !!= * __@CODE@__ are intransitive abbreviations, A.S. etc.
+LEXICON ITRAB   !!= * **@CODE@** are intransitive abbreviations, A.S. etc.
 
 ! List the beginning of the alphabet, !
 ! in order to account for numbering !
@@ -327,7 +327,7 @@ xxviii AB-NO-DOT-N_ ;
 ! Abreviations who are transitive in front of numerals 
 ! ============================================================ !
 
-LEXICON TRNUMAB   !!= * __@CODE@__ contains abbreviations who are transitive in front of numerals, i.e. preposed
+LEXICON TRNUMAB   !!= * **@CODE@** contains abbreviations who are transitive in front of numerals, i.e. preposed
 
 !! For abbrs for which numerals are complements, but other
 !! words not necessarily are. This group treats arabic numerals as
@@ -336,7 +336,7 @@ LEXICON TRNUMAB   !!= * __@CODE@__ contains abbreviations who are transitive in 
 ! TODO: Bug the fact that these abbrs do not distinguish between
 ! cap and small letters, whereast he ITRAB ones do.
 
- TRNUMAB_sms2x ; !!= * __@CODE@__ contains abbreviations in xml preposed
+ TRNUMAB_sms2x ; !!= * **@CODE@** contains abbreviations in xml preposed
 ! "Bohten geassemánu 3. b. Lean velá dáppe." for sms is in TRNUMABPO_sms2x
 
 
@@ -344,7 +344,7 @@ LEXICON TRNUMAB   !!= * __@CODE@__ contains abbreviations who are transitive in 
 ! Transitive abbreviations !
 ! =============================================== !
 
-LEXICON TRAB   !!= * __@CODE@__ contains preposed transitive abbreviations 
+LEXICON TRAB   !!= * **@CODE@** contains preposed transitive abbreviations 
 
 !! This lexicon is for abbrs that always have a constituent following it.
 
@@ -352,7 +352,7 @@ LEXICON TRAB   !!= * __@CODE@__ contains preposed transitive abbreviations
 ! TRAB heads (gč. ...) here called h-ab and h-ab-dot
 ! TRAB attributes (St. ...) here called ab and ab-dot or at-ab?
 
- TRAB_sms2x ; !!= * __@CODE@__ contains preposed transitive abbreviations xml
+ TRAB_sms2x ; !!= * **@CODE@** contains preposed transitive abbreviations xml
 
 ! Here comes the initials
 ! They are found in names etc.
