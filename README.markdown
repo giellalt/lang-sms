@@ -8,8 +8,8 @@ directory. The authors named in the AUTHORS file are available to grant
 other licencing choices.
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-sms)](https://github.com/giellalt/lang-sms/issues)
-[![Build Status](https://github.com/giellalt/lang-sms/workflows/Build%20Speller%20Archives%20and%20Bundles/badge.svg)](https://github.com/giellalt/lang-sms/actions)
-[![License](https://img.shields.io/github/license/giellalt/template-lang-sms)](https://raw.githubusercontent.com/giellalt/lang-sms/develop/LICENSE)
+[![Build Status](https://github.com/giellalt/lang-sms/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-sms/actions)
+[![License](https://img.shields.io/github/license/giellalt/lang-sms)](https://raw.githubusercontent.com/giellalt/lang-sms/develop/LICENSE)
 
 Install proofing tools and [keyboards](https://github.com/giellalt/keyboard-sms)
 for the Skolt Sami language by using the [Divvun Installer](http://divvun.no)
