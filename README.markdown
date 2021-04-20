@@ -1,15 +1,15 @@
 The Skolt Sami morphology and tools
 ===================================
 
+[![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-sms)](https://github.com/giellalt/lang-sms/issues)
+[![Build Status](https://github.com/giellalt/lang-sms/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-sms/actions)
+[![License](https://img.shields.io/github/license/giellalt/lang-sms)](https://raw.githubusercontent.com/giellalt/lang-sms/develop/LICENSE)
+
 This directory contains source files for the Skolt Sami language
 morphology and dictionary. The data and implementation are licenced
 under \_\_LICENCE\_\_ licence also detailed in the LICENCE file of this
 directory. The authors named in the AUTHORS file are available to grant
 other licencing choices.
-
-[![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-sms)](https://github.com/giellalt/lang-sms/issues)
-[![Build Status](https://github.com/giellalt/lang-sms/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-sms/actions)
-[![License](https://img.shields.io/github/license/giellalt/lang-sms)](https://raw.githubusercontent.com/giellalt/lang-sms/develop/LICENSE)
 
 Install proofing tools and [keyboards](https://github.com/giellalt/keyboard-sms)
 for the Skolt Sami language by using the [Divvun Installer](http://divvun.no)
