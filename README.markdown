@@ -7,8 +7,12 @@ under \_\_LICENCE\_\_ licence also detailed in the LICENCE file of this
 directory. The authors named in the AUTHORS file are available to grant
 other licencing choices.
 
-Installation and compilation, and a short note on usage, is documented
-in the file INSTALL.
+[![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-sms)](https://github.com/giellalt/lang-sms/issues)
+[![Build Status](https://github.com/giellalt/lang-sms/workflows/Build%20Speller%20Archives%20and%20Bundles/badge.svg)](https://github.com/giellalt/lang-sms/actions)
+[![License](https://img.shields.io/github/license/giellalt/template-lang-sms)](https://raw.githubusercontent.com/giellalt/lang-sms/develop/LICENSE)
+
+Install proofing tools and [keyboards](https://github.com/giellalt/keyboard-sms)
+for the Skolt Sami language by using the [Divvun Installer](http://divvun.no)
 
 Documentation can be found here:
 
