@@ -32,4 +32,5 @@ MD_PAGES=root-morphology.md \
 # abbreviations-stems.md      \
 # acronyms-stems.md           \
 # smi-propernouns-stems.md
+
 include $(top_srcdir)/../giella-core/am-shared/docs-dir-include.am
