@@ -146,7 +146,7 @@ Other vowel length and consonant length will be phased out
  *  %{Â1%}:0  used with "mainsted" to tell (a story)
  *  %{A1%}:0  used with "vuejted" to drive (causative)
  *  %{E1%}:0  used with "kåʹmrded" to bow
- *  %{ʼ%}:0  archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one.
+ *  %{%ʼ%}:0  archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one.
  *  %{EÂ%}:e  archiform for ie:eâ variation
  *  %^IMPSG2:0	
  *  %^INDPRSSG3:0  
@@ -154,7 +154,7 @@ Other vowel length and consonant length will be phased out
  *  %^FRICG:0	
 
 Hyphen at compound word boundary
- * %{-Ø%}:0  Zero versus hyphen in compounding
+ * %{%-Ø%}:0  Zero versus hyphen in compounding
  * %^Hyphen:0     at compound word boundary with %-
  * %^NoHyphen:0     at compound word boundary
 
@@ -225,7 +225,7 @@ Penultimate consonant
 following morpheme or word boundary
 
 ```
- * RBound = [(%^Hyphen: %-|%^NoHyphen:|%{-Ø%}:) #:|.#.|%>|»](%-) ; 
+ * RBound = [(%^Hyphen: %-|%^NoHyphen:|%{%-Ø%}:) #:|.#.|%>|»|%-] ; 
 ```
 
 
@@ -435,7 +435,7 @@ ooumaž+N+Sg+Nom
 * *ooum000>až*
 -o
 
-**Vowel shortening a:0** - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
+**Vowel shortening a:0 ** - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
 * *saa{ʹØ}kk^VV2V^PAL>e*
 * *sa0ʹǩǩ00>e*
 
@@ -694,7 +694,7 @@ cieʹǩǩes+N+Sg+Gen: **trick, type of ear mark/tikki, pykälä**
 * *ceäkˈkaz0000*
 
 
-**Even syllabic verbs I, vowel lowering i:ẹ** - deriving +Ind+Prs+Sg3 in viǯǯâd
+**Even syllabic verbs I, vowel lowering i:ẹ ** - deriving +Ind+Prs+Sg3 in viǯǯâd
 viǯǯâd+V+Imprt+Sg2 **fetch/noutaa**
 * *vi^1VOWǯǯ^V2VV^VOWLower>as*
 * *vẹẹǯǯ00>as*
@@ -753,13 +753,13 @@ suukkâd+V+Imprt+Sg3: **row/soutaa**
 * *suukk^VOWLower^KK2GG>as*
 * *sooǥǥ00>as*
 
-**Even syllabic verbs I, vowel lowering u:õ** - deriving
+**Even syllabic verbs I, vowel lowering u:õ ** - deriving
 * *ču^1VOWkk^V2VV^U2Õ>až*
 * *čõõkk00>až*
 
 
 
-**Even syllabic verbs I, vowel lowering õ:â** - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
+**Even syllabic verbs I, vowel lowering õ:â ** - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
 riõkkâd+V+Ind+Prs+Sg3 **to whip**
 * *riõkˈk%^VOWLower#*
 * *reâkˈk0#*
@@ -797,7 +797,7 @@ puuʹttes+A+Sg+Gen
 
 
 
-**Even syllabic verbs I, diphthong opening i:e â:ä for â:ä** - deriving +Ind+Prs+Sg3, in čiõkkâd
+**Even syllabic verbs I, diphthong opening i:e â:ä for â:ä ** - deriving +Ind+Prs+Sg3, in čiõkkâd
 * *vuâinn%^VOWLower*
 * *vuäinn0*
 vueʹlǧǧed+Use/NG+V+Ind+Prs+Pl3 **leave/lähteä**
@@ -810,7 +810,7 @@ vueʹlǧǧed+Use/NG+V+Ind+Prs+Pl3 **leave/lähteä**
 
 ### Vowel backing
 
-**u å:õ** - used in
+** u å:õ** - used in
 = a>ä lowering clockwise
 
 * *puått%^VOWRaise%>u*
@@ -846,7 +846,7 @@ siõrrâd+V+Ind+Prs+Pl3: **play/leikkiä**
 * *kueʹsǩǩ000%>e*
 
 
-**Even syllabic verbs I, secondary u > v**
+**Even syllabic verbs I, secondary u > v **
 
 
 ### RELATIVE VOWEL LENGTHENING
@@ -1524,7 +1524,7 @@ deriving kueʹll+N+Sg+Gen: kueʹl
 * *kuâ0ll%^V2VV%^PALE%^PAL%^CC2C*
 * *kueʹl00000*
 
-**j:0** - used in
+**j:0 ** - used in
 
 ǩeʹrjj+N+Pl+Nom: **book/kirja**
 * *ǩẹ%^1VOW0rjj%^V2VV%^PAL%^XYY2XY*
@@ -1820,7 +1820,7 @@ reäiʹǧǧ+N+Pl+Nom
 * In verbs this will be observed in finite forms
 * In derivational morphology, e.g. -škuetted, this is not the case
 
-**Orthographic Consonant lengthening Weak to strong %{XC%}:Cx** - used in
+**Orthographic Consonant lengthening Weak to strong %{XC%}:Cx ** - used in
 * *čââʹlmtẹ^1VOWm{XC}^C2CC>a*
 * *čââʹlmtẹ0mm0>a*
 kaađneǩ+N+Sg+Gen 

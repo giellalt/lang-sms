@@ -3,16 +3,16 @@
 
 We use a modified version of the *Koulukielioppi* stem system
 
-# Vowel stems
-## â-stems: N-toll, N-miarr
-## a-stems: N-pess
-## e-stems: N-piess
-# Mixed stem:
-## e-a-stems: N-ress
-# Consonant stems
-## m-stems: N-laajj
-## n-stems: N-kuolban, N-siom
-# Contract stems
+1. Vowel stems
+    1. â-stems: N-toll, N-miarr
+    1. a-stems: N-pess
+    1. e-stems: N-piess
+1. Mixed stem:
+    1. e-a-stems: N-ress
+1. Consonant stems
+    1. m-stems: N-laajj
+    1. n-stems: N-kuolban, N-siom
+1. Contract stems
 
 
 The lexicon *N-INCOMING* contains all nouns.
