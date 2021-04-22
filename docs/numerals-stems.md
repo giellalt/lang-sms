@@ -2,97 +2,97 @@
 # Skolt Saami Numerals
 
 
- * **LEXICON Numeral**  initial lexica
+ * **LEXICON Numeral   **  initial lexica
 
 
 
 
- * **LEXICON NUM-PREFIXES**
+ * **LEXICON NUM-PREFIXES   **
 
- * **LEXICON ARABIC** arabic numerals
+ * **LEXICON ARABIC   ** arabic numerals
 
- * **LEXICON ARABICLOOPphone** +358(0)16671254
+ * **LEXICON ARABICLOOPphone   ** +358(0)16671254
 
- * **LEXICON ARABICCASEphone**  
+ * **LEXICON ARABICCASEphone   **  
 
- * **LEXICON ARABICLOOP**
-
-
-
- * **LEXICON ARABICLOOPORD** ordinals
-
- * **LEXICON ACASETAG**  is for 1e+Num+Sg+Num:1e
-
- * **LEXICON ARABICLOOPCOLL** collectives
-
-
- * **LEXICON ARABICDELIMITER**  blank + 3 delim, what does the lg counc prefer?
-
-
- * **LEXICON ARABICDELIMITERORD** ordinals
-
- * **LEXICON ARABICDELIMITERCOLL** collectives
-
- * **LEXICON ARABICCASES**  to distinguish between 0 and oblique
-
- * **LEXICON ARABICCASE0**
-
- * **LEXICON ARABICCASE**
-
-
- * **LEXICON ARABICCASEORD** ordinals
-
- * **LEXICON ARABICCASECOLL** collectives
+ * **LEXICON ARABICLOOP   **
 
 
 
- * **LEXICON ROMAN**  roman numerals
+ * **LEXICON ARABICLOOPORD   ** ordinals
 
- * **LEXICON ROM-THOUSAND** 
+ * **LEXICON ACASETAG   **  is for 1e+Num+Sg+Num:1e
 
- * **LEXICON ROM-THOUSAND-TAG** 
-
- * **LEXICON ROM-HUNDRED** 
-
- * **LEXICON ROM-HUNDRED-TAG** 
-
- * **LEXICON ROM-TEN** 
-
- * **LEXICON ROM-TEN-TAG** 
-
- * **LEXICON ROM-ONE** 
-
- * **LEXICON ROM-ONE-TAG** 
+ * **LEXICON ARABICLOOPCOLL   ** collectives
 
 
- * **LEXICON ROM-SPLIT** 
+ * **LEXICON ARABICDELIMITER   **  blank + 3 delim, what does the lg counc prefer?
 
 
+ * **LEXICON ARABICDELIMITERORD   ** ordinals
 
- * **LEXICON 2ROMAN** 
+ * **LEXICON ARABICDELIMITERCOLL   ** collectives
 
- * **LEXICON 2ROM-THOUSAND** 
+ * **LEXICON ARABICCASES   **  to distinguish between 0 and oblique
 
- * **LEXICON 2ROM-THOUSAND-TAG** 
+ * **LEXICON ARABICCASE0   **
 
- * **LEXICON 2ROM-HUNDRED** 
+ * **LEXICON ARABICCASE   **
 
- * **LEXICON 2ROM-HUNDRED-TAG** 
- * **LEXICON 2ROM-TEN** 
 
- * **LEXICON 2ROM-TEN-TAG** 
+ * ** LEXICON ARABICCASEORD   ** ordinals
 
- * **LEXICON 2ROM-ONE** 
-
- * **LEXICON 2ROM-ONE-TAG** 
-
- * **LEXICON ROMNUMTAG**
-
- * **LEXICON ROMNUMTAGOBL** 
+ * ** LEXICON ARABICCASECOLL   ** collectives
 
 
 
- * **LEXICON ISOLATED-NUMEXP** some isolated numeral expressions
+ * **LEXICON ROMAN   **  roman numerals
+
+ * **LEXICON ROM-THOUSAND   ** 
+
+ * **LEXICON ROM-THOUSAND-TAG   ** 
+
+ * **LEXICON ROM-HUNDRED   ** 
+
+ * **LEXICON ROM-HUNDRED-TAG   ** 
+
+ * **LEXICON ROM-TEN   ** 
+
+ * **LEXICON ROM-TEN-TAG   ** 
+
+ * **LEXICON ROM-ONE   ** 
+
+ * **LEXICON ROM-ONE-TAG   ** 
+
+
+ * **LEXICON ROM-SPLIT   ** 
+
+
+
+ * **LEXICON 2ROMAN   ** 
+
+ * **LEXICON 2ROM-THOUSAND   ** 
+
+ * **LEXICON 2ROM-THOUSAND-TAG   ** 
+
+ * **LEXICON 2ROM-HUNDRED   ** 
+
+ * **LEXICON 2ROM-HUNDRED-TAG   ** 
+ * **LEXICON 2ROM-TEN   ** 
+
+ * **LEXICON 2ROM-TEN-TAG   ** 
+
+ * **LEXICON 2ROM-ONE   ** 
+
+ * **LEXICON 2ROM-ONE-TAG   ** 
+
+ * **LEXICON ROMNUMTAG   **
+
+ * **LEXICON ROMNUMTAGOBL   ** 
+
+
+
+ * **LEXICON ISOLATED-NUMEXP   ** some isolated numeral expressions
 
 
 

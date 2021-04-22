@@ -5026,22 +5026,22 @@ N_GEN2X3-NOM2X1
 
  * LEXICON N_COOGGYLM  cõõggâlm:cõõggâlm
 stemtype l-stem cõõggâlm:cõõggâlm
-* __NMN_COOGGYLM__ = Koulukielioppi stemtype II 9 (29)
+* **NMN_COOGGYLM** = Koulukielioppi stemtype II 9 (29)
 * Yaml: **cooggalm, aaresm, kaaddask** 
  * :%^Pen%^VV2V%^Pen%^CC2CAllegro%^RmVow VOONYS-STEM-PX ;  võnns-
 
  * LEXICON N_SIIVALM  siivâlm:siivâlm
 stemtype l-stem siivâlm:siivâlm
-* __NMN_SIIVALM__ = Koulukielioppi stemtype II 9 (29)
+* **NMN_SIIVALM** = Koulukielioppi stemtype II 9 (29)
 * Yaml: **N-siivalm** 
  * :%^Pen%^VV2V%^RmVow VOONYS-STEM-PX ;  võnns-
 
  * LEXICON N_KAADDYSHKH  kaaddâšǩ:kaaddâšǩ
-* __NMN_KAADDYSHKH__ = Koulukielioppi stemtype II 9 (29)
+* **NMN_KAADDYSHKH** = Koulukielioppi stemtype II 9 (29)
 * Yaml: **cooggalm, aaresm, kaaddask** 
  * :%^Pen%^VV2V%^Pen%^CC2CAllegro%^RmVow%^PALNo VOONYS-STEM-PX ;  võnns- CHECKME
 
-* __NMN_KAADDYSHKH__ = Koulukielioppi stemtype II 9 (29)
+* **NMN_KAADDYSHKH** = Koulukielioppi stemtype II 9 (29)
 * Yaml: **cooggalm, aaresm, kaaddask** 
 
  * LEXICON N_TOOBDYLM  toobdâlm:toobdâlm
@@ -5154,7 +5154,7 @@ gradation: no
 
  * LEXICON N_KOAOADDARV  kååddarv:kååddarv
 stemtype l-stem kååddarv:kååddarv
-* __NMN_KOAOADDARV__ = Koulukielioppi stemtype II 9 (29)
+* **NMN_KOAOADDARV** = Koulukielioppi stemtype II 9 (29)
 * Yaml: **N-kaaddarv** 
  * :%^Pen%^VV2V%^Pen%^CC2C%^RmVow VOONYS-STEM-PX ;  võnns-
 
@@ -5197,7 +5197,7 @@ N_GEN2X3-NOM2X1
 CLASS 4 BISYLLABIC, LOW VOWEL, MONOPHTHONG, PALATALIZATION
  * LEXICON N_VEEQREST  veeʹrest:veeʹrest
  * LEXICON NMN_VEEQREST  veeʹrest:veeʹrest
-* __NMN_VEEQREST__ = Koulukielioppi stemtype II 9 (29)
+* **NMN_VEEQREST** = Koulukielioppi stemtype II 9 (29)
 * Yaml: **N-veerest** 
  * :%^Pen%^VV2V%^RmVow VOONYS-STEM-PX ;  võnns-
 
@@ -5205,7 +5205,7 @@ CLASS 4 BISYLLABIC, LOW VOWEL, MONOPHTHONG, PALATALIZATION
  * LEXICON N_AAQRESHM  ääʹrešm:ääʹrešm
  * LEXICON NMN_AAQRESHM  ääʹrešm:ääʹrešm
 stemtype l-stem ääʹrešm:ääʹrešm
-* __NMN_AAQRESHM__ = Koulukielioppi stemtype II 9 (29)
+* **NMN_AAQRESHM** = Koulukielioppi stemtype II 9 (29)
 * Yaml: **N-aeaereshm** 
  * :%^Pen%^VV2V%^RmVow%>a SG-ILL ;  äʹršma
  * :%^Pen%^VV2V%^RmVow VOONYS-STEM-PX ;  võnns-
@@ -5242,14 +5242,14 @@ stemtype l-stem ääʹrešm:ääʹrešm
 
 
  * LEXICON N_STROOIQTEL  strooiʹtel:stro%^1VOWiʹttel
-* __NMN_STROOIQTEL__ = Koulukielioppi stemtype II 9 (29)
+* **NMN_STROOIQTEL** = Koulukielioppi stemtype II 9 (29)
 * Yaml: **N-strooitel** 
  * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
  * LEXICON N_CHEEUQRES  čeeuʹres:če%^1VOWurres
  * LEXICON NMN_CHEEUQRES  čeeuʹres:če%^1VOWurres
 stemtype l-stem čeeuʹres:čeeuʹres
-* __NMN_CHEEUQRES__ = Koulukielioppi stemtype II 9 (29)
+* **NMN_CHEEUQRES** = Koulukielioppi stemtype II 9 (29)
 * Yaml: **N-ceeures** 
  * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
@@ -5337,7 +5337,7 @@ IN PENULTIMATE E:0
 
 
  * LEXICON N_CIEAQKHKHES  cieʹǩǩes:ciâkˈkes
-* __NMN_CIEAQKHKHES__ = Koulukielioppi stemtype II 9 (29)
+* **NMN_CIEAQKHKHES** = Koulukielioppi stemtype II 9 (29)
 * Yaml: **N-ciekkes** 
  * :%^Pen%^VOWLower%^RmVow VOONYS-STEM-PX ;  võnns-
 
@@ -5448,7 +5448,7 @@ Nouns with -est Loc and -a Ill without ʹ
 
  * LEXICON N_MIEQLKHKH  mieʹlǩǩ:meâ%{ʹØ%}lkk
  * LEXICON NMN_MIEQLKHKH  mieʹlǩǩ:meâ%{ʹØ%}lkk
-__LEXICON NMN_MIEQLKHKH __ Nouns with -est Loc and -a Ill without ʹ
+**LEXICON NMN_MIEQLKHKH ** Nouns with -est Loc and -a Ill without ʹ
 * Yaml: **N-mielkk**
  *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) meâlkk- CHECKME 2016-08-19
  * :%^PALE%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) mieʹlǩ-
@@ -5456,7 +5456,7 @@ __LEXICON NMN_MIEQLKHKH __ Nouns with -est Loc and -a Ill without ʹ
 
  * LEXICON N_PAARHOAQD  päärhåʹd:päärhå%^1VOWd
  * LEXICON NMN_PAARHOAQD  päärhåʹd:päärhå%^1VOWd
-__LEXICON NMN_PAARHOAQD __ Nouns with -est Loc and -a Ill without ʹ
+**LEXICON NMN_PAARHOAQD ** Nouns with -est Loc and -a Ill without ʹ
 * Yaml: **N-paeaehoad**
 
  * :%{XC%}%^C2CC E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) säimm-
