@@ -141,22 +141,22 @@ Other vowel length and consonant length will be phased out
  *  %^VOWXL:0     Extra lengthens vowel in relation to consonant in nouns, for example
  *  %^CXLong:0 %^CLong:0 %^CShort:0  Lengthening, shortening
 
- *  X3:0   causes weak grade
- *  %{VU%}:u          used with stuuʹl
- *  %{Â1%}:0  used with "mainsted" to tell (a story)
- *  %{A1%}:0  used with "vuejted" to drive (causative)
- *  %{E1%}:0  used with "kåʹmrded" to bow
- *  %{%ʼ%}:0  archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one.
- *  %{EÂ%}:e  archiform for ie:eâ variation
- *  %^IMPSG2:0	
- *  %^INDPRSSG3:0  
- *  %^PenVow2a:0	 Changes penultimate vowel to a; e:a â:a
- *  %^FRICG:0	
+ * ` X3:0          ` causes weak grade
+ * ` %{VU%}:u      ` used with stuuʹl
+ * ` %{Â1%}:0      ` used with "mainsted" to tell (a story)
+ * ` %{A1%}:0      ` used with "vuejted" to drive (causative)
+ * ` %{E1%}:0      ` used with "kåʹmrded" to bow
+ * ` %{%ʼ%}:0      ` archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one.
+ * ` %{EÂ%}:e      ` archiform for ie:eâ variation
+ * ` %^IMPSG2:0    `
+ * ` %^INDPRSSG3:0 `
+ * ` %^PenVow2a:0  ` Changes penultimate vowel to a; e:a â:a
+ * ` %^FRICG:0     `
 
 Hyphen at compound word boundary
- * %{%-Ø%}:0  Zero versus hyphen in compounding
- * %^Hyphen:0     at compound word boundary with %-
- * %^NoHyphen:0     at compound word boundary
+ * `%{%-Ø%}:0    ` Zero versus hyphen in compounding
+ * `%^Hyphen:0   ` at compound word boundary with %-
+ * `%^NoHyphen:0 ` at compound word boundary
 
 
 Literal quotes and angles must be escaped (cf morpheme boundaries below):
