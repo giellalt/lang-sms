@@ -1,3584 +1,5 @@
 
 
-# Skolt Sámi morphological analyser 
-
-This file contains all definitions of symbols written by 
-more than one character, and it contains the initial **Root** lexicon. 
-
- # Definitions for **Multichar_Symbols** 
- * **+NoTransl** No translation available 
-
-## Grammatical tags 
-
-### Tags for POS 
- * **+A** = Adjective 
- * **+Adp** = Adposition, i.e. Post- and Prepostion 
- * **+Adv** = Adverb 
- * **+CC** = Conjunction 
- * **+CS** = Subjunction 
- * **+Det** = Determiner 
- * **+Interj** = Interjection 
- * **+N** = Noun 
- * **+Num** = Numeral 
- * **+Po** = Postposition 
- * **+Pr** = Preposition 
- * **+Pron** = Pronoun 
- * **+Pcle** = Particle 
- * **+V** = Verb 
- * **+Aux** = Auxiliary 
-
-Pre-derivational POS tags for CG processing 
- * **+Ex/N** = Noun stem before derivation 
- * **+Ex/A** = Adjective stem before derivation 
- * **+Ex/V** = Verb stem before derivation 
-
-
-### Tags for sub-POS 
-
- * **+Prop** - Proper noun 
- * **+Pers** - Personal Pronoun 
- * **+Dem** - Demonstrative Pronoun 
- * **+Interr** - Interrogative Pronoun 
- * **+Refl** - Reflexive Pronoun 
- * **+Recipr** - Reciprocal Pronoun 
- * **+Rel** - Relative Pronoun 
- * **+Indef** - Indefinitive Pronoun 
- * **+Coll** - Collective numerals 
- * **+Arab** - Arabic numeral 
- * **+Rom** - Roman numeral 
- * **+Pass** - hallat/haddat not in use 
- * **+Qnt** - SHOULD THIS be here or a Sem/Qnt 
- * **+Pred** 
- * **+Attr** Attributive form 
- * **+Distr** Distributive 
- * **+Temp** 
-
-### Types of adverbs 
- * **+Parenthetic** 
- * **+AssocColl** 
- * **+Guess** 
-
-### Number 
- * **+Sg** Singular = õõutilååkk 
- * **+Du** Dual = kuõiʹtilååkk 
- * **+Pl** Plural = määŋgailååkk 
-
-### Case 
- * **+Nom** Nominative = nominativ 
- * **+Gen** Genitive 
- * **+Acc** Accusative 
- * **+Ill** Illative 
- * **+Loc** Locative 
- * **+Com** Comitative 
- * **+Ess** Essive 
- * **+Par** Partative 
- * **+Prl** Prolative 
- * **+Abe** Abessive 
- * **+Lat** Lative lääinas, säämas, toimmpââjas 
-
-symbols ? 
- * **+Ine** 
- * **+Ela** 
- * **+ACRO** 
-
-### Possessive suffix 
- * **+PxSg1** 
- * **+PxSg2** 
- * **+PxSg3** 
- * **+PxPl1** 
- * **+PxPl2** 
- * **+PxPl3** 
-
-### Adjective declension 
- * **+Der/Comp** comparative as in other Sami languages, depricate +Comp 
- * **+Der/Superl** superlative previously Der/mos Der/umus Der/ummus, depricate +Superl 
- * **+Ord** - 
- * **+GenAttr** Genitive attribute used as adjective? 
-
-### Verb forms      Veʹrbbååʹbleʹǩ 
- * **+Actor** 
- * **+Actio** 
- * **+ActEss** -men  
- * **+NomAg** CHECK ME 
- * **+Kin** Kin term This may need to be removed, let Sem/Hum-kin suffice 
- * **+Ind** Indicative mood 
- * **+Prs** Present 
- * **+Prt** Preterite 
- * **+Pot** Potential mood 
- * **+Cond** Conditional mood 
- * **+Imprt** Imperative mood 
- * **+ImprtII** 
- * **+Sup** 
- * **+Inf** 
- * **+Ger** gerund +Ess, +Loc +Instr 
- * **+Instr** -eeʹl 
- * **+ConNeg** 
- * **+ConNegII** 
- * **+Neg** 
- * **+PrsPrc** 
- * **+PrfPrc** 
- * **+VGen** 
- * **+VAbess** 
-
-
-###Valence
- * **+IV** Intransitive 
- * **+TV** Transitive 
- * **+Act** Active voice 
- * **+Pass** Passive voice 
-
-
-### Person-number 
- * **+Sg1** first person singular 
- * **+Sg2** second person singular 
- * **+Sg3** third person singular 
- * **+Du1** first person dual 
- * **+Du2** second person dual 
- * **+Du3** third person dual 
- * **+Pl1** first person plural 
- * **+Pl2** second person plural 
- * **+Pl3** third  person plural 
- * **+Sg4** impersonal fourth person, in MT a Pl4 might be needed 
- * **+13** used in combination with +Imp+13+ConNeg 
- * **+2** used in combination with +Imp+2+ConNeg 
-
-
-### Homonymy 
- * **+Hom1** 
- * **+Hom2** 
- * **+Hom3** 
- * **+Hom4** 
-
-
-### Derivation 
-
-All non-positional derivations should be preceded by this tag, to make it possible 
-to target regular expressions at all derivations in a language-independent way: 
-just specify +Der|+Der1 .. +Der5 and you are set. 
-
- * **+Der** 
- * **+Der/Car**  N»A -tem, -teʹmes 
- * **+Der/Dimin** diminutive derivation N»N was Der/Dim, 
- * **+Der/st**  V»V was diminutive subitive Der/sted, Der/âʹstted 
- * **+Der/ad** ordinals to nouns 
- * **+Der/i**  N»A luõss >> luõʹssi, čääʹcc >> čäccai 'rich in' Sg.Ill 
- * **+Der/PALi** rupp » ruʹppi ATTR ruʹppes DEPRICATE 
- * **+Der/teqm** carative derivation N»A, V»A -teʹm 
- * **+Der/t** carative derivation N»A for subsequent derivation 
-Noun derivation 
- * **+Der/musj** deverbal derivation V»N architype mõš and mmuš was Der/MOsh 
- * **+Der/vuota** A»N -vuõtt 
- * **+Der/lasj**  
- * **+Der/neqkh** N»N resident of place 
- * **+Der1**  
- * **+Der2** 
- * **+Der3** 
- * **+Der4** 
- * **+Der5** 
-
-Verb derivation 
- * **+Der/InchL** incoative V»V -škueʹtted 
- * **+Der/Caus** causative V»V, was Der/ted and Der/âʹtted 
- * **+Der/jed** inchoative V»V also middle 
- * **+Der/oottyd** reflexive reciprocal V»V -õõttâd 
- * **+Der/oovvyd**  V»V kulsted: kulstõõvvâd 
- * **+Der/oollyd**  V»V -õõllâd 
- * **+Der/stoollyd**  V»V -stõõllâd 
- * **+Der/stoovvyd**  V»V -stõõvvâd 
- * **+Der/toovvyd** privative + translative N»V --tõõvvâd 
- * **+Der/ched** frequentative V»V for ʹCCed verbs -čed 
- * **+Der/NomAg** agent V»N 
- * **+Der/NomAct** action V»N +Der/m 
-
-
-## Tags for originating language 
-
-The following tags are used to guide conversion to IPA: loan words 
-and foreign names are usually pronounced (approximately) as in the 
-originating (majority) language. Instead of trying to identify the 
-correct pronunciation based on phonotactics (orthotactics actually), 
-we tag all words that can't be correctly transcribed using the SME 
-transcriber with source language codes. Once tagged, it is possible 
-to split the lexical transducer in smaller ones according to langu- 
-age, and apply different IPA conversion to each of them. 
-
-The principle of tagging is that we only tag to the extent needed, 
-and following a priority: 
-1. any untagged word is pronounced with SME orthographic conventions 
-1. NNO and NOB have identical pronunciation, NNO is only used if 
-  different in spelling from NOB 
-1. SWE has mostly the same pronunciation as NOB, and is only used 
-  if different in spelling from NOB 
-1. Occasionally even SME (the default) may be tagged, to block other 
-  languages from being specified, mainly during semi-automatic 
-  language tagging sessions 
-
-All in all, we want to get as much correctly transcribed to IPA 
-with as little work as possible. On the other hand, if more words 
-are tagged than strictly needed, this should pose no problem as 
-long as the IPA conversion is correct - at least some words will 
-get the same pronunciation whether read as SME or NOB/NNO/SWE. 
-
- * **+OLang/SME** - North Sámi 
- * **+OLang/SMA** - South Sámi 
- * **+OLang/SMN** - Inari Sámi 
- * **+OLang/SMS** - Skolt Sámi 
- * **+OLang/RUS** - Russian 
- * **+OLang/FIN** - Finnish 
- * **+OLang/SWE** - Swedish 
- * **+OLang/NOB** - Norw. bokmål 
- * **+OLang/NNO** - Norw. nynorsk 
- * **+OLang/ENG** - English 
- * **+OLang/UND** - Undefined 
-
-
-### Government tags 
- * **+%<acc%>** 
- * **+%<ess%>** 
- * **+%<gen%>** 
- * **+%<ill%>** 
- * **+%<loc%>** this will be added to the preposition tagging **mâŋŋa jââđast** 
- * **+%<nom%>** 
-
-
-### Semantic tags 
-
- * **+Sem/Act** = Activity 
- * **+Sem/Adr** = Webadr 
- * **+Sem/Amount** = Amount 
- * **+Sem/Ani** Animate       (names) 
- * **+Sem/Ani-fish** Animate    
- * **+Sem/Aniprod** = Animal Product 
- * **+Sem/Ant** Anthroponym  (names) 
- * **+Sem/Body** = Bodypart 
- * **+Sem/Body-abstr** = siellu, vuoig?a, jierbmi 
- * **+Sem/Build** = Building 
- * **+Sem/Build-part** = Part of Bulding, like the closet 
- * **+Sem/Cat** = Category 
- * **+Sem/Clth** = Clothes 
- * **+Sem/Clth-jewl** = Jewelery 
- * **+Sem/Clth-part** = part of clothes, boallu, sávdnji... 
- * **+Sem/Constellation**  
- * **+Sem/Ctain** = Container 
- * **+Sem/Ctain-abstr** = Abstract container like bank account 
- * **+Sem/Ctain-clth** = Soft container, like a rucksack 
- * **+Sem/Curr** = Currency like dollár, Not Money 
- * **+Sem/Dance** = Dance 
- * **+Sem/Dir** = Direction like GPS-kursa 
- * **+Sem/Domain** = Domain like politics, reindeerherding (a system of actions) 
- * **+Sem/Drink** = Drink 
- * **+Sem/Dummytag** = Dummytag 
- * **+Sem/Edu** = Educational event 
- * **+Sem/Event** = Event 
- * **+Sem/Feat** = Feature, like Árvu 
- * **+Sem/Feat-measr** = Psychological feauture 
- * **+Sem/Feat-phys** = Physiological feature, ivdni, fárda 
- * **+Sem/Feat-psych** = Psychological feauture 
- * **+Sem/Fem** = Female name 
- * **+Sem/Food** = Food 
- * **+Sem/Food-med** = Medicine 
- * **+Sem/Furn** = Furniture 
- * **+Sem/Game** = Game 
- * **+Sem/Geom** = Geometrical object 
- * **+Sem/Group** = Animal or Human Group 
- * **+Sem/Holiday** 
- * **+Sem/Hum** = Human 
- * **+Sem/Hum-abstr** = Human abstract 
- * **+Sem/Ideol** = Ideology 
- * **+Sem/Kin** for deprication to Sem/Hum-kin 
- * **+Sem/Hum-kin** = 
- * **+Sem/Lang** = Language 
- * **+Sem/Mal** = Male name 
- * **+Sem/Manner** 
- * **+Sem/Mat** = Material for producing things 
- * **+Sem/Measr** = Measure 
- * **+Sem/Money** = Has to do with money, like wages, not Curr(ency) 
- * **+Sem/Obj**              (names) 
- * **+Sem/Obj-clo** = Cloth 
- * **+Sem/Obj-cogn** = Cloth 
- * **+Sem/Obj-el** = (Electrical) machine or apparatus 
- * **+Sem/Obj-ling** = Object with something written on it 
- * **+Sem/Obj-rope** = flexible ropelike object 
- * **+Sem/Obj-surfc** = Surface object 
- * **+Sem/Org** Organization (names) 
- * **+Sem/Part** = Feature, oassi, bealli 
- * **+Sem/Perc-cogn** = Cloth 
- * **+Sem/Perc-emo** = Emotional perception 
- * **+Sem/Perc-phys** = Physical perception 
- * **+Sem/Perc-psych** = Psychical perception 
- * **+Sem/Plant** = Plant 
- * **+Sem/Plant-part** = Plant part 
- * **+Sem/Plc** Place name   (names) 
- * **+Sem/Plc-abstr** = Abstract place 
- * **+Sem/Plc-elevate** = Place 
- * **+Sem/Plc-line** = Place 
- * **+Sem/Plc-water** = Place 
- * **+Sem/Pos** = Position (as in social position job) 
- * **+Sem/Process** = Process 
- * **+Sem/Prod** = Product 
- * **+Sem/Prod-audio** = Audio product 
- * **+Sem/Prod-cogn** = Cognition product 
- * **+Sem/Prod-ling** = Linguistic product 
- * **+Sem/Prod-vis** = Visual product 
- * **+Sem/Rel** = Relation 
- * **+Sem/Route** = Route 
- * **+Sem/Rule** = Rule or convention 
- * **+Sem/Semcon** = Semantic concept 
- * **+Sem/Sign** = Sign (e.g. numbers, punctuation) 
- * **+Sem/Sport** = Sport 
- * **+Sem/State** = 
- * **+Sem/State-sick** = Illness 
- * **+Sem/Substnc** = Substance, like Air and Water 
- * **+Sem/Sur** Surname       (names) 
- * **+Sem/Symbol** = Symbol 
- * **+Sem/Time** = Time 
- * **+Sem/Tool** = Prototypical tool for repairing things 
- * **+Sem/Tool-catch** = Tool used for catching (e.g. fish) 
- * **+Sem/Tool-clean** = Tool used for cleaning 
- * **+Sem/Tool-it** = Tool used in IT 
- * **+Sem/Tool-measr** = Tool used for measuring 
- * **+Sem/Tool-music** = Music instrument 
- * **+Sem/Tool-write** = Writing tool 
- * **+Sem/Txt** = Text (girji, lávlla...) 
- * **+Sem/Veh** = Vehicle 
- * **+Sem/Wpn** = Weapon 
- * **+Sem/Wthr** = The Weather or the state of ground 
-
-### Multiple Semantic tags: 
- * **+Sem/Act_Fruit** 
- * **+Sem/Act_Group** Activity and Group 
- * **+Sem/Act_Plc**   A persons job is an activity, and a place as well 
- * **+Sem/Act_Route** Activity and Route, ie johtolat 
- * **+Sem/Amount_Build**   Amount and Building 
- * **+Sem/Amount_Semcon** 
- * **+Sem/Ani_Body-abstr_Hum** 
- * **+Sem/Ani_Build** 
- * **+Sem/Ani_Build-part** 
- * **+Sem/Ani_Build_Hum_Txt** 
- * **+Sem/Ani_Group** 
- * **+Sem/Ani_Group_Hum** 
- * **+Sem/Ani_Group_Prod-vis** 
- * **+Sem/Ani_Hum** 
- * **+Sem/Ani_Hum_Plc** 
- * **+Sem/Ani_Hum_Time** 
- * **+Sem/Ani_Plc** 
- * **+Sem/Ani_Plc_Txt** 
- * **+Sem/Ani_Time** 
- * **+Sem/Ani_Veh** 
- * **+Sem/Aniprod_Hum** 
- * **+Sem/Aniprod_Obj-clo** 
- * **+Sem/Aniprod_Perc-phys** 
- * **+Sem/Aniprod_Plc** 
- * **+Sem/Aniprod_Plc_Route** 
- * **+Sem/Body-abstr_Feat-cogn** 
- * **+Sem/Body-abstr_Prod-audio_Semcon** 
- * **+Sem/Body_Body-abstr** 
- * **+Sem/Body_Clth** 
- * **+Sem/Body_Food** 
- * **+Sem/Body_Group_Hum** 
- * **+Sem/Body_Group_Hum_Time** 
- * **+Sem/Body_Hum** 
- * **+Sem/Body_Mat** 
- * **+Sem/Body_Measr** 
- * **+Sem/Body_Obj_Tool-catch** 
- * **+Sem/Body_Plc** 
- * **+Sem/Body_Plc-elevate** 
- * **+Sem/Body_Time** 
- * **+Sem/Build-part_Cat** 
- * **+Sem/Build-part_Cat_Ctain** 
- * **+Sem/Build-part_Cat_Ctain_Mat** 
- * **+Sem/Build-part_Ctain** 
- * **+Sem/Build-part_Ctain_Mat** 
- * **+Sem/Build-part_Ctain_Obj** 
- * **+Sem/Build-part_Plc** 
- * **+Sem/Build_Build-part** 
- * **+Sem/Build_Clth-part** 
- * **+Sem/Build_Edu_Org** 
- * **+Sem/Build_Event_Org** 
- * **+Sem/Build_Obj** 
- * **+Sem/Build_Org** 
- * **+Sem/Build_Route** 
- * **+Sem/Cat_Group_Hum** 
- * **+Sem/Cat_Group_Hum_Plc** 
- * **+Sem/Clth-jewl_Curr** 
- * **+Sem/Clth-jewl_Curr_Obj** 
- * **+Sem/Clth-jewl_Curr_Obj_Org** 
- * **+Sem/Clth-jewl_Fruit** 
- * **+Sem/Clth-jewl_Money** 
- * **+Sem/Clth-jewl_Org** 
- * **+Sem/Clth-jewl_Plant** 
- * **+Sem/Clth_Hum** 
- * **+Sem/Clth_Obj-clo** 
- * **+Sem/Ctain-abstr_Org** 
- * **+Sem/Ctain-clth_Plant** 
- * **+Sem/Ctain-clth_Veh** 
- * **+Sem/Ctain_Feat-phys** 
- * **+Sem/Ctain_Furn** 
- * **+Sem/Ctain_Plc** 
- * **+Sem/Ctain_Tool** 
- * **+Sem/Ctain_Tool-measr** 
- * **+Sem/Curr_Org** 
- * **+Sem/Dance_Org** 
- * **+Sem/Dance_Prod-audio** 
- * **+Sem/Domain_Food-med** 
- * **+Sem/Domain_Hum** 
- * **+Sem/Domain_Prod-audio** 
- * **+Sem/Drink_Plant** 
- * **+Sem/Edu_Event** 
- * **+Sem/Edu_Geom** 
- * **+Sem/Edu_Group_Hum** 
- * **+Sem/Edu_Hum** 
- * **+Sem/Edu_Mat** 
- * **+Sem/Edu_Org** 
- * **+Sem/Event_Food** 
- * **+Sem/Event_Hum** 
- * **+Sem/Event_Plc** 
- * **+Sem/Event_Plc-elevate** 
- * **+Sem/Event_Time** 
- * **+Sem/Feat-measr_Plc** 
- * **+Sem/Feat-phys_Tool-write** 
- * **+Sem/Feat-phys_Veh** 
- * **+Sem/Feat-phys_Wthr** 
- * **+Sem/Feat-psych_Hum** 
- * **+Sem/Feat-psych_Plc** 
- * **+Sem/Feat_Plant** 
- * **+Sem/Food_Obj-surfc** 
- * **+Sem/Food_Perc-phys** 
- * **+Sem/Food_Plant** 
- * **+Sem/Fruit_Hum** 
- * **+Sem/Game_Obj-play** 
- * **+Sem/Geom_Hum_Plc** 
- * **+Sem/Geom_Obj** 
- * **+Sem/Group_Hum** 
- * **+Sem/Group_Hum_Org** 
- * **+Sem/Group_Hum_Plc** 
- * **+Sem/Group_Hum_Prod-vis** 
- * **+Sem/Group_Org** 
- * **+Sem/Group_Prod-vis** 
- * **+Sem/Group_Sign** 
- * **+Sem/Group_Txt** 
- * **+Sem/Hum_Lang** 
- * **+Sem/Hum_Lang_Plc** 
- * **+Sem/Hum_Lang_Time** 
- * **+Sem/Hum_Mat_Tool** 
- * **+Sem/Hum_Obj** 
- * **+Sem/Hum_Org** 
- * **+Sem/Hum_Plant** 
- * **+Sem/Hum_Plc** 
- * **+Sem/Hum_Sign** 
- * **+Sem/Hum_Tool** 
- * **+Sem/Hum_Tool-it** = Human 
- * **+Sem/Hum_Veh** 
- * **+Sem/Hum_Wthr** 
- * **+Sem/Lang_Tool** 
- * **+Sem/Mat_Plant** 
- * **+Sem/Mat_Txt** 
- * **+Sem/Measr_Sign** = Sign (e.g. numbers, punctuation) 
- * **+Sem/Measr_Time** 
- * **+Sem/Money_Obj** 
- * **+Sem/Money_Part** 
- * **+Sem/Money_Txt** 
- * **+Sem/Obj-ling_Obj-surfc** 
- * **+Sem/Obj-play** 
- * **+Sem/Obj-play_Sport** 
- * **+Sem/Obj_Semcon** 
- * **+Sem/Obj_Sign** 
- * **+Sem/Obj_State** 
- * **+Sem/Obj_Symbol** 
- * **+Sem/Obj_Veh** 
- * **+Sem/Oeuvre** (not used so far (?)), note oeu- 
- * **+Sem/Oeuvre-txt** (so far only Biblija, changed to Sem/Txt) 
- * **+Sem/Org_Prod-audio** 
- * **+Sem/Org_Prod-cogn** 
- * **+Sem/Org_Prod-vis** 
- * **+Sem/Org_Rule** 
- * **+Sem/Org_Txt** 
- * **+Sem/Org_Veh** 
- * **+Sem/Part_Prod-cogn** 
- * **+Sem/Part_Substnc** 
- * **+Sem/Perc-emo_Wthr** 
- * **+Sem/Plant_Plant-part** 
- * **+Sem/Plant_Tool** 
- * **+Sem/Plant_Tool-measr** 
- * **+Sem/Plc-abstr_Rel_State** 
- * **+Sem/Plc-abstr_Route** 
- * **+Sem/Plc_Pos** 
- * **+Sem/Plc_Route** 
- * **+Sem/Plc_State** 
- * **+Sem/Plc_Substnc** 
- * **+Sem/Plc_Substnc_Wthr** 
- * **+Sem/Plc_Time** 
- * **+Sem/Plc_Time_Wthr** 
- * **+Sem/Plc_Tool-catch** 
- * **+Sem/Plc_Wthr** 
- * **+Sem/Prod-audio_Txt** 
- * **+Sem/Prod-cogn_Txt** 
- * **+Sem/Semcon_Txt** 
- * **+Sem/State-sick_Substnc** 
- * **+Sem/Substnc_Wthr** 
- * **+Sem/Time_Wthr** 
-
-
-
-### Clitic 
- * **+Clt** 
- * **+Qst** Question particle -a 
- * **+Qst/a** Question particle -a 
- * **+Qst/ko** Question particle -ko might be used with Use/NG  
- * **+Foc/AA** more specifically, exactly, contrast. used with Pron and Adv 
- * **+Foc/ǥo** 
- * **+Foc/go** 
- * **+Foc/o** 
- * **+Foc/i** This might be used with 
- * **+Foc/han** This might be used with Use/NG 
- * **+Foc/ka** This might be used with Use/NG ij-ka 
- * **+Foc/kahan** 
- * **+Foc/ǥa** 
- * **+Foc/ga** 
- * **+Foc/ki** This might be used with Use/NG 
- * **+Foc/son** 
- * **+Foc/jõs** 
- * **+Foc/õs** 
- * **+Foc/ǥõs** 
- * **+Foc/mes** 
- * **+Foc/ba** 
- * **+Foc/âs** 
- * **+Foc/ât** 
- * **+Foc/tâma** 
- * **+Foc/tõt** 
-
-### Tags distinguishing different versions of the same lemma (before POS) 
-In the xml the varid attribute is used in the st element with a mere numeric value 
-an extra lemma attribute is inserted in the st element, e.g. lemma="tõlvvad" 
- * **+v1** 
- * **+v2** 
- * **+v3** 
- * **+v4** 
- * **+v5** 
- * **+v6** 
- * **+v7** 
- * **+v8** 
- * **+v9** 
- * **+v10** 
- * **+v11** 
- * **+v12** 
- * **+v13** 
- * **+v14** 
- * **+v15** 
- * **+v16** 
- * **+v17** 
- * **+v18** 
- * **+v19** 
- * **+v20** 
- * **+v21** 
- * **+v22** 
- * **+v23** 
- * **+v24** 
-
-
-### Other tags 
-
- * **+ABBR** Abbreviation 
- * **+Symbol** = independent symbols in the text stream, like £, €, © 
- * **+ACR**  Acronym 
- * **+CLB**  Clause border (full stop, comma..) 
- * **+PUNCT**  punctuation 
- * **+LEFT**  left paranthesis 
- * **+RIGHT**  right paranthesis 
- * **^GUESSNOUNROOT** 
- * **+Dyn**  Dynamically generated (acronyms) 
- * **+Prefix**  prefix 
-
-### Punctuation 
- * **+HYPH** 
-
-## Letters 
-
-### Skolt Saami letters 
-These definitions are probably not needed 
- * **č** 
- * **đ** 
- * **š** 
- * **ŧ** 
- * **ž** 
- * **Ʒ** 
- * **ǥ** 
- * **ǧ** 
- * **ǩ** 
- * **Ǯ** 
- * **ǯ** 
- * **Ǥ** 
-
-
-### Archiphonemes 
-
-These are for letters with special behaviour. 
-Say that all m-s change to n in a given context, 
-but not this m, because it is m2. 
-In twolc these are then defined m2:m, etc, i.e. 
-the m2 is an m, although it is a different m. 
-
-
-## Diacritic marks 
-These symbol govern the way the morphophonological rules treat the affix string. 
-
-This project started out using arbitrary names, X1, X2..., but since they were 
-hard to remember, we changed to (a bit) more transparent names (^DIADEL, ...). 
-On the TODO-list: Change all X1, X2, ... to easy-to-remember names. 
-Special iterations 
-
- * **%^a2 %^ä2 %^å2 %^â2 %^e2 %^ẹ2 %^o2 %^õ2 %^i2 %^u2** 
- * **%^b2 %^c2 %^č2 %^ʒ2 %^ǯ2 %^d2 %^đ2 %^f2 %^ǧ2 %^h2 %^j2** 
- * **%^ǩ2 %^l2 %^m2 %^n2 %^p2 %^r2 %^s2 %^š2 %^t2 %^v2 %^z2** 
- * **%^ž2** 
-
-
-## Consonant lengthening 
- * **%{XC%}** 
-
-## Vowel length and height 
- * **%{õuØ%}** 
- * **%{ouØ%}** 
- * **%{âõØ%}** 
- * **%{ẹiØ%}** 
- * **%{äaØ%}** 
- * **%{äåØ%}** 
- * **%{eiØ%}** 
- * **%{åoØ%}** 
- * **%{ẹeiØ%}** 
-
-for vowel height, by default vowels are low. 
- * **%{õu%}** 
- * **%{ou%}** 
- * **%{âõ%}** 
- * **%{ẹi%}** 
- * **%{äa%}** 
- * **%{äå%}** 
- * **%{ei%}** 
- * **%{åo%}** 
- * **%{ẹei%}** 
- * **%{âõe%}** 
- * **%{âõäe%}** 
-
-
-CHARACTERISTIC BREAKDOWN 2015-02-17 
- * **%^VV2V** Shortens vowel 
- * **%^V2VV** Lengthens vowel 
- * **%^CC2C** Shortens consonant 
- * **%^CC2CAllegro** Shortens consonant 
- * **%^C2CC** Lengthens consonant 
- * **%^CC2CCC** Strong to Extra Strong consonant 
- * **%^CCC2C** Extra Strong to Weak consonant 
- * **%^CCC2CAllegro** Extra Strong to Weak consonant 
- * **%^CCC2CC** Extra Strong to Strong consonant 
- * **%^XYY2XY** Shortens consonant cluster 
- * **%^XYY2VY** Consonant cluster to vowel and consonant sijdd:siid 
- * **%^XYY2VYY** Consonant cluster to vowel and geminate uvdd:ouʹdd 
- * **%^XYY2IY** Consonant cluster to i  and consonant kueʹhtt:kueiʹt 
- * **%^VY2XYY** Consonant cluster i/u to j/v 
- * **%^VYY2XYY** Consonant cluster i/u to j/v 
- * **%^KKK2GG** Geminate weakening 
- * **%^KKK2G** Strong Geminate allegro 
- * **%^KK2GG** Geminate weakening     jokk:jooǥǥ 
- * **%^K2GG** Geminate weakening čårrõs:čårrõõzz 
- * **%^KK2GAllegro** Geminate weakening    in allegro pååss:påz 
- * **%^K2GAllegro** Geminate weakening    in allegro čâustõk 
- * **%^APen** for combinations 2015-10-04 Jack 
- * **%^Pen** for combinations 2015-09-28 Miikka 
- * **%^KK2ZERO** Geminate weakening nââʹer 
- * **%^Allegro** This introduces vertical bar after diphth before consonants 
- * **%^J2I** in tuâjj:tuâi 
- * **%^I2J** in agent names 
- * **%^I2Zero** in agent names 
- * **%{ʹØ%}** Modifier Letter prime 
- * **%{ʼØ%}** used between l, n, j and subsequent j and elsewhere 
- * **%{ˈ1%}** This is modifier letter verticle line after diphthongs 
-
-
-## Gradation triggers 2015.01.23 
- * **%^XSt2St** Causes weakening from extra strong to strong 
- * **%^XSt2W** Causes weakening from extra strong to weak 
- * **%^St2W** Causes weakening from strong to weak 
- * **%^W2St** Causes strengthening from weak to strong 
- * **%^W2XSt** Causes strengthening from weak to extra strong 
- * **%^St2XSt** Causes strengthening from strong to extra strong 
-
-Gradation triggers 2015.02.09 For   Consonant Clusters 
- * **%^XSt2StCluster** Causes weakening from extra strong to strong in clusters 
- * **%^St2XStCluster** Causes strengthening from strong to extra strong in clusters 
-
-
-
-### Diacritic with mnemonic names 
-
- * **%^1VOW** vowel position and length 
- * **%^2VOW** 
- * **%^3VOW** 
- * **%^4VOW** 
- * **%^5VOW** 
- * **%^CLong** 
- * **%^CShort** 
- * **%^CXLong** 
- * **%^DIADEL** deleting diacritic 
- * **%^DIAINS** inserting diacritic 
- * **%^FRICG** for causing fricative ǥ vueʹlǧǧed+V+Imp+Pl3: vuâlǥǥaz 
- * **%^IMPSG2** 
- * **%^INDPRSSG3** 
- * **%^PenVow2a** Changes penultimate vowel to a; e:a â:a 
- * **%^P3** ... means what? 
- * **%^PAL** for placing palatalization mark **ʹ** 
- * **%^PALK** causes k:ǩ and g:ǧ 
- * **%^PALNo** This is to facilitate +Sg+Nom lemma:stem equivalence; it removes palatal supersegmental 
- * **%^PALI** Palatalisation causes â:i, etc. 
- * **%^PALE** Palatalisation causes â:e, etc. 
- * **%^PALÄ** Palatalisation causes â:ä, etc. 
- * **%^PALẸ** Palatalisation causes å:ẹ suẹjj BUT suejjin (cf. 2012: 150, but ) 
- * **%^PALÂ** Depalatalisation causes 0:â keâmnna 
- * **%^PALÕ** Depalatalisation causes â:õ tiõttum 
- * **%^RmVow** for removing vowels e, â, a before final consonant in stem 
- * **%^UltRmVow** for removing vowels e, â, a after final consonant in stem 
- * **%^RmCns** for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta 
- * **%^VC** Voicing s:z š:ž 
- * **%^VOWLower** for lowering i>e, õ>â, â>ä, u>o, o>å 
- * **%^U2Õ** lowers u>õ    
- * **%^VOWRaise** for raising e>i, ä>e 
- * **%^VOWL** for lengthening BEING PHASED OUT 
- * **%^VOWXSH** for extra shortening 
- * **%^VOWXL** for extralengthening 
- * **%^Â** Indicates placement of â in stem 
- * **%{VU%}** used with stuuʹl 
- * **%{A1%}** used with vuejted 
- * **%{E1%}** used with kåʹmrded 
- * **%{Â1%}** used with mainsted 
- * **%{%ʹ%}** archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one. 
- * **%{EÂ%}** archiform for ie:eä variation, e.g. pieʹǩǩ+N+Sg+Ill:peâkka 
-
-Hyphen at compound word boundary 
- * **%{%-Ø%}** Zero versus hyphen in compounding 
- * **%^Hyphen** at compound word boundary with %- 
- * **%^NoHyphen** at compound word boundary 
-
-## Escaped symbols 
-
-
-Symbols that need to be escaped on the lower side (towards twolc): 
-* » 
-* « 
-* > 
-* < 
-
-The Usage extents are marked using following tags: 
-
- * **+Err/Orth**  substandard, not in normative fst 
- * **+Err/Orth-k-kh** substandard k, not in normative fst ǩ 
- * **+Err/Orth-a-y** substandard a, not in normative fst â 
- * **+Err/Lex** substandard, not in normative fst, no normative lemma 
- * **+Err/DerSub** substandard for derivation, not in normative fst, no normative lemma 
- * **+Err/CmpSub** substandard for compounding, not in normative fst (wrong form or POS in first part) 
- * **+Err/MissingHyph** substandard for compounding, not in normative fst (needs hyph) 
- * **+Err/Hyph** substandard for compounding, not in normative fst (should have no hyphen) 
- * **+Err/SpaceCmp** used for compounds written apart - only retained in the HFST Grammar Checker disambiguation analyser 
- * **+Err/Spellrelax** used to tag spellrelaxed typos (tag is inserted via flag diacritics) 
- * **+Err/GenreLeudd** 
- * **+Err/Orth-nom-acc** 
- * **+Err/Orth-nom-gen** 
- |  **+Err/MissingSpace** | in use ins smi lexc 
-
- * **+Use/Marg** marginal (?) 
- * **+Use/-Spell** Excluded in speller 
- * **+Use/SpellNoSugg** recognized but not suggested in speller 
- * **+Use/Circ** circular paths (old ^C^) 
- * **+Use/CircN** circular paths for the numerals (old ^N^) 
- * **+Use/NG** not-generate, for ped generation isme-ped.fst 
- * **+Use/NGminip** not-generate, for ped generation isme-ped.fst 
- * **+Use/Ped** for use with pedagogical work 
- * **+Largo** largo variant instead of allegro saaǥǥstõõllâd vs saǥstõõllâd 
- * **+Allegro** never last element of compound words 
- * **+MWE** never last element of compound words 
- * **+Use/GC** only retained in the HFST Grammar Checker disambiguation analyser 
- * **+Use/-GC** never retained in the HFST Grammar Checker disambiguation analyser 
-
-### Dialect tags: 
-
- * **+Dial/P** Paatsjoki (KKS) 
- * **+Dial/Pets** Petsamo 
- * **+Dial/N** Nuortjärvi (KKS) 
- * **+Dial/S** Suonikylä (KKS) 
-
- * **+South**  
- * **+Txt**  
-
-
-
-
-Compounding 
-
- * **+Cmp** 
- * **+CmpNP/First** 
- * **+CmpNP/Pref** 
- * **+CmpNP/None** 
- * **+CmpN/PlG** 
- * **+CmpN/SgG** 
- * **+CmpN/SgN** 
-
- * **+Cmp** - Dynamic compound. This tag should always be part 
-                of a dynamic compound. It is important for 
-                Apertium, and useful in other cases as well. 
- * **+Cmp/Attr** - Attributive 
- * **+Cmp/SgNom** - Singular Nominative 
- * **+Cmp/SgGen** - Singular Genitive 
- * **+Cmp/PlGen** - Plural Genitiv 
- * **+Cmp/SplitR** - This is a split compound with the other part to 
-                the right: "Arbeids- og inkluderingsdepartementet" 
-                => Arbeids- = +Cmp/SplitR 
- * **+Cmp/SplitL** - This is a split compound with the other part to the left 
- * **+Cmp/Sh** - testing +Cmp/Sh 
- * **+Cmp/Hyph** - on dynamic compounds that have a hyphen 
- * **+Cmp/NoHyph** - On compounds that COULD have had a hyphen (and usually have), but doesn't 
- * **+Cmp/SoftHyph** - Tags compounds containing SOFT HYPHENS (U+00AD) 
- * **+Cmp/Cit** - Tags citation compounds, which can in principle 
-                cover any word. Requires a hyphen. 
-
-
-## Flag diacritics 
-
-| Flag | Explanation 
-| --- | --- @P.AssocColl.ON@ !!≈ * **+Cmp/Cit** Used with Kin terms and Ant 
- * **@R.AssocColl.ON@** 
- * **@C.AssocColl@** 
-
-
-We have manually optimised the structure of our lexicon using following 
-flag diacritics to restrict morhpological combinatorics - only allow compounds 
-with verbs if the verb is further derived into a noun again: 
-
-
-| Flag | Explanation 
-| --- | --- 
- |  **@P.NeedNoun.ON@** | (Dis)allow compounds with verbs unless nominalised 
- |  **@D.NeedNoun.ON@** | (Dis)allow compounds with verbs unless nominalised 
- |  **@C.NeedNoun@** | (Dis)allow compounds with verbs unless nominalised 
-
-For languages that allow compounding, the following flag diacritics are needed 
-to control position-based compounding restrictions for nominals. Their use is 
-handled automatically if combined with +CmpN/xxx tags. If not used, they will 
-do no harm. 
-
-| Flag | Explanation 
-| --- | --- 
- |  **@P.CmpFrst.FALSE@** | Require that words tagged as such only appear first 
- |  **@D.CmpPref.TRUE@** | Block such words from entering ENDLEX 
- |  **@P.CmpPref.FALSE@** | Block these words from making further compounds 
- |  **@D.CmpLast.TRUE@** | Block such words from entering R 
- |  **@D.CmpNone.TRUE@** | Combines with the next tag to prohibit compounding 
- |  **@U.CmpNone.FALSE@** | Combines with the prev tag to prohibit compounding 
- |  **@P.CmpOnly.TRUE@** | Sets a flag to indicate that the word has passed R 
- |  **@D.CmpOnly.FALSE@** | Disallow words coming directly from root. 
-
-Use the following flag diacritics to control downcasing of derived proper 
-nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use 
-these flags. There exists a ready-made regex that will do the actual down-casing 
-given the proper use of these flags. 
-
-| Flag | Explanation 
-| --- | --- 
- |  **@U.Cap.Obl@** | Allowing downcasing of derived names: deatnulasj. 
- |  **@U.Cap.Opt@** | Allowing downcasing of derived names: deatnulasj. 
-
-
-# Basic lexica, pointing to the other lexicon files 
-
-
- * **LEXICON Root** 
- * **Abbreviation ;** abbreviations 
- * **Adposition ;** 
- * **@U.Cap.Obl@ ProperNoun ;** 
- * **@U.Cap.Opt@ ProperNoun ;** 
-
- * **VerbRoot ;** 
- * **Subjunction ;** 
- * **Conjunction ;** 
- * **Interjection ;** 
- * **Pronoun ;** 
- * **Punctuation ;** 
- * **Symbols ;** 
- * **Particle ;** 
-
- * **NEG-COPULA ;** This is for 3rd person iʹlla 
-This generates from merged materials 
- * **A_sms2x ;** This generates from merged materials 
- * **TRAB_sms2x ;** transitive abbreviations 
- * **TRNUMAB_sms2x ;** transitive abbreviations with numerals 
- * **Adp_sms2x ;** adpositions 
- * **Adv_sms2x ;** adverbs 
- * **CC_sms2x ;** conjunctions 
- * **CS_sms2x ;** subjunctions 
- * **Det_sms2x ;** determiners 
- * **Interj_sms2x ;** This generates from merged materials 
- * **@P.AssocColl.ON@ N_Kin_sms2x ;** This generates from merged materials 
- * **N_sms2x ;** This generates from merged materials 
- * **+Cmp/SplitL+Use/SpellNoSugg#:%-# N_sms2x ;** This allows split compound nouns 
- * **@P.AssocColl.ON@ N_Prop_sms2x ;** This generates from merged materials 
- * **@U.Cap.Obl@ N_Prop_Toponyms_sms2x ;** Toponymy 
- * **@U.Cap.Opt@ N_Prop_Toponyms_sms2x ;** Toponymy 
- * **Num_sms2x ;** This generates from merged materials 
- * **Pcle_sms2x ;** This generates from merged materials 
- * **Prefix_sms2x ;** This generates from merged materials 
- * **Pron_sms2x ;** This generates from merged materials 
- * **V_sms2x ;** This generates from merged materials 
-
- * **Numeral ;** This feeds Arabi numerals, borrowed from sme 
-
-
-
- * **A_NEWWORDS ;** These are new adjectives beginning 2015-02-11 
- * **ADP_NEWWORDS ;** These are new adpositions 
- * **ADV_NEWWORDS ;** These are new adverbs 
- * **CC_NEWWORDS ;** These are new conjunctions 
- * **N_NEWWORDS ;** These are new nouns beginning 2015-01-10 
- * **PCLE_NEWWORDS ;** These are particles 
- * **PRON_NEWWORDS ;** These are pronouns 
- * **@U.Cap.Obl@ PROP_NEWWORDS ;** These are new proper nouns beginning 2015-03-04 
- * **@U.Cap.Opt@ PROP_NEWWORDS ;** These are new proper nouns beginning 2015-03-04 
- * **@U.Cap.Obl@ TOPONYMS_NEWWORDS ;** 2016-02-06 
- * **@U.Cap.Opt@ TOPONYMS_NEWWORDS ;** 2016-02-06 
- * **V_NEWWORDS ;** These are new verbs 
- * **ProperNoun-smi ;** work with smi 2018-08-23 
-
-INCOMING _lemma:stem Contlex_ sets to be distinguished from glossing in progress 
-
-
-NounRoot 
-
-
-
-
-INTERJ_ 
-Interjections 
-
-* Postposition ; is still not included 
-* Preposition ;  is still not included 
-
-
-CONJUNCTIONS 
-INTERJ_ 
-
-CS_ Subjunction 
-
-CS-TEMP_ 
-**when** 
-
-NUM_ 
-NUM_VAHTT 
-
-NUM_ALGG 
-NUM_AUTT 
-NUM_TOLL 
-NUM_PAPP 
-NUM_AELDD 
-NUM_KUEQLL 
-NUM_TAQHTT 
- * **LEXICON NUM_KUEQHTT** kueʹhtt:kuâhtt 
-NUM_KUEQHTT 
-NUM_NELLJ 
-
-NUM_AANAR 
-
-NUM_ATOM 
-NUM_JEAQNNN 
-
-
-
- * **LEXICON NUM_LO** kuttlo:kuttl 
-NUM_LO 
- * **:ååǥǥ DET_NEELLJAD ;** This ordinal derivation 
- * **LEXICON NUM_LOAOAI** lååi:l  THIS looks like allegro 
-NUM_LOAOAI 
-
-
-
-Postpositions with government tagging possible 
-ADP_ 
-PO_ 
-PO-ILL_ 
-PO-LOC_ 
-
-ADP-GOV-LOC_ 
-PO-GOV-GEN_ 
-
-
-Prepositions with government tagging possible 
-
-PR_ 
-
-
-PR-TEMP-GOV-LOC_ 
-
-PREFIX/A_ 
-
-SUF/A_ 
-
-# Skolt Saami adjective declension
-
-
-
-
-
-
-
-These come directly from the xml to lexc xsltransformation lexica
-
-
-
- * : ADJ-DER/COMP_ab ;  This has a Comp+Attr
-
-
-
-CLASS 1 HIGH VOWEL, NO PALATALIZATION NOMINALS
- * LEXICON A_PAPP  papp:papp
-
-
-
- * LEXICON A_ALGG  põrtt:põrtt
-friskk
-
- * LEXICON A_AUTT  autt:a%^1VOWutt
-friskk
-
-
- * LEXICON A_MUORR  muõrr:muõrr
-
- * LEXICON A_NUORR  nuõrr:nuõrr
-
- * LEXICON A_SHIOGHGH  šiõǥǥ:šiõǥǥ
-Need work on derivation since this only has positive form. 2018-10-13
-
-
- * LEXICON	A_KOOKKA 	kookka length of/pituinen
-no gradation, has preceding genitive 2018-10-13
-
- * LEXICON A_KUOCC  kuõcc:kuõcc
-
- * LEXICON A_CHUOSHKK  čuõškk:čuõškk
-tuõlbb
-
- * LEXICON A_MIYRKK  sǩiâŋkk:sǩiâŋkk
-hiâlpp
-
- * LEXICON A_PLAAN  plaan:plaan
-
- * LEXICON A_SUYMMM  suâmm:suâmˈm
-
-
- * LEXICON A_MODDAI  moddai:moddai
- * : SG-NOM ; 
- * : SG-ABE/ACC/GEN ; 
- * :%^RmVow%^I2J%>a SG-ILL ; 
- * :%^RmVow%^I2J%>e SG-LOC ; 
- * :%^RmVow%^V2VV SG-COM_IN ; 
- * :%^I2J%>e ESS/PAR ; 
- * :%^Pen%^V2VV PL-NOM ; 
- * :%^RmVow%^I2J PL-OBL ; 
-
-
-CLASS 1 LOW VOWEL, NO PALATALIZATION NOMINALS
-
-
-
-* Yaml: **A-vaeaezhzh**
-
-
-
-CLASS 1 LOW VOWEL, PALATALIZATION, ILLATIVE IN U NOMINALS
-
-
-CLASS 1 HIGH VOWEL, PALATALIZATION NOMINALS
- * LEXICON A_NUQBB   nuʹbb:nubb
-* Yaml: **A-nubb**
-
- * LEXICON A_KUEQLL  kueʹll:kuâll
-
- * LEXICON A_MUEQRJJ  mueʹrjj:mueʹrjj
-
-CLASS 1 LOW VOWEL, PALATALIZATION NOMINALS
-
- * LEXICON A_LOAQDD  väʹll:väll
-
- * LEXICON A_UQCC  uʹcc:u%^1VOW%{ʹØ%}cc
-
- * LEXICON A_SAAQMM  sääʹmm:sää%{ʹØ%}mm
-
- * LEXICON A_CHAAQCC  čääʹcc:čää%{ʹØ%}cc
-
- * LEXICON A_KAQLBB  käʹlbb:kälbb âʹlǧǧ:â%^1VOW%{ʹØ%}lgg
-
- * LEXICON A_HAAQSKH  hääʹsǩ:hää%{ʹØ%}sk
-
-no separate attribute form 2018-10-13
-Russian loanword 
-
- * LEXICON A_SEQTT  seʹtt:sẹ%^1VOW%{ʹØ%}tt
-CHECKME
-
-
- * LEXICON A_KHEQRJJ  ǩeʹrjj:ǩẹ%^1VOW%{ʹØ%}rjj
-
- * LEXICON A_JAUQRR  jäuʹrr:jä%^1VOWu%{ʹØ%}rr
-
- * LEXICON A_PEIQVV  peiʹvv:pẹ%^1VOWi%{ʹØ%}vv
-
- * LEXICON A_SUEAQKHKH  sueʹǩǩ:suäkk
-cuẹʹǩǩ
-
- * LEXICON A_KUEAQTT  kuẹʹtt:kuätt
-
- * LEXICON A_HIEAQNN  hieʹnn:heänn
-
- * LEXICON A_JEAQNNN  jeäʹnn:jeänˈn, jeäʹǧǧ:jeägˈg
-
- * LEXICON A_JEAQRMM  jeäʹrmm:jeärmm
-
- * LEXICON A_CHUAQRVV  tuäʹŋǧǧ:tuäŋgg
-
-
-CLASS denominals in -i
-cf. Feist (2012: 198-199)
-These will need their own expansions
-HOW DOES JIÕʹNNI decline?
- * LEXICON A_JIOQNNI  jiõʹnni:jiõnn FIXME 2016-04
-
-
- * LEXICON A_PAERRAI  pärrai:pärr
- * LEXICON A_SAELTTAI  sälttai:sältt
-
- * LEXICON A_VELLAI  vellai:vẹ%^1VOWll
-
-
-
-CLASS 
-
-
--õs ending
-
-
-
- * +Pl+Nom:až ENDLEX ;  Check this 2015-02-22
-
- * LEXICON A_VOONYS  võõnâs:võnn
- * +Pl+Nom: ENDLEX ;  Check this 2015-02-22
-
- * LEXICON A_OODHYS  oođâs:ođđ
-
- * LEXICON A_KOODDYS  kõõddâs:kõdd
- * +Pl+Nom:%>âz ENDLEX ;  Check this 2015-02-22
-
- * LEXICON A_MOOCHCHYS  mooččâs:močč
-
- * LEXICON A_JOOSKYS  jõõskâs:jõ%^1VOWskk
-
- * LEXICON A_AARVYS  aarvâs:a%^1VOWrvv
-
-
- * LEXICON A_PIIUTYS  piiutâs:pihtt
-
- * LEXICON A_FIINYS  fiinâs:fijnn
-
-
- * LEXICON A_RUODDYS  ruõddâs:ruõdˈd
-
- * LEXICON A_TUOVYS  tuõvâs:tuõvv
-
-
- * LEXICON A_VUOIVYS  vuõivâs:vuõivv
-
- * LEXICON A_KUORMYS  kuõrmâs:kuõrmm
-
-
- * LEXICON A_KOAOAVAS  kååvas:kåvv
-
- * LEXICON A_KOAOADDAS  kååddas:kåådd
-
- * LEXICON A_TOBDDSALLASH  tobddsallaš:tobddsallaš
-
-
- * LEXICON A_JAELLASH  jällaš:jällaš
-
-
- * LEXICON A_VAALMYSH  vaalmâš:va%^1VOWlmmâš
-
-
- * LEXICON A_VEEIDAS  veeidas:veidd
-
- * LEXICON A_PAEAELKAS  päälkas:pä%^1VOWlkkas
-
- * LEXICON A_CEAEGGAS   ceäggas:ceägˈg
-
- * LEXICON A_AANAR  späʹsseb:späʹsseb
-
- * LEXICON A_CIYLKYLM  kuâstalv:kuâ%{ˈ1%}stalv
-
- * LEXICON A_KUQCCER  kuʹccer:kuʹccer
-
-
-
- * LEXICON A_KAAQMES   kääʹmes:kämm
- * :es A-01_OAQVES ;    kääʹmes:kämmez
-
- * LEXICON A_KAAQLLES   kääʹlles:kä%^1VOWll
- * :es A-01_KAAQLLES ;    kääʹmes:kämmez
-
- * LEXICON A_PUUQTTES   puuʹttes:pu%^1VOWtt
- * : A-01_PUUQTTES ;    puuʹttes:pu%^1VOWttes
-
- * LEXICON A_KOAQSHKHES  kååʹšǩes:kåškk
-
- * LEXICON A_KHEEQLES   ǩeeʹles:ǩeâlˈl
- * :es A-01_KHEEQLES ; 	ǩeeʹles:ǩeâlˈles
-
-
- * LEXICON A_PUAQRES   puäʹres:puärˈr
- * :es A-01_PUAQRES ;    puäʹres:puärˈres
-
- * LEXICON A_VUAQMES   vuäʹres:vuärˈr
- * :es A-01_PUAQRES ;    puäʹres:puärˈres
-
- * LEXICON A_CHUEQDHES   čueʹđes:čuâtˈt
- * :es A-01_CHUEQDHES ;    puäʹres:puärˈrez
-
- * LEXICON A_PUEAQRDES   čueʹcǩes:čuäckkez
- * :es A-01_PUEAQRDES ;   čueʹcǩes:čuäckkez
-
- * LEXICON A_TUEJJEEJA  tuejjeeja:tuejjẹẹja
-
- * LEXICON A_PRSPRC-EEI  tuejjeei:tuejjee
- * +Err/Orth+Attr:jas ENDLEX ;  c.f. sjm faʹlsǩeejas
-
- * LEXICON A_PRSPRC-EEQJJ  tuejjeei:tuejjẹẹ
-
-WORK HERE 2015-10-14 deverbals
- * LEXICON A_PRSPRC-NOGRADE-I  uuidi:uuidi
-
- * LEXICON A_PRSPRC-VCC-I  cõggi:cõggi
-
- * LEXICON A_PRSPRC-VQCC-I  elstõʹtti:elstõ%^1VOWʹtti
-
- * LEXICON A_PRSPRC-VHYY-I  lahtti:la%^1VOWhtti
-
- * LEXICON A_PRSPRC-VQHYY-I  puʹhtti:pu%^1VOWhtti
- * LEXICON A_PRSPRC-VWCCC-I  kuõʹddi:kuõʹdˈdi
-
- * LEXICON A_PRSPRC-VWQCCC-I  kuõʹddi:kuõʹdˈdi
-
- * LEXICON A_PRSPRC-VWHYY-AI  veâhssai
-
-
- * LEXICON A_PRSPRC-VVCC-I  jõõvvi:jõõvvi
-* Yaml: **A-vaeaezhzh**
-
- * LEXICON A_PRSPRC-VVQCC-I  jooʹtti+A:jooʹtti
-* Yaml: **A-vaeaezhzh**
- * LEXICON A_PRSPRC-VVQKK-I  kooʹcci+A:kooʹcci
- * LEXICON A_PRSPRC-VVKK-I  lookki:lookki
- * LEXICON A_KOBDDI  kobddi:kobddi SEE following A_TOBDDI diff
-
- * LEXICON A_PRSPRC-VWKK-I  ǩiõssi:ǩiõssi
-
- * LEXICON A_PRSPRC-VWQKK-I  ǩiõʹssi:ǩiõʹssi
- * LEXICON A_PRSPRC-VWCC-I  vuõlli:vuõlli
-
- * LEXICON A_PRSPRC-VWQCC-I  puõʹtti:puõʹtti
- * LEXICON A_PRSPRC-VWXYY-I  kuõskki:kuõskki
-
- * LEXICON A_PRSPRC-VWQXYY-I  hieʹrvvi+A:hieʹrvvi
- * LEXICON A_PRSPRC-VCC-AI  kåččai:kåččai
- * LEXICON A_PRSPRC-VVCC-AI  peellai:peellai
- * LEXICON A_PRSPRC-VVKK-AI  pååssai:pååssai
- * LEXICON A_PRSPRC-VXYY-AI  särnnai:särnnai
- * LEXICON A_PRSPRC-VWCC-AI  vuejjai:vuejjai
- * LEXICON A_PRSPRC-VWKK-AI  reäkkai:reäkkai
- * LEXICON A_PRSPRC-VWCCC-AI  vuäggai:vuägˈgai
- * LEXICON A_PRSPRC-VWXYY-AI  meälttai:meälttai
-
- * LEXICON A_PRSPRC-VXYY-I  äjjnõʹstti:äjjnõʹstti
-
- * LEXICON A_PRSPRC-VQXYY-I  äjjnõʹstti:äjjnõʹstti
-
- * LEXICON A_LIEQDHDHDHI  lieʹđđi:lieʹđˈđi
-
- * LEXICON A_PRSPRC-VWHCC-I  viõhssi:viõhssi
-
- * LEXICON A_VUOIQNNI  vuõiʹnni:vuõiʹnn%{ʼØ%}i
-
- * LEXICON A_JUURD  juurd:ju%^1VOWrdd
-
- * LEXICON A_MAADD  maadd:ma%^1VOWdd
-
-
-check this 2015-11-10
-
-
-## 2. WORDS WITH MULTI-SYLLABLE NOMINATIVE SINGULARS (2009: 293)
-## 2.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
-## 2.3.2 Sg.Ill in -a
-## 2.3.2.1 Has Gradation 
-## 2.3.2.1.1 Second syllable vowel loss (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Obl)
-* Yaml: **A-chaalmtem**
-
-## 2. WORDS WITH MULTI-SYLLABLE NOMINATIVE SINGULARS (2009: 293)
-## 2.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
-## 2.3.2 Sg.Ill in -a
-## 2.3.2.1 Has Gradation 
-## 2.3.2.1.1 Second syllable vowel loss (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Obl)
-* Yaml: **A-chaalmtem**
-
-CLASS 11 ADJECTIVES
- * LEXICON A_SHIYLGGYD  šiâlggâd:šiâlgg
-
- * LEXICON A_VISKKYD  viskkâd:viskk
-
-
- * LEXICON A_MOASHSHAD  måššad:måšš
-
-
- * LEXICON A_AQKHKHED  âʹǩǩed:âʹǩǩ
-
-
-
-
-säʹmmlaž:säʹmml
-
-ânnʼjõž:ânnʼj
-
-muõrâž:muõr
-
-
-
- * +Der+Der/toovvyd+V+IV:»tõõvv IV_LAUKKOOLLYD ;  privative = carative + translative
-
-
-
-
-
-
-Class 12 Feist 163
- * +Der+Der/Comp+A:»ba A-02_SG-ILL ;  Sammallahti (1991: 188)
- * +Der+Der/Comp+A:»be A-02_SG-LOC ;  Sammallahti (1991: 188)
- * +Der+Der/Comp+A:»b A-02_SG-COM_IN ;  Sammallahti (1991: 188)
- * +Der+Der/Comp+A:»b A-02_PL-OBL ;  Sammallahti (1991: 188)
-
-
-Sammallahti 2010: 151
-
-
-
-
-
-
-
-
-
-N›A derivation in +Der+Der/N2A
-1A (Feist 2011: 198-199)
-
-1B (Feist 2011: 198-199)
-
-
-1C (Feist 2011: 198-199)
-
-determiner
-
-determiner
-
-determiner
-
-determiner
-determiner
-
-
-
-
-
-
- * LEXICON DET_NEELLJAD  neelljad:neellj
-similar_to: A_MOASHSHAD
-
-
- * LEXICON DET_DOHTAD  doohhtad:doohht
-
-
-
-
-
-
-
-CLASS 1 HIGH VOWEL, NO PALATALIZATION NOMINALS
-pa%{a0%}%{ʹ0%}%{p0%}p
-V%{V0%}%{ʹ0%}%{C0%}C
-Sg_Nom:
-high-vowel=yes
-monophthong=yes
-long-vowel=yes
-palatalization=no
-consonantism=quant-gem
-long-consonant=yes
-
-1.1.1.1.1.1. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|geminate" 
-
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
- â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
- Palatalized: Sg.Ill
- Not Palatalized: ELSE
-   Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant Geminate alternation)
- Extra strong grade: Sg.Nom, Ess, Par
- Extra strong grade: Sg.Ill
- Strong grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-* Yaml: **N-papp**
-strong_geminate, short_vowel
- * : A-02_SG-NOM ;			 papp
- * :%>â A-02_ESS/PAR ; 	  		 pappân, pappâd
-strong_geminate, short_vowel, palatalization
- * :%^PAL%>e A-02_SG-ILL ;		 paʹppe
-
-strong_geminate, long_vowel
- * :%^V2VV A-02_SG-ABE/ACC/GEN-PL-NOM ;	 paapp
- * :%^V2VV%>â A-02_SG-LOC ;		 paappâst
- * :%^V2VV A-02_SG-COM_IN/PL-OBL ;	 paappi, paappid, paappid, paappin, paappivuiʹm, paappitaa
-
- * +Der+Der/Dimin+A:%^V2VV A-02_MUORYZH-WITHOUT-PAL ;   paapp-
- * +Der+Der/Dimin+A:%^V2VV%^PAL A-02_MUORYZH-WITH-PAL ;   paaʹpp-
-
-e.g. 
-e.g. +Use/NG+Sg+Loc+PxSg3
-
-
-
-
-Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_xyy
-similar_to: N_TAALKYS, N_KOONTYR
-1.1.1.1.1.1. Sg_Nom="short_vowel|long_cluster" Sg_Gen="long_vowel|short_cluster" 
-
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
- â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
- Palatalized: Sg.Ill
- Not Palatalized: ELSE
-   Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
- Strong grade: Sg.Nom, Ess, Par
- Strong grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-* Yaml: **N-portt**
-
- * : A-02_SG-NOM ;	    				 põrtt
- * :%^V2VV%^XYY2XY A-02_SG-ABE/ACC/GEN ;		 põõrt
- * :%^V2VV%^XYY2XY A-02_PL-NOM ;		 põõrt
- * :%^PAL%>e A-02_SG-ILL ;		      		 põʹrtte
- * :%^V2VV%^XYY2XY%>â A-02_SG-LOC ;			 põõrtâst
- * :%^V2VV%^XYY2XY A-02_SG-COM_IN ;			 põõrtin
- * :%>â A-02_ESS/PAR ; 		  			 põrttân
- * :%^V2VV%^XYY2XY A-02_PL-OBL ;			 põõrti
-
- * +Der+Der/Dimin+A:%^V2VV%^XYY2XY A-02_MUORYZH-WITHOUT-PAL ;   põõrt-
- * +Der+Der/Dimin+A:%^V2VV%^PAL%^XYY2XY A-02_MUORYZH-WITH-PAL ;   põõʹrt-
-
-
-
-Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_vyy
-1.1.1.1.1.1. Sg_Nom="short_vowel|long_V-cluster" Sg_Gen="long_vowel|short_V-cluster"
-
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
- â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
- Palatalized: Sg.Ill
- Not Palatalized: ELSE
-   Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
- Strong grade: Sg.Nom, Ess, Par
- Strong grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-* Yaml: **N-autt**
-
- * : A-02_SG-NOM ;	    				 autt
- * :%^V2VV%^XYY2XY A-02_SG-ABE/ACC/GEN ;		 aaut
- * :%^PAL%>e A-02_SG-ILL ;		      		 auʹtte
- * :%^V2VV%^XYY2XY%>â A-02_SG-LOC ;			 aautâst
- * :%^V2VV%^XYY2XY A-02_SG-COM_IN ;			 aautin
- * :%>â A-02_ESS/PAR ; 		  			 auttân
- * :%^V2VV%^XYY2XY A-02_PL-NOM ;		 aaut
- * :%^V2VV%^XYY2XY A-02_PL-OBL ;			 aauti
-
- * +Der+Der/Dimin+A:%^V2VV%^XYY2XY A-02_MUORYZH-WITHOUT-PAL ;   aaut-
- * +Der+Der/Dimin+A:%^V2VV%^PAL%^XYY2XY A-02_MUORYZH-WITH-PAL ;   aauʹt-
-
-
-
-
-
-
-
-
-
-Sg_Nom: vow_di:vow_high:pal_no:cns_xyy
-1.1.1.1.1.1. Sg_Nom="diphthong|long_cluster" Sg_Gen="diphthong|short_cluster"
-
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
- â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
- Palatalized: Sg.Ill
- Not Palatalized: ELSE
-   Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
- Strong grade: Sg.Nom, Ess, Par
- Strong grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-* Yaml: **N-chuoskk**
-
- * : A-02_SG-NOM ;	    			 (1) čuõskk
- * :%^XYY2XY A-02_SG-ABE/ACC/GEN ;	 (2) čuõsk
- * :%^PAL%>e A-02_SG-ILL ;			 (3) čuõʹsǩǩe
- * :%^XYY2XY%>â A-02_SG-LOC ;			 (4) čuõskest
- * :%^XYY2XY A-02_SG-COM_IN ;		 (5) čuõskin
- * :%>â A-02_ESS/PAR ; 	    			 (6) čuõskkân
- * :%^XYY2XY A-02_PL-NOM ;	 (2) čuõsk
- * :%^XYY2XY A-02_PL-OBL ;		 (5) čuõskin
-
- * +Der+Der/Dimin+A:%^XYY2XY A-02_MUORYZH-WITHOUT-PAL ;   čuõsk-
- * +Der+Der/Dimin+A:%^PAL%^XYY2XY A-02_MUORYZH-WITH-PAL ;   čuõʹsǩ-
-
-
-
-
-
-
-
-
-
-Sg_Nom: vow_di:vow_high:pal_no:cns_xyy
-1.1.1.1.1.1. Sg_Nom="diphthong|long_cluster" Sg_Gen="diphthong|short_cluster" Sg_Ill="diphthong|vowel_e-coloration|long_cluster"
-
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
- â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
- Palatalized: Sg.Ill
- Not Palatalized: ELSE
-   Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
- Strong grade: Sg.Nom, Ess, Par
- Strong grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-* Yaml: **N-skjiankk**
-
- * : A-02_SG-NOM ;	      	 (1) Sg.Nom: sǩiâŋkk
- * :%^XYY2XY A-02_SG-ABE/ACC/GEN-PL-NOM ;   (2) Pl.Nom: sǩiâŋk
- * :%^PALE%^PAL%>e A-02_SG-ILL ;	    (3) Sg.Ill: sǩieʹŋǩǩe
- * :%^XYY2XY%>â A-02_SG-LOC ;   	    (4) Sg.Loc: sǩiâŋkâst
- * :%^XYY2XY A-02_SG-COM_IN ;		    (5) Sg.Com: sǩiâŋkin
- * :%>â A-02_ESS/PAR ; 	     		   	(6) Ess: sǩiâŋkkân
- * :%^XYY2XY A-02_PL-OBL ;			(8) Pl.Acc: sǩiâŋkid
-
- * +Der+Der/Dimin+A:%^XYY2XY A-02_MUORYZH-WITHOUT-PAL ;   sǩiâŋk-
- * +Der+Der/Dimin+A:%^PALE%^PAL%^XYY2XY A-02_MUORYZH-WITH-PAL ;   sǩieʹŋǩ-
-
-
-
-
-Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_gem
-1.1.1.1.1.2. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|single_consonant" 
-
-See also: NMN_TOLL-PLC, which is the same, but minus PL forms and certain cases
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
- â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
- Palatalized: Sg.Ill
- Not Palatalized: ELSE
-   Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant and Consonant Geminate alternation)
- Extra strong grade: Sg.Nom, Ess, Par
- Extra strong grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-* Yaml: **N-kidd, N-soll, N-toll, N-vorr**
-strong_geminate, short_vowel, no_palatalization, high_stem_vowel 
- * : A-02_SG-NOM ;	    	   toll
- * :%>â A-02_ESS/PAR ;    		   tollân
-strong_geminate, short_vowel, palatalization, high_stem_vowel
- * :%^PAL%>e A-02_SG-ILL ;   	   toʹlle
-single_consonant, long_vowel, no_palatalization, high_stem_vowel
- * :%^V2VV%^CC2C A-02_SG-ABE/ACC/GEN ;	 tool
- * :%^V2VV%^CC2C A-02_PL-NOM ;	 tool
- * :%^V2VV%^CC2C%>â A-02_SG-LOC ;                toolâst
- * :%^V2VV%^CC2C A-02_SG-COM_IN ;                toolin
- * :%^V2VV%^CC2C A-02_PL-OBL ;	                 tooli, toolid, toolid, toolin, toolivuiʹm, toolitaa
-
- * +Der+Der/Dimin+A:%^V2VV%^CC2C A-02_MUORYZH-WITHOUT-PAL ;   tool-
-single_consonant, long_vowel, palatalization, high_stem_vowel
- * +Der+Der/Dimin+A:%^V2VV%^PAL%^CC2C A-02_MUORYZH-WITH-PAL ;   tooʹl-
-
-
-
-
-
-
-
-
-
-
-
- * LEXICON A-01_LUOSS  luõss:luõss
-Sg_Nom: vow_di:vow_high:pal_no:cns_gem_ss_type
-1.1.1.1.1.4. Sg_Nom="diphthong|geminate" Sg_Gen="diphthong|voiced_geminate"
-
-THIS IS NOT THE SAME AS N_MUORR
-* Yaml: **N-luoss**
- * : A-02_SG-NOM ;	     			
- * :%^KK2GG A-02_SG-ABE/ACC/GEN-PL-NOM ;	 luõzz
- * :%^PAL%^CC2CCC%>e A-02_SG-ILL ;	 	 luõʹsˈse
- * :%^KK2GG%>â A-02_SG-LOC ;			 luõzzâst
- * :%^KK2GG A-02_SG-COM_IN ;			
- * :%>â A-02_ESS/PAR ; 	   			
- * :%^KK2GG A-02_PL-OBL ;			 luõzzi
-
- * +Der+Der/Dimin+A:%^KK2GG A-02_MUORYZH-WITHOUT-PAL ;   luõzz-
- * +Der+Der/Dimin+A:%^PAL%^KK2GG A-02_MUORYZH-WITH-PAL ;   luõʹzz-
-
-
-
-
-
-Sg_Nom: vow_di:vow_high:pal_no:cns_gem
-1.1.1.1.1.1. Sg_Nom="diphthong|geminate" Sg_Gen="diphthong|single_consonant" 
-
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
- â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
- Palatalized: Sg.Ill
- Not Palatalized: ELSE
-   Sg.Ill in palatalization and -e
-## 1.1.1.1[1].2 Has Specifically Pedagogical Gradation
-Sg.Ill: 
-## 1.1.1.1[1].2.1 Has Orthographic Gradation
-## 1.1.1.1[1].2.1[] (Diphthong + Consonant and Consonant Geminate alternation)
- Strong grade: Sg.Nom, Ess, Par
- Extra strong grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-* Yaml: **N-muorr**
- * : A-02_SG-NOM ;	    			 muõrr
- * :%^CC2C A-02_SG-ABE/ACC/GEN ;		 muõr
- * :%^PAL%^CC2CCC%>e A-02_SG-ILL ;    		 muõʹrˈre
- * :%^CC2C%>â A-02_SG-LOC ;	 		 muõrâst
- * :%^CC2C A-02_SG-COM_IN ;			 muõrin
- * :%>â A-02_ESS/PAR ; 	  			 muõrrân
- * :%^CC2C A-02_PL-NOM ;		 muõr
- * :%^CC2C A-02_PL-OBL ;			 muõri
-
- * +Der+Der/Dimin+A:%^CC2C A-02_MUORYZH-WITHOUT-PAL ;   muõr-
- * +Der+Der/Dimin+A:%^PAL%^CC2C A-02_MUORYZH-WITH-PAL ;   muõʹr-
-
-
-
-
-
-## FORMS
-similar_to: N_VUYHSS
-* Yaml: **N-miwhtt**
- * :%^XYY2VY A-02_SG-COM_IN ;			 miõutin
- * :%^XYY2VY  A-02_SG-ABE/ACC/GEN-PL-NOM ;	 miõut
- * :%^PAL%>e A-02_SG-ILL ;	   	 miõʹhtte
- * : A-02_SG-NOM ;	       			 miõhtt
- * :%^XYY2VY%>â A-02_SG-LOC ;			 miõutâst
- * :â A-02_ESS/PAR ;    	   			 miõhttân
- * :%^XYY2VY A-02_PL-OBL ;			 miõuti
-
- * +Der+Der/Dimin+A: A-02_MUORYZH-WITHOUT-PAL ;   miõhtt-
- * +Der+Der/Dimin+A:%^PAL A-02_MUORYZH-WITH-PAL ;   riiʹǩǩ-
-
-
-
-
-
-
-Sg_Ill="palatalization|e-final"
-
-## 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
-## 2.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
-## 2.1.3 Sg.Ill in palatalization and -e
-## 2.1.3.3 Lacks Gradation (in last syllable)
-## 2.1.3.3.1 Monophthong
-## 2.1.3.3.1.3 Consonant always short
-## 2.1.3.3.1.3.4 Sg.Nom long vowel AND Short consonant
-## 2.1.3.3.1.3.4.1.Sg.Gen Weak Grade
-## 2.1.3.3.1.3.4.1.3 Sg.Ill Weak Grade
-plaan:plaan
-* Yaml: **N-plaan**
- * +Der+Der/Dimin+A: A-02_MUORYZH-WITHOUT-PAL ;   paar-
- * +Der+Der/Dimin+A:%^PAL A-02_MUORYZH-WITH-PAL ;   paaʹr-
-
-
-
-
-
-CLASS 1 LOW VOWEL, MONOPHTHONG, NO PALATALIZATION NOMINALS
-## a-stems
-
-Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_gem
-1.1.1.2.1. stem_with_gradation: yes 
-1.1.1.2.1.1. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|geminate" 
-
-Is for nouns with *-ast* Loc
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (vowel shift)
- Raised: Sg.Ill
- Lowered: ELSE
- a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel	-u
-## 1.2.2.2 Lacks Palatalization
-## 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
-## 1.2.2.2.1.1 Has Orthographic Gradation
-## 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
- Extra strong grade: Sg.Nom, Ess, Par
- Extra strong grade: Sg.Ill
- Strong grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-N_A-URaise3-32
-* Yaml: **N-pess, N-pall**
-strong_geminate, short_vowel, no_palatalization, high_stem_vowel
- * :%^VOWRaise%>u A-02_SG-ILL ;		  (3) Sg.Ill: pissu
-Sg_Ill
-
-strong_geminate, short_vowel, no_palatalization, low_stem_vowel
- * : A-STEM-PX-STRENGTHEN ;            (5) pess
-Ess_Px..., Sg_Ill..., N»A
-
-strong_geminate, short_vowel, no_palatalization, low_stem_vowel
- * : A-02_A-STEM_SG-NOM ;	    		  (1) Sg.Nom: pess
-Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
-
-strong_geminate, short_vowel, no_palatalization, low_stem_vowel, stem_vowel: a
- * :%>a A-02_ESS/PAR ; 			  (6) Ess: pessan
-
-strong_geminate, long_vowel, no_palatalization, low_stem_vowel
- * :%^V2VV A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	  (2) Pl.Nom: peess
-Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
-stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
-
-strong_geminate, long_vowel, no_palatalization, high_stem_vowel
- * +Der+Der/Dimin+A:%^V2VV%^VOWRaise%> A-01_PIISSUZH ;   (9) Dim.N.Sg.Nom: piissuž
- * +Der+Der/Dimin+A:%^V2VV%> A-01_PEESSAZH ;   (9) Dim.N.Sg.Nom: pẹẹssaž
-
-
-
-
-Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_gem
-Is for nouns with *-ast* Loc
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (vowel shift)
- Raised: Sg.Ill
- Lowered: ELSE
- a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel	-u
-## 1.2.2.2 Lacks Palatalization
-## 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
-## 1.2.2.2.1.1 Has Orthographic Gradation
-## 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
- Strong grade: Sg.Nom, Ess, Par
- Extra strong grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-N_A-URaise3-32
-* Yaml: **soomm**
-grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
- * : A-02_A-STEM_SG-NOM ;	    		 (1) Sg.Nom: šoomm
-Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
-
-grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
- * :%^CC2C A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ;		 (2) Pl.Nom: šoom
-Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
-stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
-
-grade: strengthened (short_vowel, long_cluster), vowel: raised
- * :%^VV2V%^VOWRaise%>u A-02_SG-ILL ; 		 (3) Sg.Ill: šummu
-Sg_Ill
-
-grade: strengthened (short_vowel, long_cluster), vowel: neutral (low)
- * :%^VV2V A-STEM-PX-STRENGTHEN ;            (5) šomm
-Ess_Px..., Sg_Ill..., N»A
-
-grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
- * :%>a A-02_ESS/PAR ; 	     			 (6) Ess: šoomman
-
-grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
- * +Der+Der/Dimin+A:%^VOWRaise%^CC2C%> A-01_PIISSUZH ;	 (9) Dim.N.Sg.Nom: šuumuž
- * +Der+Der/Dimin+A:%^CC2C%> A-01_PEESSAZH ;   (9) Dim.N.Sg.Nom: šoomaž
-
-
-
-
-
-
-
-
-grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
- * : A-02_A-STEM_SG-NOM ;	    			 (1) äldd
-Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
-
-grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
- * :%^V2VV%^XYY2XY A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ;  (2) ääld
-Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
-stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
-
-grade: strengthened (short_vowel, long_cluster), vowel: raised
- * :%^VOWRaise%>u A-02_SG-ILL ;		      	 (3) alddu
-Sg_Ill
-
-grade: strengthened (short_vowel, long_cluster), vowel: neutral (low)
- * : A-STEM-PX-STRENGTHEN ;	    	   (5) äldd
-Ess_Px..., Sg_Ill..., N»A
-
-grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
- * :%>a A-02_ESS/PAR ;	   		    	 (6) älddan
-
-grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
- * +Der+Der/Dimin+A:%^V2VV%^VOWRaise%^XYY2XY A-01_PIISSUZH ;  (9) Dim.N.Sg.Nom: aalduž (2009: 312-313)
- * +Der+Der/Dimin+A:%^V2VV%^XYY2XY%> A-01_PEESSAZH ;   (9) Dim.N.Sg.Nom: ääldaž
-
-
-grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
-
-
- * LEXICON A-02_A-STEM_SG-NOM  (1)
- * LEXICON A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM   (2)
-
-
-
-
-
-CLASS 1 LOW VOWEL, DIPHTHONG, NO PALATALIZATION NOMINALS
-
-
-
-
-
-Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_gem_long
-Is for nouns with *-ast* Loc
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (vowel shift)
- Raised: Sg.Ill
- Lowered: ELSE
- a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel	-u
-## 1.2.2.0 Lacks Palatalization
-## 1.2.2.0.2 Has Specifically Pedagogical Gradation
-## 1.2.2.0.2.0 Lack Orthographic Gradation
-## 1.2.2.0.2.0[] (Diphthong + Consonant Geminate alternation)
- Extra strong grade: Sg.Nom, Ess, Par
- Extra strong grade: Sg.Ill
- Strong grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-* Yaml: **N-neavvv**
- * : A-02_A-STEM_SG-NOM ;	    			  neävˈv
-Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
-
- * :%^CCC2CC A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	  neävv
-Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
-stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
-
- * :%^VOWRaise%>u A-02_SG-ILL ;			  niâvˈvu
-Sg_Ill
-
- * : A-STEM-PX-STRENGTHEN ;            (5) neävˈv
-Ess_Px..., Sg_Ill..., N»A
-
- * :%>a A-02_ESS/PAR ;   	       			 neävˈvan
-
- * +Der+Der/Dimin+A:%^VOWRaise%^CCC2CC%> A-01_PIISSUZH ;   niâvvuž
- * +Der+Der/Dimin+A:%^CCC2CC%> A-01_PEESSAZH ;   (9) Dim.N.Sg.Nom: neävvaž
-
-
-
-
-
-
-
-
-similar_to: N_PLAAN
-gradation: no
-vowel_shift: no
-Is for nouns with *-ast* Loc
- a-stems (Sg.Loc, Ess, Par).
-* Yaml: **N-pealdd**
- * : A-02_A-STEM_SG-NOM ;	    		  kapteän
-Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
-
- * : A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	  kapteän
-Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
-stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
-
- * :%>a A-02_SG-ILL ;		  kapteän
-Sg_Ill
-
- * : A-STEM-PX-STRENGTHEN ;            (5) kapteän
-Ess_Px..., Sg_Ill..., N»A
-
- * :%>a A-02_ESS/PAR ;   	       		  kapteänan
-
- * +Der+Der/Dimin+A:%^XYY2XY%> A-01_PEESSAZH ;   (9) Dim.N.Sg.Nom: kapteänaž
-
-
-
-
-
-Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_gem_dd_type
-Is for nouns with *-ast* Loc, No gradation
-N_A-U1-11
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (no vowel shift, all lowered)
- a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel	-u
-## 1.2.2.2 Lacks Palatalization
-## 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
-## 1.2.2.2.1.2 Lacks Orthographic Gradation
-## 1.2.2.2.1.2[] (Monophthong + Consonant)
- Weak grade: Sg.Nom, Ess, Par
- Weak grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-* Yaml: **A-vaeaezhzh**
- * : A-02_SG-NOM ;	    		 vääžž
- * : A-02_SG-ABE/ACC/GEN-PL-NOM ;	 vääžž
- * :%^VOWRaise%>u A-02_SG-ILL ;		 vaažžu
- * +Use/NGminip+Use/NG:%>a A-02_SG-ILL ;  	      	 vääžža
- * :%>a A-02_SG-LOC ;	   		 vääžžast
- * :%>a A-02_SG-COM_IN ;		 vääžžain
- * :%>a A-02_ESS/PAR ;     			 vääžžan
- * :%>a A-02_PL-OBL ;			 vääžžai
- * +Der+Der/Dimin+A:%^VOWRaise A-01_PIISSUZH ;	 vaažžuž
- * +Der+Der/Dimin+A: A-01_PEESSAZH ;   (9) Dim.N.Sg.Nom: vääžžaž
- * +Use/NGminip+Use/NG+Der+Der/Dimin+N: N_KUYLAZH ;   	 vääžžaž
-
-
-
-
-
-
-
-
-
-
-CLASS 1 HIGH VOWEL TYPE, NO PALATALIZATION NOMINALS
-
-
-CLASS 1 HIGH VOWEL, PALATALIZATION NOMINALS
-
-Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_gem_dd_type
-## 1.3 Sg.Loc in -est (vowel shift)
- Raised: Sg.Com, Pl.Obl
- Lowered: ELSE
- e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
- Palatalized: ELSE
- Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
- Strong grade: Sg.Nom, Ess, Par
- Extra strong grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-NumContLex="1.113"
-* Yaml: **N-nubb**
-* There are several stem types
- *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) nubb
- * :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) nuʹbb-
- * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) nuʹbb Ess+Px..
-
-
-
-Bahuvriihi: årddnjuuʹnn
-* Yaml: **N-njuunn**
-
- *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) njuunn-
- * :%^VV2V%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) njuʹn-
- * :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) njuʹnn Ess+Px..
-
-
-
-
-
-
-
-
-## FORMS
-## (1) Sg.Nom: juʹvjj
-## (2) Pl.Nom: juuʹj
-## (3) Sg.Ill: joujja
-## (4) Sg.Loc: juuʹjest
-## (5) Sg.Com: juuʹjin
-## (6) Ess: juʹvjjen
-## (7) Par: juʹvjjed
-## (8) Pl.Acc: juuʹjid
-## (9) Der/Dimin.N.Sg.Nom: joujjaž
-NumContLex="1.113"
-Is for nouns with *-est* Loc, Extra long vowel
-* Yaml: **N-juvjj**
- *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) juvjj-
- * :%^VV2V%^PAL%^XYY2VY E-STEM-PX-ALLEGRO ;  (11) juʹj-
- * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) juʹvjj Ess+Px..
-
-
-
-
-
-
-
-
-
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
-## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
- e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
- Palatalized: ELSE
- Not Palatalized: Sg.Ill
-## 1.3.2.1.2 Has Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
- Strong grade: Sg.Nom, Ess, Par
- Extra strong grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
-## FORMS
-## (1) Sg.Nom: kueʹll
-## (2) Pl.Nom: kueʼl
-## (3) Sg.Ill: kuâlˈla
-## (4) Sg.Loc: kueʹlest
-## (5) Sg.Com: kuõʹlin ~ kueʹlin
-## (6) Ess: kueʹllen
-## (7) Par: kueʹlled
-## (8) Pl.Acc: kuõʹlid ~ kueʹlid
-## (9) Der/Dimin.N.Sg.Nom: kuâlaž 
-* Yaml: **N-kuell**
-* There are several stem types 
-* kueʹll:kuâll
-
- *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) kuâll-
- * :%^PALE%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) kueʹl-
- * :%^PALE%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) kueʹlˈl Ess+Px..
-
-
-
-
-
-
-
-
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (vowel shift)
- Raised: Sg.Com, Pl.Obl
- Lowered: ELSE
- e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
- Palatalized: ELSE
- Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
- Strong grade: Sg.Nom, Ess, Par
- Strong grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-NumContLex="1.113"
-Is for nouns with *-est* Loc, Extra long vowel
-* Yaml: **N-muerjj**
- * :%^PALE%^PAL%^XYY2XY DenominalAdjsCShort ; 
- * :%^PALE%^PAL A-02_E-STEM_SG-NOM ;		  	 (1) Sg.Nom: mueʹrjj
- * :%^PALE%^PAL%^XYY2XY A-02_E-STEM_SG-ABE/ACC/GEN ;	 (2) Pl.Nom: mueʹrj
- * :%^PALE%^PAL%^XYY2XY A-02_PL-NOM ;	 (2) Pl.Nom: mueʹrj
- * : A-02_E-STEM_SG-ILL ;  		     	 (3) Sg.Nom: muârjja
- * :%^PALE%^PAL%^XYY2XY%>e A-02_SG-LOC ;		 (4) Sg.Loc: mueʹrjest
- * :%^VOWRaise%^PAL%^XYY2XY A-02_SG-COM_IN ;  (5) Sg.Com: muõʹrjin
- * +Use/NGminip+Use/NG:%^PALE%^PAL%^XYY2XY A-02_SG-COM_IN ;  (5) Sg.Com:  mueʹrjin
- * :%^VOWRaise%^PAL%^XYY2XY A-02_E-STEM_PL-OBL ;  (5) Sg.Com: muõʹrjin
- * +Use/NGminip+Use/NG:%^PALE%^PAL%^XYY2XY A-02_E-STEM_PL-OBL ;  (5) Sg.Com:  mueʹrjin
- * :%^PALE%^PAL%>e A-02_ESS/PAR ; 	 		   (6) Pl.Nom: mueʹrjjen
- * :%^XYY2XY A-02_E-STEM_N_KUYLAZH ;		   (9) Der/Dimin.N.Sg.Nom: muârjaž
- *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) muârjj-
- * :%^VOWRaise%^PALE%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) mueʹrj-
- * :%^PALE%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) mueʹrjj Ess+Px..
-
-
-
-
-
-
-
-
-
-
-CLASS 1 LOW VOWEL, PALATALIZATION, ILLATIVE IN U NOMINALS
-
-WORK NEEDED
-
-CLASS 1 LOW VOWEL, PALATALIZATION, ILLATIVE IN A NOMINALS
-## e-stems
-
-
-similar_to: N_PAPP
-vowel: monophthong
-vowel_shift: yes
-consonantism: geminate
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
- Raised: Sg.Com, Pl.Obl
- Lowered: ELSE
- e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
- Palatalized: ELSE
- Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
- Strong grade: Sg.Nom, Ess, Par
- Extra strong grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-NumContLex="1.113"
-* Yaml: **N-vaell, N-kall**
-strong_geminate, short_vowel, palatalization, low_stem_vowel
-strong_geminate, short_vowel, depalatalization, low_stem_vowel
-strong_geminate, long_vowel, palatalization, low_stem_vowel
-strong_geminate, long_vowel, palatalization, high_stem_vowel
-strong_geminate, long_vowel, depalatalization, low_stem_vowel
- * : E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) väll-
- * :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) väʹl-
- * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) väʹll Ess+Px..
-
-similar_to: N_PAPP
-vowel: monophthong
-vowel_shift: ??
-consonantism: geminate
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
- Raised: Sg.Com, Pl.Obl
- Lowered: ELSE
- e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
- Palatalized: ELSE
- Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
- Strong grade: Sg.Nom, Ess, Par
- Extra strong grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-NumContLex="1.113"
-* Yaml: **A-ucc**
-strong_geminate, short_vowel, palatalization, low_stem_vowel
-strong_geminate, short_vowel, depalatalization, low_stem_vowel
-strong_geminate, long_vowel, palatalization, low_stem_vowel
-strong_geminate, long_vowel, palatalization, high_stem_vowel
-strong_geminate, long_vowel, depalatalization, low_stem_vowel
- * : E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) ucc-
- * :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) uʹc-
- * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) uʹcc Ess+Px..
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
- Raised: Sg.Com, Pl.Obl
- Lowered: ELSE
- e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
- Palatalized: ELSE
- Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
- Strong grade: Sg.Nom, Ess, Par
- Extra strong grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-NumContLex="1.113"
-* Yaml: **N-saeaemm**
- *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) säämm-
- * :%^VV2V%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) säʹm-
- * :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) säʹmm Ess+Px..
-
-
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
- Raised: Sg.Com, Pl.Obl
- Lowered: ELSE
- e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
- Palatalized: ELSE
- Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
- Strong grade: Sg.Nom, Ess, Par
- Extra strong grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-NumContLex="1.113"
-* Yaml: **caacc**
-* There are several stem types
-* čääʹcc:čääʹcc
- * :%^PAL A-02_E-STEM_SG-NOM ;                               (1) čääʹcc
- * :%^PAL%^KK2GG A-02_E-STEM_SG-ABE/ACC/GEN ;         (2) čääʼʒʒ
- * :%^PAL%^KK2GG A-02_PL-NOM ;         (2) čääʼʒʒ
- * :%^VV2V A-02_E-STEM_SG-ILL ;               (3) čäcca
- * :%^PAL%^KK2GG%>e A-02_SG-LOC ;                     (4) čääʼʒʒest
- * :%^VOWRaise%^PAL%^KK2GG A-02_SG-COM_IN ;           (5) čaaʼʒʒin
- * :%^VOWRaise%^PAL%^KK2GG A-02_E-STEM_PL-OBL ;           (5) čaaʼʒʒin
- * :%^PAL%>e A-02_ESS/PAR ;                               (6) čääʼccen
- * :%^KK2GG A-02_E-STEM_N_KUYLAZH ;     (9) čääʒʒaž
- *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) čääcc-
- * :%^VV2V%^PAL%^KK2GAllegro E-STEM-PX-ALLEGRO ;  (11) čäʹʒ-
- * :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) čäʹcc Ess+Px..
-
-
-
-
-
-
-
-
-
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (vowel shift)
- Raised: Sg.Com, Pl.Obl
- Lowered: ELSE
- e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
- Palatalized: ELSE
- Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
- Strong grade: Sg.Nom, Ess, Par
- Strong grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-NumContLex="1.113"
-Is for nouns with *-est* Loc, Extra long vowel
-* Yaml: **N-algg**
- * :%^PAL A-02_E-STEM_SG-NOM ;		  			 (1) Sg.Nom: âʹlǧǧ
- * :%^V2VV%^PAL%^XYY2XY A-02_E-STEM_SG-ABE/ACC/GEN ;	 (2) Pl.Nom: ââʹlj
- * : A-02_E-STEM_SG-ILL ;	     			   	 (3) Sg.Ill: âlgga
- * :%^V2VV%^PAL%^XYY2XY%>e A-02_SG-LOC ;		 (4) Sg.Loc: ââʹljest
- * :%^V2VV%^VOWRaise%^PAL%^XYY2XY A-02_SG-COM_IN ;  (5) Sg.Com: õõʹljin
- * :%^PAL%>e A-02_ESS/PAR ;	       			 (6) Ess: âʹlǧǧen
- * :%^V2VV%^XYY2XY A-02_E-STEM_N_KUYLAZH ;		 (9) Der/Dimin.N.Sg.Nom: ââlǥaž
- *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) kälbb-
- * :%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) käʹlb-
- * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) käʹlbb Ess+Px..
- * :%^V2VV%^PAL%^XYY2XY A-02_PL-NOM ;	 (2) Pl.Nom: ââʹlj
- * :%^V2VV%^VOWRaise%^PAL%^XYY2XY A-02_E-STEM_PL-OBL ;  (5) Sg.Com: õõʹljin
-
-
-
-
-
-* Yaml: **N-haeaesk**
- * :%^PAL A-02_E-STEM_SG-NOM ;		   (1) Sg.Nom: hääʹsǩ
- * :%^PAL A-02_E-STEM_SG-ABE/ACC/GEN ;  (2) Pl.Nom: hääʹsǩ
- * :%^PAL A-02_PL-NOM ;  (2) Pl.Nom: hääʹsǩ
- * : A-02_E-STEM_SG-ILL ;	      (3) Sg.Ill: hääska
- * :%^PAL%>e A-02_SG-LOC ;   (4) Sg.Loc: hääʹsǩest
- * :%^PAL A-02_SG-COM_IN ;      (5) Sg.Com: hääʹsǩin
- * :%^PAL%>e A-02_ESS/PAR ; 	        (6) Ess: hääʹsǩen
- * :%^PAL%> A-02_E-STEM_PL-OBL ;    (8) Pl.Acc: hääʹsǩid
- * : A-02_E-STEM_N_KUYLAZH ;  (9) Der/Dimin.N.Sg.Nom: hääskaž
- *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) hääsk-
- * :%^PAL E-STEM-PX-ALLEGRO ;  (11) hääʹsǩ-
- * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) hääʹsǩ Ess+Px..
-
-
-
-
-
-
-
-
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (NO vowel shift)
- Raised: Sg.Com, Pl.Obl
- Lowered: ELSE
- e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
- Palatalized: ELSE
- Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
- Strong grade: Sg.Nom, Ess, Par
- Strong grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-NumContLex="1.113
-Is for nouns with *-est* Loc, Extra long vowel
-* Yaml: **N-kerjj**
- * :%^PAL A-02_SG-NOM ;		  	 (1) Sg.Nom: ǩeʹrjj
- * :%^V2VV%^PAL%^XYY2XY A-02_SG-ABE/ACC/GEN-PL-NOM ;  (2) Pl.Nom: ǩeeʹrj
- * : A-02_E-STEM_SG-ILL ;	     			    (3)  Sg.Ill: ǩerjja
- * :%^V2VV%^PAL%^XYY2XY%>e A-02_SG-LOC ;	    (4) Sg.Loc: ǩeeʹrjest
- * :%^V2VV%^PAL%^XYY2XY A-02_SG-COM_IN ;	    (5) Sg.Com: ǩeeʹrjin
- * :%^V2VV%^VOWRaise%^PAL%^XYY2XY A-02_SG-COM_IN ;  (5) Sg.Com: ǩiiʹrjin
- * :%^PAL%>e A-02_ESS/PAR ;  (6) Ess: ǩeʹrjjen
- * :%^V2VV%^VOWRaise%^PAL%^XYY2XY%> A-02_PL-OBL ;  (8) Pl.Acc: ǩiiʹrjid
- * +Use/NGminip+Use/NG:%^V2VV%^PAL%^XYY2XY%> A-02_PL-OBL ;  (8) Pl.Acc: ǩeeʹrjid
- * :%^V2VV%^XYY2XY A-02_E-STEM_N_KUYLAZH ;   (9) Der/Dimin.N.Sg.Nom: ǩeerjaž
-
-
-
-
-
-
-
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (NO vowel shift)
- Raised: Sg.Com, Pl.Obl
- Lowered: ELSE
- e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
- Palatalized: ELSE
- Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
- Strong grade: Sg.Nom, Ess, Par
- Strong grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-Is for nouns with *-est* Loc, Extra long vowel
-* Yaml: **N-jaurr**
-
-
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
- e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
- Palatalized: ELSE
- Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster variation)
- Strong grade: Sg.Nom, Ess, Par
- Strong grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-* Yaml: **N-peivv**
- * :%^PAL A-02_E-STEM_SG-NOM ;	     (1) Sg.Nom: peiʹvv
- * :%^V2VV%^PAL%^XYY2XY A-02_E-STEM_SG-ABE/ACC/GEN ;  (2) Pl.Nom: peeiʼv
- * :%^V2VV%^PAL%^XYY2XY A-02_PL-NOM ;  (2) Pl.Nom: peeiʼv
- * : A-02_E-STEM_SG-ILL ;		       (3) Sg.Ill: pẹivva
- * :%^V2VV%^PAL%^XYY2XY%>e A-02_SG-LOC ;	       (4) Sg.Loc: peeiʹvest
- * :%^V2VV%^PAL%^XYY2XY A-02_SG-COM_IN ;	       (5) Sg.Com: peeiʹvin
- * :%^PAL%>e A-02_ESS/PAR ; 		   (6) Ess: peiʹvven
- * :%^V2VV%^PAL%^XYY2XY A-02_E-STEM_PL-OBL ;  (8) Pl.Acc: peeiʹvid
- * :%^V2VV%^XYY2XY A-02_E-STEM_N_KUYLAZH ;  (9) Der/Dimin.N.Sg.Nom: pẹẹivaž
- *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) pẹivv-
- * :%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) peiʹv-
- * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) peiʹvv Ess+Px..
-
-
-
-
-
-
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
- Raised: Sg.Com, Pl.Obl
- Lowered: ELSE  ẹ, ä
- e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
- Palatalized: ELSE
- Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
- Strong grade: Sg.Nom, Ess, Par
- Extra strong grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-NumContLex="1.113"
-* Yaml: **N-suekkj**
-
- *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) suäkk-
- * :%^VOWRaise%^PALẸ%^Allegro%^PAL%^KK2GAllegro E-STEM-PX-ALLEGRO ;  (11) suẹˈʹj-
- * :%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) suäʹǩˈǩ Ess+Px..
-
-
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
- Raised: Sg.Com, Pl.Obl
- Lowered: ELSE  ẹ, ä
- e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
- Palatalized: ELSE
- Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
- Strong grade: Sg.Nom, Ess, Par
- Extra strong grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-NumContLex="1.113"
-* Yaml: **N-kuett**
-* There are several stem types
- *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) kuätt-
- * :%^PAL%^CC2C E-STEM-PX-ALLEGRO ;  (11) kuẹʹđ-
- * :%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) kuäʹtˈt- Ess+Px..
-
-
- *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) hiänn-
- * :%^PAL%^CC2C E-STEM-PX-ALLEGRO ;  (11) hiẹʹn-
- * :%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) hiäʹnˈn- Ess+Px..
-
-
-
-
-
-
-
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
- Raised: Sg.Com, Pl.Obl
- Lowered: ELSE  ẹ, ä
- e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
- Palatalized: ELSE
- Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
- Strong grade: Sg.Nom, Ess, Par
- Extra strong grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (1) Sg.Nom: vuẹiʹvv
-## (2) Pl.Nom: vuẹiʼv
-## (3) Sg.Ill: vuäivva
-## (4) Sg.Loc: vuẹiʹvest
-## (5) Sg.Com: vueiʹvin
-## (6) Ess: vuẹiʹvven
-## (7) Par: vuẹiʹvved
-## (8) Pl.Acc: vueiʹvid
-## (9) Der/Dimin.N.Sg.Nom: vuäivaž
-NumContLex="1.113"
-* Yaml: **N-vueivv**
-* There are several stem types
- *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) vuäivv-
- * :%^VOWRaise%^PALẸ%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) vuẹiʹv-
- * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) vuäiʹvv- Ess+Px..
-
-
-
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
- Raised: Sg.Com, Pl.Obl
- Lowered: ELSE  ẹ, ä
- e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
- Palatalized: ELSE
- Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
- Strong grade: Sg.Nom, Ess, Par
- Extra strong grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (1) Sg.Nom: čuäʹrvv
-## (2) Pl.Nom: čuẹʼrv
-## (3) Sg.Ill: čuärvva
-## (4) Sg.Loc: čuẹʹrvest
-## (5) Sg.Com: čueʹrvin
-## (6) Ess: čuäʹrvven
-## (7) Par: čuäʹrvved
-## (8) Pl.Acc: čueʹrvid
-## (9) Der/Dimin.N.Sg.Nom: čuärvaž
-NumContLex="1.113"
-* Yaml: **N-chuaervv**
-* There are several stem types
- *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) čuärvv-
- * :%^PALẸ%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) čuẹʹrv-
- * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) čuäʹrvv Ess+Px..
-
-
-
-
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
-## 1.3 Sg.Loc in -est (vowel shift)
- Raised: ELSE
- Lowered: Sg.Ill
- e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
- Palatalized: ELSE
- Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Diphthong + Consonant Geminate variation)
- Strong grade: Sg.Nom, Ess, Par
- Extra strong grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-* Yaml: **N-jeaggj**
-* There are several stem types 
- *  A-02_E-STEM_SG-ILL ;	      (3) jeägˈga
- * :%^PAL A-02_E-STEM_SG-NOM ;        (1) jeäʹǧˈǧ
- * :%^VOWRaise%^PALẸ%^PAL%^CCC2CC A-02_E-STEM_SG-ABE/ACC/GEN ;	  (2) jiẹʹǧǧ
- * :%^VOWRaise%^PALẸ%^PAL%^CCC2CC A-02_PL-NOM ;	  (2) jiẹʹǧǧ
- * :%^VOWRaise%^PALẸ%^PAL%^CCC2CC%>e A-02_SG-LOC ;   (4) jiẹʹǧǧest
- * :%^VOWRaise%^PALE%^PAL%^CCC2CC A-02_SG-COM_IN ;   (5) jieʹǧǧin
- * :%^VOWRaise%^PALE%^PAL%^CCC2CC A-02_E-STEM_PL-OBL ;   (5) jieʹǧǧin
- * :%^PAL%>e A-02_ESS/PAR ; 	  (6) jeäʹǧˈǧen, (7) jeäʹǧˈǧed
-
- * :%^CCC2CC A-02_E-STEM_N_KUYLAZH ; 	      			  (9) jeäggaž
- *  E-STEM-PX-RETAIN-WITHOUT-PAL ;				  (10) jeägˈg-
- * :%^VOWRaise%^PALẸ%^Allegro%^PAL%^CCC2CAllegro E-STEM-PX-ALLEGRO ;  (11) jiẹˈʹǧ-
- * :%^PAL E-STEM-PX-STRENGTHEN-WITH-PAL ;			    (12) jeäʹǧˈǧ
- * +Use/NGminip+Use/NG:%^VOWRaise%^PALẸ%^PAL%^CCC2CC E-STEM-PX-ALLEGRO ;   (2)
-
-
-
- * LEXICON A-02_E-STEM_SG-NOM  (1)
-
- * LEXICON A-02_E-STEM_SG-ABE/ACC/GEN  (2)
-e.g. +Sg+Acc+PxPl3
-e.g. +Use/NG+Sg+Loc+PxSg1
-
-
- * LEXICON A-02_E-STEM_SG-ILL  (3)
-
- * LEXICON A-02_E-STEM_N_KUYLAZH  (9)
-
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
-## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
- e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
- Palatalized: ELSE
- Not Palatalized: Sg.Ill
-## 1.3.2.1.2 Has Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
- Strong grade: Sg.Nom, Ess, Par
- Extra strong grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
-## FORMS
-* Yaml: **N-jeaerggj, N-keadgg**
-* There are several stem types 
-* jeäʹrǧǧ:jeäʹrǧǧ
- *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) jeärgg-
- * :%^PALẸ%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) jiẹʹrj-
- * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) jeäʹrmm Ess+Px..
-
-
-
-
-
-
-
-
-
-
-WHAT IS THIS CLASS
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- * +Der+Der/Dimin+A:%^V2VV A-02_MUORYZH-WITHOUT-PAL ;   paar-
- * +Der+Der/Dimin+A:%^V2VV%^PAL A-02_MUORYZH-WITH-PAL ;   paaʹr-
-
-e.g.
-e.g. +Use/NG+Sg+Loc+PxSg3
-e.g. +Sg+Loc+PxSg1
-
-
-
-
-
-
-
-
-
-## CLASS 2 NOMINALS with high stem vowel and i-stems
-
- * LEXICON A-01_JUURD  juurd:jurdd
-is for nouns with stem *i* + *-est* +Sg+Loc; all stem other than the +Sg+Nom are X3; the *i* does not occur in +Par 
-N_GEN2I-ILLAX3-LOCEX3-NOM1X1
-* Yaml: **N-juurd**
-* There are several stem types 
-* juurd:juurd
-
- * LEXICON A_KOSSI  kõssi:kõ%^1VOW%{ʹØ%}ss
- * LEXICON A-01_KOSSI  kõssi:kõ%^1VOW%{ʹØ%}ss
-
-
-
-
-
- * LEXICON A-01_MAADD  maadd:madd
-is for nouns with stem *i* + *-est* +Sg+Loc; all stem other than the +Sg+Nom are X3; the *i* does not occur in +Par 
-* Yaml: **N-maadd**
-* There are several stem types 
-* maadd:maadd
-strong_geminate, long_vowel, no-palatalization, high_stem_vowel
-strong_geminate, short_vowel, no-palatalization, high_stem_vowel
-
-
-
-
-
-
-
-
-
-
-
-CLASS 2 NOMINALS with low stem vowel and u-stems
-## u-stems
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-CLASS 2 NOMINALS with high stem vowel and â-stems
-
-
-CLASS 3 HIGH VOWEL, MONOPHTHONG, NO PALATALIZATION NOMINALS
-## m-stems
-
-
-
-
-
- * LEXICON A-01_SOOUS  sõõus:sõ%^1VOWhss
-
-
-
-
-
-
-CLASS 3
-
-## n-stems
-
-
-
-
-
-
-
-
-
-CLASS 3
-
-
-
-
-
-
-
-CLASS 4 BISYLLABIC, HIGH VOWEL, MONOPHTHONG, NO PALATALIZATION
-IN PENULTIMATE Â:0
-
-
- * LEXICON A-01_VOONYS   võõnâs:võnnâs
-like TOLL
-
-N_GEN2X3-NOM2X1
-* Yaml: **N-voonas**
- * :%^RmVow VOONYS-STEM-PX ;  võnns-
-
-
- * LEXICON A-01_KOODDYS  kõõddâs:kõddâs
-like N_PODD, N_PAPP, N_LUUBBYL
-* Yaml: **N-kooddas**
- * :%^RmVow VOONYS-STEM-PX ;  võnns-
-
-
-
- * LEXICON A-01_TAALKYS  taalkâs:talkkâs
-like PÕRTT
-* Yaml: **N-taalkas**
- * :%^RmVow VOONYS-STEM-PX ;  võnns-
-
-
- * LEXICON A-01_PIIUTYS  piiutâs:pi%^1VOWhttâs
-like N_VAHTT
-stemtype n-stem piiutâs:piiutâs
-* Yaml: **N-piiutas**
- * :%^Pen%^V2VV%^Pen%^XYY2VY A-02_SG-NOM ;  piiutâs
- * :%^RmVow VOONYS-STEM-PX ;  võnns-
-
-
-
-
-
-
- *  LEXICON A-01_FIINYS  fiinâs:fijnnâs
-stemtype n-stem fiinâs:fiinâs
-
-* Yaml: **A-fiinas**
- * :%^RmVow VOONYS-STEM-PX ;  võnns-
-
-CLASS 4 BISYLLABIC, HIGH VOWEL, DIPHTHONG, NO PALATALIZATION
-
- *  LEXICON A-01_TUOVYS  tuõvâs:tuõvˈvâs
-* Yaml: **N-tuovas**
- * :%^RmVow VOONYS-STEM-PX ;  võnns-
-
-
-
- *  LEXICON A-01_VUOIVYS  vuõivâs:vuõivvâs
-
-* Yaml: **N-vuoivas**
- *  :%^Pen%^XYY2XY A-02_SG-NOM ;	        (1) Sg_Nom: vuõivâs
- *  :%^VC A-02_SG-ABE/ACC/GEN-PL-NOM ;   (2) Pl_Nom: vuõivvâz
- *  :%^RmVow%>a A-02_SG-ILL ;   (3) Sg_Ill: vuõivvsa
- *  :%^RmVow%>e A-02_SG-LOC ;    (4) Sg_Loc: vuõivvsest
- *  :%^RmVow A-02_SG-COM_IN/PL-OBL ;     (5) Sg_Com: vuõivvsin
- *  :%^RmVow%>e A-02_ESS/PAR ; 	  (6) Ess: vuõivvsen
- * :%^RmVow VOONYS-STEM-PX ;  võnns-
-
-
- *  LEXICON A-01_RUODDYS  ruõddâs:ruõdˈdâs
-N_GEN2X3-NOM2X1
-* Yaml: **N-tuoddar**
- * :%^RmVow VOONYS-STEM-PX ;  võnns-
-
-
-
-
-
-
-
-
-
-
-
-
-
-CLASS 4 BISYLLABIC, LOW VOWEL, MONOPHTHONG, NO PALATALIZATION
-
-
-
-
- * LEXICON A-01_KOAOADDAS  kååddas:kåddas
-N_GEN2X3-NOM2X1
-* Yaml: **N-kååddas**
- * :%^RmVow VOONYS-STEM-PX ;  kådds-
-
-
- * LEXICON A-01_KOALVAK  kåålvak:kåålvak
-stemtype n-stem kåålvak:kåålvak
-Palatalization loss in Sg.Ill
-* Yaml: **N-paattakj**
- * :%^RmVow%>a A-02_SG-ILL ;  +Sg+Ill: kåålvka
- * :%^RmVow%^PALK%>e A-02_SG-LOC ;  +Sg+Loc: kåålvǩest
- * :%^RmVow%^PALK VOONYS-STEM-PX ;  såbbr-
-
-
- * LEXICON A-01_AACCIKH  pååttaǩ:pååttaǩ
-stemtype n-stem pååttaǩ:pååttaǩ
-Palatalization loss in Sg.Ill
-* Yaml: **N-paattakj**
- * :%^RmVow VOONYS-STEM-PX ;  såbbr-
-
-stemtype n-stem jânnam:jânnam
-N_GEN2X3-NOM2X1
-* Yaml: **N-jânnam**
- * :%^RmVow VOONYS-STEM-PX ;  såbbr-
-
-
-
- * LEXICON A-01_KOAOAVAS  kååvas:kåvvas
-* Yaml: **N-kaavas**
- * :%^VC A-02_SG-ABE/ACC/GEN-PL-NOM ;  kåvvaz
- * :%^RmVow VOONYS-STEM-PX ;  såbbr-
-
- * LEXICON A-01_PAEAELKAS  päälkas:pälkkas
-* Yaml: **N-paalkas**
- * :%^VC A-02_SG-ABE/ACC/GEN-PL-NOM ;  pälkkaz
- * :%^RmVow VOONYS-STEM-PX ;  såbbr-
-
- * LEXICON A-01_CEAEGGAS  ceäggas:ceägˈgas
-* Yaml: **N-ceaeggas**
- * :%^VC A-02_SG-ABE/ACC/GEN-PL-NOM ;  ceägˈgaz
- * :%^RmVow VOONYS-STEM-PX ;  såbbr-
-
-
-
-
-CLASS 4 BISYLLABIC, LOW VOWEL, DIPHTHONG, NO PALATALIZATION
-IN PENULTIMATE A:0
-
-
-
-## 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 252)
-## 2.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
-## 2.3.2 Sg.Ill in -a
-## 2.3.2.2 LACKS Gradation
-## 2.3.2.2.1 Penultimate stem vowel loss: (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Gen, Pl.Acc, Pl.Ill, Pl.Loc, Pl.Com, Pl.Abe)
-## 2.3.2.2.1.1 The Sg.Com vowel i appears before final n  
-* Yaml: **N-juaghghas**
- * :%^VC  A-02_SG-ABE/ACC/GEN-PL-NOM ;  juâkˈkaz
- * :%^RmVow VOONYS-STEM-PX ;  såbbr-
-
-
-CLASS 4 BISYLLABIC, LOW VOWEL, MONOPHTHONG, PALATALIZATION
-
- * LEXICON A_MUYLAS  muâlas:muâlˈlas
- * LEXICON A-01_MUYLAS  muâlas:muâlˈlas
-
-* Yaml: **N-muylas**
- * :%^VC SG-ABE/ACC/GEN ;  muâlˈlaz
- * :%^VC PL-NOM ;  muâlˈlaz
- * :%^RmVow VOONYS-STEM-PX ;  såbbr-
-
-
-
-* Yaml: **kerres**
- * :%^RmVow VOONYS-STEM-PX ;  võnns-
-
-
-CLASS 4 BISYLLABIC, LOW VOWEL, DIPHTHONG, PALATALIZATION
-IN PENULTIMATE E:0
-
- * LEXICON A-01_KAAQLLES  kääʹlles:källes
-* Yaml: **N-kaeaelles**
- * :%^RmVow VOONYS-STEM-PX ;  källs-
-
- * LEXICON A-01_OAQVES  ååʹves:åvves
-* Yaml: **N-aaves**
- * :%^RmVow VOONYS-STEM-PX ;  åvvs-
-
- * LEXICON A-01_KAAQRBES  kääʹrbes:kärbbes
-* Yaml: **N-kaeaerbes**
- * :%^RmVow VOONYS-STEM-PX ;  kärbbs-
-
- * LEXICON A-01_PUAQRES  puäʹres:puärˈres
-* Yaml: **N-puaeres**
- * :%^RmVow VOONYS-STEM-PX ;  puärˈrs-
-
-
- * LEXICON A-01_PUUQTTES  puuʹttes:pu%^1VOWtt
-* Yaml: **A-puuqttes**
- * :%^VOWLower%>s VOONYS-STEM-PX ;  potts-
-
-
-## -stems
-
-
- * LEXICON A-01_CHUEQDHES  čueʹđes:čuâttes
-* Yaml: **N-chuedhes**
- * :%^RmVow VOONYS-STEM-PX ;  võnns-
-
-
- * LEXICON A-01_KHEEQLES  ǩeeʹles:ǩeâlˈles
-* Yaml: **N-chuedhes**
- * :%^RmVow VOONYS-STEM-PX ;  võnns-
-
-
-
-
- * LEXICON A-01_PUEAQRDES  pueʹrdes:puä%{ʹØ%}rddes
-* Yaml: **N-chuaeckes**
- * :%^RmVow VOONYS-STEM-PX ;  võnns-
-
-
-
-
-* Yaml: **N-sett**
-* There are several stem types 
-
-
-
-## e-a-stems
-
-
-
-
-
-
-
-čâustõk+N+Sg+Gen:čâustõõǥǥ
- * +Der+Der/Dimin+A:%{XC%}%^V2VV%^K2GG A-02_MUORYZH-WITHOUT-PAL ;   kuuzz-
- * +Der+Der/Dimin+A:%{XC%}%^V2VV%^PAL%^K2GG A-02_MUORYZH-WITH-PAL ;   kuuʹzz-
-
-
-
-
-
-
-* Yaml: **N-radio**
- *  A-02_SG-NOM ;	     (TSA-1) +Sg+Nom:
- *  A-02_SG-ABE/ACC/GEN ;    (=TSA-2)
- * :%^1VOW%^V2VVʹje A-02_SG-ILL ;	     (TSA-3) +Sg+Ill:
- * +Use/NGminip+Use/NG: A-02_SG-ILL ;    (TSA-3) +Sg+Ill:
- *  A-02_SG-LOC ;	     ()
- *  A-02_SG-COM_IN ;	     (=TSA-4)
- *  A-02_ESS/PAR ; 	     ()
- *  A-02_PL-NOM ;	     (TSA-2) +Pl+Nom:
- *  A-02_PL-OBL ;	     (TSA-4) +Pl+Gen: 
-
-
-
-
-
- * LEXICON A-01_NALLSHEM  čââʹlmteʹm:čââʹlmtẹ%^1VOW%{ʹØ%}m
-292-295
-* Yaml: **A-chaalmtem**
-Ǩiõllkaʹlddi. 2017-04-04
-* *čââʹlmtẹ%^1VOW%{ʹØ%}m*
-* *čââʹlmtẹ00m*
-
-
-
-## Stem types from the grammar
-
-*These are still not fixed.*
-
-
- * LEXICON A-01_PRSPRC-EEI  tuõđšteei:tueʹjjee
-tuõđšteei:tueʹjjee
-* Yaml: **N-tuodhshteei**
-
- * LEXICON A-01_PRSPRC-EEQJJ  tuõđšteei:tueʹjjẹẹ
-tuõđšteei:tueʹjjẹẹ
-* Yaml: **N-tuodhshteeqjj**
-
-
-Class 5 according to Feist 152
-## k-stems
-
-stemtype 
-* Yaml: **N-chaustok**
-
-
-Class 6 according to Feist 153-154
-PRESENT A-02_PARTICIPLES
-
- * LEXICON A-01_PRSPRC-NOGRADE-I  uuidi:uuidi
-* Yaml: **N-joovvi**
-* There are several stem types
-* cõggi:cõggi
-NumContLex="1.2"
-
- * LEXICON A-01_PRSPRC-VCC-I  cõggi:cõggi
-* Yaml: **N-joovvi**
-* There are several stem types
-* cõggi:cõggi
-NumContLex="1.2"
-
- * LEXICON A-01_PRSPRC-VQCC-I 
-* Yaml: **N-joovvi**
-* There are several stem types
-* cõggi:cõggi
-NumContLex="1.2"
-
-
-
-
- * LEXICON A-01_PRSPRC-VVCC-I  jõõvvi:jõõvvi
-* Yaml: **N-joovvi**
-* There are several stem types
-* jõõvvi:jõõvvi
-NumContLex="1.2"
- * : A-02_SG-NOM ;	       		 (1) jõõvvi
- * : A-02_SG-ABE/ACC/GEN ;		 (2) jõõvvi
- * :%^I2J%>a A-02_SG-ILL ;		 jõõvvja
- * :%^I2J%>e A-02_SG-LOC ;		 jõõvvjest
- * :%^I2J A-02_SG-COM_IN ;		 jõõvvjin
- * :%^I2J%>e A-02_ESS/PAR ;  		 jõõvvjen
- * :%^CC2C A-02_PL-NOM ;		 jõõvi
- * :%^I2J A-02_PL-OBL ;	 jõõvvji
- * +Use/NGminip+Use/NG:%^CC2C%^I2J A-02_PL-OBL ;		 jõõvji
- * +Use/NGminip+Use/NG: A-02_PL-NOM ;		 jõõvvi
-
- * LEXICON A-01_PRSPRC-VVQCC-I  jooʹtti:jooʹtti
-* Yaml: **N-joovvi**
-* There are several stem types
-* jõõvvi:jõõvvi
-NumContLex="1.2"
- * : A-02_SG-NOM ;	       		 (1) jõõvvi
- * : A-02_SG-ABE/ACC/GEN ;		 (2) jõõvvi
- * :%^I2J%>a A-02_SG-ILL ;		 jõõvvja
- * :%^I2J%>e A-02_SG-LOC ;		 jõõvvjest
- * :%^I2J A-02_SG-COM_IN ;		 jõõvvjin
- * :%^I2J%>e A-02_ESS/PAR ;  		 jõõvvjen
- * :%^CC2C A-02_PL-NOM ;		 jõõvi
- * :%^I2J A-02_PL-OBL ;	 jõõvvji
- * +Use/NGminip+Use/NG:%^CC2C%^I2J A-02_PL-OBL ;		 jõõvji
- * +Use/NGminip+Use/NG: A-02_PL-NOM ;		 jõõvvi
-
- * LEXICON A-01_PRSPRC-VVKK-I  lookki:lookki
-* Yaml: **lookk**
-* There are several stem types
-* lookki:lookki
-NumContLex="1.2"
-
- * LEXICON A-01_PRSPRC-VVQKK-I  
-* Yaml: **lookk**
-* There are several stem types
-* lookki:lookki
-NumContLex="1.2"
-
-
- * LEXICON A-01_PRSPRC-VWKK-I  ǩiõssi:ǩiõssi
-* Yaml: **N-joovvi**
-* There are several stem types
-* sirddi:sirddi
-NumContLex="1.2"
-
- * LEXICON A-01_PRSPRC-VWQKK-I 
-* Yaml: **N-joovvi**
-* There are several stem types
-* sirddi:sirddi
-NumContLex="1.2"
-
-
- * LEXICON A-01_PRSPRC-VWCC-I  vuõlli:vuõlli
-* Yaml: **N-vuolli**
-* There are several stem types
-* vuõlli:vuõlli
-NumContLex="1.2"
-
- * LEXICON A-01_PRSPRC-VWQCC-I  
-* Yaml: **N-vuolli**
-* There are several stem types
-* vuõlli:vuõlli
-NumContLex="1.2"
-
-
- * LEXICON A-01_PRSPRC-VWCCC-I  kuõʒʒi:kuõʒˈʒi
-* Yaml: **N-vuolli**
-* There are several stem types
-* vuõlli:vuõlli
-NumContLex="1.2"
-
- * LEXICON A-01_PRSPRC-VWQCCC-I  kuõddi:kuõʹdˈdi
-* Yaml: **N-vuolli**
-* There are several stem types
-* vuõlli:vuõlli
-NumContLex="1.2"
-
-
-
- * LEXICON A-01_PRSPRC-VWXYY-I  suõskki:suõskki
-* Yaml: **suoskki**
-
- * LEXICON A-01_PRSPRC-VWQXYY-I  
-* Yaml: **suoskki**
-
-
-
- * LEXICON A-01_PRSPRC-VCC-AI  kåččai:kåččai
-* Yaml: **kachchai**
-* There are several stem types
-NumContLex="
- * : A-02_SG-NOM ; 
- * : A-02_SG-ABE/ACC/GEN ; 
- * :%^RmVow%^I2J%>a A-02_SG-ILL ; 
- * :%^RmVow%^I2J%>e A-02_SG-LOC ; 
- * :%^RmVow%^V2VV A-02_SG-COM_IN ; 
- * :%^I2J%>e A-02_ESS/PAR ; 
- * :%^Pen%^V2VV A-02_PL-NOM ; 
- * :%^RmVow%^I2J A-02_PL-OBL ; 
- * +Use/NGminip+Use/NG: A-02_PL-NOM ; 
- * +Use/NGminip+Use/NG:%^Pen%^V2VV%^RmVow%^I2J A-02_PL-OBL ; 
-
- * LEXICON A-01_PRSPRC-VVCC-AI  peellai:peellai
-* Yaml: **paassai**
-* There are several stem types
-NumContLex="
- * : A-02_SG-NOM ;  Sg.Nom.Indef: peellai 
- * : A-02_SG-ABE/ACC/GEN ; 
- * :%^RmVow%^I2J%>a A-02_SG-ILL ;  Sg.Ill.Indef: peellja
- * :%^RmVow%^I2J%>e A-02_SG-LOC ; 
- * :%^RmVow%^V2VV A-02_SG-COM_IN ; 
- * :%^I2J%>e A-02_ESS/PAR ; 
- * :%^Pen%^CC2C A-02_PL-NOM ;  Pl.Nom.Indef: peelai
- * :%^RmVow%^I2J A-02_PL-OBL ; 
- * +Use/NGminip+Use/NG: A-02_PL-NOM ; 
- * +Use/NGminip+Use/NG:%^Pen%^CC2C%^RmVow%^I2J A-02_PL-OBL ; 
-
-
- * LEXICON A-01_PRSPRC-VVKK-AI  pååssai:pååssai
-* Yaml: **paassai**
-* There are several stem types
-NumContLex="
- * : A-02_SG-NOM ;  Sg.Nom.Indef: pååssai 
- * : A-02_SG-ABE/ACC/GEN ; 
- * :%^RmVow%^I2J%>a A-02_SG-ILL ;  Sg.Ill.Indef: pååssja
- * :%^RmVow%^I2J%>e A-02_SG-LOC ; 
- * :%^RmVow%^I2J A-02_SG-COM_IN ; 
- * :%^I2J%>e A-02_ESS/PAR ; 
- * :%^Pen%^KK2GG A-02_PL-NOM ;  Pl.Nom.Indef: pååzzai
- * :%^RmVow%^I2J A-02_PL-OBL ; 
- * +Use/NGminip+Use/NG: A-02_PL-NOM ; 
- * +Use/NGminip+Use/NG:%^Pen%^KK2GG%^RmVow%^I2J A-02_PL-OBL ; 
-
-
- * LEXICON A-01_PRSPRC-VXYY-AI  särnnai:särnnai
-* Yaml: **sarnnai**
-* There are several stem types
-* särnnai:särnnai
-NumContLex="
-
-
- * LEXICON A-01_PRSPRC-VWCC-AI  vuejjai:vuejjai
-* Yaml: **N-vuejjai**
-* There are several stem types
-* vuejjai:vuejjai
-NumContLex="
-
-
- * LEXICON A-01_PRSPRC-VWKK-AI  reäkkai:reäkkai
-* Yaml: **N-reakkai**
-* There are several stem types
-* reäkkai:reäkkai
-NumContLex="
-
-
- * LEXICON A-01_PRSPRC-VWCCC-AI  vuäggai:vuägˈgai
-* Yaml: **N-reakkai**
-* There are several stem types
-* vuägˈgai:vuägˈgai
-NumContLex="
-
-
- * LEXICON A-01_PRSPRC-VWXYY-AI  meälttai:meälttai
-* Yaml: **sarnnai**
-* There are several stem types
-* meälttai:meälttai
-NumContLex="
-
-
- * LEXICON A-01_ZHEEVAI  žeevai:žẹẹvai
-* Yaml: **zheevai**
-NumContLex="
-
-participles in -I from verbs in ʹ-ed
-
- * LEXICON A-01_PRSPRC-VXYY-I  äjjnõʹstti:äjjnõʹstti
-* Yaml: **lookk**
-* There are several stem types
-* äjjnõʹstti:äjjnõʹstti
-NumContLex="1.2"
-* sirddi:sirddi
-NumContLex="1.2"
-
- * LEXICON A-01_PRSPRC-VQXYY-I  äjjnõʹstti:äjjnõʹstti
-* Yaml: **lookk**
-* There are several stem types
-* äjjnõʹstti:äjjnõʹstti
-NumContLex="1.2"
-* sirddi:sirddi
-NumContLex="1.2"
-
- * LEXICON A-01_PRSPRC-VHYY-I  lahtti:la%^1VOWhtti
-* Yaml: **lookk**
-* There are several stem types
-* äjjnõʹstti:äjjnõʹstti
-NumContLex="1.2"
-* sirddi:sirddi
-NumContLex="1.2"
-
- * LEXICON A-01_PRSPRC-VQHYY-I  aʹhtti:a%^1VOWhtti
-* Yaml: **lookk**
-* There are several stem types
-* äjjnõʹstti:äjjnõʹstti
-NumContLex="1.2"
-* sirddi:sirddi
-NumContLex="1.2"
-
- * LEXICON A-01_PRSPRC-VWHYY-AI  veâhssai:veâhssai
-* Yaml: **lookk**
-* There are several stem types
-* äjjnõʹstti:äjjnõʹstti
-NumContLex="1.2"
-* sirddi:sirddi
-NumContLex="1.2"
-
-
-* Yaml: **N-suvddi**
-* There are several stem types
-NumContLex="1.2"
-
-
- * LEXICON A-01_LIEQDHDHDHI  lieʹđđi:lieʹđˈđi
-* Yaml: **N-liedhdhdhi**
-NumContLex="1.2"
-
-
-* Yaml: **lookk**
-* There are several stem types
-* vueʹstti:vueʹstti
-NumContLex="1.2"
-
- * LEXICON A-01_PRSPRC-VWHCC-I  viõhssi:viõhssi
-
- * LEXICON A-01_VUOIQNNI  vuõiʹnni:vuõiʹnni
-* Yaml: **lookk**
-* There are several stem types
-* vuõiʹnni:vuõiʹnni
-NumContLex="1.2"
-
-Class 7 according to Feist 154-155
-## i-stems
- * LEXICON A-01_HOQPPI  hõʹppi:hõʹppi
-* Yaml: **hoppi**
-* There are several stem types
-* hõʹppi:hõʹppi
-
-
-
-
-
-
-
-
-
-
-
- * LEXICON A-01_KAAMMI  kaammi:kaamm
-* Yaml: **piannai**
-* There are several stem types
-kaammi
-käʹmme
-kaammjen
-käʹmmi
-
-
-
-
-Class 8 according to Feist 155-157
-
-
-Class 9 according to Feist 158
-
-* Yaml: **A-saemmlazh**
-ânnʼjõž:ânnʼj
-
-* Yaml: **A-saemmlazh**
-säʹmmlaž:säʹmmlaž
-
-
-Diminutive derivations
-
-
-(2009: 306)
-* muõrâž:muõr
-* Yaml: **N-muorazh**
-
- * LEXICON A-02_MUORYZH-WITHOUT-PAL  paapp-
- * :âž A-02_SG-NOM ;		 paappâž
- * :že A-02_SG-ILL ;	 paappže
- * :že A-02_ESS/PAR ;	 	 paappžen
-
-
- * LEXICON A-02_MUORYZH-WITH-PAL    paaʹpp-
- * :%>e A-02_SG-ABE/ACC/GEN ;	 paaʹppe
- * :%>e A-02_SG-LOC ;	 paaʹppest
- * :%>e A-02_SG-COM_IN ;	     paaʹppein
- * +Use/NGminip+Use/NG: A-02_SG-COM_IN ;	     paaʹppin
- * :%>e A-02_PL-NOM ;	 paaʹppe
- * :%>e A-02_PL-OBL ;	     paaʹppei Merja differentiates from regular pl
- * +Use/NGminip+Use/NG: A-02_PL-OBL ;	     paaʹppi
-
-
-* Yaml: **N-muorazh**
-
- * : HatY-STEM-PX-WEAKEN_LARGO ;  säʹmmlõõžž- Sg_Loc_PxSg1
- * :%^PAL HatY-STEM-PX-WEAKEN_LARGO ;  säʹmmlõõʹžž- Sg_Loc_PxSg1
-
-
- * LEXICON A-01_PEESSAZH  piissuž:pẹẹss
-
- * LEXICON A_PIISSUZH  piissuž:piiss
-
-(2009: 310)
-* piissuž:piiss
-* Yaml: **N-piissuzh**
-
-
-
-* kuâlaž:kuâl
-* Yaml: **N-kualazh**
-kuâla, kuâlže
- * : LOAOADDAZH-STEM-PX-ALLEGRO ;  This should go to each stem type ERROR
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Class 11 according to Feist 162
-
-
-
-Class 12 Feist 163
-
-
-### Noun phrase heads
-### Pl
-
-
-
-
-
-
-
-
-
-### Number and case tags
-
-Used with words like juurd: jurddǥatta
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_gem
-Is for nouns with *-ast* Loc
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (vowel shift)
- Raised: Sg.Ill
- Lowered: ELSE
- a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel	-u
-## 1.2.2.2 Lacks Palatalization
-## 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
-## 1.2.2.2.1.1 Has Orthographic Gradation
-## 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
- Strong grade: Sg.Nom, Ess, Par
- Extra strong grade: Sg.Ill
- Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-uâ:uõ, eä:iâ
-## FORMS
-N_A-URaise3-32
-* Yaml: **N-vuarr**
-grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
-Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
-
-grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
-stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
-
-grade: strengthened (short_vowel, long_cluster), vowel: raised
-Sg_Ill
-
-grade: strengthened (short_vowel, long_cluster), vowel: neutral (low)
- * : A-STEM-PX-STRENGTHEN ;            (5) vuârr
-Ess_Px..., Sg_Ill..., N»A
-
-grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
-
-grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
- * +Der+Der/Dimin+A:%^CC2C%> A-01_PEESSAZH ;   (9) Dim.N.Sg.Nom: vuâraž
-
-grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
-
-
-
-
-
-
-## Adjectives -- to be moved
-
-
-
-
-
-# Skolt Saami adjectives
-
-OUR LONG-TERM GOAL IS NOT TO ADD STEMS MANUALLY TO THIS FILE
-Instead we want to update the dictionary sms2X/src/a_sms2X.xml, 
-from where the present lexc files will be regularly updated by 
-exporting (we need a script for this).
-
-
-THESE have been coded by Eino and Jaska
-The content consists of multiple pos 
-For nouns see nouns.lexc. Both files are temporary
-
-
-
-
-# Skolt Saami adpositions
-
-
-
-
-
-
-
-# Skolt Saami adverbs
-
-Only a handful so far.
-
-The lexicon *adv* gives the tag **+Adv**
-
-The lexicon *Adverb* contains adverbs.
-They are taken from [http://www.uta.fi/~km56049/same/skolt/koltansaame.html]
-
- * ââlda adv "nearby" ; 
- * ââʹn adv "now" ;  
- * ålggan adv "outside" ;  
- * åålǥas adv "to outside" ;  
-
-
-
-# Skolt Saami Conjunctions 
-
-
-The lexicon *Conjunction* lists the conjunction
- * ja Cc "and" ;              
- * da Cc "and" ;         
-
-
-The lexicon *Cc* gives the tag **+CC**
-
-
-
-
-# Skolt Saami Interjections 
-
-
-The lexicon *ij* gives the tag **+Interj**
-
-
-The lexicon *Interjection* lists the interjections
- * ai ij ;            
-
-
 # Skolt Saami noun morphology 
 
 This file documents the Skolt Saami noun morphology, lexicon by lexicon.
@@ -10177,248 +6598,6 @@ Used with words like juurd: jurddǥatta
 
 
 
-# Skolt Saami nouns
-
-We use a modified version of the *Koulukielioppi* stem system
-
-1. Vowel stems
-    1. â-stems: N-toll, N-miarr
-    1. a-stems: N-pess
-    1. e-stems: N-piess
-1. Mixed stem:
-    1. e-a-stems: N-ress
-1. Consonant stems
-    1. m-stems: N-laajj
-    1. n-stems: N-kuolban, N-siom
-1. Contract stems
-
-
-The lexicon *N-INCOMING* contains all nouns.
-So far, it contains only a handful of nouns, they are
-here grouped according to continuation lexicon.
-
-
-CODED BY EINO AND JASKA
-derived from closed fin-sms
-
-
-
-
-# Skolt Saami Numerals
-
-
- * **LEXICON Numeral   **  initial lexica
-
-
-
-
- * **LEXICON NUM-PREFIXES   **
-
- * **LEXICON ARABIC   ** arabic numerals
-
- * **LEXICON ARABICLOOPphone   ** +358(0)16671254
-
- * **LEXICON ARABICCASEphone   **  
-
- * **LEXICON ARABICLOOP   **
-
-
-
- * **LEXICON ARABICLOOPORD   ** ordinals
-
- * **LEXICON ACASETAG   **  is for 1e+Num+Sg+Num:1e
-
- * **LEXICON ARABICLOOPCOLL   ** collectives
-
-
- * **LEXICON ARABICDELIMITER   **  blank + 3 delim, what does the lg counc prefer?
-
-
- * **LEXICON ARABICDELIMITERORD   ** ordinals
-
- * **LEXICON ARABICDELIMITERCOLL   ** collectives
-
- * **LEXICON ARABICCASES   **  to distinguish between 0 and oblique
-
- * **LEXICON ARABICCASE0   **
-
- * **LEXICON ARABICCASE   **
-
-
- * ** LEXICON ARABICCASEORD   ** ordinals
-
- * ** LEXICON ARABICCASECOLL   ** collectives
-
-
-
- * **LEXICON ROMAN   **  roman numerals
-
- * **LEXICON ROM-THOUSAND   ** 
-
- * **LEXICON ROM-THOUSAND-TAG   ** 
-
- * **LEXICON ROM-HUNDRED   ** 
-
- * **LEXICON ROM-HUNDRED-TAG   ** 
-
- * **LEXICON ROM-TEN   ** 
-
- * **LEXICON ROM-TEN-TAG   ** 
-
- * **LEXICON ROM-ONE   ** 
-
- * **LEXICON ROM-ONE-TAG   ** 
-
-
- * **LEXICON ROM-SPLIT   ** 
-
-
-
- * **LEXICON 2ROMAN   ** 
-
- * **LEXICON 2ROM-THOUSAND   ** 
-
- * **LEXICON 2ROM-THOUSAND-TAG   ** 
-
- * **LEXICON 2ROM-HUNDRED   ** 
-
- * **LEXICON 2ROM-HUNDRED-TAG   ** 
- * **LEXICON 2ROM-TEN   ** 
-
- * **LEXICON 2ROM-TEN-TAG   ** 
-
- * **LEXICON 2ROM-ONE   ** 
-
- * **LEXICON 2ROM-ONE-TAG   ** 
-
- * **LEXICON ROMNUMTAG   **
-
- * **LEXICON ROMNUMTAGOBL   ** 
-
-
-
- * **LEXICON ISOLATED-NUMEXP   ** some isolated numeral expressions
-
-
-
-
-
-
-
-
-
-
-
-# Skolt Saami Particles
-
-
-The lexicon pcle gives the tag.
-
-
-## List of particles in the lexicon Particle
-
- ges pcle ; 
-
-## unclear whether these are really particles
-
-
-# Pronouns
-
-
-Pointing to all the pronominal subgroups
-
- * LEXICON Pronoun 
- * Personal ;      
- * Demonstrative ; 
- * Reflexive ;     
- * Interrogative ; 
-
-
-## Personal pronouns
-
-
-Splitting according to person
-
- * LEXICON Personal           
- * mon+Pron+Pers:m perspron ; 
- * ton+Pron+Pers:t perspron ; 
- * son+Pron+Pers:s perspron ; 
-
-
-
-
-
-
-
-
-
-
-## Demonstrative pronouns
-
-
- * LEXICON Demonstrative 
-
- * LEXICON SHORTDEM 
-
- * LEXICON LONGDEM 
-
- * LEXICON TOTDEM  
-
- * LEXICON TIET-AA 
-
- * LEXICON -AA 
-
-
-
-## Reflexive pronouns
-
-
- * LEXICON Reflexive 
-
-
- * LEXICON GA-I 
-
- * LEXICON GA-II 
-
- * LEXICON ILEPX 
-
- * LEXICON LOCPX 
-
- * LEXICON COMPX 
-
- * LEXICON ROBLSGPX 
-
- * LEXICON ROBLPLPX 
-
- * LEXICON RCOMPLPX 
-
-
-
-
-## Interrogative pronouns
-
-
- * LEXICON Interrogative 
- * mii+Pron+Interr:m	MK ; 
- * ǩii+Pron+Interr:ǩ	MK ; 
-
- * LEXICON MK 
-
- * LEXICON MK-long 
-
- * LEXICON MK-short 
-
- * LEXICON MK-low 
-
-
-
-
-
-
-
-
-
-
 # SKOLT SAAMI PROPERNOUN MORPHOLOGY 
 
 THE LEXICON *@OUTSIDE_LEXICONS@* ASSIGNS THE TAG +Attr
@@ -10582,32 +6761,3286 @@ R ;		= * LEXICON PROP_SEM/MAL_TOOBDYLM  kuss
  * LEXICON PROP_VUYSPPOAQD  vuâsppåʹd:vuâsppå%^1VOWd
 
 
-# Propernoun lexicon, Skolt Sámi specific names 
+# Inari Saami acronyms
 
-
-The lexicon *ProperNoun* lists the proper nouns
-
-
-## First part of complex names
+## The lexica giving tags and suffixes to the acronyms
 
 
 
-## Ordinary person names
+
+   +N+ABBR+Sg+Gen:%>    # ;
+   +N+ABBR+Sg+Loc:%>    # ;
+      +N+ABBR+Ess:%>    # ;
+      +N+ABBR+Par:%>    # ;
+   +N+ABBR+Pl+Nom:%>    # ;
+    +N+Prop:%> ACCRADECL     ;
+    +N+Prop:%> BERN-UCASE    ;
+    +N+Prop:%> LONDON-UCASE  ;
+    +N+Prop:%> NYSTØ-OBL     ;
 
 
-## Ordinary place names
+ * **LEXICON acroconnector   ** Here comes a set of possible symbols to put between the abbreviation and its suffix
+
+ * **LEXICON acronull   **  for suffixless forms, redirecting to K_only for clitic forms
+
+ * **LEXICON acrooblique   **
 
 
 
-## Ordinary misc names
 
 
-# Subjunctions
 
-The lexicon *Cs* assigns the tag **+CS**
 
-The lexicon *Subjunction* lists the subjunctions
- * So far it contains only go Cs ;  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             +Pl+Nom:%>jit  K ;
+                    :     ACCRA-DC ;
+                    :%>ji   ACCRA-OBL_PLC-ORG ;
+                    :%>ji   ACCRA-IICASE ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+ACCRA-IICASE ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+These sublexica are irrelevant for SIJTE, but added
+for the sake of the lexicon MARJA ! Muhto gč. dat kommentára... Imaštallan dan gal veha...
+Here, we allow for Illative Sijtei
+
+
+These sublexica are irrelevant for SIJTE, but added
+for the sake of the lexicon MARJA ! Muhto gč. dat kommentára... Imaštallan dan gal veha...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+For Finnish names with ending -nen. Kaustinen.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Different lexicon for female persons and place names.
+
+
+Different lexicon for personal surnames. Blind
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+As aleuhtat, but with a marginal leakage
+to sg forms in some cases. (substandard?)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ * LEXICON RHyph  conversion to sms compounding.lexc -type
+
+# Skolt Saami Pronoun Morphology 
+
+The lexicon *PRON_* assigns the tag **+Pron**
+
+
+
+
+
+
+
+
+ * +Nom:ij		K ;  mij, tij, sij
+ * +Gen:ij	      K ;  mij, tij, sij
+ * +Gen+Use/NGminip+Use/NG+Use/SpellNoSugg:iʹjji    K ;  miʹjji, tiʹjji, siʹjji
+ * +Acc:iʹjjid	      K ;  miʹjjid, tiʹjjid, siʹjjid
+ * +Ill:iʹjjid	      K ;  miʹjjid, tiʹjjid, siʹjjid
+ * +Loc:eeʹst	      K ;  meeʹst, teeʹst, seeʹst
+ * +Com:ijvuiʹm     K ;  mijvuiʹm, tijvuiʹm, sijvuiʹm
+ * +Abe:ijtää	      K ;  mijtää, tijtää, sijtää
+
+
+
+
+# Pronouns
+
+
+Pointing to all the pronominal subgroups
+
+ * LEXICON Pronoun 
+ * Demonstrative ; 
+ * Reflexive ;     
+ * Interrogative ; 
+ *  Relative ;	 kååʹtt, mii
+
+
+## Personal pronouns
+
+
+Splitting according to person
+
+
+
+
+
+
+
+
+
+
+
+## Demonstrative pronouns
+
+
+ * LEXICON Demonstrative 
+ * tõt+Pron+Dem:t  	TOTDEM ;  The Epsilon has been removed 2015-05-13
+
+ * LEXICON SHORTDEM 
+
+ * LEXICON LONGDEM 
+
+ * LEXICON TOTDEM  
+
+ * LEXICON TIET-AA 
+
+ * LEXICON -AA 
+
+## INDEFINITE PRONOUNS
+
+## REFLEXIVE PRONOUNS
+
+jiõčč: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ * LEXICON Reflexive 
+
+
+
+
+
+Completion needed 2015-09-19
+
+ * LEXICON GA-I 
+
+ * LEXICON GA-II 
+
+ * LEXICON ILEPX 
+
+ * LEXICON LOCPX 
+
+ * LEXICON COMPX 
+
+ * LEXICON ROBLSGPX 
+
+ * LEXICON ROBLPLPX 
+
+ * LEXICON RCOMPLPX 
+
+
+
+
+## Interrogative pronouns
+
+ * LEXICON Interrogative 
+ * mii+Pron+Interr:m	MK ;  The Epsilon  inserted 2015-02-11
+ * ǩii+Pron+Interr:ǩ	MK ;  The Epsilon  inserted 2015-02-11
+
+
+ * LEXICON MK 
+
+ * LEXICON MK-long 
+
+ * LEXICON MK-short 
+
+ * LEXICON MK-PL-short 
+
+ * LEXICON MK-low 
+
+ * LEXICON INDEF-MK 
+
+ * LEXICON INDEF-MK-long 
+
+ * LEXICON INDEF-MK-low-short 
+
+ * LEXICON INDEF-MK-low 
+
+ * LEXICON DISTR-MK 
+
+ * LEXICON DISTR-MK-long 
+
+ * LEXICON DISTR-MK-low-short 
+
+ * LEXICON DISTR-MK-low 
+
+
+
+ * LEXICON Relative 
+
+ * LEXICON Indefinite 
+
+
+
+ * LEXICON Distributive 
+
+
+
+### SPATIAL PRONOUNS
+
+
+
+### MISC
+
+# Symbol affixes
+
+
+
+
+
+
+# Skolt Saami adverbs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ * LEXICON ADV_OARRA  årra:årr
+ * LEXICON ADV_PIRRSES  pirrses:pirr
+
+
+ * LEXICON ADV_LUUZZYS  luuzzâs:luuzz
+
+ * LEXICON ADV_LUUQNNES  luuʹnnes:luunn
+
+ * LEXICON ADV_YQLNN  âʹlnn:â%^1VOWlnn
+
+
+# Skolt Saami adjective declension
+
+
+
+
+
+
+
+These come directly from the xml to lexc xsltransformation lexica
+
+
+
+ * : ADJ-DER/COMP_ab ;  This has a Comp+Attr
+
+
+
+CLASS 1 HIGH VOWEL, NO PALATALIZATION NOMINALS
+ * LEXICON A_PAPP  papp:papp
+
+
+
+ * LEXICON A_ALGG  põrtt:põrtt
+friskk
+
+ * LEXICON A_AUTT  autt:a%^1VOWutt
+friskk
+
+
+ * LEXICON A_MUORR  muõrr:muõrr
+
+ * LEXICON A_NUORR  nuõrr:nuõrr
+
+ * LEXICON A_SHIOGHGH  šiõǥǥ:šiõǥǥ
+Need work on derivation since this only has positive form. 2018-10-13
+
+
+ * LEXICON	A_KOOKKA 	kookka length of/pituinen
+no gradation, has preceding genitive 2018-10-13
+
+ * LEXICON A_KUOCC  kuõcc:kuõcc
+
+ * LEXICON A_CHUOSHKK  čuõškk:čuõškk
+tuõlbb
+
+ * LEXICON A_MIYRKK  sǩiâŋkk:sǩiâŋkk
+hiâlpp
+
+ * LEXICON A_PLAAN  plaan:plaan
+
+ * LEXICON A_SUYMMM  suâmm:suâmˈm
+
+
+ * LEXICON A_MODDAI  moddai:moddai
+ * : SG-NOM ; 
+ * : SG-ABE/ACC/GEN ; 
+ * :%^RmVow%^I2J%>a SG-ILL ; 
+ * :%^RmVow%^I2J%>e SG-LOC ; 
+ * :%^RmVow%^V2VV SG-COM_IN ; 
+ * :%^I2J%>e ESS/PAR ; 
+ * :%^Pen%^V2VV PL-NOM ; 
+ * :%^RmVow%^I2J PL-OBL ; 
+
+
+CLASS 1 LOW VOWEL, NO PALATALIZATION NOMINALS
+
+
+
+* Yaml: **A-vaeaezhzh**
+
+
+
+CLASS 1 LOW VOWEL, PALATALIZATION, ILLATIVE IN U NOMINALS
+
+
+CLASS 1 HIGH VOWEL, PALATALIZATION NOMINALS
+ * LEXICON A_NUQBB   nuʹbb:nubb
+* Yaml: **A-nubb**
+
+ * LEXICON A_KUEQLL  kueʹll:kuâll
+
+ * LEXICON A_MUEQRJJ  mueʹrjj:mueʹrjj
+
+CLASS 1 LOW VOWEL, PALATALIZATION NOMINALS
+
+ * LEXICON A_LOAQDD  väʹll:väll
+
+ * LEXICON A_UQCC  uʹcc:u%^1VOW%{ʹØ%}cc
+
+ * LEXICON A_SAAQMM  sääʹmm:sää%{ʹØ%}mm
+
+ * LEXICON A_CHAAQCC  čääʹcc:čää%{ʹØ%}cc
+
+ * LEXICON A_KAQLBB  käʹlbb:kälbb âʹlǧǧ:â%^1VOW%{ʹØ%}lgg
+
+ * LEXICON A_HAAQSKH  hääʹsǩ:hää%{ʹØ%}sk
+
+no separate attribute form 2018-10-13
+Russian loanword 
+
+ * LEXICON A_SEQTT  seʹtt:sẹ%^1VOW%{ʹØ%}tt
+CHECKME
+
+
+ * LEXICON A_KHEQRJJ  ǩeʹrjj:ǩẹ%^1VOW%{ʹØ%}rjj
+
+ * LEXICON A_JAUQRR  jäuʹrr:jä%^1VOWu%{ʹØ%}rr
+
+ * LEXICON A_PEIQVV  peiʹvv:pẹ%^1VOWi%{ʹØ%}vv
+
+ * LEXICON A_SUEAQKHKH  sueʹǩǩ:suäkk
+cuẹʹǩǩ
+
+ * LEXICON A_KUEAQTT  kuẹʹtt:kuätt
+
+ * LEXICON A_HIEAQNN  hieʹnn:heänn
+
+ * LEXICON A_JEAQNNN  jeäʹnn:jeänˈn, jeäʹǧǧ:jeägˈg
+
+ * LEXICON A_JEAQRMM  jeäʹrmm:jeärmm
+
+ * LEXICON A_CHUAQRVV  tuäʹŋǧǧ:tuäŋgg
+
+
+CLASS denominals in -i
+cf. Feist (2012: 198-199)
+These will need their own expansions
+HOW DOES JIÕʹNNI decline?
+ * LEXICON A_JIOQNNI  jiõʹnni:jiõnn FIXME 2016-04
+
+
+ * LEXICON A_PAERRAI  pärrai:pärr
+ * LEXICON A_SAELTTAI  sälttai:sältt
+
+ * LEXICON A_VELLAI  vellai:vẹ%^1VOWll
+
+
+
+CLASS 
+
+
+-õs ending
+
+
+
+ * +Pl+Nom:až ENDLEX ;  Check this 2015-02-22
+
+ * LEXICON A_VOONYS  võõnâs:võnn
+ * +Pl+Nom: ENDLEX ;  Check this 2015-02-22
+
+ * LEXICON A_OODHYS  oođâs:ođđ
+
+ * LEXICON A_KOODDYS  kõõddâs:kõdd
+ * +Pl+Nom:%>âz ENDLEX ;  Check this 2015-02-22
+
+ * LEXICON A_MOOCHCHYS  mooččâs:močč
+
+ * LEXICON A_JOOSKYS  jõõskâs:jõ%^1VOWskk
+
+ * LEXICON A_AARVYS  aarvâs:a%^1VOWrvv
+
+
+ * LEXICON A_PIIUTYS  piiutâs:pihtt
+
+ * LEXICON A_FIINYS  fiinâs:fijnn
+
+
+ * LEXICON A_RUODDYS  ruõddâs:ruõdˈd
+
+ * LEXICON A_TUOVYS  tuõvâs:tuõvv
+
+
+ * LEXICON A_VUOIVYS  vuõivâs:vuõivv
+
+ * LEXICON A_KUORMYS  kuõrmâs:kuõrmm
+
+
+ * LEXICON A_KOAOAVAS  kååvas:kåvv
+
+ * LEXICON A_KOAOADDAS  kååddas:kåådd
+
+ * LEXICON A_TOBDDSALLASH  tobddsallaš:tobddsallaš
+
+
+ * LEXICON A_JAELLASH  jällaš:jällaš
+
+
+ * LEXICON A_VAALMYSH  vaalmâš:va%^1VOWlmmâš
+
+
+ * LEXICON A_VEEIDAS  veeidas:veidd
+
+ * LEXICON A_PAEAELKAS  päälkas:pä%^1VOWlkkas
+
+ * LEXICON A_CEAEGGAS   ceäggas:ceägˈg
+
+ * LEXICON A_AANAR  späʹsseb:späʹsseb
+
+ * LEXICON A_CIYLKYLM  kuâstalv:kuâ%{ˈ1%}stalv
+
+ * LEXICON A_KUQCCER  kuʹccer:kuʹccer
+
+
+
+ * LEXICON A_KAAQMES   kääʹmes:kämm
+ * :es A-01_OAQVES ;    kääʹmes:kämmez
+
+ * LEXICON A_KAAQLLES   kääʹlles:kä%^1VOWll
+ * :es A-01_KAAQLLES ;    kääʹmes:kämmez
+
+ * LEXICON A_PUUQTTES   puuʹttes:pu%^1VOWtt
+ * : A-01_PUUQTTES ;    puuʹttes:pu%^1VOWttes
+
+ * LEXICON A_KOAQSHKHES  kååʹšǩes:kåškk
+
+ * LEXICON A_KHEEQLES   ǩeeʹles:ǩeâlˈl
+ * :es A-01_KHEEQLES ; 	ǩeeʹles:ǩeâlˈles
+
+
+ * LEXICON A_PUAQRES   puäʹres:puärˈr
+ * :es A-01_PUAQRES ;    puäʹres:puärˈres
+
+ * LEXICON A_VUAQMES   vuäʹres:vuärˈr
+ * :es A-01_PUAQRES ;    puäʹres:puärˈres
+
+ * LEXICON A_CHUEQDHES   čueʹđes:čuâtˈt
+ * :es A-01_CHUEQDHES ;    puäʹres:puärˈrez
+
+ * LEXICON A_PUEAQRDES   čueʹcǩes:čuäckkez
+ * :es A-01_PUEAQRDES ;   čueʹcǩes:čuäckkez
+
+ * LEXICON A_TUEJJEEJA  tuejjeeja:tuejjẹẹja
+
+ * LEXICON A_PRSPRC-EEI  tuejjeei:tuejjee
+ * +Err/Orth+Attr:jas ENDLEX ;  c.f. sjm faʹlsǩeejas
+
+ * LEXICON A_PRSPRC-EEQJJ  tuejjeei:tuejjẹẹ
+
+WORK HERE 2015-10-14 deverbals
+ * LEXICON A_PRSPRC-NOGRADE-I  uuidi:uuidi
+
+ * LEXICON A_PRSPRC-VCC-I  cõggi:cõggi
+
+ * LEXICON A_PRSPRC-VQCC-I  elstõʹtti:elstõ%^1VOWʹtti
+
+ * LEXICON A_PRSPRC-VHYY-I  lahtti:la%^1VOWhtti
+
+ * LEXICON A_PRSPRC-VQHYY-I  puʹhtti:pu%^1VOWhtti
+ * LEXICON A_PRSPRC-VWCCC-I  kuõʹddi:kuõʹdˈdi
+
+ * LEXICON A_PRSPRC-VWQCCC-I  kuõʹddi:kuõʹdˈdi
+
+ * LEXICON A_PRSPRC-VWHYY-AI  veâhssai
+
+
+ * LEXICON A_PRSPRC-VVCC-I  jõõvvi:jõõvvi
+* Yaml: **A-vaeaezhzh**
+
+ * LEXICON A_PRSPRC-VVQCC-I  jooʹtti+A:jooʹtti
+* Yaml: **A-vaeaezhzh**
+ * LEXICON A_PRSPRC-VVQKK-I  kooʹcci+A:kooʹcci
+ * LEXICON A_PRSPRC-VVKK-I  lookki:lookki
+ * LEXICON A_KOBDDI  kobddi:kobddi SEE following A_TOBDDI diff
+
+ * LEXICON A_PRSPRC-VWKK-I  ǩiõssi:ǩiõssi
+
+ * LEXICON A_PRSPRC-VWQKK-I  ǩiõʹssi:ǩiõʹssi
+ * LEXICON A_PRSPRC-VWCC-I  vuõlli:vuõlli
+
+ * LEXICON A_PRSPRC-VWQCC-I  puõʹtti:puõʹtti
+ * LEXICON A_PRSPRC-VWXYY-I  kuõskki:kuõskki
+
+ * LEXICON A_PRSPRC-VWQXYY-I  hieʹrvvi+A:hieʹrvvi
+ * LEXICON A_PRSPRC-VCC-AI  kåččai:kåččai
+ * LEXICON A_PRSPRC-VVCC-AI  peellai:peellai
+ * LEXICON A_PRSPRC-VVKK-AI  pååssai:pååssai
+ * LEXICON A_PRSPRC-VXYY-AI  särnnai:särnnai
+ * LEXICON A_PRSPRC-VWCC-AI  vuejjai:vuejjai
+ * LEXICON A_PRSPRC-VWKK-AI  reäkkai:reäkkai
+ * LEXICON A_PRSPRC-VWCCC-AI  vuäggai:vuägˈgai
+ * LEXICON A_PRSPRC-VWXYY-AI  meälttai:meälttai
+
+ * LEXICON A_PRSPRC-VXYY-I  äjjnõʹstti:äjjnõʹstti
+
+ * LEXICON A_PRSPRC-VQXYY-I  äjjnõʹstti:äjjnõʹstti
+
+ * LEXICON A_LIEQDHDHDHI  lieʹđđi:lieʹđˈđi
+
+ * LEXICON A_PRSPRC-VWHCC-I  viõhssi:viõhssi
+
+ * LEXICON A_VUOIQNNI  vuõiʹnni:vuõiʹnn%{ʼØ%}i
+
+ * LEXICON A_JUURD  juurd:ju%^1VOWrdd
+
+ * LEXICON A_MAADD  maadd:ma%^1VOWdd
+
+
+check this 2015-11-10
+
+
+## 2. WORDS WITH MULTI-SYLLABLE NOMINATIVE SINGULARS (2009: 293)
+## 2.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
+## 2.3.2 Sg.Ill in -a
+## 2.3.2.1 Has Gradation 
+## 2.3.2.1.1 Second syllable vowel loss (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Obl)
+* Yaml: **A-chaalmtem**
+
+## 2. WORDS WITH MULTI-SYLLABLE NOMINATIVE SINGULARS (2009: 293)
+## 2.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
+## 2.3.2 Sg.Ill in -a
+## 2.3.2.1 Has Gradation 
+## 2.3.2.1.1 Second syllable vowel loss (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Obl)
+* Yaml: **A-chaalmtem**
+
+CLASS 11 ADJECTIVES
+ * LEXICON A_SHIYLGGYD  šiâlggâd:šiâlgg
+
+ * LEXICON A_VISKKYD  viskkâd:viskk
+
+
+ * LEXICON A_MOASHSHAD  måššad:måšš
+
+
+ * LEXICON A_AQKHKHED  âʹǩǩed:âʹǩǩ
+
+
+
+
+säʹmmlaž:säʹmml
+
+ânnʼjõž:ânnʼj
+
+muõrâž:muõr
+
+
+
+ * +Der+Der/toovvyd+V+IV:»tõõvv IV_LAUKKOOLLYD ;  privative = carative + translative
+
+
+
+
+
+
+Class 12 Feist 163
+ * +Der+Der/Comp+A:»ba A-02_SG-ILL ;  Sammallahti (1991: 188)
+ * +Der+Der/Comp+A:»be A-02_SG-LOC ;  Sammallahti (1991: 188)
+ * +Der+Der/Comp+A:»b A-02_SG-COM_IN ;  Sammallahti (1991: 188)
+ * +Der+Der/Comp+A:»b A-02_PL-OBL ;  Sammallahti (1991: 188)
+
+
+Sammallahti 2010: 151
+
+
+
+
+
+
+
+
+
+N›A derivation in +Der+Der/N2A
+1A (Feist 2011: 198-199)
+
+1B (Feist 2011: 198-199)
+
+
+1C (Feist 2011: 198-199)
+
+determiner
+
+determiner
+
+determiner
+
+determiner
+determiner
+
+
+
+
+
+
+ * LEXICON DET_NEELLJAD  neelljad:neellj
+similar_to: A_MOASHSHAD
+
+
+ * LEXICON DET_DOHTAD  doohhtad:doohht
+
+
+
+
+
+
+
+CLASS 1 HIGH VOWEL, NO PALATALIZATION NOMINALS
+pa%{a0%}%{ʹ0%}%{p0%}p
+V%{V0%}%{ʹ0%}%{C0%}C
+Sg_Nom:
+high-vowel=yes
+monophthong=yes
+long-vowel=yes
+palatalization=no
+consonantism=quant-gem
+long-consonant=yes
+
+1.1.1.1.1.1. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|geminate" 
+
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+ â-stems (Sg.Loc, Ess, Par).
+## 1.1.1 Sg.Ill vowel	-e
+## 1.1.1.1 Has Palatalization
+## 1.1.1.1[1] (Palatalization pattern)
+ Palatalized: Sg.Ill
+ Not Palatalized: ELSE
+   Sg.Ill in palatalization and -e
+## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+## 1.1.1.1[1].1.1 Has Orthographic Gradation
+## 1.1.1.1[1].1.1[] (Monophthong + Consonant Geminate alternation)
+ Extra strong grade: Sg.Nom, Ess, Par
+ Extra strong grade: Sg.Ill
+ Strong grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+* Yaml: **N-papp**
+strong_geminate, short_vowel
+ * : A-02_SG-NOM ;			 papp
+ * :%>â A-02_ESS/PAR ; 	  		 pappân, pappâd
+strong_geminate, short_vowel, palatalization
+ * :%^PAL%>e A-02_SG-ILL ;		 paʹppe
+
+strong_geminate, long_vowel
+ * :%^V2VV A-02_SG-ABE/ACC/GEN-PL-NOM ;	 paapp
+ * :%^V2VV%>â A-02_SG-LOC ;		 paappâst
+ * :%^V2VV A-02_SG-COM_IN/PL-OBL ;	 paappi, paappid, paappid, paappin, paappivuiʹm, paappitaa
+
+ * +Der+Der/Dimin+A:%^V2VV A-02_MUORYZH-WITHOUT-PAL ;   paapp-
+ * +Der+Der/Dimin+A:%^V2VV%^PAL A-02_MUORYZH-WITH-PAL ;   paaʹpp-
+
+e.g. 
+e.g. +Use/NG+Sg+Loc+PxSg3
+
+
+
+
+Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_xyy
+similar_to: N_TAALKYS, N_KOONTYR
+1.1.1.1.1.1. Sg_Nom="short_vowel|long_cluster" Sg_Gen="long_vowel|short_cluster" 
+
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+ â-stems (Sg.Loc, Ess, Par).
+## 1.1.1 Sg.Ill vowel	-e
+## 1.1.1.1 Has Palatalization
+## 1.1.1.1[1] (Palatalization pattern)
+ Palatalized: Sg.Ill
+ Not Palatalized: ELSE
+   Sg.Ill in palatalization and -e
+## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+## 1.1.1.1[1].1.1 Has Orthographic Gradation
+## 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
+ Strong grade: Sg.Nom, Ess, Par
+ Strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+* Yaml: **N-portt**
+
+ * : A-02_SG-NOM ;	    				 põrtt
+ * :%^V2VV%^XYY2XY A-02_SG-ABE/ACC/GEN ;		 põõrt
+ * :%^V2VV%^XYY2XY A-02_PL-NOM ;		 põõrt
+ * :%^PAL%>e A-02_SG-ILL ;		      		 põʹrtte
+ * :%^V2VV%^XYY2XY%>â A-02_SG-LOC ;			 põõrtâst
+ * :%^V2VV%^XYY2XY A-02_SG-COM_IN ;			 põõrtin
+ * :%>â A-02_ESS/PAR ; 		  			 põrttân
+ * :%^V2VV%^XYY2XY A-02_PL-OBL ;			 põõrti
+
+ * +Der+Der/Dimin+A:%^V2VV%^XYY2XY A-02_MUORYZH-WITHOUT-PAL ;   põõrt-
+ * +Der+Der/Dimin+A:%^V2VV%^PAL%^XYY2XY A-02_MUORYZH-WITH-PAL ;   põõʹrt-
+
+
+
+Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_vyy
+1.1.1.1.1.1. Sg_Nom="short_vowel|long_V-cluster" Sg_Gen="long_vowel|short_V-cluster"
+
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+ â-stems (Sg.Loc, Ess, Par).
+## 1.1.1 Sg.Ill vowel	-e
+## 1.1.1.1 Has Palatalization
+## 1.1.1.1[1] (Palatalization pattern)
+ Palatalized: Sg.Ill
+ Not Palatalized: ELSE
+   Sg.Ill in palatalization and -e
+## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+## 1.1.1.1[1].1.1 Has Orthographic Gradation
+## 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
+ Strong grade: Sg.Nom, Ess, Par
+ Strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+* Yaml: **N-autt**
+
+ * : A-02_SG-NOM ;	    				 autt
+ * :%^V2VV%^XYY2XY A-02_SG-ABE/ACC/GEN ;		 aaut
+ * :%^PAL%>e A-02_SG-ILL ;		      		 auʹtte
+ * :%^V2VV%^XYY2XY%>â A-02_SG-LOC ;			 aautâst
+ * :%^V2VV%^XYY2XY A-02_SG-COM_IN ;			 aautin
+ * :%>â A-02_ESS/PAR ; 		  			 auttân
+ * :%^V2VV%^XYY2XY A-02_PL-NOM ;		 aaut
+ * :%^V2VV%^XYY2XY A-02_PL-OBL ;			 aauti
+
+ * +Der+Der/Dimin+A:%^V2VV%^XYY2XY A-02_MUORYZH-WITHOUT-PAL ;   aaut-
+ * +Der+Der/Dimin+A:%^V2VV%^PAL%^XYY2XY A-02_MUORYZH-WITH-PAL ;   aauʹt-
+
+
+
+
+
+
+
+
+
+Sg_Nom: vow_di:vow_high:pal_no:cns_xyy
+1.1.1.1.1.1. Sg_Nom="diphthong|long_cluster" Sg_Gen="diphthong|short_cluster"
+
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+ â-stems (Sg.Loc, Ess, Par).
+## 1.1.1 Sg.Ill vowel	-e
+## 1.1.1.1 Has Palatalization
+## 1.1.1.1[1] (Palatalization pattern)
+ Palatalized: Sg.Ill
+ Not Palatalized: ELSE
+   Sg.Ill in palatalization and -e
+## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+## 1.1.1.1[1].1.1 Has Orthographic Gradation
+## 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
+ Strong grade: Sg.Nom, Ess, Par
+ Strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+* Yaml: **N-chuoskk**
+
+ * : A-02_SG-NOM ;	    			 (1) čuõskk
+ * :%^XYY2XY A-02_SG-ABE/ACC/GEN ;	 (2) čuõsk
+ * :%^PAL%>e A-02_SG-ILL ;			 (3) čuõʹsǩǩe
+ * :%^XYY2XY%>â A-02_SG-LOC ;			 (4) čuõskest
+ * :%^XYY2XY A-02_SG-COM_IN ;		 (5) čuõskin
+ * :%>â A-02_ESS/PAR ; 	    			 (6) čuõskkân
+ * :%^XYY2XY A-02_PL-NOM ;	 (2) čuõsk
+ * :%^XYY2XY A-02_PL-OBL ;		 (5) čuõskin
+
+ * +Der+Der/Dimin+A:%^XYY2XY A-02_MUORYZH-WITHOUT-PAL ;   čuõsk-
+ * +Der+Der/Dimin+A:%^PAL%^XYY2XY A-02_MUORYZH-WITH-PAL ;   čuõʹsǩ-
+
+
+
+
+
+
+
+
+
+Sg_Nom: vow_di:vow_high:pal_no:cns_xyy
+1.1.1.1.1.1. Sg_Nom="diphthong|long_cluster" Sg_Gen="diphthong|short_cluster" Sg_Ill="diphthong|vowel_e-coloration|long_cluster"
+
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+ â-stems (Sg.Loc, Ess, Par).
+## 1.1.1 Sg.Ill vowel	-e
+## 1.1.1.1 Has Palatalization
+## 1.1.1.1[1] (Palatalization pattern)
+ Palatalized: Sg.Ill
+ Not Palatalized: ELSE
+   Sg.Ill in palatalization and -e
+## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+## 1.1.1.1[1].1.1 Has Orthographic Gradation
+## 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
+ Strong grade: Sg.Nom, Ess, Par
+ Strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+* Yaml: **N-skjiankk**
+
+ * : A-02_SG-NOM ;	      	 (1) Sg.Nom: sǩiâŋkk
+ * :%^XYY2XY A-02_SG-ABE/ACC/GEN-PL-NOM ;   (2) Pl.Nom: sǩiâŋk
+ * :%^PALE%^PAL%>e A-02_SG-ILL ;	    (3) Sg.Ill: sǩieʹŋǩǩe
+ * :%^XYY2XY%>â A-02_SG-LOC ;   	    (4) Sg.Loc: sǩiâŋkâst
+ * :%^XYY2XY A-02_SG-COM_IN ;		    (5) Sg.Com: sǩiâŋkin
+ * :%>â A-02_ESS/PAR ; 	     		   	(6) Ess: sǩiâŋkkân
+ * :%^XYY2XY A-02_PL-OBL ;			(8) Pl.Acc: sǩiâŋkid
+
+ * +Der+Der/Dimin+A:%^XYY2XY A-02_MUORYZH-WITHOUT-PAL ;   sǩiâŋk-
+ * +Der+Der/Dimin+A:%^PALE%^PAL%^XYY2XY A-02_MUORYZH-WITH-PAL ;   sǩieʹŋǩ-
+
+
+
+
+Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_gem
+1.1.1.1.1.2. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|single_consonant" 
+
+See also: NMN_TOLL-PLC, which is the same, but minus PL forms and certain cases
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+ â-stems (Sg.Loc, Ess, Par).
+## 1.1.1 Sg.Ill vowel	-e
+## 1.1.1.1 Has Palatalization
+## 1.1.1.1[1] (Palatalization pattern)
+ Palatalized: Sg.Ill
+ Not Palatalized: ELSE
+   Sg.Ill in palatalization and -e
+## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+## 1.1.1.1[1].1.1 Has Orthographic Gradation
+## 1.1.1.1[1].1.1[] (Monophthong + Consonant and Consonant Geminate alternation)
+ Extra strong grade: Sg.Nom, Ess, Par
+ Extra strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+* Yaml: **N-kidd, N-soll, N-toll, N-vorr**
+strong_geminate, short_vowel, no_palatalization, high_stem_vowel 
+ * : A-02_SG-NOM ;	    	   toll
+ * :%>â A-02_ESS/PAR ;    		   tollân
+strong_geminate, short_vowel, palatalization, high_stem_vowel
+ * :%^PAL%>e A-02_SG-ILL ;   	   toʹlle
+single_consonant, long_vowel, no_palatalization, high_stem_vowel
+ * :%^V2VV%^CC2C A-02_SG-ABE/ACC/GEN ;	 tool
+ * :%^V2VV%^CC2C A-02_PL-NOM ;	 tool
+ * :%^V2VV%^CC2C%>â A-02_SG-LOC ;                toolâst
+ * :%^V2VV%^CC2C A-02_SG-COM_IN ;                toolin
+ * :%^V2VV%^CC2C A-02_PL-OBL ;	                 tooli, toolid, toolid, toolin, toolivuiʹm, toolitaa
+
+ * +Der+Der/Dimin+A:%^V2VV%^CC2C A-02_MUORYZH-WITHOUT-PAL ;   tool-
+single_consonant, long_vowel, palatalization, high_stem_vowel
+ * +Der+Der/Dimin+A:%^V2VV%^PAL%^CC2C A-02_MUORYZH-WITH-PAL ;   tooʹl-
+
+
+
+
+
+
+
+
+
+
+
+ * LEXICON A-01_LUOSS  luõss:luõss
+Sg_Nom: vow_di:vow_high:pal_no:cns_gem_ss_type
+1.1.1.1.1.4. Sg_Nom="diphthong|geminate" Sg_Gen="diphthong|voiced_geminate"
+
+THIS IS NOT THE SAME AS N_MUORR
+* Yaml: **N-luoss**
+ * : A-02_SG-NOM ;	     			
+ * :%^KK2GG A-02_SG-ABE/ACC/GEN-PL-NOM ;	 luõzz
+ * :%^PAL%^CC2CCC%>e A-02_SG-ILL ;	 	 luõʹsˈse
+ * :%^KK2GG%>â A-02_SG-LOC ;			 luõzzâst
+ * :%^KK2GG A-02_SG-COM_IN ;			
+ * :%>â A-02_ESS/PAR ; 	   			
+ * :%^KK2GG A-02_PL-OBL ;			 luõzzi
+
+ * +Der+Der/Dimin+A:%^KK2GG A-02_MUORYZH-WITHOUT-PAL ;   luõzz-
+ * +Der+Der/Dimin+A:%^PAL%^KK2GG A-02_MUORYZH-WITH-PAL ;   luõʹzz-
+
+
+
+
+
+Sg_Nom: vow_di:vow_high:pal_no:cns_gem
+1.1.1.1.1.1. Sg_Nom="diphthong|geminate" Sg_Gen="diphthong|single_consonant" 
+
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+ â-stems (Sg.Loc, Ess, Par).
+## 1.1.1 Sg.Ill vowel	-e
+## 1.1.1.1 Has Palatalization
+## 1.1.1.1[1] (Palatalization pattern)
+ Palatalized: Sg.Ill
+ Not Palatalized: ELSE
+   Sg.Ill in palatalization and -e
+## 1.1.1.1[1].2 Has Specifically Pedagogical Gradation
+Sg.Ill: 
+## 1.1.1.1[1].2.1 Has Orthographic Gradation
+## 1.1.1.1[1].2.1[] (Diphthong + Consonant and Consonant Geminate alternation)
+ Strong grade: Sg.Nom, Ess, Par
+ Extra strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+* Yaml: **N-muorr**
+ * : A-02_SG-NOM ;	    			 muõrr
+ * :%^CC2C A-02_SG-ABE/ACC/GEN ;		 muõr
+ * :%^PAL%^CC2CCC%>e A-02_SG-ILL ;    		 muõʹrˈre
+ * :%^CC2C%>â A-02_SG-LOC ;	 		 muõrâst
+ * :%^CC2C A-02_SG-COM_IN ;			 muõrin
+ * :%>â A-02_ESS/PAR ; 	  			 muõrrân
+ * :%^CC2C A-02_PL-NOM ;		 muõr
+ * :%^CC2C A-02_PL-OBL ;			 muõri
+
+ * +Der+Der/Dimin+A:%^CC2C A-02_MUORYZH-WITHOUT-PAL ;   muõr-
+ * +Der+Der/Dimin+A:%^PAL%^CC2C A-02_MUORYZH-WITH-PAL ;   muõʹr-
+
+
+
+
+
+## FORMS
+similar_to: N_VUYHSS
+* Yaml: **N-miwhtt**
+ * :%^XYY2VY A-02_SG-COM_IN ;			 miõutin
+ * :%^XYY2VY  A-02_SG-ABE/ACC/GEN-PL-NOM ;	 miõut
+ * :%^PAL%>e A-02_SG-ILL ;	   	 miõʹhtte
+ * : A-02_SG-NOM ;	       			 miõhtt
+ * :%^XYY2VY%>â A-02_SG-LOC ;			 miõutâst
+ * :â A-02_ESS/PAR ;    	   			 miõhttân
+ * :%^XYY2VY A-02_PL-OBL ;			 miõuti
+
+ * +Der+Der/Dimin+A: A-02_MUORYZH-WITHOUT-PAL ;   miõhtt-
+ * +Der+Der/Dimin+A:%^PAL A-02_MUORYZH-WITH-PAL ;   riiʹǩǩ-
+
+
+
+
+
+
+Sg_Ill="palatalization|e-final"
+
+## 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
+## 2.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
+## 2.1.3 Sg.Ill in palatalization and -e
+## 2.1.3.3 Lacks Gradation (in last syllable)
+## 2.1.3.3.1 Monophthong
+## 2.1.3.3.1.3 Consonant always short
+## 2.1.3.3.1.3.4 Sg.Nom long vowel AND Short consonant
+## 2.1.3.3.1.3.4.1.Sg.Gen Weak Grade
+## 2.1.3.3.1.3.4.1.3 Sg.Ill Weak Grade
+plaan:plaan
+* Yaml: **N-plaan**
+ * +Der+Der/Dimin+A: A-02_MUORYZH-WITHOUT-PAL ;   paar-
+ * +Der+Der/Dimin+A:%^PAL A-02_MUORYZH-WITH-PAL ;   paaʹr-
+
+
+
+
+
+CLASS 1 LOW VOWEL, MONOPHTHONG, NO PALATALIZATION NOMINALS
+## a-stems
+
+Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_gem
+1.1.1.2.1. stem_with_gradation: yes 
+1.1.1.2.1.1. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|geminate" 
+
+Is for nouns with *-ast* Loc
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+## 1.2 Sg.Loc in -ast (vowel shift)
+ Raised: Sg.Ill
+ Lowered: ELSE
+ a-stems (Sg.Loc, Ess, Par).
+## 1.2.2 Sg.Ill vowel	-u
+## 1.2.2.2 Lacks Palatalization
+## 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
+## 1.2.2.2.1.1 Has Orthographic Gradation
+## 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
+ Extra strong grade: Sg.Nom, Ess, Par
+ Extra strong grade: Sg.Ill
+ Strong grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+N_A-URaise3-32
+* Yaml: **N-pess, N-pall**
+strong_geminate, short_vowel, no_palatalization, high_stem_vowel
+ * :%^VOWRaise%>u A-02_SG-ILL ;		  (3) Sg.Ill: pissu
+Sg_Ill
+
+strong_geminate, short_vowel, no_palatalization, low_stem_vowel
+ * : A-STEM-PX-STRENGTHEN ;            (5) pess
+Ess_Px..., Sg_Ill..., N»A
+
+strong_geminate, short_vowel, no_palatalization, low_stem_vowel
+ * : A-02_A-STEM_SG-NOM ;	    		  (1) Sg.Nom: pess
+Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
+
+strong_geminate, short_vowel, no_palatalization, low_stem_vowel, stem_vowel: a
+ * :%>a A-02_ESS/PAR ; 			  (6) Ess: pessan
+
+strong_geminate, long_vowel, no_palatalization, low_stem_vowel
+ * :%^V2VV A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	  (2) Pl.Nom: peess
+Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
+stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
+
+strong_geminate, long_vowel, no_palatalization, high_stem_vowel
+ * +Der+Der/Dimin+A:%^V2VV%^VOWRaise%> A-01_PIISSUZH ;   (9) Dim.N.Sg.Nom: piissuž
+ * +Der+Der/Dimin+A:%^V2VV%> A-01_PEESSAZH ;   (9) Dim.N.Sg.Nom: pẹẹssaž
+
+
+
+
+Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_gem
+Is for nouns with *-ast* Loc
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+## 1.2 Sg.Loc in -ast (vowel shift)
+ Raised: Sg.Ill
+ Lowered: ELSE
+ a-stems (Sg.Loc, Ess, Par).
+## 1.2.2 Sg.Ill vowel	-u
+## 1.2.2.2 Lacks Palatalization
+## 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
+## 1.2.2.2.1.1 Has Orthographic Gradation
+## 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
+ Strong grade: Sg.Nom, Ess, Par
+ Extra strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+N_A-URaise3-32
+* Yaml: **soomm**
+grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
+ * : A-02_A-STEM_SG-NOM ;	    		 (1) Sg.Nom: šoomm
+Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
+
+grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
+ * :%^CC2C A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ;		 (2) Pl.Nom: šoom
+Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
+stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
+
+grade: strengthened (short_vowel, long_cluster), vowel: raised
+ * :%^VV2V%^VOWRaise%>u A-02_SG-ILL ; 		 (3) Sg.Ill: šummu
+Sg_Ill
+
+grade: strengthened (short_vowel, long_cluster), vowel: neutral (low)
+ * :%^VV2V A-STEM-PX-STRENGTHEN ;            (5) šomm
+Ess_Px..., Sg_Ill..., N»A
+
+grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
+ * :%>a A-02_ESS/PAR ; 	     			 (6) Ess: šoomman
+
+grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
+ * +Der+Der/Dimin+A:%^VOWRaise%^CC2C%> A-01_PIISSUZH ;	 (9) Dim.N.Sg.Nom: šuumuž
+ * +Der+Der/Dimin+A:%^CC2C%> A-01_PEESSAZH ;   (9) Dim.N.Sg.Nom: šoomaž
+
+
+
+
+
+
+
+
+grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
+ * : A-02_A-STEM_SG-NOM ;	    			 (1) äldd
+Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
+
+grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
+ * :%^V2VV%^XYY2XY A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ;  (2) ääld
+Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
+stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
+
+grade: strengthened (short_vowel, long_cluster), vowel: raised
+ * :%^VOWRaise%>u A-02_SG-ILL ;		      	 (3) alddu
+Sg_Ill
+
+grade: strengthened (short_vowel, long_cluster), vowel: neutral (low)
+ * : A-STEM-PX-STRENGTHEN ;	    	   (5) äldd
+Ess_Px..., Sg_Ill..., N»A
+
+grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
+ * :%>a A-02_ESS/PAR ;	   		    	 (6) älddan
+
+grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
+ * +Der+Der/Dimin+A:%^V2VV%^VOWRaise%^XYY2XY A-01_PIISSUZH ;  (9) Dim.N.Sg.Nom: aalduž (2009: 312-313)
+ * +Der+Der/Dimin+A:%^V2VV%^XYY2XY%> A-01_PEESSAZH ;   (9) Dim.N.Sg.Nom: ääldaž
+
+
+grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
+
+
+ * LEXICON A-02_A-STEM_SG-NOM  (1)
+ * LEXICON A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM   (2)
+
+
+
+
+
+CLASS 1 LOW VOWEL, DIPHTHONG, NO PALATALIZATION NOMINALS
+
+
+
+
+
+Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_gem_long
+Is for nouns with *-ast* Loc
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+## 1.2 Sg.Loc in -ast (vowel shift)
+ Raised: Sg.Ill
+ Lowered: ELSE
+ a-stems (Sg.Loc, Ess, Par).
+## 1.2.2 Sg.Ill vowel	-u
+## 1.2.2.0 Lacks Palatalization
+## 1.2.2.0.2 Has Specifically Pedagogical Gradation
+## 1.2.2.0.2.0 Lack Orthographic Gradation
+## 1.2.2.0.2.0[] (Diphthong + Consonant Geminate alternation)
+ Extra strong grade: Sg.Nom, Ess, Par
+ Extra strong grade: Sg.Ill
+ Strong grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+* Yaml: **N-neavvv**
+ * : A-02_A-STEM_SG-NOM ;	    			  neävˈv
+Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
+
+ * :%^CCC2CC A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	  neävv
+Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
+stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
+
+ * :%^VOWRaise%>u A-02_SG-ILL ;			  niâvˈvu
+Sg_Ill
+
+ * : A-STEM-PX-STRENGTHEN ;            (5) neävˈv
+Ess_Px..., Sg_Ill..., N»A
+
+ * :%>a A-02_ESS/PAR ;   	       			 neävˈvan
+
+ * +Der+Der/Dimin+A:%^VOWRaise%^CCC2CC%> A-01_PIISSUZH ;   niâvvuž
+ * +Der+Der/Dimin+A:%^CCC2CC%> A-01_PEESSAZH ;   (9) Dim.N.Sg.Nom: neävvaž
+
+
+
+
+
+
+
+
+similar_to: N_PLAAN
+gradation: no
+vowel_shift: no
+Is for nouns with *-ast* Loc
+ a-stems (Sg.Loc, Ess, Par).
+* Yaml: **N-pealdd**
+ * : A-02_A-STEM_SG-NOM ;	    		  kapteän
+Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
+
+ * : A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	  kapteän
+Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
+stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
+
+ * :%>a A-02_SG-ILL ;		  kapteän
+Sg_Ill
+
+ * : A-STEM-PX-STRENGTHEN ;            (5) kapteän
+Ess_Px..., Sg_Ill..., N»A
+
+ * :%>a A-02_ESS/PAR ;   	       		  kapteänan
+
+ * +Der+Der/Dimin+A:%^XYY2XY%> A-01_PEESSAZH ;   (9) Dim.N.Sg.Nom: kapteänaž
+
+
+
+
+
+Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_gem_dd_type
+Is for nouns with *-ast* Loc, No gradation
+N_A-U1-11
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+## 1.2 Sg.Loc in -ast (no vowel shift, all lowered)
+ a-stems (Sg.Loc, Ess, Par).
+## 1.2.2 Sg.Ill vowel	-u
+## 1.2.2.2 Lacks Palatalization
+## 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
+## 1.2.2.2.1.2 Lacks Orthographic Gradation
+## 1.2.2.2.1.2[] (Monophthong + Consonant)
+ Weak grade: Sg.Nom, Ess, Par
+ Weak grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+* Yaml: **A-vaeaezhzh**
+ * : A-02_SG-NOM ;	    		 vääžž
+ * : A-02_SG-ABE/ACC/GEN-PL-NOM ;	 vääžž
+ * :%^VOWRaise%>u A-02_SG-ILL ;		 vaažžu
+ * +Use/NGminip+Use/NG:%>a A-02_SG-ILL ;  	      	 vääžža
+ * :%>a A-02_SG-LOC ;	   		 vääžžast
+ * :%>a A-02_SG-COM_IN ;		 vääžžain
+ * :%>a A-02_ESS/PAR ;     			 vääžžan
+ * :%>a A-02_PL-OBL ;			 vääžžai
+ * +Der+Der/Dimin+A:%^VOWRaise A-01_PIISSUZH ;	 vaažžuž
+ * +Der+Der/Dimin+A: A-01_PEESSAZH ;   (9) Dim.N.Sg.Nom: vääžžaž
+ * +Use/NGminip+Use/NG+Der+Der/Dimin+N: N_KUYLAZH ;   	 vääžžaž
+
+
+
+
+
+
+
+
+
+
+CLASS 1 HIGH VOWEL TYPE, NO PALATALIZATION NOMINALS
+
+
+CLASS 1 HIGH VOWEL, PALATALIZATION NOMINALS
+
+Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_gem_dd_type
+## 1.3 Sg.Loc in -est (vowel shift)
+ Raised: Sg.Com, Pl.Obl
+ Lowered: ELSE
+ e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+ Palatalized: ELSE
+ Not Palatalized: Sg.Ill
+## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+ Strong grade: Sg.Nom, Ess, Par
+ Extra strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+NumContLex="1.113"
+* Yaml: **N-nubb**
+* There are several stem types
+ *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) nubb
+ * :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) nuʹbb-
+ * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) nuʹbb Ess+Px..
+
+
+
+Bahuvriihi: årddnjuuʹnn
+* Yaml: **N-njuunn**
+
+ *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) njuunn-
+ * :%^VV2V%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) njuʹn-
+ * :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) njuʹnn Ess+Px..
+
+
+
+
+
+
+
+
+## FORMS
+## (1) Sg.Nom: juʹvjj
+## (2) Pl.Nom: juuʹj
+## (3) Sg.Ill: joujja
+## (4) Sg.Loc: juuʹjest
+## (5) Sg.Com: juuʹjin
+## (6) Ess: juʹvjjen
+## (7) Par: juʹvjjed
+## (8) Pl.Acc: juuʹjid
+## (9) Der/Dimin.N.Sg.Nom: joujjaž
+NumContLex="1.113"
+Is for nouns with *-est* Loc, Extra long vowel
+* Yaml: **N-juvjj**
+ *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) juvjj-
+ * :%^VV2V%^PAL%^XYY2VY E-STEM-PX-ALLEGRO ;  (11) juʹj-
+ * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) juʹvjj Ess+Px..
+
+
+
+
+
+
+
+
+
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
+## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
+ e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+ Palatalized: ELSE
+ Not Palatalized: Sg.Ill
+## 1.3.2.1.2 Has Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
+ Strong grade: Sg.Nom, Ess, Par
+ Extra strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
+## FORMS
+## (1) Sg.Nom: kueʹll
+## (2) Pl.Nom: kueʼl
+## (3) Sg.Ill: kuâlˈla
+## (4) Sg.Loc: kueʹlest
+## (5) Sg.Com: kuõʹlin ~ kueʹlin
+## (6) Ess: kueʹllen
+## (7) Par: kueʹlled
+## (8) Pl.Acc: kuõʹlid ~ kueʹlid
+## (9) Der/Dimin.N.Sg.Nom: kuâlaž 
+* Yaml: **N-kuell**
+* There are several stem types 
+* kueʹll:kuâll
+
+ *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) kuâll-
+ * :%^PALE%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) kueʹl-
+ * :%^PALE%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) kueʹlˈl Ess+Px..
+
+
+
+
+
+
+
+
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+## 1.3 Sg.Loc in -est (vowel shift)
+ Raised: Sg.Com, Pl.Obl
+ Lowered: ELSE
+ e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+ Palatalized: ELSE
+ Not Palatalized: Sg.Ill
+## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+ Strong grade: Sg.Nom, Ess, Par
+ Strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+NumContLex="1.113"
+Is for nouns with *-est* Loc, Extra long vowel
+* Yaml: **N-muerjj**
+ * :%^PALE%^PAL%^XYY2XY DenominalAdjsCShort ; 
+ * :%^PALE%^PAL A-02_E-STEM_SG-NOM ;		  	 (1) Sg.Nom: mueʹrjj
+ * :%^PALE%^PAL%^XYY2XY A-02_E-STEM_SG-ABE/ACC/GEN ;	 (2) Pl.Nom: mueʹrj
+ * :%^PALE%^PAL%^XYY2XY A-02_PL-NOM ;	 (2) Pl.Nom: mueʹrj
+ * : A-02_E-STEM_SG-ILL ;  		     	 (3) Sg.Nom: muârjja
+ * :%^PALE%^PAL%^XYY2XY%>e A-02_SG-LOC ;		 (4) Sg.Loc: mueʹrjest
+ * :%^VOWRaise%^PAL%^XYY2XY A-02_SG-COM_IN ;  (5) Sg.Com: muõʹrjin
+ * +Use/NGminip+Use/NG:%^PALE%^PAL%^XYY2XY A-02_SG-COM_IN ;  (5) Sg.Com:  mueʹrjin
+ * :%^VOWRaise%^PAL%^XYY2XY A-02_E-STEM_PL-OBL ;  (5) Sg.Com: muõʹrjin
+ * +Use/NGminip+Use/NG:%^PALE%^PAL%^XYY2XY A-02_E-STEM_PL-OBL ;  (5) Sg.Com:  mueʹrjin
+ * :%^PALE%^PAL%>e A-02_ESS/PAR ; 	 		   (6) Pl.Nom: mueʹrjjen
+ * :%^XYY2XY A-02_E-STEM_N_KUYLAZH ;		   (9) Der/Dimin.N.Sg.Nom: muârjaž
+ *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) muârjj-
+ * :%^VOWRaise%^PALE%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) mueʹrj-
+ * :%^PALE%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) mueʹrjj Ess+Px..
+
+
+
+
+
+
+
+
+
+
+CLASS 1 LOW VOWEL, PALATALIZATION, ILLATIVE IN U NOMINALS
+
+WORK NEEDED
+
+CLASS 1 LOW VOWEL, PALATALIZATION, ILLATIVE IN A NOMINALS
+## e-stems
+
+
+similar_to: N_PAPP
+vowel: monophthong
+vowel_shift: yes
+consonantism: geminate
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+## 1.3 Sg.Loc in -est (vowel shift)
+ Raised: Sg.Com, Pl.Obl
+ Lowered: ELSE
+ e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+ Palatalized: ELSE
+ Not Palatalized: Sg.Ill
+## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+ Strong grade: Sg.Nom, Ess, Par
+ Extra strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+NumContLex="1.113"
+* Yaml: **N-vaell, N-kall**
+strong_geminate, short_vowel, palatalization, low_stem_vowel
+strong_geminate, short_vowel, depalatalization, low_stem_vowel
+strong_geminate, long_vowel, palatalization, low_stem_vowel
+strong_geminate, long_vowel, palatalization, high_stem_vowel
+strong_geminate, long_vowel, depalatalization, low_stem_vowel
+ * : E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) väll-
+ * :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) väʹl-
+ * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) väʹll Ess+Px..
+
+similar_to: N_PAPP
+vowel: monophthong
+vowel_shift: ??
+consonantism: geminate
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+## 1.3 Sg.Loc in -est (vowel shift)
+ Raised: Sg.Com, Pl.Obl
+ Lowered: ELSE
+ e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+ Palatalized: ELSE
+ Not Palatalized: Sg.Ill
+## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+ Strong grade: Sg.Nom, Ess, Par
+ Extra strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+NumContLex="1.113"
+* Yaml: **A-ucc**
+strong_geminate, short_vowel, palatalization, low_stem_vowel
+strong_geminate, short_vowel, depalatalization, low_stem_vowel
+strong_geminate, long_vowel, palatalization, low_stem_vowel
+strong_geminate, long_vowel, palatalization, high_stem_vowel
+strong_geminate, long_vowel, depalatalization, low_stem_vowel
+ * : E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) ucc-
+ * :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) uʹc-
+ * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) uʹcc Ess+Px..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+## 1.3 Sg.Loc in -est (vowel shift)
+ Raised: Sg.Com, Pl.Obl
+ Lowered: ELSE
+ e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+ Palatalized: ELSE
+ Not Palatalized: Sg.Ill
+## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+ Strong grade: Sg.Nom, Ess, Par
+ Extra strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+NumContLex="1.113"
+* Yaml: **N-saeaemm**
+ *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) säämm-
+ * :%^VV2V%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) säʹm-
+ * :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) säʹmm Ess+Px..
+
+
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+## 1.3 Sg.Loc in -est (vowel shift)
+ Raised: Sg.Com, Pl.Obl
+ Lowered: ELSE
+ e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+ Palatalized: ELSE
+ Not Palatalized: Sg.Ill
+## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+ Strong grade: Sg.Nom, Ess, Par
+ Extra strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+NumContLex="1.113"
+* Yaml: **caacc**
+* There are several stem types
+* čääʹcc:čääʹcc
+ * :%^PAL A-02_E-STEM_SG-NOM ;                               (1) čääʹcc
+ * :%^PAL%^KK2GG A-02_E-STEM_SG-ABE/ACC/GEN ;         (2) čääʼʒʒ
+ * :%^PAL%^KK2GG A-02_PL-NOM ;         (2) čääʼʒʒ
+ * :%^VV2V A-02_E-STEM_SG-ILL ;               (3) čäcca
+ * :%^PAL%^KK2GG%>e A-02_SG-LOC ;                     (4) čääʼʒʒest
+ * :%^VOWRaise%^PAL%^KK2GG A-02_SG-COM_IN ;           (5) čaaʼʒʒin
+ * :%^VOWRaise%^PAL%^KK2GG A-02_E-STEM_PL-OBL ;           (5) čaaʼʒʒin
+ * :%^PAL%>e A-02_ESS/PAR ;                               (6) čääʼccen
+ * :%^KK2GG A-02_E-STEM_N_KUYLAZH ;     (9) čääʒʒaž
+ *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) čääcc-
+ * :%^VV2V%^PAL%^KK2GAllegro E-STEM-PX-ALLEGRO ;  (11) čäʹʒ-
+ * :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) čäʹcc Ess+Px..
+
+
+
+
+
+
+
+
+
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+## 1.3 Sg.Loc in -est (vowel shift)
+ Raised: Sg.Com, Pl.Obl
+ Lowered: ELSE
+ e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+ Palatalized: ELSE
+ Not Palatalized: Sg.Ill
+## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+ Strong grade: Sg.Nom, Ess, Par
+ Strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+NumContLex="1.113"
+Is for nouns with *-est* Loc, Extra long vowel
+* Yaml: **N-algg**
+ * :%^PAL A-02_E-STEM_SG-NOM ;		  			 (1) Sg.Nom: âʹlǧǧ
+ * :%^V2VV%^PAL%^XYY2XY A-02_E-STEM_SG-ABE/ACC/GEN ;	 (2) Pl.Nom: ââʹlj
+ * : A-02_E-STEM_SG-ILL ;	     			   	 (3) Sg.Ill: âlgga
+ * :%^V2VV%^PAL%^XYY2XY%>e A-02_SG-LOC ;		 (4) Sg.Loc: ââʹljest
+ * :%^V2VV%^VOWRaise%^PAL%^XYY2XY A-02_SG-COM_IN ;  (5) Sg.Com: õõʹljin
+ * :%^PAL%>e A-02_ESS/PAR ;	       			 (6) Ess: âʹlǧǧen
+ * :%^V2VV%^XYY2XY A-02_E-STEM_N_KUYLAZH ;		 (9) Der/Dimin.N.Sg.Nom: ââlǥaž
+ *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) kälbb-
+ * :%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) käʹlb-
+ * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) käʹlbb Ess+Px..
+ * :%^V2VV%^PAL%^XYY2XY A-02_PL-NOM ;	 (2) Pl.Nom: ââʹlj
+ * :%^V2VV%^VOWRaise%^PAL%^XYY2XY A-02_E-STEM_PL-OBL ;  (5) Sg.Com: õõʹljin
+
+
+
+
+
+* Yaml: **N-haeaesk**
+ * :%^PAL A-02_E-STEM_SG-NOM ;		   (1) Sg.Nom: hääʹsǩ
+ * :%^PAL A-02_E-STEM_SG-ABE/ACC/GEN ;  (2) Pl.Nom: hääʹsǩ
+ * :%^PAL A-02_PL-NOM ;  (2) Pl.Nom: hääʹsǩ
+ * : A-02_E-STEM_SG-ILL ;	      (3) Sg.Ill: hääska
+ * :%^PAL%>e A-02_SG-LOC ;   (4) Sg.Loc: hääʹsǩest
+ * :%^PAL A-02_SG-COM_IN ;      (5) Sg.Com: hääʹsǩin
+ * :%^PAL%>e A-02_ESS/PAR ; 	        (6) Ess: hääʹsǩen
+ * :%^PAL%> A-02_E-STEM_PL-OBL ;    (8) Pl.Acc: hääʹsǩid
+ * : A-02_E-STEM_N_KUYLAZH ;  (9) Der/Dimin.N.Sg.Nom: hääskaž
+ *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) hääsk-
+ * :%^PAL E-STEM-PX-ALLEGRO ;  (11) hääʹsǩ-
+ * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) hääʹsǩ Ess+Px..
+
+
+
+
+
+
+
+
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+## 1.3 Sg.Loc in -est (NO vowel shift)
+ Raised: Sg.Com, Pl.Obl
+ Lowered: ELSE
+ e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+ Palatalized: ELSE
+ Not Palatalized: Sg.Ill
+## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+ Strong grade: Sg.Nom, Ess, Par
+ Strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+NumContLex="1.113
+Is for nouns with *-est* Loc, Extra long vowel
+* Yaml: **N-kerjj**
+ * :%^PAL A-02_SG-NOM ;		  	 (1) Sg.Nom: ǩeʹrjj
+ * :%^V2VV%^PAL%^XYY2XY A-02_SG-ABE/ACC/GEN-PL-NOM ;  (2) Pl.Nom: ǩeeʹrj
+ * : A-02_E-STEM_SG-ILL ;	     			    (3)  Sg.Ill: ǩerjja
+ * :%^V2VV%^PAL%^XYY2XY%>e A-02_SG-LOC ;	    (4) Sg.Loc: ǩeeʹrjest
+ * :%^V2VV%^PAL%^XYY2XY A-02_SG-COM_IN ;	    (5) Sg.Com: ǩeeʹrjin
+ * :%^V2VV%^VOWRaise%^PAL%^XYY2XY A-02_SG-COM_IN ;  (5) Sg.Com: ǩiiʹrjin
+ * :%^PAL%>e A-02_ESS/PAR ;  (6) Ess: ǩeʹrjjen
+ * :%^V2VV%^VOWRaise%^PAL%^XYY2XY%> A-02_PL-OBL ;  (8) Pl.Acc: ǩiiʹrjid
+ * +Use/NGminip+Use/NG:%^V2VV%^PAL%^XYY2XY%> A-02_PL-OBL ;  (8) Pl.Acc: ǩeeʹrjid
+ * :%^V2VV%^XYY2XY A-02_E-STEM_N_KUYLAZH ;   (9) Der/Dimin.N.Sg.Nom: ǩeerjaž
+
+
+
+
+
+
+
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+## 1.3 Sg.Loc in -est (NO vowel shift)
+ Raised: Sg.Com, Pl.Obl
+ Lowered: ELSE
+ e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+ Palatalized: ELSE
+ Not Palatalized: Sg.Ill
+## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+ Strong grade: Sg.Nom, Ess, Par
+ Strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+Is for nouns with *-est* Loc, Extra long vowel
+* Yaml: **N-jaurr**
+
+
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
+ e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+ Palatalized: ELSE
+ Not Palatalized: Sg.Ill
+## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster variation)
+ Strong grade: Sg.Nom, Ess, Par
+ Strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+* Yaml: **N-peivv**
+ * :%^PAL A-02_E-STEM_SG-NOM ;	     (1) Sg.Nom: peiʹvv
+ * :%^V2VV%^PAL%^XYY2XY A-02_E-STEM_SG-ABE/ACC/GEN ;  (2) Pl.Nom: peeiʼv
+ * :%^V2VV%^PAL%^XYY2XY A-02_PL-NOM ;  (2) Pl.Nom: peeiʼv
+ * : A-02_E-STEM_SG-ILL ;		       (3) Sg.Ill: pẹivva
+ * :%^V2VV%^PAL%^XYY2XY%>e A-02_SG-LOC ;	       (4) Sg.Loc: peeiʹvest
+ * :%^V2VV%^PAL%^XYY2XY A-02_SG-COM_IN ;	       (5) Sg.Com: peeiʹvin
+ * :%^PAL%>e A-02_ESS/PAR ; 		   (6) Ess: peiʹvven
+ * :%^V2VV%^PAL%^XYY2XY A-02_E-STEM_PL-OBL ;  (8) Pl.Acc: peeiʹvid
+ * :%^V2VV%^XYY2XY A-02_E-STEM_N_KUYLAZH ;  (9) Der/Dimin.N.Sg.Nom: pẹẹivaž
+ *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) pẹivv-
+ * :%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) peiʹv-
+ * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) peiʹvv Ess+Px..
+
+
+
+
+
+
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+## 1.3 Sg.Loc in -est (vowel shift)
+ Raised: Sg.Com, Pl.Obl
+ Lowered: ELSE  ẹ, ä
+ e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+ Palatalized: ELSE
+ Not Palatalized: Sg.Ill
+## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+ Strong grade: Sg.Nom, Ess, Par
+ Extra strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+NumContLex="1.113"
+* Yaml: **N-suekkj**
+
+ *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) suäkk-
+ * :%^VOWRaise%^PALẸ%^Allegro%^PAL%^KK2GAllegro E-STEM-PX-ALLEGRO ;  (11) suẹˈʹj-
+ * :%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) suäʹǩˈǩ Ess+Px..
+
+
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+## 1.3 Sg.Loc in -est (vowel shift)
+ Raised: Sg.Com, Pl.Obl
+ Lowered: ELSE  ẹ, ä
+ e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+ Palatalized: ELSE
+ Not Palatalized: Sg.Ill
+## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+ Strong grade: Sg.Nom, Ess, Par
+ Extra strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+NumContLex="1.113"
+* Yaml: **N-kuett**
+* There are several stem types
+ *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) kuätt-
+ * :%^PAL%^CC2C E-STEM-PX-ALLEGRO ;  (11) kuẹʹđ-
+ * :%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) kuäʹtˈt- Ess+Px..
+
+
+ *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) hiänn-
+ * :%^PAL%^CC2C E-STEM-PX-ALLEGRO ;  (11) hiẹʹn-
+ * :%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) hiäʹnˈn- Ess+Px..
+
+
+
+
+
+
+
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+## 1.3 Sg.Loc in -est (vowel shift)
+ Raised: Sg.Com, Pl.Obl
+ Lowered: ELSE  ẹ, ä
+ e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+ Palatalized: ELSE
+ Not Palatalized: Sg.Ill
+## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+ Strong grade: Sg.Nom, Ess, Par
+ Extra strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+## (1) Sg.Nom: vuẹiʹvv
+## (2) Pl.Nom: vuẹiʼv
+## (3) Sg.Ill: vuäivva
+## (4) Sg.Loc: vuẹiʹvest
+## (5) Sg.Com: vueiʹvin
+## (6) Ess: vuẹiʹvven
+## (7) Par: vuẹiʹvved
+## (8) Pl.Acc: vueiʹvid
+## (9) Der/Dimin.N.Sg.Nom: vuäivaž
+NumContLex="1.113"
+* Yaml: **N-vueivv**
+* There are several stem types
+ *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) vuäivv-
+ * :%^VOWRaise%^PALẸ%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) vuẹiʹv-
+ * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) vuäiʹvv- Ess+Px..
+
+
+
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+## 1.3 Sg.Loc in -est (vowel shift)
+ Raised: Sg.Com, Pl.Obl
+ Lowered: ELSE  ẹ, ä
+ e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+ Palatalized: ELSE
+ Not Palatalized: Sg.Ill
+## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+ Strong grade: Sg.Nom, Ess, Par
+ Extra strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+## (1) Sg.Nom: čuäʹrvv
+## (2) Pl.Nom: čuẹʼrv
+## (3) Sg.Ill: čuärvva
+## (4) Sg.Loc: čuẹʹrvest
+## (5) Sg.Com: čueʹrvin
+## (6) Ess: čuäʹrvven
+## (7) Par: čuäʹrvved
+## (8) Pl.Acc: čueʹrvid
+## (9) Der/Dimin.N.Sg.Nom: čuärvaž
+NumContLex="1.113"
+* Yaml: **N-chuaervv**
+* There are several stem types
+ *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) čuärvv-
+ * :%^PALẸ%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) čuẹʹrv-
+ * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) čuäʹrvv Ess+Px..
+
+
+
+
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
+## 1.3 Sg.Loc in -est (vowel shift)
+ Raised: ELSE
+ Lowered: Sg.Ill
+ e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+ Palatalized: ELSE
+ Not Palatalized: Sg.Ill
+## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Diphthong + Consonant Geminate variation)
+ Strong grade: Sg.Nom, Ess, Par
+ Extra strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+* Yaml: **N-jeaggj**
+* There are several stem types 
+ *  A-02_E-STEM_SG-ILL ;	      (3) jeägˈga
+ * :%^PAL A-02_E-STEM_SG-NOM ;        (1) jeäʹǧˈǧ
+ * :%^VOWRaise%^PALẸ%^PAL%^CCC2CC A-02_E-STEM_SG-ABE/ACC/GEN ;	  (2) jiẹʹǧǧ
+ * :%^VOWRaise%^PALẸ%^PAL%^CCC2CC A-02_PL-NOM ;	  (2) jiẹʹǧǧ
+ * :%^VOWRaise%^PALẸ%^PAL%^CCC2CC%>e A-02_SG-LOC ;   (4) jiẹʹǧǧest
+ * :%^VOWRaise%^PALE%^PAL%^CCC2CC A-02_SG-COM_IN ;   (5) jieʹǧǧin
+ * :%^VOWRaise%^PALE%^PAL%^CCC2CC A-02_E-STEM_PL-OBL ;   (5) jieʹǧǧin
+ * :%^PAL%>e A-02_ESS/PAR ; 	  (6) jeäʹǧˈǧen, (7) jeäʹǧˈǧed
+
+ * :%^CCC2CC A-02_E-STEM_N_KUYLAZH ; 	      			  (9) jeäggaž
+ *  E-STEM-PX-RETAIN-WITHOUT-PAL ;				  (10) jeägˈg-
+ * :%^VOWRaise%^PALẸ%^Allegro%^PAL%^CCC2CAllegro E-STEM-PX-ALLEGRO ;  (11) jiẹˈʹǧ-
+ * :%^PAL E-STEM-PX-STRENGTHEN-WITH-PAL ;			    (12) jeäʹǧˈǧ
+ * +Use/NGminip+Use/NG:%^VOWRaise%^PALẸ%^PAL%^CCC2CC E-STEM-PX-ALLEGRO ;   (2)
+
+
+
+ * LEXICON A-02_E-STEM_SG-NOM  (1)
+
+ * LEXICON A-02_E-STEM_SG-ABE/ACC/GEN  (2)
+e.g. +Sg+Acc+PxPl3
+e.g. +Use/NG+Sg+Loc+PxSg1
+
+
+ * LEXICON A-02_E-STEM_SG-ILL  (3)
+
+ * LEXICON A-02_E-STEM_N_KUYLAZH  (9)
+
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
+## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
+ e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+ Palatalized: ELSE
+ Not Palatalized: Sg.Ill
+## 1.3.2.1.2 Has Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
+ Strong grade: Sg.Nom, Ess, Par
+ Extra strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
+## FORMS
+* Yaml: **N-jeaerggj, N-keadgg**
+* There are several stem types 
+* jeäʹrǧǧ:jeäʹrǧǧ
+ *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) jeärgg-
+ * :%^PALẸ%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) jiẹʹrj-
+ * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) jeäʹrmm Ess+Px..
+
+
+
+
+
+
+
+
+
+
+WHAT IS THIS CLASS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ * +Der+Der/Dimin+A:%^V2VV A-02_MUORYZH-WITHOUT-PAL ;   paar-
+ * +Der+Der/Dimin+A:%^V2VV%^PAL A-02_MUORYZH-WITH-PAL ;   paaʹr-
+
+e.g.
+e.g. +Use/NG+Sg+Loc+PxSg3
+e.g. +Sg+Loc+PxSg1
+
+
+
+
+
+
+
+
+
+## CLASS 2 NOMINALS with high stem vowel and i-stems
+
+ * LEXICON A-01_JUURD  juurd:jurdd
+is for nouns with stem *i* + *-est* +Sg+Loc; all stem other than the +Sg+Nom are X3; the *i* does not occur in +Par 
+N_GEN2I-ILLAX3-LOCEX3-NOM1X1
+* Yaml: **N-juurd**
+* There are several stem types 
+* juurd:juurd
+
+ * LEXICON A_KOSSI  kõssi:kõ%^1VOW%{ʹØ%}ss
+ * LEXICON A-01_KOSSI  kõssi:kõ%^1VOW%{ʹØ%}ss
+
+
+
+
+
+ * LEXICON A-01_MAADD  maadd:madd
+is for nouns with stem *i* + *-est* +Sg+Loc; all stem other than the +Sg+Nom are X3; the *i* does not occur in +Par 
+* Yaml: **N-maadd**
+* There are several stem types 
+* maadd:maadd
+strong_geminate, long_vowel, no-palatalization, high_stem_vowel
+strong_geminate, short_vowel, no-palatalization, high_stem_vowel
+
+
+
+
+
+
+
+
+
+
+
+CLASS 2 NOMINALS with low stem vowel and u-stems
+## u-stems
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CLASS 2 NOMINALS with high stem vowel and â-stems
+
+
+CLASS 3 HIGH VOWEL, MONOPHTHONG, NO PALATALIZATION NOMINALS
+## m-stems
+
+
+
+
+
+ * LEXICON A-01_SOOUS  sõõus:sõ%^1VOWhss
+
+
+
+
+
+
+CLASS 3
+
+## n-stems
+
+
+
+
+
+
+
+
+
+CLASS 3
+
+
+
+
+
+
+
+CLASS 4 BISYLLABIC, HIGH VOWEL, MONOPHTHONG, NO PALATALIZATION
+IN PENULTIMATE Â:0
+
+
+ * LEXICON A-01_VOONYS   võõnâs:võnnâs
+like TOLL
+
+N_GEN2X3-NOM2X1
+* Yaml: **N-voonas**
+ * :%^RmVow VOONYS-STEM-PX ;  võnns-
+
+
+ * LEXICON A-01_KOODDYS  kõõddâs:kõddâs
+like N_PODD, N_PAPP, N_LUUBBYL
+* Yaml: **N-kooddas**
+ * :%^RmVow VOONYS-STEM-PX ;  võnns-
+
+
+
+ * LEXICON A-01_TAALKYS  taalkâs:talkkâs
+like PÕRTT
+* Yaml: **N-taalkas**
+ * :%^RmVow VOONYS-STEM-PX ;  võnns-
+
+
+ * LEXICON A-01_PIIUTYS  piiutâs:pi%^1VOWhttâs
+like N_VAHTT
+stemtype n-stem piiutâs:piiutâs
+* Yaml: **N-piiutas**
+ * :%^Pen%^V2VV%^Pen%^XYY2VY A-02_SG-NOM ;  piiutâs
+ * :%^RmVow VOONYS-STEM-PX ;  võnns-
+
+
+
+
+
+
+ *  LEXICON A-01_FIINYS  fiinâs:fijnnâs
+stemtype n-stem fiinâs:fiinâs
+
+* Yaml: **A-fiinas**
+ * :%^RmVow VOONYS-STEM-PX ;  võnns-
+
+CLASS 4 BISYLLABIC, HIGH VOWEL, DIPHTHONG, NO PALATALIZATION
+
+ *  LEXICON A-01_TUOVYS  tuõvâs:tuõvˈvâs
+* Yaml: **N-tuovas**
+ * :%^RmVow VOONYS-STEM-PX ;  võnns-
+
+
+
+ *  LEXICON A-01_VUOIVYS  vuõivâs:vuõivvâs
+
+* Yaml: **N-vuoivas**
+ *  :%^Pen%^XYY2XY A-02_SG-NOM ;	        (1) Sg_Nom: vuõivâs
+ *  :%^VC A-02_SG-ABE/ACC/GEN-PL-NOM ;   (2) Pl_Nom: vuõivvâz
+ *  :%^RmVow%>a A-02_SG-ILL ;   (3) Sg_Ill: vuõivvsa
+ *  :%^RmVow%>e A-02_SG-LOC ;    (4) Sg_Loc: vuõivvsest
+ *  :%^RmVow A-02_SG-COM_IN/PL-OBL ;     (5) Sg_Com: vuõivvsin
+ *  :%^RmVow%>e A-02_ESS/PAR ; 	  (6) Ess: vuõivvsen
+ * :%^RmVow VOONYS-STEM-PX ;  võnns-
+
+
+ *  LEXICON A-01_RUODDYS  ruõddâs:ruõdˈdâs
+N_GEN2X3-NOM2X1
+* Yaml: **N-tuoddar**
+ * :%^RmVow VOONYS-STEM-PX ;  võnns-
+
+
+
+
+
+
+
+
+
+
+
+
+
+CLASS 4 BISYLLABIC, LOW VOWEL, MONOPHTHONG, NO PALATALIZATION
+
+
+
+
+ * LEXICON A-01_KOAOADDAS  kååddas:kåddas
+N_GEN2X3-NOM2X1
+* Yaml: **N-kååddas**
+ * :%^RmVow VOONYS-STEM-PX ;  kådds-
+
+
+ * LEXICON A-01_KOALVAK  kåålvak:kåålvak
+stemtype n-stem kåålvak:kåålvak
+Palatalization loss in Sg.Ill
+* Yaml: **N-paattakj**
+ * :%^RmVow%>a A-02_SG-ILL ;  +Sg+Ill: kåålvka
+ * :%^RmVow%^PALK%>e A-02_SG-LOC ;  +Sg+Loc: kåålvǩest
+ * :%^RmVow%^PALK VOONYS-STEM-PX ;  såbbr-
+
+
+ * LEXICON A-01_AACCIKH  pååttaǩ:pååttaǩ
+stemtype n-stem pååttaǩ:pååttaǩ
+Palatalization loss in Sg.Ill
+* Yaml: **N-paattakj**
+ * :%^RmVow VOONYS-STEM-PX ;  såbbr-
+
+stemtype n-stem jânnam:jânnam
+N_GEN2X3-NOM2X1
+* Yaml: **N-jânnam**
+ * :%^RmVow VOONYS-STEM-PX ;  såbbr-
+
+
+
+ * LEXICON A-01_KOAOAVAS  kååvas:kåvvas
+* Yaml: **N-kaavas**
+ * :%^VC A-02_SG-ABE/ACC/GEN-PL-NOM ;  kåvvaz
+ * :%^RmVow VOONYS-STEM-PX ;  såbbr-
+
+ * LEXICON A-01_PAEAELKAS  päälkas:pälkkas
+* Yaml: **N-paalkas**
+ * :%^VC A-02_SG-ABE/ACC/GEN-PL-NOM ;  pälkkaz
+ * :%^RmVow VOONYS-STEM-PX ;  såbbr-
+
+ * LEXICON A-01_CEAEGGAS  ceäggas:ceägˈgas
+* Yaml: **N-ceaeggas**
+ * :%^VC A-02_SG-ABE/ACC/GEN-PL-NOM ;  ceägˈgaz
+ * :%^RmVow VOONYS-STEM-PX ;  såbbr-
+
+
+
+
+CLASS 4 BISYLLABIC, LOW VOWEL, DIPHTHONG, NO PALATALIZATION
+IN PENULTIMATE A:0
+
+
+
+## 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 252)
+## 2.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
+## 2.3.2 Sg.Ill in -a
+## 2.3.2.2 LACKS Gradation
+## 2.3.2.2.1 Penultimate stem vowel loss: (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Gen, Pl.Acc, Pl.Ill, Pl.Loc, Pl.Com, Pl.Abe)
+## 2.3.2.2.1.1 The Sg.Com vowel i appears before final n  
+* Yaml: **N-juaghghas**
+ * :%^VC  A-02_SG-ABE/ACC/GEN-PL-NOM ;  juâkˈkaz
+ * :%^RmVow VOONYS-STEM-PX ;  såbbr-
+
+
+CLASS 4 BISYLLABIC, LOW VOWEL, MONOPHTHONG, PALATALIZATION
+
+ * LEXICON A_MUYLAS  muâlas:muâlˈlas
+ * LEXICON A-01_MUYLAS  muâlas:muâlˈlas
+
+* Yaml: **N-muylas**
+ * :%^VC SG-ABE/ACC/GEN ;  muâlˈlaz
+ * :%^VC PL-NOM ;  muâlˈlaz
+ * :%^RmVow VOONYS-STEM-PX ;  såbbr-
+
+
+
+* Yaml: **kerres**
+ * :%^RmVow VOONYS-STEM-PX ;  võnns-
+
+
+CLASS 4 BISYLLABIC, LOW VOWEL, DIPHTHONG, PALATALIZATION
+IN PENULTIMATE E:0
+
+ * LEXICON A-01_KAAQLLES  kääʹlles:källes
+* Yaml: **N-kaeaelles**
+ * :%^RmVow VOONYS-STEM-PX ;  källs-
+
+ * LEXICON A-01_OAQVES  ååʹves:åvves
+* Yaml: **N-aaves**
+ * :%^RmVow VOONYS-STEM-PX ;  åvvs-
+
+ * LEXICON A-01_KAAQRBES  kääʹrbes:kärbbes
+* Yaml: **N-kaeaerbes**
+ * :%^RmVow VOONYS-STEM-PX ;  kärbbs-
+
+ * LEXICON A-01_PUAQRES  puäʹres:puärˈres
+* Yaml: **N-puaeres**
+ * :%^RmVow VOONYS-STEM-PX ;  puärˈrs-
+
+
+ * LEXICON A-01_PUUQTTES  puuʹttes:pu%^1VOWtt
+* Yaml: **A-puuqttes**
+ * :%^VOWLower%>s VOONYS-STEM-PX ;  potts-
+
+
+## -stems
+
+
+ * LEXICON A-01_CHUEQDHES  čueʹđes:čuâttes
+* Yaml: **N-chuedhes**
+ * :%^RmVow VOONYS-STEM-PX ;  võnns-
+
+
+ * LEXICON A-01_KHEEQLES  ǩeeʹles:ǩeâlˈles
+* Yaml: **N-chuedhes**
+ * :%^RmVow VOONYS-STEM-PX ;  võnns-
+
+
+
+
+ * LEXICON A-01_PUEAQRDES  pueʹrdes:puä%{ʹØ%}rddes
+* Yaml: **N-chuaeckes**
+ * :%^RmVow VOONYS-STEM-PX ;  võnns-
+
+
+
+
+* Yaml: **N-sett**
+* There are several stem types 
+
+
+
+## e-a-stems
+
+
+
+
+
+
+
+čâustõk+N+Sg+Gen:čâustõõǥǥ
+ * +Der+Der/Dimin+A:%{XC%}%^V2VV%^K2GG A-02_MUORYZH-WITHOUT-PAL ;   kuuzz-
+ * +Der+Der/Dimin+A:%{XC%}%^V2VV%^PAL%^K2GG A-02_MUORYZH-WITH-PAL ;   kuuʹzz-
+
+
+
+
+
+
+* Yaml: **N-radio**
+ *  A-02_SG-NOM ;	     (TSA-1) +Sg+Nom:
+ *  A-02_SG-ABE/ACC/GEN ;    (=TSA-2)
+ * :%^1VOW%^V2VVʹje A-02_SG-ILL ;	     (TSA-3) +Sg+Ill:
+ * +Use/NGminip+Use/NG: A-02_SG-ILL ;    (TSA-3) +Sg+Ill:
+ *  A-02_SG-LOC ;	     ()
+ *  A-02_SG-COM_IN ;	     (=TSA-4)
+ *  A-02_ESS/PAR ; 	     ()
+ *  A-02_PL-NOM ;	     (TSA-2) +Pl+Nom:
+ *  A-02_PL-OBL ;	     (TSA-4) +Pl+Gen: 
+
+
+
+
+
+ * LEXICON A-01_NALLSHEM  čââʹlmteʹm:čââʹlmtẹ%^1VOW%{ʹØ%}m
+292-295
+* Yaml: **A-chaalmtem**
+Ǩiõllkaʹlddi. 2017-04-04
+* *čââʹlmtẹ%^1VOW%{ʹØ%}m*
+* *čââʹlmtẹ00m*
+
+
+
+## Stem types from the grammar
+
+*These are still not fixed.*
+
+
+ * LEXICON A-01_PRSPRC-EEI  tuõđšteei:tueʹjjee
+tuõđšteei:tueʹjjee
+* Yaml: **N-tuodhshteei**
+
+ * LEXICON A-01_PRSPRC-EEQJJ  tuõđšteei:tueʹjjẹẹ
+tuõđšteei:tueʹjjẹẹ
+* Yaml: **N-tuodhshteeqjj**
+
+
+Class 5 according to Feist 152
+## k-stems
+
+stemtype 
+* Yaml: **N-chaustok**
+
+
+Class 6 according to Feist 153-154
+PRESENT A-02_PARTICIPLES
+
+ * LEXICON A-01_PRSPRC-NOGRADE-I  uuidi:uuidi
+* Yaml: **N-joovvi**
+* There are several stem types
+* cõggi:cõggi
+NumContLex="1.2"
+
+ * LEXICON A-01_PRSPRC-VCC-I  cõggi:cõggi
+* Yaml: **N-joovvi**
+* There are several stem types
+* cõggi:cõggi
+NumContLex="1.2"
+
+ * LEXICON A-01_PRSPRC-VQCC-I 
+* Yaml: **N-joovvi**
+* There are several stem types
+* cõggi:cõggi
+NumContLex="1.2"
+
+
+
+
+ * LEXICON A-01_PRSPRC-VVCC-I  jõõvvi:jõõvvi
+* Yaml: **N-joovvi**
+* There are several stem types
+* jõõvvi:jõõvvi
+NumContLex="1.2"
+ * : A-02_SG-NOM ;	       		 (1) jõõvvi
+ * : A-02_SG-ABE/ACC/GEN ;		 (2) jõõvvi
+ * :%^I2J%>a A-02_SG-ILL ;		 jõõvvja
+ * :%^I2J%>e A-02_SG-LOC ;		 jõõvvjest
+ * :%^I2J A-02_SG-COM_IN ;		 jõõvvjin
+ * :%^I2J%>e A-02_ESS/PAR ;  		 jõõvvjen
+ * :%^CC2C A-02_PL-NOM ;		 jõõvi
+ * :%^I2J A-02_PL-OBL ;	 jõõvvji
+ * +Use/NGminip+Use/NG:%^CC2C%^I2J A-02_PL-OBL ;		 jõõvji
+ * +Use/NGminip+Use/NG: A-02_PL-NOM ;		 jõõvvi
+
+ * LEXICON A-01_PRSPRC-VVQCC-I  jooʹtti:jooʹtti
+* Yaml: **N-joovvi**
+* There are several stem types
+* jõõvvi:jõõvvi
+NumContLex="1.2"
+ * : A-02_SG-NOM ;	       		 (1) jõõvvi
+ * : A-02_SG-ABE/ACC/GEN ;		 (2) jõõvvi
+ * :%^I2J%>a A-02_SG-ILL ;		 jõõvvja
+ * :%^I2J%>e A-02_SG-LOC ;		 jõõvvjest
+ * :%^I2J A-02_SG-COM_IN ;		 jõõvvjin
+ * :%^I2J%>e A-02_ESS/PAR ;  		 jõõvvjen
+ * :%^CC2C A-02_PL-NOM ;		 jõõvi
+ * :%^I2J A-02_PL-OBL ;	 jõõvvji
+ * +Use/NGminip+Use/NG:%^CC2C%^I2J A-02_PL-OBL ;		 jõõvji
+ * +Use/NGminip+Use/NG: A-02_PL-NOM ;		 jõõvvi
+
+ * LEXICON A-01_PRSPRC-VVKK-I  lookki:lookki
+* Yaml: **lookk**
+* There are several stem types
+* lookki:lookki
+NumContLex="1.2"
+
+ * LEXICON A-01_PRSPRC-VVQKK-I  
+* Yaml: **lookk**
+* There are several stem types
+* lookki:lookki
+NumContLex="1.2"
+
+
+ * LEXICON A-01_PRSPRC-VWKK-I  ǩiõssi:ǩiõssi
+* Yaml: **N-joovvi**
+* There are several stem types
+* sirddi:sirddi
+NumContLex="1.2"
+
+ * LEXICON A-01_PRSPRC-VWQKK-I 
+* Yaml: **N-joovvi**
+* There are several stem types
+* sirddi:sirddi
+NumContLex="1.2"
+
+
+ * LEXICON A-01_PRSPRC-VWCC-I  vuõlli:vuõlli
+* Yaml: **N-vuolli**
+* There are several stem types
+* vuõlli:vuõlli
+NumContLex="1.2"
+
+ * LEXICON A-01_PRSPRC-VWQCC-I  
+* Yaml: **N-vuolli**
+* There are several stem types
+* vuõlli:vuõlli
+NumContLex="1.2"
+
+
+ * LEXICON A-01_PRSPRC-VWCCC-I  kuõʒʒi:kuõʒˈʒi
+* Yaml: **N-vuolli**
+* There are several stem types
+* vuõlli:vuõlli
+NumContLex="1.2"
+
+ * LEXICON A-01_PRSPRC-VWQCCC-I  kuõddi:kuõʹdˈdi
+* Yaml: **N-vuolli**
+* There are several stem types
+* vuõlli:vuõlli
+NumContLex="1.2"
+
+
+
+ * LEXICON A-01_PRSPRC-VWXYY-I  suõskki:suõskki
+* Yaml: **suoskki**
+
+ * LEXICON A-01_PRSPRC-VWQXYY-I  
+* Yaml: **suoskki**
+
+
+
+ * LEXICON A-01_PRSPRC-VCC-AI  kåččai:kåččai
+* Yaml: **kachchai**
+* There are several stem types
+NumContLex="
+ * : A-02_SG-NOM ; 
+ * : A-02_SG-ABE/ACC/GEN ; 
+ * :%^RmVow%^I2J%>a A-02_SG-ILL ; 
+ * :%^RmVow%^I2J%>e A-02_SG-LOC ; 
+ * :%^RmVow%^V2VV A-02_SG-COM_IN ; 
+ * :%^I2J%>e A-02_ESS/PAR ; 
+ * :%^Pen%^V2VV A-02_PL-NOM ; 
+ * :%^RmVow%^I2J A-02_PL-OBL ; 
+ * +Use/NGminip+Use/NG: A-02_PL-NOM ; 
+ * +Use/NGminip+Use/NG:%^Pen%^V2VV%^RmVow%^I2J A-02_PL-OBL ; 
+
+ * LEXICON A-01_PRSPRC-VVCC-AI  peellai:peellai
+* Yaml: **paassai**
+* There are several stem types
+NumContLex="
+ * : A-02_SG-NOM ;  Sg.Nom.Indef: peellai 
+ * : A-02_SG-ABE/ACC/GEN ; 
+ * :%^RmVow%^I2J%>a A-02_SG-ILL ;  Sg.Ill.Indef: peellja
+ * :%^RmVow%^I2J%>e A-02_SG-LOC ; 
+ * :%^RmVow%^V2VV A-02_SG-COM_IN ; 
+ * :%^I2J%>e A-02_ESS/PAR ; 
+ * :%^Pen%^CC2C A-02_PL-NOM ;  Pl.Nom.Indef: peelai
+ * :%^RmVow%^I2J A-02_PL-OBL ; 
+ * +Use/NGminip+Use/NG: A-02_PL-NOM ; 
+ * +Use/NGminip+Use/NG:%^Pen%^CC2C%^RmVow%^I2J A-02_PL-OBL ; 
+
+
+ * LEXICON A-01_PRSPRC-VVKK-AI  pååssai:pååssai
+* Yaml: **paassai**
+* There are several stem types
+NumContLex="
+ * : A-02_SG-NOM ;  Sg.Nom.Indef: pååssai 
+ * : A-02_SG-ABE/ACC/GEN ; 
+ * :%^RmVow%^I2J%>a A-02_SG-ILL ;  Sg.Ill.Indef: pååssja
+ * :%^RmVow%^I2J%>e A-02_SG-LOC ; 
+ * :%^RmVow%^I2J A-02_SG-COM_IN ; 
+ * :%^I2J%>e A-02_ESS/PAR ; 
+ * :%^Pen%^KK2GG A-02_PL-NOM ;  Pl.Nom.Indef: pååzzai
+ * :%^RmVow%^I2J A-02_PL-OBL ; 
+ * +Use/NGminip+Use/NG: A-02_PL-NOM ; 
+ * +Use/NGminip+Use/NG:%^Pen%^KK2GG%^RmVow%^I2J A-02_PL-OBL ; 
+
+
+ * LEXICON A-01_PRSPRC-VXYY-AI  särnnai:särnnai
+* Yaml: **sarnnai**
+* There are several stem types
+* särnnai:särnnai
+NumContLex="
+
+
+ * LEXICON A-01_PRSPRC-VWCC-AI  vuejjai:vuejjai
+* Yaml: **N-vuejjai**
+* There are several stem types
+* vuejjai:vuejjai
+NumContLex="
+
+
+ * LEXICON A-01_PRSPRC-VWKK-AI  reäkkai:reäkkai
+* Yaml: **N-reakkai**
+* There are several stem types
+* reäkkai:reäkkai
+NumContLex="
+
+
+ * LEXICON A-01_PRSPRC-VWCCC-AI  vuäggai:vuägˈgai
+* Yaml: **N-reakkai**
+* There are several stem types
+* vuägˈgai:vuägˈgai
+NumContLex="
+
+
+ * LEXICON A-01_PRSPRC-VWXYY-AI  meälttai:meälttai
+* Yaml: **sarnnai**
+* There are several stem types
+* meälttai:meälttai
+NumContLex="
+
+
+ * LEXICON A-01_ZHEEVAI  žeevai:žẹẹvai
+* Yaml: **zheevai**
+NumContLex="
+
+participles in -I from verbs in ʹ-ed
+
+ * LEXICON A-01_PRSPRC-VXYY-I  äjjnõʹstti:äjjnõʹstti
+* Yaml: **lookk**
+* There are several stem types
+* äjjnõʹstti:äjjnõʹstti
+NumContLex="1.2"
+* sirddi:sirddi
+NumContLex="1.2"
+
+ * LEXICON A-01_PRSPRC-VQXYY-I  äjjnõʹstti:äjjnõʹstti
+* Yaml: **lookk**
+* There are several stem types
+* äjjnõʹstti:äjjnõʹstti
+NumContLex="1.2"
+* sirddi:sirddi
+NumContLex="1.2"
+
+ * LEXICON A-01_PRSPRC-VHYY-I  lahtti:la%^1VOWhtti
+* Yaml: **lookk**
+* There are several stem types
+* äjjnõʹstti:äjjnõʹstti
+NumContLex="1.2"
+* sirddi:sirddi
+NumContLex="1.2"
+
+ * LEXICON A-01_PRSPRC-VQHYY-I  aʹhtti:a%^1VOWhtti
+* Yaml: **lookk**
+* There are several stem types
+* äjjnõʹstti:äjjnõʹstti
+NumContLex="1.2"
+* sirddi:sirddi
+NumContLex="1.2"
+
+ * LEXICON A-01_PRSPRC-VWHYY-AI  veâhssai:veâhssai
+* Yaml: **lookk**
+* There are several stem types
+* äjjnõʹstti:äjjnõʹstti
+NumContLex="1.2"
+* sirddi:sirddi
+NumContLex="1.2"
+
+
+* Yaml: **N-suvddi**
+* There are several stem types
+NumContLex="1.2"
+
+
+ * LEXICON A-01_LIEQDHDHDHI  lieʹđđi:lieʹđˈđi
+* Yaml: **N-liedhdhdhi**
+NumContLex="1.2"
+
+
+* Yaml: **lookk**
+* There are several stem types
+* vueʹstti:vueʹstti
+NumContLex="1.2"
+
+ * LEXICON A-01_PRSPRC-VWHCC-I  viõhssi:viõhssi
+
+ * LEXICON A-01_VUOIQNNI  vuõiʹnni:vuõiʹnni
+* Yaml: **lookk**
+* There are several stem types
+* vuõiʹnni:vuõiʹnni
+NumContLex="1.2"
+
+Class 7 according to Feist 154-155
+## i-stems
+ * LEXICON A-01_HOQPPI  hõʹppi:hõʹppi
+* Yaml: **hoppi**
+* There are several stem types
+* hõʹppi:hõʹppi
+
+
+
+
+
+
+
+
+
+
+
+ * LEXICON A-01_KAAMMI  kaammi:kaamm
+* Yaml: **piannai**
+* There are several stem types
+kaammi
+käʹmme
+kaammjen
+käʹmmi
+
+
+
+
+Class 8 according to Feist 155-157
+
+
+Class 9 according to Feist 158
+
+* Yaml: **A-saemmlazh**
+ânnʼjõž:ânnʼj
+
+* Yaml: **A-saemmlazh**
+säʹmmlaž:säʹmmlaž
+
+
+Diminutive derivations
+
+
+(2009: 306)
+* muõrâž:muõr
+* Yaml: **N-muorazh**
+
+ * LEXICON A-02_MUORYZH-WITHOUT-PAL  paapp-
+ * :âž A-02_SG-NOM ;		 paappâž
+ * :že A-02_SG-ILL ;	 paappže
+ * :že A-02_ESS/PAR ;	 	 paappžen
+
+
+ * LEXICON A-02_MUORYZH-WITH-PAL    paaʹpp-
+ * :%>e A-02_SG-ABE/ACC/GEN ;	 paaʹppe
+ * :%>e A-02_SG-LOC ;	 paaʹppest
+ * :%>e A-02_SG-COM_IN ;	     paaʹppein
+ * +Use/NGminip+Use/NG: A-02_SG-COM_IN ;	     paaʹppin
+ * :%>e A-02_PL-NOM ;	 paaʹppe
+ * :%>e A-02_PL-OBL ;	     paaʹppei Merja differentiates from regular pl
+ * +Use/NGminip+Use/NG: A-02_PL-OBL ;	     paaʹppi
+
+
+* Yaml: **N-muorazh**
+
+ * : HatY-STEM-PX-WEAKEN_LARGO ;  säʹmmlõõžž- Sg_Loc_PxSg1
+ * :%^PAL HatY-STEM-PX-WEAKEN_LARGO ;  säʹmmlõõʹžž- Sg_Loc_PxSg1
+
+
+ * LEXICON A-01_PEESSAZH  piissuž:pẹẹss
+
+ * LEXICON A_PIISSUZH  piissuž:piiss
+
+(2009: 310)
+* piissuž:piiss
+* Yaml: **N-piissuzh**
+
+
+
+* kuâlaž:kuâl
+* Yaml: **N-kualazh**
+kuâla, kuâlže
+ * : LOAOADDAZH-STEM-PX-ALLEGRO ;  This should go to each stem type ERROR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Class 11 according to Feist 162
+
+
+
+Class 12 Feist 163
+
+
+### Noun phrase heads
+### Pl
+
+
+
+
+
+
+
+
+
+### Number and case tags
+
+Used with words like juurd: jurddǥatta
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_gem
+Is for nouns with *-ast* Loc
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+## 1.2 Sg.Loc in -ast (vowel shift)
+ Raised: Sg.Ill
+ Lowered: ELSE
+ a-stems (Sg.Loc, Ess, Par).
+## 1.2.2 Sg.Ill vowel	-u
+## 1.2.2.2 Lacks Palatalization
+## 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
+## 1.2.2.2.1.1 Has Orthographic Gradation
+## 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
+ Strong grade: Sg.Nom, Ess, Par
+ Extra strong grade: Sg.Ill
+ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+uâ:uõ, eä:iâ
+## FORMS
+N_A-URaise3-32
+* Yaml: **N-vuarr**
+grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
+Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
+
+grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
+Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
+stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
+
+grade: strengthened (short_vowel, long_cluster), vowel: raised
+Sg_Ill
+
+grade: strengthened (short_vowel, long_cluster), vowel: neutral (low)
+ * : A-STEM-PX-STRENGTHEN ;            (5) vuârr
+Ess_Px..., Sg_Ill..., N»A
+
+grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
+
+grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
+ * +Der+Der/Dimin+A:%^CC2C%> A-01_PEESSAZH ;   (9) Dim.N.Sg.Nom: vuâraž
+
+grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
+
+
+
+
+
+
+## Adjectives -- to be moved
 
 
 
@@ -13332,583 +12765,6 @@ VSUF-I-POTKOND_YD, VSUF-I-POTKOND_AD and VSUF-POTENTIAL_ED come here
 
 
 
-# Verb roots
-
-Here are the verb types so far:
-
-*   5 JURDDED
-*  38 KALMMED
-*   3 KAMRDED
-*   1 LAADDAD
-*   1 LEED
-*  23 MAINSTED
-*   4 SEDGGJED
-*   8 SILTTEED
-*   5 SOLLEED
-*  18 TEEMEED
-*  53 TEEVVAD
-*  25 TIETTED
-*  82 VIQQAD
-*   7 VOLLJED
-*   4 VOOIDAD
-*   1 VUEJTED
-
-
-
-
-
-
-
-
-
-
-# Skolt Sámi disambiguator
-Note: This documentation file is still work-in-progress, and should not yet be used. Read the source file instead.
-
-## Delimiters 
-
-
- DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>"; #
-
-
-Tags and sets #
-
-We declare BOS, EOS and all the tags from the fst.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Disambiguation 
-
-
-
-
-
-## Cycle 0, rules without context
-
-
-* __R_Num__ removes Num when Neg.
-
-* __R_ACR__ removes ACR when CC.
-
-
-
-
-
-
-
-
-
-### Possessive suffix
-Probably exists only for Refl and for kinship terms
-In Skolt Sami Possessive suffixes ARE USED Jaska 2020-11-08
-
-* __PrfPrc_Not_PxSg1__ removes PxSg1 if PrfPrc
-
-* **NotPlPx1** removes PxPl1 if -1 Gen 0 Ess
-
-
-
-###  Pronouns and nouns
-
-### Postpostions
-
-* **GenWhenFollowedByGenPo**
-
-### Short Pronouns
-No rules.
-
-### Proper nouns
-
-
-
-
-
-
-
-## Cycle 1
-
-### Numerals
-
-* **r1082** Selects (Num Nom)
-
-* **NumIfParag**
-* **NumIfParag**
-* **NumIfParag**
-
-
-
-
-
-### Trivialia
-
-* __prop_daate__ Prop if 0 Pers
-
-
-* **DemIll** 
-
-* **DemCom** 
-
-* **DemAttr** 
-
-* **AttrNotNom** 
-
-* **unifDem** 
-
-
-
-
-
-
-
-
-
-## Nouns
-
-
-###  Nominative plural
-
-
-
-
-
-###  Genitive
-
-* **PGenN** selects Gen when (Pron Pers) to the left and N to the right *mu sámevuođa iđuid*
-
-* **CoGen1** (quite strict) selects the first of coordinated genitives *riikkaid, čearuid ja boazoorohagaid ovttasbarggu*
-
-
-
-
-## Verbs
-
-* **IsItConNeg** 
-
-
-* **PrtInNeg** 
-
-* **PrsInNeg** 
-
-
-
-
-### Imperative
-
-There can be Interj, VOC, 
-
-
-### Genitive modifier
-
-* **genmod** 
-
-### Subject
-
-
-
-
-
-
-
-
-
-
-## M A P P I N G
-
-
-### CC- and CS-Mapping
-CASES
-
-* **compcs** 
-
-* **cnp** maps @CNP for gon, goh,... 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### PrfPrc
-
-### Person
-
-
-
-
-
-
-
-
-
-
-
-### Nomen
-
-
-
-
-
-
-
-
-
-
-
-### Verb or Noun
-
-
-
-
-
-### Dem
-No rules
-
-### CC and CS or Adv
-
-
-
-
-
-
-
-
-
-
-### Adj or Adv
-
-
-### grammatisk ord eller N eller A
-
-
-
-
-
-
-
-### N or Adj
-
-
-### N or V
-
-
-
-
-
-
-
-
-
-### Ger or Der/NomAct
-
-
-### Adj or Indef
-
-
-### Num
-
-
-
-
-### Rel or Interr
-
-
-### Interj
-no rule
-
-### Po or Pr
-
-* **PoGena** Po not Pr
-
-
-
-### Adv or Po/Pr
-
-
-
-
-
-### Com
-
-
-
-### Accusative or illative
-
-
-
-
-
-### Accusative or Genitive
-
-### Indef or Adv
-
-### special lemmas
-
-no rules
-
-
-### Verb person vs. Inf -- moved here in order to have the pronouns disambiguated first.
-
-
-
-
-
-
-## Proper nouns
-
-Rule set taken from sme
-
-
-
-Substituting Prop tags 
-
-
-### Prop or not
-
-* **Prop** 
-Capitalised nouns in the middle of a sentence are names - (not always).
-
-* **PropSg** goes for Sg not Pl reading of Prop (Marit not Mari Pl)
-
-
-
-
-
-
-
-
-### Removing proper nouns that are lookalikes
-
-
-
-
-
-
-### Particular proper nouns
-
-Todo: sms-ify.
-
-
-
-
-
-
-
-
-
-# Mapping rules
-
-## SAFE RULES
-
-* **InfSubj**
-
-
-
-
-## subject rules and spred rules
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Removing Err/Orth
-
-Denne regelen fjerner Err/Orth når det er samme lemma, sjøl om morfologien er forskjellig.
-
-
-
-* **errsub** removes err/orth forms
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Skolt Sámi TWOLC file
 
 # Introduction
@@ -15855,5 +14711,2036 @@ tuâjj+N+Cmp/SgNom+Cmp#joukk+N+Sg+Nom:  **team/työryhmä**
 sääʹmm+N+Cmp/SgGen+Cmp#musikk+N+Sg+Nom: **Skolt Sámi music/kolttamusiikki**
 sää0mm%PAL%^CC2C%{-Ø%}#musikk
 sääʹm000%-#musikk
+
+
+
+
+# Skolt Sámi morphological analyser 
+
+This file contains all definitions of symbols written by 
+more than one character, and it contains the initial **Root** lexicon. 
+
+ # Definitions for **Multichar_Symbols** 
+ * **+NoTransl** No translation available 
+
+## Grammatical tags 
+
+### Tags for POS 
+ * **+A** = Adjective 
+ * **+Adp** = Adposition, i.e. Post- and Prepostion 
+ * **+Adv** = Adverb 
+ * **+CC** = Conjunction 
+ * **+CS** = Subjunction 
+ * **+Det** = Determiner 
+ * **+Interj** = Interjection 
+ * **+N** = Noun 
+ * **+Num** = Numeral 
+ * **+Po** = Postposition 
+ * **+Pr** = Preposition 
+ * **+Pron** = Pronoun 
+ * **+Pcle** = Particle 
+ * **+V** = Verb 
+ * **+Aux** = Auxiliary 
+
+Pre-derivational POS tags for CG processing 
+ * **+Ex/N** = Noun stem before derivation 
+ * **+Ex/A** = Adjective stem before derivation 
+ * **+Ex/V** = Verb stem before derivation 
+
+
+### Tags for sub-POS 
+
+ * **+Prop** - Proper noun 
+ * **+Pers** - Personal Pronoun 
+ * **+Dem** - Demonstrative Pronoun 
+ * **+Interr** - Interrogative Pronoun 
+ * **+Refl** - Reflexive Pronoun 
+ * **+Recipr** - Reciprocal Pronoun 
+ * **+Rel** - Relative Pronoun 
+ * **+Indef** - Indefinitive Pronoun 
+ * **+Coll** - Collective numerals 
+ * **+Arab** - Arabic numeral 
+ * **+Rom** - Roman numeral 
+ * **+Pass** - hallat/haddat not in use 
+ * **+Qnt** - SHOULD THIS be here or a Sem/Qnt 
+ * **+Pred** 
+ * **+Attr** Attributive form 
+ * **+Distr** Distributive 
+ * **+Temp** 
+
+### Types of adverbs 
+ * **+Parenthetic** 
+ * **+AssocColl** 
+ * **+Guess** 
+
+### Number 
+ * **+Sg** Singular = õõutilååkk 
+ * **+Du** Dual = kuõiʹtilååkk 
+ * **+Pl** Plural = määŋgailååkk 
+
+### Case 
+ * **+Nom** Nominative = nominativ 
+ * **+Gen** Genitive 
+ * **+Acc** Accusative 
+ * **+Ill** Illative 
+ * **+Loc** Locative 
+ * **+Com** Comitative 
+ * **+Ess** Essive 
+ * **+Par** Partative 
+ * **+Prl** Prolative 
+ * **+Abe** Abessive 
+ * **+Lat** Lative lääinas, säämas, toimmpââjas 
+
+symbols ? 
+ * **+Ine** 
+ * **+Ela** 
+ * **+ACRO** 
+
+### Possessive suffix 
+ * **+PxSg1** 
+ * **+PxSg2** 
+ * **+PxSg3** 
+ * **+PxPl1** 
+ * **+PxPl2** 
+ * **+PxPl3** 
+
+### Adjective declension 
+ * **+Der/Comp** comparative as in other Sami languages, depricate +Comp 
+ * **+Der/Superl** superlative previously Der/mos Der/umus Der/ummus, depricate +Superl 
+ * **+Ord** - 
+ * **+GenAttr** Genitive attribute used as adjective? 
+
+### Verb forms      Veʹrbbååʹbleʹǩ 
+ * **+Actor** 
+ * **+Actio** 
+ * **+ActEss** -men  
+ * **+NomAg** CHECK ME 
+ * **+Kin** Kin term This may need to be removed, let Sem/Hum-kin suffice 
+ * **+Ind** Indicative mood 
+ * **+Prs** Present 
+ * **+Prt** Preterite 
+ * **+Pot** Potential mood 
+ * **+Cond** Conditional mood 
+ * **+Imprt** Imperative mood 
+ * **+ImprtII** 
+ * **+Sup** 
+ * **+Inf** 
+ * **+Ger** gerund +Ess, +Loc +Instr 
+ * **+Instr** -eeʹl 
+ * **+ConNeg** 
+ * **+ConNegII** 
+ * **+Neg** 
+ * **+PrsPrc** 
+ * **+PrfPrc** 
+ * **+VGen** 
+ * **+VAbess** 
+
+
+###Valence
+ * **+IV** Intransitive 
+ * **+TV** Transitive 
+ * **+Act** Active voice 
+ * **+Pass** Passive voice 
+
+
+### Person-number 
+ * **+Sg1** first person singular 
+ * **+Sg2** second person singular 
+ * **+Sg3** third person singular 
+ * **+Du1** first person dual 
+ * **+Du2** second person dual 
+ * **+Du3** third person dual 
+ * **+Pl1** first person plural 
+ * **+Pl2** second person plural 
+ * **+Pl3** third  person plural 
+ * **+Sg4** impersonal fourth person, in MT a Pl4 might be needed 
+ * **+13** used in combination with +Imp+13+ConNeg 
+ * **+2** used in combination with +Imp+2+ConNeg 
+
+
+### Homonymy 
+ * **+Hom1** 
+ * **+Hom2** 
+ * **+Hom3** 
+ * **+Hom4** 
+
+
+### Derivation 
+
+All non-positional derivations should be preceded by this tag, to make it possible 
+to target regular expressions at all derivations in a language-independent way: 
+just specify +Der|+Der1 .. +Der5 and you are set. 
+
+ * **+Der** 
+ * **+Der/Car**  N»A -tem, -teʹmes 
+ * **+Der/Dimin** diminutive derivation N»N was Der/Dim, 
+ * **+Der/st**  V»V was diminutive subitive Der/sted, Der/âʹstted 
+ * **+Der/ad** ordinals to nouns 
+ * **+Der/i**  N»A luõss >> luõʹssi, čääʹcc >> čäccai 'rich in' Sg.Ill 
+ * **+Der/PALi** rupp » ruʹppi ATTR ruʹppes DEPRICATE 
+ * **+Der/teqm** carative derivation N»A, V»A -teʹm 
+ * **+Der/t** carative derivation N»A for subsequent derivation 
+Noun derivation 
+ * **+Der/musj** deverbal derivation V»N architype mõš and mmuš was Der/MOsh 
+ * **+Der/vuota** A»N -vuõtt 
+ * **+Der/lasj**  
+ * **+Der/neqkh** N»N resident of place 
+ * **+Der1**  
+ * **+Der2** 
+ * **+Der3** 
+ * **+Der4** 
+ * **+Der5** 
+
+Verb derivation 
+ * **+Der/InchL** incoative V»V -škueʹtted 
+ * **+Der/Caus** causative V»V, was Der/ted and Der/âʹtted 
+ * **+Der/jed** inchoative V»V also middle 
+ * **+Der/oottyd** reflexive reciprocal V»V -õõttâd 
+ * **+Der/oovvyd**  V»V kulsted: kulstõõvvâd 
+ * **+Der/oollyd**  V»V -õõllâd 
+ * **+Der/stoollyd**  V»V -stõõllâd 
+ * **+Der/stoovvyd**  V»V -stõõvvâd 
+ * **+Der/toovvyd** privative + translative N»V --tõõvvâd 
+ * **+Der/ched** frequentative V»V for ʹCCed verbs -čed 
+ * **+Der/NomAg** agent V»N 
+ * **+Der/NomAct** action V»N +Der/m 
+
+
+## Tags for originating language 
+
+The following tags are used to guide conversion to IPA: loan words 
+and foreign names are usually pronounced (approximately) as in the 
+originating (majority) language. Instead of trying to identify the 
+correct pronunciation based on phonotactics (orthotactics actually), 
+we tag all words that can't be correctly transcribed using the SME 
+transcriber with source language codes. Once tagged, it is possible 
+to split the lexical transducer in smaller ones according to langu- 
+age, and apply different IPA conversion to each of them. 
+
+The principle of tagging is that we only tag to the extent needed, 
+and following a priority: 
+1. any untagged word is pronounced with SME orthographic conventions 
+1. NNO and NOB have identical pronunciation, NNO is only used if 
+  different in spelling from NOB 
+1. SWE has mostly the same pronunciation as NOB, and is only used 
+  if different in spelling from NOB 
+1. Occasionally even SME (the default) may be tagged, to block other 
+  languages from being specified, mainly during semi-automatic 
+  language tagging sessions 
+
+All in all, we want to get as much correctly transcribed to IPA 
+with as little work as possible. On the other hand, if more words 
+are tagged than strictly needed, this should pose no problem as 
+long as the IPA conversion is correct - at least some words will 
+get the same pronunciation whether read as SME or NOB/NNO/SWE. 
+
+ * **+OLang/SME** - North Sámi 
+ * **+OLang/SMA** - South Sámi 
+ * **+OLang/SMN** - Inari Sámi 
+ * **+OLang/SMS** - Skolt Sámi 
+ * **+OLang/RUS** - Russian 
+ * **+OLang/FIN** - Finnish 
+ * **+OLang/SWE** - Swedish 
+ * **+OLang/NOB** - Norw. bokmål 
+ * **+OLang/NNO** - Norw. nynorsk 
+ * **+OLang/ENG** - English 
+ * **+OLang/UND** - Undefined 
+
+
+### Government tags 
+ * **+%<acc%>** 
+ * **+%<ess%>** 
+ * **+%<gen%>** 
+ * **+%<ill%>** 
+ * **+%<loc%>** this will be added to the preposition tagging **mâŋŋa jââđast** 
+ * **+%<nom%>** 
+
+
+### Semantic tags 
+
+ * **+Sem/Act** = Activity 
+ * **+Sem/Adr** = Webadr 
+ * **+Sem/Amount** = Amount 
+ * **+Sem/Ani** Animate       (names) 
+ * **+Sem/Ani-fish** Animate    
+ * **+Sem/Aniprod** = Animal Product 
+ * **+Sem/Ant** Anthroponym  (names) 
+ * **+Sem/Body** = Bodypart 
+ * **+Sem/Body-abstr** = siellu, vuoig?a, jierbmi 
+ * **+Sem/Build** = Building 
+ * **+Sem/Build-part** = Part of Bulding, like the closet 
+ * **+Sem/Cat** = Category 
+ * **+Sem/Clth** = Clothes 
+ * **+Sem/Clth-jewl** = Jewelery 
+ * **+Sem/Clth-part** = part of clothes, boallu, sávdnji... 
+ * **+Sem/Constellation**  
+ * **+Sem/Ctain** = Container 
+ * **+Sem/Ctain-abstr** = Abstract container like bank account 
+ * **+Sem/Ctain-clth** = Soft container, like a rucksack 
+ * **+Sem/Curr** = Currency like dollár, Not Money 
+ * **+Sem/Dance** = Dance 
+ * **+Sem/Dir** = Direction like GPS-kursa 
+ * **+Sem/Domain** = Domain like politics, reindeerherding (a system of actions) 
+ * **+Sem/Drink** = Drink 
+ * **+Sem/Dummytag** = Dummytag 
+ * **+Sem/Edu** = Educational event 
+ * **+Sem/Event** = Event 
+ * **+Sem/Feat** = Feature, like Árvu 
+ * **+Sem/Feat-measr** = Psychological feauture 
+ * **+Sem/Feat-phys** = Physiological feature, ivdni, fárda 
+ * **+Sem/Feat-psych** = Psychological feauture 
+ * **+Sem/Fem** = Female name 
+ * **+Sem/Food** = Food 
+ * **+Sem/Food-med** = Medicine 
+ * **+Sem/Furn** = Furniture 
+ * **+Sem/Game** = Game 
+ * **+Sem/Geom** = Geometrical object 
+ * **+Sem/Group** = Animal or Human Group 
+ * **+Sem/Holiday** 
+ * **+Sem/Hum** = Human 
+ * **+Sem/Hum-abstr** = Human abstract 
+ * **+Sem/Ideol** = Ideology 
+ * **+Sem/Kin** for deprication to Sem/Hum-kin 
+ * **+Sem/Hum-kin** = 
+ * **+Sem/Lang** = Language 
+ * **+Sem/Mal** = Male name 
+ * **+Sem/Manner** 
+ * **+Sem/Mat** = Material for producing things 
+ * **+Sem/Measr** = Measure 
+ * **+Sem/Money** = Has to do with money, like wages, not Curr(ency) 
+ * **+Sem/Obj**              (names) 
+ * **+Sem/Obj-clo** = Cloth 
+ * **+Sem/Obj-cogn** = Cloth 
+ * **+Sem/Obj-el** = (Electrical) machine or apparatus 
+ * **+Sem/Obj-ling** = Object with something written on it 
+ * **+Sem/Obj-rope** = flexible ropelike object 
+ * **+Sem/Obj-surfc** = Surface object 
+ * **+Sem/Org** Organization (names) 
+ * **+Sem/Part** = Feature, oassi, bealli 
+ * **+Sem/Perc-cogn** = Cloth 
+ * **+Sem/Perc-emo** = Emotional perception 
+ * **+Sem/Perc-phys** = Physical perception 
+ * **+Sem/Perc-psych** = Psychical perception 
+ * **+Sem/Plant** = Plant 
+ * **+Sem/Plant-part** = Plant part 
+ * **+Sem/Plc** Place name   (names) 
+ * **+Sem/Plc-abstr** = Abstract place 
+ * **+Sem/Plc-elevate** = Place 
+ * **+Sem/Plc-line** = Place 
+ * **+Sem/Plc-water** = Place 
+ * **+Sem/Pos** = Position (as in social position job) 
+ * **+Sem/Process** = Process 
+ * **+Sem/Prod** = Product 
+ * **+Sem/Prod-audio** = Audio product 
+ * **+Sem/Prod-cogn** = Cognition product 
+ * **+Sem/Prod-ling** = Linguistic product 
+ * **+Sem/Prod-vis** = Visual product 
+ * **+Sem/Rel** = Relation 
+ * **+Sem/Route** = Route 
+ * **+Sem/Rule** = Rule or convention 
+ * **+Sem/Semcon** = Semantic concept 
+ * **+Sem/Sign** = Sign (e.g. numbers, punctuation) 
+ * **+Sem/Sport** = Sport 
+ * **+Sem/State** = 
+ * **+Sem/State-sick** = Illness 
+ * **+Sem/Substnc** = Substance, like Air and Water 
+ * **+Sem/Sur** Surname       (names) 
+ * **+Sem/Symbol** = Symbol 
+ * **+Sem/Time** = Time 
+ * **+Sem/Tool** = Prototypical tool for repairing things 
+ * **+Sem/Tool-catch** = Tool used for catching (e.g. fish) 
+ * **+Sem/Tool-clean** = Tool used for cleaning 
+ * **+Sem/Tool-it** = Tool used in IT 
+ * **+Sem/Tool-measr** = Tool used for measuring 
+ * **+Sem/Tool-music** = Music instrument 
+ * **+Sem/Tool-write** = Writing tool 
+ * **+Sem/Txt** = Text (girji, lávlla...) 
+ * **+Sem/Veh** = Vehicle 
+ * **+Sem/Wpn** = Weapon 
+ * **+Sem/Wthr** = The Weather or the state of ground 
+
+### Multiple Semantic tags: 
+ * **+Sem/Act_Fruit** 
+ * **+Sem/Act_Group** Activity and Group 
+ * **+Sem/Act_Plc**   A persons job is an activity, and a place as well 
+ * **+Sem/Act_Route** Activity and Route, ie johtolat 
+ * **+Sem/Amount_Build**   Amount and Building 
+ * **+Sem/Amount_Semcon** 
+ * **+Sem/Ani_Body-abstr_Hum** 
+ * **+Sem/Ani_Build** 
+ * **+Sem/Ani_Build-part** 
+ * **+Sem/Ani_Build_Hum_Txt** 
+ * **+Sem/Ani_Group** 
+ * **+Sem/Ani_Group_Hum** 
+ * **+Sem/Ani_Group_Prod-vis** 
+ * **+Sem/Ani_Hum** 
+ * **+Sem/Ani_Hum_Plc** 
+ * **+Sem/Ani_Hum_Time** 
+ * **+Sem/Ani_Plc** 
+ * **+Sem/Ani_Plc_Txt** 
+ * **+Sem/Ani_Time** 
+ * **+Sem/Ani_Veh** 
+ * **+Sem/Aniprod_Hum** 
+ * **+Sem/Aniprod_Obj-clo** 
+ * **+Sem/Aniprod_Perc-phys** 
+ * **+Sem/Aniprod_Plc** 
+ * **+Sem/Aniprod_Plc_Route** 
+ * **+Sem/Body-abstr_Feat-cogn** 
+ * **+Sem/Body-abstr_Prod-audio_Semcon** 
+ * **+Sem/Body_Body-abstr** 
+ * **+Sem/Body_Clth** 
+ * **+Sem/Body_Food** 
+ * **+Sem/Body_Group_Hum** 
+ * **+Sem/Body_Group_Hum_Time** 
+ * **+Sem/Body_Hum** 
+ * **+Sem/Body_Mat** 
+ * **+Sem/Body_Measr** 
+ * **+Sem/Body_Obj_Tool-catch** 
+ * **+Sem/Body_Plc** 
+ * **+Sem/Body_Plc-elevate** 
+ * **+Sem/Body_Time** 
+ * **+Sem/Build-part_Cat** 
+ * **+Sem/Build-part_Cat_Ctain** 
+ * **+Sem/Build-part_Cat_Ctain_Mat** 
+ * **+Sem/Build-part_Ctain** 
+ * **+Sem/Build-part_Ctain_Mat** 
+ * **+Sem/Build-part_Ctain_Obj** 
+ * **+Sem/Build-part_Plc** 
+ * **+Sem/Build_Build-part** 
+ * **+Sem/Build_Clth-part** 
+ * **+Sem/Build_Edu_Org** 
+ * **+Sem/Build_Event_Org** 
+ * **+Sem/Build_Obj** 
+ * **+Sem/Build_Org** 
+ * **+Sem/Build_Route** 
+ * **+Sem/Cat_Group_Hum** 
+ * **+Sem/Cat_Group_Hum_Plc** 
+ * **+Sem/Clth-jewl_Curr** 
+ * **+Sem/Clth-jewl_Curr_Obj** 
+ * **+Sem/Clth-jewl_Curr_Obj_Org** 
+ * **+Sem/Clth-jewl_Fruit** 
+ * **+Sem/Clth-jewl_Money** 
+ * **+Sem/Clth-jewl_Org** 
+ * **+Sem/Clth-jewl_Plant** 
+ * **+Sem/Clth_Hum** 
+ * **+Sem/Clth_Obj-clo** 
+ * **+Sem/Ctain-abstr_Org** 
+ * **+Sem/Ctain-clth_Plant** 
+ * **+Sem/Ctain-clth_Veh** 
+ * **+Sem/Ctain_Feat-phys** 
+ * **+Sem/Ctain_Furn** 
+ * **+Sem/Ctain_Plc** 
+ * **+Sem/Ctain_Tool** 
+ * **+Sem/Ctain_Tool-measr** 
+ * **+Sem/Curr_Org** 
+ * **+Sem/Dance_Org** 
+ * **+Sem/Dance_Prod-audio** 
+ * **+Sem/Domain_Food-med** 
+ * **+Sem/Domain_Hum** 
+ * **+Sem/Domain_Prod-audio** 
+ * **+Sem/Drink_Plant** 
+ * **+Sem/Edu_Event** 
+ * **+Sem/Edu_Geom** 
+ * **+Sem/Edu_Group_Hum** 
+ * **+Sem/Edu_Hum** 
+ * **+Sem/Edu_Mat** 
+ * **+Sem/Edu_Org** 
+ * **+Sem/Event_Food** 
+ * **+Sem/Event_Hum** 
+ * **+Sem/Event_Plc** 
+ * **+Sem/Event_Plc-elevate** 
+ * **+Sem/Event_Time** 
+ * **+Sem/Feat-measr_Plc** 
+ * **+Sem/Feat-phys_Tool-write** 
+ * **+Sem/Feat-phys_Veh** 
+ * **+Sem/Feat-phys_Wthr** 
+ * **+Sem/Feat-psych_Hum** 
+ * **+Sem/Feat-psych_Plc** 
+ * **+Sem/Feat_Plant** 
+ * **+Sem/Food_Obj-surfc** 
+ * **+Sem/Food_Perc-phys** 
+ * **+Sem/Food_Plant** 
+ * **+Sem/Fruit_Hum** 
+ * **+Sem/Game_Obj-play** 
+ * **+Sem/Geom_Hum_Plc** 
+ * **+Sem/Geom_Obj** 
+ * **+Sem/Group_Hum** 
+ * **+Sem/Group_Hum_Org** 
+ * **+Sem/Group_Hum_Plc** 
+ * **+Sem/Group_Hum_Prod-vis** 
+ * **+Sem/Group_Org** 
+ * **+Sem/Group_Prod-vis** 
+ * **+Sem/Group_Sign** 
+ * **+Sem/Group_Txt** 
+ * **+Sem/Hum_Lang** 
+ * **+Sem/Hum_Lang_Plc** 
+ * **+Sem/Hum_Lang_Time** 
+ * **+Sem/Hum_Mat_Tool** 
+ * **+Sem/Hum_Obj** 
+ * **+Sem/Hum_Org** 
+ * **+Sem/Hum_Plant** 
+ * **+Sem/Hum_Plc** 
+ * **+Sem/Hum_Sign** 
+ * **+Sem/Hum_Tool** 
+ * **+Sem/Hum_Tool-it** = Human 
+ * **+Sem/Hum_Veh** 
+ * **+Sem/Hum_Wthr** 
+ * **+Sem/Lang_Tool** 
+ * **+Sem/Mat_Plant** 
+ * **+Sem/Mat_Txt** 
+ * **+Sem/Measr_Sign** = Sign (e.g. numbers, punctuation) 
+ * **+Sem/Measr_Time** 
+ * **+Sem/Money_Obj** 
+ * **+Sem/Money_Part** 
+ * **+Sem/Money_Txt** 
+ * **+Sem/Obj-ling_Obj-surfc** 
+ * **+Sem/Obj-play** 
+ * **+Sem/Obj-play_Sport** 
+ * **+Sem/Obj_Semcon** 
+ * **+Sem/Obj_Sign** 
+ * **+Sem/Obj_State** 
+ * **+Sem/Obj_Symbol** 
+ * **+Sem/Obj_Veh** 
+ * **+Sem/Oeuvre** (not used so far (?)), note oeu- 
+ * **+Sem/Oeuvre-txt** (so far only Biblija, changed to Sem/Txt) 
+ * **+Sem/Org_Prod-audio** 
+ * **+Sem/Org_Prod-cogn** 
+ * **+Sem/Org_Prod-vis** 
+ * **+Sem/Org_Rule** 
+ * **+Sem/Org_Txt** 
+ * **+Sem/Org_Veh** 
+ * **+Sem/Part_Prod-cogn** 
+ * **+Sem/Part_Substnc** 
+ * **+Sem/Perc-emo_Wthr** 
+ * **+Sem/Plant_Plant-part** 
+ * **+Sem/Plant_Tool** 
+ * **+Sem/Plant_Tool-measr** 
+ * **+Sem/Plc-abstr_Rel_State** 
+ * **+Sem/Plc-abstr_Route** 
+ * **+Sem/Plc_Pos** 
+ * **+Sem/Plc_Route** 
+ * **+Sem/Plc_State** 
+ * **+Sem/Plc_Substnc** 
+ * **+Sem/Plc_Substnc_Wthr** 
+ * **+Sem/Plc_Time** 
+ * **+Sem/Plc_Time_Wthr** 
+ * **+Sem/Plc_Tool-catch** 
+ * **+Sem/Plc_Wthr** 
+ * **+Sem/Prod-audio_Txt** 
+ * **+Sem/Prod-cogn_Txt** 
+ * **+Sem/Semcon_Txt** 
+ * **+Sem/State-sick_Substnc** 
+ * **+Sem/Substnc_Wthr** 
+ * **+Sem/Time_Wthr** 
+
+
+
+### Clitic 
+ * **+Clt** 
+ * **+Qst** Question particle -a 
+ * **+Qst/a** Question particle -a 
+ * **+Qst/ko** Question particle -ko might be used with Use/NG  
+ * **+Foc/AA** more specifically, exactly, contrast. used with Pron and Adv 
+ * **+Foc/ǥo** 
+ * **+Foc/go** 
+ * **+Foc/o** 
+ * **+Foc/i** This might be used with 
+ * **+Foc/han** This might be used with Use/NG 
+ * **+Foc/ka** This might be used with Use/NG ij-ka 
+ * **+Foc/kahan** 
+ * **+Foc/ǥa** 
+ * **+Foc/ga** 
+ * **+Foc/ki** This might be used with Use/NG 
+ * **+Foc/son** 
+ * **+Foc/jõs** 
+ * **+Foc/õs** 
+ * **+Foc/ǥõs** 
+ * **+Foc/mes** 
+ * **+Foc/ba** 
+ * **+Foc/âs** 
+ * **+Foc/ât** 
+ * **+Foc/tâma** 
+ * **+Foc/tõt** 
+
+### Tags distinguishing different versions of the same lemma (before POS) 
+In the xml the varid attribute is used in the st element with a mere numeric value 
+an extra lemma attribute is inserted in the st element, e.g. lemma="tõlvvad" 
+ * **+v1** 
+ * **+v2** 
+ * **+v3** 
+ * **+v4** 
+ * **+v5** 
+ * **+v6** 
+ * **+v7** 
+ * **+v8** 
+ * **+v9** 
+ * **+v10** 
+ * **+v11** 
+ * **+v12** 
+ * **+v13** 
+ * **+v14** 
+ * **+v15** 
+ * **+v16** 
+ * **+v17** 
+ * **+v18** 
+ * **+v19** 
+ * **+v20** 
+ * **+v21** 
+ * **+v22** 
+ * **+v23** 
+ * **+v24** 
+
+
+### Other tags 
+
+ * **+ABBR** Abbreviation 
+ * **+Symbol** = independent symbols in the text stream, like £, €, © 
+ * **+ACR**  Acronym 
+ * **+CLB**  Clause border (full stop, comma..) 
+ * **+PUNCT**  punctuation 
+ * **+LEFT**  left paranthesis 
+ * **+RIGHT**  right paranthesis 
+ * **^GUESSNOUNROOT** 
+ * **+Dyn**  Dynamically generated (acronyms) 
+ * **+Prefix**  prefix 
+
+### Punctuation 
+ * **+HYPH** 
+
+## Letters 
+
+### Skolt Saami letters 
+These definitions are probably not needed 
+ * **č** 
+ * **đ** 
+ * **š** 
+ * **ŧ** 
+ * **ž** 
+ * **Ʒ** 
+ * **ǥ** 
+ * **ǧ** 
+ * **ǩ** 
+ * **Ǯ** 
+ * **ǯ** 
+ * **Ǥ** 
+
+
+### Archiphonemes 
+
+These are for letters with special behaviour. 
+Say that all m-s change to n in a given context, 
+but not this m, because it is m2. 
+In twolc these are then defined m2:m, etc, i.e. 
+the m2 is an m, although it is a different m. 
+
+
+## Diacritic marks 
+These symbol govern the way the morphophonological rules treat the affix string. 
+
+This project started out using arbitrary names, X1, X2..., but since they were 
+hard to remember, we changed to (a bit) more transparent names (^DIADEL, ...). 
+On the TODO-list: Change all X1, X2, ... to easy-to-remember names. 
+Special iterations 
+
+ * **%^a2 %^ä2 %^å2 %^â2 %^e2 %^ẹ2 %^o2 %^õ2 %^i2 %^u2** 
+ * **%^b2 %^c2 %^č2 %^ʒ2 %^ǯ2 %^d2 %^đ2 %^f2 %^ǧ2 %^h2 %^j2** 
+ * **%^ǩ2 %^l2 %^m2 %^n2 %^p2 %^r2 %^s2 %^š2 %^t2 %^v2 %^z2** 
+ * **%^ž2** 
+
+
+## Consonant lengthening 
+ * **%{XC%}** 
+
+## Vowel length and height 
+ * **%{õuØ%}** 
+ * **%{ouØ%}** 
+ * **%{âõØ%}** 
+ * **%{ẹiØ%}** 
+ * **%{äaØ%}** 
+ * **%{äåØ%}** 
+ * **%{eiØ%}** 
+ * **%{åoØ%}** 
+ * **%{ẹeiØ%}** 
+
+for vowel height, by default vowels are low. 
+ * **%{õu%}** 
+ * **%{ou%}** 
+ * **%{âõ%}** 
+ * **%{ẹi%}** 
+ * **%{äa%}** 
+ * **%{äå%}** 
+ * **%{ei%}** 
+ * **%{åo%}** 
+ * **%{ẹei%}** 
+ * **%{âõe%}** 
+ * **%{âõäe%}** 
+
+
+CHARACTERISTIC BREAKDOWN 2015-02-17 
+ * **%^VV2V** Shortens vowel 
+ * **%^V2VV** Lengthens vowel 
+ * **%^CC2C** Shortens consonant 
+ * **%^CC2CAllegro** Shortens consonant 
+ * **%^C2CC** Lengthens consonant 
+ * **%^CC2CCC** Strong to Extra Strong consonant 
+ * **%^CCC2C** Extra Strong to Weak consonant 
+ * **%^CCC2CAllegro** Extra Strong to Weak consonant 
+ * **%^CCC2CC** Extra Strong to Strong consonant 
+ * **%^XYY2XY** Shortens consonant cluster 
+ * **%^XYY2VY** Consonant cluster to vowel and consonant sijdd:siid 
+ * **%^XYY2VYY** Consonant cluster to vowel and geminate uvdd:ouʹdd 
+ * **%^XYY2IY** Consonant cluster to i  and consonant kueʹhtt:kueiʹt 
+ * **%^VY2XYY** Consonant cluster i/u to j/v 
+ * **%^VYY2XYY** Consonant cluster i/u to j/v 
+ * **%^KKK2GG** Geminate weakening 
+ * **%^KKK2G** Strong Geminate allegro 
+ * **%^KK2GG** Geminate weakening     jokk:jooǥǥ 
+ * **%^K2GG** Geminate weakening čårrõs:čårrõõzz 
+ * **%^KK2GAllegro** Geminate weakening    in allegro pååss:påz 
+ * **%^K2GAllegro** Geminate weakening    in allegro čâustõk 
+ * **%^APen** for combinations 2015-10-04 Jack 
+ * **%^Pen** for combinations 2015-09-28 Miikka 
+ * **%^KK2ZERO** Geminate weakening nââʹer 
+ * **%^Allegro** This introduces vertical bar after diphth before consonants 
+ * **%^J2I** in tuâjj:tuâi 
+ * **%^I2J** in agent names 
+ * **%^I2Zero** in agent names 
+ * **%{ʹØ%}** Modifier Letter prime 
+ * **%{ʼØ%}** used between l, n, j and subsequent j and elsewhere 
+ * **%{ˈ1%}** This is modifier letter verticle line after diphthongs 
+
+
+## Gradation triggers 2015.01.23 
+ * **%^XSt2St** Causes weakening from extra strong to strong 
+ * **%^XSt2W** Causes weakening from extra strong to weak 
+ * **%^St2W** Causes weakening from strong to weak 
+ * **%^W2St** Causes strengthening from weak to strong 
+ * **%^W2XSt** Causes strengthening from weak to extra strong 
+ * **%^St2XSt** Causes strengthening from strong to extra strong 
+
+Gradation triggers 2015.02.09 For   Consonant Clusters 
+ * **%^XSt2StCluster** Causes weakening from extra strong to strong in clusters 
+ * **%^St2XStCluster** Causes strengthening from strong to extra strong in clusters 
+
+
+
+### Diacritic with mnemonic names 
+
+ * **%^1VOW** vowel position and length 
+ * **%^2VOW** 
+ * **%^3VOW** 
+ * **%^4VOW** 
+ * **%^5VOW** 
+ * **%^CLong** 
+ * **%^CShort** 
+ * **%^CXLong** 
+ * **%^DIADEL** deleting diacritic 
+ * **%^DIAINS** inserting diacritic 
+ * **%^FRICG** for causing fricative ǥ vueʹlǧǧed+V+Imp+Pl3: vuâlǥǥaz 
+ * **%^IMPSG2** 
+ * **%^INDPRSSG3** 
+ * **%^PenVow2a** Changes penultimate vowel to a; e:a â:a 
+ * **%^P3** ... means what? 
+ * **%^PAL** for placing palatalization mark **ʹ** 
+ * **%^PALK** causes k:ǩ and g:ǧ 
+ * **%^PALNo** This is to facilitate +Sg+Nom lemma:stem equivalence; it removes palatal supersegmental 
+ * **%^PALI** Palatalisation causes â:i, etc. 
+ * **%^PALE** Palatalisation causes â:e, etc. 
+ * **%^PALÄ** Palatalisation causes â:ä, etc. 
+ * **%^PALẸ** Palatalisation causes å:ẹ suẹjj BUT suejjin (cf. 2012: 150, but ) 
+ * **%^PALÂ** Depalatalisation causes 0:â keâmnna 
+ * **%^PALÕ** Depalatalisation causes â:õ tiõttum 
+ * **%^RmVow** for removing vowels e, â, a before final consonant in stem 
+ * **%^UltRmVow** for removing vowels e, â, a after final consonant in stem 
+ * **%^RmCns** for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta 
+ * **%^VC** Voicing s:z š:ž 
+ * **%^VOWLower** for lowering i>e, õ>â, â>ä, u>o, o>å 
+ * **%^U2Õ** lowers u>õ    
+ * **%^VOWRaise** for raising e>i, ä>e 
+ * **%^VOWL** for lengthening BEING PHASED OUT 
+ * **%^VOWXSH** for extra shortening 
+ * **%^VOWXL** for extralengthening 
+ * **%^Â** Indicates placement of â in stem 
+ * **%{VU%}** used with stuuʹl 
+ * **%{A1%}** used with vuejted 
+ * **%{E1%}** used with kåʹmrded 
+ * **%{Â1%}** used with mainsted 
+ * **%{%ʹ%}** archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one. 
+ * **%{EÂ%}** archiform for ie:eä variation, e.g. pieʹǩǩ+N+Sg+Ill:peâkka 
+
+Hyphen at compound word boundary 
+ * **%{%-Ø%}** Zero versus hyphen in compounding 
+ * **%^Hyphen** at compound word boundary with %- 
+ * **%^NoHyphen** at compound word boundary 
+
+## Escaped symbols 
+
+
+Symbols that need to be escaped on the lower side (towards twolc): 
+* » 
+* « 
+* > 
+* < 
+
+The Usage extents are marked using following tags: 
+
+ * **+Err/Orth**  substandard, not in normative fst 
+ * **+Err/Orth-k-kh** substandard k, not in normative fst ǩ 
+ * **+Err/Orth-a-y** substandard a, not in normative fst â 
+ * **+Err/Lex** substandard, not in normative fst, no normative lemma 
+ * **+Err/DerSub** substandard for derivation, not in normative fst, no normative lemma 
+ * **+Err/CmpSub** substandard for compounding, not in normative fst (wrong form or POS in first part) 
+ * **+Err/MissingHyph** substandard for compounding, not in normative fst (needs hyph) 
+ * **+Err/Hyph** substandard for compounding, not in normative fst (should have no hyphen) 
+ * **+Err/SpaceCmp** used for compounds written apart - only retained in the HFST Grammar Checker disambiguation analyser 
+ * **+Err/Spellrelax** used to tag spellrelaxed typos (tag is inserted via flag diacritics) 
+ * **+Err/GenreLeudd** 
+ * **+Err/Orth-nom-acc** 
+ * **+Err/Orth-nom-gen** 
+ |  **+Err/MissingSpace** | in use ins smi lexc 
+
+ * **+Use/Marg** marginal (?) 
+ * **+Use/-Spell** Excluded in speller 
+ * **+Use/SpellNoSugg** recognized but not suggested in speller 
+ * **+Use/Circ** circular paths (old ^C^) 
+ * **+Use/CircN** circular paths for the numerals (old ^N^) 
+ * **+Use/NG** not-generate, for ped generation isme-ped.fst 
+ * **+Use/NGminip** not-generate, for ped generation isme-ped.fst 
+ * **+Use/Ped** for use with pedagogical work 
+ * **+Largo** largo variant instead of allegro saaǥǥstõõllâd vs saǥstõõllâd 
+ * **+Allegro** never last element of compound words 
+ * **+MWE** never last element of compound words 
+ * **+Use/GC** only retained in the HFST Grammar Checker disambiguation analyser 
+ * **+Use/-GC** never retained in the HFST Grammar Checker disambiguation analyser 
+
+### Dialect tags: 
+
+ * **+Dial/P** Paatsjoki (KKS) 
+ * **+Dial/Pets** Petsamo 
+ * **+Dial/N** Nuortjärvi (KKS) 
+ * **+Dial/S** Suonikylä (KKS) 
+
+ * **+South**  
+ * **+Txt**  
+
+
+
+
+Compounding 
+
+ * **+Cmp** 
+ * **+CmpNP/First** 
+ * **+CmpNP/Pref** 
+ * **+CmpNP/None** 
+ * **+CmpN/PlG** 
+ * **+CmpN/SgG** 
+ * **+CmpN/SgN** 
+
+ * **+Cmp** - Dynamic compound. This tag should always be part 
+                of a dynamic compound. It is important for 
+                Apertium, and useful in other cases as well. 
+ * **+Cmp/Attr** - Attributive 
+ * **+Cmp/SgNom** - Singular Nominative 
+ * **+Cmp/SgGen** - Singular Genitive 
+ * **+Cmp/PlGen** - Plural Genitiv 
+ * **+Cmp/SplitR** - This is a split compound with the other part to 
+                the right: "Arbeids- og inkluderingsdepartementet" 
+                => Arbeids- = +Cmp/SplitR 
+ * **+Cmp/SplitL** - This is a split compound with the other part to the left 
+ * **+Cmp/Sh** - testing +Cmp/Sh 
+ * **+Cmp/Hyph** - on dynamic compounds that have a hyphen 
+ * **+Cmp/NoHyph** - On compounds that COULD have had a hyphen (and usually have), but doesn't 
+ * **+Cmp/SoftHyph** - Tags compounds containing SOFT HYPHENS (U+00AD) 
+ * **+Cmp/Cit** - Tags citation compounds, which can in principle 
+                cover any word. Requires a hyphen. 
+
+
+## Flag diacritics 
+
+| Flag | Explanation 
+| --- | --- @P.AssocColl.ON@ !!≈ * **+Cmp/Cit** Used with Kin terms and Ant 
+ * **@R.AssocColl.ON@** 
+ * **@C.AssocColl@** 
+
+
+We have manually optimised the structure of our lexicon using following 
+flag diacritics to restrict morhpological combinatorics - only allow compounds 
+with verbs if the verb is further derived into a noun again: 
+
+
+| Flag | Explanation 
+| --- | --- 
+ |  **@P.NeedNoun.ON@** | (Dis)allow compounds with verbs unless nominalised 
+ |  **@D.NeedNoun.ON@** | (Dis)allow compounds with verbs unless nominalised 
+ |  **@C.NeedNoun@** | (Dis)allow compounds with verbs unless nominalised 
+
+For languages that allow compounding, the following flag diacritics are needed 
+to control position-based compounding restrictions for nominals. Their use is 
+handled automatically if combined with +CmpN/xxx tags. If not used, they will 
+do no harm. 
+
+| Flag | Explanation 
+| --- | --- 
+ |  **@P.CmpFrst.FALSE@** | Require that words tagged as such only appear first 
+ |  **@D.CmpPref.TRUE@** | Block such words from entering ENDLEX 
+ |  **@P.CmpPref.FALSE@** | Block these words from making further compounds 
+ |  **@D.CmpLast.TRUE@** | Block such words from entering R 
+ |  **@D.CmpNone.TRUE@** | Combines with the next tag to prohibit compounding 
+ |  **@U.CmpNone.FALSE@** | Combines with the prev tag to prohibit compounding 
+ |  **@P.CmpOnly.TRUE@** | Sets a flag to indicate that the word has passed R 
+ |  **@D.CmpOnly.FALSE@** | Disallow words coming directly from root. 
+
+Use the following flag diacritics to control downcasing of derived proper 
+nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use 
+these flags. There exists a ready-made regex that will do the actual down-casing 
+given the proper use of these flags. 
+
+| Flag | Explanation 
+| --- | --- 
+ |  **@U.Cap.Obl@** | Allowing downcasing of derived names: deatnulasj. 
+ |  **@U.Cap.Opt@** | Allowing downcasing of derived names: deatnulasj. 
+
+
+# Basic lexica, pointing to the other lexicon files 
+
+
+ * **LEXICON Root** 
+ * **Abbreviation ;** abbreviations 
+ * **Adposition ;** 
+ * **@U.Cap.Obl@ ProperNoun ;** 
+ * **@U.Cap.Opt@ ProperNoun ;** 
+
+ * **VerbRoot ;** 
+ * **Subjunction ;** 
+ * **Conjunction ;** 
+ * **Interjection ;** 
+ * **Pronoun ;** 
+ * **Punctuation ;** 
+ * **Symbols ;** 
+ * **Particle ;** 
+
+ * **NEG-COPULA ;** This is for 3rd person iʹlla 
+This generates from merged materials 
+ * **A_sms2x ;** This generates from merged materials 
+ * **TRAB_sms2x ;** transitive abbreviations 
+ * **TRNUMAB_sms2x ;** transitive abbreviations with numerals 
+ * **Adp_sms2x ;** adpositions 
+ * **Adv_sms2x ;** adverbs 
+ * **CC_sms2x ;** conjunctions 
+ * **CS_sms2x ;** subjunctions 
+ * **Det_sms2x ;** determiners 
+ * **Interj_sms2x ;** This generates from merged materials 
+ * **@P.AssocColl.ON@ N_Kin_sms2x ;** This generates from merged materials 
+ * **N_sms2x ;** This generates from merged materials 
+ * **+Cmp/SplitL+Use/SpellNoSugg#:%-# N_sms2x ;** This allows split compound nouns 
+ * **@P.AssocColl.ON@ N_Prop_sms2x ;** This generates from merged materials 
+ * **@U.Cap.Obl@ N_Prop_Toponyms_sms2x ;** Toponymy 
+ * **@U.Cap.Opt@ N_Prop_Toponyms_sms2x ;** Toponymy 
+ * **Num_sms2x ;** This generates from merged materials 
+ * **Pcle_sms2x ;** This generates from merged materials 
+ * **Prefix_sms2x ;** This generates from merged materials 
+ * **Pron_sms2x ;** This generates from merged materials 
+ * **V_sms2x ;** This generates from merged materials 
+
+ * **Numeral ;** This feeds Arabi numerals, borrowed from sme 
+
+
+
+ * **A_NEWWORDS ;** These are new adjectives beginning 2015-02-11 
+ * **ADP_NEWWORDS ;** These are new adpositions 
+ * **ADV_NEWWORDS ;** These are new adverbs 
+ * **CC_NEWWORDS ;** These are new conjunctions 
+ * **N_NEWWORDS ;** These are new nouns beginning 2015-01-10 
+ * **PCLE_NEWWORDS ;** These are particles 
+ * **PRON_NEWWORDS ;** These are pronouns 
+ * **@U.Cap.Obl@ PROP_NEWWORDS ;** These are new proper nouns beginning 2015-03-04 
+ * **@U.Cap.Opt@ PROP_NEWWORDS ;** These are new proper nouns beginning 2015-03-04 
+ * **@U.Cap.Obl@ TOPONYMS_NEWWORDS ;** 2016-02-06 
+ * **@U.Cap.Opt@ TOPONYMS_NEWWORDS ;** 2016-02-06 
+ * **V_NEWWORDS ;** These are new verbs 
+ * **ProperNoun-smi ;** work with smi 2018-08-23 
+
+INCOMING _lemma:stem Contlex_ sets to be distinguished from glossing in progress 
+
+
+NounRoot 
+
+
+
+
+INTERJ_ 
+Interjections 
+
+* Postposition ; is still not included 
+* Preposition ;  is still not included 
+
+
+CONJUNCTIONS 
+INTERJ_ 
+
+CS_ Subjunction 
+
+CS-TEMP_ 
+**when** 
+
+NUM_ 
+NUM_VAHTT 
+
+NUM_ALGG 
+NUM_AUTT 
+NUM_TOLL 
+NUM_PAPP 
+NUM_AELDD 
+NUM_KUEQLL 
+NUM_TAQHTT 
+ * **LEXICON NUM_KUEQHTT** kueʹhtt:kuâhtt 
+NUM_KUEQHTT 
+NUM_NELLJ 
+
+NUM_AANAR 
+
+NUM_ATOM 
+NUM_JEAQNNN 
+
+
+
+ * **LEXICON NUM_LO** kuttlo:kuttl 
+NUM_LO 
+ * **:ååǥǥ DET_NEELLJAD ;** This ordinal derivation 
+ * **LEXICON NUM_LOAOAI** lååi:l  THIS looks like allegro 
+NUM_LOAOAI 
+
+
+
+Postpositions with government tagging possible 
+ADP_ 
+PO_ 
+PO-ILL_ 
+PO-LOC_ 
+
+ADP-GOV-LOC_ 
+PO-GOV-GEN_ 
+
+
+Prepositions with government tagging possible 
+
+PR_ 
+
+
+PR-TEMP-GOV-LOC_ 
+
+PREFIX/A_ 
+
+SUF/A_ 
+
+# Skolt Saami nouns
+
+We use a modified version of the *Koulukielioppi* stem system
+
+1. Vowel stems
+    1. â-stems: N-toll, N-miarr
+    1. a-stems: N-pess
+    1. e-stems: N-piess
+1. Mixed stem:
+    1. e-a-stems: N-ress
+1. Consonant stems
+    1. m-stems: N-laajj
+    1. n-stems: N-kuolban, N-siom
+1. Contract stems
+
+
+The lexicon *N-INCOMING* contains all nouns.
+So far, it contains only a handful of nouns, they are
+here grouped according to continuation lexicon.
+
+
+CODED BY EINO AND JASKA
+derived from closed fin-sms
+
+
+
+This is where new words are added as lexc entries before they are 
+added to the xml source files.
+Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS "(eng) /(fin) /(rus) " ;
+
+
+ADD ADVERBS BELOW
+
+
+
+
+
+CODED BY EINO AND JASKA
+
+
+
+perintökieli
+
+
+# Skolt Saami Particles
+
+
+The lexicon pcle gives the tag.
+
+
+## List of particles in the lexicon Particle
+
+ ges pcle ; 
+
+## unclear whether these are really particles
+
+
+# Pronouns
+
+
+Pointing to all the pronominal subgroups
+
+ * LEXICON Pronoun 
+ * Personal ;      
+ * Demonstrative ; 
+ * Reflexive ;     
+ * Interrogative ; 
+
+
+## Personal pronouns
+
+
+Splitting according to person
+
+ * LEXICON Personal           
+ * mon+Pron+Pers:m perspron ; 
+ * ton+Pron+Pers:t perspron ; 
+ * son+Pron+Pers:s perspron ; 
+
+
+
+
+
+
+
+
+
+
+## Demonstrative pronouns
+
+
+ * LEXICON Demonstrative 
+
+ * LEXICON SHORTDEM 
+
+ * LEXICON LONGDEM 
+
+ * LEXICON TOTDEM  
+
+ * LEXICON TIET-AA 
+
+ * LEXICON -AA 
+
+
+
+## Reflexive pronouns
+
+
+ * LEXICON Reflexive 
+
+
+ * LEXICON GA-I 
+
+ * LEXICON GA-II 
+
+ * LEXICON ILEPX 
+
+ * LEXICON LOCPX 
+
+ * LEXICON COMPX 
+
+ * LEXICON ROBLSGPX 
+
+ * LEXICON ROBLPLPX 
+
+ * LEXICON RCOMPLPX 
+
+
+
+
+## Interrogative pronouns
+
+
+ * LEXICON Interrogative 
+ * mii+Pron+Interr:m	MK ; 
+ * ǩii+Pron+Interr:ǩ	MK ; 
+
+ * LEXICON MK 
+
+ * LEXICON MK-long 
+
+ * LEXICON MK-short 
+
+ * LEXICON MK-low 
+
+
+
+
+
+
+
+
+
+
+
+# Propernoun lexicon, Skolt Sámi specific names 
+
+
+The lexicon *ProperNoun* lists the proper nouns
+
+
+## First part of complex names
+
+
+
+## Ordinary person names
+
+
+## Ordinary place names
+
+
+
+## Ordinary misc names
+
+
+
+# Skolt Saami Interjections 
+
+
+The lexicon *ij* gives the tag **+Interj**
+
+
+The lexicon *Interjection* lists the interjections
+ * ai ij ;            
+
+# File containing abbreviations 
+
+## Lexica for adding tags and periods
+
+Splitting in 4 + 1  groups, because of the preprocessor
+
+ * **LEXICON Abbreviation   **
+ 1. The ITRAB ;	    lexicon (intransitive abbrs) Ltd.
+ 1. The TRNUMAB ;   lexicon (abbrs trans wrt. numerals)
+ 1. The TRAB ;	    lexicon (transitive abbrs) tri. 
+ 1. The SYMBOLS ;   lexicon (misc. symbols)
+
+## The sublexica
+
+### Dividing between abbreviations with and witout final period
+
+ABBREVIATIONS 
+these still need development 2015-09-11
+
+
+
+
+
+ * **LEXICON ab-noun   **
+
+
+
+
+### The lexicons that add tags
+
+
+
+ * **LEXICON ab-nodot-noun   **  The bulk
+
+
++Adv+ABBR: RHyph ;
+
+
+
+ * **LEXICON ab-dot-noun   **  This is the lexicon for abbrs that must have a period.
+
+
+
+
++ABBR:%.%> # ;
+
+
+
+
+
+
+
+
+
+ * **LEXICON SYMBOLconnector   **
+
+ * **LEXICON SYMBOLsuff   **
+
+
+
+## The abbreviation lexicon itself
+
+
+ * **LEXICON SYMBOLS   ** is for iscellaneous abbr symbols
+
+
+
+ * **LEXICON ITRAB   ** are intransitive abbreviations, A.S. etc.
+
+
+
+ *  ITRAB_sms2x ;         intransitive abbreviations
+These are measurements postposed after numerals
+ *  TRNUMABPO_sms2x ;         postpositional transitive abbreviations with numerals preceding
+ *  TRABPO_sms2x ;         postpositional transitive abbreviations
+
+
+
+
+
+
+This class contains homonyms, which are both intransitive
+abbreviations and normal words. The abbreviation usage
+is less common and thus only the occurences in the middle of
+the sentnece (when next word has small letters) can be 
+considered as true cases.
+
+
+
+
+
+ * **LEXICON TRNUMAB   ** contains abbreviations who are transitive in front of numerals, i.e. preposed
+
+For abbrs for which numerals are complements, but other
+words not necessarily are. This group treats arabic numerals as
+if it were transitive but letters as if it were intransitive.
+
+
+ * ** TRNUMAB_sms2x ; ** contains abbreviations in xml preposed
+
+
+
+ * **LEXICON TRAB   ** contains preposed transitive abbreviations 
+
+This lexicon is for abbrs that always have a constituent following it.
+
+
+ * ** TRAB_sms2x ; ** contains preposed transitive abbreviations xml
+
+
+
+
+
+
+
+
+
+
+
+This class contains homonyms, which are both abbrs for 
+which numerals are complements and normal words. The abbreviation usage
+is less common and thus only the occurences in the middle of
+the sentnece can be considered as true cases.
+
+
+
+This is where new words are added as lexc entries before they are 
+added to the xml source files.
+Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS "(eng) /(fin) /(rus) " ;
+
+
+ADD PROPER ADVERBS BELOW
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Skolt Saami adverbs
+
+Only a handful so far.
+
+The lexicon *adv* gives the tag **+Adv**
+
+The lexicon *Adverb* contains adverbs.
+They are taken from [http://www.uta.fi/~km56049/same/skolt/koltansaame.html]
+
+ * ââlda adv "nearby" ; 
+ * ââʹn adv "now" ;  
+ * ålggan adv "outside" ;  
+ * åålǥas adv "to outside" ;  
+
+This is where new words are added as lexc entries before they are
+added to the xml source files.
+
+
+
+PLACE NAMES
+
+ * Jõnn-Pelsa+N+Prop+Sem/Plc:Jõnn-Pelsa PROP_TOP_ "(eng) /(fin) /(nob) /(rus) " ; 
+ * Ruäʹvv-vueiʹvv+N+Prop+Sem/Plc:Ruäʹvv-#vuäi%{ʹØ%}vv PROP_TOP_VUEAIQVV "(eng) /(fin) /(nob) /(rus) " ; 
+
+
+
+MORE
+Toponyms
+
+
+
+
+# Skolt Saami adjectives
+
+OUR LONG-TERM GOAL IS NOT TO ADD STEMS MANUALLY TO THIS FILE
+Instead we want to update the dictionary sms2X/src/a_sms2X.xml, 
+from where the present lexc files will be regularly updated by 
+exporting (we need a script for this).
+
+
+THESE have been coded by Eino and Jaska
+The content consists of multiple pos 
+For nouns see nouns.lexc. Both files are temporary
+
+
+
+# Subjunctions
+
+The lexicon *Cs* assigns the tag **+CS**
+
+The lexicon *Subjunction* lists the subjunctions
+ * So far it contains only go Cs ;  
+
+
+
+
+# Verb roots
+
+Here are the verb types so far:
+
+*   5 JURDDED
+*  38 KALMMED
+*   3 KAMRDED
+*   1 LAADDAD
+*   1 LEED
+*  23 MAINSTED
+*   4 SEDGGJED
+*   8 SILTTEED
+*   5 SOLLEED
+*  18 TEEMEED
+*  53 TEEVVAD
+*  25 TIETTED
+*  82 VIQQAD
+*   7 VOLLJED
+*   4 VOOIDAD
+*   1 VUEJTED
+
+
+
+
+
+This is where new words are added as lexc entries before they are 
+added to the xml source files.
+Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS "(eng) /(fin) /(rus) " ;
+
+
+ADD PARTICLES BELOW
+
+
+
+CODED BY EINO AND JASKA
+
+
+
+
+Lemmas:stems undesignated 2015-03-06
+These have been commented out 2015-11-13
+
+
+
+This is where new words are added as lexc entries before they are 
+added to the xml source files.
+ǩiõtt+N:ǩiõtt N_MUORR "(eng) /(fin) /(rus)" ;
+
+ADD NOUNS BELOW
+Glossing 2015-12-02
+
+Glossing 
+
+
+
+
+Newer words
+Contlex value missing
+
+
+
+
+
+This is where new words are added as lexc entries before they are 
+added to the xml source files.
+Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS ;
+
+
+ADD PROPER NOUNS BELOW
+LACKING SPECIFIC DECLENSION TYPE
+
+WITH SPECIFIC DECLENSION TYPE
+
+First names
+
+
+
+
+
+SURNAMES
+
+
+
+
+
+ORGANIZATIONS
+
+
+
+Perintökieli
+This is where new words are added as lexc entries before they are 
+added to the xml source files.
+Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS "(eng) /(fin) /(rus) " ;
+
+
+ADD PRONOUNS BELOW
+
+
+
+CODED BY EINO AND JASKA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+This is where new words are added as lexc entries before they are 
+added to the xml source files.
+Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS "(eng) /(fin) /(rus) " ;
+
+
+ADD POSTPOSTIONS AND PREPOSITIONS BELOW
+
+
+
+CODED BY EINO AND JASKA
+
+POSTPOSITIONS
+
+PREPOSITIONS
+
+
+Exceptions are quite strange word-forms. the ones that do not fit anywhere 
+else. This file contains all enumerated word forms that cannot reasonably be
+created from lexical data by regular inflection. Usually there should be next
+to none exceptions, it's always better to have a paradigm that covers only
+one or few words than an exception since these will not work nicely with e.g.
+compounding scheme or possibly many end applications.
+
+
+IRREGULAR ADJECTIVES
+
+
+IRREGULAR DETERMINERS
+
+
+
+IRREGULAR NOUNS
+
+
+Some verbs have variant forms:
+
+*variant forms examples:*
+* *leämmaž:* `leeʹd+V+PrfPrc`
+* *leämma:* `leeʹd+V+PrfPrc`
+
+
+
+The verb of negation
+
+PREFIXES for nouns
+
+
+Spelling errors
+
+Foreign words
+
+
+FROM FORMER .lexc CONTENT
+
+
+# Skolt Saami adjectives
+
+OUR LONG-TERM GOAL IS NOT TO ADD STEMS MANUALLY TO THIS FILE
+Instead we want to update the dictionary sms2X/src/a_sms2X.xml, 
+from where the present lexc files will be regularly updated by 
+exporting (we need a script for this).
+
+
+# Skolt Saami adpositions
+
+
+
+
+# Skolt Saami adverbs
+
+The lexicon *Adposition* contains adverbs.
+They are taken from [http://www.uta.fi/~km56049/same/skolt/koltansaame.html]
+
+
+# Skolt Saami Conjunctions 
+
+
+The lexicon *Conjunction* lists the conjunction
+
+
+
+# Skolt Saami Interjections 
+
+
+The lexicon *ij* gives the tag **+Interj**
+
+
+The lexicon *Interjection* lists the interjections
+ * ai ij ;            
+
+
+
+
+
+# Skolt Saami Particles
+
+
+## List of particles in the lexicon Particle
+
+ ges PCLE_ ; 
+
+## unclear whether these are really particles
+
+
+# Propernoun lexicon, Skolt Sámi specific names 
+
+
+# Subjunctions
+
+The lexicon *Subjunction* lists the subjunctions
+ * So far it contains only go CS_ ;  
+
+
+
+# Verb roots
+
+Here are the verb types so far:
+
+*   5 JURDDED
+*  38 KALMMED
+*   3 KAMRDED
+*   1 LAADDAD
+*   1 LEED
+*  23 MAINSTED
+*   4 SEDGGJED
+*   8 V_SILTTEED
+*   5 V_SOLLEED
+*  18 V_TEEʹMEED
+*  53 TEEVVAD
+*  25 TIETTED
+*  82 VIQQAD
+*   7 VOLLJED
+*   4 VOOIDAD
+*   1 VUEJTED
+
+
+
+
+# TEST WORDS BEYOND THIS POINT
+DO NOT ADD TRANSLATIONS
+DO NOT ADD NOTES
+
+
+
+# Skolt Saami Numerals
+
+Lexicon *Subjunction* contains *okta* only.
+CODED BY JACK
+
+
+
+BUT have most of their Contlex values THIS has a separate DB DON'T TRANSLATE
+
+
+
+
+
+
+
+
+# Skolt Saami Conjunctions 
+
+
+The lexicon *Conjunction* lists the conjunction
+ * ja Cc "and" ;              
+ * da Cc "and" ;         
+
+
+The lexicon *Cc* gives the tag **+CC**
+
+
+This is where new words are added as lexc entries before they are 
+added to the xml source files.
+slooman:slooman A_AANAR ;
+
+
+ADD ADJECTIVES BELOW
+
+
+Not added yet to wiki
+
+
+
+
+
+
+
+2017-09-
+
+
+This is where new words are added as lexc entries before they are 
+added to the xml source files.
+Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS "(eng) /(fin) /(rus) " ;
+
+
+ADD VERBS BELOW
+
+
+This only contains one verb and will be removed.
+
+
+
+
+
+
+
+# Skolt Saami adpositions
+
+
+
+
+
+
+# Skolt Saami Numerals
+
+
+ * **LEXICON Numeral   **  initial lexica
+
+
+
+
+ * **LEXICON NUM-PREFIXES   **
+
+ * **LEXICON ARABIC   ** arabic numerals
+
+ * **LEXICON ARABICLOOPphone   ** +358(0)16671254
+
+ * **LEXICON ARABICCASEphone   **  
+
+ * **LEXICON ARABICLOOP   **
+
+
+
+ * **LEXICON ARABICLOOPORD   ** ordinals
+
+ * **LEXICON ACASETAG   **  is for 1e+Num+Sg+Num:1e
+
+ * **LEXICON ARABICLOOPCOLL   ** collectives
+
+
+ * **LEXICON ARABICDELIMITER   **  blank + 3 delim, what does the lg counc prefer?
+
+
+ * **LEXICON ARABICDELIMITERORD   ** ordinals
+
+ * **LEXICON ARABICDELIMITERCOLL   ** collectives
+
+ * **LEXICON ARABICCASES   **  to distinguish between 0 and oblique
+
+ * **LEXICON ARABICCASE0   **
+
+ * **LEXICON ARABICCASE   **
+
+
+ * ** LEXICON ARABICCASEORD   ** ordinals
+
+ * ** LEXICON ARABICCASECOLL   ** collectives
+
+
+
+ * **LEXICON ROMAN   **  roman numerals
+
+ * **LEXICON ROM-THOUSAND   ** 
+
+ * **LEXICON ROM-THOUSAND-TAG   ** 
+
+ * **LEXICON ROM-HUNDRED   ** 
+
+ * **LEXICON ROM-HUNDRED-TAG   ** 
+
+ * **LEXICON ROM-TEN   ** 
+
+ * **LEXICON ROM-TEN-TAG   ** 
+
+ * **LEXICON ROM-ONE   ** 
+
+ * **LEXICON ROM-ONE-TAG   ** 
+
+
+ * **LEXICON ROM-SPLIT   ** 
+
+
+
+ * **LEXICON 2ROMAN   ** 
+
+ * **LEXICON 2ROM-THOUSAND   ** 
+
+ * **LEXICON 2ROM-THOUSAND-TAG   ** 
+
+ * **LEXICON 2ROM-HUNDRED   ** 
+
+ * **LEXICON 2ROM-HUNDRED-TAG   ** 
+ * **LEXICON 2ROM-TEN   ** 
+
+ * **LEXICON 2ROM-TEN-TAG   ** 
+
+ * **LEXICON 2ROM-ONE   ** 
+
+ * **LEXICON 2ROM-ONE-TAG   ** 
+
+ * **LEXICON ROMNUMTAG   **
+
+ * **LEXICON ROMNUMTAGOBL   ** 
+
+
+
+ * **LEXICON ISOLATED-NUMEXP   ** some isolated numeral expressions
+
+
+
+
+
+
+
+
+
+
+
+This is still a dummy version, containing Skolt Saami.
+
+**To be corrected!!**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Skolt Saami number <-> letter transducer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+We describe here how abbreviations are in Skolt Sami are read out, e.g.
+for text-to-speech systems.
+
+For example:
+
+ * s.:syntynyt # ;  
+ * os.:omaa% sukua # ;  
+ * v.:vuosi # ;  
+ * v.:vuonna # ;  
+ * esim.:esimerkki # ; 
+ * esim.:esimerkiksi # ; 
+
+
+
+The Skolt Sámi dates !
+This is still a dummy version, containing South Saami.
+
+**To be corrected!!**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

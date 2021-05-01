@@ -1,0 +1,32 @@
+
+This is still a dummy version, containing Skolt Saami.
+
+**To be corrected!!**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
