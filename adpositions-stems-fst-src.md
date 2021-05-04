@@ -1,0 +1,8 @@
+
+
+# Skolt Saami adpositions
+
+
+
+
+
