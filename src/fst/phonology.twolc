@@ -267,10 +267,7 @@ PenUltCns = [Cns:|%{XC%}:] ;
 
 !! following morpheme or word boundary
 
-!! ```
-RBound = [(%^Hyphen: %-|%^NoHyphen:|%{%-Ø%}:) #:|.#.|%>|»|%-] ; !!≈ * @CODE@
-!! ```
-
+RBound = [(%^Hyphen: %-|%^NoHyphen:|%{%-Ø%}:) #:|.#.|%>|»|%-] ; ! This can't easily be included in Markdown documentation, because of interference with the Jekyll pragma syntax. Jekyll is the GitHub publishing system that turns Markdown pages into HTML.
 
 
 !! ossible triggers before VOWLower and VOWRaise
