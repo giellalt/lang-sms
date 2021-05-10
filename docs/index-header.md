@@ -29,7 +29,7 @@ This page documents the work on the **Skolt Sami language model**.
 ## Meetings
 
 -   2013:
-    -   [13.8.](meetings/130826.html)
+    -   [13.8.](meetings/130826.md)
 
 ## Using the analysers
 
