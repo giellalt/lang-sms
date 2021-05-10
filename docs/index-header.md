@@ -29,9 +29,9 @@ This page documents the work on the **Skolt Sami language model**.
 ## Meetings
 
 -   2009:
-    -   [21.12.](meetings/21112009.md)
+    -   [21.11.](meetings/21112009.md)
 -   2013:
-    -   [13.8.](meetings/130826.md)
+    -    [13.8.](meetings/130826.md)
 
 ## Using the analysers
 
