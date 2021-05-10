@@ -24,6 +24,7 @@ This page documents the work on the **Skolt Sami language model**.
 ## Testing
 
 -   [Koeparadigmat oikolukua varten](KaikkiGeneroidutParadigmat.md)
+-   [TestiAAttr](testit/TestiAAttr.md)
 
 ## Meetings
 
