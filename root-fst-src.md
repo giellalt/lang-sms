@@ -750,13 +750,13 @@ Gradation triggers 2015.02.09 For   Consonant Clusters
  * **%{A1%}** used with vuejted 
  * **%{E1%}** used with kåʹmrded 
  * **%{Â1%}** used with mainsted 
- * **%{%ʹ%}** archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one. 
+ * **{ʹ}** archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one. 
  * **%{EÂ%}** archiform for ie:eä variation, e.g. pieʹǩǩ+N+Sg+Ill:peâkka 
 
 Hyphen at compound word boundary 
- * **%{%-Ø%}** Zero versus hyphen in compounding 
- * **%^Hyphen** at compound word boundary with %- 
- * **%^NoHyphen** at compound word boundary 
+ * **{-Ø}** - Zero versus hyphen in compounding 
+ * **%^Hyphen** - at compound word boundary with %- 
+ * **%^NoHyphen** - at compound word boundary 
 
 ## Escaped symbols 
 
