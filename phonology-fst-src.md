@@ -246,10 +246,6 @@ Penultimate consonant
 
 following morpheme or word boundary
 
-```
- * RBound = [(%^Hyphen: %-|%^NoHyphen:|%{%-Ø%}:) #:|.#.|%>|»|%-] ;
-```
-
 
 
 ossible triggers before VOWLower and VOWRaise
