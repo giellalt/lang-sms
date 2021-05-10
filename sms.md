@@ -994,7 +994,7 @@ More triggers, possibly realised as a segment:
  * `%{Â1%}:0` used with "mainsted" to tell (a story)
  * `%{A1%}:0` used with "vuejted" to drive (causative)
  * `%{E1%}:0` used with "kåʹmrded" to bow
- * `%{%ʼ%}:0` archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one.
+ * `{ʼ}:0` archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one.
  * `%{EÂ%}:e` archiform for ie:eâ variation
  * `%^IMPSG2:0`
  * `%^INDPRSSG3:0`
