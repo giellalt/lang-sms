@@ -174,7 +174,7 @@ More triggers, possibly realised as a segment:
  * `%^FRICG:0`
 
 Hyphen at compound word boundary
- * `%{%-Ø%}:0` Zero versus hyphen in compounding
+ * `{-Ø}:0` Zero versus hyphen in compounding
  * `%^Hyphen:0` at compound word boundary with %-
  * `%^NoHyphen:0` at compound word boundary
 
@@ -202,30 +202,32 @@ End of alphabet definitions
 ## Sets
 
  * Cns = b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž
- B C D F G H J K L M N P Q R S T V W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
+   B C D F G H J K L M N P Q R S T V W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
  * CNoV = b c d f g h j k l m n p q r s t w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž
-  B C D F G H J K L M N P Q R S T W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
+   B C D F G H J K L M N P Q R S T W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
 
  * CNoJ = b c d f g h k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž
-  B C D F G H K L M N P Q R S T V W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
+   B C D F G H K L M N P Q R S T V W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
 
  * Vow = a e ẹ i o u å ä â õ
-  A E Ẹ I O U Å Ä Â Õ ;
+   A E Ẹ I O U Å Ä Â Õ ;
  * VowNoIU = a e ẹ o å ä â õ
-  A E Ẹ O Å Ä Â Õ ;
+   A E Ẹ O Å Ä Â Õ ;
 
  * CNoJV = b c d f g h k l m n p q r s t w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž
- B C D F G H K L M N P Q R S T W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
+   B C D F G H K L M N P Q R S T W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
 
  * CNoDLRZ = b c f g h j k m n p q s t v w x z đ ǯ č ŋ ǩ ǧ ǥ š ž
-  B C F G H J K M N P Q S T V W X Z Đ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
+   B C F G H J K M N P Q S T V W X Z Đ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
 
  * Ltrs = Vow Cns ;
 
  * Dummy = %^PAL %^PALE %^PALẸ %^PALÕ %^PALÄ
-  %^CC2C %^CCC2C %^CCC2CC %^XYY2IY %^XYY2XY %^KK2GG %^XYY2VY %^KKK2GG %^KKK2ZERO %^C2CC
-  %^J2I %^Pen %^V2VV %^VOWLower %^RmVow %^PenVow2a %^RmCns %^VC %^V2VV
-  %^VOWRaise %^VOWSH %^CLong %^K2GG ; dummies in Sg.Nom and Sg.Gen
+   %^CC2C %^CCC2C %^CCC2CC %^XYY2IY %^XYY2XY
+   %^KK2GG %^XYY2VY %^KKK2GG %^KKK2ZERO %^C2CC
+   %^J2I %^Pen %^V2VV %^VOWLower %^RmVow
+   %^PenVow2a %^RmCns %^VC %^V2VV
+   %^VOWRaise %^VOWSH %^CLong %^K2GG ; - triggers in Sg.Nom and Sg.Gen
 
 
 
