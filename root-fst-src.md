@@ -711,6 +711,7 @@ Gradation triggers 2015.02.09 For   Consonant Clusters
 
 ### Diacritic with mnemonic names 
 
+<!-- {% raw %} -->
  * **%^1VOW** vowel position and length 
  * **%^2VOW** 
  * **%^3VOW** 
@@ -737,7 +738,7 @@ Gradation triggers 2015.02.09 For   Consonant Clusters
  * **%^PALÕ** Depalatalisation causes â:õ tiõttum 
  * **%^RmVow** for removing vowels e, â, a before final consonant in stem 
  * **%^UltRmVow** for removing vowels e, â, a after final consonant in stem 
- * **%^RmCns** for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta 
+ * **%^RmCns.** for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta 
  * **%^VC** Voicing s:z š:ž 
  * **%^VOWLower** for lowering i>e, õ>â, â>ä, u>o, o>å 
  * **%^U2Õ** lowers u>õ    
@@ -750,13 +751,16 @@ Gradation triggers 2015.02.09 For   Consonant Clusters
  * **%{A1%}** used with vuejted 
  * **%{E1%}** used with kåʹmrded 
  * **%{Â1%}** used with mainsted 
- * **{ʹ}** archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one. 
+ * **%{Â1%}** archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one. 
  * **%{EÂ%}** archiform for ie:eä variation, e.g. pieʹǩǩ+N+Sg+Ill:peâkka 
 
+
+
 Hyphen at compound word boundary 
- * **{-Ø}** - Zero versus hyphen in compounding 
+ * **%{EÂ%}** - Zero versus hyphen in compounding 
  * **%^Hyphen** - at compound word boundary with %- 
  * **%^NoHyphen** - at compound word boundary 
+<!-- {% endraw %} -->
 
 ## Escaped symbols 
 

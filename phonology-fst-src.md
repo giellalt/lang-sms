@@ -161,12 +161,14 @@ Other vowel length and consonant length will be phased out
  * %^CShort:0 Shortening
 
 More triggers, possibly realised as a segment:
+
+<!-- {% raw %} -->
  * `X3:0` causes weak grade
  * `%{VU%}:u` used with stuuʹl
  * `%{Â1%}:0` used with "mainsted" to tell (a story)
  * `%{A1%}:0` used with "vuejted" to drive (causative)
  * `%{E1%}:0` used with "kåʹmrded" to bow
- * `{ʼ}:0` archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one.
+ * `%{E1%}:0` archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one.
  * `%{EÂ%}:e` archiform for ie:eâ variation
  * `%^IMPSG2:0`
  * `%^INDPRSSG3:0`
@@ -174,9 +176,10 @@ More triggers, possibly realised as a segment:
  * `%^FRICG:0`
 
 Hyphen at compound word boundary
- * `{-Ø}:0` Zero versus hyphen in compounding
+ * `%^FRICG:0` Zero versus hyphen in compounding
  * `%^Hyphen:0` at compound word boundary with %-
  * `%^NoHyphen:0` at compound word boundary
+<!-- {% endraw %} -->
 
 
 Literal quotes and angles must be escaped (cf morpheme boundaries below):
@@ -246,7 +249,11 @@ Penultimate consonant
 
 following morpheme or word boundary
 
-
+<!-- {% raw %} -->
+```
+ * RBound = [(%^Hyphen: %-|%^NoHyphen:|%{%-Ø%}:) #:|.#.|%>|»|%-] ;
+```
+<!-- {% endraw %} -->
 
 ossible triggers before VOWLower and VOWRaise
 
