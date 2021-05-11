@@ -176,12 +176,17 @@ Alphabet !!≈ ## @CODE@
  %^CShort:0      !!≈ * @CODE@ Shortening
 
 !! More triggers, possibly realised as a segment:
+
+! Some of the following doccommewnts must be escaped using {% raw %} @CODE@  {% endraw %}, because
+! {%..%} is a reserved construct in Jekyll. Jekyll is the publishing tool used by GitHub
+! Pages to convert Markdown to HTML.
+!! <!-- {% raw %} -->
  X3:0          !!≈ * `@CODE@` causes weak grade
  %{VU%}:u      !!≈ * `@CODE@` used with stuuʹl
  %{Â1%}:0      !!≈ * `@CODE@` used with "mainsted" to tell (a story)
  %{A1%}:0      !!≈ * `@CODE@` used with "vuejted" to drive (causative)
  %{E1%}:0      !!≈ * `@CODE@` used with "kåʹmrded" to bow
- %{%ʼ%}:0      !!  * `{ʼ}:0` archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one.
+ %{%ʼ%}:0      !!  * `@CODE@` archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one.
  %{EÂ%}:e      !!≈ * `@CODE@` archiform for ie:eâ variation
  %^IMPSG2:0    !!≈ * `@CODE@`
  %^INDPRSSG3:0 !!≈ * `@CODE@`
@@ -189,9 +194,10 @@ Alphabet !!≈ ## @CODE@
  %^FRICG:0     !!≈ * `@CODE@`
 
 !! Hyphen at compound word boundary
-%{%-Ø%}:0    !!  * `{-Ø}:0` Zero versus hyphen in compounding
+%{%-Ø%}:0    !!  * `@CODE@` Zero versus hyphen in compounding
 %^Hyphen:0   !!≈ * `@CODE@` at compound word boundary with %-
 %^NoHyphen:0 !!≈ * `@CODE@` at compound word boundary
+!! <!-- {% endraw %} -->
 
 
 !! Literal quotes and angles must be escaped (cf morpheme boundaries below):
@@ -267,8 +273,11 @@ PenUltCns = [Cns:|%{XC%}:] ;
 
 !! following morpheme or word boundary
 
-RBound = [(%^Hyphen: %-|%^NoHyphen:|%{%-Ø%}:) #:|.#.|%>|»|%-] ; ! This can't easily be included in Markdown documentation, because of interference with the Jekyll pragma syntax. Jekyll is the GitHub publishing system that turns Markdown pages into HTML.
-
+!! <!-- {% raw %} -->
+!! ```
+RBound = [(%^Hyphen: %-|%^NoHyphen:|%{%-Ø%}:) #:|.#.|%>|»|%-] ; !!≈ * @CODE@
+!! ```
+!! <!-- {% endraw %} -->
 
 !! ossible triggers before VOWLower and VOWRaise
 
