@@ -5,7 +5,7 @@
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-sms)](https://github.com/giellalt/lang-sms/issues)
 [![Build status](https://github.com/giellalt/lang-sms/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-sms/actions)
 
-This page documents the work on the **Skolt Sami language model**. 
+This page documents the work on the [Skolt Sami language model](http://github.com/giellalt/lang-sms). 
 
 # Project documentation
 
