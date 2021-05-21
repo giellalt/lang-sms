@@ -1,0 +1,160 @@
+! Divvun & Giellatekno - open source grammars for Sámi and other languages
+! Copyright © 2000-2010 The University of Tromsø & the Norwegian Sámi Parliament
+! http://giellatekno.uit.no & http://divvun.no
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version. The GNU General Public License
+! is found at http://www.gnu.org/licenses/gpl.html. It is
+! also available in the file $GTHOME/LICENSE.txt.
+!
+! Other licensing options are available upon request, please contact
+! giellatekno@hum.uit.no or feedback@divvun.no
+
+
+!! # Inari Saami number <-> text
+
+
+!LEXICON num
+!+Num: numsg ;
+
+!LEXICON numsg
+!+Sg+Nom: K ;
+!+Sg+Acc: K ;
+!+Sg+Gen: K ;
+
+
+
+
+LEXICON yeartagpl
+          +Num+Sem/Year+Pl+Nom:    # ;
+          +Num+Sem/Year+Pl+Gen:    # ;
+          +Num+Sem/Year+Pl+Acc:    # ;
+ +Num+Sem/Year+Err/Orth+Pl+Loc:%:s # ;
+
+LEXICON dateyearcase
+ dateyearcase_nullsuff ;
+ dateyearcase_fullsuff ;
+
+LEXICON dateyearcase_nullsuff
+          +Sg+Nom: # ;
+          +Sg+Gen: # ;
+          +Sg+Acc: # ;
+     +Sg+Ill+Attr: # ;
+     +Sg+Loc+Attr: # ;
+
+LEXICON dateyearcase_nullsuff_w_dot
+          +Sg+Nom: MARKDOT ;
+          +Sg+Gen: MARKDOT ;
+          +Sg+Acc: MARKDOT ;
+     +Sg+Ill+Attr: MARKDOT ;
+     +Sg+Loc+Attr: MARKDOT ;
+
+LEXICON dateyearcase_fullsuff
+ +Err/Orth+Sg+Acc:%:a  #      ;
+ +Err/Orth+Sg+Gen:%:a  #      ;
+          +Sg+Loc:%:s  #      ;
+ +Err/Orth+Sg+Loc:s    #      ;
+ +Err/Orth+Sg+Loc:%:is #      ;
+ +Err/Orth+Sg+Loc:is   #      ;
+ +Err/Orth+Sg+Loc:%:as #      ;
+          +Sg+Ill:%:i  #      ;
+ +Err/Orth+Sg+Ill:i    #      ;
+ +Err/Orth+Sg+Ill:%:ii #      ;
+      +Cmp/SplitR:%-   ENDLEX ;
+      +Cmp/SplitR:%–   ENDLEX ;
+
+
+LEXICON ARABICCASES   !!≈ * **@CODE@**  adds +Arab
+ +Arab:  DIGITCASES ;
+
+LEXICON ARABICCASE   !!≈ * **@CODE@**  adds +Arab
+ +Arab:  DIGITCASE ;
+
+LEXICON ARABICCASE0   !!≈ * **@CODE@**  adds +Arab
+ +Arab:  DIGITCASE0 ;
+
+
+LEXICON DIGITCASES   !!≈ * **@CODE@**  to distinguish between 0 and oblique
+DIGITCASE0 ;
+DIGITCASE ;
+
+LEXICON DIGITCASE0   !!≈ * **@CODE@**
+ +Sg+Nom:      #      ;
+ +Sg+Gen:      #      ;
+ +Sg+Acc:      #      ;
+ +Sg+Ill+Attr: #      ;
+ +Sg+Loc+Attr: #      ;
+ +Cmp/SplitR+Cmp:%-    ENDLEX ;
+ +Cmp/SplitR+Cmp:%–    ENDLEX ;
+
+
+LEXICON DIGITCASE
+!  f+Sg+Nom+Err/Orth:f       # ; ! s. 123f.
+! ff+Sg+Nom+Err/Orth:ff      # ; ! s. 123ff.
+!  b+Sg+Nom+Err/Orth:b       # ; ! § 123b
+!  c+Sg+Nom+Err/Orth:c       # ; ! § 123c
+!  d+Sg+Nom+Err/Orth:d       # ; ! § 123d
+!  e+Sg+Nom+Err/Orth:e       # ; ! § 123e
+             +Sg+Ill:%>ân    # ;
+             +Sg+Loc:%>st    # ;
+             +Sg+Com:%>áin   # ;
+                +Ess:%>n     # ;
+                +Par:%>d     # ;
+             +Pl+Gen:%>i     K ; !
+             +Pl+Acc:%>id    K ; !
+             +Pl+Ill:%>id    K ; ! 100:iide čuđiide
+             +Pl+Loc:%>in    K ; !
+             +Pl+Com:%>iguin K ; !
+
+!ordinals
+
+LEXICON ARABICCASEORD
+  +Sg+Gen:%>da    K ;
+! +Sg+Acc:%>dav   K ;
+! +Sg+Ill:%>dij   K ;
+! +Sg+Com:%>dijn  K ;
+! +Sg+Ess:%>din   K ;
+! +Pl+Nom:%>da    K ;
+! +Pl+Gen:%>dij   K ;
+! +Pl+Acc:%>dijt  K ;
+! +Pl+Ill:%>dijda K ;
+! +Pl+Com:%>dij   K ;
+
+LEXICON ARABICCASEORD-ERR
+  +Sg+Gen:%>a    K ;
+! +Sg+Acc:%>av   K ;
+! +Sg+Ill:%>ij   K ;
+! +Sg+Com:%>ijn  K ;
+! +Sg+Ess:%>in   K ;
+! +Pl+Nom:%>a    K ;
+! +Pl+Gen:%>ij   K ;
+! +Pl+Acc:%>ijt  K ;
+! +Pl+Ill:%>ijda K ;
+! +Pl+Com:%>ij   K ;
+
+LEXICON ARABICCASECOLL
+  +Sg+Nom:%>s    K ;
+! +Sg+Gen:%>sa   K ;
+! +Sg+Acc:%>sav  K ;
+! +Sg+Ill:%>sij  K ;
+! +Sg+Loc:%>sin  K ;
+! +Sg+Loc:%>sis  K ;
+! +Sg+Com:%>sijn K ;
+
+ 
+
+LEXICON ROMNUMTAGOBL
+ +Rom+Sg+Ill:%>hán        # ;
+ +Rom+Sg+Ill:%>n        # ;
+ +Rom+Sg+Loc:%>st        # ;
+ +Rom+Sg+Com:%>jn       # ;
+ +Rom+Ess:%>n        # ;
+ +Rom+Sg+Par:%>d        # ;
+
+
+! A final section with some isolated numeral expresssions !
+! ------------------------------------------------------- !
+
+

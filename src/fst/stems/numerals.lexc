@@ -26,407 +26,1042 @@ LEXICON Numeral   !!= * **@CODE@**  initial lexica
 !            OLD              ; ! for "thirteen hundred, etc.
 !            num-imprecise    ;
 !            num-collective   ;
+             ARABICS           ; ! for the arabic numerals        !
              ARABIC           ; ! for the arabic numerals        !
- +Use/Circ:  ROMAN            ; ! for the roman numerals         !
- +Use/Circ:  NUM-PREFIXES     ; ! for §34 etc.                   !
- +Use/Circ:  ISOLATED-NUMEXP  ; ! for ½ etc.                     !
+             ROMAN            ; ! for the roman numerals         !
+             NUM-PREFIXES     ; ! for §34 etc.                   !
+             ISOLATED-NUMEXP  ; ! for ½ etc.                     !
 !            11TO99F          ;
 !            21TO99           ;
-!            DUHAT            ;
+!           DUHAT            ;
 !            1TO9DUHAT        ;
 !            O-NUPPELOHKAI    ;
 !            NUPPELOHKAICUODI ;
 !            NUPPELOHKAI      ;
 
-
-! Arabic numerals
-! ---------------
+! ONES ;
 
 
-LEXICON NUM-PREFIXES   !!= * **@CODE@**
-    §+Use/Circ:§      ARABIC ; ! §24
-   §§+Use/Circ:§§     ARABIC ; ! §§24
-  §% +Use/Circ:§%     ARABIC ; ! § 24
- §§% +Use/Circ:§§%    ARABIC ; ! §§ 24
-   %-+Use/Circ:%-     ARABIC ; ! -24
-   %‒+Use/Circ:%‒     ARABIC ; ! -24 U+2012
-   %–+Use/Circ:%–     ARABIC ; ! -24 U+2013
-   %—+Use/Circ:%—     ARABIC ; ! -24 U+2014
-   %―+Use/Circ:%―     ARABIC ; ! -24 U+2015
-   %++Use/Circ:%+     ARABIC ; ! <plus>24
- %-% +Use/Circ:%-%    ARABIC ; ! - 24
- %‒% +Use/Circ:%‒%    ARABIC ; ! - 24 U+2012
- %–% +Use/Circ:%–%    ARABIC ; ! - 24 U+2013
- %—% +Use/Circ:%—%    ARABIC ; ! - 24 U+2014
- %―% +Use/Circ:%―%    ARABIC ; ! - 24 U+2015
- %+% +Use/Circ:%+%    ARABIC ; ! <plus> 24
-   %*+Use/Circ:%*     ARABIC ; ! *24
-   %$+Use/Circ:%$     ARABIC ; ! $24
-   %€+Use/Circ:%€     ARABIC ; ! €24
-   %<+Use/Circ:%[%<%] ARABIC ; ! <24
-   %>+Use/Circ:%[%>%] ARABIC ; ! >24
-  s%.+Use/Circ:s%.    ARABIC ; ! s.24
 
-LEXICON ARABIC   !!= * **@CODE@** arabic numerals
-< [1|2|3|4|5|6|7|8|9|%0] > ARABICLOOP      ;
-< [1|2|3|4|5|6|7|8|9|%0] > ARABICLOOPORD   ;
-< [1|2|3|4|5|6|7|8|9|%0] > ARABICLOOPCOLL  ;
-< [1|2|3|4|5|6|7|8|9|%0] > ARABICLOOPphone ;
+! LEXICON ONES
+! CARDINAL ;
+! !ORDINAL ;
 
-LEXICON ARABICLOOPphone   !!= * **@CODE@** +358(0)16671254
-< [1|2|3|4|5|6|7|8|9|%0] > ARABICLOOPphone ;
-!  +Use/Circ:              ARABICLOOPphone ; ! Infinite loop on the surface side
-  (+Use/Circ:(             ARABICLOOPphone ;
-  )+Use/Circ:)             ARABICLOOPphone ;
- %—+Use/Circ:%—            ARABICLOOPphone ; 
-                           ARABICCASEphone ;
-
-LEXICON ARABICCASEphone   !!= * **@CODE@**  
- +Num+Sg+Nom: # ;
- +Num+Sg+Acc: # ;
-
-LEXICON ARABICLOOP   !!= * **@CODE@**
-         +Use/Circ:         ARABIC ;
-       %-+Use/Circ:%-       ARABIC ; ! 1-2 multipart numbers
-       %–+Use/Circ:%–       ARABIC ; ! 1–2 multipart numbers
-       %—+Use/Circ:%—       ARABIC ; ! 1—2 multipart numbers
-     %.%-+Use/Circ:%.%-     ARABIC ; ! 1.-2 multipart numbers ! !
-     %.%–+Use/Circ:%.%–     ARABIC ; ! 1.–2 multipart numbers ! !
-     %.%—+Use/Circ:%.%—     ARABIC ; ! 1.—2 multipart numbers ! !
-     %-% +Use/Circ:%-%      ARABIC ; ! 1- 2 multipart numbers
-     %–% +Use/Circ:%–%      ARABIC ; ! 1– 2 multipart numbers
-     %—% +Use/Circ:%—%      ARABIC ; ! 1— 2 multipart numbers
-     % %-+Use/Circ:% %-     ARABIC ; ! 1 -2 multipart numbers
-     % %–+Use/Circ:% %–     ARABIC ; ! 1 –2 multipart numbers
-     % %—+Use/Circ:% %—     ARABIC ; ! 1 —2 multipart numbers
-   % %-% +Use/Circ:% %-%    ARABIC ; ! 1 - 2 multipart numbers
-   % %–% +Use/Circ:% %–%    ARABIC ; ! 1 – 2 multipart numbers
-   % %—% +Use/Circ:% %—%    ARABIC ; ! 1 — 2 multipart numbers
- % %-%-% +Use/Circ:% %-%-%  ARABIC ; ! 1 -- 2 multipart numbers
- % %–%–% +Use/Circ:% %–%–%  ARABIC ; ! 1 –– 2 multipart numbers
- % %—%—% +Use/Circ:% %—%—%  ARABIC ; ! 1 —— 2 multipart numbers
-       %.+Use/Circ:%.       ARABIC ;
-       %:+Use/Circ:%:       ARABIC ;
-       %,+Use/Circ:%,       ARABIC ;
-       % +Use/Circ:%        ARABIC ; ! Allowing for "23 500".
-         +Use/Circ:         ARABIC ; ! Allowing for "23 500" w/nbsp (init char = alt-space)
-       %/+Use/Circ:%/       ARABIC ; ! 24/12
-     %/% +Use/Circ:%/%      ARABIC ; ! 24/ 12
-     % %/+Use/Circ:% %/     ARABIC ; ! 24 /12
-        '+Use/Circ:'        ARABIC ;
-
-     +Num+Use/Circ:         RNum   ; ! Num Cmp Noun, with hyphen
-
-         ,%-+Num+Use/Circ:,%-    ARABICCASES     ; ! 10,-
-,%-+Num+Err/Orth+Use/Circ:.%-    ARABICCASES     ; ! 10.- It is wrong, but written.
-   % %-+Err/Orth+Use/Circ:% %-   ARABICDELIMITER ; ! 1 - multipart numbers - "1 -:s"?
- % %-%-+Err/Orth+Use/Circ:% %-%- ARABICDELIMITER ; ! 1 -- multipart numbers
-              %%+Use/Circ:%%     ARABICDELIMITER ; ! 50%. It is wrong, but 75 % of us write "75%".
-            % %%+Use/Circ:% %%   ARABICDELIMITER ; ! the correct ones as well... 50 % etc.
-                                 ARABICDELIMITER ; ! list of number-case delimiters
-
-LEXICON ARABICLOOPORD   !!= * **@CODE@** ordinals
- +A+Ord+Attr:%. # ;
- +A+Ord+Use/Circ: ARABICDELIMITERORD ;
- < [a|b|c|d|e|f|f %  f] > ACASETAG ;
-
-LEXICON ACASETAG   !!= * **@CODE@**  is for 1e+Num+Sg+Num:1e
-+Num: ARABICCASE0 ;
-+Num:%: ARABICCASE ;
-
-LEXICON ARABICLOOPCOLL   !!= * **@CODE@** collectives
- +N+Coll+Use/Circ: ARABICDELIMITERCOLL ;
-
-
-LEXICON ARABICDELIMITER   !!= * **@CODE@**  blank + 3 delim, what does the lg counc prefer?
- +Num:            ARABICCASE0      ; ! This is the 1984 case, ie NGA
- +Num:%:          ARABICCASE       ; ! This is the 1984:s case.
- +Num+Err/Orth:   ARABICCASE       ; ! This is the 1984s case.
- +Num+Err/Orth:'  ARABICCASE       ; ! This is the 1984's case.
- +Num+Err/Orth:’  ARABICCASE       ; ! optio-B07 = ’
- +Num+Err/Orth:%- ARABICCASE       ; ! This is the 1984-s case.
- +Num+Err/Orth:´  ARABICCASE       ; ! This is the 1984´s case.
- +Num:            ARABICCOMPOUNDS ; ! 6-jáhkasaš, 
-
-
-LEXICON ARABICDELIMITERORD   !!= * **@CODE@** ordinals
-!             ARABICCASE0   ; ! This is the 1984 case, ie NGA
-          :%: ARABICCASEORD ; ! This is the 1984:s case.
- +Err/Orth:   ARABICCASEORD ; ! This is the 1984s case.
- +Err/Orth:'  ARABICCASEORD ; ! This is the 1984's case.
- +Err/Orth:%- ARABICCASEORD ; ! This is the 1984-s case.
-
-LEXICON ARABICDELIMITERCOLL   !!= * **@CODE@** collectives
-!             ARABICCASE0    ; ! This is the 1984 case, ie NGA
-          :%: ARABICCASECOLL ; ! This is the 1984:s case.
- +Err/Orth:   ARABICCASECOLL ; ! This is the 1984s case.
- +Err/Orth:'  ARABICCASECOLL ; ! This is the 1984's case.
- +Err/Orth:%- ARABICCASECOLL ; ! This is the 1984-s case.
-
-LEXICON ARABICCASES   !!= * **@CODE@**  to distinguish between 0 and oblique
-ARABICCASE0 ;
-ARABICCASE ;
-
-LEXICON ARABICCASE0   !!= * **@CODE@**
- +Sg+Nom:      #      ;
- +Sg+Gen:      #      ;
- +Sg+Acc:      #      ;
- +Sg+Ill+Attr: #      ;
- +Sg+Loc+Attr: #      ;
- +Cmp/SplitR:%-    ENDLEX ;
- +Cmp/SplitR:%–    ENDLEX ;
-
-LEXICON ARABICCASE   !!= * **@CODE@**
-!   +Sg+Nom+Err/Orth+Use/Circ:   # ;
-!     f+Nom+Err/Orth+Use/Circ:f  # ; ! s. 123f.
-!    ff+Nom+Err/Orth+Use/Circ:ff # ; ! s. 123ff.
-!  b+Sg+Nom+Err/Orth+Use/Circ:b  # ; ! § 123b
-!  c+Sg+Nom+Err/Orth+Use/Circ:c  # ; ! § 123c
-!  d+Sg+Nom+Err/Orth+Use/Circ:d  # ; ! § 123d
-!  e+Sg+Nom+Err/Orth+Use/Circ:e  # ; ! § 123e
-!  š+Sg+Nom+Err/Orth+Use/Circ:š  # ;
-
-!+Sg+Gen+Err/Orth:      # ;
-!+Sg+Acc+Err/Orth:      # ;
- +Sg+Gen+Err/Orth:a     # ; ! But here 123a 123
- +Sg+Acc+Err/Orth:a     # ;
- +Sg+Gen+Err/Orth:ža    # ;
- +Sg+Acc+Err/Orth:ža    # ;
- +Sg+Ill+Use/NG:%>i     # ;
- +Sg+Ill+Err/Orth:ij    # ;
- +Sg+Ill+Err/Orth:žij   # ;
- +Sg+Ill+Err/Orth:áj    # ; ! Testing over the weekend. !
- +Sg+Loc:%>s            K ;
- +Sg+Loc+Err/Orth:is    K ;
- +Sg+Loc+Err/Orth:žis   K ;
- +Sg+Loc+Err/Orth:as    # ;
- +Sg+Com:%>in           # ;
- +Sg+Com+Err/Orth:žijn  # ;
- +Sg+Com+Err/Orth:ain   # ;
- +Sg+Ess:%>n            # ;
- +Sg+Ess+Err/Orth:žin   # ;
- +Sg+Ess+Err/Orth:an    # ;
- +Pl+Nom:%>t            K ;
- +Pl+Gen+Err/Orth:ijd9  K ;
- +Pl+Gen+Use/NG:%>id9   K ;
- +Pl+Acc+Err/Orth:ijd9  K ;
- +Pl+Acc+Use/NG:%>id9   K ;
- +Pl+Ill+Err/Orth:ijde  K ; ! 100:iide čuđiide
- +Pl+Ill+Err/Orth:ijdda K ; ! 1000:idda duháhiidda
- +Pl+Ill+Use/NG:%>ide   K ; ! 100:iide čuđiide
- +Pl+Ill+Err/Orth:idda  K ; ! 1000:idda duháhiidda
- +Pl+Loc:%>in           K ;
- +Pl+Com:%>igujn        K ;
-
- LEXICON ARABICCASEORD   !!= * **@CODE@** ordinals
- +Sg+Gen:%>da     K ;
- +Sg+Acc:%>da     K ;
- +Sg+Ill:%>dij    K ;
- +Sg+Loc:%>dis    K ;
- +Sg+Com:%>dijn   K ;
- +Sg+Ess:%>din    K ;
- +Pl+Nom:%>dat    K ;
- +Pl+Gen:%>dijd9  K ;
- +Pl+Acc:%>dijd9  K ;
- +Pl+Ill:%>dijdda K ;
- +Pl+Loc:%>dijn   K ;
- +Pl+Com:%>digujn K ;
-
- LEXICON ARABICCASECOLL   !!= * **@CODE@** collectives
- +Sg+Gen:%>sa   K ;
- +Sg+Acc:%>sa   K ;
- +Sg+Ill:%>sij  K ;
- +Sg+Loc:%>sis  K ;
- +Sg+Com:%>sijn K ;
-
-
-! The Roman numerals !
-! ------------------ !
-
-LEXICON ROMAN   !!= * **@CODE@**  roman numerals
- +Use/Circ: ROM-THOUSAND ; !
- +Use/Circ: ROM-HUNDRED ; !
- +Use/Circ: ROM-TEN ; !
- +Use/Circ: ROM-ONE ; !
-
-LEXICON ROM-THOUSAND   !!= * **@CODE@** 
- M+Use/Circ:M ROM-THOUSAND-TAG; !
- MM+Use/Circ:MM ROM-THOUSAND-TAG; !
- MMM+Use/Circ:MMM ROM-THOUSAND-TAG; !
- MMMM+Use/Circ:MMMM ROM-THOUSAND-TAG; !
- MMMMM+Use/Circ:MMMMM ROM-THOUSAND-TAG; !
-
-LEXICON ROM-THOUSAND-TAG   !!= * **@CODE@** 
- +Use/Circ: ROMNUMTAG ; !
- +Use/Circ: ROM-HUNDRED ; !
- +Use/Circ: ROM-TEN ;				!
- +Use/Circ: ROM-ONE ;				!
- +Use/Circ: ROM-SPLIT ; !
-
-LEXICON ROM-HUNDRED   !!= * **@CODE@** 
- C+Use/Circ:C ROM-HUNDRED-TAG; !
- CC+Use/Circ:CC ROM-HUNDRED-TAG; !
- CCC+Use/Circ:CCC ROM-HUNDRED-TAG; !
- CD+Use/Circ:CD ROM-HUNDRED-TAG; !
- D+Use/Circ:D ROM-HUNDRED-TAG; !
- DC+Use/Circ:DC ROM-HUNDRED-TAG; !
- DCC+Use/Circ:DCC ROM-HUNDRED-TAG; !
- DCCC+Use/Circ:DCCC ROM-HUNDRED-TAG; !
- CM+Use/Circ:CM ROM-HUNDRED-TAG; !
-
-LEXICON ROM-HUNDRED-TAG   !!= * **@CODE@** 
- +Use/Circ: ROMNUMTAG ; !
- +Use/Circ: ROM-TEN ; !
- +Use/Circ: ROM-ONE ;				!
- +Use/Circ: ROM-SPLIT ; !
-
-LEXICON ROM-TEN   !!= * **@CODE@** 
- X+Use/Circ:X ROM-TEN-TAG; !
- XX+Use/Circ:XX ROM-TEN-TAG; !
- XXX+Use/Circ:XXX ROM-TEN-TAG; !
- XL+Use/Circ:XL ROM-TEN-TAG; !
- L+Use/Circ:L ROM-TEN-TAG; !
- LX+Use/Circ:LX ROM-TEN-TAG; !
- LXX+Use/Circ:LXX ROM-TEN-TAG; !
- LXXX+Use/Circ:LXXX ROM-TEN-TAG; !
- XC+Use/Circ:XC ROM-TEN-TAG; !
-
-LEXICON ROM-TEN-TAG   !!= * **@CODE@** 
- +Use/Circ: ROMNUMTAG ; !
- +Use/Circ: ROM-ONE ; !
- +Use/Circ: ROM-SPLIT ; !
-
-LEXICON ROM-ONE   !!= * **@CODE@** 
- I+Use/Circ:I ROM-ONE-TAG; !
- II+Use/Circ:II ROM-ONE-TAG; !
- III+Use/Circ:III ROM-ONE-TAG; !
- IV+Use/Circ:IV ROM-ONE-TAG; !
- V+Use/Circ:V ROM-ONE-TAG; !
- VI+Use/Circ:VI ROM-ONE-TAG; !
- VII+Use/Circ:VII ROM-ONE-TAG; !
- VIII+Use/Circ:VIII ROM-ONE-TAG; !
- IX+Use/Circ:IX ROM-ONE-TAG; !
-
-LEXICON ROM-ONE-TAG   !!= * **@CODE@** 
- +Use/Circ: ROMNUMTAG ; !
-! +N: ROMNUMTAG ; ! !The Olav viđeš fix (Roman V now gets A)
- +Use/Circ: ROM-SPLIT ; !
-
-! Here, we split the Roman numerals, in order to account for cases like "Kapihtal II-IV".
-! We may send this first part directly to ROM-TAG below (and get the +Num tag), or we may
-! send them through a second loop, identical to the first one, but marked wit "2" (the lexica
-! are called 2ROMAN, etc. We do this instead of making a loop, since we do not want cases
-! like "II-IV-VI-VII-IX". If that should turn out to be a good idea, a loop would do the
-! trick.
-
-LEXICON ROM-SPLIT   !!= * **@CODE@** 
- +Use/Circ:%- 2ROMAN ; ! II-VI, etc. !
-
-
-! Here goes loop 2.
-
-LEXICON 2ROMAN   !!= * **@CODE@** 
- +Use/Circ: 2ROM-THOUSAND ; !
- +Use/Circ: 2ROM-HUNDRED ; !
- +Use/Circ: 2ROM-TEN ; !
- +Use/Circ: 2ROM-ONE ; !
-
-LEXICON 2ROM-THOUSAND   !!= * **@CODE@** 
- M+Use/Circ:M 2ROM-THOUSAND-TAG; !
- MM+Use/Circ:MM 2ROM-THOUSAND-TAG; !
- MMM+Use/Circ:MMM 2ROM-THOUSAND-TAG; !
- MMMM+Use/Circ:MMMM 2ROM-THOUSAND-TAG; !
- MMMMM+Use/Circ:MMMMM 2ROM-THOUSAND-TAG; !
-
-LEXICON 2ROM-THOUSAND-TAG   !!= * **@CODE@** 
- +Use/Circ: ROMNUMTAG ; !
- +Use/Circ: 2ROM-HUNDRED ; !
- +Use/Circ: 2ROM-TEN ;				 !
- +Use/Circ: 2ROM-ONE ;				!
-
-LEXICON 2ROM-HUNDRED   !!= * **@CODE@** 
- C+Use/Circ:C 2ROM-HUNDRED-TAG; !
- CC+Use/Circ:CC 2ROM-HUNDRED-TAG; !
- CCC+Use/Circ:CCC 2ROM-HUNDRED-TAG; !
- CD+Use/Circ:CD 2ROM-HUNDRED-TAG; !
- D+Use/Circ:D 2ROM-HUNDRED-TAG; !
- DC+Use/Circ:DC 2ROM-HUNDRED-TAG; !
- DCC+Use/Circ:DCC 2ROM-HUNDRED-TAG; !
- DCCC+Use/Circ:DCCC 2ROM-HUNDRED-TAG; !
- CM+Use/Circ:CM 2ROM-HUNDRED-TAG; !
-
-LEXICON 2ROM-HUNDRED-TAG   !!= * **@CODE@** 
- +Use/Circ: ROMNUMTAG ; !
- +Use/Circ: 2ROM-TEN ; !
- +Use/Circ: 2ROM-ONE ;				!
-LEXICON 2ROM-TEN   !!= * **@CODE@** 
- X+Use/Circ:X 2ROM-TEN-TAG; !
- XX+Use/Circ:XX 2ROM-TEN-TAG; !
- XXX+Use/Circ:XXX 2ROM-TEN-TAG; !
- XL+Use/Circ:XL 2ROM-TEN-TAG; !
- L+Use/Circ:L 2ROM-TEN-TAG; !
- LX+Use/Circ:LX 2ROM-TEN-TAG; !
- LXX+Use/Circ:LXX 2ROM-TEN-TAG; !
- LXXX+Use/Circ:LXXX 2ROM-TEN-TAG; !
- XC+Use/Circ:XC 2ROM-TEN-TAG; !
-
-LEXICON 2ROM-TEN-TAG   !!= * **@CODE@** 
- +Use/Circ: ROMNUMTAG ; !
- +Use/Circ: 2ROM-ONE ; !
-
-LEXICON 2ROM-ONE   !!= * **@CODE@** 
- I+Use/Circ:I 2ROM-ONE-TAG; !
- II+Use/Circ:II 2ROM-ONE-TAG; !
- III+Use/Circ:III 2ROM-ONE-TAG; !
- IV+Use/Circ:IV 2ROM-ONE-TAG; !
- V+Use/Circ:V 2ROM-ONE-TAG; !
- VI+Use/Circ:VI 2ROM-ONE-TAG; !
- VII+Use/Circ:VII 2ROM-ONE-TAG; !
- VIII+Use/Circ:VIII 2ROM-ONE-TAG; !
- IX+Use/Circ:IX 2ROM-ONE-TAG; !
-
-LEXICON 2ROM-ONE-TAG   !!= * **@CODE@** 
- +Use/Circ: ROMNUMTAG ; !
-
-LEXICON ROMNUMTAG   !!= * **@CODE@**
- +Num+Nom+Use/Circ:%> # ; !
- +Num+Gen+Use/Circ:%> # ; !
- +Num+Acc+Use/Circ:%> # ; !
- +A+Ord+Use/Circ:%.%> # ; ! !III. as ordinal.
- +A+Ord+Use/Circ:%> # ; ! !Looking for trouble...
- +Num+Use/Circ:%: ROMNUMTAGOBL ; !
- +Num+Use/Circ+Err/Orth:'  ROMNUMTAGOBL ; !
- +Num+Use/Circ+Err/Orth:%- ROMNUMTAGOBL ; !
- +Num+Use/Circ+Err/Orth:%´ ROMNUMTAGOBL ; !
-! +Num: ROMNUMTAGOBL ; !
-
-LEXICON ROMNUMTAGOBL   !!= * **@CODE@** 
- +Gen+Err/Orth+Use/Circ:%>a # ; !  But here 123a 123
- +Acc+Err/Orth+Use/Circ:%>a # ; ! 
- +Ill+Use/Circ:%>i # ; !
- +Ill+Err/Orth+Use/Circ:%>ij # ; !
- +Ill+Err/Orth+Use/Circ:%>áj # ; !
- +Loc+Use/Circ:%>s # ; !
- +Com+Use/Circ:%>in # ; !
- +Ess+Use/Circ:%>n # ; !
-
-
-! A final section with some isolated numeral expresssions !
-! ------------------------------------------------------- !
-
-LEXICON ISOLATED-NUMEXP   !!= * **@CODE@** some isolated numeral expressions
- ½+Num:½ # ;
- ¹+Num:¹ # ;
- ²+Num:² # ;
- ³+Num:³ # ;
- ¼+Num:¼ # ;
- ¾+Num:¾ # ;
- okta+Num+Sg+Nom:okt # ; ! Okt mánná
+! LEXICON CARDINAL
+!  õhtt	   numtag ;
+!  kueʹhtt   numtag ;
+!  koumm	   numtag ;
+!  neʹllj	   numtag ;
+!  vitt	   numtag ;
+!  kutt	   numtag ;
+!  čiččâm	   numtag ;
+!  kääuʹc	   numtag ;
+!  ååuʹc	   numtag ;
+!  lååi	   numtag ;
 
 
 
 
-
+! õhtt
+! kueʹhtt
+! koumm
+! neʹllj
+! vitt
+! kutt
+! čiččâm
+! kääuʹc
+! ååuʹc
+! lååi
+! õtmlo
+! kuâtmlo
+! konmlo
+! nenjmlo
+! vittmlo
+! kuttmlo
+! činmlo
+! käcmlo
+! åcmlo
+! kuâhttlo
+! kuâhttloõhtt
+! kuâhttlokueʹhtt
+! kuâhttlokoumm
+! kuâhttloneʹllj
+! kuâhttlovitt
+! kuâhttlokutt
+! kuâhttločiččâm
+! kuâhttlokääuʹc
+! kuâhttloååuʹc
+! koummlo
+! koummloõhtt
+! koummlokueʹhtt
+! koummlokoumm
+! koummloneʹllj
+! koummlovitt
+! koummlokutt
+! koummločiččâm
+! koummlokääuʹc
+! koummloååuʹc
+! neʹlljlo
+! neʹlljloõhtt
+! neʹlljlokueʹhtt
+! neʹlljlokoumm
+! neʹlljloneʹllj
+! neʹlljlovitt
+! neʹlljlokutt
+! neʹlljločiččâm
+! neʹlljlokääuʹc
+! neʹlljloååuʹc
+! vittlo
+! vittloõhtt
+! vittlokueʹhtt
+! vittlokoumm
+! vittloneʹllj
+! vittlovitt
+! vittlokutt
+! vittločiččâm
+! vittlokääuʹc
+! vittloååuʹc
+! kuttlo
+! kuttloõhtt
+! kuttlokueʹhtt
+! kuttlokoumm
+! kuttloneʹllj
+! kuttlovitt
+! kuttlokutt
+! kuttločiččâm
+! kuttlokääuʹc
+! kuttloååuʹc
+! čičmlo
+! čičmloõhtt
+! čičmlokueʹhtt
+! čičmlokoumm
+! čičmloneʹllj
+! čičmlovitt
+! čičmlokutt
+! čičmločiččâm
+! čičmlokääuʹc
+! čičmloååuʹc
+! käʹhcclo
+! käʹhccloõhtt
+! käʹhcclokueʹhtt
+! käʹhcclokoumm
+! käʹhccloneʹllj
+! käʹhcclovitt
+! käʹhcclokutt
+! käʹhccločiččâm
+! käʹhcclokääuʹc
+! käʹhccloååuʹc
+! åʹhcclo
+! åʹhccloõhtt
+! åʹhcclokueʹhtt
+! åʹhcclokoumm
+! åʹhccloneʹllj
+! åʹhcclovitt
+! åʹhcclokutt
+! åʹhccločiččâm
+! åʹhcclokääuʹc
+! åʹhccloååuʹc
+! čueʹtt
+! čueʹttõhtt
+! čueʹttkueʹhtt
+! čueʹttkoumm
+! čueʹttneʹllj
+! čueʹttvitt
+! čueʹttkutt
+! čueʹttčiččâm
+! čueʹttkääuʹc
+! čueʹttååuʹc
+! čueʹttlååi
+! čueʹttõtmlo
+! čueʹttkuâtmlo
+! čueʹttkonmlo
+! čueʹttnenjmlo
+! čueʹttvittmlo
+! čueʹttkuttmlo
+! čueʹttčinmlo
+! čueʹttkäcmlo
+! čueʹttåcmlo
+! čueʹttkuâhttlo
+! čueʹttkuâhttloõhtt
+! čueʹttkuâhttlokueʹhtt
+! čueʹttkuâhttlokoumm
+! čueʹttkuâhttloneʹllj
+! čueʹttkuâhttlovitt
+! čueʹttkuâhttlokutt
+! čueʹttkuâhttločiččâm
+! čueʹttkuâhttlokääuʹc
+! čueʹttkuâhttloååuʹc
+! čueʹttkoummlo
+! čueʹttkoummloõhtt
+! čueʹttkoummlokueʹhtt
+! čueʹttkoummlokoumm
+! čueʹttkoummloneʹllj
+! čueʹttkoummlovitt
+! čueʹttkoummlokutt
+! čueʹttkoummločiččâm
+! čueʹttkoummlokääuʹc
+! čueʹttkoummloååuʹc
+! čueʹttneʹlljlo
+! čueʹttneʹlljloõhtt
+! čueʹttneʹlljlokueʹhtt
+! čueʹttneʹlljlokoumm
+! čueʹttneʹlljloneʹllj
+! čueʹttneʹlljlovitt
+! čueʹttneʹlljlokutt
+! čueʹttneʹlljločiččâm
+! čueʹttneʹlljlokääuʹc
+! čueʹttneʹlljloååuʹc
+! čueʹttvittlo
+! čueʹttvittloõhtt
+! čueʹttvittlokueʹhtt
+! čueʹttvittlokoumm
+! čueʹttvittloneʹllj
+! čueʹttvittlovitt
+! čueʹttvittlokutt
+! čueʹttvittločiččâm
+! čueʹttvittlokääuʹc
+! čueʹttvittloååuʹc
+! čueʹttkuttlo
+! čueʹttkuttloõhtt
+! čueʹttkuttlokueʹhtt
+! čueʹttkuttlokoumm
+! čueʹttkuttloneʹllj
+! čueʹttkuttlovitt
+! čueʹttkuttlokutt
+! čueʹttkuttločiččâm
+! čueʹttkuttlokääuʹc
+! čueʹttkuttloååuʹc
+! čueʹttčimlo
+! čueʹttčimloõhtt
+! čueʹttčimlokueʹhtt
+! čueʹttčimlokoumm
+! čueʹttčimloneʹllj
+! čueʹttčimlovitt
+! čueʹttčimlokutt
+! čueʹttčimločiččâm
+! čueʹttčimlokääuʹc
+! čueʹttčimloååuʹc
+! čueʹttkäʹhcclo
+! čueʹttkäʹhccloõhtt
+! čueʹttkäʹhcclokueʹhtt
+! čueʹttkäʹhcclokoumm
+! čueʹttkäʹhccloneʹllj
+! čueʹttkäʹhcclovitt
+! čueʹttkäʹhcclokutt
+! čueʹttkäʹhccločiččâm
+! čueʹttkäʹhcclokääuʹc
+! čueʹttkäʹhccloååuʹc
+! čueʹttåʹhcclo
+! čueʹttåʹhccloõhtt
+! čueʹttåʹhcclokueʹhtt
+! čueʹttåʹhcclokoumm
+! čueʹttåʹhccloneʹllj
+! čueʹttåʹhcclovitt
+! čueʹttåʹhcclokutt
+! čueʹttåʹhccločiččâm
+! čueʹttåʹhcclokääuʹc
+! čueʹttåʹhccloååuʹc
+! kueʹhttčueʹđ
+! kueʹhttčueʹđõhtt
+! kueʹhttčueʹđkueʹhtt
+! kueʹhttčueʹđkoumm
+! kueʹhttčueʹđneʹllj
+! kueʹhttčueʹđvitt
+! kueʹhttčueʹđkutt
+! kueʹhttčueʹđčiččâm
+! kueʹhttčueʹđkääuʹc
+! kueʹhttčueʹđååuʹc
+! kueʹhttčueʹđlååi
+! kueʹhttčueʹđõtmlo
+! kueʹhttčueʹđkuâtmlo
+! kueʹhttčueʹđkonmlo
+! kueʹhttčueʹđnenjmlo
+! kueʹhttčueʹđvittmlo
+! kueʹhttčueʹđkuttmlo
+! kueʹhttčueʹđčinmlo
+! kueʹhttčueʹđkäcmlo
+! kueʹhttčueʹđåcmlo
+! kueʹhttčueʹđkuâhttlo
+! kueʹhttčueʹđkuâhttloõhtt
+! kueʹhttčueʹđkuâhttlokueʹhtt
+! kueʹhttčueʹđkuâhttlokoumm
+! kueʹhttčueʹđkuâhttloneʹllj
+! kueʹhttčueʹđkuâhttlovitt
+! kueʹhttčueʹđkuâhttlokutt
+! kueʹhttčueʹđkuâhttločiččâm
+! kueʹhttčueʹđkuâhttlokääuʹc
+! kueʹhttčueʹđkuâhttloååuʹc
+! kueʹhttčueʹđkoummlo
+! kueʹhttčueʹđkoummloõhtt
+! kueʹhttčueʹđkoummlokueʹhtt
+! kueʹhttčueʹđkoummlokoumm
+! kueʹhttčueʹđkoummloneʹllj
+! kueʹhttčueʹđkoummlovitt
+! kueʹhttčueʹđkoummlokutt
+! kueʹhttčueʹđkoummločiččâm
+! kueʹhttčueʹđkoummlokääuʹc
+! kueʹhttčueʹđkoummloååuʹc
+! kueʹhttčueʹđneʹlljlo
+! kueʹhttčueʹđneʹlljloõhtt
+! kueʹhttčueʹđneʹlljlokueʹhtt
+! kueʹhttčueʹđneʹlljlokoumm
+! kueʹhttčueʹđneʹlljloneʹllj
+! kueʹhttčueʹđneʹlljlovitt
+! kueʹhttčueʹđneʹlljlokutt
+! kueʹhttčueʹđneʹlljločiččâm
+! kueʹhttčueʹđneʹlljlokääuʹc
+! kueʹhttčueʹđneʹlljloååuʹc
+! kueʹhttčueʹđvittlo
+! kueʹhttčueʹđvittloõhtt
+! kueʹhttčueʹđvittlokueʹhtt
+! kueʹhttčueʹđvittlokoumm
+! kueʹhttčueʹđvittloneʹllj
+! kueʹhttčueʹđvittlovitt
+! kueʹhttčueʹđvittlokutt
+! kueʹhttčueʹđvittločiččâm
+! kueʹhttčueʹđvittlokääuʹc
+! kueʹhttčueʹđvittloååuʹc
+! kueʹhttčueʹđkuttlo
+! kueʹhttčueʹđkuttloõhtt
+! kueʹhttčueʹđkuttlokueʹhtt
+! kueʹhttčueʹđkuttlokoumm
+! kueʹhttčueʹđkuttloneʹllj
+! kueʹhttčueʹđkuttlovitt
+! kueʹhttčueʹđkuttlokutt
+! kueʹhttčueʹđkuttločiččâm
+! kueʹhttčueʹđkuttlokääuʹc
+! kueʹhttčueʹđkuttloååuʹc
+! kueʹhttčueʹđčimlo
+! kueʹhttčueʹđčimloõhtt
+! kueʹhttčueʹđčimlokueʹhtt
+! kueʹhttčueʹđčimlokoumm
+! kueʹhttčueʹđčimloneʹllj
+! kueʹhttčueʹđčimlovitt
+! kueʹhttčueʹđčimlokutt
+! kueʹhttčueʹđčimločiččâm
+! kueʹhttčueʹđčimlokääuʹc
+! kueʹhttčueʹđčimloååuʹc
+! kueʹhttčueʹđkäʹhcclo
+! kueʹhttčueʹđkäʹhccloõhtt
+! kueʹhttčueʹđkäʹhcclokueʹhtt
+! kueʹhttčueʹđkäʹhcclokoumm
+! kueʹhttčueʹđkäʹhccloneʹllj
+! kueʹhttčueʹđkäʹhcclovitt
+! kueʹhttčueʹđkäʹhcclokutt
+! kueʹhttčueʹđkäʹhccločiččâm
+! kueʹhttčueʹđkäʹhcclokääuʹc
+! kueʹhttčueʹđkäʹhccloååuʹc
+! kueʹhttčueʹđåʹhcclo
+! kueʹhttčueʹđåʹhccloõhtt
+! kueʹhttčueʹđåʹhcclokueʹhtt
+! kueʹhttčueʹđåʹhcclokoumm
+! kueʹhttčueʹđåʹhccloneʹllj
+! kueʹhttčueʹđåʹhcclovitt
+! kueʹhttčueʹđåʹhcclokutt
+! kueʹhttčueʹđåʹhccločiččâm
+! kueʹhttčueʹđåʹhcclokääuʹc
+! kueʹhttčueʹđåʹhccloååuʹc
+! koummčueʹđ
+! koummčueʹđõhtt
+! koummčueʹđkueʹhtt
+! koummčueʹđkoumm
+! koummčueʹđneʹllj
+! koummčueʹđvitt
+! koummčueʹđkutt
+! koummčueʹđčiččâm
+! koummčueʹđkääuʹc
+! koummčueʹđååuʹc
+! koummčueʹđlååi
+! koummčueʹđõtmlo
+! koummčueʹđkuâtmlo
+! koummčueʹđkonmlo
+! koummčueʹđnenjmlo
+! koummčueʹđvittmlo
+! koummčueʹđkuttmlo
+! koummčueʹđčinmlo
+! koummčueʹđkäcmlo
+! koummčueʹđåcmlo
+! koummčueʹđkuâhttlo
+! koummčueʹđkuâhttloõhtt
+! koummčueʹđkuâhttlokueʹhtt
+! koummčueʹđkuâhttlokoumm
+! koummčueʹđkuâhttloneʹllj
+! koummčueʹđkuâhttlovitt
+! koummčueʹđkuâhttlokutt
+! koummčueʹđkuâhttločiččâm
+! koummčueʹđkuâhttlokääuʹc
+! koummčueʹđkuâhttloååuʹc
+! koummčueʹđkoummlo
+! koummčueʹđkoummloõhtt
+! koummčueʹđkoummlokueʹhtt
+! koummčueʹđkoummlokoumm
+! koummčueʹđkoummloneʹllj
+! koummčueʹđkoummlovitt
+! koummčueʹđkoummlokutt
+! koummčueʹđkoummločiččâm
+! koummčueʹđkoummlokääuʹc
+! koummčueʹđkoummloååuʹc
+! koummčueʹđneʹlljlo
+! koummčueʹđneʹlljloõhtt
+! koummčueʹđneʹlljlokueʹhtt
+! koummčueʹđneʹlljlokoumm
+! koummčueʹđneʹlljloneʹllj
+! koummčueʹđneʹlljlovitt
+! koummčueʹđneʹlljlokutt
+! koummčueʹđneʹlljločiččâm
+! koummčueʹđneʹlljlokääuʹc
+! koummčueʹđneʹlljloååuʹc
+! koummčueʹđvittlo
+! koummčueʹđvittloõhtt
+! koummčueʹđvittlokueʹhtt
+! koummčueʹđvittlokoumm
+! koummčueʹđvittloneʹllj
+! koummčueʹđvittlovitt
+! koummčueʹđvittlokutt
+! koummčueʹđvittločiččâm
+! koummčueʹđvittlokääuʹc
+! koummčueʹđvittloååuʹc
+! koummčueʹđkuttlo
+! koummčueʹđkuttloõhtt
+! koummčueʹđkuttlokueʹhtt
+! koummčueʹđkuttlokoumm
+! koummčueʹđkuttloneʹllj
+! koummčueʹđkuttlovitt
+! koummčueʹđkuttlokutt
+! koummčueʹđkuttločiččâm
+! koummčueʹđkuttlokääuʹc
+! koummčueʹđkuttloååuʹc
+! koummčueʹđčimlo
+! koummčueʹđčimloõhtt
+! koummčueʹđčimlokueʹhtt
+! koummčueʹđčimlokoumm
+! koummčueʹđčimloneʹllj
+! koummčueʹđčimlovitt
+! koummčueʹđčimlokutt
+! koummčueʹđčimločiččâm
+! koummčueʹđčimlokääuʹc
+! koummčueʹđčimloååuʹc
+! koummčueʹđkäʹhcclo
+! koummčueʹđkäʹhccloõhtt
+! koummčueʹđkäʹhcclokueʹhtt
+! koummčueʹđkäʹhcclokoumm
+! koummčueʹđkäʹhccloneʹllj
+! koummčueʹđkäʹhcclovitt
+! koummčueʹđkäʹhcclokutt
+! koummčueʹđkäʹhccločiččâm
+! koummčueʹđkäʹhcclokääuʹc
+! koummčueʹđkäʹhccloååuʹc
+! koummčueʹđåʹhcclo
+! koummčueʹđåʹhccloõhtt
+! koummčueʹđåʹhcclokueʹhtt
+! koummčueʹđåʹhcclokoumm
+! koummčueʹđåʹhccloneʹllj
+! koummčueʹđåʹhcclovitt
+! koummčueʹđåʹhcclokutt
+! koummčueʹđåʹhccločiččâm
+! koummčueʹđåʹhcclokääuʹc
+! koummčueʹđåʹhccloååuʹc
+! neʹlljčueʹđ
+! neʹlljčueʹđõhtt
+! neʹlljčueʹđkueʹhtt
+! neʹlljčueʹđkoumm
+! neʹlljčueʹđneʹllj
+! neʹlljčueʹđvitt
+! neʹlljčueʹđkutt
+! neʹlljčueʹđčiččâm
+! neʹlljčueʹđkääuʹc
+! neʹlljčueʹđååuʹc
+! neʹlljčueʹđlååi
+! neʹlljčueʹđõtmlo
+! neʹlljčueʹđkuâtmlo
+! neʹlljčueʹđkonmlo
+! neʹlljčueʹđnenjmlo
+! neʹlljčueʹđvittmlo
+! neʹlljčueʹđkuttmlo
+! neʹlljčueʹđčinmlo
+! neʹlljčueʹđkäcmlo
+! neʹlljčueʹđåcmlo
+! neʹlljčueʹđkuâhttlo
+! neʹlljčueʹđkuâhttloõhtt
+! neʹlljčueʹđkuâhttlokueʹhtt
+! neʹlljčueʹđkuâhttlokoumm
+! neʹlljčueʹđkuâhttloneʹllj
+! neʹlljčueʹđkuâhttlovitt
+! neʹlljčueʹđkuâhttlokutt
+! neʹlljčueʹđkuâhttločiččâm
+! neʹlljčueʹđkuâhttlokääuʹc
+! neʹlljčueʹđkuâhttloååuʹc
+! neʹlljčueʹđkoummlo
+! neʹlljčueʹđkoummloõhtt
+! neʹlljčueʹđkoummlokueʹhtt
+! neʹlljčueʹđkoummlokoumm
+! neʹlljčueʹđkoummloneʹllj
+! neʹlljčueʹđkoummlovitt
+! neʹlljčueʹđkoummlokutt
+! neʹlljčueʹđkoummločiččâm
+! neʹlljčueʹđkoummlokääuʹc
+! neʹlljčueʹđkoummloååuʹc
+! neʹlljčueʹđneʹlljlo
+! neʹlljčueʹđneʹlljloõhtt
+! neʹlljčueʹđneʹlljlokueʹhtt
+! neʹlljčueʹđneʹlljlokoumm
+! neʹlljčueʹđneʹlljloneʹllj
+! neʹlljčueʹđneʹlljlovitt
+! neʹlljčueʹđneʹlljlokutt
+! neʹlljčueʹđneʹlljločiččâm
+! neʹlljčueʹđneʹlljlokääuʹc
+! neʹlljčueʹđneʹlljloååuʹc
+! neʹlljčueʹđvittlo
+! neʹlljčueʹđvittloõhtt
+! neʹlljčueʹđvittlokueʹhtt
+! neʹlljčueʹđvittlokoumm
+! neʹlljčueʹđvittloneʹllj
+! neʹlljčueʹđvittlovitt
+! neʹlljčueʹđvittlokutt
+! neʹlljčueʹđvittločiččâm
+! neʹlljčueʹđvittlokääuʹc
+! neʹlljčueʹđvittloååuʹc
+! neʹlljčueʹđkuttlo
+! neʹlljčueʹđkuttloõhtt
+! neʹlljčueʹđkuttlokueʹhtt
+! neʹlljčueʹđkuttlokoumm
+! neʹlljčueʹđkuttloneʹllj
+! neʹlljčueʹđkuttlovitt
+! neʹlljčueʹđkuttlokutt
+! neʹlljčueʹđkuttločiččâm
+! neʹlljčueʹđkuttlokääuʹc
+! neʹlljčueʹđkuttloååuʹc
+! neʹlljčueʹđčimlo
+! neʹlljčueʹđčimloõhtt
+! neʹlljčueʹđčimlokueʹhtt
+! neʹlljčueʹđčimlokoumm
+! neʹlljčueʹđčimloneʹllj
+! neʹlljčueʹđčimlovitt
+! neʹlljčueʹđčimlokutt
+! neʹlljčueʹđčimločiččâm
+! neʹlljčueʹđčimlokääuʹc
+! neʹlljčueʹđčimloååuʹc
+! neʹlljčueʹđkäʹhcclo
+! neʹlljčueʹđkäʹhccloõhtt
+! neʹlljčueʹđkäʹhcclokueʹhtt
+! neʹlljčueʹđkäʹhcclokoumm
+! neʹlljčueʹđkäʹhccloneʹllj
+! neʹlljčueʹđkäʹhcclovitt
+! neʹlljčueʹđkäʹhcclokutt
+! neʹlljčueʹđkäʹhccločiččâm
+! neʹlljčueʹđkäʹhcclokääuʹc
+! neʹlljčueʹđkäʹhccloååuʹc
+! neʹlljčueʹđåʹhcclo
+! neʹlljčueʹđåʹhccloõhtt
+! neʹlljčueʹđåʹhcclokueʹhtt
+! neʹlljčueʹđåʹhcclokoumm
+! neʹlljčueʹđåʹhccloneʹllj
+! neʹlljčueʹđåʹhcclovitt
+! neʹlljčueʹđåʹhcclokutt
+! neʹlljčueʹđåʹhccločiččâm
+! neʹlljčueʹđåʹhcclokääuʹc
+! neʹlljčueʹđåʹhccloååuʹc
+! vittčueʹđ
+! vittčueʹđõhtt
+! vittčueʹđkueʹhtt
+! vittčueʹđkoumm
+! vittčueʹđneʹllj
+! vittčueʹđvitt
+! vittčueʹđkutt
+! vittčueʹđčiččâm
+! vittčueʹđkääuʹc
+! vittčueʹđååuʹc
+! vittčueʹđlååi
+! vittčueʹđõtmlo
+! vittčueʹđkuâtmlo
+! vittčueʹđkonmlo
+! vittčueʹđnenjmlo
+! vittčueʹđvittmlo
+! vittčueʹđkuttmlo
+! vittčueʹđčinmlo
+! vittčueʹđkäcmlo
+! vittčueʹđåcmlo
+! vittčueʹđkuâhttlo
+! vittčueʹđkuâhttloõhtt
+! vittčueʹđkuâhttlokueʹhtt
+! vittčueʹđkuâhttlokoumm
+! vittčueʹđkuâhttloneʹllj
+! vittčueʹđkuâhttlovitt
+! vittčueʹđkuâhttlokutt
+! vittčueʹđkuâhttločiččâm
+! vittčueʹđkuâhttlokääuʹc
+! vittčueʹđkuâhttloååuʹc
+! vittčueʹđkoummlo
+! vittčueʹđkoummloõhtt
+! vittčueʹđkoummlokueʹhtt
+! vittčueʹđkoummlokoumm
+! vittčueʹđkoummloneʹllj
+! vittčueʹđkoummlovitt
+! vittčueʹđkoummlokutt
+! vittčueʹđkoummločiččâm
+! vittčueʹđkoummlokääuʹc
+! vittčueʹđkoummloååuʹc
+! vittčueʹđneʹlljlo
+! vittčueʹđneʹlljloõhtt
+! vittčueʹđneʹlljlokueʹhtt
+! vittčueʹđneʹlljlokoumm
+! vittčueʹđneʹlljloneʹllj
+! vittčueʹđneʹlljlovitt
+! vittčueʹđneʹlljlokutt
+! vittčueʹđneʹlljločiččâm
+! vittčueʹđneʹlljlokääuʹc
+! vittčueʹđneʹlljloååuʹc
+! vittčueʹđvittlo
+! vittčueʹđvittloõhtt
+! vittčueʹđvittlokueʹhtt
+! vittčueʹđvittlokoumm
+! vittčueʹđvittloneʹllj
+! vittčueʹđvittlovitt
+! vittčueʹđvittlokutt
+! vittčueʹđvittločiččâm
+! vittčueʹđvittlokääuʹc
+! vittčueʹđvittloååuʹc
+! vittčueʹđkuttlo
+! vittčueʹđkuttloõhtt
+! vittčueʹđkuttlokueʹhtt
+! vittčueʹđkuttlokoumm
+! vittčueʹđkuttloneʹllj
+! vittčueʹđkuttlovitt
+! vittčueʹđkuttlokutt
+! vittčueʹđkuttločiččâm
+! vittčueʹđkuttlokääuʹc
+! vittčueʹđkuttloååuʹc
+! vittčueʹđčimlo
+! vittčueʹđčimloõhtt
+! vittčueʹđčimlokueʹhtt
+! vittčueʹđčimlokoumm
+! vittčueʹđčimloneʹllj
+! vittčueʹđčimlovitt
+! vittčueʹđčimlokutt
+! vittčueʹđčimločiččâm
+! vittčueʹđčimlokääuʹc
+! vittčueʹđčimloååuʹc
+! vittčueʹđkäʹhcclo
+! vittčueʹđkäʹhccloõhtt
+! vittčueʹđkäʹhcclokueʹhtt
+! vittčueʹđkäʹhcclokoumm
+! vittčueʹđkäʹhccloneʹllj
+! vittčueʹđkäʹhcclovitt
+! vittčueʹđkäʹhcclokutt
+! vittčueʹđkäʹhccločiččâm
+! vittčueʹđkäʹhcclokääuʹc
+! vittčueʹđkäʹhccloååuʹc
+! vittčueʹđåʹhcclo
+! vittčueʹđåʹhccloõhtt
+! vittčueʹđåʹhcclokueʹhtt
+! vittčueʹđåʹhcclokoumm
+! vittčueʹđåʹhccloneʹllj
+! vittčueʹđåʹhcclovitt
+! vittčueʹđåʹhcclokutt
+! vittčueʹđåʹhccločiččâm
+! vittčueʹđåʹhcclokääuʹc
+! vittčueʹđåʹhccloååuʹc
+! kuttčueʹđ
+! kuttčueʹđõhtt
+! kuttčueʹđkueʹhtt
+! kuttčueʹđkoumm
+! kuttčueʹđneʹllj
+! kuttčueʹđvitt
+! kuttčueʹđkutt
+! kuttčueʹđčiččâm
+! kuttčueʹđkääuʹc
+! kuttčueʹđååuʹc
+! kuttčueʹđlååi
+! kuttčueʹđõtmlo
+! kuttčueʹđkuâtmlo
+! kuttčueʹđkonmlo
+! kuttčueʹđnenjmlo
+! kuttčueʹđvittmlo
+! kuttčueʹđkuttmlo
+! kuttčueʹđčinmlo
+! kuttčueʹđkäcmlo
+! kuttčueʹđåcmlo
+! kuttčueʹđkuâhttlo
+! kuttčueʹđkuâhttloõhtt
+! kuttčueʹđkuâhttlokueʹhtt
+! kuttčueʹđkuâhttlokoumm
+! kuttčueʹđkuâhttloneʹllj
+! kuttčueʹđkuâhttlovitt
+! kuttčueʹđkuâhttlokutt
+! kuttčueʹđkuâhttločiččâm
+! kuttčueʹđkuâhttlokääuʹc
+! kuttčueʹđkuâhttloååuʹc
+! kuttčueʹđkoummlo
+! kuttčueʹđkoummloõhtt
+! kuttčueʹđkoummlokueʹhtt
+! kuttčueʹđkoummlokoumm
+! kuttčueʹđkoummloneʹllj
+! kuttčueʹđkoummlovitt
+! kuttčueʹđkoummlokutt
+! kuttčueʹđkoummločiččâm
+! kuttčueʹđkoummlokääuʹc
+! kuttčueʹđkoummloååuʹc
+! kuttčueʹđneʹlljlo
+! kuttčueʹđneʹlljloõhtt
+! kuttčueʹđneʹlljlokueʹhtt
+! kuttčueʹđneʹlljlokoumm
+! kuttčueʹđneʹlljloneʹllj
+! kuttčueʹđneʹlljlovitt
+! kuttčueʹđneʹlljlokutt
+! kuttčueʹđneʹlljločiččâm
+! kuttčueʹđneʹlljlokääuʹc
+! kuttčueʹđneʹlljloååuʹc
+! kuttčueʹđvittlo
+! kuttčueʹđvittloõhtt
+! kuttčueʹđvittlokueʹhtt
+! kuttčueʹđvittlokoumm
+! kuttčueʹđvittloneʹllj
+! kuttčueʹđvittlovitt
+! kuttčueʹđvittlokutt
+! kuttčueʹđvittločiččâm
+! kuttčueʹđvittlokääuʹc
+! kuttčueʹđvittloååuʹc
+! kuttčueʹđkuttlo
+! kuttčueʹđkuttloõhtt
+! kuttčueʹđkuttlokueʹhtt
+! kuttčueʹđkuttlokoumm
+! kuttčueʹđkuttloneʹllj
+! kuttčueʹđkuttlovitt
+! kuttčueʹđkuttlokutt
+! kuttčueʹđkuttločiččâm
+! kuttčueʹđkuttlokääuʹc
+! kuttčueʹđkuttloååuʹc
+! kuttčueʹđčimlo
+! kuttčueʹđčimloõhtt
+! kuttčueʹđčimlokueʹhtt
+! kuttčueʹđčimlokoumm
+! kuttčueʹđčimloneʹllj
+! kuttčueʹđčimlovitt
+! kuttčueʹđčimlokutt
+! kuttčueʹđčimločiččâm
+! kuttčueʹđčimlokääuʹc
+! kuttčueʹđčimloååuʹc
+! kuttčueʹđkäʹhcclo
+! kuttčueʹđkäʹhccloõhtt
+! kuttčueʹđkäʹhcclokueʹhtt
+! kuttčueʹđkäʹhcclokoumm
+! kuttčueʹđkäʹhccloneʹllj
+! kuttčueʹđkäʹhcclovitt
+! kuttčueʹđkäʹhcclokutt
+! kuttčueʹđkäʹhccločiččâm
+! kuttčueʹđkäʹhcclokääuʹc
+! kuttčueʹđkäʹhccloååuʹc
+! kuttčueʹđåʹhcclo
+! kuttčueʹđåʹhccloõhtt
+! kuttčueʹđåʹhcclokueʹhtt
+! kuttčueʹđåʹhcclokoumm
+! kuttčueʹđåʹhccloneʹllj
+! kuttčueʹđåʹhcclovitt
+! kuttčueʹđåʹhcclokutt
+! kuttčueʹđåʹhccločiččâm
+! kuttčueʹđåʹhcclokääuʹc
+! kuttčueʹđåʹhccloååuʹc
+! čiččâmčueʹđ
+! čiččâmčueʹđõhtt
+! čiččâmčueʹđkueʹhtt
+! čiččâmčueʹđkoumm
+! čiččâmčueʹđneʹllj
+! čiččâmčueʹđvitt
+! čiččâmčueʹđkutt
+! čiččâmčueʹđčiččâm
+! čiččâmčueʹđkääuʹc
+! čiččâmčueʹđååuʹc
+! čiččâmčueʹđlååi
+! čiččâmčueʹđõtmlo
+! čiččâmčueʹđkuâtmlo
+! čiččâmčueʹđkonmlo
+! čiččâmčueʹđnenjmlo
+! čiččâmčueʹđvittmlo
+! čiččâmčueʹđkuttmlo
+! čiččâmčueʹđčinmlo
+! čiččâmčueʹđkäcmlo
+! čiččâmčueʹđåcmlo
+! čiččâmčueʹđkuâhttlo
+! čiččâmčueʹđkuâhttloõhtt
+! čiččâmčueʹđkuâhttlokueʹhtt
+! čiččâmčueʹđkuâhttlokoumm
+! čiččâmčueʹđkuâhttloneʹllj
+! čiččâmčueʹđkuâhttlovitt
+! čiččâmčueʹđkuâhttlokutt
+! čiččâmčueʹđkuâhttločiččâm
+! čiččâmčueʹđkuâhttlokääuʹc
+! čiččâmčueʹđkuâhttloååuʹc
+! čiččâmčueʹđkoummlo
+! čiččâmčueʹđkoummloõhtt
+! čiččâmčueʹđkoummlokueʹhtt
+! čiččâmčueʹđkoummlokoumm
+! čiččâmčueʹđkoummloneʹllj
+! čiččâmčueʹđkoummlovitt
+! čiččâmčueʹđkoummlokutt
+! čiččâmčueʹđkoummločiččâm
+! čiččâmčueʹđkoummlokääuʹc
+! čiččâmčueʹđkoummloååuʹc
+! čiččâmčueʹđneʹlljlo
+! čiččâmčueʹđneʹlljloõhtt
+! čiččâmčueʹđneʹlljlokueʹhtt
+! čiččâmčueʹđneʹlljlokoumm
+! čiččâmčueʹđneʹlljloneʹllj
+! čiččâmčueʹđneʹlljlovitt
+! čiččâmčueʹđneʹlljlokutt
+! čiččâmčueʹđneʹlljločiččâm
+! čiččâmčueʹđneʹlljlokääuʹc
+! čiččâmčueʹđneʹlljloååuʹc
+! čiččâmčueʹđvittlo
+! čiččâmčueʹđvittloõhtt
+! čiččâmčueʹđvittlokueʹhtt
+! čiččâmčueʹđvittlokoumm
+! čiččâmčueʹđvittloneʹllj
+! čiččâmčueʹđvittlovitt
+! čiččâmčueʹđvittlokutt
+! čiččâmčueʹđvittločiččâm
+! čiččâmčueʹđvittlokääuʹc
+! čiččâmčueʹđvittloååuʹc
+! čiččâmčueʹđkuttlo
+! čiččâmčueʹđkuttloõhtt
+! čiččâmčueʹđkuttlokueʹhtt
+! čiččâmčueʹđkuttlokoumm
+! čiččâmčueʹđkuttloneʹllj
+! čiččâmčueʹđkuttlovitt
+! čiččâmčueʹđkuttlokutt
+! čiččâmčueʹđkuttločiččâm
+! čiččâmčueʹđkuttlokääuʹc
+! čiččâmčueʹđkuttloååuʹc
+! čiččâmčueʹđčimlo
+! čiččâmčueʹđčimloõhtt
+! čiččâmčueʹđčimlokueʹhtt
+! čiččâmčueʹđčimlokoumm
+! čiččâmčueʹđčimloneʹllj
+! čiččâmčueʹđčimlovitt
+! čiččâmčueʹđčimlokutt
+! čiččâmčueʹđčimločiččâm
+! čiččâmčueʹđčimlokääuʹc
+! čiččâmčueʹđčimloååuʹc
+! čiččâmčueʹđkäʹhcclo
+! čiččâmčueʹđkäʹhccloõhtt
+! čiččâmčueʹđkäʹhcclokueʹhtt
+! čiččâmčueʹđkäʹhcclokoumm
+! čiččâmčueʹđkäʹhccloneʹllj
+! čiččâmčueʹđkäʹhcclovitt
+! čiččâmčueʹđkäʹhcclokutt
+! čiččâmčueʹđkäʹhccločiččâm
+! čiččâmčueʹđkäʹhcclokääuʹc
+! čiččâmčueʹđkäʹhccloååuʹc
+! čiččâmčueʹđåʹhcclo
+! čiččâmčueʹđåʹhccloõhtt
+! čiččâmčueʹđåʹhcclokueʹhtt
+! čiččâmčueʹđåʹhcclokoumm
+! čiččâmčueʹđåʹhccloneʹllj
+! čiččâmčueʹđåʹhcclovitt
+! čiččâmčueʹđåʹhcclokutt
+! čiččâmčueʹđåʹhccločiččâm
+! čiččâmčueʹđåʹhcclokääuʹc
+! čiččâmčueʹđåʹhccloååuʹc
+! kääuʹcčueʹđ
+! kääuʹcčueʹđõhtt
+! kääuʹcčueʹđkueʹhtt
+! kääuʹcčueʹđkoumm
+! kääuʹcčueʹđneʹllj
+! kääuʹcčueʹđvitt
+! kääuʹcčueʹđkutt
+! kääuʹcčueʹđčiččâm
+! kääuʹcčueʹđkääuʹc
+! kääuʹcčueʹđååuʹc
+! kääuʹcčueʹđlååi
+! kääuʹcčueʹđõtmlo
+! kääuʹcčueʹđkuâtmlo
+! kääuʹcčueʹđkonmlo
+! kääuʹcčueʹđnenjmlo
+! kääuʹcčueʹđvittmlo
+! kääuʹcčueʹđkuttmlo
+! kääuʹcčueʹđčinmlo
+! kääuʹcčueʹđkäcmlo
+! kääuʹcčueʹđåcmlo
+! kääuʹcčueʹđkuâhttlo
+! kääuʹcčueʹđkuâhttloõhtt
+! kääuʹcčueʹđkuâhttlokueʹhtt
+! kääuʹcčueʹđkuâhttlokoumm
+! kääuʹcčueʹđkuâhttloneʹllj
+! kääuʹcčueʹđkuâhttlovitt
+! kääuʹcčueʹđkuâhttlokutt
+! kääuʹcčueʹđkuâhttločiččâm
+! kääuʹcčueʹđkuâhttlokääuʹc
+! kääuʹcčueʹđkuâhttloååuʹc
+! kääuʹcčueʹđkoummlo
+! kääuʹcčueʹđkoummloõhtt
+! kääuʹcčueʹđkoummlokueʹhtt
+! kääuʹcčueʹđkoummlokoumm
+! kääuʹcčueʹđkoummloneʹllj
+! kääuʹcčueʹđkoummlovitt
+! kääuʹcčueʹđkoummlokutt
+! kääuʹcčueʹđkoummločiččâm
+! kääuʹcčueʹđkoummlokääuʹc
+! kääuʹcčueʹđkoummloååuʹc
+! kääuʹcčueʹđneʹlljlo
+! kääuʹcčueʹđneʹlljloõhtt
+! kääuʹcčueʹđneʹlljlokueʹhtt
+! kääuʹcčueʹđneʹlljlokoumm
+! kääuʹcčueʹđneʹlljloneʹllj
+! kääuʹcčueʹđneʹlljlovitt
+! kääuʹcčueʹđneʹlljlokutt
+! kääuʹcčueʹđneʹlljločiččâm
+! kääuʹcčueʹđneʹlljlokääuʹc
+! kääuʹcčueʹđneʹlljloååuʹc
+! kääuʹcčueʹđvittlo
+! kääuʹcčueʹđvittloõhtt
+! kääuʹcčueʹđvittlokueʹhtt
+! kääuʹcčueʹđvittlokoumm
+! kääuʹcčueʹđvittloneʹllj
+! kääuʹcčueʹđvittlovitt
+! kääuʹcčueʹđvittlokutt
+! kääuʹcčueʹđvittločiččâm
+! kääuʹcčueʹđvittlokääuʹc
+! kääuʹcčueʹđvittloååuʹc
+! kääuʹcčueʹđkuttlo
+! kääuʹcčueʹđkuttloõhtt
+! kääuʹcčueʹđkuttlokueʹhtt
+! kääuʹcčueʹđkuttlokoumm
+! kääuʹcčueʹđkuttloneʹllj
+! kääuʹcčueʹđkuttlovitt
+! kääuʹcčueʹđkuttlokutt
+! kääuʹcčueʹđkuttločiččâm
+! kääuʹcčueʹđkuttlokääuʹc
+! kääuʹcčueʹđkuttloååuʹc
+! kääuʹcčueʹđčimlo
+! kääuʹcčueʹđčimloõhtt
+! kääuʹcčueʹđčimlokueʹhtt
+! kääuʹcčueʹđčimlokoumm
+! kääuʹcčueʹđčimloneʹllj
+! kääuʹcčueʹđčimlovitt
+! kääuʹcčueʹđčimlokutt
+! kääuʹcčueʹđčimločiččâm
+! kääuʹcčueʹđčimlokääuʹc
+! kääuʹcčueʹđčimloååuʹc
+! kääuʹcčueʹđkäʹhcclo
+! kääuʹcčueʹđkäʹhccloõhtt
+! kääuʹcčueʹđkäʹhcclokueʹhtt
+! kääuʹcčueʹđkäʹhcclokoumm
+! kääuʹcčueʹđkäʹhccloneʹllj
+! kääuʹcčueʹđkäʹhcclovitt
+! kääuʹcčueʹđkäʹhcclokutt
+! kääuʹcčueʹđkäʹhccločiččâm
+! kääuʹcčueʹđkäʹhcclokääuʹc
+! kääuʹcčueʹđkäʹhccloååuʹc
+! kääuʹcčueʹđåʹhcclo
+! kääuʹcčueʹđåʹhccloõhtt
+! kääuʹcčueʹđåʹhcclokueʹhtt
+! kääuʹcčueʹđåʹhcclokoumm
+! kääuʹcčueʹđåʹhccloneʹllj
+! kääuʹcčueʹđåʹhcclovitt
+! kääuʹcčueʹđåʹhcclokutt
+! kääuʹcčueʹđåʹhccločiččâm
+! kääuʹcčueʹđåʹhcclokääuʹc
+! kääuʹcčueʹđåʹhccloååuʹc
+! ååuʹcčueʹđ
+! ååuʹcčueʹđõhtt
+! ååuʹcčueʹđkueʹhtt
+! ååuʹcčueʹđkoumm
+! ååuʹcčueʹđneʹllj
+! ååuʹcčueʹđvitt
+! ååuʹcčueʹđkutt
+! ååuʹcčueʹđčiččâm
+! ååuʹcčueʹđkääuʹc
+! ååuʹcčueʹđååuʹc
+! ååuʹcčueʹđlååi
+! ååuʹcčueʹđõtmlo
+! ååuʹcčueʹđkuâtmlo
+! ååuʹcčueʹđkonmlo
+! ååuʹcčueʹđnenjmlo
+! ååuʹcčueʹđvittmlo
+! ååuʹcčueʹđkuttmlo
+! ååuʹcčueʹđčinmlo
+! ååuʹcčueʹđkäcmlo
+! ååuʹcčueʹđåcmlo
+! ååuʹcčueʹđkuâhttlo
+! ååuʹcčueʹđkuâhttloõhtt
+! ååuʹcčueʹđkuâhttlokueʹhtt
+! ååuʹcčueʹđkuâhttlokoumm
+! ååuʹcčueʹđkuâhttloneʹllj
+! ååuʹcčueʹđkuâhttlovitt
+! ååuʹcčueʹđkuâhttlokutt
+! ååuʹcčueʹđkuâhttločiččâm
+! ååuʹcčueʹđkuâhttlokääuʹc
+! ååuʹcčueʹđkuâhttloååuʹc
+! ååuʹcčueʹđkoummlo
+! ååuʹcčueʹđkoummloõhtt
+! ååuʹcčueʹđkoummlokueʹhtt
+! ååuʹcčueʹđkoummlokoumm
+! ååuʹcčueʹđkoummloneʹllj
+! ååuʹcčueʹđkoummlovitt
+! ååuʹcčueʹđkoummlokutt
+! ååuʹcčueʹđkoummločiččâm
+! ååuʹcčueʹđkoummlokääuʹc
+! ååuʹcčueʹđkoummloååuʹc
+! ååuʹcčueʹđneʹlljlo
+! ååuʹcčueʹđneʹlljloõhtt
+! ååuʹcčueʹđneʹlljlokueʹhtt
+! ååuʹcčueʹđneʹlljlokoumm
+! ååuʹcčueʹđneʹlljloneʹllj
+! ååuʹcčueʹđneʹlljlovitt
+! ååuʹcčueʹđneʹlljlokutt
+! ååuʹcčueʹđneʹlljločiččâm
+! ååuʹcčueʹđneʹlljlokääuʹc
+! ååuʹcčueʹđneʹlljloååuʹc
+! ååuʹcčueʹđvittlo
+! ååuʹcčueʹđvittloõhtt
+! ååuʹcčueʹđvittlokueʹhtt
+! ååuʹcčueʹđvittlokoumm
+! ååuʹcčueʹđvittloneʹllj
+! ååuʹcčueʹđvittlovitt
+! ååuʹcčueʹđvittlokutt
+! ååuʹcčueʹđvittločiččâm
+! ååuʹcčueʹđvittlokääuʹc
+! ååuʹcčueʹđvittloååuʹc
+! ååuʹcčueʹđkuttlo
+! ååuʹcčueʹđkuttloõhtt
+! ååuʹcčueʹđkuttlokueʹhtt
+! ååuʹcčueʹđkuttlokoumm
+! ååuʹcčueʹđkuttloneʹllj
+! ååuʹcčueʹđkuttlovitt
+! ååuʹcčueʹđkuttlokutt
+! ååuʹcčueʹđkuttločiččâm
+! ååuʹcčueʹđkuttlokääuʹc
+! ååuʹcčueʹđkuttloååuʹc
+! ååuʹcčueʹđčimlo
+! ååuʹcčueʹđčimloõhtt
+! ååuʹcčueʹđčimlokueʹhtt
+! ååuʹcčueʹđčimlokoumm
+! ååuʹcčueʹđčimloneʹllj
+! ååuʹcčueʹđčimlovitt
+! ååuʹcčueʹđčimlokutt
+! ååuʹcčueʹđčimločiččâm
+! ååuʹcčueʹđčimlokääuʹc
+! ååuʹcčueʹđčimloååuʹc
+! ååuʹcčueʹđkäʹhcclo
+! ååuʹcčueʹđkäʹhccloõhtt
+! ååuʹcčueʹđkäʹhcclokueʹhtt
+! ååuʹcčueʹđkäʹhcclokoumm
+! ååuʹcčueʹđkäʹhccloneʹllj
+! ååuʹcčueʹđkäʹhcclovitt
+! ååuʹcčueʹđkäʹhcclokutt
+! ååuʹcčueʹđkäʹhccločiččâm
+! ååuʹcčueʹđkäʹhcclokääuʹc
+! ååuʹcčueʹđkäʹhccloååuʹc
+! ååuʹcčueʹđåʹhcclo
+! ååuʹcčueʹđåʹhccloõhtt
+! ååuʹcčueʹđåʹhcclokueʹhtt
+! ååuʹcčueʹđåʹhcclokoumm
+! ååuʹcčueʹđåʹhccloneʹllj
+! ååuʹcčueʹđåʹhcclovitt
+! ååuʹcčueʹđåʹhcclokutt
+! ååuʹcčueʹđåʹhccločiččâm
+! ååuʹcčueʹđåʹhcclokääuʹc
+! ååuʹcčueʹđåʹhccloååuʹc
+! dohat
 
 
 
