@@ -343,6 +343,7 @@ get the same pronunciation whether read as SME or NOB/NNO/SWE.
  * **+Sem/Veh** = Vehicle 
  * **+Sem/Wpn** = Weapon 
  * **+Sem/Wthr** = The Weather or the state of ground 
+ * **+Sem/Year** = Year
 
 ### Multiple Semantic tags: 
  * **+Sem/Act_Fruit** 
@@ -840,14 +841,13 @@ Compounding
  * **+Cmp/Hyph** - on dynamic compounds that have a hyphen 
  * **+Cmp/NoHyph** - On compounds that COULD have had a hyphen (and usually have), but doesn't 
  * **+Cmp/SoftHyph** - Tags compounds containing SOFT HYPHENS (U+00AD) 
- * **+Cmp/Cit** - Tags citation compounds, which can in principle 
-                cover any word. Requires a hyphen. 
-
+ * **+Cmp/Cit** - Tags citation compounds, which can in principle    cover any word. Requires a hyphen. 
+ * **+Use/PMatch** - 
 
 ## Flag diacritics 
 
 | Flag | Explanation 
-| --- | --- @P.AssocColl.ON@ !!≈ * **+Cmp/Cit** Used with Kin terms and Ant 
+| --- | --- @P.AssocColl.ON@ !!≈ * **+Use/PMatch** Used with Kin terms and Ant 
  * **@R.AssocColl.ON@** 
  * **@C.AssocColl@** 
 
@@ -888,6 +888,10 @@ given the proper use of these flags.
 | --- | --- 
  |  **@U.Cap.Obl@** | Allowing downcasing of derived names: deatnulasj. 
  |  **@U.Cap.Opt@** | Allowing downcasing of derived names: deatnulasj. 
+ |  **@C.ErrOrth@** | tbw
+ |  **@R.ErrOrth.ON@** | tbw
+ |  **@P.Pmatch.Backtrack@** | tbw
+
 
 
 # Basic lexica, pointing to the other lexicon files 

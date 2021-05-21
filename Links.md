@@ -3,6 +3,7 @@
 * [propernouns-affixes-fst-src.md](propernouns-affixes-fst-src.md)
 * [pronouns-affixes-fst-src.md](pronouns-affixes-fst-src.md)
 * [smi-propernouns-affixes-fst-src.md](smi-propernouns-affixes-fst-src.md)
+* [numerals-affixes-fst-src.md](numerals-affixes-fst-src.md)
 * [acronyms-affixes-fst-src.md](acronyms-affixes-fst-src.md)
 * [adjectives-affixes-fst-src.md](adjectives-affixes-fst-src.md)
 * [adverbs-affixes-fst-src.md](adverbs-affixes-fst-src.md)
