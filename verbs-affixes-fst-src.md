@@ -21,8 +21,9 @@ The lexicon *V-NEG_IJ*
 
 
 
- * LEXICON V_LEEQD  leeʹd:l
-The lexicon *V_LEEQD* for the copula
+ * LEXICON IV_LEEQD  leeʹd:l
+ * LEXICON V0_LEEQD  leeʹd:l
+The lexicon *V0_LEEQD* for the copula
 
 
 
@@ -1227,7 +1228,8 @@ ExtraStrong-RaisedVowel-Palatalization
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
- * :%^V2VV%^VOWLower%^PAL%^XYY2VY VSUF-IND-PRS-CONNEG_ED ;  (5) 
+ * :%^PAL%^XYY2VY VSUF-IND-PRS-CONNEG_ED ;  (5) puuʹt
+ * +Use/NG+Err/Orth:%^V2VV%^VOWLower%^PAL%^XYY2VY VSUF-IND-PRS-CONNEG_ED ;  (5) poouʹt
 Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 
 Weak-RaisedVowel-Palatalization
@@ -1327,7 +1329,8 @@ Weak-StableV-Palatalization
 Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 
 Weak-RaisedVowel-Palatalization
- * :%^VOWRaise%^PALE%^PAL%^CC2C%> VSUF-POTENTIAL_ED ;   (6) +V+Pot+Sg3: !! tieʹđež
+ * :%^VOWRaise%^PAL%^CC2C%> VSUF-POTENTIAL_ED ;   (6) +V+Pot+Sg3: !! tiõʹđež
+ * +Use/NG+Err/Orth:%^VOWRaise%^PALE%^PAL%^CC2C%> VSUF-POTENTIAL_ED ;   (6) +V+Pot+Sg3: !! tieʹđež
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
 
 Weak-LoweredVowel-No-palatalization
@@ -2132,6 +2135,7 @@ Imprt+Pl3
 
 
  * LEXICON V_VUEAIQNNED  vueiʹnned:vuäinn
+ * LEXICON TV_VUEAIQNNED  vueiʹnned:vuäinn
  * LEXICON V0_VUEAIQNNED  vueiʹnned:vuäinn
 
 (11) Present Participle:
