@@ -44,6 +44,7 @@ GT_LEXC_SRCS_L1_L2=\
 				affixes/adjectives.lexc \
 				affixes/adverbs.lexc \
 				affixes/nouns.lexc \
+				affixes/numerals.lexc \
 				affixes/pronouns.lexc \
 				affixes/propernouns.lexc \
 				affixes/smi-propernouns.lexc \
@@ -107,7 +108,9 @@ GENERATED_LEXC_SRCS=\
 			$(srcdir)/stems/V_sms2x.lexc                   \
 			$(srcdir)/stems/ABBR_sms2x.lexc                \
 			$(srcdir)/stems/ACRO_sms2x.lexc                \
-			generated_files/punctuation.lexc               \
+			generated_files/arabic_roman_digits.lexc \
+			generated_files/punctuation.lexc \
+			generated_files/smi-digits.lexc \
 			generated_files/symbols.lexc
 
 # Set this to the names of all source xml files, if any
@@ -170,6 +173,11 @@ generated_files/smi-$(GTLANG)-propernouns.lexc: \
 	echo "! <--- Dump from SMI -->" >> $@ && \
 	echo "" >> $@ && \
 	$(top_srcdir)/src/scripts/smi-$(GTLANG)-conversion.pl $< >> $@
+
+generated_files/%.lexc: \
+		$(GIELLA_SHARED)/smi/src/fst/stems/%.lexc
+	$(AM_V_at)$(MKDIR_P) generated_files
+	$(AM_V_GEN)cp -f $< $@
 
 
 ### END: Local processing: ###
