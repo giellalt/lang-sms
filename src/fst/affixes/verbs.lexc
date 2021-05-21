@@ -49,7 +49,9 @@ LEXICON V-NEG_IJ  !!= * @CODE@ ij:
 
 
 
-LEXICON V_LEEQD !!= * @CODE@ leeʹd:l
+LEXICON IV_LEEQD !!= * @CODE@ leeʹd:l
++IV: V0_LEEQD ;
+LEXICON V0_LEEQD !!= * @CODE@ leeʹd:l
 !! The lexicon *@LEXNAME@* for the copula
 
 +Ind+Prs:		LEED-PRS ;
@@ -1838,8 +1840,8 @@ LEXICON V0_HEARRAD
 :%^CC2CCC VSUF-IMPRT-PL3_AD ; !!= * @CODE@ (9) Ind.Imprt.Pl3: heârˈraz
 :%^CC2CAllegro FOR-ALLEGRO-DEVERBAL-DERIVATION ;
 
-LEXICON V_LUYDDDAD
- V_CEAKKKAD ;
+!LEXICON V_LUYDDDAD
+! V_CEAKKKAD ;
 LEXICON V_CEAKKKAD
 : V0_CEAKKKAD ;
 LEXICON IV_CEAKKKAD
@@ -2899,7 +2901,8 @@ LEXICON V0_PUQHTTED !!= * @CODE@ puʹhtted:pu%^1VOW%{ʹØ%}h%{ʹØ%}tt
 !! +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 !! Weak-StableV-Palatalization
-:%^V2VV%^VOWLower%^PAL%^XYY2VY VSUF-IND-PRS-CONNEG_ED ; !!= * @CODE@ (5) 
+:%^PAL%^XYY2VY VSUF-IND-PRS-CONNEG_ED ; !!= * @CODE@ (5) puuʹt
++Use/NG+Err/Orth:%^V2VV%^VOWLower%^PAL%^XYY2VY VSUF-IND-PRS-CONNEG_ED ; !!= * @CODE@ (5) poouʹt
 !! Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 
 !! Weak-RaisedVowel-Palatalization
@@ -3016,7 +3019,8 @@ LEXICON V0_TIEQTTED !!= * @CODE@ tieʹtted:teâtt
 !! Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 
 !! Weak-RaisedVowel-Palatalization
-:%^VOWRaise%^PALE%^PAL%^CC2C%> VSUF-POTENTIAL_ED ; !!= * @CODE@  (6) +V+Pot+Sg3: !! tieʹđež
+:%^VOWRaise%^PAL%^CC2C%> VSUF-POTENTIAL_ED ; !!= * @CODE@  (6) +V+Pot+Sg3: !! tiõʹđež
++Use/NG+Err/Orth:%^VOWRaise%^PALE%^PAL%^CC2C%> VSUF-POTENTIAL_ED ; !!= * @CODE@  (6) +V+Pot+Sg3: !! tieʹđež
 !! Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
 
 !! Weak-LoweredVowel-No-palatalization
@@ -4087,8 +4091,8 @@ LEXICON V_VUEAIQNNED !!= * @CODE@ vueiʹnned:vuäinn
 : V0_VUEAIQNNED ;
 !LEXICON IV_VUEAIQNNED !!= * @CODE@ vueiʹnned:vuäinn
 !+IV: V0_VUEAIQNNED ;
-!LEXICON TV_VUEAIQNNED !!= * @CODE@ vueiʹnned:vuäinn
-!+TV: V0_VUEAIQNNED ;
+LEXICON TV_VUEAIQNNED !!= * @CODE@ vueiʹnned:vuäinn
++TV: V0_VUEAIQNNED ;
 LEXICON V0_VUEAIQNNED !!= * @CODE@ vueiʹnned:vuäinn
 !!! inflection_type="1"
 ! FORMS
