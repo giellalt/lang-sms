@@ -92,7 +92,7 @@ The lexicon *Interjection* lists the interjections
 # Subjunctions
 
 The lexicon *Subjunction* lists the subjunctions
- * So far it contains only go CS_ ;  
+ * So far it contains only go+CS:go CS_ ;  
 
 
 
