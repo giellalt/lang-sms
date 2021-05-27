@@ -1115,18 +1115,20 @@ LEXICON NUM_LOAOAI !!≈ * **@CODE@** lååi:l  THIS looks like allegro
         :ooʹjj    PL-OBL ; 
  
  
-LEXICON PCLE_ 
-+Pcle: # ; 
-LEXICON PCLE-NEG_ 
-+Pcle+Neg: # ; 
+LEXICON PCLE_
+!! @LEXNAME@ is here since Pcle_sms2x.xml wants it. It does nothing.
+ # ; 
+LEXICON PCLE-NEG_
+!! @LEXNAME@  is here since Pcle_sms2x.xml wants it. It adds +Neg.
++Neg: # ; 
  
 !! Postpositions with government tagging possible 
 LEXICON ADP_ 
 !! @LEXNAME@ 
- PO_ ; 
- PR_ ; 
-LEXICON PO_ 
-!! @LEXNAME@ 
+ PO_tag ; 
+ PR_tag ; 
+LEXICON PO_tag 
+!! @LEXNAME@ is the lexicon adding the tag +Po
  +Po: # ; 
 LEXICON PO-ILL_ 
 !! @LEXNAME@ 
@@ -1134,7 +1136,9 @@ LEXICON PO-ILL_
 LEXICON PO-LOC_ 
 !! @LEXNAME@ 
 +Po+Loc: # ; 
- 
+LEXICON PO_
+!! @LEXNAME@ is a dummy lexicon not adding anything
+# ;
 LEXICON ADP-GOV-LOC_ 
 !! @LEXNAME@ 
  +Po+%<loc%>: # ; 
@@ -1145,9 +1149,12 @@ LEXICON PO-GOV-GEN_
  
 !! Prepositions with government tagging possible 
  
-LEXICON PR_ 
-!! @LEXNAME@ 
+LEXICON PR_tag 
+!! @LEXNAME@ is the lexicon adding the tag +Pr 
  +Pr: # ; 
+LEXICON PR_
+!! @LEXNAME@ is a dummy lexicon not adding anything
+# ;
  
 !LEXICON PR-TEMP-GOV-GEN_ 
 ! +Pr+Temp+%<gen%>: # ; 
