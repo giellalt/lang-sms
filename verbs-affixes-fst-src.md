@@ -13,9 +13,9 @@ Then irregular verbs ij and the copula.
  * LEXICON V-NEG_IJ   ij:
 The lexicon *V-NEG_IJ*
 
- * +V+Neg+Ind+Sg1:jiõˈm	   K ; 
- * +Use/NGminip+Use/NG+V+Neg+Ind+Sg1:jim	   K ; 
- * +V+Neg+Ind+Sg2:jiõˈk	   K ; 
+ * +Neg+Ind+Sg1:jiõˈm	   K ; 
+ * +Use/NGminip+Use/NG+Neg+Ind+Sg1:jim	   K ; 
+ * +Neg+Ind+Sg2:jiõˈk	   K ; 
 
 
 

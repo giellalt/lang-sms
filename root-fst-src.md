@@ -911,8 +911,6 @@ given the proper use of these flags.
  * **Punctuation ;** 
  * **Symbols ;** 
  * **Particle ;** 
-
- * **NEG-COPULA ;** This is for 3rd person iʹlla 
 This generates from merged materials 
  * **A_sms2x ;** This generates from merged materials 
  * **TRAB_sms2x ;** transitive abbreviations 

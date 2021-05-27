@@ -564,9 +564,9 @@ Then irregular verbs ij and the copula.
  * LEXICON V-NEG_IJ   ij:
 The lexicon *V-NEG_IJ*
 
- * +V+Neg+Ind+Sg1:jiõˈm	   K ; 
- * +Use/NGminip+Use/NG+V+Neg+Ind+Sg1:jim	   K ; 
- * +V+Neg+Ind+Sg2:jiõˈk	   K ; 
+ * +Neg+Ind+Sg1:jiõˈm	   K ; 
+ * +Use/NGminip+Use/NG+Neg+Ind+Sg1:jim	   K ; 
+ * +Neg+Ind+Sg2:jiõˈk	   K ; 
 
 
 
@@ -15920,6 +15920,9 @@ Some verbs have variant forms:
 
 
 The verb of negation
+ * **iʹlla+V: NEG-COPULA ;** This is for 3rd person iʹlla 
+
+
 
 PREFIXES for nouns
 
@@ -16972,8 +16975,6 @@ given the proper use of these flags.
  * **Punctuation ;** 
  * **Symbols ;** 
  * **Particle ;** 
-
- * **NEG-COPULA ;** This is for 3rd person iʹlla 
 This generates from merged materials 
  * **A_sms2x ;** This generates from merged materials 
  * **TRAB_sms2x ;** transitive abbreviations 

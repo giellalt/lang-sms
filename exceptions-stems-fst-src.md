@@ -25,6 +25,9 @@ Some verbs have variant forms:
 
 
 The verb of negation
+ * **iʹlla+V: NEG-COPULA ;** This is for 3rd person iʹlla 
+
+
 
 PREFIXES for nouns
 
