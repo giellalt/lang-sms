@@ -33,7 +33,6 @@
 * [exceptions-stems-fst-src.md](exceptions-stems-fst-src.md)
 * [toponyms_newwords-stems-fst-src.md](toponyms_newwords-stems-fst-src.md)
 * [subjunctions-stems-fst-src.md](subjunctions-stems-fst-src.md)
-* [particles-stems-fst-src.md](particles-stems-fst-src.md)
 * [root-fst-src.md](root-fst-src.md)
 * [transcriptor-date-digit2text-transcriptions-src.md](transcriptor-date-digit2text-transcriptions-src.md)
 * [transcriptor-clock-digit2text-transcriptions-src.md](transcriptor-clock-digit2text-transcriptions-src.md)

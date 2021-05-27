@@ -1004,20 +1004,23 @@ NUM_LO
 NUM_LOAOAI 
 
 
+PCLE_ is here since Pcle_sms2x.xml wants it. It does nothing.
+PCLE-NEG_  is here since Pcle_sms2x.xml wants it. It adds +Neg.
 
 Postpositions with government tagging possible 
 ADP_ 
-PO_ 
+PO_tag is the lexicon adding the tag +Po
 PO-ILL_ 
 PO-LOC_ 
-
+PO_ is a dummy lexicon not adding anything
 ADP-GOV-LOC_ 
 PO-GOV-GEN_ 
 
 
 Prepositions with government tagging possible 
 
-PR_ 
+PR_tag is the lexicon adding the tag +Pr 
+PR_ is a dummy lexicon not adding anything
 
 
 PR-TEMP-GOV-LOC_ 

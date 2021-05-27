@@ -15947,8 +15947,6 @@ exporting (we need a script for this).
 
 # Skolt Saami adverbs
 
-The lexicon *Adposition* contains adverbs.
-They are taken from [http://www.uta.fi/~km56049/same/skolt/koltansaame.html]
 
 
 # Skolt Saami Conjunctions 
@@ -16060,19 +16058,6 @@ The lexicon *Subjunction* lists the subjunctions
  * So far it contains only go Cs ;  
 
 
-
-
-# Skolt Saami Particles
-
-
-The lexicon pcle gives the tag.
-
-
-## List of particles in the lexicon Particle
-
- ges pcle ; 
-
-## unclear whether these are really particles
 
 
 
@@ -17080,20 +17065,23 @@ NUM_LO
 NUM_LOAOAI 
 
 
+PCLE_ is here since Pcle_sms2x.xml wants it. It does nothing.
+PCLE-NEG_  is here since Pcle_sms2x.xml wants it. It adds +Neg.
 
 Postpositions with government tagging possible 
 ADP_ 
-PO_ 
+PO_tag is the lexicon adding the tag +Po
 PO-ILL_ 
 PO-LOC_ 
-
+PO_ is a dummy lexicon not adding anything
 ADP-GOV-LOC_ 
 PO-GOV-GEN_ 
 
 
 Prepositions with government tagging possible 
 
-PR_ 
+PR_tag is the lexicon adding the tag +Pr 
+PR_ is a dummy lexicon not adding anything
 
 
 PR-TEMP-GOV-LOC_ 

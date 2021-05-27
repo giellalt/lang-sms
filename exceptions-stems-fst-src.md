@@ -52,8 +52,6 @@ exporting (we need a script for this).
 
 # Skolt Saami adverbs
 
-The lexicon *Adposition* contains adverbs.
-They are taken from [http://www.uta.fi/~km56049/same/skolt/koltansaame.html]
 
 
 # Skolt Saami Conjunctions 
