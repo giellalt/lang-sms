@@ -13361,6 +13361,8 @@ Used with words like juurd: jurddǥatta
 
 # Skolt Sámi TWOLC file
 
+This file documents the [phonology.twolc file](http://github.com/giellalt/lang-sms/blob/main/src/fst/phonology.twolc) 
+
 # Introduction
 The twolc rule file for Skolt Saami is divided into 5 main sections:
 1. Alphabets, Sets and Definitions
