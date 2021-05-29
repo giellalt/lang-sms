@@ -15,11 +15,9 @@
 !! # Skolt Saami Pronoun Morphology 
 
 LEXICON PRON_
-!! The lexicon *@LEXNAME@* assigns the tag **+Pron**
-: # ;
+!! The lexicon *@LEXNAME@*, which is actually not needed, as pronouns get +Pron tag earlier.
+ # ;
 
-!LEXICON PRON-PERS_
-!+Pron+Pers: # ;
 LEXICON PRON-PERS-SG1_
 +Sg1+Nom:on K ;
 +Sg1:u PRON-PERS-SG-OBL ;
@@ -114,51 +112,6 @@ Interrogative ; !!= * @CODE@
 
 !! Splitting according to person
 
-!LEXICON Personal           !!= * @CODE@
-!mon+Pron+Pers:m perspron ;  !!= * @CODE@ The Epsilon  inserted 2015-02-11
-!ton+Pron+Pers:t perspron ;  !!= * @CODE@ The Epsilon  inserted 2015-02-11
-!son+Pron+Pers:0s perspron ;  !!= * @CODE@ The Epsilon  inserted 2015-02-11
-
-!LEXICON perspron
-!:u	    perspronoblsg ;
-!:uän    persprondu ;
-!:ån	    persprondu ;
-!:	    perspronpl ;
-!+Sg+Nom:on	K ;
-!+Du+Nom:ååna	K ;
-!+Pl+Loc:eeʹst	K ;
-
-!LEXICON perspronoblsg 
-!+Sg+Gen:u	      K ;
-!+Sg+Acc:u	      K ;
-!+Sg+Ill:ʹnne	      K ;
-!+Sg+Loc:ʹst	      K ;
-!+Sg+Com:in	      K ;
-!+Sg+Abe:utää	      K ;
-!+Ess:uʹnen	      K ;
-!+Par:uʹđed	      K ;
-
-
-
-!LEXICON persprondu
-!+Du+Nom:a		K ;
-!+Du+Gen:nai	      K ;
-!+Du+Acc:naid	      K ;
-!+Du+Ill:naid	      K ;
-!+Du+Loc:nast	      K ;
-!+Du+Com:nain	      K ;
-!+Du+Abe:naitää	      K ;
-!+Du+Ess:nan	      K ;
-
-!LEXICON perspronpl
-!+Pl+Nom:ij		K ; !!= * @CODE@ mij, tij, sij
-!+Pl+Gen:ij	      K ; !!= * @CODE@ mij, tij, sij
-!+Pl+Acc:iʹjjid	      K ; !!= * @CODE@ miʹjjid, tiʹjjid, siʹjjid
-!+Pl+Ill:iʹjjid	      K ; !!= * @CODE@ miʹjjid, tiʹjjid, siʹjjid
-!+Pl+Loc:eeʹst	      K ; !!= * @CODE@ meeʹst, teeʹst, seeʹst
-!+Pl+Com:ijvuiʹm     K ; !!= * @CODE@ mijvuiʹm, tijvuiʹm, sijvuiʹm
-!+Pl+Abe:ijtää	      K ; !!= * @CODE@ mijtää, tijtää, sijtää
-
 
 
 
@@ -230,192 +183,190 @@ LEXICON PRON-INDEF_
 
 !work required
 LEXICON PRON-REFL_ !! jiõčč: 
-+Pron+Refl+Sg1+Acc:jiõččan # ;
-+Pron+Refl+Sg1+Acc:jiiččan # ;
-+Pron+Refl+Sg1+Acc:jiijjan # ;
-+Pron+Refl+Sg2+Acc:jiijjad # ;
-+Pron+Refl+Sg2+Acc:jiõččad # ;
-+Pron+Refl+Sg3+Acc:jiijjâs # ;
-+Pron+Refl+Sg3+Acc:jiiʹjjes # ;
-+Pron+Refl+Pl1+Acc:jiõččân # ;
-+Pron+Refl+Pl1+Acc:jiiččân # ;
-+Pron+Refl+Pl1+Acc:jiijjân # ;
-+Pron+Refl+Pl1+Acc:jieʹččen # ;
-+Pron+Refl+Pl1+Acc:jiiʹjjen # ;
-+Pron+Refl+Pl2+Acc:jiijjâd # ;
-+Pron+Refl+Pl2+Acc:jiiʹjjed # ;
-+Pron+Refl+Pl2+Acc:jiiʹjjeed # ;
-+Pron+Refl+Pl3+Acc:jiijjâz # ;
-+Pron+Refl+Pl3+Acc:jiiʹjjez # ;
-+Pron+Refl+Pl3+Acc:jiiʹjjeez # ;
++Refl+Sg1+Acc:jiõččan # ;
++Refl+Sg1+Acc:jiiččan # ;
++Refl+Sg1+Acc:jiijjan # ;
++Refl+Sg2+Acc:jiijjad # ;
++Refl+Sg2+Acc:jiõččad # ;
++Refl+Sg3+Acc:jiijjâs # ;
++Refl+Sg3+Acc:jiiʹjjes # ;
++Refl+Pl1+Acc:jiõččân # ;
++Refl+Pl1+Acc:jiiččân # ;
++Refl+Pl1+Acc:jiijjân # ;
++Refl+Pl1+Acc:jieʹččen # ;
++Refl+Pl1+Acc:jiiʹjjen # ;
++Refl+Pl2+Acc:jiijjâd # ;
++Refl+Pl2+Acc:jiiʹjjed # ;
++Refl+Pl2+Acc:jiiʹjjeed # ;
++Refl+Pl3+Acc:jiijjâz # ;
++Refl+Pl3+Acc:jiiʹjjez # ;
++Refl+Pl3+Acc:jiiʹjjeez # ;
 
-+Pron+Refl+Sg1+Gen:jiõččan # ;
-+Pron+Refl+Sg1+Gen:jiijjan # ;
-+Pron+Refl+Sg2+Gen:jiijjad # ;
-+Pron+Refl+Sg2+Gen:jiõččad # ;
-+Pron+Refl+Sg2+Gen:jiõjjad # ;
-+Pron+Refl+Sg3+Gen:jiijjâs # ;
-+Pron+Refl+Sg3+Gen:jiiʹjjes # ;
-+Pron+Refl+Pl1+Gen:jiõččân # ;
-+Pron+Refl+Pl1+Gen:jiiččân # ;
-+Pron+Refl+Pl1+Gen:jiijjân # ;
-+Pron+Refl+Pl1+Gen:jieʹččen # ;
-+Pron+Refl+Pl1+Gen:jiiʹjjen # ;
-+Pron+Refl+Pl2+Gen:jiijjâd # ;
-+Pron+Refl+Pl2+Gen:jiiʹjjed # ;
-+Pron+Refl+Pl2+Gen:jiiʹjjeed # ;
-+Pron+Refl+Pl3+Gen:jiijjâz # ;
-+Pron+Refl+Pl3+Gen:jiiʹjjez # ;
-+Pron+Refl+Pl3+Gen:jiiʹjjeez # ;
++Refl+Sg1+Gen:jiõččan # ;
++Refl+Sg1+Gen:jiijjan # ;
++Refl+Sg2+Gen:jiijjad # ;
++Refl+Sg2+Gen:jiõččad # ;
++Refl+Sg2+Gen:jiõjjad # ;
++Refl+Sg3+Gen:jiijjâs # ;
++Refl+Sg3+Gen:jiiʹjjes # ;
++Refl+Pl1+Gen:jiõččân # ;
++Refl+Pl1+Gen:jiiččân # ;
++Refl+Pl1+Gen:jiijjân # ;
++Refl+Pl1+Gen:jieʹččen # ;
++Refl+Pl1+Gen:jiiʹjjen # ;
++Refl+Pl2+Gen:jiijjâd # ;
++Refl+Pl2+Gen:jiiʹjjed # ;
++Refl+Pl2+Gen:jiiʹjjeed # ;
++Refl+Pl3+Gen:jiijjâz # ;
++Refl+Pl3+Gen:jiiʹjjez # ;
++Refl+Pl3+Gen:jiiʹjjeez # ;
 
-+Pron+Refl+Sg1+Ill:jiõcˈcsan # ;
-+Pron+Refl+Sg1+Ill:jiccsan # ;
-+Pron+Refl+Sg1+Ill:jiõccan # ;
-+Pron+Refl+Sg2+Ill:jiõcˈcsad # ;
-+Pron+Refl+Sg2+Ill:jiccsad # ;
-+Pron+Refl+Sg3+Ill:jiõcˈcses # ;
-+Pron+Refl+Sg3+Ill:jiccses # ;
-+Pron+Refl+Sg3+Ill:jiõcces # ;
-+Pron+Refl+Pl1+Ill:jiõcˈcseen # ;
-+Pron+Refl+Pl1+Ill:jiccseen # ;
-+Pron+Refl+Pl1+Ill:jiõcceen # ;
-+Pron+Refl+Pl2+Ill:jiõcˈcseed # ;
-+Pron+Refl+Pl2+Ill:jiccseed # ;
-+Pron+Refl+Pl2+Ill:jiõcceed # ;
-+Pron+Refl+Pl3+Ill:jiõcˈcseez # ;
-+Pron+Refl+Pl3+Ill:jiccseez # ;
-+Pron+Refl+Pl3+Ill:jiõcceez # ;
++Refl+Sg1+Ill:jiõcˈcsan # ;
++Refl+Sg1+Ill:jiccsan # ;
++Refl+Sg1+Ill:jiõccan # ;
++Refl+Sg2+Ill:jiõcˈcsad # ;
++Refl+Sg2+Ill:jiccsad # ;
++Refl+Sg3+Ill:jiõcˈcses # ;
++Refl+Sg3+Ill:jiccses # ;
++Refl+Sg3+Ill:jiõcces # ;
++Refl+Pl1+Ill:jiõcˈcseen # ;
++Refl+Pl1+Ill:jiccseen # ;
++Refl+Pl1+Ill:jiõcceen # ;
++Refl+Pl2+Ill:jiõcˈcseed # ;
++Refl+Pl2+Ill:jiccseed # ;
++Refl+Pl2+Ill:jiõcceed # ;
++Refl+Pl3+Ill:jiõcˈcseez # ;
++Refl+Pl3+Ill:jiccseez # ;
++Refl+Pl3+Ill:jiõcceez # ;
 
-+Pron+Refl+Sg1+Loc:jijstan # ;
-+Pron+Refl+Sg1+Loc:jiijjstan # ;
-+Pron+Refl+Sg2+Loc:jijstad # ;
-+Pron+Refl+Sg2+Loc:jiijjstad # ;
-+Pron+Refl+Sg3+Loc:jijstes # ;
-+Pron+Refl+Sg3+Loc:jiijjstes # ;
-+Pron+Refl+Pl1+Loc:jijsteen # ;
-+Pron+Refl+Pl1+Loc:jiijjsteen # ;
-+Pron+Refl+Pl2+Loc:jijsteed # ;
-+Pron+Refl+Pl2+Loc:jiijjsteed # ;
-+Pron+Refl+Pl3+Loc:jijsteez # ;
-+Pron+Refl+Pl3+Loc:jiijjsteez # ;
++Refl+Sg1+Loc:jijstan # ;
++Refl+Sg1+Loc:jiijjstan # ;
++Refl+Sg2+Loc:jijstad # ;
++Refl+Sg2+Loc:jiijjstad # ;
++Refl+Sg3+Loc:jijstes # ;
++Refl+Sg3+Loc:jiijjstes # ;
++Refl+Pl1+Loc:jijsteen # ;
++Refl+Pl1+Loc:jiijjsteen # ;
++Refl+Pl2+Loc:jijsteed # ;
++Refl+Pl2+Loc:jiijjsteed # ;
++Refl+Pl3+Loc:jijsteez # ;
++Refl+Pl3+Loc:jiijjsteez # ;
 
-+Pron+Refl+Sg1+Com:jiijjinan # ;
-+Pron+Refl+Sg1+Com:jiõččinan # ;
-+Pron+Refl+Sg1+Com:jičinan # ;
-+Pron+Refl+Sg2+Com:jiijjinad # ;
-+Pron+Refl+Sg2+Com:jiõččinad # ;
-+Pron+Refl+Sg3+Com:jiijjines # ;
-+Pron+Refl+Sg3+Com:jiõččines # ;
-+Pron+Refl+Pl1+Com:jiijjeenvuiʹm # ;
-+Pron+Refl+Pl1+Com:jiõččineen # ;
-+Pron+Refl+Pl2+Com:jiijjeedvuiʹm # ;
-+Pron+Refl+Pl2+Com:jiõččineed # ;
-+Pron+Refl+Pl3+Com:jiijjeezvuiʹm # ;
-+Pron+Refl+Pl3+Com:jiõččineez # ;
++Refl+Sg1+Com:jiijjinan # ;
++Refl+Sg1+Com:jiõččinan # ;
++Refl+Sg1+Com:jičinan # ;
++Refl+Sg2+Com:jiijjinad # ;
++Refl+Sg2+Com:jiõččinad # ;
++Refl+Sg3+Com:jiijjines # ;
++Refl+Sg3+Com:jiõččines # ;
++Refl+Pl1+Com:jiijjeenvuiʹm # ;
++Refl+Pl1+Com:jiõččineen # ;
++Refl+Pl2+Com:jiijjeedvuiʹm # ;
++Refl+Pl2+Com:jiõččineed # ;
++Refl+Pl3+Com:jiijjeezvuiʹm # ;
++Refl+Pl3+Com:jiõččineez # ;
 
-+Pron+Refl+Sg1+Ess:jiõččnan # ;
-+Pron+Refl+Sg2+Ess:jiõččnad # ;
-+Pron+Refl+Sg3+Ess:jiõččnes # ;
-+Pron+Refl+Pl1+Ess:jiõččneen # ;
-+Pron+Refl+Pl2+Ess:jiõččneed # ;
-+Pron+Refl+Pl3+Ess:jiõččneez # ;
++Refl+Sg1+Ess:jiõččnan # ;
++Refl+Sg2+Ess:jiõččnad # ;
++Refl+Sg3+Ess:jiõččnes # ;
++Refl+Pl1+Ess:jiõččneen # ;
++Refl+Pl2+Ess:jiõččneed # ;
++Refl+Pl3+Ess:jiõččneez # ;
 
 
 
 ! Still work to be done 2016-11-20
 !LEXICON PRON-REFL-SG1_
-!+Pron+Refl+Sg1: K ;
+!+Refl+Sg1: K ;
 !LEXICON PRON-REFL-SG2_
-!+Pron+Refl+Sg2: K ;
+!+Refl+Sg2: K ;
 !LEXICON PRON-REFL-SG3_
-!+Pron+Refl+Sg3: K ;
+!+Refl+Sg3: K ;
 !LEXICON PRON-REFL-PL1_
-!+Pron+Refl+Pl1: K ;
+!+Refl+Pl1: K ;
 !LEXICON PRON-REFL-PL2_
-!+Pron+Refl+Pl2: K ;
+!+Refl+Pl2: K ;
 LEXICON PRON-REFL-PL3_
-+Pron+Refl+Pl3: K ; ! jiijjâz
++Refl+Pl3: K ; ! jiijjâz
 
 LEXICON PRON-REFL-SG-NOM_
-+Pron+Refl+Sg+Nom: K ;
++Refl+Sg+Nom: K ;
 !LEXICON PRON-REFL-PL-NOM_
-!+Pron+Refl+Pl+Nom: K ;
+!+Refl+Pl+Nom: K ;
 
 LEXICON PRON-REFL-SG1-COM_
-+Pron+Refl+Sg1+Com: # ;
++Refl+Sg1+Com: # ;
 !LEXICON PRON-REFL-SG2-COM_
-!+Pron+Refl+Sg2+Com: # ;
+!+Refl+Sg2+Com: # ;
 !LEXICON PRON-REFL-SG3-COM_
-!+Pron+Refl+Sg3+Com: # ;
+!+Refl+Sg3+Com: # ;
 !LEXICON PRON-REFL-PL1-COM_
-!+Pron+Refl+Pl1+Com: # ;
+!+Refl+Pl1+Com: # ;
 !LEXICON PRON-REFL-PL2-COM_
-!+Pron+Refl+Pl2+Com: # ;
+!+Refl+Pl2+Com: # ;
 !LEXICON PRON-REFL-PL3-COM_
-!+Pron+Refl+Pl3+Com: # ;
+!+Refl+Pl3+Com: # ;
 
 LEXICON PRON-REFL-SG1-ILL_
-+Pron+Refl+Sg1+Ill: # ;
++Refl+Sg1+Ill: # ;
 !LEXICON PRON-REFL-SG2-ILL_
-!+Pron+Refl+Sg2+Ill: # ;
+!+Refl+Sg2+Ill: # ;
 !LEXICON PRON-REFL-SG3-ILL_
-!+Pron+Refl+Sg3+Ill: # ;
+!+Refl+Sg3+Ill: # ;
 !LEXICON PRON-REFL-PL1-ILL_
-!+Pron+Refl+Pl1+Ill: # ;
+!+Refl+Pl1+Ill: # ;
 !LEXICON PRON-REFL-PL2-ILL_
-!+Pron+Refl+Pl2+Ill: # ;
+!+Refl+Pl2+Ill: # ;
 !LEXICON PRON-REFL-PL3-ILL_
-!+Pron+Refl+Pl3+Ill: # ;
+!+Refl+Pl3+Ill: # ;
 
 LEXICON PRON-REFL-SG1-LOC_
-+Pron+Refl+Sg1+Loc: # ;
++Refl+Sg1+Loc: # ;
 LEXICON PRON-REFL-SG2-LOC_
-+Pron+Refl+Sg2+Loc: # ;
++Refl+Sg2+Loc: # ;
 LEXICON PRON-REFL-SG3-LOC_
-+Pron+Refl+Sg3+Loc: # ;
++Refl+Sg3+Loc: # ;
 LEXICON PRON-REFL-PL1-LOC_
-+Pron+Refl+Pl1+Loc: # ;
++Refl+Pl1+Loc: # ;
 LEXICON PRON-REFL-PL2-LOC_
-+Pron+Refl+Pl2+Loc: # ;
++Refl+Pl2+Loc: # ;
 LEXICON PRON-REFL-PL3-LOC_
-+Pron+Refl+Pl3+Loc: # ;
++Refl+Pl3+Loc: # ;
 
 
 
 LEXICON Reflexive !!= * @CODE@
 
-jiõčč+Pron+Refl+Sg+Nom:jiõčč K ;
-jiõčč+Use/NGminip+Use/NG+Pron+Refl+Sg+Nom:jiičč K ;
-jiõčč+Pron+Refl+Pl+Nom:jiijj K ;
-
-
-jiõčč+Pron+Refl+Gen+Sg3:jiijjâs	K ;
-jiõčč+Pron+Refl+Acc+Sg3:jiijjâs	K ;
-jiõčč+Pron+Refl+Gen+Pl1:jieʹččen	K ;
-jiõčč+Pron+Refl+Acc+Pl1:jieʹččen	K ;
-jiõčč+Pron+Refl+Gen:jiõčč		GA-I ;
-jiõčč+Pron+Refl+Acc:jiõčč		GA-I ;
-jiõčč+Pron+Refl+Gen:jiičč		GA-I ;
-jiõčč+Pron+Refl+Acc:jiičč		GA-I ;
-jiõčč+Pron+Refl+Gen:jiijj		GA-II ;
-jiõčč+Pron+Refl+Acc:jiijj		GA-II ;
-jiõčč+Pron+Refl+Gen:jiiʹjj		GA-II ;
-jiõčč+Pron+Refl+Acc:jiiʹjj		GA-II ;
-jiõčč+Pron+Refl+Ill:jiõccs		ILEPX ;
-jiõčč+Pron+Refl+Ill:jiccs		ILEPX ;
-jiõčč+Pron+Refl+Loc:jijst		ILEPX ;
-jiõčč+Pron+Refl+Loc:jiijjst		LOCPX ;
-jiõčč+Pron+Refl+Ess:jiõččn		ILEPX ;
-jiõčč+Pron+Refl+Com:jijj		COMPX ;
++Sg+Nom:jiõčč K ;
++Use/NGminip+Use/NG+Sg+Nom:jiičč K ;
++Pl+Nom:jiijj K ;
++Gen+Sg3:jiijjâs	K ;
++Acc+Sg3:jiijjâs	K ;
++Gen+Pl1:jieʹččen	K ;
++Acc+Pl1:jieʹččen	K ;
++Gen:jiõčč		GA-I ;
++Acc:jiõčč		GA-I ;
++Gen:jiičč		GA-I ;
++Acc:jiičč		GA-I ;
++Gen:jiijj		GA-II ;
++Acc:jiijj		GA-II ;
++Gen:jiiʹjj		GA-II ;
++Acc:jiiʹjj		GA-II ;
++Ill:jiõccs		ILEPX ;
++Ill:jiccs		ILEPX ;
++Loc:jijst		ILEPX ;
++Loc:jiijjst		LOCPX ;
++Ess:jiõččn		ILEPX ;
++Com:jijj		COMPX ;
 
 
 LEXICON PRON_PUK
 !! Completion needed 2015-09-19
-+Pron+Sg+Nom: K ;
-+Pron+Pl+Gen:%>i K ;
-+Pron+Pl+Acc:%>id K ;
-+Pron+Pl+Ill:%>id K ;
-+Pron+Pl+Loc:%>in K ;
++Sg+Nom: K ;
++Pl+Gen:%>i K ;
++Pl+Acc:%>id K ;
++Pl+Ill:%>id K ;
++Pl+Loc:%>in K ;
 
 LEXICON GA-I !!= * @CODE@
 +Sg1:an K ;
@@ -459,9 +410,10 @@ LEXICON RCOMPLPX !!= * @CODE@
 
 !! ## Interrogative pronouns
 LEXICON PRON-INTERR_
-+Pron+Interr: # ;
+!! **LEXICON @LEXNAME@** is referred to from the xml file, hence does not assign **+Pron** tag.
++Interr: # ; !!≈ * @CODE@
 
-LEXICON Interrogative !!= * @CODE@
+LEXICON Interrogative !!= * @CODE@ is referred to from `pronouns.lexc`, hence assigns **+Pron** tag.
 mii+Pron+Interr:m	MK ; !!= * @CODE@ The Epsilon  inserted 2015-02-11
 ǩii+Pron+Interr:ǩ	MK ; !!= * @CODE@ The Epsilon  inserted 2015-02-11
 mii+Pron+Interr:mõõ	MK-long ;
@@ -564,8 +516,8 @@ LEXICON DISTR-MK-low !!= * @CODE@
 +Pl+Abe:i-a-tää	K ;
 
 LEXICON PRON-QNT_
-!+Pron+Qnt: # ; THIS NEEDS FIXING.2018-01-10
-+Pron: # ;
++Qnt: # ; ! THIS NEEDS FIXING.2018-01-10
+
 
 
 LEXICON Relative !!= * @CODE@
