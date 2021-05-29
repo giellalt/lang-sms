@@ -264,6 +264,7 @@ get the same pronunciation whether read as SME or NOB/NNO/SWE.
  * **+Sem/Ctain-clth** = Soft container, like a rucksack 
  * **+Sem/Curr** = Currency like dollár, Not Money 
  * **+Sem/Dance** = Dance 
+ * **+Sem/Date** = Number as date
  * **+Sem/Dir** = Direction like GPS-kursa 
  * **+Sem/Domain** = Domain like politics, reindeerherding (a system of actions) 
  * **+Sem/Drink** = Drink 
@@ -284,6 +285,7 @@ get the same pronunciation whether read as SME or NOB/NNO/SWE.
  * **+Sem/Holiday** 
  * **+Sem/Hum** = Human 
  * **+Sem/Hum-abstr** = Human abstract 
+ * **+Sem/ID** = number as identity tag, not as amount
  * **+Sem/Ideol** = Ideology 
  * **+Sem/Kin** for deprication to Sem/Hum-kin 
  * **+Sem/Hum-kin** = 
@@ -843,11 +845,12 @@ Compounding
  * **+Cmp/SoftHyph** - Tags compounds containing SOFT HYPHENS (U+00AD) 
  * **+Cmp/Cit** - Tags citation compounds, which can in principle    cover any word. Requires a hyphen. 
  * **+Use/PMatch** - 
+ * **+Use/-PMatch** - 
 
 ## Flag diacritics 
 
 | Flag | Explanation 
-| --- | --- @P.AssocColl.ON@ !!≈ * **+Use/PMatch** Used with Kin terms and Ant 
+| --- | --- @P.AssocColl.ON@ !!≈ * **+Use/-PMatch** Used with Kin terms and Ant 
  * **@R.AssocColl.ON@** 
  * **@C.AssocColl@** 
 
