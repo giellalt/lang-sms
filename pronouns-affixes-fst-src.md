@@ -1,7 +1,7 @@
 
 # Skolt Saami Pronoun Morphology 
 
-The lexicon *PRON_* assigns the tag **+Pron**
+The lexicon *PRON_*, which is actually not needed, as pronouns get +Pron tag earlier.
 
 
 
@@ -38,13 +38,6 @@ Pointing to all the pronominal subgroups
 
 
 Splitting according to person
-
-
-
-
-
-
-
 
 
 
@@ -89,8 +82,6 @@ jiõčč:
 
 
 
-
-
 Completion needed 2015-09-19
 
  * LEXICON GA-I 
@@ -113,8 +104,10 @@ Completion needed 2015-09-19
 
 
 ## Interrogative pronouns
+**LEXICON PRON-INTERR_** is referred to from the xml file, hence does not assign **+Pron** tag.
+ * +Interr: # ;
 
- * LEXICON Interrogative 
+ * LEXICON Interrogative  is referred to from `pronouns.lexc`, hence assigns **+Pron** tag.
  * mii+Pron+Interr:m	MK ;  The Epsilon  inserted 2015-02-11
  * ǩii+Pron+Interr:ǩ	MK ;  The Epsilon  inserted 2015-02-11
 
@@ -144,6 +137,7 @@ Completion needed 2015-09-19
  * LEXICON DISTR-MK-low-short 
 
  * LEXICON DISTR-MK-low 
+
 
 
 

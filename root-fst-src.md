@@ -334,6 +334,7 @@ get the same pronunciation whether read as SME or NOB/NNO/SWE.
  * **+Sem/Sur** Surname       (names) 
  * **+Sem/Symbol** = Symbol 
  * **+Sem/Time** = Time 
+ * **+Sem/Time-clock** = Time 
  * **+Sem/Tool** = Prototypical tool for repairing things 
  * **+Sem/Tool-catch** = Tool used for catching (e.g. fish) 
  * **+Sem/Tool-clean** = Tool used for cleaning 

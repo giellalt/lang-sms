@@ -7,7 +7,7 @@ Pointing to all the pronominal subgroups
  * LEXICON Pronoun 
  * Personal ;      
  * Demonstrative ; 
- * Reflexive ;     
+ * jiõčč+Pron+Refl: Reflexive ;     
  * Interrogative ; 
 
 
