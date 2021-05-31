@@ -157,6 +157,7 @@ to target regular expressions at all derivations in a language-independent way:
 just specify +Der|+Der1 .. +Der5 and you are set. 
 
  * **+Der** 
+ * **+Der/Ord** Num»A ordinal
  * **+Der/Car**  N»A -tem, -teʹmes 
  * **+Der/Dimin** diminutive derivation N»N was Der/Dim, 
  * **+Der/st**  V»V was diminutive subitive Der/sted, Der/âʹstted 
@@ -988,6 +989,7 @@ NUM_PAPP
 NUM_AELDD 
 NUM_KUEQLL 
 NUM_TAQHTT 
+NUM_KAEAEUQC 
  * **LEXICON NUM_KUEQHTT** kueʹhtt:kuâhtt 
 NUM_KUEQHTT 
 NUM_NELLJ 
@@ -1001,7 +1003,7 @@ NUM_JEAQNNN
 
  * **LEXICON NUM_LO** kuttlo:kuttl 
 NUM_LO 
- * **:ååǥǥ DET_NEELLJAD ;** This ordinal derivation 
+ * **+Der+Der/Ord+A:ååǥǥ A-ORD_NEELLJAD ;** This ordinal derivation 
  * **LEXICON NUM_LOAOAI** lååi:l  THIS looks like allegro 
 NUM_LOAOAI 
 

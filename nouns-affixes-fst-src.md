@@ -3889,6 +3889,19 @@ Is for nouns with *-est* Loc, Extra long vowel
  * :%^PAL%>e ESS/PAR ;    (6) Ess: täʹhtten
  * :%^V2VV%^PALNo%^XYY2VY E-STEM_N_KUYLAZH ;    !(9) Der/Dimin.N.Sg.Nom: tääutaž
 
+similar_to: KÅHTT
+* Yaml: **N-taehtt**
+ * +Use/NG+Err/Orth:%^PAL E-STEM_SG-NOM ;   (1) Sg.Nom: käʹhcc
+ * :%^V2VV%^PAL%^XYY2VY E-STEM_SG-NOM ;   (1) Sg.Nom: kääuʹc
+ * :%^V2VV%^PAL%^XYY2VY E-STEM_SG-ABE/ACC/GEN ;    (2) Pl.Nom: kääuʹc
+ * :%^V2VV%^PAL%^XYY2VY PL-NOM ;    (2) Pl.Nom: kääuʹc
+ * : E-STEM_SG-ILL ;    (3) Sg.Ill: tähtta
+ * :%^V2VV%^PAL%^XYY2VY%>e SG-LOC ;    (4) Sg.Loc: kääuʹcest
+ * :%^V2VV%^VOWRaise%^PAL%^XYY2VY SG-COM_IN ;    (5) Sg.Com: kääuʹcin
+ * :%^V2VV%^VOWRaise%^PAL%^XYY2VY E-STEM_PL-OBL ;    (5) Sg.Com: kääuʹcin
+ * :%^PAL%>e ESS/PAR ;    (6) Ess: täʹhtten
+ * :%^V2VV%^PALNo%^XYY2VY E-STEM_N_KUYLAZH ;    !(9) Der/Dimin.N.Sg.Nom: tääutaž
+
  * LEXICON N_RUQHSS  ruʹhss:ruhss
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (NO vowel shift)

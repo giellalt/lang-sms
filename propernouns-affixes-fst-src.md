@@ -98,7 +98,6 @@ THE LEXICON *@OUTSIDE_LEXICONS@* ASSIGNS THE TAG +Attr
 
 
 
-
 like KÕÕNJÂL 
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
 ## 1.1 Sg.Loc in -âst (no vowel shift, all raised)

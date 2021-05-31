@@ -380,7 +380,7 @@ determiner
 
 
 
- * LEXICON DET_NEELLJAD  neelljad:neellj
+ * LEXICON A-ORD_NEELLJAD  neelljad:neellj
 similar_to: A_MOASHSHAD
 
 
