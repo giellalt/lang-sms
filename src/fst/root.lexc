@@ -172,6 +172,7 @@ Multichar_Symbols  !!≈ # Definitions for **@CODE@**
 !! just specify +Der|+Der1 .. +Der5 and you are set. 
  
 +Der  !!≈ * **@CODE@** 
++Der/Ord  !!≈ * **@CODE@** Num»A ordinal
 +Der/Car !!≈ * **@CODE@**  N»A -tem, -teʹmes 
 +Der/Dimin  !!≈ * **@CODE@** diminutive derivation N»N was Der/Dim, 
 +Der/st  !!≈ * **@CODE@**  V»V was diminutive subitive Der/sted, Der/âʹstted 
@@ -1069,7 +1070,11 @@ LEXICON NUM_KUEQLL
 LEXICON NUM_TAQHTT 
 !! @LEXNAME@ 
 ! :%^PAL #          ; 
- :            NMN_TAQHTT ; 
+ :            NMN_TAQHTT ;
+LEXICON NUM_KAEAEUQC
+!! @LEXNAME@ 
+! :%^PAL #          ; 
+ :            NMN_KAEAEUQC ; 
 LEXICON NUM_KUEQHTT !!≈ * **@CODE@** kueʹhtt:kuâhtt 
 !! @LEXNAME@ 
 ! :%^PALE%^PAL #           ; 
@@ -1097,9 +1102,9 @@ LEXICON NUM_JEAQNNN
  
 LEXICON NUM_LO !!≈ * **@CODE@** kuttlo:kuttl 
 !! @LEXNAME@ 
-:ååǥǥ DET_NEELLJAD ; !!≈ * **@CODE@** This ordinal derivation 
-        :o        K      ; 
-+Use/SpellNoSugg:å        K      ; 
++Der+Der/Ord+A:ååǥǥ A-ORD_NEELLJAD ; !!≈ * **@CODE@** This ordinal derivation 
+ +Sg+Nom:o        K      ; 
++Sg+Nom+Use/SpellNoSugg:å        K      ; 
  +Pl+Nom:ååi      K      ; 
  +Sg+Gen:ååi      K      ; 
  +Sg+Acc:ååi      K      ; 
@@ -1108,7 +1113,7 @@ LEXICON NUM_LO !!≈ * **@CODE@** kuttlo:kuttl
         :ooʹjj    PL-OBL ; 
 LEXICON NUM_LOAOAI !!≈ * **@CODE@** lååi:l  THIS looks like allegro 
 !! @LEXNAME@ 
-        :ååi      K      ; 
+ +Sg+Nom:ååi      K      ; 
  +Pl+Nom:ååi      K      ; 
  +Sg+Gen:ååi      K      ; 
  +Sg+Acc:ååi      K      ; 
