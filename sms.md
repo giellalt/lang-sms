@@ -3465,9 +3465,9 @@ The lexicon *PRON_*, which is actually not needed, as pronouns get +Pron tag ear
 Pointing to all the pronominal subgroups
 
  * LEXICON Pronoun 
- * Demonstrative ; 
- * Reflexive ;     
- * Interrogative ; 
+ *  Demonstrative ; 
+ *  Reflexive ;     
+ *  Interrogative ; 
  *  Relative ;	 kååʹtt, mii
 
 
