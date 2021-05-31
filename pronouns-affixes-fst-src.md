@@ -29,7 +29,7 @@ Pointing to all the pronominal subgroups
 
  * LEXICON Pronoun 
  *  Demonstrative ; 
- *  Reflexive ;     
+ *  +Pron+Refl+jiõčč: Reflexive ;     
  *  Interrogative ; 
  *  Relative ;	 kååʹtt, mii
 
