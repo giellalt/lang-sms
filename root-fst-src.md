@@ -29,6 +29,7 @@ more than one character, and it contains the initial **Root** lexicon.
 
 Pre-derivational POS tags for CG processing 
  * **+Ex/N** = Noun stem before derivation 
+ * **+Ex/Num** = Number stem before derivation 
  * **+Ex/A** = Adjective stem before derivation 
  * **+Ex/V** = Verb stem before derivation 
 
