@@ -15329,32 +15329,6 @@ sääʹm000%-#musikk
 
 
 
-# Verb roots
-
-Here are the verb types so far:
-
-*   5 JURDDED
-*  38 KALMMED
-*   3 KAMRDED
-*   1 LAADDAD
-*   1 LEED
-*  23 MAINSTED
-*   4 SEDGGJED
-*   8 SILTTEED
-*   5 SOLLEED
-*  18 TEEMEED
-*  53 TEEVVAD
-*  25 TIETTED
-*  82 VIQQAD
-*   7 VOLLJED
-*   4 VOOIDAD
-*   1 VUEJTED
-
-
-
-
-
-
 # File containing abbreviations 
 
 ## Lexica for adding tags and periods
@@ -15556,16 +15530,6 @@ The lexicon *ProperNoun* lists the proper nouns
 
 ## Ordinary misc names
 
-
-
-# Skolt Saami Interjections 
-
-
-The lexicon *ij* gives the tag **+Interj**
-
-
-The lexicon *Interjection* lists the interjections
- * ai ij ;            
 This is where new words are added as lexc entries before they are 
 added to the xml source files.
 ǩiõtt+N:ǩiõtt N_MUORR "(eng) /(fin) /(rus)" ;
@@ -15602,19 +15566,6 @@ Contlex value missing
 
 
 
-
-
-
-
-# Skolt Saami Conjunctions 
-
-
-The lexicon *Conjunction* lists the conjunction
- * ja Cc "and" ;              
- * da Cc "and" ;         
-
-
-The lexicon *Cc* gives the tag **+CC**
 
 
 This is where new words are added as lexc entries before they are 
@@ -15665,29 +15616,6 @@ This only contains one verb and will be removed.
 
 
 
-
-
-# Skolt Saami adjectives
-
-OUR LONG-TERM GOAL IS NOT TO ADD STEMS MANUALLY TO THIS FILE
-Instead we want to update the dictionary sms2X/src/a_sms2X.xml, 
-from where the present lexc files will be regularly updated by 
-exporting (we need a script for this).
-
-
-THESE have been coded by Eino and Jaska
-The content consists of multiple pos 
-For nouns see nouns.lexc. Both files are temporary
-
-
-
-
-# Skolt Saami adpositions
-
-
-
-
-
 This is where new words are added as lexc entries before they are 
 added to the xml source files.
 Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS "(eng) /(fin) /(rus) " ;
@@ -15705,22 +15633,6 @@ ADD PROPER ADVERBS BELOW
 
 
 
-
-
-# Skolt Saami adverbs
-
-Only a handful so far.
-
-The lexicon *adv* gives the tag **+Adv**
-
-The lexicon *Adverb* contains adverbs.
-They are taken from [http://www.uta.fi/~km56049/same/skolt/koltansaame.html]
-
- * ââlda adv "nearby" ; 
- * ââʹn adv "now" ;  
- * ålggan adv "outside" ;  
- * åålǥas adv "to outside" ;  
-
 This is where new words are added as lexc entries before they are 
 added to the xml source files.
 Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS "(eng) /(fin) /(rus) " ;
@@ -15737,33 +15649,6 @@ CODED BY EINO AND JASKA
 
 
 perintökieli
-
-
-# Skolt Saami nouns
-
-We use a modified version of the *Koulukielioppi* stem system
-
-1. Vowel stems
-    1. â-stems: N-toll, N-miarr
-    1. a-stems: N-pess
-    1. e-stems: N-piess
-1. Mixed stem:
-    1. e-a-stems: N-ress
-1. Consonant stems
-    1. m-stems: N-laajj
-    1. n-stems: N-kuolban, N-siom
-1. Contract stems
-
-
-The lexicon *N-INCOMING* contains all nouns.
-So far, it contains only a handful of nouns, they are
-here grouped according to continuation lexicon.
-
-
-CODED BY EINO AND JASKA
-derived from closed fin-sms
-
-
 
 This is where new words are added as lexc entries before they are 
 added to the xml source files.
@@ -15949,16 +15834,6 @@ PLACE NAMES
 
 MORE
 Toponyms
-
-
-
-# Subjunctions
-
-The lexicon *Cs* assigns the tag **+CS**
-
-The lexicon *Subjunction* lists the subjunctions
- * So far it contains only go Cs ;  
-
 
 
 
