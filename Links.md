@@ -14,7 +14,6 @@
 * [particles_newwords-stems-fst-src.md](particles_newwords-stems-fst-src.md)
 * [adpositions_newwords-stems-fst-src.md](adpositions_newwords-stems-fst-src.md)
 * [adjectives_newwords-stems-fst-src.md](adjectives_newwords-stems-fst-src.md)
-* [pronouns-stems-fst-src.md](pronouns-stems-fst-src.md)
 * [sms-propernouns-stems-fst-src.md](sms-propernouns-stems-fst-src.md)
 * [nouns_newwords-stems-fst-src.md](nouns_newwords-stems-fst-src.md)
 * [numerals-stems-fst-src.md](numerals-stems-fst-src.md)
