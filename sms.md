@@ -15779,9 +15779,8 @@ The lexicon *Interjection* lists the interjections
 
 ## List of particles in the lexicon Particle
 
- ges PCLE_ ; 
+ ges+Pcle:ges PCLE_ ; 
 
-## unclear whether these are really particles
 
 
 # Propernoun lexicon, Skolt Sámi specific names 
