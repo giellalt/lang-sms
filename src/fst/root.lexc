@@ -930,6 +930,9 @@ Multichar_Symbols  !!≈ # Definitions for **@CODE@**
  @R.ErrOrth.ON@     !!≈ |  **@CODE@** | tbw
  @P.Pmatch.Backtrack@ !!≈ |  **@CODE@** | tbw
  
+ @U.NUMORTH.YES@ !!≈ * **@CODE@**
+ @N.NUMORTH.YES@ !!≈ * **@CODE@**
+ @D.NUMORTH.YES@ !!≈ * **@CODE@**
  
  
 !! # Basic lexica, pointing to the other lexicon files 
@@ -1042,66 +1045,84 @@ LEXICON NUM_
 LEXICON NUM_VAHTT 
 !! @LEXNAME@ 
 ! : #         ; 
- : NMN_VAHTT ; 
+@U.NUMORTH.YES@:@U.NUMORTH.YES@ NMN_VAHTT ; 
+@D.NUMORTH.YES@+Err/Orth:@D.NUMORTH.YES@ NMN_VAHTT ; 
  
 LEXICON NUM_ALGG 
 !! @LEXNAME@ 
 ! : #        ; 
- : NMN_ALGG ; 
+@U.NUMORTH.YES@:@U.NUMORTH.YES@ NMN_ALGG ; 
+@D.NUMORTH.YES@+Err/Orth:@D.NUMORTH.YES@ NMN_ALGG ; 
 LEXICON NUM_AUTT 
 !! @LEXNAME@ 
 ! : #        ; 
- : NMN_AUTT ; 
+@U.NUMORTH.YES@:@U.NUMORTH.YES@ NMN_AUTT ; 
+@D.NUMORTH.YES@+Err/Orth:@D.NUMORTH.YES@ NMN_AUTT ; 
 LEXICON NUM_TOLL 
 !! @LEXNAME@ 
 ! : #        ; 
- : NMN_TOLL ; 
+@U.NUMORTH.YES@:@U.NUMORTH.YES@ NMN_TOLL ; 
+@D.NUMORTH.YES@+Err/Orth:@D.NUMORTH.YES@ NMN_TOLL ; 
 LEXICON NUM_PAPP 
 !! @LEXNAME@ 
 ! : #        ; 
- : NMN_PAPP ; 
+@U.NUMORTH.YES@:@U.NUMORTH.YES@ NMN_PAPP ; 
+@D.NUMORTH.YES@+Err/Orth:@D.NUMORTH.YES@ NMN_PAPP ; 
 LEXICON NUM_AELDD 
 !! @LEXNAME@ 
 ! : #         ; 
- : NMN_AELDD ; 
+@U.NUMORTH.YES@:@U.NUMORTH.YES@ NMN_AELDD ; 
+@D.NUMORTH.YES@+Err/Orth:@D.NUMORTH.YES@ NMN_AELDD ; 
 LEXICON NUM_KUEQLL 
 !! @LEXNAME@ 
 ! :%^PALE%^PAL #          ; 
- :            NMN_KUEQLL ; 
+@U.NUMORTH.YES@:@U.NUMORTH.YES@ NMN_KUEQLL ; 
+@D.NUMORTH.YES@+Err/Orth:@D.NUMORTH.YES@  NMN_KUEQLL ; 
 LEXICON NUM_TAQHTT 
 !! @LEXNAME@ 
 ! :%^PAL #          ; 
- :            NMN_TAQHTT ;
+@U.NUMORTH.YES@:@U.NUMORTH.YES@ NMN_TAQHTT ;
+@D.NUMORTH.YES@+Err/Orth:@D.NUMORTH.YES@ NMN_TAQHTT ;
 LEXICON NUM_KAEAEUQC
 !! @LEXNAME@ 
 ! :%^PAL #          ; 
- :            NMN_KAEAEUQC ; 
+@U.NUMORTH.YES@:@U.NUMORTH.YES@ NMN_KAEAEUQC ; 
+@D.NUMORTH.YES@+Err/Orth:@D.NUMORTH.YES@ NMN_KAEAEUQC ; 
 LEXICON NUM_KUEQHTT !!≈ * **@CODE@** kueʹhtt:kuâhtt 
 !! @LEXNAME@ 
 ! :%^PALE%^PAL #           ; 
- :            NMN_KUEQHTT ; 
+@U.NUMORTH.YES@:@U.NUMORTH.YES@ NMN_KUEQHTT ; 
+@D.NUMORTH.YES@+Err/Orth:@D.NUMORTH.YES@ NMN_KUEQHTT ; 
 LEXICON NUM_NELLJ 
 !! @LEXNAME@ 
 ! : #         ; 
- : NMN_NELLJ ; 
+@U.NUMORTH.YES@:@U.NUMORTH.YES@ NMN_NELLJ ; 
+@D.NUMORTH.YES@+Err/Orth:@D.NUMORTH.YES@ NMN_NELLJ ; 
  
 LEXICON NUM_AANAR 
 !! @LEXNAME@ 
 ! : #         ; 
- : NMN_AANAR ; 
+@U.NUMORTH.YES@:@U.NUMORTH.YES@ NMN_AANAR ; 
+@D.NUMORTH.YES@+Err/Orth:@D.NUMORTH.YES@ NMN_AANAR ; 
  
 LEXICON NUM_ATOM 
 !! @LEXNAME@ 
 ! : #         ; 
- : NMN_ATOM ; 
+@U.NUMORTH.YES@:@U.NUMORTH.YES@ NMN_ATOM ; 
+@D.NUMORTH.YES@+Err/Orth:@D.NUMORTH.YES@ NMN_ATOM ; 
 LEXICON NUM_JEAQNNN 
 !! @LEXNAME@ 
 ! :%^PAL #         ; 
- : NMN_JEAQNNN ; 
+@U.NUMORTH.YES@:@U.NUMORTH.YES@ NMN_JEAQNNN ; 
+@D.NUMORTH.YES@+Err/Orth:@D.NUMORTH.YES@ NMN_JEAQNNN ; 
  
  
  
 LEXICON NUM_LO !!≈ * **@CODE@** kuttlo:kuttl 
+!! @LEXNAME@
+@U.NUMORTH.YES@ NUM-01_LO ;
+@D.NUMORTH.YES@+Err/Orth:@D.NUMORTH.YES@ NUM-01_LO ;
+LEXICON NUM-01_LO !!≈ * **@CODE@** kuttlo:kuttl 
 !! @LEXNAME@ 
 +Der+Der/Ord+A:ååǥǥ A-ORD_NEELLJAD ; !!≈ * **@CODE@** This ordinal derivation 
  +Sg+Nom:o        K      ; 
@@ -1113,6 +1134,11 @@ LEXICON NUM_LO !!≈ * **@CODE@** kuttlo:kuttl
  +Sg+Loc:ååʹjjest K      ; 
         :ooʹjj    PL-OBL ; 
 LEXICON NUM_LOAOAI !!≈ * **@CODE@** lååi:l  THIS looks like allegro 
+!! @LEXNAME@ 
+
+@U.NUMORTH.YES@ NUM-01_LOAOAI ;
+@D.NUMORTH.YES@+Err/Orth:@D.NUMORTH.YES@ NUM-01_LOAOAI ;
+LEXICON NUM-01_LOAOAI !!≈ * **@CODE@** lååi:l  THIS looks like allegro 
 !! @LEXNAME@ 
  +Sg+Nom:ååi      K      ; 
  +Pl+Nom:ååi      K      ; 

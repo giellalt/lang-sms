@@ -44,10 +44,10 @@ LEXICON Numeral   !!= * **@CODE@**  initial lexica
 
 dohat+Num:dohat  NUM_AANAR ; ! 1000
 dohttad+A:dohtt A-ORD_NEELLJAD    ; ! 1000.
- UNDERTHOUSAND   ; ! 100-999
- TENS            ; ! 20-99
- TEENS           ; ! 10-19
- INITIALCARDINAL ; ! 1-9
+@U.NUMORTH.YES@ UNDERTHOUSAND   ; ! 100-999
+@U.NUMORTH.YES@ TENS            ; ! 20-99
+@U.NUMORTH.YES@ TEENS           ; ! 10-19
+@U.NUMORTH.YES@ INITIALCARDINAL ; ! 1-9
 
 !kuâhttlo+Num:kuâhtt#l NUM_LO ;
 !kuâhttloõhtt+Num:kuâhtt#lo#õ%^1VOW%{ʹØ%}h%{ʹØ%}tt NUM_VAHTT ;
@@ -1041,11 +1041,14 @@ LEXICON HUNDREDS
 kueʹhtt:kueʹhtt CUODI ;
 koumm:koumm CUODI ;
 nellj:nẹllj CUODI ;
+@N.NUMORTH.YES@nellj:@N.NUMORTH.YES@neʹllj CUODI ;
 vitt:vitt CUODI ;
 kutt:kutt CUODI ;
 čiččâm:čiččâm CUODI ;
 käʹhcc-:käʹhcc-# CUODI ;
+@N.NUMORTH.YES@käʹhcc-:@N.NUMORTH.YES@kääuʹc# CUODI ;
 åʹhcc-:åʹhcc-# CUODI ;
+@N.NUMORTH.YES@åʹhcc-:@N.NUMORTH.YES@ååuʹc# CUODI ;
 
 LEXICON CUODI
 čueʹđ:čueʹđ HUNDRED ;
@@ -1061,12 +1064,16 @@ LEXICON HUNDREDTENS
 lååi+Num:#l NUM_LOAOAI ; 
 kuâhtt:kuâhtt LÅGEV ;
 koumm:koumm LÅGEV ;
+@N.NUMORTH.YES@koumm:@N.NUMORTH.YES@kolmm LÅGEV ;
 nellj:nẹllj LÅGEV ;
+@N.NUMORTH.YES@nellj:@N.NUMORTH.YES@neʹllj LÅGEV ;
 vitt:vitt LÅGEV ;
 kutt:kutt LÅGEV ;
 čim:čim LÅGEV ; ! this one different from TENS
 käʹhcc:käʹhcc LÅGEV ;
+@N.NUMORTH.YES@käʹhcc:@N.NUMORTH.YES@kääuʹc LÅGEV ;
 åʹhcc:åʹhcc LÅGEV ;
+@N.NUMORTH.YES@åʹhcc:@N.NUMORTH.YES@ååuʹc LÅGEV ;
 
 
 LEXICON TENS
@@ -1074,12 +1081,17 @@ lååi+Num:l NUM_LOAOAI ;
 lååǥǥad+A:lååǥǥ A-ORD_NEELLJAD ; 
 kuâhtt:kuâhtt   LÅGEV ;
 koumm:koumm   LÅGEV ;
-nellj:nellj   LÅGEV ;
+@N.NUMORTH.YES@koumm:@N.NUMORTH.YES@kolmm   LÅGEV ;
+nellj:nẹllj   LÅGEV ;
+@N.NUMORTH.YES@nellj:@N.NUMORTH.YES@neʹllj   LÅGEV ;
 vitt:vitt   LÅGEV ;
 kutt:kutt   LÅGEV ;
 čičm:čičm   LÅGEV ;
+@N.NUMORTH.YES@čičm:@N.NUMORTH.YES@čim   LÅGEV ;
 käʹhcc:käʹhcc   LÅGEV ;
+@N.NUMORTH.YES@käʹhcc:@N.NUMORTH.YES@kääuʹc   LÅGEV ;
 åʹhcc:åʹhcc   LÅGEV ;
+@N.NUMORTH.YES@åʹhcc:@N.NUMORTH.YES@ååuʹc   LÅGEV ;
 
 LEXICON LÅGEV
 lo+Num:#l NUM_LO ;
@@ -1092,14 +1104,15 @@ LEXICON TEENS
 kuât:kuât NUM_LO/NEELLJAD ;
 kon:kon NUM_LO/NEELLJAD ;
 nenj:nenj NUM_LO/NEELLJAD ;
+@N.NUMORTH.YES@nenj:@N.NUMORTH.YES@nẹllj NUM_LO/NEELLJAD ;
+@N.NUMORTH.YES@nenj:@N.NUMORTH.YES@neʹllj NUM_LO/NEELLJAD ;
 vit:vit  NUM_LO/NEELLJAD ;
+@N.NUMORTH.YES@vit:@N.NUMORTH.YES@vitt  NUM_LO/NEELLJAD ;
 kut:kut NUM_LO/NEELLJAD ;
+@N.NUMORTH.YES@kut:@N.NUMORTH.YES@kutt NUM_LO/NEELLJAD ;
 čin:čin NUM_LO/NEELLJAD ;
 käc:käc NUM_LO/NEELLJAD ;
 åc:åc NUM_LO/NEELLJAD ;
-nenjmlo+v2+Num:nellj#m#l NUM_LO ;
-vitmlo+v2+Num:vitt#m#l NUM_LO ;
-kutmlo+v2+Num:kutt#m#l NUM_LO ;
 
 LEXICON NUM_LO/NEELLJAD
 mlo+Num:#m#l NUM_LO  ;
@@ -1122,6 +1135,10 @@ käʹhcc+Num:kä%^1VOW%{ʹØ%}h%{ʹØ%}cc NUM_KAEAEUQC ;
 åʹhcc+Num:å%^1VOW%{ʹØ%}h%{ʹØ%}cc NUM_KAEAEUQC ;
 
 LEXICON ORDINAL
+@U.NUMORTH.YES@ ORDINAL-01 ;
+@D.NUMORTH.YES@+Err/Orth:@D.NUMORTH.YES@ ORDINAL-01 ;
+LEXICON ORDINAL-01
+
 vuõssmõs+A+Ord:vuõsˈsmõ%^1VOW%{ʹØ%}s A_SAJOS ;
 vuõss+A+Ord+Use/NG:vuõsˈs ENDLEX ;
 nuʹbb+A+Ord:nu%^1VOW%{ʹØ%}bb N_NUQBB ;
