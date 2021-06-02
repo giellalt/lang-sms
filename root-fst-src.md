@@ -898,6 +898,9 @@ given the proper use of these flags.
  |  **@R.ErrOrth.ON@** | tbw
  |  **@P.Pmatch.Backtrack@** | tbw
 
+ * **@U.NUMORTH.YES@**
+ * **@N.NUMORTH.YES@**
+ * **@D.NUMORTH.YES@**
 
 
 # Basic lexica, pointing to the other lexicon files 
@@ -1003,10 +1006,15 @@ NUM_JEAQNNN
 
 
  * **LEXICON NUM_LO** kuttlo:kuttl 
-NUM_LO 
+NUM_LO
+ * **LEXICON NUM-01_LO** kuttlo:kuttl 
+NUM-01_LO 
  * **+Der+Der/Ord+A:ååǥǥ A-ORD_NEELLJAD ;** This ordinal derivation 
  * **LEXICON NUM_LOAOAI** lååi:l  THIS looks like allegro 
 NUM_LOAOAI 
+
+ * **LEXICON NUM-01_LOAOAI** lååi:l  THIS looks like allegro 
+NUM-01_LOAOAI 
 
 
 PCLE_ is here since Pcle_sms2x.xml wants it. It does nothing.
