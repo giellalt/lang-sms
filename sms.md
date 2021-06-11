@@ -3433,6 +3433,8 @@ R ;		= * LEXICON PROP_SEM/MAL_TOOBDYLM  kuss
 
 
 
+
+
  * LEXICON PROP_VUYSPPOAQD  vuâsppåʹd:vuâsppå%^1VOWd
 
 # Skolt Saami Pronoun Morphology 
