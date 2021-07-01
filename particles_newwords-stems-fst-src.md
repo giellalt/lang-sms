@@ -17,3 +17,5 @@ These have been commented out 2015-11-13
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/particles_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/particles_newwords.lexc)</small>

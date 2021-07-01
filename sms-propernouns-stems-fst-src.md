@@ -19,3 +19,5 @@ The lexicon *ProperNoun* lists the proper nouns
 
 ## Ordinary misc names
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/sms-propernouns.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/sms-propernouns.lexc)</small>

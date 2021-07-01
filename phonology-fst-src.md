@@ -170,7 +170,7 @@ More triggers, possibly realised as a segment:
  * `%{Â1%}:0` used with "mainsted" to tell (a story)
  * `%{A1%}:0` used with "vuejted" to drive (causative)
  * `%{E1%}:0` used with "kåʹmrded" to bow
- * `%{E1%}:0` archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one.
+* `%{E1%}:0` archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one.
  * `%{EÂ%}:e` archiform for ie:eâ variation
  * `%^IMPSG2:0`
  * `%^INDPRSSG3:0`
@@ -178,7 +178,7 @@ More triggers, possibly realised as a segment:
  * `%^FRICG:0`
 
 Hyphen at compound word boundary
- * `%^FRICG:0` Zero versus hyphen in compounding
+* `%^FRICG:0` Zero versus hyphen in compounding
  * `%^Hyphen:0` at compound word boundary with %-
  * `%^NoHyphen:0` at compound word boundary
 <!-- {% endraw %} -->
@@ -1543,7 +1543,7 @@ talsted+V+Inf:
 * *taallâst%^Pen%^VV2V%^Pen%^CC2C%^RmVow%>ed*
 * *ta0l00st00000%>ed*
 
- vuʹvll+N+Sg+Gen:
+vuʹvll+N+Sg+Gen:
 * *vu%^1VOWv0ll%^PAL%^XYY2VY*
 * *vu0uʹl000*
 
@@ -1610,7 +1610,7 @@ loǥškueʹtted **begin to read**
 
 **Even syllabic nouns I, with extra lengthening of vowel V>VV and k:j** - used in
 used with
- > .
+> .
 tuʹmstõk+N+Der/Dimin+N+Pl+Nom: **decision/päätös, mietintö**
 * *tuʹmstõ%^1VOW0k%{XC%}%^V2VV%^PAL%^K2GG%>e*
 * *tuʹmstõõʹjj000%>e*
@@ -1626,7 +1626,7 @@ with allegro
 
 **Even syllabic nouns I, with extra lengthening of vowel V>VV and ǩ:j** - used in
 used with
- > .
+> .
 
 
 
@@ -1974,3 +1974,5 @@ sää0mm%PAL%^CC2C%{-Ø%}#musikk
 sääʹm000%-#musikk
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/phonology.twolc)</small>

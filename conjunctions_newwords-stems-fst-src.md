@@ -15,3 +15,5 @@ ADD PROPER ADVERBS BELOW
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/conjunctions_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/conjunctions_newwords.lexc)</small>

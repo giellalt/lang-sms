@@ -32,3 +32,5 @@ CODED BY EINO AND JASKA
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/pronouns_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/pronouns_newwords.lexc)</small>

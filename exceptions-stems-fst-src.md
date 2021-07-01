@@ -140,3 +140,5 @@ BUT have most of their Contlex values THIS has a separate DB DON'T TRANSLATE
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/exceptions.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/exceptions.lexc)</small>

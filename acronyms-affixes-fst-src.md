@@ -7,15 +7,15 @@
 
 
 
-   +N+ABBR+Sg+Gen:%>    # ;
-   +N+ABBR+Sg+Loc:%>    # ;
-      +N+ABBR+Ess:%>    # ;
-      +N+ABBR+Par:%>    # ;
-   +N+ABBR+Pl+Nom:%>    # ;
-    +N+Prop:%> ACCRADECL     ;
-    +N+Prop:%> BERN-UCASE    ;
-    +N+Prop:%> LONDON-UCASE  ;
-    +N+Prop:%> NYSTØ-OBL     ;
++N+ABBR+Sg+Gen:%>    # ;
++N+ABBR+Sg+Loc:%>    # ;
++N+ABBR+Ess:%>    # ;
++N+ABBR+Par:%>    # ;
++N+ABBR+Pl+Nom:%>    # ;
++N+Prop:%> ACCRADECL     ;
++N+Prop:%> BERN-UCASE    ;
++N+Prop:%> LONDON-UCASE  ;
++N+Prop:%> NYSTØ-OBL     ;
 
 
  * **LEXICON acroconnector   ** Here comes a set of possible symbols to put between the abbreviation and its suffix
@@ -24,3 +24,5 @@
 
  * **LEXICON acrooblique   **
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/acronyms.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/affixes/acronyms.lexc)</small>

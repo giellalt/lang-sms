@@ -12,3 +12,5 @@ This only contains one verb and will be removed.
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/verbs_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/verbs_newwords.lexc)</small>

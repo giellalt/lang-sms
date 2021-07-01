@@ -14,3 +14,5 @@ POSTPOSITIONS
 PREPOSITIONS
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/adpositions_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/adpositions_newwords.lexc)</small>

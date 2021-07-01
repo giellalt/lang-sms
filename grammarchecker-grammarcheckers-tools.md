@@ -1,5 +1,5 @@
 
-      S K O L T   S A A M I   G R A M M A R   C H E C K E R
+S K O L T   S A A M I   G R A M M A R   C H E C K E R
 
 
 
@@ -471,3 +471,5 @@ expression **WORD - premodifiers**.
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../tools/grammarcheckers/grammarchecker.cg3](http://github.com/giellalt/lang-sms/blob/main/../tools/grammarcheckers/grammarchecker.cg3)</small>

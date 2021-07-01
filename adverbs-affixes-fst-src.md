@@ -26,3 +26,5 @@
 
  * LEXICON ADV_YQLNN  âʹlnn:â%^1VOWlnn
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/adverbs.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/affixes/adverbs.lexc)</small>

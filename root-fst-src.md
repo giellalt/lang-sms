@@ -208,12 +208,12 @@ The principle of tagging is that we only tag to the extent needed,
 and following a priority: 
 1. any untagged word is pronounced with SME orthographic conventions 
 1. NNO and NOB have identical pronunciation, NNO is only used if 
-  different in spelling from NOB 
+different in spelling from NOB 
 1. SWE has mostly the same pronunciation as NOB, and is only used 
-  if different in spelling from NOB 
+if different in spelling from NOB 
 1. Occasionally even SME (the default) may be tagged, to block other 
-  languages from being specified, mainly during semi-automatic 
-  language tagging sessions 
+languages from being specified, mainly during semi-automatic 
+language tagging sessions 
 
 All in all, we want to get as much correctly transcribed to IPA 
 with as little work as possible. On the other hand, if more words 
@@ -757,13 +757,13 @@ Gradation triggers 2015.02.09 For   Consonant Clusters
  * **%{A1%}** used with vuejted 
  * **%{E1%}** used with kåʹmrded 
  * **%{Â1%}** used with mainsted 
- * **%{Â1%}** archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one. 
+* **%{Â1%}** archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one. 
  * **%{EÂ%}** archiform for ie:eä variation, e.g. pieʹǩǩ+N+Sg+Ill:peâkka 
 
 
 
 Hyphen at compound word boundary 
- * **%{EÂ%}** - Zero versus hyphen in compounding 
+* **%{EÂ%}** - Zero versus hyphen in compounding 
  * **%^Hyphen** - at compound word boundary with %- 
  * **%^NoHyphen** - at compound word boundary 
 <!-- {% endraw %} -->
@@ -832,15 +832,15 @@ Compounding
  * **+CmpN/SgN** 
 
  * **+Cmp** - Dynamic compound. This tag should always be part 
-                of a dynamic compound. It is important for 
-                Apertium, and useful in other cases as well. 
+           of a dynamic compound. It is important for 
+           Apertium, and useful in other cases as well. 
  * **+Cmp/Attr** - Attributive 
  * **+Cmp/SgNom** - Singular Nominative 
  * **+Cmp/SgGen** - Singular Genitive 
  * **+Cmp/PlGen** - Plural Genitiv 
  * **+Cmp/SplitR** - This is a split compound with the other part to 
-                the right: "Arbeids- og inkluderingsdepartementet" 
-                => Arbeids- = +Cmp/SplitR 
+           the right: "Arbeids- og inkluderingsdepartementet" 
+           => Arbeids- = +Cmp/SplitR 
  * **+Cmp/SplitL** - This is a split compound with the other part to the left 
  * **+Cmp/Sh** - testing +Cmp/Sh 
  * **+Cmp/Hyph** - on dynamic compounds that have a hyphen 
@@ -853,7 +853,7 @@ Compounding
 ## Flag diacritics 
 
 | Flag | Explanation 
-| --- | --- @P.AssocColl.ON@ !!≈ * **+Use/-PMatch** Used with Kin terms and Ant 
+≈ * **+Use/-PMatch** Used with Kin terms and Ant 
  * **@R.AssocColl.ON@** 
  * **@C.AssocColl@** 
 
@@ -1041,3 +1041,5 @@ PR-TEMP-GOV-LOC_
 PREFIX/A_ 
 
 SUF/A_ 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/root.lexc)</small>

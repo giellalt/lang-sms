@@ -17,3 +17,5 @@ Not added yet to wiki
 2017-09-
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/adjectives_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/adjectives_newwords.lexc)</small>
