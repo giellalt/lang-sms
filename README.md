@@ -3,7 +3,7 @@ The Skolt Sami morphology and tools
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-sms)](https://github.com/giellalt/lang-sms/issues)
 [![Build Status](https://github.com/giellalt/lang-sms/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-sms/actions)
-[![License](https://img.shields.io/github/license/giellalt/lang-sms)](https://raw.githubusercontent.com/giellalt/lang-sms/main/LICENSE)
+[![License](https://img.shields.io/github/license/giellalt/lang-sms)](https://github.com/giellalt/lang-sms/blob/main/LICENSE)
 
 This directory contains source files for the Skolt Sami language
 morphology and dictionary. The data and implementation are licenced
