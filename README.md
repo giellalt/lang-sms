@@ -7,7 +7,7 @@ The Skolt Sami morphology and tools
 
 This directory contains source files for the Skolt Sami language
 morphology and dictionary. The data and implementation are licenced
-under \_\_LICENCE\_\_ licence also detailed in the
+under \_\_LICENSE\_\_ licence also detailed in the
 [LICENSE](https://github.com/giellalt/lang-sms/blob/main/LICENSE). The
 authors named in the AUTHORS file are available to grant
 other licencing choices.
