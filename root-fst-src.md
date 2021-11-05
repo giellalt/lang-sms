@@ -80,7 +80,7 @@ Pre-derivational POS tags for CG processing
 symbols ? 
  * **+Ine** 
  * **+Ela** 
- * **+ACRO** 
+ * **+ACR** 
 
 ### Possessive suffix 
  * **+PxSg1** 
