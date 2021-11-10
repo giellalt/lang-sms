@@ -16472,6 +16472,7 @@ an extra lemma attribute is inserted in the st element, e.g. lemma="tõlvvad"
  * **+Symbol** = independent symbols in the text stream, like £, €, © 
  * **+ACR**  Acronym 
  * **+CLB**  Clause border (full stop, comma..) 
+ * **+CLBfinal**  Sentence final abbreviated expression ending in full stop, the full stop is ambiguous
  * **+PUNCT**  punctuation 
  * **+LEFT**  left paranthesis 
  * **+RIGHT**  right paranthesis 
