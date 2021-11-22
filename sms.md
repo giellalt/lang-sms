@@ -2527,535 +2527,36 @@ sääʹm000%-#musikk
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/phonology.twolc)</small>This is where new words are added as lexc entries before they are 
-added to the xml source files.
-Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS "(eng) /(fin) /(rus) " ;
-
-
-ADD ADVERBS BELOW
-
-
-
-
-
-CODED BY EINO AND JASKA
-
-
-
-perintökieli
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adverbs_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/adverbs_newwords.lexc)</small>This is where new words are added as lexc entries before they are 
-added to the xml source files.
-Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS ;
-
-
-ADD PROPER NOUNS BELOW
-LACKING SPECIFIC DECLENSION TYPE
-
-WITH SPECIFIC DECLENSION TYPE
-
-First names
-
-
-
-
-
-SURNAMES
-
-
-
-
-
-ORGANIZATIONS
-
-
-
-Perintökieli
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/propernouns_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/propernouns_newwords.lexc)</small>Exceptions are quite strange word-forms. the ones that do not fit anywhere 
-else. This file contains all enumerated word forms that cannot reasonably be
-created from lexical data by regular inflection. Usually there should be next
-to none exceptions, it's always better to have a paradigm that covers only
-one or few words than an exception since these will not work nicely with e.g.
-compounding scheme or possibly many end applications.
-
-
-IRREGULAR ADJECTIVES
-
-
-IRREGULAR DETERMINERS
-
-
-
-IRREGULAR NOUNS
-
-
-Some verbs have variant forms:
-
-*variant forms examples:*
-* *leämmaž:* `leeʹd+V+PrfPrc`
-* *leämma:* `leeʹd+V+PrfPrc`
-
-
-
-The verb of negation
- * **iʹlla+V: NEG-COPULA ;** This is for 3rd person iʹlla 
-
-
-
-PREFIXES for nouns
-
-
-Spelling errors
-
-Foreign words
-
-
-FROM FORMER .lexc CONTENT
-
-
-# Skolt Saami adjectives
-
-OUR LONG-TERM GOAL IS NOT TO ADD STEMS MANUALLY TO THIS FILE
-Instead we want to update the dictionary sms2X/src/a_sms2X.xml, 
-from where the present lexc files will be regularly updated by 
-exporting (we need a script for this).
-
-
-# Skolt Saami adpositions
-
-
-
-
+<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/phonology.twolc)</small>
 # Skolt Saami adverbs
 
 
 
-# Skolt Saami Conjunctions 
-
-
-The lexicon *Conjunction* lists the conjunction
-
-
-
-# Skolt Saami Interjections 
-
-
-The lexicon *ij* gives the tag **+Interj**
-
-
-The lexicon *Interjection* lists the interjections
- * ai ij ;            
 
 
 
 
 
-# Skolt Saami Particles
-
-
-## List of particles in the lexicon Particle
-
- ges+Pcle:ges PCLE_ ; 
-
-
-
-# Propernoun lexicon, Skolt Sámi specific names 
-
-
-# Subjunctions
-
-The lexicon *Subjunction* lists the subjunctions
- * So far it contains only go+CS:go CS_ ;  
-
-
-
-# Verb roots
-
-Here are the verb types so far:
-
-*   5 JURDDED
-*  38 KALMMED
-*   3 KAMRDED
-*   1 LAADDAD
-*   1 LEED
-*  23 MAINSTED
-*   4 SEDGGJED
-*   8 V_SILTTEED
-*   5 V_SOLLEED
-*  18 V_TEEʹMEED
-*  53 TEEVVAD
-*  25 TIETTED
-*  82 VIQQAD
-*   7 VOLLJED
-*   4 VOOIDAD
-*   1 VUEJTED
-
-
-
-
-# TEST WORDS BEYOND THIS POINT
-DO NOT ADD TRANSLATIONS
-DO NOT ADD NOTES
-
-
-
-# Skolt Saami Numerals
-
-Lexicon *Subjunction* contains *okta* only.
-CODED BY JACK
-
-
-
-BUT have most of their Contlex values THIS has a separate DB DON'T TRANSLATE
 
 
 
 
 
+
+
+
+ * LEXICON ADV_OARRA  årra:årr
+ * LEXICON ADV_PIRRSES  pirrses:pirr
+
+
+ * LEXICON ADV_LUUZZYS  luuzzâs:luuzz
+
+ * LEXICON ADV_LUUQNNES  luuʹnnes:luunn
+
+ * LEXICON ADV_YQLNN  âʹlnn:â%^1VOWlnn
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/exceptions.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/exceptions.lexc)</small>This is where new words are added as lexc entries before they are 
-added to the xml source files.
-Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS "(eng) /(fin) /(rus) " ;
-
-
-ADD PARTICLES BELOW
-
-
-
-CODED BY EINO AND JASKA
-
-
-
-
-Lemmas:stems undesignated 2015-03-06
-These have been commented out 2015-11-13
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/particles_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/particles_newwords.lexc)</small>
-# Skolt Saami Numerals
-
-
- * **LEXICON Numeral   **  initial lexica
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/numerals.lexc)</small>This is where new words are added as lexc entries before they are 
-added to the xml source files.
-Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS "(eng) /(fin) /(rus) " ;
-
-
-ADD VERBS BELOW
-
-
-This only contains one verb and will be removed.
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/verbs_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/verbs_newwords.lexc)</small>This is where new words are added as lexc entries before they are 
-added to the xml source files.
-Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS "(eng) /(fin) /(rus) " ;
-
-
-ADD POSTPOSTIONS AND PREPOSITIONS BELOW
-
-
-
-CODED BY EINO AND JASKA
-
-POSTPOSITIONS
-
-PREPOSITIONS
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adpositions_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/adpositions_newwords.lexc)</small>This is where new words are added as lexc entries before they are 
-added to the xml source files.
-Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS "(eng) /(fin) /(rus) " ;
-
-
-ADD PRONOUNS BELOW
-
-
-
-CODED BY EINO AND JASKA
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/pronouns_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/pronouns_newwords.lexc)</small>
-
-# Propernoun lexicon, Skolt Sámi specific names 
-
-
-The lexicon *ProperNoun* lists the proper nouns
-
-
-## First part of complex names
-
-
-
-## Ordinary person names
-
-
-## Ordinary place names
-
-
-
-## Ordinary misc names
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/sms-propernouns.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/sms-propernouns.lexc)</small>This is where new words are added as lexc entries before they are 
-added to the xml source files.
-slooman:slooman A_AANAR ;
-
-
-ADD ADJECTIVES BELOW
-
-
-Not added yet to wiki
-
-
-
-
-
-
-
-2017-09-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adjectives_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/adjectives_newwords.lexc)</small>This is where new words are added as lexc entries before they are
-added to the xml source files.
-
-
-
-PLACE NAMES
-
- * Jõnn-Pelsa+N+Prop+Sem/Plc:Jõnn-Pelsa PROP_TOP_ "(eng) /(fin) /(nob) /(rus) " ; 
- * Ruäʹvv-vueiʹvv+N+Prop+Sem/Plc:Ruäʹvv-#vuäi%{ʹØ%}vv PROP_TOP_VUEAIQVV "(eng) /(fin) /(nob) /(rus) " ; 
-
-
-
-MORE
-Toponyms
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/toponyms_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/toponyms_newwords.lexc)</small>
-# File containing abbreviations 
-
-## Lexica for adding tags and periods
-
-Splitting in 4 + 1  groups, because of the preprocessor
-
- * **LEXICON Abbreviation   **
- 1. The ITRAB ;	    lexicon (intransitive abbrs) Ltd.
- 1. The TRNUMAB ;   lexicon (abbrs trans wrt. numerals)
- 1. The TRAB ;	    lexicon (transitive abbrs) tri. 
- 1. The SYMBOLS ;   lexicon (misc. symbols)
-
-## The sublexica
-
-### Dividing between abbreviations with and witout final period
-
-ABBREVIATIONS 
-these still need development 2015-09-11
-
-
-
-
-
- * **LEXICON ab-noun   **
-
-
-
-
-### The lexicons that add tags
-
-
-
- * **LEXICON ab-nodot-noun   **  The bulk
-
-
-+Adv+ABBR: RHyph ;
-
-
-
- * **LEXICON ab-dot-noun   **  This is the lexicon for abbrs that must have a period.
-
-
-
-
-+ABBR:%.%> # ;
-
-
-
-
-
-
-
-
-
- * **LEXICON SYMBOLconnector   **
-
- * **LEXICON SYMBOLsuff   **
-
-
-
-## The abbreviation lexicon itself
-
-
- * **LEXICON SYMBOLS   ** is for iscellaneous abbr symbols
-
-
-
- * **LEXICON ITRAB   ** are intransitive abbreviations, A.S. etc.
-
-
-
- *  ITRAB_sms2x ;         intransitive abbreviations
-These are measurements postposed after numerals
- *  TRNUMABPO_sms2x ;         postpositional transitive abbreviations with numerals preceding
- *  TRABPO_sms2x ;         postpositional transitive abbreviations
-
-
-
-
-
-
-This class contains homonyms, which are both intransitive
-abbreviations and normal words. The abbreviation usage
-is less common and thus only the occurences in the middle of
-the sentnece (when next word has small letters) can be 
-considered as true cases.
-
-
-
-
-
- * **LEXICON TRNUMAB   ** contains abbreviations who are transitive in front of numerals, i.e. preposed
-
-For abbrs for which numerals are complements, but other
-words not necessarily are. This group treats arabic numerals as
-if it were transitive but letters as if it were intransitive.
-
-
- * ** TRNUMAB_sms2x ; ** contains abbreviations in xml preposed
-
-
-
- * **LEXICON TRAB   ** contains preposed transitive abbreviations 
-
-This lexicon is for abbrs that always have a constituent following it.
-
-
- * ** TRAB_sms2x ; ** contains preposed transitive abbreviations xml
-
-
-
-
-
-
-
-
-
-
-
-This class contains homonyms, which are both abbrs for 
-which numerals are complements and normal words. The abbreviation usage
-is less common and thus only the occurences in the middle of
-the sentnece can be considered as true cases.
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/abbreviations.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/abbreviations.lexc)</small>This is where new words are added as lexc entries before they are 
-added to the xml source files.
-Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS "(eng) /(fin) /(rus) " ;
-
-
-ADD PROPER ADVERBS BELOW
-
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/conjunctions_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/conjunctions_newwords.lexc)</small>This is where new words are added as lexc entries before they are 
-added to the xml source files.
-ǩiõtt+N:ǩiõtt N_MUORR "(eng) /(fin) /(rus)" ;
-
-ADD NOUNS BELOW
-Glossing 2015-12-02
-
-Glossing 
-
-
-
-
-Newer words
-Contlex value missing
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nouns_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/nouns_newwords.lexc)</small>
+<small>This (part of) documentation was generated from [../src/fst/affixes/adverbs.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/affixes/adverbs.lexc)</small>
 # Skolt Saami Pronoun Morphology 
 
 The lexicon *PRON_*, which is actually not needed, as pronouns get +Pron tag earlier.
@@ -3215,14 +2716,46 @@ Completion needed 2015-09-19
 ### MISC
 * * *
 <small>This (part of) documentation was generated from [../src/fst/affixes/pronouns.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/affixes/pronouns.lexc)</small>
-# Symbol affixes
+
+# Inari Saami number <-> text
+
+
+
+
+
+
+
+
+
+
+
+
+
+ * **LEXICON ARABICCASES**  adds +Arab
+
+ * **LEXICON ARABICCASE**  adds +Arab
+
+ * **LEXICON ARABICCASE0**  adds +Arab
+
+
+ * **LEXICON DIGITCASES**  to distinguish between 0 and oblique
+
+ * **LEXICON DIGITCASE0**
+
+
+
+
+
+
+
+
 
 
 
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/affixes/symbols.lexc)</small>
+<small>This (part of) documentation was generated from [../src/fst/affixes/numerals.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/affixes/numerals.lexc)</small>
 
 # Skolt Saami verb morphology
 
@@ -5948,73 +5481,170 @@ VSUF-I-POTKOND_YD, VSUF-I-POTKOND_AD and VSUF-POTENTIAL_ED come here
 
 * * *
 <small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/affixes/verbs.lexc)</small>
+# SKOLT SAAMI PROPERNOUN MORPHOLOGY 
 
-# Inari Saami acronyms
-
-## The lexica giving tags and suffixes to the acronyms
-
+THE LEXICON *@OUTSIDE_LEXICONS@* ASSIGNS THE TAG +Attr
 
 
 
-+N+ABBR+Sg+Gen:%>    # ;
-+N+ABBR+Sg+Loc:%>    # ;
-+N+ABBR+Ess:%>    # ;
-+N+ABBR+Par:%>    # ;
-+N+ABBR+Pl+Nom:%>    # ;
-+N+Prop:%> ACCRADECL     ;
-+N+Prop:%> BERN-UCASE    ;
-+N+Prop:%> LONDON-UCASE  ;
-+N+Prop:%> NYSTØ-OBL     ;
 
 
- * **LEXICON acroconnector   ** Here comes a set of possible symbols to put between the abbreviation and its suffix
 
- * **LEXICON acronull   **  for suffixless forms, redirecting to K_only for clitic forms
 
- * **LEXICON acrooblique   **
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ * LEXICON PROP_SEM/MAL_TOOBDYLM  toobdâlm:toobdâlm
+
+
+
+
+
+
+
+
+
+
+
+
+like KÕÕNJÂL 
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+â-stems (Sg.Loc, Ess, Par).
+## 1.1.1 Sg.Ill vowel	-e
+## 1.1.1.1 Has Palatalization
+## 1.1.1.1[1] (Palatalization pattern)
+Palatalized: Sg.Ill
+Not Palatalized: ELSE
+Sg.Ill in palatalization and -e
+## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+## 1.1.1.1[1].1.1 Has Orthographic Gradation
+## 1.1.1.1[1].1.1[] (Monophthong + Consonant and Consonant Geminate alternation)
+Extra strong grade: Sg.Nom, Ess, Par
+Extra strong grade: Sg.Ill
+Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+* Yaml: **N-kidd, N-soll, N-toll, N-vorr**
+strong_geminate, short_vowel, no_palatalization, high_stem_vowel 
+:%>â ESS ;    		  = * LEXICON PROP_SEM/MAL_TOOBDYLM  tollân
+strong_geminate, short_vowel, palatalization, high_stem_vowel
+single_consonant, long_vowel, no_palatalization, high_stem_vowel
+:%^V2VV%^CC2C SG-ABE/ACC/GEN-PL-NOM ;	= * LEXICON PROP_SEM/MAL_TOOBDYLM  tool
+:%^V2VV%^CC2C SG-COM_IN ;               = * LEXICON PROP_SEM/MAL_TOOBDYLM  toolin
+:%^V2VV%^CC2C PL-OBL ;	                = * LEXICON PROP_SEM/MAL_TOOBDYLM  tooli, toolid, toolid, toolin, toolivuiʹm, toolitaa
+
+
+
+
+
+
+
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+â-stems (Sg.Loc, Ess, Par).
+## 1.1.1 Sg.Ill vowel	-e
+## 1.1.1.1 Has Palatalization
+## 1.1.1.1[1] (Palatalization pattern)
+Palatalized: Sg.Ill
+Not Palatalized: ELSE
+Sg.Ill in palatalization and -e
+## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+## 1.1.1.1[1].1.1 Has Orthographic Gradation
+## 1.1.1.1[1].1.1[] (Monophthong + Consonant and Consonant Geminate alternation)
+Extra strong grade: Sg.Nom, Ess, Par
+Extra strong grade: Sg.Ill
+Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+* Yaml: **N-kuss**
+
+R ;		= * LEXICON PROP_SEM/MAL_TOOBDYLM  kuss
+:%>â ESS ;     		 = * LEXICON PROP_SEM/MAL_TOOBDYLM  kussân
+
+
+
+
+
+
+
+
+
+
+ * LEXICON PROP_VUYSPPOAQD  vuâsppåʹd:vuâsppå%^1VOWd
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/acronyms.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/affixes/acronyms.lexc)</small>
-
-# Inari Saami number <-> text
-
-
-
-
-
-
-
-
-
-
-
-
-
- * **LEXICON ARABICCASES**  adds +Arab
-
- * **LEXICON ARABICCASE**  adds +Arab
-
- * **LEXICON ARABICCASE0**  adds +Arab
-
-
- * **LEXICON DIGITCASES**  to distinguish between 0 and oblique
-
- * **LEXICON DIGITCASE0**
-
-
-
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/numerals.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/affixes/numerals.lexc)</small>
+<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/affixes/propernouns.lexc)</small>
 
 # Skolt Saami noun morphology 
 
@@ -12628,6 +12258,604 @@ Used with words like juurd: jurddǥatta
 
 * * *
 <small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/affixes/nouns.lexc)</small>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
++Pl+Nom:%>jit  K ;
+:     ACCRA-DC ;
+:%>ji   ACCRA-OBL_PLC-ORG ;
+:%>ji   ACCRA-IICASE ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+ACCRA-IICASE ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+These sublexica are irrelevant for SIJTE, but added
+for the sake of the lexicon MARJA ! Muhto gč. dat kommentára... Imaštallan dan gal veha...
+Here, we allow for Illative Sijtei
+
+
+These sublexica are irrelevant for SIJTE, but added
+for the sake of the lexicon MARJA ! Muhto gč. dat kommentára... Imaštallan dan gal veha...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+For Finnish names with ending -nen. Kaustinen.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Different lexicon for female persons and place names.
+
+
+Different lexicon for personal surnames. Blind
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+As aleuhtat, but with a marginal leakage
+to sg forms in some cases. (substandard?)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ * LEXICON RHyph  conversion to sms compounding.lexc -type
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/smi-propernouns.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/affixes/smi-propernouns.lexc)</small>
+
+# Inari Saami acronyms
+
+## The lexica giving tags and suffixes to the acronyms
+
+
+
+
++N+ABBR+Sg+Gen:%>    # ;
++N+ABBR+Sg+Loc:%>    # ;
++N+ABBR+Ess:%>    # ;
++N+ABBR+Par:%>    # ;
++N+ABBR+Pl+Nom:%>    # ;
++N+Prop:%> ACCRADECL     ;
++N+Prop:%> BERN-UCASE    ;
++N+Prop:%> LONDON-UCASE  ;
++N+Prop:%> NYSTØ-OBL     ;
+
+
+ * **LEXICON acroconnector   ** Here comes a set of possible symbols to put between the abbreviation and its suffix
+
+ * **LEXICON acronull   **  for suffixless forms, redirecting to K_only for clitic forms
+
+ * **LEXICON acrooblique   **
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/acronyms.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/affixes/acronyms.lexc)</small>
+# Symbol affixes
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/affixes/symbols.lexc)</small>
 # Skolt Saami adjective declension
 
 
@@ -15126,763 +15354,535 @@ grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/affixes/adjectives.lexc)</small>
+<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/affixes/adjectives.lexc)</small>This is where new words are added as lexc entries before they are 
+added to the xml source files.
+Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS ;
+
+
+ADD PROPER NOUNS BELOW
+LACKING SPECIFIC DECLENSION TYPE
+
+WITH SPECIFIC DECLENSION TYPE
+
+First names
+
+
+
+
+
+SURNAMES
+
+
+
+
+
+ORGANIZATIONS
+
+
+
+Perintökieli
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/propernouns_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/propernouns_newwords.lexc)</small>This is where new words are added as lexc entries before they are 
+added to the xml source files.
+Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS "(eng) /(fin) /(rus) " ;
+
+
+ADD VERBS BELOW
+
+
+This only contains one verb and will be removed.
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/verbs_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/verbs_newwords.lexc)</small>This is where new words are added as lexc entries before they are 
+added to the xml source files.
+Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS "(eng) /(fin) /(rus) " ;
+
+
+ADD PRONOUNS BELOW
+
+
+
+CODED BY EINO AND JASKA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/pronouns_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/pronouns_newwords.lexc)</small>
+
+# Propernoun lexicon, Skolt Sámi specific names 
+
+
+The lexicon *ProperNoun* lists the proper nouns
+
+
+## First part of complex names
+
+
+
+## Ordinary person names
+
+
+## Ordinary place names
+
+
+
+## Ordinary misc names
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/sms-propernouns.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/sms-propernouns.lexc)</small>This is where new words are added as lexc entries before they are 
+added to the xml source files.
+Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS "(eng) /(fin) /(rus) " ;
+
+
+ADD ADVERBS BELOW
+
+
+
+
+
+CODED BY EINO AND JASKA
+
+
+
+perintökieli
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/adverbs_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/adverbs_newwords.lexc)</small>
+# Skolt Saami Numerals
+
+
+ * **LEXICON Numeral   **  initial lexica
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/numerals.lexc)</small>This is where new words are added as lexc entries before they are 
+added to the xml source files.
+Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS "(eng) /(fin) /(rus) " ;
+
+
+ADD POSTPOSTIONS AND PREPOSITIONS BELOW
+
+
+
+CODED BY EINO AND JASKA
+
+POSTPOSITIONS
+
+PREPOSITIONS
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/adpositions_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/adpositions_newwords.lexc)</small>This is where new words are added as lexc entries before they are 
+added to the xml source files.
+Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS "(eng) /(fin) /(rus) " ;
+
+
+ADD PROPER ADVERBS BELOW
+
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/conjunctions_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/conjunctions_newwords.lexc)</small>
+# File containing abbreviations 
+
+## Lexica for adding tags and periods
+
+Splitting in 4 + 1  groups, because of the preprocessor
+
+ * **LEXICON Abbreviation   **
+ 1. The ITRAB ;	    lexicon (intransitive abbrs) Ltd.
+ 1. The TRNUMAB ;   lexicon (abbrs trans wrt. numerals)
+ 1. The TRAB ;	    lexicon (transitive abbrs) tri. 
+ 1. The SYMBOLS ;   lexicon (misc. symbols)
+
+## The sublexica
+
+### Dividing between abbreviations with and witout final period
+
+ABBREVIATIONS 
+these still need development 2015-09-11
+
+
+
+
+
+ * **LEXICON ab-noun   **
+
+
+
+
+### The lexicons that add tags
+
+
+
+ * **LEXICON ab-nodot-noun   **  The bulk
+
+
++Adv+ABBR: RHyph ;
+
+
+
+ * **LEXICON ab-dot-noun   **  This is the lexicon for abbrs that must have a period.
+
+
+
+
++ABBR:%.%> # ;
+
+
+
+
+
+
+
+
+
+ * **LEXICON SYMBOLconnector   **
+
+ * **LEXICON SYMBOLsuff   **
+
+
+
+## The abbreviation lexicon itself
+
+
+ * **LEXICON SYMBOLS   ** is for iscellaneous abbr symbols
+
+
+
+ * **LEXICON ITRAB   ** are intransitive abbreviations, A.S. etc.
+
+
+
+ *  ITRAB_sms2x ;         intransitive abbreviations
+These are measurements postposed after numerals
+ *  TRNUMABPO_sms2x ;         postpositional transitive abbreviations with numerals preceding
+ *  TRABPO_sms2x ;         postpositional transitive abbreviations
+
+
+
+
+
+
+This class contains homonyms, which are both intransitive
+abbreviations and normal words. The abbreviation usage
+is less common and thus only the occurences in the middle of
+the sentnece (when next word has small letters) can be 
+considered as true cases.
+
+
+
+
+
+ * **LEXICON TRNUMAB   ** contains abbreviations who are transitive in front of numerals, i.e. preposed
+
+For abbrs for which numerals are complements, but other
+words not necessarily are. This group treats arabic numerals as
+if it were transitive but letters as if it were intransitive.
+
+
+ * ** TRNUMAB_sms2x ; ** contains abbreviations in xml preposed
+
+
+
+ * **LEXICON TRAB   ** contains preposed transitive abbreviations 
+
+This lexicon is for abbrs that always have a constituent following it.
+
+
+ * ** TRAB_sms2x ; ** contains preposed transitive abbreviations xml
+
+
+
+
+
+
+
+
+
+
+
+This class contains homonyms, which are both abbrs for 
+which numerals are complements and normal words. The abbreviation usage
+is less common and thus only the occurences in the middle of
+the sentnece can be considered as true cases.
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/abbreviations.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/abbreviations.lexc)</small>This is where new words are added as lexc entries before they are 
+added to the xml source files.
+ǩiõtt+N:ǩiõtt N_MUORR "(eng) /(fin) /(rus)" ;
+
+ADD NOUNS BELOW
+Glossing 2015-12-02
+
+Glossing 
+
+
+
+
+Newer words
+Contlex value missing
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/nouns_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/nouns_newwords.lexc)</small>This is where new words are added as lexc entries before they are 
+added to the xml source files.
+Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS "(eng) /(fin) /(rus) " ;
+
+
+ADD PARTICLES BELOW
+
+
+
+CODED BY EINO AND JASKA
+
+
+
+
+Lemmas:stems undesignated 2015-03-06
+These have been commented out 2015-11-13
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/particles_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/particles_newwords.lexc)</small>This is where new words are added as lexc entries before they are 
+added to the xml source files.
+slooman:slooman A_AANAR ;
+
+
+ADD ADJECTIVES BELOW
+
+
+Not added yet to wiki
+
+
+
+
+
+
+
+2017-09-
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/adjectives_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/adjectives_newwords.lexc)</small>This is where new words are added as lexc entries before they are
+added to the xml source files.
+
+
+
+PLACE NAMES
+
+ * Jõnn-Pelsa+N+Prop+Sem/Plc:Jõnn-Pelsa PROP_TOP_ "(eng) /(fin) /(nob) /(rus) " ; 
+ * Ruäʹvv-vueiʹvv+N+Prop+Sem/Plc:Ruäʹvv-#vuäi%{ʹØ%}vv PROP_TOP_VUEAIQVV "(eng) /(fin) /(nob) /(rus) " ; 
+
+
+
+MORE
+Toponyms
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/toponyms_newwords.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/toponyms_newwords.lexc)</small>Exceptions are quite strange word-forms. the ones that do not fit anywhere 
+else. This file contains all enumerated word forms that cannot reasonably be
+created from lexical data by regular inflection. Usually there should be next
+to none exceptions, it's always better to have a paradigm that covers only
+one or few words than an exception since these will not work nicely with e.g.
+compounding scheme or possibly many end applications.
+
+
+IRREGULAR ADJECTIVES
+
+
+IRREGULAR DETERMINERS
+
+
+
+IRREGULAR NOUNS
+
+
+Some verbs have variant forms:
+
+*variant forms examples:*
+* *leämmaž:* `leeʹd+V+PrfPrc`
+* *leämma:* `leeʹd+V+PrfPrc`
+
+
+
+The verb of negation
+ * **iʹlla+V: NEG-COPULA ;** This is for 3rd person iʹlla 
+
+
+
+PREFIXES for nouns
+
+
+Spelling errors
+
+Foreign words
+
+
+FROM FORMER .lexc CONTENT
+
+
+# Skolt Saami adjectives
+
+OUR LONG-TERM GOAL IS NOT TO ADD STEMS MANUALLY TO THIS FILE
+Instead we want to update the dictionary sms2X/src/a_sms2X.xml, 
+from where the present lexc files will be regularly updated by 
+exporting (we need a script for this).
+
+
+# Skolt Saami adpositions
+
+
+
+
 # Skolt Saami adverbs
 
 
 
+# Skolt Saami Conjunctions 
+
+
+The lexicon *Conjunction* lists the conjunction
+
+
+
+# Skolt Saami Interjections 
+
+
+The lexicon *ij* gives the tag **+Interj**
+
+
+The lexicon *Interjection* lists the interjections
+ * ai ij ;            
 
 
 
 
 
+# Skolt Saami Particles
+
+
+## List of particles in the lexicon Particle
+
+ ges+Pcle:ges PCLE_ ; 
+
+
+
+# Propernoun lexicon, Skolt Sámi specific names 
+
+
+# Subjunctions
+
+The lexicon *Subjunction* lists the subjunctions
+ * So far it contains only go+CS:go CS_ ;  
+
+
+
+# Verb roots
+
+Here are the verb types so far:
+
+*   5 JURDDED
+*  38 KALMMED
+*   3 KAMRDED
+*   1 LAADDAD
+*   1 LEED
+*  23 MAINSTED
+*   4 SEDGGJED
+*   8 V_SILTTEED
+*   5 V_SOLLEED
+*  18 V_TEEʹMEED
+*  53 TEEVVAD
+*  25 TIETTED
+*  82 VIQQAD
+*   7 VOLLJED
+*   4 VOOIDAD
+*   1 VUEJTED
+
+
+
+
+# TEST WORDS BEYOND THIS POINT
+DO NOT ADD TRANSLATIONS
+DO NOT ADD NOTES
+
+
+
+# Skolt Saami Numerals
+
+Lexicon *Subjunction* contains *okta* only.
+CODED BY JACK
+
+
+
+BUT have most of their Contlex values THIS has a separate DB DON'T TRANSLATE
 
 
 
 
 
-
-
-
- * LEXICON ADV_OARRA  årra:årr
- * LEXICON ADV_PIRRSES  pirrses:pirr
-
-
- * LEXICON ADV_LUUZZYS  luuzzâs:luuzz
-
- * LEXICON ADV_LUUQNNES  luuʹnnes:luunn
-
- * LEXICON ADV_YQLNN  âʹlnn:â%^1VOWlnn
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/adverbs.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/affixes/adverbs.lexc)</small>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-+Pl+Nom:%>jit  K ;
-:     ACCRA-DC ;
-:%>ji   ACCRA-OBL_PLC-ORG ;
-:%>ji   ACCRA-IICASE ;
-
-
-
-
-
-
-
-
-
-
-
-
-
-ACCRA-IICASE ;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-These sublexica are irrelevant for SIJTE, but added
-for the sake of the lexicon MARJA ! Muhto gč. dat kommentára... Imaštallan dan gal veha...
-Here, we allow for Illative Sijtei
-
-
-These sublexica are irrelevant for SIJTE, but added
-for the sake of the lexicon MARJA ! Muhto gč. dat kommentára... Imaštallan dan gal veha...
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-For Finnish names with ending -nen. Kaustinen.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Different lexicon for female persons and place names.
-
-
-Different lexicon for personal surnames. Blind
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-As aleuhtat, but with a marginal leakage
-to sg forms in some cases. (substandard?)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- * LEXICON RHyph  conversion to sms compounding.lexc -type
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/smi-propernouns.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/affixes/smi-propernouns.lexc)</small>
-# SKOLT SAAMI PROPERNOUN MORPHOLOGY 
-
-THE LEXICON *@OUTSIDE_LEXICONS@* ASSIGNS THE TAG +Attr
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- * LEXICON PROP_SEM/MAL_TOOBDYLM  toobdâlm:toobdâlm
-
-
-
-
-
-
-
-
-
-
-
-
-like KÕÕNJÂL 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
-â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
-Palatalized: Sg.Ill
-Not Palatalized: ELSE
-Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant and Consonant Geminate alternation)
-Extra strong grade: Sg.Nom, Ess, Par
-Extra strong grade: Sg.Ill
-Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-* Yaml: **N-kidd, N-soll, N-toll, N-vorr**
-strong_geminate, short_vowel, no_palatalization, high_stem_vowel 
-:%>â ESS ;    		  = * LEXICON PROP_SEM/MAL_TOOBDYLM  tollân
-strong_geminate, short_vowel, palatalization, high_stem_vowel
-single_consonant, long_vowel, no_palatalization, high_stem_vowel
-:%^V2VV%^CC2C SG-ABE/ACC/GEN-PL-NOM ;	= * LEXICON PROP_SEM/MAL_TOOBDYLM  tool
-:%^V2VV%^CC2C SG-COM_IN ;               = * LEXICON PROP_SEM/MAL_TOOBDYLM  toolin
-:%^V2VV%^CC2C PL-OBL ;	                = * LEXICON PROP_SEM/MAL_TOOBDYLM  tooli, toolid, toolid, toolin, toolivuiʹm, toolitaa
-
-
-
-
-
-
-
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
-â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
-Palatalized: Sg.Ill
-Not Palatalized: ELSE
-Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant and Consonant Geminate alternation)
-Extra strong grade: Sg.Nom, Ess, Par
-Extra strong grade: Sg.Ill
-Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-* Yaml: **N-kuss**
-
-R ;		= * LEXICON PROP_SEM/MAL_TOOBDYLM  kuss
-:%>â ESS ;     		 = * LEXICON PROP_SEM/MAL_TOOBDYLM  kussân
-
-
-
-
-
-
-
-
-
-
- * LEXICON PROP_VUYSPPOAQD  vuâsppåʹd:vuâsppå%^1VOWd
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/affixes/propernouns.lexc)</small>
+<small>This (part of) documentation was generated from [../src/fst/stems/exceptions.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/stems/exceptions.lexc)</small>
 
 # Skolt Sámi morphological analyser 
 
@@ -17034,6 +17034,23 @@ This is still a dummy version, containing Skolt Saami.
 * * *
 <small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-clock-digit2text.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/transcriptions/transcriptor-clock-digit2text.lexc)</small>
 
+
+We describe here how abbreviations are in Skolt Sami are read out, e.g.
+for text-to-speech systems.
+
+For example:
+
+ * s.:syntynyt # ;  
+ * os.:omaa% sukua # ;  
+ * v.:vuosi # ;  
+ * v.:vuonna # ;  
+ * esim.:esimerkki # ; 
+ * esim.:esimerkiksi # ; 
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-abbrevs2text.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
+
 # Skolt Saami number <-> letter transducer
 
 
@@ -17099,23 +17116,6 @@ This is still a dummy version, containing Skolt Saami.
 
 * * *
 <small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-numbers-digit2text.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
-
-
-We describe here how abbreviations are in Skolt Sami are read out, e.g.
-for text-to-speech systems.
-
-For example:
-
- * s.:syntynyt # ;  
- * os.:omaa% sukua # ;  
- * v.:vuosi # ;  
- * v.:vuonna # ;  
- * esim.:esimerkki # ; 
- * esim.:esimerkiksi # ; 
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-abbrevs2text.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
 S K O L T   S A A M I   G R A M M A R   C H E C K E R
 
 
