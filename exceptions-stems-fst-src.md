@@ -25,7 +25,7 @@ Some verbs have variant forms:
 
 
 The verb of negation
- * **iʹlla+V: NEG-COPULA ;** This is for 3rd person iʹlla 
+* **iʹlla+V: NEG-COPULA ;** This is for 3rd person iʹlla 
 
 
 
@@ -71,7 +71,7 @@ The lexicon *ij* gives the tag **+Interj**
 
 
 The lexicon *Interjection* lists the interjections
- * ai ij ;            
+* ai ij ;            
 
 
 
@@ -82,7 +82,7 @@ The lexicon *Interjection* lists the interjections
 
 ## List of particles in the lexicon Particle
 
- ges+Pcle:ges PCLE_ ; 
+ges+Pcle:ges PCLE_ ; 
 
 
 
@@ -92,7 +92,7 @@ The lexicon *Interjection* lists the interjections
 # Subjunctions
 
 The lexicon *Subjunction* lists the subjunctions
- * So far it contains only go+CS:go CS_ ;  
+* So far it contains only go+CS:go CS_ ;  
 
 
 

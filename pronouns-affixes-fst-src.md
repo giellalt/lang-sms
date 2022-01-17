@@ -10,14 +10,14 @@ The lexicon *PRON_*, which is actually not needed, as pronouns get +Pron tag ear
 
 
 
- * +Nom:ij		K ;  mij, tij, sij
- * +Gen:ij	      K ;  mij, tij, sij
- * +Gen+Use/NGminip+Use/NG+Use/SpellNoSugg:iʹjji    K ;  miʹjji, tiʹjji, siʹjji
- * +Acc:iʹjjid	      K ;  miʹjjid, tiʹjjid, siʹjjid
- * +Ill:iʹjjid	      K ;  miʹjjid, tiʹjjid, siʹjjid
- * +Loc:eeʹst	      K ;  meeʹst, teeʹst, seeʹst
- * +Com:ijvuiʹm     K ;  mijvuiʹm, tijvuiʹm, sijvuiʹm
- * +Abe:ijtää	      K ;  mijtää, tijtää, sijtää
+* +Nom:ij		K ;  mij, tij, sij
+* +Gen:ij	      K ;  mij, tij, sij
+* +Gen+Use/NGminip+Use/NG+Use/SpellNoSugg:iʹjji    K ;  miʹjji, tiʹjji, siʹjji
+* +Acc:iʹjjid	      K ;  miʹjjid, tiʹjjid, siʹjjid
+* +Ill:iʹjjid	      K ;  miʹjjid, tiʹjjid, siʹjjid
+* +Loc:eeʹst	      K ;  meeʹst, teeʹst, seeʹst
+* +Com:ijvuiʹm     K ;  mijvuiʹm, tijvuiʹm, sijvuiʹm
+* +Abe:ijtää	      K ;  mijtää, tijtää, sijtää
 
 
 
@@ -27,11 +27,11 @@ The lexicon *PRON_*, which is actually not needed, as pronouns get +Pron tag ear
 
 Pointing to all the pronominal subgroups
 
- * LEXICON Pronoun 
- *  Demonstrative ; 
- * jiõčč+Pron+Refl:   Reflexive ;     
- *  Interrogative ; 
- *  Relative ;	 kååʹtt, mii
+* LEXICON Pronoun 
+*  Demonstrative ; 
+* jiõčč+Pron+Refl:   Reflexive ;     
+*  Interrogative ; 
+*  Relative ;	 kååʹtt, mii
 
 
 ## Personal pronouns
@@ -45,18 +45,18 @@ Splitting according to person
 ## Demonstrative pronouns
 
 
- * LEXICON Demonstrative 
- * tõt+Pron+Dem:t  	TOTDEM ;  The Epsilon has been removed 2015-05-13
+* LEXICON Demonstrative 
+* tõt+Pron+Dem:t  	TOTDEM ;  The Epsilon has been removed 2015-05-13
 
- * LEXICON SHORTDEM 
+* LEXICON SHORTDEM 
 
- * LEXICON LONGDEM 
+* LEXICON LONGDEM 
 
- * LEXICON TOTDEM  
+* LEXICON TOTDEM  
 
- * LEXICON TIET-AA 
+* LEXICON TIET-AA 
 
- * LEXICON -AA 
+* LEXICON -AA 
 
 ## INDEFINITE PRONOUNS
 
@@ -78,76 +78,76 @@ jiõčč:
 
 
 
- * LEXICON Reflexive 
+* LEXICON Reflexive 
 
 
 
 Completion needed 2015-09-19
 
- * LEXICON GA-I 
+* LEXICON GA-I 
 
- * LEXICON GA-II 
+* LEXICON GA-II 
 
- * LEXICON ILEPX 
+* LEXICON ILEPX 
 
- * LEXICON LOCPX 
+* LEXICON LOCPX 
 
- * LEXICON COMPX 
+* LEXICON COMPX 
 
- * LEXICON ROBLSGPX 
+* LEXICON ROBLSGPX 
 
- * LEXICON ROBLPLPX 
+* LEXICON ROBLPLPX 
 
- * LEXICON RCOMPLPX 
+* LEXICON RCOMPLPX 
 
 
 
 
 ## Interrogative pronouns
 **LEXICON PRON-INTERR_** is referred to from the xml file, hence does not assign **+Pron** tag.
- * +Interr: # ;
+* +Interr: # ;
 
- * LEXICON Interrogative  is referred to from `pronouns.lexc`, hence assigns **+Pron** tag.
- * mii+Pron+Interr:m	MK ;  The Epsilon  inserted 2015-02-11
- * ǩii+Pron+Interr:ǩ	MK ;  The Epsilon  inserted 2015-02-11
-
-
- * LEXICON MK 
-
- * LEXICON MK-long 
-
- * LEXICON MK-short 
-
- * LEXICON MK-PL-short 
-
- * LEXICON MK-low 
-
- * LEXICON INDEF-MK 
-
- * LEXICON INDEF-MK-long 
-
- * LEXICON INDEF-MK-low-short 
-
- * LEXICON INDEF-MK-low 
-
- * LEXICON DISTR-MK 
-
- * LEXICON DISTR-MK-long 
-
- * LEXICON DISTR-MK-low-short 
-
- * LEXICON DISTR-MK-low 
+* LEXICON Interrogative  is referred to from `pronouns.lexc`, hence assigns **+Pron** tag.
+* mii+Pron+Interr:m	MK ;  The Epsilon  inserted 2015-02-11
+* ǩii+Pron+Interr:ǩ	MK ;  The Epsilon  inserted 2015-02-11
 
 
+* LEXICON MK 
 
+* LEXICON MK-long 
 
- * LEXICON Relative 
+* LEXICON MK-short 
 
- * LEXICON Indefinite 
+* LEXICON MK-PL-short 
+
+* LEXICON MK-low 
+
+* LEXICON INDEF-MK 
+
+* LEXICON INDEF-MK-long 
+
+* LEXICON INDEF-MK-low-short 
+
+* LEXICON INDEF-MK-low 
+
+* LEXICON DISTR-MK 
+
+* LEXICON DISTR-MK-long 
+
+* LEXICON DISTR-MK-low-short 
+
+* LEXICON DISTR-MK-low 
 
 
 
- * LEXICON Distributive 
+
+* LEXICON Relative 
+
+* LEXICON Indefinite 
+
+
+
+* LEXICON Distributive 
 
 
 

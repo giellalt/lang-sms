@@ -9,7 +9,7 @@ Note: This documentation file is still work-in-progress, and should not yet be u
 ## Delimiters 
 
 
- DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>"; #
+DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>"; #
 
 
 Tags and sets #

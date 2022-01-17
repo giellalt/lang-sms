@@ -2,7 +2,7 @@
 # Skolt Saami Numerals
 
 
- * **LEXICON Numeral   **  initial lexica
+* **LEXICON Numeral   **  initial lexica
 
 
 

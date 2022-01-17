@@ -14,173 +14,173 @@ The twolc rule file for Skolt Saami is divided into 5 main sections:
 
 # Alphabets, sets and definitions
 
- ## Alphabet
+## Alphabet
 
 Regular letters:
 
 ```
- * a b c d e f g h i j k l m n o p q r s t u v w x y z
- * A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
- * ä å â õ
- * Ä Å Â Õ
- * č ǩ ǯ ǧ ž đ ǥ ʒ š ŋ
- * Č Ǩ Ǯ Ǧ Ž Đ Ǥ Ʒ Š Ŋ
- * ẹ Pedagogical purposes
- * Ẹ Pedagogical purposes
- * 
- * æ ø ö á é í
- * Æ Ø Ö Á
- * É Ó Ú Í À È Ò Ù Ì Ë Ü Ï Ê Ô Û Î Ã Ý þ Ñ Ð
- * é ó ú í à è ò ù ì ë ü ï ê ô û î ã ý þ ñ ð ß ª ß ç
+* a b c d e f g h i j k l m n o p q r s t u v w x y z
+* A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+* ä å â õ
+* Ä Å Â Õ
+* č ǩ ǯ ǧ ž đ ǥ ʒ š ŋ
+* Č Ǩ Ǯ Ǧ Ž Đ Ǥ Ʒ Š Ŋ
+* ẹ Pedagogical purposes
+* Ẹ Pedagogical purposes
+* 
+* æ ø ö á é í
+* Æ Ø Ö Á
+* É Ó Ú Í À È Ò Ù Ì Ë Ü Ï Ê Ô Û Î Ã Ý þ Ñ Ð
+* é ó ú í à è ò ù ì ë ü ï ê ô û î ã ý þ ñ ð ß ª ß ç
 ```
 
 Orthographic, suprasegmental markers:
 
- * `ʹ` - MODIFIER LETTER PRIME: U+02B9 suprasegmental palatization
- * `ʼ` - MODIFIER LETTER APOSTROPHE: U+02BC Syllable marker that appears in writing
- * `ˈ` - MODIFIER LETTER VERTICAL LINE: U+02C8 as overlong consonant marker that does not appear in writing except for pedagogical purposes
+* `ʹ` - MODIFIER LETTER PRIME: U+02B9 suprasegmental palatization
+* `ʼ` - MODIFIER LETTER APOSTROPHE: U+02BC Syllable marker that appears in writing
+* `ˈ` - MODIFIER LETTER VERTICAL LINE: U+02C8 as overlong consonant marker that does not appear in writing except for pedagogical purposes
 
 Symbol pairs for consonant lengthening:
- * __%{XC%}:m__
- * __%{XC%}:n__
- * __%{XC%}:v__
- * __%{XC%}:d__
- * __%{XC%}:r__
- * __%{XC%}:l__
- * __%{XC%}:k__
- * __%{XC%}:ǥ__
- * __%{XC%}:s__
- * __%{XC%}:š__
- * __%{XC%}:z__
- * __%{XC%}:ž__
+* __%{XC%}:m__
+* __%{XC%}:n__
+* __%{XC%}:v__
+* __%{XC%}:d__
+* __%{XC%}:r__
+* __%{XC%}:l__
+* __%{XC%}:k__
+* __%{XC%}:ǥ__
+* __%{XC%}:s__
+* __%{XC%}:š__
+* __%{XC%}:z__
+* __%{XC%}:ž__
 
 Symbol pairs for vowel length:
- * __%{õuØ%}:0__
- * __%{ouØ%}:0__
- * __%{âõØ%}:0__
- * __%{ẹiØ%}:0__
- * __%{äaØ%}:0__
- * __%{äåØ%}:0__
- * __%{eiØ%}:0__
- * __%{åoØ%}:0__
- * __%{ẹeiØ%}:0__
+* __%{õuØ%}:0__
+* __%{ouØ%}:0__
+* __%{âõØ%}:0__
+* __%{ẹiØ%}:0__
+* __%{äaØ%}:0__
+* __%{äåØ%}:0__
+* __%{eiØ%}:0__
+* __%{åoØ%}:0__
+* __%{ẹeiØ%}:0__
 
 Symbol pairs for vowel height, by default vowels are low:
- * __%{õu%}:õ__
- * __%{ou%}:o__
- * __%{âõ%}:â__
- * __%{ẹi%}:ẹ__
- * __%{äa%}:ä__
- * __%{äå%}:ä__
- * __%{ei%}:e__
- * __%{åo%}:å__
- * __%{ẹei%}:ẹ__
- * __%{âõe%}:â__
- * __%{âõäe%}:â__
+* __%{õu%}:õ__
+* __%{ou%}:o__
+* __%{âõ%}:â__
+* __%{ẹi%}:ẹ__
+* __%{äa%}:ä__
+* __%{äå%}:ä__
+* __%{ei%}:e__
+* __%{åo%}:å__
+* __%{ẹei%}:ẹ__
+* __%{âõe%}:â__
+* __%{âõäe%}:â__
 
 Trigger symbols:
- * __%^Pen:0__ - for combinations 2015-09-28 Miikka
- * __%^RmVow:0__ - for removing vowels e, â, a before final consonant in stem
- * __%^UltRmVow:0__ - for removing vowels e, â, a after final consonant in stem
- * __%^RmCns:0__ - for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta
- * __%^1VOW:0__ - Vow trigger
- * __%^2VOW:0__ - Vow trigger
- * __%^3VOW:0__ - Vow trigger
- * __%^4VOW:0__ - Vow trigger
- * __%^5VOW:0__ - Vow trigger
- * __%^VOWLower:0__ - i>e, õ>â, â>ä, u>o, o>å
- * __%^VOWRaise:0__ - e>i, ä>e
- * __%^U2Õ:0__ - lowers u>õ
- * __%^PAL:0__ - Palatalisation
- * __%^PALNo:0__ - Palatalisation
- * __%^PALI:0__ - Palatalisation
- * __%^PALE:0__ - Palatalisation
- * __%^PALÄ:0__ - Palatalisation
- * __%^PALẸ:0__ - Palatalisation
- * __%^PALÂ:0__ - Palatalisation
- * __%^PALÕ:0__ - Palatalisation
+* __%^Pen:0__ - for combinations 2015-09-28 Miikka
+* __%^RmVow:0__ - for removing vowels e, â, a before final consonant in stem
+* __%^UltRmVow:0__ - for removing vowels e, â, a after final consonant in stem
+* __%^RmCns:0__ - for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta
+* __%^1VOW:0__ - Vow trigger
+* __%^2VOW:0__ - Vow trigger
+* __%^3VOW:0__ - Vow trigger
+* __%^4VOW:0__ - Vow trigger
+* __%^5VOW:0__ - Vow trigger
+* __%^VOWLower:0__ - i>e, õ>â, â>ä, u>o, o>å
+* __%^VOWRaise:0__ - e>i, ä>e
+* __%^U2Õ:0__ - lowers u>õ
+* __%^PAL:0__ - Palatalisation
+* __%^PALNo:0__ - Palatalisation
+* __%^PALI:0__ - Palatalisation
+* __%^PALE:0__ - Palatalisation
+* __%^PALÄ:0__ - Palatalisation
+* __%^PALẸ:0__ - Palatalisation
+* __%^PALÂ:0__ - Palatalisation
+* __%^PALÕ:0__ - Palatalisation
 
 Penultimate Palatalisation
- * __%^PALK:0__ - causes k:ǩ and g:ǧ and ǥ:j
+* __%^PALK:0__ - causes k:ǩ and g:ǧ and ǥ:j
 
 Miscellaneous triggers:
- * %^VC:0 Voicing s:z š:ž
- * %^Â:0 Indicates placement of â in stem
+* %^VC:0 Voicing s:z š:ž
+* %^Â:0 Indicates placement of â in stem
 
 CHARACTERISTIC BREAKDOWN 2015-02-17
 
- * __%^VV2V:0__ - Shortens vowel
- * __%^V2VV:0__ - Lengthens vowel
- * __%^CC2C:0__ - Shortens consonant
- * __%^CC2CAllegro:0__ - Shortens consonant
- * __%^C2CC:0__ - Lengthens consonant
- * __%^CC2CCC:0__ - Strong to Extra Strong consonant
- * __%^CCC2C:0__ - Extra Strong to Weak consonant
- * __%^CCC2CAllegro:0__ - Extra Strong to Weak consonant
- * __%^CCC2CC:0__ - Extra Strong to Strong consonant
- * __%^XYY2XY:0__ - Shortens consonant cluster
- * __%^XYY2VY:0__ - Consonant cluster to vowel and consonant sijdd:siid
- * __%^XYY2VYY:0__ - Consonant cluster to vowel and geminate uvdd:ouʹdd
- * __%^XYY2IY:0__ - Consonant cluster to i  and consonant kueʹhtt:kueiʹt
- * __%^VY2XYY:0__ - Consonant cluster i/u to j/v
- * __%^VYY2XYY:0__ - Consonant cluster i/u to j/v
- * __%^KK2ZERO:0__ - nââʹer
- * __%^KKK2ZERO:0__ - jeeʹel
- * __%^KKK2GG:0__ - Geminate weakening
- * __%^KKK2G:0__ - Strong Geminate allegro
- * __%^KK2GG:0__ - Geminate weakening jokk:jooǥǥ
- * __%^KK2GAllegro:0__ - Geminate weakening in allegro pååss:påz
- * __%^K2GG:0__ - Geminate weakening čårrõs:čårrõõzz
- * __%^K2GAllegro:0__ - Geminate weakening in allegro čâustõk
+* __%^VV2V:0__ - Shortens vowel
+* __%^V2VV:0__ - Lengthens vowel
+* __%^CC2C:0__ - Shortens consonant
+* __%^CC2CAllegro:0__ - Shortens consonant
+* __%^C2CC:0__ - Lengthens consonant
+* __%^CC2CCC:0__ - Strong to Extra Strong consonant
+* __%^CCC2C:0__ - Extra Strong to Weak consonant
+* __%^CCC2CAllegro:0__ - Extra Strong to Weak consonant
+* __%^CCC2CC:0__ - Extra Strong to Strong consonant
+* __%^XYY2XY:0__ - Shortens consonant cluster
+* __%^XYY2VY:0__ - Consonant cluster to vowel and consonant sijdd:siid
+* __%^XYY2VYY:0__ - Consonant cluster to vowel and geminate uvdd:ouʹdd
+* __%^XYY2IY:0__ - Consonant cluster to i  and consonant kueʹhtt:kueiʹt
+* __%^VY2XYY:0__ - Consonant cluster i/u to j/v
+* __%^VYY2XYY:0__ - Consonant cluster i/u to j/v
+* __%^KK2ZERO:0__ - nââʹer
+* __%^KKK2ZERO:0__ - jeeʹel
+* __%^KKK2GG:0__ - Geminate weakening
+* __%^KKK2G:0__ - Strong Geminate allegro
+* __%^KK2GG:0__ - Geminate weakening jokk:jooǥǥ
+* __%^KK2GAllegro:0__ - Geminate weakening in allegro pååss:påz
+* __%^K2GG:0__ - Geminate weakening čårrõs:čårrõõzz
+* __%^K2GAllegro:0__ - Geminate weakening in allegro čâustõk
 
 Removal of suprasegmentals
 
- * __%{ʹØ%}:0__ - This is modifier letter prime
- * __%{ʼØ%}:0__ - used between l, n, j and subsequent j and elsewhere
- * __%{ˈ1%}:0__ - This is modifier letter verticle line after diphthongs
+* __%{ʹØ%}:0__ - This is modifier letter prime
+* __%{ʼØ%}:0__ - used between l, n, j and subsequent j and elsewhere
+* __%{ˈ1%}:0__ - This is modifier letter verticle line after diphthongs
 
 This introduces vertical bar after diphth before consonants
- * %^Allegro:0 This introduces vertical bar after diphth before consonants
+* %^Allegro:0 This introduces vertical bar after diphth before consonants
 
 Various semi-vowel alternations
- * %^J2I:0 in tuâjj:tuâi
- * %^I2J:0 in agent names
- * %^I2Zero:0 in agent names
+* %^J2I:0 in tuâjj:tuâi
+* %^I2J:0 in agent names
+* %^I2Zero:0 in agent names
 
 Gradation triggers 2015.01.23
- * %^XSt2St:0 Causes weakening from extra strong to strong
- * %^XSt2W:0 Causes weakening from extra strong to weak
- * %^St2W:0 Causes weakening from strong to weak
- * %^W2St:0 Causes strengthening from weak to strong
- * %^W2XSt:0 Causes strengthening from weak to extra strong
- * %^St2XSt:0 Causes strengthening from strong to extra strong
+* %^XSt2St:0 Causes weakening from extra strong to strong
+* %^XSt2W:0 Causes weakening from extra strong to weak
+* %^St2W:0 Causes weakening from strong to weak
+* %^W2St:0 Causes strengthening from weak to strong
+* %^W2XSt:0 Causes strengthening from weak to extra strong
+* %^St2XSt:0 Causes strengthening from strong to extra strong
 
 Other vowel length and consonant length will be phased out
- * %^VOWXSH:0 Extra shortens vowel in relation to consonant
- * %^VOWXL:0 Extra lengthens vowel in relation to consonant in nouns, for example
- * %^CXLong:0 Lengthening
- * %^CLong:0 Lengthening
- * %^CShort:0 Shortening
+* %^VOWXSH:0 Extra shortens vowel in relation to consonant
+* %^VOWXL:0 Extra lengthens vowel in relation to consonant in nouns, for example
+* %^CXLong:0 Lengthening
+* %^CLong:0 Lengthening
+* %^CShort:0 Shortening
 
 More triggers, possibly realised as a segment:
 
 <!-- {% raw %} -->
- * `X3:0` causes weak grade
- * `%{VU%}:u` used with stuuʹl
- * `%{Â1%}:0` used with "mainsted" to tell (a story)
- * `%{A1%}:0` used with "vuejted" to drive (causative)
- * `%{E1%}:0` used with "kåʹmrded" to bow
+* `X3:0` causes weak grade
+* `%{VU%}:u` used with stuuʹl
+* `%{Â1%}:0` used with "mainsted" to tell (a story)
+* `%{A1%}:0` used with "vuejted" to drive (causative)
+* `%{E1%}:0` used with "kåʹmrded" to bow
 * `%{E1%}:0` archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one.
- * `%{EÂ%}:e` archiform for ie:eâ variation
- * `%^IMPSG2:0`
- * `%^INDPRSSG3:0`
- * `%^PenVow2a:0` Changes penultimate vowel to a; e:a â:a
- * `%^FRICG:0`
+* `%{EÂ%}:e` archiform for ie:eâ variation
+* `%^IMPSG2:0`
+* `%^INDPRSSG3:0`
+* `%^PenVow2a:0` Changes penultimate vowel to a; e:a â:a
+* `%^FRICG:0`
 
 Hyphen at compound word boundary
 * `%^FRICG:0` Zero versus hyphen in compounding
- * `%^Hyphen:0` at compound word boundary with %-
- * `%^NoHyphen:0` at compound word boundary
+* `%^Hyphen:0` at compound word boundary with %-
+* `%^NoHyphen:0` at compound word boundary
 <!-- {% endraw %} -->
 
 
@@ -206,33 +206,33 @@ End of alphabet definitions
 
 ## Sets
 
- * Cns = b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž
-   B C D F G H J K L M N P Q R S T V W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
- * CNoV = b c d f g h j k l m n p q r s t w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž
-   B C D F G H J K L M N P Q R S T W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
+* Cns = b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž
+  B C D F G H J K L M N P Q R S T V W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
+* CNoV = b c d f g h j k l m n p q r s t w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž
+  B C D F G H J K L M N P Q R S T W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
 
- * CNoJ = b c d f g h k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž
-   B C D F G H K L M N P Q R S T V W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
+* CNoJ = b c d f g h k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž
+  B C D F G H K L M N P Q R S T V W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
 
- * Vow = a e ẹ i o u å ä â õ
-   A E Ẹ I O U Å Ä Â Õ ;
- * VowNoIU = a e ẹ o å ä â õ
-   A E Ẹ O Å Ä Â Õ ;
+* Vow = a e ẹ i o u å ä â õ
+  A E Ẹ I O U Å Ä Â Õ ;
+* VowNoIU = a e ẹ o å ä â õ
+  A E Ẹ O Å Ä Â Õ ;
 
- * CNoJV = b c d f g h k l m n p q r s t w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž
-   B C D F G H K L M N P Q R S T W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
+* CNoJV = b c d f g h k l m n p q r s t w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž
+  B C D F G H K L M N P Q R S T W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
 
- * CNoDLRZ = b c f g h j k m n p q s t v w x z đ ǯ č ŋ ǩ ǧ ǥ š ž
-   B C F G H J K M N P Q S T V W X Z Đ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
+* CNoDLRZ = b c f g h j k m n p q s t v w x z đ ǯ č ŋ ǩ ǧ ǥ š ž
+  B C F G H J K M N P Q S T V W X Z Đ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
 
- * Ltrs = Vow Cns ;
+* Ltrs = Vow Cns ;
 
- * Dummy = %^PAL %^PALE %^PALẸ %^PALÕ %^PALÄ
-   %^CC2C %^CCC2C %^CCC2CC %^XYY2IY %^XYY2XY
-   %^KK2GG %^XYY2VY %^KKK2GG %^KKK2ZERO %^C2CC
-   %^J2I %^Pen %^V2VV %^VOWLower %^RmVow
-   %^PenVow2a %^RmCns %^VC %^V2VV
-   %^VOWRaise %^VOWSH %^CLong %^K2GG ; - triggers in Sg.Nom and Sg.Gen
+* Dummy = %^PAL %^PALE %^PALẸ %^PALÕ %^PALÄ
+  %^CC2C %^CCC2C %^CCC2CC %^XYY2IY %^XYY2XY
+  %^KK2GG %^XYY2VY %^KKK2GG %^KKK2ZERO %^C2CC
+  %^J2I %^Pen %^V2VV %^VOWLower %^RmVow
+  %^PenVow2a %^RmCns %^VC %^V2VV
+  %^VOWRaise %^VOWSH %^CLong %^K2GG ; - triggers in Sg.Nom and Sg.Gen
 
 
 
@@ -253,7 +253,7 @@ following morpheme or word boundary
 
 <!-- {% raw %} -->
 ```
- * RBound = [(%^Hyphen: %-|%^NoHyphen:|%{%-Ø%}:) #:|.#.|%>|»|%-] ;
+* RBound = [(%^Hyphen: %-|%^NoHyphen:|%{%-Ø%}:) #:|.#.|%>|»|%-] ;
 ```
 <!-- {% endraw %} -->
 

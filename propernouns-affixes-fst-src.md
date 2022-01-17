@@ -85,7 +85,7 @@ THE LEXICON *@OUTSIDE_LEXICONS@* ASSIGNS THE TAG +Attr
 
 
 
- * LEXICON PROP_SEM/MAL_TOOBDYLM  toobdâlm:toobdâlm
+* LEXICON PROP_SEM/MAL_TOOBDYLM  toobdâlm:toobdâlm
 
 
 
@@ -160,6 +160,6 @@ R ;		= * LEXICON PROP_SEM/MAL_TOOBDYLM  kuss
 
 
 
- * LEXICON PROP_VUYSPPOAQD  vuâsppåʹd:vuâsppå%^1VOWd
+* LEXICON PROP_VUYSPPOAQD  vuâsppåʹd:vuâsppå%^1VOWd
 * * *
 <small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/affixes/propernouns.lexc)</small>
