@@ -4,8 +4,6 @@
 
 First a lexicon V_ for still unclassified entries.
 
-
-
 ## Irregular verbs
 
 Then irregular verbs ij and the copula.
@@ -17,18 +15,9 @@ The lexicon *V-NEG_IJ*
 * +Use/NGminip+Use/NG+Neg+Ind+Sg1:jim	   K ; 
 * +Neg+Ind+Sg2:jiõˈk	   K ; 
 
-
-
-
-
 * LEXICON IV_LEEQD  leeʹd:l
 * LEXICON V0_LEEQD  leeʹd:l
 The lexicon *V0_LEEQD* for the copula
-
-
-
-
-
 
 ## REGULAR VERBS
 ### CLASS 1 HIGH VOWEL, NO PALATALIZATION
@@ -37,9 +26,6 @@ The lexicon *V0_LEEQD* for the copula
 * LEXICON IV_POOLLYD  põõllâd:põõll
 * LEXICON TV_POOLLYD  põõllâd:põõll
 * LEXICON V0_POOLLYD  põõllâd:põõll
-
-
-
 
 * LEXICON V_LAUKKOOLLYD  laukkõõllâd:laukkõõll
 * LEXICON IV_LAUKKOOLLYD  laukkõõllâd:laukkõõll
@@ -56,7 +42,6 @@ The lexicon *V0_LEEQD* for the copula
 * :%^VV2V VSUF-IMPRT-CONNEGII_YD ; 8 laukkõll-
 * +Imprt+ConNegII:%^VV2V%>u K ;  laukkõllu
 * +Imprt+Pl3:%^VV2V%^VOWLower%>az K ;  laukkâllaz
-
 
 * LEXICON V_VIIKKYD  viikkâd:viikk
 * LEXICON IV_VIIKKYD  viikkâd:viikk
@@ -144,23 +129,15 @@ Imprt+ConNegII, Pass+PrfPrc
 * +Imprt+Pl3:%^VV2V%^VOWLower%>az K ;  (9) Ind.Imprt.Pl3: piâkklâččaz
 Imprt+Pl3
 
-
-
 * LEXICON V_ROVVYD  rõvvâd:rõvv
 * LEXICON IV_ROVVYD  rõvvâd:rõvv
 * LEXICON V0_ROVVYD  rõvvâd:rõvv
 
-
-
 * LEXICON V_RIYDDDYD  riâddâd:riâdˈd
 * LEXICON V0_RIYDDDYD  riâddâd:riâdˈd
 
-
-
 * LEXICON V_RIOKKKYD  riõkkâd:riõkˈk
 * LEXICON V0_RIOKKKYD  riõkkâd:riõkˈk
-
-
 
 * LEXICON V_PIOGGGYD  piõggâd:piõgˈg
 * LEXICON V0_PIOGGGYD  piõggâd:piõgˈg
@@ -197,7 +174,6 @@ Imprt+ConNegII, Pass+PrfPrc
 
 (10) Allegro for incoative: piõg»
 
-
 * LEXICON V_KHIOCHCHCHYD  ǩiõččâd:ǩiõčˈč
 * LEXICON V0_KHIOCHCHCHYD  ǩiõččâd:ǩiõčˈč
 * : VSUF-INF_YD ;  (1) Inf: ǩiõčˈčâd
@@ -233,16 +209,13 @@ Imprt+ConNegII, Pass+PrfPrc
 
 (10) Allegro for incoative: ǩiõč»
 
-
 * LEXICON V_PIYSSYD  piâssâd:piâss
 * LEXICON TV_PIYSSYD  piâssâd:piâss
 * LEXICON V0_PIYSSYD  piâssâd:piâss
 
-
 * LEXICON V_CHIOKKYD  čiõkkâd:čiõkk
 * LEXICON IV_CHIOKKYD  čiõkkâd:čiõkk
 * LEXICON V0_CHIOKKYD  čiõkkâd:čiõkk
-
 
 * LEXICON V_HUOLLYD  huõllâd:huõll
 * LEXICON IV_HUOLLYD  huõllâd:huõll
@@ -316,7 +289,6 @@ Imprt+Pl3
 
 * :%^CC2CAllegro FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: siõr»
 
-
 * LEXICON V_SUOAPPYD  suåppâd:suåpp
 * LEXICON V0_SUOAPPYD  suåppâd:suåppv
 * : VSUF-INF_YD ;  (1)  Inf: suåppâd
@@ -351,7 +323,6 @@ Imprt+Pl3
 
 * :%^CC2CAllegro FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: suåv»
 
-
 * LEXICON V_AIBBYD  aibbâd:aibb
 * LEXICON IV_AIBBYD  aibbâd:aibb
 * LEXICON TV_AIBBYD  aibbâd:aibb
@@ -384,7 +355,6 @@ Imprt+Sg3
 Imprt+ConNegII, Pass+PrfPrc
 
 * :%^XYY2XY FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: aib»
-
 
 * LEXICON V_TOBDDYD  tobddâd:to%^1VOW%{ʹØ%}bdd
 * LEXICON IV_TOBDDYD  tobddâd:to%^1VOW%{ʹØ%}bdd
@@ -420,7 +390,6 @@ Imprt+ConNegII, Pass+PrfPrc
 
 * :%^XYY2XY FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: tobd»
 
-
 * LEXICON V_OHTTYD  õhttâd:õhtt
 * LEXICON IV_OHTTYD  õhttâd:õhtt
 * LEXICON V0_OHTTYD  õhttâd:õ%^1VOW%{ʹØ%}h%{ʹØ%}tt
@@ -452,7 +421,6 @@ Imprt+Sg3
 Imprt+ConNegII, Pass+PrfPrc
 
 * :%^XYY2VY FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: õut»
-
 
 * LEXICON V_KUOSKKYD  kuõskkâd:kuõskk
 * LEXICON IV_KUOSKKYD  kuõskkâd:kuõskk
@@ -487,9 +455,7 @@ Imprt+ConNegII, Pass+PrfPrc
 * :%^VOWLower%>az K ;  (9)  Ind.Imprt.Pl3: kuâskkaz
 Imprt+Pl3
 
-
 * :%^XYY2XY FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: kuõsk»
-
 
 * LEXICON V_CHIOHTTYD  čiõhttâd:čiõhtt
 * LEXICON IV_CHIOHTTYD  čiõhttâd:čiõhtt
@@ -526,7 +492,6 @@ Imprt+Pl3
 
 * :%^XYY2VY FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: čiõut»
 
-
 * LEXICON V_SKHIYNHKKYD  sǩiâŋkkâd:sǩiâŋkk
 * LEXICON V0_SKHIYNHKKYD  sǩiâŋkkâd:sǩiâŋkk
 
@@ -562,43 +527,27 @@ Imprt+Pl3
 
 * :%^XYY2XY FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: sǩiâŋk»
 
-
-
 * LEXICON V_VUOIDDYD  čuõiggâd:čuõigg
 * LEXICON V0_VUOIDDYD  čuõiggâd:čuõigg
-
-
-
-
 
 * LEXICON V_LAADDYD  laaddâd:laadd
 * LEXICON IV_LAADDYD  laaddâd:laadd
 * LEXICON V0_LAADDYD  laaddâd:laadd
 
-
-
 * LEXICON V_DOOIDYD  võõidâd:võõid
 * LEXICON V0_DOOIDYD  võõidâd:võõid
-
-
 
 * LEXICON V_CHIISTYD  čiistâd:čiist
 * LEXICON V0_CHIISTYD  čiistâd:čiist
 
-
-
 * LEXICON V_SLUUZHYD  sluužâd:sluuž
 * LEXICON V0_SLUUZHYD  sluužâd:sluuž
-
 
 * LEXICON V_PLIYSNYD  pliâsnâd:pliâsn
 * LEXICON V0_PLIYSNYD  pliâsnâd:pliâsn
 
-
 * LEXICON V_SUUDYD  suudâd:suud
 * LEXICON V0_SUUDYD  suudâd:suud
-
-
 
 ### CLASS 1 LOW VOWEL, NO PALATALIZATION
 Even-syllable stems in -AD
@@ -608,11 +557,8 @@ Even-syllable stems in -AD
 * LEXICON TV_TEEVVAD  teevvad:teevv
 * LEXICON V0_TEEVVAD  teevvad:teevv
 
-
-
 * LEXICON V_POAOASSAD  pååssad:pååss
 * LEXICON V0_POAOASSAD  pååssad:pååss
-
 
 (1) +V+Inf: tättad
 (2) +V+Ind+Prs+Sg3: tätt
@@ -622,9 +568,6 @@ Even-syllable stems in -AD
 (7) +V+Imprt+Sg3: täättas
 (8) +V+Imprt+ConNegII: tattu
 
-
-
-
 * : VSUF-INF_AD ;  (1) +V+Inf: heârrad
 * : VSUF-IND-PRS-SG3_AD ;  (2) +V+Ind+Prs+Sg3: heârr
 * +Ind+Prs+Pl3:%^CC2CCC%>a K ;  (3) +V+Ind+Prs+Pl3: heârˈra
@@ -633,13 +576,9 @@ Even-syllable stems in -AD
 * :%^VOWRaise%^CC2CCC VSUF-IMPRT-CONNEGII_AD ;  (8) +V+Imprt+ConNegII: heârˈru
 * :%^CC2CCC VSUF-IMPRT-PL3_AD ;  (9) Ind.Imprt.Pl3: heârˈraz
 
-
-
 * LEXICON V_VUAGGGAD  vuägˈgad:vuägˈg
 * LEXICON IV_VUAGGGAD  vuägˈgad:vuägˈg
 * LEXICON V0_VUAGGGAD  vuägˈgad:vuägˈg
-
-
 
 * LEXICON V_LAEULLAD  läullad:läull
 * LEXICON IV_LAEULLAD  läullad:läull
@@ -686,7 +625,6 @@ Imprt+Pl3
 
 (10) Allegro for incoative: läul»
 
-
 * LEXICON V_SARNNAD  särnnad:särnn
 * LEXICON IV_SARNNAD  särnnad:särnn
 * LEXICON V0_SARNNAD  särnnad:särnn
@@ -705,7 +643,6 @@ Actio, ActEss, PrsPrc, NomAct in MOsh
 * :%^VOWRaise VSUF-IND-PRT-PL3_AD ;  (4) Ind.Prt.Pl3: sarnnu
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-
 * :%^V2VV%^XYY2XY VSUF-I-POTKOND_AD ;  (5-7) +Imprt+Sg2: säärn
 Imprt+ConNeg, Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, Ind+Prs+Sg1, Ind+Prs+Sg2
 +Ger, +VAbess, +Pot, +Cond, +Imprt+Sg3
@@ -718,7 +655,6 @@ Imprt+ConNegII, Pass+PrfPrc
 
 (10) Allegro for incoative: särn»
 
-
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Ind+Prt+ConNeg
 Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc, NomAct in MOsh
@@ -729,7 +665,6 @@ Actio, ActEss, PrsPrc, NomAct in MOsh
 
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-
 Imprt+ConNeg, Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, Ind+Prs+Sg1, Ind+Prs+Sg2
 +Ger, +VAbess, +Pot, +Cond, +Imprt+Sg3
 
@@ -738,7 +673,6 @@ Imprt+ConNegII, Pass+PrfPrc
 +Imprt+Pl3
 
 (10) Allegro for incoative: peit»
-
 
 * LEXICON V_POAHSSAD  påhssad:påhss
 * LEXICON V0_POAHSSAD  påhssad:påhss
@@ -757,7 +691,6 @@ Actio, ActEss, PrsPrc, NomAct in MOsh
 * :%^VOWRaise VSUF-IND-PRT-PL3_AD ;  (4) Ind.Prt.Pl3: pohssu
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-
 * :%^V2VV%^XYY2VY VSUF-I-POTKOND_AD ;  (5-7) +Imprt+Sg2: pååus
 Imprt+ConNeg, Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, Ind+Prs+Sg1, Ind+Prs+Sg2
 +Ger, +VAbess, +Pot, +Cond, +Imprt+Sg3
@@ -770,12 +703,10 @@ Imprt+ConNegII, Pass+PrfPrc
 
 (10) Allegro for incoative: påus»
 
-
 * LEXICON V_KUAEIVVAD  kuäivvad:kuäivv
 * LEXICON IV_KUAEIVVAD  kuäivvad:kuäivv
 * LEXICON TV_KUAEIVVAD  kuäivvad:kuäivv
 * LEXICON V0_KUAEIVVAD  kuäivvad:kuäivv
-
 
 * LEXICON V_KUAESTTAD  kuästtad:kuästt
 * LEXICON IV_KUAESTTAD  kuästtad:kuästt
@@ -792,7 +723,6 @@ Imprt+ConNegII, Pass+PrfPrc
 * LEXICON V_KUYISSAD  kuâissad:kuâivv
 * LEXICON V0_KUYISSAD  kuâivvad:kuâivv
 
-
 * LEXICON V_VEYHSSAD  veâhssad:veâhss
 * LEXICON V0_VEYHSSAD  veâhssad:veâhss
 
@@ -805,8 +735,6 @@ Imprt+ConNegII, Pass+PrfPrc
 
 * LEXICON V_MEINNAD  meinnad:meinn
 * LEXICON V0_MEINNAD  meinnad:meinn
-
-
 
 ### CLASS 1 HIGH VOWEL, PALATALIZATION
 * LEXICON TV_MUQTTED  muʹtted:mutt
@@ -825,7 +753,6 @@ ExtraStrong-LoweredVowel-Palatalization
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ;  (3) +V+Ind+Prs+Pl3: moʹtte
 +V+Ind+Prs+Pl3
 
-
 ExtraStrong-RaisedVowel-Palatalization
 * :%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: muʹtte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
@@ -837,7 +764,6 @@ Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 Weak-RaisedVowel-Palatalization
 * :%^V2VV%^PAL%> VSUF-POTENTIAL_ED ;   (6) +V+Imprt+Sg2: muuʹtt
 Ind+Prs+ConNeg, Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
-
 
 Weak-LoweredVowel-No-palatalization
 * :%^V2VV%^VOWLower VSUF-CONDITIONAL_ED ;  (7) +V+Imprt+Sg3: moottas
@@ -851,13 +777,11 @@ ExtraStrong-LoweredVowel-No-palatalization
 * :%^VOWLower VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: mottaz
 Imprt+Pl3
 
-
 (11) Present Participle:
 * :%^PAL%> FOR-VSUF-PRSPRC_ED ;  (11) +V+PrsPrc: muʹtti
 
 (12) Weak-RaisedVowel-NoPalatalization
 * :%^V2VV VSUF-CHED_ED ;   (12) +Der+Der/ched: muutt
-
 
 * LEXICON V_PUUQTTED  puuʹtted:puutt
 * LEXICON V0_PUUQTTED  puuʹtted:puutt
@@ -875,7 +799,6 @@ ExtraStrong-LoweredVowel-Palatalization
 * +Ind+Prs+Pl3:%^VV2V%^VOWLower%^PAL%>e K ;  (3) +V+Ind+Prs+Pl3: poʹtte
 +V+Ind+Prs+Pl3
 
-
 ExtraStrong-RaisedVowel-Palatalization
 * :%^VV2V%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: puʹtte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
@@ -887,7 +810,6 @@ Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 Weak-RaisedVowel-Palatalization
 * :%^PAL%^CC2C%> VSUF-POTENTIAL_ED ;   (6) +V+Imprt+Sg2: puuʹđ
 Ind+Prs+ConNeg, Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
-
 
 Weak-LoweredVowel-No-palatalization
 * :%^VOWLower%^CC2C VSUF-CONDITIONAL_ED ;  (7) +V+Imprt+Sg3: poođas
@@ -901,13 +823,11 @@ ExtraStrong-LoweredVowel-No-palatalization
 * :%^VV2V%^VOWLower VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: pottaz
 Imprt+Pl3
 
-
 (11) Present Participle:
 * :%^PAL%> FOR-VSUF-PRSPRC_ED ;  (11) +V+PrsPrc: puuʹtti
 
 (12) Weak-RaisedVowel-NoPalatalization
 * :%^CC2C VSUF-CHED_ED ;   (12) +Der+Der/ched: puuđ-
-
 
 * LEXICON V_LAQDDED  laʹdded:ladd
 * LEXICON V0_LAQDDED  laʹdded:ladd
@@ -947,7 +867,6 @@ Imprt+ConNegII, Pass+PrfPrc
 ExtraStrong-LoweredVowel-No-palatalization
 * :%^VOWLower VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: läddaz
 Imprt+Pl3
-
 
 (11) Present Participle:
 * :%^PAL FOR-VSUF-PRSPRC_ED ;  (11) +V+PrsPrc: laʹddi
@@ -1007,7 +926,6 @@ Allegro (10) lieʹđ»
 (12) Weak-RaisedVowel-NoPalatalization
 * :%^VOWRaise%^CC2C VSUF-CHED_ED ;   (12) +Der+Der/ched: liõđ-
 
-
 * LEXICON V_JUEQKHKHED  jueʹǩǩed:juâ%{ʹØ%}kk
 * LEXICON IV_JUEQKHKHED  jueʹǩǩed:juâ%{ʹØ%}kk
 * LEXICON V0_JUEQKHKHED  jueʹǩǩed:juâ%{ʹØ%}kk
@@ -1057,7 +975,6 @@ Secondary allegro for incoative: juâǥ»
 
 (12) Weak-RaisedVowel-NoPalatalization
 * :%^VOWRaise%^KK2GG VSUF-CHED_ED ;   (12) +Der+Der/ched: juõǥǥ
-
 
 * LEXICON V_KUEQDDDED  kueʹdded:kuâdˈd
 * LEXICON TV_KUEQDDDED  kueʹdded:kuâdˈd
@@ -1347,8 +1264,6 @@ Imprt+Pl3
 
 (10) Allegro for incoative: tieʹđ»
 
-
-
 (11) Present Participle:
 * :%^VOWRaise%^PAL%> FOR-VSUF-PRSPRC_ED ;  (11) +V+Act+PrsPrc: tiõʹtˈti
 * :%^VOWRaise%^PALE%^PAL%> FOR-VSUF-PRSPRC_ED ;  (11) +V+Act+PrsPrc: tieʹtˈti
@@ -1398,15 +1313,12 @@ Imprt+Pl3
 
 (10) Allegro for incoative: ǩieʹld»
 
-
-
 (11) Present Participle:
 * :%^VOWRaise%^PAL%> FOR-VSUF-PRSPRC_ED ;  (11) +V+Act+PrsPrc: ǩiõʹlddi
 * :%^VOWRaise%^PALE%^PAL%> FOR-VSUF-PRSPRC_ED ;  (11) +V+Act+PrsPrc: ǩieʹlddi
 
 (12) Weak-RaisedVowel-NoPalatalization
 * :%^VOWRaise%^XYY2XY VSUF-CHED_ED ;   (12) +Der+Der/ched: ǩiõld-
-
 
 * LEXICON V_SUIQTTED  suiʹtted:suitt
 * LEXICON V0_SUIQTTED  suiʹtted:suitt
@@ -1416,7 +1328,6 @@ Imprt+Pl3
 
 (12) Weak-RaisedVowel-NoPalatalization
 * :%^V2VV%^XYY2XY VSUF-CHED_ED ;   (12) +Der+Der/ched: suuit-
-
 
 * LEXICON V_VUEQRDDED  vueʹlǧǧed:vuâlgg
 * LEXICON IV_VUEQRDDED  vueʹlǧǧed:vuâlgg
@@ -1484,7 +1395,6 @@ Height=+, PAL=-, V=+, C=-, âae=e
 
 (13) vuõlggled, joottled -Âled be about to leave
 Height=+, PAL=-, V=0, C=0, âae=e
-
 
 * LEXICON V_VUEQHSSED  vueʹhssed:vuâhss
 * LEXICON V0_VUEQHSSED  vueʹhssed:vuâhss
@@ -1588,7 +1498,6 @@ Imprt+Pl3
 (12) Weak-RaisedVowel-NoPalatalization
 * :%^V2VV%^VOWRaise VSUF-CHED_ED ;   (12) +Der+Der/ched: solõõtt-
 
-
 * LEXICON V_JOAQTTED  jååʹtted:jåått
 * LEXICON IV_JOAQTTED  jååʹtted:jåått
 * LEXICON TV_JOAQTTED  jååʹtted:jåått
@@ -1629,7 +1538,6 @@ Imprt+ConNeg, Pass+PrfPrc
 ExtraStrong-LoweredVowel-No-palatalization
 * :%^VV2V VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: jåttaz
 Imprt+Pl3
-
 
 (11) Present Participle:
 * :%^VOWRaise%^PAL FOR-VSUF-PRSPRC_ED ;  (11) +V+Act+PrsPrc: jooʹtti
@@ -1683,7 +1591,6 @@ Imprt+Pl3
 (12) Weak-RaisedVowel-NoPalatalization
 * :%^V2VV%^VOWRaise VSUF-CHED_ED ;   (12) +Der+Der/ched: ǩiitt
 
-
 * LEXICON IV_KOAQCCED  kååʹcced:kååcc
 * LEXICON V0_KOAQCCED  kååʹcced:kååcc
 Strong-LowVowel-Palatalization
@@ -1722,7 +1629,6 @@ Imprt+ConNeg, Pass+PrfPrc
 ExtraStrong-LoweredVowel-No-palatalization
 * :%^VV2V VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: kåccaz
 Imprt+Pl3
-
 
 (11) Present Participle:
 * :%^VOWRaise%^PAL%> FOR-VSUF-PRSPRC_ED ;  (4) +V+Act+PrsPrc: kooʹcci
@@ -1856,7 +1762,6 @@ ExtraStrong-LoweredVowel-No-palatalization
 * VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: veädˈdaz
 Imprt+Pl3
 
-
 (11) Present Participle:
 
 (12) Weak-RaisedVowel-NoPalatalization
@@ -1966,9 +1871,6 @@ Allegro (10)
 (12) Weak-RaisedVowel-NoPalatalization
 * :%^VOWRaise%^CC2C VSUF-CHED_ED ;   (12) +Der+Der/ched: puåđ
 
-
-
-
 * LEXICON V_SHKUEAQTTED  škueʹtted:puätt
 * LEXICON IV_SHKUEAQTTED  škueʹtted:puätt
 * LEXICON TV_SHKUEAQTTED  škueʹtted:puätt
@@ -2023,7 +1925,6 @@ No Allegro (10) 2015-12-04
 (11) Present Participle:
 * +Use/NGminip+Use/NG:%^VOWRaise%^PALE%^PAL%> FOR-VSUF-PRSPRC_ED ;  (11) pueʹtti
 * :%^VOWRaise%^PALÕ%^PAL%> FOR-VSUF-PRSPRC_ED ;  (11) puõʹtti
-
 
 * LEXICON V_JIEAQLLED  jieʹlled:jeä%{ʹØ%}ll
 * LEXICON IV_JIEAQLLED  jieʹlled:jeä%{ʹØ%}ll
@@ -2132,8 +2033,6 @@ Imprt+Pl3
 (12)
 * :%^VOWRaise%^KK2GG VSUF-CHED_ED ;   (12) +Der+Der/ched: 
 
-
-
 * LEXICON V_VUEAIQNNED  vueiʹnned:vuäinn
 * LEXICON TV_VUEAIQNNED  vueiʹnned:vuäinn
 * LEXICON V0_VUEAIQNNED  vueiʹnned:vuäinn
@@ -2143,7 +2042,6 @@ Imprt+Pl3
 
 (12)
 * :%^VOWRaise%^XYY2XY VSUF-CHED_ED ;   (12) +Der+Der/ched: 
-
 
 * LEXICON V_VUEAQDHDHED  vueʹđđed:vuäđđ
 * LEXICON V0_VUEAQDHDHED  vueʹđđed:vuäđđ
@@ -2194,7 +2092,6 @@ vuäˈđeškuätt
 (12)
 * :%^VOWRaise%^CC2C VSUF-CHED_ED ;   (12) +Der+Der/ched: 
 
-
 * LEXICON V_LEUQKHKHED  leuʹǩǩed:leukk
 * LEXICON V0_LEUQKHKHED  leuʹǩǩed:leukk
 
@@ -2203,7 +2100,6 @@ vuäˈđeškuätt
 
 (12)
 * :%^V2VV%^VOWRaise%^XYY2XY VSUF-CHED_ED ;   (12) +Der+Der/ched: 
-
 
 * LEXICON V_TAIQDDED  täiʹdded:tä%^1VOWi%{ʹØ%}dd
 * LEXICON V0_TAIQDDED  täiʹdded:tä%^1VOWi%{ʹØ%}dd
@@ -2221,7 +2117,6 @@ vuäˈđeškuätt
 * *täiʹdškueʹtted:* `täiʹdded+V+Der+Der/InchL+V+Inf` (Eng. # (10) Allegro)
 * *taiʹddi:* `täiʹdded+V+PrsPrc` (Eng. # (11))
 * *taaidčed:* `täiʹdded+V+Der+Der/ched+V+Inf` (Eng. # (12))
-
 
 * : VSUF-IMPRT-PL3_ED ;   (9) +V+Imprt+Pl3 täiddaz
 Imprt+Pl3
@@ -2372,19 +2267,14 @@ gradation: no
 * LEXICON IV_KULSTED  kulsted:kuulâst
 * LEXICON V0_KULSTED  kulsted:kuulâst
 
-
 * LEXICON V_AGSTED  agsted:aaggâst
 * LEXICON IV_AGSTED  agsted:aaggâst
 * LEXICON V0_AGSTED  agsted:aaggâst
-
-
 
 * LEXICON V_MAINSTED  mainsted:maainâst
 * LEXICON IV_MAINSTED  mainsted:maainâst
 * LEXICON TV_MAINSTED  mainsted:maainâst
 * LEXICON V0_MAINSTED  mainsted:maainâst
-
-
 
 * LEXICON V_NUOLSTED  nuõlsted:nuõllâst
 * LEXICON V0_NUOLSTED  nuõlsted:nuõllâst
@@ -2396,48 +2286,28 @@ gradation: no
 * LEXICON V_TAARBSHED  taarbšed:taarbâš
 * LEXICON V0_TAARBSHED  taarbšed:taarbâš
 
-
-
-
 ### CLASS 2 LOW VOWEL, NO PALATALIZATION
 * LEXICON V_VUEJTED  vuejted:vuejat
 * LEXICON TV_VUEJTED  vuejted:vuejat
 * LEXICON V0_VUEJTED  vuejted:vuejat
 
-
-
-
-
-
-
-
-
-
-
-
 * LEXICON V_KAEIGGSHED  käiggšed:käiggaš
 * LEXICON IV_KAEIGGSHED  käiggšed:käiggaš
 * LEXICON V0_KAEIGGSHED  käiggšed:käiggaš
-
 
 * LEXICON V_JAELSTED  jälsted:jäälast
 * LEXICON IV_JAELSTED  jälsted:jäälast
 * LEXICON V0_JAELSTED  jälsted:jäälast
 
-
-
 * LEXICON V_JAEMLJED  jämljed:jäämalǥ
 * LEXICON V0_JAEMLJED  jämljed:jäämalǥ
 inflection_type="3"
-
-
 
 * LEXICON V_POAGXSTED  påǥsted:pååǥǥast
 * LEXICON V0_POAGXSTED  påǥsted:pååǥǥast
 lepsted+V+Inf
 * *lẹẹppast^Pen^VV2V^Pen^CC2CAllegro^RmVow*
 * *lẹ0p00st^Pen^VV2V^Pen^CC2CAllegro^RmVow*
-
 
 * LEXICON V_JOARGXSTED  jårǥsted:jåårǥast
 * LEXICON IV_JOARGXSTED  jårǥsted:jåårǥast
@@ -2451,7 +2321,6 @@ gradation: no
 allegro: yes
 similar_to: 
 
-
 * LEXICON V_JEAELSTED  jeälsted:jeälast
 * LEXICON IV_JEAELSTED  jeälsted:jeälast
 * LEXICON TV_JEAELSTED  jeälsted:jeälast
@@ -2464,7 +2333,6 @@ similar_to:
 * LEXICON V0_CVICCKHED   cviccǩed:cviccâk
 gradation: no
 
-
 * LEXICON V_MUAERSKHED  muärsǩed:muärask
 * LEXICON V0_MUAERSKHED  muärsǩed:muärask
 inflection_type="3"
@@ -2476,28 +2344,22 @@ similar_to:
 * LEXICON V0_TOINXSKHED  tõiŋsǩed:tõõiŋâsk
 inflection_type="3"
 
-
 * LEXICON V_SHORRNED  šorrned:šorran
 * LEXICON IV_SHORRNED  šorrned:šorran
 * LEXICON TV_SHORRNED  šorrned:šorran
 * LEXICON V0_SHORRNED  šorrned:šorran
 gradation: no
 
-
 ### CLASS 2 HIGH VOWEL, PALATALIZATION
-
 
 * LEXICON V_CHIEQKHRDED  čieʹǩrded:čieʹǩǩerd
 * LEXICON TV_CHIEQKHRDED  čieʹǩrded:čieʹǩǩerd
 * LEXICON V0_CHIEQKHRDED  čieʹǩrded:čieʹǩǩerd
 
-
 ### CLASS 2 LOW VOWEL, PALATALIZATION
 * LEXICON V_NJAQMMSHED  njâʹmmšed:njâʹmmeš
 * LEXICON IV_NJAQMMSHED  njâʹmmšed:njâʹmmeš
 * LEXICON V0_NJAQMMSHED  njâʹmmšed:njâʹmmeš
-
-
 
 * LEXICON V_KOAQMRDED  kåʹmrded:kååʹmmerd
 * LEXICON IV_KOAQMRDED  kåʹmrded:kååʹmmerd
@@ -2513,38 +2375,27 @@ gradation: no
 * LEXICON TV_KHEEQRJTED  ǩeeʹrjted:ǩeeʹrjet
 * LEXICON V0_KHEEQRJTED  ǩeeʹrjted:ǩeeʹrjet
 
-
 * LEXICON V_AUQCSTED  äuʹcsted:äuʹccest
 * LEXICON V0_AUQCSTED  äuʹcsted:äuʹccest
-
 
 * LEXICON V_VUAQDHSTED  vuäʹđsted:vuäʹđest
 * LEXICON V0_VUAQDHSTED  vuäʹđsted:vuäʹđest
 
-
 * LEXICON V_VUAQPSTED  vuäʹpsted:vuäʹppest
 * LEXICON V0_VUAQPSTED  vuäʹpsted:vuäʹppest
 
-
 * LEXICON V_NJAQDSTED  njâʹdsted:njââʹddest
 * LEXICON V0_NJAQDSTED  njâʹdsted:njââʹddest
-
 
 * LEXICON IV_AAIQJLDED  ääiʹjlded:ääiʹjeld
 * LEXICON TV_AAIQJLDED  ääiʹjlded:ääiʹjeld
 * LEXICON V0_AAIQJLDED  ääiʹjlded:ääiʹjeld
 
-
 * LEXICON V_KAQRJSTED  käʹrjsted:kääʹrjest
 * LEXICON IV_KAQRJSTED  käʹrjsted:kääʹrjest
 * LEXICON V0_KAQRJSTED  käʹrjsted:kääʹrjest
 
-
-
-
 ### CLASS 3 HIGH VOWEL, NO PALATALIZATION
-
-
 
 ### CLASS 3 LOW VOWEL, NO PALATALIZATION
 * LEXICON V_KUYDHDHDHJED  kuâđđjed:kuâđˈđ
@@ -2554,14 +2405,11 @@ gradation: no
 
 * :%>%{ʼØ%}j VSUF-VUEJTED-ELSE ;  kuâđˈđjed
 
-
 * LEXICON V_JEAELLLJED  jeälljed:jeälˈl
 * LEXICON IV_JEAELLLJED  jeälljed:jeälˈl
 * LEXICON V0_JEAELLLJED  jeälljed:jeälˈl
 
 * :%>%{ʼØ%}j VSUF-VUEJTED-ELSE ;  jeälˈljed
-
-
 
 ### CLASS 3 HIGH VOWEL, PALATALIZATION
 * LEXICON V_VOQLLJED  võʹllʼjed:võʹll
@@ -2571,14 +2419,7 @@ gradation: no
 * :e	VSUF-VUEJTED-IND-PRS-CONNEG ;	 võʹlle
 * :ai VSUF-VUEJTED-IND-PRS-SG3 ;  võʹllai
 
-
-
-
-
-
-
 ### CLASS 3 LOW VOWEL, PALATALIZATION
-
 
 ### CLASS 3 HIGH VOWEL, NO PALATALIZATION, GH
 * LEXICON V_KUOCCJED  kuõccjed:kuõcc
@@ -2586,20 +2427,7 @@ gradation: no
 * LEXICON TV_KUOCCJED  kuõccjed:kuõcc
 * LEXICON V0_KUOCCJED  kuõccjed:kuõcc
 
-
-
-
-
-
 ### CLASS 3 LOW VOWEL, NO PALATALIZATION, GH
-
-
-
-
-
-
-
-
 
 ### CLASS 4 HIGH VOWEL, NO PALATALIZATION
 
@@ -2609,11 +2437,8 @@ gradation: no
 * LEXICON V0_SILTTEED  siltteed:siltt
 * : VSUF-TEEQMEED-ELSE ;  
 
-
-
 ### CLASS 4 LOW VOWEL, NO PALATALIZATION
 * : VSUF-TEEQMEED-ELSE ; 
-
 
 ### CLASS 4 HIGH VOWEL,  PALATALIZATION
 
@@ -2621,106 +2446,32 @@ gradation: no
 
 * : VSUF-TEEQMEED-ELSE ; 
 
-
-
 Not yet written
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * +Ind+Prs+Sg3:%>ad K ;  teeʹmad
 
-
-
-
-
-
-
-
 assuming stem kååʹmmerded
-
-
-
-
 
 assuming stem **kååʹmmerd**
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * LEXICON VSUF-IMPRT-PL3_ED  puätˈtaz
-
-
 
 * LEXICON FOR-VSUF-PRSPRC_ED  (11) 
 Vowel_raising, palatalization, Cons-grade-retension
 
-
 VSUF-I-POTKOND_YD, VSUF-I-POTKOND_AD and VSUF-POTENTIAL_ED come here
 
-
-
-
-
-
-
-
 * : DenominalAdjsCShort ;  (Feist 2012: 200-201) +Der+Der/teqm
-
-
 
 * LEXICON VSUF-CONDITIONAL_ED   (7)
 
 * LEXICON VSUF-IND-PRS-CONNEG_ED  (6)
 
-
 * +Use/NGminip+Use/NG+Der+Der/st+V:»st VSUF-VUEJTED-ELSE ;  no allegro
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/affixes/verbs.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/affixes/verbs.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/affixes/verbs.lexc)</small>
+
+---
+

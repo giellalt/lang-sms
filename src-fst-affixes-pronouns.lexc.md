@@ -3,13 +3,6 @@
 
 The lexicon *PRON_*, which is actually not needed, as pronouns get +Pron tag earlier.
 
-
-
-
-
-
-
-
 * +Nom:ij		K ;  mij, tij, sij
 * +Gen:ij	      K ;  mij, tij, sij
 * +Gen+Use/NGminip+Use/NG+Use/SpellNoSugg:iʹjji    K ;  miʹjji, tiʹjji, siʹjji
@@ -19,11 +12,7 @@ The lexicon *PRON_*, which is actually not needed, as pronouns get +Pron tag ear
 * +Com:ijvuiʹm     K ;  mijvuiʹm, tijvuiʹm, sijvuiʹm
 * +Abe:ijtää	      K ;  mijtää, tijtää, sijtää
 
-
-
-
 # Pronouns
-
 
 Pointing to all the pronominal subgroups
 
@@ -33,17 +22,11 @@ Pointing to all the pronominal subgroups
 *  Interrogative ; 
 *  Relative ;	 kååʹtt, mii
 
-
 ## Personal pronouns
-
 
 Splitting according to person
 
-
-
-
 ## Demonstrative pronouns
-
 
 * LEXICON Demonstrative 
 * tõt+Pron+Dem:t  	TOTDEM ;  The Epsilon has been removed 2015-05-13
@@ -64,23 +47,7 @@ Splitting according to person
 
 jiõčč: 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * LEXICON Reflexive 
-
-
 
 Completion needed 2015-09-19
 
@@ -100,9 +67,6 @@ Completion needed 2015-09-19
 
 * LEXICON RCOMPLPX 
 
-
-
-
 ## Interrogative pronouns
 **LEXICON PRON-INTERR_** is referred to from the xml file, hence does not assign **+Pron** tag.
 * +Interr: # ;
@@ -110,7 +74,6 @@ Completion needed 2015-09-19
 * LEXICON Interrogative  is referred to from `pronouns.lexc`, hence assigns **+Pron** tag.
 * mii+Pron+Interr:m	MK ;  The Epsilon  inserted 2015-02-11
 * ǩii+Pron+Interr:ǩ	MK ;  The Epsilon  inserted 2015-02-11
-
 
 * LEXICON MK 
 
@@ -138,23 +101,19 @@ Completion needed 2015-09-19
 
 * LEXICON DISTR-MK-low 
 
-
-
-
 * LEXICON Relative 
 
 * LEXICON Indefinite 
 
-
-
 * LEXICON Distributive 
-
-
 
 ### SPATIAL PRONOUNS
 
-
-
 ### MISC
+
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/pronouns.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/affixes/pronouns.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/affixes/pronouns.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/affixes/pronouns.lexc)</small>
+
+---
+

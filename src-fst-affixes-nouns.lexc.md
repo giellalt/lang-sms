@@ -8,8 +8,6 @@ This file documents the Skolt Saami noun morphology, lexicon by lexicon.
 
 * LEXICON N_  FOR (STILL) UNCLASSIFIED INCOMING NOUNS.
 
-
-
 IRREGULAR NOUN nijdd
 * LEXICON N_NIJDD  nijdd:ni
 
@@ -27,11 +25,8 @@ strong_geminate, long_vowel
 * +Der+Der/Dimin+N:õđ N_MUORYZH-WITHOUT-PAL ;   niõđ-
 * +Der+Der/Dimin+N:õ%{ʹØ%}đ%^PAL N_MUORYZH-WITH-PAL ;   niõʹđ-
 
-
 * +Err/GenreLeudd:õđâ SG-ABE/ACC/GEN-PL-NOM ;      niõđ Leudd 2018-09-20
 * +Err/GenreLeudd:õđâ SG-COM_N ;  Leudd 2018-09-20
-
-
 
 *nijdd # examples:*
 * *nijdd:* `nijdd+N+Sg+Nom`
@@ -53,8 +48,6 @@ strong_geminate, long_vowel
 * *niõđitaa:* `nijdd+N+Pl+Abe`
 * *niõđâž:* `nijdd+N+Der+Der/Dimin+N+Sg+Nom`
 * *niõʹđe:* `nijdd+N+Der+Der/Dimin+N+Sg+Gen`
-
-
 
 CLASS 1 HIGH VOWEL, NO PALATALIZATION NOMINALS
 * LEXICON N_PAPP  papp:papp
@@ -116,7 +109,6 @@ e.g. +Sg+Loc+PxSg3 pp:p papstes
 * :%^V2VV PL-OBL ;       paappi, paappid, paappid, paappin, paappivuiʹm, paappitaa
 * :%>â ESS/PAR ;                   pappân, pappâd
 
-
 *papp #  examples:*
 * *papp:* `papp+N+Sg+Nom`
 * *paapp:* `papp+N+Sg+Gen`
@@ -138,7 +130,6 @@ e.g. +Sg+Loc+PxSg3 pp:p papstes
 * *paappitaa:* `papp+N+Pl+Abe`
 * *paappâž:* `papp+N+Der+Der/Dimin+N+Sg+Nom`
 * *paaʹppe:* `papp+N+Der+Der/Dimin+N+Sg+Gen`
-
 
 * LEXICON N_ALGG  põrtt:põ%^1VOW%{ʹØ%}rtt
 N_1Y-VXYY
@@ -178,13 +169,11 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^V2VV%^XYY2XY N_KUUZZYZH-WITHOUT-PAL ;   põõrt-
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^XYY2XY N_KUUZZYZH-WITH-PAL ;   põõʹrt-
 
-
 * LEXICON N_ALGG-PL  põõrt:põrtt
 * : R ;                            põrtt
 * :%^V2VV%^XYY2XY PL-NOM ;                 põõrt
 * :%>â ESS/PAR ;                                   põrttân
 * :%^V2VV%^XYY2XY PL-OBL ;                         põõrti
-
 
 *algg #  examples:*
 * *algg:* `algg+N+Sg+Nom`
@@ -244,13 +233,11 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^V2VV%^XYY2XY N_KUUZZYZH-WITHOUT-PAL ;   aaut-
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^XYY2XY N_KUUZZYZH-WITH-PAL ;   aauʹt-
 
-
 * LEXICON N_AUTT-PL  aaut:autt
 * : R ;                            autt
 * :%>â ESS/PAR ;                                   auttân
 * :%^V2VV%^XYY2XY PL-NOM ;                 aaut
 * :%^V2VV%^XYY2XY PL-OBL ;                         aauti
-
 
 *autt # examples:*
 * *autt:* `autt+N+Sg+Nom`
@@ -272,7 +259,6 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *aautitaa:* `autt+N+Pl+Abe`
 * *aautâž:* `autt+N+Der+Der/Dimin+N+Sg+Nom`
 * *aauʹte:* `autt+N+Der+Der/Dimin+N+Sg+Gen`
-
 
 * LEXICON N_VAHTT  vahtt:va%^1VOW%{ʹØ%}h%{ʹØ%}tt
 N_1Y-VHCC cf. SIJDD
@@ -308,8 +294,6 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^V2VV%^XYY2VY N_KUUZZYZH-WITHOUT-PAL ;   vaaut-
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^XYY2VY N_KUUZZYZH-WITH-PAL ;   vaauʹt-
 
-
-
 *vahtt # examples:*
 * *vahtt:* `vahtt+N+Sg+Nom`
 * *vaaut:* `vahtt+N+Sg+Gen`
@@ -330,8 +314,6 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *vaautitaa:* `vahtt+N+Pl+Abe`
 * *vaautâž:* `vahtt+N+Der+Der/Dimin+N+Sg+Nom`
 * *vaauʹte:* `vahtt+N+Der+Der/Dimin+N+Sg+Gen`
-
-
 
 * LEXICON N_KUSS  kuss:ku%^1VOW%{ʹØ%}ss
 N_1Y-VKK-HVVGG
@@ -369,8 +351,6 @@ similar_to:
 * +Der+Der/Dimin+N:%^V2VV%^KK2GG N_KUUZZYZH-WITHOUT-PAL ;   kuuzz-
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^KK2GG N_KUUZZYZH-WITH-PAL ;   kuuʹzz-
 
-
-
 *kuss # examples:*
 * *kuss:* `kuss+N+Sg+Nom`
 * *kuuzz:* `kuss+N+Sg+Gen`
@@ -392,7 +372,6 @@ similar_to:
 * *kuuzzâž:* `kuss+N+Der+Der/Dimin+N+Sg+Nom`
 * *kuuʹzze:* `kuss+N+Der+Der/Dimin+N+Sg+Gen`
 
-
 * LEXICON N_RUOCCC  ruõcc:ruõ%{ʹØ%}cˈc
 N_1Y-VWCCC-CC
 * LEXICON NMN_RUOCCC  ruõcc:ruõcˈc
@@ -412,8 +391,6 @@ THIS IS NOT THE SAME AS N_MUORR
 
 * +Der+Der/Dimin+N:%^CCC2CC N_KUUZZYZH-WITHOUT-PAL ;   ruõcc-
 * +Der+Der/Dimin+N:%^PAL%^CCC2CC N_KUUZZYZH-WITH-PAL ;   ruõʹcc-
-
-
 
 *ruõcc # examples:*
 * *ruõcˈc:* `ruõcc+N+Sg+Nom`
@@ -436,7 +413,6 @@ THIS IS NOT THE SAME AS N_MUORR
 * *ruõccitaa:* `ruõcc+N+Pl+Abe`
 * *ruõccâž:* `ruõcc+N+Der+Der/Dimin+N+Sg+Nom`
 * *ruõʹcce:* `ruõcc+N+Der+Der/Dimin+N+Sg+Gen`
-
 
 * LEXICON N_CHUOSHKK  čuõškk:čuõ%{ʹØ%}škk
 N_1Y-VWXYY
@@ -474,13 +450,11 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^XYY2XY N_MUORYZH-WITHOUT-PAL ;   čuõsk-
 * +Der+Der/Dimin+N:%^PAL%^XYY2XY N_MUORYZH-WITH-PAL ;   čuõʹsǩ-
 
-
 * LEXICON N_CHUOSHKK-PL  čuõšk:čuõškk
 * : R ;                    (1) čuõskk
 * :%>â ESS/PAR ;                           (6) čuõskkân
 * :%^XYY2XY PL-NOM ;       (2) čuõsk
 * :%^XYY2XY PL-OBL ;               (5) čuõskin
-
 
 *čuõškk # examples:*
 * *čuõškk:* `čuõškk+N+Sg+Nom`
@@ -503,8 +477,6 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *čuõškitaa:* `čuõškk+N+Pl+Abe`
 * *čuõškâž:* `čuõškk+N+Der+Der/Dimin+N+Sg+Nom`
 * *čuõʹšǩe:* `čuõškk+N+Der+Der/Dimin+N+Sg+Gen`
-
-
 
 * LEXICON N_RUOIDD  ruõidd:ruõi%{ʹØ%}dd
 N_1Y-VWUCC
@@ -540,8 +512,6 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^XYY2XY N_MUORYZH-WITHOUT-PAL ;   ruõid-
 * +Der+Der/Dimin+N:%^PAL%^XYY2XY N_MUORYZH-WITH-PAL ;   ruõiʹd-
 
-
-
 *ruõidd # examples:*
 * *ruõidd:* `ruõidd+N+Sg+Nom`
 * *ruõid:* `ruõidd+N+Sg+Gen`
@@ -563,7 +533,6 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *ruõiditaa:* `ruõidd+N+Pl+Abe`
 * *ruõidâž:* `ruõidd+N+Der+Der/Dimin+N+Sg+Nom`
 * *ruõiʹde:* `ruõidd+N+Der+Der/Dimin+N+Sg+Gen`
-
 
 * LEXICON N_PUOAVV  puåvv:puå%{ʹØ%}vv
 N_1Y-VWCC
@@ -604,8 +573,6 @@ puåvv:puåvv
 * +Der+Der/Dimin+N:%^CC2C N_MUORYZH-WITHOUT-PAL ;   puåv-
 * +Der+Der/Dimin+N:%^PALE%^PAL%^CC2C N_MUORYZH-WITH-PAL ;   pueʹv-
 
-
-
 *puåvv #  examples:*
 * *puåvv:* `puåvv+N+Sg+Nom`
 * *puåv:* `puåvv+N+Sg+Gen`
@@ -643,8 +610,6 @@ N_1Y-VWCC
 
 * +Der+Der/Dimin+N:%^KK2GG N_MUORYZH-WITHOUT-PAL ;   liâǥǥ-
 * +Der+Der/Dimin+N:%^PALE%^PAL%^KK2GG N_MUORYZH-WITH-PAL ;   lieʹjj-
-
-
 
 *liâkk #  examples:*
 * *liâkk:* `liâkk+N+Sg+Nom`
@@ -707,8 +672,6 @@ siâkˈk:siâkˈk
 * +Der+Der/Dimin+N:%^CCC2CC N_KUUZZYZH-WITHOUT-PAL ;   siâkk-
 * +Der+Der/Dimin+N:%^PALE%^PAL%^CCC2CC N_KUUZZYZH-WITH-PAL ;   sieʹǩǩ-
 
-
-
 *siâkk # examples:*
 * *siâkˈk:* `siâkk+N+Sg+Nom`
 * *siâkk:* `siâkk+N+Sg+Gen`
@@ -747,8 +710,6 @@ N_1Y-VWCCC
 * +Der+Der/Dimin+N: N_KUUZZYZH-WITHOUT-PAL ;   smiâhˈh-
 * +Der+Der/Dimin+N:%^PALE%^PAL N_KUUZZYZH-WITH-PAL ;   smieʹhˈh-
 
-
-
 * LEXICON N_MIYRKK  sǩiâŋkk:sǩiâ%{ʹØ%}ŋkk
 N_1Y-VWXYY
 Sg_Nom: vow_di:vow_high:pal_no:cns_xyy
@@ -784,8 +745,6 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^XYY2XY N_MUORYZH-WITHOUT-PAL ;   sǩiâŋk-
 * +Der+Der/Dimin+N:%^PALE%^PAL%^XYY2XY N_MUORYZH-WITH-PAL ;   sǩieʹŋǩ-
 
-
-
 *miârkk # examples:*
 * *miârkk:* `miârkk+N+Sg+Nom`
 * *miârk:* `miârkk+N+Sg+Gen`
@@ -807,8 +766,6 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *miârkitaa:* `miârkk+N+Pl+Abe`
 * *miârkâž:* `miârkk+N+Der+Der/Dimin+N+Sg+Nom`
 * *mieʹrǩe:* `miârkk+N+Der+Der/Dimin+N+Sg+Gen`
-
-
 
 * LEXICON N_TOLL  toll:to%^1VOW%{ʹØ%}ll
 N_1Y-VCC-VVC
@@ -851,12 +808,10 @@ single_consonant, long_vowel, no_palatalization, high_stem_vowel
 single_consonant, long_vowel, palatalization, high_stem_vowel
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^CC2C N_KUUZZYZH-WITH-PAL ;   tooʹl-
 
-
 * : R ;  toll
 * :%>â ESS/PAR ;          tollân
 * :%^V2VV%^CC2C PL-NOM ;  tool
 * :%^V2VV%^CC2C PL-OBL ;  tooli, toolid, toolid, toolin, toolivuiʹm, toolitaa
-
 
 *toll #  examples:*
 * *toll:* `toll+N+Sg+Nom`
@@ -879,7 +834,6 @@ single_consonant, long_vowel, palatalization, high_stem_vowel
 * *toolitaa:* `toll+N+Pl+Abe`
 * *toolâž:* `toll+N+Der+Der/Dimin+N+Sg+Nom`
 * *tooʹle:* `toll+N+Der+Der/Dimin+N+Sg+Gen`
-
 
 * LEXICON N_SIJDD  sijdd:si%{ʹØ%}j%{ʹØ%}dd
 N_1Y-VJCC cf. _VAHTT
@@ -924,7 +878,6 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * :%^XYY2VY PL-OBL ;     siidi
 * :%>â ESS/PAR ;         sijddâd
 
-
 *sijdd # examples:*
 * *sijdd:* `sijdd+N+Sg+Nom`
 * *siid:* `sijdd+N+Sg+Gen`
@@ -945,10 +898,6 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *siiditaa:* `sijdd+N+Pl+Abe`
 * *siidâž:* `sijdd+N+Der+Der/Dimin+N+Sg+Nom`
 * *siiʹde:* `sijdd+N+Der+Der/Dimin+N+Sg+Gen`
-
-
-
-
 
 * LEXICON N_SAAKK  saakk:saa%{ʹØ%}kk
 N_1Y-VVKK
@@ -987,8 +936,6 @@ N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 * +Der+Der/Dimin+N:%^KK2GG N_KUUZZYZH-WITHOUT-PAL ;   saaǥǥ-
 * +Der+Der/Dimin+N:%^PAL%^KK2GG N_KUUZZYZH-WITH-PAL ;   saaʹjj-
 
-
-
 *saakk # examples:*
 * *saakk:* `saakk+N+Sg+Nom`
 * *saaǥǥ:* `saakk+N+Sg+Gen`
@@ -1010,7 +957,6 @@ N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 * *saaǥǥâž:* `saakk+N+Der+Der/Dimin+N+Sg+Nom`
 * *saaʹjje:* `saakk+N+Der+Der/Dimin+N+Sg+Gen`
 
-
 * LEXICON N_LUOSS  luõss:luõ%{ʹØ%}ss
 N_1Y-VWKK
 * LEXICON NMN_LUOSS  luõss:luõss
@@ -1030,9 +976,6 @@ THIS IS NOT THE SAME AS N_MUORR
 
 * +Der+Der/Dimin+N:%^KK2GG N_KUUZZYZH-WITHOUT-PAL ;   luõzz-
 * +Der+Der/Dimin+N:%^PAL%^KK2GG N_KUUZZYZH-WITH-PAL ;   luõʹzz-
-
-
-
 
 *luõss # examples:*
 * *luõss:* `luõss+N+Sg+Nom`
@@ -1054,8 +997,6 @@ THIS IS NOT THE SAME AS N_MUORR
 * *luõzzitaa:* `luõss+N+Pl+Abe`
 * *luõzzâž:* `luõss+N+Der+Der/Dimin+N+Sg+Nom`
 * *luõʹzze:* `luõss+N+Der+Der/Dimin+N+Sg+Gen`
-
-
 
 * LEXICON N_PAARR  paarr:paa%{ʹØ%}rr
 N_1Y-VVCC
@@ -1099,10 +1040,6 @@ N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 is for nouns with -âst Loc. N_Y-EPal2-21
 N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 
-
-
-
-
 *paarr # examples:*
 * *paarr:* `paarr+N+Sg+Nom`
 * *paar:* `paarr+N+Sg+Gen`
@@ -1124,7 +1061,6 @@ N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 * *paarâž:* `paarr+N+Der+Der/Dimin+N+Sg+Nom`
 * *paaʹre:* `paarr+N+Der+Der/Dimin+N+Sg+Gen`
 
-
 * LEXICON N_SHLAAJJ  šlaajj:šlaa%{ʹØ%}jj
 N_1Y-VVCC
 Sg_Nom: vow_mono:vow_long:vow_high:pal_no:cns_gem_jj_type
@@ -1134,7 +1070,6 @@ Sg_Nom: vow_mono:vow_long:vow_high:pal_no:cns_gem_jj_type
 * Yaml: **N-shlaajj**
 
 * :%^J2I%^CC2C SG-ABE/ACC/GEN-PL-NOM ;	 šlaai
-
 
 *šlaajj # examples:*
 * *šlaajj:* `šlaajj+N+Sg+Nom`
@@ -1213,7 +1148,6 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * :%^CC2C PL-NOM ;                 muõr
 * :%^CC2C PL-OBL ;                         muõri
 
-
 *muõrr # examples:*
 * *muõrr:* `muõrr+N+Sg+Nom`
 * *muõr:* `muõrr+N+Sg+Gen`
@@ -1235,7 +1169,6 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *muõrâž:* `muõrr+N+Der+Der/Dimin+N+Sg+Nom`
 * *muõʹre:* `muõrr+N+Der+Der/Dimin+N+Sg+Gen`
 
-
 * LEXICON N_KHIOJJ  ǩiõjj:ǩiõ%{ʹØ%}jj
 N_1Y-VWCC
 Sg_Nom: vow_di:vow_high:pal_no:cns_gem_jj_type
@@ -1245,7 +1178,6 @@ similar_to: N_TUYJJ
 ## FORMS
 * Yaml: **N-kjiojj**
 * +Use/NGminip+Use/NG:%^J2I%^CC2C SG-ABE/ACC/GEN-PL-NOM ;	 (2) Pl.Nom: ǩiõi
-
 
 *kuõjj # examples:*
 * *kuõjj:* `kuõjj+N+Sg+Nom`
@@ -1289,8 +1221,6 @@ similar_to: N_VUYHSS
 
 * +Der+Der/Dimin+N: N_MUORYZH-WITHOUT-PAL ;   miõhtt-
 * +Der+Der/Dimin+N:%^PAL N_MUORYZH-WITH-PAL ;   riiʹǩǩ-
-
-
 
 *miõhtt # examples:*
 * *miõhtt:* `miõhtt+N+Sg+Nom`
@@ -1354,8 +1284,6 @@ N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 * +Der+Der/Dimin+N:%^V2VV%^C2CC N_MUORYZH-WITHOUT-PAL ;   riikk-
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^C2CC N_MUORYZH-WITH-PAL ;   riiʹǩǩ-
 
-
-
 * LEXICON N_PLAAN  plaan:plaa%{ʹØ%}n
 N_1Y-VVC
 Sg_Ill="palatalization|e-final"
@@ -1375,19 +1303,15 @@ plaan:plaan
 * +Der+Der/Dimin+N: N_MUORYZH-WITHOUT-PAL ;   paar-
 * +Der+Der/Dimin+N:%^PAL N_MUORYZH-WITH-PAL ;   paaʹr-
 
-
-
 * LEXICON N_LOMAAKK  lomaakk:lomaa%{ʹØ%}kk
 N_1Y-VVKK
 Sg_Ill="palatalization|e-final"
-
 
 lomaakk:lomaakk
 * Yaml: **N-lomaakk**
 * +Der+Der/N2A+A:%^PAL N2A_LUOQSSI ;      N»A: lomaaʹǩǩi CHECKME
 * +Der+Der/Dimin+N: N_MUORYZH-WITHOUT-PAL ;   lomaakk-
 * +Der+Der/Dimin+N:%^PAL N_MUORYZH-WITH-PAL ;   lomaaʹǩǩ-
-
 
 CLASS 1 LOW VOWEL, MONOPHTHONG, NO PALATALIZATION NOMINALS
 ## a-stems
@@ -1450,8 +1374,6 @@ strong_geminate, short_vowel, no_palatalization, low_stem_vowel
 * : R ;		  pess
 * :%>a ESS/PAR ; 			  (6) Ess: pessan
 * :%^V2VV PL-NOM ;	  (2) Pl.Nom: peess
-
-
 
 * LEXICON N_SHOOMM  šoomm:šoomm
 N_1A-VVCC
@@ -1553,7 +1475,6 @@ grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 * :%^VV2V%^CC2CAllegro SG-LOC-PX_ALLEGRO ;  (10) lâj»
 Sg_Loc_Px..
 
-
 * LEXICON N_RAEAEKK  rääkk:rääkk
 N_1A-VVKK
 Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_gem_ss_type
@@ -1608,8 +1529,6 @@ grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
 grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
 * :%>a ESS/PAR ;  (6) Ess: rääkkan
 
-
-
 * LEXICON N_AELDD  äldd:äldd
 N_1A-VXYY
 Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_xyy
@@ -1653,14 +1572,12 @@ grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
 * +Der+Der/Dimin+N:%^V2VV%^VOWRaise%^XYY2XY N_PIISSUZH ;  (9) Dim.N.Sg.Nom: aalduž (2009: 312-313)
 * +Der+Der/Dimin+N:%^V2VV%^XYY2XY%> N_PEESSAZH ;   (9) Dim.N.Sg.Nom: ääldaž
 
-
 grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 * :%^XYY2XY SG-LOC-PX_ALLEGRO ;	   (10) äld
 Sg_Loc_Px..
 
 * :%>a ESS/PAR ;                           (6) älddan
 * :%^V2VV%^XYY2XY A-STEM_PL-NOM ;  (2) ääld
-
 
 *äldd # examples:*
 * *äldd:* `äldd+N+Sg+Nom`
@@ -1682,7 +1599,6 @@ Sg_Loc_Px..
 * *ääldaivuiʹm:* `äldd+N+Pl+Com`
 * *ääldaitaa:* `äldd+N+Pl+Abe`
 * *aalduž:* `äldd+N+Der+Der/Dimin+N+Sg+Nom`
-
 
 * LEXICON A-STEM_SG-NOM  (1)
 * LEXICON A-STEM_SG-ABE/ACC/GEN-PL-NOM   (2)
@@ -1727,7 +1643,6 @@ Ess_Px..., Sg_Ill..., N»A
 
 * +Der+Der/Dimin+N:%^VOWRaise%^XYY2XY%> N_PIISSUZH ;  (9) Dim.N.Sg.Nom: piiǥuž
 * +Der+Der/Dimin+N:%^V2VV%^XYY2XY%> N_PEESSAZH ;   (9) Dim.N.Sg.Nom: pẹẹiǥaž
-
 
 * :%^XYY2XY SG-LOC-PX_ALLEGRO ;  (10) peiǥ»
 Sg_Loc_Px..
@@ -1786,11 +1701,9 @@ grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
 * +Der+Der/Dimin+N:%^V2VV%^VOWRaise%^XYY2VY%> N_PIISSUZH ;  (9) Dim.N.Sg.Nom: kooutuž
 * +Der+Der/Dimin+N:%^V2VV%^XYY2VY%> N_PEESSAZH ;   (9) Dim.N.Sg.Nom: kååutaž
 
-
 grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 * :%^XYY2VY SG-LOC-PX_ALLEGRO ;  (10) kåut»
 Sg_Loc_Px..
-
 
 CLASS 1 LOW VOWEL, DIPHTHONG, NO PALATALIZATION NOMINALS
 
@@ -1843,7 +1756,6 @@ grade: strengthened (short_vowel, long_cluster), vowel: neutral (low)
 * : A-STEM-PX-STRENGTHEN ;            (5) meârkk
 Ess_Px..., Sg_Ill..., N»A
 
-
 grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
 
 grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
@@ -1886,7 +1798,6 @@ grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
 grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 * :%^XYY2VY SG-LOC-PX_ALLEGRO ;  (10) vuâus»
 Sg_Loc_Px..
-
 
 * LEXICON N_VUYRR  vuârr:vuârr
 N_1A-VWCC
@@ -1934,7 +1845,6 @@ Sg_Loc_Px..
 
 grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
 
-
 * LEXICON N_TUYJJ  tuâjj:tuâjj
 N_1A-VWCC
 Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_gem_jj_type
@@ -1959,7 +1869,6 @@ N_A-URaise3-32
 * +Use/NGminip+Use/NG:%^PALẸ SG-NOM ;  tuẹjj
 * +Use/NGminip+Use/NG:%^PALẸ%^CC2C SG-GEN ;		 (2) tuẹj
 * +Use/NGminip+Use/NG:%^J2I%^CC2C SG-GEN ;		 (2) tuâi
-
 
 * LEXICON N_TUEJJ  tuejj:tuâjj
 N_1A-VWCC
@@ -2075,11 +1984,9 @@ Ess_Px..., Sg_Ill..., N»A
 * :%^CCC2CC SG-LOC-PX_ALLEGRO ;  (10) neävv» CHECKME
 Sg_Loc_Px..
 
-
 * : R ;                     neävˈv
 * :%^CCC2CC PL-NOM ;         neävv
 * :%^CCC2CC%>a PL-OBL ;                    neävvai
-
 
 N_1A-VWCCC cf. _NEAVVV
 * Yaml: **N-peyttt**
@@ -2103,7 +2010,6 @@ Ess_Px..., Sg_Ill..., N»A
 
 * :%^CCC2CC SG-LOC-PX_ALLEGRO ;  (10) neävv» CHECKME
 Sg_Loc_Px..
-
 
 * LEXICON N_PEAELDD  peäldd:peäldd
 N_1A-VWXYY
@@ -2148,7 +2054,6 @@ Ess_Px..., Sg_Ill..., N»A
 * :%^XYY2XY SG-LOC-PX_ALLEGRO ;  (10) peäld»
 Sg_Loc_Px..
 
-
 * LEXICON N_TUOAIMM  tuåimm:tuåimm
 N_1A-VWXYY
 Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_vyy
@@ -2192,11 +2097,9 @@ grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
 * +Der+Der/Dimin+N:%^VOWRaise%^XYY2XY N_PIISSUZH ;  (9) tuoimuž (2009: 312-313)
 * +Der+Der/Dimin+N:%^XYY2XY%> N_PEESSAZH ;   (9) Dim.N.Sg.Nom: tuåimaž
 
-
 grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 * :%^XYY2XY SG-LOC-PX_ALLEGRO ;	   (5) tuåim
 Sg_Loc_Px..
-
 
 * LEXICON N_KAPTEAEN  kapteän:kapteän
 N_1A-VWC
@@ -2239,8 +2142,6 @@ Sg_Loc_Px..
 * :%^V2VV%^PAL%> PL-OBL ;			 virveʹli
 * +Der+Der/Dimin+N:%^V2VV N_KUYLAZH ;		 virvẹẹlaž
 
-
-
 * LEXICON N_MEER  meer:meer
 Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_sing
 Is for nouns with *-ast* Loc, No gradation
@@ -2268,7 +2169,6 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * :%>a PL-OBL ;			 meerai
 * +Der+Der/Dimin+N: N_PIISSUZH ;		 meeruž
 * +Der+Der/Dimin+N: N_PEESSAZH ;   (9) Dim.N.Sg.Nom: mẹẹraž
-
 
 * LEXICON N_VAEAEZHZH  vääžž:vääžž
 Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_gem_dd_type
@@ -2298,7 +2198,6 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^VOWRaise N_PIISSUZH ;	 vaažžuž
 * +Der+Der/Dimin+N: N_PEESSAZH ;   (9) Dim.N.Sg.Nom: vääžžaž
 * +Use/NGminip+Use/NG+Der+Der/Dimin+N: N_KUYLAZH ;   	 vääžžaž
-
 
 * LEXICON N_PLEYN  pleân:pleân
 N_1A-VWC
@@ -2347,7 +2246,6 @@ grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
 grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 * : SG-LOC-PX ;      (10) äld
 Sg_Loc_Px..
-
 
 normative = PẸSS 
 Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_gem
@@ -2399,7 +2297,6 @@ grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 * :%^VV2V%^CC2CAllegro SG-LOC-PX_ALLEGRO ;      (5) aptek
 Sg_Loc_Px..
 
-
 * LEXICON N_LAEAEMPA  läämpa:lämpp
 two-syllable
 Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_gem
@@ -2407,7 +2304,6 @@ Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_gem
 * +Der+Der/Dimin+N:%^V2VV%^XYY2XY%> N_PEESSAZH ;   (9) Dim.N.Sg.Nom: läämpaž
 
 * Yaml: **N-uulla**
-
 
 CLASS 1 HIGH VOWEL TYPE, NO PALATALIZATION NOMINALS
 * LEXICON NMN_NELLJ  nellj:nẹllj
@@ -2553,7 +2449,6 @@ NumContLex="1.113"
 * :%^VV2V%^PAL E-STEM-PX-ALLEGRO ;  (11) stuʹl-
 * :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) nuʹbb Ess+Px..
 
-
 * LEXICON N_KUQRCHCH  kuʹrčč:kurčč
 N_1E-UQXYY
 Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_xyy
@@ -2605,7 +2500,6 @@ NumContLex="1.113"
 * :%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) kuʹrč-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) kuʹrčč Ess+Px..
 
-
 *puiʹcc # examples:*
 * *puiʹcc:* `puiʹcc+N+Sg+Nom`
 * *puuiʹc:* `puiʹcc+N+Sg+Gen`
@@ -2626,7 +2520,6 @@ NumContLex="1.113"
 * *puuiʹcivuiʹm:* `puiʹcc+N+Pl+Com`
 * *puuiʹcitaa:* `puiʹcc+N+Pl+Abe`
 * *pooicaž:* `puiʹcc+N+Der+Der/Dimin+N+Sg+Nom`
-
 
 Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_xyy
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -2694,7 +2587,6 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^VV2V%^PAL%^XYY2VY E-STEM-PX-ALLEGRO ;  (11) juʹj-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) juʹvjj Ess+Px..
 
-
 * LEXICON N_VUEQSS   vueʹss:vuâss
 N_1E-VWQKK
 Sg_Nom: vow_di:vow_short:vow_high_u:pal_yes:cns_gem
@@ -2714,11 +2606,9 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 ## FORMS
 * Yaml: **N-vuess**
 
-
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) vuâss-
 * :%^PALE%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) vueʹss-
 * :%^PALE%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) vueʹsˈs Ess+Px..
-
 
 * LEXICON N_BIEQSS   bieʹss:beâss
 Sg_Nom: vow_di:vow_short:vow_high_u:pal_yes:cns_gem
@@ -2737,7 +2627,6 @@ Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 ## FORMS
 * Yaml: **N-biess**
-
 
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) beâss-
 * :%^PALE%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) bieʹss-
@@ -2761,11 +2650,9 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 ## FORMS
 * Yaml: **N-skhierr**
 
-
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) beâss-
 * :%^PALE%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) sǩieʹrs-
 * :%^PALE%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) sǩieʹrˈs- Ess+Px..
-
 
 * LEXICON N_SUEQJJ   sueʹjj:suâjj
 Sg_Nom: vow_di:vow_short:vow_high_u:pal_yes:cns_gem
@@ -2785,7 +2672,6 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 ## FORMS
 similar_to: N_KHIOJJ, N_TUYJJ
 * Yaml: **N-suejj**
-
 
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) suâjj-
 * :%^PALE%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) sueʹj-
@@ -2813,7 +2699,6 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) juâlgg-
 * :%^PALE%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) jueʹlj-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) jueʹlǧǧ Ess+Px..
-
 
 * :%^PALE%^PAL SG-ACC ;  Num+Sg+Acc: kueʹhtt
 * :%^PALE%^PAL%^XYY2IY SG-ABE ;  Num+Sg+Gen: kueiʹt
@@ -2863,7 +2748,6 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) kuâll-
 * :%^PALE%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) kueʹl-
 * :%^PALE%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) kueʹlˈl Ess+Px..
-
 
 * LEXICON N_KUEQSSS  kueʹsˈs:kuâsˈs
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
@@ -2976,7 +2860,6 @@ Is for nouns with *-est* Loc, Extra long vowel
 * +Use/NGminip+Use/NG:%^VOWRaise%^PALE%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) mueʹrj-
 * :%^PALE%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) sueiʹnn- Ess+Px..
 
-
 * LEXICON N_MUEQRJJ  mueʹrjj:muâ%{ʹØ%}rjj
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (vowel shift)
@@ -3033,9 +2916,6 @@ Is for nouns with *-est* Loc, Extra long vowel
 * LEXICON NMN_MUQZEI  muʹzei:muʹze
 muʹzei:muʹze
 * Yaml: **N-tuodhshteei**
-
-
-
 
 * LEXICON N_SYSTEEQM  uʹčteeʹl:uʹčtẹẹ%{ʹØ%}l
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -3098,7 +2978,6 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^PAL E-STEM-PX-ALLEGRO ;  (11) kaneʹl-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) kaneʹl Ess+Px..
 
-
 * LEXICON N_KHIEQMNN  ǩieʹmnn:ǩeâmnn
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (vowel shift)
@@ -3131,8 +3010,6 @@ Is for nouns with *-est* Loc, Extra long vowel
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) ǩeâmnn-
 * :%^VOWRaise%^PALE%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) kieʹmn-
 * :%^VOWRaise%^PALE%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) kieʹmnn Ess+Px..
-
-
 
 CLASS 1 LOW VOWEL, PALATALIZATION, ILLATIVE IN U NOMINALS
 
@@ -3190,8 +3067,6 @@ strong_geminate, long_vowel, depalatalization, low_stem_vowel
 * :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) väʹl-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) väʹll Ess+Px..
 
-
-
 * LEXICON N_EQCHCH  eʹčč:ẹ%^1VOWčč
 vowel_shift: no
 gradation: yes
@@ -3246,7 +3121,6 @@ NumContLex="1.113"
 * :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) eʹǩ-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) eʹǩǩ Ess+Px..
 
-
 * LEXICON N_AQVV  äʹvv:ävv
 V1ʹC1C1
 vowel: monophthong
@@ -3273,7 +3147,6 @@ NumContLex="1.113"
 * :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) äʹv-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) äʹvv Ess+Px..
 
-
 * LEXICON N_STAQLLJ  stäʹllj:ställj
 N_1E-VQCC
 vowel: monophthong
@@ -3287,7 +3160,6 @@ NumContLex="1.113"
 * :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) stäʹlj-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) stäʹllj Ess+Px..
 
-
 * LEXICON N_PEQLLJ  peʹllj:pẹ%^1VOW%{ʹØ%}llj
 
 vowel: monophthong
@@ -3297,7 +3169,6 @@ gradation: yes
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) pellj-
 * :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) peʹlj-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) peʹllj Ess+Px..
-
 
 * LEXICON N_AQKHKH  äʹǩǩ:äkk
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204, 329)
@@ -3322,7 +3193,6 @@ NumContLex="1.113"
 * :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) äʹǩ-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) äʹǩǩ Ess+Px..
 
-
 * LEXICON N_SAAQMM  sääʹmm:säämm
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
 ## 1.3 Sg.Loc in -est (vowel shift)
@@ -3345,8 +3215,6 @@ NumContLex="1.113"
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) säämm-
 * :%^VV2V%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) säʹm-
 * :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) säʹmm Ess+Px..
-
-
 
 * LEXICON N_CHAAQCC  čääʹcc:čääcc
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
@@ -3388,7 +3256,6 @@ NumContLex="1.113"
 * :%^VOWRaise%^PAL%^KK2GG E-STEM_PL-OBL ;           (5) čaaʼʒʒin
 * :%^PAL%>e ESS/PAR ;                               (6) čääʼccen
 
-
 * LEXICON N_EEQKHKH  eeʹǩǩ:ẹẹkk
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
 ## 1.3 Sg.Loc in -est (vowel shift)
@@ -3424,7 +3291,6 @@ NumContLex="1.113"
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) ẹẹkk-
 * :%^VV2V%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) eʹǩ-
 * :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) eʹǩǩ Ess+Px..
-
 
 * LEXICON N_TEEQMM  teeʹmm:teemm
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
@@ -3467,7 +3333,6 @@ NumContLex="1.113"
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) pââjj-
 * :%^VV2V%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) pâʹj-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) pâʹjj- Ess+Px..
-
 
 * LEXICON N_KAQLBB  käʹlbb:kälbb âʹlǧǧ:âlgg
 similar_to: N_ALGG
@@ -3541,7 +3406,6 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) argumeʹnt-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) argumeʹntt- Ess+Px..
 
-
 * LEXICON N_PAIQKHKH  päiʹǩǩ:päikk
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (vowel shift)
@@ -3577,7 +3441,6 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) päiʹǩ-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) päiʹǩǩ- Ess+Px..
 
-
 *päiʹǩǩ #  examples:*
 * *päiʹǩǩ:* `päiʹǩǩ+N+Sg+Nom`
 * *pääiʹǩ:* `päiʹǩǩ+N+Sg+Gen`
@@ -3600,7 +3463,6 @@ Is for nouns with *-est* Loc, Extra long vowel
 * *pääikaž:* `päiʹǩǩ+N+Der+Der/Dimin+N+Sg+Nom`
 * *pääika:* `päiʹǩǩ+N+Der+Der/Dimin+N+Sg+Gen`
 
-
 * LEXICON N_LAEUQKHKH  päiʹǩǩ:päikk
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-paeikk**
@@ -3616,7 +3478,6 @@ Is for nouns with *-est* Loc, Extra long vowel
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) läukk-
 * :%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) läuʹǩ-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) läuʹǩǩ- Ess+Px..
-
 
 *läuʹǩǩ #  examples:*
 * *läuʹǩǩ:* `läuʹǩǩ+N+Sg+Nom`
@@ -3640,7 +3501,6 @@ Is for nouns with *-est* Loc, Extra long vowel
 * *lääukaž:* `läuʹǩǩ+N+Der+Der/Dimin+N+Sg+Nom`
 * *lääuka:* `läuʹǩǩ+N+Der+Der/Dimin+N+Sg+Gen`
 
-
 * LEXICON N_HAAQSKH  hääʹsǩ:hää%{ʹØ%}sk
 * Yaml: **N-haeaesk**
 * :%^PAL E-STEM_SG-NOM ;		   (1) Sg.Nom: hääʹsǩ
@@ -3655,7 +3515,6 @@ Is for nouns with *-est* Loc, Extra long vowel
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) hääsk-
 * :%^PAL E-STEM-PX-ALLEGRO ;  (11) hääʹsǩ-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) hääʹsǩ Ess+Px..
-
 
 * LEXICON N_SAIQMM  säiʹmm:säimm
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -3679,7 +3538,6 @@ Is for nouns with *-est* Loc, Extra long vowel
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) säimm-
 * :%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) säiʹm-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) säiʹmm Ess+Px..
-
 
 * LEXICON N_KHEQDD  ǩeʹdd:ǩe%^1VOWdd
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -3742,7 +3600,6 @@ NumContLex="1.113"
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-aâlghgh**
 
-
 *ǩeʹmnn #  examples:*
 * *ǩeʹmnn:* `ǩeʹmnn+N+Sg+Nom`
 * *ǩeeʹmn:* `ǩeʹmnn+N+Sg+Gen`
@@ -3764,8 +3621,6 @@ Is for nouns with *-est* Loc, Extra long vowel
 * *jaauʹritaa:* `ǩeʹmnn+N+Pl+Abe`
 * *jääuraž:* `ǩeʹmnn+N+Der+Der/Dimin+N+Sg+Nom`
 * *jääura:* `ǩeʹmnn+N+Der+Der/Dimin+N+Sg+Gen`
-
-
 
 * LEXICON N_LAAIQJ  lääiʹj:lääiǥ
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -3935,7 +3790,6 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^VV2V%^PAL%^XYY2VY E-STEM-PX-ALLEGRO ;  (11) ruʹs-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) ruʹhss Ess+Px..
 
-
 * LEXICON N_JAUQRR  jäuʹrr:jäurr
 similar_to: N_AUTT
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -3960,7 +3814,6 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^VV2V%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) jäuʹr 
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) jäuʹrr Ess+Px..
 
-
 *jäuʹrr #  examples:*
 * *jäuʹrr:* `jäuʹrr+N+Sg+Nom`
 * *jääuʹr:* `jäuʹrr+N+Sg+Gen`
@@ -3982,8 +3835,6 @@ Is for nouns with *-est* Loc, Extra long vowel
 * *jaauʹritaa:* `jäuʹrr+N+Pl+Abe`
 * *jääuraž:* `jäuʹrr+N+Der+Der/Dimin+N+Sg+Nom`
 * *jääura:* `jäuʹrr+N+Der+Der/Dimin+N+Sg+Gen`
-
-
 
 * LEXICON N_PEIQVV  peiʹvv:pẹ%^1VOWi%{ʹØ%}vv
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -4014,13 +3865,10 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * :%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) peiʹv-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) peiʹvv Ess+Px..
 
-
 * :%^PAL R ;	 (1) Sg.Nom: peiʹvv
 * :%^V2VV%^PAL%^XYY2XY PL-NOM ;  (2) Pl.Nom: peeiʼv
 * :%^PAL%>e ESS/PAR ; 		   (6) Ess: peiʹvven
 * :%^V2VV%^PAL%^XYY2XY PL-OBL ;  (8) Pl.Acc: peeiʹvid
-
-
 
 * LEXICON N_PIEAQSS  pieʹss:peäss
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
@@ -4042,11 +3890,9 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 ## (8) Pl.Acc: pieʹzzid
 * Yaml: **N-piess, N-kjiechch**
 
-
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) peäss-
 * :%^PAL%^KK2GAllegro E-STEM-PX-ALLEGRO ;  (11) piẹʹz-
 * :%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) peäʹsˈs Ess+Px..
-
 
 * LEXICON N_SUEAQKHKH  sueʹǩǩ:suäkk
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
@@ -4097,7 +3943,6 @@ NumContLex="1.113"
 * :%^PAL%^CC2C E-STEM-PX-ALLEGRO ;  (11) kuẹʹđ-
 * :%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) kuäʹtˈt- Ess+Px..
 
-
 * LEXICON N_NUEAQJJ  nuẹʹjj:nuäjj
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
 ## 1.3 Sg.Loc in -est (vowel shift)
@@ -4119,7 +3964,6 @@ NumContLex="1.113"
 * Yaml: **N-nuejj**
 similar_to: N_KHIOJJ, N_TUYJJ, N_SUEQJJ
 
-
 * LEXICON N_VIEQMM  vieʹmm:veâmm
 similar_to: N_SUEAQKHKH
 ## FORMS
@@ -4129,7 +3973,6 @@ NumContLex="1.113"
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) veâmm-
 * :%^PALE%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) vieʹm-
 * :%^PALE%^PAL%CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) vieʹmˈm Ess+Px..
-
 
 * LEXICON N_VUEAIQVV  vuẹiʹvv:vuäivv
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
@@ -4163,8 +4006,6 @@ NumContLex="1.113"
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) vuäivv-
 * :%^VOWRaise%^PALẸ%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) vuẹiʹv-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) vuäiʹvv- Ess+Px..
-
-
 
 * LEXICON N_CHUAQRVV  čuäʹrvv:čuärvv
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
@@ -4277,7 +4118,6 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * :%^PAL E-STEM-PX-STRENGTHEN-WITH-PAL ;			    (12) jeäʹǧˈǧ
 * +Use/NGminip+Use/NG:%^VOWRaise%^PALẸ%^PAL%^CCC2CC E-STEM-PX-ALLEGRO ;   (2)
 
-
 *jeäʹnn # examples:*
 jeäʹnˈn: 	   jeäʹnn+N+Sg+Nom
 jiẹʹnn: 	   jeäʹnn+N+Sg+Gen
@@ -4300,15 +4140,12 @@ jieʹnnitaa: 	   jeäʹnn+N+Pl+Abe
 jeännaž: 	   jeäʹnn+N+Der+Der/Dimin+N+Sg+Nom
 jeänna: 	   jeäʹnn+N+Der+Der/Dimin+N+Sg+Gen
 
-
-
 * LEXICON E-STEM_SG-NOM  (1)
 
 * LEXICON E-STEM_SG-ABE/ACC/GEN  (2)
 e.g. +Sg+Acc+PxPl3
 e.g. +Use/NG+Sg+Loc+PxSg1
 låʹdd >> lååʹddi; it should  be lå'dd >> loo'ddi
-
 
 * LEXICON E-STEM_SG-ILL  (3)
 
@@ -4336,9 +4173,6 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 * :%^PALẸ%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) jiẹʹrj-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) jeäʹrmm Ess+Px..
 
-
-
-
 * LEXICON N_REAEIQGHGH  reäiʹǧǧ:reäigg
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
 ## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
@@ -4361,9 +4195,6 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 * :%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) reäiʹj-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) reäiʹǧǧ Ess+Px..
 
-
-
-
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) reâmjj- CHECKME 2016-08-19
 * :%^VOWRaise%^PALE%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) rieʹmj-
 * :%^VOWRaise%^PALE%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) rieʹmjj Ess+Px..
@@ -4374,9 +4205,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 * :%^VOWRaise%^PAL E-STEM-PX-ALLEGRO ;  (11) čiõʹlj-
 * :%^VOWRaise%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) nuʹbb Ess+Px..
 
-
 WHAT IS THIS CLASS
-
 
 * LEXICON N_KUQMPP  kuʹmpp:kumpp
 N_E-EPal3-31
@@ -4422,19 +4251,15 @@ NumContLex="1.1140000000000001"
 ???* There are several stem types
 * kriʹlcc:kriʹlcc
 
-
 gradation: yes
 ## FORMS
 * Yaml: **N-krilcc**
 ???* There are several stem types
 * kriʹlcc:kriʹlcc
 
-
 * LEXICON N_DIQLL  diʹll:dill
 ## FORMS
 * Yaml: **N-dill**
-
-
 
 * LEXICON N_KAAQFF  kaaʹff:kaaʹff
 
@@ -4455,10 +4280,6 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * kaaʹff:kaaʹff
 NumContLex="1.1140000000000001"
 
-
-
-
-
 * LEXICON N_KLAAQDD  klaaʹdd:klaadd
 X2 no gradation; no lowering no raising
 Sg_Ill="palatalization|e-final"
@@ -4466,23 +4287,17 @@ cf. plaan
 * Yaml: **N-klaadd**
 New
 
-
 These must be checked 2017-04-03
-
 
 * LEXICON N_ZEEQTT  zeeʹtt:zẹẹtt
 
 ## FORMS
 * Yaml: **N-zeett**
 
-
 * LEXICON N_POAOAQMH  pååʹmh:påå%{ʹØ%}mh
 
 ## FORMS
 * Yaml: **N-zeett**
-
-
-
 
 * LEXICON N_LUUKK  
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
@@ -4498,7 +4313,6 @@ luukk:luukk is for nouns with -âst Loc and no gradation. N_Y-EPal1-11, N_Y-EPal
 * Yaml: **saarf, luukk**
 * +Der+Der/Dimin+N: N_KUUZZYZH-WITHOUT-PAL ;   paar-
 * +Der+Der/Dimin+N:%^PAL N_KUUZZYZH-WITH-PAL ;   paaʹr-
-
 
 * LEXICON N_BIOLOOG  bioloog:bioloog
 ## 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
@@ -4554,11 +4368,9 @@ e.g. +Sg+Loc+PxSg1
 
 * Yaml: **esai**
 
-
 e.g.
 e.g. +Use/NG+Sg+Loc+PxSg3
 e.g. +Sg+Loc+PxSg1
-
 
 * LEXICON N_BLOUSLOV  blouslõv:blouslõ%^1VOWv CHECKME
 * Yaml: **N-blouslov**
@@ -4575,7 +4387,6 @@ evaŋǧeʹlium:evaŋǧeʹlium
 * +Der+Der/Dimin+N:%^V2VV N_MUORYZH-WITHOUT-PAL ;   paar-
 * +Der+Der/Dimin+N:%^V2VV%^PAL N_MUORYZH-WITH-PAL ;   paaʹr-
 
-
 * LEXICON N_AIHAM  aiham:aiham
 ## 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
 ## 2.1 Sg.Loc in -ast. a-stems (Sg.Loc, Ess, Par).
@@ -4587,10 +4398,6 @@ evaŋǧeʹlium:evaŋǧeʹlium
 ## 2.1.3.3.1.3.4.1.Sg.Gen Weak Grade
 ## 2.1.3.3.1.3.4.1.3 Sg.Ill extra Strong Grade
 * Yaml: **N-aiham**
-
-
-
-
 
 ## CLASS 2 NOMINALS with high stem vowel and i-stems
 * LEXICON N_JUURD  juurd:ju%^1VOWrdd
@@ -4664,7 +4471,6 @@ is for nouns with stem *i* + *-est* +Sg+Loc; all stem other than the +Sg+Nom are
 * :%>ǥ VOONYS-STEM-PX ;  võnns-
 * :%>%{ʼØ%}j VOONYS-STEM-PX ;  võnns-
 
-
 * LEXICON N_SUOL  suõl:suõlˈl
 is for nouns with stem *i* + *-est* +Sg+Loc; all stem other than the +Sg+Nom are X3; the *i* does not occur in +Par 
 * Yaml: **N-suol**
@@ -4713,7 +4519,6 @@ Extra strong grade: Pl.Nom, Sg.Loc, Sg.Com
 * muuʒ:muvʒʒi
 * :%>ǥ VOONYS-STEM-PX ;  võnns-
 
-
 CLASS 2 NOMINALS with low stem vowel and u-stems
 ## u-stems
 * LEXICON N_MAEAEN  mään:mann
@@ -4748,7 +4553,6 @@ CLASS 2 NOMINALS with low stem vowel and u-stems
 * :%^V2VV%^VOWLower%^XYY2XY SG-NOM ;	         njoorǥ
 * :%>u SG-ABE/ACC/GEN ;	 		  njurggu
 * :%>u PL-NOM ;	 		  njurggu
-
 
 * LEXICON N_SUYL   suâl:suõlˈl
 *   is for nouns with *-est* +Loc
@@ -4800,8 +4604,6 @@ CLASS 2 NOMINALS with high stem vowel and â-stems
 * There are several stem types 
 * :%>ǥ VOONYS-STEM-PX ;  võnns-
 
-
-
 CLASS 3 HIGH VOWEL, MONOPHTHONG, NO PALATALIZATION NOMINALS
 ## m-stems
 
@@ -4809,31 +4611,22 @@ CLASS 3 HIGH VOWEL, MONOPHTHONG, NO PALATALIZATION NOMINALS
 * LEXICON NMN_LAAJJ  laajj:la%^1VOWčč
 * Yaml: **N-laajj**
 
-
 * LEXICON N_OODH  õõđ:õ%^1VOWđđ
 * LEXICON NMN_OODH  õõđ:õ%^1VOWđđ
 * Yaml: **N-oodhdh**
-
 
 * LEXICON N_SOOUS  sõõus:sõhss
 * Yaml:
 * LEXICON NMN_SOOUS  sõõus:sõ%^1VOWhss
 
-
-
 * LEXICON N_LAAUR  laaur:laurr
 * LEXICON NMN_LAAUR  laaur:laurr
 * Yaml:
-
 
 * LEXICON N_VYYID  vââid:võ%^1VOWidd
 * LEXICON NMN_VYYID  vââid:võ%^1VOWidd
 * Yaml: **N-vyyid**
 similar_to:
-
-
-
-
 
 CLASS 3
 
@@ -4843,28 +4636,23 @@ CLASS 3
 * LEXICON NMN_SIOM   = siõm:siõmˈm
 * Yaml: **N-siom**
 
-
 * LEXICON N_SEAEM   = seäm:seämˈm
 * LEXICON NMN_SEAEM   = seäm:seämˈm
 * Yaml: **N-siom**
-
 
 * LEXICON N_VUYSK  vuâsk:vuâskk
 * LEXICON NMN_VUYSK  vuâsk:vuâskk
 * Yaml: **N-kuolban**
 similar_to:N_KUOLBYN
 
-
 * LEXICON N_KHIYLGX  ǩiâlǥ:ǩiâlgg
 * LEXICON NMN_KHIYLGX  ǩiâlǥ:ǩiâlgg
 * Yaml: **N-kuolban**
 similar_to:N_KUOLBYN
 
-
 * LEXICON N_KUOLBYN  kuõlbân:kuõlbb
 * LEXICON NMN_KUOLBYN  kuõlbân:kuõlbb
 * Yaml: **N-kuolban**
-
 
 * LEXICON N_SIEQM  sieʹm:siâmˈm
 stemtype Am-stem
@@ -4874,15 +4662,12 @@ stemtype Am-stem
 stemtype Am-stem
 * Yaml: **N-luem**
 
-
 CLASS 3
 * LEXICON N_VUEQN  vueʹn:vuânˈn
 stemtype Am-stem
 * Yaml: **vuen**
 
-
 Are these actually necessary 2015-05-30 
-
 
 * LEXICON N_CHYYQDH  čââʹđ:čâđđ
 * Yaml: **N-caad**
@@ -4891,7 +4676,6 @@ Are these actually necessary 2015-05-30
 * LEXICON N_CHUEQNJ  čueʹnj:čuânˈnj
 stemtype Aǥ-stem
 * Yaml: **N-chuenj**
-
 
 CLASS 4 BISYLLABIC, HIGH VOWEL, MONOPHTHONG, NO PALATALIZATION
 IN PENULTIMATE Â:0
@@ -5013,7 +4797,6 @@ N_GEN2X3-NOM2X1
 * Yaml: **N-tuoddar**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
-
 *  LEXICON N_PUAEGXGXANJ  tuõddâr:tuõdˈdâr
 *  LEXICON NMN_PUAEGXGXANJ  puäǥǥanj:puäkˈkanj
 N_GEN2X3-NOM2X1
@@ -5026,16 +4809,13 @@ N_GEN2X3-NOM2X1
 * Yaml: **N-tuoddar**
 * :%^RmVow VOONYS-STEM-PX ;  čååkkm-
 
-
 *  LEXICON N_RUODDYS  ruõddâs:ruõdˈdâs
 *  LEXICON NMN_RUODDYS  ruõddâs:ruõdˈdâs
 N_GEN2X3-NOM2X1
 * Yaml: **N-tuoddar**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
-
 *  LEXICON N_NAQZVAANASH-PL  naʹzvaanâš:naʹzvaanâš
-
 
 * LEXICON N_COOGGYLM  cõõggâlm:cõõggâlm
 stemtype l-stem cõõggâlm:cõõggâlm
@@ -5061,11 +4841,9 @@ stemtype l-stem siivâlm:siivâlm
 * Yaml: **cooggalm, aaresm, kaaddask** 
 * :%^Pen%^VV2V%^RmVow VOONYS-STEM-PX ;  tobdlm- CHECKME
 
-
 * LEXICON N_IILYSKH  iilâsǩ:iilâsǩ
 * Yaml: **N-iilask** 
 * :%^Pen%^VV2V%^RmVow%^PALNo VOONYS-STEM-PX ;  võnns- CHECKME
-
 
 CLASS 4 BISYLLABIC, LOW VOWEL, MONOPHTHONG, NO PALATALIZATION
 * LEXICON N_CEERKAV  ceerkav:cẹẹrkav
@@ -5113,7 +4891,6 @@ stemtype n-stem jânnam:jânnam
 N_GEN2X3-NOM2X1
 * Yaml: **N-jânnam**
 * :%^RmVow VOONYS-STEM-PX ;  såbbr-
-
 
 * LEXICON N_CHIOPPYRJ  čiõppârj:čiõppâr
 stemtype n-stem jânnam:jânnam
@@ -5214,7 +4991,6 @@ CLASS 4 BISYLLABIC, LOW VOWEL, MONOPHTHONG, PALATALIZATION
 * Yaml: **N-veerest** 
 * :%^Pen%^VV2V%^RmVow VOONYS-STEM-PX ;  võnns-
 
-
 * LEXICON N_AAQRESHM  ääʹrešm:ääʹrešm
 * LEXICON NMN_AAQRESHM  ääʹrešm:ääʹrešm
 stemtype l-stem ääʹrešm:ääʹrešm
@@ -5234,14 +5010,12 @@ stemtype l-stem ääʹrešm:ääʹrešm
 * +Use/NGminip+Use/SpellNoSugg+Use/NG:%^RmVow%>e ESS/PAR ;  CHECKME
 * +Use/NGminip+Use/SpellNoSugg+Use/NG:%^RmVow VOONYS-STEM-PX ;  võnns-
 
-
 * LEXICON N_KUEQDDELM  kueʹddelm:kueʹddelm
 * LEXICON NMN_KUEQDDELM  kueʹddelm:kueʹddelm
 * Yaml: **N-kueddelm** 
 * :%^Pen%^CC2C%^RmVow%>a SG-ILL ;  äʹršma
 * :%^Pen%^CC2C%^RmVow SG-ABE ;  CHECKME
 * :%^Pen%^CC2C%^RmVow VOONYS-STEM-PX ;  võnns-
-
 
 * LEXICON N_CIYLKYLM  ciâlkâlm:ciâ%{ˈ1%}lkâlm
 * LEXICON NMN_CIYLKYLM  ciâlkâlm:ciâ%{ˈ1%}lkâlm
@@ -5251,8 +5025,6 @@ stemtype l-stem ääʹrešm:ääʹrešm
 * :%^Pen%^Allegro%^RmVow SG-ABE ;  CHECKME
 * :%^Pen%^Allegro%^RmVow PL-OBL ;  ciâˈlklmi
 * :%^Pen%^Allegro%^RmVow VOONYS-STEM-PX ;  võnns-
-
-
 
 * LEXICON N_STROOIQTEL  strooiʹtel:stro%^1VOWiʹttel
 * **NMN_STROOIQTEL** = Koulukielioppi stemtype II 9 (29)
@@ -5289,10 +5061,8 @@ stemtype l-stem čeeuʹres:čeeuʹres
 
 ## s:z-stem type
 
-
 * Yaml: **kerres**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
-
 
 CLASS 4 BISYLLABIC, LOW VOWEL, DIPHTHONG, PALATALIZATION
 IN PENULTIMATE E:0
@@ -5341,13 +5111,10 @@ IN PENULTIMATE E:0
 * Yaml: __similar_to:N-kaeaelles__
 * :%^VOWLower%>s VOONYS-STEM-PX ;  potts-
 
-
-
 ## -stems
 * LEXICON N_NJUAEQMMEL  = stemtype l-stem njuäʹmmel:njuäʹmˈmel
 * LEXICON NMN_NJUAEQMMEL  = stemtype l-stem njuäʹmmel:njuäʹmˈmel
 * Yaml: **njuammel, njuunnjel, aappal** 
-
 
 * LEXICON N_CIEAQKHKHES  cieʹǩǩes:ciâkˈkes
 * **NMN_CIEAQKHKHES** = Koulukielioppi stemtype II 9 (29)
@@ -5389,7 +5156,6 @@ IN PENULTIMATE E:0
 * Yaml: **N-vueddes**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
-
 * LEXICON N_SAQPPLI  säʹppli:säʹppl
 * Yaml: **A-saeppli**
 
@@ -5402,27 +5168,20 @@ IN PENULTIMATE E:0
 * :nja SG-ILL ; 			      mokknja
 * :nj VOONYS-STEM-PX ; 			      mokknj
 
-
-
 * LEXICON N_CHUYGXGXAS  čuâǥǥas:čuâkˈk
 * :%^KKK2GG%>as SG-NOM ;		      čuâǥǥas
 * :%^VOWRaise%>u SG-ABE/ACC/GEN-PL-NOM ;  čuõkˈku
 * :sa SG-ILL ; 			      čuâkˈksa
 * :s VOONYS-STEM-PX ; 			      čuâkˈksallaš
 
-
-
 * LEXICON N_SEQTT  seʹtt:sett
 * Yaml: **N-sett**
 * There are several stem types 
-
-
 
 * LEXICON N_LOAQDD  låʹdd:lå%^1VOWdd
 is for nouns with *-est* +Loc, 
 N_E-ANoPal3-32
 * Yaml: **N-ladd**
-
 
 * :%^V2VV E-STEM_N_KUYLAZH ;  (9) lååddaž
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;                           (10) lådd-
@@ -5432,19 +5191,11 @@ N_E-ANoPal3-32
 
 * LEXICON N_LOAQDD-PL  lååʹdd:lådd
 
-
-
-
-
-
 ## e-a-stems
-
 
 Nouns with -est Loc and -a Ill without ʹ
 lemma and stem 3rd grade; vowel raising
 * Yaml: **peass**
-
-
 
 * LEXICON N_MIEAQRR  mieʹrr:meä%{ʹØ%}rr
 Nouns with -est Loc and -a Ill without ʹ
@@ -5455,9 +5206,7 @@ Nouns with -est Loc and -a Ill without ʹ
 * :%^PALẸ%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) miẹˈʹr-
 * :%^PALẸ%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) miẹʹrr Ess+Px..
 
-
 * LEXICON N_MIEAQRR-PL  meäʹr:meä%{ʹØ%}rr
-
 
 * LEXICON N_MIEQLKHKH  mieʹlǩǩ:meâ%{ʹØ%}lkk
 * LEXICON NMN_MIEQLKHKH  mieʹlǩǩ:meâ%{ʹØ%}lkk
@@ -5465,7 +5214,6 @@ Nouns with -est Loc and -a Ill without ʹ
 * Yaml: **N-mielkk**
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) meâlkk- CHECKME 2016-08-19
 * :%^PALE%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) mieʹlǩ-
-
 
 * LEXICON N_PAARHOAQD  päärhåʹd:päärhå%^1VOWd
 * LEXICON NMN_PAARHOAQD  päärhåʹd:päärhå%^1VOWd
@@ -5475,7 +5223,6 @@ Nouns with -est Loc and -a Ill without ʹ
 * :%{XC%}%^C2CC E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) säimm-
 * :%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) säiʹm-
 
-
 * LEXICON N_CHIISTI  čiisti:čiistti
 * LEXICON NMN_CHIISTI  čiisti:čiistti
 * Yaml: **N-chiisti**
@@ -5484,39 +5231,24 @@ Nouns with -est Loc and -a Ill without ʹ
 NumContLex=""
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-
-
-
-
 * +Der+Der/N2A+A: DenominalAdjsCShort ;  2015-08-23 +Der+Der/teqm
-
 
 čâustõk+N+Sg+Gen:čâustõõǥǥ
 * +Der+Der/Dimin+N:%{XC%}%^V2VV%^K2GG N_KUUZZYZH-WITHOUT-PAL ;   kuuzz-
 * +Der+Der/Dimin+N:%{XC%}%^V2VV%^PAL%^K2GG N_KUUZZYZH-WITH-PAL ;   kuuʹzz-
 
-
-
-
-
-
-
 * LEXICON N_MILJONAAQR  = stemtype miljonääʹr:miljonäär
 * LEXICON NMN_MILJONAAQR  = stemtype
 * Yaml: **N-miljonaeaer**
-
-
 
 stemtype n-stem reʹppiǩ:reʹppiǩ
 Palatalization loss in Sg.Ill
 * Yaml: **N-reppikj**
 
-
 PENULTIMATE O:0
 * LEXICON N_MOOTTOR  moottor:moottor
 * LEXICON NMN_MOOTTOR  moottor:moottor
 * Yaml: **N-moottor**
-
 
 VOWEL-FINAL STEMS
 * Yaml: **N-biologia**
@@ -5539,8 +5271,6 @@ VOWEL-FINAL STEMS
 *  ESS/PAR ;   	+Ess
 *  PL-NOM ;    	+Pl+Nom
 *  PL-OBL ;    	+Pl+Gen
-
-
 
 * Yaml: **N-merja**
 *  SG-NOM ;   +Sg+Nom
@@ -5637,21 +5367,13 @@ THIS NEEDS CHECKING
 * +Use/NGminip+Use/NG:i PL-NOM ;            (TSA-2) +Pl+Nom: energii
 * +Use/NGminip+Use/NG:i PL-OBL ;            (TSA-4) +Pl+Gen:
 
-
-
-
-
 * LEXICON N_NALLSHEM  čââʹlmteʹm:čââʹlmtẹ%^1VOWm
 292-295
 * Yaml: **A-chaalmtem**
 
-
-
 * LEXICON N_HOQZJEQN  čââʹlmteʹm:čââʹlmtẹ%^1VOWm
 292-295
 * Yaml: **A-chaalmtem**
-
-
 
 ## Stem types from the grammar
 
@@ -5661,21 +5383,15 @@ THIS NEEDS CHECKING
 tuejjeeja:tuejjẹẹja
 * Yaml: **N-tuejjeeja**
 
-
-
 * LEXICON N_PRSPRC-EEI  tuõđšteei:tueʹjjee
 * LEXICON NMN_PRSPRC-EEI  tuõđšteei:tueʹjjee
 tuõđšteei:tueʹjjee
 * Yaml: **N-tuodhshteei**
 
-
 * LEXICON N_PRSPRC-EEQJJ  tuõđšteei:tueʹjjee
 * LEXICON NMN_PRSPRC-EEQJJ  tuõđšteei:tueʹjjee
 tuõđšteeʹjj:tuõđštẹẹ
 * Yaml: **N-tuodhshteeqjj**
-
-
-
 
 Class 5 according to Feist 152
 ## k-stems
@@ -5688,12 +5404,6 @@ stemtype
 
 * +Der+Der/Dimin+N:%{XC%}%^K2GG N_KUUZZYZH-WITHOUT-PAL ;   kuuzz-
 * +Der+Der/Dimin+N:%{XC%}%^PAL%^K2GG N_KUUZZYZH-WITH-PAL ;   kuuʹzz-
-
-
-
-
-
-
 
 Class 6 according to Feist 153-154
 PRESENT PARTICIPLES
@@ -5713,10 +5423,8 @@ NumContLex="1.2"
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-
 participles in -I from verbs in -âd
 * :%^I2J VOONYS-STEM-PX ;  võnns-
-
 
 * LEXICON N_PRSPRC-VVQCC-I  jooʹtti+N:jooʹtti
 * LEXICON NMN_PRSPRC-VVQCC-I  jooʹtti+N:jooʹtti
@@ -5763,7 +5471,6 @@ inflection_type="?"
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-
 * LEXICON N_PRSPRC-VVKK-I  lookki:lookki
 * LEXICON NMN_PRSPRC-VVKK-I  lookki:lookki
 * Yaml: **lookk**
@@ -5771,7 +5478,6 @@ NumContLex="1.2"
 * lookki:lookki
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
-
 
 * LEXICON N_PRSPRC-VWQKK-I  jueʹǩǩi+N:jueʹǩǩi
 inflection_type="?"
@@ -5781,7 +5487,6 @@ inflection_type="?"
 * sirddi:sirddi
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
-
 
 * LEXICON N_PRSPRC-VWKK-I  ǩiõssi:ǩiõssi
 * LEXICON NMN_PRSPRC-VWKK-I  ǩiõssi:ǩiõssi
@@ -5800,7 +5505,6 @@ inflection_type="?"
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-
 * LEXICON N_PRSPRC-VWCC-I  vuõlli:vuõlli
 * LEXICON NMN_PRSPRC-VWCC-I  vuõlli:vuõlli
 * Yaml: **N-vuolli**
@@ -5817,7 +5521,6 @@ NumContLex="1.2"
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-
 * LEXICON N_PRSPRC-VWCCC-I  kuõʒʒi:kuõʒˈʒi
 * LEXICON NMN_PRSPRC-VWCCC-I  kuõʒʒi:kuõʒˈʒi
 * Yaml: **N-vuolli**
@@ -5826,14 +5529,11 @@ NumContLex="1.2"
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-
 * LEXICON N_PRSPRC-VWXYY-I  suõskki:suõskki
 * LEXICON NMN_PRSPRC-VWXYY-I  suõskki:suõskki
 * Yaml: **suoskki**
 
 * :%^I2J VOONYS-STEM-PX ;  võnns-
-
-
 
 participles in -AI from verbs in -ad
 * : SG-NOM ; 
@@ -5847,7 +5547,6 @@ participles in -AI from verbs in -ad
 * : PL-NOM ; 
 * +Use/NGminip+Use/NG:%^RmVow%^I2J PL-OBL ; 
 * :%^I2J VOONYS-STEM-PX ;  võnns-
-
 
 * LEXICON N_PRSPRC-VCC-AI  kåččai:kåččai
 * LEXICON NMN_PRSPRC-VCC-AI  kåččai:kåččai
@@ -5908,7 +5607,6 @@ NumContLex="
 NumContLex="
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-
 * LEXICON N_PRSPRC-VWCC-AI  vuejjai:vuejjai
 * LEXICON NMN_PRSPRC-VWCC-AI  vuejjai:vuejjai
 * Yaml: **N-vuejjai**
@@ -5916,7 +5614,6 @@ NumContLex="
 * vuejjai:vuejjai
 NumContLex="
 * :%^I2J VOONYS-STEM-PX ;  võnns-
-
 
 * LEXICON N_PRSPRC-VWKK-AI  reäkkai:reäkkai
 * LEXICON NMN_PRSPRC-VWKK-AI  reäkkai:reäkkai
@@ -5973,7 +5670,6 @@ NumContLex="1.2"
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-
 * LEXICON N_PRSPRC-VXYY-I  äjjnõʹstti:äjjnõʹstti
 * LEXICON NMN_PRSPRC-VXYY-I  äjjnõʹstti:äjjnõʹstti
 * Yaml: **lookk**
@@ -6015,7 +5711,6 @@ NumContLex="1.2"
 * sirddi:sirddi
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
-
 
 * LEXICON N_PRSPRC-VWHYY-I  čiõhčči:čiõhčči
 * LEXICON NMN_PRSPRC-VWHYY-I  čiõhčči:čiõhčči
@@ -6088,7 +5783,6 @@ Class 7 according to Feist 154-155
 
 * :%>ǥ VOONYS-STEM-PX ;  võnns-
 
-
 * LEXICON N_OAOAUM  ååum:å%^1VOWumm
 * LEXICON NMN_OAOAUM  ååum:å%^1VOWumm
 * Yaml: **N-aaum**
@@ -6101,7 +5795,6 @@ Class 7 according to Feist 154-155
 * :%>%{ʼØ%}je ESS/PAR ;  
 *    :a PL-OBL ;  
 * :%>%{ʼØ%}j VOONYS-STEM-PX ;  võnns-
-
 
 * LEXICON N_CHUYR  čuâr:čuõrˈr
 * LEXICON NMN_CHUYR  čuâr:čuõrˈr
@@ -6117,7 +5810,6 @@ Class 7 according to Feist 154-155
 * +Use/NGminip+Use/NG:%^VOWLower%>š VOONYS-STEM-PX ;  võnns-
 * +Use/NGminip+Use/NG:%^VOWLower%>ǥ VOONYS-STEM-PX ;  võnns-
 
-
 * LEXICON N_KAAMMI  kaammi:kaamm
 * LEXICON NMN_KAAMMI  kaammi:kaamm
 * Yaml: **piannai**
@@ -6126,9 +5818,6 @@ kaammi
 käʹmme
 kaammjen
 käʹmmi
-
-
-
 
 * LEXICON N_PIYNNAI  piânnai:piânˈn
 * LEXICON NMN_PIYNNAI  piânnai:piânˈn
@@ -6144,9 +5833,7 @@ piânˈnʼji
 * :ǥ VOONYS-STEM-PX ;  võnns-
 * +Use/NGminip+Use/NG:%>%{ʼØ%}j VOONYS-STEM-PX ;  võnns-
 
-
 Class 8 according to Feist 155-157
-
 
 Class 9 according to Feist 158
 * LEXICON N_MEERSAZH  säʹmmlaž:säʹmml
@@ -6171,10 +5858,8 @@ Diminutive derivations
 * +Err/Orth+Err/GenreLeudd+Sg+Nom+PxSg1:%>ž%>amâ K;  Leudd 2018-09-20
 * +Err/Orth+Err/GenreLeudd+Sg+Nom+PxSg1:âž%>amâ K;  Leudd 2018-09-20
 
-
 * LEXICON N_MUORYZH-WITHOUT-PAL-PL  paapp
 * :že ESS/PAR ;	 	 paappžen
-
 
 * LEXICON N_MUORYZH-WITH-PAL    paaʹpp-
 * :%>e SG-ABE/ACC/GEN ;	 paaʹppe
@@ -6190,7 +5875,6 @@ Diminutive derivations
 * :%>e PL-NOM ;    paaʹppe
 * :%>e PL-OBL ;        paaʹppei Merja differentiates from regular pl
 * +Use/NGminip+Use/NG: PL-OBL ;        paaʹppi
-
 
 * LEXICON N_KUUZZYZH-WITHOUT-PAL  paapp-
 * :âž SG-NOM ;		 paappâž
@@ -6215,7 +5899,6 @@ Diminutive derivations
 
 * : SG-LOC-PX_ALLEGRO ;  kuʹzstes
 
-
 * LEXICON N_SAEQMMLOOZHZHYZH  säʹmmlõõžžâž:säʹmmlõõžž
 * Yaml: **N-muorazh**
 
@@ -6233,7 +5916,6 @@ This is only a partial paradigm
 * +Err/Orth+Err/GenreLeudd+Sg+Nom+PxSg1:%>žamâ K;  Leudd 2018-09-20
 * +Err/Orth+Err/GenreLeudd+Sg+Nom+PxSg1:ažamâ K;  Leudd 2018-09-20
 
-
 * LEXICON N_PIISSUZH  piissuž:piiss
 (2009: 310)
 * piissuž:piiss
@@ -6242,8 +5924,6 @@ This is only a partial paradigm
 * +Err/Orth+Err/GenreLeudd+Sg+Nom+PxSg1:ožam K;  Leudd 2018-09-20
 * +Err/Orth+Err/GenreLeudd+Sg+Nom+PxSg1:%>žamâ K;  Leudd 2018-09-20
 * +Err/Orth+Err/GenreLeudd+Sg+Nom+PxSg1:ožamâ K;  Leudd 2018-09-20
-
-
 
 * LEXICON N_KUYLAZH  kuâlaž:kuâl
 * kuâlaž:kuâl
@@ -6260,21 +5940,14 @@ kuâla, kuâlže
 * LEXICON N_UUQREZH  uuʹrež:uuʹr
 * Yaml: **N-uurezh**
 
-
-
-
 * LEXICON N_JEAQKHKHKHAAZH  jeäʹǩǩääž:jeäʹǩˈǩ
 * Yaml: **N-jeakkeaeazh**
-
-
 
 * LEXICON N_VONNSAZH  võnnsaž:võnns
 * Yaml: **N-kualazh**
 
-
 * LEXICON NMN_JIQLSSI  Jiʹlssi:Jiʹlssi
 Is this correct 2015-09-11
-
 
 * LEXICON NMN_OAQLGA  Ååʹlga:Ååʹlg
 Is this correct 2015-09-11
@@ -6283,12 +5956,9 @@ Is this correct 2015-09-11
 Is this correct 2015-09-11
 Is this correct 2015-09-11
 
-
-
 * LEXICON N_KUUQMPEZH  
 * kuuʹmpež:kuuʹmp
 * Yaml: **N-kuumpezh**
-
 
 * LEXICON N_OOUMAZH  ooumaž:o%^1VOWumm
 is for nouns with *-ust* +Sg+Loc; *e* +Sg+Ill;
@@ -6297,11 +5967,6 @@ N_GEN1-ILLEX1-LOCE-NOM1X1
 * Yaml: **N-ooumazh**
 * There are several stem types 
 * ooumaž:ooum
-
-
-
-
-
 
 Class 10 according to Feist 160-161
 ## neǩ-stem
@@ -6337,7 +6002,6 @@ karies+N+Sg+Nom **caries/hammasmätä**
 * :%{XC%}%^PALNo%^C2CC%>a SG-ILL ;  kaađnẹkka
 * :%{XC%}%^V2VV%^PAL%^K2GG PL-NOM ;  karieeʹzz
 
-
 Sort of like 10
 * LEXICON NMN_VUYSPPOAQD  vuâsppåʹd:vuâsppå%^1VOWd
 * Yaml: **N-kaadhnekj, N-chaustok**
@@ -6355,184 +6019,49 @@ vuâsppåʹd+N+Sg+Gen
 * *vuâsppooʹdd0000%>in*
 * :%{XC%}%^V2VV%^PAL%^C2CC PL-NOM ;  vuâsppooʹdd
 
-
-
 Class 11 according to Feist 162
 * LEXICON N_VISKKYD  viskkâd:viskk
-
 
 * LEXICON N_AQKHKHED  âʹǩǩed:âʹǩǩ
 
 Class 12 Feist 163
 
-
 ### Noun phrase heads
 ### Pl
-
-
-
-
-
-
-
-
-
 
 ### Number and case tags
 
 Used with words like juurd: jurddǥatta
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## POSSESSIVE DECLENSION
 ### HatY-STEM-PX
 * +Err/GenreLeudd:â SG-NOM ;  Leudd 2018-09-20
 
-
-
-
-
-
 * +Err/GenreLeudd:â SG-ABE/ACC/GEN-PL-NOM ;  Leudd 2018-09-20
 * +Err/GenreLeudd:â SG-COM_N ;  Leudd 2018-09-20
 
-
 * +Err/GenreLeudd:â SG-ABE/ACC/GEN-PL-NOM ;  Leudd 2018-09-20
 * +Err/GenreLeudd:â SG-COM_N ;  Leudd 2018-09-20
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### A-STEM-PX
 
-
-
-
-
-
 * +Err/GenreLeudd:a SG-NOM ;  Leudd 2018-09-20
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * +Err/GenreLeudd:a SG-ABE/ACC/GEN-PL-NOM ;  Leudd 2018-09-20
 * +Err/GenreLeudd:a SG-COM_N ;  Leudd 2018-09-20
 
-
 * +Der+Der/N2A+A: N2A_REAEB3H3HAI ;      N»A
-
-
 
 ### E-STEM-PX
 
-
-
-
 * +Err/GenreLeudd:e SG-NOM ;  Leudd 2018-09-20
-
-
-
-
-
-
 
 * +Err/GenreLeudd:e SG-ABE/ACC/GEN-PL-NOM ;  Leudd 2018-09-20
 * +Err/GenreLeudd:e SG-COM_N ;  Leudd 2018-09-20
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### LOAOADDAZH-STEM-PX
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * LEXICON LOAOADDAZH-STEM-PX-STRENGTHEN-WITH-PAL  needs checking
-
 
 ### VOONYS-STEM-PX
 * LEXICON VOONYS-STEM-PX  võnns-
@@ -6541,74 +6070,17 @@ Used with words like juurd: jurddǥatta
 * LEXICON VOONYS-STEM-PX-PL  võnns-
 * VOONYS-STEM-PX-STRENGTHEN-WITH-PAL ;  essive
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * LEXICON VOONYS-STEM-PX-STRENGTHEN-WITH-PAL  needs checking
-
-
-
-
-
-
-
 
 * LEXICON N-ALLEGRO_ATTESTED-NOUN-STEM  This is for Allegro forms
 
-
-
-
-
 ## Adjectives -- to be moved
-
-
 
 ### Vowel-final stem for PX
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/affixes/nouns.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/affixes/nouns.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/affixes/nouns.lexc)</small>
+
+---
+

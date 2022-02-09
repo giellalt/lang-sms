@@ -3,100 +3,7 @@
 
 THE LEXICON *@OUTSIDE_LEXICONS@* ASSIGNS THE TAG +Attr
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * LEXICON PROP_SEM/MAL_TOOBDYLM  toobdâlm:toobdâlm
-
-
-
-
-
-
-
-
-
-
-
 
 like KÕÕNJÂL 
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
@@ -124,12 +31,6 @@ single_consonant, long_vowel, no_palatalization, high_stem_vowel
 :%^V2VV%^CC2C SG-COM_IN ;               = * LEXICON PROP_SEM/MAL_TOOBDYLM  toolin
 :%^V2VV%^CC2C PL-OBL ;	                = * LEXICON PROP_SEM/MAL_TOOBDYLM  tooli, toolid, toolid, toolin, toolivuiʹm, toolitaa
 
-
-
-
-
-
-
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
 ## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
@@ -151,15 +52,11 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 R ;		= * LEXICON PROP_SEM/MAL_TOOBDYLM  kuss
 :%>â ESS ;     		 = * LEXICON PROP_SEM/MAL_TOOBDYLM  kussân
 
-
-
-
-
-
-
-
-
-
 * LEXICON PROP_VUYSPPOAQD  vuâsppåʹd:vuâsppå%^1VOWd
+
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/affixes/propernouns.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/affixes/propernouns.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/affixes/propernouns.lexc)</small>
+
+---
+

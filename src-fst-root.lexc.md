@@ -33,7 +33,6 @@ Pre-derivational POS tags for CG processing
 * **+Ex/A** = Adjective stem before derivation 
 * **+Ex/V** = Verb stem before derivation 
 
-
 ### Tags for sub-POS 
 
 * **+Prop** - Proper noun 
@@ -121,13 +120,11 @@ symbols ?
 * **+VGen** 
 * **+VAbess** 
 
-
 ###Valence
 * **+IV** Intransitive 
 * **+TV** Transitive 
 * **+Act** Active voice 
 * **+Pass** Passive voice 
-
 
 ### Person-number 
 * **+Sg1** first person singular 
@@ -143,13 +140,11 @@ symbols ?
 * **+13** used in combination with +Imp+13+ConNeg 
 * **+2** used in combination with +Imp+2+ConNeg 
 
-
 ### Homonymy 
 * **+Hom1** 
 * **+Hom2** 
 * **+Hom3** 
 * **+Hom4** 
-
 
 ### Derivation 
 
@@ -192,7 +187,6 @@ Verb derivation
 * **+Der/NomAg** agent V»N 
 * **+Der/NomAct** action V»N +Der/m 
 
-
 ## Tags for originating language 
 
 The following tags are used to guide conversion to IPA: loan words 
@@ -233,7 +227,6 @@ get the same pronunciation whether read as SME or NOB/NNO/SWE.
 * **+OLang/ENG** - English 
 * **+OLang/UND** - Undefined 
 
-
 ### Government tags 
 * **+%<acc%>** 
 * **+%<ess%>** 
@@ -241,7 +234,6 @@ get the same pronunciation whether read as SME or NOB/NNO/SWE.
 * **+%<ill%>** 
 * **+%<loc%>** this will be added to the preposition tagging **mâŋŋa jââđast** 
 * **+%<nom%>** 
-
 
 ### Semantic tags 
 
@@ -524,8 +516,6 @@ get the same pronunciation whether read as SME or NOB/NNO/SWE.
 * **+Sem/Substnc_Wthr** 
 * **+Sem/Time_Wthr** 
 
-
-
 ### Clitic 
 * **+Clt** 
 * **+Qst** Question particle -a 
@@ -581,7 +571,6 @@ an extra lemma attribute is inserted in the st element, e.g. lemma="tõlvvad"
 * **+v23** 
 * **+v24** 
 
-
 ### Other tags 
 
 * **+ABBR** Abbreviation 
@@ -616,7 +605,6 @@ These definitions are probably not needed
 * **ǯ** 
 * **Ǥ** 
 
-
 ### Archiphonemes 
 
 These are for letters with special behaviour. 
@@ -624,7 +612,6 @@ Say that all m-s change to n in a given context,
 but not this m, because it is m2. 
 In twolc these are then defined m2:m, etc, i.e. 
 the m2 is an m, although it is a different m. 
-
 
 ## Diacritic marks 
 These symbol govern the way the morphophonological rules treat the affix string. 
@@ -638,7 +625,6 @@ Special iterations
 * **%^b2 %^c2 %^č2 %^ʒ2 %^ǯ2 %^d2 %^đ2 %^f2 %^ǧ2 %^h2 %^j2** 
 * **%^ǩ2 %^l2 %^m2 %^n2 %^p2 %^r2 %^s2 %^š2 %^t2 %^v2 %^z2** 
 * **%^ž2** 
-
 
 ## Consonant lengthening 
 * **%{XC%}** 
@@ -666,7 +652,6 @@ for vowel height, by default vowels are low.
 * **%{ẹei%}** 
 * **%{âõe%}** 
 * **%{âõäe%}** 
-
 
 CHARACTERISTIC BREAKDOWN 2015-02-17 
 * **%^VV2V** Shortens vowel 
@@ -701,7 +686,6 @@ CHARACTERISTIC BREAKDOWN 2015-02-17
 * **%{ʼØ%}** used between l, n, j and subsequent j and elsewhere 
 * **%{ˈ1%}** This is modifier letter verticle line after diphthongs 
 
-
 ## Gradation triggers 2015.01.23 
 * **%^XSt2St** Causes weakening from extra strong to strong 
 * **%^XSt2W** Causes weakening from extra strong to weak 
@@ -713,8 +697,6 @@ CHARACTERISTIC BREAKDOWN 2015-02-17
 Gradation triggers 2015.02.09 For   Consonant Clusters 
 * **%^XSt2StCluster** Causes weakening from extra strong to strong in clusters 
 * **%^St2XStCluster** Causes strengthening from strong to extra strong in clusters 
-
-
 
 ### Diacritic with mnemonic names 
 
@@ -761,8 +743,6 @@ Gradation triggers 2015.02.09 For   Consonant Clusters
 * **%{Â1%}** archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one. 
 * **%{EÂ%}** archiform for ie:eä variation, e.g. pieʹǩǩ+N+Sg+Ill:peâkka 
 
-
-
 Hyphen at compound word boundary 
 * **%{EÂ%}** - Zero versus hyphen in compounding 
 * **%^Hyphen** - at compound word boundary with %- 
@@ -770,7 +750,6 @@ Hyphen at compound word boundary
 <!-- {% endraw %} -->
 
 ## Escaped symbols 
-
 
 Symbols that need to be escaped on the lower side (towards twolc): 
 * » 
@@ -819,9 +798,6 @@ The Usage extents are marked using following tags:
 * **+South**  
 * **+Txt**  
 
-
-
-
 Compounding 
 
 * **+Cmp** 
@@ -858,11 +834,9 @@ Compounding
 * **@R.AssocColl.ON@** 
 * **@C.AssocColl@** 
 
-
 We have manually optimised the structure of our lexicon using following 
 flag diacritics to restrict morhpological combinatorics - only allow compounds 
 with verbs if the verb is further derived into a noun again: 
-
 
 | Flag | Explanation 
 | --- | --- 
@@ -903,9 +877,7 @@ given the proper use of these flags.
 * **@N.NUMORTH.YES@**
 * **@D.NUMORTH.YES@**
 
-
 # Basic lexica, pointing to the other lexicon files 
-
 
 * **LEXICON Root** 
 * **Abbreviation ;** abbreviations 
@@ -945,8 +917,6 @@ This generates from merged materials
 
 * **Numeral ;** This feeds Arabi numerals, borrowed from sme 
 
-
-
 * **A_NEWWORDS ;** These are new adjectives beginning 2015-02-11 
 * **ADP_NEWWORDS ;** These are new adpositions 
 * **ADV_NEWWORDS ;** These are new adverbs 
@@ -963,18 +933,13 @@ This generates from merged materials
 
 INCOMING _lemma:stem Contlex_ sets to be distinguished from glossing in progress 
 
-
 NounRoot 
-
-
-
 
 INTERJ_ 
 Interjections 
 
 * Postposition ; is still not included 
 * Preposition ;  is still not included 
-
 
 CONJUNCTIONS 
 INTERJ_ 
@@ -1004,8 +969,6 @@ NUM_AANAR
 NUM_ATOM 
 NUM_JEAQNNN 
 
-
-
 * **LEXICON NUM_LO** kuttlo:kuttl 
 NUM_LO
 * **LEXICON NUM-01_LO** kuttlo:kuttl 
@@ -1016,7 +979,6 @@ NUM_LOAOAI
 
 * **LEXICON NUM-01_LOAOAI** lååi:l  THIS looks like allegro 
 NUM-01_LOAOAI 
-
 
 PCLE_ is here since Pcle_sms2x.xml wants it. It does nothing.
 PCLE-NEG_  is here since Pcle_sms2x.xml wants it. It adds +Neg.
@@ -1030,17 +992,20 @@ PO_ is a dummy lexicon not adding anything
 ADP-GOV-LOC_ 
 PO-GOV-GEN_ 
 
-
 Prepositions with government tagging possible 
 
 PR_tag is the lexicon adding the tag +Pr 
 PR_ is a dummy lexicon not adding anything
-
 
 PR-TEMP-GOV-LOC_ 
 
 PREFIX/A_ 
 
 SUF/A_ 
+
 * * *
-<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-sms/blob/main/../src/fst/root.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/root.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/root.lexc)</small>
+
+---
+
