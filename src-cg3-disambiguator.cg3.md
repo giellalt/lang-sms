@@ -5,7 +5,7 @@ Note: This documentation file is still work-in-progress, and should not yet be u
 
 ## Delimiters 
 
-DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>"; #
+DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>"; 
 
 Tags and sets #
 
@@ -185,8 +185,4 @@ Denne regelen fjerner Err/Orth når det er samme lemma, sjøl om morfologien er 
 * **errsub** removes err/orth forms
 
 * * *
-
 <small>This (part of) documentation was generated from [src/cg3/disambiguator.cg3](https://github.com/giellalt/lang-sms/blob/main/src/cg3/disambiguator.cg3)</small>
-
----
-
