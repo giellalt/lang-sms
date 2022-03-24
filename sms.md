@@ -10817,6 +10817,9 @@ gradation: no
 * LEXICON IV_KULSTED  kulsted:kuulâst
 * LEXICON V0_KULSTED  kulsted:kuulâst
 
+* LEXICON V_OQNNSTED  oʹnnsted:oʹnnest
+* LEXICON V0_OQNNSTED  oʹnnsted:oʹnnest
+
 * LEXICON V_AGSTED  agsted:aaggâst
 * LEXICON IV_AGSTED  agsted:aaggâst
 * LEXICON V0_AGSTED  agsted:aaggâst
