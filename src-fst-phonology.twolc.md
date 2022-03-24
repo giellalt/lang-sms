@@ -937,6 +937,11 @@ juʹrdded+V+Ind+Prs+Sg1 **think**
 oolmaž+N+Sg+Nom: **person/henkilö**
 * *o%^1VOWlmm%^V2VV%^XYY2XY%>až*
 * *oolm000%>až*
+Sajos+N+Prop+Sg+Gen:Sajoozz
+* *Sajo^1VOW{ʹØ}s{XC}^V2VV^K2GG*
+* *Sajoo0zz00*
+* ★*Sajo^1VOW{ʹØ}s{XC}^V2VV^K2GG* (is not standard language)
+* ★*Sajo00zz00* (is not standard language)
 toll+N+Sg+Gen: **fire/tuli**
 * *to%^1VOWll%^V2VV%^CC2C*
 * *tool000*
@@ -1428,6 +1433,7 @@ deriving kueʹll+N+Sg+Gen: kueʹl
 tuâjj+N+Sg+Acc: **work/työ**
 * *tuâjj%^CC2C*
 * *tuâj00*
+tuâjj+N+Sg+Gen:tuâi
 * *tuâjj%^J2I%^CC2C*
 * *tuâi000*
 * *po%^1VOWjjâs%^Pen%^V2VV%^Pen%^CC2C*

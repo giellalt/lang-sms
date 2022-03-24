@@ -2104,7 +2104,7 @@ vuäˈđeškuätt
 * LEXICON V_TAIQDDED  täiʹdded:tä%^1VOWi%{ʹØ%}dd
 * LEXICON V0_TAIQDDED  täiʹdded:tä%^1VOWi%{ʹØ%}dd
 
-*täiʹdded # examples:*
+* täiʹdded # examples:*
 * *täiʹdded:* `täiʹdded+V+Inf` (Eng. # (1))
 * *täidd:* `täiʹdded+V+Ind+Prs+Sg3` (Eng. # (2))
 * *täiʹdde:* `täiʹdded+V+Ind+Prs+Pl3` (Eng. # (3))

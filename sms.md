@@ -2248,7 +2248,7 @@ strong_geminate, long_vowel
 * +Err/GenreLeudd:õđâ SG-ABE/ACC/GEN-PL-NOM ;      niõđ Leudd 2018-09-20
 * +Err/GenreLeudd:õđâ SG-COM_N ;  Leudd 2018-09-20
 
-*nijdd # examples:*
+* nijdd # examples:*
 * *nijdd:* `nijdd+N+Sg+Nom`
 * *niõđ:* `nijdd+N+Sg+Gen`
 * *niõđ:* `nijdd+N+Sg+Acc`
@@ -2329,7 +2329,7 @@ e.g. +Sg+Loc+PxSg3 pp:p papstes
 * :%^V2VV PL-OBL ;       paappi, paappid, paappid, paappin, paappivuiʹm, paappitaa
 * :%>â ESS/PAR ;                   pappân, pappâd
 
-*papp #  examples:*
+* papp #  examples:*
 * *papp:* `papp+N+Sg+Nom`
 * *paapp:* `papp+N+Sg+Gen`
 * *paapp:* `papp+N+Sg+Acc`
@@ -2395,7 +2395,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * :%>â ESS/PAR ;                                   põrttân
 * :%^V2VV%^XYY2XY PL-OBL ;                         põõrti
 
-*algg #  examples:*
+* algg #  examples:*
 * *algg:* `algg+N+Sg+Nom`
 * *aalǥ:* `algg+N+Sg+Gen`
 * *aalǥ:* `algg+N+Sg+Acc`
@@ -2459,7 +2459,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * :%^V2VV%^XYY2XY PL-NOM ;                 aaut
 * :%^V2VV%^XYY2XY PL-OBL ;                         aauti
 
-*autt # examples:*
+* autt # examples:*
 * *autt:* `autt+N+Sg+Nom`
 * *aaut:* `autt+N+Sg+Gen`
 * *aaut:* `autt+N+Sg+Acc`
@@ -2514,7 +2514,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^V2VV%^XYY2VY N_KUUZZYZH-WITHOUT-PAL ;   vaaut-
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^XYY2VY N_KUUZZYZH-WITH-PAL ;   vaauʹt-
 
-*vahtt # examples:*
+* vahtt # examples:*
 * *vahtt:* `vahtt+N+Sg+Nom`
 * *vaaut:* `vahtt+N+Sg+Gen`
 * *vaaut:* `vahtt+N+Sg+Acc`
@@ -2571,7 +2571,7 @@ similar_to:
 * +Der+Der/Dimin+N:%^V2VV%^KK2GG N_KUUZZYZH-WITHOUT-PAL ;   kuuzz-
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^KK2GG N_KUUZZYZH-WITH-PAL ;   kuuʹzz-
 
-*kuss # examples:*
+* kuss # examples:*
 * *kuss:* `kuss+N+Sg+Nom`
 * *kuuzz:* `kuss+N+Sg+Gen`
 * *kuuzz:* `kuss+N+Sg+Acc`
@@ -2612,7 +2612,7 @@ THIS IS NOT THE SAME AS N_MUORR
 * +Der+Der/Dimin+N:%^CCC2CC N_KUUZZYZH-WITHOUT-PAL ;   ruõcc-
 * +Der+Der/Dimin+N:%^PAL%^CCC2CC N_KUUZZYZH-WITH-PAL ;   ruõʹcc-
 
-*ruõcc # examples:*
+* ruõcc # examples:*
 * *ruõcˈc:* `ruõcc+N+Sg+Nom`
 * *ruõcc:* `ruõcc+N+Sg+Gen`
 * *ruõcc:* `ruõcc+N+Sg+Acc`
@@ -2676,7 +2676,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * :%^XYY2XY PL-NOM ;       (2) čuõsk
 * :%^XYY2XY PL-OBL ;               (5) čuõskin
 
-*čuõškk # examples:*
+* čuõškk # examples:*
 * *čuõškk:* `čuõškk+N+Sg+Nom`
 * *čuõšk:* `čuõškk+N+Sg+Gen`
 * *čuõšk:* `čuõškk+N+Sg+Acc`
@@ -2732,7 +2732,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^XYY2XY N_MUORYZH-WITHOUT-PAL ;   ruõid-
 * +Der+Der/Dimin+N:%^PAL%^XYY2XY N_MUORYZH-WITH-PAL ;   ruõiʹd-
 
-*ruõidd # examples:*
+* ruõidd # examples:*
 * *ruõidd:* `ruõidd+N+Sg+Nom`
 * *ruõid:* `ruõidd+N+Sg+Gen`
 * *ruõid:* `ruõidd+N+Sg+Acc`
@@ -2793,7 +2793,7 @@ puåvv:puåvv
 * +Der+Der/Dimin+N:%^CC2C N_MUORYZH-WITHOUT-PAL ;   puåv-
 * +Der+Der/Dimin+N:%^PALE%^PAL%^CC2C N_MUORYZH-WITH-PAL ;   pueʹv-
 
-*puåvv #  examples:*
+* puåvv #  examples:*
 * *puåvv:* `puåvv+N+Sg+Nom`
 * *puåv:* `puåvv+N+Sg+Gen`
 * *puåv:* `puåvv+N+Sg+Acc`
@@ -2831,7 +2831,7 @@ N_1Y-VWCC
 * +Der+Der/Dimin+N:%^KK2GG N_MUORYZH-WITHOUT-PAL ;   liâǥǥ-
 * +Der+Der/Dimin+N:%^PALE%^PAL%^KK2GG N_MUORYZH-WITH-PAL ;   lieʹjj-
 
-*liâkk #  examples:*
+* liâkk #  examples:*
 * *liâkk:* `liâkk+N+Sg+Nom`
 * *liâǥǥ:* `liâkk+N+Sg+Gen`
 * *liâǥǥ:* `liâkk+N+Sg+Acc`
@@ -2892,7 +2892,7 @@ siâkˈk:siâkˈk
 * +Der+Der/Dimin+N:%^CCC2CC N_KUUZZYZH-WITHOUT-PAL ;   siâkk-
 * +Der+Der/Dimin+N:%^PALE%^PAL%^CCC2CC N_KUUZZYZH-WITH-PAL ;   sieʹǩǩ-
 
-*siâkk # examples:*
+* siâkk # examples:*
 * *siâkˈk:* `siâkk+N+Sg+Nom`
 * *siâkk:* `siâkk+N+Sg+Gen`
 * *siâkk:* `siâkk+N+Sg+Acc`
@@ -2965,7 +2965,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^XYY2XY N_MUORYZH-WITHOUT-PAL ;   sǩiâŋk-
 * +Der+Der/Dimin+N:%^PALE%^PAL%^XYY2XY N_MUORYZH-WITH-PAL ;   sǩieʹŋǩ-
 
-*miârkk # examples:*
+* miârkk # examples:*
 * *miârkk:* `miârkk+N+Sg+Nom`
 * *miârk:* `miârkk+N+Sg+Gen`
 * *miârk:* `miârkk+N+Sg+Acc`
@@ -3033,7 +3033,7 @@ single_consonant, long_vowel, palatalization, high_stem_vowel
 * :%^V2VV%^CC2C PL-NOM ;  tool
 * :%^V2VV%^CC2C PL-OBL ;  tooli, toolid, toolid, toolin, toolivuiʹm, toolitaa
 
-*toll #  examples:*
+* toll #  examples:*
 * *toll:* `toll+N+Sg+Nom`
 * *tool:* `toll+N+Sg+Gen`
 * *tool:* `toll+N+Sg+Acc`
@@ -3098,7 +3098,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * :%^XYY2VY PL-OBL ;     siidi
 * :%>â ESS/PAR ;         sijddâd
 
-*sijdd # examples:*
+* sijdd # examples:*
 * *sijdd:* `sijdd+N+Sg+Nom`
 * *siid:* `sijdd+N+Sg+Gen`
 * *siid:* `sijdd+N+Sg+Acc`
@@ -3156,7 +3156,7 @@ N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 * +Der+Der/Dimin+N:%^KK2GG N_KUUZZYZH-WITHOUT-PAL ;   saaǥǥ-
 * +Der+Der/Dimin+N:%^PAL%^KK2GG N_KUUZZYZH-WITH-PAL ;   saaʹjj-
 
-*saakk # examples:*
+* saakk # examples:*
 * *saakk:* `saakk+N+Sg+Nom`
 * *saaǥǥ:* `saakk+N+Sg+Gen`
 * *saaǥǥ:* `saakk+N+Sg+Acc`
@@ -3197,7 +3197,7 @@ THIS IS NOT THE SAME AS N_MUORR
 * +Der+Der/Dimin+N:%^KK2GG N_KUUZZYZH-WITHOUT-PAL ;   luõzz-
 * +Der+Der/Dimin+N:%^PAL%^KK2GG N_KUUZZYZH-WITH-PAL ;   luõʹzz-
 
-*luõss # examples:*
+* luõss # examples:*
 * *luõss:* `luõss+N+Sg+Nom`
 * *luõzz:* `luõss+N+Sg+Gen`
 * *luõzz:* `luõss+N+Sg+Acc`
@@ -3260,7 +3260,7 @@ N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 is for nouns with -âst Loc. N_Y-EPal2-21
 N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 
-*paarr # examples:*
+* paarr # examples:*
 * *paarr:* `paarr+N+Sg+Nom`
 * *paar:* `paarr+N+Sg+Gen`
 * *paar:* `paarr+N+Sg+Acc`
@@ -3291,7 +3291,7 @@ Sg_Nom: vow_mono:vow_long:vow_high:pal_no:cns_gem_jj_type
 
 * :%^J2I%^CC2C SG-ABE/ACC/GEN-PL-NOM ;	 šlaai
 
-*šlaajj # examples:*
+* šlaajj # examples:*
 * *šlaajj:* `šlaajj+N+Sg+Nom`
 * *šlaaj:* `šlaajj+N+Sg+Gen`
 * *šlaai:* `šlaajj+N+Sg+Gen+Err/Orth`
@@ -3368,7 +3368,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * :%^CC2C PL-NOM ;                 muõr
 * :%^CC2C PL-OBL ;                         muõri
 
-*muõrr # examples:*
+* muõrr # examples:*
 * *muõrr:* `muõrr+N+Sg+Nom`
 * *muõr:* `muõrr+N+Sg+Gen`
 * *muõr:* `muõrr+N+Sg+Acc`
@@ -3399,7 +3399,7 @@ similar_to: N_TUYJJ
 * Yaml: **N-kjiojj**
 * +Use/NGminip+Use/NG:%^J2I%^CC2C SG-ABE/ACC/GEN-PL-NOM ;	 (2) Pl.Nom: ǩiõi
 
-*kuõjj # examples:*
+* kuõjj # examples:*
 * *kuõjj:* `kuõjj+N+Sg+Nom`
 * *kuõj:* `kuõjj+N+Sg+Gen`
 * *kuõi:* `kuõjj+N+Use/NGminip+Use/NG+Sg+Gen`
@@ -3442,7 +3442,7 @@ similar_to: N_VUYHSS
 * +Der+Der/Dimin+N: N_MUORYZH-WITHOUT-PAL ;   miõhtt-
 * +Der+Der/Dimin+N:%^PAL N_MUORYZH-WITH-PAL ;   riiʹǩǩ-
 
-*miõhtt # examples:*
+* miõhtt # examples:*
 * *miõhtt:* `miõhtt+N+Sg+Nom`
 * *miõut:* `miõhtt+N+Sg+Gen`
 * *miõut:* `miõhtt+N+Sg+Acc`
@@ -3799,7 +3799,7 @@ Sg_Loc_Px..
 * :%>a ESS/PAR ;                           (6) älddan
 * :%^V2VV%^XYY2XY A-STEM_PL-NOM ;  (2) ääld
 
-*äldd # examples:*
+* äldd # examples:*
 * *äldd:* `äldd+N+Sg+Nom`
 * *ääld:* `äldd+N+Sg+Gen`
 * *ääld:* `äldd+N+Sg+Acc`
@@ -4720,7 +4720,7 @@ NumContLex="1.113"
 * :%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) kuʹrč-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) kuʹrčč Ess+Px..
 
-*puiʹcc # examples:*
+* puiʹcc # examples:*
 * *puiʹcc:* `puiʹcc+N+Sg+Nom`
 * *puuiʹc:* `puiʹcc+N+Sg+Gen`
 * *puuiʹc:* `puiʹcc+N+Sg+Acc`
@@ -5661,7 +5661,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) päiʹǩ-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) päiʹǩǩ- Ess+Px..
 
-*päiʹǩǩ #  examples:*
+* päiʹǩǩ #  examples:*
 * *päiʹǩǩ:* `päiʹǩǩ+N+Sg+Nom`
 * *pääiʹǩ:* `päiʹǩǩ+N+Sg+Gen`
 * *pääiʹǩ:* `päiʹǩǩ+N+Sg+Acc`
@@ -5699,7 +5699,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) läuʹǩ-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) läuʹǩǩ- Ess+Px..
 
-*läuʹǩǩ #  examples:*
+* läuʹǩǩ #  examples:*
 * *läuʹǩǩ:* `läuʹǩǩ+N+Sg+Nom`
 * *lääuʹǩ:* `läuʹǩǩ+N+Sg+Gen`
 * *lääuʹǩ:* `läuʹǩǩ+N+Sg+Acc`
@@ -5820,7 +5820,7 @@ NumContLex="1.113"
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-aâlghgh**
 
-*ǩeʹmnn #  examples:*
+* ǩeʹmnn #  examples:*
 * *ǩeʹmnn:* `ǩeʹmnn+N+Sg+Nom`
 * *ǩeeʹmn:* `ǩeʹmnn+N+Sg+Gen`
 * *ǩeeʹmn:* `ǩeʹmnn+N+Sg+Acc`
@@ -6034,7 +6034,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^VV2V%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) jäuʹr 
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) jäuʹrr Ess+Px..
 
-*jäuʹrr #  examples:*
+* jäuʹrr #  examples:*
 * *jäuʹrr:* `jäuʹrr+N+Sg+Nom`
 * *jääuʹr:* `jäuʹrr+N+Sg+Gen`
 * *jääuʹr:* `jäuʹrr+N+Sg+Acc`
@@ -6338,7 +6338,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * :%^PAL E-STEM-PX-STRENGTHEN-WITH-PAL ;			    (12) jeäʹǧˈǧ
 * +Use/NGminip+Use/NG:%^VOWRaise%^PALẸ%^PAL%^CCC2CC E-STEM-PX-ALLEGRO ;   (2)
 
-*jeäʹnn # examples:*
+* jeäʹnn # examples:*
 jeäʹnˈn: 	   jeäʹnn+N+Sg+Nom
 jiẹʹnn: 	   jeäʹnn+N+Sg+Gen
 jiẹʹnn: 	   jeäʹnn+N+Sg+Acc
@@ -7454,6 +7454,7 @@ NumContLex=""
 * +Der+Der/N2A+A: DenominalAdjsCShort ;  2015-08-23 +Der+Der/teqm
 
 čâustõk+N+Sg+Gen:čâustõõǥǥ
+Sajos:Sajo%^1VOW%{ʹØ%}s
 * +Der+Der/Dimin+N:%{XC%}%^V2VV%^K2GG N_KUUZZYZH-WITHOUT-PAL ;   kuuzz-
 * +Der+Der/Dimin+N:%{XC%}%^V2VV%^PAL%^K2GG N_KUUZZYZH-WITH-PAL ;   kuuʹzz-
 
@@ -8446,7 +8447,7 @@ Completion needed 2015-09-19
 
 # SKOLT SAAMI PROPERNOUN MORPHOLOGY 
 
-THE LEXICON *@OUTSIDE_LEXICONS@* ASSIGNS THE TAG +Attr
+THE LEXICON *`OUTSIDE_LEXICONS`* ASSIGNS THE TAG +Attr
 
 * LEXICON PROP_SEM/MAL_TOOBDYLM  toobdâlm:toobdâlm
 
@@ -10653,7 +10654,7 @@ vuäˈđeškuätt
 * LEXICON V_TAIQDDED  täiʹdded:tä%^1VOWi%{ʹØ%}dd
 * LEXICON V0_TAIQDDED  täiʹdded:tä%^1VOWi%{ʹØ%}dd
 
-*täiʹdded # examples:*
+* täiʹdded # examples:*
 * *täiʹdded:* `täiʹdded+V+Inf` (Eng. # (1))
 * *täidd:* `täiʹdded+V+Ind+Prs+Sg3` (Eng. # (2))
 * *täiʹdde:* `täiʹdded+V+Ind+Prs+Pl3` (Eng. # (3))
@@ -11963,6 +11964,11 @@ juʹrdded+V+Ind+Prs+Sg1 **think**
 oolmaž+N+Sg+Nom: **person/henkilö**
 * *o%^1VOWlmm%^V2VV%^XYY2XY%>až*
 * *oolm000%>až*
+Sajos+N+Prop+Sg+Gen:Sajoozz
+* *Sajo^1VOW{ʹØ}s{XC}^V2VV^K2GG*
+* *Sajoo0zz00*
+* ★*Sajo^1VOW{ʹØ}s{XC}^V2VV^K2GG* (is not standard language)
+* ★*Sajo00zz00* (is not standard language)
 toll+N+Sg+Gen: **fire/tuli**
 * *to%^1VOWll%^V2VV%^CC2C*
 * *tool000*
@@ -12454,6 +12460,7 @@ deriving kueʹll+N+Sg+Gen: kueʹl
 tuâjj+N+Sg+Acc: **work/työ**
 * *tuâjj%^CC2C*
 * *tuâj00*
+tuâjj+N+Sg+Gen:tuâi
 * *tuâjj%^J2I%^CC2C*
 * *tuâi000*
 * *po%^1VOWjjâs%^Pen%^V2VV%^Pen%^CC2C*
@@ -13986,7 +13993,7 @@ IRREGULAR NOUNS
 
 Some verbs have variant forms:
 
-*variant forms examples:*
+* variant forms examples:*
 * *leämmaž:* `leeʹd+V+PrfPrc`
 * *leämma:* `leeʹd+V+PrfPrc`
 

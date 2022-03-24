@@ -13,7 +13,7 @@ IRREGULAR NOUNS
 
 Some verbs have variant forms:
 
-*variant forms examples:*
+* variant forms examples:*
 * *leämmaž:* `leeʹd+V+PrfPrc`
 * *leämma:* `leeʹd+V+PrfPrc`
 
