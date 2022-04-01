@@ -392,7 +392,9 @@ CLASS
 * LEXICON A_PUUQTTES   puuʹttes:pu%^1VOWtt
 * : A-01_PUUQTTES ;    puuʹttes:pu%^1VOWttes
 
-* LEXICON A_KOAQSHKHES  kååʹšǩes:kåškk
+* LEXICON A_KOAQSHKHES  kååʹšǩes:kå%^1VOW%{ʹØ%}škk
+
+* LEXICON A_JYYQLDES  jââʹldes:jâ%^1VOW%{ʹØ%}ldd
 
 * LEXICON A_KHEEQLES   ǩeeʹles:ǩeâlˈl
 * :es A-01_KHEEQLES ; 	ǩeeʹles:ǩeâlˈles
