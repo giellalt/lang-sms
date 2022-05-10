@@ -4885,7 +4885,7 @@ Palatalization loss in Sg.Ill
 stemtype n-stem pååttaǩ:pååttaǩ
 Palatalization loss in Sg.Ill
 * Yaml: **N-paattakj**
-* :%^RmVow%^PALK VOONYS-STEM-PX ;  såbbr-
+* :%^RmVow%^PALNo VOONYS-STEM-PX ;  såbbr-
 
 stemtype n-stem jânnam:jânnam
 N_GEN2X3-NOM2X1
