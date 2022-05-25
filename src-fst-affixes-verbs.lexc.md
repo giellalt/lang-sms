@@ -1842,8 +1842,8 @@ Weak-StableV-Palatalization
 Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 
 Weak-RaisedVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL%^CC2C%> VSUF-POTENTIAL_ED ;  (6 pueʹđež
-* +Use/NGminip+Use/NG:%^VOWRaise%^PALÕ%^PAL%^CC2C%> VSUF-POTENTIAL_ED ;  (6 puõʹđež
+* +Use/NGminip+Use/NG:%^VOWRaise%^PALE%^PAL%^CC2C%> VSUF-POTENTIAL_ED ;  (6 pueʹđež
+* :%^VOWRaise%^PALÕ%^PAL%^CC2C%> VSUF-POTENTIAL_ED ;  (6 puõʹđež
 * :%^VOWRaise%^PALÕ%^PAL%^CC2C VSUF-IND-PRT-SG3-PL1-PL2_ ;  ( puõʹđi
 * +Pot+Sg3:%^PAL%^CC2C%>ež   K ;  (6   puäʹđež
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
@@ -1865,7 +1865,7 @@ Imprt+Pl3
 Allegro (10)
 
 (11) Present Participle:
-* :%^VOWRaise%^PALE%^PAL%> FOR-VSUF-PRSPRC_ED ;  (11) pueʹtti
+* +Use/NG:%^VOWRaise%^PALE%^PAL%> FOR-VSUF-PRSPRC_ED ;  (11) pueʹtti
 * :%^VOWRaise%^PALÕ%^PAL%> FOR-VSUF-PRSPRC_ED ;  (11) puõʹtti
 
 (12) Weak-RaisedVowel-NoPalatalization
