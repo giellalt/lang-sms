@@ -832,7 +832,8 @@ Compounding
 ## Flag diacritics 
 
 | Flag | Explanation 
-≈ * **+Use/-PMatch** Used with Kin terms and Ant 
+| --- | ---
+* **@P.AssocColl.ON@** Used with Kin terms and Ant 
 * **@R.AssocColl.ON@** 
 * **@C.AssocColl@** 
 
