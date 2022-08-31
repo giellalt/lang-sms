@@ -1336,7 +1336,7 @@ vueʹn+N+Sg+Nom: **mother-in-law/anoppi**
 * *vuâ0nˈn%^PALE%^PAL%^CCC2C*
 * *vueʹn00000*
 jeäʹnn+N+Sg+Loc+PxSg1: **mother/äiti**
-* *jeä0%{ʹØ%}nˈn%^PALE%^PAL%^CCC2CAllegro%>stan*
+* *jeä0%{ʹØ%}nˈn%^PALẸ%^PAL%^CCC2CAllegro%>stan*
 * *jiẹˈʹn00000%>stan*
 
 **Even syllabic nouns I, with extra lengthening of vowel ij>ii/uv>uu and dd>d** - used with  +N+Sg+Nom > +N+Sg+Gen, sijdd > siid
