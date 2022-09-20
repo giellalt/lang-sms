@@ -28,10 +28,8 @@ Documentation
 
 Documentation can be found here:
 
-[In source documentation generated with github
- pages](https://gilellalt.github.io/lang-sms/)
--   <https://giellalt.uit.no/lang/sms/j-sms.html> (analyser)
--   <https://giellalt.uit.no/index.html> (infrastructure)
+-   <https://giellalt.uit.no/lang/sms/j-sms.html>
+-   <https://giellalt.uit.no/index.html>
 
 Core dependencies
 -----------------
