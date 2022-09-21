@@ -29,7 +29,7 @@ Documentation
 Documentation can be found here:
 
 - [Language specific documentation](https://giellalt.github.io/lang-sms/)
--   <https://giellalt.uit.no/index.html>
+- [General documentation](https://giellalt.github.io/)
 
 Core dependencies
 -----------------
