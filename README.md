@@ -4,6 +4,8 @@ The Skolt Sami morphology and tools
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-sms)](https://github.com/giellalt/lang-sms/issues)
 [![Build Status](https://divvun-tc.thetc.se/api/github/v1/repository/giellalt/lang-sms/main/badge.svg)](https://github.com/giellalt/lang-sms/actions)
 [![License](https://img.shields.io/github/license/giellalt/lang-sms)](https://github.com/giellalt/lang-sms/blob/main/LICENSE)
+[![Desktop speller download](https://img.shields.io/badge/download%40latest-desktop--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-sms?platform=desktop&channel=nightly)
+[![Mobile speller download](https://img.shields.io/badge/download%40latest-mobile--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-sms?platform=mbile&channel=nightly)
 
 This directory contains source files for the Skolt Sami language
 morphology and dictionary. The data and implementation are licenced
@@ -15,15 +17,22 @@ other licencing choices.
 Install proofing tools and [keyboards](https://github.com/giellalt/keyboard-sms)
 for the Skolt Sami language by using the [Divvun Installer](http://divvun.no)
 
+Download and test speller files
+-------------------------------
+
+The speller files downloadable at the top of this page (the `*.bhfst` files) can
+be used with [divvunspell](https://github.com/divvun/divvunspell), to test their
+performance. These files are the exact same ones as installed on users' computers
+and mobile phones. Desktop and mobile speller files differ from each other in the
+error model and should be tested separately — thus also two different downloads.
+
 Documentation
 -------------
 
 Documentation can be found here:
 
-[In source documentation generated with github
- pages](https://gilellalt.github.io/lang-sms/)
--   <https://giellalt.uit.no/lang/sms/j-sms.html> (analyser)
--   <https://giellalt.uit.no/index.html> (infrastructure)
+- [Language specific documentation](https://giellalt.github.io/lang-sms/)
+- [General documentation](https://giellalt.github.io/)
 
 Core dependencies
 -----------------
