@@ -5888,7 +5888,8 @@ NumContLex="1.113
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-kerjj**
 * :%^PAL SG-NOM ;		  	 (1) Sg.Nom: ǩeʹrjj
-* :%^V2VV%^PAL%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;  (2) Pl.Nom: ǩeeʹrj
+* :%^V2VV%^PAL%^XYY2XY E-STEM_SG-ABE/ACC/GEN ;  (2) Pl.Nom: ǩeeʹrj
+* :%^V2VV%^PAL%^XYY2XY PL-NOM ;  (2) Pl.Nom: ǩeeʹrj
 * : E-STEM_SG-ILL ;	     			    (3)  Sg.Ill: ǩẹrjja
 * :%^V2VV%^PAL%^XYY2XY%>e SG-LOC ;	    (4) Sg.Loc: ǩeeʹrjest
 * :%^V2VV%^PAL%^XYY2XY SG-COM_IN ;	    (5) Sg.Com: ǩeeʹrjin
@@ -5926,7 +5927,8 @@ NumContLex="1.113
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-kerjj**
 * :%^PAL SG-NOM ;		  	 (1) Sg.Nom: teʹkstt
-* :%^V2VV%^PAL%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;  (2) Pl.Nom: teeʹkst
+* :%^V2VV%^PAL%^XYY2XY E-STEM_SG-ABE/ACC/GEN ;  (2) Pl.Nom: teeʹkst
+* :%^V2VV%^PAL%^XYY2XY PL-NOM ;  (2) Pl.Nom: teeʹkst
 * : E-STEM_SG-ILL ;	     			    (3)  Sg.Ill: tekstta
 * :%^V2VV%^PAL%^XYY2XY%>e SG-LOC ;	    (4) Sg.Loc: teeʹkstest
 * :%^V2VV%^PAL%^XYY2XY SG-COM_IN ;	    (5) Sg.Com: teeʹkstin
@@ -11660,6 +11662,8 @@ reäkkad+V+Ind+Prt+Pl3
 * *jiõʹlˈl0000>e*
 
 **Even syllabic verbs I, diphthong raising beginning with ä:a u** - deriving läullad > laullum
+* *rääuh^VOWRaise>u*
+* *raauh0>u*
 * *ä^1VOWldd^VOWRaise>u*
 * *a0ldd0>u*
 * *ä^1VOWldd^V2VV^VOWRaise^XYY2XY>u*

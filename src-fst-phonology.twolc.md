@@ -626,6 +626,8 @@ reäkkad+V+Ind+Prt+Pl3
 * *jiõʹlˈl0000>e*
 
 **Even syllabic verbs I, diphthong raising beginning with ä:a u** - deriving läullad > laullum
+* *rääuh^VOWRaise>u*
+* *raauh0>u*
 * *ä^1VOWldd^VOWRaise>u*
 * *a0ldd0>u*
 * *ä^1VOWldd^V2VV^VOWRaise^XYY2XY>u*
