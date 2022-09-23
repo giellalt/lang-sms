@@ -10733,6 +10733,28 @@ Allegro (10)
 (12)
 * :%^VOWRaise%^XYY2XY VSUF-CHED_ED ;   (12) +Der+Der/ched: 
 
+* ceäʹlǩǩed # examples:*
+
+* ceäʹlǩǩed+V+Imprt+Pl2 # (1) examples:*
+
+* ceäʹlǩǩed+V+Ind+Prs+Sg3 # (2) examples:*
+
+* ceäʹlǩǩed+V+Ind+Prs+Pl3 # (3) examples:*
+
+* ceäʹlǩǩed+V+Ind+Prt+Pl3 # (4) examples:*
+
+* ceäʹlǩǩed+V+Imprt+Sg2 # (5) examples:*
+
+* ceäʹlǩǩed+V+Pot+Sg3 # (6) examples:*
+
+* ceäʹlǩǩed+V+Imprt+Sg3 # (7) +V+Cond+Sg3 ceälkči, +V+Ind+Prs+Sg1 ceälkam examples:*
+
+* ceäʹlǩǩed+V+Pass+PrfPrc # (8) examples:*
+
+* ceäʹlǩǩed+V+Imprt+Pl3 # (9) +V+Act+PrfPrc ceälkkam examples:*
+
+* ceäʹlǩǩed+V+Act+PrsPrc # (11) examples:*
+
 * LEXICON V_MEAQTTTED  meäʹtted:meätˈt
 * LEXICON V0_MEAQTTTED  meäʹtted:meätˈt
 (1) +V+Inf: meäʹtˈted
