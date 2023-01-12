@@ -12941,7 +12941,6 @@ Pre-derivational POS tags for CG processing
 symbols ? 
 * **+Ine** 
 * **+Ela** 
-* **+ACR** 
 
 ### Possessive suffix 
 * **+PxSg1** 
@@ -13435,17 +13434,17 @@ an extra lemma attribute is inserted in the st element, e.g. lemma="tõlvvad"
 
 ### Other tags 
 
-* **+ABBR** Abbreviation 
+* **+ABBR** = Abbreviation 
+* **+ACR** = Acronym 
 * **+Symbol** = independent symbols in the text stream, like £, €, © 
-* **+ACR**  Acronym 
-* **+CLB**  Clause border (full stop, comma..) 
-* **+CLBfinal**  Sentence final abbreviated expression ending in full stop, the full stop is ambiguous
-* **+PUNCT**  punctuation 
-* **+LEFT**  left paranthesis 
-* **+RIGHT**  right paranthesis 
+* **+CLB** = Clause border (full stop, comma..) 
+* **+CLBfinal** = Sentence final abbreviated expression ending in full stop, the full stop is ambiguous
+* **+PUNCT** = punctuation 
+* **+LEFT** = left paranthesis 
+* **+RIGHT** = right paranthesis 
+* **+Prefix** = prefix 
+* **+Dyn** = Dynamically generated (acronyms) 
 * **^GUESSNOUNROOT** 
-* **+Dyn**  Dynamically generated (acronyms) 
-* **+Prefix**  prefix 
 
 ### Punctuation 
 * **+HYPH** 
