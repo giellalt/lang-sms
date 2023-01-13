@@ -831,6 +831,9 @@ pess+N+Sg+Acc: **rifle/pyssy**
 veʹrǧǧ+N+Der/lazh+A+Sg+Nom
 * *vẹ%^1VOW%{ʹØ%}rgg%^V2VV%^XYY2XY>laž*
 * *vẹẹ0rǥ000>laž*
+čẹẹuʹres+N+Sg+Nom = otter
+* *čẹ^1VOWu{ʹØ}rres^Pen^V2VV^Pen^PAL^Pen^XYY2XY*
+* *čẹẹuʹr0es000000*
 viǯǯâd+V+Imprt+Sg2 **fetch/noutaa**
 * *vi%^1VOWǯǯ%^V2VV%^VOWLower%>as*
 * *vẹẹǯǯ00%>as*
@@ -1178,6 +1181,9 @@ täʹhtt+N+Pl+Nom: **bone/luu**
 * *tä%^1VOW%{ʹØ%}h%{ʹØ%}tt%^PAL*
 * *tääuʹt0000*
 
+čẹẹuʹres+N+Sg+Nom = otter
+* *čẹ^1VOWu{ʹØ}rres^Pen^V2VV^Pen^PAL^Pen^XYY2XY*
+* *čẹẹuʹr0es000000*
 siõrrâd+V+Ind+Prs+Pl3: **play/leikkiä**
 * *siõ%{ʹØ%}r0r%^VOWLower%^PALÄ%^PAL%^CC2CCC%>e*
 * *seäʹrˈr0000%>e*
