@@ -1573,6 +1573,9 @@ põrtt+N+Pl+Nom **house/talo**
 piiutâs+N+Sg+Nom **clothing/vaate**
 * *pi%^1VOWhttâs%^Pen%^V2VV%^Pen%^XYY2VY*
 * *piiut0âs0000*
+kääđas+N+Sg+Nom
+* *kä^1VOWttas^Pen^V2VV^Pen^CC2C*
+* *kääđ0as0000*
 
 **Even syllabic verbs I, third consonant loss** - lgg:lǥ, Vow Ca Cx Cx:0, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants following consonant at coda that become single consonants in gradation
 
