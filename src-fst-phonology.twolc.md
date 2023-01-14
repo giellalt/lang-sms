@@ -1334,6 +1334,9 @@ vuäʹbb+N+Sg+Loc+PxSg2
 joorbâs+A+Sg+Nom
 * *jo^1VOWrbbâs^Pen^V2VV^Pen^XYY2XY*
 * *joorb0âs0000*
+kuâbsted
+* *kuâ{ˈ1}bbast^Pen^CC2CAllegro^RmVow*
+* *kuâ0b00st000*
 
 **Even syllabic verbs I, second consonant loss p:0** - used in
 * *ǩiâpp^CC2C*
