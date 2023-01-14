@@ -4058,6 +4058,11 @@ NumContLex="1.113"
 čuäʹrvv+N+Ess+PxSg1
 (12) čuäʹrvvinan
 
+čuäʹrvv
+čuẹʼrv
+čuäʹrvv+N+Ess
+čuäʼrvven
+
 * LEXICON N_NEUQLL  neuʹll:ne%^1VOWull 
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
@@ -4439,6 +4444,17 @@ is for nouns with stem *i* + *-est* +Sg+Loc; all stem other than the +Sg+Nom are
 * :%>%{ʼØ%}j%>e ESS/PAR ;  kaappjân 
 * +Use/NGminip+Use/NG:%>%{ʼØ%}j%>â ESS/PAR ;  kaappjân 
 * +Use/NGminip+Use/NG:%^CC2C%>â ESS/PAR ;  kaavân
+* :%>ǥ VOONYS-STEM-PX ;  võnns-
+* :%>%{ʼØ%}j VOONYS-STEM-PX ;  võnns-
+
+* LEXICON N_JAAM  jaam:ja%^1VOWmm
+* LEXICON NMN_JAAM  kaav:kaapp
+is for nouns with stem *i* + *-est* +Sg+Loc; all stem other than the +Sg+Nom are X3; the *i* does not occur in +Par 
+* Yaml: **N-jaam**
+* There are several stem types 
+* :%>%{ʼØ%}j%>e ESS/PAR ;  jammjân 
+* +Use/NGminip+Use/NG:%>%{ʼØ%}j%>â ESS/PAR ;  jammjân 
+* +Use/NGminip+Use/NG:%^V2VV%^CC2C%>â ESS/PAR ;  jaamân
 * :%>ǥ VOONYS-STEM-PX ;  võnns-
 * :%>%{ʼØ%}j VOONYS-STEM-PX ;  võnns-
 
