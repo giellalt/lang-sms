@@ -3740,8 +3740,11 @@ LEXICON NMN_JUQVJJ
 :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) juʹvjj Ess+Px..
 
 LEXICON N_JUQVJJ-PL
-	N_JUQVJJ ;
-	
+:%^PAL R ;
+:%^PAL%^XYY2VY PL-NOM ;
+:%^PAL%>e ESS/PAR ; ! ess and prt without
+:%^PAL%^XYY2VY%> E-STEM_PL-OBL ;
+
 LEXICON N_VUEQSS !!= * @CODE@  vueʹss:vuâss
 !!! inflection_type="?"
 ! vowel: diphthong
@@ -5914,6 +5917,16 @@ LEXICON NMN_CHUAQRVV
 !! čuäʹrvv+N+Ess+PxSg1
 !! (12) čuäʹrvvinan
 
+LEXICON N_CHUAQRVV-PL
+:%^PAL R ;
+!! čuäʹrvv
+:%^PALẸ%^PAL%^XYY2XY PL-NOM ;
+!! čuẹʼrv
+:%^VOWRaise%^PALE%^PAL%^XYY2XY E-STEM_PL-OBL ;		! čueʼrvin
+:%^PAL%>e ESS/PAR ;
+!! čuäʹrvv+N+Ess
+!! čuäʼrvven
+
 LEXICON N_NEUQLL !!= * @CODE@ neuʹll:ne%^1VOWull 
 !!! inflection_type="?"
 ! vowel: monophthong
@@ -6769,6 +6782,36 @@ LEXICON NMN_KAAV !!= * @CODE@ kaav:kaapp
 :%>ǥ VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 :%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
+LEXICON N_JAAM !!= * @CODE@ jaam:ja%^1VOWmm
+!!! inflection_type="3"
+: NMN_JAAM ;
+LEXICON NMN_JAAM !!= * @CODE@ kaav:kaapp
+! gradation: yes
+! vowel_center: monophthong
+! consonant_center: single_consonant
+! sg_nom_grade: weak
+!! is for nouns with stem *i* + *-est* +Sg+Loc; all stem other than the +Sg+Nom are X3; the *i* does not occur in +Par 
+!!
+!! * Yaml: **N-jaam**
+!! * There are several stem types 
+:%^V2VV%^CC2C SG-NOM ;
+:%>i SG-ACC/GEN ;
+:%>ǥ%>a SG-ABE_tta ;
++Use/NGminip+Use/NG:%>i SG-ABE ;
+:%>ǥ%>a SG-ILL ;
++Use/NGminip+Use/NG:%>%{ʼØ%}j%>a SG-ILL ;
+:%>%{ʼØ%}j%>e SG-LOC ;
+:%>%{ʼØ%}j SG-COM_IN/PL-OBL ;
+:%>i PL-NOM ;
+:%>%{ʼØ%}j%>e ESS/PAR ; !!= * @CODE@ jammjân 
++Use/NGminip+Use/NG:%>%{ʼØ%}j%>â ESS/PAR ; !!= * @CODE@ jammjân 
++Use/NGminip+Use/NG:%^V2VV%^CC2C%>â ESS/PAR ; !!= * @CODE@ jaamân
++Der+Der/Dimin+N:%>ǥ N_KUYLAZH ;
+:%^CC2C A_DER/SAZH ;
++Use/NGminip+Use/NG+Der+Der/Dimin+N:%>%{ʼØ%}j N_KUYLAZH ;
+:%>ǥ VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+:%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+
 LEXICON N_POOUS !!= * @CODE@ poous:pohss
 !!! inflection_type="3"
 : NMN_POOUS ;
@@ -7346,7 +7389,7 @@ LEXICON NMN_VYYID !!= * @CODE@ vââid:võ%^1VOWidd
 !! similar_to:
 :%^V2VV%^VOWLower%^XYY2XY%> SG-NOM ;
 :%>um SG-ABE/ACC/GEN-PL-NOM ; ! võiddum
-:%>ma SG-ILL ;
+:%^VOWLower%>ma SG-ILL ;
 :%>me SG-LOC ;
 :%>m SG-COM_IN ;
 :%^V2VV%^VOWLower%^XYY2XY%>me ESS/PAR ; 
