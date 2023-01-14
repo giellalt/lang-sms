@@ -348,9 +348,6 @@ teevvad+V+Prt+4:
 eʹǩrded+V+Inf
 * *eeʹǩǩerd^Pen^VV2V^Pen^CC2C^RmVow>ed*
 * *e0ʹǩ00rd00000>ed*
-cieʹǩǩes+N+Sg+Ill: **trick, type of ear mark/tikki, pykälä**
-* *ciâ{ʹØ}kˈkes^Pen^VOWLower^RmVow>a*
-* *ceä0kˈk0s000>a*
 
 Ââvel+N+Prop+Sg+Loc  **Ivalo**
 * *Ââvel^RmVow>est*
@@ -550,6 +547,9 @@ mieʹlǩǩ+N+Sg+Nom: **milk/maito**
 * *bieʹs0s0000*
 * *ceägˈg^VOWRaise>u*
 * *ciâgˈg0>u*
+cieʹǩǩes+N+Sg+Ill: **trick, type of ear mark/tikki, pykälä**
+* *ceä{ʹØ}kˈkes^Pen^PALẸ^Pen^PAL^Pen^CCC2CC*
+* *ciẹʹǩ0ǩes000000*
 
 **Vowel raising ẹ:i** - used in
 * *pẹ^1VOWss^VOWRaise>u*
@@ -1252,6 +1252,11 @@ huʹvǧǧi+N+Sg+Nom: **rattle/suhistin**
 hääʹsǩ Perhaps the stem should simply be **häskk**
 * *hää0sk^PAL*
 * *hääʹsǩ0*
+
+cieʹǩǩes+N+Sg+Ill: **trick, type of ear mark/tikki, pykälä**
+* *ceä{ʹØ}kˈkes^Pen^PALẸ^Pen^PAL^Pen^CCC2CC*
+* *ciẹʹǩ0ǩes000000*
+
 mieʹlǩǩ+N+Sg+Acc: **milk/maito**
 * *meâ0lkk^VOWRaise^PALE^PAL^CC2C*
 * *mieʹlǩ00000*
@@ -1411,6 +1416,9 @@ väžsted+V+Inf
 **z:0** - used in
 * *ǩeâsttez^PenVow2a^RmCns*
 * *ǩeâstta000*
+juzrdâd+V+Inf:
+* *juuzzârd^Pen^VV2V^Pen^CC2C^RmVow*
+* *ju0z00rd00000*
 
 **Even syllabic verbs I, cg for đ** - used with  ǩiđđ:ǩiiđ
 * *ǩi^1VOWđđ^V2VV^CC2C*

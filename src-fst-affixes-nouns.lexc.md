@@ -5138,7 +5138,7 @@ IN PENULTIMATE E:0
 * LEXICON NMN_NJUAEQMMEL  = stemtype l-stem njuäʹmmel:njuäʹmˈmel
 * Yaml: **njuammel, njuunnjel, aappal** 
 
-* LEXICON N_CIEAQKHKHES  cieʹǩǩes:ciâkˈkes
+* LEXICON N_CIEAQKHKHES  cieʹǩǩes:ceä%{ʹØ%}kˈkes
 * **NMN_CIEAQKHKHES** = Koulukielioppi stemtype II 9 (29)
 * Yaml: **N-ciekkes** 
 * :%^Pen%^VOWLower%^RmVow VOONYS-STEM-PX ;  võnns-
