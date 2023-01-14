@@ -4142,6 +4142,10 @@ jieʹnnitaa: 	   jeäʹnn+N+Pl+Abe
 jeännaž: 	   jeäʹnn+N+Der+Der/Dimin+N+Sg+Nom
 jeänna: 	   jeäʹnn+N+Der+Der/Dimin+N+Sg+Gen
 
+* :%^VOWRaise%^PALẸ%^PAL%^CCC2CC PL-NOM ;   (2) jiẹʹǧǧ
+* :%^VOWRaise%^PALE%^PAL%^CCC2CC E-STEM_PL-OBL ;   (5) jieʹǧǧin
+* :%^PAL%>e ESS/PAR ;       (6) jeäʹǧˈǧen, (7) jeäʹǧˈǧed
+
 * LEXICON E-STEM_SG-NOM  (1)
 
 * LEXICON E-STEM_SG-ABE/ACC/GEN  (2)
@@ -4574,7 +4578,7 @@ CLASS 2 NOMINALS with low stem vowel and u-stems
 * LEXICON N_CHUYNJ   čuânj:čuõnˈnj
 *   is for nouns with *-est* +Loc
 * Yaml: **N-sual**
-* There are several stem types
+* Ther aere several stem types
 
 * LEXICON N_PUYGXGX  puâǥǥ:puõkˈk
 *   is for nouns with *-est* +Loc
@@ -5692,7 +5696,7 @@ inflection_type="?"
 NumContLex="1.2"
 * sirddi:sirddi
 NumContLex="1.2"
-* :%^I2J VOONYS-STEM-PX ;  võnns-
+* :%^Pen%^PAL%^I2J VOONYS-STEM-PX ;  võnns-
 
 * LEXICON N_PRSPRC-VHYY-I  lahtti:la%^1VOWhtti
 * LEXICON NMN_PRSPRC-VHYY-I  lahtti:la%^1VOWhtti
