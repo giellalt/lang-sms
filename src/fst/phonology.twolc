@@ -429,9 +429,6 @@ Rules
 !! eʹǩrded+V+Inf
 !!€ eeʹǩǩerd^Pen^VV2V^Pen^CC2C^RmVow>ed
 !!€ e0ʹǩ00rd00000>ed
-!! cieʹǩǩes+N+Sg+Ill: **trick, type of ear mark/tikki, pykälä**
-!!€ ciâ{ʹØ}kˈkes^Pen^VOWLower^RmVow>a
-!!€ ceä0kˈk0s000>a
 
    [OnSetC|PenUltCns]  _ (0:ʼ|%{ʼØ%}:) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+|i:|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ;
 !! Ââvel+N+Prop+Sg+Loc  **Ivalo**
@@ -749,6 +746,11 @@ Rules
 !!€ bieʹs0s0000
 !!€ ceägˈg^VOWRaise>u
 !!€ ciâgˈg0>u
+ OnSetC  _ [ä:|â:] (u|i) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] Vow: Cns:* (%^Pen: %^VV2V:)  [%^Pen: %^VOWRaise:|%^Pen: %^PALẸ:] ;
+!! cieʹǩǩes+N+Sg+Ill: **trick, type of ear mark/tikki, pykälä**
+!!€ ceä{ʹØ}kˈkes^Pen^PALẸ^Pen^PAL^Pen^CCC2CC
+!!€ ciẹʹǩ0ǩes000000
+
 
 "Vowel raising ẹ:i"
 !! **@RULENAME@** - used in
@@ -1833,13 +1835,19 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ|%{ʹØ%}:) t t: BetweenStemAndConsGrade %^XYY2IY: 
 "Even-syllabic verbs I, Palatalization of k:ǩ here"
 !! **@RULENAME@** - used in
  k:ǩ <=>
- Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) (Cns:)   _ (0:) [k: |%{XC%}: ] [BetweenStemAndPALNo |Vow: Cns:+ PenBetweenStemAndPALNo %^Pen: ] (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: ([(%^Allegro:) (%^PAL:) %^CC2C:|(%^Allegro:) (%^PAL:) %^CC2CAllegro:|%^CCC2CC:|%^XYY2XY:]) (%^VC:) RBound ;
+ Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) (Cns:)   _ (0:|ˈ:) [k: |%{XC%}: ] BetweenStemAndPALNo  (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: ([(%^Allegro:) (%^PAL:) %^CC2C:|(%^Allegro:) (%^PAL:) %^CC2CAllegro:|%^CCC2CC:|%^XYY2XY:]) (%^VC:) RBound ;
+ Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) (Cns:)   _ (0:|ˈ:) [k: |%{XC%}: ] Vow: Cns:+ PenBetweenStemAndPALNo (%^Pen: %^PALE:|%^Pen: %^PALÄ:|%^Pen: %^PALẸ:) %^Pen: %^PAL: ([(%^Pen: %^Allegro:) (%^Pen: %^PAL:) %^CC2C:|(%^Pen: %^Allegro:) (%^Pen: %^PAL:) %^Pen: %^CC2CAllegro:|%^Pen: %^CCC2CC:|%^Pen: %^XYY2XY:]) (%^VC:) RBound ;
 
  Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns: - k:]   _ (k: |%{XC%}:) [BetweenStemAndPALNo |Vow: Cns:+ PenBetweenStemAndPALNo %^Pen: ] (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: ([(%^Allegro:) (%^PAL:) %^CC2C:|(%^Allegro:) (%^PAL:) %^CC2CAllegro:|%^XYY2XY:]) (%^VC:) RBound ;
 !! hääʹsǩ Perhaps the stem should simply be **häskk**
 !!€ hää0sk^PAL
 !!€ hääʹsǩ0
- Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) (Cns:)   _ (0:) [k: |%{XC%}:] Vow: Cns:+ PenBetweenStemAndPALNo (%^Pen: [%^PALE:|%^PALÄ:|%^PALẸ:]) %^Pen: %^PAL: (%^Pen: [(%^Allegro:) (%^PAL:) %^CC2C:|(%^Allegro:) (%^PAL:) %^CC2CAllegro:|%^XYY2XY:]) (%^VC:) RBound ;
+ Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) (Cns:)   _ (0:|ˈ:) [k: |%{XC%}:] Vow: Cns:+ PenBetweenStemAndPALNo (%^Pen: [%^PALE:|%^PALÄ:|%^PALẸ:]) %^Pen: %^PAL: ( [(%^Pen: %^Allegro:) (%^Pen: %^PAL:) %^Pen: %^CC2C:|(%^Pen: %^Allegro:) (%^Pen: %^PAL:) %^Pen: %^CC2CAllegro:|%^Pen: %^XYY2XY:]) (%^VC:) RBound ;
+
+!! cieʹǩǩes+N+Sg+Ill: **trick, type of ear mark/tikki, pykälä**
+!!€ ceä{ʹØ}kˈkes^Pen^PALẸ^Pen^PAL^Pen^CCC2CC
+!!€ ciẹʹǩ0ǩes000000
+
 !! mieʹlǩǩ+N+Sg+Acc: **milk/maito**
 !!€ meâ0lkk^VOWRaise^PALE^PAL^CC2C
 !!€ mieʹlǩ00000
@@ -2041,7 +2049,7 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ|%{ʹØ%}:) t t: BetweenStemAndConsGrade %^XYY2IY: 
 ! njeiddad > njeeid
 ! 2012-06-12 v:u allows for uʹvdded
 !! - idd:id, +Imp+Sg2, +Ind+Prs+ConNeg double consonants following vowel and "i" at coda that become single consonants in gradation
-         d _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m]  PenBetweenStemAndConsGrade [%^Pen: [(%^Allegro:) (%^PAL:) %^CC2C:|(%^Allegro:) (%^PAL:) %^CC2CAllegro: ]|%^Pen: %^XYY2XY:] ;
+         d _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m]  PenBetweenStemAndConsGrade [(%^Pen: %^Allegro:) (%^Pen: %^PAL:) %^Pen: %^CC2C:|(%^Pen: %^Allegro:) (%^Pen: %^PAL:) %^Pen: %^CC2CAllegro: |%^Pen: %^XYY2XY:|%^Pen: %^XYY2VY:] ;
 !! uudâs+N+Sg+Nom: **creature/luomus**
 !!€ uvddâs^Pen^XYY2VY
 !!€ uud0âs00
@@ -2111,6 +2119,10 @@ h:i <=> Vow: (%^1VOW:) _ (:ʹ|%{ʹØ%}:) t t: BetweenStemAndConsGrade %^XYY2IY: 
       Vow: _ PenBetweenStemAndVowelLoss (%^PenVow2a:) %^RmCns: ;
 !!€ ǩeâsttez^PenVow2a^RmCns
 !!€ ǩeâstta000
+        (ʹ:|0:ʹ|%{ʹØ%}:) (Cns:) z _ Vow: [Cns:+|n j|l m|s ǩ:|s t|š ǩ:|š m] PenBetweenStemAndConsGrade  [(%^Pen: %^Allegro:) (%^Pen: %^PAL:) %^Pen: %^CC2C:|(%^Pen: %^Allegro:) (%^Pen: %^PAL:) %^Pen: %^CC2CAllegro:|%^Pen: %^XYY2XY:] ;
+!! juzrdâd+V+Inf:
+!!€ juuzzârd^Pen^VV2V^Pen^CC2C^RmVow
+!!€ ju0z00rd00000
 
 "Even syllabic verbs I, cg for đ"
 !! **@RULENAME@** - used with  ǩiđđ:ǩiiđ
