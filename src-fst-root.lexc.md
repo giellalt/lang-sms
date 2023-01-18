@@ -873,6 +873,8 @@ given the proper use of these flags.
 |  **@U.Cap.Opt@** | Allowing downcasing of derived names: deatnulasj. 
 |  **@C.ErrOrth@** | tbw
 |  **@R.ErrOrth.ON@** | tbw
+|  **@D.ErrOrth.ON@** | tbw
+|  **@P.ErrOrth.ON@** | tbw
 |  **@P.Pmatch.Backtrack@** | tbw
 
 * **@U.NUMORTH.YES@**
