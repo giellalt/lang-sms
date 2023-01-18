@@ -96,16 +96,55 @@ make
 (as root) make install
 ```
 
-## Cite
+## Citing
+
+<!-- Add language specific citation stuff here and to the CITATION.cff -->
 
 If you use the Skolt Sami FST in an academic publication, please cite it
 as follows:
 
 Rueter, Jack & Hämäläinen, Mika. (2020). [FST Morphology for the Endangered Skolt Sami Language](https://www.researchgate.net/publication/340598493_FST_Morphology_for_the_Endangered_Skolt_Sami_Language). In *Proceedings of the 1st Joint SLTU and CCURL Workshop*, May 2020, Marseille, France. European Language Resources association, pp. 250\--257.
 
-    \@InProceedings{rueter-hmlinen:2020:SLTUCCURL,
-    author = {Rueter, Jack and Hämäläinen, Mika}, 
-    title = {FST Morphology for the Endangered Skolt Sami Language},
-    booktitle ={Proceedings of the 1st Joint SLTU and CCURL Workshop},
-    year = {2020}
-    }
+```bibtex
+@InProceedings{rueter-hmlinen:2020:SLTUCCURL,
+author = {Rueter, Jack and Hämäläinen, Mika}, 
+title = {FST Morphology for the Endangered Skolt Sami Language},
+booktitle ={Proceedings of the 1st Joint SLTU and CCURL Workshop},
+year = {2020}
+}
+```
+
+If you use language data from more than one GiellaLT language, consider citing
+[our LREC 2022 article on whole
+infra](https://aclanthology.org/2022.lrec-1.125/):
+
+> Linda Wiechetek, Katri Hiovain-Asikainen, Inga Lill Sigga Mikkelsen,
+  Sjur Moshagen, Flammie Pirinen, Trond Trosterud, and Børre Gaup. 2022.
+  *Unmasking the Myth of Effortless Big Data - Making an Open Source
+  Multi-lingual Infrastructure and Building Language Resources from Scratch*.
+  In Proceedings of the Thirteenth Language Resources and Evaluation Conference,
+  pages 1167–1177, Marseille, France. European Language Resources Association.
+
+If you use bibtex, following is as it is on ACL anthology:
+
+```bibtex
+@inproceedings{wiechetek-etal-2022-unmasking,
+    title = "Unmasking the Myth of Effortless Big Data - Making an Open Source
+    Multi-lingual Infrastructure and Building Language Resources from Scratch",
+    author = "Wiechetek, Linda  and
+      Hiovain-Asikainen, Katri  and
+      Mikkelsen, Inga Lill Sigga  and
+      Moshagen, Sjur  and
+      Pirinen, Flammie  and
+      Trosterud, Trond  and
+      Gaup, B{\o}rre",
+    booktitle = "Proceedings of the Thirteenth Language Resources and Evaluation
+    Conference",
+    month = jun,
+    year = "2022",
+    address = "Marseille, France",
+    publisher = "European Language Resources Association",
+    url = "https://aclanthology.org/2022.lrec-1.125",
+    pages = "1167--1177"
+}
+```
