@@ -6282,6 +6282,11 @@ NumContLex="1.113"
 čuäʹrvv+N+Ess+PxSg1
 (12) čuäʹrvvinan
 
+čuäʹrvv
+čuẹʼrv
+čuäʹrvv+N+Ess
+čuäʼrvven
+
 * LEXICON N_NEUQLL  neuʹll:ne%^1VOWull 
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
@@ -6365,6 +6370,10 @@ jieʹnnivuiʹm:   jeäʹnn+N+Pl+Com
 jieʹnnitaa: 	   jeäʹnn+N+Pl+Abe
 jeännaž: 	   jeäʹnn+N+Der+Der/Dimin+N+Sg+Nom
 jeänna: 	   jeäʹnn+N+Der+Der/Dimin+N+Sg+Gen
+
+* :%^VOWRaise%^PALẸ%^PAL%^CCC2CC PL-NOM ;   (2) jiẹʹǧǧ
+* :%^VOWRaise%^PALE%^PAL%^CCC2CC E-STEM_PL-OBL ;   (5) jieʹǧǧin
+* :%^PAL%>e ESS/PAR ;       (6) jeäʹǧˈǧen, (7) jeäʹǧˈǧed
 
 * LEXICON E-STEM_SG-NOM  (1)
 
@@ -6662,6 +6671,17 @@ is for nouns with stem *i* + *-est* +Sg+Loc; all stem other than the +Sg+Nom are
 * :%>ǥ VOONYS-STEM-PX ;  võnns-
 * :%>%{ʼØ%}j VOONYS-STEM-PX ;  võnns-
 
+* LEXICON N_JAAM  jaam:ja%^1VOWmm
+* LEXICON NMN_JAAM  kaav:kaapp
+is for nouns with stem *i* + *-est* +Sg+Loc; all stem other than the +Sg+Nom are X3; the *i* does not occur in +Par 
+* Yaml: **N-jaam**
+* There are several stem types 
+* :%>%{ʼØ%}j%>e ESS/PAR ;  jammjân 
+* +Use/NGminip+Use/NG:%>%{ʼØ%}j%>â ESS/PAR ;  jammjân 
+* +Use/NGminip+Use/NG:%^V2VV%^CC2C%>â ESS/PAR ;  jaamân
+* :%>ǥ VOONYS-STEM-PX ;  võnns-
+* :%>%{ʼØ%}j VOONYS-STEM-PX ;  võnns-
+
 * LEXICON N_POOUS  poous:pohss
 * LEXICON NMN_POOUS  poous:pohss
 is for nouns with stem *i* + *-est* +Sg+Loc; all stem other than the +Sg+Nom are X3; the *i* does not occur in +Par 
@@ -6798,7 +6818,7 @@ CLASS 2 NOMINALS with low stem vowel and u-stems
 * LEXICON N_CHUYNJ   čuânj:čuõnˈnj
 *   is for nouns with *-est* +Loc
 * Yaml: **N-sual**
-* There are several stem types
+* Ther aere several stem types
 
 * LEXICON N_PUYGXGX  puâǥǥ:puõkˈk
 *   is for nouns with *-est* +Loc
@@ -7293,8 +7313,8 @@ stemtype l-stem čeeuʹres:čeeuʹres
 CLASS 4 BISYLLABIC, LOW VOWEL, DIPHTHONG, PALATALIZATION
 IN PENULTIMATE E:0
 
-* LEXICON N_CYYQ33EL  cââʹʒʒel:câ%^1VOW%{ʹØ%}ccel
-* LEXICON NMN_CYYQ33EL  cââʹʒʒel:câ%^1VOW%{ʹØ%}ccel
+* LEXICON N_CYYQ33EL  cââʹʒʒel:câ%^1VOW%{ʹØ%}ʒʒel
+* LEXICON NMN_CYYQ33EL  cââʹʒʒel:câ%^1VOW%{ʹØ%}ʒʒel
 * Yaml: **N-cyyq33el**
 * :%^RmVow VOONYS-STEM-PX ;  câccl-
 
@@ -7342,7 +7362,7 @@ IN PENULTIMATE E:0
 * LEXICON NMN_NJUAEQMMEL  = stemtype l-stem njuäʹmmel:njuäʹmˈmel
 * Yaml: **njuammel, njuunnjel, aappal** 
 
-* LEXICON N_CIEAQKHKHES  cieʹǩǩes:ciâkˈkes
+* LEXICON N_CIEAQKHKHES  cieʹǩǩes:ceä%{ʹØ%}kˈkes
 * **NMN_CIEAQKHKHES** = Koulukielioppi stemtype II 9 (29)
 * Yaml: **N-ciekkes** 
 * :%^Pen%^VOWLower%^RmVow VOONYS-STEM-PX ;  võnns-
@@ -7916,7 +7936,7 @@ inflection_type="?"
 NumContLex="1.2"
 * sirddi:sirddi
 NumContLex="1.2"
-* :%^I2J VOONYS-STEM-PX ;  võnns-
+* :%^Pen%^PAL%^I2J VOONYS-STEM-PX ;  võnns-
 
 * LEXICON N_PRSPRC-VHYY-I  lahtti:la%^1VOWhtti
 * LEXICON NMN_PRSPRC-VHYY-I  lahtti:la%^1VOWhtti
@@ -11309,19 +11329,19 @@ following morpheme or word boundary
 
 ossible triggers before VOWLower and VOWRaise
 
-`BetweenStemAndHeight =  ( %^VV2V: \|%^V2VV:)`
+neutral to vowel length
+
+neutral to vowel height and backness
 
 possible triggers before PALE PALÄ
-`BetweenStemAndPALAllo = [ BetweenStemAndHeight (%^VOWLower:](%^VOWRaise:))`
 
 possible triggers between stem and PALNo and PAL
-`BetweenStemAndPALNo = [ BetweenStemAndHeight [(%^VOWLower:\|%^VOWRaise:) (%^PALÄ:\|%^PALE:\|%^PALẸ:\|%^PALÕ:\](%^PALÂ:)] (%^Allegro:) ) ; `
 
 possible triggers between vowel length and consonant grade
-`BetweenVowLenghtAndConsGrade = [ (%^VOWRaise:\|%^VOWLower:) ( ((%^PALÂ:\|%^PALÕ:) (%^Allegro:) %^PALNo:\|%^VOWLower: %^PALÄ:\|(%^PALÕ:\|%^PALE:\|%^PALÄ:\|%^PALẸ:) (%^Allegro:) %^PAL:)\| (%^Allegro:) (%^PALÕ:\|%^PALE:\|%^PALÄ:\|%^PALẸ:\|%^PALÂ:) (%^PALNo:\](%^PAL:) ) ) ;`
+
+`NeutrVowHeightDiphPalAllegroPAL = [ (%^VOWRaise:\|%^VOWLower:) ( ((%^PALÂ:\|%^PALÕ:) (%^Allegro:) %^PALNo:\|%^VOWLower: %^PALÄ:\|(%^PALÕ:\|%^PALE:\|%^PALÄ:\|%^PALẸ:) (%^Allegro:) %^PAL:)\| (%^Allegro:) (%^PALÕ:\|%^PALE:\|%^PALÄ:\|%^PALẸ:\|%^PALÂ:) (%^PALNo:\](%^PAL:) ) ) ;`
 
 possible triggers between word end and consonant grade
-`BetweenStemAndConsGrade = [ BetweenStemAndHeight BetweenVowLenghtAndConsGrade ];`
 
 possible triggers between vowel length and Palatalization
 `BetweenVowLengthAndPALNo = [(%^VOWLower:\|%^VOWRaise:) (%^PALÄ:\|%^PALE:\|%^PALẸ:\|%^PALÕ:\](%^PALÂ:) ) ;`
@@ -11334,19 +11354,9 @@ possible triggers between vowel length and Palatalization
 
 `BetweenPALNoAndMorph = [([(%^Allegro:) %^CC2C:\|(%^Allegro:) %^CC2CAllegro:]\|%^C2CC:\|%^XYY2XY:\|%^K2GG:\|%^KK2GG:\|%^CC2CCC:\|%^CCC2C:\|%^CCC2CC:\|%^XYY2VY:\|%^XYY2VYY:\](%^KKK2GG:) RBound ) ;`
 
-`BetweenStemAndRightArrow = [BetweenStemAndConsGrade BetweenPALNoAndMorphRightArrow] ;`
+`BetweenStemAndRightArrow = [NeutrVowLenghtHeightDiphPalAllegroPAL BetweenPALNoAndMorphRightArrow] ;`
 
 ### Penultimate vowel centers possible triggers before VOWLower and VOWRaise
-
-`PenBetweenStemAndHeight = [(%^Pen: %^VV2V: \](%^Pen: %^V2VV:)) ;`
-
-`PenBetweenStemAndPALNo = [PenBetweenStemAndHeight (%^Pen: %^VOWRaise:\](%^Pen: %^VOWLower:) (%^Pen: %^Allegro:) ) ;`
-
-`PenBetweenStemAndPALAllo  = [ PenBetweenStemAndHeight (%^Pen: %^VOWLower:\](%^Pen: %^VOWRaise:)) ;`
-
-`PenBetweenStemAndConsGrade = [PenBetweenStemAndHeight ((%^Pen: %^VOWRaise:\|%^Pen: %^VOWLower:) ((%^Pen: %^PALÂ:\|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PALNo:\|(%^Pen: %^PALÕ:\|%^Pen: %^PALE:\|%^Pen: %^PALÄ:\](%^Pen: %^PALẸ:) (%^Pen: %^Allegro:) %^Pen: %^PAL:) ) ) ;`
-
-`PenBetweenStemAndVowelLoss = [PenBetweenStemAndHeight [(%^Pen: %^VOWRaise:\|%^Pen: %^VOWLower:\|%^Pen: %^U2Õ:) ((%^Pen: %^PALÂ:\|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PALNo:\|(%^Pen: %^PALE:\|%^Pen: %^PALÄ:\|%^Pen: %^PALẸ:\|%^Pen: %^PALÕ:) (%^Pen: %^Allegro:) %^Pen: %^PAL:)] ([%^Pen: %^C2CC:]\|%^Pen: [(%^Allegro:) %^CC2C:\|%^Allegro:\|(%^Allegro:) %^CC2CAllegro:]\|%^Pen: %^XYY2XY:\|%^Pen: %^CC2CCC:\|%^Pen: %^CCC2CC:\|%^Pen: %^CCC2C:\](%^Pen: %^KKK2GG:)) ;`
 
 `PenBetweenStemAndStemFinalVoicing = [PenBetweenStemAndVowelLoss (%^RmVow:\](%^PenVow2a:)) ;`
 
@@ -11354,14 +11364,6 @@ possible triggers between vowel length and Palatalization
 
 used in compounding Cmp/SgNom and Cmp/SgGen
 `SgNomGen = [((%^PALE: %^PAL:) %^CCC2C:\|(%^PALE: %^PAL:) %^CCC2CC:\|%^PALẸ:\|[%^PALE:\|%^PALÕ:] %^PAL: %^XYY2IY:\|[%^PALẸ:\|%^PALE:] %^PAL: %^XYY2XY:\|((%^PALE:) %^PAL:) %^KK2GG:\|(%^PALE:) %^PAL:\| ((%^PALE:) %^PAL:) (%^J2I:) %^CC2C:\](%^PAL: %^XYY2VY:));`
-
-neutral to vowel height and backness
-
-`NeutrHighBack = [(%^VOWLower:\](%^VOWRaise:) ) ; `
-
-neutral to vowel length
-
-`VNeutrGrade = [(%^VV2V: \](%^V2VV: ));`
 
 neutral to consonant length
 
@@ -11388,52 +11390,52 @@ neutral to vowel and consonant length
 **Vowel shortening â:0** - used in
 
 čââʹđ+N+Sg+Ill: **heart/sydän**
-* *čâ%^1VOWđđ%>ma*
-* *čâ0đđ%>ma*
+* *čâ^1VOWđđ>ma*
+* *čâ0đđ>ma*
 
 -â
 ǩeʹtted+V+Ind+Prs+ConNeg: **cook/keittää**
-* *ǩeâ%{ʹØ%}tt%^VV2V%^VOWRaise%^PALI%^PAL*
+* *ǩeâ{ʹØ}tt^VV2V^VOWRaise^PALI^PAL*
 * *ǩi0ʹtt0000*
 
 **Vowel shortening ẹ:0** - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
 teevvad+V+Prt+4:
-* *tẹẹvv%^VV2V%^VOWRaise%>uš*
-* *ti0vv00%>uš*
+* *tẹẹvv^VV2V^VOWRaise>uš*
+* *ti0vv00>uš*
 
 **Vowel shortening e:0** - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
 
 eʹǩrded+V+Inf
-* *eeʹǩǩerd%^Pen%^VV2V%^Pen%^CC2C%^RmVow%>ed*
-* *e0ʹǩ00rd00000%>ed*
-cieʹǩǩes+N+Sg+Ill: **trick, type of ear mark/tikki, pykälä**
-* *ciâ%{ʹØ%}kˈkes%^Pen%^VOWLower%^RmVow%>a*
-* *ceä0kˈk0s000%>a*
+* *eeʹǩǩerd^Pen^VV2V^Pen^CC2C^RmVow>ed*
+* *e0ʹǩ00rd00000>ed*
 
 Ââvel+N+Prop+Sg+Loc  **Ivalo**
-* *Ââvel%^RmVow%>est*
-* *Ââv0l0%>est*
+* *Ââvel^RmVow>est*
+* *Ââv0l0>est*
 
 Jouste
 
 **Vowel shortening å:0** - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
 jååʹtted+V+Ind+Prt+Pl3 **trekk**
-* *jåå%{ʹØ%}tt%^VV2V%^VOWRaise%^PAL%>e*
-* *jo0ʹtt000%>e*
+* *jåå{ʹØ}tt^VV2V^VOWRaise^PAL>e*
+* *jo0ʹtt000>e*
+låʹǧsted
+* *lååʹǧǧest^Pen^VV2V^Pen^CC2CAllegro^RmVow*
+* *lå0ʹǧ00st00000*
 
 sååbbar+N+Sg+Nom **meeting**
-* *så%^1VOWbbar%^Pen%^V2VV*
+* *så^1VOWbbar^Pen^V2VV*
 * *sååbbar00*
 
 -å
 
 **Vowel shortening õ:0** - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
-* *mõõ%{ʹØ%}nn%^VV2V%^PAL%>e*
-* *mõ0ʹnn00%>e*
-* *mõõ%{ʹØ%}nn%^VV2V%^VOWLower%^PAL%>e*
-* *mâ0ʹnn000%>e*
-* *čõõnâst%^Pen%^VV2V%^RmVow%>ed*
-* *čõ0n0st000%>ed*
+* *mõõ{ʹØ}nn^VV2V^PAL>e*
+* *mõ0ʹnn00>e*
+* *mõõ{ʹØ}nn^VV2V^VOWLower^PAL>e*
+* *mâ0ʹnn000>e*
+* *čõõnâst^Pen^VV2V^RmVow>ed*
+* *čõ0n0st000>ed*
 tõiŋsǩed+V+Inf
 * *tõõiŋâsk^Pen^VV2V^RmVow^PALK>ed*
 * *tõ0iŋ0sǩ0000>ed*
@@ -11441,7 +11443,7 @@ tõiŋsǩed+V+Inf
 * ★*tõ0iŋ0sk0000>ed* (is not standard language)
 
 kõõnjâl+N+Sg+Gen **tear**
-* *kõ%^1VOWnnjâl%^Pen%^VV2V%^Pen%^C2CC*
+* *kõ^1VOWnnjâl^Pen^VV2V^Pen^C2CC*
 * *kõ0nnjâl0000*
 
 -õ
@@ -11449,31 +11451,31 @@ kõõnjâl+N+Sg+Gen **tear**
 **Vowel shortening u:0** - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
 
 mainstummuš+N+Sg+Ill: **story telling/tarinointi**
-* *mainstummuš%^RmVow%>a*
-* *mainstumm0š0%>a*
+* *mainstummuš^RmVow>a*
+* *mainstumm0š0>a*
 
 juurd+N+Ess **thought**
-* *ju%^1VOWrdd%>j%>en*
-* *ju0rdd%>j%>en*
+* *ju^1VOWrdd>j>en*
+* *ju0rdd>j>en*
 
 Oulu
 
 **Vowel shortening i:0** - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
 viikkâd+V+Ind+Prs+Pl3
-* *vii%{ʹØ%}kk%^VV2V%^VOWLower%^PAL%>e*
-* *ve0ʹǩǩ000%>e*
+* *vii{ʹØ}kk^VV2V^VOWLower^PAL>e*
+* *ve0ʹǩǩ000>e*
 viikkâd+V+Imprt+Pl3
-* *vii%{ʹØ%}kk%^VV2V%^VOWLower%>az*
-* *vẹ00kk00%>az*
+* *vii{ʹØ}kk^VV2V^VOWLower>az*
+* *vẹ00kk00>az*
 * ★*vii{ʹØ}kk^VV2V^VOWLower>az* (is not standard language)
 * ★*vẹẹ0kk00>az* (is not standard language)
 iilâsǩ:ilska
 
 prääʹzniǩ+N+Sg+Ill: **celebration/juhla**
 * *prääʹzniǩ^RmVow^PALNo>a*
-* *prääʹzn0k00%>a*
+* *prääʹzn0k00>a*
 
-* *žẹẹvai^RmVow^I2Zero%>ǥa*
+* *žẹẹvai^RmVow^I2Zero>ǥa*
 * *žẹẹv0000>ǥa*
 
 +Sg+Ill N_HÕʹPPI
@@ -11533,7 +11535,7 @@ jieʹlli+N+Ess **animal/eläin**
 piânˈnai+N+Ess: **dog/koira**
 * *piânˈn^CCC2CC>{ʼØ}j>en*
 * *piân0n0>ʼj>en*
-* *jieʹll{ʼØ%}i^I2J>e>st*
+* *jieʹll{ʼØ}i^I2J>e>st*
 * *jieʹllʼj0>e>st*
 
 -ä
@@ -11549,10 +11551,10 @@ mättʼted+V+Inf: **teach/opettaa**
 * *mätta0t^RmVow>ed*
 * *mätt0ʼt0>ed*
 pueʹtted+V+Der/jed+Der/Caus+Der/NomAct+N+Ess:
-* *puä%{ʹØ%}tt%^CC2CCC%>a0t%^RmVow%>em%^RmVow%>en*
-* *puä0tt0%>0ʼt%0%>0m0%>en*
-* ★*puä%{ʹØ%}tt%^CC2CCC%>at%^RmVow%>em%^RmVow%>en* (is not standard language)
-* ★*puä0tt0%>0t%0%>0m0%>en* (is not standard language)
+* *puä{ʹØ}tt^CC2CCC>a0t^RmVow>em^RmVow>en*
+* *puä0tt0>0ʼt0>0m0>en*
+* ★*puä{ʹØ}tt^CC2CCC>at^RmVow>em^RmVow>en* (is not standard language)
+* ★*puä0tt0>0t0>0m0>en* (is not standard language)
 
 * *ijss>0sa*
 * *ijss>ʼsa*
@@ -11597,7 +11599,9 @@ tõlvvad+V+Pass+PrfPrc:
 reâugg+N+Sg+Ill
 * *reâugg^VOWRaise>u*
 * *riõugg0>u*
-
+pieʹhssed+V+Inf: ****
+* *peâ{ʹØ}h{ʹØ}ss^PALE^PAL>ed*
+* *pieʹh0ss00>ed*
 mieʹlǩǩ+N+Sg+Nom: **milk/maito**
 * *meâ{ʹØ}lkk^VOWRaise^PALE^PAL*
 * *mieʹlǩǩ000*
@@ -11608,6 +11612,9 @@ mieʹlǩǩ+N+Sg+Nom: **milk/maito**
 * *bieʹs0s0000*
 * *ceägˈg^VOWRaise>u*
 * *ciâgˈg0>u*
+cieʹǩǩes+N+Sg+Ill: **trick, type of ear mark/tikki, pykälä**
+* *ceä{ʹØ}kˈkes^Pen^PALẸ^Pen^PAL^Pen^CCC2CC*
+* *ciẹʹǩ0ǩes000000*
 
 **Vowel raising ẹ:i** - used in
 * *pẹ^1VOWss^VOWRaise>u*
@@ -11678,6 +11685,9 @@ reäkkad+V+Ind+Prt+Pl3
 * *čuẹʹcǩ0000>es*
 * *suä{ʹØ}kk^PALẸ^PAL^KK2GG*
 * *suẹʹjj000*
+vuẹ'ddes+N+Sg+Nom: **root/juuri**
+* *vuä{ʹØ}dˈdes^Pen^PALẸ^Pen^PAL^Pen^CCC2CC*
+* *vuẹʹd0des000000*
 
 **diphthong backing beginning with u ä:õ** - used in
 * *jeä{ʹØ}l0l^VOWRaise^PALÕ^PAL^CC2CCC>e*
@@ -11699,10 +11709,10 @@ mäʹhssed+V+Ind+Prt+Sg3: **pay/maksaa**
 * ★*mä^1VOW{ʹØ}h{ʹØ}ss^V2VV^VOWRaise^PAL^XYY2VY>i* (is not standard language)
 * ★*mää0uʹs00000>i* (is not standard language)
 mäʹhssed+V+Ind+Prt+Pl3: **pay/maksaa**
-* *mä%^1VOW%{ʹØ%}h%{ʹØ%}ss%^VOWRaise%^PAL%>e*
-* *ma0ʹh0ss00%>e*
-* ★*mä%^1VOW%{ʹØ%}h%{ʹØ%}ss%^VOWRaise%^PAL%>e* (is not standard language)
-* ★*mä0ʹh0ss00%>e* (is not standard language)
+* *mä^1VOW{ʹØ}h{ʹØ}ss^VOWRaise^PAL>e*
+* *ma0ʹh0ss00>e*
+* ★*mä^1VOW{ʹØ%}h%{ʹØ%}ss^VOWRaise^PAL>e* (is not standard language)
+* ★*mä0ʹh0ss00>e* (is not standard language)
 ### LOWERING
 
 **Even syllabic verbs I, vowel lowering o:å** - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in poorrâd
@@ -11757,7 +11767,7 @@ vuʹvll+N+Sg+Ill: voulla
 * *vu^1VOWvll^VOWLower^XYY2VYY>a*
 * *vo0ull00>a*
 puʹhtted+V+Cond+Pl3 **to give**
-* *pu^1VOW%{ʹØ%}h%{ʹØ%}tt^VOWLower*
+* *pu^1VOW{ʹØ}h{ʹØ}tt^VOWLower*
 * *po00h0tt0*
 
 kuullâd+V+Ind+Prs+Pl3 **hear/kuulla**
@@ -11792,44 +11802,47 @@ suukkâd+V+Imprt+Sg3: **row/soutaa**
 
 **Even syllabic verbs I, vowel lowering õ:â ** - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
 riõkkâd+V+Ind+Prs+Sg3 **to whip**
-* *riõkˈk%^VOWLower#*
+* *riõkˈk^VOWLower#*
 * *reâkˈk0#*
-* *mõõ0nn%^VV2V%^VOWLower%^PAL%>e*
-* *mâ0ʹnn000%>e*
-* *mõõnn%^VOWLower%^CC2C%>as*
-* *mâân000%>as*
+* *mõõ0nn^VV2V^VOWLower^PAL>e*
+* *mâ0ʹnn000>e*
+* *mõõnn^VOWLower^CC2C>as*
+* *mâân000>as*
 
+vââid+N+Sg+Nom: ****
+* *võ^1VOWidd^V2VV^VOWLower^XYY2XY*
+* *vââid0000*
 kuõskkâd+V+Ind+Prs+Sg3
-* *kuõskk%^VOWLower*
+* *kuõskk^VOWLower*
 * *kuâskk0*
 juõiggâd+V+Ind+Prs+Sg3
-* *kuõigg%^VOWLower*
+* *kuõigg^VOWLower*
 * *kuâigg0*
 
 ### Diphthongs
 
 **Even syllabic verbs I, diphthong opening after u å:ä** - deriving +Ind+Prs+Sg3, in kuåccâd kuäʹcce
 = a>ä lowering clockwise
-* *kuå0c0c%^VOWLower%^PAL%^CC2CCC%>e*
-* *kuäʹcˈc000%>e*
+* *kuå0c0c^VOWLower^PAL^CC2CCC>e*
+* *kuäʹcˈc000>e*
 puäj+N+Sg+Nom
-* *puåjˈj%^VOWLower%^CCC2C*
+* *puåjˈj^VOWLower^CCC2C*
 * *puåj0000*
-* ★*puåjˈj%^VOWLower%^CCC2C* (is not standard language)
+* ★*puåjˈj^VOWLower^CCC2C* (is not standard language)
 * ★*puäj0j00* (is not standard language)
 
 **Vowel in second syllable e:a** - deriving cieʹǩǩes+N+Sg+Gen: ceäkˈkaz
 cieʹǩǩes+N+Sg+Gen: **trick, type of ear mark/tikki, pykälä**
-* *ciâkˈkes%^Pen%^VOWLower%^PenVow2a%^VC*
+* *ciâkˈkes^Pen^VOWLower^PenVow2a^VC*
 * *ceäkˈkaz0000*
 puuʹttes+A+Sg+Gen
 
 **Even syllabic verbs I, diphthong opening i:e â:ä for â:ä ** - deriving +Ind+Prs+Sg3, in čiõkkâd
-* *vuâinn%^VOWLower*
+* *vuâinn^VOWLower*
 * *vuäinn0*
 vueʹlǧǧed+Use/NG+V+Ind+Prs+Pl3 **leave/lähteä**
-* *vuâ0lgg%^PALÄ%^PAL%>a*
-* *vuäʹlǧǧ00%>a*
+* *vuâ0lgg^PALÄ^PAL>a*
+* *vuäʹlǧǧ00>a*
 
 **Even syllabic verbs I, diphthong opening after i:e e:â** - deriving +Ind+Prs+Sg3, in pi%{EÂ%}ʹǩǩ:peâkka
 
@@ -11838,14 +11851,14 @@ vueʹlǧǧed+Use/NG+V+Ind+Prs+Pl3 **leave/lähteä**
 ** u å:õ** - used in
 = a>ä lowering clockwise
 
-* *puått%^VOWRaise%>u*
-* *puõtt0%>u*
+* *puått^VOWRaise>u*
+* *puõtt0>u*
 
 ### Vowel Palatalization
 **diphthong allophonic realization in palatalization u å:e** - deriving e from å
 
-* *puå0v0v%^PALE%^PAL%^CC2CCC%>e*
-* *pueʹvˈv000%>e*
+* *puå0v0v^PALE^PAL^CC2CCC>e*
+* *pueʹvˈv000>e*
 
 **diphthong allophonic realization in palatalization u å:ẹ** - deriving
 
@@ -11853,15 +11866,15 @@ vueʹlǧǧed+Use/NG+V+Ind+Prs+Pl3 **leave/lähteä**
 
 **Even syllabic verbs I, diphthong opening õ:ä after i:e** - deriving +Ind+Prs+Sg3, in čiõkkâd
 siõrrâd+V+Ind+Prs+Pl3: **play/leikkiä**
-* *siõ0r0r%^VOWLower%^PALÄ%^PAL%^CC2CCC%>e*
-* *seäʹrˈr0000%>e*
+* *siõ0r0r^VOWLower^PALÄ^PAL^CC2CCC>e*
+* *seäʹrˈr0000>e*
 
 ### SECONDARY FRONTING
 
 **Even syllabic verbs I, secondary vowel fronting with PAL u õ:e** - deriving +Ind+Prs+Pl3 in VIQQAD: kuõskkâd >kueʹsǩǩe
 
-* *kuõ0skk%^VOWLower%^PALE%^PAL%>e*
-* *kueʹsǩǩ000%>e*
+* *kuõ0skk^VOWLower^PALE^PAL>e*
+* *kueʹsǩǩ000>e*
 
 **Even syllabic verbs I, secondary u > v **
 
@@ -11871,146 +11884,149 @@ vowel lengthening and consonant shortening, %^Pen: %^V2VV and %^CShort
 
 **Even syllabic verbs I, relative vowel lengthening %^1VOW:â** - deriving +V+Inf in TIETTED: uudd > uʹvdded
 šõddâd+V+Imprt+Sg3:
-* *šõ%^1VOWdd%^V2VV%^VOWLower%>as*
-* *šââdd00%>as*
+* *šõ^1VOWdd^V2VV^VOWLower>as*
+* *šââdd00>as*
 
 nââʹer+N+Sg+Nom **sleep**
-* *nâ%^1VOW0kker%^Pen%^V2VV%^Pen%^PAL%^Pen%^KK2ZERO*
+* *nâ^1VOW0kker^Pen^V2VV^Pen^PAL^Pen^KK2ZERO*
 * *nââʹ00er000000*
 
 radio+N+Sg+Ill
-* *radio%^1VOW%^V2VVʹje*
+* *radio^1VOW^V2VVʹje*
 * *radioo0ʹje*
 
 **%^1VOW:ẹ relative vowel lengthening** -
 pess+N+Sg+Acc: **rifle/pyssy**
-* *pẹ%^1VOWss%^V2VV*
+* *pẹ^1VOWss^V2VV*
 * *pẹẹss0*
 veʹrǧǧ+N+Der/lazh+A+Sg+Nom
-* *vẹ%^1VOW%{ʹØ%}rgg%^V2VV%^XYY2XY>laž*
+* *vẹ^1VOW{ʹØ}rgg^V2VV^XYY2XY>laž*
 * *vẹẹ0rǥ000>laž*
+čẹẹuʹres+N+Sg+Nom = otter
+* *čẹ^1VOWu{ʹØ}rres^Pen^V2VV^Pen^PAL^Pen^XYY2XY*
+* *čẹẹuʹr0es000000*
 viǯǯâd+V+Imprt+Sg2 **fetch/noutaa**
-* *vi%^1VOWǯǯ%^V2VV%^VOWLower%>as*
-* *vẹẹǯǯ00%>as*
+* *vi^1VOWǯǯ^V2VV^VOWLower>as*
+* *vẹẹǯǯ00>as*
 eelas+N+Sg+Nom:
-* *ẹ%^1VOWllas%^Pen%^V2VV%^Pen%^CC2C*
+* *ẹ^1VOWllas^Pen^V2VV^Pen^CC2C*
 * *ẹẹl0as0000*
 
 **Even syllabic verbs I, relative vowel lengthening %^1VOW:e** - deriving +V+Inf in TIETTED: uudd > uʹvdded
-* *čââʹlmtẹ%^1VOW0m%^V2VV%^PAL*
+* *čââʹlmtẹ^1VOW0m^V2VV^PAL*
 * *čââʹlmteeʹm00*
 reeʹǧǧes+A+Sg+Nom: **rich/rikas**
-* *rẹ%^1VOW0gges%^Pen%^V2VV%^Pen%^PAL*
+* *rẹ^1VOW0gges^Pen^V2VV^Pen^PAL*
 * *rẹẹʹǧǧes0000*
-* *pẹ%^1VOWi0vv%^V2VV%^PAL%^XYY2XY*
+* *pẹ^1VOWi0vv^V2VV^PAL^XYY2XY*
 * *peeiʹv0000*
 
-* *kaađnẹ%^1VOW0ǩ%{XC%}%^V2VV%^PAL%^C2CC*
+* *kaađnẹ^1VOW0ǩ{XC}^V2VV^PAL^C2CC*
 * *kaađneeʹǩǩ000*
 
 Jouste+N+Prop+Sg+Ill
-* *Jouste%^1VOW%^V2VVʹje*
+* *Jouste^1VOW^V2VVʹje*
 * *Joustee0ʹje*
 
 **Even syllabic verbs I, relative vowel lengthening %^1VOW:å** - deriving
 sååbbar+N+Sg+Nom
-* *så%^1VOWbbar%^Pen%^V2VV*
+* *så^1VOWbbar^Pen^V2VV*
 * *sååbbar00*
-* ★*så%^1VOWbbar%^Pen%^V2VV* (is not standard language)
+* ★*så%^1VOWbbar^Pen^V2VV* (is not standard language)
 * ★*så0bbar00* (is not standard language)
 radio+N+Sg+Ill
-* *radio%^1VOW%^V2VVʹje*
+* *radio^1VOW^V2VVʹje*
 * *radioo0ʹje*
-* *jå%^1VOW%{ʹØ%}h%{ʹØ%}ss%^V2VV%^PAL%^XYY2VY*
+* *jå^1VOW{ʹØ}h{ʹØ}ss^V2VV^PAL^XYY2VY*
 * *jåå0uʹs0000*
 
 **Even syllabic verbs I, relative vowel lengthening %^1VOW:õ** - deriving +V+Inf in TIETTED: uudd > uʹvdded
 âʹlǧǧ+N+Pl+Gen: **boy/poika**
-* *â%^1VOW%{ʹØ%}lgg%^V2VV%^VOWRaise%^PAL%^XYY2XY%>i*
-* *õõʹlj00000%>i*
+* *â^1VOW{ʹØ}lgg^V2VV^VOWRaise^PAL^XYY2XY>i*
+* *õõʹlj00000>i*
 čâʹlmm+N+Pl+Acc: **eye/silmä**
-* *čâ%^1VOW%{ʹØ%}lmm%^V2VV%^VOWRaise%^PAL%^XYY2XY%>id*
-* *čõõʹlm00000%>id*
-* *ču%^1VOWkk%^V2VV%^U2Õ%>až*
-* *čõõkk00%>až*
+* *čâ^1VOW{ʹØ}lmm^V2VV^VOWRaise^PAL^XYY2XY>id*
+* *čõõʹlm00000>id*
+* *ču^1VOWkk^V2VV^U2Õ>až*
+* *čõõkk00>až*
 
-* *võ%^1VOWrr%^V2VV%^CC2C*
+* *võ^1VOWrr^V2VV^CC2C*
 * *võõr000*
-* *sõ%^1VOWll%^V2VV%^CC2C*
+* *sõ^1VOWll^V2VV^CC2C*
 * *sõõl000*
-* *mättʼtõ%^1VOWs%{XC%}%^V2VV%^K2GG*
+* *mättʼtõ^1VOWs{XC}^V2VV^K2GG*
 * *mättʼtõõzz00*
-* *sõ%^1VOWhss%^V2VV%^XYY2VY*
+* *sõ^1VOWhss^V2VV^XYY2VY*
 * *sõõus000*
 
 **relative vowel lengthening %{õuØ%}:õ**
 
 radio+N+Sg+Ill
-* *radio%^1VOW%^V2VVʹje*
+* *radio^1VOW^V2VVʹje*
 * *radioo0ʹje*
 
 **Even syllabic verbs I, relative vowel lengthening %^1VOW:ä** - deriving +V+Inf in TIETTED: uudd > uʹvdded
-* *ä%^1VOWldd%^V2VV%^CC2C*
+* *ä^1VOWldd^V2VV^CC2C*
 * *ääld000*
-* *jä%^1VOWu0rr%^V2VV%^PAL%^CC2C*
+* *jä^1VOWu0rr^V2VV^PAL^CC2C*
 * *jääuʹr0000*
 mäʹhssed+V+Ind+Prs+Sg1: **pay/maksaa**
-* *mä%^1VOW%{ʹØ%}h%{ʹØ%}ss%^V2VV%^XYY2VY%>am*
-* *mää0u0s000%>am*
+* *mä^1VOW{ʹØ}h{ʹØ}ss^V2VV^XYY2VY>am*
+* *mää0u0s000>am*
 mäʹhssed+V+Ind+Prs+Sg4: **pay/maksaa**
-* *mä%^1VOW%{ʹØ%}h%{ʹØ%}ss%^V2VV%^PAL%^XYY2VY%>et*
-* *mää0uʹs0000%>et*
+* *mä^1VOW{ʹØ}h{ʹØ}ss^V2VV^PAL^XYY2VY>et*
+* *mää0uʹs0000>et*
 
 Määttä+N+Prop+Sg+Ill
-* *Määttä%^1VOW%^V2VVʹje*
+* *Määttä^1VOW^V2VVʹje*
 * *Määttää0ʹje*
 
 **Even syllabic verbs I, relative vowel lengthening %^1VOW:a** - deriving +V+Inf in MAINSTED: maainstam, mainstam
-* *dura%^1VOWk%^V2VV*
+* *dura^1VOWk^V2VV*
 * *duraak0*
-* *ä%^1VOWldd%^V2VV%^VOWRaise%^CC2C%>už*
-* *aald0000%>už*
+* *ä^1VOWldd^V2VV^VOWRaise^CC2C>už*
+* *aald0000>už*
 täiʹdded+V+Ind+Prt+Sg3:
-* *tä%^1VOWi%{ʹØ%}dd%^V2VV%^VOWRaise%^PAL%^XYY2XY*
+* *tä^1VOWi{ʹØ}dd^V2VV^VOWRaise^PAL^XYY2XY*
 
 mäʹhssed+V+Ind+Prt+Sg3: **pay/maksaa**
-* *mä%^1VOW{ʹØ}h{ʹØ}ss%^V2VV%^VOWRaise%^PAL%^XYY2VY%>i*
-* *maa0uʹs00000%>i*
+* *mä^1VOW{ʹØ}h{ʹØ}ss^V2VV^VOWRaise^PAL^XYY2VY>i*
+* *maa0uʹs00000>i*
 
 taalkâs+N+Sg+Nom
 
 biologia+N+Sg+Ill
-* *biologia%^1VOW%^V2VVʹje*
+* *biologia^1VOW^V2VVʹje*
 * *biologiaa0ʹje*
 
 **Relative vowel lengthening %^1VOW:o** -  simultaneous lengthening and lowering: juʹrdded > joordam juʹrdded+V+Ind+Prs+Sg1
 
-* *u%^1VOWvdd%^V2VV%^VOWLower%^XYY2VY%>če*
-* *ooud0000%>če*
+* *u^1VOWvdd^V2VV^VOWLower^XYY2VY>če*
+* *ooud0000>če*
 juʹrdded+V+Ind+Prs+Sg1 **think**
-* *ju%^1VOWrdd%^V2VV%^VOWLower%^XYY2XY%>am*
-* *joord0000%>am*
-* *kå%^1VOW0ll%^V2VV%^VOWRaise%^PAL%>in*
-* *kooʹll000%>in*
-* *tå%^1VOWidd%^V2VV%^VOWRaise%^XYY2XY%>čed*
-* *tooid0000%>čed*
+* *ju^1VOWrdd^V2VV^VOWLower^XYY2XY>am*
+* *joord0000>am*
+* *kå^1VOW0ll^V2VV^VOWRaise^PAL>in*
+* *kooʹll000>in*
+* *tå^1VOWidd^V2VV^VOWRaise^XYY2XY>čed*
+* *tooid0000>čed*
 oolmaž+N+Sg+Nom: **person/henkilö**
-* *o%^1VOWlmm%^V2VV%^XYY2XY%>až*
-* *oolm000%>až*
+* *o^1VOWlmm^V2VV^XYY2XY>až*
+* *oolm000>až*
 Sajos+N+Prop+Sg+Gen:Sajoozz
 * *Sajo^1VOW{ʹØ}s{XC}^V2VV^K2GG*
 * *Sajoo0zz00*
 * ★*Sajo^1VOW{ʹØ}s{XC}^V2VV^K2GG* (is not standard language)
 * ★*Sajo00zz00* (is not standard language)
 toll+N+Sg+Gen: **fire/tuli**
-* *to%^1VOWll%^V2VV%^CC2C*
+* *to^1VOWll^V2VV^CC2C*
 * *tool000*
-* *to%^1VOW0ll%^V2VV%^PAL%^CC2C%>e*
-* *tooʹl0000%>e*
-* *ko%^1VOWnttâr%^Pen%^V2VV%^Pen%^XYY2XY*
+* *to^1VOW0ll^V2VV^PAL^CC2C>e*
+* *tooʹl0000>e*
+* *ko^1VOWnttâr^Pen^V2VV^Pen^XYY2XY*
 * *koont0âr0000*
 radio+N+Sg+Ill
-* *radio%^1VOW%^V2VVʹje*
+* *radio^1VOW^V2VVʹje*
 * *radioo0ʹje*
 
 **Even syllabic nouns I, relative vowel lengthening i** - ǩiđđ:ǩiiđ
@@ -12018,36 +12034,36 @@ radio+N+Sg+Ill
 pirsted+V+Ind+Prs+ConNeg
 * *piirâst*
 * *piirâst*
-* *pẹ%^1VOWss%^V2VV%^VOWRaise%>už*
-* *piiss00%>už*
+* *pẹ^1VOWss^V2VV^VOWRaise>už*
+* *piiss00>už*
 
-* *ǩi%^1VOWđđ%^V2VV%^CC2C*
+* *ǩi^1VOWđđ^V2VV^CC2C*
 * *ǩiiđ000*
 
 Terhi+N+Prop+Sg+Ill
-* *Terhi%^1VOW%^V2VVʹje*
+* *Terhi^1VOW^V2VVʹje*
 * *Terhii0ʹje*
 
 **Even syllabic nouns, relative vowel extra lengthening u not followed by v** - declension of nouns kunn > kuun
 mainstummuš+N+Err/Orth+Sg+Gen: **story telling/tarinointi**
-* *mainstummu%^1VOWš%{XC%}%^Pen%^CC2C%^V2VV%^K2GG*
+* *mainstummu^1VOWš{XC}^Pen^CC2C^V2VV^K2GG*
 * *mainstum0uužž0000*
 
-* *pu%^1VOW0ttes%^Pen%^V2VV%^Pen%^PAL*
+* *pu^1VOW0ttes^Pen^V2VV^Pen^PAL*
 * *puuʹttes0000*
-* ★*pu%^1VOW0ttes%^Pen%^V2VV%^Pen%^PAL* (is not standard language)
+* ★*pu%^1VOW0ttes^Pen^V2VV^Pen^PAL* (is not standard language)
 * ★*pu0ʹttes0000* (is not standard language)
 
 vuʹvdd+N+Err/Orth+Sg+Gen: **area/alue**
-* *vu%^1VOW%{ʹØ%}v%{ʹØ%}dd%^V2VV%^PAL%^XYY2XY*
+* *vu^1VOW{ʹØ}v{ʹØ}dd^V2VV^PAL^XYY2XY*
 * *vuuʹv0d0000*
 Oulu+N+Prop+Sg+Ill
-* *Oulu%^1VOW%^V2VVʹje*
+* *Oulu^1VOW^V2VVʹje*
 * *Ouluu0ʹje*
 
 **Word-final vowel ö** - 
 Enontekiö+N+Prop+Sg+Ill
-* *Enontekiö%^1VOW%^V2VVʹje*
+* *Enontekiö^1VOW^V2VVʹje*
 * *Enontekiöö0ʹje*
 
 simultaneous lengthening and raising, hmm: xfst ordering might be easier
@@ -12057,109 +12073,119 @@ simultaneous lengthening and raising, hmm: xfst ordering might be easier
 ### SEMI VOWELS
 
 **Even syllabic nouns, for j>i** - sijdd > siid This will need a special extra-lengthening rule
-* *ijss%^XYY2VY%>âs*
-* *iis00%>âs*
+* *ijss^XYY2VY>âs*
+* *iis00>âs*
 fiinâs+N+Sg+Nom: **fine/hieno**
 * *fijnnâs>^Pen^XYY2VY*
 * *fiin0âs>00*
 
-* *sââjj%^J2I%^CC2C*
+* *sââjj^J2I^CC2C*
 * *sââi000*
 tuâjj+N+Sg+Acc **work**
-* *tuâjj%^J2I%^CC2C*
+* *tuâjj^J2I^CC2C*
 * *tuâi000*
 
 **Even syllabic verbs,  for v>u** - uvdd > ouʹdde
-* *u%^1VOWv0dd%^PAL%^XYY2VY*
+* *u^1VOWv0dd^PAL^XYY2VY*
 * *u0uʹd000*
-* *u%^1VOWvdd%^VOWLower%^XYY2VYY*
+* *u^1VOWvdd^VOWLower^XYY2VYY*
 * *o0udd00*
 kuʹvǯǯ+N+Sg+Gen
-* *ku%^1VOWv0ǯǯ%^VV2V%^PAL%^XYY2VY*
+* *ku^1VOWv0ǯǯ^VV2V^PAL^XYY2VY*
 * *ku0uʹǯ0000*
+uudâs+N+Sg+Nom: **creature/luomus**
+* *uvddâs^Pen^XYY2VY*
+* *uud0âs00*
 
 **Even syllabic nouns, for h>u** - luhtt  s s: ...
 uhss+N+Der/Dim+N+Sg+Gen **door**
-* *uh0ss%^PAL%^XYY2VY%>e*
-* *uuʹs000%>e*
+* *uh0ss^PAL^XYY2VY>e*
+* *uuʹs000>e*
 
-* *sä%^1VOWhss%^V2VV%^XYY2VY%>am*
-* *sääus000%>am*
+* *sä^1VOWhss^V2VV^XYY2VY>am*
+* *sääus000>am*
 
 piiutâs+N+Sg+Nom **clothing/vaate**
-* *pi%^1VOWhttâs%^Pen%^V2VV%^Pen%^XYY2VY*
+* *pi^1VOWhttâs^Pen^V2VV^Pen^XYY2VY*
 * *piiut0âs0000*
 
 **Even syllabic nouns, for h>i** - kueʹhtt
 kueiʹt+Num+Sg+Gen **two/kaksi**
-* *kuâh0tt%^PALE%^PAL%^XYY2IY*
+* *kuâh0tt^PALE^PAL^XYY2IY*
 * *kueiʹt0000*
 
 **trisyllabic verbs and doer derivations, i>j** - used in
-* *valmštõõll%{ʼØ%}i%^I2J%>i*
-* *valmštõõllʼj0%>i*
+* *valmštõõll{ʼØ}i^I2J>i*
+* *valmštõõllʼj0>i*
 piânˈnai+N+Ess: **dog/koira**
-* *piânˈn%^CCC2CC%>%{ʼØ%}j%>en*
-* *piân0n0%>ʼj%>en*
+* *piânˈn^CCC2CC>{ʼØ}j>en*
+* *piân0n0>ʼj>en*
 
 peigg+N+Sg+Ill
-* *pẹ%^1VOWigg%^VOWRaise%^VYY2XYY%>u*
-* *pi0jgg00%>u*
+* *pẹ^1VOWigg^VOWRaise^VYY2XYY>u*
+* *pi0jgg00>u*
 
 ### VOWELS TENSE vs LAX 2012-11-28
 
 **Vowels for â:i** -
 ǩeʹtted+V+Ind+Prs+ConNeg: **cook/keittää**
-* *ǩeâ0tt%^VOWRaise%^PALI%^PAL*
+* *ǩeâ0tt^VOWRaise^PALI^PAL*
 * *ǩiiʹtt000*
 
 **Vowels for â:e** -
 miârr+N+Sg+Ill
-* *miâ0rr%^PALE%^PAL%>e*
-* *mieʹrr00%>e*
+* *miâ0rr^PALE^PAL>e*
+* *mieʹrr00>e*
 mieʹlǩǩ+N+Sg+Nom
-* *meâ0lkk%^VOWRaise%^PALE%^PAL*
+* *meâ0lkk^VOWRaise^PALE^PAL*
 * *mieʹlǩǩ000*
-* *piâ0ss%^PALE%^PAL*
+* *piâ0ss^PALE^PAL*
 * *pieʹss00*
-* *ǩiâ0p0p%^PALE%^PAL%^CC2CCC%>e*
-* *ǩieʹpˈp000%>e*
-* *kuâ0ll%^PALE%^PAL*
+* *ǩiâ0p0p^PALE^PAL^CC2CCC>e*
+* *ǩieʹpˈp000>e*
+* *kuâ0ll^PALE^PAL*
 * *kueʹll00*
 tieʹtted+V+Imprt+Sg2: **know/tietää**
-* *teâ0tt%^VOWRaise%^PALE%^PAL%^CC2C*
+* *teâ0tt^VOWRaise^PALE^PAL^CC2C*
 * *tieʹđ00000*
 mueʹles+N+Sg+Nom
-* *muâ%{ʹØ%}lles%^Pen%^PALE%^Pen%^PAL%^Pen%^CC2C*
+* *muâ{ʹØ}lles^Pen^PALE^Pen^PAL^Pen^CC2C*
 * *mueʹl0es000000*
-* *ǩeâ0sttes%^Pen%^PALE%^Pen%^PAL%^Pen%^XYY2XY*
+kueʹtǩes+N+Sg+Nom
+* *kuâ{ʹØ}tkkes^Pen^PALE^Pen^PAL^Pen^XYY2XY*
+* *kueʹtǩ0es000000*
+
+pieʹhssed+V+Inf: ****
+* *peâ{ʹØ}h{ʹØ}ss^PALE^PAL>ed*
+* *pieʹh0ss00>ed*
+* *ǩeâ0sttes^Pen^PALE^Pen^PAL^Pen^XYY2XY*
 * *ǩeeʹst0es000000*
 ǩeʹtted+V+Ind+Prs+ConNeg: **cook/keittää**
-* *ǩeâ0tt%^PALE%^PAL*
+* *ǩeâ0tt^PALE^PAL*
 * *ǩeeʹtt00*
 
 **Even-syllabic nouns, for â:ẹ** - used in
 pieʹll+N+Sg+Nom: **half**
-* *peä0ll%^VOWRaise%^PALẸ%^PAL*
+* *peä0ll^VOWRaise^PALẸ^PAL*
 * *piẹʹll000*
 * *tuâjj^PALẸ*
 * *tuẹjj0*
 
 **Palatalization for ẹ:e** - used in
 reʹhtt+N+Pl+Nom
-* *rẹ%^1VOW%{ʹØ%}h%{ʹØ%}tt%^V2VV%^PAL%^XYY2VY*
+* *rẹ^1VOW{ʹØ}h{ʹØ}tt^V2VV^PAL^XYY2VY*
 * *ree0uʹt0000*
 peiʹvv+N+Sg+Gen: **day/päivä**
-* *pẹ%^1VOWi%{ʹØ%}vv%^V2VV%^PAL%^CC2C*
+* *pẹ^1VOWi{ʹØ}vv^V2VV^PAL^CC2C*
 * *peeiʹv0000*
 karies+N+Sg+Nom: **caries/hammasmätä**
-* *kariẹ%^1VOW%{ʹØ%}s%^PALE*
+* *kariẹ^1VOW{ʹØ}s^PALE*
 * *karie00s0*
 
 ### VOWEL and ZERO ALTERNATION
 
 **Realization for â in a** - used in
-* *ǩiõrggân%^PenVow2a*
+* *ǩiõrggân^PenVow2a*
 * *ǩiõrggan0*
 
 ### THE NON-ORTHOGRAPHIC SYLLABLE
@@ -12172,135 +12198,151 @@ karies+N+Sg+Nom: **caries/hammasmätä**
 
 **0:ʹ as transfer from left of v:u** - used +Ind+Prs+Pl3, uʹvdded+V+Ind+Prs+Pl3: ouʹdde
 uʹvdded+V+Ind+Prs+Pl3: **give/antaa**
-* *u%^1VOWv0dd%^VOWLower%^PAL%^XYY2VYY%>e*
-* *o0uʹdd000%>e*
-* *u%^1VOWv0dd%^PAL%^XYY2VY*
+* *u^1VOWv0dd^VOWLower^PAL^XYY2VYY>e*
+* *o0uʹdd000>e*
+* *u^1VOWv0dd^PAL^XYY2VY*
 * *u0uʹd000*
 
 täʹhtt+N+Pl+Nom: **bone/luu**
-* *tä%^1VOWh0tt%^V2VV%^PAL%^XYY2VY*
+* *tä^1VOWh0tt^V2VV^PAL^XYY2VY*
 * *tääuʹt0000*
 täʹhtt+N+Pl+Gen: **bone/luu**
-* *tä%^1VOWh0tt%^V2VV%^VOWRaise%^PAL%^XYY2VY%>i*
-* *taauʹt00000%>i*
+* *tä^1VOWh0tt^V2VV^VOWRaise^PAL^XYY2VY>i*
+* *taauʹt00000>i*
 kueiʹt+Num+Sg+Gen **two/kaksi**
-* *kuâh0tt%^PALE%^PAL%^XYY2IY*
+* *kuâh0tt^PALE^PAL^XYY2IY*
 * *kueiʹt0000*
 siõrrâd+V+Ind+Prs+Pl3: **play/leikkiä**
-* *siõ0r0r%^VOWLower%^PALÄ%^PAL%^CC2CCC%>e*
-* *seäʹrˈr0000%>e*
-* *saa0kk%^VV2V%^PAL%>e*
-* *sa0ʹǩǩ00%>e*
+* *siõ0r0r^VOWLower^PALÄ^PAL^CC2CCC>e*
+* *seäʹrˈr0000>e*
+* *saa0kk^VV2V^PAL>e*
+* *sa0ʹǩǩ00>e*
 tääʹss+N+Sg+Gen: **level/taso**
-* ★*tää0ss%^PAL%^KK2GG* (is not standard language)
+* ★*tää0ss^PAL^KK2GG* (is not standard language)
 * ★*tää0zz00* (is not standard language)
-* *mõõ0nn%^VV2V%^VOWLower%^PAL%>e*
-* *mâ0ʹnn000%>e*
-* *jåå0tt%^VV2V%^VOWRaise%^PAL%>e*
-* *jo0ʹtt000%>e*
-* *kuâ0ll%^PALE%^PAL*
+* *mõõ0nn^VV2V^VOWLower^PAL>e*
+* *mâ0ʹnn000>e*
+* *jåå0tt^VV2V^VOWRaise^PAL>e*
+* *jo0ʹtt000>e*
+* *kuâ0ll^PALE^PAL*
 * *kueʹll00*
-* *stu%^1VOW%{VU%}0l%^PAL*
+* *stu^1VOW{VU}0l^PAL*
 * *stu0uʹl0*
-* *čââʹlmtẹ%^1VOW0m%^PAL*
+* *čââʹlmtẹ^1VOW0m^PAL*
 * *čââʹlmte0ʹm0*
-* *kä%^1VOW0lles%^Pen%^V2VV%^Pen%^PAL*
+* *kä^1VOW0lles^Pen^V2VV^Pen^PAL*
 * *kääʹlles0000*
-* *jeä0kˈkel%^Pen%^PALE%^Pen%^PAL%^Pen%^KKK2ZERO*
+* *jeä0kˈkel^Pen^PALE^Pen^PAL^Pen^KKK2ZERO*
 * *jeeʹ000el000000*
-* *seäh0tter%^Pen%^PALE%^Pen%^PAL%^Pen%^XYY2VY*
+* *seäh0tter^Pen^PALE^Pen^PAL^Pen^XYY2VY*
 * *seeuʹt0er000000*
 The left context allows for:
 Vowel shortening, and j/v > Vow
 
 **%{ʹØ%}:ʹ as transfer from left of v:u and all instances of modifier letter prime** - used +Ind+Prs+Pl3, uʹvdded+V+Ind+Prs+Pl3: ouʹdde
 uʹvdded+V+Ind+Prs+Pl3: **give/antaa**
-* *u%^1VOWv%{ʹØ%}dd%^VOWLower%^PAL%^XYY2VYY%>e*
-* *o0uʹdd000%>e*
-* *u%^1VOWv%{ʹØ%}dd%^PAL%^XYY2VY*
+* *u^1VOWv{ʹØ}dd^VOWLower^PAL^XYY2VYY>e*
+* *o0uʹdd000>e*
+* *u^1VOWv{ʹØ}dd^PAL^XYY2VY*
 * *u0uʹd000*
 
 täʹhtt+N+Pl+Nom: **bone/luu**
-* *tä%^1VOWh%{ʹØ%}tt%^V2VV%^PAL%^XYY2VY*
+* *tä^1VOWh{ʹØ}tt^V2VV^PAL^XYY2VY*
 * *tääuʹt0000*
 täʹhtt+N+Pl+Gen: **bone/luu**
-* *tä%^1VOW%{ʹØ%}h%{ʹØ%}tt%^V2VV%^VOWRaise%^PAL%^XYY2VY%>i*
-* *taa0uʹt00000%>i*
+* *tä^1VOW{ʹØ}h{ʹØ}tt^V2VV^VOWRaise^PAL^XYY2VY>i*
+* *taa0uʹt00000>i*
 kueiʹt+Num+Sg+Gen **two/kaksi**
-* *kuâh%{ʹØ%}tt%^PALE%^PAL%^XYY2IY*
+* *kuâh{ʹØ}tt^PALE^PAL^XYY2IY*
 * *kueiʹt0000*
 uʹvdded+V+Ind+Prs+Pl3: **give/antaa**
-* *u%^1VOW%{ʹØ%}v%{ʹØ%}dd%^PAL%>ed*
-* *u0ʹv0dd0%>e*
+* *u^1VOW{ʹØ}v{ʹØ}dd^PAL>ed*
+* *u0ʹv0dd0>e*
 täʹhtt+N+Pl+Nom: **bone/luu**
-* *tä%^1VOW%{ʹØ%}h%{ʹØ%}tt%^PAL*
+* *tä^1VOW{ʹØ}h{ʹØ}tt^PAL*
 * *tääuʹt0000*
 
+čẹẹuʹres+N+Sg+Nom = otter
+* *čẹ^1VOWu{ʹØ}rres^Pen^V2VV^Pen^PAL^Pen^XYY2XY*
+* *čẹẹuʹr0es000000*
 siõrrâd+V+Ind+Prs+Pl3: **play/leikkiä**
-* *siõ%{ʹØ%}r0r%^VOWLower%^PALÄ%^PAL%^CC2CCC%>e*
-* *seäʹrˈr0000%>e*
-* *saa%{ʹØ%}kk%^VV2V%^PAL%>e*
-* *sa0ʹǩǩ00%>e*
-tää%{ʹØ%}ss+N+Sg+Gen: **level/taso**
-* ★*tää0ss%^PAL%^KK2GG* (is not standard language)
+* *siõ{ʹØ}r0r^VOWLower^PALÄ^PAL^CC2CCC>e*
+* *seäʹrˈr0000>e*
+* *saa{ʹØ}kk^VV2V^PAL>e*
+* *sa0ʹǩǩ00>e*
+tää%{ʹØ}ss+N+Sg+Gen: **level/taso**
+* ★*tää0ss^PAL^KK2GG* (is not standard language)
 * ★*tää0zz00* (is not standard language)
-* *mõõ%{ʹØ%}nn%^VV2V%^VOWLower%^PAL%>e*
-* *mâ0ʹnn000%>e*
-* *jåå%{ʹØ%}tt%^VV2V%^VOWRaise%^PAL%>e*
-* *jo0ʹtt000%>e*
-* *kuâ%{ʹØ%}ll%^PALE%^PAL*
+* *mõõ{ʹØ}nn^VV2V^VOWLower^PAL>e*
+* *mâ0ʹnn000>e*
+* *jåå{ʹØ}tt^VV2V^VOWRaise^PAL>e*
+* *jo0ʹtt000>e*
+* *kuâ{ʹØ}ll^PALE^PAL*
 * *kueʹll00*
-* *stu%^1VOW%{VU%}%{ʹØ%}l%^PAL*
+* *stu^1VOW{VU}{ʹØ}l^PAL*
 * *stu0uʹl0*
-* *čââʹlmtẹ%^1VOW%{ʹØ%}m%^PAL*
+* *čââʹlmtẹ^1VOW{ʹØ}m^PAL*
 * *čââʹlmte0ʹm0*
-* *kä%^1VOW%{ʹØ%}lles%^Pen%^V2VV%^Pen%^PAL*
+* *kä^1VOW{ʹØ}lles^Pen^V2VV^Pen^PAL*
 * *kääʹlles0000*
-* *jeä%{ʹØ%}kˈkel%^Pen%^PALE%^Pen%^PAL%^Pen%^KKK2ZERO*
+* *jeä{ʹØ}kˈkel^Pen^PALE^Pen^PAL^Pen^KKK2ZERO*
 * *jeeʹ000el000000*
-* *seäh%{ʹØ%}tter%^Pen%^PALE%^Pen%^PAL%^Pen%^XYY2VY*
+* *seäh{ʹØ}tter^Pen^PALE^Pen^PAL^Pen^XYY2VY*
 * *seeuʹt0er000000*
+
+huʹvǧǧi+N+Sg+Nom: **rattle/suhistin**
+* *hu^1VOW{ʹØ}v{ʹØ}ggi^Pen^PAL*
+* *hu0ʹv0ǧǧi00*
 The left context allows for:
 Vowel shortening, and j/v > Vow
 
 **d:đ in weak grade** - used in
-* *ǩeä0dgg%^VOWRaise%^PALẸ%^PAL%^XYY2XY*
+* *ǩeä0dgg^VOWRaise^PALẸ^PAL^XYY2XY*
 * *ǩiẹʹđj00000*
 
 **Even-syllabic verbs I, Palatalization of g:ǧ** - used in
 reäiʹǧǧ+N+Sg+Nom: **hole/reikä**
-* *reäi0gg%^PAL*
+* *reäi0gg^PAL*
 * *reäiʹǧǧ0*
 šäʹŋǧǧ+N+Sg+Com: **pasty/piirakka**
-* *šä%^1VOW0ŋgg%^V2VV%^VOWRaise%^PAL%^XYY2XY%>in*
-* *šaaʹŋǧ00000%>in*
+* *šä^1VOW0ŋgg^V2VV^VOWRaise^PAL^XYY2XY>in*
+* *šaaʹŋǧ00000>in*
 vueʹlǧǧed+Use/NG+V+Ind+Prs+Pl3 **leave/lähteä**
-* *vuâ0lgg%^PALÄ%^PAL%>a*
-* *vuäʹlǧǧ00%>a*
+* *vuâ0lgg^PALÄ^PAL>a*
+* *vuäʹlǧǧ00>a*
 
 bioloog+N+Sg+Ill **biologist**
-* *bioloo0g%^PAL%>e*
-* *biolooʹǧ0%>e*
+* *bioloo0g^PAL>e*
+* *biolooʹǧ0>e*
+
+huʹvǧǧi+N+Sg+Nom: **rattle/suhistin**
+* *hu^1VOW{ʹØ}v{ʹØ}ggi^Pen^PAL*
+* *hu0ʹv0ǧǧi00*
 
 **Even-syllabic verbs I, Palatalization of k:ǩ here** - used in
 
 hääʹsǩ Perhaps the stem should simply be **häskk**
-* *hää0sk%^PAL*
+* *hää0sk^PAL*
 * *hääʹsǩ0*
+
+cieʹǩǩes+N+Sg+Ill: **trick, type of ear mark/tikki, pykälä**
+* *ceä{ʹØ}kˈkes^Pen^PALẸ^Pen^PAL^Pen^CCC2CC*
+* *ciẹʹǩ0ǩes000000*
+
 mieʹlǩǩ+N+Sg+Acc: **milk/maito**
-* *meâ0lkk%^VOWRaise%^PALE%^PAL%^CC2C*
+* *meâ0lkk^VOWRaise^PALE^PAL^CC2C*
 * *mieʹlǩ00000*
 
 rääʹǩǩes+A+Sg+Nom **beloved/rakas**
-* *rä%^1VOW0kkes%^Pen%^V2VV%^Pen%^PAL*
+* *rä^1VOW0kkes^Pen^V2VV^Pen^PAL*
 * *rääʹǩǩes0000*
-* *jo%^1VOW0kk%^PAL%>e*
-* *jo0ʹǩǩ0%>e*
-* *saa0kk%^VV2V%^PAL%>e*
-* *sa0ʹǩǩ00%>e*
+* *jo^1VOW0kk^PAL>e*
+* *jo0ʹǩǩ0>e*
+* *saa0kk^VV2V^PAL>e*
+* *sa0ʹǩǩ00>e*
 kåålvak+N+Sg+Loc
-* *kåålvak%^RmVow%^PALK%>est*
-* *kåålv0ǩ00%>est*
+* *kåålvak^RmVow^PALK>est*
+* *kåålv0ǩ00>est*
 
 tõiŋsǩed+V+Inf
 * *tõõiŋâsk^Pen^VV2V^RmVow^PALK>ed*
@@ -12309,27 +12351,27 @@ tõiŋsǩed+V+Inf
 * ★*tõ0iŋ0sk0000>ed* (is not standard language)
 
 **Even-syllabic nouns I, Depalatalization of ǩ:k** - used in
-* *mätkk%>a*
-* *mätkk%>a*
+* *mätkk>a*
+* *mätkk>a*
 kaađneǩ+N+Sg+Ill:
 * *kaađnẹ^1VOW{ʹØ}ǩ{XC}^PALNo^C2CC>a*
-* *kaađnẹ00kk00%>a*
+* *kaađnẹ00kk00>a*
 
 prääʹzniǩ+N+Sg+Ill: **celebration/juhla**
-* *prääʹzniǩ%^RmVow%^PALNo%>a*
-* *prääʹzn0k00%>a*
-* *kaaddâšǩ%^Pen%^VV2V%^Pen%^CC2C%^RmVow%^PALNo%>a*
-* *ka0d00šk000000%>a*
+* *prääʹzniǩ^RmVow^PALNo>a*
+* *prääʹzn0k00>a*
+* *kaaddâšǩ^Pen^VV2V^Pen^CC2C^RmVow^PALNo>a*
+* *ka0d00šk000000>a*
 
 **Even-syllabic nouns, removing palatalization in -est +Loc nouns** - removing palatalization in +Sg+Ill,  pieʹss:peässa
-* *čââʹlmtẹ%^1VOWm%{XC%}%^C2CC%>a*
-* *čââʹlmtẹ0mm0%>a*
+* *čââʹlmtẹ^1VOWm{XC}^C2CC>a*
+* *čââʹlmtẹ0mm0>a*
 stroitteʹl+N+Sg+Ill: **plant/laitos**
-* *stroitteʹl%^RmVow%^PALNo%>a*
-* *stroitt00l00%>a*
+* *stroitteʹl^RmVow^PALNo>a*
+* *stroitt00l00>a*
 prääʹzniǩ+N+Sg+Ill: **celebration/juhla**
-* *prääʹzniǩ%^RmVow%^PALNo%>a*
-* *prääʹzn0k00%>a*
+* *prääʹzniǩ^RmVow^PALNo>a*
+* *prääʹzn0k00>a*
 
 ## Consonant QUANTITY CHANGE gradation rules
 
@@ -12340,91 +12382,106 @@ mõõnnâd : mõʹnne : mõõn
 
 **Even syllabic verbs I, cg m:0** - used with  +Imp+Sg2, +Ind+Prs+ConNeg,
 oolmaž+N+Sg+Nom: **person/henkilö**
-* *o%^1VOWlmm%^V2VV%^XYY2XY%>až*
-* *oolm000%>až*
-* *sää0mm%^PAL%^CC2C*
+* *o^1VOWlmm^V2VV^XYY2XY>až*
+* *oolm000>až*
+* *sää0mm^PAL^CC2C*
 * *sääʹm000*
 kåʹmrded+V+Ind+Prs+Sg3 **bow**
-* *kååʹmmerd%^PenVow2a*
+* *kååʹmmerd^PenVow2a*
 * *kååʹmmard0*
 mainstummuš+N+Err/Orth+Sg+Gen: **story telling/tarinointi**
-* ★*mainstummu%^1VOWš%{XC%}%^Pen%^CC2C%^V2VV%^K2GG* (is not standard language)
+* ★*mainstummu%^1VOWš{XC}^Pen^CC2C^V2VV%^K2GG* (is not standard language)
 * ★*mainstummuužž0000* (is not standard language)
 
 **Even syllabic verbs I, cg for b** - used
 neiʹbb+N+Sg+Gen: **knife/veitsi**
-* *nẹ%^1VOWi0bb%^V2VV%^PAL%^CC2C*
+* *nẹ^1VOWi0bb^V2VV^PAL^CC2C*
 * *neeiʹb0000*
 vuäʹbb+N+Sg+Loc+PxSg2
-* *vuä%{ʹØ%}bˈb%^VOWRaise%^PALẸ%^Allegro%^PAL%^CCC2CAllegro%>stad*
-* *vuẹʹb0000000%>stad*
+* *vuä{ʹØ}bˈb^VOWRaise^PALẸ^Allegro^PAL^CCC2CAllegro>stad*
+* *vuẹʹb0000000>stad*
 äʹrbb+N+Sg+Gen: **heritage/perintö**
-* *ä%^1VOW0rbb%^V2VV%^PAL%^XYY2XY*
+* *ä^1VOW0rbb^V2VV^PAL^XYY2XY*
 * *ääʹrb0000*
 joorbâs+A+Sg+Nom
-* *jo%^1VOWrbbâs%^Pen%^V2VV%^Pen%^XYY2XY*
+* *jo^1VOWrbbâs^Pen^V2VV^Pen^XYY2XY*
 * *joorb0âs0000*
+kuâbsted
+* *kuâ{ˈ1}bbast^Pen^CC2CAllegro^RmVow*
+* *kuâˈb00st000*
 
 **Even syllabic verbs I, second consonant loss p:0** - used in
-* *ǩiâpp%^CC2C*
+* *ǩiâpp^CC2C*
 * *ǩiâv00*
-* *vuäʹppest%^Pen%^CC2CAllegro%^RmVow%>ed*
-* *vuäʹp00st000%>ed*
-* *ka%^1VOWmppâr%^Pen%^V2VV%^Pen%^XYY2XY*
+* *vuäʹppest^Pen^CC2CAllegro^RmVow>ed*
+* *vuäʹp00st000>ed*
+* *ka^1VOWmppâr^Pen^V2VV^Pen^XYY2XY*
 * *kaamp0âr0000*
-* ★*ka%^1VOWmppâr%^Pen%^V2VV%^Pen%^XYY2XY* (is not standard language)
+* ★*ka%^1VOWmppâr^Pen^V2VV^Pen^XYY2XY* (is not standard language)
 * ★*kaamppâr0000* (is not standard language)
 
 **Even syllabic verbs I, cg v:0** - used with  +Imp+Sg2, +Ind+Prs+ConNeg, teevvad > teev
-* *pẹ%^1VOWi0vv%^V2VV%^PAL%^CC2C*
+* *pẹ^1VOWi0vv^V2VV^PAL^CC2C*
 * *peeiʹv0000*
+aasvâs+N+Sg+Nom: ****
+* *a^1VOWsvvâs^Pen^V2VV^Pen^XYY2XY*
+* *aasv0âs0000*
 tuõvâs+N+Sg+Nom: **candle/tuohus, kynttilä**
-* *tuõvˈvâs%^Pen%^CCC2C*
+* *tuõvˈvâs^Pen^CCC2C*
 * *tuõv00âs00*
 juʹvjj+N+Sg+Loc+PxSg3:
-* *ju%^1VOWv0jj%^VV2V%^PAL%^XYY2VY%>stes*
-* *ju0uʹj0000%>stes*
+* *ju^1VOWv0jj^VV2V^PAL^XYY2VY>stes*
+* *ju0uʹj0000>stes*
 
 **f:0** - used in
 
 kaaʹff+N+Sg+Gen **coffee**
-* *kaa0ff%^PAL%^CC2C*
+* *kaa0ff^PAL^CC2C*
 * *kaaʹf000*
 
 **Even syllabic verbs I, cg n:0** - used with  +Imp+Sg2, +Ind+Prs+ConNeg, jiõnn:jiõn
 vueʹn+N+Sg+Nom: **mother-in-law/anoppi**
-* *vuâ0nˈn%^PALE%^PAL%^CCC2C*
+* *vuâ0nˈn^PALE^PAL^CCC2C*
 * *vueʹn00000*
+čuânj+N+Sg+Nom: **goose/hanhi**
+* *čuõnˈnj^VOWLower^CCC2C*
+* *čuân00j00*
 jeäʹnn+N+Sg+Loc+PxSg1: **mother/äiti**
-* *jeä0%{ʹØ%}nˈn%^PALẸ%^PAL%^CCC2CAllegro%>stan*
-* *jiẹˈʹn00000%>stan*
+* *jeä0{ʹØ}nˈn^PALẸ^PAL^CCC2CAllegro>stan*
+* *jiẹˈʹn00000>stan*
+huânas+N+Sg+Nom: ****
+* *huânˈnas^Pen^CCC2C*
+* *huân00as00*
 
 **Even syllabic nouns I, with extra lengthening of vowel ij>ii/uv>uu and dd>d** - used with  +N+Sg+Nom > +N+Sg+Gen, sijdd > siid
 
-* *ä%^1VOWldd%^V2VV%^XYY2XY*
+* *ä^1VOWldd^V2VV^XYY2XY*
 * *ääld000*
-* *ä%^1VOWldd%^V2VV%^VOWRaise%^XYY2XY%>už*
-* *aald0000%>už*
-* *u%^1VOWv0dd%^PAL%^XYY2VY*
+* *ä^1VOWldd^V2VV^VOWRaise^XYY2XY>už*
+* *aald0000>už*
+* *u^1VOWv0dd^PAL^XYY2VY*
 * *u0uʹd000*
 juʹrdded+V+Ind+Prs+Sg1 **think**
-* *ju%^1VOWrdd%^V2VV%^VOWLower%^XYY2XY%>am*
-* *joord0000%>am*
+* *ju^1VOWrdd^V2VV^VOWLower^XYY2XY>am*
+* *joord0000>am*
 
 uʹvdded+V+Ind+Prs+4:
-* *u%^1VOWv0dd%^PAL%^XYY2VY%>et*
-* *u0uʹd000%>et*
+* *u^1VOWv0dd^PAL^XYY2VY>et*
+* *u0uʹd000>et*
 
 - idd:id, +Imp+Sg2, +Ind+Prs+ConNeg double consonants following vowel and "i" at coda that become single consonants in gradation
+uudâs+N+Sg+Nom: **creature/luomus**
+* *uvddâs^Pen^XYY2VY*
+* *uud0âs00*
 
 **Even syllabic verbs I, cg for ʒ** - used with  pääʹʒʒelm+N+Sg+Ill: päʹʒlma
 sauʒʒ+N+Pl+Nom **sheep/lammas**
-* *sa%^1VOWuʒʒ%^V2VV%^XYY2XY*
+* *sa^1VOWuʒʒ^V2VV^XYY2XY*
 * *saauʒ000*
 
 **ǯ:0** - used in
 kuʹvǯǯ+N+Sg+Gen
-* *ku%^1VOWv0ǯǯ%^PAL%^XYY2VY*
+* *ku^1VOWv0ǯǯ^PAL^XYY2VY*
 * *ku0uʹǯ000*
 
 **č:0** - used in
@@ -12438,80 +12495,87 @@ väžsted+V+Inf
 * *vä0ž00st000000>ed*
 
 **z:0** - used in
-* *ǩeâsttez%^PenVow2a%^RmCns*
+* *ǩeâsttez^PenVow2a^RmCns*
 * *ǩeâstta000*
+juzrdâd+V+Inf:
+* *juuzzârd^Pen^VV2V^Pen^CC2C^RmVow*
+* *ju0z00rd00000*
 
 **Even syllabic verbs I, cg for đ** - used with  ǩiđđ:ǩiiđ
-* *ǩi%^1VOWđđ%^V2VV%^CC2C*
+* *ǩi^1VOWđđ^V2VV^CC2C*
 * *ǩiiđ000*
-* *o%^1VOWđđâs%^Pen%^V2VV%^Pen%^CC2C*
+* *o^1VOWđđâs^Pen^V2VV^Pen^CC2C*
 * *oođ0âs0000*
 
 **Even syllabic verbs I, cg for r** - used with  võrr:võõr
-* *võ%^1VOWrr%^V2VV%^CC2C*
+* *võ^1VOWrr^V2VV^CC2C*
 * *võõr000*
-* *paarr%^CC2C*
+* *paarr^CC2C*
 * *paar00*
-* *jä%^1VOWu0rr%^V2VV%^PAL%^CC2C*
+* *jä^1VOWu0rr^V2VV^PAL^CC2C*
 * *jääuʹr0000*
 čårsted+V+Inf: **descriminate/syrjiä**
-* *čåårrast%^Pen%^VV2V%^Pen%^CC2C%^RmVow%>ed*
-* *čå0r00st00000%>ed*
-* ★*čåårrast%^Pen%^VV2V%^Pen%^CC2C%^RmVow%>ed* (is not standard language)
-* ★*čå0rr0st00000%>ed* (is not standard language)
+* *čåårrast^Pen^VV2V^Pen^CC2C^RmVow>ed*
+* *čå0r00st00000>ed*
+* ★*čåårrast^Pen^VV2V^Pen^CC2C^RmVow>ed* (is not standard language)
+* ★*čå0rr0st00000>ed* (is not standard language)
 
 **Even syllabic verbs I, cg for l** - used with  vuʹvll+N+Sg+Gen: vuuʹl
 deriving
-* *to%^1VOWll%^V2VV%^CC2C*
+* *to^1VOWll^V2VV^CC2C*
 * *tool000*
-* *stä%^1VOW0llj%^V2VV%^PAL%^CC2C*
+* *stä^1VOW0llj^V2VV^PAL^CC2C*
 * *stääʹl0j000*
 alttõõlli+N+NomAg+Pl+Gen
-* *alttõõll{ʼØ}i%^CC2C*
+* *alttõõll{ʼØ}i^CC2C*
 * *alttõõl00i0*
 
 pääʹljes+N+Sg+Nom: **path/polku**
-* *pä%^1VOW0lljes%^Pen%^V2VV%^Pen%^PAL%^Pen%^CC2C*
+* *pä^1VOW0lljes^Pen^V2VV^Pen^PAL^Pen^CC2C*
 * *pääʹl0jes000000*
 talsted+V+Inf:
-* *taallâst%^Pen%^VV2V%^Pen%^CC2C%^RmVow%>ed*
-* *ta0l00st00000%>ed*
+* *taallâst^Pen^VV2V^Pen^CC2C^RmVow>ed*
+* *ta0l00st00000>ed*
 
 vuʹvll+N+Sg+Gen:
-* *vu%^1VOWv0ll%^PAL%^XYY2VY*
+* *vu^1VOWv0ll^PAL^XYY2VY*
 * *vu0uʹl000*
 
 deriving kueʹll+N+Sg+Gen: kueʹl
-* *kuâ0ll%^V2VV%^PALE%^PAL%^CC2C*
+* *kuâ0ll^V2VV^PALE^PAL^CC2C*
 * *kueʹl00000*
 
 **j:0 ** - used in
 
 ǩeʹrjj+N+Pl+Nom: **book/kirja**
-* *ǩẹ%^1VOW0rjj%^V2VV%^PAL%^XYY2XY*
+* *ǩẹ^1VOW0rjj^V2VV^PAL^XYY2XY*
 * *ǩeeʹrj0000*
 tuâjj+N+Sg+Acc: **work/työ**
-* *tuâjj%^CC2C*
+* *tuâjj^CC2C*
 * *tuâj00*
 tuâjj+N+Sg+Gen:tuâi
-* *tuâjj%^J2I%^CC2C*
+* *tuâjj^J2I^CC2C*
 * *tuâi000*
-* *po%^1VOWjjâs%^Pen%^V2VV%^Pen%^CC2C*
+* *po^1VOWjjâs^Pen^V2VV^Pen^CC2C*
 * *pooj0âs0000*
 
 **Even syllabic verbs I, cg for g** - used in
 cõõggâlm+N+Sg+Ill
-* *cõõggâlm%^Pen%^VV2V%^Pen%^CC2C%^RmVow%>a*
-* *cõ0g00lm00000%>a*
-* *ǩeâlggal%^Pen%^XYY2XY*
+* *cõõggâlm^Pen^VV2V^Pen^CC2C^RmVow>a*
+* *cõ0g00lm00000>a*
+* *ǩeâlggal^Pen^XYY2XY*
 * *ǩeâlǥ0al00*
 
 äiʹǧǧ+N+Sg+Gen: **time/aika**
-* *ä%^1VOWi0gg%^V2VV%^PAL%^XYY2XY*
+* *ä^1VOWi0gg^V2VV^PAL^XYY2XY*
 * *ääiʹj0000*
 reäiʹǧǧ+N+Pl+Nom: **hole/reikä**
-* *reäi0gg%^PAL%^XYY2XY*
+* *reäi0gg^PAL^XYY2XY*
 * *reäiʹj000*
+
+**Allegro loss ǧ** - used in
+* *lååʹǧǧest^Pen^VV2V^Pen^CC2CAllegro^RmVow*
+* *lå0ʹǧ00st00000*
 
 GEMINATE TO WEAK QUALITY GEMINATE
 **Even syllabic nouns I, with extra lengthening of vowel V>VV and KK>ǤǤ**  - used in
@@ -12519,41 +12583,41 @@ used with  +N+Sg+Nom > +N+Sg+Gen for cases like
 lookki > looǥǥi.
 
 čâustõk+N+Sg+Gen
-* *čâustõ%^1VOW%{ʹØ%}k%{XC%}%^V2VV%^K2GG*
+* *čâustõ^1VOW{ʹØ}k{XC}^V2VV^K2GG*
 * *čâustõõ0ǥǥ00*
 with allegro
 čâustõk+N+Sg+Ela+PxSg3
-* *čâustõ%{ʹØ%}k%^K2GAllegro%>stes*
-* *čâustõ0ǥ0%>stes*
+* *čâustõ{ʹØ}k^K2GAllegro>stes*
+* *čâustõ0ǥ0>stes*
 
-* *jo%^1VOWkk%^V2VV%^KK2GG*
+* *jo^1VOWkk^V2VV^KK2GG*
 * *jooǥǥ00*
 čuâǥǥas+N+Sg+Nom  **road**
-* *čuâkˈk%^KKK2GG%>as*
-* *čuâǥ0ǥ0%>as*
+* *čuâkˈk^KKK2GG>as*
+* *čuâǥ0ǥ0>as*
 
 loǥškueʹtted **begin to read**
-* *loo%{ʹØ%}kk%^VV2V%^KK2GAllegro»škueʹtted*
+* *loo{ʹØ}kk^VV2V^KK2GAllegro»škueʹtted*
 * *lo00ǥ000»škueʹtted*
 
 čõõǥǥâs
-* *čõ%^1VOWkkâs%^Pen%^V2VV%^Pen%^KK2GG*
+* *čõ^1VOWkkâs^Pen^V2VV^Pen^KK2GG*
 * *čõõǥǥâs0000*
 
 **Even syllabic nouns I, with extra lengthening of vowel V>VV and k:j** - used in
 used with
 > .
 tuʹmstõk+N+Der/Dimin+N+Pl+Nom: **decision/päätös, mietintö**
-* *tuʹmstõ%^1VOW0k%{XC%}%^V2VV%^PAL%^K2GG%>e*
-* *tuʹmstõõʹjj000%>e*
+* *tuʹmstõ^1VOW0k{XC}^V2VV^PAL^K2GG>e*
+* *tuʹmstõõʹjj000>e*
 
 with allegro
 
-* *suä0kk%^PALẸ%^PAL%^KK2GG*
+* *suä0kk^PALẸ^PAL^KK2GG*
 * *suẹʹjj000*
 
-* *jeä0kˈkel%^Pen%^PALE%^Pen%^PAL%^Pen%^KKK2GG%^RmVow%>až*
-* *jeeʹj0j0l0000000%>až*
+* *jeä0kˈkel^Pen^PALE^Pen^PAL^Pen^KKK2GG^RmVow>až*
+* *jeeʹj0j0l0000000>až*
 
 **Even syllabic nouns I, with extra lengthening of vowel V>VV and ǩ:j** - used in
 used with
@@ -12561,154 +12625,160 @@ used with
 
 **Even syllabic verbs I, Voicing š:ž** - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
 lookkmõš+N+Sg+Gen
-* *lookkmõ%^1VOWš%{XC%}%^V2VV%^K2GG*
+* *lookkmõ^1VOWš{XC}^V2VV^K2GG*
 * *lookkmõõžž00*
 with allegro
 
-* *pååss%^VV2V%^KK2GAllegro»škuätt*
+* *pååss^VV2V^KK2GAllegro»škuätt*
 * *på0z000»škuätt*
 
 mainstummuš+N+Sg+Gen:
-* *mainstummuš%^VC*
+* *mainstummuš^VC*
 * *mainstummuž0*
 
 **Even syllabic verbs I, Voicing c:ʒ** - cc:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
-* *čää0cc%^PAL%^KK2GG*
+* *čää0cc^PAL^KK2GG*
 * *čääʹʒʒ00*
 čääʹcc+N+Sg+Loc+PxSg3
-* *čää0cc%^VV2V%^PAL%^KK2GAllegro%>stes*
-* *čä0ʹʒ0000%>stes*
-* *čää0cc%^PAL%^KK2GG%>stes*
-* *čääʹʒʒ00%>stes*
-* *puõcˈc%^VOWLower%^PALÄ%^KKK2GG*
+* *čää0cc^VV2V^PAL^KK2GAllegro>stes*
+* *čä0ʹʒ0000>stes*
+* *čää0cc^PAL^KK2GG>stes*
+* *čääʹʒʒ00>stes*
+* *puõcˈc^VOWLower^PALÄ^KKK2GG*
 * *puäʒ0ʒ000*
-* *pååss%^VV2V%^KK2GAllegro»škuätt*
+* *pååss^VV2V^KK2GAllegro»škuätt*
 * *på0z000»škuätt*
 
 õõʒʒâs+N+Sg+Nom: **high water/vuoksi**
-* *õ%^1VOWccâs%^Pen%^V2VV%^Pen%^KK2GG*
+* *õ^1VOWccâs^Pen^V2VV^Pen^KK2GG*
 * *õõʒʒâs0000*
 
 **Even syllabic verbs I, Voicing č:j** - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
 
-* *pååss%^VV2V%^KK2GAllegro»škuätt*
+* *pååss^VV2V^KK2GAllegro»škuätt*
 * *på0z000»škuätt*
 
 **Even syllabic verbs I, Voicing after long vowel or diphthong s:z s:z** - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
 tääʹss+N+Sg+Gen: **level/taso**
-* *tää0ss%^PAL%^KK2GG*
+* *tää0ss^PAL^KK2GG*
 * *tääʹzz00*
-* *mättʼtõ%^1VOWs%{XC%}%^V2VV%^K2GG*
+* *mättʼtõ^1VOWs{XC}^V2VV^K2GG*
 * *mättʼtõõzz00*
 with allegro
 
 cieʹǩǩes+N+Sg+Gen: **trick, type of ear mark/tikki, pykälä**
-* ★*ciâkˈkes%^Pen%^VOWLower%^PenVow2a%^VC* (is not standard language)
+* ★*ciâkˈkes^Pen^VOWLower%^PenVow2a%^VC* (is not standard language)
 * ★*ceäkˈkas0000* (is not standard language)
-* *pååss%^VV2V%^KK2GAllegro»škuätt*
+* *pååss^VV2V^KK2GAllegro»škuätt*
 * *på0z000»škuätt*
 
 čårrõs+N+Sg+Gen
-* *čårrõ%^1VOW%{ʹØ%}s%{XC%}%^V2VV%^K2GG*
+* *čårrõ^1VOW{ʹØ}s{XC}^V2VV^K2GG*
 * *čårrõõ0zz00*
 
 **Even syllabic verbs I, second consonant loss t:0** - used in
 autt+N+Pl+Nom **car/auto**
-* *a%^1VOWutt%^V2VV%^CC2C*
+* *a^1VOWutt^V2VV^CC2C*
 * *aaut000*
 põrtt+N+Pl+Nom **house/talo**
-* *põ%^1VOW%{ʹØ%}rtt%^V2VV%^XYY2XY*
+* *põ^1VOW{ʹØ}rtt^V2VV^XYY2XY*
 * *põõ0rt000*
 
-* *ko%^1VOWnttâr%^Pen%^V2VV%^Pen%^XYY2XY*
+* *ko^1VOWnttâr^Pen^V2VV^Pen^XYY2XY*
 * *koont0âr0000*
+puʹtsted+V+Inf: ****
+* *puuʹttest^Pen^VV2V^Pen^CC2CAllegro^RmVow*
+* *pu0ʹt00st00000*
 piiutâs+N+Sg+Nom **clothing/vaate**
-* *pi%^1VOWhttâs%^Pen%^V2VV%^Pen%^XYY2VY*
+* *pi^1VOWhttâs^Pen^V2VV^Pen^XYY2VY*
 * *piiut0âs0000*
+kääđas+N+Sg+Nom
+* *kä^1VOWttas^Pen^V2VV^Pen^CC2C*
+* *kääđ0as0000*
 
 **Even syllabic verbs I, third consonant loss** - lgg:lǥ, Vow Ca Cx Cx:0, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants following consonant at coda that become single consonants in gradation
 
 šapšš+N+Sg+Gen **white fish/siika**
-* *ša%^1VOWpšš%^V2VV%^XYY2XY*
+* *ša^1VOWpšš^V2VV^XYY2XY*
 * *šaapš000*
 
 **Consonant loss s:0** - used in
 
-* *sä%^1VOWhss%^V2VV%^XYY2VY%>am*
-* *sääus000%>am*
+* *sä^1VOWhss^V2VV^XYY2VY>am*
+* *sääus000>am*
 
 uhss+N+Sg+Gen **door**
-* *uhss%^XYY2VY*
+* *uhss^XYY2VY*
 * *uus00*
 
 ǩeäsʼsted+V+Inf:
-* *ǩeä%{ˈ1%}ssast^Pen^CC2CAllegro^RmVow^PALK>ed*
+* *ǩeä{ˈ1}ssast^Pen^CC2CAllegro^RmVow^PALK>ed*
 * *ǩeäˈs00st0000>ed*
 âʹpsted+V+Inf: **smell a little/haiskahtaa**
-* *ââʹpsest%^Pen%^VV2V%^RmVow*
+* *ââʹpsest^Pen^VV2V^RmVow*
 * *â0ʹp00st000*
 
 **Consonant loss ŋ:0** - used in
 
 **Consonant loss h:0** - used in
 ruʹhss+N+Sg+Loc+PxSg3:
-* *ru%^1VOW0hss%^VV2V%^PAL%^XYY2VY%>stes*
-* *ru0ʹ0s0000%>stes*
+* *ru^1VOW0hss^VV2V^PAL^XYY2VY>stes*
+* *ru0ʹ0s0000>stes*
 
 **Even syllabic verbs I, t>đ** - tt:đ
 ǩiõtt+N+Sg+Loc+PxSg1 **hand,arm/käsi**
-* *ǩiõ0tt%^Allegro%^PAL%^CC2CAllegro%>stan*
-* *ǩiõʹđ0000%>stan*
+* *ǩiõ0tt^Allegro^PAL^CC2CAllegro>stan*
+* *ǩiõʹđ0000>stan*
 autt+N+Pl+Nom **car/auto**
-* ★*a%^1VOWutt%^V2VV%^CC2C* (is not standard language)
+* ★*a^1VOWutt^V2VV^CC2C* (is not standard language)
 * ★*aauđ000* (is not standard language)
 puuttâd+V+Ind+Prt+Sg3: **end/loppua**
-* *puutt%^CC2C%>i*
-* *puuđ00%>i*
+* *puutt^CC2C>i*
+* *puuđ00>i*
 kääđas+N+Sg+Nom:
-kä%^1VOWttas%^Pen%^V2VV%^Pen%^CC2C
+kä%^1VOWttas^Pen^V2VV^Pen^CC2C
 kääđ0as0000
 
 **Even syllabic nouns I, p>v** - pp:v
-* *ǩiâpp%^CC2C*
+* *ǩiâpp^CC2C*
 * *ǩiâv00*
-* *heäpˈpaš%^Pen%^CCC2C*
+* *heäpˈpaš^Pen^CCC2C*
 * *heäv00aš00*
 
 **Consonant quality change ǥ:j** - used in
-* *lääi0ǥ%^PAL*
+* *lääi0ǥ^PAL*
 * *lääiʹj0*
 čiõʹlj+N+Sg+Nom: **back/selkä**
-* *čeâ%{ʹØ%}lǥ%^VOWRaise%^PAL*
+* *čeâ{ʹØ}lǥ^VOWRaise^PAL*
 * *čiõʹlj00*
 
-* *jäämalǥ%^Pen%^VV2V%^RmVow%^PALK%>ed*
-* *jä0m0lj0000%>ed*
+* *jäämalǥ^Pen^VV2V^RmVow^PALK>ed*
+* *jä0m0lj0000>ed*
 
 **Even syllabic verbs I, second consonant loss k:0** - used in
 loǥškueʹtted **begin to read**
-* *lookk%^VV2V%^KK2GAllegro»škueʹtted*
+* *lookk^VV2V^KK2GAllegro»škueʹtted*
 * *lo0ǥ000»škueʹtted*
 mieʹlǩǩ+N+Sg+Acc: **milk/maito**
-* *meâ0lkk%^VOWRaise%^PALE%^PAL%^CC2C*
+* *meâ0lkk^VOWRaise^PALE^PAL^CC2C*
 * *mieʹlǩ00000*
-* *pååss%^VV2V%^KK2GAllegro»škuätt*
+* *pååss^VV2V^KK2GAllegro»škuätt*
 * *på0z000»škuätt*
 taalkâs+N+Sg+Nom
-* *ta%^1VOWlkkâs%^Pen%^V2VV%^Pen%^XYY2XY*
+* *ta^1VOWlkkâs^Pen^V2VV^Pen^XYY2XY*
 * *taalk0âs0000*
 
-* *jeä0kˈkel%^Pen%^PALE%^Pen%^PAL%^Pen%^KKK2ZERO*
+* *jeä{ʹØ}kˈkel^Pen^PALE^Pen^PAL^Pen^KKK2ZERO*
 * *jeeʹ000el000000*
 nââʹer+N+Sg+Nom sleep
-* *nâ%^1VOW0kker%^Pen%^V2VV%^Pen%^PAL%^Pen%^KK2ZERO*
+* *nâ^1VOW0kker^Pen^V2VV^Pen^PAL^Pen^KK2ZERO*
 * *nââʹ00er000000*
 
 **Even syllabic verbs I, second consonant loss ǩ:0** - used in
 
 eʹǩrded+V+Inf
-* *eeʹǩǩerd%^Pen%^VV2V%^Pen%^CC2C%^RmVow%>ed*
-* *e0ʹǩ00rd00000%>ed*
+* *eeʹǩǩerd^Pen^VV2V^Pen^CC2C^RmVow>ed*
+* *e0ʹǩ00rd00000>ed*
 
 **Even syllabic verbs I, second consonant loss ǥ:0** - used in
 
@@ -12756,7 +12826,7 @@ reäiʹǧǧ+N+Pl+Nom
 * *čââʹlmtẹ^1VOWm{XC}^C2CC>a*
 * *čââʹlmtẹ0mm0>a*
 kaađneǩ+N+Sg+Gen 
-* *kaađnẹ%^1VOW{ʹØ}ǩ{XC}%^PALNo%^C2CC>a*
+* *kaađnẹ^1VOW{ʹØ}ǩ{XC}^PALNo^C2CC>a*
 * *kaađnẹ00kk00>a*
 
 **Orthographic Consonant lengthening Weak to strong %{XC%}:Cx for n and l** - used in
@@ -12820,8 +12890,8 @@ lookkmõš+N+Sg+Gen
 **Consonant X3 lengthening after diphthong in vertical line ˈ character** - used in +N+Sg+Ill
 **jeäll:jiâlˈlu,**
 b c č ǯ d đ g ǧ k ǩ l m n p r s š t v also htˈt nˈnj
-* *kuâl0l%^CC2CCC%>a*
-* *kuâlˈl0%>a*
+* *kuâl0l^CC2CCC>a*
+* *kuâlˈl0>a*
 
 **Diphthong extra short marker in vertical line ˈ character** - used in +N+Sg+Ill
 **ciâlkâlm:ciâˈlklmest**
@@ -12847,12 +12917,12 @@ Sakssajânnam+N+Prop+Sg+Nom: (∑) **Germany/Saksa**
 
 tuâjj+N+Cmp/SgNom+Cmp#joukk+N+Sg+Nom:  **team/työryhmä**
 * *tuâjj#joukk*
-* *tuâjj%-joukk*
+* *tuâjj-joukk*
 * ★*tuâjj#joukk* (is not standard language)
 * ★*tuâjj#joukk* (is not standard language)
 sääʹmm+N+Cmp/SgGen+Cmp#musikk+N+Sg+Nom: **Skolt Sámi music/kolttamusiikki**
-sää0mm%PAL%^CC2C%{-Ø%}#musikk
-sääʹm000%-#musikk
+sää0mm^PAL^CC2C{-Ø}#musikk
+sääʹm000-#musikk
 
 * * *
 
@@ -12941,7 +13011,6 @@ Pre-derivational POS tags for CG processing
 symbols ? 
 * **+Ine** 
 * **+Ela** 
-* **+ACR** 
 
 ### Possessive suffix 
 * **+PxSg1** 
@@ -13435,17 +13504,17 @@ an extra lemma attribute is inserted in the st element, e.g. lemma="tõlvvad"
 
 ### Other tags 
 
-* **+ABBR** Abbreviation 
+* **+ABBR** = Abbreviation 
+* **+ACR** = Acronym 
 * **+Symbol** = independent symbols in the text stream, like £, €, © 
-* **+ACR**  Acronym 
-* **+CLB**  Clause border (full stop, comma..) 
-* **+CLBfinal**  Sentence final abbreviated expression ending in full stop, the full stop is ambiguous
-* **+PUNCT**  punctuation 
-* **+LEFT**  left paranthesis 
-* **+RIGHT**  right paranthesis 
+* **+CLB** = Clause border (full stop, comma..) 
+* **+CLBfinal** = Sentence final abbreviated expression ending in full stop, the full stop is ambiguous
+* **+PUNCT** = punctuation 
+* **+LEFT** = left paranthesis 
+* **+RIGHT** = right paranthesis 
+* **+Prefix** = prefix 
+* **+Dyn** = Dynamically generated (acronyms) 
 * **^GUESSNOUNROOT** 
-* **+Dyn**  Dynamically generated (acronyms) 
-* **+Prefix**  prefix 
 
 ### Punctuation 
 * **+HYPH** 
@@ -13736,6 +13805,8 @@ given the proper use of these flags.
 |  **@U.Cap.Opt@** | Allowing downcasing of derived names: deatnulasj. 
 |  **@C.ErrOrth@** | tbw
 |  **@R.ErrOrth.ON@** | tbw
+|  **@D.ErrOrth.ON@** | tbw
+|  **@P.ErrOrth.ON@** | tbw
 |  **@P.Pmatch.Backtrack@** | tbw
 
 * **@U.NUMORTH.YES@**

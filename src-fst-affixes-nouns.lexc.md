@@ -4058,6 +4058,11 @@ NumContLex="1.113"
 čuäʹrvv+N+Ess+PxSg1
 (12) čuäʹrvvinan
 
+čuäʹrvv
+čuẹʼrv
+čuäʹrvv+N+Ess
+čuäʼrvven
+
 * LEXICON N_NEUQLL  neuʹll:ne%^1VOWull 
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
@@ -4141,6 +4146,10 @@ jieʹnnivuiʹm:   jeäʹnn+N+Pl+Com
 jieʹnnitaa: 	   jeäʹnn+N+Pl+Abe
 jeännaž: 	   jeäʹnn+N+Der+Der/Dimin+N+Sg+Nom
 jeänna: 	   jeäʹnn+N+Der+Der/Dimin+N+Sg+Gen
+
+* :%^VOWRaise%^PALẸ%^PAL%^CCC2CC PL-NOM ;   (2) jiẹʹǧǧ
+* :%^VOWRaise%^PALE%^PAL%^CCC2CC E-STEM_PL-OBL ;   (5) jieʹǧǧin
+* :%^PAL%>e ESS/PAR ;       (6) jeäʹǧˈǧen, (7) jeäʹǧˈǧed
 
 * LEXICON E-STEM_SG-NOM  (1)
 
@@ -4438,6 +4447,17 @@ is for nouns with stem *i* + *-est* +Sg+Loc; all stem other than the +Sg+Nom are
 * :%>ǥ VOONYS-STEM-PX ;  võnns-
 * :%>%{ʼØ%}j VOONYS-STEM-PX ;  võnns-
 
+* LEXICON N_JAAM  jaam:ja%^1VOWmm
+* LEXICON NMN_JAAM  kaav:kaapp
+is for nouns with stem *i* + *-est* +Sg+Loc; all stem other than the +Sg+Nom are X3; the *i* does not occur in +Par 
+* Yaml: **N-jaam**
+* There are several stem types 
+* :%>%{ʼØ%}j%>e ESS/PAR ;  jammjân 
+* +Use/NGminip+Use/NG:%>%{ʼØ%}j%>â ESS/PAR ;  jammjân 
+* +Use/NGminip+Use/NG:%^V2VV%^CC2C%>â ESS/PAR ;  jaamân
+* :%>ǥ VOONYS-STEM-PX ;  võnns-
+* :%>%{ʼØ%}j VOONYS-STEM-PX ;  võnns-
+
 * LEXICON N_POOUS  poous:pohss
 * LEXICON NMN_POOUS  poous:pohss
 is for nouns with stem *i* + *-est* +Sg+Loc; all stem other than the +Sg+Nom are X3; the *i* does not occur in +Par 
@@ -4574,7 +4594,7 @@ CLASS 2 NOMINALS with low stem vowel and u-stems
 * LEXICON N_CHUYNJ   čuânj:čuõnˈnj
 *   is for nouns with *-est* +Loc
 * Yaml: **N-sual**
-* There are several stem types
+* Ther aere several stem types
 
 * LEXICON N_PUYGXGX  puâǥǥ:puõkˈk
 *   is for nouns with *-est* +Loc
@@ -5069,8 +5089,8 @@ stemtype l-stem čeeuʹres:čeeuʹres
 CLASS 4 BISYLLABIC, LOW VOWEL, DIPHTHONG, PALATALIZATION
 IN PENULTIMATE E:0
 
-* LEXICON N_CYYQ33EL  cââʹʒʒel:câ%^1VOW%{ʹØ%}ccel
-* LEXICON NMN_CYYQ33EL  cââʹʒʒel:câ%^1VOW%{ʹØ%}ccel
+* LEXICON N_CYYQ33EL  cââʹʒʒel:câ%^1VOW%{ʹØ%}ʒʒel
+* LEXICON NMN_CYYQ33EL  cââʹʒʒel:câ%^1VOW%{ʹØ%}ʒʒel
 * Yaml: **N-cyyq33el**
 * :%^RmVow VOONYS-STEM-PX ;  câccl-
 
@@ -5118,7 +5138,7 @@ IN PENULTIMATE E:0
 * LEXICON NMN_NJUAEQMMEL  = stemtype l-stem njuäʹmmel:njuäʹmˈmel
 * Yaml: **njuammel, njuunnjel, aappal** 
 
-* LEXICON N_CIEAQKHKHES  cieʹǩǩes:ciâkˈkes
+* LEXICON N_CIEAQKHKHES  cieʹǩǩes:ceä%{ʹØ%}kˈkes
 * **NMN_CIEAQKHKHES** = Koulukielioppi stemtype II 9 (29)
 * Yaml: **N-ciekkes** 
 * :%^Pen%^VOWLower%^RmVow VOONYS-STEM-PX ;  võnns-
@@ -5692,7 +5712,7 @@ inflection_type="?"
 NumContLex="1.2"
 * sirddi:sirddi
 NumContLex="1.2"
-* :%^I2J VOONYS-STEM-PX ;  võnns-
+* :%^Pen%^PAL%^I2J VOONYS-STEM-PX ;  võnns-
 
 * LEXICON N_PRSPRC-VHYY-I  lahtti:la%^1VOWhtti
 * LEXICON NMN_PRSPRC-VHYY-I  lahtti:la%^1VOWhtti
