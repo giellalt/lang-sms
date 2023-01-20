@@ -7388,7 +7388,7 @@ IN PENULTIMATE E:0
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
 * LEXICON N_VIEQLPES  vieʹlpes:ǩeâlppes
-* LEXICON NMN_VIEQLPES  vieʹlpes:ǩeâlppes
+* LEXICON NMN_VIEQLPES  vieʹlpes:ǩeâ%{ʹØ%}lppes
 * Yaml: **N-veelpes**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
