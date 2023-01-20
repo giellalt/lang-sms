@@ -1409,6 +1409,8 @@ kuʹvǯǯ+N+Sg+Gen
 **č:0** - used in
 
 **c:0** - used in
+* *kä^1VOW{ʹØ}h{ʹØ}cces^Pen^V2VV^Pen^PAL^Pen^XYY2VY*
+* *kä00uʹc0es000000*
 
 **ž:0** - used in
 
