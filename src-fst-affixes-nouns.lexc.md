@@ -3746,6 +3746,11 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^PAL%>e ESS/PAR ;    (6) Ess: täʹhtten
 * :%^V2VV%^PALNo%^XYY2VY E-STEM_N_KUYLAZH ;    !(9) Der/Dimin.N.Sg.Nom: tääutaž
 
+* :%^PAL R ;   (1) Sg.Nom: täʹhtt
+* :%^V2VV%^PAL%^XYY2VY PL-NOM ;    (2) Pl.Nom: tääuʹt
+* :%^V2VV%^VOWRaise%^PAL%^XYY2VY E-STEM_PL-OBL ;    (5) Sg.Com: tääuʹtin
+* :%^PAL%>e ESS/PAR ;    (6) Ess: täʹhtten
+
 similar_to: KÅHTT
 * Yaml: **N-taehtt**
 * +Use/NG+Err/Orth:%^PAL E-STEM_SG-NOM ;   (1) Sg.Nom: käʹhcc

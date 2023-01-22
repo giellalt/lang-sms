@@ -1241,6 +1241,9 @@ huʹvǧǧi+N+Sg+Nom: **rattle/suhistin**
 * *hu^1VOW{ʹØ}v{ʹØ}ggi^Pen^PAL*
 * *hu0ʹv0ǧǧi00*
 
+* *a^1VOW{ʹØ}lggi^Pen^PAL^Pen^PALK*
+* *a0ʹlǧǧi0000*
+
 **Even-syllabic verbs I, Palatalization of k:ǩ here** - used in
 
 hääʹsǩ Perhaps the stem should simply be **häskk**
@@ -1516,6 +1519,10 @@ with allegro
 
 * *jo^1VOWkk^V2VV^KK2GG*
 * *jooǥǥ00*
+puâǥǥ+N+Sg+Nom: ****
+* *puõkˈk^VOWLower^KKK2GG*
+* *puâǥ0ǥ00*
+
 čuâǥǥas+N+Sg+Nom  **road**
 * *čuâkˈk^KKK2GG>as*
 * *čuâǥ0ǥ0>as*
