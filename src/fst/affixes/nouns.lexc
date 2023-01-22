@@ -5446,6 +5446,12 @@ LEXICON NMN_TAQHTT
 :%^V2VV%^PALNo%^XYY2VY E-STEM_N_KUYLAZH ;   !!= * @CODE@ !(9) Der/Dimin.N.Sg.Nom: tääutaž
 ! WORK HERE
 
+LEXICON N_TAQHTT-PL
+:%^PAL R ;  !!= * @CODE@ (1) Sg.Nom: täʹhtt
+:%^V2VV%^PAL%^XYY2VY PL-NOM ;   !!= * @CODE@ (2) Pl.Nom: tääuʹt
+:%^V2VV%^VOWRaise%^PAL%^XYY2VY E-STEM_PL-OBL ;   !!= * @CODE@ (5) Sg.Com: tääuʹtin
+:%^PAL%>e ESS/PAR ;   !!= * @CODE@ (6) Ess: täʹhtten
+
 LEXICON NMN_KAEAEUQC
 ! gradation: yes
 !! similar_to: KÅHTT
@@ -10520,17 +10526,18 @@ LEXICON NMN_PRSPRC-VQXYY-I !!= * @CODE@ äjjnõʹstti:äjjnõʹstti
 !! NumContLex="1.2"
 !! * sirddi:sirddi
 !! NumContLex="1.2"
-: SG-NOM ;	       			! siʹrddi
-: SG-ABE/ACC/GEN ;    			! siʹrddi
+:%^Pen%^PAL%^Pen%^PALK SG-NOM ;	       			! siʹrddi
+:%^Pen%^PAL%^Pen%^PALK SG-ABE/ACC/GEN ;    			! siʹrddi
 :%^I2J%>a SG-ILL ;		! siʹrddja
-+Use/NGminip+Use/NG:%^Pen%^PALNo%^I2J%>a SG-ILL ;		! sirddja
-:%^I2J%>e SG-LOC ;			! siʹrddjest
-:%^CC2C SG-COM_N ;			! siʹrddjin
-:%^I2J%>e ESS/PAR ;  			! siʹrddjen
-:%^V2VV%^XYY2XY PL-NOM ;             	! siiʹrdi
-+Use/NGminip+Use/NG: PL-NOM ;             	! siʹrddi
-: PL-OBL ;             		! siʹrddi
-+Use/NGminip+Use/NG:%^V2VV%^XYY2XY PL-OBL ;       ! siiʹrdi
++Use/NGminip+Use/NG:%^I2J%>a SG-ILL ;		! sirddja
+:%^Pen%^PAL%^Pen%^PALK%^I2J%>e SG-LOC ;			! siʹrddjest
+:%^Pen%^PAL%^Pen%^Pen%^PALK SG-COM_N ;			! siʹrddjin
+:%^Pen%^PAL%^Pen%^CC2C SG-COM_N ;			! siʹrddjin?CHECKME
+:%^Pen%^PAL%^Pen%^PALK%^I2J%>e ESS/PAR ;  			! siʹrddjen
+:%^Pen%^V2VV%^Pen%^PAL%^Pen%^XYY2XY%^Pen%^PALK PL-NOM ;             	! siiʹrdi
++Use/NGminip+Use/NG:%^Pen%^PAL%^Pen%^PALK PL-NOM ;             	! siʹrddi
+:%^Pen%^PAL%^Pen%^PALK PL-OBL ;             		! siʹrddi
++Use/NGminip+Use/NG:%^Pen%^V2VV%^Pen%^PAL%^Pen%^XYY2XY%^Pen%^PALK PL-OBL ;       ! siiʹrdi
 +Der+Der/Dimin+N:%^I2J  N_KUYLAZH ;
 :%^I2J VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
@@ -10673,16 +10680,16 @@ LEXICON NMN_SUQVDDI !!= * @CODE@ suʹvddi:suʹvddi
 !! * Yaml: **N-suvddi**
 !! * There are several stem types
 !! NumContLex="1.2"
-:%^PAL SG-NOM ;	       			! suʹvddi
-:%^PAL SG-ABE/ACC/GEN ;    			! suʹvddi
-:%^PAL%^I2J%>a SG-ILL ;		! suʹvddja
-:%^PAL%^I2J%>e SG-LOC ;			! suʹvddjest
-:%^PAL%^CC2C SG-COM_N ;			! suʹvddjin
-:%^PAL%^I2J%>e ESS/PAR ;  			! suʹvddjen
-:%^PAL%^XYY2VY PL-NOM ;             	! suuʹdi
-+Use/NGminip+Use/NG:%^PAL PL-NOM ;             	! suʹvddi
-:%^PAL PL-OBL ;             		! suʹvddi
-+Use/NGminip+Use/NG:%^PAL%^XYY2VY PL-OBL ;       ! suuʹdi
+:%^Pen%^PAL SG-NOM ;	       			! suʹvddi
+:%^Pen%^PAL SG-ABE/ACC/GEN ;    			! suʹvddi
+:%^Pen%^PAL%^I2J%>a SG-ILL ;		! suʹvddja
+:%^Pen%^PAL%^I2J%>e SG-LOC ;			! suʹvddjest
+:%^Pen%^PAL%^CC2C SG-COM_N ;			! suʹvddjin
+:%^Pen%^PAL%^I2J%>e ESS/PAR ;  			! suʹvddjen
+:%^Pen%^PAL%^XYY2VY PL-NOM ;             	! suuʹdi
++Use/NGminip+Use/NG:%^Pen%^PAL PL-NOM ;             	! suʹvddi
+:%^Pen%^PAL PL-OBL ;             		! suʹvddi
++Use/NGminip+Use/NG:%^Pen%^PAL%^Pen%^XYY2VY PL-OBL ;       ! suuʹdi
 +Der+Der/Dimin+N:%^I2J  N_KUYLAZH ;
 :%^I2J VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
@@ -12411,14 +12418,14 @@ LEXICON VOONYS-STEM-PX-STRENGTHEN-WITHOUT-PAL
 
 LEXICON FEMALE-CLASSIFIERS
 HUMAN-CLASSIFIERS ;
-eʹmm+N:e%^1VOWmm N_AQVV ;
-jeäʹnn+N:jeänˈn N_JEAQNNN ;
-kuäʹsǩǩ+N:kuäskk N_JEAQRMM ;
-mââʹnnj+N:mâânnj N_SAAQMM ;
-mueʹđđ+N:muâđđ N_KUEQLL ;
+eʹmm+N:e%^1VOW%{ʹØ%}mm N_AQVV ;
+jeäʹnn+N:jeä%{ʹØ%}nˈn N_JEAQNNN ;
+kuäʹsǩǩ+N:kuä%{ʹØ%}skk N_JEAQRMM ;
+mââʹnnj+N:mââ%{ʹØ%}nnj N_SAAQMM ;
+mueʹđđ+N:muâ%{ʹØ%}đđ N_KUEQLL ;
 nijdd+N:ni N_NIJDD ;
-sieʹss+N:seâsˈs N_MIEQLLL ;
-vuäʹbb+N:vuäbˈb N_JEAQNNN ;
+sieʹss+N:seâ%{ʹØ%}sˈs N_MIEQLLL ;
+vuäʹbb+N:vuä%{ʹØ%}bˈb N_JEAQNNN ;
 ääkkaž+N:ääkk N_KUYLAZH ;
 äkk+N:ä%^1VOWkk N_PESS ;
 
