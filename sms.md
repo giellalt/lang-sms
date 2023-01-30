@@ -12263,6 +12263,9 @@ kueiʹt+Num+Sg+Gen **two/kaksi**
 uʹvdded+V+Ind+Prs+Pl3: **give/antaa**
 * *u^1VOW{ʹØ}v{ʹØ}dd^PAL>ed*
 * *u0ʹv0dd0>e*
+tuʹvnn+N+Sg+Nom: ****
+€ tu^1VOW{ʹØ}v{ʹØ}nn^PAL
+€ tu0ʹv0nn0
 täʹhtt+N+Pl+Nom: **bone/luu**
 * *tä^1VOW{ʹØ}h{ʹØ}tt^PAL*
 * *tääuʹt0000*
