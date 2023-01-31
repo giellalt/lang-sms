@@ -270,6 +270,12 @@ possible triggers between vowel length and Palatalization
 
 `BetweenVowHeightAndConsGrade = [((%^PALE:\|%^PALÄ:\|%^PALẸ:\|%^PALÕ:) (%^Allegro:) %^PAL:\|(%^PALÂ:\](%^PALÕ:) (%^Allegro:) %^PALNo:)) ;`
 
+`BetweenVowHeightAndMorph = [  ((%^PALE:\|%^PALÄ:\|%^PALẸ:\|%^PALÕ:) (%^Allegro:) %^PAL:\|(%^PALÂ:\|%^PALÕ:) (%^Allegro:) %^PALNo:) ([(%^Allegro:) %^CC2C:\|(%^Allegro:) %^CC2CAllegro:]\|%^C2CC:\|%^XYY2XY:\|%^K2GG:\|%^KK2GG:\|%^CC2CCC:\|%^CCC2C:\|%^CCC2CC:\|%^XYY2VY:\|%^XYY2VYY:\](%^KKK2GG:) RBound ) ;`
+
+`BetweenPALNoAndMorphRightArrow = [([(%^Allegro:) %^CC2C:\|(%^Allegro:) %^CC2CAllegro:]\|%^C2CC:\|%^XYY2XY:\|%^K2GG:\|%^KK2GG:\|%^CC2CCC:\|%^CCC2C:\|%^CCC2CC:\|%^XYY2VY:\|%^XYY2VYY:\](%^KKK2GG:) ) ;`
+
+`BetweenPALNoAndMorph = [([(%^Allegro:) %^CC2C:\|(%^Allegro:) %^CC2CAllegro:]\|%^C2CC:\|%^XYY2XY:\|%^K2GG:\|%^KK2GG:\|%^CC2CCC:\|%^CCC2C:\|%^CCC2CC:\|%^XYY2VY:\|%^XYY2VYY:\](%^KKK2GG:) RBound ) ;`
+
 `BetweenStemAndRightArrow = [NeutrVowLenghtHeightDiphPalAllegroPAL BetweenPALNoAndMorphRightArrow] ;`
 
 ### Penultimate vowel centers possible triggers before VOWLower and VOWRaise
@@ -812,9 +818,6 @@ radio+N+Sg+Ill
 * *radioo0ʹje*
 
 **%^1VOW:ẹ relative vowel lengthening** -
-sẹẹr+N+Pl+Nom: ****
-* *sẹ^1VOWrr^CC2C*
-* *sẹẹr00*
 pess+N+Sg+Acc: **rifle/pyssy**
 * *pẹ^1VOWss^V2VV*
 * *pẹẹss0*
@@ -968,9 +971,6 @@ mainstummuš+N+Err/Orth+Sg+Gen: **story telling/tarinointi**
 * *mainstummu^1VOWš{XC}^Pen^CC2C^V2VV^K2GG*
 * *mainstum0uužž0000*
 
-tuuibâl+N+Sg+Nom: ****
-* *tu^1VOWibbâl^Pen^V2VV^Pen^XYY2XY*
-* *tuuib0âl0000*
 * *pu^1VOW0ttes^Pen^V2VV^Pen^PAL*
 * *puuʹttes0000*
 * ★*pu%^1VOW0ttes^Pen^V2VV^Pen^PAL* (is not standard language)
@@ -1676,10 +1676,8 @@ puuttâd+V+Ind+Prt+Sg3: **end/loppua**
 * *puutt^CC2C>i*
 * *puuđ00>i*
 kääđas+N+Sg+Nom:
-* *kä%^1VOWttas^Pen^V2VV^Pen^CC2C*
-* *kääđ0as0000*
-* *čuâ{ʹØ}ttes^Pen^PALE^Pen^PAL^Pen^CC2C*
-* *čueʹđ0es000000*
+kä%^1VOWttas^Pen^V2VV^Pen^CC2C
+kääđ0as0000
 
 **Even syllabic nouns I, p>v** - pp:v
 * *ǩiâpp^CC2C*

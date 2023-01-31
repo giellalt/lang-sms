@@ -2795,12 +2795,6 @@ puåvv:puåvv
 * +Der+Der/Dimin+N:%^CC2C N_MUORYZH-WITHOUT-PAL ;   puåv-
 * +Der+Der/Dimin+N:%^PALE%^PAL%^CC2C N_MUORYZH-WITH-PAL ;   pueʹv-
 
-* LEXICON N_PUOAVV-PL  puåvv:puå%{ʹØ%}vv
-* : R ;	    			 (1) Sg.Nom: puåvv
-* :%^CC2C PL-NOM ;		 (2) Pl.Nom: puåv
-* :%>â ESS/PAR ; 	  			 (6) Ess: puåvvân
-* :%^CC2C PL-OBL ;			 (8) Pl.Gen: puåvi
-
 * puåvv #  examples:*
 * *puåvv:* `puåvv+N+Sg+Nom`
 * *puåv:* `puåvv+N+Sg+Gen`
@@ -3204,11 +3198,6 @@ THIS IS NOT THE SAME AS N_MUORR
 
 * +Der+Der/Dimin+N:%^KK2GG N_KUUZZYZH-WITHOUT-PAL ;   luõzz-
 * +Der+Der/Dimin+N:%^PAL%^KK2GG N_KUUZZYZH-WITH-PAL ;   luõʹzz-
-
-* : R ;	     			
-* :%^KK2GG PL-NOM ;	 luõzz
-* :%>â ESS/PAR ; 	   			
-* :%^KK2GG PL-OBL ;			 luõzzi
 
 * luõss # examples:*
 * *luõss:* `luõss+N+Sg+Nom`
@@ -4287,11 +4276,6 @@ Ess_Px..., Sg_Ill..., N»A
 
 * :%^XYY2XY SG-LOC-PX_ALLEGRO ;  (10) peäld»
 Sg_Loc_Px..
-
-* : R ;   peäldd
-* :%^XYY2XY PL-NOM ;	  peäld
-
-* :%>a ESS/PAR ;     peälddan
 
 * LEXICON N_TUOAIMM  tuåimm:tuåimm
 N_1A-VWXYY
@@ -5385,14 +5369,6 @@ NumContLex="1.113"
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) ävv-
 * :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) äʹv-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) äʹvv Ess+Px..
-
-* LEXICON N_ARMEI  armei:arme
-V1ʹC1C1
-
-* Yaml: **N-aevv**
-*  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) ävv-
-* :ʹj E-STEM-PX-ALLEGRO ;  (11) äʹv-
-* :ʹjj E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) äʹvv Ess+Px..
 
 * LEXICON N_STAQLLJ  stäʹllj:ställj
 N_1E-VQCC
@@ -6994,8 +6970,6 @@ like PÕRTT
 * Yaml: **N-taalkas**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_TAALKYS-PL  taalkâs:ta%^1VOWlkkâs
-
 * LEXICON N_PIIUTYS  piiutâs:pihttâs
 * LEXICON NMN_PIIUTYS  piiutâs:pihttâs
 like N_VAHTT
@@ -7077,12 +7051,6 @@ N_GEN2X3-NOM2X1
 
 *  LEXICON N_PUAEGXGXANJ  tuõddâr:tuõdˈdâr
 *  LEXICON NMN_PUAEGXGXANJ  puäǥǥanj:puäkˈkanj
-N_GEN2X3-NOM2X1
-* Yaml: **N-tuoddar**
-* :%^RmVow VOONYS-STEM-PX ;  puäkˈknj-
-
-*  LEXICON N_VUAEDHANJ  vuäđanj:vuäđˈđanj
-*  LEXICON NMN_VUAEDHANJ  vuäđanj:vuäđˈđanj
 N_GEN2X3-NOM2X1
 * Yaml: **N-tuoddar**
 * :%^RmVow VOONYS-STEM-PX ;  puäkˈknj-
@@ -7190,7 +7158,7 @@ N_LBVVC_as
 * :%^VC SG-ABE/ACC/GEN-PL-NOM ;  kåvvaz
 * :%^RmVow VOONYS-STEM-PX ;  såbbr-
 
-* LEXICON N_PAEAELKAS  päälkas:pä%^1VOWlkkas
+* LEXICON N_PAEAELKAS  päälkas:pälkkas
 * LEXICON NMN_PAEAELKAS  päälkas:pälkkas
 * Yaml: **N-paalkas**
 * :%^VC SG-ABE/ACC/GEN ;  pälkkaz
@@ -11389,6 +11357,12 @@ possible triggers between vowel length and Palatalization
 
 `BetweenVowHeightAndConsGrade = [((%^PALE:\|%^PALÄ:\|%^PALẸ:\|%^PALÕ:) (%^Allegro:) %^PAL:\|(%^PALÂ:\](%^PALÕ:) (%^Allegro:) %^PALNo:)) ;`
 
+`BetweenVowHeightAndMorph = [  ((%^PALE:\|%^PALÄ:\|%^PALẸ:\|%^PALÕ:) (%^Allegro:) %^PAL:\|(%^PALÂ:\|%^PALÕ:) (%^Allegro:) %^PALNo:) ([(%^Allegro:) %^CC2C:\|(%^Allegro:) %^CC2CAllegro:]\|%^C2CC:\|%^XYY2XY:\|%^K2GG:\|%^KK2GG:\|%^CC2CCC:\|%^CCC2C:\|%^CCC2CC:\|%^XYY2VY:\|%^XYY2VYY:\](%^KKK2GG:) RBound ) ;`
+
+`BetweenPALNoAndMorphRightArrow = [([(%^Allegro:) %^CC2C:\|(%^Allegro:) %^CC2CAllegro:]\|%^C2CC:\|%^XYY2XY:\|%^K2GG:\|%^KK2GG:\|%^CC2CCC:\|%^CCC2C:\|%^CCC2CC:\|%^XYY2VY:\|%^XYY2VYY:\](%^KKK2GG:) ) ;`
+
+`BetweenPALNoAndMorph = [([(%^Allegro:) %^CC2C:\|(%^Allegro:) %^CC2CAllegro:]\|%^C2CC:\|%^XYY2XY:\|%^K2GG:\|%^KK2GG:\|%^CC2CCC:\|%^CCC2C:\|%^CCC2CC:\|%^XYY2VY:\|%^XYY2VYY:\](%^KKK2GG:) RBound ) ;`
+
 `BetweenStemAndRightArrow = [NeutrVowLenghtHeightDiphPalAllegroPAL BetweenPALNoAndMorphRightArrow] ;`
 
 ### Penultimate vowel centers possible triggers before VOWLower and VOWRaise
@@ -11931,9 +11905,6 @@ radio+N+Sg+Ill
 * *radioo0ʹje*
 
 **%^1VOW:ẹ relative vowel lengthening** -
-sẹẹr+N+Pl+Nom: ****
-* *sẹ^1VOWrr^CC2C*
-* *sẹẹr00*
 pess+N+Sg+Acc: **rifle/pyssy**
 * *pẹ^1VOWss^V2VV*
 * *pẹẹss0*
@@ -12087,9 +12058,6 @@ mainstummuš+N+Err/Orth+Sg+Gen: **story telling/tarinointi**
 * *mainstummu^1VOWš{XC}^Pen^CC2C^V2VV^K2GG*
 * *mainstum0uužž0000*
 
-tuuibâl+N+Sg+Nom: ****
-* *tu^1VOWibbâl^Pen^V2VV^Pen^XYY2XY*
-* *tuuib0âl0000*
 * *pu^1VOW0ttes^Pen^V2VV^Pen^PAL*
 * *puuʹttes0000*
 * ★*pu%^1VOW0ttes^Pen^V2VV^Pen^PAL* (is not standard language)
@@ -12795,10 +12763,8 @@ puuttâd+V+Ind+Prt+Sg3: **end/loppua**
 * *puutt^CC2C>i*
 * *puuđ00>i*
 kääđas+N+Sg+Nom:
-* *kä%^1VOWttas^Pen^V2VV^Pen^CC2C*
-* *kääđ0as0000*
-* *čuâ{ʹØ}ttes^Pen^PALE^Pen^PAL^Pen^CC2C*
-* *čueʹđ0es000000*
+kä%^1VOWttas^Pen^V2VV^Pen^CC2C
+kääđ0as0000
 
 **Even syllabic nouns I, p>v** - pp:v
 * *ǩiâpp^CC2C*
