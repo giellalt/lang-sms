@@ -111,7 +111,7 @@ GENERATED_LEXC_SRCS=\
 			$(srcdir)/stems/Pron_sms2x.lexc                \
 			$(srcdir)/stems/V_sms2x.lexc                   \
 			$(srcdir)/stems/ABBR_sms2x.lexc                \
-			$(srcdir)/stems/ACRO_sms2x.lexc                \
+			$(srcdir)/stems/ACR_sms2x.lexc                \
 			generated_files/smi-$(GLANG)-arabic_roman_digits.lexc \
 			generated_files/smi-$(GLANG)-digits.lexc \
 			generated_files/mul-$(GLANG)-punctuation.lexc \
@@ -164,7 +164,7 @@ GT_XML_SRCS=\
 			 stems/Pron_sms2x.xml     \
 			 stems/V_sms2x.xml     \
 			 stems/ABBR_sms2x.xml	\
-			 stems/ACRO_sms2x.xml
+			 stems/ACR_sms2x.xml
 
 
 # Define any additional lexc sources here (compiled on their own):

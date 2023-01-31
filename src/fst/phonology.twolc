@@ -1349,12 +1349,15 @@ OnSetC u: _   (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|r d d:
 !!€ mää0uʹs0000>et
 
 
- OnSetC [ä|a:ä] _ (h:u|u|i) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ %^V2VV: ( %^VOWLower: )  BetweenVowHeightAndMorph ;
+ OnSetC [ä|a:ä] _ (u|i) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ %^V2VV: ( %^VOWLower: )  BetweenVowHeightAndMorph ;
+ OnSetC [ä|a:ä] _ (%{ʹØ%}:) (h:) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ %^V2VV: ( %^VOWLower: )  BetweenVowHeightAndMorph ;
 ! OnSetC [å:ä|ä|a:ä] _ (h:u|u|i) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ %^V2VV: ( %^VOWLower: )  ;
 !Distinguishing mainstam and maainstam
 !- kååʹmmerd, maainâst Vowel lengthening in INDPRSSG3 and IMPSG2
-    OnSetC ä _ (h:u|u|i) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ Vow: Cns:+ (%{XC%}:) [%^Pen: %^V2VV:|%^IMPSG2:|%^INDPRSSG3:] ;
-    OnSetC ä _ (i|h:u|u) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ Vow: Cns:* %^Pen: %^V2VV: ;
+    OnSetC ä _ (u|i) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ Vow: Cns:+ (%{XC%}:) [%^Pen: %^V2VV:|%^IMPSG2:|%^INDPRSSG3:] ;
+    OnSetC ä _ (%{ʹØ%}:) (h:) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ Vow: Cns:* %^Pen: %^V2VV: ;
+    OnSetC ä _ (u|i) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ Vow: Cns:+ (%{XC%}:) [%^Pen: %^V2VV:|%^IMPSG2:|%^INDPRSSG3:] ;
+    OnSetC ä _ (%{ʹØ%}:) (h:) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ Vow: Cns:* %^Pen: %^V2VV: ;
 
   ä _ %^V2VV: BetweenVowHeightAndMorph ;
 !! Määttä+N+Prop+Sg+Ill
@@ -1836,6 +1839,11 @@ e:  _ (%{ʹØ%}: h:|%{ʹØ%}: v:|i|u) [:ʹ|%{ʹØ%}:ʹ]  [Cns:+ (%{XC%}:)|Cns:+ 
 
            Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) (Cns:) g: (ˈ:|:ˈ) _   BetweenStemAndPALNo (%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL: (%^CCC2CC:|%^CC2CCC:) RBound ;
 
+         Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:     _ (ˈ:|:ˈ) g: NeutrVowLenghtHeightDiphTint (%^PAL:) (%^CCC2CC:|%^CC2CCC:) %^PALK: ;
+           Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) (Cns:) g: (ˈ:|:ˈ) _  NeutrVowLenghtHeightDiphTint (%^PAL:) (%^CCC2CC:|%^CC2CCC:) %^PALK: ;
+!!€ veâ{ʹØ}rǧǧ^VOWRaise^PALE^PAL^PALK
+!!€ vieʹrǧǧ0000
+
     Vow: (%^1VOW:) 0: _ BetweenStemAndPALNo %^PAL: ;
 !! bioloog+N+Sg+Ill **biologist**
 !!€ bioloo0g^PAL>e
@@ -1848,9 +1856,12 @@ e:  _ (%{ʹØ%}: h:|%{ʹØ%}: v:|i|u) [:ʹ|%{ʹØ%}:ʹ]  [Cns:+ (%{XC%}:)|Cns:+ 
 !!€ hu^1VOW{ʹØ}v{ʹØ}ggi^Pen^PAL
 !!€ hu0ʹv0ǧǧi00
 
-         Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) Cns: (%{ʹØ%}:)    _ (ˈ:|:ˈ) g:ǧ Vow: Cns* PenNeutrVowLenghtHeightDiphTint (%^Pen: %^PAL:) (%^Pen: %^CCC2CC:|%^Pen: %^CC2CCC:) %^Pen: %^PALK: ;
+         Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) (Cns:) (%{ʹØ%}:)    _ (ˈ:|:ˈ) g: Vow: Cns* PenNeutrVowLenghtHeightDiphTint (%^Pen: %^PAL:) (%^Pen: %^CCC2CC:|%^Pen: %^CC2CCC:) %^Pen: %^PALK: ;
 
            Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) (Cns:) (%{ʹØ%}:) g: (ˈ:|:ˈ) _   Vow: Cns* PenNeutrVowLenghtHeightDiphTint (%^Pen: %^PAL:) (%^Pen: %^CCC2CC:|%^Pen: %^CC2CCC:) %^Pen: %^PALK: ;
+!! ääʹǧǧes+N+Sg+Nom: ****
+!!€ ä^1VOW{ʹØ}gges^Pen^V2VV^Pen^PAL^Pen^PALK
+!!€ ääʹǧǧes000000
 !!
 !!€ a^1VOW{ʹØ}lggi^Pen^PAL^Pen^PALK
 !!€ a0ʹlǧǧi0000
@@ -1866,6 +1877,15 @@ e:  _ (%{ʹØ%}: h:|%{ʹØ%}: v:|i|u) [:ʹ|%{ʹØ%}:ʹ]  [Cns:+ (%{XC%}:)|Cns:+ 
 !! hääʹsǩ Perhaps the stem should simply be **häskk**
 !!€ hää0sk^PAL
 !!€ hääʹsǩ0
+ Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) (Cns:)   _ (0:|ˈ:) [k: |%{XC%}: ] NeutrVowLenghtHeightDiphTint (%^PAL:) ([ %^CC2C:| %^CC2CAllegro:|%^CCC2CC:|%^XYY2XY:])  %^PALK: ;
+ Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) (Cns:)   _ (0:|ˈ:) [k: |%{XC%}: ] Vow: Cns:* PenNeutrVowLenghtHeightDiphTint (%^Pen: %^PAL:) ([ %^Pen: %^CC2C:| %^Pen: %^CC2CAllegro:|%^Pen: %^CCC2CC:|%^Pen: %^XYY2XY:]) (%^VC:) %^Pen: %^PALK: ;
+
+ Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) (Cns:)   k: (0:|ˈ:) _ NeutrVowLenghtHeightDiphTint (%^PAL:) (%^CC2CCC:|%^CCC2CC:)  %^PALK: ;
+ Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) (Cns:)   k: (0:|ˈ:) _ Vow: Cns:* PenNeutrVowLenghtHeightDiphTint (%^Pen: %^PAL:) ( %^Pen: %^CC2CCC:|%^Pen: %^CCC2CC:) (%^VC:) %^Pen: %^PALK: ;
+
+
+
+
  Vow: (%^1VOW:) (ʹ:|0:ʹ|%{ʹØ%}:) (Cns:)   _ (0:|ˈ:) [k: |%{XC%}:] Vow: Cns:+ PenNeutrVowLenghtHeightDiphTint %^Pen: %^PAL: ( [ %^Pen: %^CC2C:| %^Pen: %^CC2CAllegro:|%^Pen: %^XYY2XY:]) (%^VC:) RBound ;
 
 !! cieʹǩǩes+N+Sg+Ill: **trick, type of ear mark/tikki, pykälä**
