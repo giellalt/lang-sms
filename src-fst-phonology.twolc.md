@@ -1236,6 +1236,9 @@ vueʹlǧǧed+Use/NG+V+Ind+Prs+Pl3 **leave/lähteä**
 * *vuâ0lgg^PALÄ^PAL>a*
 * *vuäʹlǧǧ00>a*
 
+* *veâ{ʹØ}rǧǧ^VOWRaise^PALE^PAL^PALK*
+* *vieʹrǧǧ0000*
+
 bioloog+N+Sg+Ill **biologist**
 * *bioloo0g^PAL>e*
 * *biolooʹǧ0>e*
@@ -1244,6 +1247,9 @@ huʹvǧǧi+N+Sg+Nom: **rattle/suhistin**
 * *hu^1VOW{ʹØ}v{ʹØ}ggi^Pen^PAL*
 * *hu0ʹv0ǧǧi00*
 
+ääʹǧǧes+N+Sg+Nom: ****
+* *ä^1VOW{ʹØ}gges^Pen^V2VV^Pen^PAL^Pen^PALK*
+* *ääʹǧǧes000000*
 * *a^1VOW{ʹØ}lggi^Pen^PAL^Pen^PALK*
 * *a0ʹlǧǧi0000*
 

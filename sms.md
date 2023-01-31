@@ -418,8 +418,6 @@ CLASS
 * LEXICON A_PRSPRC-EEI  tuejjeei:tuejjee
 * +Err/Orth+Attr:jas ENDLEX ;  c.f. sjm faʹlsǩeejas
 
-* LEXICON A_PRSPRC-EEQJJ  tuejjeei:tuejjẹẹ
-
 WORK HERE 2015-10-14 deverbals
 * LEXICON A_PRSPRC-NOGRADE-I  uuidi:uuidi
 
@@ -3260,9 +3258,10 @@ N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 
 * :%^VV2V%^CC2CAllegro SG-LOC-PX_ALLEGRO ;  par-
 
-* Yaml: **N-paarr, N-saakk**
-is for nouns with -âst Loc. N_Y-EPal2-21
-N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
+* LEXICON N_PAARR-PL  paarr:paa%{ʹØ%}rr
+* :%^CC2C PL-NOM ;	 paar
+* :â ESS/PAR ;   	  		 paarrân
+* :%^CC2C PL-OBL ;		 paari
 
 * paarr # examples:*
 * *paarr:* `paarr+N+Sg+Nom`
@@ -5232,8 +5231,8 @@ NumContLex="1.113"
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-aâlghgh**
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) ǩeâmnn-
-* :%^VOWRaise%^PALE%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) kieʹmn-
-* :%^VOWRaise%^PALE%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) kieʹmnn Ess+Px..
+* :%^VOWRaise%^PALE%^PAL%^XYY2XY%^PALK E-STEM-PX-ALLEGRO ;  (11) kieʹmn-
+* :%^VOWRaise%^PALE%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) kieʹmnn Ess+Px..
 
 CLASS 1 LOW VOWEL, PALATALIZATION, ILLATIVE IN U NOMINALS
 
@@ -6978,6 +6977,8 @@ stemtype n-stem piiutâs:piiutâs
 * Yaml: **N-piiutas**
 * :%^Pen%^V2VV%^Pen%^XYY2VY SG-NOM ;  piiutâs
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
+* LEXICON N_PIIUTYS-PL  piiutâs:pihttâs
+* :%^Pen%^V2VV%^Pen%^XYY2VY R ;  piiutâs
 
 * LEXICON N_KOONTYR  koontâr:konttâr
 like N_ALGG, N_TAALKYS, N_AAUTYR
@@ -7216,6 +7217,9 @@ N_GEN2X3-NOM2X1
 * :%^VC SG-ABE/ACC/GEN-PL-NOM ;  kuäivvaz
 * :%^RmVow VOONYS-STEM-PX ;  såbbr-
 
+* LEXICON N_KUAEIVAS-PL  kuäivas:kuäivvas
+* :%^VC PL-NOM ;  kuäivvaz
+
 * LEXICON N_JUYGXGXAS  juâǥǥas:juâkˈkas
 ## 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 252)
 ## 2.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
@@ -7290,7 +7294,7 @@ stemtype l-stem čeeuʹres:čeeuʹres
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
 * LEXICON N_POAOAUQTES  pååuʹtes:på%^1VOWhttes
-* LEXICON NMN_POAOAUQTES  pååuʹtes:på%^1VOWhttes
+* LEXICON NMN_POAOAUQTES  pååuʹtes:på%^1VOW%{ʹØ%}h%{ʹØ%}ttes
 * Yaml: **N-ceeures** 
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
@@ -7464,7 +7468,7 @@ Nouns with -est Loc and -a Ill without ʹ
 **LEXICON NMN_MIEQLKHKH ** Nouns with -est Loc and -a Ill without ʹ
 * Yaml: **N-mielkk**
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) meâlkk- CHECKME 2016-08-19
-* :%^PALE%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) mieʹlǩ-
+* :%^PALE%^PAL%^XYY2XY%^PALK E-STEM-PX-ALLEGRO ;  (11) mieʹlǩ-
 
 * LEXICON N_PAARHOAQD  päärhåʹd:päärhå%^1VOWd
 * LEXICON NMN_PAARHOAQD  päärhåʹd:päärhå%^1VOWd
@@ -12319,6 +12323,9 @@ vueʹlǧǧed+Use/NG+V+Ind+Prs+Pl3 **leave/lähteä**
 * *vuâ0lgg^PALÄ^PAL>a*
 * *vuäʹlǧǧ00>a*
 
+* *veâ{ʹØ}rǧǧ^VOWRaise^PALE^PAL^PALK*
+* *vieʹrǧǧ0000*
+
 bioloog+N+Sg+Ill **biologist**
 * *bioloo0g^PAL>e*
 * *biolooʹǧ0>e*
@@ -12327,6 +12334,9 @@ huʹvǧǧi+N+Sg+Nom: **rattle/suhistin**
 * *hu^1VOW{ʹØ}v{ʹØ}ggi^Pen^PAL*
 * *hu0ʹv0ǧǧi00*
 
+ääʹǧǧes+N+Sg+Nom: ****
+* *ä^1VOW{ʹØ}gges^Pen^V2VV^Pen^PAL^Pen^PALK*
+* *ääʹǧǧes000000*
 * *a^1VOW{ʹØ}lggi^Pen^PAL^Pen^PALK*
 * *a0ʹlǧǧi0000*
 

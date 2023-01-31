@@ -199,8 +199,6 @@ CLASS
 * LEXICON A_PRSPRC-EEI  tuejjeei:tuejjee
 * +Err/Orth+Attr:jas ENDLEX ;  c.f. sjm faʹlsǩeejas
 
-* LEXICON A_PRSPRC-EEQJJ  tuejjeei:tuejjẹẹ
-
 WORK HERE 2015-10-14 deverbals
 * LEXICON A_PRSPRC-NOGRADE-I  uuidi:uuidi
 
