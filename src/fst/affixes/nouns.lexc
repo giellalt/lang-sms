@@ -830,6 +830,13 @@ HatY-STEM-PX-RETAIN ;
 :%^Allegro%^CC2CAllegro SG-LOC-PX_ALLEGRO ;
 :%^CC2CCC HatY-STEM-PX-STRENGTHEN ;
 
+LEXICON N_PUOAVV-PL !!= * @CODE@ puåvv:puå%{ʹØ%}vv
+: R ;	    			!!= * @CODE@ (1) Sg.Nom: puåvv
+:%^CC2C PL-NOM ;		!!= * @CODE@ (2) Pl.Nom: puåv
+:%>â ESS/PAR ; 	  			!!= * @CODE@ (6) Ess: puåvvân
+:%^CC2C PL-OBL ;			!!= * @CODE@ (8) Pl.Gen: puåvi
+
+
 ! Test data:
 !!€gt-norm: puåvv # 
 !!€ puåvv: puåvv+N+Sg+Nom
@@ -1422,7 +1429,11 @@ HatY-STEM-PX-RETAIN ;
 :%^CC2CCC HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_LUOSS-PL
-	N_LUOSS ;
+: R ;	     			!!= * @CODE@
+:%^KK2GG PL-NOM ;	!!= * @CODE@ luõzz
+:%>â ESS/PAR ; 	   			!!= * @CODE@
+:%^KK2GG PL-OBL ;			!!= * @CODE@ luõzzi
+
 
 ! Test data:
 !!€gt-norm: luõss #
@@ -2894,7 +2905,11 @@ LEXICON NMN_PEAELDD
 !! Sg_Loc_Px..
 
 LEXICON N_PEAELDD-PL
-	N_PEAELDD ;
+: R ; !!= * @CODE@  peäldd
+:%^XYY2XY PL-NOM ;	!!= * @CODE@  peäld
+
+:%>a ESS/PAR ;   !!= * @CODE@  peälddan
+
 
 LEXICON N_TUOAIMM !!= * @CODE@ tuåimm:tuåimm
 !!! inflection_type="?"
@@ -4592,6 +4607,29 @@ LEXICON NMN_AQVV
  E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) ävv-
 :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) äʹv-
 :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) äʹvv Ess+Px..
+
+
+LEXICON N_ARMEI !!= * @CODE@ armei:arme
+!!! inflection_type="?"
+!! V1ʹC1C1
+: NMN_ARMEI ;
+LEXICON NMN_ARMEI
+
+!! * Yaml: **N-aevv**
+!!
+:i E-STEM_SG-NOM ; !!(1) Sg.Nom: äʹvv
+:ʹj E-STEM_SG-ABE/ACC/GEN ; !!(2) Pl.Nom: ääʼv
+:j A_DER/LAZH ;
+:ʹj PL-NOM ; !!(2) Pl.Nom: ääʼv
+:jj E-STEM_SG-ILL ;   !!(3) Sg.Ill: ävva
+:ʹj%>e SG-LOC ;	!!(4) Sg.Loc: ääʹvest
+:ʹj SG-COM_IN ; !!(5) Sg.Com: ääʹvin
+:ʹj E-STEM_PL-OBL ; !!(5) Sg.Com: ääʹvin
+:ʹjj%>e ESS/PAR ; !!(6) Ess: äʹvven
+:j E-STEM_N_KUYLAZH ; !!(9) Der/Dimin.N.Sg.Nom: äävaž
+ E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) ävv-
+:ʹj E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) äʹv-
+:ʹjj E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) äʹvv Ess+Px..
 
 
 LEXICON N_STAQLLJ !!= * @CODE@ stäʹllj:ställj
@@ -7627,6 +7665,12 @@ LEXICON NMN_VOONYS  !!= * @CODE@ võõnâs:võnnâs
 :%^RmVow PL-OBL ;				! võnnsi
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
+LEXICON N_VOONYS-PL
+:%^Pen%^V2VV%^Pen%^CC2C R ; ! võõnâs
+:%^VC PL-NOM ; ! võnnâz
+:%^RmVow%>e ESS/PAR ;  				! võnnsen
+:%^RmVow PL-OBL ;				! võnnsi
+
 LEXICON N_CHOOGXGXYS  !!= * @CODE@ čõõǥǥâs:čõ%^1VOWkkâs
 !!! inflection_type="2"
 : NMN_CHOOGXGXYS ;
@@ -7709,6 +7753,12 @@ LEXICON NMN_TAALKYS !!= * @CODE@ taalkâs:talkkâs
 :%^RmVow%>e ESS/PAR ; ! ess and prt without
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+
+LEXICON N_TAALKYS-PL !!= * @CODE@ taalkâs:ta%^1VOWlkkâs
+:%^Pen%^V2VV%^Pen%^XYY2XY R ;
+:%^VC PL-NOM ;
+:%^RmVow%>e ESS/PAR ; ! ess and prt without
+:%^RmVow PL-OBL ;
 
 LEXICON N_PIIUTYS !!= * @CODE@ piiutâs:pihttâs
 !!! inflection_type="2"
@@ -7965,6 +8015,25 @@ LEXICON NMN_PUAEGXGXANJ !!= *  @CODE@ puäǥǥanj:puäkˈkanj
 !! N_GEN2X3-NOM2X1
 !! * Yaml: **N-tuoddar**
 :%^Pen%^KKK2GG SG-NOM ;		! puäǥǥanj
+: SG-ABE/ACC/GEN-PL-NOM ;	       			! tuõdˈdâr
+:%^RmVow%>a SG-ILL ;		! tuõdˈdra
+:%^RmVow%>e SG-LOC ;		! tuõdˈdrest
+:%^RmVow SG-COM_IN ;		! tuõdˈdrin
+:%^RmVow%>e ESS/PAR ; 			! tuõdˈdren
+:%^RmVow PL-OBL ;			! tuõdˈdri, 
+:%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ puäkˈknj-
+
+LEXICON N_VUAEDHANJ !!= *  @CODE@ vuäđanj:vuäđˈđanj
+!!! inflection_type="2"
+:  NMN_VUAEDHANJ ;
+LEXICON NMN_VUAEDHANJ !!= *  @CODE@ vuäđanj:vuäđˈđanj
+! orth_gradation: no
+! ped_gradation: yes
+! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
+! Stem vowel: e
+!! N_GEN2X3-NOM2X1
+!! * Yaml: **N-tuoddar**
+:%^Pen%^CCC2C SG-NOM ;		! puäǥǥanj
 : SG-ABE/ACC/GEN-PL-NOM ;	       			! tuõdˈdâr
 :%^RmVow%>a SG-ILL ;		! tuõdˈdra
 :%^RmVow%>e SG-LOC ;		! tuõdˈdrest
@@ -8314,7 +8383,7 @@ LEXICON NMN_KOAOAVAS !!= * @CODE@ kååvas:kåvvas
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
 
-LEXICON N_PAEAELKAS !!= * @CODE@ päälkas:pälkkas
+LEXICON N_PAEAELKAS !!= * @CODE@ päälkas:pä%^1VOWlkkas
 !!! inflection_type="2"
 : NMN_PAEAELKAS ;
 LEXICON NMN_PAEAELKAS !!= * @CODE@ päälkas:pälkkas
@@ -11309,6 +11378,7 @@ LEXICON NMN_OOUMAZH
 +Use/NGminip+Use/NG:%^V2VV%^XYY2XY LOAOADDAZH-STEM-PX-ALLEGRO ; 
 
 LEXICON N_OOUMAZH-PL
+:%>u PL-NOM ;
 :u PL-OBL ;			! oummui
 : PL-OBL ;			! oummi
 :%^V2VV%^XYY2XY LOAOADDAZH-STEM-PX ; 
