@@ -5386,14 +5386,6 @@ NumContLex="1.113"
 * :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) äʹv-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) äʹvv Ess+Px..
 
-* LEXICON N_ARMEI  armei:arme
-V1ʹC1C1
-
-* Yaml: **N-aevv**
-*  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) ävv-
-* :ʹj E-STEM-PX-ALLEGRO ;  (11) äʹv-
-* :ʹjj E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) äʹvv Ess+Px..
-
 * LEXICON N_STAQLLJ  stäʹllj:ställj
 N_1E-VQCC
 vowel: monophthong
@@ -6520,7 +6512,7 @@ gradation: yes
 ???* There are several stem types
 * kriʹlcc:kriʹlcc
 
-* LEXICON N_DIQLL  diʹll:dill
+* LEXICON N_DIQLL  diʹll:di%^1VOW%{ʹØ%}ll
 ## FORMS
 * Yaml: **N-dill**
 
@@ -8297,15 +8289,19 @@ Sort of like 10
 vuâsppåʹd+N+Sg+Nom **Lord/Herra**
 * *vuâsppå%^1VOW0d%^PAL*
 * *vuâsppå0ʹd0*
-* :%{XC%}%^PAL%^C2CC%>e ESS/PAR ;  kaađneʹǩǩe- 
-* :%{XC%}%^V2VV%^PAL%^C2CC SG-ABE/ACC/GEN ;  kaađneeʹǩǩ
+* :%^V2VV%^PAL%>e ESS/PAR ;  Vuâsppååʹde- 
+* +Err/Orth:%{XC%}%^PAL%^C2CC%>e ESS/PAR ;  kaađneʹǩǩe- 
+* :%^V2VV%^PAL SG-ABE/ACC/GEN ;  Vuâsppååʹd
+* +Err/Orth:%{XC%}%^V2VV%^PAL%^C2CC SG-ABE/ACC/GEN ;  Vuâsppååʹdd
 vuâsppåʹd+N+Sg+Gen 
-* *vuâsppå%^1VOWd%{XC%}%^V2VV%^PAL%^C2CC*
-* *vuâsppååʹdd000*
-* :%{XC%}%^PALNo%^C2CC%>a SG-ILL ;  kaađnekka
+* *vuâsppå%^1VOW%{ʹØ%}d%^V2VV%^PAL*
+* *vuâsppååʹd00*
+* :%^V2VV%>a SG-ILL ;  Vuâsppååda
+* +Err/Orth:%{XC%}%^PALNo%^C2CC%>a SG-ILL ;  kaađnekka
 * *vuâsppå%^1VOW0d%{XC%}%^V2VV%^VOWRaise%^PAL%^C2CC%>in*
 * *vuâsppooʹdd0000%>in*
-* :%{XC%}%^V2VV%^PAL%^C2CC PL-NOM ;  vuâsppooʹdd
+* :%^V2VV%^PAL PL-NOM ;  vuâsppååʹd
+* :%^V2VV%^VOWRaise%^PAL PL-OBL ;  vuâsppooʹd
 
 Class 11 according to Feist 162
 * LEXICON N_VISKKYD  viskkâd:viskk
@@ -13752,8 +13748,9 @@ Symbols that need to be escaped on the lower side (towards twolc):
 The Usage extents are marked using following tags: 
 
 * **+Err/Orth**  substandard, not in normative fst 
-* **+Err/Orth-k-kh** substandard k, not in normative fst ǩ 
-* **+Err/Orth-a-y** substandard a, not in normative fst â 
+* **+Err/Orth-k-kh** substandard k, not in normative fst ǩ(, should be  kuõccjiǩ and not kuõccjik)
+* **+Err/Orth-a-y** substandard a, not in normative fst â
+* **+Err/Orth-o-uq** substandard o, not in normative fst uʹ (e.g. illative kuʹmppe and not komppa)
 * **+Err/Lex** substandard, not in normative fst, no normative lemma 
 * **+Err/DerSub** substandard for derivation, not in normative fst, no normative lemma 
 * **+Err/CmpSub** substandard for compounding, not in normative fst (wrong form or POS in first part) 
