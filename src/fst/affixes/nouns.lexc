@@ -7807,6 +7807,27 @@ LEXICON NMN_AAUTYR
 :%^RmVow PL-OBL ;
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
+LEXICON N_RIIPYS !!= * @CODE@ riipâs:rijppâs
+!!! inflection_type="2"
+: NMN_RIIPYS ;
+LEXICON NMN_RIIPYS
+!! like N_ALGG, N_TAALKYS, N_AAUTYR
+! gradation: yes
+! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
+! Penultimate stem vowel retention: Sg.Nom, Sg.Gen, Sg.Acc, Sg.Abe, Pl.Nom
+! Stem vowel: e
+! Voicing of final sibilant
+!! stemtype n-stem aautâr:aautâr
+!! * Yaml: **N-aautar**
+:%^Pen%^XYY2VY SG-NOM ;	    ! riipâs
+:%^VC SG-ABE/ACC/GEN-PL-NOM ;	! rijppâz
+:%^RmVow%>a SG-ILL ;
+:%^RmVow%>e SG-LOC ;
+:%^RmVow SG-COM_IN ;
+:%^RmVow%>e ESS/PAR ;
+:%^RmVow PL-OBL ;
+:%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+
 LEXICON N_KHIIUGXYN !!= *  @CODE@ ǩiiuǥân:ǩiuggân
 !!! inflection_type="2"
 : NMN_KHIIUGXYN ;
@@ -8317,6 +8338,20 @@ LEXICON NMN_AANAR
 !LEXICON N_AANAR-PL
 !: PL-NOM ;
 !:%^RmVow PL-OBL ;
+
+LEXICON NMN_PIETAR
+! gradation: no
+! Penultimate stem vowel loss NO: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
+! Stem vowel: e
+: SG-NOM ; ! Pietar
+: SG-ABE/ACC/GEN ; ! Pietar
+:%>a SG-ILL ; ! Pietara
+:%>e SG-LOC ; ! Pietarest
+: SG-COM_IN ;
+:%>e ESS/PAR ;
+: PL-NOM ;
+: PL-OBL ;
+: VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
 
 LEXICON N_CHIOPPYRJ !!= * @CODE@ čiõppârj:čiõppâr
 !!! inflection_type="2"
