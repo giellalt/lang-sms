@@ -4252,19 +4252,19 @@ LEXICON V0_LEUQKHKHED !!= * @CODE@ leuʹǩǩed:leukk
 ! Vowel raising
 ! NEEDS WORK
 !(son leukk) ??
-:%^VOWRaise%^PALE%^PAL VSUF-INF_ED ; !1
+:%^PAL%^PALK VSUF-INF_ED ; !1
 : VSUF-IND-PRS-SG3_ED ; !2
-+Ind+Prs+Pl3:%^PAL%>e K ; !3
-:%^VOWRaise%^PALE%^PAL%> VSUF-IND-PRT-PL3_ED ; !4
-:%^XYY2XY VSUF-IND-PRS-CONNEG_ED ; !5
-:%^VOWRaise%^PALE%^PAL%^XYY2XY%> VSUF-POTENTIAL_ED ; !6 vueiʹnet
-:%^VOWRaise%^PALÕ%^PAL%^XYY2XY%> VSUF-POTENTIAL_ED ; !6 lõuʹǩet CHECKME
++Ind+Prs+Pl3:%^PAL%^PALK%>e K ; !3
+:%^VOWRaise%^PALE%^PAL%^PALK%> VSUF-IND-PRT-PL3_ED ; !4
+:%^XYY2XY%^PALK VSUF-IND-PRS-CONNEG_ED ; !5
+:%^VOWRaise%^PAL%^XYY2XY%^PALK%> VSUF-POTENTIAL_ED ; !6 vueiʹnet
+:%^VOWRaise%^PALÕ%^PAL%^XYY2XY%^PALK%> VSUF-POTENTIAL_ED ; !6 lõuʹǩet CHECKME
 :%^XYY2XY%> VSUF-CONDITIONAL_ED ; !7
 +Imprt+Sg3:%^XYY2XY%>as K ; !7
 :%^VOWRaise%^PALÕ VSUF-IMPRT-CONNEGII_ED ; !8 lõukku CHECKME
 
 !! (11) Present Participle:
-:%^VOWRaise%^PALE%^PAL%> FOR-VSUF-PRSPRC_ED ; !!= * @CODE@ (11) leuʹǩǩi
+:%^PAL%^PALK%> FOR-VSUF-PRSPRC_ED ; !!= * @CODE@ (11) leuʹǩǩi
 
 !! (12)
 :%^V2VV%^VOWRaise%^XYY2XY VSUF-CHED_ED ; !!= * @CODE@  (12) +Der+Der/ched: 
@@ -5198,7 +5198,7 @@ LEXICON V0_KHEEQRJTED !!= * @CODE@ ǩeeʹrjted:ǩeeʹrjet
 : VSUF-VUEJTED-IND-PRS-CONNEG ;        ! ǩeeʹrjet
 :%^RmVow VSUF-VUEJTED-ELSE ;  ! ǩeeʹrjted
 
-LEXICON V_AUQCSTED !!= * @CODE@ äuʹcsted:äuʹccest
+LEXICON V_AUQCSTED !!= * @CODE@ äuʹcsted:ääuʹcest
 : V0_AUQCSTED ;
 !LEXICON IV_AUQCSTED !!= * @CODE@ äuʹcsted:äuʹccest
 !+IV: V0_AUQCSTED ;
@@ -5209,9 +5209,11 @@ LEXICON V0_AUQCSTED !!= * @CODE@ äuʹcsted:äuʹccest
 
 ! lexicon ''@LEXNAME@''
 ! * Yaml: __V-aeucsted__
-:%^PenVow2a%^PALNo VSUF-VUEJTED-IND-PRS-SG3 ; ! äuʹccast
-: VSUF-VUEJTED-IND-PRS-CONNEG ;        ! äuʹccest
-:%^Pen%^XYY2XY%^RmVow VSUF-VUEJTED-ELSE ;  ! äuʹcsted
+:%^PenVow2a%^PALNo VSUF-VUEJTED-IND-PRS-SG3 ; ! ääuʹcast
+: VSUF-VUEJTED-IND-PRS-CONNEG ;        ! ääuʹcest
++Err/Orth:%^Pen%^VV2V VSUF-VUEJTED-IND-PRS-CONNEG ;        ! äuʹcest
+:%^RmVow VSUF-VUEJTED-ELSE ;  ! ääuʹcsted
++Err/Orth:%^Pen%^VV2V%^RmVow VSUF-VUEJTED-ELSE ;  ! äuʹcsted
 
 LEXICON V_VUAQDHSTED !!= * @CODE@ vuäʹđsted:vuäʹđest
 : V0_VUAQDHSTED ;
@@ -5451,32 +5453,36 @@ LEXICON V0_KUOCCJED !!= * @CODE@ kuõccjed:kuõcc
 !    Pass.PrfPrc
 ! kuõccjed:kuõcc
 +Ind+Prs+Sg3:ai K        ; ! kuõccai
+
 +Ind+Prs+ConNeg:âǥ K ; ! kuõccâǥ
-+Ind+Prs+Sg1:%>%{ʼØ%}jam              K  ; !
++Imprt+Sg2:âǥ  K ; ! kuõccâǥ
++Imprt+ConNeg:âǥ     K ;
+ KUOCCJED/STOAOARJED_ELSE ;
+
+LEXICON KUOCCJED/STOAOARJED_ELSE ! 
++Ind+Prs+Sg1:%>%{ʼØ%}jam              K  ; ! ståårjam
 +Ind+Prs+Sg2:%>%{ʼØ%}jak              K  ; !
 +Ind+Prs+Pl1:%>%{ʼØ%}jep      K  ;
 +Ind+Prs+Pl2:%>%{ʼØ%}jeʹped           K  ;
 +Ind+Prs+Pl3:%>%{ʼØ%}je               K  ;
 +Ind+Prs+Sg4:%>%{ʼØ%}jet K ; !
 
-+Ind+Prt+Sg1:%>%{ʼØ%}jem             K  ; ! kuõccjem
-+Ind+Prt+Sg2:%>%{ʼØ%}jiǩ             K  ; ! kuõccjiǩ
-+Ind+Prt+Sg2+Err/Orth-k-kh:%>%{ʼØ%}jik             K  ; ! kuõccjiǩ
-+Ind+Prt+Sg3:%>%{ʼØ%}ji              K  ; ! ! kuõccji
-+Ind+Prt+Pl1:%>%{ʼØ%}jim             K  ; ! ! kuõccjim
-+Ind+Prt+Pl2:%>%{ʼØ%}jid             K  ; ! ! kuõccjid
-+Ind+Prt+Pl3:%>%{ʼØ%}je              K  ; ! kuõccje
-+Ind+Prt+Sg4:%>%{ʼØ%}ješ K ; ! kuõccješ
-+Ind+Prt+ConNeg:%>%{ʼØ%}jam K ; ! kuõccjam
-+Ind+Prt+ConNeg:%>%{ʼØ%}jâmma K ; ! kuõccjâmma
++Ind+Prt+Sg1:%>%{ʼØ%}jem             K  ; ! kuõccjem /ståårjem
++Ind+Prt+Sg2:%>%{ʼØ%}jiǩ             K  ; ! kuõccjiǩ /ståårjiǩ
++Ind+Prt+Sg2+Err/Orth-k-kh:%>%{ʼØ%}jik             K  ; ! kuõccjiǩ / ståårjiǩ
++Ind+Prt+Sg3:%>%{ʼØ%}ji              K  ; ! ! kuõccji / ståårji
++Ind+Prt+Pl1:%>%{ʼØ%}jim             K  ; ! ! kuõccjim / ståårjim
++Ind+Prt+Pl2:%>%{ʼØ%}jid             K  ; ! ! kuõccjid / ståårjid
++Ind+Prt+Pl3:%>%{ʼØ%}je              K  ; ! kuõccje / ståårje
++Ind+Prt+Sg4:%>%{ʼØ%}ješ K ; ! kuõccješ /ståårješ
++Ind+Prt+ConNeg:%>%{ʼØ%}jam K ; ! kuõccjam / ståårjam 
++Ind+Prt+ConNeg:%>%{ʼØ%}jâmma K ; ! kuõccjâmma / ståårjâmma
 
-+Imprt+Sg3:%>%{ʼØ%}jââǥǥas          K  ; !WG
++Imprt+Sg3:%>%{ʼØ%}jââǥǥas          K  ; !WG ståårjââǥǥas
 +Imprt+Pl1:%>%{ʼØ%}jâkap                    K  ;
 +Imprt+Pl2:%>%{ʼØ%}jeʹǩed           K  ;
 +Imprt+Pl3:%>%{ʼØ%}jâkaz            K  ;
 
-+Imprt+Sg2:âǥ  K ; ! kuõccâǥ
-+Imprt+ConNeg:âǥ     K ;
 +Imprt+ConNegII:%>%{ʼØ%}juku K ;
 
 :%>%{ʼØ%}jeʹ         VSUF-I-POTKOND ; !WG
@@ -5538,51 +5544,11 @@ LEXICON V0_STOAOARJED
 ! ståårjed:ståår
 +Ind+Prs+Sg3:ai K        ;		! ståårai
 +Ind+Prs+ConNeg:aǥ K ;   		! ståårâǥ
-+Ind+Prs+Sg1:%>%{ʼØ%}jam              K  ; 	! ståårjam
-+Ind+Prs+Sg2:%>%{ʼØ%}jak              K  ; !
-+Ind+Prs+Pl1:%>%{ʼØ%}jep      K  ;
-+Ind+Prs+Pl2:%>%{ʼØ%}jeʹped           K  ;
-+Ind+Prs+Pl3:%>%{ʼØ%}je               K  ;
-+Ind+Prs+Sg4:%>%{ʼØ%}jet K ; !
-
-+Ind+Prt+Sg1:%>%{ʼØ%}jem             K  ; ! ståårjem
-+Ind+Prt+Sg2:%>%{ʼØ%}jiǩ             K  ; ! ståårjiǩ
-+Ind+Prt+Sg2+Err/Orth-k-kh:%>%{ʼØ%}jik             K  ; ! ståårjiǩ
-+Ind+Prt+Sg3:%>%{ʼØ%}ji              K  ; ! ! ståårji
-+Ind+Prt+Pl1:%>%{ʼØ%}jim             K  ; ! ! ståårjim
-+Ind+Prt+Pl2:%>%{ʼØ%}jid             K  ; ! ! ståårjid
-+Ind+Prt+Pl3:%>%{ʼØ%}je              K  ; ! ståårje
-+Ind+Prt+Sg4:%>%{ʼØ%}ješ K ; ! ståårješ
-+Ind+Prt+ConNeg:%>%{ʼØ%}jam K ; ! ståårjam
-+Ind+Prt+ConNeg:%>%{ʼØ%}jâmma K ; ! ståårjâmma
-
-+Imprt+Sg3:%>%{ʼØ%}jââǥǥas          K  ; ! ståårjââǥǥas
-+Imprt+Pl1:%>%{ʼØ%}jâkap            K  ;
-+Imprt+Pl2:%>%{ʼØ%}jeʹǩed           K  ;
-+Imprt+Pl3:%>%{ʼØ%}jâkaz            K  ;
-
 +Imprt+Sg2:aǥ  K ; ! stååraǥ
 +Imprt+ConNeg:aǥ     K ;
-+Imprt+ConNegII:%>%{ʼØ%}juku K ;
+ KUOCCJED/STOAOARJED_ELSE ;
 
-:%>%{ʼØ%}jeʹ         VSUF-I-POTKOND ; !WG
-+Use/NGminip+Use/SpellNoSugg:%>%{ʼØ%}jeʹč CONDITIONAL ;
-+Pot+Sg3:%>%{ʼØ%}jež K ; !WG
-+Inf:%>%{ʼØ%}jed K ;
-+Actio+Ess:%>%{ʼØ%}jeʹmen K ;
-+Actio:%>%{ʼØ%}jam K ;
-@C.NeedNoun@+Der+Der/NomAct+N:@C.NeedNoun@%>%{ʼØ%}jam N_AANAR ;
-+Der+Der/NomAct+Der+Der/nalla+Adv:%>%{ʼØ%}jam»nalla K ;
-+Act+PrsPrc:%>%{ʼØ%}jeei K ;
-+Use/NGminip+Use/NG+Act+PrsPrc:%>%{ʼØ%}jeeʹjj K ;
-@C.NeedNoun@+Der+Der/NomAg+N:@C.NeedNoun@%>%{ʼØ%}jee N_PRSPRC-EEI ;
-+Act+PrfPrc:%>%{ʼØ%}jam K ;
-+Pass+PrfPrc:%>%{ʼØ%}jummu K ;
-+Pass+PrfPrc:%>%{ʼØ%}juum K ;
-+Abe:%>%{ʼØ%}jeǩâni K ;
-:%>%{ʼØ%}j GER_ ;
-:%>%{ʼØ%}j  DEVERBAL-NOUN_ummush ;
-+Der+Der/InchL+V:%>%{ʼØ%}je»škuätt V_SHKUEAQTTED ;
+
 
 
 !  -jed -ted
