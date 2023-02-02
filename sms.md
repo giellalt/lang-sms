@@ -14382,6 +14382,18 @@ This only contains one verb and will be removed.
 
 
 
+Copy from smn starts here
+
+Copy from smn ends here
+
+* * *
+
+<small>This (part of) documentation was generated from [src/hyphenation/hyphenation.xfscript](https://github.com/giellalt/lang-sms/blob/main/src/hyphenation/hyphenation.xfscript)</small>
+
+---
+
+
+
 retroflex plosive, voiceless		t`  ʈ	    0288, 648 (` = ASCII 096)
 retroflex plosive, voiced		d`	ɖ		0256, 598
 labiodental nasal				F 	ɱ		0271, 625
