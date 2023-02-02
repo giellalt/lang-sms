@@ -26,6 +26,81 @@ define Vow       [ a | á | e | i | o | u | y | æ | ø | å | ä | ö | õ |
 É | Ó | Ú | Í | À | È | Ò | Ù | Ì | Ë | Ü | Ï | Â | Ê | Ô | Û | Î | Ã | Ý ] (ʹ) ;
 
 
+!! Copy from smn starts here
+
+! smn diphthongs: /iä/, /ie/, /uo/, /uá/, /ye/, ==> 2ndVow = ä, á, e, o
+! smn loanword diphthongs: neutralistiđ, fauna, leutnánta
+
+define 2ndVow [ e | i | u | o | á | ä | 
+                E | I | U | O | Á | Ä ] ;
+
+!define 3dVow [ u | U ] ;
+
+
+define VowNot2ndVow   [ Vow - 2ndVow ] ;
+
+!define VowNot3dVow   [ Vow - 3dVow ] ;
+
+
+define U   [ u | U ] ;
+define O   [ o | O ] ;
+define A   [ a | A ] ;
+define E   [ e | E ] ;
+define I   [ i | I ] ;
+define Y   [ y | Y ]  ;
+define EO  [ e | E | o | O ] ;
+define EOA [ e | E | o | O | a | A ] ;
+define IAO [ i | I | a | A | o | O ] ;
+define Oslash   [ ø | Ø ] ; ! Renamed from Ø to avoid non-ASCII chars
+define UI  [ u | U | i | I ] ;
+! what about á, ä, â ?
+
+define UAAdipht     [ u á | U á | U Á ] ;
+define IEdipht      [ i e | I e | I E ] ;
+define UOdipht      [ u o | U o | U O ] ;
+!define EAdipht      [ e a | E a | E A ] ;
+!define OAdipht      [ o a | O a | O A ] ;
+!define OUdipht      [ o u | O u | O U ] ; ! jour-na-lis-sta
+define AUdipht      [ a u | A u | A U ] ; ! fau-na, Lauv-sjø-vo-la, Kår-ve-jau-re ok.
+define EUdipht      [ e u | E u | E U ] ; ! leut-nán-ta
+!define AEdipht      [ a e | A e | A E ] ; ! lae-sta-di-us,
+!define OslashYdipht [ ø y | Ø y | Ø Y ] ; ! nøyt-rála  ! Renamed from ØYdipht to avoid non-ASCII chars
+define OEdipht      [ o e | O e | O E ] ; ! goe-the
+define IOslashdipht [ i ø | I ø | I Ø ] ; ! skiøld     ! Renamed from IØdipht to avoid non-ASCII chars
+define IOdipht      [ i o | I o | I O ] ; ! skiold, nation
+define IAEdipht     [ i ä | I ä | I Ä ] ; ! iä
+define YEdipht      [ y e | Y e | Y E ] ; ! kye-li
+
+
+
+!define EAUtripht [ e a u | E a u | E A U ] ; !Bor-deaux, Beau-fort
+!define IEUtripht [ i e u | I e u | I E U ] ; !Nieu-siedler
+
+
+
+define dipht [ IEdipht | UAAdipht | UOdipht | AUdipht |
+               EUdipht | OEdipht | IOslashdipht | IOdipht |
+               IAEdipht | YEdipht ] ;
+
+!define tripht [ EAUtripht | IEUtripht ] ;
+
+define VowNotU      [ Vow - U   ] ;
+define VowNotO      [ Vow - O   ] ;
+define VowNotA      [ Vow - A   ] ;
+define VowNotE      [ Vow - E   ] ;
+define VowNotI      [ Vow - I   ] ;
+define VowNotEO     [ Vow - EO  ] ;
+define VowNotEOA    [ Vow - EOA ] ;
+define VowNotIAO    [ Vow - IAO ] ;
+define VowNotY      [ Vow - Y   ] ;
+define VowNotOslash [ Vow - Oslash   ] ;  ! Renamed from VowNotØ to avoid non-ASCII chars
+define VowNotUI     [ Vow - UI  ] ;
+define LongVow      [ a a | e e | i i | o o | u u | á á | ä ä | ö ö ] ;
+
+
+!! Copy from smn ends here
+
+
 
 define Cns [ b | c | č | ʒ | ǯ | d | đ | f | g | ǥ | ǧ | h | j | k | ǩ | l | m | n | ŋ |
              B | C | Č | Ʒ | Ǯ | D | Đ | F | G | Ǥ | Ǧ | H | J | K | Ǩ | L | M | N | Ŋ |
