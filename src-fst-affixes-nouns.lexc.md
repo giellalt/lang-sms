@@ -4788,6 +4788,12 @@ stemtype n-stem aautâr:aautâr
 * Yaml: **N-aautar**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
+* LEXICON N_RIIPYS  riipâs:rijppâs
+like N_ALGG, N_TAALKYS, N_AAUTYR
+stemtype n-stem aautâr:aautâr
+* Yaml: **N-aautar**
+* :%^RmVow VOONYS-STEM-PX ;  võnns-
+
 *  LEXICON N_KHIIUGXYN  ǩiiuǥân:ǩiuggân
 *  LEXICON NMN_KHIIUGXYN  ǩiiuǥân:ǩiuggân
 stemtype n-stem ǩiiuǥân:ǩiiuǥân
@@ -4945,6 +4951,8 @@ stemtype n-stem jânnam:jânnam
 N_GEN2X3-NOM2X1
 * Yaml: **N-jânnam**
 * :%^RmVow VOONYS-STEM-PX ;  såbbr-
+
+* : VOONYS-STEM-PX ;  såbbr-
 
 * LEXICON N_CHIOPPYRJ  čiõppârj:čiõppâr
 stemtype n-stem jânnam:jânnam
