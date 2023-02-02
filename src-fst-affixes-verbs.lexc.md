@@ -2096,7 +2096,7 @@ vuäˈđeškuätt
 * LEXICON V0_LEUQKHKHED  leuʹǩǩed:leukk
 
 (11) Present Participle:
-* :%^VOWRaise%^PALE%^PAL%> FOR-VSUF-PRSPRC_ED ;  (11) leuʹǩǩi
+* :%^PAL%^PALK%> FOR-VSUF-PRSPRC_ED ;  (11) leuʹǩǩi
 
 (12)
 * :%^V2VV%^VOWRaise%^XYY2XY VSUF-CHED_ED ;   (12) +Der+Der/ched: 
@@ -2400,7 +2400,7 @@ gradation: no
 * LEXICON TV_KHEEQRJTED  ǩeeʹrjted:ǩeeʹrjet
 * LEXICON V0_KHEEQRJTED  ǩeeʹrjted:ǩeeʹrjet
 
-* LEXICON V_AUQCSTED  äuʹcsted:äuʹccest
+* LEXICON V_AUQCSTED  äuʹcsted:ääuʹcest
 * LEXICON V0_AUQCSTED  äuʹcsted:äuʹccest
 
 * LEXICON V_VUAQDHSTED  vuäʹđsted:vuäʹđest

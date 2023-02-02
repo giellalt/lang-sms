@@ -10717,7 +10717,7 @@ vuäˈđeškuätt
 * LEXICON V0_LEUQKHKHED  leuʹǩǩed:leukk
 
 (11) Present Participle:
-* :%^VOWRaise%^PALE%^PAL%> FOR-VSUF-PRSPRC_ED ;  (11) leuʹǩǩi
+* :%^PAL%^PALK%> FOR-VSUF-PRSPRC_ED ;  (11) leuʹǩǩi
 
 (12)
 * :%^V2VV%^VOWRaise%^XYY2XY VSUF-CHED_ED ;   (12) +Der+Der/ched: 
@@ -11021,7 +11021,7 @@ gradation: no
 * LEXICON TV_KHEEQRJTED  ǩeeʹrjted:ǩeeʹrjet
 * LEXICON V0_KHEEQRJTED  ǩeeʹrjted:ǩeeʹrjet
 
-* LEXICON V_AUQCSTED  äuʹcsted:äuʹccest
+* LEXICON V_AUQCSTED  äuʹcsted:ääuʹcest
 * LEXICON V0_AUQCSTED  äuʹcsted:äuʹccest
 
 * LEXICON V_VUAQDHSTED  vuäʹđsted:vuäʹđest
@@ -12476,6 +12476,9 @@ kuâbsted
 * *kaamp0âr0000*
 * ★*ka%^1VOWmppâr^Pen^V2VV^Pen^XYY2XY* (is not standard language)
 * ★*kaamppâr0000* (is not standard language)
+riipâs+N+Sg+Nom: **snail/etana**
+* *rijppâs* `^Pen:0` (Eng. ^XYY2VY:0)
+* *riip0âs* `^Pen:0` (Eng. ^XYY2VY:0)
 
 **Even syllabic verbs I, cg v:0** - used with  +Imp+Sg2, +Ind+Prs+ConNeg, teevvad > teev
 * *pẹ^1VOWi0vv^V2VV^PAL^CC2C*
@@ -12686,6 +12689,15 @@ with allegro
 used with
 > .
 
+**š:0** - used in Allegro
+
+šapšš+N+Sg+Gen **white fish/siika**
+* *ša^1VOWpšš^V2VV^XYY2XY*
+* *šaapš000*
+ruõšsted+V+Inf: ****
+* *ruõ{ˈ1%}ššâst^Pen^CC2CAllegro^RmVow>ed*
+* *ruõˈš00st000>ed*
+
 **Even syllabic verbs I, Voicing š:ž** - ss:zz, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants at coda become voiced in gradation
 lookkmõš+N+Sg+Gen
 * *lookkmõ^1VOWš{XC}^V2VV^K2GG*
@@ -12759,12 +12771,6 @@ kääđas+N+Sg+Nom
 * *kä^1VOWttas^Pen^V2VV^Pen^CC2C*
 * *kääđ0as0000*
 
-**Even syllabic verbs I, third consonant loss** - lgg:lǥ, Vow Ca Cx Cx:0, +Imp+Sg2, +Ind+Prs+ConNeg, double consonants following consonant at coda that become single consonants in gradation
-
-šapšš+N+Sg+Gen **white fish/siika**
-* *ša^1VOWpšš^V2VV^XYY2XY*
-* *šaapš000*
-
 **Consonant loss s:0** - used in
 
 * *sä^1VOWhss^V2VV^XYY2VY>am*
@@ -12787,6 +12793,9 @@ uhss+N+Sg+Gen **door**
 ruʹhss+N+Sg+Loc+PxSg3:
 * *ru^1VOW0hss^VV2V^PAL^XYY2VY>stes*
 * *ru0ʹ0s0000>stes*
+påʹhlded+V+Inf: ****
+* *pååʹhheld^Pen^VV2V^Pen^CC2CAllegro^RmVow*
+* *på0ʹh00ld00000*
 
 **Even syllabic verbs I, t>đ** - tt:đ
 ǩiõtt+N+Sg+Loc+PxSg1 **hand,arm/käsi**
