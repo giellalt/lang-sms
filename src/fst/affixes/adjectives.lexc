@@ -259,6 +259,11 @@ LEXICON A_HIEAQNN !!= * @CODE@ hieʹnn:heänn
 :%^PAL%^CC2C   A-ATTR_es ;
 : A-01_HIEAQNN ;
 
+LEXICON A_VUEQSS !!= * @CODE@ pueʹšš:puâ%{ʹØ%}šš
+! vowel: diphthong
+:%^VOWRaise%^PALE%^PAL%^KK2GG   A-ATTR_es ; ! pueʹžžes
+: A-01_VUEQSS ;
+
 LEXICON A_JEAQNNN !!= * @CODE@ jeäʹnn:jeänˈn, jeäʹǧǧ:jeägˈg
 ! vowel: diphthong
 :%^VOWRaise%^PALẸ%^PAL%^CCC2CC   A-ATTR_es ;
@@ -5300,7 +5305,21 @@ LEXICON A-01_CHUAQRVV
 !2016-12-05-NotUsed!:%>e A-02_ESS/PAR ;
 !2016-12-05-NotUsed!:%^V2VV%^PALNo%^XYY2XY A-02_E-STEM_N_KUYLAZH ;
 
- 
+LEXICON A-01_VUEQSS
+:%^CC2CCC E-STEM_SG-ILL ; !!(3) Sg.Ill: vuâsˈsa
+:%^PALE%^PAL E-STEM_SG-NOM ; !!(1) Sg.Nom: vueʹss
+:%^PALE%^PAL%^KK2GG E-STEM_SG-ABE/ACC/GEN ; !!(2) Pl.Nom: vueʼzz
+:%^PALE%^PAL%^KK2GG PL-NOM ; !!(2) Pl.Nom: vueʼzz
+:%^PALE%^PAL%^KK2GG%>e SG-LOC ; !!(4) Sg.Loc: vueʹzzest
+:%^VOWRaise%^PAL%^KK2GG SG-COM_IN ; !!(5) Sg.Com: vuõʹzzin ~ vueʹzzin
++Use/NGminip+Use/NG:%^PALE%^PAL%^KK2GG SG-COM_IN ;
+:%^PALE%^PAL%>e ESS/PAR ; !!(6) Ess: vueʹssen
+:%^VOWRaise%^PAL%^KK2GG E-STEM_PL-OBL ; !!(8) Pl.Acc: vuõʹzzid ~ vueʹzzid
++Use/NGminip+Use/NG:%^PALE%^PAL%^KK2GG E-STEM_PL-OBL ;
+ E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) vuâss-
+:%^PALE%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) vueʹss-
+:%^PALE%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) vueʹsˈs Ess+Px..
+
 
 LEXICON A-01_JEAQNNN
 ! gradation: yes
