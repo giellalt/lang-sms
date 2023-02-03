@@ -95,6 +95,8 @@ cuẹʹǩǩ
 
 * LEXICON A_HIEAQNN  hieʹnn:heänn
 
+* LEXICON A_VUEQSS  pueʹšš:puâ%{ʹØ%}šš
+
 * LEXICON A_JEAQNNN  jeäʹnn:jeänˈn, jeäʹǧǧ:jeägˈg
 
 * LEXICON A_JEAQRMM  jeäʹrmm:jeärmm
@@ -1298,6 +1300,10 @@ NumContLex="1.113"
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) čuärvv-
 * :%^PALẸ%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) čuẹʹrv-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) čuäʹrvv Ess+Px..
+
+*  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) vuâss-
+* :%^PALE%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) vueʹss-
+* :%^PALE%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) vueʹsˈs Ess+Px..
 
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
 ## 1.3 Sg.Loc in -est (vowel shift)
