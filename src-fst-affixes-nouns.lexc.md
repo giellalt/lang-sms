@@ -775,7 +775,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 
 * LEXICON N_TOLL  toll:to%^1VOW%{ʹØ%}ll
 N_1Y-VCC-VVC
-similar_to: N_AENHNH, N_STAQLLJ, N_KOONJYL
+similar_to: N_AENHNH, N_STAEQLLJ, N_KOONJYL
 Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_gem
 1.1.1.1.1.2. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|single_consonant" 
 
@@ -3164,7 +3164,7 @@ NumContLex="1.113"
 * :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) äʹv-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) äʹvv Ess+Px..
 
-* LEXICON N_STAQLLJ  stäʹllj:ställj
+* LEXICON N_STAEQLLJ  stäʹllj:stä%^1VOW%{ʹØ%}llj
 N_1E-VQCC
 vowel: monophthong
 vowel_shift: yes
@@ -3814,7 +3814,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^VV2V%^PAL%^XYY2VY E-STEM-PX-ALLEGRO ;  (11) ruʹs-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) ruʹhss Ess+Px..
 
-* LEXICON N_JAUQRR  jäuʹrr:jäurr
+* LEXICON N_JAEUQRR  jäuʹrr:jäurr
 similar_to: N_AUTT
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (NO vowel shift)
@@ -3859,6 +3859,31 @@ Is for nouns with *-est* Loc, Extra long vowel
 * *jaauʹritaa:* `jäuʹrr+N+Pl+Abe`
 * *jääuraž:* `jäuʹrr+N+Der+Der/Dimin+N+Sg+Nom`
 * *jääura:* `jäuʹrr+N+Der+Der/Dimin+N+Sg+Gen`
+
+* LEXICON N_NEIQBB  jäuʹrr:jäurr
+similar_to: N_AUTT
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+## 1.3 Sg.Loc in -est (NO vowel shift)
+Raised or lowered: Sg.Com, Pl.Obl
+Lowered: ELSE
+between _PEIQVV and _JAEUQRR
+e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+Palatalized: ELSE
+Not Palatalized: Sg.Ill
+## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+Strong grade: Sg.Nom, Ess, Par
+Strong grade: Sg.Ill
+Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+Is for nouns with *-est* Loc, Extra long vowel
+* Yaml: **N-jaurr**
+*  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) nẹibb
+* :%^VV2V%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) neiʹb 
+* :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) neiʹbb Ess+Px..
 
 * LEXICON N_PEIQVV  peiʹvv:pẹ%^1VOWi%{ʹØ%}vv
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -4480,8 +4505,8 @@ is for nouns with stem *i* + *-est* +Sg+Loc; all stem other than the +Sg+Nom are
 * :%>ǥ VOONYS-STEM-PX ;  võnns-
 * :%>%{ʼØ%}j VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_POOUS  poous:pohss
-* LEXICON NMN_POOUS  poous:pohss
+* LEXICON N_POOUS  poous:po%^1VOWhss
+* LEXICON NMN_POOUS  poous:po%^1VOWhss
 is for nouns with stem *i* + *-est* +Sg+Loc; all stem other than the +Sg+Nom are X3; the *i* does not occur in +Par 
 N_GEN2I-ILLAX3-LOCEX3-NOM1X1
 * Yaml: **N-poous**
@@ -4942,7 +4967,7 @@ Palatalization loss in Sg.Ill
 
 * LEXICON N_AACCIKH  pååttaǩ:pååttak
 * LEXICON NMN_AACCIKH  pååttaǩ:pååttak
-stemtype n-stem pååttaǩ:pååttaǩ
+stemtype n-stem pååttaǩ:pååttak
 Palatalization loss in Sg.Ill
 * Yaml: **N-paattakj**
 * :%^RmVow%^PALNo VOONYS-STEM-PX ;  såbbr-
@@ -5601,6 +5626,18 @@ NumContLex="1.2"
 
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
+* : SG-NOM ;  ǩeeʹrzai
+* : SG-ABE/ACC/GEN ;  ǩeeʹrzai
+* :%^RmVow%^I2J%>a SG-ILL ;  ǩeeʹrzja
+* :%^RmVow%^I2J%>e SG-LOC ;  ǩeeʹrzjest
+* :%^RmVow%^I2J SG-COM_IN ; 
+* :%^I2J%>e ESS/PAR ; 
+* :%^RmVow%^I2J PL-OBL ; 
+* +Use/NGminip+Use/NG: PL-NOM ; 
+* : PL-NOM ; 
+* +Use/NGminip+Use/NG:%^RmVow%^I2J PL-OBL ; 
+* :%^I2J VOONYS-STEM-PX ;  võnns-
+
 participles in -AI from verbs in -ad
 * : SG-NOM ; 
 * : SG-ABE/ACC/GEN ; 
@@ -5746,9 +5783,9 @@ NumContLex="1.2"
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VQHYY-I  aʹhtti:a%^1VOWhtti
+* LEXICON N_PRSPRC-VQHYY-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
 inflection_type="?"
-* LEXICON NMN_PRSPRC-VQHYY-I  aʹhtti:a%^1VOWhtti
+* LEXICON NMN_PRSPRC-VQHYY-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti

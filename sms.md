@@ -303,7 +303,7 @@ CHECKME
 
 * LEXICON A_KHEQRJJ  ǩeʹrjj:ǩẹ%^1VOW%{ʹØ%}rjj
 
-* LEXICON A_JAUQRR  jäuʹrr:jä%^1VOWu%{ʹØ%}rr
+* LEXICON A_JAEUQRR  jäuʹrr:jä%^1VOWu%{ʹØ%}rr
 
 * LEXICON A_PEIQVV  peiʹvv:pẹ%^1VOWi%{ʹØ%}vv
 
@@ -356,6 +356,8 @@ CLASS
 * LEXICON A_PIIUTYS  piiutâs:pihtt
 
 * LEXICON A_FIINYS  fiinâs:fijnn
+
+* LEXICON A_IISYS  iisâs:ijss
 
 * LEXICON A_RUODDYS  ruõddâs:ruõdˈd
 
@@ -1827,10 +1829,6 @@ IN PENULTIMATE E:0
 tuõđšteei:tueʹjjee
 * Yaml: **N-tuodhshteei**
 
-* LEXICON A-01_PRSPRC-EEQJJ  tuõđšteei:tueʹjjẹẹ
-tuõđšteei:tueʹjjẹẹ
-* Yaml: **N-tuodhshteeqjj**
-
 Class 5 according to Feist 152
 ## k-stems
 
@@ -2049,7 +2047,7 @@ NumContLex="1.2"
 * sirddi:sirddi
 NumContLex="1.2"
 
-* LEXICON A-01_PRSPRC-VQHYY-I  aʹhtti:a%^1VOWhtti
+* LEXICON A-01_PRSPRC-VQHYY-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
@@ -3003,7 +3001,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 
 * LEXICON N_TOLL  toll:to%^1VOW%{ʹØ%}ll
 N_1Y-VCC-VVC
-similar_to: N_AENHNH, N_STAQLLJ, N_KOONJYL
+similar_to: N_AENHNH, N_STAEQLLJ, N_KOONJYL
 Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_gem
 1.1.1.1.1.2. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|single_consonant" 
 
@@ -5392,7 +5390,7 @@ NumContLex="1.113"
 * :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) äʹv-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) äʹvv Ess+Px..
 
-* LEXICON N_STAQLLJ  stäʹllj:ställj
+* LEXICON N_STAEQLLJ  stäʹllj:stä%^1VOW%{ʹØ%}llj
 N_1E-VQCC
 vowel: monophthong
 vowel_shift: yes
@@ -6042,7 +6040,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^VV2V%^PAL%^XYY2VY E-STEM-PX-ALLEGRO ;  (11) ruʹs-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) ruʹhss Ess+Px..
 
-* LEXICON N_JAUQRR  jäuʹrr:jäurr
+* LEXICON N_JAEUQRR  jäuʹrr:jäurr
 similar_to: N_AUTT
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (NO vowel shift)
@@ -6087,6 +6085,31 @@ Is for nouns with *-est* Loc, Extra long vowel
 * *jaauʹritaa:* `jäuʹrr+N+Pl+Abe`
 * *jääuraž:* `jäuʹrr+N+Der+Der/Dimin+N+Sg+Nom`
 * *jääura:* `jäuʹrr+N+Der+Der/Dimin+N+Sg+Gen`
+
+* LEXICON N_NEIQBB  jäuʹrr:jäurr
+similar_to: N_AUTT
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+## 1.3 Sg.Loc in -est (NO vowel shift)
+Raised or lowered: Sg.Com, Pl.Obl
+Lowered: ELSE
+between _PEIQVV and _JAEUQRR
+e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+Palatalized: ELSE
+Not Palatalized: Sg.Ill
+## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+Strong grade: Sg.Nom, Ess, Par
+Strong grade: Sg.Ill
+Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+Is for nouns with *-est* Loc, Extra long vowel
+* Yaml: **N-jaurr**
+*  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) nẹibb
+* :%^VV2V%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) neiʹb 
+* :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) neiʹbb Ess+Px..
 
 * LEXICON N_PEIQVV  peiʹvv:pẹ%^1VOWi%{ʹØ%}vv
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -6708,8 +6731,8 @@ is for nouns with stem *i* + *-est* +Sg+Loc; all stem other than the +Sg+Nom are
 * :%>ǥ VOONYS-STEM-PX ;  võnns-
 * :%>%{ʼØ%}j VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_POOUS  poous:pohss
-* LEXICON NMN_POOUS  poous:pohss
+* LEXICON N_POOUS  poous:po%^1VOWhss
+* LEXICON NMN_POOUS  poous:po%^1VOWhss
 is for nouns with stem *i* + *-est* +Sg+Loc; all stem other than the +Sg+Nom are X3; the *i* does not occur in +Par 
 N_GEN2I-ILLAX3-LOCEX3-NOM1X1
 * Yaml: **N-poous**
@@ -7170,7 +7193,7 @@ Palatalization loss in Sg.Ill
 
 * LEXICON N_AACCIKH  pååttaǩ:pååttak
 * LEXICON NMN_AACCIKH  pååttaǩ:pååttak
-stemtype n-stem pååttaǩ:pååttaǩ
+stemtype n-stem pååttaǩ:pååttak
 Palatalization loss in Sg.Ill
 * Yaml: **N-paattakj**
 * :%^RmVow%^PALNo VOONYS-STEM-PX ;  såbbr-
@@ -7829,6 +7852,18 @@ NumContLex="1.2"
 
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
+* : SG-NOM ;  ǩeeʹrzai
+* : SG-ABE/ACC/GEN ;  ǩeeʹrzai
+* :%^RmVow%^I2J%>a SG-ILL ;  ǩeeʹrzja
+* :%^RmVow%^I2J%>e SG-LOC ;  ǩeeʹrzjest
+* :%^RmVow%^I2J SG-COM_IN ; 
+* :%^I2J%>e ESS/PAR ; 
+* :%^RmVow%^I2J PL-OBL ; 
+* +Use/NGminip+Use/NG: PL-NOM ; 
+* : PL-NOM ; 
+* +Use/NGminip+Use/NG:%^RmVow%^I2J PL-OBL ; 
+* :%^I2J VOONYS-STEM-PX ;  võnns-
+
 participles in -AI from verbs in -ad
 * : SG-NOM ; 
 * : SG-ABE/ACC/GEN ; 
@@ -7974,9 +8009,9 @@ NumContLex="1.2"
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VQHYY-I  aʹhtti:a%^1VOWhtti
+* LEXICON N_PRSPRC-VQHYY-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
 inflection_type="?"
-* LEXICON NMN_PRSPRC-VQHYY-I  aʹhtti:a%^1VOWhtti
+* LEXICON NMN_PRSPRC-VQHYY-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
@@ -9084,9 +9119,9 @@ Imprt+Pl3
 
 * :%^XYY2XY FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: kuõsk»
 
-* LEXICON V_CHIOHTTYD  čiõhttâd:čiõhtt
-* LEXICON IV_CHIOHTTYD  čiõhttâd:čiõhtt
-* LEXICON V0_CHIOHTTYD  čiõhttâd:čiõhtt
+* LEXICON V_CHIOHTTYD  čiõhttâd:čiõ%{ʹØ%}h%{ʹØ%}tt
+* LEXICON IV_CHIOHTTYD  čiõhttâd:čiõ%{ʹØ%}h%{ʹØ%}tt
+* LEXICON V0_CHIOHTTYD  čiõhttâd:čiõ%{ʹØ%}h%{ʹØ%}tt
 * : VSUF-INF_YD ;  (1)  Inf: čiõhttâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
@@ -9301,8 +9336,8 @@ Imprt+ConNegII, Pass+PrfPrc
 
 (10) Allegro for incoative: peit»
 
-* LEXICON V_POAHSSAD  påhssad:påhss
-* LEXICON V0_POAHSSAD  påhssad:påhss
+* LEXICON V_POAHSSAD  påhssad:på%^1VOWhss
+* LEXICON V0_POAHSSAD  påhssad:på%^1VOWhss
 
 * : VSUF-INF_AD ;  (1)  Inf: påhssad
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Ind+Prt+ConNeg
@@ -9362,6 +9397,9 @@ Imprt+ConNegII, Pass+PrfPrc
 
 * LEXICON V_MEINNAD  meinnad:meinn
 * LEXICON V0_MEINNAD  meinnad:meinn
+
+* LEXICON V_REIDDAD  reiddad:rẹ%^1VOWidd
+* LEXICON V0_REIDDAD  reiddad:rẹ%^1VOWidd
 
 ### CLASS 1 HIGH VOWEL, PALATALIZATION
 * LEXICON TV_MUQTTED  muʹtted:mutt
@@ -11703,6 +11741,9 @@ reâugg+N+Sg+Ill
 veârrad+V+Ind+Prt+Pl3
 * *veâr0r^VOWRaise^CC2CCC>u*
 * *viõrˈr00>u*
+ǩeâikk+N+Sg+Ill: ****
+* *ǩeâi{ʹØ}kk^VOWRaise>u*
+* *ǩiõi0kk0>u*
 
 **Diphthong raising beginning with u ä:å** -
 kuärŋŋad+V+Ind+Prt+Pl3

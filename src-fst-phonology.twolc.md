@@ -574,6 +574,9 @@ reâugg+N+Sg+Ill
 veârrad+V+Ind+Prt+Pl3
 * *veâr0r^VOWRaise^CC2CCC>u*
 * *viõrˈr00>u*
+ǩeâikk+N+Sg+Ill: ****
+* *ǩeâi{ʹØ}kk^VOWRaise>u*
+* *ǩiõi0kk0>u*
 
 **Diphthong raising beginning with u ä:å** -
 kuärŋŋad+V+Ind+Prt+Pl3

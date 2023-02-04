@@ -84,7 +84,7 @@ CHECKME
 
 * LEXICON A_KHEQRJJ  ǩeʹrjj:ǩẹ%^1VOW%{ʹØ%}rjj
 
-* LEXICON A_JAUQRR  jäuʹrr:jä%^1VOWu%{ʹØ%}rr
+* LEXICON A_JAEUQRR  jäuʹrr:jä%^1VOWu%{ʹØ%}rr
 
 * LEXICON A_PEIQVV  peiʹvv:pẹ%^1VOWi%{ʹØ%}vv
 
@@ -137,6 +137,8 @@ CLASS
 * LEXICON A_PIIUTYS  piiutâs:pihtt
 
 * LEXICON A_FIINYS  fiinâs:fijnn
+
+* LEXICON A_IISYS  iisâs:ijss
 
 * LEXICON A_RUODDYS  ruõddâs:ruõdˈd
 
@@ -1608,10 +1610,6 @@ IN PENULTIMATE E:0
 tuõđšteei:tueʹjjee
 * Yaml: **N-tuodhshteei**
 
-* LEXICON A-01_PRSPRC-EEQJJ  tuõđšteei:tueʹjjẹẹ
-tuõđšteei:tueʹjjẹẹ
-* Yaml: **N-tuodhshteeqjj**
-
 Class 5 according to Feist 152
 ## k-stems
 
@@ -1830,7 +1828,7 @@ NumContLex="1.2"
 * sirddi:sirddi
 NumContLex="1.2"
 
-* LEXICON A-01_PRSPRC-VQHYY-I  aʹhtti:a%^1VOWhtti
+* LEXICON A-01_PRSPRC-VQHYY-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti

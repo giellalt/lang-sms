@@ -457,9 +457,9 @@ Imprt+Pl3
 
 * :%^XYY2XY FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: kuõsk»
 
-* LEXICON V_CHIOHTTYD  čiõhttâd:čiõhtt
-* LEXICON IV_CHIOHTTYD  čiõhttâd:čiõhtt
-* LEXICON V0_CHIOHTTYD  čiõhttâd:čiõhtt
+* LEXICON V_CHIOHTTYD  čiõhttâd:čiõ%{ʹØ%}h%{ʹØ%}tt
+* LEXICON IV_CHIOHTTYD  čiõhttâd:čiõ%{ʹØ%}h%{ʹØ%}tt
+* LEXICON V0_CHIOHTTYD  čiõhttâd:čiõ%{ʹØ%}h%{ʹØ%}tt
 * : VSUF-INF_YD ;  (1)  Inf: čiõhttâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
@@ -674,8 +674,8 @@ Imprt+ConNegII, Pass+PrfPrc
 
 (10) Allegro for incoative: peit»
 
-* LEXICON V_POAHSSAD  påhssad:påhss
-* LEXICON V0_POAHSSAD  påhssad:påhss
+* LEXICON V_POAHSSAD  påhssad:på%^1VOWhss
+* LEXICON V0_POAHSSAD  påhssad:på%^1VOWhss
 
 * : VSUF-INF_AD ;  (1)  Inf: påhssad
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Ind+Prt+ConNeg
@@ -735,6 +735,9 @@ Imprt+ConNegII, Pass+PrfPrc
 
 * LEXICON V_MEINNAD  meinnad:meinn
 * LEXICON V0_MEINNAD  meinnad:meinn
+
+* LEXICON V_REIDDAD  reiddad:rẹ%^1VOWidd
+* LEXICON V0_REIDDAD  reiddad:rẹ%^1VOWidd
 
 ### CLASS 1 HIGH VOWEL, PALATALIZATION
 * LEXICON TV_MUQTTED  muʹtted:mutt
