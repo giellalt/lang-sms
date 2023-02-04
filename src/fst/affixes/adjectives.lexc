@@ -234,10 +234,10 @@ LEXICON A_KHEQRJJ !!= * @CODE@ ǩeʹrjj:ǩẹ%^1VOW%{ʹØ%}rjj
 :%^V2VV%^PAL%^XYY2XY   A-ATTR_es ;
 : A-01_KHEQRJJ ;
 
-LEXICON A_JAUQRR !!= * @CODE@ jäuʹrr:jä%^1VOWu%{ʹØ%}rr
+LEXICON A_JAEUQRR !!= * @CODE@ jäuʹrr:jä%^1VOWu%{ʹØ%}rr
 ! vowel: monophthong
 :%^V2VV%^PAL%^XYY2XY   A-ATTR_es ;
-: A-01_JAUQRR ;
+: A-01_JAEUQRR ;
 
 LEXICON A_PEIQVV !!= * @CODE@ peiʹvv:pẹ%^1VOWi%{ʹØ%}vv
 ! vowel: monophthong
@@ -402,8 +402,14 @@ LEXICON A_PIIUTYS !!= * @CODE@ piiutâs:pihtt
 
 LEXICON A_FIINYS !!= * @CODE@ fiinâs:fijnn
 +Attr:%^XYY2VY ENDLEX ;	! fiin
-:s ADJ-DER/COMP_kwlmmsab ;
-:s ADJ-DER/SUPERL_ummus ;
+:âs%^RmVow ADJ-DER/COMP_kwlmmsab ;
+:âs%^RmVow ADJ-DER/SUPERL_ummus ;
+:âs A-01_FIINYS ;	! fijnnâz
+
+LEXICON A_IISYS !!= * @CODE@ iisâs:ijss
++Attr: ENDLEX ;	! ijss
+:âs%^RmVow ADJ-DER/COMP_kwlmmsab ;
+:âs%^RmVow ADJ-DER/SUPERL_ummus ;
 :âs A-01_FIINYS ;	! fijnnâz
 
 
@@ -4932,7 +4938,7 @@ LEXICON A-01_KHEQRJJ
 !2016-12-05-NotUsed!:%^V2VV%^VOWLower%^XYY2VY A-02_E-STEM_N_KUYLAZH ; !!= * @CODE@ (9) roousaž
 
 
-LEXICON A-01_JAUQRR
+LEXICON A-01_JAEUQRR
 ! gradation: yes
 !! ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 !! ## 1.3 Sg.Loc in -est (NO vowel shift)
@@ -7549,16 +7555,16 @@ LEXICON A-01_PRSPRC-EEI !!= * @CODE@ tuõđšteei:tueʹjjee
 +Use/NGminip+Use/NG:%>%{ʼØ%}je A-02_ESS/PAR ;
 +Der+Der/Dimin+N:%>%{ʼØ%}j N_KUYLAZH ;
 
-LEXICON A-01_PRSPRC-EEQJJ !!= * @CODE@ tuõđšteei:tueʹjjẹẹ
-!! tuõđšteei:tueʹjjẹẹ
-!! * Yaml: **N-tuodhshteeqjj**
-:ʹjj A-02_SG-NOM ;
-:ʹj A-02_SG-ABE/ACC/GEN-PL-NOM ;
-:%>%{ʼØ%}j%^VV2V%>%{ʼØ%}ja A-02_SG-ILL ;
-:%>ʹje A-02_SG-LOC ;
-:%>ʹj A-02_SG-COM_IN/PL-OBL ;
-:%>ʹjje A-02_ESS/PAR ;
-+Der+Der/Dimin+N:%>%{ʼØ%}j N_KUYLAZH ;
+!LEXICON A-01_PRSPRC-EEQJJ !!= * @CODE@ tuõđšteei:tueʹjjẹẹ
+!!! tuõđšteei:tueʹjjẹẹ
+!!! * Yaml: **N-tuodhshteeqjj**
+!:ʹjj A-02_SG-NOM ;
+!:ʹj A-02_SG-ABE/ACC/GEN-PL-NOM ;
+!:%>%{ʼØ%}j%^VV2V%>%{ʼØ%}ja A-02_SG-ILL ;
+!:%>ʹje A-02_SG-LOC ;
+!:%>ʹj A-02_SG-COM_IN/PL-OBL ;
+!:%>ʹjje A-02_ESS/PAR ;
+!+Der+Der/Dimin+N:%>%{ʼØ%}j N_KUYLAZH ;
 
 
 !! Class 5 according to Feist 152
@@ -8142,8 +8148,8 @@ LEXICON A-01_PRSPRC-VHYY-I !!= * @CODE@ lahtti:la%^1VOWhtti
 : A-02_PL-OBL ;             		! siʹrddi
 +Use/NGminip+Use/NG:%^V2VV%^XYY2VY A-02_PL-OBL ;       ! siiʹrdi
 
-LEXICON A-01_PRSPRC-VQHYY-I !!= * @CODE@ aʹhtti:a%^1VOWhtti
-! gradation: yes
+LEXICON A-01_PRSPRC-VQHYY-I !!= * @CODE@ aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
+! gradation: yes  u%^1VOW%{ʹØ%}v%{ʹØ%}ddi
 ! is for nouns with ''-est'' +Loc
 !! * Yaml: **lookk**
 !! * There are several stem types
@@ -8152,17 +8158,17 @@ LEXICON A-01_PRSPRC-VQHYY-I !!= * @CODE@ aʹhtti:a%^1VOWhtti
 !! * sirddi:sirddi
 !! NumContLex="1.2"
 +Attr: # ;
-: A-02_SG-NOM ;	       			! aʹhtti
-: A-02_SG-ABE/ACC/GEN ;    			! aʹhtti
-:%^I2J%>a A-02_SG-ILL ;		! aʹhttja
+:%^Pen%^PAL A-02_SG-NOM ;	       			! aʹhtti
+:%^Pen%^PAL A-02_SG-ABE/ACC/GEN ;    			! aʹhtti
+:%^Pen%^PAL%^I2J%>a A-02_SG-ILL ;		! aʹhttja
 +Use/NGminip+Use/NG:%^Pen%^PALNo%^I2J%>a A-02_SG-ILL ;		! ahttja
-:%^I2J%>e A-02_SG-LOC ;			! aʹhttjest
-:%^CC2C A-02_SG-COM_N ;			! aʹhttjin
+:%^Pen%^PAL%^I2J%>e A-02_SG-LOC ;			! aʹhttjest
+:%^Pen%^PAL%^CC2C A-02_SG-COM_N ;			! aʹhttjin
 :%^I2J%>e A-02_ESS/PAR ;  			! aʹhttjen
-:%^V2VV%^XYY2VY A-02_PL-NOM ;             	! aauʹti
-+Use/NGminip+Use/NG: A-02_PL-NOM ;             	! siʹrddi
-: A-02_PL-OBL ;             		! siʹrddi
-+Use/NGminip+Use/NG:%^V2VV%^XYY2VY A-02_PL-OBL ;       ! siiʹrdi
+:%^Pen%^V2VV%^Pen%^PAL%^Pen%^XYY2VY A-02_PL-NOM ;             	! aauʹti
++Use/NGminip+Use/NG:%^Pen%^PAL A-02_PL-NOM ;             	! siʹrddi
+:%^Pen%^PAL A-02_PL-OBL ;             		! siʹrddi
++Use/NGminip+Use/NG:%^Pen%^V2VV%^Pen%^PAL%^Pen%^XYY2VY A-02_PL-OBL ;       ! siiʹrdi
 
 LEXICON A-01_PRSPRC-VWHYY-AI !!= * @CODE@ veâhssai:veâhssai
 ! gradation: yes

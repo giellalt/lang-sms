@@ -1110,7 +1110,7 @@ HatY-STEM-PX-RETAIN ;
 LEXICON N_TOLL !!= * @CODE@ toll:to%^1VOW%{ʹØ%}ll
 !!! inflection_type="1"
 !! N_1Y-VCC-VVC
-!! similar_to: N_AENHNH, N_STAQLLJ, N_KOONJYL
+!! similar_to: N_AENHNH, N_STAEQLLJ, N_KOONJYL
 : NMN_TOLL ;
 LEXICON NMN_TOLL
 !! Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_gem
@@ -4610,12 +4610,12 @@ LEXICON NMN_AQVV
 
 
 
-LEXICON N_STAQLLJ !!= * @CODE@ stäʹllj:ställj
+LEXICON N_STAEQLLJ !!= * @CODE@ stäʹllj:stä%^1VOW%{ʹØ%}llj
 !!! inflection_type="?"
 !! N_1E-VQCC
 !V1ʹC1C1
-: NMN_STAQLLJ ;
-LEXICON NMN_STAQLLJ
+: NMN_STAEQLLJ ;
+LEXICON NMN_STAEQLLJ
 !! vowel: monophthong
 !! vowel_shift: yes
 !! gradation: yes
@@ -5518,12 +5518,12 @@ LEXICON NMN_RUQHSS
 :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) ruʹhss Ess+Px..
 
 
-LEXICON N_JAUQRR !!= * @CODE@ jäuʹrr:jäurr
+LEXICON N_JAEUQRR !!= * @CODE@ jäuʹrr:jäurr
 !!! inflection_type="?"
 ! vowel: monophthong
 !! similar_to: N_AUTT
-: NMN_JAUQRR ;
-LEXICON NMN_JAUQRR
+: NMN_JAEUQRR ;
+LEXICON NMN_JAEUQRR
 ! gradation: yes
 !! ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 !! ## 1.3 Sg.Loc in -est (NO vowel shift)
@@ -5580,6 +5580,48 @@ LEXICON NMN_JAUQRR
 !!€ jääuraž:     jäuʹrr+N+Der+Der/Dimin+N+Sg+Nom
 !!€ jääura:      jäuʹrr+N+Der+Der/Dimin+N+Sg+Gen
 
+
+LEXICON N_NEIQBB !!= * @CODE@ jäuʹrr:jäurr
+!!! inflection_type="?"
+! vowel: monophthong
+!! similar_to: N_AUTT
+: NMN_NEIQBB ;
+LEXICON NMN_NEIQBB
+! gradation: yes
+!! ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+!! ## 1.3 Sg.Loc in -est (NO vowel shift)
+!!  Raised or lowered: Sg.Com, Pl.Obl
+!!  Lowered: ELSE
+!!  between _PEIQVV and _JAEUQRR
+!!  e-stems (Sg.Loc, Ess, Par).
+!! ## 1.3.2 Sg.Ill vowel -a
+!! ## 1.3.2.1 Has Palatalization
+!!  Palatalized: ELSE
+!!  Not Palatalized: Sg.Ill
+!! ## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+!! ## 1.3.2.1.1.1 Has Orthographic Gradation
+!! ## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+!!  Strong grade: Sg.Nom, Ess, Par
+!!  Strong grade: Sg.Ill
+!!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+!! ## FORMS
+!! Is for nouns with *-est* Loc, Extra long vowel
+!! * Yaml: **N-jaurr**
+:%^PAL E-STEM_SG-NOM ; 	  !!(1) Sg.Nom: neiʹbb
+:%^V2VV%^PAL%^XYY2XY E-STEM_SG-ABE/ACC/GEN ; !!(2) Pl.Nom: neeiʼb
+:%^V2VV%^PAL%^XYY2XY PL-NOM ; !!(2) Pl.Nom: neeiʼb
+:%^V2VV%^PAL%^XYY2XY A_DER/LAZH ;
+: E-STEM_SG-ILL ;	     !!(3) Sg.Ill: nẹibbaa
+:%^V2VV%^PAL%^XYY2XY%>e SG-LOC ;   !!(4) Sg.Loc: neeiʹbest
+:%^VOWRaise%^PAL%^XYY2XY SG-COM_IN ; !!(5) Sg.Com: niiʹbin
+:%^VOWRaise%^PAL%^XYY2XY E-STEM_PL-OBL ; !!(5) Sg.Com: niiʹbin
++Err/Orth:%^V2VV%^PAL%^XYY2XY SG-COM_IN ; !!(5) Sg.Com: neeiʹbin
++Err/Orth:%^V2VV%^PAL%^XYY2XY E-STEM_PL-OBL ; !!(5) Sg.Com: neeiʹbin
+:%^PAL%>e ESS/PAR ; 	       !!(6) Ess: neiʹbben
+:%^V2VV%^XYY2XY E-STEM_N_KUYLAZH ; !!(9) Der/Dimin.N.Sg.Nom: nẹẹibaž
+ E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) nẹibb
+:%^VV2V%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) neiʹb 
+:%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) neiʹbb Ess+Px..
 
 
 LEXICON N_PEIQVV !!= * @CODE@ peiʹvv:pẹ%^1VOWi%{ʹØ%}vv
@@ -6591,10 +6633,10 @@ LEXICON NMN_ESAI !!= * @CODE@ Esai:Esa%^1VOW%{ʹØ%}i
 ! gradation: yes
 !! * Yaml: **esai**
 
-: SG-NOM ;	       			! suõskki
-:%^V2VV%^I2J SG-ABE/ACC/GEN ;	! 
-:%^V2VV%^PAL%^I2J%>e SG-ILL ;    		! suõskkja
-:%^V2VV%^I2J%>â SG-LOC ;
+: SG-NOM ;	       			! Esai
+:%^V2VV%^I2J SG-ABE/ACC/GEN ;	! Esaaj
+:%^V2VV%^PAL%^I2J%>e SG-ILL ;    		! Esaaʹje
+:%^V2VV%^I2J%>â SG-LOC ; ! Esaajâst ?
 :%^V2VV%^I2J SG-COM_IN ;
 :%^V2VV%^I2J%>â ESS/PAR ; ! ess and prt without
 :%^V2VV%^I2J PL-NOM ;				! suõskki
@@ -6828,10 +6870,10 @@ LEXICON NMN_JAAM !!= * @CODE@ kaav:kaapp
 :%>ǥ VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 :%>%{ʼØ%}j VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
-LEXICON N_POOUS !!= * @CODE@ poous:pohss
+LEXICON N_POOUS !!= * @CODE@ poous:po%^1VOWhss
 !!! inflection_type="3"
 : NMN_POOUS ;
-LEXICON NMN_POOUS !!= * @CODE@ poous:pohss
+LEXICON NMN_POOUS !!= * @CODE@ poous:po%^1VOWhss
 ! gradation: yes
 ! vowel_center: monophthong
 ! consonant_center: cluster_with_approx
@@ -8301,7 +8343,7 @@ LEXICON NMN_AACCIKH !!= * @CODE@ pååttaǩ:pååttak
 !   Strong grade: Sg.Nom
 ! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
 ! Stem vowel: e
-!! stemtype n-stem pååttaǩ:pååttaǩ
+!! stemtype n-stem pååttaǩ:pååttak
 !! Palatalization loss in Sg.Ill
 !! * Yaml: **N-paattakj**
 :%^PALK SG-NOM ;
@@ -10364,6 +10406,21 @@ LEXICON NMN_PRSPRC-VWXYY-I !!= * @CODE@ suõskki:suõskki
 :%^I2J VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 
+LEXICON N_KHEEQRZAI
+ NMN_KHEEQRZAI ;
+LEXICON NMN_KHEEQRZAI
+: SG-NOM ; !!= * @CODE@ ǩeeʹrzai
+: SG-ABE/ACC/GEN ; !!= * @CODE@ ǩeeʹrzai
+:%^RmVow%^I2J%>a SG-ILL ; !!= * @CODE@ ǩeeʹrzja
+:%^RmVow%^I2J%>e SG-LOC ; !!= * @CODE@ ǩeeʹrzjest
+:%^RmVow%^I2J SG-COM_IN ; !!= * @CODE@
+:%^I2J%>e ESS/PAR ; !!= * @CODE@
+:%^RmVow%^I2J PL-OBL ; !!= * @CODE@
++Use/NGminip+Use/NG: PL-NOM ; !!= * @CODE@
+: PL-NOM ; !!= * @CODE@
++Use/NGminip+Use/NG:%^RmVow%^I2J PL-OBL ; !!= * @CODE@
++Der+Der/Dimin+N:%^I2J  N_KUYLAZH ;
+:%^I2J VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
 !! participles in -AI from verbs in -ad
 LEXICON  NOM-AG_AD
@@ -10655,10 +10712,10 @@ LEXICON NMN_PRSPRC-VXYY-I !!= * @CODE@ äjjnõʹstti:äjjnõʹstti
 +Der+Der/Dimin+N:%^I2J  N_KUYLAZH ;
 :%^I2J VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
-LEXICON N_PRSPRC-VQHYY-I !!= * @CODE@ aʹhtti:a%^1VOWhtti
+LEXICON N_PRSPRC-VQHYY-I !!= * @CODE@ aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
 !! inflection_type="?"
 +NomAg: NMN_PRSPRC-VQHYY-I ;
-LEXICON NMN_PRSPRC-VQHYY-I !!= * @CODE@ aʹhtti:a%^1VOWhtti
+LEXICON NMN_PRSPRC-VQHYY-I !!= * @CODE@ aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
 ! gradation: yes
 ! is for nouns with ''-est'' +Loc
 !! * Yaml: **lookk**
@@ -10674,7 +10731,7 @@ LEXICON NMN_PRSPRC-VQHYY-I !!= * @CODE@ aʹhtti:a%^1VOWhtti
 :%^Pen%^PAL%^I2J%>e SG-LOC ;			! aʹhttjest
 :%^Pen%^PAL%^CC2C SG-COM_N ;			! aʹhttjin
 :%^Pen%^PAL%^I2J%>e ESS/PAR ;  			! aʹhttjen
-:%^V2VV%^Pen%^PAL%^XYY2VY PL-NOM ;             	! aauʹti
+:%^Pen%^V2VV%^Pen%^PAL%^XYY2VY PL-NOM ;             	! aauʹti
 +Use/NGminip+Use/NG:%^Pen%^PAL PL-NOM ;             	! siʹrddi
 :%^Pen%^PAL PL-OBL ;             		! siʹrddi
 +Use/NGminip+Use/NG:%^V2VV%^Pen%^PAL%^XYY2VY PL-OBL ;       ! siiʹrdi
@@ -11499,7 +11556,7 @@ LEXICON NMN_VISKKYD
 :âd SG-NOM ;
 :âd SG-ABE/ACC/GEN-PL-NOM ;
 :ää SG-ILL ;
-:eeʼ SG-LOC ;
+:eeʹ SG-LOC ;
 :i SG-COM_IN/PL-OBL ;
 :ee ESS/PAR ;
 

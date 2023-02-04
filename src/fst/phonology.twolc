@@ -736,7 +736,8 @@ Rules
   OnSetC  e: _ (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWRaise: ;
 ! diphthong raising with e:i at onset - deriving +Ind+Prt+Pl3 in reäkkad > riâkku, veârrad > viõrru
 
- OnSetC  _ [ä:|â:] (%{ʹØ%}: h:|%{ʹØ%}: v:|u|i) (%{ˈ1%}:) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] [%^VOWRaise:|%^PALE:|%^PALẸ:] ;
+ OnSetC  _ [ä:|â:] (%{ʹØ%}: h:|%{ʹØ%}: v:|u|i) (%{ˈ1%}:) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:*] %^VOWRaise: ;
+! OnSetC  _ [ä:|â:] (%{ʹØ%}: h:|%{ʹØ%}: v:|u|i) (%{ˈ1%}:) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:*] [%^VOWRaise:|%^PALE:|%^PALẸ:] ;
 ! OnSetC  _ [ä:ẹ|ä:e|ä:â|ä:õ|â:õ|â:e ] (u) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  [%^VOWRaise:|%^VOWRaise: %^PALE:] ;
 !! reâugg+N+Sg+Ill
 !!€ reâugg^VOWRaise>u
@@ -810,15 +811,17 @@ OnSetC  ẹ: _ (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^V
 !! kuâsˈsad+V+Ind+Prt+Pl3
 !!€ kuâsˈs^VOWRaise>u
 !!€ kuõsˈs0>u
-  e:   _ (u) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+] %^VOWRaise: (%^PALNo:|(%^PALÕ:) %^PAL:) BetweenPALNoAndMorph ;
-!2019-03-01  [ e: | i]  _ (u) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+] %^VOWRaise: (%^PALNo:|(%^PALÕ:|%^PALE:) %^PAL:) BetweenPALNoAndMorph ;
+  e:   _ (u|i) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+] %^VOWRaise: \[ %^PALE: | %^PALẸ: | %^PALI:] ;
+!  e:   _ (u) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+] %^VOWRaise: (%^PALNo:|(%^PALÕ:) %^PAL:) BetweenPALNoAndMorph ;
 !! reâugg+N+Sg+Ill
 !!€ reâugg^VOWRaise>u
 !!€ riõugg0>u
 !! veârrad+V+Ind+Prt+Pl3
 !!€ veâr0r^VOWRaise^CC2CCC>u
 !!€ viõrˈr00>u
-
+!! ǩeâikk+N+Sg+Ill: ****
+!!€ ǩeâi{ʹØ}kk^VOWRaise>u
+!!€ ǩiõi0kk0>u
 
 "Diphthong raising beginning with u ä:å"
 !! **@RULENAME@** -
@@ -834,7 +837,7 @@ OnSetC  ẹ: _ (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^V
 "Diphthong raising beginning with e:i ä:â"
 !! **@RULENAME@** -
  ä:â <=>
- e:i  _ [(i|u)|(ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+]] %^VOWRaise: BetweenPALNoAndMorph ;
+ e:  _ [(i|u)|(ʹ:|0:ʹ|%{ʹØ%}:)] [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:*|Cns:+ :ˈ Cns:+] %^VOWRaise: \[ %^PALẸ: | %^PALÕ: | %^PALE:] ;
 ! e:  _ [(i|u)|(ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|Cns:+ :ˈ Cns:+]]  NeutrVowLength %^VOWRaise: BetweenPALNoAndMorph ;
 !! reäkkad+V+Ind+Prt+Pl3
 !!€ reäk0k^VOWRaise^CC2CCC>u
@@ -944,7 +947,7 @@ OnSetC  ẹ: _ (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^V
    OnSetC _ (%^1VOW:) (v:u|j:i) [:ʹ|%{ʹØ%}:ʹ] [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] NeutrVowLength %^VOWLower: %^PAL: ;
 
 
-   OnSetC _ [õ:|â:|e:] (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] [%^VOWLower:  |(e: s:) %^Pen: %^VOWLower: ] ;
+   OnSetC _ [õ:|â:|e:] ((%{ʹØ%}:) h:) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] [%^VOWLower:  |(e: s:) %^Pen: %^VOWLower: ] ;
 !! siõrrâd+V+Ind+Prs+Pl3: **play/leikkiä**
 !!€ siõ0r0r^VOWLower^PALÄ^PAL^CC2CCC>e
 !!€ seäʹrˈr0000>e
@@ -1057,7 +1060,7 @@ OnSetC u: _   (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|r d d:
 "Even syllabic verbs I, vowel lowering õ:â "
 !! **@RULENAME@** - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in viǯǯâd
  õ:â <=>
-       i:e _ (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: [ BetweenPALNoAndMorph |%^PAL:|%^PALNo:] ;
+       i:e _ ((%{ʹØ%}:) h:) (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: \[ %^PALE:|%^PALÄ:] ;
 !       i: _ (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^VOWLower: [ BetweenPALNoAndMorph |%^PAL:|%^PALNo:] ;
 !! riõkkâd+V+Ind+Prs+Sg3 **to whip**
 !!€ riõkˈk^VOWLower#
@@ -1451,7 +1454,7 @@ OnSetC u: _   (ʹ:|0:ʹ|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|r d d:
 !! **@RULENAME@** - ǩiđđ:ǩiiđ
  %^1VOW:i <=> OnSetC [ e:i| ẹ:i ] _ (0:ʹ|%{ʹØ%}:)  [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] [%^V2VV: %^VOWRaise:| Vow: Cns:+ %^Pen: %^V2VV: %^Pen: %^VOWRaise:]  ;
 
-OnSetC [i|I] _ (h|u) (%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^V2VV: BetweenVowHeightAndMorph   ;
+OnSetC [i|I] _ ((%{ʹØ%}:) h:|u) (%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] %^V2VV: BetweenVowHeightAndMorph   ;
   OnSetC [Vow:i|Vow:I] _  [(ʹ:|0:ʹ|%{ʹØ%}:) CNoJ:|(%{ʹØ%}:) [h:|u] (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+] Vow: Cns:+ (%{XC%}:)  %^Pen: %^V2VV: ;
 !Not needed here
 !! pirsted+V+Ind+Prs+ConNeg
