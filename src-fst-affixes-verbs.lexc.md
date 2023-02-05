@@ -2349,10 +2349,10 @@ gradation: no
 allegro: yes
 similar_to: 
 
-* LEXICON V_JEAELSTED  jeälsted:jeälast
-* LEXICON IV_JEAELSTED  jeälsted:jeälast
-* LEXICON TV_JEAELSTED  jeälsted:jeälast
-* LEXICON V0_JEAELSTED  jeälsted:jeälast
+* LEXICON V_JEAELSTED  jeälsted:jeä%{ˈ1%}last
+* LEXICON IV_JEAELSTED  jeälsted:jeä%{ˈ1%}last
+* LEXICON TV_JEAELSTED  jeälsted:jeä%{ˈ1%}last
+* LEXICON V0_JEAELSTED  jeälsted:jeä%{ˈ1%}last
 gradation: no
 allegro: yes
 similar_to: 
