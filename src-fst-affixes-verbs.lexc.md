@@ -129,9 +129,9 @@ Imprt+ConNegII, Pass+PrfPrc
 * +Imprt+Pl3:%^VV2V%^VOWLower%>az K ;  (9) Ind.Imprt.Pl3: piâkklâččaz
 Imprt+Pl3
 
-* LEXICON V_ROVVYD  rõvvâd:rõvv
-* LEXICON IV_ROVVYD  rõvvâd:rõvv
-* LEXICON V0_ROVVYD  rõvvâd:rõvv
+* LEXICON V_ROVVYD  rõvvâd:rõ%^1VOW%{ʹØ%}vv
+* LEXICON IV_ROVVYD  rõvvâd:rõ%^1VOW%{ʹØ%}vv
+* LEXICON V0_ROVVYD  rõvvâd:rõ%^1VOW%{ʹØ%}vv
 
 * LEXICON V_RIYDDDYD  riâddâd:riâdˈd
 * LEXICON V0_RIYDDDYD  riâddâd:riâdˈd
@@ -289,8 +289,8 @@ Imprt+Pl3
 
 * :%^CC2CAllegro FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: siõr»
 
-* LEXICON V_SUOAPPYD  suåppâd:suåpp
-* LEXICON V0_SUOAPPYD  suåppâd:suåppv
+* LEXICON V_SUOAPPYD  suåppâd:suå%{ʹØ%}pp
+* LEXICON V0_SUOAPPYD  suåppâd:suå%{ʹØ%}pp
 * : VSUF-INF_YD ;  (1)  Inf: suåppâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
@@ -625,9 +625,9 @@ Imprt+Pl3
 
 (10) Allegro for incoative: läul»
 
-* LEXICON V_SARNNAD  särnnad:särnn
-* LEXICON IV_SARNNAD  särnnad:särnn
-* LEXICON V0_SARNNAD  särnnad:särnn
+* LEXICON V_SARNNAD  särnnad:sä%^1VOWrnn
+* LEXICON IV_SARNNAD  särnnad:sä%^1VOWrnn
+* LEXICON V0_SARNNAD  särnnad:sä%^1VOWrnn
 
 * : VSUF-INF_AD ;  (1)  Inf: särnnad
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Ind+Prt+ConNeg
@@ -2141,10 +2141,10 @@ Allegro (10)
 (12)
 * :%^V2VV%^XYY2XY VSUF-CHED_ED ;   (12) +Der+Der/ched: peeitčed
 
-* LEXICON V_CEAQLKHKHED  ceäʹlǩǩed:ceälkk
-* LEXICON IV_CEAQLKHKHED  ceäʹlǩǩed:ceälkk
-* LEXICON TV_CEAQLKHKHED  ceäʹlǩǩed:ceälkk
-* LEXICON V0_CEAQLKHKHED  ceäʹlǩǩed:ceälkk
+* LEXICON V_CEAQLKHKHED  ceäʹlǩǩed:ceä%{ʹØ%}lkk
+* LEXICON IV_CEAQLKHKHED  ceäʹlǩǩed:ceä%{ʹØ%}lkk
+* LEXICON TV_CEAQLKHKHED  ceäʹlǩǩed:ceä%{ʹØ%}lkk
+* LEXICON V0_CEAQLKHKHED  ceäʹlǩǩed:ceä%{ʹØ%}lkk
 * :%^PAL VSUF-INF_ED ;  (1) +V+Inf: ceäʹlǩǩed
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
