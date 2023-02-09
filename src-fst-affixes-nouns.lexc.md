@@ -1,5 +1,4 @@
 
-
 # Skolt Saami noun morphology 
 
 This file documents the Skolt Saami noun morphology, lexicon by lexicon.
@@ -104,7 +103,7 @@ e.g.
 e.g. +Use/NG+Sg+Loc+PxSg3
 e.g. +Sg+Loc+PxSg3 pp:p papstes
 
-* : R ;           papp
+* +Cmp/SgNom: R ;           papp
 * :%^V2VV PL-NOM ;  paapp
 * :%^V2VV PL-OBL ;       paappi, paappid, paappid, paappin, paappivuiʹm, paappitaa
 * :%>â ESS/PAR ;                   pappân, pappâd
@@ -170,7 +169,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^XYY2XY N_KUUZZYZH-WITH-PAL ;   põõʹrt-
 
 * LEXICON N_ALGG-PL  põõrt:põrtt
-* : R ;                            põrtt
+* +Cmp/SgNom: R ;                            põrtt
 * :%^V2VV%^XYY2XY PL-NOM ;                 põõrt
 * :%>â ESS/PAR ;                                   põrttân
 * :%^V2VV%^XYY2XY PL-OBL ;                         põõrti
@@ -234,7 +233,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^XYY2XY N_KUUZZYZH-WITH-PAL ;   aauʹt-
 
 * LEXICON N_AUTT-PL  aaut:autt
-* : R ;                            autt
+* +Cmp/SgNom: R ;                            autt
 * :%>â ESS/PAR ;                                   auttân
 * :%^V2VV%^XYY2XY PL-NOM ;                 aaut
 * :%^V2VV%^XYY2XY PL-OBL ;                         aauti
@@ -451,7 +450,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^PAL%^XYY2XY N_MUORYZH-WITH-PAL ;   čuõʹsǩ-
 
 * LEXICON N_CHUOSHKK-PL  čuõšk:čuõškk
-* : R ;                    (1) čuõskk
+* +Cmp/SgNom: R ;                    (1) čuõskk
 * :%>â ESS/PAR ;                           (6) čuõskkân
 * :%^XYY2XY PL-NOM ;       (2) čuõsk
 * :%^XYY2XY PL-OBL ;               (5) čuõskin
@@ -574,7 +573,7 @@ puåvv:puåvv
 * +Der+Der/Dimin+N:%^PALE%^PAL%^CC2C N_MUORYZH-WITH-PAL ;   pueʹv-
 
 * LEXICON N_PUOAVV-PL  puåvv:puå%{ʹØ%}vv
-* : R ;	    			 (1) Sg.Nom: puåvv
+* +Cmp/SgNom: R ;	    			 (1) Sg.Nom: puåvv
 * :%^CC2C PL-NOM ;		 (2) Pl.Nom: puåv
 * :%>â ESS/PAR ; 	  			 (6) Ess: puåvvân
 * :%^CC2C PL-OBL ;			 (8) Pl.Gen: puåvi
@@ -814,7 +813,7 @@ single_consonant, long_vowel, no_palatalization, high_stem_vowel
 single_consonant, long_vowel, palatalization, high_stem_vowel
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^CC2C N_KUUZZYZH-WITH-PAL ;   tooʹl-
 
-* : R ;  toll
+* +Cmp/SgNom: R ;  toll
 * :%>â ESS/PAR ;          tollân
 * :%^V2VV%^CC2C PL-NOM ;  tool
 * :%^V2VV%^CC2C PL-OBL ;  tooli, toolid, toolid, toolin, toolivuiʹm, toolitaa
@@ -983,7 +982,7 @@ THIS IS NOT THE SAME AS N_MUORR
 * +Der+Der/Dimin+N:%^KK2GG N_KUUZZYZH-WITHOUT-PAL ;   luõzz-
 * +Der+Der/Dimin+N:%^PAL%^KK2GG N_KUUZZYZH-WITH-PAL ;   luõʹzz-
 
-* : R ;	     			
+* +Cmp/SgNom: R ;	     			
 * :%^KK2GG PL-NOM ;	 luõzz
 * :%>â ESS/PAR ; 	   			
 * :%^KK2GG PL-OBL ;			 luõzzi
@@ -1383,7 +1382,7 @@ Sg_Loc_Px..
 
 ## FORMS
 strong_geminate, short_vowel, no_palatalization, low_stem_vowel
-* : R ;		  pess
+* +Cmp/SgNom: R ;		  pess
 * :%>a ESS/PAR ; 			  (6) Ess: pessan
 * :%^V2VV PL-NOM ;	  (2) Pl.Nom: peess
 
@@ -1996,7 +1995,7 @@ Ess_Px..., Sg_Ill..., N»A
 * :%^CCC2CC SG-LOC-PX_ALLEGRO ;  (10) neävv» CHECKME
 Sg_Loc_Px..
 
-* : R ;                     neävˈv
+* +Cmp/SgNom: R ;                     neävˈv
 * :%^CCC2CC PL-NOM ;         neävv
 * :%^CCC2CC%>a PL-OBL ;                    neävvai
 
@@ -2066,7 +2065,7 @@ Ess_Px..., Sg_Ill..., N»A
 * :%^XYY2XY SG-LOC-PX_ALLEGRO ;  (10) peäld»
 Sg_Loc_Px..
 
-* : R ;   peäldd
+* +Cmp/SgNom: R ;   peäldd
 * :%^XYY2XY PL-NOM ;	  peäld
 
 * :%>a ESS/PAR ;     peälddan
@@ -3268,7 +3267,7 @@ NumContLex="1.113"
 * :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) čäʹcc Ess+Px..
 
 * LEXICON N_CHAAQCC-PL  čääʹʒʒ:čääcc
-* :%^PAL R ;                    (1) čääʹcc
+* +Cmp/SgNom:%^PAL R ;                    (1) čääʹcc
 * :%^PAL%^KK2GG PL-NOM ;         (2) čääʼʒʒ
 * :%^VOWRaise%^PAL%^KK2GG E-STEM_PL-OBL ;           (5) čaaʼʒʒin
 * :%^PAL%>e ESS/PAR ;                               (6) čääʼccen
@@ -3763,7 +3762,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^PAL%>e ESS/PAR ;    (6) Ess: täʹhtten
 * :%^V2VV%^PALNo%^XYY2VY E-STEM_N_KUYLAZH ;    !(9) Der/Dimin.N.Sg.Nom: tääutaž
 
-* :%^PAL R ;   (1) Sg.Nom: täʹhtt
+* +Cmp/SgNom:%^PAL R ;   (1) Sg.Nom: täʹhtt
 * :%^V2VV%^PAL%^XYY2VY PL-NOM ;    (2) Pl.Nom: tääuʹt
 * :%^V2VV%^VOWRaise%^PAL%^XYY2VY E-STEM_PL-OBL ;    (5) Sg.Com: tääuʹtin
 * :%^PAL%>e ESS/PAR ;    (6) Ess: täʹhtten
@@ -3914,7 +3913,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * :%^PAL%^XYY2XY E-STEM-PX-ALLEGRO ;  (11) peiʹv-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) peiʹvv Ess+Px..
 
-* :%^PAL R ;	 (1) Sg.Nom: peiʹvv
+* +Cmp/SgNom:%^PAL R ;	 (1) Sg.Nom: peiʹvv
 * :%^V2VV%^PAL%^XYY2XY PL-NOM ;  (2) Pl.Nom: peeiʼv
 * :%^PAL%>e ESS/PAR ; 		   (6) Ess: peiʹvven
 * :%^V2VV%^PAL%^XYY2XY PL-OBL ;  (8) Pl.Acc: peeiʹvid
@@ -4799,7 +4798,7 @@ stemtype n-stem piiutâs:piiutâs
 * :%^Pen%^V2VV%^Pen%^XYY2VY SG-NOM ;  piiutâs
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 * LEXICON N_PIIUTYS-PL  piiutâs:pihttâs
-* :%^Pen%^V2VV%^Pen%^XYY2VY R ;  piiutâs
+* +Cmp/SgNom:%^Pen%^V2VV%^Pen%^XYY2VY R ;  piiutâs
 
 * LEXICON N_KOONTYR  koontâr:konttâr
 like N_ALGG, N_TAALKYS, N_AAUTYR
