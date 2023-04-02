@@ -560,7 +560,6 @@ kââʹǩǩed+V+Act+PrsPrc+Sg+Nom: **rub/hangata**
 * *kõõʹǩǩ00>i*
 * ★*kââ{ʹØ}kk^VOWRaise^PAL>i* (is not standard language)
 * ★*kââʹǩǩ00>i* (is not standard language)
-
 * *ruâk0k^VOWRaise^CC2CCC>u*
 * *ruõkˈk00>u*
 * *čuâkˈk^VOWRaise>u*

@@ -5129,9 +5129,9 @@ Is for nouns with *-est* Loc, Extra long vowel
 * : E-STEM_SG-ILL ;  		     	 (3) Sg.Nom: muârjja
 * :%^PALE%^PAL%^XYY2XY%>e SG-LOC ;		 (4) Sg.Loc: mueʹrjest
 * :%^VOWRaise%^PAL%^XYY2XY SG-COM_IN ;  (5) Sg.Com: muõʹrjin
-* +Use/NGminip+Use/NG:%^PALE%^PAL%^XYY2XY SG-COM_IN ;  (5) Sg.Com:  mueʹrjin
+* +Err/Orth:%^PALE%^PAL%^XYY2XY SG-COM_IN ;  (5) Sg.Com:  mueʹrjin
 * :%^VOWRaise%^PAL%^XYY2XY E-STEM_PL-OBL ;  (5) Sg.Com: muõʹrjin
-* +Use/NGminip+Use/NG:%^PALE%^PAL%^XYY2XY E-STEM_PL-OBL ;  (5) Sg.Com:  mueʹrjin
+* +Err/Orth:%^PALE%^PAL%^XYY2XY E-STEM_PL-OBL ;  (5) Sg.Com:  mueʹrjin
 * :%^PALE%^PAL%>e ESS/PAR ; 	 		   (6) Pl.Nom: mueʹrjjen
 * :%^XYY2XY E-STEM_N_KUYLAZH ;		   (9) Der/Dimin.N.Sg.Nom: muârjaž
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) muârjj-
@@ -11726,7 +11726,6 @@ kââʹǩǩed+V+Act+PrsPrc+Sg+Nom: **rub/hangata**
 * *kõõʹǩǩ00>i*
 * ★*kââ{ʹØ}kk^VOWRaise^PAL>i* (is not standard language)
 * ★*kââʹǩǩ00>i* (is not standard language)
-
 * *ruâk0k^VOWRaise^CC2CCC>u*
 * *ruõkˈk00>u*
 * *čuâkˈk^VOWRaise>u*
