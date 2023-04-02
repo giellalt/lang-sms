@@ -1,0 +1,46 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Noun - jeäll u-stem dlo: # Noun - full paradigm
+     jeäll+N+Sg+Nom: jeäll
+
+#pieʹllrääʹjj ʹpuoliväliʹ
+     pieʹllrääʹjj+N+Sg+Nom: pieʹllrääʹjj
+     pieʹllrääʹjj+N+Sg+Gen: pieʹllrääʹj
+     pieʹllrääʹjj+N+Sg+Ill: pieʹllräjja
+     pieʹllrääʹjj+N+Sg+Loc: pieʹllrääʹjest
+     pieʹllrääʹjj+N+Sg+Com:  pieʹllraaʹjin
+#riipâs ʹetanaʹ
+     riipâs+N+Sg+Nom: riipâs 
+     riipâs+N+Sg+Gen: rijppâz
+     riipâs+N+Sg+Ill: rijppsa
+     riipâs+N+Sg+Loc: rijppsest
+#žaaʹll ʹsääliʹ
+     žaaʹll+N+Sg+Nom: žaaʹll
+     žaaʹll+N+Sg+Gen: žaaʹl
+     žaaʹll+N+Sg+Ill: žaʹlle
+     žaaʹll+N+Sg+Loc: žaaʹlest
+#ukksõs ʹetikkaʹ
+     ukksõs+N+Sg+Nom: ukksõs
+     ukksõs+N+Sg+Gen: ukksõõzz
+     ukksõs+N+Sg+Ill: ukksõʹsse
+     ukksõs+N+Sg+Loc: ukksõõzzâst
+# käʹšnnʼneǩ ʹkassanhoitajaʹ
+     käʹšnnʼneǩ+N+Sg+Nom: käʹšnnʼneǩ 
+     käʹšnnʼneǩ+N+Sg+Gen: käʹšnnʼneeʹǩǩ
+     käʹšnnʼneǩ+N+Sg+Ill: käʹšnnʼnekka
+     käʹšnnʼneǩ+N+Sg+Loc: käʹšnnʼneeʹǩǩest
+     käʹšnnʼneǩ+N+Pl+Gen: [käʹšnnʼniiʹǩǩi, käʹšnnʼneeʹǩǩi]
