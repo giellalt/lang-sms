@@ -37,6 +37,7 @@ The lexicon *V0_LEEQD* for the copula
 * +Ind+Prs+Pl3:%^VV2V%^VOWLower%^PAL%>e K ; 3 laukkâʹlle
 * :%^VV2V%^PAL VSUF-IND-PRT-PL3_YD ; 4 laukkõʹlle
 * :%^CC2C VSUF-I-POTKOND_YD ; 5 laukkõõl-
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ; 5 ERR laukkõõll-
 * +Pot+Sg3:%^CC2C%>âž   K ; 6 laukkõõl-
 * +Imprt+Sg3:%^CC2C%>as K ; 7 laukkõõlas
 * :%^VV2V VSUF-IMPRT-CONNEGII_YD ; 8 laukkõll-
@@ -72,6 +73,7 @@ NomAct in MOsh
 * *põ0ʼss00%>e*
 
 * :%^KK2GG VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: viiǥǥâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -238,6 +240,7 @@ NomAct in MOsh
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^CC2C VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: huõlâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -274,6 +277,7 @@ siõrrâd+V+Ind+Prs+Pl3
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^CC2C VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: siõrâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -308,6 +312,7 @@ NomAct in MOsh
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^CC2C VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: suåvâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -344,6 +349,7 @@ NomAct in MOsh
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^V2VV%^XYY2XY VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: aaibâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -377,6 +383,7 @@ NomAct in MOsh
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^V2VV%^XYY2XY VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: toobdâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -410,6 +417,7 @@ NomAct in MOsh
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^V2VV%^XYY2VY VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: õõutâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -442,6 +450,7 @@ NomAct in MOsh
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^XYY2XY VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: kuõskâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -477,6 +486,7 @@ NomAct in MOsh
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^XYY2VY VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: čuõutâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -512,6 +522,7 @@ NomAct in MOsh
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^XYY2XY VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: sǩiâŋkâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -565,6 +576,7 @@ Even-syllable stems in -AD
 (3) +V+Ind+Prs+Pl3: tätta
 (4) +V+Ind+Prt+Pl3: tattu
 (5) +V+Imprt+Sg2: täätt
+(5) ERR
 (7) +V+Imprt+Sg3: täättas
 (8) +V+Imprt+ConNegII: tattu
 
@@ -610,6 +622,7 @@ Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 
 Weak-StableVowel-No-Palatalization
 * :%^V2VV%^XYY2XY%> VSUF-I-POTKOND_AD ;   (6) +V+Pot+Sg3: lääulež
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_AD ;   (6) ERR
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
 
 Weak-LowVowel-No-palatalization
@@ -644,6 +657,7 @@ Actio, ActEss, PrsPrc, NomAct in MOsh
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^V2VV%^XYY2XY VSUF-I-POTKOND_AD ;  (5-7) +Imprt+Sg2: säärn
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_AD ;  (5-7) ERR
 Imprt+ConNeg, Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, Ind+Prs+Sg1, Ind+Prs+Sg2
 +Ger, +VAbess, +Pot, +Cond, +Imprt+Sg3
 
@@ -692,6 +706,7 @@ Actio, ActEss, PrsPrc, NomAct in MOsh
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^V2VV%^XYY2VY VSUF-I-POTKOND_AD ;  (5-7) +Imprt+Sg2: pååus
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_AD ;  (5-7) ERR
 Imprt+ConNeg, Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, Ind+Prs+Sg1, Ind+Prs+Sg2
 +Ger, +VAbess, +Pot, +Cond, +Imprt+Sg3
 
@@ -717,6 +732,7 @@ Imprt+ConNegII, Pass+PrfPrc
 (3)  Ind.Prs.Pl3: kuästta
 (4)  Ind.Prt.Pl3: kuõsttu
 (5)  Ind.Imprt.Sg2: kuäst-
+(5) ERR
 (7)  Imprt.Sg3: kuästas
 (8)  Imprt.13.ConNeg: kuõsttu
 
@@ -730,6 +746,7 @@ Imprt+ConNegII, Pass+PrfPrc
 (3)  Ind.Prs.Pl3: veâhssa
 (4)  Ind.Prt.Pl3: viõhssu
 (5)  Ind.Imprt.Sg2: veâus-
+(5) ERR
 (7)  Ind.Imprt.Sg3: veâusas
 (8)  Imprt.13.ConNeg: viõhssu
 
