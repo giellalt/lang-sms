@@ -759,6 +759,7 @@ Symbols that need to be escaped on the lower side (towards twolc):
 The Usage extents are marked using following tags: 
 
 * **+Err/Orth**  substandard, not in normative fst 
+* **+Err/Orth-not-apos-but-hyph**  substandard, old orth look-alikes are separated by a hyphen
 * **+Err/Orth-k-kh** substandard k, not in normative fst ǩ(, should be  kuõccjiǩ and not kuõccjik)
 * **+Err/Orth-a-y** substandard a, not in normative fst â
 * **+Err/Orth-o-uq** substandard o, not in normative fst uʹ (e.g. illative kuʹmppe and not komppa)
