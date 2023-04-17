@@ -588,6 +588,8 @@ SELECT:AttrNotNom (Pron Interr Attr) OR (A Attr) (0 (Pron Interr Sg Nom) OR (A S
 #!! * **unifDem** 
 SELECT:unifDem $$CASES (0C Dem OR Indef LINK *1 $$CASES BARRIER NPNH LINK 0 NOMEN-NOT-PRON) ;
 	## Klaasen tjirrh olkese goevli doj veelkes baeniej gåajkoe, ...
+	# [Täin loʹsses ääiʹjin] vuäitt ǩiõttʼtuâjaid raajjeeʹl mättjed mâid-ne aivv tääʹrǩes.
+	# here täin should be a determiner and not a separate pronoun 2023_04_16
 
 REMOVE:NotPersWhenDem Pers IF (0 Dem + $$NUMBER + $$CASES LINK *1 N + $$NUMBER + $$CASES BARRIER NPNH);
 REMOVE:NotPersWhenDemSg Pers IF (0 Dem + Sg + $$CASES LINK *1 N + Sg + $$CASES BARRIER NPNH);
