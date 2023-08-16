@@ -761,6 +761,9 @@ puuʹttes+A+Sg+Gen
 vueʹlǧǧed+Use/NG+V+Ind+Prs+Pl3 **leave/lähteä**
 * *vuâ0lgg^PALÄ^PAL>a*
 * *vuäʹlǧǧ00>a*
+tieʹtted+V+Ind+Prs+Pl3 **know/tietää**
+* *t* `e` (Eng. â {ʹØ} t ˈ t ^PALÄ ^PAL ^CC2CCC > e)
+* *t* `e` (Eng. ä ʹ t ˈ t 0 0 0 > e)
 
 **Even syllabic verbs I, diphthong opening after i:e e:â** - deriving +Ind+Prs+Sg3, in pi%{EÂ%}ʹǩǩ:peâkka
 
