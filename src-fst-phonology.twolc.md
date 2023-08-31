@@ -597,6 +597,8 @@ reäkkad+V+Ind+Prt+Pl3
 **Diphthong raising beginning with e:i ä:e** - used in
 * *jeä{ʹØ}kˈkel^Pen^PALE^Pen^PAL^Pen^KKK2ZERO*
 * *jeeʹ000el000000*
+* *mõõnn^VV2V^CC2CAllegro»škuä{ʹØ}t0t^VOWRaise^PALE^PAL^CC2CCC>iǩ*
+* *mõ0n000»škueʹtˈt0000>iǩ*
 
 **Diphthong raising beginning with e:i ä:ẹ** - used in
 * *čuä{ʹØ}ckk^PALẸ^PAL^XYY2XY>es*

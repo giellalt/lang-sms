@@ -10571,8 +10571,8 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL%^CC2CCC%> VSUF-IND-PRT-PL3_ED ;  (4) pueʹtˈte
-* +Use/NGminip+Use/NG:%^VOWRaise%^PALÕ%^PAL%^CC2CCC%> VSUF-IND-PRT-PL3_ED ;  (4) puõʹtˈte
+* :%^VOWRaise%^PALE%^PAL%^CC2CCC VSUF-IND-PRT-PL3_ED ;  (4) pueʹtˈte
+* +Use/NGminip+Use/NG:%^VOWRaise%^PALÕ%^PAL%^CC2CCC VSUF-IND-PRT-PL3_ED ;  (4) puõʹtˈte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -10580,16 +10580,16 @@ Weak-StableV-Palatalization
 Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 
 Weak-RaisedVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL%^CC2C%> VSUF-POTENTIAL_ED ;  (6 pueʹđež
-* +Use/NGminip+Use/NG:%^VOWRaise%^PALÕ%^PAL%^CC2C%> VSUF-POTENTIAL_ED ;  (6 puõʹđež
+* :%^VOWRaise%^PALE%^PAL%^CC2C VSUF-POTENTIAL_ED ;  (6 pueʹđež
+* +Use/NGminip+Use/NG:%^VOWRaise%^PALÕ%^PAL%^CC2C VSUF-POTENTIAL_ED ;  (6 puõʹđež
 * :%^VOWRaise%^PALÕ%^PAL%^CC2C VSUF-IND-PRT-SG3-PL1-PL2_ ;  ( puõʹđi
 * +Pot+Sg3:%^PAL%^CC2C%>ež   K ;  (6   puäʹđež
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
 
 Weak-LoweredVowel-No-palatalization
-* :%^CC2C%> VSUF-CONDITIONAL_ED ;  (7) puäđ-
+* :%^CC2C VSUF-CONDITIONAL_ED ;  (7) puäđ-
 Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
-* +Use/NGminip+Use/NG:%^PAL%^CC2C%> VSUF-CONDITIONAL_ED ;  (5 ?2 ?7) puäʹđ-
+* +Use/NGminip+Use/NG:%^PAL%^CC2C VSUF-CONDITIONAL_ED ;  (5 ?2 ?7) puäʹđ-
 
 ExtraStrong-RaisedVowel-No-palatalization
 * :%^VOWRaise%^PALÕ VSUF-IMPRT-CONNEGII_ED ;  (8 puõttu
@@ -10604,8 +10604,8 @@ No Allegro (10) 2015-12-04
 :%^VOWLower%^PAL%^CC2CAllegro%>e FOR-ALLEGRO-DEVERBAL-DERIVATION ;
 
 (11) Present Participle:
-* +Use/NGminip+Use/NG:%^VOWRaise%^PALE%^PAL%> FOR-VSUF-PRSPRC_ED ;  (11) pueʹtti
-* :%^VOWRaise%^PALÕ%^PAL%> FOR-VSUF-PRSPRC_ED ;  (11) puõʹtti
+* +Use/NGminip+Use/NG:%^VOWRaise%^PALE%^PAL FOR-VSUF-PRSPRC_ED ;  (11) pueʹtti
+* :%^VOWRaise%^PALÕ%^PAL FOR-VSUF-PRSPRC_ED ;  (11) puõʹtti
 
 * LEXICON V_JIEAQLLED  jieʹlled:jeä%{ʹØ%}ll
 * LEXICON IV_JIEAQLLED  jieʹlled:jeä%{ʹØ%}ll
@@ -11780,6 +11780,8 @@ reäkkad+V+Ind+Prt+Pl3
 **Diphthong raising beginning with e:i ä:e** - used in
 * *jeä{ʹØ}kˈkel^Pen^PALE^Pen^PAL^Pen^KKK2ZERO*
 * *jeeʹ000el000000*
+* *mõõnn^VV2V^CC2CAllegro»škuä{ʹØ}t0t^VOWRaise^PALE^PAL^CC2CCC>iǩ*
+* *mõ0n000»škueʹtˈt0000>iǩ*
 
 **Diphthong raising beginning with e:i ä:ẹ** - used in
 * *čuä{ʹØ}ckk^PALẸ^PAL^XYY2XY>es*
