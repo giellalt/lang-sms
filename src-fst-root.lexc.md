@@ -225,6 +225,7 @@ get the same pronunciation whether read as SME or NOB/NNO/SWE.
 * **+OLang/NNO** - Norw. nynorsk 
 * **+OLang/ENG** - English 
 * **+OLang/UND** - Undefined 
+* +OLang/PARA - parallelle navn, navnet skal ikke overføres til andre samisk språk
 
 ### Government tags 
 * **+%<acc%>** 
