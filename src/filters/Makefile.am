@@ -37,6 +37,7 @@ GIELLA_FILTER_LOCAL_REGEX_SRCS=\
 					split-CmpNP-tags.regex                             \
 					convert_to_flags-CmpNP-tags.regex                  \
 					replace-iterated-consonant-with-palatal-and-consonant.regex \
+					remove-DNorm-tags.regex \
 					change-optionally-word_boundary_to_hyphen.regex
 
 # List any local filter xfscript files here:
