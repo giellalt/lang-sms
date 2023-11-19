@@ -894,7 +894,6 @@ given the proper use of these flags.
 * **@U.Cap.Obl@ ProperNoun ;** 
 * **@U.Cap.Opt@ ProperNoun ;** 
 
-* **VerbRoot ;** 
 * **Subjunction ;** 
 * **Conjunction ;** 
 * **Interjection ;** 

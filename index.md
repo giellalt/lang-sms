@@ -8,43 +8,32 @@
 
 This page documents the work on the [Skolt Sami language model](http://github.com/giellalt/lang-sms). 
 
+# Background
+
+Contributors to the Skolt Sami language model have been Jack Rueter, Eino Koponen, Trond Trosterud and Michael Rießler. 
+
 # Project documentation
 
-## Dynamic documentation
-
--   Source files:
-    - [stems  ](https://github.com/giellalt/lang-sms/tree/main/src/fst/stems/)
-    - [affixes](https://github.com/giellalt/lang-sms/tree/main/src/fst/affixes/)
-    - [twolc  ](https://github.com/giellalt/lang-sms/tree/main/src/fst/phonology.twolc)
-    - [syntax ](https://github.com/giellalt/lang-sms/tree/main/src/syntax/)
-    - [yaml   ](https://github.com/giellalt/lang-sms/tree/main/testt/src/gt-norm-yamls/)
--   Generation of:  
-    - [paradigms](http://giellatekno.uit.no/cgi/p-sms.fin.html)
-    - [text](http://giellatekno.uit.no/cgi/d-sms.fin.html)
 
 ## Testing
 
--   [Koeparadigmat oikolukua varten](KaikkiGeneroidutParadigmat.md)
--   [TestiAAttr](testit/TestiAAttr.md)
+- [Koeparadigmat oikolukua varten](KaikkiGeneroidutParadigmat.md)
+- [Table of attribute forms for testing](testit/TestiAAttr.md)
+- [Speller test results](speller-report.html).
 
 ## Meetings
 
--   2009:
-    -   [21.11.](meetings/21112009.md)
--   2013:
-    -    [13.8.](meetings/130826.md)
+-   2009: [21.11.](meetings/21112009.md)
+-   2013: [13.8.](meetings/130826.md)
 
 ## Using the analysers
 
--   In the terminal: analyse words by writing `usms`, generate with
-    `dsms`
--   For more info, see [How to use the morphological
-    parsers](/tools/docu-sme-manual.html)
+- [How to install Skolt Sami Keyboards](SkoltSamiKeyboards.md)
+- [How to use the morphological parsers](/tools/docu-sme-manual.html) (for North Sami, relevant for Skolt Sami as well)
+-   Online generation of [paradigms](http://giellatekno.uit.no/cgi/p-sms.fin.html)
+    and [text](http://giellatekno.uit.no/cgi/d-sms.fin.html)
 
-## Other documentation
 
-- [Skolt Sami Keyboards](SkoltSamiKeyboards.md)
-- Speller test result [here](speller-report.html).
 
 # In-source documentation
 

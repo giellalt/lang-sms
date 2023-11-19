@@ -13967,7 +13967,6 @@ given the proper use of these flags.
 * **@U.Cap.Obl@ ProperNoun ;** 
 * **@U.Cap.Opt@ ProperNoun ;** 
 
-* **VerbRoot ;** 
 * **Subjunction ;** 
 * **Conjunction ;** 
 * **Interjection ;** 
@@ -14456,11 +14455,15 @@ Toponyms
 
 This is where new words are added as lexc entries before they are 
 added to the xml source files.
-Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS "(eng) /(fin) /(rus) " ;
+The conversion is done as follows:
+1. Turn the entries into tab-separated format
+2. Run them through `src/scripts/newwords-to-xml.pl`
+3. Add the output to V_sms2x.xml
+
+Lexicon V_NEWWORDS is for ad-hoc adding of new entries
+- * test:test N_MUORR "for testing" ;  = dummy entry
 
 ADD VERBS BELOW
-
-This only contains one verb and will be removed.
 
 * * *
 
