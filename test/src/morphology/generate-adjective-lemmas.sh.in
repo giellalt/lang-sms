@@ -109,9 +109,12 @@ for f in $fsttype; do
         sed 's/$/+A+Der\/Comp+A+Sg+Nom/' $lemmas | $lookup_tool $generator_file.$suffix | \
           cut -f2 | grep -v "A+" | grep -v "^$" | sort -u >> $generated_lemmas.$f.txt		
 
-
 # Generer lemmaer i adjectives med +A+Attr, lagre i generated-adjectives
         sed 's/$/+A+Attr/' $lemmas | $lookup_tool $generator_file.$suffix | \
+          cut -f2 | grep -v "A+" | grep -v "^$" | sort -u >> $generated_lemmas.$f.txt		
+
+# Generer lemmaer i adjectives med +A+ABBR, lagre i generated-adjectives
+        sed 's/$/+A+ABBR/' $lemmas | $lookup_tool $generator_file.$suffix | \
           cut -f2 | grep -v "A+" | grep -v "^$" | sort -u >> $generated_lemmas.$f.txt		
 
 # Generer plurale lemmaer i filtered-adjectives med +N+Pl+Nom (som ikke lar seg generere med +A+Sg+Nom).
@@ -130,26 +133,36 @@ for f in $fsttype; do
 		sort -u -o $lemmas $lemmas 
 		sort -u -o $generated_lemmas.$f.txt $generated_lemmas.$f.txt 
 
-# Sammenlikne: Former som er i lemmalista med ikke i lista med genererte former,
-# lagre i missing_adjectives_lemmas.txt. Formene genereres med +A+Sg+Nom for enklere debugging.
-		comm -23 $lemmas $generated_lemmas.$f.txt |\
-		grep -v '^$' | sed 's/$/+A+Sg+Nom/' |\
-		$lookup_tool $generator_file.$suffix > $result_file.$f.txt
+        # Open the diff file in SubEthaEdit (if there is a diff):
+        LC_ALL=no_NO.UTF-8 comm -23 $lemmas $generated_lemmas.$f.txt > $result_file.$f.txt
 
-		# Open the diff file in SubEthaEdit (if there is a diff):
-		if [ -s $result_file.$f.txt ]; then
-			# Only open the failed lemmas in see if @SEE@ is defined:
-			if [ "$EXTEDITOR" ]; then
-				$EXTEDITOR $result_file.$f.txt
+        if [ -s $result_file.$f.txt ]; then
+            grep -v '^$' $result_file.$f.txt \
+              | sed 's/$/+A+Sg+Nom/' \
+              | $lookup_tool $generator_file.$suffix \
+              > $gen_result_file.$f.txt
+            # If we have an analyser, analyse the missing lemmas as well:
+            if test -e $analyser_file.$suffix ; then
+                grep -v '^$' $result_file.$f.txt \
+                  | $lookup_tool $analyser_file.$suffix \
+                  > $ana_result_file.$f.txt
+            fi
+            # Only open the failed lemmas in see if @SEE@ is defined:
+            if [ "$EXTEDITOR" ]; then
+                $EXTEDITOR $result_file.$f.txt
+                $EXTEDITOR $gen_result_file.$f.txt
+                $EXTEDITOR $ana_result_file.$f.txt
             else
                 echo "There were problem lemmas. Details in:"
                 echo "* $result_file.$f.txt    "
-			fi
-		    Fail=1
-		    echo "$f - FAIL"
-		    continue
-		fi
-	    echo "$f - PASS"
+                echo "* $gen_result_file.$f.txt"
+                echo "* $ana_result_file.$f.txt"
+            fi
+            Fail=1
+            echo "$f - FAIL"
+            continue
+        fi
+        echo "$f - PASS"
 	fi
 done
 
