@@ -23,7 +23,7 @@
 ###### Variables: #######
 POS=verbs
 ### in ###
-#source_file=${srcdir}/../../../src/fst/stems/${POS}.lexc
+
 source_file=${srcdir}/../../../src/fst/stems/V_sms2x.lexc
 generator_file=./../../../src/generator-gt-norm
 analyser_file=./../../../src/analyser-gt-norm
@@ -73,7 +73,7 @@ EXTEDITOR=@SEE@
 # (LEXICON| K |ENDLEX|\+Err\/Lex)
 
 @GTCORE@/scripts/extract-lemmas.sh \
-  --exclude '\+Neg' \
+  --exclude '(\+Neg|AB-DOT' \
 	$source_file > $lemmas
   
 
