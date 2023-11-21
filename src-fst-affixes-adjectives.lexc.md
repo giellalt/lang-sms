@@ -302,6 +302,7 @@ Class 12 Feist 163
 Sammallahti 2010: 151
 
 N›A derivation in +Der+Der/N2A
+
 1A (Feist 2011: 198-199)
 
 1B (Feist 2011: 198-199)

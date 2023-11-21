@@ -87,7 +87,7 @@ strong_geminate, short_vowel
 
 strong_geminate, short_vowel, palatalization
 * :%^PAL%>e SG-ILL ;		 paʹppe
-* +Der+Der/N2A+A:%^PAL N2A_LUOQSSI ;		 N»A: paʹppi
+* :%^PAL N2A_LUOQSSI ;		 N»A: paʹppi
 
 strong_geminate, long_vowel
 * :%^V2VV SG-ABE/ACC/GEN-PL-NOM ;	 paapp
@@ -159,7 +159,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * :%^V2VV%^XYY2XY SG-ABE/ACC/GEN ;		 põõrt
 * :%^V2VV%^XYY2XY PL-NOM ;		 põõrt
 * :%^PAL%>e SG-ILL ;		      		 põʹrtte
-* +Der+Der/N2A+A:%^PAL N2A_LUOQSSI ;		      	 põʹrtti
+* :%^PAL N2A_LUOQSSI ;		      	 põʹrtti
 * :%^V2VV%^XYY2XY%>â SG-LOC ;			 põõrtâst
 * :%^V2VV%^XYY2XY SG-COM_IN ;			 põõrtin
 * :%>â ESS/PAR ; 		  			 põrttân
@@ -222,7 +222,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * : SG-NOM ;	    				 autt
 * :%^V2VV%^XYY2XY SG-ABE/ACC/GEN ;		 aaut
 * :%^PAL%>e SG-ILL ;		      		 auʹtte
-* +Der+Der/N2A+A:%^PAL N2A_LUOQSSI ;			 auʹtte
+* :%^PAL N2A_LUOQSSI ;			 auʹtte
 * :%^V2VV%^XYY2XY%>â SG-LOC ;			 aautâst
 * :%^V2VV%^XYY2XY SG-COM_IN ;			 aautin
 * :%>â ESS/PAR ; 		  			 auttân
@@ -284,7 +284,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * : SG-NOM ;	    			 vahtt
 * :%^V2VV%^XYY2VY SG-ABE/ACC/GEN-PL-NOM ;  vaaut
 * :%^PAL%>e SG-ILL ;		      	 vaʹhtte
-* +Der+Der/N2A+A:%^PAL N2A_LUOQSSI ;		 vaʹhtti
+* :%^PAL N2A_LUOQSSI ;		 vaʹhtti
 * :%^V2VV%^XYY2VY%>â SG-LOC ;		 vaautâst
 * :%^V2VV%^XYY2VY SG-COM_IN ;		 vaautin
 * :%>â ESS/PAR ; 		  		 vahttân
@@ -342,7 +342,7 @@ similar_to:
 * : SG-NOM ;	    		 kuss
 * :%>â ESS/PAR ;     		 	 kussân
 * :%^PAL%>e SG-ILL ;    		 kuʹsse
-* +Der+Der/N2A+A:%^PAL N2A_LUOQSSI ;    		 kuʹssi
+* :%^PAL N2A_LUOQSSI ;    		 kuʹssi
 * :%^V2VV%^KK2GG SG-ABE/ACC/GEN-PL-NOM ;		 kuuzz
 * :%^V2VV%^KK2GG%>â SG-LOC ;	 kuuzzâ
 * :%^V2VV%^KK2GG SG-COM_IN ;	 kuuzzin
@@ -382,7 +382,7 @@ THIS IS NOT THE SAME AS N_MUORR
 * : SG-NOM ;	     			
 * :%^CCC2CC SG-ABE/ACC/GEN-PL-NOM ;	 ruõcc
 * :%^PAL%>e SG-ILL ;	       		 ruõʹcˈce
-* +Der+Der/N2A+A:%^PAL N2A_LUOQSSI ;	   	 ruõʹcˈci
+* :%^PAL N2A_LUOQSSI ;	   	 ruõʹcˈci
 * :%^CCC2CC%>â SG-LOC ;			 ruõccâst
 * :%^CCC2CC SG-COM_IN ;			
 * :%>â ESS/PAR ; 	   			
@@ -439,7 +439,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * : SG-NOM ;	    			 (1) čuõskk
 * :%^XYY2XY SG-ABE/ACC/GEN ;	 (2) čuõsk
 * :%^PAL%>e SG-ILL ;			 (3) čuõʹsǩǩe
-* +Der+Der/N2A+A:%^PAL N2A_LUOQSSI ;		  čuõʹsǩǩi
+* :%^PAL N2A_LUOQSSI ;		  čuõʹsǩǩi
 * :%^XYY2XY%>â SG-LOC ;			 (4) čuõskest
 * :%^XYY2XY SG-COM_IN ;		 (5) čuõskin
 * :%>â ESS/PAR ; 	    			 (6) čuõskkân
@@ -503,7 +503,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * : SG-NOM ;	    			 (1) ruõidd
 * :%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;	 (2) ruõid
 * :%^PAL%>e SG-ILL ;			 (3) ruõiʹdde
-* +Der+Der/N2A+A:%^PAL N2A_LUOQSSI ;		  ruõiʹddi
+* :%^PAL N2A_LUOQSSI ;		  ruõiʹddi
 * :%^XYY2XY%>â SG-LOC ;			 (4) ruõidest
 * :%^XYY2XY SG-COM_IN/PL-OBL ;		 (5) ruõidin
 * :%>â ESS/PAR ; 	    			 (6) ruõiddân
@@ -563,7 +563,7 @@ puåvv:puåvv
 * : SG-NOM ;	    			 (1) Sg.Nom: puåvv
 * :%^CC2C SG-ABE/ACC/GEN-PL-NOM ;		 (2) Pl.Nom: puåv
 * :%^PALE%^PAL%^CC2CCC%>e SG-ILL ;	 (3) Sg.Ill: pueʹvˈve
-* +Der+Der/N2A+A:%^PALE%^PAL%^CC2CCC N2A_LUOQSSI ;   N»A: pueʹvˈvi
+* :%^PALE%^PAL%^CC2CCC N2A_LUOQSSI ;   N»A: pueʹvˈvi
 * :%^CC2C%>â SG-LOC ;	       		 (4) Sg.Loc: puåvâst
 * :%^CC2C SG-COM_IN ;			 (5) Sg.Com: puåvin
 * :%>â ESS/PAR ; 	  			 (6) Ess: puåvvân
@@ -607,7 +607,7 @@ N_1Y-VWCC
 * : SG-NOM ;	    			 (1) Sg.Nom: liâkk
 * :%^KK2GG SG-ABE/ACC/GEN-PL-NOM ;		 (2) Pl.Nom: liâǥǥ
 * :%^PALE%^PAL%^CC2CCC%>e SG-ILL ;	 (3) Sg.Ill: lieʹǩˈǩe
-* +Der+Der/N2A+A:%^PALE%^PAL%^CC2CCC N2A_LUOQSSI ;   N»A: lieʹǩˈǩi
+* :%^PALE%^PAL%^CC2CCC N2A_LUOQSSI ;   N»A: lieʹǩˈǩi
 * :%^KK2GG%>â SG-LOC ;	       		 (4) Sg.Loc: liâǥǥâst
 * :%^KK2GG SG-COM_IN ;			 (5) Sg.Com: liâǥǥin
 * :%>â ESS/PAR ; 	  			 (6) Ess: liâkkân
@@ -668,7 +668,7 @@ siâkˈk:siâkˈk
 * : SG-NOM ;	    			   siâkˈk
 * :%^CCC2CC SG-ABE/ACC/GEN-PL-NOM ;	   siâkk
 * :%^PALE%^PAL%>e SG-ILL ;		   sieʹǩˈǩe
-* +Der+Der/N2A+A:%^PALE%^PAL N2A_LUOQSSI ;	   sieʹǩˈǩi
+* :%^PALE%^PAL N2A_LUOQSSI ;	   sieʹǩˈǩi
 * :%^CCC2CC%>â SG-LOC ;		 	   (4) Sg.Loc: siâkkâst
 * :%^CCC2CC SG-COM_IN ;			   (5) Sg.Com: siâkkin
 * :%>â ESS/PAR ; 	     (6) Ess: siâkˈkân
@@ -706,7 +706,7 @@ N_1Y-VWCCC
 * : SG-NOM ;	    			   smiâhˈh
 * : SG-ABE/ACC/GEN-PL-NOM ;	   smiâhˈh
 * :%^PALE%^PAL%>e SG-ILL ;		   smieʹhˈhe
-* +Der+Der/N2A+A:%^PALE%^PAL N2A_LUOQSSI ;	   smieʹhˈhi
+* :%^PALE%^PAL N2A_LUOQSSI ;	   smieʹhˈhi
 * :%>â SG-LOC ;		 	   (4) Sg.Loc: smiâhˈhâst
 * : SG-COM_IN ;			   (5) Sg.Com: smiâhˈhin
 * :%>â ESS/PAR ; 	     (6) Ess: smiâhˈhân
@@ -741,7 +741,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * : SG-NOM ;	      	 (1) Sg.Nom: sǩiâŋkk
 * :%^XYY2XY SG-ABE/ACC/GEN-PL-NOM ;   (2) Pl.Nom: sǩiâŋk
 * :%^PALE%^PAL%>e SG-ILL ;	    (3) Sg.Ill: sǩieʹŋǩǩe
-* +Der+Der/N2A+A:%^PALE%^PAL N2A_LUOQSSI ;    N»A: sǩieʹŋǩǩi
+* :%^PALE%^PAL N2A_LUOQSSI ;    N»A: sǩieʹŋǩǩi
 * :%^XYY2XY%>â SG-LOC ;   	    (4) Sg.Loc: sǩiâŋkâst
 * :%^XYY2XY SG-COM_IN ;		    (5) Sg.Com: sǩiâŋkin
 * :%>â ESS/PAR ; 	     		   	(6) Ess: sǩiâŋkkân
@@ -801,7 +801,7 @@ strong_geminate, short_vowel, no_palatalization, high_stem_vowel
 * :%>â ESS/PAR ;    		   tollân
 strong_geminate, short_vowel, palatalization, high_stem_vowel
 * :%^PAL%>e SG-ILL ;   	   toʹlle
-* +Der+Der/N2A+A:%^PAL N2A_LUOQSSI ;   	   toʹlli
+* :%^PAL N2A_LUOQSSI ;   	   toʹlli
 single_consonant, long_vowel, no_palatalization, high_stem_vowel
 * :%^V2VV%^CC2C SG-ABE/ACC/GEN ;	 tool
 * :%^V2VV%^CC2C PL-NOM ;	 tool
@@ -866,7 +866,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * : SG-NOM ;	    			 sijdd
 * :%^XYY2VY SG-ABE/ACC/GEN ;	 siid
 * :%^PAL%>e SG-ILL ;		      	 siʹjdde
-* +Der+Der/N2A+A:%^PAL N2A_LUOQSSI ;		 siʹjddi
+* :%^PAL N2A_LUOQSSI ;		 siʹjddi
 * :%^XYY2VY%>â SG-LOC ;			 siidâst
 * :%^XYY2VY SG-COM_IN ;		 siidin
 * :%^XYY2VY PL-NOM ;	 siid
@@ -932,7 +932,7 @@ N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 * :%^KK2GG SG-COM_IN ;			 saaǥǥin
 * :%^KK2GG SG-ABE/ACC/GEN-PL-NOM ;	 saaǥǥ
 * :%^VV2V%^PAL%>e SG-ILL ;	   	 šaʹǩǩe
-* +Der+Der/N2A+A:%^VV2V%^PAL N2A_LUOQSSI ;       saʹǩǩi
+* :%^VV2V%^PAL N2A_LUOQSSI ;       saʹǩǩi
 * : SG-NOM ;	       			 saakk
 * :%^KK2GG%>â SG-LOC ;			 saaǥǥâst
 * :â ESS/PAR ;    	   			 saakkân
@@ -973,7 +973,7 @@ THIS IS NOT THE SAME AS N_MUORR
 * : SG-NOM ;	     			
 * :%^KK2GG SG-ABE/ACC/GEN-PL-NOM ;	 luõzz
 * :%^PAL%^CC2CCC%>e SG-ILL ;	 	 luõʹsˈse
-* +Der+Der/N2A+A:%^PAL%^CC2CCC N2A_LUOQSSI ;	 luõʹsˈsi
+* :%^PAL%^CC2CCC N2A_LUOQSSI ;	 luõʹsˈsi
 * :%^KK2GG%>â SG-LOC ;			 luõzzâst
 * :%^KK2GG SG-COM_IN ;			
 * :%>â ESS/PAR ; 	   			
@@ -1035,7 +1035,7 @@ N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 * :%^CC2C SG-COM_IN ;		 paarin
 * :%^CC2C SG-ABE/ACC/GEN-PL-NOM ;	 paar
 * :%^VV2V%^PAL%>e SG-ILL ;      	 paʹrre
-* +Der+Der/N2A+A:%^VV2V%^PAL N2A_LUOQSSI ;       N»A: paʹrri
+* :%^VV2V%^PAL N2A_LUOQSSI ;       N»A: paʹrri
 * : SG-NOM ;	       		 paarr
 * :%^CC2C%>â SG-LOC ; 		 paarâst
 * :â ESS/PAR ;   	  		 paarrân
@@ -1134,7 +1134,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * : SG-NOM ;	    			 muõrr
 * :%^CC2C SG-ABE/ACC/GEN ;		 muõr
 * :%^PAL%^CC2CCC%>e SG-ILL ;    		 muõʹrˈre
-* +Der+Der/N2A+A:%^PAL%^CC2CCC N2A_LUOQSSI ;     N»A: muõʹrˈri
+* :%^PAL%^CC2CCC N2A_LUOQSSI ;     N»A: muõʹrˈri
 * :%^CC2C%>â SG-LOC ;	 		 muõrâst
 * :%^CC2C SG-COM_IN ;			 muõrin
 * :%>â ESS/PAR ; 	  			 muõrrân
@@ -1224,7 +1224,7 @@ similar_to: N_VUYHSS
 * :%^XYY2VY SG-COM_IN ;			 miõutin
 * :%^XYY2VY  SG-ABE/ACC/GEN-PL-NOM ;	 miõut
 * :%^PAL%>e SG-ILL ;	   	 miõʹhtte
-* +Der+Der/N2A+A:%^PAL N2A_LUOQSSI ;       miõʹhtti
+* :%^PAL N2A_LUOQSSI ;       miõʹhtti
 * : SG-NOM ;	       			 miõhtt
 * :%^XYY2VY%>â SG-LOC ;			 miõutâst
 * :â ESS/PAR ;    	   			 miõhttân
@@ -1265,7 +1265,7 @@ N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 * : SG-COM_IN ;			 riikkin
 * :  SG-ABE/ACC/GEN-PL-NOM ;	 riikk
 * :%^VV2V%^PAL%>e SG-ILL ;	   	 riʹǩǩe
-* +Der+Der/N2A+A:%^VV2V%^PAL N2A_LUOQSSI ;       riʹǩǩi CHECKME
+* :%^VV2V%^PAL N2A_LUOQSSI ;       riʹǩǩi CHECKME
 * : SG-NOM ;	       			 riikk
 * :%>â SG-LOC ;			 riikkâst
 * :â ESS/PAR ;    	   			 riikkân
@@ -1286,7 +1286,7 @@ N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 * :%^V2VV%^C2CC SG-COM_IN ;			 aʹsttriikkin
 * :%^V2VV%^C2CC  SG-ABE/ACC/GEN-PL-NOM ;	 aʹsttriikk
 * :%^PAL%^C2CC%>e SG-ILL ;	   	 aʹsttriʹǩǩe
-* +Der+Der/N2A+A:%^PAL%^C2CC N2A_LUOQSSI ;       aʹsttriʹǩǩi CHECKME
+* :%^PAL%^C2CC N2A_LUOQSSI ;       aʹsttriʹǩǩi CHECKME
 * : SG-NOM ;	       			 aʹsttrik
 * :%^V2VV%^C2CC%>â SG-LOC ;			 riikkâst
 * :%^V2VV%^C2CC%>â ESS/PAR ;    	   			 riikkân
@@ -1310,7 +1310,7 @@ similar-to: SYSTEEQM
 ## 2.1.3.3.1.3.4.1.3 Sg.Ill Weak Grade
 plaan:plaan
 * Yaml: **N-plaan**
-* +Der+Der/N2A+A:%^PAL N2A_LUOQSSI ;      N»A: plaaʹni
+* :%^PAL N2A_LUOQSSI ;      N»A: plaaʹni
 * +Der+Der/Dimin+N: N_MUORYZH-WITHOUT-PAL ;   paar-
 * +Der+Der/Dimin+N:%^PAL N_MUORYZH-WITH-PAL ;   paaʹr-
 
@@ -1320,7 +1320,7 @@ Sg_Ill="palatalization|e-final"
 
 lomaakk:lomaakk
 * Yaml: **N-lomaakk**
-* +Der+Der/N2A+A:%^PAL N2A_LUOQSSI ;      N»A: lomaaʹǩǩi CHECKME
+* :%^PAL N2A_LUOQSSI ;      N»A: lomaaʹǩǩi CHECKME
 * +Der+Der/Dimin+N: N_MUORYZH-WITHOUT-PAL ;   lomaakk-
 * +Der+Der/Dimin+N:%^PAL N_MUORYZH-WITH-PAL ;   lomaaʹǩǩ-
 
@@ -6156,7 +6156,7 @@ Used with words like juurd: jurddǥatta
 * +Err/GenreLeudd:a SG-ABE/ACC/GEN-PL-NOM ;  Leudd 2018-09-20
 * +Err/GenreLeudd:a SG-COM_N ;  Leudd 2018-09-20
 
-* +Der+Der/N2A+A: N2A_REAEB3H3HAI ;      N»A
+* : N2A_REAEB3H3HAI ;      N»A
 
 ### E-STEM-PX
 
