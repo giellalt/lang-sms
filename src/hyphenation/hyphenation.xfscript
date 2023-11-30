@@ -48,16 +48,21 @@ define A   [ a | A ] ;
 define E   [ e | E ] ;
 define I   [ i | I ] ;
 define Y   [ y | Y ]  ;
-define EO  [ e | E | o | O ] ;
-define EOA [ e | E | o | O | a | A ] ;
-define IAO [ i | I | a | A | o | O ] ;
-define Oslash   [ ø | Ø ] ; ! Renamed from Ø to avoid non-ASCII chars
-define UI  [ u | U | i | I ] ;
-! what about á, ä, â ?
+define OTilde   [ õ | Õ ] ; ! Renamed from Õ to avoid non-ASCII chars
+define AUmlaut	[ ä | Ä ] ;
+define ACircumflex  [ â | Â ] ;
+define ARing  [ å | Å ] ;
+define EDot  [ ẹ | Ẹ ] ;
+define SOFT  [ ʹ ] ;
+!define EO  [ e | E | o | O ] ; ! What are these for? 2023-11-30
+!define EOA [ e | E | o | O | a | A ] ;
+!define IAO [ i | I | a | A | o | O ] ;
+!define UI  [ u | U | i | I ] ;
 
-define UAAdipht     [ u á | U á | U Á ] ;
+define UACircumfdipht     [ u â | U â | U Â ] ;
 define IEdipht      [ i e | I e | I E ] ;
-define UOdipht      [ u o | U o | U O ] ;
+define UOTildedipht      [ u õ | U õ | U Õ ] ;
+!this far 2023-11-30
 !define EAdipht      [ e a | E a | E A ] ;
 !define OAdipht      [ o a | O a | O A ] ;
 !define OUdipht      [ o u | O u | O U ] ; ! jour-na-lis-sta
