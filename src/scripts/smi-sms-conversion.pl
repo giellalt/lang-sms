@@ -49,8 +49,18 @@ while(<>) {
 
 
 # names with Skolt Sami inflection
+	s/^Bahrain\+/!Bahrain\+/g;
+	s/^Benin\+/!Benin\+/g;
+	s/^Bhutan\+/!Bhutan\+/g;
+	s/^Egypt\+/!Egypt\+/g;
 	s/^Evangelium\+/!Evangelium\+/g ;
-
+	s/^Jamaica\+/!Jamaica\+/g;
+	s/^Japan\+/!Japan\+/g;
+	s/^Kamerun\+/!Kamerun\+/g;
+	s/^Kazakstan\+/!Kazakstan\+/g;
+	s/^Libanon\+/!Libanon\+/g;
+	s/^Liechtenstein\+/!Liechtenstein\+/g;
+	s/^Kirgisstan\+/!Kirgisstan\+/g;
 	
 # changing to WG inflection
 	s/^Valle ACCRA/Valle MOKKE/g ;
