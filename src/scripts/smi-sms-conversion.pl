@@ -30,6 +30,7 @@ while(<>) {
 	s/(NIKOSIIJA|ACCRA|SIJTE|HAWAII)(\-plc)/PROP_TRUUBA$2/g ;
 	s/(NIKOSIIJA|ACCRA|SIJTE|HAWAII)(\-sur)/PROP_TRUUBA$2/g ;
 	s/^([^+]*\+)/$1N+Prop+/g ;
+	s/C-FI-NEN-sur/PROP_ITKONEN_sur/g ;
 #	s/BALAK/LONDON/g ;
 #	s/SKANIK/SULLOT/g ;
 #	s/RONDANE-LOAN/BERN/g ;
