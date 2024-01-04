@@ -12319,8 +12319,10 @@ piiutâs+N+Sg+Nom **clothing/vaate**
 
 **Even syllabic nouns, for h>i** - kueʹhtt
 kueiʹt+Num+Sg+Gen **two/kaksi**
-* *kuâh0tt^PALE^PAL^XYY2IY*
+* *kuâh{ʹØ}tt^PALE^PAL^XYY2IY*
 * *kueiʹt0000*
+* ★*kuâh{ʹØ}tt^PALE^PAL^XYY2IY* (is not standard language)
+* ★*kuâhʹt0000* (is not standard language)
 
 **trisyllabic verbs and doer derivations, i>j** - used in
 * *valmštõõll{ʼØ}i^I2J>i*
@@ -12461,8 +12463,8 @@ täʹhtt+N+Pl+Gen: **bone/luu**
 * *tä^1VOW{ʹØ}h{ʹØ}tt^V2VV^VOWRaise^PAL^XYY2VY>i*
 * *taa0uʹt00000>i*
 kueiʹt+Num+Sg+Gen **two/kaksi**
-* *kuâh{ʹØ}tt^PALE^PAL^XYY2IY*
-* *kueiʹt0000*
+* *kuâ{ʹØ}h{ʹØ}tt^PALE^PAL^XYY2IY*
+* *kue0iʹt0000*
 uʹvdded+V+Ind+Prs+Pl3: **give/antaa**
 * *u^1VOW{ʹØ}v{ʹØ}dd^PAL>ed*
 * *u0ʹv0dd0>e*
