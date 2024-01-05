@@ -4944,13 +4944,13 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) jueʹlǧǧ Ess+Px..
 
 * :%^PALE%^PAL SG-ACC ;  Num+Sg+Acc: kueʹhtt
-* :%^PALE%^PAL%^XYY2IY SG-ABE ;  Num+Sg+Gen: kueiʹt
+* :%^PALE%^PAL%^XYY2IY SG-ABE ;  Num+Sg+Abe: kueiʹtʼtaa
 * :%^PALE%^PAL%^XYY2IY SG-GEN ;  Num+Sg+Gen: kueiʹt
 * :%^PALE%^PAL%^XYY2IY PL-NOM ;  Num+Pl+Nom: kueiʹt
 
-* :%^PALÕ%^PAL%^XYY2IY SG-ABE ;  Num+Sg+Gen: kueiʹt
-* :%^PALÕ%^PAL%^XYY2IY SG-GEN ;  Num+Sg+Gen: kueiʹt
-* :%^PALÕ%^PAL%^XYY2IY PL-NOM ;  Num+Pl+Nom: kueiʹt
+* +Err/Orth+Use/SpellNoSugg:%^VOWRaise%^PALÕ%^PAL%^XYY2IY SG-ABE ;  Num+Sg+Gen: kueiʹt
+* +Err/Orth+Use/SpellNoSugg:%^VOWRaise%^PALÕ%^PAL%^XYY2IY SG-GEN ;  Num+Sg+Gen: kueiʹt
+* +Err/Orth+Use/SpellNoSugg:%^VOWRaise%^PALÕ%^PAL%^XYY2IY PL-NOM ;  Num+Pl+Nom: kueiʹt
 
 e.g. +Sg+Acc+PxPl3
 e.g. +Use/NG+Sg+Loc+PxSg1
@@ -12420,8 +12420,8 @@ täʹhtt+N+Pl+Gen: **bone/luu**
 * *tä^1VOWh0tt^V2VV^VOWRaise^PAL^XYY2VY>i*
 * *taauʹt00000>i*
 kueiʹt+Num+Sg+Gen **two/kaksi**
-* *kuâh0tt^PALE^PAL^XYY2IY*
-* *kueiʹt0000*
+* *kuâ{ʹØ}h{ʹØ}tt^PALE^PAL^XYY2IY*
+* *kue0iʹt0000*
 siõrrâd+V+Ind+Prs+Pl3: **play/leikkiä**
 * *siõ0r0r^VOWLower^PALÄ^PAL^CC2CCC>e*
 * *seäʹrˈr0000>e*
