@@ -1,0 +1,35 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-dict-gt-norm.hfst
+    Morph: ../../../src/analyser-dict-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-dict-gt-norm.xfst
+    Morph: ../../../src/analyser-dict-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Noun - papp â-stem : # Noun 'priest/pappi' - full paradigm
+     papp+N+Sg+Nom: papp
+     papp+N+Sg+Gen: paapp
+     papp+N+Sg+Acc: paapp
+     papp+N+Sg+Ill: paʹppe
+     papp+N+Sg+Loc: paappâst
+     papp+N+Sg+Loc+PxSg3: papstes
+     papp+N+Sg+Com: paappin
+     papp+N+Ess: pappân
+     papp+N+Par: pappâd
+     papp+N+Sg+Abe: [paapptaa, paapptää]
+     papp+N+Pl+Nom: paapp
+     papp+N+Pl+Gen: paappi
+     papp+N+Pl+Acc: paappid
+     papp+N+Pl+Ill: paappid
+     papp+N+Pl+Loc: paappin
+     papp+N+Pl+Com: paappivuiʹm
+     papp+N+Pl+Abe: [paappitaa, paappitää]
+     papp+N+Der/Dimin+N+Sg+Nom: paappâž
