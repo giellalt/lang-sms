@@ -1880,6 +1880,7 @@ tuâjj+N+Cmp/SgNom+Cmp#joukk+N+Sg+Nom:  **team/työryhmä**
 * *tuâjj-joukk*
 * ★*tuâjj#joukk* (is not standard language)
 * ★*tuâjj#joukk* (is not standard language)
+
 sääʹmm+N+Cmp/SgGen+Cmp#musikk+N+Sg+Nom: **Skolt Sámi music/kolttamusiikki**
 sää0mm^PAL^CC2C{-Ø}#musikk
 sääʹm000-#musikk
