@@ -248,12 +248,12 @@ Sets
 
 Ltrs = Vow Cns ;    !!≈ * @CODE@
 
-Dummy = %^PAL %^PALE %^PALẸ %^PALÕ %^PALÄ       !!≈ * @CODE@
+Dummy = %^PAL %^PALE %^PALẸ %^PALÕ %^PALÄ %^PALK       !!≈ * @CODE@
  %^CC2C %^CCC2C %^CCC2CC %^XYY2IY %^XYY2XY      !!≈   @CODE@
  %^KK2GG %^XYY2VY %^KKK2GG %^KKK2ZERO %^C2CC    !!≈   @CODE@
  %^J2I %^Pen %^V2VV %^VOWLower %^RmVow          !!≈   @CODE@
  %^PenVow2a %^RmCns %^VC %^V2VV                 !!≈   @CODE@
- %^VOWRaise %^VOWSH %^CLong %^K2GG ;            !!≈   @CODE@ - triggers in Sg.Nom and Sg.Gen
+ %^VOWRaise %^VOWSH %^CLong %^K2GG %> ;            !!≈   @CODE@ - triggers in Sg.Nom and Sg.Gen (Note word-final right arrow bracket 2024-01-10)
 
 
 
@@ -265,7 +265,7 @@ Definitions
 
 
 !! Onset consonant or word boundary
-OnSetC = [[%{XC%}:Cns|Cns:Cns] (Cns:|%{XC%}:Cns) |.#.|#:|%>|»] ;     
+OnSetC = [[%{XC%}:Cns|Cns:Cns] (Cns:|%{XC%}:Cns) |.#.|(∑) #:|%>|»] ;     
 !! `OnSetC = [[%{XC%}:Cns\|Cns:Cns] (Cns:\|%{XC%}:Cns) \|.#.\|#:\|%>\](») ;`
 
 !! Penultimate consonant
@@ -277,7 +277,7 @@ PenUltCns = [Cns:|%{XC%}:] ;
 
 !! <!-- {% raw %} -->
 !! ```
-RBound = [(%^Hyphen: %-|%^NoHyphen:|%{%-Ø%}:) #:|.#.|%>|»|%-] ; !!≈ * @CODE@
+RBound = [(%^Hyphen: %-|%^NoHyphen:|%{%-Ø%}:) (∑) #:|.#.|%>|»|%-] ; !!≈ * @CODE@
 !! ```
 !! <!-- {% endraw %} -->
 
@@ -372,7 +372,7 @@ CNeutrGrade = [([(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:] |[%^C2CC:] |%
 NeutrGrade = [VNeutrGrade |CNeutrGrade] ; 
 !! `NeutrGrade = [VNeutrGrade \](CNeutrGrade) ; `
 
-NoVowRaise = \[ %^VOWRaise: | #]* [#|.#.] ;
+NoVowRaise = \[ %^VOWRaise: | #]* [(∑) #|.#.] ;
 !! `NoVowRaise = \[ %^VOWRaise: \| #]* [#\](.#.) ;`
 
 NoCnsDummy = \[ %^CC2C: | %^CCC2C: | %^CCC2CC: | %^XYY2IY: | %^XYY2XY: | %^KK2GG: | %^XYY2VY: | %^KKK2GG: | %^KKK2ZERO: | %^C2CC: | %^J2I: | %^RmCns: | %^K2GG: | # ]* ;
@@ -1488,7 +1488,7 @@ OnSetC [i|I] _ ((%{ʹØ%}:) h:|u) (%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) C
  OnSetC [o:u|u] _ (ʹ:|0:ʹ|%{ʹØ%}:) Cns: Cns:* (%^Pen: [(%^Allegro:) (%^PAL:) %^CC2C:|(%^Allegro:) (%^PAL:) %^CC2CAllegro:]) %^V2VV: ((%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:|%^PALNo:) [%^C2CC: | %^K2GG:] ;
  OnSetC o:u     _ (i) (ʹ:|0:ʹ|%{ʹØ%}:) Cns: Cns:*  %^V2VV:  %^VOWRaise:  ;
  OnSetC u (i)   _ (ʹ:|0:ʹ|%{ʹØ%}:) Cns: Cns:*  %^V2VV: BetweenVowHeightAndMorph ;
-         Cns: u _ (ʹ:|0:ʹ|%{ʹØ%}:)  CNoV: Vow: Cns:+ (%{XC%}:)  %^Pen: %^V2VV: [%>|(%^Hyphen: %- |%^NoHyphen:|%{%-Ø%}:) #:|.#.|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:] ;
+         Cns: u _ (ʹ:|0:ʹ|%{ʹØ%}:)  CNoV: Vow: Cns:+ (%{XC%}:)  %^Pen: %^V2VV: [%>|(%^Hyphen: %- |%^NoHyphen:|%{%-Ø%}:) (∑) #:|.#.|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:] ;
               u _ (ʹ:|0:ʹ|%{ʹØ%}:) (i) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  Vow: Cns:* %^Pen: %^V2VV: ;
 
 !! tuuibâl+N+Sg+Nom: ****
@@ -1780,14 +1780,14 @@ e:  _ (%{ʹØ%}: h:|%{ʹØ%}: v:|i|u) [:ʹ|%{ʹØ%}:ʹ]  [Cns:+ (%{XC%}:)|Cns:+ 
 !! kueiʹt+Num+Sg+Gen **two/kaksi**
 !!€ kuâ{ʹØ}h{ʹØ}tt^PALE^PAL^XYY2IY
 !!€ kue0iʹt0000
-    _ v  %{ʹØ%}:0 [ʒ ʒ:|ǯ ǯ:|d d:|l l:| n n:|r r:|j j:]       BetweenStemAndPALNo  %^PAL: [%>:|#] ;
+    _ v  %{ʹØ%}:0 [ʒ ʒ:|ǯ ǯ:|d d:|l l:| n n:|r r:|j j:]       BetweenStemAndPALNo  %^PAL: [%>:| (∑) #] ;
 !! uʹvdded+V+Ind+Prs+Pl3: **give/antaa**
 !!€ u^1VOW{ʹØ}v{ʹØ}dd^PAL>ed
 !!€ u0ʹv0dd0>e
 !! tuʹvnn+N+Sg+Nom: ****
 !! € tu^1VOW{ʹØ}v{ʹØ}nn^PAL
 !! € tu0ʹv0nn0
-            _  h: (:ˈ) %{ʹØ%}: [c c:|č č:|s s:|š š:|t t:]  BetweenStemAndPALNo  %^PAL: [%>|#] ;
+            _  h: (:ˈ) %{ʹØ%}: [c c:|č č:|s s:|š š:|t t:]  BetweenStemAndPALNo  %^PAL: [%>| (∑) #] ;
 !! täʹhtt+N+Pl+Nom: **bone/luu**
 !!€ tä^1VOW{ʹØ}h{ʹØ}tt^PAL
 !!€ tääuʹt0000
@@ -1826,9 +1826,9 @@ e:  _ (%{ʹØ%}: h:|%{ʹØ%}: v:|i|u) [:ʹ|%{ʹØ%}:ʹ]  [Cns:+ (%{XC%}:)|Cns:+ 
 !!€ jeeʹ000el000000
 !!€ seäh{ʹØ}tter^Pen^PALE^Pen^PAL^Pen^XYY2VY
 !!€ seeuʹt0er000000
-    _ v  %{ʹØ%}:0 [ʒ ʒ:|ǯ ǯ:|d d:|g: g:|l l:|r r:|j j:] Vow: Cns* PenBetweenStemAndPALNo %^Pen: %^PAL: [%>:|#] ;
+    _ v  %{ʹØ%}:0 [ʒ ʒ:|ǯ ǯ:|d d:|g: g:|l l:|r r:|j j:] Vow: Cns* PenBetweenStemAndPALNo %^Pen: %^PAL: [%>:| (∑) #] ;
 
-    _  h: %{ʹØ%}:0 [c c:|č č:|s s:|š š:|t t:] Vow: Cns*  PenBetweenStemAndPALNo %^Pen: %^PAL: [%>|#] ;
+    _  h: %{ʹØ%}:0 [c c:|č č:|s s:|š š:|t t:] Vow: Cns*  PenBetweenStemAndPALNo %^Pen: %^PAL: [%>|(∑) #] ;
 !! huʹvǧǧi+N+Sg+Nom: **rattle/suhistin**
 !!€ hu^1VOW{ʹØ}v{ʹØ}ggi^Pen^PAL
 !!€ hu0ʹv0ǧǧi00
