@@ -11503,12 +11503,12 @@ End of alphabet definitions
 
 * Ltrs = Vow Cns ;
 
-* Dummy = %^PAL %^PALE %^PALẸ %^PALÕ %^PALÄ
+* Dummy = %^PAL %^PALE %^PALẸ %^PALÕ %^PALÄ %^PALK
   %^CC2C %^CCC2C %^CCC2CC %^XYY2IY %^XYY2XY
   %^KK2GG %^XYY2VY %^KKK2GG %^KKK2ZERO %^C2CC
   %^J2I %^Pen %^V2VV %^VOWLower %^RmVow
   %^PenVow2a %^RmCns %^VC %^V2VV
-  %^VOWRaise %^VOWSH %^CLong %^K2GG ; - triggers in Sg.Nom and Sg.Gen
+  %^VOWRaise %^VOWSH %^CLong %^K2GG %> ; - triggers in Sg.Nom and Sg.Gen (Note word-final right arrow bracket 2024-01-10)
 
 ## Definitions
 
@@ -11524,7 +11524,7 @@ following morpheme or word boundary
 
 <!-- {% raw %} -->
 ```
-* RBound = [(%^Hyphen: %-|%^NoHyphen:|%{%-Ø%}:) #:|.#.|%>|»|%-] ;
+* RBound = [(%^Hyphen: %-|%^NoHyphen:|%{%-Ø%}:) (∑) #:|.#.|%>|»|%-] ;
 ```
 <!-- {% endraw %} -->
 
@@ -12492,6 +12492,10 @@ tää%{ʹØ}ss+N+Sg+Gen: **level/taso**
 * *jo0ʹtt000>e*
 * *kuâ{ʹØ}ll^PALE^PAL*
 * *kueʹll00*
+* *veä{ʹØ}kˈk^PAL*
+* *veäʹǩˈǩ0*
+* ★*veä{ʹØ}kˈk^PAL* (is not standard language)
+* ★*veäʹkˈk0* (is not standard language)
 * *stu^1VOW{VU}{ʹØ}l^PAL*
 * *stu0uʹl0*
 * *čââʹlmtẹ^1VOW{ʹØ}m^PAL*
