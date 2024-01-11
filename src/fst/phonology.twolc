@@ -338,6 +338,7 @@ BetweenStemAndRightArrow = [NeutrVowLenghtHeightDiphPalAllegroPAL BetweenPALNoAn
 PenNeutrVowLength = [(%^Pen: %^VV2V: |%^Pen: %^V2VV:)] ;
 PenNeutrVowHeight = [(%^Pen: %^VOWRaise:|%^Pen: %^VOWLower:)] ;
 PenNeutrDiphPALTint = [(%^Pen: %^PALÄ:|%^Pen: %^PALE:|%^Pen: %^PALẸ:|%^Pen: %^PALÕ:|%^Pen: %^PALÂ:|%^Pen: %^PALI:)] ;
+PenAllegro = [(%^Pen: %^Allegro:|%^Pen: %^CC2CAllegro:|%^Pen: %^CCC2CAllegro:|%^Pen: %^KK2GAllegro:|%^Pen: %^K2GAllegro:)];
 
 PenBetweenStemAndPALNo = [PenNeutrVowLength PenNeutrVowHeight (%^Pen: %^Allegro:) ] ;
 
@@ -396,7 +397,7 @@ Rules
 "Vowel shortening â:0"
 !! **@RULENAME@** - used in
  â:0 <=>
-      [â:â|â:õ] _ (i|u) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ (PenUltCns) (Vow: Cns:+ (PenUltCns) %^Pen:)  %^VV2V:  ;
+      [â:â|â:õ] _ (i|u) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ (PenUltCns) (Vow: (0:) Cns:+ (PenUltCns) %^Pen:)  %^VV2V:  ;
     [OnSetC|PenUltCns|»]   _ (:ʼ|%{ʼØ%}:) [Cns:+|i:|n j|l m|s k:|s ǩ:|s t|š k:|š ǩ:|š m] PenBetweenStemAndVowelLoss %^RmVow: ;
 
 !Not needed here
@@ -416,7 +417,7 @@ Rules
 "Vowel shortening ẹ:0"
 !! **@RULENAME@** - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
  ẹ:0 <=>
-   OnSetC ẹ: _ (u|i) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ (PenUltCns) (Vow: Cns:+ (PenUltCns) %^Pen:) %^VV2V:  ;
+   OnSetC ẹ: _ (u|i) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ (PenUltCns) (Vow: (0:) Cns:+ (PenUltCns) %^Pen:) %^VV2V:  ;
 !! teevvad+V+Prt+4:
 !!€ tẹẹvv^VV2V^VOWRaise>uš
 !!€ ti0vv00>uš
@@ -426,7 +427,7 @@ Rules
 "Vowel shortening e:0"
 !! **@RULENAME@** - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
  e:0 <=>
-    e:  _ (i|u) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+  (PenUltCns) (Vow: Cns:+ (PenUltCns) %^Pen:) %^VV2V:  ;
+    e:  _ (i|u) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+  (PenUltCns) (Vow: (0:) Cns:+ (PenUltCns) %^Pen:) %^VV2V:  ;
 
 !! eʹǩrded+V+Inf
 !!€ eeʹǩǩerd^Pen^VV2V^Pen^CC2C^RmVow>ed
@@ -446,7 +447,8 @@ Rules
 "Vowel shortening å:0"
 !! **@RULENAME@** - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
  å:0 <=>
-  å: _ (i|u) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ (PenUltCns) (Vow: Cns:+ %^Pen:) %^VV2V:  ;
+  å: _ (i|u) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ (PenUltCns) (Vow: (0:) Cns:+ %^Pen:) %^VV2V:  ;
+!  å: _ (i|u) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ (PenUltCns) (Vow: Cns:+ %^Pen:) %^VV2V:  ;
 !! jååʹtted+V+Ind+Prt+Pl3 **trekk**
 !!€ jåå{ʹØ}tt^VV2V^VOWRaise^PAL>e
 !!€ jo0ʹtt000>e
@@ -466,7 +468,7 @@ Rules
 "Vowel shortening õ:0"
 !! **@RULENAME@** - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
  õ:0 <=>
-  õ: _ (i|u) (ʹ:|0:ʹ|%{ʹØ%}:) PenUltCns+ (Vow: Cns:+ (PenUltCns) %^Pen:) %^VV2V:  ;
+  õ: _ (i|u) (ʹ:|0:ʹ|%{ʹØ%}:) PenUltCns+ (Vow: (0:) Cns:+ (PenUltCns) %^Pen:) %^VV2V:  ;
 !!€ mõõ{ʹØ}nn^VV2V^PAL>e
 !!€ mõ0ʹnn00>e
 !!€ mõõ{ʹØ}nn^VV2V^VOWLower^PAL>e
@@ -495,7 +497,7 @@ Rules
 "Vowel shortening u:0"
 !! **@RULENAME@** - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
  u:0 <=>
-  u: _ (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ (PenUltCns) (Vow: Cns:+ (PenUltCns) %^Pen:) %^VV2V: ;
+  u: _ (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ (PenUltCns) (Vow: (0:) Cns:+ (PenUltCns) %^Pen:) %^VV2V: ;
 
       Cns:+ (%{XC%}:)  _ Cns:+ PenBetweenStemAndVowelLoss %^RmVow: ;
 !! mainstummuš+N+Sg+Ill: **story telling/tarinointi**
@@ -515,7 +517,7 @@ Rules
 !! **@RULENAME@** - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
  i:0 <=>
     i: _ (u) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ %^VV2V: ;
-    i: _ (u) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ (PenUltCns) Vow: Cns:+ (PenUltCns) %^Pen: %^VV2V: ;
+    i: _ (u) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ (PenUltCns) Vow: (0:) Cns:+ (PenUltCns) %^Pen: %^VV2V: ;
 !! viikkâd+V+Ind+Prs+Pl3
 !!€ vii{ʹØ}kk^VV2V^VOWLower^PAL>e
 !!€ ve0ʹǩǩ000>e
@@ -544,7 +546,7 @@ Rules
 "Vowel shortening o:0"
 !! **@RULENAME@** - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
  o:0 <=>
-    o: _ (i|u) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ (PenUltCns) (Vow: Cns:+ (PenUltCns) %^Pen:) %^VV2V: ;
+    o: _ (i|u) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ (PenUltCns) (Vow: (0:) Cns:+ (PenUltCns) %^Pen:) %^VV2V: ;
 !! šoomm+N+Sg+Ill
 !!€ šoomm^VV2V^VOWRaise>u
 !!€ šu0mm00>u
@@ -572,7 +574,7 @@ Rules
 "Vowel shortening a:0 "
 !! **@RULENAME@** - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
  a:0 <=>
-  a: _ (i|u) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ (PenUltCns) (Vow: Cns:+ (PenUltCns) %^Pen:) %^VV2V: ;
+  a: _ (i|u) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ (PenUltCns) (Vow: (0:) Cns:+ (PenUltCns) %^Pen:) %^VV2V: ;
 !!€ saa{ʹØ}kk^VV2V^PAL>e
 !!€ sa0ʹǩǩ00>e
 
@@ -590,6 +592,7 @@ Rules
 !! mättʼted+V+Inf: **teach/opettaa**
 !!€ mätta0t^RmVow>ed
 !!€ mätt0ʼt0>ed
+!tååpsast^Pen^VV2V^RmVow^PALK
   a: _ [c c| č č| k k|s s|š š] %^VV2V: ;
 
  _ %^UltRmVow: ;
@@ -598,7 +601,7 @@ Rules
 "Vowel shortening ä:0"
 !! **@RULENAME@** - used in +Ind+Prs+Pl3, +Ind+Prt+Pl3
  ä:0 <=>
-  ä: _ (i|u) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ (PenUltCns) (Vow: Cns:+ (PenUltCns) %^Pen:) %^VV2V: ;
+  ä: _ (i|u) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ (PenUltCns) (Vow: (0:) Cns:+ (PenUltCns) %^Pen:) %^VV2V: ;
   ä: _ [c c| č č| k k|s s|š š] %^VV2V: ;
 
 "%{ʼØ%} for modifier letter apostrophe"
@@ -652,7 +655,8 @@ Rules
      m BetweenStemAndRightArrow ( %>) Vow: _ m %^RmVow: ;
      n Vow: _ n %^RmVow: ;
      [s|š] Vow: _ :s %^RmVow: ;
-     [s s:|š š:] Vow: _ :s Cns:* PenNeutrVowLenghtHeightDiphPalAllegroPAL  %^RmVow: ;
+     [s (s:)|š (š:)] Vow: _ :s Cns:* PenNeutrVowLenghtHeightDiphPalAllegroPAL (%^Pen: %^CC2CAllegro:) %^RmVow: ;
+!     [s (s:)|š (š:)] Vow: _ :s Cns:* PenNeutrVowLenghtHeightDiphPalAllegroPAL %^RmVow: ;
      t (%>) Vow: _ t %^RmVow: ;
 !! mättʼted+V+Inf: **teach/opettaa**
 !!€ mätta0t^RmVow>ed
@@ -662,6 +666,9 @@ Rules
 !!€ puä0tt0>0ʼt0>0m0>en
 !!$ puä{ʹØ}tt^CC2CCC>at^RmVow>em^RmVow>en
 !!$ puä0tt0>0t0>0m0>en
+!! tåpsʼsted+V+Inf:
+!!€ tååpsa0st^Pen^VV2V^RmVow^PALK>ed
+!!€ tå0ps0ʼst0000>ed
 
      j Vow: _ j %^RmVow: ;
 !!jåʹttʼted+V+Inf
@@ -1709,55 +1716,55 @@ e:  _ (%{ʹØ%}: h:|%{ʹØ%}: v:|i|u) [:ʹ|%{ʹØ%}:ʹ]  [Cns:+ (%{XC%}:)|Cns:+ 
 
 
 
-"0:ʹ as transfer from left of v:u"
-!! **@RULENAME@** - used +Ind+Prs+Pl3, uʹvdded+V+Ind+Prs+Pl3: ouʹdde
-0:ʹ <=> v: (:ˈ) _ [ʒ ʒ:|ǯ ǯ:|d d:|l l:|r r:|j j:]       BetweenStemAndPALNo  %^PAL: [%^XYY2VY:|%^XYY2VYY:] ;
-!! uʹvdded+V+Ind+Prs+Pl3: **give/antaa**
-!!€ u^1VOWv0dd^VOWLower^PAL^XYY2VYY>e
-!!€ o0uʹdd000>e
-!!€ u^1VOWv0dd^PAL^XYY2VY
-!!€ u0uʹd000
-
-          v:u (:ˈ) _ [ʒ ʒ:|ǯ ǯ:|d d:|l l:|r r:|j j:]       BetweenStemAndPALNo  ( %^PAL:) RBound ;
-              h: (:ˈ) _ [c c:|č č:|s s:|š š:|t t:]  BetweenStemAndPALNo  %^PAL: [ %^XYY2VY: ] ;
-!              h: (:ˈ) _ [c c:|č č:|s s:|š š:|t t:]  BetweenStemAndPALNo  %^PAL: [ %^XYY2VY: |%^XYY2IY: ] ;
-!! täʹhtt+N+Pl+Nom: **bone/luu**
-!!€ tä^1VOWh0tt^V2VV^PAL^XYY2VY
-!!€ tääuʹt0000
-!! täʹhtt+N+Pl+Gen: **bone/luu**
-!!€ tä^1VOWh0tt^V2VV^VOWRaise^PAL^XYY2VY>i
-!!€ taauʹt00000>i
-!! kueiʹt+Num+Sg+Gen **two/kaksi**
-!!€ kuâ{ʹØ}h{ʹØ}tt^PALE^PAL^XYY2IY
-!!€ kue0iʹt0000
-             [Vow:|:Vow] (%^1VOW:) (i|u) (:ˈ) _ Cns:+ [Cns:*|%{XC%}:Cns|Cns:* (ˈ:|:ˈ) Cns:*] (i:) BetweenStemAndPALNo  %^PAL: ;
-!! siõrrâd+V+Ind+Prs+Pl3: **play/leikkiä**
-!!€ siõ0r0r^VOWLower^PALÄ^PAL^CC2CCC>e
-!!€ seäʹrˈr0000>e
-!!€ saa0kk^VV2V^PAL>e
-!!€ sa0ʹǩǩ00>e
-!! tääʹss+N+Sg+Gen: **level/taso**
-!!$ tää0ss^PAL^KK2GG
-!!$ tää0zz00
-!!€ mõõ0nn^VV2V^VOWLower^PAL>e
-!!€ mâ0ʹnn000>e
-!!€ jåå0tt^VV2V^VOWRaise^PAL>e
-!!€ jo0ʹtt000>e
-!!€ kuâ0ll^PALE^PAL
-!!€ kueʹll00
-!!€ stu^1VOW{VU}0l^PAL
-!!€ stu0uʹl0
-!!€ čââʹlmtẹ^1VOW0m^PAL
-!!€ čââʹlmte0ʹm0
-             [Vow:|:Vow] (%^1VOW:) (i|u|h:u|h:i) (:ˈ)  _ Cns:+ [Cns:*|%{XC%}:Cns|Cns:* (ˈ:|:ˈ) Cns:*] Vow: Cns:* PenBetweenStemAndPALNo (%^Pen: %^PALE:)  %^Pen: %^PAL: ;
-!!€ kä^1VOW0lles^Pen^V2VV^Pen^PAL
-!!€ kääʹlles0000
-!!€ jeä0kˈkel^Pen^PALE^Pen^PAL^Pen^KKK2ZERO
-!!€ jeeʹ000el000000
-!!€ seäh0tter^Pen^PALE^Pen^PAL^Pen^XYY2VY
-!!€ seeuʹt0er000000
-!! The left context allows for:
-!! Vowel shortening, and j/v > Vow
+!2024-01-11"0:ʹ as transfer from left of v:u"
+!2024-01-11!! **@RULENAME@** - used +Ind+Prs+Pl3, uʹvdded+V+Ind+Prs+Pl3: ouʹdde
+!2024-01-110:ʹ <=> v: (:ˈ) _ [ʒ ʒ:|ǯ ǯ:|d d:|l l:|r r:|j j:]       BetweenStemAndPALNo  %^PAL: [%^XYY2VY:|%^XYY2VYY:] ;
+!2024-01-11!! uʹvdded+V+Ind+Prs+Pl3: **give/antaa**
+!2024-01-11!!€ u^1VOW{ʹØ}v{ʹØ}dd^VOWLower^PAL^XYY2VYY>e
+!2024-01-11!!€ o00uʹdd000>e
+!2024-01-11!!€ u^1VOW{ʹØ}v{ʹØ}dd^PAL^XYY2VY
+!2024-01-11!!€ u00uʹd000
+!2024-01-11
+!2024-01-11          v:u (:ˈ) _ [ʒ ʒ:|ǯ ǯ:|d d:|l l:|r r:|j j:]       BetweenStemAndPALNo  ( %^PAL:) RBound ;
+!2024-01-11              h: (:ˈ) _ [c c:|č č:|s s:|š š:|t t:]  BetweenStemAndPALNo  %^PAL: [ %^XYY2VY: ] ;
+!2024-01-11!              h: (:ˈ) _ [c c:|č č:|s s:|š š:|t t:]  BetweenStemAndPALNo  %^PAL: [ %^XYY2VY: |%^XYY2IY: ] ;
+!2024-01-11!! täʹhtt+N+Pl+Nom: **bone/luu**
+!2024-01-11!!€ tä^1VOW{ʹØ}h{ʹØ}tt^V2VV^PAL^XYY2VY
+!2024-01-11!!€ tääuʹt0000
+!2024-01-11!! täʹhtt+N+Pl+Gen: **bone/luu**
+!2024-01-11!!€ tä^1VOW{ʹØ}h{ʹØ}tt^V2VV^VOWRaise^PAL^XYY2VY>i
+!2024-01-11!!€ taauʹt00000>i
+!2024-01-11!! kueiʹt+Num+Sg+Gen **two/kaksi**
+!2024-01-11!!€ kuâ{ʹØ}h{ʹØ}tt^PALE^PAL^XYY2IY
+!2024-01-11!!€ kue0iʹt0000
+!2024-01-11             [Vow:|:Vow] (%^1VOW:) (i|u) (:ˈ) _ Cns:+ [Cns:*|%{XC%}:Cns|Cns:* (ˈ:|:ˈ) Cns:*] (i:) BetweenStemAndPALNo  %^PAL: ;
+!2024-01-11!! siõrrâd+V+Ind+Prs+Pl3: **play/leikkiä**
+!2024-01-11!!€ siõ{ʹØ}r0r^VOWLower^PALÄ^PAL^CC2CCC>e
+!2024-01-11!!€ seäʹrˈr0000>e
+!2024-01-11!!€ saa{ʹØ}kk^VV2V^PAL>e
+!2024-01-11!!€ sa0ʹǩǩ00>e
+!2024-01-11!! tääʹss+N+Sg+Gen: **level/taso**
+!2024-01-11!!$ tää{ʹØ}ss^PAL^KK2GG
+!2024-01-11!!$ tää0zz00
+!2024-01-11!!€ mõõ{ʹØ}nn^VV2V^VOWLower^PAL>e
+!2024-01-11!!€ mâ0ʹnn000>e
+!2024-01-11!!€ jåå{ʹØ}tt^VV2V^VOWRaise^PAL>e
+!2024-01-11!!€ jo0ʹtt000>e
+!2024-01-11!!€ kuâ{ʹØ}ll^PALE^PAL
+!2024-01-11!!€ kueʹll00
+!2024-01-11!!€ stu^1VOW{VU}{ʹØ}l^PAL
+!2024-01-11!!€ stu0uʹl0
+!2024-01-11!!€ čââʹlmtẹ^1VOW{ʹØ}m^PAL
+!2024-01-11!!€ čââʹlmte0ʹm0
+!2024-01-11             [Vow:|:Vow] (%^1VOW:) (i|u|h:u|h:i) (:ˈ)  _ Cns:+ [Cns:*|%{XC%}:Cns|Cns:* (ˈ:|:ˈ) Cns:*] Vow: Cns:* PenBetweenStemAndPALNo (%^Pen: %^PALE:)  %^Pen: %^PAL: ;
+!2024-01-11!!€ kä^1VOW{ʹØ}lles^Pen^V2VV^Pen^PAL
+!2024-01-11!!€ kääʹlles0000
+!2024-01-11!!€ jeä{ʹØ}kˈkel^Pen^PALE^Pen^PAL^Pen^KKK2ZERO
+!2024-01-11!!€ jeeʹ000el000000
+!2024-01-11!!€ seäh{ʹØ}tter^Pen^PALE^Pen^PAL^Pen^XYY2VY
+!2024-01-11!!€ seeuʹt0er000000
+!2024-01-11!! The left context allows for:
+!2024-01-11!! Vowel shortening, and j/v > Vow
 
 "%{ʹØ%}:ʹ as transfer from left of v:u and all instances of modifier letter prime"
 !! **@RULENAME@** - used +Ind+Prs+Pl3, uʹvdded+V+Ind+Prs+Pl3: ouʹdde
@@ -2418,9 +2425,9 @@ e:  _ (%{ʹØ%}: h:|%{ʹØ%}: v:|i|u) [:ʹ|%{ʹØ%}:ʹ]  [Cns:+ (%{XC%}:)|Cns:+ 
 !! šapšš+N+Sg+Gen **white fish/siika**
 !!€ ša^1VOWpšš^V2VV^XYY2XY
 !!€ šaapš000
-       Vow: (%^1VOW:| %{ˈ1%}:) [ (ʹ:|0:ʹ|%{ʹØ%}:)  (Cns:) |(ʹ:|0:ʹ|%{ʹØ%}:) [h:|j:] (ʹ:|0:ʹ|%{ʹØ%}:) | [u|i] (ʹ:|0:ʹ|%{ʹØ%}:) ] š: (ˈ:) _ NeutrVowLenghtHeightDiphPalAllegroPAL (%^Allegro:) (%^PAL:) [%^CC2C:| %^CC2CAllegro:| %^CCC2CAllegro:|%^XYY2XY:|%^XYY2VY:] ;
-       Vow: (%^1VOW:| %{ˈ1%}:) [ (ʹ:|0:ʹ|%{ʹØ%}:)  (Cns:) |(ʹ:|0:ʹ|%{ʹØ%}:) [h:|j:] (ʹ:|0:ʹ|%{ʹØ%}:) | [u|i] (ʹ:|0:ʹ|%{ʹØ%}:) ] š: (ˈ:) _ Vow: Cns:* PenNeutrVowLenghtHeightDiphPalAllegroPAL (%^Pen: %^Allegro:) (%^Pen: %^PAL:) [%^Pen: %^CC2C:| %^Pen: %^CC2CAllegro:| %^Pen: %^CCC2CAllegro:|%^Pen: %^XYY2XY:|%^Pen: %^XYY2VY:] ;
-       Vow: (%^1VOW:| %{ˈ1%}:)  (ʹ:|0:ʹ|%{ʹØ%}:)  š:  _ NeutrVowLenghtHeightDiphPalAllegroPAL %^KK2GAllegro: ;
+       Vow: (%^1VOW:| %{ˈ1%}:|0:) [ (ʹ:|0:ʹ|%{ʹØ%}:)  (Cns:) |(ʹ:|0:ʹ|%{ʹØ%}:) [h:|j:] (ʹ:|0:ʹ|%{ʹØ%}:) | [u|i] (ʹ:|0:ʹ|%{ʹØ%}:) ] š: (ˈ:) _ NeutrVowLenghtHeightDiphPalAllegroPAL (%^Allegro:) (%^PAL:) [%^CC2C:| %^CC2CAllegro:| %^CCC2CAllegro:|%^XYY2XY:|%^XYY2VY:] ;
+       Vow: (%^1VOW:| %{ˈ1%}:|0:) [ (ʹ:|0:ʹ|%{ʹØ%}:)  (Cns:) |(ʹ:|0:ʹ|%{ʹØ%}:) [h:|j:] (ʹ:|0:ʹ|%{ʹØ%}:) | [u|i] (ʹ:|0:ʹ|%{ʹØ%}:) ] š: (ˈ:) _ Vow: Cns:* PenNeutrVowLenghtHeightDiphPalAllegroPAL (%^Pen: %^Allegro:) (%^Pen: %^PAL:) [%^Pen: %^CC2C:| %^Pen: %^CC2CAllegro:| %^Pen: %^CCC2CAllegro:|%^Pen: %^XYY2XY:|%^Pen: %^XYY2VY:] ;
+       Vow: (%^1VOW:| %{ˈ1%}:|0:)  (ʹ:|0:ʹ|%{ʹØ%}:)  š:  _ NeutrVowLenghtHeightDiphPalAllegroPAL %^KK2GAllegro: ;
 !! ruõšsted+V+Inf: ****
 !!€ ruõ{ˈ1%}ššâst^Pen^CC2CAllegro^RmVow>ed
 !!€ ruõˈš00st000>ed
@@ -2560,9 +2567,9 @@ e:  _ (%{ʹØ%}: h:|%{ʹØ%}: v:|i|u) [:ʹ|%{ʹØ%}:ʹ]  [Cns:+ (%{XC%}:)|Cns:+ 
 "Consonant loss s:0"
 !! **@RULENAME@** - used in
  s:0 <=>
-       Vow: (%^1VOW:| %{ˈ1%}:) [ (ʹ:|0:ʹ|%{ʹØ%}:)  Cns: |(ʹ:|0:ʹ|%{ʹØ%}:) [h:|j:] (ʹ:|0:ʹ|%{ʹØ%}:) | [u|i] (ʹ:|0:ʹ|%{ʹØ%}:) ] s: (ˈ:) _ NeutrVowLenghtHeightDiphPalAllegroPAL (%^Allegro:) (%^PAL:) [%^CC2C:| %^CC2CAllegro:| %^CCC2CAllegro:|%^XYY2XY:|%^XYY2VY:] ;
-       Vow: (%^1VOW:| %{ˈ1%}:) [ (ʹ:|0:ʹ|%{ʹØ%}:)  (Cns:) |(ʹ:|0:ʹ|%{ʹØ%}:) [h:|j:] (ʹ:|0:ʹ|%{ʹØ%}:) | [u|i] (ʹ:|0:ʹ|%{ʹØ%}:) ] s: (ˈ:) _ Vow: Cns:* PenNeutrVowLenghtHeightDiphPalAllegroPAL (%^Pen: %^Allegro:) (%^Pen: %^PAL:) [%^Pen: %^CC2C:|%^Pen: %^CC2CAllegro:| %^Pen: %^CCC2CAllegro:|%^Pen: %^XYY2XY:|%^Pen: %^XYY2VY: |%^Pen: %^KK2GAllegro: ] ;
-       Vow: (%^1VOW:| %{ˈ1%}:)  (ʹ:|0:ʹ|%{ʹØ%}:)  s:  _ NeutrVowLenghtHeightDiphPalAllegroPAL %^KK2GAllegro: ;
+       Vow: (%^1VOW:| %{ˈ1%}:|0:) [ (ʹ:|0:ʹ|%{ʹØ%}:)  Cns: |(ʹ:|0:ʹ|%{ʹØ%}:) [h:|j:] (ʹ:|0:ʹ|%{ʹØ%}:) | [u|i] (ʹ:|0:ʹ|%{ʹØ%}:) ] s: (ˈ:) _ NeutrVowLenghtHeightDiphPalAllegroPAL (%^Allegro:) (%^PAL:) [%^CC2C:| %^CC2CAllegro:| %^CCC2CAllegro:|%^XYY2XY:|%^XYY2VY:] ;
+       Vow: (%^1VOW:| %{ˈ1%}:|0:) [ (ʹ:|0:ʹ|%{ʹØ%}:)  (Cns:) |(ʹ:|0:ʹ|%{ʹØ%}:) [h:|j:] (ʹ:|0:ʹ|%{ʹØ%}:) | [u|i] (ʹ:|0:ʹ|%{ʹØ%}:) ] s: (ˈ:) _ Vow: (0:) Cns:* PenNeutrVowLenghtHeightDiphPalAllegroPAL (%^Pen: %^Allegro:) (%^Pen: %^PAL:) [%^Pen: %^CC2C:|%^Pen: %^CC2CAllegro:| %^Pen: %^CCC2CAllegro:|%^Pen: %^XYY2XY:|%^Pen: %^XYY2VY: |%^Pen: %^KK2GAllegro: ] ;
+       Vow: (%^1VOW:| %{ˈ1%}:|0:)  (ʹ:|0:ʹ|%{ʹØ%}:)  s:  _ NeutrVowLenghtHeightDiphPalAllegroPAL %^KK2GAllegro: ;
 
 !!€ sä^1VOWhss^V2VV^XYY2VY>am
 !!€ sääus000>am
@@ -2576,8 +2583,8 @@ e:  _ (%{ʹØ%}: h:|%{ʹØ%}: v:|i|u) [:ʹ|%{ʹØ%}:ʹ]  [Cns:+ (%{XC%}:)|Cns:+ 
        Vow: (%^1VOW:) (%{ˈ1%}:|ʹ) Cns _ [Vow: s Cns:+ PenNeutrVowLenghtHeightDiphPalAllegroPAL] [(%^Pen: %^Allegro:) (%^Pen: %^PAL:) %^Pen: %^CC2CAllegro: %^RmVow: | %^RmVow: ] ;
 
 !! ǩeäsʼsted+V+Inf:
-!!€ ǩeä{ˈ1}ssast^Pen^CC2CAllegro^RmVow^PALK>ed
-!!€ ǩeäˈs00st0000>ed
+!!€ ǩeä{ˈ1}ssa0st^Pen^CC2CAllegro^RmVow^PALK>ed
+!!€ ǩeäˈs00ʼst0000>ed
 !! âʹpsted+V+Inf: **smell a little/haiskahtaa**
 !!€ ââʹpsest^Pen^VV2V^RmVow
 !!€ â0ʹp00st000
@@ -2876,6 +2883,13 @@ e:  _ (%{ʹØ%}: h:|%{ʹØ%}: v:|i|u) [:ʹ|%{ʹØ%}:ʹ]  [Cns:+ (%{XC%}:)|Cns:+ 
 !NO2019-03-01 SurfaceDiphthong _ (ʹ:|0:ʹ|%{ʹØ%}:)     Cx:Cns Cx: (j) [ NeutrVowLenghtHeightDiphPalAllegroPAL (%^Allegro:) %^CC2CAllegro:| Vow: Cns:+ PenNeutrVowLenghtHeightDiphPalAllegroPAL %^Pen:  %^CC2CAllegro:] ;
 
 !NO2019-03-01          where Cx in (b c č ʒ ǯ d đ g ǧ ǥ j k ǩ l m n ŋ p r s š t v) matched ; 
+
+! SurfaceDiphthong _ (ʹ:|0:ʹ|%{ʹØ%}:) [b (ˈ:) b:| c: (ˈ:) c:| č: (ˈ:) č:| ʒ: (ˈ:) ʒ:| ǯ: (ˈ:) ǯ:| d (ˈ:) d:| đ (ˈ:) đ:| g: (ˈ:) g:| ǧ: (ˈ:) ǧ:| ǥ: (ˈ:) ǥ:| j (ˈ:) j:| k: (ˈ:) k:| ǩ: (ˈ:) ǩ:| l (ˈ:) l:| m (ˈ:) m:| n (ˈ:) n:| ŋ (ˈ:) ŋ:| p: (ˈ:) p:| r (ˈ:) r:| s: (ˈ:) s:| š: (ˈ:) š:| t: (ˈ:) t:| v (ˈ:) v:] 
+ SurfaceDiphthong _ (i) (ʹ:|0:ʹ|%{ʹØ%}:) Cns:+ Vow: (0:) Cns:+ %^Pen: [%^Allegro:|%^CC2CAllegro:|%^CCC2CAllegro:|%^XYY2XY:|%^XYY2VY: |%^KK2GAllegro:] ; 
+!Cns:+ (PenUltCns) (Vow: (0:) Cns:+ (PenUltCns) %^Pen:) %^VV2V:
+!ǩeäsʼsted+V:ǩeä%{ˈ1%}ssast TV_TEYPSTED
+!!€ kue0ʹstelm^Pen^Allegro^RmVow>a
+!!€ kueˈʹst0lm000>a
 
 !%{ˈ1%}
 "Diphthong extra short marker in vertical line ˈ character"
