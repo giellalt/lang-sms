@@ -2607,7 +2607,7 @@ VSUF-I-POTKOND_YD, VSUF-I-POTKOND_AD and VSUF-POTENTIAL_ED come here
 
 * LEXICON VSUF-IND-PRS-CONNEG_ED  (6)
 
-* +Use/NGminip+Use/NG+Der+Der/st+V:»st VSUF-VUEJTED-ELSE ;  no allegro
+* +Use/NGminip+Use/NG+Der+Der/st+V:%^Pen%^Allegro»st VSUF-VUEJTED-ELSE ;  no allegro
 
 * * *
 

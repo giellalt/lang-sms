@@ -7,7 +7,6 @@ The conversion is done as follows:
 
 Lexicon V_NEWWORDS is for ad-hoc adding of new entries
 - * test:test N_MUORR "for testing" ;  = dummy entry
-
 ADD VERBS BELOW
 
 * * *

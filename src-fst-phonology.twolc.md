@@ -471,6 +471,9 @@ pueʹtted+V+Der/jed+Der/Caus+Der/NomAct+N+Ess:
 * *puä0tt0>0ʼt0>0m0>en*
 * ★*puä{ʹØ}tt^CC2CCC>at^RmVow>em^RmVow>en* (is not standard language)
 * ★*puä0tt0>0t0>0m0>en* (is not standard language)
+tåpsʼsted+V+Inf:
+* *tååpsa0st^Pen^VV2V^RmVow^PALK>ed*
+* *tå0ps0ʼst0000>ed*
 
 * *ijss>0sa*
 * *ijss>ʼsa*
@@ -1127,49 +1130,6 @@ karies+N+Sg+Nom: **caries/hammasmätä**
 
 ### PALATALIZATION
 
-**0:ʹ as transfer from left of v:u** - used +Ind+Prs+Pl3, uʹvdded+V+Ind+Prs+Pl3: ouʹdde
-uʹvdded+V+Ind+Prs+Pl3: **give/antaa**
-* *u^1VOWv0dd^VOWLower^PAL^XYY2VYY>e*
-* *o0uʹdd000>e*
-* *u^1VOWv0dd^PAL^XYY2VY*
-* *u0uʹd000*
-
-täʹhtt+N+Pl+Nom: **bone/luu**
-* *tä^1VOWh0tt^V2VV^PAL^XYY2VY*
-* *tääuʹt0000*
-täʹhtt+N+Pl+Gen: **bone/luu**
-* *tä^1VOWh0tt^V2VV^VOWRaise^PAL^XYY2VY>i*
-* *taauʹt00000>i*
-kueiʹt+Num+Sg+Gen **two/kaksi**
-* *kuâ{ʹØ}h{ʹØ}tt^PALE^PAL^XYY2IY*
-* *kue0iʹt0000*
-siõrrâd+V+Ind+Prs+Pl3: **play/leikkiä**
-* *siõ0r0r^VOWLower^PALÄ^PAL^CC2CCC>e*
-* *seäʹrˈr0000>e*
-* *saa0kk^VV2V^PAL>e*
-* *sa0ʹǩǩ00>e*
-tääʹss+N+Sg+Gen: **level/taso**
-* ★*tää0ss^PAL^KK2GG* (is not standard language)
-* ★*tää0zz00* (is not standard language)
-* *mõõ0nn^VV2V^VOWLower^PAL>e*
-* *mâ0ʹnn000>e*
-* *jåå0tt^VV2V^VOWRaise^PAL>e*
-* *jo0ʹtt000>e*
-* *kuâ0ll^PALE^PAL*
-* *kueʹll00*
-* *stu^1VOW{VU}0l^PAL*
-* *stu0uʹl0*
-* *čââʹlmtẹ^1VOW0m^PAL*
-* *čââʹlmte0ʹm0*
-* *kä^1VOW0lles^Pen^V2VV^Pen^PAL*
-* *kääʹlles0000*
-* *jeä0kˈkel^Pen^PALE^Pen^PAL^Pen^KKK2ZERO*
-* *jeeʹ000el000000*
-* *seäh0tter^Pen^PALE^Pen^PAL^Pen^XYY2VY*
-* *seeuʹt0er000000*
-The left context allows for:
-Vowel shortening, and j/v > Vow
-
 **%{ʹØ%}:ʹ as transfer from left of v:u and all instances of modifier letter prime** - used +Ind+Prs+Pl3, uʹvdded+V+Ind+Prs+Pl3: ouʹdde
 uʹvdded+V+Ind+Prs+Pl3: **give/antaa**
 * *u^1VOWv{ʹØ}dd^VOWLower^PAL^XYY2VYY>e*
@@ -1671,8 +1631,8 @@ uhss+N+Sg+Gen **door**
 * *uus00*
 
 ǩeäsʼsted+V+Inf:
-* *ǩeä{ˈ1}ssast^Pen^CC2CAllegro^RmVow^PALK>ed*
-* *ǩeäˈs00st0000>ed*
+* *ǩeä{ˈ1}ssa0st^Pen^CC2CAllegro^RmVow^PALK>ed*
+* *ǩeäˈs00ʼst0000>ed*
 âʹpsted+V+Inf: **smell a little/haiskahtaa**
 * *ââʹpsest^Pen^VV2V^RmVow*
 * *â0ʹp00st000*
@@ -1856,6 +1816,9 @@ lookkmõš+N+Sg+Gen
 b c č ǯ d đ g ǧ k ǩ l m n p r s š t v also htˈt nˈnj
 * *kuâl0l^CC2CCC>a*
 * *kuâlˈl0>a*
+
+* *kue0ʹstelm^Pen^Allegro^RmVow>a*
+* *kueˈʹst0lm000>a*
 
 **Diphthong extra short marker in vertical line ˈ character** - used in +N+Sg+Ill
 **ciâlkâlm:ciâˈlklmest**

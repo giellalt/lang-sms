@@ -5102,9 +5102,9 @@ stemtype l-stem ääʹrešm:ääʹrešm
 * LEXICON N_KUEQDDELM  kueʹddelm:kueʹddelm
 * LEXICON NMN_KUEQDDELM  kueʹddelm:kueʹddelm
 * Yaml: **N-kueddelm** 
-* :%^Pen%^CC2C%^RmVow%>a SG-ILL ;  äʹršma
-* :%^Pen%^CC2C%^RmVow SG-ABE ;  CHECKME
-* :%^Pen%^CC2C%^RmVow VOONYS-STEM-PX ;  võnns-
+* :%^Pen%^CC2CAllegro%^RmVow%>a SG-ILL ;  äʹršma
+* :%^Pen%^CC2CAllegro%^RmVow SG-ABE ;  CHECKME
+* :%^Pen%^CC2CAllegro%^RmVow VOONYS-STEM-PX ;  võnns-
 
 * LEXICON N_CIYLKYLM  ciâlkâlm:ciâ%{ˈ1%}lkâlm
 * LEXICON NMN_CIYLKYLM  ciâlkâlm:ciâ%{ˈ1%}lkâlm
@@ -5137,7 +5137,7 @@ stemtype l-stem čeeuʹres:čeeuʹres
 * Yaml: **N-seeuter** 
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_JEEQEL  jeeʹel:jeäkˈkel
+* LEXICON N_JEEQEL  jeeʹel:jeä%{ʹØ%}kˈkel
 * LEXICON NMN_JEEQEL  jeeʹel:jeäkˈkel
 * Yaml: **N-jeeel** 
 * :%^Pen%^PALE%^Pen%^PAL%^Pen%^KKK2ZERO SG-NOM ;  jeeʹel
