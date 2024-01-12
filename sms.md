@@ -13096,6 +13096,8 @@ b c č ǯ d đ g ǧ k ǩ l m n p r s š t v also htˈt nˈnj
 * *kuâl0l^CC2CCC>a*
 * *kuâlˈl0>a*
 
+* *ǩeä0ssa0st^Pen^CC2CAllegro^RmVow^PALK>ed*
+* *ǩeäˈs00ʼst0000>ed*
 * *kue0ʹstelm^Pen^Allegro^RmVow>a*
 * *kueˈʹst0lm000>a*
 
