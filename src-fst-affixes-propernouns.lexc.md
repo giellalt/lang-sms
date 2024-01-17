@@ -3,7 +3,7 @@
 
 THE LEXICON *`OUTSIDE_LEXICONS`* ASSIGNS THE TAG +Attr
 
-* LEXICON PROP_SEM/MAL_TOOBDYLM  toobdâlm:toobdâlm
+* LEXICON PROP_TOOBDYLM_mal  toobdâlm:toobdâlm
 
 like KÕÕNJÂL 
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
@@ -24,12 +24,12 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 ## FORMS
 * Yaml: **N-kidd, N-soll, N-toll, N-vorr**
 strong_geminate, short_vowel, no_palatalization, high_stem_vowel 
-:%>â ESS ;    		  = * LEXICON PROP_SEM/MAL_TOOBDYLM  tollân
+:%>â ESS ;    		  = * LEXICON PROP_TOOBDYLM_mal  tollân
 strong_geminate, short_vowel, palatalization, high_stem_vowel
 single_consonant, long_vowel, no_palatalization, high_stem_vowel
-:%^V2VV%^CC2C SG-ABE/ACC/GEN-PL-NOM ;	= * LEXICON PROP_SEM/MAL_TOOBDYLM  tool
-:%^V2VV%^CC2C SG-COM_IN ;               = * LEXICON PROP_SEM/MAL_TOOBDYLM  toolin
-:%^V2VV%^CC2C PL-OBL ;	                = * LEXICON PROP_SEM/MAL_TOOBDYLM  tooli, toolid, toolid, toolin, toolivuiʹm, toolitaa
+:%^V2VV%^CC2C SG-ABE/ACC/GEN-PL-NOM ;	= * LEXICON PROP_TOOBDYLM_mal  tool
+:%^V2VV%^CC2C SG-COM_IN ;               = * LEXICON PROP_TOOBDYLM_mal  toolin
+:%^V2VV%^CC2C PL-OBL ;	                = * LEXICON PROP_TOOBDYLM_mal  tooli, toolid, toolid, toolin, toolivuiʹm, toolitaa
 
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
 ## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
@@ -49,8 +49,8 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 ## FORMS
 * Yaml: **N-kuss**
 
-R ;		= * LEXICON PROP_SEM/MAL_TOOBDYLM  kuss
-:%>â ESS ;     		 = * LEXICON PROP_SEM/MAL_TOOBDYLM  kussân
+R ;		= * LEXICON PROP_TOOBDYLM_mal  kuss
+:%>â ESS ;     		 = * LEXICON PROP_TOOBDYLM_mal  kussân
 
 * LEXICON PROP_VUYSPPOAQD  vuâsppåʹd:vuâsppå%^1VOWd
 
