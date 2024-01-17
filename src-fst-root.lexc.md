@@ -943,6 +943,8 @@ INCOMING _lemma:stem Contlex_ sets to be distinguished from glossing in progress
 
 NounRoot 
 
+VerbRoot 
+
 INTERJ_ 
 Interjections 
 

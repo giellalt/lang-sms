@@ -150,7 +150,7 @@ Imprt+Pl3
 * *viikkâd:* `viikkâd+V+Inf`
 * *viiǥǥam:* `viikkâd+V+Ind+Prs+Sg1`
 * *viiǥǥak:* `viikkâd+V+Ind+Prs+Sg2`
-* *vẹẹkk:* `viikkâd+V+Ind+Prs+Sg3`
+* *vẹẹkk:* `viikkâd+V+Ind+Prs+Sg3`
 * *viikkâp:* `viikkâd+V+Ind+Prs+Pl1`
 * *viikkveʹted:* `viikkâd+V+Ind+Prs+Pl2`
 * *veʹǩǩe* `:` (Eng. viikkâd+V+Ind+Prs+Pl3)
@@ -177,10 +177,10 @@ Imprt+Pl3
 * *viiǥǥče:* `viikkâd+V+Cond+Pl3`
 * *viiǥǥčeš:* `viikkâd+V+Cond+Sg4`
 * *viiǥǥ:* `viikkâd+V+Imprt+Sg2`
-* *vẹẹǥǥas:* `viikkâd+V+Imprt+Sg3`
+* *vẹẹǥǥas:* `viikkâd+V+Imprt+Sg3`
 * *viikkâp:* `viikkâd+V+Imprt+Pl1`
 * *viikkâd:* `viikkâd+V+Imprt+Pl2`
-* *vẹkkaz:* `viikkâd+V+Imprt+Pl3`
+* *vẹkkaz:* `viikkâd+V+Imprt+Pl3`
 * *viiǥǥ:* `viikkâd+V+Imprt+ConNeg`
 * *vikku:* `viikkâd+V+Imprt+ConNegII`
 * *viikkmen:* `viikkâd+V+Actio+Ess`
@@ -2041,7 +2041,6 @@ No Allegro (10) 2015-12-04
 * +Use/NGminip+Use/NG:%^VOWRaise%^PALE%^PAL FOR-VSUF-PRSPRC_ED ;  (11) pueʹtti
 * :%^VOWRaise%^PALÕ%^PAL FOR-VSUF-PRSPRC_ED ;  (11) puõʹtti
 
-* LEXICON V_JIEAQLLED  jieʹlled:jeä%{ʹØ%}ll
 * LEXICON IV_JIEAQLLED  jieʹlled:jeä%{ʹØ%}ll
 * LEXICON V0_JIEAQLLED  jieʹlled:jeä%{ʹØ%}ll
 like: V_PIEAQKHKHED
@@ -2428,7 +2427,6 @@ gradation: no
 
 ### CLASS 2 LOW VOWEL, NO PALATALIZATION
 * LEXICON V_VUEJTED  vuejted:vuejat
-* LEXICON TV_VUEJTED  vuejted:vuejat
 * LEXICON V0_VUEJTED  vuejted:vuejat
 
 * LEXICON V_KAEIGGSHED  käiggšed:käiggaš
