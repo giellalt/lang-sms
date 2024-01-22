@@ -213,7 +213,7 @@ Denne regelen fjerner Err/Orth når det er samme lemma, sjøl om morfologien er 
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/acronyms.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/affixes/acronyms.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/acronyms.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/affixes/acronyms.lexc)</small>
 
 ---
 
@@ -2203,7 +2203,7 @@ grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/adjectives.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/affixes/adjectives.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/adjectives.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/affixes/adjectives.lexc)</small>
 
 ---
 
@@ -2221,7 +2221,7 @@ grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/adverbs.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/affixes/adverbs.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/adverbs.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/affixes/adverbs.lexc)</small>
 
 ---
 
@@ -8413,7 +8413,7 @@ Used with words like juurd: jurddǥatta
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/nouns.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/affixes/nouns.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/nouns.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/affixes/nouns.lexc)</small>
 
 ---
 
@@ -8433,7 +8433,7 @@ Used with words like juurd: jurddǥatta
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/numerals.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/affixes/numerals.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/numerals.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/affixes/numerals.lexc)</small>
 
 ---
 
@@ -8552,7 +8552,7 @@ Completion needed 2015-09-19
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/pronouns.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/affixes/pronouns.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/pronouns.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/affixes/pronouns.lexc)</small>
 
 ---
 
@@ -8614,7 +8614,7 @@ R ;		= * LEXICON PROP_TOOBDYLM_mal  kuss
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/propernouns.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/affixes/propernouns.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/propernouns.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/affixes/propernouns.lexc)</small>
 
 ---
 
@@ -8647,7 +8647,7 @@ to sg forms in some cases. (substandard?)
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/smi-propernouns.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/affixes/smi-propernouns.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/smi-propernouns.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/affixes/smi-propernouns.lexc)</small>
 
 ---
 
@@ -8656,7 +8656,7 @@ to sg forms in some cases. (substandard?)
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/symbols.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/affixes/symbols.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/symbols.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/affixes/symbols.lexc)</small>
 
 ---
 
@@ -11271,7 +11271,7 @@ VSUF-I-POTKOND_YD, VSUF-I-POTKOND_AD and VSUF-POTENTIAL_ED come here
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/verbs.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/affixes/verbs.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/verbs.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/affixes/verbs.lexc)</small>
 
 ---
 
@@ -13133,7 +13133,7 @@ sääʹm000-#musikk
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/phonology.twolc](https://github.com/giellalt/lang-sms/blob/main/src/fst/phonology.twolc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/phonology.twolc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/phonology.twolc)</small>
 
 ---
 
@@ -14155,7 +14155,7 @@ SUF/A_
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/root.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/root.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/root.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/root.lexc)</small>
 
 ---
 
@@ -14233,7 +14233,7 @@ the sentnece can be considered as true cases.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/abbreviations.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/stems/abbreviations.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/abbreviations.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/stems/abbreviations.lexc)</small>
 
 ---
 
@@ -14249,7 +14249,7 @@ Not added yet to wiki
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/adjectives_newwords.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/stems/adjectives_newwords.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/adjectives_newwords.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/stems/adjectives_newwords.lexc)</small>
 
 ---
 
@@ -14267,7 +14267,7 @@ PREPOSITIONS
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/adpositions_newwords.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/stems/adpositions_newwords.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/adpositions_newwords.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/stems/adpositions_newwords.lexc)</small>
 
 ---
 
@@ -14283,7 +14283,7 @@ perintökieli
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/adverbs_newwords.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/stems/adverbs_newwords.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/adverbs_newwords.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/stems/adverbs_newwords.lexc)</small>
 
 ---
 
@@ -14295,7 +14295,7 @@ ADD PROPER ADVERBS BELOW
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/conjunctions_newwords.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/stems/conjunctions_newwords.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/conjunctions_newwords.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/stems/conjunctions_newwords.lexc)</small>
 
 ---
 
@@ -14398,7 +14398,7 @@ BUT have most of their Contlex values THIS has a separate DB DON'T TRANSLATE
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/exceptions.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/stems/exceptions.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/exceptions.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/stems/exceptions.lexc)</small>
 
 ---
 
@@ -14416,7 +14416,7 @@ Contlex value missing
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/nouns_newwords.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/stems/nouns_newwords.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/nouns_newwords.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/stems/nouns_newwords.lexc)</small>
 
 ---
 
@@ -14427,7 +14427,7 @@ Contlex value missing
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/numerals.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/stems/numerals.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/numerals.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/stems/numerals.lexc)</small>
 
 ---
 
@@ -14444,7 +14444,7 @@ These have been commented out 2015-11-13
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/particles_newwords.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/stems/particles_newwords.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/particles_newwords.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/stems/particles_newwords.lexc)</small>
 
 ---
 
@@ -14458,7 +14458,7 @@ CODED BY EINO AND JASKA
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/pronouns_newwords.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/stems/pronouns_newwords.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/pronouns_newwords.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/stems/pronouns_newwords.lexc)</small>
 
 ---
 
@@ -14481,7 +14481,7 @@ Perintökieli
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/propernouns_newwords.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/stems/propernouns_newwords.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/propernouns_newwords.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/stems/propernouns_newwords.lexc)</small>
 
 ---
 
@@ -14501,7 +14501,7 @@ The lexicon *ProperNoun* lists the proper nouns
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/sms-propernouns.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/stems/sms-propernouns.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/sms-propernouns.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/stems/sms-propernouns.lexc)</small>
 
 ---
 
@@ -14518,7 +14518,7 @@ Toponyms
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/toponyms_newwords.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/stems/toponyms_newwords.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/toponyms_newwords.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/stems/toponyms_newwords.lexc)</small>
 
 ---
 
@@ -14535,19 +14535,7 @@ ADD VERBS BELOW
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/verbs_newwords.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/stems/verbs_newwords.lexc)</small>
-
----
-
-
-
-Copy from smn starts here
-
-Copy from smn ends here
-
-* * *
-
-<small>This (part of) documentation was generated from [src/hyphenation/hyphenation.xfscript](https://github.com/giellalt/lang-sms/blob/main/src/hyphenation/hyphenation.xfscript)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/verbs_newwords.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/stems/verbs_newwords.lexc)</small>
 
 ---
 
@@ -14712,7 +14700,19 @@ retracted tongue root			_q
 
 * * *
 
-<small>This (part of) documentation was generated from [src/phonetics/txt2ipa.xfscript](https://github.com/giellalt/lang-sms/blob/main/src/phonetics/txt2ipa.xfscript)</small>
+<small>This (part of) documentation was generated from [src/fst/phonetics/txt2ipa.xfscript](https://github.com/giellalt/lang-sms/blob/main/src/fst/phonetics/txt2ipa.xfscript)</small>
+
+---
+
+
+
+Copy from smn starts here
+
+Copy from smn ends here
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/syllabification/hyphenation.xfscript](https://github.com/giellalt/lang-sms/blob/main/src/fst/syllabification/hyphenation.xfscript)</small>
 
 ---
 
@@ -14732,7 +14732,7 @@ For example:
 
 * * *
 
-<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-abbrevs2text.lexc](https://github.com/giellalt/lang-sms/blob/main/src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-abbrevs2text.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/transcriptions/transcriptor-abbrevs2text.lexc)</small>
 
 ---
 
@@ -14743,7 +14743,7 @@ This is still a dummy version, containing Skolt Saami.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-clock-digit2text.lexc](https://github.com/giellalt/lang-sms/blob/main/src/transcriptions/transcriptor-clock-digit2text.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-clock-digit2text.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/transcriptions/transcriptor-clock-digit2text.lexc)</small>
 
 ---
 
@@ -14755,7 +14755,7 @@ This is still a dummy version, containing South Saami.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-date-digit2text.lexc](https://github.com/giellalt/lang-sms/blob/main/src/transcriptions/transcriptor-date-digit2text.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-date-digit2text.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/transcriptions/transcriptor-date-digit2text.lexc)</small>
 
 ---
 
@@ -14765,7 +14765,7 @@ This is still a dummy version, containing South Saami.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-numbers-digit2text.lexc](https://github.com/giellalt/lang-sms/blob/main/src/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-numbers-digit2text.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
 
 ---
 
