@@ -25,13 +25,13 @@ morf_codes="+A+Sg+Nom \
             +A+Superl+Attr"
 
 # Lexicon source file for lexicons and lemmas:
-source_file=src/fst/stems/A_sms2x.lexc
+source_file=src/fst/morphology/stems/A_sms2x.lexc
 
 # Lexicons that should NOT be used to extract lemmas (egrep expression):
 exception_lexicons="(flagK)"
 
 # FST used for generation, MINUS suffix:
-generator_file=src/generator-gt-norm
+generator_file=src/fst/generator-gt-norm
 
 # How many lemmas maximally for each lexicon:
 lemmacount=10
