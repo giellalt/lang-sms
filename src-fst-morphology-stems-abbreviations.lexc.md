@@ -4,6 +4,7 @@
 ## Lexica for adding tags and periods
 
 Splitting in 4 + 1  groups, because of the preprocessor
+
 * **LEXICON Abbreviation   **
 1. The ITRAB ;	    lexicon (intransitive abbrs) Ltd.
 1. The TRNUMAB ;   lexicon (abbrs trans wrt. numerals)
