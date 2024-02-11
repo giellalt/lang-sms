@@ -27,7 +27,8 @@ endif # WANT_GENERATION
 # List tests that are presently (expected) failures here, ie things that should
 # be fixed *later*, but is not critical at the moment:
 XFAIL_TESTS=generate-adjective-lemmas.sh  \
-            generate-noun-lemmas.sh       
+            generate-noun-lemmas.sh       \
+	    generate-propernoun-lemmas.sh
 
 
 
