@@ -417,6 +417,9 @@ CLASS
 * LEXICON A_PUEAQRDES   čueʹcǩes:čuäckkez
 * :es A-01_PUEAQRDES ;   čueʹcǩes:čuäckkez
 
+* :%^Pen%^PALE%^Pen%^PAL%^Pen%^KKK2ZERO SG-NOM ;  jeeʹel
+* :%^Pen%^PALE%^Pen%^PAL%^Pen%^KKK2GG%^RmVow VOONYS-STEM-PX ;  võnns-
+
 * LEXICON A_TUEJJEEJA  tuejjeeja:tuejjẹẹja
 
 * LEXICON A_PRSPRC-EEI  tuejjeei:tuejjee
@@ -497,6 +500,8 @@ check this 2015-11-10
 
 CLASS 11 ADJECTIVES
 * LEXICON A_SHIYLGGYD  šiâlggâd:šiâlgg
+
+* LEXICON A_LOSSYD  lossâd:loss
 
 * LEXICON A_VISKKYD  viskkâd:viskk
 
@@ -5436,7 +5441,7 @@ NumContLex="1.113"
 * :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) äʹǩ-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) äʹǩǩ Ess+Px..
 
-* LEXICON N_SAAQMM  sääʹmm:säämm
+* LEXICON N_SAAQMM  sääʹmm:sää%{ʹØ%}mm
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
 ## 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
@@ -7365,7 +7370,7 @@ stemtype l-stem čeeuʹres:čeeuʹres
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
 * LEXICON N_JEEQEL  jeeʹel:jeä%{ʹØ%}kˈkel
-* LEXICON NMN_JEEQEL  jeeʹel:jeäkˈkel
+* LEXICON NMN_JEEQEL  jeeʹel:jeä%{ʹØ%}kˈkel
 * Yaml: **N-jeeel** 
 * :%^Pen%^PALE%^Pen%^PAL%^Pen%^KKK2ZERO SG-NOM ;  jeeʹel
 * :%^Pen%^PALE%^Pen%^PAL%^Pen%^KKK2GG%^RmVow VOONYS-STEM-PX ;  võnns-
@@ -8633,6 +8638,8 @@ Here, we allow for Illative Sijtei
 
 These sublexica are irrelevant for SIJTE, but added
 for the sake of the lexicon MARJA ! Muhto gč. dat kommentára... Imaštallan dan gal veha...
+
+For Finnish surnames. Itkonen.
 
 For Finnish names with ending -nen. Kaustinen.
 
@@ -12413,6 +12420,8 @@ uʹvdded+V+Ind+Prs+Pl3: **give/antaa**
 * *o0uʹdd000>e*
 * *u^1VOWv{ʹØ}dd^PAL^XYY2VY*
 * *u0uʹd000*
+* *Teäpˈpnẹ%^1VOW%{ʹØ%}d*
+* *Teäpˈpne0ʹd*
 
 täʹhtt+N+Pl+Nom: **bone/luu**
 * *tä^1VOWh{ʹØ}tt^V2VV^PAL^XYY2VY*
@@ -13120,6 +13129,12 @@ Sakssajânnam+N+Prop+Sg+Nom: (∑) **Germany/Saksa**
 * *Sakssa#jânnam*
 * ★*Sakssa#jânnam* (is not standard language)
 * ★*Sakssa-jânnam* (is not standard language)
+
+koummlo-õhtt+Num+Sg+Nom: (∑) **21**
+* *koummlo#õhtt*
+* *koummlo-õhtt*
+* ★*koummlo#õhtt* (is not standard language)
+* ★*koummlo#õhtt* (is not standard language)
 
 tuâjj+N+Cmp/SgNom+Cmp#joukk+N+Sg+Nom:  **team/työryhmä**
 * *tuâjj#joukk*

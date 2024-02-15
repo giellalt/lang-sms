@@ -1136,6 +1136,8 @@ uʹvdded+V+Ind+Prs+Pl3: **give/antaa**
 * *o0uʹdd000>e*
 * *u^1VOWv{ʹØ}dd^PAL^XYY2VY*
 * *u0uʹd000*
+* *Teäpˈpnẹ%^1VOW%{ʹØ%}d*
+* *Teäpˈpne0ʹd*
 
 täʹhtt+N+Pl+Nom: **bone/luu**
 * *tä^1VOWh{ʹØ}tt^V2VV^PAL^XYY2VY*
@@ -1843,6 +1845,12 @@ Sakssajânnam+N+Prop+Sg+Nom: (∑) **Germany/Saksa**
 * *Sakssa#jânnam*
 * ★*Sakssa#jânnam* (is not standard language)
 * ★*Sakssa-jânnam* (is not standard language)
+
+koummlo-õhtt+Num+Sg+Nom: (∑) **21**
+* *koummlo#õhtt*
+* *koummlo-õhtt*
+* ★*koummlo#õhtt* (is not standard language)
+* ★*koummlo#õhtt* (is not standard language)
 
 tuâjj+N+Cmp/SgNom+Cmp#joukk+N+Sg+Nom:  **team/työryhmä**
 * *tuâjj#joukk*

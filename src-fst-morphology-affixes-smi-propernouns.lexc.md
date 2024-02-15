@@ -14,6 +14,8 @@ Here, we allow for Illative Sijtei
 These sublexica are irrelevant for SIJTE, but added
 for the sake of the lexicon MARJA ! Muhto gč. dat kommentára... Imaštallan dan gal veha...
 
+For Finnish surnames. Itkonen.
+
 For Finnish names with ending -nen. Kaustinen.
 
 Different lexicon for female persons and place names.

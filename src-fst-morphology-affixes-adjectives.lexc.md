@@ -198,6 +198,9 @@ CLASS
 * LEXICON A_PUEAQRDES   čueʹcǩes:čuäckkez
 * :es A-01_PUEAQRDES ;   čueʹcǩes:čuäckkez
 
+* :%^Pen%^PALE%^Pen%^PAL%^Pen%^KKK2ZERO SG-NOM ;  jeeʹel
+* :%^Pen%^PALE%^Pen%^PAL%^Pen%^KKK2GG%^RmVow VOONYS-STEM-PX ;  võnns-
+
 * LEXICON A_TUEJJEEJA  tuejjeeja:tuejjẹẹja
 
 * LEXICON A_PRSPRC-EEI  tuejjeei:tuejjee
@@ -278,6 +281,8 @@ check this 2015-11-10
 
 CLASS 11 ADJECTIVES
 * LEXICON A_SHIYLGGYD  šiâlggâd:šiâlgg
+
+* LEXICON A_LOSSYD  lossâd:loss
 
 * LEXICON A_VISKKYD  viskkâd:viskk
 

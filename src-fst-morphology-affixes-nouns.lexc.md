@@ -3209,7 +3209,7 @@ NumContLex="1.113"
 * :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) äʹǩ-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) äʹǩǩ Ess+Px..
 
-* LEXICON N_SAAQMM  sääʹmm:säämm
+* LEXICON N_SAAQMM  sääʹmm:sää%{ʹØ%}mm
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
 ## 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
@@ -5138,7 +5138,7 @@ stemtype l-stem čeeuʹres:čeeuʹres
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
 * LEXICON N_JEEQEL  jeeʹel:jeä%{ʹØ%}kˈkel
-* LEXICON NMN_JEEQEL  jeeʹel:jeäkˈkel
+* LEXICON NMN_JEEQEL  jeeʹel:jeä%{ʹØ%}kˈkel
 * Yaml: **N-jeeel** 
 * :%^Pen%^PALE%^Pen%^PAL%^Pen%^KKK2ZERO SG-NOM ;  jeeʹel
 * :%^Pen%^PALE%^Pen%^PAL%^Pen%^KKK2GG%^RmVow VOONYS-STEM-PX ;  võnns-
