@@ -18,6 +18,9 @@ For Finnish surnames. Itkonen.
 
 For Finnish names with ending -nen. Kaustinen.
 
+Itkosa as the oblique stem.
+with ordinary genitive Itkonena
+
 Different lexicon for female persons and place names.
 
 Different lexicon for personal surnames. Blind
