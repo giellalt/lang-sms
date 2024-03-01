@@ -13678,9 +13678,9 @@ get the same pronunciation whether read as SME or NOB/NNO/SWE.
 * **+Qst** Question particle -a 
 * **+Qst/a** Question particle -a 
 * **+Qst/ko** Question particle -ko might be used with Use/NG  
+* **+Qst/ǥo** 
+* **+Qst/go** 
 * **+Foc/AA** more specifically, exactly, contrast. used with Pron and Adv 
-* **+Foc/ǥo** 
-* **+Foc/go** 
 * **+Foc/o** 
 * **+Foc/i** This might be used with 
 * **+Foc/han** This might be used with Use/NG 
@@ -13699,6 +13699,7 @@ get the same pronunciation whether read as SME or NOB/NNO/SWE.
 * **+Foc/ât** 
 * **+Foc/tâma** 
 * **+Foc/tõt** 
+* **+Foc/šât** 
 
 ### Tags distinguishing different versions of the same lemma (before POS) 
 In the xml the varid attribute is used in the st element with a mere numeric value 
