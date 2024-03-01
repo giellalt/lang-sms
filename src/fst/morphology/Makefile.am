@@ -17,7 +17,7 @@
 
 # Add language-specific flags for hfst-lexc compilation here:
 if HAVE_SHARED_COMMON
-HFST_LEXC_LOCAL_FLAGS=  # --Werror # uncomment if lexc is good enough
+HFST_LEXC_LOCAL_FLAGS=--Werror # uncomment if lexc is good enough
 else
 HFST_LEXC_LOCAL_FLAGS=  # No --Werror if deps are missing !
 endif
