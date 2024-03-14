@@ -13885,7 +13885,7 @@ Gradation triggers 2015.02.09 For   Consonant Clusters
 * **%^PALÕ** Depalatalisation causes â:õ tiõttum 
 * **%^RmVow** for removing vowels e, â, a before final consonant in stem 
 * **%^UltRmVow** for removing vowels e, â, a after final consonant in stem 
-* **%^RmCns.** for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta 
+* **%^RmCns** for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta 
 * **%^VC** Voicing s:z š:ž 
 * **%^VOWLower** for lowering i>e, õ>â, â>ä, u>o, o>å 
 * **%^U2Õ** lowers u>õ    
