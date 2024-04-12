@@ -11,6 +11,3 @@ Not added yet to wiki
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/adjectives_newwords.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/stems/adjectives_newwords.lexc)</small>
-
----
-

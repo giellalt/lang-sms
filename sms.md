@@ -1,6 +1,10 @@
-# Skolt Sami description 
+# Skolt Sami language model documentation
 
-All documents in one file
+All doc-comment documentation in one large file.
+
+---
+
+# src-cg3-disambiguator.cg3.md 
 
 
 
@@ -189,7 +193,14 @@ Denne regelen fjerner Err/Orth når det er samme lemma, sjøl om morfologien er 
 * **errsub** removes err/orth forms
 
 * * *
+
 <small>This (part of) documentation was generated from [src/cg3/disambiguator.cg3](https://github.com/giellalt/lang-sms/blob/main/src/cg3/disambiguator.cg3)</small>
+
+---
+
+# src-fst-morphology-affixes-acronyms.lexc.md 
+
+
 
 # Inari Saami acronyms
 
@@ -216,6 +227,8 @@ Denne regelen fjerner Err/Orth når det er samme lemma, sjøl om morfologien er 
 <small>This (part of) documentation was generated from [src/fst/morphology/affixes/acronyms.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/affixes/acronyms.lexc)</small>
 
 ---
+
+# src-fst-morphology-affixes-adjectives.lexc.md 
 
 
 # Skolt Saami adjective declension
@@ -2212,6 +2225,8 @@ grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 
 ---
 
+# src-fst-morphology-affixes-adverbs.lexc.md 
+
 
 # Skolt Saami adverbs
 
@@ -2229,6 +2244,8 @@ grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 <small>This (part of) documentation was generated from [src/fst/morphology/affixes/adverbs.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/affixes/adverbs.lexc)</small>
 
 ---
+
+# src-fst-morphology-affixes-nouns.lexc.md 
 
 
 # Skolt Saami noun morphology 
@@ -8422,6 +8439,8 @@ Used with words like juurd: jurddǥatta
 
 ---
 
+# src-fst-morphology-affixes-numerals.lexc.md 
+
 
 
 # Inari Saami number <-> text
@@ -8441,6 +8460,8 @@ Used with words like juurd: jurddǥatta
 <small>This (part of) documentation was generated from [src/fst/morphology/affixes/numerals.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/affixes/numerals.lexc)</small>
 
 ---
+
+# src-fst-morphology-affixes-pronouns.lexc.md 
 
 
 # Skolt Saami Pronoun Morphology 
@@ -8561,6 +8582,8 @@ Completion needed 2015-09-19
 
 ---
 
+# src-fst-morphology-affixes-propernouns.lexc.md 
+
 
 # SKOLT SAAMI PROPERNOUN MORPHOLOGY 
 
@@ -8623,6 +8646,8 @@ R ;		= * LEXICON PROP_TOOBDYLM_mal  kuss
 
 ---
 
+# src-fst-morphology-affixes-smi-propernouns.lexc.md 
+
 
 
 +Pl+Nom:%>jit  K ;
@@ -8661,6 +8686,8 @@ to sg forms in some cases. (substandard?)
 
 ---
 
+# src-fst-morphology-affixes-symbols.lexc.md 
+
 
 # Symbol affixes
 
@@ -8669,6 +8696,8 @@ to sg forms in some cases. (substandard?)
 <small>This (part of) documentation was generated from [src/fst/morphology/affixes/symbols.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/affixes/symbols.lexc)</small>
 
 ---
+
+# src-fst-morphology-affixes-verbs.lexc.md 
 
 
 
@@ -11285,6 +11314,8 @@ VSUF-I-POTKOND_YD, VSUF-I-POTKOND_AD and VSUF-POTENTIAL_ED come here
 
 ---
 
+# src-fst-morphology-phonology.twolc.md 
+
 
 # Skolt Sámi TWOLC file
 
@@ -13155,6 +13186,8 @@ sääʹm000-#musikk
 
 ---
 
+# src-fst-morphology-root.lexc.md 
+
 
 
 # Skolt Sámi morphological analyser 
@@ -14178,6 +14211,8 @@ SUF/A_
 
 ---
 
+# src-fst-morphology-stems-abbreviations.lexc.md 
+
 
 # File containing abbreviations 
 
@@ -14256,6 +14291,8 @@ the sentnece can be considered as true cases.
 
 ---
 
+# src-fst-morphology-stems-adjectives_newwords.lexc.md 
+
 This is where new words are added as lexc entries before they are 
 added to the xml source files.
 slooman:slooman A_AANAR ;
@@ -14271,6 +14308,8 @@ Not added yet to wiki
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/adjectives_newwords.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/stems/adjectives_newwords.lexc)</small>
 
 ---
+
+# src-fst-morphology-stems-adpositions_newwords.lexc.md 
 
 This is where new words are added as lexc entries before they are 
 added to the xml source files.
@@ -14290,6 +14329,8 @@ PREPOSITIONS
 
 ---
 
+# src-fst-morphology-stems-adverbs_newwords.lexc.md 
+
 This is where new words are added as lexc entries before they are 
 added to the xml source files.
 Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS "(eng) /(fin) /(rus) " ;
@@ -14306,6 +14347,8 @@ perintökieli
 
 ---
 
+# src-fst-morphology-stems-conjunctions_newwords.lexc.md 
+
 This is where new words are added as lexc entries before they are 
 added to the xml source files.
 Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS "(eng) /(fin) /(rus) " ;
@@ -14317,6 +14360,8 @@ ADD PROPER ADVERBS BELOW
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/conjunctions_newwords.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/stems/conjunctions_newwords.lexc)</small>
 
 ---
+
+# src-fst-morphology-stems-exceptions.lexc.md 
 
 Exceptions are quite strange word-forms. the ones that do not fit anywhere 
 else. This file contains all enumerated word forms that cannot reasonably be
@@ -14421,6 +14466,8 @@ BUT have most of their Contlex values THIS has a separate DB DON'T TRANSLATE
 
 ---
 
+# src-fst-morphology-stems-nouns_newwords.lexc.md 
+
 This is where new words are added as lexc entries before they are 
 added to the xml source files.
 ǩiõtt+N:ǩiõtt N_MUORR "(eng) /(fin) /(rus)" ;
@@ -14439,6 +14486,8 @@ Contlex value missing
 
 ---
 
+# src-fst-morphology-stems-numerals.lexc.md 
+
 
 # Skolt Saami Numerals
 
@@ -14449,6 +14498,8 @@ Contlex value missing
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/numerals.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/stems/numerals.lexc)</small>
 
 ---
+
+# src-fst-morphology-stems-particles_newwords.lexc.md 
 
 This is where new words are added as lexc entries before they are 
 added to the xml source files.
@@ -14467,6 +14518,8 @@ These have been commented out 2015-11-13
 
 ---
 
+# src-fst-morphology-stems-pronouns_newwords.lexc.md 
+
 This is where new words are added as lexc entries before they are 
 added to the xml source files.
 Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS "(eng) /(fin) /(rus) " ;
@@ -14480,6 +14533,8 @@ CODED BY EINO AND JASKA
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/pronouns_newwords.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/stems/pronouns_newwords.lexc)</small>
 
 ---
+
+# src-fst-morphology-stems-propernouns_newwords.lexc.md 
 
 This is where new words are added as lexc entries before they are 
 added to the xml source files.
@@ -14504,6 +14559,8 @@ Perintökieli
 
 ---
 
+# src-fst-morphology-stems-sms-propernouns.lexc.md 
+
 
 
 # Propernoun lexicon, Skolt Sámi specific names 
@@ -14524,6 +14581,8 @@ The lexicon *ProperNoun* lists the proper nouns
 
 ---
 
+# src-fst-morphology-stems-toponyms_newwords.lexc.md 
+
 This is where new words are added as lexc entries before they are
 added to the xml source files.
 
@@ -14541,6 +14600,8 @@ Toponyms
 
 ---
 
+# src-fst-morphology-stems-verbs_newwords.lexc.md 
+
 This is where new words are added as lexc entries before they are 
 added to the xml source files.
 The conversion is done as follows:
@@ -14557,6 +14618,8 @@ ADD VERBS BELOW
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/verbs_newwords.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/stems/verbs_newwords.lexc)</small>
 
 ---
+
+# src-fst-phonetics-txt2ipa.xfscript.md 
 
 
 
@@ -14723,6 +14786,8 @@ retracted tongue root			_q
 
 ---
 
+# src-fst-syllabification-hyphenation.xfscript.md 
+
 
 
 Copy from smn starts here
@@ -14734,6 +14799,8 @@ Copy from smn ends here
 <small>This (part of) documentation was generated from [src/fst/syllabification/hyphenation.xfscript](https://github.com/giellalt/lang-sms/blob/main/src/fst/syllabification/hyphenation.xfscript)</small>
 
 ---
+
+# src-fst-transcriptions-transcriptor-abbrevs2text.lexc.md 
 
 
 
@@ -14755,6 +14822,8 @@ For example:
 
 ---
 
+# src-fst-transcriptions-transcriptor-clock-digit2text.lexc.md 
+
 
 This is still a dummy version, containing Skolt Saami.
 
@@ -14765,6 +14834,8 @@ This is still a dummy version, containing Skolt Saami.
 <small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-clock-digit2text.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/transcriptions/transcriptor-clock-digit2text.lexc)</small>
 
 ---
+
+# src-fst-transcriptions-transcriptor-date-digit2text.lexc.md 
 
 
 The Skolt Sámi dates !
@@ -14778,6 +14849,8 @@ This is still a dummy version, containing South Saami.
 
 ---
 
+# src-fst-transcriptions-transcriptor-numbers-digit2text.lexc.md 
+
 
 
 # Skolt Saami number <-> letter transducer
@@ -14787,6 +14860,8 @@ This is still a dummy version, containing South Saami.
 <small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-numbers-digit2text.lexc](https://github.com/giellalt/lang-sms/blob/main/src/fst/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
 
 ---
+
+# tools-grammarcheckers-grammarchecker.cg3.md 
 
 
 S K O L T   S A A M I   G R A M M A R   C H E C K E R
@@ -15085,7 +15160,14 @@ expression **WORD - premodifiers**.
 ### Grammarchecker sets
 
 * * *
-<small>This (part of) documentation was generated from [tools/grammarcheckers/grammarchecker.cg3](https://github.com/giellalt/lang-sms/blob/main/tools/grammarcheckers/grammarchecker.cg3)</small># Tokeniser for sms
+
+<small>This (part of) documentation was generated from [tools/grammarcheckers/grammarchecker.cg3](https://github.com/giellalt/lang-sms/blob/main/tools/grammarcheckers/grammarchecker.cg3)</small>
+
+---
+
+# tools-tokenisers-tokeniser-disamb-gt-desc.pmscript.md 
+
+# Tokeniser for sms
 
 Usage:
 ```
@@ -15148,6 +15230,8 @@ Finally we mark as a token any sequence making up a:
 <small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-disamb-gt-desc.pmscript](https://github.com/giellalt/lang-sms/blob/main/tools/tokenisers/tokeniser-disamb-gt-desc.pmscript)</small>
 
 ---
+
+# tools-tokenisers-tokeniser-gramcheck-gt-desc.pmscript.md 
 
 # Grammar checker tokenisation for sms
 
@@ -15212,6 +15296,8 @@ Finally we mark as a token any sequence making up a:
 
 ---
 
+# tools-tokenisers-tokeniser-tts-cggt-desc.pmscript.md 
+
 # TTS tokenisation for smj
 
 Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
@@ -15273,6 +15359,3 @@ Needs hfst-tokenise to output things differently depending on the tag they get
 * * *
 
 <small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-tts-cggt-desc.pmscript](https://github.com/giellalt/lang-sms/blob/main/tools/tokenisers/tokeniser-tts-cggt-desc.pmscript)</small>
-
----
-
