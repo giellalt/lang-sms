@@ -1271,6 +1271,8 @@ prääʹzniǩ+N+Sg+Ill: **celebration/juhla**
 * *prääʹzn0k00>a*
 * *kaaddâšǩ^Pen^VV2V^Pen^CC2C^RmVow^PALNo>a*
 * *ka0d00šk000000>a*
+* ★*vieʹǩǩet%^PALNo* (is not standard language)
+* ★*vieʹǩket0* (is not standard language)
 
 **Even-syllabic nouns, removing palatalization in -est +Loc nouns** - removing palatalization in +Sg+Ill,  pieʹss:peässa
 * *čââʹlmtẹ^1VOWm{XC}^C2CC>a*
