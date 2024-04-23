@@ -10,7 +10,7 @@
 # analyser-speller-gt-norm.%: analyser-speller-gt-norm.tmp.%
 #	build rules
 
-.generated/generator-speller-gt-norm.%: .generated/generator-speller-gt-norm.tmp.% \
+generator-speller-gt-norm.%: .generated/generator-speller-gt-norm.tmp.% \
 				$(top_builddir)/src/fst/filters/remove-letter-dot-below.%   \
 				$(top_builddir)/src/fst/filters/replace-iterated-consonant-with-palatal-and-consonant.%   \
 				$(top_builddir)/src/fst/filters/replace-vowel-iteration-with-length-for-norm.%   \
@@ -26,7 +26,7 @@
 		save stack $@\n\
 		quit\n" | $(XFST_TOOL)
 
-.generated/analyser-speller-gt-norm.%: .generated/generator-speller-gt-norm.tmp.% \
+analyser-speller-gt-norm.%: .generated/generator-speller-gt-norm.tmp.% \
 				$(top_builddir)/src/fst/filters/remove-letter-dot-below.%   \
 				$(top_builddir)/src/fst/filters/replace-iterated-consonant-with-palatal-and-consonant.%   \
 				$(top_builddir)/src/fst/filters/replace-vowel-iteration-with-length-for-norm.%   \
