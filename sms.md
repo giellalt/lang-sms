@@ -8844,8 +8844,8 @@ Imprt+Pl3
 * *põõss%^VV2V%^VOWLower%>az*
 * *pâ0ss00%>az*
 
-* *põõss%^VV2V%^KK2GAllegro»škuätt*
-* *põ0z000»škuätt*
+* *põõss%^VV2V%^KK2GAllegro»%{ʼØ%}škuätt*
+* *põ0z000»0škuätt*
 
 * viikkâd # examples:*
 * *viikkâd:* `viikkâd+V+Inf`
@@ -11306,7 +11306,7 @@ VSUF-I-POTKOND_YD, VSUF-I-POTKOND_AD and VSUF-POTENTIAL_ED come here
 
 * LEXICON VSUF-IND-PRS-CONNEG_ED  (6)
 
-* +Use/NGminip+Use/NG+Der+Der/st+V:%^Pen%^Allegro»st VSUF-VUEJTED-ELSE ;  no allegro
+* +Use/NGminip+Use/NG+Der+Der/st+V:%^Pen%^Allegro»%{ʼØ%}st VSUF-VUEJTED-ELSE ;  no allegro
 
 * * *
 
