@@ -51,22 +51,6 @@ jiõčč:
 
 Completion needed 2015-09-19
 
-* LEXICON GA-I 
-
-* LEXICON GA-II 
-
-* LEXICON ILEPX 
-
-* LEXICON LOCPX 
-
-* LEXICON COMPX 
-
-* LEXICON ROBLSGPX 
-
-* LEXICON ROBLPLPX 
-
-* LEXICON RCOMPLPX 
-
 ## Interrogative pronouns
 **LEXICON PRON-INTERR_** is referred to from the xml file, hence does not assign **+Pron** tag.
 * +Interr: # ;

@@ -1025,6 +1025,9 @@ tuâjj+N+Sg+Acc **work**
 kuʹvǯǯ+N+Sg+Gen
 * *ku^1VOWv0ǯǯ^VV2V^PAL^XYY2VY*
 * *ku0uʹǯ0000*
+kuʹvǯǯ+N+Sg+Gen: **/**
+* *ku^1VOW{ʹØ}v{ʹØ}ǯǯ*
+* *kuuʹ00ǯ0*
 uudâs+N+Sg+Nom: **creature/luomus**
 * *uvddâs^Pen^XYY2VY*
 * *uud0âs00*
@@ -1395,8 +1398,8 @@ sauʒʒ+N+Pl+Nom **sheep/lammas**
 
 **ǯ:0** - used in
 kuʹvǯǯ+N+Sg+Gen
-* *ku^1VOWv0ǯǯ^PAL^XYY2VY*
-* *ku0uʹǯ000*
+* *ku^1VOW{ʹØ}v{ʹØ}ǯǯ^PAL^XYY2VY*
+* *ku00uʹǯ000*
 
 **č:0** - used in
 
