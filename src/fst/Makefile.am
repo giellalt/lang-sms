@@ -238,9 +238,9 @@ $(foreach fst,hfst xfst foma,$(eval $(call giella_generators,$(fst))))
 .generated/generator-dict-gt-norm.%: .generated/generator-dict-gt-norm.tmp.% \
 					filters/remove-derivation-position-tags.% \
 					filters/remove-norm-comp-tags.%      \
-					filters/remove-usage-tags.%
+					filters/remove-usage_except_NGminip-tags.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
-				@\"filters/remove-usage-tags.$*\"               \
+				@\"filters/remove-usage_except_NGminip-tags.$*\"               \
 			.o. @\"filters/remove-derivation-position-tags.$*\" \
 			.o. @\"filters/remove-norm-comp-tags.$*\"           \
 			.o. @\"$<\"                                         \
