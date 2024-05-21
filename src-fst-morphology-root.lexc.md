@@ -655,6 +655,7 @@ for vowel height, by default vowels are low.
 * **%{âõäe%}** 
 
 CHARACTERISTIC BREAKDOWN 2015-02-17 
+* __%^Allegro__ - Allegro in general shortens consonant and preceding vowel
 * **%^VV2V** Shortens vowel 
 * **%^V2VV** Lengthens vowel 
 * **%^CC2C** Shortens consonant 
@@ -679,7 +680,6 @@ CHARACTERISTIC BREAKDOWN 2015-02-17
 * **%^APen** for combinations 2015-10-04 Jack 
 * **%^Pen** for combinations 2015-09-28 Miikka 
 * **%^KK2ZERO** Geminate weakening nââʹer 
-* **%^Allegro** This introduces vertical bar after diphth before consonants 
 * **%^J2I** in tuâjj:tuâi 
 * **%^I2J** in agent names 
 * **%^I2Zero** in agent names 

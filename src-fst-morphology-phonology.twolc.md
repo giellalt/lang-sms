@@ -108,10 +108,11 @@ Miscellaneous triggers:
 
 CHARACTERISTIC BREAKDOWN 2015-02-17
 
+* __%^Allegro:0__ - Allegro in general shortens consonant and preceding vowel
 * __%^VV2V:0__ - Shortens vowel
 * __%^V2VV:0__ - Lengthens vowel
 * __%^CC2C:0__ - Shortens consonant
-* __%^CC2CAllegro:0__ - Shortens consonant
+* __%^CC2CAllegro:0__ - Shortens consonant and preceding vowel
 * __%^C2CC:0__ - Lengthens consonant
 * __%^CC2CCC:0__ - Strong to Extra Strong consonant
 * __%^CCC2C:0__ - Extra Strong to Weak consonant
@@ -1134,6 +1135,7 @@ karies+N+Sg+Nom: **caries/hammasmätä**
 ### PALATALIZATION
 
 **%{ʹØ%}:ʹ as transfer from left of v:u and all instances of modifier letter prime** - used +Ind+Prs+Pl3, uʹvdded+V+Ind+Prs+Pl3: ouʹdde
+
 uʹvdded+V+Ind+Prs+Pl3: **give/antaa**
 * *u^1VOWv{ʹØ}dd^VOWLower^PAL^XYY2VYY>e*
 * *o0uʹdd000>e*
@@ -1349,6 +1351,8 @@ tuõvâs+N+Sg+Nom: **candle/tuohus, kynttilä**
 juʹvjj+N+Sg+Loc+PxSg3:
 * *ju^1VOWv0jj^VV2V^PAL^XYY2VY>stes*
 * *ju0uʹj0000>stes*
+* *ju{ʹØ}v{ʹØ}jj^VV2V^PAL^XYY2VY>stes*
+* *juʹ00j0000>stes*
 
 **f:0** - used in
 

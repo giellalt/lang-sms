@@ -3125,7 +3125,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^V2VV%^XYY2VY N_KUUZZYZH-WITHOUT-PAL ;   siid-
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^XYY2VY N_KUUZZYZH-WITH-PAL ;   siiʹd-
 
-* :%^XYY2XY SG-LOC-PX_ALLEGRO ;  CHECKME
+* :%^Allegro%^XYY2VY SG-LOC-PX_ALLEGRO ;  CHECKME
 
 * LEXICON N_SIJDD-PL  siid:sijdd
 * :%^XYY2VY PL-NOM ;	 siid
@@ -3139,6 +3139,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *siʹjdde:* `sijdd+N+Sg+Ill`
 * *siidâst:* `sijdd+N+Sg+Loc`
 * *siidstad:* `sijdd+N+Sg+Loc+PxSg2`
+* *sidstad:* `sijdd+N+Sg+Loc+PxSg2`
 * *siidin:* `sijdd+N+Sg+Com`
 * *sijddân:* `sijdd+N+Ess`
 * *sijddâd:* `sijdd+N+Par`
@@ -4849,7 +4850,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-juvjj**
 * :%^V2VV%^VOWLower%^XYY2VY E-STEM_N_KUYLAZH ;  jooujaž
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) juvjj-
-* :%^VV2V%^PAL%^XYY2VY E-STEM-PX-ALLEGRO ;  (11) juʹj-
+* :%^Allegro%^PAL%^XYY2VY E-STEM-PX-ALLEGRO ;  (11) juʹj-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) juʹvjj Ess+Px..
 
 * LEXICON N_VUEQSS   vueʹss:vuâss
@@ -11410,10 +11411,11 @@ Miscellaneous triggers:
 
 CHARACTERISTIC BREAKDOWN 2015-02-17
 
+* __%^Allegro:0__ - Allegro in general shortens consonant and preceding vowel
 * __%^VV2V:0__ - Shortens vowel
 * __%^V2VV:0__ - Lengthens vowel
 * __%^CC2C:0__ - Shortens consonant
-* __%^CC2CAllegro:0__ - Shortens consonant
+* __%^CC2CAllegro:0__ - Shortens consonant and preceding vowel
 * __%^C2CC:0__ - Lengthens consonant
 * __%^CC2CCC:0__ - Strong to Extra Strong consonant
 * __%^CCC2C:0__ - Extra Strong to Weak consonant
@@ -12436,6 +12438,7 @@ karies+N+Sg+Nom: **caries/hammasmätä**
 ### PALATALIZATION
 
 **%{ʹØ%}:ʹ as transfer from left of v:u and all instances of modifier letter prime** - used +Ind+Prs+Pl3, uʹvdded+V+Ind+Prs+Pl3: ouʹdde
+
 uʹvdded+V+Ind+Prs+Pl3: **give/antaa**
 * *u^1VOWv{ʹØ}dd^VOWLower^PAL^XYY2VYY>e*
 * *o0uʹdd000>e*
@@ -12651,6 +12654,8 @@ tuõvâs+N+Sg+Nom: **candle/tuohus, kynttilä**
 juʹvjj+N+Sg+Loc+PxSg3:
 * *ju^1VOWv0jj^VV2V^PAL^XYY2VY>stes*
 * *ju0uʹj0000>stes*
+* *ju{ʹØ}v{ʹØ}jj^VV2V^PAL^XYY2VY>stes*
+* *juʹ00j0000>stes*
 
 **f:0** - used in
 
@@ -13834,6 +13839,7 @@ for vowel height, by default vowels are low.
 * **%{âõäe%}** 
 
 CHARACTERISTIC BREAKDOWN 2015-02-17 
+* __%^Allegro__ - Allegro in general shortens consonant and preceding vowel
 * **%^VV2V** Shortens vowel 
 * **%^V2VV** Lengthens vowel 
 * **%^CC2C** Shortens consonant 
@@ -13858,7 +13864,6 @@ CHARACTERISTIC BREAKDOWN 2015-02-17
 * **%^APen** for combinations 2015-10-04 Jack 
 * **%^Pen** for combinations 2015-09-28 Miikka 
 * **%^KK2ZERO** Geminate weakening nââʹer 
-* **%^Allegro** This introduces vertical bar after diphth before consonants 
 * **%^J2I** in tuâjj:tuâi 
 * **%^I2J** in agent names 
 * **%^I2Zero** in agent names 

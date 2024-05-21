@@ -876,7 +876,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^V2VV%^XYY2VY N_KUUZZYZH-WITHOUT-PAL ;   siid-
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^XYY2VY N_KUUZZYZH-WITH-PAL ;   siiʹd-
 
-* :%^XYY2XY SG-LOC-PX_ALLEGRO ;  CHECKME
+* :%^Allegro%^XYY2VY SG-LOC-PX_ALLEGRO ;  CHECKME
 
 * LEXICON N_SIJDD-PL  siid:sijdd
 * :%^XYY2VY PL-NOM ;	 siid
@@ -890,6 +890,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *siʹjdde:* `sijdd+N+Sg+Ill`
 * *siidâst:* `sijdd+N+Sg+Loc`
 * *siidstad:* `sijdd+N+Sg+Loc+PxSg2`
+* *sidstad:* `sijdd+N+Sg+Loc+PxSg2`
 * *siidin:* `sijdd+N+Sg+Com`
 * *sijddân:* `sijdd+N+Ess`
 * *sijddâd:* `sijdd+N+Par`
@@ -2600,7 +2601,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-juvjj**
 * :%^V2VV%^VOWLower%^XYY2VY E-STEM_N_KUYLAZH ;  jooujaž
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) juvjj-
-* :%^VV2V%^PAL%^XYY2VY E-STEM-PX-ALLEGRO ;  (11) juʹj-
+* :%^Allegro%^PAL%^XYY2VY E-STEM-PX-ALLEGRO ;  (11) juʹj-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) juʹvjj Ess+Px..
 
 * LEXICON N_VUEQSS   vueʹss:vuâss
