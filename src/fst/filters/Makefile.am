@@ -75,3 +75,4 @@ change-optionally-word_boundary_to_hyphen.whfst: \
 include $(top_srcdir)/../giella-core/am-shared/src-filters-dir-include.am
 
 # vim: set ft=automake:
+include $(top_srcdir)/../giella-core/am-shared/devtest-include.am
