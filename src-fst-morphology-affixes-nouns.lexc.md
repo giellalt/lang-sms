@@ -3814,7 +3814,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^VV2V%^PAL%^XYY2VY E-STEM-PX-ALLEGRO ;  (11) ruʹs-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) ruʹhss Ess+Px..
 
-* LEXICON N_JAEUQRR  jäuʹrr:jäurr
+* LEXICON N_JAEUQRR  jäuʹrr:jä%^1VOWu%{ʹØ%}rr
 similar_to: N_AUTT
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (NO vowel shift)

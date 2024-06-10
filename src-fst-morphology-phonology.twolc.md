@@ -961,6 +961,9 @@ radio+N+Sg+Ill
 
 **Even syllabic nouns I, relative vowel lengthening i** - ǩiđđ:ǩiiđ
 
+leuʹdd+N+Pl+Gen
+* *lẹ^1VOWu{ʹØ}dd^V2VV^VOWRaise^PAL^XYY2XY>i*
+* *liiuʹd00000>i*
 pirsted+V+Ind+Prs+ConNeg
 * *piirâst*
 * *piirâst*
