@@ -8773,7 +8773,7 @@ The lexicon *V0_LEEQD* for the copula
 * :%^CC2C VSUF-I-POTKOND_YD ; 5 laukkõõl-
 * +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ; 5 ERR laukkõõll-
 * +Pot+Sg3:%^CC2C%>âž   K ; 6 laukkõõl-
-* +Imprt+Sg3:%^VOWLower%^CC2C%>as K ; 7 laukkââlas 2024-06-11 was laukkõõlas
+* +Imprt+Sg3:%^VOWLower%^CC2C%>as K ; 7 laukkââlas 2024-06-11 was laukkõõlas ?Feist
 * :%^VV2V VSUF-IMPRT-CONNEGII_YD ; 8 laukkõll-
 * +Imprt+ConNegII:%^VV2V%>u K ;  laukkõllu
 * +Imprt+Pl3:%^VV2V%^VOWLower%>az K ;  laukkâllaz
