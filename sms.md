@@ -12943,6 +12943,10 @@ kääđas+N+Sg+Nom
 * *sä^1VOWhss^V2VV^XYY2VY>am*
 * *sääus000>am*
 
+ǩeeʹstes+N+Pl+Nom:  **glove/kinnas**
+* *ǩeâ%{ʹØ%}sttes^PenVow2a^RmCns*
+* *ǩeâ0stta000*
+
 uhss+N+Sg+Gen **door**
 * *uhss^XYY2VY*
 * *uus00*
