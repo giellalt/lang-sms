@@ -8378,6 +8378,9 @@ vuâsppåʹd+N+Sg+Gen
 Class 11 according to Feist 162
 * LEXICON N_VISKKYD  viskkâd:viskk
 
+* LEXICON N_MOASHSHAD  måššad:måšš
+inflection_type="?"vuäʹllad+N:vuäʹlˈl (cf. also A-ORD_NEELLJAD)
+
 * LEXICON N_AQKHKHED  âʹǩǩed:âʹǩǩ
 
 Class 12 Feist 163
