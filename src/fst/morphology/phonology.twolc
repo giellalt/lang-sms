@@ -1007,7 +1007,11 @@ OnSetC  ẹ: _ (ʹ:|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+]  %^VOWRai
   OnSetC    _ (%^1VOW:ä|%^1VOW:0) (u|i) (ʹ:|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] NeutrVowLength  %^VOWLower:  (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) [RBound|BetweenPALNoAndMorph] ;
 
     OnSetC     _ (%^1VOW:ä|%^1VOW:0) ((ʹ:|%{ʹØ%}:) (v:u|j:i)) (ʹ:|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+] NeutrVowLength %^VOWLower:  (%^PALNo:|(%^PALE:|%^PALÄ:|%^PALẸ:) %^PAL:) RBound ;
-
+!! mään+N+Sg+Nom: **moon/kuu**
+!!€ ma^1VOWnn^V2VV^VOWLower^CC2C
+!!€ mään0000
+!!$ ma^1VOWnn^V2VV^VOWLower^CC2C
+!!$ maan0000
 
 
 "Even syllabic verbs I, vowel lowering u:o"
@@ -1376,8 +1380,12 @@ OnSetC u: _   (ʹ:|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|r d d:]  %^
 !!€ mää0uʹs0000>et
 
 
- OnSetC [ä|a:ä] _ (u|i) (ʹ:|%{ʹØ%}:) Cns:+ %^V2VV: ( %^VOWLower: )  BetweenVowHeightAndMorph ;
- OnSetC [ä|a:ä] _ (%{ʹØ%}:) (h:) (ʹ:|%{ʹØ%}:) Cns:+ %^V2VV: ( %^VOWLower: )  BetweenVowHeightAndMorph ;
+ OnSetC a: _ (u|i) (ʹ:|%{ʹØ%}:) Cns:+ %^V2VV: %^VOWLower:  BetweenVowHeightAndMorph ;
+ OnSetC ä _ (u|i) (ʹ:|%{ʹØ%}:) Cns:+ %^V2VV:  BetweenVowHeightAndMorph ;
+! OnSetC [ä|a:ä] _ (u|i) (ʹ:|%{ʹØ%}:) Cns:+ %^V2VV: ( %^VOWLower: )  BetweenVowHeightAndMorph ;
+ OnSetC a: _ (%{ʹØ%}:) (h:) (ʹ:|%{ʹØ%}:) Cns:+ %^V2VV:  %^VOWLower:  BetweenVowHeightAndMorph ;
+ OnSetC ä _ (%{ʹØ%}:) (h:) (ʹ:|%{ʹØ%}:) Cns:+ %^V2VV:  BetweenVowHeightAndMorph ;
+! OnSetC [ä|a:ä] _ (%{ʹØ%}:) (h:) (ʹ:|%{ʹØ%}:) Cns:+ %^V2VV: ( %^VOWLower: )  BetweenVowHeightAndMorph ;
 ! OnSetC [å:ä|ä|a:ä] _ (h:u|u|i) (ʹ:|%{ʹØ%}:) Cns:+ %^V2VV: ( %^VOWLower: )  ;
 !Distinguishing mainstam and maainstam
 !- kååʹmmerd, maainâst Vowel lengthening in INDPRSSG3 and IMPSG2
@@ -1395,7 +1403,8 @@ OnSetC u: _   (ʹ:|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|r d d:]  %^
 "Even syllabic verbs I, relative vowel lengthening %^1VOW:a"
 !! **@RULENAME@** - deriving +V+Inf in MAINSTED: maainstam, mainstam
  %^1VOW:a <=>
-  OnSetC (i) a _ (i|:u) (ʹ:|%{ʹØ%}:) Cns:+ (%{XC%}:) %^V2VV: ;
+  OnSetC (i) a _ (i|:u) (ʹ:|%{ʹØ%}:) Cns:+ (%{XC%}:) %^V2VV: BetweenVowHeightAndMorph ;
+!  OnSetC (i) a _ (i|:u) (ʹ:|%{ʹØ%}:) Cns:+ (%{XC%}:) %^V2VV: ;2024-07-19
 !!€ dura^1VOWk^V2VV
 !!€ duraak0
   OnSetC ä: _ (i|:u) (ʹ:|%{ʹØ%}:) Cns:+ %^V2VV: %^VOWRaise: ;
