@@ -679,6 +679,12 @@ viikkâd+V+Imprt+Pl3
 
 **Vowel lowering a:ä** -
 
+mään+N+Sg+Nom: **moon/kuu**
+* *ma^1VOWnn^V2VV^VOWLower^CC2C*
+* *mään0000*
+* ★*ma^1VOWnn^V2VV^VOWLower^CC2C* (is not standard language)
+* ★*maan0000* (is not standard language)
+
 **Even syllabic verbs I, vowel lowering u:o** - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in uʹvdded
 
 uʹvdded+V+Cond+Pl3 **to give**

@@ -6839,8 +6839,8 @@ Extra strong grade: Pl.Nom, Sg.Loc, Sg.Com
 
 CLASS 2 NOMINALS with low stem vowel and u-stems
 ## u-stems
-* LEXICON N_MAEAEN  mään:mann
-* LEXICON NMN_MAEAEN  mään:mann
+* LEXICON N_MAEAEN  mään:ma%^1VOWnn
+* LEXICON NMN_MAEAEN  mään:ma%^1VOWnn
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 228)
 ## 1.2 Sg.Loc in -ust. u-stems (Sg.Loc, Ess, Par).
 ## 1.2.3 Sg.Ill in raised vowel and -u
@@ -11984,6 +11984,12 @@ viikkâd+V+Imprt+Pl3
 * *vẹ0kk00>az*
 
 **Vowel lowering a:ä** -
+
+mään+N+Sg+Nom: **moon/kuu**
+* *ma^1VOWnn^V2VV^VOWLower^CC2C*
+* *mään0000*
+* ★*ma^1VOWnn^V2VV^VOWLower^CC2C* (is not standard language)
+* ★*maan0000* (is not standard language)
 
 **Even syllabic verbs I, vowel lowering u:o** - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in uʹvdded
 

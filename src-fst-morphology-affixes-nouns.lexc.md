@@ -4590,8 +4590,8 @@ Extra strong grade: Pl.Nom, Sg.Loc, Sg.Com
 
 CLASS 2 NOMINALS with low stem vowel and u-stems
 ## u-stems
-* LEXICON N_MAEAEN  mään:mann
-* LEXICON NMN_MAEAEN  mään:mann
+* LEXICON N_MAEAEN  mään:ma%^1VOWnn
+* LEXICON NMN_MAEAEN  mään:ma%^1VOWnn
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 228)
 ## 1.2 Sg.Loc in -ust. u-stems (Sg.Loc, Ess, Par).
 ## 1.2.3 Sg.Ill in raised vowel and -u
