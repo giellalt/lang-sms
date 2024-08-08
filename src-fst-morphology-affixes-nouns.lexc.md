@@ -5321,7 +5321,7 @@ Nouns with -est Loc and -a Ill without ʹ
 NumContLex=""
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* +Der+Der/N2A+A: DenominalAdjsCShort ;  2015-08-23 +Der+Der/teqm
+*  DenominalAdjsCShort ;  2024-08-08
 
 čâustõk+N+Sg+Gen:čâustõõǥǥ
 Sajos:Sajo%^1VOW%{ʹØ%}s
