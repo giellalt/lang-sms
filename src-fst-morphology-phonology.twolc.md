@@ -1129,6 +1129,10 @@ karies+N+Sg+Nom: **caries/hammasmätä**
 * *kariẹ^1VOW{ʹØ}s^PALE*
 * *karie00s0*
 
+reeʹǧǧes+A+Sg+Nom: **rich/rikas**
+* *rẹ:e^1VOW{ʹØ}gges^Pen^V2VV^Pen^PAL^Pen^PALK*
+* *reeʹǧǧes000000*
+
 ### VOWEL and ZERO ALTERNATION
 
 **Realization for â in a** - used in

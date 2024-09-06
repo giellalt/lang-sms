@@ -406,7 +406,10 @@ CLASS
 * :es A-01_OAQVES ;    kääʹmes:kämmez
 
 * LEXICON A_KAAQLLES   kääʹlles:kä%^1VOWll
-* :es A-01_KAAQLLES ;    kääʹmes:kämmez
+* :es A-01_KAAQLLES ;    reeʹǧǧes:rẹ%^1VOW%{ʹØ%}gges
+
+* LEXICON A_REEQGXGXES   reeʹǧǧes:rẹ%^1VOW%{ʹØ%}gg
+* :es A-01_REEQGXGXES ;    reeʹǧǧes:rẹ%^1VOW%{ʹØ%}gges
 
 * LEXICON A_PUUQTTES   puuʹttes:pu%^1VOWtt
 * : A-01_PUUQTTES ;    puuʹttes:pu%^1VOWttes
@@ -1780,6 +1783,10 @@ CLASS 4 BISYLLABIC, LOW VOWEL, DIPHTHONG, PALATALIZATION
 IN PENULTIMATE E:0
 
 * LEXICON A-01_KAAQLLES  kääʹlles:källes
+* Yaml: **N-kaeaelles**
+* :%^RmVow VOONYS-STEM-PX ;  källs-
+
+* LEXICON A-01_REEQGXGXES  reeʹǧǧes:rẹ%^1VOW%{ʹØ%}gges
 * Yaml: **N-kaeaelles**
 * :%^RmVow VOONYS-STEM-PX ;  källs-
 
@@ -12434,6 +12441,10 @@ peiʹvv+N+Sg+Gen: **day/päivä**
 karies+N+Sg+Nom: **caries/hammasmätä**
 * *kariẹ^1VOW{ʹØ}s^PALE*
 * *karie00s0*
+
+reeʹǧǧes+A+Sg+Nom: **rich/rikas**
+* *rẹ:e^1VOW{ʹØ}gges^Pen^V2VV^Pen^PAL^Pen^PALK*
+* *reeʹǧǧes000000*
 
 ### VOWEL and ZERO ALTERNATION
 
