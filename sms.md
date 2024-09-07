@@ -14197,6 +14197,7 @@ NUM_LO
 * **LEXICON NUM-01_LO** kuttlo:kuttl 
 NUM-01_LO 
 * **+Der+Der/Ord+A:ååǥǥ A-ORD_NEELLJAD ;** This ordinal derivation 
+
 * **LEXICON NUM_LOAOAI** lååi:l  THIS looks like allegro 
 NUM_LOAOAI 
 
