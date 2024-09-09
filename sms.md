@@ -4978,9 +4978,9 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 * :%^PALE%^PAL%^XYY2IY SG-GEN ;  Num+Sg+Gen: kueiʹt
 * :%^PALE%^PAL%^XYY2IY PL-NOM ;  Num+Pl+Nom: kueiʹt
 
-* +Err/Orth+Use/SpellNoSugg:%^VOWRaise%^PALÕ%^PAL%^XYY2IY SG-ABE ;  Num+Sg+Gen: kueiʹt
-* +Err/Orth+Use/SpellNoSugg:%^VOWRaise%^PALÕ%^PAL%^XYY2IY SG-GEN ;  Num+Sg+Gen: kueiʹt
-* +Err/Orth+Use/SpellNoSugg:%^VOWRaise%^PALÕ%^PAL%^XYY2IY PL-NOM ;  Num+Pl+Nom: kueiʹt
+* +Err/Orth+Use/SpellNoSugg:%^VOWRaise%^PALÕ%^PAL%^XYY2IY SG-ABE ;  Num+Sg+Gen: kuõiʹt
+* +Err/Orth+Use/SpellNoSugg:%^VOWRaise%^PALÕ%^PAL%^XYY2IY SG-GEN ;  Num+Sg+Gen: kuõiʹt
+* +Err/Orth+Use/SpellNoSugg:%^VOWRaise%^PALÕ%^PAL%^XYY2IY PL-NOM ;  Num+Pl+Nom: kuõiʹt
 
 e.g. +Sg+Acc+PxPl3
 e.g. +Use/NG+Sg+Loc+PxSg1
