@@ -443,19 +443,19 @@ NomAct in MOsh
 * :%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: aiʹbbe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* :%^V2VV%^XYY2XY VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: aaibâž
+* :%^V2VV%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: aaibâž
 * +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
 
-* +Imprt+Sg3:%^V2VV%^VOWLower%^XYY2XY%>as K ;  (7)  Imprt.Sg3: ääibas
+* +Imprt+Sg3:%^V2VV%^VOWLower%^YXX2YX%>as K ;  (7)  Imprt.Sg3: ääibas
 Imprt+Sg3
 
 * : VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.13.ConNeg: aibbu
 Imprt+ConNegII, Pass+PrfPrc
 
-* :%^XYY2XY FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: aib»
+* :%^YXX2YX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: aib»
 
 * LEXICON V_TOBDDYD  tobddâd:to%^1VOW%{ʹØ%}bdd
 * LEXICON IV_TOBDDYD  tobddâd:to%^1VOW%{ʹØ%}bdd
@@ -477,20 +477,20 @@ NomAct in MOsh
 * :%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: toʹbdde
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* :%^V2VV%^XYY2XY VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: toobdâž
+* :%^V2VV%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: toobdâž
 * +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
 
-* +Imprt+Sg3:%^V2VV%^VOWLower%^XYY2XY%>as K ;  (7)  Imprt.Sg3: tååbdas
-* +Err/Orth:%^V2VV%^VOWLower%^XYY2XY CONDITIONAL ;  
+* +Imprt+Sg3:%^V2VV%^VOWLower%^YXX2YX%>as K ;  (7)  Imprt.Sg3: tååbdas
+* +Err/Orth:%^V2VV%^VOWLower%^YXX2YX CONDITIONAL ;  
 Imprt+Sg3
 
 * : VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.13.ConNeg: tobddu
 Imprt+ConNegII, Pass+PrfPrc
 
-* :%^XYY2XY FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: tobd»
+* :%^YXX2YX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: tobd»
 
 * LEXICON V_OHTTYD  õhttâd:õhtt
 * LEXICON IV_OHTTYD  õhttâd:õhtt
@@ -511,19 +511,19 @@ NomAct in MOsh
 * :%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: õʹhtte
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* :%^V2VV%^XYY2VY VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: õõutâž
+* :%^V2VV%^YXX2VX VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: õõutâž
 * +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
 
-* +Imprt+Sg3:%^V2VV%^VOWLower%^XYY2VY%>as K ;  (7)  Imprt.Sg3: ââutas
+* +Imprt+Sg3:%^V2VV%^VOWLower%^YXX2VX%>as K ;  (7)  Imprt.Sg3: ââutas
 Imprt+Sg3
 
 * : VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.13.ConNeg: õhttu
 Imprt+ConNegII, Pass+PrfPrc
 
-* :%^XYY2VY FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: õut»
+* :%^YXX2VX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: õut»
 
 * LEXICON V_KUOSKKYD  kuõskkâd:kuõskk
 * LEXICON IV_KUOSKKYD  kuõskkâd:kuõskk
@@ -544,13 +544,13 @@ NomAct in MOsh
 * :%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: kuõʹsǩǩe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* :%^XYY2XY VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: kuõskâž
+* :%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: kuõskâž
 * +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
 
-* +Imprt+Sg3:%^VOWLower%^XYY2XY%>as K ;  (7)  Ind.Imprt.Sg3: kuâskas
+* +Imprt+Sg3:%^VOWLower%^YXX2YX%>as K ;  (7)  Ind.Imprt.Sg3: kuâskas
 Imprt+Sg3
 
 * : VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.13.ConNeg: kuõskku
@@ -559,7 +559,7 @@ Imprt+ConNegII, Pass+PrfPrc
 * :%^VOWLower%>az K ;  (9)  Ind.Imprt.Pl3: kuâskkaz
 Imprt+Pl3
 
-* :%^XYY2XY FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: kuõsk»
+* :%^YXX2YX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: kuõsk»
 
 * LEXICON V_CHIOHTTYD  čiõhttâd:čiõ%{ʹØ%}h%{ʹØ%}tt
 * LEXICON IV_CHIOHTTYD  čiõhttâd:čiõ%{ʹØ%}h%{ʹØ%}tt
@@ -580,13 +580,13 @@ NomAct in MOsh
 * :%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: kuõʹsǩǩe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* :%^XYY2VY VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: čuõutâž
+* :%^YXX2VX VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: čuõutâž
 * +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
 
-* +Imprt+Sg3:%^VOWLower%^XYY2VY%>as K ;  (7)  Ind.Imprt.Sg3: čeâutas
+* +Imprt+Sg3:%^VOWLower%^YXX2VX%>as K ;  (7)  Ind.Imprt.Sg3: čeâutas
 Imprt+Sg3
 
 * : VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.13.ConNeg: čiõhttu
@@ -595,7 +595,7 @@ Imprt+ConNegII, Pass+PrfPrc
 * :%^VOWLower%>az K ;  (9)  Ind.Imprt.Pl3: čeâhttaz
 Imprt+Pl3
 
-* :%^XYY2VY FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: čiõut»
+* :%^YXX2VX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: čiõut»
 
 * LEXICON V_SKHIYNHKKYD  sǩiâŋkkâd:sǩiâŋkk
 * LEXICON V0_SKHIYNHKKYD  sǩiâŋkkâd:sǩiâŋkk
@@ -616,13 +616,13 @@ NomAct in MOsh
 * :%^PALE%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: sǩieʹŋǩǩe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* :%^XYY2XY VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: sǩiâŋkâž
+* :%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: sǩiâŋkâž
 * +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
 
-* +Imprt+Sg3:%^VOWLower%^XYY2XY%>as K ;  (7)  Ind.Imprt.Sg3: sǩeäŋkas
+* +Imprt+Sg3:%^VOWLower%^YXX2YX%>as K ;  (7)  Ind.Imprt.Sg3: sǩeäŋkas
 Imprt+Sg3
 
 * : VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.13.ConNeg: sǩiâŋkku
@@ -631,7 +631,7 @@ Imprt+ConNegII, Pass+PrfPrc
 * :%^VOWLower%>az K ;  (9)  Ind.Imprt.Pl3: sǩeäŋkkaz
 Imprt+Pl3
 
-* :%^XYY2XY FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: sǩiâŋk»
+* :%^YXX2YX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: sǩiâŋk»
 
 * LEXICON V_VUOIDDYD  čuõiggâd:čuõigg
 * LEXICON V0_VUOIDDYD  čuõiggâd:čuõigg
@@ -712,11 +712,11 @@ ExtraStrong-RaisedVowel-Palatalization
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-No-Palatalization
-* :%^V2VV%^XYY2XY VSUF-IND-PRS-CONNEG_ED ;  (5) lääul
+* :%^V2VV%^YXX2YX VSUF-IND-PRS-CONNEG_ED ;  (5) lääul
 Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 
 Weak-StableVowel-No-Palatalization
-* :%^V2VV%^XYY2XY%> VSUF-I-POTKOND_AD ;   (6) +V+Pot+Sg3: lääulež
+* :%^V2VV%^YXX2YX%> VSUF-I-POTKOND_AD ;   (6) +V+Pot+Sg3: lääulež
 * +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_AD ;   (6) ERR
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
 
@@ -751,7 +751,7 @@ Actio, ActEss, PrsPrc, NomAct in MOsh
 * :%^VOWRaise VSUF-IND-PRT-PL3_AD ;  (4) Ind.Prt.Pl3: sarnnu
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* :%^V2VV%^XYY2XY VSUF-I-POTKOND_AD ;  (5-7) +Imprt+Sg2: säärn
+* :%^V2VV%^YXX2YX VSUF-I-POTKOND_AD ;  (5-7) +Imprt+Sg2: säärn
 * +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_AD ;  (5-7) ERR
 Imprt+ConNeg, Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, Ind+Prs+Sg1, Ind+Prs+Sg2
 +Ger, +VAbess, +Pot, +Cond, +Imprt+Sg3
@@ -800,7 +800,7 @@ Actio, ActEss, PrsPrc, NomAct in MOsh
 * :%^VOWRaise VSUF-IND-PRT-PL3_AD ;  (4) Ind.Prt.Pl3: pohssu
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* :%^V2VV%^XYY2VY VSUF-I-POTKOND_AD ;  (5-7) +Imprt+Sg2: pååus
+* :%^V2VV%^YXX2VX VSUF-I-POTKOND_AD ;  (5-7) +Imprt+Sg2: pååus
 * +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_AD ;  (5-7) ERR
 Imprt+ConNeg, Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, Ind+Prs+Sg1, Ind+Prs+Sg2
 +Ger, +VAbess, +Pot, +Cond, +Imprt+Sg3
@@ -1213,15 +1213,15 @@ ExtraStrong-RaisedVowel-Palatalization
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
-* :%^V2VV%^PAL%^XYY2XY VSUF-IND-PRS-CONNEG_ED ;  (5) juuʹrd
+* :%^V2VV%^PAL%^YXX2YX VSUF-IND-PRS-CONNEG_ED ;  (5) juuʹrd
 Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 
 Weak-RaisedVowel-Palatalization
-* :%^V2VV%^PAL%^XYY2XY VSUF-POTENTIAL_ED ;  (6) +V+Pot+Sg3: juuʹrdež
+* :%^V2VV%^PAL%^YXX2YX VSUF-POTENTIAL_ED ;  (6) +V+Pot+Sg3: juuʹrdež
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
 
 Weak-LoweredVowel-No-palatalization
-* :%^V2VV%^VOWLower%^XYY2XY%> VSUF-CONDITIONAL_ED ;  (7) +V+Imprt+Sg3: joordas
+* :%^V2VV%^VOWLower%^YXX2YX%> VSUF-CONDITIONAL_ED ;  (7) +V+Imprt+Sg3: joordas
 Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 
 ExtraStrong-RaisedVowel-No-palatalization
@@ -1238,7 +1238,7 @@ Imprt+Pl3
 * :%^PAL FOR-VSUF-PRSPRC_ED ;  (11) +V+PrsPrc: juʹrddi
 
 (12) Weak-RaisedVowel-NoPalatalization
-* :%^V2VV%^XYY2XY VSUF-CHED_ED ;   (12) +Der+Der/ched: juurd-
+* :%^V2VV%^YXX2YX VSUF-CHED_ED ;   (12) +Der+Der/ched: juurd-
 
 * LEXICON V_PUQHTTED  puʹhtted:pu%^1VOW%{ʹØ%}h%{ʹØ%}tt
 * LEXICON V0_PUQHTTED  puʹhtted:pu%^1VOW%{ʹØ%}h%{ʹØ%}tt
@@ -1260,16 +1260,16 @@ ExtraStrong-RaisedVowel-Palatalization
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
-* :%^PAL%^XYY2VY VSUF-IND-PRS-CONNEG_ED ;  (5) puuʹt
-* +Use/NG+Err/Orth:%^V2VV%^VOWLower%^PAL%^XYY2VY VSUF-IND-PRS-CONNEG_ED ;  (5) poouʹt
+* :%^PAL%^YXX2VX VSUF-IND-PRS-CONNEG_ED ;  (5) puuʹt
+* +Use/NG+Err/Orth:%^V2VV%^VOWLower%^PAL%^YXX2VX VSUF-IND-PRS-CONNEG_ED ;  (5) poouʹt
 Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 
 Weak-RaisedVowel-Palatalization
-* :%^V2VV%^PAL%^XYY2VY VSUF-POTENTIAL_ED ;  (6) +V+Pot+Sg3: puuʹtež
+* :%^V2VV%^PAL%^YXX2VX VSUF-POTENTIAL_ED ;  (6) +V+Pot+Sg3: puuʹtež
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
 
 Weak-LoweredVowel-No-palatalization
-* :%^V2VV%^VOWLower%^XYY2VY%> VSUF-CONDITIONAL_ED ;  (7) +V+Imprt+Sg3: pooutas
+* :%^V2VV%^VOWLower%^YXX2VX%> VSUF-CONDITIONAL_ED ;  (7) +V+Imprt+Sg3: pooutas
 Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 
 ExtraStrong-RaisedVowel-No-palatalization
@@ -1286,7 +1286,7 @@ Imprt+Pl3
 * :%^PAL FOR-VSUF-PRSPRC_ED ;  (11) +V+PrsPrc: puʹhtti
 
 (12) Weak-RaisedVowel-NoPalatalization
-* :%^XYY2VY VSUF-CHED_ED ;   (12) +Der+Der/ched: puut-
+* :%^YXX2VX VSUF-CHED_ED ;   (12) +Der+Der/ched: puut-
 
 * LEXICON V_UQVDDED  uʹvdded:u%^1VOW%{ʹØ%}v%{ʹØ%}dd
 * LEXICON TV_UQVDDED  uʹvdded:u%^1VOW%{ʹØ%}v%{ʹØ%}dd
@@ -1297,11 +1297,11 @@ V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
 Strong-LoweredVowel-No-palatalization xyy2Vyy
-* :%^VOWLower%^XYY2VYY VSUF-IND-PRS-SG3_ED ;  (2) +V+Ind+Prs+Sg3: oudd
+* :%^VOWLower%^YXX2VXX VSUF-IND-PRS-SG3_ED ;  (2) +V+Ind+Prs+Sg3: oudd
 +V+Ind+Prs+Sg3, Ind.Prt.ConNeg, PrfPrc
 
 ExtraStrong-LoweredVowel-Palatalization xyy2Vyy
-* +Ind+Prs+Pl3:%^VOWLower%^PAL%^XYY2VYY%>e K ;  (3) +V+Ind+Prs+Pl3: ouʹdde
+* +Ind+Prs+Pl3:%^VOWLower%^PAL%^YXX2VXX%>e K ;  (3) +V+Ind+Prs+Pl3: ouʹdde
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
@@ -1309,15 +1309,15 @@ ExtraStrong-RaisedVowel-Palatalization
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
-* :%^PAL%^XYY2VY VSUF-IND-PRS-CONNEG_ED ;   (5) uuʹd
+* :%^PAL%^YXX2VX VSUF-IND-PRS-CONNEG_ED ;   (5) uuʹd
 Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 
 Weak-RaisedVowel-Palatalization
-* :%^PAL%^XYY2VY%> VSUF-POTENTIAL_ED ;  (6) +V+Pot+Sg3: !! uuʹdež
+* :%^PAL%^YXX2VX%> VSUF-POTENTIAL_ED ;  (6) +V+Pot+Sg3: !! uuʹdež
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
 
 Weak-LoweredVowel-No-palatalization
-* :%^V2VV%^VOWLower%^XYY2VY%> VSUF-CONDITIONAL_ED ;  (7) +V+Imprt+Sg3: ooudas
+* :%^V2VV%^VOWLower%^YXX2VX%> VSUF-CONDITIONAL_ED ;  (7) +V+Imprt+Sg3: ooudas
 Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 
 ExtraStrong-RaisedVowel-No-palatalization
@@ -1325,7 +1325,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization xyy2Vyy
-* :%^VOWLower%^XYY2VYY VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: ouddaz
+* :%^VOWLower%^YXX2VXX VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: ouddaz
 Imprt+Pl3
 
 (10) Allegro for incoative: uʹvd»
@@ -1334,7 +1334,7 @@ Imprt+Pl3
 * :%^PAL FOR-VSUF-PRSPRC_ED ;  (11) +V+PrsPrc: uʹvddi
 
 (12) Weak-RaisedVowel-NoPalatalization
-* :%^XYY2VY VSUF-CHED_ED ;   (12) +Der+Der/ched: uud-
+* :%^YXX2VX VSUF-CHED_ED ;   (12) +Der+Der/ched: uud-
 
 * LEXICON V_TIEQTTED  tieʹtted:teâtt
 * LEXICON V0_TIEQTTED  tieʹtted:teâtt
@@ -1407,15 +1407,15 @@ ExtraStrong-RaisedVowel-Palatalization
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
-* :%^VOWRaise%^PALE%^PAL%^XYY2XY VSUF-IND-PRS-CONNEG_ED ;  (5) tieʹđ-
+* :%^VOWRaise%^PALE%^PAL%^YXX2YX VSUF-IND-PRS-CONNEG_ED ;  (5) tieʹđ-
 Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 
 Weak-RaisedVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL%^XYY2XY%> VSUF-POTENTIAL_ED ;   (6) +V+Pot+Sg3: !! tieʹđež
+* :%^VOWRaise%^PALE%^PAL%^YXX2YX%> VSUF-POTENTIAL_ED ;   (6) +V+Pot+Sg3: !! tieʹđež
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
 
 Weak-LoweredVowel-No-palatalization
-* :%^XYY2XY VSUF-CONDITIONAL_ED ;  (7) +V+Imprt+Sg3: ǩeâldas
+* :%^YXX2YX VSUF-CONDITIONAL_ED ;  (7) +V+Imprt+Sg3: ǩeâldas
 Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 
 ExtraStrong-RaisedVowel-No-palatalization
@@ -1433,7 +1433,7 @@ Imprt+Pl3
 * :%^VOWRaise%^PALE%^PAL%> FOR-VSUF-PRSPRC_ED ;  (11) +V+Act+PrsPrc: ǩieʹlddi
 
 (12) Weak-RaisedVowel-NoPalatalization
-* :%^VOWRaise%^XYY2XY VSUF-CHED_ED ;   (12) +Der+Der/ched: ǩiõld-
+* :%^VOWRaise%^YXX2YX VSUF-CHED_ED ;   (12) +Der+Der/ched: ǩiõld-
 
 * LEXICON V_SUIQTTED  suiʹtted:suitt
 * LEXICON V0_SUIQTTED  suiʹtted:suitt
@@ -1442,7 +1442,7 @@ Imprt+Pl3
 * :%^PAL FOR-VSUF-PRSPRC_ED ;  (11) 
 
 (12) Weak-RaisedVowel-NoPalatalization
-* :%^V2VV%^XYY2XY VSUF-CHED_ED ;   (12) +Der+Der/ched: suuit-
+* :%^V2VV%^YXX2YX VSUF-CHED_ED ;   (12) +Der+Der/ched: suuit-
 
 * LEXICON V_VUEQRDDED  vueʹlǧǧed:vuâlgg
 * LEXICON IV_VUEQRDDED  vueʹlǧǧed:vuâlgg
@@ -1450,48 +1450,48 @@ Imprt+Pl3
 1.e.
 1c
 * Yaml: **V-juekked**
-XYY-HighVowel-Palatalization
+YXX-HighVowel-Palatalization
 Height=0, PAL=+, V=0, C=0, âae=e
 * :%^PALE%^PAL VSUF-INF_ED ;  (1) +V+Inf: vueʹlǧǧed
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
-XYY-HighVowel-No-palatalization
+YXX-HighVowel-No-palatalization
 Height=0, PAL=-, V=0, C=0, âae=e
 * : VSUF-IND-PRS-SG3_ED ;  (2) +V+Ind+Prs+Sg3: vuâlgg
 +V+Ind+Prs+Sg3, Ind.Prt.ConNeg, PrfPrc
 
-XYY-HighVowel-Palatalization !lowered
+YXX-HighVowel-Palatalization !lowered
 Height=-, PAL=+, V=-, C=+, âae=e
 * +Ind+Prs+Pl3:%^PALE%^PAL%>e K ;  (3) +V+Ind+Prs+Pl3: vueʹlǧǧe
 +V+Ind+Prs+Pl3
 
-XYY-RaisedVowel-Palatalization
+YXX-RaisedVowel-Palatalization
 Height=+, PAL=+, V=-, C=+, âae=e
 * :%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: vuõʹlǧǧe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-2XY-StableV-Palatalization
+2YX-StableV-Palatalization
 Height=0, PAL=+, V=+, C=-, âae=e
-* :%^PALE%^PAL%^XYY2XY VSUF-IND-PRS-CONNEG_ED ;  (5) +V+Imprt+Sg2: vueʹlj
+* :%^PALE%^PAL%^YXX2YX VSUF-IND-PRS-CONNEG_ED ;  (5) +V+Imprt+Sg2: vueʹlj
 Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 
-2XY-RaisedVowel-Palatalization
+2YX-RaisedVowel-Palatalization
 Height=+, PAL=+, V=+, C=-, âae=e
-* :%^VOWRaise%^PAL%^XYY2XY%> VSUF-POTENTIAL_ED ;   (6) +V+Pot+Sg3: !! vuõʹljež
+* :%^VOWRaise%^PAL%^YXX2YX%> VSUF-POTENTIAL_ED ;   (6) +V+Pot+Sg3: !! vuõʹljež
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, 
 
-2XY-LoweredVowel-No-palatalization
+2YX-LoweredVowel-No-palatalization
 Height=0, PAL=-, V=+, C=-, âae=e
-* :%^XYY2XY%> VSUF-CONDITIONAL_ED ;  (7) +V+Imprt+Sg3: vuâlǥas
+* :%^YXX2YX%> VSUF-CONDITIONAL_ED ;  (7) +V+Imprt+Sg3: vuâlǥas
 Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 
-XYY-RaisedVowel-No-palatalization 
+YXX-RaisedVowel-No-palatalization 
 Height=+, PAL=-, V=-, C=+, âae=e
 * :%^VOWRaise VSUF-IMPRT-CONNEGII_ED ;  (8) +V+Imprt+ConNegII: vuõlggu
 Imprt+ConNeg, Pass+PrfPrc
 
-XYY-HighVowel-No-palatalization
+YXX-HighVowel-No-palatalization
 Height=-, PAL=-, V=-, C=+, âae=e
 * : VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: vuâlggaz
 Imprt+Pl3
@@ -1506,7 +1506,7 @@ Height=+, PAL=+, V=0, C=0, âae=e
 
 (12) Weak-RaisedVowel-NoPalatalization
 Height=+, PAL=-, V=+, C=-, âae=e
-* :%^VOWRaise%^XYY2XY VSUF-CHED_ED ;   (12) +Der+Der/ched: vuõlǥ-
+* :%^VOWRaise%^YXX2YX VSUF-CHED_ED ;   (12) +Der+Der/ched: vuõlǥ-
 
 (13) vuõlggled, joottled -Âled be about to leave
 Height=+, PAL=-, V=0, C=0, âae=e
@@ -1516,40 +1516,40 @@ Height=+, PAL=-, V=0, C=0, âae=e
 1.e.
 1c
 * Yaml: **V-juekked**
-XYY-HighVowel-Palatalization
+YXX-HighVowel-Palatalization
 * :%^PALE%^PAL VSUF-INF_ED ;  (1) +V+Inf: vueʹhssed
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
-XYY-HighVowel-No-palatalization
+YXX-HighVowel-No-palatalization
 * : VSUF-IND-PRS-SG3_ED ;  (2) +V+Ind+Prs+Sg3: vuâhss
 +V+Ind+Prs+Sg3, Ind.Prt.ConNeg, PrfPrc
 
-XYY-HighVowel-Palatalization
+YXX-HighVowel-Palatalization
 * +Ind+Prs+Pl3:%^PALE%^PAL%>e K ;  (3) +V+Ind+Prs+Pl3: vueʹhsse
 +V+Ind+Prs+Pl3
 
-XYY-RaisedVowel-Palatalization
+YXX-RaisedVowel-Palatalization
 * :%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: vuõʹhsse
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-2XY-StableV-Palatalization
-* :%^PALE%^PAL%^XYY2VY VSUF-IND-PRS-CONNEG_ED ;  (5) +V+Imprt+Sg2: vueuʹs
+2YX-StableV-Palatalization
+* :%^PALE%^PAL%^YXX2VX VSUF-IND-PRS-CONNEG_ED ;  (5) +V+Imprt+Sg2: vueuʹs
 Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 
-2XY-RaisedVowel-Palatalization
-* :%^VOWRaise%^PAL%^XYY2VY%> VSUF-POTENTIAL_ED ;   (6) +V+Pot+Sg3: !! vuõuʹsež
+2YX-RaisedVowel-Palatalization
+* :%^VOWRaise%^PAL%^YXX2VX%> VSUF-POTENTIAL_ED ;   (6) +V+Pot+Sg3: !! vuõuʹsež
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, 
 
-2XY-LoweredVowel-No-palatalization
-* :%^XYY2VY%> VSUF-CONDITIONAL_ED ;  (7) +V+Imprt+Sg3: vuâusas
+2YX-LoweredVowel-No-palatalization
+* :%^YXX2VX%> VSUF-CONDITIONAL_ED ;  (7) +V+Imprt+Sg3: vuâusas
 Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 
-XYY-RaisedVowel-No-palatalization
+YXX-RaisedVowel-No-palatalization
 * :%^VOWRaise VSUF-IMPRT-CONNEGII_ED ;  (8) +V+Imprt+ConNegII: vuõhssu
 Imprt+ConNeg, Pass+PrfPrc
 
-XYY-HighVowel-No-palatalization
+YXX-HighVowel-No-palatalization
 * : VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: vuâhssaz
 Imprt+Pl3
 
@@ -1559,7 +1559,7 @@ Imprt+Pl3
 * :%^VOWRaise%^PAL FOR-VSUF-PRSPRC_ED ;  (11) +V+Act+PrsPrc: vuõʹhssi
 
 (12) Weak-RaisedVowel-NoPalatalization
-* :%^VOWRaise%^XYY2VY VSUF-CHED_ED ;   (12) +Der+Der/ched: vuõus-
+* :%^VOWRaise%^YXX2VX VSUF-CHED_ED ;   (12) +Der+Der/ched: vuõus-
 
 ### CLASS 1 LOW VOWEL, PALATALIZATION
 EVEN-SYLLABLE STEMS IN -ED
@@ -1773,15 +1773,15 @@ ExtraStrong-RaisedVowel-Palatalization
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
-* :%^V2VV%^PAL%^XYY2XY VSUF-IND-PRS-CONNEG_ED ;  (5) ceeʹpc-
+* :%^V2VV%^PAL%^YXX2YX VSUF-IND-PRS-CONNEG_ED ;  (5) ceeʹpc-
 Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 
 Weak-RaisedVowel-Palatalization
-* :%^V2VV%^VOWRaise%^PAL%^XYY2XY%> VSUF-POTENTIAL_ED ;   (6) +V+Pot+Sg3: ciiʹpcež
+* :%^V2VV%^VOWRaise%^PAL%^YXX2YX%> VSUF-POTENTIAL_ED ;   (6) +V+Pot+Sg3: ciiʹpcež
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
 
 Weak-LowVowel-No-palatalization
-* :%^V2VV%^XYY2XY VSUF-CONDITIONAL_ED ;  (7) +V+Imprt+Sg3: ceepcas
+* :%^V2VV%^YXX2YX VSUF-CONDITIONAL_ED ;  (7) +V+Imprt+Sg3: ceepcas
 Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 
 ExtraStrong-RaisedVowel-No-palatalization
@@ -1798,7 +1798,7 @@ Imprt+Pl3
 * :%^VOWRaise%^PAL FOR-VSUF-PRSPRC_ED ;  (11) +V+Act+PrsPrc: ciʹpcci
 
 (12) Weak-RaisedVowel-NoPalatalization
-* :%^V2VV%^VOWRaise%^XYY2XY VSUF-CHED_ED ;   (12) +Der+Der/ched: ciipc-
+* :%^V2VV%^VOWRaise%^YXX2YX VSUF-CHED_ED ;   (12) +Der+Der/ched: ciipc-
 
 * LEXICON V_KAQDDED  käʹdded:kädd
 * LEXICON IV_KAQDDED  käʹdded:kädd
@@ -2155,7 +2155,7 @@ Imprt+Pl3
 * :%^VOWRaise%^PALE%^PAL FOR-VSUF-PRSPRC_ED ;  (11) vueiʹnni
 
 (12)
-* :%^VOWRaise%^XYY2XY VSUF-CHED_ED ;   (12) +Der+Der/ched: 
+* :%^VOWRaise%^YXX2YX VSUF-CHED_ED ;   (12) +Der+Der/ched: 
 
 * LEXICON V_VUEAQDHDHED  vueʹđđed:vuäđđ
 * LEXICON V0_VUEAQDHDHED  vueʹđđed:vuäđđ
@@ -2213,7 +2213,7 @@ vuäˈđeškuätt
 * :%^PAL%^PALK%> FOR-VSUF-PRSPRC_ED ;  (11) leuʹǩǩi
 
 (12)
-* :%^V2VV%^VOWRaise%^XYY2XY VSUF-CHED_ED ;   (12) +Der+Der/ched: 
+* :%^V2VV%^VOWRaise%^YXX2YX VSUF-CHED_ED ;   (12) +Der+Der/ched: 
 
 * LEXICON V_TAIQDDED  täiʹdded:tä%^1VOWi%{ʹØ%}dd
 * LEXICON V0_TAIQDDED  täiʹdded:tä%^1VOWi%{ʹØ%}dd
@@ -2236,12 +2236,12 @@ vuäˈđeškuätt
 Imprt+Pl3
 
 Allegro (10)
-* :%^PAL%^XYY2XY FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) täiʹd- 
+* :%^PAL%^YXX2YX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) täiʹd- 
 
 (11) Present Participle:
 * :%^VOWRaise%^PAL FOR-VSUF-PRSPRC_ED ;  (11) taiʹddi
 (12)
-* :%^V2VV%^VOWRaise%^XYY2XY VSUF-CHED_ED ;   (12) +Der+Der/ched: 
+* :%^V2VV%^VOWRaise%^YXX2YX VSUF-CHED_ED ;   (12) +Der+Der/ched: 
 
 * LEXICON V_PEIQTTED  peiʹtted:pẹ%^1VOWi%{ʹØ%}tt
 * LEXICON TV_PEIQTTED  peiʹtted:pẹ%^1VOWi%{ʹØ%}tt
@@ -2250,7 +2250,7 @@ Allegro (10)
 (11) Present Participle:
 * :%^PAL FOR-VSUF-PRSPRC_ED ;  (11) taiʹddi
 (12)
-* :%^V2VV%^XYY2XY VSUF-CHED_ED ;   (12) +Der+Der/ched: peeitčed
+* :%^V2VV%^YXX2YX VSUF-CHED_ED ;   (12) +Der+Der/ched: peeitčed
 
 * LEXICON V_CEAQLKHKHED  ceäʹlǩǩed:ceä%{ʹØ%}lkk
 * LEXICON IV_CEAQLKHKHED  ceäʹlǩǩed:ceä%{ʹØ%}lkk
@@ -2269,13 +2269,13 @@ Actio, ActEss, PrsPrc
 * :%^VOWRaise%^PALE%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: cieʹlǩǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* :%^VOWRaise%^PALẸ%^PAL%^XYY2XY VSUF-IND-PRS-CONNEG_ED ;  (5) +V+Imprt+Sg2: ciẹʹlǩ
+* :%^VOWRaise%^PALẸ%^PAL%^YXX2YX VSUF-IND-PRS-CONNEG_ED ;  (5) +V+Imprt+Sg2: ciẹʹlǩ
 Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 
-* :%^VOWRaise%^PALE%^PAL%^XYY2XY%> VSUF-POTENTIAL_ED ;  (6) +V+Pot+Sg3: cieʹlǩi
+* :%^VOWRaise%^PALE%^PAL%^YXX2YX%> VSUF-POTENTIAL_ED ;  (6) +V+Pot+Sg3: cieʹlǩi
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
 
-* :%^XYY2XY%> VSUF-CONDITIONAL_ED ;  (7) +V+Ind+Prs+Sg1: ceälkam
+* :%^YXX2YX%> VSUF-CONDITIONAL_ED ;  (7) +V+Ind+Prs+Sg1: ceälkam
 Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 
 * :%^VOWRaise VSUF-IMPRT-CONNEGII_ED ;  (8) +V+Imprt+ConNegII: ciâlkku
@@ -2289,7 +2289,7 @@ Allegro (10)
 (11) Present Participle:
 * :%^VOWRaise%^PALE%^PAL FOR-VSUF-PRSPRC_ED ;  (11) +V+Act+PrsPrc: cieʹlǩǩi
 (12)
-* :%^VOWRaise%^XYY2XY VSUF-CHED_ED ;   (12) +Der+Der/ched: 
+* :%^VOWRaise%^YXX2YX VSUF-CHED_ED ;   (12) +Der+Der/ched: 
 
 * ceäʹlǩǩed # examples:*
 
@@ -2388,7 +2388,7 @@ Imprt+Pl3
 (11) Present Participle:
 (11) +V+Act+PrsPrc: maʹhssi
 (12)
-* :%^V2VV%^VOWRaise%^XYY2VY VSUF-CHED_ED ;   (12) +Der+Der/ched: 
+* :%^V2VV%^VOWRaise%^YXX2VX VSUF-CHED_ED ;   (12) +Der+Der/ched: 
 
 DERIVED VERBS WITH PENULTIMATE VOWEL LOSS AND CHANGE
 

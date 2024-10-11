@@ -118,12 +118,12 @@ CHARACTERISTIC BREAKDOWN 2015-02-17
 * __%^CCC2C:0__ - Extra Strong to Weak consonant
 * __%^CCC2CAllegro:0__ - Extra Strong to Weak consonant
 * __%^CCC2CC:0__ - Extra Strong to Strong consonant
-* __%^XYY2XY:0__ - Shortens consonant cluster
-* __%^XYY2VY:0__ - Consonant cluster to vowel and consonant sijdd:siid
-* __%^XYY2VYY:0__ - Consonant cluster to vowel and geminate uvdd:ouʹdd
-* __%^XYY2IY:0__ - Consonant cluster to i  and consonant kueʹhtt:kueiʹt
-* __%^VY2XYY:0__ - Consonant cluster i/u to j/v
-* __%^VYY2XYY:0__ - Consonant cluster i/u to j/v
+* __%^YXX2YX:0__ - Shortens consonant cluster
+* __%^YXX2VX:0__ - Consonant cluster to vowel and consonant sijdd:siid
+* __%^YXX2VXX:0__ - Consonant cluster to vowel and geminate uvdd:ouʹdd
+* __%^YXX2IX:0__ - Consonant cluster to i  and consonant kueʹhtt:kueiʹt
+* __%^VX2YXX:0__ - Consonant cluster i/u to j/v
+* __%^VXX2YXX:0__ - Consonant cluster i/u to j/v
 * __%^KK2ZERO:0__ - nââʹer
 * __%^KKK2ZERO:0__ - jeeʹel
 * __%^KKK2GG:0__ - Geminate weakening
@@ -226,8 +226,8 @@ End of alphabet definitions
 * Ltrs = Vow Cns ;
 
 * Dummy = %^PAL %^PALE %^PALẸ %^PALÕ %^PALÄ %^PALK
-  %^CC2C %^CCC2C %^CCC2CC %^XYY2IY %^XYY2XY
-  %^KK2GG %^XYY2VY %^KKK2GG %^KKK2ZERO %^C2CC
+  %^CC2C %^CCC2C %^CCC2CC %^YXX2IX %^YXX2YX
+  %^KK2GG %^YXX2VX %^KKK2GG %^KKK2ZERO %^C2CC
   %^J2I %^Pen %^V2VV %^VOWLower %^RmVow
   %^PenVow2a %^RmCns %^VC %^V2VV
   %^VOWRaise %^VOWSH %^CLong %^K2GG %> ; - triggers in Sg.Nom and Sg.Gen (Note word-final right arrow bracket 2024-01-10)
@@ -277,14 +277,14 @@ possible triggers between vowel length and Palatalization
 
 `PenBetweenStemAndStemFinalVoicing = [PenBetweenStemAndVowelLoss (%^RmVow:\](%^PenVow2a:)) ;`
 
-`PenBetweenPALNoAndMorph = [(%^Pen: [(%^Allegro:) %^CC2C:\|(%^Allegro:) %^CC2CAllegro:]\|%^Pen: %^C2CC:\|%^Pen: %^XYY2XY:\|%^Pen: %^KK2GG:\|%^Pen: %^CC2CCC:\|%^Pen: %^CCC2C:\|%^Pen: %^CCC2CC:\|%^Pen: %^XYY2VY:\|%^Pen: %^XYY2VYY:\](%^Pen: %^KKK2GG:) RBound ) ;`
+`PenBetweenPALNoAndMorph = [(%^Pen: [(%^Allegro:) %^CC2C:\|(%^Allegro:) %^CC2CAllegro:]\|%^Pen: %^C2CC:\|%^Pen: %^YXX2YX:\|%^Pen: %^KK2GG:\|%^Pen: %^CC2CCC:\|%^Pen: %^CCC2C:\|%^Pen: %^CCC2CC:\|%^Pen: %^YXX2VX:\|%^Pen: %^YXX2VXX:\](%^Pen: %^KKK2GG:) RBound ) ;`
 
 used in compounding Cmp/SgNom and Cmp/SgGen
-`SgNomGen = [((%^PALE: %^PAL:) %^CCC2C:\|(%^PALE: %^PAL:) %^CCC2CC:\|%^PALẸ:\|[%^PALE:\|%^PALÕ:] %^PAL: %^XYY2IY:\|[%^PALẸ:\|%^PALE:] %^PAL: %^XYY2XY:\|((%^PALE:) %^PAL:) %^KK2GG:\|(%^PALE:) %^PAL:\| ((%^PALE:) %^PAL:) (%^J2I:) %^CC2C:\](%^PAL: %^XYY2VY:));`
+`SgNomGen = [((%^PALE: %^PAL:) %^CCC2C:\|(%^PALE: %^PAL:) %^CCC2CC:\|%^PALẸ:\|[%^PALE:\|%^PALÕ:] %^PAL: %^YXX2IX:\|[%^PALẸ:\|%^PALE:] %^PAL: %^YXX2YX:\|((%^PALE:) %^PAL:) %^KK2GG:\|(%^PALE:) %^PAL:\| ((%^PALE:) %^PAL:) (%^J2I:) %^CC2C:\](%^PAL: %^YXX2VX:));`
 
 neutral to consonant length
 
-`CNeutrGrade = [([(%^Allegro:) %^CC2C:\|(%^Allegro:) %^CC2CAllegro:] \|[%^C2CC:] \|%^CC2CCC: \|%^KK2GG: \|%^KKK2GG: \|%^XYY2VY: \|%^XYY2VYY:\](%^CCC2CC: )) ;`
+`CNeutrGrade = [([(%^Allegro:) %^CC2C:\|(%^Allegro:) %^CC2CAllegro:] \|[%^C2CC:] \|%^CC2CCC: \|%^KK2GG: \|%^KKK2GG: \|%^YXX2VX: \|%^YXX2VXX:\](%^CCC2CC: )) ;`
 
 neutral to vowel and consonant length
 
@@ -292,7 +292,7 @@ neutral to vowel and consonant length
 
 `NoVowRaise = \[ %^VOWRaise: \| #]* [#\](.#.) ;`
 
-`NoCnsDummy = \[ %^CC2C: \| %^CCC2C: \| %^CCC2CC: \| %^XYY2IY: \| %^XYY2XY: \| %^KK2GG: \| %^XYY2VY: \| %^KKK2GG: \| %^KKK2ZERO: \| %^C2CC: \| %^J2I: \| %^RmCns: \| %^K2GG: \]( # )* ;`
+`NoCnsDummy = \[ %^CC2C: \| %^CCC2C: \| %^CCC2CC: \| %^YXX2IX: \| %^YXX2YX: \| %^KK2GG: \| %^YXX2VX: \| %^KKK2GG: \| %^KKK2ZERO: \| %^C2CC: \| %^J2I: \| %^RmCns: \| %^K2GG: \]( # )* ;`
 
 `SurfaceDiphthong = [ :e :ä \| :e :â \| :i :õ \| :i :â \| :i :e \| :i :ẹ \| :u :â \| :u :õ \| :u :å \| :u :ä \| :u :e \]( :u :ẹ ) ;`
 

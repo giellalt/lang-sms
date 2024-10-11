@@ -665,12 +665,12 @@ CHARACTERISTIC BREAKDOWN 2015-02-17
 * **%^CCC2C** Extra Strong to Weak consonant 
 * **%^CCC2CAllegro** Extra Strong to Weak consonant 
 * **%^CCC2CC** Extra Strong to Strong consonant 
-* **%^XYY2XY** Shortens consonant cluster 
-* **%^XYY2VY** Consonant cluster to vowel and consonant sijdd:siid 
-* **%^XYY2VYY** Consonant cluster to vowel and geminate uvdd:ouʹdd 
-* **%^XYY2IY** Consonant cluster to i  and consonant kueʹhtt:kueiʹt 
-* **%^VY2XYY** Consonant cluster i/u to j/v 
-* **%^VYY2XYY** Consonant cluster i/u to j/v 
+* **%^YXX2YX** Shortens consonant cluster 
+* **%^YXX2VX** Consonant cluster to vowel and consonant sijdd:siid 
+* **%^YXX2VXX** Consonant cluster to vowel and geminate uvdd:ouʹdd 
+* **%^YXX2IX** Consonant cluster to i  and consonant kueʹhtt:kueiʹt 
+* **%^VX2YXX** Consonant cluster i/u to j/v 
+* **%^VXX2YXX** Consonant cluster i/u to j/v 
 * **%^KKK2GG** Geminate weakening 
 * **%^KKK2G** Strong Geminate allegro 
 * **%^KK2GG** Geminate weakening     jokk:jooǥǥ 
