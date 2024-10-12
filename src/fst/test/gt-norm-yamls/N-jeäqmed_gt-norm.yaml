@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Noun - jeäʹmed 2b or D-supistuma emäntä: # Noun - full paradigm
+     jeäʹmed+N+Sg+Nom: jeäʹmed
+     jeäʹmed+N+Sg+Gen: jeäʹmed
+     jeäʹmed+N+Sg+Acc: jeäʹmed
+     jeäʹmed+N+Sg+Ill: [jeäʹmää, jeäʹmda]
+     jeäʹmed+N+Sg+Loc: [jeäʹmeest, jeäʹmdest]
+     jeäʹmed+N+Sg+Com: [jeäʹmiin, jeäʹmdin]
+     jeäʹmed+N+Ess: [jeäʹmeen, jeäʹmden]
+     jeäʹmed+N+Par: [jeäʹmeed, jeäʹmded]
+     jeäʹmed+N+Sg+Abe: [jeäʹmedtaa, jeäʹmedtää]
+     jeäʹmed+N+Pl+Nom: jeäʹmed
+     jeäʹmed+N+Pl+Gen: [jeäʹmii, jeäʹmdi]
+     jeäʹmed+N+Pl+Acc: [jeäʹmiid, jeäʹmdid]
+     jeäʹmed+N+Pl+Ill: [jeäʹmiid, jeäʹmdid]
+     jeäʹmed+N+Pl+Loc: [jeäʹmiin, jeäʹmdin]
+     jeäʹmed+N+Pl+Com: [jeäʹmiivuiʹm, jeäʹmdivuiʹm]
+     jeäʹmed+N+Pl+Abe: [jeäʹmiitää, jeäʹmiitaa, jeäʹmditää, jeäʹmditaa]
