@@ -2307,7 +2307,7 @@ strong_geminate, long_vowel
 CLASS 1 HIGH VOWEL, NO PALATALIZATION NOMINALS
 * LEXICON N_PAPP  papp:papp
 similar_to: N_PESS
-N_1Y-VCC
+N_1Y_VCC
 pa%{a0%}%{ʹ0%}%{p0%}p
 V%{V0%}%{ʹ0%}%{C0%}C
 Sg_Nom:
@@ -2387,7 +2387,7 @@ e.g. +Sg+Loc+PxSg3 pp:p papstes
 * *paaʹppe:* `papp+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_ALGG  põrtt:põ%^1VOW%{ʹØ%}rtt
-N_1Y-VXYY
+N_1Y_VYXX
 Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_xyy
 similar_to: N_TAALKYS, N_KOONTYR
 1.1.1.1.1.1. Sg_Nom="short_vowel|long_cluster" Sg_Gen="long_vowel|short_cluster" 
@@ -2453,7 +2453,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *aaʹlje:* `algg+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_AUTT  autt:a%^1VOWu%{ʹØ%}tt
-N_1Y-VUCC
+N_1Y_VUCC
 Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_vyy
 1.1.1.1.1.1. Sg_Nom="short_vowel|long_V-cluster" Sg_Gen="long_vowel|short_V-cluster"
 
@@ -2516,7 +2516,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *aauʹte:* `autt+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_VAHTT  vahtt:va%^1VOW%{ʹØ%}h%{ʹØ%}tt
-N_1Y-VHCC cf. SIJDD
+N_1Y_VHCC cf. SIJDD
 Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_hyy
 1.1.1.1.1.1. Sg_Nom="short_vowel|h-cluster" Sg_Gen="long_vowel|short_u-cluster" 
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
@@ -2571,7 +2571,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *vaauʹte:* `vahtt+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_KUSS  kuss:ku%^1VOW%{ʹØ%}ss
-N_1Y-VKK-HVVGG
+N_1Y_VKK_HVVGG
 Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_gem_ss_type
 1.1.1.1.1.1. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|voiced_geminate" 
 
@@ -2628,7 +2628,7 @@ similar_to:
 * *kuuʹzze:* `kuss+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_RUOCCC  ruõcc:ruõ%{ʹØ%}cˈc
-N_1Y-VWCCC-CC
+N_1Y_VWCCC_CC
 * LEXICON NMN_RUOCCC  ruõcc:ruõcˈc
 Sg_Nom: vow_di:vow_high:pal_no:cns_gem_long
 1.1.1.1.1.1. Sg_Nom="diphthong|long_geminate" Sg_Gen="diphthong|geminate" 
@@ -2670,7 +2670,7 @@ THIS IS NOT THE SAME AS N_MUORR
 * *ruõʹcce:* `ruõcc+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_CHUOSHKK  čuõškk:čuõ%{ʹØ%}škk
-N_1Y-VWXYY
+N_1Y_VWXYY
 Sg_Nom: vow_di:vow_high:pal_no:cns_xyy
 1.1.1.1.1.1. Sg_Nom="diphthong|long_cluster" Sg_Gen="diphthong|short_cluster"
 
@@ -2734,7 +2734,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *čuõʹšǩe:* `čuõškk+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_RUOIDD  ruõidd:ruõi%{ʹØ%}dd
-N_1Y-VWUCC
+N_1Y_VWUCC
 Sg_Nom: vow_di:vow_high:pal_no:cns_vxx
 1.1.1.1.1.1. Sg_Nom="diphthong|long_V-cluster" Sg_Gen="diphthong|short_V-cluster"
 
@@ -2790,7 +2790,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *ruõiʹde:* `ruõidd+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_PUOAVV  puåvv:puå%{ʹØ%}vv
-N_1Y-VWCC
+N_1Y_VWCC
 Sg_Nom: vow_di:vow_high:pal_no:cns_gem
 1.1.1.1.1.1. Sg_Nom="diphthong|geminate" Sg_Gen="diphthong|single_consonant" Sg_Ill="diphthong|vowel_e-coloration|long_geminate"
 
@@ -2857,7 +2857,7 @@ puåvv:puåvv
 * *pueʹve:* `puåvv+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_LIYKK  liâkk:liâ%{ʹØ%}kk
-N_1Y-VWCC
+N_1Y_VWKK
 * Yaml: **N-kiapp, N-puavv**
 
 * : SG-NOM ;	    			 (1) Sg.Nom: liâkk
@@ -2895,7 +2895,7 @@ N_1Y-VWCC
 * *lieʹjje:* `liâkk+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_SIYKKK  siâkˈk:siâ%{ʹØ%}kˈk
-N_1Y-VWCCC
+N_1Y_VWKKK
 Sg_Nom: vow_di:vow_high:pal_no:cns_gem_long
 1.1.1.1.1.1. Sg_Nom="diphthong|long_geminate" Sg_Gen="diphthong|geminate" Sg_Ill="diphthong|vowel_e-coloration|long_geminate"
 
@@ -2956,7 +2956,7 @@ siâkˈk:siâkˈk
 * *sieʹǩǩe:* `siâkk+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_SMIYHHH  siâkˈk:siâ%{ʹØ%}kˈk
-N_1Y-VWCCC
+N_1Y_VWCCC
 * Yaml: **N-siakk**
 
 * : SG-NOM ;	    			   smiâhˈh
@@ -2972,7 +2972,7 @@ N_1Y-VWCCC
 * +Der+Der/Dimin+N:%^PALE%^PAL N_KUUZZYZH-WITH-PAL ;   smieʹhˈh-
 
 * LEXICON N_MIYRKK  sǩiâŋkk:sǩiâ%{ʹØ%}ŋkk
-N_1Y-VWXYY
+N_1Y_VWXKK
 Sg_Nom: vow_di:vow_high:pal_no:cns_xyy
 1.1.1.1.1.1. Sg_Nom="diphthong|long_cluster" Sg_Gen="diphthong|short_cluster" Sg_Ill="diphthong|vowel_e-coloration|long_cluster"
 
@@ -3029,7 +3029,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *mieʹrǩe:* `miârkk+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_TOLL  toll:to%^1VOW%{ʹØ%}ll
-N_1Y-VCC-VVC
+N_1Y_VCC_VVC
 similar_to: N_AENHNH, N_STAEQLLJ, N_KOONJYL
 Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_gem
 1.1.1.1.1.2. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|single_consonant" 
@@ -3097,7 +3097,7 @@ single_consonant, long_vowel, palatalization, high_stem_vowel
 * *tooʹle:* `toll+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_SIJDD  sijdd:si%{ʹØ%}j%{ʹØ%}dd
-N_1Y-VJCC cf. _VAHTT
+N_1Y_VJCC cf. _VAHTT
 Sg_Nom: vow_mono:vow_short:vow_high_i_type:pal_no:cns_jyy
 1.1.1.1.1.3. Sg_Nom="short_vowel|strong_j-cluster" Sg_Gen="long_vowel|single_consonant" 
 
@@ -3162,7 +3162,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *siiʹde:* `sijdd+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_SAAKK  saakk:saa%{ʹØ%}kk
-N_1Y-VVKK
+N_1Y_VVKK
 similar_to: N_PAARR, N_SHLAAJJ
 Sg_Nom: vow_mono:vow_long:vow_high:pal_no:cns_gem_ss_type
 1.1.1.1.1.4. Sg_Nom="long_vowel|geminate" Sg_Gen="long_vowel|voiced_geminate" 
@@ -3220,7 +3220,7 @@ N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 * *saaʹjje:* `saakk+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_LUOSS  luõss:luõ%{ʹØ%}ss
-N_1Y-VWKK
+N_1Y_VWKK
 * LEXICON NMN_LUOSS  luõss:luõss
 Sg_Nom: vow_di:vow_high:pal_no:cns_gem_ss_type
 1.1.1.1.1.4. Sg_Nom="diphthong|geminate" Sg_Gen="diphthong|voiced_geminate"
@@ -3266,7 +3266,7 @@ THIS IS NOT THE SAME AS N_MUORR
 * *luõʹzze:* `luõss+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_PAARR  paarr:paa%{ʹØ%}rr
-N_1Y-VVCC
+N_1Y_VVCC
 Sg_Nom: vow_mono:vow_long:vow_high:pal_no:cns_gem
 1.1.1.1.1.5. Sg_Nom="long_vowel|geminate" Sg_Gen="long_vowel|single_consonant" 
 
@@ -3330,7 +3330,7 @@ N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 * *paaʹre:* `paarr+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_SHLAAJJ  šlaajj:šlaa%{ʹØ%}jj
-N_1Y-VVCC
+N_1Y_VVCC
 Sg_Nom: vow_mono:vow_long:vow_high:pal_no:cns_gem_jj_type
 1.1.1.1.1.5. Sg_Nom="long_vowel|geminate" Sg_Gen="long_vowel|single_consonant"
 
@@ -3366,7 +3366,7 @@ Sg_Nom: vow_mono:vow_long:vow_high:pal_no:cns_gem_jj_type
 * *šlaaʹje:* `šlaajj+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_MUORR  muõrr:muõ%{ʹØ%}rr
-N_1Y-VWCC
+N_1Y_VWCC
 Sg_Nom: vow_di:vow_high:pal_no:cns_gem
 1.1.1.1.1.1. Sg_Nom="diphthong|geminate" Sg_Gen="diphthong|single_consonant" 
 
@@ -3438,7 +3438,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *muõʹre:* `muõrr+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_KHIOJJ  ǩiõjj:ǩiõ%{ʹØ%}jj
-N_1Y-VWCC
+N_1Y_VWCC
 Sg_Nom: vow_di:vow_high:pal_no:cns_gem_jj_type
 1.1.1.1.1.1. Sg_Nom="diphthong|geminate" Sg_Gen="diphthong|single_consonant"
 
@@ -3473,7 +3473,7 @@ similar_to: N_TUYJJ
 * *kuõʹje:* `kuõjj+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_MIOHTT  miõhtt:miõ%{ʹØ%}h%{ʹØ%}tt
-N_1Y-VWHYY
+N_1Y_VWHYY
 ## FORMS
 similar_to: N_VUYHSS
 * Yaml: **N-miwhtt**
@@ -3512,7 +3512,7 @@ similar_to: N_VUYHSS
 * *miõuʹte:* `miõhtt+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_RIIKK  riikk:rii%{ʹØ%}kk
-N_1Y-VVKK
+N_1Y_VVKK
 ## FORMS
 1.1.1.1.1.1. Sg_Nom="long_vowel|geminate" Sg_Gen="long_vowel|geminate" Sg_Ill="short_vowel|geminate" 
 
@@ -3534,6 +3534,7 @@ N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 * :%^VV2V%^CC2CAllegro SG-LOC-PX_ALLEGRO ;  rik-
 
 * LEXICON N_AQSTTRIK  aʹsttrik:aʹsttri%^1VOW%{ʹØ%}k
+N_2Y_VK_VVKK
 ## FORMS
 1.1.1.1.1.1. Sg_Nom="long_vowel|geminate" Sg_Gen="long_vowel|geminate" Sg_Ill="short_vowel|geminate" 
 
@@ -3553,7 +3554,7 @@ N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^C2CC N_MUORYZH-WITH-PAL ;   riiʹǩǩ-
 
 * LEXICON N_PLAAN  plaan:plaa%{ʹØ%}n
-N_1Y-VVC
+N_1Y_VVC
 Sg_Ill="palatalization|e-final"
 similar-to: SYSTEEQM 
 ## 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
@@ -3572,7 +3573,7 @@ plaan:plaan
 * +Der+Der/Dimin+N:%^PAL N_MUORYZH-WITH-PAL ;   paaʹr-
 
 * LEXICON N_LOMAAKK  lomaakk:lomaa%{ʹØ%}kk
-N_1Y-VVKK
+N_1Y_VVKK
 Sg_Ill="palatalization|e-final"
 
 lomaakk:lomaakk
@@ -3586,7 +3587,7 @@ CLASS 1 LOW VOWEL, MONOPHTHONG, NO PALATALIZATION NOMINALS
 
 * LEXICON N_PESS  pess:pẹss
 similar_to: N_PAPP
-N_1A-VCC
+N_1A_VCC
 Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_gem
 1.1.1.2.1. stem_with_gradation: yes 
 1.1.1.2.1.1. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|geminate" 
@@ -3644,7 +3645,7 @@ strong_geminate, short_vowel, no_palatalization, low_stem_vowel
 * :%^V2VV PL-NOM ;	  (2) Pl.Nom: peess
 
 * LEXICON N_SHOOMM  šoomm:šoomm
-N_1A-VVCC
+N_1A_VVCC
 Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_gem
 Is for nouns with *-ast* Loc
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -3695,7 +3696,7 @@ Sg_Loc_Px..
 * :%^CC2C A-STEM_PL-NOM ;           (2) Pl.Nom: šoom
 
 * LEXICON N_LYYJJ  lââjj:lââjj
-N_1A-VVCC
+N_1A_VVCC
 Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_gem_jj
 Is for nouns with *-ast* Loc
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -3744,7 +3745,7 @@ grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 Sg_Loc_Px..
 
 * LEXICON N_RAEAEKK  rääkk:rääkk
-N_1A-VVKK
+N_1A_VVKK
 Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_gem_ss_type
 Is for nouns with *-ast* Loc
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -3798,7 +3799,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
 * :%>a ESS/PAR ;  (6) Ess: rääkkan
 
 * LEXICON N_AELDD  äldd:äldd
-N_1A-VXYY
+N_1A_VYXX
 Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_xyy
 N_LÄINN has been integrated here
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -3874,7 +3875,7 @@ Sg_Loc_Px..
 * LEXICON A-STEM_PL-NOM   (2)
 
 * LEXICON N_PEIGG  peigg:pẹigg
-N_1A-VUCC
+N_1A_VUCC
 Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_vxx
 Is for nouns with *-ast* Loc
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -3916,7 +3917,7 @@ Ess_Px..., Sg_Ill..., N»A
 Sg_Loc_Px..
 
 * LEXICON N_KOAHTT  kåhtt:kåhtt
-N_1A-VHCC
+N_1A_VHCC
 Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_hyy
 similar_to: N_TAQHTT
 Is for nouns with *-ast* Loc
@@ -3976,7 +3977,7 @@ Sg_Loc_Px..
 CLASS 1 LOW VOWEL, DIPHTHONG, NO PALATALIZATION NOMINALS
 
 * LEXICON N_TEYLKK  teâlkk:teâlkk
-N_1A-VWXYY
+N_1A_VWXYY
 Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_xyy
 
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
@@ -4035,7 +4036,7 @@ grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 Sg_Loc_Px..
 
 * LEXICON N_VUYHSS  vuâhss:vuâhss
-N_1A-VWHCC
+N_1A_VWHCC
 
 ## FORMS
 * Yaml: **N-vuahss**
@@ -4068,7 +4069,7 @@ grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 Sg_Loc_Px..
 
 * LEXICON N_VUYRR  vuârr:vuârr
-N_1A-VWCC
+N_1A_VWCC
 Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_gem
 Is for nouns with *-ast* Loc
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -4114,7 +4115,7 @@ Sg_Loc_Px..
 grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
 
 * LEXICON N_TUYJJ  tuâjj:tuâjj
-N_1A-VWCC
+N_1A_VWCC
 Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_gem_jj_type
 Is for nouns with *-ast* Loc
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -4139,7 +4140,7 @@ N_A-URaise3-32
 * +Use/NGminip+Use/NG:%^J2I%^CC2C SG-GEN ;		 (2) tuâi
 
 * LEXICON N_TUEJJ  tuejj:tuâjj
-N_1A-VWCC
+N_1A_VWCC
 this is based on the stem tuâjj, which means all twol work is in place.
 there has been an â>e
 N_A-URaise3-32
@@ -4150,7 +4151,7 @@ N_A-URaise3-32
 * :%^PALẸ%^CC2C SG-LOC-PX_ALLEGRO ;  (10) tuej»
 
 * LEXICON N_CHUAECC  čuäcc:čuäcc
-N_1A-VWKK
+N_1A_VWKK
 Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_gem
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.2 Sg.Loc in -ast (vowel shift)
@@ -4213,7 +4214,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
 * :%>a ESS/PAR ;  	      			 (6) Ess: čuäccan
 
 * LEXICON N_NEAVVV  neävv:neävˈv
-N_1A-VWCCC
+N_1A_VWCCC
 Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_gem_long
 Is for nouns with *-ast* Loc
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -4256,7 +4257,7 @@ Sg_Loc_Px..
 * :%^CCC2CC PL-NOM ;         neävv
 * :%^CCC2CC%>a PL-OBL ;                    neävvai
 
-N_1A-VWCCC cf. _NEAVVV
+N_1A_VWCCC cf. _NEAVVV
 * Yaml: **N-peyttt**
 * : A-STEM_SG-NOM ;	    			  Peâtˈt
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
@@ -4280,7 +4281,7 @@ Ess_Px..., Sg_Ill..., N»A
 Sg_Loc_Px..
 
 * LEXICON N_PEAELDD  peäldd:peäldd
-N_1A-VWXYY
+N_1A_VWYXX
 Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_xyy
 Is for nouns with *-ast* Loc
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -4328,7 +4329,7 @@ Sg_Loc_Px..
 * :%>a ESS/PAR ;     peälddan
 
 * LEXICON N_TUOAIMM  tuåimm:tuåimm
-N_1A-VWXYY
+N_1A_VWYXX
 Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_vyy
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.2 Sg.Loc in -ast (vowel shift)
@@ -4375,7 +4376,7 @@ grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 Sg_Loc_Px..
 
 * LEXICON N_KAPTEAEN  kapteän:kapteän
-N_1A-VWC
+N_1A_VWC
 similar_to: N_PLAAN, N_SYSTEEQM
 gradation: no
 vowel_shift: no
@@ -4403,7 +4404,9 @@ Ess_Px..., Sg_Ill..., N»A
 Sg_Loc_Px..
 
 * LEXICON N_VIRVEL  virvel:virvẹ%^1VOW%{ʹØ%}l
+
 ## FORMS
+N_   like N_ATOM
 * Yaml: **virvel**
 * : SG-NOM ;	    		 virvel
 * +Use/NGminip+Use/NG:%^PAL SG-NOM ;	    		 virveʹl
@@ -4416,6 +4419,7 @@ Sg_Loc_Px..
 * +Der+Der/Dimin+N:%^V2VV N_KUYLAZH ;		 virvẹẹlaž
 
 * LEXICON N_MEER  meer:meer
+N_
 Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_sing
 Is for nouns with *-ast* Loc, No gradation
 N_A-U1-11
@@ -4444,6 +4448,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N: N_PEESSAZH ;   (9) Dim.N.Sg.Nom: mẹẹraž
 
 * LEXICON N_VAEAEZHZH  vääžž:vääžž
+N_
 Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_gem_dd_type
 Is for nouns with *-ast* Loc, No gradation
 N_A-U1-11
@@ -4473,7 +4478,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Use/NGminip+Use/NG+Der+Der/Dimin+N: N_KUYLAZH ;   	 vääžžaž
 
 * LEXICON N_PLEYN  pleân:pleân
-N_1A-VWC
+N_1A_VWC
 Sg_Nom: vow_di:vow_long:vow_low:pal_no:cns_sing
 Is for nouns with *-ast* Loc, No gradation
 N_A-U1-11
@@ -4577,6 +4582,7 @@ Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_gem
 * +Der+Der/Dimin+N:%^V2VV%^YXX2YX%> N_PEESSAZH ;   (9) Dim.N.Sg.Nom: läämpaž
 
 * Yaml: **N-uulla**
+FIXME 2016-07-14
 
 CLASS 1 HIGH VOWEL TYPE, NO PALATALIZATION NOMINALS
 * LEXICON NMN_NELLJ  nellj:nẹllj
@@ -4585,7 +4591,7 @@ CLASS 1 HIGH VOWEL TYPE, NO PALATALIZATION NOMINALS
 
 CLASS 1 HIGH VOWEL, PALATALIZATION NOMINALS
 * LEXICON N_NUQBB  nuʹbb:nubb
-N_1E-UQCC
+N_1E_UQCC
 Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_gem_dd_type
 ## 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
@@ -4610,7 +4616,7 @@ NumContLex="1.113"
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) nuʹbb Ess+Px..
 
 * LEXICON N_CHUQKHKH  čuʹǩǩ:ču%^1VOW%{ʹØ%}kk
-N_1E-UQCC
+N_1E_UQKK
 Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_gem_dd_type
 ## 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
@@ -4635,7 +4641,7 @@ NumContLex="1.113"
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) cuʹǩǩ Ess+Px..
 
 * LEXICON N_TUQMM  tuʹmm:tu%^1VOW%{ʹØ%}mm
-N_1E-UQCC
+N_1E_UQCC
 similar to N_TOLL
 Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_gem_dd_type
 * There are several stem types
@@ -4644,7 +4650,7 @@ Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_gem_dd_type
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) tuʹmm Ess+Px..
 
 * LEXICON N_LUQCHCH  luʹčč:lu%^1VOW%{ʹØ%}čč
-N_1E-UQCC
+N_1E_UQSS_UUQZZ
 similar to N_TOLL
 Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_gem_dd_type
 * There are several stem types
@@ -4653,7 +4659,7 @@ Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_gem_dd_type
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) luʹčč Ess+Px..
 
 * LEXICON N_NJUUQNN  njuuʹnn:njuunn
-N_1E-UUQCC
+N_1E_UUQCC
 Sg_Nom: vow_mono:vow_long:vow_high_u:pal_yes:cns_gem
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
 ## 1.3 Sg.Loc in -est (vowel shift)
@@ -4680,7 +4686,7 @@ NumContLex="1.113"
 * :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) njuʹnn Ess+Px..
 
 * LEXICON N_STUUQL  stuuʹl:st%^1VOWu%{VU%}l
-N_1E-UUQC
+N_1E_UUQC
 Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_vyy
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
 ## 1.3 Sg.Loc in -est (vowel shift)
@@ -4723,7 +4729,7 @@ NumContLex="1.113"
 * :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) nuʹbb Ess+Px..
 
 * LEXICON N_KUQRCHCH  kuʹrčč:kurčč
-N_1E-UQXYY
+N_1E_UQYXX
 Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_xyy
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
 ## 1.3 Sg.Loc in -est (vowel shift)
@@ -4756,8 +4762,13 @@ NumContLex="1.113"
 * :%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ;  (11) kuʹrč-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) kuʹrčč Ess+Px..
 
+* :%^PAL%>e ESS/PAR ;                              (6) Ess: uʹrmmen
+
+* :%^V2VV%^PAL%^YXX2YX PL-NOM ;	 (2) Pl.Nom: uuʹrm
+* :%^V2VV%^PAL%^YXX2YX E-STEM_PL-OBL ;  (5) uSg.Com: uuʹrmin
+
 * LEXICON N_PUIQCC  puiʹcc:pu%^1VOWi%{ʹØ%}cc
-N_1E-UIQCC
+N_1E_UIQCC
 ## (1) Sg.Nom: kuʹrčč
 ## (2) Pl.Nom: kuuʹrč
 ## (3) Sg.Ill: korčča
@@ -4794,6 +4805,7 @@ NumContLex="1.113"
 * *puuiʹcitaa:* `puiʹcc+N+Pl+Abe`
 * *pooicaž:* `puiʹcc+N+Der+Der/Dimin+N+Sg+Nom`
 
+N_UQVCC
 Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_xyy
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (vowel shift)
@@ -4825,7 +4837,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-kuvzz**
 
 * LEXICON N_JUQVJJ  juʹvjj:ju%^1VOW%{ʹØ%}v%{ʹØ%}jj
-N_1E-UQVCC
+N_1E_UQVCC
 Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_vyy
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (vowel shift)
@@ -4861,7 +4873,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) juʹvjj Ess+Px..
 
 * LEXICON N_VUEQSS   vueʹss:vuâss
-N_1E-VWQKK
+N_1E_VWQSS_VWQZZ
 Sg_Nom: vow_di:vow_short:vow_high_u:pal_yes:cns_gem
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
 ## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
@@ -4884,6 +4896,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 * :%^PALE%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) vueʹsˈs Ess+Px..
 
 * LEXICON N_BIEQSS   bieʹss:beâss
+N_1E_VWQSS
 Sg_Nom: vow_di:vow_short:vow_high_u:pal_yes:cns_gem
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
 ## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
@@ -4906,6 +4919,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 * :%^PALE%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) bieʹsˈs- Ess+Px..
 
 * LEXICON N_SKHIEQRR   sǩieʹrr:sǩeârr
+N_1E_VWQCC
 Sg_Nom: vow_di:vow_short:vow_high_u:pal_yes:cns_gem
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
 ## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
@@ -4928,6 +4942,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 * :%^PALE%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) sǩieʹrˈs- Ess+Px..
 
 * LEXICON N_SUEQJJ   sueʹjj:suâjj
+N_1E_VWQCC
 Sg_Nom: vow_di:vow_short:vow_high_u:pal_yes:cns_gem
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
 ## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
@@ -4950,6 +4965,7 @@ similar_to: N_KHIOJJ, N_TUYJJ
 * :%^PALE%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ;  (11) sueʹj-
 * :%^PALE%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) sueʹjˈj Ess+Px..
 
+N_1E_VWQYKK
 Sg_Nom: vow_di:vow_short:vow_high_u:pal_yes:cns_xyy
 similar_to: N_CHUOSHKK
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
@@ -4973,6 +4989,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 * :%^PALE%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ;  (11) jueʹlj-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) jueʹlǧǧ Ess+Px..
 
+N_1E_VWQHCC
 * :%^PALE%^PAL SG-ACC ;  Num+Sg+Acc: kueʹhtt
 * :%^PALE%^PAL%^YXX2IX SG-ABE ;  Num+Sg+Abe: kueiʹtʼtaa
 * :%^PALE%^PAL%^YXX2IX SG-GEN ;  Num+Sg+Gen: kueiʹt
@@ -4991,6 +5008,7 @@ e.g. +Use/NG+Sg+Loc+PxSg1
 * :%^PALE%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) kueʹhtt- Ess+Px..
 
 * LEXICON N_KUEQLL  kueʹll:kuâll
+N_1E_VWQCC
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
 ## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
 e-stems (Sg.Loc, Ess, Par).
@@ -5023,6 +5041,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 * :%^PALE%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) kueʹlˈl Ess+Px..
 
 * LEXICON N_KUEQSSS  kueʹsˈs:kuâsˈs
+N_1E_VWQCCC
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
 ## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
 e-stems (Sg.Loc, Ess, Par).
@@ -5062,6 +5081,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 * :%^PALE%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) kueʹsˈs- Ess+Px..
 
 * LEXICON N_MIEQLLL  mieʹll:meâ%{ʹØ%}lˈl
+N_1E_VWQCCC
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
 ## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
 e-stems (Sg.Loc, Ess, Par).
@@ -5100,6 +5120,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 * :%^VOWRaise%^PALE%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) mieʹlˈl Ess+Px..
 
 * LEXICON N_SUEIQNN  sueiʹnn:suâinn
+N_1E_VWUQCC
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
@@ -5134,6 +5155,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^PALE%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) sueiʹnn- Ess+Px..
 
 * LEXICON N_MUEQRJJ  mueʹrjj:muâ%{ʹØ%}rjj
+N_1E_VWQYJJ
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
@@ -5170,6 +5192,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^PALE%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) mueʹrjj Ess+Px..
 
 * LEXICON N_MAAIQLM  maaiʹlm:ma%^1VOWilmm
+N_1E_
 
 * Yaml: **N-maailm**
 * :%^V2VV%^PAL%^YXX2YX E-STEM_SG-NOM ;		  	 (1) Sg.Nom: mueʹrjj
@@ -5186,11 +5209,13 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) maiʹlmm Ess+Px..
 
 * LEXICON N_MUQZEI  muʹzei:muʹze
+N_
 * LEXICON NMN_MUQZEI  muʹzei:muʹze
 muʹzei:muʹze
 * Yaml: **N-tuodhshteei**
 
 * LEXICON N_SYSTEEQM  uʹčteeʹl:uʹčtẹẹ%{ʹØ%}l
+N_E_EEQC
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
@@ -5224,6 +5249,8 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) nuʹbb Ess+Px..
 
 * LEXICON N_1E-VVQC  rååʹz:råå%{ʹØ%}z
+N_E_VVQC
+cf N_E_EEQC
 * Yaml: **N-presidentt**
 * :%^PAL E-STEM_SG-NOM ;		  	 (1) rååʹz
 * :%^PAL E-STEM_SG-ABE/ACC/GEN ;	 (2) rååʹz
@@ -5237,6 +5264,8 @@ Is for nouns with *-est* Loc, Extra long vowel
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) rååz-
 
 * LEXICON N_KANEL  kanel:kanẹ%^1VOWl
+N_E_EC_EEQC
+like N_ATOM
 * Yaml: **N-kanel**
 * : E-STEM_SG-NOM ;		  	 (1) kanel
 * :%^V2VV%^PAL E-STEM_SG-ABE/ACC/GEN ;	 (2) kaneeʹl
@@ -5252,6 +5281,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) kaneʹl Ess+Px..
 
 * LEXICON N_KHIEQMNN  ǩieʹmnn:ǩeâmnn
+N_1E_VWQYXX
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
@@ -5287,6 +5317,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 CLASS 1 LOW VOWEL, PALATALIZATION, ILLATIVE IN U NOMINALS
 
 * LEXICON N_LAQB3H3H  läʹbǯǯ:läbǯǯ
+N_1U_VQCC
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.2 Sg.Loc in -ast (vowel shift)
 Raised: Sg.Ill
@@ -5309,6 +5340,7 @@ CLASS 1 LOW VOWEL, PALATALIZATION, ILLATIVE IN A NOMINALS
 ## e-stems
 
 * LEXICON N_VAEQLL  väʹll:väll
+N_1E_VQCC
 similar_to: N_PAPP
 vowel: monophthong
 vowel_shift: yes
@@ -5341,6 +5373,7 @@ strong_geminate, long_vowel, depalatalization, low_stem_vowel
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) väʹll Ess+Px..
 
 * LEXICON N_EQCHCH  eʹčč:ẹ%^1VOWčč
+N_1E_EQSS_EEQZZ
 vowel_shift: no
 gradation: yes
 similarity: N_TOLL:N_KUSS:N_AQVV
@@ -5374,6 +5407,7 @@ NumContLex="1.113"
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) eʹčč Ess+Px..
 
 * LEXICON N_PEQKHKH  peʹǩǩ:pẹ%^1VOWkk
+N_1E_EQKK
 vowel_shift: no
 gradation: yes
 similarity: N_PAPP
@@ -5395,7 +5429,8 @@ NumContLex="1.113"
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) eʹǩǩ Ess+Px..
 
 * LEXICON N_AQVV  äʹvv:ävv
-V1ʹC1C1
+N_1E_SVQCC
+SV = stable vowel
 vowel: monophthong
 vowel_shift: no
 gradation: yes
@@ -5421,7 +5456,7 @@ NumContLex="1.113"
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) äʹvv Ess+Px..
 
 * LEXICON N_STAEQLLJ  stäʹllj:stä%^1VOW%{ʹØ%}llj
-N_1E-VQCC
+N_1E_VQCC
 vowel: monophthong
 vowel_shift: yes
 gradation: yes
@@ -5434,7 +5469,7 @@ NumContLex="1.113"
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) stäʹllj Ess+Px..
 
 * LEXICON N_PEQLLJ  peʹllj:pẹ%^1VOW%{ʹØ%}llj
-
+N_1E_SVQCC
 vowel: monophthong
 vowel_shift: no
 gradation: yes
@@ -5444,6 +5479,7 @@ gradation: yes
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) peʹllj Ess+Px..
 
 * LEXICON N_AQKHKH  äʹǩǩ:äkk
+N_1E_VQKK
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204, 329)
 ## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
 e-stems (Sg.Loc, Ess, Par).
@@ -5467,6 +5503,7 @@ NumContLex="1.113"
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) äʹǩǩ Ess+Px..
 
 * LEXICON N_SAAQMM  sääʹmm:sää%{ʹØ%}mm
+N_1E_VVQCC
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
 ## 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
@@ -5490,6 +5527,8 @@ NumContLex="1.113"
 * :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) säʹmm Ess+Px..
 
 * LEXICON N_CHAAQCC  čääʹcc:čääcc
+N_1E_VVQSS
+SS = SS-ZZ
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
 ## 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
@@ -5530,6 +5569,7 @@ NumContLex="1.113"
 * :%^PAL%>e ESS/PAR ;                               (6) čääʼccen
 
 * LEXICON N_EEQKHKH  eeʹǩǩ:ẹẹkk
+N_1E_VVQKK
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
 ## 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
@@ -5566,6 +5606,7 @@ NumContLex="1.113"
 * :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) eʹǩǩ Ess+Px..
 
 * LEXICON N_TEEQMM  teeʹmm:teemm
+N_1E_EEQCC
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
 ## FORMS
 NumContLex="1.113"
@@ -5575,6 +5616,7 @@ NumContLex="1.113"
 * :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) nuʹbb Ess+Px..
 
 * LEXICON N_PAAQJJ  pââʹjj:pââjj
+N_1E_VVQCC
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204, 329)
 ## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
 e-stems (Sg.Loc, Ess, Par).
@@ -5608,6 +5650,7 @@ NumContLex="1.113"
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) pâʹjj- Ess+Px..
 
 * LEXICON N_KAQLBB  käʹlbb:kälbb âʹlǧǧ:âlgg
+N_1E_VQYXX
 similar_to: N_ALGG
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (vowel shift)
@@ -5645,6 +5688,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^V2VV%^VOWRaise%^PAL%^YXX2YX E-STEM_PL-OBL ;  (5) Sg.Com: õõʹljin
 
 * LEXICON N_TEQSTT  argumeʹntt:argumentt
+N_1E_SVQYXX
 vowel: monophthong
 vowel_height_change: no
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -5680,6 +5724,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) argumeʹntt- Ess+Px..
 
 * LEXICON N_PAIQKHKH  päiʹǩǩ:päikk
+N_1E_VUQKK
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
@@ -5737,6 +5782,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * *pääika:* `päiʹǩǩ+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_LAEUQKHKH  päiʹǩǩ:päikk
+N_1E_VUQKK
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-paeikk**
 * :%^PAL E-STEM_SG-NOM ;		   (1) Sg.Nom: läuʹǩǩ
@@ -5775,6 +5821,8 @@ Is for nouns with *-est* Loc, Extra long vowel
 * *lääuka:* `läuʹǩǩ+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_HAAQSKH  hääʹsǩ:hää%{ʹØ%}sk
+N_E_SVVQYK
+SVV = stable long vowel
 * Yaml: **N-haeaesk**
 * :%^PAL E-STEM_SG-NOM ;		   (1) Sg.Nom: hääʹsǩ
 * :%^PAL E-STEM_SG-ABE/ACC/GEN ;  (2) Pl.Nom: hääʹsǩ
@@ -5790,6 +5838,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) hääʹsǩ Ess+Px..
 
 * LEXICON N_SAIQMM  säiʹmm:säimm
+N_1E_SVQCC
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (vowel shift)
 vowel_shift: No
@@ -5813,6 +5862,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) säiʹmm Ess+Px..
 
 * LEXICON N_KHEQDD  ǩeʹdd:ǩe%^1VOWdd
+N_1E_JEQCC
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
@@ -5844,6 +5894,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 WORK NEEDED FROM HERE DOWN
 
 * LEXICON N_KHEQMNN  ǩeʹmnn:ǩẹ%^1VOW%{ʹØ%}mnn
+N_1E_JEQYXX
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
@@ -5896,6 +5947,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * *jääura:* `ǩeʹmnn+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_LAAIQJ  lääiʹj:lääiǥ
+N_E_VUQKK
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
@@ -5917,6 +5969,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-laeaeij**
 
 * LEXICON N_KHEQRJJ  ǩeʹrjj:ǩerjj
+N_1E_EQYXX/VQYXX
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (NO vowel shift)
 Raised: Sg.Com, Pl.Obl
@@ -5941,7 +5994,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^V2VV%^PAL%^YXX2YX PL-NOM ;  (2) Pl.Nom: ǩeeʹrj
 * : E-STEM_SG-ILL ;	     			    (3)  Sg.Ill: ǩẹrjja
 * :%^V2VV%^PAL%^YXX2YX%>e SG-LOC ;	    (4) Sg.Loc: ǩeeʹrjest
-* :%^V2VV%^PAL%^YXX2YX SG-COM_IN ;	    (5) Sg.Com: ǩeeʹrjin
+* +Use/NGminip+Use/NG:%^V2VV%^PAL%^YXX2YX SG-COM_IN ;	    (5) Sg.Com: ǩeeʹrjin
 * :%^V2VV%^VOWRaise%^PAL%^YXX2YX SG-COM_IN ;  (5) Sg.Com: ǩiiʹrjin
 * :%^PAL%>e ESS/PAR ;  (6) Ess: ǩeʹrjjen
 * :%^V2VV%^VOWRaise%^PAL%^YXX2YX%> PL-OBL ;  (8) Pl.Acc: ǩiiʹrjid
@@ -5954,6 +6007,8 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^V2VV%^PAL%^YXX2YX PL-NOM ;  (2) Pl.Nom: ǩeeʹrj
 
 * LEXICON N_TEQKSTT  teʹkstt:tekstt 
+N_SVQ.YXX
+same as TEQSTT
 gradation: yes
 vowel_shift: no
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -5986,6 +6041,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^V2VV%^YXX2YX E-STEM_N_KUYLAZH ;   (9) Der/Dimin.N.Sg.Nom: teekstaž
 
 * LEXICON N_TAQHTT  täʹhtt:tä%^1VOW%{ʹØ%}h%{ʹØ%}tt
+N_1E_VQHCC
 similar_to: KÅHTT
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (NO vowel shift)
@@ -7378,13 +7434,23 @@ stemtype l-stem ääʹrešm:ääʹrešm
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
 * LEXICON N_CHEEUQRES  čeeuʹres:če%^1VOWurres
+N_2E_EEUQCES/Z
 * LEXICON NMN_CHEEUQRES  čeeuʹres:če%^1VOWurres
 stemtype l-stem čeeuʹres:čeeuʹres
 * **NMN_CHEEUQRES** = Koulukielioppi stemtype II 9 (29)
 * Yaml: **N-ceeures** 
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
+* LEXICON N_2E_EEQYXES/Z  ceeʹpces:cẹ%^1VOW%{ʹØ%}pcces
+N_2E_EEQYXES/Z
+* LEXICON NMN_2E_EEQYXES/Z  ceeʹpces:cẹ%^1VOW%{ʹØ%}pcces
+stemtype l-stem čeeuʹres:čeeuʹres
+* **NMN_2E_EEQYXES/Z** = Koulukielioppi stemtype II 9 (29)
+* Yaml: **N-ceeures** 
+* :%^RmVow VOONYS-STEM-PX ;  võnns-
+
 * LEXICON N_POAOAUQTES  pååuʹtes:på%^1VOWhttes
+N_2E_VVUQCES/Z
 * LEXICON NMN_POAOAUQTES  pååuʹtes:på%^1VOW%{ʹØ%}h%{ʹØ%}ttes
 * Yaml: **N-ceeures** 
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
@@ -7419,21 +7485,25 @@ IN PENULTIMATE E:0
 * :%^RmVow VOONYS-STEM-PX ;  câccl-
 
 * LEXICON N_KAAQLLES  kääʹlles:kä%^1VOW%{ʹØ%}lles
+N_2E_VVQCCES/Z
 * LEXICON NMN_KAAQLLES  kääʹlles:källes
 * Yaml: **N-kaeaelles**
 * :%^RmVow VOONYS-STEM-PX ;  källs-
 
 * LEXICON N_OAQVES  ååʹves:å%^1VOW%{ʹØ%}vves
+N_2E_VVQCCES/Z
 * LEXICON NMN_OAQVES  ååʹves:å%^1VOWvves
 * Yaml: **N-aaves**
 * :%^RmVow VOONYS-STEM-PX ;  åvvs-
 
 * LEXICON N_KAAQRBES  kääʹrbes:kärbbes
+N_2E_VVQYXES/Z
 * LEXICON NMN_KAAQRBES  kääʹrbes:kärbbes
 * Yaml: **N-kaeaerbes**
 * :%^RmVow VOONYS-STEM-PX ;  kärbbs-
 
 * LEXICON N_PUAQRES  puäʹres:puärˈres
+N_2E_VWQCES/Z
 * LEXICON NMN_PUAQRES  puäʹres:puärˈres
 * Yaml: **N-puaeres**
 * :%^RmVow VOONYS-STEM-PX ;  puärˈrs-
@@ -7483,9 +7553,23 @@ IN PENULTIMATE E:0
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
 * LEXICON N_KHEEQSTES  ǩeeʹstes:ǩeâsttes
+N_2E_EEQYXES/0Z
 * LEXICON NMN_KHEEQSTES  ǩeeʹstes:ǩeâsttes
 * Yaml: **N-keestes**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
+
+* LEXICON N_KHEEQRDES  ǩeeʹrdes:ǩeâ%{ʹØ%}rddes
+N_2E_EEQYXES/Z
+* LEXICON NMN_KHEEQRDES  ǩeeʹrdes:ǩeâ%{ʹØ%}rddes
+* Yaml: **N-keestes**
+* :%^RmVow VOONYS-STEM-PX ;  võnns-
+
+N_2E_VVQYXES/0Z
+* LEXICON NMN_SYYQRVES 
+* Yaml: **N-kaeaerbes**
+* :%^RmVow VOONYS-STEM-PX ;  sârvvs-
+
+this deals with an extra piece of paradigm
 
 * LEXICON N_VIEQLPES  vieʹlpes:ǩeâlppes
 * LEXICON NMN_VIEQLPES  vieʹlpes:ǩeâ%{ʹØ%}lppes
