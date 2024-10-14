@@ -1935,6 +1935,33 @@ LEXICON N_PLAAN-PL
 +Der+Der/Dimin+N: N_MUORYZH-WITHOUT-PAL-PL ;
 +Der+Der/Dimin+N:%^PAL N_MUORYZH-WITH-PAL-PL ;
 
+LEXICON N_STRAAZHZH !!= * @CODE@ straažž:straa%{ʹØ%}žž
+!!! inflection_type="?"
+!! N_1Y_VVCC
+: NMN_STRAAZHZH ;
+LEXICON NMN_STRAAZHZH
+!!! pos="nominal"
+!!! syll_count-in-Sg_Nom="1"
+!!! stem-ends-in="consonant"
+!!! stem_vowel-in-Sg_Loc="â"
+!!! stem_with_gradation="partial"
+!! * Yaml: **N-plaan**
+: SG-NOM ;		! plaan
+:%^CC2C SG-ABE/ACC/GEN ;		! plaan
+:%^CC2C A_DER/LAZH ;
+:%^PAL%>e SG-ILL ;	! plaaʹne
+: A_DER/SAZH_Y ;
+:%^PAL%^CC2C N2A_LUOQSSI ;     !!= * @CODE@ N»A: plaaʹni
+:%^CC2C%>â SG-LOC ;	 	! straažâst
+:%^CC2C SG-COM_IN ;		! straažin
+:%>â ESS/PAR ;  		! straažžân
+:%^CC2C PL-NOM ;		! straaž
+:%^CC2C PL-OBL ;		! straaži
++Der+Der/Dimin+N:%^CC2C N_MUORYZH-WITHOUT-PAL ;  !!= * @CODE@ straaž-
++Der+Der/Dimin+N:%^PAL%^CC2C N_MUORYZH-WITH-PAL ;  !!= * @CODE@ straaʹž-
+HatY-STEM-PX-RETAIN ;
+:%^CC2C HatY-STEM-PX-WEAKEN ;
+HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_LOMAAKK !!= * @CODE@ lomaakk:lomaa%{ʹØ%}kk
 !!! inflection_type="?"
@@ -6443,6 +6470,23 @@ LEXICON NMN_DIQLL
 :%^PAL%>e ESS/PAR ; !!(6) Ess: diʹllen
 :%^V2VV%^PAL PL-OBL ; !!(8) Pl.Gen: diiʹlli
 +Der+Der/Dimin+N:%^V2VV%> N_KUUQMPEZH ; !!(9) Der/Dimin.N.Sg.Nom: diillež
+
+LEXICON N_CUUQDD !!= * @CODE@ cuuʹdd:cuu%{ʹØ%}dd
+!!! inflection_type="?"
+: NMN_CUUQDD ;
+LEXICON NMN_CUUQDD
+! gradation: yes
+!! ## FORMS
+!! * Yaml: **N-dill**
+:%^PAL SG-NOM ; !!(1) Sg.Nom: cuuʹdd
+:%^PAL SG-ABE/ACC/GEN-PL-NOM ; !!(2) Pl.Nom: cuuʹdd
+: A_DER/LAZH ;
+:%^PAL%>e SG-ILL ;! !!(3) Sg.Ill: cuuʹdde
+:%^PAL%>e SG-LOC ;! !!(4) Sg.Loc: cuuʹddest
+:%^PAL SG-COM_IN ; !!(5) Sg.Com: cuuʹddin
+:%^PAL%>e ESS/PAR ; !!(6) Ess: cuuʹdden
+:%^PAL PL-OBL ; !!(8) Pl.Gen: cuuʹddi
++Der+Der/Dimin+N:%> N_KUUQMPEZH ; !!(9) Der/Dimin.N.Sg.Nom: diillež
 
 
 
