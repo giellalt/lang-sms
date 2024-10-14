@@ -3572,6 +3572,13 @@ plaan:plaan
 * +Der+Der/Dimin+N: N_MUORYZH-WITHOUT-PAL ;   paar-
 * +Der+Der/Dimin+N:%^PAL N_MUORYZH-WITH-PAL ;   paaʹr-
 
+* LEXICON N_STRAAZHZH  straažž:straa%{ʹØ%}žž
+N_1Y_VVCC
+* Yaml: **N-plaan**
+* :%^PAL%^CC2C N2A_LUOQSSI ;      N»A: plaaʹni
+* +Der+Der/Dimin+N:%^CC2C N_MUORYZH-WITHOUT-PAL ;   straaž-
+* +Der+Der/Dimin+N:%^PAL%^CC2C N_MUORYZH-WITH-PAL ;   straaʹž-
+
 * LEXICON N_LOMAAKK  lomaakk:lomaa%{ʹØ%}kk
 N_1Y_VVKK
 Sg_Ill="palatalization|e-final"
@@ -6628,6 +6635,10 @@ gradation: yes
 * kriʹlcc:kriʹlcc
 
 * LEXICON N_DIQLL  diʹll:di%^1VOW%{ʹØ%}ll
+## FORMS
+* Yaml: **N-dill**
+
+* LEXICON N_CUUQDD  cuuʹdd:cuu%{ʹØ%}dd
 ## FORMS
 * Yaml: **N-dill**
 
