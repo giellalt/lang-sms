@@ -3,6 +3,23 @@
 
 THE LEXICON *`OUTSIDE_LEXICONS`* ASSIGNS THE TAG +Attr
 
+* LEXICON PROP_1Y_VCC  papp:pa%^1VOW%{ʹØ%}pp
+
+* LEXICON PROP_1Y_VYXX   põrtt:põ%^1VOW%{ʹØ%}rtt
+* LEXICON PROP_1Y_VUCC  autt:a%^1VOWu%{ʹØ%}tt
+muõrr
+Ruõšš:Ruõ%{ʹØ%}šˈš
+
+* LEXICON PROP_1E_VVQCC  sääʹmm:sää%{ʹØ%}mm
+
+* LEXICON PROP_1Y_VVC  plaan:plaa%{ʹØ%}n
+
+* LEXICON PROP_FEDD  Fedd:Fẹ%^1VOWdd
+
+* LEXICON PROP_1E_VUQCC   jäuʹrr:jä%^1VOWu%{ʹØ%}rr
+
+* LEXICON PROP_1E_VQCC  väʹll:vä%^1VOW%{ʹØ%}ll
+
 * LEXICON PROP_TOOBDYLM_mal  toobdâlm:toobdâlm
 
 like KÕÕNJÂL 

@@ -22,6 +22,7 @@ The lexicon *V0_LEEQD* for the copula
 ## REGULAR VERBS
 ### CLASS 1 HIGH VOWEL, NO PALATALIZATION
 
+* LEXICON V_1Y_VVCC  põõllâd:põõll
 * LEXICON V_POOLLYD  põõllâd:põõll
 * LEXICON IV_POOLLYD  põõllâd:põõll
 * LEXICON TV_POOLLYD  põõllâd:põõll
@@ -457,6 +458,7 @@ Imprt+ConNegII, Pass+PrfPrc
 
 * :%^YXX2YX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: aib»
 
+* LEXICON V_1Y_VYXX  tobddâd:to%^1VOW%{ʹØ%}bdd
 * LEXICON V_TOBDDYD  tobddâd:to%^1VOW%{ʹØ%}bdd
 * LEXICON IV_TOBDDYD  tobddâd:to%^1VOW%{ʹØ%}bdd
 * LEXICON TV_TOBDDYD  tobddâd:to%^1VOW%{ʹØ%}bdd
@@ -658,6 +660,7 @@ Imprt+Pl3
 ### CLASS 1 LOW VOWEL, NO PALATALIZATION
 Even-syllable stems in -AD
 
+* LEXICON V_1A_VVCC  teevvad:teevv
 * LEXICON V_TEEVVAD  teevvad:teevv
 * LEXICON IV_TEEVVAD  teevvad:teevv
 * LEXICON TV_TEEVVAD  teevvad:teevv
@@ -687,6 +690,7 @@ Even-syllable stems in -AD
 * LEXICON IV_VUAGGGAD  vuägˈgad:vuägˈg
 * LEXICON V0_VUAGGGAD  vuägˈgad:vuägˈg
 
+* LEXICON V_1A_VUCC  läullad:läull
 * LEXICON V_LAEULLAD  läullad:läull
 * LEXICON IV_LAEULLAD  läullad:läull
 * LEXICON V0_LAEULLAD  läullad:läull
@@ -733,6 +737,7 @@ Imprt+Pl3
 
 (10) Allegro for incoative: läul»
 
+* LEXICON V_1A_VYXX  särnnad:sä%^1VOWrnn
 * LEXICON V_SARNNAD  särnnad:sä%^1VOWrnn
 * LEXICON IV_SARNNAD  särnnad:sä%^1VOWrnn
 * LEXICON V0_SARNNAD  särnnad:sä%^1VOWrnn
@@ -1751,6 +1756,7 @@ Imprt+Pl3
 (12) Weak-RaisedVowel-NoPalatalization
 * :%^VOWRaise%^KK2GG VSUF-CHED_ED ;   (12) +Der+Der/ched: kooʒʒ-
 
+* LEXICON V_1E_VQYXX  ceʹpcced:cẹpcc
 * LEXICON V_CEQPCCED  ceʹpcced:cepcc
 * LEXICON IV_CEQPCCED  ceʹpcced:cepcc
 * LEXICON TV_CEQPCCED  ceʹpcced:cepcc
@@ -2482,6 +2488,7 @@ similar_to:
 * LEXICON V0_TOINXSKHED  tõiŋsǩed:tõõiŋâsk
 inflection_type="3"
 
+* LEXICON V_1A_VVCCLED  šorrned:šorran
 * LEXICON V_SHORRNED  šorrned:šorran
 * LEXICON IV_SHORRNED  šorrned:šorran
 * LEXICON TV_SHORRNED  šorrned:šorran
@@ -2508,6 +2515,7 @@ gradation: no
 * LEXICON TV_LOAQNSTED  låʹnsted:lååʹnest
 * LEXICON V0_LOAQNSTED  låʹnsted:lååʹnest
 
+* LEXICON V_1E_VVQCCLED  ǩeeʹrjted:ǩeeʹrjet
 * LEXICON V_KHEEQRJTED  ǩeeʹrjted:ǩeeʹrjet
 * LEXICON IV_KHEEQRJTED  ǩeeʹrjted:ǩeeʹrjet
 * LEXICON TV_KHEEQRJTED  ǩeeʹrjted:ǩeeʹrjet
@@ -2550,6 +2558,8 @@ gradation: no
 * :%>%{ʼØ%}j VSUF-VUEJTED-ELSE ;  jeälˈljed
 
 ### CLASS 3 HIGH VOWEL, PALATALIZATION
+* LEXICON V_3E_QLLXJED  võʹllʼjed:võʹll
+* LEXICON V_3E_QCCJED  võʹllʼjed:võʹll
 * LEXICON V_VOQLLJED  võʹllʼjed:võʹll
 * LEXICON IV_VOQLLJED  võʹllʼjed:võʹll
 * LEXICON TV_VOQLLJED  võʹllʼjed:võʹll
@@ -2581,7 +2591,6 @@ gradation: no
 ### CLASS 4 HIGH VOWEL,  PALATALIZATION
 
 ### CLASS 4 LOW VOWEL, PALATALIZATION
-
 * : VSUF-TEEQMEED-ELSE ; 
 
 Not yet written
