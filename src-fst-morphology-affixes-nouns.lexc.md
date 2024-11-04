@@ -6263,6 +6263,7 @@ Class 10 according to Feist 160-161
 * LEXICON NMN_KAADHNEKH  kaađneǩ:kaađnẹ%^1VOWǩ
 * Yaml: **N-kaadhnekj, N-chaustok**
 Ǩiõllkaʹlddi. 2017-04-04-05
+Ǩiõllkaʹlddi. 2017-04-04-05
 kaađneǩ+N+Sg+Nom **lincense vessel/suitsutusastia**
 * *kaađnẹ%^1VOWǩ*
 * *kaađne0ǩ*

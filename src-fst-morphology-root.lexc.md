@@ -767,6 +767,7 @@ The Usage extents are marked using following tags:
 * **+Err/Orth-a-y** substandard a, not in normative fst â
 * **+Err/Orth-o-uq** substandard o, not in normative fst uʹ (e.g. illative kuʹmppe and not komppa)
 * **+Err/Orth-no-q** substandard missing ʹ as in mâiʹd-ne (->) mâid-ne
+* **+Err/Orth-extra-q** substandard extra ʹ as in aanarneʹǩ (->) aanarneǩ
 * **+Err/Orth-should-be-grade-minus1** substandard raajeeʹl (->) raajjeeʹl
 * **+Err/Lex** substandard, not in normative fst, no normative lemma 
 * **+Err/DerSub** substandard for derivation, not in normative fst, no normative lemma 
