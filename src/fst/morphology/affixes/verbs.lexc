@@ -297,14 +297,81 @@ LEXICON V0_LAUKKOOLLYD !!= * @CODE@ laukkõõllâd:laukkõõll
 +Imprt+Pl3:%^VV2V%^VOWLower%>az K ; !!= * @CODE@ laukkâllaz
 :%^VV2V%^CC2CAllegro FOR-ALLEGRO-DEVERBAL-DERIVATION ;
 
+LEXICON V_1Y_VVKK !!= * @CODE@ viikkâd:viikk
+: V0_1Y_VVKK ;
+LEXICON IV_1Y_VVKK !!= * @CODE@ viikkâd:viikk
++IV: V0_1Y_VVKK ;
+LEXICON TV_1Y_VVKK !!= * @CODE@ viikkâd:viikk
++TV: V0_1Y_VVKK ;
+LEXICON V0_1Y_VVKK
+! * Yaml: __V-viikkad__
+! viikkâd:viikk
+! Strong grade in penultimate syllable
+: VSUF-INF_YD ; !!= * @CODE@ (1)  Inf: viikkâd
+!! V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
+!! Imprt+Pl1, Imprt+Pl2
+!! Actio, ActEss, PrsPrc
+!!  Ind.Prt.ConNeg, Imprt+Pl3, PrfPrc
+!! NomAct in MOsh
+!!€ põõss%>âd
+!!€ põõss%>âd
 
-LEXICON V_VIIKKYD !!= * @CODE@ viikkâd:viikk
-: V0_VIIKKYD ;
-LEXICON IV_VIIKKYD !!= * @CODE@ viikkâd:viikk
-+IV: V0_VIIKKYD ;
-LEXICON TV_VIIKKYD !!= * @CODE@ viikkâd:viikk
-+TV: V0_VIIKKYD ;
-LEXICON V0_VIIKKYD !!= * @CODE@ viikkâd:viikk
+:%^VOWLower VSUF-IND-PRS-SG3_YD ; !!= * @CODE@ (2)  Ind.Prs.Sg3: veekk
+!! +V+Ind+Prs+Sg3
+!!€ põõss%^VOWLower
+!!€ pââss0
+
++Ind+Prs+Pl3:%^VV2V%^VOWLower%^PAL%>e K ; !!= * @CODE@ (3)  Ind.Prs.Pl3: veʹǩǩe
+!! +V+Ind+Prs+Pl3
+!!€ põõ0ss%^VV2V%^VOWLower%^PAL%>e
+!!€ pâ0ʹss000%>e
+
+:%^VV2V%^PAL VSUF-IND-PRT-PL3_YD ; !!= * @CODE@ (4)  Ind.Prt.Pl3: viʹǩǩe
+!! +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
+!!€ põõ0ss%^VV2V%^PAL%>e
+!!€ põ0ʼss00%>e
+
+:%^KK2GG VSUF-I-POTKOND_YD ; !!= * @CODE@ (5-6)  Pot.Sg3: viiǥǥâž
++Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ; !!= * @CODE@ (5-6) ERR
+!! +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
+!! Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
+!! Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
+!!€ põõss%^KK2GG%>âž
+!!€ põõzz0%>âž
+
++Imprt+Sg3:%^VOWLower%^KK2GG%>as K ; !!= * @CODE@ (7)  Imprt.Sg3: veeǥǥas
+!! Imprt+Sg3
+!!€ põõss%^VOWLower%^KK2GG%>as
+!!€ pââzz00%>as
+
+:%^VV2V VSUF-IMPRT-CONNEGII_YD ; !!= * @CODE@ (8)  Imprt.ConNegII: vikku
+!! Imprt+ConNegII, Pass+PrfPrc
+!!€ põõss%^VV2V%>u
+!!€ põ0ss0%>u
+
++Imprt+Pl3:%^VV2V%^VOWLower%>az K ; !!= * @CODE@ (9) Ind.Imprt.Pl3: vekkaz
+!! Imprt+Pl3
+!!€ põõss%^VV2V%^VOWLower%>az
+!!€ pâ0ss00%>az
+
+!!= * @CODE@ (10) Allegro for incoative: viǥ», põz»
+:%^VV2V%^KK2GAllegro FOR-ALLEGRO-DEVERBAL-DERIVATION ;
+!!€ põõss%^VV2V%^KK2GAllegro»%{ʼØ%}škuätt
+!!€ põ0z000»0škuätt
+
+LEXICON V_1Y_VVSS !!= * @CODE@ koossâd:kooss
+: V0_1Y_VVSS ;
+LEXICON IV_1Y_VVSS !!= * @CODE@ koossâd:kooss
++IV: V0_1Y_VVSS ;
+!LEXICON V_VIIKKYD !!= * @CODE@ koossâd:kooss
+!: V0_1Y_VVSS ;
+!LEXICON IV_VIIKKYD !!= * @CODE@ viikkâd:viikk
+!+IV: V0_1Y_VVSS ;
+!LEXICON TV_VIIKKYD !!= * @CODE@ viikkâd:viikk
+!+TV: V0_1Y_VVSS ;
+!LEXICON V0_VIIKKYD !!= * @CODE@ viikkâd:viikk
+!V0_1Y_VVSS ;
+LEXICON V0_1Y_VVSS
 !!! inflection_type="1"
 !!!V2K2_YD
 ! pos: V
@@ -487,6 +554,24 @@ LEXICON V0_PIYKKLOOCHCHYD !!= * @CODE@ piâkklõõččâd:piâkklõõčč
 !!= * @CODE@ (10) Allegro for incoative: piâkklõč»
 :%^VV2V%^CC2CAllegro FOR-ALLEGRO-DEVERBAL-DERIVATION ;
 
+LEXICON V_1Y_VKK !!= * @CODE@ naggâd:naõ%^1VOW%{ʹØ%}gg
+: V0_1Y_VKK ;
+LEXICON IV_1Y_VKK !!= * @CODE@ naggâd:naõ%^1VOW%{ʹØ%}gg
++IV: V0_1Y_VKK ;
+LEXICON V0_1Y_VKK
+! * Yaml: __V-rovvad, V-vizzad__
+! Extra strong grade in penultimate syllable
+: VSUF-INF_YD ; !1
+:%^VOWLower VSUF-IND-PRS-SG3_YD ; !2
++Ind+Prs+Pl3:%^VOWLower%^PAL%^PALK%>e K ; !3
+:%^PAL%^PALK VSUF-IND-PRT-PL3_YD ; !4
+:%^V2VV VSUF-I-POTKOND_YD ; !5
++Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ; !5 ERR
++Pot+Sg3:%^V2VV%>âž   K ; !6
++Imprt+Sg3:%^V2VV%^VOWLower%>as K ; !7
+: VSUF-IMPRT-CONNEGII_YD ; !8
+
+:%^CC2CAllegro FOR-ALLEGRO-DEVERBAL-DERIVATION ;
 
 LEXICON V_ROVVYD !!= * @CODE@ rõvvâd:rõ%^1VOW%{ʹØ%}vv
 : V0_ROVVYD ;
