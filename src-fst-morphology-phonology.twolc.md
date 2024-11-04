@@ -1251,6 +1251,7 @@ huʹvǧǧi+N+Sg+Nom: **rattle/suhistin**
 hääʹsǩ Perhaps the stem should simply be **häskk**
 * *hää0sk^PAL*
 * *hääʹsǩ0*
+testnẹ^1VOW{ʹØ}k^PAL^PALK
 
 cieʹǩǩes+N+Sg+Ill: **trick, type of ear mark/tikki, pykälä**
 * *ceä{ʹØ}kˈkes^Pen^PALẸ^Pen^PAL^Pen^CCC2CC*
@@ -1831,8 +1832,8 @@ lookkmõš+N+Sg+Gen
 * *čâustõõǥǥ00*
 
 čâustõk+N+Sg+Gen
-* *čâustõ^1VOW0k{XC}^V2VV^PAL^K2GG*
-* *čâustõõʹjj000*
+* *čâustõ^1VOW0k{XC}^V2VV^PAL^K2GG^PALK:*
+* *čâustõõʹjj0000*
 
 ## CONSONANT QUALITY CHANGE
 

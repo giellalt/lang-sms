@@ -93,10 +93,61 @@ The lexicon *V0_LEEQD* for the copula
 * +Imprt+ConNegII:%^VV2V%>u K ;  laukkõllu
 * +Imprt+Pl3:%^VV2V%^VOWLower%>az K ;  laukkâllaz
 
-* LEXICON V_VIIKKYD  viikkâd:viikk
-* LEXICON IV_VIIKKYD  viikkâd:viikk
-* LEXICON TV_VIIKKYD  viikkâd:viikk
-* LEXICON V0_VIIKKYD  viikkâd:viikk
+* LEXICON V_1Y_VVKK  viikkâd:viikk
+* LEXICON IV_1Y_VVKK  viikkâd:viikk
+* LEXICON TV_1Y_VVKK  viikkâd:viikk
+* : VSUF-INF_YD ;  (1)  Inf: viikkâd
+V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
+Imprt+Pl1, Imprt+Pl2
+Actio, ActEss, PrsPrc
+Ind.Prt.ConNeg, Imprt+Pl3, PrfPrc
+NomAct in MOsh
+* *põõss%>âd*
+* *põõss%>âd*
+
+* :%^VOWLower VSUF-IND-PRS-SG3_YD ;  (2)  Ind.Prs.Sg3: veekk
++V+Ind+Prs+Sg3
+* *põõss%^VOWLower*
+* *pââss0*
+
+* +Ind+Prs+Pl3:%^VV2V%^VOWLower%^PAL%>e K ;  (3)  Ind.Prs.Pl3: veʹǩǩe
++V+Ind+Prs+Pl3
+* *põõ0ss%^VV2V%^VOWLower%^PAL%>e*
+* *pâ0ʹss000%>e*
+
+* :%^VV2V%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: viʹǩǩe
++V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
+* *põõ0ss%^VV2V%^PAL%>e*
+* *põ0ʼss00%>e*
+
+* :%^KK2GG VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: viiǥǥâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
++Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
+Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
+Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
+* *põõss%^KK2GG%>âž*
+* *põõzz0%>âž*
+
+* +Imprt+Sg3:%^VOWLower%^KK2GG%>as K ;  (7)  Imprt.Sg3: veeǥǥas
+Imprt+Sg3
+* *põõss%^VOWLower%^KK2GG%>as*
+* *pââzz00%>as*
+
+* :%^VV2V VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.ConNegII: vikku
+Imprt+ConNegII, Pass+PrfPrc
+* *põõss%^VV2V%>u*
+* *põ0ss0%>u*
+
+* +Imprt+Pl3:%^VV2V%^VOWLower%>az K ;  (9) Ind.Imprt.Pl3: vekkaz
+Imprt+Pl3
+* *põõss%^VV2V%^VOWLower%>az*
+* *pâ0ss00%>az*
+
+* *põõss%^VV2V%^KK2GAllegro»%{ʼØ%}škuätt*
+* *põ0z000»0škuätt*
+
+* LEXICON V_1Y_VVSS  koossâd:kooss
+* LEXICON IV_1Y_VVSS  koossâd:kooss
 * : VSUF-INF_YD ;  (1)  Inf: viikkâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
@@ -226,6 +277,9 @@ Imprt+ConNegII, Pass+PrfPrc
 
 * +Imprt+Pl3:%^VV2V%^VOWLower%>az K ;  (9) Ind.Imprt.Pl3: piâkklâččaz
 Imprt+Pl3
+
+* LEXICON V_1Y_VKK  naggâd:naõ%^1VOW%{ʹØ%}gg
+* LEXICON IV_1Y_VKK  naggâd:naõ%^1VOW%{ʹØ%}gg
 
 * LEXICON V_ROVVYD  rõvvâd:rõ%^1VOW%{ʹØ%}vv
 * LEXICON IV_ROVVYD  rõvvâd:rõ%^1VOW%{ʹØ%}vv
