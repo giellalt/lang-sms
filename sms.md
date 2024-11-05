@@ -8154,8 +8154,17 @@ tuõđšteeʹjj:tuõđštẹẹ
 Class 5 according to Feist 152
 ## k-stems
 
+stemtype
+* Yaml: **N-sajos**
+Sajos:Sajo%^1VOW%{ʹØ%}s
+* +Der+Der/Dimin+N:%{XC%}%^V2VV%^K2GG N_KUUZZYZH-WITHOUT-PAL ;   kuuzz-
+* +Der+Der/Dimin+N:%{XC%}%^V2VV%^PAL%^K2GG N_KUUZZYZH-WITH-PAL ;   kuuʹzz-
+
 stemtype 
 * Yaml: **N-chaustok**
+čâustõk+N+Sg+Gen:čâustõõǥǥ
+* +Der+Der/Dimin+N:%{XC%}%^V2VV%^K2GG N_KUUZZYZH-WITHOUT-PAL ;   kuuzz-
+* +Der+Der/Dimin+N:%{XC%}%^V2VV%^PAL%^K2GG%^PALK N_KUUZZYZH-WITH-PAL ;   kuuʹzz-
 
 stemtype 
 * Yaml: **N-chaustok**
@@ -15716,7 +15725,7 @@ CODED BY EINO AND JASKA
 
 This is where new words are added as lexc entries before they are 
 added to the xml source files.
-Mättʼtõshalltõs:Mättʼtõshalltõs PROP_SAJOS ;
+Mättʼtõshalltõs:Mättʼtõshalltõs PROP_5Y_VS_VVZZ ;
 
 ADD PROPER NOUNS BELOW
 LACKING SPECIFIC DECLENSION TYPE

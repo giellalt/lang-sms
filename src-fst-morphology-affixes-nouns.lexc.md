@@ -5898,8 +5898,17 @@ tuõđšteeʹjj:tuõđštẹẹ
 Class 5 according to Feist 152
 ## k-stems
 
+stemtype
+* Yaml: **N-sajos**
+Sajos:Sajo%^1VOW%{ʹØ%}s
+* +Der+Der/Dimin+N:%{XC%}%^V2VV%^K2GG N_KUUZZYZH-WITHOUT-PAL ;   kuuzz-
+* +Der+Der/Dimin+N:%{XC%}%^V2VV%^PAL%^K2GG N_KUUZZYZH-WITH-PAL ;   kuuʹzz-
+
 stemtype 
 * Yaml: **N-chaustok**
+čâustõk+N+Sg+Gen:čâustõõǥǥ
+* +Der+Der/Dimin+N:%{XC%}%^V2VV%^K2GG N_KUUZZYZH-WITHOUT-PAL ;   kuuzz-
+* +Der+Der/Dimin+N:%{XC%}%^V2VV%^PAL%^K2GG%^PALK N_KUUZZYZH-WITH-PAL ;   kuuʹzz-
 
 stemtype 
 * Yaml: **N-chaustok**
