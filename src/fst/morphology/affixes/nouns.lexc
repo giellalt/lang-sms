@@ -10440,7 +10440,13 @@ LEXICON NMN_OBL-SAJOS
 ! HatY-STEM-PX-STRENGTHEN-ESS ;
 
 
-LEXICON N_SAJOS-PL
+LEXICON N_5Y_VS_VVZZ-PL
++Cmp/SgNom: R ;        ! čårrõs
+:%{XC%}%^C2CC%>â ESS/PAR ;
+:%{XC%}%^V2VV%^K2GG PL-NOM ;
+:%{XC%}%^V2VV%^K2GG PL-OBL ;
+
+LEXICON N_5Y_VK_VVGG-PL
 +Cmp/SgNom: R ;        ! čårrõs
 :%{XC%}%^C2CC%>â ESS/PAR ;
 :%{XC%}%^V2VV%^K2GG PL-NOM ;
@@ -10829,32 +10835,82 @@ LEXICON NMN_PRSPRC-EEQJJ !!= * @CODE@ tuõđšteei:tueʹjjee
 
 
 
-!LEXICON N_MAETTJUMUSH
-!!! inflection_type="?"
-!+N:%^Pen%^C2CC NMN_MAINSTUMMUSH ;
-!+N+Err/Orth: SG-NOM ;
-!+N+Err/Orth:š%>â ESS/PAR ;
-!+N+Err/Orth: NMN_OBL-SAJOS ;
 
 !! Class 5 according to Feist 152
 !! ## k-stems
 
-LEXICON N_5Y_VK
- NMN_5Y_VK ;
+LEXICON N_5Y_VS_VVZZ
+ NMN_5Y_VS_VVZZ ;
+LEXICON NMN_5Y_VS_VVZZ
+! gradation: yes
+!! stemtype
+!! * Yaml: **N-sajos**
+: SG-NOM ;
++Err/Orth:%>â ESS/PAR ; !2024-07-17 error
+:%{XC%}%^C2CC%>â ESS/PAR ;
+!! Sajos:Sajo%^1VOW%{ʹØ%}s
+:%{XC%}%^V2VV%^K2GG SG-ABE/ACC/GEN ;
+:%{XC%}%^PAL%^C2CC%>e SG-ILL ;
++Err/Orth-no-q:%{XC%}%^C2CC%>e SG-ILL ;
+:%{XC%}%^V2VV%^K2GG%>â SG-LOC ;
+:%{XC%}%^V2VV%^K2GG%> SG-COM_IN ;
+:%{XC%}%^V2VV%^K2GG PL-NOM ;
+:%{XC%}%^V2VV%^K2GG PL-OBL ;
++Der+Der/Dimin+N:%{XC%}%^V2VV%^K2GG N_KUUZZYZH-WITHOUT-PAL ;  !!= * @CODE@ kuuzz-
++Der+Der/Dimin+N:%{XC%}%^V2VV%^PAL%^K2GG N_KUUZZYZH-WITH-PAL ;  !!= * @CODE@ kuuʹzz-
++Der+Der/Dimin+N:%^PAL%^KK2GAllegro N_KUUZZYZH-WITH-PAL-ALLEGRO ;
+
+! CHECKPX 2015-10-20
+:%{XC%}%^C2CC HatY-STEM-PX-RETAIN ;
+:%{XC%}%^V2VV%^K2GG HatY-STEM-PX-WEAKEN ;
+:%{XC%}%^V2VV%^K2GG HatY-STEM-PX-WEAKEN_LARGO ;
+:%^K2GAllegro SG-LOC-PX_ALLEGRO ;
+:%{XC%}%^C2CC HatY-STEM-PX-STRENGTHEN ;
+
+! HatY-STEM-PX-RETAIN-PL ;
+! HatY-STEM-PX-WEAKEN-PL ;
+! HatY-STEM-PX-STRENGTHEN-ESS ;
+
+
+LEXICON N_5Y_VK_VVGG
+ NMN_5Y_VK_VVGG ;
 LEXICON N_SAJOS
 !!! inflection_type="?"
 !: NMN_SAJOS ;
- NMN_5Y_VK ;
+ NMN_5Y_VK_VVGG ;
 LEXICON NMN_SAJOS
- NMN_5Y_VK ;
-LEXICON NMN_5Y_VK
+ NMN_5Y_VK_VVGG ;
+LEXICON NMN_5Y_VK_VVGG
 ! gradation: yes
 !! stemtype 
 !! * Yaml: **N-chaustok**
 : SG-NOM ;
 +Err/Orth:%>â ESS/PAR ; !2024-07-17 error
 :%{XC%}%^C2CC%>â ESS/PAR ; 
-: NMN_OBL-SAJOS ;
+!: NMN_OBL-SAJOS ;
+!! čâustõk+N+Sg+Gen:čâustõõǥǥ
+:%{XC%}%^V2VV%^K2GG SG-ABE/ACC/GEN ;
+:%{XC%}%^PAL%^C2CC%^PALK%>e SG-ILL ;
++Err/Orth-no-q+Err/Orth-k-kh:%{XC%}%^C2CC%>e SG-ILL ;
+:%{XC%}%^V2VV%^K2GG%>â SG-LOC ;
+:%{XC%}%^V2VV%^K2GG%> SG-COM_IN ;
+:%{XC%}%^V2VV%^K2GG PL-NOM ;
+:%{XC%}%^V2VV%^K2GG PL-OBL ;
++Der+Der/Dimin+N:%{XC%}%^V2VV%^K2GG N_KUUZZYZH-WITHOUT-PAL ;  !!= * @CODE@ kuuzz-
++Der+Der/Dimin+N:%{XC%}%^V2VV%^PAL%^K2GG%^PALK N_KUUZZYZH-WITH-PAL ;  !!= * @CODE@ kuuʹzz-
++Der+Der/Dimin+N:%^PAL%^KK2GAllegro%^PALK N_KUUZZYZH-WITH-PAL-ALLEGRO ;
+
+! CHECKPX 2015-10-20
+:%{XC%}%^C2CC HatY-STEM-PX-RETAIN ;
+:%{XC%}%^V2VV%^K2GG HatY-STEM-PX-WEAKEN ;
+:%{XC%}%^V2VV%^K2GG HatY-STEM-PX-WEAKEN_LARGO ;
+:%^K2GAllegro SG-LOC-PX_ALLEGRO ;
+:%{XC%}%^C2CC HatY-STEM-PX-STRENGTHEN ;
+
+! HatY-STEM-PX-RETAIN-PL ;
+! HatY-STEM-PX-WEAKEN-PL ;
+! HatY-STEM-PX-STRENGTHEN-ESS ;
+
 
 LEXICON N_KARNDASH
 !!! inflection_type="?"
