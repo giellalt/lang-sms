@@ -5363,7 +5363,8 @@ Palatalization loss in Sg.Ill
 stemtype n-stem pååttaǩ:pååttak
 Palatalization loss in Sg.Ill
 * Yaml: **N-paattakj**
-* :%^RmVow%^PALNo VOONYS-STEM-PX ;  såbbr-
+* :%^RmVow%^PALNo VOONYS-STEM-PX-WITHOUT-PAL ;  ååʹblk-
+* :%^RmVow%^PALK VOONYS-STEM-PX-WITH-PAL ;  ååʹblǩ- 
 
 stemtype n-stem jânnam:jânnam
 N_GEN2X3-NOM2X1
@@ -6616,7 +6617,12 @@ Used with words like juurd: jurddǥatta
 
 ### VOONYS-STEM-PX
 * LEXICON VOONYS-STEM-PX  võnns-
+
 * LEXICON VOONYS-STEM-PX-NO-DER  võnns-
+
+* LEXICON VOONYS-STEM-PX-NO-DER-WITHOUT-PAL  võnns-
+
+* LEXICON VOONYS-STEM-PX-NO-DER-WITH-PAL  võnns-
 
 * LEXICON VOONYS-STEM-PX-PL  võnns-
 * VOONYS-STEM-PX-STRENGTHEN-WITH-PAL ;  essive
