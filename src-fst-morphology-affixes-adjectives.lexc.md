@@ -72,7 +72,9 @@ CLASS 1 LOW VOWEL, PALATALIZATION NOMINALS
 
 * LEXICON A_CHAAQCC  čääʹcc:čää%{ʹØ%}cc
 
-* LEXICON A_KAQLBB  käʹlbb:kälbb âʹlǧǧ:â%^1VOW%{ʹØ%}lgg
+* LEXICON A_KAQLBB  käʹlbb:kälbb 
+
+* LEXICON A_1E_VQYKK  âʹlǧǧ:â%^1VOW%{ʹØ%}lgg
 
 * LEXICON A_HAAQSKH  hääʹsǩ:hää%{ʹØ%}sk
 
@@ -286,6 +288,8 @@ CLASS 11 ADJECTIVES
 * LEXICON A_SHIYLGGYD  šiâlggâd:šiâlgg
 
 * LEXICON A_LOSSYD  lossâd:loss
+
+* LEXICON A_11Y_VYKK  viskkâd:viskk
 
 * LEXICON A_VISKKYD  viskkâd:viskk
 
@@ -1074,6 +1078,20 @@ NumContLex="1.113"
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) čääcc-
 * :%^VV2V%^PAL%^KK2GAllegro E-STEM-PX-ALLEGRO ;  (11) čäʹʒ-
 * :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) čäʹcc Ess+Px..
+
+* Yaml: **N-algg**
+* :%^PAL%^PALK A-02_E-STEM_SG-NOM ;		  			 (1) Sg.Nom: âʹlǧǧ
+* :%^V2VV%^PAL%^YXX2YX%^PALK A-02_E-STEM_SG-ABE/ACC/GEN ;	 (2) Pl.Nom: ââʹlj
+* : A-02_E-STEM_SG-ILL ;	     			   	 (3) Sg.Ill: âlgga
+* :%^V2VV%^PAL%^YXX2YX%^PALK%>e A-02_SG-LOC ;		 (4) Sg.Loc: ââʹljest
+* :%^V2VV%^VOWRaise%^PAL%^YXX2YX%^PALK A-02_SG-COM_IN ;  (5) Sg.Com: õõʹljin
+* :%^PAL%^PALK%>e A-02_ESS/PAR ;	       			 (6) Ess: âʹlǧǧen
+* :%^V2VV%^YXX2YX A-02_E-STEM_N_KUYLAZH ;		 (9) Der/Dimin.N.Sg.Nom: ââlǥaž
+*  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) kälbb-
+* :%^PAL%^YXX2YX%^PALK E-STEM-PX-ALLEGRO ;  (11) käʹlb-
+* :%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) käʹlbb Ess+Px..
+* :%^V2VV%^PAL%^YXX2YX%^PALK A-02_PL-NOM ;	 (2) Pl.Nom: ââʹlj
+* :%^V2VV%^VOWRaise%^PAL%^YXX2YX%^PALK A-02_E-STEM_PL-OBL ;  (5) Sg.Com: õõʹljin
 
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (vowel shift)

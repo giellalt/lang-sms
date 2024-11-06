@@ -304,7 +304,9 @@ CLASS 1 LOW VOWEL, PALATALIZATION NOMINALS
 
 * LEXICON A_CHAAQCC  čääʹcc:čää%{ʹØ%}cc
 
-* LEXICON A_KAQLBB  käʹlbb:kälbb âʹlǧǧ:â%^1VOW%{ʹØ%}lgg
+* LEXICON A_KAQLBB  käʹlbb:kälbb 
+
+* LEXICON A_1E_VQYKK  âʹlǧǧ:â%^1VOW%{ʹØ%}lgg
 
 * LEXICON A_HAAQSKH  hääʹsǩ:hää%{ʹØ%}sk
 
@@ -518,6 +520,8 @@ CLASS 11 ADJECTIVES
 * LEXICON A_SHIYLGGYD  šiâlggâd:šiâlgg
 
 * LEXICON A_LOSSYD  lossâd:loss
+
+* LEXICON A_11Y_VYKK  viskkâd:viskk
 
 * LEXICON A_VISKKYD  viskkâd:viskk
 
@@ -1306,6 +1310,20 @@ NumContLex="1.113"
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) čääcc-
 * :%^VV2V%^PAL%^KK2GAllegro E-STEM-PX-ALLEGRO ;  (11) čäʹʒ-
 * :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) čäʹcc Ess+Px..
+
+* Yaml: **N-algg**
+* :%^PAL%^PALK A-02_E-STEM_SG-NOM ;		  			 (1) Sg.Nom: âʹlǧǧ
+* :%^V2VV%^PAL%^YXX2YX%^PALK A-02_E-STEM_SG-ABE/ACC/GEN ;	 (2) Pl.Nom: ââʹlj
+* : A-02_E-STEM_SG-ILL ;	     			   	 (3) Sg.Ill: âlgga
+* :%^V2VV%^PAL%^YXX2YX%^PALK%>e A-02_SG-LOC ;		 (4) Sg.Loc: ââʹljest
+* :%^V2VV%^VOWRaise%^PAL%^YXX2YX%^PALK A-02_SG-COM_IN ;  (5) Sg.Com: õõʹljin
+* :%^PAL%^PALK%>e A-02_ESS/PAR ;	       			 (6) Ess: âʹlǧǧen
+* :%^V2VV%^YXX2YX A-02_E-STEM_N_KUYLAZH ;		 (9) Der/Dimin.N.Sg.Nom: ââlǥaž
+*  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) kälbb-
+* :%^PAL%^YXX2YX%^PALK E-STEM-PX-ALLEGRO ;  (11) käʹlb-
+* :%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) käʹlbb Ess+Px..
+* :%^V2VV%^PAL%^YXX2YX%^PALK A-02_PL-NOM ;	 (2) Pl.Nom: ââʹlj
+* :%^V2VV%^VOWRaise%^PAL%^YXX2YX%^PALK A-02_E-STEM_PL-OBL ;  (5) Sg.Com: õõʹljin
 
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (vowel shift)
@@ -2466,6 +2484,12 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^V2VV%^YXX2YX N_KUUZZYZH-WITHOUT-PAL ;   põõrt-
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^YXX2YX N_KUUZZYZH-WITH-PAL ;   põõʹrt-
 
+* LEXICON N_1Y_VYKK-PL  põõrt:põrtt
+* +Cmp/SgNom: R ;                            põrtt
+* :%^V2VV%^YXX2YX PL-NOM ;                 põõrt
+* :%>â ESS/PAR ;                                   põrttân
+* :%^V2VV%^YXX2YX PL-OBL ;                         põõrti
+
 * LEXICON N_ALGG-PL  põõrt:põrtt
 * +Cmp/SgNom: R ;                            põrtt
 * :%^V2VV%^YXX2YX PL-NOM ;                 põõrt
@@ -2968,6 +2992,11 @@ puåvv:puåvv
 * +Der+Der/Dimin+N:%^KK2GG N_MUORYZH-WITHOUT-PAL ;   liâǥǥ-
 * +Der+Der/Dimin+N:%^PALE%^PAL%^KK2GG%^PALK N_MUORYZH-WITH-PAL ;   lieʹjj-
 
+* +Cmp/SgNom: R ;	     			
+* :%^KK2GG PL-NOM ;	 viõǥǥ
+* :%>â ESS/PAR ; 	   			
+* :%^KK2GG PL-OBL ;			 luõzzi
+
 * LEXICON N_1Y_IY/EKK  liâkk:liâ%{ʹØ%}kk
 
 N_1Y_VWKK
@@ -3419,11 +3448,6 @@ THIS IS NOT THE SAME AS N_MUORR
 
 * +Der+Der/Dimin+N:%^KK2GG N_KUUZZYZH-WITHOUT-PAL ;   luõzz-
 * +Der+Der/Dimin+N:%^PAL%^KK2GG N_KUUZZYZH-WITH-PAL ;   luõʹzz-
-
-* +Cmp/SgNom: R ;	     			
-* :%^KK2GG PL-NOM ;	 luõzz
-* :%>â ESS/PAR ; 	   			
-* :%^KK2GG PL-OBL ;			 luõzzi
 
 * luõss # examples:*
 * *luõss:* `luõss+N+Sg+Nom`
@@ -5124,8 +5148,8 @@ Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-juvjj**
 * :%^V2VV%^VOWLower%^YXX2VX E-STEM_N_KUYLAZH ;  jooujaž
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) juvjj-
-* :%^Allegro%^PAL%^YXX2VX%^PALK E-STEM-PX-ALLEGRO ;  (11) juʹj-
-* :%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) juʹvjj Ess+Px..
+* :%^Allegro%^PAL%^YXX2VX E-STEM-PX-ALLEGRO ;  (11) juʹj-
+* :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) juʹvjj Ess+Px..
 
 * Yaml: **N-vuess**
 
@@ -5796,10 +5820,10 @@ gradation: yes
 * LEXICON N_AQKHKH  äʹǩǩ:äkk
 N_1E_VQKK
 
-* LEXICON N_1E_VVQKK  lääʹǩǩ:lää%^1VOW%{ʹØ%}kk
+* LEXICON N_1E_VVQKK  lääʹǩǩ:lää%{ʹØ%}kk
 * Yaml: **N-saeaemm**
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) säämm-
-* :%^VV2V%^PAL%^CC2CAllegro%^PALK E-STEM-PX-ALLEGRO ;  (11) säʹm-
+* :%^VV2V%^PAL%^KK2GAllegro%^PALK E-STEM-PX-ALLEGRO ;  (11) säʹm-
 * :%^VV2V%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) säʹmm Ess+Px..
 
 * LEXICON N_1E_VVQCC  sääʹmm:sää%{ʹØ%}mm
@@ -5869,7 +5893,7 @@ NumContLex="1.113"
 * :%^VOWRaise%^PAL%^KK2GG E-STEM_PL-OBL ;           (5) čaaʼʒʒin
 * :%^PAL%>e ESS/PAR ;                               (6) čääʼccen
 
-* LEXICON N_EEQKHKH  eeʹǩǩ:ẹẹkk
+* LEXICON N_EEQKHKH  eeʹǩǩ:ẹẹ%{ʹØ%}kk
 N_1E_VVQKK
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
 ## 1.3 Sg.Loc in -est (vowel shift)
@@ -5891,20 +5915,20 @@ NumContLex="1.113"
 * Yaml: **N-eekkj**
 * There are several stem types
 * eeʹǩǩ:eeʹǩǩ
-* :%^PAL E-STEM_SG-NOM ;	    			 (1) eeʹǩǩ
-* :%^PAL%^KK2GG E-STEM_SG-ABE/ACC/GEN ;	 (2) eeʹjj
-* :%^PAL%^KK2GG PL-NOM ;	 (2) eeʹjj
+* :%^PAL%^PALK E-STEM_SG-NOM ;	    			 (1) eeʹǩǩ
+* :%^PAL%^KK2GG%^PALK E-STEM_SG-ABE/ACC/GEN ;	 (2) eeʹjj
+* :%^PAL%^KK2GG%^PALK PL-NOM ;	 (2) eeʹjj
 * :%^VV2V E-STEM_SG-ILL ;     		 (3) ẹkka
-* :%^PAL%^KK2GG%>e SG-LOC ;	 		 (4) eeʹjjest
-* :%^VOWRaise%^PAL%^KK2GG SG-COM_IN ;		 (5) iiʹjjin
-* :%^VOWRaise%^PAL%^KK2GG E-STEM_PL-OBL ;		 (5) iiʹjjin
-* +Use/NGminip+Use/NG:%^PAL%^KK2GG SG-COM_IN ;		 (5) eeʹjjin
-* +Use/NGminip+Use/NG:%^PAL%^KK2GG E-STEM_PL-OBL ;		 (5) eeʹjjin
-* :%^PAL%>e ESS/PAR ; 	   	     		 (6) eeʹǩǩen
+* :%^PAL%^KK2GG%^PALK%>e SG-LOC ;	 		 (4) eeʹjjest
+* :%^VOWRaise%^PAL%^KK2GG%^PALK SG-COM_IN ;		 (5) iiʹjjin
+* :%^VOWRaise%^PAL%^KK2GG%^PALK E-STEM_PL-OBL ;		 (5) iiʹjjin
+* +Use/NGminip+Use/NG:%^PAL%^KK2GG%^PALK SG-COM_IN ;		 (5) eeʹjjin
+* +Use/NGminip+Use/NG:%^PAL%^KK2GG%^PALK E-STEM_PL-OBL ;		 (5) eeʹjjin
+* :%^PAL%^PALK%>e ESS/PAR ;     		 (6) eeʹǩǩen
 * :%^KK2GG E-STEM_N_KUYLAZH ;	 (9) čääʒʒaž
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) ẹẹkk-
-* :%^VV2V%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) eʹǩ-
-* :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) eʹǩǩ Ess+Px..
+* :%^VV2V%^PAL%^CC2CAllegro%^PALK E-STEM-PX-ALLEGRO ;  (11) eʹǩ-
+* :%^VV2V%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) eʹǩǩ Ess+Px..
 
 * LEXICON N_TEEQMM  teeʹmm:teemm
 N_1E_EEQCC
@@ -5949,6 +5973,21 @@ NumContLex="1.113"
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) pââjj-
 * :%^VV2V%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) pâʹj-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) pâʹjj- Ess+Px..
+
+Is for nouns with *-est* Loc, Extra long vowel
+* Yaml: **N-aâlghgh**
+* :%^PAL%^PALK E-STEM_SG-NOM ;		  			 (1) Sg.Nom: âʹlǧǧ
+* :%^V2VV%^PAL%^YXX2YX%^PALK E-STEM_SG-ABE/ACC/GEN ;	 (2) Pl.Nom: ââʹlj
+* : E-STEM_SG-ILL ;	     			   	 (3) Sg.Ill: âlgga
+* :%^V2VV%^PAL%^YXX2YX%^PALK%>e SG-LOC ;		 (4) Sg.Loc: ââʹljest
+* :%^V2VV%^VOWRaise%^PAL%^YXX2YX%^PALK SG-COM_IN ;  (5) Sg.Com: õõʹljin
+* :%^PAL%^PALK%>e ESS/PAR ;	       			 (6) Ess: âʹlǧǧen
+* :%^V2VV%^YXX2YX E-STEM_N_KUYLAZH ;		 (9) Der/Dimin.N.Sg.Nom: ââlǥaž
+*  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) kälbb-
+* :%^PAL%^YXX2YX%^PALK E-STEM-PX-ALLEGRO ;  (11) käʹlb-
+* :%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) käʹlbb Ess+Px..
+* :%^V2VV%^PAL%^YXX2YX%^PALK PL-NOM ;	 (2) Pl.Nom: ââʹlj
+* :%^V2VV%^VOWRaise%^PAL%^YXX2YX%^PALK E-STEM_PL-OBL ;  (5) Sg.Com: õõʹljin
 
 * LEXICON N_KAQLBB  käʹlbb:kälbb âʹlǧǧ:âlgg
 N_1E_VQYXX
@@ -6024,7 +6063,6 @@ Is for nouns with *-est* Loc, Extra long vowel
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) argumentt-
 * :%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ;  (11) argumeʹnt-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) argumeʹntt- Ess+Px..
-
 * LEXICON N_PAIQKHKH  päiʹǩǩ:päikk
 N_1E_VUQKK
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -6046,20 +6084,20 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 NumContLex="1.113"
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-paeikk**
-* :%^PAL E-STEM_SG-NOM ;		   (1) Sg.Nom: päiʹǩǩ
-* :%^V2VV%^PAL%^YXX2YX E-STEM_SG-ABE/ACC/GEN ;  (2) Pl.Nom: pääiʹǩ
-* :%^V2VV%^PAL%^YXX2YX PL-NOM ;  (2) Pl.Nom: pääiʹǩ
+* :%^PAL%^PALK E-STEM_SG-NOM ;		   (1) Sg.Nom: päiʹǩǩ
+* :%^V2VV%^PAL%^YXX2YX%^PALK E-STEM_SG-ABE/ACC/GEN ;  (2) Pl.Nom: pääiʹǩ
+* :%^V2VV%^PAL%^YXX2YX%^PALK PL-NOM ;  (2) Pl.Nom: pääiʹǩ
 * : E-STEM_SG-ILL ;	      (3) Sg.Ill: päikka
-* :%^V2VV%^PAL%^YXX2YX%>e SG-LOC ;   (4) Sg.Loc: pääiʹǩest
-* :%^V2VV%^PAL%^YXX2YX SG-COM_IN ;      (5) Sg.Com: pääiʹǩin
-* +Use/NGminip+Use/NG:%^V2VV%^VOWRaise%^PAL%^YXX2YX SG-COM_IN ;      (5) Sg.Com: paaiʹǩin
-* :%^PAL%>e ESS/PAR ; 	        (6) Ess: päiʹǩǩen
-* :%^V2VV%^PAL%^YXX2YX%> E-STEM_PL-OBL ;    (8) Pl.Acc: pääiʹǩid
-* +Use/NGminip+Use/NG:%^V2VV%^VOWRaise%^PAL%^YXX2YX%> E-STEM_PL-OBL ;    (8) Pl.Acc: paaiʹǩid
+* :%^V2VV%^PAL%^YXX2YX%^PALK%>e SG-LOC ;   (4) Sg.Loc: pääiʹǩest
+* :%^V2VV%^PAL%^YXX2YX%^PALK SG-COM_IN ;      (5) Sg.Com: pääiʹǩin
+* +Use/NGminip+Use/NG:%^V2VV%^VOWRaise%^PAL%^YXX2YX%^PALK SG-COM_IN ;      (5) Sg.Com: paaiʹǩin
+* :%^PAL%^PALK%>e ESS/PAR ; 	        (6) Ess: päiʹǩǩen
+* :%^V2VV%^PAL%^YXX2YX%^PALK%> E-STEM_PL-OBL ;    (8) Pl.Acc: pääiʹǩid
+* +Use/NGminip+Use/NG:%^V2VV%^VOWRaise%^PAL%^YXX2YX%^PALK%> E-STEM_PL-OBL ;    (8) Pl.Acc: paaiʹǩid
 * :%^V2VV%^YXX2YX E-STEM_N_KUYLAZH ;  (9) Der/Dimin.N.Sg.Nom: pääiǥaž
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) päikk-
-* :%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ;  (11) päiʹǩ-
-* :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) päiʹǩǩ- Ess+Px..
+* :%^PAL%^YXX2YX%^PALK E-STEM-PX-ALLEGRO ;  (11) päiʹǩ-
+* :%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) päiʹǩǩ- Ess+Px..
 
 * päiʹǩǩ #  examples:*
 * *päiʹǩǩ:* `päiʹǩǩ+N+Sg+Nom`
@@ -6083,22 +6121,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * *pääikaž:* `päiʹǩǩ+N+Der+Der/Dimin+N+Sg+Nom`
 * *pääika:* `päiʹǩǩ+N+Der+Der/Dimin+N+Sg+Gen`
 
-* LEXICON N_LAEUQKHKH  päiʹǩǩ:päikk
-N_1E_VUQKK
-Is for nouns with *-est* Loc, Extra long vowel
-* Yaml: **N-paeikk**
-* :%^PAL E-STEM_SG-NOM ;		   (1) Sg.Nom: läuʹǩǩ
-* :%^V2VV%^PAL%^YXX2YX E-STEM_SG-ABE/ACC/GEN ;  (2) Pl.Nom: lääuʹǩ
-* :%^V2VV%^PAL%^YXX2YX PL-NOM ;  (2) Pl.Nom: lääuʹǩ
-* : E-STEM_SG-ILL ;	      (3) Sg.Ill: läukka
-* :%^V2VV%^PAL%^YXX2YX%>e SG-LOC ;   (4) Sg.Loc: lääuʹǩest
-* :%^V2VV%^VOWRaise%^PAL%^YXX2YX SG-COM_IN ;      (5) Sg.Com: laauʹǩin
-* :%^PAL%>e ESS/PAR ; 	        (6) Ess: läuʹǩǩen
-* :%^V2VV%^VOWRaise%^PAL%^YXX2YX%> E-STEM_PL-OBL ;    (8) Pl.Acc: laauʹǩid
-* :%^V2VV%^YXX2YX E-STEM_N_KUYLAZH ;  (9) Der/Dimin.N.Sg.Nom: lääuǥaž
-*  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) läukk-
-* :%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ;  (11) läuʹǩ-
-* :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) läuʹǩǩ- Ess+Px..
+vowel: monophthong
 
 * läuʹǩǩ #  examples:*
 * *läuʹǩǩ:* `läuʹǩǩ+N+Sg+Nom`
@@ -6559,7 +6582,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * :%^PAL%^KK2GAllegro E-STEM-PX-ALLEGRO ;  (11) piẹʹz-
 * :%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) peäʹsˈs Ess+Px..
 
-* LEXICON N_SUEAQKHKH  sueʹǩǩ:suäkk
+* LEXICON N_SUEAQKHKH  sueʹǩǩ:suä%{ʹØ%}kk
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
 ## 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
@@ -6580,8 +6603,8 @@ NumContLex="1.113"
 * Yaml: **N-suekkj**
 
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) suäkk-
-* :%^VOWRaise%^PALẸ%^Allegro%^PAL%^KK2GAllegro E-STEM-PX-ALLEGRO ;  (11) suẹˈʹj-
-* :%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) suäʹǩˈǩ Ess+Px..
+* :%^VOWRaise%^PALẸ%^Allegro%^PAL%^KK2GAllegro%^PALK E-STEM-PX-ALLEGRO ;  (11) suẹˈʹj-
+* :%^PAL%^CC2CCC%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) suäʹǩˈǩ Ess+Px..
 
 * LEXICON N_KUEAQTT  kuẹʹtt:kuätt
 similar_to: N_SUEAQKHKH
@@ -6843,6 +6866,12 @@ låʹdd >> lååʹddi; it should  be lå'dd >> loo'ddi
 
 * LEXICON E-STEM_N_KUYLAZH  (9)
 
+* There are several stem types 
+* jeäʹrǧǧ:jeäʹrǧǧ
+*  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) jeärgg-
+* :%^PALẸ%^PAL%^YXX2YX%^PALK  E-STEM-PX-ALLEGRO ;  (11) jiẹʹrj-
+* :%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) jeäʹrmm Ess+Px..
+
 * LEXICON N_JEAQRMM  jeäʹrǧǧ:jeärgg
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
 ## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
@@ -6884,8 +6913,8 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 * There are several stem types 
 * jeäʹrǧǧ:jeäʹrǧǧ
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) reäigg-
-* :%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ;  (11) reäiʹj-
-* :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) reäiʹǧǧ Ess+Px..
+* :%^PAL%^YXX2YX%^PALK E-STEM-PX-ALLEGRO ;  (11) reäiʹj-
+* :%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) reäiʹǧǧ Ess+Px..
 
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) reâmjj- CHECKME 2016-08-19
 * :%^VOWRaise%^PALE%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ;  (11) rieʹmj-
@@ -7821,6 +7850,11 @@ N_2E_VVQCCES/Z
 * LEXICON NMN_OAQVES  ååʹves:å%^1VOWvves
 * Yaml: **N-aaves**
 * :%^RmVow VOONYS-STEM-PX ;  åvvs-
+
+* LEXICON N_2E_VQYKK_S/Z   pä%^1VOW%{ʹØ%}lgges
+* LEXICON NMN_2E_VQYKK_S/Z   pä%^1VOW%{ʹØ%}lgges
+* Yaml: **N-kaeaerbes**
+* :%^RmVow VOONYS-STEM-PX ;  kärbbs-
 
 * LEXICON N_KAAQRBES  kääʹrbes:kärbbes
 N_2E_VVQYXES/Z
@@ -9255,12 +9289,12 @@ NomAct in MOsh
 * *põõss%^VOWLower*
 * *pââss0*
 
-* +Ind+Prs+Pl3:%^VV2V%^VOWLower%^PAL%>e K ;  (3)  Ind.Prs.Pl3: veʹǩǩe
+* +Ind+Prs+Pl3:%^VV2V%^VOWLower%^PAL%^PALK%>e K ;  (3)  Ind.Prs.Pl3: veʹǩǩe
 +V+Ind+Prs+Pl3
-* *põõ0ss%^VV2V%^VOWLower%^PAL%>e*
+* *põõ0ss%^VV2V%^VOWLower%^PAL%^PALK%>e*
 * *pâ0ʹss000%>e*
 
-* :%^VV2V%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: viʹǩǩe
+* :%^VV2V%^PAL%^PALK VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: viʹǩǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 * *põõ0ss%^VV2V%^PAL%>e*
 * *põ0ʼss00%>e*
@@ -9734,10 +9768,10 @@ NomAct in MOsh
 * :%^VOWLower VSUF-IND-PRS-SG3_YD ;  (2,9)  Ind.Prs.Sg3: tåbdd
 +Ind+Prs+Sg3, +Imprt+Pl3
 
-* +Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ;  (3)  Ind.Prs.Pl3: tåʹbdde
+* +Ind+Prs+Pl3:%^VOWLower%^PAL%^PALK%>e K ;  (3)  Ind.Prs.Pl3: tåʹbdde
 +Ind+Prs+Pl3
 
-* :%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: toʹbdde
+* :%^PAL%^PALK VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: toʹbdde
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^V2VV%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: toobdâž
@@ -9867,10 +9901,10 @@ NomAct in MOsh
 * :%^VOWLower VSUF-IND-PRS-SG3_YD ;  (2)  Ind.Prs.Sg3: kuâskk
 +Ind+Prs+Sg3, +Imprt+Pl3
 
-* +Ind+Prs+Pl3:%^VOWLower%^PALE%^PAL%>e K ;  (3)  Ind.Prs.Pl3: kueʹsǩǩe (allophonic)
+* +Ind+Prs+Pl3:%^VOWLower%^PALE%^PAL%^PALK%>e K ;  (3)  Ind.Prs.Pl3: kueʹsǩǩe (allophonic)
 +Ind+Prs+Pl3
 
-* :%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: kuõʹsǩǩe
+* :%^PAL%^PALK VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: kuõʹsǩǩe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: kuõskâž
@@ -11089,7 +11123,7 @@ EVEN-SYLLABLE STEMS IN -ED
 * LEXICON V_1E_VQKK  câʹǩǩed:câ%^1VOW%{ʹØ%}kk
 * LEXICON V0_1E_VQKK  câʹǩǩed:câ%^1VOW%{ʹØ%}kk
 ExtraStrong-LowVowel-Palatalization
-* :%^PAL VSUF-INF_ED ;  (1) +V+Inf: käʹtted
+* :%^PAL%^PALK VSUF-INF_ED ;  (1) +V+Inf: käʹtted
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -11098,19 +11132,19 @@ ExtraStrong-LowVowel-No-palatalization
 +V+Ind+Prs+Sg3, Ind.Prt.ConNeg, PrfPrc
 
 Strong-LowVowel-Palatalization
-* +Ind+Prs+Pl3:%^PAL%>e K ;  (3) +V+Ind+Prs+Pl3: käʹtte
+* +Ind+Prs+Pl3:%^PAL%^PALK%>e K ;  (3) +V+Ind+Prs+Pl3: käʹtte
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: joʹtte
+* :%^VOWRaise%^PAL%^PALK%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: joʹtte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Strong-StableV-Palatalization
-* :%^V2VV%^PAL VSUF-IND-PRS-CONNEG_ED ;  (5) +V+Imprt+Sg2: kääʹtt
+* :%^V2VV%^PAL%^PALK VSUF-IND-PRS-CONNEG_ED ;  (5) +V+Imprt+Sg2: kääʹtt
 Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 
 Strong-RaisedVowel-Palatalization
-* :%^V2VV%^VOWRaise%^PAL VSUF-POTENTIAL_ED ;   (6) +V+Pot+Sg3: kaaʹttež
+* :%^V2VV%^VOWRaise%^PAL%^PALK VSUF-POTENTIAL_ED ;   (6) +V+Pot+Sg3: kaaʹttež
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
 
 Strong-LowVowel-No-palatalization
@@ -11128,7 +11162,7 @@ Imprt+Pl3
 * +Use/NGminip+Use/SpellNoSugg:%^PAL%>e FOR-ALLEGRO-DEVERBAL-DERIVATION ;  largo
 
 (11) Present Participle:
-* :%^VOWRaise%^PAL%> FOR-VSUF-PRSPRC_ED ;  (11) +V+Act+PrsPrc: solõʹtti
+* :%^VOWRaise%^PAL%^PALK%> FOR-VSUF-PRSPRC_ED ;  (11) +V+Act+PrsPrc: solõʹtti
 
 (12) Weak-RaisedVowel-NoPalatalization
 * :%^V2VV%^VOWRaise VSUF-CHED_ED ;   (12) +Der+Der/ched: solõõtt-

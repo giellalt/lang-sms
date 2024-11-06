@@ -110,12 +110,12 @@ NomAct in MOsh
 * *põõss%^VOWLower*
 * *pââss0*
 
-* +Ind+Prs+Pl3:%^VV2V%^VOWLower%^PAL%>e K ;  (3)  Ind.Prs.Pl3: veʹǩǩe
+* +Ind+Prs+Pl3:%^VV2V%^VOWLower%^PAL%^PALK%>e K ;  (3)  Ind.Prs.Pl3: veʹǩǩe
 +V+Ind+Prs+Pl3
-* *põõ0ss%^VV2V%^VOWLower%^PAL%>e*
+* *põõ0ss%^VV2V%^VOWLower%^PAL%^PALK%>e*
 * *pâ0ʹss000%>e*
 
-* :%^VV2V%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: viʹǩǩe
+* :%^VV2V%^PAL%^PALK VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: viʹǩǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 * *põõ0ss%^VV2V%^PAL%>e*
 * *põ0ʼss00%>e*
@@ -589,10 +589,10 @@ NomAct in MOsh
 * :%^VOWLower VSUF-IND-PRS-SG3_YD ;  (2,9)  Ind.Prs.Sg3: tåbdd
 +Ind+Prs+Sg3, +Imprt+Pl3
 
-* +Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ;  (3)  Ind.Prs.Pl3: tåʹbdde
+* +Ind+Prs+Pl3:%^VOWLower%^PAL%^PALK%>e K ;  (3)  Ind.Prs.Pl3: tåʹbdde
 +Ind+Prs+Pl3
 
-* :%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: toʹbdde
+* :%^PAL%^PALK VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: toʹbdde
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^V2VV%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: toobdâž
@@ -722,10 +722,10 @@ NomAct in MOsh
 * :%^VOWLower VSUF-IND-PRS-SG3_YD ;  (2)  Ind.Prs.Sg3: kuâskk
 +Ind+Prs+Sg3, +Imprt+Pl3
 
-* +Ind+Prs+Pl3:%^VOWLower%^PALE%^PAL%>e K ;  (3)  Ind.Prs.Pl3: kueʹsǩǩe (allophonic)
+* +Ind+Prs+Pl3:%^VOWLower%^PALE%^PAL%^PALK%>e K ;  (3)  Ind.Prs.Pl3: kueʹsǩǩe (allophonic)
 +Ind+Prs+Pl3
 
-* :%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: kuõʹsǩǩe
+* :%^PAL%^PALK VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: kuõʹsǩǩe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: kuõskâž
@@ -1944,7 +1944,7 @@ EVEN-SYLLABLE STEMS IN -ED
 * LEXICON V_1E_VQKK  câʹǩǩed:câ%^1VOW%{ʹØ%}kk
 * LEXICON V0_1E_VQKK  câʹǩǩed:câ%^1VOW%{ʹØ%}kk
 ExtraStrong-LowVowel-Palatalization
-* :%^PAL VSUF-INF_ED ;  (1) +V+Inf: käʹtted
+* :%^PAL%^PALK VSUF-INF_ED ;  (1) +V+Inf: käʹtted
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -1953,19 +1953,19 @@ ExtraStrong-LowVowel-No-palatalization
 +V+Ind+Prs+Sg3, Ind.Prt.ConNeg, PrfPrc
 
 Strong-LowVowel-Palatalization
-* +Ind+Prs+Pl3:%^PAL%>e K ;  (3) +V+Ind+Prs+Pl3: käʹtte
+* +Ind+Prs+Pl3:%^PAL%^PALK%>e K ;  (3) +V+Ind+Prs+Pl3: käʹtte
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: joʹtte
+* :%^VOWRaise%^PAL%^PALK%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: joʹtte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Strong-StableV-Palatalization
-* :%^V2VV%^PAL VSUF-IND-PRS-CONNEG_ED ;  (5) +V+Imprt+Sg2: kääʹtt
+* :%^V2VV%^PAL%^PALK VSUF-IND-PRS-CONNEG_ED ;  (5) +V+Imprt+Sg2: kääʹtt
 Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 
 Strong-RaisedVowel-Palatalization
-* :%^V2VV%^VOWRaise%^PAL VSUF-POTENTIAL_ED ;   (6) +V+Pot+Sg3: kaaʹttež
+* :%^V2VV%^VOWRaise%^PAL%^PALK VSUF-POTENTIAL_ED ;   (6) +V+Pot+Sg3: kaaʹttež
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
 
 Strong-LowVowel-No-palatalization
@@ -1983,7 +1983,7 @@ Imprt+Pl3
 * +Use/NGminip+Use/SpellNoSugg:%^PAL%>e FOR-ALLEGRO-DEVERBAL-DERIVATION ;  largo
 
 (11) Present Participle:
-* :%^VOWRaise%^PAL%> FOR-VSUF-PRSPRC_ED ;  (11) +V+Act+PrsPrc: solõʹtti
+* :%^VOWRaise%^PAL%^PALK%> FOR-VSUF-PRSPRC_ED ;  (11) +V+Act+PrsPrc: solõʹtti
 
 (12) Weak-RaisedVowel-NoPalatalization
 * :%^V2VV%^VOWRaise VSUF-CHED_ED ;   (12) +Der+Der/ched: solõõtt-
