@@ -377,16 +377,16 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * LEXICON N_1Y_VKK_VVGG  jokk:jo%^1VOW%{ʹØ%}kk
 * Yaml: **N-jokk river/joki**
 
-* : SG-NOM ;	    		 kuss
-* :%>â ESS/PAR ;     		 	 kussân
-* :%^PAL%^PALK%>e SG-ILL ;    		 kuʹsse
-* :%^PAL%^PALK N2A_LUOQSSI ;    		 kuʹssi
-* :%^V2VV%^KK2GG SG-ABE/ACC/GEN-PL-NOM ;		 kuuzz
-* :%^V2VV%^KK2GG%>â SG-LOC ;	 kuuzzâ
-* :%^V2VV%^KK2GG SG-COM_IN ;	 kuuzzin
-* :%^V2VV%^KK2GG PL-OBL ;		 kuuzzi, kuuzzid, kuuzzid, kuuzzin, kuuzzivuiʹm, kuuzzitaa
-* +Der+Der/Dimin+N:%^V2VV%^KK2GG N_KUUZZYZH-WITHOUT-PAL ;   kuuzz-
-* +Der+Der/Dimin+N:%^V2VV%^PAL%^KK2GG%^PALK N_KUUZZYZH-WITH-PAL ;   kuuʹzz-
+* : SG-NOM ;	    		 jokk
+* :%>â ESS/PAR ;     		 	 jokkân
+* :%^PAL%^PALK%>e SG-ILL ;    		 joʹǩǩe
+* :%^PAL%^PALK N2A_LUOQSSI ;    		 joʹǩǩi
+* :%^V2VV%^KK2GG SG-ABE/ACC/GEN-PL-NOM ;		 jooǥǥ
+* :%^V2VV%^KK2GG%>â SG-LOC ;	 jooǥǥâ
+* :%^V2VV%^KK2GG SG-COM_IN ;	 jooǥǥin
+* :%^V2VV%^KK2GG PL-OBL ;		 jooǥǥi, kuuzzid, kuuzzid, kuuzzin, kuuzzivuiʹm, kuuzzitaa
+* +Der+Der/Dimin+N:%^V2VV%^KK2GG N_KUUZZYZH-WITHOUT-PAL ;   jooǥǥ-
+* +Der+Der/Dimin+N:%^V2VV%^PAL%^KK2GG%^PALK N_KUUZZYZH-WITH-PAL ;   jooʹjj-
 
 * LEXICON N_KUSS  kuss:ku%^1VOW%{ʹØ%}ss
 N_1Y_VKK_HVVGG
@@ -5907,6 +5907,7 @@ Sajos:Sajo%^1VOW%{ʹØ%}s
 stemtype 
 * Yaml: **N-chaustok**
 čâustõk+N+Sg+Gen:čâustõõǥǥ
+
 * +Der+Der/Dimin+N:%{XC%}%^V2VV%^K2GG N_KUUZZYZH-WITHOUT-PAL ;   kuuzz-
 * +Der+Der/Dimin+N:%{XC%}%^V2VV%^PAL%^K2GG%^PALK N_KUUZZYZH-WITH-PAL ;   kuuʹzz-
 
@@ -6502,11 +6503,14 @@ kaađneǩ+N+Sg+Nom **lincense vessel/suitsutusastia**
 * *kaađnẹ%^1VOWk%^PALE%^PALK*
 * *kaađne0ǩ00*
 * :%{XC%}%^PAL%^C2CC%^PALK%>e ESS/PAR ;  kaađneʹǩǩe- 
+* +Err/Orth-k-kh:%{XC%}%^PAL%^C2CC%>e ESS/PAR ;  kaađneʹkke- 
 * :%{XC%}%^V2VV%^PAL%^C2CC%^PALK SG-ABE/ACC/GEN ;  kaađneeʹǩǩ
+* +Err/Orth-k-kh:%{XC%}%^V2VV%^PAL%^C2CC SG-ABE/ACC/GEN ;  kaađneeʹkk
 kaađneǩ+N+Sg+Gen 
 * *kaađnẹ%^1VOWǩ%{XC%}%^V2VV%^PAL%^C2CC%^PALK*
 * *kaađneeʹǩǩ0000*
 * :%{XC%}%^PALNo%^C2CC%>a SG-ILL ;  kaađnẹkka
+* :%{XC%}%^V2VV%^VOWRaise%^PAL%^C2CC%^PALK SG-COM_IN ;  kaađniiʹǩǩin
 * *kaađnẹ%^1VOW0ǩ%{XC%}%^V2VV%^VOWRaise%^PAL%^C2CC%^PALK%>in*
 * *kaađniiʹǩǩ00000%>in*
 * +Use/NGminip+Use/NG:%{XC%}%^V2VV%^PAL%^C2CC%^PALK SG-COM_IN ;  kaađneeʹǩǩin

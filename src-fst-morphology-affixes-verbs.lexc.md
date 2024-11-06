@@ -1269,7 +1269,7 @@ Allegro (10) lieʹđ»
 
 * Yaml: **V-juekked**
 Strong-HighVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL VSUF-INF_ED ;  (1) +V+Inf: jueʹǩǩed
+* :%^VOWRaise%^PALE%^PAL VSUF-INF_ED_NO_mOsh ;  (1) +V+Inf: jueʹǩǩed
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -1318,7 +1318,7 @@ Secondary allegro for incoative: juâǥ»
 * LEXICON V0_1E_UY/EQKK  jueʹǩǩed:juâ%{ʹØ%}kk
 * Yaml: **V-juekked**
 Strong-HighVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL%^PALK VSUF-INF_ED ;  (1) +V+Inf: jueʹǩǩed
+* :%^VOWRaise%^PALE%^PAL%^PALK VSUF-INF_ED_NO_mOsh ;  (1) +V+Inf: jueʹǩǩed
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -1369,7 +1369,7 @@ Secondary allegro for incoative: juâǥ»
 like: V_JUEQKHKHED
 
 Strong-HighVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL VSUF-INF_ED ;		 (1) kueʹdˈded 
+* :%^VOWRaise%^PALE%^PAL VSUF-INF_ED_NO_mOsh ;		 (1) kueʹdˈded 
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -1419,7 +1419,7 @@ Allegro (10) kueʹd»
 like: V_SHIEQTTTED
 
 Strong-HighVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL VSUF-INF_ED ;		 (1) šieʹtˈted 
+* :%^VOWRaise%^PALE%^PAL VSUF-INF_ED_NO_mOsh ;		 (1) šieʹtˈted 
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -1655,7 +1655,7 @@ Imprt+Pl3
 * LEXICON V0_TIEQTTED  tieʹtted:teâtt
 * Yaml: **V-tietted**
 Strong-HighVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL VSUF-INF_ED ;  (1) +V+Inf: tieʹtted
+* :%^VOWRaise%^PALE%^PAL VSUF-INF_ED_NO_mOsh ;  (1) +V+Inf: tieʹtted
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -1705,7 +1705,7 @@ Imprt+Pl3
 * LEXICON V0_KHIEQLDDED  ǩieʹldded:teâtt
 * Yaml: **V-tietted**
 Strong-HighVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL VSUF-INF_ED ;  (1) +V+Inf: ǩieʹldded
+* :%^VOWRaise%^PALE%^PAL VSUF-INF_ED_NO_mOsh ;  (1) +V+Inf: ǩieʹldded
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -1763,7 +1763,7 @@ Imprt+Pl3
 * LEXICON V0_1E_UY/EQYXX  vueʹrdded:vuârdd
 YXX-HighVowel-Palatalization
 Height=0, PAL=+, V=0, C=0, âae=e
-* :%^PALE%^PAL VSUF-INF_ED ;  (1) +V+Inf: vueʹlǧǧed
+* :%^PALE%^PAL VSUF-INF_ED_NO_mOsh ;  (1) +V+Inf: vueʹlǧǧed
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -1829,7 +1829,7 @@ Height=+, PAL=-, V=0, C=0, âae=e
 * Yaml: **V-juekked**
 YXX-HighVowel-Palatalization
 Height=0, PAL=+, V=0, C=0, âae=e
-* :%^PALE%^PAL VSUF-INF_ED ;  (1) +V+Inf: vueʹlǧǧed
+* :%^PALE%^PAL%^PALK VSUF-INF_ED_NO_mOsh ;  (1) +V+Inf: vueʹlǧǧed
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -1840,22 +1840,22 @@ Height=0, PAL=-, V=0, C=0, âae=e
 
 YXX-HighVowel-Palatalization !lowered
 Height=-, PAL=+, V=-, C=+, âae=e
-* +Ind+Prs+Pl3:%^PALE%^PAL%>e K ;  (3) +V+Ind+Prs+Pl3: vueʹlǧǧe
+* +Ind+Prs+Pl3:%^PALE%^PAL%^PALK%>e K ;  (3) +V+Ind+Prs+Pl3: vueʹlǧǧe
 +V+Ind+Prs+Pl3
 
 YXX-RaisedVowel-Palatalization
 Height=+, PAL=+, V=-, C=+, âae=e
-* :%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: vuõʹlǧǧe
+* :%^VOWRaise%^PAL%^PALK%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: vuõʹlǧǧe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 2YX-StableV-Palatalization
 Height=0, PAL=+, V=+, C=-, âae=e
-* :%^PALE%^PAL%^YXX2YX VSUF-IND-PRS-CONNEG_ED ;  (5) +V+Imprt+Sg2: vueʹlj
+* :%^PALE%^PAL%^YXX2YX%^PALK VSUF-IND-PRS-CONNEG_ED ;  (5) +V+Imprt+Sg2: vueʹlj
 Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 
 2YX-RaisedVowel-Palatalization
 Height=+, PAL=+, V=+, C=-, âae=e
-* :%^VOWRaise%^PAL%^YXX2YX%> VSUF-POTENTIAL_ED ;   (6) +V+Pot+Sg3: !! vuõʹljež
+* :%^VOWRaise%^PAL%^YXX2YX%^PALK%> VSUF-POTENTIAL_ED ;   (6) +V+Pot+Sg3: !! vuõʹljež
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, 
 
 2YX-LoweredVowel-No-palatalization
@@ -1878,8 +1878,8 @@ Height=0, PAL=+, V=-, C=-, âae=e
 
 (11) Present Participle:
 Height=+, PAL=+, V=0, C=0, âae=e
-* :%^VOWRaise%^PAL FOR-VSUF-PRSPRC_ED ;  (4) +V+Act+PrsPrc: vuõʹlǧǧi
-* :%^VOWRaise%^PALE%^PAL FOR-VSUF-PRSPRC_ED ;  (4) +V+Act+PrsPrc: vuõʹlǧǧi
+* :%^VOWRaise%^PAL%^PALK FOR-VSUF-PRSPRC_ED ;  (4) +V+Act+PrsPrc: vuõʹlǧǧi
+* :%^VOWRaise%^PALE%^PAL%^PALK FOR-VSUF-PRSPRC_ED ;  (4) +V+Act+PrsPrc: vuõʹlǧǧi
 
 (12) Weak-RaisedVowel-NoPalatalization
 Height=+, PAL=-, V=+, C=-, âae=e
@@ -1894,7 +1894,7 @@ Height=+, PAL=-, V=0, C=0, âae=e
 1c
 * Yaml: **V-juekked**
 YXX-HighVowel-Palatalization
-* :%^PALE%^PAL VSUF-INF_ED ;  (1) +V+Inf: vueʹhssed
+* :%^PALE%^PAL VSUF-INF_ED_NO_mOsh ;  (1) +V+Inf: vueʹhssed
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -2272,7 +2272,7 @@ Imprt+Pl3
 * :%^V2VV%^VOWRaise%^YXX2YX VSUF-CHED_ED ;   (12) +Der+Der/ched: ciipc-
 
 * LEXICON V_1E_EAQKKK  reäʹǧǧed:reä%{ʹØ%}gˈg
-* :%^PAL%^PALK VSUF-INF_ED ;  (1) +V+Inf: veäʹdˈded
+* :%^PAL%^PALK VSUF-INF_ED_NO_mOsh ;  (1) +V+Inf: veäʹdˈded
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -2620,7 +2620,7 @@ Allegro (10)
 * LEXICON V0_1E_EA/EQCC  ǩieʹssed:ǩeä%{ʹØ%}ss
 * Yaml: **V-piekked**
 Strong-HighVowel-Palatalization
-* :%^VOWRaise%^PALẸ%^PAL VSUF-INF_ED ;  (1) +V+Inf: piẹʹǩǩed
+* :%^VOWRaise%^PALẸ%^PAL VSUF-INF_ED_NO_mOsh ;  (1) +V+Inf: piẹʹǩǩed
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -2669,7 +2669,7 @@ Imprt+Pl3
 * LEXICON V0_1E_EA/EQKK  pieʹǩǩed:peäkk
 * Yaml: **V-piekked**
 Strong-HighVowel-Palatalization
-* :%^VOWRaise%^PALẸ%^PAL%^PALK VSUF-INF_ED ;  (1) +V+Inf: piẹʹǩǩed
+* :%^VOWRaise%^PALẸ%^PAL%^PALK VSUF-INF_ED_NO_mOsh ;  (1) +V+Inf: piẹʹǩǩed
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 

@@ -2633,16 +2633,16 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * LEXICON N_1Y_VKK_VVGG  jokk:jo%^1VOW%{ʹØ%}kk
 * Yaml: **N-jokk river/joki**
 
-* : SG-NOM ;	    		 kuss
-* :%>â ESS/PAR ;     		 	 kussân
-* :%^PAL%^PALK%>e SG-ILL ;    		 kuʹsse
-* :%^PAL%^PALK N2A_LUOQSSI ;    		 kuʹssi
-* :%^V2VV%^KK2GG SG-ABE/ACC/GEN-PL-NOM ;		 kuuzz
-* :%^V2VV%^KK2GG%>â SG-LOC ;	 kuuzzâ
-* :%^V2VV%^KK2GG SG-COM_IN ;	 kuuzzin
-* :%^V2VV%^KK2GG PL-OBL ;		 kuuzzi, kuuzzid, kuuzzid, kuuzzin, kuuzzivuiʹm, kuuzzitaa
-* +Der+Der/Dimin+N:%^V2VV%^KK2GG N_KUUZZYZH-WITHOUT-PAL ;   kuuzz-
-* +Der+Der/Dimin+N:%^V2VV%^PAL%^KK2GG%^PALK N_KUUZZYZH-WITH-PAL ;   kuuʹzz-
+* : SG-NOM ;	    		 jokk
+* :%>â ESS/PAR ;     		 	 jokkân
+* :%^PAL%^PALK%>e SG-ILL ;    		 joʹǩǩe
+* :%^PAL%^PALK N2A_LUOQSSI ;    		 joʹǩǩi
+* :%^V2VV%^KK2GG SG-ABE/ACC/GEN-PL-NOM ;		 jooǥǥ
+* :%^V2VV%^KK2GG%>â SG-LOC ;	 jooǥǥâ
+* :%^V2VV%^KK2GG SG-COM_IN ;	 jooǥǥin
+* :%^V2VV%^KK2GG PL-OBL ;		 jooǥǥi, kuuzzid, kuuzzid, kuuzzin, kuuzzivuiʹm, kuuzzitaa
+* +Der+Der/Dimin+N:%^V2VV%^KK2GG N_KUUZZYZH-WITHOUT-PAL ;   jooǥǥ-
+* +Der+Der/Dimin+N:%^V2VV%^PAL%^KK2GG%^PALK N_KUUZZYZH-WITH-PAL ;   jooʹjj-
 
 * LEXICON N_KUSS  kuss:ku%^1VOW%{ʹØ%}ss
 N_1Y_VKK_HVVGG
@@ -8163,6 +8163,7 @@ Sajos:Sajo%^1VOW%{ʹØ%}s
 stemtype 
 * Yaml: **N-chaustok**
 čâustõk+N+Sg+Gen:čâustõõǥǥ
+
 * +Der+Der/Dimin+N:%{XC%}%^V2VV%^K2GG N_KUUZZYZH-WITHOUT-PAL ;   kuuzz-
 * +Der+Der/Dimin+N:%{XC%}%^V2VV%^PAL%^K2GG%^PALK N_KUUZZYZH-WITH-PAL ;   kuuʹzz-
 
@@ -8758,11 +8759,14 @@ kaađneǩ+N+Sg+Nom **lincense vessel/suitsutusastia**
 * *kaađnẹ%^1VOWk%^PALE%^PALK*
 * *kaađne0ǩ00*
 * :%{XC%}%^PAL%^C2CC%^PALK%>e ESS/PAR ;  kaađneʹǩǩe- 
+* +Err/Orth-k-kh:%{XC%}%^PAL%^C2CC%>e ESS/PAR ;  kaađneʹkke- 
 * :%{XC%}%^V2VV%^PAL%^C2CC%^PALK SG-ABE/ACC/GEN ;  kaađneeʹǩǩ
+* +Err/Orth-k-kh:%{XC%}%^V2VV%^PAL%^C2CC SG-ABE/ACC/GEN ;  kaađneeʹkk
 kaađneǩ+N+Sg+Gen 
 * *kaađnẹ%^1VOWǩ%{XC%}%^V2VV%^PAL%^C2CC%^PALK*
 * *kaađneeʹǩǩ0000*
 * :%{XC%}%^PALNo%^C2CC%>a SG-ILL ;  kaađnẹkka
+* :%{XC%}%^V2VV%^VOWRaise%^PAL%^C2CC%^PALK SG-COM_IN ;  kaađniiʹǩǩin
 * *kaađnẹ%^1VOW0ǩ%{XC%}%^V2VV%^VOWRaise%^PAL%^C2CC%^PALK%>in*
 * *kaađniiʹǩǩ00000%>in*
 * +Use/NGminip+Use/NG:%{XC%}%^V2VV%^PAL%^C2CC%^PALK SG-COM_IN ;  kaađneeʹǩǩin
@@ -10410,7 +10414,7 @@ Allegro (10) lieʹđ»
 
 * Yaml: **V-juekked**
 Strong-HighVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL VSUF-INF_ED ;  (1) +V+Inf: jueʹǩǩed
+* :%^VOWRaise%^PALE%^PAL VSUF-INF_ED_NO_mOsh ;  (1) +V+Inf: jueʹǩǩed
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -10459,7 +10463,7 @@ Secondary allegro for incoative: juâǥ»
 * LEXICON V0_1E_UY/EQKK  jueʹǩǩed:juâ%{ʹØ%}kk
 * Yaml: **V-juekked**
 Strong-HighVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL%^PALK VSUF-INF_ED ;  (1) +V+Inf: jueʹǩǩed
+* :%^VOWRaise%^PALE%^PAL%^PALK VSUF-INF_ED_NO_mOsh ;  (1) +V+Inf: jueʹǩǩed
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -10510,7 +10514,7 @@ Secondary allegro for incoative: juâǥ»
 like: V_JUEQKHKHED
 
 Strong-HighVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL VSUF-INF_ED ;		 (1) kueʹdˈded 
+* :%^VOWRaise%^PALE%^PAL VSUF-INF_ED_NO_mOsh ;		 (1) kueʹdˈded 
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -10560,7 +10564,7 @@ Allegro (10) kueʹd»
 like: V_SHIEQTTTED
 
 Strong-HighVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL VSUF-INF_ED ;		 (1) šieʹtˈted 
+* :%^VOWRaise%^PALE%^PAL VSUF-INF_ED_NO_mOsh ;		 (1) šieʹtˈted 
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -10796,7 +10800,7 @@ Imprt+Pl3
 * LEXICON V0_TIEQTTED  tieʹtted:teâtt
 * Yaml: **V-tietted**
 Strong-HighVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL VSUF-INF_ED ;  (1) +V+Inf: tieʹtted
+* :%^VOWRaise%^PALE%^PAL VSUF-INF_ED_NO_mOsh ;  (1) +V+Inf: tieʹtted
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -10846,7 +10850,7 @@ Imprt+Pl3
 * LEXICON V0_KHIEQLDDED  ǩieʹldded:teâtt
 * Yaml: **V-tietted**
 Strong-HighVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL VSUF-INF_ED ;  (1) +V+Inf: ǩieʹldded
+* :%^VOWRaise%^PALE%^PAL VSUF-INF_ED_NO_mOsh ;  (1) +V+Inf: ǩieʹldded
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -10904,7 +10908,7 @@ Imprt+Pl3
 * LEXICON V0_1E_UY/EQYXX  vueʹrdded:vuârdd
 YXX-HighVowel-Palatalization
 Height=0, PAL=+, V=0, C=0, âae=e
-* :%^PALE%^PAL VSUF-INF_ED ;  (1) +V+Inf: vueʹlǧǧed
+* :%^PALE%^PAL VSUF-INF_ED_NO_mOsh ;  (1) +V+Inf: vueʹlǧǧed
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -10970,7 +10974,7 @@ Height=+, PAL=-, V=0, C=0, âae=e
 * Yaml: **V-juekked**
 YXX-HighVowel-Palatalization
 Height=0, PAL=+, V=0, C=0, âae=e
-* :%^PALE%^PAL VSUF-INF_ED ;  (1) +V+Inf: vueʹlǧǧed
+* :%^PALE%^PAL%^PALK VSUF-INF_ED_NO_mOsh ;  (1) +V+Inf: vueʹlǧǧed
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -10981,22 +10985,22 @@ Height=0, PAL=-, V=0, C=0, âae=e
 
 YXX-HighVowel-Palatalization !lowered
 Height=-, PAL=+, V=-, C=+, âae=e
-* +Ind+Prs+Pl3:%^PALE%^PAL%>e K ;  (3) +V+Ind+Prs+Pl3: vueʹlǧǧe
+* +Ind+Prs+Pl3:%^PALE%^PAL%^PALK%>e K ;  (3) +V+Ind+Prs+Pl3: vueʹlǧǧe
 +V+Ind+Prs+Pl3
 
 YXX-RaisedVowel-Palatalization
 Height=+, PAL=+, V=-, C=+, âae=e
-* :%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: vuõʹlǧǧe
+* :%^VOWRaise%^PAL%^PALK%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: vuõʹlǧǧe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 2YX-StableV-Palatalization
 Height=0, PAL=+, V=+, C=-, âae=e
-* :%^PALE%^PAL%^YXX2YX VSUF-IND-PRS-CONNEG_ED ;  (5) +V+Imprt+Sg2: vueʹlj
+* :%^PALE%^PAL%^YXX2YX%^PALK VSUF-IND-PRS-CONNEG_ED ;  (5) +V+Imprt+Sg2: vueʹlj
 Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 
 2YX-RaisedVowel-Palatalization
 Height=+, PAL=+, V=+, C=-, âae=e
-* :%^VOWRaise%^PAL%^YXX2YX%> VSUF-POTENTIAL_ED ;   (6) +V+Pot+Sg3: !! vuõʹljež
+* :%^VOWRaise%^PAL%^YXX2YX%^PALK%> VSUF-POTENTIAL_ED ;   (6) +V+Pot+Sg3: !! vuõʹljež
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, 
 
 2YX-LoweredVowel-No-palatalization
@@ -11019,8 +11023,8 @@ Height=0, PAL=+, V=-, C=-, âae=e
 
 (11) Present Participle:
 Height=+, PAL=+, V=0, C=0, âae=e
-* :%^VOWRaise%^PAL FOR-VSUF-PRSPRC_ED ;  (4) +V+Act+PrsPrc: vuõʹlǧǧi
-* :%^VOWRaise%^PALE%^PAL FOR-VSUF-PRSPRC_ED ;  (4) +V+Act+PrsPrc: vuõʹlǧǧi
+* :%^VOWRaise%^PAL%^PALK FOR-VSUF-PRSPRC_ED ;  (4) +V+Act+PrsPrc: vuõʹlǧǧi
+* :%^VOWRaise%^PALE%^PAL%^PALK FOR-VSUF-PRSPRC_ED ;  (4) +V+Act+PrsPrc: vuõʹlǧǧi
 
 (12) Weak-RaisedVowel-NoPalatalization
 Height=+, PAL=-, V=+, C=-, âae=e
@@ -11035,7 +11039,7 @@ Height=+, PAL=-, V=0, C=0, âae=e
 1c
 * Yaml: **V-juekked**
 YXX-HighVowel-Palatalization
-* :%^PALE%^PAL VSUF-INF_ED ;  (1) +V+Inf: vueʹhssed
+* :%^PALE%^PAL VSUF-INF_ED_NO_mOsh ;  (1) +V+Inf: vueʹhssed
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -11413,7 +11417,7 @@ Imprt+Pl3
 * :%^V2VV%^VOWRaise%^YXX2YX VSUF-CHED_ED ;   (12) +Der+Der/ched: ciipc-
 
 * LEXICON V_1E_EAQKKK  reäʹǧǧed:reä%{ʹØ%}gˈg
-* :%^PAL%^PALK VSUF-INF_ED ;  (1) +V+Inf: veäʹdˈded
+* :%^PAL%^PALK VSUF-INF_ED_NO_mOsh ;  (1) +V+Inf: veäʹdˈded
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -11761,7 +11765,7 @@ Allegro (10)
 * LEXICON V0_1E_EA/EQCC  ǩieʹssed:ǩeä%{ʹØ%}ss
 * Yaml: **V-piekked**
 Strong-HighVowel-Palatalization
-* :%^VOWRaise%^PALẸ%^PAL VSUF-INF_ED ;  (1) +V+Inf: piẹʹǩǩed
+* :%^VOWRaise%^PALẸ%^PAL VSUF-INF_ED_NO_mOsh ;  (1) +V+Inf: piẹʹǩǩed
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -11810,7 +11814,7 @@ Imprt+Pl3
 * LEXICON V0_1E_EA/EQKK  pieʹǩǩed:peäkk
 * Yaml: **V-piekked**
 Strong-HighVowel-Palatalization
-* :%^VOWRaise%^PALẸ%^PAL%^PALK VSUF-INF_ED ;  (1) +V+Inf: piẹʹǩǩed
+* :%^VOWRaise%^PALẸ%^PAL%^PALK VSUF-INF_ED_NO_mOsh ;  (1) +V+Inf: piẹʹǩǩed
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -15116,6 +15120,7 @@ The Usage extents are marked using following tags:
 * **+Err/Orth-o-uq** substandard o, not in normative fst uʹ (e.g. illative kuʹmppe and not komppa)
 * **+Err/Orth-no-q** substandard missing ʹ as in mâiʹd-ne (->) mâid-ne
 * **+Err/Orth-extra-q** substandard extra ʹ as in aanarneʹǩ (->) aanarneǩ
+* **+Err/Orth-pal-vow** substandard palatalized diphthong ieʹ should be eä or eâ; ueʹ should be uä, uâ <no soft sign>
 * **+Err/Orth-should-be-grade-minus1** substandard raajeeʹl (->) raajjeeʹl
 * **+Err/Lex** substandard, not in normative fst, no normative lemma 
 * **+Err/DerSub** substandard for derivation, not in normative fst, no normative lemma 
