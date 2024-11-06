@@ -203,10 +203,15 @@ LEXICON A_CHAAQCC !!= * @CODE@ čääʹcc:čää%{ʹØ%}cc
 :%^PAL%^KK2GG   A-ATTR_es ;
 : A-01_CHAAQCC ;
 
-LEXICON A_KAQLBB !!= * @CODE@ käʹlbb:kälbb âʹlǧǧ:â%^1VOW%{ʹØ%}lgg
+LEXICON A_KAQLBB !!= * @CODE@ käʹlbb:kälbb 
 ! vowel: monophthong
 :%^V2VV%^PAL%^YXX2YX   A-ATTR_es ;
 : A-01_KAQLBB ;
+
+LEXICON A_1E_VQYKK !!= * @CODE@ âʹlǧǧ:â%^1VOW%{ʹØ%}lgg
+! vowel: monophthong
+:%^V2VV%^PAL%^YXX2YX%^PALK   A-ATTR_es ;
+: A-01_1E_VQYKK ;
 
 LEXICON A_HAAQSKH !!= * @CODE@ hääʹsǩ:hää%{ʹØ%}sk
 ! vowel: monophthong
@@ -847,6 +852,13 @@ LEXICON A_LOSSYD !!= * @CODE@ lossâd:loss
 :%^PAL AdjAttr-es ;
 : A-01_VISKKYD ;
 :âd A2N-VUOTT ;
+
+LEXICON A_11Y_VYKK !!= * @CODE@ viskkâd:viskk
+:%^PAL%^PALK AdjAttr-es ;
+: A-01_VISKKYD ;
+:âd A2N-VUOTT ;
+: ADJ-DER/COMP_aeaeb ;
+: ADJ-DER/SUPERL_ummus ;
 
 LEXICON A_VISKKYD !!= * @CODE@ viskkâd:viskk
 :%^PAL AdjAttr-es ;
@@ -4575,6 +4587,20 @@ LEXICON A-01_CHAAQCC
 !2016-12-05-NotUsed!:%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) pâʹjj- Ess+Px..
 !2016-12-05-NotUsed!
 
+LEXICON A-01_1E_VQYKK
+!! * Yaml: **N-algg**
+:%^PAL%^PALK A-02_E-STEM_SG-NOM ;		  			!!= * @CODE@ (1) Sg.Nom: âʹlǧǧ
+:%^V2VV%^PAL%^YXX2YX%^PALK A-02_E-STEM_SG-ABE/ACC/GEN ;	!!= * @CODE@ (2) Pl.Nom: ââʹlj
+: A-02_E-STEM_SG-ILL ;	     			   	!!= * @CODE@ (3) Sg.Ill: âlgga
+:%^V2VV%^PAL%^YXX2YX%^PALK%>e A-02_SG-LOC ;		!!= * @CODE@ (4) Sg.Loc: ââʹljest
+:%^V2VV%^VOWRaise%^PAL%^YXX2YX%^PALK A-02_SG-COM_IN ; !!= * @CODE@ (5) Sg.Com: õõʹljin
+:%^PAL%^PALK%>e A-02_ESS/PAR ;	       			!!= * @CODE@ (6) Ess: âʹlǧǧen
+:%^V2VV%^YXX2YX A-02_E-STEM_N_KUYLAZH ;		!!= * @CODE@ (9) Der/Dimin.N.Sg.Nom: ââlǥaž
+ E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) kälbb-
+:%^PAL%^YXX2YX%^PALK E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) käʹlb-
+:%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) käʹlbb Ess+Px..
+:%^V2VV%^PAL%^YXX2YX%^PALK A-02_PL-NOM ;	!!= * @CODE@ (2) Pl.Nom: ââʹlj
+:%^V2VV%^VOWRaise%^PAL%^YXX2YX%^PALK A-02_E-STEM_PL-OBL ; !!= * @CODE@ (5) Sg.Com: õõʹljin
 
 LEXICON A-01_KAQLBB
 ! gradation: yes

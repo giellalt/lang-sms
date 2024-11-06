@@ -311,6 +311,12 @@ HatY-STEM-PX-RETAIN ;
 :%^YXX2YX SG-LOC-PX_ALLEGRO ;
 : HatY-STEM-PX-STRENGTHEN ;
 
+LEXICON N_1Y_VYKK-PL !!= * @CODE@ põõrt:põrtt
++Cmp/SgNom: R ;                           !!= * @CODE@ põrtt
+:%^V2VV%^YXX2YX PL-NOM ;                !!= * @CODE@ põõrt
+:%>â ESS/PAR ;                                  !!= * @CODE@ põrttân
+:%^V2VV%^YXX2YX PL-OBL ;                        !!= * @CODE@ põõrti
+
 LEXICON N_ALGG-PL !!= * @CODE@ põõrt:põrtt
 +Cmp/SgNom: R ;                           !!= * @CODE@ põrtt
 :%^V2VV%^YXX2YX PL-NOM ;                !!= * @CODE@ põõrt
@@ -1057,7 +1063,7 @@ LEXICON N_PUOAVV-PL !!= * @CODE@ puåvv:puå%{ʹØ%}vv
 !!€ puåvâž: puåvv+N+Der+Der/Dimin+N+Sg+Nom
 !!€ pueʹve: puåvv+N+Der+Der/Dimin+N+Sg+Gen
 
-LEXICON N_1Y_VWKK !!jiõgg:jiõ%{ʹØ%}gg
+LEXICON N_1Y_VWKK !!viõkk:viõ%{ʹØ%}kk ??jiõgg:jiõ%{ʹØ%}gg
  NMN_1Y_VWKK ;
 LEXICON NMN_1Y_VWKK 
 !! * Yaml: **N-kiapp, N-puavv**
@@ -1082,6 +1088,12 @@ HatY-STEM-PX-RETAIN ;
 :%^KK2GG HatY-STEM-PX-WEAKEN_LARGO ;
 :%^Allegro%^KK2GAllegro SG-LOC-PX_ALLEGRO ;
 :%^CC2CCC HatY-STEM-PX-STRENGTHEN ; !checkme 2020-05-16
+
+LEXICON N_1Y_VWKK-PL
++Cmp/SgNom: R ;	     			!!= * @CODE@
+:%^KK2GG PL-NOM ;	!!= * @CODE@ viõǥǥ
+:%>â ESS/PAR ; 	   			!!= * @CODE@
+:%^KK2GG PL-OBL ;			!!= * @CODE@ luõzzi
 
 LEXICON N_1Y_IY/EKK !!= * @CODE@ liâkk:liâ%{ʹØ%}kk
 NMN_1Y_IY/EKK ;
@@ -1763,12 +1775,6 @@ HatY-STEM-PX-RETAIN ;
 :%^KK2GG HatY-STEM-PX-WEAKEN_LARGO ;
 :%^Allegro%^KK2GAllegro SG-LOC-PX_ALLEGRO ;
 :%^CC2CCC HatY-STEM-PX-STRENGTHEN ;
-
-LEXICON N_LUOSS-PL
-+Cmp/SgNom: R ;	     			!!= * @CODE@
-:%^KK2GG PL-NOM ;	!!= * @CODE@ luõzz
-:%>â ESS/PAR ; 	   			!!= * @CODE@
-:%^KK2GG PL-OBL ;			!!= * @CODE@ luõzzi
 
 
 ! Test data:
@@ -4224,27 +4230,27 @@ LEXICON NMN_JUQVJJ
 !! NumContLex="1.113"
 !! Is for nouns with *-est* Loc, Extra long vowel
 !! * Yaml: **N-juvjj**
-:%^PAL%^PALK E-STEM_SG-NOM ;
-:%^PAL%^YXX2VX%^PALK E-STEM_SG-ABE/ACC/GEN ;
-!+Use/NGminip+Use/NG:%^V2VV%^PAL%^YXX2YX%^PALK E-STEM_SG-ABE/ACC/GEN ;
+:%^PAL E-STEM_SG-NOM ;
+:%^PAL%^YXX2VX E-STEM_SG-ABE/ACC/GEN ;
+!+Use/NGminip+Use/NG:%^V2VV%^PAL%^YXX2YX E-STEM_SG-ABE/ACC/GEN ;
 :%^YXX2VX A_DER/LAZH ;
-:%^PAL%^YXX2VX%^PALK PL-NOM ;
+:%^PAL%^YXX2VX PL-NOM ;
 :%^VOWLower%^YXX2VXX E-STEM_SG-ILL ; !joujja
-:%^PAL%^YXX2VX%^PALK%>e SG-LOC ;
-!+Use/NGminip+Use/NG:%^V2VV%^PAL%^YXX2YX%^PALK%>e SG-LOC ;
-:%^PAL%^YXX2VX%^PALK SG-COM_IN ;
-:%^PAL%^PALK%>e ESS/PAR ; ! ess and prt without
-:%^PAL%^YXX2VX%^PALK%> E-STEM_PL-OBL ;
+:%^PAL%^YXX2VX%>e SG-LOC ;
+!+Use/NGminip+Use/NG:%^V2VV%^PAL%^YXX2YX%>e SG-LOC ;
+:%^PAL%^YXX2VX SG-COM_IN ;
+:%^PAL%>e ESS/PAR ; ! ess and prt without
+:%^PAL%^YXX2VX%> E-STEM_PL-OBL ;
 :%^V2VV%^VOWLower%^YXX2VX E-STEM_N_KUYLAZH ; !!= * @CODE@ jooujaž
  E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) juvjj-
-:%^Allegro%^PAL%^YXX2VX%^PALK E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) juʹj-
-:%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) juʹvjj Ess+Px..
+:%^Allegro%^PAL%^YXX2VX E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) juʹj-
+:%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) juʹvjj Ess+Px..
 
 LEXICON N_JUQVJJ-PL
-+Cmp/SgNom:%^PAL%^PALK R ;
-:%^PAL%^YXX2VX%^PALK PL-NOM ;
-:%^PAL%^PALK%>e ESS/PAR ; ! ess and prt without
-:%^PAL%^YXX2VX%^PALK%> E-STEM_PL-OBL ;
++Cmp/SgNom:%^PAL R ;
+:%^PAL%^YXX2VX PL-NOM ;
+:%^PAL%>e ESS/PAR ; ! ess and prt without
+:%^PAL%^YXX2VX%> E-STEM_PL-OBL ;
 
 LEXICON N_1E_UY/EQKK !!vueʹǩǩ
  NMN_1E_UY/EQKK ;
@@ -5305,23 +5311,23 @@ LEXICON N_AQKHKH !!= * @CODE@ äʹǩǩ:äkk
 !: NMN_AQKHKH ;
  NMN_1E_VQKK ;
 
-LEXICON N_1E_VVQKK !!= * @CODE@ lääʹǩǩ:lää%^1VOW%{ʹØ%}kk
+LEXICON N_1E_VVQKK !!= * @CODE@ lääʹǩǩ:lää%{ʹØ%}kk
  NMN_1E_VVQKK ;
 LEXICON NMN_1E_VVQKK
 !! * Yaml: **N-saeaemm**
 !!
 :%^PAL%^PALK E-STEM_SG-NOM ;		  !!(1) Sg.Nom: sääʹmm
-:%^PAL%^CC2C%^PALK E-STEM_SG-ABE/ACC/GEN ; !!(2) Pl.Nom: sääʹm
-:%^CC2C A_DER/LAZH ;
-:%^PAL%^CC2C%^PALK PL-NOM ; !!(2) Pl.Nom: sääʹm
+:%^PAL%^KK2GG%^PALK E-STEM_SG-ABE/ACC/GEN ; !!(2) Pl.Nom: sääʹm
+:%^KK2GG A_DER/LAZH ;
+:%^PAL%^KK2GG%^PALK PL-NOM ; !!(2) Pl.Nom: sääʹm
 :%^VV2V E-STEM_SG-ILL ; !!(3) Sg.Ill: sämma
-:%^PAL%^CC2C%^PALK%>e SG-LOC ; !!(4) Sg.Loc: sääʹmest
-:%^VOWRaise%^PAL%^CC2C%^PALK SG-COM_IN ; !!(5) Sg.Com: saaʹmin
-:%^VOWRaise%^PAL%^CC2C%^PALK E-STEM_PL-OBL ; !!(5) Sg.Com: saaʹmin
+:%^PAL%^KK2GG%^PALK%>e SG-LOC ; !!(4) Sg.Loc: sääʹmest
+:%^VOWRaise%^PAL%^KK2GG%^PALK SG-COM_IN ; !!(5) Sg.Com: saaʹmin
+:%^VOWRaise%^PAL%^KK2GG%^PALK E-STEM_PL-OBL ; !!(5) Sg.Com: saaʹmin
 :%^PAL%^PALK%>e ESS/PAR ; !!(6) Ess: sääʹmmen
-:%^CC2C E-STEM_N_KUYLAZH ; !!(9) Der/Dimin.N.Sg.Nom: säämaž
+:%^KK2GG E-STEM_N_KUYLAZH ; !!(9) Der/Dimin.N.Sg.Nom: säämaž
  E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) säämm-
-:%^VV2V%^PAL%^CC2CAllegro%^PALK E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) säʹm-
+:%^VV2V%^PAL%^KK2GAllegro%^PALK E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) säʹm-
 :%^VV2V%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) säʹmm Ess+Px..
 
 LEXICON N_1E_VVQCC !!= * @CODE@ sääʹmm:sää%{ʹØ%}mm
@@ -5429,7 +5435,7 @@ LEXICON N_CHAAQCC-PL !!= * @CODE@ čääʹʒʒ:čääcc
 :%^PAL%>e ESS/PAR ;                              !!= * @CODE@ (6) čääʼccen
 
 
-LEXICON N_EEQKHKH !!= * @CODE@ eeʹǩǩ:ẹẹkk
+LEXICON N_EEQKHKH !!= * @CODE@ eeʹǩǩ:ẹẹ%{ʹØ%}kk
 !!! inflection_type="?"
 !! N_1E_VVQKK
 : NMN_EEQKHKH ;
@@ -5458,21 +5464,21 @@ LEXICON NMN_EEQKHKH
 !! * There are several stem types
 !! * eeʹǩǩ:eeʹǩǩ
 !!
-:%^PAL E-STEM_SG-NOM ;	    			!!= * @CODE@ (1) eeʹǩǩ
-:%^PAL%^KK2GG E-STEM_SG-ABE/ACC/GEN ;	!!= * @CODE@ (2) eeʹjj
+:%^PAL%^PALK E-STEM_SG-NOM ;	    			!!= * @CODE@ (1) eeʹǩǩ
+:%^PAL%^KK2GG%^PALK E-STEM_SG-ABE/ACC/GEN ;	!!= * @CODE@ (2) eeʹjj
 :%^KK2GG A_DER/LAZH ;
-:%^PAL%^KK2GG PL-NOM ;	!!= * @CODE@ (2) eeʹjj
+:%^PAL%^KK2GG%^PALK PL-NOM ;	!!= * @CODE@ (2) eeʹjj
 :%^VV2V E-STEM_SG-ILL ;     		!!= * @CODE@ (3) ẹkka
-:%^PAL%^KK2GG%>e SG-LOC ;	 		!!= * @CODE@ (4) eeʹjjest
-:%^VOWRaise%^PAL%^KK2GG SG-COM_IN ;		!!= * @CODE@ (5) iiʹjjin
-:%^VOWRaise%^PAL%^KK2GG E-STEM_PL-OBL ;		!!= * @CODE@ (5) iiʹjjin
-+Use/NGminip+Use/NG:%^PAL%^KK2GG SG-COM_IN ;		!!= * @CODE@ (5) eeʹjjin
-+Use/NGminip+Use/NG:%^PAL%^KK2GG E-STEM_PL-OBL ;		!!= * @CODE@ (5) eeʹjjin
-:%^PAL%>e ESS/PAR ; 	   	     		!!= * @CODE@ (6) eeʹǩǩen
+:%^PAL%^KK2GG%^PALK%>e SG-LOC ;	 		!!= * @CODE@ (4) eeʹjjest
+:%^VOWRaise%^PAL%^KK2GG%^PALK SG-COM_IN ;		!!= * @CODE@ (5) iiʹjjin
+:%^VOWRaise%^PAL%^KK2GG%^PALK E-STEM_PL-OBL ;		!!= * @CODE@ (5) iiʹjjin
++Use/NGminip+Use/NG:%^PAL%^KK2GG%^PALK SG-COM_IN ;		!!= * @CODE@ (5) eeʹjjin
++Use/NGminip+Use/NG:%^PAL%^KK2GG%^PALK E-STEM_PL-OBL ;		!!= * @CODE@ (5) eeʹjjin
+:%^PAL%^PALK%>e ESS/PAR ;     		!!= * @CODE@ (6) eeʹǩǩen
 :%^KK2GG E-STEM_N_KUYLAZH ;	!!= * @CODE@ (9) čääʒʒaž
  E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) ẹẹkk-
-:%^VV2V%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) eʹǩ-
-:%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) eʹǩǩ Ess+Px..
+:%^VV2V%^PAL%^CC2CAllegro%^PALK E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) eʹǩ-
+:%^VV2V%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) eʹǩǩ Ess+Px..
 
 
 LEXICON N_TEEQMM !!= * @CODE@ teeʹmm:teemm
@@ -5547,6 +5553,28 @@ LEXICON NMN_PAAQJJ
  E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) pââjj-
 :%^VV2V%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) pâʹj-
 :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) pâʹjj- Ess+Px..
+
+
+LEXICON N_1E_VQYKK
+ NMN_1E_VQYKK ;
+LEXICON NMN_1E_VQYKK
+!! Is for nouns with *-est* Loc, Extra long vowel
+!! * Yaml: **N-aâlghgh**
+:%^PAL%^PALK E-STEM_SG-NOM ;		  			!!= * @CODE@ (1) Sg.Nom: âʹlǧǧ
+:%^V2VV%^PAL%^YXX2YX%^PALK E-STEM_SG-ABE/ACC/GEN ;	!!= * @CODE@ (2) Pl.Nom: ââʹlj
+:%^V2VV%^YXX2YX A_DER/LAZH ;
+: E-STEM_SG-ILL ;	     			   	!!= * @CODE@ (3) Sg.Ill: âlgga
+:%^V2VV%^PAL%^YXX2YX%^PALK%>e SG-LOC ;		!!= * @CODE@ (4) Sg.Loc: ââʹljest
+:%^V2VV%^VOWRaise%^PAL%^YXX2YX%^PALK SG-COM_IN ; !!= * @CODE@ (5) Sg.Com: õõʹljin
+:%^PAL%^PALK%>e ESS/PAR ;	       			!!= * @CODE@ (6) Ess: âʹlǧǧen
+:%^V2VV%^YXX2YX E-STEM_N_KUYLAZH ;		!!= * @CODE@ (9) Der/Dimin.N.Sg.Nom: ââlǥaž
+ E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) kälbb-
+:%^PAL%^YXX2YX%^PALK E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) käʹlb-
+:%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) käʹlbb Ess+Px..
+:%^V2VV%^PAL%^YXX2YX%^PALK PL-NOM ;	!!= * @CODE@ (2) Pl.Nom: ââʹlj
+:%^V2VV%^VOWRaise%^PAL%^YXX2YX%^PALK E-STEM_PL-OBL ; !!= * @CODE@ (5) Sg.Com: õõʹljin
+
+
 
 LEXICON N_1E_VQYXX
  NMN_1E_VQYXX ;
@@ -5646,7 +5674,7 @@ LEXICON NMN_1E_EQYXX
  E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) argumentt-
 :%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) argumeʹnt-
 :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) argumeʹntt- Ess+Px..
-
+!1E_VUQCC
 LEXICON N_1E_VUQKK
  NMN_1E_VUQKK ;
 LEXICON N_PAIQKHKH !!= * @CODE@ päiʹǩǩ:päikk
@@ -5678,21 +5706,21 @@ LEXICON NMN_1E_VUQKK
 !! NumContLex="1.113"
 !! Is for nouns with *-est* Loc, Extra long vowel
 !! * Yaml: **N-paeikk**
-:%^PAL E-STEM_SG-NOM ;		  !!= * @CODE@ (1) Sg.Nom: päiʹǩǩ
-:%^V2VV%^PAL%^YXX2YX E-STEM_SG-ABE/ACC/GEN ; !!= * @CODE@ (2) Pl.Nom: pääiʹǩ
+:%^PAL%^PALK E-STEM_SG-NOM ;		  !!= * @CODE@ (1) Sg.Nom: päiʹǩǩ
+:%^V2VV%^PAL%^YXX2YX%^PALK E-STEM_SG-ABE/ACC/GEN ; !!= * @CODE@ (2) Pl.Nom: pääiʹǩ
 :%^V2VV%^YXX2YX A_DER/LAZH ;
-:%^V2VV%^PAL%^YXX2YX PL-NOM ; !!= * @CODE@ (2) Pl.Nom: pääiʹǩ
+:%^V2VV%^PAL%^YXX2YX%^PALK PL-NOM ; !!= * @CODE@ (2) Pl.Nom: pääiʹǩ
 : E-STEM_SG-ILL ;	     !!= * @CODE@ (3) Sg.Ill: päikka
-:%^V2VV%^PAL%^YXX2YX%>e SG-LOC ;  !!= * @CODE@ (4) Sg.Loc: pääiʹǩest
-:%^V2VV%^PAL%^YXX2YX SG-COM_IN ;     !!= * @CODE@ (5) Sg.Com: pääiʹǩin
-+Use/NGminip+Use/NG:%^V2VV%^VOWRaise%^PAL%^YXX2YX SG-COM_IN ;     !!= * @CODE@ (5) Sg.Com: paaiʹǩin
-:%^PAL%>e ESS/PAR ; 	       !!= * @CODE@ (6) Ess: päiʹǩǩen
-:%^V2VV%^PAL%^YXX2YX%> E-STEM_PL-OBL ;   !!= * @CODE@ (8) Pl.Acc: pääiʹǩid
-+Use/NGminip+Use/NG:%^V2VV%^VOWRaise%^PAL%^YXX2YX%> E-STEM_PL-OBL ;   !!= * @CODE@ (8) Pl.Acc: paaiʹǩid
+:%^V2VV%^PAL%^YXX2YX%^PALK%>e SG-LOC ;  !!= * @CODE@ (4) Sg.Loc: pääiʹǩest
+:%^V2VV%^PAL%^YXX2YX%^PALK SG-COM_IN ;     !!= * @CODE@ (5) Sg.Com: pääiʹǩin
++Use/NGminip+Use/NG:%^V2VV%^VOWRaise%^PAL%^YXX2YX%^PALK SG-COM_IN ;     !!= * @CODE@ (5) Sg.Com: paaiʹǩin
+:%^PAL%^PALK%>e ESS/PAR ; 	       !!= * @CODE@ (6) Ess: päiʹǩǩen
+:%^V2VV%^PAL%^YXX2YX%^PALK%> E-STEM_PL-OBL ;   !!= * @CODE@ (8) Pl.Acc: pääiʹǩid
++Use/NGminip+Use/NG:%^V2VV%^VOWRaise%^PAL%^YXX2YX%^PALK%> E-STEM_PL-OBL ;   !!= * @CODE@ (8) Pl.Acc: paaiʹǩid
 :%^V2VV%^YXX2YX E-STEM_N_KUYLAZH ; !!= * @CODE@ (9) Der/Dimin.N.Sg.Nom: pääiǥaž
  E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) päikk-
-:%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) päiʹǩ-
-:%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) päiʹǩǩ- Ess+Px..
+:%^PAL%^YXX2YX%^PALK E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) päiʹǩ-
+:%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) päiʹǩǩ- Ess+Px..
 
 ! Test data:
 !!€gt-norm: päiʹǩǩ # 
@@ -5718,27 +5746,27 @@ LEXICON NMN_1E_VUQKK
 !!€ pääika: 	 päiʹǩǩ+N+Der+Der/Dimin+N+Sg+Gen
 
 
-LEXICON N_LAEUQKHKH !!= * @CODE@ päiʹǩǩ:päikk
-!!! inflection_type="?"
-!! N_1E_VUQKK
-! vowel: monophthong
-: NMN_LAEUQKHKH ;
-LEXICON NMN_LAEUQKHKH
-!! Is for nouns with *-est* Loc, Extra long vowel
-!! * Yaml: **N-paeikk**
-:%^PAL E-STEM_SG-NOM ;		  !!= * @CODE@ (1) Sg.Nom: läuʹǩǩ
-:%^V2VV%^PAL%^YXX2YX E-STEM_SG-ABE/ACC/GEN ; !!= * @CODE@ (2) Pl.Nom: lääuʹǩ
-:%^V2VV%^YXX2YX A_DER/LAZH ;
-:%^V2VV%^PAL%^YXX2YX PL-NOM ; !!= * @CODE@ (2) Pl.Nom: lääuʹǩ
-: E-STEM_SG-ILL ;	     !!= * @CODE@ (3) Sg.Ill: läukka
-:%^V2VV%^PAL%^YXX2YX%>e SG-LOC ;  !!= * @CODE@ (4) Sg.Loc: lääuʹǩest
-:%^V2VV%^VOWRaise%^PAL%^YXX2YX SG-COM_IN ;     !!= * @CODE@ (5) Sg.Com: laauʹǩin
-:%^PAL%>e ESS/PAR ; 	       !!= * @CODE@ (6) Ess: läuʹǩǩen
-:%^V2VV%^VOWRaise%^PAL%^YXX2YX%> E-STEM_PL-OBL ;   !!= * @CODE@ (8) Pl.Acc: laauʹǩid
-:%^V2VV%^YXX2YX E-STEM_N_KUYLAZH ; !!= * @CODE@ (9) Der/Dimin.N.Sg.Nom: lääuǥaž
- E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) läukk-
-:%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) läuʹǩ-
-:%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) läuʹǩǩ- Ess+Px..
+!LEXICON N_LAEUQKHKH !!= * @CODE@ päiʹǩǩ:päikk
+!!!! inflection_type="?"
+!!! N_1E_VUQKK
+!! vowel: monophthong
+!: NMN_LAEUQKHKH ;
+!LEXICON NMN_LAEUQKHKH
+!!! Is for nouns with *-est* Loc, Extra long vowel
+!!! * Yaml: **N-paeikk**
+!:%^PAL E-STEM_SG-NOM ;		  !!= * @CODE@ (1) Sg.Nom: läuʹǩǩ
+!:%^V2VV%^PAL%^YXX2YX E-STEM_SG-ABE/ACC/GEN ; !!= * @CODE@ (2) Pl.Nom: lääuʹǩ
+!:%^V2VV%^YXX2YX A_DER/LAZH ;
+!:%^V2VV%^PAL%^YXX2YX PL-NOM ; !!= * @CODE@ (2) Pl.Nom: lääuʹǩ
+!: E-STEM_SG-ILL ;	     !!= * @CODE@ (3) Sg.Ill: läukka
+!:%^V2VV%^PAL%^YXX2YX%>e SG-LOC ;  !!= * @CODE@ (4) Sg.Loc: lääuʹǩest
+!:%^V2VV%^VOWRaise%^PAL%^YXX2YX SG-COM_IN ;     !!= * @CODE@ (5) Sg.Com: laauʹǩin
+!:%^PAL%>e ESS/PAR ; 	       !!= * @CODE@ (6) Ess: läuʹǩǩen
+!:%^V2VV%^VOWRaise%^PAL%^YXX2YX%> E-STEM_PL-OBL ;   !!= * @CODE@ (8) Pl.Acc: laauʹǩid
+!:%^V2VV%^YXX2YX E-STEM_N_KUYLAZH ; !!= * @CODE@ (9) Der/Dimin.N.Sg.Nom: lääuǥaž
+! E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) läukk-
+!:%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) läuʹǩ-
+!:%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) läuʹǩǩ- Ess+Px..
 
 ! Test data:
 !!€gt-norm: läuʹǩǩ # 
@@ -6379,7 +6407,7 @@ LEXICON NMN_PIEAQSS
 :%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) peäʹsˈs Ess+Px..
 
 
-LEXICON N_SUEAQKHKH !!= * @CODE@ sueʹǩǩ:suäkk
+LEXICON N_SUEAQKHKH !!= * @CODE@ sueʹǩǩ:suä%{ʹØ%}kk
 !!! inflection_type="?"
 ! vowel: diphthong
 : NMN_SUEAQKHKH ;
@@ -6405,22 +6433,22 @@ LEXICON NMN_SUEAQKHKH
 !! NumContLex="1.113"
 !! * Yaml: **N-suekkj**
 !!
-:%^VOWRaise%^PALẸ%^PAL E-STEM_SG-NOM ;		  !!(1) Sg.Nom: suẹʹǩǩ
-:%^VOWRaise%^PALẸ%^PAL%^KK2GG E-STEM_SG-ABE/ACC/GEN ; !!(2) Pl.Nom: suẹʼjj
+:%^VOWRaise%^PALẸ%^PAL%^PALK E-STEM_SG-NOM ;		  !!(1) Sg.Nom: suẹʹǩǩ
+:%^VOWRaise%^PALẸ%^PAL%^KK2GG%^PALK E-STEM_SG-ABE/ACC/GEN ; !!(2) Pl.Nom: suẹʼjj
 :%^KK2GG A_DER/LAZH ;
-:%^VOWRaise%^PALẸ%^PAL%^KK2GG PL-NOM ; !!(2) Pl.Nom: suẹʼjj
+:%^VOWRaise%^PALẸ%^PAL%^KK2GG%^PALK PL-NOM ; !!(2) Pl.Nom: suẹʼjj
 :%^CC2CCC E-STEM_SG-ILL ;	      !!(3) Sg.Ill: suäkˈka
-:%^VOWRaise%^PALẸ%^PAL%^KK2GG%>e SG-LOC ; !!(4) Sg.Loc: suẹʹjjest
-:%^VOWRaise%^PALẸ%^PAL%>e ESS/PAR ; !!(6) Ess: suẹʹǩǩen
-!+Use/NGminip+Use/NG:%^VOWRaise%^PALẸ%^PAL%^KK2GG%>e PAR ; !!(7) Par: suẹʹjjed
+:%^VOWRaise%^PALẸ%^PAL%^KK2GG%^PALK%>e SG-LOC ; !!(4) Sg.Loc: suẹʹjjest
+:%^VOWRaise%^PALẸ%^PAL%^PALK%>e ESS/PAR ; !!(6) Ess: suẹʹǩǩen
+!+Use/NGminip+Use/NG:%^VOWRaise%^PALẸ%^PAL%^KK2GG%^PALK%>e PAR ; !!(7) Par: suẹʹjjed
 !2009: 204 +N:%^KK2GG%>e PAR ;
 
-:%^VOWRaise%^PALE%^PAL%^KK2GG SG-COM_IN ; !!(5) Sg.Com: sueʹjjin
-:%^VOWRaise%^PALE%^PAL%^KK2GG E-STEM_PL-OBL ; !!(8) Pl.Acc: sueʹjjid
+:%^VOWRaise%^PALE%^PAL%^KK2GG%^PALK SG-COM_IN ; !!(5) Sg.Com: sueʹjjin
+:%^VOWRaise%^PALE%^PAL%^KK2GG%^PALK E-STEM_PL-OBL ; !!(8) Pl.Acc: sueʹjjid
 :%^KK2GG E-STEM_N_KUYLAZH ; !!(9) Der/Dimin.N.Sg.Nom: suäǥǥaž
  E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) suäkk-
-:%^VOWRaise%^PALẸ%^Allegro%^PAL%^KK2GAllegro E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) suẹˈʹj-
-:%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) suäʹǩˈǩ Ess+Px..
+:%^VOWRaise%^PALẸ%^Allegro%^PAL%^KK2GAllegro%^PALK E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) suẹˈʹj-
+:%^PAL%^CC2CCC%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) suäʹǩˈǩ Ess+Px..
 
 LEXICON N_KUEAQTT !!= * @CODE@ kuẹʹtt:kuätt
 !!! inflection_type="?"
@@ -6821,6 +6849,27 @@ LEXICON E-STEM_N_KUYLAZH !!= * @CODE@ (9)
  E-STEM-PX-WEAKEN-WITHOUT-PAL ;
  LAT ;
 
+LEXICON N_1E_EAQYKK
+ NMN_1E_EAQYKK ;
+LEXICON NMN_1E_EAQYKK
+!! * There are several stem types 
+!! * jeäʹrǧǧ:jeäʹrǧǧ
+:%^PALNo E-STEM_SG-ILL ; !!(3) Sg.Ill: jeärgga
+:%^VOWRaise%^PALẸ%^PAL%^YXX2YX%^PALK  DenominalAdjsCShort ;
++Use/NGminip+Use/NG+Cmp/SgNom:%^VOWRaise%^PALẸ%^PAL%^PALK  R ;
+:%^PAL%^PALK  E-STEM_SG-NOM ; !!(1) Sg.Nom: jeäʹrǧǧ
+:%^VOWRaise%^PALẸ%^PAL%^YXX2YX%^PALK  E-STEM_SG-ABE/ACC/GEN ; !!(2) Pl.Nom: jiẹʹrj
+:%^YXX2YX A_DER/LAZH ;
+:%^VOWRaise%^PALẸ%^PAL%^YXX2YX%^PALK  PL-NOM ; !!(2) Pl.Nom: jiẹʹrj
+:%^VOWRaise%^PALẸ%^PAL%^YXX2YX%^PALK%>e SG-LOC ; !!(4) Sg.Loc: jiẹʹrjest
+:%^VOWRaise%^PALE%^PAL%^YXX2YX%^PALK  SG-COM_IN ; !!(5) Sg.Com: jieʹrjin
+:%^PAL%^PALK%>e ESS/PAR ; !!(6) Ess: jeäʹrǧǧen
+:%^VOWRaise%^PALE%^PAL%^YXX2YX%^PALK  E-STEM_PL-OBL ; !!(8) Pl.Acc: jieʹrjid
+:%^YXX2YX E-STEM_N_KUYLAZH ; !!(9) Der/Dimin.N.Sg.Nom: jeärǥaž
+ E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) jeärgg-
+:%^PALẸ%^PAL%^YXX2YX%^PALK  E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) jiẹʹrj-
+:%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) jeäʹrmm Ess+Px..
+
 LEXICON N_JEAQRMM !!= * @CODE@ jeäʹrǧǧ:jeärgg
 !!! inflection_type="?"
 ! vowel: diphthong
@@ -6863,11 +6912,11 @@ LEXICON NMN_JEAQRMM
 :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) jeäʹrmm Ess+Px..
 
 
-LEXICON N_JEAQRMM-PL
-+Cmp/SgNom:%^PAL R ;
-:%^VOWRaise%^PALẸ%^PAL%^YXX2YX PL-NOM ; !!(2) Pl.Nom: jiẹʹrj
-:%^PAL%>e ESS/PAR ; !!(6) Ess: jeäʹrǧǧen
-:%^VOWRaise%^PALE%^PAL%^YXX2YX PL-OBL ; !!(8) Pl.Acc: jieʹrjid
+LEXICON N_1E_EAQYKK-PL
++Cmp/SgNom:%^PAL%^PALK R ;
+:%^VOWRaise%^PALẸ%^PAL%^YXX2YX%^PALK PL-NOM ; !!(2) Pl.Nom: jiẹʹrj
+:%^PAL%^PALK%>e ESS/PAR ; !!(6) Ess: jeäʹrǧǧen
+:%^VOWRaise%^PALE%^PAL%^YXX2YX%^PALK PL-OBL ; !!(8) Pl.Acc: jieʹrjid
 
 LEXICON N_REAEIQGHGH !!= * @CODE@ reäiʹǧǧ:reäigg
 !!! inflection_type="?"
@@ -6895,22 +6944,20 @@ LEXICON NMN_REAEIQGHGH
 !! * There are several stem types 
 !! * jeäʹrǧǧ:jeäʹrǧǧ
 : E-STEM_SG-ILL ; !!(3) Sg.Ill: reäigga
-:%^PAL%^YXX2YX DenominalAdjsCShort ;
-+Use/NGminip+Use/NG+Cmp/SgNom:%^VOWRaise%^PALẸ%^PAL R ;
-:%^PAL E-STEM_SG-NOM ; !!(1) Sg.Nom: reäiʹǧǧ
-:%^PAL%^YXX2YX E-STEM_SG-ABE/ACC/GEN ; !!(2) Pl.Nom: reäiʹj
+:%^PAL%^YXX2YX%^PALK DenominalAdjsCShort ;
++Use/NGminip+Use/NG+Cmp/SgNom:%^VOWRaise%^PALẸ%^PAL%^PALK R ;
+:%^PAL%^PALK E-STEM_SG-NOM ; !!(1) Sg.Nom: reäiʹǧǧ
+:%^PAL%^YXX2YX%^PALK E-STEM_SG-ABE/ACC/GEN ; !!(2) Pl.Nom: reäiʹj
 :%^YXX2YX A_DER/LAZH ;
-:%^PAL%^YXX2YX PL-NOM ; !!(2) Pl.Nom: reäiʹj
-:%^PAL%^YXX2YX%>e SG-LOC ; !!(4) Sg.Loc: reäiʹjest
-:%^VOWRaise%^PALE%^PAL%^YXX2YX SG-COM_IN ; !!(5) Sg.Com: rieiʹjin
-:%^PAL%>e ESS/PAR ; !!(6) Ess: jeäʹrǧǧen
-:%^VOWRaise%^PALE%^PAL%^YXX2YX E-STEM_PL-OBL ; !!(8) Pl.Acc: rieiʹjid
+:%^PAL%^YXX2YX%^PALK PL-NOM ; !!(2) Pl.Nom: reäiʹj
+:%^PAL%^YXX2YX%^PALK%>e SG-LOC ; !!(4) Sg.Loc: reäiʹjest
+:%^VOWRaise%^PALE%^PAL%^YXX2YX%^PALK SG-COM_IN ; !!(5) Sg.Com: rieiʹjin
+:%^PAL%^PALK%>e ESS/PAR ; !!(6) Ess: jeäʹrǧǧen
+:%^VOWRaise%^PALE%^PAL%^YXX2YX%^PALK E-STEM_PL-OBL ; !!(8) Pl.Acc: rieiʹjid
 :%^YXX2YX E-STEM_N_KUYLAZH ; !!(9) Der/Dimin.N.Sg.Nom: reäiǥaž
  E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) reäigg-
-:%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) reäiʹj-
-:%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) reäiʹǧǧ Ess+Px..
-
-
+:%^PAL%^YXX2YX%^PALK E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) reäiʹj-
+:%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) reäiʹǧǧ Ess+Px..
 
 !LEXICON N_RIOQMJJ !!= * @CODE@ riõʹmjj:reâmjj
 !!! inflection_type="?"
@@ -9792,6 +9839,20 @@ LEXICON NMN_OAQVES !!= * @CODE@ ååʹves:å%^1VOWvves
 :%^RmVow%>e ESS/PAR ;  				! åvvsen
 :%^RmVow PL-OBL ;					! åvvsi
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ åvvs-
+
+LEXICON N_2E_VQYKK_S/Z  !!= * @CODE@ pä%^1VOW%{ʹØ%}lgges
+ NMN_2E_VQYKK_S/Z ;
+LEXICON NMN_2E_VQYKK_S/Z  !!= * @CODE@ pä%^1VOW%{ʹØ%}lgges
+!! * Yaml: **N-kaeaerbes**
+:%^Pen%^V2VV%^Pen%^PAL%^Pen%^YXX2YX%^Pen%^PALK SG-NOM ;	     	! pääʹljes
+:%^PenVow2a%^VC SG-ABE/ACC/GEN ;	 		! pälggaz
+:%^RmVow%>a SG-ILL ;	  			! kärbbsa
+:%^RmVow%>e SG-LOC ;				! kärbbsest
+:%^RmVow SG-COM_IN ;				! kärbbsin
+:%^RmVow%>e ESS/PAR ;  				! kärbbsen
+:%^PenVow2a%^VC PL-NOM ;	 		! kärbbaz
+:%^RmVow PL-OBL ;					! kärbbsi
+:%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ kärbbs-
 
 LEXICON N_KAAQRBES !!= * @CODE@ kääʹrbes:kärbbes
 !!! inflection_type="2"

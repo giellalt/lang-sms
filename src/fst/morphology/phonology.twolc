@@ -323,7 +323,7 @@ BetweenVowLengthAndPALNo = [NeutrVowHeight NeutrDiphPALTint ] ;
 BetweenVowHeightAndConsGrade = [(NeutrDiphPALTint (%^Allegro:) %^PAL:|(%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:)] ;
 !! `BetweenVowHeightAndConsGrade = [((%^PALE:\|%^PALÄ:\|%^PALẸ:\|%^PALÕ:) (%^Allegro:) %^PAL:\|(%^PALÂ:\](%^PALÕ:) (%^Allegro:) %^PALNo:)) ;`
 
-BetweenVowHeightAndMorph = [  (NeutrDiphPALTint (%^Allegro:) %^PAL:|(%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:) ([(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:]|%^C2CC:|%^YXX2YX:|%^K2GG:|%^KK2GG:|%^CC2CCC:|%^CCC2C:|%^CCC2CC:|%^YXX2VX:|%^YXX2VXX:|%^KKK2GG:) RBound ] ;
+BetweenVowHeightAndMorph = [  (NeutrDiphPALTint (%^Allegro:) %^PAL:|(%^PALÂ:|%^PALÕ:) (%^Allegro:) %^PALNo:) ([(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:]|%^C2CC:|%^YXX2YX:|%^K2GG:|%^KK2GG:|%^CC2CCC:|%^CCC2C:|%^CCC2CC:|%^YXX2VX:|%^YXX2VXX:|%^KKK2GG:) (%^PALK:) RBound ] ;
 
 
 BetweenPALNoAndMorphRightArrow = [([(%^Allegro:) %^CC2C:|(%^Allegro:) %^CC2CAllegro:]|%^C2CC:|%^YXX2YX:|%^K2GG:|%^KK2GG:|%^CC2CCC:|%^CCC2C:|%^CCC2CC:|%^YXX2VX:|%^YXX2VXX:|%^KKK2GG:) ] ;
@@ -1366,7 +1366,7 @@ OnSetC u: _   (ʹ:|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|r d d:]  %^
  %^1VOW:ä <=>
  OnSetC [ä|Ä] _ (i|:u) (ʹ:|%{ʹØ%}:) Cns:+ %^V2VV: BetweenVowHeightAndMorph ;
 ! OnSetC [ä|Ä] _ (i|:u) (ʹ:|%{ʹØ%}:) Cns:+ %^V2VV: ;
- OnSetC ä _ (ʹ:|%{ʹØ%}:) Cns:+ %^V2VV: ([(%^Allegro:) (%^PAL:) %^CC2C:|(%^Allegro:) (%^PAL:) %^CC2CAllegro:|%^YXX2YX:]) RBound ;
+ OnSetC ä _ (ʹ:|%{ʹØ%}:) Cns:+ %^V2VV: ([(%^Allegro:) (%^PAL:) %^CC2C:|(%^Allegro:) (%^PAL:) %^CC2CAllegro:|%^YXX2YX:]) (%^PALK:) RBound ;
 !!€ ä^1VOWldd^V2VV^CC2C
 !!€ ääld000
 !!€ jä^1VOWu0rr^V2VV^PAL^CC2C
@@ -2772,7 +2772,8 @@ e:  _ (%{ʹØ%}: h:|%{ʹØ%}: v:|i|u) [:ʹ|%{ʹØ%}:ʹ]  [Cns:+ (%{XC%}:)|Cns:+ 
 
 "even syllabic verbs I, 'lgg>'lj"
 !! **@RULENAME@** - used in
- g:j  <=> Vow: (%^1VOW:)  [ i [:ʹ|%{ʹØ%}:ʹ] |[:ʹ|%{ʹØ%}:ʹ] [l|r|d:]]  _ g: NeutrVowLenghtHeight (%^PAL:) %^YXX2YX: %^PALK: ;
+ g:j  <=> Vow: (%^1VOW:)  [ i [:ʹ|%{ʹØ%}:ʹ] |[:ʹ|%{ʹØ%}:ʹ] [l|r|d:]]  _ g: NeutrVowLenghtHeight (%^PALE:|^PALẸ:) (%^PAL:) %^YXX2YX: %^PALK: ;
+!2024-11-06 Vow: (%^1VOW:)  [ i [:ʹ|%{ʹØ%}:ʹ] |[:ʹ|%{ʹØ%}:ʹ] [l|r|d:]]  _ g: NeutrVowLenghtHeight (%^PAL:) %^YXX2YX: %^PALK: ;
 !! vueʹlǧǧed+V+Ind+Prt+Pl1
 !!€ vuâ0lgg^VOWRaise^PAL^XYY2XY>im
 !!€ vuõʹlj0000>im
@@ -2781,7 +2782,7 @@ e:  _ (%{ʹØ%}: h:|%{ʹØ%}: v:|i|u) [:ʹ|%{ʹØ%}:ʹ]  [Cns:+ (%{XC%}:)|Cns:+ 
 !! reäiʹǧǧ+N+Pl+Nom
 !!€ reäi0gg^PAL^XYY2XY
 !!€ reäiʹj000
-   Vow: (%^1VOW:)  [ i [:ʹ|%{ʹØ%}:ʹ] |[:ʹ|%{ʹØ%}:ʹ] [l|r|d:]]  _ g: Vow: Cns:* PenNeutrVowLenghtHeight (%^Pen: %^PAL:) %^Pen: %^YXX2YX: (%^Pen:) %^PALK: ;
+   Vow: (%^1VOW:)  [ i [:ʹ|%{ʹØ%}:ʹ] |[:ʹ|%{ʹØ%}:ʹ] [l|r|d:]]  _ g: Vow: Cns:* PenNeutrVowLenghtHeight (%^Pen: %^PALE:|%^Pen: ^PALẸ:) (%^Pen: %^PAL:) %^Pen: %^YXX2YX: (%^Pen:) %^PALK: ;
 
 
 
