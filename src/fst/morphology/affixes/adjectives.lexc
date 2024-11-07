@@ -219,6 +219,12 @@ LEXICON A_HAAQSKH !!= * @CODE@ hääʹsǩ:hää%{ʹØ%}sk
 :%^PAL   A-ATTR_es ;
 : A-01_HAAQSKH ;
 
+LEXICON A_1E_VVQYX_VVQYX !!= * @CODE@ hääʹsǩ:hää%{ʹØ%}sk
+! vowel: monophthong
+! gradation: no
+:%^PAL   A-ATTR_es ;
+: A-01_1E_VVQYX_VVQYX ;
+
 !LEXICON A_HITRAI !!= * @CODE@ hitrai:hitrai
 !! no separate attribute form 2018-10-13
 !! Russian loanword 
@@ -295,12 +301,11 @@ LEXICON A_JIOQNNI !!= * @CODE@ jiõʹnni:jiõnn FIXME 2016-04
 :%^PAL%>%{ʼØ%}j ADJ-DER/COMP_ab ;
 :%^PAL%>%{ʼØ%}j ADJ-DER/SUPERL_ummus ;
 
-!LEXICON A_AQLKHKHI !!= * @CODE@ aʹlǩǩi:alkk
-!+Attr:%^PAL%>es #   ;
-!+Sg+Nom:%^PAL%>i  # ;
-!:%^PAL ADJ-DER/COMP_aeaeb ;
-!!:%^PAL ADJ-DER/COMP_ab ;
-!:%^PAL ADJ-DER/SUPERL_ummus ;
+LEXICON A_AQLKHKHI !!= * @CODE@ aʹlǩǩi:a%{ʹØ%}lkk
++Attr:%^VOWRaise%^PAL%^PALK%>es #   ;
++Sg+Nom:%^VOWRaise%^PAL%^PALK%>i  # ;
+:%^VOWRaise%^PAL%^PALK ADJ-DER/COMP_aeaeb ;
+:%^VOWRaise%^PAL%^PALK ADJ-DER/SUPERL_ummus ;
 
 LEXICON A_PAERRAI !!= * @CODE@ pärrai:pärr
 +Attr:%>as #   ;
@@ -4709,6 +4714,22 @@ LEXICON A-01_KAQLBB
 !2016-12-05-NotUsed!:%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) päiʹǩǩ- Ess+Px..
 
 LEXICON A-01_HAAQSKH
+! gradation: no
+!! * Yaml: **N-haeaesk**
+:%^PAL A-02_E-STEM_SG-NOM ;		  !!= * @CODE@ (1) Sg.Nom: hääʹsǩ
+:%^PAL A-02_E-STEM_SG-ABE/ACC/GEN ; !!= * @CODE@ (2) Pl.Nom: hääʹsǩ
+:%^PAL A-02_PL-NOM ; !!= * @CODE@ (2) Pl.Nom: hääʹsǩ
+: A-02_E-STEM_SG-ILL ;	     !!= * @CODE@ (3) Sg.Ill: hääska
+:%^PAL%>e A-02_SG-LOC ;  !!= * @CODE@ (4) Sg.Loc: hääʹsǩest
+:%^PAL A-02_SG-COM_IN ;     !!= * @CODE@ (5) Sg.Com: hääʹsǩin
+:%^PAL%>e A-02_ESS/PAR ; 	       !!= * @CODE@ (6) Ess: hääʹsǩen
+:%^PAL%> A-02_E-STEM_PL-OBL ;   !!= * @CODE@ (8) Pl.Acc: hääʹsǩid
+: A-02_E-STEM_N_KUYLAZH ; !!= * @CODE@ (9) Der/Dimin.N.Sg.Nom: hääskaž
+ E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) hääsk-
+:%^PAL E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) hääʹsǩ-
+:%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) hääʹsǩ Ess+Px..
+
+LEXICON A-01_1E_VVQYX_VVQYX
 ! gradation: no
 !! * Yaml: **N-haeaesk**
 :%^PAL A-02_E-STEM_SG-NOM ;		  !!= * @CODE@ (1) Sg.Nom: hääʹsǩ
