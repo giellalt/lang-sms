@@ -288,6 +288,9 @@ CLASS 1 HIGH VOWEL, PALATALIZATION NOMINALS
 * LEXICON A_NUQBB   nuʹbb:nubb
 * Yaml: **A-nubb**
 
+* LEXICON A_1E_UQKK   kuʹǩǩ:ku%^1VOW%{ʹØ%}kk
+* Yaml: **A-nubb**
+
 * LEXICON A_KUEQLL  kueʹll:kuâll
 
 * LEXICON A_PUEQRR  pueʹrr:puâll
@@ -1078,6 +1081,12 @@ CLASS 1 HIGH VOWEL TYPE, NO PALATALIZATION NOMINALS
 
 CLASS 1 HIGH VOWEL, PALATALIZATION NOMINALS
 
+* Yaml: **N-nubb**
+* There are several stem types
+*  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) nubb
+* :%^PAL%^CC2CAllegro%^PALK E-STEM-PX-ALLEGRO ;  (11) nuʹbb-
+* :%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) nuʹbb Ess+Px..
+
 Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_gem_dd_type
 ## 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
@@ -1362,18 +1371,18 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^V2VV%^VOWRaise%^PAL%^YXX2YX A-02_E-STEM_PL-OBL ;  (5) Sg.Com: õõʹljin
 
 * Yaml: **N-haeaesk**
-* :%^PAL A-02_E-STEM_SG-NOM ;		   (1) Sg.Nom: hääʹsǩ
-* :%^PAL A-02_E-STEM_SG-ABE/ACC/GEN ;  (2) Pl.Nom: hääʹsǩ
-* :%^PAL A-02_PL-NOM ;  (2) Pl.Nom: hääʹsǩ
+* :%^PAL%^PALK A-02_E-STEM_SG-NOM ;		   (1) Sg.Nom: hääʹsǩ
+* :%^PAL%^PALK A-02_E-STEM_SG-ABE/ACC/GEN ;  (2) Pl.Nom: hääʹsǩ
+* :%^PAL%^PALK A-02_PL-NOM ;  (2) Pl.Nom: hääʹsǩ
 * : A-02_E-STEM_SG-ILL ;	      (3) Sg.Ill: hääska
-* :%^PAL%>e A-02_SG-LOC ;   (4) Sg.Loc: hääʹsǩest
-* :%^PAL A-02_SG-COM_IN ;      (5) Sg.Com: hääʹsǩin
-* :%^PAL%>e A-02_ESS/PAR ; 	        (6) Ess: hääʹsǩen
-* :%^PAL%> A-02_E-STEM_PL-OBL ;    (8) Pl.Acc: hääʹsǩid
+* :%^PAL%^PALK%>e A-02_SG-LOC ;   (4) Sg.Loc: hääʹsǩest
+* :%^PAL%^PALK A-02_SG-COM_IN ;      (5) Sg.Com: hääʹsǩin
+* :%^PAL%^PALK%>e A-02_ESS/PAR ; 	        (6) Ess: hääʹsǩen
+* :%^PAL%^PALK%> A-02_E-STEM_PL-OBL ;    (8) Pl.Acc: hääʹsǩid
 * : A-02_E-STEM_N_KUYLAZH ;  (9) Der/Dimin.N.Sg.Nom: hääskaž
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) hääsk-
-* :%^PAL E-STEM-PX-ALLEGRO ;  (11) hääʹsǩ-
-* :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) hääʹsǩ Ess+Px..
+* :%^PAL%^PALK E-STEM-PX-ALLEGRO ;  (11) hääʹsǩ-
+* :%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) hääʹsǩ Ess+Px..
 
 * Yaml: **N-haeaesk**
 * :%^PAL A-02_E-STEM_SG-NOM ;		   (1) Sg.Nom: hääʹsǩ
