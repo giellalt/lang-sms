@@ -730,6 +730,7 @@ Gradation triggers 2015.02.09 For   Consonant Clusters
 * **%^UltRmVow** for removing vowels e, â, a after final consonant in stem 
 * **%^RmCns** for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta 
 * **%^VC** Voicing s:z š:ž 
+* %^Br break rule, e.g. eʹč^Br>{ʼØ}č
 * **%^VOWLower** for lowering i>e, õ>â, â>ä, u>o, o>å 
 * **%^U2Õ** lowers u>õ    
 * **%^VOWRaise** for raising e>i, ä>e 
