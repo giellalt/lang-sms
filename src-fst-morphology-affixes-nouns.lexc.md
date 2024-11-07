@@ -6385,6 +6385,11 @@ säʹmmlaž:säʹmmlaž
 
 Diminutive derivations
 
+* LEXICON N_1Y_DIMK_YZH  muõrâž:muõr
+(2009: 306)
+* muõrâž:muõr
+* Yaml: **N-muorazh**
+
 * LEXICON N_MUORYZH  muõrâž:muõr
 (2009: 306)
 * muõrâž:muõr

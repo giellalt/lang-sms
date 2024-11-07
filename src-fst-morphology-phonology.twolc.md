@@ -105,6 +105,7 @@ Penultimate Palatalisation
 Miscellaneous triggers:
 * %^VC:0 Voicing s:z š:ž
 * %^Â:0 Indicates placement of â in stem
+* %^Br:0 break rule, e.g. eʹč^Br>{ʼØ}č
 
 CHARACTERISTIC BREAKDOWN 2015-02-17
 
