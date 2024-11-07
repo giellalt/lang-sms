@@ -60,7 +60,7 @@ LEXICON V0_LEEQD !!= * @CODE@ leeʹd:l
 +Imprt:			LEED-IMPRT ;
 +Imprt+Sg2:eäkˈku	K ;
 +Imprt+ConNeg:%>eäkˈku K ;
-:%>eʹč%>		CONDITIONAL ; !This needs the extra %> to prevent leʹčʼčem20240429
+:%>eʹč%^Br		CONDITIONAL ; !This needs the extra %^Br to prevent leʹčʼčem20240429
 +Pot+Sg1:%>eʹžžem K	;
 +Pot+Sg2:%>eʹžžiǩ K	;
 +Pot+Sg2+Err/Orth-extra-q:%>eʹžžiʹǩ K	;
@@ -5899,7 +5899,7 @@ LEXICON VSUF-VUEJTED-ELSE-PAL
 +Ind+Prt+Sg4:%>eš K ; ! vuejteš
 +Imprt+Pl2:%>eʹǩed           K  ;
 :%>eʹ		VSUF-I-POTKOND ; !WG
-+Use/NGminip+Use/SpellNoSugg:%>eʹč CONDITIONAL ; ! This expects forms like: taarbšeʹččiǩ in norm yamls 2023-02-05
++Use/NGminip+Use/SpellNoSugg:%>eʹč%^Br CONDITIONAL ; ! This expects forms like: taarbšeʹččiǩ in norm yamls 2023-02-05
 +Pot+Sg3:%>ež	K ; !WG
 +Actio+Ess:%>eʹmmen K ;
 +Use/NGminip+Use/SpellNoSugg+Actio+Ess:%>eʹmen K ;
@@ -6616,7 +6616,7 @@ LEXICON KUOCCJED/STOAOARJED_ELSE !
 +Imprt+ConNegII:%>%{ʼØ%}juku K ;
 
 :%>%{ʼØ%}jeʹ         VSUF-I-POTKOND ; !WG
-+Use/NGminip+Use/SpellNoSugg:%>%{ʼØ%}jeʹč CONDITIONAL ;
++Use/NGminip+Use/SpellNoSugg:%>%{ʼØ%}jeʹč%^Br CONDITIONAL ;
 +Pot+Sg3:%>%{ʼØ%}jež K ; !WG
 +Inf:%>%{ʼØ%}jed K ;
 +Actio+Ess:%>%{ʼØ%}jeʹmen K ;
@@ -6814,7 +6814,7 @@ LEXICON	VSUF-TEEQMEED-ELSE
 
 :eʹ VSUF-I-POTKOND ;
 +Pot+Sg3:eež K ;
-+Use/NGminip+Use/SpellNoSugg:eʹč CONDITIONAL ;
++Use/NGminip+Use/SpellNoSugg:eʹč%^Br CONDITIONAL ;
 
 +Imprt+Sg3:%>ââǥǥas          K       ; !WG
 +Imprt+Pl1:%>âkap                    K       ;
@@ -6978,7 +6978,7 @@ LEXICON VSUF-INF_AD
 +Imprt+Pl2:%>ad K ;
 +Actio+Ess:%>men K ;
 +Actio:%>am K ;
-@C.NeedNoun@+Actio:@C.NeedNoun@%>am N_AANAR ;
+@C.NeedNoun@+Actio:@C.NeedNoun@%>am N_AANAR ;!see GER_
 +Actio+Der+Der/nalla+Adv:%>am»nalla K ;
  VSUF-PRSPRC_AD ;
 +Act+PrfPrc:%>am K ;
@@ -7139,7 +7139,9 @@ LEXICON VABESS
 LEXICON GER_
 : DenominalAdjsCShort ; !!= * @CODE@ (Feist 2012: 200-201) +Der+Der/teqm
 +Ger+Instr:%>eeʹl K ; !FIX-ME
-+Ger+Ess:%>eeʹn K ; !FIX-ME +Ger+Ess
++Err/Orth-no-q+Ger+Instr:%>eel K ; !FIX-ME
++Ger+Ess:%>een K ; !FIX-ME +Ger+Ess 
++Err/Orth-extra-q+Ger+Ess:%>eeʹn K ; !FIX-ME +Ger+Ess
 
 +Ger+Loc:%>eeʹst K ; !FIX-ME +Ger+Loc
 ! CHECK-ME
