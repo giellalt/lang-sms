@@ -3314,11 +3314,12 @@ cf N_E_EEQC
 * : E-STEM_N_KUYLAZH ;		 (9) rååzaž
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) rååz-
 
-* LEXICON N_KANEL  kanel:kanẹ%^1VOWl
+* LEXICON N_KANEQL  kanel:kanẹ%^1VOW%{ʹØ%}l
 N_E_EC_EEQC
 like N_ATOM
 * Yaml: **N-kanel**
 * : E-STEM_SG-NOM ;		  	 (1) kanel
+* +Err/Orth-extra-q:%^PAL E-STEM_SG-NOM ;		  	 (1) kaneʹl <as it sounds, but not >
 * :%^V2VV%^PAL E-STEM_SG-ABE/ACC/GEN ;	 (2) kaneeʹl
 * :%^V2VV%^PAL PL-NOM ;	 (2) uʹčteeʹl
 * :%^V2VV E-STEM_SG-ILL ;		     	 (3) kaneela

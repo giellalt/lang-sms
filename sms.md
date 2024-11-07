@@ -310,6 +310,8 @@ CLASS 1 LOW VOWEL, PALATALIZATION NOMINALS
 
 * LEXICON A_HAAQSKH  hääʹsǩ:hää%{ʹØ%}sk
 
+* LEXICON A_1E_VVQYX_VVQYX  hääʹsǩ:hää%{ʹØ%}sk
+
 no separate attribute form 2018-10-13
 Russian loanword 
 
@@ -342,6 +344,8 @@ cf. Feist (2012: 198-199)
 These will need their own expansions
 HOW DOES JIÕʹNNI decline?
 * LEXICON A_JIOQNNI  jiõʹnni:jiõnn FIXME 2016-04
+
+* LEXICON A_AQLKHKHI  aʹlǩǩi:a%{ʹØ%}lkk
 
 * LEXICON A_PAERRAI  pärrai:pärr
 * LEXICON A_SAELTTAI  sälttai:sältt
@@ -1356,6 +1360,20 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) käʹlbb Ess+Px..
 * :%^V2VV%^PAL%^YXX2YX A-02_PL-NOM ;	 (2) Pl.Nom: ââʹlj
 * :%^V2VV%^VOWRaise%^PAL%^YXX2YX A-02_E-STEM_PL-OBL ;  (5) Sg.Com: õõʹljin
+
+* Yaml: **N-haeaesk**
+* :%^PAL A-02_E-STEM_SG-NOM ;		   (1) Sg.Nom: hääʹsǩ
+* :%^PAL A-02_E-STEM_SG-ABE/ACC/GEN ;  (2) Pl.Nom: hääʹsǩ
+* :%^PAL A-02_PL-NOM ;  (2) Pl.Nom: hääʹsǩ
+* : A-02_E-STEM_SG-ILL ;	      (3) Sg.Ill: hääska
+* :%^PAL%>e A-02_SG-LOC ;   (4) Sg.Loc: hääʹsǩest
+* :%^PAL A-02_SG-COM_IN ;      (5) Sg.Com: hääʹsǩin
+* :%^PAL%>e A-02_ESS/PAR ; 	        (6) Ess: hääʹsǩen
+* :%^PAL%> A-02_E-STEM_PL-OBL ;    (8) Pl.Acc: hääʹsǩid
+* : A-02_E-STEM_N_KUYLAZH ;  (9) Der/Dimin.N.Sg.Nom: hääskaž
+*  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) hääsk-
+* :%^PAL E-STEM-PX-ALLEGRO ;  (11) hääʹsǩ-
+* :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) hääʹsǩ Ess+Px..
 
 * Yaml: **N-haeaesk**
 * :%^PAL A-02_E-STEM_SG-NOM ;		   (1) Sg.Nom: hääʹsǩ
@@ -5588,11 +5606,12 @@ cf N_E_EEQC
 * : E-STEM_N_KUYLAZH ;		 (9) rååzaž
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) rååz-
 
-* LEXICON N_KANEL  kanel:kanẹ%^1VOWl
+* LEXICON N_KANEQL  kanel:kanẹ%^1VOW%{ʹØ%}l
 N_E_EC_EEQC
 like N_ATOM
 * Yaml: **N-kanel**
 * : E-STEM_SG-NOM ;		  	 (1) kanel
+* +Err/Orth-extra-q:%^PAL E-STEM_SG-NOM ;		  	 (1) kaneʹl <as it sounds, but not >
 * :%^V2VV%^PAL E-STEM_SG-ABE/ACC/GEN ;	 (2) kaneeʹl
 * :%^V2VV%^PAL PL-NOM ;	 (2) uʹčteeʹl
 * :%^V2VV E-STEM_SG-ILL ;		     	 (3) kaneela
