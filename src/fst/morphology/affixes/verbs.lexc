@@ -5016,17 +5016,40 @@ LEXICON V0_VUEAIQNNED !!= * @CODE@ vueiʹnned:vuäinn
 ! NEEDS WORK
 !(son vuäinn)
 :%^VOWRaise%^PALE%^PAL VSUF-INF_ED ; !1
+!! V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
+!! Actio, ActEss, PrsPrc
+
 : VSUF-IND-PRS-SG3_ED ; !2
+!! +V+Ind+Prs+Sg3, Ind.Prt.ConNeg, PrfPrc, NomAct in MOsh
+
 +Ind+Prs+Pl3:%^PAL%>e K ; !3
+!! +V+Ind+Prs+Pl3
+
 :%^VOWRaise%^PALE%^PAL%> VSUF-IND-PRT-PL3_ED ; !4
 +Use/NGminip+Use/SpellNoSugg:%^VOWRaise%^PALÕ%^PAL%> VSUF-IND-PRT-PL3_ED ; !4
+!! +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
+
 :%^VOWRaise%^PALE%^PAL%^YXX2YX VSUF-IND-PRS-CONNEG_ED ;
 :%^VOWRaise%^PALÕ%^PAL%^YXX2YX VSUF-IND-PRS-CONNEG_ED ;
+!! Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
+
 :%^VOWRaise%^PALE%^PAL%^YXX2YX%> VSUF-POTENTIAL_ED ; !6 vueiʹnet
 :%^VOWRaise%^PALÕ%^PAL%^YXX2YX%> VSUF-POTENTIAL_ED ; !6 vuõiʹnet
+!! Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
+
 :%^YXX2YX%> VSUF-CONDITIONAL_ED ; !5 ?2 ?7
 +Imprt+Sg3:%^YXX2YX%>as K ; !7
-:%^VOWRaise%^PALÕ VSUF-IMPRT-CONNEGII_ED ; !8
+!! Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
+
+:%^VOWRaise%^PALE VSUF-IMPRT-CONNEGII_ED ; !8 vueiʹnn
+!! Imprt+ConNeg, Pass+PrfPrc
+
+: VSUF-IMPRT-PL3_ED ; !!= * @CODE@ (9) Ind.Imprt.Pl3: vuäinnaz
+!! Imprt+Pl3
+
+!! (10) Allegro for incoative: vueiʹn»
+:%^PAL%^PALE%^YXX2YX FOR-ALLEGRO-DEVERBAL-DERIVATION ;
+
 
 !! (11) Present Participle:
 :%^VOWRaise%^PALE%^PAL FOR-VSUF-PRSPRC_ED ; !!= * @CODE@ (11) vueiʹnni
