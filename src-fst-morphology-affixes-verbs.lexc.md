@@ -2717,6 +2717,27 @@ Imprt+Pl3
 * LEXICON V_VUEAIQNNED  vueiʹnned:vuäinn
 * LEXICON TV_VUEAIQNNED  vueiʹnned:vuäinn
 * LEXICON V0_VUEAIQNNED  vueiʹnned:vuäinn
+V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
+Actio, ActEss, PrsPrc
+
++V+Ind+Prs+Sg3, Ind.Prt.ConNeg, PrfPrc, NomAct in MOsh
+
++V+Ind+Prs+Pl3
+
++V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
+
+Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
+
+Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
+
+Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
+
+Imprt+ConNeg, Pass+PrfPrc
+
+* : VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: vuäinnaz
+Imprt+Pl3
+
+(10) Allegro for incoative: vueiʹn»
 
 (11) Present Participle:
 * :%^VOWRaise%^PALE%^PAL FOR-VSUF-PRSPRC_ED ;  (11) vueiʹnni
