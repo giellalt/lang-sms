@@ -56,6 +56,9 @@ CLASS 1 HIGH VOWEL, PALATALIZATION NOMINALS
 * LEXICON A_NUQBB   nuʹbb:nubb
 * Yaml: **A-nubb**
 
+* LEXICON A_1E_UQCC   nuʹbb:nubb
+* Yaml: **A-nubb**
+
 * LEXICON A_1E_UQKK   kuʹǩǩ:ku%^1VOW%{ʹØ%}kk
 * Yaml: **A-nubb**
 
@@ -854,6 +857,10 @@ CLASS 1 HIGH VOWEL, PALATALIZATION NOMINALS
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) nubb
 * :%^PAL%^CC2CAllegro%^PALK E-STEM-PX-ALLEGRO ;  (11) nuʹbb-
 * :%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) nuʹbb Ess+Px..
+
+*  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) nubb
+* :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) nuʹbb-
+* :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) nuʹbb Ess+Px..
 
 Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_gem_dd_type
 ## 1.3 Sg.Loc in -est (vowel shift)
