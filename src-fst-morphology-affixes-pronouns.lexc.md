@@ -18,7 +18,6 @@ Pointing to all the pronominal subgroups
 
 * LEXICON Pronoun 
 *  Demonstrative ; 
-* jiõčč+Pron+Refl:   Reflexive ;     
 *  Interrogative ; 
 *  Relative ;	 kååʹtt, mii
 
@@ -45,9 +44,7 @@ Splitting according to person
 
 ## REFLEXIVE PRONOUNS
 
-jiõčč: 
-
-* LEXICON Reflexive 
+jiõčč:ji
 
 Completion needed 2015-09-19
 
