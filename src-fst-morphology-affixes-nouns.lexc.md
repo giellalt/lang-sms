@@ -2907,7 +2907,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 * :%^PALE%^PAL%^CC2CAllegro%^PALK E-STEM-PX-ALLEGRO ;  (11) vueʹss-
 * :%^PALE%^PAL%^CC2CCC%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) vueʹsˈs Ess+Px..
 
-* LEXICON N_BIEQSS   bieʹss:beâss
+* LEXICON N_1E_IY/EQKK   bieʹss:beâss
 N_1E_VWQSS
 Sg_Nom: vow_di:vow_short:vow_high_u:pal_yes:cns_gem
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
@@ -2930,7 +2930,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 * :%^PALE%^PAL%^CC2CAllegro%^PALK E-STEM-PX-ALLEGRO ;  (11) bieʹss-
 * :%^PALE%^PAL%^CC2CCC%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) bieʹsˈs- Ess+Px..
 
-* LEXICON N_SKHIEQRR   sǩieʹrr:sǩeâ%{ʹØ%}rr
+* LEXICON N_1E_IEQCC   sǩieʹrr:sǩeâ%{ʹØ%}rr
 N_1E_VWQCC kueʹll
 
 Sg_Nom: vow_di:vow_short:vow_high_u:pal_yes:cns_gem
@@ -4308,6 +4308,30 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) peäss-
 * :%^PAL%^KK2GAllegro E-STEM-PX-ALLEGRO ;  (11) piẹʹz-
 * :%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) peäʹsˈs Ess+Px..
+
+* LEXICON N_1E_IEAQKK  lieʹǩǩ:leä%{ʹØ%}kk
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
+## 1.3 Sg.Loc in -est (vowel shift)
+Raised: ELSE
+Lowered: Sg.Ill
+e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+Palatalized: ELSE
+Not Palatalized: Sg.Ill
+## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Diphthong + Consonant Geminate variation)
+Strong grade: Sg.Nom, Ess, Par
+Extra strong grade: Sg.Ill
+Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+## (8) Pl.Acc: pieʹzzid
+* Yaml: **N-piess, N-kjiechch**
+
+*  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) peäss-
+* :%^PAL%^KK2GAllegro%^PALK  E-STEM-PX-ALLEGRO ;  (11) piẹʹz-
+* :%^PAL%^CC2CCC%^PALK   E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) peäʹsˈs Ess+Px..
 
 * LEXICON N_SUEAQKHKH  sueʹǩǩ:suä%{ʹØ%}kk
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
