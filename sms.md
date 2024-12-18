@@ -4927,7 +4927,7 @@ NumContLex="1.113"
 * :%^PAL%^CC2CAllegro%^PALK E-STEM-PX-ALLEGRO ;  (11) nuʹbb-
 * :%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) nuʹbb Ess+Px..
 
-* LEXICON N_CHUQKHKH  čuʹǩǩ:ču%^1VOW%{ʹØ%}kk
+* LEXICON N_1E_UQKK  čuʹǩǩ:ču%^1VOW%{ʹØ%}kk
 N_1E_UQKK
 Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_gem_dd_type
 ## 1.3 Sg.Loc in -est (vowel shift)
@@ -5039,6 +5039,39 @@ NumContLex="1.113"
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) stuul-
 * :%^VV2V%^PAL%^PALK E-STEM-PX-ALLEGRO ;  (11) stuʹl-
 * :%^VV2V%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) nuʹbb Ess+Px..
+
+* LEXICON N_1E_UQYKK  kuʹrčč:ku%^1VOW%{ʹØ%}rčč
+Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_xyy
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+## 1.3 Sg.Loc in -est (vowel shift)
+Raised: Sg.Com, Pl.Obl
+Lowered: ELSE
+e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+Palatalized: ELSE
+Not Palatalized: Sg.Ill
+## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+Strong grade: Sg.Nom, Ess, Par
+Extra strong grade: Sg.Ill
+Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+## (1) Sg.Nom: kuʹrčč
+## (2) Pl.Nom: kuuʹrč
+## (3) Sg.Ill: korčča
+## (4) Sg.Loc: kuuʹrčest
+## (5) Sg.Com: kuuʹrčin
+## (6) Ess: kuʹrččen
+## (7) Par: kuʹrččed
+## (8) Pl.Acc: kuuʹrčid
+## (9) Der/Dimin.N.Sg.Nom: koorčaž
+NumContLex="1.113"
+* Yaml: **N-kurchch**
+*  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) kurčč-
+* :%^PAL%^YXX2YX%^PALK E-STEM-PX-ALLEGRO ;  (11) kuʹrč-
+* :%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) kuʹrčč Ess+Px..
 
 * LEXICON N_1E_UQYXX  kuʹrčč:ku%^1VOW%{ʹØ%}rčč
 * LEXICON N_KUQRCHCH  kuʹrčč:kurčč
@@ -6062,6 +6095,39 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^V2VV%^PAL%^YXX2YX PL-NOM ;	 (2) Pl.Nom: ââʹlj
 * :%^V2VV%^VOWRaise%^PAL%^YXX2YX E-STEM_PL-OBL ;  (5) Sg.Com: õõʹljin
 
+* LEXICON N_1E_EQYKK  argumeʹntt:argumẹ%^1VOW%{ʹØ%}ntt
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+## 1.3 Sg.Loc in -est (vowel shift)
+Raised: Sg.Com, Pl.Obl
+Lowered: ELSE
+e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+Palatalized: ELSE
+Not Palatalized: Sg.Ill
+## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+Strong grade: Sg.Nom, Ess, Par
+Strong grade: Sg.Ill
+Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+NumContLex="1.113"
+Is for nouns with *-est* Loc, Extra long vowel
+* Yaml: **N-argumentt**
+* :%^PAL%^PALK E-STEM_SG-NOM ;		  			 (1) Sg.Nom: argumeʹntt
+* :%^V2VV%^PAL%^YXX2YX%^PALK E-STEM_SG-ABE/ACC/GEN ;	 (2) Pl.Nom: argumeeʹnt
+* :%^V2VV%^PAL%^YXX2YX%^PALK PL-NOM ;	 (2) Pl.Nom: argumeeʹnt
+* : E-STEM_SG-ILL ;	     			   	 (3) Sg.Ill: argumentta
+* :%^V2VV%^PAL%^YXX2YX%^PALK%>e SG-LOC ;		 (4) Sg.Loc: argumeeʹntest
+* :%^V2VV%^PAL%^YXX2YX%^PALK SG-COM_IN ;  (5) Sg.Com: argumeeʹntin
+* :%^V2VV%^PAL%^YXX2YX%^PALK E-STEM_PL-OBL ;  (5) Sg.Com: argumeeʹntin
+* :%^PAL%^PALK%>e ESS/PAR ;	       			 (6) Ess: argumeʹntten
+* :%^V2VV%^YXX2YX E-STEM_N_KUYLAZH ;		 (9) Der/Dimin.N.Sg.Nom: argumeentaž
+*  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) argumentt-
+* :%^PAL%^YXX2YX%^PALK E-STEM-PX-ALLEGRO ;  (11) argumeʹnt-
+* :%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) argumeʹntt- Ess+Px..
+
 * LEXICON N_1E_EQYXX  argumeʹntt:argumẹ%^1VOW%{ʹØ%}ntt
 * LEXICON N_TEQSTT  argumeʹntt:argumentt
 N_1E_SVQYXX
@@ -6098,6 +6164,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) argumentt-
 * :%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ;  (11) argumeʹnt-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) argumeʹntt- Ess+Px..
+
 * LEXICON N_PAIQKHKH  päiʹǩǩ:päikk
 N_1E_VUQKK
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -6807,6 +6874,55 @@ NumContLex="1.113"
 čuẹʼrv
 čuäʹrvv+N+Ess
 čuäʼrvven
+
+* LEXICON N_1E_UAQYKK  juäʹtǩǩ:juä%{ʹØ%}tkk
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+## 1.3 Sg.Loc in -est (vowel shift)
+Raised: Sg.Com, Pl.Obl
+Lowered: ELSE  ẹ, ä
+e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+Palatalized: ELSE
+Not Palatalized: Sg.Ill
+## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+Strong grade: Sg.Nom, Ess, Par
+Extra strong grade: Sg.Ill
+Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+## (1) Sg.Nom: čuäʹrvv
+## (2) Pl.Nom: čuẹʼrv
+## (3) Sg.Ill: čuärvva
+## (4) Sg.Loc: čuẹʹrvest
+## (5) Sg.Com: čueʹrvin
+## (6) Ess: čuäʹrvven
+## (7) Par: čuäʹrvved
+## (8) Pl.Acc: čueʹrvid
+## (9) Der/Dimin.N.Sg.Nom: čuärvaž
+NumContLex="1.113"
+* Yaml: **N-chuaervv**
+* There are several stem types
+čuäʹrvv+N+Sg+Nom
+čuäʹrvv
+čuäʹrvv+N+Sg+Gen
+čuẹʼrv
+čuẹʼrv
+čuäʹrvv+N+Sg+Ill
+čuärvva
+čuäʹrvv+N+Sg+Loc
+čuẹʼrvest
+čuäʹrvv+N+Ess
+čuäʼrvven
+čuäʹrvv+N+Sg+Com
+čueʼrvin
+čuäʹrvv+N+Der+Der/Dimin+N+Sg+Nom
+čuärvaž
+*  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) čuärvv-
+* :%^PALẸ%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ;  (11) čuẹʹrv-
+čuäʹrvv+N+Ess+PxSg1
+(12) čuäʹrvvinan
 
 * LEXICON N_NEUQLL  neuʹll:ne%^1VOWull 
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
