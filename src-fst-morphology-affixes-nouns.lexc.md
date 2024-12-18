@@ -2874,6 +2874,42 @@ NumContLex="1.113"
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-kuvzz**
 
+* LEXICON N_1E_UQVKK  juʹvjj:ju%^1VOW%{ʹØ%}v%{ʹØ%}jj
+N_1E_UQVCC
+Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_vyy
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+## 1.3 Sg.Loc in -est (vowel shift)
+Raised: Sg.Com, Pl.Obl
+Lowered: ELSE
+e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+Palatalized: ELSE
+Not Palatalized: Sg.Ill
+## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+Strong grade: Sg.Nom, Ess, Par
+Strong grade: Sg.Ill
+Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+## (1) Sg.Nom: juʹvjj
+## (2) Pl.Nom: juuʹj
+## (3) Sg.Ill: joujja
+## (4) Sg.Loc: juuʹjest
+## (5) Sg.Com: juuʹjin
+## (6) Ess: juʹvjjen
+## (7) Par: juʹvjjed
+## (8) Pl.Acc: juuʹjid
+## (9) Der/Dimin.N.Sg.Nom: jooujaž
+NumContLex="1.113"
+Is for nouns with *-est* Loc, Extra long vowel
+* Yaml: **N-juvjj**
+* :%^V2VV%^VOWLower%^YXX2VX E-STEM_N_KUYLAZH ;  jooujaž
+*  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) juvjj-
+* :%^Allegro%^PAL%^YXX2VX E-STEM-PX-ALLEGRO ;  (11) juʹj-
+* :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) juʹvjj Ess+Px..
+
 * LEXICON N_JUQVJJ  juʹvjj:ju%^1VOW%{ʹØ%}v%{ʹØ%}jj
 N_1E_UQVCC
 Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_vyy
@@ -4316,6 +4352,35 @@ Is for nouns with *-est* Loc, Extra long vowel
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) nẹibb
 * :%^VV2V%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ;  (11) neiʹb 
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) neiʹbb Ess+Px..
+
+* LEXICON N_1E_EUQKK  peiʹvv:pẹ%^1VOWi%{ʹØ%}vv
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
+e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+Palatalized: ELSE
+Not Palatalized: Sg.Ill
+## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster variation)
+Strong grade: Sg.Nom, Ess, Par
+Strong grade: Sg.Ill
+Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+* Yaml: **N-peivv**
+* :%^PAL%^PALK E-STEM_SG-NOM ;	     (1) Sg.Nom: peiʹvv
+* :%^V2VV%^PAL%^YXX2YX%^PALK E-STEM_SG-ABE/ACC/GEN ;  (2) Pl.Nom: peeiʼv
+* :%^V2VV%^PAL%^YXX2YX%^PALK PL-NOM ;  (2) Pl.Nom: peeiʼv
+* : E-STEM_SG-ILL ;		       (3) Sg.Ill: pẹivva
+* :%^V2VV%^PAL%^YXX2YX%^PALK%>e SG-LOC ;	       (4) Sg.Loc: peeiʹvest
+* :%^V2VV%^PAL%^YXX2YX%^PALK SG-COM_IN ;	       (5) Sg.Com: peeiʹvin
+* :%^PAL%>e ESS/PAR ; 		   (6) Ess: peiʹvven
+* :%^V2VV%^PAL%^YXX2YX%^PALK E-STEM_PL-OBL ;  (8) Pl.Acc: peeiʹvid
+* :%^V2VV%^YXX2YX E-STEM_N_KUYLAZH ;  (9) Der/Dimin.N.Sg.Nom: pẹẹivaž
+*  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) pẹivv-
+* :%^PAL%^YXX2YX%^PALK E-STEM-PX-ALLEGRO ;  (11) peiʹv-
+* :%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) peiʹvv Ess+Px..
 
 * LEXICON N_1E_EUQCC  peiʹvv:pẹ%^1VOWi%{ʹØ%}vv
 * LEXICON N_PEIQVV  peiʹvv:pẹ%^1VOWi%{ʹØ%}vv

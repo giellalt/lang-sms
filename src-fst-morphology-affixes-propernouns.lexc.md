@@ -21,6 +21,7 @@ Ruõšš:Ruõ%{ʹØ%}šˈš
 
 * LEXICON PROP_FEDD  Fedd:Fẹ%^1VOWdd
 
+* LEXICON PROP_TOP_1E_VUQKK   päiʹǩǩ:pä%^1VOWi%{ʹØ%}kk
 * LEXICON PROP_1E_VUQCC   jäuʹrr:jä%^1VOWu%{ʹØ%}rr
 
 * LEXICON PROP_TOP_1E_VQKK  čåʹǩǩ:čå%^1VOW%{ʹØ%}kk
