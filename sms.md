@@ -5215,8 +5215,8 @@ Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-juvjj**
 * :%^V2VV%^VOWLower%^YXX2VX E-STEM_N_KUYLAZH ;  jooujaž
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) juvjj-
-* :%^Allegro%^PAL%^YXX2VX E-STEM-PX-ALLEGRO ;  (11) juʹj-
-* :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) juʹvjj Ess+Px..
+* :%^Allegro%^PAL%^YXX2VX%^PALK E-STEM-PX-ALLEGRO ;  (11) juʹj-
+* :%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) juʹvjj Ess+Px..
 
 * LEXICON N_JUQVJJ  juʹvjj:ju%^1VOW%{ʹØ%}v%{ʹØ%}jj
 N_1E_UQVCC
@@ -6683,7 +6683,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * : E-STEM_SG-ILL ;		       (3) Sg.Ill: pẹivva
 * :%^V2VV%^PAL%^YXX2YX%^PALK%>e SG-LOC ;	       (4) Sg.Loc: peeiʹvest
 * :%^V2VV%^PAL%^YXX2YX%^PALK SG-COM_IN ;	       (5) Sg.Com: peeiʹvin
-* :%^PAL%>e ESS/PAR ; 		   (6) Ess: peiʹvven
+* :%^PAL%^PALK%>e ESS/PAR ; 		   (6) Ess: peiʹvven
 * :%^V2VV%^PAL%^YXX2YX%^PALK E-STEM_PL-OBL ;  (8) Pl.Acc: peeiʹvid
 * :%^V2VV%^YXX2YX E-STEM_N_KUYLAZH ;  (9) Der/Dimin.N.Sg.Nom: pẹẹivaž
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) pẹivv-
@@ -6969,8 +6969,8 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 NumContLex="1.113"
 * Yaml: **N-chuaervv**
 * There are several stem types
-čuäʹrvv+N+Sg+Nom
-čuäʹrvv
+juäʹtǩǩ+N+Sg+Nom
+juäʹtǩǩ
 čuäʹrvv+N+Sg+Gen
 čuẹʼrv
 čuẹʼrv
@@ -6985,7 +6985,7 @@ NumContLex="1.113"
 čuäʹrvv+N+Der+Der/Dimin+N+Sg+Nom
 čuärvaž
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) čuärvv-
-* :%^PALẸ%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ;  (11) čuẹʹrv-
+* :%^PALẸ%^PAL%^YXX2YX%^PALK E-STEM-PX-ALLEGRO ;  (11) čuẹʹrv-
 čuäʹrvv+N+Ess+PxSg1
 (12) čuäʹrvvinan
 
