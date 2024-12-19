@@ -5869,6 +5869,11 @@ this deals with an extra piece of paradigm
 * Yaml: **N-veelpes**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
+* LEXICON N_2E_UY/EQYKES/0Z  kueʹtǩes:kuâ%{ʹØ%}tkkes
+* LEXICON NMN_2E_UY/EQYKES/0Z  vieʹlpes:ǩeâ%{ʹØ%}lppes
+* Yaml: **N-veelpes**
+* :%^RmVow VOONYS-STEM-PX ;  võnns-
+
 * LEXICON N_PUEAQRDES  čueʹcǩes:čuäckkes
 * LEXICON NMN_PUEAQRDES  čueʹcǩes:čuäckkes
 * Yaml: **N-chuaeckes**
