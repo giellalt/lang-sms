@@ -228,9 +228,9 @@ WORK HERE 2015-10-14 deverbals
 
 * LEXICON A_PRSPRC-VQCC-I  elstõʹtti:elstõ%^1VOWʹtti
 
-* LEXICON A_PRSPRC-VHYY-I  lahtti:la%^1VOWhtti
+* LEXICON A_PRSPRC-VHXX-I  lahtti:la%^1VOWhtti
 
-* LEXICON A_PRSPRC-VQHYY-I  puʹhtti:pu%^1VOWhtti
+* LEXICON A_PRSPRC-VQHXX-I  puʹhtti:pu%^1VOWhtti
 * LEXICON A_PRSPRC-VWCCC-I  kuõʹddi:kuõʹdˈdi
 
 * LEXICON A_PRSPRC-VWQCCC-I  kuõʹddi:kuõʹdˈdi
@@ -1885,7 +1885,7 @@ NumContLex="1.2"
 * sirddi:sirddi
 NumContLex="1.2"
 
-* LEXICON A-01_PRSPRC-VHYY-I  lahtti:la%^1VOWhtti
+* LEXICON A-01_PRSPRC-VHXX-I  lahtti:la%^1VOWhtti
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
@@ -1893,7 +1893,7 @@ NumContLex="1.2"
 * sirddi:sirddi
 NumContLex="1.2"
 
-* LEXICON A-01_PRSPRC-VQHYY-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
+* LEXICON A-01_PRSPRC-VQHXX-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti

@@ -460,9 +460,9 @@ WORK HERE 2015-10-14 deverbals
 
 * LEXICON A_PRSPRC-VQCC-I  elstõʹtti:elstõ%^1VOWʹtti
 
-* LEXICON A_PRSPRC-VHYY-I  lahtti:la%^1VOWhtti
+* LEXICON A_PRSPRC-VHXX-I  lahtti:la%^1VOWhtti
 
-* LEXICON A_PRSPRC-VQHYY-I  puʹhtti:pu%^1VOWhtti
+* LEXICON A_PRSPRC-VQHXX-I  puʹhtti:pu%^1VOWhtti
 * LEXICON A_PRSPRC-VWCCC-I  kuõʹddi:kuõʹdˈdi
 
 * LEXICON A_PRSPRC-VWQCCC-I  kuõʹddi:kuõʹdˈdi
@@ -2117,7 +2117,7 @@ NumContLex="1.2"
 * sirddi:sirddi
 NumContLex="1.2"
 
-* LEXICON A-01_PRSPRC-VHYY-I  lahtti:la%^1VOWhtti
+* LEXICON A-01_PRSPRC-VHXX-I  lahtti:la%^1VOWhtti
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
@@ -2125,7 +2125,7 @@ NumContLex="1.2"
 * sirddi:sirddi
 NumContLex="1.2"
 
-* LEXICON A-01_PRSPRC-VQHYY-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
+* LEXICON A-01_PRSPRC-VQHXX-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
@@ -6661,7 +6661,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^VV2V%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ;  (11) neiʹb 
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) neiʹbb Ess+Px..
 
-* LEXICON N_1E_EUQKK  peiʹvv:pẹ%^1VOWi%{ʹØ%}vv
+* LEXICON N_1E_EUQKK  teiʹǧǧ:tẹ%^1VOWi%{ʹØ%}gg
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
 e-stems (Sg.Loc, Ess, Par).
@@ -6677,12 +6677,12 @@ Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 ## FORMS
 * Yaml: **N-peivv**
-* :%^PAL%^PALK E-STEM_SG-NOM ;	     (1) Sg.Nom: peiʹvv
+* :%^PAL%^PALK E-STEM_SG-NOM ;	     (1) Sg.Nom: teiʹǧǧ
 * :%^V2VV%^PAL%^YXX2YX%^PALK E-STEM_SG-ABE/ACC/GEN ;  (2) Pl.Nom: peeiʼv
-* :%^V2VV%^PAL%^YXX2YX%^PALK PL-NOM ;  (2) Pl.Nom: peeiʼv
-* : E-STEM_SG-ILL ;		       (3) Sg.Ill: pẹivva
-* :%^V2VV%^PAL%^YXX2YX%^PALK%>e SG-LOC ;	       (4) Sg.Loc: peeiʹvest
-* :%^V2VV%^PAL%^YXX2YX%^PALK SG-COM_IN ;	       (5) Sg.Com: peeiʹvin
+* :%^V2VV%^PAL%^YXX2YX%^PALK PL-NOM ;  (2) Pl.Nom: teeiʼǧ
+* : E-STEM_SG-ILL ;		       (3) Sg.Ill: tẹigga
+* :%^V2VV%^PAL%^YXX2YX%^PALK%>e SG-LOC ;	       (4) Sg.Loc: teeiʹǧest
+* :%^V2VV%^PAL%^YXX2YX%^PALK SG-COM_IN ;	       (5) Sg.Com: teeiʹǧin
 * :%^PAL%^PALK%>e ESS/PAR ; 		   (6) Ess: peiʹvven
 * :%^V2VV%^PAL%^YXX2YX%^PALK E-STEM_PL-OBL ;  (8) Pl.Acc: peeiʹvid
 * :%^V2VV%^YXX2YX E-STEM_N_KUYLAZH ;  (9) Der/Dimin.N.Sg.Nom: pẹẹivaž
@@ -7035,9 +7035,9 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * :%^PAL%^PALK E-STEM-PX-STRENGTHEN-WITH-PAL ;			    (12) jeäʹǧˈǧ
 * +Use/NGminip+Use/NG:%^VOWRaise%^PALẸ%^PAL%^CCC2CC%^PALK E-STEM-PX-ALLEGRO ;   (2)
 
-* :%^VOWRaise%^PALẸ%^PAL%^CCC2CC PL-NOM ;   (2) jiẹʹǧǧ
-* :%^VOWRaise%^PALE%^PAL%^CCC2CC E-STEM_PL-OBL ;   (5) jieʹǧǧin
-* :%^PAL%>e ESS/PAR ;       (6) jeäʹǧˈǧen, (7) jeäʹǧˈǧed
+* :%^VOWRaise%^PALẸ%^PAL%^CCC2CC%^PALK PL-NOM ;   (2) jiẹʹǧǧ
+* :%^VOWRaise%^PALE%^PAL%^CCC2CC%^PALK E-STEM_PL-OBL ;   (5) jieʹǧǧin
+* :%^PAL%^PALK%>e ESS/PAR ;       (6) jeäʹǧˈǧen, (7) jeäʹǧˈǧed
 
 * LEXICON N_JEAQNNN  jeäʹnn:jeä%{ʹØ%}nˈn, vuäʹbb:vuä%{ʹØ%}bˈb
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
@@ -8177,8 +8177,8 @@ this deals with an extra piece of paradigm
 * Yaml: **N-veelpes**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_2E_UY/EQYKES/0Z  kueʹtǩes:kuâ%{ʹØ%}tkkes
-* LEXICON NMN_2E_UY/EQYKES/0Z  vieʹlpes:ǩeâ%{ʹØ%}lppes
+* LEXICON N_2E_UEAQYKES/0Z  kueʹtǩes:kuä%{ʹØ%}tkkes
+* LEXICON NMN_2E_UEAQYKES/0Z  kueʹtǩes:kuä%{ʹØ%}tkkes
 * Yaml: **N-veelpes**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
@@ -8740,9 +8740,9 @@ NumContLex="1.2"
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VQHYY-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
+* LEXICON N_PRSPRC-VQHXX-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
 inflection_type="?"
-* LEXICON NMN_PRSPRC-VQHYY-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
+* LEXICON NMN_PRSPRC-VQHXX-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
@@ -8751,8 +8751,19 @@ NumContLex="1.2"
 NumContLex="1.2"
 * :%^Pen%^PAL%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VHYY-I  lahtti:la%^1VOWhtti
-* LEXICON NMN_PRSPRC-VHYY-I  lahtti:la%^1VOWhtti
+* LEXICON N_PRSPRC-VQHKK-I  huʹvǧǧi:hu%^1VOW%{ʹØ%}v%{ʹØ%}ggi
+inflection_type="?"
+* LEXICON NMN_PRSPRC-VQHKK-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
+* Yaml: **lookk**
+* There are several stem types
+* äjjnõʹstti:äjjnõʹstti
+NumContLex="1.2"
+* sirddi:sirddi
+NumContLex="1.2"
+* :%^Pen%^PAL%^Pen%^PALK%^I2J VOONYS-STEM-PX ;  võnns-
+
+* LEXICON N_PRSPRC-VHXX-I  lahtti:la%^1VOWhtti
+* LEXICON NMN_PRSPRC-VHXX-I  lahtti:la%^1VOWhtti
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
