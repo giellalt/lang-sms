@@ -99,23 +99,23 @@ for f in $fsttype; do
 		# store it:
 # Generer lemmaer i adjectives med +A+Sg+Nom, lagre i generated-adjectives
         sed 's/$/+A+Sg+Nom/' $lemmas | $lookup_tool $generator_file.$suffix | \
-          cut -f2 | grep -v "A+" | grep -v "^$" | sort -u > $generated_lemmas.$f.txt		
+          cut -f2 | grep -v "A+" | grep -v "^$" | LC_ALL=C sort -u > $generated_lemmas.$f.txt		
 		
 # Generer lemmaer i adjectives med +A+Superl+Sg+Nom, lagre i generated-adjectives
         sed 's/$/+A+Der\/Superl+A+Sg+Nom/' $lemmas | $lookup_tool $generator_file.$suffix | \
-          cut -f2 | grep -v "A+" | grep -v "^$" | sort -u >> $generated_lemmas.$f.txt		
+          cut -f2 | grep -v "A+" | grep -v "^$" | LC_ALL=C sort -u >> $generated_lemmas.$f.txt		
 
 # Generer lemmaer i adjectives med +A+Comp+Sg+Nom, lagre i generated-adjectives
         sed 's/$/+A+Der\/Comp+A+Sg+Nom/' $lemmas | $lookup_tool $generator_file.$suffix | \
-          cut -f2 | grep -v "A+" | grep -v "^$" | sort -u >> $generated_lemmas.$f.txt		
+          cut -f2 | grep -v "A+" | grep -v "^$" | LC_ALL=C sort -u >> $generated_lemmas.$f.txt		
 
 # Generer lemmaer i adjectives med +A+Attr, lagre i generated-adjectives
         sed 's/$/+A+Attr/' $lemmas | $lookup_tool $generator_file.$suffix | \
-          cut -f2 | grep -v "A+" | grep -v "^$" | sort -u >> $generated_lemmas.$f.txt		
+          cut -f2 | grep -v "A+" | grep -v "^$" | LC_ALL=C sort -u >> $generated_lemmas.$f.txt		
 
 # Generer lemmaer i adjectives med +A+ABBR, lagre i generated-adjectives
         sed 's/$/+A+ABBR/' $lemmas | $lookup_tool $generator_file.$suffix | \
-          cut -f2 | grep -v "A+" | grep -v "^$" | sort -u >> $generated_lemmas.$f.txt		
+          cut -f2 | grep -v "A+" | grep -v "^$" | LC_ALL=C sort -u >> $generated_lemmas.$f.txt		
 
 # Generer plurale lemmaer i filtered-adjectives med +N+Pl+Nom (som ikke lar seg generere med +A+Sg+Nom).
 # Lagre dem i generated-adjectives
@@ -130,11 +130,11 @@ for f in $fsttype; do
 		# stored and opened in SEE:
 
 # Sorter, unifiser
-		sort -u -o $lemmas $lemmas 
-		sort -u -o $generated_lemmas.$f.txt $generated_lemmas.$f.txt 
+		LC_ALL=C sort -u -o $lemmas $lemmas 
+		LC_ALL=C sort -u -o $generated_lemmas.$f.txt $generated_lemmas.$f.txt 
 
         # Open the diff file in SubEthaEdit (if there is a diff):
-        LC_ALL=no_NO.UTF-8 comm -23 $lemmas $generated_lemmas.$f.txt > $result_file.$f.txt
+        LC_ALL=C comm -23 $lemmas $generated_lemmas.$f.txt > $result_file.$f.txt
 
         if [ -s $result_file.$f.txt ]; then
             grep -v '^$' $result_file.$f.txt \
