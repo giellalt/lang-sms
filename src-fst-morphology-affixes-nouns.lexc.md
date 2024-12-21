@@ -3922,8 +3922,8 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^V2VV%^PAL%^YXX2YX%^PALK SG-COM_IN ;      (5) Sg.Com: pääiʹǩin
 * +Use/NGminip+Use/NG:%^V2VV%^VOWRaise%^PAL%^YXX2YX%^PALK SG-COM_IN ;      (5) Sg.Com: paaiʹǩin
 * :%^PAL%^PALK%>e ESS/PAR ; 	        (6) Ess: päiʹǩǩen
-* :%^V2VV%^PAL%^YXX2YX%^PALK%> E-STEM_PL-OBL ;    (8) Pl.Acc: pääiʹǩid
-* +Use/NGminip+Use/NG:%^V2VV%^VOWRaise%^PAL%^YXX2YX%^PALK%> E-STEM_PL-OBL ;    (8) Pl.Acc: paaiʹǩid
+* :%^V2VV%^VOWRaise%^PAL%^YXX2YX%^PALK%> E-STEM_PL-OBL ;    (8) Pl.Acc: paaiʹǩid
+* +Err/Orth-vow-not-raised:%^V2VV%^PAL%^YXX2YX%^PALK%> E-STEM_PL-OBL ;    (8) Pl.Acc: pääiʹǩid
 * :%^V2VV%^YXX2YX E-STEM_N_KUYLAZH ;  (9) Der/Dimin.N.Sg.Nom: pääiǥaž
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) päikk-
 * :%^PAL%^YXX2YX%^PALK E-STEM-PX-ALLEGRO ;  (11) päiʹǩ-
