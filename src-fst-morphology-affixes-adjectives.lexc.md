@@ -66,6 +66,8 @@ CLASS 1 HIGH VOWEL, PALATALIZATION NOMINALS
 
 * LEXICON A_PUEQRR  pueʹrr:puâll
 
+* LEXICON A_1E_UY/EQYKK  mueʹrjj:mueʹrjj
+
 * LEXICON A_MUEQRJJ  mueʹrjj:mueʹrjj
 
 CLASS 1 LOW VOWEL, PALATALIZATION NOMINALS
@@ -107,9 +109,11 @@ cuẹʹǩǩ
 
 * LEXICON A_VUEQSS  pueʹšš:puâ%{ʹØ%}šš
 
+* LEXICON A_1E_VWQKKK  jeäʹnn:jeänˈn, jeäʹǧǧ:jeägˈg
+
 * LEXICON A_JEAQNNN  jeäʹnn:jeänˈn, jeäʹǧǧ:jeägˈg
 
-* LEXICON A_JEAQRMM  jeäʹrmm:jeärmm
+vowel: diphthong A_1E_VWQYXX
 
 * LEXICON A_CHUAQRVV  tuäʹŋǧǧ:tuäŋgg
 
@@ -975,6 +979,41 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^VOWRaise%^PALE%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ;  (11) mueʹrj-
 * :%^PALE%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) mueʹrjj Ess+Px..
 
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+## 1.3 Sg.Loc in -est (vowel shift)
+Raised: Sg.Com, Pl.Obl
+Lowered: ELSE
+e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+Palatalized: ELSE
+Not Palatalized: Sg.Ill
+## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+Strong grade: Sg.Nom, Ess, Par
+Strong grade: Sg.Ill
+Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+NumContLex="1.113"
+Is for nouns with *-est* Loc, Extra long vowel
+* Yaml: **N-muerjj**
+* :%^PALE%^PAL%^YXX2YX%^PALK DenominalAdjsCShort ; 
+* :%^PALE%^PAL%^PALK A-02_E-STEM_SG-NOM ;		  	 (1) Sg.Nom: mueʹrjj
+* :%^PALE%^PAL%^YXX2YX%^PALK A-02_E-STEM_SG-ABE/ACC/GEN ;	 (2) Pl.Nom: mueʹrj
+* :%^PALE%^PAL%^YXX2YX%^PALK A-02_PL-NOM ;	 (2) Pl.Nom: mueʹrj
+* : A-02_E-STEM_SG-ILL ;  		     	 (3) Sg.Nom: muârjja
+* :%^PALE%^PAL%^YXX2YX%^PALK%>e A-02_SG-LOC ;		 (4) Sg.Loc: mueʹrjest
+* :%^VOWRaise%^PAL%^YXX2YX%^PALK A-02_SG-COM_IN ;  (5) Sg.Com: muõʹrjin
+* +Use/NGminip+Use/NG:%^PALE%^PAL%^YXX2YX%^PALK A-02_SG-COM_IN ;  (5) Sg.Com:  mueʹrjin
+* :%^VOWRaise%^PAL%^YXX2YX%^PALK A-02_E-STEM_PL-OBL ;  (5) Sg.Com: muõʹrjin
+* +Use/NGminip+Use/NG:%^PALE%^PAL%^YXX2YX%^PALK A-02_E-STEM_PL-OBL ;  (5) Sg.Com:  mueʹrjin
+* :%^PALE%^PAL%^PALK%>e A-02_ESS/PAR ; 	 		   (6) Pl.Nom: mueʹrjjen
+* :%^YXX2YX A-02_E-STEM_N_KUYLAZH ;		   (9) Der/Dimin.N.Sg.Nom: muârjaž
+*  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) muârjj-
+* :%^VOWRaise%^PALE%^PAL%^YXX2YX%^PALK E-STEM-PX-ALLEGRO ;  (11) mueʹrj-
+* :%^PALE%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) mueʹrjj Ess+Px..
+
 CLASS 1 LOW VOWEL, PALATALIZATION, ILLATIVE IN U NOMINALS
 
 WORK NEEDED
@@ -1271,7 +1310,7 @@ NumContLex="1.113"
 
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) suäkk-
 * :%^VOWRaise%^PALẸ%^Allegro%^PAL%^KK2GAllegro E-STEM-PX-ALLEGRO ;  (11) suẹˈʹj-
-* :%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) suäʹǩˈǩ Ess+Px..
+* :%^PAL%^CC2CCC%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) suäʹǩˈǩ Ess+Px..
 
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
 ## 1.3 Sg.Loc in -est (vowel shift)
@@ -1401,6 +1440,39 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * :%^PAL E-STEM-PX-STRENGTHEN-WITH-PAL ;			    (12) jeäʹǧˈǧ
 * +Use/NGminip+Use/NG:%^VOWRaise%^PALẸ%^PAL%^CCC2CC E-STEM-PX-ALLEGRO ;   (2)
 
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
+## 1.3 Sg.Loc in -est (vowel shift)
+Raised: ELSE
+Lowered: Sg.Ill
+e-stems (Sg.Loc, Ess, Par).
+## 1.3.2 Sg.Ill vowel -a
+## 1.3.2.1 Has Palatalization
+Palatalized: ELSE
+Not Palatalized: Sg.Ill
+## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+## 1.3.2.1.1.1 Has Orthographic Gradation
+## 1.3.2.1.1.1[] (Diphthong + Consonant Geminate variation)
+Strong grade: Sg.Nom, Ess, Par
+Extra strong grade: Sg.Ill
+Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+* Yaml: **N-jeaggj**
+* There are several stem types 
+*  A-02_E-STEM_SG-ILL ;	      (3) jeägˈga
+* :%^PAL%^PALK A-02_E-STEM_SG-NOM ;        (1) jeäʹǧˈǧ
+* :%^VOWRaise%^PALẸ%^PAL%^CCC2CC%^PALK A-02_E-STEM_SG-ABE/ACC/GEN ;	  (2) jiẹʹǧǧ
+* :%^VOWRaise%^PALẸ%^PAL%^CCC2CC%^PALK A-02_PL-NOM ;	  (2) jiẹʹǧǧ
+* :%^VOWRaise%^PALẸ%^PAL%^CCC2CC%^PALK%>e A-02_SG-LOC ;   (4) jiẹʹǧǧest
+* :%^VOWRaise%^PALE%^PAL%^CCC2CC%^PALK A-02_SG-COM_IN ;   (5) jieʹǧǧin
+* :%^VOWRaise%^PALE%^PAL%^CCC2CC%^PALK A-02_E-STEM_PL-OBL ;   (5) jieʹǧǧin
+* :%^PAL%^PALK%>e A-02_ESS/PAR ; 	  (6) jeäʹǧˈǧen, (7) jeäʹǧˈǧed
+
+* :%^CCC2CC A-02_E-STEM_N_KUYLAZH ; 	      			  (9) jeäggaž
+*  E-STEM-PX-RETAIN-WITHOUT-PAL ;				  (10) jeägˈg-
+* :%^VOWRaise%^PALẸ%^Allegro%^PAL%^CCC2CAllegro%^PALK E-STEM-PX-ALLEGRO ;  (11) jiẹˈʹǧ-
+* :%^PAL%^PALK E-STEM-PX-STRENGTHEN-WITH-PAL ;			    (12) jeäʹǧˈǧ
+* +Use/NGminip+Use/NG:%^VOWRaise%^PALẸ%^PAL%^CCC2CC%^PALK E-STEM-PX-ALLEGRO ;   (2)
+
 * LEXICON A-02_E-STEM_SG-NOM  (1)
 
 * LEXICON A-02_E-STEM_SG-ABE/ACC/GEN  (2)
@@ -1429,8 +1501,8 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 * There are several stem types 
 * jeäʹrǧǧ:jeäʹrǧǧ
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) jeärgg-
-* :%^PALẸ%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ;  (11) jiẹʹrj-
-* :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) jeäʹrmm Ess+Px..
+* :%^PALẸ%^PAL%^YXX2YX%^PALK E-STEM-PX-ALLEGRO ;  (11) jiẹʹrj-
+* :%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) jeäʹrmm Ess+Px..
 
 WHAT IS THIS CLASS
 
