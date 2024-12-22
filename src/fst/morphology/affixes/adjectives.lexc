@@ -194,8 +194,13 @@ LEXICON A_PUEQRR !!= * @CODE@ pueʹrr:puâll
 !šiõǥǥ
 : A-01_KUEQLL ;
 
+LEXICON A_1E_UY/EQYKK !!= * @CODE@ mueʹrjj:mueʹrjj
+! vowel: diphthong cf. 1E_UY/EQYKK
+:%^PALE%^PAL%^YXX2YX%^PALK   A-ATTR_es ;
+: A-01_1E_UY/EQYKK ;
+
 LEXICON A_MUEQRJJ !!= * @CODE@ mueʹrjj:mueʹrjj
-! vowel: diphthong
+! vowel: diphthong cf. 1E_UY/EQYKK
 :%^PALE%^PAL%^YXX2YX   A-ATTR_es ;
 : A-01_MUEQRJJ ;
 
@@ -290,15 +295,26 @@ LEXICON A_VUEQSS !!= * @CODE@ pueʹšš:puâ%{ʹØ%}šš
 :%^VOWRaise%^PALE%^PAL%^KK2GG   A-ATTR_es ; ! pueʹžžes
 : A-01_VUEQSS ;
 
+LEXICON A_1E_VWQKKK !!= * @CODE@ jeäʹnn:jeänˈn, jeäʹǧǧ:jeägˈg
+! vowel: diphthong
+:%^VOWRaise%^PALẸ%^PAL%^CCC2CC%^PALK   A-ATTR_es ;
+: A-01_1E_VWQKKK ;
+
 LEXICON A_JEAQNNN !!= * @CODE@ jeäʹnn:jeänˈn, jeäʹǧǧ:jeägˈg
 ! vowel: diphthong
 :%^VOWRaise%^PALẸ%^PAL%^CCC2CC   A-ATTR_es ;
 : A-01_JEAQNNN ;
 
-LEXICON A_JEAQRMM !!= * @CODE@ jeäʹrmm:jeärmm
+
+LEXICON A_1E_VWQYKK
 ! vowel: diphthong
-:%^VOWRaise%^PALẸ%^PAL%^YXX2YX   A-ATTR_es ;
-: A-01_JEAQRMM ;
+:%^VOWRaise%^PALẸ%^PAL%^YXX2YX%^PALK   A-ATTR_es ;
+: A-01_1E_VWQYKK ;
+
+!LEXICON A_JEAQRMM !!= * @CODE@ jeäʹrmm:jeärmm
+!! vowel: diphthong A_1E_VWQYXX
+!:%^VOWRaise%^PALẸ%^PAL%^YXX2YX   A-ATTR_es ;
+!: A-01_JEAQRMM ;
 
 LEXICON A_CHUAQRVV !!= * @CODE@ tuäʹŋǧǧ:tuäŋgg
 ! vowel: diphthong
@@ -581,12 +597,12 @@ LEXICON A_PUUQTTES  !!= * @CODE@ puuʹttes:pu%^1VOWtt
 :%^V2VV%^PAL%>es A2N-VUOTT ;
 
 LEXICON A_KOAQSHKHES !!= * @CODE@ kååʹšǩes:kå%^1VOW%{ʹØ%}škk
-+Attr:%^PAL ENDLEX ;!kåʹšǩǩ
-!+Attr:%^PAL%^YXX2YX%>es ENDLEX ;2022-04-01
++Attr:%^PAL%^PALK ENDLEX ;!kåʹšǩǩ
+!+Attr:%^PAL%^YXX2YX%^PALK%>es ENDLEX ;2022-04-01
 :s ADJ-DER/COMP_kwlmmsab ;
 :s ADJ-DER/SUPERL_ummus ;
 :es A-01_KAAQRBES ;
-:%^PAL%^YXX2YX%>es A2N-VUOTT ;
+:%^PAL%^YXX2YX%^PALK%>es A2N-VUOTT ;
 
 LEXICON A_JYYQLDES !!= * @CODE@ jââʹldes:jâ%^1VOW%{ʹØ%}ldd
 +Attr:%^PAL%^YXX2YX%>es ENDLEX ;
@@ -4056,6 +4072,43 @@ LEXICON A-01_MUEQRJJ
 :%^VOWRaise%^PALE%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) mueʹrj-
 :%^PALE%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) mueʹrjj Ess+Px..
 
+LEXICON A-01_1E_UY/EQYKK
+! gradation: yes
+!! ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+!! ## 1.3 Sg.Loc in -est (vowel shift)
+!!  Raised: Sg.Com, Pl.Obl
+!!  Lowered: ELSE
+!!  e-stems (Sg.Loc, Ess, Par).
+!! ## 1.3.2 Sg.Ill vowel -a
+!! ## 1.3.2.1 Has Palatalization
+!!  Palatalized: ELSE
+!!  Not Palatalized: Sg.Ill
+!! ## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+!! ## 1.3.2.1.1.1 Has Orthographic Gradation
+!! ## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+!!  Strong grade: Sg.Nom, Ess, Par
+!!  Strong grade: Sg.Ill
+!!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+!! ## FORMS
+!! NumContLex="1.113"
+!! Is for nouns with *-est* Loc, Extra long vowel
+!! * Yaml: **N-muerjj**
+:%^PALE%^PAL%^YXX2YX%^PALK DenominalAdjsCShort ; !!= * @CODE@
+:%^PALE%^PAL%^PALK A-02_E-STEM_SG-NOM ;		  	!!= * @CODE@ (1) Sg.Nom: mueʹrjj
+:%^PALE%^PAL%^YXX2YX%^PALK A-02_E-STEM_SG-ABE/ACC/GEN ;	!!= * @CODE@ (2) Pl.Nom: mueʹrj
+:%^PALE%^PAL%^YXX2YX%^PALK A-02_PL-NOM ;	!!= * @CODE@ (2) Pl.Nom: mueʹrj
+: A-02_E-STEM_SG-ILL ;  		     	!!= * @CODE@ (3) Sg.Nom: muârjja
+:%^PALE%^PAL%^YXX2YX%^PALK%>e A-02_SG-LOC ;		!!= * @CODE@ (4) Sg.Loc: mueʹrjest
+:%^VOWRaise%^PAL%^YXX2YX%^PALK A-02_SG-COM_IN ; !!= * @CODE@ (5) Sg.Com: muõʹrjin
++Use/NGminip+Use/NG:%^PALE%^PAL%^YXX2YX%^PALK A-02_SG-COM_IN ; !!= * @CODE@ (5) Sg.Com:  mueʹrjin
+:%^VOWRaise%^PAL%^YXX2YX%^PALK A-02_E-STEM_PL-OBL ; !!= * @CODE@ (5) Sg.Com: muõʹrjin
++Use/NGminip+Use/NG:%^PALE%^PAL%^YXX2YX%^PALK A-02_E-STEM_PL-OBL ; !!= * @CODE@ (5) Sg.Com:  mueʹrjin
+:%^PALE%^PAL%^PALK%>e A-02_ESS/PAR ; 	 		  !!= * @CODE@ (6) Pl.Nom: mueʹrjjen
+:%^YXX2YX A-02_E-STEM_N_KUYLAZH ;		  !!= * @CODE@ (9) Der/Dimin.N.Sg.Nom: muârjaž
+ E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) muârjj-
+:%^VOWRaise%^PALE%^PAL%^YXX2YX%^PALK E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) mueʹrj-
+:%^PALE%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) mueʹrjj Ess+Px..
+
 
 !2016-12-05-NotUsed!LEXICON A-01_MAAIQLM
 !2016-12-05-NotUsed!! gradation: yes
@@ -4972,6 +5025,7 @@ LEXICON A-01_KHEQRJJ
 :%^V2VV%^YXX2YX A-02_E-STEM_N_KUYLAZH ;  !!= * @CODE@ (9) Der/Dimin.N.Sg.Nom: ǩeerjaž
 
 
+
 !2016-12-05-NotUsed!LEXICON A-01_TEQKSTT
 !2016-12-05-NotUsed!!! gradation: yes
 !2016-12-05-NotUsed!!! vowel_shift: no
@@ -5194,12 +5248,12 @@ LEXICON A-01_SUEAQKHKH
 !! NumContLex="1.113"
 !! * Yaml: **N-suekkj**
 !!
-:%^VOWRaise%^PALẸ%^PAL A-02_E-STEM_SG-NOM ;		  !!(1) Sg.Nom: suẹʹǩǩ
-:%^VOWRaise%^PALẸ%^PAL%^KK2GG A-02_E-STEM_SG-ABE/ACC/GEN ; !!(2) Pl.Nom: suẹʼjj
+:%^VOWRaise%^PALẸ%^PAL%^PALK A-02_E-STEM_SG-NOM ;		  !!(1) Sg.Nom: suẹʹǩǩ
+:%^VOWRaise%^PALẸ%^PAL%^KK2GG A-02_E-STEM_SG-ABE/ACC/GEN ; !!(2) Pl.Nom: suẹʼjj CHECK %^PALK need
 :%^VOWRaise%^PALẸ%^PAL%^KK2GG A-02_PL-NOM ; !!(2) Pl.Nom: suẹʼjj
 :%^CC2CCC A-02_E-STEM_SG-ILL ;	      !!(3) Sg.Ill: suäkˈka
 :%^VOWRaise%^PALẸ%^PAL%^KK2GG%>e A-02_SG-LOC ; !!(4) Sg.Loc: suẹʹjjest
-:%^VOWRaise%^PALẸ%^PAL%>e A-02_ESS/PAR ; !!(6) Ess: suẹʹǩǩen
+:%^VOWRaise%^PALẸ%^PAL%^PALK%>e A-02_ESS/PAR ; !!(6) Ess: suẹʹǩǩen
 !+Use/NGminip+Use/NG:%^VOWRaise%^PALẸ%^PAL%^KK2GG%>e A-02_PAR ; !!(7) Par: suẹʹjjed
 !2009: 204 +N:%^KK2GG%>e A-02_PAR ;
 
@@ -5208,7 +5262,7 @@ LEXICON A-01_SUEAQKHKH
 :%^KK2GG A-02_E-STEM_N_KUYLAZH ; !!(9) Der/Dimin.N.Sg.Nom: suäǥǥaž
  E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) suäkk-
 :%^VOWRaise%^PALẸ%^Allegro%^PAL%^KK2GAllegro E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) suẹˈʹj-
-:%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) suäʹǩˈǩ Ess+Px..
+:%^PAL%^CC2CCC%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) suäʹǩˈǩ Ess+Px..
 
 
 LEXICON A-01_KUEAQTT
@@ -5495,6 +5549,41 @@ LEXICON A-01_JEAQNNN
 :%^PAL E-STEM-PX-STRENGTHEN-WITH-PAL ;			   !!= * @CODE@ (12) jeäʹǧˈǧ
 +Use/NGminip+Use/NG:%^VOWRaise%^PALẸ%^PAL%^CCC2CC E-STEM-PX-ALLEGRO ;  !!= * @CODE@ (2)
 
+LEXICON A-01_1E_VWQKKK
+! gradation: yes
+!! ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
+!! ## 1.3 Sg.Loc in -est (vowel shift)
+!!  Raised: ELSE
+!!  Lowered: Sg.Ill
+!!  e-stems (Sg.Loc, Ess, Par).
+!! ## 1.3.2 Sg.Ill vowel -a
+!! ## 1.3.2.1 Has Palatalization
+!!  Palatalized: ELSE
+!!  Not Palatalized: Sg.Ill
+!! ## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+!! ## 1.3.2.1.1.1 Has Orthographic Gradation
+!! ## 1.3.2.1.1.1[] (Diphthong + Consonant Geminate variation)
+!!  Strong grade: Sg.Nom, Ess, Par
+!!  Extra strong grade: Sg.Ill
+!!  Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+!! ## FORMS
+!! * Yaml: **N-jeaggj**
+!! * There are several stem types 
+ A-02_E-STEM_SG-ILL ;	     !!= * @CODE@ (3) jeägˈga
+:%^PAL%^PALK A-02_E-STEM_SG-NOM ;       !!= * @CODE@ (1) jeäʹǧˈǧ
+:%^VOWRaise%^PALẸ%^PAL%^CCC2CC%^PALK A-02_E-STEM_SG-ABE/ACC/GEN ;	 !!= * @CODE@ (2) jiẹʹǧǧ
+:%^VOWRaise%^PALẸ%^PAL%^CCC2CC%^PALK A-02_PL-NOM ;	 !!= * @CODE@ (2) jiẹʹǧǧ
+:%^VOWRaise%^PALẸ%^PAL%^CCC2CC%^PALK%>e A-02_SG-LOC ;  !!= * @CODE@ (4) jiẹʹǧǧest
+:%^VOWRaise%^PALE%^PAL%^CCC2CC%^PALK A-02_SG-COM_IN ;  !!= * @CODE@ (5) jieʹǧǧin
+:%^VOWRaise%^PALE%^PAL%^CCC2CC%^PALK A-02_E-STEM_PL-OBL ;  !!= * @CODE@ (5) jieʹǧǧin
+:%^PAL%^PALK%>e A-02_ESS/PAR ; 	 !!= * @CODE@ (6) jeäʹǧˈǧen, (7) jeäʹǧˈǧed
+
+:%^CCC2CC A-02_E-STEM_N_KUYLAZH ; 	      			 !!= * @CODE@ (9) jeäggaž
+ E-STEM-PX-RETAIN-WITHOUT-PAL ;				 !!= * @CODE@ (10) jeägˈg-
+:%^VOWRaise%^PALẸ%^Allegro%^PAL%^CCC2CAllegro%^PALK E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) jiẹˈʹǧ-
+:%^PAL%^PALK E-STEM-PX-STRENGTHEN-WITH-PAL ;			   !!= * @CODE@ (12) jeäʹǧˈǧ
++Use/NGminip+Use/NG:%^VOWRaise%^PALẸ%^PAL%^CCC2CC%^PALK E-STEM-PX-ALLEGRO ;  !!= * @CODE@ (2)
+
 
 
 LEXICON A-02_E-STEM_SG-NOM !!= * @CODE@ (1)
@@ -5520,7 +5609,8 @@ LEXICON A-02_E-STEM_N_KUYLAZH !!= * @CODE@ (9)
 +Der+Der/Dimin+N: N_KUYLAZH ; !CHECKME for reduplication
  E-STEM-PX-WEAKEN-WITHOUT-PAL ;
 
-LEXICON A-01_JEAQRMM
+
+LEXICON A-01_1E_VWQYKK
 ! gradation: yes
 ! diphthong: yes
 ! consonant: cluster
@@ -5542,19 +5632,19 @@ LEXICON A-01_JEAQRMM
 !! * There are several stem types 
 !! * jeäʹrǧǧ:jeäʹrǧǧ
 :%^PALNo A-02_E-STEM_SG-ILL ; !!(3) Sg.Ill: jeärgga
-:%^VOWRaise%^PALẸ%^PAL%^YXX2YX DenominalAdjsCShort ;
-+Use/NGminip+Use/NGminip+Use/NG:%^VOWRaise%^PALẸ%^PAL R ;
-:%^PAL A-02_E-STEM_SG-NOM ; !!(1) Sg.Nom: jeäʹrǧǧ
-:%^VOWRaise%^PALẸ%^PAL%^YXX2YX A-02_E-STEM_SG-ABE/ACC/GEN ; !!(2) Pl.Nom: jiẹʹrj
-:%^VOWRaise%^PALẸ%^PAL%^YXX2YX A-02_PL-NOM ; !!(2) Pl.Nom: jiẹʹrj
-:%^VOWRaise%^PALẸ%^PAL%^YXX2YX%>e A-02_SG-LOC ; !!(4) Sg.Loc: jiẹʹrjest
-:%^VOWRaise%^PALE%^PAL%^YXX2YX A-02_SG-COM_IN ; !!(5) Sg.Com: jieʹrjin
-:%^PAL%>e A-02_ESS/PAR ; !!(6) Ess: jeäʹrǧǧen
-:%^VOWRaise%^PALE%^PAL%^YXX2YX A-02_E-STEM_PL-OBL ; !!(8) Pl.Acc: jieʹrjid
+:%^VOWRaise%^PALẸ%^PAL%^YXX2YX%^PALK DenominalAdjsCShort ;
++Use/NGminip+Use/NGminip+Use/NG:%^VOWRaise%^PALẸ%^PAL%^PALK R ;
+:%^PAL%^PALK A-02_E-STEM_SG-NOM ; !!(1) Sg.Nom: jeäʹrǧǧ
+:%^VOWRaise%^PALẸ%^PAL%^YXX2YX%^PALK A-02_E-STEM_SG-ABE/ACC/GEN ; !!(2) Pl.Nom: jiẹʹrj
+:%^VOWRaise%^PALẸ%^PAL%^YXX2YX%^PALK A-02_PL-NOM ; !!(2) Pl.Nom: jiẹʹrj
+:%^VOWRaise%^PALẸ%^PAL%^YXX2YX%^PALK%>e A-02_SG-LOC ; !!(4) Sg.Loc: jiẹʹrjest
+:%^VOWRaise%^PALE%^PAL%^YXX2YX%^PALK A-02_SG-COM_IN ; !!(5) Sg.Com: jieʹrjin
+:%^PAL%^PALK%>e A-02_ESS/PAR ; !!(6) Ess: jeäʹrǧǧen
+:%^VOWRaise%^PALE%^PAL%^YXX2YX%^PALK A-02_E-STEM_PL-OBL ; !!(8) Pl.Acc: jieʹrjid
 :%^YXX2YX A-02_E-STEM_N_KUYLAZH ; !!(9) Der/Dimin.N.Sg.Nom: jeärǥaž
  E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) jeärgg-
-:%^PALẸ%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) jiẹʹrj-
-:%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) jeäʹrmm Ess+Px..
+:%^PALẸ%^PAL%^YXX2YX%^PALK E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) jiẹʹrj-
+:%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) jeäʹrmm Ess+Px..
 
 
 
