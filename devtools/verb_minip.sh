@@ -12,7 +12,7 @@ GTLANGS=$(echo $GTLANGS)
 
 PATTERN=$1
 L_FILE="in.txt"
-cut -d '!' -f1 src/fst/morphology/stems/V_*.lexc | egrep $PATTERN | cut -d ':' -f1>$L_FILE
+cut -d '!' -f1 src/fst/morphology/stems/V_*.lexc src/fst/morphology/stems/verbs_newwords.lexc | egrep $PATTERN | cut -d ':' -f1>$L_FILE
 
 P_FILE="test/data/testverbparadigm.txt"
 
