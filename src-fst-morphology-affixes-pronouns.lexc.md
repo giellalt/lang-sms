@@ -10,6 +10,7 @@ The lexicon *PRON_*, which is actually not needed, as pronouns get +Pron tag ear
 * +Ill:iʹjjid	      K ;  miʹjjid, tiʹjjid, siʹjjid
 * +Loc:eeʹst	      K ;  meeʹst, teeʹst, seeʹst
 * +Com:ijvuiʹm     K ;  mijvuiʹm, tijvuiʹm, sijvuiʹm
+* +Com+Use/NGminip+Use/NG+Use/SpellNoSugg:iʹjjivuiʹm     K ;  miʹjjivuiʹm, tiʹjjivuiʹm, siʹjjivuiʹm
 * +Abe:ijtää	      K ;  mijtää, tijtää, sijtää
 * +Abe+Use/NGminip+Use/NG+Use/SpellNoSugg:iʹjjitää	K ;  miʹjjitää, tiʹjjitää, siʹjjitää
 
