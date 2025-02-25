@@ -13119,7 +13119,7 @@ possible triggers between vowel length and Palatalization
 
 `BetweenVowHeightAndConsGrade = [((%^PALE:\|%^PALÄ:\|%^PALẸ:\|%^PALÕ:) (%^Allegro:) %^PAL:\|(%^PALÂ:\](%^PALÕ:) (%^Allegro:) %^PALNo:)) ;`
 
-`BetweenStemAndRightArrow = [NeutrVowLenghtHeightDiphPalAllegroPAL BetweenPALNoAndMorphRightArrow] ;`
+`BetweenStemAndRightArrow = [NeutrVowLengthHeightDiphPalAllegroPAL BetweenPALNoAndMorphRightArrow] ;`
 
 ### Penultimate vowel centers possible triggers before VOWLower and VOWRaise
 
@@ -13996,7 +13996,7 @@ reeʹǧǧes+A+Sg+Nom: **rich/rikas**
 
 ### PALATALIZATION
 
-**%{ʹØ%}:ʹ as transfer from left of v:u and all instances of modifier letter prime** - used +Ind+Prs+Pl3, uʹvdded+V+Ind+Prs+Pl3: ouʹdde
+**{ʹØ}:ʹ as transfer from left of v:u and all instances of modifier letter prime** - used +Ind+Prs+Pl3, uʹvdded+V+Ind+Prs+Pl3: ouʹdde
 
 uʹvdded+V+Ind+Prs+Pl3: **give/antaa**
 * *u^1VOWv{ʹØ}dd^VOWLower^PAL^YXX2VXX>e*
