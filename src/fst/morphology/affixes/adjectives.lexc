@@ -223,6 +223,10 @@ LEXICON A_CHAAQCC !!= * @CODE@ čääʹcc:čää%{ʹØ%}cc
 :%^PAL%^KK2GG   A-ATTR_es ;
 : A-01_CHAAQCC ;
 
+LEXICON A_PYYQSS !!= * @CODE@ pââʹss:pââ%{ʹØ%}ss, attr = sg.nom.
+:%^PAL   A-ATTR_ ;
+: A-01_CHAAQCC ;
+
 LEXICON A_KAQLBB !!= * @CODE@ käʹlbb:kälbb 
 ! vowel: monophthong
 :%^V2VV%^PAL%^YXX2YX   A-ATTR_es ;
@@ -231,6 +235,11 @@ LEXICON A_KAQLBB !!= * @CODE@ käʹlbb:kälbb
 LEXICON A_1E_VQYKK !!= * @CODE@ âʹlǧǧ:â%^1VOW%{ʹØ%}lgg
 ! vowel: monophthong
 :%^V2VV%^PAL%^YXX2YX%^PALK   A-ATTR_es ;
+: A-01_1E_VQYKK ;
+
+LEXICON A_1E_BLEQTKK !!= * @CODE@ bleʹtǩǩ:blẹ%^1VOW%{ʹØ%}tkk, attr = sg.nom.
+! vowel: monophthong
+:%^PAL%^PALK   A-ATTR_ ;
 : A-01_1E_VQYKK ;
 
 LEXICON A_HAAQSKH !!= * @CODE@ hääʹsǩ:hää%{ʹØ%}sk
@@ -380,6 +389,12 @@ LEXICON A_KOALVAK
 :%^RmVow ADJ-DER/SUPERL_ummus ;
 : A-01_KOALVAK ;
 
+LEXICON A_FEERTAK ! like A_KOALVAK, but attr. = sg.nom.
+: A-ATTR_ ;
+:%^RmVow ADJ-DER/COMP_kwlmmsab ;
+:%^RmVow ADJ-DER/SUPERL_ummus ;
+: A-01_KOALVAK ;
+
 LEXICON A_AACCIKH
 +Attr:%^RmVow%^PALNo%>õs ENDLEX ;
 :%^RmVow%^PALNo%> ADJ-DER/COMP_kwlmmsab ;
@@ -407,6 +422,12 @@ LEXICON A_VOONYS !!= * @CODE@ võõnâs:võnn
 
 LEXICON A_OODHYS !!= * @CODE@ oođâs:ođđ
 +Attr: ENDLEX ;
+:s ADJ-DER/COMP_kwlmmsab ;
+:s ADJ-DER/SUPERL_ummus ;
+:âs A-01_VOONYS ;
+
+LEXICON A_RAAVYS !!= * @CODE@ raavâs:ra%^1VOW%{ʹØ%}vv, attr raʹvves
+:%^PAL A-ATTR_es ;
 :s ADJ-DER/COMP_kwlmmsab ;
 :s ADJ-DER/SUPERL_ummus ;
 :âs A-01_VOONYS ;
@@ -560,6 +581,12 @@ LEXICON A_CIYLKYLM !!= * @CODE@ kuâstalv:kuâ%{ˈ1%}stalv
 
 LEXICON A_KUQCCER !!= * @CODE@ kuʹccer:kuʹccer
 +Attr:%^RmVow%>es ENDLEX ; !only distinguishing form from AANAR
+:%^RmVow ADJ-DER/COMP_kwlmmsab ;
+:%^RmVow ADJ-DER/SUPERL_ummus ;
+: A-01_AANAR ;
+
+LEXICON A_SHUEQTTER !!= * @CODE@ like AANAR, but attr. = sg.nom.
+: A-ATTR_ ; !only distinguishing form from AANAR
 :%^RmVow ADJ-DER/COMP_kwlmmsab ;
 :%^RmVow ADJ-DER/SUPERL_ummus ;
 : A-01_AANAR ;
