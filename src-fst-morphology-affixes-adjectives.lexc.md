@@ -80,9 +80,13 @@ CLASS 1 LOW VOWEL, PALATALIZATION NOMINALS
 
 * LEXICON A_CHAAQCC  čääʹcc:čää%{ʹØ%}cc
 
+* LEXICON A_PYYQSS  pââʹss:pââ%{ʹØ%}ss, attr = sg.nom.
+
 * LEXICON A_KAQLBB  käʹlbb:kälbb 
 
 * LEXICON A_1E_VQYKK  âʹlǧǧ:â%^1VOW%{ʹØ%}lgg
+
+* LEXICON A_1E_BLEQTKK  bleʹtǩǩ:blẹ%^1VOW%{ʹØ%}tkk, attr = sg.nom.
 
 * LEXICON A_HAAQSKH  hääʹsǩ:hää%{ʹØ%}sk
 
@@ -141,6 +145,8 @@ CLASS
 
 * LEXICON A_OODHYS  oođâs:ođđ
 
+* LEXICON A_RAAVYS  raavâs:ra%^1VOW%{ʹØ%}vv, attr raʹvves
+
 * LEXICON A_KOODDYS  kõõddâs:kõdd
 * +Pl+Nom:%>âz ENDLEX ;  Check this 2015-02-22
 
@@ -185,6 +191,8 @@ CLASS
 * LEXICON A_CIYLKYLM  kuâstalv:kuâ%{ˈ1%}stalv
 
 * LEXICON A_KUQCCER  kuʹccer:kuʹccer
+
+* LEXICON A_SHUEQTTER  like AANAR, but attr. = sg.nom.
 
 * LEXICON A_KAAQMES   kääʹmes:kämm
 * :es A-01_OAQVES ;    kääʹmes:kämmez
@@ -1524,6 +1532,8 @@ N_GEN2I-ILLAX3-LOCEX3-NOM1X1
 
 * LEXICON A_KOSSI  kõssi:kõ%^1VOW%{ʹØ%}ss
 * LEXICON A-01_KOSSI  kõssi:kõ%^1VOW%{ʹØ%}ss
+
+* LEXICON A_WLLI  õlli+A:õ%^1VOW%{ʼØ%}ll
 
 * LEXICON A-01_MAADD  maadd:madd
 is for nouns with stem *i* + *-est* +Sg+Loc; all stem other than the +Sg+Nom are X3; the *i* does not occur in +Par 
