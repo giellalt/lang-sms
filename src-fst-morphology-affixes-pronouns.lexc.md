@@ -55,40 +55,52 @@ Completion needed 2015-09-19
 * +Interr: # ;
 
 * LEXICON Interrogative  is referred to from `pronouns.lexc`, hence assigns **+Pron** tag.
-* mii+Pron+Interr:m	MK ;  The Epsilon  inserted 2015-02-11
-* ǩii+Pron+Interr:ǩ	MK ;  The Epsilon  inserted 2015-02-11
+
+* LEXICON Indefinite 
+
+* LEXICON Distributive 
 
 * LEXICON MK 
 
-* LEXICON MK-long 
+* LEXICON MK-long  :mõõ :ǩeä
 
-* LEXICON MK-short 
+* LEXICON MK-short  :mõ :ǩeä
 
-* LEXICON MK-PL-short 
+* LEXICON M-low-short  :mâ
 
-* LEXICON MK-low 
+* LEXICON K-low-short  :ǩeä
+
+* LEXICON MK-low-short  :mâ :ǩeä
+
+* LEXICON MK-low-long  :mââ :ǩeä
 
 * LEXICON INDEF-MK 
 
 * LEXICON INDEF-MK-long 
 
+* LEXICON INDEF-MK-short  :mõ :ǩeä
+
+* LEXICON INDEF-M-low-short  :mâ
+
+* LEXICON INDEF-K-low-short  :ǩeä
+
 * LEXICON INDEF-MK-low-short 
 
-* LEXICON INDEF-MK-low 
+* LEXICON INDEF-MK-low-long 
 
 * LEXICON DISTR-MK 
 
 * LEXICON DISTR-MK-long 
 
+* LEXICON DISTR-MK-short  :mõ :ǩeä
+
+* LEXICON DISTR-M-low-short  :mâ
+
+* LEXICON DISTR-K-low-short  :ǩeä
+
 * LEXICON DISTR-MK-low-short 
 
-* LEXICON DISTR-MK-low 
-
-* LEXICON Relative 
-
-* LEXICON Indefinite 
-
-* LEXICON Distributive 
+* LEXICON DISTR-MK-low-long 
 
 ### SPATIAL PRONOUNS
 
