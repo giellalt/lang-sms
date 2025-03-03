@@ -739,6 +739,9 @@ riõkkâd+V+Ind+Prs+Sg3 **to whip**
 * *mâ0ʹnn000>e*
 * *mõõnn^VOWLower^CC2C>as*
 * *mâân000>as*
+võõidâd+V+Ind+Prs+Sg3:
+* *võõi{ʹØ}d^VOWLower*
+* *vââi0d0*
 
 vââid+N+Sg+Nom: ****
 * *võ^1VOWidd^V2VV^VOWLower^YXX2YX*
