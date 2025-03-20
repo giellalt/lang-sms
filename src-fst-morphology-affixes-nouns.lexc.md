@@ -5778,6 +5778,11 @@ N_2E_VVQCCES/Z
 * Yaml: **N-kaeaelles**
 * :%^RmVow VOONYS-STEM-PX ;  källs-
 
+stemtype n-stem jânnam:jânnam
+N_GEN2X3-NOM2X1
+* Yaml: **N-jânnam**
+* :%^RmVow VOONYS-STEM-PX ;  såbbr-
+
 * LEXICON N_OAQVES  ååʹves:å%^1VOW%{ʹØ%}vves
 N_2E_VVQCCES/Z
 * LEXICON NMN_OAQVES  ååʹves:å%^1VOWvves
