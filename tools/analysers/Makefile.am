@@ -14,7 +14,6 @@ GIELLA_ANL_MWEDIS_SRC=mwe-dis.cg3
 GIELLA_ANL_DISAMBIGUATOR_SRC=disambiguator.cg3
 GIELLA_ANL_FUNCTIONS_SRC=functions.cg3
 GIELLA_ANL_DEPENDENCY_SRC=dependency.cg3
-GIELLA_ANL_KORP_SRC=korp.cg3
 
 # If there are additional, language specific files used in the GC archive,
 # specify here:
