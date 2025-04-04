@@ -9031,13 +9031,13 @@ Diminutive derivations
 * +Use/NGminip+Use/NG: SG-COM_IN ;	     paaʹppin
 
 * :%>e PL-NOM ;	 paaʹppe
-* :%>e PL-OBL ;	     paaʹppei Merja differentiates from regular pl
-* +Use/NGminip+Use/NG: PL-OBL ;	     paaʹppi
+* +Use/NGminip+Use/NG:%>e PL-OBL ;	     paaʹppei Merja differentiates from regular pl
+*  PL-OBL ;	     paaʹppi
 
 * : SG-LOC-PX ;  muõʹrstes
 * :%>e PL-NOM ;    paaʹppe
-* :%>e PL-OBL ;        paaʹppei Merja differentiates from regular pl
-* +Use/NGminip+Use/NG: PL-OBL ;        paaʹppi
+* +Use/NGminip+Use/NG:%>e PL-OBL ;        paaʹppei Merja differentiates from regular pl
+*  PL-OBL ;        paaʹppi
 
 * LEXICON N_KUUZZYZH-WITHOUT-PAL  paapp-
 * :âž SG-NOM ;		 paappâž
@@ -9056,13 +9056,12 @@ Diminutive derivations
 * :%>e SG-COM_IN ;	     paaʹzzein
 * +Use/NGminip+Use/NG: SG-COM_IN ;	     paaʹzzin
 * :%>e PL-NOM ;	 paaʹzze
-* :%>e PL-OBL ;	     paaʹzzei Merja differentiates from regular pl
-* +Use/NGminip+Use/NG: PL-OBL ;	     paaʹzzi
+* +Use/NGminip+Use/NG:%>e PL-OBL ;	     paaʹzzei Merja differentiates from regular pl
+*  PL-OBL ;	     paaʹzzi
 * +Use/NGminip+Use/SpellNoSugg: SG-LOC-PX ;  kuuʹzzstes
 
 * : SG-LOC-PX_ALLEGRO ;  kuʹzstes
 
-* LEXICON N_SAEQMMLOOZHZHYZH  säʹmmlõõžžâž:säʹmmlõõžž
 * Yaml: **N-muorazh**
 
 * : HatY-STEM-PX-WEAKEN_LARGO ;  säʹmmlõõžž- Sg_Loc_PxSg1
@@ -9106,7 +9105,6 @@ kuâla, kuâlže
 * LEXICON N_JEAQKHKHKHAAZH  jeäʹǩǩääž:jeäʹǩˈǩ
 * Yaml: **N-jeakkeaeazh**
 
-* LEXICON N_VONNSAZH  võnnsaž:võnns
 * Yaml: **N-kualazh**
 
 * LEXICON NMN_JIQLSSI  Jiʹlssi:Jiʹlssi
@@ -14876,7 +14874,7 @@ symbols ?
 * **+Actor** 
 * **+Actio** 
 * **+ActEss** -men  
-* **+NomAg** CHECK ME 
+* **+NomAg** CHECK ME this is not the same as Der/NomAg, which is a derivation
 * **+Kin** Kin term This may need to be removed, let Sem/Hum-kin suffice 
 * **+Ind** Indicative mood 
 * **+Prs** Present 
@@ -14932,7 +14930,8 @@ just specify +Der|+Der1 .. +Der5 and you are set.
 * **+Der** 
 * **+Der/Ord** Num»A ordinal
 * **+Der/Car**  N»A -tem, -teʹmes 
-* **+Der/Dimin** diminutive derivation N»N was Der/Dim, 
+* **+Der/Dimin** diminutive derivation N»N was Der/Dim,
+* **+Dimin** diminutive without derivation 2025-04-04 jaska
 * **+Der/st**  V»V was diminutive subitive Der/sted, Der/âʹstted 
 * **+Der/ad** ordinals to nouns 
 * **+Der/i**  N»A luõss >> luõʹssi, čääʹcc >> čäccai 'rich in' Sg.Ill 

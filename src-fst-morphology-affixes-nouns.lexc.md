@@ -6641,13 +6641,13 @@ Diminutive derivations
 * +Use/NGminip+Use/NG: SG-COM_IN ;	     paaʹppin
 
 * :%>e PL-NOM ;	 paaʹppe
-* :%>e PL-OBL ;	     paaʹppei Merja differentiates from regular pl
-* +Use/NGminip+Use/NG: PL-OBL ;	     paaʹppi
+* +Use/NGminip+Use/NG:%>e PL-OBL ;	     paaʹppei Merja differentiates from regular pl
+*  PL-OBL ;	     paaʹppi
 
 * : SG-LOC-PX ;  muõʹrstes
 * :%>e PL-NOM ;    paaʹppe
-* :%>e PL-OBL ;        paaʹppei Merja differentiates from regular pl
-* +Use/NGminip+Use/NG: PL-OBL ;        paaʹppi
+* +Use/NGminip+Use/NG:%>e PL-OBL ;        paaʹppei Merja differentiates from regular pl
+*  PL-OBL ;        paaʹppi
 
 * LEXICON N_KUUZZYZH-WITHOUT-PAL  paapp-
 * :âž SG-NOM ;		 paappâž
@@ -6666,13 +6666,12 @@ Diminutive derivations
 * :%>e SG-COM_IN ;	     paaʹzzein
 * +Use/NGminip+Use/NG: SG-COM_IN ;	     paaʹzzin
 * :%>e PL-NOM ;	 paaʹzze
-* :%>e PL-OBL ;	     paaʹzzei Merja differentiates from regular pl
-* +Use/NGminip+Use/NG: PL-OBL ;	     paaʹzzi
+* +Use/NGminip+Use/NG:%>e PL-OBL ;	     paaʹzzei Merja differentiates from regular pl
+*  PL-OBL ;	     paaʹzzi
 * +Use/NGminip+Use/SpellNoSugg: SG-LOC-PX ;  kuuʹzzstes
 
 * : SG-LOC-PX_ALLEGRO ;  kuʹzstes
 
-* LEXICON N_SAEQMMLOOZHZHYZH  säʹmmlõõžžâž:säʹmmlõõžž
 * Yaml: **N-muorazh**
 
 * : HatY-STEM-PX-WEAKEN_LARGO ;  säʹmmlõõžž- Sg_Loc_PxSg1
@@ -6716,7 +6715,6 @@ kuâla, kuâlže
 * LEXICON N_JEAQKHKHKHAAZH  jeäʹǩǩääž:jeäʹǩˈǩ
 * Yaml: **N-jeakkeaeazh**
 
-* LEXICON N_VONNSAZH  võnnsaž:võnns
 * Yaml: **N-kualazh**
 
 * LEXICON NMN_JIQLSSI  Jiʹlssi:Jiʹlssi

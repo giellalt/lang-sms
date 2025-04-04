@@ -98,7 +98,7 @@ symbols ?
 * **+Actor** 
 * **+Actio** 
 * **+ActEss** -men  
-* **+NomAg** CHECK ME 
+* **+NomAg** CHECK ME this is not the same as Der/NomAg, which is a derivation
 * **+Kin** Kin term This may need to be removed, let Sem/Hum-kin suffice 
 * **+Ind** Indicative mood 
 * **+Prs** Present 
@@ -154,7 +154,8 @@ just specify +Der|+Der1 .. +Der5 and you are set.
 * **+Der** 
 * **+Der/Ord** Num»A ordinal
 * **+Der/Car**  N»A -tem, -teʹmes 
-* **+Der/Dimin** diminutive derivation N»N was Der/Dim, 
+* **+Der/Dimin** diminutive derivation N»N was Der/Dim,
+* **+Dimin** diminutive without derivation 2025-04-04 jaska
 * **+Der/st**  V»V was diminutive subitive Der/sted, Der/âʹstted 
 * **+Der/ad** ordinals to nouns 
 * **+Der/i**  N»A luõss >> luõʹssi, čääʹcc >> čäccai 'rich in' Sg.Ill 
