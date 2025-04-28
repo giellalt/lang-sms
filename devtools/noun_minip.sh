@@ -18,7 +18,7 @@ PATTERN=$1
 L_FILE="in.txt"
 cut -d '!' -f1 src/fst/morphology/stems/N_Kin_sms2x.lexc src/fst/morphology/stems/N_sms2x.lexc src/fst/morphology/stems/nouns_newwords.lexc|egrep $PATTERN | tr '+' ':'| cut -d ':' -f1>$L_FILE
 
-P_FILE="test/data/testnounparadigm.txt"
+P_FILE="src/fst/morphology/test/testnounparadigm.txt"
 
 for lemma in $(cat $L_FILE);
 do
