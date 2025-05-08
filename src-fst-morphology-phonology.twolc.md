@@ -76,17 +76,13 @@ Symbol pairs for vowel height, by default vowels are low:
 * __%{ẹei%}:ẹ__
 * __%{âõe%}:â__
 * __%{âõäe%}:â__
+* __%^1VOW:0__ - Vow dummy i^1VOW>ii, ẹ^1VOW>ẹẹ, a^1VOW>aa, å^1VOW>åå
 
 Trigger symbols:
 * __%^Pen:0__ - for combinations 2015-09-28 Miikka
 * __%^RmVow:0__ - for removing vowels e, â, a before final consonant in stem
 * __%^UltRmVow:0__ - for removing vowels e, â, a after final consonant in stem
 * __%^RmCns:0__ - for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta
-* __%^1VOW:0__ - Vow trigger
-* __%^2VOW:0__ - Vow trigger
-* __%^3VOW:0__ - Vow trigger
-* __%^4VOW:0__ - Vow trigger
-* __%^5VOW:0__ - Vow trigger
 * __%^VOWLower:0__ - i>e, õ>â, â>ä, u>o, o>å
 * __%^VOWRaise:0__ - e>i, ä>e
 * __%^U2Õ:0__ - lowers u>õ
@@ -159,8 +155,6 @@ Gradation triggers 2015.01.23
 Other vowel length and consonant length will be phased out
 * %^VOWXSH:0 Extra shortens vowel in relation to consonant
 * %^VOWXL:0 Extra lengthens vowel in relation to consonant in nouns, for example
-* %^CXLong:0 Lengthening
-* %^CLong:0 Lengthening
 * %^CShort:0 Shortening
 
 More triggers, possibly realised as a segment:
@@ -176,10 +170,9 @@ More triggers, possibly realised as a segment:
 * `%^IMPSG2:0`
 * `%^INDPRSSG3:0`
 * `%^PenVow2a:0` Changes penultimate vowel to a; e:a â:a
-* `%^FRICG:0`
 
 Hyphen at compound word boundary
-* `%^FRICG:0` Zero versus hyphen in compounding
+* `%^PenVow2a:0` Zero versus hyphen in compounding
 * `%^Hyphen:0` at compound word boundary with %-
 * `%^NoHyphen:0` at compound word boundary
 <!-- {% endraw %} -->
@@ -231,7 +224,7 @@ End of alphabet definitions
   %^KK2GG %^YXX2VX %^KKK2GG %^KKK2ZERO %^C2CC
   %^J2I %^Pen %^V2VV %^VOWLower %^RmVow
   %^PenVow2a %^RmCns %^VC %^V2VV
-  %^VOWRaise %^VOWSH %^CLong %^K2GG %> ; - triggers in Sg.Nom and Sg.Gen (Note word-final right arrow bracket 2024-01-10)
+  %^VOWRaise %^VOWSH %^K2GG %> ; - triggers in Sg.Nom and Sg.Gen (Note word-final right arrow bracket 2024-01-10)
 
 ## Definitions
 
@@ -251,7 +244,7 @@ following morpheme or word boundary
 ```
 <!-- {% endraw %} -->
 
-ossible triggers before VOWLower and VOWRaise
+possible triggers before VOWLower and VOWRaise
 
 neutral to vowel length
 
@@ -817,7 +810,7 @@ siõrrâd+V+Ind+Prs+Pl3: **play/leikkiä**
 
 ### RELATIVE VOWEL LENGTHENING
 
-vowel lengthening and consonant shortening, %^Pen: %^V2VV and %^CShort
+vowel lengthening and consonant shortening, %^Pen: %^V2VV 
 
 **Even syllabic verbs I, relative vowel lengthening %^1VOW:â** - deriving +V+Inf in TIETTED: uudd > uʹvdded
 šõddâd+V+Imprt+Sg3:

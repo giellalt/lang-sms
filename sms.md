@@ -12948,17 +12948,13 @@ Symbol pairs for vowel height, by default vowels are low:
 * __%{ẹei%}:ẹ__
 * __%{âõe%}:â__
 * __%{âõäe%}:â__
+* __%^1VOW:0__ - Vow dummy i^1VOW>ii, ẹ^1VOW>ẹẹ, a^1VOW>aa, å^1VOW>åå
 
 Trigger symbols:
 * __%^Pen:0__ - for combinations 2015-09-28 Miikka
 * __%^RmVow:0__ - for removing vowels e, â, a before final consonant in stem
 * __%^UltRmVow:0__ - for removing vowels e, â, a after final consonant in stem
 * __%^RmCns:0__ - for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta
-* __%^1VOW:0__ - Vow trigger
-* __%^2VOW:0__ - Vow trigger
-* __%^3VOW:0__ - Vow trigger
-* __%^4VOW:0__ - Vow trigger
-* __%^5VOW:0__ - Vow trigger
 * __%^VOWLower:0__ - i>e, õ>â, â>ä, u>o, o>å
 * __%^VOWRaise:0__ - e>i, ä>e
 * __%^U2Õ:0__ - lowers u>õ
@@ -13031,8 +13027,6 @@ Gradation triggers 2015.01.23
 Other vowel length and consonant length will be phased out
 * %^VOWXSH:0 Extra shortens vowel in relation to consonant
 * %^VOWXL:0 Extra lengthens vowel in relation to consonant in nouns, for example
-* %^CXLong:0 Lengthening
-* %^CLong:0 Lengthening
 * %^CShort:0 Shortening
 
 More triggers, possibly realised as a segment:
@@ -13048,10 +13042,9 @@ More triggers, possibly realised as a segment:
 * `%^IMPSG2:0`
 * `%^INDPRSSG3:0`
 * `%^PenVow2a:0` Changes penultimate vowel to a; e:a â:a
-* `%^FRICG:0`
 
 Hyphen at compound word boundary
-* `%^FRICG:0` Zero versus hyphen in compounding
+* `%^PenVow2a:0` Zero versus hyphen in compounding
 * `%^Hyphen:0` at compound word boundary with %-
 * `%^NoHyphen:0` at compound word boundary
 <!-- {% endraw %} -->
@@ -13103,7 +13096,7 @@ End of alphabet definitions
   %^KK2GG %^YXX2VX %^KKK2GG %^KKK2ZERO %^C2CC
   %^J2I %^Pen %^V2VV %^VOWLower %^RmVow
   %^PenVow2a %^RmCns %^VC %^V2VV
-  %^VOWRaise %^VOWSH %^CLong %^K2GG %> ; - triggers in Sg.Nom and Sg.Gen (Note word-final right arrow bracket 2024-01-10)
+  %^VOWRaise %^VOWSH %^K2GG %> ; - triggers in Sg.Nom and Sg.Gen (Note word-final right arrow bracket 2024-01-10)
 
 ## Definitions
 
@@ -13123,7 +13116,7 @@ following morpheme or word boundary
 ```
 <!-- {% endraw %} -->
 
-ossible triggers before VOWLower and VOWRaise
+possible triggers before VOWLower and VOWRaise
 
 neutral to vowel length
 
@@ -13689,7 +13682,7 @@ siõrrâd+V+Ind+Prs+Pl3: **play/leikkiä**
 
 ### RELATIVE VOWEL LENGTHENING
 
-vowel lengthening and consonant shortening, %^Pen: %^V2VV and %^CShort
+vowel lengthening and consonant shortening, %^Pen: %^V2VV 
 
 **Even syllabic verbs I, relative vowel lengthening %^1VOW:â** - deriving +V+Inf in TIETTED: uudd > uʹvdded
 šõddâd+V+Imprt+Sg3:
@@ -15397,12 +15390,6 @@ These symbol govern the way the morphophonological rules treat the affix string.
 This project started out using arbitrary names, X1, X2..., but since they were 
 hard to remember, we changed to (a bit) more transparent names (^DIADEL, ...). 
 On the TODO-list: Change all X1, X2, ... to easy-to-remember names. 
-Special iterations 
-
-* **%^a2 %^ä2 %^å2 %^â2 %^e2 %^ẹ2 %^o2 %^õ2 %^i2 %^u2** 
-* **%^b2 %^c2 %^č2 %^ʒ2 %^ǯ2 %^d2 %^đ2 %^f2 %^ǧ2 %^h2 %^j2** 
-* **%^ǩ2 %^l2 %^m2 %^n2 %^p2 %^r2 %^s2 %^š2 %^t2 %^v2 %^z2** 
-* **%^ž2** 
 
 ## Consonant lengthening 
 * **%{XC%}** 
@@ -15479,21 +15466,10 @@ Gradation triggers 2015.02.09 For   Consonant Clusters
 ### Diacritic with mnemonic names 
 
 <!-- {% raw %} -->
-* **%^1VOW** vowel position and length 
-* **%^2VOW** 
-* **%^3VOW** 
-* **%^4VOW** 
-* **%^5VOW** 
-* **%^CLong** 
-* **%^CShort** 
-* **%^CXLong** 
-* **%^DIADEL** deleting diacritic 
-* **%^DIAINS** inserting diacritic 
-* **%^FRICG** for causing fricative ǥ vueʹlǧǧed+V+Imp+Pl3: vuâlǥǥaz 
+* **%^1VOW** vowel lengthening dummy 
 * **%^IMPSG2** 
 * **%^INDPRSSG3** 
 * **%^PenVow2a** Changes penultimate vowel to a; e:a â:a 
-* **%^P3** ... means what? 
 * **%^PAL** for placing palatalization mark **ʹ** 
 * **%^PALK** causes k:ǩ and g:ǧ 
 * **%^PALNo** This is to facilitate +Sg+Nom lemma:stem equivalence; it removes palatal supersegmental 
@@ -15511,7 +15487,6 @@ Gradation triggers 2015.02.09 For   Consonant Clusters
 * **%^VOWLower** for lowering i>e, õ>â, â>ä, u>o, o>å 
 * **%^U2Õ** lowers u>õ    
 * **%^VOWRaise** for raising e>i, ä>e 
-* **%^VOWL** for lengthening BEING PHASED OUT 
 * **%^VOWXSH** for extra shortening 
 * **%^VOWXL** for extralengthening 
 * **%^Â** Indicates placement of â in stem 

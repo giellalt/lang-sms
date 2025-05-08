@@ -621,12 +621,6 @@ These symbol govern the way the morphophonological rules treat the affix string.
 This project started out using arbitrary names, X1, X2..., but since they were 
 hard to remember, we changed to (a bit) more transparent names (^DIADEL, ...). 
 On the TODO-list: Change all X1, X2, ... to easy-to-remember names. 
-Special iterations 
-
-* **%^a2 %^ä2 %^å2 %^â2 %^e2 %^ẹ2 %^o2 %^õ2 %^i2 %^u2** 
-* **%^b2 %^c2 %^č2 %^ʒ2 %^ǯ2 %^d2 %^đ2 %^f2 %^ǧ2 %^h2 %^j2** 
-* **%^ǩ2 %^l2 %^m2 %^n2 %^p2 %^r2 %^s2 %^š2 %^t2 %^v2 %^z2** 
-* **%^ž2** 
 
 ## Consonant lengthening 
 * **%{XC%}** 
@@ -703,21 +697,10 @@ Gradation triggers 2015.02.09 For   Consonant Clusters
 ### Diacritic with mnemonic names 
 
 <!-- {% raw %} -->
-* **%^1VOW** vowel position and length 
-* **%^2VOW** 
-* **%^3VOW** 
-* **%^4VOW** 
-* **%^5VOW** 
-* **%^CLong** 
-* **%^CShort** 
-* **%^CXLong** 
-* **%^DIADEL** deleting diacritic 
-* **%^DIAINS** inserting diacritic 
-* **%^FRICG** for causing fricative ǥ vueʹlǧǧed+V+Imp+Pl3: vuâlǥǥaz 
+* **%^1VOW** vowel lengthening dummy 
 * **%^IMPSG2** 
 * **%^INDPRSSG3** 
 * **%^PenVow2a** Changes penultimate vowel to a; e:a â:a 
-* **%^P3** ... means what? 
 * **%^PAL** for placing palatalization mark **ʹ** 
 * **%^PALK** causes k:ǩ and g:ǧ 
 * **%^PALNo** This is to facilitate +Sg+Nom lemma:stem equivalence; it removes palatal supersegmental 
@@ -735,7 +718,6 @@ Gradation triggers 2015.02.09 For   Consonant Clusters
 * **%^VOWLower** for lowering i>e, õ>â, â>ä, u>o, o>å 
 * **%^U2Õ** lowers u>õ    
 * **%^VOWRaise** for raising e>i, ä>e 
-* **%^VOWL** for lengthening BEING PHASED OUT 
 * **%^VOWXSH** for extra shortening 
 * **%^VOWXL** for extralengthening 
 * **%^Â** Indicates placement of â in stem 
