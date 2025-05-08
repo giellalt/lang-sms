@@ -91,6 +91,7 @@ Alphabet !!≈ ## @CODE@
 %{ẹei%}:ẹ    !!≈ * __@CODE@__
 %{âõe%}:â    !!≈ * __@CODE@__
 %{âõäe%}:â   !!≈ * __@CODE@__
+ %^1VOW:0     !!≈ * __@CODE@__ - Vow dummy i^1VOW>ii, ẹ^1VOW>ẹẹ, a^1VOW>aa, å^1VOW>åå
 
 !! Trigger symbols:
  %^Pen:0      !!≈ * __@CODE@__ - for combinations 2015-09-28 Miikka
@@ -98,11 +99,6 @@ Alphabet !!≈ ## @CODE@
  %^UltRmVow:0 !!≈ * __@CODE@__ - for removing vowels e, â, a after final consonant in stem
 !%^PenRmVow:0 ! ≈ * __@CODE@__ - for removing penultimate vowels e, â, a, i.e. vowel befor final stem consonant/consonants
  %^RmCns:0    !!≈ * __@CODE@__ - for removing stem final consonant, e.g. final z in ǩeeʹstes:ǩeâsttez ǩeâstta
- %^1VOW:0     !!≈ * __@CODE@__ - Vow trigger
- %^2VOW:0     !!≈ * __@CODE@__ - Vow trigger
- %^3VOW:0     !!≈ * __@CODE@__ - Vow trigger
- %^4VOW:0     !!≈ * __@CODE@__ - Vow trigger
- %^5VOW:0     !!≈ * __@CODE@__ - Vow trigger
  %^VOWLower:0 !!≈ * __@CODE@__ - i>e, õ>â, â>ä, u>o, o>å
  %^VOWRaise:0 !!≈ * __@CODE@__ - e>i, ä>e
  %^U2Õ:0      !!≈ * __@CODE@__ - lowers u>õ
@@ -175,8 +171,6 @@ Alphabet !!≈ ## @CODE@
 !! Other vowel length and consonant length will be phased out
  %^VOWXSH:0      !!≈ * @CODE@ Extra shortens vowel in relation to consonant
  %^VOWXL:0       !!≈ * @CODE@ Extra lengthens vowel in relation to consonant in nouns, for example
- %^CXLong:0      !!≈ * @CODE@ Lengthening
- %^CLong:0       !!≈ * @CODE@ Lengthening
  %^CShort:0      !!≈ * @CODE@ Shortening
 
 !! More triggers, possibly realised as a segment:
@@ -195,7 +189,6 @@ Alphabet !!≈ ## @CODE@
  %^IMPSG2:0    !!≈ * `@CODE@`
  %^INDPRSSG3:0 !!≈ * `@CODE@`
  %^PenVow2a:0  !!≈ * `@CODE@` Changes penultimate vowel to a; e:a â:a
- %^FRICG:0     !!≈ * `@CODE@`
 
 !! Hyphen at compound word boundary
 %{%-Ø%}:0    !!  * `@CODE@` Zero versus hyphen in compounding
@@ -255,7 +248,7 @@ Dummy = %^PAL %^PALE %^PALẸ %^PALÕ %^PALÄ %^PALK       !!≈ * @CODE@
  %^KK2GG %^YXX2VX %^KKK2GG %^KKK2ZERO %^C2CC    !!≈   @CODE@
  %^J2I %^Pen %^V2VV %^VOWLower %^RmVow          !!≈   @CODE@
  %^PenVow2a %^RmCns %^VC %^V2VV                 !!≈   @CODE@
- %^VOWRaise %^VOWSH %^CLong %^K2GG %> ;            !!≈   @CODE@ - triggers in Sg.Nom and Sg.Gen (Note word-final right arrow bracket 2024-01-10)
+ %^VOWRaise %^VOWSH %^K2GG %> ;            !!≈   @CODE@ - triggers in Sg.Nom and Sg.Gen (Note word-final right arrow bracket 2024-01-10)
 
 
 
@@ -283,7 +276,7 @@ RBound = [(%^Hyphen: %-|%^NoHyphen:|%{%-Ø%}:) (∑) #:|.#.|%>|»|%-] ; !!≈ * 
 !! ```
 !! <!-- {% endraw %} -->
 
-!! ossible triggers before VOWLower and VOWRaise
+!! possible triggers before VOWLower and VOWRaise
 
 
 
@@ -1226,7 +1219,7 @@ OnSetC u: _   (ʹ:|%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ:|:ˈ) Cns:+|r d d:]  %^
 
 !! ### RELATIVE VOWEL LENGTHENING
 
-!! vowel lengthening and consonant shortening, %^Pen: %^V2VV and %^CShort
+!! vowel lengthening and consonant shortening, %^Pen: %^V2VV 
 
 "Even syllabic verbs I, relative vowel lengthening %^1VOW:â"
 !! **@RULENAME@** - deriving +V+Inf in TIETTED: uudd > uʹvdded
