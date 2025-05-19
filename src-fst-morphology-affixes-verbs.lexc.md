@@ -3244,6 +3244,12 @@ gradation: no
 * LEXICON IV_KAQRJSTED  käʹrjsted:kääʹrjest
 * LEXICON V0_KAQRJSTED  käʹrjsted:kääʹrjest
 
+* LEXICON V_PIEQCKHSTED  ǩeeʹrjted:ǩeeʹrjet
+* LEXICON V0_PIEQCKHSTED  ǩeeʹrjted:ǩeeʹrjet
+
+* LEXICON V_TUAEQRJSTED  tuäʹrjsted:tuäʹrjest
+* LEXICON V0_TUAEQRJSTED  tuäʹrjsted:tuäʹrjest
+
 ### CLASS 3 HIGH VOWEL, NO PALATALIZATION
 
 ### CLASS 3 LOW VOWEL, NO PALATALIZATION
