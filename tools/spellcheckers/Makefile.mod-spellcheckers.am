@@ -12,15 +12,11 @@
 
 generator-speller-gt-norm.%: .generated/generator-speller-gt-norm.tmp.% \
 				$(top_builddir)/src/fst/filters/remove-letter-dot-below.%   \
-				$(top_builddir)/src/fst/filters/replace-iterated-consonant-with-palatal-and-consonant.%   \
-				$(top_builddir)/src/fst/filters/replace-vowel-iteration-with-length-for-norm.%   \
 				$(top_builddir)/src/fst/filters/remove-modifier-letter-vertical-line.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex                                    \
 			@\"$<\"                                                          \
 		.o. @\"$(top_builddir)/src/fst/filters/remove-modifier-letter-vertical-line.$*\" \
 		.o. @\"$(top_builddir)/src/fst/filters/remove-letter-dot-below.$*\"   \
-		.o. @\"$(top_builddir)/src/fst/filters/replace-iterated-consonant-with-palatal-and-consonant.$*\"   \
-		.o. @\"$(top_builddir)/src/fst/filters/replace-vowel-iteration-with-length-for-norm.$*\"   \
 			;\n\
 		 $(INVERT_XFST)$(INVERT_FOMA)\
 		save stack $@\n\
@@ -28,15 +24,11 @@ generator-speller-gt-norm.%: .generated/generator-speller-gt-norm.tmp.% \
 
 analyser-speller-gt-norm.%: .generated/generator-speller-gt-norm.tmp.% \
 				$(top_builddir)/src/fst/filters/remove-letter-dot-below.%   \
-				$(top_builddir)/src/fst/filters/replace-iterated-consonant-with-palatal-and-consonant.%   \
-				$(top_builddir)/src/fst/filters/replace-vowel-iteration-with-length-for-norm.%   \
 				$(top_builddir)/src/fst/filters/remove-modifier-letter-vertical-line.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex                                    \
 			@\"$<\"                                                          \
 		.o. @\"$(top_builddir)/src/fst/filters/remove-modifier-letter-vertical-line.$*\" \
 		.o. @\"$(top_builddir)/src/fst/filters/remove-letter-dot-below.$*\"   \
-		.o. @\"$(top_builddir)/src/fst/filters/replace-iterated-consonant-with-palatal-and-consonant.$*\"   \
-		.o. @\"$(top_builddir)/src/fst/filters/replace-vowel-iteration-with-length-for-norm.$*\"   \
 			;\n\
 		$(INVERT_HFST)\
 		save stack $@\n\
