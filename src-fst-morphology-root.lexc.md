@@ -219,6 +219,7 @@ get the same pronunciation whether read as SME or NOB/NNO/SWE.
 * **+OLang/SMA** - South Sámi 
 * **+OLang/SMN** - Inari Sámi 
 * **+OLang/SMS** - Skolt Sámi 
+* **+OLang/HUN** - Hungarian
 * **+OLang/RUS** - Russian 
 * **+OLang/FIN** - Finnish 
 * **+OLang/SWE** - Swedish 
