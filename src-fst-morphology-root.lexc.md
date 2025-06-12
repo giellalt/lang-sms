@@ -111,8 +111,8 @@ symbols ?
 * **+Inf** 
 * **+Ger** gerund +Ess, +Loc +Instr 
 * **+Instr** -eeʹl 
-* **+ConNeg** 
-* **+ConNegII** 
+* **+ConNeg** Negation Form, i.e. mõõn, reäǥǥ, jueʹjj: Indicative present except indef person; imperative Sg2 and Pl2
+* **+ConNegII** Negation Form II: mõnnu, riâkˈku, juõkˈku: Indicative present indef person; imperative Sg3, Pl1, Pl2, Pl3 (there is an overlap at +Impert+Pl2)
 * **+Neg** 
 * **+PrsPrc** 
 * **+PrfPrc** 
