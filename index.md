@@ -21,7 +21,13 @@ Skolt Sami Language. In: * Proceedings of the 1st Joint SLTU
 and CCURL Workshop* (SLTU-CCURL 2020). Beermann, D., Besacier, L.,
 Sakti, S. & Soria, C. (eds.). Paris: European Language Resources
 Association (ELRA), p. 250-257 8 p.
-
+- Rueter, J. & Hämäläinen, M., 2020: *Skolt Sami, the makings of a
+  pluricentric language, where does it stand?* European Pluricentric
+  Languages in Contact and Conflict . Muhr, R., Mas Castells, J. A. &
+  Rueter, J. (eds.). Bern: Peter Lang, p. 201-208 8
+  p. 12. (Österreichisches Deutsch – Sprache der Gegenwart; no. 21).
+  
+  
 ### Testing
 
 - [Koeparadigmat oikolukua varten](KaikkiGeneroidutParadigmat.md)
