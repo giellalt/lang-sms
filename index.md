@@ -14,6 +14,14 @@ Contributors to the Skolt Sami language model have been Jack Rueter, Eino Kopone
 
 ## Project documentation
 
+### Publications
+
+- Rueter, J. & Hämäläinen, M., 2020; FST Morphology for the Endangered
+Skolt Sami Language. In: * Proceedings of the 1st Joint SLTU
+and CCURL Workshop* (SLTU-CCURL 2020). Beermann, D., Besacier, L.,
+Sakti, S. & Soria, C. (eds.). Paris: European Language Resources
+Association (ELRA), p. 250-257 8 p.
+
 ### Testing
 
 - [Koeparadigmat oikolukua varten](KaikkiGeneroidutParadigmat.md)
