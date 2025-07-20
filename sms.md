@@ -11531,6 +11531,7 @@ Imprt+Pl3
 (12) Weak-RaisedVowel-NoPalatalization
 * :%^V2VV%^VOWRaise VSUF-CHED_ED ;   (12) +Der+Der/ched: solõõtt-
 
+tag errors outside of XML
 * LEXICON V_1E_VQCC  käʹtted:kätt
 * LEXICON IV_1E_VQCC  käʹtted:kätt
 * LEXICON TV_1E_VQCC  käʹtted:kätt
@@ -12752,6 +12753,7 @@ gradation: no
 * LEXICON IV_NJAQMMSHED  njâʹmmšed:njâʹmmeš
 * LEXICON V0_NJAQMMSHED  njâʹmmšed:njâʹmmeš
 
+tag errors outside of XML
 * LEXICON V_KOAQMRDED  kåʹmrded:kååʹmmerd
 * LEXICON IV_KOAQMRDED  kåʹmrded:kååʹmmerd
 * LEXICON TV_KOAQMRDED  kåʹmrded:kååʹmmerd
