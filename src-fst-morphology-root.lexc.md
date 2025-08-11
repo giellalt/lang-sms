@@ -583,7 +583,7 @@ an extra lemma attribute is inserted in the st element, e.g. lemma="tõlvvad"
 * **+CLBfinal** = Sentence final abbreviated expression ending in full stop, the full stop is ambiguous
 * **+PUNCT** = punctuation 
 * **+LEFT** = left paranthesis 
-* **+RIGHT** = right paranthesis 
+* **+RIGHT +MIDDLE** = right paranthesis 
 * **+Prefix** = prefix 
 * **+Dyn** = Dynamically generated (acronyms) 
 * **^GUESSNOUNROOT** 
