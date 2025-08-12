@@ -311,13 +311,13 @@ HatY-STEM-PX-RETAIN ;
 :%^YXX2YX SG-LOC-PX_ALLEGRO ;
 : HatY-STEM-PX-STRENGTHEN ;
 
-LEXICON N_1Y_VYKK-PL !!= * @CODE@ põõrt:põrtt
+LEXICON N_1Y_VYKK-PL !!= * @CODE@ aalǥ:algg
 +Cmp/SgNom: R ;                           !!= * @CODE@ põrtt
 :%^V2VV%^YXX2YX PL-NOM ;                !!= * @CODE@ põõrt
 :%>â ESS/PAR ;                                  !!= * @CODE@ põrttân
 :%^V2VV%^YXX2YX PL-OBL ;                        !!= * @CODE@ põõrti
 
-LEXICON N_ALGG-PL !!= * @CODE@ põõrt:põrtt
+LEXICON N_1Y_VYXX-PL !!= * @CODE@ põõrt:põrtt
 +Cmp/SgNom: R ;                           !!= * @CODE@ põrtt
 :%^V2VV%^YXX2YX PL-NOM ;                !!= * @CODE@ põõrt
 :%>â ESS/PAR ;                                  !!= * @CODE@ põrttân
@@ -2854,11 +2854,15 @@ LEXICON NMN_KOAHTT
 
 !! CLASS 1 LOW VOWEL, DIPHTHONG, NO PALATALIZATION NOMINALS
 
+LEXICON N_1A_VWYKK !!= * @CODE@ teâlkk:teâlkk
+: NMN_1A_VWYKK ;
 LEXICON N_TEYLKK !!= * @CODE@ teâlkk:teâlkk
 !!! inflection_type="?"
-!! N_1A_VWXYY
-: NMN_TEYLKK ;
-LEXICON NMN_TEYLKK
+!! compare N_1A_VWYXX
+: NMN_1A_VWYKK ;
+!LEXICON NMN_TEYLKK
+! NMN_1A_VWYKK ;
+LEXICON NMN_1A_VWYKK !!= * @CODE@ teâlkk:teâlkk
 !! Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_xyy
 ! foot: 2syll
 ! diphthong: no
@@ -10551,7 +10555,6 @@ LEXICON NMN_VUEAEQDDES !!= * @CODE@ vuẹʹddes:vuädˈdes
 :%^RmVow PL-OBL ;					! vuädˈdsi
 :%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
-
 LEXICON N_SAQPPLI !!= * @CODE@ säʹppli:säʹppl
 !!! inflection_type="3"
 : NMN_SAQPPLI ;
@@ -10963,8 +10966,10 @@ LEXICON NMN_MERJA
 
 LEXICON N_TRUUBA
 !!! inflection_type="?"
-: NMN_TRUUBA ;
+: NMN_IN_A ;
 LEXICON NMN_TRUUBA
+ NMN_IN_A ;
+LEXICON NMN_IN_A !! for nominals ending in single vowel that is -a, Liettua, but not -ia
 ! truuba:truuba
 !! * Yaml: **N-truuba**
  SG-NOM ;  !!= * @CODE@ +Sg+Nom
