@@ -2600,13 +2600,13 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^V2VV%^YXX2YX N_KUUZZYZH-WITHOUT-PAL ;   põõrt-
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^YXX2YX N_KUUZZYZH-WITH-PAL ;   põõʹrt-
 
-* LEXICON N_1Y_VYKK-PL  põõrt:põrtt
+* LEXICON N_1Y_VYKK-PL  aalǥ:algg
 * +Cmp/SgNom: R ;                            põrtt
 * :%^V2VV%^YXX2YX PL-NOM ;                 põõrt
 * :%>â ESS/PAR ;                                   põrttân
 * :%^V2VV%^YXX2YX PL-OBL ;                         põõrti
 
-* LEXICON N_ALGG-PL  põõrt:põrtt
+* LEXICON N_1Y_VYXX-PL  põõrt:põrtt
 * +Cmp/SgNom: R ;                            põrtt
 * :%^V2VV%^YXX2YX PL-NOM ;                 põõrt
 * :%>â ESS/PAR ;                                   põrttân
@@ -4308,8 +4308,10 @@ Sg_Loc_Px..
 
 CLASS 1 LOW VOWEL, DIPHTHONG, NO PALATALIZATION NOMINALS
 
+* LEXICON N_1A_VWYKK  teâlkk:teâlkk
 * LEXICON N_TEYLKK  teâlkk:teâlkk
-N_1A_VWXYY
+compare N_1A_VWYXX
+* LEXICON NMN_1A_VWYKK  teâlkk:teâlkk
 Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_xyy
 
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
@@ -8409,6 +8411,7 @@ inflection_type="?"
 *  PL-NOM ;    	+Pl+Nom
 *  PL-OBL ;    	+Pl+Gen
 
+for nominals ending in single vowel that is -a, Liettua, but not -ia
 * Yaml: **N-truuba**
 *  SG-NOM ;   +Sg+Nom
 *  SG-ABE/ACC/GEN ; 	+Sg+Gen
@@ -9412,6 +9415,7 @@ THE LEXICON *`OUTSIDE_LEXICONS`* ASSIGNS THE TAG +Attr
 * LEXICON PROP_1Y_VYXX   põrtt:põ%^1VOW%{ʹØ%}rtt
 * LEXICON PROP_TOP_1Y_VYKK  algg:a%^1VOW%{ʹØ%}lgg
 * LEXICON PROP_1Y_VYKK  algg:a%^1VOW%{ʹØ%}lgg
+* LEXICON PROP_1Y_VWYKK  algg:a%^1VOW%{ʹØ%}lgg
 
 * LEXICON PROP_1Y_VUKK  joukk:jo%^1VOWu%{ʹØ%}kk
 * LEXICON PROP_1Y_VUCC  autt:a%^1VOWu%{ʹØ%}tt

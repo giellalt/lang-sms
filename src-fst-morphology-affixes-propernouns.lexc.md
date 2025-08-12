@@ -9,6 +9,7 @@ THE LEXICON *`OUTSIDE_LEXICONS`* ASSIGNS THE TAG +Attr
 * LEXICON PROP_1Y_VYXX   põrtt:põ%^1VOW%{ʹØ%}rtt
 * LEXICON PROP_TOP_1Y_VYKK  algg:a%^1VOW%{ʹØ%}lgg
 * LEXICON PROP_1Y_VYKK  algg:a%^1VOW%{ʹØ%}lgg
+* LEXICON PROP_1Y_VWYKK  algg:a%^1VOW%{ʹØ%}lgg
 
 * LEXICON PROP_1Y_VUKK  joukk:jo%^1VOWu%{ʹØ%}kk
 * LEXICON PROP_1Y_VUCC  autt:a%^1VOWu%{ʹØ%}tt
