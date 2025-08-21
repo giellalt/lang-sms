@@ -258,8 +258,6 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^YXX2YX%^PALK N_KUUZZYZH-WITH-PAL ;   aauʹt-
 
 * LEXICON N_1Y_VUCC  autt:a%^1VOWu%{ʹØ%}tt
-* LEXICON N_AUTT  autt:a%^1VOWu%{ʹØ%}tt
-N_1Y_VUCC
 Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_vyy
 1.1.1.1.1.1. Sg_Nom="short_vowel|long_V-cluster" Sg_Gen="long_vowel|short_V-cluster"
 
@@ -294,7 +292,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^V2VV%^YXX2YX N_KUUZZYZH-WITHOUT-PAL ;   aaut-
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^YXX2YX N_KUUZZYZH-WITH-PAL ;   aauʹt-
 
-* LEXICON N_AUTT_PL  aaut:autt
+* LEXICON N_1Y_VUCC_PL  aaut:a%^1VOWu%{ʹØ%}tt
 * +Cmp/SgNom: R ;                            autt
 * :%>â ESS/PAR ;                                   auttân
 * :%^V2VV%^YXX2YX PL-NOM ;                 aaut
@@ -3472,6 +3470,7 @@ strong_geminate, long_vowel, depalatalization, low_stem_vowel
 * :%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) väʹll Ess+Px..
 
 * LEXICON N_1E_VQCC  väʹll:vä%^1VOW%{ʹØ%}ll
+låʹdd:lå%^1VOWdd
 * LEXICON N_VAEQLL  väʹll:väll
 N_1E_VQCC
 similar_to: N_1Y_VCC
@@ -3622,8 +3621,6 @@ N_1E_VQKK
 * :%^VV2V%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) säʹmm Ess+Px..
 
 * LEXICON N_1E_VVQCC  sääʹmm:sää%{ʹØ%}mm
-* LEXICON N_SAAQMM  sääʹmm:sää%{ʹØ%}mm
-N_1E_VVQCC
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
 ## 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
@@ -5914,18 +5911,7 @@ this deals with an extra piece of paradigm
 * Yaml: **N-sett**
 * There are several stem types 
 
-* LEXICON N_LOAQDD  låʹdd:lå%^1VOWdd
-is for nouns with *-est* +Loc, 
-N_E-ANoPal3-32
-* Yaml: **N-ladd**
-
-* :%^V2VV E-STEM_N_KUYLAZH ;  (9) lååddaž
-*  E-STEM-PX-RETAIN-WITHOUT-PAL ;                           (10) lådd-
-* :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) låʹd»
-* :%^PAL E-STEM-PX-STRENGTHEN-WITH-PAL ;                       (12) låʹdd
-* +Use/NGminip+Use/NG:%^PAL E-STEM-PX-ALLEGRO ;   (2) låʹdd
-
-* LEXICON N_LOAQDD_PL  lååʹdd:lådd
+* LEXICON N_1E_VQCC_PL  lååʹdd:lådd
 
 ## e-a-stems
 

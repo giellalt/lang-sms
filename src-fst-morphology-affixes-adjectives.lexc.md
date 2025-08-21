@@ -17,7 +17,7 @@ friskk
 * LEXICON A_1Y_VYKK  põrtt:põrtt
 friskk
 
-* LEXICON A_AUTT  autt:a%^1VOWutt
+* LEXICON A_1Y_VUKK  autt:a%^1VOWutt
 friskk
 
 * LEXICON A_MUORR  muõrr:muõrr
@@ -78,11 +78,11 @@ CLASS 1 HIGH VOWEL, PALATALIZATION NOMINALS
 
 CLASS 1 LOW VOWEL, PALATALIZATION NOMINALS
 
-* LEXICON A_LOAQDD  väʹll:väll
+* LEXICON A_1E_VQCC  väʹll:väll
 
 * LEXICON A_UQCC  uʹcc:u%^1VOW%{ʹØ%}cc
 
-* LEXICON A_SAAQMM  sääʹmm:sää%{ʹØ%}mm
+* LEXICON A_1E_VVQCC  sääʹmm:sää%{ʹØ%}mm
 
 * LEXICON A_CHAAQCC  čääʹcc:čää%{ʹØ%}cc
 
