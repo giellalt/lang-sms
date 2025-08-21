@@ -22,6 +22,7 @@ LEXICON N_NIJDD !!= * @CODE@ nijdd:ni
 
 LEXICON	NMN_NIJDD	!!= * @CODE@ nijdd:ni
 !! * Yaml: **N-nijdd**
+!! NMN_1Y_IJCC
 :jdd SG-NOM ;			!!= * @CODE@ nijdd
 :jdd%>â ESS/PAR ; 	  		!!= * @CODE@ nijddân, nijddâd
 !! strong_geminate, short_vowel, palatalization
@@ -70,14 +71,8 @@ LEXICON	NMN_NIJDD	!!= * @CODE@ nijdd:ni
 
 !! CLASS 1 HIGH VOWEL, NO PALATALIZATION NOMINALS
 LEXICON N_1Y_VCC !!= * @CODE@ papp:pa%^1VOW%{ʹØ%}pp
- NMN_1Y_VCC ;
-LEXICON N_PAPP !!= * @CODE@ papp:papp
 !!! inflection_type="1"
 !! similar_to: N_PESS
-!! N_1Y_VCC
-!:  NMN_PAPP ;
- NMN_1Y_VCC ;
-LEXICON NMN_PAPP
  NMN_1Y_VCC ;
 LEXICON NMN_1Y_VCC
 !! pa%{a0%}%{ʹ0%}%{p0%}p
@@ -150,7 +145,9 @@ HatY-STEM-PX-RETAIN ;
 :%^CC2CAllegro SG-LOC-PX_ALLEGRO ; !! e.g. +Sg+Loc+PxSg3 pp:p papstes
  HatY-STEM-PX-STRENGTHEN ;
 
-LEXICON N_PAPP-PL
+LEXICON N_1Y_VCC-PL
+ N_1Y_VCC_PL ;
+LEXICON N_1Y_VCC_PL
 +Cmp/SgNom: R ;          !!= * @CODE@ papp
 :%^V2VV PL-NOM ; !!= * @CODE@ paapp
 :%^V2VV PL-OBL ;      !!= * @CODE@ paappi, paappid, paappid, paappin, paappivuiʹm, paappitaa
@@ -243,13 +240,7 @@ HatY-STEM-PX-RETAIN ;
 
 
 LEXICON N_1Y_VYXX !!= * @CODE@ põrtt:põ%^1VOW%{ʹØ%}rtt
- NMN_1Y_VYXX ;
-LEXICON N_ALGG !!= * @CODE@ põrtt:põ%^1VOW%{ʹØ%}rtt
 !!! inflection_type="1"
-!! N_1Y_VYXX
-!: NMN_ALGG ;
- NMN_1Y_VYXX ;
-LEXICON NMN_ALGG
  NMN_1Y_VYXX ;
 LEXICON NMN_1Y_VYXX
 !! Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_xyy
@@ -2361,7 +2352,7 @@ LEXICON N_1A_VCC !!= * @CODE@ pess:pẹ%^1VOWss
  NMN_1A_VCC ;
 LEXICON N_PESS !!= * @CODE@ pess:pẹss
 !!! inflection_type="?"
-!! similar_to: N_PAPP
+!! similar_to: N_1Y_VCC
 ! 2.a.mono.gem
 !! N_1A_VCC
 : NMN_1A_VCC ;
@@ -5198,7 +5189,7 @@ LEXICON N_VAEQLL !!= * @CODE@ väʹll:väll
 ! NMN_1E_VQCC ;
 LEXICON NMN_1E_VQCC
 ! gradation: yes
-!! similar_to: N_PAPP
+!! similar_to: N_1Y_VCC
 !! vowel: monophthong
 !! vowel_shift: yes
 !! consonantism: geminate
@@ -5290,7 +5281,7 @@ LEXICON N_PEQKHKH !!= * @CODE@ peʹǩǩ:pẹ%^1VOWkk
 LEXICON NMN_PEQKHKH
 !! vowel_shift: no
 !! gradation: yes
-!! similarity: N_PAPP
+!! similarity: N_1Y_VCC
 
 !! ## FORMS
 !! NumContLex="1.113"
@@ -8538,6 +8529,20 @@ LEXICON NMN_SIOM  !!= * @CODE@ = siõm:siõmˈm
 :%>n PL-OBL ;
 :%>n VOONYS-STEM-PX ;
 
+LEXICON N_2A_SYYV  !!= * @CODE@ = sââv:sââvv
+!!! inflection_type="2"
+: NMN_2A_SYYV ;
+LEXICON NMN_2A_SYYV  !!= * @CODE@ = sââv:sââvv
+!! * Yaml: **N-siom**
+:%^CC2C SG-NOM ;
+:%^VV2V%>an SG-ABE/ACC/GEN-PL-NOM ;
+:%^VV2V%>na SG-ILL ;
+:%^VV2V%>ne SG-LOC ;
+:%^VV2V%>n SG-COM_IN ;
+:%^VV2V%>ne ESS/PAR ;
+:%^VV2V%>n PL-OBL ;
+:%^VV2V%>n VOONYS-STEM-PX ;
+
 
 LEXICON N_SEAEM  !!= * @CODE@ = seäm:seämˈm
 !!! inflection_type="2"
@@ -8771,7 +8776,7 @@ LEXICON N_KOODDYS !!= * @CODE@ kõõddâs:kõddâs
 !!! inflection_type="2"
 : NMN_KOODDYS ;
 LEXICON NMN_KOODDYS !!= * @CODE@ kõõddâs:kõddâs
-!! like N_PODD, N_PAPP, N_LUUBBYL
+!! like N_PODD, N_1Y_VCC, N_LUUBBYL
 ! gradation: yes
 ! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
 ! Penultimate stem vowel retention: Sg.Nom, Sg.Gen, Sg.Acc, Sg.Abe, Pl.Nom
@@ -9229,10 +9234,10 @@ LEXICON NMN_SIIVALM
 :%^Pen%^VV2V%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 :%^RmVow A_DER/ALLASH ;
 
-LEXICON N_KAADDYSHKH !!= * @CODE@ kaaddâšǩ:kaaddâšǩ
+LEXICON N_LOOBBYSHKH !!= * @CODE@ loobbâšǩ:loobbâšǩ
 !!! inflection_type="2"
-: NMN_KAADDYSHKH ;
-LEXICON NMN_KAADDYSHKH
+: NMN_LOOBBYSHKH ;
+LEXICON NMN_LOOBBYSHKH
 ! gradation: yes
 !   Extra strong grade: Else
 !   Strong grade: Sg.Nom
@@ -13931,7 +13936,7 @@ vivv+N:vi%^1VOWvv N_TOLL ;
 maakk+N:maakk N_SAAKK ;
 maakkäʹjj+N:maakk#ä%^1VOWjj N_VAEQLL ;
 maakkâv+N:maakkâv N_AANAR ;
-villj+N:vi%^1VOWllj N_PAPP ;
+villj+N:vi%^1VOWllj N_1Y_VCC ;
 
 LEXICON HUMAN-CLASSIFIERS
 laajj+N:la%^1VOWčč N_LAAJJ ;
