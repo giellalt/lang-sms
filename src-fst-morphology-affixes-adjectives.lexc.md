@@ -6,9 +6,15 @@ These come directly from the xml to lexc xsltransformation lexica
 * : ADJ-DER/COMP_ab ;  This has a Comp+Attr
 
 CLASS 1 HIGH VOWEL, NO PALATALIZATION NOMINALS
-* LEXICON A_PAPP  papp:papp
+* LEXICON A_1Y_VCC  papp:papp
 
-* LEXICON A_ALGG  põrtt:põrtt
+CLASS 1 HIGH VOWEL, NO PALATALIZATION NOMINALS
+* LEXICON A_1Y_VKK  papp:papp
+
+* LEXICON A_1Y_VYXX  põrtt:põrtt
+friskk
+
+* LEXICON A_1Y_VYKK  põrtt:põrtt
 friskk
 
 * LEXICON A_AUTT  autt:a%^1VOWutt
@@ -403,6 +409,86 @@ strong_geminate, long_vowel
 
 e.g. 
 e.g. +Use/NG+Sg+Loc+PxSg3
+
+pa%{a0%}%{ʹ0%}%{p0%}p
+V%{V0%}%{ʹ0%}%{C0%}C
+Sg_Nom:
+high-vowel=yes
+monophthong=yes
+long-vowel=yes
+palatalization=no
+consonantism=quant-gem
+long-consonant=yes
+
+1.1.1.1.1.1. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|geminate" 
+
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+â-stems (Sg.Loc, Ess, Par).
+## 1.1.1 Sg.Ill vowel	-e
+## 1.1.1.1 Has Palatalization
+## 1.1.1.1[1] (Palatalization pattern)
+Palatalized: Sg.Ill
+Not Palatalized: ELSE
+Sg.Ill in palatalization and -e
+## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+## 1.1.1.1[1].1.1 Has Orthographic Gradation
+## 1.1.1.1[1].1.1[] (Monophthong + Consonant Geminate alternation)
+Extra strong grade: Sg.Nom, Ess, Par
+Extra strong grade: Sg.Ill
+Strong grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+* Yaml: **N-papp**
+strong_geminate, short_vowel
+* : A-02_SG-NOM ;			 papp
+* :%>â A-02_ESS/PAR ; 	  		 pappân, pappâd
+strong_geminate, short_vowel, palatalization
+* :%^PAL%>e A-02_SG-ILL ;		 paʹppe
+
+strong_geminate, long_vowel
+* :%^V2VV A-02_SG-ABE/ACC/GEN-PL-NOM ;	 paapp
+* :%^V2VV%>â A-02_SG-LOC ;		 paappâst
+* :%^V2VV A-02_SG-COM_IN/PL-OBL ;	 paappi, paappid, paappid, paappin, paappivuiʹm, paappitaa
+
+* +Der+Der/Dimin+A:%^V2VV A-02_MUORYZH-WITHOUT-PAL ;   paapp-
+* +Der+Der/Dimin+A:%^V2VV%^PAL A-02_MUORYZH-WITH-PAL ;   paaʹpp-
+
+e.g. 
+e.g. +Use/NG+Sg+Loc+PxSg3
+
+Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_xyy
+similar_to: N_TAALKYS, N_KOONTYR
+1.1.1.1.1.1. Sg_Nom="short_vowel|long_cluster" Sg_Gen="long_vowel|short_cluster" 
+
+## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+â-stems (Sg.Loc, Ess, Par).
+## 1.1.1 Sg.Ill vowel	-e
+## 1.1.1.1 Has Palatalization
+## 1.1.1.1[1] (Palatalization pattern)
+Palatalized: Sg.Ill
+Not Palatalized: ELSE
+Sg.Ill in palatalization and -e
+## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+## 1.1.1.1[1].1.1 Has Orthographic Gradation
+## 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
+Strong grade: Sg.Nom, Ess, Par
+Strong grade: Sg.Ill
+Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+## FORMS
+* Yaml: **N-portt**
+
+* : A-02_SG-NOM ;	    				 põrtt
+* :%^V2VV%^YXX2YX A-02_SG-ABE/ACC/GEN ;		 põõrt
+* :%^V2VV%^YXX2YX A-02_PL-NOM ;		 põõrt
+* :%^PAL%>e A-02_SG-ILL ;		      		 põʹrtte
+* :%^V2VV%^YXX2YX%>â A-02_SG-LOC ;			 põõrtâst
+* :%^V2VV%^YXX2YX A-02_SG-COM_IN ;			 põõrtin
+* :%>â A-02_ESS/PAR ; 		  			 põrttân
+* :%^V2VV%^YXX2YX A-02_PL-OBL ;			 põõrti
+
+* +Der+Der/Dimin+A:%^V2VV%^YXX2YX A-02_MUORYZH-WITHOUT-PAL ;   põõrt-
+* +Der+Der/Dimin+A:%^V2VV%^PAL%^YXX2YX A-02_MUORYZH-WITH-PAL ;   põõʹrt-
 
 Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_xyy
 similar_to: N_TAALKYS, N_KOONTYR
@@ -1029,7 +1115,7 @@ WORK NEEDED
 CLASS 1 LOW VOWEL, PALATALIZATION, ILLATIVE IN A NOMINALS
 ## e-stems
 
-similar_to: N_PAPP
+similar_to: N_1Y_VCC
 vowel: monophthong
 vowel_shift: yes
 consonantism: geminate
@@ -1060,7 +1146,7 @@ strong_geminate, long_vowel, depalatalization, low_stem_vowel
 * :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) väʹl-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) väʹll Ess+Px..
 
-similar_to: N_PAPP
+similar_to: N_1Y_VCC
 vowel: monophthong
 vowel_shift: ??
 consonantism: geminate
@@ -1570,7 +1656,7 @@ N_GEN2X3-NOM2X1
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
 * LEXICON A-01_KOODDYS  kõõddâs:kõddâs
-like N_PODD, N_PAPP, N_LUUBBYL
+like N_PODD, N_1Y_VCC, N_LUUBBYL
 * Yaml: **N-kooddas**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 

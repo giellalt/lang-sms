@@ -12,6 +12,7 @@ IRREGULAR NOUN nijdd
 
 * LEXICON	NMN_NIJDD	 nijdd:ni
 * Yaml: **N-nijdd**
+NMN_1Y_IJCC
 * :jdd SG-NOM ;			 nijdd
 * :jdd%>â ESS/PAR ; 	  		 nijddân, nijddâd
 strong_geminate, short_vowel, palatalization
@@ -50,9 +51,7 @@ strong_geminate, long_vowel
 
 CLASS 1 HIGH VOWEL, NO PALATALIZATION NOMINALS
 * LEXICON N_1Y_VCC  papp:pa%^1VOW%{ʹØ%}pp
-* LEXICON N_PAPP  papp:papp
 similar_to: N_PESS
-N_1Y_VCC
 pa%{a0%}%{ʹ0%}%{p0%}p
 V%{V0%}%{ʹ0%}%{C0%}C
 Sg_Nom:
@@ -172,8 +171,6 @@ e.g. +Sg+Loc+PxSg3 pp:p papstes
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^YXX2YX%^PALK N_KUUZZYZH-WITH-PAL ;   põõʹrt-
 
 * LEXICON N_1Y_VYXX  põrtt:põ%^1VOW%{ʹØ%}rtt
-* LEXICON N_ALGG  põrtt:põ%^1VOW%{ʹØ%}rtt
-N_1Y_VYXX
 Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_xyy
 similar_to: N_TAALKYS, N_KOONTYR
 1.1.1.1.1.1. Sg_Nom="short_vowel|long_cluster" Sg_Gen="long_vowel|short_cluster" 
@@ -1528,7 +1525,7 @@ CLASS 1 LOW VOWEL, MONOPHTHONG, NO PALATALIZATION NOMINALS
 
 * LEXICON N_1A_VCC  pess:pẹ%^1VOWss
 * LEXICON N_PESS  pess:pẹss
-similar_to: N_PAPP
+similar_to: N_1Y_VCC
 N_1A_VCC
 Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_gem
 1.1.1.2.1. stem_with_gradation: yes 
@@ -3477,7 +3474,7 @@ strong_geminate, long_vowel, depalatalization, low_stem_vowel
 * LEXICON N_1E_VQCC  väʹll:vä%^1VOW%{ʹØ%}ll
 * LEXICON N_VAEQLL  väʹll:väll
 N_1E_VQCC
-similar_to: N_PAPP
+similar_to: N_1Y_VCC
 vowel: monophthong
 vowel_shift: yes
 consonantism: geminate
@@ -3546,7 +3543,7 @@ NumContLex="1.113"
 N_1E_EQKK
 vowel_shift: no
 gradation: yes
-similarity: N_PAPP
+similarity: N_1Y_VCC
 
 ## FORMS
 NumContLex="1.113"
@@ -5306,6 +5303,10 @@ CLASS 3
 * LEXICON NMN_SIOM   = siõm:siõmˈm
 * Yaml: **N-siom**
 
+* LEXICON N_2A_SYYV   = sââv:sââvv
+* LEXICON NMN_2A_SYYV   = sââv:sââvv
+* Yaml: **N-siom**
+
 * LEXICON N_SEAEM   = seäm:seämˈm
 * LEXICON NMN_SEAEM   = seäm:seämˈm
 * Yaml: **N-siom**
@@ -5374,7 +5375,7 @@ N_GEN2X3-NOM2X1
 
 * LEXICON N_KOODDYS  kõõddâs:kõddâs
 * LEXICON NMN_KOODDYS  kõõddâs:kõddâs
-like N_PODD, N_PAPP, N_LUUBBYL
+like N_PODD, N_1Y_VCC, N_LUUBBYL
 * Yaml: **N-kooddas**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
@@ -5515,12 +5516,12 @@ stemtype l-stem siivâlm:siivâlm
 * Yaml: **N-siivalm** 
 * :%^Pen%^VV2V%^RmVow VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_KAADDYSHKH  kaaddâšǩ:kaaddâšǩ
-* **NMN_KAADDYSHKH** = Koulukielioppi stemtype II 9 (29)
+* LEXICON N_LOOBBYSHKH  loobbâšǩ:loobbâšǩ
+* **NMN_LOOBBYSHKH** = Koulukielioppi stemtype II 9 (29)
 * Yaml: **cooggalm, aaresm, kaaddask** 
 * :%^Pen%^VV2V%^Pen%^CC2CAllegro%^RmVow%^PALNo VOONYS-STEM-PX ;  võnns- CHECKME
 
-* **NMN_KAADDYSHKH** = Koulukielioppi stemtype II 9 (29)
+* **NMN_LOOBBYSHKH** = Koulukielioppi stemtype II 9 (29)
 * Yaml: **cooggalm, aaresm, kaaddask** 
 
 * LEXICON N_TOOBDYLM  toobdâlm:toobdâlm
