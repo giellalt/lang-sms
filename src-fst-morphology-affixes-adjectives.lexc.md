@@ -400,7 +400,7 @@ strong_geminate, short_vowel, palatalization
 * :%^PAL%>e A-02_SG-ILL ;		 paʹppe
 
 strong_geminate, long_vowel
-* :%^V2VV A-02_SG-ABE/ACC/GEN-PL-NOM ;	 paapp
+* :%^V2VV A-02_SG-ABE/ACC/GEN_PL-NOM ;	 paapp
 * :%^V2VV%>â A-02_SG-LOC ;		 paappâst
 * :%^V2VV A-02_SG-COM_IN/PL-OBL ;	 paappi, paappid, paappid, paappin, paappivuiʹm, paappitaa
 
@@ -446,7 +446,7 @@ strong_geminate, short_vowel, palatalization
 * :%^PAL%>e A-02_SG-ILL ;		 paʹppe
 
 strong_geminate, long_vowel
-* :%^V2VV A-02_SG-ABE/ACC/GEN-PL-NOM ;	 paapp
+* :%^V2VV A-02_SG-ABE/ACC/GEN_PL-NOM ;	 paapp
 * :%^V2VV%>â A-02_SG-LOC ;		 paappâst
 * :%^V2VV A-02_SG-COM_IN/PL-OBL ;	 paappi, paappid, paappid, paappin, paappivuiʹm, paappitaa
 
@@ -612,7 +612,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * Yaml: **N-skjiankk**
 
 * : A-02_SG-NOM ;	      	 (1) Sg.Nom: sǩiâŋkk
-* :%^YXX2YX A-02_SG-ABE/ACC/GEN-PL-NOM ;   (2) Pl.Nom: sǩiâŋk
+* :%^YXX2YX A-02_SG-ABE/ACC/GEN_PL-NOM ;   (2) Pl.Nom: sǩiâŋk
 * :%^PALE%^PAL%>e A-02_SG-ILL ;	    (3) Sg.Ill: sǩieʹŋǩǩe
 * :%^YXX2YX%>â A-02_SG-LOC ;   	    (4) Sg.Loc: sǩiâŋkâst
 * :%^YXX2YX A-02_SG-COM_IN ;		    (5) Sg.Com: sǩiâŋkin
@@ -625,7 +625,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_gem
 1.1.1.1.1.2. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|single_consonant" 
 
-See also: NMN_TOLL-PLC, which is the same, but minus PL forms and certain cases
+See also: NMN_TOLL_PLC, which is the same, but minus PL forms and certain cases
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
 ## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
@@ -666,7 +666,7 @@ Sg_Nom: vow_di:vow_high:pal_no:cns_gem_ss_type
 THIS IS NOT THE SAME AS N_MUORR
 * Yaml: **N-luoss**
 * : A-02_SG-NOM ;	     			
-* :%^KK2GG A-02_SG-ABE/ACC/GEN-PL-NOM ;	 luõzz
+* :%^KK2GG A-02_SG-ABE/ACC/GEN_PL-NOM ;	 luõzz
 * :%^PAL%^CC2CCC%>e A-02_SG-ILL ;	 	 luõʹsˈse
 * :%^KK2GG%>â A-02_SG-LOC ;			 luõzzâst
 * :%^KK2GG A-02_SG-COM_IN ;			
@@ -713,7 +713,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 similar_to: N_VUYHSS
 * Yaml: **N-miwhtt**
 * :%^YXX2VX A-02_SG-COM_IN ;			 miõutin
-* :%^YXX2VX  A-02_SG-ABE/ACC/GEN-PL-NOM ;	 miõut
+* :%^YXX2VX  A-02_SG-ABE/ACC/GEN_PL-NOM ;	 miõut
 * :%^PAL%>e A-02_SG-ILL ;	   	 miõʹhtte
 * : A-02_SG-NOM ;	       			 miõhtt
 * :%^YXX2VX%>â A-02_SG-LOC ;			 miõutâst
@@ -779,7 +779,7 @@ strong_geminate, short_vowel, no_palatalization, low_stem_vowel, stem_vowel: a
 * :%>a A-02_ESS/PAR ; 			  (6) Ess: pessan
 
 strong_geminate, long_vowel, no_palatalization, low_stem_vowel
-* :%^V2VV A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	  (2) Pl.Nom: peess
+* :%^V2VV A-02_A-STEM_SG-ABE/ACC/GEN_PL-NOM ;	  (2) Pl.Nom: peess
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -810,7 +810,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^CC2C A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ;		 (2) Pl.Nom: šoom
+* :%^CC2C A-02_A-STEM_SG-ABE/ACC/GEN_PL-NOM ;		 (2) Pl.Nom: šoom
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -834,7 +834,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^V2VV%^YXX2YX A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ;  (2) ääld
+* :%^V2VV%^YXX2YX A-02_A-STEM_SG-ABE/ACC/GEN_PL-NOM ;  (2) ääld
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -856,7 +856,7 @@ grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
 grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 
 * LEXICON A-02_A-STEM_SG-NOM  (1)
-* LEXICON A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM   (2)
+* LEXICON A-02_A-STEM_SG-ABE/ACC/GEN_PL-NOM   (2)
 
 CLASS 1 LOW VOWEL, DIPHTHONG, NO PALATALIZATION NOMINALS
 
@@ -880,7 +880,7 @@ Strong grade: Pl.Nom, Sg.Loc, Sg.Com
 * : A-02_A-STEM_SG-NOM ;	    			  neävˈv
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
-* :%^CCC2CC A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	  neävv
+* :%^CCC2CC A-02_A-STEM_SG-ABE/ACC/GEN_PL-NOM ;	  neävv
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -904,7 +904,7 @@ a-stems (Sg.Loc, Ess, Par).
 * : A-02_A-STEM_SG-NOM ;	    		  kapteän
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
-* : A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	  kapteän
+* : A-02_A-STEM_SG-ABE/ACC/GEN_PL-NOM ;	  kapteän
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -935,7 +935,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 ## FORMS
 * Yaml: **A-vaeaezhzh**
 * : A-02_SG-NOM ;	    		 vääžž
-* : A-02_SG-ABE/ACC/GEN-PL-NOM ;	 vääžž
+* : A-02_SG-ABE/ACC/GEN_PL-NOM ;	 vääžž
 * :%^VOWRaise%>u A-02_SG-ILL ;		 vaažžu
 * +Use/NGminip+Use/NG:%>a A-02_SG-ILL ;  	      	 vääžža
 * :%>a A-02_SG-LOC ;	   		 vääžžast
@@ -1326,7 +1326,7 @@ NumContLex="1.113
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-kerjj**
 * :%^PAL A-02_SG-NOM ;		  	 (1) Sg.Nom: ǩeʹrjj
-* :%^V2VV%^PAL%^YXX2YX A-02_SG-ABE/ACC/GEN-PL-NOM ;  (2) Pl.Nom: ǩeeʹrj
+* :%^V2VV%^PAL%^YXX2YX A-02_SG-ABE/ACC/GEN_PL-NOM ;  (2) Pl.Nom: ǩeeʹrj
 * : A-02_E-STEM_SG-ILL ;	     			    (3)  Sg.Ill: ǩerjja
 * :%^V2VV%^PAL%^YXX2YX%>e A-02_SG-LOC ;	    (4) Sg.Loc: ǩeeʹrjest
 * :%^V2VV%^PAL%^YXX2YX A-02_SG-COM_IN ;	    (5) Sg.Com: ǩeeʹrjin
@@ -1688,7 +1688,7 @@ CLASS 4 BISYLLABIC, HIGH VOWEL, DIPHTHONG, NO PALATALIZATION
 
 * Yaml: **N-vuoivas**
 *  :%^Pen%^YXX2YX A-02_SG-NOM ;	        (1) Sg_Nom: vuõivâs
-*  :%^VC A-02_SG-ABE/ACC/GEN-PL-NOM ;   (2) Pl_Nom: vuõivvâz
+*  :%^VC A-02_SG-ABE/ACC/GEN_PL-NOM ;   (2) Pl_Nom: vuõivvâz
 *  :%^RmVow%>a A-02_SG-ILL ;   (3) Sg_Ill: vuõivvsa
 *  :%^RmVow%>e A-02_SG-LOC ;    (4) Sg_Loc: vuõivvsest
 *  :%^RmVow A-02_SG-COM_IN/PL-OBL ;     (5) Sg_Com: vuõivvsin
@@ -1728,17 +1728,17 @@ N_GEN2X3-NOM2X1
 
 * LEXICON A-01_KOAOAVAS  kååvas:kåvvas
 * Yaml: **N-kaavas**
-* :%^VC A-02_SG-ABE/ACC/GEN-PL-NOM ;  kåvvaz
+* :%^VC A-02_SG-ABE/ACC/GEN_PL-NOM ;  kåvvaz
 * :%^RmVow VOONYS-STEM-PX ;  såbbr-
 
 * LEXICON A-01_PAEAELKAS  päälkas:pälkkas
 * Yaml: **N-paalkas**
-* :%^VC A-02_SG-ABE/ACC/GEN-PL-NOM ;  pälkkaz
+* :%^VC A-02_SG-ABE/ACC/GEN_PL-NOM ;  pälkkaz
 * :%^RmVow VOONYS-STEM-PX ;  såbbr-
 
 * LEXICON A-01_CEAEGGAS  ceäggas:ceägˈgas
 * Yaml: **N-ceaeggas**
-* :%^VC A-02_SG-ABE/ACC/GEN-PL-NOM ;  ceägˈgaz
+* :%^VC A-02_SG-ABE/ACC/GEN_PL-NOM ;  ceägˈgaz
 * :%^RmVow VOONYS-STEM-PX ;  såbbr-
 
 CLASS 4 BISYLLABIC, LOW VOWEL, DIPHTHONG, NO PALATALIZATION
@@ -1751,7 +1751,7 @@ IN PENULTIMATE A:0
 ## 2.3.2.2.1 Penultimate stem vowel loss: (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Gen, Pl.Acc, Pl.Ill, Pl.Loc, Pl.Com, Pl.Abe)
 ## 2.3.2.2.1.1 The Sg.Com vowel i appears before final n  
 * Yaml: **N-juaghghas**
-* :%^VC  A-02_SG-ABE/ACC/GEN-PL-NOM ;  juâkˈkaz
+* :%^VC  A-02_SG-ABE/ACC/GEN_PL-NOM ;  juâkˈkaz
 * :%^RmVow VOONYS-STEM-PX ;  såbbr-
 
 CLASS 4 BISYLLABIC, LOW VOWEL, MONOPHTHONG, PALATALIZATION

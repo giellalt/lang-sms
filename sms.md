@@ -632,7 +632,7 @@ strong_geminate, short_vowel, palatalization
 * :%^PAL%>e A-02_SG-ILL ;		 paʹppe
 
 strong_geminate, long_vowel
-* :%^V2VV A-02_SG-ABE/ACC/GEN-PL-NOM ;	 paapp
+* :%^V2VV A-02_SG-ABE/ACC/GEN_PL-NOM ;	 paapp
 * :%^V2VV%>â A-02_SG-LOC ;		 paappâst
 * :%^V2VV A-02_SG-COM_IN/PL-OBL ;	 paappi, paappid, paappid, paappin, paappivuiʹm, paappitaa
 
@@ -678,7 +678,7 @@ strong_geminate, short_vowel, palatalization
 * :%^PAL%>e A-02_SG-ILL ;		 paʹppe
 
 strong_geminate, long_vowel
-* :%^V2VV A-02_SG-ABE/ACC/GEN-PL-NOM ;	 paapp
+* :%^V2VV A-02_SG-ABE/ACC/GEN_PL-NOM ;	 paapp
 * :%^V2VV%>â A-02_SG-LOC ;		 paappâst
 * :%^V2VV A-02_SG-COM_IN/PL-OBL ;	 paappi, paappid, paappid, paappin, paappivuiʹm, paappitaa
 
@@ -844,7 +844,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * Yaml: **N-skjiankk**
 
 * : A-02_SG-NOM ;	      	 (1) Sg.Nom: sǩiâŋkk
-* :%^YXX2YX A-02_SG-ABE/ACC/GEN-PL-NOM ;   (2) Pl.Nom: sǩiâŋk
+* :%^YXX2YX A-02_SG-ABE/ACC/GEN_PL-NOM ;   (2) Pl.Nom: sǩiâŋk
 * :%^PALE%^PAL%>e A-02_SG-ILL ;	    (3) Sg.Ill: sǩieʹŋǩǩe
 * :%^YXX2YX%>â A-02_SG-LOC ;   	    (4) Sg.Loc: sǩiâŋkâst
 * :%^YXX2YX A-02_SG-COM_IN ;		    (5) Sg.Com: sǩiâŋkin
@@ -857,7 +857,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_gem
 1.1.1.1.1.2. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|single_consonant" 
 
-See also: NMN_TOLL-PLC, which is the same, but minus PL forms and certain cases
+See also: NMN_TOLL_PLC, which is the same, but minus PL forms and certain cases
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
 ## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
@@ -898,7 +898,7 @@ Sg_Nom: vow_di:vow_high:pal_no:cns_gem_ss_type
 THIS IS NOT THE SAME AS N_MUORR
 * Yaml: **N-luoss**
 * : A-02_SG-NOM ;	     			
-* :%^KK2GG A-02_SG-ABE/ACC/GEN-PL-NOM ;	 luõzz
+* :%^KK2GG A-02_SG-ABE/ACC/GEN_PL-NOM ;	 luõzz
 * :%^PAL%^CC2CCC%>e A-02_SG-ILL ;	 	 luõʹsˈse
 * :%^KK2GG%>â A-02_SG-LOC ;			 luõzzâst
 * :%^KK2GG A-02_SG-COM_IN ;			
@@ -945,7 +945,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 similar_to: N_VUYHSS
 * Yaml: **N-miwhtt**
 * :%^YXX2VX A-02_SG-COM_IN ;			 miõutin
-* :%^YXX2VX  A-02_SG-ABE/ACC/GEN-PL-NOM ;	 miõut
+* :%^YXX2VX  A-02_SG-ABE/ACC/GEN_PL-NOM ;	 miõut
 * :%^PAL%>e A-02_SG-ILL ;	   	 miõʹhtte
 * : A-02_SG-NOM ;	       			 miõhtt
 * :%^YXX2VX%>â A-02_SG-LOC ;			 miõutâst
@@ -1011,7 +1011,7 @@ strong_geminate, short_vowel, no_palatalization, low_stem_vowel, stem_vowel: a
 * :%>a A-02_ESS/PAR ; 			  (6) Ess: pessan
 
 strong_geminate, long_vowel, no_palatalization, low_stem_vowel
-* :%^V2VV A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	  (2) Pl.Nom: peess
+* :%^V2VV A-02_A-STEM_SG-ABE/ACC/GEN_PL-NOM ;	  (2) Pl.Nom: peess
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -1042,7 +1042,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^CC2C A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ;		 (2) Pl.Nom: šoom
+* :%^CC2C A-02_A-STEM_SG-ABE/ACC/GEN_PL-NOM ;		 (2) Pl.Nom: šoom
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -1066,7 +1066,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^V2VV%^YXX2YX A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ;  (2) ääld
+* :%^V2VV%^YXX2YX A-02_A-STEM_SG-ABE/ACC/GEN_PL-NOM ;  (2) ääld
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -1088,7 +1088,7 @@ grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
 grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 
 * LEXICON A-02_A-STEM_SG-NOM  (1)
-* LEXICON A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM   (2)
+* LEXICON A-02_A-STEM_SG-ABE/ACC/GEN_PL-NOM   (2)
 
 CLASS 1 LOW VOWEL, DIPHTHONG, NO PALATALIZATION NOMINALS
 
@@ -1112,7 +1112,7 @@ Strong grade: Pl.Nom, Sg.Loc, Sg.Com
 * : A-02_A-STEM_SG-NOM ;	    			  neävˈv
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
-* :%^CCC2CC A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	  neävv
+* :%^CCC2CC A-02_A-STEM_SG-ABE/ACC/GEN_PL-NOM ;	  neävv
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -1136,7 +1136,7 @@ a-stems (Sg.Loc, Ess, Par).
 * : A-02_A-STEM_SG-NOM ;	    		  kapteän
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
-* : A-02_A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	  kapteän
+* : A-02_A-STEM_SG-ABE/ACC/GEN_PL-NOM ;	  kapteän
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -1167,7 +1167,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 ## FORMS
 * Yaml: **A-vaeaezhzh**
 * : A-02_SG-NOM ;	    		 vääžž
-* : A-02_SG-ABE/ACC/GEN-PL-NOM ;	 vääžž
+* : A-02_SG-ABE/ACC/GEN_PL-NOM ;	 vääžž
 * :%^VOWRaise%>u A-02_SG-ILL ;		 vaažžu
 * +Use/NGminip+Use/NG:%>a A-02_SG-ILL ;  	      	 vääžža
 * :%>a A-02_SG-LOC ;	   		 vääžžast
@@ -1558,7 +1558,7 @@ NumContLex="1.113
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-kerjj**
 * :%^PAL A-02_SG-NOM ;		  	 (1) Sg.Nom: ǩeʹrjj
-* :%^V2VV%^PAL%^YXX2YX A-02_SG-ABE/ACC/GEN-PL-NOM ;  (2) Pl.Nom: ǩeeʹrj
+* :%^V2VV%^PAL%^YXX2YX A-02_SG-ABE/ACC/GEN_PL-NOM ;  (2) Pl.Nom: ǩeeʹrj
 * : A-02_E-STEM_SG-ILL ;	     			    (3)  Sg.Ill: ǩerjja
 * :%^V2VV%^PAL%^YXX2YX%>e A-02_SG-LOC ;	    (4) Sg.Loc: ǩeeʹrjest
 * :%^V2VV%^PAL%^YXX2YX A-02_SG-COM_IN ;	    (5) Sg.Com: ǩeeʹrjin
@@ -1920,7 +1920,7 @@ CLASS 4 BISYLLABIC, HIGH VOWEL, DIPHTHONG, NO PALATALIZATION
 
 * Yaml: **N-vuoivas**
 *  :%^Pen%^YXX2YX A-02_SG-NOM ;	        (1) Sg_Nom: vuõivâs
-*  :%^VC A-02_SG-ABE/ACC/GEN-PL-NOM ;   (2) Pl_Nom: vuõivvâz
+*  :%^VC A-02_SG-ABE/ACC/GEN_PL-NOM ;   (2) Pl_Nom: vuõivvâz
 *  :%^RmVow%>a A-02_SG-ILL ;   (3) Sg_Ill: vuõivvsa
 *  :%^RmVow%>e A-02_SG-LOC ;    (4) Sg_Loc: vuõivvsest
 *  :%^RmVow A-02_SG-COM_IN/PL-OBL ;     (5) Sg_Com: vuõivvsin
@@ -1960,17 +1960,17 @@ N_GEN2X3-NOM2X1
 
 * LEXICON A-01_KOAOAVAS  kååvas:kåvvas
 * Yaml: **N-kaavas**
-* :%^VC A-02_SG-ABE/ACC/GEN-PL-NOM ;  kåvvaz
+* :%^VC A-02_SG-ABE/ACC/GEN_PL-NOM ;  kåvvaz
 * :%^RmVow VOONYS-STEM-PX ;  såbbr-
 
 * LEXICON A-01_PAEAELKAS  päälkas:pälkkas
 * Yaml: **N-paalkas**
-* :%^VC A-02_SG-ABE/ACC/GEN-PL-NOM ;  pälkkaz
+* :%^VC A-02_SG-ABE/ACC/GEN_PL-NOM ;  pälkkaz
 * :%^RmVow VOONYS-STEM-PX ;  såbbr-
 
 * LEXICON A-01_CEAEGGAS  ceäggas:ceägˈgas
 * Yaml: **N-ceaeggas**
-* :%^VC A-02_SG-ABE/ACC/GEN-PL-NOM ;  ceägˈgaz
+* :%^VC A-02_SG-ABE/ACC/GEN_PL-NOM ;  ceägˈgaz
 * :%^RmVow VOONYS-STEM-PX ;  såbbr-
 
 CLASS 4 BISYLLABIC, LOW VOWEL, DIPHTHONG, NO PALATALIZATION
@@ -1983,7 +1983,7 @@ IN PENULTIMATE A:0
 ## 2.3.2.2.1 Penultimate stem vowel loss: (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Gen, Pl.Acc, Pl.Ill, Pl.Loc, Pl.Com, Pl.Abe)
 ## 2.3.2.2.1.1 The Sg.Com vowel i appears before final n  
 * Yaml: **N-juaghghas**
-* :%^VC  A-02_SG-ABE/ACC/GEN-PL-NOM ;  juâkˈkaz
+* :%^VC  A-02_SG-ABE/ACC/GEN_PL-NOM ;  juâkˈkaz
 * :%^RmVow VOONYS-STEM-PX ;  såbbr-
 
 CLASS 4 BISYLLABIC, LOW VOWEL, MONOPHTHONG, PALATALIZATION
@@ -2494,14 +2494,14 @@ NMN_1Y_IJCC
 strong_geminate, short_vowel, palatalization
 * :%{ʹØ%}jdd%^PAL%>e SG-ILL ;		 niʹjdde
 strong_geminate, long_vowel
-* :õđ SG-ABE/ACC/GEN-PL-NOM ;	 niõđ
+* :õđ SG-ABE/ACC/GEN_PL-NOM ;	 niõđ
 * :õđ%>â SG-LOC ;		 niõđâst
 * :õđ SG-COM_IN/PL-OBL ;	 niõđ, niõđid, niõđid, niõđin, niõđivuiʹm, niõđitaa
 
 * +Der+Der/Dimin+N:õđ N_MUORYZH-WITHOUT-PAL ;   niõđ-
 * +Der+Der/Dimin+N:õ%{ʹØ%}đ%^PAL N_MUORYZH-WITH-PAL ;   niõʹđ-
 
-* +Err/GenreLeudd:õđâ SG-ABE/ACC/GEN-PL-NOM ;      niõđ Leudd 2018-09-20
+* +Err/GenreLeudd:õđâ SG-ABE/ACC/GEN_PL-NOM ;      niõđ Leudd 2018-09-20
 * +Err/GenreLeudd:õđâ SG-COM_N ;  Leudd 2018-09-20
 
 * nijdd # examples:*
@@ -2566,7 +2566,7 @@ strong_geminate, short_vowel, palatalization
 * :%^PAL N2A_LUOQSSI ;		 N»A: paʹppi
 
 strong_geminate, long_vowel
-* :%^V2VV SG-ABE/ACC/GEN-PL-NOM ;	 paapp
+* :%^V2VV SG-ABE/ACC/GEN_PL-NOM ;	 paapp
 * :%^V2VV%>â SG-LOC ;		 paappâst
 * :%^V2VV SG-COM_IN/PL-OBL ;	 paappi, paappid, paappid, paappin, paappivuiʹm, paappitaa
 
@@ -2616,7 +2616,7 @@ strong_geminate, short_vowel, palatalization
 * :%^PAL%^PALK N2A_LUOQSSI ;		 N»A: paʹppi
 
 strong_geminate, long_vowel
-* :%^V2VV SG-ABE/ACC/GEN-PL-NOM ;	 paapp
+* :%^V2VV SG-ABE/ACC/GEN_PL-NOM ;	 paapp
 * :%^V2VV%>â SG-LOC ;		 paappâst
 * :%^V2VV SG-COM_IN/PL-OBL ;	 paappi, paappid, paappid, paappin, paappivuiʹm, paappitaa
 
@@ -2683,13 +2683,13 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^V2VV%^YXX2YX N_KUUZZYZH-WITHOUT-PAL ;   põõrt-
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^YXX2YX N_KUUZZYZH-WITH-PAL ;   põõʹrt-
 
-* LEXICON N_1Y_VYKK-PL  aalǥ:algg
+* LEXICON N_1Y_VYKK_PL  aalǥ:algg
 * +Cmp/SgNom: R ;                            põrtt
 * :%^V2VV%^YXX2YX PL-NOM ;                 põõrt
 * :%>â ESS/PAR ;                                   põrttân
 * :%^V2VV%^YXX2YX PL-OBL ;                         põõrti
 
-* LEXICON N_1Y_VYXX-PL  põõrt:põrtt
+* LEXICON N_1Y_VYXX_PL  põõrt:põrtt
 * +Cmp/SgNom: R ;                            põrtt
 * :%^V2VV%^YXX2YX PL-NOM ;                 põõrt
 * :%>â ESS/PAR ;                                   põrttân
@@ -2770,7 +2770,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^V2VV%^YXX2YX N_KUUZZYZH-WITHOUT-PAL ;   aaut-
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^YXX2YX N_KUUZZYZH-WITH-PAL ;   aauʹt-
 
-* LEXICON N_AUTT-PL  aaut:autt
+* LEXICON N_AUTT_PL  aaut:autt
 * +Cmp/SgNom: R ;                            autt
 * :%>â ESS/PAR ;                                   auttân
 * :%^V2VV%^YXX2YX PL-NOM ;                 aaut
@@ -2821,7 +2821,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * Yaml: **N-vahtt**
 
 * : SG-NOM ;	    			 vahtt
-* :%^V2VV%^YXX2VX SG-ABE/ACC/GEN-PL-NOM ;  vaaut
+* :%^V2VV%^YXX2VX SG-ABE/ACC/GEN_PL-NOM ;  vaaut
 * :%^PAL%>e SG-ILL ;		      	 vaʹhtte
 * :%^PAL N2A_LUOQSSI ;		 vaʹhtti
 * :%^V2VV%^YXX2VX%>â SG-LOC ;		 vaautâst
@@ -2860,7 +2860,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * :%>â ESS/PAR ;     		 	 jokkân
 * :%^PAL%^PALK%>e SG-ILL ;    		 joʹǩǩe
 * :%^PAL%^PALK N2A_LUOQSSI ;    		 joʹǩǩi
-* :%^V2VV%^KK2GG SG-ABE/ACC/GEN-PL-NOM ;		 jooǥǥ
+* :%^V2VV%^KK2GG SG-ABE/ACC/GEN_PL-NOM ;		 jooǥǥ
 * :%^V2VV%^KK2GG%>â SG-LOC ;	 jooǥǥâ
 * :%^V2VV%^KK2GG SG-COM_IN ;	 jooǥǥin
 * :%^V2VV%^KK2GG PL-OBL ;		 jooǥǥi, kuuzzid, kuuzzid, kuuzzin, kuuzzivuiʹm, kuuzzitaa
@@ -2872,7 +2872,7 @@ N_1Y_VKK_HVVGG
 Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_gem_ss_type
 1.1.1.1.1.1. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|voiced_geminate" 
 
-See also: NMN_KUSS-PLC, which is the same, but minus PL forms and certain cases
+See also: NMN_KUSS_PLC, which is the same, but minus PL forms and certain cases
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
 ## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
@@ -2896,7 +2896,7 @@ similar_to:
 * :%>â ESS/PAR ;     		 	 kussân
 * :%^PAL%>e SG-ILL ;    		 kuʹsse
 * :%^PAL N2A_LUOQSSI ;    		 kuʹssi
-* :%^V2VV%^KK2GG SG-ABE/ACC/GEN-PL-NOM ;		 kuuzz
+* :%^V2VV%^KK2GG SG-ABE/ACC/GEN_PL-NOM ;		 kuuzz
 * :%^V2VV%^KK2GG%>â SG-LOC ;	 kuuzzâ
 * :%^V2VV%^KK2GG SG-COM_IN ;	 kuuzzin
 * :%^V2VV%^KK2GG PL-OBL ;		 kuuzzi, kuuzzid, kuuzzid, kuuzzin, kuuzzivuiʹm, kuuzzitaa
@@ -2926,7 +2926,7 @@ similar_to:
 
 * Yaml: **N-ruossh**
 * : SG-NOM ;	     			
-* :%^CCC2CC SG-ABE/ACC/GEN-PL-NOM ;	 ruõcc
+* :%^CCC2CC SG-ABE/ACC/GEN_PL-NOM ;	 ruõcc
 * :%^PAL%^PALK%>e SG-ILL ;	       		 ruõʹcˈce
 * :%^PAL%^PALK N2A_LUOQSSI ;	   	 ruõʹcˈci
 * :%^CCC2CC%>â SG-LOC ;			 ruõccâst
@@ -2945,7 +2945,7 @@ Sg_Nom: vow_di:vow_high:pal_no:cns_gem_long
 THIS IS NOT THE SAME AS N_MUORR
 * Yaml: **N-ruossh**
 * : SG-NOM ;	     			
-* :%^CCC2CC SG-ABE/ACC/GEN-PL-NOM ;	 ruõcc
+* :%^CCC2CC SG-ABE/ACC/GEN_PL-NOM ;	 ruõcc
 * :%^PAL%>e SG-ILL ;	       		 ruõʹcˈce
 * :%^PAL N2A_LUOQSSI ;	   	 ruõʹcˈci
 * :%^CCC2CC%>â SG-LOC ;			 ruõccâst
@@ -2991,7 +2991,7 @@ THIS IS NOT THE SAME AS N_MUORR
 * +Der+Der/Dimin+N:%^YXX2YX N_MUORYZH-WITHOUT-PAL ;   čuõsk-
 * +Der+Der/Dimin+N:%^PAL%^YXX2YX N_MUORYZH-WITH-PAL ;   čuõʹsǩ-
 
-* LEXICON N_1Y_VWYXX-PL  juõštt:juõštt
+* LEXICON N_1Y_VWYXX_PL  juõštt:juõštt
 * +Cmp/SgNom: R ;                    (1) čuõskk
 * :%>â ESS/PAR ;                           (6) čuõskkân
 * :%^YXX2YX PL-NOM ;       (2) čuõsk
@@ -3078,7 +3078,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * Yaml: **N-chuoskk**
 
 * : SG-NOM ;	    			 (1) ruõidd
-* :%^YXX2YX SG-ABE/ACC/GEN-PL-NOM ;	 (2) ruõid
+* :%^YXX2YX SG-ABE/ACC/GEN_PL-NOM ;	 (2) ruõid
 * :%^PAL%>e SG-ILL ;			 (3) ruõiʹdde
 * :%^PAL N2A_LUOQSSI ;		  ruõiʹddi
 * :%^YXX2YX%>â SG-LOC ;			 (4) ruõidest
@@ -3138,7 +3138,7 @@ puåvv:puåvv
 * Yaml: **N-kiapp, N-puavv**
 
 * : SG-NOM ;	    			 (1) Sg.Nom: puåvv
-* :%^CC2C SG-ABE/ACC/GEN-PL-NOM ;		 (2) Pl.Nom: puåv
+* :%^CC2C SG-ABE/ACC/GEN_PL-NOM ;		 (2) Pl.Nom: puåv
 * :%^PALE%^PAL%^CC2CCC%>e SG-ILL ;	 (3) Sg.Ill: pueʹvˈve
 * :%^PALE%^PAL%^CC2CCC N2A_LUOQSSI ;   N»A: pueʹvˈvi
 * :%^CC2C%>â SG-LOC ;	       		 (4) Sg.Loc: puåvâst
@@ -3149,7 +3149,7 @@ puåvv:puåvv
 * +Der+Der/Dimin+N:%^CC2C N_MUORYZH-WITHOUT-PAL ;   puåv-
 * +Der+Der/Dimin+N:%^PALE%^PAL%^CC2C N_MUORYZH-WITH-PAL ;   pueʹv-
 
-* LEXICON N_PUOAVV-PL  puåvv:puå%{ʹØ%}vv
+* LEXICON N_PUOAVV_PL  puåvv:puå%{ʹØ%}vv
 * +Cmp/SgNom: R ;	    			 (1) Sg.Nom: puåvv
 * :%^CC2C PL-NOM ;		 (2) Pl.Nom: puåv
 * :%>â ESS/PAR ; 	  			 (6) Ess: puåvvân
@@ -3180,7 +3180,7 @@ puåvv:puåvv
 * Yaml: **N-kiapp, N-puavv**
 
 * : SG-NOM ;	    			 (1) Sg.Nom: liâkk
-* :%^KK2GG SG-ABE/ACC/GEN-PL-NOM ;		 (2) Pl.Nom: liâǥǥ
+* :%^KK2GG SG-ABE/ACC/GEN_PL-NOM ;		 (2) Pl.Nom: liâǥǥ
 * :%^PALE%^PAL%^CC2CCC%^PALK%>e SG-ILL ;	 (3) Sg.Ill: lieʹǩˈǩe
 * :%^PALE%^PAL%^CC2CCC%^PALK N2A_LUOQSSI ;   N»A: lieʹǩˈǩi
 * :%^KK2GG%>â SG-LOC ;	       		 (4) Sg.Loc: liâǥǥâst
@@ -3202,7 +3202,7 @@ N_1Y_VWKK
 * Yaml: **N-kiapp, N-puavv**
 
 * : SG-NOM ;	    			 (1) Sg.Nom: liâkk
-* :%^KK2GG SG-ABE/ACC/GEN-PL-NOM ;		 (2) Pl.Nom: liâǥǥ
+* :%^KK2GG SG-ABE/ACC/GEN_PL-NOM ;		 (2) Pl.Nom: liâǥǥ
 * :%^PALE%^PAL%^CC2CCC%^PALK%>e SG-ILL ;	 (3) Sg.Ill: lieʹǩˈǩe
 * :%^PALE%^PAL%^CC2CCC%^PALK N2A_LUOQSSI ;   N»A: lieʹǩˈǩi
 * :%^KK2GG%>â SG-LOC ;	       		 (4) Sg.Loc: liâǥǥâst
@@ -3263,7 +3263,7 @@ siâkˈk:siâkˈk
 * Yaml: **N-siakk**
 
 * : SG-NOM ;	    			   siâkˈk
-* :%^CCC2CC SG-ABE/ACC/GEN-PL-NOM ;	   siâkk
+* :%^CCC2CC SG-ABE/ACC/GEN_PL-NOM ;	   siâkk
 * :%^PALE%^PAL%^PALK%>e SG-ILL ;		   sieʹǩˈǩe
 * :%^PALE%^PAL%^PALK N2A_LUOQSSI ;	   sieʹǩˈǩi
 * :%^CCC2CC%>â SG-LOC ;		 	   (4) Sg.Loc: siâkkâst
@@ -3301,7 +3301,7 @@ N_1Y_VWCCC
 * Yaml: **N-siakk**
 
 * : SG-NOM ;	    			   smiâhˈh
-* : SG-ABE/ACC/GEN-PL-NOM ;	   smiâhˈh
+* : SG-ABE/ACC/GEN_PL-NOM ;	   smiâhˈh
 * :%^PALE%^PAL%>e SG-ILL ;		   smieʹhˈhe
 * :%^PALE%^PAL N2A_LUOQSSI ;	   smieʹhˈhi
 * :%>â SG-LOC ;		 	   (4) Sg.Loc: smiâhˈhâst
@@ -3316,7 +3316,7 @@ N_1Y_VWCCC
 * Yaml: **N-skjiankk**
 
 * : SG-NOM ;	      	 (1) Sg.Nom: sǩiâŋkk
-* :%^YXX2YX SG-ABE/ACC/GEN-PL-NOM ;   (2) Pl.Nom: vuåkr
+* :%^YXX2YX SG-ABE/ACC/GEN_PL-NOM ;   (2) Pl.Nom: vuåkr
 * :%^PALE%^PAL%>e SG-ILL ;	    (3) Sg.Ill: vueʹkrre
 * :%^PALE%^PAL N2A_LUOQSSI ;    N»A: sǩieʹŋǩǩi
 * :%^YXX2YX%>â SG-LOC ;   	    (4) Sg.Loc: vuåkrâst
@@ -3331,7 +3331,7 @@ N_1Y_VWCCC
 * Yaml: **N-skjiankk**
 
 * : SG-NOM ;	      	 (1) Sg.Nom: sǩiâŋkk
-* :%^YXX2YX SG-ABE/ACC/GEN-PL-NOM ;   (2) Pl.Nom: vuåkr
+* :%^YXX2YX SG-ABE/ACC/GEN_PL-NOM ;   (2) Pl.Nom: vuåkr
 * :%^PALE%^PAL%>e SG-ILL ;	    (3) Sg.Ill: vueʹkrre
 * :%^PALE%^PAL N2A_LUOQSSI ;    N»A: sǩieʹŋǩǩi
 * :%^YXX2YX%>â SG-LOC ;   	    (4) Sg.Loc: vuåkrâst
@@ -3367,7 +3367,7 @@ N_1Y_VWCCC
 * Yaml: **N-skjiankk**
 
 * : SG-NOM ;	      	 (1) Sg.Nom: sǩiâŋkk
-* :%^YXX2YX SG-ABE/ACC/GEN-PL-NOM ;   (2) Pl.Nom: sǩiâŋk
+* :%^YXX2YX SG-ABE/ACC/GEN_PL-NOM ;   (2) Pl.Nom: sǩiâŋk
 * :%^PALE%^PAL%^PALK%>e SG-ILL ;	    (3) Sg.Ill: sǩieʹŋǩǩe
 * :%^PALE%^PAL%^PALK N2A_LUOQSSI ;    N»A: sǩieʹŋǩǩi
 * :%^YXX2YX%>â SG-LOC ;   	    (4) Sg.Loc: sǩiâŋkâst
@@ -3403,7 +3403,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * Yaml: **N-skjiankk**
 
 * : SG-NOM ;	      	 (1) Sg.Nom: sǩiâŋkk
-* :%^YXX2YX SG-ABE/ACC/GEN-PL-NOM ;   (2) Pl.Nom: sǩiâŋk
+* :%^YXX2YX SG-ABE/ACC/GEN_PL-NOM ;   (2) Pl.Nom: sǩiâŋk
 * :%^PALE%^PAL%^PALK%>e SG-ILL ;	    (3) Sg.Ill: sǩieʹŋǩǩe
 * :%^PALE%^PAL%^PALK N2A_LUOQSSI ;    N»A: sǩieʹŋǩǩi
 * :%^YXX2YX%>â SG-LOC ;   	    (4) Sg.Loc: sǩiâŋkâst
@@ -3443,7 +3443,7 @@ similar_to: N_AENHNH, N_STAEQLLJ, N_KOONJYL
 Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_gem
 1.1.1.1.1.2. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|single_consonant" 
 
-See also: NMN_TOLL-PLC, which is the same, but minus PL forms and certain cases
+See also: NMN_TOLL_PLC, which is the same, but minus PL forms and certain cases
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
 ## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
@@ -3543,7 +3543,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 
 * :%^Allegro%^YXX2VX SG-LOC-PX_ALLEGRO ;  CHECKME
 
-* LEXICON N_SIJDD-PL  siid:sijdd
+* LEXICON N_SIJDD_PL  siid:sijdd
 * :%^YXX2VX PL-NOM ;	 siid
 * :%^YXX2VX PL-OBL ;     siidi
 * :%>â ESS/PAR ;         sijddâd
@@ -3596,7 +3596,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 is for nouns with -âst Loc. N_Y-EPal2-21
 N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 * :%^KK2GG SG-COM_IN ;			 saaǥǥin
-* :%^KK2GG SG-ABE/ACC/GEN-PL-NOM ;	 saaǥǥ
+* :%^KK2GG SG-ABE/ACC/GEN_PL-NOM ;	 saaǥǥ
 * :%^VV2V%^PAL%^PALK%>e SG-ILL ;	   	 šaʹǩǩe
 * :%^VV2V%^PAL%^PALK N2A_LUOQSSI ;       saʹǩǩi
 * : SG-NOM ;	       			 saakk
@@ -3637,7 +3637,7 @@ Sg_Nom: vow_di:vow_high:pal_no:cns_gem_ss_type
 THIS IS NOT THE SAME AS N_MUORR
 * Yaml: **N-luoss**
 * : SG-NOM ;	     			
-* :%^KK2GG SG-ABE/ACC/GEN-PL-NOM ;	 luõzz
+* :%^KK2GG SG-ABE/ACC/GEN_PL-NOM ;	 luõzz
 * :%^PAL%^CC2CCC%>e SG-ILL ;	 	 luõʹsˈse
 * :%^PAL%^CC2CCC N2A_LUOQSSI ;	 luõʹsˈsi
 * :%^KK2GG%>â SG-LOC ;			 luõzzâst
@@ -3695,7 +3695,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 is for nouns with -âst Loc. N_Y-EPal2-21
 N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 * :%^CC2C SG-COM_IN ;		 paarin
-* :%^CC2C SG-ABE/ACC/GEN-PL-NOM ;	 paar
+* :%^CC2C SG-ABE/ACC/GEN_PL-NOM ;	 paar
 * :%^VV2V%^PAL%>e SG-ILL ;      	 paʹrre
 * :%^VV2V%^PAL N2A_LUOQSSI ;       N»A: paʹrri
 * : SG-NOM ;	       		 paarr
@@ -3708,7 +3708,7 @@ N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 
 * :%^VV2V%^CC2CAllegro SG-LOC-PX_ALLEGRO ;  par-
 
-* LEXICON N_PAARR-PL  paarr:paa%{ʹØ%}rr
+* LEXICON N_PAARR_PL  paarr:paa%{ʹØ%}rr
 * :%^CC2C PL-NOM ;	 paar
 * :â ESS/PAR ;   	  		 paarrân
 * :%^CC2C PL-OBL ;		 paari
@@ -3742,7 +3742,7 @@ Sg_Nom: vow_mono:vow_long:vow_high:pal_no:cns_gem_jj_type
 ## FORMS
 * Yaml: **N-shlaajj**
 
-* :%^J2I%^CC2C SG-ABE/ACC/GEN-PL-NOM ;	 šlaai
+* :%^J2I%^CC2C SG-ABE/ACC/GEN_PL-NOM ;	 šlaai
 
 * šlaajj # examples:*
 * *šlaajj:* `šlaajj+N+Sg+Nom`
@@ -3817,7 +3817,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *ǩiõʹtˈt000%>san*
 * :%^CC2CCC HatY-STEM-PX-STRENGTHEN-ELSE ;  muõrˈr-
 
-* LEXICON N_MUORR-PL  muõrr:muõrr
+* LEXICON N_MUORR_PL  muõrr:muõrr
 * :%>â ESS/PAR ;                           muõrrân
 * :%^CC2C PL-NOM ;                 muõr
 * :%^CC2C PL-OBL ;                         muõri
@@ -3851,7 +3851,7 @@ Sg_Nom: vow_di:vow_high:pal_no:cns_gem_jj_type
 similar_to: N_TUYJJ
 ## FORMS
 * Yaml: **N-kjiojj**
-* +Use/NGminip+Use/NG:%^J2I%^CC2C SG-ABE/ACC/GEN-PL-NOM ;	 (2) Pl.Nom: ǩiõi
+* +Use/NGminip+Use/NG:%^J2I%^CC2C SG-ABE/ACC/GEN_PL-NOM ;	 (2) Pl.Nom: ǩiõi
 
 * kuõjj # examples:*
 * *kuõjj:* `kuõjj+N+Sg+Nom`
@@ -3885,7 +3885,7 @@ similar_to: N_VUYHSS
 * Yaml: **N-miwhtt**
 
 * :%^YXX2VX SG-COM_IN ;			 miõutin
-* :%^YXX2VX  SG-ABE/ACC/GEN-PL-NOM ;	 miõut
+* :%^YXX2VX  SG-ABE/ACC/GEN_PL-NOM ;	 miõut
 * :%^PAL%>e SG-ILL ;	   	 miõʹhtte
 * :%^PAL N2A_LUOQSSI ;       miõʹhtti
 * : SG-NOM ;	       			 miõhtt
@@ -3926,7 +3926,7 @@ N_1Y_VVKK
 is for nouns with -âst Loc. N_Y-EPal2-21
 N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 * : SG-COM_IN ;			 riikkin
-* :  SG-ABE/ACC/GEN-PL-NOM ;	 riikk
+* :  SG-ABE/ACC/GEN_PL-NOM ;	 riikk
 * :%^VV2V%^PAL%^PALK%>e SG-ILL ;	   	 riʹǩǩe
 * :%^VV2V%^PAL%^PALK N2A_LUOQSSI ;       riʹǩǩi CHECKME
 * : SG-NOM ;	       			 riikk
@@ -3948,7 +3948,7 @@ N_2Y_VK_VVKK
 is for nouns with -âst Loc. N_Y-EPal2-21
 N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 * :%^V2VV%^C2CC SG-COM_IN ;			 aʹsttriikkin
-* :%^V2VV%^C2CC  SG-ABE/ACC/GEN-PL-NOM ;	 aʹsttriikk
+* :%^V2VV%^C2CC  SG-ABE/ACC/GEN_PL-NOM ;	 aʹsttriikk
 * :%^PAL%^C2CC%^PALK%>e SG-ILL ;	   	 aʹsttriʹǩǩe
 * :%^PAL%^C2CC%^PALK N2A_LUOQSSI ;       aʹsttriʹǩǩi CHECKME
 * : SG-NOM ;	       			 aʹsttrik
@@ -4041,7 +4041,7 @@ strong_geminate, short_vowel, no_palatalization, low_stem_vowel, stem_vowel: a
 * :%>a ESS/PAR ; 			  (6) Ess: pessan
 
 strong_geminate, long_vowel, no_palatalization, low_stem_vowel
-* :%^V2VV A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	  (2) Pl.Nom: peess
+* :%^V2VV A-STEM_SG-ABE/ACC/GEN_PL-NOM ;	  (2) Pl.Nom: peess
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -4084,7 +4084,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^CC2C A-STEM_SG-ABE/ACC/GEN-PL-NOM ;		 (2) Pl.Nom: šoom
+* :%^CC2C A-STEM_SG-ABE/ACC/GEN_PL-NOM ;		 (2) Pl.Nom: šoom
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -4136,7 +4136,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^CC2C A-STEM_SG-ABE/ACC/GEN-PL-NOM ;		 (2) Pl.Nom: lââj
+* :%^CC2C A-STEM_SG-ABE/ACC/GEN_PL-NOM ;		 (2) Pl.Nom: lââj
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -4184,7 +4184,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^KK2GG A-STEM_SG-ABE/ACC/GEN-PL-NOM ;  (2) Pl.Nom: rääǥǥ
+* :%^KK2GG A-STEM_SG-ABE/ACC/GEN_PL-NOM ;  (2) Pl.Nom: rääǥǥ
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -4237,7 +4237,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^V2VV%^YXX2YX A-STEM_SG-ABE/ACC/GEN-PL-NOM ;  (2) ääld
+* :%^V2VV%^YXX2YX A-STEM_SG-ABE/ACC/GEN_PL-NOM ;  (2) ääld
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -4285,7 +4285,7 @@ Sg_Loc_Px..
 * *aalduž:* `äldd+N+Der+Der/Dimin+N+Sg+Nom`
 
 * LEXICON A-STEM_SG-NOM  (1)
-* LEXICON A-STEM_SG-ABE/ACC/GEN-PL-NOM   (2)
+* LEXICON A-STEM_SG-ABE/ACC/GEN_PL-NOM   (2)
 
 * LEXICON A-STEM_PL-NOM   (2)
 
@@ -4313,7 +4313,7 @@ N_A-URaise3-32
 * : A-STEM_SG-NOM ;	    			  (1) peigg
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
-* :%^V2VV%^YXX2YX A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	  (2) peeiǥ
+* :%^V2VV%^YXX2YX A-STEM_SG-ABE/ACC/GEN_PL-NOM ;	  (2) peeiǥ
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -4366,7 +4366,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^V2VV%^YXX2VX A-STEM_SG-ABE/ACC/GEN-PL-NOM ;  (2) Pl.Nom: kååut
+* :%^V2VV%^YXX2VX A-STEM_SG-ABE/ACC/GEN_PL-NOM ;  (2) Pl.Nom: kååut
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -4430,7 +4430,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^YXX2YX A-STEM_SG-ABE/ACC/GEN-PL-NOM ;  (2) Pl.Nom: meârk
+* :%^YXX2YX A-STEM_SG-ABE/ACC/GEN_PL-NOM ;  (2) Pl.Nom: meârk
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -4463,7 +4463,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^YXX2VX A-STEM_SG-ABE/ACC/GEN-PL-NOM ;  (2) Pl.Nom: vuâus
+* :%^YXX2VX A-STEM_SG-ABE/ACC/GEN_PL-NOM ;  (2) Pl.Nom: vuâus
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -4563,7 +4563,7 @@ there has been an â>e
 N_A-URaise3-32
 * Yaml: **N-tuejj**
 * :%^PALẸ A-STEM_SG-NOM ;  tuẹjj
-* :%^PALẸ%^CC2C A-STEM_SG-ABE/ACC/GEN-PL-NOM ;		 (2) tuẹj
+* :%^PALẸ%^CC2C A-STEM_SG-ABE/ACC/GEN_PL-NOM ;		 (2) tuẹj
 * +Der+Der/Dimin+N:%^PALẸ%^CC2C%> N_PEESSAZH ;   (9) Dim.N.Sg.Nom: tuejaž
 * :%^PALẸ%^CC2C SG-LOC-PX_ALLEGRO ;  (10) tuej»
 
@@ -4591,7 +4591,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^KK2GG A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	 (2) Pl.Nom: čuäʒʒ
+* :%^KK2GG A-STEM_SG-ABE/ACC/GEN_PL-NOM ;	 (2) Pl.Nom: čuäʒʒ
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -4638,7 +4638,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^KK2GG A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	 (2) Pl.Nom: čuäʒʒ
+* :%^KK2GG A-STEM_SG-ABE/ACC/GEN_PL-NOM ;	 (2) Pl.Nom: čuäʒʒ
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -4666,7 +4666,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^KK2GG A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	 (2) Pl.Nom: čuäʒʒ
+* :%^KK2GG A-STEM_SG-ABE/ACC/GEN_PL-NOM ;	 (2) Pl.Nom: čuäʒʒ
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -4699,7 +4699,7 @@ Strong grade: Pl.Nom, Sg.Loc, Sg.Com
 * : A-STEM_SG-NOM ;	    			  neävˈv
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
-* :%^CCC2CC A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	  neävv
+* :%^CCC2CC A-STEM_SG-ABE/ACC/GEN_PL-NOM ;	  neävv
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -4726,7 +4726,7 @@ N_1A_VWCCC cf. _NEAVVV
 * : A-STEM_SG-NOM ;	    			  Peâtˈt
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
-* :%^CCC2CC A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	  Peâtt
+* :%^CCC2CC A-STEM_SG-ABE/ACC/GEN_PL-NOM ;	  Peâtt
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -4770,7 +4770,7 @@ similar_to: N_JEAQRMM
 * : A-STEM_SG-NOM ;	    		  peäldd
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
-* :%^YXX2YX A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	  peäld
+* :%^YXX2YX A-STEM_SG-ABE/ACC/GEN_PL-NOM ;	  peäld
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -4828,7 +4828,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
 * :%>a ESS/PAR ;	   		    	 (6) tuåimman
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^YXX2YX A-STEM_SG-ABE/ACC/GEN-PL-NOM ;  (2) tuåim
+* :%^YXX2YX A-STEM_SG-ABE/ACC/GEN_PL-NOM ;  (2) tuåim
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -4851,7 +4851,7 @@ a-stems (Sg.Loc, Ess, Par).
 * : A-STEM_SG-NOM ;	    		  kapteän
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
-* : A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	  kapteän
+* : A-STEM_SG-ABE/ACC/GEN_PL-NOM ;	  kapteän
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -4875,7 +4875,7 @@ N_   like N_ATOM
 * Yaml: **virvel**
 * : SG-NOM ;	    		 virvel
 * +Use/NGminip+Use/NG:%^PAL%^PALK SG-NOM ;	    		 virveʹl
-* :%^V2VV%^PAL%^PALK SG-ABE/ACC/GEN-PL-NOM ;	 virveeʹl
+* :%^V2VV%^PAL%^PALK SG-ABE/ACC/GEN_PL-NOM ;	 virveeʹl
 * :%^V2VV%>a SG-ILL ;		 virvẹẹla
 * :%^V2VV%^PAL%^PALK%>e SG-LOC ;	   		 virveeʹlest
 * :%^V2VV%^PAL%^PALK%> SG-COM_IN ;		 virveeʹlin
@@ -4887,7 +4887,7 @@ N_   like N_ATOM
 ## FORMS
 * Yaml: **fedd**
 * : SG-NOM ;	    		 Fedd
-* :%^V2VV SG-ABE/ACC/GEN-PL-NOM ;	 Feedd
+* :%^V2VV SG-ABE/ACC/GEN_PL-NOM ;	 Feedd
 * +Use/NGminip+Use/NG:%>u SG-ILL ;			 Feddu
 * :%>a SG-ILL ;		 Fedda
 * :%^V2VV%>a SG-LOC ;	   		 Feeddast
@@ -4916,7 +4916,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 ## FORMS
 * Yaml: **meer, steehl**
 * : SG-NOM ;	    		 meer
-* : SG-ABE/ACC/GEN-PL-NOM ;	 meer
+* : SG-ABE/ACC/GEN_PL-NOM ;	 meer
 * :%>u SG-ILL ;			 meeru
 * +Use/NGminip+Use/NG:%>a SG-ILL ;		 meera
 * :%>a SG-LOC ;	   		 meerast
@@ -4945,7 +4945,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 ## FORMS
 * Yaml: **A-vaeaezhzh**
 * : SG-NOM ;	    		 vääžž
-* : SG-ABE/ACC/GEN-PL-NOM ;	 vääžž
+* : SG-ABE/ACC/GEN_PL-NOM ;	 vääžž
 * :%^VOWRaise%>u SG-ILL ;		 vaažžu
 * +Use/NGminip+Use/NG:%>a SG-ILL ;  	      	 vääžža
 * :%>a SG-LOC ;	   		 vääžžast
@@ -4979,7 +4979,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* : A-STEM_SG-ABE/ACC/GEN-PL-NOM ;   pleân
+* : A-STEM_SG-ABE/ACC/GEN_PL-NOM ;   pleân
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px...,
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -6158,7 +6158,7 @@ NumContLex="1.113"
 * :%^VV2V%^PAL%^KK2GAllegro E-STEM-PX-ALLEGRO ;  (11) čäʹʒ-
 * :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) čäʹcc Ess+Px..
 
-* LEXICON N_CHAAQCC-PL  čääʹʒʒ:čääcc
+* LEXICON N_CHAAQCC_PL  čääʹʒʒ:čääcc
 * +Cmp/SgNom:%^PAL R ;                    (1) čääʹcc
 * :%^PAL%^KK2GG PL-NOM ;         (2) čääʼʒʒ
 * :%^VOWRaise%^PAL%^KK2GG E-STEM_PL-OBL ;           (5) čaaʼʒʒin
@@ -7679,7 +7679,7 @@ CLASS 2 NOMINALS with low stem vowel and u-stems
 * Yaml: **N-maan**
 * There are several stem types
 * :%^V2VV%^VOWLower%^CC2C SG-NOM ;	         mään
-* :%>u SG-ABE/ACC/GEN-PL-NOM ;	 		  mannu
+* :%>u SG-ABE/ACC/GEN_PL-NOM ;	 		  mannu
 
 * LEXICON N_PYYGG  pââgg:põgg
 * LEXICON NMN_PYYGG  pââgg:põgg
@@ -7734,7 +7734,7 @@ CLASS 2 NOMINALS with high stem vowel and â-stems
 * There are several stem types
 * piiđ:pitt
 * :%^V2VV%^CC2C SG-NOM ;		 	 (1) piiđ
-* :%^V2VV%^CC2C SG-ABE/ACC/GEN-PL-NOM ;	 (2) piiđ
+* :%^V2VV%^CC2C SG-ABE/ACC/GEN_PL-NOM ;	 (2) piiđ
 * :%^V2VV%^PAL%^CC2C%>e SG-ILL ; 		 (3) piiʹđe
 * +Use/NGminip+Use/NG:%>u SG-ILL ; 			 (3) pittu
 * :%^V2VV%^CC2Câ SG-LOC ;			 (4) piiđâst
@@ -7867,7 +7867,7 @@ like PÕRTT
 * Yaml: **N-taalkas**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_TAALKYS-PL  taalkâs:ta%^1VOWlkkâs
+* LEXICON N_TAALKYS_PL  taalkâs:ta%^1VOWlkkâs
 
 * LEXICON N_PIIUTYS  piiutâs:pihttâs
 * LEXICON NMN_PIIUTYS  piiutâs:pihttâs
@@ -7876,7 +7876,7 @@ stemtype n-stem piiutâs:piiutâs
 * Yaml: **N-piiutas**
 * :%^Pen%^V2VV%^Pen%^YXX2VX SG-NOM ;  piiutâs
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
-* LEXICON N_PIIUTYS-PL  piiutâs:pihttâs
+* LEXICON N_PIIUTYS_PL  piiutâs:pihttâs
 * +Cmp/SgNom:%^Pen%^V2VV%^Pen%^YXX2VX R ;  piiutâs
 
 * LEXICON N_KOONTYR  koontâr:ko%^1VOWnttâr
@@ -7935,7 +7935,7 @@ CLASS 4 BISYLLABIC, HIGH VOWEL, DIPHTHONG, NO PALATALIZATION
 
 * Yaml: **N-vuoivas**
 *  :%^Pen%^YXX2YX SG-NOM ;	        (1) Sg_Nom: vuõivâs
-*  :%^VC SG-ABE/ACC/GEN-PL-NOM ;   (2) Pl_Nom: vuõivvâz
+*  :%^VC SG-ABE/ACC/GEN_PL-NOM ;   (2) Pl_Nom: vuõivvâz
 *  :%^RmVow%>a SG-ILL ;   (3) Sg_Ill: vuõivvsa
 *  :%^RmVow%>e SG-LOC ;    (4) Sg_Loc: vuõivvsest
 *  :%^RmVow SG-COM_IN/PL-OBL ;     (5) Sg_Com: vuõivvsin
@@ -7978,7 +7978,7 @@ N_GEN2X3-NOM2X1
 * Yaml: **N-tuoddar**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
-*  LEXICON N_NAQZVAANASH-PL  naʹzvaanâš:naʹzvaanâš
+*  LEXICON N_NAQZVAANASH_PL  naʹzvaanâš:naʹzvaanâš
 
 * LEXICON N_COOGGYLM  cõõggâlm:cõõggâlm
 stemtype l-stem cõõggâlm:cõõggâlm
@@ -8014,7 +8014,7 @@ CLASS 4 BISYLLABIC, LOW VOWEL, MONOPHTHONG, NO PALATALIZATION
 = stemtype n-stem ceerkav:ceerkav
 * Yaml: **ceerkav**
 * : SG-NOM ;	       			 (1) ceerkav
-* : SG-ABE/ACC/GEN-PL-NOM ;				 (2) ceerkav
+* : SG-ABE/ACC/GEN_PL-NOM ;				 (2) ceerkav
 * :%^RmVow%>a SG-ILL ;  (3) ceerkva
 * :%^RmVow%>e SG-LOC ;		  	    (4) ceerkvest
 * :%^RmVow SG-COM_IN/PL-OBL ;			    (5) ceerkvin
@@ -8069,7 +8069,7 @@ kååvas, joođâs
 N_LBVVC_as
 * LEXICON NMN_KOAOAVAS  kååvas:kåvvas
 * Yaml: **N-kaavas**
-* :%^VC SG-ABE/ACC/GEN-PL-NOM ;  kåvvaz
+* :%^VC SG-ABE/ACC/GEN_PL-NOM ;  kåvvaz
 * :%^RmVow VOONYS-STEM-PX ;  såbbr-
 
 * LEXICON N_PAEAELKAS  päälkas:pä%^1VOWlkkas
@@ -8128,10 +8128,10 @@ N_LBVWXY_as
 stemtype n-stem kuäivas:kuäivas
 N_GEN2X3-NOM2X1
 * Yaml: **N-kuaeivas**
-* :%^VC SG-ABE/ACC/GEN-PL-NOM ;  kuäivvaz
+* :%^VC SG-ABE/ACC/GEN_PL-NOM ;  kuäivvaz
 * :%^RmVow VOONYS-STEM-PX ;  såbbr-
 
-* LEXICON N_KUAEIVAS-PL  kuäivas:kuäivvas
+* LEXICON N_KUAEIVAS_PL  kuäivas:kuäivvas
 * :%^VC PL-NOM ;  kuäivvaz
 
 * LEXICON N_JUYGXGXAS  juâǥǥas:juâkˈkas
@@ -8142,7 +8142,7 @@ N_GEN2X3-NOM2X1
 ## 2.3.2.2.1 Penultimate stem vowel loss: (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Gen, Pl.Acc, Pl.Ill, Pl.Loc, Pl.Com, Pl.Abe)
 ## 2.3.2.2.1.1 The Sg.Com vowel i appears before final n  
 * Yaml: **N-juaghghas**
-* :%^VC  SG-ABE/ACC/GEN-PL-NOM ;  juâkˈkaz
+* :%^VC  SG-ABE/ACC/GEN_PL-NOM ;  juâkˈkaz
 * :%^RmVow VOONYS-STEM-PX ;  såbbr-
 
 * LEXICON N_HEAVASH  heävaš:heäpˈpaš
@@ -8285,8 +8285,8 @@ N_2E_VWQCES/Z
 * Yaml: **N-puaeres**
 * :%^RmVow VOONYS-STEM-PX ;  puärˈrs-
 
-* LEXICON N_PUAQRES-PL  puäʹres:puärˈres
-* LEXICON NMN_PUAQRES-PL  puäʹres:puärˈres
+* LEXICON N_PUAQRES_PL  puäʹres:puärˈres
+* LEXICON NMN_PUAQRES_PL  puäʹres:puärˈres
 * :%^RmVow VOONYS-STEM-PX ;  puärˈrs-
 
 * LEXICON N_PEAEQLES  peäʹles:peälˈles
@@ -8376,13 +8376,13 @@ this deals with an extra piece of paradigm
 
 * LEXICON N_MOOGXGX  mooǥǥ:mo%^1VOWkˈk
 * :%^V2VV%^KK2GG SG-NOM ;		      mooǥǥ
-* :%>anj SG-ABE/ACC/GEN-PL-NOM ;  mokkanj
+* :%>anj SG-ABE/ACC/GEN_PL-NOM ;  mokkanj
 * :nja SG-ILL ; 			      mokknja
 * :nj VOONYS-STEM-PX ; 			      mokknj
 
 * LEXICON N_CHUYGXGXAS  čuâǥǥas:čuâkˈk
 * :%^KKK2GG%>as SG-NOM ;		      čuâǥǥas
-* :%^VOWRaise%>u SG-ABE/ACC/GEN-PL-NOM ;  čuõkˈku
+* :%^VOWRaise%>u SG-ABE/ACC/GEN_PL-NOM ;  čuõkˈku
 * :sa SG-ILL ; 			      čuâkˈksa
 * :s VOONYS-STEM-PX ; 			      čuâkˈksallaš
 
@@ -8401,7 +8401,7 @@ N_E-ANoPal3-32
 * :%^PAL E-STEM-PX-STRENGTHEN-WITH-PAL ;                       (12) låʹdd
 * +Use/NGminip+Use/NG:%^PAL E-STEM-PX-ALLEGRO ;   (2) låʹdd
 
-* LEXICON N_LOAQDD-PL  lååʹdd:lådd
+* LEXICON N_LOAQDD_PL  lååʹdd:lådd
 
 ## e-a-stems
 
@@ -8418,7 +8418,7 @@ Nouns with -est Loc and -a Ill without ʹ
 * :%^PALẸ%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) miẹˈʹr-
 * :%^PALẸ%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) miẹʹrr Ess+Px..
 
-* LEXICON N_MIEAQRR-PL  meäʹr:meä%{ʹØ%}rr
+* LEXICON N_MIEAQRR_PL  meäʹr:meä%{ʹØ%}rr
 
 * LEXICON N_MIEQLKHKH  mieʹlǩǩ:meâ%{ʹØ%}lkk
 * LEXICON NMN_MIEQLKHKH  mieʹlǩǩ:meâ%{ʹØ%}lkk
@@ -9036,7 +9036,7 @@ Class 7 according to Feist 154-155
 * Yaml: **N-aaum**
 * There are several stem types
 *     :%^V2VV%^YXX2YX SG-NOM ;  
-*	:a SG-ABE/ACC/GEN-PL-NOM ;  
+*	:a SG-ABE/ACC/GEN_PL-NOM ;  
 *	  :%>%{ʼØ%}j%>a SG-ILL ;  
 *  :a SG-LOC ;  
 *  :a SG-COM_IN ;  
@@ -9111,7 +9111,7 @@ Diminutive derivations
 * +Err/Orth+Err/GenreLeudd+Sg+Nom+PxSg1:%>ž%>amâ K;  Leudd 2018-09-20
 * +Err/Orth+Err/GenreLeudd+Sg+Nom+PxSg1:âž%>amâ K;  Leudd 2018-09-20
 
-* LEXICON N_MUORYZH-WITHOUT-PAL-PL  paapp
+* LEXICON N_MUORYZH-WITHOUT-PAL_PL  paapp
 * :že ESS/PAR ;	 	 paappžen
 
 * LEXICON N_MUORYZH-WITH-PAL    paaʹpp-
@@ -9187,7 +9187,7 @@ kuâla, kuâlže
 * +Err/Orth+Err/GenreLeudd+Sg+Nom+PxSg1:%>žamâ K;  Leudd 2018-09-20
 * +Err/Orth+Err/GenreLeudd+Sg+Nom+PxSg1:ažamâ K;  Leudd 2018-09-20
 
-* LEXICON N_KUYLAZH-PL  kuâla:kuâl
+* LEXICON N_KUYLAZH_PL  kuâla:kuâl
 
 * LEXICON N_UUQREZH  uuʹrež:uuʹr
 * Yaml: **N-uurezh**
@@ -9299,17 +9299,17 @@ Used with words like juurd: jurddǥatta
 ### HatY-STEM-PX
 * +Err/GenreLeudd:â SG-NOM ;  Leudd 2018-09-20
 
-* +Err/GenreLeudd:â SG-ABE/ACC/GEN-PL-NOM ;  Leudd 2018-09-20
+* +Err/GenreLeudd:â SG-ABE/ACC/GEN_PL-NOM ;  Leudd 2018-09-20
 * +Err/GenreLeudd:â SG-COM_N ;  Leudd 2018-09-20
 
-* +Err/GenreLeudd:â SG-ABE/ACC/GEN-PL-NOM ;  Leudd 2018-09-20
+* +Err/GenreLeudd:â SG-ABE/ACC/GEN_PL-NOM ;  Leudd 2018-09-20
 * +Err/GenreLeudd:â SG-COM_N ;  Leudd 2018-09-20
 
 ### A-STEM-PX
 
 * +Err/GenreLeudd:a SG-NOM ;  Leudd 2018-09-20
 
-* +Err/GenreLeudd:a SG-ABE/ACC/GEN-PL-NOM ;  Leudd 2018-09-20
+* +Err/GenreLeudd:a SG-ABE/ACC/GEN_PL-NOM ;  Leudd 2018-09-20
 * +Err/GenreLeudd:a SG-COM_N ;  Leudd 2018-09-20
 
 * : N2A_REAEB3H3HAI ;      N»A
@@ -9318,7 +9318,7 @@ Used with words like juurd: jurddǥatta
 
 * +Err/GenreLeudd:e SG-NOM ;  Leudd 2018-09-20
 
-* +Err/GenreLeudd:e SG-ABE/ACC/GEN-PL-NOM ;  Leudd 2018-09-20
+* +Err/GenreLeudd:e SG-ABE/ACC/GEN_PL-NOM ;  Leudd 2018-09-20
 * +Err/GenreLeudd:e SG-COM_N ;  Leudd 2018-09-20
 
 ### LOAOADDAZH-STEM-PX
@@ -9334,7 +9334,7 @@ Used with words like juurd: jurddǥatta
 
 * LEXICON VOONYS-STEM-PX-NO-DER-WITH-PAL  võnns-
 
-* LEXICON VOONYS-STEM-PX-PL  võnns-
+* LEXICON VOONYS-STEM-PX_PL  võnns-
 * VOONYS-STEM-PX-STRENGTHEN-WITH-PAL ;  essive
 
 * LEXICON VOONYS-STEM-PX-STRENGTHEN-WITH-PAL  needs checking
@@ -9548,7 +9548,7 @@ strong_geminate, short_vowel, no_palatalization, high_stem_vowel
 :%>â ESS ;    		  = * LEXICON PROP_TOOBDYLM_mal  tollân
 strong_geminate, short_vowel, palatalization, high_stem_vowel
 single_consonant, long_vowel, no_palatalization, high_stem_vowel
-:%^V2VV%^CC2C SG-ABE/ACC/GEN-PL-NOM ;	= * LEXICON PROP_TOOBDYLM_mal  tool
+:%^V2VV%^CC2C SG-ABE/ACC/GEN_PL-NOM ;	= * LEXICON PROP_TOOBDYLM_mal  tool
 :%^V2VV%^CC2C SG-COM_IN ;               = * LEXICON PROP_TOOBDYLM_mal  toolin
 :%^V2VV%^CC2C PL-OBL ;	                = * LEXICON PROP_TOOBDYLM_mal  tooli, toolid, toolid, toolin, toolivuiʹm, toolitaa
 
@@ -9720,7 +9720,7 @@ The lexicon *V0_LEEQD* for the copula
 * : VSUF-INF_YD ; 1 laukkõõllâd
 * +Ind+Prs+Sg3:%^VOWLower K ;  laukkââll
 * +Ind+Prs+Pl3:%^VV2V%^VOWLower%^PAL%>e K ; 3 laukkâʹlle
-* :%^VV2V%^PAL VSUF-IND-PRT-PL3_YD ; 4 laukkõʹlle
+* :%^VV2V%^PAL VSUF-IND-PRT_PL3_YD ; 4 laukkõʹlle
 * :%^CC2C VSUF-I-POTKOND_YD ; 5 laukkõõl-
 * +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ; 5 ERR laukkõõll-
 * +Pot+Sg3:%^CC2C%>âž   K ; 6 laukkõõl-
@@ -9751,7 +9751,7 @@ NomAct in MOsh
 * *põõ0ss%^VV2V%^VOWLower%^PAL%^PALK%>e*
 * *pâ0ʹss000%>e*
 
-* :%^VV2V%^PAL%^PALK VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: viʹǩǩe
+* :%^VV2V%^PAL%^PALK VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: viʹǩǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 * *põõ0ss%^VV2V%^PAL%>e*
 * *põ0ʼss00%>e*
@@ -9803,7 +9803,7 @@ NomAct in MOsh
 * *põõ0ss%^VV2V%^VOWLower%^PAL%>e*
 * *pâ0ʹss000%>e*
 
-* :%^VV2V%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: viʹǩǩe
+* :%^VV2V%^PAL VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: viʹǩǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 * *põõ0ss%^VV2V%^PAL%>e*
 * *põ0ʼss00%>e*
@@ -9897,7 +9897,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VV2V%^VOWLower%^PAL%>e K ;  (3)  Ind.Prs.Pl3: piâkklâʹčče
 +V+Ind+Prs+Pl3
 
-* :%^VV2V%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: piâkklõʹčče
+* :%^VV2V%^PAL VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: piâkklõʹčče
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * : VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: piâkklõõččâž
@@ -9939,7 +9939,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PALÄ%^PAL%>e K ;  (3) Ind.Prs.Pl3: peäʹǧˈǧe
 +V+Ind+Prs+Pl3
 
-* :%^PAL VSUF-IND-PRT-PL3_YD ;  (4) Ind.Prt.Pl3: piõʹǧˈǧe
+* :%^PAL VSUF-IND-PRT_PL3_YD ;  (4) Ind.Prt.Pl3: piõʹǧˈǧe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^CCC2CC VSUF-I-POTKOND_YD ;  (5-6) Ind.Imprt.Sg2: piõgg
@@ -9974,7 +9974,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PALÄ%^PAL%^PALK%>e K ;  (3) Ind.Prs.Pl3: peäʹǧˈǧe
 +V+Ind+Prs+Pl3
 
-* :%^PAL%^PALK VSUF-IND-PRT-PL3_YD ;  (4) Ind.Prt.Pl3: piõʹǧˈǧe
+* :%^PAL%^PALK VSUF-IND-PRT_PL3_YD ;  (4) Ind.Prt.Pl3: piõʹǧˈǧe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^CCC2CC VSUF-I-POTKOND_YD ;  (5-6) Ind.Imprt.Sg2: piõgg
@@ -10009,7 +10009,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PALÄ%^PAL%>e K ;  (3) Ind.Prs.Pl3: ǩeäʹčˈče
 +V+Ind+Prs+Pl3
 
-* :%^PAL VSUF-IND-PRT-PL3_YD ;  (4) Ind.Prt.Pl3: ǩiõʹčˈče
+* :%^PAL VSUF-IND-PRT_PL3_YD ;  (4) Ind.Prt.Pl3: ǩiõʹčˈče
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^CCC2CC VSUF-I-POTKOND_YD ;  (5-6) Ind.Imprt.Sg2: ǩiõčč
@@ -10057,7 +10057,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PALE%^PAL%^CC2CCC%>e K ;  (3)  Ind.Prs.Pl3: hueʹlˈle
 +Ind+Prs+Pl3
 
-* :%^PAL%^CC2CCC VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: huõʹlˈle
+* :%^PAL%^CC2CCC VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: huõʹlˈle
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^CC2C VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: huõlâž
@@ -10094,7 +10094,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PALÄ%^PAL%^CC2CCC%>e K ;  (3)  Ind.Prs.Pl3: seäʹrˈre
 siõrrâd+V+Ind+Prs+Pl3
 
-* :%^PAL%^CC2CCC VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: siõʹrˈre
+* :%^PAL%^CC2CCC VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: siõʹrˈre
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^CC2C VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: siõrâž
@@ -10129,7 +10129,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%^CC2CCC%>e K ;  (3)  Ind.Prs.Pl3: suäʹpˈpe
 +Ind+Prs+Pl3
 
-* :%^PALE%^PAL%^CC2CCC VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: sueʹpˈpe
+* :%^PALE%^PAL%^CC2CCC VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: sueʹpˈpe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^CC2C VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: suåvâž
@@ -10162,7 +10162,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%^PALK%>e K ;  (3)  Ind.Prs.Pl3: äiʹbbe
 +Ind+Prs+Pl3
 
-* :%^PAL%^PALK VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: aiʹbbe
+* :%^PAL%^PALK VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: aiʹbbe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^V2VV%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: aaibâž
@@ -10195,7 +10195,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ;  (3)  Ind.Prs.Pl3: äiʹbbe
 +Ind+Prs+Pl3
 
-* :%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: aiʹbbe
+* :%^PAL VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: aiʹbbe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^V2VV%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: aaibâž
@@ -10228,7 +10228,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%^PALK%>e K ;  (3)  Ind.Prs.Pl3: tåʹbdde
 +Ind+Prs+Pl3
 
-* :%^PAL%^PALK VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: toʹbdde
+* :%^PAL%^PALK VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: toʹbdde
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^V2VV%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: toobdâž
@@ -10262,7 +10262,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ;  (3)  Ind.Prs.Pl3: tåʹbdde
 +Ind+Prs+Pl3
 
-* :%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: toʹbdde
+* :%^PAL VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: toʹbdde
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^V2VV%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: toobdâž
@@ -10296,7 +10296,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ;  (3)  Ind.Prs.Pl3: âʹhtte
 +Ind+Prs+Pl3
 
-* :%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: õʹhtte
+* :%^PAL VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: õʹhtte
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^V2VV%^YXX2VX VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: õõutâž
@@ -10326,7 +10326,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PALE%^PAL%>e K ;  (3)  Ind.Prs.Pl3: kueʹsǩǩe (allophonic)
 +Ind+Prs+Pl3
 
-* :%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: kuõʹsǩǩe
+* :%^PAL VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: kuõʹsǩǩe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: kuõskâž
@@ -10361,7 +10361,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PALE%^PAL%^PALK%>e K ;  (3)  Ind.Prs.Pl3: kueʹsǩǩe (allophonic)
 +Ind+Prs+Pl3
 
-* :%^PAL%^PALK VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: kuõʹsǩǩe
+* :%^PAL%^PALK VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: kuõʹsǩǩe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: kuõskâž
@@ -10397,7 +10397,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ;  (3)  Ind.Prs.Pl3: kueʹsǩǩe (allophonic)
 +Ind+Prs+Pl3
 
-* :%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: kuõʹsǩǩe
+* :%^PAL VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: kuõʹsǩǩe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^YXX2VX VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: čuõutâž
@@ -10433,7 +10433,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ;  (3)  Ind.Prs.Pl3: sǩeäʹŋǩǩe
 +Ind+Prs+Pl3
 
-* :%^PALE%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: sǩieʹŋǩǩe
+* :%^PALE%^PAL VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: sǩieʹŋǩǩe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: sǩiâŋkâž
@@ -10469,7 +10469,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%^PALK%>e K ;  (3)  Ind.Prs.Pl3: sǩeäʹŋǩǩe
 +Ind+Prs+Pl3
 
-* :%^PALE%^PAL%^PALK VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: sǩieʹŋǩǩe
+* :%^PALE%^PAL%^PALK VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: sǩieʹŋǩǩe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: sǩiâŋkâž
@@ -10538,10 +10538,10 @@ Even-syllable stems in -AD
 * : VSUF-INF_AD ;  (1) +V+Inf: heârrad
 * : VSUF-IND-PRS-SG3_AD ;  (2) +V+Ind+Prs+Sg3: heârr
 * +Ind+Prs+Pl3:%^CC2CCC%>a K ;  (3) +V+Ind+Prs+Pl3: heârˈra
-* :%^VOWRaise%^CC2CCC%> VSUF-IND-PRT-PL3_AD ;  (4) +V+Ind+Prt+Pl3: hiõrˈru
+* :%^VOWRaise%^CC2CCC%> VSUF-IND-PRT_PL3_AD ;  (4) +V+Ind+Prt+Pl3: hiõrˈru
 * +Imprt+Sg3:%^CC2C%>as K ;  (7) +V+Imprt+Sg3: heâras
 * :%^VOWRaise%^CC2CCC VSUF-IMPRT-CONNEGII_AD ;  (8) +V+Imprt+ConNegII: heârˈru
-* :%^CC2CCC VSUF-IMPRT-PL3_AD ;  (9) Ind.Imprt.Pl3: heârˈraz
+* :%^CC2CCC VSUF-IMPRT_PL3_AD ;  (9) Ind.Imprt.Pl3: heârˈraz
 
 * LEXICON V_VUAGGGAD  vuägˈgad:vuägˈg
 * LEXICON IV_VUAGGGAD  vuägˈgad:vuägˈg
@@ -10569,7 +10569,7 @@ ExtraStrong-LowVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%> VSUF-IND-PRT-PL3_AD ;  (4) +V+Ind+Prt+Pl3: laullu
+* :%^VOWRaise%> VSUF-IND-PRT_PL3_AD ;  (4) +V+Ind+Prt+Pl3: laullu
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-No-Palatalization
@@ -10589,7 +10589,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LowVowel-No-palatalization
-* : VSUF-IMPRT-PL3_AD ;  (9) Ind.Imprt.Pl3: läullaz
+* : VSUF-IMPRT_PL3_AD ;  (9) Ind.Imprt.Pl3: läullaz
 Imprt+Pl3
 
 (10) Allegro for incoative: läul»
@@ -10610,7 +10610,7 @@ Actio, ActEss, PrsPrc, NomAct in MOsh
 * +Ind+Prs+Pl3:%>a K ;  (3)  Ind.Prs.Pl3: särnna
 +Ind+Prs+Pl3
 
-* :%^VOWRaise VSUF-IND-PRT-PL3_AD ;  (4) Ind.Prt.Pl3: sarnnu
+* :%^VOWRaise VSUF-IND-PRT_PL3_AD ;  (4) Ind.Prt.Pl3: sarnnu
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^V2VV%^YXX2YX VSUF-I-POTKOND_AD ;  (5-7) +Imprt+Sg2: säärn
@@ -10621,7 +10621,7 @@ Imprt+ConNeg, Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, Ind+Prs+Sg1, Ind+Prs+Sg2
 * :%^VOWRaise VSUF-IMPRT-CONNEGII_AD ;  (8) Imprt.13.ConNeg: sarnnu
 Imprt+ConNegII, Pass+PrfPrc
 
-* : VSUF-IMPRT-PL3_AD ;  (9) särnnaz
+* : VSUF-IMPRT_PL3_AD ;  (9) särnnaz
 +Imprt+Pl3
 
 (10) Allegro for incoative: särn»
@@ -10659,7 +10659,7 @@ Actio, ActEss, PrsPrc, NomAct in MOsh
 * +Ind+Prs+Pl3:%>a K ;  (3)  Ind.Prs.Pl3: påhssa
 +Ind+Prs+Pl3
 
-* :%^VOWRaise VSUF-IND-PRT-PL3_AD ;  (4) Ind.Prt.Pl3: pohssu
+* :%^VOWRaise VSUF-IND-PRT_PL3_AD ;  (4) Ind.Prt.Pl3: pohssu
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^V2VV%^YXX2VX VSUF-I-POTKOND_AD ;  (5-7) +Imprt+Sg2: pååus
@@ -10670,7 +10670,7 @@ Imprt+ConNeg, Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, Ind+Prs+Sg1, Ind+Prs+Sg2
 * :%^VOWRaise VSUF-IMPRT-CONNEGII_AD ;  (8) Imprt.13.ConNeg: pohssu
 Imprt+ConNegII, Pass+PrfPrc
 
-* : VSUF-IMPRT-PL3_AD ;  (9) påhssaz
+* : VSUF-IMPRT_PL3_AD ;  (9) påhssaz
 +Imprt+Pl3
 
 (10) Allegro for incoative: påus»
@@ -10731,7 +10731,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: muʹtte
+* :%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: muʹtte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization 
@@ -10751,7 +10751,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^VOWLower VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: mottaz
+* :%^VOWLower VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: mottaz
 Imprt+Pl3
 
 (11) Present Participle:
@@ -10777,7 +10777,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VV2V%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: puʹtte
+* :%^VV2V%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: puʹtte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization 
@@ -10797,7 +10797,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^VV2V%^VOWLower VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: pottaz
+* :%^VV2V%^VOWLower VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: pottaz
 Imprt+Pl3
 
 (11) Present Participle:
@@ -10822,7 +10822,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: laʹdde
+* :%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: laʹdde
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization 
@@ -10842,7 +10842,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNegII, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^VOWLower VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: läddaz
+* :%^VOWLower VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: läddaz
 Imprt+Pl3
 
 (11) Present Participle:
@@ -10870,7 +10870,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PAL%^CC2CCC%> VSUF-IND-PRT-PL3_ED ;  (4) liõʹđˈđe
+* :%^VOWRaise%^PAL%^CC2CCC%> VSUF-IND-PRT_PL3_ED ;  (4) liõʹđˈđe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -10892,7 +10892,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization (9)
-* :%^CC2CCC VSUF-IMPRT-PL3_ED ;   leâđˈđaz
+* :%^CC2CCC VSUF-IMPRT_PL3_ED ;   leâđˈđaz
 Imprt+Pl3
 
 Allegro (10) lieʹđ»
@@ -10918,7 +10918,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PALÕ%^PAL%^CC2CCC%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: juõʹǩˈǩe
+* :%^VOWRaise%^PALÕ%^PAL%^CC2CCC%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: juõʹǩˈǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization 
@@ -10938,7 +10938,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^CC2CCC VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: juâkˈkaz
+* :%^CC2CCC VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: juâkˈkaz
 Imprt+Pl3
 
 (10) Allegro for incoative: jueʹj»
@@ -10967,7 +10967,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PALÕ%^PAL%^CC2CCC%^PALK%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: juõʹǩˈǩe
+* :%^VOWRaise%^PALÕ%^PAL%^CC2CCC%^PALK%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: juõʹǩˈǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization 
@@ -10987,7 +10987,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^CC2CCC VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: juâkˈkaz
+* :%^CC2CCC VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: juâkˈkaz
 Imprt+Pl3
 
 (10) Allegro for incoative: jueʹj»
@@ -11018,7 +11018,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) kuõʹdˈde
+* :%^VOWRaise%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) kuõʹdˈde
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -11039,7 +11039,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization (9)
-* : VSUF-IMPRT-PL3_ED ;   kuâdˈdaz
+* : VSUF-IMPRT_PL3_ED ;   kuâdˈdaz
 Imprt+Pl3
 
 Allegro (10) kueʹd»
@@ -11068,7 +11068,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) šiõʹtˈte
+* :%^VOWRaise%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) šiõʹtˈte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -11089,7 +11089,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization (9)
-* : VSUF-IMPRT-PL3_ED ;   šeâtˈtaz
+* : VSUF-IMPRT_PL3_ED ;   šeâtˈtaz
 Imprt+Pl3
 
 Allegro (10) šieʹt»
@@ -11113,7 +11113,7 @@ ExtraStrong-LoweredVowel-Palatalization
 Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^PAL%^PALK VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: juʹrdde
+* :%^PAL%^PALK VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: juʹrdde
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -11133,7 +11133,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^VOWLower VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: jorddaz 
+* :%^VOWLower VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: jorddaz 
 Imprt+Pl3
 
 (10) Allegro for incoative: juʹrd»
@@ -11160,7 +11160,7 @@ ExtraStrong-LoweredVowel-Palatalization
 Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^PAL VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: juʹrdde
+* :%^PAL VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: juʹrdde
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -11180,7 +11180,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^VOWLower VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: jorddaz 
+* :%^VOWLower VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: jorddaz 
 Imprt+Pl3
 
 (10) Allegro for incoative: juʹrd»
@@ -11207,7 +11207,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^PAL VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: puʹhtte
+* :%^PAL VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: puʹhtte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -11228,7 +11228,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^VOWLower VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: pohttaz ??
+* :%^VOWLower VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: pohttaz ??
 Imprt+Pl3
 
 (10) Allegro for incoative: puʹht»
@@ -11256,7 +11256,7 @@ ExtraStrong-LoweredVowel-Palatalization xyy2Vyy
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: uʹvdde
+* :%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: uʹvdde
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -11276,7 +11276,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization xyy2Vyy
-* :%^VOWLower%^YXX2VXX VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: ouddaz
+* :%^VOWLower%^YXX2VXX VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: ouddaz
 Imprt+Pl3
 
 (10) Allegro for incoative: uʹvd»
@@ -11304,7 +11304,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PAL%^CC2CCC%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: tiõʹtˈte
+* :%^VOWRaise%^PAL%^CC2CCC%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: tiõʹtˈte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -11325,7 +11325,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNegII, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^CC2CCC VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: teâtˈtaz
+* :%^CC2CCC VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: teâtˈtaz
 Imprt+Pl3
 
 (10) Allegro for incoative: tieʹđ»
@@ -11354,7 +11354,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: ǩiõʹldde
+* :%^VOWRaise%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: ǩiõʹldde
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -11374,7 +11374,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNegII, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* : VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: ǩeâlddaz
+* : VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: ǩeâlddaz
 Imprt+Pl3
 
 (10) Allegro for incoative: ǩieʹld»
@@ -11415,7 +11415,7 @@ Height=-, PAL=+, V=-, C=+, âae=e
 
 YXX-RaisedVowel-Palatalization
 Height=+, PAL=+, V=-, C=+, âae=e
-* :%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: vuõʹlǧǧe
+* :%^VOWRaise%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: vuõʹlǧǧe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 2YX-StableV-Palatalization
@@ -11440,7 +11440,7 @@ Imprt+ConNeg, Pass+PrfPrc
 
 YXX-HighVowel-No-palatalization
 Height=-, PAL=-, V=-, C=+, âae=e
-* : VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: vuâlggaz
+* : VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: vuâlggaz
 Imprt+Pl3
 
 (10) Allegro for incoative: vueʹlj»
@@ -11481,7 +11481,7 @@ Height=-, PAL=+, V=-, C=+, âae=e
 
 YXX-RaisedVowel-Palatalization
 Height=+, PAL=+, V=-, C=+, âae=e
-* :%^VOWRaise%^PAL%^PALK%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: vuõʹlǧǧe
+* :%^VOWRaise%^PAL%^PALK%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: vuõʹlǧǧe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 2YX-StableV-Palatalization
@@ -11506,7 +11506,7 @@ Imprt+ConNeg, Pass+PrfPrc
 
 YXX-HighVowel-No-palatalization
 Height=-, PAL=-, V=-, C=+, âae=e
-* : VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: vuâlggaz
+* : VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: vuâlggaz
 Imprt+Pl3
 
 (10) Allegro for incoative: vueʹlj»
@@ -11543,7 +11543,7 @@ YXX-HighVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 YXX-RaisedVowel-Palatalization
-* :%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: vuõʹhsse
+* :%^VOWRaise%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: vuõʹhsse
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 2YX-StableV-Palatalization
@@ -11563,7 +11563,7 @@ YXX-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 YXX-HighVowel-No-palatalization
-* : VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: vuâhssaz
+* : VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: vuâhssaz
 Imprt+Pl3
 
 (10) Allegro for incoative: vueuʹs»
@@ -11593,7 +11593,7 @@ Strong-LowVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PAL%^PALK%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: joʹtte
+* :%^VOWRaise%^PAL%^PALK%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: joʹtte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Strong-StableV-Palatalization
@@ -11612,7 +11612,7 @@ Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LowVowel-No-palatalization
-* : VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: kättaz
+* : VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: kättaz
 Imprt+Pl3
 
 (10) Allegro for incoative: käʹđ»
@@ -11643,7 +11643,7 @@ Strong-LowVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: joʹtte
+* :%^VOWRaise%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: joʹtte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Strong-StableV-Palatalization
@@ -11662,7 +11662,7 @@ Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LowVowel-No-palatalization
-* : VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: kättaz
+* : VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: kättaz
 Imprt+Pl3
 
 (10) Allegro for incoative: käʹđ»
@@ -11692,7 +11692,7 @@ ExtraStrong-LowVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VV2V%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: joʹtte
+* :%^VV2V%^VOWRaise%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: joʹtte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -11712,7 +11712,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^VV2V VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: jåttaz
+* :%^VV2V VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: jåttaz
 Imprt+Pl3
 
 (11) Present Participle:
@@ -11737,7 +11737,7 @@ Strong-LowVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization CHECKME = 2015-10-11
-* :%^VV2V%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: ǩiʹtte
+* :%^VV2V%^VOWRaise%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: ǩiʹtte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Strong-StableV-Palatalization
@@ -11756,7 +11756,7 @@ Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LowVowel-No-palatalization
-* :%^CC2CCC VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: keâttaz
+* :%^CC2CCC VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: keâttaz
 Imprt+Pl3
 
 (10) Allegro for incoative: keʹt»
@@ -11783,7 +11783,7 @@ ExtraStrong-LowVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VV2V%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: koʹcce
+* :%^VV2V%^VOWRaise%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: koʹcce
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -11803,7 +11803,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^VV2V VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: kåccaz
+* :%^VV2V VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: kåccaz
 Imprt+Pl3
 
 (11) Present Participle:
@@ -11828,7 +11828,7 @@ ExtraStrong-LowVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PAL%^PALK%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: ciʹpcce
+* :%^VOWRaise%^PAL%^PALK%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: ciʹpcce
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -11848,7 +11848,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* : VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: cepssaz
+* : VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: cepssaz
 Imprt+Pl3
 
 (10) Allegro for incoative: ceʹps»
@@ -11877,7 +11877,7 @@ ExtraStrong-LowVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: ciʹpcce
+* :%^VOWRaise%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: ciʹpcce
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -11897,7 +11897,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* : VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: cepssaz
+* : VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: cepssaz
 Imprt+Pl3
 
 (10) Allegro for incoative: ceʹps»
@@ -11922,7 +11922,7 @@ ExtraStrong-LowVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PALẸ%^PAL%^PALK%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: vieʹdˈde
+* :%^VOWRaise%^PALẸ%^PAL%^PALK%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: vieʹdˈde
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -11942,7 +11942,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: veädˈdaz
+* VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: veädˈdaz
 Imprt+Pl3
 
 (11) Present Participle:
@@ -11965,7 +11965,7 @@ ExtraStrong-LowVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PALẸ%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: vieʹdˈde
+* :%^VOWRaise%^PALẸ%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: vieʹdˈde
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -11985,7 +11985,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: veädˈdaz
+* VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: veädˈdaz
 Imprt+Pl3
 
 (11) Present Participle:
@@ -12007,7 +12007,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VV2V%^VOWRaise%^PAL VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: kõʹǩǩe
+* :%^VV2V%^VOWRaise%^PAL VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: kõʹǩǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -12027,7 +12027,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^VV2V VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: kâkkaz
+* :%^VV2V VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: kâkkaz
 Imprt+Pl3
 
 (10) Allegro for incoative: kâʹǩ»
@@ -12054,7 +12054,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VV2V%^VOWRaise%^PAL%^PALK VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: kõʹǩǩe
+* :%^VV2V%^VOWRaise%^PAL%^PALK VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: kõʹǩǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -12074,7 +12074,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^VV2V VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: kâkkaz
+* :%^VV2V VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: kâkkaz
 Imprt+Pl3
 
 (10) Allegro for incoative: kâʹǩ»
@@ -12103,8 +12103,8 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL%^CC2CCC%> VSUF-IND-PRT-PL3_ED ;  (4) pueʹtˈte
-* :%^VOWRaise%^PALÕ%^PAL%^CC2CCC%> VSUF-IND-PRT-PL3_ED ;  (4) puõʹtˈte
+* :%^VOWRaise%^PALE%^PAL%^CC2CCC%> VSUF-IND-PRT_PL3_ED ;  (4) pueʹtˈte
+* :%^VOWRaise%^PALÕ%^PAL%^CC2CCC%> VSUF-IND-PRT_PL3_ED ;  (4) puõʹtˈte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -12114,7 +12114,7 @@ Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 Weak-RaisedVowel-Palatalization
 * +Use/NGminip+Use/NG:%^VOWRaise%^PALE%^PAL%^CC2C%> VSUF-POTENTIAL_ED ;  (6 pueʹđež
 * :%^VOWRaise%^PALÕ%^PAL%^CC2C%> VSUF-POTENTIAL_ED ;  (6 puõʹđež
-* :%^VOWRaise%^PALÕ%^PAL%^CC2C VSUF-IND-PRT-SG3-PL1-PL2_ ;  ( puõʹđi
+* :%^VOWRaise%^PALÕ%^PAL%^CC2C VSUF-IND-PRT-SG3_PL1_PL2_ ;  ( puõʹđi
 * +Pot+Sg3:%^PAL%^CC2C%>ež   K ;  (6   puäʹđež
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
 
@@ -12129,7 +12129,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization (9)
-* :%^CC2CCC VSUF-IMPRT-PL3_ED ;   puätˈtaz
+* :%^CC2CCC VSUF-IMPRT_PL3_ED ;   puätˈtaz
 Imprt+Pl3
 
 Allegro (10)
@@ -12160,8 +12160,8 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL%^CC2CCC VSUF-IND-PRT-PL3_ED ;  (4) pueʹtˈte
-* +Use/NGminip+Use/NG:%^VOWRaise%^PALÕ%^PAL%^CC2CCC VSUF-IND-PRT-PL3_ED ;  (4) puõʹtˈte
+* :%^VOWRaise%^PALE%^PAL%^CC2CCC VSUF-IND-PRT_PL3_ED ;  (4) pueʹtˈte
+* +Use/NGminip+Use/NG:%^VOWRaise%^PALÕ%^PAL%^CC2CCC VSUF-IND-PRT_PL3_ED ;  (4) puõʹtˈte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -12171,7 +12171,7 @@ Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 Weak-RaisedVowel-Palatalization
 * :%^VOWRaise%^PALE%^PAL%^CC2C VSUF-POTENTIAL_ED ;  (6 pueʹđež
 * +Use/NGminip+Use/NG:%^VOWRaise%^PALÕ%^PAL%^CC2C VSUF-POTENTIAL_ED ;  (6 puõʹđež
-* :%^VOWRaise%^PALÕ%^PAL%^CC2C VSUF-IND-PRT-SG3-PL1-PL2_ ;  ( puõʹđi
+* :%^VOWRaise%^PALÕ%^PAL%^CC2C VSUF-IND-PRT-SG3_PL1_PL2_ ;  ( puõʹđi
 * +Pot+Sg3:%^PAL%^CC2C%>ež   K ;  (6   puäʹđež
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
 
@@ -12186,7 +12186,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization (9)
-* :%^CC2CCC VSUF-IMPRT-PL3_ED ;   puätˈtaz
+* :%^CC2CCC VSUF-IMPRT_PL3_ED ;   puätˈtaz
 Imprt+Pl3
 
 No Allegro (10) 2015-12-04
@@ -12214,8 +12214,8 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL%^CC2CCC%> VSUF-IND-PRT-PL3_ED ;  (4) jieʹlˈle
-* +Use/NGminip+Use/NG:%^VOWRaise%^PALÕ%^PAL%^CC2CCC%> VSUF-IND-PRT-PL3_ED ;  (4) jiõʹlˈle
+* :%^VOWRaise%^PALE%^PAL%^CC2CCC%> VSUF-IND-PRT_PL3_ED ;  (4) jieʹlˈle
+* +Use/NGminip+Use/NG:%^VOWRaise%^PALÕ%^PAL%^CC2CCC%> VSUF-IND-PRT_PL3_ED ;  (4) jiõʹlˈle
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -12226,7 +12226,7 @@ Ger.Temp.PxSg3: jeäʹleeʹstes
 Weak-RaisedVowel-Palatalization
 * :%^VOWRaise%^PALE%^PAL%^CC2C%> VSUF-POTENTIAL_ED ;  (6 jieʹlež
 
-* :%^VOWRaise%^PALÕ%^PAL%^CC2C VSUF-IND-PRT-SG3-PL1-PL2_ ;  ( jiõʹli
+* :%^VOWRaise%^PALÕ%^PAL%^CC2C VSUF-IND-PRT-SG3_PL1_PL2_ ;  ( jiõʹli
 * +Pot+Sg3:%^PAL%^CC2C%>ež   K ;  (6   puäʹđež
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
 
@@ -12240,7 +12240,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization (9)
-* :%^CC2CCC VSUF-IMPRT-PL3_ED ;   jeälˈlaz
+* :%^CC2CCC VSUF-IMPRT_PL3_ED ;   jeälˈlaz
 Imprt+Pl3
 
 Allegro (10)
@@ -12270,7 +12270,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL%^CC2CCC%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: pieʹǩˈǩe
+* :%^VOWRaise%^PALE%^PAL%^CC2CCC%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: pieʹǩˈǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization 
@@ -12291,7 +12291,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^CC2CCC VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: peäkˈkaz
+* :%^CC2CCC VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: peäkˈkaz
 Imprt+Pl3
 
 (10) Allegro for incoative: pieʹj» 2015-09-03 IS THIS CORRECT
@@ -12319,7 +12319,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL%^CC2CCC%^PALK%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: pieʹǩˈǩe
+* :%^VOWRaise%^PALE%^PAL%^CC2CCC%^PALK%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: pieʹǩˈǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization 
@@ -12340,7 +12340,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^CC2CCC VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: peäkˈkaz
+* :%^CC2CCC VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: peäkˈkaz
 Imprt+Pl3
 
 (10) Allegro for incoative: pieʹj» 2015-09-03 IS THIS CORRECT
@@ -12371,7 +12371,7 @@ Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 
 Imprt+ConNeg, Pass+PrfPrc
 
-* : VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: vuäinnaz
+* : VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: vuäinnaz
 Imprt+Pl3
 
 (10) Allegro for incoative: vueiʹn»
@@ -12398,7 +12398,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL%^CC2CCC%> VSUF-IND-PRT-PL3_ED ;  (4) vueʹđˈđe
+* :%^VOWRaise%^PALE%^PAL%^CC2CCC%> VSUF-IND-PRT_PL3_ED ;  (4) vueʹđˈđe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -12419,7 +12419,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization (9)
-* :%^CC2CCC VSUF-IMPRT-PL3_ED ;   vuäđˈđaz
+* :%^CC2CCC VSUF-IMPRT_PL3_ED ;   vuäđˈđaz
 Imprt+Pl3
 
 Allegro (10)
@@ -12440,7 +12440,7 @@ vuäˈđeškuätt
 (12)
 * :%^V2VV%^VOWRaise%^YXX2YX VSUF-CHED_ED ;   (12) +Der+Der/ched: 
 
-* : VSUF-IMPRT-PL3_ED ;   (9) +V+Imprt+Pl3 täiddaz
+* : VSUF-IMPRT_PL3_ED ;   (9) +V+Imprt+Pl3 täiddaz
 Imprt+Pl3
 
 Allegro (10)
@@ -12468,7 +12468,7 @@ Allegro (10)
 * *taiʹddi:* `täiʹdded+V+PrsPrc` (Eng. # (11))
 * *taaidčed:* `täiʹdded+V+Der+Der/ched+V+Inf` (Eng. # (12))
 
-* : VSUF-IMPRT-PL3_ED ;   (9) +V+Imprt+Pl3 täiddaz
+* : VSUF-IMPRT_PL3_ED ;   (9) +V+Imprt+Pl3 täiddaz
 Imprt+Pl3
 
 Allegro (10)
@@ -12498,7 +12498,7 @@ Actio, ActEss, PrsPrc
 * +Ind+Prs+Pl3:%^PAL%^PALK%>e K ;  (3) +V+Ind+Prs+Pl3: ceäʹlǩǩe
 +V+Ind+Prs+Pl3
 
-* :%^VOWRaise%^PALE%^PAL%^PALK%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: cieʹlǩǩe
+* :%^VOWRaise%^PALE%^PAL%^PALK%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: cieʹlǩǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^VOWRaise%^PALẸ%^PAL%^YXX2YX%^PALK VSUF-IND-PRS-CONNEG_ED ;  (5) +V+Imprt+Sg2: ciẹʹlǩ
@@ -12513,7 +12513,7 @@ Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 * :%^VOWRaise VSUF-IMPRT-CONNEGII_ED ;  (8) +V+Imprt+ConNegII: ciâlkku
 Imprt+ConNeg, Pass+PrfPrc
 
-* : VSUF-IMPRT-PL3_ED ;   (9) +V+Imprt+Pl3 ceälkkaz
+* : VSUF-IMPRT_PL3_ED ;   (9) +V+Imprt+Pl3 ceälkkaz
 Imprt+Pl3
 
 Allegro (10)
@@ -12534,7 +12534,7 @@ Actio, ActEss, PrsPrc
 * +Ind+Prs+Pl3:%^PAL%^PALK%>e K ;  (3) +V+Ind+Prs+Pl3: ceäʹlǩǩe
 +V+Ind+Prs+Pl3
 
-* :%^VOWRaise%^PALE%^PAL%^PALK%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: cieʹlǩǩe
+* :%^VOWRaise%^PALE%^PAL%^PALK%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: cieʹlǩǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^VOWRaise%^PALẸ%^PAL%^YXX2YX%^PALK VSUF-IND-PRS-CONNEG_ED ;  (5) +V+Imprt+Sg2: ciẹʹlǩ
@@ -12549,7 +12549,7 @@ Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 * :%^VOWRaise VSUF-IMPRT-CONNEGII_ED ;  (8) +V+Imprt+ConNegII: ciâlkku
 Imprt+ConNeg, Pass+PrfPrc
 
-* : VSUF-IMPRT-PL3_ED ;   (9) +V+Imprt+Pl3 ceälkkaz
+* : VSUF-IMPRT_PL3_ED ;   (9) +V+Imprt+Pl3 ceälkkaz
 Imprt+Pl3
 
 Allegro (10)
@@ -12594,7 +12594,7 @@ Actio, ActEss, PrsPrc
 * +Ind+Prs+Pl3:%^PAL%>e K ;  (3) +V+Ind+Prs+Pl3: ceäʹlǩǩe
 +V+Ind+Prs+Pl3
 
-* :%^VOWRaise%^PALE%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: cieʹlǩǩe
+* :%^VOWRaise%^PALE%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: cieʹlǩǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^VOWRaise%^PALẸ%^PAL%^YXX2YX VSUF-IND-PRS-CONNEG_ED ;  (5) +V+Imprt+Sg2: ciẹʹlǩ
@@ -12609,7 +12609,7 @@ Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 * :%^VOWRaise VSUF-IMPRT-CONNEGII_ED ;  (8) +V+Imprt+ConNegII: ciâlkku
 Imprt+ConNeg, Pass+PrfPrc
 
-* : VSUF-IMPRT-PL3_ED ;   (9) +V+Imprt+Pl3 ceälkkaz
+* : VSUF-IMPRT_PL3_ED ;   (9) +V+Imprt+Pl3 ceälkkaz
 Imprt+Pl3
 
 Allegro (10)
@@ -12645,7 +12645,7 @@ Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 (8) +V+Imprt+ConNegII: miâtˈtu
 Imprt+ConNeg, Pass+PrfPrc
 
-* : VSUF-IMPRT-PL3_ED ;   +V+Imprt+Pl3 meätˈtaz
+* : VSUF-IMPRT_PL3_ED ;   +V+Imprt+Pl3 meätˈtaz
 Imprt+Pl3
 
 CHECK FORM
@@ -12682,7 +12682,7 @@ Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 (8) +V+Imprt+ConNegII: miâtˈtu
 Imprt+ConNeg, Pass+PrfPrc
 
-* : VSUF-IMPRT-PL3_ED ;   +V+Imprt+Pl3 meätˈtaz
+* : VSUF-IMPRT_PL3_ED ;   +V+Imprt+Pl3 meätˈtaz
 Imprt+Pl3
 
 CHECK FORM
@@ -12722,7 +12722,7 @@ Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 * :%^VOWRaise VSUF-IMPRT-CONNEGII_ED ;  (8) +V+Imprt+ConNegII: mahssu
 Imprt+ConNeg, Pass+PrfPrc
 
-* : VSUF-IMPRT-PL3_ED ;   (9) +V+Imprt+Pl3 mähssaz
+* : VSUF-IMPRT_PL3_ED ;   (9) +V+Imprt+Pl3 mähssaz
 Imprt+Pl3
 
 (10) mäuʹs
@@ -12948,7 +12948,7 @@ assuming stem kååʹmmerded
 
 assuming stem **kååʹmmerd**
 
-* LEXICON VSUF-IMPRT-PL3_ED  puätˈtaz
+* LEXICON VSUF-IMPRT_PL3_ED  puätˈtaz
 
 * LEXICON FOR-VSUF-PRSPRC_ED  (11) 
 Vowel_raising, palatalization, Cons-grade-retension

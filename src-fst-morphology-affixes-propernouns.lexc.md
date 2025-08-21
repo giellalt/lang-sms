@@ -55,7 +55,7 @@ strong_geminate, short_vowel, no_palatalization, high_stem_vowel
 :%>â ESS ;    		  = * LEXICON PROP_TOOBDYLM_mal  tollân
 strong_geminate, short_vowel, palatalization, high_stem_vowel
 single_consonant, long_vowel, no_palatalization, high_stem_vowel
-:%^V2VV%^CC2C SG-ABE/ACC/GEN-PL-NOM ;	= * LEXICON PROP_TOOBDYLM_mal  tool
+:%^V2VV%^CC2C SG-ABE/ACC/GEN_PL-NOM ;	= * LEXICON PROP_TOOBDYLM_mal  tool
 :%^V2VV%^CC2C SG-COM_IN ;               = * LEXICON PROP_TOOBDYLM_mal  toolin
 :%^V2VV%^CC2C PL-OBL ;	                = * LEXICON PROP_TOOBDYLM_mal  tooli, toolid, toolid, toolin, toolivuiʹm, toolitaa
 

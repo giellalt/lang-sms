@@ -84,7 +84,7 @@ The lexicon *V0_LEEQD* for the copula
 * : VSUF-INF_YD ; 1 laukkõõllâd
 * +Ind+Prs+Sg3:%^VOWLower K ;  laukkââll
 * +Ind+Prs+Pl3:%^VV2V%^VOWLower%^PAL%>e K ; 3 laukkâʹlle
-* :%^VV2V%^PAL VSUF-IND-PRT-PL3_YD ; 4 laukkõʹlle
+* :%^VV2V%^PAL VSUF-IND-PRT_PL3_YD ; 4 laukkõʹlle
 * :%^CC2C VSUF-I-POTKOND_YD ; 5 laukkõõl-
 * +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ; 5 ERR laukkõõll-
 * +Pot+Sg3:%^CC2C%>âž   K ; 6 laukkõõl-
@@ -115,7 +115,7 @@ NomAct in MOsh
 * *põõ0ss%^VV2V%^VOWLower%^PAL%^PALK%>e*
 * *pâ0ʹss000%>e*
 
-* :%^VV2V%^PAL%^PALK VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: viʹǩǩe
+* :%^VV2V%^PAL%^PALK VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: viʹǩǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 * *põõ0ss%^VV2V%^PAL%>e*
 * *põ0ʼss00%>e*
@@ -167,7 +167,7 @@ NomAct in MOsh
 * *põõ0ss%^VV2V%^VOWLower%^PAL%>e*
 * *pâ0ʹss000%>e*
 
-* :%^VV2V%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: viʹǩǩe
+* :%^VV2V%^PAL VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: viʹǩǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 * *põõ0ss%^VV2V%^PAL%>e*
 * *põ0ʼss00%>e*
@@ -261,7 +261,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VV2V%^VOWLower%^PAL%>e K ;  (3)  Ind.Prs.Pl3: piâkklâʹčče
 +V+Ind+Prs+Pl3
 
-* :%^VV2V%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: piâkklõʹčče
+* :%^VV2V%^PAL VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: piâkklõʹčče
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * : VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: piâkklõõččâž
@@ -303,7 +303,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PALÄ%^PAL%>e K ;  (3) Ind.Prs.Pl3: peäʹǧˈǧe
 +V+Ind+Prs+Pl3
 
-* :%^PAL VSUF-IND-PRT-PL3_YD ;  (4) Ind.Prt.Pl3: piõʹǧˈǧe
+* :%^PAL VSUF-IND-PRT_PL3_YD ;  (4) Ind.Prt.Pl3: piõʹǧˈǧe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^CCC2CC VSUF-I-POTKOND_YD ;  (5-6) Ind.Imprt.Sg2: piõgg
@@ -338,7 +338,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PALÄ%^PAL%^PALK%>e K ;  (3) Ind.Prs.Pl3: peäʹǧˈǧe
 +V+Ind+Prs+Pl3
 
-* :%^PAL%^PALK VSUF-IND-PRT-PL3_YD ;  (4) Ind.Prt.Pl3: piõʹǧˈǧe
+* :%^PAL%^PALK VSUF-IND-PRT_PL3_YD ;  (4) Ind.Prt.Pl3: piõʹǧˈǧe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^CCC2CC VSUF-I-POTKOND_YD ;  (5-6) Ind.Imprt.Sg2: piõgg
@@ -373,7 +373,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PALÄ%^PAL%>e K ;  (3) Ind.Prs.Pl3: ǩeäʹčˈče
 +V+Ind+Prs+Pl3
 
-* :%^PAL VSUF-IND-PRT-PL3_YD ;  (4) Ind.Prt.Pl3: ǩiõʹčˈče
+* :%^PAL VSUF-IND-PRT_PL3_YD ;  (4) Ind.Prt.Pl3: ǩiõʹčˈče
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^CCC2CC VSUF-I-POTKOND_YD ;  (5-6) Ind.Imprt.Sg2: ǩiõčč
@@ -421,7 +421,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PALE%^PAL%^CC2CCC%>e K ;  (3)  Ind.Prs.Pl3: hueʹlˈle
 +Ind+Prs+Pl3
 
-* :%^PAL%^CC2CCC VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: huõʹlˈle
+* :%^PAL%^CC2CCC VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: huõʹlˈle
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^CC2C VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: huõlâž
@@ -458,7 +458,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PALÄ%^PAL%^CC2CCC%>e K ;  (3)  Ind.Prs.Pl3: seäʹrˈre
 siõrrâd+V+Ind+Prs+Pl3
 
-* :%^PAL%^CC2CCC VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: siõʹrˈre
+* :%^PAL%^CC2CCC VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: siõʹrˈre
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^CC2C VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: siõrâž
@@ -493,7 +493,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%^CC2CCC%>e K ;  (3)  Ind.Prs.Pl3: suäʹpˈpe
 +Ind+Prs+Pl3
 
-* :%^PALE%^PAL%^CC2CCC VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: sueʹpˈpe
+* :%^PALE%^PAL%^CC2CCC VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: sueʹpˈpe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^CC2C VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: suåvâž
@@ -526,7 +526,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%^PALK%>e K ;  (3)  Ind.Prs.Pl3: äiʹbbe
 +Ind+Prs+Pl3
 
-* :%^PAL%^PALK VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: aiʹbbe
+* :%^PAL%^PALK VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: aiʹbbe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^V2VV%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: aaibâž
@@ -559,7 +559,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ;  (3)  Ind.Prs.Pl3: äiʹbbe
 +Ind+Prs+Pl3
 
-* :%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: aiʹbbe
+* :%^PAL VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: aiʹbbe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^V2VV%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: aaibâž
@@ -592,7 +592,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%^PALK%>e K ;  (3)  Ind.Prs.Pl3: tåʹbdde
 +Ind+Prs+Pl3
 
-* :%^PAL%^PALK VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: toʹbdde
+* :%^PAL%^PALK VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: toʹbdde
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^V2VV%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: toobdâž
@@ -626,7 +626,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ;  (3)  Ind.Prs.Pl3: tåʹbdde
 +Ind+Prs+Pl3
 
-* :%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: toʹbdde
+* :%^PAL VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: toʹbdde
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^V2VV%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: toobdâž
@@ -660,7 +660,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ;  (3)  Ind.Prs.Pl3: âʹhtte
 +Ind+Prs+Pl3
 
-* :%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: õʹhtte
+* :%^PAL VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: õʹhtte
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^V2VV%^YXX2VX VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: õõutâž
@@ -690,7 +690,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PALE%^PAL%>e K ;  (3)  Ind.Prs.Pl3: kueʹsǩǩe (allophonic)
 +Ind+Prs+Pl3
 
-* :%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: kuõʹsǩǩe
+* :%^PAL VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: kuõʹsǩǩe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: kuõskâž
@@ -725,7 +725,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PALE%^PAL%^PALK%>e K ;  (3)  Ind.Prs.Pl3: kueʹsǩǩe (allophonic)
 +Ind+Prs+Pl3
 
-* :%^PAL%^PALK VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: kuõʹsǩǩe
+* :%^PAL%^PALK VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: kuõʹsǩǩe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: kuõskâž
@@ -761,7 +761,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ;  (3)  Ind.Prs.Pl3: kueʹsǩǩe (allophonic)
 +Ind+Prs+Pl3
 
-* :%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: kuõʹsǩǩe
+* :%^PAL VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: kuõʹsǩǩe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^YXX2VX VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: čuõutâž
@@ -797,7 +797,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ;  (3)  Ind.Prs.Pl3: sǩeäʹŋǩǩe
 +Ind+Prs+Pl3
 
-* :%^PALE%^PAL VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: sǩieʹŋǩǩe
+* :%^PALE%^PAL VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: sǩieʹŋǩǩe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: sǩiâŋkâž
@@ -833,7 +833,7 @@ NomAct in MOsh
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%^PALK%>e K ;  (3)  Ind.Prs.Pl3: sǩeäʹŋǩǩe
 +Ind+Prs+Pl3
 
-* :%^PALE%^PAL%^PALK VSUF-IND-PRT-PL3_YD ;  (4)  Ind.Prt.Pl3: sǩieʹŋǩǩe
+* :%^PALE%^PAL%^PALK VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: sǩieʹŋǩǩe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: sǩiâŋkâž
@@ -902,10 +902,10 @@ Even-syllable stems in -AD
 * : VSUF-INF_AD ;  (1) +V+Inf: heârrad
 * : VSUF-IND-PRS-SG3_AD ;  (2) +V+Ind+Prs+Sg3: heârr
 * +Ind+Prs+Pl3:%^CC2CCC%>a K ;  (3) +V+Ind+Prs+Pl3: heârˈra
-* :%^VOWRaise%^CC2CCC%> VSUF-IND-PRT-PL3_AD ;  (4) +V+Ind+Prt+Pl3: hiõrˈru
+* :%^VOWRaise%^CC2CCC%> VSUF-IND-PRT_PL3_AD ;  (4) +V+Ind+Prt+Pl3: hiõrˈru
 * +Imprt+Sg3:%^CC2C%>as K ;  (7) +V+Imprt+Sg3: heâras
 * :%^VOWRaise%^CC2CCC VSUF-IMPRT-CONNEGII_AD ;  (8) +V+Imprt+ConNegII: heârˈru
-* :%^CC2CCC VSUF-IMPRT-PL3_AD ;  (9) Ind.Imprt.Pl3: heârˈraz
+* :%^CC2CCC VSUF-IMPRT_PL3_AD ;  (9) Ind.Imprt.Pl3: heârˈraz
 
 * LEXICON V_VUAGGGAD  vuägˈgad:vuägˈg
 * LEXICON IV_VUAGGGAD  vuägˈgad:vuägˈg
@@ -933,7 +933,7 @@ ExtraStrong-LowVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%> VSUF-IND-PRT-PL3_AD ;  (4) +V+Ind+Prt+Pl3: laullu
+* :%^VOWRaise%> VSUF-IND-PRT_PL3_AD ;  (4) +V+Ind+Prt+Pl3: laullu
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-No-Palatalization
@@ -953,7 +953,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LowVowel-No-palatalization
-* : VSUF-IMPRT-PL3_AD ;  (9) Ind.Imprt.Pl3: läullaz
+* : VSUF-IMPRT_PL3_AD ;  (9) Ind.Imprt.Pl3: läullaz
 Imprt+Pl3
 
 (10) Allegro for incoative: läul»
@@ -974,7 +974,7 @@ Actio, ActEss, PrsPrc, NomAct in MOsh
 * +Ind+Prs+Pl3:%>a K ;  (3)  Ind.Prs.Pl3: särnna
 +Ind+Prs+Pl3
 
-* :%^VOWRaise VSUF-IND-PRT-PL3_AD ;  (4) Ind.Prt.Pl3: sarnnu
+* :%^VOWRaise VSUF-IND-PRT_PL3_AD ;  (4) Ind.Prt.Pl3: sarnnu
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^V2VV%^YXX2YX VSUF-I-POTKOND_AD ;  (5-7) +Imprt+Sg2: säärn
@@ -985,7 +985,7 @@ Imprt+ConNeg, Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, Ind+Prs+Sg1, Ind+Prs+Sg2
 * :%^VOWRaise VSUF-IMPRT-CONNEGII_AD ;  (8) Imprt.13.ConNeg: sarnnu
 Imprt+ConNegII, Pass+PrfPrc
 
-* : VSUF-IMPRT-PL3_AD ;  (9) särnnaz
+* : VSUF-IMPRT_PL3_AD ;  (9) särnnaz
 +Imprt+Pl3
 
 (10) Allegro for incoative: särn»
@@ -1023,7 +1023,7 @@ Actio, ActEss, PrsPrc, NomAct in MOsh
 * +Ind+Prs+Pl3:%>a K ;  (3)  Ind.Prs.Pl3: påhssa
 +Ind+Prs+Pl3
 
-* :%^VOWRaise VSUF-IND-PRT-PL3_AD ;  (4) Ind.Prt.Pl3: pohssu
+* :%^VOWRaise VSUF-IND-PRT_PL3_AD ;  (4) Ind.Prt.Pl3: pohssu
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^V2VV%^YXX2VX VSUF-I-POTKOND_AD ;  (5-7) +Imprt+Sg2: pååus
@@ -1034,7 +1034,7 @@ Imprt+ConNeg, Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, Ind+Prs+Sg1, Ind+Prs+Sg2
 * :%^VOWRaise VSUF-IMPRT-CONNEGII_AD ;  (8) Imprt.13.ConNeg: pohssu
 Imprt+ConNegII, Pass+PrfPrc
 
-* : VSUF-IMPRT-PL3_AD ;  (9) påhssaz
+* : VSUF-IMPRT_PL3_AD ;  (9) påhssaz
 +Imprt+Pl3
 
 (10) Allegro for incoative: påus»
@@ -1095,7 +1095,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: muʹtte
+* :%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: muʹtte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization 
@@ -1115,7 +1115,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^VOWLower VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: mottaz
+* :%^VOWLower VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: mottaz
 Imprt+Pl3
 
 (11) Present Participle:
@@ -1141,7 +1141,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VV2V%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: puʹtte
+* :%^VV2V%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: puʹtte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization 
@@ -1161,7 +1161,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^VV2V%^VOWLower VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: pottaz
+* :%^VV2V%^VOWLower VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: pottaz
 Imprt+Pl3
 
 (11) Present Participle:
@@ -1186,7 +1186,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: laʹdde
+* :%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: laʹdde
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization 
@@ -1206,7 +1206,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNegII, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^VOWLower VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: läddaz
+* :%^VOWLower VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: läddaz
 Imprt+Pl3
 
 (11) Present Participle:
@@ -1234,7 +1234,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PAL%^CC2CCC%> VSUF-IND-PRT-PL3_ED ;  (4) liõʹđˈđe
+* :%^VOWRaise%^PAL%^CC2CCC%> VSUF-IND-PRT_PL3_ED ;  (4) liõʹđˈđe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -1256,7 +1256,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization (9)
-* :%^CC2CCC VSUF-IMPRT-PL3_ED ;   leâđˈđaz
+* :%^CC2CCC VSUF-IMPRT_PL3_ED ;   leâđˈđaz
 Imprt+Pl3
 
 Allegro (10) lieʹđ»
@@ -1282,7 +1282,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PALÕ%^PAL%^CC2CCC%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: juõʹǩˈǩe
+* :%^VOWRaise%^PALÕ%^PAL%^CC2CCC%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: juõʹǩˈǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization 
@@ -1302,7 +1302,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^CC2CCC VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: juâkˈkaz
+* :%^CC2CCC VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: juâkˈkaz
 Imprt+Pl3
 
 (10) Allegro for incoative: jueʹj»
@@ -1331,7 +1331,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PALÕ%^PAL%^CC2CCC%^PALK%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: juõʹǩˈǩe
+* :%^VOWRaise%^PALÕ%^PAL%^CC2CCC%^PALK%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: juõʹǩˈǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization 
@@ -1351,7 +1351,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^CC2CCC VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: juâkˈkaz
+* :%^CC2CCC VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: juâkˈkaz
 Imprt+Pl3
 
 (10) Allegro for incoative: jueʹj»
@@ -1382,7 +1382,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) kuõʹdˈde
+* :%^VOWRaise%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) kuõʹdˈde
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -1403,7 +1403,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization (9)
-* : VSUF-IMPRT-PL3_ED ;   kuâdˈdaz
+* : VSUF-IMPRT_PL3_ED ;   kuâdˈdaz
 Imprt+Pl3
 
 Allegro (10) kueʹd»
@@ -1432,7 +1432,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) šiõʹtˈte
+* :%^VOWRaise%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) šiõʹtˈte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -1453,7 +1453,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization (9)
-* : VSUF-IMPRT-PL3_ED ;   šeâtˈtaz
+* : VSUF-IMPRT_PL3_ED ;   šeâtˈtaz
 Imprt+Pl3
 
 Allegro (10) šieʹt»
@@ -1477,7 +1477,7 @@ ExtraStrong-LoweredVowel-Palatalization
 Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^PAL%^PALK VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: juʹrdde
+* :%^PAL%^PALK VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: juʹrdde
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -1497,7 +1497,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^VOWLower VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: jorddaz 
+* :%^VOWLower VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: jorddaz 
 Imprt+Pl3
 
 (10) Allegro for incoative: juʹrd»
@@ -1524,7 +1524,7 @@ ExtraStrong-LoweredVowel-Palatalization
 Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^PAL VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: juʹrdde
+* :%^PAL VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: juʹrdde
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -1544,7 +1544,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^VOWLower VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: jorddaz 
+* :%^VOWLower VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: jorddaz 
 Imprt+Pl3
 
 (10) Allegro for incoative: juʹrd»
@@ -1571,7 +1571,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^PAL VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: puʹhtte
+* :%^PAL VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: puʹhtte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -1592,7 +1592,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^VOWLower VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: pohttaz ??
+* :%^VOWLower VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: pohttaz ??
 Imprt+Pl3
 
 (10) Allegro for incoative: puʹht»
@@ -1620,7 +1620,7 @@ ExtraStrong-LoweredVowel-Palatalization xyy2Vyy
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: uʹvdde
+* :%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: uʹvdde
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -1640,7 +1640,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization xyy2Vyy
-* :%^VOWLower%^YXX2VXX VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: ouddaz
+* :%^VOWLower%^YXX2VXX VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: ouddaz
 Imprt+Pl3
 
 (10) Allegro for incoative: uʹvd»
@@ -1668,7 +1668,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PAL%^CC2CCC%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: tiõʹtˈte
+* :%^VOWRaise%^PAL%^CC2CCC%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: tiõʹtˈte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -1689,7 +1689,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNegII, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^CC2CCC VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: teâtˈtaz
+* :%^CC2CCC VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: teâtˈtaz
 Imprt+Pl3
 
 (10) Allegro for incoative: tieʹđ»
@@ -1718,7 +1718,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: ǩiõʹldde
+* :%^VOWRaise%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: ǩiõʹldde
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -1738,7 +1738,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNegII, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* : VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: ǩeâlddaz
+* : VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: ǩeâlddaz
 Imprt+Pl3
 
 (10) Allegro for incoative: ǩieʹld»
@@ -1779,7 +1779,7 @@ Height=-, PAL=+, V=-, C=+, âae=e
 
 YXX-RaisedVowel-Palatalization
 Height=+, PAL=+, V=-, C=+, âae=e
-* :%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: vuõʹlǧǧe
+* :%^VOWRaise%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: vuõʹlǧǧe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 2YX-StableV-Palatalization
@@ -1804,7 +1804,7 @@ Imprt+ConNeg, Pass+PrfPrc
 
 YXX-HighVowel-No-palatalization
 Height=-, PAL=-, V=-, C=+, âae=e
-* : VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: vuâlggaz
+* : VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: vuâlggaz
 Imprt+Pl3
 
 (10) Allegro for incoative: vueʹlj»
@@ -1845,7 +1845,7 @@ Height=-, PAL=+, V=-, C=+, âae=e
 
 YXX-RaisedVowel-Palatalization
 Height=+, PAL=+, V=-, C=+, âae=e
-* :%^VOWRaise%^PAL%^PALK%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: vuõʹlǧǧe
+* :%^VOWRaise%^PAL%^PALK%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: vuõʹlǧǧe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 2YX-StableV-Palatalization
@@ -1870,7 +1870,7 @@ Imprt+ConNeg, Pass+PrfPrc
 
 YXX-HighVowel-No-palatalization
 Height=-, PAL=-, V=-, C=+, âae=e
-* : VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: vuâlggaz
+* : VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: vuâlggaz
 Imprt+Pl3
 
 (10) Allegro for incoative: vueʹlj»
@@ -1907,7 +1907,7 @@ YXX-HighVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 YXX-RaisedVowel-Palatalization
-* :%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: vuõʹhsse
+* :%^VOWRaise%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: vuõʹhsse
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 2YX-StableV-Palatalization
@@ -1927,7 +1927,7 @@ YXX-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 YXX-HighVowel-No-palatalization
-* : VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: vuâhssaz
+* : VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: vuâhssaz
 Imprt+Pl3
 
 (10) Allegro for incoative: vueuʹs»
@@ -1957,7 +1957,7 @@ Strong-LowVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PAL%^PALK%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: joʹtte
+* :%^VOWRaise%^PAL%^PALK%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: joʹtte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Strong-StableV-Palatalization
@@ -1976,7 +1976,7 @@ Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LowVowel-No-palatalization
-* : VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: kättaz
+* : VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: kättaz
 Imprt+Pl3
 
 (10) Allegro for incoative: käʹđ»
@@ -2007,7 +2007,7 @@ Strong-LowVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: joʹtte
+* :%^VOWRaise%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: joʹtte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Strong-StableV-Palatalization
@@ -2026,7 +2026,7 @@ Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LowVowel-No-palatalization
-* : VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: kättaz
+* : VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: kättaz
 Imprt+Pl3
 
 (10) Allegro for incoative: käʹđ»
@@ -2056,7 +2056,7 @@ ExtraStrong-LowVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VV2V%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: joʹtte
+* :%^VV2V%^VOWRaise%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: joʹtte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -2076,7 +2076,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^VV2V VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: jåttaz
+* :%^VV2V VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: jåttaz
 Imprt+Pl3
 
 (11) Present Participle:
@@ -2101,7 +2101,7 @@ Strong-LowVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization CHECKME = 2015-10-11
-* :%^VV2V%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: ǩiʹtte
+* :%^VV2V%^VOWRaise%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: ǩiʹtte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Strong-StableV-Palatalization
@@ -2120,7 +2120,7 @@ Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LowVowel-No-palatalization
-* :%^CC2CCC VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: keâttaz
+* :%^CC2CCC VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: keâttaz
 Imprt+Pl3
 
 (10) Allegro for incoative: keʹt»
@@ -2147,7 +2147,7 @@ ExtraStrong-LowVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VV2V%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: koʹcce
+* :%^VV2V%^VOWRaise%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: koʹcce
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -2167,7 +2167,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^VV2V VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: kåccaz
+* :%^VV2V VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: kåccaz
 Imprt+Pl3
 
 (11) Present Participle:
@@ -2192,7 +2192,7 @@ ExtraStrong-LowVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PAL%^PALK%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: ciʹpcce
+* :%^VOWRaise%^PAL%^PALK%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: ciʹpcce
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -2212,7 +2212,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* : VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: cepssaz
+* : VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: cepssaz
 Imprt+Pl3
 
 (10) Allegro for incoative: ceʹps»
@@ -2241,7 +2241,7 @@ ExtraStrong-LowVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: ciʹpcce
+* :%^VOWRaise%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: ciʹpcce
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -2261,7 +2261,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* : VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: cepssaz
+* : VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: cepssaz
 Imprt+Pl3
 
 (10) Allegro for incoative: ceʹps»
@@ -2286,7 +2286,7 @@ ExtraStrong-LowVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PALẸ%^PAL%^PALK%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: vieʹdˈde
+* :%^VOWRaise%^PALẸ%^PAL%^PALK%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: vieʹdˈde
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -2306,7 +2306,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: veädˈdaz
+* VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: veädˈdaz
 Imprt+Pl3
 
 (11) Present Participle:
@@ -2329,7 +2329,7 @@ ExtraStrong-LowVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PALẸ%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: vieʹdˈde
+* :%^VOWRaise%^PALẸ%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: vieʹdˈde
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -2349,7 +2349,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: veädˈdaz
+* VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: veädˈdaz
 Imprt+Pl3
 
 (11) Present Participle:
@@ -2371,7 +2371,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VV2V%^VOWRaise%^PAL VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: kõʹǩǩe
+* :%^VV2V%^VOWRaise%^PAL VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: kõʹǩǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -2391,7 +2391,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^VV2V VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: kâkkaz
+* :%^VV2V VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: kâkkaz
 Imprt+Pl3
 
 (10) Allegro for incoative: kâʹǩ»
@@ -2418,7 +2418,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VV2V%^VOWRaise%^PAL%^PALK VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: kõʹǩǩe
+* :%^VV2V%^VOWRaise%^PAL%^PALK VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: kõʹǩǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -2438,7 +2438,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^VV2V VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: kâkkaz
+* :%^VV2V VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: kâkkaz
 Imprt+Pl3
 
 (10) Allegro for incoative: kâʹǩ»
@@ -2467,8 +2467,8 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL%^CC2CCC%> VSUF-IND-PRT-PL3_ED ;  (4) pueʹtˈte
-* :%^VOWRaise%^PALÕ%^PAL%^CC2CCC%> VSUF-IND-PRT-PL3_ED ;  (4) puõʹtˈte
+* :%^VOWRaise%^PALE%^PAL%^CC2CCC%> VSUF-IND-PRT_PL3_ED ;  (4) pueʹtˈte
+* :%^VOWRaise%^PALÕ%^PAL%^CC2CCC%> VSUF-IND-PRT_PL3_ED ;  (4) puõʹtˈte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -2478,7 +2478,7 @@ Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 Weak-RaisedVowel-Palatalization
 * +Use/NGminip+Use/NG:%^VOWRaise%^PALE%^PAL%^CC2C%> VSUF-POTENTIAL_ED ;  (6 pueʹđež
 * :%^VOWRaise%^PALÕ%^PAL%^CC2C%> VSUF-POTENTIAL_ED ;  (6 puõʹđež
-* :%^VOWRaise%^PALÕ%^PAL%^CC2C VSUF-IND-PRT-SG3-PL1-PL2_ ;  ( puõʹđi
+* :%^VOWRaise%^PALÕ%^PAL%^CC2C VSUF-IND-PRT-SG3_PL1_PL2_ ;  ( puõʹđi
 * +Pot+Sg3:%^PAL%^CC2C%>ež   K ;  (6   puäʹđež
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
 
@@ -2493,7 +2493,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization (9)
-* :%^CC2CCC VSUF-IMPRT-PL3_ED ;   puätˈtaz
+* :%^CC2CCC VSUF-IMPRT_PL3_ED ;   puätˈtaz
 Imprt+Pl3
 
 Allegro (10)
@@ -2524,8 +2524,8 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL%^CC2CCC VSUF-IND-PRT-PL3_ED ;  (4) pueʹtˈte
-* +Use/NGminip+Use/NG:%^VOWRaise%^PALÕ%^PAL%^CC2CCC VSUF-IND-PRT-PL3_ED ;  (4) puõʹtˈte
+* :%^VOWRaise%^PALE%^PAL%^CC2CCC VSUF-IND-PRT_PL3_ED ;  (4) pueʹtˈte
+* +Use/NGminip+Use/NG:%^VOWRaise%^PALÕ%^PAL%^CC2CCC VSUF-IND-PRT_PL3_ED ;  (4) puõʹtˈte
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -2535,7 +2535,7 @@ Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 Weak-RaisedVowel-Palatalization
 * :%^VOWRaise%^PALE%^PAL%^CC2C VSUF-POTENTIAL_ED ;  (6 pueʹđež
 * +Use/NGminip+Use/NG:%^VOWRaise%^PALÕ%^PAL%^CC2C VSUF-POTENTIAL_ED ;  (6 puõʹđež
-* :%^VOWRaise%^PALÕ%^PAL%^CC2C VSUF-IND-PRT-SG3-PL1-PL2_ ;  ( puõʹđi
+* :%^VOWRaise%^PALÕ%^PAL%^CC2C VSUF-IND-PRT-SG3_PL1_PL2_ ;  ( puõʹđi
 * +Pot+Sg3:%^PAL%^CC2C%>ež   K ;  (6   puäʹđež
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
 
@@ -2550,7 +2550,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization (9)
-* :%^CC2CCC VSUF-IMPRT-PL3_ED ;   puätˈtaz
+* :%^CC2CCC VSUF-IMPRT_PL3_ED ;   puätˈtaz
 Imprt+Pl3
 
 No Allegro (10) 2015-12-04
@@ -2578,8 +2578,8 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL%^CC2CCC%> VSUF-IND-PRT-PL3_ED ;  (4) jieʹlˈle
-* +Use/NGminip+Use/NG:%^VOWRaise%^PALÕ%^PAL%^CC2CCC%> VSUF-IND-PRT-PL3_ED ;  (4) jiõʹlˈle
+* :%^VOWRaise%^PALE%^PAL%^CC2CCC%> VSUF-IND-PRT_PL3_ED ;  (4) jieʹlˈle
+* +Use/NGminip+Use/NG:%^VOWRaise%^PALÕ%^PAL%^CC2CCC%> VSUF-IND-PRT_PL3_ED ;  (4) jiõʹlˈle
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -2590,7 +2590,7 @@ Ger.Temp.PxSg3: jeäʹleeʹstes
 Weak-RaisedVowel-Palatalization
 * :%^VOWRaise%^PALE%^PAL%^CC2C%> VSUF-POTENTIAL_ED ;  (6 jieʹlež
 
-* :%^VOWRaise%^PALÕ%^PAL%^CC2C VSUF-IND-PRT-SG3-PL1-PL2_ ;  ( jiõʹli
+* :%^VOWRaise%^PALÕ%^PAL%^CC2C VSUF-IND-PRT-SG3_PL1_PL2_ ;  ( jiõʹli
 * +Pot+Sg3:%^PAL%^CC2C%>ež   K ;  (6   puäʹđež
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot,
 
@@ -2604,7 +2604,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization (9)
-* :%^CC2CCC VSUF-IMPRT-PL3_ED ;   jeälˈlaz
+* :%^CC2CCC VSUF-IMPRT_PL3_ED ;   jeälˈlaz
 Imprt+Pl3
 
 Allegro (10)
@@ -2634,7 +2634,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL%^CC2CCC%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: pieʹǩˈǩe
+* :%^VOWRaise%^PALE%^PAL%^CC2CCC%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: pieʹǩˈǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization 
@@ -2655,7 +2655,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^CC2CCC VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: peäkˈkaz
+* :%^CC2CCC VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: peäkˈkaz
 Imprt+Pl3
 
 (10) Allegro for incoative: pieʹj» 2015-09-03 IS THIS CORRECT
@@ -2683,7 +2683,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL%^CC2CCC%^PALK%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: pieʹǩˈǩe
+* :%^VOWRaise%^PALE%^PAL%^CC2CCC%^PALK%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: pieʹǩˈǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization 
@@ -2704,7 +2704,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization
-* :%^CC2CCC VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: peäkˈkaz
+* :%^CC2CCC VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: peäkˈkaz
 Imprt+Pl3
 
 (10) Allegro for incoative: pieʹj» 2015-09-03 IS THIS CORRECT
@@ -2735,7 +2735,7 @@ Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 
 Imprt+ConNeg, Pass+PrfPrc
 
-* : VSUF-IMPRT-PL3_ED ;  (9) Ind.Imprt.Pl3: vuäinnaz
+* : VSUF-IMPRT_PL3_ED ;  (9) Ind.Imprt.Pl3: vuäinnaz
 Imprt+Pl3
 
 (10) Allegro for incoative: vueiʹn»
@@ -2762,7 +2762,7 @@ ExtraStrong-LoweredVowel-Palatalization
 +V+Ind+Prs+Pl3
 
 ExtraStrong-RaisedVowel-Palatalization
-* :%^VOWRaise%^PALE%^PAL%^CC2CCC%> VSUF-IND-PRT-PL3_ED ;  (4) vueʹđˈđe
+* :%^VOWRaise%^PALE%^PAL%^CC2CCC%> VSUF-IND-PRT_PL3_ED ;  (4) vueʹđˈđe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
@@ -2783,7 +2783,7 @@ ExtraStrong-RaisedVowel-No-palatalization
 Imprt+ConNeg, Pass+PrfPrc
 
 ExtraStrong-LoweredVowel-No-palatalization (9)
-* :%^CC2CCC VSUF-IMPRT-PL3_ED ;   vuäđˈđaz
+* :%^CC2CCC VSUF-IMPRT_PL3_ED ;   vuäđˈđaz
 Imprt+Pl3
 
 Allegro (10)
@@ -2804,7 +2804,7 @@ vuäˈđeškuätt
 (12)
 * :%^V2VV%^VOWRaise%^YXX2YX VSUF-CHED_ED ;   (12) +Der+Der/ched: 
 
-* : VSUF-IMPRT-PL3_ED ;   (9) +V+Imprt+Pl3 täiddaz
+* : VSUF-IMPRT_PL3_ED ;   (9) +V+Imprt+Pl3 täiddaz
 Imprt+Pl3
 
 Allegro (10)
@@ -2832,7 +2832,7 @@ Allegro (10)
 * *taiʹddi:* `täiʹdded+V+PrsPrc` (Eng. # (11))
 * *taaidčed:* `täiʹdded+V+Der+Der/ched+V+Inf` (Eng. # (12))
 
-* : VSUF-IMPRT-PL3_ED ;   (9) +V+Imprt+Pl3 täiddaz
+* : VSUF-IMPRT_PL3_ED ;   (9) +V+Imprt+Pl3 täiddaz
 Imprt+Pl3
 
 Allegro (10)
@@ -2862,7 +2862,7 @@ Actio, ActEss, PrsPrc
 * +Ind+Prs+Pl3:%^PAL%^PALK%>e K ;  (3) +V+Ind+Prs+Pl3: ceäʹlǩǩe
 +V+Ind+Prs+Pl3
 
-* :%^VOWRaise%^PALE%^PAL%^PALK%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: cieʹlǩǩe
+* :%^VOWRaise%^PALE%^PAL%^PALK%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: cieʹlǩǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^VOWRaise%^PALẸ%^PAL%^YXX2YX%^PALK VSUF-IND-PRS-CONNEG_ED ;  (5) +V+Imprt+Sg2: ciẹʹlǩ
@@ -2877,7 +2877,7 @@ Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 * :%^VOWRaise VSUF-IMPRT-CONNEGII_ED ;  (8) +V+Imprt+ConNegII: ciâlkku
 Imprt+ConNeg, Pass+PrfPrc
 
-* : VSUF-IMPRT-PL3_ED ;   (9) +V+Imprt+Pl3 ceälkkaz
+* : VSUF-IMPRT_PL3_ED ;   (9) +V+Imprt+Pl3 ceälkkaz
 Imprt+Pl3
 
 Allegro (10)
@@ -2898,7 +2898,7 @@ Actio, ActEss, PrsPrc
 * +Ind+Prs+Pl3:%^PAL%^PALK%>e K ;  (3) +V+Ind+Prs+Pl3: ceäʹlǩǩe
 +V+Ind+Prs+Pl3
 
-* :%^VOWRaise%^PALE%^PAL%^PALK%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: cieʹlǩǩe
+* :%^VOWRaise%^PALE%^PAL%^PALK%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: cieʹlǩǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^VOWRaise%^PALẸ%^PAL%^YXX2YX%^PALK VSUF-IND-PRS-CONNEG_ED ;  (5) +V+Imprt+Sg2: ciẹʹlǩ
@@ -2913,7 +2913,7 @@ Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 * :%^VOWRaise VSUF-IMPRT-CONNEGII_ED ;  (8) +V+Imprt+ConNegII: ciâlkku
 Imprt+ConNeg, Pass+PrfPrc
 
-* : VSUF-IMPRT-PL3_ED ;   (9) +V+Imprt+Pl3 ceälkkaz
+* : VSUF-IMPRT_PL3_ED ;   (9) +V+Imprt+Pl3 ceälkkaz
 Imprt+Pl3
 
 Allegro (10)
@@ -2958,7 +2958,7 @@ Actio, ActEss, PrsPrc
 * +Ind+Prs+Pl3:%^PAL%>e K ;  (3) +V+Ind+Prs+Pl3: ceäʹlǩǩe
 +V+Ind+Prs+Pl3
 
-* :%^VOWRaise%^PALE%^PAL%> VSUF-IND-PRT-PL3_ED ;  (4) +V+Ind+Prt+Pl3: cieʹlǩǩe
+* :%^VOWRaise%^PALE%^PAL%> VSUF-IND-PRT_PL3_ED ;  (4) +V+Ind+Prt+Pl3: cieʹlǩǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 * :%^VOWRaise%^PALẸ%^PAL%^YXX2YX VSUF-IND-PRS-CONNEG_ED ;  (5) +V+Imprt+Sg2: ciẹʹlǩ
@@ -2973,7 +2973,7 @@ Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 * :%^VOWRaise VSUF-IMPRT-CONNEGII_ED ;  (8) +V+Imprt+ConNegII: ciâlkku
 Imprt+ConNeg, Pass+PrfPrc
 
-* : VSUF-IMPRT-PL3_ED ;   (9) +V+Imprt+Pl3 ceälkkaz
+* : VSUF-IMPRT_PL3_ED ;   (9) +V+Imprt+Pl3 ceälkkaz
 Imprt+Pl3
 
 Allegro (10)
@@ -3009,7 +3009,7 @@ Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 (8) +V+Imprt+ConNegII: miâtˈtu
 Imprt+ConNeg, Pass+PrfPrc
 
-* : VSUF-IMPRT-PL3_ED ;   +V+Imprt+Pl3 meätˈtaz
+* : VSUF-IMPRT_PL3_ED ;   +V+Imprt+Pl3 meätˈtaz
 Imprt+Pl3
 
 CHECK FORM
@@ -3046,7 +3046,7 @@ Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 (8) +V+Imprt+ConNegII: miâtˈtu
 Imprt+ConNeg, Pass+PrfPrc
 
-* : VSUF-IMPRT-PL3_ED ;   +V+Imprt+Pl3 meätˈtaz
+* : VSUF-IMPRT_PL3_ED ;   +V+Imprt+Pl3 meätˈtaz
 Imprt+Pl3
 
 CHECK FORM
@@ -3086,7 +3086,7 @@ Ind+Prs+Sg1, Ind+Prs+Sg2, Cond,  Imprt+Sg3
 * :%^VOWRaise VSUF-IMPRT-CONNEGII_ED ;  (8) +V+Imprt+ConNegII: mahssu
 Imprt+ConNeg, Pass+PrfPrc
 
-* : VSUF-IMPRT-PL3_ED ;   (9) +V+Imprt+Pl3 mähssaz
+* : VSUF-IMPRT_PL3_ED ;   (9) +V+Imprt+Pl3 mähssaz
 Imprt+Pl3
 
 (10) mäuʹs
@@ -3312,7 +3312,7 @@ assuming stem kååʹmmerded
 
 assuming stem **kååʹmmerd**
 
-* LEXICON VSUF-IMPRT-PL3_ED  puätˈtaz
+* LEXICON VSUF-IMPRT_PL3_ED  puätˈtaz
 
 * LEXICON FOR-VSUF-PRSPRC_ED  (11) 
 Vowel_raising, palatalization, Cons-grade-retension

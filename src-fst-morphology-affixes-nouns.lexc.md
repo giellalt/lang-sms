@@ -18,14 +18,14 @@ NMN_1Y_IJCC
 strong_geminate, short_vowel, palatalization
 * :%{ʹØ%}jdd%^PAL%>e SG-ILL ;		 niʹjdde
 strong_geminate, long_vowel
-* :õđ SG-ABE/ACC/GEN-PL-NOM ;	 niõđ
+* :õđ SG-ABE/ACC/GEN_PL-NOM ;	 niõđ
 * :õđ%>â SG-LOC ;		 niõđâst
 * :õđ SG-COM_IN/PL-OBL ;	 niõđ, niõđid, niõđid, niõđin, niõđivuiʹm, niõđitaa
 
 * +Der+Der/Dimin+N:õđ N_MUORYZH-WITHOUT-PAL ;   niõđ-
 * +Der+Der/Dimin+N:õ%{ʹØ%}đ%^PAL N_MUORYZH-WITH-PAL ;   niõʹđ-
 
-* +Err/GenreLeudd:õđâ SG-ABE/ACC/GEN-PL-NOM ;      niõđ Leudd 2018-09-20
+* +Err/GenreLeudd:õđâ SG-ABE/ACC/GEN_PL-NOM ;      niõđ Leudd 2018-09-20
 * +Err/GenreLeudd:õđâ SG-COM_N ;  Leudd 2018-09-20
 
 * nijdd # examples:*
@@ -90,7 +90,7 @@ strong_geminate, short_vowel, palatalization
 * :%^PAL N2A_LUOQSSI ;		 N»A: paʹppi
 
 strong_geminate, long_vowel
-* :%^V2VV SG-ABE/ACC/GEN-PL-NOM ;	 paapp
+* :%^V2VV SG-ABE/ACC/GEN_PL-NOM ;	 paapp
 * :%^V2VV%>â SG-LOC ;		 paappâst
 * :%^V2VV SG-COM_IN/PL-OBL ;	 paappi, paappid, paappid, paappin, paappivuiʹm, paappitaa
 
@@ -140,7 +140,7 @@ strong_geminate, short_vowel, palatalization
 * :%^PAL%^PALK N2A_LUOQSSI ;		 N»A: paʹppi
 
 strong_geminate, long_vowel
-* :%^V2VV SG-ABE/ACC/GEN-PL-NOM ;	 paapp
+* :%^V2VV SG-ABE/ACC/GEN_PL-NOM ;	 paapp
 * :%^V2VV%>â SG-LOC ;		 paappâst
 * :%^V2VV SG-COM_IN/PL-OBL ;	 paappi, paappid, paappid, paappin, paappivuiʹm, paappitaa
 
@@ -207,13 +207,13 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^V2VV%^YXX2YX N_KUUZZYZH-WITHOUT-PAL ;   põõrt-
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^YXX2YX N_KUUZZYZH-WITH-PAL ;   põõʹrt-
 
-* LEXICON N_1Y_VYKK-PL  aalǥ:algg
+* LEXICON N_1Y_VYKK_PL  aalǥ:algg
 * +Cmp/SgNom: R ;                            põrtt
 * :%^V2VV%^YXX2YX PL-NOM ;                 põõrt
 * :%>â ESS/PAR ;                                   põrttân
 * :%^V2VV%^YXX2YX PL-OBL ;                         põõrti
 
-* LEXICON N_1Y_VYXX-PL  põõrt:põrtt
+* LEXICON N_1Y_VYXX_PL  põõrt:põrtt
 * +Cmp/SgNom: R ;                            põrtt
 * :%^V2VV%^YXX2YX PL-NOM ;                 põõrt
 * :%>â ESS/PAR ;                                   põrttân
@@ -294,7 +294,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^V2VV%^YXX2YX N_KUUZZYZH-WITHOUT-PAL ;   aaut-
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^YXX2YX N_KUUZZYZH-WITH-PAL ;   aauʹt-
 
-* LEXICON N_AUTT-PL  aaut:autt
+* LEXICON N_AUTT_PL  aaut:autt
 * +Cmp/SgNom: R ;                            autt
 * :%>â ESS/PAR ;                                   auttân
 * :%^V2VV%^YXX2YX PL-NOM ;                 aaut
@@ -345,7 +345,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * Yaml: **N-vahtt**
 
 * : SG-NOM ;	    			 vahtt
-* :%^V2VV%^YXX2VX SG-ABE/ACC/GEN-PL-NOM ;  vaaut
+* :%^V2VV%^YXX2VX SG-ABE/ACC/GEN_PL-NOM ;  vaaut
 * :%^PAL%>e SG-ILL ;		      	 vaʹhtte
 * :%^PAL N2A_LUOQSSI ;		 vaʹhtti
 * :%^V2VV%^YXX2VX%>â SG-LOC ;		 vaautâst
@@ -384,7 +384,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * :%>â ESS/PAR ;     		 	 jokkân
 * :%^PAL%^PALK%>e SG-ILL ;    		 joʹǩǩe
 * :%^PAL%^PALK N2A_LUOQSSI ;    		 joʹǩǩi
-* :%^V2VV%^KK2GG SG-ABE/ACC/GEN-PL-NOM ;		 jooǥǥ
+* :%^V2VV%^KK2GG SG-ABE/ACC/GEN_PL-NOM ;		 jooǥǥ
 * :%^V2VV%^KK2GG%>â SG-LOC ;	 jooǥǥâ
 * :%^V2VV%^KK2GG SG-COM_IN ;	 jooǥǥin
 * :%^V2VV%^KK2GG PL-OBL ;		 jooǥǥi, kuuzzid, kuuzzid, kuuzzin, kuuzzivuiʹm, kuuzzitaa
@@ -396,7 +396,7 @@ N_1Y_VKK_HVVGG
 Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_gem_ss_type
 1.1.1.1.1.1. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|voiced_geminate" 
 
-See also: NMN_KUSS-PLC, which is the same, but minus PL forms and certain cases
+See also: NMN_KUSS_PLC, which is the same, but minus PL forms and certain cases
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
 ## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
@@ -420,7 +420,7 @@ similar_to:
 * :%>â ESS/PAR ;     		 	 kussân
 * :%^PAL%>e SG-ILL ;    		 kuʹsse
 * :%^PAL N2A_LUOQSSI ;    		 kuʹssi
-* :%^V2VV%^KK2GG SG-ABE/ACC/GEN-PL-NOM ;		 kuuzz
+* :%^V2VV%^KK2GG SG-ABE/ACC/GEN_PL-NOM ;		 kuuzz
 * :%^V2VV%^KK2GG%>â SG-LOC ;	 kuuzzâ
 * :%^V2VV%^KK2GG SG-COM_IN ;	 kuuzzin
 * :%^V2VV%^KK2GG PL-OBL ;		 kuuzzi, kuuzzid, kuuzzid, kuuzzin, kuuzzivuiʹm, kuuzzitaa
@@ -450,7 +450,7 @@ similar_to:
 
 * Yaml: **N-ruossh**
 * : SG-NOM ;	     			
-* :%^CCC2CC SG-ABE/ACC/GEN-PL-NOM ;	 ruõcc
+* :%^CCC2CC SG-ABE/ACC/GEN_PL-NOM ;	 ruõcc
 * :%^PAL%^PALK%>e SG-ILL ;	       		 ruõʹcˈce
 * :%^PAL%^PALK N2A_LUOQSSI ;	   	 ruõʹcˈci
 * :%^CCC2CC%>â SG-LOC ;			 ruõccâst
@@ -469,7 +469,7 @@ Sg_Nom: vow_di:vow_high:pal_no:cns_gem_long
 THIS IS NOT THE SAME AS N_MUORR
 * Yaml: **N-ruossh**
 * : SG-NOM ;	     			
-* :%^CCC2CC SG-ABE/ACC/GEN-PL-NOM ;	 ruõcc
+* :%^CCC2CC SG-ABE/ACC/GEN_PL-NOM ;	 ruõcc
 * :%^PAL%>e SG-ILL ;	       		 ruõʹcˈce
 * :%^PAL N2A_LUOQSSI ;	   	 ruõʹcˈci
 * :%^CCC2CC%>â SG-LOC ;			 ruõccâst
@@ -515,7 +515,7 @@ THIS IS NOT THE SAME AS N_MUORR
 * +Der+Der/Dimin+N:%^YXX2YX N_MUORYZH-WITHOUT-PAL ;   čuõsk-
 * +Der+Der/Dimin+N:%^PAL%^YXX2YX N_MUORYZH-WITH-PAL ;   čuõʹsǩ-
 
-* LEXICON N_1Y_VWYXX-PL  juõštt:juõštt
+* LEXICON N_1Y_VWYXX_PL  juõštt:juõštt
 * +Cmp/SgNom: R ;                    (1) čuõskk
 * :%>â ESS/PAR ;                           (6) čuõskkân
 * :%^YXX2YX PL-NOM ;       (2) čuõsk
@@ -602,7 +602,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * Yaml: **N-chuoskk**
 
 * : SG-NOM ;	    			 (1) ruõidd
-* :%^YXX2YX SG-ABE/ACC/GEN-PL-NOM ;	 (2) ruõid
+* :%^YXX2YX SG-ABE/ACC/GEN_PL-NOM ;	 (2) ruõid
 * :%^PAL%>e SG-ILL ;			 (3) ruõiʹdde
 * :%^PAL N2A_LUOQSSI ;		  ruõiʹddi
 * :%^YXX2YX%>â SG-LOC ;			 (4) ruõidest
@@ -662,7 +662,7 @@ puåvv:puåvv
 * Yaml: **N-kiapp, N-puavv**
 
 * : SG-NOM ;	    			 (1) Sg.Nom: puåvv
-* :%^CC2C SG-ABE/ACC/GEN-PL-NOM ;		 (2) Pl.Nom: puåv
+* :%^CC2C SG-ABE/ACC/GEN_PL-NOM ;		 (2) Pl.Nom: puåv
 * :%^PALE%^PAL%^CC2CCC%>e SG-ILL ;	 (3) Sg.Ill: pueʹvˈve
 * :%^PALE%^PAL%^CC2CCC N2A_LUOQSSI ;   N»A: pueʹvˈvi
 * :%^CC2C%>â SG-LOC ;	       		 (4) Sg.Loc: puåvâst
@@ -673,7 +673,7 @@ puåvv:puåvv
 * +Der+Der/Dimin+N:%^CC2C N_MUORYZH-WITHOUT-PAL ;   puåv-
 * +Der+Der/Dimin+N:%^PALE%^PAL%^CC2C N_MUORYZH-WITH-PAL ;   pueʹv-
 
-* LEXICON N_PUOAVV-PL  puåvv:puå%{ʹØ%}vv
+* LEXICON N_PUOAVV_PL  puåvv:puå%{ʹØ%}vv
 * +Cmp/SgNom: R ;	    			 (1) Sg.Nom: puåvv
 * :%^CC2C PL-NOM ;		 (2) Pl.Nom: puåv
 * :%>â ESS/PAR ; 	  			 (6) Ess: puåvvân
@@ -704,7 +704,7 @@ puåvv:puåvv
 * Yaml: **N-kiapp, N-puavv**
 
 * : SG-NOM ;	    			 (1) Sg.Nom: liâkk
-* :%^KK2GG SG-ABE/ACC/GEN-PL-NOM ;		 (2) Pl.Nom: liâǥǥ
+* :%^KK2GG SG-ABE/ACC/GEN_PL-NOM ;		 (2) Pl.Nom: liâǥǥ
 * :%^PALE%^PAL%^CC2CCC%^PALK%>e SG-ILL ;	 (3) Sg.Ill: lieʹǩˈǩe
 * :%^PALE%^PAL%^CC2CCC%^PALK N2A_LUOQSSI ;   N»A: lieʹǩˈǩi
 * :%^KK2GG%>â SG-LOC ;	       		 (4) Sg.Loc: liâǥǥâst
@@ -726,7 +726,7 @@ N_1Y_VWKK
 * Yaml: **N-kiapp, N-puavv**
 
 * : SG-NOM ;	    			 (1) Sg.Nom: liâkk
-* :%^KK2GG SG-ABE/ACC/GEN-PL-NOM ;		 (2) Pl.Nom: liâǥǥ
+* :%^KK2GG SG-ABE/ACC/GEN_PL-NOM ;		 (2) Pl.Nom: liâǥǥ
 * :%^PALE%^PAL%^CC2CCC%^PALK%>e SG-ILL ;	 (3) Sg.Ill: lieʹǩˈǩe
 * :%^PALE%^PAL%^CC2CCC%^PALK N2A_LUOQSSI ;   N»A: lieʹǩˈǩi
 * :%^KK2GG%>â SG-LOC ;	       		 (4) Sg.Loc: liâǥǥâst
@@ -787,7 +787,7 @@ siâkˈk:siâkˈk
 * Yaml: **N-siakk**
 
 * : SG-NOM ;	    			   siâkˈk
-* :%^CCC2CC SG-ABE/ACC/GEN-PL-NOM ;	   siâkk
+* :%^CCC2CC SG-ABE/ACC/GEN_PL-NOM ;	   siâkk
 * :%^PALE%^PAL%^PALK%>e SG-ILL ;		   sieʹǩˈǩe
 * :%^PALE%^PAL%^PALK N2A_LUOQSSI ;	   sieʹǩˈǩi
 * :%^CCC2CC%>â SG-LOC ;		 	   (4) Sg.Loc: siâkkâst
@@ -825,7 +825,7 @@ N_1Y_VWCCC
 * Yaml: **N-siakk**
 
 * : SG-NOM ;	    			   smiâhˈh
-* : SG-ABE/ACC/GEN-PL-NOM ;	   smiâhˈh
+* : SG-ABE/ACC/GEN_PL-NOM ;	   smiâhˈh
 * :%^PALE%^PAL%>e SG-ILL ;		   smieʹhˈhe
 * :%^PALE%^PAL N2A_LUOQSSI ;	   smieʹhˈhi
 * :%>â SG-LOC ;		 	   (4) Sg.Loc: smiâhˈhâst
@@ -840,7 +840,7 @@ N_1Y_VWCCC
 * Yaml: **N-skjiankk**
 
 * : SG-NOM ;	      	 (1) Sg.Nom: sǩiâŋkk
-* :%^YXX2YX SG-ABE/ACC/GEN-PL-NOM ;   (2) Pl.Nom: vuåkr
+* :%^YXX2YX SG-ABE/ACC/GEN_PL-NOM ;   (2) Pl.Nom: vuåkr
 * :%^PALE%^PAL%>e SG-ILL ;	    (3) Sg.Ill: vueʹkrre
 * :%^PALE%^PAL N2A_LUOQSSI ;    N»A: sǩieʹŋǩǩi
 * :%^YXX2YX%>â SG-LOC ;   	    (4) Sg.Loc: vuåkrâst
@@ -855,7 +855,7 @@ N_1Y_VWCCC
 * Yaml: **N-skjiankk**
 
 * : SG-NOM ;	      	 (1) Sg.Nom: sǩiâŋkk
-* :%^YXX2YX SG-ABE/ACC/GEN-PL-NOM ;   (2) Pl.Nom: vuåkr
+* :%^YXX2YX SG-ABE/ACC/GEN_PL-NOM ;   (2) Pl.Nom: vuåkr
 * :%^PALE%^PAL%>e SG-ILL ;	    (3) Sg.Ill: vueʹkrre
 * :%^PALE%^PAL N2A_LUOQSSI ;    N»A: sǩieʹŋǩǩi
 * :%^YXX2YX%>â SG-LOC ;   	    (4) Sg.Loc: vuåkrâst
@@ -891,7 +891,7 @@ N_1Y_VWCCC
 * Yaml: **N-skjiankk**
 
 * : SG-NOM ;	      	 (1) Sg.Nom: sǩiâŋkk
-* :%^YXX2YX SG-ABE/ACC/GEN-PL-NOM ;   (2) Pl.Nom: sǩiâŋk
+* :%^YXX2YX SG-ABE/ACC/GEN_PL-NOM ;   (2) Pl.Nom: sǩiâŋk
 * :%^PALE%^PAL%^PALK%>e SG-ILL ;	    (3) Sg.Ill: sǩieʹŋǩǩe
 * :%^PALE%^PAL%^PALK N2A_LUOQSSI ;    N»A: sǩieʹŋǩǩi
 * :%^YXX2YX%>â SG-LOC ;   	    (4) Sg.Loc: sǩiâŋkâst
@@ -927,7 +927,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * Yaml: **N-skjiankk**
 
 * : SG-NOM ;	      	 (1) Sg.Nom: sǩiâŋkk
-* :%^YXX2YX SG-ABE/ACC/GEN-PL-NOM ;   (2) Pl.Nom: sǩiâŋk
+* :%^YXX2YX SG-ABE/ACC/GEN_PL-NOM ;   (2) Pl.Nom: sǩiâŋk
 * :%^PALE%^PAL%^PALK%>e SG-ILL ;	    (3) Sg.Ill: sǩieʹŋǩǩe
 * :%^PALE%^PAL%^PALK N2A_LUOQSSI ;    N»A: sǩieʹŋǩǩi
 * :%^YXX2YX%>â SG-LOC ;   	    (4) Sg.Loc: sǩiâŋkâst
@@ -967,7 +967,7 @@ similar_to: N_AENHNH, N_STAEQLLJ, N_KOONJYL
 Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_gem
 1.1.1.1.1.2. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|single_consonant" 
 
-See also: NMN_TOLL-PLC, which is the same, but minus PL forms and certain cases
+See also: NMN_TOLL_PLC, which is the same, but minus PL forms and certain cases
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
 ## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
@@ -1067,7 +1067,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 
 * :%^Allegro%^YXX2VX SG-LOC-PX_ALLEGRO ;  CHECKME
 
-* LEXICON N_SIJDD-PL  siid:sijdd
+* LEXICON N_SIJDD_PL  siid:sijdd
 * :%^YXX2VX PL-NOM ;	 siid
 * :%^YXX2VX PL-OBL ;     siidi
 * :%>â ESS/PAR ;         sijddâd
@@ -1120,7 +1120,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 is for nouns with -âst Loc. N_Y-EPal2-21
 N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 * :%^KK2GG SG-COM_IN ;			 saaǥǥin
-* :%^KK2GG SG-ABE/ACC/GEN-PL-NOM ;	 saaǥǥ
+* :%^KK2GG SG-ABE/ACC/GEN_PL-NOM ;	 saaǥǥ
 * :%^VV2V%^PAL%^PALK%>e SG-ILL ;	   	 šaʹǩǩe
 * :%^VV2V%^PAL%^PALK N2A_LUOQSSI ;       saʹǩǩi
 * : SG-NOM ;	       			 saakk
@@ -1161,7 +1161,7 @@ Sg_Nom: vow_di:vow_high:pal_no:cns_gem_ss_type
 THIS IS NOT THE SAME AS N_MUORR
 * Yaml: **N-luoss**
 * : SG-NOM ;	     			
-* :%^KK2GG SG-ABE/ACC/GEN-PL-NOM ;	 luõzz
+* :%^KK2GG SG-ABE/ACC/GEN_PL-NOM ;	 luõzz
 * :%^PAL%^CC2CCC%>e SG-ILL ;	 	 luõʹsˈse
 * :%^PAL%^CC2CCC N2A_LUOQSSI ;	 luõʹsˈsi
 * :%^KK2GG%>â SG-LOC ;			 luõzzâst
@@ -1219,7 +1219,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 is for nouns with -âst Loc. N_Y-EPal2-21
 N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 * :%^CC2C SG-COM_IN ;		 paarin
-* :%^CC2C SG-ABE/ACC/GEN-PL-NOM ;	 paar
+* :%^CC2C SG-ABE/ACC/GEN_PL-NOM ;	 paar
 * :%^VV2V%^PAL%>e SG-ILL ;      	 paʹrre
 * :%^VV2V%^PAL N2A_LUOQSSI ;       N»A: paʹrri
 * : SG-NOM ;	       		 paarr
@@ -1232,7 +1232,7 @@ N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 
 * :%^VV2V%^CC2CAllegro SG-LOC-PX_ALLEGRO ;  par-
 
-* LEXICON N_PAARR-PL  paarr:paa%{ʹØ%}rr
+* LEXICON N_PAARR_PL  paarr:paa%{ʹØ%}rr
 * :%^CC2C PL-NOM ;	 paar
 * :â ESS/PAR ;   	  		 paarrân
 * :%^CC2C PL-OBL ;		 paari
@@ -1266,7 +1266,7 @@ Sg_Nom: vow_mono:vow_long:vow_high:pal_no:cns_gem_jj_type
 ## FORMS
 * Yaml: **N-shlaajj**
 
-* :%^J2I%^CC2C SG-ABE/ACC/GEN-PL-NOM ;	 šlaai
+* :%^J2I%^CC2C SG-ABE/ACC/GEN_PL-NOM ;	 šlaai
 
 * šlaajj # examples:*
 * *šlaajj:* `šlaajj+N+Sg+Nom`
@@ -1341,7 +1341,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *ǩiõʹtˈt000%>san*
 * :%^CC2CCC HatY-STEM-PX-STRENGTHEN-ELSE ;  muõrˈr-
 
-* LEXICON N_MUORR-PL  muõrr:muõrr
+* LEXICON N_MUORR_PL  muõrr:muõrr
 * :%>â ESS/PAR ;                           muõrrân
 * :%^CC2C PL-NOM ;                 muõr
 * :%^CC2C PL-OBL ;                         muõri
@@ -1375,7 +1375,7 @@ Sg_Nom: vow_di:vow_high:pal_no:cns_gem_jj_type
 similar_to: N_TUYJJ
 ## FORMS
 * Yaml: **N-kjiojj**
-* +Use/NGminip+Use/NG:%^J2I%^CC2C SG-ABE/ACC/GEN-PL-NOM ;	 (2) Pl.Nom: ǩiõi
+* +Use/NGminip+Use/NG:%^J2I%^CC2C SG-ABE/ACC/GEN_PL-NOM ;	 (2) Pl.Nom: ǩiõi
 
 * kuõjj # examples:*
 * *kuõjj:* `kuõjj+N+Sg+Nom`
@@ -1409,7 +1409,7 @@ similar_to: N_VUYHSS
 * Yaml: **N-miwhtt**
 
 * :%^YXX2VX SG-COM_IN ;			 miõutin
-* :%^YXX2VX  SG-ABE/ACC/GEN-PL-NOM ;	 miõut
+* :%^YXX2VX  SG-ABE/ACC/GEN_PL-NOM ;	 miõut
 * :%^PAL%>e SG-ILL ;	   	 miõʹhtte
 * :%^PAL N2A_LUOQSSI ;       miõʹhtti
 * : SG-NOM ;	       			 miõhtt
@@ -1450,7 +1450,7 @@ N_1Y_VVKK
 is for nouns with -âst Loc. N_Y-EPal2-21
 N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 * : SG-COM_IN ;			 riikkin
-* :  SG-ABE/ACC/GEN-PL-NOM ;	 riikk
+* :  SG-ABE/ACC/GEN_PL-NOM ;	 riikk
 * :%^VV2V%^PAL%^PALK%>e SG-ILL ;	   	 riʹǩǩe
 * :%^VV2V%^PAL%^PALK N2A_LUOQSSI ;       riʹǩǩi CHECKME
 * : SG-NOM ;	       			 riikk
@@ -1472,7 +1472,7 @@ N_2Y_VK_VVKK
 is for nouns with -âst Loc. N_Y-EPal2-21
 N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 * :%^V2VV%^C2CC SG-COM_IN ;			 aʹsttriikkin
-* :%^V2VV%^C2CC  SG-ABE/ACC/GEN-PL-NOM ;	 aʹsttriikk
+* :%^V2VV%^C2CC  SG-ABE/ACC/GEN_PL-NOM ;	 aʹsttriikk
 * :%^PAL%^C2CC%^PALK%>e SG-ILL ;	   	 aʹsttriʹǩǩe
 * :%^PAL%^C2CC%^PALK N2A_LUOQSSI ;       aʹsttriʹǩǩi CHECKME
 * : SG-NOM ;	       			 aʹsttrik
@@ -1565,7 +1565,7 @@ strong_geminate, short_vowel, no_palatalization, low_stem_vowel, stem_vowel: a
 * :%>a ESS/PAR ; 			  (6) Ess: pessan
 
 strong_geminate, long_vowel, no_palatalization, low_stem_vowel
-* :%^V2VV A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	  (2) Pl.Nom: peess
+* :%^V2VV A-STEM_SG-ABE/ACC/GEN_PL-NOM ;	  (2) Pl.Nom: peess
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -1608,7 +1608,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^CC2C A-STEM_SG-ABE/ACC/GEN-PL-NOM ;		 (2) Pl.Nom: šoom
+* :%^CC2C A-STEM_SG-ABE/ACC/GEN_PL-NOM ;		 (2) Pl.Nom: šoom
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -1660,7 +1660,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^CC2C A-STEM_SG-ABE/ACC/GEN-PL-NOM ;		 (2) Pl.Nom: lââj
+* :%^CC2C A-STEM_SG-ABE/ACC/GEN_PL-NOM ;		 (2) Pl.Nom: lââj
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -1708,7 +1708,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^KK2GG A-STEM_SG-ABE/ACC/GEN-PL-NOM ;  (2) Pl.Nom: rääǥǥ
+* :%^KK2GG A-STEM_SG-ABE/ACC/GEN_PL-NOM ;  (2) Pl.Nom: rääǥǥ
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -1761,7 +1761,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^V2VV%^YXX2YX A-STEM_SG-ABE/ACC/GEN-PL-NOM ;  (2) ääld
+* :%^V2VV%^YXX2YX A-STEM_SG-ABE/ACC/GEN_PL-NOM ;  (2) ääld
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -1809,7 +1809,7 @@ Sg_Loc_Px..
 * *aalduž:* `äldd+N+Der+Der/Dimin+N+Sg+Nom`
 
 * LEXICON A-STEM_SG-NOM  (1)
-* LEXICON A-STEM_SG-ABE/ACC/GEN-PL-NOM   (2)
+* LEXICON A-STEM_SG-ABE/ACC/GEN_PL-NOM   (2)
 
 * LEXICON A-STEM_PL-NOM   (2)
 
@@ -1837,7 +1837,7 @@ N_A-URaise3-32
 * : A-STEM_SG-NOM ;	    			  (1) peigg
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
-* :%^V2VV%^YXX2YX A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	  (2) peeiǥ
+* :%^V2VV%^YXX2YX A-STEM_SG-ABE/ACC/GEN_PL-NOM ;	  (2) peeiǥ
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -1890,7 +1890,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^V2VV%^YXX2VX A-STEM_SG-ABE/ACC/GEN-PL-NOM ;  (2) Pl.Nom: kååut
+* :%^V2VV%^YXX2VX A-STEM_SG-ABE/ACC/GEN_PL-NOM ;  (2) Pl.Nom: kååut
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -1954,7 +1954,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^YXX2YX A-STEM_SG-ABE/ACC/GEN-PL-NOM ;  (2) Pl.Nom: meârk
+* :%^YXX2YX A-STEM_SG-ABE/ACC/GEN_PL-NOM ;  (2) Pl.Nom: meârk
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -1987,7 +1987,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^YXX2VX A-STEM_SG-ABE/ACC/GEN-PL-NOM ;  (2) Pl.Nom: vuâus
+* :%^YXX2VX A-STEM_SG-ABE/ACC/GEN_PL-NOM ;  (2) Pl.Nom: vuâus
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -2087,7 +2087,7 @@ there has been an â>e
 N_A-URaise3-32
 * Yaml: **N-tuejj**
 * :%^PALẸ A-STEM_SG-NOM ;  tuẹjj
-* :%^PALẸ%^CC2C A-STEM_SG-ABE/ACC/GEN-PL-NOM ;		 (2) tuẹj
+* :%^PALẸ%^CC2C A-STEM_SG-ABE/ACC/GEN_PL-NOM ;		 (2) tuẹj
 * +Der+Der/Dimin+N:%^PALẸ%^CC2C%> N_PEESSAZH ;   (9) Dim.N.Sg.Nom: tuejaž
 * :%^PALẸ%^CC2C SG-LOC-PX_ALLEGRO ;  (10) tuej»
 
@@ -2115,7 +2115,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^KK2GG A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	 (2) Pl.Nom: čuäʒʒ
+* :%^KK2GG A-STEM_SG-ABE/ACC/GEN_PL-NOM ;	 (2) Pl.Nom: čuäʒʒ
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -2162,7 +2162,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^KK2GG A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	 (2) Pl.Nom: čuäʒʒ
+* :%^KK2GG A-STEM_SG-ABE/ACC/GEN_PL-NOM ;	 (2) Pl.Nom: čuäʒʒ
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -2190,7 +2190,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^KK2GG A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	 (2) Pl.Nom: čuäʒʒ
+* :%^KK2GG A-STEM_SG-ABE/ACC/GEN_PL-NOM ;	 (2) Pl.Nom: čuäʒʒ
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -2223,7 +2223,7 @@ Strong grade: Pl.Nom, Sg.Loc, Sg.Com
 * : A-STEM_SG-NOM ;	    			  neävˈv
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
-* :%^CCC2CC A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	  neävv
+* :%^CCC2CC A-STEM_SG-ABE/ACC/GEN_PL-NOM ;	  neävv
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -2250,7 +2250,7 @@ N_1A_VWCCC cf. _NEAVVV
 * : A-STEM_SG-NOM ;	    			  Peâtˈt
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
-* :%^CCC2CC A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	  Peâtt
+* :%^CCC2CC A-STEM_SG-ABE/ACC/GEN_PL-NOM ;	  Peâtt
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -2294,7 +2294,7 @@ similar_to: N_JEAQRMM
 * : A-STEM_SG-NOM ;	    		  peäldd
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
-* :%^YXX2YX A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	  peäld
+* :%^YXX2YX A-STEM_SG-ABE/ACC/GEN_PL-NOM ;	  peäld
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -2352,7 +2352,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
 * :%>a ESS/PAR ;	   		    	 (6) tuåimman
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* :%^YXX2YX A-STEM_SG-ABE/ACC/GEN-PL-NOM ;  (2) tuåim
+* :%^YXX2YX A-STEM_SG-ABE/ACC/GEN_PL-NOM ;  (2) tuåim
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -2375,7 +2375,7 @@ a-stems (Sg.Loc, Ess, Par).
 * : A-STEM_SG-NOM ;	    		  kapteän
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
-* : A-STEM_SG-ABE/ACC/GEN-PL-NOM ;	  kapteän
+* : A-STEM_SG-ABE/ACC/GEN_PL-NOM ;	  kapteän
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -2399,7 +2399,7 @@ N_   like N_ATOM
 * Yaml: **virvel**
 * : SG-NOM ;	    		 virvel
 * +Use/NGminip+Use/NG:%^PAL%^PALK SG-NOM ;	    		 virveʹl
-* :%^V2VV%^PAL%^PALK SG-ABE/ACC/GEN-PL-NOM ;	 virveeʹl
+* :%^V2VV%^PAL%^PALK SG-ABE/ACC/GEN_PL-NOM ;	 virveeʹl
 * :%^V2VV%>a SG-ILL ;		 virvẹẹla
 * :%^V2VV%^PAL%^PALK%>e SG-LOC ;	   		 virveeʹlest
 * :%^V2VV%^PAL%^PALK%> SG-COM_IN ;		 virveeʹlin
@@ -2411,7 +2411,7 @@ N_   like N_ATOM
 ## FORMS
 * Yaml: **fedd**
 * : SG-NOM ;	    		 Fedd
-* :%^V2VV SG-ABE/ACC/GEN-PL-NOM ;	 Feedd
+* :%^V2VV SG-ABE/ACC/GEN_PL-NOM ;	 Feedd
 * +Use/NGminip+Use/NG:%>u SG-ILL ;			 Feddu
 * :%>a SG-ILL ;		 Fedda
 * :%^V2VV%>a SG-LOC ;	   		 Feeddast
@@ -2440,7 +2440,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 ## FORMS
 * Yaml: **meer, steehl**
 * : SG-NOM ;	    		 meer
-* : SG-ABE/ACC/GEN-PL-NOM ;	 meer
+* : SG-ABE/ACC/GEN_PL-NOM ;	 meer
 * :%>u SG-ILL ;			 meeru
 * +Use/NGminip+Use/NG:%>a SG-ILL ;		 meera
 * :%>a SG-LOC ;	   		 meerast
@@ -2469,7 +2469,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 ## FORMS
 * Yaml: **A-vaeaezhzh**
 * : SG-NOM ;	    		 vääžž
-* : SG-ABE/ACC/GEN-PL-NOM ;	 vääžž
+* : SG-ABE/ACC/GEN_PL-NOM ;	 vääžž
 * :%^VOWRaise%>u SG-ILL ;		 vaažžu
 * +Use/NGminip+Use/NG:%>a SG-ILL ;  	      	 vääžža
 * :%>a SG-LOC ;	   		 vääžžast
@@ -2503,7 +2503,7 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
 grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
-* : A-STEM_SG-ABE/ACC/GEN-PL-NOM ;   pleân
+* : A-STEM_SG-ABE/ACC/GEN_PL-NOM ;   pleân
 Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px...,
 stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
 
@@ -3682,7 +3682,7 @@ NumContLex="1.113"
 * :%^VV2V%^PAL%^KK2GAllegro E-STEM-PX-ALLEGRO ;  (11) čäʹʒ-
 * :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) čäʹcc Ess+Px..
 
-* LEXICON N_CHAAQCC-PL  čääʹʒʒ:čääcc
+* LEXICON N_CHAAQCC_PL  čääʹʒʒ:čääcc
 * +Cmp/SgNom:%^PAL R ;                    (1) čääʹcc
 * :%^PAL%^KK2GG PL-NOM ;         (2) čääʼʒʒ
 * :%^VOWRaise%^PAL%^KK2GG E-STEM_PL-OBL ;           (5) čaaʼʒʒin
@@ -5203,7 +5203,7 @@ CLASS 2 NOMINALS with low stem vowel and u-stems
 * Yaml: **N-maan**
 * There are several stem types
 * :%^V2VV%^VOWLower%^CC2C SG-NOM ;	         mään
-* :%>u SG-ABE/ACC/GEN-PL-NOM ;	 		  mannu
+* :%>u SG-ABE/ACC/GEN_PL-NOM ;	 		  mannu
 
 * LEXICON N_PYYGG  pââgg:põgg
 * LEXICON NMN_PYYGG  pââgg:põgg
@@ -5258,7 +5258,7 @@ CLASS 2 NOMINALS with high stem vowel and â-stems
 * There are several stem types
 * piiđ:pitt
 * :%^V2VV%^CC2C SG-NOM ;		 	 (1) piiđ
-* :%^V2VV%^CC2C SG-ABE/ACC/GEN-PL-NOM ;	 (2) piiđ
+* :%^V2VV%^CC2C SG-ABE/ACC/GEN_PL-NOM ;	 (2) piiđ
 * :%^V2VV%^PAL%^CC2C%>e SG-ILL ; 		 (3) piiʹđe
 * +Use/NGminip+Use/NG:%>u SG-ILL ; 			 (3) pittu
 * :%^V2VV%^CC2Câ SG-LOC ;			 (4) piiđâst
@@ -5391,7 +5391,7 @@ like PÕRTT
 * Yaml: **N-taalkas**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_TAALKYS-PL  taalkâs:ta%^1VOWlkkâs
+* LEXICON N_TAALKYS_PL  taalkâs:ta%^1VOWlkkâs
 
 * LEXICON N_PIIUTYS  piiutâs:pihttâs
 * LEXICON NMN_PIIUTYS  piiutâs:pihttâs
@@ -5400,7 +5400,7 @@ stemtype n-stem piiutâs:piiutâs
 * Yaml: **N-piiutas**
 * :%^Pen%^V2VV%^Pen%^YXX2VX SG-NOM ;  piiutâs
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
-* LEXICON N_PIIUTYS-PL  piiutâs:pihttâs
+* LEXICON N_PIIUTYS_PL  piiutâs:pihttâs
 * +Cmp/SgNom:%^Pen%^V2VV%^Pen%^YXX2VX R ;  piiutâs
 
 * LEXICON N_KOONTYR  koontâr:ko%^1VOWnttâr
@@ -5459,7 +5459,7 @@ CLASS 4 BISYLLABIC, HIGH VOWEL, DIPHTHONG, NO PALATALIZATION
 
 * Yaml: **N-vuoivas**
 *  :%^Pen%^YXX2YX SG-NOM ;	        (1) Sg_Nom: vuõivâs
-*  :%^VC SG-ABE/ACC/GEN-PL-NOM ;   (2) Pl_Nom: vuõivvâz
+*  :%^VC SG-ABE/ACC/GEN_PL-NOM ;   (2) Pl_Nom: vuõivvâz
 *  :%^RmVow%>a SG-ILL ;   (3) Sg_Ill: vuõivvsa
 *  :%^RmVow%>e SG-LOC ;    (4) Sg_Loc: vuõivvsest
 *  :%^RmVow SG-COM_IN/PL-OBL ;     (5) Sg_Com: vuõivvsin
@@ -5502,7 +5502,7 @@ N_GEN2X3-NOM2X1
 * Yaml: **N-tuoddar**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
-*  LEXICON N_NAQZVAANASH-PL  naʹzvaanâš:naʹzvaanâš
+*  LEXICON N_NAQZVAANASH_PL  naʹzvaanâš:naʹzvaanâš
 
 * LEXICON N_COOGGYLM  cõõggâlm:cõõggâlm
 stemtype l-stem cõõggâlm:cõõggâlm
@@ -5538,7 +5538,7 @@ CLASS 4 BISYLLABIC, LOW VOWEL, MONOPHTHONG, NO PALATALIZATION
 = stemtype n-stem ceerkav:ceerkav
 * Yaml: **ceerkav**
 * : SG-NOM ;	       			 (1) ceerkav
-* : SG-ABE/ACC/GEN-PL-NOM ;				 (2) ceerkav
+* : SG-ABE/ACC/GEN_PL-NOM ;				 (2) ceerkav
 * :%^RmVow%>a SG-ILL ;  (3) ceerkva
 * :%^RmVow%>e SG-LOC ;		  	    (4) ceerkvest
 * :%^RmVow SG-COM_IN/PL-OBL ;			    (5) ceerkvin
@@ -5593,7 +5593,7 @@ kååvas, joođâs
 N_LBVVC_as
 * LEXICON NMN_KOAOAVAS  kååvas:kåvvas
 * Yaml: **N-kaavas**
-* :%^VC SG-ABE/ACC/GEN-PL-NOM ;  kåvvaz
+* :%^VC SG-ABE/ACC/GEN_PL-NOM ;  kåvvaz
 * :%^RmVow VOONYS-STEM-PX ;  såbbr-
 
 * LEXICON N_PAEAELKAS  päälkas:pä%^1VOWlkkas
@@ -5652,10 +5652,10 @@ N_LBVWXY_as
 stemtype n-stem kuäivas:kuäivas
 N_GEN2X3-NOM2X1
 * Yaml: **N-kuaeivas**
-* :%^VC SG-ABE/ACC/GEN-PL-NOM ;  kuäivvaz
+* :%^VC SG-ABE/ACC/GEN_PL-NOM ;  kuäivvaz
 * :%^RmVow VOONYS-STEM-PX ;  såbbr-
 
-* LEXICON N_KUAEIVAS-PL  kuäivas:kuäivvas
+* LEXICON N_KUAEIVAS_PL  kuäivas:kuäivvas
 * :%^VC PL-NOM ;  kuäivvaz
 
 * LEXICON N_JUYGXGXAS  juâǥǥas:juâkˈkas
@@ -5666,7 +5666,7 @@ N_GEN2X3-NOM2X1
 ## 2.3.2.2.1 Penultimate stem vowel loss: (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Gen, Pl.Acc, Pl.Ill, Pl.Loc, Pl.Com, Pl.Abe)
 ## 2.3.2.2.1.1 The Sg.Com vowel i appears before final n  
 * Yaml: **N-juaghghas**
-* :%^VC  SG-ABE/ACC/GEN-PL-NOM ;  juâkˈkaz
+* :%^VC  SG-ABE/ACC/GEN_PL-NOM ;  juâkˈkaz
 * :%^RmVow VOONYS-STEM-PX ;  såbbr-
 
 * LEXICON N_HEAVASH  heävaš:heäpˈpaš
@@ -5809,8 +5809,8 @@ N_2E_VWQCES/Z
 * Yaml: **N-puaeres**
 * :%^RmVow VOONYS-STEM-PX ;  puärˈrs-
 
-* LEXICON N_PUAQRES-PL  puäʹres:puärˈres
-* LEXICON NMN_PUAQRES-PL  puäʹres:puärˈres
+* LEXICON N_PUAQRES_PL  puäʹres:puärˈres
+* LEXICON NMN_PUAQRES_PL  puäʹres:puärˈres
 * :%^RmVow VOONYS-STEM-PX ;  puärˈrs-
 
 * LEXICON N_PEAEQLES  peäʹles:peälˈles
@@ -5900,13 +5900,13 @@ this deals with an extra piece of paradigm
 
 * LEXICON N_MOOGXGX  mooǥǥ:mo%^1VOWkˈk
 * :%^V2VV%^KK2GG SG-NOM ;		      mooǥǥ
-* :%>anj SG-ABE/ACC/GEN-PL-NOM ;  mokkanj
+* :%>anj SG-ABE/ACC/GEN_PL-NOM ;  mokkanj
 * :nja SG-ILL ; 			      mokknja
 * :nj VOONYS-STEM-PX ; 			      mokknj
 
 * LEXICON N_CHUYGXGXAS  čuâǥǥas:čuâkˈk
 * :%^KKK2GG%>as SG-NOM ;		      čuâǥǥas
-* :%^VOWRaise%>u SG-ABE/ACC/GEN-PL-NOM ;  čuõkˈku
+* :%^VOWRaise%>u SG-ABE/ACC/GEN_PL-NOM ;  čuõkˈku
 * :sa SG-ILL ; 			      čuâkˈksa
 * :s VOONYS-STEM-PX ; 			      čuâkˈksallaš
 
@@ -5925,7 +5925,7 @@ N_E-ANoPal3-32
 * :%^PAL E-STEM-PX-STRENGTHEN-WITH-PAL ;                       (12) låʹdd
 * +Use/NGminip+Use/NG:%^PAL E-STEM-PX-ALLEGRO ;   (2) låʹdd
 
-* LEXICON N_LOAQDD-PL  lååʹdd:lådd
+* LEXICON N_LOAQDD_PL  lååʹdd:lådd
 
 ## e-a-stems
 
@@ -5942,7 +5942,7 @@ Nouns with -est Loc and -a Ill without ʹ
 * :%^PALẸ%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) miẹˈʹr-
 * :%^PALẸ%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) miẹʹrr Ess+Px..
 
-* LEXICON N_MIEAQRR-PL  meäʹr:meä%{ʹØ%}rr
+* LEXICON N_MIEAQRR_PL  meäʹr:meä%{ʹØ%}rr
 
 * LEXICON N_MIEQLKHKH  mieʹlǩǩ:meâ%{ʹØ%}lkk
 * LEXICON NMN_MIEQLKHKH  mieʹlǩǩ:meâ%{ʹØ%}lkk
@@ -6560,7 +6560,7 @@ Class 7 according to Feist 154-155
 * Yaml: **N-aaum**
 * There are several stem types
 *     :%^V2VV%^YXX2YX SG-NOM ;  
-*	:a SG-ABE/ACC/GEN-PL-NOM ;  
+*	:a SG-ABE/ACC/GEN_PL-NOM ;  
 *	  :%>%{ʼØ%}j%>a SG-ILL ;  
 *  :a SG-LOC ;  
 *  :a SG-COM_IN ;  
@@ -6635,7 +6635,7 @@ Diminutive derivations
 * +Err/Orth+Err/GenreLeudd+Sg+Nom+PxSg1:%>ž%>amâ K;  Leudd 2018-09-20
 * +Err/Orth+Err/GenreLeudd+Sg+Nom+PxSg1:âž%>amâ K;  Leudd 2018-09-20
 
-* LEXICON N_MUORYZH-WITHOUT-PAL-PL  paapp
+* LEXICON N_MUORYZH-WITHOUT-PAL_PL  paapp
 * :že ESS/PAR ;	 	 paappžen
 
 * LEXICON N_MUORYZH-WITH-PAL    paaʹpp-
@@ -6711,7 +6711,7 @@ kuâla, kuâlže
 * +Err/Orth+Err/GenreLeudd+Sg+Nom+PxSg1:%>žamâ K;  Leudd 2018-09-20
 * +Err/Orth+Err/GenreLeudd+Sg+Nom+PxSg1:ažamâ K;  Leudd 2018-09-20
 
-* LEXICON N_KUYLAZH-PL  kuâla:kuâl
+* LEXICON N_KUYLAZH_PL  kuâla:kuâl
 
 * LEXICON N_UUQREZH  uuʹrež:uuʹr
 * Yaml: **N-uurezh**
@@ -6823,17 +6823,17 @@ Used with words like juurd: jurddǥatta
 ### HatY-STEM-PX
 * +Err/GenreLeudd:â SG-NOM ;  Leudd 2018-09-20
 
-* +Err/GenreLeudd:â SG-ABE/ACC/GEN-PL-NOM ;  Leudd 2018-09-20
+* +Err/GenreLeudd:â SG-ABE/ACC/GEN_PL-NOM ;  Leudd 2018-09-20
 * +Err/GenreLeudd:â SG-COM_N ;  Leudd 2018-09-20
 
-* +Err/GenreLeudd:â SG-ABE/ACC/GEN-PL-NOM ;  Leudd 2018-09-20
+* +Err/GenreLeudd:â SG-ABE/ACC/GEN_PL-NOM ;  Leudd 2018-09-20
 * +Err/GenreLeudd:â SG-COM_N ;  Leudd 2018-09-20
 
 ### A-STEM-PX
 
 * +Err/GenreLeudd:a SG-NOM ;  Leudd 2018-09-20
 
-* +Err/GenreLeudd:a SG-ABE/ACC/GEN-PL-NOM ;  Leudd 2018-09-20
+* +Err/GenreLeudd:a SG-ABE/ACC/GEN_PL-NOM ;  Leudd 2018-09-20
 * +Err/GenreLeudd:a SG-COM_N ;  Leudd 2018-09-20
 
 * : N2A_REAEB3H3HAI ;      N»A
@@ -6842,7 +6842,7 @@ Used with words like juurd: jurddǥatta
 
 * +Err/GenreLeudd:e SG-NOM ;  Leudd 2018-09-20
 
-* +Err/GenreLeudd:e SG-ABE/ACC/GEN-PL-NOM ;  Leudd 2018-09-20
+* +Err/GenreLeudd:e SG-ABE/ACC/GEN_PL-NOM ;  Leudd 2018-09-20
 * +Err/GenreLeudd:e SG-COM_N ;  Leudd 2018-09-20
 
 ### LOAOADDAZH-STEM-PX
@@ -6858,7 +6858,7 @@ Used with words like juurd: jurddǥatta
 
 * LEXICON VOONYS-STEM-PX-NO-DER-WITH-PAL  võnns-
 
-* LEXICON VOONYS-STEM-PX-PL  võnns-
+* LEXICON VOONYS-STEM-PX_PL  võnns-
 * VOONYS-STEM-PX-STRENGTHEN-WITH-PAL ;  essive
 
 * LEXICON VOONYS-STEM-PX-STRENGTHEN-WITH-PAL  needs checking
