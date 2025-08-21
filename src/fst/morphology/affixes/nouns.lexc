@@ -3302,13 +3302,9 @@ LEXICON NMN_PEYTTT
 !! Sg_Loc_Px..
 
 LEXICON N_1A_VWYXX !!= * @CODE@ peäldd:peäldd
- NMN_1A_VWYXX ;
-LEXICON N_PEAELDD !!= * @CODE@ peäldd:peäldd
 !!! inflection_type="?"
 !! N_1A_VWYXX
 !: NMN_PEAELDD ;
- NMN_1A_VWYXX ;
-LEXICON NMN_PEAELDD
  NMN_1A_VWYXX ;
 LEXICON NMN_1A_VWYXX
 !! Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_xyy
@@ -3356,7 +3352,7 @@ LEXICON NMN_1A_VWYXX
 :%^YXX2YX SG-LOC-PX_ALLEGRO ; !!= * @CODE@ (10) peäld»
 !! Sg_Loc_Px..
 
-LEXICON N_PEAELDD_PL
+LEXICON N_1A_VWYXX_PL
 +Cmp/SgNom: R ; !!= * @CODE@  peäldd
 :%^YXX2YX PL-NOM ;	!!= * @CODE@  peäld
 
@@ -9304,21 +9300,49 @@ LEXICON NMN_IILYSKH
 
 
 !! CLASS 4 BISYLLABIC, LOW VOWEL, MONOPHTHONG, NO PALATALIZATION
-LEXICON N_CEERKAV !!= * @CODE@ ceerkav:cẹẹrkav
+LEXICON N_AANAR_ERRORTH
++Err/Orth: N_AANAR ;
+LEXICON N_AANAR
 !!! inflection_type="2"
-: NMN_CEERKAV ;
-LEXICON NMN_CEERKAV !!= * @CODE@ ceerkav:cẹẹrkav
-! gradation: yes
-! "1.2"
-!! = stemtype n-stem ceerkav:ceerkav
-!! * Yaml: **ceerkav**
-: SG-NOM ;	       			!!= * @CODE@ (1) ceerkav
-: SG-ABE/ACC/GEN_PL-NOM ;				!!= * @CODE@ (2) ceerkav
+: NMN_AANAR ;
+LEXICON NMN_AANAR
+! gradation: no
+! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
+! Stem vowel: e
+!! stemtype n-stem jânnam:jânnam
+!! N_GEN2X3-NOM2X1
+!! * Yaml: **N-jânnam**
+: SG-NOM ;    !!= * @CODE@ (1) ceerkav
+: SG-ABE/ACC/GEN ; !!= * @CODE@ (2) ceerkav
 :%^RmVow%>a SG-ILL ; !!= * @CODE@ (3) ceerkva
-:%^RmVow%>e SG-LOC ;		  	   !!= * @CODE@ (4) ceerkvest
-:%^RmVow SG-COM_IN/PL-OBL ;			   !!= * @CODE@ (5) ceerkvin
-:%^RmVow%>e ESS/PAR ;  			   !!= * @CODE@ (6) ceerkven
-:%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
+:%^RmVow%>e SG-LOC ; !!= * @CODE@ (4) ceerkvest
+:%^RmVow SG-COM_IN ; !!= * @CODE@ (5) ceerkvin
+:%^RmVow%>e ESS/PAR ; !!= * @CODE@ (6) ceerkven
+: PL-NOM ;  	     !!= * @CODE@ (2) ceerkav
+:%^RmVow PL-OBL ;     !!= * @CODE@ (5) ceerkvin
+:%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ ceerkv- 
+
+!LEXICON N_AANAR_PL
+!: PL-NOM ;
+!:%^RmVow PL-OBL ;
+
+!LEXICON N_CEERKAV !!= * @CODE@ ceerkav:cẹẹrkav
+!!!! inflection_type="2"
+!: NMN_CEERKAV ;
+!LEXICON NMN_CEERKAV !!= * @CODE@ ceerkav:cẹẹrkav
+!! gradation: no
+!! "1.2"
+!!! = stemtype n-stem ceerkav:ceerkav
+!!! * Yaml: **ceerkav**
+!: SG-NOM ;	       			!!= * @CODE@ (1) ceerkav
+!: SG-ABE/ACC/GEN_PL-NOM ;				!!= * @CODE@ (2) ceerkav
+!:%^RmVow%>a SG-ILL ; !!= * @CODE@ (3) ceerkva
+!:%^RmVow%>e SG-LOC ;		  	   !!= * @CODE@ (4) ceerkvest
+!:%^RmVow SG-COM_IN/PL-OBL ;			   !!= * @CODE@ (5) ceerkvin
+!:%^RmVow%>e ESS/PAR ;  			   !!= * @CODE@ (6) ceerkven
+!:%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
+
+
 
 LEXICON N_SOAOABBAR !!= * @CODE@ sååbbar:s%^1VOWåbbar
 !!! inflection_type="2"
@@ -9405,32 +9429,6 @@ LEXICON NMN_AACCIKH !!= * @CODE@ pååttaǩ:pååttak
 :%^RmVow%^PALNo VOONYS-STEM-PX-WITHOUT-PAL ; !!= * @CODE@ ååʹblk-
 :%^RmVow%^PALK VOONYS-STEM-PX-WITH-PAL ; !!= * @CODE@ ååʹblǩ- 
 !2022-05-10:%^RmVow%^PALK VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
-
-LEXICON N_AANAR_ERRORTH
-+Err/Orth: N_AANAR ;
-LEXICON N_AANAR
-!!! inflection_type="2"
-: NMN_AANAR ;
-LEXICON NMN_AANAR
-! gradation: no
-! Penultimate stem vowel loss: Sg.Ill, Sg.Loc, Sg.Com, Ess, Par, Pl.Obl
-! Stem vowel: e
-!! stemtype n-stem jânnam:jânnam
-!! N_GEN2X3-NOM2X1
-!! * Yaml: **N-jânnam**
-: SG-NOM ;
-: SG-ABE/ACC/GEN ;
-:%^RmVow%>a SG-ILL ;
-:%^RmVow%>e SG-LOC ;
-:%^RmVow SG-COM_IN ;
-:%^RmVow%>e ESS/PAR ;
-: PL-NOM ;
-:%^RmVow PL-OBL ;
-:%^RmVow VOONYS-STEM-PX ; !!= * @CODE@ såbbr-
-
-!LEXICON N_AANAR_PL
-!: PL-NOM ;
-!:%^RmVow PL-OBL ;
 
 LEXICON NMN_PIETAR
 ! gradation: no
@@ -11245,7 +11243,7 @@ LEXICON N_5Y_VK_VVGG
 LEXICON N_SAJOS
 !!! inflection_type="?"
 !: NMN_SAJOS ;
- NMN_5Y_VK_VVGG ;
+ NMN_5Y_VK_VVGG ;!almost jokk_jooǥǥ
 LEXICON NMN_SAJOS
  NMN_5Y_VK_VVGG ;
 LEXICON NMN_5Y_VK_VVGG
@@ -11282,6 +11280,11 @@ LEXICON NMN_5Y_VK_VVGG
 ! HatY-STEM-PX-WEAKEN_PL ;
 ! HatY-STEM-PX-STRENGTHEN-ESS ;
 
+! is there an analogical 5A_
+
+! analogically 5E_ _VK_VVQKHKH
+! neǩ:nẹ%^1VOW%{ʹØ%}k
+! N_KAADHNEKH 
 
 LEXICON N_KARNDASH
 !!! inflection_type="?"
@@ -12769,9 +12772,9 @@ LEXICON NMN_KAADHNEKH !!= * @CODE@ kaađneǩ:kaađnẹ%^1VOW%{ʹØ%}k
 :%{XC%}%^V2VV%^VOWRaise%^PAL%^C2CC%^PALK PL-OBL ;
 +Use/NGminip+Use/NG:%{XC%}%^V2VV%^PAL%^C2CC%^PALK PL-OBL ;
 
-!LEXICON N_KAADHNEKH_PL !!= * @CODE@ kaađneǩ:kaađnẹ%^1VOWǩ
+!LEXICON N_KAADHNEKH_PL !!= * @CODE@ kaađneǩ:kaađnẹ%^1VOWk
 !: NMN_KAADHNEKH_PL ;
-!LEXICON NMN_KAADHNEKH_PL !!= * @CODE@ kaađneǩ:kaađnẹ%^1VOWǩ
+!LEXICON NMN_KAADHNEKH_PL !!= * @CODE@ kaađneǩ:kaađnẹ%^1VOWk
 !!= * @CODE@ = stemtype 
 !! * Yaml: **N-kaadhnekj, N-chaustok**
 !+Cmp/SgNom: R ;
@@ -13905,9 +13908,9 @@ villj+N:vi%^1VOWllj N_1Y_VCC ;
 
 LEXICON HUMAN-CLASSIFIERS
 laajj+N:la%^1VOWčč N_LAAJJ ;
-pokaineǩ+N:pokainẹ%^1VOWǩ N_KAADHNEKH ;
-jeännav+N:jeänˈnav N_CEERKAV ;
-jännav+N:jännav N_CEERKAV ;
+pokaineǩ+N:pokainẹ%^1VOWk N_KAADHNEKH ;
+jeännav+N:jeänˈnav N_AANAR ;
+jännav+N:jännav N_AANAR ;
 jännvaž+N:jännv N_MEERSAZH ;
 mueʹđđev+N:mueʹđˈđev N_AANAR ;
 mueʹđđvaž+N:mueʹđˈđv N_MEERSAZH ;
