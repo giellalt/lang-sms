@@ -2267,7 +2267,6 @@ Ess_Px..., Sg_Ill..., N»A
 Sg_Loc_Px..
 
 * LEXICON N_1A_VWYXX  peäldd:peäldd
-* LEXICON N_PEAELDD  peäldd:peäldd
 N_1A_VWYXX
 Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_xyy
 Is for nouns with *-ast* Loc
@@ -5530,17 +5529,21 @@ stemtype l-stem siivâlm:siivâlm
 * :%^Pen%^VV2V%^RmVow%^PALNo VOONYS-STEM-PX ;  võnns- CHECKME
 
 CLASS 4 BISYLLABIC, LOW VOWEL, MONOPHTHONG, NO PALATALIZATION
-* LEXICON N_CEERKAV  ceerkav:cẹẹrkav
-* LEXICON NMN_CEERKAV  ceerkav:cẹẹrkav
-= stemtype n-stem ceerkav:ceerkav
-* Yaml: **ceerkav**
-* : SG-NOM ;	       			 (1) ceerkav
-* : SG-ABE/ACC/GEN_PL-NOM ;				 (2) ceerkav
+stemtype n-stem jânnam:jânnam
+N_GEN2X3-NOM2X1
+* Yaml: **N-jânnam**
+* : SG-NOM ;     (1) ceerkav
+* : SG-ABE/ACC/GEN ;  (2) ceerkav
 * :%^RmVow%>a SG-ILL ;  (3) ceerkva
-* :%^RmVow%>e SG-LOC ;		  	    (4) ceerkvest
-* :%^RmVow SG-COM_IN/PL-OBL ;			    (5) ceerkvin
-* :%^RmVow%>e ESS/PAR ;  			    (6) ceerkven
-* :%^RmVow VOONYS-STEM-PX ;  såbbr-
+* :%^RmVow%>e SG-LOC ;  (4) ceerkvest
+* :%^RmVow SG-COM_IN ;  (5) ceerkvin
+* :%^RmVow%>e ESS/PAR ;  (6) ceerkven
+* : PL-NOM ;  	      (2) ceerkav
+* :%^RmVow PL-OBL ;      (5) ceerkvin
+* :%^RmVow VOONYS-STEM-PX ;  ceerkv- 
+
+gradation: no
+"1.2"
 
 * LEXICON N_SOAOABBAR  sååbbar:s%^1VOWåbbar
 * LEXICON NMN_SOAOABBAR  sååbbar:s%^1VOWåbbar
@@ -5571,11 +5574,6 @@ Palatalization loss in Sg.Ill
 * Yaml: **N-paattakj**
 * :%^RmVow%^PALNo VOONYS-STEM-PX-WITHOUT-PAL ;  ååʹblk-
 * :%^RmVow%^PALK VOONYS-STEM-PX-WITH-PAL ;  ååʹblǩ- 
-
-stemtype n-stem jânnam:jânnam
-N_GEN2X3-NOM2X1
-* Yaml: **N-jânnam**
-* :%^RmVow VOONYS-STEM-PX ;  såbbr-
 
 * : VOONYS-STEM-PX ;  såbbr-
 
