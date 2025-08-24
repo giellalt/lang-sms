@@ -3765,6 +3765,7 @@ NumContLex="1.113"
 * :%^VV2V%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) pâʹj-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) pâʹjj- Ess+Px..
 
+* LEXICON N_1E_VQYKK   käʹlbb:kälbb âʹlǧǧ:âlgg
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-aâlghgh**
 * :%^PAL%^PALK E-STEM_SG-NOM ;		  			 (1) Sg.Nom: âʹlǧǧ
@@ -3780,6 +3781,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^V2VV%^PAL%^YXX2YX%^PALK PL-NOM ;	 (2) Pl.Nom: ââʹlj
 * :%^V2VV%^VOWRaise%^PAL%^YXX2YX%^PALK E-STEM_PL-OBL ;  (5) Sg.Com: õõʹljin
 
+* LEXICON N_1E_VQYXX  käʹlbb:kälbb
 * LEXICON N_KAQLBB  käʹlbb:kälbb âʹlǧǧ:âlgg
 N_1E_VQYXX
 similar_to: N_ALGG
@@ -3818,7 +3820,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^V2VV%^PAL%^YXX2YX PL-NOM ;	 (2) Pl.Nom: ââʹlj
 * :%^V2VV%^VOWRaise%^PAL%^YXX2YX E-STEM_PL-OBL ;  (5) Sg.Com: õõʹljin
 
-* LEXICON N_1E_EQYKK  argumeʹntt:argumẹ%^1VOW%{ʹØ%}ntt
+* LEXICON N_1E_EQYKK  fleʹšǩǩ:flẹ%^1VOW%{ʹØ%}škk
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
@@ -3888,6 +3890,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ;  (11) argumeʹnt-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) argumeʹntt- Ess+Px..
 
+* LEXICON N_1E_VUQKK  päiʹǩǩ:päikk
 * LEXICON N_PAIQKHKH  päiʹǩǩ:päikk
 N_1E_VUQKK
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
@@ -3971,7 +3974,7 @@ vowel: monophthong
 * *lääuka:* `läuʹǩǩ+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_HAAQSKH  hääʹsǩ:hää%{ʹØ%}sk
-N_E_SVVQYK
+N_1E_SVVQYK
 SVV = stable long vowel
 * Yaml: **N-haeaesk**
 * :%^PAL E-STEM_SG-NOM ;		   (1) Sg.Nom: hääʹsǩ
@@ -3987,7 +3990,7 @@ SVV = stable long vowel
 * :%^PAL E-STEM-PX-ALLEGRO ;  (11) hääʹsǩ-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) hääʹsǩ Ess+Px..
 
-* LEXICON N_SAIQMM  säiʹmm:säimm
+* LEXICON N_SAIQMM  säiʹmm:säimm this might have zero vowel shift in plural
 N_1E_SVQCC
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (vowel shift)
@@ -4119,7 +4122,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-laeaeij**
 
 * LEXICON N_KHEQRJJ  ǩeʹrjj:ǩerjj
-N_1E_EQYXX/VQYXX
+N_1E_EQYXX/VQYXX checkme
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (NO vowel shift)
 Raised: Sg.Com, Pl.Obl
@@ -4377,7 +4380,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * :%^PAL%^YXX2YX%^PALK E-STEM-PX-ALLEGRO ;  (11) peiʹv-
 * :%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) peiʹvv Ess+Px..
 
-* LEXICON N_1E_EUQCC  peiʹvv:pẹ%^1VOWi%{ʹØ%}vv
+* LEXICON N_1E_EUQCC  peiʹvv:pẹ%^1VOWi%{ʹØ%}vv cf neiʹbb
 * LEXICON N_PEIQVV  peiʹvv:pẹ%^1VOWi%{ʹØ%}vv
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
@@ -5720,23 +5723,23 @@ stemtype l-stem ääʹrešm:ääʹrešm
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
 * LEXICON N_CHEEUQRES  čeeuʹres:če%^1VOWurres
-N_2E_EEUQCES/Z
+N_4E_EEUQCES/Z
 * LEXICON NMN_CHEEUQRES  čeeuʹres:če%^1VOWurres
 stemtype l-stem čeeuʹres:čeeuʹres
 * **NMN_CHEEUQRES** = Koulukielioppi stemtype II 9 (29)
 * Yaml: **N-ceeures** 
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_2E_EEQYXES/Z  ceeʹpces:cẹ%^1VOW%{ʹØ%}pcces
-N_2E_EEQYXES/Z
-* LEXICON NMN_2E_EEQYXES/Z  ceeʹpces:cẹ%^1VOW%{ʹØ%}pcces
+* LEXICON N_4E_EEQYXES/Z  ceeʹpces:cẹ%^1VOW%{ʹØ%}pcces
+N_4E_EEQYXES/Z
+* LEXICON NMN_4E_EEQYXES/Z  ceeʹpces:cẹ%^1VOW%{ʹØ%}pcces
 stemtype l-stem čeeuʹres:čeeuʹres
-* **NMN_2E_EEQYXES/Z** = Koulukielioppi stemtype II 9 (29)
+* **NMN_4E_EEQYXES/Z** = Koulukielioppi stemtype II 9 (29)
 * Yaml: **N-ceeures** 
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
 * LEXICON N_POAOAUQTES  pååuʹtes:på%^1VOWhttes
-N_2E_VVUQCES/Z
+N_4E_VVUQCES/Z
 * LEXICON NMN_POAOAUQTES  pååuʹtes:på%^1VOW%{ʹØ%}h%{ʹØ%}ttes
 * Yaml: **N-ceeures** 
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
@@ -5771,7 +5774,7 @@ IN PENULTIMATE E:0
 * :%^RmVow VOONYS-STEM-PX ;  câccl-
 
 * LEXICON N_KAAQLLES  kääʹlles:kä%^1VOW%{ʹØ%}lles
-N_2E_VVQCCES/Z
+N_4E_VVQCCES/Z
 * LEXICON NMN_KAAQLLES  kääʹlles:källes
 * Yaml: **N-kaeaelles**
 * :%^RmVow VOONYS-STEM-PX ;  källs-
@@ -5782,24 +5785,24 @@ N_GEN2X3-NOM2X1
 * :%^RmVow VOONYS-STEM-PX ;  såbbr-
 
 * LEXICON N_OAQVES  ååʹves:å%^1VOW%{ʹØ%}vves
-N_2E_VVQCCES/Z
+N_4E_VVQCCES/Z
 * LEXICON NMN_OAQVES  ååʹves:å%^1VOWvves
 * Yaml: **N-aaves**
 * :%^RmVow VOONYS-STEM-PX ;  åvvs-
 
-* LEXICON N_2E_VQYKK_S/Z   pä%^1VOW%{ʹØ%}lgges
-* LEXICON NMN_2E_VQYKK_S/Z   pä%^1VOW%{ʹØ%}lgges
+* LEXICON N_4E_VQYKK_S/Z   pä%^1VOW%{ʹØ%}lgges
+* LEXICON NMN_4E_VQYKK_S/Z   pä%^1VOW%{ʹØ%}lgges
 * Yaml: **N-kaeaerbes**
 * :%^RmVow VOONYS-STEM-PX ;  kärbbs-
 
 * LEXICON N_KAAQRBES  kääʹrbes:kärbbes
-N_2E_VVQYXES/Z
+N_4E_VVQYX_S/Z
 * LEXICON NMN_KAAQRBES  kääʹrbes:kärbbes
 * Yaml: **N-kaeaerbes**
 * :%^RmVow VOONYS-STEM-PX ;  kärbbs-
 
 * LEXICON N_PUAQRES  puäʹres:puärˈres
-N_2E_VWQCES/Z
+N_4E_VWQC_S/Z
 * LEXICON NMN_PUAQRES  puäʹres:puärˈres
 * Yaml: **N-puaeres**
 * :%^RmVow VOONYS-STEM-PX ;  puärˈrs-
@@ -5849,18 +5852,18 @@ N_2E_VWQCES/Z
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
 * LEXICON N_KHEEQSTES  ǩeeʹstes:ǩeâsttes
-N_2E_EEQYXES/0Z
+N_4E_EEQYX_S/Z
 * LEXICON NMN_KHEEQSTES  ǩeeʹstes:ǩeâsttes
 * Yaml: **N-keestes**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
 * LEXICON N_KHEEQRDES  ǩeeʹrdes:ǩeâ%{ʹØ%}rddes
-N_2E_EEQYXES/Z
+N_4E_EEQYXES/Z
 * LEXICON NMN_KHEEQRDES  ǩeeʹrdes:ǩeâ%{ʹØ%}rddes
 * Yaml: **N-keestes**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
-N_2E_VVQYXES/0Z
+N_4E_VVQYX_S/0Z
 * LEXICON NMN_SYYQRVES 
 * Yaml: **N-kaeaerbes**
 * :%^RmVow VOONYS-STEM-PX ;  sârvvs-
@@ -5872,8 +5875,8 @@ this deals with an extra piece of paradigm
 * Yaml: **N-veelpes**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_2E_UEAQYKES/0Z  kueʹtǩes:kuä%{ʹØ%}tkkes
-* LEXICON NMN_2E_UEAQYKES/0Z  kueʹtǩes:kuä%{ʹØ%}tkkes
+* LEXICON N_4E_UEAQYK_S/Z  kueʹtǩes:kuä%{ʹØ%}tkkes
+* LEXICON NMN_4E_UEAQYK_S/Z  kueʹtǩes:kuä%{ʹØ%}tkkes
 * Yaml: **N-veelpes**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 

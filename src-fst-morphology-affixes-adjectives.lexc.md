@@ -146,6 +146,8 @@ CLASS
 
 * +Pl+Nom:až ENDLEX ;  Check this 2015-02-22
 
+CLASS 4 BISYLLABIC, HIGH VOWEL, MONOPHTHONG, NO PALATALIZATION
+IN PENULTIMATE Â:0
 * LEXICON A_VOONYS  võõnâs:võnn
 * +Pl+Nom: ENDLEX ;  Check this 2015-02-22
 
@@ -189,6 +191,8 @@ CLASS
 * LEXICON A_VEEIDAS  veeidas:veidd
 
 * LEXICON A_PAEAELKAS  päälkas:pä%^1VOWlkkas
+
+* LEXICON A_4A_VWYX_S/Z  kuârmas:kuârmmas
 
 * LEXICON A_CEAEGGAS   ceäggas:ceägˈg
 
@@ -1735,6 +1739,11 @@ N_GEN2X3-NOM2X1
 * Yaml: **N-paalkas**
 * :%^VC A-02_SG-ABE/ACC/GEN_PL-NOM ;  pälkkaz
 * :%^RmVow VOONYS-STEM-PX ;  såbbr-
+
+* LEXICON A-01_4A_VWYX_S/Z  kuârmas:kuârmmas
+* Yaml: **N-paalkas**
+* :%^VC A-02_SG-ABE/ACC/GEN_PL-NOM ;  kuârmmaz
+* :%^RmVow VOONYS-STEM-PX ;  såbbr- CHECKME 20250824
 
 * LEXICON A-01_CEAEGGAS  ceäggas:ceägˈgas
 * Yaml: **N-ceaeggas**
