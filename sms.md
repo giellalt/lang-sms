@@ -4,14 +4,14 @@ All doc-comment documentation in one large file.
 
 ---
 
-# src-cg3-disambiguator.cg3.md 
+## src-cg3-disambiguator.cg3.md 
 
 
 
-# Skolt Sámi disambiguator
+## Skolt Sámi disambiguator
 Note: This documentation file is still work-in-progress, and should not yet be used. Read the source file instead.
 
-## Delimiters 
+### Delimiters 
 
 DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>"; 
 
@@ -19,15 +19,15 @@ Tags and sets #
 
 We declare BOS, EOS and all the tags from the fst.
 
-# Disambiguation 
+## Disambiguation 
 
-## Cycle 0, rules without context
+### Cycle 0, rules without context
 
 * __R_Num__ removes Num when Neg.
 
 * __R_ACR__ removes ACR when CC.
 
-### Possessive suffix
+#### Possessive suffix
 Probably exists only for Refl and for kinship terms
 In Skolt Sami Possessive suffixes ARE USED Jaska 2020-11-08
 
@@ -35,20 +35,20 @@ In Skolt Sami Possessive suffixes ARE USED Jaska 2020-11-08
 
 * **NotPlPx1** removes PxPl1 if -1 Gen 0 Ess
 
-###  Pronouns and nouns
+####  Pronouns and nouns
 
-### Postpostions
+#### Postpostions
 
 * **GenWhenFollowedByGenPo**
 
-### Short Pronouns
+#### Short Pronouns
 No rules.
 
-### Proper nouns
+#### Proper nouns
 
-## Cycle 1
+### Cycle 1
 
-### Numerals
+#### Numerals
 
 * **r1082** Selects (Num Nom)
 
@@ -56,7 +56,7 @@ No rules.
 * **NumIfParag**
 * **NumIfParag**
 
-### Trivialia
+#### Trivialia
 
 * __prop_daate__ Prop if 0 Pers
 
@@ -70,17 +70,17 @@ No rules.
 
 * **unifDem** 
 
-## Nouns
+### Nouns
 
-###  Nominative plural
+####  Nominative plural
 
-###  Genitive
+####  Genitive
 
 * **PGenN** selects Gen when (Pron Pers) to the left and N to the right *mu sámevuođa iđuid*
 
 * **CoGen1** (quite strict) selects the first of coordinated genitives *riikkaid, čearuid ja boazoorohagaid ovttasbarggu*
 
-## Verbs
+### Verbs
 
 * **IsItConNeg** 
 
@@ -88,105 +88,105 @@ No rules.
 
 * **PrsInNeg** 
 
-### Imperative
+#### Imperative
 
 There can be Interj, VOC, 
 
-### Genitive modifier
+#### Genitive modifier
 
 * **genmod** 
 
-### Subject
+#### Subject
 
-## M A P P I N G
+### M A P P I N G
 
-### CC- and CS-Mapping
+#### CC- and CS-Mapping
 CASES
 
 * **compcs** 
 
 * **cnp** maps @CNP for gon, goh,... 
 
-### PrfPrc
+#### PrfPrc
 
-### Person
+#### Person
 
-### Nomen
+#### Nomen
 
-### Verb or Noun
+#### Verb or Noun
 
-### Dem
+#### Dem
 No rules
 
-### CC and CS or Adv
+#### CC and CS or Adv
 
-### Adj or Adv
+#### Adj or Adv
 
-### grammatisk ord eller N eller A
+#### grammatisk ord eller N eller A
 
-### N or Adj
+#### N or Adj
 
-### N or V
+#### N or V
 
-### Ger or Der/NomAct
+#### Ger or Der/NomAct
 
-### Adj or Indef
+#### Adj or Indef
 
-### Num
+#### Num
 
-### Rel or Interr
+#### Rel or Interr
 
-### Interj
+#### Interj
 no rule
 
-### Po or Pr
+#### Po or Pr
 
 * **PoGena** Po not Pr
 
-### Adv or Po/Pr
+#### Adv or Po/Pr
 
-### Com
+#### Com
 
-### Accusative or illative
+#### Accusative or illative
 
-### Accusative or Genitive
+#### Accusative or Genitive
 
-### Indef or Adv
+#### Indef or Adv
 
-### special lemmas
+#### special lemmas
 
 no rules
 
-### Verb person vs. Inf -- moved here in order to have the pronouns disambiguated first.
+#### Verb person vs. Inf -- moved here in order to have the pronouns disambiguated first.
 
-## Proper nouns
+### Proper nouns
 
 Rule set taken from sme
 
 Substituting Prop tags 
 
-### Prop or not
+#### Prop or not
 
 * **Prop** 
 Capitalised nouns in the middle of a sentence are names - (not always).
 
 * **PropSg** goes for Sg not Pl reading of Prop (Marit not Mari Pl)
 
-### Removing proper nouns that are lookalikes
+#### Removing proper nouns that are lookalikes
 
-### Particular proper nouns
+#### Particular proper nouns
 
 Todo: sms-ify.
 
-# Mapping rules
+## Mapping rules
 
-## SAFE RULES
+### SAFE RULES
 
 * **InfSubj**
 
-## subject rules and spred rules
+### subject rules and spred rules
 
-# Removing Err/Orth
+## Removing Err/Orth
 
 Denne regelen fjerner Err/Orth når det er samme lemma, sjøl om morfologien er forskjellig.
 
@@ -198,13 +198,13 @@ Denne regelen fjerner Err/Orth når det er samme lemma, sjøl om morfologien er 
 
 ---
 
-# src-fst-morphology-affixes-acronyms.lexc.md 
+## src-fst-morphology-affixes-acronyms.lexc.md 
 
 
 
-# Inari Saami acronyms
+## Inari Saami acronyms
 
-## The lexica giving tags and suffixes to the acronyms
+### The lexica giving tags and suffixes to the acronyms
 
 +N+ABBR+Sg+Gen:%>    # ;
 +N+ABBR+Sg+Loc:%>    # ;
@@ -228,10 +228,10 @@ Denne regelen fjerner Err/Orth når det er samme lemma, sjøl om morfologien er 
 
 ---
 
-# src-fst-morphology-affixes-adjectives.lexc.md 
+## src-fst-morphology-affixes-adjectives.lexc.md 
 
 
-# Skolt Saami adjective declension
+## Skolt Saami adjective declension
 
 These come directly from the xml to lexc xsltransformation lexica
 
@@ -534,18 +534,18 @@ WORK HERE 2015-10-14 deverbals
 
 check this 2015-11-10
 
-## 2. WORDS WITH MULTI-SYLLABLE NOMINATIVE SINGULARS (2009: 293)
-## 2.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
-## 2.3.2 Sg.Ill in -a
-## 2.3.2.1 Has Gradation 
-## 2.3.2.1.1 Second syllable vowel loss (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Obl)
+### 2. WORDS WITH MULTI-SYLLABLE NOMINATIVE SINGULARS (2009: 293)
+### 2.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
+### 2.3.2 Sg.Ill in -a
+### 2.3.2.1 Has Gradation 
+### 2.3.2.1.1 Second syllable vowel loss (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Obl)
 * Yaml: **A-chaalmtem**
 
-## 2. WORDS WITH MULTI-SYLLABLE NOMINATIVE SINGULARS (2009: 293)
-## 2.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
-## 2.3.2 Sg.Ill in -a
-## 2.3.2.1 Has Gradation 
-## 2.3.2.1.1 Second syllable vowel loss (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Obl)
+### 2. WORDS WITH MULTI-SYLLABLE NOMINATIVE SINGULARS (2009: 293)
+### 2.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
+### 2.3.2 Sg.Ill in -a
+### 2.3.2.1 Has Gradation 
+### 2.3.2.1.1 Second syllable vowel loss (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Obl)
 * Yaml: **A-chaalmtem**
 
 CLASS 11 ADJECTIVES
@@ -612,22 +612,22 @@ long-consonant=yes
 
 1.1.1.1.1.1. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|geminate" 
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel	-e
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant Geminate alternation)
+### 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+### 1.1.1.1[1].1.1 Has Orthographic Gradation
+### 1.1.1.1[1].1.1[] (Monophthong + Consonant Geminate alternation)
 Extra strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Strong grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-papp**
 strong_geminate, short_vowel
 * : A-02_SG-NOM ;			 papp
@@ -658,22 +658,22 @@ long-consonant=yes
 
 1.1.1.1.1.1. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|geminate" 
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel	-e
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant Geminate alternation)
+### 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+### 1.1.1.1[1].1.1 Has Orthographic Gradation
+### 1.1.1.1[1].1.1[] (Monophthong + Consonant Geminate alternation)
 Extra strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Strong grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-papp**
 strong_geminate, short_vowel
 * : A-02_SG-NOM ;			 papp
@@ -696,22 +696,22 @@ Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_xyy
 similar_to: N_TAALKYS, N_KOONTYR
 1.1.1.1.1.1. Sg_Nom="short_vowel|long_cluster" Sg_Gen="long_vowel|short_cluster" 
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel	-e
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
+### 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+### 1.1.1.1[1].1.1 Has Orthographic Gradation
+### 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-portt**
 
 * : A-02_SG-NOM ;	    				 põrtt
@@ -730,22 +730,22 @@ Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_xyy
 similar_to: N_TAALKYS, N_KOONTYR
 1.1.1.1.1.1. Sg_Nom="short_vowel|long_cluster" Sg_Gen="long_vowel|short_cluster" 
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel	-e
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
+### 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+### 1.1.1.1[1].1.1 Has Orthographic Gradation
+### 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-portt**
 
 * : A-02_SG-NOM ;	    				 põrtt
@@ -763,22 +763,22 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_vyy
 1.1.1.1.1.1. Sg_Nom="short_vowel|long_V-cluster" Sg_Gen="long_vowel|short_V-cluster"
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel	-e
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
+### 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+### 1.1.1.1[1].1.1 Has Orthographic Gradation
+### 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-autt**
 
 * : A-02_SG-NOM ;	    				 autt
@@ -796,22 +796,22 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 Sg_Nom: vow_di:vow_high:pal_no:cns_xyy
 1.1.1.1.1.1. Sg_Nom="diphthong|long_cluster" Sg_Gen="diphthong|short_cluster"
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel	-e
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
+### 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+### 1.1.1.1[1].1.1 Has Orthographic Gradation
+### 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-chuoskk**
 
 * : A-02_SG-NOM ;	    			 (1) čuõskk
@@ -829,22 +829,22 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 Sg_Nom: vow_di:vow_high:pal_no:cns_xyy
 1.1.1.1.1.1. Sg_Nom="diphthong|long_cluster" Sg_Gen="diphthong|short_cluster" Sg_Ill="diphthong|vowel_e-coloration|long_cluster"
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel	-e
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
+### 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+### 1.1.1.1[1].1.1 Has Orthographic Gradation
+### 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-skjiankk**
 
 * : A-02_SG-NOM ;	      	 (1) Sg.Nom: sǩiâŋkk
@@ -862,22 +862,22 @@ Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_gem
 1.1.1.1.1.2. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|single_consonant" 
 
 See also: NMN_TOLL_PLC, which is the same, but minus PL forms and certain cases
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel	-e
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant and Consonant Geminate alternation)
+### 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+### 1.1.1.1[1].1.1 Has Orthographic Gradation
+### 1.1.1.1[1].1.1[] (Monophthong + Consonant and Consonant Geminate alternation)
 Extra strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-kidd, N-soll, N-toll, N-vorr**
 strong_geminate, short_vowel, no_palatalization, high_stem_vowel 
 * : A-02_SG-NOM ;	    	   toll
@@ -915,23 +915,23 @@ THIS IS NOT THE SAME AS N_MUORR
 Sg_Nom: vow_di:vow_high:pal_no:cns_gem
 1.1.1.1.1.1. Sg_Nom="diphthong|geminate" Sg_Gen="diphthong|single_consonant" 
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel	-e
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
-## 1.1.1.1[1].2 Has Specifically Pedagogical Gradation
+### 1.1.1.1[1].2 Has Specifically Pedagogical Gradation
 Sg.Ill: 
-## 1.1.1.1[1].2.1 Has Orthographic Gradation
-## 1.1.1.1[1].2.1[] (Diphthong + Consonant and Consonant Geminate alternation)
+### 1.1.1.1[1].2.1 Has Orthographic Gradation
+### 1.1.1.1[1].2.1[] (Diphthong + Consonant and Consonant Geminate alternation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-muorr**
 * : A-02_SG-NOM ;	    			 muõrr
 * :%^CC2C A-02_SG-ABE/ACC/GEN ;		 muõr
@@ -945,7 +945,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+A:%^CC2C A-02_MUORYZH-WITHOUT-PAL ;   muõr-
 * +Der+Der/Dimin+A:%^PAL%^CC2C A-02_MUORYZH-WITH-PAL ;   muõʹr-
 
-## FORMS
+### FORMS
 similar_to: N_VUYHSS
 * Yaml: **N-miwhtt**
 * :%^YXX2VX A-02_SG-COM_IN ;			 miõutin
@@ -961,42 +961,42 @@ similar_to: N_VUYHSS
 
 Sg_Ill="palatalization|e-final"
 
-## 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
-## 2.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
-## 2.1.3 Sg.Ill in palatalization and -e
-## 2.1.3.3 Lacks Gradation (in last syllable)
-## 2.1.3.3.1 Monophthong
-## 2.1.3.3.1.3 Consonant always short
-## 2.1.3.3.1.3.4 Sg.Nom long vowel AND Short consonant
-## 2.1.3.3.1.3.4.1.Sg.Gen Weak Grade
-## 2.1.3.3.1.3.4.1.3 Sg.Ill Weak Grade
+### 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
+### 2.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
+### 2.1.3 Sg.Ill in palatalization and -e
+### 2.1.3.3 Lacks Gradation (in last syllable)
+### 2.1.3.3.1 Monophthong
+### 2.1.3.3.1.3 Consonant always short
+### 2.1.3.3.1.3.4 Sg.Nom long vowel AND Short consonant
+### 2.1.3.3.1.3.4.1.Sg.Gen Weak Grade
+### 2.1.3.3.1.3.4.1.3 Sg.Ill Weak Grade
 plaan:plaan
 * Yaml: **N-plaan**
 * +Der+Der/Dimin+A: A-02_MUORYZH-WITHOUT-PAL ;   paar-
 * +Der+Der/Dimin+A:%^PAL A-02_MUORYZH-WITH-PAL ;   paaʹr-
 
 CLASS 1 LOW VOWEL, MONOPHTHONG, NO PALATALIZATION NOMINALS
-## a-stems
+### a-stems
 
 Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_gem
 1.1.1.2.1. stem_with_gradation: yes 
 1.1.1.2.1.1. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|geminate" 
 
 Is for nouns with *-ast* Loc
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.2 Sg.Loc in -ast (vowel shift)
 Raised: Sg.Ill
 Lowered: ELSE
 a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel	-u
-## 1.2.2.2 Lacks Palatalization
-## 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
-## 1.2.2.2.1.1 Has Orthographic Gradation
-## 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
+### 1.2.2 Sg.Ill vowel	-u
+### 1.2.2.2 Lacks Palatalization
+### 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
+### 1.2.2.2.1.1 Has Orthographic Gradation
+### 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
 Extra strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Strong grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 N_A-URaise3-32
 * Yaml: **N-pess, N-pall**
 strong_geminate, short_vowel, no_palatalization, high_stem_vowel
@@ -1025,20 +1025,20 @@ strong_geminate, long_vowel, no_palatalization, high_stem_vowel
 
 Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_gem
 Is for nouns with *-ast* Loc
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.2 Sg.Loc in -ast (vowel shift)
 Raised: Sg.Ill
 Lowered: ELSE
 a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel	-u
-## 1.2.2.2 Lacks Palatalization
-## 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
-## 1.2.2.2.1.1 Has Orthographic Gradation
-## 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
+### 1.2.2 Sg.Ill vowel	-u
+### 1.2.2.2 Lacks Palatalization
+### 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
+### 1.2.2.2.1.1 Has Orthographic Gradation
+### 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 N_A-URaise3-32
 * Yaml: **soomm**
 grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
@@ -1098,20 +1098,20 @@ CLASS 1 LOW VOWEL, DIPHTHONG, NO PALATALIZATION NOMINALS
 
 Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_gem_long
 Is for nouns with *-ast* Loc
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.2 Sg.Loc in -ast (vowel shift)
 Raised: Sg.Ill
 Lowered: ELSE
 a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel	-u
-## 1.2.2.0 Lacks Palatalization
-## 1.2.2.0.2 Has Specifically Pedagogical Gradation
-## 1.2.2.0.2.0 Lack Orthographic Gradation
-## 1.2.2.0.2.0[] (Diphthong + Consonant Geminate alternation)
+### 1.2.2 Sg.Ill vowel	-u
+### 1.2.2.0 Lacks Palatalization
+### 1.2.2.0.2 Has Specifically Pedagogical Gradation
+### 1.2.2.0.2.0 Lack Orthographic Gradation
+### 1.2.2.0.2.0[] (Diphthong + Consonant Geminate alternation)
 Extra strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Strong grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-neavvv**
 * : A-02_A-STEM_SG-NOM ;	    			  neävˈv
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
@@ -1157,18 +1157,18 @@ Ess_Px..., Sg_Ill..., N»A
 Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_gem_dd_type
 Is for nouns with *-ast* Loc, No gradation
 N_A-U1-11
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (no vowel shift, all lowered)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.2 Sg.Loc in -ast (no vowel shift, all lowered)
 a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel	-u
-## 1.2.2.2 Lacks Palatalization
-## 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
-## 1.2.2.2.1.2 Lacks Orthographic Gradation
-## 1.2.2.2.1.2[] (Monophthong + Consonant)
+### 1.2.2 Sg.Ill vowel	-u
+### 1.2.2.2 Lacks Palatalization
+### 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
+### 1.2.2.2.1.2 Lacks Orthographic Gradation
+### 1.2.2.2.1.2[] (Monophthong + Consonant)
 Weak grade: Sg.Nom, Ess, Par
 Weak grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **A-vaeaezhzh**
 * : A-02_SG-NOM ;	    		 vääžž
 * : A-02_SG-ABE/ACC/GEN_PL-NOM ;	 vääžž
@@ -1197,21 +1197,21 @@ CLASS 1 HIGH VOWEL, PALATALIZATION NOMINALS
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) nuʹbb Ess+Px..
 
 Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_gem_dd_type
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 * Yaml: **N-nubb**
 * There are several stem types
@@ -1226,16 +1226,16 @@ Bahuvriihi: årddnjuuʹnn
 * :%^VV2V%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) njuʹn-
 * :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) njuʹnn Ess+Px..
 
-## FORMS
-## (1) Sg.Nom: juʹvjj
-## (2) Pl.Nom: juuʹj
-## (3) Sg.Ill: joujja
-## (4) Sg.Loc: juuʹjest
-## (5) Sg.Com: juuʹjin
-## (6) Ess: juʹvjjen
-## (7) Par: juʹvjjed
-## (8) Pl.Acc: juuʹjid
-## (9) Der/Dimin.N.Sg.Nom: joujjaž
+### FORMS
+### (1) Sg.Nom: juʹvjj
+### (2) Pl.Nom: juuʹj
+### (3) Sg.Ill: joujja
+### (4) Sg.Loc: juuʹjest
+### (5) Sg.Com: juuʹjin
+### (6) Ess: juʹvjjen
+### (7) Par: juʹvjjed
+### (8) Pl.Acc: juuʹjid
+### (9) Der/Dimin.N.Sg.Nom: joujjaž
 NumContLex="1.113"
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-juvjj**
@@ -1243,29 +1243,29 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^VV2V%^PAL%^YXX2VX E-STEM-PX-ALLEGRO ;  (11) juʹj-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) juʹvjj Ess+Px..
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
-## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
+### 1.3 Sg.Loc in -est (no vowel shift, all lowered)
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.2 Has Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
+### 1.3.2.1.2 Has Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
-## FORMS
-## (1) Sg.Nom: kueʹll
-## (2) Pl.Nom: kueʼl
-## (3) Sg.Ill: kuâlˈla
-## (4) Sg.Loc: kueʹlest
-## (5) Sg.Com: kuõʹlin ~ kueʹlin
-## (6) Ess: kueʹllen
-## (7) Par: kueʹlled
-## (8) Pl.Acc: kuõʹlid ~ kueʹlid
-## (9) Der/Dimin.N.Sg.Nom: kuâlaž 
+### FORMS
+### (1) Sg.Nom: kueʹll
+### (2) Pl.Nom: kueʼl
+### (3) Sg.Ill: kuâlˈla
+### (4) Sg.Loc: kueʹlest
+### (5) Sg.Com: kuõʹlin ~ kueʹlin
+### (6) Ess: kueʹllen
+### (7) Par: kueʹlled
+### (8) Pl.Acc: kuõʹlid ~ kueʹlid
+### (9) Der/Dimin.N.Sg.Nom: kuâlaž 
 * Yaml: **N-kuell**
 * There are several stem types 
 * kueʹll:kuâll
@@ -1274,22 +1274,22 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 * :%^PALE%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) kueʹl-
 * :%^PALE%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) kueʹlˈl Ess+Px..
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-muerjj**
@@ -1309,22 +1309,22 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^VOWRaise%^PALE%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ;  (11) mueʹrj-
 * :%^PALE%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) mueʹrjj Ess+Px..
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-muerjj**
@@ -1349,28 +1349,28 @@ CLASS 1 LOW VOWEL, PALATALIZATION, ILLATIVE IN U NOMINALS
 WORK NEEDED
 
 CLASS 1 LOW VOWEL, PALATALIZATION, ILLATIVE IN A NOMINALS
-## e-stems
+### e-stems
 
 similar_to: N_1Y_VCC
 vowel: monophthong
 vowel_shift: yes
 consonantism: geminate
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 * Yaml: **N-vaell, N-kall**
 strong_geminate, short_vowel, palatalization, low_stem_vowel
@@ -1386,22 +1386,22 @@ similar_to: N_1Y_VCC
 vowel: monophthong
 vowel_shift: ??
 consonantism: geminate
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 * Yaml: **A-ucc**
 strong_geminate, short_vowel, palatalization, low_stem_vowel
@@ -1413,44 +1413,44 @@ strong_geminate, long_vowel, depalatalization, low_stem_vowel
 * :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) uʹc-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) uʹcc Ess+Px..
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 * Yaml: **N-saeaemm**
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) säämm-
 * :%^VV2V%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) säʹm-
 * :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) säʹmm Ess+Px..
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 * Yaml: **caacc**
 * There are several stem types
@@ -1482,22 +1482,22 @@ NumContLex="1.113"
 * :%^V2VV%^PAL%^YXX2YX%^PALK A-02_PL-NOM ;	 (2) Pl.Nom: ââʹlj
 * :%^V2VV%^VOWRaise%^PAL%^YXX2YX%^PALK A-02_E-STEM_PL-OBL ;  (5) Sg.Com: õõʹljin
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-algg**
@@ -1542,22 +1542,22 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^PAL E-STEM-PX-ALLEGRO ;  (11) hääʹsǩ-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) hääʹsǩ Ess+Px..
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (NO vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (NO vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-kerjj**
@@ -1572,39 +1572,39 @@ Is for nouns with *-est* Loc, Extra long vowel
 * +Use/NGminip+Use/NG:%^V2VV%^PAL%^YXX2YX%> A-02_PL-OBL ;  (8) Pl.Acc: ǩeeʹrjid
 * :%^V2VV%^YXX2YX A-02_E-STEM_N_KUYLAZH ;   (9) Der/Dimin.N.Sg.Nom: ǩeerjaž
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (NO vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (NO vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-jaurr**
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (no vowel shift, all lowered)
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster variation)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-peivv**
 * :%^PAL A-02_E-STEM_SG-NOM ;	     (1) Sg.Nom: peiʹvv
 * :%^V2VV%^PAL%^YXX2YX A-02_E-STEM_SG-ABE/ACC/GEN ;  (2) Pl.Nom: peeiʼv
@@ -1619,22 +1619,22 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * :%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ;  (11) peiʹv-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) peiʹvv Ess+Px..
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE  ẹ, ä
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 * Yaml: **N-suekkj**
 
@@ -1642,22 +1642,22 @@ NumContLex="1.113"
 * :%^VOWRaise%^PALẸ%^Allegro%^PAL%^KK2GAllegro E-STEM-PX-ALLEGRO ;  (11) suẹˈʹj-
 * :%^PAL%^CC2CCC%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) suäʹǩˈǩ Ess+Px..
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE  ẹ, ä
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 * Yaml: **N-kuett**
 * There are several stem types
@@ -1669,31 +1669,31 @@ NumContLex="1.113"
 * :%^PAL%^CC2C E-STEM-PX-ALLEGRO ;  (11) hiẹʹn-
 * :%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) hiäʹnˈn- Ess+Px..
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE  ẹ, ä
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (1) Sg.Nom: vuẹiʹvv
-## (2) Pl.Nom: vuẹiʼv
-## (3) Sg.Ill: vuäivva
-## (4) Sg.Loc: vuẹiʹvest
-## (5) Sg.Com: vueiʹvin
-## (6) Ess: vuẹiʹvven
-## (7) Par: vuẹiʹvved
-## (8) Pl.Acc: vueiʹvid
-## (9) Der/Dimin.N.Sg.Nom: vuäivaž
+### FORMS
+### (1) Sg.Nom: vuẹiʹvv
+### (2) Pl.Nom: vuẹiʼv
+### (3) Sg.Ill: vuäivva
+### (4) Sg.Loc: vuẹiʹvest
+### (5) Sg.Com: vueiʹvin
+### (6) Ess: vuẹiʹvven
+### (7) Par: vuẹiʹvved
+### (8) Pl.Acc: vueiʹvid
+### (9) Der/Dimin.N.Sg.Nom: vuäivaž
 NumContLex="1.113"
 * Yaml: **N-vueivv**
 * There are several stem types
@@ -1701,31 +1701,31 @@ NumContLex="1.113"
 * :%^VOWRaise%^PALẸ%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ;  (11) vuẹiʹv-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) vuäiʹvv- Ess+Px..
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE  ẹ, ä
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (1) Sg.Nom: čuäʹrvv
-## (2) Pl.Nom: čuẹʼrv
-## (3) Sg.Ill: čuärvva
-## (4) Sg.Loc: čuẹʹrvest
-## (5) Sg.Com: čueʹrvin
-## (6) Ess: čuäʹrvven
-## (7) Par: čuäʹrvved
-## (8) Pl.Acc: čueʹrvid
-## (9) Der/Dimin.N.Sg.Nom: čuärvaž
+### FORMS
+### (1) Sg.Nom: čuäʹrvv
+### (2) Pl.Nom: čuẹʼrv
+### (3) Sg.Ill: čuärvva
+### (4) Sg.Loc: čuẹʹrvest
+### (5) Sg.Com: čueʹrvin
+### (6) Ess: čuäʹrvven
+### (7) Par: čuäʹrvved
+### (8) Pl.Acc: čueʹrvid
+### (9) Der/Dimin.N.Sg.Nom: čuärvaž
 NumContLex="1.113"
 * Yaml: **N-chuaervv**
 * There are several stem types
@@ -1737,22 +1737,22 @@ NumContLex="1.113"
 * :%^PALE%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) vueʹss-
 * :%^PALE%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) vueʹsˈs Ess+Px..
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: ELSE
 Lowered: Sg.Ill
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Diphthong + Consonant Geminate variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Diphthong + Consonant Geminate variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-jeaggj**
 * There are several stem types 
 *  A-02_E-STEM_SG-ILL ;	      (3) jeägˈga
@@ -1770,22 +1770,22 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * :%^PAL E-STEM-PX-STRENGTHEN-WITH-PAL ;			    (12) jeäʹǧˈǧ
 * +Use/NGminip+Use/NG:%^VOWRaise%^PALẸ%^PAL%^CCC2CC E-STEM-PX-ALLEGRO ;   (2)
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: ELSE
 Lowered: Sg.Ill
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Diphthong + Consonant Geminate variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Diphthong + Consonant Geminate variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-jeaggj**
 * There are several stem types 
 *  A-02_E-STEM_SG-ILL ;	      (3) jeägˈga
@@ -1813,20 +1813,20 @@ e.g. +Use/NG+Sg+Loc+PxSg1
 
 * LEXICON A-02_E-STEM_N_KUYLAZH  (9)
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
-## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
+### 1.3 Sg.Loc in -est (no vowel shift, all lowered)
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.2 Has Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
+### 1.3.2.1.2 Has Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
-## FORMS
+### FORMS
 * Yaml: **N-jeaerggj, N-keadgg**
 * There are several stem types 
 * jeäʹrǧǧ:jeäʹrǧǧ
@@ -1843,7 +1843,7 @@ e.g.
 e.g. +Use/NG+Sg+Loc+PxSg3
 e.g. +Sg+Loc+PxSg1
 
-## CLASS 2 NOMINALS with high stem vowel and i-stems
+### CLASS 2 NOMINALS with high stem vowel and i-stems
 
 * LEXICON A-01_JUURD  juurd:jurdd
 is for nouns with stem *i* + *-est* +Sg+Loc; all stem other than the +Sg+Nom are X3; the *i* does not occur in +Par 
@@ -1866,18 +1866,18 @@ strong_geminate, long_vowel, no-palatalization, high_stem_vowel
 strong_geminate, short_vowel, no-palatalization, high_stem_vowel
 
 CLASS 2 NOMINALS with low stem vowel and u-stems
-## u-stems
+### u-stems
 
 CLASS 2 NOMINALS with high stem vowel and â-stems
 
 CLASS 3 HIGH VOWEL, MONOPHTHONG, NO PALATALIZATION NOMINALS
-## m-stems
+### m-stems
 
 * LEXICON A-01_SOOUS  sõõus:sõ%^1VOWhss
 
 CLASS 3
 
-## n-stems
+### n-stems
 
 CLASS 3
 
@@ -1985,12 +1985,12 @@ N_GEN2X3-NOM2X1
 CLASS 4 BISYLLABIC, LOW VOWEL, DIPHTHONG, NO PALATALIZATION
 IN PENULTIMATE A:0
 
-## 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 252)
-## 2.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
-## 2.3.2 Sg.Ill in -a
-## 2.3.2.2 LACKS Gradation
-## 2.3.2.2.1 Penultimate stem vowel loss: (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Gen, Pl.Acc, Pl.Ill, Pl.Loc, Pl.Com, Pl.Abe)
-## 2.3.2.2.1.1 The Sg.Com vowel i appears before final n  
+### 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 252)
+### 2.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
+### 2.3.2 Sg.Ill in -a
+### 2.3.2.2 LACKS Gradation
+### 2.3.2.2.1 Penultimate stem vowel loss: (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Gen, Pl.Acc, Pl.Ill, Pl.Loc, Pl.Com, Pl.Abe)
+### 2.3.2.2.1.1 The Sg.Com vowel i appears before final n  
 * Yaml: **N-juaghghas**
 * :%^VC  A-02_SG-ABE/ACC/GEN_PL-NOM ;  juâkˈkaz
 * :%^RmVow VOONYS-STEM-PX ;  såbbr-
@@ -2035,7 +2035,7 @@ IN PENULTIMATE E:0
 * Yaml: **A-puuqttes**
 * :%^VOWLower%>s VOONYS-STEM-PX ;  potts-
 
-## -stems
+### -stems
 
 * LEXICON A-01_CHUEQDHES  čueʹđes:čuâttes
 * Yaml: **N-chuedhes**
@@ -2052,7 +2052,7 @@ IN PENULTIMATE E:0
 * Yaml: **N-sett**
 * There are several stem types 
 
-## e-a-stems
+### e-a-stems
 
 čâustõk+N+Sg+Gen:čâustõõǥǥ
 * +Der+Der/Dimin+A:%{XC%}%^V2VV%^K2GG A-02_MUORYZH-WITHOUT-PAL ;   kuuzz-
@@ -2076,7 +2076,7 @@ IN PENULTIMATE E:0
 * *čââʹlmtẹ%^1VOW%{ʹØ%}m*
 * *čââʹlmtẹ00m*
 
-## Stem types from the grammar
+### Stem types from the grammar
 
 *These are still not fixed.*
 
@@ -2085,7 +2085,7 @@ tuõđšteei:tueʹjjee
 * Yaml: **N-tuodhshteei**
 
 Class 5 according to Feist 152
-## k-stems
+### k-stems
 
 stemtype 
 * Yaml: **N-chaustok**
@@ -2340,7 +2340,7 @@ NumContLex="1.2"
 NumContLex="1.2"
 
 Class 7 according to Feist 154-155
-## i-stems
+### i-stems
 * LEXICON A-01_HOQPPI  hõʹppi:hõʹppi
 * Yaml: **hoppi**
 * There are several stem types
@@ -2406,30 +2406,30 @@ Class 11 according to Feist 162
 
 Class 12 Feist 163
 
-### Noun phrase heads
-### Pl
+#### Noun phrase heads
+#### Pl
 
-### Number and case tags
+#### Number and case tags
 
 Used with words like juurd: jurddǥatta
 
 Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_gem
 Is for nouns with *-ast* Loc
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.2 Sg.Loc in -ast (vowel shift)
 Raised: Sg.Ill
 Lowered: ELSE
 a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel	-u
-## 1.2.2.2 Lacks Palatalization
-## 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
-## 1.2.2.2.1.1 Has Orthographic Gradation
-## 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
+### 1.2.2 Sg.Ill vowel	-u
+### 1.2.2.2 Lacks Palatalization
+### 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
+### 1.2.2.2.1.1 Has Orthographic Gradation
+### 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 uâ:uõ, eä:iâ
-## FORMS
+### FORMS
 N_A-URaise3-32
 * Yaml: **N-vuarr**
 grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
@@ -2453,7 +2453,7 @@ grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
 
 grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 
-## Adjectives -- to be moved
+### Adjectives -- to be moved
 
 * * *
 
@@ -2461,10 +2461,10 @@ grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 
 ---
 
-# src-fst-morphology-affixes-adverbs.lexc.md 
+## src-fst-morphology-affixes-adverbs.lexc.md 
 
 
-# Skolt Saami adverbs
+## Skolt Saami adverbs
 
 * LEXICON ADV_OARRA  årra:årr
 * LEXICON ADV_PIRRSES  pirrses:pirr
@@ -2481,14 +2481,14 @@ grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 
 ---
 
-# src-fst-morphology-affixes-nouns.lexc.md 
+## src-fst-morphology-affixes-nouns.lexc.md 
 
 
-# Skolt Saami noun morphology 
+## Skolt Saami noun morphology 
 
 This file documents the Skolt Saami noun morphology, lexicon by lexicon.
 
-## Unclassified words
+### Unclassified words
 
 * LEXICON N_  FOR (STILL) UNCLASSIFIED INCOMING NOUNS.
 
@@ -2549,22 +2549,22 @@ long-consonant=yes
 
 1.1.1.1.1.1. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|geminate" 
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel	-e
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant Geminate alternation)
+### 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+### 1.1.1.1[1].1.1 Has Orthographic Gradation
+### 1.1.1.1[1].1.1[] (Monophthong + Consonant Geminate alternation)
 Extra strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Strong grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-papp**
 strong_geminate, short_vowel
 * : SG-NOM ;			 papp
@@ -2660,22 +2660,22 @@ Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_xyy
 similar_to: N_TAALKYS, N_KOONTYR
 1.1.1.1.1.1. Sg_Nom="short_vowel|long_cluster" Sg_Gen="long_vowel|short_cluster" 
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel	-e
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
+### 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+### 1.1.1.1[1].1.1 Has Orthographic Gradation
+### 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-algg**
 
 * : SG-NOM ;	    				 põrtt
@@ -2746,22 +2746,22 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_vyy
 1.1.1.1.1.1. Sg_Nom="short_vowel|long_V-cluster" Sg_Gen="long_vowel|short_V-cluster"
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel	-e
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
+### 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+### 1.1.1.1[1].1.1 Has Orthographic Gradation
+### 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-autt**
 
 * : SG-NOM ;	    				 autt
@@ -2809,22 +2809,22 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 N_1Y_VHCC cf. SIJDD
 Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_hyy
 1.1.1.1.1.1. Sg_Nom="short_vowel|h-cluster" Sg_Gen="long_vowel|short_u-cluster" 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel	-e
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
+### 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+### 1.1.1.1[1].1.1 Has Orthographic Gradation
+### 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-vahtt**
 
 * : SG-NOM ;	    			 vahtt
@@ -2880,23 +2880,23 @@ Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_gem_ss_type
 1.1.1.1.1.1. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|voiced_geminate" 
 
 See also: NMN_KUSS_PLC, which is the same, but minus PL forms and certain cases
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel	-e
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant and Consonant Geminate alternation)
+### 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+### 1.1.1.1[1].1.1 Has Orthographic Gradation
+### 1.1.1.1[1].1.1[] (Monophthong + Consonant and Consonant Geminate alternation)
 Extra strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 similar_to: 
-## FORMS
+### FORMS
 * Yaml: **N-kuss**
 
 * : SG-NOM ;	    		 kuss
@@ -3008,22 +3008,22 @@ N_1Y_VWYKK
 Sg_Nom: vow_di:vow_high:pal_no:cns_yxx
 1.1.1.1.1.1. Sg_Nom="diphthong|long_cluster" Sg_Gen="diphthong|short_cluster"
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel	-e
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
+### 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+### 1.1.1.1[1].1.1 Has Orthographic Gradation
+### 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-chuoskk**
 
 * : SG-NOM ;	    			 (1) čuõskk
@@ -3066,22 +3066,22 @@ N_1Y_VWUCC
 Sg_Nom: vow_di:vow_high:pal_no:cns_vxx
 1.1.1.1.1.1. Sg_Nom="diphthong|long_V-cluster" Sg_Gen="diphthong|short_V-cluster"
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel	-e
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
+### 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+### 1.1.1.1[1].1.1 Has Orthographic Gradation
+### 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-chuoskk**
 
 * : SG-NOM ;	    			 (1) ruõidd
@@ -3123,24 +3123,24 @@ Sg_Nom: vow_di:vow_high:pal_no:cns_gem
 1.1.1.1.1.1. Sg_Nom="diphthong|geminate" Sg_Gen="diphthong|single_consonant" Sg_Ill="diphthong|vowel_e-coloration|long_geminate"
 
 is for words with *-âst* Loc but *-ense* Ill 3rd grade
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel	-e
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
 Has Allophonic palatalization
-## 1.1.1.1[1].2 Has Specifically Pedagogical Gradation
-## 1.1.1.1[1].2.1 Has Orthographic Gradation
-## 1.1.1.1[1].2.1[] (Diphthong + Consonant and Consonant Geminate alternation)
+### 1.1.1.1[1].2 Has Specifically Pedagogical Gradation
+### 1.1.1.1[1].2.1 Has Orthographic Gradation
+### 1.1.1.1[1].2.1[] (Diphthong + Consonant and Consonant Geminate alternation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (9) Der/Dimin.N.Sg.Nom: puåvâž
+### FORMS
+### (9) Der/Dimin.N.Sg.Nom: puåvâž
 puåvv:puåvv
 * Yaml: **N-kiapp, N-puavv**
 
@@ -3248,24 +3248,24 @@ Sg_Nom: vow_di:vow_high:pal_no:cns_gem_long
 1.1.1.1.1.1. Sg_Nom="diphthong|long_geminate" Sg_Gen="diphthong|geminate" Sg_Ill="diphthong|vowel_e-coloration|long_geminate"
 
 is for words with *-âst* Loc but *-ense* Ill 3rd grade
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel	-e
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
 Has Allophonic palatalization
-## 1.1.1.1[1].2 Has Specifically Pedagogical Gradation
-## 1.1.1.1[1].2.1 Has Orthographic Gradation
-## 1.1.1.1[1].2.1[] (Diphthong + Consonant and Consonant Geminate alternation)
+### 1.1.1.1[1].2 Has Specifically Pedagogical Gradation
+### 1.1.1.1[1].2.1 Has Orthographic Gradation
+### 1.1.1.1[1].2.1[] (Diphthong + Consonant and Consonant Geminate alternation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (9) Der/Dimin.N.Sg.Nom: siâkkâž
+### FORMS
+### (9) Der/Dimin.N.Sg.Nom: siâkkâž
 siâkˈk:siâkˈk
 * Yaml: **N-siakk**
 
@@ -3391,22 +3391,22 @@ N_1Y_VW/EYKK
 Sg_Nom: vow_di:vow_high:pal_no:cns_xyy
 1.1.1.1.1.1. Sg_Nom="diphthong|long_cluster" Sg_Gen="diphthong|short_cluster" Sg_Ill="diphthong|vowel_e-coloration|long_cluster"
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel	-e
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
+### 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+### 1.1.1.1[1].1.1 Has Orthographic Gradation
+### 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-skjiankk**
 
 * : SG-NOM ;	      	 (1) Sg.Nom: sǩiâŋkk
@@ -3451,22 +3451,22 @@ Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_gem
 1.1.1.1.1.2. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|single_consonant" 
 
 See also: NMN_TOLL_PLC, which is the same, but minus PL forms and certain cases
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel	-e
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant and Consonant Geminate alternation)
+### 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+### 1.1.1.1[1].1.1 Has Orthographic Gradation
+### 1.1.1.1[1].1.1[] (Monophthong + Consonant and Consonant Geminate alternation)
 Extra strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-kidd, N-soll, N-toll, N-vorr**
 strong_geminate, short_vowel, no_palatalization, high_stem_vowel 
 * : SG-NOM ;	    	   toll
@@ -3517,22 +3517,22 @@ N_1Y_VJCC cf. _VAHTT
 Sg_Nom: vow_mono:vow_short:vow_high_i_type:pal_no:cns_jyy
 1.1.1.1.1.3. Sg_Nom="short_vowel|strong_j-cluster" Sg_Gen="long_vowel|single_consonant" 
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel	-e
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
+### 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+### 1.1.1.1[1].1.1 Has Orthographic Gradation
+### 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-sijdd**
 
 * : SG-NOM ;	    			 sijdd
@@ -3583,22 +3583,22 @@ similar_to: N_PAARR, N_SHLAAJJ
 Sg_Nom: vow_mono:vow_long:vow_high:pal_no:cns_gem_ss_type
 1.1.1.1.1.4. Sg_Nom="long_vowel|geminate" Sg_Gen="long_vowel|voiced_geminate" 
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel -e 
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel -e 
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant and Consonant Geminate alternation)
+### 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+### 1.1.1.1[1].1.1 Has Orthographic Gradation
+### 1.1.1.1[1].1.1[] (Monophthong + Consonant and Consonant Geminate alternation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-saakk**
 is for nouns with -âst Loc. N_Y-EPal2-21
 N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
@@ -3682,22 +3682,22 @@ N_1Y_VVCC
 Sg_Nom: vow_mono:vow_long:vow_high:pal_no:cns_gem
 1.1.1.1.1.5. Sg_Nom="long_vowel|geminate" Sg_Gen="long_vowel|single_consonant" 
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel -e 
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel -e 
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant and Consonant Geminate alternation)
+### 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+### 1.1.1.1[1].1.1 Has Orthographic Gradation
+### 1.1.1.1[1].1.1[] (Monophthong + Consonant and Consonant Geminate alternation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-paarr, N-saakk**
 is for nouns with -âst Loc. N_Y-EPal2-21
 N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
@@ -3746,7 +3746,7 @@ N_1Y_VVCC
 Sg_Nom: vow_mono:vow_long:vow_high:pal_no:cns_gem_jj_type
 1.1.1.1.1.5. Sg_Nom="long_vowel|geminate" Sg_Gen="long_vowel|single_consonant"
 
-## FORMS
+### FORMS
 * Yaml: **N-shlaajj**
 
 * :%^J2I%^CC2C SG-ABE/ACC/GEN_PL-NOM ;	 šlaai
@@ -3783,23 +3783,23 @@ N_1Y_VWCC
 Sg_Nom: vow_di:vow_high:pal_no:cns_gem
 1.1.1.1.1.1. Sg_Nom="diphthong|geminate" Sg_Gen="diphthong|single_consonant" 
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel	-e
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
-## 1.1.1.1[1].2 Has Specifically Pedagogical Gradation
+### 1.1.1.1[1].2 Has Specifically Pedagogical Gradation
 Sg.Ill: 
-## 1.1.1.1[1].2.1 Has Orthographic Gradation
-## 1.1.1.1[1].2.1[] (Diphthong + Consonant and Consonant Geminate alternation)
+### 1.1.1.1[1].2.1 Has Orthographic Gradation
+### 1.1.1.1[1].2.1[] (Diphthong + Consonant and Consonant Geminate alternation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-muorr**
 * : SG-NOM ;	    			 muõrr
 * :%^CC2C SG-ABE/ACC/GEN ;		 muõr
@@ -3856,7 +3856,7 @@ Sg_Nom: vow_di:vow_high:pal_no:cns_gem_jj_type
 1.1.1.1.1.1. Sg_Nom="diphthong|geminate" Sg_Gen="diphthong|single_consonant"
 
 similar_to: N_TUYJJ
-## FORMS
+### FORMS
 * Yaml: **N-kjiojj**
 * +Use/NGminip+Use/NG:%^J2I%^CC2C SG-ABE/ACC/GEN_PL-NOM ;	 (2) Pl.Nom: ǩiõi
 
@@ -3887,7 +3887,7 @@ similar_to: N_TUYJJ
 
 * LEXICON N_MIOHTT  miõhtt:miõ%{ʹØ%}h%{ʹØ%}tt
 N_1Y_VWHYY
-## FORMS
+### FORMS
 similar_to: N_VUYHSS
 * Yaml: **N-miwhtt**
 
@@ -3926,7 +3926,7 @@ similar_to: N_VUYHSS
 
 * LEXICON N_RIIKK  riikk:rii%{ʹØ%}kk
 N_1Y_VVKK
-## FORMS
+### FORMS
 1.1.1.1.1.1. Sg_Nom="long_vowel|geminate" Sg_Gen="long_vowel|geminate" Sg_Ill="short_vowel|geminate" 
 
 * Yaml: **N-riikk**
@@ -3948,7 +3948,7 @@ N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 
 * LEXICON N_AQSTTRIK  aʹsttrik:aʹsttri%^1VOW%{ʹØ%}k
 N_2Y_VK_VVKK
-## FORMS
+### FORMS
 1.1.1.1.1.1. Sg_Nom="long_vowel|geminate" Sg_Gen="long_vowel|geminate" Sg_Ill="short_vowel|geminate" 
 
 * Yaml: **N-aqsttrik**
@@ -3971,15 +3971,15 @@ N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 N_1Y_VVC
 Sg_Ill="palatalization|e-final"
 similar-to: SYSTEEQM 
-## 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
-## 2.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
-## 2.1.3 Sg.Ill in palatalization and -e
-## 2.1.3.3 Lacks Gradation (in last syllable)
-## 2.1.3.3.1 Monophthong
-## 2.1.3.3.1.3 Consonant always short
-## 2.1.3.3.1.3.4 Sg.Nom long vowel AND Short consonant
-## 2.1.3.3.1.3.4.1.Sg.Gen Weak Grade
-## 2.1.3.3.1.3.4.1.3 Sg.Ill Weak Grade
+### 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
+### 2.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
+### 2.1.3 Sg.Ill in palatalization and -e
+### 2.1.3.3 Lacks Gradation (in last syllable)
+### 2.1.3.3.1 Monophthong
+### 2.1.3.3.1.3 Consonant always short
+### 2.1.3.3.1.3.4 Sg.Nom long vowel AND Short consonant
+### 2.1.3.3.1.3.4.1.Sg.Gen Weak Grade
+### 2.1.3.3.1.3.4.1.3 Sg.Ill Weak Grade
 plaan:plaan
 * Yaml: **N-plaan**
 * :%^PAL%^PALK N2A_LUOQSSI ;      N»A: plaaʹni
@@ -4004,7 +4004,7 @@ lomaakk:lomaakk
 * +Der+Der/Dimin+N:%^PAL%^PALK N_MUORYZH-WITH-PAL ;   lomaaʹǩǩ-
 
 CLASS 1 LOW VOWEL, MONOPHTHONG, NO PALATALIZATION NOMINALS
-## a-stems
+### a-stems
 
 * LEXICON N_1A_VCC  pess:pẹ%^1VOWss
 * LEXICON N_PESS  pess:pẹss
@@ -4015,20 +4015,20 @@ Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_gem
 1.1.1.2.1.1. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|geminate" 
 
 Is for nouns with *-ast* Loc
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.2 Sg.Loc in -ast (vowel shift)
 Raised: Sg.Ill
 Lowered: ELSE
 a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel	-u
-## 1.2.2.2 Lacks Palatalization
-## 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
-## 1.2.2.2.1.1 Has Orthographic Gradation
-## 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
+### 1.2.2 Sg.Ill vowel	-u
+### 1.2.2.2 Lacks Palatalization
+### 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
+### 1.2.2.2.1.1 Has Orthographic Gradation
+### 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
 Extra strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Strong grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 N_A-URaise3-32
 * Yaml: **N-pess, N-pall**
 strong_geminate, short_vowel, no_palatalization, high_stem_vowel
@@ -4060,7 +4060,7 @@ grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 * :%^CC2CAllegro SG-LOC-PX_ALLEGRO ;      pes»
 Sg_Loc_Px..
 
-## FORMS
+### FORMS
 strong_geminate, short_vowel, no_palatalization, low_stem_vowel
 * +Cmp/SgNom: R ;		  pess
 * :%>a ESS/PAR ; 			  (6) Ess: pessan
@@ -4070,20 +4070,20 @@ strong_geminate, short_vowel, no_palatalization, low_stem_vowel
 N_1A_VVCC
 Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_gem
 Is for nouns with *-ast* Loc
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.2 Sg.Loc in -ast (vowel shift)
 Raised: Sg.Ill
 Lowered: ELSE
 a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel	-u
-## 1.2.2.2 Lacks Palatalization
-## 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
-## 1.2.2.2.1.1 Has Orthographic Gradation
-## 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
+### 1.2.2 Sg.Ill vowel	-u
+### 1.2.2.2 Lacks Palatalization
+### 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
+### 1.2.2.2.1.1 Has Orthographic Gradation
+### 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 N_A-URaise3-32
 * Yaml: **soomm**
 grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
@@ -4121,21 +4121,21 @@ Sg_Loc_Px..
 N_1A_VVCC
 Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_gem_jj
 Is for nouns with *-ast* Loc
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.2 Sg.Loc in -ast (vowel shift)
 Raised: Sg.Ill
 Lowered: ELSE
 a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel	-u
-## 1.2.2.2 Lacks Palatalization
-## 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
-## 1.2.2.2.1.1 Has Orthographic Gradation
-## 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
+### 1.2.2 Sg.Ill vowel	-u
+### 1.2.2.2 Lacks Palatalization
+### 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
+### 1.2.2.2.1.1 Has Orthographic Gradation
+### 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 similar_to N_SHLAAJJ
-## FORMS
+### FORMS
 N_A-URaise3-32
 * Yaml: **N-laajj**
 grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
@@ -4170,20 +4170,20 @@ Sg_Loc_Px..
 N_1A_VVKK
 Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_gem_ss_type
 Is for nouns with *-ast* Loc
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.2 Sg.Loc in -ast (vowel shift)
 Raised: Sg.Ill
 Lowered: ELSE
 a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel	-u
-## 1.2.2.2 Lacks Palatalization
-## 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
-## 1.2.2.2.1.1 Has Orthographic Gradation
-## 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
+### 1.2.2 Sg.Ill vowel	-u
+### 1.2.2.2 Lacks Palatalization
+### 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
+### 1.2.2.2.1.1 Has Orthographic Gradation
+### 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 N_A-URaise3-32
 * Yaml: **N-raakk**
 grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
@@ -4224,20 +4224,20 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
 N_1A_VYXX
 Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_xyy
 N_LÄINN has been integrated here
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.2 Sg.Loc in -ast (vowel shift)
 Raised: Sg.Ill
 Lowered: ELSE
 a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel -u
-## 1.2.2.2 Lacks Palatalization
-## 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
-## 1.2.2.2.1.1 Has Orthographic Gradation
-## 1.2.2.2.1.1[] (Monophthong + Consonant Cluster alternation)
+### 1.2.2 Sg.Ill vowel -u
+### 1.2.2.2 Lacks Palatalization
+### 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
+### 1.2.2.2.1.1 Has Orthographic Gradation
+### 1.2.2.2.1.1[] (Monophthong + Consonant Cluster alternation)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-aeldd**
 grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 * : A-STEM_SG-NOM ;	    			 (1) äldd
@@ -4300,21 +4300,21 @@ Sg_Loc_Px..
 N_1A_VUCC
 Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_vxx
 Is for nouns with *-ast* Loc
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.2 Sg.Loc in -ast (vowel shift)
 Raised: Sg.Ill
 Lowered: ELSE
 a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel	-u
-## 1.2.2.2 Lacks Palatalization
-## 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
-## 1.2.2.2.1.1 Has Orthographic Gradation
-## 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
+### 1.2.2 Sg.Ill vowel	-u
+### 1.2.2.2 Lacks Palatalization
+### 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
+### 1.2.2.2.1.1 Has Orthographic Gradation
+### 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (9) Dim.N.Sg.Nom: laainuž (2009: 310)
+### FORMS
+### (9) Dim.N.Sg.Nom: laainuž (2009: 310)
 N_A-URaise3-32
 * Yaml: **N-laeinn**
 * : A-STEM_SG-NOM ;	    			  (1) peigg
@@ -4343,29 +4343,29 @@ N_1A_VHCC
 Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_hyy
 similar_to: N_TAQHTT
 Is for nouns with *-ast* Loc
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.2 Sg.Loc in -ast (vowel shift)
 Raised: Sg.Ill
 Lowered: ELSE
 a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel	-u
-## 1.2.2.2 Lacks Palatalization
-## 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
-## 1.2.2.2.1.1 Has Orthographic Gradation
-## 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
+### 1.2.2 Sg.Ill vowel	-u
+### 1.2.2.2 Lacks Palatalization
+### 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
+### 1.2.2.2.1.1 Has Orthographic Gradation
+### 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMSx
-## (1) Sg.Nom: kåhtt
-## (2) Pl.Nom: kååut
-## (3) Sg.Ill: kohttu
-## (4) Sg.Loc: kååutast
-## (5) Sg.Com: kååutain
-## (6) Ess: kåhttan
-## (7) Par: kåhttad
-## (8) Pl.Acc: kååutaid
-## (9) Dim.N.Sg.Nom: kooutuž (2009: 310)
+### FORMSx
+### (1) Sg.Nom: kåhtt
+### (2) Pl.Nom: kååut
+### (3) Sg.Ill: kohttu
+### (4) Sg.Loc: kååutast
+### (5) Sg.Com: kååutain
+### (6) Ess: kåhttan
+### (7) Par: kåhttad
+### (8) Pl.Acc: kååutaid
+### (9) Dim.N.Sg.Nom: kooutuž (2009: 310)
 N_A-URaise3-32
 * Yaml: **N-taehtt**
 grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
@@ -4404,31 +4404,31 @@ compare N_1A_VWYXX
 * LEXICON NMN_1A_VWYKK  teâlkk:teâlkk
 Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_xyy
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel	-e
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
+### 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+### 1.1.1.1[1].1.1 Has Orthographic Gradation
+### 1.1.1.1[1].1.1[] (Monophthong + Consonant Cluster alternation)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (1) Sg.Nom: meârkk
-## (2) Pl.Nom: meârk
-## (3) Sg.Ill: mieʹrǩǩe
-## (4) Sg.Loc: meârkâst
-## (5) Sg.Com: meârkin
-## (6) Ess: meârkkân
-## (7) Par: meârkkâd
-## (8) Pl.Acc: meârkid 
-## (9) Der/Dimin.N.Sg.Nom: meârkâž
+### FORMS
+### (1) Sg.Nom: meârkk
+### (2) Pl.Nom: meârk
+### (3) Sg.Ill: mieʹrǩǩe
+### (4) Sg.Loc: meârkâst
+### (5) Sg.Com: meârkin
+### (6) Ess: meârkkân
+### (7) Par: meârkkâd
+### (8) Pl.Acc: meârkid 
+### (9) Der/Dimin.N.Sg.Nom: meârkâž
 meârkk:meârkk
 * Yaml: **N-meârkk**
 
@@ -4462,7 +4462,7 @@ Sg_Loc_Px..
 * LEXICON N_VUYHSS  vuâhss:vuâhss
 N_1A_VWHCC
 
-## FORMS
+### FORMS
 * Yaml: **N-vuahss**
 
 grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
@@ -4496,21 +4496,21 @@ Sg_Loc_Px..
 N_1A_VWCC
 Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_gem
 Is for nouns with *-ast* Loc
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.2 Sg.Loc in -ast (vowel shift)
 Raised: Sg.Ill
 Lowered: ELSE
 a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel	-u
-## 1.2.2.2 Lacks Palatalization
-## 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
-## 1.2.2.2.1.1 Has Orthographic Gradation
-## 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
+### 1.2.2 Sg.Ill vowel	-u
+### 1.2.2.2 Lacks Palatalization
+### 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
+### 1.2.2.2.1.1 Has Orthographic Gradation
+### 1.2.2.2.1.1[] (Monophthong + Consonant Geminate alternation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 uâ:uõ, eä:iâ
-## FORMS
+### FORMS
 N_A-URaise3-32
 * Yaml: **N-vuarr**
 grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
@@ -4542,21 +4542,21 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
 N_1A_VWCC
 Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_gem_jj_type
 Is for nouns with *-ast* Loc
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.2 Sg.Loc in -ast (vowel shift)
 Raised: Sg.Ill
 Lowered: ELSE
 a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel	-u
-## 1.2.2.0 Lacks Palatalization
-## 1.2.2.0.2 Has Specifically Pedagogical Gradation
-## 1.2.2.0.2.0 Has Orthographic Gradation
-## 1.2.2.0.2.0[] (Diphthong + Consonant Geminate alternation)
+### 1.2.2 Sg.Ill vowel	-u
+### 1.2.2.0 Lacks Palatalization
+### 1.2.2.0.2 Has Specifically Pedagogical Gradation
+### 1.2.2.0.2.0 Has Orthographic Gradation
+### 1.2.2.0.2.0[] (Diphthong + Consonant Geminate alternation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 similar_to: N_KHIOJJ
-## FORMS
+### FORMS
 N_A-URaise3-32
 * Yaml: **N-tuajj**
 * +Use/NGminip+Use/NG:%^PALẸ SG-NOM ;  tuẹjj
@@ -4577,20 +4577,20 @@ N_A-URaise3-32
 * LEXICON N_1A_VWKK  juâkk:juâkk
 N_1A_VWKK
 Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_gem
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.2 Sg.Loc in -ast (vowel shift)
 Raised: Sg.Ill
 Lowered: ELSE
 a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel	-u
-## 1.2.2.2 Lacks Palatalization
-## 1.2.2.2.2 Has Specifically Pedagogical Gradation
-## 1.2.2.2.1.1 Has Orthographic Gradation
-## 1.2.2.2.1.1[] (Diphthong + Consonant Geminate alternation)
+### 1.2.2 Sg.Ill vowel	-u
+### 1.2.2.2 Lacks Palatalization
+### 1.2.2.2.2 Has Specifically Pedagogical Gradation
+### 1.2.2.2.1.1 Has Orthographic Gradation
+### 1.2.2.2.1.1[] (Diphthong + Consonant Geminate alternation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 N_A-URaise3-32
 * Yaml: **N-chuacc**
 grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
@@ -4624,20 +4624,20 @@ Sg_Loc_Px..
 * LEXICON N_CHUAECC  čuäcc:čuäcc
 N_1A_VWKK
 Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_gem
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.2 Sg.Loc in -ast (vowel shift)
 Raised: Sg.Ill
 Lowered: ELSE
 a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel	-u
-## 1.2.2.2 Lacks Palatalization
-## 1.2.2.2.2 Has Specifically Pedagogical Gradation
-## 1.2.2.2.1.1 Has Orthographic Gradation
-## 1.2.2.2.1.1[] (Diphthong + Consonant Geminate alternation)
+### 1.2.2 Sg.Ill vowel	-u
+### 1.2.2.2 Lacks Palatalization
+### 1.2.2.2.2 Has Specifically Pedagogical Gradation
+### 1.2.2.2.1.1 Has Orthographic Gradation
+### 1.2.2.2.1.1[] (Diphthong + Consonant Geminate alternation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 N_A-URaise3-32
 * Yaml: **N-chuacc**
 grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
@@ -4688,20 +4688,20 @@ grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
 N_1A_VWCCC
 Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_gem_long
 Is for nouns with *-ast* Loc
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.2 Sg.Loc in -ast (vowel shift)
 Raised: Sg.Ill
 Lowered: ELSE
 a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel	-u
-## 1.2.2.0 Lacks Palatalization
-## 1.2.2.0.2 Has Specifically Pedagogical Gradation
-## 1.2.2.0.2.0 Lack Orthographic Gradation
-## 1.2.2.0.2.0[] (Diphthong + Consonant Geminate alternation)
+### 1.2.2 Sg.Ill vowel	-u
+### 1.2.2.0 Lacks Palatalization
+### 1.2.2.0.2 Has Specifically Pedagogical Gradation
+### 1.2.2.0.2.0 Lack Orthographic Gradation
+### 1.2.2.0.2.0[] (Diphthong + Consonant Geminate alternation)
 Extra strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Strong grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-neavvv**
 * : A-STEM_SG-NOM ;	    			  neävˈv
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
@@ -4755,21 +4755,21 @@ Sg_Loc_Px..
 N_1A_VWYXX
 Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_xyy
 Is for nouns with *-ast* Loc
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.2 Sg.Loc in -ast (vowel shift)
 Raised: Sg.Ill
 Lowered: ELSE
 a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel	-u
-## 1.2.2.0 Lacks Palatalization
-## 1.2.2.0.2 Has Specifically Pedagogical Gradation
-## 1.2.2.0.2.0 Lack Orthographic Gradation
-## 1.2.2.0.2.0[] (Diphthong + Consonant Geminate alternation)
+### 1.2.2 Sg.Ill vowel	-u
+### 1.2.2.0 Lacks Palatalization
+### 1.2.2.0.2 Has Specifically Pedagogical Gradation
+### 1.2.2.0.2.0 Lack Orthographic Gradation
+### 1.2.2.0.2.0[] (Diphthong + Consonant Geminate alternation)
 Extra strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Strong grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (9) Dim.N.Sg.Nom: piâlduž (2009: 310)
+### FORMS
+### (9) Dim.N.Sg.Nom: piâlduž (2009: 310)
 N_A-URaise3-32
 similar_to: N_JEAQRMM
 * Yaml: **N-pealdd**
@@ -4802,20 +4802,20 @@ Sg_Loc_Px..
 * LEXICON N_TUOAIMM  tuåimm:tuåimm
 N_1A_VWUCC
 Sg_Nom: vow_di:vow_short:vow_low:pal_no:cns_vyy
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.2 Sg.Loc in -ast (vowel shift)
 Raised: Sg.Ill
 Lowered: ELSE
 a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel -u
-## 1.2.2.2 Lacks Palatalization
-## 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
-## 1.2.2.2.1.1 Has Orthographic Gradation
-## 1.2.2.2.1.1[] (Monophthong + Consonant Cluster alternation)
+### 1.2.2 Sg.Ill vowel -u
+### 1.2.2.2 Lacks Palatalization
+### 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
+### 1.2.2.2.1.1 Has Orthographic Gradation
+### 1.2.2.2.1.1[] (Monophthong + Consonant Cluster alternation)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-tuaimm**
 grade: strengthened (short_vowel, long_cluster), vowel: not-raised
 * :%^VOWRaise%>u SG-ILL ;		      	 (3) tuoimmu
@@ -4876,7 +4876,7 @@ Sg_Loc_Px..
 
 * LEXICON N_VIRVEL  virvel:virvẹ%^1VOW%{ʹØ%}l
 
-## FORMS
+### FORMS
 N_   like N_ATOM
 * Yaml: **virvel**
 * : SG-NOM ;	    		 virvel
@@ -4890,7 +4890,7 @@ N_   like N_ATOM
 * +Der+Der/Dimin+N:%^V2VV N_KUYLAZH ;		 virvẹẹlaž
 
 * LEXICON NMN_FEDD  Fedd:Fe%^1VOWdd
-## FORMS
+### FORMS
 * Yaml: **fedd**
 * : SG-NOM ;	    		 Fedd
 * :%^V2VV SG-ABE/ACC/GEN_PL-NOM ;	 Feedd
@@ -4908,18 +4908,18 @@ N_
 Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_sing
 Is for nouns with *-ast* Loc, No gradation
 N_A-U1-11
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (no vowel shift, all lowered)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.2 Sg.Loc in -ast (no vowel shift, all lowered)
 a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel	-u
-## 1.2.2.2 Lacks Palatalization
-## 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
-## 1.2.2.2.1.2 Lacks Orthographic Gradation
-## 1.2.2.2.1.2[] (Monophthong + Consonant)
+### 1.2.2 Sg.Ill vowel	-u
+### 1.2.2.2 Lacks Palatalization
+### 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
+### 1.2.2.2.1.2 Lacks Orthographic Gradation
+### 1.2.2.2.1.2[] (Monophthong + Consonant)
 Weak grade: Sg.Nom, Ess, Par
 Weak grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **meer, steehl**
 * : SG-NOM ;	    		 meer
 * : SG-ABE/ACC/GEN_PL-NOM ;	 meer
@@ -4937,18 +4937,18 @@ N_
 Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_gem_dd_type
 Is for nouns with *-ast* Loc, No gradation
 N_A-U1-11
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (no vowel shift, all lowered)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.2 Sg.Loc in -ast (no vowel shift, all lowered)
 a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel	-u
-## 1.2.2.2 Lacks Palatalization
-## 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
-## 1.2.2.2.1.2 Lacks Orthographic Gradation
-## 1.2.2.2.1.2[] (Monophthong + Consonant)
+### 1.2.2 Sg.Ill vowel	-u
+### 1.2.2.2 Lacks Palatalization
+### 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
+### 1.2.2.2.1.2 Lacks Orthographic Gradation
+### 1.2.2.2.1.2[] (Monophthong + Consonant)
 Weak grade: Sg.Nom, Ess, Par
 Weak grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **A-vaeaezhzh**
 * : SG-NOM ;	    		 vääžž
 * : SG-ABE/ACC/GEN_PL-NOM ;	 vääžž
@@ -4967,18 +4967,18 @@ N_1A_VWC
 Sg_Nom: vow_di:vow_long:vow_low:pal_no:cns_sing
 Is for nouns with *-ast* Loc, No gradation
 N_A-U1-11
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (no vowel shift, all lowered)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.2 Sg.Loc in -ast (no vowel shift, all lowered)
 a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel	-u
-## 1.2.2.2 Lacks Palatalization
-## 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
-## 1.2.2.2.1.2 Lacks Orthographic Gradation
-## 1.2.2.2.1.2[] (Monophthong + Consonant)
+### 1.2.2 Sg.Ill vowel	-u
+### 1.2.2.2 Lacks Palatalization
+### 1.2.2.2.1 Lacks Specifically Pedagogical Gradation
+### 1.2.2.2.1.2 Lacks Orthographic Gradation
+### 1.2.2.2.1.2[] (Monophthong + Consonant)
 Weak grade: Sg.Nom, Ess, Par
 Weak grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-plean**
 grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
 * : SG-NOM ;	    	  pleân
@@ -5078,21 +5078,21 @@ CLASS 1 HIGH VOWEL, PALATALIZATION NOMINALS
 * LEXICON N_NUQBB  nuʹbb:nubb
 N_1E_UQCC
 Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_gem_dd_type
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 * Yaml: **N-nubb**
 * There are several stem types
@@ -5103,21 +5103,21 @@ NumContLex="1.113"
 * LEXICON N_1E_UQKK  čuʹǩǩ:ču%^1VOW%{ʹØ%}kk
 N_1E_UQKK
 Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_gem_dd_type
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 * Yaml: **N-chukk**
 * There are several stem types
@@ -5146,22 +5146,22 @@ Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_gem_dd_type
 * LEXICON N_NJUUQNN  njuuʹnn:njuunn
 N_1E_UUQCC
 Sg_Nom: vow_mono:vow_long:vow_high_u:pal_yes:cns_gem
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 * Yaml: **N-njuunn**
 * There are several stem types
@@ -5173,31 +5173,31 @@ NumContLex="1.113"
 * LEXICON N_STUUQL  stuuʹl:st%^1VOWu%{VU%}l
 N_1E_UUQC
 Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_vyy
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: ELSE
 Lowered: Sg.Ill
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Lacks Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Lacks Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (1) Sg.Nom: stuuʹl
-## (2) Pl.Nom: stuuʹl
-## (3) Sg.Ill: stooula
-## (4) Sg.Loc: stuuʹlest
-## (5) Sg.Com: stuuʹlin
-## (6) Ess: stuuʹlen
-## (7) Par: stuuʹled
-## (8) Pl.Acc: stuuʹlid
-## (9) Der/Dimin.N.Sg.Nom: stooulaž
+### FORMS
+### (1) Sg.Nom: stuuʹl
+### (2) Pl.Nom: stuuʹl
+### (3) Sg.Ill: stooula
+### (4) Sg.Loc: stuuʹlest
+### (5) Sg.Com: stuuʹlin
+### (6) Ess: stuuʹlen
+### (7) Par: stuuʹled
+### (8) Pl.Acc: stuuʹlid
+### (9) Der/Dimin.N.Sg.Nom: stooulaž
 NumContLex="1.113"
 * Yaml: **N-skuul**
 * There are several stem types
@@ -5215,31 +5215,31 @@ NumContLex="1.113"
 
 * LEXICON N_1E_UQYKK  kuʹrčč:ku%^1VOW%{ʹØ%}rčč
 Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_xyy
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (1) Sg.Nom: kuʹrčč
-## (2) Pl.Nom: kuuʹrč
-## (3) Sg.Ill: korčča
-## (4) Sg.Loc: kuuʹrčest
-## (5) Sg.Com: kuuʹrčin
-## (6) Ess: kuʹrččen
-## (7) Par: kuʹrččed
-## (8) Pl.Acc: kuuʹrčid
-## (9) Der/Dimin.N.Sg.Nom: koorčaž
+### FORMS
+### (1) Sg.Nom: kuʹrčč
+### (2) Pl.Nom: kuuʹrč
+### (3) Sg.Ill: korčča
+### (4) Sg.Loc: kuuʹrčest
+### (5) Sg.Com: kuuʹrčin
+### (6) Ess: kuʹrččen
+### (7) Par: kuʹrččed
+### (8) Pl.Acc: kuuʹrčid
+### (9) Der/Dimin.N.Sg.Nom: koorčaž
 NumContLex="1.113"
 * Yaml: **N-kurchch**
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) kurčč-
@@ -5250,31 +5250,31 @@ NumContLex="1.113"
 * LEXICON N_KUQRCHCH  kuʹrčč:kurčč
 N_1E_UQYXX
 Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_xyy
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (1) Sg.Nom: kuʹrčč
-## (2) Pl.Nom: kuuʹrč
-## (3) Sg.Ill: korčča
-## (4) Sg.Loc: kuuʹrčest
-## (5) Sg.Com: kuuʹrčin
-## (6) Ess: kuʹrččen
-## (7) Par: kuʹrččed
-## (8) Pl.Acc: kuuʹrčid
-## (9) Der/Dimin.N.Sg.Nom: koorčaž
+### FORMS
+### (1) Sg.Nom: kuʹrčč
+### (2) Pl.Nom: kuuʹrč
+### (3) Sg.Ill: korčča
+### (4) Sg.Loc: kuuʹrčest
+### (5) Sg.Com: kuuʹrčin
+### (6) Ess: kuʹrččen
+### (7) Par: kuʹrččed
+### (8) Pl.Acc: kuuʹrčid
+### (9) Der/Dimin.N.Sg.Nom: koorčaž
 NumContLex="1.113"
 * Yaml: **N-kurchch**
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) kurčč-
@@ -5288,15 +5288,15 @@ NumContLex="1.113"
 
 * LEXICON N_PUIQCC  puiʹcc:pu%^1VOWi%{ʹØ%}cc
 N_1E_UIQCC
-## (1) Sg.Nom: kuʹrčč
-## (2) Pl.Nom: kuuʹrč
-## (3) Sg.Ill: korčča
-## (4) Sg.Loc: kuuʹrčest
-## (5) Sg.Com: kuuʹrčin
-## (6) Ess: kuʹrččen
-## (7) Par: kuʹrččed
-## (8) Pl.Acc: kuuʹrčid
-## (9) Der/Dimin.N.Sg.Nom: koorčaž
+### (1) Sg.Nom: kuʹrčč
+### (2) Pl.Nom: kuuʹrč
+### (3) Sg.Ill: korčča
+### (4) Sg.Loc: kuuʹrčest
+### (5) Sg.Com: kuuʹrčin
+### (6) Ess: kuʹrččen
+### (7) Par: kuʹrččed
+### (8) Pl.Acc: kuuʹrčid
+### (9) Der/Dimin.N.Sg.Nom: koorčaž
 NumContLex="1.113"
 * Yaml: **N-kurchch**
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) kurčč-
@@ -5326,31 +5326,31 @@ NumContLex="1.113"
 
 N_UQVCC
 Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_xyy
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (1) Sg.Nom: kuʹvǯǯ
-## (2) Pl.Nom: kuʼvǯ
-## (3) Sg.Ill: kouǯǯa
-## (4) Sg.Loc: kuʹvǯest
-## (5) Sg.Com: kuʹvǯin
-## (6) Ess: kuʹvǯǯen
-## (7) Par: kuʹvǯǯed
-## (8) Pl.Acc: kuʹvǯid
-## (9) Der/Dimin.N.Sg.Nom: kouǯaž
+### FORMS
+### (1) Sg.Nom: kuʹvǯǯ
+### (2) Pl.Nom: kuʼvǯ
+### (3) Sg.Ill: kouǯǯa
+### (4) Sg.Loc: kuʹvǯest
+### (5) Sg.Com: kuʹvǯin
+### (6) Ess: kuʹvǯǯen
+### (7) Par: kuʹvǯǯed
+### (8) Pl.Acc: kuʹvǯid
+### (9) Der/Dimin.N.Sg.Nom: kouǯaž
 NumContLex="1.113"
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-kuvzz**
@@ -5358,31 +5358,31 @@ Is for nouns with *-est* Loc, Extra long vowel
 * LEXICON N_1E_UQVKK  juʹvjj:ju%^1VOW%{ʹØ%}v%{ʹØ%}jj
 N_1E_UQVCC
 Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_vyy
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (1) Sg.Nom: juʹvjj
-## (2) Pl.Nom: juuʹj
-## (3) Sg.Ill: joujja
-## (4) Sg.Loc: juuʹjest
-## (5) Sg.Com: juuʹjin
-## (6) Ess: juʹvjjen
-## (7) Par: juʹvjjed
-## (8) Pl.Acc: juuʹjid
-## (9) Der/Dimin.N.Sg.Nom: jooujaž
+### FORMS
+### (1) Sg.Nom: juʹvjj
+### (2) Pl.Nom: juuʹj
+### (3) Sg.Ill: joujja
+### (4) Sg.Loc: juuʹjest
+### (5) Sg.Com: juuʹjin
+### (6) Ess: juʹvjjen
+### (7) Par: juʹvjjed
+### (8) Pl.Acc: juuʹjid
+### (9) Der/Dimin.N.Sg.Nom: jooujaž
 NumContLex="1.113"
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-juvjj**
@@ -5394,31 +5394,31 @@ Is for nouns with *-est* Loc, Extra long vowel
 * LEXICON N_JUQVJJ  juʹvjj:ju%^1VOW%{ʹØ%}v%{ʹØ%}jj
 N_1E_UQVCC
 Sg_Nom: vow_mono:vow_short:vow_high_u:pal_yes:cns_vyy
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (1) Sg.Nom: juʹvjj
-## (2) Pl.Nom: juuʹj
-## (3) Sg.Ill: joujja
-## (4) Sg.Loc: juuʹjest
-## (5) Sg.Com: juuʹjin
-## (6) Ess: juʹvjjen
-## (7) Par: juʹvjjed
-## (8) Pl.Acc: juuʹjid
-## (9) Der/Dimin.N.Sg.Nom: jooujaž
+### FORMS
+### (1) Sg.Nom: juʹvjj
+### (2) Pl.Nom: juuʹj
+### (3) Sg.Ill: joujja
+### (4) Sg.Loc: juuʹjest
+### (5) Sg.Com: juuʹjin
+### (6) Ess: juʹvjjen
+### (7) Par: juʹvjjed
+### (8) Pl.Acc: juuʹjid
+### (9) Der/Dimin.N.Sg.Nom: jooujaž
 NumContLex="1.113"
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-juvjj**
@@ -5437,20 +5437,20 @@ Is for nouns with *-est* Loc, Extra long vowel
 * LEXICON N_VUEQSS   vueʹss:vuâss
 N_1E_VWQSS_VWQZZ
 Sg_Nom: vow_di:vow_short:vow_high_u:pal_yes:cns_gem
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
-## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
+### 1.3 Sg.Loc in -est (no vowel shift, all lowered)
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.2 Has Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
+### 1.3.2.1.2 Has Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
-## FORMS
+### FORMS
 * Yaml: **N-vuess**
 
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) vuâss-
@@ -5460,20 +5460,20 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 * LEXICON N_1E_IY/EQKK   bieʹss:beâss
 N_1E_VWQSS
 Sg_Nom: vow_di:vow_short:vow_high_u:pal_yes:cns_gem
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
-## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
+### 1.3 Sg.Loc in -est (no vowel shift, all lowered)
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.2 Has Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
+### 1.3.2.1.2 Has Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
-## FORMS
+### FORMS
 * Yaml: **N-biess**
 
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) beâss-
@@ -5484,20 +5484,20 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 N_1E_VWQCC kueʹll
 
 Sg_Nom: vow_di:vow_short:vow_high_u:pal_yes:cns_gem
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
-## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
+### 1.3 Sg.Loc in -est (no vowel shift, all lowered)
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.2 Has Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
+### 1.3.2.1.2 Has Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
-## FORMS
+### FORMS
 * Yaml: **N-skhierr**
 
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) beâss-
@@ -5507,20 +5507,20 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 * LEXICON N_SUEQJJ   sueʹjj:suâjj
 N_1E_VWQCC
 Sg_Nom: vow_di:vow_short:vow_high_u:pal_yes:cns_gem
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
-## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
+### 1.3 Sg.Loc in -est (no vowel shift, all lowered)
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.2 Has Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
+### 1.3.2.1.2 Has Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
-## FORMS
+### FORMS
 similar_to: N_KHIOJJ, N_TUYJJ
 * Yaml: **N-suejj**
 
@@ -5531,20 +5531,20 @@ similar_to: N_KHIOJJ, N_TUYJJ
 N_1E_UY/EQYKK
 Sg_Nom: vow_di:vow_short:vow_high_u:pal_yes:cns_xyy
 similar_to: N_CHUOSHKK
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
-## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
+### 1.3 Sg.Loc in -est (no vowel shift, all lowered)
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.2 Has Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
+### 1.3.2.1.2 Has Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
-## FORMS
+### FORMS
 * Yaml: **N-juelggj**
 * There are several stem types 
 
@@ -5573,29 +5573,29 @@ e.g. +Use/NG+Sg+Loc+PxSg1
 * LEXICON N_1E_VWQCC  kueʹll:kuâ%{ʹØ%}ll
 * LEXICON N_KUEQLL  kueʹll:kuâ%{ʹØ%}ll
 N_1E_VWQCC
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
-## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
+### 1.3 Sg.Loc in -est (no vowel shift, all lowered)
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.2 Has Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
+### 1.3.2.1.2 Has Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
-## FORMS
-## (1) Sg.Nom: kueʹll
-## (2) Pl.Nom: kueʼl
-## (3) Sg.Ill: kuâlˈla
-## (4) Sg.Loc: kueʹlest
-## (5) Sg.Com: kuõʹlin ~ kueʹlin
-## (6) Ess: kueʹllen
-## (7) Par: kueʹlled
-## (8) Pl.Acc: kuõʹlid ~ kueʹlid
-## (9) Der/Dimin.N.Sg.Nom: kuâlaž 
+### FORMS
+### (1) Sg.Nom: kueʹll
+### (2) Pl.Nom: kueʼl
+### (3) Sg.Ill: kuâlˈla
+### (4) Sg.Loc: kueʹlest
+### (5) Sg.Com: kuõʹlin ~ kueʹlin
+### (6) Ess: kueʹllen
+### (7) Par: kueʹlled
+### (8) Pl.Acc: kuõʹlid ~ kueʹlid
+### (9) Der/Dimin.N.Sg.Nom: kuâlaž 
 * Yaml: **N-kuell**
 * There are several stem types 
 * kueʹll:kuâll
@@ -5625,25 +5625,25 @@ N_1E_VWQCCC
 
 * LEXICON N_KUEQSSS  kueʹsˈs:kuâsˈs
 N_1E_VWQCCC
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
-## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
+### 1.3 Sg.Loc in -est (no vowel shift, all lowered)
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.2 Has Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
+### 1.3.2.1.2 Has Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
-## FORMS
-## (5) Sg.Com: kuõʹssin ~ kueʹssin
-## (6) Ess: kueʹsˈsen
-## (7) Par: kueʹsˈsed
-## (8) Pl.Acc: kuõʹssid ~ kueʹssid
-## (9) Der/Dimin.N.Sg.Nom: kuâssaž 
+### FORMS
+### (5) Sg.Com: kuõʹssin ~ kueʹssin
+### (6) Ess: kueʹsˈsen
+### (7) Par: kueʹsˈsed
+### (8) Pl.Acc: kuõʹssid ~ kueʹssid
+### (9) Der/Dimin.N.Sg.Nom: kuâssaž 
 * Yaml: **N-kuell**
 * There are several stem types 
 * kueʹsˈs:kuâsˈs
@@ -5683,25 +5683,25 @@ N_1E_VWQCCC
 
 * LEXICON N_MIEQLLL  mieʹll:meâ%{ʹØ%}lˈl
 N_1E_VWQCCC
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
-## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
+### 1.3 Sg.Loc in -est (no vowel shift, all lowered)
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.2 Has Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
+### 1.3.2.1.2 Has Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
-## FORMS
-## (5) Sg.Com: miõʹllin ~ mieʹllin
-## (6) Ess: mieʹlˈlen
-## (7) Par: mieʹlˈled
-## (8) Pl.Acc: miõʹllid ~ mieʹllid
-## (9) Der/Dimin.N.Sg.Nom: meâllaž 
+### FORMS
+### (5) Sg.Com: miõʹllin ~ mieʹllin
+### (6) Ess: mieʹlˈlen
+### (7) Par: mieʹlˈled
+### (8) Pl.Acc: miõʹllid ~ mieʹllid
+### (9) Der/Dimin.N.Sg.Nom: meâllaž 
 * Yaml: **N-kuell**
 * There are several stem types 
 * mieʹll:meâlˈl
@@ -5722,31 +5722,31 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 
 * LEXICON N_SUEIQNN  sueiʹnn:suâinn
 N_1E_VWUQCC
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (1) Sg.Nom: sueiʹnn
-## (2) Pl.Nom: sueiʼn
-## (3) Sg.Ill: sueinna
-## (4) Sg.Loc: sueiʹnest
-## (5) Sg.Com: sueiʹnin
-## (6) Ess: sueiʹnnen
-## (7) Par: sueiʹnned
-## (8) Pl.Acc: sueiʹnid
-## (9) Der/Dimin.N.Sg.Nom: sueinaž
+### FORMS
+### (1) Sg.Nom: sueiʹnn
+### (2) Pl.Nom: sueiʼn
+### (3) Sg.Ill: sueinna
+### (4) Sg.Loc: sueiʹnest
+### (5) Sg.Com: sueiʹnin
+### (6) Ess: sueiʹnnen
+### (7) Par: sueiʹnned
+### (8) Pl.Acc: sueiʹnid
+### (9) Der/Dimin.N.Sg.Nom: sueinaž
 NumContLex="1.113"
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-sueinn**
@@ -5757,22 +5757,22 @@ Is for nouns with *-est* Loc, Extra long vowel
 
 * LEXICON N_MUEQRJJ  mueʹrjj:muâ%{ʹØ%}rjj
 N_1E_VWQYJJ
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-muerjj**
@@ -5817,22 +5817,22 @@ muʹzei:muʹze
 
 * LEXICON N_SYSTEEQM  uʹčteeʹl:uʹčtẹẹ%{ʹØ%}l
 N_E_EEQC
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-presidentt**
@@ -5885,31 +5885,31 @@ like N_ATOM
 * LEXICON N_1E_IY/EQYXX  ǩieʹmnn:ǩeâmnn
 * LEXICON N_KHIEQMNN  ǩieʹmnn:ǩeâmnn
 N_1E_IY/EQYXX
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (1) Sg.Nom: ǩeʹmnn
-## (2) Pl.Nom: ǩeeʹmn
-## (3) Sg.Ill: ǩeâmnna
-## (4) Sg.Loc: ǩeeʹmnest
-## (5) Sg.Com: ǩeeʹmnin
-## (6) Ess: ǩeʹmnnen
-## (7) Par: ǩeʹmnned
-## (8) Pl.Acc: ǩeeʹmnid
-## (9) Der/Dimin.N.Sg.Nom: ǩeâmnaž
+### FORMS
+### (1) Sg.Nom: ǩeʹmnn
+### (2) Pl.Nom: ǩeeʹmn
+### (3) Sg.Ill: ǩeâmnna
+### (4) Sg.Loc: ǩeeʹmnest
+### (5) Sg.Com: ǩeeʹmnin
+### (6) Ess: ǩeʹmnnen
+### (7) Par: ǩeʹmnned
+### (8) Pl.Acc: ǩeeʹmnid
+### (9) Der/Dimin.N.Sg.Nom: ǩeâmnaž
 NumContLex="1.113"
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-aâlghgh**
@@ -5921,26 +5921,26 @@ CLASS 1 LOW VOWEL, PALATALIZATION, ILLATIVE IN U NOMINALS
 
 * LEXICON N_LAQB3H3H  läʹbǯǯ:läbǯǯ
 N_1U_VQCC
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.2 Sg.Loc in -ast (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.2 Sg.Loc in -ast (vowel shift)
 Raised: Sg.Ill
 Lowered: ELSE
 a-stems (Sg.Loc, Ess, Par).
-## 1.2.2 Sg.Ill vowel -u
-## 1.2.2.1 Has Palatalization
-## 1.2.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.2.2.1.1.1 Has Orthographic Gradation
-## 1.2.2.1.1.1[] (Monophthong + Consonant Cluster alternation)
+### 1.2.2 Sg.Ill vowel -u
+### 1.2.2.1 Has Palatalization
+### 1.2.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.2.2.1.1.1 Has Orthographic Gradation
+### 1.2.2.1.1.1[] (Monophthong + Consonant Cluster alternation)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-laebzz**
 * +Der+Der/Dimin+N:%^V2VV%> N_PEESSAZH ;   (9) Dim.N.Sg.Nom: lääbǯaž
 WORK NEEDED
 
 CLASS 1 LOW VOWEL, PALATALIZATION, ILLATIVE IN A NOMINALS
-## e-stems
+### e-stems
 
 * LEXICON N_1E_VQKK  låʹǩǩ:lå%^1VOW%{ʹØ%}kk, äʹǩǩ:ä%^1VOW%{ʹØ%}kk
 * Yaml: **N-vaell, N-kall**
@@ -5961,22 +5961,22 @@ similar_to: N_1Y_VCC
 vowel: monophthong
 vowel_shift: yes
 consonantism: geminate
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 * Yaml: **N-vaell, N-kall**
 strong_geminate, short_vowel, palatalization, low_stem_vowel
@@ -5993,20 +5993,20 @@ N_1E_EQSS_EEQZZ
 vowel_shift: no
 gradation: yes
 similarity: N_TOLL:N_KUSS:N_AQVV
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204, 329)
-## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204, 329)
+### 1.3 Sg.Loc in -est (no vowel shift, all lowered)
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Extra strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 * Yaml: **N-ecch**
 * :%^PAL E-STEM_SG-NOM ;		  	 (1) Sg.Nom: eʹčč
@@ -6028,7 +6028,7 @@ vowel_shift: no
 gradation: yes
 similarity: N_1Y_VCC
 
-## FORMS
+### FORMS
 NumContLex="1.113"
 * Yaml: **N-peqkhkh**
 * :%^PAL%^PALK E-STEM_SG-NOM ;		  	 (1) Sg.Nom: peʹǩǩ
@@ -6051,20 +6051,20 @@ vowel: monophthong
 vowel_shift: no
 gradation: yes
 similarity: N_TOLL:N_KUSS:N_EQCHCH
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204, 329)
-## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204, 329)
+### 1.3 Sg.Loc in -est (no vowel shift, all lowered)
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Extra strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 * Yaml: **N-aevv**
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) ävv-
@@ -6077,7 +6077,7 @@ vowel: monophthong
 vowel_shift: yes
 gradation: yes
 similarity: N_TOLL:N_KUSS:N_EQCHCH:N_AQVV
-## FORMS
+### FORMS
 NumContLex="1.113"
 * Yaml: **N-staellj**
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) ställj-
@@ -6090,7 +6090,7 @@ N_1E_SVQCC
 vowel: monophthong
 vowel_shift: no
 gradation: yes
-## FORMS
+### FORMS
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) pellj-
 * :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) peʹlj-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) peʹllj Ess+Px..
@@ -6105,22 +6105,22 @@ N_1E_VQKK
 * :%^VV2V%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) säʹmm Ess+Px..
 
 * LEXICON N_1E_VVQCC  sääʹmm:sää%{ʹØ%}mm
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 * Yaml: **N-saeaemm**
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) säämm-
@@ -6130,22 +6130,22 @@ NumContLex="1.113"
 * LEXICON N_CHAAQCC  čääʹcc:čääcc
 N_1E_VVQSS
 SS = SS-ZZ
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 * Yaml: **caacc**
 * There are several stem types
@@ -6171,22 +6171,22 @@ NumContLex="1.113"
 
 * LEXICON N_EEQKHKH  eeʹǩǩ:ẹẹ%{ʹØ%}kk
 N_1E_VVQKK
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 * Yaml: **N-eekkj**
 * There are several stem types
@@ -6208,8 +6208,8 @@ NumContLex="1.113"
 
 * LEXICON N_TEEQMM  teeʹmm:teemm
 N_1E_EEQCC
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## FORMS
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+### FORMS
 NumContLex="1.113"
 * Yaml: **N-teemm**
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) teemm-
@@ -6218,22 +6218,22 @@ NumContLex="1.113"
 
 * LEXICON N_PAAQJJ  pââʹjj:pââjj
 N_1E_VVQCC
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204, 329)
-## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204, 329)
+### 1.3 Sg.Loc in -est (no vowel shift, all lowered)
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Extra strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (8) Pl.Acc: pââʹjid
-## (9) Der/Dimin.N.Sg.Nom: pââjjaž
+### FORMS
+### (8) Pl.Acc: pââʹjid
+### (9) Der/Dimin.N.Sg.Nom: pââjjaž
 NumContLex="1.113"
 * Yaml: **N-paajj**
 * There are several stem types
@@ -6270,22 +6270,22 @@ Is for nouns with *-est* Loc, Extra long vowel
 * LEXICON N_KAQLBB  käʹlbb:kälbb âʹlǧǧ:âlgg
 N_1E_VQYXX
 similar_to: N_ALGG
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-aâlghgh**
@@ -6306,22 +6306,22 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^V2VV%^VOWRaise%^PAL%^YXX2YX E-STEM_PL-OBL ;  (5) Sg.Com: õõʹljin
 
 * LEXICON N_1E_EQYKK  fleʹšǩǩ:flẹ%^1VOW%{ʹØ%}škk
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-argumentt**
@@ -6343,22 +6343,22 @@ Is for nouns with *-est* Loc, Extra long vowel
 N_1E_SVQYXX
 vowel: monophthong
 vowel_height_change: no
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-argumentt**
@@ -6378,22 +6378,22 @@ Is for nouns with *-est* Loc, Extra long vowel
 * LEXICON N_1E_VUQKK  päiʹǩǩ:päikk
 * LEXICON N_PAIQKHKH  päiʹǩǩ:päikk
 N_1E_VUQKK
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-paeikk**
@@ -6477,21 +6477,21 @@ SVV = stable long vowel
 
 * LEXICON N_SAIQMM  säiʹmm:säimm this might have zero vowel shift in plural
 N_1E_SVQCC
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (vowel shift)
 vowel_shift: No
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-saeimm**
@@ -6501,31 +6501,31 @@ Is for nouns with *-est* Loc, Extra long vowel
 
 * LEXICON N_KHEQDD  ǩeʹdd:ǩe%^1VOWdd
 N_1E_JEQCC
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (1) Sg.Nom: ǩeʹdd
-## (2) Pl.Nom: ǩeeʹdd
-## (3) Sg.Ill: ǩeâdˈda
-## (4) Sg.Loc: ǩeeʹddest
-## (5) Sg.Com: ǩeeʹddin
-## (6) Ess: ǩeʹdden
-## (7) Par: ǩeʹdded
-## (8) Pl.Acc: ǩeeʹddid
-## (9) Der/Dimin.N.Sg.Nom: ǩeâddaž
+### FORMS
+### (1) Sg.Nom: ǩeʹdd
+### (2) Pl.Nom: ǩeeʹdd
+### (3) Sg.Ill: ǩeâdˈda
+### (4) Sg.Loc: ǩeeʹddest
+### (5) Sg.Com: ǩeeʹddin
+### (6) Ess: ǩeʹdden
+### (7) Par: ǩeʹdded
+### (8) Pl.Acc: ǩeeʹddid
+### (9) Der/Dimin.N.Sg.Nom: ǩeâddaž
 NumContLex="1.113"
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-kjedd**
@@ -6533,31 +6533,31 @@ WORK NEEDED FROM HERE DOWN
 
 * LEXICON N_KHEQMNN  ǩeʹmnn:ǩẹ%^1VOW%{ʹØ%}mnn
 N_1E_JEQYXX
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (1) Sg.Nom: ǩeʹmnn
-## (2) Pl.Nom: ǩeeʹmn
-## (3) Sg.Ill: ǩeâmnna
-## (4) Sg.Loc: ǩeeʹmnest
-## (5) Sg.Com: ǩeeʹmnin
-## (6) Ess: ǩeʹmnnen
-## (7) Par: ǩeʹmnned
-## (8) Pl.Acc: ǩeeʹmnid
-## (9) Der/Dimin.N.Sg.Nom: ǩeâmnaž
+### FORMS
+### (1) Sg.Nom: ǩeʹmnn
+### (2) Pl.Nom: ǩeeʹmn
+### (3) Sg.Ill: ǩeâmnna
+### (4) Sg.Loc: ǩeeʹmnest
+### (5) Sg.Com: ǩeeʹmnin
+### (6) Ess: ǩeʹmnnen
+### (7) Par: ǩeʹmnned
+### (8) Pl.Acc: ǩeeʹmnid
+### (9) Der/Dimin.N.Sg.Nom: ǩeâmnaž
 NumContLex="1.113"
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-aâlghgh**
@@ -6586,44 +6586,44 @@ Is for nouns with *-est* Loc, Extra long vowel
 
 * LEXICON N_LAAIQJ  lääiʹj:lääiǥ
 N_E_VUQKK
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-laeaeij**
 
 * LEXICON N_KHEQRJJ  ǩeʹrjj:ǩerjj
 N_1E_EQYXX/VQYXX checkme
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (NO vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (NO vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-kerjj**
@@ -6649,22 +6649,22 @@ N_SVQ.YXX
 same as TEQSTT
 gradation: yes
 vowel_shift: no
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (NO vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (NO vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-kerjj**
@@ -6681,25 +6681,25 @@ Is for nouns with *-est* Loc, Extra long vowel
 * LEXICON N_TAQHTT  täʹhtt:tä%^1VOW%{ʹØ%}h%{ʹØ%}tt
 N_1E_VQHCC
 similar_to: KÅHTT
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (NO vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (NO vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (1) Sg.Nom: täʹhtt
-## (3) Sg.Ill: tähtta
-## (4) Sg.Loc: tääutest
+### FORMS
+### (1) Sg.Nom: täʹhtt
+### (3) Sg.Ill: tähtta
+### (4) Sg.Loc: tääutest
 NumContLex="1.113
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-taehtt**
@@ -6732,22 +6732,22 @@ similar_to: KÅHTT
 * :%^V2VV%^PALNo%^YXX2VX E-STEM_N_KUYLAZH ;    !(9) Der/Dimin.N.Sg.Nom: tääutaž
 
 * LEXICON N_RUQHSS  ruʹhss:ruhss
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (NO vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (NO vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-kerjj**
@@ -6767,22 +6767,22 @@ Is for nouns with *-est* Loc, Extra long vowel
 * LEXICON N_1E_VUQCC  jäuʹrr:jä%^1VOWu%{ʹØ%}rr
 * LEXICON N_JAEUQRR  jäuʹrr:jä%^1VOWu%{ʹØ%}rr
 similar_to: N_AUTT
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (NO vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (NO vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-jaurr**
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) jäurr
@@ -6813,23 +6813,23 @@ Is for nouns with *-est* Loc, Extra long vowel
 
 * LEXICON N_NEIQBB  jäuʹrr:jäurr
 similar_to: N_AUTT
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (NO vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (NO vowel shift)
 Raised or lowered: Sg.Com, Pl.Obl
 Lowered: ELSE
 between _PEIQVV and _JAEUQRR
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 Is for nouns with *-est* Loc, Extra long vowel
 * Yaml: **N-jaurr**
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) nẹibb
@@ -6837,20 +6837,20 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) neiʹbb Ess+Px..
 
 * LEXICON N_1E_EUQKK  teiʹǧǧ:tẹ%^1VOWi%{ʹØ%}gg
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (no vowel shift, all lowered)
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster variation)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-peivv**
 * :%^PAL%^PALK E-STEM_SG-NOM ;	     (1) Sg.Nom: teiʹǧǧ
 * :%^V2VV%^PAL%^YXX2YX%^PALK E-STEM_SG-ABE/ACC/GEN ;  (2) Pl.Nom: peeiʼv
@@ -6867,20 +6867,20 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 
 * LEXICON N_1E_EUQCC  peiʹvv:pẹ%^1VOWi%{ʹØ%}vv cf neiʹbb
 * LEXICON N_PEIQVV  peiʹvv:pẹ%^1VOWi%{ʹØ%}vv
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (no vowel shift, all lowered)
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster variation)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-peivv**
 * :%^PAL E-STEM_SG-NOM ;	     (1) Sg.Nom: peiʹvv
 * :%^V2VV%^PAL%^YXX2YX E-STEM_SG-ABE/ACC/GEN ;  (2) Pl.Nom: peeiʼv
@@ -6901,23 +6901,23 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * :%^V2VV%^PAL%^YXX2YX PL-OBL ;  (8) Pl.Acc: peeiʹvid
 
 * LEXICON N_PIEAQSS  pieʹss:peäss
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: ELSE
 Lowered: Sg.Ill
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Diphthong + Consonant Geminate variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Diphthong + Consonant Geminate variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (8) Pl.Acc: pieʹzzid
+### FORMS
+### (8) Pl.Acc: pieʹzzid
 * Yaml: **N-piess, N-kjiechch**
 
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) peäss-
@@ -6925,23 +6925,23 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * :%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) peäʹsˈs Ess+Px..
 
 * LEXICON N_1E_IEAQKK  lieʹǩǩ:leä%{ʹØ%}kk
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: ELSE
 Lowered: Sg.Ill
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Diphthong + Consonant Geminate variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Diphthong + Consonant Geminate variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (8) Pl.Acc: pieʹzzid
+### FORMS
+### (8) Pl.Acc: pieʹzzid
 * Yaml: **N-piess, N-kjiechch**
 
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) peäss-
@@ -6949,22 +6949,22 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * :%^PAL%^CC2CCC%^PALK   E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) peäʹsˈs Ess+Px..
 
 * LEXICON N_SUEAQKHKH  sueʹǩǩ:suä%{ʹØ%}kk
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE  ẹ, ä
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 * Yaml: **N-suekkj**
 
@@ -6974,22 +6974,22 @@ NumContLex="1.113"
 
 * LEXICON N_KUEAQTT  kuẹʹtt:kuätt
 similar_to: N_SUEAQKHKH
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE  ẹ, ä
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 * Yaml: **N-kuett**
 * There are several stem types
@@ -6998,29 +6998,29 @@ NumContLex="1.113"
 * :%^PAL%^CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) kuäʹtˈt- Ess+Px..
 
 * LEXICON N_NUEAQJJ  nuẹʹjj:nuäjj
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE  ẹ, ä
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 NumContLex="1.113"
 * Yaml: **N-nuejj**
 similar_to: N_KHIOJJ, N_TUYJJ, N_SUEQJJ
 
 * LEXICON N_VIEQMM  vieʹmm:veâmm
 similar_to: N_SUEAQKHKH
-## FORMS
+### FORMS
 NumContLex="1.113"
 * Yaml: **N-vieqmm**
 * There are several stem types
@@ -7029,31 +7029,31 @@ NumContLex="1.113"
 * :%^PALE%^PAL%CC2CCC  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) vieʹmˈm Ess+Px..
 
 * LEXICON N_VUEAIQVV  vuẹiʹvv:vuäivv
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE  ẹ, ä
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (1) Sg.Nom: vuẹiʹvv
-## (2) Pl.Nom: vuẹiʼv
-## (3) Sg.Ill: vuäivva
-## (4) Sg.Loc: vuẹiʹvest
-## (5) Sg.Com: vueiʹvin
-## (6) Ess: vuẹiʹvven
-## (7) Par: vuẹiʹvved
-## (8) Pl.Acc: vueiʹvid
-## (9) Der/Dimin.N.Sg.Nom: vuäivaž
+### FORMS
+### (1) Sg.Nom: vuẹiʹvv
+### (2) Pl.Nom: vuẹiʼv
+### (3) Sg.Ill: vuäivva
+### (4) Sg.Loc: vuẹiʹvest
+### (5) Sg.Com: vueiʹvin
+### (6) Ess: vuẹiʹvven
+### (7) Par: vuẹiʹvved
+### (8) Pl.Acc: vueiʹvid
+### (9) Der/Dimin.N.Sg.Nom: vuäivaž
 NumContLex="1.113"
 * Yaml: **N-vueivv**
 * There are several stem types
@@ -7062,31 +7062,31 @@ NumContLex="1.113"
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) vuäiʹvv- Ess+Px..
 
 * LEXICON N_CHUAQRVV  čuäʹrvv:čuärvv
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE  ẹ, ä
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (1) Sg.Nom: čuäʹrvv
-## (2) Pl.Nom: čuẹʼrv
-## (3) Sg.Ill: čuärvva
-## (4) Sg.Loc: čuẹʹrvest
-## (5) Sg.Com: čueʹrvin
-## (6) Ess: čuäʹrvven
-## (7) Par: čuäʹrvved
-## (8) Pl.Acc: čueʹrvid
-## (9) Der/Dimin.N.Sg.Nom: čuärvaž
+### FORMS
+### (1) Sg.Nom: čuäʹrvv
+### (2) Pl.Nom: čuẹʼrv
+### (3) Sg.Ill: čuärvva
+### (4) Sg.Loc: čuẹʹrvest
+### (5) Sg.Com: čueʹrvin
+### (6) Ess: čuäʹrvven
+### (7) Par: čuäʹrvved
+### (8) Pl.Acc: čueʹrvid
+### (9) Der/Dimin.N.Sg.Nom: čuärvaž
 NumContLex="1.113"
 * Yaml: **N-chuaervv**
 * There are several stem types
@@ -7116,31 +7116,31 @@ NumContLex="1.113"
 čuäʼrvven
 
 * LEXICON N_1E_UAQYKK  juäʹtǩǩ:juä%{ʹØ%}tkk
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 204)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: Sg.Com, Pl.Obl
 Lowered: ELSE  ẹ, ä
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Geminate Variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (1) Sg.Nom: čuäʹrvv
-## (2) Pl.Nom: čuẹʼrv
-## (3) Sg.Ill: čuärvva
-## (4) Sg.Loc: čuẹʹrvest
-## (5) Sg.Com: čueʹrvin
-## (6) Ess: čuäʹrvven
-## (7) Par: čuäʹrvved
-## (8) Pl.Acc: čueʹrvid
-## (9) Der/Dimin.N.Sg.Nom: čuärvaž
+### FORMS
+### (1) Sg.Nom: čuäʹrvv
+### (2) Pl.Nom: čuẹʼrv
+### (3) Sg.Ill: čuärvva
+### (4) Sg.Loc: čuẹʹrvest
+### (5) Sg.Com: čueʹrvin
+### (6) Ess: čuäʹrvven
+### (7) Par: čuäʹrvved
+### (8) Pl.Acc: čueʹrvid
+### (9) Der/Dimin.N.Sg.Nom: čuärvaž
 NumContLex="1.113"
 * Yaml: **N-chuaervv**
 * There are several stem types
@@ -7165,29 +7165,29 @@ juäʹtǩǩ
 (12) čuäʹrvvinan
 
 * LEXICON N_NEUQLL  neuʹll:ne%^1VOWull 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (no vowel shift, all lowered)
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster variation)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (1) Sg.Nom: neuʹll
-## (2) Pl.Nom: neeuʹl
-## (3) Sg.Ill: neâulla
-## (4) Sg.Loc: neeuʹlest
-## (5) Sg.Com: neeuʹlin
-## (6) Ess: neuʹllen
-## (7) Par: neuʹlled
-## (8) Pl.Acc: neeuʹlid
-## (9) Der/Dimin.N.Sg.Nom: neâulaž
+### FORMS
+### (1) Sg.Nom: neuʹll
+### (2) Pl.Nom: neeuʹl
+### (3) Sg.Ill: neâulla
+### (4) Sg.Loc: neeuʹlest
+### (5) Sg.Com: neeuʹlin
+### (6) Ess: neuʹllen
+### (7) Par: neuʹlled
+### (8) Pl.Acc: neeuʹlid
+### (9) Der/Dimin.N.Sg.Nom: neâulaž
 * Yaml: **N-neull**
 * There are several stem types
 * neuʹll:neâull
@@ -7215,22 +7215,22 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * :%^PAL%^PALK%>e ESS/PAR ;       (6) jeäʹǧˈǧen, (7) jeäʹǧˈǧed
 
 * LEXICON N_JEAQNNN  jeäʹnn:jeä%{ʹØ%}nˈn, vuäʹbb:vuä%{ʹØ%}bˈb
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
-## 1.3 Sg.Loc in -est (vowel shift)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
+### 1.3 Sg.Loc in -est (vowel shift)
 Raised: ELSE
 Lowered: Sg.Ill
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Diphthong + Consonant Geminate variation)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Diphthong + Consonant Geminate variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-jeaggj**
 * There are several stem types 
 *  E-STEM_SG-ILL ;	      (3) jeägˈga
@@ -7288,20 +7288,20 @@ låʹdd >> lååʹddi; it should  be lå'dd >> loo'ddi
 * :%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) jeäʹrmm Ess+Px..
 
 * LEXICON N_JEAQRMM  jeäʹrǧǧ:jeärgg
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
-## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
+### 1.3 Sg.Loc in -est (no vowel shift, all lowered)
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.2 Has Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
+### 1.3.2.1.2 Has Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
-## FORMS
+### FORMS
 * Yaml: **N-jeaerggj, N-keadgg**
 * There are several stem types 
 * jeäʹrǧǧ:jeäʹrǧǧ
@@ -7310,20 +7310,20 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) jeäʹrmm Ess+Px..
 
 * LEXICON N_REAEIQGHGH  reäiʹǧǧ:reäigg
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
-## 1.3 Sg.Loc in -est (no vowel shift, all lowered)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180, 197-199)
+### 1.3 Sg.Loc in -est (no vowel shift, all lowered)
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.1 Has Palatalization
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.1 Has Palatalization
 Palatalized: ELSE
 Not Palatalized: Sg.Ill
-## 1.3.2.1.2 Has Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
+### 1.3.2.1.2 Has Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Diphthong + Consonant and Geminate variation)
 Strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com, Dim
-## FORMS
+### FORMS
 * Yaml: **N-jeaerggj, N-keadgg**
 * There are several stem types 
 * jeäʹrǧǧ:jeäʹrǧǧ
@@ -7345,18 +7345,18 @@ WHAT IS THIS CLASS
 
 * LEXICON N_KUQMPP  kuʹmpp:kumpp
 N_E-EPal3-31
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (no vowel shift, all raised)
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -e
-## 1.3.2.1 Has Palatalization (all palatalized)
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster Variation)
+### 1.3.2 Sg.Ill vowel -e
+### 1.3.2.1 Has Palatalization (all palatalized)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster Variation)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-kumpp**
 ???* There are several stem types
 * kuʹmpp:kuʹmpp
@@ -7364,57 +7364,57 @@ NumContLex="1.1140000000000001"
 
 * LEXICON N_BAEQNDD  bäʹndd:kumpp
 N_E-EPal3-31
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (no vowel shift, all raised)
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -e
-## 1.3.2.1 Has Palatalization (all palatalized)
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster Variation)
+### 1.3.2 Sg.Ill vowel -e
+### 1.3.2.1 Has Palatalization (all palatalized)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster Variation)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-kumpp**
 ???* There are several stem types
 * bäʹndd:kuʹmpp
 NumContLex="1.1140000000000001"
 
 * LEXICON N_KRIQLCC  kriʹlcc:krilcc
-## FORMS
+### FORMS
 * Yaml: **N-krilcc**
 ???* There are several stem types
 * kriʹlcc:kriʹlcc
 
 gradation: yes
-## FORMS
+### FORMS
 * Yaml: **N-krilcc**
 ???* There are several stem types
 * kriʹlcc:kriʹlcc
 
 * LEXICON N_DIQLL  diʹll:di%^1VOW%{ʹØ%}ll
-## FORMS
+### FORMS
 * Yaml: **N-dill**
 
 * LEXICON N_CUUQDD  cuuʹdd:cuu%{ʹØ%}dd
-## FORMS
+### FORMS
 * Yaml: **N-dill**
 
 * LEXICON N_KAAQFF  kaaʹff:kaaʹff
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (no vowel shift, all raised)
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -e
-## 1.3.2.1 Has Palatalization (all palatalized)
-## 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.1.1.1 Has Orthographic Gradation
-## 1.3.2.1.1.1[] (Monophthong + Consonant Cluster Variation)
+### 1.3.2 Sg.Ill vowel -e
+### 1.3.2.1 Has Palatalization (all palatalized)
+### 1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.1.1.1 Has Orthographic Gradation
+### 1.3.2.1.1.1[] (Monophthong + Consonant Cluster Variation)
 Strong grade: Sg.Nom, Ess, Par
 Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-kaaff**
 ???* There are several stem types
 * kaaʹff:kaaʹff
@@ -7431,69 +7431,69 @@ These must be checked 2017-04-03
 
 * LEXICON N_ZEEQTT  zeeʹtt:zẹẹtt
 
-## FORMS
+### FORMS
 * Yaml: **N-zeett**
 
 * LEXICON N_POAOAQMH  pååʹmh:påå%{ʹØ%}mh
 
-## FORMS
+### FORMS
 * Yaml: **N-zeett**
 
 * LEXICON N_LUUKK  
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
-## 1.1.3 Sg.Ill in palatalization and -e
-## 1.1.3.2 LACKS Gradation
-## 1.1.3.2.1 Monophthong
-## 1.1.3.2.1.1 Consonant Geminate
-## 1.1.3.2.1.1.2 Sg.Nom Strong Grade
-## 1.1.3.2.1.1.2.2.Sg.Gen Strong Grade
-## 1.1.3.2.1.1.2.2.2 Sg.Ill Strong Grade
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
+### 1.1.3 Sg.Ill in palatalization and -e
+### 1.1.3.2 LACKS Gradation
+### 1.1.3.2.1 Monophthong
+### 1.1.3.2.1.1 Consonant Geminate
+### 1.1.3.2.1.1.2 Sg.Nom Strong Grade
+### 1.1.3.2.1.1.2.2.Sg.Gen Strong Grade
+### 1.1.3.2.1.1.2.2.2 Sg.Ill Strong Grade
 luukk:luukk is for nouns with -âst Loc and no gradation. N_Y-EPal1-11, N_Y-EPal2-22
 * Yaml: **saarf, luukk**
 * +Der+Der/Dimin+N: N_KUUZZYZH-WITHOUT-PAL ;   paar-
 * +Der+Der/Dimin+N:%^PAL N_KUUZZYZH-WITH-PAL ;   paaʹr-
 
 * LEXICON N_BIOLOOG  bioloog:bioloog
-## 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
-## 2.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
-## 2.1.3 Sg.Ill in palatalization and -e
-## 2.1.3.3 Lacks Gradation (in last syllable)
-## 2.1.3.3.1 Monophthong
-## 2.1.3.3.1.3 Consonant always short
-## 2.1.3.3.1.3.4 Sg.Nom long vowel AND Short consonant
-## 2.1.3.3.1.3.4.1.Sg.Gen Weak Grade
-## 2.1.3.3.1.3.4.1.3 Sg.Ill Weak Grade
+### 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
+### 2.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
+### 2.1.3 Sg.Ill in palatalization and -e
+### 2.1.3.3 Lacks Gradation (in last syllable)
+### 2.1.3.3.1 Monophthong
+### 2.1.3.3.1.3 Consonant always short
+### 2.1.3.3.1.3.4 Sg.Nom long vowel AND Short consonant
+### 2.1.3.3.1.3.4.1.Sg.Gen Weak Grade
+### 2.1.3.3.1.3.4.1.3 Sg.Ill Weak Grade
 bioloog:bioloog
 * Yaml: **N-bioloog**
 * +Der+Der/Dimin+N: N_MUORYZH-WITHOUT-PAL ;   bioloog-
 * +Der+Der/Dimin+N:%^PAL N_MUORYZH-WITH-PAL ;   biolooʹǧ-
 
 * LEXICON N_JARPLAAN  
-## 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
-## 2.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
-## 2.1.3 Sg.Ill in palatalization and -e
-## 2.1.3.3 Has Gradation in last syllable
-## 2.1.3.3.1 Monophthong
-## 2.1.3.3.1.3 Consonant always short
-## 2.1.3.3.1.3.4 Sg.Nom Short vowel AND Short consonant
-## 2.1.3.3.1.3.4.1.Sg.Gen Weak Grade
-## 2.1.3.3.1.3.4.1.3 Sg.Ill Weak Grade
+### 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
+### 2.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
+### 2.1.3 Sg.Ill in palatalization and -e
+### 2.1.3.3 Has Gradation in last syllable
+### 2.1.3.3.1 Monophthong
+### 2.1.3.3.1.3 Consonant always short
+### 2.1.3.3.1.3.4 Sg.Nom Short vowel AND Short consonant
+### 2.1.3.3.1.3.4.1.Sg.Gen Weak Grade
+### 2.1.3.3.1.3.4.1.3 Sg.Ill Weak Grade
 jarplan:jarplan
 * Yaml: **N-jarplaan**
 * +Der+Der/Dimin+N: N_MUORYZH-WITHOUT-PAL ;   paar-
 * +Der+Der/Dimin+N:%^PAL N_MUORYZH-WITH-PAL ;   paaʹr-
 
 * LEXICON N_ATOM  atom:atom
-## 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
-## 2.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
-## 2.1.3 Sg.Ill in palatalization and -e
-## 2.1.3.3 Has Gradation in last syllable
-## 2.1.3.3.1 Monophthong
-## 2.1.3.3.1.3 Consonant always short
-## 2.1.3.3.1.3.4 Sg.Nom Short vowel AND Short consonant
-## 2.1.3.3.1.3.4.1.Sg.Gen Weak Grade
-## 2.1.3.3.1.3.4.1.3 Sg.Ill Weak Grade
+### 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
+### 2.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
+### 2.1.3 Sg.Ill in palatalization and -e
+### 2.1.3.3 Has Gradation in last syllable
+### 2.1.3.3.1 Monophthong
+### 2.1.3.3.1.3 Consonant always short
+### 2.1.3.3.1.3.4 Sg.Nom Short vowel AND Short consonant
+### 2.1.3.3.1.3.4.1.Sg.Gen Weak Grade
+### 2.1.3.3.1.3.4.1.3 Sg.Ill Weak Grade
 atom:atom
 * Yaml: **N-atom**
 * +Der+Der/Dimin+N:%^V2VV N_MUORYZH-WITHOUT-PAL ;   paar-
@@ -7528,18 +7528,18 @@ evaŋǧeʹlium:evaŋǧeʹlium
 * +Der+Der/Dimin+N:%^V2VV%^PAL N_MUORYZH-WITH-PAL ;   paaʹr-
 
 * LEXICON N_AIHAM  aiham:aiham
-## 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
-## 2.1 Sg.Loc in -ast. a-stems (Sg.Loc, Ess, Par).
-## 2.1.3 Sg.Ill in palatalization and -a
-## 2.1.3.3 Has Gradation in last syllable
-## 2.1.3.3.1 Monophthong
-## 2.1.3.3.1.3 Consonant always short
-## 2.1.3.3.1.3.4 Sg.Nom Short vowel AND Short consonant
-## 2.1.3.3.1.3.4.1.Sg.Gen Weak Grade
-## 2.1.3.3.1.3.4.1.3 Sg.Ill extra Strong Grade
+### 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
+### 2.1 Sg.Loc in -ast. a-stems (Sg.Loc, Ess, Par).
+### 2.1.3 Sg.Ill in palatalization and -a
+### 2.1.3.3 Has Gradation in last syllable
+### 2.1.3.3.1 Monophthong
+### 2.1.3.3.1.3 Consonant always short
+### 2.1.3.3.1.3.4 Sg.Nom Short vowel AND Short consonant
+### 2.1.3.3.1.3.4.1.Sg.Gen Weak Grade
+### 2.1.3.3.1.3.4.1.3 Sg.Ill extra Strong Grade
 * Yaml: **N-aiham**
 
-## CLASS 2 NOMINALS with high stem vowel and i-stems
+### CLASS 2 NOMINALS with high stem vowel and i-stems
 * LEXICON N_JUURD  juurd:ju%^1VOWrdd
 * LEXICON NMN_JUURD  juurd:ju%^1VOWrdd
 is for nouns with stem *i* + *-est* +Sg+Loc; all stem other than the +Sg+Nom are X3; the *i* does not occur in +Par 
@@ -7643,47 +7643,47 @@ is for nouns with stem *i* + *-est* +Sg+Loc; all stem other than the +Sg+Nom are
 
 * LEXICON N_MUU3  muuʒ:muvʒʒ
 * LEXICON NMN_MUU3  muuʒ:muvʒʒ
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
-## 1.3 Sg.Loc in -est (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+### 1.3 Sg.Loc in -est (no vowel shift, all raised)
 e-stems (Sg.Loc, Ess, Par).
-## 1.3.2 Sg.Ill vowel -a
-## 1.3.2.2 Lacks Palatalization
-## 1.3.2.2.1 Lacks Specifically Pedagogical Gradation
-## 1.3.2.2.1.1 Has Orthographic Gradation
-## 1.3.2.2.1.1[] (Monophthong + Consonant Cluster Variation)
+### 1.3.2 Sg.Ill vowel -a
+### 1.3.2.2 Lacks Palatalization
+### 1.3.2.2.1 Lacks Specifically Pedagogical Gradation
+### 1.3.2.2.1.1 Has Orthographic Gradation
+### 1.3.2.2.1.1[] (Monophthong + Consonant Cluster Variation)
 Weak grade: Sg.Nom
 Extra strong grade: Ess, Par
 Extra strong grade: Sg.Ill
 Extra strong grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
-## (1) Sg.Nom: muuʒ
-## (2) Pl.Nom: muvʒʒi
-## (3) Sg.Ill: muvʒʒǥa
-## (4) Sg.Loc: muvʒʒest
-## (5) Sg.Com: muvʒʒin
-## (6) Ess: muvʒʒen
-## (7) Par: muvʒʒed
-## (8) Pl.Acc: muvʒʒjid
-## (9) Der/Dimin.N.Sg.Nom:
+### FORMS
+### (1) Sg.Nom: muuʒ
+### (2) Pl.Nom: muvʒʒi
+### (3) Sg.Ill: muvʒʒǥa
+### (4) Sg.Loc: muvʒʒest
+### (5) Sg.Com: muvʒʒin
+### (6) Ess: muvʒʒen
+### (7) Par: muvʒʒed
+### (8) Pl.Acc: muvʒʒjid
+### (9) Der/Dimin.N.Sg.Nom:
 * Yaml: **N-muuz**
 * There are several stem types 
 * muuʒ:muvʒʒi
 * :%>ǥ VOONYS-STEM-PX ;  võnns-
 
 CLASS 2 NOMINALS with low stem vowel and u-stems
-## u-stems
+### u-stems
 * LEXICON N_MAEAEN  mään:ma%^1VOWnn
 * LEXICON NMN_MAEAEN  mään:ma%^1VOWnn
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 228)
-## 1.2 Sg.Loc in -ust. u-stems (Sg.Loc, Ess, Par).
-## 1.2.3 Sg.Ill in raised vowel and -u
-## 1.2.3.1 Has Gradation
-## 1.2.3.1.1 Monophthong
-## 1.2.3.1.1.1 Consonant Geminate (W2XSt)
-## 1.2.3.1.1.1.1 Sg.Nom Weak Grade
-## 1.2.3.1.1.1.1.3.Sg.Gen Extra Strong Grade
-## 1.2.3.1.1.1.1.3.3 Sg.Ill Extra Strong Grade
-## 1.2.3.1.1.1.1.3.3.Q All but Sg.Nom are raised vowels
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 228)
+### 1.2 Sg.Loc in -ust. u-stems (Sg.Loc, Ess, Par).
+### 1.2.3 Sg.Ill in raised vowel and -u
+### 1.2.3.1 Has Gradation
+### 1.2.3.1.1 Monophthong
+### 1.2.3.1.1.1 Consonant Geminate (W2XSt)
+### 1.2.3.1.1.1.1 Sg.Nom Weak Grade
+### 1.2.3.1.1.1.1.3.Sg.Gen Extra Strong Grade
+### 1.2.3.1.1.1.1.3.3 Sg.Ill Extra Strong Grade
+### 1.2.3.1.1.1.1.3.3.Q All but Sg.Nom are raised vowels
 * Yaml: **N-maan**
 * There are several stem types
 * :%^V2VV%^VOWLower%^CC2C SG-NOM ;	         mään
@@ -7756,7 +7756,7 @@ CLASS 2 NOMINALS with high stem vowel and â-stems
 * :%>ǥ VOONYS-STEM-PX ;  võnns-
 
 CLASS 3 HIGH VOWEL, MONOPHTHONG, NO PALATALIZATION NOMINALS
-## m-stems
+### m-stems
 
 * LEXICON N_LAAJJ  laajj:la%^1VOWčč
 * LEXICON NMN_LAAJJ  laajj:la%^1VOWčč
@@ -7781,7 +7781,7 @@ similar_to:
 
 CLASS 3
 
-## n-stems
+### n-stems
 
 * LEXICON N_SIOM   = siõm:siõmˈm
 * LEXICON NMN_SIOM   = siõm:siõmˈm
@@ -8107,12 +8107,12 @@ N_LBVVC_as
 
 gradation: no
 
-## 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 252)
-## 2.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
-## 2.3.2 Sg.Ill in -a
-## 2.3.2.2 LACKS Gradation
-## 2.3.2.2.1 Penultimate stem vowel loss: (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Gen, Pl.Acc, Pl.Ill, Pl.Loc, Pl.Com, Pl.Abe)
-## 2.3.2.2.1.1 The Sg.Com vowel i appears before final n  
+### 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 252)
+### 2.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
+### 2.3.2 Sg.Ill in -a
+### 2.3.2.2 LACKS Gradation
+### 2.3.2.2.1 Penultimate stem vowel loss: (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Gen, Pl.Acc, Pl.Ill, Pl.Loc, Pl.Com, Pl.Abe)
+### 2.3.2.2.1.1 The Sg.Com vowel i appears before final n  
 * Yaml: **A-sloohman**
 
 * LEXICON N_KOAOADDARV  kååddarv:kååddarv
@@ -8142,12 +8142,12 @@ N_GEN2X3-NOM2X1
 * :%^VC PL-NOM ;  kuäivvaz
 
 * LEXICON N_JUYGXGXAS  juâǥǥas:juâkˈkas
-## 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 252)
-## 2.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
-## 2.3.2 Sg.Ill in -a
-## 2.3.2.2 
-## 2.3.2.2.1 Penultimate stem vowel loss: (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Gen, Pl.Acc, Pl.Ill, Pl.Loc, Pl.Com, Pl.Abe)
-## 2.3.2.2.1.1 The Sg.Com vowel i appears before final n  
+### 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 252)
+### 2.3 Sg.Loc in -est. e-stems (Sg.Loc, Ess, Par).
+### 2.3.2 Sg.Ill in -a
+### 2.3.2.2 
+### 2.3.2.2.1 Penultimate stem vowel loss: (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Gen, Pl.Acc, Pl.Ill, Pl.Loc, Pl.Com, Pl.Abe)
+### 2.3.2.2.1.1 The Sg.Com vowel i appears before final n  
 * Yaml: **N-juaghghas**
 * :%^VC  SG-ABE/ACC/GEN_PL-NOM ;  juâkˈkaz
 * :%^RmVow VOONYS-STEM-PX ;  såbbr-
@@ -8245,7 +8245,7 @@ N_4E_VVUQCES/Z
 * Yaml: **N-naaer** 
 * :%^Pen%^PAL%^Pen%^KK2GG%^RmVow VOONYS-STEM-PX ;  võnns-
 
-## s:z-stem type
+### s:z-stem type
 
 * Yaml: **kerres**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
@@ -8311,7 +8311,7 @@ N_4E_VWQC_S/Z
 * Yaml: __similar_to:N-kaeaelles__
 * :%^VOWLower%>s VOONYS-STEM-PX ;  potts-
 
-## -stems
+### -stems
 * LEXICON N_NJUAEQMMEL  = stemtype l-stem njuäʹmmel:njuäʹmˈmel
 * LEXICON NMN_NJUAEQMMEL  = stemtype l-stem njuäʹmmel:njuäʹmˈmel
 * Yaml: **njuammel, njuunnjel, aappal** 
@@ -8399,7 +8399,7 @@ this deals with an extra piece of paradigm
 
 * LEXICON N_1E_VQCC_PL  lååʹdd:lådd
 
-## e-a-stems
+### e-a-stems
 
 Nouns with -est Loc and -a Ill without ʹ
 lemma and stem 3rd grade; vowel raising
@@ -8586,7 +8586,7 @@ THIS NEEDS CHECKING
 292-295
 * Yaml: **A-chaalmtem**
 
-## Stem types from the grammar
+### Stem types from the grammar
 
 *These are still not fixed.*
 * LEXICON N_TUEJJEEJA  tuejjeeja:tuejjẹẹja
@@ -8605,7 +8605,7 @@ tuõđšteeʹjj:tuõđštẹẹ
 * Yaml: **N-tuodhshteeqjj**
 
 Class 5 according to Feist 152
-## k-stems
+### k-stems
 
 stemtype
 * Yaml: **N-sajos**
@@ -9005,7 +9005,7 @@ NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
 Class 7 according to Feist 154-155
-## i-stems
+### i-stems
 * LEXICON N_HOQPPI  hõʹppi:hõʹppi
 * LEXICON NMN_HOQPPI  hõʹppi:hõʹppi
 * Yaml: **hoppi**
@@ -9216,7 +9216,7 @@ N_GEN1-ILLEX1-LOCE-NOM1X1
 * ooumaž:ooum
 
 Class 10 according to Feist 160-161
-## neǩ-stem
+### neǩ-stem
 * LEXICON N_KAADHNEKH  kaađneǩ:kaađnẹ%^1VOWk
 * LEXICON NMN_KAADHNEKH  kaađneǩ:kaađnẹ%^1VOW%{ʹØ%}k
 * Yaml: **N-kaadhnekj, N-chaustok**
@@ -9284,15 +9284,15 @@ inflection_type="?"vuäʹllad+N:vuäʹlˈl (cf. also A-ORD_NEELLJAD)
 
 Class 12 Feist 163
 
-### Noun phrase heads
-### Pl
+#### Noun phrase heads
+#### Pl
 
-### Number and case tags
+#### Number and case tags
 
 Used with words like juurd: jurddǥatta
 
-## POSSESSIVE DECLENSION
-### HatY-STEM-PX
+### POSSESSIVE DECLENSION
+#### HatY-STEM-PX
 * +Err/GenreLeudd:â SG-NOM ;  Leudd 2018-09-20
 
 * +Err/GenreLeudd:â SG-ABE/ACC/GEN_PL-NOM ;  Leudd 2018-09-20
@@ -9301,7 +9301,7 @@ Used with words like juurd: jurddǥatta
 * +Err/GenreLeudd:â SG-ABE/ACC/GEN_PL-NOM ;  Leudd 2018-09-20
 * +Err/GenreLeudd:â SG-COM_N ;  Leudd 2018-09-20
 
-### A-STEM-PX
+#### A-STEM-PX
 
 * +Err/GenreLeudd:a SG-NOM ;  Leudd 2018-09-20
 
@@ -9310,18 +9310,18 @@ Used with words like juurd: jurddǥatta
 
 * : N2A_REAEB3H3HAI ;      N»A
 
-### E-STEM-PX
+#### E-STEM-PX
 
 * +Err/GenreLeudd:e SG-NOM ;  Leudd 2018-09-20
 
 * +Err/GenreLeudd:e SG-ABE/ACC/GEN_PL-NOM ;  Leudd 2018-09-20
 * +Err/GenreLeudd:e SG-COM_N ;  Leudd 2018-09-20
 
-### LOAOADDAZH-STEM-PX
+#### LOAOADDAZH-STEM-PX
 
 * LEXICON LOAOADDAZH-STEM-PX-STRENGTHEN-WITH-PAL  needs checking
 
-### VOONYS-STEM-PX
+#### VOONYS-STEM-PX
 * LEXICON VOONYS-STEM-PX  võnns-
 
 * LEXICON VOONYS-STEM-PX-NO-DER  võnns-
@@ -9337,9 +9337,9 @@ Used with words like juurd: jurddǥatta
 
 * LEXICON N-ALLEGRO_ATTESTED-NOUN-STEM  This is for Allegro forms
 
-## Adjectives -- to be moved
+### Adjectives -- to be moved
 
-### Vowel-final stem for PX
+#### Vowel-final stem for PX
 
 * * *
 
@@ -9347,11 +9347,11 @@ Used with words like juurd: jurddǥatta
 
 ---
 
-# src-fst-morphology-affixes-numerals.lexc.md 
+## src-fst-morphology-affixes-numerals.lexc.md 
 
 
 
-# Inari Saami number <-> text
+## Inari Saami number <-> text
 
 * **LEXICON ARABICCASES**  adds +Arab
 
@@ -9369,10 +9369,10 @@ Used with words like juurd: jurddǥatta
 
 ---
 
-# src-fst-morphology-affixes-pronouns.lexc.md 
+## src-fst-morphology-affixes-pronouns.lexc.md 
 
 
-# Skolt Saami Pronoun Morphology 
+## Skolt Saami Pronoun Morphology 
 
 The lexicon *PRON_*, which is actually not needed, as pronouns get +Pron tag earlier.
 
@@ -9387,7 +9387,7 @@ The lexicon *PRON_*, which is actually not needed, as pronouns get +Pron tag ear
 * +Abe:ijtää	      K ;  mijtää, tijtää, sijtää
 * +Abe+Use/NGminip+Use/NG+Use/SpellNoSugg:iʹjjitää	K ;  miʹjjitää, tiʹjjitää, siʹjjitää
 
-# Pronouns
+## Pronouns
 
 Pointing to all the pronominal subgroups
 
@@ -9396,11 +9396,11 @@ Pointing to all the pronominal subgroups
 *  Interrogative ; 
 *  Relative ;	 kååʹtt, mii
 
-## Personal pronouns
+### Personal pronouns
 
 Splitting according to person
 
-## Demonstrative pronouns
+### Demonstrative pronouns
 
 * LEXICON Demonstrative 
 * tõt+Pron+Dem:t  	TOTDEM ;  The Epsilon has been removed 2015-05-13
@@ -9415,15 +9415,15 @@ Splitting according to person
 
 * LEXICON -AA 
 
-## INDEFINITE PRONOUNS
+### INDEFINITE PRONOUNS
 
-## REFLEXIVE PRONOUNS
+### REFLEXIVE PRONOUNS
 
 jiõčč:ji
 
 Completion needed 2015-09-19
 
-## Interrogative pronouns
+### Interrogative pronouns
 **LEXICON PRON-INTERR_** is referred to from the xml file, hence does not assign **+Pron** tag.
 * +Interr: # ;
 
@@ -9475,9 +9475,9 @@ Completion needed 2015-09-19
 
 * LEXICON DISTR-MK-low-long 
 
-### SPATIAL PRONOUNS
+#### SPATIAL PRONOUNS
 
-### MISC
+#### MISC
 
 * * *
 
@@ -9485,10 +9485,10 @@ Completion needed 2015-09-19
 
 ---
 
-# src-fst-morphology-affixes-propernouns.lexc.md 
+## src-fst-morphology-affixes-propernouns.lexc.md 
 
 
-# SKOLT SAAMI PROPERNOUN MORPHOLOGY 
+## SKOLT SAAMI PROPERNOUN MORPHOLOGY 
 
 THE LEXICON *`OUTSIDE_LEXICONS`* ASSIGNS THE TAG +Attr
 
@@ -9523,22 +9523,22 @@ Ruõšš:Ruõ%{ʹØ%}šˈš
 * LEXICON PROP_TOOBDYLM_mal  toobdâlm:toobdâlm
 
 like KÕÕNJÂL 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel	-e
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant and Consonant Geminate alternation)
+### 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+### 1.1.1.1[1].1.1 Has Orthographic Gradation
+### 1.1.1.1[1].1.1[] (Monophthong + Consonant and Consonant Geminate alternation)
 Extra strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-kidd, N-soll, N-toll, N-vorr**
 strong_geminate, short_vowel, no_palatalization, high_stem_vowel 
 :%>â ESS ;    		  = * LEXICON PROP_TOOBDYLM_mal  tollân
@@ -9548,22 +9548,22 @@ single_consonant, long_vowel, no_palatalization, high_stem_vowel
 :%^V2VV%^CC2C SG-COM_IN ;               = * LEXICON PROP_TOOBDYLM_mal  toolin
 :%^V2VV%^CC2C PL-OBL ;	                = * LEXICON PROP_TOOBDYLM_mal  tooli, toolid, toolid, toolin, toolivuiʹm, toolitaa
 
-## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
-## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+### 1.1 Sg.Loc in -âst (no vowel shift, all raised)
 â-stems (Sg.Loc, Ess, Par).
-## 1.1.1 Sg.Ill vowel	-e
-## 1.1.1.1 Has Palatalization
-## 1.1.1.1[1] (Palatalization pattern)
+### 1.1.1 Sg.Ill vowel	-e
+### 1.1.1.1 Has Palatalization
+### 1.1.1.1[1] (Palatalization pattern)
 Palatalized: Sg.Ill
 Not Palatalized: ELSE
 Sg.Ill in palatalization and -e
-## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
-## 1.1.1.1[1].1.1 Has Orthographic Gradation
-## 1.1.1.1[1].1.1[] (Monophthong + Consonant and Consonant Geminate alternation)
+### 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+### 1.1.1.1[1].1.1 Has Orthographic Gradation
+### 1.1.1.1[1].1.1[] (Monophthong + Consonant and Consonant Geminate alternation)
 Extra strong grade: Sg.Nom, Ess, Par
 Extra strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
-## FORMS
+### FORMS
 * Yaml: **N-kuss**
 
 R ;		= * LEXICON PROP_TOOBDYLM_mal  kuss
@@ -9577,7 +9577,7 @@ R ;		= * LEXICON PROP_TOOBDYLM_mal  kuss
 
 ---
 
-# src-fst-morphology-affixes-smi-propernouns.lexc.md 
+## src-fst-morphology-affixes-smi-propernouns.lexc.md 
 
 
 
@@ -9617,10 +9617,10 @@ to sg forms in some cases. (substandard?)
 
 ---
 
-# src-fst-morphology-affixes-symbols.lexc.md 
+## src-fst-morphology-affixes-symbols.lexc.md 
 
 
-# Symbol affixes
+## Symbol affixes
 
 * * *
 
@@ -9628,15 +9628,15 @@ to sg forms in some cases. (substandard?)
 
 ---
 
-# src-fst-morphology-affixes-verbs.lexc.md 
+## src-fst-morphology-affixes-verbs.lexc.md 
 
 
 
-# Skolt Saami verb morphology
+## Skolt Saami verb morphology
 
 First a lexicon V_ for still unclassified entries.
 
-## Irregular verbs
+### Irregular verbs
 
 Then irregular verbs ij and the copula.
 
@@ -9651,8 +9651,8 @@ The lexicon *V-NEG_IJ*
 * LEXICON V0_LEEQD  leeʹd:l
 The lexicon *V0_LEEQD* for the copula
 
-## REGULAR VERBS
-### CLASS 1 HIGH VOWEL, NO PALATALIZATION
+### REGULAR VERBS
+#### CLASS 1 HIGH VOWEL, NO PALATALIZATION
 
 * LEXICON V_1Y_VVCC  põõllâd:põõll
 * LEXICON V_POOLLYD  põõllâd:põõll
@@ -10510,7 +10510,7 @@ Imprt+Pl3
 * LEXICON V_SUUDYD  suudâd:suud
 * LEXICON V0_SUUDYD  suudâd:suud
 
-### CLASS 1 LOW VOWEL, NO PALATALIZATION
+#### CLASS 1 LOW VOWEL, NO PALATALIZATION
 Even-syllable stems in -AD
 
 * LEXICON V_1A_VVCC  teevvad:teevv
@@ -10709,7 +10709,7 @@ Imprt+ConNegII, Pass+PrfPrc
 * LEXICON V_REIDDAD  reiddad:rẹ%^1VOWidd
 * LEXICON V0_REIDDAD  reiddad:rẹ%^1VOWidd
 
-### CLASS 1 HIGH VOWEL, PALATALIZATION
+#### CLASS 1 HIGH VOWEL, PALATALIZATION
 * LEXICON TV_MUQTTED  muʹtted:mutt
 * LEXICON V0_MUQTTED  muʹtted:mutt
 
@@ -11570,7 +11570,7 @@ Imprt+Pl3
 (12) Weak-RaisedVowel-NoPalatalization
 * :%^VOWRaise%^YXX2VX VSUF-CHED_ED ;   (12) +Der+Der/ched: vuõus-
 
-### CLASS 1 LOW VOWEL, PALATALIZATION
+#### CLASS 1 LOW VOWEL, PALATALIZATION
 EVEN-SYLLABLE STEMS IN -ED
 
 * LEXICON V_1E_VQKK  câʹǩǩed:câ%^1VOW%{ʹØ%}kk
@@ -12730,7 +12730,7 @@ Imprt+Pl3
 
 DERIVED VERBS WITH PENULTIMATE VOWEL LOSS AND CHANGE
 
-### CLASS 2 HIGH VOWEL, NO PALATALIZATION
+#### CLASS 2 HIGH VOWEL, NO PALATALIZATION
 * LEXICON V_AALGXTED   aalǥted:aalǥât
 * LEXICON IV_AALGXTED   aalǥted:aalǥât
 * LEXICON TV_AALGXTED   aalǥted:aalǥât
@@ -12763,7 +12763,7 @@ gradation: no
 * LEXICON V_TAARBSHED  taarbšed:taarbâš
 * LEXICON V0_TAARBSHED  taarbšed:taarbâš
 
-### CLASS 2 LOW VOWEL, NO PALATALIZATION
+#### CLASS 2 LOW VOWEL, NO PALATALIZATION
 * LEXICON V_VUEJTED  vuejted:vuejat
 * LEXICON V0_VUEJTED  vuejted:vuejat
 
@@ -12831,13 +12831,13 @@ inflection_type="3"
 * LEXICON V0_SHORRNED  šorrned:šorran
 gradation: no
 
-### CLASS 2 HIGH VOWEL, PALATALIZATION
+#### CLASS 2 HIGH VOWEL, PALATALIZATION
 
 * LEXICON V_CHIEQKHRDED  čieʹǩrded:čieʹǩǩerd
 * LEXICON TV_CHIEQKHRDED  čieʹǩrded:čieʹǩǩerd
 * LEXICON V0_CHIEQKHRDED  čieʹǩrded:čieʹǩǩerd
 
-### CLASS 2 LOW VOWEL, PALATALIZATION
+#### CLASS 2 LOW VOWEL, PALATALIZATION
 * LEXICON V_NJAQMMSHED  njâʹmmšed:njâʹmmeš
 * LEXICON IV_NJAQMMSHED  njâʹmmšed:njâʹmmeš
 * LEXICON V0_NJAQMMSHED  njâʹmmšed:njâʹmmeš
@@ -12884,9 +12884,9 @@ tag errors outside of XML
 * LEXICON V_TUAEQRJSTED  tuäʹrjsted:tuäʹrjest
 * LEXICON V0_TUAEQRJSTED  tuäʹrjsted:tuäʹrjest
 
-### CLASS 3 HIGH VOWEL, NO PALATALIZATION
+#### CLASS 3 HIGH VOWEL, NO PALATALIZATION
 
-### CLASS 3 LOW VOWEL, NO PALATALIZATION
+#### CLASS 3 LOW VOWEL, NO PALATALIZATION
 * LEXICON V_KUYDHDHDHJED  kuâđđjed:kuâđˈđ
 * LEXICON IV_KUYDHDHDHJED  kuâđđjed:kuâđˈđ
 * LEXICON TV_KUYDHDHDHJED  kuâđđjed:kuâđˈđ
@@ -12900,7 +12900,7 @@ tag errors outside of XML
 
 * :%>%{ʼØ%}j VSUF-VUEJTED-ELSE ;  jeälˈljed
 
-### CLASS 3 HIGH VOWEL, PALATALIZATION
+#### CLASS 3 HIGH VOWEL, PALATALIZATION
 * LEXICON V_3E_QLLXJED  võʹllʼjed:võʹll
 * LEXICON V_3E_QCCJED  võʹllʼjed:võʹll
 * LEXICON V_VOQLLJED  võʹllʼjed:võʹll
@@ -12910,17 +12910,17 @@ tag errors outside of XML
 * :e	VSUF-VUEJTED-IND-PRS-CONNEG ;	 võʹlle
 * :ai VSUF-VUEJTED-IND-PRS-SG3 ;  võʹllai
 
-### CLASS 3 LOW VOWEL, PALATALIZATION
+#### CLASS 3 LOW VOWEL, PALATALIZATION
 
-### CLASS 3 HIGH VOWEL, NO PALATALIZATION, GH
+#### CLASS 3 HIGH VOWEL, NO PALATALIZATION, GH
 * LEXICON V_KUOCCJED  kuõccjed:kuõcc
 * LEXICON IV_KUOCCJED  kuõccjed:kuõcc
 * LEXICON TV_KUOCCJED  kuõccjed:kuõcc
 * LEXICON V0_KUOCCJED  kuõccjed:kuõcc
 
-### CLASS 3 LOW VOWEL, NO PALATALIZATION, GH
+#### CLASS 3 LOW VOWEL, NO PALATALIZATION, GH
 
-### CLASS 4 HIGH VOWEL, NO PALATALIZATION
+#### CLASS 4 HIGH VOWEL, NO PALATALIZATION
 
 * LEXICON V_SILTTEED  siltteed:siltt
 * LEXICON IV_SILTTEED  siltteed:siltt
@@ -12928,12 +12928,12 @@ tag errors outside of XML
 * LEXICON V0_SILTTEED  siltteed:siltt
 * : VSUF-TEEQMEED-ELSE ;  
 
-### CLASS 4 LOW VOWEL, NO PALATALIZATION
+#### CLASS 4 LOW VOWEL, NO PALATALIZATION
 * : VSUF-TEEQMEED-ELSE ; 
 
-### CLASS 4 HIGH VOWEL,  PALATALIZATION
+#### CLASS 4 HIGH VOWEL,  PALATALIZATION
 
-### CLASS 4 LOW VOWEL, PALATALIZATION
+#### CLASS 4 LOW VOWEL, PALATALIZATION
 * : VSUF-TEEQMEED-ELSE ; 
 
 Not yet written
@@ -12965,14 +12965,14 @@ VSUF-I-POTKOND_YD, VSUF-I-POTKOND_AD and VSUF-POTENTIAL_ED come here
 
 ---
 
-# src-fst-morphology-phonology.twolc.md 
+## src-fst-morphology-phonology.twolc.md 
 
 
-# Skolt Sámi TWOLC file
+## Skolt Sámi TWOLC file
 
 This file documents the [phonology.twolc file](http://github.com/giellalt/lang-sms/blob/main/src/fst/phonology.twolc) 
 
-# Introduction
+## Introduction
 The twolc rule file for Skolt Saami is divided into 5 main sections:
 1. Alphabets, Sets and Definitions
 1. Consonant shift rules (tbw)
@@ -12980,9 +12980,9 @@ The twolc rule file for Skolt Saami is divided into 5 main sections:
 1. Consonant gradation rules
 1. Rules for cleaning up and composing end result
 
-# Alphabets, sets and definitions
+## Alphabets, sets and definitions
 
-## Alphabet
+### Alphabet
 
 Regular letters:
 
@@ -13165,7 +13165,7 @@ Morpheme boundaries:
 
 End of alphabet definitions
 
-## Sets
+### Sets
 
 * Cns = b c d f g h j k l m n p q r s t v w x z đ ʒ ǯ č ŋ ǩ ǧ ǥ š ž
   B C D F G H J K L M N P Q R S T V W X Z Đ Ʒ Ǯ Č Ŋ Ǩ Ǧ Ǥ Š Ž ;
@@ -13195,9 +13195,9 @@ End of alphabet definitions
   %^PenVow2a %^RmCns %^VC %^V2VV
   %^VOWRaise %^VOWSH %^K2GG %> ; - triggers in Sg.Nom and Sg.Gen (Note word-final right arrow bracket 2024-01-10)
 
-## Definitions
+### Definitions
 
-### Short consonant cluster
+#### Short consonant cluster
 
 Onset consonant or word boundary
 `OnSetC = [[%{XC%}:Cns\|Cns:Cns] (Cns:\|%{XC%}:Cns) \|.#.\|#:\|%>\](») ;`
@@ -13236,7 +13236,7 @@ possible triggers between vowel length and Palatalization
 
 `BetweenStemAndRightArrow = [NeutrVowLengthHeightDiphPalAllegroPAL BetweenPALNoAndMorphRightArrow] ;`
 
-### Penultimate vowel centers possible triggers before VOWLower and VOWRaise
+#### Penultimate vowel centers possible triggers before VOWLower and VOWRaise
 
 `PenBetweenStemAndStemFinalVoicing = [PenBetweenStemAndVowelLoss (%^RmVow:\](%^PenVow2a:)) ;`
 
@@ -13263,9 +13263,9 @@ neutral to vowel and consonant length
 * X2 = C Vx Vx Cx Cx  C Vx Vy Cx Cx
 * X1 = C Vx Vx Cx     C Vx Vy Cx
 
-# Rules
+## Rules
 
-## Vowel shortening rules
+### Vowel shortening rules
 
 **Vowel shortening â:0** - used in
 
@@ -13451,11 +13451,11 @@ tåpsʼsted+V+Inf:
 * *taaurõ^1VOWš{XC}^C2CC>0ses*
 * *taaurõ0šš0>ʼses*
 
-## Vowel alternation rules
+### Vowel alternation rules
 
-### VOWEL SHIFT
+#### VOWEL SHIFT
 
-### RAISING
+#### RAISING
 deriving +Ind+Prt+Sg1, +Ind+Prt+Sg2 +Ind+Prt+Pl3 in teevvad:tivvu
 
 **Vowel raising o:u** - Adding +Prt+Pl3 for ed verbs, Removing u: and i:  second element due to njeiddad njeiddu
@@ -13600,7 +13600,7 @@ mäʹhssed+V+Ind+Prt+Pl3: **pay/maksaa**
 * *ma0ʹh0ss00>e*
 * ★*mä^1VOW{ʹØ%}h%{ʹØ%}ss^VOWRaise^PAL>e* (is not standard language)
 * ★*mä0ʹh0ss00>e* (is not standard language)
-### LOWERING
+#### LOWERING
 
 **Even syllabic verbs I, vowel lowering o:å** - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in poorrâd
 poorrâd+V+Ind+Prs+Pl3 **eat/syödä**
@@ -13715,7 +13715,7 @@ juõiggâd+V+Ind+Prs+Sg3
 * *kuõigg^VOWLower*
 * *kuâigg0*
 
-### Diphthongs
+#### Diphthongs
 
 **Even syllabic verbs I, diphthong opening after u å:ä** - deriving +Ind+Prs+Sg3, in kuåccâd kuäʹcce
 = a>ä lowering clockwise
@@ -13745,7 +13745,7 @@ tieʹtted+V+Ind+Prs+Pl3 **know/tietää**
 
 **Even syllabic verbs I, diphthong opening after i:e e:â** - deriving +Ind+Prs+Sg3, in pi%{EÂ%}ʹǩǩ:peâkka
 
-### Vowel backing
+#### Vowel backing
 
 ** u å:õ** - used in
 = a>ä lowering clockwise
@@ -13753,7 +13753,7 @@ tieʹtted+V+Ind+Prs+Pl3 **know/tietää**
 * *puått^VOWRaise>u*
 * *puõtt0>u*
 
-### Vowel Palatalization
+#### Vowel Palatalization
 **diphthong allophonic realization in palatalization u å:e** - deriving e from å
 
 * *puå0v0v^PALE^PAL^CC2CCC>e*
@@ -13761,14 +13761,14 @@ tieʹtted+V+Ind+Prs+Pl3 **know/tietää**
 
 **diphthong allophonic realization in palatalization u å:ẹ** - deriving
 
-### Vowel Lowering and Fronting
+#### Vowel Lowering and Fronting
 
 **Even syllabic verbs I, diphthong opening õ:ä after i:e** - deriving +Ind+Prs+Sg3, in čiõkkâd
 siõrrâd+V+Ind+Prs+Pl3: **play/leikkiä**
 * *siõ0r0r^VOWLower^PALÄ^PAL^CC2CCC>e*
 * *seäʹrˈr0000>e*
 
-### SECONDARY FRONTING
+#### SECONDARY FRONTING
 
 **Even syllabic verbs I, secondary vowel fronting with PAL u õ:e** - deriving +Ind+Prs+Pl3 in VIQQAD: kuõskkâd >kueʹsǩǩe
 
@@ -13777,7 +13777,7 @@ siõrrâd+V+Ind+Prs+Pl3: **play/leikkiä**
 
 **Even syllabic verbs I, secondary u > v **
 
-### RELATIVE VOWEL LENGTHENING
+#### RELATIVE VOWEL LENGTHENING
 
 vowel lengthening and consonant shortening, %^Pen: %^V2VV 
 
@@ -13977,9 +13977,9 @@ Enontekiö+N+Prop+Sg+Ill
 
 simultaneous lengthening and raising, hmm: xfst ordering might be easier
 
-### VOWEL DUMMY LOSS
+#### VOWEL DUMMY LOSS
 
-### SEMI VOWELS
+#### SEMI VOWELS
 
 **Even syllabic nouns, for j>i** - sijdd > siid This will need a special extra-lengthening rule
 * *ijss^YXX2VX>âs*
@@ -14039,7 +14039,7 @@ peigg+N+Sg+Ill
 * *pẹ^1VOWigg^VOWRaise^VXX2YXX>u*
 * *pi0jgg00>u*
 
-### VOWELS TENSE vs LAX 2012-11-28
+#### VOWELS TENSE vs LAX 2012-11-28
 
 **Vowels for â:i** -
 ǩeʹtted+V+Ind+Prs+ConNeg: **cook/keittää**
@@ -14100,19 +14100,19 @@ reeʹǧǧes+A+Sg+Nom: **rich/rikas**
 * *rẹ^1VOW{ʹØ}gges^Pen^V2VV^Pen^PAL^Pen^PALK*
 * *reeʹǧǧes000000*
 
-### VOWEL and ZERO ALTERNATION
+#### VOWEL and ZERO ALTERNATION
 
 **Realization for â in a** - used in
 * *ǩiõrggân^PenVow2a*
 * *ǩiõrggan0*
 
-### THE NON-ORTHOGRAPHIC SYLLABLE
+#### THE NON-ORTHOGRAPHIC SYLLABLE
 
 **Loss of ʼ when preceded by vowel** - This is a temporary solution to  "ʼ" in võʹllʼjed, it deletes softmark when preceded by vowel
 
 **%{A1%}:ʼ when subseqent syllable has vowel v** - This is a temporary solution to  "ʼ" in võʹllʼjed 2013-08-29
 
-### PALATALIZATION
+#### PALATALIZATION
 
 **{ʹØ}:ʹ as transfer from left of v:u and all instances of modifier letter prime** - used +Ind+Prs+Pl3, uʹvdded+V+Ind+Prs+Pl3: ouʹdde
 
@@ -14270,9 +14270,9 @@ prääʹzniǩ+N+Sg+Ill: **celebration/juhla**
 * *prääʹzniǩ^RmVow^PALNo>a*
 * *prääʹzn0k00>a*
 
-## Consonant QUANTITY CHANGE gradation rules
+### Consonant QUANTITY CHANGE gradation rules
 
-### Weakening Consonant Cluster
+#### Weakening Consonant Cluster
 
 dealing with relative length changes
 mõõnnâd : mõʹnne : mõõn
@@ -14734,7 +14734,7 @@ reäiʹǧǧ+N+Pl+Nom
 * *reäi0gg^PAL^YXX2YX*
 * *reäiʹj000*
 
-## Rules for cleaning up and composing end result
+### Rules for cleaning up and composing end result
 
 * Strengthening Consonant Cluster
 * V shortening and C lengthening
@@ -14802,11 +14802,11 @@ lookkmõš+N+Sg+Gen
 * *čâustõ^1VOW0k{XC}^V2VV^PAL^K2GG^PALK*
 * *čâustõõʹjj0000*
 
-## CONSONANT QUALITY CHANGE
+### CONSONANT QUALITY CHANGE
 
-### Pedagogical X3 length mark after diphthongs in vertical line ˈ
+#### Pedagogical X3 length mark after diphthongs in vertical line ˈ
 
-### Adding X3 length mark
+#### Adding X3 length mark
 **Consonant X3 lengthening after diphthong in vertical line ˈ character** - used in +N+Sg+Ill
 **jeäll:jiâlˈlu,**
 b c č ǯ d đ g ǧ k ǩ l m n p r s š t v also htˈt nˈnj
@@ -14824,7 +14824,7 @@ ciâlkâlm+N+Pl+Gen:
 * *ciâ{ˈ1}lkâlm^Pen^Allegro^RmVow>i*
 * *ciâˈlk0lm000>i*
 
-### Removing X3 length mark
+#### Removing X3 length mark
 **Removing Consonant X3 length mark after diphthong in vertical line ˈ LEFT ARROW** - deriving
 b c č ǯ d đ g ǧ k ǩ l m n p r s š t v also htˈt nˈnj
 ```
@@ -14862,21 +14862,21 @@ sääʹm000-#musikk
 
 ---
 
-# src-fst-morphology-root.lexc.md 
+## src-fst-morphology-root.lexc.md 
 
 
 
-# Skolt Sámi morphological analyser 
+## Skolt Sámi morphological analyser 
 
 This file contains all definitions of symbols written by 
 more than one character, and it contains the initial **Root** lexicon. 
 
-# Definitions for **Multichar_Symbols** 
+## Definitions for **Multichar_Symbols** 
 * **+NoTransl** No translation available 
 
-## Grammatical tags 
+### Grammatical tags 
 
-### Tags for POS 
+#### Tags for POS 
 * **+A** = Adjective 
 * **+Adp** = Adposition, i.e. Post- and Prepostion 
 * **+Adv** = Adverb 
@@ -14899,7 +14899,7 @@ Pre-derivational POS tags for CG processing
 * **+Ex/A** = Adjective stem before derivation 
 * **+Ex/V** = Verb stem before derivation 
 
-### Tags for sub-POS 
+#### Tags for sub-POS 
 
 * **+Prop** - Proper noun 
 * **+Pers** - Personal Pronoun 
@@ -14919,17 +14919,17 @@ Pre-derivational POS tags for CG processing
 * **+Distr** Distributive 
 * **+Temp** 
 
-### Types of adverbs 
+#### Types of adverbs 
 * **+Parenthetic** 
 * **+AssocColl** 
 * **+Guess** 
 
-### Number 
+#### Number 
 * **+Sg** Singular = õõutilååkk 
 * **+Du** Dual = kuõiʹtilååkk 
 * **+Pl** Plural = määŋgailååkk 
 
-### Case 
+#### Case 
 * **+Nom** Nominative = nominativ 
 * **+Gen** Genitive 
 * **+Acc** Accusative 
@@ -14946,7 +14946,7 @@ symbols ?
 * **+Ine** 
 * **+Ela** 
 
-### Possessive suffix 
+#### Possessive suffix 
 * **+PxSg1** 
 * **+PxSg2** 
 * **+PxSg3** 
@@ -14954,13 +14954,13 @@ symbols ?
 * **+PxPl2** 
 * **+PxPl3** 
 
-### Adjective declension 
+#### Adjective declension 
 * **+Der/Comp** comparative as in other Sami languages, depricate +Comp 
 * **+Der/Superl** superlative previously Der/mos Der/umus Der/ummus, depricate +Superl 
 * **+Ord** - 
 * **+GenAttr** Genitive attribute used as adjective? 
 
-### Verb forms      Veʹrbbååʹbleʹǩ 
+#### Verb forms      Veʹrbbååʹbleʹǩ 
 * **+Actor** 
 * **+Actio** 
 * **+ActEss** -men  
@@ -14985,13 +14985,13 @@ symbols ?
 * **+VGen** 
 * **+VAbess** 
 
-###Valence
+####Valence
 * **+IV** Intransitive 
 * **+TV** Transitive 
 * **+Act** Active voice 
 * **+Pass** Passive voice 
 
-### Person-number 
+#### Person-number 
 * **+Sg1** first person singular 
 * **+Sg2** second person singular 
 * **+Sg3** third person singular 
@@ -15005,13 +15005,13 @@ symbols ?
 * **+13** used in combination with +Imp+13+ConNeg 
 * **+2** used in combination with +Imp+2+ConNeg 
 
-### Homonymy 
+#### Homonymy 
 * **+Hom1** 
 * **+Hom2** 
 * **+Hom3** 
 * **+Hom4** 
 
-### Derivation 
+#### Derivation 
 
 All non-positional derivations should be preceded by this tag, to make it possible 
 to target regular expressions at all derivations in a language-independent way: 
@@ -15053,7 +15053,7 @@ Verb derivation
 * **+Der/NomAg** agent V»N 
 * **+Der/NomAct** action V»N +Der/m 
 
-## Tags for originating language 
+### Tags for originating language 
 
 The following tags are used to guide conversion to IPA: loan words 
 and foreign names are usually pronounced (approximately) as in the 
@@ -15082,6 +15082,7 @@ long as the IPA conversion is correct - at least some words will
 get the same pronunciation whether read as SME or NOB/NNO/SWE. 
 
 * **+OLang/SME** - North Sámi 
+* **+OLang/SMJ** - Lule Sámi 
 * **+OLang/SMA** - South Sámi 
 * **+OLang/SMN** - Inari Sámi 
 * **+OLang/SMS** - Skolt Sámi 
@@ -15095,7 +15096,7 @@ get the same pronunciation whether read as SME or NOB/NNO/SWE.
 * **+OLang/UND** - Undefined 
 * +OLang/PARA - parallelle navn, navnet skal ikke overføres til andre samisk språk
 
-### Government tags 
+#### Government tags 
 * **+%<acc%>** 
 * **+%<ess%>** 
 * **+%<gen%>** 
@@ -15103,7 +15104,7 @@ get the same pronunciation whether read as SME or NOB/NNO/SWE.
 * **+%<loc%>** this will be added to the preposition tagging **mâŋŋa jââđast** 
 * **+%<nom%>** 
 
-### Semantic tags 
+#### Semantic tags 
 
 * **+Sem/Act** = Activity 
 * **+Sem/Adr** = Webadr 
@@ -15210,7 +15211,7 @@ get the same pronunciation whether read as SME or NOB/NNO/SWE.
 * **+Sem/Wthr** = The Weather or the state of ground 
 * **+Sem/Year** = Year
 
-### Multiple Semantic tags: 
+#### Multiple Semantic tags: 
 * **+Sem/Act_Fruit** 
 * **+Sem/Act_Group** Activity and Group 
 * **+Sem/Act_Plc**   A persons job is an activity, and a place as well 
@@ -15384,7 +15385,7 @@ get the same pronunciation whether read as SME or NOB/NNO/SWE.
 * **+Sem/Substnc_Wthr** 
 * **+Sem/Time_Wthr** 
 
-### Clitic 
+#### Clitic 
 * **+Clt** 
 * **+Qst** Question particle -a 
 * **+Qst/a** Question particle -a 
@@ -15412,7 +15413,7 @@ get the same pronunciation whether read as SME or NOB/NNO/SWE.
 * **+Foc/tõt** 
 * **+Foc/šât** 
 
-### Tags distinguishing different versions of the same lemma (before POS) 
+#### Tags distinguishing different versions of the same lemma (before POS) 
 In the xml the varid attribute is used in the st element with a mere numeric value 
 an extra lemma attribute is inserted in the st element, e.g. lemma="tõlvvad" 
 * **+v1** 
@@ -15440,7 +15441,7 @@ an extra lemma attribute is inserted in the st element, e.g. lemma="tõlvvad"
 * **+v23** 
 * **+v24** 
 
-### Other tags 
+#### Other tags 
 
 * **+ABBR** = Abbreviation 
 * **+ACR** = Acronym 
@@ -15454,12 +15455,12 @@ an extra lemma attribute is inserted in the st element, e.g. lemma="tõlvvad"
 * **+Dyn** = Dynamically generated (acronyms) 
 * **^GUESSNOUNROOT** 
 
-### Punctuation 
+#### Punctuation 
 * **+HYPH** 
 
-## Letters 
+### Letters 
 
-### Skolt Saami letters 
+#### Skolt Saami letters 
 These definitions are probably not needed 
 * **č** 
 * **đ** 
@@ -15474,7 +15475,7 @@ These definitions are probably not needed
 * **ǯ** 
 * **Ǥ** 
 
-### Archiphonemes 
+#### Archiphonemes 
 
 These are for letters with special behaviour. 
 Say that all m-s change to n in a given context, 
@@ -15482,17 +15483,17 @@ but not this m, because it is m2.
 In twolc these are then defined m2:m, etc, i.e. 
 the m2 is an m, although it is a different m. 
 
-## Diacritic marks 
+### Diacritic marks 
 These symbol govern the way the morphophonological rules treat the affix string. 
 
 This project started out using arbitrary names, X1, X2..., but since they were 
 hard to remember, we changed to (a bit) more transparent names (^DIADEL, ...). 
 On the TODO-list: Change all X1, X2, ... to easy-to-remember names. 
 
-## Consonant lengthening 
+### Consonant lengthening 
 * **%{XC%}** 
 
-## Vowel length and height 
+### Vowel length and height 
 * **%{õuØ%}** 
 * **%{ouØ%}** 
 * **%{âõØ%}** 
@@ -15549,7 +15550,7 @@ CHARACTERISTIC BREAKDOWN 2015-02-17
 * **%{ʼØ%}** used between l, n, j and subsequent j and elsewhere 
 * **%{ˈ1%}** This is modifier letter verticle line after diphthongs 
 
-## Gradation triggers 2015.01.23 
+### Gradation triggers 2015.01.23 
 * **%^XSt2St** Causes weakening from extra strong to strong 
 * **%^XSt2W** Causes weakening from extra strong to weak 
 * **%^St2W** Causes weakening from strong to weak 
@@ -15561,7 +15562,7 @@ Gradation triggers 2015.02.09 For   Consonant Clusters
 * **%^XSt2StCluster** Causes weakening from extra strong to strong in clusters 
 * **%^St2XStCluster** Causes strengthening from strong to extra strong in clusters 
 
-### Diacritic with mnemonic names 
+#### Diacritic with mnemonic names 
 
 <!-- {% raw %} -->
 * **%^1VOW** vowel lengthening dummy 
@@ -15601,7 +15602,7 @@ Hyphen at compound word boundary
 * **%^NoHyphen** - at compound word boundary 
 <!-- {% endraw %} -->
 
-## Escaped symbols 
+### Escaped symbols 
 
 Symbols that need to be escaped on the lower side (towards twolc): 
 * » 
@@ -15649,7 +15650,7 @@ The Usage extents are marked using following tags:
 * **+Use/TTS** – **only** retained in the HFST Text-To-Speech disambiguation tokeniser
 * **+Use/-TTS** – **never** retained in the HFST Text-To-Speech disambiguation tokeniser
 
-### Dialect tags: 
+#### Dialect tags: 
 
 * **+Dial/P** Paatsjoki (KKS) 
 * **+Dial/Pets** Petsamo 
@@ -15688,7 +15689,7 @@ Compounding
 * **+Use/PMatch** - 
 * **+Use/-PMatch** - 
 
-## Flag diacritics 
+### Flag diacritics 
 
 | Flag | Explanation 
 | --- | ---
@@ -15766,7 +15767,7 @@ given the proper use of these flags.
 | @P.number.ten@ | Flag used to give arabic numerals in smj different cases ;
 | @P.number.zero@ | Flag used to give arabic numerals in smj different cases ;
 
-# Basic lexica, pointing to the other lexicon files 
+## Basic lexica, pointing to the other lexicon files 
 
 * **LEXICON Root** 
 * **Abbreviation ;** abbreviations 
@@ -15900,12 +15901,12 @@ SUF/A_
 
 ---
 
-# src-fst-morphology-stems-abbreviations.lexc.md 
+## src-fst-morphology-stems-abbreviations.lexc.md 
 
 
-# File containing abbreviations 
+## File containing abbreviations 
 
-## Lexica for adding tags and periods
+### Lexica for adding tags and periods
 
 Splitting in 4 + 1  groups, because of the preprocessor
 
@@ -15915,16 +15916,16 @@ Splitting in 4 + 1  groups, because of the preprocessor
 1. The TRAB ;	    lexicon (transitive abbrs) tri. 
 1. The SYMBOLS ;   lexicon (misc. symbols)
 
-## The sublexica
+### The sublexica
 
-### Dividing between abbreviations with and witout final period
+#### Dividing between abbreviations with and witout final period
 
 ABBREVIATIONS 
 these still need development 2015-09-11
 
 * **LEXICON ab-noun   **
 
-### The lexicons that add tags
+#### The lexicons that add tags
 
 * **LEXICON ab-nodot-noun   **  The bulk
 
@@ -15938,7 +15939,7 @@ these still need development 2015-09-11
 
 * **LEXICON SYMBOLsuff   **
 
-## The abbreviation lexicon itself
+### The abbreviation lexicon itself
 
 * **LEXICON SYMBOLS   ** is for iscellaneous abbr symbols
 
@@ -15980,7 +15981,7 @@ the sentnece can be considered as true cases.
 
 ---
 
-# src-fst-morphology-stems-adjectives_newwords.lexc.md 
+## src-fst-morphology-stems-adjectives_newwords.lexc.md 
 
 This is where new words are added as lexc entries before they are 
 added to the xml source files.
@@ -15998,7 +15999,7 @@ Not added yet to wiki
 
 ---
 
-# src-fst-morphology-stems-adpositions_newwords.lexc.md 
+## src-fst-morphology-stems-adpositions_newwords.lexc.md 
 
 This is where new words are added as lexc entries before they are 
 added to the xml source files.
@@ -16018,7 +16019,7 @@ PREPOSITIONS
 
 ---
 
-# src-fst-morphology-stems-adverbs_newwords.lexc.md 
+## src-fst-morphology-stems-adverbs_newwords.lexc.md 
 
 This is where new words are added as lexc entries before they are 
 added to the xml source files.
@@ -16036,7 +16037,7 @@ perintökieli
 
 ---
 
-# src-fst-morphology-stems-conjunctions_newwords.lexc.md 
+## src-fst-morphology-stems-conjunctions_newwords.lexc.md 
 
 This is where new words are added as lexc entries before they are 
 added to the xml source files.
@@ -16050,7 +16051,7 @@ ADD PROPER ADVERBS BELOW
 
 ---
 
-# src-fst-morphology-stems-exceptions.lexc.md 
+## src-fst-morphology-stems-exceptions.lexc.md 
 
 Exceptions are quite strange word-forms. the ones that do not fit anywhere 
 else. This file contains all enumerated word forms that cannot reasonably be
@@ -16082,42 +16083,42 @@ Foreign words
 
 FROM FORMER .lexc CONTENT
 
-# Skolt Saami adjectives
+## Skolt Saami adjectives
 
 OUR LONG-TERM GOAL IS NOT TO ADD STEMS MANUALLY TO THIS FILE
 Instead we want to update the dictionary sms2X/src/a_sms2X.xml, 
 from where the present lexc files will be regularly updated by 
 exporting (we need a script for this).
 
-# Skolt Saami adpositions
+## Skolt Saami adpositions
 
-# Skolt Saami adverbs
+## Skolt Saami adverbs
 
-# Skolt Saami Conjunctions 
+## Skolt Saami Conjunctions 
 
 The lexicon *Conjunction* lists the conjunction
 
-# Skolt Saami Interjections 
+## Skolt Saami Interjections 
 
 The lexicon *ij* gives the tag **+Interj**
 
 The lexicon *Interjection* lists the interjections
 * ai ij ;            
 
-# Skolt Saami Particles
+## Skolt Saami Particles
 
-## List of particles in the lexicon Particle
+### List of particles in the lexicon Particle
 
 ges+Pcle:ges PCLE_ ; 
 
-# Propernoun lexicon, Skolt Sámi specific names 
+## Propernoun lexicon, Skolt Sámi specific names 
 
-# Subjunctions
+## Subjunctions
 
 The lexicon *Subjunction* lists the subjunctions
 * So far it contains only go+CS:go CS_ ;  
 
-# Verb roots
+## Verb roots
 
 Here are the verb types so far:
 
@@ -16138,11 +16139,11 @@ Here are the verb types so far:
 *   4 VOOIDAD
 *   1 VUEJTED
 
-# TEST WORDS BEYOND THIS POINT
+## TEST WORDS BEYOND THIS POINT
 DO NOT ADD TRANSLATIONS
 DO NOT ADD NOTES
 
-# Skolt Saami Numerals
+## Skolt Saami Numerals
 
 Lexicon *Subjunction* contains *okta* only.
 CODED BY JACK
@@ -16157,7 +16158,7 @@ From excel 2024-11-03
 
 ---
 
-# src-fst-morphology-stems-nouns_newwords.lexc.md 
+## src-fst-morphology-stems-nouns_newwords.lexc.md 
 
 This is where new words are added as lexc entries before they are 
 added to the xml source files.
@@ -16177,10 +16178,10 @@ Contlex value missing
 
 ---
 
-# src-fst-morphology-stems-numerals.lexc.md 
+## src-fst-morphology-stems-numerals.lexc.md 
 
 
-# Skolt Saami Numerals
+## Skolt Saami Numerals
 
 * **LEXICON Numeral   **  initial lexica
 
@@ -16190,7 +16191,7 @@ Contlex value missing
 
 ---
 
-# src-fst-morphology-stems-particles_newwords.lexc.md 
+## src-fst-morphology-stems-particles_newwords.lexc.md 
 
 This is where new words are added as lexc entries before they are 
 added to the xml source files.
@@ -16209,7 +16210,7 @@ These have been commented out 2015-11-13
 
 ---
 
-# src-fst-morphology-stems-pronouns_newwords.lexc.md 
+## src-fst-morphology-stems-pronouns_newwords.lexc.md 
 
 This is where new words are added as lexc entries before they are 
 added to the xml source files.
@@ -16225,7 +16226,7 @@ CODED BY EINO AND JASKA
 
 ---
 
-# src-fst-morphology-stems-propernouns_newwords.lexc.md 
+## src-fst-morphology-stems-propernouns_newwords.lexc.md 
 
 This is where new words are added as lexc entries before they are 
 added to the xml source files.
@@ -16250,21 +16251,21 @@ Perintökieli
 
 ---
 
-# src-fst-morphology-stems-sms-propernouns.lexc.md 
+## src-fst-morphology-stems-sms-propernouns.lexc.md 
 
 
 
-# Propernoun lexicon, Skolt Sámi specific names 
+## Propernoun lexicon, Skolt Sámi specific names 
 
 The lexicon *ProperNoun* lists the proper nouns
 
-## First part of complex names
+### First part of complex names
 
-## Ordinary person names
+### Ordinary person names
 
-## Ordinary place names
+### Ordinary place names
 
-## Ordinary misc names
+### Ordinary misc names
 
 * * *
 
@@ -16272,7 +16273,7 @@ The lexicon *ProperNoun* lists the proper nouns
 
 ---
 
-# src-fst-morphology-stems-toponyms_newwords.lexc.md 
+## src-fst-morphology-stems-toponyms_newwords.lexc.md 
 
 This is where new words are added as lexc entries before they are
 added to the xml source files.
@@ -16291,7 +16292,7 @@ Toponyms
 
 ---
 
-# src-fst-morphology-stems-verbs_newwords.lexc.md 
+## src-fst-morphology-stems-verbs_newwords.lexc.md 
 
 This is where new words are added as lexc entries before they are 
 added to the xml source files.
@@ -16310,7 +16311,7 @@ ADD VERBS BELOW
 
 ---
 
-# src-fst-phonetics-txt2ipa.xfscript.md 
+## src-fst-phonetics-txt2ipa.xfscript.md 
 
 
 
@@ -16477,7 +16478,7 @@ retracted tongue root			_q
 
 ---
 
-# src-fst-syllabification-hyphenation.xfscript.md 
+## src-fst-syllabification-hyphenation.xfscript.md 
 
 
 
@@ -16491,7 +16492,7 @@ Copy from smn ends here
 
 ---
 
-# src-fst-transcriptions-transcriptor-abbrevs2text.lexc.md 
+## src-fst-transcriptions-transcriptor-abbrevs2text.lexc.md 
 
 
 
@@ -16513,7 +16514,7 @@ For example:
 
 ---
 
-# src-fst-transcriptions-transcriptor-clock-digit2text.lexc.md 
+## src-fst-transcriptions-transcriptor-clock-digit2text.lexc.md 
 
 
 This is still a dummy version, containing Skolt Saami.
@@ -16526,7 +16527,7 @@ This is still a dummy version, containing Skolt Saami.
 
 ---
 
-# src-fst-transcriptions-transcriptor-date-digit2text.lexc.md 
+## src-fst-transcriptions-transcriptor-date-digit2text.lexc.md 
 
 
 The Skolt Sámi dates !
@@ -16540,11 +16541,11 @@ This is still a dummy version, containing South Saami.
 
 ---
 
-# src-fst-transcriptions-transcriptor-numbers-digit2text.lexc.md 
+## src-fst-transcriptions-transcriptor-numbers-digit2text.lexc.md 
 
 
 
-# Skolt Saami number <-> letter transducer
+## Skolt Saami number <-> letter transducer
 
 * * *
 
@@ -16552,26 +16553,26 @@ This is still a dummy version, containing South Saami.
 
 ---
 
-# tools-grammarcheckers-grammarchecker.cg3.md 
+## tools-grammarcheckers-grammarchecker.cg3.md 
 
 
 S K O L T   S A A M I   G R A M M A R   C H E C K E R
 
-# DELIMITERS
+## DELIMITERS
 
-# TAGS AND SETS
+## TAGS AND SETS
 
-## Tags
+### Tags
 
 This section lists all the tags inherited from the fst, and used as tags
 in the syntactic analysis. The next section, **Sets**, contains sets defined
 on the basis of the tags listed here, those set names are not visible in the output.
 
-### Beginning and end of sentence
+#### Beginning and end of sentence
 BOS
 EOS
 
-### Parts of speech tags
+#### Parts of speech tags
 
 N
 A
@@ -16598,7 +16599,7 @@ PUNCT
 COMMA
 ¶
 
-### Tags for POS sub-categories
+#### Tags for POS sub-categories
 
 Pers
 Dem
@@ -16614,7 +16615,7 @@ Allegro
 Arab
 Romertall
 
-### Tags for morphosyntactic properties
+#### Tags for morphosyntactic properties
 
 Nom
 Acc
@@ -16677,7 +16678,7 @@ VAbess
 
 Err/Orth
 
-### Semantic tags
+#### Semantic tags
 
 Sem/Act
 Sem/Ani
@@ -16710,7 +16711,7 @@ PROP-SUR
 
 TIME-N-SET
 
-###  Syntactic tags
+####  Syntactic tags
 
 @+FAUXV
 @+FMAINV
@@ -16780,22 +16781,22 @@ OBJ>-OTHERS
 SYN-V
 @X
 
-## Sets containing sets of lists and tags
+### Sets containing sets of lists and tags
 
 This part of the file lists a large number of sets based partly upon the tags defined above, and
 partly upon lexemes drawn from the lexicon.
 See the sourcefile itself to inspect the sets, what follows here is an overview of the set types.
 
-### Sets for Single-word sets
+#### Sets for Single-word sets
 
 INITIAL
 
-### Sets for word or not
+#### Sets for word or not
 
 WORD
 NOT-COMMA
 
-### Case sets
+#### Case sets
 
 ADLVCASE
 
@@ -16806,11 +16807,11 @@ NOT-NOM
 NOT-GEN
 NOT-ACC
 
-### Verb sets
+#### Verb sets
 
 NOT-V
 
-### Sets for finiteness and mood
+#### Sets for finiteness and mood
 
 REAL-NEG
 
@@ -16818,7 +16819,7 @@ MOOD-V
 
 NOT-PRFPRC
 
-### Sets for person
+#### Sets for person
 
 SG1-V
 SG2-V
@@ -16830,25 +16831,25 @@ PL1-V
 PL2-V
 PL3-V
 
-### Pronoun sets
+#### Pronoun sets
 
-### Adjectival sets and their complements
+#### Adjectival sets and their complements
 
-### Adverbial sets and their complements
+#### Adverbial sets and their complements
 
-### Sets of elements with common syntactic behaviour
+#### Sets of elements with common syntactic behaviour
 
-### NP sets defined according to their morphosyntactic features
+#### NP sets defined according to their morphosyntactic features
 
-### The PRE-NP-HEAD family of sets
+#### The PRE-NP-HEAD family of sets
 
 These sets model noun phrases (NPs). The idea is to first define whatever can
 occur in front of the head of the NP, and thereafter negate that with the
 expression **WORD - premodifiers**.
 
-### Border sets and their complements
+#### Border sets and their complements
 
-### Grammarchecker sets
+#### Grammarchecker sets
 
 * * *
 
@@ -16856,9 +16857,9 @@ expression **WORD - premodifiers**.
 
 ---
 
-# tools-tokenisers-tokeniser-disamb-gt-desc.pmscript.md 
+## tools-tokenisers-tokeniser-disamb-gt-desc.pmscript.md 
 
-# Tokeniser for sms
+## Tokeniser for sms
 
 Usage:
 ```
@@ -16903,7 +16904,7 @@ ASCII digits
 so far:
 * U+F0B7 for "x in box"
 
-## Unknown handling
+### Unknown handling
 Unknowns are tagged ?? and treated specially with `hfst-tokenise`
 hfst-tokenise --giella-cg will treat such empty analyses as unknowns, and
 remove empty analyses from other readings. Empty readings are also
@@ -16922,9 +16923,9 @@ Finally we mark as a token any sequence making up a:
 
 ---
 
-# tools-tokenisers-tokeniser-gramcheck-gt-desc.pmscript.md 
+## tools-tokenisers-tokeniser-gramcheck-gt-desc.pmscript.md 
 
-# Grammar checker tokenisation for sms
+## Grammar checker tokenisation for sms
 
 Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
 Then just:
@@ -16987,9 +16988,9 @@ Finally we mark as a token any sequence making up a:
 
 ---
 
-# tools-tokenisers-tokeniser-tts-cggt-desc.pmscript.md 
+## tools-tokenisers-tokeniser-tts-cggt-desc.pmscript.md 
 
-# TTS tokenisation for smj
+## TTS tokenisation for smj
 
 Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
 Then just:
