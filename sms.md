@@ -2638,6 +2638,7 @@ e.g.
 e.g. +Use/NG+Sg+Loc+PxSg3
 e.g. +Sg+Loc+PxSg3 pp:p papstes
 
+* LEXICON N_1Y_VYKK_errorth 
 * LEXICON N_1Y_VYKK  algg:a%^1VOW%{ʹØ%}lgg
 * Yaml: **N-algg**
 
@@ -14855,6 +14856,8 @@ tuâjj+N+Cmp/SgNom+Cmp#joukk+N+Sg+Nom:  **team/työryhmä**
 sääʹmm+N+Cmp/SgGen+Cmp#musikk+N+Sg+Nom: **Skolt Sámi music/kolttamusiikki**
 sää0mm^PAL^CC2C{-Ø}#musikk
 sääʹm000-#musikk
+
+**Disallow UltRmVow after anything but Vows:0** - 
 
 * * *
 

@@ -1887,6 +1887,8 @@ sääʹmm+N+Cmp/SgGen+Cmp#musikk+N+Sg+Nom: **Skolt Sámi music/kolttamusiikki**
 sää0mm^PAL^CC2C{-Ø}#musikk
 sääʹm000-#musikk
 
+**Disallow UltRmVow after anything but Vows:0** - 
+
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/morphology/phonology.twolc](https://github.com/giellalt/lang-sms/blob/main/src/fst/morphology/phonology.twolc)</small>

@@ -153,6 +153,7 @@ e.g.
 e.g. +Use/NG+Sg+Loc+PxSg3
 e.g. +Sg+Loc+PxSg3 pp:p papstes
 
+* LEXICON N_1Y_VYKK_errorth 
 * LEXICON N_1Y_VYKK  algg:a%^1VOW%{ʹØ%}lgg
 * Yaml: **N-algg**
 
