@@ -15770,10 +15770,9 @@ given the proper use of these flags.
 |  **@D.ErrOrth.ON@** | tbw
 |  **@P.ErrOrth.ON@** | tbw
 |  **@P.Pmatch.Backtrack@** | tbw
-
-* **@U.NUMORTH.YES@**
-* **@N.NUMORTH.YES@**
-* **@D.NUMORTH.YES@**
+| **@U.NUMORTH.YES@** |
+| **@N.NUMORTH.YES@** |
+| **@D.NUMORTH.YES@** |
 
 | Flag diacritic | Explanation
 | :------------- |:-----------
@@ -15787,7 +15786,6 @@ given the proper use of these flags.
 | @U.number.eight@ | Flag used to give arabic numerals in smj different cases ;
 | @U.number.nine@ | Flag used to give arabic numerals in smj different cases ;
 | @U.number.zero@ | Flag used to give arabic numerals in smj different cases ;
-
 | @P.number.one@ | Flag used to give arabic numerals in smj different cases ;
 | @P.number.two@ | Flag used to give arabic numerals in smj different cases ;
 | @P.number.three@ | Flag used to give arabic numerals in smj different cases ;
@@ -15805,9 +15803,7 @@ given the proper use of these flags.
 * **LEXICON Root** 
 * **Abbreviation ;** abbreviations 
 * **Adposition ;** 
-* **@U.Cap.Obl@ ProperNoun ;** 
-* **@U.Cap.Opt@ ProperNoun ;** 
-
+* **ProperNoun** 
 * **Subjunction ;** 
 * **Conjunction ;** 
 * **Interjection ;** 
@@ -15815,6 +15811,7 @@ given the proper use of these flags.
 * **Punctuation ;** 
 * **Symbols ;** 
 * **Particle ;** 
+
 This generates from merged materials 
 * **A_sms2x ;** This generates from merged materials 
 * **TRAB_sms2x ;** transitive abbreviations 
@@ -15825,20 +15822,18 @@ This generates from merged materials
 * **CS_sms2x ;** subjunctions 
 * **Det_sms2x ;** determiners 
 * **Interj_sms2x ;** This generates from merged materials 
-* **@P.AssocColl.ON@ N_Kin_sms2x ;** This generates from merged materials 
+* **N_Kin_sms2x** This generates from merged materials 
 * **N_sms2x ;** This generates from merged materials 
-* **+Cmp/SplitL+Use/SpellNoSugg#:%-# N_sms2x ;** This allows split compound nouns 
-* **@P.AssocColl.ON@ N_Prop_sms2x ;** This generates from merged materials 
-* **@U.Cap.Obl@ N_Prop_Toponyms_sms2x ;** Toponymy 
-* **@U.Cap.Opt@ N_Prop_Toponyms_sms2x ;** Toponymy 
+* **N_sms2x** This allows split compound nouns 
+* **N_Prop_sms2x** This generates from merged materials 
+* **N_Prop_Toponyms_sms2x** Toponymy 
 * **Num_sms2x ;** This generates from merged materials 
 * **Pcle_sms2x ;** This generates from merged materials 
 * **Prefix_sms2x ;** This generates from merged materials 
 * **Pron_sms2x ;** This generates from merged materials 
 * **V_sms2x ;** This generates from merged materials 
-
 * **Numeral ;** This feeds Arabi numerals, borrowed from sme 
-
+* **EXCEPTIONS ;** 
 * **A_NEWWORDS ;** These are new adjectives beginning 2015-02-11 
 * **ADP_NEWWORDS ;** These are new adpositions 
 * **ADV_NEWWORDS ;** These are new adverbs 
@@ -15846,14 +15841,14 @@ This generates from merged materials
 * **N_NEWWORDS ;** These are new nouns beginning 2015-01-10 
 * **PCLE_NEWWORDS ;** These are particles 
 * **PRON_NEWWORDS ;** These are pronouns 
-* **@U.Cap.Obl@ PROP_NEWWORDS ;** These are new proper nouns beginning 2015-03-04 
-* **@U.Cap.Opt@ PROP_NEWWORDS ;** These are new proper nouns beginning 2015-03-04 
-* **@U.Cap.Obl@ TOPONYMS_NEWWORDS ;** 2016-02-06 
-* **@U.Cap.Opt@ TOPONYMS_NEWWORDS ;** 2016-02-06 
+* **PROP_NEWWORDS** These are new proper nouns beginning 2015-03-04 
+* **TOPONYMS_NEWWORDS** 2016-02-06 
 * **V_NEWWORDS ;** These are new verbs 
 * **ProperNoun-smi ;** work with smi 2018-08-23 
 
 INCOMING _lemma:stem Contlex_ sets to be distinguished from glossing in progress 
+
+----- 
 
 NounRoot 
 
