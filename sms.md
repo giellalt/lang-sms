@@ -15520,6 +15520,36 @@ for vowel height, by default vowels are low.
 * **%{âõe%}** 
 * **%{âõäe%}** 
 
+### In Skolt Saami, triggers are used for signaling change in the preceding stem 2025.09.16
+Two or more alternations may occur in the stem simultaneously,
+they should be addressed separately -- not as portmanteau features of length as in sme.
+Two codas may be simultaneous loci of alternation,
+so we need to remember where the triggers point to, and we need to know
+what order they are in.
+Here is what may happen in the final coda of a stem when it is the sole locus of alternation:
+**jiẹˈʹnstem**: jeäʹnˈn+N+Sg+Loc+PxSg1
+‹iẹ› diphthong alternation: vowel raising, vowel tinting
+‹ˈ› allegro marking following the diphthong
+‹ʹ› palatal suprasegment marking
+‹n› allegro marking of what was a long consonant, but which has been
+reduced to single allegro consonant before a consonant cluster
+that is secondarily following the extra short coda vowel
+The ordering of phenomena is
+(so we should work towards this in trigger ordering) 2025-09-16 needs adjustment
+1: Vowel height
+2: Vowel length, which here is Allegro vowel
+3: Palatal marker (soft sign)
+4: Consonant length, quality (still portmanteau)
+5: Palatal marking in alternations {kǩ}, {gǧ}, {ǥj}
+Other words to consider
+**jiẹˈʹrjsted**: jeäʹrǧǧ+N+Sg+Loc+PxSg2
+**jieˈʹrjsted**: jiârgg+N+Sg+Loc+PxSg2
+
+Words with two codas undergoing variation simultaneously will
+feature additional trigger work where the triggers are each
+preceded by a %^PEN trigger, which indicates penultimate.
+Orderwise, penultimate triggers appear closer to the stem (see Rueter forthcomingXXX)
+
 CHARACTERISTIC BREAKDOWN 2015-02-17 
 * __%^Allegro__ - Allegro in general shortens consonant and preceding vowel
 * **%^VV2V** Shortens vowel 
