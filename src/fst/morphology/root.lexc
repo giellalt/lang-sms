@@ -962,12 +962,11 @@ Multichar_Symbols  !!≈ # Definitions for **@CODE@**
  @D.ErrOrth.ON@     !!≈ |  **@CODE@** | tbw
  @P.ErrOrth.ON@     !!≈ |  **@CODE@** | tbw
  @P.Pmatch.Backtrack@ !!≈ |  **@CODE@** | tbw
- 
- @U.NUMORTH.YES@ !!≈ * **@CODE@**
- @N.NUMORTH.YES@ !!≈ * **@CODE@**
- @D.NUMORTH.YES@ !!≈ * **@CODE@**
- 
- 
+ @U.NUMORTH.YES@ !!≈ | **@CODE@** |
+ @N.NUMORTH.YES@ !!≈ | **@CODE@** |
+ @D.NUMORTH.YES@ !!≈ | **@CODE@** |
+
+
 !! | Flag diacritic | Explanation
 !! | :------------- |:-----------
 @U.number.one@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
@@ -980,7 +979,6 @@ Multichar_Symbols  !!≈ # Definitions for **@CODE@**
 @U.number.eight@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
 @U.number.nine@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
 @U.number.zero@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
-
 @P.number.one@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
 @P.number.two@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
 @P.number.three@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
@@ -999,9 +997,8 @@ Multichar_Symbols  !!≈ # Definitions for **@CODE@**
 LEXICON Root      !!≈ * **@CODE@** 
     Abbreviation          ; !!≈ * **@CODE@** abbreviations 
     Adposition            ; !!≈ * **@CODE@** 
-@U.Cap.Obl@    ProperNoun            ; !!≈ * **@CODE@** 
-@U.Cap.Opt@    ProperNoun            ; !!≈ * **@CODE@** 
- 
+@U.Cap.Obl@    ProperNoun            ; !!≈ * **@CONTLEX@** 
+@U.Cap.Opt@    ProperNoun            ; ! ≈ * **@CONTLEX@** 
 !    VerbRoot              ; 
 !    Adverb                ; 
     Subjunction           ; !!≈ * **@CODE@** 
@@ -1011,6 +1008,7 @@ LEXICON Root      !!≈ * **@CODE@**
     Punctuation           ; !!≈ * **@CODE@** 
     Symbols               ; !!≈ * **@CODE@** 
     Particle              ; !!≈ * **@CODE@** 
+
 !! This generates from merged materials 
          A_sms2x               ; !!≈ * **@CODE@** This generates from merged materials 
          TRAB_sms2x            ; !!≈ * **@CODE@** transitive abbreviations 
@@ -1023,23 +1021,19 @@ LEXICON Root      !!≈ * **@CODE@**
     CS_sms2x              ; !!≈ * **@CODE@** subjunctions 
     Det_sms2x             ; !!≈ * **@CODE@** determiners 
     Interj_sms2x          ; !!≈ * **@CODE@** This generates from merged materials 
-@P.AssocColl.ON@    N_Kin_sms2x               ; !!≈ * **@CODE@** This generates from merged materials 
+@P.AssocColl.ON@    N_Kin_sms2x               ; !!≈ * **@CONTLEX@** This generates from merged materials 
     N_sms2x               ; !!≈ * **@CODE@** This generates from merged materials 
-  +Cmp/SplitL+Use/SpellNoSugg#:%-# N_sms2x               ; !!≈ * **@CODE@** This allows split compound nouns 
-@P.AssocColl.ON@    N_Prop_sms2x          ; !!≈ * **@CODE@** This generates from merged materials 
-@U.Cap.Obl@    N_Prop_Toponyms_sms2x ; !!≈ * **@CODE@** Toponymy 
-@U.Cap.Opt@    N_Prop_Toponyms_sms2x ; !!≈ * **@CODE@** Toponymy 
+  +Cmp/SplitL+Use/SpellNoSugg#:%-# N_sms2x               ; !!≈ * **@CONTLEX@** This allows split compound nouns 
+@P.AssocColl.ON@    N_Prop_sms2x          ; !!≈ * **@CONTLEX@** This generates from merged materials 
+@U.Cap.Obl@    N_Prop_Toponyms_sms2x ; !!≈ * **@CONTLEX@** Toponymy 
+@U.Cap.Opt@    N_Prop_Toponyms_sms2x ; ! ≈ * **@CONTLEX@** Toponymy 
     Num_sms2x             ; !!≈ * **@CODE@** This generates from merged materials 
     Pcle_sms2x            ; !!≈ * **@CODE@** This generates from merged materials 
     Prefix_sms2x          ; !!≈ * **@CODE@** This generates from merged materials 
     Pron_sms2x            ; !!≈ * **@CODE@** This generates from merged materials 
     V_sms2x               ; !!≈ * **@CODE@** This generates from merged materials 
- 
          Numeral               ; !!≈ * **@CODE@** This feeds Arabi numerals, borrowed from sme 
- 
- 
-    EXCEPTIONS            ; 
- 
+    EXCEPTIONS            ; !!≈ * **@CODE@** 
     A_NEWWORDS            ; !!≈ * **@CODE@** These are new adjectives beginning 2015-02-11 
     ADP_NEWWORDS          ; !!≈ * **@CODE@** These are new adpositions 
     ADV_NEWWORDS          ; !!≈ * **@CODE@** These are new adverbs 
@@ -1047,10 +1041,10 @@ LEXICON Root      !!≈ * **@CODE@**
     N_NEWWORDS            ; !!≈ * **@CODE@** These are new nouns beginning 2015-01-10 
     PCLE_NEWWORDS         ; !!≈ * **@CODE@** These are particles 
     PRON_NEWWORDS         ; !!≈ * **@CODE@** These are pronouns 
-@U.Cap.Obl@    PROP_NEWWORDS         ; !!≈ * **@CODE@** These are new proper nouns beginning 2015-03-04 
-@U.Cap.Opt@    PROP_NEWWORDS         ; !!≈ * **@CODE@** These are new proper nouns beginning 2015-03-04 
-@U.Cap.Obl@    TOPONYMS_NEWWORDS     ; !!≈ * **@CODE@** 2016-02-06 
-@U.Cap.Opt@    TOPONYMS_NEWWORDS     ; !!≈ * **@CODE@** 2016-02-06 
+@U.Cap.Obl@    PROP_NEWWORDS         ; !!≈ * **@CONTLEX@** These are new proper nouns beginning 2015-03-04 
+@U.Cap.Opt@    PROP_NEWWORDS         ; ! ≈ * **@CONTLEX@** These are new proper nouns beginning 2015-03-04 
+@U.Cap.Obl@    TOPONYMS_NEWWORDS     ; !!≈ * **@CONTLEX@** 2016-02-06 
+@U.Cap.Opt@    TOPONYMS_NEWWORDS     ; ! ≈ * **@CONTLEX@** 2016-02-06 
     V_NEWWORDS            ; !!≈ * **@CODE@** These are new verbs 
  ProperNoun-smi ; !!≈ * **@CODE@** work with smi 2018-08-23 
 ! ProperNoun-smi-nocomp ; !!≈ * __@CODE@__ work with smi 2018-08-23 
@@ -1059,7 +1053,7 @@ LEXICON Root      !!≈ * **@CODE@**
 !                                 AdjectiveRoot         ; 
 !                                 N-INCOMING            ; 
  
-!  ----- 
+!!  ----- 
  
 LEXICON NounRoot 
 !! @LEXNAME@ 
