@@ -119,7 +119,7 @@ symbols ?
 * **+VGen** 
 * **+VAbess** 
 
-###Valence
+### Valence
 * **+IV** Intransitive 
 * **+TV** Transitive 
 * **+Act** Active voice 
@@ -228,7 +228,7 @@ get the same pronunciation whether read as SME or NOB/NNO/SWE.
 * **+OLang/NNO** - Norw. nynorsk 
 * **+OLang/ENG** - English 
 * **+OLang/UND** - Undefined 
-* +OLang/PARA - parallelle navn, navnet skal ikke overføres til andre samisk språk
+* **+OLang/PARA** - parallelle navn, navnet skal ikke overføres til andre samisk språk
 
 ### Government tags 
 * **+%<acc%>** 
@@ -943,7 +943,7 @@ given the proper use of these flags.
 * **Symbols ;** 
 * **Particle ;** 
 
-This generates from merged materials 
+These generate from merged materials:
 * **A_sms2x ;** This generates from merged materials 
 * **TRAB_sms2x ;** transitive abbreviations 
 * **TRNUMAB_sms2x ;** transitive abbreviations with numerals 
