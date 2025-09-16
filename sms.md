@@ -15726,9 +15726,9 @@ Compounding
 
 | Flag | Explanation 
 | --- | ---
-* **@P.AssocColl.ON@** Used with Kin terms and Ant 
-* **@R.AssocColl.ON@** 
-* **@C.AssocColl@** 
+| **@P.AssocColl.ON@** | Used with Kin terms and Ant 
+| **@R.AssocColl.ON@** |
+| **@C.AssocColl@** |
 
 We have manually optimised the structure of our lexicon using following 
 flag diacritics to restrict morhpological combinatorics - only allow compounds 
