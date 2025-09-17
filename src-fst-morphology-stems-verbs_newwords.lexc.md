@@ -6,7 +6,6 @@ The conversion is done as follows:
 3. Add the output to V_sms2x.xml
 
 Lexicon V_NEWWORDS is for ad-hoc adding of new entries
-- * test:test N_MUORR "for testing" ;  = dummy entry
 ADD VERBS BELOW
 
 * * *

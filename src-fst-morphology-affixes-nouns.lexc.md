@@ -3365,6 +3365,10 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^VV2V%^PAL E-STEM-PX-ALLEGRO ;  (11) uʹčteʹl-
 * :%^VV2V%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) nuʹbb Ess+Px..
 
+* :%^PAL PL-NOM ;	 (2) uʹčteeʹl
+* :%^PAL E-STEM_PL-OBL ;	 (5) uʹčteeʹlin
+* :%^PAL%>e ESS/PAR ; 		 (6) uʹčteeʹlen
+
 * LEXICON N_1E_VVQC  rååʹz:råå%{ʹØ%}z
 N_E_VVQC
 cf N_E_EEQC
