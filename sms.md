@@ -7664,7 +7664,7 @@ Extra strong grade: Pl.Nom, Sg.Loc, Sg.Com
 ### (1) Sg.Nom: muuʒ
 ### (2) Pl.Nom: muvʒʒi
 ### (3) Sg.Ill: muvʒʒǥa
-### (4) Sg.Loc: muvʒʒest
+### (4) Sg.Loc: muvʒʒjest
 ### (5) Sg.Com: muvʒʒin
 ### (6) Ess: muvʒʒen
 ### (7) Par: muvʒʒed
