@@ -22,7 +22,7 @@ The lexicon *V0_LEEQD* for the copula
 ## REGULAR VERBS
 ### CLASS 1 HIGH VOWEL, NO PALATALIZATION
 
-* LEXICON V_1Y_VVCC  põõllâd:põõll
+* LEXICON V_1Â_VVCC  põõllâd:põõll
 * LEXICON V_POOLLYD  põõllâd:põõll
 * LEXICON IV_POOLLYD  põõllâd:põõll
 * LEXICON TV_POOLLYD  põõllâd:põõll
@@ -93,9 +93,9 @@ The lexicon *V0_LEEQD* for the copula
 * +Imprt+ConNegII:%^VV2V%>u K ;  laukkõllu
 * +Imprt+Pl3:%^VV2V%^VOWLower%>az K ;  laukkâllaz
 
-* LEXICON V_1Y_VVKK  viikkâd:viikk
-* LEXICON IV_1Y_VVKK  viikkâd:viikk
-* LEXICON TV_1Y_VVKK  viikkâd:viikk
+* LEXICON V_1Â_VVKK  viikkâd:viikk
+* LEXICON IV_1Â_VVKK  viikkâd:viikk
+* LEXICON TV_1Â_VVKK  viikkâd:viikk
 * : VSUF-INF_YD ;  (1)  Inf: viikkâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
@@ -146,8 +146,8 @@ Imprt+Pl3
 * *põõss%^VV2V%^KK2GAllegro»%{ʼØ%}škuätt*
 * *põ0z000»0škuätt*
 
-* LEXICON V_1Y_VVSS  koossâd:kooss
-* LEXICON IV_1Y_VVSS  koossâd:kooss
+* LEXICON V_1Â_VVSS  koossâd:kooss
+* LEXICON IV_1Â_VVSS  koossâd:kooss
 * : VSUF-INF_YD ;  (1)  Inf: viikkâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
@@ -278,8 +278,8 @@ Imprt+ConNegII, Pass+PrfPrc
 * +Imprt+Pl3:%^VV2V%^VOWLower%>az K ;  (9) Ind.Imprt.Pl3: piâkklâččaz
 Imprt+Pl3
 
-* LEXICON V_1Y_VKK  naggâd:naõ%^1VOW%{ʹØ%}gg
-* LEXICON IV_1Y_VKK  naggâd:naõ%^1VOW%{ʹØ%}gg
+* LEXICON V_1Â_VKK  naggâd:naõ%^1VOW%{ʹØ%}gg
+* LEXICON IV_1Â_VKK  naggâd:naõ%^1VOW%{ʹØ%}gg
 
 * LEXICON V_ROVVYD  rõvvâd:rõ%^1VOW%{ʹØ%}vv
 * LEXICON IV_ROVVYD  rõvvâd:rõ%^1VOW%{ʹØ%}vv
@@ -287,8 +287,8 @@ Imprt+Pl3
 
 piâkkâd:piâ%{ʹØ%}kˈk
 
-* LEXICON V_1Y_IY/ECCC  riâddâd:riâdˈd
-* LEXICON V0_1Y_IY/ECCC  riâddâd:riâdˈd
+* LEXICON V_1Â_IY/ECCC  riâddâd:riâdˈd
+* LEXICON V0_1Â_IY/ECCC  riâddâd:riâdˈd
 
 * : VSUF-INF_YD ;  (1) Inf: piõgˈgâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
@@ -323,8 +323,8 @@ Imprt+ConNegII, Pass+PrfPrc
 
 (10) Allegro for incoative: piõg»
 
-* LEXICON V_1Y_VWKKK  piõggâd:piõgˈg
-* LEXICON V0_1Y_VWKKK  piõggâd:piõgˈg
+* LEXICON V_1Â_VWKKK  piõggâd:piõgˈg
+* LEXICON V0_1Â_VWKKK  piõggâd:piõgˈg
 * : VSUF-INF_YD ;  (1) Inf: piõgˈgâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
@@ -393,16 +393,16 @@ Imprt+ConNegII, Pass+PrfPrc
 
 (10) Allegro for incoative: ǩiõč»
 
-* LEXICON V_1Y_IY/ECC  piâssâd:piâss
-* LEXICON TV_1Y_IY/ECC  piâssâd:piâss
-* LEXICON V0_1Y_IY/ECC  piâssâd:piâss
+* LEXICON V_1Â_IY/ECC  piâssâd:piâss
+* LEXICON TV_1Â_IY/ECC  piâssâd:piâss
+* LEXICON V0_1Â_IY/ECC  piâssâd:piâss
 
-* LEXICON V_1Y_IOCC  riõššâd:riõ%{ʹØ%}šš
-* LEXICON IV_1Y_IOCC  riõššâd:riõ%{ʹØ%}šš
-* LEXICON V0_1Y_IOCC  riõššâd:riõ%{ʹØ%}šš
+* LEXICON V_1Â_IOCC  riõššâd:riõ%{ʹØ%}šš
+* LEXICON IV_1Â_IOCC  riõššâd:riõ%{ʹØ%}šš
+* LEXICON V0_1Â_IOCC  riõššâd:riõ%{ʹØ%}šš
 
-* LEXICON V_1Y_IOKK  čiõkkâd:čiõ%{ʹØ%}kk
-* LEXICON V0_1Y_IOKK  čiõkkâd:čiõkk
+* LEXICON V_1Â_IOKK  čiõkkâd:čiõ%{ʹØ%}kk
+* LEXICON V0_1Â_IOKK  čiõkkâd:čiõkk
 
 * LEXICON V_HUOLLYD  huõllâd:huõll
 * LEXICON IV_HUOLLYD  huõllâd:huõll
@@ -543,9 +543,9 @@ Imprt+ConNegII, Pass+PrfPrc
 
 * :%^YXX2YX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: aib»
 
-* LEXICON V_1Y_VUCC  aibbâd:aibb
-* LEXICON IV_1Y_VUCC  aibbâd:aibb
-* LEXICON V0_1Y_VUCC  aibbâd:aibb
+* LEXICON V_1Â_VUCC  aibbâd:aibb
+* LEXICON IV_1Â_VUCC  aibbâd:aibb
+* LEXICON V0_1Â_VUCC  aibbâd:aibb
 (1)  Inf: aibbâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
@@ -576,9 +576,9 @@ Imprt+ConNegII, Pass+PrfPrc
 
 * :%^YXX2YX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: aib»
 
-* LEXICON V_1Y_VYKK  kalggâd:ka%^1VOW%{ʹØ%}lgg
-* LEXICON IV_1Y_VYKK  kalggâd:ka%^1VOW%{ʹØ%}lgg
-* LEXICON TV_1Y_VYKK  kalggâd:ka%^1VOW%{ʹØ%}lgg
+* LEXICON V_1Â_VYKK  kalggâd:ka%^1VOW%{ʹØ%}lgg
+* LEXICON IV_1Â_VYKK  kalggâd:ka%^1VOW%{ʹØ%}lgg
+* LEXICON TV_1Â_VYKK  kalggâd:ka%^1VOW%{ʹØ%}lgg
 * : VSUF-INF_YD ;  (1)  Inf: tobddâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
@@ -610,9 +610,9 @@ Imprt+ConNegII, Pass+PrfPrc
 
 * :%^YXX2YX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: tobd»
 
-* LEXICON V_1Y_VYXX  tobddâd:to%^1VOW%{ʹØ%}bdd
-* LEXICON TV_1Y_VYXX  tobddâd:to%^1VOW%{ʹØ%}bdd
-* LEXICON V0_1Y_VYXX  tobddâd:to%^1VOW%{ʹØ%}bdd
+* LEXICON V_1Â_VYXX  tobddâd:to%^1VOW%{ʹØ%}bdd
+* LEXICON TV_1Â_VYXX  tobddâd:to%^1VOW%{ʹØ%}bdd
+* LEXICON V0_1Â_VYXX  tobddâd:to%^1VOW%{ʹØ%}bdd
 * : VSUF-INF_YD ;  (1)  Inf: tobddâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
@@ -710,8 +710,8 @@ Imprt+Pl3
 
 * :%^YXX2YX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: kuõsk»
 
-* LEXICON V_1Y_VWYKK  kuõskkâd:kuõskk
-* LEXICON V0_1Y_VWYKK  kuõskkâd:kuõskk
+* LEXICON V_1Â_VWYKK  kuõskkâd:kuõskk
+* LEXICON V0_1Â_VWYKK  kuõskkâd:kuõskk
 * : VSUF-INF_YD ;  (1)  Inf: kuõskkâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
@@ -781,8 +781,8 @@ Imprt+Pl3
 
 * :%^YXX2VX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: čiõut»
 
-* LEXICON V_1Y_IY/EYXX   viârmmâd:viâ%{ʹØ%}rmm
-* LEXICON V0_1Y_IY/EYXX   viârmmâd:viâ%{ʹØ%}rmm
+* LEXICON V_1Â_IY/EYXX   viârmmâd:viâ%{ʹØ%}rmm
+* LEXICON V0_1Â_IY/EYXX   viârmmâd:viâ%{ʹØ%}rmm
 
 * : VSUF-INF_YD ;  (1)  Inf: sǩiâŋkkâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
@@ -817,8 +817,8 @@ Imprt+Pl3
 
 * :%^YXX2YX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: sǩiâŋk»
 
-* LEXICON V_1Y_IY/EYKK  sǩiâŋkkâd:sǩiâ%{ʹØ%}ŋkk
-* LEXICON V0_1Y_IY/EYKK  sǩiâŋkkâd:sǩiâŋkk
+* LEXICON V_1Â_IY/EYKK  sǩiâŋkkâd:sǩiâ%{ʹØ%}ŋkk
+* LEXICON V0_1Â_IY/EYKK  sǩiâŋkkâd:sǩiâŋkk
 
 * : VSUF-INF_YD ;  (1)  Inf: sǩiâŋkkâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
@@ -853,11 +853,11 @@ Imprt+Pl3
 
 * :%^YXX2YX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: sǩiâŋk»
 
-* LEXICON V_1Y_VWUKK  čuõiggâd:čuõigg
-* LEXICON V0_1Y_VWUKK  čuõiggâd:čuõigg
+* LEXICON V_1Â_VWUKK  čuõiggâd:čuõigg
+* LEXICON V0_1Â_VWUKK  čuõiggâd:čuõigg
 
-* LEXICON V_1Y_VWUCC  suõimmâd:suõi%{ʹØ%}mm, piõullâd:piõu%{ʹØ%}ll
-* LEXICON V0_1Y_VWUCC  čuõiggâd:čuõigg
+* LEXICON V_1Â_VWUCC  suõimmâd:suõi%{ʹØ%}mm, piõullâd:piõu%{ʹØ%}ll
+* LEXICON V0_1Â_VWUCC  čuõiggâd:čuõigg
 
 * LEXICON V_LAADDYD  laaddâd:laadd
 * LEXICON IV_LAADDYD  laaddâd:laadd

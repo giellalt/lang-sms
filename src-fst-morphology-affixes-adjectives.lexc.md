@@ -6,18 +6,18 @@ These come directly from the xml to lexc xsltransformation lexica
 * : ADJ-DER/COMP_ab ;  This has a Comp+Attr
 
 CLASS 1 HIGH VOWEL, NO PALATALIZATION NOMINALS
-* LEXICON A_1Y_VCC  papp:papp
+* LEXICON A_1Â_VCC  papp:papp
 
 CLASS 1 HIGH VOWEL, NO PALATALIZATION NOMINALS
-* LEXICON A_1Y_VKK  papp:papp
+* LEXICON A_1Â_VKK  papp:papp
 
-* LEXICON A_1Y_VYXX  põrtt:põrtt
+* LEXICON A_1Â_VYXX  põrtt:põrtt
 friskk
 
-* LEXICON A_1Y_VYKK  põrtt:põrtt
+* LEXICON A_1Â_VYKK  põrtt:põrtt
 friskk
 
-* LEXICON A_1Y_VUKK  autt:a%^1VOWutt
+* LEXICON A_1Â_VUKK  autt:a%^1VOWutt
 friskk
 
 * LEXICON A_MUORR  muõrr:muõrr
@@ -1119,7 +1119,7 @@ WORK NEEDED
 CLASS 1 LOW VOWEL, PALATALIZATION, ILLATIVE IN A NOMINALS
 ## e-stems
 
-similar_to: N_1Y_VCC
+similar_to: N_1Â_VCC
 vowel: monophthong
 vowel_shift: yes
 consonantism: geminate
@@ -1150,7 +1150,7 @@ strong_geminate, long_vowel, depalatalization, low_stem_vowel
 * :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) väʹl-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) väʹll Ess+Px..
 
-similar_to: N_1Y_VCC
+similar_to: N_1Â_VCC
 vowel: monophthong
 vowel_shift: ??
 consonantism: geminate
@@ -1660,7 +1660,7 @@ N_GEN2X3-NOM2X1
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
 * LEXICON A-01_KOODDYS  kõõddâs:kõddâs
-like N_PODD, N_1Y_VCC, N_LUUBBYL
+like N_PODD, N_1Â_VCC, N_LUUBBYL
 * Yaml: **N-kooddas**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 

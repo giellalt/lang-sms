@@ -238,18 +238,18 @@ These come directly from the xml to lexc xsltransformation lexica
 * : ADJ-DER/COMP_ab ;  This has a Comp+Attr
 
 CLASS 1 HIGH VOWEL, NO PALATALIZATION NOMINALS
-* LEXICON A_1Y_VCC  papp:papp
+* LEXICON A_1Â_VCC  papp:papp
 
 CLASS 1 HIGH VOWEL, NO PALATALIZATION NOMINALS
-* LEXICON A_1Y_VKK  papp:papp
+* LEXICON A_1Â_VKK  papp:papp
 
-* LEXICON A_1Y_VYXX  põrtt:põrtt
+* LEXICON A_1Â_VYXX  põrtt:põrtt
 friskk
 
-* LEXICON A_1Y_VYKK  põrtt:põrtt
+* LEXICON A_1Â_VYKK  põrtt:põrtt
 friskk
 
-* LEXICON A_1Y_VUKK  autt:a%^1VOWutt
+* LEXICON A_1Â_VUKK  autt:a%^1VOWutt
 friskk
 
 * LEXICON A_MUORR  muõrr:muõrr
@@ -1351,7 +1351,7 @@ WORK NEEDED
 CLASS 1 LOW VOWEL, PALATALIZATION, ILLATIVE IN A NOMINALS
 ### e-stems
 
-similar_to: N_1Y_VCC
+similar_to: N_1Â_VCC
 vowel: monophthong
 vowel_shift: yes
 consonantism: geminate
@@ -1382,7 +1382,7 @@ strong_geminate, long_vowel, depalatalization, low_stem_vowel
 * :%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) väʹl-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) väʹll Ess+Px..
 
-similar_to: N_1Y_VCC
+similar_to: N_1Â_VCC
 vowel: monophthong
 vowel_shift: ??
 consonantism: geminate
@@ -1892,7 +1892,7 @@ N_GEN2X3-NOM2X1
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
 * LEXICON A-01_KOODDYS  kõõddâs:kõddâs
-like N_PODD, N_1Y_VCC, N_LUUBBYL
+like N_PODD, N_1Â_VCC, N_LUUBBYL
 * Yaml: **N-kooddas**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
@@ -2497,7 +2497,7 @@ IRREGULAR NOUN nijdd
 
 * LEXICON	NMN_NIJDD	 nijdd:ni
 * Yaml: **N-nijdd**
-NMN_1Y_IJCC
+NMN_1Â_IJCC
 * :jdd SG-NOM ;			 nijdd
 * :jdd%>â ESS/PAR ; 	  		 nijddân, nijddâd
 strong_geminate, short_vowel, palatalization
@@ -2535,7 +2535,7 @@ strong_geminate, long_vowel
 * *niõʹđe:* `nijdd+N+Der+Der/Dimin+N+Sg+Gen`
 
 CLASS 1 HIGH VOWEL, NO PALATALIZATION NOMINALS
-* LEXICON N_1Y_VCC  papp:pa%^1VOW%{ʹØ%}pp
+* LEXICON N_1Â_VCC  papp:pa%^1VOW%{ʹØ%}pp
 similar_to: N_PESS
 pa%{a0%}%{ʹ0%}%{p0%}p
 V%{V0%}%{ʹ0%}%{C0%}C
@@ -2638,8 +2638,8 @@ e.g.
 e.g. +Use/NG+Sg+Loc+PxSg3
 e.g. +Sg+Loc+PxSg3 pp:p papstes
 
-* LEXICON N_1Y_VYKK_errorth 
-* LEXICON N_1Y_VYKK  algg:a%^1VOW%{ʹØ%}lgg
+* LEXICON N_1Â_VYKK_errorth 
+* LEXICON N_1Â_VYKK  algg:a%^1VOW%{ʹØ%}lgg
 * Yaml: **N-algg**
 
 * : SG-NOM ;	    				 põrtt
@@ -2656,7 +2656,7 @@ e.g. +Sg+Loc+PxSg3 pp:p papstes
 * +Der+Der/Dimin+N:%^V2VV%^YXX2YX N_KUUZZYZH-WITHOUT-PAL ;   põõrt-
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^YXX2YX%^PALK N_KUUZZYZH-WITH-PAL ;   põõʹrt-
 
-* LEXICON N_1Y_VYXX  põrtt:põ%^1VOW%{ʹØ%}rtt
+* LEXICON N_1Â_VYXX  põrtt:põ%^1VOW%{ʹØ%}rtt
 Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_xyy
 similar_to: N_TAALKYS, N_KOONTYR
 1.1.1.1.1.1. Sg_Nom="short_vowel|long_cluster" Sg_Gen="long_vowel|short_cluster" 
@@ -2693,13 +2693,13 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^V2VV%^YXX2YX N_KUUZZYZH-WITHOUT-PAL ;   põõrt-
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^YXX2YX N_KUUZZYZH-WITH-PAL ;   põõʹrt-
 
-* LEXICON N_1Y_VYKK_PL  aalǥ:algg
+* LEXICON N_1Â_VYKK_PL  aalǥ:algg
 * +Cmp/SgNom: R ;                            põrtt
 * :%^V2VV%^YXX2YX PL-NOM ;                 põõrt
 * :%>â ESS/PAR ;                                   põrttân
 * :%^V2VV%^YXX2YX PL-OBL ;                         põõrti
 
-* LEXICON N_1Y_VYXX_PL  põõrt:põrtt
+* LEXICON N_1Â_VYXX_PL  põõrt:põrtt
 * +Cmp/SgNom: R ;                            põrtt
 * :%^V2VV%^YXX2YX PL-NOM ;                 põõrt
 * :%>â ESS/PAR ;                                   põrttân
@@ -2727,7 +2727,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *aalǥâž:* `algg+N+Der+Der/Dimin+N+Sg+Nom`
 * *aaʹlje:* `algg+N+Der+Der/Dimin+N+Sg+Gen`
 
-* LEXICON N_1Y_VUKK  joukk:jo%^1VOWu%{ʹØ%}kk
+* LEXICON N_1Â_VUKK  joukk:jo%^1VOWu%{ʹØ%}kk
 * Yaml: **N-autt**
 
 * : SG-NOM ;	    				 autt
@@ -2743,7 +2743,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^V2VV%^YXX2YX N_KUUZZYZH-WITHOUT-PAL ;   aaut-
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^YXX2YX%^PALK N_KUUZZYZH-WITH-PAL ;   aauʹt-
 
-* LEXICON N_1Y_VUCC  autt:a%^1VOWu%{ʹØ%}tt
+* LEXICON N_1Â_VUCC  autt:a%^1VOWu%{ʹØ%}tt
 Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_vyy
 1.1.1.1.1.1. Sg_Nom="short_vowel|long_V-cluster" Sg_Gen="long_vowel|short_V-cluster"
 
@@ -2778,7 +2778,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^V2VV%^YXX2YX N_KUUZZYZH-WITHOUT-PAL ;   aaut-
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^YXX2YX N_KUUZZYZH-WITH-PAL ;   aauʹt-
 
-* LEXICON N_1Y_VUCC_PL  aaut:a%^1VOWu%{ʹØ%}tt
+* LEXICON N_1Â_VUCC_PL  aaut:a%^1VOWu%{ʹØ%}tt
 * +Cmp/SgNom: R ;                            autt
 * :%>â ESS/PAR ;                                   auttân
 * :%^V2VV%^YXX2YX PL-NOM ;                 aaut
@@ -2805,9 +2805,9 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *aautâž:* `autt+N+Der+Der/Dimin+N+Sg+Nom`
 * *aauʹte:* `autt+N+Der+Der/Dimin+N+Sg+Gen`
 
-* LEXICON N_1Y_VHCC  vahtt:va%^1VOW%{ʹØ%}h%{ʹØ%}tt
+* LEXICON N_1Â_VHCC  vahtt:va%^1VOW%{ʹØ%}h%{ʹØ%}tt
 * LEXICON N_VAHTT  vahtt:va%^1VOW%{ʹØ%}h%{ʹØ%}tt
-N_1Y_VHCC cf. SIJDD
+N_1Â_VHCC cf. SIJDD
 Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_hyy
 1.1.1.1.1.1. Sg_Nom="short_vowel|h-cluster" Sg_Gen="long_vowel|short_u-cluster" 
 ### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
@@ -2861,7 +2861,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *vaautâž:* `vahtt+N+Der+Der/Dimin+N+Sg+Nom`
 * *vaauʹte:* `vahtt+N+Der+Der/Dimin+N+Sg+Gen`
 
-* LEXICON N_1Y_VKK_VVGG  jokk:jo%^1VOW%{ʹØ%}kk
+* LEXICON N_1Â_VKK_VVGG  jokk:jo%^1VOW%{ʹØ%}kk
 * Yaml: **N-jokk river/joki**
 
 * : SG-NOM ;	    		 jokk
@@ -2876,7 +2876,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^KK2GG%^PALK N_KUUZZYZH-WITH-PAL ;   jooʹjj-
 
 * LEXICON N_KUSS  kuss:ku%^1VOW%{ʹØ%}ss
-N_1Y_VKK_HVVGG
+N_1Â_VKK_HVVGG
 Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_gem_ss_type
 1.1.1.1.1.1. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|voiced_geminate" 
 
@@ -2946,7 +2946,7 @@ similar_to:
 * +Der+Der/Dimin+N:%^PAL%^CCC2CC%^PALK N_KUUZZYZH-WITH-PAL ;   ruõʹcc-
 
 * LEXICON N_RUOCCC  ruõcc:ruõ%{ʹØ%}cˈc
-N_1Y_VWCCC_CC
+N_1Â_VWCCC_CC
 Sg_Nom: vow_di:vow_high:pal_no:cns_gem_long
 1.1.1.1.1.1. Sg_Nom="diphthong|long_geminate" Sg_Gen="diphthong|geminate" 
 
@@ -2999,13 +2999,13 @@ THIS IS NOT THE SAME AS N_MUORR
 * +Der+Der/Dimin+N:%^YXX2YX N_MUORYZH-WITHOUT-PAL ;   čuõsk-
 * +Der+Der/Dimin+N:%^PAL%^YXX2YX N_MUORYZH-WITH-PAL ;   čuõʹsǩ-
 
-* LEXICON N_1Y_VWYXX_PL  juõštt:juõštt
+* LEXICON N_1Â_VWYXX_PL  juõštt:juõštt
 * +Cmp/SgNom: R ;                    (1) čuõskk
 * :%>â ESS/PAR ;                           (6) čuõskkân
 * :%^YXX2YX PL-NOM ;       (2) čuõsk
 * :%^YXX2YX PL-OBL ;               (5) čuõskin
 
-N_1Y_VWYKK
+N_1Â_VWYKK
 Sg_Nom: vow_di:vow_high:pal_no:cns_yxx
 1.1.1.1.1.1. Sg_Nom="diphthong|long_cluster" Sg_Gen="diphthong|short_cluster"
 
@@ -3063,7 +3063,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *čuõʹšǩe:* `čuõškk+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_RUOIDD  ruõidd:ruõi%{ʹØ%}dd
-N_1Y_VWUCC
+N_1Â_VWUCC
 Sg_Nom: vow_di:vow_high:pal_no:cns_vxx
 1.1.1.1.1.1. Sg_Nom="diphthong|long_V-cluster" Sg_Gen="diphthong|short_V-cluster"
 
@@ -3119,7 +3119,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *ruõiʹde:* `ruõidd+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_PUOAVV  puåvv:puå%{ʹØ%}vv
-N_1Y_VWCC
+N_1Â_VWCC
 Sg_Nom: vow_di:vow_high:pal_no:cns_gem
 1.1.1.1.1.1. Sg_Nom="diphthong|geminate" Sg_Gen="diphthong|single_consonant" Sg_Ill="diphthong|vowel_e-coloration|long_geminate"
 
@@ -3204,9 +3204,9 @@ puåvv:puåvv
 * :%>â ESS/PAR ; 	   			
 * :%^KK2GG PL-OBL ;			 luõzzi
 
-* LEXICON N_1Y_IY/EKK  liâkk:liâ%{ʹØ%}kk
+* LEXICON N_1Â_IY/EKK  liâkk:liâ%{ʹØ%}kk
 
-N_1Y_VWKK
+N_1Â_VWKK
 * Yaml: **N-kiapp, N-puavv**
 
 * : SG-NOM ;	    			 (1) Sg.Nom: liâkk
@@ -3244,7 +3244,7 @@ N_1Y_VWKK
 * *lieʹjje:* `liâkk+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_SIYKKK  siâkˈk:siâ%{ʹØ%}kˈk
-N_1Y_VWKKK
+N_1Â_VWKKK
 Sg_Nom: vow_di:vow_high:pal_no:cns_gem_long
 1.1.1.1.1.1. Sg_Nom="diphthong|long_geminate" Sg_Gen="diphthong|geminate" Sg_Ill="diphthong|vowel_e-coloration|long_geminate"
 
@@ -3305,7 +3305,7 @@ siâkˈk:siâkˈk
 * *sieʹǩǩe:* `siâkk+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_SMIYHHH  siâkˈk:siâ%{ʹØ%}kˈk
-N_1Y_VWCCC
+N_1Â_VWCCC
 * Yaml: **N-siakk**
 
 * : SG-NOM ;	    			   smiâhˈh
@@ -3320,7 +3320,7 @@ N_1Y_VWCCC
 * +Der+Der/Dimin+N: N_KUUZZYZH-WITHOUT-PAL ;   smiâhˈh-
 * +Der+Der/Dimin+N:%^PALE%^PAL N_KUUZZYZH-WITH-PAL ;   smieʹhˈh-
 
-* LEXICON N_1Y_IY/EYXX  piâldd:piâ%{ʹØ%}ldd
+* LEXICON N_1Â_IY/EYXX  piâldd:piâ%{ʹØ%}ldd
 * Yaml: **N-skjiankk**
 
 * : SG-NOM ;	      	 (1) Sg.Nom: sǩiâŋkk
@@ -3335,7 +3335,7 @@ N_1Y_VWCCC
 * +Der+Der/Dimin+N:%^YXX2YX N_MUORYZH-WITHOUT-PAL ;   vuåkr-
 * +Der+Der/Dimin+N:%^PALE%^PAL%^YXX2YX N_MUORYZH-WITH-PAL ;   vueʹkr-
 
-* LEXICON N_1Y_UA/EYXX  vuåkrr:vuå%{ʹØ%}krr
+* LEXICON N_1Â_UA/EYXX  vuåkrr:vuå%{ʹØ%}krr
 * Yaml: **N-skjiankk**
 
 * : SG-NOM ;	      	 (1) Sg.Nom: sǩiâŋkk
@@ -3371,7 +3371,7 @@ N_1Y_VWCCC
 * *vuåkritaa:* `vuåkrr+N+Pl+Abe`
 * *vuåkrâž:* `vuåkrr+N+Der+Der/Dimin+N+Sg+Nom`
 * *vueʹkre:* `vuåkrr+N+Der+Der/Dimin+N+Sg+Gen`
-* LEXICON N_1Y_UA/EYKK  sǩiâŋkk:sǩiâ%{ʹØ%}ŋkk
+* LEXICON N_1Â_UA/EYKK  sǩiâŋkk:sǩiâ%{ʹØ%}ŋkk
 * Yaml: **N-skjiankk**
 
 * : SG-NOM ;	      	 (1) Sg.Nom: sǩiâŋkk
@@ -3386,9 +3386,9 @@ N_1Y_VWCCC
 * +Der+Der/Dimin+N:%^YXX2YX N_MUORYZH-WITHOUT-PAL ;   sǩiâŋk-
 * +Der+Der/Dimin+N:%^PALE%^PAL%^YXX2YX%^PALK N_MUORYZH-WITH-PAL ;   sǩieʹŋǩ-
 
-* LEXICON N_1Y_IY/EYKK  sǩiâŋkk:sǩiâ%{ʹØ%}ŋkk
+* LEXICON N_1Â_IY/EYKK  sǩiâŋkk:sǩiâ%{ʹØ%}ŋkk
 * LEXICON N_MIYRKK  sǩiâŋkk:sǩiâ%{ʹØ%}ŋkk
-N_1Y_VW/EYKK
+N_1Â_VW/EYKK
 Sg_Nom: vow_di:vow_high:pal_no:cns_xyy
 1.1.1.1.1.1. Sg_Nom="diphthong|long_cluster" Sg_Gen="diphthong|short_cluster" Sg_Ill="diphthong|vowel_e-coloration|long_cluster"
 
@@ -3444,9 +3444,9 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *miârkâž:* `miârkk+N+Der+Der/Dimin+N+Sg+Nom`
 * *mieʹrǩe:* `miârkk+N+Der+Der/Dimin+N+Sg+Gen`
 
-* LEXICON N_1Y_VCC_VVC  toll:to%^1VOW%{ʹØ%}ll
+* LEXICON N_1Â_VCC_VVC  toll:to%^1VOW%{ʹØ%}ll
 * LEXICON N_TOLL  toll:to%^1VOW%{ʹØ%}ll
-N_1Y_VCC_VVC
+N_1Â_VCC_VVC
 similar_to: N_AENHNH, N_STAEQLLJ, N_KOONJYL
 Sg_Nom: vow_mono:vow_short:vow_high:pal_no:cns_gem
 1.1.1.1.1.2. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|single_consonant" 
@@ -3514,7 +3514,7 @@ single_consonant, long_vowel, palatalization, high_stem_vowel
 * *tooʹle:* `toll+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_SIJDD  sijdd:si%{ʹØ%}j%{ʹØ%}dd
-N_1Y_VJCC cf. _VAHTT
+N_1Â_VJCC cf. _VAHTT
 Sg_Nom: vow_mono:vow_short:vow_high_i_type:pal_no:cns_jyy
 1.1.1.1.1.3. Sg_Nom="short_vowel|strong_j-cluster" Sg_Gen="long_vowel|single_consonant" 
 
@@ -3579,7 +3579,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *siiʹde:* `sijdd+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_SAAKK  saakk:saa%{ʹØ%}kk
-N_1Y_VVKK
+N_1Â_VVKK
 similar_to: N_PAARR, N_SHLAAJJ
 Sg_Nom: vow_mono:vow_long:vow_high:pal_no:cns_gem_ss_type
 1.1.1.1.1.4. Sg_Nom="long_vowel|geminate" Sg_Gen="long_vowel|voiced_geminate" 
@@ -3637,7 +3637,7 @@ N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 * *saaʹjje:* `saakk+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_LUOSS  luõss:luõ%{ʹØ%}ss
-N_1Y_VWKK
+N_1Â_VWKK
 * LEXICON NMN_LUOSS  luõss:luõss
 Sg_Nom: vow_di:vow_high:pal_no:cns_gem_ss_type
 1.1.1.1.1.4. Sg_Nom="diphthong|geminate" Sg_Gen="diphthong|voiced_geminate"
@@ -3677,9 +3677,9 @@ THIS IS NOT THE SAME AS N_MUORR
 * *luõzzâž:* `luõss+N+Der+Der/Dimin+N+Sg+Nom`
 * *luõʹzze:* `luõss+N+Der+Der/Dimin+N+Sg+Gen`
 
-* LEXICON N_1Y_VVCC  paarr:paa%{ʹØ%}rr
+* LEXICON N_1Â_VVCC  paarr:paa%{ʹØ%}rr
 * LEXICON N_PAARR  paarr:paa%{ʹØ%}rr
-N_1Y_VVCC
+N_1Â_VVCC
 Sg_Nom: vow_mono:vow_long:vow_high:pal_no:cns_gem
 1.1.1.1.1.5. Sg_Nom="long_vowel|geminate" Sg_Gen="long_vowel|single_consonant" 
 
@@ -3743,7 +3743,7 @@ N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 * *paaʹre:* `paarr+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_SHLAAJJ  šlaajj:šlaa%{ʹØ%}jj
-N_1Y_VVCC
+N_1Â_VVCC
 Sg_Nom: vow_mono:vow_long:vow_high:pal_no:cns_gem_jj_type
 1.1.1.1.1.5. Sg_Nom="long_vowel|geminate" Sg_Gen="long_vowel|single_consonant"
 
@@ -3778,9 +3778,9 @@ Sg_Nom: vow_mono:vow_long:vow_high:pal_no:cns_gem_jj_type
 * *šlaajâž:* `šlaajj+N+Der+Der/Dimin+N+Sg+Nom`
 * *šlaaʹje:* `šlaajj+N+Der+Der/Dimin+N+Sg+Gen`
 
-* LEXICON N_1Y_VWCC  muõrr:muõ%{ʹØ%}rr
+* LEXICON N_1Â_VWCC  muõrr:muõ%{ʹØ%}rr
 * LEXICON N_MUORR  muõrr:muõ%{ʹØ%}rr
-N_1Y_VWCC
+N_1Â_VWCC
 Sg_Nom: vow_di:vow_high:pal_no:cns_gem
 1.1.1.1.1.1. Sg_Nom="diphthong|geminate" Sg_Gen="diphthong|single_consonant" 
 
@@ -3852,7 +3852,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * *muõʹre:* `muõrr+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_KHIOJJ  ǩiõjj:ǩiõ%{ʹØ%}jj
-N_1Y_VWCC
+N_1Â_VWCC
 Sg_Nom: vow_di:vow_high:pal_no:cns_gem_jj_type
 1.1.1.1.1.1. Sg_Nom="diphthong|geminate" Sg_Gen="diphthong|single_consonant"
 
@@ -3887,7 +3887,7 @@ similar_to: N_TUYJJ
 * *kuõʹje:* `kuõjj+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_MIOHTT  miõhtt:miõ%{ʹØ%}h%{ʹØ%}tt
-N_1Y_VWHYY
+N_1Â_VWHYY
 ### FORMS
 similar_to: N_VUYHSS
 * Yaml: **N-miwhtt**
@@ -3926,7 +3926,7 @@ similar_to: N_VUYHSS
 * *miõuʹte:* `miõhtt+N+Der+Der/Dimin+N+Sg+Gen`
 
 * LEXICON N_RIIKK  riikk:rii%{ʹØ%}kk
-N_1Y_VVKK
+N_1Â_VVKK
 ### FORMS
 1.1.1.1.1.1. Sg_Nom="long_vowel|geminate" Sg_Gen="long_vowel|geminate" Sg_Ill="short_vowel|geminate" 
 
@@ -3967,9 +3967,9 @@ N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
 * +Der+Der/Dimin+N:%^V2VV%^C2CC N_MUORYZH-WITHOUT-PAL ;   riikk-
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^C2CC%^PALK N_MUORYZH-WITH-PAL ;   riiʹǩǩ-
 
-* LEXICON N_1Y_VVC  plaan:plaa%{ʹØ%}n
+* LEXICON N_1Â_VVC  plaan:plaa%{ʹØ%}n
 * LEXICON N_PLAAN  plaan:plaa%{ʹØ%}n
-N_1Y_VVC
+N_1Â_VVC
 Sg_Ill="palatalization|e-final"
 similar-to: SYSTEEQM 
 ### 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
@@ -3988,14 +3988,14 @@ plaan:plaan
 * +Der+Der/Dimin+N:%^PAL%^PALK N_MUORYZH-WITH-PAL ;   paaʹr-
 
 * LEXICON N_STRAAZHZH  straažž:straa%{ʹØ%}žž
-N_1Y_VVCC
+N_1Â_VVCC
 * Yaml: **N-plaan**
 * :%^PAL%^CC2C%^PALK N2A_LUOQSSI ;      N»A: plaaʹni
 * +Der+Der/Dimin+N:%^CC2C N_MUORYZH-WITHOUT-PAL ;   straaž-
 * +Der+Der/Dimin+N:%^PAL%^CC2C%^PALK N_MUORYZH-WITH-PAL ;   straaʹž-
 
 * LEXICON N_LOMAAKK  lomaakk:lomaa%{ʹØ%}kk
-N_1Y_VVKK
+N_1Â_VVKK
 Sg_Ill="palatalization|e-final"
 
 lomaakk:lomaakk
@@ -4009,7 +4009,7 @@ CLASS 1 LOW VOWEL, MONOPHTHONG, NO PALATALIZATION NOMINALS
 
 * LEXICON N_1A_VCC  pess:pẹ%^1VOWss
 * LEXICON N_PESS  pess:pẹss
-similar_to: N_1Y_VCC
+similar_to: N_1Â_VCC
 N_1A_VCC
 Sg_Nom: vow_mono:vow_short:vow_low:pal_no:cns_gem
 1.1.1.2.1. stem_with_gradation: yes 
@@ -4878,7 +4878,7 @@ Sg_Loc_Px..
 * LEXICON N_VIRVEL  virvel:virvẹ%^1VOW%{ʹØ%}l
 
 ### FORMS
-N_   like N_ATOM
+N_   like N_1Â_ATOM
 * Yaml: **virvel**
 * : SG-NOM ;	    		 virvel
 * +Use/NGminip+Use/NG:%^PAL%^PALK SG-NOM ;	    		 virveʹl
@@ -5871,7 +5871,7 @@ cf N_E_EEQC
 
 * LEXICON N_KANEQL  kanel:kanẹ%^1VOW%{ʹØ%}l
 N_E_EC_EEQC
-like N_ATOM
+like N_1Â_ATOM
 * Yaml: **N-kanel**
 * : E-STEM_SG-NOM ;		  	 (1) kanel
 * +Err/Orth-extra-q:%^PAL E-STEM_SG-NOM ;		  	 (1) kaneʹl <as it sounds, but not >
@@ -5962,7 +5962,7 @@ strong_geminate, long_vowel, depalatalization, low_stem_vowel
 låʹdd:lå%^1VOWdd
 * LEXICON N_VAEQLL  väʹll:väll
 N_1E_VQCC
-similar_to: N_1Y_VCC
+similar_to: N_1Â_VCC
 vowel: monophthong
 vowel_shift: yes
 consonantism: geminate
@@ -6031,7 +6031,7 @@ NumContLex="1.113"
 N_1E_EQKK
 vowel_shift: no
 gradation: yes
-similarity: N_1Y_VCC
+similarity: N_1Â_VCC
 
 ### FORMS
 NumContLex="1.113"
@@ -7489,7 +7489,8 @@ jarplan:jarplan
 * +Der+Der/Dimin+N: N_MUORYZH-WITHOUT-PAL ;   paar-
 * +Der+Der/Dimin+N:%^PAL N_MUORYZH-WITH-PAL ;   paaʹr-
 
-* LEXICON N_ATOM  atom:atom
+* LEXICON N_1Â_ATOM  atom:atom
+like VIRVEL, KANEL
 ### 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
 ### 2.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
 ### 2.1.3 Sg.Ill in palatalization and -e
@@ -7864,7 +7865,7 @@ N_GEN2X3-NOM2X1
 
 * LEXICON N_KOODDYS  kõõddâs:kõddâs
 * LEXICON NMN_KOODDYS  kõõddâs:kõddâs
-like N_PODD, N_1Y_VCC, N_LUUBBYL
+like N_PODD, N_1Â_VCC, N_LUUBBYL
 * Yaml: **N-kooddas**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
@@ -7977,7 +7978,7 @@ N_GEN2X3-NOM2X1
 *  LEXICON NMN_VUAEDHANJ  vuäđanj:vuäđˈđanj
 N_GEN2X3-NOM2X1
 * Yaml: **N-tuoddar**
-* :%^RmVow VOONYS-STEM-PX ;  puäkˈknj-
+* :%^RmVow VOONYS-STEM-PX ;  vuäđˈđnj-
 
 *  LEXICON N_CHOAOAGXGXAM  čååǥǥam:čååkkam
 *  LEXICON NMN_CHOAOAGXGXAM  čååǥǥam:čååkkam
@@ -8190,6 +8191,14 @@ stemtype l-stem ääʹrešm:ääʹrešm
 * +Use/NGminip+Use/SpellNoSugg+Use/NG:%^RmVow SG-COM_IN ;  CHECKME
 * +Use/NGminip+Use/SpellNoSugg+Use/NG:%^RmVow%>e ESS/PAR ;  CHECKME
 * +Use/NGminip+Use/SpellNoSugg+Use/NG:%^RmVow VOONYS-STEM-PX ;  võnns-
+
+* LEXICON N_BUURÅFǨ  buuråfǩ:buurå%^1VOW%{ʹØ%}fǩ
+* Yaml: NOT **N-saeaeveskj** 
+* :%^V2VV%^PAL SG-ABE/ACC/GEN ;  buurååʹfǩ
+* :%^PALNo%>a SG-ILL ;  buuråfka
+* :%^Pen%^VV2V%^RmVow SG-COM_IN ;  CHECKME
+* :%>e ESS/PAR ;  CHECKME
+* :%^V2VV%^PAL VOONYS-STEM-PX ;  võnns-
 
 * LEXICON N_KUEQDDELM  kueʹddelm:kueʹddelm
 * LEXICON NMN_KUEQDDELM  kueʹddelm:kueʹddelm
@@ -9092,7 +9101,7 @@ säʹmmlaž:säʹmmlaž
 
 Diminutive derivations
 
-* LEXICON N_1Y_DIMK_YZH  muõrâž:muõr
+* LEXICON N_1Â_DIMK_YZH  muõrâž:muõr
 (2009: 306)
 * muõrâž:muõr
 * Yaml: **N-muorazh**
@@ -9497,24 +9506,24 @@ Completion needed 2015-09-19
 
 THE LEXICON *`OUTSIDE_LEXICONS`* ASSIGNS THE TAG +Attr
 
-* LEXICON PROP_1Y_VCC  papp:pa%^1VOW%{ʹØ%}pp
+* LEXICON PROP_1Â_VCC  papp:pa%^1VOW%{ʹØ%}pp
 
-* LEXICON PROP_1Y_VKK_VVGG  jokk:jo%^1VOW%{ʹØ%}kk
+* LEXICON PROP_1Â_VKK_VVGG  jokk:jo%^1VOW%{ʹØ%}kk
 
-* LEXICON PROP_TOP_1Y_VYXX  põrtt:põ%^1VOW%{ʹØ%}rtt
-* LEXICON PROP_1Y_VYXX   põrtt:põ%^1VOW%{ʹØ%}rtt
-* LEXICON PROP_TOP_1Y_VYKK  algg:a%^1VOW%{ʹØ%}lgg
-* LEXICON PROP_1Y_VYKK  algg:a%^1VOW%{ʹØ%}lgg
-* LEXICON PROP_1Y_VWYKK  algg:a%^1VOW%{ʹØ%}lgg
+* LEXICON PROP_TOP_1Â_VYXX  põrtt:põ%^1VOW%{ʹØ%}rtt
+* LEXICON PROP_1Â_VYXX   põrtt:põ%^1VOW%{ʹØ%}rtt
+* LEXICON PROP_TOP_1Â_VYKK  algg:a%^1VOW%{ʹØ%}lgg
+* LEXICON PROP_1Â_VYKK  algg:a%^1VOW%{ʹØ%}lgg
+* LEXICON PROP_1Â_VWYKK  algg:a%^1VOW%{ʹØ%}lgg
 
-* LEXICON PROP_1Y_VUKK  joukk:jo%^1VOWu%{ʹØ%}kk
-* LEXICON PROP_1Y_VUCC  autt:a%^1VOWu%{ʹØ%}tt
+* LEXICON PROP_1Â_VUKK  joukk:jo%^1VOWu%{ʹØ%}kk
+* LEXICON PROP_1Â_VUCC  autt:a%^1VOWu%{ʹØ%}tt
 muõrr
 Ruõšš:Ruõ%{ʹØ%}šˈš
 
 * LEXICON PROP_1E_VVQCC  sääʹmm:sää%{ʹØ%}mm
 
-* LEXICON PROP_1Y_VVC  plaan:plaa%{ʹØ%}n
+* LEXICON PROP_1Â_VVC  plaan:plaa%{ʹØ%}n
 
 * LEXICON PROP_FEDD  Fedd:Fẹ%^1VOWdd
 
@@ -9659,7 +9668,7 @@ The lexicon *V0_LEEQD* for the copula
 ### REGULAR VERBS
 #### CLASS 1 HIGH VOWEL, NO PALATALIZATION
 
-* LEXICON V_1Y_VVCC  põõllâd:põõll
+* LEXICON V_1Â_VVCC  põõllâd:põõll
 * LEXICON V_POOLLYD  põõllâd:põõll
 * LEXICON IV_POOLLYD  põõllâd:põõll
 * LEXICON TV_POOLLYD  põõllâd:põõll
@@ -9730,9 +9739,9 @@ The lexicon *V0_LEEQD* for the copula
 * +Imprt+ConNegII:%^VV2V%>u K ;  laukkõllu
 * +Imprt+Pl3:%^VV2V%^VOWLower%>az K ;  laukkâllaz
 
-* LEXICON V_1Y_VVKK  viikkâd:viikk
-* LEXICON IV_1Y_VVKK  viikkâd:viikk
-* LEXICON TV_1Y_VVKK  viikkâd:viikk
+* LEXICON V_1Â_VVKK  viikkâd:viikk
+* LEXICON IV_1Â_VVKK  viikkâd:viikk
+* LEXICON TV_1Â_VVKK  viikkâd:viikk
 * : VSUF-INF_YD ;  (1)  Inf: viikkâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
@@ -9783,8 +9792,8 @@ Imprt+Pl3
 * *põõss%^VV2V%^KK2GAllegro»%{ʼØ%}škuätt*
 * *põ0z000»0škuätt*
 
-* LEXICON V_1Y_VVSS  koossâd:kooss
-* LEXICON IV_1Y_VVSS  koossâd:kooss
+* LEXICON V_1Â_VVSS  koossâd:kooss
+* LEXICON IV_1Â_VVSS  koossâd:kooss
 * : VSUF-INF_YD ;  (1)  Inf: viikkâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
@@ -9915,8 +9924,8 @@ Imprt+ConNegII, Pass+PrfPrc
 * +Imprt+Pl3:%^VV2V%^VOWLower%>az K ;  (9) Ind.Imprt.Pl3: piâkklâččaz
 Imprt+Pl3
 
-* LEXICON V_1Y_VKK  naggâd:naõ%^1VOW%{ʹØ%}gg
-* LEXICON IV_1Y_VKK  naggâd:naõ%^1VOW%{ʹØ%}gg
+* LEXICON V_1Â_VKK  naggâd:naõ%^1VOW%{ʹØ%}gg
+* LEXICON IV_1Â_VKK  naggâd:naõ%^1VOW%{ʹØ%}gg
 
 * LEXICON V_ROVVYD  rõvvâd:rõ%^1VOW%{ʹØ%}vv
 * LEXICON IV_ROVVYD  rõvvâd:rõ%^1VOW%{ʹØ%}vv
@@ -9924,8 +9933,8 @@ Imprt+Pl3
 
 piâkkâd:piâ%{ʹØ%}kˈk
 
-* LEXICON V_1Y_IY/ECCC  riâddâd:riâdˈd
-* LEXICON V0_1Y_IY/ECCC  riâddâd:riâdˈd
+* LEXICON V_1Â_IY/ECCC  riâddâd:riâdˈd
+* LEXICON V0_1Â_IY/ECCC  riâddâd:riâdˈd
 
 * : VSUF-INF_YD ;  (1) Inf: piõgˈgâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
@@ -9960,8 +9969,8 @@ Imprt+ConNegII, Pass+PrfPrc
 
 (10) Allegro for incoative: piõg»
 
-* LEXICON V_1Y_VWKKK  piõggâd:piõgˈg
-* LEXICON V0_1Y_VWKKK  piõggâd:piõgˈg
+* LEXICON V_1Â_VWKKK  piõggâd:piõgˈg
+* LEXICON V0_1Â_VWKKK  piõggâd:piõgˈg
 * : VSUF-INF_YD ;  (1) Inf: piõgˈgâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
@@ -10030,16 +10039,16 @@ Imprt+ConNegII, Pass+PrfPrc
 
 (10) Allegro for incoative: ǩiõč»
 
-* LEXICON V_1Y_IY/ECC  piâssâd:piâss
-* LEXICON TV_1Y_IY/ECC  piâssâd:piâss
-* LEXICON V0_1Y_IY/ECC  piâssâd:piâss
+* LEXICON V_1Â_IY/ECC  piâssâd:piâss
+* LEXICON TV_1Â_IY/ECC  piâssâd:piâss
+* LEXICON V0_1Â_IY/ECC  piâssâd:piâss
 
-* LEXICON V_1Y_IOCC  riõššâd:riõ%{ʹØ%}šš
-* LEXICON IV_1Y_IOCC  riõššâd:riõ%{ʹØ%}šš
-* LEXICON V0_1Y_IOCC  riõššâd:riõ%{ʹØ%}šš
+* LEXICON V_1Â_IOCC  riõššâd:riõ%{ʹØ%}šš
+* LEXICON IV_1Â_IOCC  riõššâd:riõ%{ʹØ%}šš
+* LEXICON V0_1Â_IOCC  riõššâd:riõ%{ʹØ%}šš
 
-* LEXICON V_1Y_IOKK  čiõkkâd:čiõ%{ʹØ%}kk
-* LEXICON V0_1Y_IOKK  čiõkkâd:čiõkk
+* LEXICON V_1Â_IOKK  čiõkkâd:čiõ%{ʹØ%}kk
+* LEXICON V0_1Â_IOKK  čiõkkâd:čiõkk
 
 * LEXICON V_HUOLLYD  huõllâd:huõll
 * LEXICON IV_HUOLLYD  huõllâd:huõll
@@ -10180,9 +10189,9 @@ Imprt+ConNegII, Pass+PrfPrc
 
 * :%^YXX2YX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: aib»
 
-* LEXICON V_1Y_VUCC  aibbâd:aibb
-* LEXICON IV_1Y_VUCC  aibbâd:aibb
-* LEXICON V0_1Y_VUCC  aibbâd:aibb
+* LEXICON V_1Â_VUCC  aibbâd:aibb
+* LEXICON IV_1Â_VUCC  aibbâd:aibb
+* LEXICON V0_1Â_VUCC  aibbâd:aibb
 (1)  Inf: aibbâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
@@ -10213,9 +10222,9 @@ Imprt+ConNegII, Pass+PrfPrc
 
 * :%^YXX2YX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: aib»
 
-* LEXICON V_1Y_VYKK  kalggâd:ka%^1VOW%{ʹØ%}lgg
-* LEXICON IV_1Y_VYKK  kalggâd:ka%^1VOW%{ʹØ%}lgg
-* LEXICON TV_1Y_VYKK  kalggâd:ka%^1VOW%{ʹØ%}lgg
+* LEXICON V_1Â_VYKK  kalggâd:ka%^1VOW%{ʹØ%}lgg
+* LEXICON IV_1Â_VYKK  kalggâd:ka%^1VOW%{ʹØ%}lgg
+* LEXICON TV_1Â_VYKK  kalggâd:ka%^1VOW%{ʹØ%}lgg
 * : VSUF-INF_YD ;  (1)  Inf: tobddâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
@@ -10247,9 +10256,9 @@ Imprt+ConNegII, Pass+PrfPrc
 
 * :%^YXX2YX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: tobd»
 
-* LEXICON V_1Y_VYXX  tobddâd:to%^1VOW%{ʹØ%}bdd
-* LEXICON TV_1Y_VYXX  tobddâd:to%^1VOW%{ʹØ%}bdd
-* LEXICON V0_1Y_VYXX  tobddâd:to%^1VOW%{ʹØ%}bdd
+* LEXICON V_1Â_VYXX  tobddâd:to%^1VOW%{ʹØ%}bdd
+* LEXICON TV_1Â_VYXX  tobddâd:to%^1VOW%{ʹØ%}bdd
+* LEXICON V0_1Â_VYXX  tobddâd:to%^1VOW%{ʹØ%}bdd
 * : VSUF-INF_YD ;  (1)  Inf: tobddâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
@@ -10347,8 +10356,8 @@ Imprt+Pl3
 
 * :%^YXX2YX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: kuõsk»
 
-* LEXICON V_1Y_VWYKK  kuõskkâd:kuõskk
-* LEXICON V0_1Y_VWYKK  kuõskkâd:kuõskk
+* LEXICON V_1Â_VWYKK  kuõskkâd:kuõskk
+* LEXICON V0_1Â_VWYKK  kuõskkâd:kuõskk
 * : VSUF-INF_YD ;  (1)  Inf: kuõskkâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
@@ -10418,8 +10427,8 @@ Imprt+Pl3
 
 * :%^YXX2VX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: čiõut»
 
-* LEXICON V_1Y_IY/EYXX   viârmmâd:viâ%{ʹØ%}rmm
-* LEXICON V0_1Y_IY/EYXX   viârmmâd:viâ%{ʹØ%}rmm
+* LEXICON V_1Â_IY/EYXX   viârmmâd:viâ%{ʹØ%}rmm
+* LEXICON V0_1Â_IY/EYXX   viârmmâd:viâ%{ʹØ%}rmm
 
 * : VSUF-INF_YD ;  (1)  Inf: sǩiâŋkkâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
@@ -10454,8 +10463,8 @@ Imprt+Pl3
 
 * :%^YXX2YX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: sǩiâŋk»
 
-* LEXICON V_1Y_IY/EYKK  sǩiâŋkkâd:sǩiâ%{ʹØ%}ŋkk
-* LEXICON V0_1Y_IY/EYKK  sǩiâŋkkâd:sǩiâŋkk
+* LEXICON V_1Â_IY/EYKK  sǩiâŋkkâd:sǩiâ%{ʹØ%}ŋkk
+* LEXICON V0_1Â_IY/EYKK  sǩiâŋkkâd:sǩiâŋkk
 
 * : VSUF-INF_YD ;  (1)  Inf: sǩiâŋkkâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
@@ -10490,11 +10499,11 @@ Imprt+Pl3
 
 * :%^YXX2YX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: sǩiâŋk»
 
-* LEXICON V_1Y_VWUKK  čuõiggâd:čuõigg
-* LEXICON V0_1Y_VWUKK  čuõiggâd:čuõigg
+* LEXICON V_1Â_VWUKK  čuõiggâd:čuõigg
+* LEXICON V0_1Â_VWUKK  čuõiggâd:čuõigg
 
-* LEXICON V_1Y_VWUCC  suõimmâd:suõi%{ʹØ%}mm, piõullâd:piõu%{ʹØ%}ll
-* LEXICON V0_1Y_VWUCC  čuõiggâd:čuõigg
+* LEXICON V_1Â_VWUCC  suõimmâd:suõi%{ʹØ%}mm, piõullâd:piõu%{ʹØ%}ll
+* LEXICON V0_1Â_VWUCC  čuõiggâd:čuõigg
 
 * LEXICON V_LAADDYD  laaddâd:laadd
 * LEXICON IV_LAADDYD  laaddâd:laadd
@@ -15875,10 +15884,10 @@ CS-TEMP_
 NUM_ 
 NUM_VAHTT 
 
-NUM_1Y_VYXX 
-NUM_1Y_VUCC 
+NUM_1Â_VYXX 
+NUM_1Â_VUCC 
 NUM_TOLL 
-NUM_1Y_VCC 
+NUM_1Â_VCC 
 NUM_AELDD 
 NUM_KUEQLL 
 NUM_TAQHTT 
@@ -15889,7 +15898,7 @@ NUM_NELLJ
 
 NUM_AANAR 
 
-NUM_ATOM 
+NUM_1Â_ATOM 
 NUM_JEAQNNN 
 
 * **LEXICON NUM_LO** kuttlo:kuttl 
