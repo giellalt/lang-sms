@@ -240,7 +240,7 @@ following morpheme or word boundary
 
 <!-- {% raw %} -->
 ```
-* RBound = [(%^Hyphen: %-|%^NoHyphen:|%{%-Ø%}:) (∑) #:|.#.|%>|»|%-] ;
+* RBound = [(%^Hyphen: %-|%^NoHyphen: |%{%-Ø%}:) (∑) #: |.#.|%>|»|%-] ;
 ```
 <!-- {% endraw %} -->
 
@@ -1382,6 +1382,9 @@ vueʹn+N+Sg+Nom: **mother-in-law/anoppi**
 jeäʹnn+N+Sg+Loc+PxSg1: **mother/äiti**
 * *jeä0{ʹØ}nˈn^PALẸ^PAL^CCC2CAllegro>stan*
 * *jiẹˈʹn00000>stan*
+õõʹnni+N+Pl+Nom: **user/käyttäjä**
+* *õõʹnn{ʹØ}i^CC2C*
+* *õõʹn00i0*
 huânas+N+Sg+Nom: ****
 * *huânˈnas^Pen^CCC2C*
 * *huân00as00*

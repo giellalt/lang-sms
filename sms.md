@@ -8673,8 +8673,8 @@ NumContLex="1.2"
 * :%^I2J%>e SG-LOC ;		 jõõvvjest
 * :%^I2J SG-COM_IN ;		 jõõvvjin
 * :%^I2J%>e ESS/PAR ;  		 jõõvvjen
-* :%^CC2C PL-NOM ;		 jooʹđi
-* :%^CC2C%^I2J PL-OBL ;		 jõõvji
+* :%^Pen%^CC2C PL-NOM ;		 jooʹđi
+* :%^Pen%^CC2C%^I2J PL-OBL ;		 jõõvji
 * +Use/NGminip+Use/NG:%^I2J PL-OBL ;	 jõõvvji
 * +Use/NGminip+Use/NG: PL-NOM ;		 jõõvvi
 * :%^I2J VOONYS-STEM-PX ;  võnns-
@@ -8691,8 +8691,8 @@ NumContLex="1.2"
 * :%^I2J%>e SG-LOC ;		 jõõvvjest
 * :%^I2J SG-COM_IN ;		 jõõvvjin
 * :%^I2J%>e ESS/PAR ;  		 jõõvvjen
-* :%^CC2C PL-NOM ;		 jõõvi
-* :%^CC2C%^I2J PL-OBL ;		 jõõvji
+* :%^Pen%^CC2C PL-NOM ;		 jõõvi
+* :%^Pen%^CC2C%^I2J PL-OBL ;		 jõõvji
 * +Use/NGminip+Use/NG:%^I2J PL-OBL ;	 jõõvvji
 * +Use/NGminip+Use/NG: PL-NOM ;		 jõõvvi
 * :%^I2J VOONYS-STEM-PX ;  võnns-
@@ -13223,7 +13223,7 @@ following morpheme or word boundary
 
 <!-- {% raw %} -->
 ```
-* RBound = [(%^Hyphen: %-|%^NoHyphen:|%{%-Ø%}:) (∑) #:|.#.|%>|»|%-] ;
+* RBound = [(%^Hyphen: %-|%^NoHyphen: |%{%-Ø%}:) (∑) #: |.#.|%>|»|%-] ;
 ```
 <!-- {% endraw %} -->
 
@@ -14365,6 +14365,9 @@ vueʹn+N+Sg+Nom: **mother-in-law/anoppi**
 jeäʹnn+N+Sg+Loc+PxSg1: **mother/äiti**
 * *jeä0{ʹØ}nˈn^PALẸ^PAL^CCC2CAllegro>stan*
 * *jiẹˈʹn00000>stan*
+õõʹnni+N+Pl+Nom: **user/käyttäjä**
+* *õõʹnn{ʹØ}i^CC2C*
+* *õõʹn00i0*
 huânas+N+Sg+Nom: ****
 * *huânˈnas^Pen^CCC2C*
 * *huân00as00*
