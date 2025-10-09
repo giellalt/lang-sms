@@ -1,3 +1,7 @@
+# Divvun & Giellatekno - open source grammars for Sámi and other languages
+# Copyright © 2000-2025 The University of Tromsø & the Norwegian Sámi Parliament
+# http://giellatekno.uit.no & http://divvun.no
+
 # -*- cg-pre-pipe: "$GTHOME/giella-core/scripts/preprocess --abbr=$GTHOME/langs/sms/tools/preprocess/abbr.txt | hfst-optimised-lookup  $GTHOME/langs/sms/src/analyser-disamb-gt-desc.hfstol | $GTHOME/giella-core/scripts/lookup2cg" -*-
 
 # Distributed under the terms of the GNU General Public License version 2 
@@ -48,6 +52,7 @@ LIST EOS = (<<<) (</s>); # vislcg and CG-2 together.
 # ======================================
 
 LIST Err/Orth = Err/Orth ;
+LIST Err/Attr = Err/Attr ;
 
 LIST N = N ;
 LIST Sg = Sg ;
@@ -224,6 +229,14 @@ LIST @SUBJ-QH = @SUBJ-QH ;
 LIST @TITLE = @TITLE ; 
 LIST @VOC = @VOC ; 
 LIST @X = @X ;
+
+#!! #### Secondary tags
+# --------------
+
+LIST <vdic> = <vdic> ;
+LIST <copula> = <copula> ;
+LIST <AttrPred> = <AttrPred> ;
+
 
 LIST PO-WITH-GEN = "âʹlnn" "diõtt" "ǩeäčča" "kuâŋŋa" "kuâŋŋad" "luzz" "mieʹldd" "määiʹnest" "ool" "pirr" "tueʹǩǩen" "vuâlla" "vuâstta" "vueʹlnn" "åʹrnn" "årra" ;
 LIST REAL-TITLE = "prof" "cand.philol" ;
@@ -449,6 +462,11 @@ LIST COUNTABLE = "uási" "káppálâh" "kápuluh" "cekki" "momentt" ;
 # =================== #
 #!! # Disambiguation 
 # =================== #
+
+BEFORE-SECTIONS  #!! BEFORE-SECTIONS
+
+SUBSTITUTE (A) (A <AttrPred>) TARGET A - Err/Attr - Err/Orth IF (0 Attr LINK 0 (A Nom)); #this rule needs to be before disambiguation starts
+	## noere nïejte jïh nïejte lea noere
 
 
 
