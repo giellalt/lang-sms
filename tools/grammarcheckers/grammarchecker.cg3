@@ -233,6 +233,7 @@ LIST Sem/Domain = Sem/Domain ;			    #!! Sem/Domain
 LIST Sem/Feat-phys = Sem/Feat-phys ;	    #!! Sem/Feat-phys
 LIST Sem/Fem = Sem/Fem ;				    #!! Sem/Fem
 LIST Sem/Group = Sem/Group ;			    #!! Sem/Group
+LIST Sem/Hum = Sem/Hum ;				    #!! Sem/Hum
 LIST Sem/Lang = Sem/Lang ;				    #!! Sem/Lang
 LIST Sem/Mal = Sem/Mal ;				    #!! Sem/Mal
 LIST Sem/Measr = Sem/Measr ;			    #!! Sem/Measr
@@ -337,7 +338,6 @@ SET NOT-FAUXV = FMAINV OR OBJ + V OR ADVL + V ;
 # Works after the mapping rules for verbs.
 SET SYN-V = FMAINV OR FAUXV OR V + SUBJ OR OBJ + V OR ADVL + V OR (V @>N) OR (V @N<) OR (V @A<) ; #!! SYN-V
 LIST @X = @X ;    #!! @X
-
 
 
 # ========
@@ -614,12 +614,10 @@ MAPPING-PREFIX = & ;
 
 LIST COERROR = COERROR ;
 
-LIST &err-agr = &err-agr ;
-LIST &err-gen-po = &err-gen-po ;
-LIST &err-no-conneg = &err-no-conneg ;
-LIST &err-orrood-inf = &err-orrood-inf ;
-LIST &err-ext-agr = &err-ext-agr ;
-LIST &err-ext-vagr = &err-ext-vagr ;
+LIST &msyn-attr-pred = &msyn-attr-pred ;
+LIST &msyn-hab-acc-nom = &msyn-hab-acc-nom ;
+LIST &msyn-loc-ess = &msyn-loc-ess ;
+
 
 LIST &punct-aistton-both = &punct-aistton-both ;
 LIST &punct-aistton-left = &punct-aistton-left ;
@@ -661,6 +659,15 @@ ADD:msyn-attr-pred (&msyn-attr-pred) TARGET (A Attr) IF (*-1 (N Nom) OR ("leeʹd
 	#$ Evvan lij kuʹǩǩ.
 	
 COPY:msyn-attr-pred (Sg Nom SUGGEST) EXCEPT (Attr) TARGET (A &msyn-attr-pred) ;
+
+# Habitive rules: subject in nominative
+#############################################
+
+ADD:msyn-hab-acc-nom (&msyn-hab-acc-nom) TARGET (N Pl Acc) IF (*-1 ("leeʹd") BARRIER NOT-NPMODADV LINK *-1 (Pron Pers Loc) OR (N Loc) + Sem/Hum BARRIER NOT-ADV-PCLE);
+	## Mon leäm jeältõõǥǥâst, leâša muʹst lie miâlggâd jiânnai staarjõõzzid.
+	#$ Mon leäm jeältõõǥǥâst, leâša muʹst lie miâlggâd jiânnai staarjõõzz. 
+
+COPY:msyn-hab-acc-nom (Nom SUGGEST) EXCEPT (Acc &msyn-hab-acc-nom) OR (Ill &msyn-hab-acc-nom) TARGET (&msyn-hab-acc-nom) ;
 
 
 # Valency rules
