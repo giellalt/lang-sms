@@ -134,6 +134,7 @@ Sem/Domain
 Sem/Feat-phys
 Sem/Fem
 Sem/Group
+Sem/Hum
 Sem/Lang
 Sem/Mal
 Sem/Measr

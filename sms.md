@@ -16734,6 +16734,7 @@ Sem/Domain
 Sem/Feat-phys
 Sem/Fem
 Sem/Group
+Sem/Hum
 Sem/Lang
 Sem/Mal
 Sem/Measr
@@ -16917,7 +16918,11 @@ Tags and sets #
 
 We declare BOS, EOS and all the tags from the fst.
 
+##### Secondary tags
+
 ## Disambiguation 
+
+BEFORE-SECTIONS
 
 ### Cycle 0, rules without context
 
