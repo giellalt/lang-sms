@@ -14048,6 +14048,9 @@ kueiʹt+Num+Sg+Gen **two/kaksi**
 piânˈnai+N+Ess: **dog/koira**
 * *piânˈn^CCC2CC>{ʼØ}j>en*
 * *piân0n0>ʼj>en*
+juukki+N+Pl+Acc: **drinker/juoja**
+* *juukki^Pen^KK2GG^I2J>id*
+* *juuǥǥj000>id*
 
 peigg+N+Sg+Ill
 * *pẹ^1VOWigg^VOWRaise^VXX2YXX>u*
