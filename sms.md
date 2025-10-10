@@ -476,55 +476,55 @@ IN PENULTIMATE Â:0
 * +Err/Orth+Attr:jas ENDLEX ;  c.f. sjm faʹlsǩeejas
 
 WORK HERE 2015-10-14 deverbals
-* LEXICON A_PRSPRC-NOGRADE-I  uuidi:uuidi
+* LEXICON A_PRSPRCÂ_NOGRADE-I  uuidi:uuidi
 
-* LEXICON A_PRSPRC-VCC-I  cõggi:cõggi
+* LEXICON A_PRSPRCÂ_VCC-I  cõggi:cõggi
 
-* LEXICON A_PRSPRC-VQCC-I  elstõʹtti:elstõ%^1VOWʹtti
+* LEXICON A_PRSPRCE_VQCC-I  elstõʹtti:elstõ%^1VOWʹtti
 
-* LEXICON A_PRSPRC-VHXX-I  lahtti:la%^1VOWhtti
+* LEXICON A_PRSPRCÂ_VHXX-I  lahtti:la%^1VOWhtti
 
-* LEXICON A_PRSPRC-VQHXX-I  puʹhtti:pu%^1VOWhtti
-* LEXICON A_PRSPRC-VWCCC-I  kuõʹddi:kuõʹdˈdi
+* LEXICON A_PRSPRCE_VQHXX-I  puʹhtti:pu%^1VOWhtti
+* LEXICON A_PRSPRCÂ_VWCCC-I  kuõʹddi:kuõʹdˈdi
 
-* LEXICON A_PRSPRC-VWQCCC-I  kuõʹddi:kuõʹdˈdi
+* LEXICON A_PRSPRCE_VWQCCC-I  kuõʹddi:kuõʹdˈdi
 
-* LEXICON A_PRSPRC-VWHYY-AI  veâhssai
+* LEXICON A_PRSPRCA_VWHYY-AI  veâhssai
 
-* LEXICON A_PRSPRC-VVCC-I  jõõvvi:jõõvvi
+* LEXICON A_PRSPRCÂ_VVCC-I  jõõvvi:jõõvvi
 * Yaml: **A-vaeaezhzh**
 
-* LEXICON A_PRSPRC-VVQCC-I  jooʹtti+A:jooʹtti
+* LEXICON A_PRSPRCE_VVQCC-I  jooʹtti+A:jooʹtti
 * Yaml: **A-vaeaezhzh**
-* LEXICON A_PRSPRC-VVQKK-I  kooʹcci+A:kooʹcci
-* LEXICON A_PRSPRC-VVKK-I  lookki:lookki
+* LEXICON A_PRSPRCE_VVQKK-I  kooʹcci+A:kooʹcci
+* LEXICON A_PRSPRCÂ_VVKK-I  lookki:lookki
 * LEXICON A_KOBDDI  kobddi:kobddi SEE following A_TOBDDI diff
 
-* LEXICON A_PRSPRC-VWKK-I  ǩiõssi:ǩiõssi
+* LEXICON A_PRSPRCÂ_VWKK-I  ǩiõssi:ǩiõssi
 
-* LEXICON A_PRSPRC-VWQKK-I  ǩiõʹssi:ǩiõʹssi
-* LEXICON A_PRSPRC-VWCC-I  vuõlli:vuõlli
+* LEXICON A_PRSPRCE_VWQKK-I  ǩiõʹssi:ǩiõʹssi
+* LEXICON A_PRSPRCÂ_VWCC-I  vuõlli:vuõlli
 
-* LEXICON A_PRSPRC-VWQCC-I  puõʹtti:puõʹtti
-* LEXICON A_PRSPRC-VWXYY-I  kuõskki:kuõskki
+* LEXICON A_PRSPRCE_VWQCC-I  puõʹtti:puõʹtti
+* LEXICON A_PRSPRCÂ_VWXYY-I  kuõskki:kuõskki
 
-* LEXICON A_PRSPRC-VWQXYY-I  hieʹrvvi+A:hieʹrvvi
-* LEXICON A_PRSPRC-VCC-AI  kåččai:kåččai
-* LEXICON A_PRSPRC-VVCC-AI  peellai:peellai
-* LEXICON A_PRSPRC-VVKK-AI  pååssai:pååssai
-* LEXICON A_PRSPRC-VYXX-AI  särnnai:särnnai
-* LEXICON A_PRSPRC-VWCC-AI  vuejjai:vuejjai
-* LEXICON A_PRSPRC-VWKK-AI  reäkkai:reäkkai
-* LEXICON A_PRSPRC-VWCCC-AI  vuäggai:vuägˈgai
-* LEXICON A_PRSPRC-VWXYY-AI  meälttai:meälttai
+* LEXICON A_PRSPRCE_VWQXYY-I  hieʹrvvi+A:hieʹrvvi
+* LEXICON A_PRSPRCA_VCC-AI  kåččai:kåččai
+* LEXICON A_PRSPRCA_VVCC-AI  peellai:peellai
+* LEXICON A_PRSPRCA_VVKK-AI  pååssai:pååssai
+* LEXICON A_PRSPRCA_VYXX-AI  särnnai:särnnai
+* LEXICON A_PRSPRCA_VWCC-AI  vuejjai:vuejjai
+* LEXICON A_PRSPRCA_VWKK-AI  reäkkai:reäkkai
+* LEXICON A_PRSPRCA_VWCCC-AI  vuäggai:vuägˈgai
+* LEXICON A_PRSPRCA_VWXYY-AI  meälttai:meälttai
 
-* LEXICON A_PRSPRC-VYXX-I  äjjnõʹstti:äjjnõʹstti
+* LEXICON A_PRSPRCÂ_VYXX-I  äjjnõʹstti:äjjnõʹstti
 
-* LEXICON A_PRSPRC-VQYXX-I  äjjnõʹstti:äjjnõʹstti
+* LEXICON A_PRSPRCE_VQYXX-I  äjjnõʹstti:äjjnõʹstti
 
 * LEXICON A_LIEQDHDHDHI  lieʹđđi:lieʹđˈđi
 
-* LEXICON A_PRSPRC-VWHCC-I  viõhssi:viõhssi
+* LEXICON A_PRSPRCÂ_VWHCC-I  viõhssi:viõhssi
 
 * LEXICON A_VUOIQNNI  vuõiʹnni:vuõiʹnn%{ʼØ%}i
 
@@ -2093,25 +2093,25 @@ stemtype
 Class 6 according to Feist 153-154
 PRESENT A-02_PARTICIPLES
 
-* LEXICON A-01_PRSPRC-NOGRADE-I  uuidi:uuidi
+* LEXICON A-01_PRSPRCÂ_NOGRADE-I  uuidi:uuidi
 * Yaml: **N-joovvi**
 * There are several stem types
 * cõggi:cõggi
 NumContLex="1.2"
 
-* LEXICON A-01_PRSPRC-VCC-I  cõggi:cõggi
+* LEXICON A-01_PRSPRCÂ_VCC-I  cõggi:cõggi
 * Yaml: **N-joovvi**
 * There are several stem types
 * cõggi:cõggi
 NumContLex="1.2"
 
-* LEXICON A-01_PRSPRC-VQCC-I 
+* LEXICON A-01_PRSPRCE_VQCC-I 
 * Yaml: **N-joovvi**
 * There are several stem types
 * cõggi:cõggi
 NumContLex="1.2"
 
-* LEXICON A-01_PRSPRC-VVCC-I  jõõvvi:jõõvvi
+* LEXICON A-01_PRSPRCÂ_VVCC-I  jõõvvi:jõõvvi
 * Yaml: **N-joovvi**
 * There are several stem types
 * jõõvvi:jõõvvi
@@ -2127,7 +2127,7 @@ NumContLex="1.2"
 * +Use/NGminip+Use/NG:%^CC2C%^I2J A-02_PL-OBL ;		 jõõvji
 * +Use/NGminip+Use/NG: A-02_PL-NOM ;		 jõõvvi
 
-* LEXICON A-01_PRSPRC-VVQCC-I  jooʹtti:jooʹtti
+* LEXICON A-01_PRSPRCE_VVQCC-I  jooʹtti:jooʹtti
 * Yaml: **N-joovvi**
 * There are several stem types
 * jõõvvi:jõõvvi
@@ -2143,61 +2143,61 @@ NumContLex="1.2"
 * +Use/NGminip+Use/NG:%^CC2C%^I2J A-02_PL-OBL ;		 jõõvji
 * +Use/NGminip+Use/NG: A-02_PL-NOM ;		 jõõvvi
 
-* LEXICON A-01_PRSPRC-VVKK-I  lookki:lookki
+* LEXICON A-01_PRSPRCÂ_VVKK-I  lookki:lookki
 * Yaml: **lookk**
 * There are several stem types
 * lookki:lookki
 NumContLex="1.2"
 
-* LEXICON A-01_PRSPRC-VVQKK-I  
+* LEXICON A-01_PRSPRCE_VVQKK-I  
 * Yaml: **lookk**
 * There are several stem types
 * lookki:lookki
 NumContLex="1.2"
 
-* LEXICON A-01_PRSPRC-VWKK-I  ǩiõssi:ǩiõssi
+* LEXICON A-01_PRSPRCÂ_VWKK-I  ǩiõssi:ǩiõssi
 * Yaml: **N-joovvi**
 * There are several stem types
 * sirddi:sirddi
 NumContLex="1.2"
 
-* LEXICON A-01_PRSPRC-VWQKK-I 
+* LEXICON A-01_PRSPRCE_VWQKK-I 
 * Yaml: **N-joovvi**
 * There are several stem types
 * sirddi:sirddi
 NumContLex="1.2"
 
-* LEXICON A-01_PRSPRC-VWCC-I  vuõlli:vuõlli
+* LEXICON A-01_PRSPRCÂ_VWCC-I  vuõlli:vuõlli
 * Yaml: **N-vuolli**
 * There are several stem types
 * vuõlli:vuõlli
 NumContLex="1.2"
 
-* LEXICON A-01_PRSPRC-VWQCC-I  
+* LEXICON A-01_PRSPRCE_VWQCC-I  
 * Yaml: **N-vuolli**
 * There are several stem types
 * vuõlli:vuõlli
 NumContLex="1.2"
 
-* LEXICON A-01_PRSPRC-VWCCC-I  kuõʒʒi:kuõʒˈʒi
+* LEXICON A-01_PRSPRCÂ_VWCCC-I  kuõʒʒi:kuõʒˈʒi
 * Yaml: **N-vuolli**
 * There are several stem types
 * vuõlli:vuõlli
 NumContLex="1.2"
 
-* LEXICON A-01_PRSPRC-VWQCCC-I  kuõddi:kuõʹdˈdi
+* LEXICON A-01_PRSPRCE_VWQCCC-I  kuõddi:kuõʹdˈdi
 * Yaml: **N-vuolli**
 * There are several stem types
 * vuõlli:vuõlli
 NumContLex="1.2"
 
-* LEXICON A-01_PRSPRC-VWXYY-I  suõskki:suõskki
+* LEXICON A-01_PRSPRCÂ_VWXYY-I  suõskki:suõskki
 * Yaml: **suoskki**
 
-* LEXICON A-01_PRSPRC-VWQXYY-I  
+* LEXICON A-01_PRSPRCE_VWQXYY-I  
 * Yaml: **suoskki**
 
-* LEXICON A-01_PRSPRC-VCC-AI  kåččai:kåččai
+* LEXICON A-01_PRSPRCA_VCC-AI  kåččai:kåččai
 * Yaml: **kachchai**
 * There are several stem types
 NumContLex="
@@ -2212,7 +2212,7 @@ NumContLex="
 * +Use/NGminip+Use/NG: A-02_PL-NOM ; 
 * +Use/NGminip+Use/NG:%^Pen%^V2VV%^RmVow%^I2J A-02_PL-OBL ; 
 
-* LEXICON A-01_PRSPRC-VVCC-AI  peellai:peellai
+* LEXICON A-01_PRSPRCA_VVCC-AI  peellai:peellai
 * Yaml: **paassai**
 * There are several stem types
 NumContLex="
@@ -2227,7 +2227,7 @@ NumContLex="
 * +Use/NGminip+Use/NG: A-02_PL-NOM ; 
 * +Use/NGminip+Use/NG:%^Pen%^CC2C%^RmVow%^I2J A-02_PL-OBL ; 
 
-* LEXICON A-01_PRSPRC-VVKK-AI  pååssai:pååssai
+* LEXICON A-01_PRSPRCA_VVKK-AI  pååssai:pååssai
 * Yaml: **paassai**
 * There are several stem types
 NumContLex="
@@ -2242,31 +2242,31 @@ NumContLex="
 * +Use/NGminip+Use/NG: A-02_PL-NOM ; 
 * +Use/NGminip+Use/NG:%^Pen%^KK2GG%^RmVow%^I2J A-02_PL-OBL ; 
 
-* LEXICON A-01_PRSPRC-VYXX-AI  särnnai:särnnai
+* LEXICON A-01_PRSPRCA_VYXX-AI  särnnai:särnnai
 * Yaml: **sarnnai**
 * There are several stem types
 * särnnai:särnnai
 NumContLex="
 
-* LEXICON A-01_PRSPRC-VWCC-AI  vuejjai:vuejjai
+* LEXICON A-01_PRSPRCA_VWCC-AI  vuejjai:vuejjai
 * Yaml: **N-vuejjai**
 * There are several stem types
 * vuejjai:vuejjai
 NumContLex="
 
-* LEXICON A-01_PRSPRC-VWKK-AI  reäkkai:reäkkai
+* LEXICON A-01_PRSPRCA_VWKK-AI  reäkkai:reäkkai
 * Yaml: **N-reakkai**
 * There are several stem types
 * reäkkai:reäkkai
 NumContLex="
 
-* LEXICON A-01_PRSPRC-VWCCC-AI  vuäggai:vuägˈgai
+* LEXICON A-01_PRSPRCA_VWCCC-AI  vuäggai:vuägˈgai
 * Yaml: **N-reakkai**
 * There are several stem types
 * vuägˈgai:vuägˈgai
 NumContLex="
 
-* LEXICON A-01_PRSPRC-VWXYY-AI  meälttai:meälttai
+* LEXICON A-01_PRSPRCA_VWXYY-AI  meälttai:meälttai
 * Yaml: **sarnnai**
 * There are several stem types
 * meälttai:meälttai
@@ -2278,7 +2278,7 @@ NumContLex="
 
 participles in -I from verbs in ʹ-ed
 
-* LEXICON A-01_PRSPRC-VYXX-I  äjjnõʹstti:äjjnõʹstti
+* LEXICON A-01_PRSPRCÂ_VYXX-I  äjjnõʹstti:äjjnõʹstti
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
@@ -2286,7 +2286,7 @@ NumContLex="1.2"
 * sirddi:sirddi
 NumContLex="1.2"
 
-* LEXICON A-01_PRSPRC-VQYXX-I  äjjnõʹstti:äjjnõʹstti
+* LEXICON A-01_PRSPRCE_VQYXX-I  äjjnõʹstti:äjjnõʹstti
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
@@ -2294,7 +2294,7 @@ NumContLex="1.2"
 * sirddi:sirddi
 NumContLex="1.2"
 
-* LEXICON A-01_PRSPRC-VHXX-I  lahtti:la%^1VOWhtti
+* LEXICON A-01_PRSPRCÂ_VHXX-I  lahtti:la%^1VOWhtti
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
@@ -2302,7 +2302,7 @@ NumContLex="1.2"
 * sirddi:sirddi
 NumContLex="1.2"
 
-* LEXICON A-01_PRSPRC-VQHXX-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
+* LEXICON A-01_PRSPRCE_VQHXX-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
@@ -2310,7 +2310,7 @@ NumContLex="1.2"
 * sirddi:sirddi
 NumContLex="1.2"
 
-* LEXICON A-01_PRSPRC-VWHYY-AI  veâhssai:veâhssai
+* LEXICON A-01_PRSPRCA_VWHYY-AI  veâhssai:veâhssai
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
@@ -2331,7 +2331,7 @@ NumContLex="1.2"
 * vueʹstti:vueʹstti
 NumContLex="1.2"
 
-* LEXICON A-01_PRSPRC-VWHCC-I  viõhssi:viõhssi
+* LEXICON A-01_PRSPRCÂ_VWHCC-I  viõhssi:viõhssi
 
 * LEXICON A-01_VUOIQNNI  vuõiʹnni:vuõiʹnni
 * Yaml: **lookk**
@@ -8642,17 +8642,24 @@ stemtype
 
 Class 6 according to Feist 153-154
 PRESENT PARTICIPLES
-* LEXICON N_PRSPRC-VQCC-I  hirmstõʹtti+N:hirmstõ%^1VOWʹtti
-* LEXICON NMN_PRSPRC-VQCC-I  hirmstõʹtti+N:hirmstõ%^1VOWʹtti
+* LEXICON N_PRSPRCE_VQCC-I  hirmstõʹtti+N:hirmstõ%^1VOWʹtti
+* LEXICON NMN_PRSPRCE_VQCC-I  hirmstõʹtti+N:hirmstõ%^1VOWʹtti
 * Yaml: **N-joovvi**
 * There are several stem types
 * cõggi:cõggi
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VCC-I  cõggi:cõggi
-* LEXICON NMN_PRSPRC-VCC-I  cõggi:cõggi
+* LEXICON N_PRSPRCÂ_VCC-I  cõggi:cõggi
+* LEXICON NMN_PRSPRCÂ_VCC-I  cõggi:cõggi
 * Yaml: **N-joovvi**
+* There are several stem types
+* cõggi:cõggi
+NumContLex="1.2"
+* :%^I2J VOONYS-STEM-PX ;  võnns-
+
+* LEXICON NMN_PRSPRCÂ_VKK-I  cõggi:cõggi
+* Yaml: **FIXME**
 * There are several stem types
 * cõggi:cõggi
 NumContLex="1.2"
@@ -8661,8 +8668,8 @@ NumContLex="1.2"
 participles in -I from verbs in -âd
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VVQCC-I  jooʹtti+N:jooʹtti
-* LEXICON NMN_PRSPRC-VVQCC-I  jooʹtti+N:jooʹtti
+* LEXICON N_PRSPRCE_VVQCC-I  jooʹtti+N:jooʹtti
+* LEXICON NMN_PRSPRCE_VVQCC-I  jooʹtti+N:jooʹtti
 * Yaml: **N-joovvi**
 * There are several stem types
 * jõõvvi:jõõvvi
@@ -8679,8 +8686,8 @@ NumContLex="1.2"
 * +Use/NGminip+Use/NG: PL-NOM ;		 jõõvvi
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VVCC-I  jõõvvi:jõõvvi
-* LEXICON NMN_PRSPRC-VVCC-I  jõõvvi:jõõvvi
+* LEXICON N_PRSPRCÂ_VVCC-I  jõõvvi:jõõvvi
+* LEXICON NMN_PRSPRCÂ_VVCC-I  jõõvvi:jõõvvi
 * Yaml: **N-joovvi**
 * There are several stem types
 * jõõvvi:jõõvvi
@@ -8697,75 +8704,82 @@ NumContLex="1.2"
 * +Use/NGminip+Use/NG: PL-NOM ;		 jõõvvi
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VVQKK-I  kooʹcci+N:kooʹcci
+* LEXICON N_PRSPRCE_VVQKK-I  kooʹcci+N:kooʹcci
 inflection_type="?"
-* LEXICON NMN_PRSPRC-VVQKK-I  lookki:lookki
+* LEXICON NMN_PRSPRCE_VVQKK-I  lookki:lookki
 * Yaml: **lookk**
 * There are several stem types
 * lookki:lookki
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VVKK-I  lookki:lookki
-* LEXICON NMN_PRSPRC-VVKK-I  lookki:lookki
+* LEXICON N_PRSPRCÂ_VVKK-I  lookki:lookki
+* LEXICON NMN_PRSPRCÂ_VVKK-I  lookki:lookki
 * Yaml: **lookk**
 * There are several stem types
 * lookki:lookki
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWQKK-I  jueʹǩǩi+N:jueʹǩǩi
+* LEXICON N_PRSPRCE_VWQKK-I  jueʹǩǩi+N:jueʹǩǩi
 inflection_type="?"
-* LEXICON NMN_PRSPRC-VWQKK-I  jueʹǩǩi+N:jueʹǩǩi
+* LEXICON NMN_PRSPRCE_VWQKK-I  jueʹǩǩi+N:jueʹǩǩi
 * Yaml: **N-joovvi**
 * There are several stem types
 * sirddi:sirddi
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWKK-I  ǩiõssi:ǩiõssi
-* LEXICON NMN_PRSPRC-VWKK-I  ǩiõssi:ǩiõssi
+* LEXICON N_PRSPRCÂ_VWKK-I  ǩiõssi:ǩiõssi
+* LEXICON NMN_PRSPRCÂ_VWKK-I  ǩiõssi:ǩiõssi
 * Yaml: **N-joovvi**
 * There are several stem types
 * sirddi:sirddi
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWQCC-I  jiõŋŋhokkisiõʹrri+N:jiõŋŋhokkisiõʹrri
+* LEXICON N_PRSPRCE_VWQCC-I  jiõŋŋhokkisiõʹrri+N:jiõŋŋhokkisiõʹrri
 inflection_type="?"
-* LEXICON NMN_PRSPRC-VWQCC-I  vuõlli:vuõlli
+* LEXICON NMN_PRSPRCE_VWQCC-I  vuõlli:vuõlli
 * Yaml: **N-vuolli**
 * There are several stem types
 * vuõlli:vuõlli
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWCC-I  vuõlli:vuõlli
-* LEXICON NMN_PRSPRC-VWCC-I  vuõlli:vuõlli
+* LEXICON N_PRSPRCÂ_VWCC-I  vuõlli:vuõlli
+* LEXICON NMN_PRSPRCÂ_VWCC-I  vuõlli:vuõlli
 * Yaml: **N-vuolli**
 * There are several stem types
 * vuõlli:vuõlli
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWQCCC-I  kuõʹddi:kuõʹdˈdi
-* LEXICON NMN_PRSPRC-VWQCCC-I  kuõʹddi:kuõʹdˈdi
+* LEXICON N_PRSPRCE_VWQCCC-I  kuõʹddi:kuõʹdˈdi
+* LEXICON NMN_PRSPRCE_VWQCCC-I  kuõʹddi:kuõʹdˈdi
 * Yaml: **N-vuolli**
 * There are several stem types
 * vuõlli:vuõlli
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWCCC-I  kuõʒʒi:kuõʒˈʒi
-* LEXICON NMN_PRSPRC-VWCCC-I  kuõʒʒi:kuõʒˈʒi
+* LEXICON N_PRSPRCÂ_VWCCC-I  kuõʒʒi:kuõʒˈʒi
+* LEXICON NMN_PRSPRCÂ_VWCCC-I  kuõʒʒi:kuõʒˈʒi
 * Yaml: **N-vuolli**
 * There are several stem types
 * vuõlli:vuõlli
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWXYY-I  suõskki:suõskki
-* LEXICON NMN_PRSPRC-VWXYY-I  suõskki:suõskki
+* LEXICON NMN_PRSPRCÂ_VWKKK-I  piõgg:piõgˈgi
+* Yaml: **N-vuolli**
+* There are several stem types
+* piõgg:piõgˈgi
+NumContLex="1.2"
+* :%^I2J VOONYS-STEM-PX ;  võnns-
+
+* LEXICON N_PRSPRCÂ_VWXYY-I  suõskki:suõskki
+* LEXICON NMN_PRSPRCÂ_VWXYY-I  suõskki:suõskki
 * Yaml: **suoskki**
 
 * :%^I2J VOONYS-STEM-PX ;  võnns-
@@ -8795,8 +8809,8 @@ participles in -AI from verbs in -ad
 * +Use/NGminip+Use/NG:%^RmVow%^I2J PL-OBL ; 
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VCC-AI  kåččai:kåččai
-* LEXICON NMN_PRSPRC-VCC-AI  kåččai:kåččai
+* LEXICON N_PRSPRCA_VCC-AI  kåččai:kåččai
+* LEXICON NMN_PRSPRCA_VCC-AI  kåččai:kåččai
 * Yaml: **kachchai**
 * There are several stem types
 NumContLex="
@@ -8812,8 +8826,8 @@ NumContLex="
 * +Use/NGminip+Use/NG:%^Pen%^V2VV%^RmVow%^I2J PL-OBL ; 
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VVCC-AI  peellai:peellai
-* LEXICON NMN_PRSPRC-VVCC-AI  peellai:peellai
+* LEXICON N_PRSPRCA_VVCC-AI  peellai:peellai
+* LEXICON NMN_PRSPRCA_VVCC-AI  peellai:peellai
 * Yaml: **paassai**
 * There are several stem types
 NumContLex="
@@ -8829,8 +8843,8 @@ NumContLex="
 * +Use/NGminip+Use/NG:%^Pen%^CC2C%^RmVow%^I2J PL-OBL ; 
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VVKK-AI  pååssai:pååssai
-* LEXICON NMN_PRSPRC-VVKK-AI  pååssai:pååssai
+* LEXICON N_PRSPRCA_VVKK-AI  pååssai:pååssai
+* LEXICON NMN_PRSPRCA_VVKK-AI  pååssai:pååssai
 * Yaml: **paassai**
 * There are several stem types
 NumContLex="
@@ -8846,40 +8860,40 @@ NumContLex="
 * +Use/NGminip+Use/NG:%^Pen%^KK2GG%^RmVow%^I2J PL-OBL ; 
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VYXX-AI  särnnai:särnnai
-* LEXICON NMN_PRSPRC-VYXX-AI  särnnai:särnnai
+* LEXICON N_PRSPRCA_VYXX-AI  särnnai:särnnai
+* LEXICON NMN_PRSPRCA_VYXX-AI  särnnai:särnnai
 * Yaml: **sarnnai**
 * There are several stem types
 * särnnai:särnnai
 NumContLex="
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWCC-AI  vuejjai:vuejjai
-* LEXICON NMN_PRSPRC-VWCC-AI  vuejjai:vuejjai
+* LEXICON N_PRSPRCA_VWCC-AI  vuejjai:vuejjai
+* LEXICON NMN_PRSPRCA_VWCC-AI  vuejjai:vuejjai
 * Yaml: **N-vuejjai**
 * There are several stem types
 * vuejjai:vuejjai
 NumContLex="
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWKK-AI  reäkkai:reäkkai
-* LEXICON NMN_PRSPRC-VWKK-AI  reäkkai:reäkkai
+* LEXICON N_PRSPRCA_VWKK-AI  reäkkai:reäkkai
+* LEXICON NMN_PRSPRCA_VWKK-AI  reäkkai:reäkkai
 * Yaml: **N-reakkai**
 * There are several stem types
 * reäkkai:reäkkai
 NumContLex="
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWCCC-AI  vuäggai:vuägˈgai
-* LEXICON NMN_PRSPRC-VWCCC-AI  vuäggai:vuägˈgai
+* LEXICON N_PRSPRCA_VWCCC-AI  vuäggai:vuägˈgai
+* LEXICON NMN_PRSPRCA_VWCCC-AI  vuäggai:vuägˈgai
 * Yaml: **N-reakkai**
 * There are several stem types
 * vuägˈgai:vuägˈgai
 NumContLex="
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWXYY-AI  meälttai:meälttai
-* LEXICON NMN_PRSPRC-VWXYY-AI  meälttai:meälttai
+* LEXICON N_PRSPRCA_VWXYY-AI  meälttai:meälttai
+* LEXICON NMN_PRSPRCA_VWXYY-AI  meälttai:meälttai
 * Yaml: **sarnnai**
 * There are several stem types
 * meälttai:meälttai
@@ -8906,9 +8920,9 @@ participles in -I from verbs in ʹ-ed
 * : PL-NOM ; 
 * +Use/NGminip+Use/NG:%^RmVow%^I2J PL-OBL ; 
 
-* LEXICON N_PRSPRC-VQYXX-I  äjjnõʹstti:äjjnõʹstti
+* LEXICON N_PRSPRCE_VQYXX-I  äjjnõʹstti:äjjnõʹstti
 inflection_type="?"
-* LEXICON NMN_PRSPRC-VQYXX-I  äjjnõʹstti:äjjnõʹstti
+* LEXICON NMN_PRSPRCE_VQYXX-I  äjjnõʹstti:äjjnõʹstti
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
@@ -8917,8 +8931,17 @@ NumContLex="1.2"
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VYXX-I  äjjnõʹstti:äjjnõʹstti
-* LEXICON NMN_PRSPRC-VYXX-I  äjjnõʹstti:äjjnõʹstti
+* LEXICON N_PRSPRCÂ_VYXX-I  aibbi:a%^1VOWi%{ʹØ%}bbi
+* LEXICON NMN_PRSPRCÂ_VYXX-I  aibbi:a%^1VOWi%{ʹØ%}bbi
+* Yaml: **lookk**
+* There are several stem types
+* aibbi:a%^1VOWi%{ʹØ%}bbi
+NumContLex="1.2"
+* aibbi:a%^1VOWi%{ʹØ%}bbi
+NumContLex="1.2"
+* :%^I2J VOONYS-STEM-PX ;  võnns-
+
+* LEXICON NMN_PRSPRCÂ_VYKK-I  lauggi:la%^1VOWu%{ʹØ%}ggi
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
@@ -8927,9 +8950,9 @@ NumContLex="1.2"
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VQHXX-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
+* LEXICON N_PRSPRCE_VQHXX-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
 inflection_type="?"
-* LEXICON NMN_PRSPRC-VQHXX-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
+* LEXICON NMN_PRSPRCE_VQHXX-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
@@ -8938,9 +8961,9 @@ NumContLex="1.2"
 NumContLex="1.2"
 * :%^Pen%^PAL%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VQHKK-I  huʹvǧǧi:hu%^1VOW%{ʹØ%}v%{ʹØ%}ggi
+* LEXICON N_PRSPRCE_VQHKK-I  huʹvǧǧi:hu%^1VOW%{ʹØ%}v%{ʹØ%}ggi
 inflection_type="?"
-* LEXICON NMN_PRSPRC-VQHKK-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
+* LEXICON NMN_PRSPRCE_VQHKK-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
@@ -8949,8 +8972,8 @@ NumContLex="1.2"
 NumContLex="1.2"
 * :%^Pen%^PAL%^Pen%^PALK%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VHXX-I  lahtti:la%^1VOWhtti
-* LEXICON NMN_PRSPRC-VHXX-I  lahtti:la%^1VOWhtti
+* LEXICON N_PRSPRCÂ_VHXX-I  lahtti:la%^1VOWhtti
+* LEXICON NMN_PRSPRCÂ_VHXX-I  lahtti:la%^1VOWhtti
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
@@ -8959,9 +8982,9 @@ NumContLex="1.2"
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWQHYY-I  vuõʹhssi+N:vuõʹhssi
+* LEXICON N_PRSPRCE_VWQHYY-I  vuõʹhssi+N:vuõʹhssi
 inflection_type="?"
-* LEXICON NMN_PRSPRC-VWQHYY-I  vuõʹhssi+N:vuõʹhssi
+* LEXICON NMN_PRSPRCE_VWQHYY-I  vuõʹhssi+N:vuõʹhssi
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
@@ -8970,8 +8993,8 @@ NumContLex="1.2"
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWHYY-I  čiõhčči:čiõhčči
-* LEXICON NMN_PRSPRC-VWHYY-I  čiõhčči:čiõhčči
+* LEXICON N_PRSPRCÂ_VWHYY-I  čiõhčči:čiõhčči
+* LEXICON NMN_PRSPRCÂ_VWHYY-I  čiõhčči:čiõhčči
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
@@ -9727,22 +9750,22 @@ The lexicon *V0_LEEQD* for the copula
 * LEXICON TV_LAUKKOOLLYD  laukkõõllâd:laukkõõll
 * LEXICON V0_LAUKKOOLLYD  laukkõõllâd:laukkõõll
 
-* : VSUF-INF_YD ; 1 laukkõõllâd
+* : VSUF-INF_ÂD ; 1 laukkõõllâd
 * +Ind+Prs+Sg3:%^VOWLower K ;  laukkââll
 * +Ind+Prs+Pl3:%^VV2V%^VOWLower%^PAL%>e K ; 3 laukkâʹlle
-* :%^VV2V%^PAL VSUF-IND-PRT_PL3_YD ; 4 laukkõʹlle
-* :%^CC2C VSUF-I-POTKOND_YD ; 5 laukkõõl-
-* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ; 5 ERR laukkõõll-
+* :%^VV2V%^PAL VSUF-IND-PRT_PL3_ÂD ; 4 laukkõʹlle
+* :%^CC2C VSUF-I-POTKOND_ÂD ; 5 laukkõõl-
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_ÂD ; 5 ERR laukkõõll-
 * +Pot+Sg3:%^CC2C%>âž   K ; 6 laukkõõl-
 * +Imprt+Sg3:%^VOWLower%^CC2C%>as K ; 7 laukkââlas 2024-06-11 was laukkõõlas ?Feist
-* :%^VV2V VSUF-IMPRT-CONNEGII_YD ; 8 laukkõll-
+* :%^VV2V VSUF-IMPRT-CONNEGII_ÂD ; 8 laukkõll-
 * +Imprt+ConNegII:%^VV2V%>u K ;  laukkõllu
 * +Imprt+Pl3:%^VV2V%^VOWLower%>az K ;  laukkâllaz
 
 * LEXICON V_1Â_VVKK  viikkâd:viikk
 * LEXICON IV_1Â_VVKK  viikkâd:viikk
 * LEXICON TV_1Â_VVKK  viikkâd:viikk
-* : VSUF-INF_YD ;  (1)  Inf: viikkâd
+* : VSUF-INF_ÂD ;  (1)  Inf: viikkâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
@@ -9751,7 +9774,7 @@ NomAct in MOsh
 * *põõss%>âd*
 * *põõss%>âd*
 
-* :%^VOWLower VSUF-IND-PRS-SG3_YD ;  (2)  Ind.Prs.Sg3: veekk
+* :%^VOWLower VSUF-IND-PRS-SG3_ÂD ;  (2)  Ind.Prs.Sg3: veekk
 +V+Ind+Prs+Sg3
 * *põõss%^VOWLower*
 * *pââss0*
@@ -9761,13 +9784,13 @@ NomAct in MOsh
 * *põõ0ss%^VV2V%^VOWLower%^PAL%^PALK%>e*
 * *pâ0ʹss000%>e*
 
-* :%^VV2V%^PAL%^PALK VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: viʹǩǩe
+* :%^VV2V%^PAL%^PALK VSUF-IND-PRT_PL3_ÂD ;  (4)  Ind.Prt.Pl3: viʹǩǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 * *põõ0ss%^VV2V%^PAL%>e*
 * *põ0ʼss00%>e*
 
-* :%^KK2GG VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: viiǥǥâž
-* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
+* :%^KK2GG VSUF-I-POTKOND_ÂD ;  (5-6)  Pot.Sg3: viiǥǥâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_ÂD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -9779,7 +9802,7 @@ Imprt+Sg3
 * *põõss%^VOWLower%^KK2GG%>as*
 * *pââzz00%>as*
 
-* :%^VV2V VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.ConNegII: vikku
+* :%^VV2V VSUF-IMPRT-CONNEGII_ÂD ;  (8)  Imprt.ConNegII: vikku
 Imprt+ConNegII, Pass+PrfPrc
 * *põõss%^VV2V%>u*
 * *põ0ss0%>u*
@@ -9794,7 +9817,7 @@ Imprt+Pl3
 
 * LEXICON V_1Â_VVSS  koossâd:kooss
 * LEXICON IV_1Â_VVSS  koossâd:kooss
-* : VSUF-INF_YD ;  (1)  Inf: viikkâd
+* : VSUF-INF_ÂD ;  (1)  Inf: viikkâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
@@ -9803,7 +9826,7 @@ NomAct in MOsh
 * *põõss%>âd*
 * *põõss%>âd*
 
-* :%^VOWLower VSUF-IND-PRS-SG3_YD ;  (2)  Ind.Prs.Sg3: veekk
+* :%^VOWLower VSUF-IND-PRS-SG3_ÂD ;  (2)  Ind.Prs.Sg3: veekk
 +V+Ind+Prs+Sg3
 * *põõss%^VOWLower*
 * *pââss0*
@@ -9813,13 +9836,13 @@ NomAct in MOsh
 * *põõ0ss%^VV2V%^VOWLower%^PAL%>e*
 * *pâ0ʹss000%>e*
 
-* :%^VV2V%^PAL VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: viʹǩǩe
+* :%^VV2V%^PAL VSUF-IND-PRT_PL3_ÂD ;  (4)  Ind.Prt.Pl3: viʹǩǩe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 * *põõ0ss%^VV2V%^PAL%>e*
 * *põ0ʼss00%>e*
 
-* :%^KK2GG VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: viiǥǥâž
-* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
+* :%^KK2GG VSUF-I-POTKOND_ÂD ;  (5-6)  Pot.Sg3: viiǥǥâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_ÂD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -9831,7 +9854,7 @@ Imprt+Sg3
 * *põõss%^VOWLower%^KK2GG%>as*
 * *pââzz00%>as*
 
-* :%^VV2V VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.ConNegII: vikku
+* :%^VV2V VSUF-IMPRT-CONNEGII_ÂD ;  (8)  Imprt.ConNegII: vikku
 Imprt+ConNegII, Pass+PrfPrc
 * *põõss%^VV2V%>u*
 * *põ0ss0%>u*
@@ -9894,23 +9917,23 @@ Imprt+Pl3
 * LEXICON V_PIYKKLOOCHCHYD  piâkklõõččâd:piâkklõõčč
 * LEXICON IV_PIYKKLOOCHCHYD  piâkklõõččâd:piâkklõõčč
 * LEXICON V0_PIYKKLOOCHCHYD  piâkklõõččâd:piâkklõõčč
-* : VSUF-INF_YD ;  (1)  Inf: piâkklõõččâd
+* : VSUF-INF_ÂD ;  (1)  Inf: piâkklõõččâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 Ind.Prt.ConNeg, Imprt+Pl3, PrfPrc
 NomAct in MOsh
 
-* :%^VOWLower VSUF-IND-PRS-SG3_YD ;  (2)  Ind.Prs.Sg3: piâkklââčč
+* :%^VOWLower VSUF-IND-PRS-SG3_ÂD ;  (2)  Ind.Prs.Sg3: piâkklââčč
 +V+Ind+Prs+Sg3
 
 * +Ind+Prs+Pl3:%^VV2V%^VOWLower%^PAL%>e K ;  (3)  Ind.Prs.Pl3: piâkklâʹčče
 +V+Ind+Prs+Pl3
 
-* :%^VV2V%^PAL VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: piâkklõʹčče
+* :%^VV2V%^PAL VSUF-IND-PRT_PL3_ÂD ;  (4)  Ind.Prt.Pl3: piâkklõʹčče
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* : VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: piâkklõõččâž
+* : VSUF-I-POTKOND_ÂD ;  (5-6)  Pot.Sg3: piâkklõõččâž
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -9918,7 +9941,7 @@ Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
 * +Imprt+Sg3:%^VOWLower%>as K ;  (7)  Imprt.Sg3: piâkklââččas
 Imprt+Sg3
 
-* :%^VV2V VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.ConNegII: piâkklõčču
+* :%^VV2V VSUF-IMPRT-CONNEGII_ÂD ;  (8)  Imprt.ConNegII: piâkklõčču
 Imprt+ConNegII, Pass+PrfPrc
 
 * +Imprt+Pl3:%^VV2V%^VOWLower%>az K ;  (9) Ind.Imprt.Pl3: piâkklâččaz
@@ -9936,23 +9959,23 @@ piâkkâd:piâ%{ʹØ%}kˈk
 * LEXICON V_1Â_IY/ECCC  riâddâd:riâdˈd
 * LEXICON V0_1Â_IY/ECCC  riâddâd:riâdˈd
 
-* : VSUF-INF_YD ;  (1) Inf: piõgˈgâd
+* : VSUF-INF_ÂD ;  (1) Inf: piõgˈgâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 Ind.Prt.ConNeg, Imprt+Pl3, PrfPrc
 NomAct in MOsh
 
-* :%^VOWLower VSUF-IND-PRS-SG3_YD ;  (2) Ind.Prs.Sg3: peâgˈg
+* :%^VOWLower VSUF-IND-PRS-SG3_ÂD ;  (2) Ind.Prs.Sg3: peâgˈg
 +V+Ind+Prs+Sg3
 
 * +Ind+Prs+Pl3:%^VOWLower%^PALÄ%^PAL%>e K ;  (3) Ind.Prs.Pl3: peäʹǧˈǧe
 +V+Ind+Prs+Pl3
 
-* :%^PAL VSUF-IND-PRT_PL3_YD ;  (4) Ind.Prt.Pl3: piõʹǧˈǧe
+* :%^PAL VSUF-IND-PRT_PL3_ÂD ;  (4) Ind.Prt.Pl3: piõʹǧˈǧe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* :%^CCC2CC VSUF-I-POTKOND_YD ;  (5-6) Ind.Imprt.Sg2: piõgg
+* :%^CCC2CC VSUF-I-POTKOND_ÂD ;  (5-6) Ind.Imprt.Sg2: piõgg
 Ind.Pot.Sg3: piõggâž
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
@@ -9961,7 +9984,7 @@ Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
 * +Imprt+Sg3:%^VOWLower%^CCC2CC%>as K ;  (7) Ind.Imprt.Sg3: peâggas
 Imprt+Sg3
 
-* : VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.13.ConNeg: piõgˈgu
+* : VSUF-IMPRT-CONNEGII_ÂD ;  (8)  Imprt.13.ConNeg: piõgˈgu
 Imprt+ConNegII, Pass+PrfPrc
 
 * :%^VOWLower K ;  (9) Imprt.Pl3: peâgˈgaz
@@ -9971,23 +9994,23 @@ Imprt+ConNegII, Pass+PrfPrc
 
 * LEXICON V_1Â_VWKKK  piõggâd:piõgˈg
 * LEXICON V0_1Â_VWKKK  piõggâd:piõgˈg
-* : VSUF-INF_YD ;  (1) Inf: piõgˈgâd
+* : VSUF-INF_ÂD ;  (1) Inf: piõgˈgâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 Ind.Prt.ConNeg, Imprt+Pl3, PrfPrc
 NomAct in MOsh
 
-* :%^VOWLower VSUF-IND-PRS-SG3_YD ;  (2) Ind.Prs.Sg3: peâgˈg
+* :%^VOWLower VSUF-IND-PRS-SG3_ÂD ;  (2) Ind.Prs.Sg3: peâgˈg
 +V+Ind+Prs+Sg3
 
 * +Ind+Prs+Pl3:%^VOWLower%^PALÄ%^PAL%^PALK%>e K ;  (3) Ind.Prs.Pl3: peäʹǧˈǧe
 +V+Ind+Prs+Pl3
 
-* :%^PAL%^PALK VSUF-IND-PRT_PL3_YD ;  (4) Ind.Prt.Pl3: piõʹǧˈǧe
+* :%^PAL%^PALK VSUF-IND-PRT_PL3_ÂD ;  (4) Ind.Prt.Pl3: piõʹǧˈǧe
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* :%^CCC2CC VSUF-I-POTKOND_YD ;  (5-6) Ind.Imprt.Sg2: piõgg
+* :%^CCC2CC VSUF-I-POTKOND_ÂD ;  (5-6) Ind.Imprt.Sg2: piõgg
 Ind.Pot.Sg3: piõggâž
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
@@ -9996,7 +10019,7 @@ Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
 * +Imprt+Sg3:%^VOWLower%^CCC2CC%>as K ;  (7) Ind.Imprt.Sg3: peâggas
 Imprt+Sg3
 
-* : VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.13.ConNeg: piõgˈgu
+* : VSUF-IMPRT-CONNEGII_ÂD ;  (8)  Imprt.13.ConNeg: piõgˈgu
 Imprt+ConNegII, Pass+PrfPrc
 
 * :%^VOWLower K ;  (9) Imprt.Pl3: peâgˈgaz
@@ -10006,23 +10029,23 @@ Imprt+ConNegII, Pass+PrfPrc
 
 * LEXICON V_KHIOCHCHCHYD  ǩiõččâd:ǩiõčˈč
 * LEXICON V0_KHIOCHCHCHYD  ǩiõččâd:ǩiõčˈč
-* : VSUF-INF_YD ;  (1) Inf: ǩiõčˈčâd
+* : VSUF-INF_ÂD ;  (1) Inf: ǩiõčˈčâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 Ind.Prt.ConNeg, Imprt+Pl3, PrfPrc
 NomAct in MOsh
 
-* :%^VOWLower%^PALÄ VSUF-IND-PRS-SG3_YD ;  (2) Ind.Prs.Sg3: ǩeäčˈč
+* :%^VOWLower%^PALÄ VSUF-IND-PRS-SG3_ÂD ;  (2) Ind.Prs.Sg3: ǩeäčˈč
 +V+Ind+Prs+Sg3
 
 * +Ind+Prs+Pl3:%^VOWLower%^PALÄ%^PAL%>e K ;  (3) Ind.Prs.Pl3: ǩeäʹčˈče
 +V+Ind+Prs+Pl3
 
-* :%^PAL VSUF-IND-PRT_PL3_YD ;  (4) Ind.Prt.Pl3: ǩiõʹčˈče
+* :%^PAL VSUF-IND-PRT_PL3_ÂD ;  (4) Ind.Prt.Pl3: ǩiõʹčˈče
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* :%^CCC2CC VSUF-I-POTKOND_YD ;  (5-6) Ind.Imprt.Sg2: ǩiõčč
+* :%^CCC2CC VSUF-I-POTKOND_ÂD ;  (5-6) Ind.Imprt.Sg2: ǩiõčč
 Ind.Pot.Sg3: ǩiõččâž
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
@@ -10031,7 +10054,7 @@ Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
 * +Imprt+Sg3:%^VOWLower%^PALÄ%^CCC2CC%>as K ;  (7) Ind.Imprt.Sg3: ǩeäččas
 Imprt+Sg3
 
-* : VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.13.ConNeg: ǩiõčˈču
+* : VSUF-IMPRT-CONNEGII_ÂD ;  (8)  Imprt.13.ConNeg: ǩiõčˈču
 Imprt+ConNegII, Pass+PrfPrc
 
 * :%^VOWLower K ;  (9) Imprt.Pl3: ǩeäčˈčaz
@@ -10054,24 +10077,24 @@ Imprt+ConNegII, Pass+PrfPrc
 * LEXICON IV_HUOLLYD  huõllâd:huõll
 * LEXICON TV_HUOLLYD  huõllâd:huõll
 * LEXICON V0_HUOLLYD  huõllâd:huõll
-* : VSUF-INF_YD ;  (1)  Inf: huõllâd
+* : VSUF-INF_ÂD ;  (1)  Inf: huõllâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 Ind.Prt.ConNeg, Imprt+Pl3, PrfPrc
 NomAct in MOsh
 
-* :%^VOWLower VSUF-IND-PRS-SG3_YD ;  (2)  Ind.Prs.Sg3: huâll
+* :%^VOWLower VSUF-IND-PRS-SG3_ÂD ;  (2)  Ind.Prs.Sg3: huâll
 +Ind+Prs+Sg3, +Imprt+Pl3
 
 * +Ind+Prs+Pl3:%^VOWLower%^PALE%^PAL%^CC2CCC%>e K ;  (3)  Ind.Prs.Pl3: hueʹlˈle
 +Ind+Prs+Pl3
 
-* :%^PAL%^CC2CCC VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: huõʹlˈle
+* :%^PAL%^CC2CCC VSUF-IND-PRT_PL3_ÂD ;  (4)  Ind.Prt.Pl3: huõʹlˈle
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* :%^CC2C VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: huõlâž
-* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: ERR
+* :%^CC2C VSUF-I-POTKOND_ÂD ;  (5-6)  Pot.Sg3: huõlâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_ÂD ;  (5-6)  Pot.Sg3: ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -10079,7 +10102,7 @@ Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
 * +Imprt+Sg3:%^VOWLower%^CC2C%>as K ;  (7)  Imprt.Sg3: huõlas
 Imprt+Sg3
 
-* :%^CC2CCC VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.ConNegII: huõlˈlu
+* :%^CC2CCC VSUF-IMPRT-CONNEGII_ÂD ;  (8)  Imprt.ConNegII: huõlˈlu
 Imprt+ConNegII, Pass+PrfPrc
 
 * :%^VOWLower%^CC2CCC%>az K ;  (9) Ind.Imprt.Pl3: huâlˈlaz
@@ -10091,24 +10114,24 @@ Imprt+Pl3
 * LEXICON IV_SIORRYD  siõrrâd:siõ%{ʹØ%}rr
 * LEXICON TV_SIORRYD  siõrrâd:siõ%{ʹØ%}rr
 * LEXICON V0_SIORRYD  siõrrâd:siõ%{ʹØ%}rr
-* : VSUF-INF_YD ;  (1)  Inf: siõrrâd
+* : VSUF-INF_ÂD ;  (1)  Inf: siõrrâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 Ind.Prt.ConNeg, Imprt+Pl3, PrfPrc
 NomAct in MOsh
 
-* :%^VOWLower VSUF-IND-PRS-SG3_YD ;  (2)  Ind.Prs.Sg3: seârr
+* :%^VOWLower VSUF-IND-PRS-SG3_ÂD ;  (2)  Ind.Prs.Sg3: seârr
 +Ind+Prs+Sg3, +Imprt+Pl3
 
 * +Ind+Prs+Pl3:%^VOWLower%^PALÄ%^PAL%^CC2CCC%>e K ;  (3)  Ind.Prs.Pl3: seäʹrˈre
 siõrrâd+V+Ind+Prs+Pl3
 
-* :%^PAL%^CC2CCC VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: siõʹrˈre
+* :%^PAL%^CC2CCC VSUF-IND-PRT_PL3_ÂD ;  (4)  Ind.Prt.Pl3: siõʹrˈre
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* :%^CC2C VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: siõrâž
-* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
+* :%^CC2C VSUF-I-POTKOND_ÂD ;  (5-6)  Pot.Sg3: siõrâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_ÂD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -10116,7 +10139,7 @@ Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
 * +Imprt+Sg3:%^VOWLower%^CC2C%>as K ;  (7)  Imprt.Sg3: siõras
 Imprt+Sg3
 
-* :%^CC2CCC VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.ConNegII: siõrˈru
+* :%^CC2CCC VSUF-IMPRT-CONNEGII_ÂD ;  (8)  Imprt.ConNegII: siõrˈru
 Imprt+ConNegII, Pass+PrfPrc
 
 * :%^VOWLower%^CC2CCC%>az K ;  (9) Ind.Imprt.Pl3: seârˈraz
@@ -10126,24 +10149,24 @@ Imprt+Pl3
 
 * LEXICON V_SUOAPPYD  suåppâd:suå%{ʹØ%}pp
 * LEXICON V0_SUOAPPYD  suåppâd:suå%{ʹØ%}pp
-* : VSUF-INF_YD ;  (1)  Inf: suåppâd
+* : VSUF-INF_ÂD ;  (1)  Inf: suåppâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 Ind.Prt.ConNeg, Imprt+Pl3, PrfPrc
 NomAct in MOsh
 
-* :%^VOWLower VSUF-IND-PRS-SG3_YD ;  (2)  Ind.Prs.Sg3: suäpp
+* :%^VOWLower VSUF-IND-PRS-SG3_ÂD ;  (2)  Ind.Prs.Sg3: suäpp
 +Ind+Prs+Sg3, +Imprt+Pl3
 
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%^CC2CCC%>e K ;  (3)  Ind.Prs.Pl3: suäʹpˈpe
 +Ind+Prs+Pl3
 
-* :%^PALE%^PAL%^CC2CCC VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: sueʹpˈpe
+* :%^PALE%^PAL%^CC2CCC VSUF-IND-PRT_PL3_ÂD ;  (4)  Ind.Prt.Pl3: sueʹpˈpe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* :%^CC2C VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: suåvâž
-* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
+* :%^CC2C VSUF-I-POTKOND_ÂD ;  (5-6)  Pot.Sg3: suåvâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_ÂD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -10151,7 +10174,7 @@ Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
 * +Imprt+Sg3:%^VOWLower%^CC2C%>as K ;  (7)  Imprt.Sg3: suävas
 Imprt+Sg3
 
-* :%^CC2CCC VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.ConNegII: suåpˈpu
+* :%^CC2CCC VSUF-IMPRT-CONNEGII_ÂD ;  (8)  Imprt.ConNegII: suåpˈpu
 Imprt+ConNegII, Pass+PrfPrc
 
 * :%^CC2CCC%>az K ;  (9) Ind.Imprt.Pl3: suäpˈpaz
@@ -10159,24 +10182,24 @@ Imprt+Pl3
 
 * :%^CC2CAllegro FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: suåv»
 
-(1)  Inf: aibbâd
+(1)  Inf: lauggâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 Ind.Prt.ConNeg, Imprt+Pl3, PrfPrc
 NomAct in MOsh
 
-* :%^VOWLower VSUF-IND-PRS-SG3_YD ;  (2,9)  Ind.Prs.Sg3: äibb
+* :%^VOWLower VSUF-IND-PRS-SG3_ÂD ;  (2,9)  Ind.Prs.Sg3: äibb
 +Ind+Prs+Sg3, +Imprt+Pl3
 
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%^PALK%>e K ;  (3)  Ind.Prs.Pl3: äiʹbbe
 +Ind+Prs+Pl3
 
-* :%^PAL%^PALK VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: aiʹbbe
+* :%^PAL%^PALK VSUF-IND-PRT_PL3_ÂD ;  (4)  Ind.Prt.Pl3: aiʹbbe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* :%^V2VV%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: aaibâž
-* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
+* :%^V2VV%^YXX2YX VSUF-I-POTKOND_ÂD ;  (5-6)  Pot.Sg3: aaibâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_ÂD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -10184,7 +10207,7 @@ Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
 * +Imprt+Sg3:%^V2VV%^VOWLower%^YXX2YX%>as K ;  (7)  Imprt.Sg3: ääibas
 Imprt+Sg3
 
-* : VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.13.ConNeg: aibbu
+* : VSUF-IMPRT-CONNEGII_ÂD ;  (8)  Imprt.13.ConNeg: aibbu
 Imprt+ConNegII, Pass+PrfPrc
 
 * :%^YXX2YX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: aib»
@@ -10199,17 +10222,17 @@ Actio, ActEss, PrsPrc
 Ind.Prt.ConNeg, Imprt+Pl3, PrfPrc
 NomAct in MOsh
 
-* :%^VOWLower VSUF-IND-PRS-SG3_YD ;  (2,9)  Ind.Prs.Sg3: äibb
+* :%^VOWLower VSUF-IND-PRS-SG3_ÂD ;  (2,9)  Ind.Prs.Sg3: äibb
 +Ind+Prs+Sg3, +Imprt+Pl3
 
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ;  (3)  Ind.Prs.Pl3: äiʹbbe
 +Ind+Prs+Pl3
 
-* :%^PAL VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: aiʹbbe
+* :%^PAL VSUF-IND-PRT_PL3_ÂD ;  (4)  Ind.Prt.Pl3: aiʹbbe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* :%^V2VV%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: aaibâž
-* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
+* :%^V2VV%^YXX2YX VSUF-I-POTKOND_ÂD ;  (5-6)  Pot.Sg3: aaibâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_ÂD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -10217,7 +10240,7 @@ Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
 * +Imprt+Sg3:%^V2VV%^VOWLower%^YXX2YX%>as K ;  (7)  Imprt.Sg3: ääibas
 Imprt+Sg3
 
-* : VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.13.ConNeg: aibbu
+* : VSUF-IMPRT-CONNEGII_ÂD ;  (8)  Imprt.13.ConNeg: aibbu
 Imprt+ConNegII, Pass+PrfPrc
 
 * :%^YXX2YX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: aib»
@@ -10225,24 +10248,24 @@ Imprt+ConNegII, Pass+PrfPrc
 * LEXICON V_1Â_VYKK  kalggâd:ka%^1VOW%{ʹØ%}lgg
 * LEXICON IV_1Â_VYKK  kalggâd:ka%^1VOW%{ʹØ%}lgg
 * LEXICON TV_1Â_VYKK  kalggâd:ka%^1VOW%{ʹØ%}lgg
-* : VSUF-INF_YD ;  (1)  Inf: tobddâd
+* : VSUF-INF_ÂD ;  (1)  Inf: kalggâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 Ind.Prt.ConNeg, Imprt+Pl3, PrfPrc
 NomAct in MOsh
 
-* :%^VOWLower VSUF-IND-PRS-SG3_YD ;  (2,9)  Ind.Prs.Sg3: tåbdd
+* :%^VOWLower VSUF-IND-PRS-SG3_ÂD ;  (2,9)  Ind.Prs.Sg3: tåbdd
 +Ind+Prs+Sg3, +Imprt+Pl3
 
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%^PALK%>e K ;  (3)  Ind.Prs.Pl3: tåʹbdde
 +Ind+Prs+Pl3
 
-* :%^PAL%^PALK VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: toʹbdde
+* :%^PAL%^PALK VSUF-IND-PRT_PL3_ÂD ;  (4)  Ind.Prt.Pl3: toʹbdde
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* :%^V2VV%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: toobdâž
-* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
+* :%^V2VV%^YXX2YX VSUF-I-POTKOND_ÂD ;  (5-6)  Pot.Sg3: toobdâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_ÂD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -10251,7 +10274,7 @@ Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
 * +Err/Orth:%^V2VV%^VOWLower%^YXX2YX CONDITIONAL ;  
 Imprt+Sg3
 
-* : VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.13.ConNeg: tobddu
+* : VSUF-IMPRT-CONNEGII_ÂD ;  (8)  Imprt.13.ConNeg: tobddu
 Imprt+ConNegII, Pass+PrfPrc
 
 * :%^YXX2YX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: tobd»
@@ -10259,24 +10282,24 @@ Imprt+ConNegII, Pass+PrfPrc
 * LEXICON V_1Â_VYXX  tobddâd:to%^1VOW%{ʹØ%}bdd
 * LEXICON TV_1Â_VYXX  tobddâd:to%^1VOW%{ʹØ%}bdd
 * LEXICON V0_1Â_VYXX  tobddâd:to%^1VOW%{ʹØ%}bdd
-* : VSUF-INF_YD ;  (1)  Inf: tobddâd
+* : VSUF-INF_ÂD ;  (1)  Inf: tobddâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 Ind.Prt.ConNeg, Imprt+Pl3, PrfPrc
 NomAct in MOsh
 
-* :%^VOWLower VSUF-IND-PRS-SG3_YD ;  (2,9)  Ind.Prs.Sg3: tåbdd
+* :%^VOWLower VSUF-IND-PRS-SG3_ÂD ;  (2,9)  Ind.Prs.Sg3: tåbdd
 +Ind+Prs+Sg3, +Imprt+Pl3
 
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ;  (3)  Ind.Prs.Pl3: tåʹbdde
 +Ind+Prs+Pl3
 
-* :%^PAL VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: toʹbdde
+* :%^PAL VSUF-IND-PRT_PL3_ÂD ;  (4)  Ind.Prt.Pl3: toʹbdde
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* :%^V2VV%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: toobdâž
-* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
+* :%^V2VV%^YXX2YX VSUF-I-POTKOND_ÂD ;  (5-6)  Pot.Sg3: toobdâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_ÂD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -10285,7 +10308,7 @@ Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
 * +Err/Orth:%^V2VV%^VOWLower%^YXX2YX CONDITIONAL ;  
 Imprt+Sg3
 
-* : VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.13.ConNeg: tobddu
+* : VSUF-IMPRT-CONNEGII_ÂD ;  (8)  Imprt.13.ConNeg: tobddu
 Imprt+ConNegII, Pass+PrfPrc
 
 * :%^YXX2YX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: tobd»
@@ -10293,24 +10316,24 @@ Imprt+ConNegII, Pass+PrfPrc
 * LEXICON V_OHTTYD  õhttâd:õhtt
 * LEXICON IV_OHTTYD  õhttâd:õhtt
 * LEXICON V0_OHTTYD  õhttâd:õ%^1VOW%{ʹØ%}h%{ʹØ%}tt
-* : VSUF-INF_YD ;  (1)  Inf: õhttâd
+* : VSUF-INF_ÂD ;  (1)  Inf: õhttâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 Ind.Prt.ConNeg, Imprt+Pl3, PrfPrc
 NomAct in MOsh
 
-* :%^VOWLower VSUF-IND-PRS-SG3_YD ;  (2,9)  Ind.Prs.Sg3: âhtt
+* :%^VOWLower VSUF-IND-PRS-SG3_ÂD ;  (2,9)  Ind.Prs.Sg3: âhtt
 +Ind+Prs+Sg3, +Imprt+Pl3
 
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ;  (3)  Ind.Prs.Pl3: âʹhtte
 +Ind+Prs+Pl3
 
-* :%^PAL VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: õʹhtte
+* :%^PAL VSUF-IND-PRT_PL3_ÂD ;  (4)  Ind.Prt.Pl3: õʹhtte
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* :%^V2VV%^YXX2VX VSUF-I-POTKOND_YD ;  (5-6)  Pot.Sg3: õõutâž
-* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
+* :%^V2VV%^YXX2VX VSUF-I-POTKOND_ÂD ;  (5-6)  Pot.Sg3: õõutâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_ÂD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -10318,29 +10341,29 @@ Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
 * +Imprt+Sg3:%^V2VV%^VOWLower%^YXX2VX%>as K ;  (7)  Imprt.Sg3: ââutas
 Imprt+Sg3
 
-* : VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.13.ConNeg: õhttu
+* : VSUF-IMPRT-CONNEGII_ÂD ;  (8)  Imprt.13.ConNeg: õhttu
 Imprt+ConNegII, Pass+PrfPrc
 
 * :%^YXX2VX FOR-ALLEGRO-DEVERBAL-DERIVATION ;  (10) Allegro for incoative: õut»
 
-* : VSUF-INF_YD ;  (1)  Inf: kuõskkâd
+* : VSUF-INF_ÂD ;  (1)  Inf: kuõskkâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 Ind.Prt.ConNeg, Imprt+Pl3, PrfPrc
 NomAct in MOsh
 
-* :%^VOWLower VSUF-IND-PRS-SG3_YD ;  (2)  Ind.Prs.Sg3: kuâskk
+* :%^VOWLower VSUF-IND-PRS-SG3_ÂD ;  (2)  Ind.Prs.Sg3: kuâskk
 +Ind+Prs+Sg3, +Imprt+Pl3
 
 * +Ind+Prs+Pl3:%^VOWLower%^PALE%^PAL%>e K ;  (3)  Ind.Prs.Pl3: kueʹsǩǩe (allophonic)
 +Ind+Prs+Pl3
 
-* :%^PAL VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: kuõʹsǩǩe
+* :%^PAL VSUF-IND-PRT_PL3_ÂD ;  (4)  Ind.Prt.Pl3: kuõʹsǩǩe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* :%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: kuõskâž
-* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
+* :%^YXX2YX VSUF-I-POTKOND_ÂD ;  (5-6)  Ind.Pot.Sg3: kuõskâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_ÂD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -10348,7 +10371,7 @@ Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
 * +Imprt+Sg3:%^VOWLower%^YXX2YX%>as K ;  (7)  Ind.Imprt.Sg3: kuâskas
 Imprt+Sg3
 
-* : VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.13.ConNeg: kuõskku
+* : VSUF-IMPRT-CONNEGII_ÂD ;  (8)  Imprt.13.ConNeg: kuõskku
 Imprt+ConNegII, Pass+PrfPrc
 
 * :%^VOWLower%>az K ;  (9)  Ind.Imprt.Pl3: kuâskkaz
@@ -10358,24 +10381,24 @@ Imprt+Pl3
 
 * LEXICON V_1Â_VWYKK  kuõskkâd:kuõskk
 * LEXICON V0_1Â_VWYKK  kuõskkâd:kuõskk
-* : VSUF-INF_YD ;  (1)  Inf: kuõskkâd
+* : VSUF-INF_ÂD ;  (1)  Inf: kuõskkâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 Ind.Prt.ConNeg, Imprt+Pl3, PrfPrc
 NomAct in MOsh
 
-* :%^VOWLower VSUF-IND-PRS-SG3_YD ;  (2)  Ind.Prs.Sg3: kuâskk
+* :%^VOWLower VSUF-IND-PRS-SG3_ÂD ;  (2)  Ind.Prs.Sg3: kuâskk
 +Ind+Prs+Sg3, +Imprt+Pl3
 
 * +Ind+Prs+Pl3:%^VOWLower%^PALE%^PAL%^PALK%>e K ;  (3)  Ind.Prs.Pl3: kueʹsǩǩe (allophonic)
 +Ind+Prs+Pl3
 
-* :%^PAL%^PALK VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: kuõʹsǩǩe
+* :%^PAL%^PALK VSUF-IND-PRT_PL3_ÂD ;  (4)  Ind.Prt.Pl3: kuõʹsǩǩe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* :%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: kuõskâž
-* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
+* :%^YXX2YX VSUF-I-POTKOND_ÂD ;  (5-6)  Ind.Pot.Sg3: kuõskâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_ÂD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -10383,7 +10406,7 @@ Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
 * +Imprt+Sg3:%^VOWLower%^YXX2YX%>as K ;  (7)  Ind.Imprt.Sg3: kuâskas
 Imprt+Sg3
 
-* : VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.13.ConNeg: kuõskku
+* : VSUF-IMPRT-CONNEGII_ÂD ;  (8)  Imprt.13.ConNeg: kuõskku
 Imprt+ConNegII, Pass+PrfPrc
 
 * :%^VOWLower%>az K ;  (9)  Ind.Imprt.Pl3: kuâskkaz
@@ -10394,24 +10417,24 @@ Imprt+Pl3
 * LEXICON V_CHIOHTTYD  čiõhttâd:čiõ%{ʹØ%}h%{ʹØ%}tt
 * LEXICON IV_CHIOHTTYD  čiõhttâd:čiõ%{ʹØ%}h%{ʹØ%}tt
 * LEXICON V0_CHIOHTTYD  čiõhttâd:čiõ%{ʹØ%}h%{ʹØ%}tt
-* : VSUF-INF_YD ;  (1)  Inf: čiõhttâd
+* : VSUF-INF_ÂD ;  (1)  Inf: čiõhttâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 Ind.Prt.ConNeg, Imprt+Pl3, PrfPrc
 NomAct in MOsh
 
-* :%^VOWLower VSUF-IND-PRS-SG3_YD ;  (2)  Ind.Prs.Sg3: čeâhtt
+* :%^VOWLower VSUF-IND-PRS-SG3_ÂD ;  (2)  Ind.Prs.Sg3: čeâhtt
 +Ind+Prs+Sg3, +Imprt+Pl3
 
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ;  (3)  Ind.Prs.Pl3: kueʹsǩǩe (allophonic)
 +Ind+Prs+Pl3
 
-* :%^PAL VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: kuõʹsǩǩe
+* :%^PAL VSUF-IND-PRT_PL3_ÂD ;  (4)  Ind.Prt.Pl3: kuõʹsǩǩe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* :%^YXX2VX VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: čuõutâž
-* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
+* :%^YXX2VX VSUF-I-POTKOND_ÂD ;  (5-6)  Ind.Pot.Sg3: čuõutâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_ÂD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -10419,7 +10442,7 @@ Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
 * +Imprt+Sg3:%^VOWLower%^YXX2VX%>as K ;  (7)  Ind.Imprt.Sg3: čeâutas
 Imprt+Sg3
 
-* : VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.13.ConNeg: čiõhttu
+* : VSUF-IMPRT-CONNEGII_ÂD ;  (8)  Imprt.13.ConNeg: čiõhttu
 Imprt+ConNegII, Pass+PrfPrc
 
 * :%^VOWLower%>az K ;  (9)  Ind.Imprt.Pl3: čeâhttaz
@@ -10430,24 +10453,24 @@ Imprt+Pl3
 * LEXICON V_1Â_IY/EYXX   viârmmâd:viâ%{ʹØ%}rmm
 * LEXICON V0_1Â_IY/EYXX   viârmmâd:viâ%{ʹØ%}rmm
 
-* : VSUF-INF_YD ;  (1)  Inf: sǩiâŋkkâd
+* : VSUF-INF_ÂD ;  (1)  Inf: sǩiâŋkkâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 Ind.Prt.ConNeg, Imprt+Pl3, PrfPrc
 NomAct in MOsh
 
-* :%^VOWLower VSUF-IND-PRS-SG3_YD ;  (2)  Ind.Prs.Sg3: sǩeäŋkk
+* :%^VOWLower VSUF-IND-PRS-SG3_ÂD ;  (2)  Ind.Prs.Sg3: sǩeäŋkk
 +Ind+Prs+Sg3, +Imprt+Pl3
 
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%>e K ;  (3)  Ind.Prs.Pl3: sǩeäʹŋǩǩe
 +Ind+Prs+Pl3
 
-* :%^PALE%^PAL VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: sǩieʹŋǩǩe
+* :%^PALE%^PAL VSUF-IND-PRT_PL3_ÂD ;  (4)  Ind.Prt.Pl3: sǩieʹŋǩǩe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* :%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: sǩiâŋkâž
-* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
+* :%^YXX2YX VSUF-I-POTKOND_ÂD ;  (5-6)  Ind.Pot.Sg3: sǩiâŋkâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_ÂD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -10455,7 +10478,7 @@ Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
 * +Imprt+Sg3:%^VOWLower%^YXX2YX%>as K ;  (7)  Ind.Imprt.Sg3: sǩeäŋkas
 Imprt+Sg3
 
-* : VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.13.ConNeg: sǩiâŋkku
+* : VSUF-IMPRT-CONNEGII_ÂD ;  (8)  Imprt.13.ConNeg: sǩiâŋkku
 Imprt+ConNegII, Pass+PrfPrc
 
 * :%^VOWLower%>az K ;  (9)  Ind.Imprt.Pl3: sǩeäŋkkaz
@@ -10466,24 +10489,24 @@ Imprt+Pl3
 * LEXICON V_1Â_IY/EYKK  sǩiâŋkkâd:sǩiâ%{ʹØ%}ŋkk
 * LEXICON V0_1Â_IY/EYKK  sǩiâŋkkâd:sǩiâŋkk
 
-* : VSUF-INF_YD ;  (1)  Inf: sǩiâŋkkâd
+* : VSUF-INF_ÂD ;  (1)  Inf: sǩiâŋkkâd
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2,
 Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 Ind.Prt.ConNeg, Imprt+Pl3, PrfPrc
 NomAct in MOsh
 
-* :%^VOWLower VSUF-IND-PRS-SG3_YD ;  (2)  Ind.Prs.Sg3: sǩeäŋkk
+* :%^VOWLower VSUF-IND-PRS-SG3_ÂD ;  (2)  Ind.Prs.Sg3: sǩeäŋkk
 +Ind+Prs+Sg3, +Imprt+Pl3
 
 * +Ind+Prs+Pl3:%^VOWLower%^PAL%^PALK%>e K ;  (3)  Ind.Prs.Pl3: sǩeäʹŋǩǩe
 +Ind+Prs+Pl3
 
-* :%^PALE%^PAL%^PALK VSUF-IND-PRT_PL3_YD ;  (4)  Ind.Prt.Pl3: sǩieʹŋǩǩe
+* :%^PALE%^PAL%^PALK VSUF-IND-PRT_PL3_ÂD ;  (4)  Ind.Prt.Pl3: sǩieʹŋǩǩe
 +Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
-* :%^YXX2YX VSUF-I-POTKOND_YD ;  (5-6)  Ind.Pot.Sg3: sǩiâŋkâž
-* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_YD ;  (5-6) ERR
+* :%^YXX2YX VSUF-I-POTKOND_ÂD ;  (5-6)  Ind.Pot.Sg3: sǩiâŋkâž
+* +Err/Orth-should-be-grade-minus1: VSUF-I-POTKOND_ÂD ;  (5-6) ERR
 +Ind+Prs+Sg1, +Ind+Prs+Sg2, +Ind+Prs+Sg4
 Imprt+Sg2, Imprt+ConNeg, Ind+Prs+ConNeg, VAbess, GerTemp, GerInstr
 Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
@@ -10491,7 +10514,7 @@ Ind+Prt+Sg3, Ind+Prt+Pl1, Ind+Prt+Pl2, Pot, Cond, +Der+Der/Caus
 * +Imprt+Sg3:%^VOWLower%^YXX2YX%>as K ;  (7)  Ind.Imprt.Sg3: sǩeäŋkas
 Imprt+Sg3
 
-* : VSUF-IMPRT-CONNEGII_YD ;  (8)  Imprt.13.ConNeg: sǩiâŋkku
+* : VSUF-IMPRT-CONNEGII_ÂD ;  (8)  Imprt.13.ConNeg: sǩiâŋkku
 Imprt+ConNegII, Pass+PrfPrc
 
 * :%^VOWLower%>az K ;  (9)  Ind.Imprt.Pl3: sǩeäŋkkaz
@@ -12963,7 +12986,7 @@ assuming stem **kååʹmmerd**
 * LEXICON FOR-VSUF-PRSPRC_ED  (11) 
 Vowel_raising, palatalization, Cons-grade-retension
 
-VSUF-I-POTKOND_YD, VSUF-I-POTKOND_AD and VSUF-POTENTIAL_ED come here
+VSUF-I-POTKOND_ÂD, VSUF-I-POTKOND_AD and VSUF-POTENTIAL_ED come here
 
 * : DenominalAdjsCShort ;  (Feist 2012: 200-201) +Der+Der/teqm
 

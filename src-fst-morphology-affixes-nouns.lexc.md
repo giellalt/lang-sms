@@ -6157,17 +6157,24 @@ stemtype
 
 Class 6 according to Feist 153-154
 PRESENT PARTICIPLES
-* LEXICON N_PRSPRC-VQCC-I  hirmstõʹtti+N:hirmstõ%^1VOWʹtti
-* LEXICON NMN_PRSPRC-VQCC-I  hirmstõʹtti+N:hirmstõ%^1VOWʹtti
+* LEXICON N_PRSPRCE_VQCC-I  hirmstõʹtti+N:hirmstõ%^1VOWʹtti
+* LEXICON NMN_PRSPRCE_VQCC-I  hirmstõʹtti+N:hirmstõ%^1VOWʹtti
 * Yaml: **N-joovvi**
 * There are several stem types
 * cõggi:cõggi
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VCC-I  cõggi:cõggi
-* LEXICON NMN_PRSPRC-VCC-I  cõggi:cõggi
+* LEXICON N_PRSPRCÂ_VCC-I  cõggi:cõggi
+* LEXICON NMN_PRSPRCÂ_VCC-I  cõggi:cõggi
 * Yaml: **N-joovvi**
+* There are several stem types
+* cõggi:cõggi
+NumContLex="1.2"
+* :%^I2J VOONYS-STEM-PX ;  võnns-
+
+* LEXICON NMN_PRSPRCÂ_VKK-I  cõggi:cõggi
+* Yaml: **FIXME**
 * There are several stem types
 * cõggi:cõggi
 NumContLex="1.2"
@@ -6176,8 +6183,8 @@ NumContLex="1.2"
 participles in -I from verbs in -âd
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VVQCC-I  jooʹtti+N:jooʹtti
-* LEXICON NMN_PRSPRC-VVQCC-I  jooʹtti+N:jooʹtti
+* LEXICON N_PRSPRCE_VVQCC-I  jooʹtti+N:jooʹtti
+* LEXICON NMN_PRSPRCE_VVQCC-I  jooʹtti+N:jooʹtti
 * Yaml: **N-joovvi**
 * There are several stem types
 * jõõvvi:jõõvvi
@@ -6194,8 +6201,8 @@ NumContLex="1.2"
 * +Use/NGminip+Use/NG: PL-NOM ;		 jõõvvi
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VVCC-I  jõõvvi:jõõvvi
-* LEXICON NMN_PRSPRC-VVCC-I  jõõvvi:jõõvvi
+* LEXICON N_PRSPRCÂ_VVCC-I  jõõvvi:jõõvvi
+* LEXICON NMN_PRSPRCÂ_VVCC-I  jõõvvi:jõõvvi
 * Yaml: **N-joovvi**
 * There are several stem types
 * jõõvvi:jõõvvi
@@ -6212,75 +6219,82 @@ NumContLex="1.2"
 * +Use/NGminip+Use/NG: PL-NOM ;		 jõõvvi
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VVQKK-I  kooʹcci+N:kooʹcci
+* LEXICON N_PRSPRCE_VVQKK-I  kooʹcci+N:kooʹcci
 inflection_type="?"
-* LEXICON NMN_PRSPRC-VVQKK-I  lookki:lookki
+* LEXICON NMN_PRSPRCE_VVQKK-I  lookki:lookki
 * Yaml: **lookk**
 * There are several stem types
 * lookki:lookki
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VVKK-I  lookki:lookki
-* LEXICON NMN_PRSPRC-VVKK-I  lookki:lookki
+* LEXICON N_PRSPRCÂ_VVKK-I  lookki:lookki
+* LEXICON NMN_PRSPRCÂ_VVKK-I  lookki:lookki
 * Yaml: **lookk**
 * There are several stem types
 * lookki:lookki
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWQKK-I  jueʹǩǩi+N:jueʹǩǩi
+* LEXICON N_PRSPRCE_VWQKK-I  jueʹǩǩi+N:jueʹǩǩi
 inflection_type="?"
-* LEXICON NMN_PRSPRC-VWQKK-I  jueʹǩǩi+N:jueʹǩǩi
+* LEXICON NMN_PRSPRCE_VWQKK-I  jueʹǩǩi+N:jueʹǩǩi
 * Yaml: **N-joovvi**
 * There are several stem types
 * sirddi:sirddi
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWKK-I  ǩiõssi:ǩiõssi
-* LEXICON NMN_PRSPRC-VWKK-I  ǩiõssi:ǩiõssi
+* LEXICON N_PRSPRCÂ_VWKK-I  ǩiõssi:ǩiõssi
+* LEXICON NMN_PRSPRCÂ_VWKK-I  ǩiõssi:ǩiõssi
 * Yaml: **N-joovvi**
 * There are several stem types
 * sirddi:sirddi
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWQCC-I  jiõŋŋhokkisiõʹrri+N:jiõŋŋhokkisiõʹrri
+* LEXICON N_PRSPRCE_VWQCC-I  jiõŋŋhokkisiõʹrri+N:jiõŋŋhokkisiõʹrri
 inflection_type="?"
-* LEXICON NMN_PRSPRC-VWQCC-I  vuõlli:vuõlli
+* LEXICON NMN_PRSPRCE_VWQCC-I  vuõlli:vuõlli
 * Yaml: **N-vuolli**
 * There are several stem types
 * vuõlli:vuõlli
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWCC-I  vuõlli:vuõlli
-* LEXICON NMN_PRSPRC-VWCC-I  vuõlli:vuõlli
+* LEXICON N_PRSPRCÂ_VWCC-I  vuõlli:vuõlli
+* LEXICON NMN_PRSPRCÂ_VWCC-I  vuõlli:vuõlli
 * Yaml: **N-vuolli**
 * There are several stem types
 * vuõlli:vuõlli
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWQCCC-I  kuõʹddi:kuõʹdˈdi
-* LEXICON NMN_PRSPRC-VWQCCC-I  kuõʹddi:kuõʹdˈdi
+* LEXICON N_PRSPRCE_VWQCCC-I  kuõʹddi:kuõʹdˈdi
+* LEXICON NMN_PRSPRCE_VWQCCC-I  kuõʹddi:kuõʹdˈdi
 * Yaml: **N-vuolli**
 * There are several stem types
 * vuõlli:vuõlli
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWCCC-I  kuõʒʒi:kuõʒˈʒi
-* LEXICON NMN_PRSPRC-VWCCC-I  kuõʒʒi:kuõʒˈʒi
+* LEXICON N_PRSPRCÂ_VWCCC-I  kuõʒʒi:kuõʒˈʒi
+* LEXICON NMN_PRSPRCÂ_VWCCC-I  kuõʒʒi:kuõʒˈʒi
 * Yaml: **N-vuolli**
 * There are several stem types
 * vuõlli:vuõlli
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWXYY-I  suõskki:suõskki
-* LEXICON NMN_PRSPRC-VWXYY-I  suõskki:suõskki
+* LEXICON NMN_PRSPRCÂ_VWKKK-I  piõgg:piõgˈgi
+* Yaml: **N-vuolli**
+* There are several stem types
+* piõgg:piõgˈgi
+NumContLex="1.2"
+* :%^I2J VOONYS-STEM-PX ;  võnns-
+
+* LEXICON N_PRSPRCÂ_VWXYY-I  suõskki:suõskki
+* LEXICON NMN_PRSPRCÂ_VWXYY-I  suõskki:suõskki
 * Yaml: **suoskki**
 
 * :%^I2J VOONYS-STEM-PX ;  võnns-
@@ -6310,8 +6324,8 @@ participles in -AI from verbs in -ad
 * +Use/NGminip+Use/NG:%^RmVow%^I2J PL-OBL ; 
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VCC-AI  kåččai:kåččai
-* LEXICON NMN_PRSPRC-VCC-AI  kåččai:kåččai
+* LEXICON N_PRSPRCA_VCC-AI  kåččai:kåččai
+* LEXICON NMN_PRSPRCA_VCC-AI  kåččai:kåččai
 * Yaml: **kachchai**
 * There are several stem types
 NumContLex="
@@ -6327,8 +6341,8 @@ NumContLex="
 * +Use/NGminip+Use/NG:%^Pen%^V2VV%^RmVow%^I2J PL-OBL ; 
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VVCC-AI  peellai:peellai
-* LEXICON NMN_PRSPRC-VVCC-AI  peellai:peellai
+* LEXICON N_PRSPRCA_VVCC-AI  peellai:peellai
+* LEXICON NMN_PRSPRCA_VVCC-AI  peellai:peellai
 * Yaml: **paassai**
 * There are several stem types
 NumContLex="
@@ -6344,8 +6358,8 @@ NumContLex="
 * +Use/NGminip+Use/NG:%^Pen%^CC2C%^RmVow%^I2J PL-OBL ; 
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VVKK-AI  pååssai:pååssai
-* LEXICON NMN_PRSPRC-VVKK-AI  pååssai:pååssai
+* LEXICON N_PRSPRCA_VVKK-AI  pååssai:pååssai
+* LEXICON NMN_PRSPRCA_VVKK-AI  pååssai:pååssai
 * Yaml: **paassai**
 * There are several stem types
 NumContLex="
@@ -6361,40 +6375,40 @@ NumContLex="
 * +Use/NGminip+Use/NG:%^Pen%^KK2GG%^RmVow%^I2J PL-OBL ; 
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VYXX-AI  särnnai:särnnai
-* LEXICON NMN_PRSPRC-VYXX-AI  särnnai:särnnai
+* LEXICON N_PRSPRCA_VYXX-AI  särnnai:särnnai
+* LEXICON NMN_PRSPRCA_VYXX-AI  särnnai:särnnai
 * Yaml: **sarnnai**
 * There are several stem types
 * särnnai:särnnai
 NumContLex="
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWCC-AI  vuejjai:vuejjai
-* LEXICON NMN_PRSPRC-VWCC-AI  vuejjai:vuejjai
+* LEXICON N_PRSPRCA_VWCC-AI  vuejjai:vuejjai
+* LEXICON NMN_PRSPRCA_VWCC-AI  vuejjai:vuejjai
 * Yaml: **N-vuejjai**
 * There are several stem types
 * vuejjai:vuejjai
 NumContLex="
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWKK-AI  reäkkai:reäkkai
-* LEXICON NMN_PRSPRC-VWKK-AI  reäkkai:reäkkai
+* LEXICON N_PRSPRCA_VWKK-AI  reäkkai:reäkkai
+* LEXICON NMN_PRSPRCA_VWKK-AI  reäkkai:reäkkai
 * Yaml: **N-reakkai**
 * There are several stem types
 * reäkkai:reäkkai
 NumContLex="
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWCCC-AI  vuäggai:vuägˈgai
-* LEXICON NMN_PRSPRC-VWCCC-AI  vuäggai:vuägˈgai
+* LEXICON N_PRSPRCA_VWCCC-AI  vuäggai:vuägˈgai
+* LEXICON NMN_PRSPRCA_VWCCC-AI  vuäggai:vuägˈgai
 * Yaml: **N-reakkai**
 * There are several stem types
 * vuägˈgai:vuägˈgai
 NumContLex="
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWXYY-AI  meälttai:meälttai
-* LEXICON NMN_PRSPRC-VWXYY-AI  meälttai:meälttai
+* LEXICON N_PRSPRCA_VWXYY-AI  meälttai:meälttai
+* LEXICON NMN_PRSPRCA_VWXYY-AI  meälttai:meälttai
 * Yaml: **sarnnai**
 * There are several stem types
 * meälttai:meälttai
@@ -6421,9 +6435,9 @@ participles in -I from verbs in ʹ-ed
 * : PL-NOM ; 
 * +Use/NGminip+Use/NG:%^RmVow%^I2J PL-OBL ; 
 
-* LEXICON N_PRSPRC-VQYXX-I  äjjnõʹstti:äjjnõʹstti
+* LEXICON N_PRSPRCE_VQYXX-I  äjjnõʹstti:äjjnõʹstti
 inflection_type="?"
-* LEXICON NMN_PRSPRC-VQYXX-I  äjjnõʹstti:äjjnõʹstti
+* LEXICON NMN_PRSPRCE_VQYXX-I  äjjnõʹstti:äjjnõʹstti
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
@@ -6432,8 +6446,17 @@ NumContLex="1.2"
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VYXX-I  äjjnõʹstti:äjjnõʹstti
-* LEXICON NMN_PRSPRC-VYXX-I  äjjnõʹstti:äjjnõʹstti
+* LEXICON N_PRSPRCÂ_VYXX-I  aibbi:a%^1VOWi%{ʹØ%}bbi
+* LEXICON NMN_PRSPRCÂ_VYXX-I  aibbi:a%^1VOWi%{ʹØ%}bbi
+* Yaml: **lookk**
+* There are several stem types
+* aibbi:a%^1VOWi%{ʹØ%}bbi
+NumContLex="1.2"
+* aibbi:a%^1VOWi%{ʹØ%}bbi
+NumContLex="1.2"
+* :%^I2J VOONYS-STEM-PX ;  võnns-
+
+* LEXICON NMN_PRSPRCÂ_VYKK-I  lauggi:la%^1VOWu%{ʹØ%}ggi
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
@@ -6442,9 +6465,9 @@ NumContLex="1.2"
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VQHXX-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
+* LEXICON N_PRSPRCE_VQHXX-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
 inflection_type="?"
-* LEXICON NMN_PRSPRC-VQHXX-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
+* LEXICON NMN_PRSPRCE_VQHXX-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
@@ -6453,9 +6476,9 @@ NumContLex="1.2"
 NumContLex="1.2"
 * :%^Pen%^PAL%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VQHKK-I  huʹvǧǧi:hu%^1VOW%{ʹØ%}v%{ʹØ%}ggi
+* LEXICON N_PRSPRCE_VQHKK-I  huʹvǧǧi:hu%^1VOW%{ʹØ%}v%{ʹØ%}ggi
 inflection_type="?"
-* LEXICON NMN_PRSPRC-VQHKK-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
+* LEXICON NMN_PRSPRCE_VQHKK-I  aʹhtti:a%^1VOW%{ʹØ%}h%{ʹØ%}tti
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
@@ -6464,8 +6487,8 @@ NumContLex="1.2"
 NumContLex="1.2"
 * :%^Pen%^PAL%^Pen%^PALK%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VHXX-I  lahtti:la%^1VOWhtti
-* LEXICON NMN_PRSPRC-VHXX-I  lahtti:la%^1VOWhtti
+* LEXICON N_PRSPRCÂ_VHXX-I  lahtti:la%^1VOWhtti
+* LEXICON NMN_PRSPRCÂ_VHXX-I  lahtti:la%^1VOWhtti
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
@@ -6474,9 +6497,9 @@ NumContLex="1.2"
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWQHYY-I  vuõʹhssi+N:vuõʹhssi
+* LEXICON N_PRSPRCE_VWQHYY-I  vuõʹhssi+N:vuõʹhssi
 inflection_type="?"
-* LEXICON NMN_PRSPRC-VWQHYY-I  vuõʹhssi+N:vuõʹhssi
+* LEXICON NMN_PRSPRCE_VWQHYY-I  vuõʹhssi+N:vuõʹhssi
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
@@ -6485,8 +6508,8 @@ NumContLex="1.2"
 NumContLex="1.2"
 * :%^I2J VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PRSPRC-VWHYY-I  čiõhčči:čiõhčči
-* LEXICON NMN_PRSPRC-VWHYY-I  čiõhčči:čiõhčči
+* LEXICON N_PRSPRCÂ_VWHYY-I  čiõhčči:čiõhčči
+* LEXICON NMN_PRSPRCÂ_VWHYY-I  čiõhčči:čiõhčči
 * Yaml: **lookk**
 * There are several stem types
 * äjjnõʹstti:äjjnõʹstti
