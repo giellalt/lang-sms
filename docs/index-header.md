@@ -5,6 +5,7 @@
 [![License](https://img.shields.io/github/license/giellalt/lang-sms)](https://github.com/giellalt/lang-sms/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-sms)](https://github.com/giellalt/lang-sms/issues)
 [![Build Status](https://builds.giellalt.org/api/badge/lang-sms?label=CI)](https://builds.giellalt.org/pipelines/lang-sms/builds/latest)
+[![Glottolog](https://img.shields.io/badge/Glottolog-green)](https://glottolog.org/resource/languoid/id/skol1241)
 
 This page documents the work on the [Skolt Sami language model](http://github.com/giellalt/lang-sms). 
 
