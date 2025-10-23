@@ -47,6 +47,7 @@
       <messages n="errors.xml"/>
     </suggest>
   </pipeline>
+
   <pipeline name="@GLANG@gram-dev"
             language="@GLANG2@"
             type="Grammar error">
@@ -61,8 +62,8 @@
       <errmodel n="errmodel.default.hfst"/>
     </cgspell>
     <cg><grammar n="grc-disambiguator.cg3"/></cg>
-    <cg><grammar n="spellchecker.cg3"/></cg>
-    <cg><grammar n="grammarchecker.cg3"/></cg>
+    <cg><grammar n="@srcdir@/spellchecker.cg3"/></cg>
+    <cg><grammar n="@srcdir@/grammarchecker.cg3"/></cg>
     <suggest>
       <generator n="generator-gramcheck-gt-norm.hfstol"/>
       <messages n="errors.xml"/>
