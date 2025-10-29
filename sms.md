@@ -8524,7 +8524,7 @@ for nominals ending in single vowel that is -a, Liettua, but not -ia
 *  SG-NOM ;   +Sg+Nom
 *  SG-ABE/ACC/GEN ; 	+Sg+Gen
 * :%^1VOW%^V2VVʹje SG-ILL ; 	+Sg+Ill: terhiiʹje
-* :ʹžže SG-ILL ; 	+Sg+Ill: terhiʹžže
+* +Use/NGminip+Use/NG:ʹžže SG-ILL ; 	+Sg+Ill: terhiʹžže
 *  SG-LOC ;    	+Sg+Loc
 *  SG-COM_IN ; 	+Sg+Com
 *  ESS/PAR ;   	+Ess
@@ -8536,7 +8536,8 @@ inflection_type="?"
 *  SG-NOM ;   +Sg+Nom
 *  SG-ABE/ACC/GEN ; 	+Sg+Gen
 * :%^1VOW%^V2VVʹje SG-ILL ; 	+Sg+Ill: jousteeʹje
-* :ʹžže SG-ILL ; 	+Sg+Ill: jousteʹžže
+* +Use/NGminip+Use/NG: SG-ILL ; 	+Sg+Ill: jouste
+* +Use/NGminip+Use/NG:ʹžže SG-ILL ; 	+Sg+Ill: jousteʹžže
 *  SG-LOC ;    	+Sg+Loc
 *  SG-COM_IN ; 	+Sg+Com
 *  ESS/PAR ;   	+Ess
@@ -8548,7 +8549,7 @@ inflection_type="?"
 *  SG-NOM ;	     (TSA-1) +Sg+Nom:
 *  SG-ABE/ACC/GEN ;    (=TSA-2)
 * :%^1VOW%^V2VVʹje SG-ILL ;	     (TSA-3) +Sg+Ill:
-* +Use/NGminip+Use/NG: SG-ILL ;    (TSA-3) +Sg+Ill:
+* +Use/NGminip+Use/NG: SG-ILL ;    (TSA-3) +Sg+Ill: 2025-10-29 is this correct?
 *  SG-LOC ;	     ()
 *  SG-COM_IN ;	     (=TSA-4)
 *  ESS/PAR ; 	     ()
