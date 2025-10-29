@@ -11707,10 +11707,10 @@ Imprt+Pl3
 (12) Weak-RaisedVowel-NoPalatalization
 * :%^V2VV%^VOWRaise VSUF-CHED_ED ;   (12) +Der+Der/ched: solõõtt-
 
-* LEXICON V_JOAQTTED  jååʹtted:jåått
-* LEXICON IV_JOAQTTED  jååʹtted:jåått
-* LEXICON TV_JOAQTTED  jååʹtted:jåått
-* LEXICON V0_JOAQTTED  jååʹtted:jåått
+* LEXICON V_JOAQTTED  jååʹtted:jåå%{ʹØ%}tt
+* LEXICON IV_JOAQTTED  jååʹtted:jåå%{ʹØ%}tt
+* LEXICON TV_JOAQTTED  jååʹtted:jåå%{ʹØ%}tt
+* LEXICON V0_JOAQTTED  jååʹtted:jåå%{ʹØ%}tt
 Strong-LowVowel-Palatalization
 * :%^PAL VSUF-INF_ED ;  (1) +V+Inf: jååʹtted
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
@@ -11729,7 +11729,7 @@ ExtraStrong-RaisedVowel-Palatalization
 +V+Ind+Prt+Pl3,  Ind+Prt+Sg1, Ind+Prt+Sg2, Ind+Prt+Sg4
 
 Weak-StableV-Palatalization
-* :%^PAL%^CC2C VSUF-IND-PRS-CONNEG_ED ;  (5)
+* :%^PAL%^CC2C VSUF-IND-PRS-CONNEG_ED ;  (5) +V+IV+Ind+Prs+Sg4: jååʹđet
 Imprt+Sg2, Ind+Prs+ConNeg, Ind+Prs+Sg4, VAbess, GerTemp, GerInstr
 
 Weak-RaisedVowel-Palatalization
