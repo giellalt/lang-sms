@@ -995,19 +995,20 @@ OnSetC  ẹ: _ (ʹ: |%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ: |:ˈ) Cns:+]  %^VOWR
 "Vowel lowering a:ä"
 !! **@RULENAME@** -
  a:ä <=>
-     a: _     (u|i) (ʹ: |%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ: |:ˈ) Cns:+] %^VOWLower:  (%^PALNo: |(%^PALE: |%^PALÄ: |%^PALẸ:) %^PAL:) RBound ;
-!     a:ä _     (u|i) (ʹ: |%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ: |:ˈ) Cns:+] %^VOWLower:  (%^PALNo: |(%^PALE: |%^PALÄ: |%^PALẸ:) %^PAL:) RBound ;
+     a: _     (u|i) (ʹ: |%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ: |:ˈ) Cns:+] %^VOWLower:  (%^PALNo: |(%^PALE: |%^PALÄ: |%^PALẸ:) %^PAL:) (%^PALK:) RBound ;
+!     a:ä _     (u|i) (ʹ: |%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ: |:ˈ) Cns:+] %^VOWLower:  (%^PALNo: |(%^PALE: |%^PALÄ: |%^PALẸ:) %^PAL:) (%^PALK:) RBound ;
 
-  OnSetC    _ (a:) (u|i) (ʹ: |%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ: |:ˈ) Cns:+] NeutrVowLength  %^VOWLower:  (%^PALNo: |(%^PALE: |%^PALÄ: |%^PALẸ:) %^PAL:) [RBound|BetweenPALNoAndMorph] ;
-  OnSetC    _ (%^1VOW:ä|%^1VOW:0) (u|i) (ʹ: |%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ: |:ˈ) Cns:+] NeutrVowLength  %^VOWLower:  (%^PALNo: |(%^PALE: |%^PALÄ: |%^PALẸ:) %^PAL:) [RBound|BetweenPALNoAndMorph] ;
+  OnSetC    _ (a:) (u|i) (ʹ: |%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ: |:ˈ) Cns:+] NeutrVowLength  %^VOWLower:  (%^PALNo: |(%^PALE: |%^PALÄ: |%^PALẸ:) %^PAL:) [(%^PALK:) RBound|BetweenPALNoAndMorph] ;
+  OnSetC    _ (%^1VOW:ä|%^1VOW:0) (u|i) (ʹ: |%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ: |:ˈ) Cns:+] NeutrVowLength  %^VOWLower:  (%^PALNo: |(%^PALE: |%^PALÄ: |%^PALẸ:) %^PAL:) [(%^PALK:) RBound|BetweenPALNoAndMorph] ;
 
-    OnSetC     _ (%^1VOW:ä|%^1VOW:0) ((ʹ: |%{ʹØ%}:) (v:u|j:i)) (ʹ: |%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ: |:ˈ) Cns:+] NeutrVowLength %^VOWLower:  (%^PALNo: |(%^PALE: |%^PALÄ: |%^PALẸ:) %^PAL:) RBound ;
+    OnSetC     _ (%^1VOW:ä|%^1VOW:0) ((ʹ: |%{ʹØ%}:) (v:u|j:i)) (ʹ: |%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ: |:ˈ) Cns:+] NeutrVowLength %^VOWLower:  (%^PALNo: |(%^PALE: |%^PALÄ: |%^PALẸ:) %^PAL:) (%^PALK:) RBound ;
 !! mään+N+Sg+Nom: **moon/kuu**
 !!€ ma^1VOWnn^V2VV^VOWLower^CC2C
 !!€ mään0000
 !!$ ma^1VOWnn^V2VV^VOWLower^CC2C
 !!$ maan0000
-
+!!€ ka^1VOW{ʹØ}gg^VOWLower^PAL^PALK>e
+!!€ kä0ʹǧǧ000>e
 
 "Even syllabic verbs I, vowel lowering u:o"
 !! **@RULENAME@** - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in uʹvdded
