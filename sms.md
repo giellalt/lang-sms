@@ -8379,8 +8379,8 @@ this deals with an extra piece of paradigm
 * Yaml: **N-veelpes**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
-* LEXICON N_PUEAQRDES  čueʹcǩes:čuäckkes
-* LEXICON NMN_PUEAQRDES  čueʹcǩes:čuäckkes
+* LEXICON N_PUEAQRDES  čueʹcǩes:čuä%{ʹØ%}ckkes
+* LEXICON NMN_PUEAQRDES  čueʹcǩes:čuä%{ʹØ%}ckkes
 * Yaml: **N-chuaeckes**
 * :%^RmVow VOONYS-STEM-PX ;  võnns-
 
@@ -10574,7 +10574,7 @@ Even-syllable stems in -AD
 * +Ind+Prs+Pl3:%^CC2CCC%>a K ;  (3) +V+Ind+Prs+Pl3: heârˈra
 * :%^VOWRaise%^CC2CCC%> VSUF-IND-PRT_PL3_AD ;  (4) +V+Ind+Prt+Pl3: hiõrˈru
 * +Imprt+Sg3:%^CC2C%>as K ;  (7) +V+Imprt+Sg3: heâras
-* :%^VOWRaise%^CC2CCC VSUF-IMPRT-CONNEGII_AD ;  (8) +V+Imprt+ConNegII: heârˈru
+* :%^VOWRaise%^CC2CCC VSUF-IMPRT-CONNEGII_AD ;  (8) +V+Imprt+ConNegII: hiõrˈru
 * :%^CC2CCC VSUF-IMPRT_PL3_AD ;  (9) Ind.Imprt.Pl3: heârˈraz
 
 * LEXICON V_VUAGGGAD  vuägˈgad:vuägˈg
@@ -13685,6 +13685,8 @@ mään+N+Sg+Nom: **moon/kuu**
 * *mään0000*
 * ★*ma^1VOWnn^V2VV^VOWLower^CC2C* (is not standard language)
 * ★*maan0000* (is not standard language)
+* *ka^1VOW{ʹØ}gg^VOWLower^PAL^PALK>e*
+* *kä0ʹǧǧ000>e*
 
 **Even syllabic verbs I, vowel lowering u:o** - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in uʹvdded
 

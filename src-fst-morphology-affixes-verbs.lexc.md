@@ -904,7 +904,7 @@ Even-syllable stems in -AD
 * +Ind+Prs+Pl3:%^CC2CCC%>a K ;  (3) +V+Ind+Prs+Pl3: heârˈra
 * :%^VOWRaise%^CC2CCC%> VSUF-IND-PRT_PL3_AD ;  (4) +V+Ind+Prt+Pl3: hiõrˈru
 * +Imprt+Sg3:%^CC2C%>as K ;  (7) +V+Imprt+Sg3: heâras
-* :%^VOWRaise%^CC2CCC VSUF-IMPRT-CONNEGII_AD ;  (8) +V+Imprt+ConNegII: heârˈru
+* :%^VOWRaise%^CC2CCC VSUF-IMPRT-CONNEGII_AD ;  (8) +V+Imprt+ConNegII: hiõrˈru
 * :%^CC2CCC VSUF-IMPRT_PL3_AD ;  (9) Ind.Imprt.Pl3: heârˈraz
 
 * LEXICON V_VUAGGGAD  vuägˈgad:vuägˈg

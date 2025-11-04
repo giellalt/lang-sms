@@ -678,6 +678,8 @@ mään+N+Sg+Nom: **moon/kuu**
 * *mään0000*
 * ★*ma^1VOWnn^V2VV^VOWLower^CC2C* (is not standard language)
 * ★*maan0000* (is not standard language)
+* *ka^1VOW{ʹØ}gg^VOWLower^PAL^PALK>e*
+* *kä0ʹǧǧ000>e*
 
 **Even syllabic verbs I, vowel lowering u:o** - deriving +Ind+Prs+Sg3, +Ind+Prs+Pl3 in uʹvdded
 
