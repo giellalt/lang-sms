@@ -1,0 +1,247 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-dict-gt-norm.hfst
+    Morph: ../../../src/analyser-dict-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-dict-gt-norm.xfst
+    Morph: ../../../src/analyser-dict-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Noun - vääll u-stem dlo: # Noun - full paradigm
+     vääll+N+Sg+Nom: vääll
+     vääll+N+Sg+Gen: vääl
+     vääll+N+Sg+Acc: vääl
+     vääll+N+Sg+Ill: vallu
+     vääll+N+Sg+Loc: väälast
+     vääll+N+Sg+Com: väälain
+     vääll+N+Ess: väällan
+     vääll+N+Par: väällad
+     vääll+N+Sg+Abe: [väältää, väältaa]
+     vääll+N+Pl+Nom: vääl
+     vääll+N+Pl+Gen: väälai
+     vääll+N+Pl+Acc: väälaid
+     vääll+N+Pl+Ill: väälaid
+     vääll+N+Pl+Loc: väälain
+     vääll+N+Pl+Com: väälaivuiʹm
+     vääll+N+Pl+Abe: [väälaitää, väälaitaa]
+     
+     vääll+N+Sg+Nom+PxSg1: väällam
+     vääll+N+Sg+Nom+PxSg2: väällad
+     vääll+N+Sg+Nom+PxSg3: väällas
+     vääll+N+Sg+Nom+PxPl1: väällam
+     vääll+N+Sg+Nom+PxPl2: väällad
+     vääll+N+Sg+Nom+PxPl3: väällaz
+     
+     vääll+N+Sg+Gen+PxSg1: väällan
+     vääll+N+Sg+Gen+PxSg2: väälad
+     vääll+N+Sg+Gen+PxSg3: väälas
+     vääll+N+Sg+Gen+PxPl1: väällan
+     vääll+N+Sg+Gen+PxPl2: väälad
+     vääll+N+Sg+Gen+PxPl3: väälaz
+     
+     vääll+N+Sg+Acc+PxSg1: väällan
+     vääll+N+Sg+Acc+PxSg2: väälad
+     vääll+N+Sg+Acc+PxSg3: väälas
+     vääll+N+Sg+Acc+PxPl1: väällan
+     vääll+N+Sg+Acc+PxPl2: väälad
+     vääll+N+Sg+Acc+PxPl3: väälaz
+     
+     vääll+N+Sg+Ill+PxSg1: vällsan
+     vääll+N+Sg+Ill+PxSg2: vällsad
+     vääll+N+Sg+Ill+PxSg3: vällses
+     vääll+N+Sg+Ill+PxPl1: vällseem
+     vääll+N+Sg+Ill+PxPl2: vällseed
+     vääll+N+Sg+Ill+PxPl3: vällseez
+     
+     vääll+N+Sg+Loc+PxSg1: välstan
+     vääll+N+Sg+Loc+PxSg2: välstad
+     vääll+N+Sg+Loc+PxSg3: välstes
+     vääll+N+Sg+Loc+PxPl1: välsteen
+     vääll+N+Sg+Loc+PxPl2: välsteed
+     vääll+N+Sg+Loc+PxPl3: välsteez
+
+     vääll+N+Sg+Com+PxSg1: väälainan
+     vääll+N+Sg+Com+PxSg2: väälainad
+     vääll+N+Sg+Com+PxSg3: väälaines
+     vääll+N+Sg+Com+PxPl1: väälainen
+     vääll+N+Sg+Com+PxPl2: väälained
+     vääll+N+Sg+Com+PxPl3: väälainez
+     
+     vääll+N+Sg+Abe+PxSg1: väällantää
+     vääll+N+Sg+Abe+PxSg2: vääladtää
+     vääll+N+Sg+Abe+PxSg3: väälastää
+     vääll+N+Sg+Abe+PxPl1: väällantää
+     vääll+N+Sg+Abe+PxPl2: vääladtää
+     vääll+N+Sg+Abe+PxPl3: väälaztää
+     
+     vääll+N+Ess+PxSg1: vällnan
+     vääll+N+Ess+PxSg2: vällnad
+     vääll+N+Ess+PxSg3: vällnes
+     vääll+N+Ess+PxPl1: vällneen
+     vääll+N+Ess+PxPl2: vällneed
+     vääll+N+Ess+PxPl3: vällneez
+#     
+     vääll+N+Pl+Nom+PxSg1: väällan
+     vääll+N+Pl+Nom+PxSg2: väälad
+     vääll+N+Pl+Nom+PxSg3: väälas
+     vääll+N+Pl+Nom+PxPl1: väällan
+     vääll+N+Pl+Nom+PxPl2: väälad
+     vääll+N+Pl+Nom+PxPl3: väälaz
+     
+     vääll+N+Pl+Gen+PxSg1: väälään
+     vääll+N+Pl+Gen+PxSg2: väälääd
+     vääll+N+Pl+Gen+PxSg3: väälees
+     vääll+N+Pl+Gen+PxPl1: vääleen
+     vääll+N+Pl+Gen+PxPl2: vääleed
+     vääll+N+Pl+Gen+PxPl3: vääleez
+     
+     vääll+N+Pl+Acc+PxSg1: väälään
+     vääll+N+Pl+Acc+PxSg2: väälääd
+     vääll+N+Pl+Acc+PxSg3: väälees
+     vääll+N+Pl+Acc+PxPl1: vääleen
+     vääll+N+Pl+Acc+PxPl2: vääleed
+     vääll+N+Pl+Acc+PxPl3: vääleez
+     
+     vääll+N+Pl+Ill+PxSg1: väälään
+     vääll+N+Pl+Ill+PxSg2: väälääd
+     vääll+N+Pl+Ill+PxSg3: väälees
+     vääll+N+Pl+Ill+PxPl1: vääleen
+     vääll+N+Pl+Ill+PxPl2: vääleed
+     vääll+N+Pl+Ill+PxPl3: vääleez
+     
+     vääll+N+Pl+Loc+PxSg1: väälainan
+     vääll+N+Pl+Loc+PxSg2: väälainad
+     vääll+N+Pl+Loc+PxSg3: väälaines
+     vääll+N+Pl+Loc+PxPl1: väälainen
+     vääll+N+Pl+Loc+PxPl2: väälained
+     vääll+N+Pl+Loc+PxPl3: väälainez
+     
+     vääll+N+Pl+Com+PxSg1: vääläänvuiʹm
+     vääll+N+Pl+Com+PxSg2: vääläädvuiʹm
+     vääll+N+Pl+Com+PxSg3: vääleesvuiʹm
+     vääll+N+Pl+Com+PxPl1: vääleenvuiʹm
+     vääll+N+Pl+Com+PxPl2: vääleedvuiʹm
+     vääll+N+Pl+Com+PxPl3: vääleezvuiʹm
+     
+     vääll+N+Pl+Abe+PxSg1: väälääntää
+     vääll+N+Pl+Abe+PxSg2: vääläädtää
+     vääll+N+Pl+Abe+PxSg3: vääleestää
+     vääll+N+Pl+Abe+PxPl1: vääleentää
+     vääll+N+Pl+Abe+PxPl2: vääleedtää
+     vääll+N+Pl+Abe+PxPl3: vääleeztää
+     
+#
+     vääll+N+Der/Dimin+N+Sg+Nom: [väälaž, vaaluž]
+     vääll+N+Der/Dimin+N+Sg+Gen: vaalu
+     vääll+N+Der/Dimin+N+Sg+Acc: vaaluž
+     vääll+N+Der/Dimin+N+Sg+Ill: [väällže, vaallže]
+     vääll+N+Der/Dimin+N+Sg+Loc: vaalust
+     vääll+N+Der/Dimin+N+Sg+Com: vaalun
+     vääll+N+Der/Dimin+N+Sg+Abe: vaalutää
+     vääll+N+Der/Dimin+N+Sg+Ess: [väälžen, vaalžen]
+     vääll+N+Der/Dimin+N+Sg+Par: [väälžed, vaalžed]
+
+     vääll+N+Der/Dimin+N+Pl+Nom: vaalu
+     vääll+N+Der/Dimin+N+Pl+Gen: vaalui
+     vääll+N+Der/Dimin+N+Pl+Acc: vaaluid
+     vääll+N+Der/Dimin+N+Pl+Ill: vaaluid
+     vääll+N+Der/Dimin+N+Pl+Loc: vaaluin
+     vääll+N+Der/Dimin+N+Pl+Com: vaaluivuiʹm
+     vääll+N+Der/Dimin+N+Pl+Abe: vaaluitää
+
+     vääll+N+Der/Dimin+N+Sg+Nom+PxSg1: väälžam
+     vääll+N+Der/Dimin+N+Sg+Nom+PxSg2: väälžad
+     vääll+N+Der/Dimin+N+Sg+Nom+PxSg3: väälžes
+     vääll+N+Der/Dimin+N+Sg+Nom+PxPl1: väälžeem
+     vääll+N+Der/Dimin+N+Sg+Nom+PxPl2: väälžeed
+     vääll+N+Der/Dimin+N+Sg+Nom+PxPl3: väälžeez
+     
+     vääll+N+Der/Dimin+N+Sg+Gen+PxSg1: väälžan
+     vääll+N+Der/Dimin+N+Sg+Gen+PxSg2: väälžad
+     vääll+N+Der/Dimin+N+Sg+Gen+PxSg3: väälžes
+     vääll+N+Der/Dimin+N+Sg+Gen+PxPl1: väälžeen
+     vääll+N+Der/Dimin+N+Sg+Gen+PxPl2: väälžeed
+     vääll+N+Der/Dimin+N+Sg+Gen+PxPl3: väälžeez
+     
+     vääll+N+Der/Dimin+N+Sg+Acc+PxSg1: väälžan
+     vääll+N+Der/Dimin+N+Sg+Acc+PxSg2: väälžad
+     vääll+N+Der/Dimin+N+Sg+Acc+PxSg3: väälžes
+     vääll+N+Der/Dimin+N+Sg+Acc+PxPl1: väälžeen
+     vääll+N+Der/Dimin+N+Sg+Acc+PxPl2: väälžeed
+     vääll+N+Der/Dimin+N+Sg+Acc+PxPl3: väälžeez
+
+     vääll+N+Der/Dimin+N+Sg+Ill+PxSg1: väälžasan
+     vääll+N+Der/Dimin+N+Sg+Ill+PxSg2: väälžasad
+     vääll+N+Der/Dimin+N+Sg+Ill+PxSg3: väälžasas
+     vääll+N+Der/Dimin+N+Sg+Ill+PxPl1: väälžeʹsen
+     vääll+N+Der/Dimin+N+Sg+Ill+PxPl2: väälžeʹsed
+     vääll+N+Der/Dimin+N+Sg+Ill+PxPl3: väälžeʹsez
+     vääll+N+Der/Dimin+N+Sg+Loc+PxSg1: valstan
+     vääll+N+Der/Dimin+N+Sg+Loc+PxSg2: valstad
+     vääll+N+Der/Dimin+N+Sg+Loc+PxSg3: valstes
+     vääll+N+Der/Dimin+N+Sg+Loc+PxPl1: valsteen
+     vääll+N+Der/Dimin+N+Sg+Loc+PxPl2: valsteed
+     vääll+N+Der/Dimin+N+Sg+Loc+PxPl3: valsteez
+     vääll+N+Der/Dimin+N+Sg+Com+PxSg1: vaalinan
+     vääll+N+Der/Dimin+N+Sg+Com+PxSg2: vaalinad
+     vääll+N+Der/Dimin+N+Sg+Com+PxSg3: vaalines
+     vääll+N+Der/Dimin+N+Sg+Com+PxPl1: vaalineen
+     vääll+N+Der/Dimin+N+Sg+Com+PxPl2: vaalineed
+     vääll+N+Der/Dimin+N+Sg+Com+PxPl3: vaalineez
+     vääll+N+Der/Dimin+N+Sg+Abe+PxSg1: väälžantää
+     vääll+N+Der/Dimin+N+Sg+Abe+PxSg2: väälžadtää
+     vääll+N+Der/Dimin+N+Sg+Abe+PxSg3: väälžestää
+     vääll+N+Der/Dimin+N+Sg+Abe+PxPl1: väälžeentää
+     vääll+N+Der/Dimin+N+Sg+Abe+PxPl2: väälžeedtää
+     vääll+N+Der/Dimin+N+Sg+Abe+PxPl3: väälžeeztää
+
+#     
+     vääll+N+Der/Dimin+N+Pl+Nom+PxSg1: väälžan
+     vääll+N+Der/Dimin+N+Pl+Nom+PxSg2: väälžad
+     vääll+N+Der/Dimin+N+Pl+Nom+PxSg3: väälžes
+     vääll+N+Der/Dimin+N+Pl+Nom+PxPl1: väälžeen
+     vääll+N+Der/Dimin+N+Pl+Nom+PxPl2: väälžeed
+     vääll+N+Der/Dimin+N+Pl+Nom+PxPl3: väälžeez
+     vääll+N+Der/Dimin+N+Pl+Gen+PxSg1: vaalään
+     vääll+N+Der/Dimin+N+Pl+Gen+PxSg2: vaalääd
+     vääll+N+Der/Dimin+N+Pl+Gen+PxSg3: vaalees
+     vääll+N+Der/Dimin+N+Pl+Gen+PxPl1: vaaleen
+     vääll+N+Der/Dimin+N+Pl+Gen+PxPl2: vaaleed
+     vääll+N+Der/Dimin+N+Pl+Gen+PxPl3: vaaleez
+     vääll+N+Der/Dimin+N+Pl+Acc+PxSg1: vaalään
+     vääll+N+Der/Dimin+N+Pl+Acc+PxSg2: vaalääd
+     vääll+N+Der/Dimin+N+Pl+Acc+PxSg3: vaalees
+     vääll+N+Der/Dimin+N+Pl+Acc+PxPl1: vaaleen
+     vääll+N+Der/Dimin+N+Pl+Acc+PxPl2: vaaleed
+     vääll+N+Der/Dimin+N+Pl+Acc+PxPl3: vaaleez
+     vääll+N+Der/Dimin+N+Pl+Ill+PxSg1: vaalään
+     vääll+N+Der/Dimin+N+Pl+Ill+PxSg2: vaalääd
+     vääll+N+Der/Dimin+N+Pl+Ill+PxSg3: vaalees
+     vääll+N+Der/Dimin+N+Pl+Ill+PxPl1: vaaleen
+     vääll+N+Der/Dimin+N+Pl+Ill+PxPl2: vaaleed
+     vääll+N+Der/Dimin+N+Pl+Ill+PxPl3: vaaleez
+     vääll+N+Der/Dimin+N+Pl+Loc+PxSg1: vaaluinan
+     vääll+N+Der/Dimin+N+Pl+Loc+PxSg2: vaaluinad
+     vääll+N+Der/Dimin+N+Pl+Loc+PxSg3: vaaluines
+     vääll+N+Der/Dimin+N+Pl+Loc+PxPl1: vaaluineen
+     vääll+N+Der/Dimin+N+Pl+Loc+PxPl2: vaaluineed
+     vääll+N+Der/Dimin+N+Pl+Loc+PxPl3: vaaluineez
+     vääll+N+Der/Dimin+N+Pl+Com+PxSg1: vaaläänvuiʹm
+     vääll+N+Der/Dimin+N+Pl+Com+PxSg2: vaaläädvuiʹm
+     vääll+N+Der/Dimin+N+Pl+Com+PxSg3: vaaleesvuiʹm
+     vääll+N+Der/Dimin+N+Pl+Com+PxPl1: vaaleenvuiʹm
+     vääll+N+Der/Dimin+N+Pl+Com+PxPl2: vaaleedvuiʹm
+     vääll+N+Der/Dimin+N+Pl+Com+PxPl3: vaaleezvuiʹm
+     vääll+N+Der/Dimin+N+Pl+Abe+PxSg1: vaalääntää
+     vääll+N+Der/Dimin+N+Pl+Abe+PxSg2: vaaläädtää
+     vääll+N+Der/Dimin+N+Pl+Abe+PxSg3: vaaleestää
+     vääll+N+Der/Dimin+N+Pl+Abe+PxPl1: vaaleentää
+     vääll+N+Der/Dimin+N+Pl+Abe+PxPl2: vaaleedtää
+     vääll+N+Der/Dimin+N+Pl+Abe+PxPl3: vaaleeztää
