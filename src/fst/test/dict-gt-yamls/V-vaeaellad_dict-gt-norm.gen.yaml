@@ -1,0 +1,66 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-dict-gt-norm.hfst
+    Morph: ../../../src/analyser-dict-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-dict-gt-norm.xfst
+    Morph: ../../../src/analyser-dict-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+# todo:
+# Proofread the gold standard (below)
+# Then: run analyser, then correct. 
+
+
+  Verb - väällad: # Verb 'to put up/pystyttää' - full paradigm
+     väällad+V+Inf: väällad
+     väällad+V+Ind+Prs+Sg1: väälam
+     väällad+V+Ind+Prs+Sg2: väälak
+     väällad+V+Ind+Prs+Sg3: vääll
+     väällad+V+Ind+Prs+Pl1: väällap
+     väällad+V+Ind+Prs+Pl2: väällveʹted
+     väällad+V+Ind+Prs+Pl3: välla
+     väällad+V+Ind+Prs+Sg4: väälat
+     väällad+V+Ind+Prs+ConNeg: vääl
+     väällad+V+Ind+Prt+Sg1: vallum
+     väällad+V+Ind+Prt+Sg2: valluk
+     väällad+V+Ind+Prt+Sg3: väälai
+     väällad+V+Ind+Prt+Pl1: [väälaim, väälain]
+     väällad+V+Ind+Prt+Pl2: väälaid
+     väällad+V+Ind+Prt+Pl3: vallu
+     väällad+V+Ind+Prt+Sg4: valluš
+     väällad+V+Ind+Prt+ConNeg: väällam
+     väällad+V+Pot+Sg1: väälžem
+     väällad+V+Pot+Sg2: väälžiǩ
+     väällad+V+Pot+Sg3: väälaž
+     väällad+V+Pot+Pl1: [väälžep, väälžim, väälžin]
+     väällad+V+Pot+Pl2: väälžid 
+     väällad+V+Pot+Pl3: väälže
+     väällad+V+Pot+Sg4: väälžet
+     väällad+V+Pot+ConNeg: väälže
+     väällad+V+Cond+Sg1: väälčem
+     väällad+V+Cond+Sg2: [väälčiǩ, väälčeǩ]
+     väällad+V+Cond+Sg3: väälči
+     väällad+V+Cond+Pl1: [väälčim, väälčin, väälčep]
+     väällad+V+Cond+Pl2: väälčid
+     väällad+V+Cond+Pl3: väälče
+     väällad+V+Cond+Sg4: väälčeš
+     väällad+V+Cond+ConNeg: väälče
+     väällad+V+Imprt+Sg2: vääl
+     väällad+V+Imprt+Sg3: väälas
+     väällad+V+Imprt+Pl1: väällap
+     väällad+V+Imprt+Pl2: väällad
+     väällad+V+Imprt+Pl3: vällaz
+     väällad+V+Imprt+ConNeg: vääl
+     väällad+V+Imprt+ConNegII: vallu
+     väällad+V+Actio+Ess: väällmen
+     väällad+V+Actio: väällam
+     väällad+V+Act+PrsPrc: väällai
+     väällad+V+Act+PrfPrc: väällam
+     väällad+V+Pass+PrfPrc: vallum
+     väällad+V+VAbess: [väälkani, väälǩânai, väälǩenai, väälǩâni, väälǩeânai, väälǩeânnai, väälkâni, väälǩani]
+     väällad+V+Ger+Ess: vääleen
+     väällad+V+Ger+Instr: vääleeʹl
+     väällad+V+Der/InchL+V+Inf: välškuẹʹtted
