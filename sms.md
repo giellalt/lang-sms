@@ -336,6 +336,8 @@ Russian loanword
 * LEXICON A_SEQTT  seʹtt:sẹ%^1VOW%{ʹØ%}tt
 CHECKME
 
+* LEXICON A_1E_TEQSTT  modeʹrnn:mod%^1VOW%{ʹØ%}rnn
+
 * LEXICON A_KHEQRJJ  ǩeʹrjj:ǩẹ%^1VOW%{ʹØ%}rjj
 
 * LEXICON A_JAEUQRR  jäuʹrr:jä%^1VOWu%{ʹØ%}rr
@@ -1513,6 +1515,38 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) käʹlbb Ess+Px..
 * :%^V2VV%^PAL%^YXX2YX A-02_PL-NOM ;	 (2) Pl.Nom: ââʹlj
 * :%^V2VV%^VOWRaise%^PAL%^YXX2YX A-02_E-STEM_PL-OBL ;  (5) Sg.Com: õõʹljin
+
+1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
+1.3 Sg.Loc in -est (vowel shift)
+Raised: Sg.Com, Pl.Obl
+Lowered: ELSE
+e-stems (Sg.Loc, Ess, Par).
+1.3.2 Sg.Ill vowel -a
+1.3.2.1 Has Palatalization
+Palatalized: ELSE
+Not Palatalized: Sg.Ill
+1.3.2.1.1 Lacks Specifically Pedagogical Gradation
+1.3.2.1.1.1 Has Orthographic Gradation
+1.3.2.1.1.1[] (Monophthong + Consonant Cluster)
+Strong grade: Sg.Nom, Ess, Par
+Strong grade: Sg.Ill
+Weak grade: Pl.Nom, Sg.Loc, Sg.Com
+FORMS
+NumContLex="1.113"
+Is for nouns with ''-est'' Loc, Extra long vowel
+* Yaml: __N-argumentt__
+* :%^PAL A-02_E-STEM_SG-NOM ;		  			 (1) Sg.Nom: argumeʹntt
+* :%^V2VV%^PAL%^YXX2YX A-02_E-STEM_SG-ABE/ACC/GEN ;	 (2) Pl.Nom: argumeeʹnt
+* :%^V2VV%^PAL%^YXX2YX A-02_PL-NOM ;	 (2) Pl.Nom: argumeeʹnt
+* : A-02_E-STEM_SG-ILL ;	     			   	 (3) Sg.Ill: argumentta
+* :%^V2VV%^PAL%^YXX2YX%>e A-02_SG-LOC ;		 (4) Sg.Loc: argumeeʹntest
+* :%^V2VV%^PAL%^YXX2YX A-02_SG-COM_IN ;  (5) Sg.Com: argumeeʹntin
+* :%^V2VV%^PAL%^YXX2YX A-02_E-STEM_PL-OBL ;  (5) Sg.Com: argumeeʹntin
+* :%^PAL%>e A-02_ESS/PAR ;	       			 (6) Ess: argumeʹntten
+* :%^V2VV%^YXX2YX A-02_E-STEM_N_KUYLAZH ;		 (9) Der/Dimin.N.Sg.Nom: argumeentaž
+*  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) argumentt-
+* :%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ;  (11) argumeʹnt-
+* :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) argumeʹntt- Ess+Px..
 
 * Yaml: **N-haeaesk**
 * :%^PAL%^PALK A-02_E-STEM_SG-NOM ;		   (1) Sg.Nom: hääʹsǩ
