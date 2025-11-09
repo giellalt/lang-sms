@@ -3786,6 +3786,18 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^V2VV%^PAL%^YXX2YX%^PALK PL-NOM ;	 (2) Pl.Nom: ââʹlj
 * :%^V2VV%^VOWRaise%^PAL%^YXX2YX%^PALK E-STEM_PL-OBL ;  (5) Sg.Com: õõʹljin
 
+* LEXICON N_1E_VQYKK_PL   käʹlbb:kälbb âʹlǧǧ:âlgg
+Is for nouns with *-est* Loc, Extra long vowel
+* Yaml: **N-aâlghgh**
+
+* :%^PAL%^PALK%>e ESS/PAR ;	       			 (6) Ess: âʹlǧǧen
+* :%^V2VV%^YXX2YX E-STEM_N_KUYLAZH ;		 (9) Der/Dimin.N.Sg.Nom: ââlǥaž
+*  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) kälbb-
+* :%^PAL%^YXX2YX%^PALK E-STEM-PX-ALLEGRO ;  (11) käʹlb-
+* :%^PAL%^PALK  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) käʹlbb Ess+Px..
+* :%^V2VV%^PAL%^YXX2YX%^PALK PL-NOM ;	 (2) Pl.Nom: ââʹlj
+* :%^V2VV%^VOWRaise%^PAL%^YXX2YX%^PALK E-STEM_PL-OBL ;  (5) Sg.Com: õõʹljin
+
 * LEXICON N_1E_VQYXX  käʹlbb:kälbb
 * LEXICON N_KAQLBB  käʹlbb:kälbb âʹlǧǧ:âlgg
 N_1E_VQYXX
