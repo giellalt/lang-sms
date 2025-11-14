@@ -11760,6 +11760,7 @@ Imprt+Pl3
 * LEXICON V0_JOAQTTED  jååʹtted:jåå%{ʹØ%}tt
 Strong-LowVowel-Palatalization
 * :%^PAL VSUF-INF_ED ;  (1) +V+Inf: jååʹtted
+* +Err/Orth-no-q: VSUF-INF_ED ;  (1) +V+Inf: jååtted
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
@@ -12228,6 +12229,7 @@ Allegro (10)
 
 Strong-HighVowel-Palatalization
 * :%^VOWRaise%^PALẸ%^PAL VSUF-INF_ED ;		 (1) puẹʹtted 
+* +Err/Orth-no-q:%^VOWRaise VSUF-INF_ED ;		 (1) puätted 
 V+Inf, Ind+Prs+Pl1, Ind+Prs+Pl2, Imprt+Pl1, Imprt+Pl2
 Actio, ActEss, PrsPrc
 
