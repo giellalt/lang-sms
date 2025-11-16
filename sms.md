@@ -8069,6 +8069,7 @@ stemtype l-stem siivâlm:siivâlm
 * :%^Pen%^VV2V%^RmVow%^PALNo VOONYS-STEM-PX ;  võnns- CHECKME
 
 CLASS 4 BISYLLABIC, LOW VOWEL, MONOPHTHONG, NO PALATALIZATION
+N_2_AANAR
 stemtype n-stem jânnam:jânnam
 N_GEN2X3-NOM2X1
 * Yaml: **N-jânnam**
