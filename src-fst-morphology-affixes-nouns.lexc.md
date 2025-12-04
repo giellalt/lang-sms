@@ -3439,7 +3439,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 
 CLASS 1 LOW VOWEL, PALATALIZATION, ILLATIVE IN U NOMINALS
 
-* LEXICON N_LAQB3H3H  läʹbǯǯ:läbǯǯ
+* LEXICON N_LAQB3H3H  läʹbǯǯ:lä%^1VOW%{ʹØ%}bǯǯ
 N_1U_VQCC
 ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ## 1.2 Sg.Loc in -ast (vowel shift)
@@ -3456,7 +3456,7 @@ Strong grade: Sg.Ill
 Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 ## FORMS
 * Yaml: **N-laebzz**
-* +Der+Der/Dimin+N:%^V2VV%> N_PEESSAZH ;   (9) Dim.N.Sg.Nom: lääbǯaž
+* +Der+Der/Dimin+N:%^V2VV%^YXX2YX%> N_PEESSAZH ;   (9) Dim.N.Sg.Nom: lääbǯaž
 WORK NEEDED
 
 CLASS 1 LOW VOWEL, PALATALIZATION, ILLATIVE IN A NOMINALS
