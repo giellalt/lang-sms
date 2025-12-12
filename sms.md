@@ -7535,7 +7535,7 @@ jarplan:jarplan
 * +Der+Der/Dimin+N: N_MUORYZH-WITHOUT-PAL ;   paar-
 * +Der+Der/Dimin+N:%^PAL N_MUORYZH-WITH-PAL ;   paaʹr-
 
-* LEXICON N_1Â_ATOM  atom:atom
+* LEXICON N_1Â_ATOM  atom:ato%^1VOW%{ʹØ%}m
 like VIRVEL, KANEL
 ### 2. WORDS WITH TWO-SYLLABLE NOMINATIVE SINGULARS (2009: 288)
 ### 2.1 Sg.Loc in -âst. â-stems (Sg.Loc, Ess, Par).
