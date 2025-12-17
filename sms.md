@@ -2521,6 +2521,24 @@ grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 ## Skolt Saami noun morphology 
 
 This file documents the Skolt Saami noun morphology, lexicon by lexicon.
+cf. Mosnikoff et al 2020: 356
+the notions of vowels in 9 rows A–I, and 5 columns
+|(A)|a|ä|aʹ|äʹ|äʹ|
+|(B)|õ|â|õʹ|âʹ|âʹ|
+|(C)|u|o|uʹ|oʹ|uʹ|
+|(D)|o|å|oʹ|åʹ|åʹ|
+|(E)|i|e|iʹ|eʹ|eʹ|
+|(F)|uõ|uâ|uõʹ|ueʹ (<*uâʹ)| ueʹ|
+|(G)|uå|uä|ueʹ (<*uåʹ)|uäʹ/uẹʹ|uẹ /uäʹ|
+|(H)|iõ|eâ|iõʹ|ieʹ (<*eâʹ)|ieʹ (<*eâʹ)|
+|(I)|iâ|eä|ieʹ (<*iâʹ)|eäʹ/uẹʹ|eäʹ/uẹʹ|
+
+F4,F5, G4, G5, H4, H5, I4, I5 are problematic, and for this reason they are not given as in the book,
+diphthong + XX and YX -> uẹʹ, iẹʹ
+diphthong + XˈX and YXX -> uäʹ, eäʹ
+column 1 is high; column 2 is low; column 3 is high with soft sign;
+column 4 represents (vowel + XˈX and YXX) context found in +V+Ind+Prs+Pl3 (cf. Mosnikoff et al 2020)
+column 5 is low with monophthongs and analogically low with diphthongs (see Rueter, 2025 )
 
 ### Unclassified words
 
@@ -2726,6 +2744,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 
 * +Der+Der/Dimin+N:%^V2VV%^YXX2YX N_KUUZZYZH-WITHOUT-PAL ;   põõrt-
 * +Der+Der/Dimin+N:%^V2VV%^PAL%^YXX2YX N_KUUZZYZH-WITH-PAL ;   põõʹrt-
+* +Der+Der/Dimin+N:%^PAL%^YXX2YX N_KUUZZYZH-WITH-PAL-ALLEGRO ;  põʹrt-
 
 * LEXICON N_1Â_VYKK_PL  aalǥ:algg
 * +Cmp/SgNom: R ;                            põrtt
