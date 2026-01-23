@@ -6320,7 +6320,9 @@ NumContLex="1.113"
 * :%^VOWRaise%^PAL%^CC2C SG-COM_IN ;	     (5) põõʹjin
 * :%^PAL%>e ESS/PAR ;	  	    	     (6) pââʹjjen
 * :%^PAL%^CC2C PL-NOM ;      (2) pââʹj
-* +Use/NGminip+Use/NG:%^J2I%^CC2C SG-GEN ;      pââi
+* +Err/Orth:%^J2I%^CC2C SG-GEN ;      pââi – non-standard ref. Nuõrttsääʹm ǩiõlljuâǥǥtõõzz sååbbar 6.-7.4.2016
+* +Err/Orth:%^J2I%^CC2C SG-ACC ;      pââi – non-standard ref. Nuõrttsääʹm ǩiõlljuâǥǥtõõzz sååbbar 6.-7.4.2016
+* +Err/Orth:%^J2I%^CC2C PL-NOM ;      pââi – non-standard ref. Nuõrttsääʹm ǩiõlljuâǥǥtõõzz sååbbar 6.-7.4.2016
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) pââjj-
 * :%^VV2V%^PAL%^CC2CAllegro E-STEM-PX-ALLEGRO ;  (11) pâʹj-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) pâʹjj- Ess+Px..
