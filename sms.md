@@ -5611,6 +5611,7 @@ N_1E_VWQHCC
 * :%^PALE%^PAL%^YXX2IX SG-ABE ;  Num+Sg+Abe: kueiʹtʼtaa
 * :%^PALE%^PAL%^YXX2IX SG-GEN ;  Num+Sg+Gen: kueiʹt
 * :%^PALE%^PAL%^YXX2IX PL-NOM ;  Num+Pl+Nom: kueiʹt
+* :%^PALE%^PAL%^YXX2IX%>e SG-LOC ;  Num+Sg+Gen: kueiʹt
 
 * +Err/Orth+Use/SpellNoSugg:%^VOWRaise%^PALÕ%^PAL%^YXX2IX SG-ABE ;  Num+Sg+Gen: kuõiʹt
 * +Err/Orth+Use/SpellNoSugg:%^VOWRaise%^PALÕ%^PAL%^YXX2IX SG-GEN ;  Num+Sg+Gen: kuõiʹt
@@ -5623,6 +5624,22 @@ e.g. +Use/NG+Sg+Loc+PxSg1
 *  E-STEM-PX-RETAIN-WITHOUT-PAL ;    (10) kuâhtt-
 * :%^PALE%^PAL%^YXX2IX E-STEM-PX-ALLEGRO ;  (11) kueʹit-
 * :%^PALE%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) kueʹhtt- Ess+Px..
+
+* :%^PALE%^PAL SG-ACC ;  Num+Sg+Acc: kuõʹhtt
+* :%^PALE%^PAL%^YXX2IX SG-ABE ;  Num+Sg+Abe: kuõiʹtʼtaa
+* :%^PALE%^PAL%^YXX2IX SG-GEN ;  Num+Sg+Gen: kuõiʹt
+* :%^PALE%^PAL%^YXX2IX PL-NOM ;  Num+Pl+Nom: kuõiʹt
+* :%^PALE%^PAL%^YXX2IX%>e SG-LOC ;  Num+Sg+Gen: kuõiʹt
+
+* +Err/Orth+Use/SpellNoSugg:%^VOWRaise%^PALÕ%^PAL%^YXX2IX SG-ABE ;  Num+Sg+Gen: kuõiʹt
+* +Err/Orth+Use/SpellNoSugg:%^VOWRaise%^PALÕ%^PAL%^YXX2IX SG-GEN ;  Num+Sg+Gen: kuõiʹt
+* +Err/Orth+Use/SpellNoSugg:%^VOWRaise%^PALÕ%^PAL%^YXX2IX PL-NOM ;  Num+Pl+Nom: kuõiʹt
+
+e.g. +Sg+Acc+PxPl3
+e.g. +Use/NG+Sg+Loc+PxSg1
+* :%^PALE%^PAL%>e SG-ILL ;  Num+Sg+Ill: kuõʹhtte
+* :%^PALE%^PAL%^YXX2IX E-STEM-PX-ALLEGRO ;  (11) kuõʹit-
+* :%^PALE%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) kuõʹhtt- Ess+Px..
 
 * LEXICON N_1E_VWQCC  kueʹll:kuâ%{ʹØ%}ll
 * LEXICON N_KUEQLL  kueʹll:kuâ%{ʹØ%}ll
