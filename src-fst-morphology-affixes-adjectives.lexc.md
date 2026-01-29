@@ -327,6 +327,8 @@ CLASS 11 ADJECTIVES
 
 * LEXICON A_VISKKYD  viskkâd:viskk
 
+* LEXICON A_KOSSYD  kõssâd:kõss
+
 * LEXICON A_MOASHSHAD  måššad:måšš
 
 * LEXICON A_AQKHKHED  âʹǩǩed:âʹǩǩ
