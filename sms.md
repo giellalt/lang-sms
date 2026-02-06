@@ -13397,11 +13397,10 @@ neutral to vowel and consonant length
 **Vowel shortening â:0** - used in
 
 čââʹđ+N+Sg+Ill: **heart/sydän**
-* *čâ^1VOWđđ>ma*
-* *čâ0đđ>ma*
 
 -â
 ǩeʹtted+V+Ind+Prs+ConNeg: **cook/keittää**
+
 * *ǩeâ{ʹØ}tt^VV2V^VOWRaise^PALI^PAL*
 * *ǩi0ʹtt0000*
 
@@ -13427,6 +13426,7 @@ jååʹtted+V+Ind+Prt+Pl3 **trekk**
 * *jåå{ʹØ}tt^VV2V^VOWRaise^PAL>e*
 * *jo0ʹtt000>e*
 låʹǧsted
+
 * *lååʹǧǧest^Pen^VV2V^Pen^CC2CAllegro^RmVow*
 * *lå0ʹǧ00st00000*
 
@@ -13474,7 +13474,7 @@ viikkâd+V+Ind+Prs+Pl3
 viikkâd+V+Imprt+Pl3
 * *vii{ʹØ}kk^VV2V^VOWLower>az*
 * *vẹ00kk00>az*
-* ★*vii{ʹØ}kk^VV2V^VOWLower>az* (is not standard language)
+* ★*vii{ʹØ}kk* `^VV2V:0` (is not standard language ^VOWLower>az)
 * ★*vẹẹ0kk00>az* (is not standard language)
 iilâsǩ:ilska
 
@@ -13652,7 +13652,6 @@ pââʹjj+N+Pl+Gen
 kââʹǩǩed+V+Act+PrsPrc+Sg+Nom: **rub/hangata**
 * *kââ{ʹØ}kk^VOWRaise^PAL>i*
 * *kõõʹǩǩ00>i*
-* ★*kââ{ʹØ}kk^VOWRaise^PAL>i* (is not standard language)
 * ★*kââʹǩǩ00>i* (is not standard language)
 * *ruâk0k^VOWRaise^CC2CCC>u*
 * *ruõkˈk00>u*
@@ -13741,7 +13740,7 @@ juʹrdded > joordam
 
 **Even syllabic verbs I, vowel lowering i:e** -
 viǯǯâd+V+Ind+Prs+Pl3 **fetch/noutaa**
-* *vi^1VOW0ǯǯ^VOWLower^PAL>e*
+* *vi^1VOW0ǯǯ^VOWLower^PAL>e!*
 * *ve0ʹǯǯ00>e*
 viikkâd+V+Ind+Prs+Pl3
 * *vii0kk^VV2V^VOWLower^PAL>e*
@@ -13786,7 +13785,7 @@ uʹvdded+V+Ind+Prs+Sg3
 * *u^1VOWvdd^VOWLower^YXX2VXX*
 * *o0udd00*
 vuʹvll+N+Sg+Ill: voulla
-* *vu^1VOWvll^VOWLower^YXX2VXX>a*
+* *vu^1VOWvll^VOWLower^YXX2VXX>a!*
 * *vo0ull00>a*
 puʹhtted+V+Cond+Pl3 **to give**
 * *pu^1VOW{ʹØ}h{ʹØ}tt^VOWLower*
@@ -14269,8 +14268,8 @@ uʹvdded+V+Ind+Prs+Pl3: **give/antaa**
 * *u^1VOW{ʹØ}v{ʹØ}dd^PAL>ed*
 * *u0ʹv0dd0>ed*
 tuʹvnn+N+Sg+Nom: ****
-€ tu^1VOW{ʹØ}v{ʹØ}nn^PAL
-€ tu0ʹv0nn0
+* *tu^1VOW{ʹØ}v{ʹØ}nn^PAL*
+* *tu0ʹv0nn0*
 täʹhtt+N+Pl+Nom: **bone/luu**
 * *tä^1VOW{ʹØ}h{ʹØ}tt^PAL*
 * *tää0uʹt00*
@@ -14593,7 +14592,6 @@ tuâjj+N+Sg+Acc: **work/työ**
 * *tuâjj^CC2C*
 * *tuâj00*
 tuâjj+N+Sg+Gen:tuâi
-* *tuâjj^J2I^CC2C*
 * *tuâi000*
 * *po^1VOWjjâs^Pen^V2VV^Pen^CC2C*
 * *pooj0âs0000*
@@ -14826,7 +14824,6 @@ taalkâs+N+Sg+Nom
 * *jeä{ʹØ}kˈkel^Pen^PALE^Pen^PAL^Pen^KKK2ZERO*
 * *jeeʹ000el000000*
 nââʹer+N+Sg+Nom sleep
-* *nâ^1VOW0kker^Pen^V2VV^Pen^PAL^Pen^KK2ZERO*
 * *nââʹ00er000000*
 
 **Even syllabic verbs I, second consonant loss ǩ:0** - used in
