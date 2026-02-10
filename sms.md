@@ -8696,15 +8696,10 @@ THIS NEEDS CHECKING
 tuejjeeja:tuejjẹẹja
 * Yaml: **N-tuejjeeja**
 
-* LEXICON N_PRSPRC-EEI  tuõđšteei:tueʹjjee
-* LEXICON NMN_PRSPRC-EEI  tuõđšteei:tueʹjjee
-tuõđšteei:tueʹjjee
+* LEXICON N_PRSPRC-EEI  tuõđšteei:tuõđštee
+* LEXICON NMN_PRSPRC-EEI  tuõđšteei:tuõđštee
+tuõđšteei:tuõđštee
 * Yaml: **N-tuodhshteei**
-
-* LEXICON N_PRSPRC-EEQJJ  tuõđšteei:tueʹjjee
-* LEXICON NMN_PRSPRC-EEQJJ  tuõđšteei:tueʹjjee
-tuõđšteeʹjj:tuõđštẹẹ
-* Yaml: **N-tuodhshteeqjj**
 
 Class 5 according to Feist 152
 ### k-stems
