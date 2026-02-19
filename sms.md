@@ -6566,7 +6566,7 @@ SVV = stable long vowel
 * :%^PAL E-STEM-PX-ALLEGRO ;  (11) hääʹsǩ-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) hääʹsǩ Ess+Px..
 
-* LEXICON N_SAIQMM  säiʹmm:säimm this might have zero vowel shift in plural
+* LEXICON N_SAIQMM  säiʹmm:säimm this may have zero vowel shift in plural
 N_1E_SVQCC
 ### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ### 1.3 Sg.Loc in -est (vowel shift)
