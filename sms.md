@@ -7472,7 +7472,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * bäʹndd:kuʹmpp
 NumContLex="1.1140000000000001"
 
-* LEXICON N_KRIQLCC  kriʹlcc:krilcc
+* LEXICON N_KRIQLCC  kriʹlcc:kri%^1VOW%{ʹØ%}lcc
 ### FORMS
 * Yaml: **N-krilcc**
 ???* There are several stem types
