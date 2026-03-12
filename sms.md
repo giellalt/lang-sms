@@ -6590,7 +6590,7 @@ Is for nouns with *-est* Loc, Extra long vowel
 * :%^PAL%^YXX2YX E-STEM-PX-ALLEGRO ;  (11) säiʹm-
 * :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ;  (12) säiʹmm Ess+Px..
 
-* LEXICON N_KHEQDD  ǩeʹdd:ǩe%^1VOWdd
+* LEXICON N_KHEQDD  ǩeʹdd:ǩe%^1VOW%{ʹØ%}dd
 N_1E_JEQCC
 ### 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 180)
 ### 1.3 Sg.Loc in -est (vowel shift)
@@ -9393,6 +9393,18 @@ vuâsppåʹd+N+Sg+Gen
 * *vuâsppooʹdd0000%>in*
 * :%^V2VV%^PAL PL-NOM ;  vuâsppååʹd
 * :%^V2VV%^VOWRaise%^PAL PL-OBL ;  vuâsppooʹd
+
+* LEXICON NMN_TEAPPNEQD  Teäppneʹd:Teäpˈpnẹ%^1VOW%{ʹØ%}d
+* Yaml: 
+Teäppneʹd
+* :%^PAL%>e ESS/PAR ;  Teäppneʹden 
+* :%^V2VV%^PAL SG-ABE/ACC/GEN ;  Teäppneeʹd
+* :%^V2VV%>a SG-ILL ;  Teäppnẹẹda
+* :%^V2VV%^PAL%>e SG-LOC ;  Teäppneeʹdest
+* :%^V2VV%^VOWRaise%^PAL SG-COM_IN ;  Teäppniiʹdin
+* +Err/Orth:%{XC%}%^V2VV%^VOWRaise%^PAL%^C2CC SG-COM_IN ;  Teäppniiʹddin
+* :%^V2VV%^PAL PL-NOM ;  Teäppneeʹd
+* :%^V2VV%^VOWRaise%^PAL PL-OBL ;  Teäppniiʹd-
 
 Class 11 according to Feist 162
 * LEXICON N_VISKKYD  viskkâd:viskk
@@ -13913,6 +13925,9 @@ nââʹer+N+Sg+Nom **sleep**
 * *nâ^1VOW0kker^Pen^V2VV^Pen^PAL^Pen^KK2ZERO*
 * *nââʹ00er000000*
 
+ǩeʹdd+N+Sg+Ill: __field/kenttä__
+* *ǩe^1VOW{ʹØ}d0d^PALÂ^PALNo*
+* *ǩeâ0dˈd00*
 radio+N+Sg+Ill
 * *radio^1VOW^V2VVʹje*
 * *radioo0ʹje*
@@ -14242,6 +14257,7 @@ reeʹǧǧes+A+Sg+Nom: **rich/rikas**
 
 **{ʹØ}:ʹ as transfer from left of v:u and all instances of modifier letter prime** - used +Ind+Prs+Pl3, uʹvdded+V+Ind+Prs+Pl3: ouʹdde
 
+IF you want RULES, use a specific contlex where a context can be given ;)
 uʹvdded+V+Ind+Prs+Pl3: **give/antaa**
 * *u^1VOWv{ʹØ}dd^VOWLower^PAL^YXX2VXX>e*
 * *o0uʹdd000>e*

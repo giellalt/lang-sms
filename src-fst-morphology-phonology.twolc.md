@@ -822,6 +822,9 @@ nââʹer+N+Sg+Nom **sleep**
 * *nâ^1VOW0kker^Pen^V2VV^Pen^PAL^Pen^KK2ZERO*
 * *nââʹ00er000000*
 
+ǩeʹdd+N+Sg+Ill: __field/kenttä__
+* *ǩe^1VOW{ʹØ}d0d^PALÂ^PALNo*
+* *ǩeâ0dˈd00*
 radio+N+Sg+Ill
 * *radio^1VOW^V2VVʹje*
 * *radioo0ʹje*
@@ -1151,6 +1154,7 @@ reeʹǧǧes+A+Sg+Nom: **rich/rikas**
 
 **{ʹØ}:ʹ as transfer from left of v:u and all instances of modifier letter prime** - used +Ind+Prs+Pl3, uʹvdded+V+Ind+Prs+Pl3: ouʹdde
 
+IF you want RULES, use a specific contlex where a context can be given ;)
 uʹvdded+V+Ind+Prs+Pl3: **give/antaa**
 * *u^1VOWv{ʹØ}dd^VOWLower^PAL^YXX2VXX>e*
 * *o0uʹdd000>e*
