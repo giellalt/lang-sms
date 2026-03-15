@@ -3871,12 +3871,12 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 * +Der+Der/Dimin+N:%^PAL%^CC2C N_MUORYZH-WITH-PAL ;   muõʹr-
 
 ǩiõtt+N+Sg+Loc+PxSg1 **hand,arm/käsi**
-* *ǩiõ0tt%^Allegro%^PAL%^CC2CAllegro%^PALK%>stan*
-* *ǩiõˈđ0000%>stan*
+* *ǩiõ0tt%^Allegro%^PAL%^CC2CAllegro%>stan*
+* *ǩiõˈđ000%>stan*
 * *ǩiõtt%^Allegro%^CC2CAllegro%>stan*
 * *ǩiõđ000%>stan*
 ǩiõtt+N+Sg+Ill+PxSg1: **hand/käsi**
-* *ǩiõ0t0t%^PAL%^CC2CCC%^PALK%>san*
+* *ǩiõ0t0t%^PAL%^CC2CCC%>san*
 * *ǩiõʹtˈt000%>san*
 * :%^CC2CCC HatY-STEM-PX-STRENGTHEN-ELSE ;  muõrˈr-
 
@@ -4010,17 +4010,17 @@ N_2Y_VK_VVKK
 * Yaml: **N-aqsttrik**
 is for nouns with -âst Loc. N_Y-EPal2-21
 N_GENX1-ILLEPalX3-LOCÂ-NOM1X2
-* :%^V2VV%^C2CC SG-COM_IN ;			 aʹsttriikkin
-* :%^V2VV%^C2CC  SG-ABE/ACC/GEN_PL-NOM ;	 aʹsttriikk
-* :%^PAL%^C2CC%^PALK%>e SG-ILL ;	   	 aʹsttriʹǩǩe
-* :%^PAL%^C2CC%^PALK N2A_LUOQSSI ;       aʹsttriʹǩǩi CHECKME
+* :%{XC%}%^V2VV%^C2CC SG-COM_IN ;			 aʹsttriikkin
+* :%{XC%}%^V2VV%^C2CC  SG-ABE/ACC/GEN_PL-NOM ;	 aʹsttriikk
+* :%{XC%}%^PAL%^C2CC%^PALK%>e SG-ILL ;	   	 aʹsttriʹǩǩe
+* :%{XC%}%^PAL%^C2CC%^PALK N2A_LUOQSSI ;       aʹsttriʹǩǩi CHECKME
 * : SG-NOM ;	       			 aʹsttrik
-* :%^V2VV%^C2CC%>â SG-LOC ;			 riikkâst
-* :%^V2VV%^C2CC%>â ESS/PAR ;    	   			 riikkân
-* :%^V2VV%^C2CC PL-OBL ;			 riikki
+* :%{XC%}%^V2VV%^C2CC%>â SG-LOC ;			 riikkâst
+* :%{XC%}%^V2VV%^C2CC%>â ESS/PAR ;    	   			 riikkân
+* :%{XC%}%^V2VV%^C2CC PL-OBL ;			 riikki
 
-* +Der+Der/Dimin+N:%^V2VV%^C2CC N_MUORYZH-WITHOUT-PAL ;   riikk-
-* +Der+Der/Dimin+N:%^V2VV%^PAL%^C2CC%^PALK N_MUORYZH-WITH-PAL ;   riiʹǩǩ-
+* +Der+Der/Dimin+N:%{XC%}%^V2VV%^C2CC N_MUORYZH-WITHOUT-PAL ;   riikk-
+* +Der+Der/Dimin+N:%{XC%}%^V2VV%^PAL%^C2CC%^PALK N_MUORYZH-WITH-PAL ;   riiʹǩǩ-
 
 * LEXICON N_1Â_VVC  plaan:plaa%{ʹØ%}n
 * LEXICON N_PLAAN  plaan:plaa%{ʹØ%}n
@@ -4222,6 +4222,33 @@ grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
 * :%^VV2V%^CC2CAllegro SG-LOC-PX_ALLEGRO ;  (10) lâj»
 Sg_Loc_Px..
 
+* : A-STEM_SG-NOM ;	     (1) Sg.Nom: Jääkk
+Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
+
+grade: weakened (long_vowel, short_cluster), vowel: neutral (low)
+* :%^VV2V%^VOWRaise%>u A-STEM_SG-ABE/ACC/GEN_PL-NOM ;  (2) Pl.Nom: Jakk
+Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
+stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
+
+grade: strengthened (short_vowel, long_cluster), vowel: raised
+* :%^VV2V%^VOWRaise%>u SG-ILL ;   (3) Sg.Ill: Jakku
+* +Use/NG:%^VV2V%>ja SG-ILL ;   (3) Sg.Ill: Jäkkja
+Sg_Ill
+
+grade: strengthened (short_vowel, long_cluster), vowel: neutral (low)
+* :%^VV2V%>a A-STEM-PX-STRENGTHEN ;            (5) Jäkka
+Ess_Px..., Sg_Ill..., N»A
+
+grade: neutral (short_vowel, long_cluster), vowel: neutral (low), stem_vowel: a
+* :%^VV2V%>a ESS/PAR ;  (6) Ess: Jäkkan
+
+grade: weakened (long_vowel, short_cluster), vowel: raised, stem_vowel: u/a
+* +Der+Der/Dimin+N:%^VV2V%> N_PIISSUZH ;  (9) Dim.N.Sg.Nom: Jäkkjaž
+
+grade: allegro (short_vowel, short_cluster), vowel: neutral (low)
+* :%^VV2V%^KK2KAllegro SG-LOC-PX_ALLEGRO ;  (10) jäk»
+Sg_Loc_Px..
+
 * LEXICON N_RAEAEKK  rääkk:rääkk
 N_1A_VVKK
 Sg_Nom: vow_mono:vow_long:vow_low:pal_no:cns_gem_ss_type
@@ -4242,7 +4269,7 @@ Weak grade: Pl.Nom, Sg.Loc, Sg.Com
 ### FORMS
 N_A-URaise3-32
 * Yaml: **N-raakk**
-grade: neutral (short_vowel, long_cluster), vowel: neutral (low)
+grade: neutral (long_vowel, long), vowel: neutral (low)
 * : A-STEM_SG-NOM ;	     (1) Sg.Nom: rääkk
 Sg_Nom, Sg_Nom..., Sg_Abe_Px1, Sg_Acc_Px1, Sg_Gen_Px1, Pl_Nom_Px1
 
@@ -4930,19 +4957,20 @@ Ess_Px..., Sg_Ill..., N»A
 * : SG-LOC-PX ;  (10) kapteän»
 Sg_Loc_Px..
 
-* LEXICON N_VIRVEL  virvel:virvẹ%^1VOW%{ʹØ%}l
+* LEXICON N_TEATTER  teatter:teattẹ%^1VOW%{ʹØ%}r
 
+* LEXICON NMN_TEATTER  teatter:teattẹ%^1VOW%{ʹØ%}r
 ### FORMS
 N_   like N_1Â_ATOM
 * Yaml: **virvel**
 * : SG-NOM ;	    		 virvel
-* +Use/NGminip+Use/NG:%^PAL%^PALK SG-NOM ;	    		 virveʹl
-* :%^V2VV%^PAL%^PALK SG-ABE/ACC/GEN_PL-NOM ;	 virveeʹl
+* +Use/NGminip+Use/NG:%^PAL SG-NOM ;	    		 virveʹl
+* :%^V2VV%^PAL SG-ABE/ACC/GEN_PL-NOM ;	 virveeʹl
 * :%^V2VV%>a SG-ILL ;		 virvẹẹla
-* :%^V2VV%^PAL%^PALK%>e SG-LOC ;	   		 virveeʹlest
-* :%^V2VV%^PAL%^PALK%> SG-COM_IN ;		 virveeʹlin
-* :%^V2VV%^PAL%^PALK%>e ESS/PAR ;     			 virveeʹlen
-* :%^V2VV%^PAL%^PALK%> PL-OBL ;			 virveʹli
+* :%^V2VV%^PAL%>e SG-LOC ;	   		 virveeʹlest
+* :%^V2VV%^PAL%> SG-COM_IN ;		 virveeʹlin
+* :%^V2VV%^PAL%>e ESS/PAR ;     			 virveeʹlen
+* :%^V2VV%^PAL%> PL-OBL ;			 virveʹli
 * +Der+Der/Dimin+N:%^V2VV N_KUYLAZH ;		 virvẹẹlaž
 
 * LEXICON NMN_FEDD  Fedd:Fe%^1VOWdd
