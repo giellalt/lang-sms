@@ -2252,8 +2252,8 @@ LEXICON N_PLAAN !!= * @CODE@ plaan:plaa{ʹØ}n
 !! N_1Â_VVC
 !: NMN_PLAAN ;
  NMN_1Â_VVC ;
-LEXICON NMN_PLAAN
- NMN_1Â_VVC ;
+!LEXICON NMN_PLAAN
+! NMN_1Â_VVC ;
 LEXICON NMN_1Â_VVC
 !!! pos="nominal"
 !!! syll_count-in-Sg_Nom="1"
@@ -2277,16 +2277,16 @@ LEXICON NMN_1Â_VVC
 : SG-NOM ;		! plaan
 : SG-ABE/ACC/GEN ;		! plaan
 : A_DER/LAZH ;
-:%^PAL%^PALK%>e SG-ILL ;	! plaaʹne
+:%^PAL%>e SG-ILL ;	! plaaʹne
 : A_DER/SAZH_Y ;
-:%^PAL%^PALK N2A_LUOQSSI ;     !!= * @CODE@ N»A: plaaʹni
+:%^PAL N2A_LUOQSSI ;     !!= * @CODE@ N»A: plaaʹni
 :%>â SG-LOC ;	 	! plaanâst
 : SG-COM_IN ;		! plaanin
 :%>â ESS/PAR ;  		! plaanân
 : PL-NOM ;		! plaan
 : PL-OBL ;		! plaani
 +Der+Der/Dimin+N: N_MUORYZH-WITHOUT-PAL ;  !!= * @CODE@ paar-
-+Der+Der/Dimin+N:%^PAL%^PALK N_MUORYZH-WITH-PAL ;  !!= * @CODE@ paaʹr-
++Der+Der/Dimin+N:%^PAL N_MUORYZH-WITH-PAL ;  !!= * @CODE@ paaʹr-
 HatY-STEM-PX-RETAIN ;
 HatY-STEM-PX-WEAKEN ;
 HatY-STEM-PX-STRENGTHEN ;
@@ -2296,6 +2296,33 @@ LEXICON N_PLAAN_PL
 : PL-OBL ;              ! plaani
 +Der+Der/Dimin+N: N_MUORYZH-WITHOUT-PAL_PL ;
 +Der+Der/Dimin+N:%^PAL%^PALK N_MUORYZH-WITH-PAL_PL ;
+
+LEXICON N_1Â_VVK !!= * @CODE@ antropoloog:antropoloo{ʹØ}g
+ NMN_1Â_VVC ;
+LEXICON NMN_1Â_VVK
+!! similar-to: PLAAN
+! gradation: no
+!! plaan:plaan except in k or g or ŋk or gg
+!! * Yaml: **N-plaan**
+: SG-NOM ;		! antropoloog
+: SG-ABE/ACC/GEN ;		! antropoloog
+: A_DER/LAZH ;
+:%^PAL%^PALK%>e SG-ILL ;	! antropolooʹǧe
++Err/Orth-k-kh:%^PAL%>e SG-ILL ;	! antropolooʹge
+: A_DER/SAZH_Y ;
+:%^PAL%^PALK N2A_LUOQSSI ;     !!= * @CODE@ N»A: antropolooʹǧi
++Err/Orth-k-kh:%^PAL N2A_LUOQSSI ;     !!= * @CODE@ N»A: antropolooʹgi
+:%>â SG-LOC ;	 	! antropoloogâst
+: SG-COM_IN ;		! antropoloogin
+:%>â ESS/PAR ;  		! antropoloogân
+: PL-NOM ;		! antropoloog
+: PL-OBL ;		! antropoloogi
++Der+Der/Dimin+N: N_MUORYZH-WITHOUT-PAL ;  !!= * @CODE@ antropoloog-
++Der+Der/Dimin+N:%^PAL%^PALK N_MUORYZH-WITH-PAL ;  !!= * @CODE@ antropolooʹǧ-
++Der+Der/Dimin+N+Err/Orth-k-kh:%^PAL N_MUORYZH-WITH-PAL ;  !!= * @CODE@ antropolooʹg-
+HatY-STEM-PX-RETAIN ;
+HatY-STEM-PX-WEAKEN ;
+HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_STRAAZHZH !!= * @CODE@ straažž:straa{ʹØ}žž
 !!! inflection_type="?"
@@ -3504,26 +3531,6 @@ LEXICON NMN_KAPTEAEN
 
 : SG-LOC-PX ; !!= * @CODE@ (10) kapteän»
 !! Sg_Loc_Px..
-
-LEXICON N_TEATTER !!= * @CODE@ teatter:teattẹ%^1VOW{ʹØ}r
-!!! inflection_type="?"
-!! 
-: NMN_TEATTER ;
-LEXICON NMN_TEATTER !!= * @CODE@ teatter:teattẹ%^1VOW{ʹØ}r
-!! ## FORMS
-!! N_   like N_1Â_ATOM
-!! * Yaml: **virvel**
-: SG-NOM ;	    		!!= * @CODE@ virvel
-+Use/NGminip+Use/NG:%^PAL SG-NOM ;	    		!!= * @CODE@ virveʹl
-:%^V2VV%^PAL SG-ABE/ACC/GEN_PL-NOM ;	!!= * @CODE@ virveeʹl
-:%^V2VV A_DER/LAZH ;
-:%^V2VV%>a SG-ILL ;		!!= * @CODE@ virvẹẹla
-:%^V2VV A_DER/SAZH ;
-:%^V2VV%^PAL%>e SG-LOC ;	   		!!= * @CODE@ virveeʹlest
-:%^V2VV%^PAL%> SG-COM_IN ;		!!= * @CODE@ virveeʹlin
-:%^V2VV%^PAL%>e ESS/PAR ;     			!!= * @CODE@ virveeʹlen
-:%^V2VV%^PAL%> PL-OBL ;			!!= * @CODE@ virveʹli
-+Der+Der/Dimin+N:%^V2VV N_KUYLAZH ;		!!= * @CODE@ virvẹẹlaž
 
 
 LEXICON NMN_FEDD !!= * @CODE@ Fedd:Fe%^1VOWdd
@@ -5107,8 +5114,28 @@ LEXICON NMN_1E_VVQC
 !:%^PAL E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) uʹčteʹl-
 !:%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) nuʹbb Ess+Px..
 
-LEXICON N_KANEQL !!= * @CODE@ kanel:kanẹ%^1VOW{ʹØ}l
+LEXICON N_TEATTER !!= * @CODE@ teatter:teattẹ%^1VOW{ʹØ}r
 !!! inflection_type="?"
+!! 
+: NMN_TEATTER ;
+LEXICON NMN_TEATTER !!= * @CODE@ teatter:teattẹ%^1VOW{ʹØ}r
+!! ## FORMS
+!! N_   like N_1Â_ATOM
+!! * Yaml: **virvel**
+: SG-NOM ;	    		!!= * @CODE@ teatter
++Use/NGminip+Use/NG:%^PAL SG-NOM ;	    		!!= * @CODE@ teatteʹr <as sounds but less likely>
+:%^V2VV%^PAL SG-ABE/ACC/GEN_PL-NOM ;	!!= * @CODE@ teatteeʹr
+:%^V2VV A_DER/LAZH ;
+:%^V2VV%>a SG-ILL ;		!!= * @CODE@ teattẹẹra
+:%^V2VV A_DER/SAZH ;
+:%^V2VV%^PAL%>e SG-LOC ;	   		!!= * @CODE@ teatteeʹrest
+:%^V2VV%^PAL%> SG-COM_IN ;		!!= * @CODE@ teatteeʹrin
+:%^V2VV%^PAL%>e ESS/PAR ;     			!!= * @CODE@ teatteeʹren
+:%^V2VV%^PAL%> PL-OBL ;			!!= * @CODE@ teatteʹri
++Der+Der/Dimin+N:%^V2VV N_KUYLAZH ;		!!= * @CODE@ teattẹẹraž
+
+LEXICON N_KANEQL !!= * @CODE@ kanel:kanẹ%^1VOW{ʹØ}l
+!!! inflection_type="?" specifically ending in l, anticipating the need for error kaneʹl due to ‹l›
 !! N_E_EC_EEQC
 !! like N_1Â_ATOM
 ! vowel: monophthong
@@ -5117,16 +5144,16 @@ LEXICON NMN_KANEQL
 ! gradation: yes
 !! * Yaml: **N-kanel**
 : E-STEM_SG-NOM ;		  	!!= * @CODE@ (1) kanel
-+Err/Orth-extra-q:%^PAL E-STEM_SG-NOM ;		  	!!= * @CODE@ (1) kaneʹl <as it sounds, but not >
-:%^V2VV%^PAL E-STEM_SG-ABE/ACC/GEN ;	!!= * @CODE@ (2) kaneeʹl
++Err/Orth-extra-q:%^PAL E-STEM_SG-NOM ;		  	!!= * @CODE@ (1) kaneʹl virveʹl <as it sounds, but not >
+:%^V2VV%^PAL E-STEM_SG-ABE/ACC/GEN ;	!!= * @CODE@ (2) kaneeʹl virveeʹl
 :%^V2VV A_DER/LAZH ;
 :%^V2VV%^PAL PL-NOM ;	!!= * @CODE@ (2) uʹčteeʹl
-:%^V2VV E-STEM_SG-ILL ;		     	!!= * @CODE@ (3) kaneela
-:%^V2VV%^PAL%>e SG-LOC ;		!!= * @CODE@ (4) kaneeʹlest
-:%^V2VV%^PAL SG-COM_IN ;	!!= * @CODE@ (5) kaneeʹlin
-:%^V2VV%^PAL E-STEM_PL-OBL ;	!!= * @CODE@ (5) kaneeʹlin
-:%^V2VV%^PAL%>e ESS/PAR ; 		!!= * @CODE@ (6) kaneeʹlen
-:%^V2VV E-STEM_N_KUYLAZH ;		!!= * @CODE@ (9) kaneelaž
+:%^V2VV E-STEM_SG-ILL ;		     	!!= * @CODE@ (3) kanẹẹla, virvẹẹla 
+:%^V2VV%^PAL%>e SG-LOC ;		!!= * @CODE@ (4) kaneeʹlest, virveeʹlest
+:%^V2VV%^PAL SG-COM_IN ;	!!= * @CODE@ (5) kaneeʹlin, virveeʹlin
+:%^V2VV%^PAL E-STEM_PL-OBL ;	!!= * @CODE@ (5) kaneeʹlin, virveeʹlin
+:%^V2VV%^PAL%>e ESS/PAR ; 		!!= * @CODE@ (6) kaneeʹlen, virveeʹlen
+:%^V2VV E-STEM_N_KUYLAZH ;		!!= * @CODE@ (9) kanẹẹlaž, virvẹẹlaž
 :%^V2VV E-STEM-PX-RETAIN-WITHOUT-PAL ;   !!= * @CODE@ (10) kaneel-
 :%^PAL E-STEM-PX-ALLEGRO ; !!= * @CODE@ (11) kaneʹl-
 :%^PAL  E-STEM-PX-STRENGTHEN-WITH-PAL ; !!= * @CODE@ (12) kaneʹl Ess+Px..
