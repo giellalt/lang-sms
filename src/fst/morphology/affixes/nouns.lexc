@@ -902,10 +902,14 @@ HatY-STEM-PX-RETAIN ;
 
 
 LEXICON N_RUOIDD !!= * @CODE@ ruõidd:ruõi{ʹØ}dd
+: NMN_1Â_VWUCC ;
+LEXICON N_1Â_VWUCC !!= * @CODE@ ruõidd:ruõi{ʹØ}dd
 !!! inflection_type="1"
 !! N_1Â_VWUCC
-: NMN_RUOIDD ;
-LEXICON NMN_RUOIDD
+: NMN_1Â_VWUCC ;
+!LEXICON NMN_RUOIDD
+!NMN_1Â_VWUCC ;
+LEXICON NMN_1Â_VWUCC
 !! Sg_Nom: vow_di:vow_high:pal_no:cns_vxx
 !!! pos="nominal"
 !!! syll_count-in-Sg_Nom="1"
@@ -953,6 +957,58 @@ LEXICON NMN_RUOIDD
 
 +Der+Der/Dimin+N:%^YXX2YX N_MUORYZH-WITHOUT-PAL ;  !!= * @CODE@ ruõid-
 +Der+Der/Dimin+N:%^PAL%^YXX2YX N_MUORYZH-WITH-PAL ;  !!= * @CODE@ ruõiʹd-
+
+HatY-STEM-PX-RETAIN ;
+:%^YXX2YX HatY-STEM-PX-WEAKEN ;
+:%^YXX2YX HatY-STEM-PX-WEAKEN_LARGO ;
+:%^Allegro%^YXX2YX SG-LOC-PX_ALLEGRO ;
+: HatY-STEM-PX-STRENGTHEN ;
+
+! Test data:
+!!€gt-norm: ruõidd #
+!!€ ruõidd:   	 ruõidd+N+Sg+Nom
+!!€ ruõid: 	 ruõidd+N+Sg+Gen
+!!€ ruõid: 	 ruõidd+N+Sg+Acc
+!!€ ruõiʹdde: 	 ruõidd+N+Sg+Ill
+!!€ ruõidâst: 	 ruõidd+N+Sg+Loc
+!!€ ruõˈidstan:  ruõidd+N+Sg+Loc+PxSg1
+!!€ ruõidstan: 	 ruõidd+N+Sg+Loc+PxSg1
+!!€ ruõidin: 	 ruõidd+N+Sg+Com
+!!€ ruõiddân: 	 ruõidd+N+Ess
+!!€ ruõiddâd: 	 ruõidd+N+Par
+!!€ ruõidtaa: 	 ruõidd+N+Sg+Abe
+!!€ ruõid: 	 ruõidd+N+Pl+Nom
+!!€ ruõidi: 	 ruõidd+N+Pl+Gen
+!!€ ruõidid: 	 ruõidd+N+Pl+Acc
+!!€ ruõidid: 	 ruõidd+N+Pl+Ill
+!!€ ruõidin: 	 ruõidd+N+Pl+Loc
+!!€ ruõidivuiʹm:  ruõidd+N+Pl+Com
+!!€ ruõiditaa: 	 ruõidd+N+Pl+Abe
+!!€ ruõidâž: 	 ruõidd+N+Der+Der/Dimin+N+Sg+Nom
+!!€ ruõiʹde: 	 ruõidd+N+Der+Der/Dimin+N+Sg+Gen
+
+LEXICON N_1Â_VWUKK_errorth
++Err/Orth: NMN_1Â_VWUKK ;
+LEXICON N_1Â_VWUKK !!= * @CODE@ juõigg:juõi{ʹØ}gg
+!!! inflection_type="1"
+!! like N_1Â_VWUCC
+: NMN_1Â_VWUKK ;
+LEXICON NMN_1Â_VWUKK
+!! ## FORMS
+!! * Yaml: **N-chuoskk**
+!! 
+: SG-NOM ;	    			!!= * @CODE@ (1) juõigg
+: A_DER/SAZH_Y ;
+:%^YXX2YX SG-ABE/ACC/GEN_PL-NOM ;	!!= * @CODE@ (2) juõiǥ
+:%^YXX2YX A_DER/LAZH ;
+:%^PAL%^PALK%>e SG-ILL ;			!!= * @CODE@ (3) juõiʹǧǧe
+:%^PAL N2A_LUOQSSI ;		!!= * @CODE@  ruõiʹǧǧi
+:%^YXX2YX%>â SG-LOC ;			!!= * @CODE@ (4) juõiǥâst
+:%^YXX2YX SG-COM_IN/PL-OBL ;		!!= * @CODE@ (5) juõiǥin
+:%>â ESS/PAR ; 	    			!!= * @CODE@ (6) juõiggân
+
++Der+Der/Dimin+N:%^YXX2YX N_MUORYZH-WITHOUT-PAL ;  !!= * @CODE@ juõiǥ-
++Der+Der/Dimin+N:%^PAL%^YXX2YX%^PALK N_MUORYZH-WITH-PAL ;  !!= * @CODE@ juõiʹj-
 
 HatY-STEM-PX-RETAIN ;
 :%^YXX2YX HatY-STEM-PX-WEAKEN ;
