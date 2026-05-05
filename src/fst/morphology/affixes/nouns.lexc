@@ -2264,11 +2264,18 @@ HatY-STEM-PX-RETAIN ;
 :%^VV2V%^CC2CAllegro SG-LOC-PX_ALLEGRO ; !!= * @CODE@ rik-
 :%^VV2V HatY-STEM-PX-STRENGTHEN ;
 
+LEXICON N_AQSTTRIK_errorth !!= * @CODE@ aʹsttrik:aʹsttri%^1VOW{ʹØ}k
+!!! inflection_type="?"
++Err/Orth: N_2Y_VK_VVKK ;
+LEXICON N_2Y_VK_VVKK
+ NMN_2Y_VK_VVKK ;
 LEXICON N_AQSTTRIK !!= * @CODE@ aʹsttrik:aʹsttri%^1VOW{ʹØ}k
 !!! inflection_type="?"
 !! N_2Y_VK_VVKK
 : NMN_AQSTTRIK ;
 LEXICON NMN_AQSTTRIK
+ NMN_2Y_VK_VVKK ;
+LEXICON NMN_2Y_VK_VVKK
 !! ## FORMS
 !!! pos="nominal"
 !!! syll_count-in-Sg_Nom="1"
@@ -7502,6 +7509,27 @@ LEXICON NMN_KUQMPP
 :%^V2VV%^PAL%^YXX2YX PL-OBL ; !!(8) Pl.Gen: kuuʹmpi
 +Der+Der/Dimin+N:%^V2VV%^YXX2YX%> N_KUUQMPEZH ; !!(9) Der/Dimin.N.Sg.Nom: kuumpež
 
+LEXICON N_CEEQL !!= * @CODE@ ceeʹl:cẹẹ{ʹØ}l
+!!! inflection_type="?" like KUQMPP
+: NMN_CEEQL ;
+LEXICON NMN_CEEQL
+! gradation: yes
+!! N_E-EPal3-31
+!! ## FORMS
+!! * Yaml: **N-ceeql**
+!! ???* There are several stem types
+!! * ceeʹl:cẹẹ{ʹØ}l
+!!
+:%^PAL SG-NOM ; !!(1) Sg.Nom: ceeʹl
+:%^V2VV%^PAL%^YXX2YX SG-ABE/ACC/GEN_PL-NOM ; !!(2) Pl.Nom: ceeʹl
+:%^V2VV%^YXX2YX A_DER/LAZH ;
+: E-STEM_SG-ILL ;! !!(3) Sg.Ill: cẹẹla
+:%^PAL%>e SG-LOC ;! !!(4) Sg.Loc: ceeʹlest
+:%^PAL SG-COM_IN ; !!(5) Sg.Com: ceeʹlin
+:%^PAL%>e ESS/PAR ; !!(6) Ess: ceeʹlen
+:%^PAL PL-OBL ; !!(8) Pl.Gen: ceeʹli
++Der+Der/Dimin+N:%> N_KUUQMPEZH ; !!(9) Der/Dimin.N.Sg.Nom: kuumpež CHECKME
+
 LEXICON N_BAEQNDD !!= * @CODE@ bäʹndd:kumpp
 !!! inflection_type="?"
 : NMN_BAEQNDD ;
@@ -7869,6 +7897,34 @@ LEXICON NMN_ESAI !!= * @CODE@ Esai:Esa%^1VOW{ʹØ}i
 :%^V2VV%^I2J SG-LOC-PX_ALLEGRO ; !! e.g. +Sg+Loc+PxSg1
 :%^V2VV%^I2J HatY-STEM-PX-STRENGTHEN ;
 
+
+LEXICON N_1Â_VK_VVKK_errorth !!= * @CODE@ äʹmmrik:äʹmmri%^1VOW{ʹØ}k
+!!! inflection_type="?"
+!! like KAADHNEKH
++Err/Orth: N_1Â_VK_VVKK ;
+LEXICON N_1Â_VK_VVKK !!= * @CODE@ äʹmmrik:äʹmmri%^1VOW{ʹØ}k
+!!! inflection_type="?"
+!! like KAADHNEKH
+: NMN_1Â_VK_VVKK ;
+LEXICON NMN_1Â_VK_VVKK
+!! ä'mmrik:äʹmmri%^1VOW{ʹØ}k
+!! * Yaml: **N-**
+: SG-NOM ;	    			! äʹmmrik
+:{XC}%^V2VV%^C2CC SG-ABE/ACC/GEN ;		! äʹmmriikk
+:{XC}%^PAL%^C2CC%^PALK%>e SG-ILL ;      		! äʹmmriʹǩǩe
+:{XC}%^V2VV%^C2CC%>â SG-LOC ;    			! äʹmmriikkâst
+:{XC}%^V2VV%^C2CC SG-COM_IN ;			! äʹmmriikkin
+:{XC}%^C2CC%>â ESS/PAR ;  			! äʹmmrikkân
+:{XC}%^V2VV%^C2CC PL-NOM ;		! äʹmmriikk
+:{XC}%^V2VV%^C2CC PL-OBL ;
++Der+Der/Dimin+N:{XC}%^V2VV%^C2CC N_MUORYZH-WITHOUT-PAL ;  !!= * @CODE@ paar-
++Der+Der/Dimin+N:{XC}%^V2VV%^PAL%^C2CC%^PALK N_MUORYZH-WITH-PAL ;  !!= * @CODE@ paaʹr-
+
+:{XC}%^V2VV%^C2CC HatY-STEM-PX-RETAIN ;
+:{XC}%^V2VV%^C2CC HatY-STEM-PX-WEAKEN ; !! e.g.
+:{XC}%^V2VV%^C2CC HatY-STEM-PX-WEAKEN_LARGO ; !! e.g. +Use/NG+Sg+Loc+PxSg3
+: SG-LOC-PX_ALLEGRO ; !! e.g. +Sg+Loc+PxSg1
+:{XC}%^V2VV%^C2CC HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_BLOUSLOV !!= * @CODE@ blouslõv:blouslõ%^1VOWv CHECKME
 !!! inflection_type="?"
@@ -11679,6 +11735,26 @@ LEXICON NMN_PRSPRCÂ_VVCC-I !!= * @CODE@ jõõvvi:jõõvvi
 :%^Pen%^CC2C%^I2J PL-OBL ;		!!= * @CODE@ jõõvji
 +Use/NGminip+Use/NG:%^I2J PL-OBL ;	!!= * @CODE@ jõõvvji
 +Use/NGminip+Use/NG: PL-NOM ;		!!= * @CODE@ jõõvvi
++Der+Der/Dimin+N:%^I2J  N_KUYLAZH ;
+:%^I2J VOONYS-STEM-PX ; !!= * @CODE@ võnns-
+
+LEXICON N_PRSPRCÂ_BRIITV-I !!= * @CODE@ briitvi:briitvi
+!!! inflection_type="?"
++NomAg: NMN_PRSPRCÂ_BRIITV-I ;
+LEXICON NMN_PRSPRCÂ_BRIITV-I !!= * @CODE@ jõõvvi:jõõvvi
+! gradation: no
+!! * Yaml: **N-briitvi**
+!! * There are several stem types
+!! * briitvi:briitvi
+!! NumContLex="1.2"
+: SG-NOM ;	       		!!= * @CODE@ (1) briitvi
+: SG-ABE/ACC/GEN ;		!!= * @CODE@ (2) briitvi
+:%^I2J%>a SG-ILL ;		!!= * @CODE@ briitvja
+:%^I2J%>e SG-LOC ;		!!= * @CODE@ briitvjest
+:%^I2J SG-COM_IN ;		!!= * @CODE@ briitvjin
+:%^I2J%>e ESS/PAR ;  		!!= * @CODE@ briitvjen
+: PL-NOM ;		!!= * @CODE@ briitvi
+:%^I2J PL-OBL ;		!!= * @CODE@ briitvji
 +Der+Der/Dimin+N:%^I2J  N_KUYLAZH ;
 :%^I2J VOONYS-STEM-PX ; !!= * @CODE@ võnns-
 
