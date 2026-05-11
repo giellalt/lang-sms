@@ -1,0 +1,22 @@
+{
+    "analyser": "@abs_builddir@/../../analyser-gt-norm.hfstol",
+    "generator": "@abs_builddir@/../../generator-gt-norm.hfstol",
+    "nouns": {
+        "lexcfile": "@abs_srcdir@/../stems/N_sms2x.lexc",
+        "lemmatags": ["+N+Sg+Nom", "+N+Pl+Nom", "+N+Coll+Sg+Nom", "+N+NomAg+Sg+Nom"],
+        "exclusions": ["(CmpN/Only|ShCmp|\\+Cmp/SplitR| Rreal | R | RHyph | Rnoun |\\+V\\+| AGAdj|NOT-TO-LEMMATEST)"]
+    },
+    "adjectives": {
+        "lexcfile": "@abs_srcdir@/../stems/A_sms2x.lexc",
+        "lemmatags": ["+A+Sg+Nom"]
+    },
+    "propernouns": {
+        "lexcfile": "@abs_srcdir@/../stems/N_Prop_sms2x.lexc",
+        "lemmatags": ["+N+Prop+Sg+Nom"]
+    },
+    "verbs": {
+        "lexcfile": "@abs_srcdir@/../stems/V_sms2x.lexc",
+        "lemmatags": ["+V+Inf"],
+        "exclusions": ["(\\+Neg|AB-DO|V-NEG_IJ)"]
+    }
+}
