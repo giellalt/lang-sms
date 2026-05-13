@@ -120,11 +120,11 @@ LEXICON Root
 
 LEXICON BEFpunkt
 %:: BEF ;
-%.: BEF ;
+.: BEF ;
 
 LEXICON AFTpunkt
 %:: AFT ; ! 2:00 = göökte
-%.: AFT ; ! 2.00 = göökte
+.: AFT ; ! 2.00 = göökte
 :+Use/NA HOUR ; ! 2 = göökte
 
 LEXICON BEF
@@ -144,21 +144,22 @@ LEXICON BEF
 36:kuâhttlonellj%  TO ;
 37:kuâhttlokoumm%  TO ;
 38:kuâhttlokueʹhtt%  TO ; 
-39:kuâhttloõhtt%  TO ;
+38:kuâhttlokuõʹhtt+Use/NG%  TO ; 
+39:kuâhttlo-õhtt%  TO ;
 4%0:kuâhttlo%  TO ;
 41:åcmlo%  TO ;
 42:käcmlo%  TO ;
 43:činmlo%  TO ;
-44:kuttmlo%  TO ;
-45:vittmlo%  TO ;
+44:kutmlo%  TO ;
+45:vitmlo%  TO ;
 45:vaart+Use/NG%  TO ;
 46:nenjmlo%  TO ;
 47:konmlo%  TO ;
 48:kuâtmlo%  TO ;
 49:õtmlo%  TO ;
 5%0:lååi%  TO ;
-51:åhcc%  TO ;
-51:ååuc+Use/NG%  TO ;
+51:åʹhcc%  TO ;
+51:ååuʹc+Use/NG%  TO ;
 52:käʹhcc%  TO ;
 52:kääuʹc+Use/NG%  TO ;
 53:čiččâm%  TO ;
@@ -191,15 +192,16 @@ LEXICON AFT
 12:kuâtmlo%  OVER ;
 13:konmlo%  OVER ;
 14:nenjmlo%  OVER ;
-15:vittmlo%  OVER ; 
+15:vitmlo%  OVER ; 
 15:vaart+Use/NG%  OVER ; 
-16:kuttmlo%  OVER ;
+16:kutmlo%  OVER ;
 17:činmlo%  OVER ;
 18:käcmlo%  OVER ;
 19:åcmlo%  OVER ;
 2%0:kuâhttlo%  OVER ;
-21:kuâhttloõhtt%  OVER ;
+21:kuâhttlo-õhtt%  OVER ;
 22:kuâhttlokueʹhtt%  OVER ;
+22:kuâhttlokuõʹhtt+Use/NG%  OVER ;
 23:kuâhttlokoumm%  OVER ;
 24:kuâhttlonellj%  OVER ;
 25:kuâhttlovitt%  OVER ;
@@ -207,8 +209,8 @@ LEXICON AFT
 27:kuâhttločiččâm%  OVER ;
 28:kuâhttlokäʹhcc%  OVER ;
 28:kuâhttlokääuʹc+Use/NG%  OVER ;
-29:kuâhttloåhcc%  OVER ;
-29:kuâhttloååuc+Use/NG%  OVER ;
+29:kuâhttloåʹhcc%  OVER ;
+29:kuâhttloååuʹc+Use/NG%  OVER ;
 
 LEXICON TOHALF
 :väjja% pieʹll+Use/NG%  HOUR ; ! young & old
@@ -284,6 +286,7 @@ LEXICON HOUR_GEN
 LEXICON HOUR_LOC
 @U.TIME.1@:@U.TIME.1@õõutâst # ;
 @U.TIME.2@:@U.TIME.2@kueiʹtest # ;
+@U.TIME.2@:@U.TIME.2@kuõiʹtest+Use/NG # ;
 @U.TIME.3@:@U.TIME.3@kooumâst # ;
 @U.TIME.4@:@U.TIME.4@neelljast # ;
 @U.TIME.5@:@U.TIME.5@viiđâst # ;
@@ -291,20 +294,21 @@ LEXICON HOUR_LOC
 @U.TIME.7@:@U.TIME.7@čiččmest # ;
 @U.TIME.8@:@U.TIME.8@kääuʹcest # ;
 @U.TIME.9@:@U.TIME.9@ååuʹcest # ;
-@U.TIME.10@:@U.TIME.10@lååjest # ;
+@U.TIME.10@:@U.TIME.10@lååʹjjest # ;
 @U.TIME.11@:@U.TIME.11@õtmlååʹjjest # ;
 @U.TIME.12@:@U.TIME.12@kuâtmlååʹjjest # ;
 
 LEXICON OVER-HOUR
 @U.TIME.1@:@U.TIME.1@õhtt # ;
 @U.TIME.2@:@U.TIME.2@kueʹhtt # ;
+@U.TIME.2@:@U.TIME.2@kuõʹhtt+Use/NG # ;
 @U.TIME.3@:@U.TIME.3@koumm # ;
 @U.TIME.4@:@U.TIME.4@nellj # ;
 @U.TIME.5@:@U.TIME.5@vitt # ;
 @U.TIME.6@:@U.TIME.6@kutt # ;
 @U.TIME.7@:@U.TIME.7@čiččâm # ;
-@U.TIME.8@:@U.TIME.8@käuʹcc # ;
-@U.TIME.9@:@U.TIME.9@åuʹcc # ;
+@U.TIME.8@:@U.TIME.8@käʹhcc # ;
+@U.TIME.9@:@U.TIME.9@åʹhcc # ;
 @U.TIME.10@:@U.TIME.10@lååi # ;
 @U.TIME.11@:@U.TIME.11@õtmlo # ;
 @U.TIME.12@:@U.TIME.12@kuâtmlo # ;

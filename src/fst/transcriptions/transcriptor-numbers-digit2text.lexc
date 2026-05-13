@@ -42,7 +42,7 @@ LEXICON NUMBERSECTION
        TEENST          ; ! 11000-19999
        ONEST           ; ! 2000-9999
 1:dohat THOUSAND        ; ! 1000-1999
-1%0%0%0%.:dohttad  COMMA        ; ! 1000.
+1%0%0%0.:dohttad  COMMA        ; ! 1000.
        UNDERTHOUSAND   ; ! 100-999
        TENS            ; ! 20-99
        TEENS           ; ! 10-19
@@ -133,11 +133,11 @@ LEXICON ONESM
 
 LEXICON 1MILJON
 1:miljon%  OVERTHOUSANDS ;
-1%0%0%0%0%0%0%.:miljoonad  COMMA ;
+1%0%0%0%0%0%0.:miljoonad  COMMA ;
 
 LEXICON MILJON
 :% miljon%  OVERTHOUSANDS ;
-%0%0%0%0%0%0%.:% miljoonad  COMMA ;
+%0%0%0%0%0%0.:% miljoonad  COMMA ;
 
 ! =================
 ! Under the million
@@ -241,7 +241,7 @@ LEXICON ONEST
 LEXICON THOUSANDS      ! x > 1
 :dohat THOUSAND ;
 :doohhat+Use/NG THOUSAND ;
-%0%0%0%.:dohttad COMMA ;
+%0%0%0.:dohttad COMMA ;
 
 
 LEXICON THOUSAND
@@ -309,7 +309,7 @@ LEXICON HUNDREDTENS
 
 
 LEXICON CUODAAT
-%0%0%.:    COMMA ;
+%0%0.:    COMMA ;
 
 
 LEXICON TEENS
@@ -333,7 +333,7 @@ LEXICON TEEN
 LEXICON LOHKAI
 :mlååʹǩǩ   COMMA  ;
 :mlo+Use/NG   COMMA  ;
-%.:m LOGAAT ;
+.:m LOGAAT ;
 
 LEXICON LOGAAT
 :lååǥǥad COMMA ;
@@ -343,7 +343,7 @@ LEXICON TENS
 1%0:lååʹǩǩ COMMA ; 
 1%0:lååʹjj+Use/NG COMMA ; 
 1%0:lååi+Use/NG COMMA ; 
-1%0%.:lååǥǥad COMMA ; 
+1%0.:lååǥǥad COMMA ; 
 2:kuâhtt   LÅGEV ;
 3:koumm   LÅGEV ;
 4:nellj   LÅGEV ;
@@ -357,7 +357,7 @@ LEXICON LÅGEV
 %0:lååʹǩǩ COMMA ;
 %0:lo+Use/NG COMMA ;
 :lo   NONINITIALCARDINAL ;
-%0%.:lååǥǥad COMMA ;
+%0.:lååǥǥad COMMA ;
 
 LEXICON ONES
 CARDINAL ;
@@ -386,16 +386,16 @@ LEXICON CARDINAL
 9:ååuʹc+Use/NG COMMA ;
 
 LEXICON ORDINAL ! Ordinals are now sms (from PS/JM dict), please check 11. etc.
-1%.:vuõssmõs COMMA ;
-1%.:vuõss+Use/NG COMMA ;
-2%.:nuʹbb COMMA ;
-3%.:kuälmad COMMA ;
-4%.:neelljad COMMA ;
-5%.:viiđad COMMA ;
-6%.:kuuđad COMMA ;
-7%.:čiiččad  COMMA ;
-8%.:kääucad  COMMA ;
-9%.:ååucad COMMA ;
+1.:vuõssmõs COMMA ;
+1.:vuõss+Use/NG COMMA ;
+2.:nuʹbb COMMA ;
+3.:kuälmad COMMA ;
+4.:neelljad COMMA ;
+5.:viiđad COMMA ;
+6.:kuuđad COMMA ;
+7.:čiiččad  COMMA ;
+8.:kääucad  COMMA ;
+9.:ååucad COMMA ;
 
 LEXICON COMMA
  ENDLEX ;
@@ -404,11 +404,11 @@ LEXICON COMMA
 LEXICON COMMASECTION ! these are not spellchecked!!!
              ENDLEX ;
 ! % komma% :,      Root ;
-! % tjuohkkis% :%. Root ;
+! % tjuohkkis% :. Root ;
 ! % kolon% :%:     Root ;
 ! % sárggis% :%-   Root ; 
-% la% :%=         Root ; 
-% gráda% :%°      Root ; 
+% la% :=         Root ; 
+% gráda% :°      Root ; 
 % paragráfa% :§   Root ; 
 ! % násti% :%*     Root ; 
 % ja% :&          Root ; 
