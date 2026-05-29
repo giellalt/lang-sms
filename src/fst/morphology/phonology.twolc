@@ -118,6 +118,7 @@ Alphabet !!≈ ## @CODE@
  %^VC:0       !!≈ * @CODE@ Voicing s:z š:ž
  %^Â:0        !!≈ * @CODE@ Indicates placement of â in stem
  %^Br:0	      !!≈ * @CODE@ break rule, e.g. eʹč^Br>{ʼØ}č
+ %^1NoHyph:0	      !!≈ * @CODE@ rule requiring disallow for missing hyphen
 
 !! CHARACTERISTIC BREAKDOWN 2015-02-17
 
@@ -3575,6 +3576,35 @@ e:  _ (%{ʹØ%}: h: |%{ʹØ%}: v: |i|u) [:ʹ|%{ʹØ%}:ʹ]  [Cns:+ (%{XC%}:)|Cns:
 "Disallow UltRmVow after anything but Vows:0"
 !! **@RULENAME@** - 
 %^UltRmVow:0 /<= [Cns: |Vow] _ ;
+
+"Disallow NoHyph marking for lookalikes between non-look-alikes"
+!! **@RULENAME@** -
+ %^1NoHyph:0 /<=
+      [:k|:ǩ]          (:0) Dummy:* ∑ _ # [ Ltrs - [k|ǩ] ] ;
+   [:g|:ǧ|:ǥ]          (:0) Dummy:* ∑ _ # [ Ltrs - [g|ǧ|ǥ] ] ;
+      [:c|:č]          (:0) Dummy:* ∑ _ # [ Ltrs - [c|č] ] ;
+      [:s|:š]          (:0) Dummy:* ∑ _ # [ Ltrs - [s|š] ] ;
+      [:z|:ž]          (:0) Dummy:* ∑ _ # [ Ltrs - [z|ž] ] ;
+      [:d|:đ]     (t:0|đ:0) Dummy:* ∑ _ # [ Ltrs - [d|đ] ] ;
+      [:v|:w]         (v:0) Dummy:* ∑ _ # [ Ltrs - [v|w] ] ;
+           :b               Dummy:* ∑ _ # [ Ltrs - b ] ;
+           :f         (f:0) Dummy:* ∑ _ # [ Ltrs - f ] ;
+           :h               Dummy:* ∑ _ # [ Ltrs - h ] ;
+           :j         (j:0) Dummy:* ∑ _ # [ Ltrs - j ] ;
+           :l (l:0)         Dummy:* ∑ _ # [ Ltrs - l ] ;
+           :m         (m:0) Dummy:* ∑ _ # [ Ltrs - m ] ;
+ [:ŋ (ŋ:0)|:n (n:0)    ]    Dummy:* ∑ _ # [ Ltrs - n ] ;
+           :p               Dummy:* ∑ _ # [ Ltrs - p ] ;
+           :r         (r:0) Dummy:* ∑ _ # [ Ltrs - r ] ;
+           :t               Dummy:* ∑ _ # [ Ltrs - t ] ;
+
+           :i               Dummy:* ∑ _ # [ Ltrs - i ] ;
+           :u               Dummy:* ∑ _ # [ Ltrs - u ] ;
+           :y               Dummy:* ∑ _ # [ Ltrs - y ] ;
+      [:e|:ẹ]               Dummy:* ∑ _ # [ Ltrs - [e|ẹ] ] ;
+   [:o|:õ|:ö]               Dummy:* ∑ _ # [ Ltrs - [o|õ|ö] ] ;
+[:a|:å|:ä|:â]               Dummy:* ∑ _ # [ Ltrs - [a|å|ä|â] ] ;
+
 
 !!TESTS
 !echo 'c e ä {ʹØ}:0 v 0:ˈ v ^CC2CCC:0 > a' | hfst-pair-test src/fst/morphology/.generated/phonology.compose.hfst
