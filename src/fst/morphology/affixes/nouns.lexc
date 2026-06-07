@@ -325,12 +325,16 @@ HatY-STEM-PX-RETAIN ;
 : HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_1Â_VYKK_PL !!= * @CODE@ aalǥ:algg
+ NMN_1Â_VYKK_PL ;
+LEXICON NMN_1Â_VYKK_PL !!= * @CODE@ aalǥ:algg
 +Cmp/SgNom: R ;                           !!= * @CODE@ põrtt
 :^V2VV^YXX2YX PL-NOM ;                !!= * @CODE@ põõrt
 :%>â ESS/PAR ;                                  !!= * @CODE@ põrttân
 :^V2VV^YXX2YX PL-OBL ;                        !!= * @CODE@ põõrti
 
 LEXICON N_1Â_VYXX_PL !!= * @CODE@ põõrt:põrtt
+ NMN_1Â_VYXX_PL ;
+LEXICON NMN_1Â_VYXX_PL !!= * @CODE@ põõrt:põrtt
 +Cmp/SgNom: R ;                           !!= * @CODE@ põrtt
 :^V2VV^YXX2YX PL-NOM ;                !!= * @CODE@ põõrt
 :%>â ESS/PAR ;                                  !!= * @CODE@ põrttân
@@ -2788,6 +2792,7 @@ LEXICON NMN_1A_VYXX
 :^V2VV^YXX2YX A_DER/LAZH ;
 !! Sg_Abe, Sg_Acc, Sg_Gen, Pl_Nom, +Use/NG_Sg_Loc_Px..., 
 !! stem_vowel: a : Sg_Loc, Sg_Com, Pl_Gen, Pl_Acc, Pl_Ill, Pl_Loc, Pl_Com, Pl_Abe
+:^V2VV^YXX2YX%>a PL-OBL ;
 
 !! grade: strengthened (short_vowel, long_cluster), vowel: raised
 :^VOWRaise%>u SG-ILL ;		      	!!= * @CODE@ (3) alddu
@@ -2813,6 +2818,7 @@ LEXICON NMN_1A_VYXX
 LEXICON N_AELDD_PL
 :%>a ESS/PAR ;                          !!= * @CODE@ (6) älddan
 :^V2VV^YXX2YX A-STEM_PL-NOM ; !!= * @CODE@ (2) ääld
+:^V2VV^YXX2YX%>a PL-OBL ;
 
 ! Test data:
 !!€gt-norm: äldd #
@@ -2835,6 +2841,11 @@ LEXICON N_AELDD_PL
 !!€ ääldaivuiʹm: äldd+N+Pl+Com
 !!€ ääldaitaa: äldd+N+Pl+Abe
 !!€ aalduž: äldd+N+Der+Der/Dimin+N+Sg+Nom
+
+LEXICON NMN_1A_VYKK_PL
+:%>a ESS/PAR ;                          !!= * @CODE@ (6) Vârggan
+:^V2VV^YXX2YX A-STEM_PL-NOM ; !!= * @CODE@ (2) Vâârǥ
+:^V2VV^YXX2YX%>a PL-OBL ;
 
 
 LEXICON A-STEM_SG-NOM !!= * @CODE@ (1)
@@ -8500,6 +8511,13 @@ LEXICON NMN_SUYL
 :%>u PL-OBL ;				! suõlˈlui
 :^VOWLower%>{ʼØ}j VOONYS-STEM-PX ;		! suâlˈlʼjallaš
 
+LEXICON NMN_SUYL_PL
+:^VOWLower^CCC2C%>a ESS/PAR ; 		! suâlan
++Use/NGminip+Use/NG:%>u PAR ;	      	  		! suõlˈlud
+:%>u PL-NOM ;	   	  		! suõlˈlu
+:%>u PL-OBL ;				! suõlˈlui
+:^VOWLower%>{ʼØ}j VOONYS-STEM-PX ;		! suâlˈlʼjallaš
+
 LEXICON N_KUYUS  !!= * @CODE@ kuâus:kuõhss
 !!! inflection_type="3"
 : NMN_KUYUS ;
@@ -8679,6 +8697,21 @@ LEXICON NMN_OODH !!= * @CODE@ õõđ:õ^1VOWđđ
 :%>e ESS/PAR ; ! ess and prt without m? earlier: +N:m%>e ESS
 :m PL-OBL ;
 :m VOONYS-STEM-PX ;
+
+LEXICON N_NUORTI !!= * @CODE@ nuõrti:nuõrtt
+!!! inflection_type="2?"
+: NMN_NUORTI ;
+LEXICON NMN_NUORTI !!= * @CODE@ nuõrti:nuõrtt
+! gradation: yes
+!! * Yaml: **N-nuorti**
+:^YXX2YXi SG-NOM ; 	    ! nuõrti
+:i SG-ABE/ACC/GEN_PL-NOM ;	 		    ! õđđâm
+:i^I2J%>a SG-ILL ;
+:i^I2J%>e SG-LOC ;
+:i^I2J%> SG-COM_IN ;
+:i^I2J%>e ESS/PAR ; ! ess and prt without m? earlier: +N:m%>e ESS
+:i^I2J PL-OBL ;
+:i^I2J VOONYS-STEM-PX ;
 
 
 LEXICON N_SOOUS !!= * @CODE@ sõõus:sõhss
