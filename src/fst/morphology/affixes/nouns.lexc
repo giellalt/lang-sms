@@ -2365,7 +2365,7 @@ LEXICON N_PLAAN_PL
 +Der+Der/Dimin+N:^PAL^PALK N_MUORYZH-WITH-PAL_PL ;
 
 LEXICON N_1Â_VVK !!= * @CODE@ antropoloog:antropoloo{ʹØ}g
- NMN_1Â_VVC ;
+ NMN_1Â_VVK ;
 LEXICON NMN_1Â_VVK
 !! similar-to: PLAAN
 ! gradation: no
@@ -7794,6 +7794,81 @@ LEXICON NMN_LUUKK
 +Der+Der/Dimin+N: N_KUUZZYZH-WITHOUT-PAL ;  !!= * @CODE@ paar-
 +Der+Der/Dimin+N:^PAL^PALK N_KUUZZYZH-WITH-PAL ;  !!= * @CODE@ paaʹr-
 
+!! Like N_1Â_VKK except nominative singular in -i
+LEXICON N_HOKKI !!= * @CODE@ hokki:ho^1VOW{ʹØ}kk
+!!! inflection_type="1"
+!! similar_to: N_1Â_VKK
+ NMN_HOKKI ;
+LEXICON NMN_HOKKI
+!! pa{a0}{ʹ0}{p0}p
+!! V{V0}{ʹ0}{C0}C
+!! Sg_Nom:
+!! high-vowel=yes
+!! monophthong=yes
+!! long-vowel=yes
+!! palatalization=no
+!! consonantism=quant-gem
+!! long-consonant=yes
+
+!!! pos="nominal"
+!!! syll_count-in-Sg_Nom="1"
+!!! stem-ends-in="consonant"
+!!! stem_vowel-in-Sg_Loc="â"
+!!! stem_with_gradation="yes" 
+!! 1.1.1.1.1.1. Sg_Nom="short_vowel|geminate" Sg_Gen="long_vowel|geminate" 
+
+! foot: 2syll
+! diphthong: no
+! vowel_shift: no
+! consonant: geminate
+! gradation: yes2
+! weak_grade: no
+! strong_grade:	geminate
+! stem_vowel-in-Sg_Loc: âst
+! Sg.Ill: palatalization-AND-e
+!! ## 1. WORDS WITH SINGLE-SYLLABLE NOMINATIVE SINGULARS (2009: 167)
+!! ## 1.1 Sg.Loc in -âst (no vowel shift, all raised)
+!!  â-stems (Sg.Loc, Ess, Par).
+!! ## 1.1.1 Sg.Ill vowel	-e
+!! ## 1.1.1.1 Has Palatalization
+!! ## 1.1.1.1[1] (Palatalization pattern)
+!!  Palatalized: Sg.Ill
+!!  Not Palatalized: ELSE
+!!    Sg.Ill in palatalization and -e
+!! ## 1.1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+!! ## 1.1.1.1[1].1.1 Has Orthographic Gradation
+!! ## 1.1.1.1[1].1.1[] (Monophthong + Consonant Geminate alternation)
+!!  Extra strong grade: Sg.Nom, Ess, Par
+!!  Extra strong grade: Sg.Ill
+!!  Strong grade: Pl.Nom, Sg.Loc, Sg.Com
+!! ## FORMS
+!! * Yaml: **N-papp**
+!! strong_geminate, short_vowel
+:i SG-NOM ;			!!= * @CODE@ papp
+:%>â ESS/PAR ; 	  		!!= * @CODE@ pappân, pappâd
+: A_DER/SAZH_Y ;
+
+!! strong_geminate, short_vowel, palatalization
+:^PAL^PALK%>e SG-ILL ;		!!= * @CODE@ paʹppe
+:^PAL^PALK N2A_LUOQSSI ;		!!= * @CODE@ N»A: paʹppi
+
+!! strong_geminate, long_vowel
+:^V2VV SG-ABE/ACC/GEN_PL-NOM ;	!!= * @CODE@ paapp
+:^V2VV%>â SG-LOC ;		!!= * @CODE@ paappâst
+:^V2VV SG-COM_IN/PL-OBL ;	!!= * @CODE@ paappi, paappid, paappid, paappin, paappivuiʹm, paappitaa
+:^V2VV A_DER/LAZH ;
+
++Der+Der/Dimin+N:^V2VV N_KUUZZYZH-WITHOUT-PAL ;  !!= * @CODE@ paapp-
++Der+Der/Dimin+N:^V2VV^PAL^PALK N_KUUZZYZH-WITH-PAL ;  !!= * @CODE@ paaʹpp-
++Der+Der/Dimin+N:^PAL^CC2CAllegro N_KUUZZYZH-WITH-PAL-ALLEGRO ;
+!! papp+N+Der+Der/Dimin+N+Sg+Loc+PxSg3
+!! paʹpstes
+
+HatY-STEM-PX-RETAIN ;
+:^V2VV HatY-STEM-PX-WEAKEN ; !! e.g. 
+:^V2VV HatY-STEM-PX-WEAKEN_LARGO ; !! e.g. +Use/NG+Sg+Loc+PxSg3
+:^CC2CAllegro SG-LOC-PX_ALLEGRO ; !! e.g. +Sg+Loc+PxSg3 pp:p papstes
+ HatY-STEM-PX-STRENGTHEN ;
 
 LEXICON N_BIOLOOG !!= * @CODE@ bioloog:bioloog
 !!! inflection_type="?"
