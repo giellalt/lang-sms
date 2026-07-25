@@ -1978,6 +1978,52 @@ LEXICON V0_LAADDYD !!= * @CODE@ laaddâd:laadd
 
 :^CC2CAllegro FOR-ALLEGRO-DEVERBAL-DERIVATION ;
 
+LEXICON V_PRIISKYD !!= * @CODE@ priiskâd:prii{ʹØ}sk
+: V0_PRIISKYD ;
+LEXICON IV_PRIISKYD !!= * @CODE@ priiskâd:prii{ʹØ}sk
++IV: V0_PRIISKYD ;
+!LEXICON TV_PRIISKYD !!= * @CODE@ priiskâd:prii{ʹØ}sk
+!+TV: V0_PRIISKYD ;
+LEXICON V0_PRIISKYD !!= * @CODE@ priiskâd:prii{ʹØ}sk
+!!! inflection_type="1"
+! 1. VERBS WITH SINGLE-SYLLABLE Ind.Prs.Sg3 (2009: 354)
+! 1.1 Inf in âd (vowel shift)
+!   Raised: Inf, Ind.Prt.Pl3, Imprt.Sg2, Pot.Sg3
+!   Lowered: Ind.Prs.Sg3, Ind.Prs.Pl3, Imprt.Sg3
+! 1.1.1 Has Palatalization
+! 1.1.1[1] (Palatalization pattern)
+!   Palatalized: Ind.Prs.Pl3, Ind.Prt.Pl3
+!   Not Palatalized: Inf, Ind.Prs.Sg3, Imprt.Sg2, Imprt.Sg3, Pot.Sg3
+! 1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+! 1.1.1[1].1.2 Lacks Orthographic Gradation
+! 1.1.1[1].1.2[111] (Monophthong + Consonant Cluster)
+!   Weak grade: Inf, Ind.Prs.Sg3
+!   Weak grade: Ind.Prs.Pl3, Ind.Prt.Pl3
+!   Weak grade: Imprt.Sg2, Pot.Sg3, Imprt.Sg3
+! FORMS
+! (1)  Inf: priiskâd
+! (2)  Ind.Prs.Sg3: preesk
+! (3)  Ind.Prs.Pl3: preeʹsǩe
+! (4)  Ind.Prt.Pl3: priiʹsǩe
+! (5)  Ind.Imprt.Sg2: priisk
+! (6)  Ind.Pot.Sg3: priiskâž
+! (7)  Ind.Imprt.Sg3: preeskas
+! (8)  Imprt.13.ConNeg: priisku
+! (9)  Ind.Imprt.Pl3: preeskaz
+! (10) Allegro for incoative: priisk»
+! * Yaml: 
+! laaddâd:laadd
+: VSUF-INF_ÂD ; !1
+:^VOWLower VSUF-IND-PRS-SG3_ÂD ; !2
++Ind+Prs+Pl3:^VOWLower^PAL^PALK%>e K ; !3
+:^PAL^PALK VSUF-IND-PRT_PL3_ÂD ; !4
+: VSUF-I-POTKOND_ÂD ; !5
++Pot+Sg3:%>âž   K ; !6
++Imprt+Sg3:^VOWLower%>as K ; !7
+: VSUF-IMPRT-CONNEGII_ÂD ; !8
+
+:^CC2CAllegro FOR-ALLEGRO-DEVERBAL-DERIVATION ;
+
 
 LEXICON V_DOOIDYD !!= * @CODE@ võõidâd:võõid
 : V0_DOOIDYD ;
@@ -2214,6 +2260,52 @@ LEXICON V0_SUUDYD !!= * @CODE@ suudâd:suud
 
 :^VV2V FOR-ALLEGRO-DEVERBAL-DERIVATION ;
 
+LEXICON V_STIIKYD !!= * @CODE@ stiikâd:stii{ʹØ}k
+: V0_STIIKYD ;
+!LEXICON IV_STIIKYD !!= * @CODE@ stiikâd:stii{ʹØ}k
+!+IV: V0_STIIKYD ;
+!LEXICON TV_STIIKYD !!= * @CODE@ stiikâd:stii{ʹØ}k
+!+TV: V0_STIIKYD ;
+LEXICON V0_STIIKYD !!= * @CODE@ stiikâd:stii{ʹØ}k
+!!! inflection_type="1"
+!!! V1YX_ÂD
+! 1. VERBS WITH SINGLE-SYLLABLE Ind.Prs.Sg3 (2009: 354)
+! 1.1 Inf in âd (vowel shift)
+!   Raised: Inf, Ind.Prt.Pl3, Imprt.Sg2, Pot.Sg3
+!   Lowered: Ind.Prs.Sg3, Ind.Prs.Pl3, Imprt.Sg3
+! 1.1.1 Has Palatalization
+! 1.1.1[1] (Palatalization pattern)
+!   Palatalized: Ind.Prs.Pl3, Ind.Prt.Pl3
+!   Not Palatalized: Inf, Ind.Prs.Sg3, Imprt.Sg2, Imprt.Sg3, Pot.Sg3
+! 1.1.1[1].1 Lacks Specifically Pedagogical Gradation
+! 1.1.1[1].1.2 Lacks Orthographic Gradation
+! 1.1.1[1].1.2[111] (Diphthong + Consonant Cluster)
+!   Weak grade: Inf, Ind.Prs.Sg3
+!   Weak grade: Ind.Prs.Pl3, Ind.Prt.Pl3
+!   Weak grade: Imprt.Sg2, Pot.Sg3, Imprt.Sg3
+! FORMS
+! (1)  Inf: stiikâd
+! (2)  Ind.Prs.Sg3: steekk
+! (3)  Ind.Prs.Pl3: steeʹǩe
+! (4)  Ind.Prt.Pl3: stiiʹǩe
+! (5)  Ind.Imprt.Sg2: stiik
+! (6)  Ind.Pot.Sg3: stiikâž
+! (7)  Ind.Imprt.Sg3: steekas
+! (8)  Imprt.13.ConNeg: stiiku
+! (9)  Ind.Imprt.Pl3: steekaz
+! (10) Allegro for incoative: stiik»
+! * Yaml: 
+! suudâd:suud
+: VSUF-INF_ÂD ; !1
+:^VOWLower VSUF-IND-PRS-SG3_ÂD ; !2
++Ind+Prs+Pl3:^VOWLower^PAL^PALK%>e K ; !3
+:^PAL^PALK VSUF-IND-PRT_PL3_ÂD ; !4
+: VSUF-I-POTKOND_ÂD ; !5
++Pot+Sg3:%>âž   K ; !6
++Imprt+Sg3:^VOWLower%>as K ; !7
+: VSUF-IMPRT-CONNEGII_ÂD ; !8
+
+:^VV2V FOR-ALLEGRO-DEVERBAL-DERIVATION ;
 
 !! ### CLASS 1 LOW VOWEL, NO PALATALIZATION
 !! Even-syllable stems in -AD
