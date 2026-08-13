@@ -1979,6 +1979,14 @@ REMOVE:mielde (Err/SpaceCmp) (0/1 ("mielde"))(0 Allegro) ;
 # TODO: Ask Tino how to constraint that Cmp and Err/SpaceCmp are on the same Reading-group
 # REMOVE SUB:-1 (Cmp) (0/0 Err/SpaceCmp) ;
 
+	# Percent
+
+	# Keep only the Num Arab in subreadings of a %-lemma that have subreadings. Used in disamb analysers/tokenisers, should not affect
+	# grammar checking and TTS tokenisation. End result after cg-mwesplit is that we have two tokens: the Arab numeral, and the
+	# percent symbol, even though there are no space between.
+REMOVE:percent-num-with-mwe (Num Arab) IF (0 (".*%"r Num Arab));
+	## 100%
+	
 REMOVE:GenFirst (Err/SpaceCmp) (0/-1 Gen) ;
 	## Stuorradikki Gieldda- ja hálddašanlávdegotti galledeami oktavuođas lágida Sámediggeráđđi beaivelahki seminára , guovvamánu 24. beaivvi diibmu ovccis gitta 12.00 rádjái , {sámi} giellavuoigatvuođaid birra árgabeaivvis .
 	## {Sámi} kulturráđđi lea vuollásaš ráđđi Sámedikkevuogádagas .
