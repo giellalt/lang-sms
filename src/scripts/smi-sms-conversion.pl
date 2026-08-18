@@ -19,6 +19,8 @@ while(<>) {
 #	s/ C-FI-NEN/nen LONDON/g ;
 #	s/SUND/BERN/g ;
 #	s/HEIM/BERN/g ;
+	s/o(ff\ )BERN-sur\ /o\^1VOW\{ʹØ\}$1PROP_1Â_VCC_sur\ /g ;
+#	s/e(ff\ )BERN-sur\ /ẹ\^1VOW\{ʹØ\}$1PROP_1Â_VCC_sur\ /g ; !
 	s/(NIKOSIIJA|ACCRA|SIJTE|HAWAII)(\-malsur)/PROP_TRUUBA$2/g ;
 	s/(NIKOSIIJA|ACCRA|SIJTE|HAWAII)(\-ani)/PROP_TRUUBA$2/g ;
 	s/(NIKOSIIJA|ACCRA|SIJTE|HAWAII)(\-fem)/PROP_TRUUBA$2/g ;
