@@ -44,7 +44,6 @@ Association (ELRA), p. 250-257 8 p.
 
 - [Koeparadigmat oikolukua varten](KaikkiGeneroidutParadigmat.md)
 - [Table of attribute forms for testing](testit/TestiAAttr.md)
-- [Speller test results](speller-report.html).
 
 ### Meetings
 
