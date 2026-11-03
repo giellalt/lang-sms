@@ -70,27 +70,27 @@ Alphabet !!≈ ## @CODE@
 
 !! Symbol pairs for vowel length:
 %{õuØ%}:0   !!≈ * __@CODE@__
-%{ouØ%}:0   !!≈ * __@CODE@__
-%{âõØ%}:0   !!≈ * __@CODE@__
-%{ẹiØ%}:0   !!≈ * __@CODE@__
-%{äaØ%}:0   !!≈ * __@CODE@__
-%{äåØ%}:0   !!≈ * __@CODE@__
-%{eiØ%}:0   !!≈ * __@CODE@__
-%{åoØ%}:0   !!≈ * __@CODE@__
-%{ẹeiØ%}:0  !!≈ * __@CODE@__
+!20261103%{ouØ%}:0   !!≈ * __@CODE@__
+!20261103%{âõØ%}:0   !!≈ * __@CODE@__
+!20261103%{ẹiØ%}:0   !!≈ * __@CODE@__
+!20261103%{äaØ%}:0   !!≈ * __@CODE@__
+!20261103%{äåØ%}:0   !!≈ * __@CODE@__
+!20261103%{eiØ%}:0   !!≈ * __@CODE@__
+!20261103%{åoØ%}:0   !!≈ * __@CODE@__
+!20261103%{ẹeiØ%}:0  !!≈ * __@CODE@__
 
 !! Symbol pairs for vowel height, by default vowels are low:
 %{õu%}:õ     !!≈ * __@CODE@__
-%{ou%}:o     !!≈ * __@CODE@__
-%{âõ%}:â     !!≈ * __@CODE@__
-%{ẹi%}:ẹ     !!≈ * __@CODE@__
-%{äa%}:ä     !!≈ * __@CODE@__
-%{äå%}:ä     !!≈ * __@CODE@__
-%{ei%}:e     !!≈ * __@CODE@__
-%{åo%}:å     !!≈ * __@CODE@__
-%{ẹei%}:ẹ    !!≈ * __@CODE@__
-%{âõe%}:â    !!≈ * __@CODE@__
-%{âõäe%}:â   !!≈ * __@CODE@__
+!20261103%{ou%}:o     !!≈ * __@CODE@__
+!20261103%{âõ%}:â     !!≈ * __@CODE@__
+!20261103%{ẹi%}:ẹ     !!≈ * __@CODE@__
+!20261103%{äa%}:ä     !!≈ * __@CODE@__
+!20261103%{äå%}:ä     !!≈ * __@CODE@__
+!20261103%{ei%}:e     !!≈ * __@CODE@__
+!20261103%{åo%}:å     !!≈ * __@CODE@__
+!20261103%{ẹei%}:ẹ    !!≈ * __@CODE@__
+!20261103%{âõe%}:â    !!≈ * __@CODE@__
+!20261103%{âõäe%}:â   !!≈ * __@CODE@__
  %^1VOW:0     !!≈ * __@CODE@__ - Vow dummy i^1VOW>ii, ẹ^1VOW>ẹẹ, a^1VOW>aa, å^1VOW>åå
 
 !! Trigger symbols:
@@ -116,7 +116,6 @@ Alphabet !!≈ ## @CODE@
 
 !! Miscellaneous triggers:
  %^VC:0       !!≈ * @CODE@ Voicing s:z š:ž
- %^Â:0        !!≈ * @CODE@ Indicates placement of â in stem
  %^Br:0	      !!≈ * @CODE@ break rule, e.g. eʹč^Br>{ʼØ}č
  %^1NoHyph:0	      !!≈ * @CODE@ rule requiring disallow for missing hyphen
 
@@ -161,19 +160,6 @@ Alphabet !!≈ ## @CODE@
 %^I2J:0          !!≈ * @CODE@ in agent names
 %^I2Zero:0       !!≈ * @CODE@ in agent names
 
-!! Gradation triggers 2015.01.23
- %^XSt2St:0      !!≈ * @CODE@ Causes weakening from extra strong to strong
- %^XSt2W:0       !!≈ * @CODE@ Causes weakening from extra strong to weak
- %^St2W:0        !!≈ * @CODE@ Causes weakening from strong to weak
- %^W2St:0        !!≈ * @CODE@ Causes strengthening from weak to strong
- %^W2XSt:0       !!≈ * @CODE@ Causes strengthening from weak to extra strong
- %^St2XSt:0      !!≈ * @CODE@ Causes strengthening from strong to extra strong
-
-!! Other vowel length and consonant length will be phased out
- %^VOWXSH:0      !!≈ * @CODE@ Extra shortens vowel in relation to consonant
- %^VOWXL:0       !!≈ * @CODE@ Extra lengthens vowel in relation to consonant in nouns, for example
- %^CShort:0      !!≈ * @CODE@ Shortening
-
 !! More triggers, possibly realised as a segment:
 
 ! Some of the following doccommewnts must be escaped using {% raw %} @CODE@  {% endraw %}, because
@@ -182,19 +168,18 @@ Alphabet !!≈ ## @CODE@
 !! <!-- {% raw %} -->
  X3:0          !!≈ * `@CODE@` causes weak grade
  %{VU%}:u      !!≈ * `@CODE@` used with stuuʹl
- %{Â1%}:0      !!≈ * `@CODE@` used with "mainsted" to tell (a story)
- %{A1%}:0      !!≈ * `@CODE@` used with "vuejted" to drive (causative)
- %{E1%}:0      !!≈ * `@CODE@` used with "kåʹmrded" to bow
- %{%ʼ%}:0      !!  * `@CODE@` archiform for MODIFIER LETTER ACUTE ACCENT used in stems where the lemma does not contain a MODIFIER LETTER ACUTE ACCENT and yet the paradigm requires one.
- %{EÂ%}:e      !!≈ * `@CODE@` archiform for ie:eâ variation
+!20261103 %{A1%}:0      !!≈ * `@CODE@` used with "vuejted" to drive (causative)
+!20261103 %{E1%}:0      !!≈ * `@CODE@` used with "kåʹmrded" to bow
+!20261103 %{Â1%}:0      !!≈ * `@CODE@` used with "mainsted" to tell (a story)
+!20261103  %{EÂ%}:e      !!≈ * `@CODE@` archiform for ie:eâ variation
  %^IMPSG2:0    !!≈ * `@CODE@`
  %^INDPRSSG3:0 !!≈ * `@CODE@`
  %^PenVow2a:0  !!≈ * `@CODE@` Changes penultimate vowel to a; e:a â:a
 
 !! Hyphen at compound word boundary
-%{%-Ø%}:0    !!  * `@CODE@` Zero versus hyphen in compounding
-%^Hyphen:0   !!≈ * `@CODE@` at compound word boundary with %-
-%^NoHyphen:0 !!≈ * `@CODE@` at compound word boundary
+!20261103%{%-Ø%}:0    !!  * `@CODE@` Zero versus hyphen in compounding
+!20261103%^Hyphen:0   !!≈ * `@CODE@` at compound word boundary with %-
+!20261103%^NoHyphen:0 !!≈ * `@CODE@` at compound word boundary
 !! <!-- {% endraw %} -->
 
 
@@ -273,7 +258,8 @@ PenUltCns = [Cns: |%{XC%}:] ;
 
 !! <!-- {% raw %} -->
 !! ```
-RBound = [(%^Hyphen: %-|%^NoHyphen: |%{%-Ø%}:) (∑) #: |.#.|%>|»|%-] ; !!≈ * @CODE@
+RBound = [ (∑) #: |.#.|%>|»|%-] ; !!≈ * @CODE@
+! [(%^Hyphen: %-|%^NoHyphen: |%{%-Ø%}:) (∑) #: |.#.|%>|»|%-] ; !!≈ * @CODE@
 !! ```
 !! <!-- {% endraw %} -->
 
@@ -1314,9 +1300,9 @@ OnSetC u: _   (ʹ: |%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ: |:ˈ) Cns:+|r d d:]  
 !!€ peâ{ʹØ}h{ʹØ}ss^PALÄ^PAL>e
 !!€ peäʹh0ss00>e
 
-"Even syllabic verbs I, diphthong opening after i:e e:â"
-!! **@RULENAME@** - deriving +Ind+Prs+Sg3, in pi%{EÂ%}ʹǩǩ:peâkka
- %{EÂ%}:â <=> i:e _ (ʹ: |%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ: |:ˈ) Cns:+] %^VOWLower: %^PALNo:  RBound ;
+!20261103"Even syllabic verbs I, diphthong opening after i:e e:â"
+!20261103!! **@RULENAME@** - deriving +Ind+Prs+Sg3, in pi%{EÂ%}ʹǩǩ:peâkka
+!20261103 %{EÂ%}:â <=> i:e _ (ʹ: |%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ: |:ˈ) Cns:+] %^VOWLower: %^PALNo:  RBound ;
 
 
 !! ### Vowel backing
@@ -1744,7 +1730,8 @@ OnSetC [i|I] _ ((%{ʹØ%}:) h: |u) (%{ʹØ%}:) [Cns:+ (%{XC%}:)|Cns:+ (ˈ: |:ˈ)
  OnSetC [o:u|u] _ (ʹ: |%{ʹØ%}:) Cns: Cns:* (%^Pen: [(%^Allegro:) (%^PAL:) %^CC2C: |(%^Allegro:) (%^PAL:) %^CC2CAllegro:]) %^V2VV: ((%^PALE: |%^PALÄ: |%^PALẸ:) %^PAL: |%^PALNo:) [%^C2CC: | %^K2GG:] ;
  OnSetC o:u     _ (i) (ʹ: |%{ʹØ%}:) Cns: Cns:*  %^V2VV:  %^VOWRaise:  ;
  OnSetC u (i)   _ (ʹ: |%{ʹØ%}:) Cns: Cns:*  %^V2VV: BetweenVowHeightAndMorph ;
-         Cns: u _ (ʹ: |%{ʹØ%}:)  CNoV: Vow: Cns:+ (%{XC%}:)  %^Pen: %^V2VV: [%>|(%^Hyphen: %- |%^NoHyphen: |%{%-Ø%}:) (∑) #: |.#.|(%^PALE: |%^PALÄ: |%^PALẸ:) %^PAL:] ;
+         Cns: u _ (ʹ: |%{ʹØ%}:)  CNoV: Vow: Cns:+ (%{XC%}:)  %^Pen: %^V2VV: [%>| (∑) #: |.#.|(%^PALE: |%^PALÄ: |%^PALẸ:) %^PAL:] ;
+!         Cns: u _ (ʹ: |%{ʹØ%}:)  CNoV: Vow: Cns:+ (%{XC%}:)  %^Pen: %^V2VV: [%>|(%^Hyphen: %- |%^NoHyphen: |%{%-Ø%}:) (∑) #: |.#.|(%^PALE: |%^PALÄ: |%^PALẸ:) %^PAL:] ;
               u _ (ʹ: |%{ʹØ%}:) (i) [Cns:+ (%{XC%}:)|Cns:+ (ˈ: |:ˈ) Cns:+]  Vow: Cns:* %^Pen: %^V2VV: ;
 
 !! tuuibâl+N+Sg+Nom: ****
@@ -2039,9 +2026,9 @@ e:  _ (%{ʹØ%}: h: |%{ʹØ%}: v: |i|u) [:ʹ|%{ʹØ%}:ʹ]  [Cns:+ (%{XC%}:)|Cns:
 
  ʼ:0 <=> Vow:Vow _ Cns: ;
 
-"%{A1%}:ʼ when subseqent syllable has vowel v"
-!! **@RULENAME@** - This is a temporary solution to  "ʼ" in võʹllʼjed 2013-08-29
-%{A1%}:ʼ <=> [l l|n n] _ i: %> Vow: ;
+!20261103"%{A1%}:ʼ when subseqent syllable has vowel v"
+!20261103!! **@RULENAME@** - This is a temporary solution to  "ʼ" in võʹllʼjed 2013-08-29
+!20261103%{A1%}:ʼ <=> [l l|n n] _ i: %> Vow: ;
 
 
 
@@ -3479,66 +3466,6 @@ e:  _ (%{ʹØ%}: h: |%{ʹØ%}: v: |i|u) [:ʹ|%{ʹØ%}:ʹ]  [Cns:+ (%{XC%}:)|Cns:
          (ʹ: |%{ʹØ%}:)     v _ v:     [NeutrVowLengthHeightDiphPalAllegroPAL | Vow: Cns:*  PenNeutrVowLengthHeightDiphPalAllegroPAL %^Pen: ][%^CCC2CC: |%^CCC2C: |%^CCC2CAllegro:] ;
 !! ```
 
-!W!"Hyphen with Vx in b, h, etc "
-!W!!! __@RULENAME@__ check sma
-!W!#:%- <=> :Vx  _ :Vx    ;
-!W!      where Vx in ( b  h  p  t ) matched ;
-!W!
-!W!"Hyphen with Vx in f, j, etc "
-!W!!! __@RULENAME@__ check sma
-!W!#:%- <=> :Vx  _ :Vx    ;
-!W!      where Vx in ( f  j  m  r ) matched ;
-!W!
-!W!
-!W!"Hyphen with Vx  in multiples k ǩ "
-!W!!! __@RULENAME@__ check sma
-!W! #:%- <=> :Vx (:0) _ :Vx  ;
-!W!        where Vx in ( k ǩ ) ;
-!W!
-!W!"Hyphen with Vx and Vx in multiples g ǧ ǥ "
-!W!!! __@RULENAME@__ check sma
-!W! #:%- <=> :Vx (:0) _ :Vx  ;
-!W!        where Vx in ( g ǧ ǥ ) ;
-!W!
-!W!"Hyphen with Vx and Vx in multiples c č "
-!W!!! __@RULENAME@__ check sma
-!W! #:%- <=> :Vx (:0) _ :Vx  ;
-!W!        where Vx in ( c č ) ;
-!W!
-!W!"Hyphen with Vx and Vx in multiples s š "
-!W!!! __@RULENAME@__ check sma
-!W! #:%- <=> :Vx (:0) _ :Vx  ;
-!W!        where Vx in ( s š ) ;
-!W!
-!W!"Hyphen with Vx and Vx in multiples z ž "
-!W!!! __@RULENAME@__ check sma
-!W! #:%- <=> :Vx (:0) _ :Vx  ;
-!W!        where Vx in ( z ž ) ;
-!W!
-!W!"Hyphen with Vx and Vx in multiples d đ "
-!W!!! __@RULENAME@__ check sma
-!W! #:%- <=> :Vx (:0) _ :Vx  ;
-!W!        where Vx in ( d đ ) ;
-!W!
-!W!"Hyphen with Vx and Vx in multiples v w "
-!W!!! __@RULENAME@__ check sma
-!W! #:%- <=> :Vx (:0) _ :Vx  ;
-!W!        where Vx in ( v w ) ;
-!W!
-!W!"Hyphen with Vx and Vx in multiples a å ä â "
-!W!!! __@RULENAME@__ check sma
-!W! #:%- <=> :Vx  _ :Vx  ;
-!W!        where Vx in ( a å ä â ) ;
-!W!
-!W!"Hyphen with Vx and Vx in multiples o õ "
-!W!!! __@RULENAME@__ check sma
-!W! #:%- <=> :Vx _ :Vx  ;
-!W!        where Vx in ( o õ ) ;
-!W!
-!W!"Hyphen with Vx and Vx in multiples l n "
-!W!!! __@RULENAME@__ check sma
-!W! #:%- <=> :Vx (:0) (j) _ :Vx  ;
-!W!        where Vx in ( l n ) ;
 
 !"#:# retension to avoid hyphen"
 !! **@RULENAME@** - $ Sakssa-jânnam
