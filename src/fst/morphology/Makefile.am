@@ -35,17 +35,18 @@ GT_LEXC_ROOT=$(srcdir)/root.lexc
 GT_LEXC_SRCS_L1_L2=\
 				stems/abbreviations.lexc \
 				stems/exceptions.lexc \
-				stems/adjectives_newwords.lexc \
-				stems/adpositions_newwords.lexc \
-				stems/adverbs_newwords.lexc \
-				stems/conjunctions_newwords.lexc \
-				stems/nouns_newwords.lexc \
+				stems/adjectives.lexc \
+				stems/adpositions.lexc \
+				stems/adverbs.lexc \
+				stems/conjunctions.lexc \
+				stems/nouns.lexc \
 				stems/numerals.lexc \
-				stems/particles_newwords.lexc \
-				stems/pronouns_newwords.lexc \
-				stems/propernouns_newwords.lexc \
-				stems/toponyms_newwords.lexc \
-				stems/verbs_newwords.lexc \
+			        stems/Num_sms2x.lexc \
+				stems/particles.lexc \
+				stems/pronouns.lexc \
+				stems/propernouns.lexc \
+				stems/subjunctions.lexc \
+				stems/verbs.lexc \
 				affixes/acronyms.lexc \
 				affixes/adjectives.lexc \
 				affixes/adverbs.lexc \
@@ -78,27 +79,14 @@ GT_LEXC_L2_SRCS=\
 # Set this to the names of all generated lexc files, if any
 GENERATED_LEXC_SRCS=\
 			generated_files/smi-$(GTLANG)-propernouns.lexc \
-			$(srcdir)/stems/A_sms2x.lexc                   \
 			$(srcdir)/stems/ITRAB_sms2x.lexc               \
 			$(srcdir)/stems/TRAB_sms2x.lexc                \
 			$(srcdir)/stems/TRABPO_sms2x.lexc              \
 			$(srcdir)/stems/TRNUMAB_sms2x.lexc             \
 			$(srcdir)/stems/TRNUMABPO_sms2x.lexc           \
-			$(srcdir)/stems/Adp_sms2x.lexc                 \
-			$(srcdir)/stems/Adv_sms2x.lexc                 \
-			$(srcdir)/stems/CC_sms2x.lexc                  \
-			$(srcdir)/stems/CS_sms2x.lexc                  \
 			$(srcdir)/stems/Det_sms2x.lexc                 \
 			$(srcdir)/stems/Interj_sms2x.lexc              \
-			$(srcdir)/stems/N_sms2x.lexc                   \
-			$(srcdir)/stems/N_Kin_sms2x.lexc               \
-			$(srcdir)/stems/N_Prop_sms2x.lexc              \
-			$(srcdir)/stems/N_Prop_Toponyms_sms2x.lexc     \
-			$(srcdir)/stems/Num_sms2x.lexc                 \
-			$(srcdir)/stems/Pcle_sms2x.lexc                \
 			$(srcdir)/stems/Prefix_sms2x.lexc              \
-			$(srcdir)/stems/Pron_sms2x.lexc                \
-			$(srcdir)/stems/V_sms2x.lexc                   \
 			$(srcdir)/stems/ABBR_sms2x.lexc                \
 			$(srcdir)/stems/ACR_sms2x.lexc                \
 			generated_files/smi-$(GLANG)-arabic_roman_digits.lexc \
@@ -133,27 +121,14 @@ endif
 
 # Set this to the names of all source xml files, if any
 GT_XML_SRCS=\
-			stems/A_sms2x.xml     \
 			stems/ITRAB_sms2x.xml     \
 			stems/TRAB_sms2x.xml     \
 			stems/TRABPO_sms2x.xml     \
 			stems/TRNUMAB_sms2x.xml     \
 			stems/TRNUMABPO_sms2x.xml     \
-			stems/Adp_sms2x.xml     \
-			stems/Adv_sms2x.xml     \
-			stems/CC_sms2x.xml     \
-			stems/CS_sms2x.xml     \
 			stems/Det_sms2x.xml     \
 			stems/Interj_sms2x.xml     \
-			stems/N_sms2x.xml     \
-			stems/N_Kin_sms2x.xml     \
-			stems/N_Prop_sms2x.xml     \
-			stems/N_Prop_Toponyms_sms2x.xml     \
-			stems/Num_sms2x.xml     \
-			stems/Pcle_sms2x.xml     \
 			stems/Prefix_sms2x.xml     \
-			stems/Pron_sms2x.xml     \
-			stems/V_sms2x.xml     \
 			stems/ABBR_sms2x.xml	\
 			stems/ACR_sms2x.xml
 
