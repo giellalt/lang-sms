@@ -938,7 +938,8 @@ LEXICON A_NALLSHEM
 !! ## 2.3.2.1.1 Second syllable vowel loss (Sg.Ill, Sg.Loc, Sg.Com; Ess, Par; Pl.Obl)
 !!NumContLex="650"
 !! * Yaml: **A-chaalmtem**
-:^PALE AdjAttr-ZERO ;
+:^PALE^PALNo AdjAttr-ZERO ;
++Err/Orth-extra-q:^PALE^PAL AdjAttr-ZERO ;
 : A-01_NALLSHEM ;
 
 LEXICON A_MUORTEM
@@ -1039,7 +1040,8 @@ LEXICON DenominalAdjsCShort
 +Der+Der/Car+A:»tẹ^1VOW{ʹØ}m A_NALLSHEM ;
 !+Der+Der/A+Pred+Sg+A:»teʹm # ;
 !+Der+Der/A+Pred+Pl+A:»teʹm # ;
-+Der+Der/Car+A:»teʹm A2N-VUOTT ;
++Der+Der/Car+A:»tem A2N-VUOTT ;
++Der+Der/Car+Err/Orth-extra-q+A:»teʹm A2N-VUOTT ;
 +Der+Der/Car+A:»teʹm AdjAttr-es ; ! 2013-09-19 the +Attr removed to avoid double tags
 +Der+Der/t+A:»t AdjDerComp ; ! 2013-09-19 the +Der+Der/Comp+A removed to avoid double tags
 +Der+Der/t+A:»t A_IS_ADJ-DER/SUPERL_ummus ; ! 2013-09-19 the +Der+Der/Superl+A removed to avoid double tags
@@ -7996,11 +7998,11 @@ LEXICON A-01_NALLSHEM !!= * @CODE@ čââʹlmteʹm:čââʹlmtẹ^1VOW{ʹØ}m
 !! 292-295
 !! * Yaml: **A-chaalmtem**
 !!NumContLex="650"
-:^PALE A-02_SG-NOM ; !! Ǩiõllkaʹlddi. 2017-04-04
+:^PALE^PALNo A-02_SG-NOM ; !! Ǩiõllkaʹlddi. 2017-04-04
 !!€ čââʹlmtẹ^1VOW{ʹØ}m
 !!€ čââʹlmtẹ00m
 +Use/NGminip+Use/SpellNoSugg:^PAL A-02_SG-NOM ; !2019-10-08
-+Use/NGminip+Use/NG:{XC}^PAL^C2CC A-02_SG-NOM ;
++Err/Orth-double-cns:{XC}^PAL^C2CC A-02_SG-NOM ;
 :^V2VV^PAL A-02_SG-ABE/ACC/GEN ;
 :{XC}^C2CC%>a A-02_SG-ILL ;
 :^V2VV^PAL%>e A-02_SG-LOC ;
